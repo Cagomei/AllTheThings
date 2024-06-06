@@ -9,7 +9,7 @@ local ipairs, pairs, tinsert =
 local C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
 	C_Item_GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, C_Spell_GetSpellInfo, C_Spell_GetSpellName, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked =
 	  C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
-	C_Item.GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, C_Spell.GetSpellInfo, C_Spell.GetSpellName, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked;
+	((C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant), GetNumCrafts, GetSkillLineInfo, ((C_Spell and C_Spell.GetSpellInfo) or GetSpellInfo), ((C_Spell and C_Spell.GetSpellName) or GetSpellInfo), GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked;
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 
@@ -174,7 +174,7 @@ app:CreateWindow("Tradeskills", {
 						spellID = 0;
 						local craftName, craftSubSpellName, craftType, numAvailable, isExpanded, trainingPointCost, requiredLevel = GetCraftInfo(craftIndex);
 						if craftType == "optimal" or craftType == "medium" or craftType == "easy" or craftType == "trivial" or craftType == "used" or craftType == "none" then
-							spellID = craftSubSpellName and (select(7, C_Spell.GetSpellInfo(craftName, craftSubSpellName)) or app.SpellNameToSpellID[craftName .. " (" .. craftSubSpellName .. ")"]) or app.SpellNameToSpellID[craftName];
+							spellID = craftSubSpellName and (select(7, C_Spell_GetSpellInfo(craftName, craftSubSpellName)) or app.SpellNameToSpellID[craftName .. " (" .. craftSubSpellName .. ")"]) or app.SpellNameToSpellID[craftName];
 							if spellID then
 								if spellID == 44153 then spellID = 44155;	-- Fix the Flying Machine spellID.
 								elseif spellID == 44151 then spellID = 44157;	-- Fix the Turbo Flying Machine spellID.
