@@ -45,42 +45,66 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Way of the Grill",
 		icon = "Interface/Icons/achievement_cooking_masterofthegrill",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Spell.GetSpellName(124694)]],
+			-- #else
+			en = [[~GetSpellInfo(124694)]],
+			-- #endif
 		},
 	},
 	[65] = {
 		readable = "Way of the Wok",
 		icon = "Interface/Icons/achievement_cooking_masterofthewok",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Spell.GetSpellName(125584)]],
+			-- #else
+			en = [[~GetSpellInfo(125584)]],
+			-- #endif
 		},
 	},
 	[66] = {
 		readable = "Way of the Pot",
 		icon = "Interface/Icons/achievement_cooking_masterofthepot",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Spell.GetSpellName(125586)]],
+			-- #else
+			en = [[~GetSpellInfo(125586)]],
+			-- #endif
 		},
 	},
 	[67] = {
 		readable = "Way of the Steamer",
 		icon = "Interface/Icons/achievement_cooking_masterofthesteamer",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Spell.GetSpellName(125587)]],
+			-- #else
+			en = [[~GetSpellInfo(125587)]],
+			-- #endif
 		},
 	},
 	[68] = {
 		readable = "Way of the Oven",
 		icon = "Interface/Icons/achievement_cooking_masteroftheoven",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Spell.GetSpellName(125588)]],
+			-- #else
+			en = [[~GetSpellInfo(125588)]],
+			-- #endif
 		},
 	},
 	[69] = {
 		readable = "Way of the Brew",
 		icon = "Interface/Icons/achievement_cooking_masterofthestill",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Spell.GetSpellName(125589)]],
+			-- #else
+			en = [[~GetSpellInfo(125589)]],
+			-- #endif
 		},
 	},
 	[70] = {

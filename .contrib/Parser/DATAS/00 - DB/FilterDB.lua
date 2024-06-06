@@ -19,9 +19,11 @@ for filterID,filterData in pairs({
 		icon = [[~_.asset("Interface_Cosmetic")]],
 		constant = "COSMETIC",
 		text = {
-			-- #if AFTER LEGION
+			-- #if AFTER TWW
 			-- TODO: Check when this was changed from Bucklers
 			en = [[~C_Item.GetItemSubClassInfo(4,5)]],
+			-- #elseif AFTER LEGION
+			en = [[~GetItemSubClassInfo(4,5)]],
 			-- #else
 			en = "Cosmetic",
 			-- #endif
@@ -32,9 +34,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_misc_cape_11",
 		constant = "CLOAKS",
 		text = {
-			-- #if AFTER LEGION
+			-- #if AFTER TWW
 			-- TODO: Check when this was added
 			en = [[~C_Item.GetItemSubClassInfo(8,3)]],
+			-- #elseif AFTER LEGION
+			en = [[~GetItemSubClassInfo(8,3)]],
 			-- #else
 			en = [[~INVTYPE_CLOAK]],	-- This actually says "Back", there isn't a great alternative.
 			-- #endif
@@ -45,7 +49,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_chest_cloth_21",
 		constant = "CLOTH",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(4,1)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(4,1)]],
+			-- #endif
 		},
 	},
 	[5] = {
@@ -53,7 +61,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_chest_leather_09",
 		constant = "LEATHER",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(4,2)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(4,2)]],
+			-- #endif
 		},
 	},
 	[6] = {
@@ -61,7 +73,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_chest_chain_05",
 		constant = "MAIL",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(4,3)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(4,3)]],
+			-- #endif
 		},
 	},
 	[7] = {
@@ -69,7 +85,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_chest_plate01",
 		constant = "PLATE",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(4,4)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(4,4)]],
+			-- #endif
 		},
 	},
 	[8] = {
@@ -77,7 +97,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_shield_06",
 		constant = "SHIELDS",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(4,6)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(4,6)]],
+			-- #endif
 		},
 	},
 	[9] = {
@@ -118,7 +142,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_weapon_shortblade_01",
 		constant = "DAGGERS",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,15)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,15)]],
+			-- #endif
 		},
 	},
 	[21] = {
@@ -126,7 +154,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_axe_17",
 		constant = "ONE_HANDED_AXES",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,0)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,0)]],
+			-- #endif
 		},
 	},
 	[22] = {
@@ -134,7 +166,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_axe_09",
 		constant = "TWO_HANDED_AXES",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,1)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,1)]],
+			-- #endif
 		},
 	},
 	[23] = {
@@ -142,7 +178,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_mace_02",
 		constant = "ONE_HANDED_MACES",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,4)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,4)]],
+			-- #endif
 		},
 	},
 	[24] = {
@@ -150,7 +190,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_hammer_16",
 		constant = "TWO_HANDED_MACES",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,5)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,5)]],
+			-- #endif
 		},
 	},
 	[25] = {
@@ -158,7 +202,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_sword_04",
 		constant = "ONE_HANDED_SWORDS",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,7)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,7)]],
+			-- #endif
 		},
 	},
 	[26] = {
@@ -166,7 +214,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_sword_07",
 		constant = "TWO_HANDED_SWORDS",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,8)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,8)]],
+			-- #endif
 		},
 	},
 	[27] = {
@@ -174,7 +226,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_wand_02",
 		constant = "WANDS",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,19)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,19)]],
+			-- #endif
 		},
 	},
 	[28] = {
@@ -182,7 +238,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_staff_27",
 		constant = "STAVES",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,10)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,10)]],
+			-- #endif
 		},
 	},
 	[29] = {
@@ -190,7 +250,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_spear_04",
 		constant = "POLEARMS",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,6)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,6)]],
+			-- #endif
 		},
 	},
 	[30] = {
@@ -198,7 +262,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_spear_01",
 		--constant = "SPEARS",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,17)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,17)]],
+			-- #endif
 		},
 	},
 	[31] = {
@@ -206,7 +274,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_weapon_rifle_01",
 		constant = "GUNS",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,3)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,3)]],
+			-- #endif
 		},
 	},
 	[32] = {
@@ -214,7 +286,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_weapon_bow_05",
 		constant = "BOWS",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,2)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,2)]],
+			-- #endif
 		},
 	},
 	[33] = {
@@ -222,7 +298,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_weapon_crossbow_01",
 		constant = "CROSSBOWS",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,18)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,18)]],
+			-- #endif
 		},
 	},
 	[34] = {
@@ -230,7 +310,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_misc_monsterclaw_02",
 		constant = "FIST_WEAPONS",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,13)]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,13)]],
+			-- #endif
 		},
 	},
 	[35] = {
@@ -242,8 +326,10 @@ for filterID,filterData in pairs({
 		-- #endif
 		constant = "WARGLAIVES",
 		text = {
-			-- #if AFTER LEGION
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(2,9)]],
+			-- #elseif AFTER LEGION
+			en = [[~GetItemSubClassInfo(2,9)]],
 			-- #else
 			en = "Warglaives",
 			-- #endif
@@ -312,8 +398,10 @@ for filterID,filterData in pairs({
 		-- #endif
 		constant = "RELIC",
 		text = {
-			-- #if AFTER LEGION
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemSubClassInfo(3,11)]],
+			-- #elseif AFTER LEGION
+			en = [[~GetItemSubClassInfo(3,11)]],
 			-- #else
 			en = [[~INVTYPE_RELIC]],
 			-- #endif
@@ -339,7 +427,11 @@ for filterID,filterData in pairs({
 		icon = [[~_.asset("Interface_Zone_drop")]],
 		constant = "REAGENTS",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemClassInfo(5)]],
+			-- #else
+			en = [[~GetItemClassInfo(5)]],
+			-- #endif
 		},
 	},
 	[57] = {
@@ -394,7 +486,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_misc_gem_ruby_02",
 		constant = "GEMS",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemClassInfo(3)]],
+			-- #else
+			en = [[~GetItemClassInfo(3)]],
+			-- #endif
 		},
 	},
 
@@ -489,7 +585,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/Inv_glyph_minorwarrior",
 		constant = "GLYPHS",
 		text = {
+			-- #if AFTER TWW
 			en = [[~C_Item.GetItemClassInfo(16)]],
+			-- #else
+			en = [[~GetItemClassInfo(16)]],
+			-- #endif
 		},
 	},
 	[112] = {
@@ -517,7 +617,9 @@ for filterID,filterData in pairs({
 		-- #endif
 		constant = "MOUNT_EQUIPMENT",
 		text = {
-			-- #if AFTER 8.2.0
+			-- #if AFTER TWW
+			en = [[~GetItemSubClassInfo(13,0)]],
+			-- #elseif AFTER 8.2.0
 			en = [[~C_Item.GetItemSubClassInfo(13,0)]],
 			-- #else
 			en = "Mount Equipment",
