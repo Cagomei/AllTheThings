@@ -3,8 +3,8 @@ local appName, app = ...;
 local SearchForField = app.SearchForField;
 local UpdateGroups = app.UpdateGroups;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-local rawset, tostring, GetItemInfoInstant, GetItemInfo
-	= rawset, tostring, GetItemInfoInstant, GetItemInfo;
+local rawset, tostring, C_Item_GetItemInfo, C_Item_GetItemInfoInstant, C_Item_GetItemSpell, C_Item_GetItemInventoryTypeByID
+	= rawset, tostring, ((C_Item and C_Item.GetItemInfo) or GetItemInfo), ((C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant), ((C_Item and C_Item.GetItemSpell) or GetItemSpell), ((C_Item and C_Item.GetItemInventoryTypeByID) or GetItemInventoryTypeByID);
 
 -- Uncomment this section to also harvest tooltip data.
 --[[
@@ -490,16 +490,16 @@ app:CreateWindow("ItemFinder", {
 				collectible = app.ReturnTrue,
 				collected = app.ReturnFalse,
 				text = function(t)
-					if GetItemInfoInstant(t.itemID) then
+					if C_Item_GetItemInfoInstant(t.itemID) then
 						local link = t.link;
 						if link then
 							local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
 							itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent
-								= GetItemInfo(link);
+								= C_Item_GetItemInfo(link);
 							if itemName then
 								local spellName, spellID;
 								if classID == "Recipe" or classID == "Mount" then
-									spellName, spellID = C_Item.GetItemSpell(t.itemID);
+									spellName, spellID = C_Item_GetItemSpell(t.itemID);
 									if spellName == "Learning" then spellID = nil; end	-- RIP.
 								end
 								--setmetatable(t, t.conditions[2]);
@@ -509,7 +509,7 @@ app:CreateWindow("ItemFinder", {
 									["equippable"] = itemEquipLoc and itemEquipLoc ~= "" and true or false,
 									["class"] = classID,
 									["subclass"] = subclassID,
-									["inventoryType"] = C_Item.GetItemInventoryTypeByID(t.itemID),
+									["inventoryType"] = C_Item_GetItemInventoryTypeByID(t.itemID),
 									["b"] = bindType,
 									["q"] = itemQuality,
 									["iLvl"] = itemLevel,
