@@ -3,14 +3,22 @@
 -- Brightly Colored Egg
 local brightlyColoredEgg = ObjectDB[113768];
 brightlyColoredEgg.icon = [[~_.asset("Holiday_noblegarden")]];
+-- #if AFTER TWW
 brightlyColoredEgg.text.en = [[~C_Spell.GetSpellName(61820)]];
+-- #else
+brightlyColoredEgg.text.en = [[~GetSpellInfo(61820)]];
+-- #endif
 
 -- Research Equipment
 local researchEquipment = ObjectDB[161521];
 researchEquipment.icon = [[~_.asset("Icon_PetFamily_Mechanical")]];
 
 -- Spirit of the Wolf
+-- #if AFTER TWW
 ObjectDB[226469].text.en = [[~C_Spell.GetSpellName(154259)]];
+-- #else
+ObjectDB[226469].text.en = [[~GetSpellInfo(154259)]];
+-- #endif
 
 -- #if BEFORE WRATH
 ObjectDB[176344] = {
