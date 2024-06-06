@@ -16,7 +16,7 @@ BREWFEST_HEADER = createHeader({
 	-- #endif
 	text = {
 		-- #if AFTER TBC
-		en = [[~select(1,GetCategoryInfo(162))]],
+		en = WOWAPI_GetCategoryName(162),
 		-- #else
 		en = "Brewfest",
 		-- #endif
@@ -163,7 +163,7 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t, tooltipInfo)
 		local totalDays = math.floor(difftime(ends, start) / secondsPerDay);
 		local m = 60 + (25 * totalDays);
 		tinsert(tooltipInfo, { left = " " });
-		tinsert(tooltipInfo, { left = "Currently", right = GetItemCount(itemID, true) .. "x " .. icon .. " " .. link });
+		tinsert(tooltipInfo, { left = "Currently", right = ]] .. WOWAPI_GetItemCount("itemID") .. [[ .. "x " .. icon .. " " .. link });
 		tinsert(tooltipInfo, { left = "Total Possible*", right = m .. " - " .. (m + (22 * totalDays)) .. "x " .. icon .. " " .. link });
 
 		local remaining = math.floor(difftime(ends, now) / secondsPerDay);

@@ -5,11 +5,7 @@ SIEGE_ON_DRAGONBANE_KEEP = createHeader({
 	readable = "Siege on Dragonbane Keep",
 	icon = "Interface\\Icons\\inv_artifact_dragonscales",
 	text = {
-		-- #if AFTER TWW
-		en = [[~GetSpellInfo(388945)]],
-		-- #else
-		en = [[~C_Spell.GetSpellName(388945)]],
-		-- #endif
+		en = WOWAPI_GetSpellName(388945),
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {

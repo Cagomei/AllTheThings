@@ -9,7 +9,7 @@ FLIGHT_PATHS = createHeader({
 		-- #elseif AFTER TWW
 		en = [[~C_Spell.GetSpellName(218950)]],
 		-- #else
-		en = [[~GetSpellInfo(218950)]],
+		en = WOWAPI_GetSpellName(218950),
 		-- #endif
 		ru = "Точка полета",
 	},

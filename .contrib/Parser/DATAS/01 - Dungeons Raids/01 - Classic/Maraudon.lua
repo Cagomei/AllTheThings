@@ -5,21 +5,15 @@ MARAUDON_PORTAL = createHeader({
 	readable = "Maraudon Portal",
 	icon = "Interface\\Icons\\spell_arcane_portalironforge",
 	text = {
-		-- #if AFTER TWW
-		en = [[~C_Spell.GetSpellName(21127)]],
-		-- #else
-		en = [[~GetSpellInfo(21127)]],
-		-- #endif
+		en = WOWAPI_GetSpellName(21127),
 	},
 });
 FOULSPORE_CAVERN = createHeader({
 	readable = "Foulspore Cavern",
 	icon = "Interface\\Icons\\INV_Misc_Gem_Opal_01",
 	text = {
-		-- #if AFTER TWW
-		en = [[~DUNGEON_FLOOR_DESOLACE22.." ("..C_Spell.GetSpellName(251097)..")"]],
-		-- #elseif AFTER 7.3.0
-		en = [[~DUNGEON_FLOOR_DESOLACE22.." ("..GetSpellInfo(251097)..")"]],
+		-- #if AFTER 7.3.0
+		en = [[~DUNGEON_FLOOR_DESOLACE22.." ("..]] .. WOWAPI_GetSpellName(251097) .. [[..")"]],
 		-- #else
 		en = [[~DUNGEON_FLOOR_DESOLACE22.." (Orange Path)"]],
 		-- #endif
@@ -29,10 +23,8 @@ WICKED_GROTTO = createHeader({
 	readable = "The Wicked Grotto",
 	icon = "Interface\\Icons\\INV_Misc_Gem_Amethyst_02",
 	text = {
-		-- #if AFTER TWW
-		en = [[~DUNGEON_FLOOR_DESOLACE21.." ("..C_Spell.GetSpellName(251095)..")"]],
-		-- #elseif AFTER 7.3.0
-		en = [[~DUNGEON_FLOOR_DESOLACE21.." ("..GetSpellInfo(251095)..")"]],
+		-- #if AFTER 7.3.0
+		en = [[~DUNGEON_FLOOR_DESOLACE21.." ("..]] .. WOWAPI_GetSpellName(251095) .. [[..")"]],
 		-- #else
 		en = [[~DUNGEON_FLOOR_DESOLACE21.." (Purple Path)"]],
 		-- #endif

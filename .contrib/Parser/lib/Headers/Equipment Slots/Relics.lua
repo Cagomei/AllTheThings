@@ -6,10 +6,8 @@ RELICS = createHeader({
 	icon = "Interface\\Icons\\Inv_relics_libramofhope",
 	-- #endif
 	text = {
-		-- #if AFTER TWW
-		en = [[~C_Item.GetItemSubClassInfo(3,11)]],
-		-- #elseif AFTER LEGION
-		en = [[~GetItemSubClassInfo(3,11)]],
+		-- #if AFTER LEGION
+		en = WOWAPI_GetItemSubClassInfo(3,11),
 		-- #else
 		en = "Relics",
 		-- #endif

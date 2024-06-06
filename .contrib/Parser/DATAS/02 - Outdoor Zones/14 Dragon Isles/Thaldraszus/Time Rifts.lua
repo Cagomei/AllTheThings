@@ -5,7 +5,7 @@ TIME_RIFTS = createHeader({
 	readable = "Time Rift",
 	icon = "Interface\\Icons\\inv_belt_armor_waistoftime_d_01",
 	text = {
-		en = [[~C_Spell.GetSpellName(408633)]],
+		en = WOWAPI_GetSpellName(408633),
 	},
 });
 local DILATED_TIME_CAPSULE

@@ -19,11 +19,9 @@ for filterID,filterData in pairs({
 		icon = [[~_.asset("Interface_Cosmetic")]],
 		constant = "COSMETIC",
 		text = {
-			-- #if AFTER TWW
+			-- #if AFTER LEGION
 			-- TODO: Check when this was changed from Bucklers
-			en = [[~C_Item.GetItemSubClassInfo(4,5)]],
-			-- #elseif AFTER LEGION
-			en = [[~GetItemSubClassInfo(4,5)]],
+			en = WOWAPI_GetItemSubClassInfo(4,5),
 			-- #else
 			en = "Cosmetic",
 			-- #endif
@@ -34,11 +32,9 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_misc_cape_11",
 		constant = "CLOAKS",
 		text = {
-			-- #if AFTER TWW
+			-- #if AFTER LEGION
 			-- TODO: Check when this was added
-			en = [[~C_Item.GetItemSubClassInfo(8,3)]],
-			-- #elseif AFTER LEGION
-			en = [[~GetItemSubClassInfo(8,3)]],
+			en = WOWAPI_GetItemSubClassInfo(8,3),
 			-- #else
 			en = [[~INVTYPE_CLOAK]],	-- This actually says "Back", there isn't a great alternative.
 			-- #endif
@@ -49,11 +45,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_chest_cloth_21",
 		constant = "CLOTH",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(4,1)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(4,1)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(4,1),
 		},
 	},
 	[5] = {
@@ -61,11 +53,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_chest_leather_09",
 		constant = "LEATHER",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(4,2)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(4,2)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(4,2),
 		},
 	},
 	[6] = {
@@ -73,11 +61,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_chest_chain_05",
 		constant = "MAIL",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(4,3)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(4,3)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(4,3),
 		},
 	},
 	[7] = {
@@ -85,11 +69,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_chest_plate01",
 		constant = "PLATE",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(4,4)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(4,4)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(4,4),
 		},
 	},
 	[8] = {
@@ -97,11 +77,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_shield_06",
 		constant = "SHIELDS",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(4,6)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(4,6)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(4,6),
 		},
 	},
 	[9] = {
@@ -120,7 +96,7 @@ for filterID,filterData in pairs({
 			en = [[~INVTYPE_BODY]],
 		},
 	},
-
+	
 	-- Special Weapon Types
 	[11] = {
 		readable = "Artifacts",
@@ -135,18 +111,14 @@ for filterID,filterData in pairs({
 			cn = "神器",
 		},
 	},
-
+	
 	-- Weapon Types
 	[20] = {
 		readable = "Daggers",
 		icon = "Interface/Icons/inv_weapon_shortblade_01",
 		constant = "DAGGERS",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,15)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,15)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,15),
 		},
 	},
 	[21] = {
@@ -154,11 +126,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_axe_17",
 		constant = "ONE_HANDED_AXES",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,0)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,0)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,0),
 		},
 	},
 	[22] = {
@@ -166,11 +134,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_axe_09",
 		constant = "TWO_HANDED_AXES",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,1)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,1)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,1),
 		},
 	},
 	[23] = {
@@ -178,11 +142,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_mace_02",
 		constant = "ONE_HANDED_MACES",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,4)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,4)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,4),
 		},
 	},
 	[24] = {
@@ -190,11 +150,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_hammer_16",
 		constant = "TWO_HANDED_MACES",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,5)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,5)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,5),
 		},
 	},
 	[25] = {
@@ -202,11 +158,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_sword_04",
 		constant = "ONE_HANDED_SWORDS",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,7)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,7)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,7),
 		},
 	},
 	[26] = {
@@ -214,11 +166,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_sword_07",
 		constant = "TWO_HANDED_SWORDS",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,8)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,8)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,8),
 		},
 	},
 	[27] = {
@@ -226,11 +174,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_wand_02",
 		constant = "WANDS",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,19)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,19)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,19),
 		},
 	},
 	[28] = {
@@ -238,11 +182,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_staff_27",
 		constant = "STAVES",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,10)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,10)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,10),
 		},
 	},
 	[29] = {
@@ -250,11 +190,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_spear_04",
 		constant = "POLEARMS",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,6)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,6)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,6),
 		},
 	},
 	[30] = {
@@ -262,11 +198,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_spear_01",
 		--constant = "SPEARS",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,17)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,17)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,17),
 		},
 	},
 	[31] = {
@@ -274,11 +206,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_weapon_rifle_01",
 		constant = "GUNS",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,3)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,3)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,3),
 		},
 	},
 	[32] = {
@@ -286,11 +214,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_weapon_bow_05",
 		constant = "BOWS",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,2)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,2)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,2),
 		},
 	},
 	[33] = {
@@ -298,11 +222,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_weapon_crossbow_01",
 		constant = "CROSSBOWS",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,18)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,18)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,18),
 		},
 	},
 	[34] = {
@@ -310,11 +230,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_misc_monsterclaw_02",
 		constant = "FIST_WEAPONS",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,13)]],
-			-- #else
-			en = [[~GetItemSubClassInfo(2,13)]],
-			-- #endif
+			en = WOWAPI_GetItemSubClassInfo(2,13),
 		},
 	},
 	[35] = {
@@ -326,10 +242,8 @@ for filterID,filterData in pairs({
 		-- #endif
 		constant = "WARGLAIVES",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(2,9)]],
-			-- #elseif AFTER LEGION
-			en = [[~GetItemSubClassInfo(2,9)]],
+			-- #if AFTER LEGION
+			en = WOWAPI_GetItemSubClassInfo(2,9),
 			-- #else
 			en = "Warglaives",
 			-- #endif
@@ -343,7 +257,7 @@ for filterID,filterData in pairs({
 			-- #if AFTER WRATH
 			en = [[~INVTYPE_THROWN]],
 			-- #else
-			en = [[~C_Item.GetItemSubClassInfo(2,16)]],
+			en = WOWAPI_GetItemSubClassInfo(2,16),
 			-- #endif
 		},
 	},
@@ -355,7 +269,7 @@ for filterID,filterData in pairs({
 			en = [[~INVTYPE_AMMO]],
 		},
 	},
-
+	
 	-- Accessories
 	[50] = {
 		readable = "Miscellaneous",
@@ -398,10 +312,8 @@ for filterID,filterData in pairs({
 		-- #endif
 		constant = "RELIC",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemSubClassInfo(3,11)]],
-			-- #elseif AFTER LEGION
-			en = [[~GetItemSubClassInfo(3,11)]],
+			-- #if AFTER LEGION
+			en = WOWAPI_GetItemSubClassInfo(3,11),
 			-- #else
 			en = [[~INVTYPE_RELIC]],
 			-- #endif
@@ -427,11 +339,7 @@ for filterID,filterData in pairs({
 		icon = [[~_.asset("Interface_Zone_drop")]],
 		constant = "REAGENTS",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemClassInfo(5)]],
-			-- #else
-			en = [[~GetItemClassInfo(5)]],
-			-- #endif
+			en = WOWAPI_GetItemClassInfo(5),
 		},
 	},
 	[57] = {
@@ -486,14 +394,10 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_misc_gem_ruby_02",
 		constant = "GEMS",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemClassInfo(3)]],
-			-- #else
-			en = [[~GetItemClassInfo(3)]],
-			-- #endif
+			en = WOWAPI_GetItemClassInfo(3),
 		},
 	},
-
+	
 	-- Other Types
 	[100] = {
 		readable = "Mounts",
@@ -585,11 +489,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/Inv_glyph_minorwarrior",
 		constant = "GLYPHS",
 		text = {
-			-- #if AFTER TWW
-			en = [[~C_Item.GetItemClassInfo(16)]],
-			-- #else
-			en = [[~GetItemClassInfo(16)]],
-			-- #endif
+			en = WOWAPI_GetItemClassInfo(16),
 		},
 	},
 	[112] = {
@@ -617,10 +517,8 @@ for filterID,filterData in pairs({
 		-- #endif
 		constant = "MOUNT_EQUIPMENT",
 		text = {
-			-- #if AFTER TWW
-			en = [[~GetItemSubClassInfo(13,0)]],
-			-- #elseif AFTER 8.2.0
-			en = [[~C_Item.GetItemSubClassInfo(13,0)]],
+			-- #if AFTER 8.2.0
+			en = WOWAPI_GetItemSubClassInfo(13,0),
 			-- #else
 			en = "Mount Equipment",
 			-- #endif

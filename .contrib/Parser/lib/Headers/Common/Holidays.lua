@@ -9,7 +9,7 @@ HOLIDAYS = createHeader({
 		-- #elseif AFTER TWW
 		en = [[~C_Item.GetItemSubClassInfo(15,3)]],
 		-- #else
-		en = [[~GetItemSubClassInfo(15,3)]],
+		en = WOWAPI_GetItemSubClassInfo(15,3),
 		-- #endif
 	},
 	description = {

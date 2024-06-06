@@ -23,11 +23,7 @@ DUSKWOOD_ACTIVE = createHeader({
 	readable = "Duskwood Active",
 	icon = "Interface\\Icons\\achievement_zone_duskwood",
 	text = {
-		-- #if AFTER TWW
-		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..C_Spell.GetSpellName(133137)]],
-		-- #else
-		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137)]],
-		-- #endif
+		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..]] .. WOWAPI_GetSpellName(133137),
 		ru = "Сумеречный лес - активен",
 	},
 	description = {
@@ -38,11 +34,7 @@ FERALAS_ACTIVE = createHeader({
 	readable = "Feralas Active",
 	icon = "Interface\\Icons\\achievement_zone_feralas",
 	text = {
-		-- #if AFTER TWW
-		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..C_Spell.GetSpellName(133137)]],
-		-- #else
-		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137)]],
-		-- #endif
+		en = [[~DUNGEON_FLOOR_NIGHTMARERAID9.." "..]] .. WOWAPI_GetSpellName(133137),
 		ru = "Фералас - активен",
 	},
 	description = {
@@ -53,11 +45,7 @@ THE_HINTERLANDS_ACTIVE = createHeader({
 	readable = "The Hinterlands Active",
 	icon = "Interface\\Icons\\achievement_zone_hinterlands_01",
 	text = {
-		-- #if AFTER TWW
-		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..C_Spell.GetSpellName(133137)]],
-		-- #else
-		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137)]],
-		-- #endif,
+		en = [[~DUNGEON_FLOOR_NIGHTMARERAID7.." "..]] .. WOWAPI_GetSpellName(133137),
 		ru = "Внутренние земли - активен",
 	},
 	description = {
@@ -68,11 +56,7 @@ DUSKWOOD_ACTIVATED = createHeader({
 	readable = "Duskwood Activated",
 	icon = "Interface\\Icons\\achievement_zone_duskwood",
 	text = {
-		-- #if AFTER TWW
-		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..C_Spell.GetSpellName(78741)]],
-		-- #else
-		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741)]],
-		-- #endif
+		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..]] .. WOWAPI_GetSpellName(78741),
 		ru = "Сумеречный лес - активирован",
 	},
 	description = {
@@ -83,11 +67,7 @@ FERALAS_ACTIVATED = createHeader({
 	readable = "Feralas Activated",
 	icon = "Interface\\Icons\\achievement_zone_feralas",
 	text = {
-		-- #if AFTER TWW
-		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..C_Spell.GetSpellName(78741)]],
-		-- #else
-		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741)]],
-		-- #endif
+		en = [[~DUNGEON_FLOOR_NIGHTMARERAID9.." "..]] .. WOWAPI_GetSpellName(78741),
 		ru = "Фералас - активирован",
 	},
 	description = {
@@ -98,11 +78,7 @@ THE_HINTERLANDS_ACTIVATED = createHeader({
 	readable = "The Hinterlands Activated",
 	icon = "Interface\\Icons\\achievement_zone_hinterlands_01",
 	text = {
-		-- #if AFTER TWW
-		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..C_Spell.GetSpellName(78741)]],
-		-- #else
-		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741)]],
-		-- #endif
+		en = [[~DUNGEON_FLOOR_NIGHTMARERAID7.." "..]] .. WOWAPI_GetSpellName(78741),
 		ru = "Внутренние земли - активирован",
 	},
 	description = {

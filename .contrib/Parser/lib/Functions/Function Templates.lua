@@ -1,3 +1,54 @@
+-- WoW API Function Templates
+WOWAPI_GetItemCount = function(itemID)
+	-- #if AFTER TWW
+	return "C_Item.GetItemCount(" .. itemID .. ", true)";
+	-- #else
+	return "GetItemCount(" .. itemID .. ", true)";
+	-- #endif
+end
+WOWAPI_GetSpellCooldown = function(spellID)
+	-- #if AFTER TWW
+	return "C_Spell.GetSpellCooldown(" .. spellID .. ")";
+	-- #else
+	return "GetSpellCooldown(" .. spellID .. ")";
+	-- #endif
+end
+WOWAPI_GetSpellName = function(spellID)
+	-- #if AFTER TWW
+	return "C_Spell.GetSpellName(" .. spellID .. ")";
+	-- #else
+	return "GetSpellInfo(" .. spellID .. ")";
+	-- #endif
+end
+WOWAPI_GetItemClassInfo = function(a,b)
+	-- #if AFTER TWW
+	return "C_Item.GetItemClassInfo(" .. a .. ")";
+	-- #else
+	return "GetItemClassInfo(" .. a .. ")";
+	-- #endif
+end
+WOWAPI_GetItemSubClassInfo = function(a,b)
+	if a and b then
+		-- #if AFTER TWW
+		return "C_Item.GetItemSubClassInfo(" .. a .. "," .. b .. ")";
+		-- #else
+		return "GetItemSubClassInfo(" .. a .. "," .. b .. ")";
+		-- #endif
+	else
+		-- #if AFTER TWW
+		return "C_Item.GetItemSubClassInfo(" .. a .. ")";
+		-- #else
+		return "GetItemSubClassInfo(" .. a .. ")";
+		-- #endif
+	end
+end
+WOWAPI_GetAchievementName = function(achievementID)
+	return "select(2,GetAchievementInfo(" .. achievementID .. "))";
+end
+WOWAPI_GetCategoryName = function(categoryID)
+	return "select(1,GetCategoryInfo(" .. categoryID .. "))";
+end
+
 FUNCTION_TEMPLATES = {
 	OnTooltip = {
 		-- #if BEFORE CATA
@@ -39,5 +90,26 @@ FUNCTION_TEMPLATES = {
 			end
 		end]],
 		-- #endif
+	};
+	OnInit = {
+		-- function unmarks the removed from game flag for folks with the brazier.
+		BrazierAccess = [[function(t)
+			if ]] .. WOWAPI_GetItemCount(22057) .. [[ > 0 then
+				t.u = nil;
+				for i,o in ipairs(t.g) do
+					if o.u and o.u == 11 then
+						o.u = nil;
+					end
+				end
+			else
+				t.u = 11;
+				for i,o in ipairs(t.g) do
+					if not o.u then
+						o.u = 11;
+					end
+				end
+			end
+			return t;
+		end]],
 	};
 };
