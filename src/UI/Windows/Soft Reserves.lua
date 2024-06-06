@@ -5,10 +5,14 @@ local L = app.L;
 -- Global locals
 local GetRaidRosterInfo, GuildControlGetNumRanks, GetGuildRosterInfo, GetGuildRosterLastOnline =
 	  GetRaidRosterInfo, GuildControlGetNumRanks, GetGuildRosterInfo, GetGuildRosterLastOnline;
-local C_Item_GetItemInfo, C_Item_GetItemInfoInstant = ((C_Item and C_Item.GetItemInfo) or GetItemInfo), ((C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant);
 local GetLootMethod, GetRealmName, UnitName, UnitGUID, UnitInRaid, UnitInParty =
 	  GetLootMethod, GetRealmName, UnitName, UnitGUID, UnitInRaid, UnitInParty;
 local tinsert, tremove = tinsert, tremove;
+
+-- WoW API Cache
+local GetItemID = app.WOWAPI.GetItemID;
+local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetItemIcon = app.WOWAPI.GetItemIcon;
 
 -- App locals
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
@@ -68,7 +72,7 @@ local PlayerGUIDFromInfo = setmetatable({}, { __index = function(t, info)
 		rawset(t, info, info);
 		return info;
 	end
-
+	
 	-- Only check the guild once every 10 seconds.
 	if (rawget(t, "cooldown") or 0) <= time() then
 		local count = GetNumGuildMembers();
@@ -136,11 +140,11 @@ local function ParseSoftReserve(guid, cmd, isSilentMode, isCurrentPlayer)
 			UpdateSoftReserve(guid, nil, time(), isSilentMode, isCurrentPlayer);
 			return;
 		end
-
+		
 		-- Parse out the itemID if possible.
-		local itemID = tonumber(cmd) or C_Item_GetItemInfoInstant(cmd);
+		local itemID = tonumber(cmd) or GetItemID(cmd);
 		if itemID then cmd = "itemid:" .. itemID; end
-
+		
 		-- Search for the Link in the database
 		local group = app.SearchForLink(cmd);
 		if group and #group > 0 then
@@ -152,7 +156,7 @@ local function ParseSoftReserve(guid, cmd, isSilentMode, isCurrentPlayer)
 			end
 		end
 	end
-
+	
 	-- Send back an error message.
 	SendGUIDWhisper("Unrecognized Command. Please use '!sr [itemLink/itemID]'. You can send an item link or an itemID from WoWHead. EX: '!sr 12345' or '!sr [Azuresong Mageblade]'", guid);
 end
@@ -212,11 +216,11 @@ local function QuerySoftReserve(guid, cmd, target)
 			end
 			return true;
 		end
-
+		
 		-- Parse out the itemID if possible.
-		local itemID = tonumber(cmd) or C_Item_GetItemInfoInstant(cmd);
+		local itemID = tonumber(cmd) or GetItemID(cmd);
 		if itemID then cmd = "itemid:" .. itemID; end
-
+		
 		-- Search for the Link in the database
 		local group = app.SearchForLink(cmd);
 		if group and #group > 0 then
@@ -260,7 +264,7 @@ local function QuerySoftReserve(guid, cmd, target)
 			-- Parse out the itemID if possible.
 			local itemID = type(reserve) == 'number' and reserve or reserve[1];
 			if itemID then itemID = "itemid:" .. itemID; end
-
+			
 			-- Search for the Link in the database
 			local group = app.SearchForLink(itemID);
 			if group and #group > 0 then
@@ -280,7 +284,7 @@ local function QuerySoftReserve(guid, cmd, target)
 			return true;
 		end
 	end
-
+	
 	-- Send back an error message.
 	SendGUIDWhisper("Unrecognized Command. Please use '!sr [itemLink/itemID]'. You can send an item link or an itemID from WoWHead. EX: '!sr 12345' or '!sr [Azuresong Mageblade]'", guid);
 end
@@ -301,7 +305,7 @@ local function SortByTextAndPriority(a, b)
 end
 local function UpdateSoftReserveInternal(guid, itemID, timeStamp, isCurrentPlayer)
 	local reserves = app.GetDataMember("SoftReserves");
-
+	
 	-- Check the Old Reserve against the new one.
 	local oldreserve = reserves[guid];
 	if oldreserve then
@@ -311,7 +315,7 @@ local function UpdateSoftReserveInternal(guid, itemID, timeStamp, isCurrentPlaye
 			if oldItemID == itemID then
 				return true;
 			end
-
+			
 			-- Uncache the reserve
 			local reservesForItem = SoftReservesByItemID[oldItemID];
 			if reservesForItem then
@@ -324,7 +328,7 @@ local function UpdateSoftReserveInternal(guid, itemID, timeStamp, isCurrentPlaye
 			end
 		end
 	end
-
+	
 	-- Update the Reservation
 	app.WipeSearchCache();
 	SoftReservesDirty = true;
@@ -362,12 +366,12 @@ UpdateSoftReserve = function(guid, itemID, timeStamp, silentMode, isCurrentPlaye
 				local searchResults = app.SearchForLink("itemid:" .. itemID);
 				if searchResults and #searchResults > 0 then
 					if guid ~= UnitGUID("player") then
-						SendGUIDWhisper("SR: Updated to " .. (searchResults[1].link or C_Item_GetItemInfo(itemID) or ("itemid:" .. itemID)), guid);
+						SendGUIDWhisper("SR: Updated to " .. (searchResults[1].link or GetItemInfo(itemID) or ("itemid:" .. itemID)), guid);
 					end
 					if IsPrimaryLooter() then
 						C_ChatInfo.SendAddonMessage("ATTC", "!\tsrml\t" .. guid .. "\t" .. itemID, GetGroupType());
 						if app.Settings:GetTooltipSetting("SoftReservesLocked") then
-							SendGroupChatMessage("Updated " .. (UnitName(guid) or guid) .. " to " .. (searchResults[1].link or C_Item_GetItemInfo(itemID) or ("itemid:" .. itemID)));
+							SendGroupChatMessage("Updated " .. (UnitName(guid) or guid) .. " to " .. (searchResults[1].link or GetItemInfo(itemID) or ("itemid:" .. itemID)));
 						end
 					end
 				end
@@ -567,10 +571,10 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 			end
 			tinsert(reservesForItem, guid);
 		end
-
+		
 		-- Push the player's SR
 		PushSoftReserve(true);
-
+		
 		-- Check if the SRs are locked
 		if IsInGroup() then
 			if not IsPrimaryLooter() then
@@ -622,7 +626,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 						end
 					else
 						data.visible = false;
-
+						
 						-- Automatically unlock when not in a group.
 						local locked = app.Settings:GetTooltipSetting("SoftReservesLocked");
 						if locked then
@@ -724,7 +728,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 									word = word .. "\\";
 								end
 							end
-
+							
 							if c == "\t" then
 								if word:len() > 0 then
 									if #g < 1 then
@@ -908,7 +912,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 							count = count + 1;
 						end
 					end
-
+					
 					app:ShowPopupDialogWithMultiLineEditBox(message);
 					return true;
 				end,
@@ -947,7 +951,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 								g = {},
 							});
 						end
-
+						
 						local debugMode = app.MODE_DEBUG;
 						local count = GetNumGuildMembers();
 						if count > 0 then
@@ -964,7 +968,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 									end
 								end
 							end
-
+							
 							local any = false;
 							for rankIndex = 1, numRanks, 1 do
 								if #g[rankIndex].g > 0 then
@@ -990,7 +994,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 				end,
 			}
 		};
-
+		
 		-- If Loot Method is supported, then give the Raid Leader the option of selecting master loot.
 		if GetLootMethod and SetLootMethod then
 			tinsert(options, {	-- Loot Method Selector
@@ -1014,9 +1018,9 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 		end
 		self.data = {
 			text = "Soft Reserves",
-			icon = app.asset("WindowIcon_SoftReserves"),
+			icon = app.asset("WindowIcon_SoftReserves"), 
 			description = "The soft reservation list submitted by your raid group. This is managed through the Master Looter, should they have " .. appName .. " installed. If not, this feature will not function.\n\nML: Members of your raid without " .. appName .. " installed can whisper you '!sr <itemlink>' or '!sr <itemID>' to Soft Reserve an item.",
-			visible = true,
+			visible = true, 
 			expanded = true,
 			dirty = true,
 			back = 1,
@@ -1024,7 +1028,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 			OnUpdate = function(data)
 				local g, groupMembers = data.g, self.groupMembers;
 				wipe(g);
-
+				
 				-- Insert yourself every time.
 				local name = UnitName("player");
 				local me = groupMembers[name];
@@ -1032,7 +1036,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 					me = app.CreateSoftReserveUnit(app.GUID, { parent = data, priority = 8, OnUpdate = app.AlwaysShowUpdate });	-- YOU!
 					groupMembers[name] = me;
 				end
-
+				
 				-- Add in your group members.
 				local count = GetNumGroupMembers();
 				if count > 0 then
@@ -1046,7 +1050,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 							end
 						end
 					end
-
+					
 					-- Insert every groupie! (including yourself!)
 					for name,member in pairs(groupMembers) do
 						if groupies[name] then
@@ -1176,7 +1180,7 @@ app.CreateSoftReserveUnit = app.ExtendClass("Unit", "SoftReserveUnit", "unit", {
 	["itemText"] = function(t)
 		local itemID = t.itemID;
 		if itemID then
-			local itemName, itemLink,_,_,_,_,_,_,_,icon = C_Item_GetItemInfo(itemID);
+			local itemName, itemLink,_,_,_,_,_,_,_,icon = GetItemInfo(itemID);
 			if itemLink then
 				return (icon and ("|T" .. icon .. ":0|t") or "") .. itemLink .. (t.mapText or "");
 			else
@@ -1227,10 +1231,10 @@ app.CreateSoftReserveUnit = app.ExtendClass("Unit", "SoftReserveUnit", "unit", {
 		end
 	end,
 	["preview"] = function(t)
-		return t.itemID and select(5, C_Item_GetItemInfoInstant(t.itemID));
+		return t.itemID and GetItemIcon(t.itemID);
 	end,
 	["link"] = function(t)
-		return t.itemID and select(2, C_Item_GetItemInfo(t.itemID));
+		return t.itemID and select(2, GetItemInfo(t.itemID));
 	end,
 	["tooltipText"] = function(t)
 		local text = t.classText;
@@ -1253,7 +1257,7 @@ app.CreateSoftReserveUnit = app.ExtendClass("Unit", "SoftReserveUnit", "unit", {
 	["itemName"] = function(t)
 		local itemID = t.itemID;
 		if itemID then
-			local itemName = C_Item_GetItemInfo(itemID);
+			local itemName = GetItemInfo(itemID);
 			if itemName then
 				return itemName;
 			else

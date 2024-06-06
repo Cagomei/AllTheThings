@@ -3,6 +3,9 @@ if GetLocale() ~= "koKR" then return; end
 local app = select(2, ...);
 local L = app.L;
 
+-- WoW API Cache
+local GetSpellName = app.WOWAPI.GetSpellName;
+
 -- General Text
 	--TODO: L.DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	--TODO: L.THINGS_UNTIL = " THINGS UNTIL ";
@@ -453,23 +456,15 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Allied Races
-		[-255] = "유산 방어구",											-- Heritage
-	-- Chests
-		[-851] = "검은 제국 보관함",										-- Black Empire Cache
 	-- Shadowlands Header
 		[-979] = "중개자 베켄 & 중개자 베노트",								-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "이동 연결망",											-- Transport Network
 		[-967] = "거울 복구 작업",										-- Mirror Restoration
 	-- Dragonflight
-		[-1100] = "비룡감시자 필사본",										-- Drakewatcher Manuscripts
 		[-1102] = "래시온과 사벨리안",										-- Wrathion & Sabellian
 		[-1120] = "마루크 켄타우로스",										-- Maruuk Centaur
 		[-1130] = "이스카라 투스카르",										-- Iskaara Tuskarr
 		[-1150] = "로암 니펜",											-- Loamm Niffen
-		[-1200] = "지스케라 금고",										-- Zskera Vaults
-		[-1202] = "피락의 습격",											-- Fyrakk Assaults
-		[-1203] = "냄새 추적",											-- Sniffenseeking
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5202] = "힘의 균형",										-- Balance of Power
@@ -815,8 +810,8 @@ local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
 	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Threads of Fate", desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this." },
-	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = C_Spell.GetSpellName(275825), desc = "Only a Character who has obtained the |cffe6cc80"..C_Spell.GetSpellName(275825).."|r can collect this." },
-	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..C_Spell.GetSpellName(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..C_Spell.GetSpellName(275825).."|r can collect this." },
+	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellName(275825), desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this." },
+	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellName(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this." },
 })
 do a[key] = value; end
 end

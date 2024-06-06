@@ -3,6 +3,9 @@ if GetLocale() ~= "esES" and GetLocale() ~= "esMX" then return; end
 local app = select(2, ...);
 local L = app.L;
 
+-- WoW API Cache
+local GetSpellName = app.WOWAPI.GetSpellName;
+
 -- General Text
 	--TODO: L.DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	--TODO: L.THINGS_UNTIL = " THINGS UNTIL ";
@@ -456,25 +459,16 @@ end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Allied Races
-		[-255] = "Armadura dinástica",								-- Heritage
-	-- Chests
-		[-851] = "Alijo del Imperio Negro",							-- Black Empire Cache
 	-- Shadowlands Header
 		[-979] = "Especulador Ve'ken & Especulador Ve'nott",		-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "Red de transporte",								-- Transport Network
 		[-967] = "Restauración del espejo",							-- Mirror Restoration
 	-- Dragonflight
-		[-1100] = "Manuscrito de dracovigía",						-- Drakewatcher Manuscripts
-		[-1101] = "Tormentas Primigenias",							-- Primal Storms
 		[-1102] = "Wrathion y Sabellian",							-- Wrathion & Sabellian
 		[-1120] = "Centauros Maruuk",								-- Maruuk Centaur
 		[-1130] = "Colmillarr de Iskaara",							-- Iskaara Tuskarr
 		[-1150] = "Niffen de Loamm",								-- Loamm Niffen
-		[-1151] = "Comercio",										-- Bartering
-		[-1200] = "Cámaras de Zskera",								-- Zskera Vaults
-		[-1202] = "Asaltos de Fyrakk",								-- Fyrakk Assaults
-		[-1203] = "Olfatobúsqueda",									-- Sniffenseeking
+
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5202] = "Equilibrio de poderes",						-- Balance of Power
@@ -820,8 +814,8 @@ local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
 	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Threads of Fate", desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this." },
-	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = C_Spell.GetSpellName(275825), desc = "Only a Character who has obtained the |cffe6cc80"..C_Spell.GetSpellName(275825).."|r can collect this." },
-	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..C_Spell.GetSpellName(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..C_Spell.GetSpellName(275825).."|r can collect this." },
+	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellName(275825), desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this." },
+	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellName(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this." },
 })
 do a[key] = value; end
 end

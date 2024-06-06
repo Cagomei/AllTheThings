@@ -8,8 +8,12 @@ local Colorize = app.Modules.Color.Colorize;
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
-local GetRealmName, C_Item_GetItemInfo, C_Spell_GetSpellInfo, C_Spell_GetSpellName, C_Item_GetItemCount
-	= GetRealmName, ((C_Item and C_Item.GetItemInfo) or GetItemInfo), ((C_Spell and C_Spell.GetSpellInfo) or GetSpellInfo), ((C_Spell and C_Spell.GetSpellName) or GetSpellInfo), ((C_Item and C_Item.GetItemCount) or GetItemCount);
+local GetRealmName = GetRealmName
+
+-- WoW API Cache
+local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetItemCount = app.WOWAPI.GetItemCount;
+local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage("Information", L.INTERFACE_PAGE)
@@ -79,7 +83,7 @@ local ConversionMethods = setmetatable({
 		end
 	end,
 	itemName = function(itemID, reference)
-		local name = select(2, C_Item_GetItemInfo(itemID));
+		local name = select(2, GetItemInfo(itemID));
 		if IsRetrieving(name) then
 			reference.working = true
 			name = "Item: " .. RETRIEVING_DATA;
@@ -91,7 +95,7 @@ local ConversionMethods = setmetatable({
 		end
 	end,
 	itemNameAndIcon = function(itemID, reference)
-		local _,name,_,_,_,_,_,_,_,icon = C_Item_GetItemInfo(itemID);
+		local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(itemID);
 		if IsRetrieving(name) then
 			reference.working = true
 			name = "Item: " .. RETRIEVING_DATA;
@@ -113,7 +117,7 @@ local ConversionMethods = setmetatable({
 		end
 	end,
 	professionName = function(spellID, reference)
-		return IsRetrievingConversionMethod(C_Spell_GetSpellName(app.SkillIDToSpellID[spellID] or 0), reference)
+		return IsRetrievingConversionMethod(GetSpellName(app.SkillIDToSpellID[spellID] or 0), reference)
 	end,
 }, {
 	__index = function(t, key)
@@ -265,7 +269,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 				local currentCharacter = knownByGUID[app.GUID];
 				if currentCharacter then
 					local text = currentCharacter.text or "???";
-					local count = C_Item_GetItemCount(itemID, true);
+					local count = GetItemCount(itemID, true);
 					if count and count > 1 then
 						text = text .. " (x" .. count .. ")";
 					end

@@ -11,6 +11,10 @@ if not C_Garrison then
 	return
 end
 
+-- WoW API Cache
+local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetItemIcon = app.WOWAPI.GetItemIcon;
+
 local select, setmetatable, pairs
 	= select, setmetatable, pairs
 local L = app.L;
@@ -18,8 +22,8 @@ local L = app.L;
 -- Buildings
 do
 	local KEY, CACHE = "garrisonBuildingID", "GarrisonBuildings"
-	local C_Garrison_GetBuildingInfo, C_Item_GetItemInfo, C_Item_GetItemInfoInstant
-		= C_Garrison.GetBuildingInfo, ((C_Item and C_Item.GetItemInfo) or GetItemInfo), ((C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant);
+	local C_Garrison_GetBuildingInfo
+		= C_Garrison.GetBuildingInfo;
 	local GarrisonBuildingInfoMeta = { __index = function(t, key)
 		local _, name, _, icon, lore = C_Garrison_GetBuildingInfo(t[KEY]);
 		if not name then return nil; end
@@ -53,13 +57,13 @@ do
 			return L.GARRISON_BUILDINGS_REQUIRE_GARRISON
 		end,
 		icon = function(t)
-			return select(5, C_Item_GetItemInfoInstant(t.itemID)) or t.info.icon;
+			return GetItemIcon(t.itemID) or t.info.icon;
 		end,
 		link = function(t)
-			return select(2, C_Item_GetItemInfo(t.itemID)) or RETRIEVING_DATA;
+			return select(2, GetItemInfo(t.itemID)) or RETRIEVING_DATA;
 		end,
 		name = function(t)
-			return C_Item_GetItemInfo(t.itemID) or t.info.name;
+			return GetItemInfo(t.itemID) or t.info.name;
 		end,
 		tsm = function(t)
 			---@diagnostic disable-next-line: undefined-field

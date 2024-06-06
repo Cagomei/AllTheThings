@@ -7,11 +7,16 @@ local CloneReference, ExpandGroupsRecursively, ResolveSymbolicLink, SearchForFie
 local ipairs, pairs, tinsert =
 	  ipairs, pairs, tinsert;
 local C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
-	C_Item_GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, C_Spell_GetSpellInfo, C_Spell_GetSpellName, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked =
+	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked =
 	  C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
-	((C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant), GetNumCrafts, GetSkillLineInfo, ((C_Spell and C_Spell.GetSpellInfo) or GetSpellInfo), ((C_Spell and C_Spell.GetSpellName) or GetSpellInfo), GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked;
+	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked;
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
+
+-- WoW API Cache
+local GetItemID = app.WOWAPI.GetItemID;
+local GetSpellName = app.WOWAPI.GetSpellName;
+local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 
 local function RefreshSkills()
 	-- Store Skill Data
@@ -27,9 +32,9 @@ local function RefreshSkills()
 			if not header and skillName then
 				local spellID = app.SpellNameToSpellID[skillName];
 				if spellID then
-					local spellName = C_Spell_GetSpellName(spellID);
+					local spellName = GetSpellName(spellID);
 					for skillID,sp in pairs(app.SkillIDToSpellID) do
-						if C_Spell_GetSpellName(sp) == spellName then
+						if GetSpellName(sp) == spellName then
 							spellID = sp;
 							break;
 						end
@@ -37,7 +42,7 @@ local function RefreshSkills()
 					activeSkills[spellID] = { skillRank, skillMaxRank };
 				else
 					for skillID,sp in pairs(app.SkillIDToSpellID) do
-						if C_Spell_GetSpellName(sp) == skillName then
+						if GetSpellName(sp) == skillName then
 							spellID = sp;
 							break;
 						end
@@ -161,9 +166,9 @@ app:CreateWindow("Tradeskills", {
 				end
 
 				if craftSkillID ~= 0 then
-					local spellName = C_Spell_GetSpellName(craftSkillID);
+					local spellName = GetSpellName(craftSkillID);
 					for skillID,spellID in pairs(app.SkillIDToSpellID) do
-						if C_Spell_GetSpellName(spellID) == spellName then
+						if GetSpellName(spellID) == spellName then
 							craftSkillID = spellID;
 							break;
 						end
@@ -174,7 +179,7 @@ app:CreateWindow("Tradeskills", {
 						spellID = 0;
 						local craftName, craftSubSpellName, craftType, numAvailable, isExpanded, trainingPointCost, requiredLevel = GetCraftInfo(craftIndex);
 						if craftType == "optimal" or craftType == "medium" or craftType == "easy" or craftType == "trivial" or craftType == "used" or craftType == "none" then
-							spellID = craftSubSpellName and (select(7, C_Spell_GetSpellInfo(craftName, craftSubSpellName)) or app.SpellNameToSpellID[craftName .. " (" .. craftSubSpellName .. ")"]) or app.SpellNameToSpellID[craftName];
+							spellID = craftSubSpellName and (select(7, GetSpellInfo(craftName, craftSubSpellName)) or app.SpellNameToSpellID[craftName .. " (" .. craftSubSpellName .. ")"]) or app.SpellNameToSpellID[craftName];
 							if spellID then
 								if spellID == 44153 then spellID = 44155;	-- Fix the Flying Machine spellID.
 								elseif spellID == 44151 then spellID = 44157;	-- Fix the Turbo Flying Machine spellID.
@@ -197,11 +202,11 @@ app:CreateWindow("Tradeskills", {
 								---@diagnostic disable-next-line: undefined-field
 								GameTooltip.SetCraftSpell(ATTCNPCHarvester, craftIndex);
 								local link, craftedItemID = select(2, ATTCNPCHarvester:GetItem());
-								if link then craftedItemID = C_Item_GetItemInfoInstant(link); end
+								if link then craftedItemID = GetItemID(link); end
 
 								-- Cache the Reagents used to make this item.
 								for i=1,GetCraftNumReagents(craftIndex) do
-									local itemID = C_Item_GetItemInfoInstant(GetCraftReagentItemLink(craftIndex, i));
+									local itemID = GetItemID(GetCraftReagentItemLink(craftIndex, i));
 									if itemID then
 										-- Make sure a cache table exists for this item.
 										local _, _, reagentCount = GetCraftReagentInfo(craftIndex, i);
@@ -220,9 +225,9 @@ app:CreateWindow("Tradeskills", {
 				end
 
 				if tradeSkillID ~= 0 then
-					local spellName = C_Spell_GetSpellName(tradeSkillID);
+					local spellName = GetSpellName(tradeSkillID);
 					for skillID,spellID in pairs(app.SkillIDToSpellID) do
-						if C_Spell_GetSpellName(spellID) == spellName then
+						if GetSpellName(spellID) == spellName then
 							tradeSkillID = spellID;
 							break;
 						end
@@ -256,10 +261,10 @@ app:CreateWindow("Tradeskills", {
 							-- Cache the Reagents used to make this item.
 							local tradeSkillItemLink = GetTradeSkillItemLink(skillIndex);
 							if tradeSkillItemLink then
-								local craftedItemID = C_Item_GetItemInfoInstant(tradeSkillItemLink);
+								local craftedItemID = GetItemID(tradeSkillItemLink);
 								for i=1,GetTradeSkillNumReagents(skillIndex) do
 									local reagentCount = select(3, GetTradeSkillReagentInfo(skillIndex, i));
-									local itemID = C_Item_GetItemInfoInstant(GetTradeSkillReagentItemLink(skillIndex, i));
+									local itemID = GetItemID(GetTradeSkillReagentItemLink(skillIndex, i));
 
 									-- Make sure a cache table exists for this item.
 									-- Index 1: The Recipe Skill IDs
@@ -333,7 +338,7 @@ app:CreateWindow("Tradeskills", {
 					while not self:IsVisible() do
 						coroutine.yield();
 					end
-
+					
 					app.WipeSearchCache();
 					self:CacheRecipes();
 				end);
@@ -482,8 +487,8 @@ app:CreateWindow("Tradeskills", {
 			end
 		end
 		handlers.NEW_RECIPE_LEARNED = newSpellLearned;
-		handlers.LEARNED_SPELL_IN_SKILL_LINE = newSpellLearned;
-		self:RegisterEvent("LEARNED_SPELL_IN_SKILL_LINE");
+		handlers.LEARNED_SPELL_IN_TAB = newSpellLearned;
+		self:RegisterEvent("LEARNED_SPELL_IN_TAB");
 		self:RegisterEvent("NEW_RECIPE_LEARNED");
 
 		-- Default Update refreshes

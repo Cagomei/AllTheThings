@@ -11,8 +11,9 @@ local _, app = ...;
 -- Global locals
 local ipairs, select, pairs, type, rawget, wipe
 	= ipairs, select, pairs, type, rawget, wipe;
-local C_Reputation_GetFactionDataByID, GetFactionInfoByID
-	= C_Reputation.GetFactionDataByID, GetFactionInfoByID
+
+-- WoW API Cache
+local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
 
 -- App locals
 local containsAny = app.containsAny;
@@ -22,7 +23,6 @@ local GetRelativeValue = app.GetRelativeValue;
 -- Module locals
 local ActiveCustomCollects, FactionID, CollectibleHeirlooms, SettingsUnobtainable;
 local SettingsFilterIDs = {};
-local CurrentStanding = ((C_Reputation and select(7, C_Reputation_GetFactionDataByID)) or select(6, GetFactionInfoByID))
 
 -- Filter API Implementation
 -- Access via AllTheThings.Modules.Filter
@@ -158,7 +158,7 @@ function(item)
 	local minReputation = item.minReputation;
 	if minReputation then
 		if ExclusiveFactions[minReputation[1]] then
-			if minReputation[2] > (CurrentStanding(minReputation[1]) or 0) then
+			if minReputation[2] > GetFactionCurrentReputation(minReputation[1]) then
 				return false;
 			else
 				return true;
@@ -176,7 +176,7 @@ end);
 -- function(item)
 -- 	local maxReputation = item.maxReputation;
 -- 	if maxReputation then
--- 		if maxReputation[2] > (CurrentStanding(maxReputation[1]) or 0) then
+-- 		if maxReputation[2] > GetFactionCurrentReputation(maxReputation[1]) then
 -- 			return false;
 -- 		else
 -- 			return true;
