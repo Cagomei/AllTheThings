@@ -16,7 +16,7 @@ local pairs, select, math_floor
 	= pairs, select, math.floor;
 local L, ColorizeRGB = app.L, app.Modules.Color.ColorizeRGB;
 local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
-local C_Item_GetDetailedItemLevelInfo, C_Item_GetItemInfo, IsArtifactRelicItem = C_Item.GetDetailedItemLevelInfo, C_Item.GetItemInfo, IsArtifactRelicItem;
+local C_Item_GetDetailedItemLevelInfo, C_Item_GetItemInfo, IsArtifactRelicItem = ((C_Item and C_Item.GetDetailedItemLevelInfo) or GetDetailedItemLevelInfo), ((C_Item and C_Item.GetItemInfo) or GetItemInfo), IsArtifactRelicItem;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection and C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 
 local ATTAccountWideData, ATTAccountWideDataArtifacts
@@ -109,7 +109,7 @@ app.CreateArtifact = app.CreateClass("Artifact", "artifactID", {
 			-- 1 -> Off-Hand Appearance
 			-- 2 -> Main-Hand Appearance
 			-- return select(2, C_Item_GetItemInfo(("item:%d::::::::%d:::11:::8:%d:"):format(itemID, app.Level, t.artifactID)));
-			local link = ("item:%d::::::::%d:::11::%d:8:%d:"):format(math_floor(itemID), app.Level, t.isOffHand and 1 or 2, t.artifactID);
+			local link = ("item:%d::::::::%d:::%s::1:8:%d:"):format(math_floor(itemID), app.Level, t.isOffHand and "" or "9", t.artifactID);
 			-- app.PrintDebug("Artifact link",t.artifactID,itemID,link);
 			local link = select(2, C_Item_GetItemInfo(link));
 			if not link then return end

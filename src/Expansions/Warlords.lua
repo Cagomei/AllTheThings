@@ -19,7 +19,7 @@ local L = app.L;
 do
 	local KEY, CACHE = "garrisonBuildingID", "GarrisonBuildings"
 	local C_Garrison_GetBuildingInfo, C_Item_GetItemInfo, C_Item_GetItemInfoInstant
-		= C_Garrison.GetBuildingInfo, C_Item.GetItemInfo, C_Item.GetItemInfoInstant;
+		= C_Garrison.GetBuildingInfo, ((C_Item and C_Item.GetItemInfo) or GetItemInfo), ((C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant);
 	local GarrisonBuildingInfoMeta = { __index = function(t, key)
 		local _, name, _, icon, lore = C_Garrison_GetBuildingInfo(t[KEY]);
 		if not name then return nil; end
