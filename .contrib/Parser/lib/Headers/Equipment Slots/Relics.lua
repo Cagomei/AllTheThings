@@ -6,8 +6,10 @@ RELICS = createHeader({
 	icon = "Interface\\Icons\\Inv_relics_libramofhope",
 	-- #endif
 	text = {
-		-- #if AFTER LEGION
+		-- #if AFTER TWW
 		en = [[~C_Item.GetItemSubClassInfo(3,11)]],
+		-- #if AFTER LEGION
+		en = [[~GetItemSubClassInfo(3,11)]],
 		-- #else
 		en = "Relics",
 		-- #endif

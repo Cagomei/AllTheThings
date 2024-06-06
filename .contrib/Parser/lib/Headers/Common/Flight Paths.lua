@@ -6,8 +6,10 @@ FLIGHT_PATHS = createHeader({
 	text = {
 		-- #if ANYCLASSIC
 		en = "Flight Paths",
-		-- #else
+		-- #elseif AFTER TWW
 		en = [[~C_Spell.GetSpellName(218950)]],
+		-- #else
+		en = [[~GetSpellInfo(218950)]],
 		-- #endif
 		ru = "Точка полета",
 	},
