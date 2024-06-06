@@ -5,7 +5,7 @@ local L = app.L;
 -- Global locals
 local GetRaidRosterInfo, GuildControlGetNumRanks, GetGuildRosterInfo, GetGuildRosterLastOnline =
 	  GetRaidRosterInfo, GuildControlGetNumRanks, GetGuildRosterInfo, GetGuildRosterLastOnline;
-local C_Item_GetItemInfo, C_Item_GetItemInfoInstant = C_Item.GetItemInfo, C_Item.GetItemInfoInstant;
+local C_Item_GetItemInfo, C_Item_GetItemInfoInstant = ((C_Item and C_Item.GetItemInfo) or GetItemInfo), ((C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant);
 local GetLootMethod, GetRealmName, UnitName, UnitGUID, UnitInRaid, UnitInParty =
 	  GetLootMethod, GetRealmName, UnitName, UnitGUID, UnitInRaid, UnitInParty;
 local tinsert, tremove = tinsert, tremove;
