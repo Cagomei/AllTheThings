@@ -5,7 +5,11 @@ AZEROTHIAN_ARCHIVES = createHeader({
 	readable = "Azerothian Archives",
 	icon = "Interface\\Icons\\trade_archaeology",
 	text = {
+		-- #if AFTER TWW
 		en = [[~C_Spell.GetSpellName(419242)]],
+		-- #else
+		en = [[~GetSpellInfo(419242)]],
+		-- #endif
 	},
 });
 
