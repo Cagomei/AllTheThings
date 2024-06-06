@@ -8,7 +8,8 @@ local Colorize = app.Modules.Color.Colorize;
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
-local GetRealmName, C_Item_GetItemInfo, C_Spell_GetSpellInfo, C_Spell_GetSpellName = GetRealmName, C_Item.GetItemInfo, C_Spell.GetSpellInfo, C_Spell.GetSpellName
+local GetRealmName, C_Item_GetItemInfo, C_Spell_GetSpellInfo, C_Spell_GetSpellName, C_Item_GetItemCount
+	= GetRealmName, ((C_Item and C_Item.GetItemInfo) or GetItemInfo), ((C_Spell and C_Spell.GetSpellInfo) or GetSpellInfo), ((C_Spell and C_Spell.GetSpellName) or GetSpellInfo), ((C_Item and C_Item.GetItemCount) or GetItemCount);
 
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage("Information", L.INTERFACE_PAGE)
@@ -264,7 +265,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 				local currentCharacter = knownByGUID[app.GUID];
 				if currentCharacter then
 					local text = currentCharacter.text or "???";
-					local count = C_Item.GetItemCount(itemID, true);
+					local count = C_Item_GetItemCount(itemID, true);
 					if count and count > 1 then
 						text = text .. " (x" .. count .. ")";
 					end
