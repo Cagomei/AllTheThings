@@ -20,7 +20,11 @@ MECHAGON_WORKSHOP = createHeader({
 	readable = "Workshop",
 	icon = "Interface\\Icons\\inv_misc_key_06",
 	text = {
+		-- #if AFTER TWW
 		en = [[~C_Spell.GetSpellName(251998)]],
+		-- #else
+		en = [[~GetSpellInfo(251998)]],
+		-- #endif
 	},
 });
 root(ROOTS.Instances, expansion(EXPANSION.BFA, {
