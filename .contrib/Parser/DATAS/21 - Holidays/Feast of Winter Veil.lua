@@ -14,7 +14,11 @@ FEAST_OF_WINTER_VEIL_HEADER = createHeader({
 	},
 	-- #endif
 	text = {
+		-- #if AFTER TWW
 		en = [[~C_Spell.GetSpellName(21953)]],
+		-- #else
+		en = [[~GetSpellInfo(21953)]],
+		-- #endif
 	},
 });
 local HUGE_SNOWBALL = i(35557);	-- Huge Snowball
