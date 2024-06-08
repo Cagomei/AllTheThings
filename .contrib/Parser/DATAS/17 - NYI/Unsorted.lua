@@ -8,6 +8,11 @@ root(ROOTS.Unsorted, {
 	i(183835),	-- Crate of Zandalari Archaeology Fragments
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+			n(PROFESSIONS, {
+				prof(ALCHEMY, {
+					i(223080),	-- Recipe: Algari Alchemist Stone (RECIPE!)
+				}),
+			}),
 		})),
 	}),
 	expansion(EXPANSION.DF, {
@@ -283,7 +288,6 @@ root(ROOTS.Unsorted, {
 					i(215567),	-- Jinyu Poker
 					i(215568),	-- Jinyu Dagger
 					i(215569),	-- Norushen's Dagger
-					i(215699),	-- Grand Imperial Rifle
 					i(215810),	-- Warspear of Xuen
 					i(215902),	-- Klaxxi Scimitar
 					i(215903),	-- Klaxxi Sword
