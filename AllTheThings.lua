@@ -10683,26 +10683,26 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		};
 		-- Keep a static collection of top-level groups in the list so they can just be referenced for adding new
 		local topHeaders = {
-			[app.HeaderConstants.ACHIEVEMENTS] = "achievementID",
-			[app.HeaderConstants.BONUS_OBJECTIVES] = true,
-			[app.HeaderConstants.BUILDINGS] = true,
-			[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
-			[app.HeaderConstants.EMISSARY_QUESTS] = true,
-			[app.HeaderConstants.FACTIONS] = "factionID",
-			[app.HeaderConstants.FLIGHT_PATHS] = "flightPathID",
-			[app.HeaderConstants.HOLIDAYS] = "eventID",
-			[app.HeaderConstants.PROFESSIONS] = "professionID",
-			[app.HeaderConstants.PVP] = true,
-			[app.HeaderConstants.QUESTS] = "questID",
-			[app.HeaderConstants.RARES] = true,
-			[app.HeaderConstants.SECRETS] = true,
-			[app.HeaderConstants.SPECIAL] = true,
-			[app.HeaderConstants.TREASURES] = "objectID",
-			[app.HeaderConstants.VENDORS] = true,
-			[app.HeaderConstants.WEEKLY_HOLIDAYS] = true,
-			[app.HeaderConstants.WORLD_QUESTS] = true,
-			[app.HeaderConstants.ZONE_REWARDS] = true,
-			[app.HeaderConstants.ZONE_DROPS] = true,
+			-- [app.HeaderConstants.ACHIEVEMENTS] = "achievementID",
+			-- [app.HeaderConstants.BONUS_OBJECTIVES] = true,
+			-- [app.HeaderConstants.BUILDINGS] = true,
+			-- [app.HeaderConstants.COMMON_BOSS_DROPS] = true,
+			-- [app.HeaderConstants.EMISSARY_QUESTS] = true,
+			-- [app.HeaderConstants.FACTIONS] = "factionID",
+			-- [app.HeaderConstants.FLIGHT_PATHS] = "flightPathID",
+			-- [app.HeaderConstants.HOLIDAYS] = "eventID",
+			-- [app.HeaderConstants.PROFESSIONS] = "professionID",
+			-- [app.HeaderConstants.PVP] = true,
+			-- [app.HeaderConstants.QUESTS] = "questID",
+			-- [app.HeaderConstants.RARES] = true,
+			-- [app.HeaderConstants.SECRETS] = true,
+			-- [app.HeaderConstants.SPECIAL] = true,
+			-- [app.HeaderConstants.TREASURES] = "objectID",
+			-- [app.HeaderConstants.VENDORS] = true,
+			-- [app.HeaderConstants.WEEKLY_HOLIDAYS] = true,
+			-- [app.HeaderConstants.WORLD_QUESTS] = true,
+			-- [app.HeaderConstants.ZONE_REWARDS] = true,
+			-- [app.HeaderConstants.ZONE_DROPS] = true,
 		};
 		-- Headers possible in a hierarchy that should just be ignored
 		local ignoredHeaders = {
@@ -12371,8 +12371,8 @@ end;
 customWindowUpdates.list = function(self, force, got)
 	if not self.initialized then
 		self.VerifyGroupSourceID = function(data)
-			-- can only determine a sourceID if there is an itemID on the group
-			if not data.itemID then return true end
+			-- can only determine a sourceID if there is an itemID/sourceID on the group
+			if not data.itemID and not data.sourceID then return true end
 			if not data._VerifyGroupSourceID then data._VerifyGroupSourceID = 0 end
 			if data._VerifyGroupSourceID > 5 then return true end
 			data._VerifyGroupSourceID = data._VerifyGroupSourceID + 1

@@ -272,16 +272,31 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["provider"] = { "n", 213664 },	-- Momentus
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
 				}),
-				-- daily turn in
 				q(80441, {	-- Aid the Order of the Cloud Serpent
-					["repeatable"] = true,
 					["provider"] = { "n", 58564 },	-- Elder Anli
 					["coord"] = { 57.6, 44.9, THE_JADE_FOREST },
+					["cost"] = { { "c", 738, 10 } },  -- 10x Lesser Charm of Good Fortune
+					["repeatable"] = true,
 				}),
 				q(80429, {	-- Aid the August Celestials
-					["repeatable"] = true,
 					["provider"] = { "n", 57319 },	-- Elder Sage Storm-Sing
 					["coord"] = { 53.8, 61.9, THE_JADE_FOREST },
+					["cost"] = { { "c", 738, 10 } },  -- 10x Lesser Charm of Good Fortune
+					["repeatable"] = true,
+				}),
+				q(83793, {	-- Aid the Jinyu [A]
+					["provider"] = { "n", 54960 },	-- Elder Lusshan
+					["coord"] = { 58.8, 80.6, THE_JADE_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = { { "c", 738, 10 } },  -- 10x Lesser Charm of Good Fortune
+					["repeatable"] = true,
+				}),
+				q(83795, {	-- Aid the Hozen [H]
+					["provider"] = { "n", 56336 },	-- Chief Kah Kah
+					["coord"] = { 28.0, 47.0, THE_JADE_FOREST },
+					["races"] = HORDE_ONLY,
+					["cost"] = { { "c", 738, 10 } },  -- 10x Lesser Charm of Good Fortune
+					["repeatable"] = true,
 				}),
 			}),
 			n(ZONE_REWARDS, {
