@@ -1820,7 +1820,9 @@ i(220271);	-- Downy Clump
 i(225836);	-- Drained Elemental Mote
 i(225792);	-- Elegant Pedipalp Wrappings
 i(220262);	-- Elongated Proboscis
+i(213265);	-- Empty Antidote Vial
 i(220355);	-- Enlarged Ear
+i(220222);	-- Everburning Lump
 i(225814);	-- Feather-on-a-Stick
 i(220302);	-- Fractured Casing
 i(220259);	-- Gob of Mucus
@@ -1860,6 +1862,7 @@ i(220242);	-- Razored Tail-Blade
 i(220297);	-- Rock-Encrusted Plates
 i(217164);	-- Royal Nailpicker
 i(225807);	-- Rune-Carved Bone
+i(220236);	-- Sanguineous Sac
 i(220266);	-- Sharpened Digging Claws
 i(220361);	-- Sharpened Steel Implement
 i(220237);	-- Shining Amethyst Cluster
@@ -1868,6 +1871,7 @@ i(220299);	-- Sleek Beak
 i(220226);	-- Slime-Coated Membrane
 i(225810);	-- Smoked Visor
 i(220268);	-- Spiraled Horn
+i(213262);	-- Stained Glass Fragment
 i(220363);	-- Straw-Stuffed Hat
 i(220292);	-- Stretched Wing
 i(225877);	-- The Fifty Rules of Commerce, Fourth Edition
