@@ -15,13 +15,30 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["sourceQuest"] = 78546,	-- Recompense
 				}),
 			}),
+			ach(40166, {	-- Isle of Dorn Glyph Hunter
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					40669,	-- Skyriding Glyphs: Cinderbrew Meadery
+					40665,	-- Skyriding Glyphs: Dhar Durgaz
+					40663,	-- Skyriding Glyphs: Dhar Oztan
+					40671,	-- Skyriding Glyphs: Ironwold
+					40666,	-- Skyriding Glyphs: Sunken Shield
+					40664,	-- Skyriding Glyphs: Storm's Watch
+					40667,	-- Skyriding Glyphs: Thul Medran
+					40668,	-- Skyriding Glyphs: Thunderhead Peak
+					40670,	-- Skyriding Glyphs: Mourning Rise
+					40152,	-- Skyriding Glyphs: The Three Shields
+				}},
+			}),
 			ach(20595, {	-- Sojourner of Isle of Dorn
 				crit(67054, {	-- Spores of Dread
 					["sourceQuest"] = 78574,	-- Boss of the Bosk
 				}),
-				--crit(67055, {	-- Behind Closed Doors
-				--	["sourceQuest"] = 79530,	-- TODO: quest name
-				--}),
+				crit(67055, {	-- Behind Closed Doors
+					-- Remove when the quest below is uncommented
+					["_noautomation"] = true,
+					--["sourceQuest"] = 79530,	-- TODO: quest name (could be HQT?)
+				}),
 				crit(67059, {	-- Seven Soldiers
 					["sourceQuest"] = 78999,	-- Heart of a Hero
 				}),
@@ -40,27 +57,52 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				crit(68162, {	-- Remember Me, Earthen
 					["sourceQuest"] = 82895,	-- The Weight of Duty
 				}),
-				-- ?? Two?
-				--crit(67056, {	-- Brotherhood in the Skolzgal Wood
-				--	["sourceQuest"] = 80218,	-- TODO: quest name
-				--}),
-				--crit(68254, {	-- Brotherhood in the Skolzgal Wood
-				--	["sourceQuest"] = 83181,	-- TODO: quest name
-				--}),
+				crit(67056, {	-- Brotherhood in the Skolzgal Wood
+					-- Remove when the quest below is uncommented
+					["_noautomation"] = true,
+					--	["sourceQuest"] = 80218,	-- TODO: quest name (could be HQT?)
+				}),
+				crit(68254, {	-- Brotherhood in the Skolzgal Wood
+					-- Intentionally did not add _noautomation here because showing the name portion of the criteriatree is enough
+					--	["sourceQuest"] = 83181,	-- TODO: quest name (could be HQT?)
+				}),
 			}),
 			pvp(ach(40083)),	-- Tour of Duty: Isle of Dorn
-
+			ach(40665, {	-- Skyriding Glyphs: Dhar Durgaz
+				-- TODO
+				--["coord"] = { X, Y, ISLE_OF_DORN },
+			}),
+			ach(40669, {	-- Skyriding Glyphs: Cinderbrew Meadery
+				-- TODO
+				--["coord"] = { X, Y, ISLE_OF_DORN },
+			}),
 			ach(40663, {	-- Skyriding Glyphs: Dhar Oztan
 				["coord"] = { 23.1, 58.5, ISLE_OF_DORN },
 			}),
 			ach(40671, {	-- Skyriding Glyphs: Ironwold
 				["coord"] = { 71.9, 47.2, ISLE_OF_DORN },
 			}),
+			ach(40666, {	-- Skyriding Glyphs: Sunken Shield
+				-- TODO
+				--["coord"] = { X, Y, ISLE_OF_DORN },
+			}),
+			ach(40664, {	-- Skyriding Glyphs: Storm's Watch
+				-- TODO
+				--["coord"] = { X, Y, ISLE_OF_DORN },
+			}),
+			ach(40668, {	-- Skyriding Glyphs: Thunderhead Peak
+				-- TODO
+				--["coord"] = { X, Y, ISLE_OF_DORN },
+			}),
 			ach(40667, {	-- Skyriding Glyphs: Thul Medran
 				["coord"] = { 47.9, 26.6, ISLE_OF_DORN },
 			}),
 			ach(40670, {	-- Skyriding Glyphs: Mourning Rise
 				["coord"] = { 62.1, 44.9, ISLE_OF_DORN },
+			}),
+			ach(40152, {	-- Skyriding Glyphs: The Three Shields
+				-- TODO
+				--["coord"] = { X, Y, ISLE_OF_DORN },
 			}),
 		}),
 	}),
