@@ -68,10 +68,11 @@ app.AddEventRegistration = function(event, func)
 	OnReadyEventRegistrations[event] = func
 end
 app.AddEventHandler("OnReady", function()
+	local Register = app.RegisterFuncEvent
 	for event,func in pairs(OnReadyEventRegistrations) do
 		-- app.PrintDebug("RegisterFuncEvent",event,func)
 		-- safely attempt to register the event incase it is not available in a game version
-		pcall(app.RegisterFuncEvent, app, event, func);
+		pcall(Register, app, event, func);
 	end
 	OnReadyEventRegistrations = nil
 end)
@@ -90,6 +91,12 @@ local EventSequence = {
 	},
 	OnStartup = {
 		"OnStartupDone"
+	},
+	OnStartupDone = {
+		"OnRefreshSettings"
+	},
+	OnRefreshSettings = {
+		"OnSettingsRefreshed"
 	},
 	OnRefreshCollections = {
 		"OnRefreshCollectionsDone",

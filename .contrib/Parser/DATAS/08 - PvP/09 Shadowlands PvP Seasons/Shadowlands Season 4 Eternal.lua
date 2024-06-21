@@ -372,7 +372,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		}),
 		n(PVP_GLADIATOR, {
 			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
-				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
+				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
 				["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
@@ -852,10 +852,35 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					}),
 				}),
 			}),
+			n(168011, {	-- Zo'sorg <Master of Conflict>
+				["coord"] = { 35.0, 57.6, ORIBOS },
+				["g"] = {
+					i(223640, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Gladiator's Cloak Rack
+						["cost"] = {{"i", MOH, 1}},
+						["description"] = "|Cffff0000This ensemble may or may not work.  If it does not work see if you own any of the cloaks in the set.  If the token does not work for you report to ATT discord on how many cloaks you own from this ensemble.|r",
+						["g"] = {
+							-- Gladiator
+							i(175888),	-- Sinful Gladiator's Cloak
+							i(178353),	-- Sinful Gladiator's Drape
+							i(178414),	-- Sinful Gladiator's Shawl
+							i(184311),	-- Sinful Gladiator's Greatcloak
+							i(192209),	-- Eternal Gladiator's Cloak
+							i(192210),	-- Eternal Gladiator's Drape
+							i(192211),	-- Eternal Gladiator's Shawl
+							i(192212),	-- Eternal Gladiator's Greatcloak
+							-- Elite (as of 10.2.7 it gives Elite cloaks too, but only Eternal not Sinful)
+							i(192209, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Cloak
+							i(192210, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Drape
+							i(192211, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Shawl
+							i(192212, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Greatcloak
+						},
+					})),
+				},
+			}),
 		}),
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 }, ["bonusID"] = 7532 }, {
 			n(CLASSES,{
-				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
+				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
 				["g"] = bubbleDown({ ["bonusID"] = 7532 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon

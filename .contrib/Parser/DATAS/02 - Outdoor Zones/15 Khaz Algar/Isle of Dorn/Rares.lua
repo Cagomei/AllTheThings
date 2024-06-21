@@ -122,14 +122,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 81893,
 				["g"] = {
 					i(223351),	-- Wolf Packleader's Hood
+					i(223370),	-- Wolf Packleader's Visor
 				},
 			}),
-			n(219262, {	-- Springbubble (vignette name - Scorching Steamsurger)
-				["description"] = "Walking around in area",
+			n(219262, {	-- Springbubble
 				["coord"] = { 58.7, 60.7, ISLE_OF_DORN },
 				["questID"] = 81892,
 				["g"] = {
 					i(223356),	-- Shoulderpads of the Steamsurger
+					i(223357),	-- Spaulders of the Steamsurger
 				},
 			}),
 			n(219265, {	-- Emperor Pitfang (old npcID - 219269)
@@ -138,6 +139,45 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 81895,
 				["g"] = {
 					i(223345),	-- Viper's Stone Grips
+				},
+			}),
+			n(219279, {	-- Flamekeeper Graz
+				["description"] = "Walking around in area",
+				["coords"] = {
+					{ 65.6, 39.9, ISLE_OF_DORN },
+					{ 64.6, 39.8, ISLE_OF_DORN },
+					{ 64.0, 39.2, ISLE_OF_DORN },	-- initial spawn point
+				},
+				["questID"] = 81905,	-- in addition 84034
+			}),
+			n(213115, {	-- Rustul Titancap
+				["description"] = "Walking around in area",
+				["coords"] = {
+					{ 31.7, 80.8, ISLE_OF_DORN },
+					{ 33.5, 81.3, ISLE_OF_DORN },
+					{ 32.4, 82.7, ISLE_OF_DORN },
+					{ 31.4, 82.0, ISLE_OF_DORN },
+				},
+				["questID"] = 78619,
+				["g"] = {
+					i(223367),	-- Cuffs of the Titancap
+					i(223365),	-- Wristguards of the Titancap
+				},
+			}),
+			n(219284, {	-- Zovex
+				--seems like rare in this spot have rotation?
+				["coord"] = { 30.9, 52.3, ISLE_OF_DORN },
+				["questID"] = 82203,
+				["g"] = {
+					i(226117),	-- Dalaran Guardian's Arcanotool
+				},
+			}),
+			n(220068, {	-- Malfuctioning Spire
+				--could be available only during starting quests?
+				["coord"] = { 26.7, 57.4, ISLE_OF_DORN },
+				["questID"] = 81891,
+				["g"] = {
+					i(223356),	-- Shoulderpads of the Steamsurger
 				},
 			}),
 		})),

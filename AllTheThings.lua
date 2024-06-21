@@ -249,27 +249,33 @@ local function GetMoneyString(amount)
 end
 local function GetDisplayID(data)
 	-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
-	if data.sourceID or data.itemID or data.difficultyID or data.mapID then return; end
-	if data.displayID then
-		return data.displayID;
-	elseif data.creatureID then
-		local displayID = app.NPCDisplayIDFromID[data.creatureID];
+	if data.sourceID or data.itemID or data.difficultyID or data.mapID then return end
+	local displayID = data.displayID
+	if displayID then
+		return displayID
+	end
+	local npcID = data.npcID or data.creatureID
+	if npcID then
+		displayID = app.NPCDisplayIDFromID[npcID]
 		if displayID then
-			return displayID;
+			return displayID
 		end
 	end
 
-	if data.providers and #data.providers > 0 then
-		for k,v in pairs(data.providers) do
+	local qgs = data.qgs
+	if qgs and #qgs > 0 then
+		return app.NPCDisplayIDFromID[qgs[1]]
+	end
+
+	local providers = data.providers
+	if providers and #providers > 0 then
+		local lookup = app.NPCDisplayIDFromID
+		for _,v in ipairs(providers) do
 			-- if one of the providers is an NPC, we should show its texture regardless of other providers
 			if v[1] == "n" then
-				return app.NPCDisplayIDFromID[v[2]];
+				return lookup[v[2]]
 			end
 		end
-	end
-
-	if data.qgs and #data.qgs > 0 then
-		return app.NPCDisplayIDFromID[data.qgs[1]];
 	end
 end
 local function GetIconFromProviders(group)
@@ -2353,8 +2359,7 @@ end
 app.WipeSearchCache = function()
 	wipe(searchCache);
 end
-app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
-app.events.PLAYER_DIFFICULTY_CHANGED = app.WipeSearchCache;
+app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", app.WipeSearchCache);
 app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
 app.AddEventHandler("OnThingCollected", app.WipeSearchCache);
 app.AddEventHandler("OnThingRemoved", app.WipeSearchCache);
@@ -5648,7 +5653,7 @@ app.BaseFlightPath = app.BaseObjectFields(fields, "BaseFlightPath");
 app.CreateFlightPath = function(id, t)
 	return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
 end
-app.events.TAXIMAP_OPENED = function()
+app.AddEventRegistration("TAXIMAP_OPENED", function()
 	local mapID = GetTaxiMapID() or -1;
 	if mapID < 0 then return; end
 	if app.Debugging then
@@ -5678,7 +5683,7 @@ app.events.TAXIMAP_OPENED = function()
 		userLocale.FLIGHTPATH_NAMES = names;
 		UpdateRawIDs("flightPathID", newFPs);
 	end
-end
+end)
 end	-- Flight Path Lib
 
 -- Item Lib
@@ -10688,6 +10693,11 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		-- Headers possible in a hierarchy that should just be ignored
 		local ignoredHeaders = {
 			[app.HeaderConstants.GARRISONS] = true,
+			[app.HeaderConstants.DUNGEONS] = true,
+			[app.HeaderConstants.RAIDS] = true,
+			[app.HeaderConstants.SCENARIOS] = true,
+			[app.HeaderConstants.SCENARIO_COMPLETION] = true,
+			[app.HeaderConstants.REMIX_MOP] = true
 		};
 		-- self.Rebuild
 		(function()
@@ -14655,9 +14665,6 @@ local function InitDataCoroutine()
 	-- warning about debug logging in case it sneaks in we can realize quicker
 	app.PrintDebug("NOTE: ATT debug prints enabled!")
 
-	app:RegisterEvent("HEIRLOOMS_UPDATED");
-	app:RegisterEvent("SKILL_LINES_CHANGED");
-
 	-- finally can say the app is ready
 	-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 	app.IsReady = true;
@@ -14943,7 +14950,7 @@ end)();
 -- Define Event Behaviours
 app.AddonLoadedTriggers = {
 	[appName] = function()
-		-- OnLoad events
+		-- OnLoad events (saved variables are now available)
 		app.HandleEvent("OnLoad")
 	end,
 	["Blizzard_AuctionHouseUI"] = function()
@@ -14959,7 +14966,7 @@ app:RegisterFuncEvent("ADDON_LOADED", function(addonName)
 	if addonTrigger then addonTrigger(); end
 end)
 
-app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
+app.AddEventRegistration("HEIRLOOMS_UPDATED", function(itemID, kind, ...)
 	-- print("HEIRLOOMS_UPDATED",itemID,kind)
 	if itemID then
 		UpdateRawID("itemID", itemID);
@@ -14971,7 +14978,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 			if link then print(L.ITEM_ID_ADDED_RANK:format(link, itemID, (select(5, C_Heirloom.GetHeirloomInfo(itemID)) or 1))); end
 		end
 	end
-end
+end)
 
 app.AddEventHandler("OnStartupDone", function() app.OnStartupDone = true end)
 

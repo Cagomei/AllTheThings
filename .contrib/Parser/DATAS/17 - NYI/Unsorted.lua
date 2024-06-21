@@ -394,22 +394,13 @@ root(ROOTS.Unsorted, {
 					i(217115),	-- Cubic Blasphemia
 				}),
 				prof(LEATHERWORKING, {
-					i(217126),	-- Algari Competitor's Leather Boots \\ Vicious Competitor's Leather Boots
-					i(217127),	-- Algari Competitor's Leather Chestpiece \\ Vicious Competitor's Leather Chestpiece
-					i(217128),	-- Algari Competitor's Leather Mask \\ Vicious Competitor's Leather Mask
-					i(217129),	-- Algari Competitor's Leather Shoulderpads \\ Vicious Competitor's Leather Shoulderpads
-					i(217130),	-- Algari Competitor's Leather Belt \\ Vicious Competitor's Leather Belt
-					i(217131),	-- Algari Competitor's Leather Trousers \\ Vicious Competitor's Leather Trousers
-					i(217132),	-- Algari Competitor's Leather Gloves \\ Vicious Competitor's Leather Gloves
-					i(217133),	-- Algari Competitor's Leather Wristwraps \\ Vicious Competitor's Leather Wristwraps
-					i(217134),	-- Algari Competitor's Chain Treads \\ Vicious Competitor's Chain Treads
-					i(217135),	-- Algari Competitor's Chain Chainmail \\ Vicious Competitor's Chain Chainmail
-					i(217136),	-- Algari Competitor's Chain Cowl \\ Vicious Competitor's Chain Cowl
-					i(217137),	-- Algari Competitor's Chain Epaulets \\ Vicious Competitor's Chain Epaulets
-					i(217138),	-- Algari Competitor's Chain Girdle \\ Vicious Competitor's Chain Girdle
-					i(217139),	-- Algari Competitor's Chain Leggings \\ Vicious Competitor's Chain Leggings
-					i(217140),	-- Algari Competitor's Chain Gauntlets \\ Vicious Competitor's Chain Gauntlets
-					i(217141),	-- Algari Competitor's Chain Cuffs \\ Vicious Competitor's Chain Cuffs
+					i(223104),	-- Pattern: Defender's Armor Kit (RECIPE!)
+					i(223101),	-- Pattern: Reinforced Setae Flyers (RECIPE!)
+					i(223095),	-- Pattern: Rook Feather Wristwraps (RECIPE!)
+					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
+					i(223103),	-- Pattern: Stormbound Armor Kit (RECIPE!)
+					i(223100),	-- Pattern: Vambraces of Deepening Darkness (RECIPE!)
+					i(223098),	-- Pattern: Waders of the Unifying Flame (RECIPE!)
 				}),
 				prof(MINING, {
 					i(217707),	-- Imperfect Null Stone
@@ -418,36 +409,20 @@ root(ROOTS.Unsorted, {
 					i(210942),	-- Byproduct 01 - Light
 					i(210943),	-- Byproduct 02 - Dark
 				}),
-				prof(SKINNING, {
-					i(212664),	-- Stormcharged Leather
-					i(212665),	-- Stormcharged Leather
-					i(212666),	-- Stormcharged Leather
-					i(212667),	-- Gloom Chitin
-					i(212668),	-- Gloom Chitin
-					i(212669),	-- Gloom Chitin
-					i(212670),	-- Thunderous Hide
-					i(212672),	-- Thunderous Hide
-					i(212673),	-- Thunderous Hide
-					i(212674),	-- Sunless Carapace
-					i(212675),	-- Sunless Carapace
-					i(212676),	-- Sunless Carapace
-					i(217818),	-- Refine Algari Hides \\ Refine Algarian Hides
-					i(217822),	-- Refine Algari Leather \\ Refine Algarian Leather
-					i(217840),	-- Refine Algari Chitin \\ Refine Algarian Chitin
-				}),
 				prof(TAILORING, {
 					i(212677),	-- Underground Cloth 01
 					i(212678),	-- Underground Cloth 01
 					i(212679),	-- Underground Cloth 01
-					i(217117),	-- Algari Competitor's Cloth Leggings \\ Vicious Competitor's Cloth Leggings
-					i(217118),	-- Algari Competitor's Cloth Shoulderpads \\ Vicious Competitor's Cloth Shoulderpads
-					i(217119),	-- Algari Competitor's Cloth Treads \\ Vicious Competitor's Cloth Treads
-					i(217120),	-- Algari Competitor's Cloth Bands \\ Vicious Competitor's Cloth Bands
-					i(217121),	-- Algari Competitor's Cloth Hood \\ Vicious Competitor's Cloth Hood
-					i(217122),	-- Algari Competitor's Cloth Gloves \\ Vicious Competitor's Cloth Gloves
-					i(217123),	-- Algari Competitor's Cloth Tunic \\ Vicious Competitor's Cloth Tunic
-					i(217124),	-- Algari Competitor's Cloth Sash \\ Vicious Competitor's Cloth Sash
-					i(217125),	-- Algari Competitor's Cloth Cloak \\ Vicious Competitor's Cloth Cloak
+					i(221750),	-- Shredded Weavercloth
+					i(222416),	-- Shredded Weavercloth
+					i(224823),	-- Shredded Weavercloth
+					i(222348),	-- Unraveling
+					i(222788),	-- Unraveling
+					--------
+					r(446975),	-- Artisan Tailor's Coat
+					i(224434),	-- Pattern: Dawnthread Lining (RECIPE!)
+					r(447001),	-- Daybreak Spellthread
+					r(447000),	-- Sunset Spellthread
 				}),
 			}),
 			header(HEADERS.LFGDungeon, 1273, {
@@ -1010,7 +985,6 @@ root(ROOTS.Unsorted, {
 				i(215179),	-- Power Cell
 				i(215180),	-- Power Cell
 				i(215447),	-- Duskstem
-				i(215457),	-- Loyalist Secretions
 				i(216605),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
 				i(216682),	-- The Vizier's Invitation
 				i(216683),	-- Earthen Rifle
@@ -1313,10 +1287,6 @@ root(ROOTS.Unsorted, {
 			i(218333),	-- Recruit's Sturdy Longblade
 			i(218334),	-- Recruit's Sturdy Saber
 			i(218335),	-- Recruit's Sturdy Crescent
-			i(218336),	-- Kaheti Swarm Chitin \\ Nerub Chitin
-			i(218337),	-- Honed Bone Shards
-			i(218338),	-- Bottled Storm
-			i(218339),	-- Burning Cinderbee Setae
 			i(218340),	-- Chest of Playtest Equipment
 			i(218341),	-- Shoulderguards of the Assembly \\ Shoulderguards of the Assembled
 			i(218342),	-- Shawl of the Assembly \\ Shawl of the Assembled
@@ -1426,7 +1396,6 @@ root(ROOTS.Unsorted, {
 			i(218449),	-- Forged Aspirant's Knife \\ PH Copy Draconic Aspirant's Knife
 			i(218451),	-- Forged Aspirant's Chopper \\ PH Copy Draconic Aspirant's Chopper
 			i(218452),	-- Forged Aspirant's Wand \\ PH Copy Draconic Aspirant's Wand
-			i(218455),	-- Totem of the Southern Storm
 			i(218456),	-- Precious Gems
 			i(218457),	-- Special Silk
 			i(218458),	-- Important Info Scrolls
@@ -1709,7 +1678,6 @@ root(ROOTS.Unsorted, {
 			i(218735),	-- Forged Gladiator's Sword \\ PH Copy Draconic Gladiator's Sword
 			i(218736),	-- Forged Gladiator's Skewer \\ Forged Gladiator's Shotel \\ PH Copy Draconic Gladiator's Shotel
 			i(218737),	-- Forged Gladiator's Battlestaff \\ Forged Gladiator's Axestaff \\ PH Copy Draconic Gladiator's Axestaff
-			i(218738),	-- Bizarrely-Shaped Stomach
 			i(218741),	-- Mossy Cartographer's Doublet
 			i(218742),	-- Deep Cartographer's Doublet
 			i(218743),	-- Crimson Cartographer's Doublet
@@ -1971,20 +1939,9 @@ root(ROOTS.Unsorted, {
 			i(218999),	-- Leafy Educator's Wraps
 			i(219000),	-- Lilac Educator's Wraps
 			i(219001),	-- Cardinal Educator's Wraps
-			i(219002),	-- Specular Rainbowfish Lure
-			i(219003),	-- Quiet River Bass Lure
-			i(219004),	-- Dornish Pike Lure
-			i(219005),	-- Arathor Hammerfish Lure
-			i(219006),	-- Roaring Anglerseeker Lure
-			i(219007),	-- Elusive Creature Lure
-			i(219008),	-- Supreme Beast Lure
-			i(219009),	-- Crystalline Creature Lure
-			i(219010),	-- Writhing Creature Lure
-			i(219011),	-- Sporefused Creature Lure
 			i(219013),	-- Superb Beast Fang
 			i(219016),	-- Coated Steel Tips
 			i(219017),	-- Silver Armor Clasps
-			i(219019),	-- Beast Lure Scent
 			i(219065),	-- [DNT] Ensemble: CivilianScholar
 			i(219066),	-- [DNT] Ensemble: CivilianScholar
 			i(219067),	-- [DNT] Ensemble: CivilianScholar
@@ -2137,22 +2094,6 @@ root(ROOTS.Unsorted, {
 			i(219323),	-- Gelatinous Unguent
 			i(219324),	-- Roiling Elixir
 			i(219325),	-- Band of Radiant Echoes
-			i(219327),	-- Rune-Branded Kickers
-			i(219328),	-- Rune-Branded Tunic
-			i(219329),	-- Rune-Branded Hood
-			i(219330),	-- Rune-Branded Mantle
-			i(219331),	-- Rune-Branded Waistband
-			i(219332),	-- Rune-Branded Legwraps
-			i(219333),	-- Rune-Branded Grasps
-			i(219334),	-- Rune-Branded Armbands
-			i(219335),	-- Glyph-Etched Stompers
-			i(219336),	-- Glyph-Etched Breastplate
-			i(219337),	-- Glyph-Etched Guise
-			i(219338),	-- Glyph-Etched Epaulets
-			i(219339),	-- Glyph-Etched Binding
-			i(219340),	-- Glyph-Etched Cuisses
-			i(219341),	-- Glyph-Etched Gauntlets
-			i(219342),	-- Glyph-Etched Vambraces
 			i(219346),	-- Camp Supplies
 			i(219350),	-- Maddening Manifest
 			i(219351),	-- Mana-Lined Slab Slicer
@@ -2213,40 +2154,8 @@ root(ROOTS.Unsorted, {
 			i(219465),	-- Earthen Traveler's Crossbow
 			i(219467),	-- Earthen Traveler's Fist \\ Earthen Traveler's Fist Weapon
 			i(219469),	-- Fog Beast Tracker
-			i(219470),	-- Spelunker's Leather Footpads
-			i(219471),	-- Spelunker's Leather Bands
-			i(219472),	-- Spelunker's Leather Jerkin
-			i(219473),	-- Tracker's Chitin Galoshes
-			i(219474),	-- Tracker's Chitin Cuffs
-			i(219475),	-- Tracker's Chitin Hauberk
-			i(219476),	-- Spelunker's Practiced Hat
-			i(219477),	-- Spelunker's Practiced Shoulders
-			i(219478),	-- Spelunker's Practiced Mitts
-			i(219479),	-- Spelunker's Practiced Britches
-			i(219480),	-- Spelunker's Practiced Sash
-			i(219481),	-- Tracker's Toughened Headgear
-			i(219482),	-- Tracker's Toughened Shoulderguards
-			i(219483),	-- Tracker's Toughened Handguards
-			i(219484),	-- Tracker's Toughened Links
-			i(219485),	-- Tracker's Toughened Girdle
-			i(219489),	-- Waders of the Unifying Flame
-			i(219492),	-- Sanctified Torchbearer's Grips
 			i(219494),	-- Ritual Flame
-			i(219495),	-- Blessed Weapon Grip
-			i(219496),	-- Blessed Weapon Grip
-			i(219497),	-- Blessed Weapon Grip
 			i(219500),	-- Fang Adornments
-			i(219501),	-- Vambraces of Deepening Darkness
-			i(219502),	-- Adrenal Surge Clasp
-			i(219504),	-- Writhing Armor Banding
-			i(219505),	-- Writhing Armor Banding
-			i(219506),	-- Writhing Armor Banding
-			i(219507),	-- Smoldering Pollen Hauberk
-			i(219508),	-- Reinforced Setae Flyers
-			i(219509),	-- Busy Bee's Buckle
-			i(219511),	-- Rook Feather Wristwraps
-			i(219512),	-- Weathered Stormfront Vest
-			i(219513),	-- Roiling Thunderstrike Talons
 			i(219522),	-- Radiant Fuel Crystal
 			i(219676),	-- Common Fish A
 			i(219677),	-- Common Fish B
@@ -2328,57 +2237,7 @@ root(ROOTS.Unsorted, {
 			i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
 			i(219804),	-- [DNT] Antiparalytic Serum
 			i(219808),	-- Ethereal Sugar
-			i(219861),	-- Gardener's Basket
-			i(219862),	-- Hideseeker's Pack
-			i(219863),	-- Hideseeker's Hat
-			i(219864),	-- Scrapsmith's Gloves
-			i(219865),	-- Hideshaper's Cover
-			i(219866),	-- Apothecary's Cap
-			i(219867),	-- Stonebound Herbalist's Pack
-			i(219868),	-- Deep Tracker's Pack
-			i(219869),	-- Deep Tracker's Cap
-			i(219870),	-- Charged Scrapmaster's Gauntlets
-			i(219871),	-- Arathi Leatherworker's Smock
-			i(219872),	-- Nerubian Alchemist's Hat
-			i(219873),	-- Steelsmith's Apron
-			i(219874),	-- Earthen Forgemaster's Apron
-			i(219875),	-- Gemcutter's Apron
-			i(219876),	-- Earthen Jeweler's Cover
 			i(219877),	-- Void Reaper's Warp Blade
-			i(219880),	-- Carapace-Backed Hide
-			i(219881),	-- Carapace-Backed Hide
-			i(219882),	-- Carapace-Backed Hide
-			i(219883),	-- Crystalfused Hide
-			i(219884),	-- Crystalfused Hide
-			i(219885),	-- Crystalfused Hide
-			i(219886),	-- Writhing Hide
-			i(219887),	-- Writhing Hide
-			i(219888),	-- Writhing Hide
-			i(219889),	-- Sporecoated Hide
-			i(219890),	-- Sporecoated Hide
-			i(219891),	-- Sporecoated Hide
-			i(219892),	-- Leyfused Hide
-			i(219893),	-- Leyfused Hide
-			i(219894),	-- Leyfused Hide
-			i(219895),	-- Deepfury Hide
-			i(219896),	-- Deepfury Hide
-			i(219897),	-- Deepfury Hide
-			i(219898),	-- Chitin Armor Banding
-			i(219899),	-- Chitin Armor Banding
-			i(219900),	-- Chitin Armor Banding
-			i(219901),	-- Storm-Touched Weapon Wrap
-			i(219902),	-- Storm-Touched Weapon Wrap
-			i(219903),	-- Storm-Touched Weapon Wrap
-			i(219905),	-- Thunderous Drums
-			i(219906),	-- Defender's Armor Kit
-			i(219907),	-- Defender's Armor Kit
-			i(219908),	-- Defender's Armor Kit
-			i(219909),	-- Stormbound Armor Kit
-			i(219910),	-- Stormbound Armor Kit
-			i(219911),	-- Stormbound Armor Kit
-			i(219912),	-- Dual Layered Armor Kit
-			i(219913),	-- Dual Layered Armor Kit
-			i(219914),	-- Dual Layered Armor Kit
 			i(219915),	-- Foul Behemoth's Chelicera
 			i(219916),	-- Bronzebeard Family Compass
 			i(219917),	-- Creeping Coagulum
@@ -2615,13 +2474,11 @@ root(ROOTS.Unsorted, {
 			i(221093),	-- Deeply Corrupted Coil
 			i(221204),	-- Spore Giant's Stompers
 			i(221205),	-- Vest of the River
-			i(221206),	-- Reinforced Chitin Chestpiece
 			i(221207),	-- Denmother's Chestpiece
 			i(221208),	-- Unseen Cutthroat's Tunic \\ Fel Assassin Tunic
 			i(221209),	-- Flame Trader's Gloves
 			i(221210),	-- Grips of the Earth
 			i(221211),	-- Grasp of the Shallows
-			i(221212),	-- Death Burrower Handguards
 			i(221214),	-- Chitin Chain Headpiece
 			i(221215),	-- Taskmaster's Mining Cap
 			i(221216),	-- Bruin Strength Legplates
@@ -2633,7 +2490,6 @@ root(ROOTS.Unsorted, {
 			i(221223),	-- Bog Beast Mantle
 			i(221224),	-- Bouldershell Waistguard
 			i(221225),	-- Benevolent Hornstag Cinch
-			i(221226),	-- Voidtouched Waistguard
 			i(221227),	-- Monstrous Fungal Cord
 			i(221228),	-- Infested Fungal Wristwraps
 			i(221229),	-- Perchfather's Cuffs
@@ -2670,205 +2526,6 @@ root(ROOTS.Unsorted, {
 			i(221507),	-- Earth Golem's Wrap
 			i(221508),	-- Pelt of Beledar's Strength
 			i(221550),	-- Boskroot Cap
-			i(221551),	-- Duskthread
-			i(221552),	-- Duskthread
-			i(221553),	-- Duskthread
-			i(221554),	-- Dawnthread
-			i(221555),	-- Dawnthread
-			i(221556),	-- Dawnthread
-			i(221557),	-- Weavercloth
-			i(221558),	-- Weavercloth
-			i(221559),	-- Weavercloth
-			i(221560),	-- Duskthread Bolt
-			i(221561),	-- Duskthread Bolt
-			i(221562),	-- Duskthread Bolt
-			i(221563),	-- Dawnthread Bolt
-			i(221564),	-- Dawnthread Bolt
-			i(221565),	-- Dawnthread Bolt
-			i(221566),	-- Weavercloth Bolt
-			i(221567),	-- Weavercloth Bolt
-			i(221568),	-- Weavercloth Bolt
-			i(221569),	-- Hood of the Woven Dawn
-			i(221570),	-- Shoulders of the Woven Dawn
-			i(221571),	-- Pants of the Woven Dusk
-			i(221572),	-- Slippers of the Woven Dusk
-			i(221573),	-- Warm Sunrise Bracers
-			i(221574),	-- Cool Sunset Bracers
-			i(221575),	-- Adaptive Delver's Shawl
-			i(221576),	-- Consecrated Slippers
-			i(221577),	-- Consecrated Cuffs
-			i(221578),	-- Consecrated Cord
-			i(221579),	-- Consecrated Cloak
-			i(221580),	-- Consecrated Hood
-			i(221581),	-- Consecrated Robe
-			i(221582),	-- Consecrated Leggings
-			i(221583),	-- Consecrated Mantle
-			i(221584),	-- Consecrated Gloves
-			i(221585),	-- Vicious Combatant's Weavercloth Slippers
-			i(221586),	-- Vicious Combatant's Weavercloth Cord
-			i(221587),	-- Vicious Combatant's Weavercloth Wrists
-			i(221588),	-- Vicious Combatant's Weavercloth Cloak
-			i(221589),	-- Vicious Combatant's Weavercloth Hood
-			i(221590),	-- Vicious Combatant's Weavercloth Robe
-			i(221591),	-- Vicious Combatant's Weavercloth Pants
-			i(221592),	-- Vicious Combatant's Weavercloth Mantle
-			i(221593),	-- Vicious Combatant's Weavercloth Gloves
-			i(221594),	-- Weavercloth Slippers
-			i(221595),	-- Weavercloth Cuffs
-			i(221596),	-- Weavercloth Cord
-			i(221597),	-- Weavercloth Cloak
-			i(221598),	-- Weavercloth Hood
-			i(221599),	-- Weavercloth Robe
-			i(221600),	-- Weavercloth Leggings
-			i(221601),	-- Weavercloth Mantle
-			i(221602),	-- Weavercloth Gloves
-			i(221603),	-- Weavercloth Bag
-			i(221604),	-- Dawnthread Bag
-			i(221605),	-- Weavercloth Reagent Bag
-			i(221606),	-- Duskthread Bag
-			i(221607),	-- Satchel of the Long Day
-			i(221608),	-- Satchel of the Long Night
-			i(221609),	-- Alchemy Bag
-			i(221610),	-- Blacksmithing Bag
-			i(221611),	-- Leatherworking Bag
-			i(221612),	-- Enchanting Bag
-			i(221613),	-- Engineering Bag
-			i(221614),	-- Inscription Bag
-			i(221615),	-- Herbalism Bag
-			i(221616),	-- Mining Bag
-			i(221617),	-- Jewelcrafting Bag
-			i(221618),	-- Dawnthread Lining
-			i(221619),	-- Dawnthread Lining
-			i(221620),	-- Dawnthread Lining
-			i(221621),	-- Duskthread Lining
-			i(221622),	-- Duskthread Lining
-			i(221623),	-- Duskthread Lining
-			i(221624),	-- Reinforced Wrap Kit
-			i(221625),	-- Weaverthread Parachute Kit
-			i(221626),	-- Preserving Pocket Cloth
-			i(221627),	-- Preserving Pocket Cloth
-			i(221628),	-- Preserving Pocket Cloth
-			i(221629),	-- Bright Polishing Cloth
-			i(221630),	-- Bright Polishing Cloth
-			i(221631),	-- Bright Polishing Cloth
-			i(221632),	-- Weaverthread Polishing Cloth
-			i(221633),	-- Weaverthread Polishing Cloth
-			i(221634),	-- Weaverthread Polishing Cloth
-			i(221635),	-- Gritty Polishing Cloth
-			i(221636),	-- Gritty Polishing Cloth
-			i(221637),	-- Gritty Polishing Cloth
-			i(221639),	-- Delete me 1 \\ Duskthread
-			i(221640),	-- Delete me 2 \\ Duskthread
-			i(221641),	-- Delete me 3 \\ Duskthread
-			i(221642),	-- Delete me 4 \\ Dawnthread
-			i(221643),	-- Delete me 5 \\ Dawnthread
-			i(221644),	-- Delete me 6 \\ Dawnthread
-			i(221645),	-- Weavercloth
-			i(221646),	-- Weavercloth
-			i(221647),	-- Weavercloth
-			i(221648),	-- Delete me 7 \\ Duskthread Bolt
-			i(221649),	-- Delete me 8 \\ Duskthread Bolt
-			i(221650),	-- Delete me 9 \\ Duskthread Bolt
-			i(221651),	-- Delete me 10 \\ Dawnthread Bolt
-			i(221652),	-- Delete me 11 \\ Dawnthread Bolt
-			i(221653),	-- Delete me 12 \\ Dawnthread Bolt
-			i(221654),	-- Delete me 13 \\ Weavercloth Bolt
-			i(221655),	-- Delete me 14 \\ Weavercloth Bolt
-			i(221656),	-- Delete me 15 \\ Weavercloth Bolt
-			i(221657),	-- Hood of the Woven Dawn
-			i(221658),	-- Shoulders of the Woven Dawn
-			i(221659),	-- Pants of the Woven Dusk
-			i(221660),	-- Slippers of the Woven Dusk
-			i(221661),	-- Warm Sunrise Bracers
-			i(221662),	-- Cool Sunset Bracers
-			i(221663),	-- Adaptive Delver's Shawl
-			i(221664),	-- Consecrated Slippers
-			i(221665),	-- Consecrated Cuffs
-			i(221666),	-- Consecrated Cord
-			i(221667),	-- Consecrated Cloak
-			i(221668),	-- Consecrated Hood
-			i(221669),	-- Consecrated Robe
-			i(221670),	-- Consecrated Leggings
-			i(221671),	-- Consecrated Mantle
-			i(221672),	-- Consecrated Gloves
-			i(221673),	-- Vicious Combatant's Weavercloth Slippers
-			i(221674),	-- Vicious Combatant's Weavercloth Cord
-			i(221675),	-- Vicious Combatant's Weavercloth Wrists
-			i(221676),	-- Vicious Combatant's Weavercloth Cloak
-			i(221677),	-- Vicious Combatant's Weavercloth Hood
-			i(221678),	-- Vicious Combatant's Weavercloth Robe
-			i(221679),	-- Vicious Combatant's Weavercloth Pants
-			i(221680),	-- Vicious Combatant's Weavercloth Mantle
-			i(221681),	-- Vicious Combatant's Weavercloth Gloves
-			i(221682),	-- Weavercloth Slippers
-			i(221683),	-- Weavercloth Cuffs
-			i(221684),	-- Weavercloth Cord
-			i(221685),	-- Weavercloth Cloak
-			i(221686),	-- Weavercloth Hood
-			i(221687),	-- Weavercloth Robe
-			i(221688),	-- Weavercloth Leggings
-			i(221689),	-- Weavercloth Mantle
-			i(221690),	-- Weavercloth Gloves
-			i(221691),	-- Weavercloth Gardening Hat
-			i(221692),	-- Weavercloth Fishing Cap
-			i(221693),	-- Weavercloth Enchanter's Hat
-			i(221694),	-- Weavercloth Tailor's Coat
-			i(221695),	-- Weavercloth Alchemist's Robe
-			i(221696),	-- Weavercloth Chef's Hat
-			i(221697),	-- Artisan's Gardening Hat
-			i(221698),	-- Artisan's Fishing Cap
-			i(221699),	-- Artisan's Enchanter's Hat
-			i(221700),	-- Delete me 16 \\ Artisan's Alchemist's Robe
-			i(221701),	-- Artisan's Chef's Hat
-			i(221702),	-- Delete me 17 \\ Venerated Robes of the Eclipse
-			i(221703),	-- Delete me 18 \\ Weavercloth Bag
-			i(221704),	-- Delete me 19 \\ Dawnthread Bag
-			i(221705),	-- Delete me 20 \\ Weavercloth Reagent Bag
-			i(221706),	-- Delete me 21 \\ Duskthread Bag
-			i(221707),	-- Delete me 22 \\ Satchel of the Long Day
-			i(221708),	-- Delete me 23 \\ Satchel of the Long Night
-			i(221709),	-- Delete me 24 \\ Alchemy Bag
-			i(221710),	-- Blacksmithing Bag
-			i(221711),	-- Delete me 25 \\ Leatherworking Bag
-			i(221712),	-- Delete me 26 \\ Enchanting Bag
-			i(221713),	-- Delete me 27 \\ Engineering Bag
-			i(221714),	-- Inscription Bag
-			i(221715),	-- Delete me 28 \\ Herbalism Bag
-			i(221716),	-- Delete me 29 \\ Mining Bag
-			i(221717),	-- Delete me 30 \\ Jewelcrafting Bag
-			i(221718),	-- Delete me 31 \\ Dawnthread Lining
-			i(221719),	-- Delete me 32 \\ Dawnthread Lining
-			i(221720),	-- Delete me 33 \\ Dawnthread Lining
-			i(221721),	-- Delete me 34 \\ Duskthread Lining
-			i(221722),	-- Delete me 35 \\ Duskthread Lining
-			i(221723),	-- Delete me 36 \\ Duskthread Lining
-			i(221724),	-- Delete me 37 \\ Reinforced Wrap Kit
-			i(221725),	-- Delete me 38 \\ Weaverthread Parachute Kit
-			i(221726),	-- Delete me 39 \\ Preserving Pocket Cloth
-			i(221727),	-- Delete me 40 \\ Preserving Pocket Cloth
-			i(221728),	-- Delete me 41 \\ Preserving Pocket Cloth
-			i(221729),	-- Delete me 42 \\ Bright Polishing Cloth
-			i(221730),	-- Delete me 43 \\ Bright Polishing Cloth
-			i(221731),	-- Delete me 44 \\ Bright Polishing Cloth
-			i(221732),	-- Delete me 45 \\ Weaverthread Polishing Cloth
-			i(221733),	-- Delete me 46 \\ Weaverthread Polishing Cloth
-			i(221734),	-- Delete me 47 \\ Weaverthread Polishing Cloth
-			i(221735),	-- Delete me 48 \\ Gritty Polishing Cloth
-			i(221736),	-- Delete me 49 \\ Gritty Polishing Cloth
-			i(221737),	-- Delete me 50 \\ Gritty Polishing Cloth
-			i(221738),	-- Delete me 51 \\ Weavercloth Spellthread
-			i(221739),	-- Delete me 52 \\ Weavercloth Spellthread
-			i(221740),	-- Delete me 53 \\ Weavercloth Spellthread
-			i(221741),	-- Delete me 54 \\ Sunset Spellthread
-			i(221742),	-- Delete me 55 \\ Sunset Spellthread
-			i(221743),	-- Delete me 56 \\ Sunset Spellthread
-			i(221744),	-- Delete me 57 \\ Daybreak Spellthread
-			i(221745),	-- Delete me 58 \\ Daybreak Spellthread
-			i(221746),	-- Delete me 59 \\ Daybreak Spellthread
-			i(221747),	-- Delete me 60 \\ Weavercloth Bandage
-			i(221748),	-- Delete me 61 \\ Weavercloth Bandage
-			i(221749),	-- Delete me 62 \\ Weavercloth Bandage
-			i(221750),	-- Shredded Weavercloth
 			i(221751),	-- DO NOT USE Prismatic Codex
 			i(221754),	-- Ringing Deeps Ingot
 			i(221757),	-- Gloomfathom Hide
@@ -3236,75 +2893,6 @@ root(ROOTS.Unsorted, {
 			i(222345),	-- Hearty Rockslide Shake
 			i(222346),	-- Hearty NYI NAME NEEDED
 			i(222347),	-- Hearty NYI NAME NEEDED
-			i(222348),	-- Unraveling
-			i(222349),	-- Duskthread
-			i(222350),	-- Duskthread
-			i(222351),	-- Duskthread
-			i(222352),	-- Dawnthread
-			i(222353),	-- Dawnthread
-			i(222354),	-- Dawnthread
-			i(222355),	-- Weavercloth
-			i(222356),	-- Weavercloth
-			i(222357),	-- Weavercloth
-			i(222358),	-- Duskthread Bolt
-			i(222359),	-- Duskthread Bolt
-			i(222360),	-- Duskthread Bolt
-			i(222361),	-- Dawnthread Bolt
-			i(222362),	-- Dawnthread Bolt
-			i(222363),	-- Dawnthread Bolt
-			i(222364),	-- Weavercloth Bolt
-			i(222365),	-- Weavercloth Bolt
-			i(222366),	-- Weavercloth Bolt
-			i(222367),	-- Artisan's Alchemist's Robe
-			i(222368),	-- Venerated Robes of the Eclipse
-			i(222369),	-- Weavercloth Bag
-			i(222370),	-- Dawnthread Bag
-			i(222371),	-- Weavercloth Reagent Bag
-			i(222372),	-- Duskthread Bag
-			i(222373),	-- Satchel of the Long Day
-			i(222374),	-- Satchel of the Long Night
-			i(222375),	-- Alchemy Bag
-			i(222376),	-- Blacksmithing Bag
-			i(222377),	-- Leatherworking Bag
-			i(222378),	-- Enchanting Bag
-			i(222379),	-- Engineering Bag
-			i(222380),	-- Inscription Bag
-			i(222381),	-- Herbalism Bag
-			i(222382),	-- Mining Bag
-			i(222383),	-- Jewelcrafting Bag
-			i(222384),	-- Dawnthread Lining
-			i(222385),	-- Dawnthread Lining
-			i(222386),	-- Dawnthread Lining
-			i(222387),	-- Duskthread Lining
-			i(222388),	-- Duskthread Lining
-			i(222389),	-- Duskthread Lining
-			i(222390),	-- Reinforced Wrap Kit
-			i(222391),	-- Weaverthread Parachute Kit
-			i(222392),	-- Preserving Pocket Cloth
-			i(222393),	-- Preserving Pocket Cloth
-			i(222394),	-- Preserving Pocket Cloth
-			i(222395),	-- Bright Polishing Cloth
-			i(222396),	-- Bright Polishing Cloth
-			i(222397),	-- Bright Polishing Cloth
-			i(222398),	-- Weaverthread Polishing Cloth
-			i(222399),	-- Weaverthread Polishing Cloth
-			i(222400),	-- Weaverthread Polishing Cloth
-			i(222401),	-- Gritty Polishing Cloth
-			i(222402),	-- Gritty Polishing Cloth
-			i(222403),	-- Gritty Polishing Cloth
-			i(222404),	-- Weavercloth Spellthread
-			i(222405),	-- Weavercloth Spellthread
-			i(222406),	-- Weavercloth Spellthread
-			i(222407),	-- Sunset Spellthread
-			i(222408),	-- Sunset Spellthread
-			i(222409),	-- Sunset Spellthread
-			i(222410),	-- Daybreak Spellthread
-			i(222411),	-- Daybreak Spellthread
-			i(222412),	-- Daybreak Spellthread
-			i(222413),	-- Weavercloth Bandage
-			i(222414),	-- Weavercloth Bandage
-			i(222415),	-- Weavercloth Bandage
-			i(222416),	-- Shredded Weavercloth
 			i(222417),	-- Core Alloy
 			i(222418),	-- Core Alloy
 			i(222419),	-- Core Alloy
@@ -3531,112 +3119,6 @@ root(ROOTS.Unsorted, {
 			i(222785),	-- zzold cooking recipe
 			i(222786),	-- zzold cooking recipe
 			i(222787),	-- zzold cooking recipe
-			i(222788),	-- Unraveling
-			i(222789),	-- Spool of Duskthread \\ Duskthread
-			i(222790),	-- Spool of Duskthread \\ Duskthread
-			i(222791),	-- Spool of Duskthread \\ Duskthread
-			i(222792),	-- Spool of Dawnthread \\ Dawnthread
-			i(222793),	-- Spool of Dawnthread \\ Dawnthread
-			i(222794),	-- Spool of Dawnthread \\ Dawnthread
-			i(222798),	-- Duskweave Bolt \\ Duskthread Bolt
-			i(222799),	-- Duskweave Bolt \\ Duskthread Bolt
-			i(222800),	-- Duskweave Bolt \\ Duskthread Bolt
-			i(222801),	-- Dawnweave Bolt \\ Dawnthread Bolt
-			i(222802),	-- Dawnweave Bolt \\ Dawnthread Bolt
-			i(222803),	-- Dawnweave Bolt \\ Dawnthread Bolt
-			i(222804),	-- Weavercloth Bolt
-			i(222805),	-- Weavercloth Bolt
-			i(222806),	-- Weavercloth Bolt
-			i(222807),	-- Grips of the Woven Dawn \\ Hood of the Woven Dawn
-			i(222808),	-- Slippers of the Woven Dawn \\ Shoulders of the Woven Dawn
-			i(222809),	-- Grips of the Woven Dusk \\ Pants of the Woven Dusk
-			i(222810),	-- Slippers of the Woven Dusk
-			i(222811),	-- Warm Sunrise Bracers
-			i(222812),	-- Cool Sunset Bracers
-			i(222813),	-- Adaptive Delver's Shawl
-			i(222814),	-- Consecrated Slippers
-			i(222815),	-- Consecrated Cuffs
-			i(222816),	-- Consecrated Cord
-			i(222817),	-- Consecrated Cloak
-			i(222818),	-- Consecrated Hood
-			i(222819),	-- Consecrated Robe
-			i(222820),	-- Consecrated Leggings
-			i(222821),	-- Consecrated Mantle
-			i(222822),	-- Consecrated Gloves
-			i(222823),	-- Vicious Combatant's Weavercloth Slippers
-			i(222824),	-- Vicious Combatant's Weavercloth Cord
-			i(222825),	-- Vicious Combatant's Weavercloth Wrists
-			i(222826),	-- Vicious Combatant's Weavercloth Cloak
-			i(222827),	-- Vicious Combatant's Weavercloth Hood
-			i(222828),	-- Vicious Combatant's Weavercloth Robe
-			i(222829),	-- Vicious Combatant's Weavercloth Pants
-			i(222830),	-- Vicious Combatant's Weavercloth Mantle
-			i(222831),	-- Vicious Combatant's Weavercloth Gloves
-			i(222832),	-- Pioneer's Cloth Slippers \\ Weavercloth Slippers
-			i(222833),	-- Pioneer's Cloth Cuffs \\ Weavercloth Cuffs
-			i(222834),	-- Pioneer's Perfected Cord \\ Weavercloth Cord
-			i(222835),	-- Pioneer's Perfected Cloak \\ Weavercloth Cloak
-			i(222836),	-- Pioneer's Perfected Hood \\ Weavercloth Hood
-			i(222837),	-- Pioneer's Cloth Robe \\ Weavercloth Robe
-			i(222838),	-- Pioneer's Perfected Leggings \\ Weavercloth Leggings
-			i(222839),	-- Pioneer's Perfected Mantle \\ Weavercloth Mantle
-			i(222840),	-- Pioneer's Perfected Gloves \\ Weavercloth Gloves
-			i(222841),	-- Weavercloth Gardening Hat
-			i(222842),	-- Weavercloth Fishing Cap
-			i(222843),	-- Weavercloth Enchanter's Hat
-			i(222844),	-- Weavercloth Tailor's Coat
-			i(222845),	-- Weavercloth Alchemist's Robe
-			i(222846),	-- Weavercloth Chef's Hat
-			i(222847),	-- Artisan's Gardening Hat
-			i(222848),	-- Artisan's Fishing Cap
-			i(222849),	-- Artisan's Enchanter's Hat
-			i(222850),	-- Artisan's Alchemist's Robe
-			i(222851),	-- Artisan's Chef's Hat
-			i(222852),	-- Artisan Tailor's Coat \\ Venerated Robes of the Eclipse
-			i(222853),	-- Weavercloth Bag
-			i(222854),	-- Dawnweave Reagent Bag \\ Dawnweave Bag \\ Dawnthread Bag
-			i(222855),	-- Weavercloth Reagent Bag
-			i(222856),	-- Duskweave Bag \\ Duskthread Bag
-			i(222857),	-- Satchel of the Long Day
-			i(222858),	-- Satchel of the Long Night
-			i(222859),	-- Concoctor's Clutch \\ Alchemy Bag
-			i(222860),	-- Ignition Satchel \\ Blacksmithing Bag
-			i(222861),	-- Hideshaper's Workbag \\ Leatherworking Bag
-			i(222862),	-- Magically "Infinite" Messenger \\ Enchanting Bag
-			i(222863),	-- Prodigy's Toolbox \\ Prodigy's Scrapbag \\ Engineering Bag
-			i(222864),	-- Darkmoon Duffle \\ Inscription Bag
-			i(222865),	-- Gardener's Seed Satchel \\ Herbalism Bag
-			i(222866),	-- Excavator's Haversack \\ Mining Bag
-			i(222867),	-- Jeweler's Purse \\ Jewelcrafting Bag
-			i(222868),	-- Dawnthread Lining
-			i(222869),	-- Dawnthread Lining
-			i(222870),	-- Dawnthread Lining
-			i(222871),	-- Duskthread Lining
-			i(222872),	-- Duskthread Lining
-			i(222873),	-- Duskthread Lining
-			i(222874),	-- Reinforced Wrap Kit
-			i(222875),	-- Weaverthread Parachute Kit
-			i(222876),	-- Gritty Polishing Cloth \\ Preserving Embroidery Thread \\ Preserving Pocket Cloth
-			i(222877),	-- Gritty Polishing Cloth \\ Preserving Embroidery Thread \\ Preserving Pocket Cloth
-			i(222878),	-- Gritty Polishing Cloth \\ Preserving Embroidery Thread \\ Preserving Pocket Cloth
-			i(222879),	-- Bright Embroidery Thread \\ Bright Polishing Cloth
-			i(222880),	-- Bright Embroidery Thread \\ Bright Polishing Cloth
-			i(222881),	-- Bright Embroidery Thread \\ Bright Polishing Cloth
-			i(222882),	-- Weavercloth Embroidery Thread \\ Weaverthread Polishing Cloth
-			i(222883),	-- Weavercloth Embroidery Thread \\ Weaverthread Polishing Cloth
-			i(222884),	-- Weavercloth Embroidery Thread \\ Weaverthread Polishing Cloth
-			i(222885),	-- Preserving Embroidery Thread \\ Gritty Embroidery Thread \\ Gritty Polishing Cloth
-			i(222886),	-- Preserving Embroidery Thread \\ Gritty Embroidery Thread \\ Gritty Polishing Cloth
-			i(222887),	-- Preserving Embroidery Thread \\ Gritty Embroidery Thread \\ Gritty Polishing Cloth
-			i(222888),	-- Weavercloth Spellthread
-			i(222889),	-- Weavercloth Spellthread
-			i(222890),	-- Weavercloth Spellthread
-			i(222891),	-- Sunset Spellthread
-			i(222892),	-- Sunset Spellthread
-			i(222893),	-- Sunset Spellthread
-			i(222894),	-- Daybreak Spellthread
-			i(222895),	-- Daybreak Spellthread
-			i(222896),	-- Daybreak Spellthread
 			i(222898),	-- [PH] Mount - Unicorn Moose (Blue) (Gold Saddle) (Player Mount)
 			i(222899),	-- [UNUSED] Faerin's Shield
 			i(222901),	-- [PH] Mount - Unicorn Moose (Brown) (Copper Saddle) (Player Mount)
@@ -3730,24 +3212,6 @@ root(ROOTS.Unsorted, {
 			i(223092),	-- Design: Inscription T2 Glasses (DNT) \\ Pattern: Inscription Bag
 			i(223093),	-- Design: Beautification Iris \\ Pattern: Herbalism Bag
 			i(223094),	-- Design: Magnificent Jeweler's Setting \\ Pattern: Mining Bag
-			i(223095),	-- Pattern: Rook Feather Wristwraps \\ Pattern: Jewelcrafting Bag
-			i(223096),	-- Pattern: Roiling Thunderstrike Talons \\ Pattern: Dawnthread Lining
-			i(223097),	-- Pattern: Adrenal Surge Clasp \\ Pattern: Duskthread Lining
-			i(223098),	-- Pattern: Waders of the Unifying Flame \\ Pattern: Reinforced Wrap Kit
-			i(223099),	-- Pattern: Sanctified Torchbearer's Grips \\ Pattern: Weaverthread Parachute Kit
-			i(223100),	-- Pattern: Vambraces of Deepening Darkness
-			i(223101),	-- Pattern: Reinforced Setae Flyers
-			i(223102),	-- Pattern: Busy Bee's Buckle
-			i(223103),	-- Pattern: Stormbound Armor Kit
-			i(223104),	-- Pattern: Defender's Armor Kit
-			i(223105),	-- Pattern: Nerubian Alchemist's Hat
-			i(223106),	-- Pattern: Earthen Forgemaster's Apron
-			i(223107),	-- Pattern: Charged Scrapmaster's Gauntlets
-			i(223108),	-- Pattern: Stonebound Herbalist's Pack
-			i(223109),	-- Pattern: Earthen Jeweler's Cover
-			i(223110),	-- Pattern: Arathi Leatherworker's Smock
-			i(223111),	-- Pattern: Deep Tracker's Cap
-			i(223112),	-- Pattern: Deep Tracker's Pack
 			i(223152),	-- [PH] Firebee Mount (Grey Skin, Silver Saddle)
 			i(223154),	-- [PH] Firebee Mount (White Skin, White Saddle)
 			i(223157),	-- Blacksmith's Breastplate
@@ -3808,15 +3272,12 @@ root(ROOTS.Unsorted, {
 			i(223364),	-- Wristwraps of the Titancap
 			i(223365),	-- Wristguards of the Titancap
 			i(223366),	-- Bracers of the Titancap
-			i(223367),	-- Cuffs of the Titancap
 			i(223369),	-- Webspeaker's Spiritual Cloak
 			i(223370),	-- Wolf Packleader's Visor
 			i(223371),	-- Slippers of Shallow Waters
 			i(223372),	-- Sabatons of Shallow Waters
 			i(223374),	-- Nerubian Weaver's Gown
-			i(223377),	-- Ancient Fungarian's Fingerwrap
 			i(223378),	-- Footguards of the Nerubian Twins
-			i(223379),	-- Nerubian Weaver's Chestplate
 			i(223380),	-- Nerubian Weaver's Chainmail
 			i(223382),	-- Murkshade Grips
 			i(223383),	-- Murkshade Handguards
@@ -3826,10 +3287,8 @@ root(ROOTS.Unsorted, {
 			i(223387),	-- Vilewing Chain Helm
 			i(223390),	-- Leggings of Dark Hunger
 			i(223391),	-- Legguards of Dark Hunger
-			i(223394),	-- Deepfiend Pauldrons
 			i(223395),	-- Deepfiend Shoulderpads
 			i(223396),	-- Deepfiend Shoulder Shells
-			i(223397),	-- Abyssal Hunter's Girdle
 			i(223398),	-- Abyssal Hunter's Sash
 			i(223399),	-- Abyssal Hunter's Chain
 			i(223402),	-- Corrupted Earthen Wristguards
@@ -3842,20 +3301,15 @@ root(ROOTS.Unsorted, {
 			i(223428),	-- Stormrider's Cuffs
 			i(223431),	-- The Fallen Queen's Band
 			i(223432),	-- Commemorative Light's Gambit Championship Signet \\ [PH] 11.0 - Signet
-			i(223435),	-- Element-Attuned Pendant
 			i(223436),	-- Light Boots of the Ringing Deeps
 			i(223437),	-- Handwraps of the Weaver
 			i(223438),	-- Algari Warden's Vestment
 			i(223439),	-- [PH] 11.0 - Leggings
 			i(223440),	-- Saboteur's Shoulderpads
 			i(223441),	-- [PH] 11.0 - Waders
-			i(223442),	-- Saboteur's Grips
 			i(223443),	-- Algari Warden's Hood
 			i(223444),	-- [PH] 11.0 - Breeches
-			i(223445),	-- Sash of the Weaver
 			i(223446),	-- Stormrider's Bindings
-			i(223447),	-- Lightning-Scarred Vest
-			i(223448),	-- Epaulets of the Ringing Deeps
 			i(223450),	-- [PH] 11.0 - Chainmail
 			i(223451),	-- Saboteur's Striders
 			i(223452),	-- Grips of the Ringing Deeps
@@ -3978,7 +3432,6 @@ root(ROOTS.Unsorted, {
 			i(223872),	-- Algari Mace
 			i(223873),	-- Algari Shield
 			i(223874),	-- Algari Dagger
-			i(223875),	-- Algari Censer
 			i(223876),	-- Algari Warglaive
 			i(223877),	-- Algari Hatchet
 			i(223889),	-- Flame Touched Weaponry
@@ -4101,14 +3554,11 @@ root(ROOTS.Unsorted, {
 			i(224096),	-- Anglin' Art's Sandals
 			i(224097),	-- Lucky Fishing Hat
 			i(224100),	-- Bottomless Bag of Khaz Algar General Goods
-			i(224104),	-- Flashfire Thurible
 			i(224117),	-- Ghoulfish Delight
-			i(224118),	-- Nightshade Letter
 			i(224119),	-- Electric Eel
 			i(224148),	-- [PH] NerubianWarbeastMount (Cyan)
 			i(224149),	-- [PH] NerubianWarbeastMount (Orange)
 			i(224156),	-- Bottomless Bag of Khaz Algar General Goods
-			i(224161),	-- Stormrider Flight Badge
 			i(224165),	-- Dornogal Tabard \\ Gilded Earthen Tabard \\ [PH] Earthen Tabard
 			i(224166),	-- Awakened Tabard \\ Awakening Tabard \\ Copper Earthen Tabard \\ [PH] Earthen Tabard
 			i(224167),	-- Gundargaz Tabard \\ Dark Earthen Tabard \\ [PH] Earthen Tabard
@@ -4180,7 +3630,6 @@ root(ROOTS.Unsorted, {
 			i(224252),	-- Calcified Journal
 			i(224254),	-- Wooden Figure
 			i(224257),	-- Sturdy Locket
-			i(224263),	-- Infused Cinderbrew
 			i(224264),	-- Deepgrove Petal
 			i(224265),	-- Deepgrove Rose
 			i(224266),	-- Ivory Tinderbox
@@ -4190,10 +3639,6 @@ root(ROOTS.Unsorted, {
 			i(224272),	-- Calcified Journal
 			i(224273),	-- Wooden Figure
 			i(224274),	-- Sturdy Locket
-			i(224283),	-- Reclaimed Catalyst
-			i(224284),	-- Eyeless Petal
-			i(224285),	-- Luminous Strangler Sap
-			i(224286),	-- Cochineal Crawler
 			i(224292),	-- Radiant Fuel Shard
 			i(224395),	-- Secret Garlic
 			i(224396),	-- Mangled Taro
@@ -4205,18 +3650,6 @@ root(ROOTS.Unsorted, {
 			i(224416),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 			i(224418),	-- Recipe: Everything Stew
 			i(224419),	-- Recipe: Jester's Board \\ Recipe: All-Day Banquet
-			i(224420),	-- Pattern: Artisan Gardening Hat
-			i(224421),	-- Pattern: Artisan Fishing Cap
-			i(224422),	-- Pattern: Artisan Enchanter's Hat
-			i(224423),	-- Pattern: Artisan Alchemist's Robe
-			i(224424),	-- Pattern: Artisan's Chef's Hat
-			i(224433),	-- Pattern: Jeweler's Purse \\ Pattern: Jewelcrafting Bag
-			i(224434),	-- Pattern: Dawnthread Lining
-			i(224435),	-- Pattern: Duskthread Lining
-			i(224436),	-- Pattern: Reinforced Wrap Kit
-			i(224437),	-- Pattern: Weaverthread Parachute Kit
-			i(224440),	-- Weavercloth Bandage
-			i(224442),	-- Weavercloth Bandage
 			i(224453),	-- City Guard's Coronet \\ Dalaran Cowl
 			i(224454),	-- City Guard's Mask \\ Dalaran Hood
 			i(224455),	-- City Guard's Chainmail \\ Dalaran Chestguard
@@ -4306,17 +3739,6 @@ root(ROOTS.Unsorted, {
 			i(224659),	-- Secret-Woven Silk
 			i(224661),	-- Gem-Studded Signet
 			i(224662),	-- Gem-Studded Ring
-			i(224666),	-- Alighted Robes
-			i(224667),	-- Alighted Sandals
-			i(224668),	-- Alighted Handwraps
-			i(224670),	-- Alighted Leggings
-			i(224671),	-- Alighted Shoulderpads
-			i(224672),	-- Alighted Cord
-			i(224674),	-- Lockstitch Vest
-			i(224675),	-- Lockstitch Waders
-			i(224678),	-- Lockstitch Breeches
-			i(224679),	-- Lockstitch Epaulets
-			i(224680),	-- Lockstitch Sash
 			i(224682),	-- Chitinoid Chainmail
 			i(224683),	-- Chitinoid Striders
 			i(224684),	-- Chitinoid Grips
@@ -4325,12 +3747,6 @@ root(ROOTS.Unsorted, {
 			i(224687),	-- Chitinoid Shoulderguards
 			i(224688),	-- Chitinoid Belt
 			i(224689),	-- Chitinoid Bracers
-			i(224690),	-- Sedimentary Breastplate
-			i(224691),	-- Sedimentary Sabatons
-			i(224692),	-- Sedimentary Gauntlets
-			i(224694),	-- Sedimentary Legguards
-			i(224695),	-- Sedimentary Mantle
-			i(224696),	-- Sedimentary Girdle
 			i(224698),	-- Ancient Forged Shank
 			i(224699),	-- Ancient Forged Ritual Knife
 			i(224700),	-- Ancient Forged Cudgel
@@ -4371,8 +3787,6 @@ root(ROOTS.Unsorted, {
 			i(224777),	-- Sureki Shadecaster
 			i(224778),	-- Knicknack's Enbiggener
 			i(224779),	-- Alhainr's Skull
-			i(224780),	-- Toughened Thunderous Hide
-			i(224781),	-- Abyssal Fur
 			i(224782),	-- Razor Talon
 			i(224786),	-- Skeleton King Outfit
 			i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit
@@ -4385,14 +3799,7 @@ root(ROOTS.Unsorted, {
 			i(224817),	-- Algari Herbalism Notes
 			i(224818),	-- Algari Mining Notes
 			i(224822),	-- Scour Through Scrap
-			i(224823),	-- Shredded Weavercloth
-			i(224824),	-- Duskweave Scraps
-			i(224826),	-- Dawnweave Scraps
-			i(224828),	-- Weavercloth
 			i(224831),	-- Cube of Infinite Inventions (PTR Only)
-			i(224832),	-- Exquisite Weavercloth Bolt
-			i(224833),	-- Exquisite Weavercloth Bolt
-			i(224834),	-- Exquisite Weavercloth Bolt
 			i(224835),	-- Deepgrove Roots
 			i(224838),	-- Null Sliver
 			i(224839),	-- Adventurer's Warbound Wrists \\ Warbound Adventurer's Wrists
@@ -4402,7 +3809,6 @@ root(ROOTS.Unsorted, {
 			i(224843),	-- Adventurer's Warbound Headpiece
 			i(224844),	-- Adventurer's Warbound Gloves
 			i(224845),	-- Adventurer's Warbound Chestpiece
-			i(224852),	-- The Severed Satchel \\ Exquisite Algari Satchel
 			i(223081),	-- Design: Sifted Cave Sand \\ Design: Inscription Finishing Reagent (DNT)
 			i(224861),	-- Dornogal Crown
 			i(224862),	-- Dornogal Mantle
@@ -4558,31 +3964,6 @@ root(ROOTS.Unsorted, {
 			i(225431),	-- Design: Vicious Jeweler's Setting
 			i(225432),	-- Design: Vicious Bloodstone Signet
 			i(225433),	-- Design: Vicious Bloodstone Amulet
-			i(225434),	-- Pattern: Algari Competitor's Cloth Leggings \\ Pattern: Vicious Competitor's Cloth Leggings
-			i(225435),	-- Pattern: Algari Competitor's Cloth Shoulderpads \\ Pattern: Vicious Competitor's Cloth Shoulderpads
-			i(225436),	-- Pattern: Algari Competitor's Cloth Treads \\ Pattern: Vicious Competitor's Cloth Treads
-			i(225437),	-- Pattern: Algari Competitor's Cloth Bands \\ Pattern: Vicious Competitor's Cloth Bands
-			i(225438),	-- Pattern: Algari Competitor's Cloth Hood \\ Pattern: Vicious Competitor's Cloth Hood
-			i(225439),	-- Pattern: Algari Competitor's Cloth Gloves \\ Pattern: Vicious Competitor's Cloth Gloves
-			i(225440),	-- Pattern: Algari Competitor's Cloth Tunic \\ Pattern: Vicious Competitor's Cloth Tunic
-			i(225441),	-- Pattern: Algari Competitor's Cloth Sash \\ Pattern: Vicious Competitor's Cloth Sash
-			i(225442),	-- Pattern: Algari Competitor's Cloth Cloak \\ Pattern: Vicious Competitor's Cloth Cloak
-			i(225443),	-- Pattern: Algari Competitor's Leather Boots \\ Pattern: Vicious Competitor's Leather Boots
-			i(225444),	-- Pattern: Algari Competitor's Leather Chestpiece \\ Pattern: Vicious Competitor's Leather Chestpiece
-			i(225445),	-- Pattern: Algari Competitor's Leather Mask \\ Pattern: Vicious Competitor's Leather Mask
-			i(225446),	-- Pattern: Algari Competitor's Leather Shoulderpads \\ Pattern: Vicious Competitor's Leather Shoulderpads
-			i(225447),	-- Pattern: Algari Competitor's Leather Belt \\ Pattern: Vicious Competitor's Leather Belt
-			i(225448),	-- Pattern: Algari Competitor's Leather Trousers \\ Pattern: Vicious Competitor's Leather Trousers
-			i(225449),	-- Pattern: Algari Competitor's Leather Gloves \\ Pattern: Vicious Competitor's Leather Gloves
-			i(225450),	-- Pattern: Algari Competitor's Leather Wristwraps \\ Pattern: Vicious Competitor's Leather Wristwraps
-			i(225451),	-- Pattern: Algari Competitor's Chain Treads \\ Pattern: Vicious Competitor's Chain Treads
-			i(225452),	-- Pattern: Algari Competitor's Chain Chainmail \\ Pattern: Vicious Competitor's Chain Chainmail
-			i(225453),	-- Pattern: Algari Competitor's Chain Cowl \\ Pattern: Vicious Competitor's Chain Cowl
-			i(225454),	-- Pattern: Algari Competitor's Chain Epaulets \\ Pattern: Vicious Competitor's Chain Epaulets
-			i(225455),	-- Pattern: Algari Competitor's Chain Girdle \\ Pattern: Vicious Competitor's Chain Girdle
-			i(225456),	-- Pattern: Algari Competitor's Chain Leggings \\ Pattern: Vicious Competitor's Chain Leggings
-			i(225457),	-- Pattern: Algari Competitor's Chain Gauntlets \\ Pattern: Vicious Competitor's Chain Gauntlets
-			i(225458),	-- Pattern: Algari Competitor's Chain Cuffs \\ Pattern: Vicious Competitor's Chain Cuffs
 			i(225459),	-- Plans: Algari Competitor's Plate Breastplate \\ Plans: Vicious Competitor's Plate Breastplate
 			i(225460),	-- Plans: Algari Competitor's Plate Sabatons \\ Plans: Vicious Competitor's Plate Sabatons
 			i(225461),	-- Plans: Algari Competitor's Plate Gauntlets \\ Plans: Vicious Competitor's Plate Gauntlets
@@ -4744,12 +4125,10 @@ root(ROOTS.Unsorted, {
 			i(225726),	-- 11.0 Raid Template - Plate - Waist
 			i(225727),	-- 11.0 Raid Template - Plate - Head
 			i(225728),	-- 11.0 Raid Template - Generic - Finger
-			i(225729),	-- Algari Weaverline
 			i(225736),	-- 11.0 Raid Template - Plate - Head
 			i(225737),	-- 11.0 Raid Template - Plate - Feet
 			i(225738),	-- Kaheti Warblade
 			i(225739),	-- Algari Distinguishment
-			i(225741),	-- Titan Disk Fragment
 			i(225744),	-- 11.0 Raid Template - Plate - Feet
 			i(225748),	-- Seal of the Silent Vigil \\ 11.0 Raid Template - Generic - Finger
 			i(225749),	-- Seal of the Void-Touched \\ 11.0 Raid Template - Generic - Finger
@@ -4790,7 +4169,6 @@ root(ROOTS.Unsorted, {
 			i(225817),	-- Ominous Ceremonial Robe
 			i(225818),	-- Tainted Incense
 			i(225819),	-- Smudged Propaganda
-			i(225821),	-- Tattered Theater Hood
 			i(225822),	-- Jar of Cinderbee Honey
 			i(225823),	-- Split Bull-Horn
 			i(225824),	-- Sand Sculpting Comb
@@ -4852,7 +4230,6 @@ root(ROOTS.Unsorted, {
 			i(225898),	-- Idol of the Earthmother
 			i(225899),	-- Unbreakable Iron Idol
 			i(225901),	-- Streamlined Relic \\ Power Idol
-			i(225902),	-- Idol of Final Will
 			i(225903),	-- Amorphous Relic \\ Relic Page
 			i(225904),	-- Time Lost Relic
 			i(225905),	-- Olden Seeker Relic
@@ -4866,7 +4243,6 @@ root(ROOTS.Unsorted, {
 			i(225927),	-- Emerald Necakle
 			i(225930),	-- Glimmering Crystal
 			i(225933),	-- Forged Legend's Pennant
-			i(225936),	-- Hideseeker's Tote
 			i(225937),	-- Putrid Goop
 			i(225945),	-- Airship Captain's Cloak
 			i(225946),	-- Slightly Singed Arathi Tabard
@@ -4921,14 +4297,12 @@ root(ROOTS.Unsorted, {
 			i(226103),	-- The Weaver's Trove
 			i(226105),	-- Emerald Scale Treads \\ Jade Scale Treads
 			i(226106),	-- Amber Scale Treads
-			i(226107),	-- Homebrewed Blink Vial
 			i(226108),	-- [DNT] Debug Profession Stats
 			i(226111),	-- Arakkoan Ritual Staff
 			i(226113),	-- Kereke's Flourishing Sabre
 			i(226114),	-- Windslicer's Lance
 			i(226115),	-- Contaminating Cleaver
 			i(226116),	-- Coagulating Phlegm Churner
-			i(226117),	-- Dalaran Guardian's Implement
 			i(226118),	-- Arcane Prisoner's Puncher
 			i(226119),	-- Arcane Sharpshooter's Crossbow
 			i(226120),	-- Deployable Battle Supplies \\ Deployable Charge Station
@@ -4955,8 +4329,6 @@ root(ROOTS.Unsorted, {
 			i(226156),	-- Really Big Candle
 			i(226160),	-- Hillhelm Farmhand's Hoe
 			i(226161),	-- Hillhelm Farmhand's Watering Can
-			i(226164),	-- Invitation: Grand Auction
-			i(226166),	-- Message-Imprinted Silken Square
 			i(226172),	-- Disturbance Detection Device
 			i(226173),	-- Boots of the First Embrace
 			i(226174),	-- Famished Bride's Clasp
@@ -5010,12 +4382,8 @@ root(ROOTS.Unsorted, {
 			i(226297),	-- Arathi Safety Gloves
 			i(226298),	-- Puppeted Mechanical Spider
 			i(226299),	-- Emptied Venom Canister
-			i(226300),	-- Ancient Flower
-			i(226301),	-- Dornogal Gardening Scythe
 			i(226302),	-- Earthen Digging Fork
 			i(226303),	-- Fungarian Slicer's Knife
-			i(226304),	-- Arathi Garden Trowel
-			i(226305),	-- Arathi Herb Pruner
 			i(226306),	-- Web-Entangled Lotus
 			i(226307),	-- Tunneler's Shovel
 			i(226308),	-- Dornogal Scribe's Quill
@@ -5039,12 +4407,8 @@ root(ROOTS.Unsorted, {
 			i(226329),	-- Arathi Leather Burnisher
 			i(226330),	-- Nerubian Tanning Mallet
 			i(226331),	-- Curved Nerubian Skinning Knife
-			i(226332),	-- Earthen Miner's Gavel
-			i(226333),	-- Dornogal Chisel
 			i(226334),	-- Earthen Excavator's Shovel
 			i(226335),	-- Regenerating Ore
-			i(226336),	-- Arathi Precision Drill
-			i(226337),	-- Devout Archaeologist's Excavator
 			i(226338),	-- Heavy Spider Crusher
 			i(226339),	-- Nerubian Mining Cart
 			i(226343),	-- Fungarian's Rich Tannin
@@ -5180,11 +4544,9 @@ root(ROOTS.Unsorted, {
 			i(223091),	-- Design: Forger's Font Inspector
 			i(223092),	-- Design: Novelist's Specs
 			i(223267),	-- Swarmite Skyhunter
-			i(223376),	-- Band of the Relic Bearer
 			i(223484),	-- Kobold Mastermind's "Pivel"
 			i(223510),	-- Delver's Dirigible Schematic: Template
 			i(223646),	-- Memory of the Eastern Kingdoms
-			i(224424),	-- Pattern: Artisan Chef's Hat
 			i(224760),	-- Wobbles
 			i(224768),	-- Delver's Dirigible Schematic: Wing-Mounted Propeller
 			i(224769),	-- Delver's Dirigible Schematic: Rotor Blades
@@ -5319,7 +4681,141 @@ root(ROOTS.Unsorted, {
 			i(227544),	-- Begrimed Staff
 			i(227545),	-- Begrimed Mace
 			i(227546),	-- Begrimed Dagger
-			i(227550),	-- Tusks of Mannoroth
+			-----------------------------------
+			i(184205),	-- Long-Lost Crown
+			i(184238),	-- Doubt-Tinged Warglaive
+			i(198534),	-- Draconic Missive of Ingenuity
+			i(198535),	-- Draconic Missive of Ingenuity
+			i(198536),	-- Draconic Missive of Ingenuity
+			i(199963),	-- Enchant Tool - Draconic Ingenuity
+			i(200005),	-- Enchant Tool - Draconic Ingenuity
+			i(200047),	-- Enchant Tool - Draconic Ingenuity
+			i(200599),	-- Technique: Draconic Missive of Ingenuity
+			i(208957),	-- Conduit of the Southern Storm
+			i(210201),	-- Handful of Tiny Pebbles
+			i(211984),	-- Warsculptor's Barbute
+			i(211987),	-- Warsculptor's Furred Plastron
+			i(211991),	-- Entombed Seraph's Plumes
+			i(211996),	-- Entombed Seraph's Breastplate
+			i(212064),	-- Pantaloons of the Hypogeal Nemesis
+			i(212438),	-- Polluted Spectre's Wraps
+			i(213780),	-- Algari Amber Prism
+			i(213781),	-- Algari Amber Prism
+			i(213783),	-- Algari Emerald Prism
+			i(213784),	-- Algari Emerald Prism
+			i(213786),	-- Algari Ruby Prism
+			i(213787),	-- Algari Ruby Prism
+			i(213789),	-- Algari Onyx Prism
+			i(213790),	-- Algari Onyx Prism
+			i(213792),	-- Algari Sapphire Prism
+			i(213793),	-- Algari Sapphire Prism
+			i(217162),	-- Necklace of Kobold Teeth
+			i(217163),	-- Well Worn Doll
+			i(217164),	-- Royal Nailpicker
+			i(217167),	-- Crusty Chalice
+			i(218455),	-- Conduit of the Southern Storm
+			i(219503),	-- Honorary Tinderbox
+			i(219783),	-- Arachnophobic Spelunker's Bow
+			i(219789),	-- Arachnophobic Spelunker's Greatmace
+			i(219797),	-- Cured Terracotta Pummeler
+			i(220157),	-- Darkened Tinderbox
+			i(220158),	-- Empowered Tinderbox
+			i(222561),	-- Darkmoon Sigil: Ascension
+			i(222622),	-- Transcribe to Ascension
+			i(222680),	-- Darkmoon Deck: Ascend
+			i(222681),	-- Ace of Ascension
+			i(222682),	-- Two of Ascension
+			i(222683),	-- Three of Ascension
+			i(222684),	-- Four of Ascension
+			i(222685),	-- Five of Ascension
+			i(222686),	-- Six of Ascension
+			i(222687),	-- Seven of Ascension
+			i(222688),	-- Eight of Ascension
+			i(223439),	-- Mereldar Scholar's Leggings
+			i(223444),	-- Arathi Defender's Breeches
+			i(223450),	-- Honored Soldier's Chainmail
+			i(223462),	-- Honorable Arathi Breastplate
+			i(223870),	-- Cache Key
+			i(224780),	-- Toughened Tempest Pelt
+			i(225249),	-- Rattling Bag o' Gold
+			i(225580),	-- Accelerated Ascension Coil
+			i(225654),	-- Imperfect Ascendancy Serum
+			i(225927),	-- Emerald Necklace
+			i(226022),	-- Darkmoon Sigil: Ascension
+			i(226023),	-- Darkmoon Sigil: Ascension
+			i(226024),	-- Darkmoon Sigil: Ascension
+			i(226150),	-- Gem-Studded Candelabra
+			i(226175),	-- Traditional Nuptial Shoulderpads
+			i(227542),	-- Preserved Arathi Sword
+			i(227543),	-- Preserved Arathi Hatchet
+			i(227544),	-- Preserved Deep-Dweller's Staff
+			i(227545),	-- Preserved Deep-Dweller's Cudgel
+			i(227546),	-- Preserved Deep-Dweller's Dirk
+			i(227659),	-- Fleeting Arcane Manifestation
+			i(227661),	-- Gleaming Telluric Crystal
+			i(227662),	-- Shimmering Dust
+			i(227667),	-- Algari Enchanting Folio
+			i(227668),	-- Delver's Bounty
+			i(227675),	-- Satchel of Alchemy Surplus
+			i(227676),	-- Satchel of Blacksmithing Surplus
+			i(227677),	-- Satchel of Enchanting Surplus
+			i(227678),	-- Satchel of Engineering Surplus
+			i(227679),	-- Satchel of Inscription Surplus
+			i(227680),	-- Satchel of Jewelcrafting Surplus
+			i(227681),	-- Satchel of Leatherworking Surplus
+			i(227682),	-- Satchel of Tailoring Surplus
+			i(227692),	-- Arathi Sword
+			i(227693),	-- Expeditionary Blade
+			i(227694),	-- Preserved Begrimed Greathelm
+			i(227695),	-- Preserved Pierced Helm
+			i(227696),	-- Preserved Distressed Visor
+			i(227697),	-- Preserved Moth-Ridden Hood
+			i(227699),	-- Earthen Ceremonial Chopper
+			i(227700),	-- Preserved Defender's Spear
+			i(227701),	-- Preserved Defender's Kris
+			i(227710),	-- Tome of Polymorph: Mosswool
+			i(227713),	-- Artisan's Consortium Payout
+			i(227769),	-- Bountiful Bolts
+			i(227770),	-- Assorted Whirlygigs
+			i(227771),	-- Unnecessary Mugholder
+			i(227772),	-- Blinker Fluid
+			i(227773),	-- Cataclysmic Converter
+			i(227774),	-- Pummel Permit
+			i(227778),	-- Delver's Bounty
+			i(227779),	-- Delver's Bounty
+			i(227780),	-- Delver's Bounty
+			i(227781),	-- Delver's Bounty
+			i(227782),	-- Delver's Bounty
+			i(227783),	-- Delver's Bounty
+			i(227784),	-- Delver's Bounty
+			i(227792),	-- Everyday Cache
+			i(227794),	-- Archaic Cipher Key
+			i(227795),	-- Homebrewer's Sampling Mantle
+			i(227890),	-- Unrecognizable Prototype
+			i(227916),	-- Chitinous Wristwraps
+			i(227917),	-- Boroughbreaker's Cuffs
+			i(227918),	-- Wanted Nerubian's Bands
+			i(227919),	-- Crypt Lord's Bracers
+			i(228071),	-- Companion Experience
+			i(228072),	-- Companion Experience
+			i(228073),	-- Companion Experience
+			i(228096),	-- Vibrant Firefly
+			i(228097),	-- Pinkskin Burrower
+			i(228098),	-- Troglofrog
+			i(228099),	-- Oversized Chelicera
+			i(228148),	-- Warsculptor's Barbute
+			i(228149),	-- Entombed Seraph's Casque
+			i(228150),	-- Exhumed Centurion's Galea
+			i(228151),	-- Noetic of the Forgotten Reservoir
+			i(228152),	-- Lightless Scavenger's Skull
+			i(228153),	-- Horns of the Destroyer
+			i(228154),	-- K'areshi Phantom's Emptiness
+			i(228155),	-- Gatecrasher's Horns
+			i(228156),	-- Mask of the Greatlynx
+			i(228157),	-- Impalers of the Hypogeal Nemesis
+			i(228158),	-- Hexflame Coven's All-Seeing Eye
+			i(228159),	-- Living Luster's Semblance
+			i(228161),	-- Hood of Violet Rebirth
 		})),
 	}),
 	expansion(EXPANSION.DF, {
@@ -5536,15 +5032,6 @@ root(ROOTS.Unsorted, {
 				q(82411),	-- Ensemble: Unburied Aspirant's Cloak Rack
 				q(82412),	-- Ensemble: Unburied Aspirant's Cloak Rack
 				q(82413),	-- Ensemble: Unburied Aspirant's Cloak Rack
-				q(82420),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82422),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82423),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82425),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82426),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82427),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82428),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82430),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82438),	-- Ensemble: Unburied Gladiator's Cloak Rack
 			}),
 			filter(QUEST_ITEMS, {
 				i(217349),	-- DEPRECATED - Arcane Dust
@@ -5629,6 +5116,7 @@ root(ROOTS.Unsorted, {
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(224163),	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (DM!)
 			}),
+			i(227550),	-- Tusks of Mannoroth
 		})),
 		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
 			------ Next Check 10.2.7 ------

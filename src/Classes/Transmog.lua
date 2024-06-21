@@ -82,7 +82,7 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 	["INVTYPE_TABARD"] = {19},
 };
 local DressUpModel = CreateFrame('DressUpModel');
-local function GetSourceID(itemLink)
+local function GetSourceID(itemLink, quick)
 	if not itemLink or (C_Item_IsDressableItemByID and not C_Item_IsDressableItemByID(itemLink)) then return nil, false end
 
 	-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
@@ -92,6 +92,8 @@ local function GetSourceID(itemLink)
 		-- app.PrintDebug("TMOGSourceID",sourceID,itemLink)
 		if sourceID then return sourceID, true; end
 	end
+
+	if quick then return end
 
 	-- app.PrintDebug("Failed to directly retrieve SourceID",itemLink)
 	local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
@@ -661,6 +663,10 @@ do
 		function(t)
 			return app.IsAccountCached("SourceItemsOnCharacter", t.sourceID)
 		end,
+		visualID = function(t)
+			local sourceInfo = C_TransmogCollection_GetSourceInfo(t.sourceID)
+			return sourceInfo and sourceInfo.visualID
+		end,
 		-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
 		itemID = function(t)
 			if t.__autolink then return; end
@@ -958,7 +964,7 @@ app.BuildSourceInformationForPopout = function(group)
 end
 
 -- Event Handling
-app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
+app.AddEventRegistration("TRANSMOG_COLLECTION_SOURCE_ADDED", function(sourceID)
 	-- print("TRANSMOG_COLLECTION_SOURCE_ADDED",sourceID)
 	if sourceID then
 		-- Cache the previous state. This will help keep lag under control.
@@ -971,8 +977,8 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 			ActiveItemCollectionHelper(sourceID, oldState);
 		end
 	end
-end
-app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
+end)
+app.AddEventRegistration("TRANSMOG_COLLECTION_SOURCE_REMOVED", function(sourceID)
 	-- print("TRANSMOG_COLLECTION_SOURCE_REMOVED",sourceID)
 	local oldState = sourceID and AccountSources[sourceID];
 	if oldState then
@@ -1017,13 +1023,9 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		app.HandleEvent("OnThingRemoved", "Transmog")
 		app.WipeSearchCache();
 	end
-end
+end)
 
 app.AddEventHandler("OnStartup", function()
-	-- TODO: app.AddEventRegistration
-	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
-	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
-
 	local conversions = app.Settings.InformationTypeConversionMethods;
 	conversions.sourceID = function(sourceID)
 		-- add a value conversion for sourceID to include a checkmark/x
@@ -1051,6 +1053,7 @@ if app.IsRetail then
 		end
 		if app.IsAccountCached("Sources", sourceID) then
 			-- app.PrintDebug("Learned SourceID",sourceID,link)
+			app.SetAccountCached("SourceItemsOnCharacter",sourceID)
 			return
 		end
 		-- if wrong class then won't be learned (probably)
@@ -1114,6 +1117,7 @@ if app.IsRetail then
 	end);
 	app.AddEventRegistration("BANKFRAME_OPENED", function()
 		app.SetAccountCachedByCheck("SourceItemsOnCharacter", ClearIfMyGuid)
+		app.WipeSearchCache()
 		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 2)
 	end)
 	app.AddEventHandler("OnRefreshCollectionsDone", CheckForBoundSourceItems)

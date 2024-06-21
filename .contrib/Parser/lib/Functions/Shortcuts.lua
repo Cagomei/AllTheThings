@@ -994,7 +994,7 @@ iupgrade = function(itemID, modID, bonusID, t)			-- Create an ITEM Object which 
 	end
 	local i = i(itemID, t);
 	-- use ModID/BonusID combination to represent the new Item available via Upgrading
-	i.up = (tonumber(modID) or 0) + ((tonumber(bonusID) or 0) / 10000);
+	i.up = (tonumber(modID) or 0) + ((tonumber(bonusID) or 0) / 100000);
 	return i;
 end
 iensemble = function(itemID, t)
@@ -1086,7 +1086,7 @@ mount = function(id, t)									-- Create a MOUNT Object, which is just a spellI
 end
 npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
 	if not id then
-		-- error("NPC ID Missing");
+		print("NPC ID Missing for n() header");
 		if t then
 			return unpack(t);
 		else
@@ -1272,6 +1272,18 @@ dragonridingrace = function(id, t)						-- Creates a QUEST which is for a Dragon
 		68795,	-- Dragonriding
 		DF_ACCOUNT_CAMPAIGN_QUEST,
 	};
+	return t;
+end
+skyridingrace = function(id, t)						-- Creates a QUEST which is for a Skyriding Race
+	t = q(id, t);
+	t.repeatable = true;
+	t.collectible = false;	-- quest literally cannot be completed
+	-- TODO: Do similar conditions exist?
+	-- t.sourceQuestNumRequired = 1;
+	-- t.sourceQuests = {
+	-- 	68795,	-- Dragonriding
+	-- 	DF_ACCOUNT_CAMPAIGN_QUEST,
+	-- };
 	return t;
 end
 

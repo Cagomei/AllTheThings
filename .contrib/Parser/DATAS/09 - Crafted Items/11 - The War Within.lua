@@ -656,41 +656,42 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = HERBALISM,
 		},{
 			-- Arathor's Spear
-			--FirstCraft(XXXXX, 435826);	-- Arathor's Spear
+			FirstCraft(79933, 435826);	-- Arathor's Spear
 			--FirstCraft(XXXXX, 435879);	-- Camouflaged Arathor's Spear
 			--FirstCraft(XXXXX, 435877);	-- Crystallized Arathor's Spear
 			--FirstCraft(XXXXX, 435878);	-- Irradiated Arathor's Spear
-			--FirstCraft(XXXXX, 435836);	-- Lush Arathor's Spear
+			--FirstCraft(79934, 435836);	-- Lush Arathor's Spear
 			--FirstCraft(XXXXX, 435880);	-- Sporefused Arathor's Spear
 			-- Blessing Blossom
-			--FirstCraft(XXXXX, 435823);	-- Blessing Blossom
+			FirstCraft(79927, 435823);	-- Blessing Blossom
 			--FirstCraft(XXXXX, 435872);	-- Camouflaged Blessing Blossom
 			--FirstCraft(XXXXX, 435870);	-- Crystallized Blessing Blossom
-			--FirstCraft(XXXXX, 435871);	-- Irradiated Blessing Blossom
-			--FirstCraft(XXXXX, 435834);	-- Lush Blessing Blossom
+			FirstCraft(79930, 435871);	-- Irradiated Blessing Blossom
+			FirstCraft(79928, 435834);	-- Lush Blessing Blossom
 			--FirstCraft(XXXXX, 435873);	-- Sporefused Blessing Blossom
 			-- Luredrop
-			--FirstCraft(XXXXX, 435821);	-- Luredrop
+			FirstCraft(79913, 435821);	-- Luredrop
 			--FirstCraft(XXXXX, 435858);	-- Altered Luredrop
 			--FirstCraft(XXXXX, 435860);	-- Camouflaged Luredrop
-			--FirstCraft(XXXXX, 435857);	-- Crystallized Luredrop
+			FirstCraft(79915, 435857);	-- Crystallized Luredrop
 			--FirstCraft(XXXXX, 435859);	-- Irradiated Luredrop
 			--FirstCraft(XXXXX, 435829);	-- Lush Luredrop
 			--FirstCraft(XXXXX, 435861);	-- Sporefused Luredrop
 			-- Mycobloom
-			--FirstCraft(XXXXX, 435840);	-- Altered Mycobloom
+			FirstCraft(79906, 435811);	-- Mycobloom
+			FirstCraft(79909, 435840);	-- Altered Mycobloom
 			--FirstCraft(XXXXX, 435851);	-- Camouflaged Mycobloom
-			--FirstCraft(XXXXX, 435838);	-- Crystallized Mycobloom
-			--FirstCraft(XXXXX, 435843);	-- Irradiated Mycobloom
-			--FirstCraft(XXXXX, 435812);	-- Lush Mycobloom
-			--FirstCraft(XXXXX, 435850);	-- Sporefused Mycobloom
+			FirstCraft(79908, 435838);	-- Crystallized Mycobloom
+			FirstCraft(79910, 435843);	-- Irradiated Mycobloom
+			FirstCraft(79907, 435812);	-- Lush Mycobloom
+			FirstCraft(79912, 435850);	-- Sporefused Mycobloom
 			-- Orbinid
-			--FirstCraft(XXXXX, 435822);	-- Orbinid
+			FirstCraft(79920, 435822);	-- Orbinid
 			--FirstCraft(XXXXX, 435864);	-- Altered Orbinid
 			--FirstCraft(XXXXX, 435866);	-- Camouflaged Orbinid
 			--FirstCraft(XXXXX, 435862);	-- Crystallized Orbinid
 			--FirstCraft(XXXXX, 435865);	-- Irradiated Orbinid
-			--FirstCraft(XXXXX, 435830);	-- Lush Orbinid
+			FirstCraft(79921, 435830);	-- Lush Orbinid
 			--FirstCraft(XXXXX, 435867);	-- Sporefused Orbinid
 			-- Overload
 			--FirstCraft(XXXXX, 438953);	-- Overload Altered Herb
@@ -915,11 +916,70 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		filter(REAGENTS, {
 		}),
 	}),
+	--]]
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
 			filter(LEATHER, {
+				i(219502),	-- Adrenal Surge Clasp
+				i(217130),	-- Algari Competitor's Leather Belt
+				i(217126),	-- Algari Competitor's Leather Boots
+				i(217127),	-- Algari Competitor's Leather Chestpiece
+				i(217132),	-- Algari Competitor's Leather Gloves
+				i(217128),	-- Algari Competitor's Leather Mask
+				i(217129),	-- Algari Competitor's Leather Shoulderpads
+				i(217131),	-- Algari Competitor's Leather Trousers
+				i(217133),	-- Algari Competitor's Leather Wristwraps
+				i(219513),	-- Roiling Thunderstrike Talons
+				i(219511),	-- Rook Feather Wristwraps
+				i(219334),	-- Rune-Branded Armbands
+				i(219333),	-- Rune-Branded Grasps
+				i(219329),	-- Rune-Branded Hood
+				i(219327),	-- Rune-Branded Kickers
+				i(219332),	-- Rune-Branded Legwraps
+				i(219330),	-- Rune-Branded Mantle
+				i(219328),	-- Rune-Branded Tunic
+				i(219331),	-- Rune-Branded Waistband
+				i(219471),	-- Spelunker's Leather Bands
+				i(219470),	-- Spelunker's Leather Footpads
+				i(219472),	-- Spelunker's Leather Jerkin
+				i(219479),	-- Spelunker's Practiced Britches
+				i(219476),	-- Spelunker's Practiced Hat
+				i(219478),	-- Spelunker's Practiced Mitts
+				i(219480),	-- Spelunker's Practiced Sash
+				i(219477),	-- Spelunker's Practiced Shoulders
+				i(219489),	-- Waders of the Unifying Flame
+				i(219512),	-- Weathered Stormfront Vest
 			}),
 			filter(MAIL, {
+				i(217135),	-- Algari Competitor's Chain Chainmail
+				i(217136),	-- Algari Competitor's Chain Cowl
+				i(217141),	-- Algari Competitor's Chain Cuffs
+				i(217137),	-- Algari Competitor's Chain Epaulets
+				i(217140),	-- Algari Competitor's Chain Gauntlets
+				i(217138),	-- Algari Competitor's Chain Girdle
+				i(217139),	-- Algari Competitor's Chain Leggings
+				i(217134),	-- Algari Competitor's Chain Treads
+				i(219509),	-- Busy Bee's Buckle
+				i(219339),	-- Glyph-Etched Binding
+				i(219336),	-- Glyph-Etched Breastplate
+				i(219340),	-- Glyph-Etched Cuisses
+				i(219338),	-- Glyph-Etched Epaulets
+				i(219341),	-- Glyph-Etched Gauntlets
+				i(219337),	-- Glyph-Etched Guise
+				i(219335),	-- Glyph-Etched Stompers
+				i(219342),	-- Glyph-Etched Vambraces
+				i(219508),	-- Reinforced Setae Flyers
+				i(219492),	-- Sanctified Torchbearer's Grips
+				i(219507),	-- Smoldering Pollen Hauberk
+				i(219474),	-- Tracker's Chitin Cuffs
+				i(219473),	-- Tracker's Chitin Galoshes
+				i(219475),	-- Tracker's Chitin Hauberk
+				i(219485),	-- Tracker's Toughened Girdle
+				i(219483),	-- Tracker's Toughened Handguards
+				i(219481),	-- Tracker's Toughened Headgear
+				i(219484),	-- Tracker's Toughened Links
+				i(219482),	-- Tracker's Toughened Shoulderguards
+				i(219501),	-- Vambraces of Deepening Darkness
 			}),
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
@@ -927,15 +987,70 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		},{
 		})),
 		filter(MISC, {
+			i(219495),	-- Blessed Weapon Grip+
+			i(219496),	-- Blessed Weapon Grip++
+			i(219497),	-- Blessed Weapon Grip+++
+			i(219906),	-- Defender's Armor Kit+
+			i(219907),	-- Defender's Armor Kit++
+			i(219908),	-- Defender's Armor Kit+++
+			i(219912),	-- Dual Layered Armor Kit+
+			i(219913),	-- Dual Layered Armor Kit++
+			i(219914),	-- Dual Layered Armor Kit+++
+			i(219909),	-- Stormbound Armor Kit+
+			i(219910),	-- Stormbound Armor Kit++
+			i(219911),	-- Stormbound Armor Kit+++
+			i(219905),	-- Thunderous Drums
+			i(219504),	-- Writhing Armor Banding+
+			i(219505),	-- Writhing Armor Banding++
+			i(219506),	-- Writhing Armor Banding+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
+			i(219866),	-- Apothecary's Cap
+			i(219871),	-- Arathi Leatherworker's Smock
+			i(219870),	-- Charged Scrapmaster's Gauntlets
+			i(219869),	-- Deep Tracker's Cap
+			i(219868),	-- Deep Tracker's Pack
+			i(219874),	-- Earthen Forgemaster's Apron
+			i(219876),	-- Earthen Jeweler's Cover
+			i(219861),	-- Gardener's Basket
+			i(219875),	-- Gemcutter's Apron
+			i(219863),	-- Hideseeker's Hat
+			i(219862),	-- Hideseeker's Pack
+			i(219865),	-- Hideshaper's Cover
+			i(219872),	-- Nerubian Alchemist's Hat
+			i(219864),	-- Scrapsmith's Gloves
+			i(219873),	-- Steelsmith's Apron
+			i(219867),	-- Stonebound Herbalist's Pack
 		}),
 		filter(REAGENTS, {
+			i(219880),	-- Carapace-Backed Hide+
+			i(219881),	-- Carapace-Backed Hide++
+			i(219882),	-- Carapace-Backed Hide+++
+			i(219898),	-- Chitin Armor Banding+
+			i(219899),	-- Chitin Armor Banding++
+			i(219900),	-- Chitin Armor Banding+++
+			i(219883),	-- Crystalfused Hide+
+			i(219884),	-- Crystalfused Hide++
+			i(219885),	-- Crystalfused Hide+++
+			i(219895),	-- Deepfury Hide+
+			i(219896),	-- Deepfury Hide++
+			i(219897),	-- Deepfury Hide+++
+			i(219892),	-- Leyfused Hide+
+			i(219893),	-- Leyfused Hide++
+			i(219894),	-- Leyfused Hide+++
+			i(219889),	-- Sporecoated Hide+
+			i(219890),	-- Sporecoated Hide++
+			i(219891),	-- Sporecoated Hide+++
+			i(219901),	-- Storm-Touched Weapon Wrap+
+			i(219902),	-- Storm-Touched Weapon Wrap++
+			i(219903),	-- Storm-Touched Weapon Wrap+++
+			i(219886),	-- Writhing Hide+
+			i(219887),	-- Writhing Hide++
+			i(219888),	-- Writhing Hide+++
 		}),
 		n(WEAPONS, {
 		}),
 	}),
-	--]]
 	prof(MINING, {
 		spell(2575, {	-- Mining
 			i(210933),	-- Aqirite+
@@ -992,21 +1107,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 439728);	-- Webbed Aqirite
 			--FirstCraft(XXXXX, 439719);	-- Weeping Aqirite
 			-- Bismuth
+			FirstCraft(80350, 439705);	-- Bismuth
 			--FirstCraft(XXXXX, 439712);	-- Bismuth Seam
 			--FirstCraft(XXXXX, 439724);	-- Camouflaged Bismuth
-			--FirstCraft(XXXXX, 439715);	-- Crystallized Bismuth
+			FirstCraft(80359, 439715);	-- Crystallized Bismuth
 			--FirstCraft(XXXXX, 439721);	-- EZ-Mine Bismuth
-			--FirstCraft(XXXXX, 439709);	-- Rich Bismuth
-			--FirstCraft(XXXXX, 439727);	-- Webbed Bismuth
+			FirstCraft(80353, 439709);	-- Rich Bismuth
+			FirstCraft(80371, 439727);	-- Webbed Bismuth
 			--FirstCraft(XXXXX, 439718);	-- Weeping Bismuth
 			-- Ironclaw
-			--FirstCraft(XXXXX, 439708);	-- Ironclaw
+			FirstCraft(80352, 439708);	-- Ironclaw
 			--FirstCraft(XXXXX, 439714);	-- Ironclaw Seam
 			--FirstCraft(XXXXX, 439726);	-- Camouflaged Ironclaw
-			--FirstCraft(XXXXX, 439717);	-- Crystallized Ironclaw
+			FirstCraft(80361, 439717);	-- Crystallized Ironclaw
 			--FirstCraft(XXXXX, 439723);	-- EZ-Mine Ironclaw
-			--FirstCraft(XXXXX, 439711);	-- Rich Ironclaw
-			--FirstCraft(XXXXX, 439729);	-- Webbed Ironclaw
+			FirstCraft(80355, 439711);	-- Rich Ironclaw
+			FirstCraft(80373, 439729);	-- Webbed Ironclaw
 			--FirstCraft(XXXXX, 439720);	-- Weeping Ironclaw
 			-- Overload
 			--FirstCraft(XXXXX, 439742);	-- Overload Crystallized
@@ -1024,6 +1140,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(83410, 216031),	-- Skinning Abyssal Devourer
 			FirstSkin(83411, 214151),	-- Skinning Ahg'zagall
 			FirstSkin(81450, 219264),	-- Skinning Bloodmaw
+			FirstSkin(83414, 216042),	-- Skinning Cha'tak
 			FirstSkin(81451, 219265),	-- Skinning Emperor Pitfang
 			FirstSkin(83402, 221668),	-- Skinning Horror of the Shallows
 			FirstSkin(83413, 221327),	-- Skinning Kaheti Silk Hauler
@@ -1036,25 +1153,170 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(81449, 219263),	-- Skinning Warphorn
 			FirstSkin(83412, 216039),	-- Skinning Xishorr
 		})),
-		--spell(, {	--
-		--}),
+		spell(423342, {	-- Khaz Algar Skinning
+			i(224781),	-- Abyssal Fur
+			i(218338),	-- Bottled Storm
+			i(218339),	-- Burning Cinderbee Setae
+			i(212667),	-- Gloom Chitin+
+			i(212668),	-- Gloom Chitin++
+			i(212669),	-- Gloom Chitin+++
+			i(218337),	-- Honed Bone Shards
+			i(218336),	-- Kaheti Swarm Chitin
+			i(217840),	-- Refine Algari Chitin
+			i(217818),	-- Refine Algari Hides
+			i(217822),	-- Refine Algari Leather
+			i(212664),	-- Stormcharged Leather+
+			i(212665),	-- Stormcharged Leather++
+			i(212666),	-- Stormcharged Leather+++
+			i(212674),	-- Sunless Carapace+
+			i(212675),	-- Sunless Carapace++
+			i(212676),	-- Sunless Carapace+++
+			i(212670),	-- Thunderous Hide+
+			i(212672),	-- Thunderous Hide++
+			i(212673),	-- Thunderous Hide+++
+			i(224780),	-- Toughened Thunderous Hide
+		}),
+		i(219005),	-- Arathor Hammerfish Lure
+		i(219019),	-- Beast Lure Scent
+		i(218738),	-- Bizarrely-Shaped Stomach
+		i(219009),	-- Crystalline Creature Lure
+		i(219004),	-- Dornish Pike Lure
+		i(219007),	-- Elusive Creature Lure
+		i(219003),	-- Quiet River Bass Lure
+		i(219006),	-- Roaring Anglerseeker Lure
+		i(219002),	-- Specular Rainbowfish Lure
+		i(219011),	-- Sporefused Creature Lure
+		i(219008),	-- Supreme Beast Lure
+		i(219010),	-- Writhing Creature Lure
 	}),
-	--[[
 	prof(TAILORING, {
 		n(ARMOR, {
+			i(217120),	-- Algari Competitor's Cloth Bands
+			i(217125),	-- Algari Competitor's Cloth Cloak
+			i(217122),	-- Algari Competitor's Cloth Gloves
+			i(217121),	-- Algari Competitor's Cloth Hood
+			i(217117),	-- Algari Competitor's Cloth Leggings
+			i(217124),	-- Algari Competitor's Cloth Sash
+			i(217118),	-- Algari Competitor's Cloth Shoulderpads
+			i(217119),	-- Algari Competitor's Cloth Treads
+			i(217123),	-- Algari Competitor's Cloth Tunic
+			i(222817),	-- Consecrated Cloak
+			i(222816),	-- Consecrated Cord
+			i(222815),	-- Consecrated Cuffs
+			i(222822),	-- Consecrated Gloves
+			i(222818),	-- Consecrated Hood
+			i(222820),	-- Consecrated Leggings
+			i(222821),	-- Consecrated Mantle
+			i(222819),	-- Consecrated Robe
+			i(222814),	-- Consecrated Slippers
+			i(222812),	-- Cool Sunset Bracers
+			i(222809),	-- Gloves of the Woven Dusk
+			i(222807),	-- Grips of the Woven Dawn
+			i(222833),	-- Pioneer's Cloth Cuffs
+			i(222837),	-- Pioneer's Cloth Robe
+			i(222832),	-- Pioneer's Cloth Slippers
+			i(222835),	-- Pioneer's Perfected Cloak
+			i(222834),	-- Pioneer's Perfected Cord
+			i(222840),	-- Pioneer's Perfected Gloves
+			i(222836),	-- Pioneer's Perfected Hood
+			i(222838),	-- Pioneer's Perfected Leggings
+			i(222839),	-- Pioneer's Perfected Mantle
+			i(222810),	-- Slippers of the Woven Dusk
+			i(222808),	-- Treads of the Woven Dawn
+			i(222811),	-- Warm Sunrise Bracers
+		}),
+		filter(BAGS, {
+			i(222859),	-- Concoctor's Clutch
+			i(222864),	-- Darkmoon Duffle
+			i(222854),	-- Dawnweave Reagent Bag
+			i(222856),	-- Duskweave Bag
+			i(222866),	-- Excavator's Haversack
+			i(222865),	-- Gardener's Seed Satchel
+			i(225936),	-- Hideseeker's Tote
+			i(222861),	-- Hideshaper's Workbag
+			i(222860),	-- Ignition Satchel
+			i(222867),	-- Jeweler's Purse
+			i(222862),	-- Magically "Infinite" Messenger
+			i(222863),	-- Prodigy's Toolbox
+			i(224852),	-- The Severed Satchel
+			i(222853),	-- Weavercloth Bag
+			i(222855),	-- Weavercloth Reagent Bag
 		}),
 		filter(MISC, {
+			i(225729),	-- Algari Weaverline
+			i(222879),	-- Bright Polishing Cloth+
+			i(222880),	-- Bright Polishing Cloth++
+			i(222881),	-- Bright Polishing Cloth+++
+			i(222868),	-- Dawnthread Lining+
+			i(222869),	-- Dawnthread Lining++
+			i(222870),	-- Dawnthread Lining+++
+			i(222894),	-- Daybreak Spellthread+
+			i(222895),	-- Daybreak Spellthread++
+			i(222896),	-- Daybreak Spellthread+++
+			i(222871),	-- Duskthread Lining+
+			i(222872),	-- Duskthread Lining++
+			i(222873),	-- Duskthread Lining+++
+			i(222876),	-- Gritty Polishing Cloth+
+			i(222877),	-- Gritty Polishing Cloth++
+			i(222878),	-- Gritty Polishing Cloth+++
+			i(222885),	-- Preserving Embroidery Thread+
+			i(222886),	-- Preserving Embroidery Thread++
+			i(222887),	-- Preserving Embroidery Thread+++
+			i(222891),	-- Sunset Spellthread+
+			i(222892),	-- Sunset Spellthread++
+			i(222893),	-- Sunset Spellthread+++
+			i(224440),	-- Weavercloth Bandage+
+			i(224441),	-- Weavercloth Bandage++
+			i(224442),	-- Weavercloth Bandage+++
+			i(222882),	-- Weavercloth Embroidery Thread+
+			i(222883),	-- Weavercloth Embroidery Thread++
+			i(222884),	-- Weavercloth Embroidery Thread+++
+			i(222888),	-- Weavercloth Spellthread+
+			i(222889),	-- Weavercloth Spellthread++
+			i(222890),	-- Weavercloth Spellthread+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
+			i(222850),	-- Artisan's Alchemist's Robe
+			i(222851),	-- Artisan's Chef's Hat
+			i(222849),	-- Artisan's Enchanter's Hat
+			i(222848),	-- Artisan's Fishing Cap
+			i(222847),	-- Artisan's Gardening Hat
+			i(222852),	-- Artisan Tailor's Coat
+			i(222845),	-- Weavercloth Alchemist's Robe
+			i(222846),	-- Weavercloth Chef's Hat
+			i(222843),	-- Weavercloth Enchanter's Hat
+			i(222842),	-- Weavercloth Fishing Cap
+			i(222841),	-- Weavercloth Gardening Hat
+			i(222844),	-- Weavercloth Tailor's Coat
 		}),
 		filter(REAGENTS, {
+			i(222801),	-- Dawnweave Bolt+
+			i(222802),	-- Dawnweave Bolt++
+			i(222803),	-- Dawnweave Bolt+++
+			i(222798),	-- Duskweave Bolt+
+			i(222799),	-- Duskweave Bolt++
+			i(222800),	-- Duskweave Bolt+++
+			i(224832),	-- Exquisite Weavercloth Bolt+
+			i(224833),	-- Exquisite Weavercloth Bolt++
+			i(224834),	-- Exquisite Weavercloth Bolt+++
+			i(222792),	-- Spool of Dawnthread+
+			i(222793),	-- Spool of Dawnthread++
+			i(222794),	-- Spool of Dawnthread+++
+			i(222789),	-- Spool of Duskthread+
+			i(222790),	-- Spool of Duskthread++
+			i(222791),	-- Spool of Duskthread+++
+			i(222795),	-- Spool of Weaverthread+
+			i(222796),	-- Spool of Weaverthread++
+			i(222797),	-- Spool of Weaverthread+++
+			i(222804),	-- Weavercloth Bolt+
+			i(222805),	-- Weavercloth Bolt++
+			i(222806),	-- Weavercloth Bolt+++
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = TAILORING,
 		},{
 		})),
 	}),
-	--]]
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

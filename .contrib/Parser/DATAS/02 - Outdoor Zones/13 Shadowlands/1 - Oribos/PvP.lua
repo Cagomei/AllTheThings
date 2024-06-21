@@ -154,7 +154,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						}),
 						i(223639, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Aspirant's Cloak Rack
 							["cost"] = { { "i", MOH, 1 } },	-- Placeholder cost?
-							["description"] = "|Cffff0000This Ensemble is currently broken and gives nothing when used.|r",
+							["description"] = "|Cffff0000This ensemble may or may not work.  If it does not work see if you own any of the cloaks in the set.  If the token does not work for you report to ATT discord on how many cloaks you own from this ensemble.|r",
+							["g"] = {
+								i(185128),	-- Unchained Aspirant's Cloak
+								i(185205),	-- Unchained Aspirant's Drape
+								i(185240),	-- Unchained Aspirant's Cape
+								i(192319),	-- Eternal Aspirant's Cloak
+								i(192355),	-- Eternal Aspirant's Drape
+								i(192390),	-- Eternal Aspirant's Cape
+						},
 						})),
 					},
 				}),
@@ -213,28 +221,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							i(182465),	-- Truth's Wake
 							i(182681),	-- Vengeful Shock
 						})),
-						i(223640, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Gladiator's Cloak Rack
-							["cost"] = { { "i", MOH, 1 } },	-- Placeholder cost?
-							["description"] = "|Cffff0000This Ensemble is currently broken and gives nothing when used.|r",
-							-- Marked as removed until Blizzard fixes this
-							["g"] = sharedData({ ["bonusID"] = 6894, ["u"] = REMOVED_FROM_GAME, }, {
-								i(188873, {["classes"] = DEATHKNIGHT}),	-- Cloak of the First Eidolon
-								i(188900, {["classes"] = DEMONHUNTER}),	-- Mercurial Punisher's Mantle
-								i(188871, {["classes"] = DRUID}),	-- Wrap of the Fixed Stars
-								i(188872, {["classes"] = HUNTER}),	-- Godstalker's Camouflage
-								i(188846, {["classes"] = MAGE}),	-- Erudite Occultist's Shroud
-								i(188918, {["classes"] = MONK}),	-- Drape of the Grand Upwelling
-								i(188936, {["classes"] = PALADIN}),	-- Luminous Chevalier's Drape
-								i(188882, {["classes"] = PRIEST}),	-- Drape of the Empyrean
-								i(188909, {["classes"] = ROGUE}),	-- Soulblade Cloak
-								i(188927, {["classes"] = SHAMAN, ["bonusID"] = 6896}),	-- Theurgic Starspeaker's Shawl
-								i(188891, {["classes"] = WARLOCK}),	-- Cape of the Demon Star
-								i(188945, {["classes"] = WARRIOR}),	-- Favor of the Infinite Infantry
-							}),
-						})),
 					},
 				}),
 			}),
 		})),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.SL, {
+		-- Unburied Aspirant's Cloak Rack (Item 223639)
+		q(82343, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Aspirant's Cloak Rack
+		q(82409, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Aspirant's Cloak Rack
+		q(82410, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Aspirant's Cloak Rack
+		q(82411, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Aspirant's Cloak Rack
+		q(82412, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Aspirant's Cloak Rack
+		q(82413, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Aspirant's Cloak Rack
+	}),
+});

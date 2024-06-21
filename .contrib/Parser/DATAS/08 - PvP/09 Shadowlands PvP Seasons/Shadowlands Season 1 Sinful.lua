@@ -327,6 +327,26 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 						["cost"] = {{"i", MOH, 12}},
 						["timeline"] = { ADDED_10_0_2_LAUNCH },
 					}),
+					i(223640, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Gladiator's Cloak Rack
+						["cost"] = {{"i", MOH, 1}},
+						["description"] = "|Cffff0000This ensemble may or may not work.  If it does not work see if you own any of the cloaks in the set.  If the token does not work for you report to ATT discord on how many cloaks you own from this ensemble.|r",
+						["g"] = {
+							-- Gladiator
+							i(175888),	-- Sinful Gladiator's Cloak
+							i(178353),	-- Sinful Gladiator's Drape
+							i(178414),	-- Sinful Gladiator's Shawl
+							i(184311),	-- Sinful Gladiator's Greatcloak
+							i(192209),	-- Eternal Gladiator's Cloak
+							i(192210),	-- Eternal Gladiator's Drape
+							i(192211),	-- Eternal Gladiator's Shawl
+							i(192212),	-- Eternal Gladiator's Greatcloak
+							-- Elite (as of 10.2.7 it gives Elite cloaks too, but only Eternal not Sinful)
+							i(192209, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Cloak
+							i(192210, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Drape
+							i(192211, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Shawl
+							i(192212, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Greatcloak
+						},
+					})),
 					filter(BACK_F, {
 						i(175888, {	-- Sinful Gladiator's Cloak
 							["cost"] = {{"c", CONQUEST, 525}},
@@ -913,3 +933,35 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		})),
 	})),
 })));
+
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.SL, {
+		-- PvP Ensembles
+		q(74248),	-- Ensemble: Sinful Aspirant's Cloth Armor
+		q(74246),	-- Ensemble: Sinful Aspirant's Leather Armor
+		q(74244),	-- Ensemble: Sinful Aspirant's Mail Armor
+		q(74242),	-- Ensemble: Sinful Aspirant's Plate Armor
+		q(74241),	-- Ensemble: Sinful Gladiator's Cloth Armor
+		q(74247),	-- Ensemble: Sinful Gladiator's Leather Armor
+		q(74245),	-- Ensemble: Sinful Gladiator's Mail Armor
+		q(74243),	-- Ensemble: Sinful Gladiator's Plate Armor
+
+		-- PvP Arsenals
+		q(74281),	-- Arsenal: Sinful Aspirant's Weapons
+		q(74280),	-- Arsenal: Sinful Gladiator's Ardenweald Weapons
+		q(74279),	-- Arsenal: Sinful Gladiator's Bastion Weapons
+		q(74278),	-- Arsenal: Sinful Gladiator's Maldraxxus Weapons
+		q(74277),	-- Arsenal: Sinful Gladiator's Revendreth Weapons
+
+		-- Unburied Gladiator's Cloak Rack (Item 223640)
+		q(82420, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82422, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82423, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82425, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82426, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82427, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82428, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82430, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82438, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+	}),
+});
