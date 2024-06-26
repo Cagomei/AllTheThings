@@ -4,6 +4,40 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(DORNOGAL, {
 		n(VENDORS, {
+			n(219036, {	-- Ardgaz <Token Exchange>
+				["coord"] = { 54.8, 42.5, DORNOGAL },
+			}),
+			n(219230, {	-- Erani <Pet Charm Trader>
+				["coord"] = { 58.5, 64.9, DORNOGAL },
+				["g"] = {
+					-- TODO: Costs! Was not available in latest build
+					i(224101),	-- Brown Leafbug (PET!)
+					i(222978),	-- Sandstone Ramolith (PET!)
+					i(221494),	-- Skippy (PET!)
+					i(221811),	-- Starkstripe Hopper (PET!)
+					i(221761),	-- Venomwing (PET!)
+				},
+			}),
+			n(219197, {	-- Griftah <Amazing Amulets>
+				["coord"] = { 62.5, 50.9, DORNOGAL },
+				["g"] = {
+					i(224763),	-- Design: Cubic Blasphemia (RECIPE!)
+				},
+			}),
+			n(219255, {	-- Karbath <Weapon Trader>
+				["coord"] = { 47.3, 64.8, DORNOGAL },
+				["g"] = {
+					i(227699, {	-- Earthen Ceremonial Chopper
+						["cost"] = {{"c", RESONANCE_CRYSTALS, 500}},
+					}),
+					i(227701, {	-- Preserved Defender's Kris
+						["cost"] = {{"c", RESONANCE_CRYSTALS, 500}},
+					}),
+					i(227700, {	-- Preserved Defender's Spear
+						["cost"] = {{"c", RESONANCE_CRYSTALS, 500}},
+					}),
+				},
+			}),
 			n(219051, {	-- Lyrendal <Artisan's Consortium Quartermaster>
 				--["coord"] = { 52.1, 42.2, DORNOGAL },
 				["g"] = {
@@ -67,7 +101,144 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223066, {	-- Technique: Algari Missive of Resourcefulness (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
+					-- Profession Books
+					i(227420, {	-- Exceptional Alchemist's Research (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+					}),
+					i(227418, {	-- Exceptional Blacksmith's Diagrams (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+					}),
+					i(227422, {	-- Exceptional Enchanter's Research (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+					}),
+					i(227423, {	-- Exceptional Engineer's Scribblings (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+					}),
+					i(227426, {	-- Exceptional Herbalist's Notes (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+					}),
+					i(227424, {	-- Exceptional Jeweler's Illustrations (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+					}),
+					i(227425, {	-- Exceptional Leatherworker's Diagrams (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+					}),
+					i(227427, {	-- Exceptional Miner's Notes (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+					}),
+					i(227419, {	-- Exceptional Scribe's Runic Drawings (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+					}),
+					i(227428, {	-- Exceptional Skinner's Notes (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+					}),
+					i(227421, {	-- Exceptional Tailor's Diagrams (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+					}),
+					i(227409, {	-- Faded Alchemist's Research (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+					}),
+					i(227407, {	-- Faded Blacksmith's Diagrams (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+					}),
+					i(227411, {	-- Faded Enchanter's Research (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+					}),
+					i(227412, {	-- Faded Engineer's Scribblings (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+					}),
+					i(227415, {	-- Faded Herbalist's Notes (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+					}),
+					i(227413, {	-- Faded Jeweler's Illustrations (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+					}),
+					i(227414, {	-- Faded Leatherworker's Diagrams (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+					}),
+					i(227416, {	-- Faded Miner's Notes (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+					}),
+					i(227408, {	-- Faded Scribe's Runic Drawings (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+					}),
+					i(227417, {	-- Faded Skinner's Notes (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+					}),
+					i(227410, {	-- Faded Tailor's Diagrams (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+					}),
+					i(227431, {	-- Pristine Alchemist's Research (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+					}),
+					i(227429, {	-- Pristine Blacksmith's Diagrams (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+					}),
+					i(227433, {	-- Pristine Enchanter's Research (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+					}),
+					i(227434, {	-- Pristine Engineer's Scribblings (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+					}),
+					i(227437, {	-- Pristine Herbalist's Notes (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+					}),
+					i(227435, {	-- Pristine Jeweler's Illustrations (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+					}),
+					i(227436, {	-- Pristine Leatherworker's Diagrams (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+					}),
+					i(227438, {	-- Pristine Miner's Notes (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+					}),
+					i(227430, {	-- Pristine Scribe's Runic Drawings (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+					}),
+					i(227439, {	-- Pristine Skinner's Notes (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+					}),
+					i(227432, {	-- Pristine Tailor's Diagrams (CI!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+					}),
 				},
+			}),
+			n(224294, {	-- Osidion <Ensemble Vendor>
+				["coord"] = { 57.3, 60.8, DORNOGAL },
+				["g"] = sharedData({
+					["cost"] = {{"i", 223951, 1}},	-- 1x Earth-Encrusted Gem
+				}, {
+					iensemble(219116),	-- Arcane Peddler's Trinkets
+					iensemble(219100),	-- Cardinal Educator's Knowledge
+					iensemble(219127),	-- Cast Artisan's Talent
+					iensemble(219113),	-- Celestial Patron's Elegance
+					iensemble(219103),	-- Cobalt Educator's Knowledge
+					iensemble(219114),	-- Court Patron's Elegance
+					iensemble(219117),	-- Curious Peddler's Trinkets
+					iensemble(219133),	-- Deep Cartographer's Orientation
+					iensemble(219107),	-- Earthy Quotidian Wear
+					iensemble(219102),	-- Leafy Educator's Knowledge
+					iensemble(219101),	-- Lilac Educator's Knowledge
+					iensemble(219106),	-- Maroon Quotidian Wear
+					iensemble(219104),	-- Midnight Educator's Knowledge
+					iensemble(219134),	-- Mossy Cartographer's Orientation
+					iensemble(219119),	-- Occult Peddler's Trinkets
+					iensemble(219131),	-- Oceanic Cartographer's Orientation
+					iensemble(219118),	-- Peculiar Peddler's Trinkets
+					iensemble(219111),	-- Royal Patron's Elegance
+					iensemble(219130),	-- Saffron Cartographer's Orientation
+					iensemble(219105),	-- Sandy Quotidian Wear
+					iensemble(219129),	-- Sooty Artisan's Talent
+					iensemble(219128),	-- Stained Artisan's Talent
+					iensemble(219109),	-- Taupe Quotidian Wear
+					iensemble(219123),	-- Toiler's Beige Uniform
+					iensemble(219122),	-- Toiler's Burgundy Uniform
+					iensemble(219124),	-- Toiler's Navy Uniform
+					iensemble(219121),	-- Toiler's Ochre Uniform
+					iensemble(219108),	-- Umber Quotidian Wear
+					iensemble(219112),	-- Verdant Patron's Elegance
+					iensemble(219126),	-- Woven Artisan's Talent
+				}),
 			}),
 			n(219226, {	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
@@ -76,15 +247,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- Trade Down
 					i(221268, {	-- Pouch of Weathered Harbinger Crests
 						["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
-						["cost"] = {{ "c", 2915, 15 }},	-- Carved Harbinger Crests x15
+						["cost"] = {{"c", CARVED_HARBINGER_CREST, 15}},
 					}),
 					i(221373, {	-- Satchel of Carved Harbinger Crests
 						["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
-						["cost"] = {{ "c", 2916, 15 }},	-- Runed Harbinger Crests x15
+						["cost"] = {{"c", RUNED_HARBINGER_CREST, 15}},
 					}),
 					i(221375, {	-- Pack of Runed Harbinger Crests
 						["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
-						["cost"] = {{ "c", 2917, 15 }},	-- Gilded Harbinger Crests x15
+						["cost"] = {{"c", GILDED_HARBINGER_CREST, 15}},
 					}),
 					-- Trade UP
 					-- i(, {	--

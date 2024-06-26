@@ -2421,7 +2421,8 @@ local SourceLocationSettingsKey = setmetatable({
 		return "SourceLocations:Things";
 	end
 });
-local UnobtainableTexture = " |T" .. app.asset("status-unobtainable.blp") .. ":0|t";
+local UnobtainableTexture = " |T"..L.UNOBTAINABLE_ITEM_TEXTURES[1]..":0|t"
+local NotCurrentCharacterTexture = " |T"..L.UNOBTAINABLE_ITEM_TEXTURES[0]..":0|t"
 local function HasCost(group, idType, id)
 	-- check if the group has a cost which includes the given parameters
 	if group.cost and type(group.cost) == "table" then
@@ -2523,10 +2524,10 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 					sourcesToShow = FilterSettings(parent) and character or unavailable
 					-- from obtainable, different character source
 					if not FilterCharacter(parent) then
-						sourcesToShow[#sourcesToShow + 1] = text.." |TInterface\\FriendsFrame\\StatusIcon-Away:0|t"
+						sourcesToShow[#sourcesToShow + 1] = text..NotCurrentCharacterTexture
 					else
 						-- check if this needs a status icon even though it's being shown
-						right = GetUnobtainableTexture(FirstParent(j, "e") or FirstParent(j, "u") or j)
+						right = GetUnobtainableTexture(FirstParent(j, "e", true) or FirstParent(j, "u", true) or j)
 							or (j.rwp and app.asset("status-prerequisites"))
 						if right then
 							sourcesToShow[#sourcesToShow + 1] = text.." |T" .. right .. ":0|t"
@@ -3092,25 +3093,34 @@ local function GetSearchResults(method, paramA, paramB, ...)
 									-- if only a few maps, list them all
 									local count = #id;
 									if count == 1 then
-										id = id[1];
-										locationGroup = C_Map_GetMapInfo(id);
-										locationName = locationGroup and TryColorizeName(locationGroup, locationGroup.name);
+										locationName = app.GetMapName(id[1]);
 									else
-										local mapsConcat, names, name = {}, {}, nil;
+										-- instead of listing individual zone names, just list zone count for brevity
+										local names = {__count=0}
+										local name
 										for j=1,count,1 do
 											name = app.GetMapName(id[j]);
 											if name and not names[name] then
-												names[name] = true;
-												tinsert(mapsConcat, name);
+												names.__count = names.__count + 1
 											end
 										end
-										-- up to 3 unqiue map names displayed
-										if #mapsConcat < 4 then
-											locationName = app.TableConcat(mapsConcat, nil, nil, "/");
-										else
-											mapsConcat[4] = "+++";
-											locationName = app.TableConcat(mapsConcat, nil, nil, "/", 1, 4);
-										end
+										locationName = "["..names.__count.." "..BRAWL_TOOLTIP_MAPS.."]"
+										-- old: list 3 zones/+++
+										-- local mapsConcat, names, name = {}, {}, nil;
+										-- for j=1,count,1 do
+										-- 	name = app.GetMapName(id[j]);
+										-- 	if name and not names[name] then
+										-- 		names[name] = true;
+										-- 		mapsConcat[#mapsConcat + 1] = name
+										-- 	end
+										-- end
+										-- -- 1 unique map name displayed
+										-- if #mapsConcat < 2 then
+										-- 	locationName = app.TableConcat(mapsConcat, nil, nil, "/");
+										-- else
+										-- 	mapsConcat[2] = "+"..(count - 1);
+										-- 	locationName = app.TableConcat(mapsConcat, nil, nil, "/", 1, 2);
+										-- end
 									end
 								else
 									locationGroup = SearchForObject(field, id, "field") or (id and field == "mapID" and C_Map_GetMapInfo(id));
@@ -4684,6 +4694,20 @@ local function AddNestedTomTomWaypoints(group, depth)
 				AddNestedTomTomWaypoints(o, depth + 1);
 			end
 		end
+		-- if the Thing is specifically NOT a Quest
+		-- check for the search result of the sourceQuests of the Thing
+		-- e.g. Achievement using sourceQuest
+		if group.key ~= "questID" then
+			if group.sourceQuests then
+				for _,questID in ipairs(group.sourceQuests) do
+					for _,o in ipairs(SearchForField("questID", questID, "field")) do
+						-- app.PrintDebug("WP:sq-Search:",o.hash)
+						AddNestedTomTomWaypoints(o, 0);
+						AddTomTomParentCoord(o);
+					end
+				end
+			end
+		end
 		group.plotting = nil;
 	end
 end
@@ -4703,11 +4727,9 @@ local function AddTomTomSearchResultWaypoints(group)
 		local key = group.key;
 		if not key then return end
 		for _,o in ipairs(SearchForField(key, group[key], "field")) do
-			if not o.saved and not o.missingSourceQuests then
-				-- app.PrintDebug("WP:Search:",o.hash)
-				TryAddGroupWaypoints(o);
-				AddTomTomParentCoord(o);
-			end
+			-- app.PrintDebug("WP:Search:",o.hash)
+			AddNestedTomTomWaypoints(o, 0);
+			AddTomTomParentCoord(o);
 		end
 	end
 end
@@ -6871,15 +6893,22 @@ local function UpdateGroup(group, parent)
 	-- if debug then print("UG",group.hash,parent and parent.hash) end
 
 	-- Determine if this user can enter the instance or acquire the item and item is equippable/usable
-	local valid;
+	-- Things which are determined to be a cost/upgrade for something else which meets user filters will
+	-- be shown anyway, so don't need to undergo a filtering pass
+	local valid = group.isCost or group.isUpgrade
+	if valid then
+		-- app.PrintDebug("Pre-valid group as from cost/upgrade",group.isCost,group.isUpgrade,app:SearchLink(group))
+	end
 	-- A group with a source parent means it has a different 'real' heirarchy than in the current window
 	-- so need to verify filtering based on that instead of only itself
-	if group.sourceParent then
-		valid = RecursiveGroupRequirementsFilter(group);
-		-- if debug then print("UG.RGRF",valid,"=>",group.sourceParent.hash) end
-	else
-		valid = GroupFilter(group);
-		-- if debug then print("UG.GF",valid) end
+	if not valid then
+		if group.sourceParent then
+			valid = RecursiveGroupRequirementsFilter(group);
+			-- if debug then print("UG.RGRF",valid,"=>",group.sourceParent.hash) end
+		else
+			valid = GroupFilter(group);
+			-- if debug then print("UG.GF",valid) end
+		end
 	end
 
 	if valid then
@@ -14665,13 +14694,12 @@ local function InitDataCoroutine()
 	-- warning about debug logging in case it sneaks in we can realize quicker
 	app.PrintDebug("NOTE: ATT debug prints enabled!")
 
-	-- finally can say the app is ready
-	-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
-	app.IsReady = true;
-	-- app.PrintDebug("ATT is Ready!");
-
 	-- Execute the OnReady handlers.
 	app.HandleEvent("OnReady")
+
+	-- finally can say the app is ready
+	app.IsReady = true;
+	-- app.PrintDebug("ATT is Ready!");
 
 	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
 end

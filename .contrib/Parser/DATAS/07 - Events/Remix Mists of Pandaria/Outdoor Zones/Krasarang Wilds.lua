@@ -208,6 +208,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["cost"] = { { "c", 738, 10 } },  -- 10x Lesser Charm of Good Fortune
 					["repeatable"] = true,
 				}),
+				q(80444, {  -- Aid the Anglers
+					["provider"] = { "n", 63721 },	-- Nat Pagle
+					["coord"] = { 68.4, 43.4, KRASARANG_WILDS },
+					["cost"] = { { "c", 738, 10 } },  -- 10x Lesser Charm of Good Fortune
+					["repeatable"] = true,
+				}),
 			}),
 			n(ZONE_REWARDS, {
 				filter(CLOTH, {
@@ -296,4 +302,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 		},
 	}),
+}))));
+root(ROOTS.HiddenQuestTriggers,  applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+	q(81666),	-- Triggered on first completion of questID 80444 Aid the Anglers
 }))));

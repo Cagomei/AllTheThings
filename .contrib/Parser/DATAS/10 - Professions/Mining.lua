@@ -1,8 +1,8 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local MINING_KNOWLEDGE = 2035;
---local TWW_MINING_KNOWLEDGE = ;
+local DF_MINING_KNOWLEDGE = 2035;
+local TWW_MINING_KNOWLEDGE = 2793;
 root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING }, {
 	-- #if AFTER 3.0.2
 	n(DISCOVERY, {
@@ -1229,7 +1229,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", MINING_KNOWLEDGE, 1 }} }, {
+			["g"] = sharedData({ ["cost"] = {{ "c", DF_MINING_KNOWLEDGE, 1 }} }, {
 				r(388213, {["timeline"] = {ADDED_10_0_5}}),	-- Overload Elemental Deposit
 				r(383793),	-- Refine Draconium++
 				r(383795),	-- Refine Draconium+++
@@ -1242,7 +1242,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
-				currency(MINING_KNOWLEDGE),
+				currency(DF_MINING_KNOWLEDGE),
 			},
 		},{
 			i(199122),	-- Mining Field Notes
@@ -1278,12 +1278,28 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
-		--[[filter(RECIPES, {
+		n(QUESTS, sharedData({
+			["description"] = "Requires 25 Skill.",
+			["provider"] = { "n", 219097 },	-- Tarib
+			["coord"] = { 52.6, 52.6, DORNOGAL },
+			["isWeekly"] = true,
+			["g"] = {
+				i(224818),	-- Algari Mining Notes
+			},
+		},{
+			q(83103),	-- Acquiring Aqirite
+		})),
+		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
 			["g"] = sharedData({ ["cost"] = {{ "c", TWW_MINING_KNOWLEDGE, 1 }} }, {
-				r(xx),	-- Refine ?
+				r(442330),	-- Refine Aqirite++
+				r(442331),	-- Refine Aqirite+++
+				r(442328),	-- Refine Bismuth++
+				r(442329),	-- Refine Bismuth+++
+				r(442332),	-- Refine Ironclaw Ore++
+				r(442333),	-- Refine Ironclaw Ore+++
 			}),
-		}),]]--
+		}),
 		n(TREASURES, {
 			o(455957, {	-- Arathi Precision Drill
 				["coord"] = { 46.1, 64.4, HALLOWFALL },
@@ -1306,6 +1322,13 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					i(226333),	-- Dornogal Chisel
 				},
 			}),
+			o(455959, {	-- Earthen Excavator's Shovel
+				["coord"] = { 49.4, 27.5, THE_RINGING_DEEPS },
+				["questID"] = 83908,
+				["g"] = {
+					i(226334),	-- Earthen Excavator's Shovel
+				},
+			}),
 			o(455961, {	-- Earthen Miner's Gavel
 				["coord"] = { 58.2, 62.0, ISLE_OF_DORN },
 				["questID"] = 83906,
@@ -1313,43 +1336,57 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					i(226332),	-- Earthen Miner's Gavel
 				},
 			}),
+			o(455955, {	-- Heavy Spider Crusher
+				["coord"] = { 46.8, 21.7, 2213 },
+				["questID"] = 83912,
+				["g"] = {
+					i(226338),	-- Heavy Spider Crusher
+				},
+			}),
+			o(455958, {	-- Regenerating Ore
+				["coord"] = { 66.2, 66.2, THE_RINGING_DEEPS },
+				["questID"] = 83909,
+				["g"] = {
+					i(226335),	-- Regenerating Ore
+				},
+			}),
 		}),
-		--[[n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
 				currency(TWW_MINING_KNOWLEDGE),
 			},
 		},{
-			i(),	-- Mining Field Notes
-			q(, {		-- Inscription Order: Mining
+			i(224818),	-- Algari Mining Notes
+			q(83733, {		-- Inscription Order: Mining
 				["name"] = "Inscription Order: Mining",
 				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", xx },	-- xx Treatise on Mining
+				["provider"] = { "i", 222553 },	-- Algari Treatise on Mining
 			}),
-			q(, {	-- Weekly Mining Knowledgepoint #1
+			q(83054, {	-- Weekly Mining Knowledgepoint #1
 				["name"] = "Weekly Mining Knowledgepoint #1",
-				["provider"] = { "i", xx },	-- 
+				["provider"] = { "i", 224583 },	-- Slab of Slate
 			}),
-			q(, {	-- Weekly Mining Knowledgepoint #2
+			q(83053, {	-- Weekly Mining Knowledgepoint #2
 				["name"] = "Weekly Mining Knowledgepoint #2",
-				["provider"] = { "i", xx },	-- 
+				["provider"] = { "i", 224583 },	-- Slab of Slate
 			}),
-			--q(, {	-- Weekly Mining Knowledgepoint #3
-			--	["name"] = "Weekly Mining Knowledgepoint #3",
-			--	["provider"] = { "i", xx },	-- 
-			--}),
-			--q(, {	-- Weekly Mining Knowledgepoint #4
-			--	["name"] = "Weekly Mining Knowledgepoint #4",
-			--	["provider"] = { "i", xx },	-- 
-			--}),
-			--q(, {	-- Weekly Mining Knowledgepoint #5
-			--	["name"] = "Weekly Mining Knowledgepoint #5",
-			--	["provider"] = { "i", xx },	-- 
-			--}),
-			--q(, {	-- Weekly Mining Knowledgepoint #6
-			--	["name"] = "Weekly Mining Knowledgepoint #6",
-			--	["provider"] = { "i", xx },	-- ?
-			--}),
-		})),]]--
+			q(83052, {	-- Weekly Mining Knowledgepoint #3
+				["name"] = "Weekly Mining Knowledgepoint #3",
+				["provider"] = { "i", 224583 },	-- Slab of Slate
+			}),
+			q(83051, {	-- Weekly Mining Knowledgepoint #4
+				["name"] = "Weekly Mining Knowledgepoint #4",
+				["provider"] = { "i", 224583 },	-- Slab of Slate
+			}),
+			q(83050, {	-- Weekly Mining Knowledgepoint #5
+				["name"] = "Weekly Mining Knowledgepoint #5",
+				["provider"] = { "i", 224583 },	-- Slab of Slate
+			}),
+			q(83049, {	-- Weekly Mining Knowledgepoint #6
+				["name"] = "Weekly Mining Knowledgepoint #6",
+				["provider"] = { "i", 224584 },	-- Erosion Polished Slate
+			}),
+		})),
 	})),
 })));

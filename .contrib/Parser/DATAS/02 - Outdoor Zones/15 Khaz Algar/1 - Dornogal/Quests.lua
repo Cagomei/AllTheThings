@@ -349,21 +349,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--]]
 			-- Enchanting tutorial but some data uses placeholder data
 			q(83275, {	-- Gear Enchanting
-				--["sourceQuests"] = { x },	-- ?
 				["provider"] = { "n", 226287 },	-- Ellerdin
 				["coord"] = { 51.8, 48.7, DORNOGAL },
 				["g"] = {
-					i(225652),	-- Enchant Ring - Glimmering Haste+
-					i(223669),	-- Enchant Ring - Glimmering Versatility+
 					i(226245),	-- Hollow Ring
 				},
 			}),
 			-- Crossroads Plaza
 			q(82747, {	-- Crossroads Plaza
-				["isBreadcrumb"] = true,	--// but need to confirm
-				--["sourceQuests"] = { x },	-- ?
 				["provider"] = { "n", 224544 },	-- Rannida
-				["coord"] = { 46.7, 48.8, DORNOGAL },
+				["coord"] = { 46.8, 33.0, DORNOGAL },
+				["isBreadcrumb"] = true,	-- but need to confirm
 			}),
 			-- end
 			-- Dungeon quest, seems like once per week in different dungeon, but didn't have (w) mark in-game?
@@ -383,50 +379,52 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 44.7, 47.2, DORNOGAL },	-- probably moved in new builds
 			}),
 			-- end
-			-- How Scandalous! (not sure when this one pop, but I think it wasn't here when I runing first time around here)
-			q(80207, {	-- How Scandalous!
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 219393 },	-- Aldra
-				["coord"] = { 62.7, 21.7, DORNOGAL },
+			-- Crafting Orders
+			q(84260, {	-- Crafting to Order
+				["provider"] = { "n", 219108 },	-- Roldira
+				["coord"] = { 59.1, 55.8, DORNOGAL },
 			}),
-			q(79521, {	-- Seizing Evidence
-				["sourceQuests"] = { 80207 },	-- How Scandalous!
-				["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
-				["coord"] = { 49.9, 49.3, DORNOGAL },
-				["g"] = {
-					i(217499),	-- Assorted Chisels (QI!)
-					i(217500),	-- High-Quality Coal (QI!)
-					i(217501),	-- Moleskin Apron (QI!)
-					i(217498),	-- Seized Shipment (QI!)
-				},
+			q(84288, {	-- Crafting Orders: Alchemy
+				["sourceQuests"] = { 84260 },	-- Crafting to Order
+				["provider"] = { "n", 219108 },	-- Roldira
+				["coord"] = { 59.1, 55.8, DORNOGAL },
+				["requireSkill"] = ALCHEMY,
 			}),
-			q(79522, {	-- Withheld Information
-				["sourceQuests"] = { 79521 },	-- Seizing Evidence
-				["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
-				["coord"] = { 49.9, 49.3, DORNOGAL },
+			q(84274, {	-- Crafting Orders: Blacksmithing
+				["sourceQuests"] = { 84260 },	-- Crafting to Order
+				["provider"] = { "n", 219108 },	-- Roldira
+				["coord"] = { 59.1, 55.8, DORNOGAL },
+				["requireSkill"] = BLACKSMITHING,
 			}),
-			q(79523, {	-- Something Hidden
-				["sourceQuests"] = { 79522 },	-- Withheld Information
-				["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
-				["coord"] = { 49.9, 49.3, DORNOGAL },
-				["g"] = {
-					i(217505),	-- Bag of Glowing Shards (QI!)
-					i(217504),	-- Bundle of Receipts (QI!)
-					i(217502),	-- Infused Underclay (QI!)
-					i(217503),	-- Nerubian Silk Ropes (QI!)
-				},
+			q(84285, {	-- Crafting Orders: Engineering
+				["sourceQuests"] = { 84260 },	-- Crafting to Order
+				["provider"] = { "n", 219108 },	-- Roldira
+				["coord"] = { 59.1, 55.8, DORNOGAL },
+				["requireSkill"] = ENGINEERING,
 			}),
-			q(79525, {	-- Report to the Councilward
-				["sourceQuests"] = { 79523 },	-- Something Hidden
-				["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
-				["coord"] = { 49.9, 49.3, DORNOGAL },
+			q(84287, {	-- Crafting Orders: Inscription
+				["sourceQuests"] = { 84260 },	-- Crafting to Order
+				["provider"] = { "n", 219108 },	-- Roldira
+				["coord"] = { 59.1, 55.8, DORNOGAL },
+				["requireSkill"] = INSCRIPTION,
 			}),
-			-- end
-			-- To Rambleshire (again, it wasn't here before, I'm not going insane right?)
-			q(78289, {	-- To Rumbleshire
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 214352 },	-- Rooktender Otwin
-				["coord"] = { 32.8, 33.6, DORNOGAL },
+			q(84279, {	-- Crafting Orders: Jewelcrafting
+				["sourceQuests"] = { 84260 },	-- Crafting to Order
+				["provider"] = { "n", 219108 },	-- Roldira
+				["coord"] = { 59.1, 55.8, DORNOGAL },
+				["requireSkill"] = JEWELCRAFTING,
+			}),
+			q(84280, {	-- Crafting Orders: Leatherworking
+				["sourceQuests"] = { 84260 },	-- Crafting to Order
+				["provider"] = { "n", 219108 },	-- Roldira
+				["coord"] = { 59.1, 55.8, DORNOGAL },
+				["requireSkill"] = LEATHERWORKING,
+			}),
+			q(84281, {	-- Crafting Orders: Tailoring
+				["sourceQuests"] = { 84260 },	-- Crafting to Order
+				["provider"] = { "n", 219108 },	-- Roldira
+				["coord"] = { 59.1, 55.8, DORNOGAL },
+				["requireSkill"] = TAILORING,
 			}),
 			-- Delves: Khaz Algar Research // move it to delves expansion feature, I guess?
 			q(82706, {	-- Delves: Khaz Algar Research
@@ -489,6 +487,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["g"] = {
 					currency(3029),	-- Treasure Trove Key (x2)
 				},
+			}),
+
+			-- Stay awhile and listen
+			q(84335, {	-- Stay awhile and listen: Alleria
+				["name"] = "Stay awhile and listen: Alleria",
+				["sourceQuests"] = { 78546 },	-- Recompense
+				["provider"] = { "n", 228493 },	-- Alleria Windrunner
+				["coord"] = { 32.0, 60.5, DORNOGAL },
+			}),
+			q(82461, {	-- Stay awhile and listen: Dagran
+				["name"] = "Stay awhile and listen: Dagran",
+				["sourceQuests"] = { 78546 },	-- Recompense
+				["provider"] = { "n", 217859 },	-- Dagran Thaurissan II
+				["coord"] = { 29.8, 60.0, DORNOGAL },
 			}),
 		}),
 	}),

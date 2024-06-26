@@ -3,8 +3,8 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(COUNCIL_OF_DORNOGAL, {
-		n(VENDORS, {
-
+		n(FACTIONS, {
+			faction(FACTION_COUNCIL_OF_DORNOGAL),
 		}),
 	}),
 })));

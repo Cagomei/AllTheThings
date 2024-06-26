@@ -945,7 +945,6 @@ else
 			app.WipeSearchCache();
 			app:RefreshDataQuietly("RefreshQuestInfo", true);
 		end
-		app:RegisterEvent("QUEST_LOG_UPDATE");
 	end
 	RefreshAllQuestInfo = function()
 		RefreshQuestInfo();
@@ -1739,10 +1738,7 @@ if app.IsClassic then
 	-- Way too spammy to be used without a Callback or combat protection
 	app.AddEventRegistration("CRITERIA_UPDATE", softRefresh)
 	-- This triggers in many situations where nothing actually changes... (like opening Quest Log)
-	app.AddEventRegistration("QUEST_LOG_UPDATE", function()
-		-- app.PrintDebug("QUEST_LOG_UPDATE")
-		RefreshAllQuestInfo();
-	end)
+	app.AddEventRegistration("QUEST_LOG_UPDATE", RefreshAllQuestInfo)
 else
 	-- In Retail, this has a cooldown and OOC protection, plus it actually allows accurate
 	-- triggering of quest status changes without user action.

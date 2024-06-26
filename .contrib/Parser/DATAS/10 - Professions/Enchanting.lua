@@ -830,6 +830,27 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				r(445466),	-- Shatter Essence
 			}),
 		}),
+		n(TREASURES, {
+			o(456006, {	-- Animated Enchanting Dust
+				["coord"] = { 67.2, 65.9, THE_RINGING_DEEPS },
+				["questID"] = 83861,
+				["g"] = {
+					i(226287),	-- Animated Enchanting Dust
+				},
+			}),
+		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(TWW_ENCHANTING_KNOWLEDGE),
+			},
+		},{
+			q(83727, {	-- Inscription Order: Enchanting
+				["name"] = "Inscription Order: Enchanting",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222550 },	-- Algari Treatise on Enchanting
+			}),
+		})),
 	})),
 })));
 
