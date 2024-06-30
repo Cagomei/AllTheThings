@@ -109,6 +109,83 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				40333,	-- The Ringing Deeps Reverse: Gold
 			}},
 		}),
+		ach(40790, {	-- Khaz Algar Explorer
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				40822,	-- Explore Azj-Kahet
+				40826,	-- Explore Hallowfall
+				40831,	-- Explore The Isle of Dorn
+				40825,	-- Explore The Ringing Deeps
+			}},
+		}),
+		ach(40430, {	-- Khaz Algar Flight Master
+			crit(68170, {	-- Dornogal, Isle of Dorn
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68172, {	-- Durgaz Cabin, Isle of Dorn
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68171, {	-- Freywold Village, Isle of Dorn
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68173, {	-- Rambleshire, Isle of Dorn
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68184, {	-- Camp Murroch, The Ringing Deeps
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68190, {	-- Gundargaz, The Ringing Deeps
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68183, {	-- Opportunity Point, Ringing Deeps
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68191, {	-- Shadowvein Point, The Ringing Deeps
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68180, {	-- Dunelle's Kindness, Hallowfall
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68182, {	-- Light's Redoubt, Hallowfall
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68188, {	-- Hillhelm Family Farm, Hallowfall
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68181, {	-- Lightspark, Hallowfall
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68187, {	-- Lorel's Crossing, Hallowfall
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68185, {	-- Mereldar, Hallowfall
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68189, {	-- The Aegis Wall, Hallowfall
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68186, {	-- Priory of the Sacred Flame, Hallowfall
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68178, {	-- Faerin's Advance, Azj-Kahet
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68179, {	-- Mmarl, Azj-Kahet
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68176, {	-- The Burrows, Azj-Kahet
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68174, {	-- Weaver's Lair, Azj-Kahet
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68175, {	-- Wildcamp Or'lay, Azj-Kahet
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+			crit(68177, {	-- Wildcamp Ul'ar, Azj-Kahet
+				-- TODO: Connect to the relevant flightpath somehow
+			}),
+		}),
 		ach(40702, {	-- Khaz Algar Glyph Hunter
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -118,6 +195,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				40703, 	-- The Ringing Deeps Glyph Hunter
 			}},
 		}),
+		ach(40762),		-- Khaz Algar Lore Hunter (automated)
 		petbattle(ach(40194, {	-- Khaz Algar Safari
 			crit(67292, {	-- Chitin Burrower
 				-- TODO
@@ -274,6 +352,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["_noautomation"] = true,
 				--["sourceQuest"] = 83503,	-- TODO: Quest Name
 			}),
+		}),
+		ach(40231, {	-- The War Within Pathfinder
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				19559,	-- Azj-Kahet
+				40790,	-- Khaz Algar Explorer
+				20598,	-- Hallowfall
+				20118,	-- The Isle of Dorn
+				19560,	-- The Ringing Deeps
+			}},
 		}),
 		petbattle(ach(40165, {	-- Undead Battler of Khaz Algar
 			-- TODO
