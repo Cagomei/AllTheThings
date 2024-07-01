@@ -3959,7 +3959,7 @@ i(205023, 3522);	-- Savage Lobstrok
 i(205164, 3554);	-- Senega
 i(205150, 3544);	-- Shalewing Devourer
 i(205035, 3526);	-- Snapjaw Lurker
-i(205148, 3542);	-- Soot-stanined Shalewing
+i(205148, 3542);	-- Soot-Stained Shalewing
 i(205157, 3550);	-- Undermoth
 i(205037, 3527);	-- Void Lurker
 i(205232, 0);		-- [DNT] REUSE
@@ -4113,9 +4113,11 @@ i(218086, 4450);	-- Remembered Riverpaw
 i(218246, 4452);	-- Remembered Spawn
 i(222978, 4546);	-- Sandstone Ramolith
 i(224579, 3362);	-- Sapphire Crab
+i(222974, 4543);	-- Sir Shady Mrgglton Junior
 i(221494, 4495);	-- Skippy
 i(221811, 4524);	-- Starkstripe Hopper
 i(224260, 4591);	-- Thundo
+i(221848, 4463);	-- Tiberius
 i(221849, 4465);	-- Vanilla
 i(221761, 4511);	-- Venomwing
 i(224760, 4597);	-- Wobbles
@@ -4153,12 +4155,10 @@ i(223802, 4581);	-- Purple Stagshell
 i(225935, 4582);	-- Rak-Ush Battleshell
 i(221759, 4512);	-- Sceaduthax
 i(221819, 4472);	-- Shadowbog Hopper
-i(222974, 4543);	-- Sir Shady Mrgglton Junior
 i(222980, 4542);	-- Slim
 i(223624, 4575);	-- Sneef
 i(222966, 4473);	-- Spinner
 i(220782, 4462);	-- Thunder
-i(221848, 4463);	-- Tiberius
 i(225337, 4506);	-- Violet Sporbit
 i(221495, 4497);	-- Waddles
 i(221821, 4517);	-- Waxwick

@@ -33,8 +33,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 211699 },	-- Faerin
 				["coord"] = { 32.1, 46.6, AZJ_KAHET },
 				["g"] = {
-					i(225521),	-- Rescued Aeroknight's Vambraces
+					i(225524),	-- Rescued Aeroknight's Gloves
 					i(225530),	-- Rescued Aeroknight's Helmet
+					i(225540),	-- Rescued Aeroknight's Mantle
+					i(225521),	-- Rescued Aeroknight's Vambraces
 				},
 			}),
 			q(78348, {	-- Friends in Low Places
@@ -72,8 +74,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 216213 },	-- Spindle
 				["coord"] = { 45.7, 60.1, AZJ_KAHET },
 				["g"] = {
+					i(225514),	-- Webweave Belt
 					i(225533),	-- Webweave Grips
 					i(225516),	-- Webweave Stompers
+					i(225529),	-- Webweave Wristguards
 				},
 			}),
 			q(78392, {	-- The Tangled Web
@@ -133,11 +137,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						i(211769),	-- Orders from Siegehold (QI!)
 						i(212159),	-- Vial of Stinky Pheromones (QI!)
 					}),
+					i(225364),	-- Kaheti Confiscated Blade
 					i(225349),	-- Kaheti Confiscated Borers
 					i(225358),	-- Kaheti Confiscated Buckler
+					i(225356),	-- Kaheti Confiscated Crossbow
+					i(225354),	-- Kaheti Confiscated Dirk
 					i(225360),	-- Kaheti Confiscated Hatchet
 					i(225362),	-- Kaheti Confiscated Knife
 					i(225357),	-- Kaheti Confiscated Lantern
+					i(225359),	-- Kaheti Confiscated Mallet
 					i(225353),	-- Kaheti Confiscated Spade
 					i(225361),	-- Kaheti Confiscated Staff
 					i(225363),	-- Kaheti Confiscated Sword
@@ -162,7 +170,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 46.9, 26.2, AZJ_KAHET },
 				["g"] = {
 					i(225538),	-- General's Pungent Armor
+					i(225526),	-- General's Pungent Legguards
 					i(225535),	-- General's Pungent Mantle
+					i(225515),	-- General's Pungent Wraps
 				},
 			}),
 			q(78250, {	-- General Admission
@@ -212,7 +222,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 48.6, 29.9, AZJ_KAHET },
 				["g"] = {
 					i(225520),	-- Smuggled Nerubian Belt
+					i(225523),	-- Smuggled Nerubian Boots
 					i(225537),	-- Smuggled Nerubian Cuffs
+					i(225513),	-- Smuggled Nerubian Trousers
 				},
 			}),
 			q(78256, {	-- The General's Consensus
@@ -813,19 +825,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 				["provider"] = { "n", 227158 },	-- Hannan
 				["coord"] = { 62.5, 80.5, 2256 },
-			}),
-			-- Delves
-			q(83771, {	-- DELVER'S CALL: Tak-Rethan Abyss
-				["provider"] = { "o", 455720 },	-- DELVER'S CALL: Tak-Rethan Abyss
-				["coord"] = { 57.2, 45.3, AZJ_KAHET },
-			}),
-			q(83770, {	-- DELVER'S CALL: Spiral Weave
-				["provider"] = { "n", 211721 },	-- Sir Jonathan Trueheart
-				["coord"] = { 59.2, 25.1, AZJ_KAHET },
-			}),
-			q(83761, {	-- Delves: The Underkeep
-				["provider"] = { "n", 227544 },	-- Brann Bronzebeard
-				["coord"] = { 55.9, 38.1, AZJ_KAHET },
 			}),
 			--Zone Drop quest?
 			q(80378, {	-- A Light of the Dark

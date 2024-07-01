@@ -79,9 +79,9 @@ end)
 
 -- Represents Events whose individual handlers should be processed over multiple frames to reduce potential stutter
 local RunnerEvents = {
-	OnRefreshCollections = true,
-	OnRecalculate = true,
-	OnUpdateWindows = true,
+	OnRefreshCollections = app.IsRetail,
+	OnRecalculate = app.IsRetail,
+	OnUpdateWindows = app.IsRetail,
 	-- OnRefreshWindows = true,
 }
 -- Represents Events which should always fire upon completion of a prior Event. These cannot be passed arguments currently

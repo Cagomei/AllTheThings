@@ -47,8 +47,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}},
 			}),
 			ach(40729),		-- Light's Gambit Champion
-			ach(40360),		-- Life on the Farm (automated)
-			ach(40618),		-- Lost and Found (automated)
+			ach(40360, {	-- Life on the Farm (automated)
+				-- TODO: Add "Hillhelm Farmhand's Equipment" reward
+			}),
+			ach(40618, {	-- Lost and Found (automated)
+				iensemble(219105),	-- Sandy Quotidian Wear
+			}),
 			ach(40151),		-- Mereldar Menace
 			ach(40082),		-- Never Enough
 			ach(40685, {	-- Skyriding Glyphs: Bleak Sand
@@ -78,8 +82,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["coord"] = { X, Y, HALLOWFALL },
 			}),
 			ach(40681, {	-- Skyriding Glyphs: The Fangs
-				-- TODO
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 62.9, 51.8, HALLOWFALL },
 			}),
 			ach(40690, {	-- Skyriding Glyphs: Tenir's Ascent
 				["coord"] = { 57.6, 64.6, HALLOWFALL },
