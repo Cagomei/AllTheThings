@@ -6635,9 +6635,9 @@ local function UpdateGroup(group, parent)
 	-- if debug then print("UG",group.hash,parent and parent.hash) end
 
 	-- Determine if this user can enter the instance or acquire the item and item is equippable/usable
-	-- Things which are determined to be a cost/upgrade for something else which meets user filters will
+	-- Things which are determined to be a cost for something else which meets user filters will
 	-- be shown anyway, so don't need to undergo a filtering pass
-	local valid = group.isCost or group.isUpgrade
+	local valid = group.isCost
 	if valid then
 		-- app.PrintDebug("Pre-valid group as from cost/upgrade",group.isCost,group.isUpgrade,app:SearchLink(group))
 	end
@@ -7653,8 +7653,11 @@ function app:CreateMiniListForGroup(group)
 				self.ExpireTime = time() + 300;
 				-- app.PrintDebug("Expire Refreshed",popout.Suffix)
 			end
+			-- Add Timerunning filter to the popout
+			popout.Filters = app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") and { Timerunning = true } or nil
 			self:BaseUpdate(force or got, got);
 		end
+
 		-- Create groups showing Appearance information
 		app.BuildSourceInformationForPopout(group);
 		if showing and ((group.key == "questID" and group.questID) or group.sourceQuests) then

@@ -1293,6 +1293,7 @@ i(200811);	-- Congealed Sap Droplet
 i(200814);	-- Congealing Shard
 i(198832);	-- Conjured Blubbery Muffin
 i(198833);	-- Conjured Celebratory Cake
+i(204846);	-- Conjured Rocks on the Rocks
 i(198831);	-- Conjured Snow in a Cone
 i(198830);	-- Conjured Tasty Hatchling's Treat
 i(200967);	-- Conquest
@@ -1901,3 +1902,17 @@ i(223884);	-- Volatile Transmutation
 i(220263);	-- Wax Miner's Sack
 i(225802);	-- Well-Worn Darning Needle
 i(217163);	-- Well Worn Doll
+
+
+i(226507);	-- Venom Dahn's Webscrub
+i(226508);	-- Vizier's Influence
+i(226509);	-- General's Insight
+i(226510);	-- Weaver's Facade
+i(226511);	-- Nerubimorph Poultice
+i(226512);	-- Treasure Map: Forgotten Memorial
+i(226513);	-- Treasure Map: Kaheti Excavation
+i(226514);	-- Treasure Map: Weave-Rat Cache
+i(226515);	-- Rumor Map: Bounties
+i(226516);	-- Rumor Map: Disruption
+i(226517);	-- Rumor Map: Espionage
+i(226518);	-- Phero-Escape
