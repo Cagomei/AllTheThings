@@ -539,8 +539,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(56, 56, 20),
+					["isBreadcrumb"] = true,
+					-- #if AFTER SHADOWLANDS
 					-- this quest was level locked for characters above level 56 before Shadowlands level squish
+					["lvl"] = lvlsquish(56, 56, 20),
+					-- #else
+					["lvl"] = { 48, 57 },
+					-- #endif
 				}),
 				q(28069, {	-- Adventurers Wanted: Blackrock Depths (H)
 					["provider"] = { "o", 207303 },	-- Adventure Board
@@ -548,8 +553,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(56, 56, 20),
+					["isBreadcrumb"] = true,
+					-- #if AFTER SHADOWLANDS
 					-- this quest was level locked for characters above level 56 before Shadowlands level squish
+					["lvl"] = lvlsquish(56, 56, 20),
+					-- #else
+					["lvl"] = { 48, 57 },
+					-- #endif
 				}),
 				q(7630, {	-- Arcanite
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
@@ -1147,6 +1157,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				},
+				heroscall(q(28666, {	-- Hero's Call: Burning Steppes!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE, STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 50 (TODO: Test max level between 53 and 60)
+					["lvl"] = { 49, 50 },
+					-- #endif
+				})),
 				{	-- I Am the Law and I Am the Lash
 					["allianceQuestData"] = q(28278, {	-- I Am the Law and I Am the Lash (A)
 						["sourceQuest"] = 28266,	-- Trial by Magma (A)
@@ -2018,6 +2038,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28667, {	-- Warchief's Command: Burning Steppes!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 51. (TODO: Test max level)
+					["lvl"] = { 49, 51 },
+					-- #endif
+				})),
 				{	-- Warlocks Have the Neatest Stuff
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
 					["allianceQuestData"] = q(28181, {	-- Warlocks Have the Neatest Stuff (A)

@@ -219,16 +219,32 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 	}))),
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		ach(4917),	-- Cataclysmic Fisherman
-		ach(5851, {	-- Gone Fishin'
+		ach(5851, {	-- Gone Fishin' (A)
 			["timeline"] = { ADDED_4_2_0 },
+			-- #if BEFORE 5.0.4
+			["races"] = ALLIANCE_ONLY,
+			-- #endif
 			["sym"] = {{"meta_achievement",
 				5848,	-- Fish or Cut Bait: Darnassus
 				5847,	-- Fish or Cut Bait: Ironforge
 				5476,	-- Fish or Cut Bait: Stormwind
+				-- #if AFTER 5.0.4
+				5477,	-- Fish or Cut Bait: Orgrimmar
+				5850,	-- Fish or Cut Bait: Undercity
+				5849,	-- Fish or Cut Bait: Thunder Bluff
+				-- #endif
+			}},
+		}),
+		ach(5852, {	-- Gone Fishin' (H)
+			["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+			["races"] = HORDE_ONLY,
+			-- #if BEFORE 5.0.4
+			["sym"] = {{"meta_achievement",
 				5850,	-- Fish or Cut Bait: Undercity
 				5849,	-- Fish or Cut Bait: Thunder Bluff
 				5477,	-- Fish or Cut Bait: Orgrimmar
 			}},
+			-- #endif
 		}),
 	})),
 	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {

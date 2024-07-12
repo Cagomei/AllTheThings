@@ -587,6 +587,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79975, {	-- Eagle's Fist
+					["provider"] = { "o", 424007 },	-- Carved Figurine
+					["sourceQuest"] = 79974,	-- Wet Job
+					["coord"] = { 49.5, 12.8, LOCH_MODAN },
+					["timeline"] = { "added 1.15.1" },
+					["maps"] = { ARATHI_HIGHLANDS },
+					["lvl"] = 14,
+				})),
+				-- #endif
 				q(298, {	-- Excavation Progress Report
 					["providers"] = {
 						{ "n", 1344 },	-- Prospector Ironband
@@ -806,8 +816,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 9. (Confirmed by Hurieve, Crieve's Level 9 Hunter.)
-					-- Cataclysm: Maximum is level 20 (TODO: Test max level between 16 and 25, 20 is based on Wowpedia info)
-					["lvl"] = { 9, 20 },
+					-- Cataclysm: Maximum is level 18 (TODO: Test max level between 16 and 25)
+					["lvl"] = { 9, 18 },
 					-- #endif
 				})),
 				-- #if BEFORE 4.0.3

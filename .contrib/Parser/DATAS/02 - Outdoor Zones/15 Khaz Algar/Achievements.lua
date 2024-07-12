@@ -4,59 +4,184 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
 		petbattle(ach(40154, {	-- Aquatic Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
+			crit(67139, {	-- Collector Dyna
+				["crs"] = { 223446 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67140, {	-- Friendhaver Grem
+				["crs"] = { 223444 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67141, {	-- Kyrie
+				["crs"] = { 223442 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67142, {	-- Ziriak
+				["crs"] = { 223443 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
 		})),
-		petbattle(ach(40153, {	-- Battle on Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["_quests"] = { x },
-			-- }),
+		petbattle(achraw(40153, {	-- Battle on Khaz Algar
+			crit(67131, {	-- Awakened Custodian
+				["_quests"] = { 82291 },
+			}),
+			crit(67132, {	-- Haywire Servobot
+				["_quests"] = { 82300 },
+			}),
+			crit(67133, {	-- Guttergunk
+				["_quests"] = { 82298 },
+			}),
+			crit(67135, {	-- Collector Dyna
+				["_quests"] = { 82292 },
+			}),
+			crit(67134, {	-- Zaedu
+				["_quests"] = { 82297 },
+			}),
+			crit(67136, {	-- Friendhaver Grem
+				["_quests"] = { 82293 },
+			}),
+			crit(67137, {	-- Kyrie
+				["_quests"] = { 82294 },
+			}),
+			crit(67138, {	-- Ziriak
+				["_quests"] = { 82295 },
+			}),
 		})),
 		petbattle(ach(40155, {	-- Beast Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
+			crit(67143, {	-- Collector Dyna
+				["crs"] = { 223446 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67144, {	-- Friendhaver Grem
+				["crs"] = { 223444 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67145, {	-- Kyrie
+				["crs"] = { 223442 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67146, {	-- Ziriak
+				["crs"] = { 223443 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
 		})),
 		petbattle(ach(40156, {	-- Critter Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
+			crit(67147, {	-- Collector Dyna
+				["crs"] = { 223446 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67148, {	-- Friendhaver Grem
+				["crs"] = { 223444 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67149, {	-- Kyrie
+				["crs"] = { 223442 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67150, {	-- Ziriak
+				["crs"] = { 223443 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
 		})),
 		petbattle(ach(40157, {	-- Dragonkin Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
+			crit(67151, {	-- Collector Dyna
+				["crs"] = { 223446 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67152, {	-- Friendhaver Grem
+				["crs"] = { 223444 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67153, {	-- Kyrie
+				["crs"] = { 223442 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67154, {	-- Ziriak
+				["crs"] = { 223443 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
 		})),
 		petbattle(ach(40158, {	-- Elemental Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
+			crit(67155, {	-- Collector Dyna
+				["crs"] = { 223446 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67156, {	-- Friendhaver Grem
+				["crs"] = { 223444 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67157, {	-- Kyrie
+				["crs"] = { 223442 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67158, {	-- Ziriak
+				["crs"] = { 223443 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
 		})),
 		petbattle(ach(40161, {	-- Flying Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
+			crit(67159, {	-- Collector Dyna
+				["crs"] = { 223446 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67160, {	-- Friendhaver Grem
+				["crs"] = { 223444 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67161, {	-- Kyrie
+				["crs"] = { 223442 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67162, {	-- Ziriak
+				["crs"] = { 223443 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
 		})),
 		petbattle(ach(40162, {	-- Humanoid Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
+			crit(67163, {	-- Collector Dyna
+				["crs"] = { 223446 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67160, {	-- Friendhaver Grem
+				["crs"] = { 223444 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67164, {	-- Kyrie
+				["crs"] = { 223442 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67165, {	-- Ziriak
+				["crs"] = { 223443 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
 		})),
 		ach(40352, {	-- Khaz Algar Completionist: Bronze
 			-- Meta Achievement
@@ -120,70 +245,70 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		}),
 		ach(40430, {	-- Khaz Algar Flight Master
 			crit(68170, {	-- Dornogal, Isle of Dorn
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2928),	-- Dornogal, Isle of Dorn
 			}),
 			crit(68172, {	-- Durgaz Cabin, Isle of Dorn
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2931),	-- Durgaz Cabin, Isle of Dorn
 			}),
 			crit(68171, {	-- Freywold Village, Isle of Dorn
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2929),	-- Freywold Village, Isle of Dorn
 			}),
 			crit(68173, {	-- Rambleshire, Isle of Dorn
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2932),	-- Rambleshire, Isle of Dorn
 			}),
 			crit(68184, {	-- Camp Murroch, The Ringing Deeps
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2926),	-- Camp Murroch, The Ringing Deeps
 			}),
 			crit(68190, {	-- Gundargaz, The Ringing Deeps
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2962),	-- Gundargaz, The Ringing Deeps
 			}),
 			crit(68183, {	-- Opportunity Point, Ringing Deeps
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2925),	-- Opportunity Point, The Ringing Deeps
 			}),
 			crit(68191, {	-- Shadowvein Point, The Ringing Deeps
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2963),	-- Shadowvein Point, The Ringing Deeps
 			}),
 			crit(68180, {	-- Dunelle's Kindness, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2922),	-- Dunelle's Kindness, Hallowfall
 			}),
 			crit(68182, {	-- Light's Redoubt, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2944),	-- Hillhelm Family Farm, Hallowfall
 			}),
 			crit(68188, {	-- Hillhelm Family Farm, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2924),	-- Light's Redoubt, Hallowfall
 			}),
 			crit(68181, {	-- Lightspark, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2923),	-- Lightspark, Hallowfall
 			}),
 			crit(68187, {	-- Lorel's Crossing, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2943),	-- Lorel's Crossing, Hallowfall
 			}),
 			crit(68185, {	-- Mereldar, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2941),	-- Mereldar, Hallowfall
 			}),
 			crit(68189, {	-- The Aegis Wall, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2942),	-- Priory of the Sacred Flame, Hallowfall
 			}),
 			crit(68186, {	-- Priory of the Sacred Flame, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2943),	-- The Aegis Wall, Hallowfall
 			}),
 			crit(68178, {	-- Faerin's Advance, Azj-Kahet
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2920),	-- Faerin's Advance, Azj-Kahet
 			}),
 			crit(68179, {	-- Mmarl, Azj-Kahet
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2921),	-- Mmarl, Azj-Kahet
 			}),
 			crit(68176, {	-- The Burrows, Azj-Kahet
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2893),	-- The Burrows, Azj-Kahet
 			}),
 			crit(68174, {	-- Weaver's Lair, Azj-Kahet
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2882),	-- Waver's Lair, Azj-Kahet
 			}),
 			crit(68175, {	-- Wildcamp Or'lay, Azj-Kahet
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2889),	-- Wildcamp Or'lay, Azj-Kahet
 			}),
 			crit(68177, {	-- Wildcamp Ul'ar, Azj-Kahet
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2919),	-- Wildcamp Ul'ar, Azj-Kahet
 			}),
 		}),
 		ach(40702, {	-- Khaz Algar Glyph Hunter
@@ -201,70 +326,55 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		ach(40762),		-- Khaz Algar Lore Hunter (automated)
 		petbattle(ach(40194, {	-- Khaz Algar Safari
 			crit(67292, {	-- Chitin Burrower
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222071 },
 			}),
 			crit(67293, {	-- Arachnoid Hatchling
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222066 },
 			}),
 			crit(67294, {	-- Fallowspark Glowfly
-				["crs"] = { 219267 },
+				["crs"] = { 222613 },
 			}),
 			crit(67295, {	-- Azure Flickerfly
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222614 },
 			}),
 			crit(67296, {	-- Vibrant Glowfly
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222615 },
 			}),
 			crit(67297, {	-- Aubergine Scootlefish
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222325 },
 			}),
 			crit(67298, {	-- Verdant Scootlefish
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222344 },
 			}),
 			crit(67299, {	-- Voidling Ooze
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222354 },
 			}),
 			crit(67300, {	-- Shadowy Oozeling
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222351 },
 			}),
 			crit(67301, {	-- Common Ploughworm
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222584 },
 			}),
 			crit(67302, {	-- Ebon Ploughworm
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222582 },
 			}),
 			crit(67303, {	-- Greenlands Chicken
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222194 },
 			}),
 			crit(67304, {	-- Arathi Chicken
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222195 },
 			}),
 			crit(67305, {	-- Meek Bloodlasher
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222875 },
 			}),
 			crit(67306, {	-- Ghostcap Menace
 				["crs"] = { 222877 },
 			}),
 			crit(67307, {	-- Winged Arachnoid
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222608 },
 			}),
 			crit(67308, {	-- Vile Bloodtick
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222421 },
 			}),
 			crit(67309, {	-- Magmashell Crawler
 				["crs"] = { 222713 },
@@ -273,12 +383,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["crs"] = { 223090 },
 			}),
 			crit(67310, {	-- Mossy Snail
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222499 },
 			}),
-			crit(67311, {	-- Subterranean Dartwog
-				-- TODO
-				--["crs"] = { x },
+			crit(67311, {	-- Subterranean Dartswog
+				["crs"] = { 222736 },
 			}),
 			crit(67312, {	-- Troglofrog
 				["crs"] = { 222739 },
@@ -293,8 +401,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["crs"] = { 222778 },
 			}),
 			crit(67316, {	-- Umbral Amalgam
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 223136 },
 			}),
 			crit(67318, {	-- Cobalt Ramolith
 				["crs"] = { 223094 },
@@ -306,8 +413,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["crs"] = { 223092 },
 			}),
 			crit(68269, {	-- Snuffling
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 223715 },
 			}),
 			crit(68270, {	-- Cinderhoney Emberstinger
 				["crs"] = { 223698 },
@@ -324,18 +430,48 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}},
 		}),
 		petbattle(ach(40163, {	-- Magic Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
+			crit(67166, {	-- Collector Dyna
+				["crs"] = { 223446 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67167, {	-- Friendhaver Grem
+				["crs"] = { 223444 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67168, {	-- Kyrie
+				["crs"] = { 223442 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67169, {	-- Ziriak
+				["crs"] = { 223443 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
 		})),
 		petbattle(ach(40164, {	-- Mechanical Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
+			crit(67170, {	-- Collector Dyna
+				["crs"] = { 223446 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67171, {	-- Friendhaver Grem
+				["crs"] = { 223444 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67172, {	-- Kyrie
+				["crs"] = { 223442 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67173, {	-- Ziriak
+				["crs"] = { 223443 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
 		})),
 		ach(20597, {	-- The War Within
 			crit(66989, {	-- Against the Current
@@ -367,11 +503,26 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}},
 		}),
 		petbattle(ach(40165, {	-- Undead Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
+			crit(67174, {	-- Collector Dyna
+				["crs"] = { 223446 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67175, {	-- Friendhaver Grem
+				["crs"] = { 223444 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67176, {	-- Kyrie
+				["crs"] = { 223442 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67177, {	-- Ziriak
+				["crs"] = { 223443 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
 		})),
 	}),
 })));

@@ -7,17 +7,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			ach(40851),		-- Adventurer of Hallowfall (automated)
 			ach(40622),		-- Biblo Archivist (automated)
 			ach(40150),		-- Children's Entertainer
-			ach(40826, {
-				-- TODO: These criteria look unfinished
-				crit(69608),	-- Dunelle's Kindness
-				crit(69608),	-- Aegis Wall
-				crit(69608),	-- The Fangs
-				crit(69608),	-- Lorel's Crossing
-				crit(69608),	-- Mereldar
-				crit(69608),	-- Light's Redoubt
-				crit(69608),	-- Light's Blooming
-				crit(69608),	-- Priory of the Sacred Flame
-				crit(69608),	-- The Undersea
+			ach(40826, {	-- Explore Hallowfall
+				crit(69776),	-- Dunelle's Kindness
+				crit(69777),	-- Aegis Wall
+				crit(69778),	-- The Fangs
+				crit(69779),	-- Lorel's Crossing
+				crit(69780),	-- Mereldar
+				crit(69781),	-- Light's Redoubt
+				crit(69782),	-- Light's Blooming
+				crit(69783),	-- Priory of the Sacred Flame
+				crit(69784),	-- The Undersea
 			}),
 			ach(20594),		-- Flamegard's Hope
 			ach(20598, {	-- Hallowfall
@@ -92,7 +91,51 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["coord"] = { X, Y, HALLOWFALL },
 			}),
 			ach(40844),		-- Sojourner of Hallowfall (automated)
-			ach(40625),		-- The Missing Lynx (automated)
+			ach(40625, {	-- The Missing Lynx
+				-- TODO: Braghe please add coords for all the kitties :)
+				crit(68975, {	-- Magpie
+					--["coord"] = { 1, 1, HALLOWFALL },
+				}),
+				crit(68998, {	-- Evan
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(68999, {	-- Emery
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69000, {	-- Jinx
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69001, {	-- Moog
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69002, {	-- Iggy
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69003, {	-- Nightclaw
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69004, {	-- Purrlock
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69005, {	-- Shadowpouncer
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69006, {	-- Miral Murder-Mittens
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69007, {	-- Fuzzy
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69008, {	-- Furball
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69009, {	-- Dander
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69010, {	-- Gobbo
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+			}),
 			pvp(ach(40085)),	-- Tour of Duty: Hallowfall
 			ach(40848),		-- Treasures of Hallowfall (automated)
 		}),

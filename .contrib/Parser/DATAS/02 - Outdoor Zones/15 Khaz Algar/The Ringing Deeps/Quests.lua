@@ -607,7 +607,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 			}),
-			header(HEADERS.AchCriteria, 40799.09, {	-- Kobold Culture and Integration
+			-- TODO: This is currently broken in the ingame API, which returns different indexes than Wago has in the db2 files. Commented out as temp fix. Uncomment and probably adjust further numbering when Blizzard corrects this. Maybe manual header as temp fix?
+			--header(HEADERS.AchCriteria, 40799, {	-- Kobold Culture and Integration
 				q(79504, {	-- Dripsy Forgot Her Candle
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 216438 },	-- Granny Scribbles
@@ -652,8 +653,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						i(219224),	-- Prooftelling Flower (QI!)
 					},
 				}),
-			}),
-			header(HEADERS.AchCriteria, 40799.10, {	-- Rampage at Nibelgaz Mine
+			--}),
+			header(HEADERS.AchCriteria, 40799.09, {	-- Rampage at Nibelgaz Mine
 				q(79148, {	-- The Nibelgaz Refinery
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 215208 },	-- Orsenth
@@ -699,9 +700,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--["maps"] = { THE_RINGING_DEEPS },
 				}),
 			}),
-			header(HEADERS.AchCriteria, 40799.11, {	-- Abysmal Extraction
+			header(HEADERS.AchCriteria, 40799.10, {	-- Abysmal Extraction
 			}),
-			header(HEADERS.AchCriteria, 40799.12, {	-- Revenge in the Rumbling Wastes
+			header(HEADERS.AchCriteria, 40799.11, {	-- Revenge in the Rumbling Wastes
 				q(81655, {	-- Juicy Krolusk Meat
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 220417 },	-- Kagfritha
@@ -727,7 +728,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 			}),
-			header(HEADERS.AchCriteria, 40799.13, {	-- Tired of Rest
+			header(HEADERS.AchCriteria, 40799.12, {	-- Tired of Rest
 				q(80576, {	-- Listener Lost
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 220600 },	-- Haimaz
@@ -785,7 +786,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 57.4, 43.1, THE_RINGING_DEEPS },
 				}),
 			}),
-			header(HEADERS.AchCriteria, 40799.14, {	-- Frolicking in the Fetid Grotto
+			header(HEADERS.AchCriteria, 40799.13, {	-- Frolicking in the Fetid Grotto
 				q(81693, {	-- Desparately Seeking Skorthuz
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 220415 },	-- Hrandaz
@@ -813,16 +814,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
 				["g"] = {
 					--c(2902),	-- The Assembly of the Deeps Commendation, this is one-time Warband bonus
-				},
-			}),
-			q(83333, {	-- Gearing Up for Trouble
-				["isDaily"] = true,
-				["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// yet I'm unsure
-				["provider"] = { "n", 216164 },	-- Gnawbles
-				["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
-				["g"] = {
-					i(226273),	-- Awakened Mechanical Cache
-					i(220693),	-- Coffer Key Shard
 				},
 			}),
 			q(79343, {	-- Everyday I'm Snufflin'
@@ -1004,8 +995,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(79635),	-- [DNT] The Assembly of the Deeps Renown Unlock (spellID 448654)
 	-- Side quests
 	q(82652),	-- 'Stay a while and listen' - Brennok, in the end of whole speach during questID 80682 (One Last Story)
-	-- Special Assignment unlocks tracker
-	q(82156),	-- 'Special Assignment: When the Deeps Stir'	/ callings or emissary actually
 	-- ?
 	--q(82957),	-- 'Thanks for the Wax' accepted every time when you fly in zone
 	q(83475),	-- [DNT] Repair Console (spellID 455981) Water Console (o: 226624) @ 45.3, 46.4, THE_RINGING_DEEPS)

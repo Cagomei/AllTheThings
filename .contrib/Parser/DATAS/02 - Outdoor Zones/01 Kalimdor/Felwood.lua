@@ -250,6 +250,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.3, 8.1, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Talonbranch Prowler slain
+							["provider"] = { "n", 48311 },	-- Talonbranch Prowler
+						}),
+					},
 				}),
 				q(6162, {	-- A Husband's Last Battle
 					["qg"] = 9620,	-- Dreka'Sur
@@ -384,6 +389,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.8, 18.4, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Panicking Worker slain
+							["provider"] = { "n", 48331 },	-- Panicking Worker
+						}),
+					},
 				}),
 				q(28386, {	-- Borrowed Bombs
 					["qg"] = 48493,	-- Alton Redding
@@ -412,6 +422,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.9, 72.0, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Xavathras slain
+							["provider"] = { "n", 9454 },	-- Xavathras
+						}),
 						i(65277, {	-- Delaris' Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -435,12 +448,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.8, 18.4, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Oil Gusher ignited
+							["provider"] = { "n", 48317 },	-- Oil Gusher
+						}),
+					},
 				}),
 				q(28219, {	-- Buzzers for Baby
 					["qg"] = 48032,	-- Seedling Protector
 					["sourceQuest"] = 28229,	-- Nature and Nurture
 					["coord"] = { 48.6, 25.1, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/10 Ironwood Buzzer slain
+							["provider"] = { "n", 48038 },	-- Ironwood Buzzer
+						}),
+					},
 				}),
 				q(5159, {	-- Cleansed Water Returns to Felwood
 					["providers"] = {
@@ -482,11 +505,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28208,	-- Winna's Kitten
 					["coord"] = { 41.2, 49.9, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/6 Bloodvenom Slimeslave slain
+							["provider"] = { "n", 47675 },	-- Bloodvenom Slimeslave
+						}),
+					},
 				}),
 				q(28341, {	-- Collecting Corruption
 					["qg"] = 48339,	-- Elessa Starbreeze
 					["coord"] = { 43.9, 27.8, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/8 Entropic Essence
+							["provider"] = { "i", 63522 },	-- Entropic Essence
+							["cr"] = 9879,	-- Entropic Horror
+						}),
+					},
 				}),
 				q(5157, {	-- Collection of the Corrupt Water
 					["qg"] = 10922,	-- Greta Mosshoof
@@ -833,6 +867,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.9, 80.1, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/10 Corrupted Pelt
+							["provider"] = { "i", 63088 },	-- Corrupted Pelt
+							["crs"] = {
+								8956,	-- Angerclaw Bear
+								8959,	-- Felpaw Wolf
+							},
+						}),
 						i(65275, {	-- Angerclaw Leggings
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -875,6 +916,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28257,	-- The Fall of Tichondrius
 					["coord"] = { 45.5, 20.1, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/12 Jadefire Shifter slain
+							["provider"] = { "n", 48154 },	-- Jadefire Shifter
+						}),
+					},
 				}),
 				q(28000, {	-- Do the Imp-Possible
 					["qg"] = 47341,	-- Arcanist Delaris
@@ -951,6 +997,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Irontree Chopper slain
+							["provider"] = { "n", 48453 },	-- Irontree Chopper
+						}),
 						i(65341, {	-- Bloodwater Shield
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -978,6 +1027,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48339,	-- Elessa Starbreeze
 					["coord"] = { 43.9, 27.8, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/9 Infernal Debris
+							["provider"] = { "i", 63123 },	-- Infernal Debris
+							["cr"] = 7136,	-- Infernal Sentry
+						}),
+					},
 				}),
 				q(4441, {	-- Felbound Ancients
 					["qg"] = 9116,	-- Eridan Bluewind
@@ -1002,6 +1057,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28044,	-- Touch the Untouchable
 					["coord"] = { 42.0, 71.7, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/8 Jadefire Rogue or Shadowstalker slain
+							["providers"] = {
+								{ "n", 7106},	-- Jadefire Rogue
+								{ "n", 7110},	-- Jadefire Shadowstalker
+							},
+						}),
+					},
 				}),
 				q(28368, {	-- Fire in the Hole!
 					["provider"] = { "o", 207104 },	-- Master Control Pump
@@ -1010,6 +1073,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Grolvitar the Everburning slain
+							["provider"] = { "n", 48352 },	-- Grolvitar the Everburning
+						}),
 						i(65346, {	-- Gauntlets of Raw Strength
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1057,6 +1123,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 49,
 					["groups"] = {
+						objective(2, {	-- 0/5 Jadefire Felbind
+							["provider"] = { "i", 11674 },	-- Jadefire Felbind
+							["crs"] = {
+								7105,	-- Jadefire Satyr
+								7106,	-- Jadefire Rogue
+								7107,	-- Jadefire Trickster
+								7108,	-- Jadefire Betrayer
+								7109,	-- Jadefire Felsworn
+								7110,	-- Jadefire Shadowstalker
+								7111,	-- Jadefire Hellcaller
+							},
+						}),
 						objective(1, {	-- 0/5 Jadefire Felbind
 							["provider"] = { "i", 11674 },	-- Jadefire Felbind
 							["crs"] = {
@@ -1076,6 +1154,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11019,	-- Jessir Moonbow
 					["coord"] = { 44.0, 61.9, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/12 Jaedenar Forces Slain
+							["providers"] = {
+								{ "n", 7125},	-- Jaedenar Hound
+								{ "n", 7112},	-- Jaedenar Cultist
+								{ "n", 7113},	-- Jaedenar Guardian
+								{ "n", 7115},	-- Jaedenar Adept
+							},
+						}),
+					},
 				}),
 				q(5155, {	-- Forces of Jaedenar
 					["qg"] = 10922,	-- Greta Mosshoof
@@ -1148,6 +1236,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.2, 49.9, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Winna Hazzard slain
+							["provider"] = { "n", 47679 },	-- Winna Hazzard
+						}),
 						i(65283, {	-- Flowery Mantle
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1162,6 +1253,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				heroscall(q(28543, {	-- Hero's Call: Felwood!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 48 (TODO: Test max level between 48 and 55)
+					["lvl"] = { 44, 48 },
+					-- #endif
+				})),
 				q(8420, {	-- Hot and Itchy
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["altQuests"] = { 8419 },	-- An Imp's Request
@@ -1175,6 +1276,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48349,	-- Hurak Wildhorn
 					["coord"] = { 44.0, 27.8, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/6 Infernal Sentry slain
+							["provider"] = { "n", 7136 },	-- Infernal Sentry
+						}),
+					},
 				}),
 				q(28384, {	-- Into the Clearing
 					["qg"] = 47931,	-- Denmother Ulrica
@@ -1195,6 +1301,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.3, 8.1, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Crude Tarball
+							["provider"] = { "i", 63519 },	-- Crude Tarball
+							["cr"] = 48315,	-- Oily Sludge
+						}),
+					},
 				}),
 				q(28333, {	-- It's Time to Oil Up
 					["qg"] = 48127,	-- Darla Drilldozer
@@ -1253,6 +1365,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.2, 58.2, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Lord Banehollow slain
+							["provider"] = { "n", 9516 },	-- Lord Banehollow
+						}),
 						i(65282, {	-- Cleansed Shadow Council Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1266,6 +1381,54 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(81790, {	-- Materials of Significance
+					["qg"] =  221636,	-- Gregory <Truthbearer>
+					-- TODO: There might be a "Speak to Aeonas" step between the bloody missive and this quest.
+					["sourceQuest"] = 81766,	-- The Bloody Missive
+					["coord"] = { 44.6, 52, FELWOOD },
+					["maps"] = { MARAUDON, HILLSBRAD_FOOTHILLS, BLACKROCK_DEPTHS },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 44,
+					["groups"] = {
+						objective(1, {	-- 0/3 Fiery Infernal Core
+							["provider"] = { "i", 220166 },	-- Fiery Infernal Core
+							["coord"] = { 42.8, 43.6, FELWOOD },
+							["crs"] = {
+								7135,	-- Infernal Bodyguard
+								7136,	-- Infernal Sentry
+								9878,	-- Entropic Beast
+								9879,	-- Entropic Horror
+							},
+						}),
+						objective(2, {	-- 0/1 Shimmering Grave Dust
+							["providers"] = {
+								{ "i", 220167 },	-- Shimmering Grave Dust
+								{ "o", 441222 },	-- Grave Mound
+							},
+							["description"] = "You can find this after killing Princess in Maraudon, right in front of Zaetar's Spirit next to his feet.",
+						}),
+						objective(3, {	-- 0/1 Triple-Brewed Molten Lager
+							["provider"] = { "i", 220168 },	-- Triple-Brewed Molten Lager
+							["description"] = "Sold by Plugger Spazzring in Blackrock Depths.",
+						}),
+						q(81944, {	-- A Newly Discovered Purpose...
+							["qg"] = 214529,	-- Brave Stonetorch
+							["coord"] = { 67.4, 14.8, HILLSBRAD_FOOTHILLS },
+							["classes"] = { PALADIN },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 44,
+							["groups"] = {
+								objective(4, {	-- 0/1 Symbol of Faith
+									["questID"] = 81790,	-- Materials of Significance
+									["provider"] = { "i", 220169 },	-- Symbol of Faith
+								}),
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(5085, {	-- Mystery Goo
 					["providers"] = {
 						{ "o", 176091 },	-- Deadwood Cauldron
@@ -1281,6 +1444,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28374,	-- Weeding the Lawn
 					["coord"] = { 43.9, 28.1, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Stonemaul Clan Avenged
+							["provider"] = { "i", 63332 },	-- Empty Moonwell Vial
+							["coord"] = { 44.0, 28.4, FELWOOD },
+						}),
+					},
 				}),
 				q(28264, {	-- Navarax's Gambit
 					["qg"] = 47923,	-- Feronas Sindweller
@@ -1288,6 +1457,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.5, 20.1, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Arch Druid Navarax slain
+							["provider"] = { "n", 47842 },	-- Arch Druid Navarax
+						}),
 						i(65285, {	-- Selura's Cloak
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1312,6 +1484,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.9, 72.0, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/20 Imps terrified
+							["provider"] = { "i", 63395 },	-- Delaris's Prism
+							["cr"] = 47369,	-- Jadefire Imp
+						}),
 						i(65278, {	-- Gold Pot Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1423,6 +1599,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28306,	-- Whisperwind Grove
 					["coord"] = { 43.3, 30.4, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/8 Felrot Courser slain
+							["provider"] = { "n", 48455 },	-- Felrot Courser
+						}),
+					},
 				}),
 				q(27989, {	-- Ruumbo Demands Honey
 					["provider"] = { "o", 206585 },	-- Totem of Ruumbo
@@ -1435,6 +1616,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28100,	-- A Talking Totem
 					["coord"] = { 51.4, 83.7, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/15 Deadwood Furbolg slain
+							["providers"] = {
+								{ "n", 47329},	-- Deadwood Kill Credit
+								{ "n", 7153},	-- Deadwood Warrior
+								{ "n", 7154},	-- Deadwood Gardener
+								{ "n", 7155},	-- Deadwood Pathfinder
+							},
+						}),
+					},
 				}),
 				q(5886, {	-- Salve via Disenchanting (1/2)
 					["qg"] = 9528,	-- Arathandris Silversky
@@ -1748,6 +1939,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.8, 71.9, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/8 Cursed Ooze
+							["provider"] = { "i", 62918 },	-- Cursed Ooze
+							["cr"] = 7086,	-- Cursed Ooze
+						}),
 						i(65276, {	-- Gloves of Constellas
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1788,6 +1983,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28131,	-- Twin Temptresses
 					["coord"] = { 36.2, 58.2, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Shadow Lord Fel'dan slain
+							["provider"] = { "n", 9517 },	-- Shadow Lord Fel'dan
+						}),
+					},
 				}),
 				q(4084, {	-- Silver Heart
 					["qg"] = 9116,	-- Eridan Bluewind <Emerald Circle>
@@ -1837,6 +2037,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/7 Panicking Worker slapped
+							["provider"] = { "n", 48331 },	-- Panicking Worker
+						}),
 						i(65345, {	-- Oilfoot Slippers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1855,6 +2058,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48459,	-- Tender Puregrove
 					["coord"] = { 43.3, 30.4, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/6 Tainted Squirrel scrubbed
+							["provider"] = { "i", 63688 },	-- Squirrel Scrubbing Solution
+							["cr"] = 48457,	-- Tainted Squirrel
+						}),
+					},
 				}),
 				q(28357, {	-- Take it to the Tree
 					["qg"] = 48127,	-- Darla Drilldozer
@@ -1865,12 +2074,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.3, 8.1, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Talonbranch Defender slain
+							["provider"] = { "n", 48452 },	-- Talonbranch Defender
+						}),
+					},
 				}),
 				q(28359, {	-- The Core of Kroshius
 					["qg"] = 48349,	-- Hurak Wildhorn
 					["coord"] = { 44.0, 27.8, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Kroshius' Infernal Core
+							["provider"] = { "i", 63687 },	-- Kroshius' Infernal Core
+							["cr"] = 48344,	-- Kroshius
+						}),
 						i(65288, {	-- Shadow Curse Hood
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1893,6 +2111,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 51.1, 80.4, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/12 Jadefire Glen satyr slain
+							["providers"] = {
+								{ "n", 7105},	-- Jadefire Satyr
+								{ "n", 7109},	-- Jadefire Felsworn
+							},
+						}),
+					},
 				}),
 				q(4421, {	-- The Corruption of the Jadefire
 					["qg"] = 9116,	-- Eridan Bluewind
@@ -1901,6 +2127,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 49,
 					["groups"] = {
+						objective(4, {	-- 0/1 Xavathras slain
+							["provider"] = { "n", 9454 },	-- Xavathras
+						}),
 						objective(1, {	-- 0/11 Jadefire Felsworn slain
 							["provider"] = { "n", 7109 },	-- Jadefire Felsworn
 						}),
@@ -1920,6 +2149,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28119,	-- Purity from Corruption
 					["coord"] = { 36.3, 58.2, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Prince Xavalis slain
+							["provider"] = { "n", 9877 },	-- Prince Xavalis
+						}),
+					},
 				}),
 				q(28381, {	-- The Denmother
 					["qg"] = 48491,	-- James Hallow
@@ -1966,6 +2200,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.3, 58.2, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/12 Shadow Hold Defenders Slain
+							["providers"] = {
+								{ "n", 7120},	-- Jaedenar Warlock
+								{ "n", 7114},	-- Jaedenar Enforcer
+								{ "n", 7118},	-- Jaedenar Darkweaver
+								{ "n", 7126},	-- Jaedenar Hunter
+								{ "n", 9862},	-- Jaedenar Legionnaire
+							},
+						}),
 						i(65280, {	-- Shadow Hold Mace
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1989,6 +2232,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.7, 25.2, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(82135, {	-- The Price of Hope
+					["providers"] = {
+						{ "n", 221587 },	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+						{ "i", 221519 },	-- Mannoroc Orb
+					},
+					["sourceQuest"] = 81885,	-- The Ritual
+					["coord"] = { 45, 52, FELWOOD },
+					["maps"] = { STORMWIND_CITY },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 44,
+					["groups"] = {
+						objective(1, {	-- 0/1 Withered Protector slain
+							["provider"] = { "n", 7149 },	-- Withered Protector
+						}),
+						i(221518),	-- Whisper
+					},
+				})),
+				-- #endif
 				q(5385, {	-- The Remains of Trey Lightforge
 					["providers"] = {
 						{ "n", 11020 },	-- Remains of Trey Lightforge
@@ -2007,12 +2270,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(81885, {	-- The Ritual
+					["qg"] =  221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+					["sourceQuest"] = 81790,	-- Materials of Significance
+					["coord"] = { 45, 52, FELWOOD },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 44,
+					["groups"] = {
+						objective(1, {	-- Complete the Ritual
+							["provider"] = { "n", 221636 },	-- Gregory
+							["coord"] = { 44.6, 52.0, FELWOOD },
+						}),
+						recipe(410013),	-- Engrave Bracers - Hammer of the Righteous
+					},
+				})),
+				-- #endif
 				q(28337, {	-- The Shredders of Irontree
 					["qg"] = 48493,	-- Alton Redding
 					["sourceQuest"] = 28384,	-- Into the Clearing
 					["coord"] = { 56.8, 18.4, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/9 Irontree Shredder slain
+							["provider"] = { "n", 48259 },	-- Irontree Shredder
+						}),
+					},
 				}),
 				q(28256, {	-- The Skull of Gul'dan
 					["qg"] = 47923,	-- Feronas Sindweller
@@ -2024,6 +2309,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47692,	-- Altsoba Ragetotem
 					["coord"] = { 41.2, 49.9, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/8 Tainted Ooze slain
+							["provider"] = { "n", 7092 },	-- Tainted Ooze
+						}),
+					},
 				}),
 				q(28392, {	-- The Timbermaw Tribe
 					["qg"] = 47931,	-- Denmother Ulrica
@@ -2033,6 +2323,85 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(82043, {	-- The Wild Gods (1/2)
+					["qg"] = 222408,	-- Shadowtooth Emissary
+					["coord"] = { 51.4, 82, FELWOOD },
+					["timeline"] = { "added 1.15.2" },
+					["maps"] = { THE_HINTERLANDS, RAZORFEN_DOWNS },
+					["cost"] = {{ "i", 221261, 1 }},	-- Wildwhisper Draught
+					["lvl"] = 40,
+					["groups"] = {
+						i(221418),	-- Agamaggan's Roar
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, q(82044, {	-- The Wild Gods (2/2)
+					["qg"] = 222522,	-- Spirit of Agamaggan
+					["sourceQuest"] = 82043,	-- The Wild Gods (1/2)
+					["timeline"] = { "added 1.15.2" },
+					["maps"] = { RAZORFEN_DOWNS, ZULFARRAK, MARAUDON, BLACKROCK_DEPTHS },
+					["lvl"] = 40,
+					["groups"] = {
+						objective(1, {	-- 0/3 Wild Offering
+							["provider"] = { "i", 221262 },	-- Wild Offering
+							["description"] = "Zul'Farrak - Clear any 3 bosses to spawn Delirious Ancient\nMaraudon - Kill Princess Theradras to spawn Delirious Ancient\nBlackrock Depths - Kill all three boss encounters - High Interrogator Gerstahn, Houndmaster Grebmar & High Justice Grimstone - to spawn Delirious Ancient\n\nUse Agamaggan's Roar Agamaggan's Roar on any of the ghostly spawns to summon dungeon-respective Delirious Ancient.",
+						}),
+						i(222962, {	-- Hyjal's Wisdom
+							recipe(429247, {	-- Engrave Helm - Improved Sanctuary
+								["classes"] = { PALADIN },
+							}),
+							i(221488, {	-- Resolute Epiphany
+								["classes"] = { PRIEST },
+								["groups"] = {
+									recipe(431650),	-- Engrave Helm - Divine Aegis
+								},
+							}),
+							i(221514, {	-- Rune of Firepower
+								["classes"] = { HUNTER },
+								["groups"] = {
+									recipe(416085),	-- Engrave Helm - Lock and Load
+								},
+							}),
+							i(221513, {	-- Rune of Potency
+								["classes"] = { ROGUE },
+								["groups"] = {
+									recipe(432293),	-- Engrave Helm - Combat Potency
+								},
+							}),
+							i(221516, {	-- Rune of Primal Energy
+								["classes"] = { DRUID },
+								["groups"] = {
+									recipe(431461),	-- Engrave Bracers - Improved Frenzied Regeneration
+								},
+							}),
+							i(221490, {	-- Rune of Riptide
+								["classes"] = { SHAMAN },
+								["groups"] = {
+									recipe(410105),	-- Engrave Bracers - Riptide
+								},
+							}),
+							i(221510, {	-- Rune of the Knight
+								["classes"] = { WARRIOR },
+								["groups"] = {
+									recipe(427082),	-- Engrave Bracers - Sword and Board
+								},
+							}),
+							i(221489, {	-- Rune of Vengeance
+								["classes"] = { WARLOCK },
+								["groups"] = {
+									recipe(426470),	-- Engrave Helm - Vengeance
+								},
+							}),
+							i(221487, {	-- Spell Notes: Advanced Warding
+								["classes"] = { MAGE },
+								["groups"] = {
+									recipe(401754),	-- Engrave Helm - Advanced Warding
+								},
+							}),
+						}),
+					},
+				})),
+				-- #endif
 				applyclassicphase(PHASE_FOUR, q(8421, {	-- The Wrong Stuff
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["sourceQuests"] = {
@@ -2065,12 +2434,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28220,	-- Seeking Soil
 					},
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/10 Irontree Stomper slain
+							["provider"] = { "n", 7139 },	-- Irontree Stomper
+						}),
+					},
 				}),
 				q(28044, {	-- Touch the Untouchable
 					["qg"] = 47366,	-- Impsy
 					["sourceQuest"] = 28049,	-- See the Invisible
 					["coord"] = { 41.8, 71.9, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Claw of Tichondrius
+							["provider"] = { "i", 62919 },	-- Claw of Tichondrius
+							["cr"] = 47398,	-- Vorlus
+						}),
+					},
 				}),
 				q(28335, {	-- Turn It Off! Turn It Off!
 					["qg"] = 48333,	-- Foreman Pikwik
@@ -2084,6 +2464,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28129,	-- The Demon Prince
 					["coord"] = { 36.3, 58.2, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Moora slain
+							["provider"] = { "n", 9861 },	-- Moora
+						}),
+						objective(2, {	-- 0/1 Salia slain
+							["provider"] = { "n", 9860 },	-- Salia
+						}),
+					},
 				}),
 				q(7624, {	-- Ulathek the Traitor
 					["qg"] = 9516,	-- Lord Banehollow
@@ -2120,7 +2508,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28374,	-- Weeding the Lawn
 					["coord"] = { 43.4, 28.1, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Feronas Sindweller slain
+							["provider"] = { "n", 47923 },	-- Feronas Sindweller
+						}),
+					},
 				}),
+				warchiefscommand(q(28542, {	-- Warchief's Command: Felwood!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 48. (TODO: Test max level)
+					["lvl"] = { 44, 48 },
+					-- #endif
+				})),
 				q(28374, {	-- Weeding the Lawn
 					["qg"] = 48459,	-- Tender Puregrove
 					["sourceQuests"] = {
@@ -2130,6 +2533,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.3, 30.3, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/7 Whisperwind Lashers checked
+							["provider"] = { "n", 47747 },	-- Whisperwind Lasher
+						}),
 						i(65289, {	-- Floral Pantaloons
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2230,6 +2636,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 41.2, 49.9, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Kitty's Eartag
+							["provider"] = { "i", 63279 },	-- Kitty's Eartag
+							["cr"] = 47687,	-- Winna's Kitten
+						}),
+					},
 				}),
 				q(28370, {	-- Wisp-napping
 					["qg"] = 48127,	-- Darla Drilldozer
@@ -2240,12 +2652,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.3, 8.1, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Talonbranch Wisp captured
+							["provider"] = { "i", 63698 },	-- Darla's Wisp Magnet
+							["cr"] = 48454, 	-- Talonbranch Wisp
+						}),
+					},
 				}),
 				q(28383, {	-- Wisps of the Woods
 					["qg"] = 48492,	-- Lyros Swiftwind
 					["coord"] = { 61.8, 26.6, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Talonbranch Wisp captured
+							["provider"] = { "i", 64300 },	-- Swiftwind Switch
+							["cr"] = 48454, 	-- Talonbranch Wisp
+						}),
+					},
 				}),
 				q(7625, {	-- Xorothian Stardust
 					["qg"] = 9516,	-- Lord Banehollow
@@ -2480,6 +2904,68 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, n(222408, {	-- Shadowtooth Emissary
+					["sourceQuest"] = 82044,	-- The Wild Gods (2/2)
+					["coord"] = { 51.4, 82, FELWOOD },
+					["timeline"] = { "added 1.15.2" },
+					["lvl"] = 40,
+					["groups"] = {
+						i(221491, {	-- Shadowtooth Bag
+							["description"] = "Random non-Ace card from the new DMF decks.",
+							["cost"] = {{ "i", 221262, 10 }},	-- 10x Wild Offering
+							["sym"] = {{ "select", "itemID", 
+								221291,	-- Two of Dunes
+								221292,	-- Three of Dunes
+								221293,	-- Four of Dunes
+								221294,	-- Five of Dunes
+								221295,	-- Six of Dunes
+								221296,	-- Seven of Dunes
+								221297,	-- Eight of Dunes
+								221300,	-- Two of Nightmares
+								221301,	-- Three of Nightmares
+								221302,	-- Four of Nightmares
+								221303,	-- Five of Nightmares
+								221304,	-- Six of Nightmares
+								221305,	-- Seven of Nightmares
+								221306,	-- Eight of Nightmares
+								221282,	-- Two of Plagues
+								221283,	-- Three of Plagues
+								221284,	-- Four of Plagues
+								221285,	-- Five of Plagues
+								221286,	-- Six of Plagues
+								221287,	-- Seven of Plagues
+								221288,	-- Eight of Plagues
+								221273,	-- Two of Wilds
+								221274,	-- Three of Wilds
+								221275,	-- Four of Wilds
+								221276,	-- Five of Wilds
+								221277,	-- Six of Wilds
+								221278,	-- Seven of Wilds
+								221279,	-- Eight of Wilds
+							}},
+						}),
+						i(223197, {	-- Defender of the Wilds
+							["cost"] = {{ "i", 221262, 15 }},	-- 12x Wild Offering
+						}),
+						i(223193, {	-- Crown of the Dreamweaver
+							["cost"] = {{ "i", 221262, 15 }},	-- 15x Wild Offering
+						}),
+						i(223192, {	-- Cord of the Untamed
+							["cost"] = {{ "i", 221262, 15 }},	-- 15x Wild Offering
+						}),
+						i(223196, {	-- Godslayer's Greaves
+							["cost"] = {{ "i", 221262, 15 }},	-- 15x Wild Offering
+						}),
+						i(223194, {	-- Band of the Wilds
+							["cost"] = {{ "i", 221262, 12 }},	-- 12x Wild Offering
+						}),
+						i(223195, {	-- Breadth of the Beast
+							["cost"] = {{ "i", 221262, 12 }},	-- 12x Wild Offering
+						}),
+					},
+				})),
+				-- #endif
 				n(14522, {	-- Ur'dan
 					["sourceQuest"] = 7625,	-- Xorothian Stardust
 					["coord"] = { 36.2, 44.6, FELWOOD },

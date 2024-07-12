@@ -321,7 +321,6 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 	expansion(EXPANSION.CATA, {
 		-- 4.x.x
 		n(P4xx, {
-			ach(5846),	-- A Bunch of Lunch
 			ach(5133),	-- Active Duty
 			ach(5365),	-- Bloom and Doom
 			ach(4783),	-- Cataclysm Dungeon Explorer
@@ -329,7 +328,6 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(4876),	-- Eastern Kingdoms Dungeon Explorer
 			ach(4867),	-- Explore Tol Barad NYI
 			ach(4953),	-- Guild Gladiator
-			ach(5852),	-- Gone Fishin'
 			ach(4877),	-- Kalimdor Dungeon Explorer
 			ach(4983),	-- Loremaster of Cataclysm
 			ach(4880),	-- Master of Battle for Gilneas
@@ -649,6 +647,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(40099),	-- That Extra Push Over the Cliff
 			ach(40101),	-- Hitting one's Stride
 			ach(40102),	-- Dawn of a new Delve
+			ach(40265),	-- [PH] The Silken Court Achievement
 			ach(40306),	-- Allied Races: Earthen
 			ach(40432),	-- Nemesis (Solo)
 			ach(40505),	-- Fate of the Kirin Tor

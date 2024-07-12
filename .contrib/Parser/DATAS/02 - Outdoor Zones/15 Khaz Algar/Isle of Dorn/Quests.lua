@@ -289,6 +289,124 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 			}),
+			header(HEADERS.Achievement, 20597, {	-- The War Within
+				------ Chapter 2 ------
+				q(79107, {	-- After the Storm
+					["sourceQuests"] = { 79344 },	-- Urban Odyssey
+					["provider"] = { "n", 223944 },	-- Alleria Windrunner
+					["coord"] = { 31.5, 59.7, DORNOGAL },
+				}),
+				q(81914, {	-- Dhar Oztan
+					["sourceQuests"] = { 79107 },	-- After the Storm
+					["provider"] = { "n", 215039 },	-- Rooktender Lufsela
+					["coord"] = { 37.4, 82.2, DORNOGAL },
+				}),
+				q(79124, {	-- Conduit of the Southern Storm
+					["sourceQuests"] = { 81914 },	-- Dhar Oztan
+					["provider"] = { "n", 214995 },	-- Olbarig
+					["coord"] = { 28.5, 61.0, ISLE_OF_DORN },
+					["g"] = {
+						i(218455),	-- Conduit of the Southern Storm (QI!)
+					},
+				}),
+				q(79475, {	-- Charging Up That Hill
+					["sourceQuests"] = { 79124 },	-- Conduit of the Southern Storm
+					["provider"] = { "n", 214995 },	-- Olbarig
+					["coord"] = { 27.6, 60.5, ISLE_OF_DORN },
+				}),
+				q(79476, {	-- Heeding the Call
+					["sourceQuests"] = { 79124 },	-- Conduit of the Southern Storm
+					["provider"] = { "n", 214995 },	-- Olbarig
+					["coord"] = { 27.6, 60.5, ISLE_OF_DORN },
+				}),
+				q(79129, {	-- Rook Rally
+					["sourceQuests"] = {
+						79475,	-- Charging Up That Hill
+						79476,	-- Heeding the Call
+					},
+					["provider"] = { "n", 215039 },	-- Rooktender Lufsela
+					["coord"] = { 25.6, 57.2, ISLE_OF_DORN },
+					["g"] = {
+						i(223453),	-- Lightning-Scarred Coif
+						i(223427),	-- Lightning-Scarred Cowl
+						i(223465),	-- Lightning-Scarred Legguards
+						i(223447),	-- Lightning-Scarred Vest
+					},
+				}),
+				q(79146, {	-- Ground Pounders
+					["sourceQuests"] = { 79129 },	-- Rook Rally
+					["provider"] = { "n", 214919 },	-- Thrall
+					["coord"] = { 27.8, 60.8, ISLE_OF_DORN },
+				}),
+				q(79140, {	-- Goldbricking
+					["sourceQuests"] = { 79146 },	-- Ground Pounders
+					["provider"] = { "n", 215187 },	-- Overlord Geya'rah
+					["coord"] = { 33.2, 63.3, ISLE_OF_DORN },
+				}),
+				q(79145, {	-- Metal and Stone
+					["sourceQuests"] = { 79146 },	-- Ground Pounders
+					["provider"] = { "n", 223205 },	-- High Exarch Turalyon
+					["coord"] = { 33.3, 63.3, ISLE_OF_DORN },
+					["g"] = {
+						i(223875),	-- Algari Censer
+						i(223871),	-- Algari Heavy Axe
+						i(223872),	-- Algari Mace
+						i(223873),	-- Algari Shield
+					},
+				}),
+				q(81915, {	-- Home to Roost
+					["sourceQuests"] = {
+						79140,	-- Goldbricking
+						79145,	-- Metal and Stone
+					},
+					["provider"] = { "n", 215277 },	-- Adelgonn
+					["coord"] = { 33.3, 63.3, ISLE_OF_DORN },
+				}),
+				q(79477, {	-- Strays
+					["sourceQuests"] = { 81915 },	-- Home to Roost
+					["provider"] = { "n", 215039 },	-- Rooktender Lufsela
+					["coord"] = { 28.9, 61.7, ISLE_OF_DORN },
+				}),
+				q(79147, {	-- Flight Training 101
+					["sourceQuests"] = { 79477 },	-- Strays
+					["provider"] = { "n", 215211 },	-- Kurdan Wildhammer
+					["coord"] = { 29.0, 61.5, ISLE_OF_DORN },
+				}),
+				q(81912, {	-- Flight Training 102
+					["sourceQuests"] = { 79147 },	-- Flight Training 101
+					["provider"] = { "n", 215211 },	-- Kurdan Wildhammer
+					["coord"] = { 35.0, 72.2, ISLE_OF_DORN },
+				}),
+				q(81913, {	-- Flight Training 103
+					["sourceQuests"] = { 81912 },	-- Flight Training 102
+					["provider"] = { "n", 215211 },	-- Kurdan Wildhammer
+					["coord"] = { 61.7, 65.5, ISLE_OF_DORN },
+					["g"] = {
+						i(224161),	-- Stormrider Flight Badge
+					},
+				}),
+				q(79480, {	-- Paying Respects
+					["sourceQuests"] = { 81913 },	-- Flight Training 103
+					["provider"] = { "n", 214995 },	-- Olbarig
+					["coord"] = { 75.9, 39.8, ISLE_OF_DORN },
+				}),
+				q(79156, {	-- The Edicts
+					["sourceQuests"] = { 79480 },	-- Paying Respects
+					["provider"] = { "n", 214995 },	-- Olbarig
+					["coord"] = { 76.5, 35.6, ISLE_OF_DORN },
+				}),
+				q(79157, {	-- Titanic Failsafe
+					["sourceQuests"] = { 79156 },	-- The Edicts
+					["provider"] = { "n", 214916 },	-- Merrix
+					["coord"] = { 57.1, 50.5, ISLE_OF_DORN },
+					["g"] = {
+						i(223468),	-- Stormrider's Armplates
+						i(223446),	-- Stormrider's Bindings
+						i(223457),	-- Stormrider's Bracers
+						i(223428),	-- Stormrider's Cuffs
+					},
+				}),
+			}),
 			header(HEADERS.AchCriteria, 20595.01, {	-- Spores of Dread
 				q(78570, {	-- Frayed Legacy
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
@@ -1065,7 +1183,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 50.5, 80.2, ISLE_OF_DORN },	-- need more accurate coords from popup
 				}),
 			}),
-			-- TODO: Worldsoul memory @ 51.2, 29.2
 		}),
 	}),
 })));
@@ -1075,6 +1192,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(83622),	-- [DNT] Zone 1 Bread Crumb Completed Organically (spellID 456955), when you break free out of rocks during questID 78529 (Violet Impact)
 	q(79629),	-- [DNT] Council of Dornogal Renown Unlock (spellID 446910)
 	q(82462),	-- 'Stay awhile and listen' - Moira Thaurissan (n: 217878), after turn in questID 78462 (Echoes of Compassion)
+	q(82541),	-- 'Stay awhile and listen' - Merrix (n: 214916), after turn in 79157 (or after accept 79224)
 	-- Side quests
 	q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero)
 	-- Special Assignment unlocks tracker

@@ -2472,7 +2472,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(871),		-- Flurry Axe
 			i(790),		-- Forester's Axe
 			i(863),		-- Gloom Reaper
+			-- #if BEFORE DF
 			i(1819),	-- Gouging Pick
+			-- #endif
 			i(15234),	-- Greater Scythe
 			i(4568),	-- Grunt Axe
 			i(15232),	-- Hacking Cleaver
@@ -3369,6 +3371,21 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["description"] = "This might just be a Pee Wee Herman quote.",
 			["classes"] = { MAGE },
 		})),
+		applyclassicphase(SOD_PHASE_TWO, i(213545, {	-- PEATCHY ATTAX
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_TWO, i(213546, {	-- Scroll: SHOOBEEDOOP
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_TWO, i(213547, {	-- Scroll: THAW WORDS
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_TWO, i(213544, {	-- Scroll: TOPAZ YORAK
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_TWO, i(213543, {	-- Scroll: UPDOG
+			["classes"] = { MAGE },
+		})),
 		-- #endif
 		-- #if BEFORE 5.0.4
 		applyclassicphase(PHASE_FIVE, i(23199, {	-- Totem of the Storm [Phase 5/6]
@@ -3384,6 +3401,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19234),	-- Six of Beasts
 		i(19235),	-- Seven of Beasts
 		i(19236),	-- Eight of Beasts
+		
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_THREE, i(221291)),	-- Two of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221292)),	-- Three of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221293)),	-- Four of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221294)),	-- Five of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221295)),	-- Six of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221296)),	-- Seven of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221297)),	-- Eight of Dunes
+		-- #endif
 
 		i(19269),	-- Two of Elementals
 		i(19270),	-- Three of Elementals
@@ -3392,6 +3419,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19273),	-- Six of Elementals
 		i(19274),	-- Seven of Elementals
 		i(19275),	-- Eight of Elementals
+		
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_THREE, i(221300)),	-- Two of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221301)),	-- Three of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221302)),	-- Four of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221303)),	-- Five of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221304)),	-- Six of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221305)),	-- Seven of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221306)),	-- Eight of Nightmares
+		
+		applyclassicphase(SOD_PHASE_THREE, i(221282)),	-- Two of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221283)),	-- Three of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221284)),	-- Four of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221285)),	-- Five of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221286)),	-- Six of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221287)),	-- Seven of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221288)),	-- Eight of Plagues
+		-- #endif
 
 		i(19278),	-- Two of Portals
 		i(19279),	-- Three of Portals
@@ -3408,61 +3453,21 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19263),	-- Six of Warlords
 		i(19264),	-- Seven of Warlords
 		i(19265),	-- Eight of Warlords
+		
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_THREE, i(221273)),	-- Two of Wilds
+		applyclassicphase(SOD_PHASE_THREE, i(221274)),	-- Three of Wilds
+		applyclassicphase(SOD_PHASE_THREE, i(221275)),	-- Four of Wilds
+		applyclassicphase(SOD_PHASE_THREE, i(221276)),	-- Five of Wilds
+		applyclassicphase(SOD_PHASE_THREE, i(221277)),	-- Six of Wilds
+		applyclassicphase(SOD_PHASE_THREE, i(221278)),	-- Seven of Wilds
+		applyclassicphase(SOD_PHASE_THREE, i(221279)),	-- Eight of Wilds
+		-- #endif
 	})),
 	filter(TOYS, {
 		i(1973),	-- Orb of Deception (TOY!)
 	}),
 	filter(RECIPES, {
-		-- #if BEFORE 4.0.1
-		cl(DRUID, {
-			{
-				["itemID"] = 17682,		-- Book: Gift of the Wild
-				["spellID"] = 21849,	-- Gift of the Wild
-				["rank"] = 1,
-			},
-			{
-				["itemID"] = 17683,		-- Book: Gift of the Wild II
-				["spellID"] = 21850,	-- Gift of the Wild II
-				["rank"] = 2,
-			},
-		}),
-		cl(MAGE, {
-			{
-				["itemID"] = 18600,		-- Tome of Arcane Brilliance
-				["spellID"] = 23028,	-- Arcane Brilliance
-				["rank"] = 1,
-			},
-			applyclassicphase(PHASE_SIX, {
-				["itemID"] = 22890,		-- Tome of Frost Ward V [Phase 6]
-				["spellID"] = 28609,	-- Frost Ward V
-				["rank"] = 5,
-			}),
-		}),
-		cl(PRIEST, {
-			{
-				["itemID"] = 17413,		-- Codex: Prayer of Fortitude
-				["spellID"] = 21562,	-- Prayer of Fortitude
-				["rank"] = 1,
-			},
-			{
-				["itemID"] = 17414,		-- Codex: Prayer of Fortitude II
-				["spellID"] = 21564,	-- Prayer of Fortitude II
-				["rank"] = 2,
-			},
-			applyclassicphase(PHASE_FIVE, {
-				["itemID"] = 22393,		-- Codex: Prayer of Shadow Protection [Phase 5]
-				["spellID"] = 27683,	-- Prayer of Shadow Protection
-				["rank"] = 1,
-			}),
-		}),
-		cl(WARLOCK, {
-			applyclassicphase(PHASE_SIX, {
-				["itemID"] = 22891,		-- Grimoire of Shadow Ward IV [Phase 6]
-				["spellID"] = 28610,	-- Shadow Ward IV
-				["rank"] = 4,
-			}),
-		}),
-		-- #endif
 		prof(ALCHEMY, {
 			i(6454, {	-- Manual: Strong Anti-Venom (RECIPE!)
 				["timeline"] = { ADDED_8_0_1 },
@@ -3717,7 +3722,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		prof(TAILORING, {
 			i(7085),	-- Pattern: Azure Shoulders
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217254)),	-- Pattern: Boots of the Enchanter
+			i(4352, {	-- Pattern: Boots of the Enchanter
+				["timeline"] = { "removed 1.15.1" },
+			}),
+			-- #else
 			i(4352),	-- Pattern: Boots of the Enchanter
+			-- #endif
 			i(14510),	-- Pattern: Bottomless Bag
 			i(14484, {	-- Pattern: Brightcloth Cloak
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
@@ -3730,7 +3742,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(10316),	-- Pattern: Colorful Kilt
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217251)),	-- Pattern: Crimson Silk Shoulders
+			i(7084, {	-- Pattern: Crimson Silk Shoulders
+				["timeline"] = { "removed 1.15.1" },
+			}),
+			-- #else
 			i(7084),	-- Pattern: Crimson Silk Shoulders
+			-- #endif
 			i(7086),	-- Pattern: Earthen Silk Belt
 			i(14492, {	-- Pattern: Felcloth Boots
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
@@ -3799,6 +3818,56 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7091),	-- Pattern: Truefaith Gloves
 			i(10301),	-- Pattern: White Bandit Mask
 		}),
+		-- #if BEFORE 4.0.1
+		cl(DRUID, {
+			{
+				["itemID"] = 17682,		-- Book: Gift of the Wild
+				["spellID"] = 21849,	-- Gift of the Wild
+				["rank"] = 1,
+			},
+			{
+				["itemID"] = 17683,		-- Book: Gift of the Wild II
+				["spellID"] = 21850,	-- Gift of the Wild II
+				["rank"] = 2,
+			},
+		}),
+		cl(MAGE, {
+			{
+				["itemID"] = 18600,		-- Tome of Arcane Brilliance
+				["spellID"] = 23028,	-- Arcane Brilliance
+				["rank"] = 1,
+			},
+			applyclassicphase(PHASE_SIX, {
+				["itemID"] = 22890,		-- Tome of Frost Ward V [Phase 6]
+				["spellID"] = 28609,	-- Frost Ward V
+				["rank"] = 5,
+			}),
+		}),
+		cl(PRIEST, {
+			{
+				["itemID"] = 17413,		-- Codex: Prayer of Fortitude
+				["spellID"] = 21562,	-- Prayer of Fortitude
+				["rank"] = 1,
+			},
+			{
+				["itemID"] = 17414,		-- Codex: Prayer of Fortitude II
+				["spellID"] = 21564,	-- Prayer of Fortitude II
+				["rank"] = 2,
+			},
+			applyclassicphase(PHASE_FIVE, {
+				["itemID"] = 22393,		-- Codex: Prayer of Shadow Protection [Phase 5]
+				["spellID"] = 27683,	-- Prayer of Shadow Protection
+				["rank"] = 1,
+			}),
+		}),
+		cl(WARLOCK, {
+			applyclassicphase(PHASE_SIX, {
+				["itemID"] = 22891,		-- Grimoire of Shadow Ward IV [Phase 6]
+				["spellID"] = 28610,	-- Shadow Ward IV
+				["rank"] = 4,
+			}),
+		}),
+		-- #endif
 	}),
 	filter(REAGENTS, {
 		i(7191),	-- Fused Wiring

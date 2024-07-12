@@ -322,6 +322,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(17744),	-- Heart of Noxxion
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(221281)),	-- Ace of Plagues
+							-- #endif
 						},
 					}),
 					e(424, {	-- Razorlash
@@ -339,7 +342,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(132563, {	-- Chloro-Stained Britches
 								["timeline"] = { ADDED_7_0_3 },
 							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(223543)),	-- Vinerot Sandals
+							i(17748, {	-- Vinerot Sandals
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							-- #else
 							i(17748),	-- Vinerot Sandals
+							-- #endif
 						},
 					}),
 				},
@@ -400,16 +410,38 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(132561, {	-- Corrupted Keeper's Band
 								["timeline"] = { ADDED_7_0_3 },
 							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(223525)),	-- Soothsayer's Headdress
+							i(17740, {	-- Soothsayer's Headdress
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							-- #else
 							i(17740),	-- Soothsayer's Headdress
+							-- #endif
 							i(17739),	-- Grovekeeper's Drape
 						},
 					}),
 					e(429, {	-- Landslide
 						["creatureID"] = 12203,
 						["groups"] = {
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(223524)),	-- Fist of Stone
+							applyclassicphase(SOD_PHASE_THREE, i(223523)),	-- Cloud Stone
+							applyclassicphase(SOD_PHASE_THREE, i(223522)),	-- Helm of the Mountain
+							i(17943, {	-- Fist of Stone
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							i(17737, {	-- Cloud Stone
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							i(17734, {	-- Helm of the Mountain
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							-- #else
 							i(17943),	-- Fist of Stone
 							i(17737),	-- Cloud Stone
 							i(17734),	-- Helm of the Mountain
+							-- #endif
 							i(17736),	-- Rockgrip Gauntlets
 							-- #if AFTER MOP
 							-- I'm actually unsure of when this item moved to Landslide.
@@ -421,9 +453,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					e(425, {	-- Tinkerer Gizlock
 						["creatureID"] = 13601,
 						["groups"] = {
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(223520)),	-- Inventor's Focal Sword
+							applyclassicphase(SOD_PHASE_THREE, i(223542)),	-- Megashot Rifle
+							applyclassicphase(SOD_PHASE_THREE, i(223545)),	-- Gizlock's Hypertech Buckler
+							i(17719, {	-- Inventor's Focal Sword
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							i(17717, {	-- Megashot Rifle
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							i(17718, {	-- Gizlock's Hypertech Buckler
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							-- #else
 							i(17719),	-- Inventor's Focal Sword
 							i(17717),	-- Megashot Rifle
 							i(17718),	-- Gizlock's Hypertech Buckler
+							-- #endif
 							i(151446, {	-- Tinkerer's Pinkie Cylinder
 								["timeline"] = { ADDED_7_3_0 },
 							}),
@@ -435,7 +482,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["modelScale"] = 1.5,
 						["groups"] = {
 							i(17730),	-- Gatorbite Axe
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(223521)),	-- Rotgrip Mantle
+							i(17732, {	-- Rotgrip Mantle
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							-- #else
 							i(17732),	-- Rotgrip Mantle
+							-- #endif
 							i(151452, {	-- Crocolisk Wrestler's Waistguard
 								["timeline"] = { ADDED_7_3_0 },
 							}),
@@ -460,16 +514,52 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							ach(5049, {	-- Maraudon Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(223964)),	-- Blade of Eternal Darkness
+							applyclassicphase(SOD_PHASE_THREE, i(223518)),	-- Charstone Dirk
+							applyclassicphase(SOD_PHASE_THREE, i(221780)),	-- Princess Theradras' Scepter
+							applyclassicphase(SOD_PHASE_THREE, i(223519)),	-- Eye of Theradras
+							applyclassicphase(SOD_PHASE_THREE, i(223541)),	-- Gemshard Heart
+							i(17780, {	-- Blade of Eternal Darkness
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							i(17710, {	-- Charstone Dirk
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							i(17766, {	-- Princess Theradras' Scepter
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							i(17715, {	-- Eye of Theradras
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							i(17707, {	-- Gemshard Heart
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							-- #else
 							i(17780),	-- Blade of Eternal Darkness
 							i(17710),	-- Charstone Dirk
 							i(17766),	-- Princess Theradras' Scepter
 							i(17715),	-- Eye of Theradras
 							i(17707),	-- Gemshard Heart
+							-- #endif
 							i(17714),	-- Bracers of the Stone Princess
 							i(17711),	-- Elemental Rockridge Leggings
 							i(17713),	-- Blackstone Ring
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(221271)),	-- Ace of Wilds
+							-- #endif
 						},
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_THREE, n(223264, {	-- Delirious Ancient
+						["description"] = "After killing Princess, this will spawn.",
+						["cost"] = {{ "i", 221418, 1 }},	-- Agamaggan's Roar
+						["groups"] = {
+							i(221271),	-- Ace of Wilds
+							i(221262),	-- Wild Offering
+						},
+					})),
+					-- #endif
 				},
 			}),
 		},

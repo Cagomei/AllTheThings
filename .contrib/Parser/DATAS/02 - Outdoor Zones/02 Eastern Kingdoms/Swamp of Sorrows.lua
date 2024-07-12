@@ -498,6 +498,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 30,
 				}),
+				heroscall(q(28675, {	-- Hero's Call: Swamp of Sorrows!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE, STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 51. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 52 (TODO: Test max level between 51 and 60)
+					["lvl"] = { 51, 52 },
+					-- #endif
+				})),
 				q(2702, {	-- Heroes of Old (1/2)
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2681,	-- The Stones That Bind Us
@@ -1488,6 +1498,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
+				warchiefscommand(q(28677, {	-- Warchief's Command: Swamp of Sorrows!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 51. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 53. (TODO: Test max level)
+					["lvl"] = { 51, 53 },
+					-- #endif
+				})),
 				applyclassicphase(PHASE_FOUR, q(8423, {	-- Warrior Kinship
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8417,	-- A Troubled Spirit
@@ -1559,6 +1579,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 27.8, 62.0, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
+					["provider"] = { "i", 216941 },	-- Ariden's Sigil
+					["coord"] = { 69, 28, SWAMP_OF_SORROWS },
+					["groups"] = {
+						i(216948),	-- Odd Dalaran Relic
+					},
+				})),
+				-- #endif
 				n(5348, {	-- Dreamwatcher Forktongue <Victim of the Nightmare> [CATA+]
 					["coord"] = { 18.0, 69.8, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },

@@ -477,11 +477,25 @@ root(ROOTS.Zones, {
 							30569,	-- Trouble on the Farmstead (A)
 							30570,	-- Trouble on the Farmstead (H)
 						},
+						["groups"] = {
+							o_repeated({
+								i(80227),	-- Root Vegetable (QI!)
+								o(211017),	-- Root Vegetable
+								o(211018),	-- Root Vegetable
+								o(211019),	-- Root Vegetable
+							}),
+							o(211023, {	-- Cast Iron Pot
+								i(80230),	-- Cast Iron Pot (QI!)
+							}),
+						},
 					}),
 					q(30746, {	-- A Fair Trade
 						["coord"] = { 42.4, 69.6, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60503 },	-- Uncle Keenbean
 						["sourceQuest"] = 30825,	-- Kota Blend
+						["groups"] = {
+							i(80944),	-- Bundle of Kafa'kota Berries (QI!)
+						},
 					}),
 					q(30820, {	-- A Funeral
 						["coord"] = { 63.1, 29.3, KUN_LAI_SUMMIT },
@@ -502,6 +516,14 @@ root(ROOTS.Zones, {
 					q(30808, {	-- A Grummle's Luck
 						["coord"] = { 64.7, 61.7, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59371 },	-- Lucky Eightcoins
+						["groups"] = {
+							o_repeated({
+								i(81293),	-- Stolen Luckydos (QI!)
+								o(211536),	-- Stolen Bag of Luckydos
+								o(211537),	-- Stolen Bag of Luckydos
+								o(211538),	-- Stolen Bag of Luckydos
+							}),
+						},
 					}),
 					q(30715, {	-- A Line Unbroken
 						["coord"] = { 35.1, 59.6, KUN_LAI_SUMMIT },
@@ -516,6 +538,9 @@ root(ROOTS.Zones, {
 							30602,	-- The Rabbitsfoot
 						},
 						["g"] = {
+							i(80428),	-- Corpse of Dak Dak (QI!)
+							i(80429),	-- Corpse of Ko Ko (QI!)
+							i(80430),	-- Corpse of Tak Tak (QI!)
 							i(88385),	-- Hozen Idol (TOY!)
 						},
 					}),
@@ -529,6 +554,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 29.2, 62.3, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 61820 },	-- Lao-Chin the Iron Belly
 						["sourceQuest"] = 30724,	-- To the Wall!
+						["groups"] = {
+							o(212003, {	-- Yaungol Oil Barrel
+								i(82799),	-- Yaungol Oil Barrel (QI!)
+							}),
+						},
 					}),
 					q(30506, {	-- Admiral Taylor has Awakened (3 versions of this quest from 3 different npc's but completing one gives credit for all 3)
 						["coord"] = { 70.8, 90.4, KUN_LAI_SUMMIT },
@@ -563,6 +593,11 @@ root(ROOTS.Zones, {
 					q(30459, {	-- All of the Arrows
 						["coord"] = { 70.7, 90.3, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59076 },	-- Commander Hsieh
+						["groups"] = {
+							o(210759, {	-- Arrow for Commander Hsieh
+								i(79806),	-- Arrow for Commander Hsieh (QI!)
+							}),
+						},
 					}),
 					q(30796, {	-- An End to Everything
 						["coord"] = { 57.3, 48.0, KUN_LAI_SUMMIT },
@@ -633,6 +668,9 @@ root(ROOTS.Zones, {
 							30620,	-- Mogu?! Oh No-gu!
 						},
 						["g"] = {
+							o(211312, {	-- Explosives Barrel
+								i(80528),	-- Explosives Barrel (QI!)
+							}),
 							i(88577),	-- Explosive Barrel
 						},
 					}),
@@ -641,6 +679,9 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 59448 },	-- Rivett Clutchpop
 						["sourceQuest"] = 30515,	-- Challenge Accepted
+						["groups"] = {
+							i(80245),	-- Kun-Lai Meaty Bits (QI!)
+						},
 					}),
 					q(31847, {	-- Better Dead than Dread
 						["coord"] = { 34.6, 59.0, KUN_LAI_SUMMIT },
@@ -701,6 +742,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60785 },	-- Sage Liao
 						["sourceQuest"] = 30794,	-- Emergency Care
+						["groups"] = {
+							o(211510, {	-- Sage Liao's Belongings
+								i(81177),	-- Pandaren Healing Draught (QI!)
+							}),
+						},
 					}),
 					q(30457, {	-- Call Out Their Leader
 						["coord"] = { 72.2, 91.8, KUN_LAI_SUMMIT },
@@ -733,6 +779,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
 						["sourceQuest"] = 30801,	-- Lessons from History
 						["g"] = {
+							i(81890),	-- Blood-Revealed Map (QI!)
 							i(82579),	-- Lorewalker's Mark
 							i(82580),	-- Lorewalker's Emblem
 							i(82581),	-- Lorewalker's Sigil
@@ -879,6 +926,9 @@ root(ROOTS.Zones, {
 					q(30489, {	-- Fresh Needle Scent
 						["coord"] = { 71.6, 70.2, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59353 },	-- Lao Muskpaw
+						["groups"] = {
+							i(79952),	-- Pungent Sprite Needles (QI!)
+						},
 					}),
 					q(30967, {	-- Free the Dissenters
 						["coord"] = { 75.1, 87.9, KUN_LAI_SUMMIT },
@@ -941,6 +991,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 63.4, 28.7, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 61495 },	-- Elder Shu
 						["sourceQuest"] = 30935,	-- Fisherman's Tale
+						["groups"] = {
+							o(211684, {	-- Volatile Blooms
+								i(82298),	-- Handful of Volatile Blooms (QI!)
+							}),
+						},
 					}),
 					heroscall(q(49559, {	-- Hero's Call: Kun-Lai Summit!
 						["timeline"] = { ADDED_7_3_5 },
@@ -950,6 +1005,9 @@ root(ROOTS.Zones, {
 					q(30460, {	-- Hit Medicine
 						["coord"] = { 71.5, 92.8, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59077 },	-- Apothecary Cheng
+						["groups"] = {
+							i(79819),	-- Dit Da Jow (QI!)
+						},
 					}),
 					q(30682, {	-- Holed Up
 						["coord"] = { 42.9, 88.3, KUN_LAI_SUMMIT },
@@ -967,6 +1025,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 50.5, 64.0, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59894 },	-- Brother Yakshoe
 						["sourceQuest"] = 30605,	-- Bros Before Hozen
+						["groups"] = {
+							i(80535),	-- Yeti Shackle Key (QI!)
+						},
 					}),
 					q(30652, {	-- In Tents Channeling (A)
 						["coord"] = { 53.8, 83.6, KUN_LAI_SUMMIT },
@@ -998,6 +1059,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.2, 61.1, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59696 },	-- Uncle Cloverleaf
 						["sourceQuest"] = 30999,	-- Path Less Traveled
+						["groups"] = {
+							i(80308),	-- Fire Lotus Incense (QI!)
+						},
 					}),
 					q(31030, {	-- Into the Monastery
 						["coord"] = { 36.6, 47.7, KUN_LAI_SUMMIT },
@@ -1024,6 +1088,11 @@ root(ROOTS.Zones, {
 							30684,	-- Seeker's Folly
 							31306,	-- Seeker's Folly
 						},
+						["groups"] = {
+							o(211780, {	-- Curious Text
+								i(81892),	-- Curious Text (QI!)
+							}),
+						},
 					}),
 					q(30805, {	-- Justice
 						["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
@@ -1033,6 +1102,13 @@ root(ROOTS.Zones, {
 					q(30825, {	-- Kota Blend
 						["coord"] = { 40.3, 81.5, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60677 },	-- Uncle Tallmug
+						["groups"] = {
+							o_repeated({
+								i(81054),	-- Kafa'Kota Berry
+								o(211454),	-- Kafa'kota Bush
+								o(211480),	-- Kafa'kota Berries
+							}),
+						},
 					}),
 					q(30994, {	-- Lao-Chin's Gambit
 						["coord"] = { 29.3, 62.2, KUN_LAI_SUMMIT },
@@ -1160,6 +1236,9 @@ root(ROOTS.Zones, {
 							30603,	-- The Broketooth Ravage
 							30602,	-- The Rabbitsfoot
 						},
+						["groups"] = {
+							i(80307),	-- Grummlepack (QI!)
+						},
 					}),
 					q(30750, {	-- Off the Wall!
 						["coord"] = { 29.3, 62.2, KUN_LAI_SUMMIT },
@@ -1169,6 +1248,10 @@ root(ROOTS.Zones, {
 					q(30614, {	-- Oil Stop
 						["coord"] = { 65.4, 60.8, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59402 },	-- Slimy Inkstain
+						["groups"] = {
+							i(80312),	-- Empty Oil Vial (QI!)
+							i(80311),	-- Filled Oil Vial (QI!)
+						},
 					}),
 					q(30683, {	-- One Traveler's Misfortune
 						["coord"] = { 48.1, 49.0, KUN_LAI_SUMMIT },
@@ -1253,10 +1336,23 @@ root(ROOTS.Zones, {
 					q(30595, {	-- Profiting off of the Past
 						["coord"] = { 59.6, 78.2, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59821 },	-- Bao Jian
+						["groups"] = {
+							o_repeated({
+								i(80294),	-- Mogu Relic (QI!)
+								o(211143),	-- Mogu Relic
+								o(211147),	-- Mogu Relic
+								o(211148),	-- Mogu Relic
+							}),
+						},
 					}),
 					q(30469, {	-- Repossession
 						["coord"] = { 74.9, 88.8, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59263 },	-- Merchant Shi
+						["groups"] = {
+							o(210887, {	--Untainted Supplies
+								i(79880),	-- Stolen Supplies (QI!)
+							}),
+						},
 					}),
 					q(31228, {	-- Prophet Khar'zul
 						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
@@ -1293,6 +1389,13 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 59695 },	-- Big Sal
 						["sourceQuest"] = 30999,	-- Path Less Traveled
 						["g"] = {
+							o_repeated({
+								i(80315),	-- Stolen Supplies (QI!)
+								o(211266),	-- Stolen Supplies
+								o(211268),	-- Stolen Supplies
+								o(211269),	-- Stolen Supplies
+								o(211270),	-- Stolen Supplies
+							}),
 							i(88070),	-- Waterfall Wristwraps
 							i(88069),	-- Mushan Hide Wristwraps
 							i(88068),	-- Dreaming Spirit Wristwraps
@@ -1380,11 +1483,19 @@ root(ROOTS.Zones, {
 						["coord"] = { 43.7, 51.1, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60795 },	-- Lorewalker Cho
 						["sourceQuest"] = 30829,	-- The Tongue of Ba-Shon
+						["groups"] = {
+							i(81712),	-- The Tongue of Ba-Shon (QI!)
+						},
 					}),
 					q(30800, {	-- Stealing Their Thunder King
 						["coord"] = { 57.3, 47.9, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
 						["sourceQuest"] = 30798,	-- Breaking the Emperor's Shield
+						["groups"] = {
+							o(211967, {	-- King's Coffer
+								i(82764),	-- Bottom Fragment of Lei Shen's Tablet (QI!)
+							}),
+						},
 					}),
 					q(30340, {	-- Stick in the Mud
 						["coord"] = { 55.0, 92.0, KUN_LAI_SUMMIT },
@@ -1451,12 +1562,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.1, 70.4, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59806 },	-- Brother Rabbitsfoot
 						["sourceQuest"] = 30592,	-- The Burlap Trail: To Burlap Waystation
+						["groups"] = {
+							i(81137),	-- Rabbitsfoot's Luckydo (QI!)
+						},
 					}),
 					q(30747, {	-- The Burlap Grind
 						["coord"] = { 42.5, 69.3, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60679 },	-- Nephew Burrberry
 						["sourceQuest"] = 30746,	-- A Fair Trade
 						["g"] = {
+							i(81183),	-- Flask of Kafa (QI!)
 							i(82525),	-- Dreaming Spirit Sabatons
 							i(82527),	-- Mindbender Treads
 							i(82524),	-- Mushan Hide Footguards
@@ -1767,6 +1882,15 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
 						["sourceQuest"] = 30797,	-- It Was Almost Alive
 						["g"] = {
+							o(211770, {	-- Shen Dynasty Tablet
+								i(82393),	-- Shen Dynasty Rubbbing (QI!)
+							}),
+							o(211794, {	-- Qiang Dynasty Tablet
+								i(82394),	-- Qiang Dynasty Rubbbing (QI!)
+							}),
+							o(211793, {	-- Wai Dynasty Tablet
+								i(82393),	-- Wai Dynasty Rubbbing (QI!)
+							}),
 							i(82564),	-- Spiritbinder Band
 							i(82565),	-- Flamefury Ring
 							i(82566),	-- Jade Inlaid Signet
@@ -1785,11 +1909,20 @@ root(ROOTS.Zones, {
 					q(30496, {	-- The Waterspeaker's Staff
 						["coord"] = { 75.1, 87.9, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60973 },	-- Waterspeaker Gorai
+						["groups"] = {
+							i(81385),	-- Stolen Inkgill Ritual Staff (QI!)
+						},
 					}),
 					q(30621, {	-- They Stole My Luck!
 						["coord"] = { 57.3, 60.1, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59716 },	-- Ji-Lu the Lucky
 						["sourceQuest"] = 30999,	-- Path Less Traveled
+						["groups"] = {
+							i(80316),	-- Lucky Virmen's Foot (QI!)
+							i(80317),	-- Lucky Yak Shoe (QI!)
+							i(80318),	-- Lucky Four Winds Clover (QI!)
+							i(80319),	-- Lucky "Gold" Coin (QI!)
+						},
 					}),
 					q(30606, {	-- Thumping Knucklethump
 						["coord"] = { 50.5, 64.0, KUN_LAI_SUMMIT },
@@ -1854,6 +1987,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.4, 89.9, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60161 },	-- Shado-Master Chong
 						["sourceQuest"] = 30457,	-- Call Out Their Leader
+						["groups"] = {
+							i(81713),	-- Blind Rage Essence (QI!)
+						},
 					}),
 					q(30752, {	-- Unbelievable!
 						["coord"] = { 35.3, 49.5, KUN_LAI_SUMMIT },
@@ -1884,6 +2020,7 @@ root(ROOTS.Zones, {
 							30670,	-- Turnabout
 						},
 						["g"] = {
+							i(81741),	-- Blinding Rage Trap (QI!)
 							i(88079),	-- Waterfall Cap
 							i(88078),	-- Mushan Hide Cap
 							i(88077),	-- Dreaming Spirit Cap
@@ -1915,6 +2052,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 63.3, 30.6, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 61496 },	-- Steelbender Doshu
 						["sourceQuest"] = 30935,	-- Fisherman's Tale
+						["groups"] = {
+							i(82299),	-- Blood-Stained Blade (QI!)
+						},
 					}),
 					q(30993, {	-- Where are My Reinforcements?
 						["coord"] = { 31.2, 61.5, KUN_LAI_SUMMIT },

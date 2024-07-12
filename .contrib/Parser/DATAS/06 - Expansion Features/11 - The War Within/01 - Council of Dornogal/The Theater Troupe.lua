@@ -15,10 +15,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			["coord"] = { 56.4, 51.4, ISLE_OF_DORN },
 			["g"] = {
 				n(ACHIEVEMENTS, {
-					--[[ Let Myr Check These
-					ach(40860),	-- A Star of Dorn
-					ach(40859),	-- We're Here All Night
-					--]]
+					ach(40860),	-- A Star of Dorn (automated)
+					ach(40859),	-- We're Here All Night (automated)
 				}),
 				n(QUESTS, {
 					q(82781, {	-- Attention-Getter
@@ -63,6 +61,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(226263),	-- Theater Troupe's Trove
 					i(228708),	-- Formula: Gleeful Glamour - Earthen (RECIPE!)
 					i(223126),	-- Formula: Enchant Chest - Stormrider's Agility (RECIPE!)
+					i(223095),	-- Pattern: Rook Feather Wristwraps (RECIPE!)
+					i(223036),	-- Plans: Charged Runeaxe (RECIPE!)
 				}),
 			},
 		})),

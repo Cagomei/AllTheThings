@@ -105,6 +105,39 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				-- #endif
 				n(QUESTS, {
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, q(79946, {	-- A Brother In Need
+						["qg"] = 5492,	-- Katherine the Pure <Paladin Trainer>
+						["sourceQuest"] = 79945,	-- Orders from the Grand Crusader
+						["coord"] = { 37.8, 31.6, STORMWIND_CITY },
+						["classes"] = { PALADIN },
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 26,
+						["groups"] = {
+							objective(1, {	-- Learn more about Aeonas from Katherine
+								["provider"] = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
+							}),
+							objective(2, {	-- Find Aeonas in the Scarlet Monastery
+								["provider"] = { "n", 217996 },	-- Aeonas <Former Paladin of the Silver Hand>
+							}),
+						},
+					})),
+					applyclassicphase(SOD_PHASE_TWO, q(79970, {	-- Aeonas the Vindicated
+						["qg"] = 217996,	-- Aeonas <Former Paladin of the Silver Hand>
+						["sourceQuest"] = 79963,	-- By The Light's Grace
+						["maps"] = { STORMWIND_CITY },
+						["classes"] = { PALADIN },
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 26,
+						["groups"] = {
+							objective(1, {	-- Meet Aeonas at the Cathedral of Light in Stormwind
+								["provider"] = { "n", 218160 },	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+								["coord"] = { 37.6, 31.6, STORMWIND_CITY },
+							}),
+							recipe(426178),	-- Engrave Belt - Sheath of Light
+						},
+					})),
+					-- #endif
 					q(31513, {	-- Blades of the Anointed
 						["qg"] = 64827,	-- Hooded Crusader
 						["timeline"] = { ADDED_5_0_4 },
@@ -115,6 +148,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 						},
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, q(79963, {	-- By The Light's Grace
+						["qg"] = 217996,	-- Aeonas <Former Paladin of the Silver Hand>
+						["sourceQuest"] = 79946,	-- A Brother In Need
+						["classes"] = { PALADIN },
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 26,
+						["groups"] = {
+							objective(1, {	-- Heal Aeonas
+								["provider"] = { "n", 217996 },	-- Aeonas <Former Paladin of the Silver Hand>
+							}),
+						},
+					})),
+					-- #endif
 					q(1113, {	-- Hearts of Zeal
 						["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 						["sourceQuest"] = 1109,	-- Going, Going, Guano!
@@ -226,6 +273,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 						},
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, q(79945, {	-- Orders from the Grand Crusader
+						["providers"] = {
+							{ "i", 215468 },	-- Orders from the Grand Crusader
+							{ "i", 216610 },	-- Orders from the Grand Crusader
+						},
+						-- TODO: There's definitely a step between A Lost Brother and this quest.
+						-- Next, head to Menethil Harbor in Wetlands, and speak to Harold Riggs on the docks, /way 8.2 58.6. (Some players have reported a progression blocking bug here). 
+						-- From here, you will need to swim south along the coastline of the Wetlands to Newman's Landing in Dun Morogh, /way 18.0, 74.5. You'll need to swim until you reach the docks, and then look for the body of a fallen crusader. Defeat your would-be ambushers, pick up Orders from the Grand Crusader and accept the next quest Orders from the Grand Crusader. This will take you back to Stormwind's Cathedral and Katherine the Pure.
+						["sourceQuest"] = 79940,	-- A Lost Brother
+						["coord"] = { 18.0, 74.5, DUN_MOROGH },
+						["maps"] = { STORMWIND_CITY },
+						["classes"] = { PALADIN },
+						["races"] = ALLIANCE_ONLY,
+						["cr"] = 218908,	-- Scarlet Crusade Assassin
+						["lvl"] = 26,
+						["groups"] = {
+							objective(1, {	-- Report back to Katherine the Pure
+								["provider"] = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
+								["coord"] = { 37.8, 31.6, STORMWIND_CITY },
+							}),
+						},
+					})),
+					-- #endif
 					q(31514, {	-- Unto Dust Thou Shalt Return
 						["qg"] = 64854,	-- Blade of the Anointed
 						["sourceQuest"] = 31513,	-- Blades of the Anointed
@@ -240,11 +311,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 				}),
 				n(ZONE_DROPS, {
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, i(215374, {	-- Ancestral Sword
+						["timeline"] = { "added 1.15.1" },
+					})),
+					-- #endif
 					i(7759),	-- Archon Chestpiece
 					i(7728),	-- Beguiler Robes
 					i(7753),	-- Bloodspiller
 					i(7729),	-- Chesterfall Musket
 					i(7730),	-- Cobalt Crusher
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, i(215376, {	-- Crusader's Mace
+						["timeline"] = { "added 1.15.1" },
+					})),
+					-- #endif
 					i(7752),	-- Dreamslayer
 					i(7736),	-- Fight Club
 					i(7755),	-- Flintrock Shoulders
@@ -259,10 +340,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(10328),	-- Scarlet Chestpiece
 					i(10331),	-- Scarlet Gauntlets
 					i(10333),	-- Scarlet Wristguards
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, i(215373, {	-- Silver Hand Training Hammer
+						["timeline"] = { "added 1.15.1" },
+					})),
+					-- #endif
 					i(5756),	-- Sliverblade
 					i(7761),	-- Steelclaw Reaver
 					i(5819),	-- Sunblaze Coif
 					i(1992),	-- Swampchill Fetish
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, i(215375, {	-- Tactician's Staff
+						["timeline"] = { "added 1.15.1" },
+					})),
+					-- #endif
 					i(8225),	-- Tainted Pierce
 					i(8226),	-- The Butcher
 					i(7760),	-- Warchief Kilt
@@ -383,9 +474,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									i(7690, {	-- Ebon Vise
 										["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 									}),
+									-- #if SEASON_OF_DISCOVERY
+									applyclassicphase(SOD_PHASE_TWO, i(217294)),	-- Embalmed Shroud
+									i(7691, {	-- Embalmed Shroud
+										["timeline"] = { "removed 1.15.1" },
+									}),
+									-- #else
 									i(7691, {	-- Embalmed Shroud
 										["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 									}),
+									-- #endif
 									i(7689, {	-- Morbid Dawn
 										["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 									}),
@@ -397,12 +495,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									i(7709, {	-- Blighted Leggings
 										["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 									}),
+									-- #if SEASON_OF_DISCOVERY
+									applyclassicphase(SOD_PHASE_TWO, i(217296)),	-- Ghostshard Talisman
+									applyclassicphase(SOD_PHASE_TWO, i(217295)),	-- Necrotic Wand
+									i(7731, {	-- Ghostshard Talisman
+										["timeline"] = { "removed 1.15.1" },
+									}),
+									i(7708, {	-- Necrotic Wand
+										["timeline"] = { "removed 1.15.1" },
+									}),
+									-- #else
 									i(7731, {	-- Ghostshard Talisman
 										["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 									}),
 									i(7708, {	-- Necrotic Wand
 										["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 									}),
+									-- #endif
 								},
 							}),
 							n(6489, {	-- Ironspine
@@ -626,6 +735,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								i(7714, {	-- Hypnotic Blade
 									["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 								}),
+								-- #if SEASON_OF_DISCOVERY
+								applyclassicphase(SOD_PHASE_TWO, i(217299)),	-- Illusionary Rod
+								applyclassicphase(SOD_PHASE_TWO, i(217298)),	-- Mantle of Doan
+								applyclassicphase(SOD_PHASE_TWO, i(217297)),	-- Robe of Doan
+								i(7713, {	-- Illusionary Rod
+									["timeline"] = { "removed 1.15.1" },
+								}),
+								i(7712, {	-- Mantle of Doan
+									["timeline"] = { "removed 1.15.1" },
+								}),
+								i(7711, {	-- Robe of Doan
+									["timeline"] = { "removed 1.15.1" },
+								}),
+								-- #else
 								i(7713, {	-- Illusionary Rod
 									["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 								}),
@@ -635,6 +758,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								i(7711, {	-- Robe of Doan
 									["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 								}),
+								-- #endif
 								i(34227, {	-- Deadman's Hand
 									["timeline"] = { ADDED_2_3_0, REMOVED_5_0_4, ADDED_10_1_7 },
 								}),
@@ -900,9 +1024,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								i(7724, {	-- Gauntlets of Divinity
 									["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 								}),
+								-- #if SEASON_OF_DISCOVERY
+								applyclassicphase(SOD_PHASE_TWO, i(217302)),	-- Mograine's Might
+								i(7723, {	-- Mograine's Might
+									["timeline"] = { "removed 1.15.1" },
+								}),
+								-- #else
 								i(7723, {	-- Mograine's Might
 									["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 								}),
+								-- #endif
 								i(10330, {	-- Scarlet Leggings
 									["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 								}),
@@ -913,12 +1044,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(7721, {	-- Hand of Righteousness
 								["timeline"] = { REMOVED_5_0_4 },
 							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_TWO, i(217301)),	-- Triune Amulet
+							applyclassicphase(SOD_PHASE_TWO, i(217300)),	-- Whitemane's Chapeau
+							i(7722, {	-- Triune Amulet
+								["timeline"] = { "removed 1.15.1" },
+							}),
+							i(7720, {	-- Whitemane's Chapeau
+								["timeline"] = { "removed 1.15.1" },
+							}),
+							-- #else
 							i(7722, {	-- Triune Amulet
 								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(7720, {	-- Whitemane's Chapeau
 								["timeline"] = { REMOVED_5_0_4 },
 							}),
+							-- #endif
 						}),
 					},
 				}),

@@ -348,11 +348,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27669,	-- Do the Honors
 					["isBreadcrumb"] = true,
 				}),
-				q(29327, {	-- Elemental Bonds: Doubt
+				applyclassicphase(CATA_PHASE_THREE, q(29327, {	-- Elemental Bonds: Doubt
 					["qg"] = 53524,	-- Cyclonas
-					["coord"] = { 47.7, 88.9, ULDUM },
 					["sourceQuest"] = 29335,	-- Into Slashing Winds
-				}),
+					["coord"] = { 47.7, 88.9, ULDUM },
+					["timeline"] = { ADDED_4_2_0 },
+				})),
 				q(28112, {	-- Escape From the Lost City
 					["qg"] = 46872,	-- Prince Nadun
 					["coord"] = { 59.5, 72.0, ULDUM },
@@ -506,11 +507,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 54.9, 32.7, ULDUM },
 					["sourceQuest"] = 28112,	-- Escape From the Lost City
 				}),
-				q(29336, {	-- Into Coaxing Tides
+				applyclassicphase(CATA_PHASE_THREE, q(29336, {	-- Into Coaxing Tides
 					["qg"] = 53519,	-- Aggra
-					["coord"] = { 34.3, 77.6, ULDUM },
 					["sourceQuest"] = 29327,	-- Elemental Bonds: Doubt
-				}),
+					["coord"] = { 34.3, 77.6, ULDUM },
+					["timeline"] = { ADDED_4_2_0 },
+				})),
 				q(28353, {	-- Jonesy Sent For You
 					["qg"] = 48431,	-- Sullah
 					["coord"] = { 29.6, 21.8, ULDUM },
@@ -1054,6 +1056,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(65802),	-- Shining Scorpid Eye
 					},
 				}),
+				warchiefscommand(q(28557, {	-- Warchief's Command: Uldum!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },	-- Only found in Orgrimmar, Thunder Bluff, & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 83. (TODO: Confirm this.)
+					["lvl"] = 83,
+					-- #endif
+				})),
 			}),
 			n(RARES, {
 				n(50065, {	-- Armagedillo

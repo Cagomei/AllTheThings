@@ -2147,16 +2147,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 				}),
-				q(25924, {	-- Call of Duty
-					["qg"] = 41621,	-- Commander Thorak
-					["sourceQuests"] = {
-						28816,	-- To the Depths
-						27718,	-- Warchief's Command: Vashj'ir!
-					},
-					["coord"] = { 55.9, 12.3, DUROTAR },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-				}),
 				q(791, {	-- Carry Your Weight
 					["qg"] = 3147,	-- Furl Scornbrow
 					["coord"] = { 49.8, 40.4, DUROTAR },
@@ -2194,6 +2184,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								3108,	-- Encrusted Surf Crawler
 								39004,	-- Pygmy Surf Crawler
 								3106,	-- Surf Crawler
+								3228,	-- Corrupted Surf Crawler
 							},
 						}),
 					},
@@ -2653,6 +2644,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["crs"] = {
 								39452,	-- Dreadmaw Toothgnasher
 								3110,	-- Dreadmaw Crocolisk
+								3231,	-- Corrupted Dreadmaw Crocolisk
 							},
 						}),
 						i(53372, {	-- Hand Woven Vest
@@ -2919,10 +2911,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						objective(1, {	-- 0/4 Razormane Quilboar
+						objective(1, {	-- 0/4 Razormane Quilboar slain
 							["provider"] = { "n", 3111 },	-- Razormane Quilboar
 						}),
-						objective(2, {	-- 0/4 Razormane Scout
+						objective(2, {	-- 0/4 Razormane Scout slain
 							["provider"] = { "n", 3112 },	-- Razormane Scout
 						}),
 					},
@@ -3243,7 +3235,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						objective(1, {	-- 0/1 Screamslash
+						objective(1, {	-- 0/1 Screamslash slain
 							["provider"] = { "n", 39385 },	-- Screamslash
 						}),
 						i(53398, {	-- Zen'Taji's Cloak
@@ -3439,6 +3431,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.9, 14.7, DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Drowned Thunder Lizard removed
+							["provider"] = { "n", 39464 },	-- Drowned Thunder Lizard
+						}),
+					},
 				}),
 				q(786, {	-- Thwarting Kolkar Aggression
 					["qg"] = 3140,	-- Lar Prowltusk

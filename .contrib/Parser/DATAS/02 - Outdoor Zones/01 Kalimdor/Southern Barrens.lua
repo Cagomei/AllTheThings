@@ -867,6 +867,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				heroscall(q(28550, {	-- Hero's Call: Southern Barrens!
+					-- #if NOT ANYCLASSIC
+					["description"] = "This quest needs to be accepted from the 'Adventure Guide' and not the 'Hero's Call Board'.",
+					-- #endif
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["timeline"] = { ADDED_4_0_3 },
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 33 (TODO: Test max level between 32 and 39)
+					["lvl"] = { 29, 33 },
+					-- #endif
+				})),
+				heroscall(q(28551, {	-- Hero's Call: Southern Barrens!
+					["maps"] = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
+					["timeline"] = { ADDED_4_0_3 },
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 33 (TODO: Test max level between 32 and 39)
+					["lvl"] = { 29, 33 },
+					-- #endif
+				})),
 				q(24505, {	-- Holdout at Hunter's Hill
 					["qg"] = 37137,	-- Tunawa Stillwind
 					["sourceQuest"] = 24504,	-- Clear the High Road
@@ -1708,6 +1731,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				warchiefscommand(q(28549, {	-- Warchief's Command: Southern Barrens!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 33. (TODO: Test max level)
+					["lvl"] = { 29, 33 },
+					-- #endif
+				})),
 				q(24512, {	-- Warriors' Redemption
 					["qg"] = 37153,	-- Holgom
 					["coord"] = { 37.6, 16.6, SOUTHERN_BARRENS },

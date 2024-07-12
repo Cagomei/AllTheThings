@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 34.9, 85.6, ISLE_OF_DORN },
 				})),
 				petbattle(q(82291, {	-- Robot Rumble
-					--["provider"] = { "n", 223407 },	-- Awakened Custodian
+					["provider"] = { "n", 223407 },	-- Awakened Custodian
 					["coord"] = { 48.2, 32.0, ISLE_OF_DORN },
 				})),
 				q(82234, {	-- A Floral Flair for Every Ram
@@ -45,6 +45,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}),
 				q(81710, {	-- Mead for the Catalog
 					["coord"] = { 77.5, 48.5, ISLE_OF_DORN },
+				}),
+				q(82455, {	-- No More Bread
+					["coord"] = { 40, 63.6, ISLE_OF_DORN },
+				}),
+				q(82451, {	-- Preserving Plush Pals
+					["coord"] = { 32.5, 53.3, ISLE_OF_DORN },
 				}),
 				q(82237, {	-- Rising the Falls
 					["coord"] = { 56.8, 42.5, ISLE_OF_DORN },

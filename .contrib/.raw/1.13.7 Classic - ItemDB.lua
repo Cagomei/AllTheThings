@@ -1,4 +1,4 @@
-DBContext = "CLASSIC";
+DBContext = "CLASSICERA";
 ItemDB = {
 	nil, -- [1]
 	nil, -- [2]

@@ -280,13 +280,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if BEFORE TBC
 			n(FACTIONS, {
 				faction(471, {	-- Wildhammer Clan
-					["description"] = "This faction gets removed completely with the TBC prepatch.\n\nYou can grind to 11999/12000 by just killing trolls and then you can *technically* grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces, but rather than encourage you to totally waste your life on a Reputation that gets ultimately removed from the game in a few weeks, I'll artificially cap the goal in ATT to Revered.\n\nGodspeed.",
+					-- #if CLASSICERA
+					["description"] = "You can grind to 11999/12000 by just killing trolls and then you can grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces. @Blackbear on the ATT Discord proposed for Classic Era that the goal for this should be Exalted. Be mad at him! :)",
+					-- #else
+					["description"] = "This faction gets removed completely with the TBC prepatch, so grinding this to Exalted makes no sense.\n\nYou can grind to 11999/12000 by just killing trolls and then you can *technically* grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces, but rather than encourage you to totally waste your life on a Reputation that gets ultimately removed from the game after the season is over, I'll artificially cap the goal in ATT to Revered.\n\nGodspeed.",
 					["minReputation"] = { 471, REVERED },	-- Wildhammer Clan, Revered.
+					-- #endif
+					["OnTooltip"] = [[function(t, tooltipInfo)
+						local reputation = t.reputation;
+						if reputation < 42000 then
+							local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+							if reputation < ]] .. (REVERED - 1) .. [[ then
+								addRepInfo(tooltipInfo, reputation, "Kill Trolls in the Hinterlands (Stops at Revered)", 5, ]] .. (REVERED - 1) .. [[, ]] .. NEUTRAL .. [[);
+								tinsert(tooltipInfo, { left = " * PROTIP: Do NOT turn in the necklaces until after Revered!", r = 1, g = 0.5, b = 0.5 });
+							else
+								local repPer, remainingTurnIns = addRepInfo(tooltipInfo, reputation, "Turn in Troll Tribal Necklaces (x5)", 2, 42000);
+								local remaining = ((remainingTurnIns * 5) - ]] .. WOWAPI_GetItemCount(9259) .. [[);
+								if remaining > 0 then
+									tinsert(tooltipInfo, { left = "You need " .. remaining .. " more necklaces for Exalted.", r = 1, g = 1, b = 0 });
+								end
+							end
+						end
+					end]],
 					["races"] = ALLIANCE_ONLY,
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_THREE, faction(2641)),	-- Emerald Wardens
-				-- #endif
 			}),
 			-- #endif
 			n(FLIGHT_PATHS, {
@@ -350,7 +367,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26547, {	-- A Mangy Threat
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
-					["sourceQuest"] = 26542,	-- Hero's Call: The Hinterlands!
+					["sourceQuests"] = {
+						26542,	-- Hero's Call: The Hinterlands!
+						-- #if AFTER 6.0.2
+						38931,	-- Hero's Call: The Hinterlands!
+						-- #endif
+					},
 					["coord"] = { 9.9, 44.2, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -768,6 +790,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
+				heroscall(q(26542, {	-- Hero's Call: The Hinterlands!
+					["qg"] = 2700,	-- Captain Nials
+					["coord"] = { 40, 48.8, ARATHI_HIGHLANDS },
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE },	-- Only found in Ironforge in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 33 (TODO: Test max level between 32 and 39)
+					["lvl"] = { 29, 33 },
+					-- #endif
+				})),
+				heroscall(q(38931, {	-- Hero's Call: The Hinterlands!
+					["timeline"] = { CREATED_6_2_0 },
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 33 (TODO: Test max level between 32 and 39)
+					["lvl"] = { 29, 33 },
+					-- #endif
+				})),
 				q(26526, {	-- Hunt the Keeper (A)
 					["qg"] = 43156,	-- Fraggar Thundermantle
 					["sourceQuest"] = 26517,	-- Summit of Fate
@@ -1765,7 +1808,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2880,	-- Troll Necklace Bounty
 					["coord"] = { 14.8, 44.6, THE_HINTERLANDS },
 					["timeline"] = { REMOVED_2_0_3 },
-					-- #if BEFORE TBC
+					-- #if CLASSICERA
+					["maxReputation"] = { 471, EXALTED },	-- Wildhammer Clan, Exalted.
+					-- #elseif BEFORE TBC
 					["maxReputation"] = { 471, REVERED },	-- Wildhammer Clan, Revered.
 					-- #endif
 					["cost"] = { { "i", 9259, 5 } },	-- Troll Tribal Necklace
@@ -1884,6 +1929,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28574, {	-- Warchief's Command: The Hinterlands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 33. (TODO: Test max level)
+					["lvl"] = { 29, 33 },
+					-- #endif
+				})),
 				q(2988, {	-- Witherbark Cages
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
@@ -2155,6 +2210,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_2_3_0 },	-- Learned at trainer
 					["cr"] = 2642,	-- Vilebranch Shadowcaster
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, i(220912, {	-- Geode Hammer
+					["provider"] = { "i", 220914 },	-- Broken Geode Hammer
+					["description"] = "Wield this hammer until it breaks, revealing the rune inside!",
+					["timeline"] = { "added 1.15.2" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						2649,	-- Witherbark Scalper
+						2653,	-- Witherbark Sadist
+						2650,	-- Witherbark Zealot
+						2651,	-- Witherbark Hideskinner
+						2652,	-- Witherbark Venomblood
+						2654,	-- Witherbark Caller
+					},
+					["groups"] = {
+						i(220913, {	-- Rune of Demolition
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(427084),	-- Engrave Bracers - Wrecking Crew
+							},
+						}),
+					},
+				})),
+				-- #endif
 				-- #if BEFORE CATA
 				i(4589, {	-- Long Elegant Feather
 					["crs"] = {
@@ -2177,6 +2256,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 61.2, 68.4, THE_HINTERLANDS },
 					},
 				}),
+				-- #if BEFORE 4.0.3
+				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
+					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
+					["timeline"] = { REMOVED_4_0_1 },
+				}),
+				-- #endif
 				i(9259, {	-- Troll Tribal Necklace
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from any troll in The Hinterlands.",
@@ -2186,11 +2271,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(8153, {	-- Wildvine
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
-				-- #if BEFORE 4.0.3
-				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
-					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
-					["timeline"] = { REMOVED_4_0_1 },
-				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, i(221261, {	-- Wildwhisper Draught
+					["description"] = "Dropped by any elite troll at Jintha'Alor.\n\nRequired for 'The Wild Gods'. Bring this to Razorfen Downs and use it after defeating the Coldbringer (the last boss).",
+					["timeline"] = { "added 1.15.2" },
+				})),
 				-- #endif
 			}),
 		},

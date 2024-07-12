@@ -6,17 +6,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		n(ACHIEVEMENTS, {
 			ach(40837),		-- Adventurer of The Ringing Deeps (automated)
 			ach(40825, {	-- Explore The Ringing Deeps
-				-- TODO: These criteria look unfinished
-				crit(69608),	-- The Earthenworks
-				crit(69608),	-- Lost Mines
-				crit(69608),	-- Shadowvein Extraction Site
-				crit(69608),	-- Shadowvein Point
-				crit(69608),	-- The Waterworks
-				crit(69608),	-- Taelloch
-				crit(69608),	-- The Living Grotto
-				crit(69608),	-- Opportunity Point
-				crit(69608),	-- The Coreway
-				crit(69608),	-- Gundargaz
+				crit(69766),	-- The Earthenworks
+				crit(69767),	-- Lost Mines
+				crit(69768),	-- Shadowvein Extraction Site
+				crit(69775),	-- Shadowvein Point
+				crit(69769),	-- The Waterworks
+				crit(69770),	-- Taelloch
+				crit(69771),	-- The Living Grotto
+				crit(69772),	-- Opportunity Point
+				crit(69773),	-- The Coreway
+				crit(69774),	-- Gundargaz
 			}),
 			ach(40507),		-- Hanging Tight
 			ach(40628),		-- Notable Machines (automated)
@@ -81,67 +80,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 56.2, 56.2, THE_RINGING_DEEPS },
 			}),
 			ach(40680, {	-- Skyriding Glyphs: The Waterworks
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 46.5, 51.8, THE_RINGING_DEEPS },
 			}),
 			ach(40799),		-- Sojourner of The Ringing Deeps (automated)
-			-- TODO: Left for reference since something still throws an error in the automated version
-			-- ach(40799, {	-- Sojourner of The Ringing Deeps
-			-- 	crit(69480, {	-- The Caretaker of Brunwin's Terrace
-			-- 		["sourceQuest"] = 80407,	-- Glintwick the Gem Grabber
-			-- 	}),
-			-- 	crit(67728, {	-- Broken Tools
-			-- 		["sourceQuest"] = 78564,	-- Reforged Purpose
-			-- 	}),
-			-- 	crit(69481, {	-- Routine Maintenance
-			-- 		["sourceQuest"] = 82814,	-- Decommissioning Darkness
-			-- 	}),
-			-- 	crit(69482, {	-- Dead in the Den
-			-- 		-- Remove when the quest below is uncommented
-			-- 		["_noautomation"] = true,
-			-- 		--["sourceQuest"] = 80516,	-- Bump off the Boss
-			-- 	}),
-			-- 	crit(69483, {	-- Envenomed Invasion
-			-- 		["sourceQuest"] = 79372,	-- A Cluth of Hope
-			-- 	}),
-			-- 	crit(69484, {	-- Fearbreaker
-			-- 		["sourceQuest"] = 79266,	-- The Bronzebeard Legacy
-			-- 	}),
-			-- 	crit(69485, {	-- Into the Fog
-			-- 		-- Remove when the quest below is uncommented
-			-- 		["_noautomation"] = true,
-			-- 		--["sourceQuest"] = 81559,	-- Fog Follower
-			-- 	}),
-			-- 	crit(69486, {	-- Magma-nificence
-			-- 		["sourceQuest"] = 83160,	-- Cinderbrew Reserve
-			-- 	}),
-			-- 	crit(69487, {	-- Kobold Culture and Integration (Kobold Candles)
-			-- 		["sourceQuest"] = 80202,	-- Hot Pollenate-o
-			-- 	}),
-			-- 	crit(69488, {	-- Kobold Culture and Integration (Kobold Work Crew)
-			-- 		["sourceQuest"] = 79682,	-- Critical Pressure!
-			-- 	}),
-			-- 	crit(69489, {	-- Kobold Culture and Integration (Kobold Story Time)
-			-- 		["sourceQuest"] = 79510,	-- The Wickless Candle
-			-- 	}),
-			-- 	crit(69490, {	-- Rampage at Nibelgaz Mine
-			-- 		["sourceQuest"] = 79327,	-- The Glittering Shard
-			-- 	}),
-			-- 	crit(69491, {	-- Abysmal Extraction
-			-- 		-- Remove when the quest below is uncommented
-			-- 		["_noautomation"] = true,
-			-- 		--["sourceQuest"] = 83162,	-- Put it Back, Put it Back!
-			-- 	}),
-			-- 	crit(69492, {	-- Revenge in the Rumbling Wastes
-			-- 		["sourceQuest"] = 81672,	-- In a Pinch
-			-- 	}),
-			-- 	crit(69493, {	-- Tired of Rest
-			-- 		["sourceQuest"] = 82144,	-- On the Road
-			-- 	}),
-			-- 	crit(69494, {	-- Frolicking in the Fetid Grotto
-			-- 		["sourceQuest"] = 81713,	-- Oozemodious
-			-- 	}),
-			-- }),
 			ach(40585),		-- Super Size Snuffling
 			ach(19560, {	-- The Ringing Deeps
 				crit(64791, {	-- 	By Candlelight

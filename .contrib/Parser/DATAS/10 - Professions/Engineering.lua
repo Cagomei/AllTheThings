@@ -1443,6 +1443,74 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["provider"] = { "i", 222621 },	-- Algari Treatise on Engineering
 			}),
 		})),
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", TWW_ENGINEERING_KNOWLEDGE, 1 }} }, {
+				r(447356),	-- Adjustable Cogwheel
+				r(447365),	-- Box o' Booms
+				r(447355),	-- Impeccable Cogwheel
+				r(447354),	-- Overclocked Cogwheel
+				r(447353),	-- Serrated Cogwheel
+			}),
+		}),
+		n(TREASURES, {
+			o(456001, {	-- Rock Engineer's Wrench
+				["coord"] = { 61.3, 69.5, ISLE_OF_DORN },
+				--["questID"] = XXXXX,
+				["g"] = {
+					i(226292),	-- Rock Engineer's Wrench
+				},
+			}),
+			o(455996, {	-- Arathi Safety Gloves
+				["coord"] = { 41.5, 48.9, HALLOWFALL },
+				--["questID"] = XXXXX,
+				["g"] = {
+					i(226297),	-- Arathi Safety Gloves
+				},
+			}),
+			o(456000, {	-- Dornogal Spectacles
+				["coord"] = { 49.3, 55.6, DORNOGAL },
+				--["questID"] = XXXXX,
+				["g"] = {
+					i(226293),	-- Dornogal Spectacles
+				},
+			}),
+			o(455998, {	-- Earthen Construct Blueprints
+				["coord"] = { 64.5, 58.8, THE_RINGING_DEEPS },
+				--["questID"] = XXXXX,
+				["g"] = {
+					i(226295),	-- Earthen Construct Blueprints
+				},
+			}),
+			o(455994, {	-- Emptied Venom Canister
+				["coord"] = { 61.1, 11.3, AZJ_KAHET },
+				--["questID"] = XXXXX,
+				["g"] = {
+					i(226299),	-- Emptied Venom Canister
+				},
+			}),
+			o(455997, {	-- Holy Firework Dud
+				["coord"] = { 44.3, 61.4, HALLOWFALL },
+				--["questID"] = XXXXX,
+				["g"] = {
+					i(226296),	-- Holy Firework Dud
+				},
+			}),
+			o(455999, {	-- Inert Mining Bomb
+				["coord"] = { 42.6, 27.3, THE_RINGING_DEEPS },
+				--["questID"] = 83844,
+				["g"] = {
+					i(226294),	-- Inert Mining Bomb
+				},
+			}),
+			o(455995, {	-- Puppeted Mechanical Spider
+				["coord"] = { 46.9, 38.6, AZJ_KAHET },
+				--["questID"] = 83844,
+				["g"] = {
+					i(226298),	-- Puppeted Mechanical Spider
+				},
+			}),
+		}),
 	})),
 })));
 
@@ -1550,10 +1618,6 @@ profession(ENGINEERING, {
 				{
 					["name"] = "Flame Deflector",
 					["recipeID"] = 3944,
-				},
-				{
-					["name"] = "Force Reactive Disk",
-					["recipeID"] = 22797,
 				},
 				{
 					["name"] = "Gnomish Cloaking Device",
@@ -1671,6 +1735,12 @@ profession(ENGINEERING, {
 					["name"] = "Snowmaster 9000",
 					["recipeID"] = 21940,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Soul Vessel",
+					["recipeID"] = 431362,
+				}),
+				-- #endif
 				{
 					["name"] = "Steam Tonk Controller",
 					["timeline"] = { CREATED_1_10_0, ADDED_2_0_1 },
@@ -1735,6 +1805,12 @@ profession(ENGINEERING, {
 					["name"] = "EZ-Thro Dynamite II",
 					["recipeID"] = 23069,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Ez-Thro Radiation Bomb",
+					["recipeID"] = 435966,
+				}),
+				-- #endif
 				{
 					["name"] = "Flash Bomb",
 					["recipeID"] = 8243,
@@ -1751,6 +1827,12 @@ profession(ENGINEERING, {
 					["name"] = "Hi-Explosive Bomb",
 					["recipeID"] = 12619,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "High-Yield Radiation Bomb",
+					["recipeID"] = 435964,
+				}),
+				-- #endif
 				{
 					["name"] = "Iron Grenade",
 					["recipeID"] = 3962,
@@ -1957,6 +2039,36 @@ profession(ENGINEERING, {
 				},
 			},
 		},
+		-- #if SEASON_OF_DISCOVERY
+		{
+			["name"] = "Bracers",
+			["categoryID"] = 222,
+			["groups"] = {
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Void-Powered Invoker's Vambraces",
+					["recipeID"] = 446236,
+				}),
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Void-Powered Protector's Vambraces",
+					["recipeID"] = 446238,
+				}),
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Void-Powered Slayer's Vambraces",
+					["recipeID"] = 446237,
+				}),
+			},
+		},
+		{
+			["name"] = "Belts",
+			["categoryID"] = 223,
+			["groups"] = {
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Hyperconductive Goldwap",
+					["recipeID"] = 435960,
+				}),
+			},
+		},
+		-- #endif
 		{
 			["name"] = "Guns & Bows",
 			["categoryID"] = 189,
@@ -2007,6 +2119,22 @@ profession(ENGINEERING, {
 					["name"] = "Thorium Rifle",
 					["recipeID"] = 19792,
 				},
+			},
+		},
+		{
+			["name"] = "Shields",
+			["categoryID"] = 226,
+			["groups"] = {
+				{
+					["name"] = "Force Reactive Disk",
+					["recipeID"] = 22797,
+				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Whirling Truesilver Gearwall",
+					["recipeID"] = 435958,
+				}),
+				-- #endif
 			},
 		},
 		{
@@ -2108,6 +2236,12 @@ profession(ENGINEERING, {
 					["name"] = "Whirring Bronze Gizmo",
 					["recipeID"] = 3942,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Polished Truesilver Gears",
+					["recipeID"] = 435956,
+				}),
+				-- #endif
 			},
 		},
 		{
@@ -2557,7 +2691,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Springy Arachnoweave",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { ADDED_3_0_3, REMOVED_4_0_1 },
 					["recipeID"] = 63765,
 				},
 			},
@@ -2870,6 +3004,9 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Agile Bio-Optic Killshades",
+					-- #if BEFORE 7.3.0
+					["classes"] = LEATHER_CLASSES,
+					-- #endif
 					["recipeID"] = 81722,
 				},
 				{
@@ -2878,26 +3015,44 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Camouflage Bio-Optic Killshades",
+					-- #if BEFORE 7.3.0
+					["classes"] = { DRUID },
+					-- #endif
 					["recipeID"] = 81724,
 				},
 				{
 					["name"] = "Deadly Bio-Optic Killshades",
+					-- #if BEFORE 7.3.0
+					["classes"] = MAIL_CLASSES,
+					-- #endif
 					["recipeID"] = 81716,
 				},
 				{
 					["name"] = "Energized Bio-Optic Killshades",
+					-- #if BEFORE 7.3.0
+					["classes"] = { SHAMAN },
+					-- #endif
 					["recipeID"] = 81720,
 				},
 				{
 					["name"] = "Lightweight Bio-Optic Killshades",
+					-- #if BEFORE 7.3.0
+					["classes"] = CLOTH_CLASSES,
+					-- #endif
 					["recipeID"] = 81725,
 				},
 				{
 					["name"] = "Reinforced Bio-Optic Killshades",
+					-- #if BEFORE 7.3.0
+					["classes"] = PLATE_CLASSES,
+					-- #endif
 					["recipeID"] = 81714,
 				},
 				{
 					["name"] = "Specialized Bio-Optic Killshades",
+					-- #if BEFORE 7.3.0
+					["classes"] = { PALADIN },
+					-- #endif
 					["recipeID"] = 81715,
 				},
 			},

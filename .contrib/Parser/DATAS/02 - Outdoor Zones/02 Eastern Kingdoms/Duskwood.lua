@@ -122,7 +122,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					pet(399),	-- Rat Snake (PET!)
 					pet(397),	-- Skunk (PET!)
-					pet(400),	-- Widow Spiderling (PET!)
+					pet(400, {	-- Widow Spiderling (PET!)
+						-- #if BEFORE 5.1.0
+						["description"] = "Spawns during the night between 6:30pm to 6:30am realm time, but can be found as a secondary pet all day long."
+						-- #else
+						["description"] = "Spawns during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE), but can be found as a secondary pet all day long.",
+						-- #endif
+					}),	
 				},
 			}),
 			explorationHeader({
@@ -142,11 +148,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(856),	-- Twilight Grove
 				exploration(93),	-- Vul'Gol Ogre Mound
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			n(FACTIONS, {
-				applyclassicphase(SOD_PHASE_THREE, faction(2641)),	-- Emerald Wardens
-			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(12, {	-- Darkshire, Duskwood
 					["cr"] = 2409,	-- Felicia Maline <Gryphon Master>
@@ -672,12 +673,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				heroscall(q(28564, {	-- Hero's Call: Duskwood!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 19. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 23 (TODO: Test max level between 22 and 32)
+					["lvl"] = { 19, 23 },
+					-- #endif
+				})),
 				q(26728, {	-- Hero's Call: Duskwood!
 					["qg"] = 900,	-- Bailiff Conacher
 					["coord"] = { 28.7, 40.9, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = 19,
 				}),
 				q(26669, {	-- In A Dark Corner
 					["qg"] = 267,	-- Clerk Daltry
@@ -2107,6 +2119,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
+					["provider"] = { "i", 216941 },	-- Ariden's Sigil
+					["coord"] = { 23, 47, DUSKWOOD },
+					["groups"] = {
+						i(216946),	-- Glittering Dalaran Relic
+					},
+				})),
+				-- #endif
 				n(45801, {	-- Eliza <Bride of the Embalmer>
 					["coord"] = { 27.6, 31.6, DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },

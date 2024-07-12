@@ -1234,6 +1234,14 @@ for spellID,learnedAt in pairs({
 	[18456] = 300,	-- Truefaith Vestments
 	[18446] = 300,	-- Wizardweave Robe
 	[18450] = 300,	-- Wizardweave Turban
+	
+	-- #if SEASON_OF_DISCOVERY
+	[439086] = 205,	-- Black Mageweave Vest
+	[439088] = 205,	-- Black Mageweave Leggings
+	[439097] = 175,	-- Boots of the Enchanter
+	[439093] = 190,	-- Crimson Silk Shoulders
+	[439085] = 205,	-- Crimson Silk Robe
+	-- #endif
 }) do recipeDB[spellID].learnedAt = learnedAt; end
 
 -- Cooking

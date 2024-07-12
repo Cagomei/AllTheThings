@@ -2816,6 +2816,9 @@
 19438@@@Defense Protocol Gamma: The Culling of Stratholme
 19439@@@Defense Protocol Gamma: Terminated
 19440@@@Defense Protocol Gamma: Terminated
+3.4.3.55417
+40821@@@Successfully Stress Test CN Realms
+40841@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy)
 4.0.1.12911
 736@@@Explore Mulgore NYI
 750@@@Explore Northern Barrens
@@ -15273,3 +15276,11 @@
 40845@@@Hallowfall Arathi
 40848@@@Treasures of Hallowfall
 40851@@@Adventurer of Hallowfall
+11.0.2.55399
+40764@@@Powers from Strange Disturbances obtained
+40836@@@Assembly of the Deeps
+40856@@@Council of Dornogal
+40857@@@Warbands: Bank Quest Unlock
+40859@@@We're Here All Night
+40860@@@A Star of Dorn
+40861@@@Mislaid Curiosities looted

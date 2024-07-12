@@ -3476,6 +3476,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(81877, {	-- Fight Night
+					["qg"] = 220984,	-- Fizbuz Mithril
+					["sourceQuest"] = 81801,	-- Return to the Arena
+					["coord"] = { 51.6, 27.6, TANARIS },
+					["timeline"] = { "added 1.15.2" },
+					["classes"] = { WARRIOR },
+					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- Arena Victory
+							["provider"] = { "n", 221829 },	-- Kajind <Arena Champion>
+						}),
+						i(220164, {	-- Rune of the Gladiator
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(416002),	-- Engrave Boots - Gladiator Stance
+							},
+						}),
+						i(219223),	-- Blademaster's Fury
+					},
+				})),
+				-- #endif
 				q(26887, {	-- Filling Our Pockets (A)
 					["qg"] = 38704,	-- Kelsey Steelspark
 					["sourceQuests"] = {
@@ -3615,6 +3637,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				heroscall(q(28507, {	-- Hero's Call: Tanaris!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 48 (TODO: Test max level between 48 and 55)
+					["lvl"] = { 44, 48 },
+					-- #endif
+				})),
 				q(25521, {	-- I'm With Scorpid
 					["qg"] = 40580,	-- Gus Rustflutter
 					["coord"] = { 42.4, 24.2, TANARIS },
@@ -4517,6 +4549,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(81682, {	-- The Old Champ
+					["qg"] = 220984,	-- Fizbuz Mithril
+					["coord"] = { 51.6, 27.6, TANARIS },
+					["timeline"] = { "added 1.15.2" },
+					["maps"] = { AZSHARA },
+					["classes"] = { WARRIOR },
+					["lvl"] = 45,
+				})),
+				-- #endif
 				q(3638, {	-- The Pledge of Secrecy
 					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
 					["altQuests"] = {
@@ -4572,6 +4614,40 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 33.2, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(3444, {	-- The Stone Circle
+					["qg"] = 7771,	-- Marvon Rivetseeker
+					["sourceQuests"] = {
+						3445,	-- The Sunken Temple [Alliance]
+						3380,	-- The Sunken Temple [Horde]
+					},
+					["coord"] = { 52.6, 45.8, TANARIS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { THE_BARRENS },
+					["lvl"] = 46,
+					["groups"] = {
+						objective(1, {	-- 0/1 Stone Circle
+							["providers"] = {
+								{ "i",  10556 },	-- Stone Circle
+								{ "o", 149036 },	-- Marvon's Chest
+							},
+							["coord"] = { 62.5, 38.5, THE_BARRENS },
+						}),
+					},
+				}),
+				q(3445, {	-- The Sunken Temple [Alliance]
+					["qg"] = 7900,	-- Angelas Moonbreeze
+					["coord"] = { 31.8, 45.6, FERALAS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 46,
+				}),
+				q(3380, {	-- The Sunken Temple [Horde]
+					["qg"] = 8115,	-- Witch Doctor Uzer'i
+					["coord"] = { 74.4, 43.4, FERALAS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 46,
 				}),
 				q(2741, {	-- The Super Egg-O-Matic
 					["provider"] = { "o", 142071 },	-- Egg-O-Matic
@@ -4864,6 +4940,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 40,
 					-- #endif
 				}),
+				warchiefscommand(q(28509, {	-- Warchief's Command: Tanaris!
+					["timeline"] = { ADDED_4_0_3, REMOVED_10_2_6 },	-- possibly earlier, but currently unable to be obtained
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level . (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level . (TODO: Test max level)
+					["lvl"] = { 44, 48 },
+					-- #endif
+				})),
 				q(1690, {	-- Wastewander Justice
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
 					["coord"] = { 52.5, 28.5, TANARIS },
@@ -5379,9 +5465,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.0, 27.3, TANARIS },
 					-- #endif
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_TWO, i(217244, {	-- Pattern: Crimson Silk Robe
+							["timeline"] = { "added 1.15.1" },
+							["isLimited"] = true,
+						})),
+						i(7088, {	-- Pattern: Crimson Silk Robe
+							["timeline"] = { "removed 1.15.1" },
+							["isLimited"] = true,
+						}),
+						-- #else
 						i(7088, {	-- Pattern: Crimson Silk Robe
 							["isLimited"] = true,
 						}),
+						-- #endif
 						i(21358),	-- Pattern: Soul Pouch
 					},
 				}),

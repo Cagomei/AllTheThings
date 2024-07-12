@@ -137,6 +137,62 @@ applyData = function(data, t)
 		end
 	end
 end
+splitTimelineEvent = function(epoch)
+	local words = {};
+	for word in epoch:gmatch("%S+") do table.insert(words, word) end
+	for i=2,#words,1 do words[i] = tonumber(words[i]) or words[i]; end
+	return words;
+end
+-- Applies the timeline event (epoch) to the object.
+applyTimelineEvent = function(epoch, t)
+	if epoch and t then
+		local timeline = t.timeline;
+		if not timeline then
+			-- Nothing there already, simply assign a new timeline.
+			t.timeline = { epoch };
+		else
+			-- More complicated... (merge the data!)
+			local index = -1;
+			local epochParts = splitTimelineEvent(epoch);
+			for i,currentEpoch in ipairs(timeline) do
+				if currentEpoch == epoch then
+					-- Epoch already present. Don't duplicate it.
+					return;
+				end
+				local after = true;
+				local parts = splitTimelineEvent(currentEpoch);
+				for j=2,math.min(#epochParts, #parts),1 do
+					if epochParts[j] < parts[j] then
+						after = false;
+						break;
+					end					
+				end
+				if not after then
+					-- We don't want to circumvent the timeline's ability to strip out data that's not supposed to be in the game yet.
+					if i == 1 and parts[1] == "added" and epochParts[1] == "removed" then
+						return;
+					end
+					--[[
+					-- Uncomment to Test:
+					local summary = "";
+					for j=1,i - 1,1 do
+						summary = summary .. "  [" .. j .. "]: '" .. timeline[j] .. "'\n";
+					end
+					summary = summary .. "  >>> '" .. epoch .. "'\n  [" .. i .. "]: '" .. currentEpoch .. "'";
+					print(summary);
+					]]--
+					index = i;
+					break;
+				end
+			end
+			if index >= 0 then
+				table.insert(timeline, index, epoch);
+			else
+				table.insert(timeline, epoch);
+			end
+		end
+	end
+end
 -- Applies a copy of the provided data into the tables of the provided array/group
 sharedData = function(data, t)
 	if not data then
@@ -248,6 +304,36 @@ bubbleDownSelf = function(data, t)
 	t = togroups(t);
 	-- then apply regular bubbleDown on the group
 	return bubbleDown(data, t);
+end
+-- Applies the timeline event (epoch) to all sub-groups of the provided table/array
+bubbleDownTimelineEvent = function(epoch, t)
+	if not epoch then
+		print("bubbleDownTimelineEvent: No Epoch")
+	end
+	if not t then
+		print("bubbleDownTimelineEvent: No Source 't'")
+	end
+	if t then
+		if t.g or t.groups then
+			applyTimelineEvent(epoch, t);
+			if t.groups then
+				bubbleDownTimelineEvent(epoch, t.groups);
+			end
+			if t.g then
+				bubbleDownTimelineEvent(epoch, t.g);
+			end
+		elseif isarray(t) then
+			for _,group in ipairs(t) do
+				bubbleDownTimelineEvent(epoch, group);
+			end
+		else
+			applyTimelineEvent(epoch, t);
+		end
+		return t;
+	end
+end
+bubbleDownTimelineEventSelf = function(epoch, t)
+	return bubbleDownTimelineEvent(epoch, togroups(t));
 end
 -- Validates and returns 't' (expected 'groups' content) ensuring that contained content is in the expected formats
 validateGroups = function(t)
@@ -466,6 +552,10 @@ chefsaward = function(cost, item)						-- Assign a Chef's Award or Epicurean's A
 	-- #endif
 	return item;
 end
+conquest = function(cost, item)							-- Assign a Conquest cost to an item.
+	if cost > 0 then applycost(item, { "c", CONQUEST, cost }); end
+	return item;
+end
 daljewelcraftingtoken = function(cost, item)			-- Assign a Dalaran Jewelcrafter's Token cost to an item.
 	applycost(item, { "c", 61, cost });
 	return item;
@@ -522,19 +612,14 @@ gold = function(cost, item)								-- Assign a Gold cost to an item.
 	applycost(item, { "g", cost * 10000 });	-- Gold
 	return item;
 end
-honor = function(cost, item)							-- Assign a Honor cost to an item with proper timeline requirements.
+honor = function(cost, item)							-- Assign an Honor cost to an item. (modern)
+	if cost > 0 then applycost(item, { "c", HONOR, cost }); end
+	return item;
+end
+honorpoints = function(cost, item)						-- Assign a Honor cost to an item with proper timeline requirements. (pre-Cata costs)
 	-- #if BEFORE CATA
 	-- TODO: Add the before Cata Honor System
 	--applycost(item, { "c", , cost });	-- Honor
-	-- #endif
-	return item;
-end
-honorpoints = function(cost, item)						-- Assign a Honor Points cost to an item with proper timeline requirements.
-	-- #if BEFORE 7.0.3.22248
-	-- #if AFTER CATA
-	-- TODO: Add the CATA > Legion Honor Point System
-	--applycost(item, { "c", , cost });	-- Honor Points
-	-- #endif
 	-- #endif
 	return item;
 end
@@ -1030,8 +1115,6 @@ inst = function(id, t)									-- Create an INSTANCE Object
 				--error("Instance Missing a MapID: " .. id);
 			end
 		end
-	else
-		t = { ["npcID"] = -1, ["groups"] = t };
 	end
 	-- #endif
 	return t;
@@ -1440,6 +1523,7 @@ local getTimestamp = function(t)
 		minute=t.minute,
 	});
 end
+local SECONDS_IN_A_WEEK = 604800;
 createHeader = function(data)
 	if not data then
 		print("INVALID HEADER: You must pass data into the createHeader function.");
@@ -1611,6 +1695,79 @@ createHeader = function(data)
 						month = 1;
 						year = year + 1;
 					end
+				end
+			elseif data.eventSchedule[1] == 3 then	-- Recurring every two weeks, lasting a week.
+				-- START_YEAR, START_MONTH, START_DAY
+				-- Example: 2023, 12, 4
+				local eventIDs = data.eventIDs;
+				if not eventIDs then
+					print("INVALID HEADER", data.readable, " INVALID SCHEDULE, MISSING EVENT IDs!");
+					return;
+				end
+				local totalEventIDs = #eventIDs;
+				if totalEventIDs < 1 then
+					print("INVALID HEADER", data.readable, " INVALID SCHEDULE, EVENT IDs EMPTY!");
+					return;
+				end
+
+				-- Specify the first recorded event matching the first eventID.
+				local startTimeStamp = getTimestamp({
+					year=data.eventSchedule[2],
+					month=data.eventSchedule[3] or 1,
+					monthDay=data.eventSchedule[4] or 1,
+					--weekday=7,	-- generated below
+					hour=0,
+					minute=0,
+				});
+				
+				-- Calculate the difference between the first recorded event to now.
+				local currentYear, currentMonth = currentDate.year, currentDate.month;
+				local currentTimeStamp = os.time(currentDate);
+				local totalOffset, SECONDS_IN_TWO_WEEKS = 0, SECONDS_IN_A_WEEK * 2;
+				while true do
+					startTimeStamp = startTimeStamp + SECONDS_IN_TWO_WEEKS;
+					if startTimeStamp < currentTimeStamp then
+						totalOffset = totalOffset + 1;
+					else
+						-- We want at least one event behind us if it is still active.
+						startTimeStamp = startTimeStamp - SECONDS_IN_TWO_WEEKS;
+						break;
+					end
+				end
+				
+				-- Now generate a full years worth of events going forward.
+				local veryfirst = true;
+				for week = 0,26,1 do
+					if veryfirst then
+						veryfirst = false;
+					else
+						schedule = schedule .. ",";
+					end
+					
+					-- Determine when the event is supposed to end.
+					local startTime = os.date("*t", startTimeStamp);
+					local endTime = os.date("*t", startTimeStamp + SECONDS_IN_A_WEEK);
+
+					-- Append the schedule
+					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs({
+						year=startTime.year,
+						month=startTime.month,
+						monthDay=startTime.day,
+						weekday=startTime.wday,
+						hour=0,
+						minute=0,
+					}) .. "," .. concatKeyPairs({
+						year=endTime.year,
+						month=endTime.month,
+						monthDay=endTime.day,
+						weekday=endTime.wday,
+						hour=0,
+						minute=0,
+					}) .. ",{[\"remappedID\"]=" .. eventIDs[(totalOffset % totalEventIDs) + 1] .. "})";
+
+					-- Adjust by 2 weeks.
+					startTimeStamp = startTimeStamp + SECONDS_IN_TWO_WEEKS;
+					totalOffset = totalOffset + 1;
 				end
 			else
 				print("INVALID HEADER", data.readable, " INVALID SCHEDULE TYPE", data.eventSchedule[1]);

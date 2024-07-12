@@ -347,11 +347,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 42.8, 51.0, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 						}),
-						q(29328, {	-- Elemental Bonds: Desire
+						applyclassicphase(CATA_PHASE_THREE, q(29328, {	-- Elemental Bonds: Desire
 							["qg"] = 53652,	-- Aggra
 							["sourceQuest"] = 29336,	-- Into Coaxing Tides
 							["coord"] = { 69.8, 34.2, VASHJIR_ABYSSAL_DEPTHS },
-						}),
+							["timeline"] = { ADDED_4_2_0 },
+						})),
 						q(26019, {	-- Enormous Eel Egg
 							["provider"] = { "i", 56570 },	-- Enormous Eel Egg
 							["sourceQuest"] = 26015,	-- Phosphora Hunting
@@ -437,11 +438,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["races"] = HORDE_ONLY,
 						}),
-						q(29337, {	-- Into Constant Earth
+						applyclassicphase(CATA_PHASE_THREE, q(29337, {	-- Into Constant Earth
 							["qg"] = 53652,	-- Aggra
 							["sourceQuest"] = 29328,	-- Elemental Bonds: Desire
 							["coord"] = { 69.8, 34.2, VASHJIR_ABYSSAL_DEPTHS },
-						}),
+							["timeline"] = { ADDED_4_2_0 },
+						})),
 						q(26072, {	-- Into the Totem
 							["qg"] = 41600,	-- Erunak Stonespeaker
 							["sourceQuests"] = {
@@ -910,16 +912,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						},
-						q(14482, {	-- Call of Duty
+						q(14482, {	-- Call of Duty (A)
 							["qg"] = 36799,	-- Recruiter Burns
 							["sourceQuests"] = {
 								14481,	-- Into The Abyss
 								27724,	-- Hero's Call: Vashj'ir!
-								28827,	-- To the Depths
+								28827,	-- To the Depths (A)
 							},
 							["coord"] = { 27.4, 24.2, STORMWIND_CITY },
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
+						}),
+						q(25924, {	-- Call of Duty (H)
+							["qg"] = 41621,	-- Commander Thorak
+							["sourceQuests"] = {
+								28816,	-- To the Depths (H)
+								27718,	-- Warchief's Command: Vashj'ir!
+							},
+							["coord"] = { 55.9, 12.3, DUROTAR },
+							["timeline"] = { ADDED_4_0_3 },
+							["races"] = HORDE_ONLY,
 						}),
 						q(25602, {	-- Can't Start a Fire Without a Spark
 							["qg"] = 39884,	-- Captain Samir
@@ -1309,6 +1321,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 63.8, 59.9, VASHJIR_KELPTHAR_FOREST },
 						}),
+						warchiefscommand(q(27718, {	-- Warchief's Command: Vashj'ir!
+							["timeline"] = { ADDED_4_0_3 },
+							["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },	-- Only found in Orgrimmar, Thunder Bluff, & Undercity in Cataclysm.
+							["isBreadcrumb"] = true,
+							-- #if BEFORE 7.3.5
+							-- Cataclysm: Minimum is level 80. (TODO: Confirm this.)
+							["lvl"] = 80,
+							-- #endif
+						})),
 						q(25885, {	-- What? What? In My Gut...? (A)
 							["qg"] = 41340,	-- Private Pollard
 							["sourceQuest"] = 25887,	-- Wake of Destruction

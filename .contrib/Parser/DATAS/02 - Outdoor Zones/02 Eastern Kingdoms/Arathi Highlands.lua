@@ -184,6 +184,43 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(QUESTS, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79677, {	-- A Quick Grocery Run
+					["qg"] = 217300,	-- Skonk <Amateur Chef>
+					["sourceQuest"] = 79624,	-- Anyone Can Cook
+					["coord"] = { 57.6, 74.6, ARATHI_HIGHLANDS },
+					["timeline"] = { "added 1.15.1" },
+					["maps"] = { HILLSBRAD_FOOTHILLS, SWAMP_OF_SORROWS, BADLANDS },
+					["classes"] = { WARRIOR },
+					["lvl"] = 26,
+					["groups"] = {
+						objective(1, {	-- 0/1 Hybrid Haunch
+							["provider"] = { "i", 213526 },	-- Hybrid Haunch
+							["coord"] = { 83.0, 36.0, HILLSBRAD_FOOTHILLS },
+							["cr"] = 2347,	-- Wild Gryphon
+						}),
+						objective(2, {	-- 0/1 Smuggler's Spice Blend
+							["providers"] = {
+								{ "i", 213527 },	-- Smuggler's Spice Blend
+								{ "o", 422911 },	-- Sealed Barrel
+							},
+							["coord"] = { 21.5, 83.9, ARATHI_HIGHLANDS },
+						}),
+						objective(3, {	-- 0/1 Balmy Brew
+							["providers"] = {
+								{ "i", 213528 },	-- Balmy Brew
+								{ "o", 422919 },	-- Tapped Shadowforge Keg
+							},
+							["coord"] = { 41.5, 28.1, BADLANDS },
+						}),
+						objective(4, {	-- 0/1 Viscous Venom
+							["provider"] = { "i", 213529 },	-- Viscous Venom
+							["coord"] = { 70.0, 72.0, SWAMP_OF_SORROWS },
+							["cr"] = 769,	-- Deathstrike Tarantula
+						}),
+					},
+				})),
+				-- #endif
 				q(26081, {	-- Alina's Reward
 					["qg"] = 41944,	-- Galen Trollbane
 					["sourceQuest"] = 26033,	-- Trol'kalar
@@ -222,6 +259,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79624, {	-- Anyone Can Cook
+					["providers"] = {
+						{ "i", 213422 },	-- Illegible Recipe
+						{ "n", 217300 },	-- Skonk <Amateur Chef>
+					},
+					["coord"] = { 20.0, 67.4, ARATHI_HIGHLANDS },
+					["timeline"] = { "added 1.15.1" },
+					["maps"] = { ALTERAC_MOUNTAINS },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						2569,	-- Boulderfist Mauler
+						2254,	-- Crushridge Mauler
+						2570,	-- Boulderfist Shaman
+						2255,	-- Crushridge Mage
+						2256,	-- Crushridge Enforcer
+						2571,	-- Boulderfist Lord
+						2287,	-- Crushridge Warmonger
+					},
+					["lvl"] = 26,
+				})),
+				-- #endif
 				q(696, {	-- Attack on the Tower
 					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 695,	-- An Apprentice's Enchantment
@@ -760,8 +819,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 28 and 35, 30 is based on Wowpedia info)
-					["lvl"] = { 24, 30 },
+					-- Cataclysm: Maximum is level 28 (TODO: Test max level between 28 and 35)
+					["lvl"] = { 24, 28 },
 					-- #endif
 				})),
 				q(659, {	-- Hints of a New Plague? (1/5)
@@ -1410,6 +1469,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79678, {	-- Taste Testing
+					["qg"] = 217300,	-- Skonk <Amateur Chef>
+					["sourceQuest"] = 79677,	-- A Quick Grocery Run
+					["coord"] = { 57.6, 74.6, ARATHI_HIGHLANDS },
+					["timeline"] = { "added 1.15.1" },
+					["classes"] = { WARRIOR },
+					["lvl"] = 26,
+					["groups"] = {
+						i(213103, {	-- 
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(416004),	-- Engrave Belt - Blood Surge
+							},
+						}),
+						i(213105),	-- Shawarmageddon
+					},
+				})),
+				-- #endif
 				q(640, {	-- The Broken Sigil
 					["qg"] = 2703,	-- Zengu
 					["sourceQuest"] = 639,	-- Sigil of Strom
@@ -1628,6 +1706,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { BADLANDS },
 					["lvl"] = 30,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79976, {	-- This Must Be The Place
+					["providers"] = {
+						{ "o", 406918 },	-- Messenger Bag
+						{ "o", 424006 },	-- Hastily Rolled-Up Satchel
+					},
+					["sourceQuest"] = 79975,	-- Eagle's Fist
+					["coord"] = { 22.5, 24.2, ARATHI_HIGHLANDS },
+					["timeline"] = { "added 1.15.1" },
+					["lvl"] = 14,
+					["groups"] = {
+						i(211527),	-- Cozy Sleeping Bag
+						i(216619),	-- Student Fodder
+					},
+				})),
+				-- #endif
 				q(26428, {	-- To Steal From Thieves
 					["qg"] = 4486,	-- Genavie Callow
 					["coord"] = { 13.7, 33.9, ARATHI_HIGHLANDS },
@@ -1933,8 +2027,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 26 and 35, 30 is based on Wowpedia info)
-					["lvl"] = { 24, 30 },
+					-- Cataclysm: Maximum is level 28 (TODO: Test max level between 26 and 35)
+					["lvl"] = { 24, 28 },
 					-- #endif
 				})),
 				warchiefscommand(q(28619, {	-- Warchief's Command: Arathi Highlands! (Hillsbrad)
@@ -1943,8 +2037,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 26 and 35, 30 is based on Wowpedia info)
-					["lvl"] = { 24, 30 },
+					-- This version apparently doesn't have a max level.
+					["lvl"] = 24,
 					-- #endif
 				})),
 				q(691, {	-- Worth Its Weight in Gold
@@ -2024,6 +2118,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
+					["provider"] = { "i", 216941 },	-- Ariden's Sigil
+					["coord"] = { 60, 40, ARATHI_HIGHLANDS },
+					["groups"] = {
+						i(216947),	-- Whirring Dalaran Relic
+					},
+				})),
+				-- #endif
 				n(2601, {	-- Foulbelly
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2186,6 +2289,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_TWO, i(213447, {	-- Rosary of the Light
+					["description"] = "Combine the 3 divine prayer beads and then bring it to Brother Atticus.",
+					["timeline"] = { "added 1.15.1" },
+					["cost"] = {
+						{ "i", 213448, 1 },	-- Divine Prayer Bead I
+						{ "i", 213449, 1 },	-- Divine Prayer Bead II
+						{ "i", 213450, 1 },	-- Divine Prayer Bead III
+					},
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(213128, {	-- Rune of Piety
+					["providers"] = {
+						{ "i", 213447 },	-- Rosary of the Light
+						{ "n", 217387 },	-- Brother Atticus
+					},
+					["coord"] = { 27.0, 57.0, ARATHI_HIGHLANDS },
+					["timeline"] = { "added 1.15.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						recipe(426175),	-- Engrave Belt - Malleable Protection
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(2816, {	-- Androd Fadran <Leatherworking Supplies>
 					["coords"] = {
@@ -2515,6 +2646,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3345, {	-- Silk Wizard Hat
 					["cr"] = 2591,	-- Syndicate Magus
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, i(213444, {	-- Tarnished Prayer Bead I
+					["description"] = "With this in your inventory and while in combat, cast Blessing of Might and then kill an enemy that grants XP.",
+					["timeline"] = { "added 1.15.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(213448),	-- Divine Prayer Bead I
+					},
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(213445, {	-- Tarnished Prayer Bead II
+					["description"] = "With this in your inventory and while in combat with less than 10% health, cast Divine Shield.",
+					["timeline"] = { "added 1.15.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(213449),	-- Divine Prayer Bead II
+					},
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(213446, {	-- Tarnished Prayer Bead III
+					["description"] = "With this in your inventory and while in combat, cast Seal of Justice and then cast Judgement AS THE MOB IS RUNNING AWAY. Judging the enemy before they run will not work.",
+					["timeline"] = { "added 1.15.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(213450),	-- Divine Prayer Bead III
+					},
+				})),
+				-- #endif
 				i(4480, {	-- Thundering Charm
 					["crs"] = {
 						2762,	-- Thundering Exile

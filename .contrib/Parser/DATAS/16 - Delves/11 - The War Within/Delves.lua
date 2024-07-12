@@ -1,3 +1,10 @@
+BOUNTIFUL = createHeader({
+	readable = "Bountiful",
+	--icon = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",
+	text = {
+		en = "Bountiful",
+	},
+});
 local UNDERCOIN = 2803;
 root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
@@ -15,62 +22,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40451),	-- Buddy System III
 		ach(40450),	-- Buddy System II
 		ach(40455),	-- Buddy System
-		ach(40437, bubbleDown({ ["_noautomation"] = true, }, {	-- Delver of the Depths
-			crit(68295),	-- Earthcrawl Mines
-			crit(68296),	-- Fungal Folly
-			crit(68297),	-- Kriegval's Rest
-			crit(68298),	-- Mycomancer Cavern
-			crit(68299),	-- Nightfall Sanctum
-			crit(68300),	-- Skittering Breach
-			crit(68303),	-- Tak-Rethan Abyss
-			crit(68302),	-- The Dread Pit
-			crit(68301),	-- The Sinkhole
-			crit(68304),	-- The Spiral Weave
-			crit(68305),	-- The Underkeep
-			crit(68306),	-- The Waterworks
-		})),
-		ach(40447, bubbleDown({ ["_noautomation"] = true, }, {		-- Delver of the Depths II
-			crit(68307),	-- Earthcrawl Mines
-			crit(68308),	-- Fungal Folly
-			crit(68309),	-- Kriegval's Rest
-			crit(68310),	-- Mycomancer Cavern
-			crit(68311),	-- Nightfall Sanctum
-			crit(68312),	-- Skittering Breach
-			crit(68313),	-- Tak-Rethan Abyss
-			crit(68314),	-- The Dread Pit
-			crit(68315),	-- The Sinkhole
-			crit(68316),	-- The Spiral Weave
-			crit(68317),	-- The Underkeep
-			crit(68318),	-- The Waterworks
-		})),
-		ach(40448, bubbleDown({ ["_noautomation"] = true, }, {		-- Delver of the Depths III
-			crit(68319),	-- Earthcrawl Mines
-			crit(68320),	-- Fungal Folly
-			crit(68321),	-- Kriegval's Rest
-			crit(68322),	-- Mycomancer Cavern
-			crit(68323),	-- Nightfall Sanctum
-			crit(68324),	-- Skittering Breach
-			crit(68325),	-- Tak-Rethan Abyss
-			crit(68326),	-- The Dread Pit
-			crit(68327),	-- The Sinkhole
-			crit(68328),	-- The Spiral Weave
-			crit(68329),	-- The Underkeep
-			crit(68330),	-- The Waterworks
-		})),
-		ach(40449, bubbleDown({ ["_noautomation"] = true, }, {		-- Delver of the Depths IV
-			crit(68331),	-- Earthcrawl Mines
-			crit(68332),	-- Fungal Folly
-			crit(68333),	-- Kriegval's Rest
-			crit(68334),	-- Mycomancer Cavern
-			crit(68335),	-- Nightfall Sanctum
-			crit(68336),	-- Skittering Breach
-			crit(68337),	-- Tak-Rethan Abyss
-			crit(68338),	-- The Dread Pit
-			crit(68339),	-- The Sinkhole
-			crit(68340),	-- The Spiral Weave
-			crit(68341),	-- The Underkeep
-			crit(68342),	-- The Waterworks
-		})),
+		ach(40437),	-- Delver of the Depths (automated)
+		ach(40447),	-- Delver of the Depths II (automated)
+		ach(40448),	-- Delver of the Depths III (automated)
+		ach(40449),	-- Delver of the Depths IV (automated)
 		ach(40454),	-- Daystormer
 		ach(40460),	-- Delve Deep
 		ach(40462),	-- Delve Deeper
@@ -145,6 +100,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
 			["sym"] = {{ "achievement_criteria" }},
 		}),
+		ach(40863),	-- Perplexing Puzzle
+		ach(40864),	-- Plentiful Perplexing Puzzles
 		ach(40820, {	-- Raisin' Brann
 			["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
 		}),
@@ -169,8 +126,41 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40436),	-- You're Getting a Delve!
 	}),
 	n(QUESTS, {
-		-- Brann Bronzebeard leveling quest, probably better to move to hqts?
-		q(82772),	-- First time finishing delves (tutorial end flag/compation unlock?)
+		q(81514, {	-- Bountiful Delves
+			["sourceQuests"] = { 83315 },	-- Preparing for the Unknown
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			["coord"] = { 47.4, 44.4, DORNOGAL },
+		}),
+		q(81510, {	-- Ship It!
+			["sourceQuests"] = { 81514 },	-- Bountiful Delves
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			["coord"] = { 47.4, 44.4, DORNOGAL },
+			["g"] = {
+				i(219391),	-- Delver's Dirigible (MOUNT!)
+			},
+		}),
+		q(81593, {	-- Maximum Potential
+			["sourceQuests"] = { 81510 },	-- Ship It!
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			["coord"] = { 47.4, 44.4, DORNOGAL },
+		}),
+		q(84519, {	-- Ancient Curiosity: Combat
+			["provider"] = { "i", 228560 },	-- Ancient Curio (TODO: providers ids could be swapped)
+			["g"] = {
+				i(228580),	-- Brute Force Idol
+			},
+		}),
+		q(84520, {	-- Ancient Curiosity: Utility
+			["provider"] = { "i", 228581 },	-- Ancient Curio (TODO: providers ids could be swapped)
+			["g"] = {
+				i(228582),	-- Streamlined Relic
+			},
+		}),
+		q(84370, {	-- The Key to Success
+			["provider"] = { "i", 227794 },	-- Archaic Cipher Key
+			["repeatable"] = true,	-- TODO: weekly? seasonal?
+		}),
+		-- Brann Bronzebeard leveling quest,
 		q(77716),	-- Level 2
 		q(77718),	-- Level 3
 		q(77719),	-- Level 4
@@ -179,8 +169,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(77722),	-- Level 7
 		q(77723),	-- Level 8
 		q(77724),	-- Level 9
-		--q(77727),	-- Level 10 (was already attached to achievement 40455 (Buddy System), but I not sure where it grab it from?)
+		q(77727),	-- Level 10
 		q(77728),	-- Level 11
+		q(77729),	-- Level 12
 	}),
 	n(QUESTS, sharedData({
 		["provider"] = { "n", 206017 },	-- Brann Bronzebeard
@@ -203,19 +194,19 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		q(82712),	-- Delves: Trouble Up and Down Khaz Algar
 	})),
+	n(RARES, {
+		n(207482),	-- Invasive Sporecap
+		n(209721),	-- Secret Treasure
+		n(228030),	-- Sir Finley Mrgglton
+		n(223541),	-- Stolen Loader
+		n(208728),	-- Treasure Wraith
+	}),
 	m(2269, {	-- Earthcrawl Mines
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40806),	-- Earthcrawl Mines Discoveries
-				ach(40527, bubbleDown({ ["_noautomation"] = true, }, {	-- Earthcrawl Mines Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
-			}),
-			n(RARES, {
-				n(223541),	-- Stolen Loader
-				n(207482),	-- Invasive Sporecap
-				n(228030),	-- Sir Finley Mrgglton
+				ach(40527),	-- Earthcrawl Mines Stories (automated)
 			}),
 			n(TREASURES, {
 				-- Seems like two rare treasures in this dungeon? Can have different IDs
@@ -251,9 +242,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40803),	-- Fungal Folly Discoveries
-				ach(40525, bubbleDown({ ["_noautomation"] = true, }, {	-- Fungal Folly Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40525),	-- Fungal Folly Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83758, {	-- Delver's Call: Fungal Folly
@@ -293,9 +282,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40807),	-- Kriegval's Rest Discoveries
-				ach(40526, bubbleDown({ ["_noautomation"] = true, }, {	-- Kriegval's Rest Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40526),	-- Kriegval's Rest Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83759, {	-- Delver's Call: Kriegval's Rest
@@ -328,18 +315,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40808),	-- Mycomancer Cavern Discoveries
-				ach(40531, bubbleDown({ ["_noautomation"] = true, }, {	-- Mycomancer Cavern Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40531),	-- Mycomancer Cavern Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83769, {	-- Delver's Call: Mycomancer Cavern
 					["provider"] = { "o", 455690 },	-- Delver's Call: Mycomancer Cavern
 					["coord"] = { 68.9, 44.4, HALLOWFALL },
 				}),
-			}),
-			n(RARES, {
-				-- rares - wraith and sporecap
 			}),
 			n(TREASURES, {
 				o(455497, {	-- Sturdy Chest
@@ -366,9 +348,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40809),	-- Nightfall Sanctum Discoveries
-				ach(40530, bubbleDown({ ["_noautomation"] = true, }, {	-- Nightfall Sanctum Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40530),	-- Nightfall Sanctum Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83755, {	-- Delves: Nightfall Sanctum
@@ -397,18 +377,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40810),	-- Skittering Breach Discoveries
-				ach(40533, bubbleDown({ ["_noautomation"] = true, }, {	-- Skittering Breach Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40533),	-- Skittering Breach Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83768, {	-- Delver's Call: The Skittering Breach
 					["provider"] = { "o", 455694 },	-- Delver's Call: The Skittering Breach
 					["coord"] = { 67.8, 45.7, HALLOWFALL },
 				}),
-			}),
-			n(RARES, {
-				-- rare was - wraith
 			}),
 			n(TREASURES, {
 				o(455914, {	-- Sturdy Chest
@@ -435,18 +410,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40811),	-- Tak-Rethan Abyss Discoveries
-				ach(40535, bubbleDown({ ["_noautomation"] = true, }, {	-- Tak-Rethan Abyss Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40535),	-- Tak-Rethan Abyss Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83771, {	-- Delver's Call: Tak-Rethan Abyss
 					["provider"] = { "o", 455720 },	-- Delver's Call: Tak-Rethan Abyss
 					["coord"] = { 57.2, 45.3, AZJ_KAHET },
 				}),
-			}),
-			n(RARES, {
-				-- rare - wraith
 			}),
 			n(TREASURES, {
 				o(455533, {	-- Sturdy Chest
@@ -476,18 +446,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40812),	-- The Dread Pit Discoveries
-				ach(40529, bubbleDown({ ["_noautomation"] = true, }, {	-- The Dread Pit Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40529),	-- The Dread Pit Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83766, {	-- Delver's Call: Dread Pit
 					["provider"] = { "n", 227477 },	-- Brann Bronzebeard
 					["coord"] = { 47.1, 31.9, THE_RINGING_DEEPS },
 				}),
-			}),
-			n(RARES, {
-				-- rare was - Treasure Wraith (n: 208728)
 			}),
 			n(TREASURES, {
 				o(455482, {	-- Sturdy Chest
@@ -514,9 +479,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40813),	-- The Sinkhole Discoveries
-				ach(40532, bubbleDown({ ["_noautomation"] = true, }, {	-- The Sinkhole Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40532),	-- The Sinkhole Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83767, {	-- Delver's Call: The Sinkhole
@@ -550,9 +513,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(216772),	-- Whispering Explosives (QI!)
 			n(ACHIEVEMENTS, {
 				ach(40814),	-- The Spiral Weave Discoveries
-				ach(40536, bubbleDown({ ["_noautomation"] = true, }, {	-- The Spiral Weave Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40536),	-- The Spiral Weave Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83770, {	-- Delver's Call: Spiral Weave
@@ -589,9 +550,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40815),	-- The Underkeep Discoveries
-				ach(40534, bubbleDown({ ["_noautomation"] = true, }, {	-- The Underkeep Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40534),	-- The Underkeep Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83761, {	-- Delves: The Underkeep
@@ -620,18 +579,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40816),	-- The Waterworks Discoveries
-				ach(40528, bubbleDown({ ["_noautomation"] = true, }, {	-- The Waterworks Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40528),	-- The Waterworks Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83749, {	-- Delves: The Waterworks
 					["provider"] = { "n", 227477 },	-- Brann Bronzebeard
 					["coord"] = { 47.1, 31.9, THE_RINGING_DEEPS },
 				}),
-			}),
-			n(RARES, {
-				-- rare was - murloc, wraith
 			}),
 			n(TREASURES, {
 				o(455490, {	-- Sturdy Chest
@@ -680,14 +634,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 46.2, 48.0, THE_RINGING_DEEPS },
 				}),
 			}),
-			n(RARES, {
-			}),
 			n(TREASURES, {
 			}),
 		},
 	}),
 	n(REWARDS, {
 		-- Curio
+		i(228560),	-- Ancient Curio (QI!/QS!)
+		i(228581),	-- Ancient Curio (QI!/QS!)
 		i(225902),	-- Idol of Final Will
 		i(225906),	-- Lifeless Necrotic Relic
 		i(225900),	-- Light-Touched Idol
@@ -695,6 +649,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		i(225899),	-- Unbreakable Iron Idol
 		filter(RECIPES, {
 			i(223139),	-- Formula: Enchant Cloak - Chant of Leeching Fangs (RECIPE!)
+			i(224434),	-- Pattern: Dawnthread Lining (RECIPE!)
+			i(223101),	-- Pattern: Reinforced Setae Flyers (RECIPE!)
+			i(223051),	-- Plans: Artisan Skinning Knife (RECIPE!)
+			i(223060),	-- Technique: Patient Alchemist's Mixing Rod (RECIPE!)
 		}),
 		filter(MISC, {
 			i(224181),	-- Companion Experience (Tier 1-2)
@@ -705,10 +663,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(222916),	-- Player Experience (Tier 1-2)
 			i(222917),	-- Player Experience (Tier 3)
 			i(222927),	-- Weathered Coin Coffer
-			i(228071),	-- Companion Experience (Uncommon)
-			i(228072),	-- Companion Experience (Rare)
-			i(228073),	-- Companion Experience (Epic)
+			i(228071),	-- Chunk of Companion Experience (Uncommon)
+			i(228072),	-- Chunk of Companion Experience (Rare)
+			i(228073),	-- Chunk of Companion Experience (Epic)
 			i(223287),	-- Atomized Salien Slime
+			i(227794),	-- Archaic Cipher Key (QI!/QS!)
 			i(218121),	-- Candle Light
 			i(226132),	-- Deployable Recovery Keg
 			i(226110),	-- Elemental Fusion Bomb
@@ -799,6 +758,81 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(211046),	-- Umbral Artist's Chisel
 			i(211040),	-- Unhinged Vault-Hatch
 		}),
+		n(BOUNTIFUL, bubbleDownFiltered({
+			["cost"] = {{"c", RESTORED_COFFER_KEY, 1}},
+		},FILTERFUNC_itemID,{
+			i(220520),	-- Radiant Echo
+			filter(BACK_F, {
+				i(219183),	-- Amice of Hidden Stars
+				i(219185),	-- Serape of the Stygian Sea
+				i(219186),	-- Myconic Wrap
+				i(219190),	-- Unkindled Waxweave Mozzetta
+			}),
+			filter(CLOTH, {
+				i(219175),	-- Unkindled Waxweave Clasps
+				i(219176),	-- Unkindled Waxweave Belt
+				i(219177),	-- Unkindled Waxweave Shoulderpads
+				i(219178),	-- Unkindled Waxweave Buskins
+				i(219179),	-- Unkindled Waxweave Veil
+				i(219180),	-- Unkindled Waxweave Mitts
+				i(219181),	-- Unkindled Waxweave Slippers
+				i(219182),	-- Unkindled Waxweave Garb
+			}),
+			filter(FINGER_F, {
+				i(219187),	-- Bone-Carved Circlet
+				i(219221),	-- Ceremonial Song Ring
+				i(219188),	-- Dark Abyss Hoop
+				i(219189),	-- Fuzzy Molding Halo
+			}),
+			filter(LEATHER, {
+				i(219167),	-- Myconic Wristbands
+				i(219168),	-- Myconic Strap
+				i(219169),	-- Myconic Shoulderstrap
+				i(219170),	-- Myconic Chausses
+				i(219171),	-- Myconic Hood
+				i(219172),	-- Myconic Clutches
+				i(219173),	-- Myconic Waders
+				i(219174),	-- Myconic Frock
+			}),
+			filter(MAIL, {
+				i(219159),	-- Wrist Bindings of the Stygian Sea
+				i(219160),	-- Sash of the Stygian Sea
+				i(219161),	-- Spaulders of the Stygian Sea
+				i(219162),	-- Poleyns of the Stygian Sea
+				i(219163),	-- Bascinet of the Stygian Sea
+				i(219164),	-- Grasps of the Stygian Sea
+				i(219165),	-- Treads of the Stygian Sea
+				i(219166),	-- Hauberk of the Stygian Sea
+			}),
+			filter(NECK_F, {
+				i(219184),	-- Enkindled Locket
+				i(219217),	-- Gold-Thread Choker
+			}),
+			filter(PLATE, {
+				i(219151),	-- Handguards of Hidden Stars
+				i(219152),	-- Charmbelt of Hidden Stars
+				i(219153),	-- Pauldrons of Hidden Stars
+				i(219154),	-- Legplates of Hidden Stars
+				i(219155),	-- Visage of Hidden Stars
+				i(219156),	-- Fists of Hidden Stars
+				i(219157),	-- Sollerets of Hidden Stars
+				i(219158),	-- Raiment of Hidden Stars
+			}),
+			n(WEAPONS, {
+				i(219199),	-- Radiant Steelglaives
+				i(219200),	-- Unscathed Rampart
+				i(219201),	-- Vessel of Sacred Flame
+				i(219202),	-- Lamplighter's Mercy
+				i(219203),	-- Arathi Holy Standard
+				i(219204),	-- Imperial Flarebolt
+				i(219205),	-- Shooting Starquebus
+				i(219206),	-- Hand of Piety
+				i(219207),	-- Flame-Bearing Crozier
+				i(219208),	-- Pyretic Star
+				i(219209),	-- Worshipper's Poniard
+				i(219210),	-- Sanctifier's Startierce
+			}),
+		})),
 	}),
 	n(VENDORS, {
 		n(226250, {	-- Reno Jackson <Delve Treasures>
@@ -1098,3 +1132,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, {
+	q(82772),	-- First Time per day? (Got Unflagged at reset)
+});

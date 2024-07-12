@@ -839,12 +839,14 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				r(446935),	-- Cool Sunset Bracers
 				r(446928),	-- Dawnweave Bolt
 				r(446977),	-- Dawnweave Reagent Bag
+				r(447001),	-- Daybreak Spellthread
 				r(446979),	-- Duskweave Bag
 				r(446927),	-- Duskweave Bolt
 				r(446932),	-- Gloves of the Woven Dusk
 				r(446930),	-- Grips of the Woven Dawn
 				r(446995),	-- Preserving Embroidery Thread
 				r(446933),	-- Slippers of the Woven Dusk
+				r(447000),	-- Sunset Spellthread
 				r(454431),	-- The Severed Satchel
 				r(446931),	-- Treads of the Woven Dawn
 				r(446934),	-- Warm Sunrise Bracers
@@ -1125,6 +1127,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Shadoweave Mask",
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_0 },
 					["recipeID"] = 12086
 				},
 				{
@@ -1161,10 +1164,23 @@ profession(TAILORING, {
 					["name"] = "Black Mageweave Shoulders",
 					["recipeID"] = 12074
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["timeline"] = { "added 1.15.1" },
+					["name"] = "Crimson Silk Shoulders",
+					["recipeID"] = 439093
+				}),
+				{
+					["timeline"] = { "removed 1.15.1" },
+					["name"] = "Crimson Silk Shoulders",
+					["recipeID"] = 8793
+				},
+				-- #else
 				{
 					["name"] = "Crimson Silk Shoulders",
 					["recipeID"] = 8793
 				},
+				-- #endif
 				{
 					["name"] = "Double-stitched Woolen Shoulders",
 					["recipeID"] = 3848
@@ -1233,10 +1249,23 @@ profession(TAILORING, {
 					["name"] = "Black Mageweave Robe",
 					["recipeID"] = 12050
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["timeline"] = { "added 1.15.1" },
+					["name"] = "Black Mageweave Vest",
+					["recipeID"] = 439086
+				}),
+				{	--
+					["timeline"] = { "removed 1.15.1" },
+					["name"] = "Black Mageweave Vest",
+					["recipeID"] = 12048
+				},
+				-- #else
 				{
 					["name"] = "Black Mageweave Vest",
 					["recipeID"] = 12048
 				},
+				-- #endif
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Vest",
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
@@ -1274,10 +1303,23 @@ profession(TAILORING, {
 					["name"] = "Cindercloth Vest",
 					["recipeID"] = 18408
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["timeline"] = { "added 1.15.1" },
+					["name"] = "Crimson Silk Robe",
+					["recipeID"] = 8802
+				}),
+				{
+					["timeline"] = { "removed 1.15.1" },
+					["name"] = "Crimson Silk Robe",
+					["recipeID"] = 8802
+				},
+				-- #else
 				{
 					["name"] = "Crimson Silk Robe",
 					["recipeID"] = 8802
 				},
+				-- #endif
 				{
 					["name"] = "Crimson Silk Vest",
 					["recipeID"] = 8791
@@ -1645,6 +1687,23 @@ profession(TAILORING, {
 					["name"] = "Black Mageweave Leggings",
 					["recipeID"] = 12049
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["timeline"] = { "added 1.15.1" },
+					["name"] = "Black Mageweave Leggings",
+					["recipeID"] = 439088
+				}),
+				{
+					["timeline"] = { "removed 1.15.1" },
+					["name"] = "Black Mageweave Leggings",
+					["recipeID"] = 12049
+				},
+				-- #else
+				{
+					["name"] = "Black Mageweave Leggings",
+					["recipeID"] = 12049
+				},
+				-- #endif
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Leggings",
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
@@ -1758,10 +1817,23 @@ profession(TAILORING, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24093,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["timeline"] = { "added 1.15.1" },
+					["name"] = "Boots of the Enchanter",
+					["recipeID"] = 439097
+				}),
+				{
+					["timeline"] = { "removed 1.15.1" },
+					["name"] = "Boots of the Enchanter",
+					["recipeID"] = 3860
+				},
+				-- #else
 				{
 					["name"] = "Boots of the Enchanter",
 					["recipeID"] = 3860
 				},
+				-- #endif
 				{
 					["name"] = "Cindercloth Boots",
 					["recipeID"] = 12088
@@ -6192,7 +6264,7 @@ itemrecipe("Pattern: Tuxedo Shirt", 10321, 12085);
 itemrecipe("Pattern: Tuxedo Pants", 10323, 12089);
 itemrecipe("Pattern: White Wedding Dress", 10325, 12091);
 itemrecipe("Pattern: Tuxedo Jacket", 10326, 12093);
-itemrecipe("Pattern: Shadoweave Mask", 10463, 12086, REMOVED_4_0_3);
+itemrecipe("Pattern: Shadoweave Mask", 10463, 12086);
 itemrecipe("Pattern: Black Swashbuckler's Shirt", 10728, 3873);
 itemrecipe("Pattern: Frostweave Tunic", 14466, 18403);
 itemrecipe("Pattern: Frostweave Robe", 14467, 18404);

@@ -764,6 +764,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				heroscall(q(28579, {	-- Hero's Call: Badlands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE, STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 46 (TODO: Test max level between 48 and 55)
+					["lvl"] = { 44, 46 },
+					-- #endif
+				})),
 				q(1108, {	-- Indurium
 					["qg"] = 4618,	-- Martek the Exiled
 					["sourceQuest"] = 1106,	-- Martek the Exiled
@@ -1953,6 +1963,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28580, {	-- Warchief's Command: Badlands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 47. (TODO: Test max level)
+					["lvl"] = { 44, 47 },
+					-- #endif
+				})),
 				q(27775, {	-- When the Going Gets Tough, Cheat
 					["qg"] = 46653,	-- Garyanne Fleezlebop
 					["coord"] = { 64.2, 38.1, BADLANDS },
@@ -2050,6 +2070,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
+					["provider"] = { "i", 216941 },	-- Ariden's Sigil
+					["coord"] = { 58, 54, BADLANDS },
+					["groups"] = {
+						i(216951),	-- Slippery Dalaran Relic
+					},
+				})),
+				-- #endif
 				n(50728, {	-- Deathstrike
 					["coord"] = { 70.2, 53.8, BADLANDS },
 					["timeline"] = { ADDED_5_1_0 },

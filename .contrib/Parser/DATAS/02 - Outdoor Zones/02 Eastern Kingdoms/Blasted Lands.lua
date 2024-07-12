@@ -475,6 +475,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
+				heroscall(q(28673, {	-- Hero's Call: Blasted Lands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE, STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 57 (TODO: Test max level between 58 and 65)
+					["lvl"] = { 54, 57 },
+					-- #endif
+				})),
 				q(25702, {	-- Home... Gone... Naga...
 					["qg"] = 41265,	-- Salt-Flop
 					["coord"] = { 73.1, 47.4, BLASTED_LANDS },
@@ -1483,6 +1493,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28671, {	-- Warchief's Command: Blasted Lands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { UNDERCITY },	-- Only found in Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 57. (TODO: Test max level)
+					["lvl"] = { 54, 57 },
+					-- #endif
+				})),
 				q(25714, {	-- Watcher Mahar Ba
 					["providers"] = {
 						{ "n", 5393 },	-- Quartermaster Lungertz

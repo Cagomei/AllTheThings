@@ -1290,14 +1290,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				heroscall(q(28539, {	-- Hero's Call: Stonetalon Mountains!  (max level 28)
+				heroscall(q(28539, {	-- Hero's Call: Stonetalon Mountains!
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 27 and 35, 30 is based on Wowpedia info)
-					["lvl"] = { 24, 30 },
+					-- Cataclysm: Maximum is level 28 (TODO: Test max level between 27 and 35)
+					["lvl"] = { 24, 28 },
 					-- #endif
 				})),
 				q(25935, {	-- Hungry Pups
@@ -2064,6 +2064,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79980, {	-- Scramble
+					["provider"] = { "o", 424005 },	-- Pocket Litter
+					["sourceQuest"] = 79192,	-- Stepping Stones
+					["coord"] = { 40.8, 52.5, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 1.15.1" },
+					["lvl"] = 14,
+					["groups"] = {
+						i(216619, {	-- Student Fodder
+							["description"] = "This item gives you 4 bars of Rested Experience when consumed.",
+						}),
+						i(217314),	-- Moonsight Rifle
+						i(217315),	-- Precision Bow
+						i(3463),	-- Silver Star
+					},
+				})),
+				-- #endif
 				q(26009, {	-- Seek and Destroy
 					["qg"] = 41023,	-- Overlord Krom'gar
 					["altQuests"] = { 26115 },	-- To Be Horde...
@@ -2585,6 +2602,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79974, {	-- Wet Job
+					["provider"] = { "o", 424012 },	-- Mound of Dirt
+					["sourceQuest"] = 79980,	-- Scramble
+					["coord"] = { 39.6, 49.9, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 1.15.1" },
+					["maps"] = { LOCH_MODAN },
+					["lvl"] = 14,
+					["groups"] = {
+						i(20709),	-- Rumsey Rum Light
+					},
+				})),
+				-- #endif
 				q(26044, {	-- Where Are the Parts?
 					["qg"] = 40902,	-- Chief Blastgineer Bombgutz
 					["sourceQuest"] = 26020,	-- Report to Bombgutz

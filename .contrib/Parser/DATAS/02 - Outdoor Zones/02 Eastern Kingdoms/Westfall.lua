@@ -160,6 +160,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(QUESTS, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79008, {	-- ...and that note you found (A)
+					["providers"] = {
+						{ "o", 415107 },	-- Burned-Out Remains
+						{ "o", 417072 },	-- Nailed Plank
+					},
+					["coords"] = {
+						{ 37.5, 50.7, WESTFALL },
+						{ 46.4, 73.8, THE_BARRENS },
+					},
+					["timeline"] = { "added 1.15.1" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 14,
+					["groups"] = {
+						i(2459),	-- Swiftness Potion
+						i(3388),	-- Strong Troll's Blood Potion
+					},
+				})),
+				-- #endif
 				q(6181, {	-- A Swift Message
 					["providers"] = {
 						{ "n", 491 },	-- Quartermaster Lewis
@@ -497,6 +516,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = 9,
 				}),
 				heroscall(q(28562, {	-- Hero's Call: Westfall!
 					["timeline"] = { ADDED_4_0_3 },
@@ -504,8 +524,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 9. (Confirmed by Hurieve, Crieve's Level 9 Hunter.)
-					-- Cataclysm: Maximum is level 20 (TODO: Test max level between 16 and 25, 20 is based on Wowpedia info)
-					["lvl"] = { 9, 20 },
+					-- Cataclysm: Maximum is level 18 (TODO: Test max level between 16 and 25)
+					["lvl"] = { 9, 18 },
 					-- #endif
 				})),
 				q(26266, {	-- Hope for the People

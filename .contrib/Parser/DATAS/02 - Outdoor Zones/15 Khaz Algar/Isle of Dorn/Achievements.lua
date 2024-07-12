@@ -6,17 +6,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		n(ACHIEVEMENTS, {
 			ach(40435),		-- Adventurer of the Isle of Dorn (automated)
 			ach(40831, {	-- Explore the Isle of Dorn
-				-- TODO: These criteria look unfinished
-				crit(69608),	-- Ruptured Lake
-				crit(69608),	-- Lightless Channels
-				crit(69608),	-- Crawling Chasm
-				crit(69608),	-- The Weaver's Lair
-				crit(69608),	-- Untamed Valley
-				crit(69608),	-- Twitching Gorge
-				crit(69608),	-- Rak-Ush
-				crit(69608),	-- The Skeins
-				crit(69608),	-- Umbral Bazaar
-				crit(69608),	-- High Hollows
+				crit(69786),	-- Ruptured Lake
+				crit(69787),	-- Lightless Channels
+				crit(69788),	-- Crawling Chasm
+				crit(69789),	-- The Weaver's Lair
+				crit(69790),	-- Untamed Valley
+				crit(69791),	-- Twitching Gorge
+				crit(69792),	-- Rak-Ush
+				crit(69793),	-- The Skeins
+				crit(69794),	-- Umbral Bazaar
+				crit(69795),	-- High Hollows
 			}),
 			ach(40630),		-- For the Collective
 			ach(40623),		-- I Only Need One Trip
@@ -36,12 +35,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}},
 			}),
 			ach(40665, {	-- Skyriding Glyphs: Dhar Durgaz
-				-- TODO
-				--["coord"] = { X, Y, ISLE_OF_DORN },
+				["coord"] = { 44.5, 79.7, ISLE_OF_DORN },
 			}),
 			ach(40669, {	-- Skyriding Glyphs: Cinderbrew Meadery
-				-- TODO
-				--["coord"] = { X, Y, ISLE_OF_DORN },
+				["coord"] = { 78.2, 42.6, ISLE_OF_DORN },
 			}),
 			ach(40663, {	-- Skyriding Glyphs: Dhar Oztan
 				["coord"] = { 23.1, 58.5, ISLE_OF_DORN },
@@ -50,16 +47,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 71.9, 47.2, ISLE_OF_DORN },
 			}),
 			ach(40666, {	-- Skyriding Glyphs: Sunken Shield
-				-- TODO
-				--["coord"] = { X, Y, ISLE_OF_DORN },
+				["coord"] = { 68.3, 71.8, ISLE_OF_DORN },
 			}),
 			ach(40664, {	-- Skyriding Glyphs: Storm's Watch
-				-- TODO
-				--["coord"] = { X, Y, ISLE_OF_DORN },
+				["coord"] = { 37.9, 40.9, ISLE_OF_DORN },
 			}),
 			ach(40668, {	-- Skyriding Glyphs: Thunderhead Peak
-				-- TODO
-				--["coord"] = { X, Y, ISLE_OF_DORN },
+				["coord"] = { 56.2, 17.8, ISLE_OF_DORN },
 			}),
 			ach(40667, {	-- Skyriding Glyphs: Thul Medran
 				["coord"] = { 47.9, 26.6, ISLE_OF_DORN },

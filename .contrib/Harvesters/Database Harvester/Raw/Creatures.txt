@@ -21889,3 +21889,13 @@
 229340@@@Stormwind Knight
 229341@@@Hallowfall Lightblade
 229342@@@Zandalari Prelate
+11.0.0.55419
+229426@@@Alleria Windrunner
+229448@@@Alleria Windrunner
+229449@@@Faerin Lothar
+229451@@@Nightfall Darkcaster
+229453@@@Aelric Leid
+11.0.2.55399
+229512@@@Nerubian Swarmite
+229696@@@Targeting Bunny
+229697@@@Targeting Bunny
