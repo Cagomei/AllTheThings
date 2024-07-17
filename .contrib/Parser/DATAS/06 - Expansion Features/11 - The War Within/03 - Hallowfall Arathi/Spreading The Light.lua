@@ -71,6 +71,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						},
 					}),
 				})),
+				n(QUESTS, {
+					-- TODO: Expand this /maybe SpeciaL?
+					q(82007, {	-- Tale of Tails
+						i(220782),	-- Thunder (PET!)
+					}),
+
+				}),
 				n(QUESTS, sharedData({ ["isWeekly"] = true }, {
 					q(79346, {	-- Chew On That
 						["sourceQuests"] = { 79295 },	-- Keyflame: Taerry Bligestone
@@ -218,12 +225,67 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(223928),	-- Crop Cutter's Gauntlets
 						},
 					}),
+					n(214757, {	-- Croakit
+						["coord"] = { 67.3, 23.5, HALLOWFALL },
+						["questID"] = 82560,
+					}),
+					n(206184, {	-- Deathpetal
+						["coord"] = { 63.8, 32.0, HALLOWFALL },
+						["questID"] = 82559,
+					}),
+					n(221179, {	-- Duskshadow
+						["coord"] = { 64.1, 19.5, HALLOWFALL },
+						["questID"] = 82562,
+					}),
+					n(207780, {	-- Finclaw Bloodtide
+						["provider"] = { "n", 220492 },	-- Finclaw Bloodtide
+						--["coord"] = { X, Y, HALLOWFALL },
+						["questID"] = 82564,
+					}),
+					n(206203, {	-- Moth'ethk
+						["coord"] = { 63.5, 28.5, HALLOWFALL },
+						["questID"] = 82557,
+					}),
+					n(220771, {	-- Murkspike
+						["coord"] = { 62.4, 13.3, HALLOWFALL },
+						["questID"] = 82565,
+					}),
+					n(206977, {	-- Parasidious
+						--["coord"] = { X, Y, HALLOWFALL },
+						["questID"] = 82563,
+					}),
+					n(207826, {	-- Ravageant
+						["coord"] = { 59.8, 21.4, HALLOWFALL },
+						["questID"] = 82566,
+					}),
+					n(207803, {	-- Toadstomper
+						["coord"] = { 66.7, 24.1, HALLOWFALL },
+						["questID"] = 82561,
+					}),
 				}),
 				n(REWARDS, {
 					i(RADIANT_REMNANT),
 					i(226264),	-- Radiant Cache
+					i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 					i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
 					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
+				}),
+				n(TREASURES, {
+					o(441795, {	-- Hallowfall Sparkfly
+						["coord"] = { 66.8, 25.3, HALLOWFALL },
+						--["questID"] = ,
+						["cost"] = {{"i", 218107, 1}},	-- 1x Sparkbug Jar
+						["g"] = {
+							i(220771),	-- Hallowed Glowfly (PET!)
+						},
+					}),
+					o(453186, {	-- Nightfarm Growthling
+						--["coord"] = { 66.8, 25.3, HALLOWFALL },
+						--["questID"] = ,
+						["g"] = {
+							i(221546),	-- Nightfarm Growthling (PET!)
+						},
+					})
 				}),
 				n(VENDORS, {
 					n(212419, {	-- Attica Whiskervale
