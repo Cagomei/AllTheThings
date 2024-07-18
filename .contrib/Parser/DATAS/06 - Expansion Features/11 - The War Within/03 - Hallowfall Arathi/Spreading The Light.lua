@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 local RADIANT_REMNANT = 206350;
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(HALLOWFALL_ARATHI, {
 		header(HEADERS.Quest, 76586, bubbleDownSelf({ ["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 3 } }, {	-- Spreading The Light
 			["icon"] = "Interface\\Icons\\spell_holy_holynova",
@@ -269,6 +269,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 					i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
 					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
+					i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
 				}),
 				n(TREASURES, {
 					o(441795, {	-- Hallowfall Sparkfly

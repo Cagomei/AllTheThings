@@ -21,7 +21,7 @@ local function FirstSkin(questID, creatureID, added, group)
 	return t;
 end
 
-root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	i(ARTISANS_ACUITY),
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
@@ -504,10 +504,90 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222463),	-- Siphoning Stiletto
 		}),
 	}),
-	--[[
 	prof(COOKING, {
+		i(222727),	-- Angler's Delight
+		i(223971),	-- Azj-Kahet Special
+		i(222728),	-- Beledar's Bounty
+		i(222736),	-- Chippy Tea
+		i(222744),	-- Cinder Nectar
+		i(222708),	-- Coreway Kabob
+		i(222718),	-- Deepfin Patty
+		i(222729),	-- Empress' Farewell
+		i(222735),	-- Everything Stew
+		i(225592),	-- Exquisitely Eviscerated Muscle
+		i(222732),	-- Feast of the Divine Day
+		i(222733),	-- Feast of the Midnight Masquerade
+		i(222715),	-- Fiery Fish Sticks
+		i(222721),	-- Fish and Chips
+		i(222709),	-- Flash Fire Fillet
+		i(225855),	-- Ghoulfish Delight
+		i(222716),	-- Ginger Glazed Fillet
+		i(222707),	-- Hallowfall Chili
+		i(222776),	-- Hearty Beledar's Bounty
+		i(222775),	-- Hearty Angler's Delight
+		i(222784),	-- Hearty Chippy Tea
+		i(222756),	-- Hearty Coreway Kabob
+		i(222766),	-- Hearty Deepfin Patty
+		i(222777),	-- Hearty Empress' Farewell
+		i(222783),	-- Hearty Everything Stew
+		i(222780),	-- Hearty Feast of the Divine Day
+		i(222781),	-- Hearty Feast of the Midnight Masquerade
+		i(222763),	-- Hearty Fiery Fish Sticks
+		i(222769),	-- Hearty Fish and Chips
+		i(222757),	-- Hearty Flash Fire Fillet
+		i(222764),	-- Hearty Ginger Glazed Fillet
+		i(222755),	-- Hearty Hallowfall Chili
+		i(222778),	-- Hearty Jester's Board
+		i(222771),	-- Hearty Marinated Tenderloins
+		i(222758),	-- Hearty Meat and Potatoes
+		i(222773),	-- Hearty Mycobloom Risotto
+		i(222779),	-- Hearty Outsider's Provisions
+		i(222754),	-- Hearty Pan-Seared Mycobloom
+		i(222759),	-- Hearty Rib Stickers
+		i(222753),	-- Hearty Roasted Mycobloom
+		i(222770),	-- Hearty Salt Baked Seafood
+		i(222765),	-- Hearty Salty Dog
+		i(222751),	-- Hearty Simple Stew
+		i(222772),	-- Hearty Sizzling Honey Roast
+		i(222750),	-- Hearty Skewered Fillet
+		i(222774),	-- Hearty Stuffed Cave Peppers
+		i(222768),	-- Hearty Sushi Special
+		i(222760),	-- Hearty Sweet and Sour Meatballs
+		i(222767),	-- Hearty Sweet and Spicy Soup
+		i(222761),	-- Hearty Tender Twilight Jerky
+		i(222752),	-- Hearty Unseasoned Field Steak
+		i(222762),	-- Hearty Zesty Nibblers
+		i(222730),	-- Jester's Board
+		i(223970),	-- Little Buddy Biscuits
+		i(222723),	-- Marinated Tenderloins
+		i(222710),	-- Meat and Potatoes
+		i(222749),	-- Melted Candlebar
+		i(222725),	-- Mycobloom Risotto
+		i(222731),	-- Outsider's Provisions
+		i(222706),	-- Pan-Seared Mycobloom
+		i(222745),	-- Pep-In-Your-Step
+		i(223967),	-- Protein Slurp
+		i(222711),	-- Rib Stickers
+		i(222705),	-- Roasted Mycobloom
+		i(222747),	-- Rockslide Shake
+		i(222722),	-- Salt Baked Seafood
+		i(222717),	-- Salty Dog
+		i(222703),	-- Simple Stew
+		i(222724),	-- Sizzling Honey Roast
+		i(222702),	-- Skewered Fillet
+		i(223968),	-- Spongey Scramble
+		i(222748),	-- Sticky Sweet Treat
+		i(222726),	-- Stuffed Cave Peppers
+		i(222712),	-- Sweet and Sour Meatballs
+		i(222719),	-- Sweet and Spicy Soup
+		i(222713),	-- Tender Twilight Jerky
+		i(222720),	-- The Sushi Special
+		i(222704),	-- Unseasoned Field Steak
+		i(222714),	-- Zesty Nibblers
+		filter(REAGENTS, {
+			i(222737),	-- Chopped Mycobloom
+		}),
 	}),
-	--]]
 	prof(ENCHANTING, {
 		spell(455970, {	-- Disenchant
 			i(219949),	-- Gleaming Shard+
@@ -1599,10 +1679,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222566),	-- Vagabond's Torch
 		}),
 	}),
-	--[[
 	prof(JEWELCRAFTING, {
-		spell(, {	--
-		}),
+		--spell(, {	--
+		--}),
 		n(ARMOR, {
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
@@ -1617,8 +1696,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 		filter(REAGENTS, {
 		}),
+		filter(TOYS, {
+			i(215147),	-- Beautification Iris (TOY!)
+			i(215145),	-- Remembrance Stone (TOY!)
+		}),
 	}),
-	--]]
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
 			filter(LEATHER, {

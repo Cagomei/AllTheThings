@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(THE_ASSEMBLY_OF_THE_DEEPS, {
 		n(VENDORS, {
 			n(221390, {	-- Waxmonger Squick <Quatermaster>
@@ -73,6 +73,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 6500}},
 						}),
 					}, {	-- RENOWN 18 --
+						i(228698, {	-- Candleflexer's Dumbbell (TOY!)
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+						}),
 						i(223306, {	-- Inflammable Forging Cinch
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
 						}),

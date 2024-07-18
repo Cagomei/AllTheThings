@@ -1,10 +1,10 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_PH, bubbleDownSelf({
-			["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 }
+			["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 }
 		},{
 			ach(20523),		-- The War Within Keystone Explorer: Season One
 			ach(20524, {	-- The War Within Keystone Conqueror: Season One
@@ -43,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			}),
 		})),
 		-- Future season
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_1, ADDED_11_1_0 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH, ADDED_11_1_0 } }, {
 			ach(20579),	-- Keystone Hero: The Rookery
 			ach(20581),	-- Keystone Hero: Priory of the Sacred Flame
 			ach(20583),	-- Keystone Hero: Cinderbrew Meadery

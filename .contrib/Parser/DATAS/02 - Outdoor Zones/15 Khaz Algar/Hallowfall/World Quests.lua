@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	m(HALLOWFALL, {
 		n(WORLD_QUESTS, {
 			--["sourceQuests"] = {
@@ -36,18 +36,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}),
 				q(82088, {	-- Kobyss Kibosh
 					["coord"] = { 35.4, 54.7, HALLOWFALL },
-					--["g"] = {
-					--	i(225560),	-- Ragefin Necrostaff // unsure if it is just rng from mob in this area or only during wq?
-					--},
 				}),
 				q(82582, {	-- Mired in Shadow
 					["coord"] = { 74.8, 50.3, HALLOWFALL },
 				}),
 				q(82120, {	-- Pool Cleaner
 					["coord"] = { 51.1, 50.9, HALLOWFALL },
-					--["g"] = {
-					--	i(225559),	-- Hungering Shimmerfin // unsure if it is just rng from mob in this area or only during wq?
-					--},
 				}),
 				q(81620, {	-- Recovery Job
 					["coord"] = { 56.0, 67.1, HALLOWFALL },

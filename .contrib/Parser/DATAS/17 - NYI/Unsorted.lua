@@ -9,120 +9,125 @@ root(ROOTS.Unsorted, {
 				exploration(15667),	-- Delves
 				exploration(15552),	-- The Undersea
 			}),
-			i(228507),	-- Swarmite Eggsac
-			i(228510),	-- Ripped Swarmite Wing
-			i(228608),	-- On the Application of Arathi Technology to Earthen Life
-			i(228609),	-- Rock Roasting for Dummies
-			i(228610),	-- Artisan's Consortium Payout
-			i(228611),	-- Artisan's Consortium Payout
-			i(228612),	-- Artisan's Consortium Payout
-			i(228623),	-- Blue's Request
-			i(228624),	-- Depleted Awakened Flightstone
-			i(228625),	-- Depleted Ruby Flightstone
-			i(228626),	-- Depleted Blackened Flightstone
-			i(228627),	-- Lively Clutch of Wyrm's Awakened Crests
-			i(228628),	-- Yawning Basket of Aspect's Awakened Crests
-			i(228629),	-- Restless Satchel of Drake's Awakened Crests
-			i(228630),	-- Pouch of Whelpling's Awakened Crests
-			i(228631),	-- Satchel of Drake's Awakened Crests
-			i(228632),	-- Clutch of Wyrm's Awakened Crests
-			i(228633),	-- Large Pouch of Whelpling's Awakened Crests
-			i(228654),	-- Scrit's Handmade Shoes
-			i(228655),	-- Scrit's Handmade Gloves
-			i(228656),	-- Scrit's Handmade Shoulders
-			i(228657),	-- Scrit's Handmade Girdle
-			i(228658),	-- Batzvara's Gratitude
-			i(228668),	-- Compiler's Handwraps
-			i(228671),	-- Compiler's Shoulderguards
-			i(228673),	-- Compiler's Chain Clasp
-			i(228674),	-- Compiler's Greaves
-			i(228698),	-- Candleflexer's Dumbbell
-			i(228705),	-- Arachnoserum
-			i(228706),	-- Rockslidomancer's Stone
-			i(228707),	-- Trial of Burning Light
-			i(228708),	-- Formula: Gleeful Glamour - Earthen
-			i(228711),	-- Small Candle
-			i(228720),	-- Nascent Gemstone
-			i(228721),	-- Hearty Feast
-			-----------
-
-
-
-
-
-
+			filter(MISC, {
+				i(228507),	-- Swarmite Eggsac
+				i(228510),	-- Ripped Swarmite Wing
+				i(228608),	-- On the Application of Arathi Technology to Earthen Life
+				i(228609),	-- Rock Roasting for Dummies
+				i(228624),	-- Depleted Awakened Flightstone
+				i(228625),	-- Depleted Ruby Flightstone
+				i(228626),	-- Depleted Blackened Flightstone
+				i(228627),	-- Lively Clutch of Wyrm's Awakened Crests
+				i(228628),	-- Yawning Basket of Aspect's Awakened Crests
+				i(228629),	-- Restless Satchel of Drake's Awakened Crests
+				i(228630),	-- Pouch of Whelpling's Awakened Crests
+				i(228631),	-- Satchel of Drake's Awakened Crests
+				i(228632),	-- Clutch of Wyrm's Awakened Crests
+				i(228633),	-- Large Pouch of Whelpling's Awakened Crests
+				i(228711),	-- Small Candle
+				i(228720),	-- Nascent Gemstone
+				i(228723),	-- Earthen Pet Rock
+				i(228741),	-- Lamplighter Supply Satchel
+				i(228742),	-- Unidentifiable Cloth
+				i(228743),	-- Damp Weavercloth
+				i(228744),	-- Golbin Twist-Rag
+				i(228745),	-- Aurora Strand
+				i(228756),	-- Bonus Snuffling Experience
+				i(228940),	-- Notorious Thread's Hearthstone
+				i(228942),	-- Bountiful Coffer
+				-- Have QuestID attached
+				i(228943),	-- Spymaster's Severed Thread
+				i(228944),	-- Crypt Lord's Severed Thread
+				i(228945),	-- Executor's Severed Thread
+				i(228946),	-- Weaver's Lair Profession Table
+				i(228947),	-- Weaver's Lair Profession Table
+				---
+				i(228949),	-- Rumor Map
+				i(228950),	-- Rumor Map Bundle
+				i(228951),	-- Pact Treasure Map
+				i(228952),	-- Pact Treasure Map Bundle
+				i(228954),	-- Angler's Guide [New Weather-Beaten Journal?!]
+			}),
+			filter(QUEST_ITEMS, {
+				i(228623),	-- Blue's Request
+			}),
+			n(ARMOR, {
+				-- Probably from Quests
+				i(228654),	-- Scrit's Handmade Shoes
+				i(228655),	-- Scrit's Handmade Gloves
+				i(228656),	-- Scrit's Handmade Shoulders
+				i(228657),	-- Scrit's Handmade Girdle
+				i(228658),	-- Batzvara's Gratitude
+				i(228668),	-- Compiler's Handwraps
+				i(228671),	-- Compiler's Shoulderguards
+				i(228673),	-- Compiler's Chain Clasp
+				i(228674),	-- Compiler's Greaves
+			}),
 			filter(BATTLE_PETS, {
 				i(223498),	-- Charismatic Courier (PET!) [In-Game Shop?]
 				i(228765),	-- Gummi (PET!) [Promotion?]
 				i(228758),	-- Parrlok (PET!) [Trading Post?]
 			}),
+			filter(TOYS, {
+				i(228914),	-- Arachnophile Spectacles (TOY!)
+			}),
+			n(PROFESSIONS, {
+				prof(COOKING, {
+					i(228721),	-- Hearty Feast
+				}),
+				prof(TAILORING, {
+					i(228930),	-- Adorning Ribbon
+				}),
+				i(228921),	-- Griftah's Heavy-Duty Embellishing Powder
+				-- Profession Knowledge Notes
+				i(224817),	-- Algari Herbalist's Notes
+				i(224818),	-- Algari Miner's Notes
+				i(228773),	-- Algari Alchemist's Notebook
+				i(228774),	-- Algari Blacksmith's Journal
+				i(228775),	-- Algari Engineer's Notepad
+				i(228776),	-- Algari Scribe's Journal
+				i(228777),	-- Algari Jewelcrafter's Notebook
+				i(228778),	-- Algari Leatherworker's Journal
+				i(228779),	-- Algari Tailor's Notebook
 
-			-- Profession Knowledge Notes
-			i(224817),	-- Algari Herbalist's Notes
-			i(224818),	-- Algari Miner's Notes
-			--
+				-- I wonder if this has to do with Crafting Orders..
+				i(228724),	-- Flicker of Alchemy Knowledge
+				i(228725),	-- Glimmer of Alchemy Knowledge
+				i(228726),	-- Flicker of Blacksmithing Knowledge
+				i(228727),	-- Glimmer of Blacksmithing Knowledge
+				i(228728),	-- Flicker of Enchanting Knowledge
+				i(228729),	-- Glimmer of Enchanting Knowledge
+				i(228730),	-- Flicker of Engineering Knowledge
+				i(228731),	-- Glimmer of Engineering Knowledge
+				i(228732),	-- Flicker of Inscription Knowledge
+				i(228733),	-- Glimmer of Inscription Knowledge
+				i(228734),	-- Flicker of Jewelcrafting Knowledge
+				i(228735),	-- Glimmer of Jewelcrafting Knowledge
+				i(228736),	-- Flicker of Leatherworking Knowledge
+				i(228737),	-- Glimmer of Leatherworking Knowledge
+				i(228738),	-- Flicker of Tailoring Knowledge
+				i(228739),	-- Glimmer of Tailoring Knowledge
 
+				-- Same with these
+				i(228916),	-- Algari Tailor's Satchel
+				i(228917),	-- Satchel of Ore
+				i(228918),	-- Satchel of Leather
+				i(228919),	-- Satchel of Algari Herbs
+				i(228920),	-- Satchel of Chitin
+				i(228931),	-- Algari Enchanter's Satchel
+				i(228932),	-- Algari Engineer's Satchel
+				i(228933),	-- Algari Leatherworker's Satchel
 
-
-			i(228723),	-- Earthen Pet Rock
-			i(228724),	-- Flicker of Alchemy Knowledge
-			i(228725),	-- Glimmer of Alchemy Knowledge
-			i(228726),	-- Flicker of Blacksmithing Knowledge
-			i(228727),	-- Glimmer of Blacksmithing Knowledge
-			i(228728),	-- Flicker of Enchanting Knowledge
-			i(228729),	-- Glimmer of Enchanting Knowledge
-			i(228730),	-- Flicker of Engineering Knowledge
-			i(228731),	-- Glimmer of Engineering Knowledge
-			i(228732),	-- Flicker of Inscription Knowledge
-			i(228733),	-- Glimmer of Inscription Knowledge
-			i(228734),	-- Flicker of Jewelcrafting Knowledge
-			i(228735),	-- Glimmer of Jewelcrafting Knowledge
-			i(228736),	-- Flicker of Leatherworking Knowledge
-			i(228737),	-- Glimmer of Leatherworking Knowledge
-			i(228738),	-- Flicker of Tailoring Knowledge
-			i(228739),	-- Glimmer of Tailoring Knowledge
-			i(228741),	-- Lamplighter Supply Satchel
-			i(228742),	-- Unidentifiable Cloth
-			i(228743),	-- Damp Weavercloth
-			i(228744),	-- Golbin Twist-Rag
-			i(228745),	-- Aurora Strand
-			i(228756),	-- Bonus Snuffling Experience
-
-			i(228761),	-- Classic Brick Tabard
-			i(228762),	-- Classic Lively Tabard
-			i(228763),	-- Classic Crimson Tabard
-			i(228764),	-- Classic Sunny Tabard
-
-			i(228773),	-- Algari Alchemist's Notebook
-			i(228774),	-- Algari Blacksmith's Journal
-			i(228775),	-- Algari Engineer's Notepad
-			i(228776),	-- Algari Scribe's Journal
-			i(228777),	-- Algari Jewelcrafter's Notebook
-			i(228778),	-- Algari Leatherworker's Journal
-			i(228779),	-- Algari Tailor's Notebook
-			i(228914),	-- Arachnophile Spectacles
-			i(228916),	-- Algari Tailor's Satchel
-			i(228917),	-- Satchel of Ore
-			i(228918),	-- Satchel of Leather
-			i(228919),	-- Satchel of Algari Herbs
-			i(228920),	-- Satchel of Chitin
-			i(228921),	-- Griftah's Heavy-Duty Embellishing Powder
-			i(228930),	-- Adorning Ribbon
-			i(228931),	-- Algari Enchanter's Satchel
-			i(228932),	-- Algari Engineer's Satchel
-			i(228933),	-- Algari Leatherworker's Satchel
-			i(228940),	-- Notorious Thread's Hearthstone
-			i(228942),	-- Bountiful Coffer
-			i(228943),	-- Spymaster's Severed Thread
-			i(228944),	-- Crypt Lord's Severed Thread
-			i(228945),	-- Executor's Severed Thread
-			i(228946),	-- Weaver's Lair Profession Table
-			i(228947),	-- Weaver's Lair Profession Table
-			i(228949),	-- Rumor Map
-			i(228950),	-- Rumor Map Bundle
-			i(228951),	-- Pact Treasure Map
-			i(228952),	-- Pact Treasure Map Bundle
-			i(228954),	-- Angler's Guide
+				i(228610),	-- Artisan's Consortium Payout [Uncommon]
+				i(228611),	-- Artisan's Consortium Payout [Rare]
+				i(228612),	-- Artisan's Consortium Payout [Epic]
+			}),
+			filter(COSMETIC, {
+				i(228761),	-- Classic Brick Tabard
+				i(228762),	-- Classic Lively Tabard
+				i(228763),	-- Classic Crimson Tabard
+				i(228764),	-- Classic Sunny Tabard
+			}),
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(BATTLE_PETS, {
@@ -307,7 +312,7 @@ root(ROOTS.Unsorted, {
 				i(220151),	-- Queen's Lurefish
 				i(220152),	-- Cursed Ghoulfish
 				i(220153),	-- Awoken Coelacanth
-				i(220382),	-- Chopped Mycobloom
+				--------------- Cooking
 				i(220383),	-- Portioned Steak
 				i(220384),	-- Spiced Meat Stock
 				i(220385),	-- Cluster of Meatballs
@@ -319,47 +324,47 @@ root(ROOTS.Unsorted, {
 				i(220391),	-- Khaz Algar Tomato
 				i(220392),	-- Granulated Spices
 				i(220393),	-- Clumped Flour
-				i(220394),	-- Skewered Fillet
-				i(220395),	-- Meatball Hold-Me-Over
-				i(220396),	-- Unseasoned Field Steak
-				i(220397),	-- Roasted Mycobloom
-				i(220398),	-- Pan Seared Mycobloom
-				i(220399),	-- Hallowfall Chili
-				i(220400),	-- Coreway Kabob
-				i(220401),	-- Flash Fire Fillet
-				i(220402),	-- Meat and Potatoes
-				i(220403),	-- Rib Stickers
-				i(220404),	-- Sweet and Sour Meatballs
+
+
+
+
+
+
+
+
+
+
+
 				i(220405),	-- Grilled Pepper Steak
-				i(220406),	-- Zesty Nibblers
-				i(220407),	-- Fiery Fish Sticks
-				i(220408),	-- Ginger Glazed Fillet
-				i(220409),	-- Salty Fish Pie
-				i(220410),	-- Deepfin Patty
+
+
+
+
+
 				i(220411),	-- Underbelly Soup
-				i(220413),	-- Fish and Chips
-				i(220414),	-- Salt Baked Seafood
-				i(220415),	-- Angler's Delight
-				i(220416),	-- Mycobloom Risotto
-				i(220417),	-- Stuffed Cave Peppers
-				i(220418),	-- Sizzling Honey Roast
-				i(220419),	-- Marinated Tenderloins
+
+
+
+
+
+
+
 				i(220420),	-- The Breakfast Sampler
 				i(220421),	-- Daylight Delicacy
 				i(220422),	-- Nightfall Nourishment
-				i(220423),	-- Late Night Snack
-				i(220424),	-- zzOldFeast of the Divine Day
-				i(220425),	-- Feast of the Midnight Masquerade
-				i(220426),	-- Village Potluck
-				i(220427),	-- Everything Stew
-				i(220428),	-- Chippy Tea
+
+
+
+
+
+
 				i(220429),	-- Citrus Refresher
-				i(220430),	-- Blessing Blossom Tea
+
 				i(220431),	-- Crisp Ringing Water
-				i(220432),	-- Pep-In-Your-Step
+
 				i(220433),	-- Savory Evening Tart
-				i(220434),	-- Rockslide Shake
-				i(220435),	-- Olive Oil Ice Cream
+
+
 				i(221754),	-- Ringing Deeps Ingot
 				i(221757),	-- Gloomfathom Hide
 				i(221758),	-- Profaned Tinderbox
@@ -384,7 +389,8 @@ root(ROOTS.Unsorted, {
 				i(222105),	-- Queen's Lurefish
 				i(222106),	-- Cursed Ghoulfish
 				i(222107),	-- Kah, King of the Deeps
-				i(222250),	-- Chopped Mycobloom
+				-------- Cooking
+
 				i(222251),	-- Portioned Steak
 				i(222252),	-- Spiced Meat Stock
 				i(222253),	-- Cluster of Meatballs
@@ -396,27 +402,19 @@ root(ROOTS.Unsorted, {
 				i(222259),	-- Khaz Algar Tomato
 				i(222260),	-- Granulated Spices
 				i(222261),	-- Clumped Flour
-				i(222262),	-- Skewered Fillet
-				i(222263),	-- Meatball Hold-Me-Over
-				i(222264),	-- Unseasoned Field Steak
-				i(222265),	-- Roasted Mycobloom
-				i(222266),	-- Pan Seared Mycobloom
-				i(222267),	-- Hallowfall Chili
-				i(222268),	-- Coreway Kabob
-				i(222269),	-- Flash Fire Fillet
-				i(222270),	-- Meat and Potatoes
-				i(222271),	-- Rib Stickers
-				i(222272),	-- Sweet and Sour Meatballs
+
+
+
+
+
 				i(222273),	-- NYI NAME NEEDED
-				i(222274),	-- Zesty Nibblers
-				i(222275),	-- Fiery Fish Sticks
-				i(222276),	-- Ginger Glazed Fillet
-				i(222277),	-- Salty Fish Pie (Revise)
+
+
+
 				i(222278),	-- Fish Cake (Revise)
 				i(222279),	-- Fish Soup (Revise)
-				i(222281),	-- Fish and Chips
-				i(222282),	-- Salt Baked Seafood
-				i(222283),	-- Angler's Delight
+
+
 				i(222284),	-- NYI NAME NEEDED
 				i(222285),	-- NYI NAME NEEDED
 				i(222286),	-- NYI NAME NEEDED
@@ -424,41 +422,33 @@ root(ROOTS.Unsorted, {
 				i(222288),	-- The Breakfast Sampler
 				i(222289),	-- Daylight Delicacy
 				i(222290),	-- Nightfall Nourishment
-				i(222291),	-- Late Night Snack
+
 				i(222292),	-- Shadow-Infused Gumbo
 				i(222293),	-- NYI NAME NEEDED
 				i(222294),	-- NYI NAME NEEDED
-				i(222295),	-- Chippy Tea
+
 				i(222296),	-- NYI NAME NEEDED
 				i(222297),	-- NYI NAME NEEDED
 				i(222298),	-- NYI NAME NEEDED
 				i(222299),	-- NYI NAME NEEDED
-				i(222300),	-- Pep-In-Your-Step
+
 				i(222301),	-- NYI NAME NEEDED
-				i(222302),	-- Rockslide Shake
+
 				i(222303),	-- NYI NAME NEEDED
 				i(222304),	-- NYI NAME NEEDED
-				i(222305),	-- Hearty Skewered Fillet
-				i(222306),	-- Hearty Meatball Hold-Me-Over
-				i(222307),	-- Hearty Unseasoned Field Steak
-				i(222308),	-- Hearty Roasted Mycobloom
-				i(222309),	-- Hearty Pan Seared Mycobloom
-				i(222310),	-- Hearty Hallowfall Chili
-				i(222311),	-- Hearty Coreway Kabob
-				i(222312),	-- Hearty Flash Fire Fillet
-				i(222313),	-- Hearty Meat and Potatoes
-				i(222314),	-- Hearty Rib Stickers
-				i(222315),	-- Hearty Sweet and Sour Meatballs
+
+
+
+
+
 				i(222316),	-- Hearty NYI NAME NEEDED
-				i(222317),	-- Hearty Zesty Nibblers
-				i(222318),	-- Hearty Fiery Fish Sticks
-				i(222319),	-- Hearty Ginger Glazed Fillet
-				i(222320),	-- Hearty Salty Fish Pie (Revise)
+
+
+
 				i(222321),	-- Hearty Fish Cake (Revise)
 				i(222322),	-- Hearty Fish Soup (Revise)
-				i(222324),	-- Hearty Fish and Chips
-				i(222325),	-- Hearty Salt Baked Seafood
-				i(222326),	-- Hearty Angler's Delight
+
+
 				i(222327),	-- Hearty NYI NAME NEEDED
 				i(222328),	-- Hearty NYI NAME NEEDED
 				i(222329),	-- Hearty NYI NAME NEEDED
@@ -466,18 +456,18 @@ root(ROOTS.Unsorted, {
 				i(222331),	-- Hearty The Breakfast Sampler
 				i(222332),	-- Hearty Daylight Delicacy
 				i(222333),	-- Hearty Nightfall Nourishment
-				i(222334),	-- Hearty Late Night Snack
+
 				i(222335),	-- Hearty Shadow-Infused Gumbo
 				i(222336),	-- Hearty NYI NAME NEEDED
 				i(222337),	-- Hearty NYI NAME NEEDED
-				i(222338),	-- Hearty Chippy Tea
+
 				i(222339),	-- Hearty NYI NAME NEEDED
 				i(222340),	-- Hearty NYI NAME NEEDED
 				i(222341),	-- Hearty NYI NAME NEEDED
 				i(222342),	-- Hearty NYI NAME NEEDED
-				i(222343),	-- Hearty Pep-In-Your-Step
+
 				i(222344),	-- Hearty NYI NAME NEEDED
-				i(222345),	-- Hearty Rockslide Shake
+
 				i(222346),	-- Hearty NYI NAME NEEDED
 				i(222347),	-- Hearty NYI NAME NEEDED
 				i(222526),	-- Bloody Perch
@@ -498,7 +488,7 @@ root(ROOTS.Unsorted, {
 				i(222542),	-- Queen's Lurefish
 				i(222543),	-- Cursed Ghoulfish
 				i(222544),	-- Kah, King of the Deeps
-				i(222690),	-- Chopped Mycobloom
+				------ Cooking
 				i(222691),	-- Portioned Steak
 				i(222692),	-- Spiced Meat Stock
 				i(222693),	-- Hearty Food
@@ -510,89 +500,87 @@ root(ROOTS.Unsorted, {
 				i(222699),	-- Khaz Algar Tomato
 				i(222700),	-- Granulated Spices
 				i(222701),	-- Clumped Flour
-				i(222702),	-- Skewered Fillet
-				i(222703),	-- Simple Stew
-				i(222704),	-- Unseasoned Field Steak
-				i(222705),	-- Roasted Mycobloom
-				i(222706),	-- Pan Seared Mycobloom
-				i(222707),	-- Hallowfall Chili
-				i(222708),	-- Coreway Kabob
-				i(222709),	-- Flash Fire Fillet
-				i(222710),	-- Meat and Potatoes
-				i(222711),	-- Rib Stickers
-				i(222712),	-- Sweet and Sour Meatballs
-				i(222713),	-- Tender Twilight Jerky
-				i(222714),	-- Zesty Nibblers
-				i(222715),	-- Fiery Fish Sticks
-				i(222716),	-- Ginger Glazed Fillet
-				i(222717),	-- Salty Dog \\ Salty Fish Pie
-				i(222718),	-- Deepfin Patty
-				i(222719),	-- Sweet and Spicy Soup
-				i(222720),	-- The Sushi Special
-				i(222721),	-- Fish and Chips
-				i(222722),	-- Salt Baked Seafood
-				i(222723),	-- Marinated Tenderloins
-				i(222724),	-- Sizzling Honey Roast
-				i(222725),	-- Mycobloom Risotto
-				i(222726),	-- Stuffed Cave Peppers
-				i(222727),	-- Angler's Delight
-				i(222728),	-- Beledar's Bounty \\ Emperor's Bounty
-				i(222729),	-- Empress' Farewell
-				i(222730),	-- Jester's Board
-				i(222731),	-- Outsider's Provisions
-				i(222732),	-- Feast of the Divine Day
-				i(222733),	-- Feast of the Midnight Masquerade
-				i(222734),	-- Village Potluck
-				i(222735),	-- Everything Stew
-				i(222736),	-- Chippy Tea
-				i(222737),	-- Chopped Mycobloom
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				i(222738),	-- Portioned Steak
 				i(222739),	-- Spiced Meat Stock
 				i(222740),	-- Hearty Meals
 				i(222741),	-- Fresh Fillet
-				i(222742),	-- Luminous Lemonade
-				i(222743),	-- Blessing Blossom Tea
-				i(222744),	-- Cinder Nectar \\ Warm Honey Water
-				i(222745),	-- Pep-In-Your-Step
-				i(222746),	-- Tasty Pocket Tart \\ Eclipse Eclair
-				i(222747),	-- Rockslide Shake
-				i(222748),	-- Sticky Sweet Treat \\ Olive Oil Ice Cream
-				i(222749),	-- Melted Candlebar \\ Late Night Snack
-				i(222750),	-- Hearty Skewered Fillet
-				i(222751),	-- Hearty Simple Stew \\ Hearty Meatball Hold-Me-Over
-				i(222752),	-- Hearty Unseasoned Field Steak
-				i(222753),	-- Hearty Roasted Mycobloom
-				i(222754),	-- Hearty Pan-Seared Mycobloom \\ Hearty Pan Seared Mycobloom
-				i(222755),	-- Hearty Hallowfall Chili
-				i(222756),	-- Hearty Coreway Kabob
-				i(222757),	-- Hearty Flash Fire Fillet
-				i(222758),	-- Hearty Meat and Potatoes
-				i(222759),	-- Hearty Rib Stickers
-				i(222760),	-- Hearty Sweet and Sour Meatballs
-				i(222761),	-- Hearty Tender Twilight Jerky
-				i(222762),	-- Hearty Zesty Nibblers
-				i(222763),	-- Hearty Fiery Fish Sticks
-				i(222764),	-- Hearty Ginger Glazed Fillet
-				i(222765),	-- Hearty Salty Dog \\ Hearty Salty Fish Pie
-				i(222766),	-- Hearty Deepfin Patty
-				i(222767),	-- Hearty Sweet and Spicy Soup
-				i(222768),	-- Hearty Sushi Special \\ Hearty Fish Stir Fry (Revise)
-				i(222769),	-- Hearty Fish and Chips
-				i(222770),	-- Hearty Salt Baked Seafood
-				i(222771),	-- Hearty Marinated Tenderloins
-				i(222772),	-- Hearty Sizzling Honey Roast
-				i(222773),	-- Hearty Mycobloom Risotto
-				i(222774),	-- Hearty Stuffed Cave Peppers
-				i(222775),	-- Hearty Angler's Delight
-				i(222776),	-- Hearty Beledar's Bounty \\ Hearty Emperor's Bounty
-				i(222777),	-- Hearty Empress' Farewell
-				i(222778),	-- Hearty Jester's Board
-				i(222779),	-- Hearty Outsider's Provisions
-				i(222780),	-- Hearty Feast of the Divine Day
-				i(222781),	-- Hearty Feast of the Midnight Masquerade
-				i(222782),	-- Hearty Village Potluck
-				i(222783),	-- Hearty Everything Stew
-				i(222784),	-- Hearty Chippy Tea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				i(222785),	-- zzold cooking recipe
 				i(222786),	-- zzold cooking recipe
 				i(222787),	-- zzold cooking recipe
@@ -601,19 +589,17 @@ root(ROOTS.Unsorted, {
 				i(219195),	-- Imbued Mulch
 				i(219196),	-- Empowered Mulch
 				i(223512),	-- Basically Beef
-				i(223955),	-- Recipe: Fine Egg Powder
-				i(223961),	-- Recipe: Azj-Kahet Special
-				i(223965),	-- Fine Egg Powder
-				i(223966),	-- Everything-On-A-Stick
-				i(223967),	-- Protein Slurp
-				i(223968),	-- Spongey Scramble
-				i(223969),	-- Secret Sauce
-				i(223971),	-- Azj-Kahet Special
+
+
+
+
+
+
 				i(223977),	-- Coagulated Yolk
 				i(223978),	-- Double Packed Yolk
 				i(221476),	-- Engineering - 1H Wrench [DNT]
 				i(221477),	-- Engineering - 2H Wrench [DNT]
-				i(224419),	-- Recipe: Jester's Board \\ Recipe: All-Day Banquet
+
 				i(224822),	-- Scour Through Scrap
 				i(224831),	-- Cube of Infinite Inventions (PTR Only)
 				i(223081),	-- Design: Sifted Cave Sand \\ Design: Inscription Finishing Reagent (DNT)
@@ -829,17 +815,129 @@ root(ROOTS.Unsorted, {
 					i(223047),	-- Plans: Haunting Void
 				}),
 				prof(COOKING, {
-					i(225894),	-- Recipe: Beledar's Bounty
+
 					i(225911),	-- Cinderbee Belly
 					i(225912),	-- Hot Honeycomb
 					i(225937),	-- Putrid Goop
-					i(226177),	-- Recipe: Outsider's Provisions
-					i(227281),	-- Recipe: Feast of the Midnight Masquerade
-					i(227283),	-- Recipe: Feast of the Divine Day
-					i(228421),	-- Recipe: Melted Candlebar
-					i(228422),	-- Recipe: Ghoulfish Delight
-					i(228423),	-- Recipe: Pep-In-Your-Step
-					i(228424),	-- Recipe: Cinder Nectar
+
+
+
+
+
+
+
+					-- Unsure
+					-- From Pelefien
+					i(223956, {	-- Recipe: Everything-On-A-Stick (RECIPE!)
+						["cost"] = {{"c", KEJ, 1500}},
+					}),
+					i(223966),	-- Everything-On-A-Stick
+
+					-- from Polo
+					i(223959, {	-- Recipe: Secret Sauce (RECIPE!)
+						["cost"] = {{"c", KEJ, 1500}},
+					}),
+					i(223969),	-- Secret Sauce
+
+					i(223955),	-- Recipe: Fine Egg Powder
+
+					i(223965),	-- Fine Egg Powder
+					i(225876),	-- Fine Egg Powder
+
+
+					i(222746),	-- Tasty Pocket Tart
+
+					-- nyi--?
+					i(224419),	-- Recipe: Jester's Board \\ Recipe: All-Day Banquet
+
+
+					-- nyi --
+					i(220403),	-- Rib Stickers
+					i(222271),	-- Rib Stickers
+					i(222314),	-- Hearty Rib Stickers
+					i(220432),	-- Pep-In-Your-Step
+					i(222300),	-- Pep-In-Your-Step
+					i(222343),	-- Hearty Pep-In-Your-Step
+					i(220398),	-- Pan Seared Mycobloom
+					i(222266),	-- Pan Seared Mycobloom
+					i(222309),	-- Hearty Pan Seared Mycobloom
+					i(220416),	-- Mycobloom Risotto
+					i(220402),	-- Meat and Potatoes
+					i(222270),	-- Meat and Potatoes
+					i(222313),	-- Hearty Meat and Potatoes
+					i(220419),	-- Marinated Tenderloins
+					i(222310),	-- Hearty Hallowfall Chili
+					i(222267),	-- Hallowfall Chili
+					i(220399),	-- Hallowfall Chili
+					i(220415),	-- Angler's Delight
+					i(222283),	-- Angler's Delight
+					i(222326),	-- Hearty Angler's Delight
+					i(220428),	-- Chippy Tea
+					i(222295),	-- Chippy Tea
+					i(222338),	-- Hearty Chippy Tea
+					i(220430),	-- Blessing Blossom Tea
+					i(222743),	-- Blessing Blossom Tea
+					i(220382),	-- Chopped Mycobloom
+					i(222250),	-- Chopped Mycobloom
+					i(222690),	-- Chopped Mycobloom
+					i(220339),	-- Chopped Mycobloom
+					i(220400),	-- Coreway Kabob
+					i(222268),	-- Coreway Kabob
+					i(222311),	-- Hearty Coreway Kabob
+					i(220410),	-- Deepfin Patty
+					i(220423),	-- Late Night Snack
+					i(222291),	-- Late Night Snack
+					i(222334),	-- Hearty Late Night Snack
+					i(220427),	-- Everything Stew
+					i(220424),	-- zzOldFeast of the Divine Day
+					i(220425),	-- Feast of the Midnight Masquerade
+					i(220407),	-- Fiery Fish Sticks
+					i(222275),	-- Fiery Fish Sticks
+					i(222318),	-- Hearty Fiery Fish Sticks
+					i(220413),	-- Fish and Chips
+					i(222281),	-- Fish and Chips
+					i(222324),	-- Hearty Fish and Chips
+					i(220401),	-- Flash Fire Fillet
+					i(222269),	-- Flash Fire Fillet
+					i(222312),	-- Hearty Flash Fire Fillet
+					i(224117),	-- Ghoulfish Delight
+					i(220408),	-- Ginger Glazed Fillet
+					i(222276),	-- Ginger Glazed Fillet
+					i(222319),	-- Hearty Ginger Glazed Fillet
+					i(222742),	-- Luminous Lemonade
+					i(220426),	-- Village Potluck
+					i(222734),	-- Village Potluck
+					i(222782),	-- Hearty Village Potluck
+					i(220406),	-- Zesty Nibblers
+					i(222274),	-- Zesty Nibblers
+					i(222317),	-- Hearty Zesty Nibblers
+					i(220396),	-- Unseasoned Field Steak
+					i(222264),	-- Unseasoned Field Steak
+					i(222307),	-- Hearty Unseasoned Field Steak
+					i(220404),	-- Sweet and Sour Meatballs
+					i(222272),	-- Sweet and Sour Meatballs
+					i(222315),	-- Hearty Sweet and Sour Meatballs
+					i(220417),	-- Stuffed Cave Peppers
+					i(220435),	-- Olive Oil Ice Cream
+					i(220394),	-- Skewered Fillet
+					i(222262),	-- Skewered Fillet
+					i(222305),	-- Hearty Skewered Fillet
+					i(220418),	-- Sizzling Honey Roast
+					i(220395),	-- Meatball Hold-Me-Over
+					i(222263),	-- Meatball Hold-Me-Over
+					i(222306),	-- Hearty Meatball Hold-Me-Over
+					i(220409),	-- Salty Fish Pie
+					i(222277),	-- Salty Fish Pie (Revise)
+					i(222320),	-- Hearty Salty Fish Pie (Revise)
+					i(220414),	-- Salt Baked Seafood
+					i(222282),	-- Salt Baked Seafood
+					i(222325),	-- Hearty Salt Baked Seafood
+					i(220434),	-- Rockslide Shake
+					i(222302),	-- Rockslide Shake
+					i(222345),	-- Hearty Rockslide Shake
+					i(220397),	-- Roasted Mycobloom
+					i(222265),	-- Roasted Mycobloom
+					i(222308),	-- Hearty Roasted Mycobloom
 				}),
 				prof(ENGINEERING, {
 					i(221895),	-- Prototype: Tinker: Lightning Tether \\ Prototype: Tinker: Lightning  Tether
@@ -2457,7 +2555,7 @@ root(ROOTS.Unsorted, {
 				i(220303),	-- Decayed Flesh
 
 				i(220306),	-- Fresh Fillet
-				i(220339),	-- Chopped Mycobloom
+
 				i(220340),	-- Meatball Cluster
 				i(220341),	-- Portioned Steak
 				i(220342),	-- Spiced Stock
@@ -2548,7 +2646,7 @@ root(ROOTS.Unsorted, {
 				i(224067),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Tailoring
 				i(224068),	-- Professor Instructaur's Brain Pertaining to Khaz Algar
 				i(224100),	-- Bottomless Bag of Khaz Algar General Goods
-				i(224117),	-- Ghoulfish Delight
+
 				i(224156),	-- Bottomless Bag of Khaz Algar General Goods
 				i(224183),	-- Bleak Chum
 				i(224266),	-- Ivory Tinderbox
@@ -2565,7 +2663,7 @@ root(ROOTS.Unsorted, {
 				i(224786),	-- Skeleton King Outfit
 				i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit
 				i(224792),	-- Sanguine Aristocrat Outfit
-				i(224809),	-- Earthen Plumber's Pipe
+
 				i(224913),	-- Radiant Fuel Cache
 				i(224941),	-- Radiant Fuel Cache
 				i(225240),	-- PH_1
@@ -2593,11 +2691,11 @@ root(ROOTS.Unsorted, {
 				i(225430),	-- Green Hills of Stranglethorn - Page 14
 				i(225541),	-- PH_4
 				i(225553),	-- PH_5
-				i(225554),	-- Sunless Lure \\ Sunless Orb
 
-				i(225558),	-- Murkfin Lure \\ Murkfin Scales
-				i(225559),	-- Hungering Shimmerfin \\ Hungering Orb
-				i(225560),	-- Ragefin Necrostaff \\ Darkwater Crook
+
+
+
+
 				i(225564),	-- Meaty Muscle
 				i(225565),	-- Massive Worm Flank
 				i(225566),	-- Warped Wing
@@ -2647,9 +2745,9 @@ root(ROOTS.Unsorted, {
 				i(225848),	-- Cracked Etheric Power Core
 				i(225853),	-- Broken Stirrup
 				i(225854),	-- Muddied Amulet
-				i(225855),	-- Ghoulfish Delight
+
 				i(225875),	-- Pitted Armor Plating
-				i(225876),	-- Fine Egg Powder
+
 				i(225878),	-- The Fifty Rules of Commerce, Fourth Edition
 				i(225879),	-- The Fifty Rules of Commerce, Fourth Edition
 				i(225881),	-- Big Bag of Barter Boulders
@@ -2744,7 +2842,7 @@ root(ROOTS.Unsorted, {
 				i(227678),	-- Satchel of Engineering Surplus
 				i(227679),	-- Satchel of Inscription Surplus
 				i(227680),	-- Satchel of Jewelcrafting Surplus
-				i(227713),	-- Artisan's Consortium Payout
+				i(227713),	-- Artisan's Consortium Payout [Common]
 				i(227769),	-- Bountiful Bolts
 				i(227770),	-- Assorted Whirligigs
 				i(227771),	-- Blinker Fluid
@@ -3042,20 +3140,12 @@ root(ROOTS.Unsorted, {
 				i(228367),	-- Arathi Scout's Walking Stick
 			}),
 			filter(TOYS, {
-				i(215147),	-- Beautification Iris (TOY!)
 				i(218310),	-- Box of Puntables (TOY!)
-				i(215145),	-- Remembrance Stone (TOY!)
-				i(224554),	-- Silver Linin' Scepter (TOY!)
-				i(212174),	-- The Warband Map to Everywhere All At Once (TOY!)
-
+				i(224809),	-- Earthen Plumber's Pipe (TOY!)
+				i(225347),	-- Web-Vandal's Spinning Wheel (TOY!)
 				---
 				i(215146),	-- JC Gemcutting Toy
-				i(225347),	-- Web-Vandal's Spinning Wheel
-				i(225641),	-- Illusive Kobyss Lure
-				i(225659),	-- Arathi Book Collection \\ Arathor Book Collection
-				i(226191),	-- Web Pet Leash
 				i(228412),	-- Scouting Map: The Skies of the Dragon Isles
-				i(228413),	-- Lampyridae Lure
 			}),
 			race(EARTHEN_ALLIANCE, {
 				-- My Guess?? Earthen Starting Gear?

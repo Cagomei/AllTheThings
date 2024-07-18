@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(HALLOWFALL_ARATHI, {
 		n(VENDORS, {
 			n(213145, {	-- Auralia Steelstrike <Arathi Quartermaster>
@@ -79,6 +79,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						}),
 					}, {	-- RENOWN 16 --
 					}, {	-- RENOWN 17 --
+						i(228707, {	-- Trial of Burning Light (TOY!)
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+						}),
 						i(223317, {	-- Vermillion Imperial Lynx (MOUNT!)
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 8125}},
 						}),

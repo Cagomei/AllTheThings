@@ -8,12 +8,13 @@ SEVERED_THREADS_PACT = createHeader({
 		en = "Severed Threads Pact",
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(THE_SEVERED_THREADS, {
 		n(SEVERED_THREADS_PACT, {
 			n(REWARDS, {
 				i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 				i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
+				i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
 			}),
 		}),
 	}),

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	m(AZJ_KAHET, {
 		n(VENDORS, {
 			n(218179, {	-- Alvus Valavulu <Jewelcrafting Supplies>
@@ -19,6 +19,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					}),
 				},
 			}),
+			n(226211, {	-- Ax'ill <Alchemixologist>
+				--["coord"] = { 47.8, 18.7, NERUBAR },
+				["g"] = {
+					i(223961, {	-- Recipe: Azj-Kahet Special (RECIPE!)
+						["cost"] = {{"c", KEJ, 1500}},
+					}),
+				},
+			}),
 			n(218207, {	-- Clutchmother Marn'tiq <Pet Battle Master>
 				["coord"] = { 44.2, 17.1, NERUBAR },
 				["g"] = {
@@ -28,6 +36,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(222968, {	-- Itchbite (PET!)
 						["cost"] = {{"c", KEJ, 2250}},
 					}),
+				},
+			}),
+			n(223280, {	-- Collector Z'til <Alien Antiquities>
+				["coord"] = { 70.0, 31.3, NERUBAR },
+				["g"] = {
+					i(226177, {	-- Recipe: Outsider's Provisions (RECIPE!)
+						["cost"] = {{"c", KEJ, 2638}},
+					}),
+				},
+			}),
+			n(227607, {	-- Fliq'ri <Mistress of Minions>
+				--["coord"] = { X, Y, MAP },
+				["g"] = {
+					i(226191),	-- Web Pet Leash (TOY!)
 				},
 			}),
 			n(218193, {	-- Iliani <Enchanting Supplies>
@@ -131,18 +153,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						["cost"] = {{"c", KEJ, 2250}},
 						["isLimited"] = true,
 					}),
-					i(223956, {	-- Recipe: Everything-On-A-Stick (RECIPE!)
-						["cost"] = {{"c", KEJ, 1500}},
-					}),
 				},
 			}),
 			n(218189, {	-- Polo <Cooking Supplies>
 				["coord"] = { 48.1, 25.3, NERUBAR },
 				["g"] = {
-					i(224152, {	-- Recipe: Late Night Snack (RECIPE!)
-						["cost"] = {{"c", KEJ, 1500}},
-					}),
-					i(223959, {	-- Recipe: Secret Sauce (RECIPE!)
+					i(224152, {	-- Recipe: Empress' Farewell (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
 					i(223958, {	-- Recipe: Spongey Scramble (RECIPE!)
@@ -231,7 +247,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(218218, {	-- "Eight-Shaker" Sallow <Apertifologist>
 				["coord"] = { 53.4, 15.3, NERUBAR },
 				["g"] = {
-					i(223957, {-- Recipe: Protein Slurp (RECIPE)
+					i(223957, {	-- Recipe: Protein Slurp (RECIPE)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
 				},

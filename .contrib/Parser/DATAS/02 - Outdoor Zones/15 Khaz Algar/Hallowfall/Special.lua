@@ -3,11 +3,14 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	m(HALLOWFALL, {
-		n(VENDORS, {
-			n(217645, {	-- Torran Dellain
-				["coord"] = { 69.3, 43.9, HALLOWFALL },
-				["g"] = {
-					i(225238),	-- Meaty Haunch
+		n(SPECIAL, {
+			i(225641, {	-- Illusive Kobyss Lure (TOY!)
+				["questID"] = 83299,
+				["cost"] = {
+					{"i", 225559, 1},	-- 1x Hungering Shimmerfin
+					{"i", 225558, 1},	-- 1x Murkfin Lure
+					{"i", 225560, 1},	-- 1x Ragefin Necrostaff
+					{"i", 225554, 1},	-- 1x Sunless Lure
 				},
 			}),
 		}),

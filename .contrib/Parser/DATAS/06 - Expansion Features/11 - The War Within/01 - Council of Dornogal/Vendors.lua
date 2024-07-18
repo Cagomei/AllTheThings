@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(COUNCIL_OF_DORNOGAL, {
 		n(VENDORS, {
 			n(223728, {	-- Auditor Balwurz <Keeper of Renown>
@@ -67,6 +67,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 6500}},
 						}),
 					}, {	-- RENOWN 14 --
+						i(228706, {	-- Rockslidomancer's Stone (TOY!)
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+						}),
 					}, {	-- RENOWN 15 --
 						i(218344, {	-- Honorary Councilmember's Spaulders
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
