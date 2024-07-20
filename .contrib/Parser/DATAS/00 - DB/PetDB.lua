@@ -4089,6 +4089,8 @@ i(223145, 4548);	-- Marrlok
 i(221817, 4579);	-- Muskpaw Calf
 i(223339, 4565);	-- Trishi
 i(223474, 4566);	-- Worgli the Apprehensive
+--- UNSORTED ---
+i(223498, 4568);	-- Charismatic Courier
 --- NYI ---
 i(224576, 4595);	-- Lil' Flameo
 i(223499, 4569);	-- Lil' Manny
@@ -4180,6 +4182,23 @@ n(222615, 4516);	-- Vibrant Glowfly
 n(222421, 4483);	-- Vile Bloodtick
 n(222354, 4481);	-- Voidling Ooze
 n(222608, 4510);	-- Winged Arachnoid
+--- TRAINER ---
+i(0, 4561);			-- Awakened Custodian
+i(0, 4554);			-- Bubs
+i(0, 4559);			-- Flicker
+i(0, 4558);			-- Four-Legs
+i(0, 4562);			-- Guttergunk
+i(0, 4488);			-- Haywire Servobot
+i(0, 4552);			-- Mini Airship
+i(0, 4551);			-- Ridge
+i(0, 4564);			-- Rufus
+i(0, 4555);			-- Sir Pounce
+i(0, 4550);			-- Stratus
+i(0, 4557);			-- Swoopgrasp
+i(0, 4553);			-- Takey-Take
+i(0, 4556);			-- Tickler
+i(0, 4549);			-- Tiny Cragling
+i(0, 4560);			-- Zaedu
 
 ------------------
 -- PATCH 11.0.0 --
@@ -4204,7 +4223,5 @@ i(222967, 4475);	-- Webbers
 ------------------
 -- PATCH 11.0.2 --
 ------------------
---- UNSORTED ---
-i(223498, 4568);	-- Charismatic Courier
 i(228765, 4616);	-- Gummi
 i(228758, 4615);	-- Parrlok

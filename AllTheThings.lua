@@ -1873,11 +1873,17 @@ local ResolveFunctions = {
 	-- Instruction to apply a specific modID to any Items within the finalized search results
 	["modID"] = function(finalized, searchResults, o, cmd, modID)
 		FinalizeModID = modID
-		SelectMod = GetGroupItemIDWithModID(nil, nil, modID)
 	end,
 	-- Instruction to apply the modID from the Source object to any Items within the finalized search results
 	["myModID"] = function(finalized, searchResults, o)
 		FinalizeModID = o.modID
+	end,
+	-- Instruction to apply a specific modID to any Items within the finalized search results
+	["usemodID"] = function(finalized, searchResults, o, cmd, modID)
+		SelectMod = GetGroupItemIDWithModID(nil, nil, modID)
+	end,
+	-- Instruction to apply the modID from the Source object to any Items within the finalized search results
+	["usemyModID"] = function(finalized, searchResults, o)
 		SelectMod = GetGroupItemIDWithModID(nil, nil, o.modID)
 	end,
 	-- Instruction to use the modID from the Source object to filter matching modID on any Items within the finalized search results
@@ -2211,7 +2217,9 @@ local NonSelectCommands = {
 	achievement_criteria = true,
 	sub = true,
 	myModID = true,
-	modID = true
+	modID = true,
+	usemyModID = true,
+	usemodID = true,
 }
 local HandleCommands = app.Debugging and function(finalized, searchResults, o, oSym)
 	local cmd, cmdFunc
@@ -6613,12 +6621,12 @@ local function SetGroupVisibility(parent, group)
 	end
 	-- Cost
 	if not visible and ((group.costTotal or 0) > 0) then
-		visible = not group.saved;
+		visible = true
 		-- app.PrintDebug("SGV.cost",group.hash,visible,group.costTotal)
 	end
 	-- Upgrade
 	if not visible and ((group.upgradeTotal or 0) > 0) then
-		visible = not group.saved;
+		visible = true
 		-- if debug then print("SGV.hasUpgrade",group.hash,visible) end
 	end
 	-- Trackable
@@ -6658,12 +6666,12 @@ local function SetThingVisibility(parent, group)
 	end
 	-- Cost
 	if not visible and ((group.costTotal or 0) > 0) then
-		visible = not group.saved;
+		visible = true
 		-- app.PrintDebug("STV.cost",group.hash,visible,group.costTotal)
 	end
 	-- Upgrade
 	if not visible and ((group.upgradeTotal or 0) > 0) then
-		visible = not group.saved;
+		visible = true
 		-- if debug then print("STV.hasUpgrade",group.hash,visible) end
 	end
 	-- Trackable
@@ -8408,6 +8416,13 @@ RowOnEnter = function (self)
 					for i,encounter in ipairs(encounterCache) do
 						if encounter.g and GetRelativeValue(encounter.parent, "difficultyID") == difficultyID then
 							app.SearchForRelativeItems(encounter, itemList);
+						end
+					end
+					local item
+					for i=#itemList,1,-1 do
+						item = itemList[i]
+						if item.u and item.u < 3 then
+							tremove(itemList, i)
 						end
 					end
 					local specHits = {};
