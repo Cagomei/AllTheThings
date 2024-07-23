@@ -22,6 +22,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40451),	-- Buddy System III
 		ach(40450),	-- Buddy System II
 		ach(40455),	-- Buddy System
+		ach(40882, {	-- Copious Coffers
+			title(575),	-- <Name> the Bountiful
+		}),
 		ach(40437),	-- Delver of the Depths (automated)
 		ach(40447),	-- Delver of the Depths II (automated)
 		ach(40448),	-- Delver of the Depths III (automated)
@@ -68,8 +71,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		ach(40524),	-- Good Deed Delver
 		ach(40732),	-- Heavy-Handed
-
-		ach(40098),	-- Immortal Spelunker
+		ach(40098, {	-- Immortal Spelunker
+			title(549),	-- Immortal Spelunker <Name>
+		}),
 		ach(40763),	-- I'm not a Thief, I'm a Treasure Hunter
 		ach(40446),	-- I TAKE Candle!
 		ach(40459),	-- I've Got a Flying Machine!
@@ -109,6 +113,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40819),	-- Ready to Turn
 		ach(40453),	-- Spider Senses
 		ach(40445),	-- Sporesweeper
+		ach(40885),	-- The Key to Madness
 		ach(40100),	-- Undying Caver
 		ach(40631),	-- War Within Delves: Tier 1
 		ach(40512),	-- War Within Delves: Tier 2
@@ -143,6 +148,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			["sourceQuests"] = { 81510 },	-- Ship It!
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
+		}),
+		q(81595, {	-- Seasonal Start
+			["sourceQuests"] = { 81510 },	-- Ship It!
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			["coord"] = { 47.4, 44.4, DORNOGAL },
+		}),
+		q(81596, {	-- Delve Hunter
+			["sourceQuests"] = { 81595 },	-- Seasonal Start
+			["provider"] = { "n", 226763 },	-- Naleidea Rivergleam
+			["coord"] = { 47.7, 44.5, DORNOGAL },
+		}),
+		q(83500, {	-- Zekvir, Hand of the Harbinger
+			["sourceQuests"] = { 81596 },	-- Delve Hunter
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			["coord"] = { 47.4, 44.4, DORNOGAL },
+			["g"] = {
+				i(225547),	-- Toxic Victory (TOY!)
+			},
 		}),
 		q(84519, {	-- Ancient Curiosity: Combat
 			["provider"] = { "i", 228560 },	-- Ancient Curio (TODO: providers ids could be swapped)
@@ -654,6 +677,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(221496),	-- Wriggle (PET!) [Kobyss]
 		}),
 		filter(RECIPES, {
+			i(223085),	-- Design: Fractured Gemstone Locket (RECIPE!)
 			i(223139),	-- Formula: Enchant Cloak - Chant of Leeching Fangs (RECIPE!)
 			i(224434),	-- Pattern: Dawnthread Lining (RECIPE!)
 			i(223101),	-- Pattern: Reinforced Setae Flyers (RECIPE!)
@@ -1011,6 +1035,15 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 		}),
 		n(208070, {	-- Sir Finley Mrgglton <Delve Treasures>
+			i(226258, {	-- Delver's Pouch of Reagents
+				["cost"] = {{"c", UNDERCOIN, 1500}},
+			}),
+			i(226259, {	-- Delver's Pouch of Resonance Crystals
+				["cost"] = {{"c", UNDERCOIN, 2000}},
+				["g"] = {
+					currency(RESONANCE_CRYSTALS),
+				},
+			}),
 			i(224172, {	-- Restored Coffer Key
 				["cost"] = {{"c", UNDERCOIN, 1000}},
 			}),

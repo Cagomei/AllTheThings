@@ -1,11 +1,35 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local ALGARI_TOKEN_OF_MERIT_S1 = 220769;
+--local ALGARI_TOKEN_OF_MERIT_S2 = xx;
+--local ALGARI_TOKEN_OF_MERIT_S3 = xx;
+--local ALGARI_TOKEN_OF_MERIT_S4 = xx;
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	m(DORNOGAL, {
 		n(VENDORS, {
 			n(219036, {	-- Ardgaz <Token Exchange>
 				["coord"] = { 54.8, 42.5, DORNOGAL },
+				["g"] = {
+					i(220773, {	-- Celebratory Pack of Runed Harbinger Crests
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S1, 2}},
+						["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+					}),
+					i(226814, {	-- Chest of Gold
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S1, 2}},
+					}),
+					i(226813, {	-- Golden Valorstone
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S1, 1}},
+					}),
+					i(226505, {	-- Nerubian Gemweaver
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S1, 6}},
+						["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+					}),
+					i(220767, {	-- Triumphant Satchel of Carved Harbinger Crests
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S1, 1}},
+						["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+					}),
+				},
 			}),
 			n(219230, {	-- Erani <Pet Charm Trader>
 				["coord"] = { 58.5, 64.9, DORNOGAL },
@@ -22,6 +46,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 62.5, 50.9, DORNOGAL },
 				["g"] = {
 					i(224763),	-- Design: Cubic Blasphemia (RECIPE!)
+					i(228921),	-- Griftah's Heavy-Duty Embellishing Powder
 				},
 			}),
 			n(219255, {	-- Karbath <Weapon Trader>
@@ -41,6 +66,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			n(219051, {	-- Lyrendal <Artisan's Consortium Quartermaster>
 				["coord"] = { 61.3, 65.8, DORNOGAL },
 				["g"] = {
+					i(228379, {	-- Design: Captured Starlight (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223090, {	-- Design: Enchanter's Crystal (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223089, {	-- Design: Extravagant Loupes (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223091, {	-- Design: Forger's Font Inspector (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223092, {	-- Design: Novelist's Specs (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(228329, {	-- Design: Remembrance Stone (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
 					i(223129, {	-- Formula: Enchant Tool - Algari Deftness (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
@@ -51,6 +94,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
 					i(223132, {	-- Formula: Enchant Tool - Algari Resourcefulness (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223113, {	-- Formula: Enchant Boots - Cavalry's March (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
 					i(223124, {	-- Formula: Runed Null Stone Rod (RECIPE!)
@@ -69,6 +115,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
 					i(223107, {	-- Pattern: Charged Scrapmaster's Gauntlets (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223104, {	-- Pattern: Defender's Armor Kit (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
 					i(223106, {	-- Pattern: Earthen Forgemaster's Apron (RECIPE!)
@@ -93,6 +142,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
 					i(223049, {	-- Plans: Artisan Sickle (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223037, {	-- Plans: Charged Facesmasher (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
 					i(223068, {	-- Technique: Algari Missive of Crafting Speed (RECIPE!)
@@ -337,7 +389,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					-- Season 2
 					-- Season 3
 				},
-			})
+			}),
 		}),
 	}),
 })));

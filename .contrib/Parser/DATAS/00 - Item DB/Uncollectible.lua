@@ -1802,6 +1802,7 @@ i(217170);	-- Backup Candles
 i(220290);	-- Barbed Pincers
 i(213254);	-- Big Gold Nugget
 i(220291);	-- Bioluminescent Thorax
+i(225543);	-- Bloodied Idol
 i(225801);	-- Braided Seaweed Bangle
 i(225716);	-- Brax's Favorite Cog
 i(225709);	-- Brax's Left Shoe
@@ -1844,6 +1845,7 @@ i(220509);	-- Gossamer Web
 i(225790);	-- Half-Painted Pewter Spider
 i(220279);	-- Handful of Polished Scales
 i(220252);	-- Handful of Smooth Pebbles
+i(228400);	-- Happy Rock
 i(220246);	-- Humming Power Core
 i(220275);	-- Indigo Shard
 i(220253);	-- Inert Dust
@@ -1851,6 +1853,7 @@ i(220224);	-- Iridescent Integument
 i(220380);	-- Immature Spiderling
 i(225830);	-- Irreparably Bent Spoon
 i(225791);	-- Jar of Alchemical Solvent
+i(225785);	-- Jar of Pickled Insects
 i(220264);	-- Jaw with Barbed Teeth
 i(220234);	-- Leaden Vial
 i(225849);	-- Long-Forgotten Glove
@@ -1861,6 +1864,7 @@ i(223886);	-- Mercurial Herbs
 i(223883);	-- Mercurial Transmutation
 i(225850);	-- Moldy Rations
 i(220219);	-- Mound of Night Soil
+i(228430);	-- Mucky Rock
 i(217162);	-- Necklace of Kobold Teeth
 i(210829);	-- Neutralize Concoctions
 i(224153);	-- Nibbled Shroomcap
@@ -1882,12 +1886,16 @@ i(220228);	-- Quartz Growth
 i(220288);	-- Quivering Tail
 i(220362);	-- Ragged Rope
 i(220242);	-- Razored Tail-Blade
+i(228510);	-- Ripped Swarmite Wing
 i(220297);	-- Rock-Encrusted Plates
 i(217164);	-- Royal Nailpicker
 i(225807);	-- Rune-Carved Bone
+i(228399);	-- Sad Rock
 i(220236);	-- Sanguineous Sac
+i(223899);	-- Shadowed Appendage
 i(220266);	-- Sharpened Digging Claws
 i(220361);	-- Sharpened Steel Implement
+i(220273);	-- Shed Skin
 i(220237);	-- Shining Amethyst Cluster
 i(220231);	-- Skiatic Vessel
 i(220299);	-- Sleek Beak
@@ -1900,6 +1908,7 @@ i(213262);	-- Stained Glass Fragment
 i(225800);	-- Stone Singing Bowl
 i(220363);	-- Straw-Stuffed Hat
 i(220292);	-- Stretched Wing
+i(228507);	-- Swarmite Eggsac
 i(225821);	-- Tattered Theater Hood
 i(225877);	-- The Fifty Rules of Commerce, Fourth Edition
 i(225852);	-- The Foolhardy's Guide to Survival
@@ -1937,3 +1946,26 @@ i(226518);	-- Phero-Escape
 i(222693);	-- Hearty Food
 i(222740);	-- Hearty Meals
 i(228721);	-- Hearty Feast
+i(228494);	-- Crunchy Rock Candy
+i(228493);	-- Sour Topaz Bites
+i(228492);	-- Spicy Rubies
+i(228489);	-- Fashionable Flask
+i(228488);	-- Small Glass Vase
+i(228608);	-- On the Application of Arathi Technology to Earthen Life
+i(228609);	-- Rock Roasting for Dummies
+i(228490);	-- Fresh Grazing Rocks
+i(228491);	-- Ramolith Bedding Material
+i(227326);	-- Chalcocite Lava Cake
+i(227301);	-- Crystal Tots
+i(227302);	-- Granite Salad
+i(227273);	-- Iron Poppers
+i(227317);	-- Lava Cola
+i(227310);	-- Magmalaid
+i(227318);	-- Quicksilver Sipper
+i(227272);	-- Rock Lobster
+i(227327);	-- Rocky Road
+i(227325);	-- Stone Soup
+i(227309);	-- Titanshake
+i(228723);	-- Earthen Pet Rock
+i(225202);	-- Pilfer Through Parts
+i(225251);	-- Disassemble Invention

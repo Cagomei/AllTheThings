@@ -8,6 +8,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				q(84260, {	-- Crafting to Order
 					["provider"] = { "n", 219108 },	-- Roldira
 					["coord"] = { 59.1, 55.8, DORNOGAL },
+					["g"] = {
+						i(228933),	-- Algari Leatherworker's Satchel
+						i(228916),	-- Algari Tailor's Satchel
+						i(228917),	-- Satchel of Ore
+					},
 				}),
 				q(84288, {	-- Crafting Orders: Alchemy
 					["sourceQuests"] = { 84260 },	-- Crafting to Order
@@ -102,13 +107,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			prof(ENGINEERING, {
 				n(219099, {	-- Machinist Arhdas <Engineering Trainer>
 					["coord"] = { 49.2, 55.9, DORNOGAL },
-					--["g"] = TWW_ENGINEERING,
+					["g"] = TWW_ENGINEERING,
 				}),
 			}),
 			prof(FISHING, {
 				n(219106, {	-- Drokar <Fishing Trainer>
 					["coord"] = { 50.5, 26.8, DORNOGAL },
 					["g"] = TWW_FISHING,
+				}),
+				n(219105, {	-- Hinodin <Fishing Supplies>
+					["coord"] = { 50.6, 26.8, DORNOGAL },
+					["g"] = {
+						i(228954),	-- Angler's Guide [Find Fish] (RECIPE!)
+					},
 				}),
 			}),
 			prof(HERBALISM, {
@@ -126,7 +137,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			prof(JEWELCRAFTING, {
 				n(219087, {	-- Makir <Jewelcrafting Trainer>
 					["coord"] = { 49.5, 70.8, DORNOGAL },
-					--["g"] = TWW_JEWELCRAFTING,
+					["g"] = TWW_JEWELCRAFTING,
 				}),
 			}),
 			prof(LEATHERWORKING, {
@@ -144,7 +155,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			prof(SKINNING, {
 				n(219083, {	-- Ginnad <Skinning Trainer>
 					["coord"] = { 54.3, 57.4, DORNOGAL },
-					--["g"] = TWW_SKINNING,
+					["g"] = TWW_SKINNING,
 				}),
 			}),
 			prof(TAILORING, {

@@ -4,10 +4,32 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	m(DORNOGAL, {
 		pvp(n(PVP, {
+			n(QUESTS, {
+				q(83711, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 } }, {	-- Weapons of Conquest
+					["provider"] = { "n", 219222 },	-- Lalandi <Conquest Quartermaster>
+					["coord"] = { 55.0, 76.1, DORNOGAL },
+				})),
+			}),
+			n(QUESTS, sharedData({
+				["provider"] = { "n", 58.9, 75.3 },	-- Ruffious
+				["coord"] = { 58.9, 75.3, DORNOGAL },
+				["isWeekly"] = true,
+				["g"] = {
+					--
+				},
+			}, {
+				q(80187),	-- Preserving in Skirmishes
+				q(80189),	-- Preserving Teamwork
+			})),
 			n(VENDORS, {
 				n(219215, {	-- Hotharn <Competitor's Recipes>
 					["coord"] = { 55.4, 70.0, DORNOGAL },
 					["g"] = sharedData({ ["cost"] = {{"c", HONOR, 7500}} }, {
+						i(225433),	-- Design: Algari Competitor's Amulet (RECIPIE!)
+						i(225432),	-- Design: Algari Competitor's Signet (RECIPIE!)
+						i(225680),	-- Design: Cognitive Bloodstone (RECIPIE!)
+						i(225681),	-- Design: Determined Bloodstone (RECIPIE!)
+						i(225679),	-- Design: Enduring Bloodstone (RECIPIE!)
 						i(225452),	-- Pattern: Algari Competitor's Chain Chainmail (RECIPE!)
 						i(225453),	-- Pattern: Algari Competitor's Chain Cowl (RECIPE!)
 						i(225458),	-- Pattern: Algari Competitor's Chain Cuffs (RECIPE!)
@@ -68,7 +90,52 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 						i(225475),	-- Technique: Algari Competitor's Medallion (RECIPE!)
 						i(225480),	-- Technique: Algari Competitor's Scythe (RECIPE!)
 						i(225481),	-- Technique: Algari Competitor's Staff (RECIPE!)
+						--
+						filter(MISC, {
+							i(213778, {	-- Vicious Jeweler's Setting
+								["cost"] = {
+									{"i", 215236, 2},	-- Vicious Bloodstone x2
+									{"c", HONOR, 9750},
+								},
+								["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+							}),
+						}),
+						filter(REAGENTS, {
+							i(210232, {	-- Forged Aspirant's Heraldry
+								["cost"] = {{"c", HONOR, 175}},
+								["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+							}),
+							i(210221, {	-- Forged Combatant's Heraldry
+								["cost"] = {{"c", HONOR, 350}},
+								["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+							}),
+							i(210233, {	-- Forged Gladiator's Heraldry
+								["cost"] = {{"c", CONQUEST, 175}},
+								["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+							}),
+							i(215236, {	-- Vicious Bloodstone
+								["cost"] = {{"c", HONOR, 2500}},
+							}),
+						}),
 					}),
+				}),
+				n(219212, {	-- Maara <War Mode Supplies>
+					["coord"] = { 60.3, 70.0, DORNOGAL },
+					["g"] = {
+						filter(MISC, sharedData({
+							["cost"] = {{"c", HONOR, 500}},
+						}, {
+							i(224044),	-- Devouring Residue
+							i(224048),	-- Electric Shock
+							i(224043),	-- Famished Residue
+							i(224041),	-- Holy Brigade
+							i(224045),	-- Kelp Grasp
+							i(224046),	-- Sand Tornado
+							i(224042),	-- Voracious Residue
+							i(224047),	-- Water Blast
+							i(224049),	-- Web Pull
+						})),
+					},
 				}),
 				n(219217, {	-- Velerd <Honor Quartermaster>
 					["coord"] = { 55.0, 76.5, DORNOGAL },
@@ -77,6 +144,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 							["cost"] = {{"c", HONOR, 2000}},
 							["g"] = {
 								i(137642),	-- Mark of Honor
+							},
+						}),
+						i(224556, {	-- Glorious Contender's Strongbox
+							["cost"] = {{"c", HONOR, 5000}},
+							["g"] = {
+								--
 							},
 						}),
 					},

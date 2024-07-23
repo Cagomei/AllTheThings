@@ -7,6 +7,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			n(218179, {	-- Alvus Valavulu <Jewelcrafting Supplies>
 				["coord"] = { 47.8, 18.7, NERUBAR },
 				["g"] = {
+					i(228914, {	-- Arachnophile Spectacles (TOY!)
+						["cost"] = {{"c", KEJ, 1500}},
+					}),
+					i(223082, {	-- Design: Ominous Energy Crystal (RECIPE!)
+						["cost"] = {
+							{"i", ARTISANS_ACUITY, 150},
+							{"c", KEJ, 1500},
+						},
+					}),
+					i(223081, {	-- Design: Sifted Cave Sand (RECIPE!)
+						["cost"] = {
+							{"i", ARTISANS_ACUITY, 150},
+							{"c", KEJ, 1500},
+						},
+					}),
 					i(224054, {	-- Emergent Crystals of the Surface-Dwellers (CI!)
 						["cost"] = {{"c", KEJ, 565}},
 						["requireSkill"] = JEWELCRAFTING,
@@ -167,6 +182,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(223955, {	-- Recipe: Fine Egg Powder (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
+					--i(223959, {	-- Recipe: Secret Sauce (RECIPE!) TODO: re-check in future to see if itemID typo (should be 223958 or attached wrong recipe ID)
+					--	["cost"] = {{"c", KEJ, 1500}},
+					--}),
 					i(223958, {	-- Recipe: Spongey Scramble (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),

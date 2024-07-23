@@ -10,10 +10,6 @@ root(ROOTS.Unsorted, {
 				exploration(15552),	-- The Undersea
 			}),
 			filter(MISC, {
-				i(228507),	-- Swarmite Eggsac
-				i(228510),	-- Ripped Swarmite Wing
-				i(228608),	-- On the Application of Arathi Technology to Earthen Life
-				i(228609),	-- Rock Roasting for Dummies
 				i(228624),	-- Depleted Awakened Flightstone
 				i(228625),	-- Depleted Ruby Flightstone
 				i(228626),	-- Depleted Blackened Flightstone
@@ -26,7 +22,6 @@ root(ROOTS.Unsorted, {
 				i(228633),	-- Large Pouch of Whelpling's Awakened Crests
 				i(228711),	-- Small Candle
 				i(228720),	-- Nascent Gemstone
-				i(228723),	-- Earthen Pet Rock
 				i(228741),	-- Lamplighter Supply Satchel
 				i(228742),	-- Unidentifiable Cloth
 				i(228743),	-- Damp Weavercloth
@@ -57,7 +52,7 @@ root(ROOTS.Unsorted, {
 				i(228655),	-- Scrit's Handmade Gloves
 				i(228656),	-- Scrit's Handmade Shoulders
 				i(228657),	-- Scrit's Handmade Girdle
-				i(228658),	-- Batzvara's Gratitude
+
 				i(228668),	-- Compiler's Handwraps
 				i(228671),	-- Compiler's Shoulderguards
 				i(228673),	-- Compiler's Chain Clasp
@@ -67,14 +62,10 @@ root(ROOTS.Unsorted, {
 				i(228765),	-- Gummi (PET!) [Promotion?]
 				i(228758),	-- Parrlok (PET!) [Trading Post?]
 			}),
-			filter(TOYS, {
-				i(228914),	-- Arachnophile Spectacles (TOY!)
-			}),
 			n(PROFESSIONS, {
 				prof(TAILORING, {
 					i(228930),	-- Adorning Ribbon
 				}),
-				i(228921),	-- Griftah's Heavy-Duty Embellishing Powder
 				-- Profession Knowledge Notes
 				i(224817),	-- Algari Herbalist's Notes
 				i(224818),	-- Algari Miner's Notes
@@ -105,14 +96,11 @@ root(ROOTS.Unsorted, {
 				i(228739),	-- Glimmer of Tailoring Knowledge
 
 				-- Same with these
-				i(228916),	-- Algari Tailor's Satchel
-				i(228917),	-- Satchel of Ore
 				i(228918),	-- Satchel of Leather
 				i(228919),	-- Satchel of Algari Herbs
 				i(228920),	-- Satchel of Chitin
 				i(228931),	-- Algari Enchanter's Satchel
 				i(228932),	-- Algari Engineer's Satchel
-				i(228933),	-- Algari Leatherworker's Satchel
 
 				i(228610),	-- Artisan's Consortium Payout [Uncommon]
 				i(228611),	-- Artisan's Consortium Payout [Rare]
@@ -143,7 +131,6 @@ root(ROOTS.Unsorted, {
 				i(221762),	-- Frenzied Bloodtick (PET!)
 				i(222970),	-- Fuzzy (PET!)
 				i(221195),	-- Illskitter (PET!)
-				i(225934),	-- Lil' Bonechewer (PET!)
 				i(221492),	-- Moss Skipper (PET!)
 				i(225935),	-- Rak-Ush Battleshell (PET!)
 				i(221759),	-- Sceaduthax (PET!)
@@ -230,7 +217,6 @@ root(ROOTS.Unsorted, {
 				i(221763),	-- Viridian Charmcap
 				i(224764),	-- Mosswool Thread
 				i(211494),	-- Spark of Beginnings
-				i(225768),	-- Crusty Darkmoon Card
 
 				i(225772),	-- Artisan's Consortium Advertisement
 				i(225670),	-- Apprentice's Crafting License
@@ -299,8 +285,7 @@ root(ROOTS.Unsorted, {
 				i(224729),	-- Slum Shark Tooth \\ [PH] Slum Shark Tooth
 				i(224730),	-- [PH] Derby Dashers
 				prof(ALCHEMY, {
-					i(211807),	-- Gilded Vial
-					i(211808),	-- Gilded Vial
+
 					i(228401),	-- Bubbling Mycobloom Culture
 					i(228402),	-- Bubbling Mycobloom Culture
 					i(228403),	-- Bubbling Mycobloom Culture
@@ -484,37 +469,18 @@ root(ROOTS.Unsorted, {
 					r(445481),	-- Tasty Pocket Tart
 				}),
 				prof(ENGINEERING, {
-					i(221895),	-- Prototype: Tinker: Lightning Tether \\ Prototype: Tinker: Lightning  Tether
-					i(221896),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
-					i(221897),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
-					i(221898),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
-					i(221899),	-- Prototype: Tinker: Overclocked S.E.L.F.I.E. Camera
-					i(221900),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
-					i(221901),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
-					i(221902),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
 					i(221968),	-- Legibly Scribbled Notes
-					i(225984),	-- Assorted Choking Hazards
-					i(225985),	-- Assorted Choking Hazards
-					i(225986),	-- Assorted Choking Hazards
-					i(221790),	-- Bismuth Fisherfriend \\ Fishing Tool T1 [DNT]
+					-- Crafting material
 					i(219150),	-- Pile of Rusted Scrap
-					i(221476),	-- Engineering - 1H Wrench [DNT]
-					i(221477),	-- Engineering - 2H Wrench [DNT]
-					i(224831),	-- Cube of Infinite Inventions (PTR Only)
-					i(225202),	-- Pilfer Through Parts
-					i(225241),	-- Refurbished Tinker: Alarm-O-Turret
-					i(225242),	-- Refurbished Tinker: Plane Displacer
-					i(225243),	-- Refurbished Tinker: Supercollide-O-Tron
-					i(225244),	-- Refurbished Tinker: Shadowflame Rockets
-					i(225251),	-- Disassemble Invention
-					i(224822),	-- Scour Through Scrap
-					i(224640),	-- Invent
 				}),
 				prof(HERBALISM, {
 					i(217105),	-- Refine Khaz Algar Herbs
 					i(219194),	-- Magical Mulch
 					i(219195),	-- Imbued Mulch
 					i(219196),	-- Empowered Mulch
+					i(214595),	-- Sporefused Verdant Seed
+					i(214597),	-- Irradiated Verdant Seed
+					i(214605),	-- Crystallized Verdant Seed
 				}),
 				prof(INSCRIPTION, {
 					i(225338),	-- Glyph of Jab
@@ -542,190 +508,7 @@ root(ROOTS.Unsorted, {
 					i(217982),	-- Versatile Cypher
 				}),
 				prof(JEWELCRAFTING, {
-					i(223081),	-- Design: Sifted Cave Sand \\ Design: Inscription Finishing Reagent (DNT)
-					i(225431),	-- Design: Vicious Jeweler's Setting
-					i(225432),	-- Design: Algari Competitor's Signet
-					i(225433),	-- Design: Algari Competitor's Amulet
-					i(212495),	-- Radiant Ruby
-					i(212498),	-- Ambivalent Amber
-					i(212505),	-- Extravagant Emerald
-					i(212511),	-- Ostentatious Onyx
-					i(213219),	-- Crushed Gemstones
-					i(213220),	-- Crushed Gemstones
-					i(213221),	-- Crushed Gemstones
-					i(213398),	-- Handful of Pebbles
-					i(213399),	-- Glittering Glass
-					i(213453),	-- Quick Ruby
-					i(213454),	-- Quick Ruby
-					i(213455),	-- Quick Ruby
-					i(213456),	-- Masterful Ruby
-					i(213457),	-- Masterful Ruby
-					i(213458),	-- Masterful Ruby
-					i(213459),	-- Versatile Ruby
-					i(213460),	-- Versatile Ruby
-					i(213461),	-- Versatile Ruby
-					i(213462),	-- Deadly Ruby
-					i(213463),	-- Deadly Ruby
-					i(213464),	-- Deadly Ruby
-					i(213465),	-- Deadly Sapphire
-					i(213466),	-- Deadly Sapphire
-					i(213467),	-- Deadly Sapphire
-					i(213468),	-- Quick Sapphire
-					i(213469),	-- Quick Sapphire
-					i(213470),	-- Quick Sapphire
-					i(213471),	-- Masterful Sapphire
-					i(213472),	-- Masterful Sapphire
-					i(213473),	-- Masterful Sapphire
-					i(213474),	-- Versatile Sapphire
-					i(213475),	-- Versatile Sapphire
-					i(213476),	-- Versatile Sapphire
-					i(213477),	-- Deadly Emerald
-					i(213478),	-- Deadly Emerald
-					i(213479),	-- Deadly Emerald
-					i(213480),	-- Masterful Emerald
-					i(213481),	-- Masterful Emerald
-					i(213482),	-- Masterful Emerald
-					i(213483),	-- Versatile Emerald
-					i(213484),	-- Versatile Emerald
-					i(213485),	-- Versatile Emerald
-					i(213486),	-- Quick Emerald
-					i(213487),	-- Quick Emerald
-					i(213488),	-- Quick Emerald
-					i(213489),	-- Deadly Onyx
-					i(213490),	-- Deadly Onyx
-					i(213491),	-- Deadly Onyx
-					i(213492),	-- Quick Onyx
-					i(213493),	-- Quick Onyx
-					i(213494),	-- Quick Onyx
-					i(213495),	-- Versatile Onyx
-					i(213496),	-- Versatile Onyx
-					i(213497),	-- Versatile Onyx
-					i(213498),	-- Masterful Onyx
-					i(213499),	-- Masterful Onyx
-					i(213500),	-- Masterful Onyx
-					i(213501),	-- Deadly Amber
-					i(213502),	-- Deadly Amber
-					i(213503),	-- Deadly Amber
-					i(213504),	-- Quick Amber
-					i(213505),	-- Quick Amber
-					i(213506),	-- Quick Amber
-					i(213507),	-- Masterful Amber
-					i(213508),	-- Masterful Amber
-					i(213509),	-- Masterful Amber
-					i(213510),	-- Versatile Amber
-					i(213511),	-- Versatile Amber
-					i(213512),	-- Versatile Amber
-					i(213515),	-- Solid Amber
-					i(213516),	-- Solid Amber
-					i(213517),	-- Solid Amber
-					i(213738),	-- Insightful Blasphemite
-					i(213739),	-- Insightful Blasphemite
-					i(213740),	-- Insightful Blasphemite
-					i(213741),	-- Culminating Blasphemite
-					i(213742),	-- Culminating Blasphemite
-					i(213743),	-- Culminating Blasphemite
-					i(213744),	-- Elusive Blasphemite
-					i(213745),	-- Elusive Blasphemite
-					i(213746),	-- Elusive Blasphemite
-					i(213747),	-- Enduring Bloodstone
-					i(213748),	-- Cognitive Bloodstone
-					i(213749),	-- Determined Bloodstone
-					i(213750),	-- Engraved Gemcutter
-					i(213751),	-- Engraved Gemcutter
-					i(213752),	-- Engraved Gemcutter
-					i(213753),	-- Decorative Lens
-					i(213754),	-- Decorative Lens
-					i(213755),	-- Decorative Lens
-					i(213756),	-- Marbled Stone
-					i(213757),	-- Marbled Stone
-					i(213758),	-- Marbled Stone
-					i(213759),	-- Inverted Prism
-					i(213760),	-- Inverted Prism
-					i(213761),	-- Inverted Prism
-					i(213762),	-- Sifted Cave Sand \\ DNT Inscription Finishing Reagent
-					i(213763),	-- Sifted Cave Sand \\ DNT Inscription Finishing Reagent
-					i(213764),	-- Sifted Cave Sand \\ DNT Inscription Finishing Reagent
-					i(213765),	-- Ominous Energy Crystal \\ DNT Engineering Finishing Reagent
-					i(213766),	-- Ominous Energy Crystal \\ DNT Engineering Finishing Reagent
-					i(213767),	-- Ominous Energy Crystal \\ DNT Engineering Finishing Reagent
-					i(213768),	-- Elemental Focusing Lens
-					i(213769),	-- Elemental Focusing Lens
-					i(213770),	-- Elemental Focusing Lens
-					i(213771),	-- Prismatic Null Stone
-					i(213772),	-- Prismatic Null Stone
-					i(213773),	-- Prismatic Null Stone
-					i(213774),	-- Captured Starlight
-					i(213775),	-- Captured Starlight
-					i(213776),	-- Captured Starlight
-					i(213777),	-- Magnificent Jeweler's Setting
-					i(213778),	-- Vicious Jeweler's Setting
-					i(213779),	-- Algari Amber Prism \\ Amber Prism (DNT)
-					i(213782),	-- Algari Emerald Prism \\ Emerald Prism (DNT)
-					i(213785),	-- Algari Ruby Prism \\ Ruby Prism (DNT)
-					i(213788),	-- Algari Onyx Prism \\ Onyx Prism (DNT)
-					i(213791),	-- Algari Sapphire Prism \\ Sapphire Prism (DNT)
 					i(214043),	-- Glittering Gemdust
-					i(214561),	-- Verdant Seed
-					i(214595),	-- Sporefused Verdant Seed
-					i(214597),	-- Irradiated Verdant Seed
-					i(214605),	-- Crystallized Verdant Seed
-					i(215117),	-- Storyteller's Glasses \\ T1 Inscription Glasses
-					i(215119),	-- Right-Handed Magnifying Glass
-					i(215120),	-- Radiant Loupes \\ T1 Jewelcrafting Head
-					i(215121),	-- Incanter's Shard \\ T1 Enchanting Focus
-					i(215122),	-- Novelist's Specs \\ T2 Inscription Glasses
-					i(215123),	-- Forger's Font Inspector \\ T2 Inscription Magnifying Glass
-					i(215124),	-- Extravagant Loupes \\ T2 Jewelcrafting Head
-					i(215125),	-- Enchanter's Crystal \\ T2 Enchanting Focus
-					i(215130),	-- Malleable Band
-					i(215131),	-- Malleable Pendant
-					i(215132),	-- Marvelous Mood Ring
-					i(215133),	-- Binding of Binding
-					i(215134),	-- Fractured Gemstone Locket
-					i(215135),	-- Ring of Earthen Craftsmanship
-					i(215136),	-- Amulet of Earthen Craftsmanship
-					i(215137),	-- Algari Competitor's Signet
-					i(215139),	-- Copy Copy Elemental Lariat
-					i(215143),	-- Copy Copy Elemental Lariat
-					i(215144),	-- Algari Competitor's Amulet
-					i(215236),	-- Vicious Bloodstone
-					i(217113),	-- Cubic Blasphemia
-					i(217114),	-- Cubic Blasphemia
-					i(217115),	-- Cubic Blasphemia
-					i(223082),	-- Design: Ominous Energy Crystal \\ Design: Engineering Finishing Reagent (DNT) \\ Pattern: Artisan Gardening Hat
-					i(223083),	-- Design: Elemental Focusing Lens \\ Pattern: Artisan Fishing Cap
-					i(223084),	-- Design: Prismatic Null Stone \\ Pattern: Artisan Enchanter's Hat
-					i(223085),	-- Design: Fractured Gemstone Locket \\ Pattern: Artisan Alchemist's Robe
-					i(223086),	-- Design: Insightful Blasphemite \\ Pattern: Artisan's Chef's Hat
-					i(223087),	-- Design: Culminating Blasphemite \\ Pattern: Alchemy Bag
-					i(223088),	-- Design: Elusive Blasphemite \\ Pattern: Blacksmithing Bag
-					i(223089),	-- Design: Jewelcrafting T2 Helm (DNT) \\ Pattern: Leatherworking Bag
-					i(223090),	-- Design: Enchanting T2 Focus (DNT) \\ Pattern: Enchanting Bag
-					i(223091),	-- Design: Inscription T2 Magnifying Glass (DNT) \\ Pattern: Engineering Bag
-					i(223092),	-- Design: Inscription T2 Glasses (DNT) \\ Pattern: Inscription Bag
-					i(223093),	-- Design: Beautification Iris \\ Pattern: Herbalism Bag
-					i(223094),	-- Design: Magnificent Jeweler's Setting \\ Pattern: Mining Bag
-					i(225679),	-- Design: Enduring Bloodstone
-					i(225680),	-- Design: Cognitive Bloodstone
-					i(225681),	-- Design: Determined Bloodstone
-					i(223089),	-- Design: Extravagant Loupes
-					i(223090),	-- Design: Enchanter's Crystal
-					i(223091),	-- Design: Forger's Font Inspector
-					i(223092),	-- Design: Novelist's Specs
-					i(213780),	-- Algari Amber Prism
-					i(213781),	-- Algari Amber Prism
-					i(213783),	-- Algari Emerald Prism
-					i(213784),	-- Algari Emerald Prism
-					i(213786),	-- Algari Ruby Prism
-					i(213787),	-- Algari Ruby Prism
-					i(213789),	-- Algari Onyx Prism
-					i(213790),	-- Algari Onyx Prism
-					i(213792),	-- Algari Sapphire Prism
-					i(213793),	-- Algari Sapphire Prism
-					i(228217),	-- Design: Solid Amber
-					i(228320),	-- Design: Binding of Binding
-					i(228329),	-- Design: Remembrance Stone
-					i(228379),	-- Design: Captured Starlight
 				}),
 				prof(MINING, {
 					i(210940),	-- Null Stone
@@ -755,7 +538,7 @@ root(ROOTS.Unsorted, {
 				i(224835),	-- Deepgrove Roots
 				i(225220),	-- Chitin Needle
 				i(225221),	-- Spool of Webweave
-				i(225222),	-- Stone-Leather Swatch
+
 				i(225224),	-- Diaphanous Gem Shards
 				i(225225),	-- Deepstone Fragment
 				i(225226),	-- Striated Inkstone
@@ -763,12 +546,12 @@ root(ROOTS.Unsorted, {
 				i(225228),	-- Rust-Locked Mechanism
 				i(225229),	-- Earthen Induction Coil
 				i(225230),	-- Crystalline Repository
-				i(225231),	-- Powdered Fulgurance
+
 				i(225232),	-- Coreway Billet
 				i(225233),	-- Dense Bladestone
-				i(225234),	-- Alchemical Sediment
-				i(225235),	-- Deepstone Crucible
-				i(225223),	-- Sturdy Nerubian Carapace \ \ Molted DragonScales
+
+
+
 				i(226266),	-- Metal Dornogal Frame
 				i(226268),	-- Engraved Stirring Rod
 				i(226276),	-- Ancient Earthen Anvil
@@ -780,7 +563,7 @@ root(ROOTS.Unsorted, {
 				i(226282),	-- Nerubian Smith's Kit
 				i(226283),	-- Spiderling's Wire Brush
 				i(226284),	-- Grinded Earthen Gem
-				i(226289),	-- Enchanted Arathi Scroll
+
 				i(226292),	-- Rock Engineer's Wrench
 				i(226293),	-- Dornogal Spectacles
 				i(226294),	-- Inert Mining Bomb
@@ -805,8 +588,6 @@ root(ROOTS.Unsorted, {
 				i(226321),	-- Librarian's Magnifiers
 				i(226322),	-- Ritual Caster's Crystal
 				i(226323),	-- Nerubian Bench Blocks
-
-				i(226339),	-- Nerubian Mining Supplies
 
 				i(226344),	-- Arathi Tanning Agent
 
@@ -994,10 +775,8 @@ root(ROOTS.Unsorted, {
 				i(225756),	-- Coreway Shovel
 				i(225757),	-- Coreway Pickaxe
 
-				i(225759),	-- Coreway Engineer's Forceps
 				i(225760),	-- Dornogal Spear
 				i(225761),	-- Jeweler's Careful Crusher
-				i(225762),	-- Coreway Engineer's Screwdriver
 
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
 				i(225885),	-- Garlic Knots
@@ -1043,7 +822,6 @@ root(ROOTS.Unsorted, {
 				i(226116),	-- Coagulating Phlegm Churner
 				i(226160),	-- Hillhelm Farmhand's Hoe
 				i(226161),	-- Hillhelm Farmhand's Watering Can
-				i(226172),	-- Disturbance Detection Device
 				i(226363),	-- Earthen Backpack
 				i(226366),	-- Gloves of the Morning Mist
 				i(226367),	-- Ugly Black Boots
@@ -1490,7 +1268,6 @@ root(ROOTS.Unsorted, {
 				i(224171),	-- Master's Wildercloth Fishing Cap
 				-- Armor
 				i(224661),	-- Gem-Studded Signet
-				i(224662),	-- Gem-Studded Ring
 
 
 				i(225509),	-- [PH] Armor Vestment
@@ -1525,7 +1302,6 @@ root(ROOTS.Unsorted, {
 				i(225638),	-- Spelunker's Waning Candle
 				i(225648),	-- Candle Confidant
 				i(225651),	-- Kaheti Shadeweaver's Emblem
-				i(225653),	-- Siphoning Lightbrand
 				i(225656),	-- Goldenglow Censer
 				i(225657),	-- Detachable Fang
 				i(225661),	-- Burning Binding
@@ -1549,129 +1325,12 @@ root(ROOTS.Unsorted, {
 				i(226696),	-- Mighty Advisor's Favor
 			}),
 			n(PVP, {
-				i(224556),	-- Glorious Contender's Strongbox
 				i(224557),	-- Field Medic's Hazard Payout
 				i(225493),	-- Medal of Conquest
-				i(210221),	-- Forged Combatant's Heraldry
-				i(210232),	-- Forged Aspirant's Heraldry
-				i(210233),	-- Forged Gladiator's Heraldry
-				i(218429),	-- Forged Aspirant's Necklace \\ PH Copy Draconic Aspirant's Necklace
-				i(218430),	-- Forged Aspirant's Choker \\ PH Copy Draconic Aspirant's Choker
-				i(218431),	-- Forged Aspirant's Pendant \\ PH Copy Draconic Aspirant's Pendant
 
-
-
-				i(218707),	-- Forged Gladiator's Ring \\ PH Copy Draconic Gladiator's Ring
-				i(218708),	-- Forged Gladiator's Band \\ PH Copy Draconic Gladiator's Band
-				i(218709),	-- Forged Gladiator's Signet \\ PH Copy Draconic Gladiator's Signet
-				i(218710),	-- Forged Gladiator's Necklace \\ PH Copy Draconic Gladiator's Necklace
-				i(218711),	-- Forged Gladiator's Pendant \\ PH Copy Draconic Gladiator's Pendant
-				i(218712),	-- Forged Gladiator's Amulet \\ PH Copy Draconic Gladiator's Amulet
-				i(218713),	-- Forged Gladiator's Badge of Ferocity \\ PH Copy Draconic Gladiator's Badge of Ferocity
-				i(218714),	-- Forged Gladiator's Insignia of Alacrity \\ PH Copy Draconic Gladiator's Insignia of Alacrity
-				i(218715),	-- Forged Gladiator's Emblem \\ PH Copy Draconic Gladiator's Emblem
-				i(218716),	-- Forged Gladiator's Medallion \\ PH Copy Draconic Gladiator's Medallion
-				i(218717),	-- Forged Gladiator's Sigil of Adaptation \\ PH Copy Draconic Gladiator's Sigil of Adaptation
-				i(218718),	-- Forged Gladiator's Splitter \\ PH Copy Draconic Gladiator's Splitter
-				i(218719),	-- Forged Gladiator's Dagger \\ PH Copy Draconic Gladiator's Dagger
-				i(218720),	-- Forged Gladiator's Warglaive \\ PH Copy Draconic Gladiator's Warglaive
-				i(218721),	-- Forged Gladiator's Spear \\ Forged Gladiator's Scythe \\ PH Copy Draconic Gladiator's Scythe
-				i(218722),	-- Forged Gladiator's Staff \\ PH Copy Draconic Gladiator's Staff
-				i(218723),	-- Forged Gladiator's Bow \\ Forged Gladiator's Rifle \\ PH Copy Draconic Gladiator's Rifle
-				i(218724),	-- Forged Gladiator's Scepter \\ PH Copy Draconic Gladiator's Scepter
-				i(218725),	-- Forged Gladiator's Focus \\ Forged Gladiator's Censer \\ PH Copy Draconic Gladiator's Censer
-				i(218726),	-- Forged Gladiator's Shield \\ PH Copy Draconic Gladiator's Shield
-				i(218727),	-- Forged Gladiator's Axe \\ PH Copy Draconic Gladiator's Axe
-				i(218728),	-- Forged Gladiator's Pincer \\ Forged Gladiator's Sickle \\ PH Copy Draconic Gladiator's Sickle
-				i(218729),	-- Forged Gladiator's Claws \\ PH Copy Draconic Gladiator's Claws
-				i(218730),	-- Forged Gladiator's Crossbow \\ Forged Gladiator's Bow \\ PH Copy Draconic Gladiator's Bow
-				i(218731),	-- Forged Gladiator's Greatstaff \\ PH Copy Draconic Gladiator's Greatstaff
-				i(218732),	-- Forged Gladiator's Bulwark \\ PH Copy Draconic Gladiator's Bulwark
-				i(218733),	-- Forged Gladiator's Greataxe \\ Forged Gladiator's Greatsword \\ PH Copy Draconic Gladiator's Greatsword
-				i(218734),	-- Forged Gladiator's Pulverizer \\ PH Copy Draconic Gladiator's Pulverizer
-				i(218735),	-- Forged Gladiator's Sword \\ PH Copy Draconic Gladiator's Sword
-				i(218736),	-- Forged Gladiator's Skewer \\ Forged Gladiator's Shotel \\ PH Copy Draconic Gladiator's Shotel
-				i(218737),	-- Forged Gladiator's Battlestaff \\ Forged Gladiator's Axestaff \\ PH Copy Draconic Gladiator's Axestaff
 				i(220378),	-- Forged Equipment Chest \\ PH War Within Equipment Chest
-				i(223807),	-- Forged Warmonger's Garb \\ X Warmonger's Garb
-				i(223808),	-- Forged Warmonger's Slippers \\ X Warmonger's Slippers
-				i(223809),	-- Forged Warmonger's Gloves \\ X Warmonger's Gloves
-				i(223810),	-- Forged Warmonger's Crown \\ X Warmonger's Crown
-				i(223811),	-- Forged Warmonger's Pants \\ X Warmonger's Pants
-				i(223812),	-- Forged Warmonger's Cord \\ X Warmonger's Cord
-				i(223813),	-- Forged Warmonger's Bindings \\ X Warmonger's Bindings
-				i(223814),	-- Forged Warmonger's Mantle \\ X Warmonger's Mantle
-				i(223815),	-- Forged Warmonger's Boots \\ X Warmonger's Boots
-				i(223816),	-- Forged Warmonger's Handwraps \\ X Warmonger's Handwraps
-				i(223817),	-- Forged Warmonger's Hood \\ X Warmonger's Hood
-				i(223818),	-- Forged Warmonger's Breeches \\ X Warmonger's Breeches
-				i(223819),	-- Forged Warmonger's Belt \\ X Warmonger's Belt
-				i(223820),	-- Forged Warmonger's Wraps \\ X Warmonger's Wraps
-				i(223821),	-- Forged Warmonger's Jerkin \\ X Warmonger's Jerkin
-				i(223822),	-- Forged Warmonger's Shoulderguard \\ X Warmonger's Shoulderguard
-				i(223823),	-- Forged Warmonger's Faceplate \\ X Warmonger's Faceplate
-				i(223824),	-- Forged Warmonger's Cuirass \\ X Warmonger's Cuirass
-				i(223825),	-- Forged Warmonger's Sabatons \\ X Warmonger's Sabatons
-				i(223826),	-- Forged Warmonger's Gauntlets \\ X Warmonger's Gauntlets
-				i(223827),	-- Forged Warmonger's Legguards \\ X Warmonger's Legguards
-				i(223828),	-- Forged Warmonger's Spaulders \\ X Warmonger's Spaulders
-				i(223829),	-- Forged Warmonger's Clasp \\ X Warmonger's Clasp
-				i(223830),	-- Forged Warmonger's Bracers \\ X Warmonger's Bracers
-				i(223831),	-- Forged Warmonger's Chestguard \\ Forged Warmonger's Chainmail \\ X Warmonger's Chainmail
-				i(223832),	-- Forged Warmonger's Greaves \\ X Warmonger's Greaves
-				i(223833),	-- Forged Warmonger's Grips \\ X Warmonger's Grips
-				i(223834),	-- Forged Warmonger's Helm \\ X Warmonger's Helm
-				i(223835),	-- Forged Warmonger's Leggings \\ X Warmonger's Leggings
-				i(223836),	-- Forged Warmonger's Epaulets \\ X Warmonger's Epaulets
-				i(223837),	-- Forged Warmonger's Cinch \\ X Warmonger's Cinch
-				i(223838),	-- Forged Warmonger's Armguards \\ X Warmonger's Armguards
-				i(223839),	-- Forged Warmonger's Cape \\ X Warmonger's Cape
-				i(223840),	-- Forged Warmonger's Shawl \\ X Warmonger's Shawl
-				i(223841),	-- Forged Warmonger's Cloak \\ X Warmonger's Cloak
-				i(223842),	-- Forged Warmonger's Drape \\ X Warmonger's Drape
-				i(223844),	-- Forged Warmonger's Battleaxe \\ X Warmonger's Battleaxe
-				i(223845),	-- Forged Warmonger's Hatchet \\ X Warmonger's Hatchet
-				i(223846),	-- Forged Warmonger's Carver \\ X Warmonger's Carver
-				i(223847),	-- Forged Warmonger's Flameshot \\ X Warmonger's Flameshot
-				i(223848),	-- Forged Warmonger's Twinblade \\ X Warmonger's Twinblade
-				i(223851),	-- Forged Warmonger's Branch \\ X Warmonger's Branch
-				i(223852),	-- Forged Warmonger's Spire \\ X Warmonger's Spire
-				i(223853),	-- Forged Warmonger's Battlestaff \\ X Warmonger's Battlestaff
-				i(223854),	-- Forged Warmonger's Greatsword \\ X Warmonger's Greatsword
-				i(223855),	-- Forged Warmonger's Broadsword \\ X Warmonger's Broadsword
-				i(223856),	-- Forged Warmonger's Club \\ X Warmonger's Club
-				i(223857),	-- Forged Warmonger's Hammer \\ X Warmonger's Hammer
-				i(223858),	-- Forged Warmonger's Cudgel \\ X Warmonger's Cudgel
-				i(223859),	-- Forged Warmonger's Aegis \\ X Warmonger's Aegis
-				i(223860),	-- Forged Warmonger's Impaler \\ X Warmonger's Impaler
-				i(223861),	-- Forged Warmonger's Spear \\ X Warmonger's Spear
-				i(223862),	-- Forged Warmonger's Wand \\ X Warmonger's Wand
-				i(223863),	-- Forged Warmonger's Mace \\ X Warmonger's Mace
-				i(223864),	-- Forged Warmonger's Crusher \\ X Warmonger's Crusher
-				i(223865),	-- Forged Warmonger's Scepter \\ X Warmonger's Scepter
-				i(223867),	-- Forged Warmonger's Dagger \\ X Warmonger's Dagger
-				i(223868),	-- Forged Warmonger's Dirk \\ X Warmonger's Dirk
-				i(223616),	-- Forged Gladiator's Tabard \\ [PH] 11.0 PVP - Gladiator's Tabard
-				i(223617),	-- Forged Gladiator's Prestigious Cloak \\ [PH] 11.0 Gladiator's Prestigious Cloak
-				i(225856),	-- Forged Gladiator's Axe
-				i(225857),	-- Forged Gladiator's Dagger
-				i(225858),	-- Forged Gladiator's Pincer
-				i(225859),	-- Forged Gladiator's Warglaive
-				i(225860),	-- Forged Gladiator's Spear
-				i(225861),	-- Forged Gladiator's Staff
-				i(225862),	-- Forged Gladiator's Greatstaff
-				i(225863),	-- Forged Gladiator's Battlestaff
-				i(225864),	-- Forged Gladiator's Crossbow
-				i(225865),	-- Forged Gladiator's Scepter
-				i(225866),	-- Forged Gladiator's Focus
-				i(225867),	-- Forged Gladiator's Shield
-				i(225868),	-- Forged Gladiator's Bulwark
-				i(225869),	-- Forged Gladiator's Claws
-				i(225870),	-- Forged Gladiator's Bow
-				i(225871),	-- Forged Gladiator's Greataxe \\ Forged Gladiator's Greatsword
-				i(225872),	-- Forged Gladiator's Pulverizer
+
 				i(225873),	-- Forged Gladiator's Sword
-				i(225874),	-- Forged Gladiator's Wither-Blade \\ Forged Gladiator's Shotel
 				i(223989),	-- Arsenal: Hellbloom Club
 				i(223990),	-- Arsenal: Hellbloom Hammer
 				i(223991),	-- Arsenal: Hellbloom Knife
@@ -1757,7 +1416,6 @@ root(ROOTS.Unsorted, {
 				i(220156),	-- Bubbling Wax
 				i(220220),	-- Ornate Pipe
 				i(220221),	-- Void Pebble
-				i(220222),	-- Everburning Lump
 				i(220225),	-- Tattered Standard
 				i(220233),	-- Extinguished Icon
 				i(220235),	-- Electrified Teeth
@@ -1769,7 +1427,6 @@ root(ROOTS.Unsorted, {
 				i(220260),	-- Corroded Golem Graspers
 				i(220265),	-- Slitted Eye
 				i(220269),	-- Ionized Feather
-				i(220273),	-- Shed Skin
 				i(220274),	-- Chipped Hammer
 				i(220278),	-- Well-Worn Leather Sole
 				i(220284),	-- Darkened Crystal
@@ -1804,10 +1461,7 @@ root(ROOTS.Unsorted, {
 				i(220491),	-- Wicked Blade Shard
 				i(220520),	-- Radiant Echo \\ Radiant Chord
 				i(220756),	-- Flickering Torch \\ Fading Torch
-				i(220767),	-- Triumphant Satchel of Carved Harbinger Crests \\ Triumphant Satchel of Carved Harbinger Crests (TODO: Fix Icon)
-				i(220769),	-- Algari Token of Merit \\ Algarian Token of Merit
 				i(220770),	-- Void-Scarred Stormhammer
-				i(220773),	-- Celebratory Pack of Runed Harbinger Crests \\ Celebratory Pack of Runed Harbinger Crests (TODO: Fix Icon)
 				i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
 				i(221269),	-- Crimson Valorstone \\ Crimson Valorstone (TODO: Fix Icon) (Maybe fix name too?)
 				i(217965),	-- Repair Kit
@@ -1833,16 +1487,6 @@ root(ROOTS.Unsorted, {
 				i(223897),	-- Ruptured Engine \\ Ruptered Engine
 				i(223898),	-- Loose Bolts
 				i(223900),	-- Bottled Darkness
-
-				i(224041),	-- Holy Brigade
-				i(224042),	-- Voracious Residue
-				i(224043),	-- Famished Residue
-				i(224044),	-- Devouring Residue
-				i(224045),	-- Kelp Grasp
-				i(224046),	-- Sand Tornado
-				i(224047),	-- Water Blast
-				i(224048),	-- Electric Shock
-				i(224049),	-- Web Pull
 
 				i(224183),	-- Bleak Chum
 				i(224266),	-- Ivory Tinderbox
@@ -1896,7 +1540,6 @@ root(ROOTS.Unsorted, {
 				i(225570),	-- Algari Fowlfeather
 				i(225555),	-- Periapt of Pure Flame
 				i(225640),	-- Abyssal Lure
-				i(225785),	-- Jar of Pickled Insects
 				i(225786),	-- Chitin Stress Ball
 				i(225788),	-- Congratulatory Ascension Silk
 				i(225789),	-- Curved Threadripper
@@ -1949,7 +1592,6 @@ root(ROOTS.Unsorted, {
 				i(225996),	-- Clam Digger
 				i(226045),	-- The General's Trove
 				i(226100),	-- The Vizier's Trove
-				i(226103),	-- The Weaver's Trove
 				i(226108),	-- [DNT] Debug Profession Stats
 				i(226120),	-- Deployable Battle Supplies \\ Deployable Charge Station
 				i(226131),	-- Deployable Wind-Wrangling Spire \\ Deployable Wind-Wrangling Station
@@ -1968,51 +1610,36 @@ root(ROOTS.Unsorted, {
 				i(226205),	-- Distilled Algari Freshwater
 				i(226256),	-- Token of the Remembrancers
 				i(226257),	-- Delver's Pouch of Valorstones
-				i(226258),	-- Delver's Pouch of Reagents
-				i(226259),	-- Delver's Pouch of Resonance Crystals
+
 				i(226260),	-- Delver's Pouch of Gold
 				i(226430),	-- Navigations of The Soul
-				i(226505),	-- Nerubian Gemweaver
 				i(226524),	-- Partially-Charged Hologem
 				i(226681),	-- Sizzling Cinderpollen
 				i(226811),	-- Marinated Maggots
-				i(226813),	-- Golden Valorstone
-				i(226814),	-- Chest of Gold
-				i(227272),	-- Rock Lobster
-				i(227273),	-- Iron Poppers
 				i(227274),	-- Candle Rock Candy
 				i(227275),	-- Koboldatouille
 				i(227297),	-- Hallowed Burger
 				i(227298),	-- Humble Pie
 				i(227299),	-- Acid Braised Beetle
 				i(227300),	-- Poison Poached Eggs
-				i(227301),	-- Crystal Tots
-				i(227302),	-- Granite Salad
 				i(227303),	-- Waxy Cheese Snack
 				i(227304),	-- Mushroom Cake
 				i(227305),	-- Airship Dog on a Bun
 				i(227306),	-- Holy Mackerel
 				i(227307),	-- Insects Bowl Mix
 				i(227308),	-- Butterflied Deepstrider
-				i(227309),	-- Titanshake
-				i(227310),	-- Magmalaid
 				i(227311),	-- Digspresso
 				i(227312),	-- Afterglow
 				i(227313),	-- Starfruit Puree
 				i(227314),	-- Coffee, Light Ice
 				i(227315),	-- Tarragon Soda
 				i(227316),	-- Eggnog
-				i(227317),	-- Lava Cola
-				i(227318),	-- Quicksilver Sipper
 				i(227319),	-- Koboldchino
 				i(227320),	-- Wicker Wisps
 				i(227321),	-- Blessed Brew
 				i(227322),	-- Sanctified Sasparilla
 				i(227323),	-- Mushroom Tea
 				i(227324),	-- Nerub'ar Nectar
-				i(227325),	-- Stone Soup
-				i(227326),	-- Chalcocite Lava Cake
-				i(227327),	-- Rocky Road
 				i(227328),	-- Wax Fondue
 				i(227329),	-- Still-Twitching Gumbo
 				i(227330),	-- Grottochunk Stew
@@ -2053,7 +1680,6 @@ root(ROOTS.Unsorted, {
 				i(228193),	-- Chipped Demon's Blade
 				i(228194),	-- Fully Scrapped Scrap
 				i(228195),	-- Tattered Goblin Cap
-				i(228361),	-- Seasoned Adventurer's Cache
 				i(228369),	-- Reconstructed Ledger
 				i(228387),	-- Crumbling Bismuth
 				i(228388),	-- Damp Doll
@@ -2065,14 +1691,11 @@ root(ROOTS.Unsorted, {
 				i(228395),	-- Mud Clump
 				i(228396),	-- Dead Fish
 				i(228398),	-- Angry Rock
-				i(228399),	-- Sad Rock
-				i(228400),	-- Happy Rock
 				i(228414),	-- Frayed Wiring
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
 				i(228417),	-- Emergency Healthstone
 				i(228429),	-- Reflective Rock
-				i(228430),	-- Mucky Rock
 				i(228431),	-- Rock Buddy
 
 				i(228449),	-- Tasty Iron Bar
@@ -2258,10 +1881,6 @@ root(ROOTS.Unsorted, {
 				i(225336),	-- A Lost Shoe
 
 				i(225339),	-- Chicken Eggs
-				i(225341),	-- Incriminating Dagger
-				i(225342),	-- Incriminating Script
-				i(225343),	-- Incriminating Journal Entry
-				i(225344),	-- Incriminating Evidence
 				i(225635),	-- Zev'kall's Attrition Log
 				i(225637),	-- Poisoned Dagger
 				i(225887),	-- Titan Emitter \\ The Archaedas Conundrum
@@ -2478,7 +2097,6 @@ root(ROOTS.Unsorted, {
 				i(221215),	-- Taskmaster's Mining Cap
 				i(221216),	-- Bruin Strength Legplates
 				i(221218),	-- Reinforced Construct's Greaves
-				i(221219),	-- Silkwing Trousers
 				i(221220),	-- Basilisk Scale Pauldrons
 				i(221222),	-- Water-Imbued Spaulders
 				i(221223),	-- Bog Beast Mantle
@@ -2495,8 +2113,6 @@ root(ROOTS.Unsorted, {
 				i(221236),	-- Stormbreaker's Shield
 				i(221237),	-- Lamentable Vagrant's Lantern
 				i(221238),	-- Pillar of Constructs
-				i(221239),	-- Spider Blasting Blunderbuss
-				i(221240),	-- Nerubian Stagshell Gouger
 				i(221241),	-- Priestly Agent's Knife
 				i(221242),	-- Forgeborn Helm
 				i(221244),	-- Flamekeeper's Footpads
@@ -2515,8 +2131,6 @@ root(ROOTS.Unsorted, {
 				i(221507),	-- Earth Golem's Wrap
 
 				i(223005),	-- String of Fungal Fruits
-
-				i(223369),	-- Webspeaker's Spiritual Cloak
 
 
 
@@ -2543,7 +2157,6 @@ root(ROOTS.Unsorted, {
 				i(223926),	-- Earthgorger's Chain Bib
 				i(223927),	-- Vinewrapped Leather Tunic
 
-				i(223929),	-- Honey Sweetener's Squeezers
 				i(223930),	-- Monstrous Chain Pincers
 				i(223931),	-- Black Blood Cowl
 				i(223932),	-- Scarab's Carapace Cap
@@ -2562,7 +2175,6 @@ root(ROOTS.Unsorted, {
 				i(223946),	-- [PH] Storm Bindings
 				i(223947),	-- [PH] Steam-Powered Wristwatch
 				i(223949),	-- Dark Depth Stompers
-				i(223950),	-- Corruption Sifter's Treads
 				i(224467),	-- Forgotten Axe
 			}),
 			n(REWARDS, {
@@ -2661,8 +2273,6 @@ root(ROOTS.Unsorted, {
 
 				i(224629),	-- Arathi Hatchet \\ [PH] Algari Short Axe
 
-
-				i(224635),	-- Expeditionary Bulwark \\ [PH] Algari Shield
 
 				i(224639),	-- Expeditionary Chopper \\ [PH] Algari Hatchet
 
@@ -3007,44 +2617,16 @@ root(ROOTS.Unsorted, {
 			i(228483),	-- Lovingly Carved Ramolith
 			i(228485),	-- Carver's Spare Whittling Knife
 			i(228487),	-- Freshly Fallen Sticks
-			i(228488),	-- Small Glass Vase
-			i(228489),	-- Fashionable Flask
-			i(228490),	-- Fresh Grazing Rocks
-			i(228491),	-- Ramolith Bedding Material
-			i(228492),	-- Spicy Rubies
-			i(228493),	-- Sour Topaz Bites
-			i(228494),	-- Crunchy Rock Candy
 			i(228495),	-- Well-Used Potter's Wheel
 			i(228496),	-- Cracked Lantern
 			i(228497),	-- Rusted Airship Cog
 			-- Fall out.... Resort
-			i(216664),	-- Threadling Lure \\ Threading Lure
 			i(219013),	-- Superb Beast Fang
 			i(219016),	-- Coated Steel Tips
 			i(219017),	-- Silver Armor Clasps
-			i(221883),	-- Prototype: Stasis Mine
-			i(221884),	-- Stasis Mine
-			i(221885),	-- Stasis Mine
-			i(221886),	-- Stasis Mine
-			i(221887),	-- Prototype: Gravity Mine
-			i(221888),	-- Gravity Mine
-			i(221889),	-- Gravity Mine
-			i(221890),	-- Gravity Mine
-			i(221891),	-- Prototype: Explosive Mine
-			i(221892),	-- Explosive Mine
-			i(221893),	-- Explosive Mine
-			i(221894),	-- Explosive Mine
-			i(221929),	-- Overclocked Circuit Board
-			i(221930),	-- Overclocked Circuit Board
-			i(221931),	-- Overclocked Circuit Board
-			i(221944),	-- Prototype: Irresistible Red Button
-			i(221946),	-- Irresistible Red Button
-			i(221947),	-- Irresistible Red Button
-			i(221950),	-- Pausing Pylon
-			i(221951),	-- Pausing Pylon
-			i(221953),	-- Convincingly Realistic Jumper Cables
-			i(221954),	-- Convincingly Realistic Jumper Cables
-			i(221955),	-- Convincingly Realistic Jumper Cables
+			--
+
+
 			i(223032),	-- Technique: Lexicon of Mysteries
 			i(223033),	-- Technique: Patient Alchemist's Mixing Rod
 			i(223034),	-- Technique: Inscribed Rolling Pin

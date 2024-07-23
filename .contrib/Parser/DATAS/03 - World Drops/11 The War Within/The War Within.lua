@@ -91,7 +91,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		i(224636),	-- Deep-Dweller's Dirk
 		i(224637),	-- Deep-Dweller's Orb
 		i(224626),	-- Deep-Dweller's Staff
-		--i(224635),	-- Expeditionary Bulwark \\ [PH] Algari Shield
+		i(224635),	-- Expeditionary Bulwark
 		--i(224639),	-- Expeditionary Chopper \\ [PH] Algari Hatchet
 		i(224625),	-- Expeditionary Spear
 		i(224632),	-- Underscout's Kukri
@@ -122,6 +122,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		i(228232),	-- Weavercloth+++
 	}),
 	filter(RECIPES, {
+		i(223093),	-- Design: Beautification Iris (RECIPE!)
+		i(223087),	-- Design: Culminating Blasphemite (RECIPE!)
+		i(223088),	-- Design: Elusive Blasphemite (RECIPE!)
+		i(223086),	-- Design: Insightful Blasphemite (RECIPE!)
 		i(223140),	-- Formula: Enchant Cloak - Chant of Burrowing Rapidity (RECIPE!)
 		i(223123),	-- Formula: Enchanted Gilded Harbinger Crest (RECIPE!)
 		i(223122),	-- Formula: Enchanted Runed Harbinger Crest (RECIPE!)

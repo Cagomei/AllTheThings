@@ -415,7 +415,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(KYVEZA, {
 					i(223048),	-- Plans: Siphoning Stiletto (RECIPE!)
 				}),
-				BossOnly(SILKEN_COURT),
+				BossOnly(SILKEN_COURT, {
+					i(223094),	-- Design: Magnificent Jeweler's Setting (RECIPE!)
+				}),
 				BossOnly(ANSUREK, {
 					i(224147),	-- Sureki Skyrazor (MOUNT!)
 					i(223144),	-- Formula: Enchant Weapon - Authority of the Depths (RECIPE!)
