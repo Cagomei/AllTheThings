@@ -436,7 +436,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13624, {	-- A Squad of Your Own
 					["qg"] = 11806,	-- Sentinel Onaeya
-					-- Reported on Github as not required 
+					-- Reported on Github as not required
 					-- ["sourceQuest"] = 26473,	-- Bathran's Hair
 					["coord"] = { 26.6, 36.8, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },

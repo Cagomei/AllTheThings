@@ -1962,6 +1962,14 @@ namespace ATT
                 Objects.Merge(data, "providers", new List<object> { new List<object> { "i", providerItem } });
             }
 
+            // Provider Object for the Criteria
+            long providerObject = criteriaData.GetProviderObject();
+            if (providerObject > 0)
+            {
+                LogDebug($"INFO: Added _objects to Criteria {achID}:{criteriaID} with Object: {providerObject}");
+                Objects.Merge(data, "_objects", providerObject);
+            }
+
             // Provider NPC for the Criteria
             long providerNPC = criteriaData.GetProviderNPC();
             if (providerNPC > 0)
@@ -2054,6 +2062,20 @@ namespace ATT
                 {
                     LogDebug($"INFO: Added _factions to Criteria {achID}:{criteriaID} with Faction: {factionID}");
                     Objects.Merge(data, "_factions", factionID);
+                }
+            }
+
+            long flightPathID = criteriaData.GetRequiredFlightPath();
+            if (flightPathID > 0)
+            {
+                if (!TryGetSOURCED("flightPathID", flightPathID, out _))
+                {
+                    LogWarn($"Flightpath {flightPathID} should be sourced as it is attached to Criteria {achID}:{criteriaID}");
+                }
+                else
+                {
+                    LogDebug($"INFO: Added _flightpath to Criteria {achID}:{criteriaID} with Flightpath: {flightPathID}");
+                    Objects.Merge(data, "_flightpath", flightPathID);
                 }
             }
         }
@@ -2170,6 +2192,10 @@ namespace ATT
                             Objects.Merge(criteriaData, "awp", awp);
                         }
                         Objects.Merge(data, "g", criteriaData);
+
+                        //if (criteria.Type == 43) {
+                        //    LogWarn($"Criteria {achID}:{criteria.ID} is of Type 43 and was added automagically");
+                        //}
                     }
 
                     // Achievements whose criteria is incorporated should no longer use achievement_criteria symlink
@@ -2541,6 +2567,11 @@ namespace ATT
                 }
                 cloned = true;
             }
+            if (data.TryGetValue("_flightpath", out object flightpath))
+            {
+                DuplicateDataIntoGroups(data, flightpath, "flightPathID");
+                cloned = true;
+            }
 
             // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
             if (cloned && data.TryGetValue("criteriaID", out criteriaID))
@@ -2554,7 +2585,8 @@ namespace ATT
                         if (!SOURCED["npcID"].ContainsKey(npcID))
                         {
                             // remove the creatures which are not sourced from being reported as failed to merge
-                            LogDebugWarn($"Criteria not nested to Unsourced NPC {npcID}. Consider Sourcing NPC");
+                            data.TryGetValue("achID", out long achID);
+                            LogDebugWarn($"Criteria {achID}:{criteriaID} not nested to Unsourced NPC {npcID}. Consider Sourcing NPC");
                             Objects.TrackPostProcessMergeKey("npcID", npcID);
                             crs.Add(npcID);
                         }
@@ -2566,7 +2598,7 @@ namespace ATT
                         cloned = false;
                     }
                 }
-                // if the Criteria attempts to clone into an NPC which isn't Sourced, then don't remove it and add to 'providers'
+                // if the Criteria attempts to clone into an Object which isn't Sourced, then don't remove it and add to 'providers'
                 if (data.TryGetValue("_objects", out List<object> objectObjs))
                 {
                     List<long> objs = new List<long>();
@@ -2575,7 +2607,8 @@ namespace ATT
                         if (!SOURCED["objectID"].ContainsKey(objectID))
                         {
                             // remove the creatures which are not sourced from being reported as failed to merge
-                            LogDebugWarn($"Criteria not nested to Unsourced Object {objectID}. Consider Sourcing Object");
+                            data.TryGetValue("achID", out long achID);
+                            LogDebugWarn($"Criteria {achID}:{criteriaID} not nested to Unsourced Object {objectID}. Consider Sourcing Object");
                             Objects.TrackPostProcessMergeKey("objectID", objectID);
                             objs.Add(objectID);
                         }
@@ -2599,7 +2632,8 @@ namespace ATT
                             Objects.TrackPostProcessMergeKey("questID", questID);
                             if (questRefs != null)
                             {
-                                LogDebugWarn($"Criteria not nested to Unsorted Quest {questID}. Consider adjusting Quest listing");
+                                data.TryGetValue("achID", out long achID);
+                                LogDebugWarn($"Criteria {achID}:{criteriaID} not nested to Unsorted Quest {questID}. Consider adjusting Quest listing");
                                 questList.Add(questID);
                             }
                         }
@@ -2631,7 +2665,8 @@ namespace ATT
                             else
                             {
                                 // remove the spells which are not sourced from being reported as failed to merge
-                                LogDebugWarn($"Criteria not nested to Unsourced Spell/Recipe {id}. Consider Sourcing Spell/Recipe");
+                                data.TryGetValue("achID", out long achID);
+                                LogDebugWarn($"Criteria {achID}:{criteriaID} not nested to Unsourced Spell/Recipe {id}. Consider Sourcing Spell/Recipe");
                             }
                             Objects.TrackPostProcessMergeKey("spellID", id);
                             Objects.TrackPostProcessMergeKey("recipeID", id);

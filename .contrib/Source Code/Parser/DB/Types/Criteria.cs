@@ -49,8 +49,11 @@ namespace ATT.DB.Types
             GetFactionID() > 0 ||
             GetProviderItem() > 0 ||
             GetProviderNPC() > 0 ||
+            GetProviderObject() > 0 ||
             GetRequiredAchievement() > 0 ||
-            GetModifierTreeID() > 0;
+            GetRequiredFlightPath() > 0 ||
+            GetModifierTreeID() > 0 ||
+            Type == 43;
 
         public long GetSourceQuest() =>
             Type == 27 ? Asset : 0;
@@ -70,8 +73,14 @@ namespace ATT.DB.Types
         public long GetProviderNPC() =>
             Type == 0 && Asset > 0 ? Asset : 0;
 
+        public long GetProviderObject() =>
+            Type == 68 ? Asset : 0;
+
         public long GetRequiredAchievement() =>
             Type == 8 ? Asset : 0;
+
+        public long GetRequiredFlightPath() =>
+            Type == 262 ? Asset : 0;
 
         public long GetModifierTreeID() =>
             Modifier_tree_ID;

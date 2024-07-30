@@ -872,7 +872,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(5065, {	-- The Lost Tablets of Mosh'aru
 				["qg"] = 10460,	-- Prospector Ironboot
-				["sourceQuest"] = 3528,	-- The God Hakkar
+				["sourceQuests"] = {
+					-- #if SEASON_OF_DISCOVERY
+					82095,	-- The God Hakkar
+					-- #else
+					3528,	-- The God Hakkar
+					-- #endif
+				},
 				["coord"] = { 66.8, 24.0, TANARIS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { EASTERN_PLAGUELANDS },
@@ -1164,7 +1170,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 		}),
 		n(ZONE_DROPS, {
-			applyclassicphase(PHASE_FIVE, i(22138, {	-- Blackrock Bracer
+			applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(22138, {	-- Blackrock Bracer
 				["timeline"] = { REMOVED_4_0_3 },
 			})),
 			i(16786, {	-- Black Dragonspawn Eye
@@ -1249,7 +1255,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["cr"] = 9216,	-- Spirestone Warlord
 				}),
 				-- #endif
-				applyclassicphase(PHASE_FIVE, i(21982, {	-- Ogre Warbeads
+				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(21982, {	-- Ogre Warbeads
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["crs"] = {
@@ -1416,7 +1422,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 				},
 			}),
-			applyclassicphase(PHASE_FIVE, n(16080,	-- Mor Grayhoof
+			applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16080,	-- Mor Grayhoof
 			-- #if BEFORE 4.0.3
 			bubbleDown({
 				["timeline"] = { REMOVED_4_0_3 },
@@ -1801,7 +1807,16 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(12834, {	-- Plans: Arcanite Champion (RECIPE!)
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
-						i(12728),	-- Plans: Invulnerable Mail (RECIPE!) [Also available as a world drop.]
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228312, {	-- Plans: Invincible Mail (RECIPE!)
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(12728, {	-- Plans: Invulnerable Mail (RECIPE!) [Also available as a world drop.]
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 						i(12837, {	-- Plans: Masterwork Stormhammer (RECIPE!)
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
@@ -1956,7 +1971,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FIVE, n(16042, {	-- Lord Valthalak
+				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16042, {	-- Lord Valthalak
 					-- #if BEFORE 6.0.2
 					["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 					["cost"] = {

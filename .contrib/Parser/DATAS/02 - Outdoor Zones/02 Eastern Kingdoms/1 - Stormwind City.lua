@@ -1909,6 +1909,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { STRANGLETHORN_VALE },
 					["requireSkill"] = BLACKSMITHING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -3324,6 +3325,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84418, {	-- The Missing Knight
+					["qg"] = 5492,	-- Katherine the Pure <Paladin Trainer>
+					["coord"] = { 37.4, 32, STORMWIND_CITY },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
+					["groups"] = {
+						i(228238, {	-- Testament of Divine Steed
+							["spellID"] = 461607,	-- Divine Steed
+							["f"] = RECIPES,
+						}),
+					},
+				})),
+				-- #endif
 				q(46728, {	-- The Nation of Kul Tiras
 					["qg"] = 120756,	-- Anduin Wyrnn
 					["sourceQuest"] = 46727,	-- Battle for Azeroth: Tides of War (BfA version)
@@ -3347,7 +3364,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 56.0, 16.0, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.1",
+						-- #else
+						REMOVED_4_0_3,
+						-- #endif
+					},
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 210,
 					["cost"] = { { "i", 6040, 6 } },	-- Golden Scale Bracers
@@ -3362,6 +3385,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(80241, {	-- The Origins of Smithing
+					["qg"] = 7798,	-- Hank the Hammer
+					["coord"] = { 56.0, 16.0, STORMWIND_CITY },
+					["timeline"] = { "added 1.15.1" },
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
+					["cost"] = { { "i", 6040, 6 } },	-- Golden Scale Bracers
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
+					["groups"] = {
+						i(217274, {	-- Plans: Golden Scale Gauntlets (RECIPE!)
+							["timeline"] = { "added 1.15.1" },
+							["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
+						}),
+					},
+				})),
+				-- #endif
 				q(543, {	-- The Perenolde Tiara
 					["qg"] = 2285,	-- Count Remington Ridgewell
 					["coords"] = {

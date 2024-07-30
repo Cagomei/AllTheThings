@@ -734,6 +734,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79236, {	-- Cherry for Your Thoughts?
+					["qg"] = 215643,	-- Tokal
+					["sourceQuest"] = 79235,	-- On The Lam
+					["coord"] = { 27.0, 77.2, STRANGLETHORN_VALE },
+					["timeline"] = { "added 1.15.1" },
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- 0/1 Cherry Grog
+							["provider"] = { "i", 4600 },	-- Cherry Grog
+							["cr"] = 2832,	-- Nixxrax Fillamug <Food and Drink>
+						}),
+					},
+				})),
+				-- #endif
 				q(202, {	-- Colonel Kurzen
 					["qg"] = 469,	-- Lieutenant Doren
 					["sourceQuest"] = 574,	-- Special Forces
@@ -1180,7 +1195,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(206, {	-- Mai'Zoth
 					["qg"] = 739,	-- Brother Nimetz
-					["sourceQuest"] = 205,	-- Troll Witchery
+					["sourceQuests"] = {
+						202,	-- Colonel Kurzen
+						205,	-- Troll Witchery
+					},
 					["coord"] = { 37.8, 3.6, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1948,6 +1966,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["providers"] = {
 								{ "i", 4034 },	-- Stone of the Tides
 								{ "i", 4027 },	-- Catelyn's Blade
+								{ "o", 2576 },	-- Altar of the Tides
 							},
 							["coord"] = { 25, 23.6, STRANGLETHORN_VALE },
 							["cr"] = 2624,	-- Gazban
@@ -2054,6 +2073,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 287 },	-- Bookie Herod's Records
 						{ "i", 2719 },	-- Small Brass Key
 					},
+					["sourceQuest"] = 200,	-- Bookie Herod
 					["coord"] = { 43.7, 9.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2616,6 +2636,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_THREE, massacrecoin_c(100, i(221365))),	-- Silver Massacre Coin
 				applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(100, i(221366))),	-- Gold Massacre Coin
+				i(216884, {	-- Bloodthirst Blade
+					["description"] = "This drops from the troll boss during the Blood Moon event. It sadly cannot be equipped.",
+					["cr"] = 218690,	-- Kha'damu <Chosen of the Blood Loa>
+				}),
 			}))),
 			-- #endif
 			n(VENDORS, {
@@ -2845,13 +2869,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						bloodcoin_s(1, i(216491)),	-- Shipment of Stranglethorn Lumber
 						bloodcoin_g(1, i(216570)),	-- Reins of the Golden Sabercat
 						bloodcoin_g(1, i(216492)),	-- Whistle of the Mottled Blood Raptor
-						
+
 						-- Phase 2
 						bloodcoin_s(2, i(216621)),	-- Blooddrenched Drape
 						bloodcoin_s(2, i(216620)),	-- Bloodrot Cloak
 						bloodcoin_s(2, i(216623)),	-- Cape of Hemostasis
 						bloodcoin_s(2, i(216622)),	-- Coagulated Cloak
-						
+
 						-- Class Items (Blood Harvest)
 						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(220173, {	-- Parasomnia
 							["classes"] = { WARRIOR, PALADIN },
@@ -3030,7 +3054,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cost"] = 100000,	-- 10g
 						})),
 						applyclassicphase(SOD_PHASE_THREE, i(219147, {	-- Rune of Grace
-							--["sourceQuest"] = ,	-- 
+							--["sourceQuest"] = ,	--
 							["description"] = "You need to complete the Frix Xizzix quest first. (Crieve TODO: Document the quest chain!)",
 							["classes"] = { PALADIN },
 							["cost"] = 10000,	-- 1g
@@ -3212,8 +3236,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(12163, {	-- Plans: Moonsteel Broadsword (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.1" },
+							-- #endif
 							["isLimited"] = true,
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_TWO, i(217282, {	-- Plans: Moonsteel Broadsword (RECIPE!)
+							["timeline"] = { "added 1.15.1" },
+							["isLimited"] = true,
+						})),
+						-- #endif
 						i(12252, {	-- Staff of Protection
 							["isLimited"] = true,
 						}),

@@ -849,6 +849,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_TWO, i(213452, {	-- Dormant Holy Rune
+					["provider"] = { "o", 423841 },	-- Frozen Remains
+					["coord"] = { 39.7, 60.8, ALTERAC_MOUNTAINS },
+					["description"] = "Once you have this rune in your inventory, use Divine Intervention on a healer friend. Have them resurrect you to receive the rune upon resurrection.",
+					["timeline"] = { "added 1.15.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(213132, {	-- Rune of the Guardian
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(416035),	-- Engrave Boots - Guarded by the Light
+							},
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(2480, {	-- Bro'kin <Alchemy Supplies>
 					["coord"] = { 38.0, 38.0, ALTERAC_MOUNTAINS },

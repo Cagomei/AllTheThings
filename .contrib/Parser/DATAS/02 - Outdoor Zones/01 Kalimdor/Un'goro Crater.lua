@@ -789,7 +789,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if NOT ANYCLASSIC
-				q(13903, {	-- Gorishi Grub
+				q(13917, {	-- Gorishi Grub
 					["providers"] = {
 						{ "n", 34320 },	-- Venomhide Hatchling
 						{ "i", 46362 },	-- Venomhide Hatchling

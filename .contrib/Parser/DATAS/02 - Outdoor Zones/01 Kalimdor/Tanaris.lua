@@ -4603,7 +4603,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Stoley's Shipment
 							["providers"] = {
 								{ "i",   9244 },	-- Stoley's Shipment
-								{ "o", 142181 },	-- Stoley's Shipment
+								{ "o", 142181 },	-- Stolen Cargo
 							},
 							["coord"] = { 72.2, 46.7, TANARIS },
 						}),
@@ -5686,7 +5686,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.5, 28.8, TANARIS },
 					-- #endif
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_TWO, i(217280, {	-- Plans: Golden Scale Coif (RECIPE!)
+							["timeline"] = { "added 1.15.1" },
+							["isLimited"] = true,
+						})),
+						-- #endif
 						i(6047, {	-- Plans: Golden Scale Coif (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.1" },
+							-- #endif
 							["isLimited"] = true,
 						}),
 					},
