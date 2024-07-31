@@ -120,6 +120,117 @@ root(ROOTS.Unsorted, {
 			i(229000),	-- Machine-Warden's Cog
 			i(229005),	-- Cache of Earthen Treasures
 			i(229006),	-- Cache of Earthen Treasures
+			--
+			i(225892),	-- Recipe: Rockslide Shake
+			i(228751),	-- Gigantic Grrloc
+			i(228952),	-- Treasure Map Bundle
+			i(229061),	-- Nisa's Spare Belt
+			i(229062),	-- Nisa's Spare Coronet
+			i(229063),	-- Nisa's Spare Wristguards
+			i(229064),	-- Nisa's Spare Shoes
+			i(229065),	-- Nisa's Spare Gloves
+			i(229066),	-- Nisa's Spare Cassock
+			i(229067),	-- Nisa's Spare Leggings
+			i(229068),	-- Nisa's Spare Shoulderpads
+			i(229069),	-- Nisa's Spare Cloak
+			i(229070),	-- Azra's Spare Striders
+			i(229071),	-- Azra's Spare Gloves
+			i(229072),	-- Azra's Spare Mask
+			i(229073),	-- Azra's Spare Trousers
+			i(229074),	-- Azra's Spare Cord
+			i(229075),	-- Azra's Spare Bracers
+			i(229076),	-- Azra's Spare Chestguard
+			i(229077),	-- Azra's Spare Shoulderguards
+			i(229078),	-- Aevery's Spare Brigandine
+			i(229079),	-- Aevery's Spare Boots
+			i(229080),	-- Aevery's Spare Gauntlets
+			i(229081),	-- Aevery's Spare Cowl
+			i(229082),	-- Aevery's Spare Chausses
+			i(229083),	-- Aevery's Spare Shoulderguards
+			i(229084),	-- Aevery's Spare Belt
+			i(229085),	-- Aevery's Spare Bracers
+			i(229086),	-- Kyros's Spare Helm
+			i(229087),	-- Kyros's Spare Chestplate
+			i(229088),	-- Kyros's Spare Sabatons
+			i(229089),	-- Kyros's Spare Handguards
+			i(229090),	-- Kyros's Spare Faulds
+			i(229091),	-- Kyros's Spare Shoulder Plates
+			i(229092),	-- Kyros's Spare Girdle
+			i(229093),	-- Kyros's Spare Cuffs
+			i(229096),	-- The Cleansing Flame's Robes
+			i(229097),	-- The Cleansing Flame's Sandals
+			i(229098),	-- The Cleansing Flame's Handwraps
+			i(229099),	-- The Cleansing Flame's Cowl
+			i(229100),	-- The Cleansing Flame's Leggings
+			i(229101),	-- The Cleansing Flame's Shoulderpads
+			i(229102),	-- The Cleansing Flame's Cord
+			i(229103),	-- The Cleansing Flame's Cuffs
+			i(229104),	-- Ironstrike's Vest
+			i(229105),	-- Ironstrike's Waders
+			i(229106),	-- Ironstrike's Grips
+			i(229107),	-- Ironstrike's Headgear
+			i(229108),	-- Ironstrike's Breeches
+			i(229109),	-- Ironstrike's Epaulets
+			i(229110),	-- Ironstrike's Sash
+			i(229111),	-- Ironstrike's Bindings
+			i(229112),	-- Flamestonge's Chainmail
+			i(229113),	-- Flamestonge's Striders
+			i(229114),	-- Flamestonge's Grips
+			i(229115),	-- Flamestonge's Coif
+			i(229116),	-- Flamestonge's Greaves
+			i(229117),	-- Flamestonge's Shoulderguards
+			i(229118),	-- Flamestonge's Belt
+			i(229119),	-- Flamestonge's Bracers
+			i(229120),	-- Warstone's Breastplate
+			i(229121),	-- Warstone's Sabatons
+			i(229122),	-- Warstone's Gauntlets
+			i(229123),	-- Warstone's Helm
+			i(229124),	-- Warstone's Legguards
+			i(229125),	-- Warstone's Mantle
+			i(229126),	-- Warstone's Girdle
+			i(229127),	-- Warstone's Armplates
+			i(229129),	-- Cache of Delver's Spoils
+			i(229130),	-- Cache of Delver's Spoils
+			i(229131),	-- Lamplighter Elite's Dagger
+			i(229132),	-- Lamplighter Elite's Ritual Knife
+			i(229133),	-- Lamplighter Elite's Great Mallet
+			i(229134),	-- Lamplighter Elite's Hammer
+			i(229135),	-- Lamplighter Elite's Blade
+			i(229136),	-- Lamplighter Elite's Sword
+			i(229137),	-- Lamplighter Elite's Slugthrower
+			i(229138),	-- Lamplighter Elite's Mace
+			i(229139),	-- Lamplighter Elite's Warhammer
+			i(229140),	-- Lamplighter Elite's Great Splitter
+			i(229141),	-- Lamplighter Elite's Polearm
+			i(229142),	-- Lamplighter Elite's Staff
+			i(229143),	-- Lamplighter Elite's Spellstaff
+			i(229144),	-- Lamplighter Elite's Lightstone
+			i(229145),	-- Lamplighter Elite's Shield
+			i(229146),	-- Lamplighter Elite's Glaive
+			i(229147),	-- Lamplighter's Polearm
+			i(229148),	-- Lamplighter's Staff
+			i(229149),	-- Lamplighter's Rifle
+			i(229150),	-- Lamplighter's Splitter
+			i(229151),	-- Lamplighter's Hatchet
+			i(229152),	-- Lamplighter's Battleaxe
+			i(229153),	-- Lamplighter's Cudgel
+			i(229154),	-- Lamplighter's Edge
+			i(229155),	-- Lamplighter's Greataxe
+			i(229156),	-- Lamplighter's Great Mallet
+			i(229157),	-- Lamplighter's Bulwark
+			i(229158),	-- Lamplighter's War Knives
+			i(229159),	-- Lamplighter's Lightstone
+			i(229160),	-- Lamplighter's Glaive
+			i(229161),	-- Lamplighter's Chopper
+			i(229162),	-- Lamplighter's Sword
+			i(229163),	-- Lamplighter's Blade
+			i(229193),	-- Queen's Pheromone
+			i(229194),	-- Queen's Pheromone
+			i(229195),	-- Queen's Pheromone
+			i(229353),	-- Rage-Filled Idol
+			i(229354),	-- Algari Adventurer's Cache
+			i(229370),	-- Companion Experience
+			i(229371),	-- Companion Experience
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(BATTLE_PETS, {
@@ -482,7 +593,7 @@ root(ROOTS.Unsorted, {
 				prof(INSCRIPTION, {
 					i(225338),	-- Glyph of Jab
 
-					i(222545),	-- Khaz Algar Milling
+					i(222545),	-- Milling \\ Khaz Algar Milling
 					i(222108),	-- Khaz Algar Milling
 					i(219599),	-- Fortuitous Essence
 					i(219632),	-- Scribe Water
@@ -753,10 +864,10 @@ root(ROOTS.Unsorted, {
 				i(219097),	-- [DNT] Ensemble: CivilianAdventurer
 				i(219098),	-- [DNT] Ensemble: CivilianAdventurer
 				i(219099),	-- [DNT] Ensemble: CivilianAdventurer
-				iensemble(219115),	-- Versatile Peddler's Trinkets
-				iensemble(219120),	-- Toiler's Khaki Uniform
-				iensemble(219125),	-- Formed Artisan's Talent
-				iensemble(219132),	-- Crimson Cartographer's Orientation
+
+
+
+
 				-- Cosmetic
 				i(224165),	-- Dornogal Tabard \\ Gilded Earthen Tabard \\ [PH] Earthen Tabard
 				i(224166),	-- Awakened Tabard \\ Awakening Tabard \\ Copper Earthen Tabard \\ [PH] Earthen Tabard
@@ -2609,9 +2720,10 @@ root(ROOTS.Unsorted, {
 			i(219013),	-- Superb Beast Fang
 			i(219016),	-- Coated Steel Tips
 			i(219017),	-- Silver Armor Clasps
+			i(216665),	-- Warband Bank Distance Inhibitor
+			i(225431),	-- Design: Vicious Jeweler's Setting
+			i(225759),	-- Coreway Engineer's Forceps
 			--
-
-
 			i(223032),	-- Technique: Lexicon of Mysteries
 			i(223033),	-- Technique: Patient Alchemist's Mixing Rod
 			i(223034),	-- Technique: Inscribed Rolling Pin
@@ -2620,273 +2732,6 @@ root(ROOTS.Unsorted, {
 			i(223979),	-- Whispering Squirmworm
 			i(224240),	-- Nerubian Tombstone
 			i(225256),	-- PH_2
-
-
-			------------------- THESE ARE ALREADY SORTED (IN ENSEMBLES) -----------------
-			i(218741),	-- Mossy Cartographer's Doublet
-			i(218742),	-- Deep Cartographer's Doublet
-			i(218743),	-- Crimson Cartographer's Doublet
-			i(218744),	-- Oceanic Cartographer's Doublet
-			i(218745),	-- Saffron Cartographer's Doublet
-			i(218746),	-- Sooty Artisan's Apron
-			i(218747),	-- Stained Artisan's Apron
-			i(218748),	-- Cast Artisan's Apron
-			i(218749),	-- Woven Artisan's Apron
-			i(218750),	-- Formed Artisan's Apron
-			i(218751),	-- Toiler's Navy Jerkin
-			i(218752),	-- Toiler's Beige Jerkin
-			i(218753),	-- Toiler's Burgundy Jerkin
-			i(218754),	-- Toiler's Ochre Jerkin
-			i(218755),	-- Toiler's Khaki Jerkin
-			i(218756),	-- Occult Peddler's Tunic
-			i(218757),	-- Peculiar Peddler's Tunic
-			i(218758),	-- Curious Peddler's Tunic
-			i(218759),	-- Arcane Peddler's Tunic
-			i(218760),	-- Versatile Peddler's Tunic
-			i(218761),	-- Court Patron's Blazer
-			i(218762),	-- Celestial Patron's Blazer
-			i(218763),	-- Verdant Patron's Blazer
-			i(218764),	-- Royal Patron's Blazer
-			i(218765),	-- Vermillion Patron's Blazer
-			i(218766),	-- Taupe Quotidian Shirt
-			i(218767),	-- Umber Quotidian Shirt
-			i(218768),	-- Earthy Quotidian Shirt
-			i(218769),	-- Maroon Quotidian Shirt
-			i(218770),	-- Sandy Quotidian Shirt
-			i(218771),	-- Midnight Educator's Vest
-			i(218772),	-- Cobalt Educator's Vest
-			i(218773),	-- Leafy Educator's Vest
-			i(218774),	-- Lilac Educator's Vest
-			i(218775),	-- Cardinal Educator's Vest
-			i(218776),	-- Mossy Cartographer's Trailblazers
-			i(218777),	-- Deep Cartographer's Trailblazers
-			i(218778),	-- Crimson Cartographer's Trailblazers
-			i(218779),	-- Oceanic Cartographer's Trailblazers
-			i(218780),	-- Saffron Cartographer's Trailblazers
-			i(218781),	-- Sooty Artisan's Steel-Toes
-			i(218782),	-- Stained Artisan's Steel-Toes
-			i(218783),	-- Cast Artisan's Steel-Toes
-			i(218784),	-- Woven Artisan's Steel-Toes
-			i(218785),	-- Formed Artisan's Steel-Toes
-			i(218786),	-- Toiler's Navy Footwraps
-			i(218787),	-- Toiler's Beige Footwraps
-			i(218788),	-- Toiler's Burgundy Footwraps
-			i(218789),	-- Toiler's Ochre Footwraps
-			i(218790),	-- Toiler's Khaki Footwraps
-			i(218791),	-- Occult Peddler's Galoshes
-			i(218792),	-- Peculiar Peddler's Galoshes
-			i(218793),	-- Curious Peddler's Galoshes
-			i(218794),	-- Arcane Peddler's Galoshes
-			i(218795),	-- Versatile Peddler's Galoshes
-			i(218796),	-- Court Patron's Boots
-			i(218797),	-- Celestial Patron's Boots
-			i(218798),	-- Verdant Patron's Boots
-			i(218799),	-- Royal Patron's Boots
-			i(218800),	-- Vermillion Patron's Boots
-			i(218801),	-- Taupe Quotidian Waders
-			i(218802),	-- Umber Quotidian Waders
-			i(218803),	-- Earthy Quotidian Waders
-			i(218804),	-- Maroon Quotidian Waders
-			i(218805),	-- Sandy Quotidian Waders
-			i(218806),	-- Midnight Educator's Moccasins
-			i(218807),	-- Cobalt Educator's Moccasins
-			i(218808),	-- Leafy Educator's Moccasins
-			i(218809),	-- Lilac Educator's Moccasins
-			i(218810),	-- Cardinal Educator's Moccasins
-			i(218811),	-- Mossy Cartographer's Handguards
-			i(218812),	-- Deep Cartographer's Handguards
-			i(218813),	-- Crimson Cartographer's Handguards
-			i(218814),	-- Oceanic Cartographer's Handguards
-			i(218815),	-- Saffron Cartographer's Handguards
-			i(218816),	-- Sooty Artisan's Mitts
-			i(218817),	-- Stained Artisan's Mitts
-			i(218818),	-- Cast Artisan's Mitts
-			i(218819),	-- Woven Artisan's Mitts
-			i(218820),	-- Formed Artisan's Mitts
-			i(218821),	-- Toiler's Navy Wraps
-			i(218822),	-- Toiler's Beige Wraps
-			i(218823),	-- Toiler's Burgundy Wraps
-			i(218824),	-- Toiler's Ochre Wraps
-			i(218825),	-- Toiler's Khaki Wraps
-			i(218826),	-- Taupe Quotidian Handcovers
-			i(218827),	-- Umber Quotidian Handcovers
-			i(218828),	-- Earthy Quotidian Handcovers
-			i(218829),	-- Maroon Quotidian Handcovers
-			i(218830),	-- Sandy Quotidian Handcovers
-			i(218831),	-- Midnight Educator's Gloves
-			i(218832),	-- Cobalt Educator's Gloves
-			i(218833),	-- Leafy Educator's Gloves
-			i(218834),	-- Lilac Educator's Gloves
-			i(218835),	-- Cardinal Educator's Gloves
-			i(218836),	-- Mossy Cartographer's Cap
-			i(218837),	-- Deep Cartographer's Cap
-			i(218838),	-- Crimson Cartographer's Cap
-			i(218839),	-- Oceanic Cartographer's Cap
-			i(218840),	-- Saffron Cartographer's Cap
-			i(218841),	-- Sooty Artisan's Goggles
-			i(218842),	-- Stained Artisan's Goggles
-			i(218843),	-- Cast Artisan's Goggles
-			i(218844),	-- Woven Artisan's Goggles
-			i(218845),	-- Formed Artisan's Goggles
-			i(218846),	-- Toiler's Navy Headband
-			i(218847),	-- Toiler's Beige Headband
-			i(218848),	-- Toiler's Ochre Headband
-			i(218849),	-- Toiler's Khaki Headband
-			i(218850),	-- Toiler's Burgundy Headband
-			i(218851),	-- Occult Peddler's Turban
-			i(218852),	-- Peculiar Peddler's Turban
-			i(218853),	-- Curious Peddler's Turban
-			i(218854),	-- Arcane Peddler's Turban
-			i(218855),	-- Versatile Peddler's Turban
-			i(218856),	-- Court Patron's Top Hat
-			i(218857),	-- Celestial Patron's Top Hat
-			i(218858),	-- Verdant Patron's Top Hat
-			i(218859),	-- Royal Patron's Top Hat
-			i(218860),	-- Vermillion Patron's Top Hat
-			i(218861),	-- Taupe Quotidian Hood
-			i(218862),	-- Umber Quotidian Hood
-			i(218863),	-- Earthy Quotidian Hood
-			i(218864),	-- Maroon Quotidian Hood
-			i(218865),	-- Sandy Quotidian Hood
-			i(218866),	-- Midnight Educator's Crown
-			i(218867),	-- Cobalt Educator's Crown
-			i(218868),	-- Leafy Educator's Crown
-			i(218869),	-- Lilac Educator's Crown
-			i(218870),	-- Cardinal Educator's Crown
-			i(218871),	-- Mossy Cartographer's Pantaloons
-			i(218872),	-- Deep Cartographer's Pantaloons
-			i(218873),	-- Crimson Cartographer's Pantaloons
-			i(218874),	-- Oceanic Cartographer's Pantaloons
-			i(218875),	-- Saffron Cartographer's Pantaloons
-			i(218876),	-- Sooty Artisan's Leggings
-			i(218877),	-- Stained Artisan's Leggings
-			i(218878),	-- Cast Artisan's Leggings
-			i(218879),	-- Woven Artisan's Leggings
-			i(218880),	-- Formed Artisan's Leggings
-			i(218881),	-- Toiler's Navy Chaps
-			i(218882),	-- Toiler's Beige Chaps
-			i(218883),	-- Toiler's Burgundy Chaps
-			i(218884),	-- Toiler's Ochre Chaps
-			i(218885),	-- Toiler's Khaki Chaps
-			i(218886),	-- Occult Peddler's Breeches
-			i(218887),	-- Peculiar Peddler's Breeches
-			i(218888),	-- Curious Peddler's Breeches
-			i(218889),	-- Arcane Peddler's Breeches
-			i(218890),	-- Versatile Peddler's Breeches
-			i(218891),	-- Court Patron's Tights
-			i(218892),	-- Celestial Patron's Tights
-			i(218893),	-- Verdant Patron's Tights
-			i(218894),	-- Royal Patron's Tights
-			i(218895),	-- Vermillion Patron's Tights
-			i(218896),	-- Taupe Quotidian Trousers
-			i(218897),	-- Umber Quotidian Trousers
-			i(218898),	-- Earthy Quotidian Trousers
-			i(218899),	-- Maroon Quotidian Trousers
-			i(218900),	-- Sandy Quotidian Trousers
-			i(218901),	-- Midnight Educator's Pants
-			i(218902),	-- Cobalt Educator's Pants
-			i(218903),	-- Leafy Educator's Pants
-			i(218904),	-- Lilac Educator's Pants
-			i(218905),	-- Cardinal Educator's Pants
-			i(218906),	-- Midnight Educator's Robe
-			i(218907),	-- Cobalt Educator's Robe
-			i(218908),	-- Leafy Educator's Robe
-			i(218909),	-- Lilac Educator's Robe
-			i(218910),	-- Cardinal Educator's Robe
-			i(218917),	-- Mossy Cartographer's Shoulderguards
-			i(218918),	-- Deep Cartographer's Shoulderguards
-			i(218919),	-- Crimson Cartographer's Shoulderguards
-			i(218920),	-- Oceanic Cartographer's Shoulderguards
-			i(218921),	-- Saffron Cartographer's Shoulderguards
-			i(218922),	-- Sooty Artisan's Shoulderpads
-			i(218923),	-- Stained Artisan's Shoulderpads
-			i(218924),	-- Cast Artisan's Shoulderpads
-			i(218925),	-- Woven Artisan's Shoulderpads
-			i(218926),	-- Formed Artisan's Shoulderpads
-			i(218927),	-- Occult Peddler's Pauldrons
-			i(218928),	-- Peculiar Peddler's Pauldrons
-			i(218929),	-- Curious Peddler's Pauldrons
-			i(218930),	-- Arcane Peddler's Pauldrons
-			i(218931),	-- Versatile Peddler's Pauldrons
-			i(218932),	-- Court Patron's Epaulettes
-			i(218933),	-- Celestial Patron's Epaulettes
-			i(218934),	-- Verdant Patron's Epaulettes
-			i(218935),	-- Royal Patron's Epaulettes
-			i(218936),	-- Vermillion Patron's Epaulettes
-			i(218937),	-- Midnight Educator's Mantle
-			i(218938),	-- Cobalt Educator's Mantle
-			i(218939),	-- Leafy Educator's Mantle
-			i(218940),	-- Lilac Educator's Mantle
-			i(218941),	-- Cardinal Educator's Mantle
-			i(218942),	-- Mossy Cartographer's Compass
-			i(218943),	-- Deep Cartographer's Compass
-			i(218944),	-- Crimson Cartographer's Compass
-			i(218945),	-- Oceanic Cartographer's Compass
-			i(218946),	-- Saffron Cartographer's Compass
-			i(218947),	-- Sooty Artisan's Tools
-			i(218948),	-- Stained Artisan's Tools
-			i(218949),	-- Cast Artisan's Tools
-			i(218950),	-- Woven Artisan's Tools
-			i(218951),	-- Formed Artisan's Tools
-			i(218952),	-- Toiler's Navy Belt
-			i(218953),	-- Toiler's Beige Belt
-			i(218954),	-- Toiler's Burgundy Belt
-			i(218955),	-- Toiler's Ochre Belt
-			i(218956),	-- Toiler's Khaki Belt
-			i(218957),	-- Occult Peddler's Merchandise
-			i(218958),	-- Peculiar Peddler's Merchandise
-			i(218959),	-- Curious Peddler's Merchandise
-			i(218960),	-- Arcane Peddler's Merchandise
-			i(218961),	-- Versatile Peddler's Merchandise
-			i(218962),	-- Court Patron's Emblem
-			i(218963),	-- Celestial Patron's Emblem
-			i(218964),	-- Verdant Patron's Emblem
-			i(218965),	-- Royal Patron's Emblem
-			i(218966),	-- Vermillion Patron's Emblem
-			i(218967),	-- Taupe Quotidian Sash
-			i(218968),	-- Umber Quotidian Sash
-			i(218969),	-- Earthy Quotidian Sash
-			i(218970),	-- Maroon Quotidian Sash
-			i(218971),	-- Sandy Quotidian Sash
-			i(218972),	-- Midnight Educator's Scrolls
-			i(218973),	-- Cobalt Educator's Scrolls
-			i(218974),	-- Leafy Educator's Scrolls
-			i(218975),	-- Lilac Educator's Scrolls
-			i(218976),	-- Cardinal Educator's Scrolls
-			i(218977),	-- Mossy Cartographer's Bracers
-			i(218978),	-- Deep Cartographer's Bracers
-			i(218979),	-- Crimson Cartographer's Bracers
-			i(218980),	-- Oceanic Cartographer's Bracers
-			i(218981),	-- Saffron Cartographer's Bracers
-			i(218982),	-- Sooty Artisan's Bindings
-			i(218983),	-- Stained Artisan's Bindings
-			i(218984),	-- Cast Artisan's Bindings
-			i(218985),	-- Woven Artisan's Bindings
-			i(218986),	-- Formed Artisan's Bindings
-			i(218987),	-- Toiler's Navy Wristbands
-			i(218988),	-- Toiler's Beige Wristbands
-			i(218989),	-- Toiler's Burgundy Wristbands
-			i(218990),	-- Toiler's Ochre Wristbands
-			i(218991),	-- Toiler's Khaki Wristbands
-			i(218992),	-- Taupe Quotidian Wristguards
-			i(218993),	-- Umber Quotidian Wristguards
-			i(218994),	-- Earthy Quotidian Wristguards
-			i(218995),	-- Maroon Quotidian Wristguards
-			i(218996),	-- Sandy Quotidian Wristguards
-			i(218997),	-- Midnight Educator's Wraps
-			i(218998),	-- Cobalt Educator's Wraps
-			i(218999),	-- Leafy Educator's Wraps
-			i(219000),	-- Lilac Educator's Wraps
-			i(219001),	-- Cardinal Educator's Wraps
-			i(223202),	-- Deep Diver's Belt
-			i(223199),	-- Deep Diver's Bonnet
-			i(223205),	-- Deep Diver's Boots
-			i(223201),	-- Deep Diver's Corselet
-			i(223206),	-- Deep Diver's Gloves
-			i(223204),	-- Deep Diver's Greaves
-			i(223200),	-- Deep Diver's Pauldrons
-			i(223255),	-- Deep Diver's Tank
-			i(223258),	-- Deep Diver's Wrist Seal
 		})),
 	}),
 	expansion(EXPANSION.DF, {
