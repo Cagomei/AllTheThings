@@ -786,7 +786,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(3856),	-- Shadow Crescent Axe
 			i(3851),	-- Solid Iron Maul
 			i(206484, {["timeline"] = {ADDED_10_1_5}}),	-- Strength of Menethil
-			i(17193),	-- Sulfuron Hammer
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227684, {	-- Sulfuron Hammer
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(17193, {	-- Sulfuron Hammer
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(206513, {["timeline"] = {ADDED_10_1_5}}),	-- Stygian Shield
 			i(206502, {["timeline"] = {ADDED_10_1_5}}),	-- The Face of Doom
 			i(206497, {["timeline"] = {ADDED_10_1_5}}),	-- The Final Dream
@@ -931,7 +940,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		i(787),		-- Slitherskin Mackerel
 		applyclassicphase(WRATH_PHASE_ONE, i(44838, {["timeline"] = {ADDED_3_2_2}})),	-- Slow-Roasted Turkey [Pilgrim's Bounty]
 		i(6890),	-- Smoked Bear Meat
-		applyclassicphase(PHASE_FOUR, i(20452)),	-- Smoked Desert Dumplings
+		applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20452)),	-- Smoked Desert Dumplings
 		i(21072),	-- Smoked Sagefish
 		i(3729),	-- Soothing Turtle Bisque
 		applyclassicphase(TBC_PHASE_ONE, i(30816, {["timeline"] = {ADDED_2_0_5}})),	-- Spice Bread
@@ -1458,9 +1467,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(10576),	-- Mithril Mechanical Dragonling
 		}),
 		n(WEAPONS, {
-			i(18282),	-- Core Marksman Rifle
+			i(18282, {	-- Core Marksman Rifle
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(16004),	-- Dark Iron Rifle
 			i(4369),	-- Deadly Blunderbuss
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227849, {	-- Fiery Core Sharpshooter Rifle
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(16007, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Flawless Arcanite Rifle
 			i(18168),	-- Force Reactive Disk
 			i(4372, {["timeline"] = {REMOVED_4_0_3, ADDED_4_1_0}}),	-- Lovingly Crafted Boomstick
@@ -2921,7 +2939,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(7048),	-- Azure Silk Hood
 			i(10024),	-- Black Mageweave Headband
 			i(10041),	-- Dreamweave Circlet
-			i(4322),	-- Enchanter's Cowl
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217257, {	-- Enchanter's Cowl
+				["timeline"] = { "added 1.15.1" },
+			})),
+			-- #endif
+			i(4322, {	-- Enchanter's Cowl
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.1" },
+				-- #endif
+			}),
 			i(14111),	-- Felcloth Hood
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(215111, {	-- Gneuro-Linked Arcano-Filament Monocle
@@ -3122,7 +3149,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			i(7026),	-- Linen Belt
 			i(13856),	-- Runecloth Belt
-			applyclassicphase(PHASE_FOUR, i(20539)),	-- Runed Stygian Belt
+			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20539)),	-- Runed Stygian Belt
 			i(4328),	-- Spider Belt
 			i(4329),	-- Star Belt
 			applyclassicphase(PHASE_THREE, i(19047)),	-- Wisdom of the Timbermaw
@@ -3159,7 +3186,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(10009),	-- Red Mageweave Pants
 			i(203800, {["timeline"] = {ADDED_10_0_7}}),	-- Ritualistic Legwarmers
 			i(13865),	-- Runecloth Pants
-			applyclassicphase(PHASE_FOUR, i(20538)),	-- Runed Stygian Leggings
+			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20538)),	-- Runed Stygian Leggings
 			i(10002),	-- Shadoweave Pants
 			i(10047),	-- Simple Kilt
 			i(10045),	-- Simple Linen Pants
@@ -3193,7 +3220,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(15802),	-- Mooncloth Boots
 			i(4313),	-- Red Woolen Boots
 			i(13864),	-- Runecloth Boots
-			applyclassicphase(PHASE_FOUR, i(20537)),	-- Runed Stygian Boots
+			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20537)),	-- Runed Stygian Boots
 			i(10031),	-- Shadoweave Boots
 			i(10046),	-- Simple Linen Boots
 			i(4312),	-- Soft-Soled Linen Boots

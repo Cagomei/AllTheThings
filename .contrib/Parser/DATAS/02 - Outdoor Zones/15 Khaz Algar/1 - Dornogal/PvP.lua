@@ -11,14 +11,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				})),
 			}),
 			n(QUESTS, sharedData({
-				["provider"] = { "n", 58.9, 75.3 },	-- Ruffious
+				["provider"] = { "n", 219260 },	-- Ruffious
 				["coord"] = { 58.9, 75.3, DORNOGAL },
 				["isWeekly"] = true,
 				["g"] = {
 					--
 				},
 			}, {
+				q(80184),	-- Preserving in Battle
 				q(80187),	-- Preserving in Skirmishes
+				q(80186),	-- Preserving in War
+				q(80185),	-- Preserving Solo
 				q(80189),	-- Preserving Teamwork
 			})),
 			n(VENDORS, {

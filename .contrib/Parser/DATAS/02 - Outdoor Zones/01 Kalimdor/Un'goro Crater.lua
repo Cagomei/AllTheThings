@@ -302,7 +302,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(9052, {	-- Bloodpetal Poison
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(9052, {	-- Bloodpetal Poison
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 9063,  -- Torwa Pathfinder
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
@@ -329,7 +329,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(4144, {	-- Bloodpetal Sprouts
 					["qg"] = 9119,	-- Muigin
-					["sourceQuest"] = 4143,	-- Haze of Evil
+					["sourceQuests"] = {
+						-- #if SEASON_OF_DISCOVERY
+						82099,	-- Haze of Evil
+						-- #else
+						4143,	-- Haze of Evil
+						-- #endif
+					},
 					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1803,8 +1809,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { FERALAS },
 					["lvl"] = 47,
 					["groups"] = {
-						objective(1, {	-- 0/1 Videre Elixir
-							["provider"] = { "i", 11243 },	-- Videre Elixir
+						q(4041, {	-- The Videre Elixir
+							["providers"] = {
+								{ "n", 7775 },	-- Gregan Brewspewer
+								{ "i",  11242 },	-- Evoroot
+								{ "o", 164798 },	-- Evoroot
+							},
+							["coords"] = {
+								{ 45.1, 25.6, FERALAS },
+								{ 44, 11, FERALAS },
+							},
+							["timeline"] = { REMOVED_4_0_3 },
+							["repeatable"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/1 Videre Elixir
+									["questID"] = 3909,	-- The Videre Elixir
+									["provider"] = { "i", 11243 },	-- Videre Elixir
+								}),
+							},
 						}),
 					},
 				}),
@@ -1856,7 +1878,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(9063, {	-- Torwa Pathfinder
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(9063, {	-- Torwa Pathfinder
 					["qgs"] = {
 						4218,	-- Denatharion <Druid Trainer>
 						12042,	-- Loganaar <Druid Trainer>
@@ -1871,7 +1893,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { DRUID },
 					["lvl"] = 50,
 				})),
-				applyclassicphase(PHASE_FOUR, q(9051, {	-- Toxic Test
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(9051, {	-- Toxic Test
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 9052,  -- Bloodpetal Poison
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },

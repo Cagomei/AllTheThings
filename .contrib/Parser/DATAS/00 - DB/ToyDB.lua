@@ -40,6 +40,7 @@ i(18660);	-- World Enlarger
 -- #if SEASON_OF_DISCOVERY
 i(221315);	-- Rainbow Generator
 i(215449);	-- World Shrinker
+i(228189);	-- Gift of Gob
 -- #endif
 
 -----------------
@@ -1339,7 +1340,7 @@ i(223146);	-- Satchel of Stormborn Seeds
 i(220692);	-- X-treme Water Blaster Display
 
 ------------------
--- PATCH ADDED_11_PH_PREPATCH --
+-- PATCH 11.0.0 --
 ------------------
 -- #if AFTER TWW
 i(204405);	-- Stuffed Bear

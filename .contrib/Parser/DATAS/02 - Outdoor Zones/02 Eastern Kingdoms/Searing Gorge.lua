@@ -55,6 +55,248 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(428),	-- Molten Hatchling (PET!)
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, n(createHeader({	-- Blackrock Eruption
+				readable = "Blackrock Eruption",
+				icon = 237588,
+				text = {
+					en = "Blackrock Eruption",
+					--[[
+					es = "",
+					de = "",
+					fr = "",
+					it = "",
+					pt = "",
+					ru = "",
+					ko = "",
+					cn = "",
+					]]--
+				},
+				description = {
+					en = "This event occurs every 2 hours from Midnight and lasts 60 minutes. While this event is active, Daily Quests will be available in Searing Gorge for the Thorium Brotherhood. Traditionally Thorium Brotherhood can be quite a grind to achieve reputation with so this addition of a Daily Quest Hub will be very welcome.\nWhen the event is active, new NPCs will spawn and some environmental changes will occur to the outside area of Searing Gorge.",
+				},
+			}), bubbleDownSelf({ ["timeline"] = { "added 1.15.3" } }, {
+				n(QUESTS, {
+					q(84360, {	-- Firefighting
+						["qg"] = 14625,	-- Overseer Oilfist <The Thorium Brotherhood>
+						["coord"] = { 38.2, 27.0, SEARING_GORGE },
+						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["isDaily"] = true,
+						["lvl"] = 53,
+						["groups"] = {
+							objective(1, {	-- 0/10 Firelands Invader slain
+								["provider"] = { "n", 228718 },	-- Firelands Invader
+								["coord"] = { 33.0, 31.0, SEARING_GORGE },
+							}),
+							i(227801),	-- Firelands Ember
+						},
+					}),
+					q(84350, {	-- Grinding Them Down
+						["qg"] = 14628,	-- Evonice Sootsmoker <The Thorium Brotherhood>
+						["coord"] = { 38.2, 27.8, SEARING_GORGE },
+						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["isDaily"] = true,
+						["lvl"] = 53,
+						["groups"] = {
+							objective(1, {	-- 0/10 Obsidian Reaver slain
+								["provider"] = { "n", 228723 },	-- Obsidian Reaver
+							}),
+							i(227801),	-- Firelands Ember
+						},
+					}),
+					q(84372, {	-- Lava Diving
+						["qg"] = 14627,	-- Hansel Heavyhands <The Thorium Brotherhood>
+						["coord"] = { 38.6, 27.8, SEARING_GORGE },
+						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["isDaily"] = true,
+						["lvl"] = 53,
+						["groups"] = {
+							objective(1, {	-- 0/1 Shimmering Molten Mineral
+								["providers"] = {
+									{ "i", 228191 },	-- Shimmering Molten Mineral
+									{ "o", 462233 },	-- Shimmering Molten Crag
+								},
+								["coord"] = { 48.7, 37.5, SEARING_GORGE },
+							}),
+							i(227801),	-- Firelands Ember
+						},
+					}),
+					q(84355, {	-- More Like Lame-bringers!
+						["qg"] = 14626,	-- Taskmaster Scrange <The Thorium Brotherhood>
+						["coord"] = { 38.8, 27.6, SEARING_GORGE },
+						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["isDaily"] = true,
+						["lvl"] = 53,
+						["groups"] = {
+							objective(1, {	-- 0/4 Flamebringer Defender slain
+								["provider"] = { "n", 228727 },	-- Flamebringer Defender
+							}),
+							objective(2, {	-- 0/4 Flamebringer Elementalist slain
+								["provider"] = { "n", 228726 },	-- Flamebringer Elementalist
+							}),
+							i(227801),	-- Firelands Ember
+						},
+					}),
+					q(84356, {	-- Oh, Shiny!
+						["qg"] = 14624,	-- Master Smith Burninate <The Thorium Brotherhood>
+						["coord"] = { 38.6, 28.6, SEARING_GORGE },
+						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["isDaily"] = true,
+						["lvl"] = 53,
+						["groups"] = {
+							objective(1, {	-- 0/8 Flamestone Cluster
+								["provider"] = { "i", 227767 },	-- Flamestone Cluster
+								["crs"] = {
+									5844,	-- Dark Iron Slaver
+									5843,	-- Slave Worker
+									5846,	-- Dark Iron Taskmaster
+								},
+							}),
+							i(227801),	-- Firelands Ember
+						},
+					}),
+					q(84349, {	-- Priority Target: Duke Searbrand
+						["qg"] = 14634,	-- Lookout Captain Lolo Longstriker <The Thorium Brotherhood>
+						["coord"] = { 37.6, 26.6, SEARING_GORGE },
+						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["isDaily"] = true,
+						["lvl"] = 53,
+						["groups"] = {
+							objective(1, {	-- 0/1 Duke Searbrand slain
+								["provider"] = { "n", 228720 },	-- Duke Searbrand
+								["coord"] = { 43.6, 28.6, SEARING_GORGE },
+							}),
+							i(227801),	-- Firelands Ember
+						},
+					}),
+					q(84348, {	-- Priority Target: Duke Tectonis
+						["qg"] = 14627,	-- Hansel Heavyhands <The Thorium Brotherhood>
+						["coord"] = { 38.6, 27.8, SEARING_GORGE },
+						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["isDaily"] = true,
+						["lvl"] = 53,
+						["groups"] = {
+							objective(1, {	-- 0/1 Duke Tectonis slain
+								["provider"] = { "n", 228729 },	-- Duke Tectonis
+								["coord"] = { 27.8, 80.4, SEARING_GORGE },
+							}),
+							i(227801),	-- Firelands Ember
+						},
+					}),
+					q(84359, {	-- Sleepless Nights
+						["qg"] = 14628,	-- Evonice Sootsmoker <The Thorium Brotherhood>
+						["coord"] = { 38.2, 27.8, SEARING_GORGE },
+						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["isDaily"] = true,
+						["lvl"] = 53,
+						["groups"] = {
+							objective(1, {	-- 0/5 Flamebringer Stalker slain
+								["providers"] = {
+									{ "n", 228747 },	-- Flamebringer Stalker
+									{ "i", 227768 },	-- Dreamjuice
+								},
+							}),
+							i(227801),	-- Firelands Ember
+						},
+					}),
+					q(84351, {	-- Work Smarter, Not Harder
+						["qg"] = 14626,	-- Taskmaster Scrange <The Thorium Brotherhood>
+						["coord"] = { 38.8, 27.6, SEARING_GORGE },
+						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["isDaily"] = true,
+						["lvl"] = 53,
+						["groups"] = {
+							objective(1, {	-- 0/6 Obsidian Power Core
+								["provider"] = { "i", 227743 },	-- Obsidian Power Core
+								["coord"] = { 50.2, 67.6, SEARING_GORGE },
+								["cr"] = 228724,	-- Obsidian Surger
+							}),
+							i(227801),	-- Firelands Ember
+						},
+					}),
+				}),
+				n(RARES, {
+					n(228970, {	-- Galenges
+						["description"] = "This is a rare that may not always be present. Seems to have a high drop rate for world drop epics and recipes. Kill it on sight during the invasion!",
+						["coord"] = { 22.6, 77.6, SEARING_GORGE },
+						["groups"] = {
+							i(14511),	-- Pattern: Gloves of Spell Mastery
+							i(228317),	-- Pattern: Incandescent Mooncloth Circlet
+							i(228314),	-- Plans: Warcrest of the Great Chief
+							i(3475),	-- Cloak of Flames
+						},
+					}),
+					n(228721, {	-- Lieutenant Skarresh
+						["description"] = "This is a rare that may not always be present. Seems to have a high drop rate for world drop epics and recipes. Kill it on sight during the invasion!",
+						["coord"] = { 43.8, 27.8, SEARING_GORGE },
+						["groups"] = {
+							i(228993),	-- Pattern: Bottomless Bag
+							i(14511),	-- Pattern: Gloves of Spell Mastery
+							i(228317),	-- Pattern: Incandescent Mooncloth Circlet
+							i(228315),	-- Plans: Sageblade of the Archmagus
+							i(228250),	-- Plans: Stronger-hold Gauntlets
+							i(228314),	-- Plans: Warcrest of the Great Chief
+							i(1728),	-- Teebu's Blazing Longsword
+							i(2801),	-- Blade of Hanna
+							i(3475),	-- Cloak of Flames
+						},
+					}),
+					n(228969, {	-- Lord Gazzran
+						["description"] = "This is a rare that may not always be present. Seems to have a high drop rate for world drop epics and recipes. Kill it on sight during the invasion!",
+						["coord"] = { 38.4, 68.2, SEARING_GORGE },
+						["groups"] = {
+							i(14511),	-- Pattern: Gloves of Spell Mastery
+							i(228317),	-- Pattern: Incandescent Mooncloth Circlet
+							i(22390),	-- Plans: Persuader
+							i(228315),	-- Plans: Sageblade of the Archmagus
+							i(228314),	-- Plans: Warcrest of the Great Chief
+							i(1728),	-- Teebu's Blazing Longsword
+							i(2801),	-- Blade of Hanna
+							i(3475),	-- Cloak of Flames
+						},
+					}),
+				}),
+				n(ZONE_DROPS, {
+					i(11382, {	-- Blood of the Mountain
+						["maps"] = { BURNING_STEPPES },
+						["cr"] = 228725,	-- Firesworn <Servant of Garr>
+					}),
+					i(17010, {	-- Fiery Core
+						["maps"] = { BURNING_STEPPES },
+						["crs"] = {
+							228721,	-- Lieutenant Skarresh
+							228970,	-- Galenges
+							228969,	-- Lord Gazzran
+							228725,	-- Firesworn <Servant of Garr>
+						},
+					}),
+					i(227801, {	-- Firelands Ember
+						["maps"] = { BURNING_STEPPES },
+						["crs"] = {
+							228721,	-- Lieutenant Skarresh
+							228970,	-- Galenges
+							228969,	-- Lord Gazzran
+							228725,	-- Firesworn <Servant of Garr>
+							228727,	-- Flamebringer Defender
+							228726,	-- Flamebringer Elementalist
+							228747,	-- Flamebringer Stalker
+							228724,	-- Obsidian Surger
+							228718,	-- Firelands Invader
+							228719,	-- Firelands Drudge
+						},
+					}),
+					i(17011, {	-- Lava Core
+						["maps"] = { BURNING_STEPPES },
+						["crs"] = {
+							228721,	-- Lieutenant Skarresh
+							228970,	-- Galenges
+							228969,	-- Lord Gazzran
+							228725,	-- Firesworn <Servant of Garr>
+						},
+					}),
+				}),
+			}))),
+			-- #endif
 			explorationHeader({
 				exploration(1957),	-- Blackchar Cave
 				-- #if AFTER CATA
@@ -519,7 +761,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 4449,	-- Caught!
 					["coord"] = { 65.5, 62.2, SEARING_GORGE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DUSTWALLOW_MARSH, SWAMP_OF_SORROWS },
+					["maps"] = { DUSTWALLOW_MARSH, SWAMP_OF_SORROWS, TANARIS },
 					["lvl"] = 43,
 					["groups"] = {
 						objective(1, {	-- 0/1 Goodsteel Ledger
@@ -738,6 +980,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 8436,	-- Zamael Lunthistle
 					["sourceQuest"] = 3377,	-- Prayer to Elune (1/2)
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -827,7 +1070,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(3372, {	-- Release Them
-					["qg"] = 8417,	-- Dying Archaeologist
+					["providers"] = {
+						{ "o", 148498 },	-- Altar of Suntara
+						{ "n",   8417 },	-- Dying Archaeologist
+					},
 					["sourceQuest"] = 3371,	-- Dwarven Justice
 					["coord"] = { 41.2, 25.6, SEARING_GORGE },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1203,7 +1449,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 				}),
 				q(4451, {	-- The Key to Freedom
-					["provider"] = { "i", 11818 },	-- Grimesilt Outhouse Key
+					["providers"] = {
+						{ "i", 11818 },	-- Grimesilt Outhouse Key
+						{ "o", 173265 },	-- Wooden Outhouse
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						15692,	-- Dark Iron Kidnapper
@@ -1681,6 +1930,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+			}),
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_FOUR, i(226414, {	-- Rune of Fire Specialization
+					["provider"] = { "o", 457097 },	-- Elements for Dummies Volume II: Fire
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 40.5, 35.5, SEARING_GORGE },
+					["classes"] = { HUNTER, SHAMAN, MAGE, WARLOCK },
+					["groups"] = {
+						recipe(453696, {	-- Engrave Ring - Fire Specialization
+							["classes"] = { HUNTER, SHAMAN, MAGE, WARLOCK },
+						}),
+					},
+				})),
 			}),
 			-- #endif
 			n(ZONE_DROPS, {

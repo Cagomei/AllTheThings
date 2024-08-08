@@ -21,6 +21,24 @@ namespace ATT
         };
 
         /// <summary>
+        /// Contains function mappings against Sourced Groups to be executed in parallel following sequential Processing sequence
+        /// </summary>
+        private static readonly Dictionary<Action<IDictionary<string, object>>, List<IDictionary<string, object>>> PostProcessFunctions = new Dictionary<Action<IDictionary<string, object>>, List<IDictionary<string, object>>>();
+
+        /// <summary>
+        /// Adds a post processing function for a given object
+        /// </summary>
+        private static void AddPostProcessing(Action<IDictionary<string, object>> act, IDictionary<string, object> obj)
+        {
+            if (!PostProcessFunctions.TryGetValue(act, out var objs))
+            {
+                PostProcessFunctions[act] = objs = new List<IDictionary<string, object>>();
+            }
+
+            objs.Add(obj);
+        }
+
+        /// <summary>
         /// Process all of the data loaded into the database.
         /// </summary>
         public static void Process()
@@ -85,13 +103,12 @@ namespace ATT
                 ProcessContainer(container);
             }
 
-            // Pass to clean up Ensembles (relies on Sourced SourceIDs from DataConsolidation)
-            CurrentParseStage = ParseStage.EnsembleCleanup;
-            Validator.OnlyClean = true;
-            ProcessingFunction = EnsembleCleanup;
-            foreach (var container in Objects.AllContainers)
+            // Post-processing of individual groups in parallel (logic which does not require cross-modification or follow up processing)
+            CurrentParseStage = ParseStage.PostProcessing;
+            foreach (var actionSequence in PostProcessFunctions)
             {
-                ProcessContainer(container);
+                var act = actionSequence.Key;
+                actionSequence.Value.AsParallel().ForAll(act);
             }
 
             // Sort World Drops by Name
@@ -615,11 +632,6 @@ namespace ATT
             // If this item has an "unobtainable" flag on it, meaning for a different phase of content.
             if (data.TryGetValue("u", out long phase))
             {
-                // u <= 0 is irrelevant and can be removed. this allows for assigning a u value in source that we know will be removed later, so as
-                // to not need to delete the u value from a local variable which is wrapped in a bubbleDown function.
-                if (phase <= 0)
-                    data.Remove("u");
-
                 if (phase > MAX_PHASE_ID && !(phase >= 1000 && (phase < (MAX_PHASE_ID + 1) * 100)))
                 {
                     data.Remove("g");
@@ -643,11 +655,6 @@ namespace ATT
                 if (f >= 56)
                 {
                     data.Remove("modID");
-                }
-                // filterID -- should be a positive value, or removed
-                else if (f <= 0)
-                {
-                    data.Remove("f");
                 }
 
                 // special handling for explicitly-defined filterIDs (i.e. not determined by Item data, but rather directly in Source)
@@ -729,31 +736,20 @@ namespace ATT
             // Throw away automatic Spell ID assignments for certain filter types.
             if (data.TryGetValue("spellID", out f))
             {
-                if (f < 1)
+                switch (filter)
                 {
-                    data.Remove("spellID");
-                }
-                else
-                {
-                    switch (filter)
-                    {
-                        case Objects.Filters.Recipe:
-                            data["recipeID"] = f;
-                            break;
-                            //default:
-                            //    data.Remove("spellID");
-                            //    break;
-                    }
+                    case Objects.Filters.Recipe:
+                        data["recipeID"] = f;
+                        break;
+                        //default:
+                        //    data.Remove("spellID");
+                        //    break;
                 }
             }
 
             if (data.TryGetValue("recipeID", out f))
             {
-                if (f < 1)
-                {
-                    data.Remove("recipeID");
-                }
-                else if (DebugMode)
+                if (DebugMode)
                 {
                     var cachedItem = Items.GetNull(data);
                     if (cachedItem != null)
@@ -763,14 +759,6 @@ namespace ATT
                         cachedItem.TryGetValue("name", out string itemName);
                         LogDebugFormatted(LogFormats["ItemRecipeFormat"], cachedItemID, spellID, itemName);
                     }
-                }
-            }
-
-            if (data.TryGetValue("sourceID", out f))
-            {
-                if (f < 1)
-                {
-                    data.Remove("sourceID");
                 }
             }
 
@@ -1063,11 +1051,11 @@ namespace ATT
             return true;
         }
 
-        private static bool EnsembleCleanup(IDictionary<string, object> data)
+        private static void EnsembleCleanup(IDictionary<string, object> data)
         {
-            if (!data.TryGetValue("ensembleID", out long ensembleID)) return true;
+            if (!data.TryGetValue("ensembleID", out long ensembleID)) return;
 
-            if (!data.TryGetValue("_sourceIDs", out List<long> sourceIDs)) return true;
+            if (!data.TryGetValue("_sourceIDs", out List<long> sourceIDs)) return;
 
             //if (ensembleID == 215356)
             //{
@@ -1078,7 +1066,6 @@ namespace ATT
             // Or will generate a symlink for the duplicated Items/Appearances
             List<IDictionary<string, object>> symlinkSources = new List<IDictionary<string, object>>();
             List<IDictionary<string, object>> rawSources = new List<IDictionary<string, object>>();
-            Dictionary<long, int> ensembleFilterCount = new Dictionary<long, int>();
             foreach (long sourceID in sourceIDs)
             {
                 if (TryGetSOURCED("sourceID", sourceID, out List<IDictionary<string, object>> sources) && sources.AnyMatchingGroup(IsObtainableData))
@@ -1108,84 +1095,7 @@ namespace ATT
                 }
             }
 
-            // track the known filters for the sources
-            foreach (IDictionary<string, object> source in symlinkSources.Union(rawSources))
-            {
-                if (source.TryGetValue("f", out long filterID))
-                {
-                    if (!ensembleFilterCount.ContainsKey(filterID))
-                    {
-                        ensembleFilterCount[filterID] = 0;
-                    }
-                    ensembleFilterCount[filterID]++;
-                }
-            }
-
-            int filterCount = ensembleFilterCount.Count;
-            if (filterCount > 1)
-            {
-                int totalItems = ensembleFilterCount.Values.Sum();
-                if (totalItems > 5)
-                {
-                    int maxItemsPerFilter = ensembleFilterCount.Max(m => m.Value);
-                    // if an ensemble is big enough and grants a majority filterID type of items (i.e. all Plate) then
-                    // any items which do not meet the filter will be excluded automatically
-                    // small ensembles or arsenals should not be affected by this case
-                    if (maxItemsPerFilter > (totalItems / 2))
-                    {
-                        long specificFilter = ensembleFilterCount.First(kvp => kvp.Value == maxItemsPerFilter).Key;
-                        // Cosmetic-granting ensembles grant appearances for other armor types as well
-                        if (!Ensemble_IgnoredFilterIDs.Contains(specificFilter))
-                        {
-                            List<object> removedSymlinked = new List<object>();
-                            List<object> removedSourced = new List<object>();
-                            int removedSymlinks = symlinkSources.RemoveAll(s =>
-                            {
-                                // Some Filter Type Items are still granted when contained in a different-Filtered Ensemble
-                                if (s.TryGetValue("f", out long filterID)
-                                    && filterID != specificFilter
-                                    && !Ensemble_IgnoredFilterIDs.Contains(filterID))
-                                {
-                                    if (s.TryGetValue("itemID", out long itemID))
-                                    {
-                                        removedSymlinked.Add(itemID);
-                                    }
-                                    else
-                                    {
-                                        removedSymlinked.Add("s:" + s["sourceID"]);
-                                    }
-                                    return true;
-                                }
-                                return false;
-                            });
-                            int removedRawSources = rawSources.RemoveAll(s =>
-                            {
-                                // Some Filter Type Items are still granted when contained in a different-Filtered Ensemble
-                                if (s.TryGetValue("f", out long filterID)
-                                    && filterID != specificFilter
-                                    && !Ensemble_IgnoredFilterIDs.Contains(filterID))
-                                {
-                                    if (s.TryGetValue("itemID", out long itemID))
-                                    {
-                                        removedSourced.Add(itemID);
-                                    }
-                                    else
-                                    {
-                                        removedSourced.Add("s:" + s["sourceID"]);
-                                    }
-                                    return true;
-                                }
-                                return false;
-                            });
-
-                            if (removedSymlinks > 0 || removedRawSources > 0)
-                            {
-                                LogDebug($"Removed {removedSymlinks} {ToJSON(removedSymlinked)} symlink items & {removedRawSources} {ToJSON(removedSourced)} sourced items from Ensemble {ensembleID} due to incorrect Filter from expected {(Objects.Filters)specificFilter}", data);
-                            }
-                        }
-                    }
-                }
-            }
+            RemoveWrongFilterSources(data, ensembleID, symlinkSources, rawSources);
 
             // add the raw sources to the ensemble
             foreach (IDictionary<string, object> source in rawSources)
@@ -1196,12 +1106,12 @@ namespace ATT
                 CaptureDebugDBData(source);
             }
 
-            if (symlinkSources.Count == 0) return true;
+            if (symlinkSources.Count == 0) return;
 
             // replace any existing symlink with the raw select
             if (data.ContainsKey("sym"))
             {
-                LogDebugWarn($"Manual Ensemble Symlink replaced via automation", data);
+                LogWarn($"Manual Ensemble Symlink replaced via automation", data);
             }
 
             List<object> symlinkCommands = new List<object>
@@ -1218,8 +1128,69 @@ namespace ATT
 
             // Capture the Ensemble for Debug output
             CaptureDebugDBData(data);
+        }
 
-            return true;
+        private static void RemoveWrongFilterSources(IDictionary<string, object> data, long ensembleID, List<IDictionary<string, object>> symlinkSources, List<IDictionary<string, object>> rawSources)
+        {
+            Dictionary<long, int> ensembleFilterCount = new Dictionary<long, int>();
+            // track the known filters for the sources
+            foreach (IDictionary<string, object> source in symlinkSources.Union(rawSources))
+            {
+                if (source.TryGetValue("f", out long filterID))
+                {
+                    if (!ensembleFilterCount.ContainsKey(filterID))
+                    {
+                        ensembleFilterCount[filterID] = 0;
+                    }
+                    ensembleFilterCount[filterID]++;
+                }
+            }
+
+            int filterCount = ensembleFilterCount.Count;
+            if (filterCount <= 1) return;
+
+            int totalItems = ensembleFilterCount.Values.Sum();
+            if (totalItems <= 5) return;
+
+            int maxItemsPerFilter = ensembleFilterCount.Values.Max();
+            // if an ensemble is big enough and grants a majority filterID type of items (i.e. all Plate) then
+            // any items which do not meet the filter will be excluded automatically
+            // small ensembles or arsenals should not be affected by this case
+            if (maxItemsPerFilter <= (totalItems / 2)) return;
+
+            long specificFilter = ensembleFilterCount.First(kvp => kvp.Value == maxItemsPerFilter).Key;
+            // Cosmetic-granting ensembles grant appearances for other armor types as well
+            if (Ensemble_IgnoredFilterIDs.Contains(specificFilter)) return;
+
+            List<object> removedSymlinked = new List<object>();
+            List<object> removedSourced = new List<object>();
+            bool CheckRemoval(IDictionary<string, object> s)
+            {
+                // Some Filter Type Items are still granted when contained in a different-Filtered Ensemble
+                if (s.TryGetValue("f", out long filterID)
+                    && filterID != specificFilter
+                    && !Ensemble_IgnoredFilterIDs.Contains(filterID))
+                {
+                    if (s.TryGetValue("itemID", out long itemID))
+                    {
+                        removedSymlinked.Add(itemID);
+                    }
+                    else
+                    {
+                        removedSymlinked.Add("s:" + s["sourceID"]);
+                    }
+                    return true;
+                }
+                return false;
+            };
+
+            int removedSymlinks = symlinkSources.RemoveAll(s => CheckRemoval(s));
+            int removedRawSources = rawSources.RemoveAll(s => CheckRemoval(s));
+
+            if (removedSymlinks > 0 || removedRawSources > 0)
+            {
+                LogDebug($"Removed {removedSymlinks} {ToJSON(removedSymlinked)} symlink items & {removedRawSources} {ToJSON(removedSourced)} sourced items from Ensemble {ensembleID} due to incorrect Filter from expected {(Objects.Filters)specificFilter}", data);
+            }
         }
 
         /// <summary>
@@ -1482,6 +1453,12 @@ namespace ATT
                 if (!cmdObj.TryConvert(out List<object> command))
                 {
                     LogError($"Incorrect 'sym' command structure encountered (expecting each command in an array): {ToJSON(cmdObj)}", data);
+                    return;
+                }
+
+                if (command.Count == 0)
+                {
+                    LogError($"Empty 'sym' command structure encountered: {ToJSON(cmdObj)}", data);
                     return;
                 }
 
@@ -2461,6 +2438,8 @@ namespace ATT
             {
                 Objects.Merge(data, "questID", tmogSet.TrackingQuestID);
             }
+
+            AddPostProcessing(EnsembleCleanup, data);
         }
 
         private static void Incorporate_EnsembleTransmogSetItems(IDictionary<string, object> data)

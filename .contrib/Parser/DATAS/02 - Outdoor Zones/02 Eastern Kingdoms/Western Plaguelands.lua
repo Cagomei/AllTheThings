@@ -728,6 +728,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, n(createHeader({	-- Bless the Fallen
+					readable = "SOD - PALADIN - Bless the Fallen",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Bless the Fallen",
+					},
+				}), {
+					["questID"] = 83756,	-- Bless the Fallen HQT
+					["qg"] = 227519,	-- Fallen Knight
+					["coord"] = { 44.6, 46.6, WESTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+				})),
+				-- #endif
 				q(27202, {	-- Brother Against Brother
 					["qg"] = 45165,	-- Thurman Grant
 					["sourceQuest"] = 27205,	-- The Depravity of the Forsaken
@@ -765,10 +781,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 10667 },	-- Chromie
 						{ "i", 13202 },	-- Extended Annals of Darrowshire
 					},
-					["sourceQuests"] = {
-						5154,	-- The Annals of Darrowshire
-						5168,	-- Heroes of Darrowshire
-					},
+					["sourceQuest"] = 5154,	-- The Annals of Darrowshire
 					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
@@ -805,7 +818,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8415, {	-- Chillwind Point [TBC+] / Chillwind Camp
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, n(createHeader({	-- Burn the Fallen Knight
+					readable = "SOD - PALADIN - Burn the Fallen Knight",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Burn the Fallen Knight",
+					},
+				}), {
+					["qg"] = 227519,	-- Fallen Knight
+					["questID"] = 84004,	-- Burn the Fallen Knight HQT
+					["sourceQuest"] = 83935,	-- Clearing the Path
+					["coord"] = { 44.6, 46.6, WESTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+				})),
+				-- #endif
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8415, {	-- Chillwind Point [TBC+] / Chillwind Camp
 					["qgs"] = {
 						5149,	-- Brandur Ironhammer <Paladin Trainer>
 						928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
@@ -844,6 +874,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18182),	-- Chromatic Mantle of the Dawn
 					},
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(83935, {	-- Clearing the Path
+					["qg"] = 227672,	-- Squire Cuthbert
+					["sourceQuest"] = 83808,	-- In A Bind
+					["coord"] = { 47.8, 50.4, WESTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/5 Blighted Zombie slain
+							["provider"] = { "n", 4475 },	-- Blighted Zombie
+							["coord"] = { 47.0, 51.6, WESTERN_PLAGUELANDS },
+						}),
+						objective(2, {	-- 0/10 Skeletal Terror slain
+							["provider"] = { "n", 1785 },	-- Skeletal Terror
+							["coord"] = { 47.8, 49.8, WESTERN_PLAGUELANDS },
+						}),
+						objective(3, {	-- 0/10 Rotting Cadaver slain
+							["provider"] = { "n", 4474 },	-- Rotting Cadaver
+							["coord"] = { 46.4, 50.6, WESTERN_PLAGUELANDS },
+						}),
+					},
+				})),
+				-- #endif
 				q(5092, {	-- Clear the Way
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuests"] = {
@@ -1005,6 +1059,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(83936, {	-- Dalton's Quest
+					["qg"] = 227672,	-- Squire Cuthbert
+					["sourceQuest"] = 83822,	-- The Fallen Knight
+					["coord"] = { 47.8, 50.4, WESTERN_PLAGUELANDS },
+					["description"] = "Upon completing this quest, you will have a personal Squire.",
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+					["groups"] = {
+						i(226122),	-- Dalton's Horn
+					},
+				})),
+				-- #endif
 				q(9444, {	-- Defiling Uther's Tomb
 					["qg"] = 17099,	-- Mehlar Dawnblade
 					["sourceQuest"] = 9443,	-- The So-Called Mark of the Lightbringer
@@ -1032,7 +1100,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8414, {	-- Dispelling Evil
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8414, {	-- Dispelling Evil
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuest"] = 8415,	-- Chillwind Point [TBC+] / Chillwind Camp
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
@@ -1259,7 +1327,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8416, {	-- Inert Scourgestones
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(83808, {	-- In A Bind
+					["qg"] = 227672,	-- Squire Cuthbert
+					["sourceQuest"] = 83756,	-- Bless the Fallen HQT
+					["coord"] = { 47.8, 50.4, WESTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Squire Cuthbert's Blade
+							["providers"] = {
+								{ "i", 226201 },	-- Squire Cuthbert's Blade
+								{ "o", 455812 },	-- Squire Cuthbert's Blade
+							},
+							["coord"] = { 45.7, 53.9, WESTERN_PLAGUELANDS },
+						}),
+					},
+				})),
+				-- #endif
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8416, {	-- Inert Scourgestones
 					["providers"] = {
 						{ "n", 1854 },	-- High Priest Thel'danis
 						{ "i", 20612 },	-- Inert Scourgestone
@@ -2130,6 +2217,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(83822, {	-- The Fallen Knight
+					["qg"] = 227672,	-- Squire Cuthbert
+					["sourceQuest"] = 83935,	-- Clearing the Path
+					["coord"] = { 47.8, 50.4, WESTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Fallen Knight Burned
+							["provider"] = { "n", 227519 },	-- Fallen Knight
+							["coord"] = { 44.6, 46.6, WESTERN_PLAGUELANDS },
+						}),
+						recipe(440792),	-- Engrave Cloak - Righteous Vengeance
+					},
+				})),
+				-- #endif
 				q(27084, {	-- The Farmers' Militia
 					["qg"] = 44452,	-- Koltira Deathweaver
 					["sourceQuest"] = 27083,	-- The Battle Resumes!
@@ -2946,6 +3050,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_FOUR, i(226413, {	-- Rune of Arcane Specialization
+					["provider"] = { "o", 457102 },	-- Elements for Dummies Volume III: Arcane
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 47.3, 13.7, WESTERN_PLAGUELANDS },
+					["classes"] = { HUNTER, MAGE, DRUID },
+					["groups"] = {
+						recipe(453695, {	-- Engrave Ring - Arcane Specialization
+							["classes"] = { HUNTER, MAGE, DRUID },
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210322, {	-- Rune of Venom
 					["provider"] = { "o", 410847 },	-- Rusty Safe
 					["coord"] = { 59.4, 84.6, WESTERN_PLAGUELANDS },
@@ -2976,6 +3091,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 42.8, 83.8, WESTERN_PLAGUELANDS },
 					["sym"] = {{ "select", "itemID", 206584 }},	-- Archived Crafting Techniques
 					["groups"] = {
+						i(13724, {	-- Enriched Manna Biscuit
+							["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
+						}),
 						i(22014, {	-- Hallowed Brazier
 							["timeline"] = { REMOVED_4_0_3 },
 							["minReputation"] = { 529, HONORED },	-- Argent Dawn

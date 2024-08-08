@@ -540,6 +540,10 @@ applycost = function(item, ...)
 	end
 	return item;
 end
+tokencost = function(tokenItemID, item)				-- Assign a token cost to an item.
+	applycost(item, { "i", tokenItemID, 1 });
+	return item;
+end
 bloody = function(cost, item)							-- Assign an Bloody Tokens cost to an item.
 	if cost > 0 then applycost(item, { "c", BLOODY_TOKENS, cost }); end
 	return item;
@@ -649,12 +653,6 @@ spiritshard = function(cost, item)						-- Assign a Chef's Award or Epicurean's 
 end
 tolbaradcommendation = function(cost, item)				-- Assign a Tol Barad Commendation cost to an item with proper timeline requirements.
 	applycost(item, { "c", 391, cost });	-- Tol Barad Commendation
-	return item;
-end
-vicioussaddle = function(item)							-- Assign a Vicious Saddle cost to an item with proper timeline requirements.
-	-- #if AFTER 5.4.0.17153
-	applycost(item, { "i", 103533, 1 });	-- Vicious Saddle
-	-- #endif
 	return item;
 end
 venture = function(cost, item)							-- Assign a Venture Coin cost to an item with proper timeline requirements.

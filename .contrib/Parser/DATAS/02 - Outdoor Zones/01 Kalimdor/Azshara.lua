@@ -580,7 +580,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24430, {	-- Blacken the Skies
 					["qg"] = 36903,	-- Jr. Bombardier Hackel
 					["sourceQuests"] = {
-						24433,	-- Let Them Feast on Fear
 						14477,	-- Push the Button!
 					},
 					["coord"] = { 14.4, 65.7, AZSHARA },
@@ -599,7 +598,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
-				applyclassicphase(PHASE_FOUR, q(8254, {	-- Cenarion Aid
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8254, {	-- Cenarion Aid
 					["allianceQuestData"] = {
 						["qg"] = 5489,	-- Brother Joshua <Priest Trainer>
 						["coord"] = { 38.8, 26.4, STORMWIND_CITY },
@@ -618,7 +617,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
-				applyclassicphase(PHASE_FOUR, q(8153, {	-- Courser Antlers
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8153, {	-- Courser Antlers
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8151,	-- The Hunter's Charm
 					["coord"] = { 42.2, 42.6, AZSHARA },
@@ -1190,7 +1189,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
-				applyclassicphase(PHASE_FOUR, q(8250, {	-- Magecraft
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8250, {	-- Magecraft
 					["allianceQuestData"] = {
 						["qgs"] = {
 							7312,	-- Dink <Mage Trainer> [IRONFORGE]
@@ -1222,7 +1221,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
 				})),
-				applyclassicphase(PHASE_FOUR, q(8251, {	-- Magic Dust
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8251, {	-- Magic Dust
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8250,	-- Magecraft
 					["coord"] = { 29.6, 40.6, AZSHARA },
@@ -1384,7 +1383,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
-				applyclassicphase(PHASE_FOUR, q(8255, {	-- Of Coursers We Know
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8255, {	-- Of Coursers We Know
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8254,	-- Cenarion Aid
 					["coord"] = { 42.2, 42.6, AZSHARA },
@@ -1934,6 +1933,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuests"] = {
 						24430,	-- Blacken the Skies
 						24434,	-- Commando Drop
+						24433,	-- Let Them Feast on Fear
 					},
 					["coord"] = { 14.0, 64.8, AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
@@ -1992,7 +1992,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
-				applyclassicphase(PHASE_FOUR, q(8151, {	-- The Hunter's Charm
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8151, {	-- The Hunter's Charm
 					["allianceQuestData"] = {
 						["qgs"] = {
 							4205,	-- Dorion <Hunter Trainer>
@@ -2023,7 +2023,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				})),
-				applyclassicphase(PHASE_FOUR, q(8256, {	-- The Ichor of Undeath
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8256, {	-- The Ichor of Undeath
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8255,	-- Of Coursers We Know
 					["coord"] = { 42.2, 42.6, AZSHARA },
@@ -2105,7 +2105,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
-				applyclassicphase(PHASE_FOUR, q(8252, {	-- The Siren's Coral
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8252, {	-- The Siren's Coral
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8251,	-- Magic Dust
 					["coord"] = { 29.6, 40.6, AZSHARA },
@@ -2344,7 +2344,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8231, {	-- Wavethrashing
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8231, {	-- Wavethrashing
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8153,	-- Courser Antlers
 					["coord"] = { 42.2, 42.6, AZSHARA },
@@ -2582,6 +2582,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_FOUR, i(226412, {	-- Rune of Pole Weapon Specialization
+					["provider"] = { "o", 457091 },	-- Chen's Training Manual
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 76.9, 44.2, AZSHARA },
+					["classes"] = { WARRIOR, PALADIN, HUNTER, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
+					["groups"] = {
+						recipe(453694, {	-- Engrave Ring - Pole Weapon Specialization
+							["classes"] = { WARRIOR, PALADIN, HUNTER, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(12957, {	-- Blimo Gadgetspring <Trade Supplies>
 					["coord"] = { 45.2, 90.8, AZSHARA },

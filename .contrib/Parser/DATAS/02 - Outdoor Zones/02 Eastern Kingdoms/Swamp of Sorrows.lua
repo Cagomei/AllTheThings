@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
-				applyclassicphase(PHASE_FOUR, q(8417, {	-- A Troubled Spirit
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8417, {	-- A Troubled Spirit
 					["allianceQuestData"] = {
 						["qgs"] = {
 							7315,	-- Darnath Bladesinger <Warrior Trainer> (Darnassus)
@@ -522,8 +522,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 				}),
 				q(2701, {	-- Heroes of Old (2/2)
-					["qg"] = 7750,	-- Corporal Thund Splithoof
+					["providers"] = {
+						{ "n",   7750 },	-- Corporal Thund Splithoof
+						{ "o", 141980 },	-- Spectral Lockbox
+					},
 					["sourceQuest"] = 2702,	-- Heroes of Old (1/2)
+					["coord"] = { 33.5, 66.0, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
@@ -1292,7 +1296,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/9 Servant of Razelikh slain
-							["provider"] = { "n", 7668 },	-- Servant of Razelikh
+							["providers"] = {
+								{ "n",   7668 },	-- Servant of Razelikh
+								{ "o", 141812 },	-- Stone of Binding
+							},
 							["coords"] = {
 								{ 51.8, 56.8, BLASTED_LANDS },
 								{ 58.0, 49.8, BLASTED_LANDS },
@@ -1300,14 +1307,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						objective(2, {	-- 0/3 Servant of Grol slain
-							["provider"] = { "n", 7669 },	-- Servant of Grol
+							["providers"] = {
+								{ "n",   7669 },	-- Servant of Grol
+								{ "o", 141857 },	-- Stone of Binding
+							},
 							["coords"] = {
 								{ 41.6, 14.2, BLASTED_LANDS },
 								{ 49.8, 43.8, BLASTED_LANDS },
 							},
 						}),
 						objective(3, {	-- 0/3 Servant of Allistarj slain
-							["provider"] = { "n", 7670 },	-- Servant of Allistarj
+							["providers"] = {
+								{ "n",   7670 },	-- Servant of Allistarj
+								{ "o", 141858 },	-- Stone of Binding
+							},
 							["coords"] = {
 								{ 64.8, 34.6, BLASTED_LANDS },
 								{ 64.0, 40.6, BLASTED_LANDS },
@@ -1315,7 +1328,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						objective(4, {	-- 0/3 Servant of Sevine slain
-							["provider"] = { "n", 7671 },	-- Servant of Sevine
+							["providers"] = {
+								{ "n",   7671 },	-- Servant of Sevine
+								{ "o", 141859 },	-- Stone of Binding
+							},
 							["coords"] = {
 								{ 38.6, 34.0, BLASTED_LANDS },
 								{ 42.8, 41.4, BLASTED_LANDS },
@@ -1487,7 +1503,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8424, {	-- War on the Shadowsworn
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8424, {	-- War on the Shadowsworn
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8423,	-- Warrior Kinship
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
@@ -1517,7 +1533,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = { 51, 53 },
 					-- #endif
 				})),
-				applyclassicphase(PHASE_FOUR, q(8423, {	-- Warrior Kinship
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8423, {	-- Warrior Kinship
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8417,	-- A Troubled Spirit
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },

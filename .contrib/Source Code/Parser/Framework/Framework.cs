@@ -18,6 +18,8 @@ namespace ATT
     public static partial class Framework
     {
         #region Database
+        private static readonly Stopwatch _timer = Stopwatch.StartNew();
+
         /// <summary>
         /// Whether or not Debug Mode is turned on.
         /// </summary>
@@ -41,10 +43,7 @@ namespace ATT
         /// <summary>
         /// All of the locales that we support.
         /// </summary>
-        internal static List<string> SupportedLocales = new List<string>
-        {
-            "en", "es", "de", "fr", "it", "pt", "ru", "ko", "cn"
-        };
+        public static IEnumerable<string> SUPPORTED_LOCALES { get; set; }
 
         /// <summary>
         /// The very first Phase ID as indicated in _main.lua.
@@ -96,52 +95,8 @@ namespace ATT
 
         /// <summary>
         /// The very first patch used by each content expansion.
-        /// https://warcraft.wiki.gg/wiki/Patch
         /// </summary>
-        public static readonly Dictionary<string, int[]> FIRST_EXPANSION_PATCH = new Dictionary<string, int[]>
-        {
-            // Key-Value Pair   // Classic Release Version
-            { "UNKNOWN", new int[] { 0, 0, 0, 0 } },        // Unknown, invalid data.
-            { "CLASSIC", new int[] { 1, 0, 0, 22248 } },    // NOTE: Values for WoW-Classic
-            { "SEASON_OF_DISCOVERY", new int[] { 1, 15, 0, 22248 } },
-            { "TBC", new int[] { 2, 0, 1, 22248 } },        // NOTE: Values for TBC-Classic
-            { "WRATH", new int[] { 3, 0, 2, 9056 } },       // NOTE: Values for Wrath-Classic
-            { "CATA", new int[] { 4, 0, 1, 13164 } },
-            { "MOP", new int[] { 5, 0, 4, 16015 } },
-            { "WOD", new int[] { 6, 0, 2, 18764 } },
-            { "LEGION", new int[] { 7, 0, 1, 20740 } },
-            { "BFA", new int[] { 8, 0, 1, 27026 } },
-            { "SHADOWLANDS", new int[] { 9, 0, 1, 36216 } },
-            { "DF", new int[] { 10, 0, 0, 45335 } },
-            { "TWW", new int[] { 11, 0, 0, 55793 } },
-            { "MID", new int[] { 12, 0, 0, 52068 } },   // TODO
-            { "TLT", new int[] { 13, 0, 0, 52068 } },   // TODO
-        };
-
-        /// <summary>
-        /// The very last patch (or current one for Retail) used by each content expansion.
-        /// NOTE: Classic usually follows this build number.
-        /// https://warcraft.wiki.gg/wiki/Patch
-        /// </summary>
-        public static readonly Dictionary<string, int[]> LAST_EXPANSION_PATCH = new Dictionary<string, int[]>
-        {
-            // Key-Value Pair   // Classic Release Version
-            { "UNKNOWN", new int[] { 0, 0, 0, 22248 } },    // Unknown, invalid data.
-            { "CLASSIC", new int[] { 1, 14, 0, 22248 } },   // NOTE: Values for WoW-Classic
-            { "SEASON_OF_DISCOVERY", new int[] { 1, 15, 7, 22248 } },
-            { "TBC", new int[] { 2, 5, 5, 43638 } },        // NOTE: Values for TBC-Classic
-            { "WRATH", new int[] { 3, 4, 5, 51666 } },      // NOTE: Values for Wrath-Classic
-            { "CATA", new int[] { 4, 4, 5, 54481 } },
-            { "MOP", new int[] { 5, 4, 8, 18224 } },
-            { "WOD", new int[] { 6, 2, 4, 21345 } },
-            { "LEGION", new int[] { 7, 3, 5, 26365 } },
-            { "BFA", new int[] { 8, 3, 7, 35249 } },
-            { "SHADOWLANDS", new int[] { 9, 2, 7, 45745 } },
-            { "DF", new int[] { 10, 2, 7, 55664 } },
-            { "TWW", new int[] { 11, 0, 0, 52068 } },   // TODO
-            { "MID", new int[] { 12, 0, 0, 52068 } },   // TODO
-            { "TLT", new int[] { 13, 0, 0, 52068 } },   // TODO
-        };
+        public static Dictionary<string, int[]> FIRST_EXPANSION_PATCH { get; set; }
 
         /// <summary>
         /// Represents the function to use when performing a processing pass against the data
@@ -504,7 +459,7 @@ namespace ATT
                     throw new InvalidOperationException($"Do not regress or stagnate in ParseStage tracking: {_stage} => {value}");
 
                 _stage = value;
-                Log(_stage.ToString() + "...");
+                Log(_timer.ElapsedMilliseconds.ToString("000000 ") + _stage.ToString() + "...");
             }
         }
 
@@ -521,10 +476,7 @@ namespace ATT
         /// <summary>
         /// A Dictionary of key-ID types and how many times each value of key-type has been referenced in the final DB
         /// </summary>
-        public static Dictionary<string, Dictionary<decimal, int>> TypeUseCounts { get; } = new Dictionary<string, Dictionary<decimal, int>>()
-        {
-            { "questID", new Dictionary<decimal, int>() },
-        };
+        public static Dictionary<string, Dictionary<decimal, int>> TypeUseCounts { get; } = new Dictionary<string, Dictionary<decimal, int>>();
 
         /// <summary>
         /// A Dictionary of key-ID types and how many times each value of key-type has been referenced in the final DB
@@ -662,46 +614,21 @@ namespace ATT
             CURRENT_RELEASE_PHASE_NAME = Config["DataPhase"] ?? "UNKNOWN";
             if (CURRENT_RELEASE_PHASE_NAME == "UNKNOWN")
             {
-                Console.Write("CURRENT_RELEASE_PHASE_NAME is UNKNOWN. Please make sure to assign a data phase in your config file.");
+                Console.Write("CURRENT_RELEASE_PHASE_NAME is UNKNOWN. Please make sure to assign 'DataPhase' in your config file.");
                 Console.ReadLine();
                 throw new ArgumentNullException("DataPhase");
             }
             int[] configPatch = Config["DataPatch"];
-            if (configPatch != null)
+            if (configPatch == null)
             {
-                LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME] = configPatch;
+                Console.Write("CURRENT_RELEASE_VERSION is missing. Please make sure to assign 'DataPatch' in your config file.");
+                Console.ReadLine();
+                throw new ArgumentNullException("DataPatch");
             }
+            CURRENT_RELEASE_VERSION = configPatch.ConvertVersion();
             DATA_REQUIREMENTS = Config["DataRequirements"] ?? null;
             CURRENT_RELEASE_PHASE = FIRST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];
-            CURRENT_RELEASE_VERSION = LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME].ConvertVersion();
             CURRENT_SHORT_RELEASE_VERSION = CURRENT_RELEASE_VERSION.ConvertToGameVersion();
-            if (CURRENT_RELEASE_VERSION < FIRST_EXPANSION_PATCH["LEGION"].ConvertVersion())
-            {
-                if (CURRENT_RELEASE_VERSION >= FIRST_EXPANSION_PATCH["CATA"].ConvertVersion())
-                {
-                    ObjectHarvester.GameFlavors.Insert(0, "cata");
-                }
-                else if (CURRENT_RELEASE_VERSION >= FIRST_EXPANSION_PATCH["WRATH"].ConvertVersion())
-                {
-                    ObjectHarvester.GameFlavors.Insert(0, "wotlk");
-                }
-                else if (CURRENT_RELEASE_VERSION >= FIRST_EXPANSION_PATCH["TBC"].ConvertVersion())
-                {
-                    ObjectHarvester.GameFlavors.Insert(0, "tbc");
-                }
-                else
-                {
-                    ObjectHarvester.GameFlavors.Insert(0, "classic");
-                }
-            }
-            if (Program.PreProcessorTags.ContainsKey("PTR"))
-            {
-                ObjectHarvester.GameFlavors.Insert(0, "ptr");
-            }
-            if (Program.PreProcessorTags.ContainsKey("PTR2"))
-            {
-                ObjectHarvester.GameFlavors.Insert(0, "ptr-2");
-            }
             if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
             {
                 MAX_PHASE_ID = LAST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];
@@ -1413,6 +1340,7 @@ namespace ATT
                 case "zone-text-areaID":
                 case "zone-text-areas":
                 case "zone-text-continent":
+                case "zone-text-headerID":
                 case "zone-text-names":
 
                 // metadata parser tags
@@ -1921,7 +1849,7 @@ namespace ATT
                                         }
                                         if (!enString.Contains("~"))
                                         {
-                                            foreach (var locale in SupportedLocales)
+                                            foreach (var locale in SUPPORTED_LOCALES)
                                             {
                                                 if (!localeData.TryGetValue(locale, out value))
                                                 {
@@ -1953,7 +1881,7 @@ namespace ATT
                                         }
                                         if (!enString.Contains("~"))
                                         {
-                                            foreach (var locale in SupportedLocales)
+                                            foreach (var locale in SUPPORTED_LOCALES)
                                             {
                                                 if (!localeData.TryGetValue(locale, out value))
                                                 {
@@ -1985,7 +1913,7 @@ namespace ATT
                                         }
                                         if (!enString.Contains("~"))
                                         {
-                                            foreach (var locale in SupportedLocales)
+                                            foreach (var locale in SUPPORTED_LOCALES)
                                             {
                                                 if (!localeData.TryGetValue(locale, out value))
                                                 {
@@ -2427,12 +2355,14 @@ namespace ATT
                         }
                         var headerIDsByKey = ExportRawLua(CustomHeaderIDsByKey);
                         var dynamicHeaderIDsFileName = $"{addonRootFolder}/.contrib/Parser/lib/Functions/Dynamic Header IDs.lua";
+                        string existingDynamicHeaders = File.Exists(dynamicHeaderIDsFileName) ? File.ReadAllText(dynamicHeaderIDsFileName) : null;
                         var debugFolder = Directory.CreateDirectory(Path.GetDirectoryName(dynamicHeaderIDsFileName));
-                        File.WriteAllText(dynamicHeaderIDsFileName, headerIDsByKey
+                        string newDynamicHeaders = headerIDsByKey
                             .Insert(0, "\nHeaderAssignments = ")
                             .Insert(0, "-- DO NOT REFERENCE THE IDS IN THIS FILE, SHOULD IT GET DELETED (which it will eventually), THE ASSIGNMENTS WILL BE REASSIGNED!")
                             .Insert(0, "-- This file is dynamically generated by Parser! DO NOT MODIFIY IT MANUALLY!\n").AppendLine(";")
-                            .Append("NextHeaderID = ").Append(minHeaderID - 1).Append(";").ToString(), Encoding.UTF8);
+                            .Append("NextHeaderID = ").Append(minHeaderID - 1).Append(";").ToString();
+                        if (existingDynamicHeaders != newDynamicHeaders) File.WriteAllText(dynamicHeaderIDsFileName, newDynamicHeaders, Encoding.UTF8);
                     }
 
                     // Now export it based on what we know.
@@ -2447,6 +2377,7 @@ namespace ATT
                     var localizationForText = new Dictionary<string, Dictionary<long, string>>();
                     var localizationForLore = new Dictionary<string, Dictionary<long, string>>();
                     var localizationForDescriptions = new Dictionary<string, Dictionary<long, string>>();
+                    var extraHeaderData = new Dictionary<string, Dictionary<long, object>>();
                     foreach (var key in CustomHeaders.Keys)
                     {
                         // Include Only Referenced Headers!
@@ -2540,6 +2471,24 @@ namespace ATT
                                         sublocale[key] = locale.Value.ToString();
                                     }
                                 }
+
+                                if (header.TryGetValue("minilist_ignore", out value))
+                                {
+                                    if (!extraHeaderData.TryGetValue("IGNOREINMINILIST", out var ignored))
+                                    {
+                                        extraHeaderData["IGNOREINMINILIST"] = ignored = new Dictionary<long, object>();
+                                    }
+                                    ignored[key] = value;
+                                }
+
+                                if (header.TryGetValue("npcfill", out value))
+                                {
+                                    if (!extraHeaderData.TryGetValue("FILLNPCS", out var fill))
+                                    {
+                                        extraHeaderData["FILLNPCS"] = fill = new Dictionary<long, object>();
+                                    }
+                                    fill[key] = value;
+                                }
                             }
                         }
                     }
@@ -2552,6 +2501,14 @@ namespace ATT
                     foreach (var key in headerKeys)
                     {
                         builder.Append("\t").Append(key).Append(" = ").Append(constants[key]).AppendLine(",");
+                    }
+                    builder.AppendLine("};");
+
+                    // Write extra header data
+                    builder.AppendLine("_.HeaderData = {");
+                    foreach (var key in extraHeaderData)
+                    {
+                        builder.Append("\t").Append(key.Key).Append(" = ").Append(ExportCompressedLua(key.Value)).AppendLine(",");
                     }
                     builder.AppendLine("};");
 

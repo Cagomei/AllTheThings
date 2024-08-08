@@ -16,8 +16,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 222535 },	-- Haywire Servobot
 					["coord"] = { 66.9, 58.1, THE_RINGING_DEEPS },
 				})),
-				q(82552, {	-- All Worked Up	// could be bonus objective
-					["coord"] = { 47.0, 20.5, THE_RINGING_DEEPS },	--but need more accurate coords from popup (big wq area)
+				pvp(q(80323, {	-- Foggy Faceoff
+					["coord"] = { 64.9, 51.2, THE_RINGING_DEEPS },
+				})),
+				q(82552, {	-- All Worked Up
+					["coord"] = { 47.0, 20.5, THE_RINGING_DEEPS },
 				}),
 				q(82523, {	-- Candle Kingbreaker
 					["coord"] = { 64.3, 33.6, THE_RINGING_DEEPS },
@@ -33,6 +36,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				}),
 				q(82580, {	-- Courier Mission: Ore Recovery
 					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
+				}),
+				q(83930, {	-- Deworming Solution
+					["coord"] = { 57.4, 39.5, THE_RINGING_DEEPS },
 				}),
 				q(83538, {	-- Excavation Liberation (TODO: probably pvp?)
 					["coord"] = { 62.0, 84.9, THE_RINGING_DEEPS },

@@ -5,6 +5,13 @@ inst = function(journalInstanceID, instanceID)
 	InstanceDB[journalInstanceID] = instanceID;
 end
 
+-- #if SEASON_OF_DISCOVERY
+-- Manually added.
+inst(2789, 2789);	-- The Tainted Scar
+inst(2791, 2791);	-- Storm Cliffs
+inst(2784, 2784);	-- Demon Fall Canyon
+-- #endif
+
 -- This list was exported using excel manually using data from this url:
 -- https://wago.tools/db2/JournalInstance?build=11.0.0.55120
 inst(63, 36);	-- Deadmines

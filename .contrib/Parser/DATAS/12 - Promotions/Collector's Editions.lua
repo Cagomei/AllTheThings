@@ -618,6 +618,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 					n(QUESTS, {
 						q(77813, {	-- Lightning Strikes
 							["provider"] = { "n", 197478 },	-- Herald Flaps
+							["coord"] = { 45.4, 55.2, VALDRAKKEN },
 						}),
 						q(77815, {	-- The Storm Race Tour
 							["provider"] = { "n", 193359 },	-- Lord Andestrasz
@@ -636,7 +637,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 								}),
 							},
 						}),
-						q(81993, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {	-- The Stormrider's Bond [Dragon Isle Version]
+						q(81993, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- The Stormrider's Bond [Dragon Isle Version]
 							["description"] = "You might Only get one of these version per account?",
 							--["provider"] = { "n", XXXXXX },	-- Kurdran Wildhammer
 							--["coord"] = { X, Y, VALDRAKKEN },
@@ -671,7 +672,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 								i(220726),	-- Shining Stormrider's Wristguards
 							},
 						})),
-						q(83024, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {	-- The Stormrider's Bond [Khaz Algar Version]
+						q(83024, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- The Stormrider's Bond [Khaz Algar Version]
 							["description"] = "You might Only get one of these version per account?",
 							--["provider"] = { "n", XXXXXX },	-- Kurdran Wildhammer
 							--["coord"] = { X, Y, VALDRAKKEN },
@@ -706,7 +707,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 								i(220726),	-- Shining Stormrider's Wristguards
 							},
 						})),
-						--q(X, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {	-- A Sacred Connection
+						--q(X, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- A Sacred Connection
 							--["sourceQuests"] = {
 								--81993,	-- The Stormrider's Bond [Dragon Isle Version]
 								--83024,	-- The Stormrider's Bond [Khaz Algar Version]
@@ -796,7 +797,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 				i(208704),	-- Deepdwellers Earthen Hearthstone (TOY!)
 				i(208883),	-- Sandbox Storm Gryphon (TOY!)
 				i(208751),	-- Squally (PET!)
-				q(82809, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {	-- Gryphons of a Feather
+				q(82809, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- Gryphons of a Feather
 					["provider"] = { "n", 209681 },	-- Squally
 					["g"] = {
 						i(224259),	-- Flash (PET!)

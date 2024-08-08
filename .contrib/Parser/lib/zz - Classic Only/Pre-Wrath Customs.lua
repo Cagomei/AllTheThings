@@ -71,11 +71,7 @@ root("Achievements", {
 			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 3000,
 			["groups"] = {
-				-- #if AFTER CATA
-				title(81),	-- The Seeker
-				-- #else
 				title(42),	-- The Seeker
-				-- #endif
 			},
 		})),
 

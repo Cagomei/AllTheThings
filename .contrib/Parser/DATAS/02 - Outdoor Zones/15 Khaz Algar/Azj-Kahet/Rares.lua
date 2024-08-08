@@ -30,10 +30,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(221212),	-- Death Burrower Handguards
 				},
 			}),
+			n(222624, {	-- Deepcrawler Tx'kesh
+				["coord"] = { 64.5, 6.4, AZJ_KAHET },
+				["questID"] = 82077,
+			}),
 			n(216045, {	-- Enduring Gutterface
 				["coord"] = { 58.0, 62.1, AZJ_KAHET },
 				["questID"] = 81707,
 				["g"] = {
+					i(221248),	-- Deep Terror Carver
 					i(221243),	-- Slippers of Delirium (alpha data)
 				},
 			}),
@@ -46,7 +51,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					{ 65.5, 81.9, AZJ_KAHET_LOWER},	-- End
 				},
 				["g"] = {
-					-- no loot
+					i(223941),	-- Nerubian Cultivator's Girdle
 				},
 			}),
 			n(216048, {	-- Jix'ak the Crazed
@@ -82,7 +87,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 68.9, 72.2, AZJ_KAHET },
 				["questID"] = 81705,
 				["g"] = {
-					--
+					i(221250),	-- Creeping Lasher Machete
 				},
 			}),
 			n(216052, {	-- Skrimisher Sa'zryk
@@ -110,11 +115,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					--
 				},
 			}),
-			n(216047, {	-- The Failed // The Disgraced (vignette said - failed, target - disgraced)
+			n(216047, {	-- The One Left
 				["questID"] = 82290,
-				["coord"] = { 69.4, 93.6, AZJ_KAHET },
+				["coord"] = { 63.5, 95.2, AZJ_KAHET },
 				["g"] = {
-					-- no loot
+					-- 
 				},
 			}),
 			n(216049, {	-- The Oozekhan
@@ -173,6 +178,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		q(84073),	-- Extra HQT: Cha'tak
+		q(84081),	-- Extra HQT: Deepcrawler Tx'kesh
 		q(84076),	-- Extra HQT: Enduring Gutterface
 		q(84079),	-- Extra HQT: Harverster Qixt
 		q(84071),	-- Extra HQT: Kaheti Silk Hauler
@@ -181,7 +187,7 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(84074),	-- Extra HQT: Monstrous Lasharoth
 		q(84082),	-- Extra HQT: Skrimisher Sa'zryk
 		q(84069),	-- Extra HQT: The Groundskeeper
-		q(84077),	-- Extra HQT: The Oozekhan
+		q(84078),	-- Extra HQT: The Oozekhan
 		q(84080),	-- Extra HQT: Umbraclaw Matra
 		q(84072),	-- Extra HQT: XT-Minecrusher 8700
 	}),

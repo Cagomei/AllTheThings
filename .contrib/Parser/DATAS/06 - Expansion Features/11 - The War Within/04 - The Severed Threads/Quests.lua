@@ -33,9 +33,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 			}, {	-- RENOWN 10 --
-				i(218349),	-- Tabard of the Severed Threads
+				q(82432, {	-- A Gift Handwoven
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+					["g"] = {
+						i(218349),	-- Tabard of the Severed Threads (COSMETIC!)
+					},
+				}),
 			}, {	-- RENOWN 11 --
 			}, {	-- RENOWN 12 --
+				q(82433, {	-- Power, Etched in the Deep
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
 			}, {	-- RENOWN 13 --
 			}, {	-- RENOWN 14 --
 			}, {	-- RENOWN 15 --

@@ -10,7 +10,11 @@ local i = function(itemID)
 	return item;
 end
 
--- TODO: move more BoA items here, especially if they are 'cost' items or contain BoP items
+-- TODO: move more BoA items here; especially if they are 'cost' items or contain BoP items
+
+-- #if SEASON_OF_DISCOVERY
+i(226500);	-- Chipped Drakefire Amulet
+-- #endif
 
 -- BoA Cost Items
 i(137642);	-- Mark of Honor
@@ -249,6 +253,60 @@ i(48716);	-- Venerable Mass of McGowan
 --   CLASSIC   --
 -----------------
 i(12844);	-- Argent Dawn Valor Token
+
+-----------------
+-- PATCH 6.1.0 --
+-----------------
+i(122625);	-- Shared Turbulent Hood
+i(122630);	-- Shared Turbulent Choker
+i(122627);	-- Shared Turbulent Spaulders
+i(122631);	-- Shared Turbulent Cloak
+i(122622);	-- Shared Turbulent Robes
+i(122621);	-- Shared Turbulent Bracers
+i(122624);	-- Shared Turbulent Gauntlets
+i(122628);	-- Shared Turbulent Girdle
+i(122626);	-- Shared Turbulent Leggings
+i(122623);	-- Shared Turbulent Treads
+i(122629);	-- Shared Turbulent Ring
+i(122632);	-- Shared Turbulent Trinket
+i(122633);	-- Shared Turbulent Armament
+
+-----------------
+-- PATCH 6.2.0 --
+-----------------
+i(127781);	-- Baleful Cloth Hood
+i(127783);	-- Baleful Cloth Spaulders
+i(127778);	-- Baleful Cloth Robe
+i(127777);	-- Baleful Cloth Bracers
+i(127780);	-- Baleful Cloth Gauntlets
+i(127784);	-- Baleful Cloth Girdle
+i(127782);	-- Baleful Cloth Leggings
+i(127779);	-- Baleful Cloth Treads
+i(127794);	-- Baleful Leather Hood
+i(127796);	-- Baleful Leather Spaulders
+i(127791);	-- Baleful Leather Tunic
+i(127790);	-- Baleful Leather Bracers
+i(127793);	-- Baleful Leather Gauntlets
+i(127797);	-- Baleful Leather Girdle
+i(127795);	-- Baleful Leather Leggings
+i(127792);	-- Baleful Leather Treads
+i(127807);	-- Baleful Mail Hood
+i(127809);	-- Baleful Mail Spaulders
+i(127804);	-- Baleful Mail Robe
+i(127803);	-- Baleful Mail Bracers
+i(127806);	-- Baleful Mail Gauntlets
+i(127810);	-- Baleful Mail Girdle
+i(127808);	-- Baleful Mail Leggings
+i(127805);	-- Baleful Mail Treads
+i(127820);	-- Baleful Plate Hood
+i(127822);	-- Baleful Plate Spaulders
+i(127817);	-- Baleful Plate Chest
+i(127816);	-- Baleful Plate Bracers
+i(127819);	-- Baleful Plate Gauntlets
+i(127823);	-- Baleful Plate Girdle
+i(127821);	-- Baleful Plate Leggings
+i(127818);	-- Baleful Plate Treads
+i(127799);	-- Baleful Pendant
 
 -----------------
 -- PATCH 6.2.2 --
@@ -504,3 +562,459 @@ i(210325);	-- Medal of Honor [H] (Season 3)
 i(211773);	-- Medal of Conquest (Season 4)
 i(211770);	-- Medal of Honor [A] (Season 4)
 i(211771);	-- Medal of Honor [H] (Season 4)
+
+-----------------
+-- TIER TOKENS --
+-----------------
+-- #if AFTER TWW
+
+-- Tier 4 Tokens [Kara / Gruul / Mag]
+i(29760);	-- Helm of the Fallen Champion
+i(29761);	-- Helm of the Fallen Defender
+i(29759);	-- Helm of the Fallen Hero
+i(29763);	-- Pauldrons of the Fallen Champion
+i(29764);	-- Pauldrons of the Fallen Defender
+i(29762);	-- Pauldrons of the Fallen Hero
+i(29754);	-- Chestguard of the Fallen 
+i(29753);	-- Chestguard of the Fallen Defender
+i(29755);	-- Chestguard of the Fallen Hero
+i(29757);	-- Gloves of the Fallen Champion
+i(29758);	-- Gloves of the Fallen Defender
+i(29756);	-- Gloves of the Fallen Hero
+i(29766);	-- Leggings of the Fallen Champion
+i(29767);	-- Leggings of the Fallen Defender
+i(29765);	-- Leggings of the Fallen Hero
+
+-- Tier 5 Tokens [TK / SSC]
+i(30242);	-- Helm of the Vanquished Champion
+i(30243);	-- Helm of the Vanquished Defender
+i(30244);	-- Helm of the Vanquished Hero
+i(30248);	-- Pauldrons of the Vanquished Champion
+i(30249);	-- Pauldrons of the Vanquished Defender
+i(30250);	-- Pauldrons of the Vanquished Hero
+i(30236);	-- Chestguard of the Vanquished Champion
+i(30237);	-- Chestguard of the Vanquished Defender
+i(30238);	-- Chestguard of the Vanquished Hero
+i(30239);	-- Gloves of the Vanquished Champion
+i(30240);	-- Gloves of the Vanquished Defender
+i(30241);	-- Gloves of the Vanquished Hero
+i(30245);	-- Leggings of the Vanquished Champion
+i(30246);	-- Leggings of the Vanquished Defender
+i(30247);	-- Leggings of the Vanquished Hero
+
+-- Tier 6 Tokens [MH / BT / SWP]
+i(31097);	-- Helm of the Forgotten Conqueror
+i(31095);	-- Helm of the Forgotten Protector
+i(31096);	-- Helm of the Forgotten Vanquisher
+i(31101);	-- Pauldrons of the Forgotten Conqueror
+i(31103);	-- Pauldrons of the Forgotten Protector
+i(31102);	-- Pauldrons of the Forgotten Vanquisher
+i(31089);	-- Chestguard of the Forgotten Conqueror
+i(31091);	-- Chestguard of the Forgotten Protector
+i(31090);	-- Chestguard of the Forgotten Vanquisher
+i(34848);	-- Bracers of the Forgotten Conqueror
+i(34851);	-- Bracers of the Forgotten Protector
+i(34852);	-- Bracers of the Forgotten Vanquisher
+i(31092);	-- Gloves of the Forgotten Conqueror
+i(31094);	-- Gloves of the Forgotten Protector
+i(31093);	-- Gloves of the Forgotten Vanquisher
+i(34853);	-- Belt of the Forgotten Conqueror
+i(34854);	-- Belt of the Forgotten Protector
+i(34855);	-- Belt of the Forgotten Vanquisher
+i(31098);	-- Leggings of the Forgotten Conqueror
+i(31100);	-- Leggings of the Forgotten Protector
+i(31099);	-- Leggings of the Forgotten Vanquisher
+i(34856);	-- Boots of the Forgotten Conqueror
+i(34857);	-- Boots of the Forgotten Protector
+i(34858);	-- Boots of the Forgotten Vanquisher
+
+-- Tier 7 10 Man Tokens [Naxx / OS]
+i(40616);	-- Helm of the Lost Conqueror
+i(40617);	-- Helm of the Lost Protector
+i(40618);	-- Helm of the Lost Vanquisher
+i(40622);	-- Spaulders of the Lost Conqueror
+i(40623);	-- Spaulders of the Lost Protector
+i(40624);	-- Spaulders of the Lost Vanquisher
+i(40610);	-- Chestguard of the Lost Conqueror
+i(40611);	-- Chestguard of the Lost Protector
+i(40612);	-- Chestguard of the Lost Vanquisher
+i(40613);	-- Gloves of the Lost Conqueror
+i(40614);	-- Gloves of the Lost Protector
+i(40615);	-- Gloves of the Lost Vanquisher
+i(40619);	-- Leggings of the Lost Conqueror
+i(40620);	-- Leggings of the Lost Protector
+i(40621);	-- Leggings of the Lost Vanquisher
+
+-- Tier 7 25 Man Tokens [Naxx / OS]
+i(40631);	-- Crown of the Lost Conqueror
+i(40632);	-- Crown of the Lost Protector
+i(40633);	-- Crown of the Lost Vanquisher
+i(40637);	-- Mantle of the Lost Conqueror
+i(40638);	-- Mantle of the Lost Protector
+i(40639);	-- Mantle of the Lost Vanquisher
+i(40625);	-- Breastplate of the Lost Conqueror
+i(40626);	-- Breastplate of the Lost Protector
+i(40627);	-- Breastplate of the Lost Vanquisher
+i(40628);	-- Gauntlets of the Lost Conqueror
+i(40629);	-- Gauntlets of the Lost Protector
+i(40630);	-- Gauntlets of the Lost Vanquisher	
+i(40634);	-- Legplates of the Lost Conqueror
+i(40635);	-- Legplates of the Lost Protector
+i(40636);	-- Legplates of the Lost Vanquisher
+
+-- Tier 8 10 Man [Ulduar]
+i(45647);	-- Helm of the Wayward Conqueror
+i(45648);	-- Helm of the Wayward Protector
+i(45649);	-- Helm of the Wayward Vanquisher
+i(45659);	-- Spaulders of the Wayward Conqueror
+i(45660);	-- Spaulders of the Wayward Protector
+i(45661);	-- Spaulders of the Wayward Vanquisher
+i(45635);	-- Chestguard of the Wayward Conqueror
+i(45636);	-- Chestguard of the Wayward Protector
+i(45637);	-- Chestguard of the Wayward Vanquisher
+i(45644);	-- Gloves of the Wayward Conqueror
+i(45645);	-- Gloves of the Wayward Protector
+i(45646);	-- Gloves of the Wayward Vanquisher
+i(45650);	-- Leggings of the Wayward Conqueror
+i(45651);	-- Leggings of the Wayward Protector
+i(45652);	-- Leggings of the Wayward Vanquisher
+
+-- Tier 8 25 Man [Ulduar]
+i(45638);	-- Crown of the Wayward Conqueror
+i(45639);	-- Crown of the Wayward Protector
+i(45640);	-- Crown of the Wayward Vanquisher
+i(45656);	-- Mantle of the Wayward Conqueror
+i(45657);	-- Mantle of the Wayward Protector
+i(45658);	-- Mantle of the Wayward Vanquisher
+i(45632);	-- Breastplate of the Wayward Conqueror
+i(45633);	-- Breastplate of the Wayward Protector
+i(45634);	-- Breastplate of the Wayward Vanquisher
+i(45641);	-- Gauntlets of the Wayward Conqueror
+i(45642);	-- Gauntlets of the Wayward Protector
+i(45643);	-- Gauntlets of the Wayward Vanquisher
+i(45654);	-- Legplates of the Wayward Protector
+i(45655);	-- Legplates of the Wayward Vanquisher
+
+
+-- Tier 9 Tier Tokens [ToC]
+
+i(47242);	-- Trophy of the Crusade
+i(47557);	-- Regalia of the Grand Conqueror [25H]
+i(47558);	-- Regalia of the Grand Protector [25H]
+i(47559);	-- Regalia of the Grand Vanquisher [25H]
+
+-- Tier 10 Tier Tokens [ICC]
+i(52025);	-- Vanquisher's Mark of Sanctification [10H/25N]
+i(52026);	-- Protector's Mark of Sanctification [10H/25N]
+i(52027);	-- Conqueror's Mark of Sanctification [10H/25N]
+i(52028);	-- Vanquisher's Mark of Sanctification [25H]
+i(52029);	-- Protector's Mark of Sanctification [25H]
+i(52030);	-- Conqueror's Mark of Sanctification [25H]
+
+-- Tier 11 10/25 Normal [BWD / TotFW /BoT]
+i(63683);	-- Helm of the Forlorn Conqueror
+i(63684);	-- Helm of the Forlorn Protector
+i(63682);	-- Helm of the Forlorn Vanquisher
+i(64315);	-- Mantle of the Forlorn Conqueror
+i(64316);	-- Mantle of the Forlorn Protector
+i(64314);	-- Mantle of the Forlorn Vanquisher
+
+-- Tier 11 10/25 Heroic [BWD / TotFW /BoT]
+i(66998);	-- Essence of the Forlorn
+i(65001);	-- Crown of the Forlorn Conqueror
+i(65000);	-- Crown of the Forlorn Protector
+i(65002);	-- Crown of the Forlorn Vanquisher
+i(65088);	-- Shoulders of the Forlorn Conqueror
+i(65087);	-- Shoulders of the Forlorn Protector
+i(65089);	-- Shoulders of the Forlorn Vanquisher
+i(67423);	-- Chest of the Forlorn Conqueror
+i(67424);	-- Chest of the Forlorn Protector
+i(67425);	-- Chest of the Forlorn Vanquisher
+i(67429);	-- Gauntlets of the Forlorn Conqueror
+i(67430);	-- Gauntlets of the Forlorn Protector
+i(67431);	-- Gauntlets of the Forlorn Vanquisher
+i(67428);	-- Leggings of the Forlorn Conqueror
+i(67427);	-- Leggings of the Forlorn Protector
+i(67426);	-- Leggings of the Forlorn Vanquisher
+
+-- Tier 12 10/25 Normal [FL]
+i(71675);	-- Helm of the Fiery Conqueror
+i(71682);	-- Helm of the Fiery Protector
+i(71668);	-- Helm of the Fiery Vanquisher
+i(71681);	-- Mantle of the Fiery Conqueror
+i(71688);	-- Mantle of the Fiery Protector
+i(71674);	-- Mantle of the Fiery Vanquisher
+
+-- Tier 12 10/25 Heroic [FL]
+i(71677);	-- Crown of the Fiery Conqueror
+i(71684);	-- Crown of the Fiery Protector
+i(71670);	-- Crown of the Fiery Vanquisher
+i(71680);	-- Shoulders of the Fiery Conqueror
+i(71687);	-- Shoulders of the Fiery Protector
+i(71673);	-- Shoulders of the Fiery Vanquisher
+i(71679);	-- Chest of the Fiery Conqueror
+i(71686);	-- Chest of the Fiery Protector
+i(71672);	-- Chest of the Fiery Vanquisher
+i(71676);	-- Gauntlets of the Fiery Conqueror
+i(71683);	-- Gauntlets of the Fiery Protector
+i(71669);	-- Gauntlets of the Fiery Vanquisher
+i(71678);	-- Leggings of the Fiery Conqueror
+i(71685);	-- Leggings of the Fiery Protector
+i(71671);	-- Leggings of the Fiery Vanquisher
+
+-- Tier 13 LFR [DS]
+i(78869);	-- Crown of the Corrupted Conqueror
+i(78870);	-- Crown of the Corrupted Protector
+i(78868);	-- Crown of the Corrupted Vanquisher
+i(78875);	-- Shoulders of the Corrupted Conqueror
+i(78876);	-- Shoulders of the Corrupted Protector
+i(78874);	-- Shoulders of the Corrupted Vanquisher
+i(78863);	-- Chest of the Corrupted Conqueror
+i(78864);	-- Chest of the Corrupted Protector
+i(78862);	-- Chest of the Corrupted Vanquisher
+i(78866);	-- Gauntlets of the Corrupted Conqueror
+i(78867);	-- Gauntlets of the Corrupted Protector
+i(78865);	-- Gauntlets of the Corrupted Vanquisher
+i(78872);	-- Leggings of the Corrupted Conqueror
+i(78873);	-- Leggings of the Corrupted Protector
+i(78871);	-- Leggings of the Corrupted Vanquisher
+
+-- Tier 13 N [DS]
+i(78182);	-- Crown of the Corrupted Conqueror
+i(78177);	-- Crown of the Corrupted Protector
+i(78172);	-- Crown of the Corrupted Vanquisher
+i(78180);	-- Shoulders of the Corrupted Conqueror
+i(78175);	-- Shoulders of the Corrupted Protector
+i(78170);	-- Shoulders of the Corrupted Vanquisher
+i(78184);	-- Chest of the Corrupted Conqueror
+i(78179);	-- Chest of the Corrupted Protector
+i(78174);	-- Chest of the Corrupted Vanquisher
+i(78183);	-- Gauntlets of the Corrupted Conqueror
+i(78178);	-- Gauntlets of the Corrupted Protector
+i(78173);	-- Gauntlets of the Corrupted Vanquisher
+i(78181);	-- Leggings of the Corrupted Conqueror
+i(78176);	-- Leggings of the Corrupted Protector
+i(78171);	-- Leggings of the Corrupted Vanquisher
+
+-- Tier 13 H [DS]
+i(78850);	-- Crown of the Corrupted Conqueror
+i(78851);	-- Crown of the Corrupted Protector
+i(78852);	-- Crown of the Corrupted Vanquisher
+i(78859);	-- Shoulders of the Corrupted Conqueror
+i(78860);	-- Shoulders of the Corrupted Protector
+i(78861);	-- Shoulders of the Corrupted Vanquisher
+i(78847);	-- Chest of the Corrupted Conqueror
+i(78848);	-- Chest of the Corrupted Protector
+i(78849);	-- Chest of the Corrupted Vanquisher
+i(78853);	-- Gauntlets of the Corrupted Conqueror
+i(78854);	-- Gauntlets of the Corrupted Protector
+i(78855);	-- Gauntlets of the Corrupted Vanquisher
+i(78856);	-- Leggings of the Corrupted Conqueror
+i(78857);	-- Leggings of the Corrupted Protector
+i(78858);	-- Leggings of the Corrupted Vanquisher
+
+-- Tier 17 N [BRF]
+i(119310, { ["modID"] = 3, });	-- Essence of the Iron Conqueror
+i(119323, { ["modID"] = 3, });	-- Essence of the Iron Protector
+i(119316, { ["modID"] = 3, });	-- Essence of the Iron Vanquisher
+i(119308, { ["modID"] = 3, });	-- Helm of the Iron Conqueror
+i(119321, { ["modID"] = 3, });	-- Helm of the Iron Protector
+i(119312, { ["modID"] = 3, });	-- Helm of the Iron Vanquisher
+i(119309, { ["modID"] = 3, });	-- Shoulders of the Iron Conqueror
+i(119322, { ["modID"] = 3, });	-- Shoulders of the Iron Protector
+i(119314, { ["modID"] = 3, });	-- Shoulders of the Iron Vanquisher
+i(119305, { ["modID"] = 3, });	-- Chest of the Iron Conqueror
+i(119318, { ["modID"] = 3, });	-- Chest of the Iron Protector
+i(119315, { ["modID"] = 3, });	-- Chest of the Iron Vanquisher
+i(119306, { ["modID"] = 3, });	-- Gauntlets of the Iron Conqueror
+i(119319, { ["modID"] = 3, });	-- Gauntlets of the Iron Protector
+i(119311, { ["modID"] = 3, });	-- Gauntlets of the Iron Vanquisher
+i(119307, { ["modID"] = 3, });	-- Leggings of the Iron Conqueror
+i(119320, { ["modID"] = 3, });	-- Leggings of the Iron Protector
+i(119313, { ["modID"] = 3, });	-- Leggings of the Iron Vanquisher
+
+-- Tier 17 H [BRF]
+i(119310, { ["modID"] = 5, });	-- Essence of the Iron Conqueror
+i(119323, { ["modID"] = 5, });	-- Essence of the Iron Protector
+i(119316, { ["modID"] = 5, });	-- Essence of the Iron Vanquisher
+i(119308, { ["modID"] = 5, });	-- Helm of the Iron Conqueror
+i(119321, { ["modID"] = 5, });	-- Helm of the Iron Protector
+i(119312, { ["modID"] = 5, });	-- Helm of the Iron Vanquisher
+i(119309, { ["modID"] = 5, });	-- Shoulders of the Iron Conqueror
+i(119322, { ["modID"] = 5, });	-- Shoulders of the Iron Protector
+i(119314, { ["modID"] = 5, });	-- Shoulders of the Iron Vanquisher
+i(119305, { ["modID"] = 5, });	-- Chest of the Iron Conqueror
+i(119318, { ["modID"] = 5, });	-- Chest of the Iron Protector
+i(119315, { ["modID"] = 5, });	-- Chest of the Iron Vanquisher
+i(119306, { ["modID"] = 5, });	-- Gauntlets of the Iron Conqueror
+i(119319, { ["modID"] = 5, });	-- Gauntlets of the Iron Protector
+i(119311, { ["modID"] = 5, });	-- Gauntlets of the Iron Vanquisher
+i(119307, { ["modID"] = 5, });	-- Leggings of the Iron Conqueror
+i(119320, { ["modID"] = 5, });	-- Leggings of the Iron Protector
+i(119313, { ["modID"] = 5, });	-- Leggings of the Iron Vanquisher
+
+-- Tier 17 M [BRF]
+i(119310, { ["modID"] = 6, });	-- Essence of the Iron Conqueror
+i(119323, { ["modID"] = 6, });	-- Essence of the Iron Protector
+i(119316, { ["modID"] = 6, });	-- Essence of the Iron Vanquisher
+i(119308, { ["modID"] = 6, });	-- Helm of the Iron Conqueror
+i(119321, { ["modID"] = 6, });	-- Helm of the Iron Protector
+i(119312, { ["modID"] = 6, });	-- Helm of the Iron Vanquisher
+i(119309, { ["modID"] = 6, });	-- Shoulders of the Iron Conqueror
+i(119322, { ["modID"] = 6, });	-- Shoulders of the Iron Protector
+i(119314, { ["modID"] = 6, });	-- Shoulders of the Iron Vanquisher
+i(119305, { ["modID"] = 6, });	-- Chest of the Iron Conqueror
+i(119318, { ["modID"] = 6, });	-- Chest of the Iron Protector
+i(119315, { ["modID"] = 6, });	-- Chest of the Iron Vanquisher
+i(119306, { ["modID"] = 6, });	-- Gauntlets of the Iron Conqueror
+i(119319, { ["modID"] = 6, });	-- Gauntlets of the Iron Protector
+i(119311, { ["modID"] = 6, });	-- Gauntlets of the Iron Vanquisher
+i(119307, { ["modID"] = 6, });	-- Leggings of the Iron Conqueror
+i(119320, { ["modID"] = 6, });	-- Leggings of the Iron Protector
+i(119313, { ["modID"] = 6, });	-- Leggings of the Iron Vanquisher
+
+-- Castle Nathria LFR Weapon Tokens
+i(183893, { ["modID"] = 4, });	-- Abominable Anima Spherule
+i(183896, { ["modID"] = 4, });	-- Abominable Anima Spherule
+i(183888, { ["modID"] = 4, });	-- Apogee Anima Bead
+i(183895, { ["modID"] = 4, });	-- Apogee Anima Bead
+i(183897, { ["modID"] = 4, });	-- Mystic Anima Spherule
+i(183892, { ["modID"] = 4, });	-- Mystic Anima Spherule
+i(183894, { ["modID"] = 4, });	-- Thaumaturgic Anima Bead
+i(183889, { ["modID"] = 4, });	-- Thaumaturgic Anima Bead
+i(183891, { ["modID"] = 4, });	-- Venerated Anima Spherule
+i(183898, { ["modID"] = 4, });	-- Venerated Anima Spherule
+i(183899, { ["modID"] = 4, });	-- Zenith Anima Spherule
+i(183890, { ["modID"] = 4, });	-- Zenith Anima Spherule
+
+-- Castle Nathria N Weapon Tokens
+i(183893, { ["modID"] = 3, });	-- Abominable Anima Spherule
+i(183896, { ["modID"] = 3, });	-- Abominable Anima Spherule
+i(183888, { ["modID"] = 3, });	-- Apogee Anima Bead
+i(183895, { ["modID"] = 3, });	-- Apogee Anima Bead
+i(183897, { ["modID"] = 3, });	-- Mystic Anima Spherule
+i(183892, { ["modID"] = 3, });	-- Mystic Anima Spherule
+i(183894, { ["modID"] = 3, });	-- Thaumaturgic Anima Bead
+i(183889, { ["modID"] = 3, });	-- Thaumaturgic Anima Bead
+i(183891, { ["modID"] = 3, });	-- Venerated Anima Spherule
+i(183898, { ["modID"] = 3, });	-- Venerated Anima Spherule
+i(183899, { ["modID"] = 3, });	-- Zenith Anima Spherule
+i(183890, { ["modID"] = 3, });	-- Zenith Anima Spherule
+
+-- Castle Nathria H Weapon Tokens
+i(183893, { ["modID"] = 5, });	-- Abominable Anima Spherule
+i(183896, { ["modID"] = 5, });	-- Abominable Anima Spherule
+i(183888, { ["modID"] = 5, });	-- Apogee Anima Bead
+i(183895, { ["modID"] = 5, });	-- Apogee Anima Bead
+i(183897, { ["modID"] = 5, });	-- Mystic Anima Spherule
+i(183892, { ["modID"] = 5, });	-- Mystic Anima Spherule
+i(183894, { ["modID"] = 5, });	-- Thaumaturgic Anima Bead
+i(183889, { ["modID"] = 5, });	-- Thaumaturgic Anima Bead
+i(183891, { ["modID"] = 5, });	-- Venerated Anima Spherule
+i(183898, { ["modID"] = 5, });	-- Venerated Anima Spherule
+i(183899, { ["modID"] = 5, });	-- Zenith Anima Spherule
+i(183890, { ["modID"] = 5, });	-- Zenith Anima Spherule
+
+-- Castle Nathria M Weapon Tokens
+i(183893, { ["modID"] = 6, });	-- Abominable Anima Spherule
+i(183896, { ["modID"] = 6, });	-- Abominable Anima Spherule
+i(183888, { ["modID"] = 6, });	-- Apogee Anima Bead
+i(183895, { ["modID"] = 6, });	-- Apogee Anima Bead
+i(183897, { ["modID"] = 6, });	-- Mystic Anima Spherule
+i(183892, { ["modID"] = 6, });	-- Mystic Anima Spherule
+i(183894, { ["modID"] = 6, });	-- Thaumaturgic Anima Bead
+i(183889, { ["modID"] = 6, });	-- Thaumaturgic Anima Bead
+i(183891, { ["modID"] = 6, });	-- Venerated Anima Spherule
+i(183898, { ["modID"] = 6, });	-- Venerated Anima Spherule
+i(183899, { ["modID"] = 6, });	-- Zenith Anima Spherule
+i(183890, { ["modID"] = 6, });	-- Zenith Anima Spherule
+
+-- Tier 22 LFR [SotFO]
+i(191005, { ["modID"] = 4, });	-- Dreadful Helm Module
+i(191002, { ["modID"] = 4, });	-- Mystic Helm Module
+i(191003, { ["modID"] = 4, });	-- Venerated Helm Module
+i(191004, { ["modID"] = 4, });	-- Zenith Helm Module
+i(191006, { ["modID"] = 4, });	-- Dreadful Shoulder Module
+i(191007, { ["modID"] = 4, });	-- Mystic Shoulder Module
+i(191008, { ["modID"] = 4, });	-- Venerated Shoulder Module
+i(191009, { ["modID"] = 4, });	-- Zenith Shoulder Module
+i(191010, { ["modID"] = 4, });	-- Dreadful Chest Module
+i(191011, { ["modID"] = 4, });	-- Mystic Chest Module
+i(191012, { ["modID"] = 4, });	-- Venerated Chest Module
+i(191013, { ["modID"] = 4, });	-- Zenith Chest Modulefs
+i(191014, { ["modID"] = 4, });	-- Dreadful Hand Module
+i(191015, { ["modID"] = 4, });	-- Mystic Hand Module
+i(191016, { ["modID"] = 4, });	-- Venerated Hand Module
+i(191017, { ["modID"] = 4, });	-- Zenith Hand Module
+i(191018, { ["modID"] = 4, });	-- Dreadful Leg Module
+i(191019, { ["modID"] = 4, });	-- Mystic Leg Module
+i(191020, { ["modID"] = 4, });	-- Venerated Leg Module
+i(191021, { ["modID"] = 4, });	-- Zenith Leg Module
+
+
+-- Tier 22 N [SotFO]
+i(191005, { ["modID"] = 3, });	-- Dreadful Helm Module
+i(191002, { ["modID"] = 3, });	-- Mystic Helm Module
+i(191003, { ["modID"] = 3, });	-- Venerated Helm Module
+i(191004, { ["modID"] = 3, });	-- Zenith Helm Module
+i(191006, { ["modID"] = 3, });	-- Dreadful Shoulder Module
+i(191007, { ["modID"] = 3, });	-- Mystic Shoulder Module
+i(191008, { ["modID"] = 3, });	-- Venerated Shoulder Module
+i(191009, { ["modID"] = 3, });	-- Zenith Shoulder Module
+i(191010, { ["modID"] = 3, });	-- Dreadful Chest Module
+i(191011, { ["modID"] = 3, });	-- Mystic Chest Module
+i(191012, { ["modID"] = 3, });	-- Venerated Chest Module
+i(191013, { ["modID"] = 3, });	-- Zenith Chest Module
+i(191014, { ["modID"] = 3, });	-- Dreadful Hand Module
+i(191015, { ["modID"] = 3, });	-- Mystic Hand Module
+i(191016, { ["modID"] = 3, });	-- Venerated Hand Module
+i(191017, { ["modID"] = 3, });	-- Zenith Hand Module
+i(191018, { ["modID"] = 3, });	-- Dreadful Leg Module
+i(191019, { ["modID"] = 3, });	-- Mystic Leg Module
+i(191020, { ["modID"] = 3, });	-- Venerated Leg Module
+i(191021, { ["modID"] = 3, });	-- Zenith Leg Module
+
+-- Tier 22 H [SotFO]
+i(191005, { ["modID"] = 5, });	-- Dreadful Helm Module
+i(191002, { ["modID"] = 5, });	-- Mystic Helm Module
+i(191003, { ["modID"] = 5, });	-- Venerated Helm Module
+i(191004, { ["modID"] = 5, });	-- Zenith Helm Module
+i(191006, { ["modID"] = 5, });	-- Dreadful Shoulder Module
+i(191007, { ["modID"] = 5, });	-- Mystic Shoulder Module
+i(191008, { ["modID"] = 5, });	-- Venerated Shoulder Module
+i(191009, { ["modID"] = 5, });	-- Zenith Shoulder Module
+i(191010, { ["modID"] = 5, });	-- Dreadful Chest Module
+i(191011, { ["modID"] = 5, });	-- Mystic Chest Module
+i(191012, { ["modID"] = 5, });	-- Venerated Chest Module
+i(191013, { ["modID"] = 5, });	-- Zenith Chest Module
+i(191014, { ["modID"] = 5, });	-- Dreadful Hand Module
+i(191015, { ["modID"] = 5, });	-- Mystic Hand Module
+i(191016, { ["modID"] = 5, });	-- Venerated Hand Module
+i(191017, { ["modID"] = 5, });	-- Zenith Hand Module
+i(191018, { ["modID"] = 5, });	-- Dreadful Leg Module
+i(191019, { ["modID"] = 5, });	-- Mystic Leg Module
+i(191020, { ["modID"] = 5, });	-- Venerated Leg Module
+i(191021, { ["modID"] = 5, });	-- Zenith Leg Module
+
+-- Tier 22 M [SotFO]
+i(191005, { ["modID"] = 6, });	-- Dreadful Helm Module
+i(191002, { ["modID"] = 6, });	-- Mystic Helm Module
+i(191003, { ["modID"] = 6, });	-- Venerated Helm Module
+i(191004, { ["modID"] = 6, });	-- Zenith Helm Module
+i(191006, { ["modID"] = 6, });	-- Dreadful Shoulder Module
+i(191007, { ["modID"] = 6, });	-- Mystic Shoulder Module
+i(191008, { ["modID"] = 6, });	-- Venerated Shoulder Module
+i(191009, { ["modID"] = 6, });	-- Zenith Shoulder Module
+i(191010, { ["modID"] = 6, });	-- Dreadful Chest Module
+i(191011, { ["modID"] = 6, });	-- Mystic Chest Module
+i(191012, { ["modID"] = 6, });	-- Venerated Chest Module
+i(191013, { ["modID"] = 6, });	-- Zenith Chest Module
+i(191014, { ["modID"] = 6, });	-- Dreadful Hand Module
+i(191015, { ["modID"] = 6, });	-- Mystic Hand Module
+i(191016, { ["modID"] = 6, });	-- Venerated Hand Module
+i(191017, { ["modID"] = 6, });	-- Zenith Hand Module
+i(191018, { ["modID"] = 6, });	-- Dreadful Leg Module
+i(191019, { ["modID"] = 6, });	-- Mystic Leg Module
+i(191020, { ["modID"] = 6, });	-- Venerated Leg Module
+i(191021, { ["modID"] = 6, });	-- Zenith Leg Module
+-- #endif

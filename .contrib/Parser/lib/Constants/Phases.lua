@@ -4,9 +4,12 @@ PHASE_ONE = 11;
 PHASE_ONE_DIREMAUL = 1101;
 PHASE_TWO = 12;
 PHASE_THREE = 13;
+PHASE_THREE_SILITHUS_EXPEDITION_QUESTS = PHASE_THREE;
 PHASE_FOUR = 14;
+PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS = 14;
 PHASE_FIVE = 15;
 PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS = PHASE_FIVE;
+PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS = PHASE_FIVE;
 PHASE_FIVE_WAR_EFFORT = 1501;
 PHASE_FIVE_GONG = 1502;
 PHASE_FIVE_WAR = 1503;
@@ -20,14 +23,19 @@ SOD_PHASE_ONE = 1605;
 SOD_PHASE_TWO = 1606;
 SOD_PHASE_THREE = 1607;
 SOD_PHASE_FOUR = 1608;
--- #if SEASON_OF_DISCOVERY
-PHASE_ONE_DIREMAUL = SOD_PHASE_FOUR;	-- Dire Maul actually came out with Phase 4 of SOD.
-PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS = SOD_PHASE_FOUR;	-- T0.5 Sets actually came out with Phase 4 of SOD.
--- #endif
 SOD_PHASE_FIVE = 1609;
 SOD_PHASE_SIX = 1610;
 SOD_PHASE_SEVEN = 1611;
 SOD_PHASE_EIGHT = 1612;
+-- #if SEASON_OF_DISCOVERY
+PHASE_ONE_DIREMAUL = SOD_PHASE_FOUR;	-- Dire Maul actually came out with Phase 4 of SOD.
+PHASE_TWO = SOD_PHASE_FOUR;	-- Azuregos, Lord Kazzak, and PVP Battlegrounds were immediately available with Phase 4 of SOD.
+PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS = SOD_PHASE_THREE;	-- Sunken Temple Class Quests came out with Phase 3 of SOD.
+PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS = SOD_PHASE_FOUR;	-- T0.5 Sets actually came out with Phase 4 of SOD.
+PHASE_SIX_SILITHYST = SOD_PHASE_FOUR;	-- The Silithyst Quests actually came out with Phase 4 of SOD.
+PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS = SOD_PHASE_FOUR;
+PHASE_THREE_SILITHUS_EXPEDITION_QUESTS = SOD_PHASE_FIVE;	-- CRIEVE NOTE: On SOD Phase 4, none of these quests were available.
+-- #endif
 
 -- TBC Classic Phases
 TBC_PHASE_ONE = 17;
@@ -66,7 +74,7 @@ WRATH_PHASE_FOUR_ELEMENTAL_INVASION = 3304;
 -- Cataclysm Classic Phases
 CATA_PHASE_ONE = 40;
 CATA_PHASE_RISE_OF_THE_ZANDALARI = 4001;	-- ZA/ZG [Per Cata Dev, this phase wasn't a big enough release to justify incrementing the build number]
-CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT = 41;	-- World Boss Loot was originally blue, they got upgraded to Epic later.
+CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT = 4001;	-- World Boss Loot was originally blue, they got upgraded to Epic later.
 CATA_PHASE_PREFIRELANDS_DAILIES = 41;	-- Not sure when the 5 extra dailies come out, probably Firelands.
 CATA_PHASE_RAGE_OF_THE_FIRELANDS = 41;	-- Firelands
 CATA_PHASE_HOUR_OF_TWILIGHT = 42;	-- Dragonsoul

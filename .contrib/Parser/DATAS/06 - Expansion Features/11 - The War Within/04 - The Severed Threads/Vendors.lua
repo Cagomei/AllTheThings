@@ -36,7 +36,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				},
 			}),
 			n(223750, {	-- Lady Vinazian <Severed Threads Quartermaster>
-				["coord"] = { 57.3, 42.5, AZJ_KAHET },
+				["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				["g"] = bubbleDownRep(FACTION_THE_SEVERED_THREADS, {
 					{		-- RENOWN 1 --
 					}, {	-- RENOWN 2 --
@@ -55,10 +55,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 						}),
 					}, {	-- RENOWN 5 --
-						i(218348, {	-- Thread-Bearer's Cloak
+						i(218348, {	-- Thread-Bearer's Cloak (COSMETIC!)
 							["cost"] = {{"c", KEJ, 565}},
 						}),
 					}, {	-- RENOWN 6 --
+						i(217894, {	-- Nerubian Pheromone Secreter
+							["cost"] = {{"c", KEJ, 450}},
+						}),
 					}, {	-- RENOWN 7 --
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --
@@ -68,16 +71,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}, {	-- RENOWN 13 --
 					}, {	-- RENOWN 14 --
 					}, {	-- RENOWN 15 --
-					}, {	-- RENOWN 16 --
 						i(222972, {	-- Jump Jump (PET!)
 							["cost"] = {{"c", KEJ, 2250}},
 						}),
+					}, {	-- RENOWN 16 --
+						i(218347, {	-- Thread-Bearer's Pauldrons (COSMETIC!)
+							["cost"] = {{"c", KEJ, 1125}},
+						}),
 					}, {	-- RENOWN 17 --
 						i(228705, {	-- Arachnoserum (TOY!)
-							["cost"] = {{"c", KEJ, 3940}},
-						}),
-						i(218347, {	-- Thread-Bearer's Pauldrons
-							["cost"] = {{"c", KEJ, 1125}},
+							["cost"] = {{"c", KEJ, 1750}},
 						}),
 					}, {	-- RENOWN 18 --
 					}, {	-- RENOWN 19 --
@@ -95,17 +98,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}, {	-- RENOWN 25 --
 					},
 				}),
-			}),
-			n(228184, {	-- Yamas the Provider <Pact Information & Supplies>
-				["coord"] = { 57.1, 42.5, AZJ_KAHET },
-				["g"] = {
-					i(226519, {	-- General's Expertise (TOY!)
-						["cost"] = {{"c", KEJ, 2250}},
-					}),
-					i(226520, {	-- Queen's Pheromone (CI!)
-						["cost"] = {{"c", KEJ, 1000000}},
-					}),
-				},
 			}),
 		}),
 	}),

@@ -381,6 +381,7 @@ for spellID,learnedAt in pairs({
 	[27832] = 300,	-- Sageblade
 	[16741] = 300,	-- Stronghold Gauntlets
 	[21161] = 300,	-- Sulfuron Hammer
+	[460460] = 300,	-- Sulfuron Hammer
 	[27587] = 300,	-- Thick Obsidian Breastplate
 	[16662] = 300,	-- Thorium Leggings
 	[27829] = 300,	-- Titanic Leggings
@@ -717,6 +718,7 @@ for spellID,learnedAt in pairs({
 	[24356] = 300,	-- Bloodvine Goggles
 	[24357] = 300,	-- Bloodvine Lens
 	[22795] = 300,	-- Core Marksman Rifle
+	[461710] = 300,	-- Fiery Core Sharpshooter Rifle
 	[22704] = 300,	-- Field Repair Bot 74A
 	[19833] = 300,	-- Flawless Arcanite Rifle
 	[22797] = 300,	-- Force Reactive Disk
@@ -1087,6 +1089,7 @@ for spellID,learnedAt in pairs({
 	[8762] = 160,	-- Silk Headband
 	[8483] = 160,	-- White Swashbuckler's Shirt
 	[3857] = 165,	-- Enchanter's Cowl
+	[439102] = 165,	-- Enchanter's Cowl
 	[8784] = 165,	-- Green Silk Armor
 	[8764] = 170,	-- Earthen Vest
 	[3871] = 170,	-- Formal White Shirt

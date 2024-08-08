@@ -141,6 +141,10 @@ local function GetCurrentMapID()
 		if name and name:len() > 0 then
 			zoneTexts[name] = 1;
 		end
+		local instanceName,instanceType = GetInstanceInfo();
+		if instanceType and instanceType ~= "none" then
+			zoneTexts[instanceName] = 1;
+		end
 		for mapID,remap in pairs(app.MapRemapping) do
 			substitutions = remap.areaIDs;
 			if substitutions then
@@ -842,12 +846,16 @@ app.CreateInstance = app.CreateClass("Instance", "instanceID", instanceFields,
 		return L.HEADER_DESCRIPTIONS[t.headerID];
 	end,
 }, (function(t)
-	local creatureID = t.creatureID;
-	if creatureID and creatureID < 0 then
-		t.headerID = creatureID;
-		t.creatureID = nil;
-		t.npcID = nil;
+	if t.headerID then
 		return true;
+	else
+		local creatureID = t.creatureID or t.npcID;
+		if creatureID and creatureID < 0 then
+			t.headerID = creatureID;
+			t.creatureID = nil;
+			t.npcID = nil;
+			return true;
+		end
 	end
 end));
 

@@ -1101,8 +1101,18 @@ profession(TAILORING, {
 					["name"] = "Dreamweave Circlet",
 					["recipeID"] = 12092
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Enchanter's Cowl",
+					["timeline"] = { "added 1.15.1" },
+					["recipeID"] = 439102
+				}),
+				-- #endif
 				{
 					["name"] = "Enchanter's Cowl",
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.1" },
+					-- #endif
 					["recipeID"] = 3857
 				},
 				{
@@ -1558,7 +1568,7 @@ profession(TAILORING, {
 					["name"] = "Runecloth Belt",
 					["recipeID"] = 18402
 				},
-				applyclassicphase(PHASE_FOUR, {
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, {
 					["name"] = "Runed Stygian Belt",
 					["recipeID"] = 24902,
 				}),
@@ -1774,7 +1784,7 @@ profession(TAILORING, {
 					["name"] = "Runecloth Pants",
 					["recipeID"] = 18438
 				},
-				applyclassicphase(PHASE_FOUR, {
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, {
 					["name"] = "Runed Stygian Leggings",
 					["recipeID"] = 24901,
 				}),
@@ -1869,7 +1879,7 @@ profession(TAILORING, {
 					["name"] = "Runecloth Boots",
 					["recipeID"] = 18423
 				},
-				applyclassicphase(PHASE_FOUR, {
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, {
 					["name"] = "Runed Stygian Boots",
 					["recipeID"] = 24903,
 				}),
@@ -6338,9 +6348,9 @@ itemrecipe("Pattern: Flarecore Leggings", 19220, 23667, PHASE_THREE);
 itemrecipe("Pattern: Bloodvine Vest", 19764, 24091, PHASE_FOUR);
 itemrecipe("Pattern: Bloodvine Leggings", 19765, 24092, PHASE_FOUR);
 itemrecipe("Pattern: Bloodvine Boots", 19766, 24093, PHASE_FOUR);
-itemrecipe("Pattern: Runed Stygian Leggings", 20546, 24901, PHASE_FOUR);
-itemrecipe("Pattern: Runed Stygian Boots", 20547, 24903, PHASE_FOUR);
-itemrecipe("Pattern: Runed Stygian Belt", 20548, 24902, PHASE_FOUR);
+itemrecipe("Pattern: Runed Stygian Leggings", 20546, 24901, PHASE_THREE_SILITHUS_EXPEDITION_QUESTS);
+itemrecipe("Pattern: Runed Stygian Boots", 20547, 24903, PHASE_THREE_SILITHUS_EXPEDITION_QUESTS);
+itemrecipe("Pattern: Runed Stygian Belt", 20548, 24902, PHASE_THREE_SILITHUS_EXPEDITION_QUESTS);
 
 itemrecipe("Pattern: Enchanted Runecloth Bag", 22308, 27659, PHASE_FIVE);
 itemrecipe("Pattern: Big Bag of Enchantment", 22309, 27660, PHASE_FIVE);

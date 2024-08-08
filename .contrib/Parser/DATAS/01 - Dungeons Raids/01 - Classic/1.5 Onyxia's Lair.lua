@@ -13,6 +13,7 @@ local REMOVED_WITH_RERELEASE = {
 local REMOVED_WITH_CATA = { ADDED_1_0_1, REMOVED_4_0_3 };
 
 -- Helms were moved to Nefarian with 3.2.2
+-- CRIEVE NOTE: In SOD, these are completely gone.
 local BLOODFANG_HOOD = i(16908);	-- Bloodfang Hood
 local DRAGONSTALKERS_HELM = i(16939);	-- Dragonstalker's Helm
 local HALO_OF_TRANSCENDENCE = i(16921);	-- Halo of Transcendence
@@ -58,7 +59,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			6502,	-- Alliance Attunement Quest
 			6602,	-- Horde Attunement Quest
 		},
-		["cost"] = { { "i", 16309, 1 } },	-- Drakefire Amulet
+		["cost"] = {
+			-- #if SEASON_OF_DISCOVERY
+			{ "i", 226500, 1 },	-- Chipped Drakefire Amulet
+			-- #endif
+			{ "i", 16309, 1 },	-- Drakefire Amulet
+		},
 		-- #endif
 		["coord"] = { 52.3, 76.2, DUSTWALLOW_MARSH },
 		["mapID"] = ONYXIAS_LAIR,
@@ -705,10 +711,115 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 60,
 						}),
 						-- #endif
-						i(17966),	-- Onyxia Hide Backpack (Bag)
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227532, {	-- Incandescent Hood
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227755, {	-- Molten Scaled Helm
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227764, {	-- Scorched Core Helm
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227537, {	-- Incandescent Shoulderpads
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227752, {	-- Molten Scaled Shoulderpads
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227762, {	-- Scorched Core Shoulderpads
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227535, {	-- Incandescent Robe
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227758, {	-- Molten Scaled Chest
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227766, {	-- Scorched Core Chest
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227531, {	-- Incandescent Bindings
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227750, {	-- Molten Scaled Bindings
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227760, {	-- Scorched Core Bindings
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227533, {	-- Incandescent Gloves
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227756, {	-- Molten Scaled Gloves
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227759, {	-- Scorched Core Gloves
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227530, {	-- Incandescent Belt
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227751, {	-- Molten Scaled Belt
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227761, {	-- Scorched Core Belt
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227534, {	-- Incandescent Leggings
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227754, {	-- Molten Scaled Leggings
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227763, {	-- Scorched Core Leggings
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227536, {	-- Incandescent Boots
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227757, {	-- Molten Scaled Boots
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227765, {	-- Scorched Core Boots
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228992, {	-- Onyxia Hide Backpack (Bag)
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(17966, {	-- Onyxia Hide Backpack (Bag)
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 						i(17068),	-- Deathbringer
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228162, {	-- Deceit
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(228166, {	-- Key to the City
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(17075),	-- Vis'kag the Bloodletter
-						i(17067),	-- Ancient Cornerstone Grimoire
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228955, {	-- Ancient Cornerstone Grimoire
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(17067, {	-- Ancient Cornerstone Grimoire
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228165, {	-- Dragonslayer's Javelin
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						BLOODFANG_HOOD,
 						DRAGONSTALKERS_HELM,
 						HALO_OF_TRANSCENDENCE,
@@ -718,10 +829,36 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						NEMESIS_SKULLCAP,
 						NETHERWIND_CROWN,
 						STORMRAGE_COVER,
-						i(18205),	-- Eskhandar's Collar
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228759, {	-- Eskhandar's Collar
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(18205, {	-- Eskhandar's Collar
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 						i(17078),	-- Sapphiron Drape
 						i(18813),	-- Ring of Binding
-						i(17064),	-- Shard of the Scale
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228163, {	-- Broodmother's Brooch
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(228188, {	-- Prestor's Hairpin
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228298, {	-- Shard of the Scale
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(17064, {	-- Shard of the Scale
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 					})),
 			-- #if AFTER WRATH
 				},
@@ -746,4 +883,7 @@ for _,item in pairs({
 	for key,value in pairs(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS) do
 		item[key] = nil;
 	end
+	-- #if SEASON_OF_DISCOVERY
+	item.timeline = { "removed 1.15.3" };
+	-- #endif
 end

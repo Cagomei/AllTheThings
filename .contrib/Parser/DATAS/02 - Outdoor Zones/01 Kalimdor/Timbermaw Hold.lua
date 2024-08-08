@@ -194,12 +194,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84777, {	-- Feathers for Nafien
+					["qg"] = 15395,	-- Nafien
+					["sourceQuest"] = 8460,	-- Timbermaw Ally
+					["coord"] = { 64.8, 8.2, FELWOOD },
+					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
+					["timeline"] = { "added 1.15.3" },
+					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
+					["repeatable"] = true,
+					["lvl"] = 45,
+				})),
+				-- #endif
 				q(8467, {	-- Feathers for Nafien
 					["qg"] = 15395,	-- Nafien
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
 					["coord"] = { 64.8, 8.2, FELWOOD },
 					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3,
+						-- #endif
+					},
 					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
 					["repeatable"] = true,
 					["lvl"] = 45,
@@ -349,6 +367,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
+						objective(1, {	-- 0/6 Deadwood Warrior slain
+							["provider"] = { "n", 7153 },	-- Deadwood Warrior
+						}),
+						objective(2, {	-- 0/6 Deadwood Pathfinder slain
+							["provider"] = { "n", 7155 },	-- Deadwood Pathfinder
+						}),
+						objective(3, {	-- 0/6 Deadwood Gardener slain
+							["provider"] = { "n", 7154 },	-- Deadwood Gardener
+						}),
 						i(21311, {	-- Earth Warder's Vest
 							["timeline"] = { REMOVED_4_0_3 },
 						}),

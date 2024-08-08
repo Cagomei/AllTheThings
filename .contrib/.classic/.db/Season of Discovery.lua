@@ -20,7 +20,7 @@ local OnTooltipFor_ACA_SDL = [[function(t, tooltipInfo)
 			-- #if BEFORE 1.15.1
 			addRepInfo(tooltipInfo, reputation, "A Waylaid Shipment [iLvl 10]", 100, ]] .. FRIENDLY .. [[);
 			-- #endif
-			
+
 			tinsert(tooltipInfo, {
 				left = "PROTIP: Save higher iLvl Supply Shipments until later!",
 				r=1,g=0.1,b=0.1,
@@ -149,7 +149,7 @@ local OnTooltip_EMERALD_WARDENS = [[function(t, tooltipInfo)
 		addRepInfo(tooltipInfo, reputation, "Incursion Quests (Feralas & Hinterlands)", 100, ]] .. EXALTED .. [[);
 		addRepInfo(tooltipInfo, reputation, "Incursion Quests (Duskwood & Ashenvale)", 75, ]] .. EXALTED .. [[);
 		if _.GameBuildVersion >= 11503 then addRepInfo(tooltipInfo, reputation, "Incursion Resource Quests", 100, ]] .. EXALTED .. [[); end
-		
+
 		local fight = t.fight;
 		if not fight then
 			fight = _.SearchForField("questID", 82068)[1];
@@ -209,7 +209,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 		["OnInit"] = [[function(t) _.ResolveQuestData(t); local rep = t.factionID; for index,child in ipairs(t.g) do if child.minReputation then child.minReputation[1] = rep; end end return t; end]],
 		["groups"] = bubbleDownClassicRep(2586, {	-- ACA / DSL
 			{	-- Neutral
-				
+
 			},
 			{	-- Friendly
 				i(211382, {	-- Small Courier Satchel
@@ -224,7 +224,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				i(212589, {	-- Courier Treads
 					["cost"] = 2214,	-- 22s 14c
 				}),
-				
+
 				-- After 2023-12-12 Hotfix, Runes were moved from Honored to Friendly with a reduced price.
 				i(211387, {	-- Rune of Beckoning Light
 					["classes"] = { PALADIN },
@@ -2535,7 +2535,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 							recipe(429308),	-- Engrave Bracers - Molten Armor
 						},
 					}),
-					
+
 					i(221400, {	-- Emerald Chain Shoulders
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
@@ -2545,7 +2545,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221405, {	-- Emerald Chain Boots
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
-					
+
 					i(221381, {	-- Emerald Dream Pauldrons
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
@@ -2555,7 +2555,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221379, {	-- Emerald Dream Sabatons
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
-					
+
 					i(221416, {	-- Emerald Dreamkeeper Shoulders
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
@@ -2565,7 +2565,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221415, {	-- Emerald Dreamkeeper Boots
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
-					
+
 					i(221431, {	-- Emerald Enchanted Shoulders
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
@@ -2575,7 +2575,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221426, {	-- Emerald Enchanted Boots
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
-					
+
 					i(221386, {	-- Emerald Encrusted Spaulders
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
@@ -2585,7 +2585,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221387, {	-- Emerald Encrusted Plate Boots
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
-					
+
 					i(221399, {	-- Emerald Laden Shoulders
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
@@ -2595,7 +2595,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221394, {	-- Emerald Laden Boots
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
-					
+
 					i(221411, {	-- Emerald Leather Shoulders
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
@@ -2605,7 +2605,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221409, {	-- Emerald Leather Sabatons
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
-					
+
 					i(221392, {	-- Emerald Scalemail Shoulders
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
@@ -2615,7 +2615,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221393, {	-- Emerald Scalemail Boots
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
-					
+
 					i(221424, {	-- Emerald Watcher Shoulders
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
@@ -2625,7 +2625,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221420, {	-- Emerald Watcher Boots
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
-					
+
 					i(221432, {	-- Emerald Woven Mantle
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
@@ -2635,7 +2635,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221438, {	-- Emerald Woven Boots
 						["cost"] = 33750,	-- 3g 37s 50c
 					}),
-					
+
 					i(224004, {	-- Emerald Ring
 						["cost"] = 4761,	-- 47s 61c
 					}),
@@ -2653,7 +2653,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(213407, {	-- Catnip
 						["cost"] = 5625,	-- 56s 25c
 					}),
-					
+
 					i(221402, {	-- Emerald Chain Helmet
 						["cost"] = 67500,	-- 6g 75s
 					}),
@@ -2663,7 +2663,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221401, {	-- Emerald Chain Leggings
 						["cost"] = 67500,	-- 6g 75s
 					}),
-					
+
 					i(221376, {	-- Emerald Dream Helm
 						["cost"] = 67500,	-- 6g 75s
 					}),
@@ -2673,7 +2673,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221377, {	-- Emerald Dream Legplates
 						["cost"] = 67500,	-- 6g 75s
 					}),
-					
+
 					i(221413, {	-- Emerald Dreamkeeper Helm
 						["cost"] = 67500,	-- 6g 75s
 						["classes"] = { DRUID },
@@ -2684,7 +2684,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221414, {	-- Emerald Dreamkeeper Pants
 						["cost"] = 67500,	-- 6g 75s
 					}),
-					
+
 					i(221425, {	-- Emerald Enchanted Circlet
 						["cost"] = 67500,	-- 6g 75s
 					}),
@@ -2694,7 +2694,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221429, {	-- Emerald Enchanted Pants
 						["cost"] = 67500,	-- 6g 75s
 					}),
-					
+
 					i(221384, {	-- Emerald Encrusted Helmet
 						["cost"] = 67500,	-- 6g 75s
 					}),
@@ -2704,7 +2704,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221385, {	-- Emerald Encrusted Legplates
 						["cost"] = 67500,	-- 6g 75s
 					}),
-					
+
 					i(221397, {	-- Emerald Laden Helmet
 						["cost"] = 67500,	-- 6g 75s
 					}),
@@ -2714,7 +2714,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221398, {	-- Emerald Laden Leggings
 						["cost"] = 67500,	-- 6g 75s
 					}),
-					
+
 					i(221408, {	-- Emerald Leather Helm
 						["cost"] = 67500,	-- 6g 75s
 					}),
@@ -2724,7 +2724,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221410, {	-- Emerald Leather Pants
 						["cost"] = 67500,	-- 6g 75s
 					}),
-					
+
 					i(221391, {	-- Emerald Scalemail Helmet
 						["cost"] = 67500,	-- 6g 75s
 					}),
@@ -2734,7 +2734,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221388, {	-- Emerald Scalemail Leggings
 						["cost"] = 67500,	-- 6g 75s
 					}),
-					
+
 					i(221422, {	-- Emerald Watcher Helm
 						["cost"] = 67500,	-- 6g 75s
 					}),
@@ -2744,7 +2744,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221423, {	-- Emerald Watcher Leggings
 						["cost"] = 67500,	-- 6g 75s
 					}),
-					
+
 					i(221437, {	-- Emerald Woven Circlet
 						["cost"] = 67500,	-- 6g 75s
 					}),
@@ -2754,7 +2754,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(221435, {	-- Emerald Woven Pants
 						["cost"] = 67500,	-- 6g 75s
 					}),
-					
+
 					i(221193, {	-- Emerald Ring
 						["cost"] = 63512,	-- 6g 35s 12c
 					}),
@@ -2827,7 +2827,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_TWO, recipe(410060)),	-- Engrave Boots - Dreamstate
 			applyclassicphase(SOD_PHASE_TWO, recipe(424765)),	-- Engrave Boots - King of the Jungle
 			applyclassicphase(SOD_PHASE_TWO, recipe(410027)),	-- Engrave Boots - Survival Instincts
-			
+
 			-- Phase 3
 			applyclassicphase(SOD_PHASE_THREE, recipe(431468)),	-- Engrave Bracers - Efflorescence
 			applyclassicphase(SOD_PHASE_THREE, recipe(416051)),	-- Engrave Bracers - Elune's Fires
@@ -2835,11 +2835,14 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_THREE, recipe(431451)),	-- Engrave Helm - Gale Winds
 			applyclassicphase(SOD_PHASE_THREE, recipe(431447)),	-- Engrave Helm - Gore
 			applyclassicphase(SOD_PHASE_THREE, recipe(431449)),	-- Engrave Helm - Improved Barkskin
-			
+
 			-- Phase 4
 			applyclassicphase(SOD_PHASE_FOUR, recipe(439765)),	-- Engrave Cloak - Improved Swipe
 			applyclassicphase(SOD_PHASE_FOUR, recipe(439767)),	-- Engrave Cloak - Tree of Life
 			applyclassicphase(SOD_PHASE_FOUR, recipe(439770)),	-- Engrave Cloak - Starfall
+			applyclassicphase(SOD_PHASE_FOUR, recipe(453703, {	-- Engrave Ring - Feral Combat Specialization
+				["timeline"] = { "added 1.15.3" },
+			})),
 		}),
 		classHeader(HUNTER, {
 			-- Phase 1
@@ -2855,7 +2858,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(410111),	-- Engrave Pants - Kill Command / Kill Shot
 			recipe(425760),	-- Engrave Pants - Serpent Spread
 			recipe(416091),	-- Engrave Pants - Sniper Training
-			
+
 			-- Phase 2
 			applyclassicphase(SOD_PHASE_TWO, recipe(410114)),	-- Engrave Belt - Expose Weakness
 			applyclassicphase(SOD_PHASE_TWO, recipe(416086)),	-- Engrave Belt - Melee Specialist
@@ -2863,7 +2866,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_TWO, recipe(410116)),	-- Engrave Boots - Dual Wield Specialization
 			applyclassicphase(SOD_PHASE_TWO, recipe(416089)),	-- Engrave Boots - Invigoration / Wyvern Strike
 			applyclassicphase(SOD_PHASE_TWO, recipe(410118)),	-- Engrave Boots - Trap Launcher
-			
+
 			-- Phase 3
 			applyclassicphase(SOD_PHASE_THREE, recipe(431601)),	-- Engrave Bracers - Focus Fire
 			applyclassicphase(SOD_PHASE_THREE, recipe(431611)),	-- Engrave Bracers - T.N.T.
@@ -2871,7 +2874,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_THREE, recipe(416085)),	-- Engrave Helm - Lock and Load
 			applyclassicphase(SOD_PHASE_THREE, recipe(416083)),	-- Engrave Helm - Catlike Reflexes
 			applyclassicphase(SOD_PHASE_THREE, recipe(416090)),	-- Engrave Helm - Rapid Killing
-			
+
 			-- Phase 4
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440560)),	-- Engrave Cloak - Improved Volley
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440557)),	-- Engrave Cloak - Resourcefulness
@@ -2891,7 +2894,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(425170),	-- Engrave Pants - Icy Veins
 			recipe(401768),	-- Engrave Pants - Living Flame
 			recipe(415939),	-- Engrave Pants - Mass Regeneration
-			
+
 			-- Phase 2
 			applyclassicphase(SOD_PHASE_TWO, recipe(401762)),	-- Engrave Belt - Frostfire Bolt
 			applyclassicphase(SOD_PHASE_TWO, recipe(401749)),	-- Engrave Belt - Hot Streak
@@ -2900,7 +2903,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_TWO, recipe(401752)),	-- Engrave Boots - Brain Freeze
 			applyclassicphase(SOD_PHASE_TWO, recipe(425189)),	-- Engrave Boots - Chronostatic Preservation
 			applyclassicphase(SOD_PHASE_TWO, recipe(415934)),	-- Engrave Boots - Spell Power
-			
+
 			-- Phase 3
 			applyclassicphase(SOD_PHASE_THREE, recipe(429311)),	-- Engrave Bracers - Balefire Bolt
 			applyclassicphase(SOD_PHASE_THREE, recipe(429309)),	-- Engrave Bracers - Displacement
@@ -2908,7 +2911,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_THREE, recipe(401754)),	-- Engrave Helm - Advanced Warding
 			applyclassicphase(SOD_PHASE_THREE, recipe(429304)),	-- Engrave Helm - Deep Freeze
 			applyclassicphase(SOD_PHASE_THREE, recipe(429306)),	-- Engrave Helm - Temporal Anomaly
-			
+
 			-- Phase 4
 			applyclassicphase(SOD_PHASE_FOUR, recipe(401722)),	-- Engrave Cloak - Arcane Barrage
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440858)),	-- Engrave Cloak - Frozen Orb
@@ -2928,7 +2931,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(416037),	-- Engrave Pants - Exorcist / Aura Mastery
 			recipe(410011),	-- Engrave Pants - Inspiration Exemplar
 			recipe(425621),	-- Engrave Pants - Rebuke
-			
+
 			-- Phase 2
 			applyclassicphase(SOD_PHASE_TWO, recipe(426175)),	-- Engrave Belt - Enlightened Judgements
 			applyclassicphase(SOD_PHASE_TWO, recipe(426180)),	-- Engrave Belt - Infusion of Light
@@ -2936,7 +2939,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_TWO, recipe(416035)),	-- Engrave Boots - Guarded by the Light
 			applyclassicphase(SOD_PHASE_TWO, recipe(416028)),	-- Engrave Boots - Sacred Shield
 			applyclassicphase(SOD_PHASE_TWO, recipe(416031)),	-- Engrave Boots - The Art of War
-			
+
 			-- Phase 3
 			applyclassicphase(SOD_PHASE_THREE, recipe(410013)),	-- Engrave Bracers - Hammer of the Righteous
 			applyclassicphase(SOD_PHASE_THREE, recipe(429261)),	-- Engrave Bracers - Improved Hammer of Wrath
@@ -2945,7 +2948,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_THREE, recipe(429251)),	-- Engrave Helm - Fanaticism
 			applyclassicphase(SOD_PHASE_THREE, recipe(429247)),	-- Engrave Helm - Improved Sanctuary
 			applyclassicphase(SOD_PHASE_THREE, recipe(429249)),	-- Engrave Helm - Wrath
-			
+
 			-- Phase 4
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440792)),	-- Engrave Cloak - Righteous Vengeance
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440788)),	-- Engrave Cloak - Shield of Righteousness
@@ -2965,7 +2968,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(425213),	-- Engrave Pants - Power Word: Barrier
 			recipe(402848),	-- Engrave Pants - Prayer of Mending
 			recipe(402854),	-- Engrave Pants - Shared Pain
-			
+
 			-- Phase 2
 			applyclassicphase(SOD_PHASE_TWO, recipe(425309)),	-- Engrave Belt - Empowered Renew
 			applyclassicphase(SOD_PHASE_TWO, recipe(431663)),	-- Engrave Belt - Mind Spike
@@ -2973,7 +2976,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_TWO, recipe(425314)),	-- Engrave Boots - Dispersion
 			applyclassicphase(SOD_PHASE_TWO, recipe(402855)),	-- Engrave Boots - Pain Suppression
 			applyclassicphase(SOD_PHASE_TWO, recipe(425312)),	-- Engrave Boots - Spirit of the Redeemer
-			
+
 			-- Phase 3
 			applyclassicphase(SOD_PHASE_THREE, recipe(431673)),	-- Engrave Bracers - Despair
 			applyclassicphase(SOD_PHASE_THREE, recipe(431669)),	-- Engrave Bracers - Surge of Light
@@ -2981,7 +2984,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_THREE, recipe(431650)),	-- Engrave Helm - Divine Aegis
 			applyclassicphase(SOD_PHASE_THREE, recipe(402864)),	-- Engrave Helm - Eye of the Void
 			applyclassicphase(SOD_PHASE_THREE, recipe(415991)),	-- Engrave Helm - Pain and Suffering
-			
+
 			-- Phase 4
 			applyclassicphase(SOD_PHASE_FOUR, recipe(402853)),	-- Engrave Cloak - Binding Heal
 			applyclassicphase(SOD_PHASE_FOUR, recipe(402850)),	-- Engrave Cloak - Soul Warding
@@ -3002,7 +3005,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(400099),	-- Engrave Pants - Blade Dance
 			--recipe(401488),	-- Engrave Pants - Cutty's Rune [This may be NYI?]
 			recipe(400102),	-- Engrave Pants - Envenom
-			
+
 			-- Phase 2
 			applyclassicphase(SOD_PHASE_TWO, recipe(425102)),	-- Engrave Belt - Poisoned Knife
 			applyclassicphase(SOD_PHASE_TWO, recipe(400101)),	-- Engrave Belt - Shadowstep
@@ -3010,7 +3013,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_TWO, recipe(425103)),	-- Engrave Boots - Master of Subtlety
 			applyclassicphase(SOD_PHASE_TWO, recipe(400093)),	-- Engrave Boots - Rolling with the Punches
 			applyclassicphase(SOD_PHASE_TWO, recipe(415926)),	-- Engrave Boots - Waylay
-			
+
 			-- Phase 3
 			applyclassicphase(SOD_PHASE_THREE, recipe(432299)),	-- Engrave Bracers - Carnage
 			applyclassicphase(SOD_PHASE_THREE, recipe(432297)),	-- Engrave Bracers - Cut to the Chase
@@ -3018,7 +3021,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_THREE, recipe(432293)),	-- Engrave Helm - Combat Potency
 			applyclassicphase(SOD_PHASE_THREE, recipe(432291)),	-- Engrave Helm - Focused Attacks
 			applyclassicphase(SOD_PHASE_THREE, recipe(432295)),	-- Engrave Helm - Honor Among Thieves
-			
+
 			-- Phase 4
 			applyclassicphase(SOD_PHASE_FOUR, recipe(415922)),	-- Engrave Cloak - Blunderbuss
 			applyclassicphase(SOD_PHASE_FOUR, recipe(415918)),	-- Engrave Cloak - Crimson Tempest
@@ -3038,7 +3041,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(410101),	-- Engrave Pants - Earth Shield
 			recipe(425343),	-- Engrave Pants - Shamanistic Rage / Greater Ghost Wolf
 			recipe(410107),	-- Engrave Pants - Way of Earth
-			
+
 			-- Phase 2
 			applyclassicphase(SOD_PHASE_TWO, recipe(410093)),	-- Engrave Belt - Fire Nova
 			applyclassicphase(SOD_PHASE_TWO, recipe(410100)),	-- Engrave Belt - Maelstrom Weapon
@@ -3046,7 +3049,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_TWO, recipe(425883)),	-- Engrave Boots - Ancestral Awakening
 			applyclassicphase(SOD_PHASE_TWO, recipe(425882)),	-- Engrave Boots - Decoy Totem
 			applyclassicphase(SOD_PHASE_TWO, recipe(410103)),	-- Engrave Boots - Spirit of the Alpha
-			
+
 			-- Phase 3
 			applyclassicphase(SOD_PHASE_THREE, recipe(432241)),	-- Engrave Bracers - Overcharged
 			applyclassicphase(SOD_PHASE_THREE, recipe(410105)),	-- Engrave Bracers - Riptide
@@ -3055,7 +3058,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_THREE, recipe(416066)),	-- Engrave Helm - Burn
 			applyclassicphase(SOD_PHASE_THREE, recipe(416055)),	-- Engrave Helm - Mental Dexterity
 			applyclassicphase(SOD_PHASE_THREE, recipe(432234)),	-- Engrave Helm - Tidal Waves
-			
+
 			-- Phase 4
 			applyclassicphase(SOD_PHASE_FOUR, recipe(416062)),	-- Engrave Cloak - Coherence
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440630)),	-- Engrave Cloak - Feral Spirit
@@ -3075,7 +3078,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(425476),	-- Engrave Pants - Demonic Pact
 			recipe(416008),	-- Engrave Pants - Everlasting Affliction
 			recipe(416015),	-- Engrave Pants - Incinerate
-			
+
 			-- Phase 2
 			applyclassicphase(SOD_PHASE_TWO, recipe(426445)),	-- Engrave Belt - Grimoire of Synergy
 			applyclassicphase(SOD_PHASE_TWO, recipe(426443)),	-- Engrave Belt - Invocation
@@ -3083,7 +3086,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_TWO, recipe(416017)),	-- Engrave Boots - Dance of the Wicked
 			applyclassicphase(SOD_PHASE_TWO, recipe(416014)),	-- Engrave Boots - Demonic Knowledge
 			applyclassicphase(SOD_PHASE_TWO, recipe(426467)),	-- Engrave Boots - Shadowflame
-			
+
 			-- Phase 3
 			applyclassicphase(SOD_PHASE_THREE, recipe(431758)),	-- Engrave Bracers - Immolation Aura
 			applyclassicphase(SOD_PHASE_THREE, recipe(431756)),	-- Engrave Bracers - Summon Felguard
@@ -3091,7 +3094,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_THREE, recipe(431745)),	-- Engrave Helm - Backdraft
 			applyclassicphase(SOD_PHASE_THREE, recipe(431743)),	-- Engrave Helm - Pandemic
 			applyclassicphase(SOD_PHASE_THREE, recipe(426470)),	-- Engrave Helm - Vengeance
-			
+
 			-- Phase 4
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440922)),	-- Engrave Cloak - Decimation
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440926)),	-- Engrave Cloak - Infernal Armor
@@ -3111,7 +3114,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(425446),	-- Engrave Pants - Consumed by Rage
 			recipe(425447),	-- Engrave Pants - Frenzied Assault
 			recipe(403476),	-- Engrave Pants - Furious Thunder
-			
+
 			-- Phase 2
 			applyclassicphase(SOD_PHASE_TWO, recipe(416004)),	-- Engrave Belt - Blood Surge
 			applyclassicphase(SOD_PHASE_TWO, recipe(409163)),	-- Engrave Belt - Focused Rage
@@ -3119,7 +3122,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_TWO, recipe(403467)),	-- Engrave Boots - Enraged Regeneration
 			applyclassicphase(SOD_PHASE_TWO, recipe(403472)),	-- Engrave Boots - Intervene
 			applyclassicphase(SOD_PHASE_TWO, recipe(426491)),	-- Engrave Boots - Rallying Cry
-			
+
 			-- Phase 3
 			applyclassicphase(SOD_PHASE_THREE, recipe(416002)),	-- Engrave Boots - Gladiator Stance
 			applyclassicphase(SOD_PHASE_THREE, recipe(427081)),	-- Engrave Bracers - Rampage
@@ -3128,12 +3131,70 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_THREE, recipe(427080)),	-- Engrave Helm - Shield Mastery
 			applyclassicphase(SOD_PHASE_THREE, recipe(427076)),	-- Engrave Helm - Taste for Blood
 			applyclassicphase(SOD_PHASE_THREE, recipe(427078)),	-- Engrave Helm - Vigilance
-			
+
 			-- Phase 4
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440492)),	-- Engrave Cloak - Fresh Meat
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440496)),	-- Engrave Cloak - Shockwave
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440494)),	-- Engrave Cloak - Sudden Death
 		}),
+
+		-- Non-Class Specific Runes
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453695, {	-- Engrave Ring - Arcane Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { HUNTER, MAGE, DRUID },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453688, {	-- Engrave Ring - Axe Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, PALADIN, HUNTER, SHAMAN },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453690, {	-- Engrave Ring - Dagger Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(459313, {	-- Engrave Ring - Defense Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, PALADIN, ROGUE, SHAMAN, WARLOCK, DRUID },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453696, {	-- Engrave Ring - Fire Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { HUNTER, SHAMAN, MAGE, WARLOCK },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453691, {	-- Engrave Ring - Fist Weapon Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, HUNTER, SHAMAN, ROGUE, DRUID },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453697, {	-- Engrave Ring - Frost Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { HUNTER, SHAMAN, MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453702, {	-- Engrave Ring - Holy Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { PALADIN, PRIEST },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453689, {	-- Engrave Ring - Mace Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, PALADIN, PRIEST, SHAMAN, ROGUE, DRUID },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453698, {	-- Engrave Ring - Nature Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { HUNTER, ROGUE, SHAMAN, DRUID },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453694, {	-- Engrave Ring - Pole Weapon Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, PALADIN, HUNTER, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453692, {	-- Engrave Ring - Ranged Weapon Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, HUNTER, ROGUE },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453700, {	-- Engrave Ring - Shadow Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { PRIEST, WARLOCK },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453635, {	-- Engrave Ring - Sword Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, PALADIN, HUNTER, MAGE, WARLOCK, ROGUE },
+		})),
 	}),
 	n(createHeader({	-- Soul Brokers
 		readable = "SOD - Soul Brokers",
@@ -3187,7 +3248,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_THREE, i(221978, {	-- Explorer's Soul
 				["description"] = "Casting Drain Soul on any mob will reward you with this.",
 				["spellID"] = 445459,	-- Explorer Imp
-				["f"] = RECIPE,
+				["f"] = RECIPES,
 			})),
 			i(205020, {	-- Pure Soul Shard
 				["description"] = "Casting Drain Soul on any critter will reward you with this.",
@@ -3218,6 +3279,128 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 		},
 	}),
+	applyclassicphase(SOD_PHASE_FOUR, n(createHeader({	-- Squire Training
+		readable = "SOD - PALADIN - Squire Training",
+		icon = 237377,
+		text = {
+			en = "Squire Training",
+		},
+		description = {
+			en = "Starting at level 50, Paladins can complete a quest chain in Western Plaguelands that will give them a Relic that calls forth their own personal Squire. This Squire can level up by fighting in combat as well as by being healed by the Paladin's spells. (Get into combat and just spam rank 1 Flash of Light while he attacks the mobs.)",
+		},
+	}), {
+		["sourceQuest"] = 83936,	-- Dalton's Quest
+		["timeline"] = { "added 1.15.3" },
+		["classes"] = { PALADIN },
+		["lvl"] = 50,
+		["groups"] = {
+			n(createHeader({	-- Inspiration Rank One
+				readable = "SOD - PALADIN - Squire Training - Inspiration Rank One",
+				icon = "Interface\\CURSOR\\Attack",
+				text = {
+					en = "Inspiration Rank One",
+				},
+				description = {
+					en = "After receiving your squire, summon him forth using the Relic and then level him up by getting into combat and keeping him alive.",
+				},
+			}), {
+				["providers"] = {
+					{ "i", 226122 },	-- Dalton's Horn (Rank 1)
+					{ "n", 227673 },	-- <Player>'s Squire (Rank 1)
+				},
+				["questID"] = 84416,	-- Inspiration Rank One HQT
+				["sourceQuest"] = 83936,	-- Dalton's Quest
+			}),
+			q(83936, {	-- A Lesson in Violence
+				["qg"] = 227673,	-- <Player>'s Squire (Rank 1)
+				["sourceQuest"] = 84416,	-- Inspiration Rank One HQT
+				["timeline"] = { "added 1.15.3" },
+				["classes"] = { PALADIN },
+				["lvl"] = 50,
+				["groups"] = {
+					i(226523),	-- Dalton's Horn (Rank 2)
+				},
+			}),
+			n(createHeader({	-- Inspiration Rank Two
+				readable = "SOD - PALADIN - Squire Training - Inspiration Rank Two",
+				icon = "Interface\\CURSOR\\Attack",
+				text = {
+					en = "Inspiration Rank Two",
+				},
+			}), {
+				["providers"] = {
+					{ "i", 226523 },	-- Dalton's Horn (Rank 2)
+					{ "n", 227464 },	-- <Player>'s Squire (Rank 2)
+				},
+				["questID"] = 84417,	-- Inspiration Rank Two HQT
+				["sourceQuest"] = 83936,	-- A Lesson in Violence
+			}),
+			q(84008, {	-- A Lesson in Grace
+				["qg"] = 227464,	-- <Player>'s Squire (Rank 2)
+				["sourceQuest"] = 84417,	-- Inspiration Rank Two HQT
+				["timeline"] = { "added 1.15.3" },
+				["classes"] = { PALADIN },
+				["lvl"] = 50,
+				["groups"] = {
+					i(226545),	-- Dalton's Horn (Rank 3)
+				},
+			}),
+			q(84017, {	-- A Time to Kill
+				["qg"] = 227674,	-- <Player>'s Squire (Rank 3)
+				["sourceQuest"] = 84008,	-- A Lesson in Grace
+				["timeline"] = { "added 1.15.3" },
+				["maps"] = { EASTERN_PLAGUELANDS },
+				["classes"] = { PALADIN },
+				["lvl"] = 50,
+				["groups"] = {
+					objective(1, {	-- 0/1 Arkonos Found
+						["provider"] = { "n", 227985 },	-- Arkonos the Cursed
+						["coord"] = { 86.8, 39.4, EASTERN_PLAGUELANDS },
+					}),
+				},
+			}),
+			q(84125, {	-- Close Enough To Touch
+				["qg"] = 227674,	-- <Player>'s Squire (Rank 3)
+				["sourceQuest"] = 84017,	-- A Time to Kill
+				["coord"] = { 86.8, 39.4, EASTERN_PLAGUELANDS },
+				["timeline"] = { "added 1.15.3" },
+				["classes"] = { PALADIN },
+				["lvl"] = 50,
+				["groups"] = {
+					objective(1, {	-- 0/1 Scourge Shadow Scalpel
+						["provider"] = { "i", 227041 },	-- Scourge Shadow Scalpel
+						["coord"] = { 83.6, 42.0, EASTERN_PLAGUELANDS },
+						["crs"] = {
+							8550,	-- Shadowmage <Cult of the Damned>
+							8528,	-- Dread Weaver
+						},
+					}),
+				},
+			}),
+			q(84126, {	-- Finish the Fight
+				["qg"] = 227674,	-- <Player>'s Squire (Rank 3)
+				["sourceQuest"] = 84125,	-- Close Enough To Touch
+				["coord"] = { 86.8, 39.4, EASTERN_PLAGUELANDS },
+				["timeline"] = { "added 1.15.3" },
+				["classes"] = { PALADIN },
+				["lvl"] = 50,
+				["groups"] = {
+					objective(1, {	-- 0/1 Arkonos the Cursed slain
+						["providers"] = {
+							{ "n", 227985 },	-- Arkonos the Cursed
+							{ "i", 227685 },	-- Modified Shadow Scalpel
+						},
+						["coord"] = { 86.8, 39.4, EASTERN_PLAGUELANDS },
+					}),
+					recipe(440790),	-- Engrave Cloak - Shock and Awe
+					i(226399, {	-- Testament of Avenging Wrath
+						["spellID"] = 407788,	-- Avenging Wrath
+						["f"] = RECIPES,
+					}),
+				},
+			}),
+		},
+	})),
 	n(createHeader({	-- Waylaid Supplies
 		readable = "Waylaid Supplies",
 		icon = "Interface\\Icons\\inv_crate_03",
@@ -3650,7 +3833,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
-				
+
 				-- iLvl 40 - Crafted Supplies (Tier 4)
 				applyclassicphase(SOD_PHASE_TWO, i(215396, { -- Waylaid Supplies: Elixirs of Greater Defense
 					["cost"] = { { "i", 8951, 14 } },	-- Elixir of Greater Defense
@@ -3682,7 +3865,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
 				})),
-				
+
 				-- iLvl 50 - Crafted Supplies (Tier 5)
 				applyclassicphase(SOD_PHASE_THREE, i(220940, {	-- Waylaid Supplies: Black Mageweave Headbands
 					["cost"] = { { "i", 10024, 5 } },	-- Black Mageweave Headband
@@ -3750,7 +3933,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
 					},
 				})),
-				
+
 				-- iLvl 50 - Crafted Supplies (Tier 6)
 				applyclassicphase(SOD_PHASE_THREE, i(220941, {	-- Waylaid Supplies: Runecloth Belts
 					["cost"] = { { "i", 13856, 6 } },	-- Runecloth Belt
@@ -3776,7 +3959,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						i(221010),	-- Supply Shipment [iLvl 50 - Crafted (Tier 6)]
 					},
 				})),
-				
+
 			}),
 			n(createHeader({	-- Gathering
 				readable = "Gathering",
@@ -3992,7 +4175,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
-				
+
 				-- iLvl 50 - Gathering Supplies
 				applyclassicphase(SOD_PHASE_THREE, i(220923, {	-- Waylaid Supplies: Dreamfoil
 					["cost"] = { { "i", 13463, 6 } },	-- Dreamfoil
@@ -4057,6 +4240,137 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 		},
 	}),
+
+	----------------------------
+	-- UNSORTED QUESTS        --
+	----------------------------
+	--[[
+	-- No peaking - Crieve
+	-- Tier 0.5 Quests
+	q(84147),	-- An Earnest Proposition
+	q(84150),	-- An Earnest Proposition
+	q(84155),	-- An Earnest Proposition
+	q(84152),	-- An Earnest Proposition
+	q(84149),	-- An Earnest Proposition
+	q(84151),	-- An Earnest Proposition
+	q(84160),	-- An Earnest Proposition
+	q(84154),	-- An Earnest Proposition
+	q(84157),	-- An Earnest Proposition
+	q(84162),	-- An Earnest Proposition
+	q(84148),	-- An Earnest Proposition
+	q(84153),	-- An Earnest Proposition
+	q(84156),	-- An Earnest Proposition
+	q(84158),	-- An Earnest Proposition
+	q(84159),	-- An Earnest Proposition
+	q(84161),	-- An Earnest Proposition
+	q(84179),	-- Anthion's Parting Words
+	q(84182),	-- Anthion's Parting Words
+	q(84181),	-- Anthion's Parting Words
+	q(84192),	-- Anthion's Parting Words
+	q(84189),	-- Anthion's Parting Words
+	q(84190),	-- Anthion's Parting Words
+	q(84186),	-- Anthion's Parting Words
+	q(84180),	-- Anthion's Parting Words
+	q(84194),	-- Anthion's Parting Words
+	q(84187),	-- Anthion's Parting Words
+	q(84183),	-- Anthion's Parting Words
+	q(84184),	-- Anthion's Parting Words
+	q(84193),	-- Anthion's Parting Words
+	q(84185),	-- Anthion's Parting Words
+	q(84191),	-- Anthion's Parting Words
+	q(84188),	-- Anthion's Parting Words
+	q(84163),	-- Just Compensation
+	q(84170),	-- Just Compensation
+	q(84176),	-- Just Compensation
+	q(84164),	-- Just Compensation
+	q(84178),	-- Just Compensation
+	q(84165),	-- Just Compensation
+	q(84166),	-- Just Compensation
+	q(84171),	-- Just Compensation
+	q(84169),	-- Just Compensation
+	q(84172),	-- Just Compensation
+	q(84168),	-- Just Compensation
+	q(84177),	-- Just Compensation
+	q(84167),	-- Just Compensation
+	q(84173),	-- Just Compensation
+	q(84175),	-- Just Compensation
+	q(84174),	-- Just Compensation
+	q(84205),	-- Saving the Best for Last
+	q(84197),	-- Saving the Best for Last
+	q(84195),	-- Saving the Best for Last
+	q(84198),	-- Saving the Best for Last
+	q(84208),	-- Saving the Best for Last
+	q(84200),	-- Saving the Best for Last
+	q(84203),	-- Saving the Best for Last
+	q(84209),	-- Saving the Best for Last
+	q(84199),	-- Saving the Best for Last
+	q(84204),	-- Saving the Best for Last
+	q(84201),	-- Saving the Best for Last
+	q(84206),	-- Saving the Best for Last
+	q(84207),	-- Saving the Best for Last
+	q(84202),	-- Saving the Best for Last
+	q(84210),	-- Saving the Best for Last
+	q(84196),	-- Saving the Best for Last
+
+	-- Mage Quests
+
+
+	-- Priest Quests
+
+
+	q(84412),	-- A Diplomatic Mission
+	q(84327),	-- A Diplomatic Mission
+	q(84398),	-- A Study of the Light
+	q(84135),	-- Beach Bot
+	q(84212),	-- Bookin' it Back
+	q(84326),	-- Diplomat Ring
+	q(84411),	-- Diplomat Ring
+	q(84324),	-- Diplomatic Overtures
+	q(84408),	-- Diplomatic Overtures
+	q(84495),	-- Fiery Plate Gauntlets
+	q(84138),	-- Frosty Favors
+	q(84394),	-- Greater Friend of the Library
+	q(84369),	-- Healing the Healer
+	q(84317),	-- Infinite Midnight
+	q(84399),	-- Ka-Boom!
+	q(84124),	-- Legacy of Valor
+	q(84320),	-- Lost Heirloom
+	q(84405),	-- Lost Heirloom
+	q(84396),	-- Magma or Lava?
+	q(84137),	-- Mechanical Romance
+	q(84015),	-- More Greater Moonstones
+	q(84016),	-- More Moondragon Scales
+	q(84014),	-- More Moonroot
+	q(84011),	-- More Star Lotus
+	q(84013),	-- More Starshells
+	q(84012),	-- More Starsilver Ore
+	q(84402),	-- Necromancy 101
+	q(84397),	-- Northern Kalimdor - A Comprehensive Guide
+	q(83192),	-- Otherworldly Treasure
+	q(83189),	-- Otherworldly Treasure
+	q(83191),	-- Otherworldly Treasure
+	q(83190),	-- Otherworldly Treasure
+	q(84525),	-- Otherworldly Treasure
+	q(83188),	-- Otherworldly Treasure
+	q(84211),	-- Poacher's Den
+	q(84146),	-- Red Bag Blues
+	q(84321),	-- Relic of Light
+	q(84406),	-- Relic of Light
+	q(84328),	-- Repairing the Shard
+	q(84413),	-- Repairing the Shard
+	q(84213),	-- Rift Away
+	q(84322),	-- Scarlet Research
+	q(84401),	-- Scourge: Undead Menace or Misunderstood?
+	q(84410),	-- Shrine of Cooperation
+	q(84325),	-- Shrine of Cooperation
+	q(84496),	-- Sweet Serenity
+	q(84329),	-- The Convocation Assembles
+	q(84400),	-- The Knight and the Lady
+	q(84331),	-- The Miracle
+	q(84323),	-- The Prize Within
+	q(84407),	-- The Prize Within
+	q(84395),	-- Undead Potatoes
+	]]--
 }))));
 
 -- Dungeon & Raid Phase Requirements
@@ -4116,10 +4430,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			})),
 		}),
 		cl(PALADIN, {
-			applyclassicphase(SOD_PHASE_FOUR, i(226399, {	-- Testament of Avenging Wrath
-				["spellID"] = 407788,	-- Avenging Wrath
-				["f"] = RECIPES,
-			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216768, {	-- Testament of Enhanced Blessings
 				["spellID"] = 435984,	-- Enhanced Blessings
 				["f"] = RECIPES,
@@ -4208,7 +4518,7 @@ root(ROOTS.NeverImplemented, {
 		i(211940),	-- Ecks'av's Tribal Guardian
 		i(211944),	-- Tojara's Will
 		i(211941),	-- Windwalker's Yari
-		
+
 		-- Phase 3
 		applyclassicphase(SOD_PHASE_THREE, i(220619)),	-- Atal'ai Blood Ceremony
 	}))),

@@ -310,6 +310,38 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 80.4, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, n(createHeader({	-- Aeonas: Journey to Felwood
+					readable = "SOD - Aeonas: Journey to Felwood",
+					icon = "Interface\\CURSOR\\Taxi",
+					text = {
+						en = "Aeonas: Journey to Felwood",
+					},
+				}), {
+					["qg"] = 218160,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+					["questID"] = 81879,	-- Aeonas: Journey to Felwood HQT
+					["sourceQuest"] = 81764,	-- The Mysterious Merchant
+					["coord"] = { 37.6, 31.6, STORMWIND_CITY },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 44,
+				})),
+				applyclassicphase(SOD_PHASE_THREE, n(createHeader({	-- Aeonas: Trust in a Friend
+					readable = "SOD - Aeonas: Trust in a Friend",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Aeonas: Trust in a Friend",
+					},
+				}), {
+					["qg"] = 221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+					["questID"] = 81883,	-- Aeonas: Trust in a Friend HQT
+					["sourceQuest"] = 81879,	-- Aeonas: Journey to Felwood HQT
+					["coord"] = { 45, 52, FELWOOD },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 44,
+				})),
+				-- #endif
 				q(28150, {	-- An Arcane Ally
 					["qg"] = 10923,	-- Tenell Leafrunner
 					["sourceQuests"] = {
@@ -321,7 +353,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
-				applyclassicphase(PHASE_FOUR, q(8419, {	-- An Imp's Request
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8419, {	-- An Imp's Request
 					["qgs"] = {
 						3326,	-- Zevrost <Warlock Trainer>
 						5172,	-- Briarthorn <Warlock Trainer>
@@ -349,6 +381,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 4442,	-- Purified!
 					["coord"] = { 49.4, 14.4, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 49,
 					["groups"] = {
@@ -952,6 +985,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84384, {	-- Demonic Deceptions
+					["qg"] =  222408,	-- Shadowtooth Emissary
+					["coord"] = { 51.6, 82.0, FELWOOD },
+					["timeline"] = { "added 1.15.3" },
+					["maps"] = { WINTERSPRING },
+					["lvl"] = 55,
+					["groups"] = {
+						objective(1, {	-- 0/6 Owlbeast Pineal Gland
+							["provider"] = { "i", 227914 },	-- Owlbeast Pineal Gland
+							["coord"] = { 65.6, 21.4, WINTERSPRING },
+							["crs"] = {
+								7454,	-- Berserk Owlbeast
+								7452,	-- Crazed Owlbeast
+								7453,	-- Moontouched Owlbeast
+								7450,	-- Ragged Owlbeast
+								7451,	-- Raging Owlbeast
+							},
+						}),
+						i(228172),	-- Shadowtooth Illusion Ward
+					},
+				})),
+				-- #endif
 				q(28000, {	-- Do the Imp-Possible
 					["qg"] = 47341,	-- Arcanist Delaris
 					["sourceQuests"] = {
@@ -1252,6 +1308,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, n(createHeader({	-- Gregory: You Can Trust Me... Probably.
+					readable = "SOD - Gregory: You Can Trust Me... Probably.",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Gregory: You Can Trust Me... Probably.",
+					},
+				}), {
+					["qg"] = 221636,	-- Gregory <Truthbearer>
+					["questID"] = 81884,	-- Gregory: You Can Trust Me... Probably. HQT
+					["sourceQuest"] = 81883,	-- Aeonas: Trust in a Friend HQT
+					["coord"] = { 44.6, 52, FELWOOD },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 44,
+				})),
+				-- #endif
 				q(4883, {	-- Guarding Secrets (2/2)
 					["providers"] = {
 						{ "n", 10306 },	-- Trull Failbane
@@ -1426,8 +1499,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(81790, {	-- Materials of Significance
 					["qg"] =  221636,	-- Gregory <Truthbearer>
-					-- TODO: There might be a "Speak to Aeonas" step between the bloody missive and this quest.
-					["sourceQuest"] = 81766,	-- The Bloody Missive
+					["sourceQuest"] = 81884,	-- Gregory: You Can Trust Me... Probably. HQT
 					["coord"] = { 44.6, 52, FELWOOD },
 					["maps"] = { MARAUDON, HILLSBRAD_FOOTHILLS, BLACKROCK_DEPTHS },
 					["classes"] = { PALADIN },
@@ -2444,7 +2516,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				-- #endif
-				applyclassicphase(PHASE_FOUR, q(8421, {	-- The Wrong Stuff
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8421, {	-- The Wrong Stuff
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["sourceQuests"] = {
 						8419,	-- An Imp's Request
@@ -2893,6 +2965,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						7126,	-- Jaedenar Hunter
 					},
 				}),
+			}),
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_FOUR, i(226416, {	-- Rune of Nature Specialization
+					["provider"] = { "o", 457092 },	-- The Fury of Stormrage
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 62.8, 7.5, FELWOOD },
+					["classes"] = { HUNTER, ROGUE, SHAMAN, DRUID },
+					["groups"] = {
+						recipe(453698, {	-- Engrave Ring - Nature Specialization
+							["classes"] = { HUNTER, ROGUE, SHAMAN, DRUID },
+						}),
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {
