@@ -111,12 +111,23 @@ profession(BLACKSMITHING, {
 						["name"] = "Helm of the Great Chief",
 						["recipeID"] = 16728,
 						["requireSkill"] = 9788,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					},
 					{
 						["name"] = "Lionheart Helm",
 						["recipeID"] = 16729,
 						["requireSkill"] = 9788,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Warcrest of the Great Chief",
+						["recipeID"] = 461739,
+						["requireSkill"] = 9788,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Whitesoul Helm",
 						["recipeID"] = 16724,
@@ -172,12 +183,23 @@ profession(BLACKSMITHING, {
 						["name"] = "Storm Gauntlets",
 						["recipeID"] = 16661,
 						["requireSkill"] = 9788,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					},
 					{
 						["name"] = "Stronghold Gauntlets",
 						["recipeID"] = 16741,
 						["requireSkill"] = 9788,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Tempest Gauntlets",
+						["recipeID"] = 461737,
+						["requireSkill"] = 9788,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Truesilver Gauntlets",
 						["timeline"] = { REMOVED_4_0_1 },
@@ -195,6 +217,9 @@ profession(BLACKSMITHING, {
 						["name"] = "Dark Iron Plate",
 						["recipeID"] = 15296,
 						["requireSkill"] = 9788,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					},
 					{
 						["name"] = "Demon Forged Breastplate",
@@ -221,9 +246,18 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16746,
 						["requireSkill"] = 9788,
 						-- #if SEASON_OF_DISCOVERY
-						["timeline"] = { "removed 1.15.3" },
+						-- CRIEVE NOTE: This item still drops apparently, I got this on my paladin.
+						--["timeline"] = { "removed 1.15.3" },
 						-- #endif
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Tempered Dark Iron Plate",
+						["recipeID"] = 461667,
+						["requireSkill"] = 9788,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Truesilver Breastplate",
 						["timeline"] = { REMOVED_4_0_1 },

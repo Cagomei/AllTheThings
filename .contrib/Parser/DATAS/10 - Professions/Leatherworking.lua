@@ -1863,6 +1863,9 @@ profession(LEATHERWORKING, {
 				{
 					["name"] = "Black Dragonscale Shoulders",
 					["recipeID"] = 19094,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				},
 				-- #endif
 				applyclassicphase(PHASE_FOUR, {
@@ -1899,6 +1902,15 @@ profession(LEATHERWORKING, {
 					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226129,
 				},
+				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Hardened Black Dragonscale Shoulders",
+					["recipeID"] = 461659,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
+				-- #endif
 				{
 					["name"] = "Heavy Scorpid Shoulders",
 					["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 },
@@ -1971,6 +1983,9 @@ profession(LEATHERWORKING, {
 				{
 					["name"] = "Black Dragonscale Breastplate",
 					["recipeID"] = 19085,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				},
 				-- #endif
 				{
@@ -2066,6 +2081,15 @@ profession(LEATHERWORKING, {
 					["name"] = "Handstitched Leather Vest",
 					["recipeID"] = 7126,
 				},
+				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Hardened Black Dragonscale Breastplate",
+					["recipeID"] = 461655,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
+				-- #endif
 				{
 					["name"] = "Heavy Scale Shirt",
 					["timeline"] = { ADDED_7_0_3 },
@@ -2647,6 +2671,9 @@ profession(LEATHERWORKING, {
 				{
 					["name"] = "Black Dragonscale Leggings",
 					["recipeID"] = 19107,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				},
 				-- #endif
 				-- #if AFTER CATA
@@ -2724,6 +2751,15 @@ profession(LEATHERWORKING, {
 					["name"] = "Handstitched Leather Pants",
 					["recipeID"] = 2153,
 				},
+				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Hardened Black Dragonscale Leggings",
+					["recipeID"] = 461657,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
+				-- #endif
 				{
 					["name"] = "Heavy Scale Pants",
 					["timeline"] = { ADDED_7_0_3 },

@@ -263,7 +263,14 @@ i(12728, 16746, nil, ARMORSMITH);	-- Invulnerable Mail
 i(12717, 16729, nil, ARMORSMITH);	-- Lionheart Helm
 i(12703, 16661, nil, ARMORSMITH);	-- Storm Gauntlets
 i(12720, 16741, nil, ARMORSMITH);	-- Stronghold Gauntlets
+-- #if SEASON_OF_DISCOVERY
+i(227901, 461667, nil, ARMORSMITH);	-- Tempered Dark Iron Plate
+i(228313, 461737, nil, ARMORSMITH);	-- Tempest Gauntlets
+-- #endif
 i(22388, 27829, nil, ARMORSMITH);	-- Titanic Leggings
+-- #if SEASON_OF_DISCOVERY
+i(228314, 461739, nil, ARMORSMITH);	-- Warcrest of the Great Chief
+-- #endif
 i(12711, 16724, nil, ARMORSMITH);	-- Whitesoul Helm
 i(12691, 16650, nil, ARMORSMITH);	-- Wildthorn Mail
 -- #else
@@ -301,6 +308,7 @@ i(19209, 23639, nil, WEAPONSMITH);	-- Blackfury
 i(142337, 10011, nil, WEAPONSMITH);	-- Blight
 i(11610, 15292, nil, WEAPONSMITH);	-- Dark Iron Pulverizer
 i(11611, 15294, nil, WEAPONSMITH);	-- Dark Iron Sunderer
+i(228307, 461716, nil, WEAPONSMITH);	-- Deadly Heartseeker
 i(12839, 16995, nil, WEAPONSMITH);	-- Heartseeker
 i(74274, 10007, nil, WEAPONSMITH);	-- Phantom Blade
 -- #else
@@ -334,10 +342,12 @@ i(0, 17040, nil, MASTER_HAMMERSMITH);		-- Master Hammersmith [REMOVED: 4.0.3]
 -- #if BEFORE TBC
 i(19210, 23650, nil, MASTER_HAMMERSMITH);	-- Ebon Hand
 i(12824, 16973, nil, MASTER_HAMMERSMITH);	-- Enchanted Battlehammer [REMOVED: 4.0.3]
+i(228311, 461733, nil, MASTER_HAMMERSMITH);	-- Finely-Enchanted Battlehammer
 i(12833, 16988, nil, MASTER_HAMMERSMITH);	-- Hammer of the Titans
 i(12837, 16993, nil, MASTER_HAMMERSMITH);	-- Masterwork Stormhammer [REMOVED: 6.0.2]
 i(22390, 27830, nil, MASTER_HAMMERSMITH);	-- Persuader
 i(12827, 16983, nil, MASTER_HAMMERSMITH);	-- Serenity
+i(228308, 461718, nil, MASTER_HAMMERSMITH);	-- Tranquility
 -- #else
 i(19210, 23650);	-- Ebon Hand
 i(12824, 16973);	-- Enchanted Battlehammer [REMOVED: 4.0.3]

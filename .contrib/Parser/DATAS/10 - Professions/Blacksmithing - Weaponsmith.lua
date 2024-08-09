@@ -14,6 +14,7 @@ profession(BLACKSMITHING, {
 		["timeline"] = { REMOVED_4_0_1 },
 		["groups"] = {
 			prof(17041, {	-- Master Axesmith
+				["sourceQuest"] = 5306,	-- Snakestone of the Shadow Huntress [Master Axesmith]
 				["description"] = "These items can only be crafted by Master Axesmith specialized Weaponsmiths.",
 				["groups"] = {
 					-- #if BEFORE TBC
@@ -21,6 +22,10 @@ profession(BLACKSMITHING, {
 						["name"] = "Annihilator",
 						["recipeID"] = 16991,
 						["requireSkill"] = 17041,
+						-- #if SEASON_OF_DISCOVERY
+						["description"] = "Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",
+						["timeline"] = { "removed 1.15.0" },
+						-- #endif
 					},
 					{
 						["name"] = "Arcanite Reaper",
@@ -42,6 +47,9 @@ profession(BLACKSMITHING, {
 						["name"] = "Nightfall",
 						["recipeID"] = 23653,
 						["requireSkill"] = 17041,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.0" },
+						-- #endif
 					}),
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -123,6 +131,13 @@ profession(BLACKSMITHING, {
 				},
 			}),
 			prof(17040, {	-- Master Hammersmith
+				["sourceQuests"] = {
+					-- #if SEASON_OF_DISCOVERY
+					84496,	-- Sweet Serenity [Master Hammersmith]
+					-- #else
+					5305,	-- Sweet Serenity [Master Hammersmith]
+					-- #endif
+				},
 				["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
 				["groups"] = {
 					-- #if BEFORE TBC
@@ -133,10 +148,24 @@ profession(BLACKSMITHING, {
 					}),
 					{
 						["name"] = "Enchanted Battlehammer",
-						["timeline"] = { REMOVED_4_0_1 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_4_0_3,
+							-- #endif
+						},
 						["recipeID"] = 16973,
 						["requireSkill"] = 17040,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Finely-Enchanted Battlehammer",
+						["recipeID"] = 461733,
+						["requireSkill"] = 17040,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Hammer of the Titans",
 						["recipeID"] = 16988,
@@ -155,10 +184,24 @@ profession(BLACKSMITHING, {
 					}),
 					{
 						["name"] = "Serenity",
-						["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_2_0_1, ADDED_3_0_2,
+							-- #endif
+						},
 						["recipeID"] = 16983,
 						["requireSkill"] = 17040,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Tranquility",
+						["recipeID"] = 461718,
+						["requireSkill"] = 17040,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Deep Thunder",
@@ -239,6 +282,7 @@ profession(BLACKSMITHING, {
 				},
 			}),
 			prof(17039, {	-- Master Swordsmith
+				["sourceQuest"] = 5307,	-- Corruption [Master Swordsmith]
 				["description"] = "These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",
 				["groups"] = {
 					-- #if BEFORE TBC
@@ -410,10 +454,21 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16987,
 						["requireSkill"] = 9787,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Deadly Heartseeker",
+						["recipeID"] = 461716,
+						["requireSkill"] = 9787,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Heartseeker",
 						["recipeID"] = 16995,
 						["requireSkill"] = 9787,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					},
 					-- #endif
 					applyclassicphase(WRATH_PHASE_ONE, {

@@ -3594,7 +3594,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			i(12728, {	-- Plans: Invulnerable Mail (RECIPE!)
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.15.3" },
+				-- CRIEVE NOTE: This item still drops apparently, I got this on my paladin.
+				-- ["timeline"] = { "removed 1.15.3" },
 				-- #endif
 			}),
 			i(5543),	-- Plans: Iridescent Hammer (RECIPE!)
@@ -3624,7 +3625,17 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(2882),	-- Plans: Silvered Bronze Shoulders (RECIPE!)
 			i(6046),	-- Plans: Steel Weapon Chain (RECIPE!)
 			i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
+			i(12703, {	-- Plans: Storm Gauntlets (RECIPE!)
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(12720),	-- Plans: Stronghold Gauntlets (RECIPE!)
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228313, {	-- Plans: Tempest Gauntlets (RECIPE!)
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(12682),	-- Plans: Thorium Armor (RECIPE!)
 			i(12683),	-- Plans: Thorium Belt (RECIPE!)
 			i(12693),	-- Plans: Thorium Boots (RECIPE!)
@@ -3633,6 +3644,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(12704),	-- Plans: Thorium Leggings (RECIPE!)
 			i(12692),	-- Plans: Thorium Shield Spike (RECIPE!)
 			applyclassicphase(PHASE_FIVE, i(22388)),	-- Plans: Titanic Leggings (RECIPE!)
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228314, {	-- Plans: Warcrest of the Great Chief (RECIPE!)
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(12711),	-- Plans: Whitesoul Helm (RECIPE!)
 			i(8029),	-- Plans: Wicked Mithril Blade (RECIPE!)
 			i(12691),	-- Plans: Wildthorn Mail (RECIPE!)

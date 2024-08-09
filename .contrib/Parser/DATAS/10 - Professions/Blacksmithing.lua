@@ -1637,6 +1637,9 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Helm of the Great Chief",
 					["recipeID"] = 16728,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				},
 				-- #endif
 				{
@@ -1675,6 +1678,14 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 16653,
 				},
 				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Warcrest of the Great Chief",
+					["recipeID"] = 461739,
+					["requireSkill"] = 9788,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
 				{
 					["name"] = "Whitesoul Helm",
 					["recipeID"] = 16724,
@@ -1931,11 +1942,21 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Storm Gauntlets",
 					["recipeID"] = 16661,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				},
 				{
 					["name"] = "Stronghold Gauntlets",
 					["recipeID"] = 16741,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Tempest Gauntlets",
+					["recipeID"] = 461737,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
 				{
 					["name"] = "Truesilver Gauntlets",
 					["timeline"] = { REMOVED_4_0_1 },
@@ -1973,6 +1994,9 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Dark Iron Plate",
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["recipeID"] = 15296,
 				},
 				-- #endif
@@ -2095,6 +2119,15 @@ profession(BLACKSMITHING, {
 					["name"] = "Steel Breastplate",
 					["recipeID"] = 9916,
 				},
+				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Tempered Dark Iron Plate",
+					["timeline"] = { "added 1.15.3" },
+					["recipeID"] = 461667,
+				}),
+				-- #endif
+				-- #endif
 				applyclassicphase(PHASE_FIVE, {
 					["name"] = "Thick Obsidian Breastplate",
 					["recipeID"] = 27587,
@@ -2364,6 +2397,10 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Annihilator",
 					["recipeID"] = 16991,
+					-- #if SEASON_OF_DISCOVERY
+					["description"] = "Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",
+					["timeline"] = { "removed 1.15.0" },
+					-- #endif
 				},
 				{
 					["name"] = "Arcanite Champion",
@@ -2512,6 +2549,14 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 3295,
 				},
 				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Deadly Heartseeker",
+					["recipeID"] = 461716,
+					["requireSkill"] = 9787,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
 				applyclassicphase(PHASE_THREE, {
 					["name"] = "Ebon Hand",
 					["recipeID"] = 23650,
@@ -2528,7 +2573,13 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Enchanted Battlehammer",
-					["timeline"] = { REMOVED_4_0_1 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3,
+						-- #endif
+					},
 					["recipeID"] = 16973,
 				},
 				-- #endif
@@ -2539,6 +2590,15 @@ profession(BLACKSMITHING, {
 						DELETED_5_0_4
 					},
 				}),
+				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Finely-Enchanted Battlehammer",
+					["recipeID"] = 461733,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
+				-- #endif
 				{
 					["name"] = "Frost Tiger Blade",
 					["recipeID"] = 3497,
@@ -2571,6 +2631,9 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Heartseeker",
 					["recipeID"] = 16995,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				},
 				-- #endif
 				{
@@ -2650,6 +2713,9 @@ profession(BLACKSMITHING, {
 				applyclassicphase(PHASE_THREE, {
 					["name"] = "Nightfall",
 					["recipeID"] = 23653,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.0" },
+					-- #endif
 				}),
 				-- #endif
 				{

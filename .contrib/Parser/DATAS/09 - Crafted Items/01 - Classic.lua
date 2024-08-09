@@ -351,7 +351,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_THREE, i(19164)),	-- Dark Iron Gauntlets
 				applyclassicphase(PHASE_THREE, i(19148)),	-- Dark Iron Helm
 				i(17013),	-- Dark Iron Leggings
-				i(11604),	-- Dark Iron Plate
+				i(11604, {	-- Dark Iron Plate
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 				i(12628, {["timeline"] = {REMOVED_4_0_3}}),	-- Demon Forged Breastplate
 				applyclassicphase(PHASE_THREE, i(12618, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Breastplate
 				applyclassicphase(PHASE_THREE, i(12620, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Helm
@@ -359,7 +363,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(12631, {["timeline"] = {REMOVED_4_0_3}}),	-- Fiery Plate Gauntlets
 				i(16989),	-- Fiery Chain Girdle
 				i(16988),	-- Fiery Chain Shoulders
-				i(12636),	-- Helm of the Great Chief
+				i(12636, {	-- Helm of the Great Chief
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(227876, {	-- Invincible Mail
 					["timeline"] = { "added 1.15.3" },
@@ -367,15 +375,33 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				i(12641, {	-- Invulnerable Mail
 					-- #if SEASON_OF_DISCOVERY
-					["timeline"] = { "removed 1.15.3" },
+					-- CRIEVE NOTE: This item still drops apparently, I got this on my paladin.
+					-- ["timeline"] = { "removed 1.15.3" },
 					-- #endif
 				}),
 				i(12640),	-- Lionheart Helm
-				i(12632),	-- Storm Gauntlets
+				i(12632, {	-- Storm Gauntlets
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 				i(12639),	-- Stronghold Gauntlets
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227871, {	-- Tempered Dark Iron Plate
+					["timeline"] = { "added 1.15.3" },
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227870, {	-- Tempest Gauntlets
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
 				applyclassicphase(PHASE_FIVE, i(22385)),	-- Titanic Leggings
 				i(7939, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Breastplate
 				i(7938, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Gauntlets
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227872, {	-- Warcrest of the Great Chief
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
 				i(12633),	-- Whitesoul Helm
 				i(12624),	-- Wildthorn Mail
 			},
@@ -386,22 +412,59 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				prof(17041, {	-- Master Axesmith
 					["description"] = "These items can only be crafted by Master Axesmith specialized Weaponsmiths.",
 					["groups"] = {
-						i(12798),	-- Annihilator
+						i(12798, {	-- Annihilator
+							-- #if SEASON_OF_DISCOVERY
+							["description"] = "Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",
+							["timeline"] = { "removed 1.15.0" },
+							-- #endif
+						}),
 						i(12784),	-- Arcanite Reaper
 						i(17016),	-- Dark Iron Destroyer
 						i(12774, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Dawn's Edge
-						applyclassicphase(PHASE_THREE, i(19169)),	-- Nightfall
+						applyclassicphase(PHASE_THREE, i(19169, {	-- Nightfall
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.0" },
+							-- #endif
+						})),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227843, {	-- Reaving Nightfall
+							["description"] = "Blizzard stated that Nightfall was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Nightfall or this updated version of it.",
+							["timeline"] = { "created 1.15.3" },
+						})),
+						-- #endif
 					},
 				}),
 				prof(17040, {	-- Master Hammersmith
 					["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
 					["groups"] = {
 						applyclassicphase(PHASE_THREE, i(19170)),	-- Ebon Hand
-						i(12776, {["timeline"] = {REMOVED_4_0_3}}),	-- Enchanted Battlehammer
+						i(12776, {	-- Enchanted Battlehammer
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							}
+						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227880, {	-- Finely-Enchanted Battlehammer
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12796),	-- Hammer of the Titans
 						i(12794, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_5}}),	-- Masterwork Stormhammer
 						applyclassicphase(PHASE_FIVE, i(22384)),	-- Persuader
-						i(12781),	-- Serenity
+						i(12781, {	-- Serenity
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227881, {	-- Tranquility
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 					},
 				}),
 				prof(17039, {	-- Master Swordsmith
@@ -424,7 +487,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						i(7959, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Blight
 						i(11608),	-- Dark Iron Pulverizer
 						i(11607),	-- Dark Iron Sunderer
-						i(12783),	-- Heartseeker
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227884, {	-- Deadly Heartseeker
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(12783, {	-- Heartseeker
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 						i(7961, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Phantom Blade
 						i(7954, {["timeline"] = {REMOVED_4_0_3}}),	-- The Shatterer
 						i(7960, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Champion
@@ -623,7 +695,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_THREE, i(19164)),	-- Dark Iron Gauntlets
 			applyclassicphase(PHASE_THREE, i(19148)),	-- Dark Iron Helm
 			i(17013),	-- Dark Iron Leggings
-			i(11604),	-- Dark Iron Plate
+			i(11604, {	-- Dark Iron Plate
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(12628, {["timeline"] = {REMOVED_4_0_3}}),	-- Demon Forged Breastplate
 			applyclassicphase(PHASE_THREE, i(12618, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Breastplate
 			applyclassicphase(PHASE_THREE, i(12620, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Helm
@@ -649,8 +725,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			})),
 			-- #endif
 			-- #if AFTER TBC
-			i(12632),	-- Storm Gauntlets
+			i(12632, {	-- Storm Gauntlets
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(12639),	-- Stronghold Gauntlets
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227871, {	-- Tempered Dark Iron Plate
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(215161, {	-- Tempered Interference-Negating Helmet
@@ -659,6 +744,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			})),
 			-- #endif
 			-- #if AFTER TBC
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227870, {	-- Tempest Gauntlets
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			applyclassicphase(PHASE_FIVE, i(22385)),	-- Titanic Leggings
 			i(7939, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Breastplate
 			i(7938, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Gauntlets
@@ -829,11 +919,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(17015),	-- Dark Iron Reaver
 			i(11607),	-- Dark Iron Sunderer
 			i(12774, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Dawn's Edge
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227884, {	-- Deadly Heartseeker
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			applyclassicphase(PHASE_THREE, i(19170)),	-- Ebon Hand
 			i(12776, {["timeline"] = {REMOVED_4_0_3}}),	-- Enchanted Battlehammer
 			i(12797),	-- Frostguard
 			i(12796),	-- Hammer of the Titans
-			i(12783),	-- Heartseeker
+			i(12783, {	-- Heartseeker
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(12794, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_5}}),	-- Masterwork Stormhammer
 			applyclassicphase(PHASE_THREE, i(19169)),	-- Nightfall
 			applyclassicphase(PHASE_FIVE, i(22384)),	-- Persuader
@@ -841,6 +940,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_FIVE, i(22383)),	-- Sageblade
 			i(12781),	-- Serenity
 			i(7954, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}}),	-- The Shatterer
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227881, {	-- Tranquility
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(7960, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}}),	-- Truesilver Champion
 			-- #endif
 			-- #if AFTER CATA
@@ -1104,6 +1208,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_FIVE, i(20749, {["timeline"] = {REMOVED_4_0_3}})),	-- Brilliant Wizard Oil / 10.0.7: Expired Wizard Oil
 			applyclassicphase(PHASE_FIVE, i(203862, {["timeline"] = {ADDED_10_0_7}})),	-- Brilliant Mana Oil
 			applyclassicphase(PHASE_FIVE, i(203865, {["timeline"] = {ADDED_10_0_7}})),	-- Brilliant Wizard Oil
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228980, {	-- Conductive Shield Coating
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(12810),	-- Enchanted Leather
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(217308, {	-- Enchanted Sigil: Innovation
@@ -2186,9 +2295,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
 			["groups"] = {
 				i(16984),	-- Black Dragonscale Boots
-				i(15050),	-- Black Dragonscale Breastplate
-				i(15052),	-- Black Dragonscale Leggings
-				i(15051),	-- Black Dragonscale Shoulders
+				i(15050, {	-- Black Dragonscale Breastplate
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
+				i(15052, {	-- Black Dragonscale Leggings
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
+				i(15051, {	-- Black Dragonscale Shoulders
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 				i(15048, {["timeline"] = {REMOVED_4_0_3}}),	-- Blue Dragonscale Breastplate
 				i(20295),	-- Blue Dragonscale Leggings
 				i(15049, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Blue Dragonscale Shoulders
@@ -2197,6 +2318,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(8367),	-- Dragonscale Breastplate
 				i(8347, {["timeline"] = {REMOVED_4_0_3}}),	-- Dragonscale Gauntlets
 				applyclassicphase(PHASE_FOUR, i(20380, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}})),	-- Dreamscale Breastplate
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227851, {	-- Hardened Black Dragonscale Breastplate
+					["timeline"] = { "added 1.15.3" },
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227852, {	-- Hardened Black Dragonscale Leggings
+					["timeline"] = { "added 1.15.3" },
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227853, {	-- Hardened Black Dragonscale Shoulders
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
 				i(15045, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Green Dragonscale Breastplate
 				i(20296),	-- Green Dragonscale Gauntlets
 				i(15046, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Green Dragonscale Leggings

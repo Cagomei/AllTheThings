@@ -695,7 +695,6 @@ i(45643);	-- Gauntlets of the Wayward Vanquisher
 i(45654);	-- Legplates of the Wayward Protector
 i(45655);	-- Legplates of the Wayward Vanquisher
 
-
 -- Tier 9 Tier Tokens [ToC]
 
 i(47242);	-- Trophy of the Crusade
@@ -812,6 +811,188 @@ i(78855);	-- Gauntlets of the Corrupted Vanquisher
 i(78856);	-- Leggings of the Corrupted Conqueror
 i(78857);	-- Leggings of the Corrupted Protector
 i(78858);	-- Leggings of the Corrupted Vanquisher
+
+-- Tier 14 LFR [HoF/ToES]
+i(89274);	-- Helm of the Shadowy Conqueror
+i(89275);	-- Helm of the Shadowy Protector
+i(89273);	-- Helm of the Shadowy Vanquisher
+i(89277);	-- Shoulders of the Shadowy Conqueror
+i(89278);	-- Shoulders of the Shadowy Protector
+i(89276);	-- Shoulders of the Shadowy Vanquisher
+i(89265);	-- Chest of the Shadowy Conqueror
+i(89266);	-- Chest of the Shadowy Protector
+i(89264);	-- Chest of the Shadowy Vanquisher
+i(89271);	-- Gauntlets of the Shadowy Conqueror
+i(89272);	-- Gauntlets of the Shadowy Protector
+i(89270);	-- Gauntlets of the Shadowy Vanquisher
+i(89268);	-- Leggings of the Shadowy Conqueror
+i(89269);	-- Leggings of the Shadowy Protector
+i(89267);	-- Leggings of the Shadowy Vanquisher
+
+-- Tier 14 N [HoF/ToES]
+i(89235);	-- Helm of the Shadowy Conqueror
+i(89236);	-- Helm of the Shadowy Protector
+i(89234);	-- Helm of the Shadowy Vanquisher
+i(89246);	-- Shoulders of the Shadowy Conqueror
+i(89247);	-- Shoulders of the Shadowy Protector
+i(89248);	-- Shoulders of the Shadowy Vanquisher
+i(89237);	-- Chest of the Shadowy Conqueror
+i(89238);	-- Chest of the Shadowy Protector
+i(89239);	-- Chest of the Shadowy Vanquisher
+i(89240);	-- Gauntlets of the Shadowy Conqueror
+i(89241);	-- Gauntlets of the Shadowy Protector
+i(89242);	-- Gauntlets of the Shadowy Vanquisher
+i(89243);	-- Leggings of the Shadowy Conqueror
+i(89244);	-- Leggings of the Shadowy Protector
+i(89245);	-- Leggings of the Shadowy Vanquisher
+
+-- Tier 14 H [HoF/ToES]
+i(89259);	-- Helm of the Shadowy Conqueror
+i(89260);	-- Helm of the Shadowy Protector
+i(89258);	-- Helm of the Shadowy Vanquisher
+i(89262);	-- Shoulders of the Shadowy Conqueror
+i(89263);	-- Shoulders of the Shadowy Protector
+i(89261);	-- Shoulders of the Shadowy Vanquisher
+i(89250);	-- Chest of the Shadowy Conqueror
+i(89251);	-- Chest of the Shadowy Protector
+i(89249);	-- Chest of the Shadowy Vanquisher
+i(89256);	-- Gauntlets of the Shadowy Conqueror
+i(89257);	-- Gauntlets of the Shadowy Protector
+i(89255);	-- Gauntlets of the Shadowy Vanquisher
+i(89253);	-- Leggings of the Shadowy Conqueror
+i(89254);	-- Leggings of the Shadowy Protector
+i(89252);	-- Leggings of the Shadowy Vanquisher
+
+-- Tier 15 LFR [ToT]
+i(95880);	-- Helm of the Crackling Conqueror
+i(95881);	-- Helm of the Crackling Protector
+i(95879);	-- Helm of the Crackling Vanquisher
+i(95956);	-- Shoulders of the Crackling Conqueror
+i(95957);	-- Shoulders of the Crackling Protector
+i(95955);	-- Shoulders of the Crackling Vanquisher
+i(95823);	-- Chest of the Crackling Conqueror
+i(95824);	-- Chest of the Crackling Protector
+i(95822);	-- Chest of the Crackling Vanquisher
+i(95856);	-- Gauntlets of the Crackling Conqueror
+i(95857);	-- Gauntlets of the Crackling Protector
+i(95855);	-- Gauntlets of the Crackling Vanquisher
+i(95888);	-- Leggings of the Crackling Conqueror
+i(95889);	-- Leggings of the Crackling Protector
+i(95887);	-- Leggings of the Crackling Vanquisher
+
+-- Tier 15 N [ToT]
+i(95577);	-- Helm of the Crackling Conqueror
+i(95582);	-- Helm of the Crackling Protector
+i(95571);	-- Helm of the Crackling Vanquisher
+i(95578);	-- Shoulders of the Crackling Conqueror
+i(95583);	-- Shoulders of the Crackling Protector
+i(95573);	-- Shoulders of the Crackling Vanquisher
+i(95574);	-- Chest of the Crackling Conqueror
+i(95579);	-- Chest of the Crackling Protector
+i(95569);	-- Chest of the Crackling Vanquisher
+i(95575);	-- Gauntlets of the Crackling Conqueror
+i(95580);	-- Gauntlets of the Crackling Protector
+i(95570);	-- Gauntlets of the Crackling Vanquisher
+i(95576);	-- Leggings of the Crackling Conqueror
+i(95581);	-- Leggings of the Crackling Protector
+i(95572);	-- Leggings of the Crackling Vanquisher
+
+-- Tier 15 H [ToT]
+i(96624);	-- Helm of the Crackling Conqueror
+i(96625);	-- Helm of the Crackling Protector
+i(96623);	-- Helm of the Crackling Vanquisher
+i(96700);	-- Shoulders of the Crackling Conqueror
+i(96701);	-- Shoulders of the Crackling Protector
+i(96699);	-- Shoulders of the Crackling Vanquisher
+i(96567);	-- Chest of the Crackling Conqueror
+i(96568);	-- Chest of the Crackling Protector
+i(96566);	-- Chest of the Crackling Vanquisher
+i(96600);	-- Gauntlets of the Crackling Conqueror
+i(96601);	-- Gauntlets of the Crackling Protector
+i(96599);	-- Gauntlets of the Crackling Vanquisher
+i(96632);	-- Leggings of the Crackling Conqueror
+i(96633);	-- Leggings of the Crackling Protector
+i(96631);	-- Leggings of the Crackling Vanquisher
+
+-- Tier 16 LFR [SoO]
+i(105861); 	-- Essence of the Cursed Conqueror
+i(105860); 	-- Essence of the Cursed Protector
+i(105862); 	-- Essence of the Cursed Vanquisher
+i(99672);	-- Helm of the Cursed Conqueror
+i(99673);	-- Helm of the Cursed Protector
+i(99671);	-- Helm of the Cursed Vanquisher
+i(99669);	-- Shoulders of the Cursed Conqueror
+i(99670);	-- Shoulders of the Cursed Protector
+i(99668);	-- Shoulders of the Cursed Vanquisher
+i(99678);	-- Chest of the Cursed Conqueror
+i(99679);	-- Chest of the Cursed Protector
+i(99677);	-- Chest of the Cursed Vanquisher
+i(99681);	-- Gauntlets of the Cursed Conqueror
+i(99667);	-- Gauntlets of the Cursed Protector
+i(99680);	-- Gauntlets of the Cursed Vanquisher
+i(99675);	-- Leggings of the Cursed Conqueror
+i(99676);	-- Leggings of the Cursed Protector
+i(99674);	-- Leggings of the Cursed Vanquisher
+
+-- Tier 16 N [SoO]
+i(105864);	-- Essence of the Cursed Conqueror
+i(105863);	-- Essence of the Cursed Protector
+i(105865);	-- Essence of the Cursed Vanquisher
+i(99749);	-- Helm of the Cursed Conqueror
+i(99750);	-- Helm of the Cursed Protector
+i(99748);	-- Helm of the Cursed Vanquisher
+i(99755);	-- Shoulders of the Cursed Conqueror
+i(99756);	-- Shoulders of the Cursed Protector
+i(99754);	-- Shoulders of the Cursed Vanquisher
+i(99743);	-- Chest of the Cursed Conqueror
+i(99744);	-- Chest of the Cursed Protector
+i(99742);	-- Chest of the Cursed Vanquisher
+i(99746);	-- Gauntlets of the Cursed Conqueror
+i(99747);	-- Gauntlets of the Cursed Protector
+i(99745);	-- Gauntlets of the Cursed Vanquisher
+i(99752);	-- Leggings of the Cursed Conqueror
+i(99753);	-- Leggings of the Cursed Protector
+i(99751);	-- Leggings of the Cursed Vanquisher
+
+-- Tier 16 H [SoO]
+i(105858);	-- Essence of the Cursed Conqueror
+i(105857);	-- Essence of the Cursed Protector
+i(105859);	-- Essence of the Cursed Vanquisher
+i(99689);	-- Helm of the Cursed Conqueror
+i(99694);	-- Helm of the Cursed Protector
+i(99683);	-- Helm of the Cursed Vanquisher
+i(99690);	-- Shoulders of the Cursed Conqueror
+i(99695);	-- Shoulders of the Cursed Protector
+i(99685);	-- Shoulders of the Cursed Vanquisher
+i(99686);	-- Chest of the Cursed Conqueror
+i(99691);	-- Chest of the Cursed Protector
+i(99696);	-- Chest of the Cursed Vanquisher
+i(99687);	-- Gauntlets of the Cursed Conqueror
+i(99692);	-- Gauntlets of the Cursed Protector
+i(99682);	-- Gauntlets of the Cursed Vanquisher
+i(99688);	-- Leggings of the Cursed Conqueror
+i(99693);	-- Leggings of the Cursed Protector
+i(99684);	-- Leggings of the Cursed Vanquisher
+
+-- Tier 16 M [SoO]
+i(105867);	-- Essence of the Cursed Conqueror
+i(105866);	-- Essence of the Cursed Protector
+i(105868);	-- Essence of the Cursed Vanquisher
+i(99724);	-- Helm of the Cursed Conqueror
+i(99725);	-- Helm of the Cursed Protector
+i(99723);	-- Helm of the Cursed Vanquisher
+i(99718);	-- Shoulders of the Cursed Conqueror
+i(99719);	-- Shoulders of the Cursed Protector
+i(99717);	-- Shoulders of the Cursed Vanquisher
+i(99715);	-- Chest of the Cursed Conqueror
+i(99716);	-- Chest of the Cursed Protector
+i(99714);	-- Chest of the Cursed Vanquisher
+i(99721);	-- Gauntlets of the Cursed Conqueror
+i(99722);	-- Gauntlets of the Cursed Protector
+i(99720);	-- Gauntlets of the Cursed Vanquisher
+i(99712);	-- Leggings of the Cursed Conqueror
+i(99713);	-- Leggings of the Cursed Protector
+i(99726);	-- Leggings of the Cursed Vanquisher
 
 -- Tier 17 N [BRF]
 i(119310, { ["modID"] = 3, });	-- Essence of the Iron Conqueror

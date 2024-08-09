@@ -300,13 +300,16 @@ for spellID,learnedAt in pairs({
 	[16978] = 280,	-- Blazing Rapier
 	[15295] = 280,	-- Dark Iron Shoulders
 	[16973] = 280,	-- Enchanted Battlehammer
+	[461733] = 280,	-- Finely-Enchanted Battlehammer
 	[16971] = 280,	-- Huge Thorium Battleaxe
 	[16652] = 280,	-- Thorium Boots
 	[16653] = 280,	-- Thorium Helm
 	[15296] = 285,	-- Dark Iron Plate
+	[461667] = 285,	-- Tempered Dark Iron Plate
 	[16667] = 285,	-- Demon Forged Breastplate
 	[16654] = 285,	-- Radiant Gloves
 	[16983] = 285,	-- Serenity
+	[461718] = 285,	-- Tranquility
 	[16985] = 290,	-- Corruption
 	[16660] = 290,	-- Dawnbringer Shoulders
 	[16655] = 290,	-- Fiery Plate Gauntlets
@@ -320,6 +323,7 @@ for spellID,learnedAt in pairs({
 	[16658] = 295,	-- Imperial Plate Helm
 	[16659] = 295,	-- Radiant Circlet
 	[16661] = 295,	-- Storm Gauntlets
+	[461737] = 295,	-- Tempest Gauntlets
 	[16991] = 300,	-- Annihilator
 	[16990] = 300,	-- Arcanite Champion
 	[16994] = 300,	-- Arcanite Reaper
@@ -352,9 +356,11 @@ for spellID,learnedAt in pairs({
 	[23633] = 300,	-- Gloves of the Dawn
 	[16988] = 300,	-- Hammer of the Titans
 	[16995] = 300,	-- Heartseeker
+	[461716] = 300,	-- Deadly Heartseeker
 	[27585] = 300,	-- Heavy Obsidian Belt
 	[23629] = 300,	-- Heavy Timbermaw Boots
 	[16728] = 300,	-- Helm of the Great Chief
+	[461739] = 300,	-- Warcrest of the Great Chief
 	[28244] = 300,	-- Icebane Bracers
 	[28242] = 300,	-- Icebane Breastplate
 	[28243] = 300,	-- Icebane Gauntlets
@@ -505,6 +511,7 @@ for spellID,learnedAt in pairs({
 	[15596] = 265,	-- Smoking Heart of the Mountain
 	[20009] = 270,	-- Enchant Bracer - Superior Spirit
 	[20012] = 270,	-- Enchant Gloves - Greater Agility
+	[463869] = 275,	-- Conductive Shield Coating
 	[20024] = 275,	-- Enchant Boots - Spirit
 	[20026] = 275,	-- Enchant Chest - Major Health
 	[25128] = 275,	-- Wizard Oil
@@ -540,6 +547,7 @@ for spellID,learnedAt in pairs({
 	[25073] = 300,	-- Enchant Gloves - Shadow Power
 	[25080] = 300,	-- Enchant Gloves - Superior Agility
 	[25072] = 300,	-- Enchant Gloves - Threat
+	[463871] = 300,	-- Enchant Shield - Law of Nature
 	[20034] = 300,	-- Enchant Weapon - Crusader
 	[22750] = 300,	-- Enchant Weapon - Healing Power
 	[20032] = 300,	-- Enchant Weapon - Lifestealing
@@ -914,6 +922,7 @@ for spellID,learnedAt in pairs({
 	[19076] = 285,	-- Volcanic Breastplate
 	[19080] = 285,	-- Warbear Woolies
 	[19085] = 290,	-- Black Dragonscale Breastplate
+	[461655] = 290,	-- Hardened Black Dragonscale Breastplate
 	[19081] = 290,	-- Chimeric Vest
 	[23705] = 290,	-- Dawn Treaders
 	[19084] = 290,	-- Devilsaur Gauntlets
@@ -928,7 +937,9 @@ for spellID,learnedAt in pairs({
 	[19090] = 295,	-- Stormshroud Shoulders
 	[20855] = 300,	-- Black Dragonscale Boots
 	[19107] = 300,	-- Black Dragonscale Leggings
+	[461657] = 300,	-- Hardened Black Dragonscale Leggings
 	[19094] = 300,	-- Black Dragonscale Shoulders
+	[461659] = 300,	-- Hardened Black Dragonscale Shoulders
 	[24124] = 300,	-- Blood Tiger Breastplate
 	[24125] = 300,	-- Blood Tiger Shoulders
 	[24654] = 300,	-- Blue Dragonscale Leggings

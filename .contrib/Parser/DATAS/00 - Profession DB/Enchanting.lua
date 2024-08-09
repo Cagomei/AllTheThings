@@ -32,6 +32,15 @@ i(215141, 439156);	-- Sigil of Innovation
 i(223163, 448624);	-- Scroll of Spatial Mending
 --- QUEST ---
 i(0, 446243);		-- Sigil of Living Dreams
+
+------------------
+-- PATCH 1.15.3 --
+------------------
+--- ITEM ---
+i(228981, 463869);	-- Conductive Shield Coating
+i(229008, 25081);	-- Enchant Cloak - Greater Fire Resistance
+i(229009, 25082);	-- Enchant Cloak - Greater Nature Resistance
+i(228982, 463871);	-- Enchant Shield - Law of Nature
 -- #endif
 
 -----------------

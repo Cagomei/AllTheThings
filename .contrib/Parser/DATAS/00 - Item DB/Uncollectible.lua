@@ -1324,6 +1324,7 @@ i(200848);	-- Decorative Bouquet
 i(200793);	-- Decorative Sail
 i(200451);	-- Deep Sea Star
 i(193420);	-- Depleted Mana Stone
+i(198541);	-- Depleted Violet Vapors
 i(200815);	-- Deposited
 i(192652);	-- Discharged Thunderscale
 i(198440);	-- Discounted Meat
@@ -1841,6 +1842,7 @@ i(217169);	-- Cloak of Beards
 i(220256);	-- Clump of Rotting Detritus
 i(220267);	-- Combustible Gland
 i(228482);	-- Cracked Iridescent Pearl
+i(228496);	-- Cracked Lantern
 i(225827);	-- Cracked Pickaxe
 i(228387);	-- Crumbling Bismuth
 i(225804);	-- Crumpled Patrol Assignment
@@ -1927,6 +1929,7 @@ i(220297);	-- Rock-Encrusted Plates
 i(228609);	-- Rock Roasting for Dummies
 i(217164);	-- Royal Nailpicker
 i(225807);	-- Rune-Carved Bone
+i(228497);	-- Rusted Airship Cog
 i(228399);	-- Sad Rock
 i(220236);	-- Sanguineous Sac
 i(220239);	-- Severed Spiraled Tail
@@ -1965,6 +1968,7 @@ i(220295);	-- Unidentified Viscous Substance
 i(225828);	-- Unrefined Dense Ore
 i(218453);	-- Unusable Fragment
 i(220289);	-- Venomous Stinger
+i(220293);	-- Very Soft Wool
 i(220270);	-- Vile Catalyst
 i(223884);	-- Volatile Transmutation
 i(220276);	-- Wax-Covered Helmet
@@ -1977,8 +1981,9 @@ i(222693);	-- Hearty Food
 i(222740);	-- Hearty Meals
 i(228721);	-- Hearty Feast
 -- ?
-i(225202);	-- Pilfer Through Parts
+i(216708);	-- Holy Candle
 i(225251);	-- Disassemble Invention
+i(225202);	-- Pilfer Through Parts
 -- vendor food
 i(227299);	-- Acid Braised Beetle
 i(227305);	-- Airship Dog on a Bun
