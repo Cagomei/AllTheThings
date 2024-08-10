@@ -393,6 +393,34 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 60,
 			})),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, q(84495, {	-- Fiery Plate Gauntlets
+				["qg"] = 10637,	-- Malyfous Darkhammer <The Thorium Brotherhood>
+				["sourceQuest"] = 5103,	-- Hot Fiery Death
+				-- #if BEFORE TBC
+				["requireSkill"] = 9788,	-- Armorsmith
+				-- #else
+				["requireSkill"] = BLACKSMITHING,
+				-- #endif
+				["coord"] = { 61.0, 38.8, WINTERSPRING },
+				["timeline"] = { "added 1.15.3" },
+				["cost"] = {
+					{ "i", 12812, 1 },	-- Unfired Plate Gauntlets
+					{ "i", 12655, 6 },	-- Enchanted Thorium Bar
+					{ "i", 7078, 2 },	-- Essence of Fire
+					{ "i", 7910, 4 },	-- Star Ruby
+				},
+				["lvl"] = 55,
+				["groups"] = {
+					i(227909, {	-- Plans: Fiery Plate Gauntlets of the Hidden Technique (RECIPE!)
+						["timeline"] = { "added 1.15.3" },
+					}),
+					i(227865, {	-- Fiery Plate Gauntlets of the Hidden Technique
+						["timeline"] = { "added 1.15.3" },
+					}),
+				},
+			})),
+			-- #endif
 			q(5124, {	-- Fiery Plate Gauntlets
 				["qg"] = 10637,	-- Malyfous Darkhammer <The Thorium Brotherhood>
 				["sourceQuest"] = 5103,	-- Hot Fiery Death
@@ -402,7 +430,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["requireSkill"] = BLACKSMITHING,
 				-- #endif
 				["coord"] = { 61.0, 38.8, WINTERSPRING },
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
 				["cost"] = {
 					{ "i", 12812, 1 },	-- Unfired Plate Gauntlets
 					{ "i", 12655, 6 },	-- Enchanted Thorium Bar
@@ -412,10 +446,22 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 55,
 				["groups"] = {
 					i(12699, {	-- Plans: Fiery Plate Gauntlets (RECIPE!)
-						["timeline"] = { REMOVED_4_0_3 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_4_0_3,
+							-- #endif
+						},
 					}),
 					i(12631, {	-- Fiery Plate Gauntlets
-						["timeline"] = { REMOVED_4_0_3 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_4_0_3,
+							-- #endif
+						},
 					}),
 				},
 			}),
@@ -1384,10 +1430,26 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				i(14513, {	-- Pattern: Robe of the Archmage
 					["cr"] = 9264,	-- Firebrand Pyromancer
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227906, {	-- Pattern: Masterwork Volcanic Breastplate (RECIPE!)
+					["timeline"] = { "added 1.15.3" },
+					["cr"] = 9259,	-- Firebrand Grunt
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227907, {	-- Pattern: Masterwork Volcanic Shoulders (RECIPE!)
+					["timeline"] = { "added 1.15.3" },
+					["cr"] = 9260,	-- Firebrand Legionnaire
+				})),
+				-- #endif
 				i(15749, {	-- Pattern: Volcanic Breastplate (RECIPE!)
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["cr"] = 9259,	-- Firebrand Grunt
 				}),
 				i(15775, {	-- Pattern: Volcanic Shoulders (RECIPE!)
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["cr"] = 9260,	-- Firebrand Legionnaire
 				}),
 				i(13494, {	-- Recipe: Greater Fire Protection Potion (RECIPE!)
@@ -1435,8 +1497,26 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					n(10263, {	-- Burning Felguard
 						["description"] = "This mob is infinitely farmable if you don't kill all of the Scarshield Warlocks.",
 						["groups"] = {
-							i(13181),	-- Demonskin Gloves
-							i(13182),	-- Phase Blade
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228554, {	-- Demonskin Gloves
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
+							i(13181, {	-- Demonskin Gloves
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { "removed 1.15.3" },
+								-- #endif
+							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228555, {	-- Phase Blade
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
+							i(13182, {	-- Phase Blade
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { "removed 1.15.3" },
+								-- #endif
+							}),
 						},
 					}),
 				},
@@ -1453,7 +1533,16 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["description"] = "This is a rare that is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
 				["groups"] = {
 					i(13285),	-- The Blackrock Slicers
-					i(13284),	-- Swiftdart Battleboots
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228557, {	-- Swiftdart Battleboots
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13284, {	-- Swiftdart Battleboots
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 				},
 			}),
 			n(9219, {	-- Spirestone Butcher (Rare)
@@ -1464,16 +1553,52 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["description"] = "This is a rare that is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
 				["groups"] = {
 					i(13286),	-- Rivenspike
-					i(12608),	-- Butcher's Apron
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228556, {	-- Butcher's Apron
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(12608, {	-- Butcher's Apron
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 				},
 			}),
 			n(9217, {	-- Spirestone Lord Magus (Rare)
 				["coord"] = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
-					i(13261),	-- Globe of D'sak
-					i(13282),	-- Ogreseer Tower Boots
-					i(13283),	-- Magus Ring
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228563, {	-- Globe of D'sak
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13261, {	-- Globe of D'sak
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228564, {	-- Ogreseer Tower Boots
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13282, {	-- Ogreseer Tower Boots
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228565, {	-- Magus Ring
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13283, {	-- Magus Ring
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 				},
 			}),
 			e(388, {	-- Highlord Omokk
@@ -1481,16 +1606,45 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["groups"] = {
 					i(12534),	-- Omokk's Head
 					i(12336),	-- Gemstone of Spirestone
-					i(13167),	-- Fist of Omokk
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228570, {	-- Fist of Omokk
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13167, {	-- Fist of Omokk
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 					i(151412, {	-- Ogre Highlord's Casque
 						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(13166),	-- Slamshot Shoulders
-					i(13168),	-- Plate of the Shaman King
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228571, {	-- Plate of the Shaman King
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13168, {	-- Plate of the Shaman King
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 					i(13170),	-- Skyshroud Leggings
 					i(13169),	-- Tressermane Leggings
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(226752, {	-- Boots of Elements
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
 					i(16670, {	-- Boots of Elements
-						["timeline"] = { REMOVED_4_0_3 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_4_0_3,
+							-- #endif
+						},
 					}),
 				},
 			}),
@@ -1507,13 +1661,60 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(13352, {	-- Vosh'gajin's Snakestone
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
-					i(12651),	-- Blackcrow
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228559, {	-- Blackcrow
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(12651, {	-- Blackcrow
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 					i(12653),	-- Riphook
-					i(13257),	-- Demonic Runed Spaulders
-					i(12626),	-- Funeral Cuffs
-					i(13255),	-- Trueaim Gauntlets
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228562, {	-- Demonic Runed Spaulders
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13257, {	-- Demonic Runed Spaulders
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228558, {	-- Funeral Cuffs
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(12626, {	-- Funeral Cuffs
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228561, {	-- Trueaim Gauntlets
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13255, {	-- Trueaim Gauntlets
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(226702, {	-- Shadowcraft Gloves
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
 					i(16712, {	-- Shadowcraft Gloves
-						["timeline"] = { REMOVED_4_0_3 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_4_0_3,
+							-- #endif
+						},
 					}),
 					i(151413, {	-- Smolderthorn Greatbelt
 						["timeline"] = { ADDED_7_3_0 },
@@ -1546,12 +1747,50 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #endif
 						["timeline"] = { REMOVED_2_0_1, ADDED_10_1_7 },
 					}),
-					i(13177),	-- Talisman of Evasion
-					i(13179),	-- Brazecore Armguards
-					i(16676, {	-- Beaststalker's Gloves
-						["timeline"] = { REMOVED_4_0_3 },
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228574, {	-- Talisman of Evasion
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13177, {	-- Talisman of Evasion
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					}),
-					i(22231),	-- Kayser's Boots of Precision
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228572, {	-- Brazecore Armguards
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13179, {	-- Brazecore Armguards
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(226721, {	-- Beaststalker's Gloves
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(16676, {	-- Beaststalker's Gloves
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_4_0_3,
+							-- #endif
+						},
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228594, {	-- Kayser's Boots of Precision
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(22231, {	-- Kayser's Boots of Precision
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 					-- #if BEFORE MOP
 					i(28972, {	-- Flightblade Throwing Axe [TBC]
 						["timeline"] = {
@@ -1596,10 +1835,28 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["questID"] = 8989,	-- The Right Piece of Lord Valthalak's Amulet [DRUID, PALADIN, SHAMAN]
 						["provider"] = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
 					}),
-					i(22322),	-- The Jaw Breaker
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228600, {	-- The Jaw Breaker
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(22322, {	-- The Jaw Breaker
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 					i(22319),	-- Tome of Divine Right
 					i(22325),	-- Belt of the Trickster
-					i(22306),	-- Ironweave Belt
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228596, {	-- Ironweave Belt
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(22306, {	-- Ironweave Belt
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 					i(22398, {	-- Idol of Rejuvenation
 						["timeline"] = { REMOVED_5_0_4 },
 					}),
@@ -1618,8 +1875,26 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["groups"] = {
 					i(12838),	-- Plans: Arcanite Reaper (RECIPE!)
 					i(12621),	-- Demonfork
-					i(12637),	-- Backusarian Gauntlets
-					i(12634),	-- Chiselbrand Girdle
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228568, {	-- Backusarian Gauntlets
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(12637, {	-- Backusarian Gauntlets
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228567, {	-- Chiselbrand Girdle
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(12634, {	-- Chiselbrand Girdle
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 				},
 			}),
 			n(10376, {	-- Crystal Fang (Rare)
@@ -1630,8 +1905,26 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["description"] = "This is a rare that is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
 				-- #endif
 				["groups"] = {
-					i(13218),	-- Fang of the Crystal Spider
-					i(13185),	-- Sunderseer Mantle
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228592, {	-- Fang of the Crystal Spider
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13218, {	-- Fang of the Crystal Spider
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228590, {	-- Sunderseer Mantle
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13185, {	-- Sunderseer Mantle
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 					i(13184),	-- Fallbrush Handgrips
 				},
 			}),
@@ -1641,15 +1934,53 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(68673, {	-- Smolderthorn Hatchling (PET!)
 						["timeline"] = { ADDED_4_0_6 },
 					}),
-					i(13183),	-- Venomspitter
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228573, {	-- Venomspitter
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13183, {	-- Venomspitter
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 					i(151414, {	-- Arcanophile's Greatcloak
 						["timeline"] = { ADDED_7_3_0 },
 					}),
-					i(13244),	-- Gilded Gauntlets
-					i(16715, {	-- Wildheart Boots
-						["timeline"] = { REMOVED_4_0_3 },
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228577, {	-- Gilded Gauntlets
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13244, {	-- Gilded Gauntlets
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					}),
-					i(13213),	-- Smolderweb's Eye
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(226713, {	-- Wildheart Boots
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(16715, {	-- Wildheart Boots
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_4_0_3,
+							-- #endif
+						},
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228576, {	-- Smolderweb's Eye
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13213, {	-- Smolderweb's Eye
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 				},
 			}),
 			e(392, {	-- Urok Doomhowl
@@ -1668,7 +1999,16 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { REMOVED_4_0_1 },
 					}),
 					i(13258),	-- Slaghide Gauntlets
-					applyclassicphase(PHASE_FIVE, i(22232)),	-- Marksman's Girdle
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228595, {	-- Marksman's Girdle
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					applyclassicphase(PHASE_FIVE, i(22232, {	-- Marksman's Girdle
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					})),
 					i(13259),	-- Ribsteel Footguards
 					i(13178),	-- Rosewine Circle
 				},
@@ -1704,8 +2044,26 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["creatureID"] = 10220,	-- Halycon
 				["groups"] = {
 					i(13212),	-- Halcyon's Spiked Collar
-					applyclassicphase(PHASE_FIVE, i(22313)),	-- Ironweave Bracers
-					i(13211),	-- Slashclaw Bracers
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228598, {	-- Ironweave Bracers
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					applyclassicphase(PHASE_FIVE, i(22313, {	-- Ironweave Bracers
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					})),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228575, {	-- Slashclaw Bracers
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13211, {	-- Slashclaw Bracers
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 					i(13210),	-- Pads of the Dread Wolf
 				},
 			}),
@@ -1713,12 +2071,32 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["creatureID"] = 10268,	-- Gizrul the Slavener
 				["description"] = "Summoned immediately after Halycon is defeated.",
 				["groups"] = {
-					i(13205),	-- Rhombeard Protector
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228591, {	-- Rhombeard Protector
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13205, {	-- Rhombeard Protector
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 					i(151418, {	-- Raider Aspirant's Helm
 						["timeline"] = { ADDED_7_3_0 },
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(226710, {	-- Wildheart Spaulders
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
 					i(16718, {	-- Wildheart Spaulders
-						["timeline"] = { REMOVED_4_0_3 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_4_0_3,
+							-- #endif
+						},
 					}),
 					i(151417, {	-- Worg-Keeper's Spaulders
 						["timeline"] = { ADDED_7_3_0 },
@@ -1766,6 +2144,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(12337),	-- Gemstone of Bloodaxe
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228586, {	-- Chillpike
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
 					i(13148, {	-- Chillpike
 						-- #if BEFORE 10.1.7
 						["description"] = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
@@ -1773,19 +2156,92 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["isBounty"] = true,
 						-- #endif
 						-- #endif
-						["timeline"] = { REMOVED_2_0_1, ADDED_10_1_7 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_2_0_1, ADDED_10_1_7,
+							-- #endif
+						},
 					}),
-					i(13163),	-- Relentless Scythe
-					i(13161),	-- Trindlehaven Staff
-					i(13162),	-- Reiver Claws
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228601, {	-- Relentless Scythe
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13163, {	-- Relentless Scythe
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228587, {	-- Trindlehaven Staff
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13161, {	-- Trindlehaven Staff
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228588, {	-- Reiver Claws
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13162, {	-- Reiver Claws
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(226716, {	-- Beaststalker's Mantle
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
 					i(16679, {	-- Beaststalker's Mantle
-						["timeline"] = { REMOVED_4_0_3 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_4_0_3,
+							-- #endif
+						},
 					}),
-					i(13143),	-- Mark of the Dragon Lord
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228585, {	-- Mark of the Dragon Lord
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13143, {	-- Mark of the Dragon Lord
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228589, {	-- Heart of the Scale
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
 					i(13164, {	-- Heart of the Scale
-						["timeline"] = { REMOVED_4_0_3 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_4_0_3,
+							-- #endif
+						},
 					}),
-					applyclassicphase(PHASE_FIVE, i(22321)),	-- Heart of Wyrmthalak
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228599, {	-- Heart of Wyrmthalak
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					applyclassicphase(PHASE_FIVE, i(22321, {	-- Heart of Wyrmthalak
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					})),
 				},
 			}),
 		-- #if BEFORE 6.0.1
@@ -1819,7 +2275,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { REMOVED_6_0_2 },
 						["cr"] = 10317,	-- Blackhand Elite <Blackhand Legion>
 					}),
-					applyclassicphase(PHASE_SIX, i(24102, {	-- Manual of Eviscerate IX
+					applyclassicphase(PHASE_SIX_CLASS_BOOKS, i(24102, {	-- Manual of Eviscerate IX
 						["timeline"] = { REMOVED_4_0_1 },
 						["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
 						-- #if BEFORE 4.0.1
@@ -1835,7 +2291,16 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					-- #endif
 					-- #if BEFORE 6.0.2
-					i(13260),	-- Wind Dancer Boots
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228593, {	-- Wind Dancer Boots
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13260, {	-- Wind Dancer Boots
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 					-- #endif
 				}),
 				prof(SKINNING, {
@@ -1851,28 +2316,61 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				n(9816, {	-- Pyroguard Emberseer
 					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
-						applyclassicphase(PHASE_FIVE, i(21988, {	-- Ember of Emberseer
+						applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(21988, {	-- Ember of Emberseer
 							["timeline"] = { REMOVED_4_0_3 },
 						})),
 						i(17322, {	-- Eye of the Emberseer
 							["timeline"] = { REMOVED_3_0_8 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228584, {	-- Emberfury Talisman
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12929, {	-- Emberfury Talisman
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
 						i(12905, {	-- Wildfire Cape
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228583, {	-- Truestrike Shoulders
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12927, {	-- Truestrike Shoulders
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(226748, {	-- Gauntlets of Elements
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(16672, {	-- Gauntlets of Elements
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
 						i(12926, {	-- Flaming Band
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
-						applyclassicphase(PHASE_SIX, i(23320, {	-- Tablet of Flame Shock VI
+						applyclassicphase(PHASE_SIX_CLASS_BOOKS, i(23320, {	-- Tablet of Flame Shock VI
 							["timeline"] = { REMOVED_4_0_1 },
 							-- #if BEFORE 4.0.1
 							["spellID"] = 29228,	-- Flame Shock VI
@@ -1910,8 +2408,19 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(18657, {	-- Schematic: Hyper-Radiant Flame Reflector (RECIPE!)
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(226741, {	-- Devout Mantle
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(16695, {	-- Devout Mantle
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
 						i(12603, {	-- Nightbrace Tunic
 							["timeline"] = { REMOVED_6_0_2 },
@@ -1919,11 +2428,33 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(12609, {	-- Polychromatic Visionwrap
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228579, {	-- Crystallized Girdle
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12606, {	-- Crystallized Girdle
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228578, {	-- Dustfeather Sash
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12589, {	-- Dustfeather Sash
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
 					},
 				}),
@@ -1934,8 +2465,19 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(12605, {	-- Serpentine Skuller
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228566, {	-- Starfire Tiara
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12604, {	-- Starfire Tiara
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
 						i(12930, {	-- Briarwood Reed
 							["timeline"] = { REMOVED_6_0_2 },
@@ -1975,14 +2517,36 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(18048, {	-- Mastersmith's Hammer
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228672, {	-- Handcrafted Mastersmith Girdle
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(13502, {	-- Handcrafted Mastersmith Girdle
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
 						i(13498, {	-- Handcrafted Mastersmith Leggings
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228602, {	-- Flame Walkers
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(18047, {	-- Flame Walkers
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
 					},
 				}),
@@ -2007,8 +2571,19 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(12960, {	-- Tribal War Feathers
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(226753, {	-- Pauldrons of Elements
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(16669, {	-- Pauldrons of Elements
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
 					},
 				}),
@@ -2025,39 +2600,149 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(12630, {	-- Head of Rend Blackhand
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228603, {	-- Blackhand Doomsaw
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12583, {	-- Blackhand Doomsaw
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228653, {	-- Dal'Rend's Sacred Charge
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12940, {	-- Dal'Rend's Sacred Charge
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228652, {	-- Dal'Rend's Tribal Guardian
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12939, {	-- Dal'Rend's Tribal Guardian
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228757, {	-- Felstriker
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12590, {	-- Felstriker
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228604, {	-- Eye of Rend
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12587, {	-- Eye of Rend
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228605, {	-- Bonespike Shoulder
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12588, {	-- Bonespike Shoulder
 							-- #if AFTER 2.0.1
 							["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
 							["isBounty"] = true,
 							-- #endif
-							["timeline"] = { REMOVED_2_0_1 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_2_0_1,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(226768, {	-- Spaulders of Valor
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(16733, {	-- Spaulders of Valor
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228651, {	-- Battleborn Armbraces
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12936, {	-- Battleborn Armbraces
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228676, {	-- Feralsurge Girdle
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(18104, {	-- Feralsurge Girdle
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228650, {	-- Warmaster Legguards
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12935, {	-- Warmaster Legguards
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
 						i(18102, {	-- Dragonrider Boots
 							["timeline"] = { REMOVED_6_0_2 },
@@ -2065,15 +2750,26 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						applyclassicphase(PHASE_FIVE, i(22247, {	-- Faith Healer's Boots
 							["timeline"] = { REMOVED_6_0_2 },
 						})),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228675, {	-- Band of Rumination
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(18103, {	-- Band of Rumination
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
 					},
 				}),
 				n(10430, {	-- The Beast
 					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
-						applyclassicphase(PHASE_SIX, i(24101, {	-- Book of Ferocious Bite V
+						applyclassicphase(PHASE_SIX_CLASS_BOOKS, i(24101, {	-- Book of Ferocious Bite V
 							["timeline"] = { REMOVED_4_0_1 },
 							-- #if BEFORE 4.0.1
 							["spellID"] = 31018,	-- Ferocious Bite V
@@ -2084,32 +2780,120 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(12709, {	-- Pip's Skinner
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228666, {	-- Seeping Willow
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12969, {	-- Seeping Willow
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228663, {	-- Bloodmoon Cloak
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12967, {	-- Bloodmoon Cloak
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228664, {	-- Frostweaver Cape
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12968, {	-- Frostweaver Cape
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(226735, {	-- Lightforge Spaulders
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(16729, {	-- Lightforge Spaulders
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228662, {	-- Blackmist Armguards
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12966, {	-- Blackmist Armguards
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228660, {	-- Blademaster Leggings
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12963, {	-- Blademaster Leggings
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
 						i(12965, {	-- Spiritshroud Leggings
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228661, {	-- Tristam Legguards
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12964, {	-- Tristam Legguards
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228597, {	-- Ironweave Boots
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						applyclassicphase(PHASE_FIVE, i(22311, {	-- Ironweave Boots
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						})),
 						-- #if BEFORE 6.0.2
 						applyclassicphase(PHASE_THREE, i(19227)),	-- Ace of Beasts
@@ -2143,14 +2927,43 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(22336, {	-- Draconian Aegis of the Legion
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228682, {	-- Lord Valthalak's Staff of Command
+							["description"] = "This version of the staff was created and added to the DB, but doesn't seem to drop. @Crieve if you get it to drop.",
+							["timeline"] = { "created 1.15.3" },
+						})),
+						-- #endif
 						i(22335, {	-- Lord Valthalak's Staff of Command
+							-- CRIEVE NOTE: They reitemized the staff, but didn't put it into the game.
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228681, {	-- Ironweave Cowl
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(22302, {	-- Ironweave Cowl
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228684, {	-- Pendant of Celerity
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(22340, {	-- Pendant of Celerity
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
 						i(22337, {	-- Shroud of Domination
 							["timeline"] = { REMOVED_6_0_2 },
@@ -2161,8 +2974,19 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(22342, {	-- Leggings of Torment
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228683, {	-- Rune Band of Wizardry
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(22339, {	-- Rune Band of Wizardry
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
 					},
 				})),
@@ -2188,8 +3012,19 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(13519, {	-- Recipe: Flask of the Titans (RECIPE!)
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228606, {	-- Blackblade of Shahram
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12592, {	-- Blackblade of Shahram
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
 						i(12602, {	-- Draconian Deflector
 							["timeline"] = { REMOVED_6_0_2 },
@@ -2197,50 +3032,204 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						applyclassicphase(PHASE_FIVE, i(22253, {	-- Tome of the Lost
 							["timeline"] = { REMOVED_6_0_2 },
 						})),
-						applyclassicphase(PHASE_FIVE, i(22267, {	-- Spellweaver's Turban
-							["timeline"] = { REMOVED_6_0_2 },
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228677, {	-- Spellweaver's Turban
+							["timeline"] = { "added 1.15.3" },
 						})),
+						-- #endif
+						applyclassicphase(PHASE_FIVE, i(22267, {	-- Spellweaver's Turban
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
+						})),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228669, {	-- Tooth of Gnarr
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(13141, {	-- Tooth of Gnarr
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(226723, {	-- Beaststalker's Tunic
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(16674, {	-- Beaststalker's Tunic
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(226770, {	-- Breastplate of Valor
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(16730, {	-- Breastplate of Valor
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(226745, {	-- Devout Robe
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(16690, {	-- Devout Robe
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(226757, {	-- Dreadmist Robe
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(16700, {	-- Dreadmist Robe
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(226734, {	-- Lightforge Breastplate
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(16726, {	-- Lightforge Breastplate
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
-						i(16688, {	-- Magister's Robe
-							["timeline"] = { REMOVED_4_0_3 },
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(226729, {	-- Magister's Robes
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(16688, {	-- Magister's Robes
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(226700, {	-- Shadowcraft Tunic
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(16721, {	-- Shadowcraft Tunic
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(226749, {	-- Vest of Elements
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(16666, {	-- Vest of Elements
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(226715, {	-- Wildheart Vest
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(16706, {	-- Wildheart Vest
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
 						applyclassicphase(PHASE_FIVE, i(22269, {	-- Shadow Prowler's Cloak
 							["timeline"] = { REMOVED_6_0_2 },
 						})),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228670, {	-- Brigam Girdle
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(13142, {	-- Brigam Girdle
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228667, {	-- Painweaver Band
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(13098, {	-- Painweaver Band
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228678, {	-- Draconic Infused Emblem
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						applyclassicphase(PHASE_FIVE, i(22268, {	-- Draconic Infused Emblem
-							["timeline"] = { REMOVED_6_0_2 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_6_0_2,
+								-- #endif
+							},
 						})),
 					},
 				}),

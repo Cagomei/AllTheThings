@@ -329,15 +329,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(4144, {	-- Bloodpetal Sprouts
 					["qg"] = 9119,	-- Muigin
-					["sourceQuests"] = {
+					["sourceQuest"] = 4143,	-- Haze of Evil
+					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
+					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
-						82099,	-- Haze of Evil
+						"removed 1.15.2",
 						-- #else
-						4143,	-- Haze of Evil
+						REMOVED_4_0_3,
 						-- #endif
 					},
-					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
 					["groups"] = {
@@ -357,7 +357,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4146,	-- Zapper Fuel
 					["coord"] = { 45.6, 8.6, UNGORO_CRATER },
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.2",
+						-- #else
+						REMOVED_4_0_3,
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 					["groups"] = {

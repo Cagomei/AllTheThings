@@ -360,7 +360,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_THREE, i(12618, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Breastplate
 				applyclassicphase(PHASE_THREE, i(12620, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Helm
 				applyclassicphase(PHASE_THREE, i(12619, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Leggings
-				i(12631, {["timeline"] = {REMOVED_4_0_3}}),	-- Fiery Plate Gauntlets
+				i(12631, {	-- Fiery Plate Gauntlets
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3,
+						-- #endif
+					},
+				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227865, {	-- Fiery Plate Gauntlets of the Hidden Technique
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
 				i(16989),	-- Fiery Chain Girdle
 				i(16988),	-- Fiery Chain Shoulders
 				i(12636, {	-- Helm of the Great Chief
@@ -454,7 +467,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 						i(12796),	-- Hammer of the Titans
 						i(12794, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_5}}),	-- Masterwork Stormhammer
-						applyclassicphase(PHASE_FIVE, i(22384)),	-- Persuader
+						applyclassicphase(PHASE_FIVE_RECIPES, i(22384)),	-- Persuader
 						i(12781, {	-- Serenity
 							-- #if SEASON_OF_DISCOVERY
 							["timeline"] = { "removed 1.15.3" },
@@ -473,10 +486,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						i(12790, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Arcanite Champion
 						applyclassicphase(PHASE_THREE, i(19168)),	-- Blackguard
 						i(12777, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Blazing Rapier
-						i(12782),	-- Corruption
+						i(12782, {	-- Corruption
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 						i(17015),	-- Dark Iron Reaver
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227857, {	-- Desecration
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12797),	-- Frostguard
-						applyclassicphase(PHASE_FIVE, i(22383)),	-- Sageblade
+						applyclassicphase(PHASE_FIVE_RECIPES, i(22383)),	-- Sageblade
 					},
 				}),
 				n(WEAPONS, {
@@ -704,7 +726,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_THREE, i(12618, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Breastplate
 			applyclassicphase(PHASE_THREE, i(12620, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Helm
 			applyclassicphase(PHASE_THREE, i(12619, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Leggings
-			i(12631, {["timeline"] = {REMOVED_4_0_3}}),	-- Fiery Plate Gauntlets
+			i(12631, {	-- Fiery Plate Gauntlets
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227865, {	-- Fiery Plate Gauntlets of the Hidden Technique
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(16989),	-- Fiery Chain Girdle
 			i(16988),	-- Fiery Chain Shoulders
 			i(12636),	-- Helm of the Great Chief
@@ -913,7 +948,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_THREE, i(19168)),	-- Blackguard
 			i(12777, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Blazing Rapier
 			i(7959, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Blight
-			i(12782),	-- Corruption
+			i(12782, {	-- Corruption
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(17016),	-- Dark Iron Destroyer
 			i(11608),	-- Dark Iron Pulverizer
 			i(17015),	-- Dark Iron Reaver
@@ -921,6 +960,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(12774, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Dawn's Edge
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(227884, {	-- Deadly Heartseeker
+				["timeline"] = { "added 1.15.3" },
+			})),
+			applyclassicphase(SOD_PHASE_FOUR, i(227857, {	-- Desecration
 				["timeline"] = { "added 1.15.3" },
 			})),
 			-- #endif
@@ -935,9 +977,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			}),
 			i(12794, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_5}}),	-- Masterwork Stormhammer
 			applyclassicphase(PHASE_THREE, i(19169)),	-- Nightfall
-			applyclassicphase(PHASE_FIVE, i(22384)),	-- Persuader
+			applyclassicphase(PHASE_FIVE_RECIPES, i(22384)),	-- Persuader
 			i(7961, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Phantom Blade
-			applyclassicphase(PHASE_FIVE, i(22383)),	-- Sageblade
+			applyclassicphase(PHASE_FIVE_RECIPES, i(22383)),	-- Sageblade
 			i(12781),	-- Serenity
 			i(7954, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}}),	-- The Shatterer
 			-- #if SEASON_OF_DISCOVERY
@@ -1223,8 +1265,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			})),
 			-- #endif
 			i(12655),	-- Enchanted Thorium Bar
-			applyclassicphase(PHASE_FIVE, i(20747)),	-- Lesser Mana Oil
-			applyclassicphase(PHASE_FIVE, i(20746)),	-- Lesser Wizard Oil
+			applyclassicphase(PHASE_FIVE_RECIPES, i(20747)),	-- Lesser Mana Oil
+			applyclassicphase(PHASE_FIVE_RECIPES, i(20746)),	-- Lesser Wizard Oil
 			applyclassicphase(PHASE_FIVE, i(20745)),	-- Minor Mana Oil
 			applyclassicphase(PHASE_FIVE, i(20744)),	-- Minor Wizard Oil
 			i(16207, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Arcanite Rod
@@ -2343,6 +2385,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15059, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Living Breastplate
 				i(15060, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Living Leggings
 				i(15061),	-- Living Shoulders
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227868, {	-- Masterwork Volcanic Breastplate
+					["timeline"] = { "added 1.15.3" },
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227867, {	-- Masterwork Volcanic Leggings
+					["timeline"] = { "added 1.15.3" },
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227866, {	-- Masterwork Volcanic Shoulders
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
 				applyclassicphase(PHASE_THREE, i(19163)),	-- Molten Belt
 				i(16983),	-- Molten Helm
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18511, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}})),	-- Shifting Cloak
@@ -2350,9 +2403,25 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(21278, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Stormshroud Gloves
 				i(15057),	-- Stormshroud Pants
 				i(15058, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Stormshroud Shoulders
-				i(15053),	-- Volcanic Breastplate
-				i(15054, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Volcanic Leggings
-				i(15055),	-- Volcanic Shoulders
+				i(15053, {	-- Volcanic Breastplate
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
+				i(15054, {	-- Volcanic Leggings
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3, ADDED_10_1_7,
+						-- #endif
+					},
+				}),
+				i(15055, {	-- Volcanic Shoulders
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 			},
 		}),
 		prof(10660, {	-- Tribal Leatherworking
@@ -2609,15 +2678,42 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15059, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Living Breastplate
 				i(15060, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Living Leggings
 				i(15061),	-- Living Shoulders
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227868, {	-- Masterwork Volcanic Breastplate
+					["timeline"] = { "added 1.15.3" },
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227867, {	-- Masterwork Volcanic Leggings
+					["timeline"] = { "added 1.15.3" },
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227866, {	-- Masterwork Volcanic Shoulders
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
 				applyclassicphase(PHASE_THREE, i(19163)),	-- Molten Belt
 				i(16983),	-- Molten Helm
 				i(15056, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Stormshroud Armor
 				i(21278, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Stormshroud Gloves
 				i(15057),	-- Stormshroud Pants
 				i(15058, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Stormshroud Shoulders
-				i(15053),	-- Volcanic Breastplate
-				i(15054, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Volcanic Leggings
-				i(15055),	-- Volcanic Shoulders
+				i(15053, {	-- Volcanic Breastplate
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
+				i(15054, {	-- Volcanic Leggings
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3, ADDED_10_1_7,
+						-- #endif
+					},
+				}),
+				i(15055, {	-- Volcanic Shoulders
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 				-- #endif
 
 				-- #if AFTER CATA
@@ -3044,13 +3140,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(14342),	-- Mooncloth
 		}),
 		category(233, {	-- Bags
-			applyclassicphase(PHASE_FIVE, i(22249)),	-- Big Bag of Enchantment
+			applyclassicphase(PHASE_FIVE_RECIPES, i(22249)),	-- Big Bag of Enchantment
 			i(5765, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Black Silk Pack
 			i(14156),	-- Bottomless Bag
 			applyclassicphase(PHASE_FIVE, i(22251)),	-- Cenarion Herb Bag
 			i(21342),	-- Core Felcloth Bag
 			i(22246),	-- Enchanted Mageweave Pouch
-			applyclassicphase(PHASE_FIVE, i(22248)),	-- Enchanted Runecloth Bag
+			applyclassicphase(PHASE_FIVE_RECIPES, i(22248)),	-- Enchanted Runecloth Bag
 			i(21341),	-- Felcloth Bag
 			i(5764),	-- Green Silk Pack
 			i(4241),	-- Green Woolen Bag
@@ -3191,8 +3287,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(38277, {	-- Haliscan Jacket
 				["timeline"] = { ADDED_2_4_2 },
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227861, {	-- Incandescent Mooncloth Robe
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(5766),	-- Lesser Wizard's Robe
-			i(18486),	-- Mooncloth Robe
+			i(18486, {	-- Mooncloth Robe
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(14138),	-- Mooncloth Vest
 			i(2572),	-- Red Linen Robe
 			i(6239),	-- Red Linen Vest

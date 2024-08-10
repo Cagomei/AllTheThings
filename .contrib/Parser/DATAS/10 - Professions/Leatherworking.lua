@@ -1929,6 +1929,12 @@ profession(LEATHERWORKING, {
 					["name"] = "Living Shoulders",
 					["recipeID"] = 19061,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Masterwork Volcanic Shoulders",
+					["recipeID"] = 461663,
+				}),
+				-- #endif
 				-- #endif
 				{
 					["name"] = "Nightscape Shoulders",
@@ -1958,6 +1964,9 @@ profession(LEATHERWORKING, {
 				{
 					["name"] = "Volcanic Shoulders",
 					["recipeID"] = 19101,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				},
 				-- #endif
 				{
@@ -2127,6 +2136,13 @@ profession(LEATHERWORKING, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 19095,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Masterwork Volcanic Breastplate",
+					["timeline"] = { "added 1.15.3" },
+					["recipeID"] = 461661,
+				}),
+				-- #endif
 				-- #endif
 				{
 					["name"] = "Moonglow Vest",
@@ -2211,6 +2227,9 @@ profession(LEATHERWORKING, {
 				{
 					["name"] = "Volcanic Breastplate",
 					["recipeID"] = 19076,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				},
 				{
 					["name"] = "Warbear Harness",
@@ -2785,6 +2804,13 @@ profession(LEATHERWORKING, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 19078,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Masterwork Volcanic Leggings",
+					["recipeID"] = 461665,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
 				-- #endif
 				{
 					["name"] = "Nightscape Pants",
@@ -2820,7 +2846,13 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Volcanic Leggings",
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3, ADDED_10_1_7,
+						-- #endif
+					},
 					["recipeID"] = 19059,
 				},
 				{

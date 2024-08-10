@@ -177,7 +177,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16993,
 						["requireSkill"] = 17040,
 					},
-					applyclassicphase(PHASE_FIVE, {
+					applyclassicphase(PHASE_FIVE_RECIPES, {
 						["name"] = "Persuader",
 						["recipeID"] = 27830,
 						["requireSkill"] = 17040,
@@ -307,7 +307,13 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Corruption",
-						["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_7_1_5 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_2_0_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_7_1_5,
+							-- #endif
+						},
 						["recipeID"] = 16985,
 						["requireSkill"] = 17039,
 					},
@@ -316,12 +322,20 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 20890,
 						["requireSkill"] = 17039,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Desecration",
+						["recipeID"] = 461714,
+						["requireSkill"] = 17039,
+						["timeline"] = { "removed 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Frostguard",
 						["recipeID"] = 16992,
 						["requireSkill"] = 17039,
 					},
-					applyclassicphase(PHASE_FIVE, {
+					applyclassicphase(PHASE_FIVE_RECIPES, {
 						["name"] = "Sageblade",
 						["recipeID"] = 27832,
 						["requireSkill"] = 17039,

@@ -311,8 +311,10 @@ for spellID,learnedAt in pairs({
 	[16983] = 285,	-- Serenity
 	[461718] = 285,	-- Tranquility
 	[16985] = 290,	-- Corruption
+	[461714] = 290,	-- Desecration
 	[16660] = 290,	-- Dawnbringer Shoulders
 	[16655] = 290,	-- Fiery Plate Gauntlets
+	[461651] = 290,	-- Fiery Plate Gauntlets of the Hidden Technique
 	[23632] = 290,	-- Girdle of the Dawn
 	[23628] = 290,	-- Heavy Timbermaw Belt
 	[16656] = 290,	-- Radiant Boots
@@ -902,6 +904,7 @@ for spellID,learnedAt in pairs({
 	[19061] = 270,	-- Living Shoulders
 	[19055] = 270,	-- Runic Leather Gauntlets
 	[19059] = 270,	-- Volcanic Leggings
+	[461665] = 270,	-- Masterwork Volcanic Leggings
 	[19063] = 275,	-- Chimeric Boots
 	[19066] = 275,	-- Frostsaber Boots
 	[19064] = 275,	-- Heavy Scorpid Gauntlets
@@ -920,6 +923,7 @@ for spellID,learnedAt in pairs({
 	[19078] = 285,	-- Living Leggings
 	[19079] = 285,	-- Stormshroud Armor
 	[19076] = 285,	-- Volcanic Breastplate
+	[461661] = 285,	-- Masterwork Volcanic Breastplate
 	[19080] = 285,	-- Warbear Woolies
 	[19085] = 290,	-- Black Dragonscale Breastplate
 	[461655] = 290,	-- Hardened Black Dragonscale Breastplate
@@ -987,6 +991,7 @@ for spellID,learnedAt in pairs({
 	[22923] = 300,	-- Swift Flight Bracers
 	[23704] = 300,	-- Timbermaw Brawlers
 	[19101] = 300,	-- Volcanic Shoulders
+	[461663] = 300,	-- Masterwork Volcanic Shoulders
 	[19098] = 300,	-- Wicked Leather Armor
 	[19092] = 300,	-- Wicked Leather Belt
 }) do recipeDB[spellID].learnedAt = learnedAt; end
@@ -1235,6 +1240,7 @@ for spellID,learnedAt in pairs({
 	[28207] = 300,	-- Glacial Vest
 	[28209] = 300,	-- Glacial Wrists
 	[18454] = 300,	-- Gloves of Spell Mastery
+	[461708] = 300,	-- Incandescent Mooncloth Robe
 	[22868] = 300,	-- Inferno Gloves
 	[23663] = 300,	-- Mantle of the Timbermaw
 	[18445] = 300,	-- Mooncloth Bag
