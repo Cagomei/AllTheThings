@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			o(446404, {	-- Memory Cache
 				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 5x Unseeming Shift debuff to see npc near cache, kill it to obtain key for cache",
 				["coord"] = { 62.7, 88.7, AZJ_KAHET_LOWER },
-				["questID"] = 82520,	-- previous 82723?
+				["questID"] = 82724,	-- previous 82723 / 82520?
 				["g"] = {
 					i(223870),	-- Cache Key
 					--
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			}),
 			o(446423, {	-- Nest Egg
 				["coord"] = { 50.6, 48.1, AZJ_KAHET },
-				["questID"] = 82726,
+				["questID"] = 82529,
 				["g"] = {
 					i(221760),	-- Bonedrinker (PET!)
 				},
@@ -164,9 +164,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			}),
 			o(446421, {	-- Trapped Trove
 				["coord"] = { 67.4, 74.4, NERUBAR },
+				-- INFO: This is the HQT that triggers ingame when you loot it (Confirmed by Braghe, 2024-08-10)
 				["questID"] = 82727,
+				-- INFO: This is the HQT that Blizzard currently has in the DB2 file, but it doesn't match what triggers when you loot it
+				-- ["questID"] = 82528,
 				["g"] = {
 					i(222966),	-- Spinner (PET!)
+					crit(69644, {	-- Trapped Trove (INFO: manually added because linked HQT above is wrong, remove when Blizzard fixes it)
+						["achievementID"] = 40828,	-- Treasures of Azj-Kahet
+						["_noautomation"] = true,
+					}),
 				},
 			}),
 			-- The Weaver Treasures, didn't fire questID - repeatable?
@@ -251,7 +258,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			}),
 			o(446420, {	-- "Weaving Supplies"
 				["provider"] = { "o", 452708 },	-- "Weaving Supplies" // probably need to be switched
-				--["questID"] = xx,
+				["questID"] = 82527,
 				["coord"] = { 77.3, 39.0, AZJ_KAHET },
 				["g"] = {
 					-- didn't find a way to open

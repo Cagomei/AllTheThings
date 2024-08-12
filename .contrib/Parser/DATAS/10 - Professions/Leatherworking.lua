@@ -1880,6 +1880,11 @@ profession(LEATHERWORKING, {
 					["recipeID"] = 19089,
 				},
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, recipe(446186, {	-- Cacophonous Chain Shoulderguards
+					["timeline"] = { "added 1.15.2" },
+				})),
+				-- #endif
 				{
 					["name"] = "Chain Pauldrons",
 					["timeline"] = { ADDED_7_0_3 },
@@ -1932,18 +1937,40 @@ profession(LEATHERWORKING, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, {
 					["name"] = "Masterwork Volcanic Shoulders",
+					["timeline"] = { "added 1.15.3" },
 					["recipeID"] = 461663,
 				}),
 				-- #endif
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, recipe(446192, {	-- Membrane of Dark Neurosis
+					["timeline"] = { "added 1.15.2" },
+				})),
 				-- #endif
 				{
 					["name"] = "Nightscape Shoulders",
 					["recipeID"] = 10516,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, recipe(446183, {	-- Paranoia Mantle
+					["timeline"] = { "added 1.15.2" },
+				})),
+				-- #endif
 				{
 					["name"] = "Runic Leather Shoulders",
 					["recipeID"] = 19103,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, recipe(451706, {	-- Screaming Chain Pauldrons
+					["timeline"] = { "added 1.15.2" },
+				})),
+				applyclassicphase(SOD_PHASE_THREE, recipe(446189, {	-- Shoulderpads of Obsession
+					["timeline"] = { "added 1.15.2" },
+				})),
+				applyclassicphase(SOD_PHASE_THREE, recipe(446185, {	-- Shrieking Spaulders
+					["timeline"] = { "added 1.15.2" },
+				})),
+				-- #endif
 				{
 					["name"] = "Spritescale Epaulets",
 					["timeline"] = { ADDED_7_0_3 },
@@ -1968,6 +1995,11 @@ profession(LEATHERWORKING, {
 					["timeline"] = { "removed 1.15.3" },
 					-- #endif
 				},
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, recipe(446190, {	-- Wailing Chain Mantle
+					["timeline"] = { "added 1.15.2" },
+				})),
 				-- #endif
 				{
 					["name"] = "Wild Leather Shoulders",
@@ -2340,9 +2372,22 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Swift Flight Bracers",
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3, ADDED_10_1_5,
+						-- #endif
+					},
 					["recipeID"] = 22923,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Swift Flight Vambraces",
+					["timeline"] = { "added 1.15.3" },
+					["recipeID"] = 461706,
+				}),
+				-- #endif
 				{
 					["name"] = "Tough Scorpid Bracers",
 					["recipeID"] = 10533,
@@ -2601,9 +2646,23 @@ profession(LEATHERWORKING, {
 					["name"] = "Gem-studded Leather Belt",
 					["recipeID"] = 3778,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Girdle of Arcane Insight",
+					["timeline"] = { "added 1.15.3" },
+					["recipeID"] = 461754,
+				}),
+				-- #endif
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Girdle of Insight",
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3,
+						ADDED_10_1_5,
+						-- #endif
+					},
 					["recipeID"] = 22921,
 				}),
 				{
@@ -2999,10 +3058,24 @@ profession(LEATHERWORKING, {
 					["recipeID"] = 9070,
 				},
 				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Brilliant Chromatic Cloak",
+					["recipeID"] = 461653,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Chromatic Cloak",
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 22926,
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3"
+						-- #else
+						REMOVED_4_0_3,
+						ADDED_10_1_5,
+						-- #endif
+					},
 				}),
 				-- #endif
 				{
@@ -3045,6 +3118,15 @@ profession(LEATHERWORKING, {
 					["name"] = "Hillman's Cloak",
 					["recipeID"] = 3760,
 				},
+				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Mastercrafted Shifting Cloak",
+					["timeline"] = { "added 1.15.3" },
+					["recipeID"] = 461690,
+				}),
+				-- #endif
+				-- #endif
 				{
 					["name"] = "Nightscape Cloak",
 					["timeline"] = { CREATED_1_12_1 },
@@ -3057,7 +3139,13 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Shifting Cloak",
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3, ADDED_10_1_5,
+						-- #endif
+					},
 					["recipeID"] = 22928,
 				}),
 				-- #endif

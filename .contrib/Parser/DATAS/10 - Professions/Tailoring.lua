@@ -1035,6 +1035,13 @@ profession(TAILORING, {
 					["name"] = "Green Woolen Bag",
 					["recipeID"] = 3758
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Leather-Reinforced Runecloth Bag",
+					["timeline"] = { "added 1.15.3" },
+					["recipeID"] = 461727
+				}),
+				-- #endif
 				{
 					["name"] = "Linen Bag",
 					["recipeID"] = 3755
@@ -1203,6 +1210,11 @@ profession(TAILORING, {
 					["name"] = "Flarecore Mantle",
 					["recipeID"] = 20848
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, recipe(446193, {	-- Fractured Mind Pauldrons
+					["timeline"] = { "added 1.15.2" },
+				})),
+				-- #endif
 				{
 					["name"] = "Green Silken Shoulders",
 					["recipeID"] = 8774
@@ -1212,6 +1224,9 @@ profession(TAILORING, {
 					["name"] = "Invoker's Mantle",
 					["recipeID"] = 435848
 				}),
+				applyclassicphase(SOD_PHASE_THREE, recipe(446194, {	-- Mantle of Insanity
+					["timeline"] = { "added 1.15.2" },
+				})),
 				-- #endif
 				applyclassicphase(PHASE_THREE, {
 					["name"] = "Mantle of the Timbermaw",
@@ -1237,6 +1252,11 @@ profession(TAILORING, {
 					["name"] = "Shadoweave Shoulders",
 					["recipeID"] = 12076
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, recipe(446195, {	-- Shoulderpads of the Deranged
+					["timeline"] = { "added 1.15.2" },
+				})),
+				-- #endif
 				applyclassicphase(PHASE_FIVE_CATCH_UP, {
 					["name"] = "Sylvan Shoulders",
 					["recipeID"] = 28482,
@@ -1551,6 +1571,9 @@ profession(TAILORING, {
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Belt of the Archmage",
 					["recipeID"] = 22866,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				}),
 				{
 					["name"] = "Crimson Silk Belt",
@@ -1560,6 +1583,13 @@ profession(TAILORING, {
 					["name"] = "Earthen Silk Belt",
 					["recipeID"] = 8797
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Embroidered Belt of the Archmage",
+					["recipeID"] = 462282,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
 				{
 					["name"] = "Ghostweave Belt",
 					["recipeID"] = 18410

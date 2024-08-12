@@ -74,6 +74,7 @@ i("Shadoweave Mask", 10463, 12086);
 i("Black Swashbuckler's Shirt", 10728, 3873);
 i("Frostweave Tunic", 14466, 18403);
 i("Frostweave Robe", 14467, 18404);
+i("Leather-Reinforced Runecloth Bag", 228121, 461727);
 i("Runecloth Bag", 14468, 18405);
 i("Runecloth Robe", 14469, 18406);
 i("Runecloth Tunic", 14470, 18407);
@@ -128,6 +129,10 @@ i("Core Felcloth Bag", 21371, 26087);
 i("Soul Pouch", 21358, 26085);
 i("Enchanted Mageweave Pouch", 22307, 27658);
 
+i("Fractured Mind Pauldrons", 0, 446193);
+i("Mantle of Insanity", 0, 446194);
+i("Shoulderpads of the Deranged", 0, 446195);
+i("Embroidered Belt of the Archmage", 228477, 462282);
 i("Belt of the Archmage", 18414, 22866);
 i("Felcloth Gloves", 18415, 22867);
 i("Inferno Gloves", 18416, 22868);

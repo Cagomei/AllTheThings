@@ -227,6 +227,7 @@ i(2882, 3330);		-- Silvered Bronze Shoulders
 i(10858, 3494);		-- Solid Iron Maul
 i(6046, 7224);		-- Steel Weapon Chain
 i(18592, 21161);	-- Sulfuron Hammer
+i(227727, 460460);	-- Sulfuron Hammer
 i(22222, 27587);	-- Thick Obsidian Breastplate
 i(12682, 16642);	-- Thorium Armor
 i(12683, 16643);	-- Thorium Belt
@@ -348,6 +349,7 @@ i(12833, 16988, nil, MASTER_HAMMERSMITH);	-- Hammer of the Titans
 i(12837, 16993, nil, MASTER_HAMMERSMITH);	-- Masterwork Stormhammer [REMOVED: 6.0.2]
 i(22390, 27830, nil, MASTER_HAMMERSMITH);	-- Persuader
 i(12827, 16983, nil, MASTER_HAMMERSMITH);	-- Serenity
+i(227905, 461647, nil, MASTER_HAMMERSMITH);	-- Skyrider's Masterwork Stormhammer
 i(228308, 461718, nil, MASTER_HAMMERSMITH);	-- Tranquility
 -- #else
 i(19210, 23650);	-- Ebon Hand

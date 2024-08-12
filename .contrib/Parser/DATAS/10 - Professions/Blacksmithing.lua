@@ -1716,10 +1716,17 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 24141,
 				}),
 				-- #if AFTER TBC
-				applyclassicphase(TBC_PHASE_ONE, {
+				{
 					["name"] = "Dawnbringer Shoulders",
 					["recipeID"] = 16660,
-				}),
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"added 1.15.3"
+						-- #else
+						CREATED_1_12_1, ADDED_2_0_1,
+						-- #endif
+					},
+				},
 				{
 					["name"] = "Fiery Chain Shoulders",
 					["recipeID"] = 20873,
@@ -2789,13 +2796,16 @@ profession(BLACKSMITHING, {
 					["name"] = "Shadow Crescent Axe",
 					["recipeID"] = 3500,
 				},
+				-- #if AFTER TBC
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Skyrider's Masterwork Stormhammer",
+					["recipeID"] = 461647,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
 				{
 					["name"] = "Solid Iron Maul",
 					["recipeID"] = 3494,
-				},
-				{
-					["name"] = "Sulfuron Hammer",
-					["recipeID"] = 21161,
 				},
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, {
@@ -4568,7 +4578,7 @@ itemrecipe("Plans: Thorium Helm", 12694, 16653);
 itemrecipe("Plans: Radiant Gloves", 12695, 16654);
 itemrecipe("Plans: Demon Forged Breastplate", 12696, 16667);
 itemrecipe("Plans: Radiant Boots", 12697, 16656);
-itemrecipe("Plans: Dawnbringer Shoulders", 12698, 16660, TBC_PHASE_ONE);
+itemrecipe("Plans: Dawnbringer Shoulders", 12698, 16660);
 itemrecipe("Plans: Fiery Plate Gauntlets", 12699, 16655);
 itemrecipe("Plans: Imperial Plate Boots", 12700, 16657);
 itemrecipe("Plans: Imperial Plate Helm", 12701, 16658);
@@ -4792,13 +4802,6 @@ root(ROOTS.NeverImplemented, {
 		itemrecipe("Plans: Rough Bronze Bracers", 5577, 2671);
 		itemrecipe("Plans: Rune Edge", 12826, 16980);
 		itemrecipe("Plans: Thorium Greatsword", 12816, 16960);
-
-		-- #if BEFORE TBC
-		-- This wasn't implemented until TBC, it was NYI until then.
-		i(12698);	-- Plans: Dawnbringer Shoulders
-		recipe(16660),	-- Dawnbringer Shoulders
-		i(12625),	-- Dawnbringer Shoulders
-		-- #endif
 
 		-- #if AFTER TBC
 		itemrecipe("Plans: Dawnsteel Bracers", 35529);

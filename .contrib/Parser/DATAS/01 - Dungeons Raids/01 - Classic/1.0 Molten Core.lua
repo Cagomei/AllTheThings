@@ -55,7 +55,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Hydraxian Waterlords to Exalted.",
 					-- #endif
-					["maps"] = { AZSHARA },
+					["maps"] = {
+						AZSHARA,
+						-- #if SEASON_OF_DISCOVERY
+						SEARING_GORGE,
+						-- #endif
+					},
 				}),
 				ach(11741, {["timeline"] = {ADDED_7_2_0}}),	-- So Hot Right Now (Molten Core)
 			}),
@@ -64,6 +69,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["icon"] = "Interface\\Icons\\Spell_frost_summonwaterelemental",
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
+					-- #if SEASON_OF_DISCOVERY
+					["maps"] = { SEARING_GORGE },
+					-- #endif
 				}),
 			}),
 			n(QUESTS, {

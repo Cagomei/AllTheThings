@@ -83,6 +83,9 @@ for spellID,learnedAt in pairs({
 	[11476] = 250,	-- Elixir of Shadow Power
 	[3175] = 250,	-- Limited Invulnerability Potion
 	[17551] = 250,	-- Stonescale Oil
+	[446226] = 250,	-- Flask of Everlasting Nightmares
+	[446851] = 250,	-- Flask of Nightmarish Mojo
+	[448085] = 250,	-- Flask of Restless Dreams
 	[17552] = 255,	-- Mighty Rage Potion
 	[17553] = 260,	-- Superior Mana Potion
 	[17554] = 265,	-- Elixir of Superior Defense
@@ -280,6 +283,9 @@ for spellID,learnedAt in pairs({
 	[16640] = 250,	-- Dense Weightstone
 	[16642] = 250,	-- Thorium Armor
 	[16643] = 250,	-- Thorium Belt
+	[446191] = 250,	-- Baleful Pauldrons
+	[446188] = 250,	-- Fearmonger's Shoulderguards
+	[446179] = 250,	-- Shoulderplates of Dread
 	[10013] = 255,	-- Ebon Shiv
 	[16644] = 255,	-- Thorium Bracers
 	[16645] = 260,	-- Radiant Belt
@@ -377,6 +383,7 @@ for spellID,learnedAt in pairs({
 	[27588] = 300,	-- Light Obsidian Belt
 	[16729] = 300,	-- Lionheart Helm
 	[16993] = 300,	-- Masterwork Stormhammer
+	[461647] = 300,	-- Skyrider's Masterwork Stormhammer
 	[23653] = 300,	-- Nightfall
 	[27590] = 300,	-- Obsidian Mail Tunic
 	[27830] = 300,	-- Persuader
@@ -694,6 +701,9 @@ for spellID,learnedAt in pairs({
 	[19567] = 250,	-- Salt Shaker
 	[23507] = 250,	-- Snake Burst Firework
 	[26011] = 250,	-- Tranquil Mechanical Yeti
+	[446236] = 250,	-- Void-Powered Invoker's Vambraces
+	[446238] = 250,	-- Void-Powered Protector's Vambraces
+	[446237] = 250,	-- Void-Powered Slayer's Vambraces
 	[23077] = 260,	-- Gyrofreeze Ice Reflector
 	[19790] = 260,	-- Thorium Grenade
 	[19792] = 260,	-- Thorium Rifle
@@ -892,6 +902,13 @@ for spellID,learnedAt in pairs({
 	[10570] = 250,	-- Tough Scorpid Helm
 	[10574] = 250,	-- Wild Leather Cloak
 	[10572] = 250,	-- Wild Leather Leggings
+	[446186] = 250,	-- Cacophonous Chain Shoulderguards
+	[446192] = 250,	-- Membrane of Dark Neurosis
+	[446183] = 250,	-- Paranoia Mantle
+	[451706] = 250,	-- Screaming Chain Pauldrons
+	[446189] = 250,	-- Shoulderpads of Obsession
+	[446185] = 250,	-- Shrieking Spaulders
+	[446190] = 250,	-- Wailing Chain Mantle
 	[10650] = 255,	-- Dragonscale Breastplate
 	[19048] = 255,	-- Heavy Scorpid Bracers
 	[19050] = 260,	-- Green Dragonscale Breastplate
@@ -950,6 +967,7 @@ for spellID,learnedAt in pairs({
 	[28474] = 300,	-- Bramblewood Belt
 	[28473] = 300,	-- Bramblewood Boots
 	[28472] = 300,	-- Bramblewood Helm
+	[461653] = 300,	-- Brilliant Chromatic Cloak
 	[22926] = 300,	-- Chromatic Cloak
 	[23708] = 300,	-- Chromatic Gauntlets
 	[22727] = 300,	-- Core Armor Kit
@@ -957,6 +975,7 @@ for spellID,learnedAt in pairs({
 	[19097] = 300,	-- Devilsaur Leggings
 	[24703] = 300,	-- Dreamscale Breastplate
 	[19104] = 300,	-- Frostsaber Tunic
+	[461754] = 300,	-- Girdle of Arcane Insight
 	[22921] = 300,	-- Girdle of Insight
 	[23706] = 300,	-- Golden Mantle of the Dawn
 	[19100] = 300,	-- Heavy Scorpid Shoulders
@@ -984,11 +1003,13 @@ for spellID,learnedAt in pairs({
 	[24851] = 300,	-- Sandstalker Breastplate
 	[24850] = 300,	-- Sandstalker Gauntlets
 	[22928] = 300,	-- Shifting Cloak
+	[461690] = 300,	-- Mastercrafted Shifting Cloak
 	[24846] = 300,	-- Spitfire Bracers
 	[24848] = 300,	-- Spitfire Breastplate
 	[24847] = 300,	-- Spitfire Gauntlets
 	[26279] = 300,	-- Stormshroud Gloves
 	[22923] = 300,	-- Swift Flight Bracers
+	[461706] = 300,	-- Swift Flight Vambraces
 	[23704] = 300,	-- Timbermaw Brawlers
 	[19101] = 300,	-- Volcanic Shoulders
 	[461663] = 300,	-- Masterwork Volcanic Shoulders
@@ -1219,6 +1240,7 @@ for spellID,learnedAt in pairs({
 	[18444] = 295,	-- Runecloth Headband
 	[23665] = 300,	-- Argent Shoulders
 	[22866] = 300,	-- Belt of the Archmage
+	[462282] = 300,	-- Embroidered Belt of the Archmage
 	[27660] = 300,	-- Big Bag of Enchantment
 	[24093] = 300,	-- Bloodvine Boots
 	[24092] = 300,	-- Bloodvine Leggings
@@ -1242,6 +1264,7 @@ for spellID,learnedAt in pairs({
 	[18454] = 300,	-- Gloves of Spell Mastery
 	[461708] = 300,	-- Incandescent Mooncloth Robe
 	[22868] = 300,	-- Inferno Gloves
+	[461727] = 300,	-- Leather-Reinforced Runecloth Bag
 	[23663] = 300,	-- Mantle of the Timbermaw
 	[18445] = 300,	-- Mooncloth Bag
 	[18452] = 300,	-- Mooncloth Circlet

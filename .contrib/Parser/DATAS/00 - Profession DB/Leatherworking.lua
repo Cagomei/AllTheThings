@@ -53,6 +53,7 @@ i(217271, 439118);	-- Turtle Scale Gloves
 i(0, 446186);		-- Cacophonous Chain Shoulderguards
 i(0, 446192);		-- Membrane of Dark Neurosis
 i(0, 446183);		-- Paranoia Mantle
+i(0, 451706);		-- Screaming Chain Pauldrons
 i(0, 446189);		-- Shoulderpads of Obsession
 i(0, 446185);		-- Shrieking Spaulders
 i(0, 446190);		-- Wailing Chain Mantle
@@ -164,6 +165,7 @@ i(2406, 2158);		-- Fine Leather Boots
 i(2408, 2164);		-- Fine Leather Gloves
 i(5972, 7133);		-- Fine Leather Pants
 i(14635, 3778);		-- Gem-studded Leather Belt
+i(228319, 461754);	-- Girdle of Arcane Insight
 i(18514, 22921);	-- Girdle of Insight
 i(17722, 21943);	-- Gloves of the Greatfather
 i(19329, 23706);	-- Golden Mantle of the Dawn
@@ -220,6 +222,7 @@ i(20508, 24848);	-- Spitfire Breastplate
 i(20507, 24847);	-- Spitfire Gauntlets
 i(7453, 9208);		-- Swift Boots
 i(18516, 22923);	-- Swift Flight Bracers
+i(228301, 461706);	-- Swift Flight Vambraces
 i(5788, 6704);		-- Thick Murloc Armor
 i(19327, 23704);	-- Timbermaw Brawlers
 i(8399, 10554);		-- Tough Scorpid Boots [REMOVED: 4.0.3, See new version]
@@ -256,6 +259,7 @@ i(15781, 19107, nil, DRAGONSCALE);	-- Black Dragonscale Leggings
 i(15770, 19094, nil, DRAGONSCALE);	-- Black Dragonscale Shoulders
 i(15751, 19077, nil, DRAGONSCALE);	-- Blue Dragonscale Breastplate [REMOVED: 4.0.3]
 i(15763, 19089, nil, DRAGONSCALE);	-- Blue Dragonscale Shoulders [REMOVED: 4.0.3, ADDED: 10.1.7]
+i(227910, 461653, nil, DRAGONSCALE);	-- Brilliant Chromatic Cloak
 i(18517, 22926, nil, DRAGONSCALE);	-- Chromatic Cloak
 i(19331, 23708, nil, DRAGONSCALE);	-- Chromatic Gauntlets
 i(20382, 24703, nil, DRAGONSCALE);	-- Dreamscale Breastplate
@@ -291,6 +295,7 @@ i(0, 10632, nil, ELEMENTAL);	-- Helm of Fire
 i(15771, 19095, nil, ELEMENTAL);	-- Living Breastplate [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(15752, 19078, nil, ELEMENTAL);	-- Living Leggings [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(15734, 19061, nil, ELEMENTAL);	-- Living Shoulders
+i(228276, 461690, nil, ELEMENTAL);	-- Mastercrafted Shifting Cloak
 i(227906, 461661, nil, ELEMENTAL);	-- Masterwork Volcanic Breastplate
 i(227908, 461665, nil, ELEMENTAL);	-- Masterwork Volcanic Leggings
 i(227907, 461663, nil, ELEMENTAL);	-- Masterwork Volcanic Shoulders

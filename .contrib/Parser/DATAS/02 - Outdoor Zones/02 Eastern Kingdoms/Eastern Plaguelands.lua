@@ -4708,113 +4708,218 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>
-					-- #if AFTER WRATH
-					["coord"] = { 75.8, 54.0, EASTERN_PLAGUELANDS },
-					-- #else
-					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
-					-- #endif
-					["groups"] = {
-						i(13724, {	-- Enriched Manna Biscuit
-							["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
-						}),
-						i(22014, {	-- Hallowed Brazier
-							["timeline"] = { REMOVED_4_0_3 },
-							["minReputation"] = { 529, HONORED },	-- Argent Dawn
-							["cost"] = { { "g", 1500000 } },	-- 150g
-						}),
-						i(18182, {	-- Chromatic Mantle of the Dawn
-							["description"] = "You must have first completed 'Chromatic Mantle of the Dawn' in order to purchase this.",
-							["sourceQuests"] = {
-								5517,	-- Chromatic Mantle of the Dawn
-								5521,	-- Chromatic Mantle of the Dawn
-								5524,	-- Chromatic Mantle of the Dawn
-							},
-						}),
-						i(18171, {	-- Arcane Mantle of the Dawn
-							["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
-							["sourceQuests"] = {
-								5504,	-- Mantles of the Dawn
-								5507,	-- Mantles of the Dawn
-								5513,	-- Mantles of the Dawn
-							},
-						}),
-						i(18169, {	-- Flame Mantle of the Dawn
-							["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
-							["sourceQuests"] = {
-								5504,	-- Mantles of the Dawn
-								5507,	-- Mantles of the Dawn
-								5513,	-- Mantles of the Dawn
-							},
-						}),
-						i(18170, {	-- Frost Mantle of the Dawn
-							["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
-							["sourceQuests"] = {
-								5504,	-- Mantles of the Dawn
-								5507,	-- Mantles of the Dawn
-								5513,	-- Mantles of the Dawn
-							},
-						}),
-						i(18172, {	-- Nature Mantle of the Dawn
-							["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
-							["sourceQuests"] = {
-								5504,	-- Mantles of the Dawn
-								5507,	-- Mantles of the Dawn
-								5513,	-- Mantles of the Dawn
-							},
-						}),
-						i(18173, {	-- Shadow Mantle of the Dawn
-							["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
-							["sourceQuests"] = {
-								5504,	-- Mantles of the Dawn
-								5507,	-- Mantles of the Dawn
-								5513,	-- Mantles of the Dawn
-							},
-						}),
-						i(136801, {	-- Divine Tome: Contemplation (CI!)
-							["timeline"] = { ADDED_7_0_3_LAUNCH },
-						}),
-						applyclassicphase(PHASE_THREE, i(19447)),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19446)),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
-						i(19442),	-- Recipe: Powerful Anti-Venom (RECIPE!)
-						i(19216),	-- Pattern: Argent Boots
-						i(19217),	-- Pattern: Argent Shoulders
-						applyclassicphase(PHASE_THREE, i(19328)),	-- Pattern: Dawn Treaders (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19329)),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
-						i(13482),	-- Recipe: Transmute Air to Fire (RECIPE!)
-						i(136928, {	-- Thaumaturgist's Orb (TOY!)
-							["timeline"] = { ADDED_7_0_3 },
-							["classes"] = { PRIEST },
-						}),
-
-						-- 10.1.5 Scholomance Items
-						i(206584, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Archived Crafting Techniques
-							--	["minReputation"] = { 529, EXALTED },	-- Argent Dawn
-							["cost"] = { { "i", 12844, 6 } },	-- Argent Dawn Valor Token
-							["groups"] = {
-								i(207569),	-- Ancient Formula: Magebane Nexus (RECIPE!)
-								i(207570),	-- Ancient Formula: Smoked Fireshooter (RECIPE!)
-								i(207571),	-- Ancient Formula: Stormwatcher (RECIPE!)
-								i(206529),	-- Ancient Pattern: Helm of Lingering Power (RECIPE!)
-								i(206561),	-- Ancient Pattern: Lucien's Lost Soles (RECIPE!)
-								i(207577),	-- Ancient Pattern: Sanctified Leather Hat (RECIPE!)
-								i(206530),	-- Ancient Pattern: Skyfury Headdress (RECIPE!)
-								i(206525),	-- Ancient Plans: Darrowdirk (RECIPE!)
-								i(206526),	-- Ancient Plans: Darrowshire Protector (RECIPE!)
-								i(207573),	-- Ancient Plans: Ichor Slicer (RECIPE!)
-								i(207567),	-- Ancient Plans: Intrepid Shortblade (RECIPE!)
-								i(206527),	-- Ancient Plans: Mirah's Lullaby (RECIPE!)
-								i(207572),	-- Ancient Plans: Sacred Guardian (RECIPE!)
-								i(207568),	-- Ancient Plans: Valiant Shortblade (RECIPE!)
-								i(206522),	-- Ancient Plans: Warsword of Caer Darrow (RECIPE!)
-								i(207576),	-- Ancient Schematic: Refurbished Purifier (RECIPE!)
-								i(207574),	-- Ancient Schematic: Skullstone Bludgeon (RECIPE!)
-								i(206528),	-- Ancient Technique: Shifting Sliver (RECIPE!)
-								i(207575),	-- Ancient Technique: Wanderer's Guide (RECIPE!)
-							},
-						})),
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 75.8, 54.0, EASTERN_PLAGUELANDS },
+						-- #else
+						{ 81.6, 60.0, EASTERN_PLAGUELANDS },
+						-- #endif
 					},
+					["groups"] = bubbleDownClassicRep(529, {
+						{	-- Neutral
+							i(136801, {	-- Divine Tome: Contemplation (CI!)
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
+							}),
+							i(136928, {	-- Thaumaturgist's Orb (TOY!)
+								["timeline"] = { ADDED_7_0_3 },
+								["classes"] = { PRIEST },
+							}),
+							-- 10.1.5 Scholomance Items
+							i(206584, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Archived Crafting Techniques
+								--	["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+								["cost"] = { { "i", 12844, 6 } },	-- Argent Dawn Valor Token
+								["groups"] = {
+									i(207569),	-- Ancient Formula: Magebane Nexus (RECIPE!)
+									i(207570),	-- Ancient Formula: Smoked Fireshooter (RECIPE!)
+									i(207571),	-- Ancient Formula: Stormwatcher (RECIPE!)
+									i(206529),	-- Ancient Pattern: Helm of Lingering Power (RECIPE!)
+									i(206561),	-- Ancient Pattern: Lucien's Lost Soles (RECIPE!)
+									i(207577),	-- Ancient Pattern: Sanctified Leather Hat (RECIPE!)
+									i(206530),	-- Ancient Pattern: Skyfury Headdress (RECIPE!)
+									i(206525),	-- Ancient Plans: Darrowdirk (RECIPE!)
+									i(206526),	-- Ancient Plans: Darrowshire Protector (RECIPE!)
+									i(207573),	-- Ancient Plans: Ichor Slicer (RECIPE!)
+									i(207567),	-- Ancient Plans: Intrepid Shortblade (RECIPE!)
+									i(206527),	-- Ancient Plans: Mirah's Lullaby (RECIPE!)
+									i(207572),	-- Ancient Plans: Sacred Guardian (RECIPE!)
+									i(207568),	-- Ancient Plans: Valiant Shortblade (RECIPE!)
+									i(206522),	-- Ancient Plans: Warsword of Caer Darrow (RECIPE!)
+									i(207576),	-- Ancient Schematic: Refurbished Purifier (RECIPE!)
+									i(207574),	-- Ancient Schematic: Skullstone Bludgeon (RECIPE!)
+									i(206528),	-- Ancient Technique: Shifting Sliver (RECIPE!)
+									i(207575),	-- Ancient Technique: Wanderer's Guide (RECIPE!)
+								},
+							})),
+						},
+						{	-- Friendly
+							i(13724),	-- Enriched Manna Biscuit
+						},
+						{	-- Honored
+							applyclassicphase(PHASE_THREE, i(19446)),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
+							i(19216),	-- Pattern: Argent Boots
+							applyclassicphase(PHASE_THREE, i(19328)),	-- Pattern: Dawn Treaders (RECIPE!)
+							applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
+							i(19442),	-- Recipe: Powerful Anti-Venom (RECIPE!)
+							i(13482),	-- Recipe: Transmute Air to Fire (RECIPE!)
+							i(22014, {	-- Hallowed Brazier
+								["timeline"] = { REMOVED_4_0_3 },
+								["cost"] = { { "g", 1500000 } },	-- 150g
+							}),
+							
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(227813, {	-- Drinkable Stratholme Holy Water
+								["timeline"] = { "added 1.15.3" },
+								["cost"] = {{ "i", 13180, 1 }},	-- Stratholme Holy Water
+							})),
+							-- EPIC CRAFTED ITEMS UPGRADES
+							applyclassicphase(SOD_PHASE_FOUR, i(227816, {	-- Argent Elite Boots
+								["timeline"] = { "added 1.15.3" },
+								["requireSkill"] = TAILORING,
+								["learnedAt"] = 290,
+								["cost"] = {
+									{ "i", 19056, 1 },	-- Argent Boots
+									{ "i", 12843, 2 },	-- Corruptor's Scourgestone
+									{ "i", 12753, 2 },	-- Skin of Shadow
+								},
+							})),
+							applyclassicphase(SOD_PHASE_FOUR, i(227888, {	-- Argent Elite Shoulders
+								["timeline"] = { "added 1.15.3" },
+								["requireSkill"] = TAILORING,
+								["learnedAt"] = 290,
+								["cost"] = {
+									{ "i", 19059, 1 },	-- Argent Shoulders
+									{ "i", 12843, 4 },	-- Corruptor's Scourgestone
+									{ "i", 12753, 3 },	-- Skin of Shadow
+								},
+							})),
+							applyclassicphase(SOD_PHASE_FOUR, i(227815, {	-- Fine Dawn Treaders
+								["timeline"] = { "added 1.15.3" },
+								["requireSkill"] = LEATHERWORKING,
+								["learnedAt"] = 290,
+								["cost"] = {
+									{ "i", 19052, 1 },	-- Dawn Treaders
+									{ "i", 12843, 3 },	-- Corruptor's Scourgestone
+									{ "i", 12753, 2 },	-- Skin of Shadow
+								},
+							})),
+							applyclassicphase(SOD_PHASE_FOUR, i(227818, {	-- Glowing Mantle of the Dawn
+								["timeline"] = { "added 1.15.3" },
+								["requireSkill"] = LEATHERWORKING,
+								["learnedAt"] = 290,
+								["cost"] = {
+									{ "i", 19058, 1 },	-- Golden Mantle of the Dawn
+									{ "i", 12843, 4 },	-- Corruptor's Scourgestone
+									{ "i", 12753, 3 },	-- Skin of Shadow
+								},
+							})),
+							applyclassicphase(SOD_PHASE_FOUR, i(227814, {	-- Radiant Girdle of the Dawn
+								["timeline"] = { "added 1.15.3" },
+								["requireSkill"] = BLACKSMITHING,
+								["learnedAt"] = 290,
+								["cost"] = {
+									{ "i", 19051, 1 },	-- Girdle of the Dawn
+									{ "i", 12843, 2 },	-- Corruptor's Scourgestone
+									{ "i", 12735, 2 },	-- Frayed Abomination Stitching
+								},
+							})),
+							applyclassicphase(SOD_PHASE_FOUR, i(227817, {	-- Radiant Gloves of the Dawn
+								["timeline"] = { "added 1.15.3" },
+								["requireSkill"] = BLACKSMITHING,
+								["learnedAt"] = 290,
+								["cost"] = {
+									{ "i", 19057, 1 },	-- Gloves of the Dawn
+									{ "i", 12843, 3 },	-- Corruptor's Scourgestone
+									{ "i", 12735, 2 },	-- Frayed Abomination Stitching
+								},
+							})),
+							applyclassicphase(SOD_PHASE_FOUR, i(227859, {	-- Shimmering Dawnbringer Shoulders
+								["timeline"] = { "added 1.15.3" },
+								["requireSkill"] = BLACKSMITHING,
+								["learnedAt"] = 290,
+								["cost"] = {
+									{ "i", 12625, 1 },	-- Dawnbringer Shoulders
+									{ "i", 12843, 4 },	-- Corruptor's Scourgestone
+									{ "i", 12735, 3 },	-- Frayed Abomination Stitching
+								},
+							})),
+							-- #endif
+						},
+						{	-- Revered
+							i(18171, {	-- Arcane Mantle of the Dawn
+								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
+								["sourceQuests"] = {
+									5504,	-- Mantles of the Dawn
+									5507,	-- Mantles of the Dawn
+									5513,	-- Mantles of the Dawn
+								},
+							}),
+							i(18169, {	-- Flame Mantle of the Dawn
+								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
+								["sourceQuests"] = {
+									5504,	-- Mantles of the Dawn
+									5507,	-- Mantles of the Dawn
+									5513,	-- Mantles of the Dawn
+								},
+							}),
+							i(18170, {	-- Frost Mantle of the Dawn
+								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
+								["sourceQuests"] = {
+									5504,	-- Mantles of the Dawn
+									5507,	-- Mantles of the Dawn
+									5513,	-- Mantles of the Dawn
+								},
+							}),
+							i(18172, {	-- Nature Mantle of the Dawn
+								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
+								["sourceQuests"] = {
+									5504,	-- Mantles of the Dawn
+									5507,	-- Mantles of the Dawn
+									5513,	-- Mantles of the Dawn
+								},
+							}),
+							i(18173, {	-- Shadow Mantle of the Dawn
+								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
+								["sourceQuests"] = {
+									5504,	-- Mantles of the Dawn
+									5507,	-- Mantles of the Dawn
+									5513,	-- Mantles of the Dawn
+								},
+							}),
+							applyclassicphase(PHASE_THREE, i(19447)),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
+							i(19217),	-- Pattern: Argent Shoulders
+							applyclassicphase(PHASE_THREE, i(19329)),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+							-- CRIEVE NOTE: With SOD phase 4, they put this recipe directly on the vendor. Interesting.
+							applyclassicphase(SOD_PHASE_FOUR, i(12698, {	-- Plans: Dawnbringer Shoulders (RECIPE!)
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
+							applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
+							i(13810),	-- Blessed Sunfruit
+							i(13813),	-- Blessed Sunfruit Juice
+						},
+						{	-- Exalted
+							i(18182, {	-- Chromatic Mantle of the Dawn
+								["description"] = "You must have first completed 'Chromatic Mantle of the Dawn' in order to purchase this.",
+								["sourceQuests"] = {
+									5517,	-- Chromatic Mantle of the Dawn
+									5521,	-- Chromatic Mantle of the Dawn
+									5524,	-- Chromatic Mantle of the Dawn
+								},
+							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(227819, {	-- Blessed Flame Mantle of the Dawn
+								["description"] = "You must have first completed 'Chromatic Mantle of the Dawn' in order to purchase this.",
+								["sourceQuests"] = {
+									5517,	-- Chromatic Mantle of the Dawn
+									5521,	-- Chromatic Mantle of the Dawn
+									5524,	-- Chromatic Mantle of the Dawn
+								},
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
+						},
+					}),
 				}),
 			}),
 			n(ZONE_DROPS, {
