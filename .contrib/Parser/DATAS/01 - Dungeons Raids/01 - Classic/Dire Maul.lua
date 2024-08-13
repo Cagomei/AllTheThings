@@ -368,7 +368,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						}),
 					},
 				},
-				applyclassicphase(PHASE_THREE, q(7649, {	-- Enchanted Thorium Platemail: Volume I
+				applyclassicphase(PHASE_THREE_RECIPES, q(7649, {	-- Enchanted Thorium Platemail: Volume I
 					["providers"] = {
 						-- #IF BEFORE 4.0.3
 						{ "i", 18769 },	-- Enchanted Thorium Platemail (Volume I)
@@ -401,7 +401,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_THREE, q(7650, {	-- Enchanted Thorium Platemail: Volume II
+				applyclassicphase(PHASE_THREE_RECIPES, q(7650, {	-- Enchanted Thorium Platemail: Volume II
 					["providers"] = {
 						-- #IF BEFORE 4.0.3
 						{ "i", 18770 },	-- Enchanted Thorium Platemail (Volume II)
@@ -429,7 +429,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_THREE, q(7651, {	-- Enchanted Thorium Platemail: Volume III
+				applyclassicphase(PHASE_THREE_RECIPES, q(7651, {	-- Enchanted Thorium Platemail: Volume III
 					["providers"] = {
 						-- #IF BEFORE 4.0.3
 						{ "i", 18771 },	-- Enchanted Thorium Platemail (Volume III)
@@ -1375,7 +1375,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18305),	-- Breakwater Legguards
 							i(18307),	-- Riptide Shoes
 							i(18322),	-- Waterspout Boots
-							applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
+							applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
 						},
 					}),
 					e(402, {	-- Zevrim Thornhoof
@@ -1931,7 +1931,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							}),
 							i(18521),	-- Grimy Metal Boots
 							i(18522),	-- Band of the Ogre King
-							applyclassicphase(PHASE_THREE, i(19258)),	-- Ace of Warlords
+							applyclassicphase(PHASE_THREE_DMF_CARDS, i(19258)),	-- Ace of Warlords
 							i(18780, {	-- Top Half of Advanced Armorsmithing: Volume I
 								["timeline"] = { DELETED_4_0_3 },
 							}),
