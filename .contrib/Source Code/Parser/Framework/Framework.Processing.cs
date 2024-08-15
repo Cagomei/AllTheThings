@@ -2,6 +2,7 @@ using ATT.DB;
 using ATT.DB.Types;
 using ATT.FieldTypes;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using static ATT.Export;
@@ -576,7 +577,7 @@ namespace ATT
 
         private static void CaptureDebugDBData(IDictionary<string, object> data)
         {
-            foreach (KeyValuePair<string, SortedDictionary<decimal, IDictionary<string, object>>> dbKeyDatas in DebugDBs)
+            foreach (KeyValuePair<string, ConcurrentDictionary<decimal, IDictionary<string, object>>> dbKeyDatas in DebugDBs)
             {
                 if (data.TryGetValue(dbKeyDatas.Key, out decimal keyValue) || dbKeyDatas.Key == "questID" && (
                     data.TryGetValue("questIDA", out keyValue) || data.TryGetValue("questIDA", out keyValue)) && keyValue > 0)
@@ -830,6 +831,7 @@ namespace ATT
 
             // ensure the FilterID for this data is double-checked after merging in the shared data
             Objects.AssignFilterID(data);
+            Objects.AssignFactionID(data);
 
             // Currently, this merges in data from actual Recipes to other non-Recipe Items which are linked to the same SpellID
             // i.e. /att i:200037 causing them to magically become Recipes!
@@ -3190,7 +3192,7 @@ namespace ATT
                     }
                     switch (fieldAdjustment.Value)
                     {
-                        // remove from groups and add to parent
+                        // remove from groups and add to parent (Consolidation)
                         case -1:
                             parentGroup[field] = val;
                             foreach (object group in groups)
@@ -3201,7 +3203,7 @@ namespace ATT
                                 }
                             }
                             break;
-                        // only add to parent
+                        // only add to parent (Propagation)
                         case 1:
                             parentGroup[field] = val;
                             break;

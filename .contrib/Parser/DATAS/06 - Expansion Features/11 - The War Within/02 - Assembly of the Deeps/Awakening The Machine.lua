@@ -8,25 +8,13 @@ AWAKENING_THE_MACHINE = createHeader({
 		en = "Awakening The Machine",
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(THE_ASSEMBLY_OF_THE_DEEPS, {
 		n(AWAKENING_THE_MACHINE, {
 			["crs"] = { 217128 },	-- Speaker Kuldas <Awakening the Machine>
 			["coord"] = { 47.5, 31.9, THE_RINGING_DEEPS },
 			["g"] = {
 				n(ACHIEVEMENTS, {
-					ach(40509),	-- Awakening The Machine: Wave 10
-					ach(40586),	-- Awakening The Machine: Wave 20
-					ach(40587, {	-- Awakening The Machine: Wave 30
-						i(226220),	-- Machine-Warden's Tabard
-					}),
-					ach(40588, {	-- Awakening The Machine: Wave 40
-						i(226221),	-- Machine-Warden's Pauldrons
-					}),
-					ach(40589, {	-- Awakening The Machine: Wave 50
-						title(568),	-- <Name>, Machine-Warden
-						i(226218),	-- Machine-Warden's Cloak
-					}),
 					ach(40662, {	-- It's Not Much, But It's Honest Work
 						i(223269),	-- Machine Defense Unit 1-11 (MOUNT!)
 					}),

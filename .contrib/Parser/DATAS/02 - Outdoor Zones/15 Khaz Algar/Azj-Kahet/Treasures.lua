@@ -1,9 +1,21 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(AZJ_KAHET, {
 		n(TREASURES, {
+			o(446404, {	-- Memory Cache
+				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 5x Unseeming Shift debuff to see npc near cache, kill it to obtain key for cache",
+				["coord"] = { 62.7, 88.7, AZJ_KAHET_LOWER },
+				["questID"] = 82520,	-- previous 82723?
+				["g"] = {
+					i(223870),	-- Cache Key
+					--
+					i(225544),	-- Mind Slurp (PET!)
+				},
+			}),
+
+
 			o(446419, {	-- Concealed Contraband
 				["coord"] = { 36.3, 63.9, AZJ_KAHET },
 				["questID"] = 82525,
@@ -92,16 +104,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					-- bugged, uninteractable.
 				},
 			}),
-			o(446404, {	-- Memory Cache
-				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 5x Unseeming Shift debuff to see npc near cache, kill it to obtain key for cache",
-				["coord"] = { 62.7, 88.7, AZJ_KAHET_LOWER },
-				["questID"] = 82724,	-- previous 82723 / 82520?
-				["g"] = {
-					i(223870),	-- Cache Key
-					--
-					i(225544),	-- Mind Slurp (PET!)
-				},
-			}),
 			o(446140, {	-- Missing Scouts Pack
 				["coord"] = { 40.7, 42.1, AZJ_KAHET },
 				["questID"] = 82722,
@@ -117,7 +119,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 50.6, 48.1, AZJ_KAHET },
 				["questID"] = 82529,
 				["g"] = {
-					i(221760),	-- Bonedrinker (PET!)
+					i(221760),	-- Pillarnest Bonedrinker (PET!)
 				},
 			}),
 			o(446135, {	-- Niffen Stash

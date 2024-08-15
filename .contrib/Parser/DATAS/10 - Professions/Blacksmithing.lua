@@ -1189,7 +1189,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		})),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
@@ -1721,7 +1721,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 16660,
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
-						"added 1.15.3"
+						"added 1.15.3",
 						-- #else
 						CREATED_1_12_1, ADDED_2_0_1,
 						-- #endif

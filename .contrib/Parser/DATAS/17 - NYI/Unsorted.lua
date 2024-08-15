@@ -202,8 +202,23 @@ root(ROOTS.Unsorted, {
 			i(229354),	-- Algari Adventurer's Cache
 			i(229370),	-- Companion Experience
 			i(229371),	-- Companion Experience
+			---
+			i(230202),	-- Add Keystone Affix: Xal'atath's Bargain: Ascendant
+			i(230204),	-- Add Keystone Affix: Xal'atath's Bargain: Voidbound
+			i(230205),	-- Add Keystone Affix: Xal'atath's Bargain: Oblivion
+			i(230206),	-- Add Keystone Affix: Xal'atath's Bargain: Devour
+			i(230208),	-- Add Keystone Affix: Xal'atath's Guile
+			i(230209),	-- Add Keystone Affix: Challenger's Peril
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+			filter(TITLES, {
+				title(560),	-- <Name> Ascension Breaker
+				title(564),	-- Machine Whisperer <Name>
+				title(565),	-- Honorary Councilmember <Name>
+				title(566),	-- Lamplighter <Name>
+				title(567),	-- Thread-Spinner <Name>
+				title(568),	-- <Name>, Machine-Warden
+			}),
 			filter(BATTLE_PETS, {
 				i(222969),	-- Anub'Rekyute (PET!)
 				i(221851),	-- Argos (PET!)
@@ -215,14 +230,10 @@ root(ROOTS.Unsorted, {
 				i(221195),	-- Illskitter (PET!)
 				i(221492),	-- Moss Skipper (PET!)
 				i(221759),	-- Sceaduthax (PET!)
-				i(221819),	-- Shadowbog Hopper (PET!)
 				i(221495),	-- Waddles (PET!)
 				i(222967),	-- Webbers (PET!)
-				------------
-				i(221760),	-- Bonedrinker (PET!) (Pillarnest Bonedrinker) [The Item is sourced but keeping here since the item and pet name dont match...]
 				------ Have no source and Naming Weird.. ------
 				i(221493),	-- Admiral (PET!) (Redthroat Skipling)
-				i(221486),	-- Baleclaw (PET!) (Rak-Ush Threadling)
 				i(223803),	-- Blue Stagshell (PET!) (Rak-Ush Battleshell)
 				i(221022),	-- Cowboy Bee[DNT] (PET!) (Bop???)
 				i(223626),	-- Embersting (PET!) (Cinderhoney Emberstinger)
@@ -1295,7 +1306,7 @@ root(ROOTS.Unsorted, {
 				i(225873),	-- Forged Gladiator's Sword
 
 			}),
-			n(MISC, {
+			f(MISC, {
 				i(206134),	-- Potion of Healing
 				i(206581),	-- Harvester Core
 				i(208670),	-- Arachnophobia Mode
@@ -1492,7 +1503,6 @@ root(ROOTS.Unsorted, {
 				i(225875),	-- Pitted Armor Plating
 				i(225878),	-- The Fifty Rules of Commerce, Fourth Edition
 				i(225879),	-- The Fifty Rules of Commerce, Fourth Edition
-				i(225881),	-- Big Bag of Barter Boulders
 				i(225883),	-- Prepared Ghoulfish
 				i(225896),	-- Void-Touched Valorstone
 				i(225930),	-- Glimmering Crystal
@@ -1570,7 +1580,7 @@ root(ROOTS.Unsorted, {
 				i(228453),	-- Extra Large Bag of Popped Pebbles
 				i(228454),	-- Collector's Commemorative Proscenium Playbill
 			}),
-			n(QUEST_ITEMS, {
+			f(QUEST_ITEMS, {
 				i(206348),	-- Fragmented Flame
 				i(206349),	-- Fragmented Reagent
 
@@ -1756,10 +1766,11 @@ root(ROOTS.Unsorted, {
 				i(228367),	-- Arathi Scout's Walking Stick
 			}),
 			filter(TOYS, {
-				i(218310),	-- Box of Puntables (TOY!)
+				i(218310),	-- Box of Puntables (TOY!) [Winter Veil]
 				i(224809),	-- Earthen Plumber's Pipe (TOY!)
 				i(225347),	-- Web-Vandal's Spinning Wheel (TOY!)
-				---
+				i(216887),	-- Unknown (TOY!)
+				-- Should Maybe get a Toy Tag... Lets see later...
 				i(215146),	-- JC Gemcutting Toy
 				i(228412),	-- Scouting Map: The Skies of the Dragon Isles
 			}),
@@ -1888,15 +1899,12 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(223386),	-- Vilewing Crown
-				i(223387),	-- Vilewing Chain Helm
-				i(223390),	-- Leggings of Dark Hunger
-				i(223391),	-- Legguards of Dark Hunger
 
 
-				i(223406),	-- Slippers of the Nerubian Twins
-				i(223407),	-- Sabatons of the Nerubian Twins
-				i(223408),	-- Treads of the Nerubian Twins
+
+
+
+
 				i(223915),	-- Nerubian Orator's Stiletto
 				i(223916),	-- Nerubian Cutthroat's Reach
 				i(223917),	-- Nerubian Covert's Cloak
@@ -1932,21 +1940,20 @@ root(ROOTS.Unsorted, {
 				i(223424),	-- Algari-Weave Cord
 
 
-				i(223436),	-- Light Boots of the Ringing Deeps
-				i(223437),	-- Handwraps of the Weaver
+
 				i(223438),	-- Algari Warden's Vestment
 				i(223439),	-- Mereldar Scholar's Leggings
 				i(223444),	-- Arathi Defender's Breeches
 				i(223450),	-- Honored Soldier's Chainmail
-				i(223440),	-- Saboteur's Shoulderpads
+
 				i(223441),	-- Algari Scouting Boots
 				i(223443),	-- Algari Warden's Hood
 
-				i(223451),	-- Saboteur's Striders
-				i(223452),	-- Grips of the Ringing Deeps
+
+
 
 				i(223454),	-- Algari Warden's Greaves
-				i(223455),	-- Shoulderguards of the Weaver
+
 				i(223456),	-- [PH] 11.0 - Cinch
 
 				i(223458),	-- [PH] 11.0 - Belt
@@ -2336,6 +2343,12 @@ root(ROOTS.Unsorted, {
 			i(223056),	-- Plans: Webbed Fishing Line
 			i(223948),	-- Stubborn Wolf's Greathelm
 			i(225256),	-- PH_2
+			--
+			-- Orphaned due to removal of "Awakening the Machine: Wave <x>" achievements
+			i(226220),	-- Machine-Warden's Tabard
+			i(226221),	-- Machine-Warden's Pauldrons
+			title(568),	-- <Name>, Machine-Warden
+			i(226218),	-- Machine-Warden's Cloak
 		})),
 	}),
 	expansion(EXPANSION.DF, {

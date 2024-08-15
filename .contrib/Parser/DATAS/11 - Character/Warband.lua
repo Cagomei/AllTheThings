@@ -9,14 +9,13 @@ WARBAND = createHeader({
 	},
 });
 root(ROOTS.Character, n(WARBAND, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		ach(19470),	-- One Warband Mentor: The War Within
 		ach(19460),	-- Two Warband Mentors: The War Within
 		ach(19475),	-- Three Warband Mentors: The War Within
 		ach(19476),	-- Four Warband Mentors: The War Within
 		ach(19477),	-- Five Warband Mentors: The War Within
 		ach(40142),	-- Learning to Share
-		ach(40145),	-- So Much Sharing
 		achraw(40725, bubbleDownSelf({ ["timeline"] = { REMOVED_11_1_0 }, }, {	-- War Within Delves: Endgame
 			ach(40514),		-- War Within Delves: Tier 3
 			crit(68716),	-- Complete the Khaz Algar main story campaign

@@ -8,14 +8,14 @@ WORLDSOUL_MEMORY = createHeader({
 		en = WOWAPI_GetSpellName(445256),
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(WORLDSOUL_MEMORY, {
 		["provider"] = { "n", 222165 },	-- Worldsoul Memory
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40252),	-- A Series of Echoes (automated)
 				ach(40222, {	-- Echoes of Danger (automated)
-					title(258),	-- Echochaser <Name>
+					title(576),	-- Echochaser <Name>
         		}),
 				ach(40314, {	-- Fragments of Memories (automated)
 					i(224251),	-- Memory Chord (TOY!)

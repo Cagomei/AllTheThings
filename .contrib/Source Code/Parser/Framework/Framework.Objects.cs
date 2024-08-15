@@ -1589,6 +1589,7 @@ end");
                     case "name":
                     case "type":
                     case "description":
+                    case "sharedDescription":
                     case "title":
                     case "order":
                     case "SortType":
@@ -1948,6 +1949,7 @@ end");
 
                     // Functions
                     case "OnInit":
+                    case "OnSourceInit":
                     case "OnClick":
                     case "OnUpdate":
                     case "OnTooltip":
