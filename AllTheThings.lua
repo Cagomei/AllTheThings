@@ -60,6 +60,7 @@ local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 local GetSpellLink = app.WOWAPI.GetSpellLink;
+local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
 
 local C_TradeSkillUI = C_TradeSkillUI;
 local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForRecipe
@@ -558,8 +559,10 @@ end
 app.AddEventHandler("OnStartup", RefreshTradeSkillCache)
 app.AddEventHandler("OnStartup", function()
 	local conversions = app.Settings.InformationTypeConversionMethods;
-	conversions.professionName = function(spellID)
-		return GetSpellName(app.SkillIDToSpellID[spellID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(spellID) or RETRIEVING_DATA;
+	conversions.professionName = function(skillID)
+		local texture = GetTradeSkillTexture(skillID or 0)
+		local name = GetSpellName(app.SkillIDToSpellID[skillID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(skillID) or RETRIEVING_DATA
+		return texture and "|T"..texture..":0|t "..name or name
 	end;
 end);
 app.AddEventRegistration("SKILL_LINES_CHANGED", function()
@@ -3365,76 +3368,54 @@ local function DetermineCraftedGroups(group, FillData)
 	local itemRecipes = app.ReagentsDB[itemID];
 	if not itemRecipes then return; end
 
-	-- check if the item is BoP and needs skill filtering for current character, or debug mode
-	-- TODO: further review... this causes population of a list to be different based on settings, such that
-	-- changing settings after 'filling' does not properly adjust the list
-	local filterSkill = not app.MODE_DEBUG_OR_ACCOUNT and (app.IsBoP(group) or select(14, GetItemInfo(itemID)) == 1);
 	local craftableItemIDs = {}
 	-- track crafted items which are filled across the entire fill sequence
 	local craftedItems = FillData.CraftedItems
 	-- if we're filling a window (level 2) then we will allow showing the same crafted item multiple times
 	-- so that different reagents can all be visible for the same purpose
 	local skipLevel = FillData.SkipLevel or 0
+	local craftedItemID, recipe, skillID
 
-	-- item is BoP
-	-- if filterSkill then
-	local craftedItemID, recipe, skillID, recraftItems;
-	local GetRecraftItems = C_TradeSkillUI.GetRecraftItems;
 	-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
 	-- If the reagent itself is BOP, then only show things you can make.
+	-- 2024-08-15: Revised: instead of changing what is filled (affected by filtering) instead always fill everything possible
+	-- and include necessary filtering information for each output, i.e. the skillID on outputs
+	-- this should filter properly based on ignoring filters on BoE items & using Debug/Account mode without having to refill
+
 	-- find recipe(s) which creates this item
 	for recipeID,info in pairs(itemRecipes) do
 		craftedItemID = info[1];
 		-- app.PrintDebug(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID,skipLevel);
-		-- TODO: review how this can be nil
 		if craftedItemID and not craftableItemIDs[craftedItemID] and (skipLevel > 1 or not craftedItems[craftedItemID]) then
 			-- app.PrintDebug("recipeID",recipeID);
-			-- item is BoP
-			if filterSkill then
-				-- TODO: think this needs to be 'recipeID'
-				recipe = SearchForObject("spellID",recipeID,"key");
-				if recipe then
-					-- Recipe can be recrafted, i.e. can be used in Crafting Order to another player with the Profession
-					-- TODO: maybe there's another way to check that a Recipe can be used in a crafting order because
-					-- not all Craft Order Recipes can actually be recrafted, so it's missing some possible outputs
-					recraftItems = GetRecraftItems(recipeID);
-					if #recraftItems > 0 then
-						-- app.PrintDebug(recipeID,"can recraft");
-						craftableItemIDs[craftedItemID] = true;
-					else
-						skillID = GetRelativeValue(recipe, "skillID");
-						-- app.PrintDebug(recipeID,"requires",skillID,"and known:",skillID and knownSkills[skillID]);
-
-						-- ensure this character can craft the recipe
-						if skillID then
-							if knownSkills and knownSkills[skillID] then
-								craftableItemIDs[craftedItemID] = true;
-							end
-						else
-						-- recipe without any skill requirement? weird...
-							craftableItemIDs[craftedItemID] = true;
-						end
-					end
-				end
-			-- item is BoE
+			recipe = SearchForObject("recipeID",recipeID,"key");
+			if recipe then
+				-- crafted items should be considered unique per recipe
+				craftableItemIDs[craftedItemID + (recipeID / 1000000)] = recipe;
 			else
+				-- app.PrintDebug("Unsourced recipeID",recipe);
+				-- we don't have the Recipe sourced, so just include the crafted item anyway
 				craftableItemIDs[craftedItemID] = true;
 			end
+		-- else app.PrintDebug("Skipped, already listed")
 		end
 	end
 
 	local groups = {};
-	local search;
-	for craftedItemID,_ in pairs(craftableItemIDs) do
+	local search
+	for craftedItemID,recipe in pairs(craftableItemIDs) do
+		craftedItemID = math_floor(craftedItemID)
 		craftedItems[craftedItemID] = true
+		skillID = recipe ~= true and GetRelativeValue(recipe, "skillID") or nil
 		-- Searches for a filter-matched crafted Item
 		search = SearchForObject("itemID",craftedItemID,"field");
-		if search then
-			search = CreateObject(search);
-		end
-		-- could do logic here to tack on the profession's spellID icon
-		tinsert(groups, search or app.CreateItem(craftedItemID));
+		search = (search and CreateObject(search)) or app.CreateItem(craftedItemID)
+		-- link the respective crafted item object to the skill required by the crafting recipe
+		search.requireSkill = skillID
+		-- app.PrintDebug("craftedItemID",craftedItemID,"via skill",skillID)
+		groups[#groups + 1] = search
 	end
+
 	-- app.PrintDebug("DetermineCraftedGroups",group.hash,groups and #groups);
 	if #groups > 0 then
 		group.filledReagent = true;
@@ -6542,7 +6523,7 @@ local fields = {
 	["icon"] = function(t)
 		if app.GetSpecializationBaseTradeSkill(t.professionID) then return GetSpellIcon(t.professionID); end
 		if t.professionID == 129 then return GetSpellIcon(t.spellID); end
-		return C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
+		return GetTradeSkillTexture(t.professionID);
 	end,
 	]]--
 	["name"] = function(t)
@@ -6554,7 +6535,7 @@ local fields = {
 		if spellID then
 			icon = GetSpellIcon(spellID)
 		end
-		return icon or C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
+		return icon or GetTradeSkillTexture(t.professionID);
 	end,
 	["spellID"] = function(t)
 		return app.SkillIDToSpellID[t.professionID];
@@ -6631,6 +6612,10 @@ local function SetGroupVisibility(parent, group)
 		visible = not group.saved;
 		forceShowParent = visible;
 	end
+	-- Custom Visibility
+	if not visible and group.OnSetVisibility then
+		visible = group:OnSetVisibility()
+	end
 	-- Apply the visibility to the group
 	if visible then
 		group.visible = true;
@@ -6676,6 +6661,10 @@ local function SetThingVisibility(parent, group)
 		visible = not group.saved;
 		forceShowParent = visible;
 		-- if debug then print("trackable",visible) end
+	end
+	-- Custom Visibility
+	if not visible and group.OnSetVisibility then
+		visible = group:OnSetVisibility()
 	end
 	-- Loot Mode
 	if not visible then
@@ -7211,6 +7200,28 @@ local function SetIndicatorIcon(self, data)
 		return true;
 	end
 end
+local function BuildDataSummary(data)
+	local summary = {}
+	local requireSkill = data.requireSkill
+	if requireSkill then
+		local profIcon = GetTradeSkillTexture(requireSkill)
+		if profIcon then
+			summary[#summary + 1] = "|T"..profIcon..":0|t "
+		end
+	end
+	-- TODO: races
+	local specs = data.specs;
+	if specs and #specs > 0 then
+		summary[#summary + 1] = GetSpecsString(specs, false, false)
+	else
+		local classes = data.c
+		if classes and #classes > 0 then
+			summary[#summary + 1] = GetClassesString(classes, false, false)
+		end
+	end
+	summary[#summary + 1] = GetProgressTextForRow(data) or "---"
+	return app.TableConcat(summary, nil, "", "")
+end
 local function SetRowData(self, row, data)
 	ClearRowData(row);
 	if data then
@@ -7245,22 +7256,9 @@ local function SetRowData(self, row, data)
 			rowIndicator:SetPoint("RIGHT", rowTexture, "LEFT")
 			rowIndicator:Show();
 		end
-		local summary = GetProgressTextForRow(data) or "---";
-		-- local iconAdjust = summary and summary:find("|T") and -1 or 0;
-		local specs = data.specs;
-		if specs and #specs > 0 then
-			summary = GetSpecsString(specs, false, false) .. summary;
-			-- iconAdjust = iconAdjust - #specs;
-		else
-			local classes = data.c
-			if classes and #classes > 0 then
-				summary = GetClassesString(classes, false, false) .. summary;
-				-- iconAdjust = iconAdjust - #classes;
-			end
-		end
 		local rowSummary = row.Summary;
 		local rowLabel = row.Label;
-		rowSummary:SetText(summary);
+		rowSummary:SetText(BuildDataSummary(data));
 		-- for whatever reason, the Client does not properly align the Points when textures are used within the 'text' of the object, with each texture added causing a 1px offset on alignment
 		-- 2022-03-15 It seems as of recently that text with textures now render properly without the need for a manual adjustment. Will leave the logic in here until confirmed for others as well
 		-- 2023-07-25 The issue is caused due to ATT list scaling. With scaling other than 1 applied, the icons within the text shift relative to the number of icons
@@ -12508,7 +12506,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 			local schematic = C_TradeSkillUI_GetRecipeSchematic(recipeID, false);
 			local craftedItemID = schematic.outputItemID;
 			if not craftedItemID then return end
-			local cachedRecipe = SearchForObject("spellID",recipeID)
+			local cachedRecipe = SearchForObject("recipeID",recipeID,"key")
 			if not cachedRecipe then
 				local tradeSkillID, skillLineName, parentTradeSkillID = C_TradeSkillUI_GetTradeSkillLineForRecipe(recipeID)
 				local missing = app.TableConcat({"Missing Recipe:",recipeID,skillLineName,tradeSkillID,"=>",parentTradeSkillID}, nil, nil, " ")
@@ -12522,7 +12520,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 					app.PrintDebug("Learned NYI Recipe",app:SearchLink(cachedRecipe))
 				else
 					-- don't cache reagents for unknown NYI recipes
-					app.PrintDebug("Skip NYI Recipe",app:SearchLink(cachedRecipe))
+					-- app.PrintDebug("Skip NYI Recipe",app:SearchLink(cachedRecipe))
 					return
 				end
 			end
@@ -12531,15 +12529,15 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 			-- TODO: schematic.reagentSlotSchematics is often EMPTY on first query??
 			if #schematic.reagentSlotSchematics == 0 then
 				-- Milling Recipes...
-				-- app.PrintDebug("EMPTY SCHEMATICS",recipeID)
+				app.PrintDebug("EMPTY SCHEMATICS",app:SearchLink(cachedRecipe))
 				return;
 			end
 
-			local reagentCache = GetDataMember("Reagents", app.ReagentsDB);
+			local reagentCache = app.ReagentsDB
 			local itemRecipes, reagentCount, reagentItemID;
 			for _,reagentSlot in ipairs(schematic.reagentSlotSchematics) do
-				-- reagentType: 1 = required, 0 = optional
-				if reagentSlot.reagentType == 1 then
+				-- reagentType: 0 = sparks?, 1 = required, 2 = optional
+				if reagentSlot.required then
 					reagentCount = reagentSlot.quantityRequired;
 					-- Each available Reagent for the Slot can be associated to the Recipe/Output Item
 					for _,reagentSlotSchematic in ipairs(reagentSlot.reagents) do
@@ -12561,6 +12559,8 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 			end
 		end
 		app.HarvestRecipes = function()
+			local reagentsDB = LocalizeGlobal("AllTheThingsHarvestItems", {})
+			reagentsDB.ReagentsDB = app.ReagentsDB
 			local Runner = self:GetRunner()
 			Runner.SetPerFrame(100);
 			local Run = Runner.Run;
@@ -13708,7 +13708,7 @@ app.LoadDebugger = function()
 					end
 					local info = {
 						["professionID"] = tradeSkillID,
-						["icon"] = C_TradeSkillUI.GetTradeSkillTexture(tradeSkillID),
+						["icon"] = GetTradeSkillTexture(tradeSkillID),
 						["name"] = C_TradeSkillUI.GetTradeSkillDisplayName(tradeSkillID),
 						["g"] = rawGroups
 					};

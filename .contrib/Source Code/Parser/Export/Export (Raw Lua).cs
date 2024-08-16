@@ -10,7 +10,7 @@ namespace ATT
     partial class Export
     {
         /// <summary>
-        /// Allows to define whether raw LUA will include newlines or not
+        /// Allows to define whether raw Lua will include newlines or not
         /// </summary>
         public static bool IncludeRawNewlines { get; set; } = true;
 

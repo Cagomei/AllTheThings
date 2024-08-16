@@ -115,6 +115,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40445),	-- Sporesweeper
 		ach(40885),	-- The Key to Madness
 		ach(40100),	-- Undying Caver
+		achraw(40725, bubbleDownSelf({ ["timeline"] = { REMOVED_11_1_0 }, }, {	-- War Within Delves: Endgame
+			ach(40514),		-- War Within Delves: Tier 3
+			crit(5212),		-- Reach level 80
+			crit(69865),	-- Complete the Khaz Algar main story campaign
+		})),
 		ach(40631),	-- War Within Delves: Tier 1
 		ach(40512),	-- War Within Delves: Tier 2
 		ach(40514),	-- War Within Delves: Tier 3
@@ -646,7 +651,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(2348, {	-- Zekvir's Lair
-		["coord"] = { 46.3, 48.5, THE_RINGING_DEEPS },
+		["coord"] = { 6.7, 33.9, NERUBAR },	-- old coords - 46.3, 48.5, THE_RINGING_DEEPS?
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {
 				ach(40431),	-- Hunting the Hunter
