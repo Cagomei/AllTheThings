@@ -4791,8 +4791,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(179444),	-- 9.0 Covenant - Ardenweald - Cloth - Shoulders
 					i(179445),	-- 9.0 Covenant - Ardenweald - Cloth - Waist
 					i(179446),	-- 9.0 Covenant - Ardenweald - Cloth - Wrists
-					i(179659),	-- Conservator's Silken Tunic
-					i(179660),	-- Winterborn Tunic
 				}),
 				filter(LEATHER, {
 					i(179430),	-- 9.0 Covenant - Ardenweald - Leather - Head
@@ -4803,7 +4801,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(179435),	-- 9.0 Covenant - Ardenweald - Leather - Shoulders
 					i(179436),	-- 9.0 Covenant - Ardenweald - Leather - Waist
 					i(179437),	-- 9.0 Covenant - Ardenweald - Leather - Wrists
-					i(179775),	-- Conservator's Leather Tunic
 				}),
 				filter(MAIL, {
 					i(179448),	-- 9.0 Covenant - Ardenweald - Mail Head - D_01
@@ -6091,22 +6088,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(187657),	-- Evoker Belt
 				i(187658),	-- Evoker Armbands
 				i(187650),	-- Staff of Draconic Energies
-				--
-				i(194522),	-- Blue Winglord's Staff
-				i(194523),	-- Blue Winglord's Chain
-				i(194524),	-- Blue Winglord's Boots
-				i(194525),	-- Blue Winglord's Bracers
-				i(194526),	-- Blue Winglord's Hauberk
-				i(194527),	-- Blue Winglord's Grips
-				i(194528),	-- Blue Winglord's Coif
-				i(194529),	-- Blue Winglord's Greaves
-				i(194530),	-- Blue Winglord's Shoulders
-				i(194531),	-- Claw-Carved Figurine
-				i(194532),	-- Blue Winglord's Insignia
-				i(194533),	-- Blue Winglord's Ring
-				i(194534),	-- Blue Winglord's Loop
-				i(194535),	-- Cobalt Winglord's Cloak
-				i(194536),	-- Blue Winglord's Amulet
 				--
 				i(188818),	-- Emerald Winglord's Shoulderss
 				i(188825),	-- Emerald Winglord's Chain
