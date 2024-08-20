@@ -1528,7 +1528,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(217415),	-- Depleted Ruby Flightstone
 			i(220206),	-- Gleaming Satchel of Drake's Dreaming Crests
 			i(220204),	-- Pouch of Whelpling's Dreaming Crests
-			i(220205),	-- Satchel of Drake's Dreaming Crests
 			i(220207),	-- Shimmering Clutch of Wyrm's Dreaming Crests
 			i(220208),	-- Viridescent Bouquet of Aspect's Dreaming Crests
 			--
@@ -1537,7 +1536,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 10.2.7
 		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
-			i(218130),	-- Adventurer's Footlocker
 			i(218120),	-- Arsenal: Exodar Peacekeeper's Armaments
 			i(210881),	-- Cunning Charm
 			i(213530),	-- Entropic Crystal

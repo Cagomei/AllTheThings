@@ -1471,7 +1471,6 @@ root(ROOTS.Unsorted, {
 				i(226108),	-- [DNT] Debug Profession Stats
 				i(226120),	-- Deployable Battle Supplies \\ Deployable Charge Station
 				i(226131),	-- Deployable Wind-Wrangling Spire \\ Deployable Wind-Wrangling Station
-				i(226147),	-- Bunch of Brave Rocks
 				i(226149),	-- Pile of Humming Shinies
 				i(226150),	-- Gem-Studded Candelabra
 				i(226151),	-- Wax-Coated Coffer Unlocker
@@ -2314,7 +2313,6 @@ root(ROOTS.Unsorted, {
 					i(219218),	-- Timerunner's Starter Kit
 					i(219219),	-- Timerunner's Starter Kit
 					i(219220),	-- Catch Up Thread
-					i(223953),	-- Timerunner's Parting Pack
 					i(224009),	-- Survivalist's Biscuit
 					i(224010),	-- Survivalist's Purified Water
 					i(224021),	-- Survivalist's Healing Potion
