@@ -204,6 +204,8 @@ root(ROOTS.Unsorted, {
 			i(230206),	-- Add Keystone Affix: Xal'atath's Bargain: Devour
 			i(230208),	-- Add Keystone Affix: Xal'atath's Guile
 			i(230209),	-- Add Keystone Affix: Challenger's Peril
+			--
+			i(228911),	-- Xalatath's Rusty Coin
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(TITLES, {
@@ -735,8 +737,8 @@ root(ROOTS.Unsorted, {
 				i(225684),	-- Relicblood of Zekvir
 				i(225685),	-- Relic of Sentience
 				i(225692),	-- Glowglow Cap
-				i(225897),	-- Brute Force Idol
-				i(225898),	-- Idol of the Earthmother
+
+
 				i(225901),	-- Streamlined Relic \\ Power Idol
 				i(225908),	-- Relicblood of Zekvir
 			}),
@@ -1681,7 +1683,7 @@ root(ROOTS.Unsorted, {
 				i(226111),	-- Arakkoan Ritual Staff
 				i(226113),	-- Kereke's Flourishing Sabre
 				i(226115),	-- Contaminating Cleaver
-				i(219783),	-- Arachnophobic Spelunker's Bow
+				i(219783),	-- Arachnophobic Spelunker's Crossbow
 				i(219797),	-- Cured Terracotta Pummeler
 				i(228363),	-- Shinda's Spare Greataxe
 				i(228364),	-- Endiri's Chipped Boot Knife
