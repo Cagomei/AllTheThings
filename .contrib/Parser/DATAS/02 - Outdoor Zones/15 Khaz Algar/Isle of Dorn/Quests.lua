@@ -7,12 +7,73 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		n(QUESTS, {
 			-- Using Questauren These gets completed (Probably Inbetween Bronzebeard Family and Violet Impact)
 			q(82199),	--
-			q(81966),	-- Slept like a Rock
 			--
 			header(HEADERS.Achievement, 20118, {	-- The Isle of Dorn
+				q(81966, {	-- Slept like a Rock
+					-- likely re-log after 80500 'The Bronzebeard Family' is completed?
+					["maps"] = { LEGION_DALARAN },
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
+				}),
+				q(78717, {	-- A Mysterious Warning
+					["qg"] = 213624,	-- Magni Bronzebeard
+					["coord"] = { 45.3, 57.4, LEGION_DALARAN },
+					["sourceQuests"] = { 81966 },	-- Slept like a Rock
+				}),
+				q(78719, {	-- Citizens of Dalaran
+					["qg"] = 213627,	-- Archmage Khadgar
+					["coord"] = { 41.2, 62.3, LEGION_DALARAN },
+					["sourceQuests"] = { 78717 },	-- A Mysterious Warning
+				}),
+				q(78721, {	-- Meet the Team
+					["qg"] = 214669,	-- Brann Bronzebeard
+					["coord"] = { 47.0, 49.1, LEGION_DALARAN },
+					["sourceQuests"] = { 78717 },	-- A Mysterious Warning
+				}),
+				q(78718, {	-- Strengthen the Wards
+					["qg"] = 214665,	-- Archmage Drenden
+					["coord"] = { 56.4, 33.2, LEGION_DALARAN },
+					["sourceQuests"] = { 78717 },	-- A Mysterious Warning
+					["g"] = {
+						i(220483),	-- Tuning Wand
+					},
+				}),
+				q(78722, {	-- To Khaz Algar!
+					["qg"] = 213627,	-- Archmage Khadgar
+					["coord"] = { 41.2, 62.3, LEGION_DALARAN },
+					["sourceQuests"] = {
+						78719,	-- Citizens of Dalaran
+						78721,	-- Meet the Team
+						78718,	-- Strengthen the Wards
+					 },
+				}),
+				q(79105, {	-- Breach
+					["qg"] = 214908,	-- Alleria Windrunner
+					["coord"] = { 50.4, 50.4, 2305 },	-- Quest Dalaran
+					["sourceQuests"] = { 78722 },	-- To Khaz Algar!
+				}),
+				q(79106, {	-- Rupture
+					["qg"] = 214908,	-- Alleria Windrunner
+					["coord"] = { 35.7, 71.3, 2305 },	-- Quest Dalaran
+					["sourceQuests"] = { 79105 },	-- Breach
+					["maps"] = { 2307 },	-- Dalaran
+				}),
+				q(80321, {	-- Departure
+					["qg"] = 219885,	-- Anduin Wrynn
+					["coord"] = { 72.6, 57.7, 2307 },	-- Quest Dalaran
+					["sourceQuests"] = { 79106 },	-- Rupture
+					["g"] = {
+						-- Cloth
+						-- Leather
+						i(220379),	-- City Guard's Chainmail
+						-- Plate
+					},
+				}),
 				------ Chapter 1 ------
-				q(78529, {	-- Violet Impact
-					["sourceQuests"] = { 80500 },	-- The Bronzebeard Family
+				q(78529, {	-- Violent Impact
+					["qg"] = 217930,	-- Pile of Rubble
+					["coord"] = { 28.8, 54.5, ISLE_OF_DORN },
+					["sourceQuests"] = { 80321 },	-- Departure
 				}),
 				q(78530, {	-- Slay the Saboteurs
 					["sourceQuests"] = { 78529 },	-- Violet Impact
@@ -1172,4 +1233,12 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- Side quests
 	q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero)
 	q(80539),	-- Completing The Machine Speakeasy (79546)
+	hqt(82459, {	-- <Stay a while and Listen>
+		["qg"] = 222558,	-- Anduin Wrynn
+		["coord"] = { 44.7, 44.6, DORNOGAL },
+	}),
+	hqt(82460, {	-- <Stay a while and Listen>
+		["qg"] = 222557,	-- Magni Bronzebeard
+		["coord"] = { 44.5, 44.5, DORNOGAL },
+	}),
 });
