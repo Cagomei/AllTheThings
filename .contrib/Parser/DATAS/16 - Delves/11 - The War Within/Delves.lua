@@ -183,7 +183,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(225897, {	-- Brute Force Idol [Rank 1]
 					["bonusID"] = 11235
 				}),
-				i(229371),	-- Companion Experience
 			},
 		}),
 		q(84520, {	-- Ancient Curiosity: Utility
@@ -261,6 +260,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				-- Seems like two rare treasures in this dungeon? Can have different IDs
+				o(455914, {	-- Mislaid Curiosity
+					--["coord"] = { X, Y, EARTHCRAWL_MINES }, -- Seem to spawn at many locations in the delve + in other delves also? => Find a better home for this
+					-- Contains: Chunk of companion expereince (228072)
+				}),
 				o(454090, {	-- Sturdy Chest
 					["coord"] = { 45.2, 14.7, EARTHCRAWL_MINES },
 					["questID"] = 83440,
@@ -465,10 +468,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(TREASURES, {
-				o(455914, {	-- Sturdy Chest
-					["coord"] = { 48.1, 61.8, SKITTERING_BREACH },
-					["questID"] = 83679,
-				}),
 				o(455505, {	-- Sturdy Chest
 					["coord"] = { 27.4, 26.4, SKITTERING_BREACH },
 					["questID"] = 83660,
@@ -690,19 +689,19 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455490, {	-- Sturdy Chest
-					["coord"] = { 48.0, 25.6, THE_WATERWORKS },
+					["coord"] = { 49.9, 24.6, THE_WATERWORKS },
 					["questID"] = 83684,
 				}),
 				o(455532, {	-- Sturdy Chest
-					["coord"] = { 42.2, 40.0, THE_WATERWORKS },
+					["coord"] = { 44.3, 38.2, THE_WATERWORKS },
 					["questID"] = 83650,
 				}),
 				o(455512, {	-- Sturdy Chest
-					["coord"] = { 48.5, 56.0, THE_WATERWORKS },
+					["coord"] = { 47.9, 53.5, THE_WATERWORKS },
 					["questID"] = 83667,
 				}),
 				o(454207, {	-- Sturdy Chest
-					["coord"] = { 47.7, 83.0, THE_WATERWORKS },
+					["coord"] = { 49.5, 79.1, THE_WATERWORKS },
 					["questID"] = 83456,
 				}),
 				o(413590, {	-- Bountiful Coffer

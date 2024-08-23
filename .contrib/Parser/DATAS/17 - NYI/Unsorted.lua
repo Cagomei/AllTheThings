@@ -25,7 +25,6 @@ root(ROOTS.Unsorted, {
 				i(228743),	-- Damp Weavercloth
 				i(228744),	-- Golbin Twist-Rag
 				i(228745),	-- Aurora Strand
-				i(228756),	-- Bonus Snuffling Experience
 				-- Have QuestID attached
 				i(228947),	-- Weaver's Lair Profession Table
 				---
@@ -203,8 +202,6 @@ root(ROOTS.Unsorted, {
 			i(230206),	-- Add Keystone Affix: Xal'atath's Bargain: Devour
 			i(230208),	-- Add Keystone Affix: Xal'atath's Guile
 			i(230209),	-- Add Keystone Affix: Challenger's Peril
-			--
-			i(228911),	-- Xalatath's Rusty Coin
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(TITLES, {
@@ -1322,7 +1319,6 @@ root(ROOTS.Unsorted, {
 				i(222928),	-- Coin Coffer
 				i(222929),	-- Carved Coin Coffer \\ Large Coin Coffer
 				i(222954),	-- Runed Coin Coffer \\ Coin Coffer
-				i(222955),	-- Player Experience
 				i(222956),	-- Player Experience
 				i(222977),	-- Scorched Junk
 				i(223316),	-- Trusty Hat
@@ -1439,7 +1435,6 @@ root(ROOTS.Unsorted, {
 				i(225825),	-- Ground Snacking Stone
 				i(225826),	-- Broken Elevator Cog
 				i(225831),	-- Glittering Rock
-				i(225833),	-- Weathered Skipping Stone
 				i(225834),	-- Pilfered Matchbook
 				i(225835),	-- Battered Lantern
 				i(225841),	-- Ever-Frozen Ice
@@ -1503,18 +1498,13 @@ root(ROOTS.Unsorted, {
 				i(227781),	-- Delver's Bounty
 				i(227782),	-- Delver's Bounty
 				i(227783),	-- Delver's Bounty
-				i(227890),	-- Unrecognizable Prototype
 				i(228192),	-- Cracked Fel Focus
 				i(228193),	-- Chipped Demon's Blade
 				i(228194),	-- Fully Scrapped Scrap
 				i(228195),	-- Tattered Goblin Cap
 				i(228388),	-- Damp Doll
-				i(228390),	-- Left Boot
 				i(228391),	-- Right Boot
-				i(228392),	-- Corroded Pocket Watch
-				i(228393),	-- Shattered Lantern
 				i(228394),	-- Lost Note
-				i(228395),	-- Mud Clump
 				i(228396),	-- Dead Fish
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
@@ -1681,7 +1671,6 @@ root(ROOTS.Unsorted, {
 				i(226113),	-- Kereke's Flourishing Sabre
 				i(226115),	-- Contaminating Cleaver
 				i(219783),	-- Arachnophobic Spelunker's Crossbow
-				i(219797),	-- Cured Terracotta Pummeler
 				i(228363),	-- Shinda's Spare Greataxe
 				i(228364),	-- Endiri's Chipped Boot Knife
 				i(228366),	-- Child's Former Fishing Rod
@@ -1707,10 +1696,8 @@ root(ROOTS.Unsorted, {
 				i(219398),	-- Earthen Chain
 				i(219428),	-- Earthen Waistguard
 				i(219458),	-- Earthen Traveler's Dagger
-				i(219460),	-- Earthen Traveler's Handaxe
 				i(219464),	-- Earthen Traveler's Boomstick
 				i(219465),	-- Earthen Traveler's Crossbow
-				i(219467),	-- Earthen Traveler's Fist \\ Earthen Traveler's Fist Weapon
 				-- Earthen stuff again? Maybe erm.. Heritage?
 				i(224195),	-- Earthen Shoulders
 				i(224196),	-- Earthen Trousers
@@ -1878,7 +1865,6 @@ root(ROOTS.Unsorted, {
 				i(223461),	-- Algari Warden's Helm
 
 				i(223472),	-- Drape of the Lamplighter
-				i(220118),	-- Arathi Demolition Charge
 
 				i(223548),	-- Algari Rifle
 
@@ -1890,8 +1876,6 @@ root(ROOTS.Unsorted, {
 				i(223877),	-- Algari Hatchet
 				i(224453),	-- City Guard's Coronet \\ Dalaran Cowl
 				i(224454),	-- City Guard's Mask \\ Dalaran Hood
-				i(224455),	-- City Guard's Chainmail \\ Dalaran Chestguard
-				i(224456),	-- City Guard's Greaves \\ Dalaran Greaves
 				i(228374),	-- Shoulders of Kix'arak's Bane
 				i(228375),	-- Belt of Kix'arak's Bane
 				i(228376),	-- Boots of Kix'arak's Bane
