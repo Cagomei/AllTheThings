@@ -172,6 +172,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						i(219785),	-- Arachnophobic Spelunker's Battleaxe
 						i(219784),	-- Arachnophobic Spelunker's Battlestaff
+						i(219783),	-- Arachnophobic Spelunker's Crossbow
 						i(219789),	-- Arachnophobic Spelunker's Greatmace
 						i(219788),	-- Arachnophobic Spelunker's Knife
 						i(219786),	-- Arachnophobic Spelunker's Saber
@@ -984,6 +985,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 222363 },	-- Peacekeeper Leif
 					["coord"] = { 65.9, 23.8, ISLE_OF_DORN },
 					["g"] = {
+						i(223424),	-- Algari-Weave Cord
 						i(223464),	-- Algari Heavy Gauntlets
 					},
 				}),
@@ -1030,7 +1032,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 224708 },	-- Cenderragg
 					["coord"] = { 48.6, 60.9, ISLE_OF_DORN },
 					["g"] = {
+						i(228375),	-- Belt of Kix'arak's Bane
+						i(228376),	-- Boots of Kix'arak's Bane
 						i(228377),	-- Gauntlets of Kix'arak's Bane
+						i(228374),	-- Shoulders of Kix'arak's Bane
 					},
 				}),
 			}),

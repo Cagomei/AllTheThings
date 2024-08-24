@@ -1651,7 +1651,6 @@ root(ROOTS.Unsorted, {
 				i(225927),	-- Emerald Necklace
 
 				i(228378),	-- Pristine Council's Seal
-				i(228409),	-- Valrin's Sweetrolls
 			}),
 			n(WEAPONS, {
 				i(216905),	-- Brann Bronzebeard's Axe
@@ -1670,7 +1669,6 @@ root(ROOTS.Unsorted, {
 				i(226111),	-- Arakkoan Ritual Staff
 				i(226113),	-- Kereke's Flourishing Sabre
 				i(226115),	-- Contaminating Cleaver
-				i(219783),	-- Arachnophobic Spelunker's Crossbow
 				i(228363),	-- Shinda's Spare Greataxe
 				i(228364),	-- Endiri's Chipped Boot Knife
 				i(228366),	-- Child's Former Fishing Rod
@@ -1772,10 +1770,8 @@ root(ROOTS.Unsorted, {
 				i(224891),	-- Gundargaz Gauntlets
 			}),
 			n(RARES, {
-
 				i(221066),	-- Template - Accessory - Finger
 				i(221093),	-- Deeply Corrupted Coil
-
 				i(221209),	-- Flame Trader's Gloves
 				i(221210),	-- Grips of the Earth
 				i(221214),	-- Chitin Chain Headpiece
@@ -1800,17 +1796,7 @@ root(ROOTS.Unsorted, {
 				i(221263),	-- Nerubian Venom-Tipped Dart
 				i(221264),	-- Fungarian Mystic's Cluster
 				i(221505),	-- [DNT] Rare Cloth - Robe
-
 				i(223005),	-- String of Fungal Fruits
-
-
-
-
-
-
-
-
-
 				i(223915),	-- Nerubian Orator's Stiletto
 				i(223916),	-- Nerubian Cutthroat's Reach
 				i(223917),	-- Nerubian Covert's Cloak
@@ -1823,7 +1809,6 @@ root(ROOTS.Unsorted, {
 				i(223924),	-- Chitin-Inscribed Vest
 				i(223926),	-- Earthgorger's Chain Bib
 				i(223927),	-- Vinewrapped Leather Tunic
-
 				i(223930),	-- Monstrous Chain Pincers
 				i(223932),	-- Scarab's Carapace Cap
 				i(223934),	-- Makrura's Foreboding Legplates
@@ -1842,32 +1827,18 @@ root(ROOTS.Unsorted, {
 				i(224467),	-- Forgotten Axe
 			}),
 			n(REWARDS, {
-				i(223424),	-- Algari-Weave Cord
-
-
-
 				i(223438),	-- Algari Warden's Vestment
 				i(223439),	-- Mereldar Scholar's Leggings
 				i(223444),	-- Arathi Defender's Breeches
 				i(223450),	-- Honored Soldier's Chainmail
-
 				i(223441),	-- Algari Scouting Boots
 				i(223443),	-- Algari Warden's Hood
-
-
-
-
 				i(223454),	-- Algari Warden's Greaves
-
 				i(223456),	-- [PH] 11.0 - Cinch
-
 				i(223458),	-- [PH] 11.0 - Belt
 				i(223461),	-- Algari Warden's Helm
-
 				i(223472),	-- Drape of the Lamplighter
-
 				i(223548),	-- Algari Rifle
-
 				i(223584),	-- Algari Scepter
 				i(223585),	-- Algari Bladefist
 				i(223588),	-- Algari Fighting Knife
@@ -1876,9 +1847,6 @@ root(ROOTS.Unsorted, {
 				i(223877),	-- Algari Hatchet
 				i(224453),	-- City Guard's Coronet \\ Dalaran Cowl
 				i(224454),	-- City Guard's Mask \\ Dalaran Hood
-				i(228374),	-- Shoulders of Kix'arak's Bane
-				i(228375),	-- Belt of Kix'arak's Bane
-				i(228376),	-- Boots of Kix'arak's Bane
 				i(228435),	-- Wine-Dyed Leggings
 				i(228436),	-- United Arathi's Jerkin
 				i(228437),	-- Salamanther-Scale Greaves
@@ -1895,8 +1863,6 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				-- Snuffling
 				i(224650),	-- Wax-Sealed Pouch
-				i(228210),	-- Firelight Ruby Chip
-				i(228220),	-- Waxy Bundle
 			}),
 			n(ACHIEVEMENTS, {
 				i(225209),	-- Sacred Flame Prayers
