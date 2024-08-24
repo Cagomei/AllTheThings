@@ -865,6 +865,22 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["provider"] = { "i", 222547 },	-- Algari Treatise on Tailoring
 			}),
 		})),
+		n(TREASURES, {
+			o(455942, {	-- Eathen Sticher's Snips
+				["coord"] = { 64.2, 60.2, THE_RINGING_DEEPS },
+				["questID"] = 83925,
+				["g"] = {
+					i(226351),	-- Earthen Stitcher's Snips
+				},
+			}),
+			o(455943, {	-- Runed Earthen Pins
+				["coord"] = { 48.8, 32.8, THE_RINGING_DEEPS },
+				["questID"] = 83924,
+				["g"] = {
+					i(226350),	-- Runed Earthen Pins
+				},
+			}),
+		}),
 	})),
 })));
 

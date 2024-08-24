@@ -36,7 +36,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(BATTLE_PETS, {
 				i(228765),	-- Gummi (PET!) [Promotion?]
-				i(228758),	-- Parrlok (PET!) [Trading Post?]
 			}),
 			n(PROFESSIONS, {
 				-- Profession Knowledge Notes
@@ -181,7 +180,6 @@ root(ROOTS.Unsorted, {
 			i(229161),	-- Lamplighter's Chopper
 			i(229162),	-- Lamplighter's Sword
 			i(229163),	-- Lamplighter's Blade
-			i(226520),	-- Queen's Pheromone
 			i(229194),	-- Queen's Pheromone
 			i(229195),	-- Queen's Pheromone
 			i(229370),	-- Companion Experience
@@ -631,8 +629,6 @@ root(ROOTS.Unsorted, {
 
 				i(226348),	-- Dornogal Seam Ripper
 				i(226349),	-- Earthen Tape Measure
-				i(226350),	-- Runed Earthen Pins
-				i(226351),	-- Earthen Stitcher's Snips
 				i(226352),	-- Arathi Rotary Cutter
 				i(226353),	-- Royal Outfitter's Protractor
 				i(226354),	-- Nerubian Quilt
@@ -1221,7 +1217,6 @@ root(ROOTS.Unsorted, {
 
 				i(225539),	-- [PH] Armor Epaulets
 
-
 				i(219942),	-- 11.0 Stalwart's Sandals
 				i(220157),	-- Empowered Tinderbox
 				i(220158),	-- Darkened Tinderbox
@@ -1230,7 +1225,6 @@ root(ROOTS.Unsorted, {
 				i(225656),	-- Goldenglow Censer
 				i(225661),	-- Burning Binding
 				i(225891),	-- Vile Vial of Kaheti Bile
-				i(226134),	-- Mourning Baron's Shoulderpads
 				i(226137),	-- Inquisitive Sister's Cinch
 				i(226138),	-- Vow-Taker's Boots
 				i(226174),	-- Famished Bride's Clasp
@@ -1413,7 +1407,6 @@ root(ROOTS.Unsorted, {
 				i(225824),	-- Sand Sculpting Comb
 				i(225825),	-- Ground Snacking Stone
 				i(225826),	-- Broken Elevator Cog
-				i(225831),	-- Glittering Rock
 				i(225834),	-- Pilfered Matchbook
 				i(225835),	-- Battered Lantern
 				i(225841),	-- Ever-Frozen Ice
@@ -1592,7 +1585,6 @@ root(ROOTS.Unsorted, {
 				i(223079),	-- Slagshell Egg \\ Recipe: Shadow-Infused Gumbo
 				i(223220),	-- Kaheti All-Purpose Cleanser
 				i(223638),	-- Arathi Trade Goods
-				i(223889),	-- Flame Touched Weaponry
 				i(223952),	-- Singed Plush
 				i(224011),	-- Signet of the Thousand Scars
 				i(224012),	-- Signet of the Thousand Scars
@@ -1645,7 +1637,6 @@ root(ROOTS.Unsorted, {
 			filter(TOYS, {
 				i(218310),	-- Box of Puntables (TOY!) [Winter Veil]
 				i(224809),	-- Earthen Plumber's Pipe (TOY!)
-				i(225347),	-- Web-Vandal's Spinning Wheel (TOY!)
 				i(216887),	-- Unknown (TOY!)
 				-- Should Maybe get a Toy Tag... Lets see later...
 				i(215146),	-- JC Gemcutting Toy
@@ -1808,7 +1799,6 @@ root(ROOTS.Unsorted, {
 				i(223876),	-- Algari Warglaive
 				i(223877),	-- Algari Hatchet
 				i(224454),	-- City Guard's Mask \\ Dalaran Hood
-				i(228435),	-- Wine-Dyed Leggings
 				i(228436),	-- United Arathi's Jerkin
 				i(228437),	-- Salamanther-Scale Greaves
 				i(228439),	-- Mitts of Menial Tasks
