@@ -64,6 +64,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { 79106 },	-- Rupture
 					["g"] = {
 						-- Cloth
+						i(224453),	-- City Guard's Coronet
 						-- Leather
 						i(220379),	-- City Guard's Chainmail (doesn't load ingame?)
 						-- Mail
@@ -80,7 +81,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(78530, {	-- Slay the Saboteurs
 					["sourceQuests"] = { 78529 },	-- Violet Impact
-					["provider"] = { "n", 211944 },	-- Lady Jaina Proudmoore
+					["provider"] = { "n", 211994 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 57.1, ISLE_OF_DORN },
 				}),
 				q(78531, {	-- Urgent Recovery

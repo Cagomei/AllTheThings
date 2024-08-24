@@ -184,6 +184,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(225203),	-- Beledar- The Emperor's Vision [book]
 				},
 			}),
+			o(439473, {	-- Tenir and the Order of Night
+				["description"] = "In the basement",
+				["coord"] = { 63.5, 29.5, HALLOWFALL },
+				["g"] = {
+					i(219384),	-- Tenir and the Order of Night
+				},
+			}),
 			o(453754, {	-- The Song of Renilash
 				["coord"] = { 70.2, 56.8, HALLOWFALL },
 				["questID"] = 83313,
@@ -196,6 +203,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 83314,
 				["g"] = {
 					i(225212),	-- The Big Book of Arathi Idioms [book]
+				},
+			}),
+			o(419729, {	-- Strange Eggs
+				["coord"] = { 67.1, 21.8, HALLOWFALL },
+				["questID"] = 83032,
+				["g"] = {
+					i(212331),	-- The Unusual Bug
 				},
 			}),
 			o(441611, {	-- Windswept Satchel

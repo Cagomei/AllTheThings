@@ -23,13 +23,13 @@ i(187603);	-- The Mad Duke's Tea
 i(195572);	-- Empty Elixir
 i(194742);	-- Worn Book
 -- TWW
-i(229371)	-- Companion Experience
-i(228392)	-- Corroded Pocket Watch [Fishing]
-i(228390)	-- Left Boot [Fishing]
-i(228395)	-- Mud Clump [Fishing]
-i(228393)	-- Shattered Lantern [Fishing]
-i(225833)	-- Weathered Skipping Stone [Enormous Pile of Refuse]
-i(228756)	-- Bonus Snuffling Experience [Wax Contribution]
+i(229371);	-- Companion Experience
+i(228392);	-- Corroded Pocket Watch [Fishing]
+i(228390);	-- Left Boot [Fishing]
+i(228395);	-- Mud Clump [Fishing]
+i(228393);	-- Shattered Lantern [Fishing]
+i(225833);	-- Weathered Skipping Stone [Enormous Pile of Refuse]
+i(228756);	-- Bonus Snuffling Experience [Wax Contribution]
 
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 
@@ -1918,6 +1918,7 @@ i(210829);	-- Neutralize Concoctions
 i(224153);	-- Nibbled Shroomcap
 i(213258);	-- Odorant Oddity
 i(225845);	-- Old Explorer's Compass
+i(225817);	-- Ominous Ceremonial Robe
 i(223887);	-- Ominous Herbs
 i(223885);	-- Ominous Transmutation
 i(228608);	-- On the Application of Arathi Technology to Earthen Life
@@ -1928,6 +1929,7 @@ i(225787);	-- Pheromone-Covered Missive
 i(220283);	-- Pileus Puff
 i(222955);	-- Player Experience
 i(220247);	-- Polishing Powder
+i(225816);	-- Profaned Pendant
 i(228491);	-- Ramolith Bedding Material
 i(220258);	-- Rotting Bones
 i(225796);	-- Particularly Pungent Herbs
@@ -1988,6 +1990,7 @@ i(218453);	-- Unusable Fragment
 i(220289);	-- Venomous Stinger
 i(220293);	-- Very Soft Wool
 i(220270);	-- Vile Catalyst
+i(220221);	-- Void Pebble
 i(223884);	-- Volatile Transmutation
 i(220276);	-- Wax-Covered Helmet
 i(220263);	-- Wax Miner's Sack

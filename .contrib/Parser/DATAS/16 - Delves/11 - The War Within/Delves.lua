@@ -505,19 +505,21 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455533, {	-- Sturdy Chest
-					["coord"] = { 57.5, 18.5, TAK_RETHAN_ABYSS },
+					["coord"] = { 59.7, 24.7, TAK_RETHAN_ABYSS },
 					["questID"] = 83651,
+					-- dropped i(226120)	-- Deployable Battle Supplies
+					-- maybe not unique to this chest
 				}),
 				o(455514, {	-- Sturdy Chest
-					["coord"] = { 61.3, 39.2, TAK_RETHAN_ABYSS },
+					["coord"] = { 35.1, 58.6, TAK_RETHAN_ABYSS },
 					["questID"] = 83669,
 				}),
 				o(455492, {	-- Sturdy Chest
-					["coord"] = { 44.3, 39.9, TAK_RETHAN_ABYSS },
+					["coord"] = { 64.7, 49.3, TAK_RETHAN_ABYSS },
 					["questID"] = 83686,
 				}),
 				o(455493, {	-- Sturdy Chest
-					["coord"] = { 55.0, 62.7, TAK_RETHAN_ABYSS },
+					["coord"] = { 44.7, 49.7, TAK_RETHAN_ABYSS },
 					["questID"] = 83687,
 				}),
 			}),
@@ -651,7 +653,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83761, {	-- Delves: The Underkeep
 					["provider"] = { "n", 227544 },	-- Brann Bronzebeard
-					["coord"] = { 55.9, 38.1, AZJ_KAHET },
+					["coord"] = { 57.3, 42.2, AZJ_KAHET },
 				}),
 			}),
 			n(TREASURES, {
@@ -793,6 +795,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(TRINKET_F, {
 				i(215174),	-- Concoction: Kiss of Death
 				i(225653),	-- Siphoning Lightbrand
+				i(215178),	-- Shadow-Binding Ritual Knife
+				i(225668),	-- Unstable Power Suit Core
 			}),
 		}),
 		n(BOUNTIFUL, bubbleDownFiltered({
@@ -876,6 +880,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(219210),	-- Sanctifier's Startierce
 			}),
 		})),
+		filter(CONSUMABLES, {
+			i(226120),	-- Deployable Battle Supplies
+			i(226131),	-- Deployable Wind-Wrangling Spire
+		}),
 		filter(COSMETIC, {
 			i(212172),	-- Ajul'Nerub Raptorial Spine
 			i(212173),	-- Rulk'Nerub Raptorial Spine

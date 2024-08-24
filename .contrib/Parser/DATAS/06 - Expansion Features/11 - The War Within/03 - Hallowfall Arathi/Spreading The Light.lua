@@ -89,6 +89,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(212333),	-- Expedition Tinderbox (QS!/QI!)
 						},
 					}),
+					q(79234, {	-- A Small Bag of Seeds
+						["provider"] = { "i", 212339 },	-- Expedition Tinderbox
+					}),
+					q(78589, {	-- Invasive Cuisine
+						["provider"] = { "i", 211861 },	-- Umbral Eggplant
+					}),
 				}),
 				n(QUESTS, sharedData({ ["isWeekly"] = true }, {
 					q(79346, {	-- Chew On That
@@ -144,6 +150,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 64.6, 30.7, HALLOWFALL },
 						["g"] = {
 							i(211872),	-- Patrol Torch (QI!)
+						},
+					}),
+					q(76600, {	-- RIght Between the Gyro-Optics
+						["sourceQuests"] = { 76599 },	-- Right Between the Gyro-Optics - Activate
+						["provider"] = { "n", 208019 },	-- Auebry Irongear
+						["coord"] = { 64.6, 30.7, HALLOWFALL },
+						["g"] = {
+							i(207084),	-- Auebry's Marker Pistol
 						},
 					}),
 					q(76394, {	-- Shadows of Flavor
@@ -269,14 +283,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					n(206203, {	-- Moth'ethk
 						["coord"] = { 63.5, 28.5, HALLOWFALL },
 						["questID"] = 82557,
+						["g"] = {
+							i(223924),	-- Chitin-Inscribed Vest
+						},
 					}),
 					n(220771, {	-- Murkspike
 						["coord"] = { 62.4, 13.3, HALLOWFALL },
 						["questID"] = 82565,
 					}),
 					n(206977, {	-- Parasidious
-						--["coord"] = { X, Y, HALLOWFALL },
+						["description"] = "Pull many Shadowroot Vines until eventually the Rare is spawned.",
+						["coord"] = { 61.8, 32.5, HALLOWFALL },
 						["questID"] = 82563,
+						["crs"] = {
+							206870,	-- Shadowrooted Vine
+							206978,	-- Disturbed Dirt
+							206980,	-- Fungus Growth
+							206981,	-- Fungus Mound
+							206993,	-- Fungal Mass
+						},
+						["g"] = {
+							i(223940),	-- Deranged Fungarian's Epaulets
+						},
 					}),
 					n(207826, {	-- Ravageant
 						["coord"] = { 59.8, 21.4, HALLOWFALL },
@@ -299,6 +327,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(228741, {	-- Lamplighter Supply Satchel
 						--probably all this sets is from here?
 						i(229085),	-- Aevery's Spare Bracers
+						i(229081),	-- Aevery's Spare Cowl
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
 					}),
@@ -306,6 +335,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
 				}),
 				n(TREASURES, {
+					o(417381, {	-- A Small Bag of Seeds
+						["coord"] = { 65.3, 27.2, HALLOWFALL },
+						["g"] = {
+							i(212339),	-- A Small Bag of Seeds
+						},
+					}),
 					o(428472, {	-- Captain Lancekat's Discretionary Funds
 						["description"] = "Require any source of light for area (e.g. torch) that reveal this treasure",
 						["coord"] = { 66.5, 15.1, HALLOWFALL },
@@ -343,17 +378,57 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					o(441795, {	-- Hallowfall Sparkfly
 						["coord"] = { 66.8, 25.3, HALLOWFALL },
+						["description"] = "Requires level 80",
 						--["questID"] = ,
-						["cost"] = {{"i", 218107, 1}},	-- 1x Sparkbug Jar
+						["provider"] = {"i", 218107},	-- Sparkbug Jar
 						["g"] = {
 							i(220771),	-- Hallowed Glowfly (PET!)
 						},
 					}),
+					o(451967, {	-- Hallowfall Lunchbox
+						["coord"] = { 62.0, 31.7, HALLOWFALL },
+						["questID"] = 82996,
+						["provider"] = {"i", 218107},	-- Sparkbug Jar
+					}),
 					o(453186, {	-- Nightfarm Growthling
-						--["coord"] = { 66.8, 25.3, HALLOWFALL },
-						--["questID"] = ,
+						["coord"] = { 61.3, 31.8, HALLOWFALL },
+						["questID"] = 83272,
 						["g"] = {
 							i(221546),	-- Nightfarm Growthling (PET!)
+						},
+					}),
+					o(451993, {	-- Nerubian Device
+						["coord"] = { 62.3, 31.7, HALLOWFALL },
+						["g"] = {
+							i(224548),	-- Nerubian Device
+							-- put this on the quest once known
+							-- ["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 16 },
+						},
+					}),
+					o(434929, {	-- Radiant Remnant
+						["coord"] = { 62.1, 31.7, HALLOWFALL },
+						["questID"] = 80586,
+					}),
+					o(434561, {	-- Radiant Remnant
+						["coord"] = { 65.6, 27.0, HALLOWFALL },
+						["questID"] = 80550,
+					}),
+					o(434554, {	-- Radiant Remnant
+						["coord"] = { 64.8, 28.9, HALLOWFALL },
+						["questID"] = 80548,
+					}),
+					o(435009, {	-- Radiant Remnant
+						["coord"] = { 61.3, 31.8, HALLOWFALL },
+						["questID"] = 80591,
+					}),
+					o(434564, {	-- Radiant Remnant
+						["coord"] = { 65.0, 30.2, HALLOWFALL },
+						["questID"] = 80552,
+					}),
+					n(206870, {	-- Shadowrooted Vine
+						["provider"] = { "i", 206670 },	-- Darkroot Grips
+						["g"] = {
+							i(211861),	-- Umbral Eggplant
 						},
 					}),
 				}),
@@ -475,7 +550,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	q(81846),	-- Ore @ 65.3, 16.6
 	q(83047),	-- Ore @ 66.1, 17.0
 	q(83039),	-- Ore @ 66.3, 17.5
-	q(80548),	-- Radiant Remnant @ 64.8, 28.9
 	q(80583),	-- Radiant Remnant @ 64.0, 31.7
 	q(80337),	-- Radiant Remnant @ 66.1, 16.6
 	q(80347),	-- Radiant Remnant @ 65.7, 16.5
@@ -499,6 +573,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	q(84054),	-- Extra HQT: Croakit
 	q(84053),	-- Extra HQT: Deathpetal
 	q(84056),	-- Extra HQT: Duskshadow
+	q(84057),	-- Extra HQT: Parasidious
 	q(84059),	-- Extra HQT: Finclaw Bloodtide
 	q(84051),	-- Extra HQT: Moth'ethk
 	q(84060),	-- Extra HQT: Murkspike

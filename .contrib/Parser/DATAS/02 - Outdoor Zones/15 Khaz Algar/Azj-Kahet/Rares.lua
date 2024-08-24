@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(214151, {	-- Ahg'zagall
 				["coord"] = { 40.0, 47.3, AZJ_KAHET },
-				["questID"] = 81698,	-- 78905 on 80s 2nd character??
+				["questID"] = 81698,
 				["g"] = {
 					i(223375),	-- Clattering Chitin Necklace
 				},
@@ -83,6 +83,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81706,
 				["g"] = {
 					i(221217),	-- Nerubian Bomber's Leggings
+					i(221252),	-- Nerubian Slayer's Claymore
 				},
 			}),
 			n(216043, {	-- Monstrous Lasharoth
@@ -90,6 +91,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81705,
 				["g"] = {
 					i(221250),	-- Creeping Lasher Machete
+					i(221227),	-- Monstrous Fungal Cord
 				},
 			}),
 			n(216052, {	-- Skrimisher Sa'zryk
@@ -135,6 +137,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82289,
 				["coord"] = { 62.8, 66.7, AZJ_KAHET },
 				["g"] = {
+					i(221263),	-- Nerubian Venom-Tipped Dart
 					i(225952),	-- Vial of Tka'ktath's Blood (QS!)
 				},
 			}),
@@ -178,6 +181,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 
 root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
+		q(78905),	-- Extra HQT: Ahg'zagall
 		q(84073),	-- Extra HQT: Cha'tak
 		q(84081),	-- Extra HQT: Deepcrawler Tx'kesh
 		q(84076),	-- Extra HQT: Enduring Gutterface
@@ -191,6 +195,7 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(84069),	-- Extra HQT: The Groundskeeper
 		q(85167),	-- Extra HQT: The One Left
 		q(84078),	-- Extra HQT: The Oozekhan
+		q(85166),	-- Extra HQT: Tka'ktath
 		q(84080),	-- Extra HQT: Umbraclaw Matra
 		q(84072),	-- Extra HQT: XT-Minecrusher 8700
 	}),
