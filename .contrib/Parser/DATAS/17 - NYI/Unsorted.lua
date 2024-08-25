@@ -627,10 +627,8 @@ root(ROOTS.Unsorted, {
 
 				i(226346),	-- Nerubian's Slicking Iron
 
-				i(226348),	-- Dornogal Seam Ripper
 				i(226349),	-- Earthen Tape Measure
 				i(226352),	-- Arathi Rotary Cutter
-				i(226353),	-- Royal Outfitter's Protractor
 				i(226354),	-- Nerubian Quilt
 				i(226355),	-- Nerubian's Pincushion
 				i(224780),	-- Toughened Tempest Pelt
@@ -716,7 +714,6 @@ root(ROOTS.Unsorted, {
 				i(225683),	-- Grasping Necrotic Relic
 				i(225684),	-- Relicblood of Zekvir
 				i(225685),	-- Relic of Sentience
-				i(225692),	-- Glowglow Cap
 
 
 				i(225901),	-- Streamlined Relic \\ Power Idol
@@ -1190,7 +1187,6 @@ root(ROOTS.Unsorted, {
 				i(224170),	-- Wildercloth Fishing Cap
 				i(224171),	-- Master's Wildercloth Fishing Cap
 				-- Armor
-				i(224661),	-- Gem-Studded Signet
 
 
 				i(225509),	-- [PH] Armor Vestment
@@ -1399,7 +1395,6 @@ root(ROOTS.Unsorted, {
 				i(225805),	-- Ornate Box of Seasonings
 				i(225806),	-- Crystal Inkwell
 				i(225809),	-- Oiled Pigment Pouch
-				i(225811),	-- Gleaming Deep-Pearl
 				i(225818),	-- Tainted Incense
 				i(225819),	-- Smudged Propaganda
 				i(225822),	-- Jar of Cinderbee Honey
@@ -1410,7 +1405,6 @@ root(ROOTS.Unsorted, {
 				i(225834),	-- Pilfered Matchbook
 				i(225835),	-- Battered Lantern
 				i(225841),	-- Ever-Frozen Ice
-				i(225842),	-- Whirling Sphere
 				i(225843),	-- Ancient Bronze Hourglass
 				i(225844),	-- Damaged Radial Cog
 				i(225846),	-- Fractured Command Matrix
@@ -1653,8 +1647,6 @@ root(ROOTS.Unsorted, {
 				i(219398),	-- Earthen Chain
 				i(219428),	-- Earthen Waistguard
 				i(219458),	-- Earthen Traveler's Dagger
-				i(219464),	-- Earthen Traveler's Boomstick
-				i(219465),	-- Earthen Traveler's Crossbow
 				-- Earthen stuff again? Maybe erm.. Heritage?
 				i(224195),	-- Earthen Shoulders
 				i(224196),	-- Earthen Trousers
@@ -1776,7 +1768,6 @@ root(ROOTS.Unsorted, {
 				i(223945),	-- [PH] Perchfather's Cuffs
 				i(223946),	-- [PH] Storm Bindings
 				i(223947),	-- [PH] Steam-Powered Wristwatch
-				i(223949),	-- Dark Depth Stompers
 				i(224467),	-- Forgotten Axe
 			}),
 			n(REWARDS, {

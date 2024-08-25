@@ -12,9 +12,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 211752 },	-- Alleria Windrunner
 					["coord"] = { 32.0, 47.1, AZJ_KAHET },
 					["g"] = {
-						i(211775),	-- Bleached Bones (QI!)
-						i(211774),	-- Crumpled Lion Gauntlet (QI!)
-						i(211783),	-- Scrap of Weathered Fabric (QI!)
+						o(411104, {	-- Well-Bleached Bones
+							i(211775),	-- Bleached Bones (QI!)
+						}),
+						o(411102, {	-- Airship Rubble
+							i(211774),	-- Crumpled Lion Gauntlet (QI!)
+						}),
+						o(411106, {	-- Weathered Cloth
+							i(211783),	-- Scrap of Weathered Fabric (QI!)
+						}),
 					},
 				}),
 				q(78350, {	-- Heroes Never Die
@@ -117,12 +123,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 					["coord"] = { 63.0, 32.9, AZJ_KAHET },
 					["g"] = {
-						i(211870),	-- Flynn's Blades (QI!)
-						i(221031, {	-- Nerubian Intelligence (QI!)
-							i(212158),	-- Broken Venom Flask (QI!)
-							i(211769),	-- Orders from Siegehold (QI!)
-							i(212159),	-- Vial of Stinky Pheromones (QI!)
+						o(441587, {	-- Crate of Emptied Vials
+							i(212159),	-- Vial of Used Pheromones (QI!)
 						}),
+						o(441586, {	-- Military Correspondence
+							i(211769),	-- Orders from Siegehold (QI!)
+						}),
+						o(441588, {	-- Confiscated Weapons
+							i(211870),	-- Flynn's Blades (QI!)
+						}),
+						o(441585, {	-- Burning Venom Flask
+							i(212158),	-- Burning Venom Flask (QI!)
+						}),
+						i(221031),	-- Nerubian Intelligence (QI!)
 						i(225364),	-- Kaheti Confiscated Blade
 						i(225349),	-- Kaheti Confiscated Borers
 						i(225358),	-- Kaheti Confiscated Buckler
@@ -166,7 +179,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 217330 },	-- Anub'azal
 					["coord"] = { 46.9, 26.2, AZJ_KAHET },
 					["g"] = {
-						i(217165),	-- Zev'kall's Attrition Log (QI!)
+						o(410395, {	-- Siegehold Records
+							i(217165),	-- Zev'kall's Attrition Log (QI!)
+						}),
 					},
 				}),
 				q(78249, {	-- Specific Personages
@@ -218,7 +233,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 215845 },	-- Monte Gazlowe
 					["coord"] = { 52.7, 31.6, AZJ_KAHET },
 					["g"] = {
-						i(217042),	-- Zev'kall's Pheromone Emitter (QI!)
+						o(428814, {	-- Inconspicuous Box
+							i(217042),	-- Zev'kall's Pheromone Emitter (QI!)
+						}),
 					},
 				}),
 				------ Chapter 3 ------
@@ -498,12 +515,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["isBreadcrumb"] = true,
 				}),
 				q(80564, {	-- Field Research
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 83306 }, -- Where the Wild Things Camp
 					["provider"] = { "n", 220595 },	-- Orweyna
 					["coord"] = { 46.1, 68.9, AZJ_KAHET },
 				}),
 				q(80563, {	-- Tool of Attunement
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 83306 }, -- Where the Wild Things Camp
 					["provider"] = { "n", 220595 },	-- Orweyna
 					["coord"] = { 46.1, 68.9, AZJ_KAHET },
 					["g"] = {
@@ -633,7 +650,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 214168 },	-- Skedgit Cinderbangs
 					["coord"] = { 42.5, 44.4, AZJ_KAHET },
 					["g"] = {
-						i(211415),	-- Sivstone Chunk (QI!)
+						o(414113, {	-- Sivstone Deposit
+							i(211415),	-- Sivstone Chunk (QI!)
+						}),
 					},
 				}),
 				q(79349, {	-- Entrepreneur Inc.
@@ -728,7 +747,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["isBreadcrumb"] = true,
 				}),
 				q(83628, {	-- Tense Recovery
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 83716 }, -- Beneath the Roots
 					["provider"] = { "n", 227222 },	-- Ysabel Gleamgaard
 					["coord"] = { 26.8, 55.9, AZJ_KAHET },
 				}),
@@ -782,8 +801,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40636.12, {	-- Subterfuge in Silk
 				q(81686, {	-- Subterfuge in Silk
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
-					["provider"] = { "n", 207471 },	-- Window Arak'nal
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
+					["provider"] = { "n", 207476 },	-- Kex
+					["coord"] = { 56.8, 38.8, AZJ_KAHET },
 					["isBreadcrumb"] = true,	-- unless it is now required for spawn next quests/npc
 				}),
 				q(83616, {	-- The Entrenched
@@ -852,8 +871,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(81890, {	-- Unfulfilled Requests
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
-					--["provider"] = { "n", NNNNNN },
-					--["coord"] = { X, Y, AZJ_KAHET },
+					["provider"] = { "n", 208782 },	-- Executor Nizrek
+					["coord"] = { 52.9, 46.1, AZJ_KAHET },
 					["isBreadcrumb"] = true
 				}),
 				q(81928, {	-- The Voice of the People
@@ -986,6 +1005,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					--["sourceQuests"] = { 79030 },	-- The Voice of the Speakers (?)
 					["provider"] = { "n", 230098 },	-- Spindle
 					["coord"] = { 46.1, 50.0, DORNOGAL },
+					["isBreadcrumb"] = true,
 				}),
 				q(83276, {	-- Saving Private Spindle
 					["sourceQuests"] = { 84700 },	-- Pacts Below (still unsure)

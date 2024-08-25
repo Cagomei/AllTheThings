@@ -10,7 +10,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			--
 			header(HEADERS.Achievement, 20118, {	-- The Isle of Dorn
 				q(81966, {	-- Slept like a Rock
-					-- likely re-log after 80500 'The Bronzebeard Family' is completed?
+					["description"] = "Requires re-logging to be accepted",
+					["sourceQuests"] = { 80500 },	-- The Bronzebeard Family
 					["maps"] = { LEGION_DALARAN },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
@@ -492,9 +493,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
 					["coord"] = { 49.9, 49.3, DORNOGAL },
 					["g"] = {
-						i(217499),	-- Assorted Chisels (QI!)
-						i(217500),	-- High-Quality Coal (QI!)
-						i(217501),	-- Moleskin Apron (QI!)
+						o(432893, {	-- Shipment Crate
+							i(217499),	-- Assorted Chisels (QI!)
+						}),
+						o(429301, {	-- Shipment Crate
+							i(217500),	-- High-Quality Coal (QI!)
+						}),
+						o(432894, {	-- Shipment Crate
+							i(217501),	-- Moleskin Apron (QI!)
+						}),
 						i(217498),	-- Seized Shipment (QI!)
 					},
 				}),
@@ -508,10 +515,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
 					["coord"] = { 49.9, 49.3, DORNOGAL },
 					["g"] = {
-						i(217505),	-- Bag of Glowing Shards (QI!)
-						i(217504),	-- Bundle of Receipts (QI!)
-						i(217502),	-- Infused Underclay (QI!)
-						i(217503),	-- Nerubian Silk Ropes (QI!)
+						o(433101, {	-- Bag of Glowing Shards
+							i(217505),	-- Bag of Glowing Shards (QI!)
+						}),
+						o(433102, {
+							i(217504),	-- Bundle of Receipts (QI!)
+						}),
+						o(433090, {	-- Infused Underclay
+							i(217502),	-- Infused Underclay (QI!)
+						}),
+						o(433109, {	-- Nerubian Silk Ropes
+							i(217503),	-- Nerubian Silk Ropes (QI!)
+						}),
 					},
 				}),
 				q(79525, {	-- Report to the Councilward
@@ -810,7 +825,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 213687 },	-- Urtago
 					["coord"] = { 62.8, 41.1, ISLE_OF_DORN },
 					["g"] = {
-						i(211428),	-- Earthen Belongings (QI!)
+						o(414199, {	-- Pile of Earthen Belongings
+							i(211428),	-- Earthen Belongings (QI!)
+						}),
 					},
 				}),
 				q(78746, {	-- Laws Apply to All
@@ -851,7 +868,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 57.7, 42.7, ISLE_OF_DORN },
 					["g"] = {
 						i(213002),	-- Charged Core (QI!)
-						i(213001),	-- Clump of Ore (QI!)
+						o(420730, {
+							i(213001),	-- Clump of Ore (QI!)
+						}),
 					},
 				}),
 				q(79336, {	-- The Forging of Memories
@@ -872,7 +891,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 213187 },	-- Urtago
 					["coord"] = { 57.8, 42.7, ISLE_OF_DORN },
 					["g"] = {
-						i(216677),	-- Korgran's Lantern (QI!)
+						o(424253, {	-- Korgran's Lantern
+							i(216677),	-- Korgran's Lantern (QI!)
+						}),
 					},
 				}),
 				q(79339, {	-- A Change of Tradition
@@ -885,7 +906,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 216173 },	-- Urtago
 					["coord"] = { 72.5, 59.2, ISLE_OF_DORN },
 					["g"] = {
-						i(213157),	-- Ashenfold (QI!)
+						o(420734, {	-- Ashenfold
+							i(213157),	-- Ashenfold (QI!)
+						}),
 					},
 				}),
 				q(79340, {	-- Tools of Declaration
@@ -1248,7 +1271,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(83622),	-- [DNT] Zone 1 Bread Crumb Completed Organically (spellID 456955), when you break free out of rocks during questID 78529 (Violet Impact)
 	q(79629),	-- [DNT] Council of Dornogal Renown Unlock (spellID 446910)
 	q(82462),	-- 'Stay awhile and listen' - Moira Thaurissan (n: 217878), after turn in questID 78462 (Echoes of Compassion)
-	q(82541),	-- 'Stay awhile and listen' - Merrix (n: 214916), after turn in 79157 (or after accept 79224)
 	-- Side quests
 	q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero)
 	q(80539),	-- Completing The Machine Speakeasy (79546)

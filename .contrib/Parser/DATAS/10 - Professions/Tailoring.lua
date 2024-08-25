@@ -866,11 +866,32 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		})),
 		n(TREASURES, {
+			o(455945, {	-- Dornogal Seam Ripper
+				["coord"] = { 61.4, 18.6, DORNOGAL },
+				["questID"] = 83922,
+				["g"] = {
+					i(226348),	-- Dornogal Seam Ripper
+				},
+			}),
 			o(455942, {	-- Eathen Sticher's Snips
 				["coord"] = { 64.2, 60.2, THE_RINGING_DEEPS },
 				["questID"] = 83925,
 				["g"] = {
 					i(226351),	-- Earthen Stitcher's Snips
+				},
+			}),
+			o(455938, {	-- Eathen Sticher's Snips
+				["coord"] = { 50.2, 16.7, NERUBAR },
+				["questID"] = 83929,
+				["g"] = {
+					i(226355),	-- Nerubian's Pincushion
+				},
+			}),
+			o(455940, {	-- Royal Outfitter's Protractor
+				["coord"] = { 40.1, 68.1, HALLOWFALL },
+				["questID"] = 83927,
+				["g"] = {
+					i(226353),	-- Royal Outfitter's Protractor
 				},
 			}),
 			o(455943, {	-- Runed Earthen Pins

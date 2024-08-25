@@ -44,6 +44,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(220125),	-- Lamplighter's Epaulets
 						i(220119),	-- Lamplighter's Handwraps
 						i(220127),	-- Lamplighter's Sabatons
+						o(421909, {	-- Fallen Defender
+							i(213191),	-- Arathi Tinderbox (QI!)
+						}),
 					},
 				}),
 				q(78668, {	-- Rally on the Dawnbreaker
@@ -59,7 +62,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 224945 },	-- Faerin
 					["coord"] = { 57.5, 64.4, HALLOWFALL },
 					["g"] = {
-						i(213630),	-- Keg of Black Powder (QI!)
+						o(411930, {	-- Blackpowder Barrel
+							i(213630),	-- Keg of Black Powder (QI!)
+						}),
 						i(220118),	-- Arathi Demolition Charge
 					},
 				}),
@@ -187,9 +192,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 218182 },	-- Alleria Windrunner
 					["coord"] = { 42.8, 55.7, HALLOWFALL },
 					["g"] = {
-						i(217995),	-- Order of Night Propaganda (QI!)
-						i(217993),	-- Order of Night Propaganda (QI!)
-						i(217900),	-- Order of Night Propaganda (QI!)
+						o_repeated({
+							i(217995),	-- Order of Night Propaganda (QI!)
+							i(217993),	-- Order of Night Propaganda (QI!)
+							i(217900),	-- Order of Night Propaganda (QI!)
+							o(433907),	-- Order of Night Propaganda
+							o(424436),	-- Order of Night Propaganda
+						}),
 					},
 				}),
 				q(78626, {	-- Spar Day
@@ -819,7 +828,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40844.12, {	-- The Mysterious Chef
 				q(84392, {	-- Hungry in Hollow
 					--["sourceQuests"] = { xx },	-- ?
-					["provider"] = { "n", 222323 },	-- Haelmut Aegisaxe
+					["provider"] = { "n", 222683 },	-- Haelmut Aegisaxe
 					["coord"] = { 48.4, 39.4, HALLOWFALL },
 					["isBreadcrumb"] = true,	-- TODO: need to re-confirm, just in case
 				}),
