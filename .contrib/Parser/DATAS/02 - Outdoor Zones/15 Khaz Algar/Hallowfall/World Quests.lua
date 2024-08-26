@@ -28,6 +28,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82041, {	-- Beledar's Blessing
 					["coord"] = { 24.3, 60.9, HALLOWFALL },
 				}),
+				q(82257, {	-- Burrow Burial
+					["coord"] = { 71.3, 56.4, HALLOWFALL },
+				}),
 				q(82133, {	-- Documenting: Field Manual Edition
 					["coord"] = { 39.9, 74.7, HALLOWFALL },
 				}),
@@ -87,6 +90,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(81816, {	-- Skyrider Racing - Tenir's Traversal
 					["coord"] = { 59.2, 68.9, HALLOWFALL },
+				}),
+				q(81823, {	-- Skyrider Racing - Velhan's Venture
+					["coord"] = { 54.1, 17.6, HALLOWFALL },
 				}),
 				q(82586, {	-- Spore Ender (previous questID 82588?)
 					["coord"] = { 60.2, 62.2, HALLOWFALL },

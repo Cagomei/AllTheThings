@@ -103,7 +103,7 @@ root(ROOTS.Unsorted, {
 			i(229078),	-- Aevery's Spare Brigandine
 			i(229079),	-- Aevery's Spare Boots
 			i(229080),	-- Aevery's Spare Gauntlets
-			i(229082),	-- Aevery's Spare Chausses
+
 			i(229083),	-- Aevery's Spare Shoulderguards
 			i(229084),	-- Aevery's Spare Belt
 			i(229086),	-- Kyros's Spare Helm
@@ -190,6 +190,18 @@ root(ROOTS.Unsorted, {
 			i(230206),	-- Add Keystone Affix: Xal'atath's Bargain: Devour
 			i(230208),	-- Add Keystone Affix: Xal'atath's Guile
 			i(230209),	-- Add Keystone Affix: Challenger's Peril
+			--
+			i(210873),	-- Earthen Identification Plaque
+			i(222905),	-- Faerin's Shield
+			i(231818),	-- Grasping Crown of the Deep
+			i(231822),	-- Cephalohide Jacket
+			i(231824),	-- Circlet of the Enveloping Leviathan
+			i(231825),	-- Tri-Heart Chestguard
+			i(231826),	-- Hook-Barbed Spaulders
+			i(231827),	-- Harpooner's Plate Cuirass
+			i(231830),	-- Kraken Shell Pauldrons
+			-- Fallout
+			i(229193),	-- Queen's Pheromone
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(TITLES, {
@@ -587,47 +599,43 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(226266),	-- Metal Dornogal Frame
-				i(226268),	-- Engraved Stirring Rod
-				i(226276),	-- Ancient Earthen Anvil
-				i(226277),	-- Dornogal Hammer
-				i(226278),	-- Ringing Hammer Vise
+
+
+
+
+
 				i(226279),	-- Earthen Chisels
 				i(226280),	-- Holy Flame Forge
 				i(226281),	-- Radiant Tongs
 				i(226282),	-- Nerubian Smith's Kit
 				i(226283),	-- Spiderling's Wire Brush
 
-				i(226292),	-- Rock Engineer's Wrench
-				i(226293),	-- Dornogal Spectacles
-				i(226294),	-- Inert Mining Bomb
-				i(226295),	-- Earthen Construct Blueprints
-				i(226296),	-- Holy Firework Dud
-				i(226297),	-- Arathi Safety Gloves
-				i(226298),	-- Puppeted Mechanical Spider
-				i(226299),	-- Emptied Venom Canister
+
+
+
+
 				i(226308),	-- Dornogal Scribe's Quill
 				i(226309),	-- Historian's Dip Pen
 				i(226310),	-- Runic Scroll
 				i(226311),	-- Blue Earthen Pigment
-				i(226312),	-- Informant's Fountain Pen
+
 				i(226313),	-- Calligrapher's Chiseled Marker
 				i(226314),	-- Nerubian Texts
 				i(226315),	-- Venomancer's Ink Well
 				i(226316),	-- Gentle Jewel Hammer
-				i(226317),	-- Earthen Gem Pliers
-				i(226318),	-- Carved Stone File
-				i(226319),	-- Jeweler's Delicate Drill
+
+
+
 				i(226320),	-- Arathi Sizing Gauges
-				i(226321),	-- Librarian's Magnifiers
+
 				i(226322),	-- Ritual Caster's Crystal
 				i(226323),	-- Nerubian Bench Blocks
 
-				i(226344),	-- Arathi Tanning Agent
+
 
 				i(226346),	-- Nerubian's Slicking Iron
 
-				i(226349),	-- Earthen Tape Measure
+
 				i(226352),	-- Arathi Rotary Cutter
 				i(226354),	-- Nerubian Quilt
 				i(226355),	-- Nerubian's Pincushion
@@ -791,13 +799,9 @@ root(ROOTS.Unsorted, {
 
 
 				i(225752),	-- Dornogal Defender
-				i(225753),	-- Dornogal Guard's Splitter
-				i(225754),	-- Dornogal Guard's Hammer
-				i(225755),	-- Coreway Sledgehammer
+
 				i(225756),	-- Coreway Shovel
 				i(225757),	-- Coreway Pickaxe
-
-				i(225760),	-- Dornogal Spear
 
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
 
@@ -834,7 +838,6 @@ root(ROOTS.Unsorted, {
 				i(226019),	-- Darkened Arathi Shoulderguards
 				i(226105),	-- Emerald Scale Treads \\ Jade Scale Treads
 				i(226106),	-- Amber Scale Treads
-				i(226116),	-- Coagulating Phlegm Churner
 				i(226160),	-- Hillhelm Farmhand's Hoe
 				i(226161),	-- Hillhelm Farmhand's Watering Can
 				i(226363),	-- Earthen Backpack
@@ -1053,7 +1056,7 @@ root(ROOTS.Unsorted, {
 				i(213099),	-- Test Warbound until equipped (DNT)
 				i(215170),	-- Abyssal Trap
 				i(215171),	-- Fungal Friend Flute
-				i(215172),	-- Silken Chain Weaver
+
 				i(215173),	-- Serum of Unconstrained Senses
 				i(215175),	-- Belt of Vials
 				i(216657),	-- Test Item C
@@ -1250,7 +1253,6 @@ root(ROOTS.Unsorted, {
 				i(211349),	-- Mundane Potion
 
 				i(211529),	-- Test Big Bag (DNT)
-				i(211776),	-- Damp Repair Kit
 				i(212340),	-- Strange Jar
 				i(212385),	-- Moira's Healing Surge TO DEPRECATE
 				i(212527),	-- Spiderforged Emitter Key [REMOVED]
@@ -1466,14 +1468,15 @@ root(ROOTS.Unsorted, {
 				i(228193),	-- Chipped Demon's Blade
 				i(228194),	-- Fully Scrapped Scrap
 				i(228195),	-- Tattered Goblin Cap
-				i(228388),	-- Damp Doll
+
 				i(228391),	-- Right Boot
-				i(228394),	-- Lost Note
-				i(228396),	-- Dead Fish
+
+
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
 				i(228429),	-- Reflective Rock
-				i(228431),	-- Rock Buddy
+
+
 
 				i(228449),	-- Tasty Iron Bar
 				i(228450),	-- Edible Copper Nuggets
@@ -1515,7 +1518,6 @@ root(ROOTS.Unsorted, {
 				i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
 				i(212344),	-- Chest Key
 				i(212520),	-- Shadow-Tainted Tinderbox
-				i(212755),	-- Remnant Satchel
 				i(212882),	-- Glittering Ore
 				i(212494),	-- Squishy Bits [DNT]
 				i(212519),	-- Nebb's Key
@@ -1564,7 +1566,6 @@ root(ROOTS.Unsorted, {
 				i(219323),	-- Gelatinous Unguent
 				i(219324),	-- Roiling Elixir
 				i(219350),	-- Maddening Manifest
-				i(219384),	-- Tenir and the Order of Night
 				i(219388),	-- Sacred Flame Torch
 				i(219400),	-- Faerin's Torch of Holy Flame
 				i(219804),	-- [DNT] Antiparalytic Serum
@@ -1624,7 +1625,6 @@ root(ROOTS.Unsorted, {
 				i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
 				i(226111),	-- Arakkoan Ritual Staff
 				i(226113),	-- Kereke's Flourishing Sabre
-				i(226115),	-- Contaminating Cleaver
 				i(228364),	-- Endiri's Chipped Boot Knife
 				i(228367),	-- Arathi Scout's Walking Stick
 			}),
@@ -1725,45 +1725,40 @@ root(ROOTS.Unsorted, {
 				i(221093),	-- Deeply Corrupted Coil
 				i(221209),	-- Flame Trader's Gloves
 				i(221210),	-- Grips of the Earth
-				i(221214),	-- Chitin Chain Headpiece
 				i(221222),	-- Water-Imbued Spaulders
-				i(221224),	-- Bouldershell Waistguard
+
 				i(221230),	-- Storm Bindings
 				i(221231),	-- Steam-Powered Wristwatch
 				i(221232),	-- Polished Goblin Bling
 				i(221233),	-- Deephunter's Bloody Hook
 				i(221234),	-- Tidal Pendant
-				i(221235),	-- Dark Agent's Cloak \\ Fel Soldier's Cloak
 				i(221236),	-- Stormbreaker's Shield
 				i(221237),	-- Lamentable Vagrant's Lantern
 				i(221238),	-- Pillar of Constructs
 				i(221242),	-- Forgeborn Helm
-				i(221246),	-- Fierce Beast Staff
 				i(221251),	-- Bestial Underground Cleaver
 				i(221253),	-- Cultivator's Plant Puncher
 				i(221254),	-- Earthshatter Lance
-				i(221264),	-- Fungarian Mystic's Cluster
+
 				i(221505),	-- [DNT] Rare Cloth - Robe
 				i(223005),	-- String of Fungal Fruits
 				i(223915),	-- Nerubian Orator's Stiletto
 				i(223916),	-- Nerubian Cutthroat's Reach
 				i(223917),	-- Nerubian Covert's Cloak
 				i(223918),	-- Specter Stalker's Shotgun
-				i(223920),	-- Slime Deflecting Stopper
+
 				i(223921),	-- Ever-Oozing Signet
 				i(223922),	-- Cinder Pollen Cloak
-				i(223923),	-- Gilded Cryptlord's Sabatons
 				i(223926),	-- Earthgorger's Chain Bib
-				i(223927),	-- Vinewrapped Leather Tunic
+
 				i(223930),	-- Monstrous Chain Pincers
-				i(223932),	-- Scarab's Carapace Cap
-				i(223934),	-- Makrura's Foreboding Legplates
+
+
 				i(223935),	-- Cabbage Harvester's Pantaloons
 				i(223936),	-- Shadow Bog Trousers
 				i(223937),	-- Honey Deliverer's Leggings
 				i(223938),	-- Marsh Hopper's Spaulders
 				i(223939),	-- Esteemed Nerubian's Mantle
-				i(223943),	-- Cord of the Earthbreaker
 				i(223944),	-- [PH] Infested Fungal Wristwraps
 				i(223945),	-- [PH] Perchfather's Cuffs
 				i(223946),	-- [PH] Storm Bindings
@@ -1772,7 +1767,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(REWARDS, {
 				i(223438),	-- Algari Warden's Vestment
-				i(223439),	-- Mereldar Scholar's Leggings
 				i(223444),	-- Arathi Defender's Breeches
 				i(223450),	-- Honored Soldier's Chainmail
 				i(223441),	-- Algari Scouting Boots
@@ -2139,7 +2133,7 @@ root(ROOTS.Unsorted, {
 			i(223033),	-- Technique: Patient Alchemist's Mixing Rod
 			i(223034),	-- Technique: Inscribed Rolling Pin
 			i(223056),	-- Plans: Webbed Fishing Line
-			i(223948),	-- Stubborn Wolf's Greathelm
+
 			i(225256),	-- PH_2
 			--
 			-- Orphaned due to removal of "Awakening the Machine: Wave <x>" achievements
@@ -2147,6 +2141,14 @@ root(ROOTS.Unsorted, {
 			i(226221),	-- Machine-Warden's Pauldrons
 			title(568),	-- <Name>, Machine-Warden
 			i(226218),	-- Machine-Warden's Cloak
+			-- Fallout
+			i(214616),	-- Engraved Dagger
+			i(219456),	-- Earthen Traveler's Scepter
+			i(219934),	-- Spark of War
+			i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
+			i(224183),	-- Bleak Chum
+			i(226103),	-- The Weaver's Trove
+			i(226165),	-- Unseemly Agate Choker
 		})),
 	}),
 	expansion(EXPANSION.DF, {

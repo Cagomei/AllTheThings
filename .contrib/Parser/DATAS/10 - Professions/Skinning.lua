@@ -240,7 +240,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 			recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
 		},
 	}),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["requireSkill"] = SKINNING }, {
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
 			["g"] = sharedData({ ["cost"] = {{ "c", TWW_SKINNING_KNOWLEDGE, 1 }} }, {
@@ -273,6 +273,13 @@ root(ROOTS.Professions, prof(SKINNING, {
 					i(226345), -- Arathi Craftsman's Spokeshave
 				},
 			}),
+			o(455949, {	-- Arathi Tanning Agent
+				["coord"] = { 49.3, 62.1, HALLOWFALL },
+				["questID"] = 83918,
+				["g"] = {
+					i(226344),	-- Arathi Tanning Agent
+				},
+			}),
 			o(455951, {	-- Artisan's Drawing Knife
 				["coord"] = { 47.3, 28.3, THE_RINGING_DEEPS },
 				["questID"] = 83916,
@@ -303,7 +310,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 			}),
 			o(455950, {	-- Fungarian's Rich Tannin
 				["coord"] = { 65.7, 61.9, ISLE_OF_DORN },
-				--["questID"] = x,	-- TODO: re-check
+				["questID"] = 83917,
 				["g"] = {
 					i(226343), -- Fungarian's Rich Tannin
 				},

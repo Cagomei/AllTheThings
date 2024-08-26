@@ -35,6 +35,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(222624, {	-- Deepcrawler Tx'kesh
 				["coord"] = { 64.5, 6.4, AZJ_KAHET },
 				["questID"] = 82077,
+				["g"] = {
+					i(223923),	-- Gilded Cryptlord's Sabatons
+				},
 			}),
 			n(216045, {	-- Enduring Gutterface
 				["coord"] = { 58.0, 62.1, AZJ_KAHET },
@@ -117,12 +120,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(216038, {	-- The Groundskeeper
 				["coord"] = { 30.6, 55.5, NERUBAR },
 				["questID"] = 81634,
+				["g"] = {
+					i(221214),	-- Chitin Chain Headpiece
+				},
 			}),
 			n(216047, {	-- The One Left [This is the only Weird Rare....]
 				["questID"] = 82290,
 				["coord"] = { 63.5, 95.2, AZJ_KAHET },
 				["g"] = {
 					i(221265),	-- Charm of the Underground Beast
+					i(221246),	-- Fierce Beast Staff
 				},
 			}),
 			n(216049, {	-- The Oozekhan
@@ -130,7 +137,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 61.7, 89.4, AZJ_KAHET_LOWER },
 				["g"] = {
 					i(223931),	-- Black Blood Cowl
-					i(223006),	-- Signet of Dark Horizons (alpha data)
 				},
 			}),
 			n(216046, {	-- Tka'ktath

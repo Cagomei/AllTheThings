@@ -46,7 +46,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["description"] = "Light's Blooming Keyflame",
 						["coord"] = { 63.4, 28.5, HALLOWFALL },
 						["g"] = {
-							i(217755),	-- Remnant Satchel (QI!)
+							o(421070, {	-- Remnant Satchel
+								i(212755),	-- Remnant Satchel (QI!)
+							}),
 						},
 					}),
 					q(79469, {	-- Lurking Below
@@ -71,6 +73,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						},
 					}),
 				})),
+				n(DROPS, {
+					i(229085),	-- Aevery's Spare Bracers
+					i(229082),	-- Aevery's Spare Chausses
+					i(229081),	-- Aevery's Spare Cowl
+					i(229155),	-- Lamplighter's Greataxe
+					i(229061),	-- Nisa's Spare Belt
+				}),
 				prof(FISHING, {
 					i(221819, {	-- Shadowbog Hopper (PET!)
 						["description"] = "Stillstone Pond",
@@ -250,7 +259,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					q(80562),	-- Blossoming Delight
 					]]
 				})),
-				n(RARES, {
+				n(RARES, sharedDataSelf({
+						["isDaily"] = true,
+				},{
 					n(206514, {	-- Crazed Cabbage Smacker
 						["coord"] = { 64.9, 29.4, HALLOWFALL },
 						["questID"] = 82558,
@@ -267,6 +278,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					n(206184, {	-- Deathpetal
 						["coord"] = { 63.8, 32.0, HALLOWFALL },
 						["questID"] = 82559,
+						["g"] = {
+							i(223927),	-- Vinewrapped Leather Tunic
+						},
 					}),
 					n(221179, {	-- Duskshadow
 						["coord"] = { 64.1, 19.5, HALLOWFALL },
@@ -290,6 +304,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					n(220771, {	-- Murkspike
 						["coord"] = { 62.4, 13.3, HALLOWFALL },
 						["questID"] = 82565,
+						["g"] = {
+							i(223934),	-- Makrura's Foreboding Legplates
+						},
 					}),
 					n(206977, {	-- Parasidious
 						["description"] = "Pull many Shadowroot Vines until eventually the Rare is spawned.",
@@ -309,6 +326,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					n(207826, {	-- Ravageant
 						["coord"] = { 59.8, 21.4, HALLOWFALL },
 						["questID"] = 82566,
+						["g"] = {
+							i(223932),	-- Scarab's Carapace Cap
+						},
 					}),
 					n(207803, {	-- Toadstomper
 						["coord"] = { 66.7, 24.1, HALLOWFALL },
@@ -317,7 +337,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(223933),	-- Slime Goliath's Cap
 						},
 					}),
-				}),
+				})),
 				n(REWARDS, {
 					i(RADIANT_REMNANT),
 					i(226264),	-- Radiant Cache
@@ -325,8 +345,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(220756),	-- Flickering Torch
 					i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
 					i(228741, {	-- Lamplighter Supply Satchel
-						--probably all this sets is from here?
+						--probably all this sets is from here? /Not only from Supply Satchel but BoE Drops here.
 						i(229085),	-- Aevery's Spare Bracers
+						i(229082),	-- Aevery's Spare Chausses
 						i(229081),	-- Aevery's Spare Cowl
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
@@ -370,6 +391,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(212333),	-- Expedition Tinderbox (QS!/QI!)
 						},
 					}),
+					o(423959, {	-- Faded Supply Chest
+						["coord"] = { 61.8, 17.5, HALLOWFALL },
+						["questID"] = 79964,
+					}),
 					o(435008, {	-- Farmhand Stash
 						["description"] = "Require weekly quest with controlling Harvestbot Remy to git it up",
 						["coord"] = { 61.6, 32.6, HALLOWFALL },
@@ -390,19 +415,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["questID"] = 82996,
 						["provider"] = {"i", 218107},	-- Sparkbug Jar
 					}),
-					o(453186, {	-- Nightfarm Growthling
-						["coord"] = { 61.3, 31.8, HALLOWFALL },
-						["questID"] = 83272,
-						["g"] = {
-							i(221546),	-- Nightfarm Growthling (PET!)
-						},
-					}),
 					o(451993, {	-- Nerubian Device
 						["coord"] = { 62.3, 31.7, HALLOWFALL },
 						["g"] = {
 							i(224548),	-- Nerubian Device
 							-- put this on the quest once known
 							-- ["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 16 },
+						},
+					}),
+					n(206870, {	-- Shadowrooted Vine
+						["provider"] = { "i", 206670 },	-- Darkroot Grips
+						["g"] = {
+							i(211861),	-- Umbral Eggplant
+						},
+					}),
+				}),
+				-- Daily Treasures
+				n(TREASURES, sharedData({
+					["isDaily"] = true,
+				},{
+					o(453186, {	-- Nightfarm Growthling
+						["coord"] = { 61.3, 31.8, HALLOWFALL },
+						["questID"] = 83272,
+						["g"] = {
+							i(221546),	-- Nightfarm Growthling (PET!)
 						},
 					}),
 					o(434929, {	-- Radiant Remnant
@@ -425,13 +461,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 65.0, 30.2, HALLOWFALL },
 						["questID"] = 80552,
 					}),
-					n(206870, {	-- Shadowrooted Vine
-						["provider"] = { "i", 206670 },	-- Darkroot Grips
-						["g"] = {
-							i(211861),	-- Umbral Eggplant
-						},
+					o(434926, {	-- Radiant Remnant
+						["coord"] = { 64.0, 31.6, HALLOWFALL },
+						["questID"] = 80583,
 					}),
-				}),
+				})),
 				n(VENDORS, {
 					n(212419, {	-- Attica Whiskervale
 						["coord"] = { 64.5, 18.8, HALLOWFALL },
@@ -550,7 +584,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	q(81846),	-- Ore @ 65.3, 16.6
 	q(83047),	-- Ore @ 66.1, 17.0
 	q(83039),	-- Ore @ 66.3, 17.5
-	q(80583),	-- Radiant Remnant @ 64.0, 31.7
 	q(80337),	-- Radiant Remnant @ 66.1, 16.6
 	q(80347),	-- Radiant Remnant @ 65.7, 16.5
 	q(80342),	-- Radiant Remnant @ 65.4, 16.7

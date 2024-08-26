@@ -52,6 +52,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 25.8, 45.1, ISLE_OF_DORN },
 				["questID"] = 81907,
 				["g"] = {
+					i(221235),	-- Dark Agent's Cloak
 					i(221208),	-- Unseen Cutthroat's Tunic
 				},
 			}),
@@ -70,6 +71,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(219268, {	-- Gar'loc
 				["coord"] = { 53.5, 80.1, ISLE_OF_DORN },
 				["questID"] = 81899,
+				["g"] = {
+					i(221248),	-- Deep Terror Carver
+				},
 			}),
 			n(222378, {	-- Kereke
 				--seems like rare in this spot have rotation?
@@ -87,6 +91,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Walking around in the area.",
 				["coord"] = { 73.1, 40.0, ISLE_OF_DORN },
 				["questID"] = 81921,
+				["g"] = {
+					i(223948),	-- Stubborn Wolf's Greathelm
+				},
 			}),
 			n(220068, {	-- Malfuctioning Spire
 				["description"] = "This Rare might only be available during the introduction.",
@@ -105,6 +112,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 30.9, 52.3, ISLE_OF_DORN },
 				["questID"] = 82205,
 				["g"] = {
+					i(226116),	-- Coagulating Phlegm Churner
+					i(226115),	-- Contaminating Cleaver
 					i(226112),	-- Rotfist Flesh Carver
 				},
 			}),
@@ -139,6 +148,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 74.5, 27.8, ISLE_OF_DORN },
 				["questID"] = 81903,
 				["g"] = {
+					i(221224),	-- Bouldershell Waistguard
 					i(221255),	-- Sharpened Scalepiercer
 				},
 			}),
@@ -215,6 +225,7 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(84031),	-- Extra HQT: Kronolith, Might of the Mountain
 		q(84039),	-- Extra HQT: Matriarch Charfuria
 		q(84026),	-- Extra HQT: Plaguehart
+		q(85161),	-- Extra HQT: Rotfist
 		q(84032),	-- Extra HQT: Shallowshell the Clacker
 		q(84038),	-- Extra HQT: Sweetspark the Oozeful
 		q(84030),	-- Extra HQT: Tempest Lord Incarnus

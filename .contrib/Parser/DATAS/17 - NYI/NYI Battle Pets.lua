@@ -1210,9 +1210,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 				["name"] = "Bronze Dragon Whelp",
 				["displayID"] = 107461,
 			}),
-			pet(3361, {	-- Diamond Crab (PET!)
-				["displayID"] = 107825,
-			}),
 			pet(3341, {	-- Red Dragon Whelp (PET!)
 				["name"] = "Red Dragon Whelp",
 				["displayID"] = 107464,
@@ -1346,8 +1343,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(3573),	-- Swole (PET!)
 			pet(3567),	-- Talons (PET!)
 			pet(3569),	-- Tempe (PET!)
-
-			pet(3525),	-- Abyssal Lurker (PET!)
 			-- With SpeciesID Attached
 			i(205004, {	-- Azure Swoglet (PET!)
 				["displayID"] = 112144,
@@ -1375,9 +1370,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			}),
 			i(205013, {	-- Lettuce (PET!)
 				["displayID"] = 112149,
-			}),
-			i(205153, {	-- Mikah (PET!)
-				["displayID"] = 112190,
 			}),
 			i(205149, {	-- Ravenous Shalewing (PET!)
 				["displayID"] = 112187,
@@ -1412,6 +1404,9 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			-- Without SpeciesID Attached
 			i(205032, {	-- Bestial Lurker (PET!)
 				["displayID"] = 112162,
+			}),
+			i(205153, {	-- Mikah (PET!)
+				["displayID"] = 112190,
 			}),
 		})),
 

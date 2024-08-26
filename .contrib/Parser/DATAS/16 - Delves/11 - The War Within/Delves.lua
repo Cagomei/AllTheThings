@@ -242,6 +242,17 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		n(223541),	-- Stolen Loader
 		n(208728),	-- Treasure Wraith
 	}),
+	n(TREASURES, {
+		-- Mislaid Curiosities can be found throughout all Delves, random coordinates
+		o(455914, {	-- Mislaid Curiosity
+			["description"] = "Contains Chunk of Companion Experience tokens.",
+			["g"] = {
+				i(228071),	-- Chunk of Companion Experience (Uncommon)
+				i(228072),	-- Chunk of Companion Experience (Rare)
+				i(228073),	-- Chunk of Companion Experience (Epic)
+			},
+		}),
+	}),
 	m(EARTHCRAWL_MINES, {
 		["icon"] = [[~_.asset("Delves_Kobold")]],
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
@@ -259,11 +270,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(226222),	-- Webbed Hookshot
 			}),
 			n(TREASURES, {
-				-- Seems like two rare treasures in this dungeon? Can have different IDs
-				o(455914, {	-- Mislaid Curiosity
-					--["coord"] = { X, Y, EARTHCRAWL_MINES }, -- Seem to spawn at many locations in the delve + in other delves also? => Find a better home for this
-					-- Contains: Chunk of companion expereince (228072)
-				}),
 				o(454090, {	-- Sturdy Chest
 					["coord"] = { 45.2, 14.7, EARTHCRAWL_MINES },
 					["questID"] = 83440,
@@ -499,6 +505,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 66.7, 14.5, SKITTERING_BREACH },
 					["questID"] = 83680,
 				}),
+				o(455485, {	-- Sturdy Chest
+					["coord"] = { 51.1, 65.1, SKITTERING_BREACH },
+					["questID"] = 83679,
+				}),
 			}),
 		},
 	}),
@@ -514,7 +524,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(221496),	-- Wriggle (PET!)
 			}),
 			filter(MISC, {
-				i(211776),	-- Damp Repair Kit (QI!)
+				o(415296, {	-- Repair Kit
+					i(211776),	-- Damp Repair Kit (QI!)
+				}),
 			}),
 			n(QUESTS, {
 				q(83771, {	-- Delver's Call: Tak-Rethan Abyss
@@ -599,28 +611,35 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(TREASURES, {
-				--o(xx, {	-- Sturdy Chest // bugged/uninteractable?
-				--	["coord"] = { 49.8, 40.0, THE_SINKHOLE },
-				--	["questID"] = x,
-				--}),
+				o(454200, {	-- Sturdy Chest
+					["coord"] = { 52.3, 13.7, THE_SINKHOLE },
+					["questID"] = 83453,
+				}),
 				o(455513, {	-- Sturdy Chest
-					["coord"] = { 44.3, 69.9, THE_SINKHOLE },
+					["coord"] = { 43.5, 60.8, THE_SINKHOLE },
 					["questID"] = 83668,
 				}),
 				o(455525, {	-- Sturdy Chest
-					["coord"] = { 62.6, 70.3, THE_SINKHOLE },
+					["coord"] = { 72.6, 61.8, THE_SINKHOLE },
 					["questID"] = 83700,
 				}),
 				o(455491, {	-- Sturdy Chest
-					["coord"] = { 47.4, 75.4, THE_SINKHOLE },
+					["coord"] = { 48.5, 69.3, THE_SINKHOLE },
 					["questID"] = 83685,
 				}),
+			}),
+			n(219713, {	-- Arathi Captive
+				["description"] = "Attempting to save this captive will spawn an assassin and not count towards any progress",
+			}),
+			n(219718, {	-- Arathi Captive
+				["description"] = "Save this captive",
 			}),
 		},
 	}),
 	m(THE_SPIRAL_WEAVE, {
 		["icon"] = [[~_.asset("Delves_Nerubian")]],
 		["coord"] = { 46.6, 25.7, AZJ_KAHET },
+		["maps"] = { 2313 },	-- The Spiral Weave
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40814),	-- The Spiral Weave Discoveries
@@ -640,20 +659,23 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455487, {	-- Sturdy Chest
-					["coord"] = { 46.0, 46.4, THE_SPIRAL_WEAVE },
+					["description"] = "Located ontop of pillar, accessible after killing last boss.",
+					["coord"] = { 46.0, 46.1, THE_SPIRAL_WEAVE },
 					["questID"] = 83681,
 				}),
 				o(455531, {	-- Sturdy Chest
-					["coord"] = { 50.0, 46.2, THE_SPIRAL_WEAVE },
+					["coord"] = { 50.5, 46.2, THE_SPIRAL_WEAVE },
 					["questID"] = 83649,
 				}),
 				o(455506, {	-- Sturdy Chest
+					["description"] = "Located on beam over your head.",
 					["coord"] = { 36.3, 10.5, THE_SPIRAL_WEAVE },
 					["questID"] = 83661,
 				}),
-				o(413590, {	-- Bountiful Coffer
-					["coord"] = { 48.2, 48.2, THE_SPIRAL_WEAVE },
-					--["questID"] = 83320,
+				o(455507, {	-- Sturdy Chest
+					["description"] = "Located on beam over your head, accessible after killing last boss",
+					["coord"] = { 42.5, 47.7, THE_SPIRAL_WEAVE },
+					["questID"] = 83662,
 				}),
 			}),
 		},
@@ -680,14 +702,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 35.9, 34.6, THE_UNDERKEEP },
 					["questID"] = 83664,
 				}),
-				--o(455488, {	-- Sturdy Chest
-				--	["coord"] = { x, y, THE_UNDERKEEP },	-- after first room map is broken, there no mapID and coords after it
-				--	["questID"] = 83682,
-				--}),
-				---o(, {	-- Sturdy Chest
-				---	["coord"] = { x, y, THE_UNDERKEEP },
-				---	["questID"] = 83697,
-				---}),
+				o(455488, {	-- Sturdy Chest
+					["coord"] = { 63.7, 32.4, THE_UNDERKEEP },
+					["questID"] = 83682,
+				}),
+				o(455523, {	-- Sturdy Chest
+					["coord"] = { 72, 88.8, THE_UNDERKEEP },
+					["questID"] = 83697,
+				}),
 			}),
 		},
 	}),
@@ -815,6 +837,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(215174),	-- Concoction: Kiss of Death
 				i(225653),	-- Siphoning Lightbrand
 				i(215178),	-- Shadow-Binding Ritual Knife
+				i(215172),	-- Silken Chain Weaver
 				i(225668),	-- Unstable Power Suit Core
 			}),
 		}),
@@ -1099,9 +1122,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(222916),	-- Player Experience (Tier 1-2)
 			i(222917),	-- Player Experience (Tier 3)
 			i(222927),	-- Weathered Coin Coffer
-			i(228071),	-- Chunk of Companion Experience (Uncommon)
-			i(228072),	-- Chunk of Companion Experience (Rare)
-			i(228073),	-- Chunk of Companion Experience (Epic)
 			i(223287),	-- Atomized Salien Slime
 			i(227794),	-- Archaic Cipher Key (QI!/QS!)
 			i(218121),	-- Candle Light
