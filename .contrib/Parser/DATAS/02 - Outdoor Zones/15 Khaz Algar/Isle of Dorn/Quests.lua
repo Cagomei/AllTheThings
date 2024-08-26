@@ -442,8 +442,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 20595.01, {	-- Spores of Dread
 				q(78570, {	-- Frayed Legacy
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
-					["provider"] = { "n", 212708 },	-- Frysworn Cruton
-					["coord"] = { 38.9, 76.6, ISLE_OF_DORN },
+					["provider"] = { "n", 212708 },	-- Freysworn Cruton
+					["coord"] = { 41.6, 71.3, ISLE_OF_DORN },
 					["isBreadcrumb"] = true,
 				}),
 				q(78571, {	-- Mycomayhem
@@ -560,7 +560,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						i(219961),	-- Fresh Mug of Cinderbrew Mead (QI!)
 						i(220115),	-- Loldren's Market Audit (QI!)
-						i(211863),	-- Sizzling Magma Core (QI!)
+						o(415584, {	-- Sizzling Magma Core
+							i(211863),	-- Sizzling Magma Core (QI!)
+						}),
 					},
 				}),
 				q(79176, {	-- Opals and Runes
@@ -660,7 +662,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 211740 },	-- Rooktender Lufsela
 					["coord"] = { 62.5, 29.3, ISLE_OF_DORN },
 					["g"] = {
-						i(210489),	-- Lodestone (QI!)
+						o(410459, {	-- Highlands Lodestone
+							i(210489),	-- Lodestone (QI!)
+						}),
 						i(211459),	-- Energized Lodestone (QI!)
 					},
 				}),
@@ -809,7 +813,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81661, {	-- To Mourning Rise
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 221355 },	-- Urtago
-					["coord"] = { 55.7, 58.4, ISLE_OF_DORN },
+					["coord"] = { 55.7, 56.0, ISLE_OF_DORN },
+					["isBreadcrumb"] = true,
 				}),
 				q(78743, {	-- Before I Depart
 					["sourceQuests"] = { 81661 },	-- To Mourning Rise
@@ -988,7 +993,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(80215, {	-- Ungirthin' the Earthen
 					["sourceQuests"] = { 80214 },	-- A Time to Kill at the Lumber Mill
-					["provider"] = { "n", 222356 },	-- Lamplighter Kaerter
+					["provider"] = { "n", 222360 },	-- Lamplighter Kaerter
 					["coord"] = { 67.0, 31.1, ISLE_OF_DORN },
 				}),
 				q(80216, {	-- Concealed in the Weald
@@ -1014,6 +1019,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 222363 },	-- Peacekeeper Leif
 					["coord"] = { 65.9, 23.8, ISLE_OF_DORN },
 					["g"] = {
+						i(223456),	-- Algari Cinch
 						i(223424),	-- Algari-Weave Cord
 						i(223464),	-- Algari Heavy Gauntlets
 					},
@@ -1265,15 +1271,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	-- Dalaran intro
-	q(84698),	-- Fishing up Xalatath's Rusty Coin (Maybe should be collectible? //Braghe)
-	-- During questing
-	q(83622),	-- [DNT] Zone 1 Bread Crumb Completed Organically (spellID 456955), when you break free out of rocks during questID 78529 (Violet Impact)
-	q(79629),	-- [DNT] Council of Dornogal Renown Unlock (spellID 446910)
-	q(82462),	-- 'Stay awhile and listen' - Moira Thaurissan (n: 217878), after turn in questID 78462 (Echoes of Compassion)
-	-- Side quests
-	q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero)
-	q(80539),	-- Completing The Machine Speakeasy (79546)
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	m(KHAZ_ALGAR, {
+		m(ISLE_OF_DORN, {
+			-- Dalaran intro
+			q(84698),	-- Fishing up Xalatath's Rusty Coin (Maybe should be collectible? //Braghe)
+			-- During questing
+			q(83622),	-- [DNT] Zone 1 Bread Crumb Completed Organically (spellID 456955), when you break free out of rocks during questID 78529 (Violet Impact)
+			q(79629),	-- [DNT] Council of Dornogal Renown Unlock (spellID 446910)
+			q(82462),	-- 'Stay awhile and listen' - Moira Thaurissan (n: 217878), after turn in questID 78462 (Echoes of Compassion)
+			-- Side quests
+			q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero)
+			q(80539),	-- Completing The Machine Speakeasy (79546)
+		}),
+	}),
+})));

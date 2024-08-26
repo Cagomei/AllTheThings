@@ -304,14 +304,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(BATTLE_PETS, {
 				i(225337),	-- Violet Sporbit (PET!)
 			}),
+			filter(MISC, {
+				i(210017),	-- Fungal Fish
+			}),
 			n(QUESTS, {
 				q(83758, {	-- Delver's Call: Fungal Folly
 					["provider"] = { "o", 455716 },
 					["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
 				}),
-			}),
-			filter(TOYS, {
-				i(225556),	-- Ancient Construct (TOY!) [Might be from Only QuestID 83452]
 			}),
 			n(TREASURES, {
 				o(455516, {	-- Sturdy Chest
@@ -329,6 +329,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				o(454093, {	-- Sturdy Chest
 					["coord"] = { 49.6, 35.7, FUNGAL_FOLLY },
 					["questID"] = 83452,
+					["g"] = {
+						i(225556),	-- Ancient Construct (TOY!) -- confirmed 2/2
+					},
 				}),
 				o(455496, {	-- Sturdy Chest
 					["coord"] = { 35.5, 20.1, FUNGAL_FOLLY },
@@ -690,6 +693,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			filter(BATTLE_PETS, {
 				i(222971),	-- Bouncer (PET!)
+			}),
+			filter(MISC, {
+				i(217895),	-- Pheromone Bottle
+				i(217897),	-- Volatile Pheromone
 			}),
 			n(QUESTS, {
 				q(83761, {	-- Delves: The Underkeep
@@ -1485,21 +1492,30 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	q(82772),	-- First Time per day? (Got Unflagged at reset)
-	q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
-	q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
-	-- Bountiful Delve runs
-	q(82944),	-- after Earthcrawl Mines
-	q(82941),	-- after Kriegval's Rest
-	q(82940),	-- after Mycomancer Cavern
-	q(78508),	-- after Skittering Breach
-	-- Restored Coffer Key
-	q(84736, {["isWeekly"]=true,}),	-- Pop from any weekly activity, orders (of activity) doesn't matter
-	q(84737, {["isWeekly"]=true,}),	--
-	q(84738, {["isWeekly"]=true,}),	--
-	q(84739, {["isWeekly"]=true,}),	--
-	-- Seasonal Rewards
-	q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	n(DELVES, {
+		q(82772),	-- First Delve of the day
+		q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
+		q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
+		-- Bountiful Delve runs
+		q(82938),	-- The Dread Pit
+		q(82939),	-- Fungal Folly
+		q(82940),	-- Mycomancer Cavern
+		q(82941),	-- Kriegval's Rest
+		q(82944),	-- Earthcrawl Mines
+		q(78508),	-- Skittering Breach
+		q(82942),	-- The Spiral Weave
+		-- Restored Coffer Key
+		q(84736, {["isWeekly"]=true,}),	-- Pop from any weekly activity, orders (of activity) doesn't matter
+		q(84737, {["isWeekly"]=true,}),	--
+		q(84738, {["isWeekly"]=true,}),	--
+		q(84739, {["isWeekly"]=true,}),	--
+		-- Seasonal Rewards
+		q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
+		-- Achievements
+		q(82943),	-- Delve Deep (40460) completed
+		-- Unknown
+		--q(77731),	-- Earthcrawl Mines (Fiery Grounds story, Tier 1)
+		--q(77732),	-- The Waterworks (Stomping Some Sense story, Tier 1)
+	}),
+})));

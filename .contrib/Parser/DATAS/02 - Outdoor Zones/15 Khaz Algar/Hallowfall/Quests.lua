@@ -749,7 +749,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83497, {	-- A Concerned Friend
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 226708 },	-- Val Thalvassa
-					["coord"] = { 51.6, 54.2, DORNOGAL },
+					["coord"] = { 51.1, 46.0, DORNOGAL },
 					["isBreadcrumb"] = true,
 				}),
 				q(79165, {	-- A Moment To Rest
@@ -853,7 +853,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 224741 },	-- Dolena
 					["coord"] = { 69.9, 32.6, HALLOWFALL },
 					["g"] = {
-						i(224395),	-- Secret Garlic (QI!)
+						o(451442, {	-- Secret Garlic
+							i(224395),	-- Secret Garlic (QI!)
+						}),
 					},
 				}),
 				q(82848, {	-- Sous
@@ -919,6 +921,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(225179),	-- Salamanther Heart (QI!)
 						i(228438),	-- Derill's Unused Visor
 						i(228435),	-- Wine-Dyed Leggings
+						i(228437),	-- Salamanther-Scale Greaves
 					},
 				}),
 				q(83279),	-- Prove One's Mettle
@@ -1154,37 +1157,40 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	-- During questing
-	q(83614),	-- [DNT] Zone 3 Bread Crumb Completed Organically (spellID 456930), after turn in questID 78658 (The Hallowed Path)
-	q(79654),	-- [DNT] Hallowfall Arathi Renown Unlock (spellID 448657)
-	--q(82538),	-- Stay a while and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
-	q(81635),	-- Stay a while and listen - Nalina Ironsong @ 42.7, 55.8, HALLOWFALL (n: 217642) (idk when become available)
-	-- questID 79303 (A Principled Principal) nodes
-	q(83287),	-- should accept work
-	q(83288),	-- system become unfair
-	q(83289),	-- reject work and blame Edwyn in addition
-	--questID 82894 (The Price of Hope)
-	q(79081),	-- after using Cobbled Together Bandage on injured Soldier @ 43.3, 51.7
-	-- questID 82479 (The Sword is Mightier)
-	q(82728),	-- 4 page / 1 node (The work...)
-	q(82738),	-- 4 page / 1 node (The work...)
-	q(82729),	-- 4 page / 3 node (Don't get...)
-	q(82730),	-- 4 page / 4 node (Please...)
-	q(82732),	-- 5 page / 1 node (I'm...)
-	q(82736),	-- 5 page / 1 node (I'm...)
-	q(82731),	-- 5 page / 3 node (I want...)
-	q(82733),	-- 5 page / 4 node (If you...)
-	q(82737),	-- 5 page / 4 node (If you...)
-	--
-	q(82674),	-- trigger after interact with Cooking Pot and choose 'Good enought' option, during questID 82222 (Cooking With Style)
-	--
-	q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
-	--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
-	--
-	q(82749),	-- Flag for next quest after weekly reset for Time Lost & Time Found & Time Borrowed (spellID 452551 - Flag Timer)
-	q(83748),	-- triggered after turn in questID 79168 (Light's Gambit) (spellID 457904 - [DNT] Have Played Light's Gambit)
-	q(79941, {["isDaily"]=true,}),	-- <I wish to visit Veneration Groundkeeper> - Justicia Baercennan (n: 225942 @ 41.8, 54.3), nothing happen & reset on daily (spellID 454635)
-	q(79212),	-- not sure why it pop near Defender of the Flame quest chain @ 65.5, 32.2, when I fly here first time
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	m(KHAZ_ALGAR, {
+		m(HALLOWFALL, {
+			-- During questing
+			q(83614),	-- [DNT] Zone 3 Bread Crumb Completed Organically (spellID 456930), after turn in questID 78658 (The Hallowed Path)
+			q(79654),	-- [DNT] Hallowfall Arathi Renown Unlock (spellID 448657)
+			--q(82538),	-- Stay a while and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
+			q(81635),	-- Stay a while and listen - Nalina Ironsong @ 42.7, 55.8, HALLOWFALL (n: 217642) (idk when become available)
+			-- questID 79303 (A Principled Principal) nodes
+			q(83287),	-- should accept work
+			q(83288),	-- system become unfair
+			q(83289),	-- reject work and blame Edwyn in addition
+			--questID 82894 (The Price of Hope)
+			q(79081),	-- after using Cobbled Together Bandage on injured Soldier @ 43.3, 51.7
+			-- questID 82479 (The Sword is Mightier)
+			q(82728),	-- 4 page / 1 node (The work...)
+			q(82738),	-- 4 page / 1 node (The work...)
+			q(82729),	-- 4 page / 3 node (Don't get...)
+			q(82730),	-- 4 page / 4 node (Please...)
+			q(82732),	-- 5 page / 1 node (I'm...)
+			q(82736),	-- 5 page / 1 node (I'm...)
+			q(82731),	-- 5 page / 3 node (I want...)
+			q(82733),	-- 5 page / 4 node (If you...)
+			q(82737),	-- 5 page / 4 node (If you...)
+			--
+			q(82674),	-- trigger after interact with Cooking Pot and choose 'Good enought' option, during questID 82222 (Cooking With Style)
+			--
+			q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
+			--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
+			--
+			q(82749),	-- Flag for next quest after weekly reset for Time Lost & Time Found & Time Borrowed (spellID 452551 - Flag Timer)
+			q(83748),	-- triggered after turn in questID 79168 (Light's Gambit) (spellID 457904 - [DNT] Have Played Light's Gambit)
+			q(79941, {["isDaily"]=true,}),	-- <I wish to visit Veneration Groundkeeper> - Justicia Baercennan (n: 225942 @ 41.8, 54.3), nothing happen & reset on daily (spellID 454635)
+			q(79212),	-- not sure why it pop near Defender of the Flame quest chain @ 65.5, 32.2, when I fly here first time
+		}),
+	}),
+})));
