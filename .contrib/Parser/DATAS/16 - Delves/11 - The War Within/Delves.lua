@@ -947,183 +947,186 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(225066),	-- Trailblazer's Haversack
 		}),
 		n(CURIO, {	-- TODO: Might be that Curio Belongs to Specific Delves... Have to check // Braghe
-			n(RANK_ONE, {
-				i(225903, {	-- Amorphous Relic [Rank 1]
-					["bonusID"] = 11265,
+			["sharedDescription"] = "To collect a Curio, it must be selected on Brann prior to an ATT Force Refresh",
+			["g"] = {
+				n(RANK_ONE, {
+					i(225903, {	-- Amorphous Relic [Rank 1]
+						["bonusID"] = 11265,
+					}),
+					i(225897, {	-- Brute Force Idol [Rank 1]
+						["bonusID"] = 11235
+					}),
+					i(225902, {	-- Idol of Final Will [Rank 1]
+						["bonusID"] = 11260,
+					}),
+					i(225898, {	-- Idol of the Earthmother [Rank 1]
+						["bonusID"] = 11240,
+					}),
+					i(225906, {	-- Lifeless Necrotic Relic [Rank 1]
+						["bonusID"] = 11280,
+					}),
+					i(225900, {	-- Light-Touched Idol [Rank 1]
+						["bonusID"] = 11250,
+					}),
+					i(225905, {	-- Olden Seeker Relic [Rank 1]
+						["bonusID"] = 11275,
+					}),
+					i(218129, {	-- Porcelain Arrowhead Idol [Rank 1]
+						["bonusID"] = 11230,
+					}),
+					i(229353, {	-- Rage-Filled Idol [Rank 1]
+						["bonusID"] = 12008,
+					}),
+					i(225907, {	-- Relic of Sentience [Rank 1]
+						["bonusID"] = 11285,
+					}),
+					i(225908, {	-- Relicblood of Zekvir [Rank 1]
+						["bonusID"] = 11290,
+					}),
+					i(225901, {	-- Streamlined Relic [Rank 1]
+						["bonusID"] = 11255,
+					}),
+					i(225904, {	-- Time Lost Relic [Rank 1]
+						["bonusID"] = 11270,
+					}),
+					i(225899, {	-- Unbreakable Iron Idol [Rank 1]
+						["bonusID"] = 11245,
+					}),
+					-- i(228984),	-- Unbreakable Iron Idol [Rank 1] -- Eremeir on Discord
 				}),
-				i(225897, {	-- Brute Force Idol [Rank 1]
-					["bonusID"] = 11235
+				n(RANK_TWO, {
+					i(225903, {	-- Amorphous Relic [Rank 2]
+						["bonusID"] = 11266,
+					}),
+					i(225897, {	-- Brute Force Idol [Rank 2]
+						["bonusID"] = 11236
+					}),
+					i(225902, {	-- Idol of Final Will [Rank 2]
+						["bonusID"] = 11261,
+					}),
+					i(225898, {	-- Idol of the Earthmother [Rank 2]
+						["bonusID"] = 11241,
+					}),
+					i(225906, {	-- Lifeless Necrotic Relic [Rank 2]
+						["bonusID"] = 11281,
+					}),
+					i(225900, {	-- Light-Touched Idol [Rank 2]
+						["bonusID"] = 11251,
+					}),
+					i(225905, {	-- Olden Seeker Relic [Rank 2]
+						["bonusID"] = 11276,
+					}),
+					i(218129, {	-- Porcelain Arrowhead Idol [Rank 2]
+						["bonusID"] = 11231,
+					}),
+					i(229353, {	-- Rage-Filled Idol [Rank 2]
+						["bonusID"] = 12009,
+					}),
+					i(225907, {	-- Relic of Sentience [Rank 2]
+						["bonusID"] = 11286,
+					}),
+					i(225908, {	-- Relicblood of Zekvir [Rank 2]
+						["bonusID"] = 11291,
+					}),
+					i(225901, {	-- Streamlined Relic [Rank 2]
+						["bonusID"] = 11256,
+					}),
+					i(225904, {	-- Time Lost Relic [Rank 2]
+						["bonusID"] = 11271,
+					}),
+					i(225899, {	-- Unbreakable Iron Idol [Rank 2]
+						["bonusID"] = 11246,
+					}),
 				}),
-				i(225902, {	-- Idol of Final Will [Rank 1]
-					["bonusID"] = 11260,
+				n(RANK_THREE, {
+					i(225903, {	-- Amorphous Relic [Rank 3]
+						["bonusID"] = 11267,
+					}),
+					i(225897, {	-- Brute Force Idol [Rank 3]
+						["bonusID"] = 11237
+					}),
+					i(225902, {	-- Idol of Final Will [Rank 3]
+						["bonusID"] = 11262,
+					}),
+					i(225898, {	-- Idol of the Earthmother [Rank 3]
+						["bonusID"] = 11242,
+					}),
+					i(225906, {	-- Lifeless Necrotic Relic [Rank 3]
+						["bonusID"] = 11282,
+					}),
+					i(225900, {	-- Light-Touched Idol [Rank 3]
+						["bonusID"] = 11252,
+					}),
+					i(225905, {	-- Olden Seeker Relic [Rank 3]
+						["bonusID"] = 11277,
+					}),
+					i(218129, {	-- Porcelain Arrowhead Idol [Rank 3]
+						["bonusID"] = 11232,
+					}),
+					i(229353, {	-- Rage-Filled Idol [Rank 3]
+						["bonusID"] = 12010,
+					}),
+					i(225907, {	-- Relic of Sentience [Rank 3]
+						["bonusID"] = 11287,
+					}),
+					i(225908, {	-- Relicblood of Zekvir [Rank 3]
+						["bonusID"] = 11292,
+					}),
+					i(225901, {	-- Streamlined Relic [Rank 3]
+						["bonusID"] = 11257,
+					}),
+					i(225904, {	-- Time Lost Relic [Rank 3]
+						["bonusID"] = 11272,
+					}),
+					i(225899, {	-- Unbreakable Iron Idol [Rank 3]
+						["bonusID"] = 11247,
+					}),
 				}),
-				i(225898, {	-- Idol of the Earthmother [Rank 1]
-					["bonusID"] = 11240,
+				n(RANK_FOUR, {
+					i(225903, {	-- Amorphous Relic [Rank 4]
+						["bonusID"] = 11268,
+					}),
+					i(225897, {	-- Brute Force Idol [Rank 4]
+						["bonusID"] = 11238
+					}),
+					i(225902, {	-- Idol of Final Will [Rank 4]
+						["bonusID"] = 11263,
+					}),
+					i(225898, {	-- Idol of the Earthmother [Rank 4]
+						["bonusID"] = 11243,
+					}),
+					i(225906, {	-- Lifeless Necrotic Relic [Rank 4]
+						["bonusID"] = 11283,
+					}),
+					i(225900, {	-- Light-Touched Idol [Rank 4]
+						["bonusID"] = 11253,
+					}),
+					i(225905, {	-- Olden Seeker Relic [Rank 4]
+						["bonusID"] = 11278,
+					}),
+					i(218129, {	-- Porcelain Arrowhead Idol [Rank 4]
+						["bonusID"] = 11233,
+					}),
+					i(229353, {	-- Rage-Filled Idol [Rank 4]
+						["bonusID"] = 12011,
+					}),
+					i(225907, {	-- Relic of Sentience [Rank 4]
+						["bonusID"] = 11288,
+					}),
+					i(225908, {	-- Relicblood of Zekvir [Rank 4]
+						["bonusID"] = 11293,
+					}),
+					i(225901, {	-- Streamlined Relic [Rank 4]
+						["bonusID"] = 11258,
+					}),
+					i(225904, {	-- Time Lost Relic [Rank 4]
+						["bonusID"] = 11273,
+					}),
+					i(225899, {	-- Unbreakable Iron Idol [Rank 4]
+						["bonusID"] = 11248,
+					}),
 				}),
-				i(225906, {	-- Lifeless Necrotic Relic [Rank 1]
-					["bonusID"] = 11280,
-				}),
-				i(225900, {	-- Light-Touched Idol [Rank 1]
-					["bonusID"] = 11250,
-				}),
-				i(225905, {	-- Olden Seeker Relic [Rank 1]
-					["bonusID"] = 11275,
-				}),
-				i(218129, {	-- Porcelain Arrowhead Idol [Rank 1]
-					["bonusID"] = 11230,
-				}),
-				i(229353, {	-- Rage-Filled Idol [Rank 1]
-					["bonusID"] = 12008,
-				}),
-				i(225907, {	-- Relic of Sentience [Rank 1]
-					["bonusID"] = 11285,
-				}),
-				i(225908, {	-- Relicblood of Zekvir [Rank 1]
-					["bonusID"] = 11290,
-				}),
-				i(225901, {	-- Streamlined Relic [Rank 1]
-					["bonusID"] = 11255,
-				}),
-				i(225904, {	-- Time Lost Relic [Rank 1]
-					["bonusID"] = 11270,
-				}),
-				i(225899, {	-- Unbreakable Iron Idol [Rank 1]
-					["bonusID"] = 11245,
-				}),
-				-- i(228984),	-- Unbreakable Iron Idol [Rank 1] -- Eremeir on Discord
-			}),
-			n(RANK_TWO, {
-				i(225903, {	-- Amorphous Relic [Rank 2]
-					["bonusID"] = 11266,
-				}),
-				i(225897, {	-- Brute Force Idol [Rank 2]
-					["bonusID"] = 11236
-				}),
-				i(225902, {	-- Idol of Final Will [Rank 2]
-					["bonusID"] = 11261,
-				}),
-				i(225898, {	-- Idol of the Earthmother [Rank 2]
-					["bonusID"] = 11241,
-				}),
-				i(225906, {	-- Lifeless Necrotic Relic [Rank 2]
-					["bonusID"] = 11281,
-				}),
-				i(225900, {	-- Light-Touched Idol [Rank 2]
-					["bonusID"] = 11251,
-				}),
-				i(225905, {	-- Olden Seeker Relic [Rank 2]
-					["bonusID"] = 11276,
-				}),
-				i(218129, {	-- Porcelain Arrowhead Idol [Rank 2]
-					["bonusID"] = 11231,
-				}),
-				i(229353, {	-- Rage-Filled Idol [Rank 2]
-					["bonusID"] = 12009,
-				}),
-				i(225907, {	-- Relic of Sentience [Rank 2]
-					["bonusID"] = 11286,
-				}),
-				i(225908, {	-- Relicblood of Zekvir [Rank 2]
-					["bonusID"] = 11291,
-				}),
-				i(225901, {	-- Streamlined Relic [Rank 2]
-					["bonusID"] = 11256,
-				}),
-				i(225904, {	-- Time Lost Relic [Rank 2]
-					["bonusID"] = 11271,
-				}),
-				i(225899, {	-- Unbreakable Iron Idol [Rank 2]
-					["bonusID"] = 11246,
-				}),
-			}),
-			n(RANK_THREE, {
-				i(225903, {	-- Amorphous Relic [Rank 3]
-					["bonusID"] = 11267,
-				}),
-				i(225897, {	-- Brute Force Idol [Rank 3]
-					["bonusID"] = 11237
-				}),
-				i(225902, {	-- Idol of Final Will [Rank 3]
-					["bonusID"] = 11262,
-				}),
-				i(225898, {	-- Idol of the Earthmother [Rank 3]
-					["bonusID"] = 11242,
-				}),
-				i(225906, {	-- Lifeless Necrotic Relic [Rank 3]
-					["bonusID"] = 11282,
-				}),
-				i(225900, {	-- Light-Touched Idol [Rank 3]
-					["bonusID"] = 11252,
-				}),
-				i(225905, {	-- Olden Seeker Relic [Rank 3]
-					["bonusID"] = 11277,
-				}),
-				i(218129, {	-- Porcelain Arrowhead Idol [Rank 3]
-					["bonusID"] = 11232,
-				}),
-				i(229353, {	-- Rage-Filled Idol [Rank 3]
-					["bonusID"] = 12010,
-				}),
-				i(225907, {	-- Relic of Sentience [Rank 3]
-					["bonusID"] = 11287,
-				}),
-				i(225908, {	-- Relicblood of Zekvir [Rank 3]
-					["bonusID"] = 11292,
-				}),
-				i(225901, {	-- Streamlined Relic [Rank 3]
-					["bonusID"] = 11257,
-				}),
-				i(225904, {	-- Time Lost Relic [Rank 3]
-					["bonusID"] = 11272,
-				}),
-				i(225899, {	-- Unbreakable Iron Idol [Rank 3]
-					["bonusID"] = 11247,
-				}),
-			}),
-			n(RANK_FOUR, {
-				i(225903, {	-- Amorphous Relic [Rank 4]
-					["bonusID"] = 11268,
-				}),
-				i(225897, {	-- Brute Force Idol [Rank 4]
-					["bonusID"] = 11238
-				}),
-				i(225902, {	-- Idol of Final Will [Rank 4]
-					["bonusID"] = 11263,
-				}),
-				i(225898, {	-- Idol of the Earthmother [Rank 4]
-					["bonusID"] = 11243,
-				}),
-				i(225906, {	-- Lifeless Necrotic Relic [Rank 4]
-					["bonusID"] = 11283,
-				}),
-				i(225900, {	-- Light-Touched Idol [Rank 4]
-					["bonusID"] = 11253,
-				}),
-				i(225905, {	-- Olden Seeker Relic [Rank 4]
-					["bonusID"] = 11278,
-				}),
-				i(218129, {	-- Porcelain Arrowhead Idol [Rank 4]
-					["bonusID"] = 11233,
-				}),
-				i(229353, {	-- Rage-Filled Idol [Rank 4]
-					["bonusID"] = 12011,
-				}),
-				i(225907, {	-- Relic of Sentience [Rank 4]
-					["bonusID"] = 11288,
-				}),
-				i(225908, {	-- Relicblood of Zekvir [Rank 4]
-					["bonusID"] = 11293,
-				}),
-				i(225901, {	-- Streamlined Relic [Rank 4]
-					["bonusID"] = 11258,
-				}),
-				i(225904, {	-- Time Lost Relic [Rank 4]
-					["bonusID"] = 11273,
-				}),
-				i(225899, {	-- Unbreakable Iron Idol [Rank 4]
-					["bonusID"] = 11248,
-				}),
-			}),
+			},
 		}),
 		filter(MISC, {
 			i(228942),	-- Bountiful Coffer
@@ -1512,7 +1515,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(82941),	-- Kriegval's Rest
 		q(82944),	-- Earthcrawl Mines
 		q(78508),	-- Skittering Breach
+		q(82776),	-- Tak-Rethan Abyss
+		q(82937),	-- The Sinkhole
 		q(82942),	-- The Spiral Weave
+		q(82945),	-- The Waterworks
 		-- Restored Coffer Key
 		q(84736, {["isWeekly"]=true,}),	-- Pop from any weekly activity, orders (of activity) doesn't matter
 		q(84737, {["isWeekly"]=true,}),	--
@@ -1523,7 +1529,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		-- Achievements
 		q(82943),	-- Delve Deep (40460) completed
 		-- Unknown
-		--q(77731),	-- Earthcrawl Mines (Fiery Grounds story, Tier 1)
-		--q(77732),	-- The Waterworks (Stomping Some Sense story, Tier 1)
+		--q(77731),	-- After the last boss - Earthcrawl Mines (Fiery Grounds story, Tier 1)
+		--q(77732),	-- After the last boss - The Waterworks (Stomping Some Sense story, Tier 1)
 	}),
 })));
