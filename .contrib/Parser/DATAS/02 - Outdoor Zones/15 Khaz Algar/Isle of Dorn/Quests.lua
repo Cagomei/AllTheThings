@@ -5,9 +5,6 @@ local TEMPORARY_SOURCEQUEST = 78536;	-- Set to Completing First Chapter
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(ISLE_OF_DORN, {
 		n(QUESTS, {
-			-- Using Questauren These gets completed (Probably Inbetween Bronzebeard Family and Violet Impact)
-			q(82199),	--
-			--
 			header(HEADERS.Achievement, 20118, {	-- The Isle of Dorn
 				q(81966, {	-- Slept like a Rock
 					["description"] = "Requires re-logging to be accepted",
@@ -64,14 +61,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 72.6, 57.7, 2307 },	-- Quest Dalaran
 					["sourceQuests"] = { 79106 },	-- Rupture
 					["g"] = {
-						-- Cloth
-						i(224453),	-- City Guard's Coronet
-						-- Leather
 						i(220379),	-- City Guard's Chainmail (doesn't load ingame?)
-						-- Mail
 						i(224455),	-- City Guard's Chainmail
-						-- Plate
+						i(224453),	-- City Guard's Coronet
 						i(224456),	-- City Guard's Greaves
+						i(224454),	-- City Guard's Mask
 					},
 				}),
 				------ Chapter 1 ------
@@ -381,9 +375,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 33.3, 63.3, ISLE_OF_DORN },
 					["g"] = {
 						i(223875),	-- Algari Censer
+						i(223874),	-- Algari Dagger
+						i(223877),	-- Algari Hatchet
 						i(223871),	-- Algari Heavy Axe
 						i(223872),	-- Algari Mace
 						i(223873),	-- Algari Shield
+						i(223876),	-- Algari Warglaive
 					},
 				}),
 				q(81915, {	-- Home to Roost
@@ -1020,8 +1017,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 65.9, 23.8, ISLE_OF_DORN },
 					["g"] = {
 						i(223456),	-- Algari Cinch
-						i(223424),	-- Algari-Weave Cord
 						i(223464),	-- Algari Heavy Gauntlets
+						i(223441),	-- Algari Scouting Boots
+						i(223424),	-- Algari-Weave Cord
 					},
 				}),
 			}),
@@ -1267,6 +1265,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81614, {	-- One Fin, Two Fin, Pearlfin, Dead Fin
 					["coord"] = { 50.5, 80.2, ISLE_OF_DORN },	-- need more accurate coords from popup
 				}),
+			}),
+
+			-- Stay awhile and listen
+			hqt(84813, {	-- Stay awhile and listen: Rooktender Lufsela
+				["name"] = "Stay awhile and listen: Rooktender Lufsela",
+				["sourceQuests"] = { 79146 },	-- Ground Pounders
+				["provider"] = { "n", 215039 },	-- Rooktender Lufsela
+				["coord"] = { 27.8, 60.8, ISLE_OF_DORN },
 			}),
 		}),
 	}),

@@ -354,6 +354,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(MISC, {
 				i(210970),	-- Crumbled Keepsake (QI!)
 				i(210981),	-- Kriegval's Helm (QI!)
+				i(211209),	-- Suspicious Candle
 			}),
 			n(QUESTS, {
 				q(83759, {	-- Delver's Call: Kriegval's Rest
@@ -671,7 +672,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["questID"] = 83649,
 				}),
 				o(455506, {	-- Sturdy Chest
-					["description"] = "Located on beam over your head.",
+					["description"] = "Located on beam over your head. Accessible during the From the Weaver with Love story.",
 					["coord"] = { 36.3, 10.5, THE_SPIRAL_WEAVE },
 					["questID"] = 83661,
 				}),
@@ -705,6 +706,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(TREASURES, {
+				o(455508, {	-- Sturdy Chest
+					["description"] = "Not available during Torture Victims story.",	-- Completed in Runaway Evolution
+					["coord"] = { 39.6, 69.3, THE_UNDERKEEP },
+					["questID"] = 83663,
+				}),
 				o(455509, {	-- Sturdy Chest
 					["coord"] = { 35.9, 34.6, THE_UNDERKEEP },
 					["questID"] = 83664,
@@ -846,6 +852,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(215178),	-- Shadow-Binding Ritual Knife
 				i(215172),	-- Silken Chain Weaver
 				i(225668),	-- Unstable Power Suit Core
+				i(225891),	-- Vile Vial of Kaheti Bile
 			}),
 		}),
 		n(BOUNTIFUL, bubbleDownFiltered({
@@ -983,6 +990,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(225899, {	-- Unbreakable Iron Idol [Rank 1]
 					["bonusID"] = 11245,
 				}),
+				-- i(228984),	-- Unbreakable Iron Idol [Rank 1] -- Eremeir on Discord
 			}),
 			n(RANK_TWO, {
 				i(225903, {	-- Amorphous Relic [Rank 2]

@@ -5,7 +5,6 @@ local TEMPORARY_SOURCEQUEST = 80434;
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(THE_RINGING_DEEPS, {
 		n(QUESTS, {
-			--q(82200),	-- flagged from quest tauren when dropping you here
 			header(HEADERS.Achievement, 19560, {	-- The Ringing Deeps
 				------ Chapter 1 ------
 				q(80434, {	-- Into the Deeps
@@ -170,11 +169,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(219466),	-- Earthen Traveler's Chopper
 						i(219462),	-- Earthen Traveler's Claymore
 						i(219465),	-- Earthen Traveler's Crossbow
+						i(219458),	-- Earthen Traveler's Dagger
 						i(219467),	-- Earthen Traveler's Fist
 						i(219461),	-- Earthen Traveler's Gavel
 						i(219460),	-- Earthen Traveler's Handaxe
 						i(219463),	-- Earthen Traveler's Javelin
 						i(219457),	-- Earthen Traveler's Saber
+						i(219456),	-- Earthen Traveler's Scepter
+						i(219455),	-- Earthen Traveler's Shield
 						i(219459),	-- Earthen Traveler's Staff
 					},
 				}),
@@ -807,10 +809,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 225583 },	-- Machinist Kilton
 					["coord"] = { 41.1, 21.4, THE_RINGING_DEEPS },
-					["g"] = {
-						-- same loot table as from `New Candle, New Hope` +
-						i(219455),	-- Earthen Traveler's Shield
-					},
+					-- Same loot table as from 'New Candle, New Hope'
+					["sym"] = {{"select","questID",78642},{"pop"}},	-- New Candle, New Hope
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.09, {	-- Kobold Candles
@@ -1305,12 +1305,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 54.6, 71.2, THE_RINGING_DEEPS },
 				}),
 				q(81981, {	-- What Army?
-					["sourceQuests"] = { 80514 },	-- Break out Berrund!
+					["sourceQuests"] = {
+						80514,	-- Break out Berrund!
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 70.7, 39.8, THE_RINGING_DEEPS },
 				}),
 			}),
 
-			-- Stay a while
+			-- Stay awhile and listen
 			hqt(84620, {	-- Stay awhile and listen: Magni Bronzebeard
 				["name"] = "Stay awhile and listen: Magni Bronzebeard",
 				["sourceQuests"] = { 78696 },	-- We Don't Go to Taelloch

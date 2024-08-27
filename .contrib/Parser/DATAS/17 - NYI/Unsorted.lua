@@ -293,7 +293,6 @@ root(ROOTS.Unsorted, {
 				i(225672),	-- Unraveled Instructions
 				i(225673),	-- Artisan's Consortium Seal of Approval
 				i(228224),	-- Spark of Legacies
-				i(228339),	-- Soul Sigil II
 				i(228368),	-- Relic of the Past VI
 				-- NYI Profession --
 				i(219500),	-- Fang Adornments
@@ -746,7 +745,6 @@ root(ROOTS.Unsorted, {
 				i(224168),	-- Stonebound Tabard \\ Silver Earthen Tabard \\ [PH] Earthen Tabard
 				i(224169),	-- Freywold Tabard \\ Sage Earthen Tabard \\ [PH] Earthen Tabard
 				i(225752),	-- Dornogal Defender
-				i(225756),	-- Coreway Shovel
 				i(225757),	-- Coreway Pickaxe
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
 				i(225974),	-- Swabbie's Cap \\ Teal Beanie
@@ -1154,7 +1152,6 @@ root(ROOTS.Unsorted, {
 				i(225648),	-- Candle Confidant
 				i(225656),	-- Goldenglow Censer
 				i(225661),	-- Burning Binding
-				i(225891),	-- Vile Vial of Kaheti Bile
 				i(226137),	-- Inquisitive Sister's Cinch
 				i(226138),	-- Vow-Taker's Boots
 				i(226174),	-- Famished Bride's Clasp
@@ -1360,7 +1357,6 @@ root(ROOTS.Unsorted, {
 				i(227320),	-- Wicker Wisps
 				i(227328),	-- Wax Fondue
 				i(227329),	-- Still-Twitching Gumbo
-				i(223870),	-- Cache Key
 				i(227668),	-- Delver's Bounty
 				i(227677),	-- Satchel of Enchanting Surplus
 				i(227678),	-- Satchel of Engineering Surplus
@@ -1394,7 +1390,6 @@ root(ROOTS.Unsorted, {
 				i(208948),	-- [DNT] Club Chest Key \\ Club Chest Key
 				i(208957),	-- Conduit of the Southern Storm
 				i(209857),	-- Unusual Seeds
-				i(211209),	-- Suspicious Candle
 				i(211210),	-- Blacksmith Boss' Head
 				i(211291),	-- Decorative Bones
 				i(211304),	-- Bone Key
@@ -1511,8 +1506,6 @@ root(ROOTS.Unsorted, {
 				i(219791),	-- 11.0 Leveling Quest Template - Mace1H - Int
 				i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
 				i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
-				i(226111),	-- Arakkoan Ritual Staff
-				i(226113),	-- Kereke's Flourishing Sabre
 				i(228364),	-- Endiri's Chipped Boot Knife
 				i(228367),	-- Arathi Scout's Walking Stick
 			}),
@@ -1534,7 +1527,6 @@ root(ROOTS.Unsorted, {
 				i(219397),	-- Earthen Boots
 				i(219398),	-- Earthen Chain
 				i(219428),	-- Earthen Waistguard
-				i(219458),	-- Earthen Traveler's Dagger
 				-- Earthen stuff again? Maybe erm.. Heritage?
 				i(224195),	-- Earthen Shoulders
 				i(224196),	-- Earthen Trousers
@@ -1611,13 +1603,8 @@ root(ROOTS.Unsorted, {
 			n(RARES, {
 				i(221066),	-- Template - Accessory - Finger
 				i(221093),	-- Deeply Corrupted Coil
-				i(221209),	-- Flame Trader's Gloves
-				i(221210),	-- Grips of the Earth
-				i(221230),	-- Storm Bindings
 				i(221231),	-- Steam-Powered Wristwatch
 				i(221232),	-- Polished Goblin Bling
-				i(221233),	-- Deephunter's Bloody Hook
-				i(221236),	-- Stormbreaker's Shield
 				i(221237),	-- Lamentable Vagrant's Lantern
 				i(221238),	-- Pillar of Constructs
 				i(221242),	-- Forgeborn Helm
@@ -1625,7 +1612,6 @@ root(ROOTS.Unsorted, {
 				i(221253),	-- Cultivator's Plant Puncher
 				i(221254),	-- Earthshatter Lance
 				i(221505),	-- [DNT] Rare Cloth - Robe
-				i(223005),	-- String of Fungal Fruits
 				i(223915),	-- Nerubian Orator's Stiletto
 				i(223916),	-- Nerubian Cutthroat's Reach
 				i(223917),	-- Nerubian Covert's Cloak
@@ -1648,27 +1634,15 @@ root(ROOTS.Unsorted, {
 				i(223438),	-- Algari Warden's Vestment
 				i(223444),	-- Arathi Defender's Breeches
 				i(223450),	-- Honored Soldier's Chainmail
-				i(223441),	-- Algari Scouting Boots
 				i(223443),	-- Algari Warden's Hood
 				i(223454),	-- Algari Warden's Greaves
 				i(223458),	-- [PH] 11.0 - Belt
 				i(223461),	-- Algari Warden's Helm
 				i(223472),	-- Drape of the Lamplighter
 				i(223548),	-- Algari Rifle
-				i(223584),	-- Algari Scepter
 				i(223585),	-- Algari Bladefist
 				i(223588),	-- Algari Fighting Knife
-				i(223874),	-- Algari Dagger
-				i(223876),	-- Algari Warglaive
-				i(223877),	-- Algari Hatchet
-				i(224454),	-- City Guard's Mask \\ Dalaran Hood
 				i(228436),	-- United Arathi's Jerkin
-				i(228439),	-- Mitts of Menial Tasks
-				i(228440),	-- Chitin-Laced Shoulderguards
-				i(228441),	-- Overseer's Oversized Clasp
-				i(228445),	-- Deceased Nerubian's Slippers
-				i(228446),	-- Albert's Last Gloves
-				i(228447),	-- Spider-Fang Epaulets
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(223510),	-- Delver's Dirigible Schematic: Template
@@ -2017,8 +1991,6 @@ root(ROOTS.Unsorted, {
 			title(568),	-- <Name>, Machine-Warden
 			i(226218),	-- Machine-Warden's Cloak
 			-- Fallout
-			i(214616),	-- Engraved Dagger
-			i(219456),	-- Earthen Traveler's Scepter
 			i(219934),	-- Spark of War
 			i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
 			i(224183),	-- Bleak Chum

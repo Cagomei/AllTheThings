@@ -788,7 +788,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 215237 },	-- Alyza Bowblaze
 					["coord"] = { 41.8, 55.6, HALLOWFALL },
 					["g"] = {
-						i(216604),	-- "Much Loved" Teddy Bear (QI!)
+						o(423958, {	-- Arathi Chest
+							i(216604),	-- "Much Loved" Teddy Bear (QI!)
+						}),
 					},
 				}),
 				q(83182, {	-- A Bloody Inheritance
@@ -796,10 +798,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 218062 },	-- Alyza Bowblaze
 					["coord"] = { 52.4, 50.2, HALLOWFALL },
 					["g"] = {
-						i(215446),	-- Battered Helmet (QI!)
-						i(216525),	-- Dented Boots (QI!)
-						i(216526),	-- Resplendant Shield (QI!)
-						i(216524),	-- Salt-pitted Sword (QI!)
+						o(416310, {	-- Kobyss Chest
+							i(215446),	-- Battered Helmet (QI!)
+						}),
+						o(423977, {	-- Kobyss Chest
+							i(216525),	-- Dented Boots (QI!)
+						}),
+						o(423979, {	-- Kobyss Chest
+							i(216526),	-- Resplendant Shield (QI!)
+						}),
+						o(423978, {	-- Kobyss Chest
+							i(216524),	-- Salt-pitted Sword (QI!)
+						}),
 					},
 				}),
 				q(79152, {	-- Gutting the Pool
@@ -948,12 +958,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 220718 },	-- Maera Ashyld
 					["coord"] = { 60.5, 60.2, HALLOWFALL },
 					["g"] = {
-						i(219814),	-- Rusted Torch (QI!)
-						i(219813),	-- Tarnished Compass (QI!)
-						i(219811),	-- Broken Bracelet (QI!)
-						i(219816),	-- Knotted Aviator Scarf (QI!)
-						i(219812),	-- Plush Lynx (QI!)
-						i(219815),	-- Small Hilt (QI!)
+						o(437025, {	-- Sludge Pile
+							i(219814),	-- Rusted Torch (QI!)
+							i(219813),	-- Tarnished Compass (QI!)
+							i(219811),	-- Broken Bracelet (QI!)
+							i(219816),	-- Knotted Aviator Scarf (QI!)
+							i(219812),	-- Plush Lynx (QI!)
+							i(219815),	-- Small Hilt (QI!)
+						}),
 						--
 						i(219810),	-- Broken Bracelet
 						i(219809),	-- Plush Lynx
@@ -1015,7 +1027,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 215335 },	-- General Steelstrike
 				["coord"] = { 40.5, 50.8, HALLOWFALL },
 				["g"] = {
-					i(216687),	-- Cobbled Together Bandage (QI!)
+					o(424343, {	-- Medical Supplies
+						i(216687),	-- Cobbled Together Bandage (QI!)
+					}),
 				},
 			}),
 			-- Items turn in quests?
@@ -1114,7 +1128,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 			}),
 
-			-- Stay a while
+			-- Stay awhile and listen
 			hqt(79706, {	-- Stay awhile and listen: Faerin Lothar
 				["name"] = "Stay awhile and listen: Faerin Lothar",
 				["sourceQuests"] = { 78613 },	-- The Bastion of Hallowfall
@@ -1163,8 +1177,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			-- During questing
 			q(83614),	-- [DNT] Zone 3 Bread Crumb Completed Organically (spellID 456930), after turn in questID 78658 (The Hallowed Path)
 			q(79654),	-- [DNT] Hallowfall Arathi Renown Unlock (spellID 448657)
-			--q(82538),	-- Stay a while and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
-			q(81635),	-- Stay a while and listen - Nalina Ironsong @ 42.7, 55.8, HALLOWFALL (n: 217642) (idk when become available)
+			--q(82538),	-- Stay awhile and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
+			q(81635),	-- Stay awhile and listen - Nalina Ironsong @ 42.7, 55.8, HALLOWFALL (n: 217642) (idk when become available)
 			-- questID 79303 (A Principled Principal) nodes
 			q(83287),	-- should accept work
 			q(83288),	-- system become unfair
