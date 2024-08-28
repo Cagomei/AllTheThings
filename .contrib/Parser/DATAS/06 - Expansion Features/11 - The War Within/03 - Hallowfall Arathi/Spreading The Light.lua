@@ -266,7 +266,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 64.9, 29.4, HALLOWFALL },
 						["questID"] = 82558,
 						["g"] = {
+							i(223935),	-- Cabbage Harvester's Pantaloons
 							i(223928),	-- Crop Cutter's Gauntlets
+							i(221238),	-- Pillar of Constructs
 						},
 					}),
 					n(214757, {	-- Croakit
@@ -274,11 +276,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 67.3, 23.5, HALLOWFALL },
 						["questID"] = 82560,
 						["cost"] = {{ "i", 211474, 10 }},	-- 10x Shadowblind Grouper
+						["g"] = {
+							i(223938),	-- Marsh Hopper's Spaulders
+						},
 					}),
 					n(206184, {	-- Deathpetal
 						["coord"] = { 63.8, 32.0, HALLOWFALL },
 						["questID"] = 82559,
 						["g"] = {
+							i(221253),	-- Cultivator's Plant Puncher
 							i(223005),	-- String of Fungal Fruits
 							i(223927),	-- Vinewrapped Leather Tunic
 						},
@@ -288,6 +294,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["questID"] = 82562,
 						["g"] = {
 							i(223936),	-- Shadow Bog Trousers
+							i(223918),	-- Specter Stalker's Shotgun
 						},
 					}),
 					n(207780, {	-- Finclaw Bloodtide
@@ -339,6 +346,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 66.7, 24.1, HALLOWFALL },
 						["questID"] = 82561,
 						["g"] = {
+							i(223921),	-- Ever-Oozing Signet	
 							i(223920),	-- Slime Deflecting Stopper
 							i(223933),	-- Slime Goliath's Cap
 						},
@@ -354,10 +362,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229085),	-- Aevery's Spare Bracers
 						i(229082),	-- Aevery's Spare Chausses
 						i(229081),	-- Aevery's Spare Cowl
+						i(229080),	-- Aevery's Spare Gauntlets
 						i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 						i(229092),	-- Kyros's Spare Girdle
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
+						i(229100),	-- The Cleansing Flame's Leggings
 						i(229097),	-- The Cleansing Flame's Sandals
 						i(229122),	-- Warstone's Gauntlets
 					}),

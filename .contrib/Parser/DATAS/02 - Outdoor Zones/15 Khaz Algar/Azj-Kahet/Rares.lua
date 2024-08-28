@@ -29,6 +29,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81704,
 				["g"] = {
 					i(221212),	-- Death Burrower Handguards
+					i(221237),	-- Lamentable Vagrant's Lantern
 				},
 			}),
 			n(222624, {	-- Deepcrawler Tx'kesh
@@ -36,6 +37,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82077,
 				["g"] = {
 					i(223923),	-- Gilded Cryptlord's Sabatons
+					i(223917),	-- Nerubian Covert's Cloak
+					i(223916),	-- Nerubian Cutthroat's Reach
+					i(223915),	-- Nerubian Orator's Stiletto
 				},
 			}),
 			n(216045, {	-- Enduring Gutterface
@@ -56,6 +60,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 				["g"] = {
 					i(223941),	-- Nerubian Cultivator's Girdle
+					i(223916),	-- Nerubian Cutthroat's Reach
+					i(223915),	-- Nerubian Orator's Stiletto
 				},
 			}),
 			n(216048, {	-- Jix'ak the Crazed
@@ -64,6 +70,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 65.1, 85.7, AZJ_KAHET_LOWER},
 				["g"] = {
 					i(223950),	-- Corruption Sifter's Treads
+					i(223917),	-- Nerubian Covert's Cloak
+					i(223916),	-- Nerubian Cutthroat's Reach
+					i(223915),	-- Nerubian Orator's Stiletto
 				},
 			}),
 			n(221327, {	-- Kaheti Silk Hauler
@@ -93,6 +102,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81705,
 				["g"] = {
 					i(221250),	-- Creeping Lasher Machete
+					i(221253),	-- Cultivator's Plant Puncher
 					i(221227),	-- Monstrous Fungal Cord
 				},
 			}),
@@ -100,6 +110,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				--TODO: add more waypoint next time
 				["coord"] = { 61.3, 7.4, AZJ_KAHET },
 				["questID"] = 82078,
+				["g"] = {
+					i(223939),	-- Esteemed Nerubian's Mantle
+					i(223917),	-- Nerubian Covert's Cloak
+					i(223916),	-- Nerubian Cutthroat's Reach
+					i(223915),	-- Nerubian Orator's Stiletto
+				},
 			}),
 			n(216032, {	-- Stronghold Scouts (Khak'ik npcID)
 				["crs"] = { 221032 },	-- Rhak'ik
@@ -152,6 +168,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(216051, {	-- Umbraclaw Matra
 				["coord"] = { 64.5, 3.4, AZJ_KAHET },
 				["questID"] = 82037,
+				["g"] = {
+					i(223930),	-- Monstrous Chain Pincers
+				},
 			}),
 			n(216037, {	-- Vilewing
 				["description"] = "Fly around",
@@ -183,6 +202,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 75.4, 61.0, AZJ_KAHET },
 				["questID"] = 81703,
 				["g"] = {
+					i(221232),	-- Polished Goblin Bling
 					i(221231),	-- Steam-Powered Wristwatch
 				},
 			}),

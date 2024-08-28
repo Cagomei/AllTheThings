@@ -49,6 +49,8 @@ root(ROOTS.Unsorted, {
 				i(228779),	-- Algari Tailor's Notebook
 
 				-- I wonder if this has to do with Crafting Orders..
+					-- YES... Crafting Orders "Patron" rewards these
+					-- BRAGHE!
 				i(228724),	-- Flicker of Alchemy Knowledge
 				i(228725),	-- Glimmer of Alchemy Knowledge
 				i(228726),	-- Flicker of Blacksmithing Knowledge
@@ -66,9 +68,13 @@ root(ROOTS.Unsorted, {
 				i(228738),	-- Flicker of Tailoring Knowledge
 				i(228739),	-- Glimmer of Tailoring Knowledge
 				-- Same with these
+				i(227713),	-- Artisan's Consortium Payout [Common]
 				i(228610),	-- Artisan's Consortium Payout [Uncommon]
 				i(228611),	-- Artisan's Consortium Payout [Rare]
 				i(228612),	-- Artisan's Consortium Payout [Epic]
+				-- This was also a reward for completion -- they show before you accept the order
+				i(225670),	-- Apprentice's Crafting License
+				i(225671),	-- Stack of Pentagold Reviews
 			}),
 			filter(COSMETIC, {
 				i(228761),	-- Classic Brick Tabard
@@ -101,7 +107,6 @@ root(ROOTS.Unsorted, {
 			i(229077),	-- Azra's Spare Shoulderguards
 			i(229078),	-- Aevery's Spare Brigandine
 			i(229079),	-- Aevery's Spare Boots
-			i(229080),	-- Aevery's Spare Gauntlets
 			i(229083),	-- Aevery's Spare Shoulderguards
 			i(229084),	-- Aevery's Spare Belt
 			i(229086),	-- Kyros's Spare Helm
@@ -114,7 +119,6 @@ root(ROOTS.Unsorted, {
 			i(229096),	-- The Cleansing Flame's Robes
 			i(229098),	-- The Cleansing Flame's Handwraps
 			i(229099),	-- The Cleansing Flame's Cowl
-			i(229100),	-- The Cleansing Flame's Leggings
 			i(229101),	-- The Cleansing Flame's Shoulderpads
 			i(229102),	-- The Cleansing Flame's Cord
 			i(229103),	-- The Cleansing Flame's Cuffs
@@ -287,8 +291,6 @@ root(ROOTS.Unsorted, {
 				i(211494),	-- Spark of Beginnings
 
 				i(225772),	-- Artisan's Consortium Advertisement
-				i(225670),	-- Apprentice's Crafting License
-				i(225671),	-- Stack of Pentagold Reviews
 				i(225672),	-- Unraveled Instructions
 				i(225673),	-- Artisan's Consortium Seal of Approval
 				i(228224),	-- Spark of Legacies
@@ -576,14 +578,11 @@ root(ROOTS.Unsorted, {
 				-- Prof Knowledge
 				i(224782),	-- Razor Talon
 				i(225220),	-- Chitin Needle
-				i(225221),	-- Spool of Webweave
 				i(225224),	-- Diaphanous Gem Shards
 				i(225225),	-- Deepstone Fragment
 				i(225226),	-- Striated Inkstone
 				i(225227),	-- Wax-Sealed Records
-				i(225230),	-- Crystalline Repository
 				i(224780),	-- Toughened Tempest Pelt
-				i(227661),	-- Gleaming Telluric Crystal
 				i(227662),	-- Shimmering Dust
 				i(227667),	-- Algari Enchanter's Folio
 			}),
@@ -1336,7 +1335,6 @@ root(ROOTS.Unsorted, {
 				i(227678),	-- Satchel of Engineering Surplus
 				i(227679),	-- Satchel of Inscription Surplus
 				i(227680),	-- Satchel of Jewelcrafting Surplus
-				i(227713),	-- Artisan's Consortium Payout [Common]
 				i(227769),	-- Bountiful Bolts
 				i(227778),	-- Delver's Bounty
 				i(227779),	-- Delver's Bounty
@@ -1421,11 +1419,9 @@ root(ROOTS.Unsorted, {
 				i(219197),	-- Black Blood Residue
 				i(219214),	-- Cooling Wax
 				i(219215),	-- Wax Puddle
-				i(219292),	-- Perplexing Contraband
 				i(219293),	-- Sureki Intelligence
 				i(219322),	-- Malodorous Philter
 				i(219323),	-- Gelatinous Unguent
-				i(219324),	-- Roiling Elixir
 				i(219350),	-- Maddening Manifest
 				i(219388),	-- Sacred Flame Torch
 				i(219400),	-- Faerin's Torch of Holy Flame
@@ -1576,25 +1572,7 @@ root(ROOTS.Unsorted, {
 			n(RARES, {
 				i(221066),	-- Template - Accessory - Finger
 				i(221093),	-- Deeply Corrupted Coil
-				i(221232),	-- Polished Goblin Bling
-				i(221237),	-- Lamentable Vagrant's Lantern
-				i(221238),	-- Pillar of Constructs
-				i(221242),	-- Forgeborn Helm
-				i(221253),	-- Cultivator's Plant Puncher
-				i(221254),	-- Earthshatter Lance
-				i(221505),	-- [DNT] Rare Cloth - Robe
-				i(223915),	-- Nerubian Orator's Stiletto
-				i(223916),	-- Nerubian Cutthroat's Reach
-				i(223917),	-- Nerubian Covert's Cloak
-				i(223918),	-- Specter Stalker's Shotgun
-				i(223921),	-- Ever-Oozing Signet
-				i(223922),	-- Cinder Pollen Cloak
-				i(223926),	-- Earthgorger's Chain Bib
-				i(223930),	-- Monstrous Chain Pincers
-				i(223935),	-- Cabbage Harvester's Pantaloons
-				i(223937),	-- Honey Deliverer's Leggings
-				i(223938),	-- Marsh Hopper's Spaulders
-				i(223939),	-- Esteemed Nerubian's Mantle
+				i(221505),	-- [DNT] Rare Cloth - Robe	
 				i(223944),	-- [PH] Infested Fungal Wristwraps
 				i(223945),	-- [PH] Perchfather's Cuffs
 				i(223946),	-- [PH] Storm Bindings
@@ -1962,7 +1940,6 @@ root(ROOTS.Unsorted, {
 			-- Fallout
 			i(219934),	-- Spark of War
 			i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
-			i(224183),	-- Bleak Chum
 			i(226103),	-- The Weaver's Trove
 			i(226165),	-- Unseemly Agate Choker
 		})),

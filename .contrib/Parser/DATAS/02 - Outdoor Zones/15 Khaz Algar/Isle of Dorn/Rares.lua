@@ -90,6 +90,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 48.1, 27.0, ISLE_OF_DORN },
 				["questID"] = 81902,
 				["g"] = {
+					i(221254),	-- Earthshatter Lance
 					i(221210),	-- Grips of the Earth
 				},
 			}),
@@ -173,6 +174,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 69.8, 38.4, ISLE_OF_DORN },
 				["questID"] = 81922,
 				["g"] = {
+					i(223921),	-- Ever-Oozing Signet
 					i(223929),	-- Honey Sweetener's Squeezers
 				},
 			}),
@@ -188,6 +190,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Flying around in the area.",
 				["coord"] = { 74.6, 36.7, ISLE_OF_DORN },
 				["questID"] = 81923,
+				["g"] = {
+					i(223922),	-- Cinder Pollen Cloak
+					i(223937),	-- Honey Deliverer's Leggings
+				},
 			}),
 			n(219271, {	-- Twice-Stinger the Wretched
 				["coord"] = { 57.2, 22.3, ISLE_OF_DORN },
