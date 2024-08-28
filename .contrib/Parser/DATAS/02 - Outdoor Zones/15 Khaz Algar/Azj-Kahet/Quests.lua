@@ -1003,6 +1003,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						i(223515),	-- Breastplate and Tinderbox (QI!)
 						i(223462),	-- Honorable Arathi Breastplate
+						i(223450),	-- Honored Soldier's Chainmail
 						i(223439),	-- Mereldar Scholar's Leggings
 					},
 				}),
@@ -1063,18 +1064,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(83720, {	-- Venom? More Like Get 'Em
 					["sourceQuests"] = { 83719 },	-- Those Are Chitin Words
-					--["provider"] = { "n", XXXXX },	-- XXXXX
-					--["coord"] = { X, Y, MAP },
+					["provider"] = { "n", 218171 },	-- Shalba
+					["coord"] = { 45.4, 13.5, NERUBAR },
 					["g"] = {
-						i(226135),	-- Nerubian Venom
+						i(226135),	-- Nerubian Venom (QI!)
 					},
 				}),
 				q(83721, {	-- A Small Ocean's Worth of Blood
 					["sourceQuests"] = { 83720 },	-- Venom? More Like Get 'Em
-					--["provider"] = { "n", XXXXX },	-- XXXXX
-					--["coord"] = { X, Y, MAP },
+					["provider"] = { "n", 218171 },	-- Shalba
+					["coord"] = { 45.4, 13.5, NERUBAR },
 					["g"] = {
-						i(226136),	-- Nerubian Blood
+						i(226136),	-- Nerubian Blood (QI!)
 					},
 				}),
 				i(224150),	-- Siesbarg (MOUNT!)

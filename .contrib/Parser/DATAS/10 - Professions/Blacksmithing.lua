@@ -1151,21 +1151,21 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		},{
 			i(198606),	-- Blacksmith's Writ
-			q(74109, {	-- Inscription Order: Blacksmith
-				["name"] = "Inscription Order: Blacksmith",
+			q(74109, {	-- DF Inscription Order: Blacksmith
+				["name"] = "DF Inscription Order: Blacksmith",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 198454 },	-- Draconic Treatise on Blacksmith
 			}),
-			q(66381, {	-- Weekly Blacksmithing Knowledgepoint #1
-				["name"] = "Blacksmithing Treasure #1",
+			q(66381, {	-- Weekly DF Blacksmithing Knowledgepoint #1
+				["name"] = "DF Blacksmithing Treasure #1",
 				["provider"] = { "i", 192131 },	-- Valdrakken Weapon Chain
 			}),
-			q(66382, {	-- Weekly Blacksmithing Knowledgepoint #2
-				["name"] = "Blacksmithing Treasure #2",
+			q(66382, {	-- Weekly DF Blacksmithing Knowledgepoint #2
+				["name"] = "DF Blacksmithing Treasure #2",
 				["provider"] = { "i", 192132 },	-- Draconium Blade Sharpener
 			}),
-			q(70513, {	-- Weekly Blacksmithing Knowledgepoint #3
-				["name"] = "Blacksmithing Drop #1: Fire Elemental",
+			q(70513, {	-- Weekly DF Blacksmithing Knowledgepoint #3
+				["name"] = "DF Blacksmithing Drop #1: Fire Elemental",
 				["description"] = "Drops from any Fire Elemental.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					196168,	-- Springs Heater
@@ -1174,8 +1174,8 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "i", 198966 },	-- Molten Globule
 				["coord"] = { 39.0, 48.8, THALDRASZUS },
 			}),
-			q(70512, {	-- Weekly Blacksmithing Knowledgepoint #4
-				["name"] = "Blacksmithing Drop #2: Earth Elemental",
+			q(70512, {	-- Weekly DF Blacksmithing Knowledgepoint #4
+				["name"] = "DF Blacksmithing Drop #2: Earth Elemental",
 				["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					194212,	-- Unleashed Rubble
@@ -1208,11 +1208,46 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					i(226277),	-- Dornogal Hammer
 				},
 			}),
+			o(456014, {	-- Earthen Chisels
+				["coord"] = { 60.6, 53.8, THE_RINGING_DEEPS },
+				["questID"] = 83851,
+				["g"] = {
+					i(226279),	-- Earthen Chisels
+				},
+			}),
+			o(456013, {	-- Holy Flame Forge
+				["coord"] = { 47.6, 61.0, HALLOWFALL },
+				["questID"] = 83852,
+				["g"] = {
+					i(226280),	-- Holy Flame Forge
+				},
+			}),
+			o(456011, {	-- Nerubian Smith's Kit
+				["coord"] = { 46.6, 22.7, NERUBAR },
+				["questID"] = 83854,
+				["g"] = {
+					i(226282),	-- Nerubian Smith's Kit
+				},
+			}),
+			o(456012, {	-- Radiant Tongs
+				["coord"] = { 44.1, 55.6, HALLOWFALL },
+				["questID"] = 83853,
+				["g"] = {
+					i(226281),	-- Radiant Tongs
+				},
+			}),
 			o(456015, {	-- Ringing Hammer Vise
 				["coord"] = { 47.7, 33.2, THE_RINGING_DEEPS },
 				["questID"] = 83850,
 				["g"] = {
 					i(226278),	-- Ringing Hammer Vise
+				},
+			}),
+			o(456010, {	-- Spiderling's Wire Brush
+				["coord"] = { 53.0, 51.3, NERUBAR },
+				["questID"] = 83855,
+				["g"] = {
+					i(226283),	-- Spiderling's Wire Brush
 				},
 			}),
 		}),
@@ -1221,11 +1256,19 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["g"] = {
 				currency(TWW_BLACKSMITHING_KNOWLEDGE),
 			},
-		 }, {
-			q(83726, {	-- Inscription Order: Blacksmithing
-				["name"] = "Inscription Order: Blacksmithing",
+		}, {
+			q(83726, {	-- TWW Inscription Order: Blacksmithing
+				["name"] = "TWW Inscription Order: Blacksmithing",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222554 },	-- Algari Treatise on Blacksmithing
+			}),
+			q(83257, {	-- Weekly TWW Blacksmithing Knowledgepoint #1
+				["name"] = "TWW Blacksmithing Treasure #1",
+				["provider"] = { "i", 225232 },	-- Coreway Billet
+			}),
+			q(83256, {	-- Weekly TWW Blacksmithing Knowledgepoint #2
+				["name"] = "TWW Blacksmithing Treasure #2",
+				["provider"] = { "i", 225233 },	-- Dense Bladestone
 			}),
 		})),
 	})),

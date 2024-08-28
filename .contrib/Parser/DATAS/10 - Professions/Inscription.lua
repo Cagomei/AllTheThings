@@ -5322,20 +5322,20 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			},
 		},{
 			i(198607),	-- Scribe's Glyphs
-			q(74105, {	-- Inscription Order: Inscription
-				["name"] = "Inscription Order: Inscription",
+			q(74105, {	-- DF Inscription Order: Inscription
+				["name"] = "DF Inscription Order: Inscription",
 				["provider"] = { "i", 194699 },	-- Draconic Treatise on Inscription
 			}),
-			q(66375, {	-- Weekly Inscription Knowledgepoint #1
-				["name"] = "Inscription Treasure #1",
+			q(66375, {	-- Weekly DF Inscription Knowledgepoint #1
+				["name"] = "DF Inscription Treasure #1",
 				["provider"] = { "i", 193904 },		-- Phoenix Feather Quill
 			}),
-			q(66376, {	-- Weekly Inscription Knowledgepoint #2
-				["name"] = "Inscription Treasure #2",
+			q(66376, {	-- Weekly DF Inscription Knowledgepoint #2
+				["name"] = "DF Inscription Treasure #2",
 				["provider"] = { "i", 193905 },		-- Iskaaran Trading Ledger
 			}),
-			q(70518, {	-- Weekly Inscription Knowledgepoint #3
-				["name"] = "Inscription Drop #1: Qalashi Djaradin",
+			q(70518, {	-- Weekly DF Inscription Knowledgepoint #3
+				["name"] = "DF Inscription Drop #1: Qalashi Djaradin",
 				["description"] = "Drops from any Qalashi Djaradin.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					186109,	-- Qalashi Necksnapper
@@ -5348,8 +5348,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 					{ 39.6, 51.4, THE_WAKING_SHORES },
 				},
 			}),
-			q(70519, {	-- Weekly Inscription Knowledgepoint #4
-				["name"] = "Inscription Drop #2: Dragon-kin/Proto Drakes",
+			q(70519, {	-- Weekly DF Inscription Knowledgepoint #4
+				["name"] = "DF Inscription Drop #2: Dragon-kin/Proto Drakes",
 				["description"] = "Drops from any Dragon-kin/Proto Drake.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					193973,	-- Mistyvale Splashcaster
@@ -5380,6 +5380,20 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		n(TREASURES, {
+			o(455982, {	-- Blue Earthen Pigment
+				["coord"] = { 62.4, 58.0, THE_RINGING_DEEPS },
+				["questID"] = 83885,
+				["g"] = {
+					i(226311),	-- Blue Earthen Pigment
+				},
+			}),
+			o(455980, {	-- Calligrapher's Chiseled Marker
+				["coord"] = { 42.8, 49.0, HALLOWFALL },
+				["questID"] = 83887,
+				["g"] = {
+					i(226313),	-- Calligrapher's Chiseled Marker
+				},
+			}),
 			o(455985, {	-- Dornogal Scribe's Quill
 				["coord"] = { 57.1, 46.98, DORNOGAL },
 				["questID"] = 83882,
@@ -5389,7 +5403,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 			o(455984, {	-- Historian's Dip Pen
 				["coord"] = { 55.9, 60.0, ISLE_OF_DORN },
-				["questID"] = 83886,
+				["questID"] = 83883,
 				["g"] = {
 					i(226309),	-- Historian's Dip Pen
 				},
@@ -5401,6 +5415,27 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 					i(226312),	-- Informant's Fountain Pen
 				},
 			}),
+			o(455979, {	-- Nerubian Texts
+				["coord"] = { 55.8, 43.9, AZJ_KAHET },
+				["questID"] = 83888,
+				["g"] = {
+					i(226314),	-- Nerubian Texts
+				},
+			}),
+			o(455983, {	-- Runic Scroll
+				["coord"] = { 48.5, 34.3, THE_RINGING_DEEPS },
+				["questID"] = 83884,
+				["g"] = {
+					i(226310),	-- Runic Scroll
+				},
+			}),
+			o(455978, {	-- Venomancer's Ink Well
+				["coord"] = { 50.1, 30.8, NERUBAR },
+				["questID"] = 83889,
+				["g"] = {
+					i(226315),	-- Venomancer's Ink Well
+				},
+			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
@@ -5408,8 +5443,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				currency(TWW_INSCRIPTION_KNOWLEDGE),
 			},
 		},{
-			q(83730, {	-- Inscription Order: Inscription
-				["name"] = "Inscription Order: Inscription",
+			q(83730, {	-- TWW Inscription Order: Inscription
+				["name"] = "TWW Inscription Order: Inscription",
 				["provider"] = { "i", 222548 },	-- Algari Treatise on Inscription
 			}),
 		})),

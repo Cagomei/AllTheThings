@@ -783,21 +783,21 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			},
 		},{
 			i(198609),	-- Tailoring Examples
-			q(74115, {	-- Inscription Order: Tailoring
-				["name"] = "Inscription Order: Tailoring",
+			q(74115, {	-- DF Inscription Order: Tailoring
+				["name"] = "DF Inscription Order: Tailoring",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194698 },	-- Draconic Treatise on Tailoring
 			}),
-			q(66386, {	-- Weekly Tailoring Knowledgepoint #1
-				["name"] = "Tailoring Treasure #1",
+			q(66386, {	-- Weekly DF Tailoring Knowledgepoint #1
+				["name"] = "DF Tailoring Treasure #1",
 				["provider"] = { "i", 193898 },	-- Umbral Bone Needle
 			}),
-			q(66387, {	-- Weekly Tailoring Knowledgepoint #2
-				["name"] = "Tailoring Treasure #2",
+			q(66387, {	-- Weekly DF Tailoring Knowledgepoint #2
+				["name"] = "DF Tailoring Treasure #2",
 				["provider"] = { "i", 193899 },	-- Primalweave Spindle
 			}),
-			q(70525, {	-- Weekly Tailoring Knowledgepoint #3
-				["name"] = "Tailoring Drop #1: Beast Humanoid",
+			q(70525, {	-- Weekly DF Tailoring Knowledgepoint #3
+				["name"] = "DF Tailoring Drop #1: Beast Humanoid",
 				["description"] = "Drops from any beastlike Humanoid.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					192500,	-- Fetid Slogger
@@ -809,8 +809,8 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 				["provider"] = { "i", 198978 },	-- Stupidly Effective Stitchery
 			}),
-			q(70524, {	-- Weekly Tailoring Knowledgepoint #4
-				["name"] = "Tailoring Drop #2: Ohn'ahran Humanoid",
+			q(70524, {	-- Weekly DF Tailoring Knowledgepoint #4
+				["name"] = "DF Tailoring Drop #2: Ohn'ahran Humanoid",
 				["description"] = "Drops from any Ohn'ahran Humanoid.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					193840,	-- Nokhud Raider
@@ -859,8 +859,8 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				currency(TWW_TAILORING_KNOWLEDGE),
 			},
 		},{
-			q(83735, {	-- Inscription Order: Tailoring
-				["name"] = "Inscription Order: Tailoring",
+			q(83735, {	-- TWW Inscription Order: Tailoring
+				["name"] = "TWW Inscription Order: Tailoring",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222547 },	-- Algari Treatise on Tailoring
 			}),
@@ -899,6 +899,13 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["questID"] = 83929,
 				["g"] = {
 					i(226355),	-- Nerubian's Pincushion
+				},
+			}),
+			o(45593, {	-- Nerubian Quilt
+				["coord"] = { 53.2, 53.1, AZJ_KAHET },
+				["questID"] = 83928,
+				["g"] = {
+					i(226354),	-- Nerubian Quilt
 				},
 			}),
 			o(455940, {	-- Royal Outfitter's Protractor

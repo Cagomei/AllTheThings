@@ -3,11 +3,6 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ZONE_REWARDS, {
-		i(229899),	-- Coffer Key Shard
-		currency(RESTORED_COFFER_KEY, {
-			["cost"] = {{"i", 229899, 100}},	-- 100x Coffer Key Shard
-		}),
-		i(227450),	-- Sky Racer's Purse
 		filter(BACK_F, {
 			i(224664),	-- Gem-Woven Cloak
 			i(224663),	-- Gem-Woven Shawl
@@ -101,8 +96,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				-- Alchemy
 				i(225234),	-- Alchemical Sediment
 				i(225235),	-- Deepstone Crucible
+				-- Blacksmithing
+				i(225232),	-- Coreway Billet
+				i(225233),	-- Dense Bladestone
 				-- Enchanting
+				i(227659),	-- Fleeting Arcane Manifestation
 				i(225231),	-- Powdered Fulgurance
+				-- Engineering
+				i(225229),	-- Earthen Induction Coil
+				i(225228),	-- Rust-Locked Mechanism
 				-- Leatherworking
 				i(225222),	-- Stone-Leather Swatch
 				i(225223),	-- Sturdy Nerubian Carapace

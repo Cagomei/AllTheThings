@@ -768,21 +768,21 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		},{
 			i(198612),	-- Jeweler's Cuts
-			q(74112, {	-- Inscription Order: Jewelcrafting
-				["name"] = "Inscription Order: Jewelcrafting",
+			q(74112, {	-- DF Inscription Order: Jewelcrafting
+				["name"] = "DF Inscription Order: Jewelcrafting",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
 			}),
-			q(66388, {	-- Weekly Jewelcrafting Knowledgepoint #1
-				["name"] = "Jewelcrafting Treasure #1",
+			q(66388, {	-- Weekly DF Jewelcrafting Knowledgepoint #1
+				["name"] = "DF Jewelcrafting Treasure #1",
 				["provider"] = { "i", 193909 },		-- Ancient Gem Fragments
 			}),
-			q(66389, {	-- Weekly Jewelcrafting Knowledgepoint #2
-				["name"] = "Jewelcrafting Treasure #2",
+			q(66389, {	-- Weekly DF Jewelcrafting Knowledgepoint #2
+				["name"] = "DF Jewelcrafting Treasure #2",
 				["provider"] = { "i", 193907 },		-- Chipped Tyrstone
 			}),
-			q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #3
-				["name"] = "Jewelcrafting Drop #1: Well Dressed",
+			q(70521, {	-- Weekly DF Jewelcrafting Knowledgepoint #3
+				["name"] = "DF Jewelcrafting Drop #1: Well Dressed",
 				["description"] = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					195215,	-- Rebel Bruiser
@@ -796,8 +796,8 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 					{ 45.8 ,58.2, THALDRASZUS },
 				},
 			}),
-			q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #4
-				["name"] = "Jewelcrafting Drop #2: Earth Elemental",
+			q(70520, {	-- Weekly DF Jewelcrafting Knowledgepoint #4
+				["name"] = "DF Jewelcrafting Drop #2: Earth Elemental",
 				["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					194212,	-- Unleashed Rubble
@@ -841,6 +841,13 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 		n(TREASURES, {
+			o(455973, {	-- Arathi Sizing Gauges
+				["coord"] = { 47.3, 60.6, HALLOWFALL },
+				["questID"] = 83894,
+				["g"] = {
+					i(226320),	-- Arathi Sizing Gauges
+				},
+			}),
 			o(455975, {	-- Carved Stone File
 				["coord"] = { 48.5, 35.2, THE_RINGING_DEEPS },
 				["questID"] = 83892,
@@ -853,6 +860,13 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["questID"] = 83891,
 				["g"] = {
 					i(226317),	-- Earthen Gem Pliers
+				},
+			}),
+			o(455977, {	-- Gentle Jewel Hammer
+				["coord"] = { 63.5, 66.8, ISLE_OF_DORN },
+				["questID"] = 83890,
+				["g"] = {
+					i(226316),	-- Gentle Jewel Hammer
 				},
 			}),
 			o(455974, {	-- Jeweler's Delicate Drill
@@ -869,6 +883,20 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 					i(226321),	-- Librarian's Magnifiers
 				},
 			}),
+			o(455970, {	-- Nerubian Bench Blocks
+				["coord"] = { 56.1, 58.6, AZJ_KAHET },
+				["questID"] = 83897,
+				["g"] = {
+					i(226323),	-- Nerubian Bench Blocks
+				},
+			}),
+			o(455971, {	-- Ritual Caster's Crystal
+				["coord"] = { 47.7, 19.4, NERUBAR },
+				["questID"] = 83896,
+				["g"] = {
+					i(226322),	-- Ritual Caster's Crystal
+				},
+			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
@@ -876,8 +904,8 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				currency(TWW_JEWELCRAFTING_KNOWLEDGE),
 			},
 		},{
-			q(83731, {	-- Inscription Order: Jewelcrafting
-				["name"] = "Inscription Order: Jewelcrafting",
+			q(83731, {	-- TWW Inscription Order: Jewelcrafting
+				["name"] = "TWW Inscription Order: Jewelcrafting",
 				["provider"] = { "i", 222551 },	-- Algari Treatise on Jewelcrafting
 			}),
 		})),

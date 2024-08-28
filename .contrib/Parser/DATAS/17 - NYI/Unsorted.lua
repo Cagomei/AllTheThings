@@ -40,7 +40,6 @@ root(ROOTS.Unsorted, {
 			n(PROFESSIONS, {
 				-- Profession Knowledge Notes
 				i(224817),	-- Algari Herbalist's Notes
-				i(224818),	-- Algari Miner's Notes
 
 				i(228774),	-- Algari Blacksmith's Journal
 				i(228775),	-- Algari Engineer's Notepad
@@ -582,32 +581,8 @@ root(ROOTS.Unsorted, {
 				i(225225),	-- Deepstone Fragment
 				i(225226),	-- Striated Inkstone
 				i(225227),	-- Wax-Sealed Records
-				i(225228),	-- Rust-Locked Mechanism
-				i(225229),	-- Earthen Induction Coil
 				i(225230),	-- Crystalline Repository
-				i(225232),	-- Coreway Billet
-				i(225233),	-- Dense Bladestone
-				i(226279),	-- Earthen Chisels
-				i(226280),	-- Holy Flame Forge
-				i(226281),	-- Radiant Tongs
-				i(226282),	-- Nerubian Smith's Kit
-				i(226283),	-- Spiderling's Wire Brush
-				i(226308),	-- Dornogal Scribe's Quill
-				i(226309),	-- Historian's Dip Pen
-				i(226310),	-- Runic Scroll
-				i(226311),	-- Blue Earthen Pigment
-				i(226313),	-- Calligrapher's Chiseled Marker
-				i(226314),	-- Nerubian Texts
-				i(226315),	-- Venomancer's Ink Well
-				i(226316),	-- Gentle Jewel Hammer
-				i(226320),	-- Arathi Sizing Gauges
-				i(226322),	-- Ritual Caster's Crystal
-				i(226323),	-- Nerubian Bench Blocks
-				i(226346),	-- Nerubian's Slicking Iron
-				i(226354),	-- Nerubian Quilt
-				i(226355),	-- Nerubian's Pincushion
 				i(224780),	-- Toughened Tempest Pelt
-				i(227659),	-- Fleeting Arcane Manifestation
 				i(227661),	-- Gleaming Telluric Crystal
 				i(227662),	-- Shimmering Dust
 				i(227667),	-- Algari Enchanter's Folio
@@ -1601,7 +1576,6 @@ root(ROOTS.Unsorted, {
 			n(RARES, {
 				i(221066),	-- Template - Accessory - Finger
 				i(221093),	-- Deeply Corrupted Coil
-				i(221231),	-- Steam-Powered Wristwatch
 				i(221232),	-- Polished Goblin Bling
 				i(221237),	-- Lamentable Vagrant's Lantern
 				i(221238),	-- Pillar of Constructs
@@ -1630,13 +1604,11 @@ root(ROOTS.Unsorted, {
 			n(REWARDS, {
 				i(223438),	-- Algari Warden's Vestment
 				i(223444),	-- Arathi Defender's Breeches
-				i(223450),	-- Honored Soldier's Chainmail
 				i(223443),	-- Algari Warden's Hood
 				i(223454),	-- Algari Warden's Greaves
 				i(223458),	-- [PH] 11.0 - Belt
 				i(223461),	-- Algari Warden's Helm
 				i(223472),	-- Drape of the Lamplighter
-				i(223548),	-- Algari Rifle
 				i(223585),	-- Algari Bladefist
 				i(223588),	-- Algari Fighting Knife
 				i(228436),	-- United Arathi's Jerkin

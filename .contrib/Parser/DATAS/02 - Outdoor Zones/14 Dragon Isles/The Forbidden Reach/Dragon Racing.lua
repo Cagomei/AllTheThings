@@ -482,6 +482,46 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					i(207776),	-- Grotto Netherwing Drake: Black Scales (DM!)
 				},
 			})),
+			n(WORLD_QUESTS, {
+				i(204359,	-- Reach Racer's Purse
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+					i(197002),	-- Cliffside Wylderdrake: Flared Cheek (DM!)
+					i(197124),	-- Highland Drake: Swept Horns (DM!)
+					i(202274),	-- Renewed Proto-Drake: Plated Brow (DM!)
+					i(197594),	-- Windborne Velocidrake: Small Ears (DM!)
+				})),
+			}),
+			n(WORLD_QUESTS, sharedData({
+				["sourceQuests"] = {
+					71232,	-- Renown of the Dragon Isles
+					DF_ACCOUNT_CAMPAIGN_QUEST,
+				},
+				["sourceQuestNumRequired"] = 1,
+				["maxReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
+				["isWorldQuest"] = true,
+				["timeline"] = { ADDED_10_0_7 },
+				["sym"] = {{"select","itemID",204359}},	-- Reach Racer's Purse
+				}, {
+				------ The Forbidden Reach ------
+				q(73080, {	-- Dragonrider Racing - Aerie Chasm Cruise
+					["coord"] = { 63.3, 51.8, THE_FORBIDDEN_REACH },
+				}),
+				q(73083, {	-- Dragonrider Racing - Caldera Climb
+					["coord"] = { 41.2, 14.3, THE_FORBIDDEN_REACH },
+				}),
+				q(73084, {	-- Dragonrider Racing - Forbidden Reach Rush
+					["coord"] = { 66.9, 5.6, THE_FORBIDDEN_REACH },
+				}),
+				q(73079, {	-- Dragonrider Racing - Morqut Ascent
+					["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
+				}),
+				q(73082, {	-- Dragonrider Racing - Southern Reach Route
+					["coord"] = { 63.5, 83.6, THE_FORBIDDEN_REACH },
+				}),
+				q(73078, {	-- Dragonrider Racing - Stormsunder Crater Circuit
+					["coord"] = { 76.3, 65.7, THE_FORBIDDEN_REACH },
+				}),
+			})),
 		}),
 	}),
 })));
