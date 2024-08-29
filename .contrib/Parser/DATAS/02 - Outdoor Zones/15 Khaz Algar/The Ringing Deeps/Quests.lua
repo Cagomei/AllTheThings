@@ -927,7 +927,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
 					["g"] = {
 						i(220162),	-- [PH] Toy, Pipe Toy (TOY!) (TODO: but not really, atm)
-						--c(2902),	-- The Assembly of the Deeps Commendation, one-time Warband bonus
+						--currency(2902),	-- The Assembly of the Deeps Commendation, one-time Warband bonus
 					},
 				}),
 			}),
@@ -1347,6 +1347,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(81926),	-- Choosing Pokey Bits
 			-- ?
 			q(82991),	-- Talking to Ferno (225018) inside Camp Murrock, When bind hearthstone location to Camp Murroch tavern
+			q(82116),	-- First option selected with ZZ-01-47 during 79023 'Small Friend, Big Plans' (2nd/3rd options have no HQT)
 		}),
 	}),
 })));

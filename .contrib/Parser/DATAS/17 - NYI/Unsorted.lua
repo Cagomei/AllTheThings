@@ -136,7 +136,6 @@ root(ROOTS.Unsorted, {
 			i(229115),	-- Flamestonge's Coif
 			i(229116),	-- Flamestonge's Greaves
 			i(229117),	-- Flamestonge's Shoulderguards
-			i(229118),	-- Flamestonge's Belt
 			i(229119),	-- Flamestonge's Bracers
 			i(229120),	-- Warstone's Breastplate
 			i(229121),	-- Warstone's Sabatons
@@ -584,7 +583,6 @@ root(ROOTS.Unsorted, {
 				i(225227),	-- Wax-Sealed Records
 				i(224780),	-- Toughened Tempest Pelt
 				i(227662),	-- Shimmering Dust
-				i(227667),	-- Algari Enchanter's Folio
 			}),
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
 				--
@@ -1122,7 +1120,6 @@ root(ROOTS.Unsorted, {
 				i(220157),	-- Empowered Tinderbox
 				i(220158),	-- Darkened Tinderbox
 				-- Armor Generator
-				i(225648),	-- Candle Confidant
 				i(225656),	-- Goldenglow Censer
 				i(225661),	-- Burning Binding
 				i(226137),	-- Inquisitive Sister's Cinch
@@ -1449,9 +1446,7 @@ root(ROOTS.Unsorted, {
 				i(224252),	-- Calcified Journal
 				i(224457),	-- Lil Piggy
 				i(224460),	-- The Lost Diary
-				i(224462),	-- The Ear
 				i(224463),	-- Lily's Locket
-				i(224465),	-- Unusual Potato
 				i(224466),	-- Wilber The Chicken \\ The Chicken
 				i(224486),	-- Uncle's Eye
 				i(224545),	-- Plowhead

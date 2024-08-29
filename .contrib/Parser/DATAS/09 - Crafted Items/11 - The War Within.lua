@@ -321,7 +321,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = BLACKSMITHING,
-			},{
+		},{
 			-- Smelting
 			FirstCraft(80492, 450216);	-- Core Alloy
 			FirstCraft(80595, 450217);	-- Charged Alloy
@@ -1153,87 +1153,87 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENGINEERING,
-			},{
-				-- Miscellaneous
-				FirstCraft(81357, 447367),	-- Algari Repair Bot 11O Projector
-				FirstCraft(81353, 447358),	-- Blame Redirection Device
-				FirstCraft(81354, 447374),	-- Box o' Booms
-				FirstCraft(81339, 447360),	-- Complicated Fuse Box
-				FirstCraft(81363, 447362),	-- Concealed Chaos Module
-				FirstCraft(81355, 447366),	-- Convincingly Realistic Jumper Cables
-				FirstCraft(81333, 447363),	-- Energy Redistribution Beacon
-				FirstCraft(81331, 447312),	-- Invent
-				FirstCraft(81332, 447364),	-- Irresistible Red Button
-				FirstCraft(81356, 447365),	-- Pausing Pylon
-				FirstCraft(81340, 447344),	-- Potion Bomb of Power
-				FirstCraft(81301, 447343),	-- Potion Bomb of Recovery
-				FirstCraft(81347, 447342),	-- Potion Bomb of Speed
-				FirstCraft(81349, 447361),	-- Pouch of Pocket Grenades
-				FirstCraft(81346, 447357),	-- Recalibrated Safety Switch
-				FirstCraft(81351, 447368),	-- Portable Profession Possibility
-				FirstCraft(81352, 447350),	-- Tinker: Earthen Delivery Drill
-				FirstCraft(81350, 447351),	-- Tinker: Heartseeking Health Injector
-				-- Reagents
-				FirstCraft(84019, 459299),	-- Bottled Brilliance
-				FirstCraft(81329, 447340),	-- Chaos Circuit
-				FirstCraft(81330, 447341),	-- Entropy Enhancer
-				FirstCraft(81327, 447338),	-- Gyrating Gear
-				FirstCraft(81325, 447336),	-- Handful of Bismuth Bolts
-				FirstCraft(81328, 447339),	-- Safety Switch
-				FirstCraft(81326, 447337),	-- Whimsical Wiring
-				-- Toys
-				FirstCraft(81382, 447369),	-- Barrel of Fireworks
-				FirstCraft(81358, 447370),	-- Defective Escape Pod
-				FirstCraft(81359, 447371),	-- Filmless Camera
-				FirstCraft(81298, 443570),	-- Stonebound Lantern
-				FirstCraft(81360, 447372),	-- Wormhole Generator: Khaz Algar
-				-- Mounts
-				FirstCraft(81361, 447373),	-- Crowd Pummeler 2-30
-				-- Cogwheels
-				FirstCraft(81345, 447356),	-- Adjustable Cogwheel
-				FirstCraft(81344, 447355),	-- Impeccable Cogwheel
-				FirstCraft(81343, 447354),	-- Overclocked Cogwheel
-				FirstCraft(81342, 447353),	-- Serrated Cogwheel
-				-- Armor
-				FirstCraft(81364, 447375),	-- Acolyte's Goggles
-				FirstCraft(81294, 438926),	-- Algari Competitor's Cloth Bracers
-				FirstCraft(81290, 438922),	-- Algari Competitor's Cloth Goggles
-				FirstCraft(81295, 438927),	-- Algari Competitor's Leather Bracers
-				FirstCraft(81291, 438923),	-- Algari Competitor's Leather Goggles
-				FirstCraft(81296, 438928),	-- Algari Competitor's Mail Bracers
-				FirstCraft(81292, 438924),	-- Algari Competitor's Mail Goggles
-				FirstCraft(81297, 438929),	-- Algari Competitor's Plate Bracers
-				FirstCraft(81293, 438925),	-- Algari Competitor's Plate Goggles
-				FirstCraft(81307, 447318),	-- Blasting Bracers
-				FirstCraft(81310, 447321),	-- Clanking Cuffs
-				FirstCraft(81306, 447317),	-- Dangerous Distraction Inhibitor
-				FirstCraft(81387, 447378),	-- Dredger's Goggles
-				FirstCraft(81304, 447315),	-- Overclocked Idea Generator
-				FirstCraft(81365, 447376),	-- Spelunker's Goggles
-				FirstCraft(81303, 447314),	-- Studious Brilliance Expeditor
-				FirstCraft(81305, 447316),	-- Supercharged Thought Enhancer
-				FirstCraft(81366, 447377),	-- Tracker's Goggles
-				FirstCraft(81308, 447319),	-- Venting Vambraces
-				FirstCraft(81309, 447320),	-- Whirring Wristwraps
-				-- Weapons
-				FirstCraft(81388, 447379),	-- 4UT0-41M3R
-				FirstCraft(81386, 455005),	-- Algari Competitor's Rifle
-				FirstCraft(81341, 447352),	-- P.0.W. x2
-				-- Profession Equipment
-				FirstCraft(81314, 447325),	-- Aqirite Brainwave Projector
-				FirstCraft(81316, 447327),	-- Aqirite Fisherfriend
-				FirstCraft(81322, 447333),	-- Aqirite Fueled Samophlange
-				FirstCraft(81320, 447331),	-- Aqirite Miner's Headgear
-				FirstCraft(81313, 447324),	-- Bismuth Brainwave Projector
-				FirstCraft(81315, 447324),	-- Bismuth Fisherfriend
-				FirstCraft(81321, 447332),	-- Bismuth Fueled Samophlange
-				FirstCraft(81319, 447330),	-- Bismuth Miner's Headgear
-				FirstCraft(81318, 447329),	-- Lapidary's Aqirite Clamps
-				FirstCraft(81317, 447328),	-- Lapidary's Bismuth Clamps
-				FirstCraft(81324, 447335),	-- Miner's Aqirite Hoard
-				FirstCraft(81323, 447334),	-- Miner's Bismuth Hoard
-				FirstCraft(81312, 447323),	-- Spring-Loaded Aqirite Fabric Cutters
-				FirstCraft(81311, 447322),	-- Spring-Loaded Bismuth Fabric Cutters
+		},{
+			-- Miscellaneous
+			FirstCraft(81357, 447367),	-- Algari Repair Bot 11O Projector
+			FirstCraft(81353, 447358),	-- Blame Redirection Device
+			FirstCraft(81354, 447374),	-- Box o' Booms
+			FirstCraft(81339, 447360),	-- Complicated Fuse Box
+			FirstCraft(81363, 447362),	-- Concealed Chaos Module
+			FirstCraft(81355, 447366),	-- Convincingly Realistic Jumper Cables
+			FirstCraft(81333, 447363),	-- Energy Redistribution Beacon
+			FirstCraft(81331, 447312),	-- Invent
+			FirstCraft(81332, 447364),	-- Irresistible Red Button
+			FirstCraft(81356, 447365),	-- Pausing Pylon
+			FirstCraft(81340, 447344),	-- Potion Bomb of Power
+			FirstCraft(81301, 447343),	-- Potion Bomb of Recovery
+			FirstCraft(81347, 447342),	-- Potion Bomb of Speed
+			FirstCraft(81349, 447361),	-- Pouch of Pocket Grenades
+			FirstCraft(81346, 447357),	-- Recalibrated Safety Switch
+			FirstCraft(81351, 447368),	-- Portable Profession Possibility
+			FirstCraft(81352, 447350),	-- Tinker: Earthen Delivery Drill
+			FirstCraft(81350, 447351),	-- Tinker: Heartseeking Health Injector
+			-- Reagents
+			FirstCraft(84019, 459299),	-- Bottled Brilliance
+			FirstCraft(81329, 447340),	-- Chaos Circuit
+			FirstCraft(81330, 447341),	-- Entropy Enhancer
+			FirstCraft(81327, 447338),	-- Gyrating Gear
+			FirstCraft(81325, 447336),	-- Handful of Bismuth Bolts
+			FirstCraft(81328, 447339),	-- Safety Switch
+			FirstCraft(81326, 447337),	-- Whimsical Wiring
+			-- Toys
+			FirstCraft(81382, 447369),	-- Barrel of Fireworks
+			FirstCraft(81358, 447370),	-- Defective Escape Pod
+			FirstCraft(81359, 447371),	-- Filmless Camera
+			FirstCraft(81298, 443570),	-- Stonebound Lantern
+			FirstCraft(81360, 447372),	-- Wormhole Generator: Khaz Algar
+			-- Mounts
+			FirstCraft(81361, 447373),	-- Crowd Pummeler 2-30
+			-- Cogwheels
+			FirstCraft(81345, 447356),	-- Adjustable Cogwheel
+			FirstCraft(81344, 447355),	-- Impeccable Cogwheel
+			FirstCraft(81343, 447354),	-- Overclocked Cogwheel
+			FirstCraft(81342, 447353),	-- Serrated Cogwheel
+			-- Armor
+			FirstCraft(81364, 447375),	-- Acolyte's Goggles
+			FirstCraft(81294, 438926),	-- Algari Competitor's Cloth Bracers
+			FirstCraft(81290, 438922),	-- Algari Competitor's Cloth Goggles
+			FirstCraft(81295, 438927),	-- Algari Competitor's Leather Bracers
+			FirstCraft(81291, 438923),	-- Algari Competitor's Leather Goggles
+			FirstCraft(81296, 438928),	-- Algari Competitor's Mail Bracers
+			FirstCraft(81292, 438924),	-- Algari Competitor's Mail Goggles
+			FirstCraft(81297, 438929),	-- Algari Competitor's Plate Bracers
+			FirstCraft(81293, 438925),	-- Algari Competitor's Plate Goggles
+			FirstCraft(81307, 447318),	-- Blasting Bracers
+			FirstCraft(81310, 447321),	-- Clanking Cuffs
+			FirstCraft(81306, 447317),	-- Dangerous Distraction Inhibitor
+			FirstCraft(81387, 447378),	-- Dredger's Goggles
+			FirstCraft(81304, 447315),	-- Overclocked Idea Generator
+			FirstCraft(81365, 447376),	-- Spelunker's Goggles
+			FirstCraft(81303, 447314),	-- Studious Brilliance Expeditor
+			FirstCraft(81305, 447316),	-- Supercharged Thought Enhancer
+			FirstCraft(81366, 447377),	-- Tracker's Goggles
+			FirstCraft(81308, 447319),	-- Venting Vambraces
+			FirstCraft(81309, 447320),	-- Whirring Wristwraps
+			-- Weapons
+			FirstCraft(81388, 447379),	-- 4UT0-41M3R
+			FirstCraft(81386, 455005),	-- Algari Competitor's Rifle
+			FirstCraft(81341, 447352),	-- P.0.W. x2
+			-- Profession Equipment
+			FirstCraft(81314, 447325),	-- Aqirite Brainwave Projector
+			FirstCraft(81316, 447327),	-- Aqirite Fisherfriend
+			FirstCraft(81322, 447333),	-- Aqirite Fueled Samophlange
+			FirstCraft(81320, 447331),	-- Aqirite Miner's Headgear
+			FirstCraft(81313, 447324),	-- Bismuth Brainwave Projector
+			FirstCraft(81315, 447324),	-- Bismuth Fisherfriend
+			FirstCraft(81321, 447332),	-- Bismuth Fueled Samophlange
+			FirstCraft(81319, 447330),	-- Bismuth Miner's Headgear
+			FirstCraft(81318, 447329),	-- Lapidary's Aqirite Clamps
+			FirstCraft(81317, 447328),	-- Lapidary's Bismuth Clamps
+			FirstCraft(81324, 447335),	-- Miner's Aqirite Hoard
+			FirstCraft(81323, 447334),	-- Miner's Bismuth Hoard
+			FirstCraft(81312, 447323),	-- Spring-Loaded Aqirite Fabric Cutters
+			FirstCraft(81311, 447322),	-- Spring-Loaded Bismuth Fabric Cutters
 		})),
 		filter(GEMS, {
 			i(221904),	-- Tinker: Earthen Delivery Drill+
@@ -1486,14 +1486,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		},{
 			-- Arathor's Spear
 			FirstCraft(79933, 435826);	-- Arathor's Spear
-			--FirstCraft(XXXXX, 435879);	-- Camouflaged Arathor's Spear
+			FirstCraft(79937, 435879);	-- Camouflaged Arathor's Spear
 			FirstCraft(79935, 435877);	-- Crystallized Arathor's Spear
 			FirstCraft(79936, 435878);	-- Irradiated Arathor's Spear
 			FirstCraft(79934, 435836);	-- Lush Arathor's Spear
 			FirstCraft(79938, 435880);	-- Sporefused Arathor's Spear
 			-- Blessing Blossom
 			FirstCraft(79927, 435823);	-- Blessing Blossom
-			--FirstCraft(XXXXX, 435872);	-- Camouflaged Blessing Blossom
+			FirstCraft(79931, 435872);	-- Camouflaged Blessing Blossom
 			FirstCraft(79929, 435870);	-- Crystallized Blessing Blossom
 			FirstCraft(79930, 435871);	-- Irradiated Blessing Blossom
 			FirstCraft(79928, 435834);	-- Lush Blessing Blossom
@@ -1501,7 +1501,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Luredrop
 			FirstCraft(79913, 435821);	-- Luredrop
 			FirstCraft(79916, 435858);	-- Altered Luredrop
-			--FirstCraft(XXXXX, 435860);	-- Camouflaged Luredrop
+			FirstCraft(79918, 435860);	-- Camouflaged Luredrop
 			FirstCraft(79915, 435857);	-- Crystallized Luredrop
 			FirstCraft(79917, 435859);	-- Irradiated Luredrop
 			FirstCraft(79914, 435829);	-- Lush Luredrop
@@ -1509,7 +1509,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Mycobloom
 			FirstCraft(79906, 435811);	-- Mycobloom
 			FirstCraft(79909, 435840);	-- Altered Mycobloom
-			--FirstCraft(XXXXX, 435851);	-- Camouflaged Mycobloom
+			FirstCraft(79911, 435851);	-- Camouflaged Mycobloom
 			FirstCraft(79908, 435838);	-- Crystallized Mycobloom
 			FirstCraft(79910, 435843);	-- Irradiated Mycobloom
 			FirstCraft(79907, 435812);	-- Lush Mycobloom
@@ -1517,7 +1517,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Orbinid
 			FirstCraft(79920, 435822);	-- Orbinid
 			FirstCraft(79923, 435864);	-- Altered Orbinid
-			--FirstCraft(XXXXX, 435866);	-- Camouflaged Orbinid
+			FirstCraft(79925, 435866);	-- Camouflaged Orbinid
 			FirstCraft(79922, 435862);	-- Crystallized Orbinid
 			FirstCraft(79924, 435865);	-- Irradiated Orbinid
 			FirstCraft(79921, 435830);	-- Lush Orbinid
@@ -2128,6 +2128,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = LEATHERWORKING,
+		},{
 			-- Arathorian Patterns
 			FirstCraft(80922, 441460);	-- Blessed Weapon Grip
 			FirstCraft(80927, 444073);	-- Sanctified Torchbearer's Grips
@@ -2226,7 +2227,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80948, 444078);	-- Sporecoated Hide
 			FirstCraft(80951, 444087);	-- Storm-Touched Weapon Wrap
 			FirstCraft(80947, 444077);	-- Writhing Hide
-		},{
 		})),
 		filter(MISC, {
 			i(219495),	-- Blessed Weapon Grip+
@@ -2344,9 +2344,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = MINING,
 		},{
 			-- Aqirite
-			--FirstCraft(XXXXX, 439707);	-- Aqirite
+			--FirstCraft(XXXXX, 439707);	-- Aqirite //??how do we not have this yet?
 			FirstCraft(80357, 439713);	-- Aqirite Seam
-			--FirstCraft(XXXXX, 439725);	-- Camouflaged Aqirite
+			FirstCraft(80369, 439725);	-- Camouflaged Aqirite
 			FirstCraft(80360, 439716);	-- Crystallized Aqirite
 			FirstCraft(80366, 439722);	-- EZ-Mine Aqirite
 			FirstCraft(80354, 439710);	-- Rich Aqirite
@@ -2355,7 +2355,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Bismuth
 			FirstCraft(80350, 439705);	-- Bismuth
 			FirstCraft(80356, 439712);	-- Bismuth Seam
-			--FirstCraft(XXXXX, 439724);	-- Camouflaged Bismuth
+			FirstCraft(80368, 439724);	-- Camouflaged Bismuth
 			FirstCraft(80359, 439715);	-- Crystallized Bismuth
 			FirstCraft(80365, 439721);	-- EZ-Mine Bismuth
 			FirstCraft(80353, 439709);	-- Rich Bismuth
@@ -2364,7 +2364,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Ironclaw
 			FirstCraft(80352, 439708);	-- Ironclaw
 			FirstCraft(80358, 439714);	-- Ironclaw Seam
-			--FirstCraft(XXXXX, 439726);	-- Camouflaged Ironclaw
+			FirstCraft(80370, 439726);	-- Camouflaged Ironclaw
 			FirstCraft(80361, 439717);	-- Crystallized Ironclaw
 			FirstCraft(80367, 439723);	-- EZ-Mine Ironclaw
 			FirstCraft(80355, 439711);	-- Rich Ironclaw
@@ -2587,6 +2587,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 438890);	-- Algari Competitor's Cloth Shoulderpads
 			--FirstCraft(XXXXX, 438891);	-- Algari Competitor's Cloth Treads
 			--FirstCraft(XXXXX, 438895);	-- Algari Competitor's Cloth Tunic
+			FirstCraft(80869, 456706);	-- Algari Weaverline
 			--FirstCraft(XXXXX, 446973);	-- Artisan Alchemist's Robe
 			--FirstCraft(XXXXX, 446974);	-- Artisan Chef's Hat
 			--FirstCraft(XXXXX, 446972);	-- Artisan Enchanter's Hat
@@ -2648,7 +2649,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80830, 446966);	-- Weavercloth Enchanter's Hat
 			--FirstCraft(XXXXX, 446965);	-- Weavercloth Fishing Cap
 			--FirstCraft(XXXXX, 446964);	-- Weavercloth Gardening Hat
-			--FirstCraft(XXXXX, 446978);	-- Weavercloth Reagent Bag
+			FirstCraft(80842, 446978);	-- Weavercloth Reagent Bag
 			--FirstCraft(XXXXX, 446999);	-- Weavercloth Spellthread
 			FirstCraft(80831, 446967);	-- Weavercloth Tailor's Coat
 			--FirstCraft(XXXXX, 446997);	-- Weavercloth Embroidery Thread
