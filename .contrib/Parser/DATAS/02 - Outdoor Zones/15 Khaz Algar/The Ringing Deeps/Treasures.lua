@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(433774, {	-- Buried Treasure
-				["coord"] = { 50.7, 52.5, THE_RINGING_DEEPS },
+				["coord"] = { 50.7, 52.45, THE_RINGING_DEEPS },
 				["questID"] = 80489,
 				["g"] = {
 					i(217969),	-- Bomb Debris (gray)
@@ -27,10 +27,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(433776, {	-- Buried Treasure
-				["coord"] = { 50.4, 52.8, THE_RINGING_DEEPS },
+				["coord"] = { 50.37, 52.84, THE_RINGING_DEEPS },
 				["questID"] = 80490,
 				["g"] = {
 					i(217962),	-- Dud Bomb (gray)
+				},
+			}),
+			o(433778, {	-- Buried Treasure, has no questID
+				["coord"] = { 50.3, 53.3, THE_RINGING_DEEPS },
+				["g"] = {
+					i(217960),	-- Forgotten Key
 				},
 			}),
 			-- Repeatable
@@ -100,8 +106,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Key to this chest can be found in nearest Buried Treasure",
 				["coord"] = { 50.5, 53.5, THE_RINGING_DEEPS },
 				["questID"] = 80485,
+				["cost"] = {
+					{"i", 217960, 1},	-- Forgotten Key
+				},
 				["g"] = {
-					i(217960),	-- Forgotten Key (TODO: Find ObjectID for This Chest)
 					i(224783),	-- Sovereign's Finery Chest (TOY!)
 				},
 			}),

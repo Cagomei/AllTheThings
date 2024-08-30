@@ -39,15 +39,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(PROFESSIONS, {
 				-- Profession Knowledge Notes
-				i(224817),	-- Algari Herbalist's Notes
-
-				i(228774),	-- Algari Blacksmith's Journal
-				i(228775),	-- Algari Engineer's Notepad
-				i(228776),	-- Algari Scribe's Journal
-				i(228777),	-- Algari Jewelcrafter's Notebook
-				i(228778),	-- Algari Leatherworker's Journal
-				i(228779),	-- Algari Tailor's Notebook
-
 				-- I wonder if this has to do with Crafting Orders..
 					-- YES... Crafting Orders "Patron" rewards these
 					-- BRAGHE!
@@ -100,7 +91,6 @@ root(ROOTS.Unsorted, {
 			i(229070),	-- Azra's Spare Striders
 			i(229071),	-- Azra's Spare Gloves
 			i(229072),	-- Azra's Spare Mask
-			i(229073),	-- Azra's Spare Trousers
 			i(229074),	-- Azra's Spare Cord
 			i(229075),	-- Azra's Spare Bracers
 			i(229076),	-- Azra's Spare Chestguard
@@ -160,7 +150,6 @@ root(ROOTS.Unsorted, {
 			i(229142),	-- Lamplighter Elite's Staff
 			i(229143),	-- Lamplighter Elite's Spellstaff
 			i(229144),	-- Lamplighter Elite's Lightstone
-			i(229145),	-- Lamplighter Elite's Shield
 			i(229146),	-- Lamplighter Elite's Glaive
 			i(229147),	-- Lamplighter's Polearm
 			i(229148),	-- Lamplighter's Staff
@@ -214,7 +203,6 @@ root(ROOTS.Unsorted, {
 				i(222969),	-- Anub'Rekyute (PET!)
 				i(221851),	-- Argos (PET!)
 				i(221764),	-- Burntram (PET!)
-				i(226104),	-- Claudius (PET!) [Trading Post?]
 				i(222979),	-- Clay Stonecharger (PET!)
 				i(221762),	-- Frenzied Bloodtick (PET!)
 				i(222970),	-- Fuzzy (PET!)
@@ -237,8 +225,6 @@ root(ROOTS.Unsorted, {
 			filter(MOUNTS, {
 				i(223570),	-- Ebonhide Ramolith (MOUNT!)
 				i(226506),	-- Hand of Reshkigaal (MOUNT!) [Trading Post?]
-				i(226041),	-- Keg Leg's Radiant Crocolisk (MOUNT!) [Trading Post?]
-				i(226040),	-- Plunderlord's Golden Crocolisk (MOUNT!) [Trading Post?]
 				i(226042),	-- Plunderlord's Midnight Crocolisk (MOUNT!) [Trading Post?]
 				i(226044),	-- Plunderlord's Weathered Crocolisk (MOUNT!) [Trading Post?]
 				i(223572),	-- Slatestone Ramolith (MOUNT!)
@@ -285,7 +271,6 @@ root(ROOTS.Unsorted, {
 				i(224416),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 			}),
 			n(PROFESSIONS, {
-				i(221757),	-- Gloomfathom Hide
 				i(221763),	-- Viridian Charmcap
 				i(211494),	-- Spark of Beginnings
 
@@ -573,10 +558,8 @@ root(ROOTS.Unsorted, {
 					r(447000),	-- Sunset Spellthread
 				}),
 				--- Notes
-				i(224807),	-- Algari Skinner's Notes
 				-- Prof Knowledge
 				i(224782),	-- Razor Talon
-				i(225220),	-- Chitin Needle
 				i(225224),	-- Diaphanous Gem Shards
 				i(225225),	-- Deepstone Fragment
 				i(225226),	-- Striated Inkstone
@@ -719,36 +702,10 @@ root(ROOTS.Unsorted, {
 				i(225752),	-- Dornogal Defender
 				i(225757),	-- Coreway Pickaxe
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
-				i(225974),	-- Swabbie's Cap \\ Teal Beanie
-				i(225975),	-- Alchemist's Bandolier
-				i(225976),	-- Fine Gloves of the Forest
-				i(225977),	-- Classic Camo Tabard
-				i(225978),	-- Fel-Glade Warglaive \\ Emerald Warglaive
-				i(225979),	-- Jade Blade of the Forbade
-				i(225980),	-- High-Grade Blade of the Forbade
-				i(225982),	-- Plunderlord's Radiant Sigil \\ Plunderlord's Radiant Gilded Sigil
-				i(225983),	-- Plunderlord's Radiant Hand Cannon
-				i(225990),	-- Plunderlord's Radiant Cutlass
-				i(225991),	-- Plunderlord's Radiant Rapier
-				i(225992),	-- Plunderlord's Radiant Neck-Severer
-				i(225993),	-- Cursed Copper Crossbow
-				i(225994),	-- Simple Copper Staff
 				i(225997),	-- Earthen Adventurer's Spaulders
 				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
-				i(226006),	-- Plunderlord's Radiant Drapery
-				i(226007),	-- Plunderlord's Radiant Muckscrapers
-				i(226008),	-- Plunderlord's Radiant Pilferers
-				i(226009),	-- Plunderlord's Radiant Tricorne of Admiralty
-				i(226010),	-- Plunderlord's Radiant Trousers
-				i(226011),	-- Plunderlord's Radiant Waistcoat
-				i(226012),	-- Plunderlord's Radiant Tasseled Spaulders \\ Plunderlord's Radiant Tassled Spaulders
-				i(226013),	-- Plunderlord's Radiant Cinch
-				i(226014),	-- Plunderlord's Radiant Cuffs
 				i(226016),	-- Darkened Tabard of the Arathi
-				i(226017),	-- Ensemble: Plunderlord's Radiant Finery
 				i(226019),	-- Darkened Arathi Shoulderguards
-				i(226105),	-- Emerald Scale Treads \\ Jade Scale Treads
-				i(226106),	-- Amber Scale Treads
 				i(226160),	-- Hillhelm Farmhand's Hoe
 				i(226161),	-- Hillhelm Farmhand's Watering Can
 				i(226363),	-- Earthen Backpack
@@ -1166,7 +1123,6 @@ root(ROOTS.Unsorted, {
 				i(215360),	-- Personalized Setting
 				i(215448),	-- Darkstem Stew \\ Darkstem Brew
 				i(215466),	-- Sanctified Supplies
-				i(216528),	-- Faded Supply Chest Key
 				i(216603),	-- Boots of the Light
 				i(216982),	-- Spy List
 				i(217040),	-- Kobold Earwax
@@ -1283,7 +1239,6 @@ root(ROOTS.Unsorted, {
 				i(225834),	-- Pilfered Matchbook
 				i(225835),	-- Battered Lantern
 				i(225841),	-- Ever-Frozen Ice
-				i(225843),	-- Ancient Bronze Hourglass
 				i(225844),	-- Damaged Radial Cog
 				i(225846),	-- Fractured Command Matrix
 				i(225847),	-- Inoperable Keystone
@@ -1443,7 +1398,7 @@ root(ROOTS.Unsorted, {
 				i(224180),	-- Worn Journal
 				i(224182),	-- Webbed Ingots
 				i(224252),	-- Calcified Journal
-				i(224457),	-- Lil Piggy
+				
 				i(224460),	-- The Lost Diary
 				i(224463),	-- Lily's Locket
 				i(224466),	-- Wilber The Chicken \\ The Chicken

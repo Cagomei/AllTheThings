@@ -1824,6 +1824,7 @@ i(225419);	-- Green Hills of Stranglethorn - Page 27
 -- PATCH 11.0.2 --
 ------------------
 i(220287);	-- Acid-Filled Sack
+i(225843);	-- Ancient Bronze Hourglass
 i(228398);	-- Angry Rock
 i(217170);	-- Backup Candles
 i(220290);	-- Barbed Pincers
@@ -1886,6 +1887,7 @@ i(228487);	-- Freshly Fallen Sticks
 i(225677);	-- Gleaming Chaos
 i(225811);	-- Gleaming Deep-Pearl
 i(225831);	-- Glittering Rock
+i(221757);	-- Gloomfathom Hide
 i(220259);	-- Gob of Mucus
 i(220509);	-- Gossamer Web
 i(225790);	-- Half-Painted Pewter Spider
