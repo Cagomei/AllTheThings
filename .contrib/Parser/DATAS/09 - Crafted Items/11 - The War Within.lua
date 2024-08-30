@@ -1454,9 +1454,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			r(435857),	-- Crystallized Luredrop
 			r(435838),	-- Crystallized Mycobloom
 			r(435862),	-- Crystallized Orbinid
-			r(442990),	-- Empowered Mulch
 			r(439871),	-- Green Thumb
-			r(442989),	-- Imbued Mulch
 			r(435878),	-- Irradiated Arathor's Spear
 			r(435871),	-- Irradiated Blessing Blossom
 			r(435859),	-- Irradiated Luredrop
@@ -1468,7 +1466,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			r(435829),	-- Lush Luredrop
 			r(435812),	-- Lush Mycobloom
 			r(435830),	-- Lush Orbinid
-			r(442988),	-- Magical Mulch
 			r(435822),	-- Orbinid
 			r(438953),	-- Overload Altered Herb
 			r(438952),	-- Overload Crystallized Herb
@@ -2369,13 +2366,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80367, 439723);	-- EZ-Mine Ironclaw
 			FirstCraft(80355, 439711);	-- Rich Ironclaw
 			FirstCraft(80373, 439729);	-- Webbed Ironclaw
-			--FirstCraft(XXXXX, 439720);	-- Weeping Ironclaw
-			-- Overload
-			--FirstCraft(XXXXX, 439742);	-- Overload Crystallized
-			--FirstCraft(XXXXX, 423394);	-- Overload Empowered Deposit
-			--FirstCraft(XXXXX, 439744);	-- Overload Explosives
-			--FirstCraft(XXXXX, 439747);	-- Overload Webbed Deposits
-			--FirstCraft(XXXXX, 439743);	-- Overload Weeping
+			FirstCraft(80364, 439720);	-- Weeping Ironclaw
 		})),
 	}),
 	prof(SKINNING, {
