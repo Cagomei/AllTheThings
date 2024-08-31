@@ -26,14 +26,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	i(213610),	-- Crystalline Powder
 	i(211297),	-- Fractured Spark of Omens
 	i(228414),	-- Frayed Wiring
+	i(221757);	-- Gloomfathom Hide
 	i(228956),	-- Junk Bucket
 	i(213613),	-- Leyline Residue
 	i(213197),	-- Null Lotus
 	i(221758),	-- Profaned Tinderbox
 	i(221754),	-- Ringing Deeps Ingot
 	i(228338),	-- Soul Sigil I
+	i(228339),	-- Soul Sigil II
 	i(211296),	-- Spark of Omens
 	i(213612),	-- Viridescent Spores
+	i(221763),	-- Viridian Charmcap
 	i(213611),	-- Writhing Sample
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
@@ -2382,6 +2385,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(83408, 220286),	-- Skinning Deepflayer Broodmother
 			FirstSkin(83404, 218393),	-- Skinning Disturbed Earthgorger
 			FirstSkin(81451, 219265),	-- Skinning Emperor Pitfang
+			FirstSkin(85548, 220492),	-- Skinning Finclaw Bloodtide
 			FirstSkin(83402, 221668),	-- Skinning Horror of the Shallows
 			FirstSkin(83413, 221327),	-- Skinning Kaheti Silk Hauler
 			FirstSkin(83409, 220285),	-- Skinning Lurker of the Deeps
@@ -2668,7 +2672,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(83131),	-- 30/40 Everburning Forge
 		}),
 		prof(FISHING, {
-			q(82767),	-- Extra HQT for Bloody Perch?
+			q(82767),	-- Extra HQT for Bloody Perch
 		}),
 		prof(HERBALISM, {
 			q(81415),	-- 40/40 Overloading the Underground
@@ -2676,21 +2680,24 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		prof(MINING, {
 			q(82317),	-- 45/45 Mastering the Mysterious
 		}),
-		-- Using Contracts
-		q(84484),	-- Contract: Assembly of the Deeps [Rank 1] (spellID 454934)
-		q(84483),	-- Contract: Assembly of the Deeps [Rank 2] (spellID 454935)
-		q(84482),	-- Contract: Assembly of the Deeps [Rank 3] (spellID 454936)
-		q(84473),	-- Contract: Council of Dornogal [Rank 1] (spellID 454931)
-		q(84474),	-- Contract: Council of Dornogal [Rank 2] (spellID 454932)
-		q(84475),	-- Contract: Council of Dornogal [Rank 3] (spellID 454933)
-		q(84479),	-- Contract: Hallowfall Arathi [Rank 1] (spellID 454937)
-		q(84480),	-- Contract: Hallowfall Arathi [Rank 2] (spellID 454938)
-		q(84481),	-- Contract: Hallowfall Arathi [Rank 3] (spellID 454939)
-		q(84478),	-- Contract: The Severed Threads [Rank 1] (spellID 454940)
-		q(84477),	-- Contract: The Severed Threads [Rank 2] (spellID 454941)
-		q(84476),	-- Contract: The Severed Threads [Rank 3] (spellID 454942)
-		-- Craftable / Sparks
-		q(83280, name(HEADERS.Item,211297,{["isWeekly"]=true,})),	-- Fractured Spark of Omens
-		q(83281, name(HEADERS.Item,211297,{["isWeekly"]=true,})),	-- Fractured Spark of Omens
+		n(PROFESSIONS, {
+			-- Using Contracts
+			q(84484),	-- Contract: Assembly of the Deeps [Rank 1] (spellID 454934)
+			q(84483),	-- Contract: Assembly of the Deeps [Rank 2] (spellID 454935)
+			q(84482),	-- Contract: Assembly of the Deeps [Rank 3] (spellID 454936)
+			q(84473),	-- Contract: Council of Dornogal [Rank 1] (spellID 454931)
+			q(84474),	-- Contract: Council of Dornogal [Rank 2] (spellID 454932)
+			q(84475),	-- Contract: Council of Dornogal [Rank 3] (spellID 454933)
+			q(84479),	-- Contract: Hallowfall Arathi [Rank 1] (spellID 454937)
+			q(84480),	-- Contract: Hallowfall Arathi [Rank 2] (spellID 454938)
+			q(84481),	-- Contract: Hallowfall Arathi [Rank 3] (spellID 454939)
+			q(84478),	-- Contract: The Severed Threads [Rank 1] (spellID 454940)
+			q(84477),	-- Contract: The Severed Threads [Rank 2] (spellID 454941)
+			q(84476),	-- Contract: The Severed Threads [Rank 3] (spellID 454942)
+			-- Craftable / Sparks
+			q(82039),	-- first Fractured Spark of Omens
+			q(83280, name(HEADERS.Item,211297,{["isWeekly"]=true,})),	-- Fractured Spark of Omens
+			q(83281, name(HEADERS.Item,211297,{["isWeekly"]=true,})),	-- Fractured Spark of Omens
+		}),
 	}),
 })));

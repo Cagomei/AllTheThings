@@ -432,6 +432,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["maps"] = { 2308, 2309 },	-- Priory of the Sacred Flame
 					["g"] = {
 						i(226139),	-- Arathi Officer's Gauntlets
+						i(226137),	-- Inquisitive Sister's Cinch
 						i(226134),	-- Mourning Baron's Shoulderpads
 					},
 				}),
@@ -700,6 +701,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 215301 },	-- Shinda Creedpike
 					["coord"] = { 40.7, 50.6, HALLOWFALL },
 					["g"] = {
+						i(228367),	-- Arathi Scout's Walking Stick
 						i(228366),	-- Child's Former Fishing Rod
 						i(228365),	-- Concerned Captain's Cudgel
 						i(228362),	-- Polished Arathi Rifle
@@ -934,8 +936,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						i(225179),	-- Salamanther Heart (QI!)
 						i(228438),	-- Derill's Unused Visor
-						i(228435),	-- Wine-Dyed Leggings
 						i(228437),	-- Salamanther-Scale Greaves
+						i(228436),	-- United Arathi's Jerkin
+						i(228435),	-- Wine-Dyed Leggings
 					},
 				}),
 				q(83279),	-- Prove One's Mettle
@@ -1014,21 +1017,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 			}),
 			------ Life on the Farm (ACH) Quests ------ Should be moved into their own header but some quests require Spreading the Light and are sourced there. Automate?
+			q(82960, {	-- Hillhelm Family: Lily's Locket
+				["provider"] = { "i", 224463 },	-- Lily's Locket (QS!/QI!)
+			}),
 			q(82894, {	-- Hillhelm Family: The Chicken
 				["provider"] = { "i", 224466 },	-- Wilber The Chicken (QS!/QI!)
-				--["coord"] = { , , HALLOWFALL },
 			}),
 			------ Miscellaneous ------
 			q(81651),	-- Delver's Guide to Delves [Might be NYI??]
-			q(79222, {	-- Shadow-Hardened Mainspring
-				["provider"] = { "i", 212330 },	-- Shadow-Hardened Mainspring
+			q(79554, {	-- Holy Hydrocarbons
+				["provider"] = { "i", 217388 },	-- Crate of Devotional Candles (QS!/QI!)
 			}),
 			q(79221, {	-- The Unusual Bug
-				["provider"] = { "i", 212331 },	-- The Unusual Bug (QI!)
+				["provider"] = { "i", 212331 },	-- The Unusual Bug (QS!/QI!)
 				["maps"] = { AZJ_KAHET },
 			}),
 			q(81640, {	-- Tenir and the Order of Night
-				["provider"] = { "i", 219384 },	-- Umbral Eggplant (QI!)
+				["provider"] = { "i", 219384 },	-- Umbral Eggplant (QS!/QI!)
 				["maps"] = { ISLE_OF_DORN },
 			}),
 			q(82894, {	-- The Price of Hope
@@ -1195,37 +1200,39 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(KHAZ_ALGAR, {
 		m(HALLOWFALL, {
-			-- During questing
-			q(83614),	-- [DNT] Zone 3 Bread Crumb Completed Organically (spellID 456930), after turn in questID 78658 (The Hallowed Path)
-			q(79654),	-- [DNT] Hallowfall Arathi Renown Unlock (spellID 448657)
-			--q(82538),	-- Stay awhile and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
-			-- questID 79303 (A Principled Principal) nodes
-			q(83287),	-- should accept work
-			q(83288),	-- system become unfair
-			q(83289),	-- reject work and blame Edwyn in addition
-			--questID 82894 (The Price of Hope)
-			q(79081),	-- after using Cobbled Together Bandage on injured Soldier @ 43.3, 51.7
-			-- questID 82479 (The Sword is Mightier)
-			q(82728),	-- 4 page / 1 node (The work...)
-			q(82738),	-- 4 page / 1 node (The work...)
-			q(82729),	-- 4 page / 3 node (Don't get...)
-			q(82730),	-- 4 page / 4 node (Please...)
-			q(82732),	-- 5 page / 1 node (I'm...)
-			q(82736),	-- 5 page / 1 node (I'm...)
-			q(82731),	-- 5 page / 3 node (I want...)
-			q(82733),	-- 5 page / 4 node (If you...)
-			q(82737),	-- 5 page / 4 node (If you...)
-			--
-			q(82674),	-- trigger after interact with Cooking Pot and choose 'Good enought' option, during questID 82222 (Cooking With Style)
-			q(82675),	-- trigger after interact with Cooking Pot and choose 'Retry' or 'Cooking' option, during questID 82222 (Cooking With Style)
-			--
-			q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
-			--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
-			--
-			q(82749),	-- Flag for next quest after weekly reset for Time Lost & Time Found & Time Borrowed (spellID 452551 - Flag Timer)
-			q(83748),	-- triggered after turn in questID 79168 (Light's Gambit) (spellID 457904 - [DNT] Have Played Light's Gambit)
-			q(79941, {["isDaily"]=true,}),	-- <I wish to visit Veneration Groundkeeper> - Justicia Baercennan (n: 225942 @ 41.8, 54.3), nothing happen & reset on daily (spellID 454635)
-			q(79212),	-- not sure why it pop near Defender of the Flame quest chain @ 65.5, 32.2, when I fly here first time
+			n(QUESTS, {
+				-- During questing
+				q(83614),	-- [DNT] Zone 3 Bread Crumb Completed Organically (spellID 456930), after turn in questID 78658 (The Hallowed Path)
+				q(79654),	-- [DNT] Hallowfall Arathi Renown Unlock (spellID 448657)
+				--q(82538),	-- Stay awhile and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
+				-- questID 79303 (A Principled Principal) nodes
+				q(83287),	-- should accept work
+				q(83288),	-- system become unfair
+				q(83289),	-- reject work and blame Edwyn in addition
+				--questID 82894 (The Price of Hope)
+				q(79081),	-- after using Cobbled Together Bandage on injured Soldier @ 43.3, 51.7
+				-- questID 82479 (The Sword is Mightier)
+				q(82728),	-- 4 page / 1 node (The work...)
+				q(82738),	-- 4 page / 1 node (The work...)
+				q(82729),	-- 4 page / 3 node (Don't get...)
+				q(82730),	-- 4 page / 4 node (Please...)
+				q(82732),	-- 5 page / 1 node (I'm...)
+				q(82736),	-- 5 page / 1 node (I'm...)
+				q(82731),	-- 5 page / 3 node (I want...)
+				q(82733),	-- 5 page / 4 node (If you...)
+				q(82737),	-- 5 page / 4 node (If you...)
+				--
+				q(82674),	-- trigger after interact with Cooking Pot and choose 'Good enought' option, during questID 82222 (Cooking With Style)
+				q(82675),	-- trigger after interact with Cooking Pot and choose 'Retry' or 'Cooking' option, during questID 82222 (Cooking With Style)
+				--
+				q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
+				--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
+				--
+				q(82749),	-- Flag for next quest after weekly reset for Time Lost & Time Found & Time Borrowed (spellID 452551 - Flag Timer)
+				q(83748),	-- triggered after turn in questID 79168 (Light's Gambit) (spellID 457904 - [DNT] Have Played Light's Gambit)
+				q(79941, {["isDaily"]=true,}),	-- <I wish to visit Veneration Groundkeeper> - Justicia Baercennan (n: 225942 @ 41.8, 54.3), nothing happen & reset on daily (spellID 454635)
+				q(79212),	-- not sure why it pop near Defender of the Flame quest chain @ 65.5, 32.2, when I fly here first time
+			}),
 		}),
 	}),
 })));

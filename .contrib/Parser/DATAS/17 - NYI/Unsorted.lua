@@ -37,36 +37,6 @@ root(ROOTS.Unsorted, {
 			filter(BATTLE_PETS, {
 				i(228765),	-- Gummi (PET!) [Promotion?]
 			}),
-			n(PROFESSIONS, {
-				-- Profession Knowledge Notes
-				-- I wonder if this has to do with Crafting Orders..
-					-- YES... Crafting Orders "Patron" rewards these
-					-- BRAGHE!
-				i(228724),	-- Flicker of Alchemy Knowledge
-				i(228725),	-- Glimmer of Alchemy Knowledge
-				i(228726),	-- Flicker of Blacksmithing Knowledge
-				i(228727),	-- Glimmer of Blacksmithing Knowledge
-				i(228728),	-- Flicker of Enchanting Knowledge
-				i(228729),	-- Glimmer of Enchanting Knowledge
-				i(228730),	-- Flicker of Engineering Knowledge
-				i(228731),	-- Glimmer of Engineering Knowledge
-				i(228732),	-- Flicker of Inscription Knowledge
-				i(228733),	-- Glimmer of Inscription Knowledge
-				i(228734),	-- Flicker of Jewelcrafting Knowledge
-				i(228735),	-- Glimmer of Jewelcrafting Knowledge
-				i(228736),	-- Flicker of Leatherworking Knowledge
-				i(228737),	-- Glimmer of Leatherworking Knowledge
-				i(228738),	-- Flicker of Tailoring Knowledge
-				i(228739),	-- Glimmer of Tailoring Knowledge
-				-- Same with these
-				i(227713),	-- Artisan's Consortium Payout [Common]
-				i(228610),	-- Artisan's Consortium Payout [Uncommon]
-				i(228611),	-- Artisan's Consortium Payout [Rare]
-				i(228612),	-- Artisan's Consortium Payout [Epic]
-				-- This was also a reward for completion -- they show before you accept the order
-				i(225670),	-- Apprentice's Crafting License
-				i(225671),	-- Stack of Pentagold Reviews
-			}),
 			filter(COSMETIC, {
 				i(228761),	-- Classic Brick Tabard
 				i(228762),	-- Classic Lively Tabard
@@ -91,7 +61,6 @@ root(ROOTS.Unsorted, {
 			i(229071),	-- Azra's Spare Gloves
 			i(229072),	-- Azra's Spare Mask
 			i(229074),	-- Azra's Spare Cord
-			i(229075),	-- Azra's Spare Bracers
 			i(229076),	-- Azra's Spare Chestguard
 			i(229077),	-- Azra's Spare Shoulderguards
 			i(229078),	-- Aevery's Spare Brigandine
@@ -112,7 +81,6 @@ root(ROOTS.Unsorted, {
 			i(229102),	-- The Cleansing Flame's Cord
 			i(229104),	-- Ironstrike's Vest
 			i(229105),	-- Ironstrike's Waders
-			i(229106),	-- Ironstrike's Grips
 			i(229107),	-- Ironstrike's Headgear
 			i(229108),	-- Ironstrike's Breeches
 			i(229109),	-- Ironstrike's Epaulets
@@ -268,14 +236,10 @@ root(ROOTS.Unsorted, {
 				i(224416),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 			}),
 			n(PROFESSIONS, {
-				i(221763),	-- Viridian Charmcap
 				i(211494),	-- Spark of Beginnings
-
 				i(225772),	-- Artisan's Consortium Advertisement
-				i(225672),	-- Unraveled Instructions
 				i(225673),	-- Artisan's Consortium Seal of Approval
 				i(228224),	-- Spark of Legacies
-				i(228368),	-- Relic of the Past VI
 				-- NYI Profession --
 				i(219500),	-- Fang Adornments
 				i(213097),	-- Test Warbound until equipped (DNT)
@@ -644,7 +608,6 @@ root(ROOTS.Unsorted, {
 				i(212163),	-- Soporific Shroom Cap \\ Sleepy Fungarian Helm [PH]
 				i(212164),	-- Shallow Nautic Helm \\ Shallow Kobyss Helm [PH]
 				i(212165),	-- Deep Nautic Helm \\ Deep Kobyss Helm [PH]
-				i(212166),	-- Coral Nautic Helm \\ Coral Kobyss Helm [PH]
 				i(212167),	-- Taken Candle \\ Candle Kobold Helm [PH]
 				i(212168),	-- Cinderbee Wax Candle Hat \\ Cultlight Kobold Helm [PH]
 				i(212169),	-- Mint-Scented Candle Hat \\ Candelabra Kobold Helm [PH]
@@ -701,7 +664,6 @@ root(ROOTS.Unsorted, {
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
 				i(225997),	-- Earthen Adventurer's Spaulders
 				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
-				i(226019),	-- Darkened Arathi Shoulderguards
 				i(226363),	-- Earthen Backpack
 				i(226366),	-- Gloves of the Morning Mist
 				i(226367),	-- Ugly Black Boots
@@ -1072,10 +1034,8 @@ root(ROOTS.Unsorted, {
 				i(220158),	-- Darkened Tinderbox
 				-- Armor Generator
 				i(225661),	-- Burning Binding
-				i(226137),	-- Inquisitive Sister's Cinch
 				i(226138),	-- Vow-Taker's Boots
 				i(226174),	-- Famished Bride's Clasp
-				i(226521),	-- Reinforced-Wax Plating
 				i(226695),	-- Cunning Advisor's Favor
 				i(226696),	-- Mighty Advisor's Favor
 			}),
@@ -1263,16 +1223,6 @@ root(ROOTS.Unsorted, {
 				i(226430),	-- Navigations of The Soul
 				i(226524),	-- Partially-Charged Hologem
 				i(226681),	-- Sizzling Cinderpollen
-				i(227274),	-- Candle Rock Candy
-				i(227275),	-- Koboldatouille
-				i(227303),	-- Waxy Cheese Snack
-				i(227304),	-- Mushroom Cake
-				i(227311),	-- Digspresso
-				i(227312),	-- Afterglow
-				i(227319),	-- Koboldchino
-				i(227320),	-- Wicker Wisps
-				i(227328),	-- Wax Fondue
-				i(227329),	-- Still-Twitching Gumbo
 				i(227668),	-- Delver's Bounty
 				i(227677),	-- Satchel of Enchanting Surplus
 				i(227678),	-- Satchel of Engineering Surplus
@@ -1289,7 +1239,6 @@ root(ROOTS.Unsorted, {
 				i(228193),	-- Chipped Demon's Blade
 				i(228194),	-- Fully Scrapped Scrap
 				i(228195),	-- Tattered Goblin Cap
-				i(228391),	-- Right Boot
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
 				i(228429),	-- Reflective Rock
@@ -1388,11 +1337,7 @@ root(ROOTS.Unsorted, {
 				i(224180),	-- Worn Journal
 				i(224182),	-- Webbed Ingots
 				i(224252),	-- Calcified Journal
-
 				i(224460),	-- The Lost Diary
-				i(224463),	-- Lily's Locket
-				i(224486),	-- Uncle's Eye
-				i(224545),	-- Plowhead
 				i(224777),	-- Sureki Shadecaster
 				i(224810),	-- Woodworm Elixir
 				i(225336),	-- A Lost Shoe
@@ -1414,7 +1359,6 @@ root(ROOTS.Unsorted, {
 				i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
 				i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
 				i(228364),	-- Endiri's Chipped Boot Knife
-				i(228367),	-- Arathi Scout's Walking Stick
 			}),
 			filter(TOYS, {
 				i(218310),	-- Box of Puntables (TOY!) [Winter Veil]
@@ -1527,7 +1471,6 @@ root(ROOTS.Unsorted, {
 				i(223472),	-- Drape of the Lamplighter
 				i(223585),	-- Algari Bladefist
 				i(223588),	-- Algari Fighting Knife
-				i(228436),	-- United Arathi's Jerkin
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(223510),	-- Delver's Dirigible Schematic: Template

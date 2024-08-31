@@ -49,6 +49,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82580, {	-- Courier Mission: Ore Recovery
 					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 					["g"] = {
+						ach(40630),	-- For the Collective
 						ach(40623),	-- I Only Need One Trip
 					},
 				}),
@@ -129,8 +130,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(KHAZ_ALGAR, {
 		m(THE_RINGING_DEEPS, {
-			q(83501),	-- Triggeres with 'Hanging Tight' (achievementID 40507)
+			n(WORLD_QUESTS, {
+				q(83501),	-- Triggeres with 'Hanging Tight' (achievementID 40507)
+			}),
 		}),
 	}),
 })));
-

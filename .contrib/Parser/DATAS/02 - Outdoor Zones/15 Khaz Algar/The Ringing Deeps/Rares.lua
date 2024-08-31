@@ -151,10 +151,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(220268, {	-- Trungal
-				["description"] = "Kill roots of trungal on way to him to make him jump out of terrain",
+				["description"] = "Kill roots of Trungal on way to him to make him jump out of terrain",
 				["coord"] = { 71.8, 46.3, THE_RINGING_DEEPS },
 				["questID"] = 80574,
 				["g"] = {
+					i(221250),	-- Creeping Lasher Machete
 					i(221253),	-- Cultivator's Plant Puncher
 					i(221228),	-- Infested Fungal Wristwraps
 				},
@@ -182,20 +183,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(KHAZ_ALGAR, {
 		m(THE_RINGING_DEEPS, {
-			q(84046),	-- Extra HQT: Automaxor
-			q(84044),	-- Extra HQT: Charmonger
-			q(84045),	-- Extra HQT: Coalesced Monstrosity
-			q(84042),	-- Extra HQT: Cragmund
-			q(84044),	-- Extra HQT: Deathbound Husk
-			q(85162),	-- Extra HQT: Deepflayer Broodmother
-			q(84050),	-- Extra HQT: Disturbed Earthgorger
-			q(84048),	-- Extra HQT: Hungerer of the Deeps
-			q(84047),	-- Extra HQT: Kelpmire
-			q(81455),	-- Extra HQT: King Splash
-			q(84049),	-- Extra HQT: Spore-Infused Shalewing
-			q(84040),	-- Extra HQT: Terror of Forge
-			q(84043),	-- Extra HQT: Trungal
-			q(84041),	-- Extra HQT: Zilthara
+			n(RARES, {
+				q(84046),	-- Extra HQT: Automaxor
+				q(84044),	-- Extra HQT: Charmonger
+				q(84045),	-- Extra HQT: Coalesced Monstrosity
+				q(84042),	-- Extra HQT: Cragmund
+				q(84044),	-- Extra HQT: Deathbound Husk
+				q(85162),	-- Extra HQT: Deepflayer Broodmother
+				q(84050),	-- Extra HQT: Disturbed Earthgorger
+				q(84048),	-- Extra HQT: Hungerer of the Deeps
+				q(84047),	-- Extra HQT: Kelpmire
+				q(81455),	-- Extra HQT: King Splash
+				q(84049),	-- Extra HQT: Spore-Infused Shalewing
+				q(84040),	-- Extra HQT: Terror of Forge
+				q(84043),	-- Extra HQT: Trungal
+				q(84041),	-- Extra HQT: Zilthara
+			}),
 		}),
 	}),
 })));

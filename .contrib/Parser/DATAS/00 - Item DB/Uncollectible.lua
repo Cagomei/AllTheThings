@@ -1889,7 +1889,6 @@ i(228487);	-- Freshly Fallen Sticks
 i(225677);	-- Gleaming Chaos
 i(225811);	-- Gleaming Deep-Pearl
 i(225831);	-- Glittering Rock
-i(221757);	-- Gloomfathom Hide
 i(220259);	-- Gob of Mucus
 i(220509);	-- Gossamer Web
 i(225790);	-- Half-Painted Pewter Spider
@@ -1948,6 +1947,7 @@ i(220228);	-- Quartz Growth
 i(220288);	-- Quivering Tail
 i(220362);	-- Ragged Rope
 i(220242);	-- Razored Tail-Blade
+i(228391);	-- Right Boot
 i(228510);	-- Ripped Swarmite Wing
 i(220297);	-- Rock-Encrusted Plates
 i(228609);	-- Rock Roasting for Dummies
@@ -2021,15 +2021,18 @@ i(225251);	-- Disassemble Invention
 i(225202);	-- Pilfer Through Parts
 -- vendor food
 i(227299);	-- Acid Braised Beetle
+i(227312);	-- Afterglow
 i(227305);	-- Airship Dog on a Bun
 i(227321);	-- Blessed Brew
 i(227335);	-- Borer Blood Pudding
 i(227308);	-- Butterflied Deepstrider
+i(227274);	-- Candle Rock Candy
 i(227326);	-- Chalcocite Lava Cake
 i(217896);	-- Cinderbrew Mead
 i(227314);	-- Coffee, Light Ice
 i(227301);	-- Crystal Tots
 i(224762);	-- Delver's Waterskin
+i(227311);	-- Digspresso
 i(227316);	-- Eggnog
 i(227333);	-- Glimmering Delicacy
 i(227302);	-- Granite Salad
@@ -2038,10 +2041,13 @@ i(227306);	-- Holy Mackerel
 i(227298);	-- Humble Pie
 i(227307);	-- Insects Bowl Mix
 i(227273);	-- Iron Poppers
+i(227275);	-- Koboldatouille
+i(227319);	-- Koboldchino
 i(227317);	-- Lava Cola
 i(227310);	-- Magmalaid
 i(226811);	-- Marinated Maggots
 i(227334);	-- Mole Mole
+i(227304);	-- Mushroom Cake
 i(227323);	-- Mushroom Tea
 i(227324);	-- Nerub'ar Nectar
 i(227300);	-- Poison Poached Eggs
@@ -2052,7 +2058,11 @@ i(227331);	-- Saints' Delight
 i(227322);	-- Sanctified Sasparilla
 i(227332);	-- Sipping Aether
 i(227313);	-- Starfruit Puree
+i(227329);	-- Still-Twitching Gumbo
 i(227325);	-- Stone Soup
 i(227336);	-- Sugar Slurry
 i(227315);	-- Tarragon Soda
 i(227309);	-- Titanshake
+i(227328);	-- Wax Fondue
+i(227303);	-- Waxy Cheese Snack
+i(227320);	-- Wicker Wisps

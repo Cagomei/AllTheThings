@@ -7351,8 +7351,10 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(65368),	--
 			q(65423),	--
 			q(65430),	--
-			q(65434),	--
+			q(6544),	--
+			-- #if BEFORE 11.0.2
 			q(65440),	--
+			--#endif
 			q(65449),	--
 			q(65450),	--
 			q(65462),	--
@@ -7496,7 +7498,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(71928),	-- DNT - Knowledge Purchase - Iskaara Tuskarr (spellID 393202)
 			q(71929),	-- DNT - Knowledge Purchase - Maruuk Centaur (spellID 393203)
 			q(66522),	-- Draconium Blade Sharpener
-			q(70715),	-- Dragonflight (70) E
 			q(65042),	-- Dragons!
 			q(66490),	-- Dragons!
 			q(64537),	-- Duration Talent Quest 1 Flag (spellID 357793)
