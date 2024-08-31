@@ -1380,7 +1380,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		},{
 			--FirstCraft(xxxxx, 456154),	-- Anglerthread
 			FirstCraft(82907, 444795),	-- Arathor Hammerfish
-			--FirstCraft(xxxxx, 444803),	-- Awoken Coelacanth
+			FirstCraft(82915, 444803),	-- Awoken Coelacanth
 			--FirstCraft(xxxxx, 456591),	-- Azj-Kahet
 			FirstCraft(82899, 444787),	-- Bismuth Bitterling
 			FirstCraft(82897, 444785),	-- Bloody Perch
@@ -2629,7 +2629,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80827, 446963);	-- Pioneer's Perfected Gloves
 			FirstCraft(80825, 446961);	-- Pioneer's Perfected Leggings
 			FirstCraft(80826, 446962);	-- Pioneer's Perfected Mantle
-			--FirstCraft(XXXXX, 446995);	-- Preserving Embroidery Thread
+			FirstCraft(80859, 446995);	-- Preserving Embroidery Thread
 			--FirstCraft(XXXXX, 446986);	-- Prodigy's Toolbox
 			--FirstCraft(XXXXX, 446933);	-- Slippers of the Woven Dusk
 			--FirstCraft(XXXXX, 447000);	-- Sunset Spellthread
