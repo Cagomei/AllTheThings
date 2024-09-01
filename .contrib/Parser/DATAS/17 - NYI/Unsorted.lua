@@ -75,7 +75,6 @@ root(ROOTS.Unsorted, {
 			i(229091),	-- Kyros's Spare Shoulder Plates
 			i(229093),	-- Kyros's Spare Cuffs
 			i(229096),	-- The Cleansing Flame's Robes
-			i(229098),	-- The Cleansing Flame's Handwraps
 			i(229099),	-- The Cleansing Flame's Cowl
 			i(229101),	-- The Cleansing Flame's Shoulderpads
 			i(229102),	-- The Cleansing Flame's Cord
@@ -291,13 +290,9 @@ root(ROOTS.Unsorted, {
 				i(224729),	-- Slum Shark Tooth \\ [PH] Slum Shark Tooth
 				i(224730),	-- [PH] Derby Dashers
 				prof(ALCHEMY, {
-
 					i(228401),	-- Bubbling Mycobloom Culture
 					i(228402),	-- Bubbling Mycobloom Culture
 					i(228403),	-- Bubbling Mycobloom Culture
-					i(228404),	-- Petal Powder
-					i(228405),	-- Petal Powder
-					i(228406),	-- Petal Powder
 					i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
 				}),
 				prof(BLACKSMITHING, {
@@ -521,11 +516,10 @@ root(ROOTS.Unsorted, {
 				--- Notes
 				-- Prof Knowledge
 				i(224782),	-- Razor Talon
-				i(225224),	-- Diaphanous Gem Shards
+
 				i(225225),	-- Deepstone Fragment
 				i(225226),	-- Striated Inkstone
 				i(225227),	-- Wax-Sealed Records
-				i(224780),	-- Toughened Tempest Pelt
 				i(227662),	-- Shimmering Dust
 			}),
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
@@ -662,7 +656,6 @@ root(ROOTS.Unsorted, {
 				i(225752),	-- Dornogal Defender
 				i(225757),	-- Coreway Pickaxe
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
-				i(225997),	-- Earthen Adventurer's Spaulders
 				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
 				i(226363),	-- Earthen Backpack
 				i(226366),	-- Gloves of the Morning Mist
@@ -1030,7 +1023,6 @@ root(ROOTS.Unsorted, {
 				i(225536),	-- [PH] Armor Girdle
 				i(225539),	-- [PH] Armor Epaulets
 				i(219942),	-- 11.0 Stalwart's Sandals
-				i(220157),	-- Empowered Tinderbox
 				i(220158),	-- Darkened Tinderbox
 				-- Armor Generator
 				i(225661),	-- Burning Binding
@@ -1100,9 +1092,6 @@ root(ROOTS.Unsorted, {
 				i(223316),	-- Trusty Hat
 				i(219390),	-- Set Keystone Map: Grim Batol
 				i(219494),	-- Ritual Flame
-				i(220122),	-- Offering of Pure Water
-				i(220123),	-- Ominous Offering
-				i(220124),	-- Jar of Mucus
 				i(220156),	-- Bubbling Wax
 				i(220220),	-- Ornate Pipe
 				i(220225),	-- Tattered Standard
@@ -1200,7 +1189,6 @@ root(ROOTS.Unsorted, {
 				i(225875),	-- Pitted Armor Plating
 				i(225878),	-- The Fifty Rules of Commerce, Fourth Edition
 				i(225879),	-- The Fifty Rules of Commerce, Fourth Edition
-				i(225883),	-- Prepared Ghoulfish
 				i(225896),	-- Void-Touched Valorstone
 				i(225930),	-- Glimmering Crystal
 				i(225948),	-- Harbinger's Equipment Chest
@@ -1797,6 +1785,11 @@ root(ROOTS.Unsorted, {
 				exploration(14517),	-- 11Test1
 				exploration(14512),	-- RebornTree
 				exploration(14484),	-- 10.2 Devland
+			}),
+			n(QUESTS, {
+				q(83489, {
+					["_drop"] = {"g"},
+				}),
 			}),
 			--------
 			i(228495),	-- Well-Used Potter's Wheel

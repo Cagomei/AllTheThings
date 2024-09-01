@@ -61,9 +61,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			i(225648),	-- Candle Confidant
 			i(225657),	-- Detachable Fang
 			i(225656),	-- Goldenglow Censer
+			i(225654),	-- Imperfect Ascendancy Serum
 			i(225651),	-- Kaheti Shadeweaver's Emblem
 			i(225649),	-- Quickwick Candlestick
-			i(225654),	-- Rapid Evolution Serum
 			i(226521),	-- Reinforced-Wax Plating
 			i(226539),	-- Scroll of Momentum
 			i(225647),	-- Shining Arathor Insignia
@@ -108,6 +108,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				-- Engineering
 				i(225229),	-- Earthen Induction Coil
 				i(225228),	-- Rust-Locked Mechanism
+				-- Jewelcrafting
+				i(225224),	-- Diaphanous Gem Shards
 				-- Leatherworking
 				i(225222),	-- Stone-Leather Swatch
 				i(225223),	-- Sturdy Nerubian Carapace

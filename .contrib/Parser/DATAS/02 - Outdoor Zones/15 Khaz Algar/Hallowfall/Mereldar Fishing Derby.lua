@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(223286),	-- Kah, Legend of the Deep (MOUNT!)
 					}),
 				}),
-				n(QUESTS, {
+				n(QUESTS, sharedData({ ["isWeekly"] = true }, {
 					q(82778, {	-- Hallowfall Fishing Derby
 						["description"] = "Nibbling Minnow, Arathor Hammerfish, Queen's Lureback",
 						["provider"] = { "n", 226846 },	--  Captain Oathmyt
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							i(DERBY_MARK),
 						},
 					}),
-				}),
+				})),
 				n(VENDORS, {
 					n(226846, {	-- Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
@@ -117,6 +117,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		m(HALLOWFALL, {
 			header(HEADERS.Quest, 82778, {	-- Hallowfall Fishing Derby
 				q(82928),	-- Arathor Hammerfish
+				q(82936),	-- Awoken Coelacanth
 				q(82920),	-- Bismuth Bitterling
 				q(82918),	-- Bloody Perch
 				q(82919),	-- Crystalline Sturgeon
@@ -126,13 +127,13 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				q(82923),	-- Goldengill Trout
 				q(82930),	-- Kaheti Slum Shark
 				q(82921),	-- Nibbling Minnow
-				--q(TODO),	-- Pale Huskfish
+				q(82931),	-- Pale Huskfish
 				q(82934),	-- Queen's Lurefish
 				q(82925),	-- Quiet River Bass
 				q(82929),	-- Regal Dottyback
 				q(82927),	-- Roaring Anglerseeker
 				q(82932),	-- Sanguine Dogfish
-				--q(TODO),	-- Specular Rainbowfish
+				q(82924),	-- Specular Rainbowfish
 				q(82933),	-- Spiked Sea Raven
 				q(82922),	-- Whispering Stargazer
 			}),

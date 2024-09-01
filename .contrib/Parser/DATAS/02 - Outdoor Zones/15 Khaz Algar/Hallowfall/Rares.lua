@@ -25,8 +25,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(221753, {	-- Deathtide <The Viscous Swell>
 				["coord"] = { 44.8, 42.8, HALLOWFALL },
+				["cost"] = { { "i", 220123, 1 } },	-- 1x Ominous Offering
 				["questID"] = 81880,
 				["g"] = {
+					i(225997),	-- Earthen Adventurer's Spaulders
 					i(223921),	-- Ever-Oozing Signet
 					i(223920),	-- Slime Deflecting Stopper
 				},
@@ -49,7 +51,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(221551, {	-- Grimslicer
-				["description"] = "Walking around park and can be killed by random ally npcs in area",
+				["description"] = "Walking around park and can be killed by random ally npcs in area.",
 				["coords"] = {
 					{ 35.0, 58.7, HALLOWFALL },
 					{ 35.0, 50.4, HALLOWFALL },
@@ -63,7 +65,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(221668, {	-- Horror of the Shallows
-				["description"] = "Swimming swims along the western coast of Hallowfall between the coords",
+				["description"] = "Swimming along the western coast of Hallowfall between the coordinates.",
 				["coords"] = {
 					{ 20.6, 51.6, HALLOWFALL },
 					{ 31.2, 41.4, HALLOWFALL },
