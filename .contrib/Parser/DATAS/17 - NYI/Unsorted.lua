@@ -153,6 +153,11 @@ root(ROOTS.Unsorted, {
 			i(231830),	-- Kraken Shell Pauldrons
 			-- Fallout
 			i(229193),	-- Queen's Pheromone
+			--
+			i(232045),	-- Chunk of Companion Experience
+			i(232046),	-- Chunk of Companion Experience
+			i(232047),	-- Chunk of Companion Experience
+			i(232049),	-- Companion Experience
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(TITLES, {
@@ -242,44 +247,6 @@ root(ROOTS.Unsorted, {
 				-- NYI Profession --
 				i(219500),	-- Fang Adornments
 				i(213097),	-- Test Warbound until equipped (DNT)
-				-- Mereldar Fishing Contest?
-				i(222089),	-- Bloody Perch
-				i(222090),	-- Crystalline Sturgeon
-				i(222091),	-- Bismuth Bitterling
-				i(222092),	-- Dornish Pike
-				i(222093),	-- Quiet River Bass
-				i(222094),	-- Arathor Hammerfish
-				i(222095),	-- Azj-Kahet Slum Shark
-				i(222096),	-- Goldengill Trout
-				i(222097),	-- Nibbling Minnow
-				i(222098),	-- Pale Huskfish
-				i(222099),	-- Regal Dottyback
-				i(222100),	-- Roaring Anglerseeker
-				i(222101),	-- Specular Rainbowfish
-				i(222102),	-- Whispering Stargazer
-				i(222103),	-- Sanguine Dogfish
-				i(222104),	-- Spiked Sea Raven
-				i(222105),	-- Queen's Lurefish
-				i(222106),	-- Cursed Ghoulfish
-				i(222107),	-- Kah, King of the Deeps
-				i(222526),	-- Bloody Perch
-				i(222527),	-- Crystalline Sturgeon
-				i(222528),	-- Bismuth Bitterling
-				i(222529),	-- Dornish Pike
-				i(222530),	-- Quiet River Bass
-				i(222531),	-- Arathor Hammerfish
-				i(222532),	-- Azj-Kahet Slum Shark
-				i(222534),	-- Nibbling Minnow
-				i(222535),	-- Pale Huskfish
-				i(222536),	-- Regal Dottyback
-				i(222537),	-- Roaring Anglerseeker
-				i(222538),	-- Specular Rainbowfish
-				i(222539),	-- Whispering Stargazer
-				i(222540),	-- Sanguine Dogfish
-				i(222541),	-- Spiked Sea Raven
-				i(222542),	-- Queen's Lurefish
-				i(222543),	-- Cursed Ghoulfish
-				i(222544),	-- Kah, King of the Deeps
 				-- Misc/armor
 				i(224716),	-- [PH] Skewered Slum Shark
 				i(224718),	-- [PH] Surface Tipper's Toes
@@ -289,207 +256,7 @@ root(ROOTS.Unsorted, {
 				i(224728),	-- Rollin' Barrel \\ [PH] Rollin' Barrel
 				i(224729),	-- Slum Shark Tooth \\ [PH] Slum Shark Tooth
 				i(224730),	-- [PH] Derby Dashers
-				prof(ALCHEMY, {
-					i(228401),	-- Bubbling Mycobloom Culture
-					i(228402),	-- Bubbling Mycobloom Culture
-					i(228403),	-- Bubbling Mycobloom Culture
-					i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
-				}),
-				prof(BLACKSMITHING, {
-					--- Probably mostly NYI...
-					i(217847),	-- Everforged Hands
-					i(217848),	-- Everforged Wrists
-					i(217849),	-- Everforged Waist
-					i(217850),	-- Everforged Legs
-					i(217851),	-- Everforged Feet
-					i(217852),	-- Everforged Shoulders
-					i(217853),	-- <Insert Bespoke Cantrip Gear>
-					i(217854),	-- Everforged Chest
-					i(217855),	-- Everforged Helm
-					i(217856),	-- Pressurized Alloy Greatbelt
-					i(217857),	-- Charged Mace
-					i(217858),	-- Charged Shiv
-					i(217859),	-- Pressurized Alloy Breastplate
-					i(217860),	-- Pressurized Alloy Vambraces
-					i(217861),	-- Charged Glaive
-					i(217862),	-- Pressurized Alloy Gauntlets
-					i(217863),	-- <Insert Bespoke Cantrip Gear>
-					i(217864),	-- Plans: Pressurized Alloy Warglaive
-					i(217865),	-- Plans: Pressurized Alloy Mace
-					i(217866),	-- Plans: Pressurized Alloy Sabatons
-					i(217867),	-- Plans: Polarized Alloy Claymore
-					i(217868),	-- Plans: Polarized Alloy Slicer
-					i(217869),	-- Plans: Polarized Alloy Runeaxe
-					i(217870),	-- Plans: Polarized Alloy Hexsword
-					i(217871),	-- Plans: <Insert Bespoke Cantrip Gear>
-					i(217873),	-- Plans: Polarized Alloy Halberd
-					i(217874),	-- Plans: <Insert Bespoke Cantrip Gear>
-					i(217875),	-- Plans: Pressurized Alloy Shortblade
-					i(217876),	-- Plans: Pressurized Alloy Legplates
-					i(217877),	-- Plans: Pressurized Alloy Helm
-					i(217878),	-- Plans: Pressurized Alloy Greatbelt
-					i(217879),	-- Plans: Polarized Alloy Crusher
-					i(217880),	-- Plans: Pressurized Alloy Greataxe
-					i(217881),	-- Plans: Pressurized Alloy Vambraces
-					i(217882),	-- Plans: Pressurized Alloy Gauntlets
-					i(217883),	-- Plans: Pressurized Alloy Spellblade
-					i(217884),	-- Plans: Pressurized Alloy Defender
-					i(217885),	-- Plans: Pressurized Alloy Pauldrons
-					i(217886),	-- Plans: Pressurized Alloy Longsword
-					i(217887),	-- Plans: Pressurized Alloy Breastplate
-					i(217888),	-- Plans: <Insert Bespoke Cantrip Gear>
-					i(217890),	-- Plans: <Insert Bespoke Cantrip Gear>
-					i(217909),	-- Ironclaw Great Axe
-					i(217910),	-- Pressurized Alloy Defender
-					i(217911),	-- Coreway Excavator's  Greaves
-					i(217912),	-- Coreway Excavator's  Clasp
-					i(217913),	-- Ironclaw Great Mace
-					i(217914),	-- Ironclaw Knuckles
-					i(217915),	-- Ironclaw Stiletto
-					i(217916),	-- Ironclaw Sword
-					i(217917),	-- Coreway Excavator's  Spaulders
-					i(217918),	-- Pressurized Alloy Sword
-					i(217919),	-- Coreway Excavator's  Chestguard
-					i(217920),	-- Coreway Excavator's  Bracers
-					i(217921),	-- Coreway Excavator's  Gauntlets
-					i(217922),	-- Coreway Excavator's  Helm
-					i(217923),	-- Coreway Excavator's  Boots
-					i(217924),	-- Everforged Great Axe
-					i(217931),	-- Proficient Herbalist's Sickle
-					i(217932),	-- Artisan Tailor's Needle Set
-					i(217933),	-- Proficient Leatherworker's Scalpel
-					i(217934),	-- Proficient Smithing Hammer
-					i(217935),	-- Artisan Leatherworker's Scalpel
-					i(217936),	-- Artisan Smithing Toolbox
-					i(217937),	-- Proficient Tailor's Needle Set
-					i(217939),	-- Proficient Skinner's Knife
-					i(217940),	-- Artisan Miner's Pickaxe
-					i(217941),	-- Artisan Skinner's Knife
-					i(217942),	-- Artisan Smithing Hammer
-					i(217944),	-- Artisan Herbalist's Sickle
-					i(217945),	-- Proficient Miner's Pickaxe
-					i(217946),	-- Plans: <Epic Smithing Hammer>
-					i(217947),	-- Plans: Hematic Alloy Leatherworker's Knife
-					i(217948),	-- Plans: Hematic Alloy Pickaxe
-					i(217949),	-- Plans: Hematic Alloy Leatherworker's Toolset
-					i(217950),	-- Plans: Hematic Alloy Blacksmith's Hammer
-					i(217951),	-- Plans: Sturdy Expedition Shovel
-					i(217952),	-- Plans: Hematic Alloy Blacksmith's Toolbox
-					i(217953),	-- Plans: Hematic Alloy Sickle
-					i(217954),	-- Plans: Hematic Alloy Needle Set
-					i(217955),	-- Plans: Hematic Alloy Skinning Knife
-					---
-					i(218087),	-- <Pressurized Core Alloy>
-					i(218088),	-- <Pressurized Core Alloy>
-					i(218089),	-- <Endgame Alloy C>
-					i(218090),	-- <Endgame Alloy C>
-					i(218091),	-- <Pressurized Core Alloy>
-					i(218092),	-- <Endgame Alloy B>
-					i(218093),	-- <Vendor Reagent A>
-					i(218094),	-- <PVP Alloy>
-					i(218095),	-- <Endgame Alloy B>
-					i(218096),	-- <PVP Alloy>
-					i(218097),	-- <Endgame Alloy B>
-					i(218098),	-- <Endgame Alloy C>
-					i(218099),	-- <PVP Alloy>
-					i(218100),	-- Plans: <Optional Reagnt A>
-					i(218101),	-- Plans: <PVP Alloy>
-					i(218102),	-- Bloodstained Plans: <PVP Alloy>
-					i(218103),	-- Plans: <Endgame Alloy C>
-					---
-					i(220180),	-- Earthen Master's Arsenal
-					i(220181),	-- Earthen Master's Arsenal
-					i(220182),	-- Earthen Master's Arsenal
-					i(220195),	-- Echoing Impact Seal
-					i(220196),	-- Echoing Impact Seal
-					i(220197),	-- Echoing Impact Seal
-					---
-					i(220952),	-- Webbed Fishing Line
-					i(220953),	-- Webbed Fishing Line
-					i(220954),	-- Webbed Fishing Line
-					i(220957),	-- Echoing Tuncheon
-					i(220958),	-- Haunting Void
-					i(220959),	-- Entangling Cutlass
-					i(220961),	-- Arathor Armor Patch
-					i(220962),	-- Arathor Armor Patch
-					i(220963),	-- Arathor Armor Patch
-					---
-					i(222019),	-- Echoing Impact Seal
-					i(222020),	-- Arathor Armor Patch
-					i(222023),	-- Echoing Truncheon
-					i(222024),	-- Entangling Cutlass
-					i(222025),	-- Haunting Void
-					i(222059),	-- Earthen Master's Arsenal
-					i(222060),	-- Earthen Master's Arsenal
-					i(222061),	-- Earthen Master's Arsenal
-					i(222074),	-- Webbed Fishing Line
-					i(222075),	-- Webbed Fishing Line
-					i(222076),	-- Webbed Fishing Line
-					---
-					i(222452),	-- Echoing Impact Seal
-					i(222453),	-- Echoing Impact Seal
-					i(222454),	-- Echoing Impact Seal
-					i(222455),	-- Arathor Armor Patch
-					i(222456),	-- Arathor Armor Patch
-					i(222457),	-- Arathor Armor Patch
-					i(222460),	-- Echoing Truncheon
-					i(222461),	-- Entangling Cutlass
-					i(222462),	-- Haunting Void
-					i(222496),	-- Earthen Master's Arsenal
-					i(222497),	-- Earthen Master's Arsenal
-					i(222498),	-- Earthen Master's Arsenal
-					i(222517),	-- Core Framework \\ Earthen Master's Hammer
-					i(222518),	-- Core Framework \\ Earthen Master's Hammer
-					i(222519),	-- Core Framework \\ Earthen Master's Hammer
-					---
-					i(223018),	-- Plans: Echoing Truncheon
-					i(223019),	-- Plans: Entangling Cutlass
-					i(223020),	-- Plans: Haunting Void
-					i(223029),	-- Plans: Webbed Fishing Line
-					i(223045),	-- Plans: Burning Binding \\ Plans: Echoing Truncheon
-					i(223046),	-- Plans: Entangling Cutlass
-					i(223047),	-- Plans: Haunting Void
-				}),
-				prof(COOKING, {
-					-- Needs Sources
-					i(222698),	-- Surface Olive
-					i(223977),	-- Coagulated Yolk
-					-- Missing Recipe Item to attach to?
-					r(445481),	-- Tasty Pocket Tart
-				}),
-				prof(ENGINEERING, {
-					i(221968),	-- Legibly Scribbled Notes
-				}),
-				prof(HERBALISM, {
-					i(217105),	-- Refine Khaz Algar Herbs
-					i(214595),	-- Sporefused Verdant Seed
-					i(214597),	-- Irradiated Verdant Seed
-					i(214605),	-- Crystallized Verdant Seed
-				}),
-				prof(INSCRIPTION, {
-					i(225338),	-- Glyph of Jab
-					i(222545),	-- Milling \\ Khaz Algar Milling
-					i(222108),	-- Khaz Algar Milling
-					i(219599),	-- Fortuitous Essence
-					i(219632),	-- Scribe Water
-					i(222622),	-- Transcribe to Ascension
-					i(222623),	-- Transcribe to Vivacity \\ Extraction: Vivacity
-					i(222624),	-- Transcribe to Symbiosis \\ Extraction: Symbiosis
-					i(222625),	-- Transcribe to Radiance \\ Extraction: Shine
-					i(222689),	-- Fortuitous Essence
-					i(217971),	-- Deadly Cypher
-					i(217972),	-- Deadly Cypher
-					i(217973),	-- Deadly Cypher
-					i(217974),	-- Quick Cypher
-					i(217975),	-- Quick Cypher
-					i(217976),	-- Quick Cypher
-					i(217977),	-- Masterful Cypher
-					i(217978),	-- Masterful Cypher
-					i(217979),	-- Masterful Cypher
-					i(217980),	-- Versatile Cypher
-					i(217981),	-- Versatile Cypher
-					i(217982),	-- Versatile Cypher
-				}),
+				i(219632),	-- Scribe Water
 				prof(JEWELCRAFTING, {
 					i(214043),	-- Glittering Gemdust
 				}),
@@ -516,10 +283,7 @@ root(ROOTS.Unsorted, {
 				--- Notes
 				-- Prof Knowledge
 				i(224782),	-- Razor Talon
-
 				i(225225),	-- Deepstone Fragment
-				i(225226),	-- Striated Inkstone
-				i(225227),	-- Wax-Sealed Records
 				i(227662),	-- Shimmering Dust
 			}),
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
@@ -1025,7 +789,7 @@ root(ROOTS.Unsorted, {
 				i(219942),	-- 11.0 Stalwart's Sandals
 				i(220158),	-- Darkened Tinderbox
 				-- Armor Generator
-				i(225661),	-- Burning Binding
+
 				i(226138),	-- Vow-Taker's Boots
 				i(226174),	-- Famished Bride's Clasp
 				i(226695),	-- Cunning Advisor's Favor
@@ -1150,10 +914,6 @@ root(ROOTS.Unsorted, {
 				i(224913),	-- Radiant Fuel Cache
 				i(224941),	-- Radiant Fuel Cache
 				i(225240),	-- PH_1
-				i(225239),	-- Overflowing Council of Dornogal Trove
-				i(225245),	-- Overflowing Trove of the Deeps
-				i(225246),	-- Overflowing Hallowfall Trove
-				i(225247),	-- Overflowing Severed Threads Trove
 				i(225365),	-- PH_3
 				i(225541),	-- PH_4
 				i(225553),	-- PH_5
@@ -1204,8 +964,6 @@ root(ROOTS.Unsorted, {
 				i(226154),	-- Wax-Sealed Crafty Crest
 				i(226155),	-- Big Candle
 				i(226156),	-- Really Big Candle
-				i(226204),	-- Fresh Parchment
-				i(226205),	-- Distilled Algari Freshwater
 				i(226257),	-- Delver's Pouch of Valorstones
 				i(226260),	-- Delver's Pouch of Gold
 				i(226430),	-- Navigations of The Soul
@@ -1216,7 +974,6 @@ root(ROOTS.Unsorted, {
 				i(227678),	-- Satchel of Engineering Surplus
 				i(227679),	-- Satchel of Inscription Surplus
 				i(227680),	-- Satchel of Jewelcrafting Surplus
-				i(227769),	-- Bountiful Bolts
 				i(227778),	-- Delver's Bounty
 				i(227779),	-- Delver's Bounty
 				i(227780),	-- Delver's Bounty
@@ -1299,7 +1056,6 @@ root(ROOTS.Unsorted, {
 				i(219215),	-- Wax Puddle
 				i(219293),	-- Sureki Intelligence
 				i(219322),	-- Malodorous Philter
-				i(219323),	-- Gelatinous Unguent
 				i(219350),	-- Maddening Manifest
 				i(219388),	-- Sacred Flame Torch
 				i(219400),	-- Faerin's Torch of Holy Flame
@@ -1315,7 +1071,6 @@ root(ROOTS.Unsorted, {
 				i(223079),	-- Slagshell Egg \\ Recipe: Shadow-Infused Gumbo
 				i(223220),	-- Kaheti All-Purpose Cleanser
 				i(223638),	-- Arathi Trade Goods
-				i(223952),	-- Singed Plush
 				i(224011),	-- Signet of the Thousand Scars
 				i(224012),	-- Signet of the Thousand Scars
 				i(224013),	-- Signet of the Thousand Scars
@@ -1794,7 +1549,7 @@ root(ROOTS.Unsorted, {
 			--------
 			i(228495),	-- Well-Used Potter's Wheel
 			-- Fall out.... Resort
-			i(219013),	-- Superb Beast Fang
+
 			i(219016),	-- Coated Steel Tips
 			i(219017),	-- Silver Armor Clasps
 			i(216665),	-- Warband Bank Distance Inhibitor

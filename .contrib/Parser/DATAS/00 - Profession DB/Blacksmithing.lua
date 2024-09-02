@@ -37,6 +37,21 @@ i(215155, 435908);	-- Tempered Interference-Negating Helmet
 i(0, 446191);		-- Baleful Pauldrons
 i(0, 446188);		-- Fearmonger's Shoulderguards
 i(0, 446179);		-- Shoulderplates of Dread
+
+------------------
+-- PATCH 1.15.3 --
+------------------
+i(227727, 460460);	-- Sulfuron Hammer
+i(227909, 461651, nil, ARMORSMITH);			-- Fiery Plate Gauntlets of the Hidden Technique
+i(228312, 461735, nil, ARMORSMITH);			-- Invincible Mail
+i(227901, 461667, nil, ARMORSMITH);			-- Tempered Dark Iron Plate
+i(228313, 461737, nil, ARMORSMITH);			-- Tempest Gauntlets
+i(228314, 461739, nil, ARMORSMITH);			-- Warcrest of the Great Chief
+i(228307, 461716, nil, WEAPONSMITH);		-- Deadly Heartseeker
+i(228311, 461733, nil, MASTER_HAMMERSMITH);	-- Finely-Enchanted Battlehammer
+i(227905, 461647, nil, MASTER_HAMMERSMITH);	-- Skyrider's Masterwork Stormhammer
+i(228308, 461718, nil, MASTER_HAMMERSMITH);	-- Tranquility
+i(228306, 461714, nil, MASTER_SWORDSMITH);	-- Desecration
 -- #endif
 
 -----------------
@@ -227,7 +242,6 @@ i(2882, 3330);		-- Silvered Bronze Shoulders
 i(10858, 3494);		-- Solid Iron Maul
 i(6046, 7224);		-- Steel Weapon Chain
 i(18592, 21161);	-- Sulfuron Hammer
-i(227727, 460460);	-- Sulfuron Hammer
 i(22222, 27587);	-- Thick Obsidian Breastplate
 i(12682, 16642);	-- Thorium Armor
 i(12683, 16643);	-- Thorium Belt
@@ -254,25 +268,14 @@ i(12727, 16745, nil, ARMORSMITH);	-- Enchanted Thorium Breastplate [REMOVED: 4.0
 i(12725, 16742, nil, ARMORSMITH);	-- Enchanted Thorium Helm [REMOVED: 4.0.3]
 i(12726, 16744, nil, ARMORSMITH);	-- Enchanted Thorium Leggings [REMOVED: 4.0.3]
 i(12699, 16655, nil, ARMORSMITH);	-- Fiery Plate Gauntlets [REMOVED: 4.0.3]
-i(227909, 461651, nil, ARMORSMITH);	-- Fiery Plate Gauntlets of the Hidden Technique
 i(17049, 20872, nil, ARMORSMITH);	-- Fiery Chain Girdle
 i(17053, 20873, nil, ARMORSMITH);	-- Fiery Chain Shoulders
 i(12716, 16728, nil, ARMORSMITH);	-- Helm of the Great Chief
--- #if SEASON_OF_DISCOVERY
-i(228312, 461735, nil, ARMORSMITH);	-- Invincible Mail
--- #endif
 i(12728, 16746, nil, ARMORSMITH);	-- Invulnerable Mail
 i(12717, 16729, nil, ARMORSMITH);	-- Lionheart Helm
 i(12703, 16661, nil, ARMORSMITH);	-- Storm Gauntlets
 i(12720, 16741, nil, ARMORSMITH);	-- Stronghold Gauntlets
--- #if SEASON_OF_DISCOVERY
-i(227901, 461667, nil, ARMORSMITH);	-- Tempered Dark Iron Plate
-i(228313, 461737, nil, ARMORSMITH);	-- Tempest Gauntlets
--- #endif
 i(22388, 27829, nil, ARMORSMITH);	-- Titanic Leggings
--- #if SEASON_OF_DISCOVERY
-i(228314, 461739, nil, ARMORSMITH);	-- Warcrest of the Great Chief
--- #endif
 i(12711, 16724, nil, ARMORSMITH);	-- Whitesoul Helm
 i(12691, 16650, nil, ARMORSMITH);	-- Wildthorn Mail
 -- #else
@@ -310,7 +313,6 @@ i(19209, 23639, nil, WEAPONSMITH);	-- Blackfury
 i(142337, 10011, nil, WEAPONSMITH);	-- Blight
 i(11610, 15292, nil, WEAPONSMITH);	-- Dark Iron Pulverizer
 i(11611, 15294, nil, WEAPONSMITH);	-- Dark Iron Sunderer
-i(228307, 461716, nil, WEAPONSMITH);	-- Deadly Heartseeker
 i(12839, 16995, nil, WEAPONSMITH);	-- Heartseeker
 i(74274, 10007, nil, WEAPONSMITH);	-- Phantom Blade
 -- #else
@@ -344,13 +346,10 @@ i(0, 17040, nil, MASTER_HAMMERSMITH);		-- Master Hammersmith [REMOVED: 4.0.3]
 -- #if BEFORE TBC
 i(19210, 23650, nil, MASTER_HAMMERSMITH);	-- Ebon Hand
 i(12824, 16973, nil, MASTER_HAMMERSMITH);	-- Enchanted Battlehammer [REMOVED: 4.0.3]
-i(228311, 461733, nil, MASTER_HAMMERSMITH);	-- Finely-Enchanted Battlehammer
 i(12833, 16988, nil, MASTER_HAMMERSMITH);	-- Hammer of the Titans
 i(12837, 16993, nil, MASTER_HAMMERSMITH);	-- Masterwork Stormhammer [REMOVED: 6.0.2]
 i(22390, 27830, nil, MASTER_HAMMERSMITH);	-- Persuader
 i(12827, 16983, nil, MASTER_HAMMERSMITH);	-- Serenity
-i(227905, 461647, nil, MASTER_HAMMERSMITH);	-- Skyrider's Masterwork Stormhammer
-i(228308, 461718, nil, MASTER_HAMMERSMITH);	-- Tranquility
 -- #else
 i(19210, 23650);	-- Ebon Hand
 i(12824, 16973);	-- Enchanted Battlehammer [REMOVED: 4.0.3]
@@ -367,7 +366,6 @@ i(19211, 23652, nil, MASTER_SWORDSMITH);	-- Blackguard
 i(12825, 16978, nil, MASTER_SWORDSMITH);	-- Blazing Rapier [CLASSIC-CATA]
 i(12830, 16985, nil, MASTER_SWORDSMITH);	-- Corruption
 i(17059, 20890, nil, MASTER_SWORDSMITH);	-- Dark Iron Reaver
-i(228306, 461714, nil, MASTER_SWORDSMITH);	-- Desecration
 i(12836, 16992, nil, MASTER_SWORDSMITH);	-- Frostguard
 i(22389, 27832, nil, MASTER_SWORDSMITH);	-- Sageblade
 -- #else
@@ -2218,6 +2216,86 @@ i(211585, 430088);	-- Draconic Combatant's Draconium Sabatons
 i(211587, 430089);	-- Draconic Combatant's Draconium Waistguard
 
 ------------------
+-- PATCH 11.0.0 --
+------------------
+--- NYI ---
+i(0, 450290);		-- Core Framework
+i(0, 450243);		-- Echoing Impact
+i(223045, 450244);	-- Burning Binding
+i(223018, 450247);	-- Echoing Truncheon
+i(223046, 450248);	-- Entangling Cutlass
+i(223047, 450249);	-- Haunting Void
+i(218102, 0);		-- Bloodstained Plans: <PVP Alloy>
+i(223026, 0);		-- Plans: Artisan Leatherworker's Knife
+i(223027, 0);		-- Plans: Artisan Leatherworker's Toolset
+i(223025, 0);		-- Plans: Artisan Needle Set
+i(223023, 0);		-- Plans: Artisan Pickaxe
+i(223022, 0);		-- Plans: Artisan Sickle
+i(223024, 0);		-- Plans: Artisan Skinning Knife
+i(223011, 0);		-- Plans: Charged Claymore
+i(223038, 0);		-- Plans: Charged Claymore
+i(223013, 0);		-- Plans: Charged Crusher
+i(223010, 0);		-- Plans: Charged Facesmasher
+i(223012, 0);		-- Plans: Charged Halberd
+i(223039, 0);		-- Plans: Charged Halberd
+i(223008, 0);		-- Plans: Charged Hexsword
+i(223035, 0);		-- Plans: Charged Hexsword
+i(223014, 0);		-- Plans: Charged Invoker
+i(223041, 0);		-- Plans: Charged Invoker
+i(223009, 0);		-- Plans: Charged Runeaxe
+i(223015, 0);		-- Plans: Charged Slicer
+i(223031, 0);		-- Plans: Coreforged Skeleton Key
+i(223016, 0);		-- Plans: Crystal Gazer's Gauntlets
+i(223019, 0);		-- Plans: Entangling Cutlass
+i(223020, 0);		-- Plans: Haunting Void
+i(217950, 0);		-- Plans: Hematic Alloy Blacksmith's Hammer
+i(217952, 0);		-- Plans: Hematic Alloy Blacksmith's Toolbox
+i(217947, 0);		-- Plans: Hematic Alloy Leatherworker's Knife
+i(217949, 0);		-- Plans: Hematic Alloy Leatherworker's Toolset
+i(217954, 0);		-- Plans: Hematic Alloy Needle Set
+i(217948, 0);		-- Plans: Hematic Alloy Pickaxe
+i(217953, 0);		-- Plans: Hematic Alloy Sickle
+i(217955, 0);		-- Plans: Hematic Alloy Skinning Knife
+i(223017, 0);		-- Plans: Lightwatcher's Visor
+i(223044, 0);		-- Plans: Lightwatcher's Visor
+i(217867, 0);		-- Plans: Polarized Alloy Claymore
+i(217879, 0);		-- Plans: Polarized Alloy Crusher
+i(217873, 0);		-- Plans: Polarized Alloy Halberd
+i(217870, 0);		-- Plans: Polarized Alloy Hexsword
+i(217869, 0);		-- Plans: Polarized Alloy Runeaxe
+i(217868, 0);		-- Plans: Polarized Alloy Slicer
+i(217887, 0);		-- Plans: Pressurized Alloy Breastplate
+i(217884, 0);		-- Plans: Pressurized Alloy Defender
+i(217882, 0);		-- Plans: Pressurized Alloy Gauntlets
+i(217880, 0);		-- Plans: Pressurized Alloy Greataxe
+i(217878, 0);		-- Plans: Pressurized Alloy Greatbelt
+i(217877, 0);		-- Plans: Pressurized Alloy Helm
+i(217876, 0);		-- Plans: Pressurized Alloy Legplates
+i(217886, 0);		-- Plans: Pressurized Alloy Longsword
+i(217865, 0);		-- Plans: Pressurized Alloy Mace
+i(217885, 0);		-- Plans: Pressurized Alloy Pauldrons
+i(217866, 0);		-- Plans: Pressurized Alloy Sabatons
+i(217875, 0);		-- Plans: Pressurized Alloy Shortblade
+i(217883, 0);		-- Plans: Pressurized Alloy Spellblade
+i(217881, 0);		-- Plans: Pressurized Alloy Vambraces
+i(217864, 0);		-- Plans: Pressurized Alloy Warglaive
+i(223028, 0);		-- Plans: Seasoned Skillet
+i(223055, 0);		-- Plans: Seasoned Skillet
+i(223021, 0);		-- Plans: Siphoning Stiletto
+i(217951, 0);		-- Plans: Sturdy Expedition Shovel
+i(223029, 0);		-- Plans: Webbed Fishing Line
+i(223030, 0);		-- Plans: Weighted Lure
+i(223057, 0);		-- Plans: Weighted Lure
+i(218103, 0);		-- Plans: <Endgame Alloy C>
+i(217946, 0);		-- Plans: <Epic Smithing Hammer>
+i(217871, 0);		-- Plans: <Insert Bespoke Cantrip Gear>
+i(217874, 0);		-- Plans: <Insert Bespoke Cantrip Gear>
+i(217888, 0);		-- Plans: <Insert Bespoke Cantrip Gear>
+i(217890, 0);		-- Plans: <Insert Bespoke Cantrip Gear>
+i(218100, 0);		-- Plans: <Optional Reagnt A>
+i(218101, 0);		-- Plans: <PVP Alloy>
+
+------------------
 -- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
@@ -2254,6 +2332,7 @@ i(0, 450270);		-- Proficient Needle Set
 i(0, 450268);		-- Proficient Pickaxe
 i(0, 450267);		-- Proficient Sickle
 i(0, 450269);		-- Proficient Skinning Knife
+i(0, 425136);		-- Recraft Equipment
 i(0, 450218);		-- Sanctified Alloy
 --- ITEM ---
 i(225486, 455001);	-- Algari Competitor's Axe

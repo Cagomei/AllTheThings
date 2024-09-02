@@ -1167,12 +1167,27 @@ i(210241, 415628);	-- Dreamwalker's Healing Potion
 i(0, 415810);		-- Potion of Withering Dreams
 
 ------------------
+-- PATCH 11.0.0 --
+------------------
+--- NYI ---
+i(0, 430606);		-- Unknown
+i(0, 430613);		-- Unknown
+i(0, 433271);		-- Unknown
+i(0, 433604);		-- Unknown
+i(0, 433605);		-- Unknown
+i(0, 433606);		-- Unknown
+i(0, 433607);		-- Unknown
+i(0, 433608);		-- Unknown
+
+------------------
 -- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
 i(0, 423321);		-- Khaz Algar Alchemy
 i(0, 430590);		-- Algari Healing Potion
+i(0, 462121);		-- Bubbling Mycobloom Culture
 i(0, 427214);		-- Neutralize Concoctions
+i(0, 462122);		-- Petal Powder
 i(0, 425137);		-- Recraft Equipment
 i(0, 427174);		-- Wild Experimentation
 --- ITEM ---

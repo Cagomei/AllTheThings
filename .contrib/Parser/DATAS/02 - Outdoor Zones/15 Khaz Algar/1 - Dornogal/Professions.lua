@@ -81,11 +81,29 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 49.2, 63.6, DORNOGAL },
 					["g"] = TWW_BLACKSMITHING,
 				}),
+				n(223643, {	-- Borgos <Blacksmithing Supplies>
+					["coord"] = { 48.8, 62.6, DORNOGAL },
+					["g"] = {
+						i(226202),	-- Echoing Flux
+					},
+				}),
 			}),
 			prof(COOKING, {
 				n(219104, {	-- Athodas <Cooking Trainer>
 					["coord"] = { 44.2, 45.8, DORNOGAL },
 					["g"] = TWW_COOKING,
+				}),
+				n(219103, {	-- Kronzon <Cooking Supplies>
+					["coord"] = { 43.6, 45.6, DORNOGAL },
+					["g"] = {
+						i(222701),	-- Clumped Flour
+						i(222697),	-- Coreway Dust
+						i(222696),	-- Crunchy Peppers
+						i(224762),	-- Delver's Waterskin
+						i(222700),	-- Granulated Spices
+						i(222699),	-- Khaz Algar Tomato
+						i(222695),	-- Twined Herbs
+					},
 				}),
 			}),
 			prof(ENCHANTING, {
@@ -114,6 +132,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 49.2, 55.9, DORNOGAL },
 					["g"] = TWW_ENGINEERING,
 				}),
+				n(219098, {	-- Supply Foreman Drezmol <Engineering Supplies>
+					["coord"] = { 49.2, 55.8, DORNOGAL },
+					["g"] = {
+						i(228414),	-- Frayed Wiring
+						i(228956),	-- Junk Bucket
+						i(219150),	-- Pile of Rusted Scrap
+					},
+				}),
 			}),
 			prof(FISHING, {
 				n(219106, {	-- Drokar <Fishing Trainer>
@@ -137,6 +163,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				n(219090, {	-- Brrigan <Inscription Trainer>
 					["coord"] = { 44.8, 70.9, DORNOGAL },
 					["g"] = TWW_INSCRIPTION,
+				}),
+				n(219089, {	-- Kardu <Inscription Supplies>
+					["coord"] = { 48.6, 70.8, DORNOGAL },
+					["g"] = {
+						i(226205),	-- Distilled Algari Freshwater
+						i(226204),	-- Fresh Parchment
+					},
 				}),
 			}),
 			prof(JEWELCRAFTING, {
