@@ -207,6 +207,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(219373),	-- Earthen Traveler's Breastplate
 					},
 				}),
+				------ Stay awhile and listen ------
+				hqt(84620, {	-- Stay awhile and listen: Magni Bronzebeard
+					["name"] = "Stay awhile and listen: Magni Bronzebeard",
+					["sourceQuests"] = { 78696 },	-- We Don't Go to Taelloch
+					["provider"] = { "n", 213633 },	-- Magni Bronzebeard
+					["coord"] = { 62.3, 58.0, THE_RINGING_DEEPS },
+				}),
+				--
 				q(78697, {	-- Ghost of a Company Town
 					["sourceQuests"] = { 78696 },	-- We Don't Go to Taelloch
 					["provider"] = { "n", 213634 },	-- Dagran Thaurissan II
@@ -267,6 +275,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 212741 },	-- Speaker Brinthe
 					["coord"] = { 47.2, 34.2, THE_RINGING_DEEPS },
 				}),
+				------ Stay awhile and listen ------
+				hqt(84699, {	-- Stay awhile and listen: Moira Thaurissan
+					["name"] = "Stay awhile and listen: Moira Thaurissan",
+					["sourceQuests"] = { 78738 },	-- Absent Speaker
+					["provider"] = { "n", 213763 },	-- Moira Thaurissan
+					["coord"] = { 47.0, 20.7, THE_RINGING_DEEPS },
+				}),
+				--
 				q(78742, {	-- Battle of the Earthenworks
 					["sourceQuests"] = { 78738 },	-- Absent Speaker
 					["provider"] = { "n", 213763 },	-- Moira Thaurissan
@@ -319,100 +335,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { 79354 },	-- The Machine Speakers
 					["provider"] = { "n", 212742 },	-- Moira Thaurissan
 					["coord"] = { 47.2, 34.1, THE_RINGING_DEEPS },
-				}),
-			}),
-			header(HEADERS.Achievement, 20597, {	-- The War Within
-				------ Chapter 4 ------
-				q(79022, {	-- A Mysterious Signal
-					["sourceQuests"] = { 79244 },	-- News From Below
-					["provider"] = { "n", 223944 },	-- Alleria Windrunner
-					["coord"] = { 31.5, 59.7, DORNOGAL },
-				}),
-				q(79023, {	-- Small Friend, Big Plans
-					["sourceQuests"] = { 79022 },	-- A Mysterious Signal
-					["provider"] = { "n", 214663 },	-- High Speaker Brinthe
-					["coord"] = { 56.3, 74.9, THE_RINGING_DEEPS },
-				}),
-				q(79024, {	-- Factory Recon
-					["sourceQuests"] = { 79023 },	-- Small Friend, Big Plans
-					["provider"] = { "n", 214663 },	-- High Speaker Brinthe
-					["coord"] = { 56.3, 74.9, THE_RINGING_DEEPS },
-					["g"] = {
-						i(223448),	-- Epaulets of the Ringing Deeps
-						i(223452),	-- Grips of the Ringing Deeps
-						i(223436),	-- Light Boots of the Ringing Deeps
-						i(223463),	-- Sabatons of the Ringing Deeps
-					},
-				}),
-				q(79217, {	-- Back to Base
-					["sourceQuests"] = { 79024 },	-- Factory Recon
-					["provider"] = { "n", 214663 },	-- High Speaker Brinthe
-					["coord"] = { 56.3, 74.9, THE_RINGING_DEEPS },
-				}),
-				q(79025, {	-- A Plan Comes Together
-					["sourceQuests"] = { 79217 },	-- Back to Base
-					["provider"] = { "n", 217245 },	-- High Speaker Brinthe
-					["coord"] = { 47.1, 34.2, THE_RINGING_DEEPS },
-				}),
-				q(79324, {	-- To the Waterworks
-					["sourceQuests"] = { 79025 },	-- A Plan Comes Together
-					["provider"] = { "n", 217245 },	-- High Speaker Brinthe
-					["coord"] = { 47.1, 34.2, THE_RINGING_DEEPS },
-				}),
-				q(79026, {	-- Putting the Works in Waterworks
-					["sourceQuests"] = { 79324 },	-- To the Waterworks
-					["provider"] = { "n", 217331 },	-- Dagran Thaurissan II
-					["coord"] = { 47.3, 42.4, THE_RINGING_DEEPS },
-				}),
-				q(79027, {	-- Elemental Trepidation
-					["sourceQuests"] = { 79324 },	-- To the Waterworks
-					["provider"] = { "n", 216137 },	-- ZZ-01-47
-					["coord"] = { 47.3, 42.4, THE_RINGING_DEEPS },
-					["g"] = {
-						i(223435),	-- Element-Attuned Pendant
-					},
-				}),
-				q(79325, {	-- Shadowvein Extraction
-					["sourceQuests"] = {
-						79027,	-- Elemental Trepidation
-						79026,	-- Putting the Works in Waterworks
-					},
-					["provider"] = { "n", 217331 },	-- Dagran Thaurissan II
-					["coord"] = { 47.3, 42.4, THE_RINGING_DEEPS },
-				}),
-				q(79028, {	-- We Require More Minerals
-					["sourceQuests"] = { 79325 },	-- Shadowvein Extraction
-					["provider"] = { "n", 216140 },	-- ZZ-01-47
-					["coord"] = { 55.7, 41.1, THE_RINGING_DEEPS },
-				}),
-				q(80145, {	-- The Motherlode
-					["sourceQuests"] = { 79028 },	-- We Require More Minerals
-					["provider"] = { "n", 218622 },	-- ZZ-01-47
-					--["coord"] = { x, y, THE_RINGING_DEEPS },	-- following player
-				}),
-				q(80517, {	-- Back to Where it Began
-					["sourceQuests"] = { 80145 },	-- The Motherlode
-					["provider"] = { "n", 218622 },	-- ZZ-01-47
-					--["coord"] = { x, y, THE_RINGING_DEEPS },	-- following player
-				}),
-				q(79029, {	-- It's Sabotage
-					["sourceQuests"] = { 80517 },	-- Back to Where it Began
-					["provider"] = { "n", 214663 },	-- High Speaker Brinthe
-					["coord"] = { 56.3, 74.9, THE_RINGING_DEEPS },
-					["g"] = {
-						i(223467),	-- Saboteur's Girdle
-						i(223442),	-- Saboteur's Grips
-						i(223440),	-- Saboteur's Shoulderpads
-						i(223451),	-- Saboteur's Striders
-					},
-				}),
-				q(79030, {	-- The Voice of the Speakers
-					["sourceQuests"] = { 79029 },	-- It's Sabotage
-					["provider"] = { "n", 220928 },	-- High Speaker Brinthe
-					["coord"] = { 56.1, 77.6, THE_RINGING_DEEPS },
-					["g"] = {
-						-- crit 'The Machines March to War'
-					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.01, {	-- The Caretaker of Brunwin's Terrace
@@ -1321,20 +1243,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 70.7, 39.8, THE_RINGING_DEEPS },
 				}),
-			}),
-
-			-- Stay awhile and listen
-			hqt(84620, {	-- Stay awhile and listen: Magni Bronzebeard
-				["name"] = "Stay awhile and listen: Magni Bronzebeard",
-				["sourceQuests"] = { 78696 },	-- We Don't Go to Taelloch
-				["provider"] = { "n", 213633 },	-- Magni Bronzebeard
-				["coord"] = { 62.3, 58.0, THE_RINGING_DEEPS },
-			}),
-			hqt(84699, {	-- Stay awhile and listen: Moira Thaurissan
-				["name"] = "Stay awhile and listen: Moira Thaurissan",
-				["sourceQuests"] = { 78738 },	-- Absent Speaker
-				["provider"] = { "n", 213763 },	-- Moira Thaurissan
-				["coord"] = { 47.0, 20.7, THE_RINGING_DEEPS },
 			}),
 		}),
 	}),

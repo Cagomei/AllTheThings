@@ -78,12 +78,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78392, {	-- The Tangled Web
 					["sourceQuests"] = { 78354 },	-- A Guiding Thread
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
+					["coord"] = { 55.6, 43.9, AZJ_KAHET },
 				}),
 				q(78393, {	-- A Seeming Respite
 					["sourceQuests"] = { 78354 },	-- A Guiding Thread
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
+					["coord"] = { 55.6, 43.9, AZJ_KAHET },
 				}),
 				------ Chapter 2 ------
 				q(78233, {	-- The Weaver's Gift
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78352,	-- The Tangled Web
 					},
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
+					["coord"] = { 55.6, 43.9, AZJ_KAHET },
 				}),
 				q(80399, {	-- Rations and Revelations
 					["sourceQuests"] = { 78233 },	-- The Weaver's Gift
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78226, {	-- A Most Intriguing Invitation
 					["sourceQuests"] = { 78256 },	-- The General's Consensus
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
+					["coord"] = { 55.6, 43.9, AZJ_KAHET },
 					["g"] = {
 						i(212605),	-- The Vizier's Invitation (QI!)
 					},
@@ -252,6 +252,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 211351 },	-- Anduin Wrynn
 					["coord"] = { 67.1, 31.5, NERUBAR_LOWER },
 				}),
+				------ Stay awhile and listen ------
+				hqt(81946, {	-- Stay awhile and listen: Anduin Wrynn
+					["name"] = "Stay awhile and listen: Anduin Wrynn",
+					["sourceQuests"] = { 78228 },	-- Into a Skittering City
+					["provider"] = { "n", 211351 },	-- Anduin Wrynn
+					["coord"] = { 67.0, 31.8, NERUBAR_LOWER },
+				}),
+				--
 				q(78232, {	-- Rewriting the Rewritten
 					["sourceQuests"] = { 78228 },	-- Into a Skittering City
 					["provider"] = { "n", 211499 },	-- Executor Nizrek
@@ -279,83 +287,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(225563),	-- Threadmaestro's Collar
 					},
 				}),
+				------ Stay awhile and listen ------
+				hqt(82033, {	-- Stay awhile and listen: Alleria Windrunner
+					["name"] = "Stay awhile and listen: Alleria Windrunner",
+					["sourceQuests"] = { 78244 },	-- Kaheti Hospitality
+					["provider"] = { "n", 217385 },	-- Alleria Windrunner
+					["coord"] = { 60.6, 68.7, AZJ_KAHET },
+				}),
+				--
 				q(78248, {	-- What We Still Have
 					["sourceQuests"] = { 78244 },	-- Kahet Hospitality
 					["provider"] = { "n", 217385 },	-- Alleria Windrunner
 					["coord"] = { 60.7, 71.1, AZJ_KAHET },
 					["g"] = {
 						-- crit 'Plans Within Plans' for achievementID ? (Azj-Kahet)
-					},
-				}),
-			}),
-			header(HEADERS.Achievement, 20597, {	-- The War Within
-				------ Chapter 3 ------
-				q(79224, {	-- Gathering Intel
-					["sourceQuests"] = { 79157 },	-- Titanic Failsafe
-					["provider"] = { "n", 223944 },	-- Alleria Windrunner
-					["coord"] = { 31.6, 59.6, DORNOGAL },
-				}),
-				q(79227, {	-- A Spider's-Eye View
-					["sourceQuests"] = { 79224 },	-- Gathering Intel
-					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
-				}),
-				q(79230, {	-- Creeping Through Corridors
-					["sourceQuests"] = { 79227 },	-- A Spider's-Eye View
-					["provider"] = { "n", 215626 },	-- Lilian Voss
-					["coord"] = { 69.5, 71.7, NERUBAR },
-				}),
-				q(79233, {	-- Lab Access
-					["sourceQuests"] = { 79227 },	-- A Spider's-Eye View
-					["provider"] = { "n", 215637 },	-- Y'tekhi
-					["coord"] = { 69.5, 72.2, NERUBAR },
-					["g"] = {
-						i(215457),	-- Loyalist Secretions (QI!)
-					},
-				}),
-				q(79237, {	-- Making of a Monster
-					["sourceQuests"] = {
-						79230,	-- Creeping Through Corridors
-						79233,	-- Lab Access
-					},
-					["provider"] = { "n", 215628 },	-- Lilian Voss
-					["coord"] = { 56.7, 90.6, NERUBAR },
-					["g"] = {
-						i(223431),	-- The Fallen Queen's Band
-					},
-				}),
-				q(79239, {	-- The Queen's Chains
-					["sourceQuests"] = { 79237 },	-- Making of a Monster
-					["provider"] = { "n", 215659 },	-- Y'tekhi
-					["coord"] = { 57.1, 91.0, NERUBAR },
-				}),
-				q(79240, {	-- Rogue Agent
-					["sourceQuests"] = { 79239 },	-- The Queen's Chains
-					["provider"] = { "n", 215661 },	-- Lilian Voss
-					["coord"] = { 78.8, 57.3, NERUBAR },
-				}),
-				q(79241, {	-- Go Loud
-					["sourceQuests"] = { 79240 },	-- Rogue Agent
-					["provider"] = { "n", 215662 },	-- Lilian Voss
-					["coord"] = { 78.6, 39.6, NERUBAR },
-				}),
-				q(79243, {	-- Manufactured Mutiny
-					["sourceQuests"] = { 79240 },	-- Rogue Agent
-					["provider"] = { "n", 215662 },	-- Lilian Voss
-					["coord"] = { 78.6, 39.6, NERUBAR },
-				}),
-				q(79244, {	-- News From Below
-					["sourceQuests"] = {
-						79241,	-- Go Loud
-						79243,	-- Manufactured Mutiny
-					},
-					["provider"] = { "n", 215625 },	-- Lilian Voss
-					["coord"] = { 56.3, 48.5, AZJ_KAHET },
-					["g"] = {
-						i(223437),	-- Handwraps of the Weaver
-						i(223466),	-- Mantle of the Weaver
-						i(223445),	-- Sash of the Weaver
-						i(223455),	-- Shoulderguards of the Weaver
 					},
 				}),
 			}),
@@ -1007,6 +952,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(223439),	-- Mereldar Scholar's Leggings
 					},
 				}),
+				------ Stay awhile and listen ------
+				hqt(81513, {	-- Stay awhile and listen: Faerin Lothar
+					["name"] = "Stay awhile and listen: Faerin Lothar",
+					["sourceQuests"] = { 82284 },	-- Remembrance for the Fallen
+					["provider"] = { "n", 211409 },	-- Faerin Lothar
+					["coord"] = { 59.3, 19.3, AZJ_KAHET },
+				}),
 			}),
 			header(HEADERS.Achievement, 40832, {	-- Leave it to Weaver
 				q(84700, {	-- Pacts Below
@@ -1034,7 +986,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79532, {	-- Tinker, Tailor, Soldier, Spider
 					["sourceQuests"] = { 83277 },	-- Personal Pilfering (could be wrong, spawn some time afterwards)
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
+					["coord"] = { 55.6, 43.9, AZJ_KAHET },
 				}),
 				q(79627, {	-- Wine and Die
 					["sourceQuests"] = { 79532 },	-- Tinker, Tailor, Soldier, Spider
@@ -1160,27 +1112,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 72.8, 55.0, AZJ_KAHET },
 				}),
 			}),
-
-			-- Stay awhile and listen
-			hqt(81946, {	-- Stay awhile and listen: Anduin Wrynn
-				["name"] = "Stay awhile and listen: Anduin Wrynn",
-				["sourceQuests"] = { 78228 },	-- Into a Skittering City
-				["provider"] = { "n", 211351 },	-- Anduin Wrynn
-				["coord"] = { 67.0, 31.8, NERUBAR_LOWER },
-			}),
-			hqt(82033, {	-- Stay awhile and listen: Alleria Windrunner
-				["name"] = "Stay awhile and listen: Alleria Windrunner",
-				["sourceQuests"] = { 78244 },	-- Kaheti Hospitality
-				["provider"] = { "n", 217385 },	-- Alleria Windrunner
-				["coord"] = { 60.6, 68.7, AZJ_KAHET },
-			}),
-			hqt(81513, {	-- Stay awhile and listen: Faerin Lothar
-			["name"] = "Stay awhile and listen: Faerin Lothar",
-				["sourceQuests"] = { 82284 },	-- Remembrance for the Fallen
-				["provider"] = { "n", 211409 },	-- Faerin Lothar
-				["coord"] = { 59.3, 19.3, AZJ_KAHET },
-			}),
-
 		}),
 	}),
 })));

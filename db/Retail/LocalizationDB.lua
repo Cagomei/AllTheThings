@@ -527,7 +527,6 @@ localize(L.HEADER_NAMES, {
 	[-1000364] = "Diablo Events",
 	[-1000365] = "Diablo 20th Anniversary",
 	[-1000366] = "A Greedy Emissary",
-	[-1000367] = QUEST_REWARDS,
 	[-1000368] = GetDifficultyInfo(24),
 	[-1000369] = "Year 2024",
 	[-1000373] = "New Character",
@@ -645,8 +644,9 @@ localize(L.HEADER_NAMES, {
 	[-1001021] = "Discord Promotion",
 	[-1001022] = "Family Battler",
 	[-1001024] = "Patron Rewards",
-	[-1001025] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
-	[-1001026] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1001027] = QUEST_REWARDS,
+	[-1001028] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
+	[-1001029] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -718,7 +718,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000334] = "This quest indicates if you have activated the Feralas Owlcat Stone.",
 	[-1000335] = "This quest indicates if you have activated the Hinterlands Owlcat Stone.",
 	[-1000362] = "Congrats on making it this far!  Now it's time to take your favorite li'l ghost on a world tour.",
-	[-1000367] = "This is rewarded for filling the Travel Points Progress Bar in the month.",
 	[-1000368] = "Timewalking difficulties needlessly create new Source IDs for items despite having the exact same name, appearance, and display in the Collections Tab.\n\nA plea to the Blizzard Devs: Please clean up the Source ID database and have your Timewalking / Titanforged item variants use the same Source ID as their base assuming the appearances and names are exactly the same. Not only will this make your database much cleaner, but it will also make Completionists excited for rather than dreading the introduction of more Timewalking content.\n\n - Crieve, the Very Bitter Account Completionist that had 99% Ulduar completion and now only has 64% because your team duplicated the Source IDs rather than reuse the existing one.",
 	[-1000380] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
 	[-1000381] = "Buy a Kukuru's Cache Key to open this. Has a very small chance of containing a Burden of Eternity and more frequently, the Bonkers pet.",
@@ -735,6 +734,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1001001] = "These promotions happened during the time The War Within.\n\nThey are listed in the order of their first appearance.",
 	[-1001011] = "Promotion for SteelSeries World of Warcraft Limited Edition Collection.",
 	[-1001021] = "Promotion for streaming World of Warcraft in Discord.",
+	[-1001027] = "This reward is given for filling the Travel Points Progress Bar during the month.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1077,7 +1077,6 @@ localize(L.HEADER_ICONS, {
 	[-1000364] = "Interface/Icons/DiabloAnniversary_HoradricCube",
 	[-1000365] = "Interface/Icons/diabloanniversary_achievement",
 	[-1000366] = "Interface/Icons/inv_misc_bag_horadricsatchel",
-	[-1000367] = _.asset("Interface_Rewards"),
 	[-1000368] = _.asset("Difficulty_Timewalking"),
 	[-1000369] = "Interface/Icons/inv_misc_missilesmall_green",
 	[-1000373] = "1530081",
@@ -1179,6 +1178,7 @@ localize(L.HEADER_ICONS, {
 	[-1001021] = "133014",
 	[-1001022] = "Interface/Icons/inv_pet_achievement_captureapetfromeachfamily",
 	[-1001024] = "Interface/Icons/inv_tabard_craftingorder_c_01",
+	[-1001027] = "4696085",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -12107,8 +12107,8 @@ localize(L.HEADER_NAMES, {
 	[-1000944] = "Tauschhandels",
 	[-1000945] = "Angriffe von Fyrakk",
 	[-1001006] = "Garnisonskampagne",
-	[-1001025] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
-	[-1001026] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[-1001028] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
+	[-1001029] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -16072,8 +16072,8 @@ localize(L.HEADER_NAMES, {
 	[-1000938] = "Olfatobúsqueda",
 	[-1000944] = "Comercio",
 	[-1000945] = "Asaltos de Fyrakk",
-	[-1001025] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
-	[-1001026] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[-1001028] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
+	[-1001029] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -19937,8 +19937,8 @@ localize(L.HEADER_NAMES, {
 	[-1000938] = "Recherches olfactives",
 	[-1000944] = "Marchandage",
 	[-1000945] = "Assauts de Fyrakk",
-	[-1001025] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
-	[-1001026] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[-1001028] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
+	[-1001029] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
@@ -23862,8 +23862,8 @@ localize(L.HEADER_NAMES, {
 	[-1000938] = "Il Fiutatutto",
 	[-1000944] = "Baratto",
 	[-1000945] = "Assalti di Fyrakk",
-	[-1001025] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
-	[-1001026] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[-1001028] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
+	[-1001029] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -27456,8 +27456,8 @@ localize(L.HEADER_NAMES, {
 	[-1000937] = "지스케라 금고",
 	[-1000938] = "냄새 추적",
 	[-1000945] = "피락의 습격",
-	[-1001025] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
-	[-1001026] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[-1001028] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
+	[-1001029] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -30951,8 +30951,8 @@ localize(L.HEADER_NAMES, {
 	[-1000938] = "Busca farejante",
 	[-1000944] = "Pechincha",
 	[-1000945] = "Ofensivas de Fyrakk",
-	[-1001025] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
-	[-1001026] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[-1001028] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
+	[-1001029] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -34879,8 +34879,8 @@ localize(L.HEADER_NAMES, {
 	[-1000944] = "Обмен",
 	[-1000945] = "Налеты Фиракка",
 	[-1001006] = "Гарнизонная кампания",
-	[-1001025] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
-	[-1001026] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[-1001028] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
+	[-1001029] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
@@ -38925,8 +38925,8 @@ localize(L.HEADER_NAMES, {
 	[-1000944] = "以物易物",
 	[-1000945] = "菲莱克突袭",
 	[-1001006] = "要塞战役",
-	[-1001025] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
-	[-1001026] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-1001028] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
+	[-1001029] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",

@@ -8,6 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Combine 'Offering of Pure Water' and 'Jar of Mucus' to get this item.\nUsed to summon 'Deathtide' rare",
 			}),
 			o(444798, {	-- Arathi Treasure Hoard
+				["description"] = "Spawns everywhere in Hallowfall",
 				["maps"] = { HALLOWFALL },
 				["g"] = {
 					i(224463),	-- Lily's Locket (QS!)
@@ -52,15 +53,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(225693),	-- Shadowed Essence
 				},
 			}),
-			--[[
-			o(xx, {	-- Faded Supply Chest
-				["coord"] = { 61.8, 17.4, HALLOWFALL },
-				["questID"] = xx,
-				["g"] = {
-					-- didn't find key for it and missing vignette
-				},
-			}),
-			--]]
 			o(437302, {	-- Fisherman's Pouch
 				["coord"] = { 56.1, 14.6, HALLOWFALL },
 				["questID"] = 81518,
@@ -96,7 +88,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81971,
 				["g"] = {
 					i(224580, {	-- Massive Sapphire Chunk
-						i(212508),	-- Stunning Sapphire x3
+					--	i(212508),	-- Stunning Sapphire x3
 					}),
 				},
 			}),
@@ -134,6 +126,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(419695, {	-- Spore-Covered Coffer
+				["description"] = "Inside the Shadowmire cave.",
 				["coord"] = { 76.8, 53.8, HALLOWFALL },
 				["questID"] = 79275,
 				["g"] = {
@@ -266,33 +259,57 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 221630 },	-- Ryfus Sacredpyr
 				["coord"] = { 40.0, 51.1, HALLOWFALL },
 				["questID"] = 83298,
-				["cost"] = {
-					{ "i", 225216, 1 },	-- Palawltar's Codex of Dimensional Structure / Question 1
-					{ "i", 225207, 1 },	-- Care and Feeding of the Imperial Lynx / Question 2
-					{ "i", 225204, 1 },	-- Shadow Curfew Guidelines / Question 3
-					{ "i", 225203, 1 },	-- Beledar- The Emperor's Vision / Question 4
-					{ "i", 225215, 1 },	-- The Song of Renilash / Question 5
-					{ "i", 225212, 1 },	-- The Big Book of Arathi Idioms / Question 6
-				},
+				["sourceQuest"] = 83305,	-- Question 6
+				-- ["cost"] = {
+				-- 	{ "i", 225216, 1 },	-- Palawltar's Codex of Dimensional Structure / Question 1
+				-- 	{ "i", 225207, 1 },	-- Care and Feeding of the Imperial Lynx / Question 2
+				-- 	{ "i", 225204, 1 },	-- Shadow Curfew Guidelines / Question 3
+				-- 	{ "i", 225203, 1 },	-- Beledar- The Emperor's Vision / Question 4
+				-- 	{ "i", 225215, 1 },	-- The Song of Renilash / Question 5
+				-- 	{ "i", 225212, 1 },	-- The Big Book of Arathi Idioms / Question 6
+				-- },
 				["g"] = {
 					i(225659),	-- Arathi Book Collection (TOY!)
 					q(83300, {	-- Question 1
-						["name"] = "Get Palawltar's Codex of Dimensional Structure for right answer on 1st question"
+						["name"] = "Answer 1: That the Cosmos consisted of monopole elemental phase spaces.",
+						["sourceQuests"] = {
+							83309, -- Palawltar's Codex of Dimensional Structure
+						},
 					}),
 					q(83301, {	-- Question 2
-						["name"] = "Get Care and Feeding of the Imperial Lynx for right answer on 2nd question"
+						["name"] = "Answer 2: Patience and respect.",
+						["sourceQuests"] = {
+							83300, -- previous step
+							83310, -- Care and Feeding of the Imperial Lynx
+						},
 					}),
 					q(83302, {	-- Question 3
-						["name"] = "Get Shadow Curfew Guidelines for right answer on 3rd question"
+						["name"] = "Answer 3: Seek shelter and light. Have plans, have backup plans. Find joy while sheltering.",
+						["sourceQuests"] = {
+							83301, -- previous step
+							83311, -- Shadow Curfew Guidelines
+						},
 					}),
 					q(83303, {	-- Question 4
-						["name"] = "Get Beledar - The Emperor's Vision for right answer on 4th question"
+						["name"] = "Answer 4: The third fleet.",
+						["sourceQuests"] = {
+							83302, -- previous step
+							83312, -- Beledar- The Emperor's Vision
+						},
 					}),
 					q(83304, {	-- Question 5
-						["name"] = "Get The Song of Renilash for right answer on 5th question"
+						["name"] = "Answer 5: The Remains of gods.",
+						["sourceQuests"] = {
+							83303, -- previous step
+							83313, -- The Song of Renilash
+						},
 					}),
 					q(83305, {	-- Question 6
-						["name"] = "Get The Big Book of Arathi Idioms for right answer on 6th question"
+						["name"] = "Answer 6: From the letters of Mereldar.",
+						["sourceQuests"] = {
+							83304, -- previous step
+							83314, -- The Big Book of Arathi Idioms
+						},
 					}),
 				},
 			}),

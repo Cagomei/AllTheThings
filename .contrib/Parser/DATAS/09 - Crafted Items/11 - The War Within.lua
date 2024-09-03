@@ -1986,6 +1986,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(213515),	-- Solid Amber+
 			i(213516),	-- Solid Amber++
 			i(213517),	-- Solid Amber+++
+			i(212508),	-- Stunning Sapphire
 			i(213510),	-- Versatile Amber+
 			i(213511),	-- Versatile Amber++
 			i(213512),	-- Versatile Amber+++
@@ -2689,7 +2690,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		prof(MINING, {
 			q(82317),	-- 45/45 Mastering the Mysterious
 		}),
-		n(PROFESSIONS, {
+		prof(SKINNING, {
+			q(81440),	-- Refine Hides+++ (Triggered when learned via specialization)
+		}),
+		n(PROFESSIONS, {	-- double header on purpose - Darkal
 			-- Using Contracts
 			q(84484),	-- Contract: Assembly of the Deeps [Rank 1] (spellID 454934)
 			q(84483),	-- Contract: Assembly of the Deeps [Rank 2] (spellID 454935)
