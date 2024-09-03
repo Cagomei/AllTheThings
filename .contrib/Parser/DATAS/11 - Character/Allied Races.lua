@@ -127,10 +127,13 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	header(HEADERS.Race, EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }}, {
-		-- TODO: Make this automated again when we can
-		achraw(40307, {	-- Allied Races: Earthen
-			-- TODO: missing questid 83503, currently not sourced
-			crit(66993), -- The War Within campaign
+		-- TODO: Why isn't this achievement being automated? Is it because all quests already belong to other criteria of other achievements?
+		ach(40307, {	-- Allied Races: Earthen
+			crit(66993, { -- The War Within campaign
+				["_quests"] = {
+					83503,	-- Return to Dornogal
+				},
+			}),
 			crit(68162, { -- Mourning Rise
 				["_quests"] = {
 					82895, -- Mourning Rise
@@ -146,6 +149,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 					79530, -- Merrix and Steelvein
 				},
 			}),
+			i(223572),	-- Slatestone Ramolith (MOUNT!)
 		}),
 		q(79200, {	-- Who am I?
 			--["sourceQuests"] = { xx },	-- probably some hqt or something like from adventure mode (if they didn't change requirement?)
