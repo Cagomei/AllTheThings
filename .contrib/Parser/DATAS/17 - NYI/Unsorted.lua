@@ -20,7 +20,6 @@ root(ROOTS.Unsorted, {
 				i(228631),	-- Satchel of Drake's Awakened Crests
 				i(228632),	-- Clutch of Wyrm's Awakened Crests
 				i(228633),	-- Large Pouch of Whelpling's Awakened Crests
-				i(228720),	-- Nascent Gemstone
 				i(228742),	-- Unidentifiable Cloth
 				i(228743),	-- Damp Weavercloth
 				i(228744),	-- Golbin Twist-Rag
@@ -65,7 +64,6 @@ root(ROOTS.Unsorted, {
 			i(229077),	-- Azra's Spare Shoulderguards
 			i(229078),	-- Aevery's Spare Brigandine
 			i(229079),	-- Aevery's Spare Boots
-			i(229083),	-- Aevery's Spare Shoulderguards
 			i(229084),	-- Aevery's Spare Belt
 			i(229086),	-- Kyros's Spare Helm
 			i(229087),	-- Kyros's Spare Chestplate
@@ -122,15 +120,11 @@ root(ROOTS.Unsorted, {
 			i(229150),	-- Lamplighter's Splitter
 			i(229151),	-- Lamplighter's Hatchet
 			i(229153),	-- Lamplighter's Cudgel
-			i(229154),	-- Lamplighter's Edge
 			i(229156),	-- Lamplighter's Great Mallet
 			i(229157),	-- Lamplighter's Bulwark
 			i(229158),	-- Lamplighter's War Knives
-			i(229159),	-- Lamplighter's Lightstone
-			i(229160),	-- Lamplighter's Glaive
 			i(229161),	-- Lamplighter's Chopper
 			i(229162),	-- Lamplighter's Sword
-			i(229163),	-- Lamplighter's Blade
 			i(229194),	-- Queen's Pheromone
 			i(229195),	-- Queen's Pheromone
 			i(229370),	-- Companion Experience
@@ -162,10 +156,6 @@ root(ROOTS.Unsorted, {
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(TITLES, {
 				title(560),	-- <Name> Ascension Breaker
-				title(564),	-- Machine Whisperer <Name>
-				title(565),	-- Honorary Councilmember <Name>
-				title(566),	-- Lamplighter <Name>
-				title(567),	-- Thread-Spinner <Name>
 				title(568),	-- <Name>, Machine-Warden
 			}),
 			filter(BATTLE_PETS, {
@@ -417,9 +407,6 @@ root(ROOTS.Unsorted, {
 				i(224167),	-- Gundargaz Tabard \\ Dark Earthen Tabard \\ [PH] Earthen Tabard
 				i(224168),	-- Stonebound Tabard \\ Silver Earthen Tabard \\ [PH] Earthen Tabard
 				i(224169),	-- Freywold Tabard \\ Sage Earthen Tabard \\ [PH] Earthen Tabard
-				i(225752),	-- Dornogal Defender
-				i(225757),	-- Coreway Pickaxe
-				i(225884),	-- Extra Large Leek \\ Extra Large Leak
 				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
 				i(226363),	-- Earthen Backpack
 				i(226366),	-- Gloves of the Morning Mist
@@ -858,25 +845,17 @@ root(ROOTS.Unsorted, {
 				i(219494),	-- Ritual Flame
 				i(220156),	-- Bubbling Wax
 				i(220220),	-- Ornate Pipe
-				i(220225),	-- Tattered Standard
 				i(220233),	-- Extinguished Icon
-				i(220240),	-- Night's Litany
-				i(220245),	-- Charged Antennae
-				i(220250),	-- Filthy Handkerchief
 				i(220260),	-- Corroded Golem Graspers
 				i(220265),	-- Slitted Eye
-				i(220269),	-- Ionized Feather
 				i(220274),	-- Chipped Hammer
-				i(220278),	-- Well-Worn Leather Sole
 				i(220284),	-- Darkened Crystal
-				i(220285),	-- Moldy Rucksack
 				i(220286),	-- Tarnished Medallion
 				i(220298),	-- Melted Candle Stump
 				i(220303),	-- Decayed Flesh
 				i(220340),	-- Meatball Cluster
 				i(220342),	-- Spiced Stock
 				i(220377),	-- Growing Void Mass
-				i(220438),	-- Root-Staff Splinter
 				i(220439),	-- Half-Eaten Fish
 				i(220440),	-- Kelp Necklace
 				i(220441),	-- Hardened Pearl
@@ -888,7 +867,6 @@ root(ROOTS.Unsorted, {
 				i(220448),	-- Cerulean Orb
 				i(220484),	-- Bowl of Pulsing Goo
 				i(220486),	-- Collection of Shiny Shells
-				i(220491),	-- Wicked Blade Shard
 				i(220770),	-- Void-Scarred Stormhammer
 				i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
 				i(217970),	-- Dormant Runestone
@@ -905,7 +883,6 @@ root(ROOTS.Unsorted, {
 				i(223805),	-- Bag Test A
 				i(223806),	-- Bag Test B
 				i(223869),	-- DO NOT USE Prismatic Codex
-				i(223897),	-- Ruptured Engine \\ Ruptered Engine
 				i(224269),	-- [DNT] 11.0 Food/Drink Template - Food Only - Level 75 - Required Level 70
 				i(224767),	-- Giant Candle Parts
 				i(224786),	-- Skeleton King Outfit
@@ -919,36 +896,12 @@ root(ROOTS.Unsorted, {
 				i(225553),	-- PH_5
 				i(225570),	-- Algari Fowlfeather
 				i(225640),	-- Abyssal Lure
-				i(225786),	-- Chitin Stress Ball
 				i(225788),	-- Congratulatory Ascension Silk
-				i(225789),	-- Curved Threadripper
-				i(225793),	-- Acid-Etched Pendant
-				i(225794),	-- Preserved Gold-Inlaid Chelicera
-				i(225797),	-- The Fifty Rules of Commerce, Fourth Edition
-				i(225798),	-- Intricately Carved Barter Boulder
 				i(225799),	-- Dazzling Spanner
 				i(225805),	-- Ornate Box of Seasonings
 				i(225806),	-- Crystal Inkwell
-				i(225809),	-- Oiled Pigment Pouch
-				i(225818),	-- Tainted Incense
-				i(225819),	-- Smudged Propaganda
-				i(225822),	-- Jar of Cinderbee Honey
-				i(225823),	-- Split Bull-Horn
 				i(225824),	-- Sand Sculpting Comb
-				i(225825),	-- Ground Snacking Stone
-				i(225826),	-- Broken Elevator Cog
-				i(225834),	-- Pilfered Matchbook
-				i(225835),	-- Battered Lantern
-				i(225841),	-- Ever-Frozen Ice
-				i(225844),	-- Damaged Radial Cog
-				i(225846),	-- Fractured Command Matrix
-				i(225847),	-- Inoperable Keystone
 				i(225848),	-- Cracked Etheric Power Core
-				i(225853),	-- Broken Stirrup
-				i(225854),	-- Muddied Amulet
-				i(225875),	-- Pitted Armor Plating
-				i(225878),	-- The Fifty Rules of Commerce, Fourth Edition
-				i(225879),	-- The Fifty Rules of Commerce, Fourth Edition
 				i(225896),	-- Void-Touched Valorstone
 				i(225930),	-- Glimmering Crystal
 				i(225948),	-- Harbinger's Equipment Chest
@@ -956,7 +909,6 @@ root(ROOTS.Unsorted, {
 				i(226045),	-- The General's Trove
 				i(226100),	-- The Vizier's Trove
 				i(226108),	-- [DNT] Debug Profession Stats
-				i(226149),	-- Pile of Humming Shinies
 				i(226150),	-- Gem-Studded Candelabra
 				i(226151),	-- Wax-Coated Coffer Unlocker
 				i(226152),	-- Wax-sealed Crests
@@ -968,7 +920,6 @@ root(ROOTS.Unsorted, {
 				i(226260),	-- Delver's Pouch of Gold
 				i(226430),	-- Navigations of The Soul
 				i(226524),	-- Partially-Charged Hologem
-				i(226681),	-- Sizzling Cinderpollen
 				i(227668),	-- Delver's Bounty
 				i(227677),	-- Satchel of Enchanting Surplus
 				i(227678),	-- Satchel of Engineering Surplus
@@ -986,7 +937,6 @@ root(ROOTS.Unsorted, {
 				i(228195),	-- Tattered Goblin Cap
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
-				i(228429),	-- Reflective Rock
 				i(228449),	-- Tasty Iron Bar
 				i(228450),	-- Edible Copper Nuggets
 				i(228451),	-- Scrumptious Gold Bar
@@ -1028,7 +978,6 @@ root(ROOTS.Unsorted, {
 				i(213405),	-- Incriminating Focus
 				i(213424),	-- Keg of Cinderbrew Mead
 				i(213425),	-- Shredded Reins
-				i(213538),	-- Wood-Worm Tonic \\ Wood-Worm Liqueur \\ Necrotic Dart
 				i(213557),	-- Lost Journal Tablet
 				i(216605),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
 				i(216682),	-- The Vizier's Invitation
@@ -1045,9 +994,7 @@ root(ROOTS.Unsorted, {
 				i(217996),	-- Sureki Tithe
 				i(218084),	-- Crumpled Note
 				i(218104),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
-				i(218124),	-- Element Extractor
 				i(218127),	-- Ever-Blossoming Fungi
-				i(218456),	-- Precious Gems
 				i(218457),	-- Special Silk
 				i(218458),	-- Important Info Scrolls
 				i(218459),	-- TBD
@@ -1080,7 +1027,6 @@ root(ROOTS.Unsorted, {
 				i(224180),	-- Worn Journal
 				i(224182),	-- Webbed Ingots
 				i(224252),	-- Calcified Journal
-				i(224460),	-- The Lost Diary
 				i(224777),	-- Sureki Shadecaster
 				i(224810),	-- Woodworm Elixir
 				i(225336),	-- A Lost Shoe
@@ -1550,8 +1496,6 @@ root(ROOTS.Unsorted, {
 			i(228495),	-- Well-Used Potter's Wheel
 			-- Fall out.... Resort
 
-			i(219016),	-- Coated Steel Tips
-			i(219017),	-- Silver Armor Clasps
 			i(216665),	-- Warband Bank Distance Inhibitor
 			i(225431),	-- Design: Vicious Jeweler's Setting
 			--
@@ -1567,7 +1511,6 @@ root(ROOTS.Unsorted, {
 			title(568),	-- <Name>, Machine-Warden
 			i(226218),	-- Machine-Warden's Cloak
 			-- Fallout
-			i(219934),	-- Spark of War
 			i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
 			i(226103),	-- The Weaver's Trove
 			i(226165),	-- Unseemly Agate Choker

@@ -75,6 +75,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 				["questID"] = 81836,
 				["g"] = {
+					i(221248),	-- Deep Terror Carver
 					i(221211),	-- Grasp of the Shallows
 					i(221255),	-- Sharpened Scalepiercer
 				},
@@ -146,6 +147,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 44.0, 16.4, HALLOWFALL },
 				["questID"] = 81791,
 				["g"] = {
+					i(221246),	-- Fierce Beast Staff
 					i(221229),	-- Perchfather's Cuffs
 				},
 			}),

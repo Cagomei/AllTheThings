@@ -626,7 +626,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.06, {	-- The Wormlands
 				q(83321, {	-- Strange Bats
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78233 },	-- The Weaver's Gift
 					["provider"] = { "n", 223754 },	-- Linny Leadlinger
 					["coord"] = { 56.3, 48.1, AZJ_KAHET },
 					["isBreadcrumb"] = true,
@@ -671,7 +671,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79651, {	-- Trade Partners
 					["sourceQuests"] = { 78256 },	-- The General's Consensus
 					["provider"] = { "n", 223754 },	-- Linny Leadlinger
-					["coord"] = { 56.3, 48.1, AZJ_KAHET },
+					["coord"] = { 55.8, 43.6, AZJ_KAHET },
 					["isBreadcrumb"] = true,
 				}),
 				q(80558, {	-- Nothing Ventured
@@ -870,9 +870,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.13, {	-- Silken Ward
 				q(83324, {	-- A Silken Thread
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78256 },	-- The General's Consensus
 					["provider"] = { "n", 223754 },	-- Linny Leadlinger
-					["coord"] = { 56.3, 48.1, AZJ_KAHET },
+					["coord"] = { 55.8, 43.6, AZJ_KAHET },
 					["isBreadcrumb"] = true
 				}),
 				q(81890, {	-- Unfulfilled Requests
@@ -937,7 +937,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.15, {	-- All Good Things...
 				q(82248, {	-- Advance to Faerin
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78256 },	-- The General's Consensus
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
 					["coord"] = { 55.6, 43.8, AZJ_KAHET },
 					["isBreadcrumb"] = true,
@@ -1040,6 +1040,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { 79532 },	-- Tinker, Tailor, Soldier, Spider
 					["provider"] = { "n", 227428 },	-- Widow Arak'nai
 					["coord"] = { 62.9, 12.1, NERUBAR_LOWER },
+					["g"] = {
+						i(213538),	-- Wood-Worm Tonic (QI!)
+					},
 				}),
 				q(79633, {	-- The Weaver's Legacy
 					["sourceQuests"] = { 79627 },	-- Wine and Die
@@ -1173,7 +1176,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			hqt(81513, {	-- Stay awhile and listen: Faerin Lothar
 			["name"] = "Stay awhile and listen: Faerin Lothar",
-				---["sourceQuests"] = { ?????? },
+				["sourceQuests"] = { 82284 },	-- Remembrance for the Fallen
 				["provider"] = { "n", 211409 },	-- Faerin Lothar
 				["coord"] = { 59.3, 19.3, AZJ_KAHET },
 			}),

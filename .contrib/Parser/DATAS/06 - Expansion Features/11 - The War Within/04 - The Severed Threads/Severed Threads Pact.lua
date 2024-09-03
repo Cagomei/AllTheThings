@@ -147,7 +147,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 224178 },	-- Ghos'opp
 					["coord"] = { 64.2, 21.4, NERUBAR },
 					["g"] = {
-						i(219225),	-- Crystalline Brightbloom (QI!)
+						o(437767, {	-- Crate of Hallowfall Herbs
+							i(219225),	-- Crystalline Brightbloom (QI!)
+						}),
 					},
 				}),
 				q(81480, {	-- Wild Reagents: Maddening Deep
@@ -159,7 +161,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(81482, {	-- Testing Formulae: Gelatinous Unguent
 					["provider"] = { "n", 224187 },	-- Ghos'opp
-					--["coord"] = { XX.X, YY.Y, NERUBAR }, TODO
+					["coord"] = { 50.6, 46.8, NERUBAR },
 					["g"] = {
 						i(219323),	-- Gelatinous Unguent (QI!)
 					},
@@ -183,6 +185,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["sourceQuestNumRequired"] = 1,
 				["cost"] = {{"i",228949,1}},	-- Rumor Map
 			},{
+				--TODO: Is this in the right spot? - ShadowBrooks
+				q(80573, {	-- Dropping Eaves: Spoils of War
+					-- ["provider"] = { "n", 224196 },	-- Ru'murh
+					["coord"] = { 55, 26.3, NERUBAR },
+					["g"] = {
+						o(437205, {	-- Sureki War Chest
+							["coord"] = { 67.3, 32.7, NERUBAR },
+							["groups"] = {
+								i(219016),	-- Coated Steel Tips (QI!)
+								i(218456),	-- Precious Gems (QI!)
+								i(219017),	-- Silver Armor Clasps (QI!)
+							},
+						})
+					},
+				}),
 				q(81471, {	-- Dropping Eaves: Saving the Past
 					["provider"] = { "n", 224195 },	-- Ru'murh
 					["coord"] = { 73.3, 50.9, NERUBAR },
@@ -218,6 +235,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81483, {	-- Infiltration: Production Blocker
 					["provider"] = { "n", 224199 },	-- Ru'murh
 					["coord"] = { 45.6, 51.0, NERUBAR_LOWER },
+				}),
+				--TODO: Is this in the right spot? - ShadowBrooks
+				q(81479, {	-- Requisitions: Umbrashrooms
+					-- ["provider"] = { "n", 224178 },	-- Ghos'opp
+					["coord"] = { 51.8, 16.5, NERUBAR },
+					["g"] = {
+						o(437726, {	-- Luminescent Umbrashroom
+							i(219212),	-- Luminescent Umbrashroom (QI!)
+						}),
+					},
 				}),
 				q(81484, {	-- Wet Work: Death of a Salesman
 					["sourceQuest"] = 82581,
