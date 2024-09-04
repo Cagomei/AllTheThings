@@ -43,7 +43,6 @@ root(ROOTS.Unsorted, {
 				i(228764),	-- Classic Sunny Tabard
 			}),
 			--
-			i(229000),	-- Machine-Warden's Cog
 			i(229005),	-- Cache of Earthen Treasures
 			i(229006),	-- Cache of Earthen Treasures
 			--
@@ -269,7 +268,6 @@ root(ROOTS.Unsorted, {
 				--- Notes
 				-- Prof Knowledge
 				i(224782),	-- Razor Talon
-				i(225225),	-- Deepstone Fragment
 				i(227662),	-- Shimmering Dust
 			}),
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
@@ -995,7 +993,6 @@ root(ROOTS.Unsorted, {
 				i(219214),	-- Cooling Wax
 				i(219215),	-- Wax Puddle
 				i(219293),	-- Sureki Intelligence
-				i(219322),	-- Malodorous Philter
 				i(219350),	-- Maddening Manifest
 				i(219388),	-- Sacred Flame Torch
 				i(219400),	-- Faerin's Torch of Holy Flame
@@ -1144,10 +1141,8 @@ root(ROOTS.Unsorted, {
 				i(224467),	-- Forgotten Axe
 			}),
 			n(REWARDS, {
-				i(223444),	-- Arathi Defender's Breeches
 				i(223458),	-- [PH] 11.0 - Belt
 				i(223585),	-- Algari Bladefist
-				i(223588),	-- Algari Fighting Knife
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(223510),	-- Delver's Dirigible Schematic: Template
@@ -1494,10 +1489,7 @@ root(ROOTS.Unsorted, {
 			i(225256),	-- PH_2
 			--
 			-- Orphaned due to removal of "Awakening the Machine: Wave <x>" achievements
-			i(226220),	-- Machine-Warden's Tabard
-			i(226221),	-- Machine-Warden's Pauldrons
 			title(568),	-- <Name>, Machine-Warden
-			i(226218),	-- Machine-Warden's Cloak
 			-- Fallout
 			i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
 			i(226103),	-- The Weaver's Trove

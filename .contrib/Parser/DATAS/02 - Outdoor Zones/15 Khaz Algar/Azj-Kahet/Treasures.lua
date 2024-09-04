@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(455446, {	-- Aspirant's Tribute
 				["provider"] = { "o", 451603 },	-- Forgotten Memorial
 				["coord"] = { 7.5, 25.7, NERUBAR },
-				-- ["questID"] = xx,
+				["questID"] = 82881,
 			}),
 			o(446140, {	-- Missing Scouts Pack
 				["coord"] = { 40.7, 42.1, AZJ_KAHET },
@@ -178,8 +178,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 224893 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82859,
 				["coords"] = {
-					{ 31.6, 47.3, AZJ_KAHET },	-- Thimble (a bit bugged player can see vignette/different version of him during his pathway but they are uninteractable)
-					{ 32.1, 43.5, AZJ_KAHET },	-- cache spot
+					{ 29.0, 42.7, AZJ_KAHET },	-- Thimble (a bit bugged player can see vignette/different version of him during his pathway but they are uninteractable)
+					{ 29.4, 38.7, AZJ_KAHET },	-- cache spot
 				},
 				["g"] = {
 					currency(3056),	-- Kej
