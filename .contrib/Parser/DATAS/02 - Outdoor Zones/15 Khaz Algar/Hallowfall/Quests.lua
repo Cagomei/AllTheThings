@@ -369,7 +369,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78693,	-- Spears for Fears
 					},
 					["provider"] = { "n", 213613 },	-- Aemyra Acton
-					["coord"] = { 50.0, 20.8, HALLOWFALL },
+					["coord"] = { 45.8, 13.1, HALLOWFALL },
 				}),
 				q(78692, {	-- Teach a Man to Fish
 					["sourceQuests"] = {
@@ -671,6 +671,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40844.06, {	-- Crushing Depths
 				q(81797, {	-- Targeted Recon
+					["description"] = "Look for Arathi Captives in the area. They are an illusion. You can find Kobyss Shadeshapers right behind them.",
+					["crs"] = {
+							215623,	-- Arathi Captive
+							215653,	-- Kobyss Shadeshaper
+					},
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 218508 },	-- Joseph Brayvemarc
 					["coord"] = { 42.6, 55.3, HALLOWFALL },
@@ -798,7 +803,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82479, {	-- The Sword is Mightier
 					["sourceQuests"] = { 82478 },	-- Regularly Scheduled Maintenance
 					["provider"] = { "n", 213613 },	-- Aemyra Acton
-					["coord"] = { 46.0, 10.5, HALLOWFALL },
+					["coord"] = { 50.0, 20.8, HALLOWFALL },
 				}),
 				q(82480, {	-- Job Killing Robot Or...
 					["sourceQuests"] = { 82479 },	-- The Sword is Mightier
@@ -1002,6 +1007,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(83279, {	-- Prove One's Mettle
+					["description"] = "This quest is only obtainable as either a Death Knight, Demon Hunter, Shadow Priest, or Warlock or as an Undead or Void Elf. It will be properly filtered by ATT on these criteria soon.",
 					["sourceQuests"] = { 83247 },	-- Suspicious Minds
 					["provider"] = { "n", 225879 },	-- Derill Fayn
 					["coord"] = { 68.1, 44.2, HALLOWFALL },
@@ -1146,7 +1152,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(80679, {	-- Stuffed Lynx Toy
 				["sourceQuests"] = { 80678 },	-- Time Lost
 				["provider"] = { "n", 218486 },	-- Phillip Taversil <Leatherworking>
-				["coord"] = { 43.2, 55.4, HALLOWFALL },
+				["coord"] = { 43.3, 55.4, HALLOWFALL },
 				["cost"] = {{"i", 219809, 1}},	-- 1x Plush Lynx
 			}),
 			q(82815, {	-- Sturdy Locket

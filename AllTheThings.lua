@@ -4810,110 +4810,6 @@ app.CreateCostCurrency = function(t, total)
 end
 end)();
 
--- Flight Path Lib
-do
-local FlightPathMapIDs = app.FlightPathDB.FlightPathMapIDs
-local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes, GetTaxiMapID
-	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes, GetTaxiMapID;
-local localizedFlightPathNames;
-local HarvestFlightPaths = function(requestID)
-	if not localizedFlightPathNames then
-		-- app.PrintDebug("HarvestFlightPaths");
-		local userLocale = AllTheThingsAD.UserLocale;
-		localizedFlightPathNames = userLocale.FLIGHTPATH_NAMES;
-		if not localizedFlightPathNames then
-			localizedFlightPathNames = {};
-			userLocale.FLIGHTPATH_NAMES = localizedFlightPathNames;
-		end
-		local flightPathNames = app.FlightPathNames;
-		if flightPathNames then
-			app.FlightPathNames = nil;
-			setmetatable(localizedFlightPathNames, { __index = flightPathNames });
-		end
-
-		local allNodeData;
-		for _,mapID in ipairs(FlightPathMapIDs) do
-			allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID);
-			if allNodeData then
-				for _,nodeData in ipairs(allNodeData) do
-					localizedFlightPathNames[nodeData.nodeID] = nodeData.name;
-				end
-			end
-		end
-		-- app.PrintDebugPrior("done")
-	end
-	return requestID and localizedFlightPathNames[requestID];
-end
-local fields = {
-	["key"] = function(t)
-		return "flightPathID";
-	end,
-	["name"] = function(t)
-		return HarvestFlightPaths(t.flightPathID) or L.VISIT_FLIGHT_MASTER;
-	end,
-	["icon"] = function(t)
-		local r = t.r;
-		if r then
-			return r == Enum.FlightPathFaction.Horde and app.asset("fp_horde") or app.asset("fp_alliance");
-		end
-		return app.asset("fp_neutral");
-	end,
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.FlightPaths;
-	end,
-	["collected"] = function(t)
-		if t.saved then return 1; end
-		if app.Settings.AccountWide.FlightPaths and ATTAccountWideData.FlightPaths[t.flightPathID] then return 1; end
-		if t.altQuests then
-			for _,questID in ipairs(t.altQuests) do
-				if IsQuestFlaggedCompleted(questID) then
-					return 2;
-				end
-			end
-		end
-	end,
-	["trackable"] = app.ReturnTrue,
-	["saved"] = function(t)
-		return app.CurrentCharacter.FlightPaths[t.flightPathID];
-	end,
-};
-app.BaseFlightPath = app.BaseObjectFields(fields, "BaseFlightPath");
-app.CreateFlightPath = function(id, t)
-	return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
-end
-app.AddEventRegistration("TAXIMAP_OPENED", function()
-	local mapID = GetTaxiMapID() or -1;
-	if mapID < 0 then return; end
-	if app.Debugging then
-		if not contains(FlightPathMapIDs, mapID) then
-			app.print("Missing FlightPath Map:",app.GetMapName(mapID) or UNKNOWN,mapID)
-		end
-	end
-	local userLocale = AllTheThingsAD.UserLocale;
-	local names = userLocale.FLIGHTPATH_NAMES or {};
-	local allNodeData = C_TaxiMap_GetAllTaxiNodes(mapID);
-	if allNodeData then
-		local newFPs, nodeID;
-		local currentCharFPs, acctFPs = app.CurrentCharacter.FlightPaths, ATTAccountWideData.FlightPaths;
-		for _,nodeData in ipairs(allNodeData) do
-			nodeID = nodeData.nodeID;
-			names[nodeID] = nodeData.name;
-			-- app.PrintDebug("FP",nodeID,nodeData.name)
-			if nodeData.state and nodeData.state < 2 then
-				if not currentCharFPs[nodeID] then
-					acctFPs[nodeID] = 1;
-					currentCharFPs[nodeID] = 1;
-					if not newFPs then newFPs = { nodeID }
-					else tinsert(newFPs, nodeID); end
-				end
-			end
-		end
-		userLocale.FLIGHTPATH_NAMES = names;
-		UpdateRawIDs("flightPathID", newFPs);
-	end
-end)
-end	-- Flight Path Lib
-
 -- Item Lib
 (function()
 
@@ -13470,6 +13366,9 @@ SlashCmdList.AllTheThings = function(cmd)
 		elseif cmd == "unsorted" then
 			app:GetWindow("Unsorted"):Toggle();
 			return true;
+		elseif cmd == "contribute" then
+			app.Contribute(not app.Contributor and 1)
+			return true
 		elseif cmd:sub(1, 4) == "mini" then
 			app:ToggleMiniListForCurrentZone();
 			return true;
@@ -13707,5 +13606,19 @@ app.AddEventRegistration("HEIRLOOMS_UPDATED", function(itemID, kind, ...)
 end)
 
 app.AddEventHandler("OnStartupDone", function() app.OnStartupDone = true end)
+
+-- Extra Contribution setup
+app.Contribute = function(contrib)
+	app.Contributor = contrib == 1 and true or nil
+	AllTheThingsSavedVariables.Contributor = app.Contributor and 1 or 0
+	if app.Contributor then
+		app.print("Thanks for helping to contribute to ATT! There will be additional chat and report sounds to help with finding additional discrepancies in ATT data.")
+	elseif app.IsReady then
+		app.print("Not showing ATT contribution information.")
+	end
+end
+app.AddEventHandler("OnReady", function()
+	app.Contribute(AllTheThingsSavedVariables.Contributor)
+end)
 
 -- app.PrintMemoryUsage("AllTheThings.EOF");

@@ -33,9 +33,8 @@ root(ROOTS.Unsorted, {
 			filter(QUEST_ITEMS, {
 				i(228623),	-- Blue's Request
 			}),
-			filter(BATTLE_PETS, {
-				i(228765),	-- Gummi (PET!) [Promotion?]
-			}),
+			--filter(BATTLE_PETS, {
+			--}),
 			filter(COSMETIC, {
 				i(228761),	-- Classic Brick Tabard
 				i(228762),	-- Classic Lively Tabard
@@ -88,7 +87,6 @@ root(ROOTS.Unsorted, {
 			i(229116),	-- Flamestonge's Greaves
 			i(229117),	-- Flamestonge's Shoulderguards
 			i(229119),	-- Flamestonge's Bracers
-			i(229123),	-- Warstone's Helm
 			i(229124),	-- Warstone's Legguards
 			i(229125),	-- Warstone's Mantle
 			i(229126),	-- Warstone's Girdle
@@ -117,7 +115,6 @@ root(ROOTS.Unsorted, {
 			i(229151),	-- Lamplighter's Hatchet
 			i(229153),	-- Lamplighter's Cudgel
 			i(229156),	-- Lamplighter's Great Mallet
-			i(229157),	-- Lamplighter's Bulwark
 			i(229158),	-- Lamplighter's War Knives
 			i(229161),	-- Lamplighter's Chopper
 			i(229162),	-- Lamplighter's Sword
@@ -402,7 +399,6 @@ root(ROOTS.Unsorted, {
 				i(224168),	-- Stonebound Tabard \\ Silver Earthen Tabard \\ [PH] Earthen Tabard
 				i(224169),	-- Freywold Tabard \\ Sage Earthen Tabard \\ [PH] Earthen Tabard
 				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
-				i(226363),	-- Earthen Backpack
 				i(226366),	-- Gloves of the Morning Mist
 				i(226367),	-- Ugly Black Boots
 				i(226368),	-- Ugly White Boots
@@ -905,7 +901,6 @@ root(ROOTS.Unsorted, {
 				i(226152),	-- Wax-sealed Crests
 				i(226153),	-- Big Pile of Humming Shinies
 				i(226154),	-- Wax-Sealed Crafty Crest
-				i(226155),	-- Big Candle
 				i(226156),	-- Really Big Candle
 				i(226257),	-- Delver's Pouch of Valorstones
 				i(226260),	-- Delver's Pouch of Gold
@@ -1057,53 +1052,6 @@ root(ROOTS.Unsorted, {
 				i(219397),	-- Earthen Boots
 				i(219398),	-- Earthen Chain
 				i(219428),	-- Earthen Waistguard
-				-- Earthen stuff again? Maybe erm.. Heritage?
-				i(224195),	-- Earthen Shoulders
-				i(224196),	-- Earthen Trousers
-				i(224197),	-- Earthen Grips
-				i(224198),	-- Earthen Vest
-				i(224199),	-- Earthen Boots
-				i(224200),	-- Earthen Chain
-				i(224201),	-- Earthen Chestpiece
-				i(224202),	-- Earthen Striders
-				i(224203),	-- Earthen Handguards
-				i(224204),	-- Earthen Coif
-				i(224205),	-- Earthen Greaves
-				i(224206),	-- Earthen Belt
-				i(224207),	-- Earthen Helm
-				i(224208),	-- Earthen Breastplate
-				i(224209),	-- Earthen Sabatons
-				i(224210),	-- Earthen Gauntlets
-				i(224211),	-- Earthen Legguards
-				i(224212),	-- Earthen Mantle
-				i(224213),	-- Earthen Girdle
-				i(224214),	-- Earthen Vestment
-				i(224215),	-- Earthen Sandals
-				i(224216),	-- Earthen Handbraces
-				i(224217),	-- Earthen Hood
-				i(224218),	-- Earthen Kilt
-				i(224219),	-- Earthen Waistguard
-				i(224220),	-- Earthen Collar
-				i(224221),	-- Earthen Slippers
-				i(224222),	-- Earthen Gloves
-				i(224223),	-- Earthen Waistcoat
-				i(224224),	-- Earthen Toolbelt
-				i(224225),	-- Earthen Cogwheel
-				i(224226),	-- Earthen Chestguard
-				i(224227),	-- Earthen Footguards
-				i(224228),	-- Earthen Handwraps
-				i(224229),	-- Earthen Mining Hat
-				i(224230),	-- Earthen Leggings
-				i(224231),	-- Earthen Cord
-				i(224241),	-- Earthen Spire
-				i(224242),	-- Earthen Handaxe
-				i(224243),	-- Earthen Shiv
-				i(224244),	-- Earthen Staff
-				i(224245),	-- Earthen Bulwark
-				i(224246),	-- Earthen Blade
-				i(224247),	-- Earthen Cleaver
-				i(224248),	-- Earthen Blunderbuss
-				i(224249),	-- Earthen Shillelagh
 				i(224861),	-- Dornogal Crown
 				i(224862),	-- Dornogal Mantle
 				i(224863),	-- Dornogal Cheststraps

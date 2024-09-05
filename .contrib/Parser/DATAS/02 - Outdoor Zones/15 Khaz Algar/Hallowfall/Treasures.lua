@@ -37,9 +37,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(444804, {	-- Concentrated Shadow
-				["description"] = "Spawn only when crystal in zone is purple",
+				["description"] = "Spawns all over the zone only when Beledar shifts into its Void state.",
 				["maps"] = { HALLOWFALL },
-				--["questID"] = xx,
 				["g"] = {
 					-- some crafting reagents and gray item
 				},
@@ -237,7 +236,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			o(419729, {	-- Strange Eggs
 				["coord"] = { 67.1, 21.8, HALLOWFALL },
-				["questID"] = 83032,
+				--["questID"] = 83032, -- I looted it with some characters and never got any questID - Darkal
 				["g"] = {
 					i(212331),	-- The Unusual Bug
 				},

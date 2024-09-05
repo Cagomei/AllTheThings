@@ -133,6 +133,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					q(79234, {	-- A Small Bag of Seeds
 						["provider"] = { "i", 212339 },	-- A Small Bag of Seeds
 					}),
+					q(80562, {	-- Blossoming Delight
+						-- TODO: Needs info, currently exists as an achievement criteria for Beacon of Hope (40308), but did the quest even make it to live?
+					}),
 					q(79346, {	-- Chew On That
 						["sourceQuests"] = { 79295 },	-- Keyflame: Taerry Bligestone
 						["provider"] = { "n", 215956 },	-- Taerry Bligestone
@@ -307,6 +310,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["questID"] = 82560,
 						["cost"] = {{ "i", 211474, 10 }},	-- 10x Shadowblind Grouper
 						["g"] = {
+							i(221247),	-- Cavernous Critter Shooter
 							i(223938),	-- Marsh Hopper's Spaulders
 						},
 					}),
@@ -371,6 +375,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 59.8, 21.4, HALLOWFALL },
 						["questID"] = 82566,
 						["g"] = {
+							i(221240),	-- Nerubian Stagshell Gouger
 							i(223932),	-- Scarab's Carapace Cap
 						},
 					}),
@@ -404,6 +409,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229092),	-- Kyros's Spare Girdle
 						i(229145),	-- Lamplighter Elite's Shield
 						i(229152),	-- Lamplighter's Battleaxe
+						i(229157),	-- Lamplighter's Bulwark
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
 						i(229103),	-- The Cleansing Flame's Cuffs
@@ -412,6 +418,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229097),	-- The Cleansing Flame's Sandals
 						i(229120),	-- Warstone's Breastplate
 						i(229122),	-- Warstone's Gauntlets
+						i(229123),	-- Warstone's Helm
 						i(229121),	-- Warstone's Sabatons
 					}),
 					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)

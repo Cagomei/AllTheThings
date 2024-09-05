@@ -214,7 +214,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81090, 430315);	-- Thaumaturgy
 			--FirstCraft(QuestID, 427174);	-- Wild Experimentation
 			-- Reagents
-			--FirstCraft(XXXXX, 462121);	-- Bubbling Mycobloom Culture
+			FirstCraft(84492, 462121);	-- Bubbling Mycobloom Culture
 			FirstCraft(81129, 432204);	-- Harmonious Horticulture
 			FirstCraft(84493, 462122);	-- Petal Powder
 			-- Basic Concoctions
@@ -2614,7 +2614,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 446987);	-- Darkmoon Duffle
 			--FirstCraft(XXXXX, 446991);	-- Dawnthread Lining
 			--FirstCraft(XXXXX, 446928);	-- Dawnweave Bolt
-			--FirstCraft(XXXXX, 446977);	-- Dawnweave Reagent Bag
+			FirstCraft(80841, 446977);	-- Dawnweave Reagent Bag
 			--FirstCraft(XXXXX, 447001);	-- Daybreak Spellthread
 			--FirstCraft(XXXXX, 446992);	-- Duskthread Lining
 			--FirstCraft(XXXXX, 446979);	-- Duskweave Bag
@@ -2673,6 +2673,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			--q(81898),	-- Together with First Craft of Flask of Alchemical Chaos
 
 			--q(78604),	-- Randomly when crafting Wild Experimentation
+						-- When learning Algari Mana Potion (first use of Mycobloom in Wild Experimentation)
+
+
 			--q(81090),	-- Randomly when crafting Wild Experimentation
 						-- Randomly when crafting Thaumaturgy
 		}),
