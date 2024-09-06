@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 				["questID"] = 81763,
 				["g"] = {
+					i(223006),	-- Signet of Dark Horizons (dupe from Coalesced Monstrosity - elementals rares share?)
 					i(223315),	-- Beledar's Spawn (MOUNT!)
 				},
 			}),
@@ -141,6 +142,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81849,
 				["g"] = {
 					i(221216),	-- Bruin Strength Legplates
+					i(221246),	-- Fierce Beast Staff
 					i(221508),	-- Pelt of Beledar's Strength
 				},
 			}),

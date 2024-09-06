@@ -48,7 +48,6 @@ root(ROOTS.Unsorted, {
 			i(228751),	-- Gigantic Grrloc
 			i(229062),	-- Nisa's Spare Coronet
 			i(229063),	-- Nisa's Spare Wristguards
-			i(229064),	-- Nisa's Spare Shoes
 			i(229065),	-- Nisa's Spare Gloves
 			i(229066),	-- Nisa's Spare Cassock
 			i(229067),	-- Nisa's Spare Leggings
@@ -70,16 +69,13 @@ root(ROOTS.Unsorted, {
 			i(229091),	-- Kyros's Spare Shoulder Plates
 			i(229093),	-- Kyros's Spare Cuffs
 			i(229096),	-- The Cleansing Flame's Robes
-			i(229099),	-- The Cleansing Flame's Cowl
 			i(229101),	-- The Cleansing Flame's Shoulderpads
-			i(229102),	-- The Cleansing Flame's Cord
 			i(229104),	-- Ironstrike's Vest
 			i(229105),	-- Ironstrike's Waders
 			i(229107),	-- Ironstrike's Headgear
 			i(229108),	-- Ironstrike's Breeches
 			i(229109),	-- Ironstrike's Epaulets
 			i(229110),	-- Ironstrike's Sash
-			i(229111),	-- Ironstrike's Bindings
 			i(229112),	-- Flamestonge's Chainmail
 			i(229113),	-- Flamestonge's Striders
 			i(229114),	-- Flamestonge's Grips
@@ -97,7 +93,6 @@ root(ROOTS.Unsorted, {
 			i(229132),	-- Lamplighter Elite's Ritual Knife
 			i(229133),	-- Lamplighter Elite's Great Mallet
 			i(229134),	-- Lamplighter Elite's Hammer
-			i(229135),	-- Lamplighter Elite's Blade
 			i(229136),	-- Lamplighter Elite's Sword
 			i(229137),	-- Lamplighter Elite's Slugthrower
 			i(229138),	-- Lamplighter Elite's Mace
@@ -836,7 +831,6 @@ root(ROOTS.Unsorted, {
 				i(220220),	-- Ornate Pipe
 				i(220233),	-- Extinguished Icon
 				i(220260),	-- Corroded Golem Graspers
-				i(220265),	-- Slitted Eye
 				i(220274),	-- Chipped Hammer
 				i(220284),	-- Darkened Crystal
 				i(220286),	-- Tarnished Medallion
@@ -977,7 +971,6 @@ root(ROOTS.Unsorted, {
 				i(217312),	-- The Foreman's Third Scroll
 				i(217400),	-- Kobyss Lure
 				i(217506),	-- Test Item [DNT]
-				i(217996),	-- Sureki Tithe
 				i(218084),	-- Crumpled Note
 				i(218104),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
 				i(218127),	-- Ever-Blossoming Fungi

@@ -275,6 +275,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(212868),	-- Precious Ore
 				i(226222),	-- Webbed Hookshot
 			}),
+			n(QUESTS, {
+				q(85648, {	-- Delver's Call: Earthcrawl Mines
+					["provider"] = { "o", 455716 },	-- DELVER'S CALL
+					["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+				}),
+			}),
 			n(TREASURES, {
 				o(454090, {	-- Sturdy Chest
 					["coord"] = { 45.2, 14.7, EARTHCRAWL_MINES },
@@ -547,7 +553,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83771, {	-- Delver's Call: Tak-Rethan Abyss
 					["provider"] = { "o", 455720 },	-- Delver's Call: Tak-Rethan Abyss
-					["coord"] = { 57.2, 45.3, AZJ_KAHET },
+					["coord"] = { 56.8, 40.7, AZJ_KAHET },
 				}),
 			}),
 			n(TREASURES, {
@@ -673,7 +679,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83770, {	-- Delver's Call: Spiral Weave
 					["provider"] = { "n", 211721 },	-- Sir Jonathan Trueheart
-					["coord"] = { 59.2, 25.1, AZJ_KAHET },
+					["coord"] = { 58.9, 18.6, AZJ_KAHET },
 				}),
 			}),
 			n(TREASURES, {
@@ -1520,6 +1526,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(82772),	-- First Delve of the day
 		q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
 		q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
+		q(85651),	-- Triggeres with 'Delver's Call: The Sinkhole' (questID 83767)
 		-- Bountiful Delve runs
 		q(82944),	-- Earthcrawl Mines
 		q(82939),	-- Fungal Folly
@@ -1544,7 +1551,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84738, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 3rd
 		q(84739, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 4th
 		-- Seasonal Rewards
-		q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
-		-- Unknown
+		q(83235),	-- Airship: Wings 05 - Lantern Wing (spellID 454473)
+		q(83236),	-- Airship: Top 03 - Zeppelin (spellID 454476)
+		q(83237),	-- Airship: Front 05 - Lantern (spellID 454475)
+		q(83238),	-- Airship: Body Color 01 - Brown (spellID 454478)
+		q(83239),	-- Airship: Back 02 - Multi-Exhaust (spellID 454474)
 	}),
 })));
