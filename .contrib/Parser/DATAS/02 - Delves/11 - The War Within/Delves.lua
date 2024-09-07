@@ -721,6 +721,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(222971),	-- Bouncer (PET!)
 			}),
 			filter(MISC, {
+				i(217715),	-- Key Scroll
 				i(217895),	-- Pheromone Bottle
 				i(217897),	-- Volatile Pheromone
 			}),
@@ -728,6 +729,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				q(83761, {	-- Delves: The Underkeep
 					["provider"] = { "n", 227544 },	-- Brann Bronzebeard
 					["coord"] = { 57.3, 42.2, AZJ_KAHET },
+				}),
+				q(85667, {	-- Delver's Call: The Underkeep
+					["provider"] = { "o", 487855 },	-- DELVER'S CALL: The Underkeep
+					["coord"] = { 35.9, 26.2, THE_UNDERKEEP },
 				}),
 			}),
 			n(TREASURES, {
@@ -869,6 +874,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(211031),	-- Secret-Dredger's Sabatons
 			}),
 			filter(TRINKET_F, {
+				i(215170),	-- Abyssal Trap
 				i(215174),	-- Concoction: Kiss of Death
 				i(225653),	-- Siphoning Lightbrand
 				i(215178),	-- Shadow-Binding Ritual Knife
@@ -1530,7 +1536,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(82772),	-- First Delve of the day
 		q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
 		q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
-		q(85651),	-- Triggeres with 'Delver's Call: The Sinkhole' (questID 83767)
+		q(85666),	-- Triggers with 'Delver's Call: Spiral Weave' (questID 83770)
+		q(85651),	-- Triggers with 'Delver's Call: The Sinkhole' (questID 83767)
 		-- Bountiful Delve runs
 		q(82944),	-- Earthcrawl Mines
 		q(82939),	-- Fungal Folly

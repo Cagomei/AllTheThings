@@ -159,116 +159,115 @@ i(167932, 1710);	-- Commendation of the Sha'tari Defense
 i(168018, 1847);	-- Commendation of the Hand of the Prophet
 
 -- Legion
-i(147418, 1859);	-- Arcane Remnant of Falanaar [The Nightfallen]
-i(147416, 1859);	-- Arcane Tablet of Falanaar [The Nightfallen]
-i(141340, 1900);	-- Court of Farondis Insignia [Court of Farondis]
-i(139023, 1900);	-- Court of Farondis Insignia [Court of Farondis]
-i(146937, 1900);	-- Court of Farondis Insignia [Court of Farondis]
-i(146943, 1900);	-- Court of Farondis Insignia [Court of Farondis]
-i(141339, 1883);	-- Dreamweaver Insignia [Dreamweavers]
-i(139021, 1883);	-- Dreamweaver Insignia [Dreamweavers]
-i(146942, 1883);	-- Dreamweaver Insignia [Dreamweavers]
-i(146936, 1883);	-- Dreamweaver Insignia [Dreamweavers]
-i(147410, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]
-i(141989, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]
-i(150927, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]
-i(141988, 1883);	-- Greater Dreamweaver Insignia [Dreamweavers]
-i(147411, 1883);	-- Greater Dreamweaver Insignia [Dreamweavers]
-i(150926, 1883);	-- Greater Dreamweaver Insignia [Dreamweavers]
-i(141990, 1828);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
-i(147412, 1828);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
-i(150928, 1828);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
-i(147727, 2045);	-- Greater Legionfall Insignia [Armies of Legionfall]
-i(152464, 2045);	-- Greater Legionfall Insignia [Armies of Legionfall]
-i(141992, 1859);	-- Greater Nightfallen Insignia [The Nightfallen]
-i(147413, 1859);	-- Greater Nightfallen Insignia [The Nightfallen]
-i(150930, 1859);	-- Greater Nightfallen Insignia [The Nightfallen]
-i(141987, 1948);	-- Greater Valarjar Insignia [Valarjar]
-i(147414, 1948);	-- Greater Valarjar Insignia [Valarjar]
-i(150925, 1948);	-- Greater Valarjar Insignia [Valarjar]
-i(141991, 1894);	-- Greater Wardens Insignia [The Wardens]
-i(147415, 1894);	-- Greater Wardens Insignia [The Wardens]
-i(150929, 1894);	-- Greater Wardens Insignia [The Wardens]
-i(141341, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
-i(139024, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
-i(146944, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
-i(146938, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
-i(141343, 1859);	-- Nightfallen Insignia [The Nightfallen]
-i(139026, 1859);	-- Nightfallen Insignia [The Nightfallen]
-i(146940, 1859);	-- Nightfallen Insignia [The Nightfallen]
-i(146946, 1859);	-- Nightfallen Insignia [The Nightfallen]
-i(141338, 1948);	-- Valarjar Insignia [Valarjar]
-i(146935, 1948);	-- Valarjar Insignia [Valarjar]
-i(146941, 1948);	-- Valarjar Insignia [Valarjar]
-i(141342, 1894);	-- Wardens Insignia [The Wardens]
-i(139025, 1894);	-- Wardens Insignia [The Wardens]
-i(146945, 1894);	-- Wardens Insignia [The Wardens]
-i(146939, 1894);	-- Wardens Insignia [The Wardens]
-
+i(147418, FACTION_THE_NIGHTFALLEN);	-- Arcane Remnant of Falanaar [The Nightfallen]
+i(147416, FACTION_THE_NIGHTFALLEN);	-- Arcane Tablet of Falanaar [The Nightfallen]
+i(141340, FACTION_COURT_OF_FARONDIS);	-- Court of Farondis Insignia [Court of Farondis]
+i(139023, FACTION_COURT_OF_FARONDIS);	-- Court of Farondis Insignia [Court of Farondis]
+i(146937, FACTION_COURT_OF_FARONDIS);	-- Court of Farondis Insignia [Court of Farondis]
+i(146943, FACTION_COURT_OF_FARONDIS);	-- Court of Farondis Insignia [Court of Farondis]
+i(141339, FACTION_THE_DREAMWEAVERS);	-- Dreamweaver Insignia [Dreamweavers]
+i(139021, FACTION_THE_DREAMWEAVERS);	-- Dreamweaver Insignia [Dreamweavers]
+i(146942, FACTION_THE_DREAMWEAVERS);	-- Dreamweaver Insignia [Dreamweavers]
+i(146936, FACTION_THE_DREAMWEAVERS);	-- Dreamweaver Insignia [Dreamweavers]
+i(147410, FACTION_COURT_OF_FARONDIS);	-- Greater Court of Farondis Insignia [Court of Farondis]
+i(141989, FACTION_COURT_OF_FARONDIS);	-- Greater Court of Farondis Insignia [Court of Farondis]
+i(150927, FACTION_COURT_OF_FARONDIS);	-- Greater Court of Farondis Insignia [Court of Farondis]
+i(141988, FACTION_THE_DREAMWEAVERS);	-- Greater Dreamweaver Insignia [Dreamweavers]
+i(147411, FACTION_THE_DREAMWEAVERS);	-- Greater Dreamweaver Insignia [Dreamweavers]
+i(150926, FACTION_THE_DREAMWEAVERS);	-- Greater Dreamweaver Insignia [Dreamweavers]
+i(141990, FACTION_HIGHMOUNTAIN_TRIBE);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
+i(147412, FACTION_HIGHMOUNTAIN_TRIBE);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
+i(150928, FACTION_HIGHMOUNTAIN_TRIBE);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
+i(147727, FACTION_ARMIES_OF_LEGIONFALL);	-- Greater Legionfall Insignia [Armies of Legionfall]
+i(152464, FACTION_ARMIES_OF_LEGIONFALL);	-- Greater Legionfall Insignia [Armies of Legionfall]
+i(141992, FACTION_THE_NIGHTFALLEN);	-- Greater Nightfallen Insignia [The Nightfallen]
+i(147413, FACTION_THE_NIGHTFALLEN);	-- Greater Nightfallen Insignia [The Nightfallen]
+i(150930, FACTION_THE_NIGHTFALLEN);	-- Greater Nightfallen Insignia [The Nightfallen]
+i(141987, FACTION_VALAJAR);	-- Greater Valarjar Insignia [Valarjar]
+i(147414, FACTION_VALAJAR);	-- Greater Valarjar Insignia [Valarjar]
+i(150925, FACTION_VALAJAR);	-- Greater Valarjar Insignia [Valarjar]
+i(141991, FACTION_THE_WARDENS);	-- Greater Wardens Insignia [The Wardens]
+i(147415, FACTION_THE_WARDENS);	-- Greater Wardens Insignia [The Wardens]
+i(150929, FACTION_THE_WARDENS);	-- Greater Wardens Insignia [The Wardens]
+i(141341, FACTION_HIGHMOUNTAIN_TRIBE);	-- Highmountain Tribe Insignia [Highmountain Tribe]
+i(139024, FACTION_HIGHMOUNTAIN_TRIBE);	-- Highmountain Tribe Insignia [Highmountain Tribe]
+i(146944, FACTION_HIGHMOUNTAIN_TRIBE);	-- Highmountain Tribe Insignia [Highmountain Tribe]
+i(146938, FACTION_HIGHMOUNTAIN_TRIBE);	-- Highmountain Tribe Insignia [Highmountain Tribe]
+i(141343, FACTION_THE_NIGHTFALLEN);	-- Nightfallen Insignia [The Nightfallen]
+i(139026, FACTION_THE_NIGHTFALLEN);	-- Nightfallen Insignia [The Nightfallen]
+i(146940, FACTION_THE_NIGHTFALLEN);	-- Nightfallen Insignia [The Nightfallen]
+i(146946, FACTION_THE_NIGHTFALLEN);	-- Nightfallen Insignia [The Nightfallen]
+i(141338, FACTION_VALAJAR);	-- Valarjar Insignia [Valarjar]
+i(146935, FACTION_VALAJAR);	-- Valarjar Insignia [Valarjar]
+i(146941, FACTION_VALAJAR);	-- Valarjar Insignia [Valarjar]
+i(141342, FACTION_THE_WARDENS);	-- Wardens Insignia [The Wardens]
+i(139025, FACTION_THE_WARDENS);	-- Wardens Insignia [The Wardens]
+i(146945, FACTION_THE_WARDENS);	-- Wardens Insignia [The Wardens]
+i(146939, FACTION_THE_WARDENS);	-- Wardens Insignia [The Wardens]
 
 
 -- Battle For Azeroth
 	-- These first factions have pure tokens only, no quest item > token exchange.
 	-- Honeyback Hive
-		i(168825, 2395);	-- Rich Jelly (+80)
-		i(168828, 2395);	-- Royal Jelly (+160)
-		i(168822, 2395);	-- Thin Jelly (+20)
+		i(168825, FACTION_HONEYBACK_HIVE);	-- Rich Jelly (+80)
+		i(168828, FACTION_HONEYBACK_HIVE);	-- Royal Jelly (+160)
+		i(168822, FACTION_HONEYBACK_HIVE);	-- Thin Jelly (+20)
 
 	-- Rajani
 
 
 	-- Rustbolt Resistance
-		i(173736, 2391);	-- Layered Information Kernel of E-steam (+250, Rustbolt Resistance)
-		i(174521, 2391);	-- Transferable Kernel of E-steam (+250, Rustbolt Resistance)
+		i(173736, FACTION_RUSTBOLT_RESISTANCE);	-- Layered Information Kernel of E-steam (+250, Rustbolt Resistance)
+		i(174521, FACTION_RUSTBOLT_RESISTANCE);	-- Transferable Kernel of E-steam (+250, Rustbolt Resistance)
 
 	-- Nazjatar
-		i(173948, 2373);	-- Glittering Abyssal Conch (Unshackled)
-		i(173947, 2400);	-- Glittering Abyssal Conch (Waveblade Ankoan)
-		i(174523, 2373);	-- Waveswept Abyssal Conch (Unshackled)
-		i(174522, 2400);	-- Waveswept Abyssal Conch (Waveblade Ankoan)
+		i(173948, FACTION_THE_UNSHACKLED);	-- Glittering Abyssal Conch (Unshackled)
+		i(173947, FACTION_WAVEBLADE_ANKOAN);	-- Glittering Abyssal Conch (Waveblade Ankoan)
+		i(174523, FACTION_THE_UNSHACKLED);	-- Waveswept Abyssal Conch (Unshackled)
+		i(174522, FACTION_WAVEBLADE_ANKOAN);	-- Waveswept Abyssal Conch (Waveblade Ankoan)
 
 	-- For the rest of these, the first line is the quest item and the second line is the BoA token awarded by the quest.
 	-- Currently commenting out the quest item from this file and leave just the token in, because that's the part that actually gives reputation.  These used to be a simple quest item > starts quest > quest gives reputation exchange, and the token rewards were added in 8.3.
 
 	-- 7th Legion
-	--	i(163617, 2159);	-- Rusted Alliance Insignia
-		i(174507, 2159);	-- Fallen Soldier's Insignia (A)
+	--	i(163617, FACTION_7TH_LEGION);	-- Rusted Alliance Insignia
+		i(174507, FACTION_7TH_LEGION);	-- Fallen Soldier's Insignia (A)
 
 	-- Champions of Azeroth
-	--	i(163217, 2164);	-- Azeroth's Tear
-		i(174502, 2164);	-- Tear of Azeroth
+	--	i(163217, FACTION_CHAMPIONS_OF_AZEROTH);	-- Azeroth's Tear
+		i(174502, FACTION_CHAMPIONS_OF_AZEROTH);	-- Tear of Azeroth
 
 	-- Honorbound
-	--	i(163621, 2157);	-- Rusted Horde Insignia
-		i(174508, 2157);	-- Fallen Soldier's Insignia (H)
+	--	i(163621, FACTION_THE_HONORBOUND);	-- Rusted Horde Insignia
+		i(174508, FACTION_THE_HONORBOUND);	-- Fallen Soldier's Insignia (H)
 
 	-- Order of Embers
-	--	i(163614, 2161);	-- Exotic Spices
-		i(174503, 2161);	-- Exotically Spiced Carrot
+	--	i(163614, FACTION_ORDER_OF_EMBERS);	-- Exotic Spices
+		i(174503, FACTION_ORDER_OF_EMBERS);	-- Exotically Spiced Carrot
 
 	-- Proudmoore Admiralty
-	--	i(163616, 2160);	-- Dented Coin
-		i(174504, 2160);	-- Proudmoore War Copper
+	--	i(163616, FACTION_PROUDMOORE_ADMIRALTY);	-- Dented Coin
+		i(174504, FACTION_PROUDMOORE_ADMIRALTY);	-- Proudmoore War Copper
 
 	-- Storm's Wake
-	--	i(163615, 2162);	-- Lost Sea Scroll
-		i(174505, 2162);	-- Tide-Speaker's Tome
+	--	i(163615, FACTION_STORMS_WAKE);	-- Lost Sea Scroll
+		i(174505, FACTION_STORMS_WAKE);	-- Tide-Speaker's Tome
 
 	-- Talanji's Expedition
-	--	i(163619, 2156);	-- Golden Beetle
-		i(174506, 2156);	-- Golden Insect Wings
+	--	i(163619, FACTION_TALANJIS_EXPEDITION);	-- Golden Beetle
+		i(174506, FACTION_TALANJIS_EXPEDITION);	-- Golden Insect Wings
 
 	-- Tortollan Seekers
-	--	i(166501, 2163);	-- Soggy Page
-		i(174519, 2163);	-- Verdant Hills of Chokingvine - Page 17
+	--	i(166501, FACTION_TORTOLLAN_SEEKERS);	-- Soggy Page
+		i(174519, FACTION_TORTOLLAN_SEEKERS);	-- Verdant Hills of Chokingvine - Page 17
 
 	-- Voldunai
-	--	i(163618, 2158);	-- Shimmering Shell
-		i(174501, 2158);	-- Ornate Voldunai Jewelry
+	--	i(163618, FACTION_VOLDUNAI);	-- Shimmering Shell
+		i(174501, FACTION_VOLDUNAI);	-- Ornate Voldunai Jewelry
 
 	-- Zandalari Empire
-	--	i(163620, 2103);	-- Island Flotsam
-		i(174518, 2103);	-- Jani Figurine
+	--	i(163620, FACTION_ZANDALARI_EMPIRE);	-- Island Flotsam
+		i(174518, FACTION_ZANDALARI_EMPIRE);	-- Jani Figurine
 
 
 
