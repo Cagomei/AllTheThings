@@ -278,7 +278,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(85648, {	-- Delver's Call: Earthcrawl Mines
 					["provider"] = { "o", 455716 },	-- DELVER'S CALL
-					["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+					["coords"] = {
+						{ 55.3, 55.9, ISLE_OF_DORN },
+						{ 44.7, 12.0, EARTHCRAWL_MINES },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -419,6 +422,20 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(TREASURES, {
+				o(456581, {	-- Egg Clutch
+					["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 },
+					["coord"] = { 58.1, 31.2, MYCOMANCER_CAVERN },
+					["g"] = {
+						i(225339),	-- Chicken Eggs (QS!/QI!)
+					},
+				}),
+				o(456583, {	-- Lost Shoe
+					["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 },
+					["coord"] = { 38.8, 21.7, MYCOMANCER_CAVERN },
+					["g"] = {
+						i(225336),	-- A Lost Shoe (QS!/QI!)
+					},
+				}),
 				o(455497, {	-- Sturdy Chest
 					["coord"] = { 63.3, 45.3, MYCOMANCER_CAVERN },
 					["questID"] = 83691,
@@ -728,7 +745,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83761, {	-- Delves: The Underkeep
 					["provider"] = { "n", 227544 },	-- Brann Bronzebeard
-					["coord"] = { 57.3, 42.2, AZJ_KAHET },
+					["coord"] = { 57.3, 42.3, AZJ_KAHET },
 				}),
 				q(85667, {	-- Delver's Call: The Underkeep
 					["provider"] = { "o", 487855 },	-- DELVER'S CALL: The Underkeep

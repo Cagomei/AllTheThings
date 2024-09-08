@@ -4,14 +4,14 @@
 -- Simple function for First Craft tracking Quests
 -- ex. FirstCraft(QUESTID, RECIPEID);	-- RECIPE_NAME
 local function FirstCraft(questID, recipeID, added)
-	local t = { ["questID"] = questID, ["type"] = HEADERS.Spell..":"..recipeID };
+	local t = name(HEADERS.Spell, recipeID, { ["questID"] = questID })
 	if added then
 		t.timeline = { added };
 	end
 	return t;
 end
 local function FirstSkin(questID, creatureID, added, group)
-	local t = { ["questID"] = questID, ["type"] = HEADERS.NPC..":"..creatureID, };
+	local t = name(HEADERS.NPC, creatureID, { ["questID"] = questID })
 	if added then
 		t.timeline = { added };
 	end
@@ -1168,7 +1168,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81356, 447365),	-- Pausing Pylon
 			FirstCraft(81340, 447344),	-- Potion Bomb of Power
 			--FirstCraft(TODO, 447343),	-- Potion Bomb of Recovery
-			FirstCraft(81347, 447342),	-- Potion Bomb of Speed
+			FirstCraft(81331, 447342),	-- Potion Bomb of Speed
 			FirstCraft(81349, 447361),	-- Pouch of Pocket Grenades
 			FirstCraft(81346, 447357),	-- Recalibrated Safety Switch
 			FirstCraft(81351, 447368),	-- Portable Profession Possibility
@@ -1297,7 +1297,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(221796),	-- Aqirite Miner's Headgear
 			i(221788),	-- Bismuth Brainwave Projector
 			i(221790),	-- Bismuth Fisherfriend
-			i(221797),	-- Bismuth Fueled Samophlange
+			i(221797),	-- Bismuth-Fueled Samophlange
 			i(221795),	-- Bismuth Miner's Headgear
 			i(221793),	-- Lapidary's Aqirite Clamps
 			i(221792),	-- Lapidary's Bismuth Clamps

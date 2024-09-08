@@ -37,11 +37,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			n(QUESTS, {
 				q(84022, {	-- Uniting Severed Threads
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 55.6, 43.8, AZJ_KAHET },
+					["coord"] = { 55.7, 43.8, AZJ_KAHET },
 				}),
 				q(84682, {	-- Of Pacts and Patrons
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 55.6, 43.8, AZJ_KAHET },
+					["coord"] = { 55.7, 43.8, AZJ_KAHET },
 				}),
 				-- The General quest chain unlocked at 4/9 rep
 				q(82338, {	-- Absent Errand
@@ -297,7 +297,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 					["sourceQuestNumRequired"] = 1,
 					--["provider"] = { "n", xx },
-					["coord"] = { 57.7, 46.9, AZJ_KAHET },
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
 						i(225572, {	-- The General's War Chest
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
@@ -313,7 +313,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 					["sourceQuestNumRequired"] = 1,
 					--["provider"] = { "n", xx },
-					["coord"] = { 57.7, 46.9, AZJ_KAHET },
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
 						i(225573, {	-- The Vizier's Capital
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
@@ -329,7 +329,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 					["sourceQuestNumRequired"] = 1,
 					--["provider"] = { "n", xx },
-					["coord"] = { 57.7, 46.9, AZJ_KAHET },
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
 						i(225571, {	-- The Weaver's Gratuity
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
@@ -361,8 +361,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				o(455437, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451595 },	-- Forgotten Memorial
-					["coord"] = { 33.7, 42.1, AZJ_KAHET },
-					-- ["questID"] = xx,	-- TODO
+					["coord"] = { 33.7, 41.9, AZJ_KAHET },
+					["questID"] = 82873,
 				}),
 				o(455439, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451596 },	-- Forgotten Memorial
@@ -391,8 +391,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				o(455445, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451602 },	-- Forgotten Memorial
-					["coord"] = { 42.7, 34.6, AZJ_KAHET },
-					["questID"] = 81572,
+					["coord"] = { 41.0, 29.0, AZJ_KAHET },
+					["questID"] = 82880,	-- 81572 beta?
 				}),
 				o(455446, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451603 },	-- Forgotten Memorial

@@ -216,10 +216,10 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					achWithRep(1012, 1037, {	-- The Winds of the North (A)
+					achWithRep(1012, FACTION_ALLIANCE_VANGUARD, {	-- The Winds of the North (A)
 						["races"] = ALLIANCE_ONLY,
 					}),
-					achWithRep(1011, 1052, {	-- The Winds of the North (H)
+					achWithRep(1011, FACTION_HORDE_EXPEDITION, {	-- The Winds of the North (H)
 						["races"] = HORDE_ONLY,
 					}),
 				}),
@@ -250,6 +250,35 @@ root(ROOTS.Zones, {
 							},
 						}),
 						pet(1238, {	-- Unborn Val'kyr (PET!)
+							["description"] = "This pet spawns in many zones, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.",
+							["coords"] = {
+								{ 47.7, 7.65, BOREAN_TUNDRA }, -- Northwest of Bor'Gorok Outpost
+								{ 32.85, 60.25, BOREAN_TUNDRA }, -- South of Garrosh's Landing
+								{ 80.9, 48.4, BOREAN_TUNDRA }, -- The Frozen Reach, southwest of Death's Stand
+								{ 17.8, 57.25, CRYSTALSONG_FOREST }, -- Between The Azure Front and Violet Stand
+								{ 43.2, 44.2, CRYSTALSONG_FOREST }, -- Forlorn Woods, just east of Dalaran proper
+								{ 68.1, 49.2, CRYSTALSONG_FOREST }, -- West of Sunreaver's Command
+								{ 26.7, 54.1, DRAGONBLIGHT }, --West of Star's Rest
+								{ 65.5, 35.6, DRAGONBLIGHT }, -- The Dragon Wastes
+								{ 82.2, 66.1, DRAGONBLIGHT }, -- The Forgotten Shore
+								{ 25.8, 56.9, GRIZZLY_HILLS }, -- West across the river for Amberpine Lodge
+								{ 61.7, 18.15, GRIZZLY_HILLS }, -- At the bottom of the Zul'Drak stairs by Thor Modan
+								{ 79.6, 51.9, GRIZZLY_HILLS }, -- Northeast of Dun Argol
+								{ 45.9, 43.15, HOWLING_FJORD }, -- West of Utgarde Keep
+								{ 68.3, 67.6, HOWLING_FJORD }, -- By the main road west of Baelgun's Excavation Site
+								{ 71.7, 43.2, HOWLING_FJORD }, -- East of Utgarde Keep
+								{ 73.55, 64.9, ICECROWN }, -- Between The Broken Front and Scourgeholme
+								{ 44.2, 33.6, ICECROWN }, -- Northen end of Ironwall Rampart
+								{ 48.3, 87.1, ICECROWN }, -- The Court of Bones
+								{ 36.9, 19.25, SHOLAZAR_BASIN }, -- Shelf above Spearborn Encampment
+								{ 58.3, 22.1, SHOLAZAR_BASIN }, -- Shelf north of the Bonefields
+								{ 44.5, 69.35, SHOLAZAR_BASIN }, -- Wildgrowth Mangal, southwest of River's Heart
+								{ 65.2, 41.8, THE_STORM_PEAKS }, -- Plain of Echoes
+								{ 29.15, 51.4, THE_STORM_PEAKS }, -- Southern end of Snowdrift Plains
+								{ 41.8, 78.7, THE_STORM_PEAKS }, -- Just east of the Crystalweb Cavern by K3
+								{ 24.35, 64.0, ZULDRAK }, -- The Dead Fields, just west of Crusader Forward Camp
+								--{ 75.1, 23.1, ZULDRAK }, -- Just south of Gundrak dungeon's northwestern entrance. NOT confirmed.
+							},
 							["timeline"] = { ADDED_5_3_0 },
 						}),
 					},
@@ -299,22 +328,22 @@ root(ROOTS.Zones, {
 					exploration(4129),	-- Warsong Hold
 				}),
 				n(FACTIONS, {
-					faction(1037, {	-- Alliance Vanguard
+					faction(FACTION_ALLIANCE_VANGUARD, {	-- Alliance Vanguard
 						["races"] = ALLIANCE_ONLY,
 					}),
-					faction(1052, {	-- Horde Expedition
+					faction(FACTION_HORDE_EXPEDITION, {	-- Horde Expedition
 						["maps"] = { DRAGONBLIGHT, GRIZZLY_HILLS, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 					}),
-					faction(1064, {	-- The Taunka
+					faction(FACTION_THE_TAUNKA, {	-- The Taunka
 						["maps"] = { DRAGONBLIGHT, GRIZZLY_HILLS, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 					}),
-					faction(1085, {	-- Warsong Offensive
+					faction(FACTION_WARSONG_OFFENSIVE, {	-- Warsong Offensive
 						["maps"] = { DRAGONBLIGHT, GRIZZLY_HILLS, ICECROWN, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
-					faction(1050, {	-- Valiance Expedition
+					faction(FACTION_VALIANCE_EXPEDITION, {	-- Valiance Expedition
 						["maps"] = { HOWLING_FJORD, GRIZZLY_HILLS, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -508,7 +537,7 @@ root(ROOTS.Zones, {
 						["qg"] = 32548,	-- Corastrasza
 						["sourceQuest"] = 13413,	-- Aces High!
 						["coord"] = { 29.4, 24.8, BOREAN_TUNDRA },
-						["maxReputation"] = { 1091, EXALTED },	-- The Wyrmrest Accord, Exalted.
+						["maxReputation"] = { FACTION_THE_WYRMREST_ACCORD, EXALTED },	-- The Wyrmrest Accord, Exalted.
 						["isDaily"] = true,
 					}),
 					q(11930, {	-- Across Transborea
@@ -785,7 +814,7 @@ root(ROOTS.Zones, {
 						["qg"] = 26117,	-- Raelorasz
 						["sourceQuest"] = 11919,	-- Drake Hunt
 						["coord"] = { 33.3, 34.5, BOREAN_TUNDRA },
-						["maxReputation"] = { 1091, EXALTED },	-- The Wyrmrest Accord, Exalted.
+						["maxReputation"] = { FACTION_THE_WYRMREST_ACCORD, EXALTED },	-- The Wyrmrest Accord, Exalted.
 						["isDaily"] = true,
 					}),
 					q(11866, {	-- Ears of Our Enemies
@@ -1585,7 +1614,7 @@ root(ROOTS.Zones, {
 					q(11945, {	-- Preparing for the Worst
 						["qg"] = 26213,	-- Utaik
 						["coord"] = { 64.0, 45.7, BOREAN_TUNDRA },
-						["maxReputation"] = { 1073, EXALTED },	-- The Kalu'ak, Exalted.
+						["maxReputation"] = { FACTION_THE_KALUAK, EXALTED },	-- The Kalu'ak, Exalted.
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/8 Kaskala Supplies
@@ -2628,7 +2657,13 @@ root(ROOTS.Zones, {
 							i(25474),	-- Tawny Wind Rider (MOUNT!)
 						},
 					}),
-					n(27188, {	-- Tonraq <Spearcrafter>
+					n(
+					-- #if AFTER 7.3.5
+					129141,	-- Tonraq <Spearcrafter>
+					-- #else
+					27188,	-- Tonraq <Spearcrafter>
+					-- #endif
+					{
 						["coord"] = { 77.8, 52.2, BOREAN_TUNDRA },
 						["groups"] = {
 							i(39987),	-- Tuskarr Fishing Spear
@@ -2668,6 +2703,21 @@ root(ROOTS.Zones, {
 							{ 63.4, 29.0, BOREAN_TUNDRA },
 							{ 64.8, 23.6, BOREAN_TUNDRA },
 							{ 68.0, 26.6, BOREAN_TUNDRA },
+						},
+					}),
+					i(34597, {	-- Winterfin Clam
+						["provider"] = { "o", 187367 },	-- Winterfin Clam
+						["coords"] = {
+							{ 38.1, 15.3, BOREAN_TUNDRA },
+							{ 42.5, 14.2, BOREAN_TUNDRA },
+							{ 43.3, 19.7, BOREAN_TUNDRA },
+							{ 37.7, 23.2, BOREAN_TUNDRA },
+						},
+						["crs"] = {
+							25210,	-- Keymaster Urmgrgl
+							25216,	-- Winterfin Oracle
+							25215,	-- Winterfin Shorestriker
+							25217,	-- Winterfin Warrior
 						},
 					}),
 				}),

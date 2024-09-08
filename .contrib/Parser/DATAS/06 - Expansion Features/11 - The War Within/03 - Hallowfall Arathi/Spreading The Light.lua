@@ -77,7 +77,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(229085),	-- Aevery's Spare Bracers
 					i(229082),	-- Aevery's Spare Chausses
 					i(229081),	-- Aevery's Spare Cowl
-					i(216528, {
+					i(216528, {	-- Faded Supply Chest Key
 						["crs"] = { 218024, } -- Drowned Arathi
 					}),
 					i(229155),	-- Lamplighter's Greataxe
@@ -96,12 +96,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					q(82006, {	-- Speak to Attica Whiskervale
 						["name"] = "Speak to Attica Whiskervale",
 						["description"] = "Speak to Attica Whiskervale about Captain Lancekat. If Attica is not there, relight the nearby lesser keyflame.",
+						["isWeekly"] = true,	-- TODO: it is unflagged with weekly reset
 						["sourceQuests"] = { 78472 },	-- Keyflame: Attica Whiskervale
 						["provider"] = { "n", 212419 },	-- Attica Whiskervale
 						["coord"] = { 64.5, 18.8, HALLOWFALL },
 					}),
 					q(82007, {	-- Tale of Tails
 						["sourceQuests"] = { 82006 },	-- Speak to Attica Whiskervale
+						["provider"] = { "n", 212419 },	-- Attica Whiskervale
+						["coord"] = { 64.5, 18.8, HALLOWFALL },
 						["g"] = {
 							i(220782),	-- Thunder (PET!)
 						},
@@ -113,28 +116,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					q(79222, {	-- Shadow-Hardened Mainspring
 						["provider"] = { "i", 212330 },	-- Shadow-Hardened Mainspring (QS!/QI!)
 					}),
-					q(82963, {	-- Hillhelm Family: Lil Piggy
-						["provider"] = { "i", 224457 },	-- Lil Piggy (QS!/QI!)
-					}),
-					q(82967, {	-- Hillhelm Family: The Ear
-						["provider"] = { "i", 224462 },	-- The Ear (QS!/QI!)
-					}),
-					q(82968, {	-- Hillhelm Family: The Plowhead
-						["provider"] = { "i", 224545 },	-- The Plowhead (QS!/QI!)
-					}),
-					q(82964, {	-- Hillhelm Family: Uncle's Eye
-						["provider"] = { "i", 224486 },	-- Uncle's Eye (QS!/QI!)
-					}),
-					q(82966, {	-- Hillhelm Family: Unusual Potato
-						["provider"] = { "i", 224465 },	-- Unusual Potato (QS!/QI!)
-					}),
 				}),
 				n(QUESTS, sharedData({ ["isWeekly"] = true }, {
 					q(79234, {	-- A Small Bag of Seeds
 						["provider"] = { "i", 212339 },	-- A Small Bag of Seeds
 					}),
 					q(80562, {	-- Blossoming Delight
-						-- TODO: Needs info, currently exists as an achievement criteria for Beacon of Hope (40308), but did the quest even make it to live?
+						--TODO: uncomment when confirmed
+						--["sourceQuests"] = { 78466 },	-- Keyflame: Chef Dinaire
+						--["provider"] = { "n", 206533 },	-- Chef Dinaire
+						--["coord"] = { 64.5, 31.1, HALLOWFALL },
+						--["g"] = {
+						--	i(218127),	-- Ever-Blossoming Fungi (QI!) TODO: remove from unsorted
+						--},
 					}),
 					q(79346, {	-- Chew On That
 						["sourceQuests"] = { 79295 },	-- Keyflame: Taerry Bligestone
@@ -151,6 +145,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["g"] = {
 							i(216693),	-- Shadowtide Crab (QI!)
 						},
+					}),
+					q(83282, {	-- Hillhelm Family: A Clutch of Eggs
+						["provider"] = { "i", 225339 },	-- Chicken Eggs (QS!/QI!)
+					}),
+					q(83278, {	-- Hillhelm Family: A Lost Shoe
+						["provider"] = { "i", 225336 },	-- A Lost Shoe (QS!/QI!)
+					}),
+					q(82963, {	-- Hillhelm Family: Lil Piggy
+						["provider"] = { "i", 224457 },	-- Lil Piggy (QS!/QI!)
+					}),
+					q(82967, {	-- Hillhelm Family: The Chicken
+						["provider"] = { "i", 224466 },	-- Wilber The Chicken (QS!/QI!)
+					}),
+					q(82967, {	-- Hillhelm Family: The Ear
+						["provider"] = { "i", 224462 },	-- The Ear (QS!/QI!)
+					}),
+					q(82968, {	-- Hillhelm Family: The Plowhead
+						["provider"] = { "i", 224545 },	-- The Plowhead (QS!/QI!)
+					}),
+					q(82964, {	-- Hillhelm Family: Uncle's Eye
+						["provider"] = { "i", 224486 },	-- Uncle's Eye (QS!/QI!)
+					}),
+					q(82966, {	-- Hillhelm Family: Unusual Potato
+						["provider"] = { "i", 224465 },	-- Unusual Potato (QS!/QI!)
 					}),
 					q(81632, {	-- Lizard Looters
 						["sourceQuests"] = { 78472 },	-- Keyflame: Attica Whiskervale
@@ -742,6 +760,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(81846),	-- Ore @ 65.3, 16.6
 			q(83047),	-- Ore @ 66.1, 17.0
 			q(83039),	-- Ore @ 66.3, 17.5
+			q(81848),	-- Ore @ 66.4, 23.4
 			q(80337),	-- Radiant Remnant @ 66.1, 16.6
 			q(80347),	-- Radiant Remnant @ 65.7, 16.5
 			q(80342),	-- Radiant Remnant @ 65.4, 16.7
@@ -790,6 +809,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(76996),	-- after buy and use itemID 210826 (Harvestbot Repair Kit)
 			q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
 			q(83342),	-- after turn in 76394 (Shadows of Flavor), unlock ability to buy Twilight-Spiced Grouper from vendor
+			--q(),	-- after turn in 80562 (Blossoming Delight), unlock ability to buy Darkstem Stew from vendor
 		}),
 	}),
 })));
