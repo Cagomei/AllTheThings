@@ -767,6 +767,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(228367),	-- Arathi Scout's Walking Stick
 						i(228366),	-- Child's Former Fishing Rod
 						i(228365),	-- Concerned Captain's Cudgel
+						i(228364),	-- Endiri's Chipped Boot Knife
 						i(228362),	-- Polished Arathi Rifle
 						i(228363),	-- Shinda's Spare Greataxe
 					},
@@ -1103,6 +1104,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			q(79221, {	-- The Unusual Bug
 				["provider"] = { "i", 212331 },	-- The Unusual Bug (QS!/QI!)
+				["coord"] = { 67.2, 21.8, HALLOWFALL },
 				["maps"] = { AZJ_KAHET },
 			}),
 			q(81640, {	-- Tenir and the Order of Night
@@ -1213,7 +1215,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(81568, {	-- Release the Beasts
-					["sourceQuests"] = { 78672 },	-- A Lamplighter's Duty
+					["sourceQuests"] = {
+						78672,	-- A Lamplighter's Duty
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["coord"] = { 55.2, 26.8, HALLOWFALL },
 					["g"] = {
 						i(217352),	-- Gasping Fish (QI!)

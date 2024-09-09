@@ -50,7 +50,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(82339, {	-- An Honorless Kill
 					["sourceQuests"] = { 82338 },	-- Absent Errand
-					["provider"] = { "n", 224345 },	-- Ukos'via <Historical Spinner>
+					["provider"] = { "n", 223760 },	-- Ukos'via <Historical Spinner>
 					["coord"] = { 40.9, 33.5, NERUBAR },
 					["g"] = {
 						i(225637),	-- Poisoned Dagger (QI!)
@@ -142,6 +142,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["g"] = {
 						o(437767, {	-- Crate of Hallowfall Herbs
 							i(219225),	-- Crystalline Brightbloom (QI!)
+						}),
+					},
+				}),
+				q(81496, {	-- Requisitions: Fangpetals
+					["provider"] = { "n", 224179 },	-- Ghos'opp
+					["coord"] = { 49.2, 51.6, NERUBAR },
+					["g"] = {
+						o(437769, {	-- Fragrant Fangpetal
+							i(219226),	-- Fragrant Fangpetal (QI!)
 						}),
 					},
 				}),
@@ -244,6 +253,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(219344),	-- Immaculate Spidersilk (QI!)
 					},
 				}),
+				q(81499, {	-- Information Control: Ascended Intrigue
+					["provider"] = { "n", 224198 },	-- Ru'murh
+					["coord"] = { 54.8, 34.7, NERUBAR },
+				}),
 				q(81472, {	-- Information Control: Ansurek's Truth
 					["provider"] = { "n", 224197 },	-- Ru'murh
 					["coord"] = { 39.8, 26.6, NERUBAR },
@@ -294,8 +307,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 
 				q(80592, {	-- Forge a Pact
 					["sourceQuests"] = { 84682 },	-- Of Pacts and Patrons
-					["provider"] = { "n", 223750 },	-- Lady Vinazian
-					["coord"] = { 55.6, 43.8, AZJ_KAHET },
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian
+						{ "n", 220867 },	-- Y'tekhi
+					},
+					["coord"] = { 55.2, 41, AZJ_KAHET },
 				}),
 				q(80671, {	-- Blade of the General
 					["sourceQuests"] = {
@@ -303,8 +319,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						80592,	-- Forge a Pact
 					},
 					["sourceQuestNumRequired"] = 1,
-					--["provider"] = { "n", xx },
-					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian
+						{ "n", 220867 },	-- Y'tekhi
+					},
+					["coord"] = { 55.2, 41, AZJ_KAHET },
 					["g"] = {
 						i(225572, {	-- The General's War Chest
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
@@ -319,8 +338,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						80592,	-- Forge a Pact
 					},
 					["sourceQuestNumRequired"] = 1,
-					--["provider"] = { "n", xx },
-					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian
+						{ "n", 220867 },	-- Y'tekhi
+					},
+					["coord"] = { 55.2, 41, AZJ_KAHET },
 					["g"] = {
 						i(225573, {	-- The Vizier's Capital
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
@@ -335,8 +357,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						80592,	-- Forge a Pact
 					},
 					["sourceQuestNumRequired"] = 1,
-					--["provider"] = { "n", xx },
-					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian
+						{ "n", 220867 },	-- Y'tekhi
+					},
+					["coord"] = { 55.2, 41, AZJ_KAHET },
 					["g"] = {
 						i(225571, {	-- The Weaver's Gratuity
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
@@ -437,7 +462,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["cost"] = {{"c", KEJ, 25}},
 						}),
 						i(226520, {	-- Queen's Pheromone (CI!)
-							["cost"] = {{"c", KEJ, 8888888}},
+						-- The price is a Meme done by blizzard.
+						--	["cost"] = {{"c", KEJ, 8888888}},
 						}),
 						i(223279, {	-- Royal Court Undercrawler (MOUNT!)
 							["minReputation"] = { FACTION_THE_VIZIER, 8 },

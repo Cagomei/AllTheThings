@@ -426,7 +426,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79711, {	-- That's Pretty Gross
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "o", 443995 },	-- Familiar-Looking Appendage
-					["coord"] = { 59.7, 69.2, AZJ_KAHET },	-- TODO: probably have more spawns?
+					["coord"] = { 55.6, 70.8, AZJ_KAHET },	-- TODO: probably have more spawns?
 					["g"] = {
 						i(214504),	-- Familiar-Looking Appendage (QI!)
 					},
@@ -460,7 +460,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79714,	-- Rescuing the Food
 					},
 					["provider"] = { "n", 217565 },	-- Al'kubian
-					["coord"] = { 60.2, 68.7, AZJ_KAHET },
+					["coord"] = { 60.0, 66.1, AZJ_KAHET },
 					["g"] = {
 						i(222944),	-- Swollen Brain of Gluttony (QI!)
 					},
@@ -492,7 +492,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						80563,	-- Tool of Attunement
 					},
 					["provider"] = { "n", 226672 },	-- Orweyna
-					["coord"] = { 49.3, 60.2, AZJ_KAHET },	-- but probably could be 2 more, depending on order of quest before?
+					["coord"] = { 49.3, 60.2, AZJ_KAHET_LOWER },	-- but probably could be 2 more, depending on order of quest before?
 				}),
 				q(80565, {	-- Resounding Repercussions
 					["sourceQuests"] = { 82143 },	-- The Path of Dissonance
@@ -768,14 +768,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["isBreadcrumb"] = true,	-- unless it is now required for spawn next quests/npc
 				}),
 				q(83616, {	-- The Entrenched
-					["sourceQuests"] = { 81686 },	-- Subterfuge in Silk
+					-- ["sourceQuests"] = { 81686 },	-- Subterfuge in Silk
 					["provider"] = { "n", 222136 },	-- Teth
-					["coord"] = { 69.1, 52.0, AZJ_KAHET },
+					["coord"] = { 69.7, 47.9, AZJ_KAHET },
 				}),
 				q(81683, {	-- Spring Collection
 					["sourceQuests"] = { 83616 },	-- The Entrenched
 					["provider"] = { "n", 221557 },	-- Grand Overspinner Antourix
-					["coord"] = { 74.7, 56.2, AZJ_KAHET },
+					["coord"] = { 75.8, 52.5, AZJ_KAHET },
 					["g"] = {
 						i(224286),	-- Cochineal Crawler (QI!)
 						i(224284),	-- Eyeless Petal (QI!)
@@ -786,7 +786,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81667, {	-- The Upstart
 					["sourceQuests"] = { 81686 },	-- Subterfuge in Silk
 					["provider"] = { "n", 222136 },	-- Teth
-					["coord"] = { 69.1, 52.0, AZJ_KAHET },
+					["coord"] = { 69.7, 47.9, AZJ_KAHET },
 				}),
 				q(81668, {	-- Measure Once, Cut Thrice
 					["sourceQuests"] = { 81667 },	-- The Upstart
@@ -818,7 +818,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						81687,	-- I Expect You To Dye
 					},
 					["provider"] = { "n", 222136 },	-- Teth
-					["coord"] = { 69.0, 52.0, AZJ_KAHET },
+					["coord"] = { 69.7, 47.9, AZJ_KAHET },
 					["g"] = {
 						i(224659),	-- Secret-Woven Silk (QI!)
 					},
