@@ -674,14 +674,12 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(213402),	-- Incriminating Crystal
 			i(213405),	-- Incriminating Focus
 			i(213404),	-- Incriminating Script
-			i(223220),	-- Kaheti All-Purpose Cleanser
 			i(213424),	-- Keg of Cinderbrew Mead
 			i(217400),	-- Kobyss Lure
 			i(222963),	-- Lava Globs
 			i(213557),	-- Lost Journal Tablet
 			i(212519),	-- Nebb's Key
 			i(212521),	-- Nebb's "Treasure" [DNT]
-			i(228378),	-- Pristine Council's Seal
 			i(212604),	-- Restored Titan Key NOT USED
 			i(211961),	-- Rocket-Powered Impact Wrench
 			i(219388),	-- Sacred Flame Torch

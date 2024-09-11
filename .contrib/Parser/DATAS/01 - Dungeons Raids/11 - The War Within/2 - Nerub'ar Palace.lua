@@ -23,7 +23,7 @@ local EncounterToCRS = {
 		223779,	-- Anub'arash <The Thousand Scars>
 		223781,	-- Skeinspinner Takazj
 	},
-	[ANSUREK] = { 227323 },	-- Queen Ansurek
+	[ANSUREK] = { 227323, 218370 },	-- Queen Ansurek
 };
 
 ------ EnconterToLoot ------
@@ -484,6 +484,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 				n(QUESTS, {
+					q(82629,{	-- Nerub-ar Palace: For Nerubian Eyes Only
+						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
+						["g"] = {
+							i(224014),	-- Signet of the Skeinspiner (QI!)
+							i(224011),	-- Signet of the Thousand Scars (QI!)
+						},
+					}),
 				}),
 				ZoneDrops({
 				}),
@@ -520,6 +527,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 				n(QUESTS, {
+					q(82638,{	-- Nerub-ar Palace: For Nerubian Eyes Only
+						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
+						["g"] = {
+							i(224015),	-- Signet of the Skeinspiner (QI!)
+							i(224012),	-- Signet of the Thousand Scars (QI!)
+						},
+					}),
 				}),
 				ZoneDrops({
 				}),
@@ -544,6 +558,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 				n(QUESTS, {
+					q(82639,{	-- Nerub-ar Palace: For Nerubian Eyes Only
+						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
+						["g"] = {
+							i(224016),	-- Signet of the Skeinspiner (QI!)
+							i(224013),	-- Signet of the Thousand Scars (QI!)
+						},
+					}),
 				}),
 				ZoneDrops({
 				}),
@@ -587,3 +608,29 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 		},
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	inst(1273, bubbleDown({	-- Nerub'ar Palace
+		["isWeekly"] = true,
+	},{
+		-- LFR/Normal
+		q(83508),	-- First trash pack
+		q(83515),	-- Xur'khun the Defiled (trash)
+		q(83505),	-- Foreseer Xix'amon (trash)
+		q(83511),	-- Terrace of Majesty FP unlock
+		q(83507),	-- trash after Rasha'nan
+
+		q(84261),	-- Ulgrax the Devourer
+		q(84263),	-- The Bloodbound Horror
+		q(84265),	-- Sikran
+		q(84267),	-- Rasha'nan
+		q(84271),	-- Bloodtwister Ovi'nax
+		q(84269),	-- Nexus-Princess Ky'veza
+		-- q()
+		q(84276),	-- Queen Ansurek
+
+		-- Heroic
+
+		-- Mythic
+	})),
+})))

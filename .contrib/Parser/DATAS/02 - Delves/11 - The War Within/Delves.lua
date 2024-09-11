@@ -163,10 +163,15 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 		}),
+		q(84224, {	-- To Delves!
+			["sourceQuests"] = { 81510 },	-- Ship It!
+			--["provider"] = { "n", xxxxx },	-- Auto-accept?
+			["coord"] = { 47.4, 44.4, DORNOGAL },
+		}),
 		q(81596, {	-- Delve Hunter
 			["sourceQuests"] = { 81595 },	-- Seasonal Start
 			["provider"] = { "n", 226763 },	-- Naleidea Rivergleam
-			["coord"] = { 47.7, 44.5, DORNOGAL },
+			["coord"] = { 47.8, 44.5, DORNOGAL },
 		}),
 		q(83500, {	-- Zekvir, Hand of the Harbinger
 			["sourceQuests"] = { 81596 },	-- Delve Hunter
@@ -216,6 +221,51 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(77730),	-- Level 13
 		q(77731),	-- Level 14
 		q(77732),	-- Level 15
+		q(77733),	-- Level 16
+		q(77734),	-- Level 17
+		q(77735),	-- Level 18
+		q(77736),	-- Level 19
+		--q(???),	-- Level 20
+		q(81509),	-- Level 21
+		q(81508),	-- Level 22
+		q(81507),	-- Level 23
+		q(79352),	-- Level 24
+		--q(???),	-- Level 25
+		q(84087),	-- Level 26
+		q(84088),	-- Level 27
+		q(84089),	-- Level 28
+		q(84090),	-- Level 29
+		--q(???),	-- Level 30
+		q(84092),	-- Level 31
+		q(84093),	-- Level 32
+		q(84094),	-- Level 33
+		q(84095),	-- Level 34
+		q(84096),	-- Level 35
+		q(84097),	-- Level 36
+		q(84098),	-- Level 37
+		q(84099),	-- Level 38
+		q(84100),	-- Level 39
+		--q(???),	-- Level 40
+		q(84102),	-- Level 41
+		q(84103),	-- Level 42
+		q(84104),	-- Level 43
+		q(84105),	-- Level 44
+		q(84106),	-- Level 45
+		q(84107),	-- Level 46
+		q(84108),	-- Level 47
+		q(84109),	-- Level 48
+		q(84110),	-- Level 49
+		--q(???),	-- Level 50
+		q(84111),	-- Level 51
+		q(84112),	-- Level 52
+		q(84113),	-- Level 53
+		q(84114),	-- Level 54
+		q(84115),	-- Level 55
+		q(84116),	-- Level 56
+		q(84117),	-- Level 57
+		q(84118),	-- Level 58
+		q(84119),	-- Level 59
+		--q(???),	-- Level 60
 	}),
 	n(QUESTS, sharedData({
 		["provider"] = { "n", 206017 },	-- Brann Bronzebeard
@@ -256,6 +306,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(228071),	-- Chunk of Companion Experience (Uncommon)
 				i(228072),	-- Chunk of Companion Experience (Rare)
 				i(228073),	-- Chunk of Companion Experience (Epic)
+				i(232046),	-- Chunk of Companion Experience (Possibly not from treasure)
 			},
 		}),
 	}),
@@ -1038,6 +1089,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 		})),
 		filter(CONSUMABLES, {
+			i(227668),	-- Delver's Bounty [Tier 1]
+			i(227778),	-- Delver's Bounty [Tier 2]
+			i(227779),	-- Delver's Bounty [Tier 3]
+			i(227780),	-- Delver's Bounty [Tier 4]
+			i(227781),	-- Delver's Bounty [Tier 5]
+			i(227782),	-- Delver's Bounty [Tier 6]
+			i(227783),	-- Delver's Bounty [Tier 7]
 			i(226120),	-- Deployable Battle Supplies
 			i(226131),	-- Deployable Wind-Wrangling Spire
 		}),

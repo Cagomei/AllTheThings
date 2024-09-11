@@ -716,6 +716,16 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(6167),	-- Deathwing kills (Dragon Soul)
 		ach(6168),	-- Deathwing Heroic kills (Dragon Soul)
 		ach(6170),	-- Alizabal kills (Baradin Hold)
+
+		-- 4.4.1.56464
+		-- #if ANYCLASSIC
+		-- #if AFTER 4.4.1
+		ach(40968),	-- Rival: Season 9
+		ach(40969),	-- Gladiator: Season 9
+		ach(40970),	-- Duelist: Season 9
+		ach(40971),	-- Challenger: Season 9
+		-- #endif
+		-- #endif
 	}),
 	expansion(EXPANSION.MOP, {
 		ach(6337),	-- Ossirian kills (Ruins of Ahn'Qiraj)
@@ -3469,9 +3479,6 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(20490),	-- Carved Harbinger Crests earned
 			ach(20491),	-- Runed Harbinger Crests earned
 			ach(20492),	-- Gilded Harbinger Crests earned
-			ach(40107),	-- Harbinger of the Carved (TODO: Fix Icon)
-			ach(40115),	-- Harbinger of the Runed (TODO: Fix Icon)
-			ach(40118),	-- Harbinger of the Gilded (TODO: Fix Icon)
 			ach(40145),	-- So Much Sharing
 
 			-- 11.0.0.54774

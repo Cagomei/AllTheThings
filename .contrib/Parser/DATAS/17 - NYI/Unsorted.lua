@@ -1204,12 +1204,6 @@ root(ROOTS.Unsorted, {
 			filter(QUEST_ITEMS, {
 				i(228623),	-- Blue's Request
 			}),
-			filter(COSMETIC, {
-				i(228761),	-- Classic Brick Tabard
-				i(228762),	-- Classic Lively Tabard
-				i(228763),	-- Classic Crimson Tabard
-				i(228764),	-- Classic Sunny Tabard
-			}),
 			--
 			i(229005),	-- Cache of Earthen Treasures
 			i(229006),	-- Cache of Earthen Treasures
@@ -1302,7 +1296,6 @@ root(ROOTS.Unsorted, {
 			i(229193),	-- Queen's Pheromone
 			--
 			i(232045),	-- Chunk of Companion Experience
-			i(232046),	-- Chunk of Companion Experience
 			i(232047),	-- Chunk of Companion Experience
 			i(232049),	-- Companion Experience
 		})),
@@ -1344,14 +1337,6 @@ root(ROOTS.Unsorted, {
 				--- Probably NYI ---
 				i(225901),	-- Streamlined Relic
 				i(225908),	-- Relicblood of Zekvir
-				--- Maps ---
-				i(227668),	-- Delver's Bounty [Tier 1]
-				i(227778),	-- Delver's Bounty [Tier 2]
-				i(227779),	-- Delver's Bounty [Tier 3]
-				i(227780),	-- Delver's Bounty [Tier 4]
-				i(227781),	-- Delver's Bounty [Tier 5]
-				i(227782),	-- Delver's Bounty [Tier 6]
-				i(227783),	-- Delver's Bounty [Tier 7]
 				--- Fungal Folly ---
 				i(209788),	-- Dispersion Crystal
 				--- Nightfall Sanctum ---
@@ -1457,7 +1442,6 @@ root(ROOTS.Unsorted, {
 				i(224557),	-- Field Medic's Hazard Payout
 				i(220378),	-- Forged Equipment Chest
 				i(225493),	-- Medal of Conquest
-				i(219934),	-- Spark of War
 			}),
 			f(QUEST_ITEMS, {
 				-- Possibly Delves
@@ -1469,17 +1453,9 @@ root(ROOTS.Unsorted, {
 				i(220116),	-- Completed Market Audit
 				i(213163),	-- Cryptographic Glyph
 				i(225887),	-- Titan Emitter
-				--- Raid Quest
-				i(224014),	-- Signet of the Skeinspiner
-				i(224015),	-- Signet of the Skeinspiner
-				i(224016),	-- Signet of the Skeinspiner
-				i(224011),	-- Signet of the Thousand Scars
-				i(224012),	-- Signet of the Thousand Scars
-				i(224013),	-- Signet of the Thousand Scars
 			}),
 			filter(TITLES, {
 				title(560),	-- <Name> Ascension Breaker
-				title(568),	-- <Name>, Machine-Warden
 			}),
 			filter(TOYS, {
 				--- Gonna check this! Make spellID able to be isToy to make it collectible from the quest // Braghe
