@@ -225,12 +225,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(77734),	-- Level 17
 		q(77735),	-- Level 18
 		q(77736),	-- Level 19
-		--q(???),	-- Level 20
+		q(77737),	-- Level 20
 		q(81509),	-- Level 21
 		q(81508),	-- Level 22
 		q(81507),	-- Level 23
 		q(79352),	-- Level 24
-		--q(???),	-- Level 25
+		q(79351),	-- Level 25
 		q(84087),	-- Level 26
 		q(84088),	-- Level 27
 		q(84089),	-- Level 28
@@ -303,10 +303,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		o(455914, {	-- Mislaid Curiosity
 			["description"] = "Contains Chunk of Companion Experience tokens.",
 			["g"] = {
+				-- First versions
 				i(228071),	-- Chunk of Companion Experience (Uncommon)
 				i(228072),	-- Chunk of Companion Experience (Rare)
 				i(228073),	-- Chunk of Companion Experience (Epic)
-				i(232046),	-- Chunk of Companion Experience (Possibly not from treasure)
+				-- Second versions
+				i(232047),	-- Chunk of Companion Experience (Uncommon)
+				i(232046),	-- Chunk of Companion Experience (Rare)
+				i(232045),	-- Chunk of Companion Experience (Epic)
 			},
 		}),
 	}),
@@ -380,8 +384,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(QUESTS, {
 				q(83758, {	-- Delver's Call: Fungal Folly
-					["provider"] = { "o", 455716 },
-					["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+					["providers"] = {
+						{ "o", 455716 },	-- DELVER'S CALL
+						{ "o", 485669 },	-- DELVER'S CALL: Fungal Folly
+					},
+					["coords"] = {
+						{ 55.3, 55.9, ISLE_OF_DORN },
+						{ 61.5, 80.5, FUNGAL_FOLLY },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -435,8 +445,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(QUESTS, {
 				q(83759, {	-- Delver's Call: Kriegval's Rest
-					["provider"] = { "o", 455713 },
-					["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+					["providers"] = {
+						{ "o", 455716 },	-- DELVER'S CALL
+						{ "o", 455713 },	-- DELVER'S CALL: Kriegval's Rest
+					},
+					["coords"] = {
+						{ 55.3, 55.9, ISLE_OF_DORN },
+						{ 35.6, 27.1, KRIEGVALS_REST },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -893,7 +909,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(85649, {	-- Delver's Call: The Waterworks
 					["provider"] = { "o", 487815 },	-- DELVER'S CALL: The Waterworks
-					["coord"] = { 46.9, 32.3, THE_RINGING_DEEPS },	-- TODO: dm report with 46.6, 17.8, 2251 for this quest?
+					["coord"] = { 46.6, 17.7, THE_WATERWORKS },
 				}),
 			}),
 			n(TREASURES, {
@@ -1691,5 +1707,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(83237),	-- Airship: Front 05 - Lantern (spellID 454475)
 		q(83238),	-- Airship: Body Color 01 - Brown (spellID 454478)
 		q(83239),	-- Airship: Back 02 - Multi-Exhaust (spellID 454474)
+		-- Zekvir
+		q(84816),	-- Zekvir pop in Earthcrawl Mines (first time, unsure what tier it was)
+		q(84818),	-- Zekvir pop in The Spiral Weave (2nd time in week, Tier 8)
 	}),
 })));

@@ -1061,6 +1061,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				["g"] = {
 					i(219192, {	-- Comprehensibly Organized Ideas
 						["description"] = "NOTE: Some of these require a specific specialization to discover.",
+						["f"] = MISC,
 						["g"] = {
 							r(447325, {	-- Aqirite Brainwave Projector
 								["description"] = "Requires specialization - Profession Gear to discover",
@@ -2624,7 +2625,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80808, 446935);	-- Cool Sunset Bracers
 			FirstCraft(80851, 446987);	-- Darkmoon Duffle
 			FirstCraft(80855, 446991);	-- Dawnthread Lining
-			--FirstCraft(XXXXX, 446928);	-- Dawnweave Bolt
+			FirstCraft(80801, 446928);	-- Dawnweave Bolt
 			FirstCraft(80841, 446977);	-- Dawnweave Reagent Bag
 			--FirstCraft(XXXXX, 447001);	-- Daybreak Spellthread
 			--FirstCraft(XXXXX, 446992);	-- Duskthread Lining
@@ -2666,7 +2667,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80829, 446965);	-- Weavercloth Fishing Cap
 			FirstCraft(80828, 446964);	-- Weavercloth Gardening Hat
 			FirstCraft(80842, 446978);	-- Weavercloth Reagent Bag
-			--FirstCraft(XXXXX, 446999);	-- Weavercloth Spellthread
+			FirstCraft(80863, 446999);	-- Weavercloth Spellthread
 			FirstCraft(80831, 446967);	-- Weavercloth Tailor's Coat
 			FirstCraft(80861, 446997);	-- Weavercloth Embroidery Thread
 		})),
@@ -2680,7 +2681,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(82474),	-- Transmutation 30/30
 
 			-- Unsure what are these
-			--q(82388),	-- Together with First Craft of Algari Mana Potion
+			--q(82388),	-- Together with First Craft of Algari Mana Potion or Algari Healing Potion
 			--q(81898),	-- Together with First Craft of Flask of Alchemical Chaos
 
 			--q(78604),	-- Randomly when crafting Wild Experimentation
