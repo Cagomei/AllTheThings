@@ -1099,7 +1099,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["isWeekly"] = true,
 			}),
 			------ Miscellaneous ------
-			q(81651),	-- Delver's Guide to Delves [Might be NYI??]
 			q(79554, {	-- Holy Hydrocarbons
 				["provider"] = { "i", 217388 },	-- Crate of Devotional Candles (QS!/QI!)
 			}),
@@ -1221,6 +1220,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["coord"] = { 55.2, 26.8, HALLOWFALL },
+					["sourceQuestNumRequired"] = 1,
 					["g"] = {
 						i(217352),	-- Gasping Fish (QI!)
 					},

@@ -235,7 +235,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(84088),	-- Level 27
 		q(84089),	-- Level 28
 		q(84090),	-- Level 29
-		--q(???),	-- Level 30
+		q(84091),	-- Level 30
 		q(84092),	-- Level 31
 		q(84093),	-- Level 32
 		q(84094),	-- Level 33
@@ -245,7 +245,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(84098),	-- Level 37
 		q(84099),	-- Level 38
 		q(84100),	-- Level 39
-		--q(???),	-- Level 40
+		q(84101),	-- Level 40
 		q(84102),	-- Level 41
 		q(84103),	-- Level 42
 		q(84104),	-- Level 43
@@ -255,7 +255,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(84108),	-- Level 47
 		q(84109),	-- Level 48
 		q(84110),	-- Level 49
-		--q(???),	-- Level 50
+		q(83329),	-- Level 50
 		q(84111),	-- Level 51
 		q(84112),	-- Level 52
 		q(84113),	-- Level 53
@@ -265,7 +265,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(84117),	-- Level 57
 		q(84118),	-- Level 58
 		q(84119),	-- Level 59
-		--q(???),	-- Level 60
+		q(83330),	-- Level 60
 	}),
 	n(QUESTS, sharedData({
 		["provider"] = { "n", 206017 },	-- Brann Bronzebeard
@@ -942,7 +942,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {
 				ach(40431),	-- Hunting the Hunter
 				ach(40433, {	-- Hunting the Hunter (Solo)
-					i(225542),	-- Delver's Dirigible Schematic: Void (DDS!)
+					i(225542),	-- Delver's Dirigible Schematic: Void (MM!)
 				}),
 				ach(40103, {	-- Nemesis
 					i(212171),	-- Zekvir's Raptorial Spine
@@ -1354,20 +1354,20 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		n(226250, {	-- Reno Jackson <Delve Treasures>
 			["coord"] = { 47.6, 45.0, DORNOGAL },
 			["g"] = {
-				n(AIRSHIP, {
-					i(224981, {	-- Delver's Dirigible Schematic: Brown Paint (DDS!)
+				n(DELVERS_DIRIGIBLE_SCHEMATIC, {
+					i(224981, {	-- Delver's Dirigible Schematic: Brown Paint (MM!)
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
 					}),
-					i(224982, {	-- Delver's Dirigible Schematic: Exhaust (DDS!)
+					i(224982, {	-- Delver's Dirigible Schematic: Exhaust (MM!)
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
 					}),
-					i(224980, {	-- Delver's Dirigible Schematic: Front-Mounted Lantern (DDS!)
+					i(224980, {	-- Delver's Dirigible Schematic: Front-Mounted Lantern (MM!)
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
 					}),
-					i(224960, {	-- Delver's Dirigible Schematic: Lantern Wing (DDS!)
+					i(224960, {	-- Delver's Dirigible Schematic: Lantern Wing (MM!)
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
 					}),
-					i(224979, {	-- Delver's Dirigible Schematic: Zeppelin (DDS!)
+					i(224979, {	-- Delver's Dirigible Schematic: Zeppelin (MM!)
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
 					}),
 				}),
@@ -1537,17 +1537,17 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(224172, {	-- Restored Coffer Key
 					["cost"] = {{"c", UNDERCOIN, 1000}},
 				}),
-				n(AIRSHIP, {
-					i(224771, {	-- Delver's Dirigible Schematic: Empennage (DDS!)
+				n(DELVERS_DIRIGIBLE_SCHEMATIC, {
+					i(224771, {	-- Delver's Dirigible Schematic: Empennage (MM!)
 						["cost"] = {{"c", UNDERCOIN, 1000}},
 					}),
-					i(224770, {	-- Delver's Dirigible Schematic: Front-Mounted Propeller (DDS!)
+					i(224770, {	-- Delver's Dirigible Schematic: Front-Mounted Propeller (MM!)
 						["cost"] = {{"c", UNDERCOIN, 2500}},
 					}),
-					i(224769, {	-- Delver's Dirigible Schematic: Rotor Blades (DDS!)
+					i(224769, {	-- Delver's Dirigible Schematic: Rotor Blades (MM!)
 						["cost"] = {{"c", UNDERCOIN, 3000}},
 					}),
-					i(224768, {	-- Delver's Dirigible Schematic: Wing-Mounted Propeller (DDS!)
+					i(224768, {	-- Delver's Dirigible Schematic: Wing-Mounted Propeller (MM!)
 						["cost"] = {{"c", UNDERCOIN, 2500}},
 					}),
 				}),

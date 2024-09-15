@@ -351,11 +351,11 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 		}),
 	}),
-	n(DRAKEWATCHER_MANUSCRIPTS, {
+	n(MOUNT_MODS, {
 		expansion(EXPANSION.DF, {
 			-- 10.2.0
 			expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				i(207775),	-- Grotto Netherwing Drake: Teal Scales (DM!)
+				i(207775),	-- Grotto Netherwing Drake: Teal Scales (MM!)
 			})),
 		}),
 
@@ -782,7 +782,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		q(84582),
 		q(84580),
 		q(84579),
-		q(82959),
 		q(82324),
 	}),
 }));

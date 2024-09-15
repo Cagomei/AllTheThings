@@ -325,7 +325,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79119, {	-- It's Rough to Be a Bug!
 					["sourceQuests"] = { 83325 },
 					["provider"] = { "n", 214359 },	-- Kish'nal
-					["coord"] = { 74.9, 83.5, AZJ_KAHET },
+					["coord"] = { 76, 82.4, AZJ_KAHET },
 				}),
 				q(79114, {	-- Beautification Project
 					["sourceQuests"] = { 79119 },	-- It's Rough to Be a Bug!
@@ -437,7 +437,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79711,	-- That's Pretty Gross
 					},
 					["provider"] = { "n", 217565 },	-- Al'kubian
-					["coord"] = { 60.2, 68.6, AZJ_KAHET },
+					["coord"] = { 60.0, 66.2, AZJ_KAHET },
 					["g"] = {
 						i(222926),	-- Leg Chewers' Stomach (QI!)
 						i(222924),	-- Liverseeker's Intestines (QI!)
@@ -449,7 +449,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79711,	-- That's Pretty Gross
 					},
 					["provider"] = { "n", 217565 },	-- Al'kubian
-					["coord"] = { 60.2, 68.6, AZJ_KAHET },
+					["coord"] = { 60.0, 66.2, AZJ_KAHET },
 					["g"] = {
 						i(223287),	-- Atomized Salien Slime (QI!)
 					},
@@ -460,7 +460,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79714,	-- Rescuing the Food
 					},
 					["provider"] = { "n", 217565 },	-- Al'kubian
-					["coord"] = { 60.0, 66.1, AZJ_KAHET },
+					["coord"] = { 60.0, 66.2, AZJ_KAHET },
 					["g"] = {
 						i(222944),	-- Swollen Brain of Gluttony (QI!)
 					},
@@ -973,51 +973,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 59.4, 19.4, AZJ_KAHET },
 				}),
 			}),
-			header(HEADERS.Achievement, 40832, {	-- Leave it to Weaver
-				q(84700, {	-- Pacts Below
-					--["sourceQuests"] = { 79030 },	-- The Voice of the Speakers (?)
-					["provider"] = { "n", 230098 },	-- Spindle
-					["coord"] = { 46.1, 50.0, DORNOGAL },
-					["isBreadcrumb"] = true,
-				}),
-				q(83276, {	-- Saving Private Spindle
-					["sourceQuests"] = { 84700 },	-- Pacts Below (still unsure)
-					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 55.6, 43.9, AZJ_KAHET },
-				}),
-				q(83277, {	-- Personal Pilfering
-					["sourceQuests"] = { 83276 },	-- Saving Private Spindle
-					["provider"] = { "n", 226019 },	-- Spindle
-					["coord"] = { 87.7, 59.3, NERUBAR },
-					["g"] = {
-						i(225341),	-- Incriminating Dagger (QI!)
-						i(225344),	-- Incriminating Evidence (QI!)
-						i(225343),	-- Incriminating Journal Entry (QI!)
-						i(225342),	-- Incriminating Script (QI!)
-					},
-				}),
-				q(79532, {	-- Tinker, Tailor, Soldier, Spider
-					["sourceQuests"] = { 83277 },	-- Personal Pilfering (could be wrong, spawn some time afterwards)
-					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 55.6, 43.9, AZJ_KAHET },
-				}),
-				q(79627, {	-- Wine and Die
-					["sourceQuests"] = { 79532 },	-- Tinker, Tailor, Soldier, Spider
-					["provider"] = { "n", 227428 },	-- Widow Arak'nai
-					["coord"] = { 62.9, 12.1, NERUBAR_LOWER },
-					["g"] = {
-						i(213538),	-- Wood-Worm Tonic (QI!)
-					},
-				}),
-				q(79633, {	-- The Weaver's Legacy
-					["sourceQuests"] = { 79627 },	-- Wine and Die
-					["provider"] = { "n", 216298 },	-- Meesk the Venomtongue
-					["coord"] = { 62.8, 22.9, NERUBAR },
-					["g"] = {
-						ach(40832),		-- Leave it to Weaver
-					},
-				}),
-			}),
 			header(HEADERS.Item, 224150, {	-- Siegbarg
 				q(83627, {	-- The Beginning of Something Beautiful
 					["provider"] = { "i", 225952 },	-- 1x Vial of Tka'ktath's Blood
@@ -1046,21 +1001,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(226136),	-- Nerubian Blood (QI!)
 					},
 				}),
-				i(224150),	-- Siesbarg (MOUNT!)
-			}),
-			------ Executor ------
-			q(83177, {	-- Socialized Medicine
-				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
-				["provider"] = { "n", 208782 },	-- Executor Nizrek
-				["coord"] = { 52.9, 46.2, NERUBAR },
-				["g"] = {
-					i(224799),	-- Nizrek's potion (QI!)
-				},
-			}),
-			q(83178, {	-- Ascended Assassin
-				["sourceQuests"] = { 83177 },	-- Socialized Medicine
-				["provider"] = { "n", 208782 },	-- Executor Nizrek
-				["coord"] = { 52.9, 46.2, NERUBAR },
+				q(84246, {	-- Witnessing Brilliance
+					["sourceQuests"] = { 83721 },	-- Venom? More Like Get 'Em
+					["provider"] = { "n", 218171 },	-- Shalba
+					["coord"] = { 45.4, 13.5, NERUBAR },
+				}),
+				q(83722, {	-- Consolation Flies
+					["sourceQuests"] = { 84246 },	-- Witnessing Brilliance
+					["provider"] = { "n", 218171 },	-- Shalba
+					["coord"] = { 45.4, 13.5, NERUBAR },
+					["g"] = {
+						i(224150),	-- Siesbarg (MOUNT!)
+					},
+				}),
 			}),
 			------ Legendary Legerdemain ------
 			q(79717, {	-- Means of Ingress

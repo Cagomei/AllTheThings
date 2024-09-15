@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40620),		-- Back to the Wall
 			ach(40629),		-- Bookworm (automated)
 			ach(40822),		-- Explore Azj-Kahet (automated)
-			ach(40624, {	-- Itsy Bitsy Spider
+			achraw(40624, {	-- Itsy Bitsy Spider
 				-- TODO: Braghe please add spider coords, thanks
 				crit(68972, {	-- Webster
 					["coord"] = { 39.4, 65.3, NERUBAR },
@@ -140,14 +140,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			ach(40542),		-- Smelling History (automated)
 			ach(40636),		-- Sojourner of Azj-Kahet (automated)
-			ach(40833),		-- The General's Salute
 			ach(40633, {	-- The Unseeming
 				["description"] = "Stand in the pool.",
 				["coord"] = { 67.2, 28.4, AZJ_KAHET },
 			}),
 			pvp(ach(40086)),	-- Tour of Duty: Azj-Kahet
 			ach(40828),		-- Treasures of Azj-Kahet (automated)
-			ach(40835),		-- Vizier than Ever
 			-- TODO: Worm Theory looks like it should have criteria but Blizzard didn't add them yet (Wagotools has them though?). Check this later.
 			ach(40869, {	-- Worm Theory (automated)
 				i(225934),	-- Lil' Bonechewer (PET!)

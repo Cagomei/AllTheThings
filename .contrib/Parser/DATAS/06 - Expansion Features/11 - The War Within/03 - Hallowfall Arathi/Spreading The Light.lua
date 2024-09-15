@@ -75,16 +75,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				})),
 				n(DROPS, {
 					i(216528, {	-- Faded Supply Chest Key
-						["crs"] = { 218024, } -- Drowned Arathi
+						["crs"] = { 218024 }, -- Drowned Arathi
 					}),
 					i(224545, {	-- Plowhead
-						["crs"] = { 206067, } -- Dark-Crazed Harvester
+						["crs"] = {
+							206067, 	-- Dark-Crazed Harvester
+							214389,		-- Kobyss Harvester
+						},
 					}),
 					i(212330, {	-- Shadow-Hardened Mainspring
-						["crs"] = { 206067, } -- Dark-Crazed Harvester
+						["crs"] = { 206067 }, -- Dark-Crazed Harvester
 					}),
 					i(224486, {	-- Uncle's Eye
-						["crs"] = { 206194, } -- Invasive Lashroom
+						["crs"] = { 206194 }, -- Invasive Lashroom
 					}),
 				}),
 				n(QUESTS, {
@@ -522,11 +525,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(229158),	-- Lamplighter's War Knives
 						}),
 					}),
-					i(226264, {	-- Radiant Cache
-						i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
-						i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
-						i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
-					}),
 					i(RADIANT_REMNANT),
 				}),
 				n(TREASURES, {
@@ -534,6 +532,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 65.3, 27.2, HALLOWFALL },
 						["g"] = {
 							i(212339),	-- A Small Bag of Seeds
+						},
+					}),
+					o(434502, {	-- Anglers Supply Box
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["coord"] = { 66.4, 23.0, HALLOWFALL },
+						["questID"] = 80541,
+						["g"] = {
+							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
 						},
 					}),
 					o(428472, {	-- Captain Lancekat's Discretionary Funds
@@ -570,6 +576,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["isWeekly"] = true,
 						["g"] = {
 							i(226018),	-- Darkened Arathi Cape (COSMETIC!)
+							i(224466),	-- Wilber The Chicken (QS!)
 						},
 					}),
 					o(419714, {	-- Expedition Pack
@@ -659,6 +666,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["questID"] = 84340,
 						["g"] = {
 							i(226018),	-- Darkened Arathi Cape (COSMETIC!)
+							i(224460),	-- The Lost Diary (QS!)
 						},
 					}),
 					o(451993, {	-- Nerubian Device
@@ -852,6 +860,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, }, {
 					q(76586, {	-- Spreading The Light
 						["coord"] = { 55.3, 14.5, HALLOWFALL },
+						["g"] = {
+							i(226264, {	-- Radiant Cache
+								i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
+								i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
+								i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
+							}),
+						},
 					}),
 				})),
 			},

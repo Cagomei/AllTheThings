@@ -11,10 +11,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
-				q(82421, {	-- For Your Next Delve
-					--["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
-					--["coord"] = { 55.3, 41.2, AZJ_KAHET },
-				}),
 			}, {	-- RENOWN 4 --
 			}, {	-- RENOWN 5 --
 			}, {	-- RENOWN 6 --
@@ -69,11 +65,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 15 --
-				-- TODO: check Renown Requirement!
-				q(82440, {	-- Crests and Kej
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
-					["coord"] = { 55.3, 41.2, AZJ_KAHET },
-				}),
 			}, {	-- RENOWN 16 --
 				-- TODO: check Renown Requirement!
 				q(82442, {	-- Keep Up Appearances
@@ -87,6 +78,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 18 --
+				q(82440, {	-- Crests
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
+				q(85533, {	-- Kej
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
 			}, {	-- RENOWN 19 --
 			}, {	-- RENOWN 20 --
 			}, {	-- RENOWN 21 --

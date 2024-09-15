@@ -8879,10 +8879,15 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			-- 		i(226146),	-- Handful of Humming Shinies
 			-- 	},
 			}),
+			q(82421, {	-- For Your Next Delve
+			--["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+			--["coord"] = { 55.3, 41.2, AZJ_KAHET },
+			}),
 			q(82383),	-- (Bunch of Rocks i(226147 unsorted quests showing on item)
 			q(82385),	-- (Bunch of Rocks i(226147 unsorted quests showing on item)
 			q(83023),	-- Short-Supply Reward
 			q(84086),	--
+			q(81651),	-- Delver's Guide to Delves
 		})),
 	}),
 }));
