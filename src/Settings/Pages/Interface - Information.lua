@@ -197,104 +197,115 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 end
 local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	-- If the item is a recipe, then show which characters know this recipe.
-	if not reference.objectiveID then
-		-- Completed By for Quests
-		local id = reference.questID;
+	if reference.objectiveID then return end
+
+	-- Completed By for Quests
+	local id = reference.questID;
+	if id then
+		-- Account-Wide Quests
+		if app.AccountWideQuestsDB[id] then
+			if IsQuestFlaggedCompletedOnAccount(id) then
+				tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE or "Quest completed on your Account"});
+			end
+		else
+			for _,character in pairs(ATTCharacterData) do
+				if character.Quests and character.Quests[id] then
+					tinsert(knownBy, character);
+				end
+			end
+			if #knownBy == 0 and IsQuestFlaggedCompletedOnAccount(id) then
+				tinsert(knownBy, {text=ACCOUNT_COMPLETED_QUEST_NOTICE or "Quest completed on your Account"});
+			end
+		end
+		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
+	end
+
+	-- Completed By for Exploration
+	local id = reference.explorationID;
+	if id then
+		for _,character in pairs(ATTCharacterData) do
+			if character.Exploration and character.Exploration[id] then
+				tinsert(knownBy, character);
+			end
+		end
+		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
+	end
+
+	-- Pre-MOP Known By types
+	if app.GameBuildVersion < 50000 then
+		id = reference.achievementID;
 		if id then
-			-- Account-Wide Quests
-			if app.AccountWideQuestsDB[id] then
-				if IsQuestFlaggedCompletedOnAccount(id) then
-					tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE or "Quest completed on your Account"});
-				end
-			else
-				for _,character in pairs(ATTCharacterData) do
-					if character.Quests and character.Quests[id] then
-						tinsert(knownBy, character);
-					end
-				end
-				if #knownBy == 0 and IsQuestFlaggedCompletedOnAccount(id) then
-					tinsert(knownBy, {text=ACCOUNT_COMPLETED_QUEST_NOTICE or "Quest completed on your Account"});
+			-- Prior to Cata, Achievements were not tracked account wide
+			for guid,character in pairs(ATTCharacterData) do
+				if character.Achievements and character.Achievements[id] then
+					tinsert(knownBy, character);
 				end
 			end
 			BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
 		end
 
-		-- Pre-MOP Known By types
-		if app.GameBuildVersion < 50000 then
-			id = reference.achievementID;
-			if id then
-				-- Prior to Cata, Achievements were not tracked account wide
-				for guid,character in pairs(ATTCharacterData) do
-					if character.Achievements and character.Achievements[id] then
-						tinsert(knownBy, character);
+		local itemID = reference.itemID;
+		if itemID then
+			local knownByGUID = {};
+
+			-- Prior to Cata, transmog was not tracked account wide
+			id = reference.sourceID;
+			for guid,character in pairs(ATTCharacterData) do
+				if character.Transmog and character.Transmog[id] then
+					if ATTAccountWideData.Sources and ATTAccountWideData.Sources[id] then
+						character.Transmog[id] = nil;
+					else
+						knownByGUID[guid] = character;
 					end
 				end
-				BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
 			end
-
-			local itemID = reference.itemID;
-			if itemID then
-				local knownByGUID = {};
-
-				-- Prior to Cata, transmog was not tracked account wide
-				id = reference.sourceID;
-				for guid,character in pairs(ATTCharacterData) do
-					if character.Transmog and character.Transmog[id] then
-						if ATTAccountWideData.Sources and ATTAccountWideData.Sources[id] then
-							character.Transmog[id] = nil;
-						else
+			if app.GameBuildVersion < 30000 then
+				-- Prior to Wrath, mounts, pets, and toys were not tracked account wide
+				id = reference.spellID;
+				if id and reference.filterID == 100 then	-- Mounts only!
+					for guid,character in pairs(ATTCharacterData) do
+						if character.Spells and character.Spells[id] then
 							knownByGUID[guid] = character;
 						end
 					end
 				end
-				if app.GameBuildVersion < 30000 then
-					-- Prior to Wrath, mounts, pets, and toys were not tracked account wide
-					id = reference.spellID;
-					if id and reference.filterID == 100 then	-- Mounts only!
-						for guid,character in pairs(ATTCharacterData) do
-							if character.Spells and character.Spells[id] then
-								knownByGUID[guid] = character;
-							end
-						end
-					end
 
-					id = reference.speciesID;
-					if id then
-						for guid,character in pairs(ATTCharacterData) do
-							if character.BattlePets and character.BattlePets[id] then
-								knownByGUID[guid] = character;
-							end
-						end
-					end
-
-					if reference.toyID then
-						for guid,character in pairs(ATTCharacterData) do
-							if character.Toys and character.Toys[itemID] then
-								knownByGUID[guid] = character;
-							end
+				id = reference.speciesID;
+				if id then
+					for guid,character in pairs(ATTCharacterData) do
+						if character.BattlePets and character.BattlePets[id] then
+							knownByGUID[guid] = character;
 						end
 					end
 				end
 
-				-- For the current character, count how many of the thing they own.
-				local currentCharacter = knownByGUID[app.GUID];
-				if currentCharacter then
-					local text = currentCharacter.text or "???";
-					local count = GetItemCount(itemID, true);
-					if count and count > 1 then
-						text = text .. " (x" .. count .. ")";
+				if reference.toyID then
+					for guid,character in pairs(ATTCharacterData) do
+						if character.Toys and character.Toys[itemID] then
+							knownByGUID[guid] = character;
+						end
 					end
-					knownByGUID[app.GUID] = setmetatable({ text = text }, { __index = currentCharacter });
 				end
-
-				-- Convert the GUID dictionary to the knownBy list.
-				for guid,character in pairs(knownByGUID) do
-					tinsert(knownBy, character);
-				end
-
-				-- All of this can be stored together.
-				BuildKnownByInfoForKind(tooltipInfo, L.OWNED_BY);
 			end
+
+			-- For the current character, count how many of the thing they own.
+			local currentCharacter = knownByGUID[app.GUID];
+			if currentCharacter then
+				local text = currentCharacter.text or "???";
+				local count = GetItemCount(itemID, true);
+				if count and count > 1 then
+					text = text .. " (x" .. count .. ")";
+				end
+				knownByGUID[app.GUID] = setmetatable({ text = text }, { __index = currentCharacter });
+			end
+
+			-- Convert the GUID dictionary to the knownBy list.
+			for guid,character in pairs(knownByGUID) do
+				tinsert(knownBy, character);
+			end
+
+			-- All of this can be stored together.
+			BuildKnownByInfoForKind(tooltipInfo, L.OWNED_BY);
 		end
 	end
 end
