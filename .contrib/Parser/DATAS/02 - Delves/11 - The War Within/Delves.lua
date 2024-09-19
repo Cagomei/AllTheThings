@@ -13,8 +13,48 @@ CURIO = createHeader({
 	},
 });
 local UNDERCOIN = 2803;
+local NERUBIAN_DELVES = { EARTHCRAWL_MINES, SKITTERING_BREACH, THE_DREAD_PIT, THE_SPIRAL_WEAVE, THE_UNDERKEEP };
+local FUNGARIAN_DELVES = { FUNGAL_FOLLY, MYCOMANCER_CAVERN };
+local KOBOLD_DELVES = { KRIEGVALS_REST, THE_WATERWORKS };
+local SHADOW_DELVES = { NIGHTFALL_SANCTUM };
+local KOBYSS_DELVES = { TAK_RETHAN_ABYSS, THE_SINKHOLE };
+local ALL_REGULAR_DELVES = {
+	EARTHCRAWL_MINES,
+	FUNGAL_FOLLY,
+	KRIEGVALS_REST,
+	MYCOMANCER_CAVERN,
+	NIGHTFALL_SANCTUM,
+	SKITTERING_BREACH,
+	TAK_RETHAN_ABYSS,
+	THE_DREAD_PIT,
+	THE_SINKHOLE,
+	THE_SPIRAL_WEAVE,
+	THE_UNDERKEEP,
+	THE_WATERWORKS,
+};
+local ALL_THE_DELVES = {
+	EARTHCRAWL_MINES,
+	FUNGAL_FOLLY,
+	KRIEGVALS_REST,
+	MYCOMANCER_CAVERN,
+	NIGHTFALL_SANCTUM,
+	SKITTERING_BREACH,
+	TAK_RETHAN_ABYSS,
+	THE_DREAD_PIT,
+	THE_SINKHOLE,
+	THE_SPIRAL_WEAVE,
+	THE_UNDERKEEP,
+	THE_WATERWORKS,
+	ZEKVIRS_LAIR
+};
+local mapped = function(t)
+	if not t.maps then
+		t.maps = ALL_REGULAR_DELVES
+	end
+	return t
+end
 root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
-	n(ACHIEVEMENTS, {
+	mapped(n(ACHIEVEMENTS, {
 		ach(40817),		-- A Delver's Bounty
 		ach(40538, {	-- Brann Development
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
@@ -36,7 +76,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40447),	-- Delver of the Depths II (automated)
 		ach(40448),	-- Delver of the Depths III (automated)
 		ach(40449),	-- Delver of the Depths IV (automated)
-		ach(40454),	-- Daystormer
+		ach(40454, {	-- Daystormer
+			["maps"] = SHADOW_DELVES,
+		}),
 		ach(40460),	-- Delve Deep
 		ach(40462),	-- Delve Deeper
 		ach(40463),	-- Delve Deepest
@@ -76,16 +118,22 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			},
 		}),
 		ach(40524),	-- Good Deed Delver
-		ach(40732),	-- Heavy-Handed
+		ach(40732, {	-- Heavy-Handed
+			["maps"] = ALL_THE_DELVES,
+		}),
 		ach(40098, {	-- Immortal Spelunker
 			title(549),	-- Immortal Spelunker <Name>
 		}),
 		ach(40763),	-- I'm not a Thief, I'm a Treasure Hunter
-		ach(40446),	-- I TAKE Candle!
+		ach(40446, {	-- I TAKE Candle!
+			["maps"] = KOBOLD_DELVES,
+		}),
 		ach(40459),	-- I've Got a Flying Machine!
 		ach(40789),	-- I've Got More Flying Machine?! (automated)
 		ach(40788),	-- I Got the Keys
-		ach(40452),	-- Just Keep Swimming
+		ach(40452, {	-- Just Keep Swimming
+			["maps"] = KOBYSS_DELVES,
+		}),
 		ach(40506, {	-- Leave No Treasure Unfound
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -117,8 +165,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		ach(40458),	-- Rare Finding
 		ach(40819),	-- Ready to Turn
-		ach(40453),	-- Spider Senses
-		ach(40445),	-- Sporesweeper
+		ach(40453, {	-- Spider Senses
+			["maps"] = NERUBIAN_DELVES,
+		}),
+		ach(40445, {	-- Sporesweeper
+			["maps"] = FUNGARIAN_DELVES,
+		}),
 		ach(40885),	-- The Key to Madness
 		ach(40100),	-- Undying Caver
 		ach(40725, {	-- War Within Delves: Endgame (automated)
@@ -138,7 +190,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			title(550),	-- High Explorer <Name>
 		}),
 		ach(40436),	-- You're Getting a Delve!
-	}),
+	})),
 	n(QUESTS, {
 		q(81514, {	-- Bountiful Delves
 			["sourceQuests"] = { 83315 },	-- Preparing for the Unknown
@@ -292,13 +344,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(82712),	-- Delves: Trouble Up and Down Khaz Algar
 	})),
 	n(RARES, {
+		-- TODO: These might not appear in all delves, look into refining these down
 		n(207482),	-- Invasive Sporecap
 		n(209721),	-- Secret Treasure
 		n(228030),	-- Sir Finley Mrgglton
 		n(223541),	-- Stolen Loader
 		n(208728),	-- Treasure Wraith
 	}),
-	n(TREASURES, {
+	mapped(n(TREASURES, {
 		-- Mislaid Curiosities can be found throughout all Delves, random coordinates
 		o(455914, {	-- Mislaid Curiosity
 			["description"] = "Contains Chunk of Companion Experience tokens.",
@@ -313,7 +366,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(232045),	-- Chunk of Companion Experience (Epic)
 			},
 		}),
-	}),
+	})),
 	m(EARTHCRAWL_MINES, {
 		["icon"] = [[~_.asset("Delves_Nerubian")]],
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
@@ -504,7 +557,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83769, {	-- Delver's Call: Mycomancer Cavern
 					["provider"] = { "o", 455690 },	-- Delver's Call: Mycomancer Cavern
-					["coord"] = { 68.9, 44.4, HALLOWFALL },
+					["coords"] = {
+						{ 68.9, 44.4, HALLOWFALL },
+						{ 19.5, 36.7, MYCOMANCER_CAVERN },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -723,7 +779,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83766, {	-- Delver's Call: Dread Pit
 					["provider"] = { "o", 455685 },	-- Delver's Call: Dread Pit
-					["coord"] = { 58.3, 64.2, THE_RINGING_DEEPS },
+					["coords"] = {
+						{ 58.3, 64.2, THE_RINGING_DEEPS },
+						{ 30, 54.8, THE_DREAD_PIT },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -768,7 +827,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83767, {	-- Delver's Call: The Sinkhole
 					["provider"] = { "o", 455704 },	-- Delver's Call: The Sinkhole
-					["coord"] = { 48.7, 39.5, HALLOWFALL },
+					["coords"] = {
+						{ 48.7, 39.5, HALLOWFALL },
+						{ 53.1, 20.2, THE_SINKHOLE },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -820,6 +882,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				q(83770, {	-- Delver's Call: Spiral Weave
 					["provider"] = { "n", 211721 },	-- Sir Jonathan Trueheart
 					["coord"] = { 58.9, 18.6, AZJ_KAHET },
+				}),
+				q(85666, {	-- Delver's Call: Spiral Weave
+					-- cross complete with 83770
+					--["provider"] = { "o", XXXXX },	-- ?
+					["coord"] = { 53.0, 76.1, THE_SPIRAL_WEAVE },
 				}),
 			}),
 			n(TREASURES, {
@@ -966,7 +1033,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 		},
 	}),
-	n(REWARDS, {
+	mapped(n(REWARDS, {
 		n(ARMOR, {
 			filter(BACK_F, {
 				i(211005),	-- Cave Topographer's Drape
@@ -1363,7 +1430,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(211046),	-- Umbral Artist's Chisel
 			i(211040),	-- Unhinged Vault-Hatch
 		}),
-	}),
+	})),
 	n(VENDORS, {
 		n(226250, {	-- Reno Jackson <Delve Treasures>
 			["coord"] = { 47.6, 45.0, DORNOGAL },
@@ -1690,7 +1757,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(82772),	-- First Delve of the day
 		q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
 		q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
-		q(85666),	-- Triggers with 'Delver's Call: Spiral Weave' (questID 83770)
 		q(85651),	-- Triggers with 'Delver's Call: The Sinkhole' (questID 83767)
 		-- Bountiful Delve runs
 		q(82944),	-- Earthcrawl Mines

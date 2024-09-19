@@ -87,6 +87,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 211993 },	-- Thrall
 					["coord"] = { 29.5, 55.1, ISLE_OF_DORN },
 				}),
+				q(80334, {	-- Shattered Spires
+					["sourceQuests"] = {
+						78530,	-- Slay the Saboteurs
+						78531,	-- Urgent Recovery
+					},
+					["provider"] = { "n", 211994 },	-- Lady Jaina Proudmoore
+					["lockCriteria"] = { 1, "questID", 78532 },	-- Erratic Artifacts
+					["coord"] = { 29.5, 55.0, ISLE_OF_DORN },
+					["isBreadcrumb"] = true,
+				}),
 				q(78532, {	-- Erratic Artifacts
 					["sourceQuests"] = { 78529 },	-- Violet Impact
 					["provider"] = { "n", 223166 },	-- Archmage Aethas Sunreaver
@@ -377,6 +387,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				hqt(85681, {	-- Stay awhile and listen: Moira Thaurissan
 					["name"] = "Stay awhile and listen: Moira Thaurissan",
+					["description"] = "This dialogue becomes available after accepting 'Into The Deeps' (80434) but vanishes once you hand in 'Into The Deeps' (80434).",
 					["sourceQuests"] = { 80434 },	-- Into The Deeps (After accepting but unavailable after completion)
 					["provider"] = { "n", 217887 },	-- Moira Thaurissan
 					["coord"] = { 32.4, 59.6, DORNOGAL },

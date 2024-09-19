@@ -2240,7 +2240,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80945, 444075);	-- Carapace-Backed Hide
 			FirstCraft(80944, 444086);	-- Chitin Armor Banding
 			FirstCraft(80946, 444076);	-- Crystalfused Hide
-			FirstCraft(80950, 444085);	-- Deepfury Hide
 			FirstCraft(80949, 444079);	-- Leyfused Hide
 			FirstCraft(80948, 444078);	-- Sporecoated Hide
 			FirstCraft(80951, 444087);	-- Storm-Touched Weapon Wrap
@@ -2292,9 +2291,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(219883),	-- Crystalfused Hide+
 			i(219884),	-- Crystalfused Hide++
 			i(219885),	-- Crystalfused Hide+++
-			i(219895),	-- Deepfury Hide+
-			i(219896),	-- Deepfury Hide++
-			i(219897),	-- Deepfury Hide+++
 			i(219892),	-- Leyfused Hide+
 			i(219893),	-- Leyfused Hide++
 			i(219894),	-- Leyfused Hide+++
@@ -2404,6 +2400,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(85549, 214757),	-- Skinning Croakit
 			FirstSkin(83408, 220286),	-- Skinning Deepflayer Broodmother
 			FirstSkin(83404, 218393),	-- Skinning Disturbed Earthgorger
+			FirstSkin(81446, 224924),	-- Skinning Elusive Gargantuan Stormscale
+			FirstSkin(81445, 224515),	-- Skinning Elusive Ironhide Maelstrom Wolf
+			FirstSkin(81447, 224963),	-- Skinning Elusive Kaheti Battle Tank
+			FirstSkin(81448, 226232),	-- Skinning Elusive Razormouth Steelhide
 			FirstSkin(81451, 219265),	-- Skinning Emperor Pitfang
 			FirstSkin(85548, 220492),	-- Skinning Finclaw Bloodtide
 			FirstSkin(83402, 221668),	-- Skinning Horror of the Shallows
