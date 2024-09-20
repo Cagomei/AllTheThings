@@ -178,6 +178,19 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t, tooltipInfo)
 	end
 end]];
 
+-- #if ANYCLASSIC
+-- The 353 ilvl gear was added for Brewfest 2024 in Cataclysm Classic
+local BREWFEST_2024_OnUpdate = [[function(t)
+	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_HOUR_OF_TWILIGHT .. [[) then
+		t.u = ]] .. REMOVED_FROM_GAME .. [[;
+		t.rwp = nil;
+	else
+		t.u = ]] .. CATA_PHASE_ONE .. [[;
+		t.rwp = 40300;
+	end
+end]];
+-- #endif
+
 root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 	n(ACHIEVEMENTS, {
 		ach(18579, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- A Round on the House
@@ -571,12 +584,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					i(107218, {	-- Tremendous Tankard O'Terror [Level 90]
 						["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					}),
+					-- #if ANYCLASSIC
+					-- The idiots at Blizzard decided that they wanted to give people 353 ilvl stuff from Coren in Cataclysm Classic.
+					applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71331, {	-- Direbrew's Bloodied Shanker [Level 85, ilvl 365]
+						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+					})),
+					applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71332, {	-- Tremendous Tankard O'Terror [Level 85, ilvl 365]
+						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+					})),
+					applyclassicphase(CATA_PHASE_ONE, i(232030, {	-- Direbrew's Bloodied Shanker [Level 85, ilvl 353]
+						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+						["OnUpdate"] = BREWFEST_2024_OnUpdate,
+					})),
+					applyclassicphase(CATA_PHASE_ONE, i(232031, {	-- Tremendous Tankard O'Terror [Level 85, ilvl 353]
+						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+						["OnUpdate"] = BREWFEST_2024_OnUpdate,
+					})),
+					-- #else
 					i(71331, {	-- Direbrew's Bloodied Shanker [Level 85]
 						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 					}),
 					i(71332, {	-- Tremendous Tankard O'Terror [Level 85]
 						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 					}),
+					-- #endif
 					i(49120, {	-- Direbrew's Bloody Shanker [Level 80]
 						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 					}),
@@ -638,6 +669,52 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
 			-- Cataclysm
+			-- #if ANYCLASSIC
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71333, {	-- Bitterer Balebrew Charm [Level 85, ilvl 365]
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			})),
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71338, {	-- Brawler's Trophy [Level 85, ilvl 365]
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			})),
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71334, {	-- Bubblier Brightbrew Charm [Level 85, ilvl 365]
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			})),
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71335, {	-- Coren's Chilled Chromium Coaster [Level 85, ilvl 365]
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			})),
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71337, {	-- Mithril Stopwatch [Level 85, ilvl 365]
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			})),
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71336, {	-- Petrified Pickled Egg [Level 85, ilvl 365]
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			})),
+			
+			-- The idiots at Blizzard decided that they wanted to give people 353 ilvl stuff from Coren in Cataclysm Classic.
+			applyclassicphase(CATA_PHASE_ONE, i(232017, {	-- Bitterer Balebrew Charm [Level 85, ilvl 353]
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["OnUpdate"] = BREWFEST_2024_OnUpdate,
+			})),
+			applyclassicphase(CATA_PHASE_ONE, i(232015, {	-- Brawler's Trophy [Level 85, ilvl 353]
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["OnUpdate"] = BREWFEST_2024_OnUpdate,
+			})),
+			applyclassicphase(CATA_PHASE_ONE, i(232016, {	-- Bubblier Brightbrew Charm [Level 85, ilvl 353]
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["OnUpdate"] = BREWFEST_2024_OnUpdate,
+			})),
+			applyclassicphase(CATA_PHASE_ONE, i(232012, {	-- Coren's Chilled Chromium Coaster [Level 85, ilvl 353]
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["OnUpdate"] = BREWFEST_2024_OnUpdate,
+			})),
+			applyclassicphase(CATA_PHASE_ONE, i(232013, {	-- Mithril Stopwatch [Level 85, ilvl 353]
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["OnUpdate"] = BREWFEST_2024_OnUpdate,
+			})),
+			applyclassicphase(CATA_PHASE_ONE, i(232014, {	-- Petrified Pickled Egg [Level 85, ilvl 353]
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["OnUpdate"] = BREWFEST_2024_OnUpdate,
+			})),
+			-- #else
 			i(71333, {	-- Bitterer Balebrew Charm [Level 85]
 				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
@@ -656,6 +733,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			i(71336, {	-- Petrified Pickled Egg [Level 85]
 				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
+			-- #endif
 			-- Wrath of the Lich King
 			i(49078, {	-- Ancient Pickled Egg [Level 80]
 				["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
@@ -892,6 +970,76 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
+			q(84305, {	-- Bar Tab Barrel @ Dornogal, Stonelight Rest
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 44.1, 46.1, DORNOGAL },
+				["timeline"] = { ADDED_11_0_2 },
+				["isYearly"] = true,
+				["groups"] = BREWFEST_TOKEN,
+			}),
+			q(84306, {	-- Bar Tab Barrel @ Isle of Dorn, Freywold Village
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 41.9, 74.2, ISLE_OF_DORN },
+				["timeline"] = { ADDED_11_0_2 },
+				["isYearly"] = true,
+				["groups"] = BREWFEST_TOKEN,
+			}),
+			q(84307, {	-- Bar Tab Barrel @ The Ringing Deeps, Gundargaz
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 48.3, 32.2, THE_RINGING_DEEPS },
+				["timeline"] = { ADDED_11_0_2 },
+				["isYearly"] = true,
+				["groups"] = BREWFEST_TOKEN,
+			}),
+			q(84308, {	-- Bar Tab Barrel @ The Ringing Deeps, Opportunity Point
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 63.4, 78.8, THE_RINGING_DEEPS },
+				["timeline"] = { ADDED_11_0_2 },
+				["isYearly"] = true,
+				["groups"] = BREWFEST_TOKEN,
+			}),
+			q(84310, {	-- Bar Tab Barrel @ Hallowfall, Fjord Tavern
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 49.2, 39.5, HALLOWFALL },
+				["timeline"] = { ADDED_11_0_2 },
+				["isYearly"] = true,
+				["groups"] = BREWFEST_TOKEN,
+			}),
+			q(84311, {	-- Bar Tab Barrel @ Hallowfall, Empire's Edge Tavern
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 42.8, 55.8, HALLOWFALL },
+				["timeline"] = { ADDED_11_0_2 },
+				["isYearly"] = true,
+				["groups"] = BREWFEST_TOKEN,
+			}),
+			q(84313, {	-- Bar Tab Barrel @ City of Threads, The Cobwebs
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 57.8, 39.9, NERUBAR_LOWER },
+				["timeline"] = { ADDED_11_0_2 },
+				["isYearly"] = true,
+				["groups"] = BREWFEST_TOKEN,
+			}),
+			q(84314, {	-- Bar Tab Barrel @ City of Threads, The Skittering Lounge
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 49.8, 21.6, NERUBAR },
+				["timeline"] = { ADDED_11_0_2 },
+				["isYearly"] = true,
+				["groups"] = BREWFEST_TOKEN,
+			}),
+			q(84315, {	-- Bar Tab Barrel @ Azj-Kahet, Rock Bottom Inn
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 77.8, 62.7, AZJ_KAHET },
+				["timeline"] = { ADDED_11_0_2 },
+				["isYearly"] = true,
+				["groups"] = BREWFEST_TOKEN,
+			}),
+			q(84316, {	-- Bar Tab Barrel @ Azj-Kahet, The Trap Door
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 56.7, 38.7, AZJ_KAHET },
+				["timeline"] = { ADDED_11_0_2 },
+				["isYearly"] = true,
+				["groups"] = BREWFEST_TOKEN,
+			}),
 			q(77208, {	-- Barreling Down
 				["qg"] = 207496,	-- Bragdur Battlebrew
 				["coord"] = { 29.7, 56.2, VALDRAKKEN },
@@ -1000,6 +1148,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					19172,	-- Gnome Commoner
 					19173,	-- Night Elf Commoner
 					20102,	-- Goblin Commoner
+					-- #if AFTER TWW
+					220307,	-- Holiday Enthusiast
+					-- #endif
 				},
 				["altQuests"] = {
 					11441,	-- Brewfest! (A)
@@ -1011,7 +1162,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					IRONFORGE,
 					DARNASSUS,
 					THE_EXODAR,
+					-- #if AFTER MOP
 					ISLE_OF_THUNDER,
+					-- #endif
+					-- #if AFTER TWW
+					DORNOGAL,
+					-- #endif
 				},
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -2105,6 +2261,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { ADDED_8_2_0 },
 						["cost"] = BREWFEST_TOKEN_COST(150),
 					}),
+					i(227795, {	-- Homebrewer's Sampling Mantle
+						["timeline"] = { ADDED_11_0_2 },
+						["cost"] = BREWFEST_TOKEN_COST(200),
+					}),
 					i(209044, {	-- Orange Brewfest Bulwark
 						["timeline"] = { ADDED_10_1_7 },
 						["cost"] = BREWFEST_TOKEN_COST(200),
@@ -2290,6 +2450,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					i(169461, {	-- Garland of Grain
 						["timeline"] = { ADDED_8_2_0 },
 						["cost"] = BREWFEST_TOKEN_COST(150),
+					}),
+					i(227795, {	-- Homebrewer's Sampling Mantle
+						["timeline"] = { ADDED_11_0_2 },
+						["cost"] = BREWFEST_TOKEN_COST(200),
 					}),
 					i(209044, {	-- Orange Brewfest Bulwark
 						["timeline"] = { ADDED_10_1_7 },

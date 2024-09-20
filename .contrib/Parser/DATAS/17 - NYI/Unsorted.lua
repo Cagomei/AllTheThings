@@ -78,7 +78,7 @@ root(ROOTS.Unsorted, {
 				i(224957),	-- Eternal Bloodfang Belt
 				i(224958),	-- Eternal Bloodfang Cloak
 				i(224959),	-- Eternal Bloodfang Bracers
-				i(224983),	-- Eternal Stormrage Chestguard
+				i(224983),	-- Eternal Stormrage Robe
 				i(224984),	-- Eternal Stormrage Boots
 				i(224985),	-- Eternal Stormrage Handguards
 				i(224986),	-- Eternal Stormrage Cover
@@ -100,7 +100,7 @@ root(ROOTS.Unsorted, {
 				i(225038),	-- Eternal Greaves of Ten Storms
 				i(225039),	-- Eternal Gauntlets of Ten Storms
 				i(225040),	-- Eternal Helmet of Ten Storms
-				i(225041),	-- Eternal Legplates of Ten Storms
+				i(225041),	-- Eternal Kilt of Ten Storms
 				i(225042),	-- Eternal Epaulets of Ten Storms
 				i(225043),	-- Eternal Belt of Ten Storms
 				i(225044),	-- Eternal Cloak of Ten Storms
@@ -278,9 +278,7 @@ root(ROOTS.Unsorted, {
 				i(228694),	-- Damp Ransom Note
 				i(228766),	-- Sandy Ransom Note
 				i(229411),	-- Normal Feather
-				-- Hearthstone
-				i(231019),	-- Hearthstone Invitation Letter
-				--
+
 				i(225678),	-- Spare Key to Shaffar's Stasis Chamber
 				i(228782),	-- PH - Sandbox Wolf
 				i(228783),	-- PH - Sandbox Horse
@@ -301,7 +299,6 @@ root(ROOTS.Unsorted, {
 				i(229831),	-- Gold Balloon
 				i(229958),	-- Decorated Feather
 				i(230283),	-- Weird Egg
-				i(232371),	-- Companion Experience
 				i(232374),	-- Greasy Links
 				i(232375),	-- Moon Bread
 				i(232376),	-- Cherry Bombs
@@ -585,7 +582,7 @@ root(ROOTS.Unsorted, {
 				i(229808),	-- Gossamer Cyan Gown
 				i(229811),	-- Frost Etched Dagger
 				i(229812),	-- Chilled Axe
-				i(229813),	-- Crystaline Longbow of the Heavens
+				i(229813),	-- Crystalline Longbow of the Heavens
 				i(229814),	-- Fan of Cooling
 				i(229815),	-- Sky Witch's Airy Stave
 				i(229816),	-- Sky Witch's Airy Wand
@@ -758,7 +755,7 @@ root(ROOTS.Unsorted, {
 				i(231992),	-- Telhamat Anchorite's Waistguard
 				i(231993),	-- Telhamat Anchorite's Bracelets
 				i(231994),	-- Telhamat Anchorite's Chestguard
-				i(231999),	-- Dragonflayer Heartpiercer
+				i(231999),	-- Dragonflayer's Heartpiercer
 				i(232000),	-- Frosted Ymirheim Battle Bow
 				i(232001),	-- Blazing Skyhawk Repeater
 				i(232002),	-- Amani Tracker's Blunderbuss
@@ -809,7 +806,7 @@ root(ROOTS.Unsorted, {
 				i(232317),	-- Ensemble: Drakkari Stalker's Trappings
 				i(232318),	-- Ensemble: Shadowmoon Warlock's Vestments
 				i(232319),	-- Ensemble: Auchenai Priest's Raiment
-				i(232320),	-- Ensemble: Telhamant Anchorite's Raiment
+				i(232320),	-- Ensemble: Telhamat Anchorite's Raiment
 				i(232321),	-- Ensemble: Boulderfist Mystic's Battlegear
 				i(232322),	-- Ensemble: Cenarion Mender's Battlegear
 				i(232345),	-- Xu'rakas, Glaive of Command
@@ -1109,6 +1106,24 @@ root(ROOTS.Unsorted, {
 				i(231839),	-- Trailseeker Longbow
 				i(231840),	-- Trailseeker Crossbow
 			}),
+			i(232471),	-- Cache of Dark Iron Treasures
+			i(232472),	-- Cache of Dark Iron Treasures
+			i(232473),	-- Cache of Dark Iron Treasures
+			i(232474),	-- Defias Cuirass
+			i(232475),	-- Defias Cuirass
+			i(232479),	-- Eternal Netherwind Blouse
+			i(232480),	-- Eternal Nemesis Blouse
+			i(232481),	-- Eternal Blouse of Transcendence
+			i(232482),	-- Eternal Greaves of Ten Storms
+			i(232483),	-- Eternal Stormrage Chestguard
+			i(232491),	-- Glyph of Jab
+			i(232510),	-- Electric Eel
+			i(232511),	-- Electric Eel
+			i(232484),	-- Eternal Judgment Greaves
+			i(232521),	-- Glyph of Arcane Familiar
+			i(232524),	-- Dark Ranger General's Bodice
+			i(232525),	-- Dark Ranger General's Vest
+			i(232527),	-- Glyph of Traditional Ascendance
 		})),
 		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			explorationHeader({
@@ -1141,7 +1156,6 @@ root(ROOTS.Unsorted, {
 			i(229006),	-- Cache of Earthen Treasures
 			i(229129),	-- Cache of Delver's Spoils
 			i(229130),	-- Cache of Delver's Spoils
-			i(229069),	-- Nisa's Spare Cloak
 			i(229193),	-- Queen's Pheromone
 			i(229194),	-- Queen's Pheromone
 			i(229195),	-- Queen's Pheromone
@@ -1158,6 +1172,19 @@ root(ROOTS.Unsorted, {
 			i(222905),	-- Faerin's Shield
 			--
 			i(232049),	-- Companion Experience
+			i(232371),	-- Companion Experience
+			--
+			i(226262),	-- Grizzly Hills Trail Mix
+			i(226274),	-- Grizzly Hills Spring Water
+			i(226275),	-- Grizzly Hills Granola
+			i(231019),	-- Hearthstone Invitation Letter
+			i(232492),	-- Gleaming Shatter
+			i(232493),	-- Restored Coffer Key
+			i(232494),	-- Restored Coffer Key
+			i(232495),	-- Restored Coffer Key
+			i(232496),	-- Restored Coffer Key
+			i(232497),	-- Restored Coffer Key
+			i(232498),	-- Restored Coffer Key
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			n(ARMOR, {

@@ -38,6 +38,11 @@
 40137@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)
 1.15.3.55244
 19563@@@UNUSED Bael'Gar Defeated (Daily)
+1.15.4.56573
+41008@@@Rune Learned - Shared Acquisition - Illari Duskfeather (40)
+41009@@@Rune Learned - Shared Acquisition - Dark Riders (40)
+41010@@@Rune Learned - Shared Acquisition - Ley Lines (50)
+41011@@@Rune Learned - Shared Acquisition - Wild Gods (50)
 2.5.1.39399
 15018@@@Infernal Gladiator
 15019@@@Gladiator: Season 1
@@ -15343,10 +15348,13 @@
 40907@@@We Rise Anew
 11.0.2.56313
 40974@@@[DNT] <Hidden> Mythic+ Rating > 0 (The War Within, any season)
-11.0.5.56487
+11.0.2.56513
 40107@@@Harbinger of the Weathered
 40115@@@Harbinger of the Carved
 40118@@@Harbinger of the Runed
+40910@@@Successfully Stress Test CN Realms
+40939@@@Harbinger of the Gilded
+11.0.5.56487
 40235@@@Forged Marshal: The War Within Season 1
 40661@@@Zoomies!
 40870@@@Azeroth's Greatest Detective
@@ -15354,8 +15362,6 @@
 40872@@@I Saved the Party and All I Got Was This Lousy Hat
 40873@@@Crate Insurance Agent
 40886@@@<Hidden> Is Dracthyr For Soar Wingman
-40910@@@Successfully Stress Test CN Realms
-40939@@@Harbinger of the Gilded
 40967@@@Ratts' Revenge
 40976@@@A Cool Twenty Years
 40977@@@Codex Editor: Ahn'Qiraj
@@ -15378,3 +15384,6 @@
 40998@@@A Timewalking Step Back to a Classic Dungeon Time
 40999@@@You're in Your Blackrock Depths
 41000@@@A Timewalking Journey Back to a Classic Dungeon Time
+11.0.5.56572
+41013@@@Upgraded Apparel
+41015@@@A Dark Iron Past
