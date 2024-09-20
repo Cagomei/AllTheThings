@@ -1156,13 +1156,6 @@ root(ROOTS.Unsorted, {
 			--
 			i(210873),	-- Earthen Identification Plaque
 			i(222905),	-- Faerin's Shield
-			i(231818),	-- Grasping Crown of the Deep
-			i(231822),	-- Cephalohide Jacket
-			i(231824),	-- Circlet of the Enveloping Leviathan
-			i(231825),	-- Tri-Heart Chestguard
-			i(231826),	-- Hook-Barbed Spaulders
-			i(231827),	-- Harpooner's Plate Cuirass
-			i(231830),	-- Kraken Shell Pauldrons
 			--
 			i(232049),	-- Companion Experience
 		})),
@@ -1227,7 +1220,6 @@ root(ROOTS.Unsorted, {
 				i(213420),	-- Fungarian Mushroom Cap
 				--- Ringing ---
 				i(224913),	-- Radiant Fuel Cache
-				i(224941),	-- Radiant Fuel Cache
 
 				--- Winter Veil ---
 				i(218309),	-- Gently Shaken Gift

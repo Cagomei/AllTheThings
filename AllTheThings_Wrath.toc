@@ -8,7 +8,7 @@
 ## X-Interface: 30403
 ## X-Wago-ID: yQKyY5K7
 ## X-Curse-Project-ID: 267285
-## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsAD, AllTheThingsSettings, AllTheThingsAuctionData, AllTheThingsDebugData, ATTClassicSettings, ATTClassicAuctionData
+## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsAD, AllTheThingsSettings, AllTheThingsAuctionData, AllTheThingsDebugData, ATTClassicSettings, ATTClassicAuctionData, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter, ATTClassicSettingsPerCharacter
 ## AddonCompartmentFunc: AllTheThings_MinimapButtonOnClick
 ## AddonCompartmentFuncOnEnter: AllTheThings_MinimapButtonOnEnter
@@ -72,7 +72,6 @@ src\Modules\Vignette.lua
 # Expansion specific localization files
 db\Wrath\ExplorationDB.lua
 db\Wrath\LocalizationDB.lua
-# db\Wrath\en_auto.lua
 # db\Wrath\ReagentsDB.lua
 db\Presets.lua
 db\AccountWideQuestsDB.lua
@@ -94,6 +93,7 @@ src\Classes\Deaths.lua
 src\Classes\Dynamic Categories.lua
 src\Classes\Filter Types.lua
 src\Classes\Gear Sets.lua
+src\Classes\Glyphs.lua
 src\Classes\Illusions.lua
 # src\Classes\Miscellaneous.lua
 src\Classes\PVP Ranks.lua
