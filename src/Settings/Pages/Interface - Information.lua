@@ -901,6 +901,81 @@ local InformationTypes = {
 	-- Summary Information Types
 	CreateInformationType("CompletedBy", { text = L.COMPLETED_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForCompletedBy });
 	CreateInformationType("KnownBy", { text = L.KNOWN_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForKnownBy });
+	CreateInformationType("extraInfo", { text = "extraInfo", priority = 2.51, HideCheckBox = true, ForceActive = true,
+		Process = function(t, reference, tooltipInfo)
+			local itemID = reference.itemID
+			if itemID then
+				-- an item used for a faction which is repeatable
+				if reference.factionID and reference.repeatable then
+					tinsert(tooltipInfo, {
+						left = L.ITEM_GIVES_REP .. (app.WOWAPI.GetFactionName(reference.factionID) or ("Faction #" .. tostring(reference.factionID))) .. "'",
+						wrap = true,
+						color = app.Colors.TooltipDescription });
+				end
+				-- Holiday drop description
+				if app.GameBuildVersion >= 100500 then	-- Dragonflight 10.0.5
+					if itemID == 54537 or	-- Heart-Shaped Box [Love is in the Air]
+						itemID == 117393 or		-- Keg-Shaped Treasure Chest [Brewfest]
+						itemID == 117394 or		-- Satchel of Chilled Goods [Midsummer Fire Festival]
+						itemID == 209024 or		-- Loot-Filled Pumpkin [Hallow's End]
+						itemID == 216874  	-- Loot-Filled Basket [Noblegarden]
+					then
+						tinsert(tooltipInfo, 1, { left = L.HOLIDAY_DROP, wrap = true, color = app.Colors.TooltipDescription });
+					end
+				end
+				-- Mark of Honor
+				if itemID == 137642 then
+					if app.Settings:GetTooltipSetting("SummarizeThings") then
+						tinsert(tooltipInfo, 1, { left = L.MARKS_OF_HONOR_DESC, color = app.Colors.SourceIgnored });
+					end
+				end
+			end
+			local currencyID = reference.currencyID
+			if currencyID then
+				-- Bronze [MoP Timerunning]
+				if currencyID == 2778 then
+					if app.Settings:GetTooltipSetting("SummarizeThings") then
+						tinsert(tooltipInfo, 1, { left = L.MOP_REMIX_BRONZE_DESC, color = app.Colors.SourceIgnored });
+					end
+				end
+			end
+
+			-- Description for Unobtainable Things
+			if reference.u and (not reference.crs or reference.itemID or reference.sourceID) then
+				-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
+				if reference.u == 1 and app.GetRelativeValue(reference, "_missing") then
+					tinsert(tooltipInfo, { left = L.UNSORTED_DESC, wrap = true, color = app.Colors.ChatLinkError });
+				else
+					-- removed BoE seen with a non-generic BonusID, potentially a level-scaled drop made re-obtainable
+					if reference.u == 2 and not app.IsBoP(reference) and (reference.bonusID or 3524) ~= 3524 then
+						tinsert(tooltipInfo, { left = L.RECENTLY_MADE_OBTAINABLE });
+					end
+				end
+			end
+
+			-- Limited availability
+			if reference.isLimited then
+				tinsert(tooltipInfo, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = app.Colors.TooltipDescription });
+			end
+		end,
+	}),
+
+	CreateInformationType("SpecializationRequirements", {
+		priority = 9002,
+		text = "SpecializationRequirements",
+		Process = function(t, reference, tooltipInfo)
+			local itemID = reference.itemID
+			-- Currently excluded for Classic versions
+			if not itemID or not app.IsRetail then return end
+			local specs = app.GetFixedItemSpecInfo(itemID);
+			-- specs is already filtered/sorted to only current class
+			if specs and #specs > 0 then
+				tinsert(tooltipInfo, { right = app.GetSpecsString(specs, true, true) });
+			elseif reference.sourceID then
+				tinsert(tooltipInfo, { right = L.NOT_AVAILABLE_IN_PL });
+			end
+		end,
+	});
 
 	-- We want this after most of the regular fields.
 	CreateInformationType("OnTooltip", {

@@ -579,6 +579,8 @@ app.MergeSkipFields = {
 	isYearly = 1,
 	OnUpdate = 1,
 	requireSkill = 1,
+	modID = 1,
+	bonusID = 1,
 };
 -- Fields on a Thing which are specific to where the Thing is Sourced or displayed in a ATT window
 app.SourceSpecificFields = {
@@ -2411,6 +2413,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	if group then
 		if a then paramA = a; end
 		if b then paramB = b; end
+		if paramA == "modItemID" then paramA = "itemID" end
 		-- Move all post processing here?
 		if #group > 0 then
 			-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
@@ -2770,58 +2773,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				working = true;
 			end
 
-			if app.Settings:GetTooltipSetting("SpecializationRequirements") then
-				local specs = GetFixedItemSpecInfo(itemID);
-				-- specs is already filtered/sorted to only current class
-				if specs and #specs > 0 then
-					tinsert(tooltipInfo, { right = GetSpecsString(specs, true, true) });
-				elseif sourceID then
-					tinsert(tooltipInfo, { right = L.NOT_AVAILABLE_IN_PL });
-				end
-			end
-
 			app.AddArtifactRelicInformation(itemID, rawlink, tooltipInfo, group);
-		end
-
-		if group.isLimited then
-			tinsert(tooltipInfo, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = app.Colors.TooltipDescription });
-		end
-
-		-- Description for Items
-		if group.u and (not group.crs or group.itemID or group.sourceID) then
-			-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
-			if group.u == 1 and app.GetRelativeValue(group, "_missing") then
-				tinsert(tooltipInfo, { left = L.UNSORTED_DESC, wrap = true, color = app.Colors.ChatLinkError });
-			else
-				-- removed BoE seen with a non-generic BonusID, potentially a level-scaled drop made re-obtainable
-				if group.u == 2 and not app.IsBoP(group) and (group.bonusID or 3524) ~= 3524 then
-					if isTopLevelSearch then tinsert(tooltipInfo, { left = L.RECENTLY_MADE_OBTAINABLE }); end
-				end
-			end
-		end
-		-- Holiday drop description
-		if app.GameBuildVersion >= 100500 then	-- Dragonflight 10.0.5
-			if paramA == "itemID" and paramB == 54537 or	-- Heart-Shaped Box [Love is in the Air]
-			paramA == "itemID" and paramB == 117393 or		-- Keg-Shaped Treasure Chest [Brewfest]
-			paramA == "itemID" and paramB == 117394 or		-- Satchel of Chilled Goods [Midsummer Fire Festival]
-			paramA == "itemID" and paramB == 209024 or		-- Loot-Filled Pumpkin [Hallow's End]
-			paramA == "itemID" and paramB == 216874 then 	-- Loot-Filled Basket [Noblegarden]
-				tinsert(tooltipInfo, 1, { left = L.HOLIDAY_DROP, wrap = true, color = app.Colors.TooltipDescription });
-			end
-		end
-		-- an item used for a faction which is repeatable
-		if group.itemID and group.factionID and group.repeatable then
-			tinsert(tooltipInfo, { left = L.ITEM_GIVES_REP .. (GetFactionName(group.factionID) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = app.Colors.TooltipDescription });
-		end
-		if paramA == "itemID" and paramB == 137642 then
-			if app.Settings:GetTooltipSetting("SummarizeThings") then
-				tinsert(tooltipInfo, 1, { left = L.MARKS_OF_HONOR_DESC, color = app.Colors.SourceIgnored });
-			end
-		end
-		if paramA == "currencyID" and paramB == 2778 then
-			if app.Settings:GetTooltipSetting("SummarizeThings") then
-				tinsert(tooltipInfo, 1, { left = L.MOP_REMIX_BRONZE_DESC, color = app.Colors.SourceIgnored });
-			end
 		end
 
 		if group.g and app.Settings:GetTooltipSetting("SummarizeThings") then
