@@ -523,9 +523,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["timeline"] = { ADDED_3_0_2 },
 			}),
 			i(117393, {	-- Keg-Shaped Treasure Chest	(Epic Quality)
-				-- #if AFTER 10.0.5
-				["description"] = "You can loot the Keg-Shaped Treasure Chest once a day per character by queueing for the encounter in the Dungeon Finder.\nThe first Keg-Shaped Treasure Chest you get per day per |CFFFF0000account|r has a vastly increased chance to contain collectables such as mount mods, mounts, pets, and toys.",
-				-- #endif
 				["timeline"] = { ADDED_6_0_2 },
 				["lvl"] = 98,
 				["groups"] = appendGroups(BREWFEST_TOKEN, {
@@ -1344,6 +1341,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #endif
 				-- #if AFTER 3.0.0
 				["provider"] = { "i", 37571 },    -- "Brew of the Month" Club Membership Form (current)
+				["repeatable"] = true,
 				-- #else
 				["provider"] = { "i", 37736 },    -- "Brew of the Month" Club Membership Form (original)
 				["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
