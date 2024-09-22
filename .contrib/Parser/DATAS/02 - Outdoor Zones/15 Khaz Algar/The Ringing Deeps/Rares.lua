@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(220276, {	-- Candleflyer Captain
-				["description"] = "Flying around and pretty high",
+				["description"] = "Flying around pretty high.",
 				["coord"] = { 66.5, 29.9, THE_RINGING_DEEPS },
 				["questID"] = 80505,
 				["g"] = {
@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(220286, {	-- Deepflayer Broodmother
-				["description"] = "Flying around entire Earthenworks location",
+				["description"] = "Flying around entire Earthenworks location.",
 				["coords"] = {
 					{ 53.1, 21.7, THE_RINGING_DEEPS },
 					{ 55.6, 12.6, THE_RINGING_DEEPS },
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(220268, {	-- Trungal
-				["description"] = "Kill roots of Trungal on way to him to make him jump out of terrain",
+				["description"] = "Kill roots of Trungal on way to him to make him jump out of terrain.",
 				["coord"] = { 71.8, 46.3, THE_RINGING_DEEPS },
 				["questID"] = 80574,
 				["g"] = {
@@ -197,21 +197,51 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	m(KHAZ_ALGAR, {
 		m(THE_RINGING_DEEPS, {
 			n(RARES, {
-				q(84046),	-- Extra HQT: Automaxor
-				q(84044),	-- Extra HQT: Charmonger
-				q(84045),	-- Extra HQT: Coalesced Monstrosity
-				q(84042),	-- Extra HQT: Cragmund
-				q(84044),	-- Extra HQT: Deathbound Husk
-				q(85162),	-- Extra HQT: Deepflayer Broodmother
-				q(84050),	-- Extra HQT: Disturbed Earthgorger
-				q(84048),	-- Extra HQT: Hungerer of the Deeps
-				q(84047),	-- Extra HQT: Kelpmire
-				q(85163),	-- Extra HQT: Lurker of the Deeps
-				q(81455),	-- Extra HQT: King Splash
-				q(84049),	-- Extra HQT: Spore-Infused Shalewing
-				q(84040),	-- Extra HQT: Terror of Forge
-				q(84043),	-- Extra HQT: Trungal
-				q(84041),	-- Extra HQT: Zilthara
+				q(84046, {	-- Extra HQT: Automaxor
+					["name"] = "Automaxor killed.",
+				}),
+				q(84044, {	-- Extra HQT: Charmonger
+					["name"] = "Charmonger killed.",
+				}),
+				q(84045, {	-- Extra HQT: Coalesced Monstrosity
+					["name"] = "Coalesced Monstrosity killed.",
+				}),
+				q(84042, {	-- Extra HQT: Cragmund
+					["name"] = "Cragmund killed.",
+				}),
+				q(84044, {	-- Extra HQT: Deathbound Husk
+					["name"] = "Deathbound Husk killed.",
+				}),
+				q(85162, {	-- Extra HQT: Deepflayer Broodmother
+					["name"] = "Deepflayer Broodmother killed.",
+				}),
+				q(84050, {	-- Extra HQT: Disturbed Earthgorger
+					["name"] = "Disturbed Earthgorger killed.",
+				}),
+				q(84048, {	-- Extra HQT: Hungerer of the Deeps
+					["name"] = "Hungerer of the Deeps killed.",
+				}),
+				q(84047, {	-- Extra HQT: Kelpmire
+					["name"] = "Kelpmire killed.",
+				}),
+				q(85163, {	-- Extra HQT: Lurker of the Deeps
+					["name"] = "Lurker of the Deeps killed.",
+				}),
+				q(81455, {	-- Extra HQT: King Splash
+					["name"] = "King Splash killed.",
+				}),
+				q(84049, {	-- Extra HQT: Spore-Infused Shalewing
+					["name"] = "Spore-Infused Shalewing killed.",
+				}),
+				q(84040, {	-- Extra HQT: Terror of Forge
+					["name"] = "Terror of Forge killed.",
+				}),
+				q(84043, {	-- Extra HQT: Trungal
+					["name"] = "Trungal killed.",
+				}),
+				q(84041, {	-- Extra HQT: Zilthara
+					["name"] = "Zilthara killed.",
+				}),
 			}),
 		}),
 	}),

@@ -21,10 +21,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(223315),	-- Beledar's Spawn (MOUNT!)
 				},
 			}),
-			n(220159, {	-- Brineslash
+			--n(220159, {	-- Brineslash
 				--["coord"] = { X, Y, HALLOWFALL },
-				["questID"] = 80486,
-			}),
+				--["questID"] = 80486,
+			--}),
 			n(221753, {	-- Deathtide <The Viscous Swell>
 				["coord"] = { 44.8, 42.8, HALLOWFALL },
 				["cost"] = { { "i", 220123, 1 } },	-- 1x Ominous Offering
@@ -52,8 +52,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(223377),	-- Ancient Fungarian's Fingerwrap
 				},
 			}),
-			n(221551, {	-- Grimslicer
-				["description"] = "Walking around park and can be killed by random ally npcs in area.",
+			n(221551, {	-- Grimslice
+				["description"] = "Walking around the park. Can be killed by random Arathi NPCs in area.",
 				["coords"] = {
 					{ 35.0, 58.7, HALLOWFALL },
 					{ 35.0, 50.4, HALLOWFALL },
@@ -171,18 +171,42 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	m(KHAZ_ALGAR, {
 		m(HALLOWFALL, {
 			n(RARES, {
-				q(85164), -- Extra HQT: Beledar's Spawn
-				q(85165), -- Extra HQT: Deathtide
-				q(84055), -- Extra HQT: Toadstomper
-				q(84061), -- Extra HQT: Murkshade
-				q(84061), -- Extra HQT: The Taskmaker
-				q(84065), -- Extra HQT: Horror of the Shallows
-				q(84063), -- Extra HQT: Lytfang the Lost
-				q(84068), -- Extra HQT: Pride of Beledar
-				q(84062), -- Extra HQT: Sloshmuck
-				q(84067), -- Extra HQT: Sir Alastair Purefire
-				q(84066), -- Extra HQT: Strenght of Beledar
-				q(84064), -- Extra HQT: The Perchfather
+				q(85164, { -- Extra HQT: Beledar's Spawn
+					["name"] = "Beledar's Spawn killed.",
+				}),
+				q(85165, { -- Extra HQT: Deathtide
+					["name"] = "Deathtide killed.",
+				}),
+				q(84055, { -- Extra HQT: Toadstomper
+					["name"] = "Toadstomper killed.",
+				}),
+				q(84061, { -- Extra HQT: Murkshade
+					["name"] = "Murkshade killed.",
+				}),
+				q(84061, { -- Extra HQT: The Taskmaker
+					["name"] = "The Taskmaker killed.",
+				}),
+				q(84065, { -- Extra HQT: Horror of the Shallows
+					["name"] = "Horror of the Shallows killed.",
+				}),
+				q(84063, { -- Extra HQT: Lytfang the Lost
+					["name"] = "Lytfang the Lost killed. He's not lost anymore.",
+				}),
+				q(84068, { -- Extra HQT: Pride of Beledar
+					["name"] = "Pride of Beledar killed. Pride is a sin, you know?",
+				}),
+				q(84062, { -- Extra HQT: Sloshmuck
+					["name"] = "Sloshmuck killed.",
+				}),
+				q(84067, { -- Extra HQT: Sir Alastair Purefire
+					["name"] = "Sir Alastair Purefire killed.",
+				}),
+				q(84066, { -- Extra HQT: Strenght of Beledar
+					["name"] = "Strenght of Beledar killed.",
+				}),
+				q(84064, { -- Extra HQT: The Perchfather
+					["name"] = "The Perchfather killed.",
+				}),
 			}),
 		}),
 	}),

@@ -330,7 +330,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79114, {	-- Beautification Project
 					["sourceQuests"] = { 79119 },	-- It's Rough to Be a Bug!
 					["provider"] = { "n", 214359 },	-- Kish'nal
-					["coord"] = { 74.9, 83.5, AZJ_KAHET },
+					["coord"] = { 76.1, 82.5, AZJ_KAHET },
 				}),
 				q(79115, {	-- Expert Consultant
 					["sourceQuests"] = { 79114 },	-- Beautification Project
@@ -1123,7 +1123,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		m(AZJ_KAHET, {
 			n(QUESTS, {
 				q(79658),	-- [DNT] The Severed Threads Renown Unlock (spellID 448677)
-				q(83488),	-- Rak-Ush Stagshell World Quests Unlocked (spellID 456051)
+				q(83488, {	-- Rak-Ush Stagshell World Quests Unlocked (spellID 456051)
+					["name"] = "Rak-Ush Stagshell World Quests Unlocked.",
+				}),
 				-- Pheromones (spellID 444927 - [DNT] Set Faction Reputation) - ?
 				q(81628),	-- triggered during questID 79175 (I Think I'm a Drone Now) when apply Anub'azal's Pheromones
 				q(81625),	-- triggered during questID 78226 (A Most Intriguing Invitation) when apply Azi-Kahet Pheromones
