@@ -120,7 +120,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						objective(1, {	--	Mana-Tombs Stasis Chamber Investigated
-							["provider"] = { "i", 32069 },	-- Mana-Tombs Stasis Chamber Key
+							["providers"] = {
+								{ "i",  32069 },	-- Mana-Tombs Stasis Chamber Key
+								{ "o", 185519 },	-- Mana-Tombs Stasis Chamber
+							},
 							["description"] = "Stasis Chamber is in the room to the left after the first boss.\n\nThis can only be completed on Heroic difficulty.",
 						}),
 					},
@@ -370,6 +373,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					e(536, {	-- Yor
+						["provider"] = { "o", 185522 },	-- Shaffar's Stasis Chamber
 						["description"] = "Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",
 						["cost"] = {
 							{ "i", 32079, 1 },	-- Shaffar's Stasis Chamber Key
