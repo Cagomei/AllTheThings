@@ -742,8 +742,8 @@ local function GetLinkTooltipInfo(sourceGroup, useItemIDs, sameItem)
 	end
 	local itemID = sourceGroup.modItemID or sourceGroup.itemID or sourceGroup.silentItemID;
 	return {
-		left = text .. link .. (useItemIDs and (" (" .. ((sameItem and "(*)" or itemID) or "???") .. ")") or ""),
-		right = app.GetCollectionIcon(sourceGroup.collected)
+		left = text .. link .. (useItemIDs and (" (" .. ((sameItem and "*" or itemID) or "???") .. ")") or ""),
+		right = app.GetCollectionIcon(AccountSources[sourceGroup.sourceID])
 	}
 end
 
