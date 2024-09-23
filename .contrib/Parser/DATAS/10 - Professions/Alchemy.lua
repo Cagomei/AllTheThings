@@ -1099,7 +1099,6 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(ACHIEVEMENTS, {
-			-- TODO: Flask of Rampant Toxicity criteria currently not working correctly, recipe needs to be added to "crafted items" section.
 			ach(19704),	-- Overflowing Algari Flasks (automated)
 			ach(19716),	-- Plentiful Algari Potions (automated)
 		}),
@@ -1146,7 +1145,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			o(456025, {	-- Earthen Iron Powder
-				["coord"] = { 30.6, 70.4, DORNOGAL },
+				["coord"] = { 32.5, 60.3, DORNOGAL },
 				["questID"] = 83840,
 				["g"] = {
 					i(226265),	-- Earthen Iron Powder
