@@ -1649,7 +1649,7 @@ end");
                     case "displayID":
                     case "modID":
                     case "bonusID":
-                    case "runeforgePowerID":
+                    case "runeforgepowerID":
                     case "raceID":
                     case "conduitID":
                     case "criteriaTreeID":
@@ -2456,7 +2456,7 @@ end");
                         return container.FindObject(mostSignificantID, id, "questID", objQuestID);
                     }
                 }
-                else if (mostSignificantID == "azeriteEssenceID" || mostSignificantID == "spellID")
+                else if (mostSignificantID == "azeriteessenceID" || mostSignificantID == "spellID")
                 {
                     // For Essences, also keep track of the ranks to allow more than one per list.
                     if (data2.TryGetValue("rank", out object fieldRef) && fieldRef.TryConvert(out decimal rank))

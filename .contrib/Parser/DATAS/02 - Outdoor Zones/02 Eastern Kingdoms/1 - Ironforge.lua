@@ -1,13 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local COOKING_AWARD_GROUPS = {
-	-- #if AFTER 5.0.4
-	currency(81),	-- Epicurean's Award
-	-- #else
-	currency(402),	-- Ironpaw Token // Pre 5.0.4 named Chef's Award
-	-- #endif
-};
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(IRONFORGE, {
 		-- #if AFTER CATA
@@ -271,11 +264,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
+					["maps"] = { DUN_MOROGH },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- 0/6 Dun Morogh Chicken
+							["providers"] = {
+								{ "i", 69982 },	-- Dun Morogh Chicken
+								{ "n", 53568 },	-- Dun Morogh Chicken
+							},
+							["coord"] = { 59.8, 38.2, DUN_MOROGH },
+						}),
+						COOKING_AWARD,
+					},
 				})),
 				q(686, {	-- A King's Tribute (1/3)
 					["qg"] = 2784,	-- King Magni Bronzebeard
@@ -351,7 +354,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 7092,	-- Tainted Ooze
 						}),
 						-- #if ANYCLASSIC
-						i(11912, {	 -- Package of Empty Ooze Containers
+						i(11912, {	-- Package of Empty Ooze Containers
 							i(11914),	-- Empty Cursed Ooze Jar
 							i(11948),	-- Empty Tainted Ooze Jar
 						}),
@@ -375,7 +378,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						-- #if ANYCLASSIC
-						i(11955, {	 -- Bag of Empty Ooze Containers
+						i(11955, {	-- Bag of Empty Ooze Containers
 							i(11953),	-- Empty Pure Sample Jar
 						}),
 						-- #endif
@@ -391,7 +394,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- 0/6 Ironforge Guards Fed
+							["providers"] = {
+								{ "i", 69981 },	-- Ironforge Rations
+								{ "n", 5595 },	-- Ironforge Guard
+							},
+						}),
+						COOKING_AWARD,
+					},
 				})),
 				q(7806, {	-- Additional Runecloth [Ironforge]
 					["qg"] = 14723,	-- Mistina Steelshield
@@ -567,17 +578,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- 0/10 Spice Bread
+							["provider"] = { "i", 30816 },	-- Spice Bread
+						}),
+						COOKING_AWARD,
+					},
 				})),
 				applyclassicphase(CATA_PHASE_ONE, q(29342, {	-- Cold Water Fishing
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
+					["maps"] = { DUN_MOROGH },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = {
+						objective(1, {	-- 0/5 Arctic Char
+							["provider"] = { "i", 69931 },	-- Arctic Char
+							["coord"] = { 84.6, 50.9, DUN_MOROGH },
+						}),
 						i(67414),	-- Bag of Shiny Things
 					},
 				})),
@@ -661,6 +682,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = {
+						objective(1, {	-- 0/3 Feed Squirky
+							["providers"] = {
+								{ "n", 53544 },	-- Squirky
+								{ "i", 69933 },	-- Blind Minnow
+							},
+							["coord"] = { 47.1, 14.5, IRONFORGE },
+						}),
 						i(67414),	-- Bag of Shiny Things
 					},
 				})),
@@ -742,11 +770,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
+					["maps"] = { DUN_MOROGH },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- Deliver Cask of Drugan's IPA
+							["provider"] = { "o", 208872 },	-- Cask of Drugan's IPA
+							["coord"] = { 53.9, 50.6, DUN_MOROGH },
+						}),
+						COOKING_AWARD,
+					},
 				})),
 				q(1073, {	-- Ineptitude + Chemicals = Fun (1/2)
 					["qg"] = 4081,	-- Lomac Gearstrip
@@ -784,7 +819,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/20 Searing Coral
-							["provider"] = { "i", 6848 },	-- Searing Coral
+							["providers"] = {
+								{ "i", 6848 },	-- Searing Coral
+								{ "o", 89634 },	-- Iron Coral
+							},
+							["coord"] = { 9.0, 69.2, WETLANDS },
 						}),
 					},
 				}),
@@ -807,7 +846,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Umbral Ore
-							["provider"] = { "i", 6800 },	-- Umbral Ore
+							["providers"] = {
+								{ "i", 6800 },	-- Umbral Ore
+								{ "o", 85562 },	-- Ironband's Strongbox
+							},
 							["coord"] = { 77.9, 62.2, DUN_MOROGH },
 						}),
 					},
@@ -820,7 +862,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						objective(1, {	-- 0/1 Bag o' Sheep Innards
+							["provider"] = { "i", 69984 },	-- Bag o' Sheep Innards
+							["coord"] = { 61.6, 72.8, IRONFORGE },
+							["cr"] = 5124,	-- Sognar Cliffbeard <Meat Vendor>
+						}),
+						objective(2, {	-- 0/4 Sack of Oatmeal
+							["providers"] = {
+								{ "i",  69985 },	-- Sack of Oatmeal
+								{ "o", 208870 },	-- Sack of Oatmeal
+							},
+							["coord"] = { 48.9, 29.8, IRONFORGE },
+						}),
+						objective(3, {	-- 0/5 Mild Spices
+							["provider"] = { "i", 2678 },	-- Mild Spices
+						}),
+						COOKING_AWARD,
+					},
 				})),
 				q(2298, {	-- Kingly Shakedown
 					["qg"] = 5165,	-- Hulfdan Blackbeard
@@ -850,11 +909,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
+					["maps"] = { DUN_MOROGH },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = {
+						objective(1, {	-- Catch Cold Water Crayfish
+							["provider"] = { "i", 69940 },	-- Grimnur's Bait
+							["coord"] = { 84, 51, DUN_MOROGH },
+						}),
+						objective(2, {	-- Take Crayfish to Cook Ghilm
+							["provider"] = { "n", 1355 },	-- Cook Ghilm
+							["coord"] = { 75.6, 52.8, DUN_MOROGH },
+						}),
 						i(67414),	-- Bag of Shiny Things
 					},
 				})),
@@ -870,7 +938,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mage-tastic Gizmonitor
-							["provider"] = { "i", 7226 },	-- Mage-tastic Gizmonitor
+							["providers"] = {
+								{ "i",   7226 },	-- Mage-tastic Gizmonitor
+								{ "o", 102984 },	-- Bink's Toolbox
+							},
 							["coord"] = { 27.7, 36.5, DUN_MOROGH },
 						}),
 						i(7507, {	-- Arcane Orb
@@ -906,6 +977,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = {
+						objective(1, {	-- Put Young Ironjaw on Display
+							["providers"] = {
+								{ "i",  69932 },	-- Young Ironjaw
+								{ "o", 208860 },	-- Empty Plaque
+							},
+							["coords"] = {
+								{ 47.5, 14.5, IRONFORGE },
+								{ 71, 10, IRONFORGE },
+							},
+						}),
 						i(67414),	-- Bag of Shiny Things
 					},
 				})),
@@ -1026,6 +1107,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- Arrest Ambassador Slaghammer and bring him to the High Seat
+							["providers"] = {
+								{ "i", 56837 },	-- Sturdy Manacles
+								{ "n", 42146 },	-- Ambassador Slaghammer <Dark Iron Ambassador>
+							},
+							["coord"] = { 36.6, 43.6, IRONFORGE },
+						}),
 						i(57583, {	-- The Slaghammer
 							["timeline"] = { ADDED_4_0_3 },
 						}),

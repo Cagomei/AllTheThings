@@ -712,7 +712,7 @@ namespace ATT
                     MarkCustomHeaderAsRequired(id);
                 }
             }
-            if (data.TryGetValue("flightPathID", out long flightPathID)) FLIGHTPATHS_WITH_REFERENCES[flightPathID] = true;
+            if (data.TryGetValue("flightpathID", out long flightpathID)) FLIGHTPATHS_WITH_REFERENCES[flightpathID] = true;
             if (data.TryGetValue("objectID", out tempId)) OBJECTS_WITH_REFERENCES[tempId] = true;
             if (data.TryGetValue("artifactID", out tempId) && !data.ContainsKey("sourceID") && Objects.ArtifactSources.TryGetValue(tempId, out Dictionary<string, long> sources))
             {
@@ -1775,10 +1775,19 @@ namespace ATT
             // only incorporate achievement criteria which is under a header or another achievement
             if (CurrentParentGroup.HasValue &&
                 CurrentParentGroup.Value.Key != "npcID" &&
-                CurrentParentGroup.Value.Key != "achID") return;
+                CurrentParentGroup.Value.Key != "achID" &&
+                CurrentParentGroup.Value.Key != "headerID")
+            {
+                LogDebug($"INFO: Achievement {achID} not being incorporated since it is listed under a specific Thing {CurrentParentGroup.Value.Key}:{CurrentParentGroup.Value.Value}");
+                return;
+            }
 
-            // don't incorporate criteria if the achievement is listed under an NPC group
-            if (CurrentParentGroup.Value.Key == "npcID" && CurrentParentGroup.Value.Value.TryConvert(out long id) && id > 0) return;
+            // don't incorporate criteria if the achievement is listed under a real NPC
+            if (CurrentParentGroup.Value.Key == "npcID" && CurrentParentGroup.Value.Value.TryConvert(out long id) && id > 0)
+            {
+                LogDebug($"INFO: Achievement {achID} not being incorporated since it is listed under real NPC {id}");
+                return;
+            }
 
             // Pull in any defined Achievement Criteria/Tree unless we've defined it a 'meta' Achievement
             if (achInfo.TryGetValue("criteriaTreeID", out long criteriaTreeID) &&
@@ -2060,17 +2069,17 @@ namespace ATT
                 }
             }
 
-            long flightPathID = criteriaData.GetRequiredFlightPath();
-            if (flightPathID > 0)
+            long flightpathID = criteriaData.GetRequiredFlightPath();
+            if (flightpathID > 0)
             {
-                if (!TryGetSOURCED("flightPathID", flightPathID, out _))
+                if (!TryGetSOURCED("flightpathID", flightpathID, out _))
                 {
-                    LogWarn($"Flightpath {flightPathID} should be sourced as it is attached to Criteria {achID}:{criteriaID}");
+                    LogWarn($"Flightpath {flightpathID} should be sourced as it is attached to Criteria {achID}:{criteriaID}");
                 }
                 else
                 {
-                    LogDebug($"INFO: Added _flightpath to Criteria {achID}:{criteriaID} with Flightpath: {flightPathID}");
-                    Objects.Merge(data, "_flightpath", flightPathID);
+                    LogDebug($"INFO: Added _flightpath to Criteria {achID}:{criteriaID} with Flightpath: {flightpathID}");
+                    Objects.Merge(data, "_flightpath", flightpathID);
                 }
             }
         }
@@ -2566,7 +2575,7 @@ namespace ATT
             }
             if (data.TryGetValue("_flightpath", out object flightpath))
             {
-                DuplicateDataIntoGroups(data, flightpath, "flightPathID");
+                DuplicateDataIntoGroups(data, flightpath, "flightpathID");
                 cloned = true;
             }
 

@@ -335,8 +335,47 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		}),
 	})),
 	header(HEADERS.Race, EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["races"] = { EARTHEN_ALLIANCE, EARTHEN_HORDE } }, {
-		-- TODO: Heritage questline & rewards
-		ach(40309),	-- Heritage of the Earthen
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Earthen|r.",
+		["g"] = {
+			q(82771, {	-- Heritage of the Earthen
+				["provider"] = { "n", 224790 },	-- Dawn <The Awakened>
+				["coord"] = { 29.0, 59.6, DORNOGAL },
+				["lvl"] = 50,
+				["g"] = {
+					ach(40309),	-- Heritage of the Earthen
+					------ Dornogal Set ------
+					i(224863),	-- Dornogal Cheststraps
+					i(224861),	-- Dornogal Crown
+					i(224867),	-- Dornogal Cuffs
+					i(224868),	-- Dornogal Gauntlets
+					i(224864),	-- Dornogal Girdle
+					i(224865),	-- Dornogal Legcoat
+					i(224862),	-- Dornogal Mantle
+					i(224866),	-- Dornogal Sabatons
+					i(224165),	-- Dornogal Tabard
+					------ Freywold Set ------
+					i(224878),	-- Freywold Cheststraps
+					i(224876),	-- Freywold Crown
+					i(224882),	-- Freywold Cuffs
+					i(224883),	-- Freywold Gauntlets
+					i(224879),	-- Freywold Girdle
+					i(224880),	-- Freywold Legcoat
+					i(224877),	-- Freywold Mantle
+					i(224881),	-- Freywold Sabatons
+					i(224169),	-- Freywold Tabard
+					------ Gundargaz Set ------
+					i(224886),	-- Gundargaz Cheststraps
+					i(224884),	-- Gundargaz Crown
+					i(224890),	-- Gundargaz Cuffs
+					i(224891),	-- Gundargaz Gauntlets
+					i(224887),	-- Gundargaz Girdle
+					i(224888),	-- Gundargaz Legcoat
+					i(224885),	-- Gundargaz Mantle
+					i(224889),	-- Gundargaz Sabatons
+					i(224167),	-- Gundargaz Tabard
+				},
+			}),
+		},
 	})),
 	race(GNOME, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }, ["races"] = { GNOME } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Gnome|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
@@ -1357,7 +1396,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					72858,	-- Acid Beats Paper
 					72857,	-- Boom Weed
 					72856,	-- Nothing Like the Classic
-				 },
+				},
 				["provider"] = { "n", 199793 },	-- Calia Menethil
 				["coord"] = { 45.6, 41.6, SILVERPINE_FOREST },
 				["g"] = {
@@ -1369,7 +1408,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					72858,	-- Acid Beats Paper
 					72857,	-- Boom Weed
 					72856,	-- Nothing Like the Classic
-				 },
+				},
 				["provider"] = { "n", 199792 },	-- Lilian Voss
 				["coord"] = { 45.4, 41.6, SILVERPINE_FOREST },
 			}),
@@ -1377,7 +1416,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = {
 					72859,	-- A Proper Disguise
 					72860,	-- Fear is Our Weapon
-				 },
+				},
 				["provider"] = { "n", 199792 },	-- Lilian Voss
 				["coord"] = { 45.4, 41.6, SILVERPINE_FOREST },
 				["g"] = {
@@ -1637,6 +1676,13 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- New Heritage questline start HQTs
 			q(78548),	-- Draenei Heritage (spellID 426497)
 			q(78549),	-- Troll Heritage (spellID 426505)
+		}),
+	})),
+	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(HERITAGE, {
+			q(82770),	-- Ensemble: Earthen Copper Regalia
+			q(82788),	-- Arsenal: Earthen Weaponry
+			q(82789),	-- Popped on turn in of Stranger in a Strange Land [A] (81887)
 		}),
 	})),
 });

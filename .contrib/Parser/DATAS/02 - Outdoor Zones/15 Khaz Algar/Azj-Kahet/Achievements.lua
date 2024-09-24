@@ -25,25 +25,28 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40620),		-- Back to the Wall
 			ach(40629),		-- Bookworm (automated)
 			ach(40822),		-- Explore Azj-Kahet (automated)
-			ach(40624, {	-- Itsy Bitsy Spider
-				-- TODO: Braghe please add spider coords, thanks
+			-- TODO: Take achraw away once Wago & AchievementDB are having the correct data
+			achraw(40624, {	-- Itsy Bitsy Spider
 				crit(68972, {	-- Webster
-					["coord"] = { 39.4, 65.3, NERUBAR },
+					["coord"] = { 39.4, 65.4, NERUBAR },
 				}),
-				crit(68973, {	-- Spindle	//will have two sets of coords depending on completion of Saving Private Spindle?
-					--["coord"] = { 1, 1, AZJ_KAHET },
-				}),
-				crit(68974, {	-- Swift
-					--["coord"] = { 1, 1, AZJ_KAHET },
+				crit(68973, {	-- Spindle
+					["coord"] = { 55.6, 43.9, AZJ_KAHET },	-- NPCID: 216213
 				}),
 				crit(68976, {	-- Ru'murh
-					--["coord"] = { 1, 1, AZJ_KAHET },
+					["coord"] = { 41.54, 22.45, NERUBAR },
 				}),
 				crit(68977, {	-- Thimble
-					["coord"] = { 55.9, 32.4, NERUBAR },
+					["coords"] = {
+						{ 55.9, 32.4, NERUBAR },
+						{ 55.1, 68.8, NERUBAR },	-- NPCID: 220568
+					},
 				}),
 				crit(68978, {	-- Scampering Weave-Rat
 					["coord"] = { 49.6, 15.7, NERUBAR },
+				}),
+				crit(3236, {	-- Bobbin
+					["coord"] = { 56.4, 43.2, AZJ_KAHET },
 				}),
 			}),
 			ach(40843),		-- Mine Poppin'

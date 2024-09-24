@@ -420,8 +420,8 @@ local fieldConverters = {
 	["artifactID"] = function(group, value)
 		CacheField(group, "artifactID", value);
 	end,
-	["azeriteEssenceID"] = function(group, value)
-		CacheField(group, "azeriteEssenceID", value);
+	["azeriteessenceID"] = function(group, value)
+		CacheField(group, "azeriteessenceID", value);
 	end,
 	["creatureID"] = cacheCreatureID,
 	["currencyID"] = function(group, value)
@@ -437,14 +437,14 @@ local fieldConverters = {
 		CacheField(group, "explorationID", value);
 	end,
 	["factionID"] = cacheFactionID,
-	["flightPathID"] = function(group, value)
-		CacheField(group, "flightPathID", value);
+	["flightpathID"] = function(group, value)
+		CacheField(group, "flightpathID", value);
 	end,
 	["followerID"] = function(group, value)
 		CacheField(group, "followerID", value);
 	end,
-	["garrisonBuildingID"] = function(group, value)
-		CacheField(group, "garrisonBuildingID", value);
+	["garrisonbuildingID"] = function(group, value)
+		CacheField(group, "garrisonbuildingID", value);
 	end,
 	["guildAchievementID"] = cacheAchievementID,
 	["headerID"] = cacheHeaderID,
@@ -492,8 +492,8 @@ local fieldConverters = {
 	["requireSkill"] = function(group, value)
 		CacheField(group, "requireSkill", value);
 	end,
-	["runeforgePowerID"] = function(group, value)
-		CacheField(group, "runeforgePowerID", value);
+	["runeforgepowerID"] = function(group, value)
+		CacheField(group, "runeforgepowerID", value);
 	end,
 	["rwp"] = function(group, value)
 		CacheField(group, "rwp", value);
@@ -1163,7 +1163,7 @@ local function GenerateSourceHash(group)
 	if parent then
 		return GenerateSourceHash(parent) .. ">" .. (group.hash or group.name or group.text);
 	else
-		return group.hash or group.name or group.text;
+		return group.hash or group.name or group.text or "NOHASH"..app.UniqueCounter.SourceHash
 	end
 end
 local function GenerateSourcePath(group, l)

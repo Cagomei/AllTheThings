@@ -37,7 +37,7 @@ namespace ATT
             ObjectData.Create("difficultyID",       "d",            "_.CreateDifficulty", "f");
             ObjectData.Create("encounterID",        "e",            "_.CreateEncounter", "f");
             ObjectData.Create("explorationID",      "exp",          "_.CreateExploration", "f");
-            ObjectData.Create("flightPathID",       "fp",           "_.CreateFlightPath", "f");
+            ObjectData.Create("flightpathID",       "fp",           "_.CreateFlightPath", "f");
             ObjectData.Create("objectID",           "o",            "_.CreateObject", "f");
             ObjectData.Create("petAbilityID",       "pa",           "_.CreatePetAbility", "f");
             ObjectData.Create("followerID",         "follower",     "_.CreateFollower", "f");
@@ -46,8 +46,8 @@ namespace ATT
             ObjectData.Create("mapID",              "m",            "_.CreateMap", "f");
             ObjectData.Create("illusionID",         "ill",          "_.CreateIllusion", "f", "spellID");
             ObjectData.Create<RecipeData>("recipeID",   "r",        "_.CreateRecipe", "f", "spellID", "modID");
-            ObjectData.Create("azeriteEssenceID",   "aze",          "_.CreateAzeriteEssence", "f");
-            ObjectData.Create("runeforgePowerID",   "rfl",          "_.CreateRuneforgeLegendary", "f");
+            ObjectData.Create("azeriteessenceID",   "aze",          "_.CreateAzeriteEssence", "f");
+            ObjectData.Create("runeforgepowerID",   "rfl",          "_.CreateRuneforgeLegendary", "f");
             ObjectData.Create("conduitID",          "cd",           "_.CreateConduit", "f");
             ObjectData.Create("raceID",             "ra",           "_.CreateRace", "f");
             ObjectData.Create("setID",              "gs",           "_.CreateGearSet", "f");

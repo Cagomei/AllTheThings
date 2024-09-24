@@ -776,7 +776,7 @@ local InformationTypes = {
 
 	CreateInformationType("achievementCategoryID", { text = L.ACHIEVEMENT_CATEGORY_ID }),
 	CreateInformationType("artifactID", { text = L.ARTIFACT_ID }),
-	CreateInformationType("azeriteEssenceID", { text = L.AZERITE_ESSENCE_ID }),
+	CreateInformationType("azeriteessenceID", { text = L.AZERITE_ESSENCE_ID }),
 	CreateInformationType("conduitID", { text = L.CONDUIT_ID }),
 	CreateInformationType("creatureID", { text = L.CREATURE_ID }),
 	CreateInformationType("crs", { text = L.CREATURES_LIST, ShouldDisplayInExternalTooltips = false,
@@ -809,14 +809,14 @@ local InformationTypes = {
 	CreateInformationType("expansionID", { text = L.EXPANSION_ID }),
 	CreateInformationType("explorationID", { text = L.EXPLORATION_ID }),
 	CreateInformationType("e", { text = L.EVENT_ID }),
-	CreateInformationType("flightPathID", { text = L.FLIGHT_PATH_ID }),
+	CreateInformationType("flightpathID", { text = L.FLIGHT_PATH_ID }),
 	CreateInformationType("followerID", { text = L.FOLLOWER_ID }),
 	CreateInformationType("headerID", { text = L.HEADER_ID }),
 	CreateInformationType("illusionID", { text = L.ILLUSION_ID }),
 	CreateInformationType("instanceID", { text = L.INSTANCE_ID }),
 	CreateInformationType("mapID", { text = L.MAP_ID }),
 	CreateInformationType("objectID", { text = L.OBJECT_ID }),
-	CreateInformationType("runeforgePowerID", { text = L.RUNEFORGE_POWER_ID }),
+	CreateInformationType("runeforgepowerID", { text = L.RUNEFORGE_POWER_ID }),
 	CreateInformationType("savedInstanceID", { text = L.SAVED_INSTANCE_ID }),
 	CreateInformationType("setID", { text = L.SET_ID }),
 	CreateInformationType("speciesID", { text = L.SPECIES_ID }),
@@ -1067,9 +1067,11 @@ app.ProcessInformationTypes = function(tooltipInfo, reference)
 	end
 end
 app.ProcessInformationTypesForExternalTooltips = function(tooltipInfo, reference)
+	-- app.PrintDebug("PITFET",#tooltipInfo,app.ActiveRowReference and true)
 	for _,informationType in ipairs(app.ActiveRowReference and ActiveInformationTypes or ActiveInformationTypesForExternalTooltips) do
 		informationType:Process(reference, tooltipInfo);
 	end
+	-- app.PrintDebug("PITFET.Done",#tooltipInfo)
 end
 
 local function OnClickForInformationCheckBox(self)

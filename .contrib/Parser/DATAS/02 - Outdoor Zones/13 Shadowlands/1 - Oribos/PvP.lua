@@ -148,9 +148,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						})),
 						i(185834, {	-- Orboreal Distinguishment
 							["cost"] = { { "c", HONOR, 2000 } },
+							-- #if BEFORE 10.0.2
 							["g"] = {
+							-- Lets display it only in the latest Expansion
 								i(137642),	-- Mark of Honor
 							},
+							-- #endif
 						}),
 					},
 				}),

@@ -9,6 +9,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
+					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_TWW_LAUNCH },
 				}),
 				q(71026, {	-- Against Overwhelming Odds
 					["provider"] = { "n", 196191 },	-- Malicia
@@ -207,10 +208,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },
 					["g"] = {
 						i(185834, {	-- Orboreal Distinguishment
-							["cost"] = {{"c", HONOR, 2000}},
+							["cost"] = { { "c", HONOR, 2000 } },
+							-- #if BEFORE 11.0.2
 							["g"] = {
+							-- Lets display it only in the latest Expansion
 								i(137642),	-- Mark of Honor
 							},
+							-- #endif
 						}),
 						i(201250, {	-- Victorious Contender's Strongbox
 							["cost"] = {{"c", HONOR, 5000}},
