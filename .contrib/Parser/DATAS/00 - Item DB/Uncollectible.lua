@@ -46,6 +46,7 @@ i(23123);	-- Blessed Wizard Oil
 i(18595);	-- Blood Opal ("Retrieving Data" in-game)
 i(168124);	-- Cash of War Resources
 i(44626);	-- Cask of Aged Dalaran Red
+i(44629);	-- Cask of Peaked Dalaran Red
 i(13509);	-- Clutch of Foresight
 i(23122);	-- Consecrated Sharpening Stone
 i(143542);	-- Crown Co. "Kure-Everything" Tonic
@@ -339,6 +340,7 @@ i(10922);	-- Wound Poison IV
 -----------------
 i(62370);	-- Bear Whisker
 i(60406);	-- Blood-Caked Incisors
+i(56149);	-- Empty Town-In-A-Box
 i(56054);	-- Gleaming Flipper
 i(62770);	-- Infested Feather
 i(54629);	-- Prickly Thorn
