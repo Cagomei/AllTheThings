@@ -600,7 +600,7 @@ ATTSettingsPanelMixin = {
 		---@class ATTSettingsCheckButton: CheckButton
 		---@field Text FontString
 		---@field OnRefreshCheckedDisabled any
-		local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, "InterfaceOptionsCheckButtonTemplate")
+		local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, "UICheckButtonTemplate")
 		Mixin(cb, ATTSettingsObjectMixin);
 		--self:RegisterObject(cb);
 		if OnClick then cb:SetScript("OnClick", OnClick) end
@@ -610,9 +610,10 @@ ATTSettingsPanelMixin = {
 			OnRefresh(cb);
 		end);
 		cb.Text:SetText(text)
-		cb.Text:SetScale(1.1)
+		cb.Text:SetScale(1.3)
 		cb.Text:SetWordWrap(false)
 		cb:SetHitRectInsets(0,0 - cb.Text:GetUnboundedStringWidth(),0,0);
+		cb:SetScale(0.8);
 		return cb
 	end,
 	CreateTextbox = function(self, opts, functions)
@@ -887,7 +888,7 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 		if not skipRefresh then settings:UpdateMode("FORCE"); end
 	end)
 	checkboxSkipAutoRefresh:SetATTTooltip(L.SKIP_AUTO_REFRESH_TOOLTIP);
-	checkboxSkipAutoRefresh:SetPoint("BOTTOMRIGHT", separator, "TOPRIGHT", -(checkboxSkipAutoRefresh.Text:GetWidth() + checkboxSkipAutoRefresh:GetWidth()), 0)
+	checkboxSkipAutoRefresh:SetPoint("BOTTOMRIGHT", separator, "TOPRIGHT", -(checkboxSkipAutoRefresh.Text:GetWidth() * checkboxSkipAutoRefresh.Text:GetScale()), 0)
 	return subcategory;
 end
 
