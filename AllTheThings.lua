@@ -2229,14 +2229,15 @@ local function GetRelativeDifficulty(group, difficultyID)
 		end
 	end
 end
+local SummarizeShowForActiveRowKeys
 local function AddContainsData(group, tooltipInfo)
 	local key = group.key
 	-- only show Contains on Things
-	if not app.ThingKeys[key] then return end
+	if not app.ThingKeys[key] or (app.ActiveRowReference and not SummarizeShowForActiveRowKeys[key]) then return end
 	local id = group[key]
 	local working = group.working
-	-- Sort by the heirarchy of the group
-	if not working then
+	-- Sort by the heirarchy of the group if not the raw group of an ATT list
+	if not working and not app.ActiveRowReference then
 		app.Sort(group.g, app.SortDefaults.Hierarchy, true);
 	end
 	-- app.PrintDebug("SummarizeThings",group.hash,group.g and #group.g)
@@ -2393,6 +2394,13 @@ local function AddContainsData(group, tooltipInfo)
 	return working
 end
 app.AddEventHandler("OnLoad", function()
+	SummarizeShowForActiveRowKeys = app.CloneDictionary(app.ThingKeys, {
+		-- Specific keys which we don't want to list Contains data on row reference tooltips but are considered Things
+		npcID = false,
+		creatureID = false,
+		encounterID = false,
+		explorationID = false,
+	})
 	app.Settings.CreateInformationType("SummarizeThings", {
 		text = "SummarizeThings",
 		priority = 2.9, HideCheckBox = true,
@@ -4609,7 +4617,8 @@ app.AddEventHandler("OnReady", function()
 								if key == "objectiveID" then
 									if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
 								elseif key == "criteriaID" then
-									tooltip:AddDoubleLine(L.CRITERIA_FOR, GetAchievementLink(o.achievementID));
+									local achGroup = SearchForObject("achievementID", o.achievementID, "key")
+									tooltip:AddDoubleLine(L.CRITERIA_FOR, achGroup.text or GetAchievementLink(o.achievementID));
 								else
 									if key == "npcID" then key = "creatureID"; end
 									AttachTooltipSearchResults(tooltip, line, SearchForField, key, o[o.key]);
@@ -6888,22 +6897,6 @@ RowOnEnter = function (self)
 	-- Default top row line if nothing is generated from a link.
 	if tooltip:NumLines() < 1 then
 		tinsert(tooltipInfo, { left = reference.text });
-		-- if we have no tooltip info for this reference, we should show sources when it is within a popout (since there is otherwise)
-		-- no context to the reference
-		local isPopout = app.GetRelativeRawWithField(reference, "isPopout");
-		if isPopout then
-			app.AddSourceLinesForTooltip(tooltipInfo, refkey, reference[refkey])
-		end
-	end
-
-	-- achievement progress. If it has a measurable statistic, show it under the achievement description
-	if reference.achievementID then
-		if reference.statistic then
-			tinsert(tooltipInfo, {
-				left = L.PROGRESS,
-				right = reference.statistic,
-			});
-		end
 	end
 
 	local title = reference.title;
@@ -7019,14 +7012,6 @@ RowOnEnter = function (self)
 				right = GetMoneyString(reference.cost),
 			});
 		end
-	end
-
-	-- TODO: Convert this to an InformationType.
-	if reference.criteriaID and reference.achievementID and not (reference.parent and reference.parent.achievementID) then
-		tinsert(tooltipInfo, {
-			left = L.CRITERIA_FOR,
-			right = GetAchievementLink(reference.achievementID),
-		});
 	end
 
 	-- Additional information (search will insert this information if found in search)
