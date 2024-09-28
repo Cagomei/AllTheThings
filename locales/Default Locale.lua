@@ -555,8 +555,159 @@ local L = setmetatable({
 	UNSORTED_DESC_2 = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
 
 	-- Module Localizations
-	["PVP_RANK_DESCRIPTION"] = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
+	PVP_RANK_DESCRIPTION = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
 
+	EXPANSION_DATA = {
+		{	-- Classic
+			["icon"] = app.asset("Expansion_CLASSIC"),
+			["lore"] = "Four years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.",
+		},
+		{	-- The Burning Crusade
+			["icon"] = app.asset("Expansion_TBC"),
+			["lore"] = "The Burning Crusade is the first expansion. Its main features include an increase of the level cap up to 70, the introduction of the blood elves & the draenei as playable races, & the addition of the world of Outland, along with many new zones, dungeons, items, quests, & monsters.",
+		},
+		{	-- Wrath of the Lich King
+			["icon"] = app.asset("Expansion_WOTLK"),
+			["lore"] = "Wrath of the Lich King is the second expansion. The majority of the expansion content takes place in Northrend & centers around the plans of the Lich King. Content highlights include the increase of the level cap from 70 to 80, the introduction of the death knight Hero class, & new PvP/World PvP content.",
+		},
+		{	-- Cataclysm
+			["icon"] = app.asset("Expansion_CATA"),
+			["lore"] = "Cataclysm is the third expansion. Set primarily in a dramatically reforged Kalimdor & Eastern Kingdoms on the world of Azeroth, the expansion follows the return of Deathwing, who causes a new Sundering as he makes his cataclysmic re-entrance into the world from Deepholm. Cataclysm returns players to the two continents of Azeroth for most of their campaigning, opening new zones such as Mount Hyjal, the sunken world of Vashj'ir, Deepholm, Uldum and the Twilight Highlands. It includes two new playable races, the worgen & the goblins. The expansion increases level cap to 85, adds the ability to fly in Kalimdor & Eastern Kingdoms, introduces Archaeology & reforging, & restructures the world itself.",
+		},
+		{	-- Mists of Pandaria
+			["icon"] = app.asset("Expansion_MOP"),
+			["lore"] = "Mists of Pandaria is the fourth expansion. The expansion refocuses primarily on the war between the Alliance & Horde, in the wake of the accidental rediscovery of Pandaria. Adventurers rediscover the ancient pandaren people, whose wisdom will help guide them to new destinies; the Pandaren Empire's ancient enemy, the mantid; and their legendary oppressors, the enigmatic mogu. The land changes over time & the conflict between Varian Wrynn & Garrosh Hellscream escalates. As civil war wracks the Horde, the Alliance & forces in the Horde opposed to Hellscream's violent uprising join forces to take the battle directly to Hellscream & his Sha-touched allies in Orgrimmar.",
+		},
+		{	-- Warlords of Draenor
+			["icon"] = app.asset("Expansion_WOD"),
+			["lore"] = "Warlords of Draenor is the fifth expansion. Across Draenor's savage jungles & battle-scarred plains, Azeroth's heroes will engage in a mythic conflict involving mystical draenei champions & mighty orc clans, & cross axes with the likes of Grommash Hellscream, Blackhand, & Ner'zhul at the height of their primal power. Players will need to scour this unwelcoming land in search of allies to help build a desperate defense against the old Horde's formidable engine of conquest, or else watch their own world's bloody, war-torn history repeat itself.",
+		},
+		{	-- Legion
+			["icon"] = app.asset("Expansion_LEGION"),
+			["lore"] = "Legion is the sixth expansion. Gul'dan is expelled into Azeroth to reopen the Tomb of Sargeras & the gateway to Argus, commencing the third invasion of the Burning Legion. After the defeat at the Broken Shore, the defenders of Azeroth search for the Pillars of Creation, which were Azeroth's only hope for closing the massive demonic portal at the heart of the Tomb. However, the Broken Isles came with their own perils to overcome, from Xavius, to God-King Skovald, to the nightborne, & to Tidemistress Athissa. Khadgar moved Dalaran to the shores of this land, the city serves as a central hub for the heroes. The death knights of Acherus also took their floating necropolis to the Isles. The heroes of Azeroth sought out legendary artifact weapons to wield in battle, but also found unexpected allies in the form of the Illidari. Ongoing conflict between the Alliance & the Horde led to the formation of the class orders, with exceptional commanders putting aside faction to lead their classes in the fight against the Legion.",
+		},
+		{	-- Battle for Azeroth
+			["icon"] = app.asset("Expansion_BFA"),
+			["lore"] = "Battle for Azeroth is the seventh expansion. Azeroth paid a terrible price to end the apocalyptic march of the Legion's crusade—but even as the world's wounds are tended, it is the shattered trust between the Alliance and Horde that may prove the hardest to mend. In Battle for Azeroth, the fall of the Burning Legion sets off a series of disastrous incidents that reignites the conflict at the heart of the Warcraft saga. As a new age of warfare begins, Azeroth's heroes must set out on a journey to recruit new allies, race to claim the world's mightiest resources, and fight on several fronts to determine whether the Horde or Alliance will lead Azeroth into its uncertain future.",
+		},
+		{	-- Shadowlands
+			["icon"] = app.asset("Expansion_SL"),
+			["lore"] = "Shadowlands is the eighth expansion. What lies beyond the world you know? The Shadowlands, resting place for every mortal soul—virtuous or vile—that has ever lived.",
+		},
+		{	-- Dragonflight
+			["icon"] = app.asset("Expansion_DF"),
+			["lore"] = "Dragonflight is the ninth expansion. The dragonflights of Azeroth have returned, called upon to defend their ancestral home, the Dragon Isles. Surging with elemental magic and the life energies of Azeroth, the Isles are awakening once more, and it's up to you to explore their primordial wonder and discover long-forgotten secrets.",
+		},
+		{	-- The War Within
+			["icon"] = app.asset("Expansion_TWW"),
+			["lore"] = "The War Within is the tenth expansion for World of Warcraft and the beginning of the Worldsoul Saga. Journey through never-before-seen subterranean worlds filled with hidden wonders and lurking perils, down to the dark depths of the nerubian empire, where the malicious Harbinger of the Void is gathering arachnid forces to bring Azeroth to its knees.",
+		},
+		{	-- Midnight
+			["icon"] = app.asset("Expansion_MD"),
+			["lore"] = "Midnight is the eleventh expansion for World of Warcraft and the second installment of the Worldsoul Saga.",
+		},
+		{	-- The Last Titan
+			["icon"] = app.asset("Expansion_TLT"),
+			["lore"] = "The Last Titan is the twelfth expansion for World of Warcraft and the final installment of the Worldsoul Saga.",
+		},
+	};
+
+	-- Settings.lua
+	AFTER_REFRESH = "After Refresh";
+
+	-- General tab
+	-- Mode Title
+	MODE = "Mode";
+	TITLE_COMPLETIONIST = "Completionist ";
+	TITLE_UNIQUE_APPEARANCE = "Unique ";
+	TITLE_DEBUG = app.ccColors.Red .. "Debug|R ";
+	TITLE_ACCOUNT = app.ccColors.Account .. "Account|R ";
+	TITLE_ALLIANCE = app.ccColors.Alliance .. FACTION_ALLIANCE .. "|R";
+	TITLE_HORDE = app.ccColors.Horde .. FACTION_HORDE .. "|R";
+	TITLE_NEUTRAL = FACTION_NEUTRAL;
+	TITLE_MAIN_ONLY = " (Main Only)";
+	TITLE_NONE_THINGS = "None of the Things ";
+	TITLE_ONLY = " Only ";
+	TITLE_INSANE = app.ccColors.Insane .. "Insane|R ";
+	TITLE_SOME_THINGS = "Some of the Things ";
+	TITLE_LEVEL = "Level ";
+	TITLE_SOLO = "Solo ";
+	_BETA_LABEL = " |cff4AA7FF[Beta]|R";	-- unused
+
+	EXTRA_THINGS_LABEL = "Additional Resources";	-- unused
+
+	CLICK_TO_CREATE_FORMAT = "Click to Create %s";	
+	LOADING_FORMAT = "%s "..LFG_LIST_LOADING;	-- %s Loading...	-- unused
+	READY_FORMAT = "%s "..READY;	-- %s Ready	-- unused
+
+	-- Features tab
+	AUTO_BOUNTY_CHECKBOX = "Automatically Open the Bounty List";
+	AUTO_BOUNTY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
+	AUTO_MAIN_LIST_CHECKBOX = "Automatically Open the Main List";
+	AUTO_MAIN_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically open the Main List when you login.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\n\nShortcut Command: /att";
+	AUTO_MINI_LIST_CHECKBOX = "Automatically Open the Mini List";
+	AUTO_MINI_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones. Some people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List\n\nShortcut Command: /att mini";
+	FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX = "Filter Mini List for Timerunning";
+	FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP = "Enable this option to filter Timerunning content appropriately (only from the mini list) when playing on either a Retail or Timerunning Character.\n\nNOTE: This option will only be available during Timerunning events!";
+	AUTO_RAID_ASSISTANT_CHECKBOX = "Automatically Open the Raid Assistant";
+	AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP = "Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra";
+	AUTO_WQ_LIST_CHECKBOX = "Automatically Open the World Quests List";
+	AUTO_WQ_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq";
+	AUCTION_TAB_CHECKBOX = "Show the Auction House Module Tab";
+	AUCTION_TAB_CHECKBOX_TOOLTIP = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.";
+
+	-- Sync Window
+	ACCOUNT_MANAGEMENT = "Account Management";
+	ACCOUNT_MANAGEMENT_TOOLTIP = "This list shows you all of the functionality related to syncing account data.";
+	ADD_LINKED_CHARACTER_ACCOUNT = "Add Linked Character / Account";
+	ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Click here to link a character or account to your account.";
+	ADD_LINKED_POPUP = "Please type the name of the character or BNET account to link to.";
+	CHARACTERS = CHARACTER;	-- Character
+	SYNC_CHARACTERS_TOOLTIP = "This shows all of the characters on your account.";
+	NO_CHARACTERS_FOUND = "No characters found.";
+	LINKED_ACCOUNTS = "Linked Accounts";
+	LINKED_ACCOUNTS_TOOLTIP = "This shows all of the linked accounts you have defined so far.";
+	NO_LINKED_ACCOUNTS = "No linked accounts found.";
+	LINKED_ACCOUNT_TOOLTIP = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.";
+	DELETE_LINKED_CHARACTER = "Right Click to Delete this Linked Character";
+	DELETE_LINKED_ACCOUNT = "Right Click to Delete this Linked Account";
+	DELETE_CHARACTER = "Right Click to Delete this Character";
+	CONFIRM_DELETE = "\n \nAre you sure you want to delete this?";
+
+	-- Tooltip Text
+	SECRETS_HEADER = "Secrets";	-- unused
+	SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
+
+	-- Artifact Relic Completion
+	ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
+	ARTIFACT_RELIC_COMPLETION = "Artifact Relic Completion";
+	NOT_TRADEABLE = "Not Tradeable";
+	TRADEABLE = "Tradeable";
+
+	-- Keybind usage
+	ENABLED = "enabled";
+	DISABLED = "disabled";
+
+	-- Icons and Collection Text
+	SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Saved|r";	-- Acquired the colors and icon from CanIMogIt.
+	COST_ICON = "|T" .. app.asset("Currency") .. ":0|t";
+	COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cffdedade"..CURRENCY.."|r";
+	COLLECTED_WARBAND_ICON = "|T" .. app.asset("known_circle_yellow") .. ":0|t";
+	COLLECTED_WARBAND = "|T" .. app.asset("known_circle_yellow") .. ":0|t |cfff0e341Future Warband Collected|r";
+	UPGRADE_ICON = "|T" .. app.asset("Interface_Upgrade") .. ":0|t";
+	UPGRADE_TEXT = "|T" .. app.asset("Interface_Upgrade") .. ":0|t |cff62e37e"..UPGRADE.."|r";
+	REAGENT_ICON = "|T" .. app.asset("Interface_Reagent") .. ":0|t";
+	REAGENT_TEXT = "|T" .. app.asset("Interface_Reagent") .. ":0|t |cffdedade"..GetItemClassInfo(5).."|r";
+
+	-- Unobtainable Listing (for fellow 100%s out there)
+	UNOBTAINABLE_ITEM_TEXTURES = {
+		[0] = "Interface\\FriendsFrame\\StatusIcon-Offline",	-- Available, but not due to Current Character filters
+		app.asset("status-unobtainable"),
+		app.asset("status-prerequisites"),
+		"",									-- 3, we want no icon for these
+		app.asset("status-seasonal-unavailable"),	-- Seasonal unavailable
+		app.asset("status-seasonal-available"),	-- Seasonal available
+	};
 
 	-- Crieve tested all professions in non-english locales and the following skills were not detected without these.
 	SPELL_NAME_TO_SPELL_ID = {
@@ -569,6 +720,7 @@ local L = setmetatable({
 		["Верховая езда"] = 33388,
 		["탈것 타기"] = 33388,
 		["骑术"] = 33388,
+		["騎術"] = 33388,
 
 		-- Herb Gathering
 		-- The skill name is "Herbalism", not "Herb Gathering"
