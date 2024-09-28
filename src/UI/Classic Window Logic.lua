@@ -6,7 +6,6 @@ local AssignChildren, CloneClassInstance, CloneReference
 local IsQuestFlaggedCompleted, IsQuestReadyForTurnIn = app.IsQuestFlaggedCompleted, app.IsQuestReadyForTurnIn;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local GetDeepestRelativeValue = app.GetDeepestRelativeValue;
-local GetCompletionIcon = app.GetCompletionIcon;
 local GetProgressTextForRow = app.GetProgressTextForRow;
 local GetRelativeValue = app.GetRelativeValue;
 local ResolveSymbolicLink = app.ResolveSymbolicLink;
@@ -892,14 +891,7 @@ local function RowOnEnter(self)
 	end
 	
 	-- Show Breadcrumb information
-	if reference.isBreadcrumb then tinsert(tooltipInfo, { left = "This is a breadcrumb quest." }); end
-	if reference.repeatable then
-		if reference.isDaily then tinsert(tooltipInfo, { left = "This can be completed daily." });
-		elseif reference.isWeekly then tinsert(tooltipInfo, { left = "This can be completed weekly." });
-		elseif reference.isMontly then tinsert(tooltipInfo, { left = "This can be completed monthly." });
-		elseif reference.isYearly then tinsert(tooltipInfo, { left = "This can be completed yearly." });
-		else tinsert(tooltipInfo, { left = "This can be completed multiple times.", wrap = true }); end
-	end
+	if reference.isBreadcrumb then tinsert(tooltipInfo, { left = "This is a breadcrumb quest.", color = app.Colors.Breadcrumb }); end
 
 	-- Show Quest Prereqs
 	local isDebugMode = app.MODE_DEBUG;
@@ -947,7 +939,7 @@ local function RowOnEnter(self)
 				if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
 				tinsert(tooltipInfo, {
 					left = text,
-					right = GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)),
+					right = app.GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)),
 				});
 			end
 		end
@@ -962,7 +954,7 @@ local function RowOnEnter(self)
 				if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
 				tinsert(tooltipInfo, {
 					left = text,
-					right = GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)),
+					right = app.GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)),
 				});
 			end
 		end
@@ -1000,7 +992,7 @@ local function RowOnEnter(self)
 				if prereq.isGuild then text = text .. " (" .. GUILD .. ")"; end
 				tinsert(tooltipInfo, {
 					left = text,
-					right = GetCompletionIcon(prereq.collected),
+					right = app.GetCompletionIcon(prereq.collected),
 				});
 			end
 		end

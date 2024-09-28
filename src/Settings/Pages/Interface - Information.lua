@@ -19,14 +19,6 @@ local IsQuestFlaggedCompletedOnAccount = app.WOWAPI.IsQuestFlaggedCompletedOnAcc
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage("Information", L.INTERFACE_PAGE)
 
--- Column 1
-local headerAdditionalInformation = child:CreateHeaderLabel(L.ADDITIONAL_LABEL)
-if child.separator then
-	headerAdditionalInformation:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
-else
-	headerAdditionalInformation:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-end
-
 -- Conversion Methods for specific formats for a given Information Type.
 local function GetCoordString(x, y)
 	return GetNumberWithZeros(app.round(x, 1), 1) .. ", " .. GetNumberWithZeros(app.round(y, 1), 1);
@@ -922,6 +914,16 @@ local InformationTypes = {
 	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001, ShouldDisplayInExternalTooltips = false, }),
 
 	-- Summary Information Types
+	CreateInformationType("Repeatables", { text = "Repeatables", priority = 10999, ShouldDisplayInExternalTooltips = false,
+		Process = function(t, reference, tooltipInfo)
+			if reference.isWorldQuest then tinsert(tooltipInfo, { left = L.DURING_WQ_ONLY }); end
+			if reference.isDaily then tinsert(tooltipInfo, { left = L.COMPLETED_DAILY });
+			elseif reference.isWeekly then tinsert(tooltipInfo, { left = L.COMPLETED_WEEKLY });
+			elseif reference.isMonthly then tinsert(tooltipInfo, { left = L.COMPLETED_MONTHLY });
+			elseif reference.isYearly then tinsert(tooltipInfo, { left = L.COMPLETED_YEARLY });
+			elseif reference.repeatable then tinsert(tooltipInfo, { left = L.COMPLETED_MULTIPLE }); end
+		end,
+	}),
 	CreateInformationType("CompletedBy", { text = L.COMPLETED_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForCompletedBy });
 	CreateInformationType("KnownBy", { text = L.KNOWN_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForKnownBy });
 	CreateInformationType("extraInfo", { text = "extraInfo", priority = 2.51, HideCheckBox = true, ForceActive = true,
@@ -1087,22 +1089,35 @@ settings.RefreshActiveInformationTypes = function()
 	RefreshActiveInformationTypes();
 
 	local last
-	local split1 = math.ceil(#SortedInformationTypesByName / 3)
-	local split2 = 2 * split1
+	local totalTypes = #SortedInformationTypesByName;
+	local perRow, offset, scale = 24, 250, 0.8;
+	if totalTypes > 75 then
+		offset = 225;
+		scale = 0.7;
+		perRow = 28;
+	end
+	local split1 = perRow
+	local split2 = perRow * 2;
+	local split3 = perRow * 3;
 	for idNo,informationType in ipairs(SortedInformationTypesByName) do
 		local filter = child:CreateCheckBox(informationType.text, OnRefreshForInformationCheckBox, OnClickForInformationCheckBox)
 		filter.informationTypeID = informationType.informationTypeID;
+		filter:SetScale(scale);
 		-- Column 1
 		if idNo == 1 then
-			filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", -2, 0)
+			filter:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 0, 0)
 		-- Column 2
 		elseif idNo > split1 then
-			filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 212, 0)
+			filter:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", offset, 0)
 			split1 = 999
 		-- Column 3
-		elseif idNo >= split2 then
-			filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 425, 0)
+		elseif idNo > split2 then
+			filter:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", offset * 2, 0)
 			split2 = 999
+		-- Column 4
+		elseif idNo > split3 then
+			filter:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", offset * 3, 0)
+			split3 = 999
 		else
 			filter:AlignBelow(last)
 		end

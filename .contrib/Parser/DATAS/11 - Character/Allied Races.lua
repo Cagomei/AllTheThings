@@ -163,7 +163,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			["sourceQuests"] = { 79200 },	-- Who am I?
 			["provider"] = { "n", 221891 },	-- Foreman Uzjax
 			["coord"] = { 62.6, 49.2, 2322 },	-- Hall of Awakening
-			["classes"] = exclude({ HUNTER }, ALL_CLASSES), --TODO: Exclude classes Earthen can't play, this filter still displays things like Demon Hunter and Evoker.
+			["classes"] = exclude({ HUNTER }, EARTHEN_CLASSES),
 			["g"] = {
 				-- bag
 				i(222982),	-- Earthen Satchel
@@ -1435,7 +1435,10 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			-- Zandalari Troll Starter Quests
 			q(55137, {	-- For the Horde
 				["provider"] = { "n", 146335 },	--  Queen Talanji
-				["coord"] = { 42.2, 9.4, DAZARALOR },
+				["coords"] = {
+					{ 42.2, 9.4, DAZARALOR },
+					{ 49.9, 46.6, DAZARALOR },
+				},
 				["races"] = { ZANDALARI },
 				["lvl"] = 20,
 				["g"] = {
