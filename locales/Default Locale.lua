@@ -7,6 +7,7 @@ local appName, app = ...;
 
 -- WoW API Cache
 local GetSpellName = app.WOWAPI.GetSpellName;
+local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 
 local L = setmetatable({
 	-- General Text

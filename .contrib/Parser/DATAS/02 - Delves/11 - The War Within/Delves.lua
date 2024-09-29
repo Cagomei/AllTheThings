@@ -296,7 +296,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 		}),
 		q(81595, {	-- Seasonal Start
-			["sourceQuests"] = { 81510 },	-- Ship It!
+			["sourceQuests"] = {
+				81510,	-- Ship It!
+				84365,	-- Something on the Horizon
+			},
+			["sourceQuestNumRequired"] = 1,
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 		}),
@@ -1338,6 +1342,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		n(CURIO, {	-- TODO: Might be that Curio Belongs to Specific Delves... Have to check // Braghe
 			["sharedDescription"] = "To collect a Curio, it must be selected on Brann prior to an ATT Force Refresh",
 			["g"] = {
+				--[[
+				-- Due to Blizzard tracking of Spells, it's weird to try and collect all Ranks of Curios since we would need extra
+				-- logic handling just to 'fake' collect SpellIDs which are never actually permanently learned by the character/account
 				n(RANK_ONE, {
 					i(225903, {	-- Amorphous Relic [Rank 1]
 						["bonusID"] = 11265,
@@ -1470,6 +1477,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 						["bonusID"] = 11247,
 					}),
 				}),
+				--]]
 				n(RANK_FOUR, {
 					i(225903, {	-- Amorphous Relic [Rank 4]
 						["bonusID"] = 11268,
@@ -1545,6 +1553,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			--
 			i(228560),	-- Ancient Curio (QI!/QS!)
 			i(228581),	-- Ancient Curio (QI!/QS!)
+			--
+			currency(2803),	-- Undercoin
 		}),
 		filter(RECIPES, {
 			i(223085),	-- Design: Fractured Gemstone Locket (RECIPE!)
