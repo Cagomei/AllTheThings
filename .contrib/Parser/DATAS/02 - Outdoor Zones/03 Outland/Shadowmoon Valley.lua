@@ -423,10 +423,18 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(31380),	-- Acrobat's Mark of the Sha'tar
 							i(31381),	-- Aggressor's Mark of the Sha'tar
-							i(31404),	-- Green Trophy Tabard of the Illidari
 							i(31382),	-- Mage's Mark of the Sha'tar
-							i(31405),	-- Purple Trophy Tabard of the Illidari
 							i(31383),	-- Spiritualist's Mark of the Sha'tar
+							-- #if AFTER 7.0.3
+							-- CRIEVE NOTE: With 7.0.3 the offering container is no longer a reward, you get the tabards directly.
+							i(31404),	-- Green Trophy Tabard of the Illidari
+							i(31405),	-- Purple Trophy Tabard of the Illidari
+							-- #else
+							i(31408, {	-- Offering of the Sha'tar
+								i(31404),	-- Green Trophy Tabard of the Illidari
+								i(31405),	-- Purple Trophy Tabard of the Illidari
+							}),
+							-- #endif
 						},
 					}),
 					q(10562, {	-- Besieged! (A)
@@ -484,7 +492,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10774, {	-- Blood Elf + Giant = ???
-						["qg"] = 22059,	-- Wildhammer Gryphon Rider
+						["providers"] = {
+							{ "n", 22059 },	-- Wildhammer Gryphon Rider
+							{ "i", 31310 },	-- Wildhammer Flare Gun (Provided)
+						},
 						["sourceQuest"] = 10773,	-- Breaching the Path
 						["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["races"] = ALLIANCE_ONLY,
@@ -518,7 +529,10 @@ root(ROOTS.Zones, {
 						["minReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					})),
 					q(10773, {	-- Breaching the Path (A)
-						["qg"] = 22059,	-- Wildhammer Gryphon Rider
+						["providers"] = {
+							{ "n", 22059 },	-- Wildhammer Gryphon Rider
+							{ "i", 31310 },	-- Wildhammer Flare Gun (Provided)
+						},
 						["sourceQuest"] = 10772,	-- The Path of Conquest (A)
 						["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["races"] = ALLIANCE_ONLY,
@@ -536,8 +550,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10751, {	-- Breaching the Path (H)
-						["qg"] = 21998,	-- Kor'kron Wind Rider
+						["providers"] = {
+							{ "n", 21998 },	-- Kor'kron Wind Rider
+							{ "i", 31108 },	-- Kor'kron Flare Gun (Provided)
+						},
 						["sourceQuest"] = 10750,	-- The Path of Conquest (H)
+						["description"] = "Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["races"] = HORDE_ONLY,
 					}),
 					q(10586, {	-- Bring Down the Warbringer! (A)
@@ -634,7 +652,10 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					})),
 					q(10776, {	-- Dissension Amongst the Ranks... (A)
-						["qg"] = 22059,	-- Wildhammer Gryphon Rider
+						["providers"] = {
+							{ "n", 22059 },	-- Wildhammer Gryphon Rider
+							{ "i", 31310 },	-- Wildhammer Flare Gun (Provided)
+						},
 						["sourceQuest"] = 10775,	-- Tabards of the Illidari (A)
 						["coord"] = { 52.4, 68.4, SHADOWMOON_VALLEY },
 						["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
@@ -658,7 +679,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10769, {	-- Dissension Amongst the Ranks... (H)
-						["qg"] = 21998,	-- Kor'kron Wind Rider
+						["providers"] = {
+							{ "n", 21998 },	-- Kor'kron Wind Rider
+							{ "i", 31108 },	-- Kor'kron Flare Gun (Provided)
+						},
 						["sourceQuest"] = 10768,	-- Tabards of the Illidari (H)
 						["description"] = "Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["races"] = HORDE_ONLY,
@@ -1348,7 +1372,10 @@ root(ROOTS.Zones, {
 						["cost"] = { { "i", 30810, 10 } },	-- Sunfury Signet
 					}),
 					q(10775, {	-- Tabards of the Illidari (A)
-						["qg"] = 22059,	-- Wildhammer Gryphon Rider
+						["providers"] = {
+							{ "n", 22059 },	-- Wildhammer Gryphon Rider
+							{ "i", 31310 },	-- Wildhammer Flare Gun (Provided)
+						},
 						["sourceQuest"] = 10774,	-- Blood Elf + Giant = ???
 						["coord"] = { 52.4, 68.4, SHADOWMOON_VALLEY },
 						["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
@@ -1369,8 +1396,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10768, {	-- Tabards of the Illidari (H)
-						["qg"] = 21998,	-- Kor'kron Wind Rider
+						["providers"] = {
+							{ "n", 21998 },	-- Kor'kron Wind Rider
+							{ "i", 31108 },	-- Kor'kron Flare Gun (Provided)
+						},
 						["sourceQuest"] = 10765,	-- When Worlds Collide
+						["description"] = "Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["races"] = HORDE_ONLY,
 					}),
 					q(10568, {	-- Tablets of Baa'ri (Aldor)
@@ -1718,6 +1749,13 @@ root(ROOTS.Zones, {
 						["qg"] = 21769,	-- Overlord Or'barokh
 						["coord"] = { 28.4, 26.4, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
+						["lvl"] = lvlsquish(67, 67, 25),
+						["groups"] = {
+							objective(1, {	-- The Path of Conquest Discovered
+								["provider"] = { "i", 31108 },	-- Kor'kron Flare Gun (Provided)
+								["coord"] = { 51, 62, SHADOWMOON_VALLEY },
+							}),
+						},
 					}),
 					q(10778, {	-- The Rod of Lianthe
 						["qg"] = 22024,	-- Parshah
@@ -1944,8 +1982,12 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(10765, {	-- When Worlds Collide...
-						["qg"] = 21998,	-- Kor'kron Wind Rider
+						["providers"] = {
+							{ "n", 21998 },	-- Kor'kron Wind Rider
+							{ "i", 31108 },	-- Kor'kron Flare Gun (Provided)
+						},
 						["sourceQuest"] = 10751,	-- Breaching the Path (H)
+						["description"] = "Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["races"] = HORDE_ONLY,
 					}),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11019, {	-- Your Friend On The Inside

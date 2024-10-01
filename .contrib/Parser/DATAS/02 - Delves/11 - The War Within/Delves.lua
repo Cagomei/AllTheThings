@@ -1952,15 +1952,19 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(82943),	-- The Underkeep
 		q(82945),	-- The Waterworks
 		-- One time rep bonus from Bountiful Delves
-		q(83317), 	-- Council of Dornogal
-		q(83318), 	-- Assembly of the Deeps
-		q(83319), 	-- Severed Threads
+		q(83317),	-- Council of Dornogal
+		q(83318),	-- Assembly of the Deeps
+		q(83319),	-- Severed Threads
 		q(83320),	-- Hallowfall Arathi
 		-- Restored Coffer Key (Pop from any weekly activity, orders (of activity) doesn't matter)
 		q(84736, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 1st
 		q(84737, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 2nd
 		q(84738, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 3rd
 		q(84739, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 4th
+		-- Restored Coffer Key (from vendor, weekly?, account wide - locked for other characters after you buy them once)
+		q(85743),	-- itemID 232496 (Restored Coffer Key)
+		q(85746),	-- itemID 232497 (Restored Coffer Key)
+		q(85747),	-- itemID 232498 (Restored Coffer Key)
 		-- Seasonal Rewards
 		q(83235),	-- Airship: Wings 05 - Lantern Wing (spellID 454473)
 		q(83236),	-- Airship: Top 03 - Zeppelin (spellID 454476)
@@ -1971,7 +1975,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84816),	-- Zekvir pop in Earthcrawl Mines (first time, unsure what tier it was)
 		q(84817),	-- Zekvir pop in Mycomancer Cavern (unsure, Tier 9)
 		q(84818),	-- Zekvir pop in The Spiral Weave (2nd time in week, Tier 8)
-		q(84819),	-- Zekvir pop in Skittering Breach (2nd time in week, Tier 8)
+		q(84819),	-- Zekvir pop in Skittering Breach (2nd time in week, Tier 8), also in Nightfall Sanctum (unsure, Tier 3)
 		q(85757),	-- Triggered when looting second chest after defeating Zekvir solo on ? difficulty
 	}),
 })));

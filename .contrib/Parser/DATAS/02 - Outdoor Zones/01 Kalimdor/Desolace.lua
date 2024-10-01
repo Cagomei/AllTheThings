@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					pet(480, {	-- Topaz Shale Hatchling (PET!)
 						["description"] = "The biggest concentration can be found in Desolace, the orange section of open world Maraudon. Can also be found in Deepholm around Therazane's Throne, beneath Silvermarsh, as well as inside Fungal Deep.",
-						["coord"] = {
+						["coords"] = {
 							{ 26.8, 43.5, DESOLACE }, -- Maraudon entrance
 							{ 69.4, 68.2, DEEPHOLM }, -- Cavern beneath Silvermarsh
 							{ 68.65, 28.5, DEEPHOLM }, -- Fungal Deep cavern entrance
@@ -2093,7 +2093,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								4705,	-- Burning Blade Invoker
 							},
 						}),
-						objective(2, {	-- 	Find someone who can tell you about the hammer
+						objective(2, {	-- Find someone who can tell you about the hammer
 							["provider"] = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
 							["coord"] = { 37.8, 31.6, STORMWIND_CITY },
 						}),
