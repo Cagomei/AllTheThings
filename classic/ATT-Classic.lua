@@ -49,8 +49,6 @@ local GetAchievementNumCriteria = _G["GetAchievementNumCriteria"];
 local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
 local GetAchievementCriteriaInfoByID = _G["GetAchievementCriteriaInfoByID"];
 local GetCategoryInfo = _G["GetCategoryInfo"];
----@diagnostic disable-next-line: deprecated
-local GetItemCount = _G["GetItemCount"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown =
 	  IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown;
@@ -61,6 +59,7 @@ local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
+local GetItemCount = app.WOWAPI.GetItemCount;
 local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
 local GetSpellCooldown = app.WOWAPI.GetSpellCooldown;
 local GetSpellLink = app.WOWAPI.GetSpellLink;
@@ -81,101 +80,6 @@ local RGBToHex = app.Modules.Color.RGBToHex;
 -- WoW API Cache
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
-
--- Helper Functions
-app.AddEventHandler("OnThingCollected", function() app.Audio:PlayFanfare(); end);
-local pendingCollection, pendingRemovals, retrievingCollection, pendingCollectionCooldown = {},{},{},0;
-local function PendingCollectionCoroutine()
-	while not app.IsReady do coroutine.yield(); end
-	while pendingCollectionCooldown > 0 do
-		pendingCollectionCooldown = pendingCollectionCooldown - 1;
-		coroutine.yield();
-
-		-- If any of the collection objects is retrieving data, try again.
-		local anyRetrieving = false;
-		for hash,thing in pairs(retrievingCollection) do
-			local retries = thing[1];
-			if retries > 0 then
-				retries = retries - 1;
-				thing[1] = retries;
-				if IsRetrieving(thing[2].text) then
-					retrievingCollection[hash] = nil;
-					anyRetrieving = true;
-				end
-			end
-		end
-		if anyRetrieving then
-			pendingCollectionCooldown = pendingCollectionCooldown + 1;
-		end
-	end
-
-	-- Report new things to your collection!
-	local any,allTypes = false,{};
-	local reportCollected = app.Settings:GetTooltipSetting("Report:Collected");
-	for hash,t in pairs(pendingCollection) do
-		local f = t.f;
-		if f then allTypes[f] = true; end
-		if reportCollected then
-			print((t.text or RETRIEVING_DATA) .. " was added to your collection!");
-		end
-		any = true;
-	end
-	if any then
-		wipe(pendingCollection);
-
-		-- Check if there was a mount.
-		if allTypes[app.FilterConstants.MOUNTS] then
-			app.Audio:PlayMountFanfare();
-		else
-			app.Audio:PlayFanfare();
-		end
-	end
-
-	-- Report removed things from your collection...
-	any = false;
-	for hash,t in pairs(pendingRemovals) do
-		if reportCollected then
-			print((t.text or RETRIEVING_DATA) .. " was removed from your collection!");
-		end
-		any = true;
-	end
-	if any then
-		wipe(pendingRemovals);
-		app.Audio:PlayRemoveSound();
-	end
-end
-local function AddToCollection(group)
-	if not group then return; end
-	local hash = group.hash;
-	if IsRetrieving(group.text) then
-		retrievingCollection[hash] = { 5, group };
-	end
-
-	-- Do not add the item to the pending list if it was already in it.
-	if pendingRemovals[hash] then
-		pendingRemovals[hash] = nil;
-	else
-		pendingCollection[hash] = group;
-		pendingCollectionCooldown = 10;
-		app:StartATTCoroutine("Pending Collection", PendingCollectionCoroutine);
-	end
-end
-local function RemoveFromCollection(group)
-	if not group then return; end
-	local hash = group.hash;
-	if IsRetrieving(group.text) then
-		retrievingCollection[hash] = { 5, group };
-	end
-
-	-- Do not add the item to the pending list if it was already in it.
-	if pendingCollection[hash] then
-		pendingCollection[hash] = nil;
-	else
-		pendingRemovals[hash] = group;
-		pendingCollectionCooldown = 10;
-		app:StartATTCoroutine("Pending Collection", PendingCollectionCoroutine);
-	end
-end
 
 -- Data Lib
 local AllTheThingsAD = {};			-- For account-wide data.
@@ -838,26 +742,6 @@ local function BuildReagentInfo(groups, entries, paramA, paramB, indent, layer)
 	end
 end
 
--- Search Caching
-local searchCache, working = {}, nil;
-app.GetCachedData = function(cacheKey, method, ...)
-	if IsRetrieving(cacheKey) then return; end
-	local cache = searchCache[cacheKey];
-	if not cache then
-		cache, working = method(...);
-		if not working then
-			-- Only cache if the tooltip if no additional work is needed.
-			searchCache[cacheKey] = cache;
-		end
-		return cache, working;
-	end
-	return cache;
-end
-app.WipeSearchCache = function()
-	wipe(searchCache);
-end
-app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
-
 local InitialCachedSearch;
 local IsQuestReadyForTurnIn = app.IsQuestReadyForTurnIn;
 local SourceLocationSettingsKey = setmetatable({
@@ -1004,7 +888,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB, group)
 			if #listing > 0 then
 				tooltipInfo.hasSourceLocations = true;
 				for _,text in ipairs(listing) do
-					if not working and IsRetrieving(text) then working = true; end
+					if not group.working and IsRetrieving(text) then group.working = true; end
 					local left, right = DESCRIPTION_SEPARATOR:split(text);
 					tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
 				end
@@ -1064,7 +948,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Determine if this tooltip needs more work the next time it refreshes.
-	local working, tooltipInfo, mostAccessibleSource = false, {}, nil;
+	local tooltipInfo, mostAccessibleSource = {}, nil;
 
 	-- Call to the method to search the database.
 	local group, a, b = method(paramA, paramB);
@@ -1372,7 +1256,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		-- Add various extra field info if enabled in settings
 		group.itemString = itemString
 		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group);
-		if group.working then working = true; end
 	end
 
 
@@ -1388,7 +1271,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				if #entries < 25 then
 					for i,item in ipairs(entries) do
 						left = item.group.text or RETRIEVING_DATA;
-						if IsRetrieving(left) then working = true; end
+						if not group.working and IsRetrieving(left) then group.working = true; end
 						local mapID = app.GetBestMapForGroup(item.group, currentMapID);
 						if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 						if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
@@ -1398,7 +1281,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 					for i=1,math.min(25, #entries) do
 						local item = entries[i];
 						left = item.group.text or RETRIEVING_DATA;
-						if IsRetrieving(left) then working = true; end
+						if not group.working and IsRetrieving(left) then group.working = true; end
 						local mapID = app.GetBestMapForGroup(item.group, currentMapID);
 						if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 						if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
@@ -1444,7 +1327,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 								end);
 								for i,item in ipairs(entries) do
 									left = item.group.text or RETRIEVING_DATA;
-									if IsRetrieving(left) then working = true; end
+									if not group.working and IsRetrieving(left) then group.working = true; end
 									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 								end
@@ -1452,7 +1335,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 								for i=1,math.min(25, #entries) do
 									local item = entries[i];
 									left = item.group.text or RETRIEVING_DATA;
-									if IsRetrieving(left) then working = true; end
+									if not group.working and IsRetrieving(left) then group.working = true; end
 									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 								end
@@ -1490,7 +1373,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 							if #entries < 25 then
 								for i,item in ipairs(entries) do
 									left = item.group.craftText or item.group.text or RETRIEVING_DATA;
-									if IsRetrieving(left) then working = true; end
+									if not group.working and IsRetrieving(left) then group.working = true; end
 									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 								end
@@ -1498,7 +1381,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 								for i=1,math.min(25, #entries) do
 									local item = entries[i];
 									left = item.group.craftText or item.group.text or RETRIEVING_DATA;
-									if IsRetrieving(left) then working = true; end
+									if not group.working and IsRetrieving(left) then group.working = true; end
 									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 								end
@@ -1522,7 +1405,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 
 	-- Cache the result depending on if there is more work to be done.
 	if isTopLevelSearch then InitialCachedSearch = nil; end
-	return group, working;
+	return group, group.working;
 end
 app.GetCachedSearchResults = function(method, paramA, paramB, ...)
 	return app.GetCachedData((paramB and table.concat({ paramA, paramB, ...}, ":")) or paramA, GetSearchResults, method, paramA, paramB, ...);
@@ -3911,7 +3794,7 @@ end;
 recipeFields.collected = function(t)
 	if app.CurrentCharacter.Spells[t.spellID] then return 1; end
 	local isKnown = not t.nmc and app.IsSpellKnown(t.spellID, t.rank, GetRelativeValue(t, "requireSkill") == 261);
-	return app.SetCollectedForSubType(t, "Spells", "Recipes", t.spellID, isKnown);
+	return app.SetCollected(t, "Spells", t.spellID, isKnown);
 end;
 recipeFields.f = function(t)
 	return app.FilterConstants.RECIPES;
@@ -3962,7 +3845,7 @@ local SetBattlePetCollected = function(t, speciesID, collected)
 	return app.SetCollected(t, "BattlePets", speciesID, collected);
 end
 local SetMountCollected = function(t, spellID, collected)
-	return app.SetCollectedForSubType(t, "Spells", "Mounts", spellID, collected);
+	return app.SetCollected(t, "Spells", spellID, collected);
 end
 local speciesFields = {
 	["f"] = function(t)
@@ -4062,7 +3945,7 @@ if C_PetJournal and app.GameBuildVersion > 30000 then
 	if C_MountJournal then
 		-- Once the Mount Journal API is available, then all mounts become account wide.
 		SetMountCollected = function(t, spellID, collected)
-			return app.SetAccountCollectedForSubType(t, "Spells", "Mounts", spellID, collected);
+			return app.SetAccountCollected(t, "Spells", spellID, collected);
 		end
 		local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
 			local allMountIDs = C_MountJournal.GetMountIDs();
@@ -4285,18 +4168,6 @@ local ADDON_LOADED_HANDLERS = {
 		if not currentCharacter.Transmog then currentCharacter.Transmog = {}; end
 
 		-- Update timestamps.
-		local now = time();
-		local timeStamps = currentCharacter.TimeStamps;
-		if not timeStamps then
-			timeStamps = {};
-			currentCharacter.TimeStamps = timeStamps;
-		end
-		for key,value in pairs(currentCharacter) do
-			if type(value) == "table" and not timeStamps[key] then
-				timeStamps[key] = now;
-			end
-		end
-		currentCharacter.lastPlayed = now;
 		app.CurrentCharacter = currentCharacter;
 		app.AddEventHandler("OnPlayerLevelUp", function()
 			currentCharacter.lvl = app.Level;
@@ -4322,154 +4193,6 @@ local ADDON_LOADED_HANDLERS = {
 
 		-- Account Wide Settings
 		local accountWideSettings = app.Settings.AccountWide;
-		local function IsCached(field, id)
-			return currentCharacter[field][id] or nil
-		end
-		local function IsAccountCached(field, id)
-			return accountWideData[field][id] or nil
-		end
-		local function SetAccountCollected(t, field, id, collected)
-			local container = accountWideData[field];
-			local oldstate = container[id];
-			if collected then
-				if not oldstate then
-					local now = time();
-					timeStamps[field] = now;
-					currentCharacter.lastPlayed = now;
-					AddToCollection(t);
-					container[id] = 1;
-				end
-				return 1;
-			elseif oldstate then
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
-				RemoveFromCollection(t);
-				container[id] = nil;
-			end
-		end
-		local function SetAccountCollectedForSubType(t, field, subtype, id, collected)
-			local container = accountWideData[field];
-			local oldstate = container[id];
-			if collected then
-				if not oldstate then
-					local now = time();
-					timeStamps[field] = now;
-					currentCharacter.lastPlayed = now;
-					AddToCollection(t);
-					container[id] = 1;
-				end
-				return 1;
-			elseif oldstate then
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
-				RemoveFromCollection(t);
-				container[id] = nil;
-			end
-		end
-		local function SetCollected(t, field, id, collected)
-			local container = currentCharacter[field];
-			local oldstate = container[id];
-			if collected then
-				if not oldstate then
-					if t and not (accountWideSettings[field] and accountWideData[field][id]) then
-						--print("SetCollected", field, id, accountWideSettings[field], accountWideData[field][id]);
-						AddToCollection(t);
-					end
-					container[id] = 1;
-					accountWideData[field][id] = 1;
-					local now = time();
-					timeStamps[field] = now;
-					currentCharacter.lastPlayed = now;
-				else
-					accountWideData[field][id] = 1;
-				end
-				return 1;
-			elseif oldstate then
-				container[id] = nil;
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
-				for guid,other in pairs(characterData) do
-					local otherContainer = other[field];
-					if otherContainer and otherContainer[id] then
-						accountWideData[field][id] = 1;
-						return accountWideSettings[field] and 2;
-					end
-				end
-				if accountWideData[field][id] then
-					RemoveFromCollection(t);
-					accountWideData[field][id] = nil;
-				end
-			elseif accountWideSettings[field] and accountWideData[field][id] then
-				return 2;
-			end
-		end
-		local function SetCollectedForSubType(t, field, subtype, id, collected)
-			local container = currentCharacter[field];
-			local oldstate = container[id];
-			if collected then
-				if not oldstate then
-					if t and not (accountWideSettings[subtype] and accountWideData[field][id]) then
-						--print("SetCollectedForSubType", field, subtype, id, accountWideSettings[subtype], accountWideData[field][id]);
-						AddToCollection(t);
-					end
-					container[id] = 1;
-					accountWideData[field][id] = 1;
-					local now = time();
-					timeStamps[field] = now;
-					currentCharacter.lastPlayed = now;
-				else
-					accountWideData[field][id] = 1;
-				end
-				return 1;
-			elseif oldstate then
-				container[id] = nil;
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
-				for guid,other in pairs(characterData) do
-					local otherContainer = other[field];
-					if otherContainer and otherContainer[id] then
-						accountWideData[field][id] = 1;
-						return accountWideSettings[subtype] and 2;
-					end
-				end
-				if accountWideData[field][id] then
-					RemoveFromCollection(t);
-					accountWideData[field][id] = nil;
-				end
-			elseif accountWideSettings[subtype] and accountWideData[field][id] then
-				return 2;
-			end
-		end
-		-- Allows directly saving a cached state for a table of ids for a given field at the Account level
-		-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
-		local function SetBatchAccountCached(field, ids, state)
-			-- app.PrintDebug("SBAC:A",field,state)
-			local container = accountWideData[field]
-			for id,_ in pairs(ids) do
-				container[id] = state
-			end
-		end
-		-- Allows directly saving a cached state for a table of ids for a given field.
-		-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
-		local function SetBatchCached(field, ids, state)
-			-- app.PrintDebug("SBC",field,state)
-			local container = currentCharacter[field]
-			for id,_ in pairs(ids) do
-				container[id] = state
-			end
-		end
-		app.IsCached = IsCached;
-		app.IsAccountCached = IsAccountCached;
-		app.SetAccountCollected = SetAccountCollected;
-		app.SetAccountCollectedForSubType = SetAccountCollectedForSubType;
-		app.SetCollected = SetCollected;
-		app.SetCollectedForSubType = SetCollectedForSubType;
-		app.SetBatchAccountCached = SetBatchAccountCached;
-		app.SetBatchCached = SetBatchCached;
 
 		-- Notify Event Handlers that Saved Variable Data is available.
 		app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, accountWideSettings);
@@ -4524,9 +4247,6 @@ app.events.ADDON_LOADED = function(addonName)
 end
 
 app.AddEventHandler("OnStartupDone", function()
-	-- Prepare the Sound Pack!
-	app.Audio:ReloadSoundPack();
-
 	-- Execute the OnReady handlers.
 	app.HandleEvent("OnReady");
 

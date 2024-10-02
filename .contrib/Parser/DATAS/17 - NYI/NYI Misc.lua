@@ -1427,7 +1427,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 10.2.0
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
-			i(208878),	-- Adventurer's Footlocker
 			i(208692),	-- Ancient Roottwined Tome
 			i(210441),	-- Behemoth's Feather
 			i(208840),	-- Concentrated Sophic Vellum
@@ -1695,7 +1694,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(219694),	-- Trophy Uncommon Fish C
 			i(219695),	-- Trophy Uncoomon Fish D
 			i(223316),	-- Trusty Hat
-			i(220770),	-- Void-Scarred Stormhammer
 			i(228495),	-- Well-Used Potter's Wheel
 			i(217401),	-- Wormcaller's Resonator
 			i(217986),	-- "Delicious" Egg Parts

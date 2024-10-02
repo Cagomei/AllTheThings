@@ -6863,9 +6863,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(62648),	--
 			q(62651),	--
 			q(62652),	--
-			q(62681),	--
-			q(62687),	--
-			q(62690),	--
 			-- 9.0.1.35707
 			-- 9.0.1.35755
 			q(62702),	--
@@ -8772,7 +8769,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(76393),	--
 			q(78174),	--
 			q(78683),	--
-			q(78903),	--
 			q(79155),	--
 			q(79278),	--
 			q(79378),	--
@@ -8832,7 +8828,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			--["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
 			--["coord"] = { 55.3, 41.2, AZJ_KAHET },
 			}),
-			q(82383),	-- (Bunch of Rocks i(226147 unsorted quests showing on item)
 			q(82385),	-- (Bunch of Rocks i(226147 unsorted quests showing on item)
 			q(83023),	-- Short-Supply Reward
 		})),

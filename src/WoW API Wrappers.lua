@@ -73,13 +73,31 @@ if C_Item then
 	local C_Item = C_Item;
 
 	if C_Item.GetItemCount then lib.GetItemCount = C_Item.GetItemCount;
----@diagnostic disable-next-line: deprecated
+	---@diagnostic disable-next-line: deprecated
 	elseif GetItemCount then lib.GetItemCount = GetItemCount;
 	else lib.GetItemCount = nil; end
+
+	if C_Item.GetItemClassInfo then lib.GetItemClassInfo = C_Item.GetItemClassInfo;
+	---@diagnostic disable-next-line: deprecated
+	elseif GetItemClassInfo then lib.GetItemClassInfo = GetItemClassInfo;
+	else lib.GetItemClassInfo = nil; end
+
+	if C_Item.GetItemIconByID then lib.GetItemIcon = C_Item.GetItemIconByID;
+	---@diagnostic disable-next-line: deprecated
+	elseif GetItemIcon then lib.GetItemIcon = GetItemIcon;
+	else lib.GetItemIcon = nil; end
 else
----@diagnostic disable-next-line: deprecated
+	---@diagnostic disable-next-line: deprecated
 	if GetItemCount then lib.GetItemCount = GetItemCount;
 	else lib.GetItemCount = nil; end
+
+	---@diagnostic disable-next-line: deprecated
+	if GetItemClassInfo then lib.GetItemClassInfo = GetItemClassInfo;
+	else lib.GetItemClassInfo = nil; end
+
+	---@diagnostic disable-next-line: deprecated
+	if GetItemIcon then lib.GetItemIcon = GetItemIcon;
+	else lib.GetItemIcon = nil; end
 end
 
 ---@diagnostic disable-next-line: deprecated
@@ -92,8 +110,6 @@ if not GetItemInfo then
 		return C_Item.GetItemIDForItemInfo(item), itemType, itemSubType, itemEquipLoc, itemTexture, classID, subclassID;
 	end
 	lib.GetItemID = C_Item.GetItemIDForItemInfo;
-	lib.GetItemIcon = C_Item.GetItemIconByID;
-	lib.GetItemClassInfo = C_Item.GetItemClassInfo;
 	lib.GetItemSpecInfo = C_Item.GetItemSpecInfo;
 else
 	---@diagnostic disable-next-line: deprecated
@@ -104,8 +120,6 @@ else
 	lib.GetItemInfoInstant = GetItemInfoInstant;
 	---@diagnostic disable-next-line: deprecated
 	lib.GetItemID = GetItemInfoInstant;
-	lib.GetItemIcon = function(item) return select(5, GetItemInfoInstant(item)); end
-	lib.GetItemClassInfo = GetItemClassInfo;
 	---@diagnostic disable-next-line: deprecated
 	lib.GetItemSpecInfo = GetItemSpecInfo;
 end
