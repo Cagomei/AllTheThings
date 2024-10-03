@@ -258,8 +258,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Ancient Feather
 							["providers"] = {
-								{ "i", 55210 },	-- Ancient Feather
-								{ "i", 55211 },	-- Enormous Bird Call
+								{ "i",  55210 },	-- Ancient Feather
+								{ "i",  55211 },	-- Enormous Bird Call
+								{ "o", 203169 },	-- Blaithe's Roost
 							},
 							["coords"] = {
 								{ 35.6, 42.2, MOUNT_HYJAL },
@@ -330,7 +331,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.4, 46.2, MOUNT_HYJAL },
 					["groups"] = {
 						objective(1, {	-- 0/1 Nectar Offered
-							["provider"] = { "i", 55208 },	-- Sacred Nectar
+							["providers"] = {
+								{ "i",  55208 },	-- Sacred Nectar
+								{ "o", 203147 },	-- Aviana's Burial Circle
+							},
 							["coord"] = { 40, 44, MOUNT_HYJAL },
 						}),
 					},
