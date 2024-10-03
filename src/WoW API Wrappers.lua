@@ -86,6 +86,26 @@ if C_Item then
 	---@diagnostic disable-next-line: deprecated
 	elseif GetItemIcon then lib.GetItemIcon = GetItemIcon;
 	else lib.GetItemIcon = nil; end
+
+	if C_Item.GetItemInfoInstant then lib.GetItemInfoInstant = C_Item.GetItemInfoInstant;
+	---@diagnostic disable-next-line: deprecated
+	elseif GetItemInfoInstant then lib.GetItemInfoInstant = GetItemInfoInstant;
+	else lib.GetItemInfoInstant = nil; end
+
+	if C_Item.GetItemIDForItemInfo then lib.GetItemID = C_Item.GetItemIDForItemInfo;
+	---@diagnostic disable-next-line: deprecated
+	elseif GetItemInfoInstant then lib.GetItemID = GetItemInfoInstant;
+	else lib.GetItemID = nil; end
+
+	if C_Item.GetItemInfo then lib.GetItemInfo = C_Item.GetItemInfo;
+	---@diagnostic disable-next-line: deprecated
+	elseif GetItemInfo then lib.GetItemInfo = GetItemInfo;
+	else lib.GetItemInfo = nil; end
+
+	if C_Item.GetItemSpecInfo then lib.GetItemSpecInfo = C_Item.GetItemSpecInfo;
+	---@diagnostic disable-next-line: deprecated
+	elseif GetItemSpecInfo then lib.GetItemSpecInfo = GetItemSpecInfo;
+	else lib.GetItemSpecInfo = nil; end
 else
 	---@diagnostic disable-next-line: deprecated
 	if GetItemCount then lib.GetItemCount = GetItemCount;
@@ -98,30 +118,22 @@ else
 	---@diagnostic disable-next-line: deprecated
 	if GetItemIcon then lib.GetItemIcon = GetItemIcon;
 	else lib.GetItemIcon = nil; end
-end
 
----@diagnostic disable-next-line: deprecated
-if not GetItemInfo then
-	local C_Item = C_Item;
-	local GetItemInfo = C_Item.GetItemInfo;
-	lib.GetItemInfo = GetItemInfo;
-	lib.GetItemInfoInstant = function(item)
-		local _, _, _, _, _, itemType, itemSubType, _, itemEquipLoc, itemTexture, _, classID, subclassID = GetItemInfo(item);
-		return C_Item.GetItemIDForItemInfo(item), itemType, itemSubType, itemEquipLoc, itemTexture, classID, subclassID;
-	end
-	lib.GetItemID = C_Item.GetItemIDForItemInfo;
-	lib.GetItemSpecInfo = C_Item.GetItemSpecInfo;
-else
 	---@diagnostic disable-next-line: deprecated
-	local GetItemInfoInstant = GetItemInfoInstant;
+	if GetItemInfoInstant then lib.GetItemInfoInstant = GetItemInfoInstant;
+	else lib.GetItemInfoInstant = nil; end
+
 	---@diagnostic disable-next-line: deprecated
-	lib.GetItemInfo = GetItemInfo;
+	if GetItemInfoInstant then lib.GetItemID = GetItemInfoInstant;
+	else lib.GetItemID = nil; end
+
 	---@diagnostic disable-next-line: deprecated
-	lib.GetItemInfoInstant = GetItemInfoInstant;
+	if GetItemInfo then lib.GetItemInfo = GetItemInfo;
+	else lib.GetItemInfo = nil; end
+
 	---@diagnostic disable-next-line: deprecated
-	lib.GetItemID = GetItemInfoInstant;
-	---@diagnostic disable-next-line: deprecated
-	lib.GetItemSpecInfo = GetItemSpecInfo;
+	if GetItemSpecInfo then lib.GetItemSpecInfo = GetItemSpecInfo;
+	else lib.GetItemSpecInfo = nil; end
 end
 
 -- Spell APIs
@@ -132,7 +144,6 @@ if not GetSpellInfo then
 		return spell and C_Spell_GetSpellName(spell);
 	end;
 	lib.GetSpellIcon = C_Spell.GetSpellTexture;
-	--lib.GetSpellLink = C_Spell.GetSpellLink;
 
 	local C_Spell_GetSpellCooldown = C_Spell.GetSpellCooldown;
 	lib.GetSpellCooldown = function(spellID)
@@ -148,7 +159,6 @@ else
 		lib.GetSpellName = function(spellID, rank) return rank and select(1, GetSpellInfo(spellID, rank)) or select(1, GetSpellInfo(spellID)); end;
 	end
 	lib.GetSpellIcon = function(spellID) return select(3, GetSpellInfo(spellID)); end;
-	--lib.GetSpellLink = GetSpellLink;
 ---@diagnostic disable-next-line: deprecated
 	lib.GetSpellCooldown = GetSpellCooldown;
 end
@@ -169,8 +179,20 @@ else
 	lib.GetTradeSkillTexture = function() return end
 end
 
-if not GetSpellLink then
-	lib.GetSpellLink = C_Spell.GetSpellLink;
+if C_Spell then
+	local C_Spell = C_Spell;
+	
+	-- Warning: The API Wrapper for GetSpellLink is not completely equivalent.
+	-- GetSpellLink accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
+	-- Currently, only the first type is implemented.
+	if C_Spell.GetSpellLink then lib.GetSpellLink = function(SpellIdentifier)
+		return C_Spell.GetSpellLink(SpellIdentifier), C_Spell.GetSpellIDForSpellIdentifier(SpellIdentifier);
+	end
+	---@diagnostic disable-next-line: deprecated
+	elseif GetSpellLink then lib.GetSpellLink = GetSpellLink;
+	else lib.GetSpellLink = nil; end
 else
-	lib.GetSpellLink = GetSpellLink;
+	---@diagnostic disable-next-line: deprecated
+	if GetSpellLink then lib.GetSpellLink = GetSpellLink;
+	else lib.GetSpellLink = nil; end
 end

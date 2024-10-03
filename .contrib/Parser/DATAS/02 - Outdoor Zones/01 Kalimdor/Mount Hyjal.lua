@@ -753,7 +753,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 28.4, 36.4, MOUNT_HYJAL },
 					["groups"] = {
 						objective(1, {	-- 0/8 Twilight Servitor Freed
-							["provider"] = { "n", 39719 },	-- Twilight Servitor Quest Credit
+							["providers"] = {
+								{ "n", 39644 },	-- Twilight Servitor
+								{ "i", 52730 },	-- Cleansing Draught
+							},
 						}),
 						i(57364),	-- Purifying Spaulders
 						i(57363),	-- Invidious Casque
@@ -967,6 +970,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25370, {	-- Inciting the Elements
 					["qg"] = 40278,	-- Tholo Whitehoof
 					["coord"] = { 64.0, 22.4, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/4 Twilight Inciter slain
+							["providers"] = {
+								{ "n",  39926 },	-- Twilight Inciter
+								{ "n",  39921 },	-- Faerie Dragon
+								{ "i",  53009 },	-- Juniper Berries
+								{ "o", 202754 },	-- Juniper Berries
+							},
+							["coord"] = { 68.0, 23.4, MOUNT_HYJAL },
+						}),
+					},
 				}),
 				q(25624, {	-- Into the Maw!
 					["qg"] = 39432,	-- Takrik Ragehowl
