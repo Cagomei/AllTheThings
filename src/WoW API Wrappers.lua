@@ -143,7 +143,6 @@ if not GetSpellInfo then
 	lib.GetSpellName = function(spell)
 		return spell and C_Spell_GetSpellName(spell);
 	end;
-	lib.GetSpellIcon = C_Spell.GetSpellTexture;
 
 	local C_Spell_GetSpellCooldown = C_Spell.GetSpellCooldown;
 	lib.GetSpellCooldown = function(spellID)
@@ -158,7 +157,6 @@ else
 	else
 		lib.GetSpellName = function(spellID, rank) return rank and select(1, GetSpellInfo(spellID, rank)) or select(1, GetSpellInfo(spellID)); end;
 	end
-	lib.GetSpellIcon = function(spellID) return select(3, GetSpellInfo(spellID)); end;
 ---@diagnostic disable-next-line: deprecated
 	lib.GetSpellCooldown = GetSpellCooldown;
 end
@@ -174,25 +172,55 @@ end
 
 -- C_TradeSkillUI
 if C_TradeSkillUI then
-	lib.GetTradeSkillTexture = C_TradeSkillUI.GetTradeSkillTexture
+	local C_TradeSkillUI = C_TradeSkillUI;
+
+	-- Warning: Blizzard introduced C_TradeSkillUI.GetTradeSkillTexture in Patch 4.0.1, and I have not found any information on when GetTradeSkillTexture was deprecated or removed, as well as its parameters or return values. 
+	-- Therefore, lib.GetTradeSkillTexture will always use the implementation of C_TradeSkillUI.GetTradeSkillTexture in all cases. 
+	-- As a result, the fallback to GetTradeSkillTexture has not been tested and is not guaranteed to work.
+	if C_TradeSkillUI.GetTradeSkillTexture then lib.GetTradeSkillTexture = C_TradeSkillUI.GetTradeSkillTexture;
+	---@diagnostic disable-next-line: deprecated
+	elseif GetTradeSkillTexture then lib.GetTradeSkillTexture = GetTradeSkillTexture;
+	else GetTradeSkillTexture = nil; end
 else
-	lib.GetTradeSkillTexture = function() return end
+	---@diagnostic disable-next-line: deprecated
+	if GetTradeSkillTexture then lib.GetTradeSkillTexture = GetTradeSkillTexture;
+	else GetTradeSkillTexture = nil; end
 end
 
 if C_Spell then
 	local C_Spell = C_Spell;
-	
+
 	-- Warning: The API Wrapper for GetSpellLink is not completely equivalent.
 	-- GetSpellLink accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
 	-- Currently, only the first type is implemented.
-	if C_Spell.GetSpellLink then lib.GetSpellLink = function(SpellIdentifier)
-		return C_Spell.GetSpellLink(SpellIdentifier), C_Spell.GetSpellIDForSpellIdentifier(SpellIdentifier);
+	-- The traditional GetSpellLink returns two values: SpellLink and SpellID, but all of usages only utilize SpellLink. 
+	-- The C_Spell.GetSpellLink only returns SpellLink. 
+	-- For performance reasons, lib.GetSpellLink only returns SpellLink.
+	if C_Spell.GetSpellLink then lib.GetSpellLink = C_Spell.GetSpellLink;
+	---@diagnostic disable-next-line: deprecated, duplicate-set-field
+	elseif GetSpellLink then lib.GetSpellLink = function(SpellIdentifier)
+		return select(1, GetSpellLink(SpellIdentifier));
 	end
-	---@diagnostic disable-next-line: deprecated
-	elseif GetSpellLink then lib.GetSpellLink = GetSpellLink;
 	else lib.GetSpellLink = nil; end
+
+	-- Warning: The API Wrapper for GetSpellIcon is not completely equivalent.
+	-- GetSpellTexture accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
+	-- Currently, only the first type is implemented.
+	-- The C_Spell.GetSpellTexture returns two values: iconID and originalIconID, but all of usages only utilize iconID. 
+	-- The traditional GetSpellTexture only returns iconID. 
+	-- For performance reasons, lib.GetSpellIcon only returns iconID.
+	if C_Spell.GetSpellTexture then lib.GetSpellIcon = function(SpellIdentifier) return select(1, C_Spell.GetSpellTexture(SpellIdentifier)); end
+	---@diagnostic disable-next-line: deprecated
+	elseif GetSpellTexture then lib.GetSpellIcon = GetSpellTexture;
+	else lib.GetSpellIcon = nil; end
 else
-	---@diagnostic disable-next-line: deprecated
-	if GetSpellLink then lib.GetSpellLink = GetSpellLink;
+	---@diagnostic disable-next-line: deprecated, duplicate-set-field
+	if GetSpellLink then lib.GetSpellLink = function(SpellIdentifier)
+		return select(1, GetSpellLink(SpellIdentifier));
+	end
 	else lib.GetSpellLink = nil; end
+
+	---@diagnostic disable-next-line: deprecated
+	if GetSpellTexture then lib.GetSpellIcon = GetSpellTexture;
+	else lib.GetSpellIcon = nil; end
 end
