@@ -1104,6 +1104,7 @@ root(ROOTS.Zones, {
 						["qg"] = 43806,	-- Terrath the Steady
 						["sourceQuest"] = 26709,	-- The Stone Throne
 						["coord"] = { 56.6, 14.0, DEEPHOLM },
+						["minReputation"] = { FACTION_THERAZANE, REVERED },	-- Therazane, Revered.
 						["maxReputation"] = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 82,
@@ -1390,7 +1391,7 @@ root(ROOTS.Zones, {
 					}),
 					n(49822, {	-- Jadefang
 						["coord"] = { 61.2, 22.6, DEEPHOLM },
-						["description"] = "You will need the \"Ricket's Tickers\" bomb to reach the platform where Jadefang spawns.",
+						["description"] = "Found inside Crumbling Depths, requires the daily quest Underground Economy. Use the bomb \"Ricket's Tickers\" in the central cavern to reach the cave where Jadefang spawns.",
 						["groups"] = {
 							i(64494),	-- Tiny Shale Spider (PET!)
 						},

@@ -501,7 +501,6 @@ _.Modules.Events.SetEventInformation(141, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(479, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=4,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=11,["weekday"]=1,["year"]=2024},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=1,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=8,["weekday"]=1,["year"]=2024},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=6,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=13,["weekday"]=1,["year"]=2024},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=3,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=10,["weekday"]=1,["year"]=2024},{["remappedID"]=374}),
@@ -511,7 +510,8 @@ _.Modules.Events.SetEventInformation(479, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=2,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=9,["weekday"]=1,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=6,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=13,["weekday"]=1,["year"]=2025},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=4,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=11,["weekday"]=1,["year"]=2025},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=1,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=8,["weekday"]=1,["year"]=2025},{["remappedID"]=375})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=1,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=8,["weekday"]=1,["year"]=2025},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=6,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=13,["weekday"]=1,["year"]=2025},{["remappedID"]=374})
 });
 _.Modules.Events.SetEventInformation(201, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=2,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=1,["year"]=2023}),
@@ -2428,6 +2428,152 @@ _.ObjectModels = {
 	[100000001] = 201129,
 }
 
+-- Phase Database Module
+_.PhaseConstants = {
+	BLIZZARD_BALANCE = 3,
+	ELITE_PVP_REQUIREMENT = 4,
+	NEVER_IMPLEMENTED = 1,
+	REMOVED_FROM_GAME = 2,
+	UNLEARNABLE = 5,
+};
+local phases = {
+	[1] = {
+		name = "Never Implemented",
+		description = "|cFFFF0000This was never available to players.|r",
+		state = 1,
+	},
+	[2] = {
+		name = "Removed From Game",
+		description = "|cFFFF0000This has been removed from the game.|r",
+		state = 1,
+	},
+	[3] = {
+		name = "Blizzard Balance",
+		description = "|cFFAAFFAAThis is locked behind a paywall such as the in-game shop, another Blizzard product, or the Recruit-A-Friend service.|r",
+		lore = "|cFFFFAAAAThe act of encouraging the use of real money in any version of the game is widely frowned upon. Participate in this content at your own risk.|r",
+		state = 3,
+	},
+	[4] = {
+		name = "PvP Elite/Gladiator",
+		description = "|cFFFFAAAAThis can no longer be purchased or unlocked as Transmog unless you have the required PvP Title, required PvP Rating or were in the Top % of that season.|r",
+		state = 2,
+	},
+	[5] = {
+		name = "Unlearnable",
+		description = "|cFFFFAAAAThis cannot be permanently collected, learned or used for transmog.|r",
+		state = 2,
+	},
+	[11] = {
+		name = "Phase 1",
+		description = "|cFFAAFFAAThis was not available until Phase 1 of WoW Classic.|r",
+		lore = "|cFFFFAAAAIncluded Molten Core and Onyxia's Lair.|r",
+		minimumBuildVersion = 1130100,
+		buildVersion = 11301,
+		state = 2,
+	},
+	[1101] = {
+		name = "Dire Maul",
+		description = "|cFFAAFFAAThis became available with the Dire Maul Phase Release of WoW Classic.|r",
+		lore = "|cFFFFAAAAIncluded Dire Maul.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11301,
+		state = 2,
+	},
+	[12] = {
+		name = "Phase 2",
+		description = "|cFFAAFFAAThis was not available until Phase 2 of WoW Classic.|r",
+		lore = "|cFFFFAAAAIncluded World PvP and PvP Honor Titles.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11302,
+		state = 2,
+	},
+	[13] = {
+		name = "Phase 3",
+		description = "|cFFAAFFAAThis was not available until Phase 3 of WoW Classic.|r",
+		lore = "|cFFFFAAAAIncluded Blackwing Lair and the completion for Thunderfury.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11303,
+		state = 2,
+	},
+	[14] = {
+		name = "Phase 4",
+		description = "|cFFAAFFAAThis was not available until Phase 4 of WoW Classic.|r",
+		lore = "|cFFFFAAAAIncluded Zul'Gurub and the World Dragons.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11304,
+		state = 2,
+	},
+	[15] = {
+		name = "Phase 5",
+		description = "|cFFAAFFAAThis was not available until Phase 5 of WoW Classic.|r",
+		lore = "|cFFFFAAAAIncluded Ahn'Qiraj, which was pre-faced by a unique opening event.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11305,
+		state = 2,
+	},
+	[1501] = {
+		name = "AQ War Effort",
+		description = "|cFFAAFFAAThis was only available during the Ahn'Qiraj War Effort.|r",
+		lore = "|cFFFFAAAAIf the War Effort has been completed on your server, simply turn this off.|r",
+		minimumBuildVersion = 11301,
+		state = 2,
+	},
+	[1502] = {
+		name = "Gates Unopened",
+		description = "|cFFAAFFAAThis was only available up until the Scarab Lords on your server have rung the gong.|r",
+		lore = "|cFFFFAAAAIf the Gates of Anh'Qiraj have been opened on your server, simply turn this off.|r",
+		minimumBuildVersion = 11301,
+		state = 2,
+	},
+	[1503] = {
+		name = "10-Hour War",
+		description = "|cFFAAFFAAThis was only available during the 10 Hour War after the Scarab Lord(s) bang the gong.|r",
+		lore = "|cFFFFAAAAIf the Gates of Anh'Qiraj have been opened on your server, simply turn this off.|r",
+		minimumBuildVersion = 11301,
+		state = 2,
+	},
+	[1504] = {
+		name = "Catch-Up",
+		description = "|cFFAAFFAAThis became available near the end of Phase 5 in order to provide Catch-Up Nature Resist gear for those still working on AQ40.|r",
+		lore = "|cFFFFAAAAIf the Catch-Up Gear is available, simply turn this on.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11306,
+		state = 2,
+	},
+	[16] = {
+		name = "Phase 6",
+		description = "|cFFAAFFAAThis was not available until Phase 6 of WoW Classic.|r",
+		lore = "|cFFFFAAAAIncluded Naxxramas, which was heralded by the Scourge Invasion.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11306,
+		state = 2,
+	},
+	[1601] = {
+		name = "Scourge Invasion",
+		description = "|cFFAAFFAAThis was only available during the Scourge Invasion.|r",
+		lore = "|cFFFFAAAAIf the Scourge Invasion has ended on your server, simply turn this off.|r",
+		minimumBuildVersion = 11301,
+		state = 2,
+	},
+	[1602] = {
+		name = "Silithyst",
+		description = "|cFFAAFFAAThis was only available during the Silithyst Must Flow World PVP Event.|r",
+		lore = "|cFFFFAAAAIf the World PVP Event is available, simply turn this on.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11306,
+		state = 2,
+	},
+	[1603] = {
+		name = "Classic Era",
+		description = "|cFFAAFFAAThis was only available after the start of Classic Era.|r",
+		lore = "|cFFFFAAAAIf the Classic Era has begun, simply turn this on.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11307,
+		state = 2,
+	},
+};
+L.PHASES = phases;
+
 -- Supported Locales
 local simplifiedLocale = GetLocale():sub(1,2);
 if simplifiedLocale == "es" then
@@ -3114,6 +3260,15 @@ localize(_.ObjectNames, {
 	[375544] = "Figurilla de madera",
 	[100000001] = "Antorcha apagada",
 });
+for key,value in pairs({
+	[11] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 1 de WoW Classic.|r",
+	[12] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 2 de WoW Classic.|r",
+	[13] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 3 de WoW Classic.|r",
+	[14] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 4 de WoW Classic.|r",
+	[15] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 5 de WoW Classic.|r",
+	[16] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 6 de WoW Classic.|r",
+})
+do phases[key].description = value; end
 end
 if simplifiedLocale == "de" then
 localize(L.HEADER_NAMES, {
@@ -3813,6 +3968,15 @@ localize(_.ObjectNames, {
 	[375544] = "Holzstatuette",
 	[100000001] = "Nicht angezündete Fackel",
 });
+for key,value in pairs({
+	[11] = "|cFFAAFFAADies war erst Phase 1 von WoW Classic verfügbar.|r",
+	[12] = "|cFFAAFFAADies war erst Phase 2 von WoW Classic verfügbar.|r",
+	[13] = "|cFFAAFFAADies war erst Phase 3 von WoW Classic verfügbar.|r",
+	[14] = "|cFFAAFFAADies war erst Phase 4 von WoW Classic verfügbar.|r",
+	[15] = "|cFFAAFFAADies war erst Phase 5 von WoW Classic verfügbar.|r",
+	[16] = "|cFFAAFFAADies war erst Phase 6 von WoW Classic verfügbar.|r",
+})
+do phases[key].description = value; end
 end
 if simplifiedLocale == "fr" then
 localize(L.HEADER_NAMES, {
@@ -4519,6 +4683,15 @@ localize(_.ObjectNames, {
 	[375544] = "Figurine en bois",
 	[100000001] = "Torche éteinte",
 });
+for key,value in pairs({
+	[11] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du WoW Classic.|r",
+	[12] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 2 du WoW Classic.|r",
+	[13] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 3 du WoW Classic.|r",
+	[14] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 4 du WoW Classic.|r",
+	[15] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 5 du WoW Classic.|r",
+	[16] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 6 du WoW Classic.|r",
+})
+do phases[key].description = value; end
 end
 if simplifiedLocale == "it" then
 localize(L.HEADER_NAMES, {
@@ -4867,6 +5040,15 @@ localize(_.ObjectNames, {
 	[201579] = "Frammento a Incastro",
 	[207724] = "Pezzi del Relitto",
 });
+for key,value in pairs({
+	[11] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di WoW Classic.|r",
+	[12] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 2 di WoW Classic.|r",
+	[13] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 3 di WoW Classic.|r",
+	[14] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di WoW Classic.|r",
+	[15] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 5 di WoW Classic.|r",
+	[16] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di WoW Classic.|r",
+})
+do phases[key].description = value; end
 end
 if simplifiedLocale == "pt" then
 localize(L.HEADER_NAMES, {
@@ -5492,6 +5674,15 @@ localize(_.ObjectNames, {
 	[375544] = "Estatueta de Madeira",
 	[100000001] = "Tocha Apagada",
 });
+for key,value in pairs({
+	[11] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de WoW Classic.|r",
+	[12] = "|cFFAAFFAAIsto não estava disponível até Phase 2 de WoW Classic.|r",
+	[13] = "|cFFAAFFAAIsto não estava disponível até Phase 3 de WoW Classic.|r",
+	[14] = "|cFFAAFFAAIsto não estava disponível até Phase 4 de WoW Classic.|r",
+	[15] = "|cFFAAFFAAIsto não estava disponível até Phase 5 de WoW Classic.|r",
+	[16] = "|cFFAAFFAAIsto não estava disponível até Phase 6 de WoW Classic.|r",
+})
+do phases[key].description = value; end
 end
 if simplifiedLocale == "ru" then
 localize(L.HEADER_NAMES, {
@@ -6211,6 +6402,28 @@ localize(_.ObjectNames, {
 	[375544] = "Деревянная статуэтка",
 	[100000001] = "Незажженный факел",
 });
+for key,value in pairs({
+	[1] = "Никогда Не Доступны",
+	[2] = "Убраны Из Игры",
+	[3] = "Кошелек Blizzard",
+	[4] = "ПвП Элита / Гладиатор",
+	[5] = "Неизучаемые",
+})
+do phases[key].name = value; end
+for key,value in pairs({
+	[1] = "|cFFFF0000Никогда не был доступен игрокам.|r",
+	[2] = "|cFFFF0000Был убран из игры.|r",
+	[3] = "|cFFAAFFAAМожет быть скрыто за вложением денег, возможно, игровой магазин, другая игра Blizzard и \"Пригласи Друга\".|r",
+	[4] = "|cFFFFAAAAЭто больше нельзя будет купить или получить в коллекцию, если у вас нет необходимого PvP титула или если вы не входили в топ % лучших в этом сезоне.|r",
+	[5] = "|cFFFFAAAAЭто нельзя собрать, выучить навсегда или использовать для трансмогрификации.|r",
+	[11] = "|cFFAAFFAAЭто было недоступно до Phase 1 из WoW Classic.|r",
+	[12] = "|cFFAAFFAAЭто было недоступно до Phase 2 из WoW Classic.|r",
+	[13] = "|cFFAAFFAAЭто было недоступно до Phase 3 из WoW Classic.|r",
+	[14] = "|cFFAAFFAAЭто было недоступно до Phase 4 из WoW Classic.|r",
+	[15] = "|cFFAAFFAAЭто было недоступно до Phase 5 из WoW Classic.|r",
+	[16] = "|cFFAAFFAAЭто было недоступно до Phase 6 из WoW Classic.|r",
+})
+do phases[key].description = value; end
 end
 if simplifiedLocale == "ko" then
 localize(_.CategoryNames, {
@@ -6915,17 +7128,32 @@ localize(_.ObjectNames, {
 	[207724] = "난파선 파편",
 	[100000001] = "불을 붙이지 않은 횃불",
 });
+for key,value in pairs({
+	[11] = "|cFFAAFFAAPhase 1(WoW Classic)까지 사용할 수 없습니다.|r",
+	[12] = "|cFFAAFFAAPhase 2(WoW Classic)까지 사용할 수 없습니다.|r",
+	[13] = "|cFFAAFFAAPhase 3(WoW Classic)까지 사용할 수 없습니다.|r",
+	[14] = "|cFFAAFFAAPhase 4(WoW Classic)까지 사용할 수 없습니다.|r",
+	[15] = "|cFFAAFFAAPhase 5(WoW Classic)까지 사용할 수 없습니다.|r",
+	[16] = "|cFFAAFFAAPhase 6(WoW Classic)까지 사용할 수 없습니다.|r",
+})
+do phases[key].description = value; end
 end
 if simplifiedLocale == "zh" then
 localize(L.HEADER_NAMES, {
+	[-1000010] = "一般首领掉落",
 	[-1000013] = "常规商人物品",
 	[-1000015] = "恶魔训练师",
-	[-1000019] = "勘探",
+	[-1000019] = "探索",
+	[-1000032] = "稀有",
 	[-1000034] = "骑术训练师",
+	[-1000038] = "宝箱",
 	[-1000039] = "商人",
 	[-1000040] = "武器大师",
+	[-1000042] = "世界首领",
+	[-1000044] = "地区掉落",
 	[-1000048] = "梦魇之龙",
-	[-1000165] = "等级 0.5 套装",
+	[-1000142] = "荣誉头衔",
+	[-1000165] = "T0.5套装",
 	[-1000166] = "船长",
 	[-1000168] = "四骑士",
 	[-1000173] = DUNGEON_FLOOR_DIREMAUL5.." (东)",
@@ -6937,6 +7165,8 @@ localize(L.HEADER_NAMES, {
 	[-1000182] = "修道院",
 	[-1000185] = "阿塔莱防御者",
 	[-1000201] = "暗月马戏团",
+	[-1000215] = "冬幕节",
+	[-1000218] = "收获节",
 	[-1000223] = "仲夏火焰节",
 	[-1000227] = "荆棘谷钓鱼大赛",
 	[-1000234] = "安其拉之战捐献",
@@ -6953,6 +7183,7 @@ localize(L.HEADER_NAMES, {
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
+	[-1000030] = "此部分只会显示你当前角色的专业技能，除非处于账号模式或调试模式。",
 	[-1000033] = "包含有奖励或可从包含部分中的其他内容获得的事物。\n在此处合并以减少来自许多可能重复来源。",
 	[-1000040] = "武器大师是一个 NPC，为角色提供学习特定武器技能的机会，不同武器大师的可用性各不相同。所有武器技能都可以在 1 级进行训练，长柄武器除外，需要 20 级。\n\n在补丁 4.0.1 中，武器大师的训练已经过时，因为现在每个班级在创建时都会学习所有适合班级的武器熟练程度。不久之后，武器大师就被从游戏中删除了。",
 	[-1000380] = "此列表包含 ATT Discord 报告的无法获取的物品，这些物品是暴雪尚未修复的错误。\n\n注意：在此列表中忽略所有过滤器以获得可见性。此列表中仅显示因疏忽而从游戏中移除的物品。\n\n致暴雪开发者：请修复下面列出的物品和事件。",
@@ -7539,4 +7770,40 @@ localize(_.ObjectNames, {
 	[207724] = "船只残骸",
 	[100000001] = "未点燃的火把",
 });
+for key,value in pairs({
+	[1] = "从未实施",
+	[2] = "从游戏中移除",
+	[4] = "PvP 精良/角斗士",
+	[5] = "不可学",
+})
+do phases[key].name = value; end
+for key,value in pairs({
+	[1] = "|cFFFF0000此项玩家永远无法获得。|r",
+	[2] = "|cFFFF0000此项已从游戏中删除。|r",
+	[4] = "|cFFFFAAAA除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。|r",
+	[5] = "|cFFFFAAAA这不能永久收集、学习或用于幻化。|r",
+	[11] = "|cFFAAFFAA该功能直到 Phase 1 的 WoW Classic 才可用。|r",
+	[12] = "|cFFAAFFAA该功能直到 Phase 2 的 WoW Classic 才可用。|r",
+	[13] = "|cFFAAFFAA该功能直到 Phase 3 的 WoW Classic 才可用。|r",
+	[14] = "|cFFAAFFAA该功能直到 Phase 4 的 WoW Classic 才可用。|r",
+	[15] = "|cFFAAFFAA该功能直到 Phase 5 的 WoW Classic 才可用。|r",
+	[16] = "|cFFAAFFAA该功能直到 Phase 6 的 WoW Classic 才可用。|r",
+})
+do phases[key].description = value; end
+if GetLocale():sub(3,4):lower() == "tw" then
+for key,value in pairs({
+	[1] = "從未實裝",
+	[2] = "已從遊戲中移除",
+	[4] = "PvP 精良/角鬥士",
+	[5] = "不可學",
+})
+do phases[key].name = value; end
+for key,value in pairs({
+	[1] = "|cFFFF0000此項玩家永遠無法獲得。|r",
+	[2] = "|cFFFF0000此項已從遊戲中刪除。|r",
+	[4] = "|cFFFFAAAA除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖幻化。|r",
+	[5] = "|cFFFFAAAA這不能永久收集、學習或用於幻化。|r",
+})
+do phases[key].description = value; end
+end
 end

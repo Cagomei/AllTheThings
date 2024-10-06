@@ -20,9 +20,6 @@ for key, value in pairs({
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
-	-- Class Trial
-		[-137] = "Interface\\Icons\\achievement_level_90",									-- Level 90
-		[-138] = "Interface\\Icons\\achievement_level_100",									-- Level 100
 	-- WoD Dungeons(Fake npcid)
 		[-140] = select(6, EJ_GetInstanceInfo(547)),										-- Auchindoun
 		[-141] = select(6, EJ_GetInstanceInfo(385)),										-- Bloodmaul Slag Mines
@@ -33,16 +30,9 @@ for key, value in pairs({
 		[-146] = select(6, EJ_GetInstanceInfo(556)),										-- The Everbloom
 		[-147] = select(6, EJ_GetInstanceInfo(559)),										-- Upper Blackrock Spire
 	-- Class Trial
-		[-148] = 236566,																	-- Level 50 Class Trial
-		[-149] = 1408997,																	-- Level 110
-		[-150] = 2065613,																	-- Level 120
 		[-153] = 1103070,																	-- Work Orders
 	-- Class Trial
 		[-154] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Level 48
-		[-155] = 236566,																	-- Level 50 Character Boost
-		[-156] = 236567,																	-- Level 60 Character Boost
-	-- Class Trial
-		[-160] = 236567,																	-- Level 60 Class Trial
 	-- PvP
 		[-216] = "Interface\\Icons\\ability_rogue_combatreadiness",							-- Prestige
 	-- War Campaign
@@ -250,27 +240,6 @@ for key, value in pairs({
 		[-5203] = "Prestige Rewards",											-- Prestige Rewards
 		[-5204] = "Challenge Appearance",										-- Challenge Appearance
 		[-5205] = "Hidden Appearance",											-- Hidden Appearance
-	};
-
-	["AVAILABILITY_CONDITIONS"] = {
-		-- [id] = {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
-		[1] = {1, "|CFFFF0000This was never available to players.|r", "Never Implemented"}, -- No Hope
-		[2] = {1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game"}, -- No Hope
-		[4] = {2, "|CFFFF0000This can no longer be purchased or unlocked as Transmog unless you have the required PvP Title, required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator"},
-
-		-- Arbitrary Filters
-		[9] = {3, "|CFFFF0000This item is available on the Black Market Auction House. The original source may have been removed.|R", "Black Market AH [BMAH]"},
-		[10] = {3, "|CFFFF0000Originally obtained via a TCG card that is no longer in print, but may still be available via the Black Market, In-Game, or Real Life Auction House.|r", "Trading Card Game [TCG]"},
-		[11] = {2, "|CFFFF0000This is no longer available unless you know someone that has access to the items used to summon the boss.\nNote: Most Summoning Items can be reobtained if you had them in the past by talking to the respective NPC.|r", "Requires Summoning Items"},
-		-- [13] = {1, "|CFFFF0000Your followers are too high and the mission for the cache will no longer spawn.|r", "Legacy Cache"}, Comment: Didnt find this filter used anywhere.
-		[15] = {1, "|CFFFF0000This cannot be permanently collected, learned or used for transmog.|r", "Unlearnable"},
-		[35] = {3, "|CFFFF0000This is locked behind a paywall such as the in-game shop, another Blizzard product, or the Recruit-A-Friend service.|r", "Blizzard Balance"},
-		-- [36] = {1, "|CFFFF0000This was only obtainable during the WoW Anniversary when it was active and is no longer available.|r", "WoW Anniversary [Removed]"}, -- not used in Retail... I was confused with seasonal filter.
-		[38] = {2, "|CFFFF0000Only available to players that completed the Legendary Cloak quest chain during Mists of Pandaria, obtained the Legendary Cloak Appearance during MoP: Remix or via the BMAH.|r", "Ordos - Legendary Cloak"},
-		-- #if BEFORE BFA
-		-- [41] = {1, "|CFFFF0000This is only available to players that completed the associated Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances"},
-		-- #endif
-		[45] = {1, "|CFFFF0000Blizzard's loot changes broke several items and made them unobtainable.|r", "Broken Loot"},
 	};
 
 	["CUSTOM_COLLECTS_REASONS"] = {

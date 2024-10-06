@@ -76,9 +76,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(215805, {	-- Sloshmuck
 				["coord"] = { 73.4, 52.4, HALLOWFALL },
-				["questID"] = 79271,	-- in addition 84062
+				["questID"] = 79271,
 				["g"] = {
 					i(221223),	-- Bog Beast Mantle
+					i(221250),	-- Creeping Lasher Machete
 					i(221253),	-- Cultivator's Plant Puncher
 					i(221264),	-- Fungarian Mystic's Cluster
 					i(221255),	-- Sharpened Scalepiercer
@@ -172,7 +173,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(KHAZ_ALGAR, {
 		m(HALLOWFALL, {
 			n(RARES, {

@@ -67,5 +67,6 @@ TRIAL_OF_STYLE_HEADER = createHeader({
 	text = {
 		en = "Trial of Style",
 		ru = "Наденьте это немедлено",
+		cn = "时尚试炼",
 	},
 });

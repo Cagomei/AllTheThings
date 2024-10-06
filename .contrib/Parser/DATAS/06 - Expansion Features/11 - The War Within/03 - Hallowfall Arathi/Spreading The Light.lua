@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 local RADIANT_REMNANT = 206350;
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(HALLOWFALL_ARATHI, {
 		header(HEADERS.Quest, 76586, bubbleDownSelf({ ["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 3 } }, {	-- Spreading The Light
 			["icon"] = "Interface\\Icons\\spell_holy_holynova",
@@ -581,14 +581,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(224466),	-- Wilber The Chicken (QS!)
 						},
 					}),
-					o(435008, {	-- Farmhand Stash (TODO likely weekly)
-						["description"] = "Requires weekly quest with controlling Harvestbot Remy to spawn.",
-						["coord"] = { 61.6, 32.6, HALLOWFALL },
-						["questID"] = 80590,
-						["g"] = {
-							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
-						},
-					}),
 					o(457246, {	-- Fieldhand Stash (TODO likely weekly)
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 64.5, 28.8, HALLOWFALL },
@@ -680,6 +672,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["g"] = {
 							i(226018),	-- Darkened Arathi Cape (COSMETIC!)
 							i(224466),	-- Wilber The Chicken (QS!)
+						},
+					}),
+					o(435008, {	-- Farmhand Stash
+						["description"] = "Requires weekly quest with controlling Harvestbot Remy to spawn.",
+						["coord"] = { 61.6, 32.6, HALLOWFALL },
+						["questID"] = 80590,
+						["g"] = {
+							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
 						},
 					}),
 					o(433377, {	-- Harvest Box
@@ -905,7 +905,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 		})),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(HALLOWFALL_ARATHI, {
 		header(HEADERS.Quest, 76586, {	-- Spreading The Light
 			--	Rares
