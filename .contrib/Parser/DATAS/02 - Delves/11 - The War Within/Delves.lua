@@ -528,6 +528,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 						i(225337),	-- Violet Sporbit (PET!)
 					}),
 					filter(COSMETIC, {
+						i(212172),	-- Ajul'Nerub Raptorial Spine
 						i(212162),	-- Bitter Shroom Cap
 						i(211801),	-- Poisonous Shroom Cap
 						i(212164),	-- Shallow Nautic Helm
@@ -1002,6 +1003,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				n(TREASURES, {
 					filter(BATTLE_PETS, {
 						i(222971),	-- Bouncer (PET!)
+						i(225337),	-- Violet Sporbit (PET!)
 					}),
 					filter(COSMETIC, {
 						i(212172),	-- Ajul'Nerub Raptorial Spine
@@ -1309,6 +1311,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					i(219157),	-- Sollerets of Hidden Stars
 					i(219155),	-- Visage of Hidden Stars
 				}),
+			}),
+			filter(TOYS, {
+				i(225910),	-- Pileus Delight (TOY!)
 			}),
 			n(WEAPONS, {
 				i(219203),	-- Arathi Holy Standard
@@ -1805,6 +1810,15 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					i(224172, {	-- Restored Coffer Key
 						["cost"] = {{"c", UNDERCOIN, 1000}},
 					}),
+					i(232493, {	-- Restored Coffer Key
+						["cost"] = {{"c", UNDERCOIN, 1000}},
+					}),
+					i(232494, {	-- Restored Coffer Key
+						["cost"] = {{"c", UNDERCOIN, 1000}},
+					}),
+					i(232495, {	-- Restored Coffer Key
+						["cost"] = {{"c", UNDERCOIN, 1000}},
+					}),
 					i(232496, {	-- Restored Coffer Key
 						["cost"] = {{"c", UNDERCOIN, 2000}},
 					}),
@@ -1960,6 +1974,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(84738, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 3rd
 		q(84739, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 4th
 		-- Restored Coffer Key (from vendor, weekly?, account wide - locked for other characters after you buy them once)
+		q(85752),	-- itemID 232493 (Restored Coffer Key)
+		q(85751),	-- itemID 232494 (Restored Coffer Key)
+		q(85750),	-- itemID 232495 (Restored Coffer Key)
 		q(85743),	-- itemID 232496 (Restored Coffer Key)
 		q(85746),	-- itemID 232497 (Restored Coffer Key)
 		q(85747),	-- itemID 232498 (Restored Coffer Key)
