@@ -3759,11 +3759,24 @@
 4945@@@Guild Reputation: Honored
 4946@@@Guild Reputation: Revered
 5492@@@Guild Reputation: Exalted
-4.4.1.56464
+4.4.0.56713
 40968@@@Rival: Season 9
 40969@@@Gladiator: Season 9
 40970@@@Duelist: Season 9
 40971@@@Challenger: Season 9
+4.4.1.56464
+4.4.1.56859
+41134@@@[DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden)
+41139@@@Protocol Inferno: Blackrock Caverns
+41140@@@Protocol Inferno: Throne of the Tides
+41141@@@Protocol Inferno: The Stonecore
+41142@@@Protocol Inferno: The Vortex Pinnacle
+41143@@@Protocol Inferno: Grim Batol
+41144@@@Protocol Inferno: Halls of Origination
+41145@@@Protocol Inferno: Lost City of the Tol'vir
+41146@@@Protocol Inferno: Deadmines
+41147@@@Protocol Inferno: Shadowfang Keep
+41148@@@Protocol Inferno: Terminated
 5.0.3.15882
 110@@@Lich King 5-player boss defeated the most
 131@@@Journeyman Medic
@@ -15354,6 +15367,9 @@
 40118@@@Harbinger of the Runed
 40910@@@Successfully Stress Test CN Realms
 40939@@@Harbinger of the Gilded
+11.0.2.56819
+41044@@@Forged Weapons of Conquest
+41085@@@Worm Theory (copy)
 11.0.5.56487
 40235@@@Forged Marshal: The War Within Season 1
 40661@@@Zoomies!
@@ -15387,3 +15403,6 @@
 11.0.5.56572
 41013@@@Upgraded Apparel
 41015@@@A Dark Iron Past
+11.0.5.56749
+41033@@@Classy Dresser
+41038@@@Token Collector
