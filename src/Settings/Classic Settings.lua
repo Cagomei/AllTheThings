@@ -18,7 +18,6 @@ local Things = {
 	"HeirloomUpgrades",
 	"Illusions",
 	"Mounts",
-	"MusicRollsAndSelfieFilters",
 	"Quests",
 	"QuestsLocked",
 	"PVPRanks",
@@ -49,7 +48,6 @@ local GeneralSettingsBase = {
 		["AccountWide:Heirlooms"] = true,
 		["AccountWide:Illusions"] = true,
 		["AccountWide:Mounts"] = true,
-		["AccountWide:MusicRollsAndSelfieFilters"] = true,
 		["AccountWide:PVPRanks"] = false,
 		["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
@@ -70,7 +68,6 @@ local GeneralSettingsBase = {
 		["Thing:HeirloomUpgrades"] = app.GameBuildVersion >= 60000,
 		["Thing:Illusions"] = true,
 		["Thing:Mounts"] = true,
-		["Thing:MusicRollsAndSelfieFilters"] = app.GameBuildVersion >= 60000,
 		--["Thing:PVPRanks"] = app.GameBuildVersion < 20000,	-- CRIEVE NOTE: Maybe someday? Classic Era project.
 		["Thing:Quests"] = true,
 		["Thing:QuestsLocked"] = false,
@@ -201,7 +198,7 @@ local UnobtainableSettingsBase = {
 	__index = {
 		[1] = false,	-- Never Implemented
 		[2] = false,	-- Removed From Game
-		[3] = false,	-- Blizzard Balance
+		[3] = false,	-- Real Money
 	},
 };
 

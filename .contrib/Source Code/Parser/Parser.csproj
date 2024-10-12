@@ -55,6 +55,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ATT.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Csv, Version=2.0.93.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Csv.2.0.93\lib\net40\Csv.dll</HintPath>
@@ -94,10 +97,7 @@
     <Compile Include="Export\Object Data\AchievementData.cs" />
     <Compile Include="Export\Object Data\RecipeData.cs" />
     <Compile Include="Export\Object Data\MountData.cs" />
-    <Compile Include="Export\Object Data\NPCData.cs" />
     <Compile Include="Export\Object Data\ObjectData.cs" />
-    <Compile Include="Export\Object Data\QuestData.cs" />
-    <Compile Include="Export\Object Data\SpellData.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="FieldTypes\Cost.cs" />
     <Compile Include="FieldTypes\IExportableField.cs" />

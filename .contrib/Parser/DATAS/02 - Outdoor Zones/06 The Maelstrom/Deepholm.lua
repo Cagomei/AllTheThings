@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local OnTooltipForTherazane = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForTherazane = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		tinsert(tooltipInfo, { left = "Daily Quests:" });
@@ -16,7 +16,7 @@ local OnTooltipForTherazane = [[function(t, tooltipInfo)
 			total = total + _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo,
 				" %s", _.SearchForField("questID", questData[1])[1], questData[2]);
 		end
-		
+
 		local AddQuestsWithReputation = _.Modules.FactionData.AddQuestsTooltipWithReputation;
 		if reputation >= ]] .. REVERED .. [[ then
 			local glopmother = t.glopmother;
@@ -33,7 +33,7 @@ local OnTooltipForTherazane = [[function(t, tooltipInfo)
 			end
 			total = total + AddQuestsWithReputation(tooltipInfo, "Complete 1 of 2 quests:", glopmother, 350);
 		end
-		
+
 		local randomQuests = t.randomQuests;
 		if not randomQuests then
 			randomQuests = {};
@@ -139,7 +139,7 @@ root(ROOTS.Zones, {
 						pet(756, {	-- Fungal Moth (PET!)
 							["description"] = "Found scattered around Silvermarsh, Needlerock Slag and Chasm, as well as Verlok Stand.",
 							["coords"] = {
-								{ 23.7, 44.7, DEEPHOLM }, -- Needlerock 
+								{ 23.7, 44.7, DEEPHOLM }, -- Needlerock
 								{ 70.9, 25.4, DEEPHOLM }, -- Verlok Stand
 								{ 72.0, 62.7, DEEPHOLM }, -- Silvermarsh
 							},
@@ -171,7 +171,7 @@ root(ROOTS.Zones, {
 				n(FACTIONS, {
 					faction(FACTION_THERAZANE, {	-- Therazane
 						["icon"] = "Interface\\Icons\\inv_misc_tabard_therazane",
-						["OnTooltip"] = OnTooltipForTherazane,
+						["OnTooltip"] = [[_.OnTooltipDB.ForTherazane]],
 					}),
 				}),
 				petbattles({
@@ -200,7 +200,10 @@ root(ROOTS.Zones, {
 						["lvl"] = 82,
 					}),
 					q(26871, {	-- A Rock Amongst Many
-						["provider"] = { "o", 204959 },	-- Gigantic Painite Cluster
+						["providers"] = {
+							{ "o", 204959 },	-- Gigantic Painite Cluster
+							{ "i",  60504 },	-- Painite Chunk
+						},
 						["sourceQuest"] = 26869,	-- Depth of the Depths
 						["coord"] = { 66.3, 20.7, DEEPHOLM },
 						["modelScale"] = 4,
@@ -225,11 +228,31 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26771,	-- Testing the Trap
 						["coord"] = { 64.4, 82.2, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/8 Abyssion's underlings defeated slain
+								["providers"] = {
+									{ "n", 43966 },	-- Twilight Dragonspawn
+									{ "n", 43967 },	-- Twilight Scalesister
+									{ "n", 44221 },	-- Scalesworn Cultist
+								},
+								["coord"] = { 70.2, 76.8, DEEPHOLM },
+							}),
+						},
 					}),
 					q(26248, {	-- All Our Friends Are Dead
 						["qg"] = 42684,	-- Stormcaller Mylra
 						["sourceQuest"] = 26247,	-- Diplomacy First
 						["groups"] = {
+							objective(1, {	-- 0/6 Slain Crew Member information
+								["providers"] = {
+									{ "i", 58167 },	-- Spirit Totem
+									{ "n", 42681 },	-- Slain Crew Member
+									{ "n", 42682 },	-- Slain Crew Member
+									{ "n", 42747 },	-- Slain Crew Member's Spirit
+									{ "n", 42757 },	-- Slain Crew Member's Spirit
+								},
+								["coord"] = { 61.8, 45.8, DEEPHOLM },
+							}),
 							i(61501),	-- Incorporeal Sandals
 							i(61497),	-- Skyrend Bracers
 							i(61499),	-- Totem-Caller Hood
@@ -244,6 +267,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.5, 57.3, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 Explosive Bonding Compound applied
+								["providers"] = {
+									{ "i", 58502 },	-- Explosive Bonding Compound
+									{ "n", 43036 },	-- Flint Oremantle <Son of the Stonefather>
+								},
+								["coord"] = { 46.6, 57.2, DEEPHOLM },
+							}),
 							i(61470),	-- Burning Bind Bracers
 							i(61469),	-- Flashburn Girdle
 							i(61471),	-- Wound-Cauterizing Spaulders
@@ -278,6 +308,15 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 24.6, 62.1, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/10 Injured Earthen patched up
+								["providers"] = {
+									{ "i", 58965 },	-- Deepvein's Patch Kit
+									{ "n", 43229 },	-- Injured Earthen
+								},
+								["coord"] = { 23.2, 59.8, DEEPHOLM },
+							}),
+						},
 					}),
 					q(28488, {	-- Beneath the Surface
 						["qg"] = 43805,	-- Felsen the Enduring
@@ -286,6 +325,23 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/1 Ruby Crystal Cluster
+								["providers"] = {
+									{ "i", 64404 },	-- Ruby Crystal Cluster
+									{ "n", 48639 },	-- Ruby Gemstone Cluster
+								},
+								["coords"] = {
+									{ 59.8, 23.6, DEEPHOLM },
+									{ 61.6, 29.2, DEEPHOLM },
+									{ 66.0, 28.0, DEEPHOLM },
+									{ 67.0, 24.6, DEEPHOLM },
+									{ 68.2, 21.4, DEEPHOLM },
+									{ 64.2, 15.2, DEEPHOLM },
+								},
+								["cr"] = 48533,	-- Enormous Gyreworm
+							}),
+						},
 					}),
 					q(26766, {	-- Big Game, Big Bait
 						["qg"] = 44010,	-- Stormcaller Mylra
@@ -458,6 +514,13 @@ root(ROOTS.Zones, {
 						["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Seer Kormo will not be present in the Temple of Earth once the fight is done.",
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/8 Totem energized
+								["provider"] = { "i", 60835 },	-- Depleted Totem
+								["crs"] = {
+									43254,	-- Energized Geode
+									43258,	-- Lodestone Elemental
+								},
+							}),
 							i(61478),	-- Energon Greatmace
 							i(61496),	-- Groundshort Leggings
 							i(61480),	-- Sparklight Robes
@@ -480,6 +543,15 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26409,	-- Where's Goldmine?
 						["coord"] = { 46.5, 57.3, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/5 Quartzite Resin
+								["provider"] = { "i", 58501 },	-- Quartzite Resin
+								["crs"] = {
+									42606,	-- Rockslice Flayer
+									42607,	-- Rockslice Ripper
+								},
+							}),
+						},
 					}),
 					q(26580, {	-- Familiar Intruders
 						["qg"] = 42472,	-- Gorsik the Tumultuous
@@ -600,6 +672,20 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 27123,	-- Deepholm, Realm of Earth
 						["coord"] = { 49.6, 53.0, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- First Clue
+								["provider"] = { "n", 43048 },	-- Captain Skullshatter
+								["coord"] = { 53.6, 73.6, DEEPHOLM },
+							}),
+							objective(2, {	-- Second Clue
+								["provider"] = { "n", 43032 },	-- Slain Cannoneer
+								["coord"] = { 56.0, 74.2, DEEPHOLM },
+							}),
+							objective(3, {	-- Third Clue
+								["provider"] = { "n", 43044 },	-- Unexploded Artillery Shell
+								["coord"] = { 56.6, 76.4, DEEPHOLM },
+							}),
+						},
 					}),
 					q(26657, {	-- Hard Falls
 						["qg"] = 42466,	-- Terrath the Steady
@@ -725,6 +811,11 @@ root(ROOTS.Zones, {
 						["qg"] = 42684,	-- Stormcaller Mylra
 						["sourceQuest"] = 26248,	-- All Our Friends Are Dead
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/1 Mor'norokk the Hateful subdued
+								["provider"] = { "n", 42801 },	-- Mor'norokk the Hateful
+							}),
+						},
 					}),
 					q(27934, {	-- One With the Ground
 						["qg"] = 47195,	-- Slate Quicksand
@@ -909,6 +1000,12 @@ root(ROOTS.Zones, {
 						},
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- Mor'norokk interrogated
+								["providers"] = {
+									{ "n", 42964 },	-- Mor'norokk the Hateful
+									{ "n", 42716 },	-- Stormbeak
+								},
+							}),
 							i(61498),	-- Inquisitor's Girdle
 							i(61494),	-- Interrogator's Hood
 							i(61493),	-- Questioning Axe
@@ -919,6 +1016,16 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26409,	-- Where's Goldmine?
 						["coord"] = { 46.5, 57.3, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/1 The Burning Heart
+								["providers"] = {
+									{ "i", 60837 },	-- The Burning Heart
+									{ "i", 60834 },	-- Goldmine's Fire Totem
+									{ "n", 45099 },	-- Magmatooth <Initiate Goldmine's Fire Elemental>
+								},
+								["coord"] = { 54.0, 59.4, DEEPHOLM },
+							}),
+						},
 					}),
 					q(26791, {	-- Sprout No More
 						["qg"] = 44143,	-- Slate Quicksand
@@ -950,6 +1057,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.5, 57.3, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- Flint Oremantle introduced to Earthcaller Yevaa
+								["providers"] = {
+									{ "n", 43047 },	-- Flint Oremantle
+									{ "n", 42573 },	-- Earthcaller Yevaa
+								},
+							}),
 							i(61466),	-- Bell-Ringer's Skullcap
 							i(61467),	-- Flayer-Crush Boots
 							i(61468),	-- Legs of Ringing Echoes
@@ -959,6 +1072,11 @@ root(ROOTS.Zones, {
 						["qg"] = 42684,	-- Stormcaller Mylra
 						["sourceQuest"] = 26248,	-- All Our Friends Are Dead
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/6 Twilight Saboteur
+								["provider"] = { "n", 42885 },	-- Twilight Saboteur
+							}),
+						},
 					}),
 					q(26771, {	-- Testing the Trap
 						["qg"] = 44010,	-- Stormcaller Mylra
@@ -1028,6 +1146,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.7, 53.0, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/5 Deepstone Elemental slain
+								["provider"] = { "n", 43026 },	-- Deepstone Elemental
+								["coord"] = { 57.0, 74.6, DEEPHOLM },
+							}),
 							i(61502),	-- Deepstone Treads
 							i(61504),	-- Furyquench Bracers
 							i(61503),	-- Stoneshatter Hauberk
@@ -1332,6 +1454,19 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26249,	-- The Admiral's Cabin
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 Bottle of Whiskey
+								["providers"] = {
+									{ "i",  58798 },	-- Bottle of Whiskey
+									{ "o", 204280 },	-- Bottle of Whiskey
+								},
+							}),
+							objective(2, {	-- 0/1 Spool of Rope
+								["providers"] = {
+									{ "i",  58806 },	-- Spool of Rope
+									{ "o", 204279 },	-- Spool of Rope
+									{ "o", 203138 },	-- Coil of Rope
+								},
+							}),
 							i(61495),	-- Gloves of Idle Hands
 							i(61484),	-- Midnight Service Treads
 							i(61500),	-- Press Gang Girdle

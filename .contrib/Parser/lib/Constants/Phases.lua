@@ -35,7 +35,7 @@ createPhase = function(data)
 		else
 			phasesByReadable[data.readable] = data;
 		end
-		
+
 		-- Try to find the phaseID assignment from the readable table.
 		local phaseID = data.phaseID or PhaseAssignments[data.readable];
 		if not phaseID then
@@ -52,7 +52,7 @@ createPhase = function(data)
 		---@diagnostic disable-next-line: undefined-global
 		data.filepath = CurrentSubFileName or CurrentFileName;
 		--print("PHASE", phaseID .. ":", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
-		
+
 		-- We want our descriptions to be color coded by state if a color wasn't manually supplied.
 		local color = data.color or defaultStateColors[data.state];
 		if color then
@@ -151,14 +151,14 @@ REMOVED_FROM_GAME = createPhase({
 		tw = "此項已從遊戲中刪除。",
 	},
 });
-BLIZZARD_BALANCE = createPhase({
-	readable = "Blizzard Balance",
-	constant = "BLIZZARD_BALANCE",
+REAL_MONEY = createPhase({
+	readable = "Real Money",
+	constant = "REAL_MONEY",
 	export = true,
 	phaseID = 3,
 	state = 3,
 	text = {
-		en = "Blizzard Balance",
+		en = "Real Money",
 		--[[
 		es = "",
 		de = "",
@@ -174,7 +174,7 @@ BLIZZARD_BALANCE = createPhase({
 		tw = "暴雪點數",
 	},
 	description = {
-		en = "This is locked behind a paywall such as the in-game shop, another Blizzard product, or the Recruit-A-Friend service.",
+		en = "This Thing is locked behind a paywall which requires Blizzard Balance or Real Money.",
 		--[[
 		es = "",
 		de = "",
@@ -195,8 +195,8 @@ BLIZZARD_BALANCE = createPhase({
 });
 -- #if ANYCLASSIC
 -- In classic we don't care about the distinction between these two pieces of content.
-BLACK_MARKET = BLIZZARD_BALANCE;
-TCG = BLIZZARD_BALANCE;
+BLACK_MARKET = REAL_MONEY;
+TCG = REAL_MONEY;
 -- #else
 BLACK_MARKET = createPhase({
 	readable = "Black Market",
@@ -311,7 +311,7 @@ ELITE_PVP_REQUIREMENT = createPhase({
 		ko = "",
 		]]--
 		cn = "除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。",
-		tw = "除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖幻化。",
+		tw = "除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖塑形。",
 	},
 });
 UNLEARNABLE = createPhase({
@@ -350,7 +350,7 @@ UNLEARNABLE = createPhase({
 		ko = "",
 		]]--
 		cn = "这不能永久收集、学习或用于幻化。",
-		tw = "這不能永久收集、學習或用於幻化。",
+		tw = "這不能永久收集、學習或用於塑形。",
 	},
 });
 TRAINING = UNLEARNABLE;
@@ -479,8 +479,8 @@ local defaultLore = {
 	cn = "如果 %s 中的 %s 在您的服务器上处于活动状态，只需将其打开即可。",
 	tw = "如果 %s 中的 %s 在您的伺服器上處於啟用狀態，只需將其打開即可。",
 };
+-- #if ANYCLASSIC
 local function createClassicPhase(data)
-	-- #if ANYCLASSIC
 	local description = data.description;
 	if not description then
 		description = {};
@@ -512,10 +512,12 @@ local function createClassicPhase(data)
 	data.color = "FFAAFFAA";
 	--data.export = true;
 	return createPhase(data);
-	-- #else
-	return data.phaseID;
-	-- #endif
 end
+-- #else
+local function createClassicPhase(data)
+	return data.phaseID;
+end
+-- #endif
 local function convertClassicPhases(phases)
 	for phaseID,phaseData in pairs(phases) do
 		local data = {

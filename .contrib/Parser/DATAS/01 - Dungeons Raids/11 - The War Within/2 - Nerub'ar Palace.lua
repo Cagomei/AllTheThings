@@ -434,9 +434,16 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			})),
 			n(SPECIAL, {
 				n(228081, {	-- Ethereum Void Reaper
-					["description"] = "This rare has a chance to spawn while using the Trinket, Treacherous Transmitter. This rare can spawn outside the raid also.",
+					["description"] = "This rare has a chance to spawn while using the Trinket, Treacherous Transmitter, in an Outdoor zone.",
 					["crs"] = { 228078 },	-- Ethereum Void Reaper (Unsure which ID or both //Braghe)
 					["provider"] = { "i", 221023 },	-- Treacherous Transmitter
+					["maps"] = {
+						ISLE_OF_DORN,
+						HALLOWFALL,
+						THE_RINGING_DEEPS,
+						AZJ_KAHET,
+						AZJ_KAHET_LOWER,
+					},
 					["g"] = {
 						i(226810),	-- Infiltrator's Shroud (TOY!)
 					},
@@ -492,7 +499,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					Boss(SILKEN_COURT),
 					Boss(ANSUREK, {
 						i(225634, {	-- Web-Wrapped Curio
-							["sym"] = {{"sub","instance_tier",1273,DIFFICULTY.RAID.NORMAL}},
+							["sym"] = {{"sub","instance_tier",1273,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 						}),
 					}),
@@ -593,7 +600,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				Boss(SILKEN_COURT),
 				Boss(ANSUREK, {
 					i(225634, {	-- Web-Wrapped Curio
-						["sym"] = {{"sub","instance_tier",1273,DIFFICULTY.RAID.NORMAL}},
+						["sym"] = {{"sub","instance_tier",1273,DIFFICULTY.RAID.HEROIC}},
 						["up"] = IGNORED_VALUE,
 					}),
 				}),
@@ -647,9 +654,21 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					ach(40258),	-- Mythic: Queen Ansurek Guild Run
 					i(224151),	-- Ascendant Skyrazor (MOUNT!)
 					i(225634, {	-- Web-Wrapped Curio
-						["sym"] = {{"sub","instance_tier",1273,DIFFICULTY.RAID.NORMAL}},
+						["sym"] = {{"sub","instance_tier",1273,DIFFICULTY.RAID.MYTHIC}},
 						["up"] = IGNORED_VALUE,
 					}),
+				}),
+			}),
+			n(VENDORS, {
+				--Raid vendor gear for curio
+				n(227003, {	-- Kir'xal
+					["coord"] = { 56.7, 46.1, NERUBAR_LOWER },
+					["sym"] = {{"select","itemID",
+						modItemId(225634,4),	--	Web-Wrapped Curio [L]
+						modItemId(225634,3),	--	Web-Wrapped Curio [N]
+						modItemId(225634,5),	--	Web-Wrapped Curio [H]
+						modItemId(225634,6),	--	Web-Wrapped Curio [M]
+					},{"pop"}},	-- Pop all Curios (this fills their symlinks)
 				}),
 			}),
 		},

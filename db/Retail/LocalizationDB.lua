@@ -146,6 +146,7 @@ _.HeaderConstants = {
 	LUNAR_FESTIVAL_HEADER = -1000221,
 	MARCH_OF_THE_TADPOLES_HEADER = -1000222,
 	MIDSUMMER_FIRE_FESTIVAL_HEADER = -1000223,
+	MOUNT_MODS = -1001032,
 	NOBLEGARDEN_HEADER = -1000224,
 	NORTHREND_CUP_HEADER = -1000212,
 	OUTLAND_CUP_HEADER = -1000213,
@@ -1340,7 +1341,6 @@ _.FilterConstants = {
 	REAGENTS = 56,
 	RECIPES = 200,
 	RELIC = 54,
-	SELFIE_CAMERA = 60,
 	SHIELDS = 8,
 	SHIRTS = 10,
 	STAVES = 28,
@@ -1392,7 +1392,6 @@ L.FILTER_ID_TYPES = {
 	[55] = AUCTION_CATEGORY_CONSUMABLES,
 	[56] = C_Item.GetItemClassInfo(5),
 	[57] = INVTYPE_PROFESSION_GEAR,
-	[60] = "S.E.L.F.I.E. Camera",
 	[61] = C_Item.GetItemClassInfo(3),
 	[100] = MOUNTS,
 	[101] = AUCTION_CATEGORY_BATTLE_PETS,
@@ -1444,7 +1443,6 @@ L.FILTER_ID_ICONS = {
 	[55] = "Interface/Icons/INV_Drink_25_HoneyTea",
 	[56] = _.asset("Interface_Zone_drop"),
 	[57] = "Interface/Icons/inv_fishingpole_02",
-	[60] = "Interface/Icons/inv_misc_-selfiecamera_01",
 	[61] = "Interface/Icons/inv_misc_gem_ruby_02",
 	[100] = _.asset("Category_Mounts"),
 	[101] = _.asset("Category_PetJournal"),
@@ -1461,29 +1459,6 @@ L.FILTER_ID_ICONS = {
 }
 
 -- Flight Path Database Module
-_.FlightPathMapIDs = {
-	1209,
-	1208,
-	1467,
-	1384,
-	1923,
-	1922,
-	993,
-	994,
-	1011,
-	1014,
-	1504,
-	1647,
-	1409,
-	2046,
-	2057,
-	2055,
-	2149,
-	2175,
-	2241,
-	2276,
-	2298,
-}
 _.FlightPathNames = {
 	[1] = "Northshire Abbey",
 	[2] = "Stormwind, Elwynn",
@@ -6618,13 +6593,17 @@ _.ObjectNames = {
 	[437195] = "Titan Artifacts",
 	[437205] = "Sureki War Chest",
 	[437211] = "Illuminated Footlocker",
+	[437216] = "Sureki Shadecaster",
 	[437302] = "Fisherman's Pouch",
 	[437389] = "Forgotten Memorial",
 	[437726] = "Luminescent Umbrashroom",
 	[437767] = "Crate of Hallowfall Herbs",
 	[437769] = "Fragrant Fangpetal",
+	[438037] = "Black Blood Vessel",
 	[438039] = "Alchemical Instruments",
 	[439291] = "Repossessed Goods",
+	[439334] = "Sureki Shadecaster",
+	[439339] = "Sureki Shadecaster",
 	[439473] = "Tenir and the Order of Night",
 	[439531] = "Unattended Arbalest",
 	[439532] = "Sureki Smithing Tool",
@@ -12024,12 +12003,16 @@ _.ObjectModels = {
 	[437112] = 5500648,
 	[437195] = 4609985,
 	[437205] = 5007038,
+	[437216] = 5516443,
 	[437389] = 4996091,
 	[437726] = 973608,
 	[437767] = 5007037,
 	[437769] = 4900382,
+	[438037] = 5248827,
 	[438039] = 5201698,
 	[439291] = 5007036,
+	[439334] = 5516443,
+	[439339] = 5516443,
 	[439473] = 4298558,
 	[439531] = 4996083,
 	[439532] = 5128449,
@@ -12292,9 +12275,9 @@ _.ObjectModels = {
 -- Phase Database Module
 _.PhaseConstants = {
 	BLACK_MARKET = 9,
-	BLIZZARD_BALANCE = 3,
 	ELITE_PVP_REQUIREMENT = 4,
 	NEVER_IMPLEMENTED = 1,
+	REAL_MONEY = 3,
 	REMOVED_FROM_GAME = 2,
 	TCG = 10,
 	UNLEARNABLE = 5,
@@ -12311,8 +12294,8 @@ local phases = {
 		state = 1,
 	},
 	[3] = {
-		name = "Blizzard Balance",
-		description = "|cFFAAFFAAThis is locked behind a paywall such as the in-game shop, another Blizzard product, or the Recruit-A-Friend service.|r",
+		name = "Real Money",
+		description = "|cFFAAFFAAThis Thing is locked behind a paywall which requires Blizzard Balance or Real Money.|r",
 		lore = "|cFFFFAAAAThe act of encouraging the use of real money in any version of the game is widely frowned upon. Participate in this content at your own risk.|r",
 		state = 3,
 	},
@@ -15205,7 +15188,10 @@ L.QUEST_NAMES = {
 	[60172] = "This Quest is Temporary",
 	[60216] = "Construct Body: Mama Tomalin",
 	[60286] = "A Token of Our Admiration",
+	[60462] = "Anima Appeal",
 	[60463] = "Anima Appeal",
+	[60464] = "Anima Appeal",
+	[60465] = "Anima Appeal",
 	[60474] = "Spawn Tracking Unit-Specified World Effect in a WMO Bug",
 	[60499] = "The Light's Retribution",
 	[60559] = "Unused",
@@ -16006,6 +15992,8 @@ L.SOURCE_NAMES = {
 	[100028] = "Honorable Combatant's Plate Waistguard",
 	[100029] = "Honorable Combatant's Plate Armguards",
 	[100030] = "Honorable Combatant's Plate Armguards",
+	[500000] = "Forged Champion's Prestigious Banner (TOY!)(PVP)",
+	[500001] = "Tempered Banner of the Algari (TOY!)(PVE)",
 }
 
 -- Supported Locales
@@ -16102,9 +16090,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "Hay una batalla 4x4 en curso. Ayuda a la Alianza derrotando al Forsaken Deathsquad.",
 	[-1000856] = "Hay una batalla 4x4 en curso. Ayuda a la Horda derrotando a los Worgen Stalkers.",
 	[-1000858] = "Tres cazadores han rodeado a Mara Swiftmane. Entra en combate con ellos y aparecerá un cofre maltratado cerca de Mara Swiftmane. Una vez que termine la batalla, Mara te lo agradecerá y te dejará con el Cofre Maltratado.",
-});
-localize(L.FILTER_ID_TYPES, {
-	[60] = "Cámara SELFI",
 });
 localize(_.ObjectNames, {
 	[31] = "Estatua de león antigua",
@@ -19746,10 +19731,13 @@ localize(_.ObjectNames, {
 	[433377] = "Caja de la cosecha",
 	[433778] = "Tesoro enterrado",
 	[437060] = "Tributo del aspirante",
+	[437216] = "Proyector de sombras sureki",
 	[437389] = "Monumento olvidado",
 	[437726] = "Champiumbrío luminiscente",
 	[437767] = "Cajón de hierbas de Santificación",
 	[439291] = "Bienes embargados",
+	[439334] = "Proyector de sombras sureki",
+	[439339] = "Proyector de sombras sureki",
 	[439532] = "Herramienta de herrería sureki",
 	[439562] = "Aerocaballero caído",
 	[440914] = "Ofrenda de agua pura",
@@ -20059,7 +20047,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artefakte",
-	[60] = "S.E.L.F.I.E.-Kamera",
 	[103] = "Waffenverzauberungen",
 });
 localize(_.ObjectNames, {
@@ -23816,11 +23803,15 @@ localize(_.ObjectNames, {
 	[436933] = "Weichschnauzes Lieblingsschaufel",
 	[437060] = "Tribut des Aspiranten",
 	[437205] = "Kriegskasse der Sureki",
+	[437216] = "Schattenwerfer der Sureki",
 	[437389] = "Vergessenes Denkmal",
 	[437726] = "Leuchtender Schattenpilz",
 	[437767] = "Kiste voll Heilsturzkräuter",
+	[438037] = "Schwarzblutgefäß",
 	[438039] = "Alchemistische Instrumente",
 	[439291] = "Wiedererlangte Waren",
+	[439334] = "Schattenwerfer der Sureki",
+	[439339] = "Schattenwerfer der Sureki",
 	[439531] = "Unbeaufsichtigte Armbrust",
 	[439532] = "Schmiedewerkzeug der Sureki",
 	[439562] = "Gefallener Luftritter",
@@ -24226,7 +24217,6 @@ localize(L.HEADER_LORE, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artéfact",
-	[60] = "Appareil photo P.R.O.F.I.L",
 });
 localize(_.ObjectNames, {
 	[31] = "Statue du vieux lion",
@@ -27952,11 +27942,15 @@ localize(_.ObjectNames, {
 	[434926] = "Vestige radieux",
 	[436933] = "Pelle favorite de Museau-doux",
 	[437060] = "Tribut de l’aspirant",
+	[437216] = "Lance-ombre sureki",
 	[437389] = "Mémorial oublié",
 	[437726] = "Champiombre luminescent",
 	[437767] = "Caisse d’herbes de Sainte-Chute",
+	[438037] = "Réceptacle de Sang noir",
 	[438039] = "Matériel d’alchimie",
 	[439291] = "Marchandises saisies",
+	[439334] = "Lance-ombre sureki",
+	[439339] = "Lance-ombre sureki",
 	[439473] = "Tenir et l’Ordre de la nuit",
 	[439531] = "Arbaleste sans surveillance",
 	[439532] = "Outil de forge sureki",
@@ -28271,9 +28265,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "C'è una battaglia 4x4 in corso. Aiuta l'Alleanza sconfiggendo la Squadra della Morte dei Rinnegati.",
 	[-1000856] = "C'è una battaglia 4x4 in corso. Aiuta l'Orda sconfiggendo i Worgen Stalker.",
 	[-1000858] = "Tre cacciatori hanno circondato Mara Mantoveloce. Coinvolgili in combattimento e un forziere malconcio verrà generato vicino a Mara Swiftmane. Una volta terminata la battaglia, Mara ti ringrazierà e ti lascerà con il baule malconcio.",
-});
-localize(L.FILTER_ID_TYPES, {
-	[60] = "Fotocamera S.E.L.F.I.E.",
 });
 localize(_.ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
@@ -31709,10 +31700,12 @@ localize(_.ObjectNames, {
 	[433370] = "Cassa di Rifornimenti da Guerra",
 	[433778] = "Tesoro Sepolto",
 	[434502] = "Scatole di Rifornimenti dei Lancialenza",
+	[437216] = "Gettaombre dei Sureki",
 	[437389] = "Memoriale Dimenticato",
 	[437726] = "Fungombrale Luminescente",
 	[437767] = "Cassa di Erbe dei Precipizi Sacri",
 	[439291] = "Beni di Seconda Mano",
+	[439334] = "Gettaombre dei Sureki",
 	[439531] = "Arbalesta Incustodita",
 	[439532] = "Attrezzo da Fabbro dei Sureki",
 	[439562] = "Aerocavaliere Caduto",
@@ -31967,9 +31960,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "Há uma batalha 4x4 em andamento. Ajude a Aliança derrotando o Esquadrão da Morte Abandonado.",
 	[-1000856] = "Há uma batalha 4x4 em andamento. Ajude a Horda derrotando os Worgen Stalkers.",
 	[-1000858] = "Três caçadores cercaram Mara Swiftmane. Envolva-os em combate e um baú maltratado aparecerá perto de Mara Swiftmane. Assim que a batalha terminar, Mara agradecerá e deixará você com o Baú Maltratado.",
-});
-localize(L.FILTER_ID_TYPES, {
-	[60] = "Câmera de S.E.L.F.I.E.",
 });
 localize(_.ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
@@ -35602,11 +35592,15 @@ localize(_.ObjectNames, {
 	[433907] = "Propaganda da Ordem da Noite.",
 	[434926] = "Resquício Radiante",
 	[437060] = "Tributo do Aspirante",
+	[437216] = "Umbrovisor Sureki",
 	[437389] = "Memorial Abandonado",
 	[437726] = "Cogumbra Luminescente",
 	[437767] = "Caixote de Plantas de Pouso Santo",
+	[438037] = "Receptáculo de Sangue Negro",
 	[438039] = "Instrumentos Alquímicos",
 	[439291] = "Mercadorias Recuperadas",
+	[439334] = "Umbrovisor Sureki",
+	[439339] = "Umbrovisor Sureki",
 	[439473] = "Tenir e a Ordem da Noite",
 	[439531] = "Arcobalista Negligenciada",
 	[439532] = "Ferramenta de Ferraria Sureki",
@@ -36031,7 +36025,6 @@ localize(L.HEADER_LORE, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Артефакты",
-	[60] = "Камера СЕЛФИ",
 	[103] = "Иллюзии",
 });
 localize(_.ObjectNames, {
@@ -39785,11 +39778,15 @@ localize(_.ObjectNames, {
 	[434502] = "Ящик с рыболовными припасами",
 	[436933] = "Любимая лопатка Мягконосой",
 	[437060] = "Дар претендента",
+	[437216] = "Теневещатель суреки",
 	[437389] = "Забытый памятник",
 	[437726] = "Светящийся умбрагриб",
 	[437767] = "Ящик с травами Тайносводья",
+	[438037] = "Сосуд с черной кровью",
 	[438039] = "Алхимические инструменты",
 	[439291] = "Изъятый товар",
+	[439334] = "Теневещатель суреки",
+	[439339] = "Теневещатель суреки",
 	[439531] = "Брошенная аркбаллиста",
 	[439532] = "Кузнечный инструмент суреки",
 	[439562] = "Павший воздушный рыцарь",
@@ -40163,9 +40160,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "4대4 전투가 진행 중입니다. Forsaken Deathsquad를 물리쳐 얼라이언스를 지원하세요.",
 	[-1000856] = "4대4 전투가 진행 중입니다. 늑대인간 추적자를 물리쳐 호드를 도와주세요.",
 	[-1000858] = "세 명의 사냥꾼이 마라 스위프트메인을 둘러싸고 있습니다. 전투에 참여하면 마라 스위프트메인 근처에 낡은 상자가 생성됩니다. 전투가 끝나면 마라는 감사 인사를 전하고 낡은 상자를 남겨줄 것입니다.",
-});
-localize(L.FILTER_ID_TYPES, {
-	[60] = "\"셀카\" 사진기",
 });
 localize(_.ObjectNames, {
 	[31] = "오래된 사자상",
@@ -43585,11 +43579,13 @@ localize(_.ObjectNames, {
 	[433109] = "네루비안 비단 밧줄",
 	[433370] = "전쟁 보급품 상자",
 	[433778] = "파묻힌 보물",
+	[437216] = "수레키 그늘투영기",
 	[437389] = "잊힌 기념비",
 	[437726] = "발광 암영버섯",
 	[437767] = "신성한 협곡 약초 상자",
 	[438039] = "연금술 기구",
 	[439291] = "회수한 상품",
+	[439334] = "수레키 그늘투영기",
 	[439531] = "방치된 석궁",
 	[439532] = "수레키 대장기술 연장",
 	[439562] = "쓰러진 하늘기사",
@@ -43935,7 +43931,6 @@ localize(L.HEADER_LORE, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "神器",
-	[60] = "自拍神器",
 	[103] = "幻象",
 });
 localize(_.ObjectNames, {
@@ -47363,10 +47358,13 @@ localize(_.ObjectNames, {
 	[433778] = "埋藏的宝藏",
 	[436933] = "柔鼻者最喜欢的铁铲",
 	[437060] = "候选者的供品",
+	[437216] = "苏雷吉映影仪",
 	[437389] = "被遗忘的纪念碑",
 	[437726] = "冷光深影菇",
+	[438037] = "黑血器皿",
 	[438039] = "炼金器械",
 	[439291] = "被收回的货物",
+	[439339] = "苏雷吉映影仪",
 	[439531] = "无人管理的强弩",
 	[439532] = "苏雷吉锻造工具",
 	[439562] = "陨落的流空骑士",
@@ -47563,8 +47561,8 @@ for key,value in pairs({
 	[1] = "|cFFFF0000此項玩家永遠無法獲得。|r",
 	[2] = "|cFFFF0000此項已從遊戲中刪除。|r",
 	[3] = "|cFFAAFFAA這被鎖定在付費牆後面，例如遊戲内商店、另一個暴雪產品或招兵買馬召集令。|r",
-	[4] = "|cFFFFAAAA除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖幻化。|r",
-	[5] = "|cFFFFAAAA這不能永久收集、學習或用於幻化。|r",
+	[4] = "|cFFFFAAAA除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖塑形。|r",
+	[5] = "|cFFFFAAAA這不能永久收集、學習或用於塑形。|r",
 	[6] = "|cFFFFAAAA除非您認識可以使用用於召唤首領的物品的人，否則這將不再可用。|r",
 	[9] = "|cFFAAFFAA此物品可在黑市拍賣行購買。原始來源可能已被刪除。|r",
 	[10] = "|cFFAAFFAA最初通過不再印刷的 TCG 卡獲得，但仍可通過黑市、遊戲内或現實中的拍賣行獲得。|r",
