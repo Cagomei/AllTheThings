@@ -1,17 +1,23 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
--- Simple function for First Craft tracking Quests
+-- Simple function for First Craft HQTs
 -- ex. FirstCraft(QUESTID, RECIPEID);	-- RECIPE_NAME
-local function FirstCraft(questID, recipeID, added)
-	local t = name(HEADERS.Spell, recipeID, { ["questID"] = questID })
+local function FirstCraft(questID, recipeID, added, removed)
+	local t = hqt(questID, name(HEADERS.Spell, recipeID))
 	if added then
 		t.timeline = { added };
+	end
+	if removed then
+		if not added then
+			error("Cannot have removed FirstCraft without added")
+		end
+		t.timeline[#t.timeline + 1] = removed
 	end
 	return t;
 end
 local function FirstSkin(questID, creatureID, added, group)
-	local t = name(HEADERS.NPC, creatureID, { ["questID"] = questID })
+	local t = hqt(questID, name(HEADERS.NPC, creatureID))
 	if added then
 		t.timeline = { added };
 	end
@@ -813,9 +819,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81045, 445373);	-- Whisper of Silken Speed
 			-- Reagents
 			FirstCraft(81067, 445395);	-- Concentration Concentrate
-			FirstCraft(81027, 445354);	-- Enchanted Gilded Harbinger Crest
-			FirstCraft(81020, 445347);	-- Enchanted Runed Harbinger Crest
-			FirstCraft(81071, 445399);	-- Enchanted Weathered Harbinger Crest
+			FirstCraft(81027, 445354, ADDED_11_0_2, REMOVED_11_1_0);	-- Enchanted Gilded Harbinger Crest
+			FirstCraft(81020, 445347, ADDED_11_0_2, REMOVED_11_1_0);	-- Enchanted Runed Harbinger Crest
+			FirstCraft(81071, 445399, ADDED_11_0_2, REMOVED_11_1_0);	-- Enchanted Weathered Harbinger Crest
 			FirstCraft(81043, 445371);	-- Mirror Powder
 			-- Rods and Wants
 			FirstCraft(80997, 445324);	-- Enchanted Spearwood Wand
@@ -2378,7 +2384,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	prof(SKINNING, {
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = SKINNING,
-			["collectible"] = false,
 		},{
 			FirstSkin(83410, 216031),	-- Skinning Abyssal Devourer
 			FirstSkin(83411, 214151),	-- Skinning Ahg'zagall

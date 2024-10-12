@@ -1341,7 +1341,6 @@ _.FilterConstants = {
 	REAGENTS = 56,
 	RECIPES = 200,
 	RELIC = 54,
-	SELFIE_CAMERA = 60,
 	SHIELDS = 8,
 	SHIRTS = 10,
 	STAVES = 28,
@@ -1393,7 +1392,6 @@ L.FILTER_ID_TYPES = {
 	[55] = AUCTION_CATEGORY_CONSUMABLES,
 	[56] = C_Item.GetItemClassInfo(5),
 	[57] = INVTYPE_PROFESSION_GEAR,
-	[60] = "S.E.L.F.I.E. Camera",
 	[61] = C_Item.GetItemClassInfo(3),
 	[100] = MOUNTS,
 	[101] = AUCTION_CATEGORY_BATTLE_PETS,
@@ -1445,7 +1443,6 @@ L.FILTER_ID_ICONS = {
 	[55] = "Interface/Icons/INV_Drink_25_HoneyTea",
 	[56] = _.asset("Interface_Zone_drop"),
 	[57] = "Interface/Icons/inv_fishingpole_02",
-	[60] = "Interface/Icons/inv_misc_-selfiecamera_01",
 	[61] = "Interface/Icons/inv_misc_gem_ruby_02",
 	[100] = _.asset("Category_Mounts"),
 	[101] = _.asset("Category_PetJournal"),
@@ -1462,29 +1459,6 @@ L.FILTER_ID_ICONS = {
 }
 
 -- Flight Path Database Module
-_.FlightPathMapIDs = {
-	1209,
-	1208,
-	1467,
-	1384,
-	1923,
-	1922,
-	993,
-	994,
-	1011,
-	1014,
-	1504,
-	1647,
-	1409,
-	2046,
-	2057,
-	2055,
-	2149,
-	2175,
-	2241,
-	2276,
-	2298,
-}
 _.FlightPathNames = {
 	[1] = "Northshire Abbey",
 	[2] = "Stormwind, Elwynn",
@@ -15214,7 +15188,10 @@ L.QUEST_NAMES = {
 	[60172] = "This Quest is Temporary",
 	[60216] = "Construct Body: Mama Tomalin",
 	[60286] = "A Token of Our Admiration",
+	[60462] = "Anima Appeal",
 	[60463] = "Anima Appeal",
+	[60464] = "Anima Appeal",
+	[60465] = "Anima Appeal",
 	[60474] = "Spawn Tracking Unit-Specified World Effect in a WMO Bug",
 	[60499] = "The Light's Retribution",
 	[60559] = "Unused",
@@ -16015,6 +15992,8 @@ L.SOURCE_NAMES = {
 	[100028] = "Honorable Combatant's Plate Waistguard",
 	[100029] = "Honorable Combatant's Plate Armguards",
 	[100030] = "Honorable Combatant's Plate Armguards",
+	[500000] = "Forged Champion's Prestigious Banner (TOY!)(PVP)",
+	[500001] = "Tempered Banner of the Algari (TOY!)(PVE)",
 }
 
 -- Supported Locales
@@ -16111,9 +16090,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "Hay una batalla 4x4 en curso. Ayuda a la Alianza derrotando al Forsaken Deathsquad.",
 	[-1000856] = "Hay una batalla 4x4 en curso. Ayuda a la Horda derrotando a los Worgen Stalkers.",
 	[-1000858] = "Tres cazadores han rodeado a Mara Swiftmane. Entra en combate con ellos y aparecerá un cofre maltratado cerca de Mara Swiftmane. Una vez que termine la batalla, Mara te lo agradecerá y te dejará con el Cofre Maltratado.",
-});
-localize(L.FILTER_ID_TYPES, {
-	[60] = "Cámara SELFI",
 });
 localize(_.ObjectNames, {
 	[31] = "Estatua de león antigua",
@@ -20071,7 +20047,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artefakte",
-	[60] = "S.E.L.F.I.E.-Kamera",
 	[103] = "Waffenverzauberungen",
 });
 localize(_.ObjectNames, {
@@ -24242,7 +24217,6 @@ localize(L.HEADER_LORE, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artéfact",
-	[60] = "Appareil photo P.R.O.F.I.L",
 });
 localize(_.ObjectNames, {
 	[31] = "Statue du vieux lion",
@@ -28292,9 +28266,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000856] = "C'è una battaglia 4x4 in corso. Aiuta l'Orda sconfiggendo i Worgen Stalker.",
 	[-1000858] = "Tre cacciatori hanno circondato Mara Mantoveloce. Coinvolgili in combattimento e un forziere malconcio verrà generato vicino a Mara Swiftmane. Una volta terminata la battaglia, Mara ti ringrazierà e ti lascerà con il baule malconcio.",
 });
-localize(L.FILTER_ID_TYPES, {
-	[60] = "Fotocamera S.E.L.F.I.E.",
-});
 localize(_.ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
 	[34] = "Vecchio Fiasco",
@@ -31989,9 +31960,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "Há uma batalha 4x4 em andamento. Ajude a Aliança derrotando o Esquadrão da Morte Abandonado.",
 	[-1000856] = "Há uma batalha 4x4 em andamento. Ajude a Horda derrotando os Worgen Stalkers.",
 	[-1000858] = "Três caçadores cercaram Mara Swiftmane. Envolva-os em combate e um baú maltratado aparecerá perto de Mara Swiftmane. Assim que a batalha terminar, Mara agradecerá e deixará você com o Baú Maltratado.",
-});
-localize(L.FILTER_ID_TYPES, {
-	[60] = "Câmera de S.E.L.F.I.E.",
 });
 localize(_.ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
@@ -36057,7 +36025,6 @@ localize(L.HEADER_LORE, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Артефакты",
-	[60] = "Камера СЕЛФИ",
 	[103] = "Иллюзии",
 });
 localize(_.ObjectNames, {
@@ -40194,9 +40161,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000856] = "4대4 전투가 진행 중입니다. 늑대인간 추적자를 물리쳐 호드를 도와주세요.",
 	[-1000858] = "세 명의 사냥꾼이 마라 스위프트메인을 둘러싸고 있습니다. 전투에 참여하면 마라 스위프트메인 근처에 낡은 상자가 생성됩니다. 전투가 끝나면 마라는 감사 인사를 전하고 낡은 상자를 남겨줄 것입니다.",
 });
-localize(L.FILTER_ID_TYPES, {
-	[60] = "\"셀카\" 사진기",
-});
 localize(_.ObjectNames, {
 	[31] = "오래된 사자상",
 	[33] = "잠긴 궤짝",
@@ -43967,7 +43931,6 @@ localize(L.HEADER_LORE, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "神器",
-	[60] = "自拍神器",
 	[103] = "幻象",
 });
 localize(_.ObjectNames, {

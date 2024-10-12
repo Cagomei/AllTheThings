@@ -20,10 +20,7 @@ lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 src\WoW API Wrappers.lua
 
 # Raw DBs
-db\RaceDB.lua
-db\ReagentsDB.lua
-db\SkillDB.lua
-db\AccountWideQuestsDB.lua
+db\Retail\ReferenceDB.lua
 
 # Libs (no dependencies, only app assignment)
 lib\Debugging.lua
@@ -87,6 +84,7 @@ src\Classes\base.lua
 src\Classes\Achievement.lua
 src\Classes\BattlePet.lua
 src\Classes\CharacterClass.lua
+src\Classes\Currency.lua
 src\Classes\Difficulty.lua
 src\Classes\Factions.lua
 src\Classes\Quests.lua

@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["icon"] = [[~_.asset("Achievement_Character_Gnome_Male")]],
 					-- #endif
-					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
+					["OnTooltip"] = [[_.OnTooltipDB.RuneclothTurnIns]],
 					["races"] = ALLIANCE_ONLY,
 				}),
 				faction(FACTION_IRONFORGE, {	-- Ironforge
@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["icon"] = [[~_.asset("Achievement_Character_Dwarf_Male")]],
 					-- #endif
-					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
+					["OnTooltip"] = [[_.OnTooltipDB.RuneclothTurnIns]],
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -1132,10 +1132,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 					["sourceQuest"] = 3640,	-- The Pledge of Secrecy
 					["altQuests"] = { 3639, 3643 },	-- Show Your Work
-					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 69.8, 50.2, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 4392, 2 },	-- Advanced Target Dummy
@@ -1218,10 +1218,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						3630,	-- Gnome Engineering
 					},
 					["altQuests"] = { 3638, 3642 },	-- The Pledge of Secrecy
-					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 69.8, 50.2, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
