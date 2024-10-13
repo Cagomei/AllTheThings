@@ -348,16 +348,51 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 27061,	-- The Twilight Overlook
 						["coord"] = { 64.4, 82.2, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/5 Side of Basilisk Meat
+								["providers"] = {
+									{ "i", 60297 },	-- Side of Basilisk Meat
+									{ "i", 60382 },	-- Mylra's Knife
+									{ "n", 44138 },	-- Jadecrest Basilisk (Meat)
+								},
+								["cr"] = 43981,	-- Jadecrest Basilisk
+							}),
+						},
 					}),
 					q(26256, {	-- Bleed the Bloodshaper
+						["qg"] = 43065,	-- Maruut Stonebinder
 						["sourceQuest"] = 26258,	-- Deathwing's Fall
+						["coord"] = { 49.6, 53.0, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/1 Twilight Orders
+								["provider"] = { "i", 60264 },	-- Twilight Orders
+								["coord"] = { 62.4, 61.2, DEEPHOLM },
+								["cr"] = 43218,	-- Twilight Bloodshaper
+							}),
+						},
 					}),
 					q(26861, {	-- Block the Gates
 						["qg"] = 44222,	-- Seer Galekk
 						["sourceQuest"] = 26771,	-- Testing the Trap
 						["coord"] = { 64.6, 82.2, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- Twilight Gate disrupted
+								["providers"] = {
+									{ "i", 60501 },	-- Stormstone
+									{ "n", 44930 },	-- Twilight Gate Credit
+								},
+								["coord"] = { 65.7, 75.0, DEEPHOLM },
+							}),
+							objective(2, {	-- Elemental Gate disrupted
+								["providers"] = {
+									{ "i", 60501 },	-- Stormstone
+									{ "n", 44931 },	-- Elemental Gate Credit
+								},
+								["coord"] = { 71.3, 75.0, DEEPHOLM },
+							}),
+						},
 					}),
 					q(26259, {	-- Blood of the Earthwarder
 						["qg"] = 43397,	-- Seer Kormo
@@ -366,22 +401,43 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.7, 53.0, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/5 Blood of Neltharion
+								["provider"] = { "i", 59062 },	-- Blood of Neltharion
+								["cr"] = 43123,	-- Living Blood
+							}),
 							i(61492),	-- Blood-Collector Helm
 							i(61491),	-- Redblood Belt
 							i(61490),	-- Sanguinary Bracers
 						},
 					}),
 					q(27935, {	-- Bring Down the Avalanche (completing gives credit for both 27935 and 27936)
+						["qg"] = 47195,	-- Slate Quicksand <Arch Geomancer>
 						["sourceQuest"] = 27934,	-- One With the Ground
+						["coord"] = { 30.6, 77.8, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/1 Avalanchion slain
+								["provider"] = { "n", 44372 },	-- Avalanchion
+								["coord"] = { 47.0, 89.6, DEEPHOLM },
+							}),
+						},
 					}),
 					q(27936, {	-- Bring Down the Avalanche
+						["qg"] = 47195,	-- Slate Quicksand <Arch Geomancer>
 						["sourceQuest"] = 27934,	-- One With the Ground
+						["coord"] = { 30.6, 77.8, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/1 Avalanchion slain
+								["provider"] = { "n", 44372 },	-- Avalanchion
+								["coord"] = { 47.0, 89.6, DEEPHOLM },
+							}),
+						},
 					}),
 					q(26246, {	-- Captain's Log
 						["provider"] = { "o", 204274 },	-- Captain's Log
 						["sourceQuest"] = 27123,	-- Deepholm, Realm of Earth
+						["coord"] = { 53.6, 73.8, DEEPHOLM },
 						["lvl"] = 82,
 					}),
 					q(26440, {	-- Clingy
@@ -392,8 +448,13 @@ root(ROOTS.Zones, {
 							28869,	-- Pebble
 							26439,	-- Putting the Pieces Together
 						},
+						["coord"] = { 34.4, 34.4, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- Pebble brought to crystal formation
+								["provider"] = { "n", 43171 },	-- Jaspertip Crystal-gorger
+								["coord"] = { 29, 45, DEEPHOLM },
+							}),
 							i(61425),	-- Bracers of the Energetic Elemental
 							i(61426),	-- Crystalmuncher Necklace
 							i(61424),	-- Geodecrack Shoulderguards
@@ -405,6 +466,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 20.7, 61.6, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- Earthen Catapult safely escorted
+								["provider"] = { "n", 43509 },	-- Earthen Catapult
+							}),
 							i(61456),	-- Broken Emergency Brake
 							i(61454),	-- Catapult Loader's Gloves
 							i(61455),	-- Earthen Embrace
@@ -415,6 +479,15 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26326,	-- The Very Earth Beneath Our Feet
 						["coord"] = { 46.1, 45.8, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/6 Irestone Core
+								["provider"] = { "i", 58168 },	-- Irestone Core
+								["crs"] = {
+									42527,	-- Irestone Rumbler
+									42780,	-- Irestone Rumbler
+								},
+							}),
+						},
 					}),
 					q(26585, {	-- Corruption Destruction
 						["qg"] = 42472,	-- Gorsik the Tumultuous
@@ -425,12 +498,35 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 72.2, 54.0, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/8 Verlok Miracle-Grow
+								["providers"] = {
+									{ "i",  59123 },	-- Verlok Miracle-Grow
+									{ "o", 204410 },	-- Verlok Miracle-Grow
+								},
+								["coord"] = { 73.6, 26.8, DEEPHOLM },
+							}),
+						},
 					}),
 					q(26312, {	-- Crumbling Defenses
 						["qg"] = 42730,	-- Earthcaller Torunscar
 						["sourceQuest"] = 26326,	-- The Very Earth Beneath Our Feet
 						["coord"] = { 46.1, 45.7, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- Tawn Winterbluff relieved
+								["provider"] = { "n", 44352 },	-- Tawn Winterbluff <The Earthen Ring>
+								["coord"] = { 44.6, 41.2, DEEPHOLM },
+							}),
+							objective(2, {	-- Stormcaller Mylra relieved
+								["provider"] = { "n", 44353 },	-- Stormcaller Mylra <The Earthen Ring>
+								["coord"] = { 44.2, 43.6, DEEPHOLM },
+							}),
+							objective(3, {	-- Hargoth Dimblaze relieved
+								["provider"] = { "n", 42788 },	-- Hargoth Dimblaze <The Earthen Ring>
+								["coord"] = { 47.6, 42.8, DEEPHOLM },
+							}),
+						},
 					}),
 					q(26258, {	-- Deathwing's Fall
 						["qg"] = 43065,	-- Maruut Stonebinder
@@ -450,7 +546,7 @@ root(ROOTS.Zones, {
 						["groups"]= {
 							objective(1, {	-- 0/6 Plans decrypted
 								["providers"] = {
-									{ "i", 60758 },	-- Encrypted Plans (QI!)
+									{ "i",  60758 },	-- Encrypted Plans
 									{ "o", 205145 },	-- One-Time Decryption Engine
 								},
 							}),
@@ -462,8 +558,17 @@ root(ROOTS.Zones, {
 							27008,	--  Fly Over
 							27005,	--  The Twilight Plot
 						},
+						["coord"] = { 51.2, 50.0, DEEPHOLM },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 82,
+						["groups"]= {
+							objective(1, {	-- 0/6 Plans decrypted
+								["providers"] = {
+									{ "i",  60758 },	-- Encrypted Plans
+									{ "o", 205145 },	-- One-Time Decryption Engine
+								},
+							}),
+						},
 					}),
 					q(27123, {	-- Deepholm, Realm of Earth
 						["qg"] = 45042,	-- Thrall
@@ -497,6 +602,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26577,	-- Rocky Upheaval
 						["coord"] = { 72.2, 54.0, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/10 Doomshrooms destroyed
+								["provider"] = { "n", 43388 },	-- Doomshroom
+							}),
+						},
 					}),
 					q(26834, {	-- Down Into the Chasm
 						["qg"] = 43897,	-- Pyrium Lodestone
@@ -531,6 +641,12 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 27931,	-- The Quaking Fields
 						["coord"] = { 30.6, 77.8, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/6 Elemental Ore
+								["provider"] = { "i", 60487 },	-- Elemental Ore
+								["cr"] = 44220,	-- Jade Rager
+							}),
+						},
 					}),
 					q(26436, {	-- Entrenched
 						["qg"] = 42467,	-- Diamant the Patient
@@ -566,6 +682,16 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/10 Gyreworm slain
+								["providers"] = {
+									{ "n", 44257},	-- Gyreworm
+									{ "n", 42766},	-- Gorged Gyreworm
+									{ "n", 44259},	-- Gorged Gyreworm
+									{ "n", 47056},	-- Gorged Gyreworm
+								},
+							}),
+						},
 					}),
 					q(27042, {	-- Fight Fire and Water and Air with... [Alliance]
 						["qg"] = 44802,	-- Prospector Brewer
@@ -602,6 +728,17 @@ root(ROOTS.Zones, {
 						["coord"] = { 24.7, 62.2, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/6 Catapult Part
+								["providers"] = {
+									{ "i", 58944 },	-- Catapult Part
+									{ "o", 204374 },	-- Catapult Part
+									{ "o", 204375 },	-- Catapult Part
+									{ "o", 204376 },	-- Catapult Part
+									{ "o", 204377 },	-- Catapult Part
+									{ "o", 204378 },	-- Catapult Part
+									{ "o", 205208 },	-- Catapult Part
+								},
+							}),
 							i(61460),	-- Catapult Loading Scoop
 							i(61462),	-- Gear Detector
 							i(61461),	-- Re-Wound Cogspring
@@ -623,6 +760,12 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26656,	-- Don't. Stop. Moving.
 						["coord"] = { 39.9, 19.4, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/1 Stonework Mallet
+								["provider"] = { "i", 59323 },	-- Stonework Mallet
+								["cr"] = 43598,	-- Stone Trogg Beast Tamer
+							}),
+						},
 					}),
 					q(27050, {	-- Fungal Fury
 						["qg"] = 43804,	-- Gorsik the Tumultuous
@@ -640,6 +783,14 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26834,	-- Down Into the Chasm
 						["coord"] = { 27.6, 44.8, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/1 Obtain a War Guardian
+								["provider"] = { "n", 44126 },	-- War Guardian
+							}),
+							objective(2, {	-- 0/5 Fungal Monstrosity slain
+								["provider"] = { "n", 44035 },	-- Fungal Monstrosity
+							}),
+						},
 					}),
 					q(28390, {	-- Glop, Son of Glop
 						["qg"] = 44973,	-- Ruberick
@@ -652,6 +803,9 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 Fungalmancer Glop slain
+								["provider"] = { "n", 43372 },	-- Fungalmancer Glop
+							}),
 							ach(5445),	-- Fungalophobia
 							ach(5446),	-- The Glop Family Line
 						},
@@ -662,6 +816,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 72.2, 54.0, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/8 Fungal Behemoth slain
+								["provider"] = { "n", 42475 },	-- Fungal Behemoth
+							}),
 							i(61415),	-- Cloak of Fungal Growth
 							i(61416),	-- Girdle of Bolete Explosion
 							i(61417),	-- Spore-Soaked Leggings
@@ -692,6 +849,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26656,	-- Don't. Stop. Moving.
 						["coord"] = { 39.9, 19.4, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/6 Stone Drake slain
+								["provider"] = { "n", 42522 },	-- Stone Drake
+							}),
+						},
 					}),
 					q(26376, {	-- Hatred Runs Deep
 						["qg"] = 42467,	-- Diamant the Patient
@@ -699,6 +861,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 56.5, 42.8, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 Dragul Giantbutcher slain
+								["provider"] = { "n", 42921 },	-- Dragul Giantbutcher
+							}),
+							objective(2, {	-- 0/12 Lorthuna's Gate Cultists slain
+								["providers"] = {
+									{ "n", 42917},	-- Twilight Duskwarden
+									{ "n", 42823},	-- Twilight Priestess
+									{ "n", 42924},	-- Twilight Laborer
+								},
+							}),
 							i(61432),	-- Bloodcult Handwraps
 							i(61431),	-- Giantbutcher's Discarded Spaulders
 							i(61430),	-- Stonebound Legplates
@@ -730,6 +902,16 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26436,	-- Entrenched
 						["coord"] = { 34.4, 34.4, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/12 Jaspertip flayers slain
+								["providers"] = {
+									{ "n", 42524},	-- Jaspertip Borer
+									{ "n", 42521},	-- Jaspertip Swarmer
+									{ "n", 42525},	-- Jaspertip Ravager
+									{ "n", 43171},	-- Jaspertip Crystal-gorger
+								},
+							}),
+						},
 					}),
 					q(28866, {	-- Into the Stonecore
 						["qg"] = 44010,	-- Stormcaller Mylra
@@ -766,6 +948,16 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26436,	-- Entrenched
 						["coord"] = { 34.4, 34.4, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/8 Chalky Crystal Formation
+								["providers"] = {
+									{ "i", 58845 },	-- Chalky Crystal Formation
+									{ "o", 204296 },	-- Chalky Crystal Formation
+									{ "o", 204297 },	-- Chalky Crystal Formation
+								},
+								["cr"] = 42524,	-- Jaspertip Borer
+							}),
+						},
 					}),
 					q(27102, {	-- Maziel's Ascendancy
 						["provider"] = { "o", 205207 },	-- Maziel's Journal
@@ -773,6 +965,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 67.2, 70.2, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 Maziel slain
+								["provider"] = { "n", 44967 },	-- Maziel
+							}),
 							i(61481),	-- Mercury Treads
 							i(61483),	-- Quicksilver Crossbow
 							i(61482),	-- Rippling Ooze Chestguard
@@ -789,6 +984,14 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/10 Painite Mote
+								["providers"] = {
+									{ "i", 60791 },	-- Painite Mote
+									{ "o", 205195 },	-- Painite Shard
+								},
+							}),
+						},
 					}),
 					q(26770, {	-- Mystic Masters
 						["qg"] = 43898,	-- Flint Oremantle
@@ -796,6 +999,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 22.8, 52.1, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/5 Needlerock Mystic slain
+								["provider"] = { "n", 43995 },	-- Needlerock Mystic
+							}),
 							i(61453),	-- Gloves of Troggslaying
 							i(61451),	-- Troggbane Chestguard
 							i(61452),	-- Troggbreaker Shoulderpads
@@ -848,26 +1054,66 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26441,	-- So Big, So Round...
 						["coord"] = { 34.4, 34.4, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/12 Petrified Stone Bat
+								["provider"] = { "i", 58959 },	-- Petrified Stone Bat
+								["crs"] = {
+									43181,	-- Shalehide Basilisk
+									43182,	-- Petrified Stone Bat
+									43339,	-- Gorgonite
+								},
+							}),
+						},
 					}),
 					q(26439, {	-- Putting the Pieces Together
 						["qg"] = 43344,	-- Berracite
 						["sourceQuest"] = 26436,	-- Entrenched
 						["coord"] = { 34.1, 35.2, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/6 Stonebound Elementals reformed
+								["provider"] = { "n", 43115 },	-- Dormant Stonebound Elemental
+							}),
+						},
 					}),
 					q(26261, {	-- Question the Slaves
+						["qg"] = 43065,	-- Maruut Stonebinder
 						["sourceQuest"] = 26256,	-- Bleed the Bloodshaper
+						["coord"] = { 62.4, 61.2, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/6 Enslaved miner freed
+								["providers"] = {
+									{ "n",  44768 },	-- Enslaved Miner
+									{ "i",  60739 },	-- Twilight Slaver's Key
+									{ "o", 205098 },	-- Ball and Chain
+								},
+							}),
+							-- #if OBJECTIVES
+							i(60739, {	-- Twilight Slaver's Key
+								["provider"] = { "o", 205097 },	-- Slavemaster's Coffer
+								["coord"] = { 62.8, 59.5, DEEPHOLM },
+							}),
+							-- #endif
 							i(61488),	-- Bondbreaker Gauntlets
 							i(61489),	-- Lockbreaker Shank
 							i(61487),	-- Rough Stone Carapace
 						},
 					}),
 					q(27010, {	-- Quicksilver Submersion
+						["qg"] = 43065,	-- Maruut Stonebinder
 						["sourceQuest"] = 27007,	-- Silvermarsh Rendezvous
+						["coord"] = { 49.6, 53.0, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- World Pillar Fragment clue uncovered
+								["providers"] = {
+									{ "i",  60809 },	-- Trogg Crate
+									{ "o", 205197 },	-- Trogg Crate
+								},
+								["coord"] = { 71.8, 64.2, DEEPHOLM },
+								["description"] = "You can trigger this by jumping into the water next to the camp and swimming to the bottom.",
+							}),
 							i(61479),	-- Ballast-Laden Footpads
 							i(61485),	-- Box-Frame Spaulders
 							i(61486),	-- Breathpipe
@@ -884,6 +1130,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26755,	-- Keep Them off the Front
 						["coord"] = { 22.7, 52.0, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/5 Deactivated War Constructs reactivated
+								["provider"] = { "n", 43984 },	-- Deactivated War Construct
+							}),
+						},
 					}),
 					q(26836, {	-- Rescue the Stonefather... and Flint
 						["qg"] = 43897,	-- Pyrium Lodestone
@@ -921,6 +1172,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 34.4, 34.4, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 Gorgonite slain
+								["provider"] = { "n", 43339 },	-- Gorgonite
+							}),
 							i(61422),	-- Basilisk Eye Wand
 							i(61423),	-- Brightpolish Shield
 							i(61421),	-- Petrified Stone Bracers
@@ -967,16 +1221,31 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 72.2, 54.0, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/8 Verlok Pillartumbler slain
+								["provider"] = { "n", 43513 },	-- Verlok Pillartumbler
+							}),
+						},
 					}),
 					q(26537, {	-- Shatter Them!
 						["qg"] = 43168,	-- Gravel Longslab
 						["sourceQuest"] = 26501,	-- Sealing the Way
 						["coord"] = { 24.5, 62.4, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/12 Fractured Front stone troggs slain
+								["providers"] = {
+									{ "n", 43228},	-- Stone Trogg Berserker
+									{ "n", 43234},	-- Stone Trogg Geomancer
+									{ "n", 43250},	-- Needlerock Rider
+								},
+							}),
+						},
 					}),
 					q(27007, {	-- Silvermarsh Rendezvous
 						["provider"] = { "o", 205134 },	-- Forgemaster's Log
 						["sourceQuest"] = 26260,	-- The Forgemaster's Log
+						["coord"] = { 63.7, 55.4, DEEPHOLM },
 						["lvl"] = 82,
 					}),
 					q(26441, {	-- So Big, So Round...
@@ -991,6 +1260,11 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/8 Fungal Behemoth slain
+								["provider"] = { "n", 42475 },	-- Fungal Behemoth
+							}),
+						},
 					}),
 					q(26254, {	-- Some Spraining to Do
 						["qg"] = 42684,	-- Stormcaller Mylra
@@ -1032,6 +1306,14 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26834,	-- Down Into the Chasm
 						["coord"] = { 27.6, 44.8, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/1 Obtain a War Guardian
+								["provider"] = { "n", 44126 },	-- War Guardian
+							}),
+							objective(2, {	-- 0/5 Giant Mushrooms destroyed
+								["provider"] = { "n", 44049 },	-- Giant Mushroom
+							}),
+						},
 					}),
 					q(26576, {	-- Steady Hand
 						["qg"] = 42469,	-- Kor the Immovable
@@ -1087,6 +1369,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.4, 82.2, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 Stonescale Matriarch slain
+								["provider"] = { "n", 44148 },	-- Stonescale Matriarch
+							}),
 							i(61477),	-- Bait-Stained Drape
 							i(61475),	-- Soulbind Choker
 							i(61476),	-- Trapspring Leggings
@@ -1119,6 +1404,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 30.6, 77.8, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/5 Sundered Emerald Colossus slain
+								["provider"] = { "n", 44229 },	-- Sundered Emerald Colossus
+							}),
 							i(61400),	-- Size-Cutting Bracers
 							-- #if BEFORE MOP
 							i(61401, {	-- Rigid Colossus Fragment
@@ -1134,6 +1422,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26875,	-- Undying Twilight
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 High Priestess Lorthuna slain
+								["provider"] = { "n", 43837 },	-- High Priestess Lorthuna
+							}),
 							i(61404),	-- Blacksoul Polearm
 							i(61405),	-- Dimension Spike
 							i(61402),	-- Riftrent Waraxe
@@ -1164,7 +1455,9 @@ root(ROOTS.Zones, {
 						["lvl"] = 83,
 					}),
 					q(26260, {	-- The Forgemaster's Log
+						["qg"] = 43065,	-- Maruut Stonebinder
 						["sourceQuest"] = 26261,	-- Question the Slaves
+						["coord"] = { 49.6, 53.0, DEEPHOLM },
 						["lvl"] = 82,
 					}),
 					q(27937, {	-- The Hero Returns
@@ -1203,6 +1496,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 28.0, 68.6, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 The Middle Fragment of the World Pillar
+								["providers"] = {
+									{ "i", 60575 },	-- The Middle Fragment of the World Pillar
+									{ "o", 206562 },	-- The Stonefather's Safe
+								},
+							}),
 							i(61396),	-- Leggings of Fragmented Hope
 							i(61397),	-- Pillarbind Waistguard
 							i(61395),	-- Shoulderpads of Reconstruction
@@ -1239,6 +1538,15 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26828,	-- Our Part of the Bargain
 						["coord"] = { 63.3, 25.0, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/15 Twilight Precipice Cultists slain
+								["providers"] = {
+									{ "n", 42916},	-- Twilight Soulreaper
+									{ "n", 44076},	-- Defaced Earthrager
+									{ "n", 42823},	-- Twilight Priestess
+								},
+							}),
+						},
 					}),
 					q(26709, {	-- The Stone Throne
 						["qg"] = 43792,	-- Therazane
@@ -1251,6 +1559,14 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26828,	-- Our Part of the Bargain
 						["coord"] = { 62.7, 26.9, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/1 Zoltrik Drakebane defeated
+								["providers"] = {
+									{ "n", 44135},	-- Zoltrik Drakebane
+									{ "n", 42918},	-- Zoltrik Drakebane
+								},
+							}),
+						},
 					}),
 					q(27061, {	-- The Twilight Overlook
 						["sourceQuest"] = 27010,	-- Quicksilver Submersion
@@ -1263,6 +1579,15 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 82,
 						["groups"] = {
+							-- FIX_ME!!!
+							objective(1, {	-- 0/1 Masters' Gate Plans
+								["provider"] = { "i", 60745 },	-- Masters' Gate Plans
+								["crs"] = {
+									44847,	-- Twilight Armsman
+									44849,	-- Twilight Crusher
+									44855,	-- Twilight Cryptomancer
+								},
+							}),
 							objective(1, {	-- 0/1 Master's Gate Plans
 								["provider"] = { "i", 60745 },	-- Masters' Gate Plans
 								["crs"] = {
@@ -1276,8 +1601,28 @@ root(ROOTS.Zones, {
 					q(27005, {	-- The Twilight Plot [Horde]
 						["qg"] = 44823,	-- Examiner Rowe
 						["sourceQuest"] = 27953,	-- The Reliquary
+						["coord"] = { 51.2, 50.0, DEEPHOLM },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 82,
+						["groups"] = {
+							-- FIX_ME!!!
+							objective(1, {	-- 0/1 Masters' Gate Plans
+								["provider"] = { "i", 60745 },	-- Masters' Gate Plans
+								["crs"] = {
+									44847,	-- Twilight Armsman
+									44849,	-- Twilight Crusher
+									44855,	-- Twilight Cryptomancer
+								},
+							}),
+							objective(1, {	-- 0/1 Master's Gate Plans
+								["provider"] = { "i", 60745 },	-- Masters' Gate Plans
+								["crs"] = {
+									44847,	-- Twilight Armsman
+									44849,	-- Twilight Crusher
+									44855,	-- Twilight Cryptomancer
+								},
+							}),
+						},
 					}),
 					q(26326, {	-- The Very Earth Beneath Our Feet
 						["qg"] = 43065,	-- Maruut Stonebinder
@@ -1297,6 +1642,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.4, 82.2, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 The Upper World Pillar Fragment
+								["providers"] = {
+									{ "i", 60574 },	-- The Upper World Pillar Fragment
+									{ "o", 204967 },	-- The First Fragment of the World Pillar
+								},
+							}),
 							i(61472),	-- Amulet of Reconstruction
 							i(61473),	-- Stonebinder's Cloak
 							i(61474),	-- Worldbinder Signet
@@ -1309,6 +1660,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Waygate Destroyed
 								["provider"] = { "o", 205161 },	-- Waygate Controller
+								["coord"] = { 39.1, 73.8, DEEPHOLM },
 							}),
 							i(61439),	-- Gateshattering Hauberk
 							i(61441),	-- Starscraper Signet
@@ -1324,6 +1676,10 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 Waygate Destroyed
+								["provider"] = { "o", 205161 },	-- Waygate Controller
+								["coord"] = { 39.1, 73.8, DEEPHOLM },
+							}),
 							i(61436),	-- Gateshattering Hauberk
 							i(61438),	-- Starscraper Signet
 							-- #if BEFORE MOP
@@ -1339,6 +1695,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 63.3, 25.0, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 Boldrich Stonerender defeated
+								["provider"] = { "n", 42923 },	-- Boldrich Stonerender
+							}),
+							objective(2, {	-- 0/1 High Priestess Lorthuna defeated
+								["provider"] = { "n", 42914 },	-- High Priestess Lorthuna
+							}),
 							i(61408),	-- Lorthuna's Broken Shackles
 							i(61407),	-- Rune-Scribed Gauntlets
 							i(61406),	-- Stonerender Drape
@@ -1357,12 +1719,29 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26500,	-- We're Surrounded
 						["coord"] = { 28.2, 69.7, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/12 Thunder Stone
+								["providers"] = {
+									{ "i", 58886 },	-- Thunder Stone
+									{ "o", 204348 },	-- Thunder Stone
+								},
+							}),
+						},
 					}),
 					q(26768, {	-- To Catch a Dragon
 						["qg"] = 44010,	-- Stormcaller Mylra
 						["sourceQuest"] = 27061,	-- The Twilight Overlook
 						["coord"] = { 64.4, 82.2, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/1 Twilight Snare
+								["provider"] = { "i", 60383 },	-- Twilight Snare
+								["crs"] = {
+									43992,	-- Twilight Dragonstalker
+									44221,	-- Scalesworn Cultist
+								},
+							}),
+						},
 					}),
 					q(26484, {	-- To Stonehearth's Aid
 						["qg"] = 42573,	-- Earthcaller Yevaa
@@ -1380,6 +1759,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 24.5, 62.4, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 The Earthinator's Cudgel
+								["provider"] = { "i", 59144 },	-- The Earthinator's Cudgel
+								["cr"] = 43456,	-- Troggzor the Earthinator
+							}),
 							i(61459),	-- Earthinating Peasant Leggings
 							i(61458),	-- Helm of Earthination
 							i(61457),	-- Troggzor's Crystalline Plate
@@ -1387,8 +1770,17 @@ root(ROOTS.Zones, {
 					}),
 					q(27100, {	-- Twilight Research
 						["provider"] = { "i", 60816 },	-- Maziel's Research
-						["cr"] = 44936,	-- Murkstone Trogg
+						["crs"] = {
+							43158,	-- Mercurial Ooze
+							44936,	-- Murkstone Trogg
+						},
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- Twilight Research Notes
+								["provider"] = { "i", 60814 },	-- Twilight Research Notes
+								["cr"] = 43158,	-- Mercurial Ooze
+							}),
+						},
 					}),
 					q(27048, {	-- Underground Economy
 						["qg"] = 44968,	-- Ricket
@@ -1397,12 +1789,57 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/3 Deep Alabaster Crystal
+								["providers"] = {
+									{ "i", 65504 },	-- Deep Alabaster Crystal
+									{ "o", 207381 },	-- Deep Alabaster Crystal Chunk
+								},
+								["crs"] = {
+									42766,	-- Gorged Gyreworm
+									44257,	-- Gyreworm
+									44259,	-- Gorged Gyreworm
+									47056,	-- Gorged Gyreworm
+									47071,	-- Deep Spider
+									49816,	-- Deep Spider
+								},
+							}),
+							objective(2, {	-- 0/3 Deep Celestite Crystal
+								["providers"] = {
+									{ "i", 65507 },	-- Deep Celestite Crystal
+									{ "o", 207382 },	-- Deep Celestite Crystal Chunk
+								},
+							}),
+							objective(3, {	-- 0/3 Deep Amethyst Crystal
+								["providers"] = {
+									{ "i", 65508 },	-- Deep Amethyst Crystal
+									{ "o", 207383 },	-- Deep Amethyst Crystal Chunk
+								},
+							}),
+							objective(4, {	-- 0/3 Deep Garnet Crystal
+								["providers"] = {
+									{ "i", 65510 },	-- Deep Garnet Crystal
+									{ "o", 207384 },	-- Deep Garnet Crystal Chunk
+								},
+							}),
+						},
 					}),
 					q(26875, {	-- Undying Twilight
 						["qg"] = 43818,	-- Maruut Stonebinder
 						["sourceQuest"] = 26833,	-- Word In Stone
 						["coord"] = { 49.6, 53.0, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/12 Twilight Invaders slain
+								["providers"] = {
+									{ "n", 44680},	-- Twilight Defiler
+									{ "n", 44681},	-- Twilight Heretic
+								},
+							}),
+							objective(2, {	-- 0/1 Desecrated Earthrager slain
+								["provider"] = { "n", 44683 },	-- Desecrated Earthrager
+							}),
+						},
 					}),
 					q(26582, {	-- Unnatural Causes
 						["qg"] = 43395,	-- Windspeaker Lorvarius
@@ -1443,6 +1880,11 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 28.2, 69.7, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/12 Stone Trogg Ambusher slain
+								["provider"] = { "n", 43134 },	-- Stone Trogg Ambusher
+							}),
+						},
 					}),
 					q(26409, {	-- Where's Goldmine?
 						["qg"] = 42573,	-- Earthcaller Yevaa
@@ -1492,6 +1934,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 68.5, 26.4, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 Speak to Earthmender Norsala
+								["provider"] = { "n", 43503 },	-- Earthmender Norsala
+							}),
+							objective(2, {	-- 0/1 Fungalmancer Glop slain
+								["provider"] = { "n", 43372 },	-- Fungalmancer Glop
+							}),
 							i(61412),	-- Fungus-Stained Legplates
 							i(61413),	-- Mushroom Stompers
 							i(61414),	-- Sporeshot
