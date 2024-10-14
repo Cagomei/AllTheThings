@@ -147,10 +147,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				achWithRep(5788, FACTION_SHENDRALAR, {	-- Agent of the Shen'dralar [Shen'dralar Exalted]
-					-- #if BEFORE 4.1.0
-					-- This isn't actually an achievement yet.
-					["description"] = "Earn exalted status with the Shen'dralar.",
-					-- #endif
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
@@ -337,9 +333,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["group"] = {
 						ach(2357, {	-- Dreadsteed of Xoroth
 							["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
-							-- #if BEFORE WRATH
-							["description"] = "Completed the Dreadsteed of Xoroth warlock quest.",
-							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
 							["classes"] = { WARLOCK },
 						}),

@@ -54,7 +54,6 @@ root(ROOTS.Zones, {
 						841,	-- Explore Wetlands
 					}},
 					-- #else
-					["description"] = "Explore the regions of Eastern Kingdoms.",
 					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_EASTERN_KINGDOMS_EXP .. [[); end]],
@@ -218,7 +217,6 @@ root(ROOTS.Zones, {
 					}},
 					-- #else
 					-- #if BEFORE WRATH
-					["description"] = "Complete 700 quests in Eastern Kingdoms.",
 					["rank"] = 700,
 					-- #endif
 					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
@@ -249,7 +247,6 @@ root(ROOTS.Zones, {
 					}},
 					-- #else
 					-- #if BEFORE WRATH
-					["description"] = "Complete 550 quests in Eastern Kingdoms.",
 					["rank"] = 550,
 					-- #endif
 					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],

@@ -24,11 +24,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			m(DEATHKNELL, {
 				["lore"] = "Deathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.",
-				-- #if AFTER WRATH
-				["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Female",
-				-- #else
-				["icon"] = [[~_.asset("Achievement_Character_Undead_Female")]],
-				-- #endif
+				["icon"] = 236457,
 				-- #if BEFORE MOP
 				["zone-text-areas"] = {
 					154,	-- Deathknell
@@ -823,11 +819,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(ACHIEVEMENTS, {
-				explorationAch(768, {	-- Explore Tirisfal Glades
-					-- #if BEFORE WRATH
-					["description"] = "Explore Tirisfal Glades, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(768),	-- Explore Tirisfal Glades
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

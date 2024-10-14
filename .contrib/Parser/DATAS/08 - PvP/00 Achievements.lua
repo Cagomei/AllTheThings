@@ -332,9 +332,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "i", 29472 },	-- Whistle of the Black War Raptor
 			-- #endif
 		},
-		-- #if BEFORE WRATH
-		["description"] = "Obtain one of the war mounts through the honor system.",
-		-- #endif
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, ach(908, {	-- Call to Arms! (Alliance)
 		["timeline"] = { ADDED_3_0_2 },
@@ -1026,7 +1023,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	applyclassicphase(PHASE_TWO, ach(714, {	-- The Conqueror
 		-- #if BEFORE 3.0.1
-		["description"] = "Raise your reputation values in Warsong Gulch, Arathi Basin and Alterac Valley to Exalted.",
 		["OnClick"] = THE_JUSTICAR_AND_THE_CONQUEROR_OnClick,
 		["OnTooltip"] = THE_JUSTICAR_AND_THE_CONQUEROR_OnTooltip,
 		["OnUpdate"] = THE_CONQUEROR_OnUpdate,
@@ -1051,7 +1047,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	applyclassicphase(PHASE_TWO, ach(907, {	-- The Justicar
 		-- #if BEFORE 3.0.1
-		["description"] = "Raise your reputation values in Warsong Gulch, Arathi Basin and Alterac Valley to Exalted.",
 		["OnClick"] = THE_JUSTICAR_AND_THE_CONQUEROR_OnClick,
 		["OnTooltip"] = THE_JUSTICAR_AND_THE_CONQUEROR_OnTooltip,
 		["OnUpdate"] = THE_JUSTICAR_OnUpdate,

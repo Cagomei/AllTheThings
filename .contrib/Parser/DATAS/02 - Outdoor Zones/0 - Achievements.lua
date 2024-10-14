@@ -94,11 +94,6 @@ root(ROOTS.Zones, {
 			FACTION_GILNEAS,	-- Exalted Gilnaes
 			-- #endif
 		}, {
-			-- #if BEFORE TBC
-			["description"] = "Earn exalted reputation with 4 home cities.",
-			-- #elseif BEFORE WRATH
-			["description"] = "Earn exalted reputation with 5 home cities.",
-			-- #endif
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
@@ -114,11 +109,6 @@ root(ROOTS.Zones, {
 			FACTION_BILGEWATER_CARTEL,	-- Exalted Bilgewater Cartel
 			-- #endif
 		}, {
-			-- #if BEFORE TBC
-			["description"] = "Earn exalted reputation with 4 home cities.",
-			-- #elseif BEFORE WRATH
-			["description"] = "Earn exalted reputation with 5 home cities.",
-			-- #endif
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
@@ -1167,7 +1157,6 @@ root(ROOTS.Zones, {
 		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(941, {	-- Hemet Nesingwary: The Collected Quests
 			-- #if BEFORE WRATH
-			["description"] = "Complete the Green Hills of Stranglethorn, Hills Like White Elekk and Snows of Northrend achievements.",
 			["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
 			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 939, 938, 940); end]],
@@ -1320,9 +1309,6 @@ root(ROOTS.Zones, {
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		applyclassicphase(TBC_PHASE_ONE, achWithReps(942, { FACTION_KURENAI, FACTION_SPOREGGAR, FACTION_TIMBERMAW_HOLD }, {	-- The Diplomat
-			-- #if BEFORE WRATH
-			["description"] = "Raise your reputation level from unfriendly to exalted with Timbermaw Hold, Sporeggar and the Kurenai.",
-			-- #endif
 			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
@@ -1330,9 +1316,6 @@ root(ROOTS.Zones, {
 			}),
 		})),
 		applyclassicphase(TBC_PHASE_ONE, achWithReps(943, { FACTION_THE_MAGHAR, FACTION_SPOREGGAR, FACTION_TIMBERMAW_HOLD }, {	-- The Diplomat
-			-- #if BEFORE WRATH
-			["description"] = "Raise your reputation level from unfriendly to exalted with Timbermaw Hold, Sporeggar and the Mag'har.",
-			-- #endif
 			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
 			["races"] = HORDE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {

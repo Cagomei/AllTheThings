@@ -108,9 +108,6 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					achWithReps(945, { FACTION_ARGENT_DAWN, FACTION_ARGENT_CRUSADE }, {	-- The Argent Champion
-						-- #if BEFORE WRATH
-						["description"] = "Earn exalted status with the Argent Dawn and the Argent Crusade.",
-						-- #endif
 						["maps"] = { WESTERN_PLAGUELANDS, EASTERN_PLAGUELANDS },
 						["groups"] = {
 							title(99),	-- <Name> the Argent Champion
@@ -2256,6 +2253,11 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(44696),	-- Giant's Toewrap
 						},
+					}),
+				}),
+				n(TREASURES, {
+					o(191543, {	-- Scarlet Onslaught Trunk
+						i(40666),	-- Note from the Grand Admiral
 					}),
 				}),
 				n(VENDORS, {
