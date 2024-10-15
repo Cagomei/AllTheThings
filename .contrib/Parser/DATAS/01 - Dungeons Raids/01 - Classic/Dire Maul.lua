@@ -3,11 +3,7 @@
 -----------------------------------------------------
 WARPWOOD_QUARTER = createHeader({
 	readable = "Warpwood Quarter",
-	-- #if AFTER WRATH
-	icon = "Interface\\Icons\\Ability_Warlock_DemonicEmpowerment",
-	-- #else
-	icon = "Interface\\Icons\\Spell_Shadow_SummonImp",
-	-- #endif
+	icon = 236292,
 	text = {
 		en = [[~DUNGEON_FLOOR_DIREMAUL5.." (East)"]],
 		fr = [[~DUNGEON_FLOOR_DIREMAUL5.." (Est)"]],
@@ -20,11 +16,7 @@ WARPWOOD_QUARTER = createHeader({
 });
 GORDOK_COMMONS = createHeader({
 	readable = "Gordok Commons",
-	-- #if AFTER WRATH
-	icon = "Interface\\Icons\\Achievement_Reputation_Ogre",
-	-- #else
-	icon = "Interface\\Icons\\inv_axe_10",
-	-- #endif
+	icon = 236695,
 	text = {
 		en = [[~DUNGEON_FLOOR_DIREMAUL1.." (North)"]],
 		fr = [[~DUNGEON_FLOOR_DIREMAUL1.." (Nord)"]],
@@ -37,7 +29,7 @@ GORDOK_COMMONS = createHeader({
 });
 CAPITAL_GARDENS = createHeader({
 	readable = "Capital Gardens",
-	icon = "Interface\\Icons\\INV_Misc_Head_Elf_02",
+	icon = 134162,
 	text = {
 		en = [[~DUNGEON_FLOOR_DIREMAUL2.." (West)"]],
 		fr = [[~DUNGEON_FLOOR_DIREMAUL2.." (Ouest)"]],
@@ -183,7 +175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					-- #endif
 				}),
 				faction(FACTION_STEAMWHEEDLE_CARTEL, {	-- Steamweedle Cartel
-					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+					["icon"] = 133784,
 					-- #if BEFORE 4.0.3
 					["OnTooltip"] = OnTooltipForSteamweedle,
 					-- #endif

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 BURDEN_OF_ETERNITY = createHeader({
 	readable = "Burden of Eternity",
-	icon = "775461",
+	icon = 775461,
 	text = {
 		en = WOWAPI_GetSpellName(147343),
 	},
@@ -21,12 +21,12 @@ root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(TIMELESS_ISLE, {
 			["lore"] = "A true enigma, the Timeless Isle has drifted in and out of Pandaria's mists for thousands of years. Here, time has no meaning, and the sun neither rises nor sets. Its unique characteristics have brought the Isle under the scrutiny of the bronze dragonflight, pandaren explorers, and the black dragon Wrathion.",
-			["icon"] = "Interface\\Icons\\inv_pet_scorchedstone",
+			["icon"] = 294481,
 			["maps"] = { 555 },	-- Cavern of Lost Spirits
 			["timeline"] = { ADDED_5_4_0 },
 			["groups"] = {
 				petbattle(m(571, {	-- Celestial Tournament
-					["icon"] = "Interface/Icons/inv_misc_trinketpanda_07",
+					["icon"] = 645227,
 					["groups"] = {
 						n(PET_BATTLE, {
 							n(71933, {	-- Blingtron 4000
@@ -1952,7 +1952,7 @@ root(ROOTS.Zones, {
 					o(221747),	-- Huge Yak Roast
 					n(createHeader({	-- Kukuru's Cache
 						readable = "Kukuru's Cache",
-						icon = "348554",
+						icon = 348554,
 						text = {
 							en = "Kukuru's Cache",
 							es = "Alijo de Kukuru",

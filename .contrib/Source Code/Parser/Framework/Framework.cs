@@ -1,4 +1,4 @@
-﻿using ATT.DB;
+using ATT.DB;
 using ATT.FieldTypes;
 using System;
 using System.Collections.Concurrent;
@@ -1565,9 +1565,17 @@ namespace ATT
         #region Lua Conversion
         static StringBuilder ExportIconValue(StringBuilder builder, object iconValue)
         {
-            string icon = iconValue.ToString().Replace("\\", "/");
-            if(long.TryParse(icon, out long iconID) && iconID.ToString() == icon) builder.Append(icon);
-            else ExportStringValue(builder, icon);
+            string icon = iconValue.ToString().ToLower().Replace("\\", "/");
+            if (long.TryParse(icon, out long iconID) && iconID.ToString() == icon) builder.Append(icon);
+            else
+            {
+                if (!icon.StartsWith("_"))
+                {
+                    Console.WriteLine(icon);
+                    Console.ReadLine();
+                }
+                ExportStringValue(builder, icon);
+            }
             return builder;
         }
 
@@ -1962,9 +1970,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        subbuilder.Append("headers");
-                                        ExportStringKeyFieldValue(subbuilder, key, ".icon", "Interface/Icons/inv_misc_questionmark");
-                                        subbuilder.Append(";");
+                                        subbuilder.Append("headers[").Append(key).Append("].icon = 134400;");
                                         ExportReadableConstantComment(subbuilder, readable, constant).AppendLine();
                                     }
                                     if (header.TryGetValue("text", out value))

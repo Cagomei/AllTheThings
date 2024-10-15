@@ -751,7 +751,7 @@ local SourceLocationSettingsKey = setmetatable({
 		return "SourceLocations:Things";
 	end
 });
-local UnobtainableTexture = "|T" .. app.asset("status-unobtainable.blp") .. ":0|t";
+local UnobtainableTexture = "|T" .. app.asset("status-unobtainable") .. ":0|t";
 local function HasCost(group, idType, id)
 	-- check if the group has a cost which includes the given parameters
 	if group.cost and type(group.cost) == "table" then
@@ -827,7 +827,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB, group)
 						tinsert(unfiltered, { text, UnobtainableTexture });
 					-- from obtainable, different character source
 					elseif not FilterCharacter(parent) then
-						tinsert(unfiltered, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
+						tinsert(unfiltered, { text, "|T374223:0|t" });
 					else
 						-- check if this needs an unobtainable icon even though it's being shown
 						right = GetUnobtainableTexture(FirstParent(parent, "e") or FirstParent(parent, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
@@ -1465,7 +1465,7 @@ local function SearchForLink(link)
 				hash = kind .. ":" .. id,
 			});
 			if not obj.__type then
-				obj.icon = "Interface\\ICONS\\INV_Misc_EngGizmos_20";
+				obj.icon = 133878;
 				obj.text = "Search Results for '" .. obj.hash .. "'";
 				local response = app:BuildSearchResponse(app:GetDataCache().g, kind, id);
 				if response and #response > 0 then
@@ -1481,7 +1481,7 @@ local function SearchForLink(link)
 		end
 	else
 		local obj = { hash = kind };
-		obj.icon = "Interface\\ICONS\\INV_Misc_EngGizmos_20";
+		obj.icon = 133878;
 		obj.text = "Search Results for '" .. obj.hash .. "'";
 		local response = app:BuildSearchResponseForField(app:GetDataCache().g, kind);
 		if response and #response > 0 then
@@ -1669,7 +1669,7 @@ function app:GetDataCache()
 		if app.Categories.Skills then
 			tinsert(g, {
 				text = SKILLS,
-				icon = "Interface\\ICONS\\SPELL_NATURE_THUNDERCLAP",
+				icon = 136105,
 				g = app.Categories.Skills
 			});
 		end
@@ -2157,7 +2157,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 		local data = achievementData[t.achievementID];
 		return (data and data.icon) or app.GetIconFromProviders(t)
 			or (t.spellID and GetSpellIcon(t.spellID))
-			or t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
+			or t.parent.icon or 311226;
 	end
 	fields.parentCategoryID = function(t)
 		local data = GetAchievementCategory(t.achievementID);
@@ -2465,7 +2465,7 @@ else
 		local data = achievementData[t.achievementID];
 		return (data and data.icon) or app.GetIconFromProviders(t)
 			or (t.spellID and GetSpellIcon(t.spellID))
-			or t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
+			or t.parent.icon or 311226;
 	end
 	fields.parentCategoryID = function(t)
 		local data = achievementData[t.achievementID];
@@ -3257,7 +3257,7 @@ local createNPC = app.CreateClass("NPC", "npcID", {
 		return NPCNameFromID[t.npcID] or RETRIEVING_DATA;
 	end,
 	["icon"] = function(t)
-		return (t.parent and t.parent.headerID and t.parent.headerID == app.HeaderConstants.VENDORS and "Interface\\Icons\\INV_Misc_Coin_01") or app.GetRelativeDifficultyIcon(t);
+		return (t.parent and t.parent.headerID and t.parent.headerID == app.HeaderConstants.VENDORS and 133784) or app.GetRelativeDifficultyIcon(t);
 	end,
 	["title"] = function(t)
 		return NPCTitlesFromID[t.npcID];
@@ -3740,7 +3740,7 @@ local spellFields = {
 		if icon and icon ~= 136235 and icon ~= 136192 then
 			return icon;
 		end
-		return "Interface\\ICONS\\INV_Scroll_04";
+		return 134940;
 	end,
 	["description"] = app.GameBuildVersion < 20000 and function(t)
 		return GetSpellDescription(t.spellID);
@@ -3979,9 +3979,9 @@ if C_PetJournal and app.GameBuildVersion > 30000 then
 else
 	speciesFields.icon = function(t)
 		if t.itemID then
-			return GetItemIcon(t.itemID) or "Interface\\Icons\\INV_Misc_QuestionMark";
+			return GetItemIcon(t.itemID) or 134400;
 		end
-		return "Interface\\Icons\\INV_Misc_QuestionMark";
+		return 134400;
 	end
 	speciesFields.name = function(t)
 		return t.itemID and GetItemInfo(t.itemID) or RETRIEVING_DATA;
