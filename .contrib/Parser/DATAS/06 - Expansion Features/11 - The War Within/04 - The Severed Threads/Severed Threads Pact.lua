@@ -365,6 +365,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					["sourceQuest"] = 82645,
 					["provider"] = { "n", 224184 },	-- Ghos'opp
 					["coord"] = { 39.5, 51.4, AZJ_KAHET },
+					["g"] = {
+						o(438038),	-- Venomancy Flask
+					},
 				}),
 				q(81482, {	-- Testing Formulae: Gelatinous Unguent
 					["sourceQuest"] = 82647,
@@ -497,9 +500,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				q(81504, {	-- Infiltration: Hidden Figures
 					["sourceQuest"] = 82649,
 					["provider"] = { "n", 224201 },	-- Ru'murh
-					["coord"] = { 76.2, 47.4, AZJ_KAHET },
+					["coord"] = { 77.5, 42.9, AZJ_KAHET },
 					["g"] = {
-						i(219358),	-- Bundle of Coded Silks (QI!)
+						o(439382, {	-- Suspicious Shipment
+							i(219358),	-- Bundle of Coded Silks (QI!)
+						}),
 					},
 				}),
 				q(81483, {	-- Infiltration: Production Blocker
@@ -612,67 +617,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 							i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
 						}),
 					},
-				}),
-			})),
-			n(TREASURES, sharedData({
-				["isDaily"] = true,
-				["sourceQuest"] = 80545,	-- The General Weekly pickup
-				["cost"] = {{"i",228949,1}},	-- Rumor Map
-			},{
-				o(437060, {	-- Aspirant's Tribute
-					["provider"] = { "o", 437058 },	-- Forgotten Memorial
-					["coord"] = { 69.2, 81.6, AZJ_KAHET },
-					["questID"] = 80688,
-				}),
-				o(455435, {	-- Aspirant's Tribute
-					["provider"] = { "o", 437191 },	-- Forgotten Memorial
-					["coord"] = { 60.1, 82.5, AZJ_KAHET },
-					["questID"] = 81467,
-				}),
-				o(455436, {	-- Aspirant's Tribute
-					["provider"] = { "o", 437389 },	-- Forgotten Memorial
-					["coord"] = { 65.2, 49.0, AZJ_KAHET },
-					["questID"] = 82876,
-				}),
-				o(455437, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451595 },	-- Forgotten Memorial
-					["coord"] = { 33.7, 41.9, AZJ_KAHET },
-					["questID"] = 82873,
-				}),
-				o(455439, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451596 },	-- Forgotten Memorial
-					["coord"] = { 39.3, 41.6, AZJ_KAHET },
-					["questID"] = 82874,
-				}),
-				o(455440, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451597 },	-- Forgotten Memorial
-					["coord"] = { 63.2, 11.3, AZJ_KAHET },
-					["questID"] = 82875,
-				}),
-				o(455442, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451599 },	-- Forgotten Memorial
-					["coord"] = { 76.2, 65.7, AZJ_KAHET },
-					["questID"] = 82877,
-				}),
-				o(455443, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451600 },	-- Forgotten Memorial
-					["coord"] = { 75.7, 86.9, AZJ_KAHET },
-					["questID"] = 82878,
-				}),
-				o(455444, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451601 },	-- Forgotten Memorial
-					["coord"] = { 48.5, 59.5, AZJ_KAHET },
-					["questID"] = 82879,
-				}),
-				o(455445, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451602 },	-- Forgotten Memorial
-					["coord"] = { 41.0, 29.0, AZJ_KAHET },
-					["questID"] = 82880,	-- 81572 beta?
-				}),
-				o(455446, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451603 },	-- Forgotten Memorial
-					["coord"] = { 7.5, 25.7, NERUBAR },
-					["questID"] = 82881,
 				}),
 			})),
 			n(VENDORS, {
@@ -821,7 +765,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				["name"] = [[~("The Weaver considers you a Mastermind. Congratulations, Silksinger %s."):format(UnitName("player"))]],
 			}),
 			-- City Rumors (SpellID: 463344), events are available after unlocking Level 1 (Acquaintance) with the General, Vizier and Weaver
-			-- Using Rumor Map Bundle (ItemID 228950) triggers following 6 quests as completed and reveals the NPCs with "rumors" on the map
+			-- Using Rumor Map Bundle (ItemID 228950) triggers following 6 quests as completed and reveals 6 NPCs with "rumors" on the map
 			q(82616),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
 			q(82641),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
 			q(82643),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
@@ -830,6 +774,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(82649),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
 			-- Quest Givers or "Rumor Givers" are Eirzay <Agent of the General>, Ghos'opp <Agent of the Vizier>, Ru'murh <Agent of the Weaver>
 			-- Different rumors can trigger the same HQTs as commented below. They are not triggered until you talk to the NPC that gives you the rumor
+			-- Dates at the end of the comments are notes as to when I completed the event the first time. They will be removed once all the events are confirmed. --Exo
 			q(82581, {	-- Ru'murh  (n: 224199 @ 45.6, 51.0), starts questID 81483 (Infiltration: Production Blocker), (23-09-24, Exo)
 					-- Ghos'opp (n: 224183 @ 64.5, 87.3), starts questID 81481 (Sabotage: Transformatory Vessels), (27-09-24, Exo)
 					-- Ru'murh  (n: 224192 @ 79.6, 56.6), starts questID 81500 (Wet Work: Step Into Their Parlor), (29-09-24, Exo)
@@ -853,6 +798,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 					-- Eirzay   (n: 224162 @ 33.3, 49.1), starts questID 81487 (Breaking the Phalanx: Threadblades), (01-10-24, Exo)
 					-- Eirzay   (n: 224163 @ 27.9, 56.7), starts questID 81488 (Breaking the Phalanx: Schismatic Sages), (04-10-24, Exo)
 					-- Eirzay   (n: 224167 @ 15.6, 45.7), starts questID 81489 (Bounty: Zorikal the Patron), (09-10-24, Exo)
+					-- Ghos'opp (n: 224184 @ 39.5, 51.4), starts questID 81505 (Sabotage: Venomancers), (14-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82644, {	-- Ru'murh  (n: 224197 @ 55.7, 47.8), starts questID 81472 (Information Control: Ansurek's Truth), (23-09-24, Exo)
@@ -865,6 +811,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(82646, {	-- Eirzay   (n: 224172 @ 54.5, 63.6), starts questID 81492 (Armaments: Smithing Tools), (23-09-24, Exo)
 					-- Eirzay   (n: 224176 @ 61.4, 24.1), starts questID 81494 (Relics of War: Rak-Zakaz), (28-09-24, Exo)
 					-- Eirzay   (n: 224173 @ 36.4, 49.2), starts questID 81478 (Relics of War: The Ruptured Lake), (04-10-24, Exo)
+					-- Ru'murh  (n: 224201 @ 77.5, 42.9), starts questID 81504 (Infiltration: Hidden Figures), (12-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82648, {	-- Ru'murh  (n: 224200 @ 64.2, 75.3), starts questID 81503 (Infiltration: Terror Made Manifest), (23-09-24, Exo)
@@ -873,10 +820,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past)
-			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224201 @ 76.2, 47.4), start questID 81504 (Infiltration: Hidden Figures)
 			-- Missing 5 more quest data/givers
 			--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID ()
-			-- Missing 11 total quest data/givers, 81505 81497 (and 5 more)
+			-- Missing 11 total quest data/givers, 81497 (and 5 more)
 			q(79698),	-- Triggered after completing questID 79627 (Wine and Die)
 			-- q(80688), -- triggered after completing task for a 'Rumor' (re-capture and narrow down)
 			-- Weaver's Lair Profession Table

@@ -88,7 +88,9 @@ src\Classes\Item.Classic.lua
 src\Classes\Encounter.lua
 src\Classes\Expansion.lua
 src\Classes\FlightPath.lua
+src\Classes\Header.lua
 src\Classes\Maps.lua
+src\Classes\NPC.lua
 src\Classes\Objects.lua
 src\Classes\Category.lua
 src\Classes\Deaths.lua
