@@ -456,6 +456,9 @@ q(45235),	-- Ensemble: Funerary Plate of the Chosen Dead [Heroic]
 q(45236),	-- Ensemble: Funerary Plate of the Chosen Dead [Mythic]
 q(45237),	-- Ensemble: Funerary Plate of the Chosen Dead [LFR]
 
+------ Trial of Style ------
+q(55566),	-- Ensemble: Chainmail of the Timeless Hunt
+
 ------ Trading Post Arsenals ------
 q(77336),	-- Armaments of the Light Avenger
 q(65568),	-- Arsenal: Blades of Elune
@@ -782,7 +785,7 @@ q(50678),	-- Ensemble: Battlegear of the Frostwolves
 q(50680),	-- Ensemble: Ceremonial Karabor Finery
 
 -- Sha'Tari Defense
-q(50681),	-- learning Ensemble: Sha'tari Defender's Plate
+q(50681),	-- Ensemble: Sha'tari Defender's Plate
 
 --- Legion
 
@@ -864,6 +867,10 @@ q(47255),	-- Arsenal: Armaments of the Ebon Blade
 q(47256),	-- Arsenal: Armaments of the Silver Hand
 q(48316),	-- Arsenal: Weapons of the Lightforged
 q(66309),	-- Ensemble: Dark Ranger's Attire
+q(43279),	-- Ensemble: Fel-Chain Mail Armor
+q(43281),	-- Ensemble: Fel-Infused Cloth Armor
+q(43278),	-- Ensemble: Felforged Plate Armor
+q(43280),	-- Ensemble: Felshroud Lather Armor
 
 --- BFA
 q(66302),	-- Arsenal: Lavaforge Armaments
@@ -874,12 +881,20 @@ q(55493),	-- Ensemble: Brawler's Garb [H]
 
 --- Shadowlands
 q(66280),	-- Ensemble: Blood Knight's Dedication
+q(65176),	-- Ensemble: Ravencrest's Battleplate (188209)
 
 --- Dragonflight
 q(78840),	-- Arsenal: Whispering Temple Blades
 q(76018),	-- Ensemble: Azure Renewal Finery
+q(70757),	-- Ensemble: Azure Valdrakken Clothing
 q(76038),	-- Ensemble: Black Dragonflight's Vestments
+q(70756),	-- Ensemble: Black Valdrakken Clothing
+q(70758),	-- Ensemble: Bronze Valdrakken Clothing
+q(70755),	-- Ensemble: Crimson Valdrakken Clothing
 q(65738),	-- Ensemble: Dashing Buccaneer's Slops
+q(70759),	-- Ensemble: Green Valdrakken Clothing
+q(77884),	-- Ensemble: Kaldorei Protector's Adornment
+q(77783),	-- Traditionalist's Kaldorei Blades
 
 -- Engi Goggles
 q(78030),	-- Ensemble: Chromatically Calibrated Holo-Gogs

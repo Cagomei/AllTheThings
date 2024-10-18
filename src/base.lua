@@ -233,6 +233,15 @@ app.GetNameFromProviders = function(group)
 	end
 end;
 
+-- Common Metatable Functions
+app.MetaTable = {}
+app.MetaTable.AutoTable = { __index = function(t, key)
+	if key == nil then return end
+	local k = {}
+	t[key] = k
+	return k
+end}
+
 -- Cache information about the player.
 app.Gender = UnitSex("player");
 app.GUID = UnitGUID("player");

@@ -8,7 +8,7 @@ local appName, app = ...;
 local L = app.L;
 
 local AssignChildren, CloneClassInstance, GetRelativeValue = app.AssignChildren, app.CloneClassInstance, app.GetRelativeValue;
-local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject;
+local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
 
 -- Abbreviations
 L.ABBREVIATIONS[L.UNSORTED .. " %> " .. L.UNSORTED] = "|T" .. app.asset("WindowIcon_Unsorted") .. ":0|t " .. L.SHORTTITLE .. " %> " .. L.UNSORTED;
@@ -51,7 +51,6 @@ local GetFactionName = app.WOWAPI.GetFactionName;
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemID = app.WOWAPI.GetItemID;
 local GetSpellName = app.WOWAPI.GetSpellName;
-local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
 
 local C_TradeSkillUI = C_TradeSkillUI;
@@ -59,7 +58,7 @@ local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkill
 	= C_TradeSkillUI.GetCategories, C_TradeSkillUI.GetCategoryInfo, C_TradeSkillUI.GetRecipeInfo, C_TradeSkillUI.GetRecipeSchematic, C_TradeSkillUI.GetTradeSkillLineForRecipe;
 
 -- App & Module locals
-local ArrayAppend, constructor = app.ArrayAppend, app.constructor;
+local ArrayAppend = app.ArrayAppend
 local CacheFields, SearchForField, SearchForFieldContainer, SearchForObject
 	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForObject
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
@@ -185,7 +184,7 @@ local function GetCollectibleIcon(data, iconOnly)
 	if data.collectible then
 		local collected = data.collected
 		if not collected and data.collectedwarband then
-			return iconOnly and L["COLLECTED_WARBAND_ICON"] or L["COLLECTED_WARBAND"];
+			return iconOnly and L.COLLECTED_WARBAND_ICON or L.COLLECTED_WARBAND;
 		end
 		return iconOnly and app.GetCollectionIcon(collected) or app.GetCollectionText(collected);
 	end
@@ -2835,13 +2834,12 @@ local function DetermineCraftedGroups(group, FillData)
 		-- app.PrintDebug(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID,skipLevel);
 		if craftedItemID and not craftableItemIDs[craftedItemID] and (expandedNesting or not craftedItems[craftedItemID]) then
 			-- app.PrintDebug("recipeID",recipeID);
-			recipe = SearchForObject("recipeID",recipeID,"key");
+			recipe = SearchForObject("recipeID",recipeID,"key") or {recipeID=recipeID}
 			if recipe then
 				if expandedNesting then
 					recipe = CreateObject(recipe)
 					recipe.collectible = false
 					recipe.fillable = true
-					recipe.nomerge = true
 					groups[#groups + 1] = recipe
 				else
 					-- crafted items should be considered unique per recipe
@@ -3133,6 +3131,10 @@ local function RunGroupsLayeredAsync(FillData)
 		Run(RunGroupsLayeredAsync, FillData)
 	end
 end
+local function HandleOnWindowFillComplete(window)
+	window.data._fillcomplete = true
+	app.HandleEvent("OnWindowFillComplete", window)
+end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
 	group.__FillGroups = true
@@ -3161,8 +3163,14 @@ app.FillGroups = function(group)
 	if groupWindow then
 		local Runner = groupWindow:GetRunner();
 		FillData.Runner = Runner
-		Runner.OnEnd(groupWindow.StopProcessing);
-		groupWindow.StartProcessing();
+		if not groupWindow.SelfHandleOnWindowFillComplete then
+			-- capture a function closure which can handle the event for the window
+			-- since OnEnd does not handle parameters
+			groupWindow.SelfHandleOnWindowFillComplete = function()
+				HandleOnWindowFillComplete(groupWindow)
+			end
+		end
+		Runner.OnEnd(groupWindow.SelfHandleOnWindowFillComplete)
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
 		Runner.SetPerFrame(25);
 		-- Recursive Fill
@@ -3417,6 +3425,7 @@ local function BuildSourceParent(group)
 				description = L.SOURCES_DESC,
 				icon = 134441,
 				OnUpdate = app.AlwaysShowUpdate,
+				sourceIgnored = true,
 				skipFill = true,
 				SortPriority = -3.0,
 				g = {},
@@ -3968,63 +3977,6 @@ end
 app.SearchForLink = SearchForLink;
 end
 
--- Profession Lib
-(function()
-app.SpecializationSpellIDs = setmetatable(app.SkillDB.SpecializationSpells, {__index = function(t,k) return k; end})
-local fields = {
-	["key"] = function(t)
-		return "professionID";
-	end,
-	--[[
-	["name"] = function(t)
-		if app.GetSpecializationBaseTradeSkill(t.professionID) then return GetSpellName(t.professionID); end
-		if t.professionID == 129 then return GetSpellName(t.spellID); end
-		return C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
-	end,
-	["icon"] = function(t)
-		if app.GetSpecializationBaseTradeSkill(t.professionID) then return GetSpellIcon(t.professionID); end
-		if t.professionID == 129 then return GetSpellIcon(t.spellID); end
-		return GetTradeSkillTexture(t.professionID);
-	end,
-	]]--
-	["name"] = function(t)
-		local spellID = t.spellID
-		local name
-		if spellID and spellID ~= 2366 then
-			name = GetSpellName(spellID)
-		end
-		return name or C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID)
-	end,
-	["icon"] = function(t)
-		local icon
-		local spellID = t.spellID
-		if spellID then
-			icon = GetSpellIcon(spellID)
-		end
-		return icon or GetTradeSkillTexture(t.professionID);
-	end,
-	["spellID"] = function(t)
-		return app.SkillDB.SkillToSpell[t.professionID];
-	end,
-	["skillID"] = function(t)
-		return t.professionID;
-	end,
-	["requireSkill"] = function(t)
-		return t.professionID;
-	end,
-	--[[
-	["sym"] = function(t)
-		return {{"selectprofession", t.professionID},
-				{"not","headerID",app.HeaderConstants.PROFESSIONS}};	-- Ignore the Main Professions header that will get pulled in
-	end,
-	--]]--
-};
-app.BaseProfession = app.BaseObjectFields(fields, "BaseProfession");
-app.CreateProfession = function(id, t)
-	return setmetatable(constructor(id, t, "professionID"), app.BaseProfession);
-end
-end)();
-
 -- Processing Functions
 do
 local GetTimePreciseSec = GetTimePreciseSec
@@ -4357,6 +4309,7 @@ local function DirectGroupUpdate(group, got)
 		-- sometimes we may want to trigger a delayed fill operation on a group, but when attempting the fill originally,
 		-- the group may not yet be in a state for proper filling... so we can instead assign the group to trigger a fill
 		-- once it received a direct update within a window
+		-- TODO: use an Event for this check eventually
 		if group.DGU_Fill then
 			group.DGU_Fill = nil
 			-- app.PrintDebug("DGU_Fill",app:SearchLink(group))
@@ -5104,7 +5057,6 @@ function app:CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local suffix = app.GenerateSourceHash(group);
 	local popout = app.Windows[suffix];
-	local showing = not popout or not popout:IsVisible();
 	-- force data to be re-collected if this is a quest chain since its logic is affected by settings
 	if group.questID or group.sourceQuests then popout = nil; end
 	-- app.PrintDebug("Popout for",suffix,"showing?",showing)
@@ -5200,8 +5152,10 @@ function app:CreateMiniListForGroup(group)
 		end
 
 		app.HandleEvent("OnNewPopoutGroup", popout.data)
-		-- Sort any content added to the Popout data by the Global sort
-		app.Sort(popout.data.g, app.SortDefaults.Global)
+		-- Sort any content added to the Popout data by the Global sort (not for popped out difficulty groups)
+		if not popout.data.difficultyID then
+			app.Sort(popout.data.g, app.SortDefaults.Global)
+		end
 
 		popout:BuildData();
 		-- always expand all groups on initial creation
@@ -6388,17 +6342,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window:SetScale(scale);
 
 	window:SetUserPlaced(true);
-	window.data = {
-		['text'] = suffix,
-		['icon'] = 132319,
-		['visible'] = true,
-		['g'] = {
-			{
-				['text'] = "No data linked to listing.",
-				['visible'] = true
-			}
-		}
-	};
+	window.data = app.EmptyTable
 
 	-- set whether this window lock is persistable between sessions
 	if suffix == "Prime" or suffix == "CurrentInstance" or suffix == "RaidAssistant" or suffix == "WorldQuests" then
@@ -6450,21 +6394,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window.Container = container;
 	container.rows = {};
 	container:Show();
-
-	-- Allows the window to toggle whether it shows it is currently processing changes/updates
-	-- Currently will do this by changing the texture of the CloseButton
-	-- local closeTexture = window.CloseButton:GetNormalTexture():GetTexture();
-	-- app.PrintDebug(closeTexture, window.CloseButton:GetHighlightTexture(), window.CloseButton:GetPushedTexture(), window.CloseButton:GetDisabledTexture())
-	-- Textures are a bit funky, maybe not good to try using that... maybe will come up with another idea sometime...
-	window.StartProcessing = function()
-		-- app.PrintDebug("StartProcessing",suffix)
-		-- window.CloseButton:SetNormalTexture(134376);	-- Inv_misc_pocketwatch_01
-	end
-	window.StopProcessing = function()
-		-- app.PrintDebug("StopProcessing",suffix)
-		-- window.CloseButton:SetNormalTexture(closeTexture);
-		window.data._fillcomplete = true
-	end
 
 	-- Setup the Event Handlers
 	-- TODO: review how necessary this actually is in Retail
