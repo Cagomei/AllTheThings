@@ -47,15 +47,20 @@ namespace ATT.DB
             {
                 if (!_typeProperties.TryGetValue(parseType, out PropertyInfo[] properties))
                 {
-                    _typeProperties[parseType] = properties = parseType.GetProperties();
+                    _typeProperties[parseType] = parseType.GetProperties();
                 }
             }
 
-            return csvlines
-#if !DEBUG
-                .AsParallel()
-#endif
-                .Select(l => Parse(parseType, l)).Where(o => o != null).ToDictionary(t => t.ID, t => t);
+            var dictionary = new Dictionary<long, IDBType>();
+            foreach (var line in csvlines)
+            {
+                var parsedLine = Parse(parseType, line);
+                if (parsedLine != null)
+                {
+                    dictionary[parsedLine.ID] = parsedLine;
+                }
+            }
+            return dictionary;
         }
 
         private static IDBType Parse(Type parseType, ICsvLine csvline)
@@ -71,7 +76,10 @@ namespace ATT.DB
             {
                 try
                 {
-                    pi.SetValue(obj, Convert.ChangeType(csvline[pi.Name], pi.PropertyType));
+                    if (csvline.Headers.Contains(pi.Name))
+                    {
+                        pi.SetValue(obj, Convert.ChangeType(csvline[pi.Name], pi.PropertyType));
+                    }
                 }
                 catch (Exception ex)
                 {

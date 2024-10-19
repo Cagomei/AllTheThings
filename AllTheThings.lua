@@ -3170,7 +3170,10 @@ app.FillGroups = function(group)
 				HandleOnWindowFillComplete(groupWindow)
 			end
 		end
-		Runner.OnEnd(groupWindow.SelfHandleOnWindowFillComplete)
+		-- only trigger the OnWindowFillComplete event if we are filling the Root group of the window
+		if groupWindow.data == group then
+			Runner.OnEnd(groupWindow.SelfHandleOnWindowFillComplete)
+		end
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
 		Runner.SetPerFrame(25);
 		-- Recursive Fill
@@ -6342,7 +6345,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window:SetScale(scale);
 
 	window:SetUserPlaced(true);
-	window.data = app.EmptyTable
+	window.data = {}
 
 	-- set whether this window lock is persistable between sessions
 	if suffix == "Prime" or suffix == "CurrentInstance" or suffix == "RaidAssistant" or suffix == "WorldQuests" then
@@ -9535,6 +9538,7 @@ customWindowUpdates.list = function(self, force, got)
 		local dataType = (app.GetCustomWindowParam("list", "type") or "quest");
 		local onlyMissing = app.GetCustomWindowParam("list", "missing");
 		local onlyCached = app.GetCustomWindowParam("list", "cached");
+		local onlyCollected = app.GetCustomWindowParam("list", "collected");
 		local harvesting = app.GetCustomWindowParam("list", "harvesting");
 		self.PartitionSize = tonumber(app.GetCustomWindowParam("list", "part")) or 1000;
 		self.Limit = tonumber(app.GetCustomWindowParam("list", "limit")) or 1000;
@@ -9722,6 +9726,20 @@ customWindowUpdates.list = function(self, force, got)
 			else
 				overrides.visible = function(o, key)
 					return o._missing;
+				end
+			end
+		end
+		if onlyCollected then
+			app.SetDGUDelay(0);
+			if onlyMissing then
+				overrides.visible = function(o, key)
+					if o._missing and o.collected then
+						return o.collected;
+					end
+				end
+			else
+				overrides.visible = function(o, key)
+					return o.collected;
 				end
 			end
 		end
