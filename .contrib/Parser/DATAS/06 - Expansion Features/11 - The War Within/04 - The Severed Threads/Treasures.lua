@@ -134,17 +134,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 				o(455437, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451595 },	-- Forgotten Memorial
-					["coord"] = { 33.7, 41.9, AZJ_KAHET },
+					["coord"] = { 33.7, 42.2, AZJ_KAHET },
 					["questID"] = 82873,
 				}),
 				o(455439, {	-- Aspirant's Tribute
+					["description"] = "Inside The Wormlands.",
 					["provider"] = { "o", 451596 },	-- Forgotten Memorial
 					["coord"] = { 39.3, 41.6, AZJ_KAHET },
 					["questID"] = 82874,
 				}),
 				o(455440, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451597 },	-- Forgotten Memorial
-					["coord"] = { 63.2, 11.3, AZJ_KAHET },
+					["coord"] = { 63.2, 11.2, AZJ_KAHET },
 					["questID"] = 82875,
 				}),
 				o(455441, {	-- Aspirant's Tribute (was missing, WoWhead Data)
@@ -159,12 +160,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 				o(455443, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451600 },	-- Forgotten Memorial
-					["coord"] = { 75.7, 86.9, AZJ_KAHET },
+					["coord"] = { 75.8, 87.3, AZJ_KAHET },
 					["questID"] = 82878,
 				}),
 				o(455444, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451601 },	-- Forgotten Memorial
-					["coord"] = { 48.5, 59.5, AZJ_KAHET },
+					["coord"] = { 48.5, 59.6, AZJ_KAHET },
 					["questID"] = 82879,
 				}),
 				o(455445, {	-- Aspirant's Tribute

@@ -183,31 +183,6 @@ root(ROOTS.Unsorted, {
 				i(221485),	-- Defias Gunpowder
 			}),
 			n(DUNGEONS_AND_RAIDS, {	-- Timewalking Dungeon Gear
-				i(224731),	-- Ogre-Sized Belt
-				i(224732),	-- Foreman's Handwraps
-				i(224733),	-- Watchman's Boots
-				i(224734),	-- Defias Spiked Pauldrons
-				i(224735),	-- Blackened Bone Necklace
-				i(224736),	-- Shredder Teeth
-				i(224737),	-- Goblin Treekickers
-				i(224738),	-- Logger's Wristguards
-				i(224739),	-- Lumbermaster's Mantle
-				i(224740),	-- Forgemasters's Faceshield
-				i(224741),	-- Defias Scimitar
-				i(224742),	-- Smite's Pistol
-				i(224744),	-- Defias Cuirass
-				i(224745),	-- Blackguard Slippers
-				i(224746),	-- Thief's Gloves
-				i(224747),	-- Buccaneer's Bludgeon
-				i(224748),	-- Captain's Tricorne
-				i(224749),	-- Goblin Griptreads
-				i(224753),	-- Pirate Captain's Girdle
-				i(224754),	-- Guildmaster's Leggings
-				i(224755),	-- Defias Knifeguards
-				i(224756),	-- Cookie's Special Flavors
-				i(224757),	-- Master Chef's Gloves
-				i(224758),	-- Stolen Stormwind Helmet
-				i(224759),	-- Pirate's Bracers
 				i(225185),	-- [DNT UNUSED] Reforged 1 Ring
 			}),
 			n(SPECIAL, {	-- Que?!?! Codex maybe //Braghe?
@@ -553,73 +528,6 @@ root(ROOTS.Unsorted, {
 				i(231017),	-- Wings of the Onyx Monarch
 			}),
 			n(PVP, {
-				i(230951),	-- Ensemble: Obsidian Aspirant's Cloth Armor
-				i(230952),	-- Ensemble: Obsidian Aspirant's Leather Armor
-				i(230953),	-- Ensemble: Obsidian Aspirant's Mail Armor
-				i(230954),	-- Ensemble: Obsidian Aspirant's Plate Armor
-				i(230955),	-- Ensemble: Obsidian Gladiator's Death Knight Armor
-				i(230956),	-- Ensemble: Obsidian Gladiator's Demon Hunter Armor
-				i(230957),	-- Ensemble: Obsidian Gladiator's Druid Armor
-				i(230958),	-- Ensemble: Obsidian Gladiator's Evoker Armor
-				i(230959),	-- Ensemble: Obsidian Gladiator's Hunter Armor
-				i(230960),	-- Ensemble: Obsidian Gladiator's Mage Armor
-				i(230961),	-- Ensemble: Obsidian Gladiator's Monk Armor
-				i(230962),	-- Ensemble: Obsidian Gladiator's Paladin Armor
-				i(230963),	-- Ensemble: Obsidian Gladiator's Priest Armor
-				i(230964),	-- Ensemble: Obsidian Gladiator's Rogue Armor
-				i(230965),	-- Ensemble: Obsidian Gladiator's Shaman Armor
-				i(230966),	-- Ensemble: Obsidian Gladiator's Warlock Armor
-				i(230967),	-- Ensemble: Obsidian Gladiator's Warrior Armor
-				i(230968),	-- Ensemble: Elite Obsidian Gladiator's Death Knight Armor
-				i(230969),	-- Ensemble: Elite Obsidian Gladiator's Demon Hunter Armor
-				i(230970),	-- Ensemble: Elite Obsidian Gladiator's Druid Armor
-				i(230971),	-- Ensemble: Elite Obsidian Gladiator's Evoker Armor
-				i(230972),	-- Ensemble: Elite Obsidian Gladiator's Hunter Armor
-				i(230973),	-- Ensemble: Elite Obsidian Gladiator's Mage Armor
-				i(230974),	-- Ensemble: Elite Obsidian Gladiator's Monk Armor
-				i(230975),	-- Ensemble: Elite Obsidian Gladiator's Paladin Armor
-				i(230976),	-- Ensemble: Elite Obsidian Gladiator's Priest Armor
-				i(230977),	-- Ensemble: Elite Obsidian Gladiator's Rogue Armor
-				i(230978),	-- Ensemble: Elite Obsidian Gladiator's Shaman Armor
-				i(230979),	-- Ensemble: Elite Obsidian Gladiator's Warlock Armor
-				i(230980),	-- Ensemble: Elite Obsidian Gladiator's Warrior Armor
-				i(230981),	-- Arsenal: Obsidian Aspirant's Weapons
-				i(230982),	-- Arsenal: Obsidian Gladiator's Weapons
-				i(230983),	-- Arsenal: Elite Obsidian Gladiator's Weapons
-
-				i(231120),	-- Ensemble: Verdant Aspirant's Cloth Armor
-				i(231121),	-- Ensemble: Verdant Aspirant's Leather Armor
-				i(231122),	-- Ensemble: Verdant Aspirant's Mail Armor
-				i(231123),	-- Ensemble: Verdant Aspirant's Plate Armor
-				i(231124),	-- Ensemble: Verdant Gladiator's Death Knight Armor
-				i(231125),	-- Ensemble: Verdant Gladiator's Demon Hunter Armor
-				i(231126),	-- Ensemble: Verdant Gladiator's Druid Armor
-				i(231127),	-- Ensemble: Verdant Gladiator's Evoker Armor
-				i(231128),	-- Ensemble: Verdant Gladiator's Hunter Armor
-				i(231129),	-- Ensemble: Verdant Gladiator's Mage Armor
-				i(231130),	-- Ensemble: Verdant Gladiator's Monk Armor
-				i(231131),	-- Ensemble: Verdant Gladiator's Paladin Armor
-				i(231132),	-- Ensemble: Verdant Gladiator's Priest Armor
-				i(231133),	-- Ensemble: Verdant Gladiator's Rogue Armor
-				i(231134),	-- Ensemble: Verdant Gladiator's Shaman Armor
-				i(231135),	-- Ensemble: Verdant Gladiator's Warlock Armor
-				i(231136),	-- Ensemble: Verdant Gladiator's Warrior Armor
-				i(231137),	-- Ensemble: Elite Verdant Gladiator's Death Knight Armor
-				i(231138),	-- Ensemble: Elite Verdant Gladiator's Demon Hunter Armor
-				i(231139),	-- Ensemble: Elite Verdant Gladiator's Druid Armor
-				i(231140),	-- Ensemble: Elite Verdant Gladiator's Evoker Armor
-				i(231141),	-- Ensemble: Elite Verdant Gladiator's Hunter Armor
-				i(231142),	-- Ensemble: Elite Verdant Gladiator's Mage Armor
-				i(231143),	-- Ensemble: Elite Verdant Gladiator's Monk Armor
-				i(231144),	-- Ensemble: Elite Verdant Gladiator's Paladin Armor
-				i(231145),	-- Ensemble: Elite Verdant Gladiator's Priest Armor
-				i(231146),	-- Ensemble: Elite Verdant Gladiator's Rogue Armor
-				i(231147),	-- Ensemble: Elite Verdant Gladiator's Shaman Armor
-				i(231148),	-- Ensemble: Elite Verdant Gladiator's Warlock Armor
-				i(231149),	-- Ensemble: Elite Verdant Gladiator's Warrior Armor
-				i(231150),	-- Arsenal: Verdant Aspirant's Weapons
-				i(231151),	-- Arsenal: Verdant Gladiator's Weapons
-				i(231152),	-- Arsenal: Elite Verdant Gladiator's Weapons
 				i(231344),	-- Obsidian Gladiator's Greatsword
 				i(231345),	-- Obsidian Gladiator's Greatsword
 			}),
@@ -920,8 +828,7 @@ root(ROOTS.Unsorted, {
 			i(226168),	-- Timely Tourist's Spellblade
 			i(228911),	-- Xal'atath's Rusty Coin
 			i(232877),	-- Timely Goodie Bag
-			i(232903),	-- Jang'thraze the Protector
-			i(232904),	-- Sul'thraze the Lasher
+
 			i(232905),	-- Malown's Slam
 		})),
 		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {

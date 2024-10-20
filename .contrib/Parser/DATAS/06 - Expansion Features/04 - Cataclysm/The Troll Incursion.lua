@@ -164,6 +164,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 					["coord"] = { 77.9, 68.1, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Bwemba has inspected the Cat
+							["provider"] = { "n", 52372 },	-- Mauti
+							["coord"] = { 77.16, 69.04, NORTHERN_STRANGLETHORN },
+						}),
+					},
 				}),
 				q(29230, {	-- Mauti (H)
 					["qg"] = 52234,	-- Bwemba
@@ -173,6 +179,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 					["coord"] = { 77.7, 68.3, NORTHERN_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Bwemba has inspected the Cat
+							["provider"] = { "n", 52372 },	-- Mauti
+							["coord"] = { 77.16, 69.04, NORTHERN_STRANGLETHORN },
+						}),
+					},
 				}),
 				q(29105, {	-- Nesingwary Will Know (A)
 					["qg"] = 52281,	-- Livingston Marshal
@@ -196,7 +208,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 							["provider"] = { "n", 52224 },	-- Jungle Serpent
 						}),
 						objective(2, {	-- 0/10 Adventurers healed
-							["provider"] = { "n", 52225 },	-- Fort Livingston Adventurer
+							["providers"] = {
+								{ "n", 52225 },	-- Fort Livingston Adventurer
+								{ "n", 52279 },	-- Daniel Roberts <Blacksmithing Supplies>
+								{ "n", 52280 },	-- Robert Rhodes <Gryphon Master>
+								{ "n", 53555 },	-- Kinnel
+								{ "n", 53556 },	-- Priestess Thaalia
+								{ "n", 53557 },	-- Wulfred Harrys
+							},
 						}),
 					},
 				}),
@@ -210,7 +229,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 							["provider"] = { "n", 52224 },	-- Jungle Serpent
 						}),
 						objective(2, {	-- 0/10 Headhunters healed
-							["provider"] = { "n", 52978 },	-- Injured Bambala Headhunter
+							["providers"] = {
+								{ "n", 52978 },	-- Injured Bambala Headhunter
+								{ "n", 53440 },	-- Durango <General Goods>
+								{ "n", 53441 },	-- Kin'weelay
+								{ "n", 53442 },	-- Priestess Hu'rala
+								{ "n", 53443 },	-- Pechanga <Reagents & Poisons>
+								{ "n", 53444 },	-- Skeezy Whillzap
+								{ "n", 53445 },	-- Morango <Trade Goods>
+							},
 						}),
 					},
 				}),
@@ -243,12 +270,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["sourceQuest"] = 29114,	-- Track the Tracker
 					["coord"] = { 50.3, 21.7, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Bring Grent Direhammer to the body of Mauti
+							["provider"] = { "n", 52349 },	-- Mauti?
+							["coord"] = { 64.5, 21.1, NORTHERN_STRANGLETHORN },
+						}),
+					},
 				}),
 				q(29227, {	-- The Hunter's Revenge (H)
 					["qg"] = 52294,	-- Grent Direhammer
 					["sourceQuest"] = 29226,	-- Track the Tracker
 					["coord"] = { 50.3, 21.7, NORTHERN_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Bring Grent Direhammer to the body of Mauti
+							["provider"] = { "n", 52349 },	-- Mauti?
+							["coord"] = { 64.5, 21.1, NORTHERN_STRANGLETHORN },
+						}),
+					},
 				}),
 				heroscall(q(29156, {	-- The Troll Incursion
 					["timeline"] = { ADDED_4_1_0, REMOVED_7_0_3 },
