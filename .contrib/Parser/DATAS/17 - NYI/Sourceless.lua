@@ -358,12 +358,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(208878),	-- Adventurer's Footlocker //Given to alts who used the TWW prepurchase boost
 			})),
 		}),
-		expansion(EXPANSION.TWW, {
-			-- 11.0.2
-			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-				i(225937),	-- Putrid Goop //Biproduct of Fine Egg Powder salvage
-			})),
-		}),
 	}),
 	n(MOUNT_MODS, {
 		expansion(EXPANSION.DF, {
@@ -773,6 +767,12 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 10.2.6
 			expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
 				q(79988),	--
+			})),
+		}),
+		expansion(EXPANSION.TWW, {
+			-- 11.0.2
+			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+				q(84255),	-- Received item 'The Warband Map to Everywhere All At Once' (itemID 212174) - Not for me, it has to be something else - Darkal
 			})),
 		}),
 	}),

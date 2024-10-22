@@ -2205,14 +2205,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
+				-- #if AFTER 5.0.4
 				objective(1, {	-- 0/2 Strange Dust
 					["provider"] = { "i", 10940 },	-- Strange Dust
 				}),
 				objective(2, {	-- 0/5 Crystal Vial
 					["provider"] = { "i", 3371 },	-- Crystal Vial
 				}),
+				-- #else
+				objective(1, {	-- 0/5 Crystal Vial
+					["provider"] = { "i", 3371 },	-- Crystal Vial
+				}),
+				objective(2, {	-- 0/5 Arcane Powder
+					["provider"] = { "i", 17020 },	-- Arcane Powder
+				}),
+				-- #endif
 				objective(3, {	-- 0/5 Blood Nettle
-					["provider"] = { "i", 71035 },	-- Blood Nettle
+					["providers"] = {
+						{ "i",  71035 },	-- Blood Nettle
+						{ "o", 209059 },	-- Blood Nettle
+					},
+					["coord"] = { 51.5, 10.0, STORMWIND_CITY },
 				}),
 			},
 		}),
@@ -2224,14 +2237,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
+				-- #if AFTER 5.0.4
+				objective(1, {	-- 0/2 Strange Dust
+					["provider"] = { "i", 10940 },	-- Strange Dust
+				}),
+				objective(2, {	-- 0/5 Crystal Vial
+					["provider"] = { "i", 3371 },	-- Crystal Vial
+				}),
+				-- #else
 				objective(1, {	-- 0/5 Crystal Vial
 					["provider"] = { "i", 3371 },	-- Crystal Vial
 				}),
 				objective(2, {	-- 0/5 Arcane Powder
 					["provider"] = { "i", 17020 },	-- Arcane Powder
 				}),
+				-- #endif
 				objective(3, {	-- 0/5 Blood Nettle
-					["provider"] = { "i", 71035 },	-- Blood Nettle
+					["providers"] = {
+						{ "i",  71035 },	-- Blood Nettle
+						{ "o", 209059 },	-- Blood Nettle
+					},
+					["coord"] = { 45.9, 49.5, ORGRIMMAR },
 				}),
 			},
 		}),
