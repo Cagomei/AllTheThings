@@ -8,8 +8,8 @@ WOW_ANNIVERSARY_ROOT = createHeader({
 	eventID = EVENTS.WOW_ANNIVERSARY,
 	eventSchedule = {
 		1, -- Recurring, note that this changes every year.
-		11, 16, 10, 0,	-- 11/16 at 10:00 AM
-		12, 07, 10, 0	-- 12/07 at 10:00 AM
+		10, 22, 10, 0,	-- 10/22 at 10:00 AM
+		01, 07, 10, 0	-- 01/07 at 10:00 AM
 	},
 	text = {
 		en = "WoW's Anniversary",
@@ -191,8 +191,8 @@ WOW_ANNIVERSARY_NINETEEN = createHeader({
 	eventID = 1397,
 	eventSchedule = {
 		0, -- November 16th through December 7th
-		2022, 11, 16,	-- 11/16/2022
-		2022, 12, 7,	-- 12/07/2022
+		2023, 11, 16,	-- 11/16/2023
+		2023, 12, 7,	-- 12/07/2023
 	},
 	text = {
 		en = WOWAPI_GetAchievementName(18702),
@@ -201,12 +201,12 @@ WOW_ANNIVERSARY_NINETEEN = createHeader({
 WOW_ANNIVERSARY_TWENTY = createHeader({
 	readable = "WoW's 20th Anniversary",
 	icon = 133783,
-	-- eventID = 1397,
-	-- eventSchedule = {
-	-- 	0, -- November 16th through December 7th
-	-- 	2022, 11, 16,	-- 11/16/2022
-	-- 	2022, 12, 7,	-- 12/07/2022
-	-- },
+	eventID = 1509,
+	eventSchedule = {
+		0, -- October 22nd through Jan 7th
+		2024, 10, 22,	-- 10/22/2024
+		2025, 01, 07,	-- 01/07/2025
+	},
 	-- text = {
 	-- 	en = WOWAPI_GetAchievementName(18702),
 	-- },
@@ -1258,6 +1258,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(150381),	-- Flayed Doomguard Belt
 					i(150385),	-- Fel-Infused Leggings
 					i(150384),	-- Ring of Entropy
+					i(230011, {["timeline"] = { ADDED_11_0_5 }}),	-- Lil'Kaz (PET!)
 				},
 			}),
 			n(DRAGONS_OF_NIGHTMARE, {
@@ -2171,7 +2172,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["isRaid"] = true,
 				["questID"] = 60214,
 				["isDaily"] = true,
-				["coord"] = { 64.4, 50.7, TANARIS },
+				["coords"] = {
+					-- #IF BEFORE 11.0.5
+					{ 64.4, 50.7, TANARIS },
+					-- #ELSE
+					{ 62.1, 58.4, TANARIS },	-- center of large pat circle
+					-- #ENDIF
+				},
 				["maps"] = {
 					74,	--	Caverns of Time Entrance
 					CAVERNS_OF_TIME,
@@ -2864,16 +2871,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		}),
 		n(WORLD_BOSSES, {
 			-- INFO: These are new world bosses for this year, here so their criteria can nest under them. If they have loot tables and all, it can be put here too (like previous years).
-			n(226646),	-- Sha of Anger
-			n(227257),	-- Archavon the Stone Watcher
-
-			n(121818, {	-- Lord Kazzak [Blasted Lands - Always up]
+			n(226646, {	-- Sha of Anger
 				["isRaid"] = true,
-				["questID"] = 47461,
+				["questID"] = 84282,
 				["isDaily"] = true,
-				["coord"] = { 32.42, 48.21, BLASTED_LANDS },
-				["groups"] = {
-					i(230011),	-- Lil'Kaz (PET!)
+				["coord"] = { 33.7, 55.6 , TANARIS },
+				["maps"] = {
+					74,	--	Caverns of Time Entrance
+					CAVERNS_OF_TIME,
+				},
+			}),
+			n(227257, {	-- Archavon the Stone Watcher
+				["isRaid"] = true,
+				["questID"] = 84256,
+				["isDaily"] = true,
+				["coord"] = { 46.0, 28.9, TANARIS },
+				["maps"] = {
+					74,	--	Caverns of Time Entrance
+					CAVERNS_OF_TIME,
 				},
 			}),
 		}),
@@ -2930,6 +2945,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	n(WOW_ANNIVERSARY_TWENTY, {
 		q(85661),	-- Purchase one Tier 2 Set
 		q(85828),	-- Purchase a second Tier 2 Set
+		q(85723),	-- first WB kill of day/event??
 	}),
 })));
 -- #endif
