@@ -142,9 +142,7 @@ root(ROOTS.Unsorted, {
 				i(223620),	-- 20th Anniversary Cache
 				i(223621),	-- 20th Anniversary Cache
 				i(223622),	-- 20th Anniversary Cache
-				i(224157),	-- Pet Mirror
 				i(224194),	-- Fashion Frenzy Ribbon
-				i(224278),	-- Timewarped Ironforge Blueprints
 				i(225252),	-- Bronze Celebration Token
 				-- Secret
 				i(228617),	-- Benatauk's Clue Book
@@ -165,26 +163,14 @@ root(ROOTS.Unsorted, {
 				i(229375),	-- Neural Enlarger
 				i(229413),	-- "Dogg-Saron" Costume
 				i(229414),	-- Moira Thaurissan's Hammer
-				i(229829),	-- Light Blue Balloon
-				i(229830),	-- Dark Blue Balloon
-				i(229831),	-- Gold Balloon
 				i(229958),	-- Decorated Feather
 				i(230283),	-- Weird Egg
-				i(232374),	-- Greasy Links
-				i(232375),	-- Moon Bread
-				i(232376),	-- Cherry Bombs
-				i(232377),	-- Pappy Thunderbrew's Cough Syrup
-				i(232378),	-- Jenkins' No Nonsense Fried Chicken
-				i(232380),	-- Brivelthwerp's Sassafras Float
-				i(232385),	-- Elekk Ear
 			}),
 			n(DUNGEONS_AND_RAIDS, {	-- Timewalking Dungeon Gear
 				i(225185),	-- [DNT UNUSED] Reforged 1 Ring
 			}),
 			n(SPECIAL, {	-- Que?!?! Codex maybe //Braghe?
-				i(226046),	-- Timely Tourist's Band
 				i(226047),	-- Timely Tourist's Signet
-				i(226048),	-- Timely Tourist's Ring
 				i(226049),	-- Timely Tourist's Pendant
 				i(226051),	-- Timely Tourist's Cloak
 				i(226052),	-- Timely Tourist's Shank
@@ -192,46 +178,36 @@ root(ROOTS.Unsorted, {
 				i(226054),	-- Timely Tourist's Pummeler
 				i(226055),	-- Timely Tourist's Hammer
 				i(226056),	-- Timely Tourist's Blade
-				i(226057),	-- Timely Tourist's Sword
 				i(226058),	-- Timely Tourist's Sharpshooter
 				i(226059),	-- Timely Tourist's Torch
 				i(226060),	-- Timely Tourist's Waraxe
 				i(226061),	-- Timely Tourist's Spade
 				i(226062),	-- Timely Tourist's Polearm
 				i(226063),	-- Timely Tourist's Drill-Tipped Stave
-				i(226064),	-- Timely Tourist's Beacon Staff
 				i(226065),	-- Timely Tourist's Lantern
 				i(226066),	-- Timely Tourist's Shield
 				i(226067),	-- Timely Tourist's Glaive
 				i(226068),	-- Timely Tourist's Breastplate
 				i(226070),	-- Timely Tourist's Gauntlets
 				i(226071),	-- Timely Tourist's Helm
-				i(226072),	-- Timely Tourist's Legguards
 				i(226073),	-- Timely Tourist's Pauldrons
 				i(226074),	-- Timely Tourist's Girdle
 				i(226075),	-- Timely Tourist's Vambraces
-				i(226076),	-- Timely Tourist's Chainmail
 				i(226077),	-- Timely Tourist's Striders
 				i(226078),	-- Timely Tourist's Grips
 				i(226079),	-- Timely Tourist's Coif
 				i(226080),	-- Timely Tourist's Greaves
 				i(226081),	-- Timely Tourist's Shoulderguards
-				i(226082),	-- Timely Tourist's Belt
 				i(226083),	-- Timely Tourist's Bracers
 				i(226084),	-- Timely Tourist's Vest
 				i(226085),	-- Timely Tourist's Boots
-				i(226086),	-- Timely Tourist's Gloves
 				i(226087),	-- Timely Tourist's Headgear
-				i(226088),	-- Timely Tourist's Pants
 				i(226090),	-- Timely Tourist's Sash
-				i(226091),	-- Timely Tourist's Bindings
 				i(226092),	-- Timely Tourist's Robes
-				i(226093),	-- Timely Tourist's Sandals
 				i(226094),	-- Timely Tourist's Handwraps
 				i(226095),	-- Timely Tourist's Cowl
 				i(226096),	-- Timely Tourist's Leggings
 				i(226097),	-- Timely Tourist's Shoulderpads
-				i(226098),	-- Timely Tourist's Cord
 				i(226099),	-- Timely Tourist's Cuffs
 				i(226101),	-- Chromie's Tour Goodie Bag
 				i(226167),	-- Timely Tourist's Bolthrower
@@ -240,51 +216,19 @@ root(ROOTS.Unsorted, {
 				i(226171),	-- Timely Tourist's Cleaver
 			}),
 			n(ARMOR, {	-- Cursed Data!?? Wrath/MoP new itemIDs of PvP and Tier Sets...
-				i(227209),	-- Hateful Gladiator's Dreadplate Chestpiece
-				i(227210),	-- Hateful Gladiator's Plate Chestpiece
-				i(227211),	-- Hateful Gladiator's Ornamented Chestguard
-				i(227215),	-- Hateful Gladiator's Kodohide Robes
 				i(227216),	-- Hateful Gladiator's Wyrmhide Robes
 				i(227217),	-- Hateful Gladiator's Dragonhide Robes
 				i(227219),	-- Hateful Gladiator's Satin Robe
-				i(227220),	-- Hateful Gladiator's Silk Raiment
-				i(227221),	-- Hateful Gladiator's Felweave Raiment
-				i(227228),	-- Hateful Gladiator's Leather Gloves
-				i(227229),	-- Hateful Gladiator's Mooncloth Gloves
-				i(227231),	-- Hateful Gladiator's Felweave Handguards
-				i(227232),	-- Hateful Gladiator's Plate Legguards
-				i(227234),	-- Hateful Gladiator's Ornamented Legplates
-				i(227237),	-- Hateful Gladiator's Kodohide Legguards
-				i(227238),	-- Hateful Gladiator's Leather Legguards
-				i(227240),	-- Hateful Gladiator's Silk Trousers
-				i(227242),	-- Heroes' Frostfire Gloves
-				i(227243),	-- Heroes' Plagueheart Gloves
-				i(227253),	-- Heroes' Plagueheart Leggings
-				i(227261),	-- Heroes' Redemption Greaves
-				i(227263),	-- Heroes' Plagueheart Robe
-				i(227264),	-- Heroes' Robe of Faith
-				i(227266),	-- Heroes' Bonescythe Breastplate
-				i(227270),	-- Heroes' Scourgeborne Battleplate
 				i(227554),	-- Firebird's Legguards
 				i(227555),	-- Firebird's Grips
-				i(227556),	-- Firebird's Gloves
-				i(227561),	-- Gloves of the Thousandfold Blades
 				i(227562),	-- Eternal Blossom Leggings
 				i(227563),	-- Eternal Blossom Gloves
-				i(227564),	-- Eternal Blossom Legguards
-				i(227565),	-- Eternal Blossom Grips
 				i(227566),	-- Legguards of the Lost Catacomb
 				i(227567),	-- Handguards of the Lost Catacomb
 				i(227568),	-- White Tiger Legguards
 				i(227569),	-- White Tiger Handguards
 				i(227570),	-- Legguards of Resounding Rings
 				i(227571),	-- Handguards of Resounding Rings
-				i(227572),	-- Legplates of Resounding Rings
-				i(227573),	-- Gauntlets of Resounding Rings
-				i(227574),	-- Greaves of the Lost Catacomb
-				i(227575),	-- Gauntlets of the Lost Catacomb
-				i(227576),	-- White Tiger Legplates
-				i(227577),	-- White Tiger Gauntlets
 				i(227578),	-- White Tiger Greaves
 				i(227579),	-- White Tiger Gloves
 				i(227580),	-- Firebird's Legwraps
@@ -293,47 +237,12 @@ root(ROOTS.Unsorted, {
 				i(227583),	-- Eternal Blossom Handwraps
 				i(227584),	-- Guardian Serpent Legwraps
 				i(227585),	-- Guardian Serpent Handwraps
-				i(227588),	-- Sha-Skin Gloves
-				i(227591),	-- Gloves of the Burning Scroll
 				i(227592),	-- Eternal Blossom Handguards
 				i(227593),	-- Eternal Blossom Breeches
 				i(227594),	-- Red Crane Legguards
 				i(227595),	-- Red Crane Gauntlets
 				i(227596),	-- Red Crane Handwraps
 				i(227597),	-- Red Crane Legwraps
-				i(227599),	-- Red Crane Leggings
-				i(227602),	-- Malevolent Gladiator's Footguards of Alacrity
-				i(227603),	-- Malevolent Gladiator's Leather Gloves
-				i(227604),	-- Malevolent Gladiator's Ironskin Gloves
-				i(227610),	-- Malevolent Gladiator's Waistband of Accuracy
-				i(227611),	-- Malevolent Gladiator's Belt of Cruelty
-				i(227612),	-- Malevolent Gladiator's Armwraps of Alacrity
-				i(227613),	-- Malevolent Gladiator's Armwraps of Accuracy
-				i(227616),	-- Malevolent Gladiator's Footguards of Alacrity
-				i(227618),	-- Malevolent Gladiator's Ringmail Gauntlets
-				i(227619),	-- Malevolent Gladiator's Chain Leggings
-				i(227622),	-- Malevolent Gladiator's Links of Cruelty
-				i(227624),	-- Malevolent Gladiator's Armbands of Prowess
-				i(227625),	-- Malevolent Gladiator's Treads of Cruelty
-				i(227627),	-- Malevolent Gladiator's Treads of Meditation
-				i(227628),	-- Malevolent Gladiator's Silk Handguards
-				i(227630),	-- Malevolent Gladiator's Mooncloth Gloves
-				i(227632),	-- Malevolent Gladiator's Felweave Trousers
-				i(227633),	-- Malevolent Gladiator's Mooncloth Leggings
-				i(227635),	-- Malevolent Gladiator's Cord of Accuracy
-				i(227636),	-- Malevolent Gladiator's Cord of Meditation
-				i(227637),	-- Malevolent Gladiator's Cuffs of Accuracy
-				i(227638),	-- Malevolent Gladiator's Cuffs of Prowess
-				i(227639),	-- Malevolent Gladiator's Cuffs of Meditation
-				i(227643),	-- Malevolent Gladiator's Warboots of Cruelty
-				i(227647),	-- Malevolent Gladiator's Dreadplate Gauntlets
-				i(227650),	-- Malevolent Gladiator's Dreadplate Legguards
-				i(227651),	-- Malevolent Gladiator's Plate Legguards
-				i(227653),	-- Malevolent Gladiator's Girdle of Prowess
-				i(227654),	-- Malevolent Gladiator's Clasp of Cruelty
-				i(227655),	-- Malevolent Gladiator's Bracers of Prowess
-				i(227656),	-- Malevolent Gladiator's Armplates of Proficiency
-				i(227657),	-- Malevolent Gladiator's Armplates of Alacrity
 			}),
 			filter(COSMETIC, {
 				i(229047),	-- Night Elf Crest
@@ -370,7 +279,6 @@ root(ROOTS.Unsorted, {
 				i(230039),	-- Prowler's Brick Shoulder Cape
 				i(230040),	-- Prowler's Camo Shoulder Cape
 				i(230041),	-- Prowler's Lively Shoulder Cape
-				i(230042),	-- Prowler's Faded Shoulder Cape
 				i(230043),	-- Prowler's Icy Shoulder Cape
 				i(230044),	-- Prowler's Pink Shoulder Cape
 				i(230045),	-- Prowler's Carrot Shoulder Cape
@@ -390,7 +298,6 @@ root(ROOTS.Unsorted, {
 				i(230060),	-- Prowler's Camo Cowl
 				i(230061),	-- Prowler's Brick Cowl
 				i(230062),	-- Prowler's Lively Cowl
-				i(230063),	-- Prowler's Faded Cowl
 				i(230064),	-- Prowler's Icy Cowl
 				i(230065),	-- Prowler's Pink Cowl
 				i(230066),	-- Prowler's Carrot Cowl
@@ -410,7 +317,6 @@ root(ROOTS.Unsorted, {
 				i(230080),	-- Prowler's Camo Mask
 				i(230081),	-- Prowler's Brick Mask
 				i(230082),	-- Prowler's Lively Mask
-				i(230083),	-- Prowler's Faded Mask
 				i(230084),	-- Prowler's Icy Mask
 				i(230085),	-- Prowler's Pink Mask
 				i(230086),	-- Prowler's Carrot Mask
@@ -430,7 +336,6 @@ root(ROOTS.Unsorted, {
 				i(230170),	-- Ensemble: Prowler's Camo Headgear
 				i(230171),	-- Ensemble: Prowler's Brick Headgear
 				i(230172),	-- Ensemble: Prowler's Lively Headgear
-				i(230173),	-- Ensemble: Prowler's Faded Headgear
 				i(230174),	-- Ensemble: Prowler's Icy Headgear
 				i(230175),	-- Ensemble: Prowler's Pink Headgear
 				i(230176),	-- Ensemble: Prowler's Carrot Headgear
@@ -444,10 +349,6 @@ root(ROOTS.Unsorted, {
 				i(230853),	-- Aegis of Yuletide
 				i(230940),	-- Wings of the Sapphire Monarch
 				i(231017),	-- Wings of the Onyx Monarch
-			}),
-			n(PVP, {
-				i(231344),	-- Obsidian Gladiator's Greatsword
-				i(231345),	-- Obsidian Gladiator's Greatsword
 			}),
 			n(DUNGEONS_AND_RAIDS, {	-- Raid
 				i(231511),	-- Relic Coffer Key Fragment
@@ -519,217 +420,12 @@ root(ROOTS.Unsorted, {
 				i(231839),	-- Trailseeker Longbow
 				i(231840),	-- Trailseeker Crossbow
 			}),
-			filter(COSMETIC, {	-- T2 Cosmetic Variant. Can be deleted later when ensembleDB is updated
-				i(223550),	-- Eternal Nemesis Robes
-				i(223551),	-- Eternal Nemesis Boots
-				i(223552),	-- Eternal Nemesis Gloves
-				i(223553),	-- Eternal Nemesis Skullcap
-				i(223554),	-- Eternal Nemesis Leggings
-				i(223555),	-- Eternal Nemesis Spaulders
-				i(223556),	-- Eternal Nemesis Belt
-				i(223566),	-- Eternal Nemesis Cloak
-				i(223568),	-- Eternal Nemesis Bracers
-				i(223598),	-- Eternal Judgment Breastplate
-				i(223599),	-- Eternal Judgment Sabatons
-				i(223600),	-- Eternal Judgment Gauntlets
-				i(223601),	-- Eternal Judgment Crown
-				i(223602),	-- Eternal Judgment Legplates
-				i(223603),	-- Eternal Judgment Spaulders
-				i(223604),	-- Eternal Judgment Belt
-				i(223605),	-- Eternal Judgment Cloak
-				i(223606),	-- Eternal Judgment Bindings
-				i(224468),	-- Eternal Netherwind Robes
-				i(224469),	-- Eternal Netherwind Boots
-				i(224470),	-- Eternal Netherwind Gloves
-				i(224471),	-- Eternal Netherwind Crown
-				i(224472),	-- Eternal Netherwind Pants
-				i(224473),	-- Eternal Netherwind Mantle
-				i(224474),	-- Eternal Netherwind Belt
-				i(224475),	-- Eternal Netherwind Cloak
-				i(224476),	-- Eternal Netherwind Bindings
-				i(224894),	-- Eternal Robes of Transcendence
-				i(224895),	-- Eternal Boots of Transcendence
-				i(224896),	-- Eternal Handguards of Transcendence
-				i(224897),	-- Eternal Halo of Transcendence
-				i(224898),	-- Eternal Leggings of Transcendence
-				i(224899),	-- Eternal Pauldrons of Transcendence
-				i(224900),	-- Eternal Belt of Transcendence
-				i(224901),	-- Eternal Cloak of Transcendence
-				i(224902),	-- Eternal Bindings of Transcendence
-				i(224923),	-- Eternal Breastplate of Wrath
-				i(224924),	-- Eternal Sabatons of Wrath
-				i(224925),	-- Eternal Gauntlets of Wrath
-				i(224926),	-- Eternal Helm of Wrath
-				i(224927),	-- Eternal Legplates of Wrath
-				i(224928),	-- Eternal Pauldrons of Wrath
-				i(224929),	-- Eternal Waistband of Wrath
-				i(224930),	-- Eternal Cloak of Wrath
-				i(224931),	-- Eternal Bracelets of Wrath
-				i(224951),	-- Eternal Bloodfang Chestpieces
-				i(224952),	-- Eternal Bloodfang Boots
-				i(224953),	-- Eternal Bloodfang Gloves
-				i(224954),	-- Eternal Bloodfang Hood
-				i(224955),	-- Eternal Bloodfang Pants
-				i(224956),	-- Eternal Bloodfang Spaulders
-				i(224957),	-- Eternal Bloodfang Belt
-				i(224958),	-- Eternal Bloodfang Cloak
-				i(224959),	-- Eternal Bloodfang Bracers
-				i(224983),	-- Eternal Stormrage Robe
-				i(224984),	-- Eternal Stormrage Boots
-				i(224985),	-- Eternal Stormrage Handguards
-				i(224986),	-- Eternal Stormrage Cover
-				i(224987),	-- Eternal Stormrage Legguards
-				i(224988),	-- Eternal Stormrage Pauldrons
-				i(224989),	-- Eternal Stormrage Belt
-				i(224990),	-- Eternal Stormrage Cloak
-				i(224991),	-- Eternal Stormrage Bracers
-				i(225010),	-- Dragonstalker's Eternal Breastplate
-				i(225011),	-- Dragonstalker's Eternal Greaves
-				i(225012),	-- Dragonstalker's Eternal Gauntlets
-				i(225013),	-- Dragonstalker's Eternal Helm
-				i(225014),	-- Dragonstalker's Eternal Legguards
-				i(225015),	-- Dragonstalker's Eternal Spaulders
-				i(225016),	-- Dragonstalker's Eternal Belt
-				i(225017),	-- Dragonstalker's Eternal Cloak
-				i(225018),	-- Dragonstalker's Eternal Bracers
-				i(225037),	-- Eternal Breastplate of Ten Storms
-				i(225038),	-- Eternal Greaves of Ten Storms
-				i(225039),	-- Eternal Gauntlets of Ten Storms
-				i(225040),	-- Eternal Helmet of Ten Storms
-				i(225041),	-- Eternal Kilt of Ten Storms
-				i(225042),	-- Eternal Epaulets of Ten Storms
-				i(225043),	-- Eternal Belt of Ten Storms
-				i(225044),	-- Eternal Cloak of Ten Storms
-				i(225045),	-- Eternal Bracers of Ten Storms
-				i(225069),	-- Eternal Vest of the August Acolyte
-				i(225070),	-- Eternal Talons of the August Acolyte
-				i(225071),	-- Eternal Grips of the August Acolyte
-				i(225072),	-- Eternal Helm of the August Acolyte
-				i(225073),	-- Eternal Pants of the August Acolyte
-				i(225074),	-- Eternal Spaulders of the August Acolyte
-				i(225075),	-- Eternal Cord of the August Acolyte
-				i(225076),	-- Eternal Cloak of the August Acolyte
-				i(225077),	-- Eternal Bindings of the August Acolyte
-				i(225096),	-- Earth-Warder's Eternal Breastplate
-				i(225097),	-- Earth-Warder's Eternal Talons
-				i(225098),	-- Earth-Warder's Eternal Claws
-				i(225099),	-- Earth-Warder's Eternal Crown
-				i(225100),	-- Earth-Warder's Eternal Legplates
-				i(225101),	-- Earth-Warder's Eternal Pauldrons
-				i(225102),	-- Earth-Warder's Eternal Girdle
-				i(225103),	-- Earth-Warder's Eternal Cloak
-				i(225104),	-- Earth-Warder's Eternal Vambraces
-				i(225124),	-- Netherwalker's Eternal Harness
-				i(225125),	-- Netherwalker's Eternal Sandals
-				i(225126),	-- Netherwalker's Eternal Gloves
-				i(225127),	-- Netherwalker's Eternal Skullcap
-				i(225128),	-- Netherwalker's Eternal Leggings
-				i(225129),	-- Netherwalker's Eternal Shoulderblades
-				i(225130),	-- Netherwalker's Eternal Cord
-				i(225131),	-- Netherwalker's Eternal Cloak
-				i(225132),	-- Netherwalker's Eternal Bracers
-				i(225151),	-- Pale Rider's Eternal Breastplate
-				i(225152),	-- Pale Rider's Eternal Sabatons
-				i(225153),	-- Pale Rider's Eternal Gloves
-				i(225154),	-- Pale Rider's Eternal Helm
-				i(225155),	-- Pale Rider's Eternal Leggings
-				i(225156),	-- Pale Rider's Eternal Pauldrons
-				i(225157),	-- Pale Rider's Eternal Girdle
-				i(225158),	-- Pale Rider's Eternal Cloak
-				i(225159),	-- Pale Rider's Eternal Vambraces
-				i(231915),	-- Auchenai Priest's Robes
-				i(231916),	-- Auchenai Priest's Boots
-				i(231917),	-- Auchenai Priest's Gloves
-				i(231918),	-- Auchenai Priest's Skullcap
-				i(231919),	-- Auchenai Priest's Leggings
-				i(231920),	-- Auchenai Priest's Spaulders
-				i(231921),	-- Auchenai Priest's Belt
-				i(231922),	-- Auchenai Priest's Bracers
-				i(231923),	-- Shadowmoon Warlock's Robes
-				i(231924),	-- Shadowmoon Warlock's Boots
-				i(231925),	-- Shadowmoon Warlock's Gloves
-				i(231926),	-- Shadowmoon Warlock's Skullcap
-				i(231927),	-- Shadowmoon Warlock's Leggings
-				i(231928),	-- Shadowmoon Warlock's Spaulders
-				i(231929),	-- Shadowmoon Warlock's Belt
-				i(231930),	-- Shadowmoon Warlock's Bracers
-				i(231947),	-- Cenarion Mender's Sollerets
-				i(231948),	-- Cenarion Mender's Grips
-				i(231949),	-- Cenarion Mender's Vision
-				i(231950),	-- Cenarion Mender's Legwraps
-				i(231951),	-- Cenarion Mender's Spaulders
-				i(231952),	-- Cenarion Mender's Girdle
-				i(231953),	-- Cenarion Mender's Bindings
-				i(231954),	-- Cenarion Mender's Robes
-				i(231955),	-- Boulderfist Mystic's Mantle
-				i(231956),	-- Boulderfist Mystic's Harness
-				i(231957),	-- Boulderfist Mystic's Breeches
-				i(231958),	-- Boulderfist Mystic's Boots
-				i(231959),	-- Boulderfist Mystic's Hood
-				i(231960),	-- Boulderfist Mystic's Grips
-				i(231961),	-- Boulderfist Mystic's Wraps
-				i(231962),	-- Boulderfist Mystic's Girdle
-				i(231931),	-- Coldarra Spellbinder's Robes
-				i(231932),	-- Coldarra Spellbinder's Boots
-				i(231933),	-- Coldarra Spellbinder's Gloves
-				i(231934),	-- Coldarra Spellbinder's Skullcap
-				i(231935),	-- Coldarra Spellbinder's Leggings
-				i(231936),	-- Coldarra Spellbinder's Spaulders
-				i(231937),	-- Coldarra Spellbinder's Belt
-				i(231938),	-- Coldarra Spellbinder's Bracers
-				i(231939),	-- Drakkari Stalker's Sollerets
-				i(231940),	-- Drakkari Stalker's Grips
-				i(231941),	-- Drakkari Stalker's Vision
-				i(231942),	-- Drakkari Stalker's Legwraps
-				i(231943),	-- Drakkari Stalker's Spaulders
-				i(231944),	-- Drakkari Stalker's Girdle
-				i(231945),	-- Drakkari Stalker's Bindings
-				i(231946),	-- Drakkari Stalker's Jerkin
-				i(231963),	-- Brunnhildar Scout's Mantle
-				i(231964),	-- Brunnhildar Scout's Harness
-				i(231965),	-- Brunnhildar Scout's Breeches
-				i(231966),	-- Brunnhildar Scout's Boots
-				i(231967),	-- Brunnhildar Scout's Hood
-				i(231968),	-- Brunnhildar Scout's Grips
-				i(231969),	-- Brunnhildar Scout's Wraps
-				i(231970),	-- Brunnhildar Scout's Girdle
-				i(231971),	-- Jotunheim Berserker's Sabatons
-				i(231972),	-- Jotunheim Berserker's Handguards
-				i(231973),	-- Jotunheim Berserker's Helm
-				i(231974),	-- Jotunheim Berserker's Greaves
-				i(231975),	-- Jotunheim Berserker's Pauldrons
-				i(231976),	-- Jotunheim Berserker's Waistguard
-				i(231977),	-- Jotunheim Berserker's Bracelets
-				i(231978),	-- Jotunheim Berserker's Chestguard
-				i(231979),	-- Ymirjar Deathbringer's Sabatons
-				i(231980),	-- Ymirjar Deathbringer's Handguards
-				i(231981),	-- Ymirjar Deathbringer's Helm
-				i(231982),	-- Ymirjar Deathbringer's Greaves
-				i(231983),	-- Ymirjar Deathbringer's Pauldrons
-				i(231984),	-- Ymirjar Deathbringer's Waistguard
-				i(231985),	-- Ymirjar Deathbringer's Bracelets
-				i(231986),	-- Ymirjar Deathbringer's Chestguard
-				i(231987),	-- Telhamat Anchorite's Sabatons
-				i(231988),	-- Telhamat Anchorite's Handguards
-				i(231989),	-- Telhamat Anchorite's Helm
-				i(231990),	-- Telhamat Anchorite's Greaves
-				i(231991),	-- Telhamat Anchorite's Pauldrons
-				i(231992),	-- Telhamat Anchorite's Waistguard
-				i(231993),	-- Telhamat Anchorite's Bracelets
-				i(231994),	-- Telhamat Anchorite's Chestguard
-			}),
 			i(232472),	-- Cache of Dark Iron Treasures
 			i(232473),	-- Cache of Dark Iron Treasures
 			i(232474),	-- Defias Cuirass
 			i(232475),	-- Defias Cuirass
-			i(232479),	-- Eternal Netherwind Blouse
-			i(232480),	-- Eternal Nemesis Blouse
-			i(232481),	-- Eternal Blouse of Transcendence
-			i(232482),	-- Eternal Greaves of Ten Storms
-			i(232483),	-- Eternal Stormrage Chestguard
 			i(232510),	-- Electric Eel
 			i(232511),	-- Electric Eel
-			i(232484),	-- Eternal Judgment Greaves
 			i(232521),	-- Glyph of Arcane Familiar
 			i(232524),	-- Dark Ranger General's Bodice
 			i(232525),	-- Dark Ranger General's Vest
@@ -740,7 +436,6 @@ root(ROOTS.Unsorted, {
 			i(232631),	-- Wrapped Spear
 			--
 			i(228911),	-- Xal'atath's Rusty Coin
-			i(232877),	-- Timely Goodie Bag
 
 			i(232905),	-- Malown's Slam
 		})),

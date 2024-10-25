@@ -3793,7 +3793,7 @@ root(ROOTS.Zones, {
 							i(42360),	-- Ebon Filigreed Doublet
 							i(42369),	-- Ebon Filigreed Shirt
 							i(53852, {	-- Embroidered Shirt
-								["timeline"] = { ADDED_4_0_3 },
+								["timeline"] = { ADDED_6_0_3 },
 								["cost"] = 10000000,	-- 1,000g
 							}),
 							i(42363),	-- Golden Filigreed Doublet

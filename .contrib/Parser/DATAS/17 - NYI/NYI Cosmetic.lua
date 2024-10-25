@@ -606,14 +606,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Patched Harvest Golem Set ------
 				i(226471),	-- Ensemble: Patched Harvest Golem
-				i(226461),	-- Patched Harvest Golem's Belt
-				i(226458),	-- Patched Harvest Golem's Boots
-				i(226457),	-- Patched Harvest Golem's Chest
-				i(226456),	-- Patched Harvest Golem's Gloves
-				i(226690),	-- Patched Harvest Golem's Head
-				i(226455),	-- Patched Harvest Golem's Pants
-				i(226454),	-- Patched Harvest Golem's Pauldrons
-				i(226453),	-- Patched Harvest Golem's Post
 
 			}),
 			n(WEAPONS, {
@@ -621,7 +613,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(226425),	-- Harvester's Claw
 				i(226426),	-- Harvester's Claw
 				i(217706),	-- Learn Warglaives Test Item (DNT)
-				i(226427),	-- Patched Harvester's Claw
 				i(225496),	-- Unhinged Vault-Hatch
 			}),
 		})),

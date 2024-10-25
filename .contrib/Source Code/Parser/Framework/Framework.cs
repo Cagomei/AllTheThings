@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using static ATT.Export;
+using static ATT.Framework;
 
 namespace ATT
 {
@@ -3085,6 +3086,7 @@ namespace ATT
 
                     var icons = new Dictionary<long, string>();
                     var modelIDs = new Dictionary<long, long>();
+                    var consolidatedKeys = new Dictionary<string, List<long>>();
                     var localizationForText = new Dictionary<string, Dictionary<long, string>>();
 
                     // Include Only Referenced Objects!
@@ -3108,7 +3110,17 @@ namespace ATT
                             ObjectHarvester.UpdateInformationFromWoWHead(key, objectData);
                         }
 #endif
-
+                        if (objectData.TryGetValue("consolidate", out bool consolidate) && consolidate)
+                        {
+                            if (objectData.TryGetValue("readable", out string readable))
+                            {
+                                if (!consolidatedKeys.TryGetValue(readable, out var listing))
+                                {
+                                    consolidatedKeys[readable] = listing = new List<long>();
+                                }
+                                listing.Add(key);
+                            }
+                        }
                         if (objectData.TryGetValue("icon", out object value))
                         {
                             icons[key] = value.ToString().Replace("\\", "/");
@@ -3152,19 +3164,37 @@ namespace ATT
                         }
                     }
 
+                    // Sort any consolidated keys and export them as a constant.
+                    var tupledConsolidatedKeys = new List<Tuple<string, long, string>>();
+                    if (consolidatedKeys.Any())
+                    {
+                        var names = consolidatedKeys.Keys.ToList();
+                        names.Sort(Framework.Compare);
+                        foreach (var name in names)
+                        {
+                            var sortedKeys = consolidatedKeys[name];
+                            if (sortedKeys.Any())
+                            {
+                                sortedKeys.Sort();
+                                foreach (var sortedKey in sortedKeys) keys.Remove(sortedKey);
+                                tupledConsolidatedKeys.Add(new Tuple<string, long, string>(name.ToUpperInvariant().Replace(' ', '_') + "S", sortedKeys[0], string.Join(",", sortedKeys)));
+                            }
+                        }
+                    }
+
                     // Get all of the english translations and always write them to the file.
-                    if (localizationForText.TryGetValue("en", out var data))
+                    if (localizationForText.TryGetValue("en", out var enObjectData))
                     {
                         localizationForText.Remove("en");
-                        builder.AppendLine("_.ObjectNames = {");
+                        builder.AppendLine("local ObjectNames = {");
                         foreach (var key in keys)
                         {
-                            if (data.TryGetValue(key, out string name))
+                            if (enObjectData.TryGetValue(key, out string name))
                             {
                                 ExportStringKeyValue(builder, key, name).AppendLine();
                             }
                         }
-                        builder.AppendLine("}");
+                        builder.AppendLine("}; _.ObjectNames = ObjectNames;");
                     }
 
                     // Now grab the non-english localizations and conditionally write them to the file.
@@ -3173,7 +3203,7 @@ namespace ATT
                         if (localePair.Value.Any())
                         {
                             var localeBuilder = localizationByLocale[localePair.Key];
-                            localeBuilder.AppendLine("localize(_.ObjectNames, {");
+                            localeBuilder.AppendLine("localize(ObjectNames, {");
                             foreach (var key in keys)
                             {
                                 if (localePair.Value.TryGetValue(key, out string name))
@@ -3182,11 +3212,23 @@ namespace ATT
                                 }
                             }
                             localeBuilder.AppendLine("});");
+                            if (tupledConsolidatedKeys.Any())
+                            {
+                                foreach (var tuple in tupledConsolidatedKeys)
+                                {
+                                    if (localePair.Value.TryGetValue(tuple.Item2, out string name))
+                                    {
+                                        localeBuilder.Append("for i,objectID in ipairs(").Append(tuple.Item1).Append(") do ObjectNames[objectID] = ");
+                                        ExportStringValue(localeBuilder, name);
+                                        localeBuilder.AppendLine("; end");
+                                    }
+                                }
+                            }
                         }
                     }
 
                     // Now write the icons after the text.
-                    builder.AppendLine("_.ObjectIcons = {");
+                    builder.AppendLine("local ObjectIcons = {");
                     foreach (var key in keys)
                     {
                         if (icons.TryGetValue(key, out string icon))
@@ -3194,10 +3236,10 @@ namespace ATT
                             ExportIconKeyValue(builder, key, icon).AppendLine();
                         }
                     }
-                    builder.AppendLine("}");
+                    builder.AppendLine("}; _.ObjectIcons = ObjectIcons;");
 
                     // Write the model information last.
-                    builder.AppendLine("_.ObjectModels = {");
+                    builder.AppendLine("local ObjectModels = {");
                     foreach (var key in keys)
                     {
                         if (modelIDs.TryGetValue(key, out long modelID))
@@ -3205,7 +3247,31 @@ namespace ATT
                             ExportObjectKeyValue(builder, key, modelID).AppendLine();
                         }
                     }
-                    builder.AppendLine("}");
+                    builder.AppendLine("}; _.ObjectModels = ObjectModels;");
+                    if (tupledConsolidatedKeys.Any())
+                    {
+                        builder.AppendLine().AppendLine("-- Consolidated Object Data");
+                        foreach (var tuple in tupledConsolidatedKeys)
+                        {
+                            builder.Append("local ").Append(tuple.Item1).Append(" = { ").Append(tuple.Item3).AppendLine(" };");
+                            builder.Append("for i,objectID in ipairs(").Append(tuple.Item1).AppendLine(") do");
+                            if (enObjectData.TryGetValue(tuple.Item2, out string name))
+                            {
+                                builder.Append("\tObjectNames[objectID] = ");
+                                ExportStringValue(builder, name).AppendLine(";");
+                            }
+                            if (icons.TryGetValue(tuple.Item2, out string icon))
+                            {
+                                builder.Append("\tObjectIcons[objectID] = ");
+                                ExportIconValue(builder, icon).AppendLine(";");
+                            }
+                            if (modelIDs.TryGetValue(tuple.Item2, out long modelID))
+                            {
+                                builder.Append("\tObjectModels[objectID] = ").Append(modelID).AppendLine(";");
+                            }
+                            builder.AppendLine("end");
+                        }
+                    }
 
                     // Append the file content to our localization database.
                     localizationDatabase.AppendLine(builder.ToString());
