@@ -1591,6 +1591,7 @@ ExportDB.AccountWideQuestsDB = {
 	[84604] = true, -- Bronze Celebration Token Lockout [from #82783]
 	[84606] = true, -- Bronze Celebration Token Lockout [from #60215]
 	[84608]	= true, -- Bronze Celebration Token Lockout [from #85947]
+	[84614] = true, -- Bronze Celebration Token Lockout [from #83468]
 	[84629] = true, -- Bronze Celebration Token Lockout [from #84254]
 	[84630] = true, -- Bronze Celebration Token Lockout [from #84489]
 	[85531] = true,	-- Earth-Encrusted Gem

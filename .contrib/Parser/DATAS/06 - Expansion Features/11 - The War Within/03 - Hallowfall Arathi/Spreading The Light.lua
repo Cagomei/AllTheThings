@@ -223,7 +223,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					}),
 					q(76600, {	-- Right Between the Gyro-Optics
 						["sourceQuests"] = { 76599 },	-- Right Between the Gyro-Optics - Activate
-						["provider"] = { "n", 208019 },	-- Auebry Irongear
+						["providers"] = {
+							{"n", 208019 },	-- Auebry Irongear
+							{"n", 206441 },	-- Auebry Irongear
+						},
 						["coord"] = { 65.2, 28.1, HALLOWFALL },
 						["g"] = {
 							i(207084),	-- Auebry's Marker Pistol

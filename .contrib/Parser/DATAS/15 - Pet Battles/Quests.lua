@@ -1076,24 +1076,38 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				["coord"] = { 64.3, 49.3, HELLFIRE_PENINSULA },
 			}),
 			q(31924, {	-- Narrok
-				["coord"] = { 61.0, 49.4, NAGRAND },
 				["provider"] = { "n", 66552 },	-- Narrok <Master Pet Tamer>
+				-- #if BEFORE 11.0.5
+				["coord"] = { 61.0, 49.4, NAGRAND },
+				-- #else
+				["coords"] = {
+					{ 61.0, 49.4, NAGRAND },
+					{ 62.0, 49.5, TANARIS },
+				},
+				-- #endif
 			}),
 			q(31926, {	-- Grand Master Antari
 				["sourceQuests"] = { 31920 },	-- Grand Master Antari
-				["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 				["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
+				["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 				["g"] = {
 					SACK_OF_PET_SUPPLIES
 				},
 			}),
 			q(31923, {	-- Ras'an
-				["coord"] = { 17.2, 50.5, ZANGARMARSH },
 				["provider"] = { "n", 66551 },	-- Ras'an <Master Pet Tamer>
+				-- #if BEFORE 11.0.5
+				["coord"] = { 17.2, 50.5, ZANGARMARSH },
+				-- #else
+				["coords"] = {
+					{ 17.2, 50.5, ZANGARMARSH },
+					{ 61.9, 49.6, TANARIS },
+				},
+				-- #endif
 			}),
 			q(31925, {	-- Morulu The Elder
-				["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
 				["provider"] = { "n", 66553 },	-- Morulu The Elder
+				["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
 			}),
 		}),
 		expansion(EXPANSION.WRATH, {
@@ -1102,8 +1116,8 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
 			}),
 			q(31933, {	-- Okrut Dragonwaste
-				["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
 				["provider"] = { "n", 66638 },	-- Okrut Dragonwaste
+				["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
 			}),
 			q(31931, {	-- Beegle Blastfuse
 				["provider"] = { "n", 66635 },	-- Beegle Blastfuse
@@ -1112,15 +1126,15 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			}),
 			q(31935, {	-- Grand Master Payne
 				["sourceQuests"] = { 31928 },	-- Grand Master Payne
-				["coord"] = { 77.4, 19.6, ICECROWN },
 				["provider"] = { "n", 66675 },	-- Major Payne
+				["coord"] = { 77.4, 19.6, ICECROWN },
 				["g"] = {
 					SACK_OF_PET_SUPPLIES
 				},
 			}),
 			q(31934, {	-- Gutretch
-				["coord"] = { 13.2, 66.7, ZULDRAK },
 				["provider"] = { "n", 66639 },
+				["coord"] = { 13.2, 66.7, ZULDRAK },
 			}),
 		}),
 		expansion(EXPANSION.CATA, {

@@ -63,38 +63,6 @@ ObjectDB[190484] = {
 };
 -- #endif
 
--- Altar of Naias (not in WoWHead's DB)
-ObjectDB[181636] = {
-	readable = "Altar of Naias",
-	text = {
-		en = "Altar of Naias",
-	},
-};
-ObjectDB[176210] = {
-	readable = "Command Tent",
-	text = {
-		en = "Command Tent",
-	},
-};
-ObjectDB[204019] = {
-	readable = "Makeshift Cage",
-	text = {
-		en = "Makeshift Cage",
-	},
-};
-ObjectDB[204966] = {
-	readable = "Scourge Bone Animus",
-	text = {
-		en = "Scourge Bone Animus",
-	},
-};
-ObjectDB[205158] = {
-	readable = "Cultist Cage",
-	text = {
-		en = "Cultist Cage",
-	},
-};
-
 -- #if BEFORE CATA
 ObjectDB[256] = {
 	readable = "WANTED",
@@ -126,13 +94,6 @@ ObjectDB[57] = {
 		ru = "Легенды и предания племени Кровавого Скальпа",
 		ko = "붉은머리 전통지식 서판",
 		cn = "月亮照耀着山谷",
-	},
-};
--- CRIEVE NOTE: Couldn't find any information about this object or locales for other languages, RIP.
-ObjectDB[201964] = {
-	readable = "Aderic's Tomb",
-	text = {
-		en = "Aderic's Tomb",
 	},
 };
 -- #endif

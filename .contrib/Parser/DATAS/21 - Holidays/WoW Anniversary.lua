@@ -2550,6 +2550,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				-- Twilight Highlands 226156
 				-- Uldum 226155
 				-- Mount Hyjal 226154
+				-- Nagrand 226159
+				-- Gorgrond 226158
+				-- Shadowmoon Valley 226157
 			}),
 			ach(40997),		-- The Gatecrashers (automated)
 			ach(40995),		-- The Originals (automated)
@@ -2575,69 +2578,65 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 		n(GROUP_FINDER, {
-			hqt(84878, name(HEADERS.Item, 229355, {	-- Chromie's Premium Goodie Bag (lockout?)
-				["g"] = {
-					i(229355, {	-- Chromie's Premium Goodie Bag
-						i(226046),	-- Timely Tourist's Band
-						i(226064),	-- Timely Tourist's Beacon Staff
-						i(226082),	-- Timely Tourist's Belt
-						i(226091),	-- Timely Tourist's Bindings
-						i(226056),	-- Timely Tourist's Blade
-						i(226167),	-- Timely Tourist's Bolthrower
-						i(226085),	-- Timely Tourist's Boots
-						i(226083),	-- Timely Tourist's Bracers
-						i(226068),	-- Timely Tourist's Breastplate
-						i(226076),	-- Timely Tourist's Chainmail
-						i(226169),	-- Timely Tourist's Chisel
-						i(226171),	-- Timely Tourist's Cleaver
-						i(226051),	-- Timely Tourist's Cloak
-						i(226079),	-- Timely Tourist's Coif
-						i(226098),	-- Timely Tourist's Cord
-						i(226095),	-- Timely Tourist's Cowl
-						i(226099),	-- Timely Tourist's Cuffs
-						i(226063),	-- Timely Tourist's Drill-Tipped Stave
-						i(226089),	-- Timely Tourist's Epaulets
-						i(226070),	-- Timely Tourist's Gauntlets
-						i(226074),	-- Timely Tourist's Girdle
-						i(226086),	-- Timely Tourist's Gloves
-						i(226080),	-- Timely Tourist's Greaves
-						i(226078),	-- Timely Tourist's Grips
-						i(226055),	-- Timely Tourist's Hammer
-						i(226094),	-- Timely Tourist's Handwraps
-						i(226170),	-- Timely Tourist's Hatchet
-						i(226087),	-- Timely Tourist's Headgear
-						i(226071),	-- Timely Tourist's Helm
-						i(226072),	-- Timely Tourist's Legguards
-						i(226065),	-- Timely Tourist's Lantern
-						i(226096),	-- Timely Tourist's Leggings
-						i(226088),	-- Timely Tourist's Pants
-						i(226073),	-- Timely Tourist's Pauldrons
-						i(226049),	-- Timely Tourist's Pendant
-						i(226062),	-- Timely Tourist's Polearm
-						i(226054),	-- Timely Tourist's Pummeler
-						i(226048),	-- Timely Tourist's Ring
-						i(226053),	-- Timely Tourist's Ritual Knife
-						i(226092),	-- Timely Tourist's Robes
-						i(226069),	-- Timely Tourist's Sabatons
-						i(226093),	-- Timely Tourist's Sandals
-						i(226052),	-- Timely Tourist's Shank
-						i(226058),	-- Timely Tourist's Sharpshooter
-						i(226050),	-- Timely Tourist's Shawl
-						i(226066),	-- Timely Tourist's Shield
-						i(226081),	-- Timely Tourist's Shoulderguards
-						i(226097),	-- Timely Tourist's Shoulderpads
-						i(226047),	-- Timely Tourist's Signet
-						i(226061),	-- Timely Tourist's Spade
-						i(226168),	-- Timely Tourist's Spellblade
-						i(226077),	-- Timely Tourist's Striders
-						i(226057),	-- Timely Tourist's Sword
-						i(226059),	-- Timely Tourist's Torch
-						i(226075),	-- Timely Tourist's Vambraces
-						i(226084),	-- Timely Tourist's Vest
-						i(226060),	-- Timely Tourist's Waraxe
-					}),
-				},
-			})),
+			i(229355, {	-- Chromie's Premium Goodie Bag
+				i(226046),	-- Timely Tourist's Band
+				i(226064),	-- Timely Tourist's Beacon Staff
+				i(226082),	-- Timely Tourist's Belt
+				i(226091),	-- Timely Tourist's Bindings
+				i(226056),	-- Timely Tourist's Blade
+				i(226167),	-- Timely Tourist's Bolthrower
+				i(226085),	-- Timely Tourist's Boots
+				i(226083),	-- Timely Tourist's Bracers
+				i(226068),	-- Timely Tourist's Breastplate
+				i(226076),	-- Timely Tourist's Chainmail
+				i(226169),	-- Timely Tourist's Chisel
+				i(226171),	-- Timely Tourist's Cleaver
+				i(226051),	-- Timely Tourist's Cloak
+				i(226079),	-- Timely Tourist's Coif
+				i(226098),	-- Timely Tourist's Cord
+				i(226095),	-- Timely Tourist's Cowl
+				i(226099),	-- Timely Tourist's Cuffs
+				i(226063),	-- Timely Tourist's Drill-Tipped Stave
+				i(226089),	-- Timely Tourist's Epaulets
+				i(226070),	-- Timely Tourist's Gauntlets
+				i(226074),	-- Timely Tourist's Girdle
+				i(226086),	-- Timely Tourist's Gloves
+				i(226080),	-- Timely Tourist's Greaves
+				i(226078),	-- Timely Tourist's Grips
+				i(226055),	-- Timely Tourist's Hammer
+				i(226094),	-- Timely Tourist's Handwraps
+				i(226170),	-- Timely Tourist's Hatchet
+				i(226087),	-- Timely Tourist's Headgear
+				i(226071),	-- Timely Tourist's Helm
+				i(226072),	-- Timely Tourist's Legguards
+				i(226065),	-- Timely Tourist's Lantern
+				i(226096),	-- Timely Tourist's Leggings
+				i(226088),	-- Timely Tourist's Pants
+				i(226073),	-- Timely Tourist's Pauldrons
+				i(226049),	-- Timely Tourist's Pendant
+				i(226062),	-- Timely Tourist's Polearm
+				i(226054),	-- Timely Tourist's Pummeler
+				i(226048),	-- Timely Tourist's Ring
+				i(226053),	-- Timely Tourist's Ritual Knife
+				i(226092),	-- Timely Tourist's Robes
+				i(226069),	-- Timely Tourist's Sabatons
+				i(226093),	-- Timely Tourist's Sandals
+				i(226052),	-- Timely Tourist's Shank
+				i(226058),	-- Timely Tourist's Sharpshooter
+				i(226050),	-- Timely Tourist's Shawl
+				i(226066),	-- Timely Tourist's Shield
+				i(226081),	-- Timely Tourist's Shoulderguards
+				i(226097),	-- Timely Tourist's Shoulderpads
+				i(226047),	-- Timely Tourist's Signet
+				i(226061),	-- Timely Tourist's Spade
+				i(226168),	-- Timely Tourist's Spellblade
+				i(226077),	-- Timely Tourist's Striders
+				i(226057),	-- Timely Tourist's Sword
+				i(226059),	-- Timely Tourist's Torch
+				i(226075),	-- Timely Tourist's Vambraces
+				i(226084),	-- Timely Tourist's Vest
+				i(226060),	-- Timely Tourist's Waraxe
+			}),
 			i(226102, {	-- Chromie's Tour Goodie Bag
 				["sym"] = {
 					{ "select", "itemID", 229355},	-- Chromie's Premium Goodie Bag
@@ -2664,7 +2663,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["provider"] = { "n", 223877 },	-- Yllana <Event Coordinator>
 				["coord"] = { 62.9, 50.7, TANARIS },
 			}),
-			--q(84629),	-- HQT for Completing Meet and Greet??
 			q(84489, {	-- Shopping Squee!
 				["sourceQuests"] = { 84254 },	-- Meet and Greet
 				["provider"] = { "n", 223877 },	-- Yllana <Event Coordinator>
@@ -2716,8 +2714,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		}),
 		n(TREASURES, {
 			o(455795, {	-- Pet Box
-				i(224157),	-- Pet Mirror
-			})
+				["coord"] = { 62, 50.1, TANARIS },
+				["groups"] = {
+					i(224157),	-- Pet Mirror
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(223884, {	--  Bobadormu
@@ -3363,27 +3364,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	n(WOW_ANNIVERSARY_TWENTY, {
 		q(85661),	-- Purchase one Tier 2 Set
 		q(85828),	-- Purchase a second Tier 2 Set
+		q(84312),	-- Bonus chance (speculated) for Grand Black War Mammoth from Doomwalker/Archavon on first kill per day
 		q(85723),	-- first WB kill of day/event or maybe Doomwalker
-		q(84282),	-- second WB kill of day/event or maybe Sha
-		q(84256),	-- third WB kill of day/event or maybe Archavon
 		q(85168),	-- fourth WB kill of day/event or mayba Kazzak
 		q(84878),	-- triggered with turnin of 'Chromie's Codex' [82783] (Bronze Cel Cache lockout?)
 		q(84665),	-- triggered with turnin of 'Timely Gate Crashers' [60215] (Bronze Cel Cache lockout?)
 		q(86202, name(HEADERS.Item, 233014)),	-- opening first Bronze Celebration Cache of week
-		-- Warband weekly Bronze Celebration Tokens
-		q(84629),	-- triggered with turnin of 'Meet and Greet' [84254] (Bronze Cel Token lockout?)
-		q(84630),	-- triggered with turnin of 'Shopping Spree!' [84489] (Bronze Cel Token lockout?)
-		q(84604),	-- triggered with turnin of 'Chromie's Codex' [82783] (Bronze Cel Token lockout?)
-		q(84606),	-- triggered with turnin of 'Timely Gate Crashers' [60215] (Bronze Cel Token lockout?)
-		q(84596),	-- Spreading The Lights
-		q(84609),	-- Forge the Pact (All Pacts)
-		q(84610),	-- Theater Troupe
-		q(86466),	-- Awakening The Machine
-		q(84599),	-- Sparks of War
-		q(84614),	-- WB (Azj-Kahet)
-		q(84598),	-- Wax weekly quest
-		q(85833),	-- Precussive Archaeology
-		q(84608),	-- Token lock from 'An Original Path Through Time' [85947]
 		-- Blackrock Depths
 		q(86278),	-- High Interrogator Gerstahn (LFR)
 		q(86289),	-- High Interrogator Gerstahn (N)
@@ -3397,6 +3383,23 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(86286),	-- Phalanx (N)
 		q(86293),	-- Phalanx (H)
 		q(86282),	-- Pyromancer Loregrain (LFR)
+		q(86285),	-- Pyromancer Loregrain (N)
 	}),
+	-- Warband weekly Bronze Celebration Tokens
+	n(WOW_ANNIVERSARY_TWENTY, sharedData(name(HEADERS.Currency, 3100), {
+		hqt(84629),	-- 'Meet and Greet' [84254]
+		hqt(84630),	-- 'Shopping Spree!' [84489]
+		hqt(84604),	-- 'Chromie's Codex' [82783]
+		hqt(84606),	-- 'Timely Gate Crashers' [60215]
+		hqt(84596),	-- Spreading The Lights
+		hqt(84609),	-- Forge the Pact (All Pacts)
+		hqt(84610),	-- Theater Troupe
+		hqt(86466),	-- Awakening The Machine
+		hqt(84599),	-- Sparks of War
+		hqt(84614),	-- WB (Azj-Kahet)
+		hqt(84598),	-- Rollin' Down in the Deeps
+		hqt(85833),	-- Precussive Archaeology
+		hqt(84608),	-- 'An Original Path Through Time' [85947]
+	})),
 })));
 -- #endif

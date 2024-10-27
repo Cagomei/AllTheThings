@@ -200,6 +200,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					["coord"] = { 65.6, 90.9, AZJ_KAHET },
 					["questID"] = 81567,
 				}),
+				o(455321, {	-- Vizier's Appreciation
+					["provider"] = { "n", 224900 },	-- Dor'garad
+					["coord"] = { 44.4, 64.4, NERUBAR_LOWER },
+					["questID"] = 81569,
+				}),
+				o(455322, {	-- Vizier's Appreciation
+					["provider"] = { "n", 224900 },	-- Dor'garad
+					["coord"] = { 78.5, 74.5, AZJ_KAHET },
+					["questID"] = 82864,
+				}),
 				o(455323, {	-- Vizier's Appreciation
 					["provider"] = { "n", 224900 },	-- Dor'garad
 					["coord"] = { 79.9, 62.0, AZJ_KAHET },

@@ -2803,12 +2803,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["timeline"] = { ADDED_2_0_1 },
 				}),
 				candybucket(32027, {	-- Candy Bucket — The Jade Forest, Dawn's Blossom, Neutral
-					["provider"] = { "o", 215884 },	-- Candy Bucket, The Jade Forest
+					["provider"] = { "o", 215880 },	-- Candy Bucket, The Jade Forest
 					["coord"] = { 45.7, 43.6, THE_JADE_FOREST },
 					["timeline"] = { ADDED_5_0_4 },
 				}),
 				candybucket(32029, {	-- Candy Bucket — The Jade Forest, Greenstone Village, Neutral
-					["provider"] = { "o", 215880 },	-- Candy Bucket, The Jade Forest
+					["provider"] = { "o", 215884 },	-- Candy Bucket, The Jade Forest
 					["coord"] = { 48.0, 34.6, THE_JADE_FOREST },
 					["timeline"] = { ADDED_5_0_4 },
 				}),
@@ -3572,7 +3572,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				candybucket(32052, {	-- Candy Bucket — Vale of Eternal Blossoms, Shrine of Seven Stars, Alliance
 					["provider"] = { "o", 215915 },	-- Candy Bucket, Shrine of Seven Stars
-					["coord"] = { 87.0, 68.8, VALE_OF_ETERNAL_BLOSSOMS },
+					["coords"] = {
+						{ 87.0, 68.8, VALE_OF_ETERNAL_BLOSSOMS },
+						{ 37.7, 67.0, 393 },	-- Shrine of Seven Stars
+					},
 					["timeline"] = { ADDED_5_0_4 },
 				}),
 				candybucket(28985, {	-- Candy Bucket — Vashj'ir, Darkbreak Cove, Alliance
@@ -4016,6 +4019,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(32022, {	-- Candy Bucket — Vale of Eternal Blossoms, Shrine of Two Moons, Horde
 					["provider"] = { "o", 215875 },	-- Candy Bucket, Vale of Eternal Blossoms
 					["coord"] = { 61.9, 16.1, VALE_OF_ETERNAL_BLOSSOMS },
+					["coords"] = {
+						{ 61.9, 16.1, VALE_OF_ETERNAL_BLOSSOMS },
+						--{ x, y, 391 },	-- Shrine of Two Moons
+					},
 					["timeline"] = { ADDED_5_0_4 },
 				}),
 				candybucket(28984, {	-- Candy Bucket — Vashj'ir, Legion's Rest, Horde
