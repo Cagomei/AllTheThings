@@ -217,6 +217,7 @@ inst(1289, 2685);	-- Skittering Breach
 inst(1290, 2688);	-- The Spiral Weave
 inst(1291, 2682);	-- Zekvir's Lair
 inst(1293, 2690);	-- The Underkeep
+inst(1301, 2792);    -- Blackrock Depths
 
 -- Reassign the instance function
 inst = function(id, t)

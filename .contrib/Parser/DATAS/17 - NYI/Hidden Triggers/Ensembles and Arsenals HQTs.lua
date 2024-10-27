@@ -382,6 +382,120 @@ q(74259),	-- Ensemble: Cosmic Gladiator's Shaman Armor
 q(74258),	-- Ensemble: Cosmic Gladiator's Warlock Armor
 q(74257),	-- Ensemble: Cosmic Gladiator's Warrior Armor
 
+------ Season 34: Crimson ------
+-- PvP Arsenals
+q(85364),	-- Arsenal: Crimson Aspirant's Weapons
+q(85365),	-- Arsenal: Crimson Gladiator's Weapons
+q(85366),	-- Arsenal: Elite Crimson Gladiator's Weapons
+
+-- PvP Ensembles
+q(85272),	-- Ensemble: Crimson Aspirant's Cloth Armor
+q(85271),	-- Ensemble: Crimson Aspirant's Leather Armor
+q(85273),	-- Ensemble: Crimson Aspirant's Mail Armor
+q(85274),	-- Ensemble: Crimson Aspirant's Plate Armor
+q(85295),	-- Ensemble: Crimson Gladiator's Death Knight Armor
+q(85283),	-- Ensemble: Crimson Gladiator's Demon Hunter Armor
+q(85281),	-- Ensemble: Crimson Gladiator's Druid Armor
+q(85289),	-- Ensemble: Crimson Gladiator's Evoker Armor
+q(85291),	-- Ensemble: Crimson Gladiator's Hunter Armor
+q(85275),	-- Ensemble: Crimson Gladiator's Mage Armor
+q(85285),	-- Ensemble: Crimson Gladiator's Monk Armor
+q(85297),	-- Ensemble: Crimson Gladiator's Paladin Armor
+q(85277),	-- Ensemble: Crimson Gladiator's Priest Armor
+q(85287),	-- Ensemble: Crimson Gladiator's Rogue Armor
+q(85293),	-- Ensemble: Crimson Gladiator's Shaman Armor
+q(85279),	-- Ensemble: Crimson Gladiator's Warlock Armor
+q(85299),	-- Ensemble: Crimson Gladiator's Warrior Armor
+q(85296),	-- Ensemble: Elite Crimson Gladiator's Death Knight Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Demon Hunter Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Druid Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Evoker Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Hunter Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Mage Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Monk Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Paladin Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Priest Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Rogue Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Shaman Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Warlock Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Warrior Armor
+
+------ Season 35: Obsidian ------
+-- PvP Arsenals
+q(85364),	-- Arsenal: Obsidian Aspirant's Weapons
+q(85367),	-- Arsenal: Obsidian Gladiator's Weapons
+q(85638),	-- Arsenal: Elite Obsidian Gladiator's Weapons
+
+-- PvP Ensembles
+q(85330),	-- Ensemble: Obsidian Aspirant's Cloth Armor
+q(85331),	-- Ensemble: Obsidian Aspirant's Leather Armor
+q(85332),	-- Ensemble: Obsidian Aspirant's Mail Armor
+q(85333),	-- Ensemble: Obsidian Aspirant's Plate Armor
+q(85307),	-- Ensemble: Obsidian Gladiator's Death Knight Armor
+q(85312),	-- Ensemble: Obsidian Gladiator's Demon Hunter Armor
+q(85314),	-- Ensemble: Obsidian Gladiator's Druid Armor
+q(85301),	-- Ensemble: Obsidian Gladiator's Evoker Armor
+q(85320),	-- Ensemble: Obsidian Gladiator's Hunter Armor
+q(85328),	-- Ensemble: Obsidian Gladiator's Mage Armor
+q(85316),	-- Ensemble: Obsidian Gladiator's Monk Armor
+q(85324),	-- Ensemble: Obsidian Gladiator's Paladin Armor
+q(85308),	-- Ensemble: Obsidian Gladiator's Priest Armor
+q(85318),	-- Ensemble: Obsidian Gladiator's Rogue Armor
+q(85322),	-- Ensemble: Obsidian Gladiator's Shaman Armor
+q(85310),	-- Ensemble: Obsidian Gladiator's Warlock Armor
+q(85326),	-- Ensemble: Obsidian Gladiator's Warrior Armor
+q(85307),	-- Ensemble: Elite Crimson Gladiator's Death Knight Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Demon Hunter Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Druid Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Evoker Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Hunter Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Mage Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Monk Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Paladin Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Priest Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Rogue Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Shaman Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Warlock Armor
+q(),	-- Ensemble: Elite Crimson Gladiator's Warrior Armor
+
+------ Season 36: Verdant ------
+-- PvP Arsenals
+q(85369),	-- Arsenal: Verdant Aspirant's Weapons
+q(85370),	-- Arsenal: Verdant Gladiator's Weapons
+q(85371),	-- Arsenal: Elite Verdant Gladiator's Weapons
+
+-- PvP Ensembles
+q(85360),	-- Ensemble: Verdant Aspirant's Cloth Armor
+q(85361),	-- Ensemble: Verdant Aspirant's Leather Armor
+q(85362),	-- Ensemble: Verdant Aspirant's Mail Armor
+q(85363),	-- Ensemble: Verdant Aspirant's Plate Armor
+q(85354),	-- Ensemble: Verdant Gladiator's Death Knight Armor
+q(85342),	-- Ensemble: Verdant Gladiator's Demon Hunter Armor
+q(85340),	-- Ensemble: Verdant Gladiator's Druid Armor
+q(85348),	-- Ensemble: Verdant Gladiator's Evoker Armor
+q(85350),	-- Ensemble: Verdant Gladiator's Hunter Armor
+q(85334),	-- Ensemble: Verdant Gladiator's Mage Armor
+q(85344),	-- Ensemble: Verdant Gladiator's Monk Armor
+q(85356),	-- Ensemble: Verdant Gladiator's Paladin Armor
+q(85336),	-- Ensemble: Verdant Gladiator's Priest Armor
+q(85346),	-- Ensemble: Verdant Gladiator's Rogue Armor
+q(85352),	-- Ensemble: Verdant Gladiator's Shaman Armor
+q(85338),	-- Ensemble: Verdant Gladiator's Warlock Armor
+q(85358),	-- Ensemble: Verdant Gladiator's Warrior Armor
+q(85355),	-- Ensemble: Elite Verdant Gladiator's Death Knight Armor
+q(), 	-- Ensemble: Elite Verdant Gladiator's Demon Hunter Armor
+q(), 	-- Ensemble: Elite Verdant Gladiator's Druid Armor
+q(), 	-- Ensemble: Elite Verdant Gladiator's Evoker Armor
+q(), 	-- Ensemble: Elite Verdant Gladiator's Hunter Armor
+q(), 	-- Ensemble: Elite Verdant Gladiator's Mage Armor
+q(), 	-- Ensemble: Elite Verdant Gladiator's Monk Armor
+q(),	-- Ensemble: Elite Verdant Gladiator's Paladin Armor
+q(),	-- Ensemble: Elite Verdant Gladiator's Priest Armor
+q(),	-- Ensemble: Elite Verdant Gladiator's Rogue Armor
+q(),	-- Ensemble: Elite Verdant Gladiator's Shaman Armor
+q(),	-- Ensemble: Elite Verdant Gladiator's Warlock Armor
+q(),	-- Ensemble: Elite Verdant Gladiator's Warrior Armor
+
 ------ In-Game Shop ------
 q(77952),	-- Arsenal: Cosmic Weapons Cache
 q(79208),	-- Ensemble: Dreadlord's Venombane Regalia
@@ -394,20 +508,20 @@ q(75449),	-- Ensemble: Waveborne Diplomat's Regalia
 q(77569),	-- High Scholar's Arcana
 q(78218),	-- Sky-Captain's Masquerade Attire
 
------- WoW Anniversary ------ TODO
-q(),	-- Ensemble: Pale Rider's Eternal Armor
-q(),	-- Ensemble: Netherwalker's Eternal Armor
-q(),	-- Ensemble: Eternal Stormrage Armor
-q(),	-- Ensemble: Earth-Warder's Eternal Armor
-q(),	-- Ensemble: Dragonstalker's Eternal Armor
-q(),	-- Ensemble: Eternal Netherwind Regalia
-q(),	-- Ensemble: Eternal Battlegear of the August Acolyte
-q(),	-- Ensemble: Eternal Judgment Armor
-q(),	-- Ensemble: Eternal Vestments of Transcendence
-q(),	-- Ensemble: Eternal Bloodfang Armor
-q(),	-- Ensemble: Eternal Ten Storms
-q(),	-- Ensemble: Eternal Nemesis Raiment
-q(),	-- Ensemble: Eternal Battlegear of Wrath
+------ WoW Anniversary ------
+q(84841),	-- Ensemble: Pale Rider's Eternal Armor
+q(85842),	-- Ensemble: Netherwalker's Eternal Armor
+q(85843),	-- Ensemble: Eternal Stormrage Armor
+q(85844),	-- Ensemble: Earth-Warder's Eternal Armor
+q(85845),	-- Ensemble: Dragonstalker's Eternal Armor
+q(85846),	-- Ensemble: Eternal Netherwind Regalia
+q(85847),	-- Ensemble: Eternal Battlegear of the August Acolyte
+q(85848),	-- Ensemble: Eternal Judgment Armor
+q(85849),	-- Ensemble: Eternal Vestments of Transcendence
+q(85850),	-- Ensemble: Eternal Bloodfang Armor
+q(85851),	-- Ensemble: Eternal Ten Storms
+q(85852),	-- Ensemble: Eternal Nemesis Raiment
+q(85853),	-- Ensemble: Eternal Battlegear of Wrath
 
 ------ Dungeons ------
 -- Deadmines
@@ -923,13 +1037,18 @@ q(76582),	-- Ensemble: Valhalas Ceremonial Armor
 q(78086),	-- Ensemble: Raiment of Amirdrassi
 
 --- The War Within
+q(85586)	-- Ensemble: Auchenai Priest's Raiment
+q(85580)	-- Ensemble: Boulderfist Mystic's Battlegear
+q(85575)	-- Ensemble: Cenarion Mender's Battlegear
 q(82261),	-- Ensemble: Cerulean Dredger
-TODO
-q()	-- Ensemble: Brunnhildar Scout's Kit
-q()	-- Ensemble: Coldarra Spellbinder's Regalia
-q()	-- Ensemble: Drakkari Stalker's Trappings
-q()	-- Ensemble: Jotunheim Berserker's Battleplate
-q()	-- Ensemble: Ymirjar Deathbringer's Battleplate
+q(85591)	-- Ensemble: Brunnhildar Scout's Kit
+q(85594)	-- Ensemble: Coldarra Spellbinder's Regalia
+q(85590)	-- Ensemble: Drakkari Stalker's Trappings
+q(85592)	-- Ensemble: Jotunheim Berserker's Battleplate
+q(85127)	-- Ensemble: Prowler's Faded Headgear
+q(85587)	-- Ensemble: Shadowmoon Warlock's Vestments
+q(85585)	-- Ensemble: Telhamat Anchorite's Raiment
+q(85593)	-- Ensemble: Ymirjar Deathbringer's Battleplate
 
 -- Dornogal Ensemble Vendor
 q(81534),	-- Arcane Peddler's Trinkets

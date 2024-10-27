@@ -4244,6 +4244,7 @@ i(0, 4560);			-- Zaedu
 -- PATCH 11.0.5 --
 ------------------
 --- ITEM ---
+i(229366, 4629);	-- Brrrgl
 i(224410, 4593);	-- Craggles
 i(222970, 4490);	-- Fuzzy
 i(231365, 4689);	-- Karazhan Syphoner
@@ -4251,6 +4252,7 @@ i(228781, 4678);	-- Lil'Doomy
 i(230011, 4679);	-- Lil'Kaz
 i(191946, 3265);	-- Mister Muskoxeles
 i(224406, 4592);	-- Misty
+i(231294, 4682);	-- Reven
 i(231356, 4686);	-- Specter
 --- UNSORTED ---
 i(229993, 4669);	-- Bluedoo

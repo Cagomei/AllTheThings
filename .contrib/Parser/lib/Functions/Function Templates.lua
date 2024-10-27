@@ -52,15 +52,15 @@ FUNCTION_TEMPLATES = {
 			if ]] .. WOWAPI_GetItemCount(22057) .. [[ > 0 then
 				t.u = nil;
 				for i,o in ipairs(t.g) do
-					if o.u and o.u == 11 then
+					if o.u and o.u == ]] .. CONDITIONALLY_AVAILABLE .. [[ then
 						o.u = nil;
 					end
 				end
 			else
-				t.u = 11;
+				t.u = ]] .. CONDITIONALLY_AVAILABLE .. [[;
 				for i,o in ipairs(t.g) do
 					if not o.u then
-						o.u = 11;
+						o.u = ]] .. CONDITIONALLY_AVAILABLE .. [[;
 					end
 				end
 			end

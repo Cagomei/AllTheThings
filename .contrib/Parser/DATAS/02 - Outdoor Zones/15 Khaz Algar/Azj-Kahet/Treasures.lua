@@ -54,6 +54,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 76.4, 58.1, AZJ_KAHET },	-- Inside the cave in Mmarl
 				},
 			}),
+			o(445275, {	-- Royal Sureki Strongbox
+				["description"] = "Has a chance to spawn instead of Sureki Strongbox randomly throughout the zone.",
+				["maps"] = { AZJ_KAHET },
+			}),
 			o(446299, {	-- Silk-spun Supplies
 				--["description"] = "Finishing questID 78383 (Strategic Edge) make it spawn",
 				["coord"] = { 67.5, 27.5, AZJ_KAHET },

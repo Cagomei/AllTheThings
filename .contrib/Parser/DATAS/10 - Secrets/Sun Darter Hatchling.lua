@@ -163,6 +163,12 @@ root(ROOTS.Secrets, {
 				["cost"] = {
 					{ "i", 89373, 1 },	-- Scotty's Lucky Coin
 				},
+				["g"] = {
+					o(272434, {	-- Water Stone
+						["coord"] = { 47.9, 1.5, WINTERSPRING },
+						["groups"] = { i(147455), },	-- Water Stone
+					}),
+				},
 			}),
 			o(9999914, {	-- Step 7: Water Barrier
 				["description"] = "|cFFFFFFFFSTEP 7:|r Use the Water Stone, backtrack to the Blue Barrier and walk through ever so slightly.",

@@ -818,6 +818,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(139705, {	-- Farseer's Wristwraps
 								["cost"] = 5000000,	-- 500g
 							}),
+							i(232622, { ["timeline"] = { ADDED_11_0_5 } }),	-- Glyph of Energetic Ascendance
+							i(232527, { ["timeline"] = { ADDED_11_0_5 } }),	-- Glyph of Traditional Ascendance
 							i(136934),	-- Raging Elemental Stone (TOY!)
 							i(136935),	-- Tadpole Cloudseeder (TOY!)
 							i(136938),	-- Tome of Hex: Compy (CI!)

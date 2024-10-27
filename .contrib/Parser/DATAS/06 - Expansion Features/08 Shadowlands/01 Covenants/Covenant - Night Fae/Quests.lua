@@ -154,7 +154,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				-- ["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				-- TODO Verify if requirements different for first Covenant vs. Switching Covenant?
 				["sourceQuests"] = { 62899 },	-- The Endless Forest  [after switching Covenant]
-				["provider"] = { "n", 158553 },	-- Flutterby
+				["provider"] = { "n", 167196 },	-- Sesselie
 				["isWeekly"] = true,
 				["coord"] = { 33.9, 43.5, THE_ROOTS },
 			}),

@@ -283,7 +283,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					["coord"] = { 36.4, 49.2, AZJ_KAHET },
 					["g"] = {
 						o(439562, {	-- Fallen Aeroknight
-							i(219415),	-- Bloodied Insignia (QI!)
+							["coords"] = {
+								{ 26.5, 42.1, NERUBAR },
+								{ 27.8, 39.7, NERUBAR },
+								{ 28.7, 37.6, NERUBAR },
+								{ 29.3, 43.8, NERUBAR },
+								{ 29.5, 37.0, NERUBAR },
+								{ 31.5, 45.7, NERUBAR },
+								{ 31.6, 37.7, NERUBAR },
+								{ 32.0, 42.0, NERUBAR },
+							},
+							["groups"] = { i(219415), },	-- Bloodied Insignia (QI!)
 						}),
 					},
 				}),
@@ -744,8 +754,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(84541, {	-- [DNT] Weaver - Level 8 Unlock (spellID 462493)
 				["name"] = [[~("The Weaver considers you a Mastermind. Congratulations, Silksinger %s."):format(UnitName("player"))]],
 			}),
-			-- City Rumors (SpellID: 463344), events are available after unlocking Level 1 (Acquaintance) with the General, Vizier and Weaver
-			-- Using Rumor Map Bundle (ItemID 228950) triggers following 6 quests as completed and reveals 6 NPCs with "rumors" on the map
+			-- 'City Rumors' events are available after unlocking Level 1 (Acquaintance) with the General, Vizier and Weaver
+			-- Using 'Rumor Map Bundle' (ItemID: 228950) triggers following 6 quests as completed and reveals 6 NPCs with "rumors" on the map
 			q(82616),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
 			q(82641),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
 			q(82643),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used

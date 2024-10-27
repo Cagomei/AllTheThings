@@ -5,6 +5,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 	n(ISKAARA_TUSKARR, {
 		q(70893, bubbleDownSelf({ ["minReputation"] = { FACTION_ISKAARA_TUSKARR, 3 } }, {	-- Community Feast
 			["provider"] = { "n", 196620 },	-- Pleeqi
+			["coord"] = { 13.5, 48.5, THE_AZURE_SPAN },
 			["isWeekly"] = true,
 			["g"] = {
 				i(200095, {	-- Supply-Laden Soup Pot
