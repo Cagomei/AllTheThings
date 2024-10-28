@@ -211,6 +211,7 @@ HeaderAssignments = {
 	["Graveyard"] = -1000179,
 	["Great Odyn and the Firelord"] = -1000317,
 	["Group Finder"] = -1000023,
+	["Guest Relations"] = -1001045,
 	["Guild"] = -1000094,
 	["Guild Vendors"] = -1000905,
 	["Hallowfall Arathi"] = -1000957,
@@ -531,4 +532,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001043;
+NextHeaderID = -1001046;

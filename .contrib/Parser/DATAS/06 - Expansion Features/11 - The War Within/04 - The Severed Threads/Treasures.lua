@@ -222,13 +222,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 				o(455325, {	-- Vizier's Appreciation
 					["provider"] = { "n", 224900 },	-- Dor'garad
-					["coord"] = { 51.3, 58.8, AZJ_KAHET },
+					["coord"] = { 51.3, 58.8, AZJ_KAHET_LOWER },
 					["questID"] = 82867,
+				}),
+				o(455327, {	-- Vizier's Appreciation
+					["provider"] = { "n", 224900 },	-- Dor'garad
+					["description"] = "Below the ground, at the lowest level of the Breathing Pit.",
+					["coord"] = { 32.8, 54.8, AZJ_KAHET },
+					["questID"] = 82868,
 				}),
 				o(455328, {	-- Vizier's Appreciation
 					["provider"] = { "n", 224900 },	-- Dor'garad
 					["coord"] = { 55.3, 23.9, AZJ_KAHET },
 					["questID"] = 82869,
+				}),
+				o(455329, {	-- Vizier's Appreciation
+					["provider"] = { "n", 224900 },	-- Dor'garad
+					["coord"] = { 64.5, 20.0, AZJ_KAHET },
+					["questID"] = 82870,
 				}),
 				o(455330, {	-- Vizier's Appreciation
 					["provider"] = { "n", 224900 },	-- Dor'garad

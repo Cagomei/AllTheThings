@@ -145,7 +145,6 @@ root(ROOTS.Unsorted, {
 				i(224194),	-- Fashion Frenzy Ribbon
 				i(225252),	-- Bronze Celebration Token
 				-- Secret
-				i(228617),	-- Benatauk's Clue Book
 				i(228694),	-- Damp Ransom Note
 				i(228766),	-- Sandy Ransom Note
 				i(229411),	-- Normal Feather
@@ -160,7 +159,6 @@ root(ROOTS.Unsorted, {
 				i(228990),	-- Bottle of Steam
 				i(228991),	-- Stone of Prophecy
 				i(229165),	-- Quest Journal
-				i(229375),	-- Neural Enlarger
 				i(229413),	-- "Dogg-Saron" Costume
 				i(229414),	-- Moira Thaurissan's Hammer
 				i(229958),	-- Decorated Feather

@@ -3072,7 +3072,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			n(223902, {	-- Traeya <Armor Vendor>
 				["coord"] = { 63.1, 50.9, TANARIS },
 				["g"] = sharedData({
-					["cost"] = {{"c", BRONZE_TOKEN, 80}},
+					["cost"] = {{"c", BRONZE_TOKEN, 60}},
 				}, {
 					iensemble(228205, {	-- Ensemble: Pale Rider's Eternal Armor
 						["classes"] = { DEATHKNIGHT },
