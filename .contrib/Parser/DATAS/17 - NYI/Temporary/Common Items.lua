@@ -298,11 +298,7 @@ root(ROOTS.NeverImplemented, {
 					n(WRIST, {
 						i(57156),	-- Prodigal Lich Bracer
 					}),
-					n(HANDS, {
-						i(53365),	-- Empowered Hands
-					}),
 					n(WAIST, {
-						i(53363),	-- Circle of Suffering
 						i(49530),	-- Goblin Acolyte's Belt
 						i(49509),	-- Goblin Apprentice's Belt
 						i(49513),	-- Goblin Neophyte's Belt
@@ -485,11 +481,9 @@ root(ROOTS.NeverImplemented, {
 			n(ARMOR, {
 				filter(MAIL, {
 					n(WRIST, {
-						i(131848),	-- Beast Tracker's Bracers
 						i(131256),	-- Fur Lined Chain Bracers
 					}),
 					n(HANDS, {
-						i(131854),	-- Rockbitten Gloves
 						i(131925),	-- Wanderer's Grips
 					}),
 					n(FEET, {

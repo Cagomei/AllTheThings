@@ -1796,12 +1796,12 @@ i(224374, 132036);	-- Thundering Ruby Cloud Serpent
 i(213604, 435125);	-- Tropical Riding Crane
 i(223285, 448851);	-- Underlight Corrupted Behemoth
 --- NYI ---
-i(223471, 449142);	-- [PH] Alliance Wolf Mount Purple
 i(223470, 449141);	-- [PH] Alliance Wolf Mount Red
 i(223282, 448845);	-- [PH] Blue Old God Fish Mount
 i(221270, 446352);	-- [PH] Goblin Surfboard - Blue
-i(223459, 449132);	-- [PH] Nightsaber Horde Mount Black
 i(223460, 449133);	-- [PH] Nightsaber Horde Mount White
+i(223459, 449132);	-- Blackrock Warsaber
+i(223471, 449142);	-- Kaldorei War Wolf
 i(224574, 453255);	-- Savage Ebony Battle Turtle
 i(223284, 448849);	-- Underlight Shorestalker
 
@@ -1892,7 +1892,7 @@ i(224150, 451489);	-- Siesbarg
 i(223572, 449415);	-- Slatestone Ramolith
 i(221753, 447057);	-- Smoldering Cinderbee
 i(223153, 447151);	-- Soaring Meaderbee
-i(0, 454682);		-- Startouched Furline
+i(225250, 454682);		-- Startouched Furline
 i(221765, 442358);	-- Stonevault Mechsuit
 i(224147, 451486);	-- Sureki Skyrazor
 i(223267, 447195);	-- Swarmite Skyhunter

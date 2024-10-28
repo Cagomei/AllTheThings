@@ -365,6 +365,9 @@ root(ROOTS.Unsorted, {
 			i(228911),	-- Xal'atath's Rusty Coin
 
 			i(232905),	-- Malown's Slam
+
+			i(232478),	-- Area 52 Tabard
+			i(233053),	-- Crown of the Violet Rose
 		})),
 		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			explorationHeader({

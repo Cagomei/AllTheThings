@@ -817,9 +817,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 10.2.7
 		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
 			-- With MountID Attached
-			i(223471, {	-- [PH] Alliance Wolf Mount Purple (MOUNT!)
-				["displayID"] = 119661,
-			}),
 			i(223470, {	-- [PH] Alliance Wolf Mount Red (MOUNT!)
 				["displayID"] = 119662,
 			}),
@@ -829,11 +826,14 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(221270, {	-- [PH] Goblin Surfboard (MOUNT!)
 				["displayID"] = 119192,
 			}),
-			i(223459, {	-- [PH] Nightsaber Horde Mount Black (MOUNT!)
-				["displayID"] = 119657,
-			}),
 			i(223460, {	-- [PH] Nightsaber Horde Mount White (MOUNT!)
 				["displayID"] = 119658,
+			}),
+			i(223459, {	-- Blackrock Warsaber
+				["displayID"] = 119657,
+			}),
+			i(223471, {	-- Kaldorei War Wolf
+				["displayID"] = 119661,
 			}),
 			i(223284, {	-- Underlight Shorestalker (MOUNT!)
 				["displayID"] = 119506,

@@ -220,6 +220,8 @@
 222858@@@Pinchy the Plunderer
 3.4.3.54948
 211012@@@Cypress
+3.4.3.57082
+224065@@@Swoopy
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
@@ -295,7 +297,6 @@
 58163@@@Soul of the Aspects
 59020@@@Eye of the Legion
 4.4.0.56014
-224065@@@Swoopy
 5.0.3.15882
 7395@@@Undercity Cockroach
 14143@@@Ar'lia

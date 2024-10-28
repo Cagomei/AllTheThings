@@ -89,12 +89,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 38.24, 72.38, ZULDAZAR },
 						}),
 						molemachine(80099, "Zalamar Invasion", {
-							["coord"] = { 38.24, 45.15, NAZMIR },
+							["coord"] = { 34.34, 45.15, NAZMIR },
 						}),
 					})),
 					expansion(EXPANSION.SL, sharedDataSelf({ ["timeline"] = ADDED_11_0_5 }, {
 						molemachine(80104, "Scorched Crypt", {
-							["coord"] = { 38.79, 19.92, REVENDRETH },
+							["coord"] = { 19.94, 38.81, REVENDRETH },
 						}),
 						molemachine(80106, "Soryn's Meadow", {
 							["coord"] = { 66.47, 50.55, ARDENWEALD },

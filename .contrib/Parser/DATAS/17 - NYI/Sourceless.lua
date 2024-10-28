@@ -10,6 +10,8 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		expansion(EXPANSION.CATA, {
 			-- 4.0.3
 			expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {
+				i(53363),	-- Circle of Suffering
+				i(53365),	-- Empowered Hands
 				i(53376),	-- Lockpicker's Glovelettes
 				i(57529),	-- Fur-Lined Slippers
 				i(57533),	-- Dwarven Iron Bracer
@@ -30,6 +32,8 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 7.0.3
 			expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 				i(131203),	-- Chain Link Winter Bracers
+				i(131848),	-- Beast Tracker's Bracers
+				i(131854),	-- Rockbitten Gloves
 			})),
 			-- 7.2.5
 			expansion(EXPANSION.LEGION, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {

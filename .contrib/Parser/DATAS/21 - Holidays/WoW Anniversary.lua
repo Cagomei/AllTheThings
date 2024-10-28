@@ -2554,6 +2554,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				-- Gorgrond 226158
 				-- Shadowmoon Valley 226157
 			}),
+			ach(40967),		-- Ratts' Revenge
 			ach(40997),		-- The Gatecrashers (automated)
 			ach(40995),		-- The Originals (automated)
 			ach(41038),		-- Token Collector
@@ -2621,6 +2622,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				i(226092),	-- Timely Tourist's Robes
 				i(226069),	-- Timely Tourist's Sabatons
 				i(226093),	-- Timely Tourist's Sandals
+				i(226090),	-- Timely Tourist's Sash
 				i(226052),	-- Timely Tourist's Shank
 				i(226058),	-- Timely Tourist's Sharpshooter
 				i(226050),	-- Timely Tourist's Shawl
