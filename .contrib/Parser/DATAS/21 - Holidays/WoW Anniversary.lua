@@ -2502,30 +2502,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ach(40998),		-- A Timewalking Step Back to a Classic Dungeon Time (automated)
 			ach(41000),		-- A Timewalking Journey Back to a Classic Dungeon Time (automated)
 			ach(40994),		-- An Original (automated)
-			ach(40871, {	-- Assistant to the Assistant Guest Relations Manager (automated)
-				i(231907),	-- Tricked-Out Thinking Cap
-			}),
 			ach(40993, {	-- Avid Listener
 				crit(70553),	-- Listen to 'The Heroes of the Scarab Wall' story
 				crit(70555),	-- Listen to 'The Mercy of Baine Bloodhoof' story
 				crit(70554),	-- Listen to 'The Tragedy of Thassarian' story
 			}),
-			ach(40870, {	-- Azeroth's Greatest Detective
-				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
-					40871,	-- Assistant to the Assistant Guest Relations Manager
-					40873,	-- Crate Insurance Agent
-					40872,	-- I Saved the Party and All I Got Was This Lousy Hat
-					40979,	-- No Crate Left Behind
-				}},
-				["g"] = {
-					title(571),	-- Detective <Name> (TITLE!)
-				},
-			}),
 			ach(40990),		-- Balloonist
 			ach(40984),		-- Big Fan
 			ach(41033),		-- Classy Dresser
-			ach(40873),		-- Crate Insurance Agent
 			ach(40987),		-- Fashion Critic
 			ach(40991, {	-- Frequent Flyer
 				crit(70549, {["crs"]={225017}}),	-- Bronze Balloon
@@ -2535,11 +2519,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 			achWithRep(957, FACTION_ZANDALAR_TRIBE),	-- Hero of the Zandalar Tribe
 			ach(40985),		-- I Have That One!
-			ach(40872, {	-- I Saved the Party and All I Got Was This Lousy Hat (automated)
-				i(231906),	-- High-Alert Thinking Cap
-			}),
 			ach(40986),		-- Mount Master
-			ach(40979),		-- No Crate Left Behind
 			ach(40992),		-- Peanut Gallery
 			ach(40989, {	-- Pet Mischief
 				["provider"] = { "i", 224157 },	-- Pet Mirror
@@ -2554,7 +2534,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				-- Gorgrond 226158
 				-- Shadowmoon Valley 226157
 			}),
-			ach(40967),		-- Ratts' Revenge
 			ach(40997),		-- The Gatecrashers (automated)
 			ach(40995),		-- The Originals (automated)
 			ach(41038),		-- Token Collector

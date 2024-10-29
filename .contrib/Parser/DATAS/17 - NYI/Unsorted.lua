@@ -145,7 +145,6 @@ root(ROOTS.Unsorted, {
 				i(224194),	-- Fashion Frenzy Ribbon
 				i(225252),	-- Bronze Celebration Token
 				-- Secret
-				i(228694),	-- Damp Ransom Note
 				i(228766),	-- Sandy Ransom Note
 				i(229411),	-- Normal Feather
 

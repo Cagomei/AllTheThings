@@ -224,6 +224,11 @@ else
 	end
 end
 
+local function ClassError(...)
+	local params = {...}
+	local err = app.TableConcat(params, nil, "", " ")
+	error(err)
+end
 local CloneDictionary = app.CloneDictionary
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 local classDefinitions, _cache = {}, nil;
@@ -234,13 +239,13 @@ end
 -- Generates a metatable to use for the given class name based on the provided field functions
 local CreateClassMeta = not app.__perf and function(fields, className)
 	if not className then
-		print("A Class Name must be declared when using CreateClass");
+		ClassError("A Class Name must be declared when using CreateClass");
 	end
 	local class = { __type = function() return className; end };
 	if not classDefinitions[className] then
 		classDefinitions[className] = class;
 	else
-		print("A Class has already been defined with that name!", className);
+		ClassError("A Class has already been defined with that name!", className);
 	end
 
 	if fields then CloneDictionary(fields, class) end
@@ -260,7 +265,7 @@ end
 -- performance tracking wrapped base fields
 or function(fields, className)
 	if not className then
-		print("A Class Name must be declared when using CreateClassMeta");
+		ClassError("A Class Name must be declared when using CreateClassMeta");
 	end
 	local class = { __type = function() return className; end };
 	app.__perf.AutoCaptureTable(class, "Class:"..className)
@@ -270,7 +275,7 @@ or function(fields, className)
 	if not classDefinitions[className] then
 		classDefinitions[className] = class;
 	else
-		print("A Class has already been defined with that name!", className);
+		ClassError("A Class has already been defined with that name!", className);
 	end
 
 	if fields then CloneDictionary(fields, class) end
@@ -414,8 +419,7 @@ local function GenerateVariantClasses(class)
 	local variantClone
 	for variantName,variant in pairs(variants) do
 		if not variant.__condition then
-			app.print("Missing Class Variant __condition!",variantName,classname)
-			error("ATT Variants Require __condition function")
+			ClassError("Missing Class Variant __condition!",variantName,classname)
 		end
 		-- raw variant table may be used by other classes, so need to copy it for this specific subclass
 		variantClone = CloneDictionary(fields, CloneDictionary(variant, {base=subbase}))
@@ -482,13 +486,13 @@ end
 app.CreateClass = function(className, classKey, fields, ...)
 	-- Validate arguments
 	if not className then
-		print("A Class Name must be declared when using CreateClass");
+		ClassError("A Class Name must be declared when using CreateClass");
 	end
 	if not classKey then
-		print("A Class Key must be declared when using CreateClass");
+		ClassError("A Class Key must be declared when using CreateClass");
 	end
 	if not fields then
-		print("Fields must be declared when using CreateClass");
+		ClassError("Fields must be declared when using CreateClass");
 	end
 
 	-- app.PrintDebug("CreateClass",className, classKey)
@@ -544,7 +548,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 	if not classesByKey[classKey] then
 		classesByKey[classKey] = classConstructor;
 	elseif not fields.IsClassIsolated then
-		print(className, "does not have a unique class Key", classKey, "and will have trouble with instance creation without a direct reference to an existing object or a direct integration using parser!");
+		ClassError(className, "does not have a unique class Key", classKey, "and will have trouble with instance creation without a direct reference to an existing object or a direct integration using parser!");
 	end
 	return classConstructor, Class;
 end
@@ -554,16 +558,16 @@ end
 app.CreateClassWithInfo = function(className, classKey, classInfo, fields)
 	-- Validate arguments
 	if not className then
-		print("A Class Name must be declared when using CreateClassWithInfo");
+		ClassError("A Class Name must be declared when using CreateClassWithInfo");
 	end
 	if not classKey then
-		print("A Class Key must be declared when using CreateClassWithInfo");
+		ClassError("A Class Key must be declared when using CreateClassWithInfo");
 	end
 	if not fields then
-		print("Fields must be declared when using CreateClassWithInfo");
+		ClassError("Fields must be declared when using CreateClassWithInfo");
 	end
 	if not classInfo then
-		print("ClassInfo must be declared when using CreateClassWithInfo");
+		ClassError("ClassInfo must be declared when using CreateClassWithInfo");
 	end
 
 	-- Ensure that a key and _type field exists!
@@ -574,7 +578,7 @@ app.CreateClassWithInfo = function(className, classKey, classInfo, fields)
 	if not classDefinitions[className] then
 		classDefinitions[className] = class;
 	else
-		print("A Class has already been defined with that name!", className);
+		ClassError("A Class has already been defined with that name!", className);
 	end
 
 	local classConstructor = function(id, t)
@@ -622,7 +626,7 @@ app.ExtendClass = function(baseClassName, className, classKey, fields, ...)
 		fields.conditionals = nil;
 		fields.simplemeta = nil;
 	else
-		print("Could not find specified base class:", baseClassName);
+		ClassError("Could not find specified base class:", baseClassName);
 	end
 	-- app.PrintDebug("ExtendClass",baseClassName, className, classKey)
 	return app.CreateClass(className, classKey, fields, ...);

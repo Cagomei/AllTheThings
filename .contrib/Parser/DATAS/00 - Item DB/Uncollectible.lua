@@ -10,6 +10,7 @@ end
 i(805);		-- Small Red Pouch
 i(828);		-- Small Blue Pouch
 i(1725);	-- Large Knapsack
+i(2657);	-- Red Leather Bag
 i(5571);	-- Small Black Pouch
 i(5572);	-- Small Green Pouch
 i(3914);	-- Journeyman's Backpack

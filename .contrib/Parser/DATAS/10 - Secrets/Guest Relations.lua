@@ -11,9 +11,40 @@ GUEST_RELATIONS = createHeader({
 	},
 });
 
+CELEBRATION_CRATES = createHeader({
+	readable = "Celebration Crates",
+	constant = "CELEBRATION_CRATES",
+	icon = [[~_.asset("Holiday_SecretsAz")]],
+--	eventID = EVENTS.TODO,
+	text = {
+		en = "Celebration Crates",
+	},
+});
+
 root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 	["description"] = "***Using Debug Mode is recommended.***\n",
 	["groups"] = {
+		n(ACHIEVEMENTS, {
+			ach(40870, {	-- Azeroth's Greatest Detective
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					40871,	-- Assistant to the Assistant Guest Relations Manager
+					40873,	-- Crate Insurance Agent
+					40872,	-- I Saved the Party and All I Got Was This Lousy Hat
+					40979,	-- No Crate Left Behind
+				}},
+				["g"] = {
+					title(571),	-- Detective <Name> (TITLE!)
+				},
+			}),
+			ach(40871, {	-- Assistant to the Assistant Guest Relations Manager (automated)
+				i(231907),	-- Tricked-Out Thinking Cap
+			}),
+			ach(40872, {	-- I Saved the Party and All I Got Was This Lousy Hat (automated)
+				i(231906),	-- High-Alert Thinking Cap
+			}),
+			ach(40967),		-- Ratts' Revenge
+		}),
 		n(QUESTS, {
 			-- Week 1: Tutorial Questline --
 			q(84143, {	-- Lost and Busy
@@ -55,7 +86,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["coord"] = { 35.1, 78.2, TANARIS },
 			}),
 			q(84363, {	-- Tweasure Hunt
-				["description"] = "Activate Torch of Pyrreth at each of the Dig Site.",
+				["description"] = "Activate Torch of Pyrreth at each of the Dig Sites.",
 				["provider"] = { "n", 229062 },	-- Maru <Junior Secret Sleuf>
 				["sourceQuests"] = { 84393 },	-- Da Stick of Revealing
 				["coord"] = { 37.2, 78.9, TANARIS },
@@ -118,11 +149,57 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 		}),
+		n(CELEBRATION_CRATES, {
+			ach(40873),		-- Crate Insurance Agent
+			ach(40979),		-- No Crate Left Behind
+			header(HEADERS.Quest, 83794, {
+				o(455780, {	-- Damp Ransom Note
+					["description"] = "Upper left corner of the bulletin board.",
+					["coord"] = { 63.0, 50.2, TANARIS },
+					["g"] = {
+						i(228694, {	-- Damp Ransom Note
+							["description"] = "Go to Zuldazar in Zandalar. At 54.3, 54.5 you will find Nikto. Buy Clam Digger and head upwards to 54.2, 54.2. Interract with Gerald and give him the drink.",
+						}),
+					},
+				}),
+				n(143029, {	-- Nikto <Master Talekeep>
+					["coord"] = { 54.3, 54.5, ZULDAZAR },
+					["groups"] = { i(225996), },	-- Clam Digger
+				}),
+				o(455768, {	-- Soggy Celebration Crate
+					-- ["provider"] = { "O", XXX },	-- Gerald
+					-- Gerald is a clam object that opens to allow clicking of the crate object, Gerald's objectid is either 455761 or 455764, TODO: identify and nest under if true
+					["coord"] = { 54.2, 54.2, ZULDAZAR },
+					["cost"] = { { "i", 225996, 1 } },	-- Clam Digger
+					["questID"] = 83790,
+					["g"] = {
+						i(226200),	-- Soggy Celebration Crate
+					},
+				}),
+				q(83794, {	-- Soggy Celebration Crate
+					["provider"] = { "i", 226200 },	-- Soggy Celebration Crate
+				}),
+			}),
+			--[[	Need objectid
+			header(HEADERS.Quest, 85574, {
+				o(???, {	-- Hazy Celebration Crate
+					["coord"] = {54.0, 58.1, DESOLACE },
+					["g"] = {
+						i(232263),	-- Hazy Celebration Crate
+					},
+					--["questID"] = ???,
+				}),
+				q(85574, {	-- Hazy Celebration Crate
+					["provider"] = { "i", 232263 },	-- Soggy Celebration Crate
+				}),
+			}),
+			]]--
+		}),
 	},
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 	n(GUEST_RELATIONS, {
-
+		q(84617),	-- Accepting Harder Puzzles from Alyx. This unlocks notes on the bulletin board next to Alyx.
 	}),
 })));

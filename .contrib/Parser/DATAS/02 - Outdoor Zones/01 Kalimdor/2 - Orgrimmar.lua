@@ -2716,6 +2716,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.0, 37.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(2361, {	-- Battleworn Bludgeon
+							["timeline"] = { ADDED_11_0_5 },
+						}),
 						i(23346, {	-- Battleworn Claymore
 							["timeline"] = { ADDED_10_1_7 },
 						}),

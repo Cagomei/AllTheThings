@@ -1149,7 +1149,11 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 		n(VENDORS, {
 			n(206864, {	-- Preservationist Kathos
 				["coord"] = { 47.3, 48.2, VALDRAKKEN },
-				["g"] = { i(229375), },	-- Neural Enlarger
+				["g"] = {
+					i(229375, {	-- Neural Enlarger
+						["timeline"] = { ADDED_11_0_5 },
+					}),
+				},
 			}),
 		}),
 	},
