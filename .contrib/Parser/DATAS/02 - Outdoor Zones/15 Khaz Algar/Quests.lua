@@ -47,6 +47,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 84022 },	-- Uniting Severed Threads
 					["provider"] = { "n", 219252 },	-- Alleria Windrunner
 					["coord"] = { 55.6, 44.2, AZJ_KAHET },
+					["g"] = {
+						hqt(79573, name(HEADERS.AchCriteria, 40725.02)),	-- War Within Delves: Endgame [Complete Campaign]
+					},
 				}),
 				q(84446, {	-- Renown of Khaz Algar
 					-- Not part of the 'Against the Current' quest chain. I'll find it place somewhere else -Exodius

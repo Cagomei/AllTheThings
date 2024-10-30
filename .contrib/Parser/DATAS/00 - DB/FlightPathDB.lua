@@ -745,6 +745,15 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[149] = {
 		text = {
 			en = "Shatter Point, Hellfire Peninsula",
+			es = "Puesto Devastación, Península del Fuego Infernal",
+			de = "Trümmerposten, Höllenfeuerhalbinsel",
+			fr = "Halte du Fracas, Péninsule des Flammes infernales",
+			it = "Presidio Frantumato, Penisola del Fuoco Infernale",
+			pt = "Pontal do Raio, Península Fogo do Inferno",
+			ru = "Лагерь Удара ,Полуостров Адского Пламени",
+			ko = "징검다리 거점 지옥불 반도",
+			cn = "破碎岗哨, 地狱火半岛",
+			tw = "碎裂哨站，地獄火半島",
 		},
 	},
 	[150] = {

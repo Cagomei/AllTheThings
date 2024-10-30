@@ -1588,6 +1588,7 @@ ExportDB.AccountWideQuestsDB = {
 	[84520] = true,	-- Ancient Curiosity: Utility
 	[84542] = true,	-- A Radiant Echo
 	[84562] = true, -- The Finer Things: #1
+	[84597] = true, -- Bronze Celebration Token (Queen Ansurek [H])
 	[84604] = true, -- Bronze Celebration Token Lockout [from #82783]
 	[84606] = true, -- Bronze Celebration Token Lockout [from #60215]
 	[84608]	= true, -- Bronze Celebration Token Lockout [from #85947]
@@ -1606,5 +1607,19 @@ ExportDB.AccountWideQuestsDB = {
 	[85540] = true,	-- Take Big Candle!
 	[85541] = true,	-- Here's a Shiny!
 	[85718] = true,	-- A Shining Stone
+	[83317] = true, -- Delve Rep Bonus (Council of Dornogal)
+	[83318] = true, -- Delve Rep Bonus (Assembly of the Deeps)
+	[83319] = true, -- Delve Rep Bonus (Severed Threads)
+	[83320] = true, -- Delve Rep Bonus (Hallowfall Arathi)
+	[83235] = true,
+	[83236] = true,
+	[83237] = true,
+	[83238] = true,
+	[83239] = true,
+	[83180] = true,
+	[83156] = true,
+	[83193] = true,
+	[85757] = true,
+	[79573] = true, -- TWW Campaign Completed
 	-- #ENDIF
 }

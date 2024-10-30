@@ -708,6 +708,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 	-- One-Time flags
 	inst(1273, {
 		-- The Finer Things (Account-Wide Buff tracking) (maybe do something neat to show current level)
-		q(84562, {name="Severed Threads Rank 1"}),	-- 1st Turn in of 'The Finer Things' (84286)
+		q(84562, {
+			["name"]="Severed Threads Active",	-- 1st Turn in of 'The Finer Things' (84286)
+			["g"] = {
+				currency(3094),	-- Tracking Currency for Severed Threads stacks
+			},
+		}),
 	})
 })))

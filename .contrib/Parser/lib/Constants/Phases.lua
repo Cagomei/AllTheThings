@@ -90,7 +90,7 @@ NEVER_IMPLEMENTED = createPhase({
 	phaseID = 1,
 	state = 1,
 	text = {
-		en = "Never Implemented",
+		en = "Never Implemented [NYI]",
 		--[[
 		es = "",
 		de = "",
@@ -98,10 +98,10 @@ NEVER_IMPLEMENTED = createPhase({
 		it = "",
 		pt = "",
 		]]--
-		ru = "Никогда Не Доступны",
+		ru = "Никогда Не Доступны [NYI]",
 		--ko = "",
-		cn = "从未实施",
-		tw = "從未實裝",
+		cn = "从未实施 [NYI]",
+		tw = "從未實裝 [NYI]",
 	},
 	description = {
 		en = "This was never available to players.",
@@ -446,7 +446,7 @@ TEMP_MOP_LEGENDARY_CLOAK_PHASE = createPhase({
 		--[[
 		ko = "",
 		]]--
-		cn = "这仅适用于在《熊猫人之谜》或通过黑市拍卖行完成传奇披风任务链的玩家。",
+		cn = "这仅适用于在《熊猫人之谜》完成传奇披风任务链、《熊猫人之谜：幻境新生》获取成就的玩家或通过黑市拍卖行获取。",
 		tw = "這僅適用於在《潘達利亞之謎》完成傳奇披風任務鏈、《混搭再造：潘達利亞之謎》取得成就的玩家或通過黑市拍賣行獲得。",
 	},
 });
