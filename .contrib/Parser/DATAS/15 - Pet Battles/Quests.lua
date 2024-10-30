@@ -1073,7 +1073,14 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 		expansion(EXPANSION.TBC, {
 			q(31922, {	-- Nicki Tinytech
 				["qg"] = 66550,	-- Nicki Tinytech
+				-- #if BEFORE 11.0.5
 				["coord"] = { 64.3, 49.3, HELLFIRE_PENINSULA },
+				-- #else
+				["coords"] = {
+					{ 64.3, 49.3, HELLFIRE_PENINSULA },
+					{ 62.0, 49.5, TANARIS },
+				},
+				-- #endif
 			}),
 			q(31924, {	-- Narrok
 				["provider"] = { "n", 66552 },	-- Narrok <Master Pet Tamer>

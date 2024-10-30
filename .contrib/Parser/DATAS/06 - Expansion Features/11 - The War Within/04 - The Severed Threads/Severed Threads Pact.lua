@@ -813,6 +813,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(79698),	-- Triggered after completing questID 79627 (Wine and Die)
 			-- q(80688), -- triggered after completing task for a 'Rumor' (re-capture and narrow down)
 			-- Weaver's Lair Profession Table
+			q(84693),	-- Weaver's Lair Profession Table flag?, shown on i(228946)
 			q(84746),	-- Blacksmithing
 			q(84747),	-- Leatherworking
 			q(84748),	-- Tailoring

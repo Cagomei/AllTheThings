@@ -12,5 +12,7 @@ FLIGHT_PATHS = createHeader({
 		en = WOWAPI_GetSpellName(218950),
 		-- #endif
 		ru = "Точка полета",
+		cn = "飞行路线",
+		tw = "飛行路線",
 	},
 });

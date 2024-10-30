@@ -106,7 +106,6 @@ _.HeaderConstants = {
 	BREWFEST_HEADER = -1000282,
 	BUILDINGS = -1000091,
 	CALL_OF_THE_SCARAB_HEADER = -1000199,
-	CELEBRATION_CRATES = -1001048,
 	CHEST = -1000062,
 	CHILDRENS_WEEK_HEADER = -1000200,
 	COMMON_BOSS_DROPS = -1000010,
@@ -659,7 +658,6 @@ localize(L.HEADER_NAMES, {
 	[-1001040] = "Audience with Arrogance",
 	[-1001041] = "Delve Completion",
 	[-1001045] = "Guest Relations",
-	[-1001048] = "Celebration Crates",
 	[-1001049] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
 	[-1001050] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
@@ -1209,7 +1207,6 @@ localize(L.HEADER_ICONS, {
 	[-1001040] = 3614361,
 	[-1001041] = _.asset("interface_rewards"),
 	[-1001045] = _.asset("holiday_secretsaz"),
-	[-1001048] = _.asset("holiday_secretsaz"),
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -6780,7 +6777,6 @@ local ObjectNames = {
 	[455720] = "DELVER'S CALL: Tak-Rethan Abyss",
 	[455759] = "Hulking Raptorial Claw",
 	[455768] = "Soggy Celebration Crate",
-	[455780] = "Damp Ransom Note",
 	[455795] = "Pet Box",
 	[455890] = "Waterlogged Refuse",
 	[455914] = "Mislaid Curiosity",
@@ -11942,7 +11938,6 @@ local ObjectModels = {
 	[455685] = 5409330,
 	[455759] = 5936948,
 	[455768] = 5282318,
-	[455780] = 943682,
 	[455795] = 1981372,
 	[455890] = 1254955,
 	[455914] = 3936818,
@@ -42830,6 +42825,7 @@ localize(L.HEADER_NAMES, {
 	[-1000013] = "常规商人物品",
 	[-1000017] = "掉落",
 	[-1000019] = "探索",
+	[-1000021] = "飞行路线",
 	[-1000023] = "团队查找器",
 	[-1000032] = "稀有",
 	[-1000035] = "解密",
@@ -46647,9 +46643,11 @@ do phases[key].lore = value; end
 if GetLocale():sub(3,4):lower() == "tw" then
 localize(L.HEADER_NAMES, {
 	[-1000011] = "一般寶箱掉落",
+	[-1000021] = "飛行路線",
 	[-1000038] = "寶箱",
 	[-1000044] = "地區掉落",
 	[-1000045] = "地區獎勵",
+	[-1000873] = "混搭再造：潘達利亞之謎",
 	[-1000907] = "探究",
 	[-1001041] = "探究完成",
 });

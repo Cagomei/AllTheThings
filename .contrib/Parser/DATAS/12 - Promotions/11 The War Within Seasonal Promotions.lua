@@ -85,10 +85,42 @@ root(ROOTS.Promotions, {
 			}),
 			i(72153, {	-- Sand Scarab (PET!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 22nd, 10:00 a.m. & November 5th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_11_0_5, },
+				["timeline"] = { ADDED_11_0_5 },
+			}),
+			--[[ TODO: verify if codes can be redeemed on non-us accounts
+			i(999, {	-- Bot Wrangler’s Crimson Apron
+				["description"] = "Available to redeem for points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				["timeline"] = { ADDED_11_0_5 },
+				["u"] = REAL_MONEY,
+			}),
+			i(999, {	-- Bot Wrangler’s Violet Apron
+				["description"] = "Available to redeem for points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				["timeline"] = { ADDED_11_0_5 },
+				["u"] = REAL_MONEY,
+			}),
+			i(999, {	-- Chillbot 9000 (PET!)
+				["description"] = "Available to redeem for points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				["timeline"] = { ADDED_11_0_5 },
+				["u"] = REAL_MONEY,
+			}),
+			i(999, {	-- Thrillbot 9000 (PET!)
+				["description"] = "Available to redeem for points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				["timeline"] = { ADDED_11_0_5 },
+				["u"] = REAL_MONEY,
+			}),
+			]]--
+			i(211087, {	-- Hateforged Blazecycle (MOUNT!)
+				["description"] = "Available to redeem for points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				["timeline"] = { ADDED_11_0_5 },
+				["u"] = REAL_MONEY,
+			}),
+			i(68385, {	-- Lil' Ragnaros (PET!)
+				["description"] = "Available to redeem for points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				["timeline"] = { ADDED_11_0_5 },
+				["u"] = REAL_MONEY,
 			}),
 
-		--	i(500001, {    -- The PVE/PVP Banner temporary item -- TEMPLETE
+		--	i(500001, {    -- The PVE/PVP Banner temporary item -- TEMPLATE
 		--		["sourceID"] = 500001,
 		--		["description"] = "Mythic Dungeon International: TWW Season 1\n\nThe Mythic Dungeon International (MDI) returns with its global competitions, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Tempered Banner of the Algari to use in-game!\nSign-ups close 14 October 2024 1PM PDT and The Time Trials are on 16 October 1PM PDT - 21 October (US) 1PM PDT.",
 		--		["timeline"] = { ADDED_11_0_2 },

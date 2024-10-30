@@ -74,10 +74,11 @@ FUNCTION_TEMPLATES = {
 		local OnTooltipName = "IsSpellOnCooldown_"..spellID
 		ExportDB.OnTooltipDB[OnTooltipName] = [[~function(t,tooltipInfo)
 			if _.CurrentCharacter.Spells[]]..spellID..[[]then
+				local n=t.name or RETRIEVING_DATA
 				if _.WOWAPI.GetSpellCooldown(]]..spellID..[[)>0 then
-					tinsert(tooltipInfo, { left = "Your "..t.name.." cooldown is unavailable." });
+					tinsert(tooltipInfo, { left = "Your "..n.." cooldown is unavailable." });
 				else
-					tinsert(tooltipInfo, { left = "Your "..t.name.." cooldown is available." });
+					tinsert(tooltipInfo, { left = "Your "..n.." cooldown is available." });
 				end
 			end
 		end]]
@@ -136,10 +137,11 @@ ExportDB.OnTooltipDB = {
 	IsSpellOnCooldown = [[~function(t,tooltipInfo)
 		local s = t.spellID
 		if _.CurrentCharacter.Spells[s]then
+			local n=t.name or RETRIEVING_DATA
 			if _.WOWAPI.GetSpellCooldown(s)>0 then
-				tinsert(tooltipInfo, { left = "Your "..t.name.." cooldown is unavailable." });
+				tinsert(tooltipInfo, { left = "Your "..n.." cooldown is unavailable." });
 			else
-				tinsert(tooltipInfo, { left = "Your "..t.name.." cooldown is available." });
+				tinsert(tooltipInfo, { left = "Your "..n.." cooldown is available." });
 			end
 		end
 	end]],

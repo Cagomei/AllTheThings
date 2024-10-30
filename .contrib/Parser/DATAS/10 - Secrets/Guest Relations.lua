@@ -11,20 +11,13 @@ GUEST_RELATIONS = createHeader({
 	},
 });
 
-CELEBRATION_CRATES = createHeader({
-	readable = "Celebration Crates",
-	constant = "CELEBRATION_CRATES",
-	icon = [[~_.asset("Holiday_SecretsAz")]],
---	eventID = EVENTS.TODO,
-	text = {
-		en = "Celebration Crates",
-	},
-});
-
 root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 	["description"] = "***Using Debug Mode is recommended.***\n",
 	["groups"] = {
 		n(ACHIEVEMENTS, {
+			ach(40871, {	-- Assistant to the Assistant Guest Relations Manager (automated)
+				i(231907),	-- Tricked-Out Thinking Cap
+			}),
 			ach(40870, {	-- Azeroth's Greatest Detective
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -36,9 +29,6 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["g"] = {
 					title(571),	-- Detective <Name> (TITLE!)
 				},
-			}),
-			ach(40871, {	-- Assistant to the Assistant Guest Relations Manager (automated)
-				i(231907),	-- Tricked-Out Thinking Cap
 			}),
 			ach(40872, {	-- I Saved the Party and All I Got Was This Lousy Hat (automated)
 				i(231906),	-- High-Alert Thinking Cap
@@ -149,28 +139,20 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 		}),
-		n(CELEBRATION_CRATES, {
+		header(HEADERS.Achievement, 40979,{
 			ach(40873),		-- Crate Insurance Agent
 			ach(40979),		-- No Crate Left Behind
 			header(HEADERS.Quest, 83794, {
-				o(455780, {	-- Damp Ransom Note
-					["description"] = "Upper left corner of the bulletin board.",
-					["coord"] = { 63.0, 50.2, TANARIS },
-					["g"] = {
-						i(228694, {	-- Damp Ransom Note
-							["description"] = "Go to Zuldazar in Zandalar. At 54.3, 54.5 you will find Nikto. Buy Clam Digger and head upwards to 54.2, 54.2. Interract with Gerald and give him the drink.",
-						}),
-					},
-				}),
+				i(228694),	-- Damp Ransom Note
 				n(143029, {	-- Nikto <Master Talekeep>
 					["coord"] = { 54.3, 54.5, ZULDAZAR },
 					["groups"] = { i(225996), },	-- Clam Digger
 				}),
 				o(455768, {	-- Soggy Celebration Crate
-					-- ["provider"] = { "O", XXX },	-- Gerald
+					["description"] = "Go to Zuldazar in Zandalar. At 54.3, 54.5 you will find Nikto. Buy Clam Digger and head upwards to 54.2, 54.2. Interract with Gerald and give him the drink.",
+					["provider"] = { "i", 225996 },	-- Clam Digger
 					-- Gerald is a clam object that opens to allow clicking of the crate object, Gerald's objectid is either 455761 or 455764, TODO: identify and nest under if true
 					["coord"] = { 54.2, 54.2, ZULDAZAR },
-					["cost"] = { { "i", 225996, 1 } },	-- Clam Digger
 					["questID"] = 83790,
 					["g"] = {
 						i(226200),	-- Soggy Celebration Crate
@@ -180,9 +162,8 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					["provider"] = { "i", 226200 },	-- Soggy Celebration Crate
 				}),
 			}),
-			--[[	Need objectid
 			header(HEADERS.Quest, 85574, {
-				o(???, {	-- Hazy Celebration Crate
+				n(233090, {	-- Hazy Celebration Crate //why is this an NPC?
 					["coord"] = {54.0, 58.1, DESOLACE },
 					["g"] = {
 						i(232263),	-- Hazy Celebration Crate
@@ -190,10 +171,9 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					--["questID"] = ???,
 				}),
 				q(85574, {	-- Hazy Celebration Crate
-					["provider"] = { "i", 232263 },	-- Soggy Celebration Crate
+					["provider"] = { "i", 232263 },	-- Hazy Celebration Crate
 				}),
 			}),
-			]]--
 		}),
 	},
 })));

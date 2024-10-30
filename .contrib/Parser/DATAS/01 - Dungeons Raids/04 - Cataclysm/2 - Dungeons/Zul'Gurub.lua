@@ -781,6 +781,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(69613),	-- Leggings of the Pride
 						i(69614),	-- Roaring Mask of Bethekk
 						i(69611),	-- Sash of Anguish
+						n(53088, {	-- Temple Rat
+							["description"] = "Loot the rats and throw them to the awake Pride of Bethekk during the boss fight for the achievement 'Here, Kitty Kitty...'. Only one rat per cat counts.\n\nThe Temple Rat in the room adjacent to the boss room can be looted through the wall when it wanders close enough.",
+						}),
 					},
 				}),
 				e(184, {	-- Zanzil
@@ -813,7 +816,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							["timeline"] = { ADDED_6_1_0 },
 						})),
 						n(52167, {	-- Gurubashi Spirit Warrior
-							["description"] = "|CFFFF0000MUST be killed prior to Jin'do the Godbreaker encounter Phase 2 start, otherwise fight will be impossible.|r",
+							["description"] = "|CFFFF0000At least one MUST be killed prior to Jin'do the Godbreaker encounter Phase 2 start, otherwise fight will be impossible.|r\n\nIn Phase 2 their spirits will spawn and they must be pulled up to Hakkar's chains in order to break theem with their ability 'Body Slam'.",
 						}),
 					},
 				}),

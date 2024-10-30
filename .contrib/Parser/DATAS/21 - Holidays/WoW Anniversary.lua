@@ -1250,10 +1250,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 	n(WOW_ANNIVERSARY_THIRTEEN, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } },{
 		n(QUESTS, {
 			q(47253, {	-- The Originals [Alliance]
+				-- #if BEFORE 11.0.5
 				["qg"] = 110034,	-- Historian Llore
+				-- #else
+				["qg"] = 223882,	-- Izaik Kadarov
+				-- #endif
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
+				-- #if BEFORE 11.0.5
 				["coord"] = { 51.5, 38.7, CAVERNS_OF_TIME },
+				-- #else
+				["coord"] = { 62.3, 51.8, TANARIS },
+				-- #endif
 				["sym"] = {{"select","npcID",
 					121818,	-- Lord Kazzak [Blasted Lands - Always up]
 					121820,	-- Azuregos [Azshara - Always Up]
@@ -1264,10 +1272,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}},
 			}),
 			q(47254, {	-- The Originals [Horde]
+				-- #if BEFORE 11.0.5
 				["qg"] = 110035,	-- Historian Jupa
+				-- #else
+				["qg"] = 223882,	-- Izaik Kadarov
+				-- #endif
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
+				-- #if BEFORE 11.0.5
 				["coord"] = { 51.5, 38.7, CAVERNS_OF_TIME },
+				-- #else
+				["coord"] = { 62.3, 51.8, TANARIS },
+				-- #endif
 				["sym"] = {{"select","npcID",
 					121818,	-- Lord Kazzak [Blasted Lands - Always up]
 					121820,	-- Azuregos [Azshara - Always Up]
@@ -3356,6 +3372,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(86289),	-- High Interrogator Gerstahn (N)
 		q(86290),	-- High Interrogator Gerstahn (H)
 		q(86279),	-- Houndmaster Grebmar (LFR)
+		q(86288),	-- Houndmaster Grebmar (N)
 		q(86291),	-- Houndmaster Grebmar (H)
 		q(86280),	-- Fineous Darkvire (LFR)
 		q(86287),	-- Fineous Darkvire (N)
@@ -3377,7 +3394,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		hqt(84610),	-- Theater Troupe
 		hqt(86466),	-- Awakening The Machine
 		hqt(84599),	-- Sparks of War
-		hqt(84614),	-- WB (Azj-Kahet)
+		hqt(84614),	-- World Boss (All)
 		hqt(84598),	-- Rollin' Down in the Deeps
 		hqt(85833),	-- Precussive Archaeology
 		hqt(84608),	-- 'An Original Path Through Time' [85947]

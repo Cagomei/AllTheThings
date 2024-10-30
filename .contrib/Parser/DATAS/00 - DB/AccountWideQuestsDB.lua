@@ -1594,6 +1594,7 @@ ExportDB.AccountWideQuestsDB = {
 	[84614] = true, -- Bronze Celebration Token Lockout [from #83468]
 	[84629] = true, -- Bronze Celebration Token Lockout [from #84254]
 	[84630] = true, -- Bronze Celebration Token Lockout [from #84489]
+	[84693] = true,	-- Weaver's Lair Profession Table flag?, shown on i(228946)
 	[85531] = true,	-- Earth-Encrusted Gem
 	[85532] = true,	-- The Wealth of a Kingdom
 	[85533] = true,	-- Kej

@@ -8636,7 +8636,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		-- 10.2.5
 		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			q(77764),	-- Curious Find: Apprentice Astrologist Homework
-			q(79517),	-- Ensemble: Dark Ranger General's Kit
 			q(79210),	-- Ensemble: Sky Witch's Attire
 			q(80059),	-- Ensemble: Spring Reveler's Dandelion Collection
 			q(80060),	-- Ensemble: Spring Reveler's Dandelion Collection
@@ -8671,7 +8670,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(79464),	-- [DNT] Renown Reward 002
 			q(79465),	-- [DNT] Renown Reward 003
 			q(79466),	-- [DNT] Renown Reward 004
-			q(80172),	-- Ensemble: Gladiator's Battered Armor
 			q(79254),	-- Everspout
 			q(79319),	-- Frenzied Owlbeast
 			q(79320),	-- Gorthak Grimtusk

@@ -136,7 +136,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(386),	-- Battlegrounds NYI \\ Battlegrounds
 			ach(387),	-- Arenas NYI \\ Arenas
 			ach(390),	-- Most healing done in one Battleground NYI \\ Most healing done in one Battleground
-			ach(391),	-- Most damage recieved in one Battleground NYI \\ Most damage recieved in one Battleground
+			ach(391),	-- Most damage received in one Battleground NYI \\ Most damage received in one Battleground
 			ach(392),	-- Most damage dealt in one Battleground NYI \\ Most damage dealt in one Battleground
 			ach(413),	-- Malygos Slayer <PH> <NYI>
 			ach(417),	-- Gladiator <PH> <NYI>

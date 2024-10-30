@@ -371,20 +371,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				iensemble(201000),	-- Ensemble: Void-Bound Chains
 				iensemble(201001),	-- Ensemble: Void-Bound Warplate
 
-				------ Dark Ranger General ------
-				iensemble(213158),	-- Ensemble: Dark Ranger General's Kit
-				i(213150),	-- Dark Ranger General's Boots
-				i(213153),	-- Dark Ranger General's Bracers
-				i(213146),	-- Dark Ranger General's Breastplate
-				i(213151),	-- Dark Ranger General's Chestguard
-				i(213149),	-- Dark Ranger General's Cinch
-				i(213154),	-- Dark Ranger General's Cloak
-				i(213147),	-- Dark Ranger General's Gloves
-				i(213145),	-- Dark Ranger General's Hood
-				i(213152),	-- Dark Ranger General's Leggings
-				i(213155),	-- Dark Ranger General's Quiver
-				i(213148),	-- Dark Ranger General's Spaulders
-
 				------ Sky Witch's Attire ------
 				iensemble(212221),	-- Ensemble: Sky Witch's Attire
 				i(212204),	-- Sky Witch's Blouse
@@ -401,7 +387,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190908),	-- Devourer's Skullscythe
 				i(213073),	-- Faded Floral Staff
 				i(190816),	-- Forgehand's "Stable" Fuel Cell
-				i(213106),	-- Gladiator's Battered Greatsword
 				i(213107),	-- Gladiator's Ragged Greatsword
 				i(213077),	-- Lavender Bow-quet
 				i(190822),	-- Mo'arg Enforcer's Halberd
@@ -437,16 +422,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			i(212879),	-- Drake Racer's Azure Scarf
 			i(212880),	-- Drake Racer's Azure Shoulderpads
 			i(212881),	-- Drake Racer's Azure Helmet
-
-			------ Gladiator's Battered ------
-			i(217038),	-- Ensemble: Gladiator's Battered Armor
-			i(217037),	-- Gladiator's Battered Belt
-			i(217030),	-- Gladiator's Battered Chest
-			i(217033),	-- Gladiator's Battered Grips
-			i(217034),	-- Gladiator's Battered Headband
-			i(217035),	-- Gladiator's Battered Leggings
-			i(217036),	-- Gladiator's Battered Shoulderpads
-			i(217031),	-- Gladiator's Battered Treads
 
 			------ Single Pieces ------
 			i(217373),	-- Frenzied Hat of the Dark Depths

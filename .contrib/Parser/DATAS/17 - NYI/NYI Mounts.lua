@@ -787,9 +787,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(211085, {	-- Jeweled Sapphire Scarab (MOUNT!)
 				["displayID"] = 114737,
 			}),
-			i(211087, {	-- Shadowflame Hellbike (MOUNT!)
-				["displayID"] = 114787,
-			}),
 			-- Without MountID Attached
 			i(210140, {	-- [PH] Black-Furred Bakar (MOUNT!)
 				-- ["displayID"] = ,

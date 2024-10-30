@@ -1509,6 +1509,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 		q(76089),	-- Normal Sarkareth Kill?
 
 		-- Nasz'uro, the Unbound Legacy
-		q(75623),	-- Triggers when you recieve the legendary during the last quest (spellID 408549)
+		q(75623),	-- Triggers when you receive the legendary during the last quest (spellID 408549)
 	}),
 })));

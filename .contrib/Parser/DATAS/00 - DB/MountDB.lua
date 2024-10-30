@@ -1708,7 +1708,6 @@ i(211089, 428068);	-- Felreaver Deathcycle
 i(211074, 428005);	-- Jeweled Copper Scarab
 i(211086, 428065);	-- Jeweled Jade Scarab
 i(211085, 428062);	-- Jeweled Sapphire Scarab
-i(211087, 428067);	-- Shadowflame Hellbike
 i(210140, 0);		-- [PH] Black-Furred Bakar
 
 ------------------
@@ -1913,4 +1912,5 @@ i(0, 466845);		-- Chaos-Forged Wind Rider
 i(228760, 463133);	-- Coldflame Tempest
 i(231374, 468353);	-- Enchanted Spellweave Carpet
 i(224398, 452643);	-- Frayfeather Hippogryph
+i(211087, 428067);	-- Hateforged Blazecycle
 i(0, 465235);		-- Trader's Gilded Brutosaur

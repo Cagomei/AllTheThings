@@ -958,6 +958,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					{ "contains", "itemID", 33226, unpack(MASK_IDS) },	-- Tricky Treat & All the Masks
 					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
 				},
+				["description"] = "Your first attempt of the day has an increased chance at the mount, pet, and manuscript. Enabling the curses increases the chances for the mount, at least. Subsequent attempts scan still drop these items, but at a significantly lower rate (as far as we know).",	-- Manual override for src\Settings\Pages\Interface - Information.lua
 				["groups"] = {
 					ach(980, {	-- The Horseman's Reins
 						["provider"] = { "i", 37012 },	-- The Horseman's Reins

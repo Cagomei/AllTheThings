@@ -409,6 +409,48 @@ app.CreateClassInstance = CreateClassInstance;
 -- wouldn't even be used obviously... so maybe in the future
 local GlobalVariants = {}
 app.GlobalVariants = GlobalVariants
+-- Takes multiple other variants and combines them together into the specified name, then storing it
+-- into the GlobalVariants table
+GlobalVariants.Combine = function(...)
+	local combine, conditions, name = {}, {}, ""
+	local condition, variantName
+	-- combine tables, check unique fields
+	for _,variant in ipairs({...}) do
+		variantName = variant.__name
+		if not variantName or type(variantName) ~= "string" then
+			ClassError("Cannot combine variants due to variant",variantName or _,"missing valid '__name' string!")
+		end
+		name = name..variantName
+		condition = variant.__condition
+		if not condition or type(condition) ~= "function" then
+			ClassError("Cannot combine variants due to variant",variantName,"missing '__condition' function!")
+		end
+		conditions[#conditions + 1] = condition
+		for k, v in pairs(variant) do
+			if k ~= "__condition" and k ~= "__name" then
+				if combine[k] then
+					ClassError("Cannot combine variants due to conflicting variant key:",k)
+				end
+				combine[k] = v
+			end
+		end
+	end
+	-- save into GlobalVariants
+	if GlobalVariants[name] then
+		ClassError("Cannot Combine variants into",name,"since it has already been defined!")
+	end
+	-- store the combined name
+	combine.__name = name
+	-- create a new __condition based on the running of all other conditions
+	combine.__condition = function(t)
+		for _,condition in ipairs(conditions) do
+			if not condition(t) then return end
+		end
+		return true
+	end
+	GlobalVariants[name] = combine
+	return combine
+end
 
 local function GenerateVariantClasses(class)
 	local fields = class.__class
@@ -417,13 +459,16 @@ local function GenerateVariantClasses(class)
 	local subbase = function(t, key) return class.__index; end
 	local classname = fields.__type()
 	local variantClone
-	for variantName,variant in pairs(variants) do
+	for i,variant in ipairs(variants) do
+		if not variant.__name then
+			ClassError("Missing Class Variant __name!",i,classname)
+		end
 		if not variant.__condition then
-			ClassError("Missing Class Variant __condition!",variantName,classname)
+			ClassError("Missing Class Variant __condition!",variant.__name,classname)
 		end
 		-- raw variant table may be used by other classes, so need to copy it for this specific subclass
 		variantClone = CloneDictionary(fields, CloneDictionary(variant, {base=subbase}))
-		variants[variantName] = CreateClassMeta(variantClone, classname..variantName);
+		variants[i] = CreateClassMeta(variantClone, classname..variant.__name);
 	end
 end
 local function AppendVariantConditionals(conditionals, class)
@@ -434,10 +479,10 @@ local function AppendVariantConditionals(conditionals, class)
 			conditionals[#conditionals + 1] = function(t)
 				if subcassCondition(t) then
 					-- check any variants for this subclass
-					for variantName,variant in pairs(variants) do
+					for i,variant in ipairs(variants) do
 						if variant.__class.__condition(t) then
 							setmetatable(t, variant);
-							-- app.PrintDebug("Create Variant",t.hash,class.__class.__type()..variantName)
+							-- app.PrintDebug("Create Variant",t.hash,class.__class.__type()..variant.__name)
 							return true
 						end
 					end
@@ -456,10 +501,10 @@ local function AppendVariantConditionals(conditionals, class)
 	elseif variants then
 		conditionals[#conditionals + 1] = function(t)
 			-- check any variants for this class
-			for variantName,variant in pairs(variants) do
+			for i,variant in ipairs(variants) do
 				if variant.__class.__condition(t) then
 					setmetatable(t, variant);
-					-- app.PrintDebug("Create Variant",t.hash,class.__class.__type()..variantName)
+					-- app.PrintDebug("Create Variant",t.hash,class.__class.__type()..variant.__name)
 					return true
 				end
 			end
@@ -869,7 +914,7 @@ local fieldsWithWorldQuest = {
 		end
 	end,
 	variants = {
-		AndReputation = {
+		{
 			Test = function(t)
 				return "AndReputation";
 			end,
@@ -878,6 +923,7 @@ local fieldsWithWorldQuest = {
 					print(t.name .. " (" .. t.__type .. "): I'm a subvariant with reputation!");
 				end
 			end,
+			__name = "VariantName",
 			__condition = function(t)
 				return t.maxReputation
 			end,

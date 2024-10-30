@@ -7,7 +7,8 @@ REMIX_MOP = createHeader({
 	timerunningSeasonID = 1,
 	text = {
 		en = "Remix: Mists of Pandaria",
-		cn = "熊猫人之谜：幻境新生"
+		cn = "熊猫人之谜：幻境新生",
+		tw = "混搭再造：潘達利亞之謎",
 	},
 	--description = {
 	--	en = "",

@@ -786,7 +786,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				iensemble(208675, {	-- Savage Champion’s Aggression
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
-					["classes"] = WARRIOR,
 				}),
 				iensemble(208674, {	-- Savage Champion’s Trophies
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
@@ -880,14 +879,14 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190874, {	-- Glittering Fel Gavel
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
 				}),
-				iensemble(208729, {	-- Imminence of Krag'wa's Executor
-					["cost"] = {{"c", TRADERS_TENDER, 450}},
-				}),
 				iensemble(208727, {	-- Hornstrider Hunters Camouflage
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 				}),
 				iensemble(208728, {	-- Hornstrider Hunters Preference
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				iensemble(208729, {	-- Imminence of Krag'wa's Executor
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
 				}),
 				i(190685, {	-- Lost Crusaders Azure Battleaxe
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
@@ -1903,7 +1902,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.2.56647", "removed 11.0.5.99999" } }, {
+		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.2.56647", "removed 11.0.5.99999" } }, { -- TODO, timeline out with Nov 1 build
 			n(FILLED_TRAVELERS_LOG, {
 				i(187674),	-- Depthstalker (MOUNT!)
 			}),
@@ -2012,6 +2011,163 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(226384, {	-- Wand of the Bright Shadow
 					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+			}),
+		})),
+		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.2.56647", "removed 11.0.5.99999" } }, { -- TODO, timeline in with Nov 1 build
+			n(FILLED_TRAVELERS_LOG, {
+				iensemble(229059),	-- Arsenal: Crests of the Kingdom
+			}),
+			filter(COSMETIC, {
+				i(190693, {	-- Ancestral Stonehoof Totem
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+				i(229426, {	-- Ancient Amani Longbow
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(208177, {	-- Armaments of the Light Avenger
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				iensemble(211257, {	-- Arsenal: Stormriders Stormhammers
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				}),
+				iensemble(208663, {	-- Ashamane's Vestment of Rebirth
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				iensemble(208664, {	-- Ashamane's Blessings of Rebirth
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				iensemble(208699, {	-- Battle Magisters Regalia
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				iensemble(208700, {	-- Battle Magisters Enchantments
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				i(226388, {	-- Battle-tested Obsidian Warhammer
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(208179, {	-- Blood Onyx Blades
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				iensemble(208405, {	-- Blood Onyx Uniform
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				i(229425, {	-- Bronzebeard Battle Mace
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(213158, {	-- Ensemble: Dark Ranger General's Kit
+					["cost"] = {{"c", TRADERS_TENDER, 850}},
+				}),
+				iensemble(217038, {	-- Ensemble: Gladiator's Battered Armor
+					["cost"] = {{"c", TRADERS_TENDER, 850}},
+				}),
+				iensemble(230165, {	-- Ensemble: Prowler's Azure Headgear
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(230179, {	-- Ensemble: Prowler's Crimson Headgear
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(230183, {	-- Ensemble: Prowler's Sunny Headgear
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(230180, {	-- Ensemble: Prowler's Violet Headgear
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190216, {	-- Feathered Cowl of the Guardian
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
+				i(190200, {	-- Feathered Drape of the Guardian
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(189898, {	-- Fury of the Firelord
+					["cost"] = {{"c", TRADERS_TENDER, 750}},
+				}),
+				i(213106, {	-- Gladiator's Battered Greatsword
+					["cost"] = {{"c", TRADERS_TENDER, 275}},
+				}),
+				iensemble(208412, {	-- High Scholar's Arcana
+					["cost"] = {{"c", TRADERS_TENDER, 850}},
+				}),
+				i(210265, {	-- High Scholar's Grand Staff
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				iensemble(208727, {	-- Hornstrider Hunters Camouflage
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				iensemble(208728, {	-- Hornstrider Hunters Preference
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				iensemble(208729, {	-- Imminence of Krag'wa's Executor
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				iensemble(208673, {	-- Instruments of the Alluring Call
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				iensemble(208672, {	-- Jewels of the Alluring Call
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				iensemble(208667, {	-- Nathreza Blasphemer's Flames
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				iensemble(208668, {	-- Nathreza Blasphemer's Glaives
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				iensemble(208176, {	-- Plate of the Light Avenger
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				iensemble(208671, {	-- Possessed Watcher Arsenal
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				iensemble(208669, {	-- Possessed Watcher Guise
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				i(230034, {	-- Prowler's Azure Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(230048, {	-- Prowler's Crimson Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(230052, {	-- Prowler's Sunny Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(230049, {	-- Prowler's Violet Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				iensemble(208675, {	-- Savage Champion’s Aggression
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				iensemble(208674, {	-- Savage Champion’s Trophies
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				iensemble(208725, {	-- Scales of the Silver Hoarder
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				iensemble(208178, {	-- Secrets of the Unnamed Cult
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				iensemble(208400, {	-- Silk of the Unnamed Cult
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				i(190220, {	-- Standard of the Guardian
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
+				}),
+				iensemble(208730, {	-- Tools of Krag'wa's Executor
+					["cost"] = {{"c", TRADERS_TENDER, 750}},
+				}),
+				iensemble(208726, {	-- Treasure of the Silver Hoarder
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				iensemble(208665, {	-- Webbed Saronite Exoskeleton
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				iensemble(208666, {	-- Webbed Saronite Weaponry
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				i(211137, {	-- Witch Doctor's Fetish Frame
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				i(211158, {	-- Witch Doctor's Fetish Guard
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
 				}),
 			}),
 		})),
@@ -2310,20 +2466,6 @@ root(ROOTS.NeverImplemented, {
 					i(201000),	-- Ensemble: Void-Bound Chains
 					i(201001),	-- Ensemble: Void-Bound Warplate
 
-					------ Dark Ranger General ------
-					i(213158),	-- Ensemble: Dark Ranger General's Kit
-					i(213150),	-- Dark Ranger General's Boots
-					i(213153),	-- Dark Ranger General's Bracers
-					i(213146),	-- Dark Ranger General's Breastplate
-					i(213151),	-- Dark Ranger General's Chestguard
-					i(213149),	-- Dark Ranger General's Cinch
-					i(213154),	-- Dark Ranger General's Cloak
-					i(213147),	-- Dark Ranger General's Gloves
-					i(213145),	-- Dark Ranger General's Hood
-					i(213152),	-- Dark Ranger General's Leggings
-					i(213155),	-- Dark Ranger General's Quiver
-					i(213148),	-- Dark Ranger General's Spaulders
-
 					------ Sky Witch's Attire ------
 					i(212221),	-- Ensemble: Sky Witch's Attire
 					i(212204),	-- Sky Witch's Blouse
@@ -2340,7 +2482,6 @@ root(ROOTS.NeverImplemented, {
 					i(190908),	-- Devourer's Skullscythe
 					i(213073),	-- Faded Floral Staff
 					i(190816),	-- Forgehand's "Stable" Fuel Cell
-					i(213106),	-- Gladiator's Battered Greatsword
 					i(213107),	-- Gladiator's Ragged Greatsword
 					i(213077),	-- Lavender Bow-quet
 					i(190822),	-- Mo'arg Enforcer's Halberd

@@ -728,12 +728,6 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 		-- 10.1.0
 		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 			fp(2860, {["description"] = "10.1 UG - Campaign - Ch6 - Aberrus Upper Platform (SMART)"}),
-			fp(2866, {["description"] = "Cascades Canyon, Ohn'ahran Plains"}),
-			fp(2867, {["description"] = "The Throughway, Zaralek Cavern"}),
-			fp(2874, {["description"] = "Old Loamm Road, Ohn'ahran Plains"}),
-			fp(2875, {["description"] = "Old Loamm Road, Zaralek Cavern"}),
-			fp(2876, {["description"] = "Lookout Breach, Zaralek Cavern"}),
-			fp(2877, {["description"] = "Lookout Breach, Azure Span"}),
 		})),
 
 		-- 10.1.7

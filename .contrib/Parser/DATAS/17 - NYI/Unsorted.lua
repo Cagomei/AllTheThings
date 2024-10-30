@@ -171,15 +171,6 @@ root(ROOTS.Unsorted, {
 				i(226067),	-- Timely Tourist's Glaive
 			}),
 			filter(COSMETIC, {
-				i(229047),	-- Night Elf Crest
-				i(229048),	-- Human Crest
-				i(229049),	-- Orc Crest
-				i(229059),	-- Arsenal: Crests of the Kingdom
-				i(229364),	-- Scourge Crest
-				i(229425),	-- Bronzebeard Battle Mace
-
-				-- Trading Post?
-				i(229426),	-- Ancient Amani Longbow
 				i(229714),	-- Lion's Crest Earmuffs
 				i(229720),	-- Frostwolf Earmuffs
 				i(229807),	-- Crown of the Icy Blue Rose
@@ -197,7 +188,6 @@ root(ROOTS.Unsorted, {
 				i(229963),	-- Great Candied Blade
 				i(229999),	-- Classic Cloudy Tabard
 				i(230033),	-- Prowler's Midnight Shoulder Cape
-				i(230034),	-- Prowler's Azure Shoulder Cape
 				i(230035),	-- Prowler's Sepia Shoulder Cape
 				i(230036),	-- Prowler's Grassy Shoulder Cape
 				i(230037),	-- Prowler's Cloudy Shoulder Cape
@@ -210,11 +200,8 @@ root(ROOTS.Unsorted, {
 				i(230045),	-- Prowler's Carrot Shoulder Cape
 				i(230046),	-- Prowler's Rosy Shoulder Cape
 				i(230047),	-- Prowler's Plum Shoulder Cape
-				i(230048),	-- Prowler's Crimson Shoulder Cape
-				i(230049),	-- Prowler's Violet Shoulder Cape
 				i(230050),	-- Prowler's Aquatic Shoulder Cape
 				i(230051),	-- Prowler's Snowy Shoulder Cape
-				i(230052),	-- Prowler's Sunny Shoulder Cape
 				i(230054),	-- Prowler's Midnight Cowl
 				i(230055),	-- Prowler's Azure Cowl
 				i(230056),	-- Prowler's Sepia Cowl
@@ -254,7 +241,6 @@ root(ROOTS.Unsorted, {
 				i(230092),	-- Prowler's Snowy Mask
 				i(230093),	-- Prowler's Sunny Mask
 				i(230152),	-- Ensemble: Prowler's Midnight Headgear
-				i(230165),	-- Ensemble: Prowler's Azure Headgear
 				i(230166),	-- Ensemble: Prowler's Sepia Headgear
 				i(230167),	-- Ensemble: Prowler's Grassy Headgear
 				i(230168),	-- Ensemble: Prowler's Cloudy Headgear
@@ -267,11 +253,8 @@ root(ROOTS.Unsorted, {
 				i(230176),	-- Ensemble: Prowler's Carrot Headgear
 				i(230177),	-- Ensemble: Prowler's Rosy Headgear
 				i(230178),	-- Ensemble: Prowler's Plum Headgear
-				i(230179),	-- Ensemble: Prowler's Crimson Headgear
-				i(230180),	-- Ensemble: Prowler's Violet Headgear
 				i(230181),	-- Ensemble: Prowler's Aquatic Headgear
 				i(230182),	-- Ensemble: Prowler's Snowy Headgear
-				i(230183),	-- Ensemble: Prowler's Sunny Headgear
 				i(230853),	-- Aegis of Yuletide
 				i(230940),	-- Wings of the Sapphire Monarch
 				i(231017),	-- Wings of the Onyx Monarch
@@ -353,8 +336,6 @@ root(ROOTS.Unsorted, {
 			i(232510),	-- Electric Eel
 			i(232511),	-- Electric Eel
 			i(232521),	-- Glyph of Arcane Familiar
-			i(232524),	-- Dark Ranger General's Bodice
-			i(232525),	-- Dark Ranger General's Vest
 			--
 			i(232598),	-- Bag of Timewarped Badges
 			i(232631),	-- Wrapped Spear

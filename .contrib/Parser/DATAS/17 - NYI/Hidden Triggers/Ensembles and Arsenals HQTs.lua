@@ -588,6 +588,7 @@ q(50345),	-- Ensemble: Tundraspite Armor
 q(77336),	-- Armaments of the Light Avenger
 q(65568),	-- Arsenal: Blades of Elune
 q(82247),	-- Arsenal: Blazing Felfire Armaments
+q(84828),	-- Arsenal: Crests of the Kingdom
 q(82319),	-- Arsenal: Fireborn Blades
 q(82318),	-- Arsenal: Seaborn Blades
 q(79314),	-- Arsenal: Skyborn Blades
@@ -616,10 +617,12 @@ q(65696),	-- Ensemble: Battlewraps of the Honored Valarjar
 q(65719),	-- Ensemble: Bones of the Bloodhunter
 q(78712),	-- Ensemble: Burden of Unrelenting Justice
 q(72080),	-- Ensemble: Corrupted Runelord's Regalia
+q(79517),	-- Ensemble: Dark Ranger General's Kit
 q(65671),	-- Ensemble: Darkmoon Harlequin's Bells
 q(82267),	-- Ensemble: Deepest Depths Diver Suit
 q(80335),	-- Ensemble: Fearless Buccaneer's Slops
 q(65502),	-- Ensemble: Fel-Automaton Exoplate
+q(80172),	-- Ensemble: Gladiator's Battered Armor
 q(79708),	-- Ensemble: Gleaming Burden of Unrelenting Justice
 q(72070),	-- Ensemble: Glorious Dragonrider's Mail
 q(72133),	-- Ensemble: Helarjar Berserker Warplate
@@ -627,6 +630,10 @@ q(72132),	-- Ensemble: Kvaldir Scout Leathers
 q(79209),	-- Ensemble: Love Witch's Attire
 q(79709),	-- Ensemble: Moonlit Burden of Unrelenting Justice
 q(83712),	-- Ensemble: Plunderlord's Radiant Finery
+q(85119),	-- Ensemble: Prowler's Azure Headgear
+q(85131),	-- Ensemble: Prowler's Crimson Headgear
+q(85135),	-- Ensemble: Prowler's Sunny Headgear
+q(85132),	-- Ensemble: Prowler's Violet Headgear
 q(83989),	-- Ensemble: Ragged Harvest Golem
 q(79468),	-- Ensemble: Spring Reveler's Lavender Apparel
 q(79467),	-- Ensemble: Spring Reveler's Lavender Collection
