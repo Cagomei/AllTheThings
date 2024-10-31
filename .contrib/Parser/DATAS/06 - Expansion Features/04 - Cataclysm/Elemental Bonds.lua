@@ -71,11 +71,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				["sourceQuest"] = 29326,	-- The Nordrassil Summit
 				["coord"] = { 60.2, 30.1, MOUNT_HYJAL },
 				["maps"] = { ULDUM },
-				["groups"] = {
-					objective(1, {	-- 0/4 Twilight Inciter slain
-						["provider"] = { "n", 39926 },	-- Twilight Inciter
-					}),
-				},
 			}),
 			q(29338, {	-- Into Unrelenting Flame
 				["qg"] = 53738,	-- Aggra

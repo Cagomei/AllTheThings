@@ -139,8 +139,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["cr"] = 20900,	-- Unchained Doombringer
 				}),
 				i(24488, {	-- Third Key Fragment
+					["providers"] = {
+						{ "o", 182198 },	-- Arcane Container
+						{ "n",  22892 },	-- Third Fragment Guardian
+					},
 					["coord"] = { 59.0, 24.8, 270 },
-					["cr"] = 22892,	-- Third Fragment Guardian
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {

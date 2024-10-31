@@ -2430,7 +2430,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}),
 				}),
 				Difficulty(DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC).AddGroups({
-					i(231490),	-- Arbiter's Blade	// I don't think this exists
 					ZoneDrops({}),
 					Boss(ROCCOR),
 					n(GERSTAHN, {
@@ -3112,7 +3111,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 		n(WORLD_BOSSES, {
-			-- INFO: These are new world bosses for this year, here so their criteria can nest under them. If they have loot tables and all, it can be put here too (like previous years).
 			n(226646, {	-- Sha of Anger
 				["isRaid"] = true,
 				["questID"] = 84282,
@@ -3124,35 +3122,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				},
 				["g"] = {
 					i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent (MOUNT!)
-					i(227593),	-- Eternal Blossom Breeches
-					i(227563),	-- Eternal Blossom Gloves
 					i(227565),	-- Eternal Blossom Grips
-					i(227592),	-- Eternal Blossom Handguards
-					i(227583),	-- Eternal Blossom Handwraps
-					i(227562),	-- Eternal Blossom Leggings
 					i(227564),	-- Eternal Blossom Legguards
-					i(227582),	-- Eternal Blossom Legwraps
 					i(227556),	-- Firebird's Gloves
-					i(227555),	-- Firebird's Grips
-					i(227581),	-- Firebird's Handwraps
 					i(227557),	-- Firebird's Kilt
-					i(227554),	-- Firebird's Legguards
-					i(227580),	-- Firebird's Legwraps
 					i(227575),	-- Gauntlets of the Lost Catacomb
 					i(227574),	-- Greaves of the Lost Catacomb
 					i(227573),	-- Gauntlets of Resounding Rings
 					i(227591),	-- Gloves of the Burning Scroll
 					i(227561),	-- Gloves of the Thousandfold Blades
 					i(227586),	-- Guardian Serpent Gloves
-					i(227585),	-- Guardian Serpent Handwraps
 					i(227587),	-- Guardian Serpent Leggings
-					i(227584),	-- Guardian Serpent Legwraps
-					i(227571),	-- Handguards of Resounding Rings
-					i(227567),	-- Handguards of the Lost Catacomb
 					i(227590),	-- Leggings of the Burning Scroll
-					i(227566),	-- Legguards of the Lost Catacomb
 					i(227560),	-- Legguards of the Thousandfold Blades
-					i(227570),	-- Legguards of Resounding Rings
 					i(227572),	-- Legplates of Resounding Rings
 					i(227624),	-- Malevolent Gladiator's Armbands of Prowess
 					i(227657),	-- Malevolent Gladiator's Armplates of Alacrity
@@ -3212,19 +3194,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(227623),	-- Malevolent Gladiator's Wristguards of Alacrity
 					i(227605),	-- Malevolent Gladiator's Wyrmhide Gloves
 					i(227608),	-- Malevolent Gladiator's Wyrmhide Legguards
-					i(227595),	-- Red Crane Gauntlets
 					i(227598),	-- Red Crane Grips
-					i(227596),	-- Red Crane Handwraps
 					i(227599),	-- Red Crane Leggings
-					i(227594),	-- Red Crane Legguards
-					i(227597),	-- Red Crane Legwraps
 					i(227588),	-- Sha-Skin Gloves
 					i(227589),	-- Sha-Skin Leggings
 					i(227577),	-- White Tiger Gauntlets
-					i(227579),	-- White Tiger Gloves
-					i(227578),	-- White Tiger Greaves
-					i(227569),	-- White Tiger Handguards
-					i(227568),	-- White Tiger Legguards
 					i(227576),	-- White Tiger Legplates
 					i(227559),	-- Yaungol Slayer's Gloves
 					i(227558),	-- Yaungol Slayer's Legguards
@@ -3245,7 +3219,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(227213),	-- Hateful Gladiator's Chain Armor
 					i(227226),	-- Hateful Gladiator's Chain Gauntlets
 					i(227236),	-- Hateful Gladiator's Chain Leggings
-					i(227217),	-- Hateful Gladiator's Dragonhide Robes
 					i(227209),	-- Hateful Gladiator's Dreadplate Chestpiece
 					i(227223),	-- Hateful Gladiator's Dreadplate Gauntlets
 					i(227233),	-- Hateful Gladiator's Dreadplate Legguards
@@ -3270,11 +3243,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(227212),	-- Hateful Gladiator's Ringmail Armor
 					i(227225),	-- Hateful Gladiator's Ringmail Gauntlets
 					i(227235),	-- Hateful Gladiator's Ringmail Leggings
-					i(227219),	-- Hateful Gladiator's Satin Robe
 					i(227230),	-- Hateful Gladiator's Silk Handguards
 					i(227220),	-- Hateful Gladiator's Silk Raiment
 					i(227240),	-- Hateful Gladiator's Silk Trousers
-					i(227216),	-- Hateful Gladiator's Wyrmhide Robes
 					i(227266),	-- Heroes' Bonescythe Breastplate
 					i(227246),	-- Heroes' Bonescythe Gauntlets
 					i(227256),	-- Heroes' Bonescythe Legplates

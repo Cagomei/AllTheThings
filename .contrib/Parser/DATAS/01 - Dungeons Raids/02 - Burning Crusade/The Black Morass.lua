@@ -32,10 +32,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["coord"] = { 48.8, 71.8, CAVERNS_OF_TIME_BLACK_MORASS },
 					["timeline"] = { REMOVED_7_1_0 },
 					["maps"] = { SHATTRATH_CITY },
-					["cost"] = {
-						{ "i", 24490, 1 },	-- The Master's Key
-					},
 					["lvl"] = lvlsquish(69, 69, 30),
+					["groups"] = {
+						i(24490, {	-- The Master's Key
+							["timeline"] = { ADDED_2_0_1, DELETED_4_2_0 },
+						}),
+					},
 				}),
 				q(10296, {	-- The Black Morass
 					["qg"] = 20130,	-- Andormu
@@ -46,13 +48,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["lvl"] = lvlsquish(66, 66, 25),
 				}),
 				q(9836, {	-- The Master's Touch
-					["qg"] = 18166,	-- Khadgar <Sons of Lothar>
+					["providers"] = {
+						{ "n", 18166 },	-- Khadgar <Sons of Lothar>
+						{ "i", 24489 },	-- Restored Apprentice's Key
+					},
 					["sourceQuest"] = 9832,	-- The Second and Third Fragments
 					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
 					["timeline"] = { REMOVED_7_1_0 },
-					["cost"] = {
-						{ "i", 24489, 1 },	-- Restored Apprentice's Key
-					},
 					["lvl"] = lvlsquish(69, 69, 30),
 				}),
 				q(10297, {	-- The Opening of the Dark Portal
@@ -61,18 +63,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					-- #if ANYCLASSIC
 					["sourceQuest"] = 10296,	-- The Black Morass
 					-- #endif
-					["cost"] = {
-						{ "i", 24289, 1 },	-- Chrono-beacon
-					},
 					["lvl"] = lvlsquish(66, 66, 25),
-					-- #if AFTER 4.3.0.14732
 					["groups"] = {
-						i(29320),	-- Band of the Guardian
-						i(29322),	-- Keeper's Ring of Piety
-						i(29321),	-- Time-Bending Gem
-						i(29323),	-- Andormu's Tear
+						objective(1, {	-- The Dark Portal Opened
+							["provider"] = { "i", 24289 },	-- Chrono-beacon
+						}),
+						i(29320, {	-- Band of the Guardian
+							["timeline"] = { ADDED_4_3_0 },
+						}),
+						i(29322, {	-- Keeper's Ring of Piety
+							["timeline"] = { ADDED_4_3_0 },
+						}),
+						i(29321, {	-- Time-Bending Gem
+							["timeline"] = { ADDED_4_3_0 },
+						}),
+						i(29323, {	-- Andormu's Tear
+							["timeline"] = { ADDED_4_3_0 },
+						}),
 					},
-					-- #endif
 				}),
 			}),
 			n(ZONE_DROPS, {

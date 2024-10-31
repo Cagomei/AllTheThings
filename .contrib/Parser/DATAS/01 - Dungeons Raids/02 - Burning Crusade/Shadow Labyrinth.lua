@@ -191,7 +191,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			n(ZONE_DROPS, {
 				i(24514, {	-- First Key Fragment
-					["cr"] = 22890,	-- First Fragment Guardian
+					["providers"] = {
+						{ "o", 182196 },	-- Arcane Container
+						{ "n",  22890 },	-- First Fragment Guardian
+					},
 					["coord"] = { 82.6, 30.8, AUCHINDOUN_SHADOW_LABYRINTH },
 				}),
 				i(23607, {	-- Plans: Felsteel Helm

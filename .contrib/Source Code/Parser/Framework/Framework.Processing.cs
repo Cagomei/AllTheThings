@@ -2145,18 +2145,18 @@ namespace ATT
             {
                 long criteriaProviderItem = criteria.GetProviderItem();
                 // Don't incorporate ignore-flagged CriteriaTree whose Criteria is simply a provider Item (i.e. Old Crafty has 2 criteria both with same provider)
-                if (criteriaProviderItem > 0 && inGameIgnored)
+                if (false && criteriaProviderItem > 0 && inGameIgnored)
                 {
                     if (criteriaTree.Amount <= 1)
                     {
                         // instead merge the single provider onto the achievement itself
-                        //LogDebug($"INFO: Incorporating Provider Item {criteriaProviderItem} for Achievement {achID}");
+                        LogDebug($"INFO: Incorporating Provider Item {criteriaProviderItem} for Achievement {achID}");
                         Objects.Merge(data, "provider", new List<object> { "i", criteriaProviderItem });
                     }
                     else
                     {
                         // or merge the amount of items as a cost
-                        //LogDebug($"INFO: Incorporating Cost Item {criteriaProviderItem} x {criteriaTree.Amount} for Achievement {achID}");
+                        LogDebug($"INFO: Incorporating Cost Item {criteriaProviderItem} x {criteriaTree.Amount} for Achievement {achID}");
                         Cost.Merge(data, "i", criteriaProviderItem, criteriaTree.Amount);
                     }
                 }
@@ -2214,7 +2214,7 @@ namespace ATT
                     // otherwise the criteria index may be split into multiple criteriaUID, and we just merge them all into the achievement
                     else
                     {
-                        if (inGameIgnored)
+                        if (inGameIgnored && criteriaProviderItem == 0)
                         {
                             criteriaData["_ignored"] = true;
                         }

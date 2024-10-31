@@ -126,6 +126,26 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["coord"] = { 63.3, 52.4, TANARIS },
 				["crs"] = 230711,	-- Maru (Spirit)
 			}),
+			q(84236, {	-- The Great Detective
+				["provider"] = { "n", 226766 },	-- Alyx <Volunteer Assistant Guest Relations Manager>
+				["coord"] = { 63.0, 50.2, TANARIS },
+			}),
+			q(84237, {	-- The "Great" Detective
+				["description"] = "Exhaust dialogue with all Team Solid npcs at 63.8, 51.0 until the quest shows 48% clue progress. Interact with the Abandoned Beach Chair at 66.0, 59.5. Use your Torch of Pyrreth at 66.23, 40.64 to reveal Herrkrop then exhaust dialogue again with nearby npcs. Finally, talk to Athelton Jones to complete the quest requirements.",
+				["provider"] = { "n", 226796 },	-- Athektin Jones
+				["sourceQuests"] = { 84236 },	-- The Great Detective
+				["coord"] = { 63.9, 51.7, TANARIS },
+				["crs"] = {
+					226804,	-- Duryllin
+					226805,	-- Ellanoir
+					226803,	-- Juddson Rakes
+					226810,	-- Herrkrop
+					226812,	-- Scrapes
+					226810,	-- Nat Pagle
+					226814,	-- Julia Henning
+					226796,	-- Athelton Jones
+				},
+			}),
 		}),
 		-- Week 2: November 4th --
 		n(VENDORS, {

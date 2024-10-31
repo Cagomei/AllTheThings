@@ -2863,6 +2863,9 @@ local ObjectNames = {
 	[182166] = "Ango'rosh Attack Plans",
 	[182184] = "Daggerfen Poison Manual",
 	[182185] = "Daggerfen Poison Vial",
+	[182196] = "Arcane Container",
+	[182197] = "Arcane Container",
+	[182198] = "Arcane Container",
 	[182256] = "Discarded Nutriment",
 	[182265] = "Bleeding Hollow Supply Crate",
 	[182349] = "Corki's Prison",
@@ -5381,6 +5384,9 @@ local ObjectModels = {
 	[182166] = 198457,
 	[182184] = 198031,
 	[182185] = 191827,
+	[182196] = 199744,
+	[182197] = 199744,
+	[182198] = 199744,
 	[182256] = 193909,
 	[182265] = 199099,
 	[182349] = 200938,
@@ -6499,7 +6505,7 @@ _.PhaseConstants = {
 };
 local phases = {
 	[1] = {
-		name = "Never Implemented",
+		name = "Never Implemented [NYI]",
 		description = "|cFFFF0000This was never available to players.|r",
 		state = 1,
 	},
@@ -6897,6 +6903,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artefakte",
+});
+localize(L.FlightPathNames, {
+	[149] = "Trümmerposten, Höllenfeuerhalbinsel",
 });
 localize(ObjectNames, {
 	[31] = "Alte Löwenstatue",
@@ -7689,6 +7698,9 @@ localize(ObjectNames, {
 	[182166] = "Angriffspläne der Ango'rosh",
 	[182184] = "Gifthandbuch von Dolchfenn",
 	[182185] = "Giftphiole von Dolchfenn",
+	[182196] = "Arkaner Behälter",
+	[182197] = "Arkaner Behälter",
+	[182198] = "Arkaner Behälter",
 	[182256] = "Liegengelassene Nahrung",
 	[182265] = "Vorratskiste des Blutenden Auges",
 	[182355] = "Waffen von Kil'sorge",
@@ -8822,6 +8834,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artéfact",
 });
+localize(L.FlightPathNames, {
+	[149] = "Halte du Fracas, Péninsule des Flammes infernales",
+});
 localize(ObjectNames, {
 	[31] = "Statue du vieux lion",
 	[32] = "Coffre englouti",
@@ -9613,6 +9628,9 @@ localize(ObjectNames, {
 	[182166] = "Plans d'attaque d'Ango'rosh",
 	[182184] = "Manuel de poison tourbedague",
 	[182185] = "Fiole de poison tourbedague",
+	[182196] = "Récipient arcanique",
+	[182197] = "Récipient arcanique",
+	[182198] = "Récipient arcanique",
 	[182256] = "Aliments abandonnés",
 	[182265] = "Caisse de fournitures de l'Orbite-Sanglante",
 	[182355] = "Armes de Kil'sorrau",
@@ -10713,6 +10731,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000163] = "Questo oggetto ha un aspetto unico. Devi raccogliere questo oggetto appositamente per guadagnare l'aspetto.",
 	[-1000380] = "Questo elenco contiene elementi non ottenibili che ATT Discord ha segnalato come bug che Blizzard deve ancora correggere.\n\nNOTA: tutti i filtri vengono ignorati in questo elenco per motivi di visibilità. In questo elenco sono presenti solo gli oggetti rimossi dal gioco a causa di negligenza e non un gigantesco drago sputafuoco.\n\nAgli sviluppatori Blizzard: correggete gli oggetti e gli incontri elencati di seguito.",
 });
+localize(L.FlightPathNames, {
+	[149] = "Presidio Frantumato, Penisola del Fuoco Infernale",
+});
 localize(ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
 	[34] = "Vecchio Fiasco",
@@ -11173,6 +11194,9 @@ localize(ObjectNames, {
 	[182166] = "Piani d'Attacco degli Ango'rosh",
 	[182184] = "Manuale del Veleno di Limoaguzzo",
 	[182185] = "Fiala di Veleno di Limoaguzzo",
+	[182196] = "Contenitore Arcano",
+	[182197] = "Contenitore Arcano",
+	[182198] = "Contenitore Arcano",
 	[182256] = "Alimento Scartato",
 	[182265] = "Provviste dei Guerci Insanguinati",
 	[182355] = "Armamenti dei Kil'sorin",
@@ -12259,6 +12283,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000163] = "Este item tem uma aparência única. Você deve coletar este item especificamente para ganhar a aparência.",
 	[-1000380] = "Esta lista contém itens inacessíveis que o ATT Discord relatou como bugs que a Blizzard ainda não corrigiu.\n\nNOTA: Todos os filtros são ignorados nesta lista para visibilidade. Apenas itens removidos do jogo por negligência, em vez de um gigantesco dragão cuspidor de fogo, estão presentes nesta lista.\n\nPara os desenvolvedores da Blizzard: Corrijam os itens e encontros listados abaixo.",
 });
+localize(L.FlightPathNames, {
+	[149] = "Pontal do Raio, Península Fogo do Inferno",
+});
 localize(ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
 	[32] = "Baú Afundado",
@@ -12985,6 +13012,9 @@ localize(ObjectNames, {
 	[182166] = "Plano de Ataque Ango'rosh",
 	[182184] = "Manual de Venenos Lamadaga",
 	[182185] = "Ampola de Veneno Lamadaga",
+	[182196] = "Recipiente Arcano",
+	[182197] = "Recipiente Arcano",
+	[182198] = "Recipiente Arcano",
 	[182256] = "Nutrimento Descartado",
 	[182265] = "Caixa de Suprimentos Olhos Sangrentos",
 	[182355] = "Armamentos de Kil'pesar",
@@ -14127,6 +14157,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Артефакты",
 });
+localize(L.FlightPathNames, {
+	[149] = "Лагерь Удара ,Полуостров Адского Пламени",
+});
 localize(ObjectNames, {
 	[31] = "Статуя старого льва",
 	[32] = "Затонувший сундук",
@@ -14921,6 +14954,9 @@ localize(ObjectNames, {
 	[182166] = "План нападения клана Анго'рош",
 	[182184] = "Справочник по ядам Остротопи",
 	[182185] = "Фиал яда Остротопи",
+	[182196] = "Волшебный контейнер",
+	[182197] = "Волшебный контейнер",
+	[182198] = "Волшебный контейнер",
 	[182256] = "Выброшенный корм",
 	[182265] = "Ящик с припасами из Кровавой Глазницы",
 	[182355] = "Оружие Вечной Скорби",
@@ -15978,7 +16014,7 @@ for i,objectID in ipairs(ALLIANCE_BONFIRES) do ObjectNames[objectID] = "Боль
 for i,objectID in ipairs(CANDY_BUCKETS) do ObjectNames[objectID] = "Кулек конфет"; end
 for i,objectID in ipairs(HORDE_BONFIRES) do ObjectNames[objectID] = "Большой костер Орды"; end
 for key,value in pairs({
-	[1] = "Никогда Не Доступны",
+	[1] = "Никогда Не Доступны [NYI]",
 	[2] = "Убраны Из Игры",
 	[3] = "Кошелек Blizzard",
 	[4] = "ПвП Элита / Гладиатор",
@@ -16265,6 +16301,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
 	[-1000163] = "이 아이템은 독특한 외형을 가지고 있습니다. 외형을 획득하려면 이 아이템을 특별히 수집해야 합니다.",
 	[-1000380] = "이 목록에는 ATT Discord에서 Blizzard가 아직 수정하지 않은 버그로 보고한 얻을 수 없는 항목이 포함되어 있습니다.\n\n참고: 가시성을 위해 이 목록 내에서 모든 필터는 무시됩니다. 거대한 불을 뿜는 용이 아닌 부주의로 인해 게임에서 제거된 아이템만 이 목록에 있습니다.\n\n블리자드 개발자 여러분께: 아래 나열된 아이템과 만남을 수정해 주세요.",
+});
+localize(L.FlightPathNames, {
+	[149] = "징검다리 거점 지옥불 반도",
 });
 localize(ObjectNames, {
 	[31] = "오래된 사자상",
@@ -17001,6 +17040,9 @@ localize(ObjectNames, {
 	[182166] = "앙고로쉬 공격 계획서",
 	[182184] = "비수늪 독 조제법",
 	[182185] = "비수늪 독병",
+	[182196] = "마법 단지",
+	[182197] = "마법 단지",
+	[182198] = "마법 단지",
 	[182256] = "버려진 버섯",
 	[182265] = "피눈물 보급품 상자",
 	[182355] = "킬소로우 무기",
@@ -18071,6 +18113,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000163] = "Este artículo tiene una apariencia única. Debes recolectar este artículo específicamente para ganar la apariencia.",
 	[-1000380] = "Esta lista contiene elementos inalcanzables que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los elementos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los elementos y encuentros que se enumeran a continuación.",
 });
+localize(L.FlightPathNames, {
+	[149] = "Puesto Devastación, Península del Fuego Infernal",
+});
 localize(ObjectNames, {
 	[31] = "Estatua de león antigua",
 	[32] = "Cofre sumergido",
@@ -18860,6 +18905,9 @@ localize(ObjectNames, {
 	[182166] = "Planes de ataque de Ango'rosh",
 	[182184] = "Manual de venenos de Dagapantano",
 	[182185] = "Vial de veneno de Dagapantano",
+	[182196] = "Contenedor arcano",
+	[182197] = "Contenedor arcano",
+	[182198] = "Contenedor arcano",
 	[182256] = "Restos de alimentos",
 	[182265] = "Cajón de suministros de Foso Sangrante",
 	[182355] = "Armamento de Mata'penas",
@@ -20017,6 +20065,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 localize(L.FILTER_ID_TYPES, {
 	[11] = "神器",
 });
+localize(L.FlightPathNames, {
+	[149] = "破碎岗哨, 地狱火半岛",
+});
 localize(ObjectNames, {
 	[31] = "陈旧的石狮子",
 	[32] = "沉没的箱子",
@@ -20697,6 +20748,9 @@ localize(ObjectNames, {
 	[182165] = "通缉布告",
 	[182184] = "匕潭毒药手册",
 	[182185] = "匕潭毒药瓶",
+	[182196] = "奥术容器",
+	[182197] = "奥术容器",
+	[182198] = "奥术容器",
 	[182256] = "丢弃的食物",
 	[182265] = "血环补给箱",
 	[182355] = "暗影议会军备",
@@ -21592,7 +21646,7 @@ for i,objectID in ipairs(ALLIANCE_BONFIRES) do ObjectNames[objectID] = "联盟�
 for i,objectID in ipairs(CANDY_BUCKETS) do ObjectNames[objectID] = "糖罐"; end
 for i,objectID in ipairs(HORDE_BONFIRES) do ObjectNames[objectID] = "部落篝火"; end
 for key,value in pairs({
-	[1] = "从未实施",
+	[1] = "从未实施 [NYI]",
 	[2] = "从游戏中移除",
 	[4] = "PvP 精良/角斗士",
 	[5] = "不可学",
@@ -21633,9 +21687,12 @@ localize(L.HEADER_NAMES, {
 	[-1000038] = "寶箱",
 	[-1000044] = "地區掉落",
 });
+localize(L.FlightPathNames, {
+	[149] = "碎裂哨站，地獄火半島",
+});
 for i,objectID in ipairs(CANDY_BUCKETS) do ObjectNames[objectID] = "糖果桶"; end
 for key,value in pairs({
-	[1] = "從未實裝",
+	[1] = "從未實裝 [NYI]",
 	[2] = "已從遊戲中移除",
 	[3] = "暴雪點數",
 	[4] = "PvP 精良/角鬥士",
