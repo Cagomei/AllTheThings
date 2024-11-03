@@ -491,6 +491,11 @@ namespace ATT
             // Check to make sure the data is valid.
             if (data == null) return false;
 
+            // if (data.TryGetValue("encounterID", out long TEMP) && TEMP == 826)
+            // {
+
+            // }
+
             if (DebugMode && MergeItemData)
             {
                 // Capture references to specified Debug DB keys for Debug output
@@ -582,6 +587,8 @@ namespace ATT
 
                     Dictionary<string, object> clone = new Dictionary<string, object>(data);
                     clone.Remove("g");
+                    // cost can be variable so don't merge into Debug DBs
+                    clone.Remove("cost");
                     // special case for criteria, to list under their achievement instead of into it since they contain the same achID
                     if (data.ContainsKey("criteriaID"))
                     {
@@ -685,8 +692,6 @@ namespace ATT
                             data.Remove("modID");
                             item.Remove("bonusID");
                             data.Remove("bonusID");
-                            // set the recipeID in the item dictionary so it will merge back in later
-                            item["recipeID"] = spellID;
                         }
                         break;
                 }
@@ -744,76 +749,6 @@ namespace ATT
                 {
                     if (sources.TryGetValue("mainHand", out long s))
                         data["sourceID"] = s;
-                }
-            }
-
-            // Throw away automatic Spell ID assignments for certain filter types.
-            if (data.TryGetValue("spellID", out f))
-            {
-                switch (filter)
-                {
-                    case Objects.Filters.Recipe:
-                        data["recipeID"] = f;
-                        break;
-                        //default:
-                        //    data.Remove("spellID");
-                        //    break;
-                }
-            }
-
-            if (data.TryGetValue("recipeID", out f))
-            {
-                if (DebugMode)
-                {
-                    var cachedItem = Items.GetNull(data);
-                    if (cachedItem != null)
-                    {
-                        cachedItem.TryGetValue("itemID", out long cachedItemID);
-                        cachedItem.TryGetValue("recipeID", out long spellID);
-                        cachedItem.TryGetValue("name", out string itemName);
-                        LogDebugFormatted(LogFormats["ItemRecipeFormat"], cachedItemID, spellID, itemName);
-                    }
-                }
-            }
-
-            // TODO: this is temporary until all Item-Recipes are mapped in ItemRecipes.lua, it should only be necessary in DataConsolidation after that point
-            if (data.TryGetValue("requireSkill", out long requiredSkill))
-            {
-                if (Objects.SKILL_ID_CONVERSION_TABLE.TryGetValue(requiredSkill, out long newRequiredSkill))
-                {
-                    data["requireSkill"] = requiredSkill = newRequiredSkill;
-                }
-                else
-                {
-                    switch (requiredSkill)
-                    {
-                        // https://www.wowhead.com/skill=
-                        case 40:    // Rogue Poisons
-                        case 149:   // Wolf Riding
-                        case 150:   // Tiger Riding
-                        case 762:   // Riding
-                        case 849:   // Warlock
-                        case 0: // Explicitly ignoring.
-                            {
-                                // Ignore! (and remove!)
-                                data.Remove("requireSkill");
-                                requiredSkill = 0;
-                                break;
-                            }
-                        default:
-                            {
-                                Log($"Missing Skill ID in Conversion Table: {requiredSkill}{Environment.NewLine}{ToJSON(data)}");
-                                break;
-                            }
-                    }
-                }
-
-                // if this data has a recipeID, cache the information
-                // TODO: this is temporary until all Item-Recipes are mapped in ItemRecipes.lua
-                if (data.TryGetValue("recipeID", out long recipeID))
-                {
-                    Items.TryGetName(data, out string recipeName);
-                    Objects.AddRecipe(requiredSkill, recipeName, recipeID);
                 }
             }
 
@@ -887,6 +822,9 @@ namespace ATT
             if (cloned && data.ContainsKey("criteriaID"))
                 return false;
 
+            // capture the data for sourced groups (i.e. contains the field)
+            CaptureForSOURCED(data);
+
             return true;
         }
 
@@ -902,11 +840,6 @@ namespace ATT
                 return false;
 
             Objects.PerformWipes(data);
-
-            // if (data.TryGetValue("itemID", out long itemID) && itemID == 43951)
-            // {
-
-            // }
 
             // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
             Objects.PostProcessMergeInto(data);
@@ -1836,6 +1769,9 @@ namespace ATT
                 // CriteriaTree can be linked to a Parent, or CriteriaID
                 Incorporate_CriteriaTree(achID, data, criteriaTree.ID, criteriaTree);
             }
+
+            // Achievements can end up with QuestID so make sure to capture them
+            Objects.MergeQuestData(data);
         }
 
         private static void Incorporate_Criteria(IDictionary<string, object> data)
@@ -2201,6 +2137,7 @@ namespace ATT
                                 // if the questID is not Sourced, then set it on the achievement
                                 if (!SOURCED["questID"].ContainsKey(questID))
                                 {
+                                    LogDebug($"INFO: Assigned Criteria {achID}:{criteria.ID} QuestID {questID} directly to stand-alone Achievement", data);
                                     Objects.Merge(data, "questID", questID);
                                 }
                                 else if (!data.TryGetValue("questID", out long dataQuestID) || dataQuestID != questID)
@@ -2892,6 +2829,8 @@ namespace ATT
                     continue;
                 }
 
+                // TODO: hmmm this really should reference SOURCED instead... lots of sourceQuests are in NYI or unsorted...
+                //if (!TryGetSOURCED("questID", sourceQuestID, out List<IDictionary<string, object>> sourceQuestObjs))
                 if (!Objects.AllQuests.TryGetValue(sourceQuestID, out IDictionary<string, object> sourceQuest))
                 {
                     // Source Quest not in database
@@ -3429,6 +3368,9 @@ namespace ATT
         /// <param name="data"></param>
         private static void TryFindRecipeID(IDictionary<string, object> data)
         {
+            // All Recipes have currently been migrated to ProfDBs, Parser no longer needs to 'guess' Recipes!
+            return;
+
             // don't apply a recipeID to data which is not an item or is a Toy or has a questID (Reaves Modules... argghhh)
             if (!data.ContainsKey("itemID") || data.ContainsKey("questID"))
                 return;
@@ -3437,18 +3379,18 @@ namespace ATT
             if (!data.TryGetValue("requireSkill", out long requiredSkill))
                 return;
 
+            Items.TryGetName(data, out string name);
             // see if a matching recipe name exists for this skill, and use that recipeID
             if (Objects.FindRecipeForData(requiredSkill, data, out long recipeID))
             {
                 data["recipeID"] = recipeID;
             }
-            else if (recipeID == 0)
+            else if (recipeID == 0 && !ProcessingUnsortedCategory)
             {
                 if (!data.TryGetValue("u", out long u) || (u != 1 && u != 2))
                 {
                     // this can always be reported because it should always be actual, available in-game recipes which have no associated RecipeID
-                    Items.TryGetName(data, out string name);
-                    Log($"Failed to find RecipeID for '{name}' with data: {ToJSON(data)}");
+                    LogWarn($"Failed to guess RecipeID for '{name}' with data: {ToJSON(data)}");
                 }
             }
         }

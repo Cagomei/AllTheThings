@@ -118,9 +118,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 	m(DRAGON_ISLES, {
 		m(THE_AZURE_SPAN, {
 			n(ACHIEVEMENTS, {
-				q(72095),	-- Triggers together with 'Seeing Blue' achievement (achievementID 16581) (spellID 392664)
-				q(72031),	-- Triggers together with 'Do You Wanna Build a Snowman?' (achievementID 16474) (spellID 392156)
-				q(70023),	-- Triggers together with 'River Rapids Wrangler' (achievementID 15889) (spellID 382284)
 				q(72136, name(HEADERS.AchCriteria, 16638.03)),	-- Ley Line in the Span achievement - Rustpine Den - 66.2, 51.3, THE_AZURE_SPAN
 				q(72138, name(HEADERS.AchCriteria, 16638.01)),	-- Ley Line in the Span achievement - Azure Archives - 43.8, 61.9, THE_AZURE_SPAN
 				q(72139, name(HEADERS.AchCriteria, 16638.02)),	-- Ley Line in the Span achievement - Ancient Outlook - 26.3, 36.4, THE_AZURE_SPAN

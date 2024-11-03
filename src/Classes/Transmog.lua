@@ -404,8 +404,17 @@ local VisualIDSourceIDsCache = setmetatable({}, { __index = function(t, visualID
 	return sourceIDs
 end})
 local CurrentCharacterFilterIDSet
+local ArmorTypeMogs = {
+	[2] = true,	-- Cosmetic
+	[3] = true, -- Cloaks
+	[4] = true,	-- Cloth
+	[5] = true, -- Leather
+	[6] = true, -- Mail
+	[7] = true, -- Plate
+	[10] = true, -- Shirts
+}
 local function MainOnlyCanTransmogAppearanceItem(knownItem)
-	return not knownItem.nmr and not knownItem.nmc and CurrentCharacterFilterIDSet[knownItem.f]
+	return not knownItem.nmr and not knownItem.nmc and ArmorTypeMogs[knownItem.f] and CurrentCharacterFilterIDSet[knownItem.f]
 end
 -- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
 local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly)

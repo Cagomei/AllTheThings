@@ -2505,12 +2505,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { "added 1.15.3" },
 						})),
 						-- #endif
-						i(12728, {	-- Plans: Invulnerable Mail (RECIPE!) [Also available as a world drop.]
+						--[[i(12728, {	-- Plans: Invulnerable Mail (RECIPE!) [Also available as a world drop.]
 							-- #if SEASON_OF_DISCOVERY
 							-- CRIEVE NOTE: This item still drops apparently, I got this on my paladin.
 							-- ["timeline"] = { "removed 1.15.3" },
 							-- #endif
-						}),
+						}),--]]	-- Seems to been always a world drop, letting the data stay.
 						i(12837, {	-- Plans: Masterwork Stormhammer (RECIPE!)
 							["timeline"] = { REMOVED_6_0_2 },
 						}),

@@ -315,6 +315,7 @@ HeaderAssignments = {
 	["Pet Battle Dungeons"] = -1000883,
 	["Pilgrim's Bounty"] = -1000225,
 	["Pirates' Day"] = -1000226,
+	["Plunderstore"] = -1001050,
 	["Plunderstorm"] = -1000872,
 	["Poor"] = -1000106,
 	["Primal Storms"] = -1000924,
@@ -533,4 +534,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001049;
+NextHeaderID = -1001051;

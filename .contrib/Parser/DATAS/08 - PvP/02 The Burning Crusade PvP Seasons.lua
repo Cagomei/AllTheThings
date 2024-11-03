@@ -1312,6 +1312,9 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	-- #endif
 	}),
 	applyclassicphase(TBC_PHASE_TWO, n(SEASON_MERCILESS, {
+		n(ACHIEVEMENTS, {
+			ach(11707, {["timeline"] = {ADDED_7_2_0}}),	-- No Mercy (PvP Season 2)
+		}),
 		elitepvp(n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { ADDED_2_1_2, REMOVED_2_3_0 },
 			-- #if BEFORE WRATH
@@ -1328,7 +1331,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			i(34092, {	-- Merciless Nether Drake
 				["description"] = "Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",
 			}),
-			ach(11707, {["timeline"] = {ADDED_7_2_0}}),	-- No Mercy (PvP Season 2)
 		}))),
 		-- #if AFTER 7.0.3
 		n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
@@ -2041,6 +2043,9 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	-- #endif
 	})),
 	applyclassicphase(TBC_PHASE_THREE, n(SEASON_VENGEFUL, {
+		n(ACHIEVEMENTS, {
+			ach(11708, {["timeline"] = {ADDED_7_2_0}}),	-- With a Vengeance (PvP Season 3)
+		}),
 		elitepvp(n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { ADDED_2_3_0, REMOVED_2_4_3 },
 			-- #if BEFORE WRATH
@@ -2057,7 +2062,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			i(37676, {	-- Vengeful Nether Drake
 				["description"] = "Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",
 			}),
-			ach(11708, {["timeline"] = {ADDED_7_2_0}}),	-- With a Vengeance (PvP Season 3)
 		}))),
 		-- #if AFTER 7.0.3
 		n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
@@ -2813,6 +2817,9 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	-- #endif
 	})),
 	applyclassicphase(TBC_PHASE_FIVE, n(SEASON_BRUTAL, {
+		n(ACHIEVEMENTS, {
+			ach(11709, {["timeline"] = {ADDED_7_2_0}}),	-- Tough Threads (PvP Season 4)
+		}),
 		elitepvp(n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 },
 			-- #if BEFORE 4.0.1
@@ -2829,7 +2836,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			i(43516, {	-- Brutal Nether Drake
 				["description"] = "Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",
 			}),
-			ach(11709, {["timeline"] = {ADDED_7_2_0}}),	-- Tough Threads (PvP Season 4)
 		}))),
 		-- #if AFTER 7.0.3
 		n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>

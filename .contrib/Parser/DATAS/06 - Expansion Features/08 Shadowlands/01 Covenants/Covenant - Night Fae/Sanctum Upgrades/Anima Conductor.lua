@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-local GRATEFUL = currency(GRATEFUL);
+local GRATEFUL_CURRENCY = currency(GRATEFUL);
 local GLIMMERLIGHT_STAFF = i(179518);
 local TWILIGHT_BLOOM = i(182453);
 local EVERCHILL_BRAMBLES = i(182452);
@@ -84,9 +84,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					["icon"] = 3854013,
 					["g"] = sharedData({ ["icon"] = 3854013 }, {
 						n(REWARDS, {
-							["description"] = "Every Activity within Anima Conductor Rewards this.",
 							["g"] = {
-								GRATEFUL,
+								currency(GRATEFUL, {
+									["description"] = "Grateful Offerings can be collected once you have unlocked the Anima Conductor in for your covenant.\n Once unlocked, you can loot them from Covenant Callings (higher Conductor => more Offerings), Patterns Within Patterns Weekly Quest in Zereth Morthis and from special rares & treasures, based on the channeling of your Anima Conductor.",
+								}),
 							},
 						}),
 						n(TIER_ONE, {
@@ -251,7 +252,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	}),
 })));
 
-for _,t in ipairs({STAR_LAKE_AMPHITHEATER, VALFIR,GRATEFUL,GLIMMERLIGHT_STAFF,TWILIGHT_BLOOM,EVERCHILL_BRAMBLES,GLIMMERDUSTS_GRAND_DESIGN,MIKAI_DEATHSCYTHE,DREAMERS_MENDING,MURMURS_IN_THE_DARK,SILKY_SHIMMERMOTH,GREATAXE_OF_UNRELENTING_PURSUIT}) do
+for _,t in ipairs({STAR_LAKE_AMPHITHEATER, VALFIR,GRATEFUL_CURRENCY,GLIMMERLIGHT_STAFF,TWILIGHT_BLOOM,EVERCHILL_BRAMBLES,GLIMMERDUSTS_GRAND_DESIGN,MIKAI_DEATHSCYTHE,DREAMERS_MENDING,MURMURS_IN_THE_DARK,SILKY_SHIMMERMOTH,GREATAXE_OF_UNRELENTING_PURSUIT}) do
 	t.customCollect = nil;
 end
 

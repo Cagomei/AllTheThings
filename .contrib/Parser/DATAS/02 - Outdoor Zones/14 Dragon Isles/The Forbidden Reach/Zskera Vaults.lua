@@ -1298,7 +1298,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 				q(74431),	-- When Completed Quest: 72953 Zskera Vault: Az (spellID 400630)
 				q(74473),	-- Triggered when accepting 'The Scary Vault of Ur'
 				q(74748),	-- Triggered when looting Recipe Rat along with 74509
-				q(75127),	-- Triggered when earning "Every Door, Everywhere, All At Once" (spellID 404923)
 				q(75490),	-- Triggered when fishing up Dormant Primordial Fragment from Disgusting Vat
 				q(75159),	-- Triggered when fishing up Neltharion Gift Token from Disgusting Vat
 				q(75488),	-- Triggered when fishing up Emmah from Disgusting Vat

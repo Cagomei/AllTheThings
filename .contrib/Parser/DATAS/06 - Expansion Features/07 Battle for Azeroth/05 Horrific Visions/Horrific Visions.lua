@@ -168,7 +168,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					}),
 				},
 			}),
-			n(REWARDS, {
+			n(SCENARIO_COMPLETION, {
 				["description"] = "You can only receive each tier of gear rewards once per week.  Ex. Completing multiple 5 mask runs rewards the next lower tier reward each time.  After all tier rewards are looted for the week no more gear is given.",
 				["crs"] = {
 					152718,	-- Alleria Windrunner

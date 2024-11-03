@@ -15407,3 +15407,75 @@
 11.0.5.56749
 41033@@@Classy Dresser
 41038@@@Token Collector
+11.0.5.57388
+40872@@@I Saved the Party and All I Got Were These Lousy Hats
+11.0.7.57361
+13057@@@Sailed in Sea Minor
+40791@@@Fate of the Kirin Tor
+40825@@@Explore the Ringing Deeps
+40953@@@A Farewell to Arms
+40955@@@War Stories
+40956@@@I'm On Island Time
+40957@@@Maximum Effort
+40958@@@Full Heart, Can't Lose
+40959@@@Black Empire State of Mind
+40960@@@Uldir
+40961@@@Battle of Dazar'alor
+40962@@@The Eternal Palace
+40963@@@Ny'alotha, the Waking City
+41042@@@Siren-ity Now!
+41043@@@Excavation Projects
+41045@@@A Song of Secrets
+41046@@@Clean Up on Isle Siren
+41050@@@A Choir of Citrines
+41056@@@Master of the Turbulent Timeways II
+41130@@@Elders of Khaz Algar
+41131@@@Treasures of the Storm
+41133@@@Isle Remember You
+41149@@@The Severed Threads
+41152@@@Lub and Plunder
+41153@@@Swabbie Swag
+41154@@@Decked Out
+41156@@@Buckled Up
+41157@@@Plunder Siege
+41160@@@It's a Plunderful Life
+41161@@@Council of Dornogal
+41162@@@Cornerstone of Dornogal
+41163@@@Lord of the Bling
+41164@@@We Rise Anew
+41165@@@Assembly of the Deeps
+41166@@@From Many, One
+41167@@@Hallowfall Arathi
+41168@@@The Flame Burns Within
+41169@@@Khaz Algar Diplomat
+41170@@@Friends in the Plains
+41171@@@Friends in the Accord
+41172@@@Friends in the Field
+41173@@@Friend of the Family
+41174@@@A True Explorer
+41175@@@Friends in Loamm Places
+41176@@@Friends in the Dream
+41177@@@Warden of the Dream
+41179@@@Popular Around the Isles
+41180@@@Joining the Khansguard
+41181@@@Joining the Community
+41182@@@Ally of the Flights
+41183@@@There's No Place Like Loamm
+41184@@@Freshscales Fifteen
+41185@@@Siren's Squall
+41186@@@Slate of the Union
+41187@@@Rage Aside the Machine
+41188@@@Crystal Chronicled
+41189@@@Azj the World Turns
+41200@@@Grand, Gutsy Solutions
+41201@@@You Xal Not Pass
+41202@@@Hot Tropic
+41203@@@Bwon Voyage
+41204@@@Dune Squad
+41205@@@Sound Off
+41206@@@Songs of Storms
+41207@@@When the Drust Settles
+41209@@@Dressed to Kill: Battle for Azeroth
+41213@@@Family Battler of Khaz Algar (copy)
+41218@@@<DNT> Plunderstorm Plunder Tracker - V1.5 11.0.7 - Mainline Power
+41219@@@Explore Siren Isle

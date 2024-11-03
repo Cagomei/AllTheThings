@@ -882,13 +882,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				CommonBossDrops({
-					ig(201740, {	-- Elemental Codex of Ultimate Power
-						["collectible"] = false,
-						["g"] = {
-							r(370543),	-- Elemental Potion of Ultimate Power (RECIPE!)
-							r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
-						},
-					}),
+					TempForceMisc(ig(201740, {	-- Elemental Codex of Ultimate Power
+						r(370543),	-- Elemental Potion of Ultimate Power (RECIPE!)
+						r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
+					})),
 				}),
 				BossOnly(ERANOG),
 				BossOnly(TERROS),

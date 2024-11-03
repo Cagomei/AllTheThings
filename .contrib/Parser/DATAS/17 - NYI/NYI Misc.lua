@@ -121,19 +121,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(52446),	-- Illustrious Jewelcrafter's Token
 		})),
 
-		-- 4.2.0
-		expansion(EXPANSION.CATA, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_4_2_0 } }, {
-			i(71679),	-- Chest of the Fiery Conqueror
-			i(71686),	-- Chest of the Fiery Protector
-			i(71672),	-- Chest of the Fiery Vanquisher
-			i(71676),	-- Gauntlets of the Fiery Conqueror
-			i(71683),	-- Gauntlets of the Fiery Protector
-			i(71669),	-- Gauntlets of the Fiery Vanquisher
-			i(71678),	-- Leggings of the Fiery Conqueror
-			i(71685),	-- Leggings of the Fiery Protector
-			i(71671),	-- Leggings of the Fiery Vanquisher
-		})),
-
 		-- 4.3.0
 		expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
 			i(78892),	-- Perfect Geode
@@ -459,7 +446,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(179367),	-- [PH] Torghast Boss Loot
 			i(180531),	-- [PH] Twisted Dust
 			i(181158),	-- [UNUSED - FOCUS] Blueprint: Charm of Energizing
-			i(182588),	-- A Bloody Hand
 			i(183949),	-- Add Keystone Affix: Inspiring
 			i(183803),	-- Add Keystone Affix: Prideful
 			i(183948),	-- Add Keystone Affix: Spiteful
@@ -686,7 +672,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(181854),	-- Set Keystone Map: Theater of Pain
 			i(176928),	-- Shadowlands Skinning Knife
 			i(179919),	-- Shadowy Rabbit's Foot
-			i(181166),	-- Sigil of Haunting Memories
 			i(181746),	-- Sika Elated PH Reward
 			i(181748),	-- Sika Happy PH Reward
 			i(181747),	-- Sika Very Happy PH Reward
@@ -1119,7 +1104,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(190319),	-- Resourceful!
 			i(191861),	-- Rocdrop Carapace
 			i(191864),	-- Rocdrop Pudgepart
-			i(191421),	-- Rudimentary Magical Lockpick
 			i(194025),	-- Runebound Parchment: Bottom Half
 			i(194024),	-- Runebound Parchment: Top Half
 			i(194075),	-- Sacrilegious Spear
@@ -1451,7 +1435,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(208856),	-- Pocket Lint
 			i(211418),	-- Q'onzu Edict of Change
 			i(208690),	-- Roottwined Key
-			i(210726),	-- Ruby Flightstone
 			i(208839),	-- Rune of Adaptive Binding
 			i(210550),	-- Set Keystone Map: Dawn of the Infinite: Galakrond's Fall
 			i(210551),	-- Set Keystone Map: Dawn of the Infinite: Murozond's Rise

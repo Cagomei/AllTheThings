@@ -22,6 +22,21 @@ PLUNDERSTORM = createHeader({
 		en = "Get swept away in the Plunderstorm— a fun, new, limited-time, pirate-themed event of prodigious proportions lasting the next several weeks. Scour the map and try to be the last pirate standing while dashing across the Arathi Highlands to find abilities, upgrades, and loot to plunder just to survive!\n\nTo Play: Login to Retail WoW and select 'Plunderstorm' from the Game Mode on the top left of your Character Select screen.",
 	},
 });
+
+PLUNDERSTORE = createHeader({
+	readable = "Plunderstore",
+	-- #if AFTER 11.0.7
+	icon = 6255014,
+	-- #else
+	icon = 133785,
+	-- #endif
+	text = {
+		en = "Plunderstore",
+	},
+	description = {
+		en = "This ingame shop menu allows you to purchase new and returning rewards in exchange for Plunder earned during the event.",
+	},
+});
 -- #if NOT ANYCLASSIC
 root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
 	n(PLUNDERSTORM, {
@@ -96,7 +111,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 					},
 				}),
 			},{ -- RENOWN 6 --
+				-- #if BEFORE 11.0.7
 				pet(4435),	-- Happy (PET!)
+				-- #else
+				i(233252),	-- Happy (PET!)
+				-- #endif
 				i(216988),	-- Spun Cotton Shirt
 			},{ -- RENOWN 7 --
 				i(216984),	-- Skulker's Cloak
@@ -105,12 +124,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 			},{ -- RENOWN 9 --
 				i(216994),	-- Warm Woolen Cap
 			},{ -- RENOWN 10 --
+				-- #if BEFORE 11.0.7
 				mount(300154),	-- Silver Tidestallion (MOUNT!)
+				-- #else
+				i(233243),	-- Silver Tidestallion (MOUNT!)
+				-- #endif
 				title(544, {	-- Swashbuckler <Name>
 					["collectible"] = false,
 				}),
 			},{ -- RENOWN 11 --
+				-- #if BEFORE 11.0.7
 				pet(4426),	-- Bubbles (PET!)
+				-- #else
+				i(233251),	-- Bubbles (PET!)
+				-- #endif
 			},{ -- RENOWN 12 --
 				i(216986),	-- Swindler's Cutouts
 			},{ -- RENOWN 13 --
@@ -129,7 +156,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 			},{ -- RENOWN 19 --
 				i(216985),	-- Weatherproven Drape
 			},{ -- RENOWN 20 --
+				-- #if BEFORE 11.0.7
 				mount(254812),	-- Royal Seafeather (MOUNT!)
+				-- #else
+				i(233242),	-- Royal Seafeather (MOUNT!)
+				-- #endif
 				title(545, {	-- Buccaneer <Name>
 					["collectible"] = false,
 				}),
@@ -154,7 +185,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 			},{ -- RENOWN 29 --
 				i(216729),	-- Plunderlord's Fancy Trousers
 			},{ -- RENOWN 30 --
+				-- #if BEFORE 11.0.7
 				pet(4425),	-- Glamrok (PET!)
+				-- #else
+				i(233248),	-- Glamrok (PET!)
+				-- #endif
 				title(546, {	-- First Mate <Name>
 					["collectible"] = false,
 				}),
@@ -175,12 +210,229 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				i(219348),	-- Plunderlord's Monocle
 				i(216734),	-- Plunderlord's Tricorne of Admiralty
 			},{ -- RENOWN 39 --
+				-- #if BEFORE 11.0.7
 				mount(437162),	-- Polly Roger (MOUNT!)
+				-- #else
+				i(233240),	-- Polly Roger (MOUNT!)
+				-- #endif
 			},{ -- RENOWN 40 --
 				title(541),	-- Plunderlord <Name>
 				i(219349),	-- Plunderlord's Tabard
 			},
 		})),
+	}),
+})));
+root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
+	n(PLUNDERSTORM, {
+		n(PLUNDERSTORE, {
+			n(BATTLE_PETS, {
+				i(233251, {	-- Bubbles
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(233248, {	-- Glamrok
+					["cost"] = {{"c", PLUNDER, 2000}},
+				}),
+				i(233252, {	-- Happy
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				--pet(???, {	-- Parley
+				--	["cost"] = {{"c", PLUNDER, 3000}},
+				--}),
+				i(233247, {	-- Sparklesnap
+					["cost"] = {{"c", PLUNDER, 3000}},
+				}),
+			}),
+			n(COSMETIC, {
+				i(216777, {	-- Blacksteel Saber
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216778, {	-- Bloody Iron Cleaver
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216776, {	-- Calcified Claymore
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216779, {	-- Copper Cannon
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216775, {	-- Deadly Dagger
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(213436, {	-- Fine Crimson Doublet
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(232431, {	-- First Mate's Dashing Cap
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(232594, {	-- First Mate's Dashing Headgear
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(216990, {	-- Handwoven Trousers
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(216780, {	-- Marvelous Multi-Shot
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(216731, {	-- Plunderlord's Cuffs
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216728, {	-- Plunderlord's Drapery
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(216729, {	-- Plunderlord's Fancy Trousers
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216756, {	-- Plunderlord's Fine Rapier
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(216755, {	-- Plunderlord's Gilded Sigil
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(216732, {	-- Plunderlord's Golden Cinch
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(216774, {	-- Plunderlord's Hand Cannon
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(219348, {	-- Plunderlord's Monocle
+					["cost"] = {{"c", PLUNDER, 2000}},
+				}),
+				i(216733, {	-- Plunderlord's Muckscrapers
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216765, {	-- Plunderlord's Neck-Severer
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(232585, {	-- Plunderlord's Old Eye Patch
+					["cost"] = {{"c", PLUNDER, 2000}},
+				}),
+				i(232586, {	-- Plunderlord's Old Hat
+					["cost"] = {{"c", PLUNDER, 2000}},
+				}),
+				i(216730, {	-- Plunderlord's Pilferers
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216763, {	-- Plunderlord's Silver Cutlass
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(232591, {	-- Plunderlord's Stormridden Cinch
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(232590, {	-- Plunderlord's Stormridden Cuffs
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(232581, {	-- Plunderlord's Stormridden Cutlass
+					["cost"] = {{"c", PLUNDER, 1500}},
+				}),
+				i(232588, {	-- Plunderlord's Stormridden Drapery
+					["cost"] = {{"c", PLUNDER, 1500}},
+				}),
+				i(232583, {	-- Plunderlord's Stormridden Hand Cannon
+					["cost"] = {{"c", PLUNDER, 1500}},
+				}),
+				i(232593, {	-- Plunderlord's Stormridden Muckscrapers
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(232579, {	-- Plunderlord's Stormridden Neck-Severer
+					["cost"] = {{"c", PLUNDER, 1500}},
+				}),
+				i(232584, {	-- Plunderlord's Stormridden Pilferers
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(232580, {	-- Plunderlord's Stormridden Rapier
+					["cost"] = {{"c", PLUNDER, 1500}},
+				}),
+				i(232582, {	-- Plunderlord's Stormridden Sigil
+					["cost"] = {{"c", PLUNDER, 1500}},
+				}),
+				i(232587, {	-- Plunderlord's Stormridden Spaulders
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(232430, {	-- Plunderlord's Stormridden Tricorne
+					["cost"] = {{"c", PLUNDER, 1500}},
+				}),
+				i(232592, {	-- Plunderlord's Stormridden Trousers
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(232589, {	-- Plunderlord's Stormridden Waistcoat
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(219349, {	-- Plunderlord's Tabard
+					["cost"] = {{"c", PLUNDER, 5000}},
+				}),
+				i(216727, {	-- Plunderlord's Tassled Spaulders
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216734, {	-- Plunderlord's Tricorne of Admiralty
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(216735, {	-- Plunderlord's Waistcoat
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216989, {	-- Quilted Breeches
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(216992, {	-- Silent Leathers
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216984, {	-- Skulker's Cloak
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216988, {	-- Spun Cotton Shirt
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216993, {	-- Storm Captain's Hat
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216991, {	-- Surefooted Boots
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216987, {	-- Swabbie's Gloves
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(232596, {	-- Swabbie's Oar
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(232595, {	-- Swabbie's Shovel
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+				i(216986, {	-- Swindler's Cutouts
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216994, {	-- Warm Woolen Cap
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(216985, {	-- Weatherproven Drape
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+			}),
+			n(MOUNTS, {
+				i(233241, {	-- Hooktalon
+					["cost"] = {{"c", PLUNDER, 5000}},
+				}),
+				i(226042, {	-- Plunderlord's Midnight Crocolisk
+					["cost"] = {{"c", PLUNDER, 5000}},
+				}),
+				i(233240, {	-- Polly Roger
+					["cost"] = {{"c", PLUNDER, 7500}},
+				}),
+				i(233242, {	-- Royal Seafeather
+					["cost"] = {{"c", PLUNDER, 7500}},
+				}),
+				i(233243, {	-- Silver Tidestallion
+					["cost"] = {{"c", PLUNDER, 3000}},
+				}),
+			}),
+			n(TOYS, {
+				i(216907, {	-- A Tiny Plumed Tricorne
+					["questID"] = 80093,
+					["cost"] = {{"c", PLUNDER, 500}},
+				}),
+				i(170197, {	-- Swarthy Warning Sign
+					["cost"] = {{"c", PLUNDER, 1000}},
+				}),
+			}),
+		}),
 	}),
 })));
 -- #else
@@ -199,7 +451,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	n(PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
 		q(80110),	-- First WQ of the Day
 		q(80436),	-- Purchasing Pirate's Booty -- Once per account lockout
-		q(65247),	-- Triggeres randomly anytime doing Plunderstorm
 		q(80262),	-- Renown 6 - Shabby Swabbie outfit unlocked in Plunderstorm
 		q(81657),	-- Renown 16 - Marveouls Multi-Shot unlocked in Plunderstorm
 		q(80263),	-- Renown 17 - Snazzy Swabbie outfit unlocked in Plunderstorm

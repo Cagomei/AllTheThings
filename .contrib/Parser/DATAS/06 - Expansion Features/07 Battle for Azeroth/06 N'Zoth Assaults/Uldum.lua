@@ -1667,9 +1667,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 									["requireSkill"] = LEATHERWORKING,
 								}),
 							}),
-							i(174491, {	-- Tome of Unspeakable Delicacies
+							TempForceMisc(i(174491, {	-- Tome of Unspeakable Delicacies
 								["description"] = "This item will not drop until you finish the intro quests up to 'Descending Into Madness'.",
-								["f"] = MISC,
 								["groups"] = sharedData({
 									["requireSkill"] = COOKING,
 								}, {
@@ -1679,7 +1678,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 									r(314963),	-- Grilled Gnasher
 									r(314960),	-- K'Bab
 								}),
-							}),
+							})),
 							i(174462),	-- Void-Scarred Beetle (PET!)
 						}),
 					},

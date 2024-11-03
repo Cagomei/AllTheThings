@@ -32,7 +32,7 @@ local MEMORY_OF_A_VITAL_SACRIFICE = i(183249, {	-- Memory of a Vital Sacrifice
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(REWARDS, {
-			i(183703, {
+			i(183703, {	-- Bonesmith's Satchel
 				["description"] = "Only Obtainable from Heirmir Soulbind.",
 			}),
 		}),

@@ -70,16 +70,16 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(219450, {	-- Charming Courier (MOUNT!)
 			["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 		}),
-		mount(466838, {	-- Chaos-Forged Dreadwing (MOUNT!)
+		i(230200, {	-- Chaos-Forged Dreadwing (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.0.5.99999" },	-- Available through January 6, 2025
 		}),
-		mount(466811, {	-- Chaos-Forged Gryphon (MOUNT!)
+		i(230184, {	-- Chaos-Forged Gryphon (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.0.5.99999" },	-- Available through January 6, 2025
 		}),
-		mount(466812, {	-- Chaos-Forged Hippogryph (MOUNT!)
+		i(230185, {	-- Chaos-Forged Hippogryph (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.0.5.99999" },	-- Available through January 6, 2025
 		}),
-		mount(466845, {	-- Chaos-Forged Wind Rider (MOUNT!)
+		i(230201, {	-- Chaos-Forged Wind Rider (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.0.5.99999" },	-- Available through January 6, 2025
 		}),
 		i(109013, {	-- Dread Raven (MOUNT!)
@@ -150,7 +150,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		mount(359843, {	-- Tangled Dreamweaver (MOUNT!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
-		mount(465235, {	-- Trader's Gilded Brutosaur (MOUNT!)
+		i(229418, {	-- Trader's Gilded Brutosaur (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.0.5.99999" },	-- Available through January 6, 2025
 		}),
 		mount(346136, {	-- Viridian Phase-Hunter (MOUNT!)

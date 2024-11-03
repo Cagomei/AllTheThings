@@ -6,7 +6,7 @@ FILLED_TRAVELERS_LOG = createHeader({
 	readable = "Filled Travelers Log",
 	icon = 4696085,
 	text = {
-		en = [[~QUEST_REWARDS]],
+		en = "Filled Travelers Log",
 	},
 	description = {
 		en = "This reward is given for filling the Travel Points Progress Bar during the month.",
@@ -102,6 +102,10 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			["timeline"] = { ADDED_11_0_2 },
 			["maps"] = { DORNOGAL },
 		}),
+		q(81725, {	-- Report to the Trading Post -- November 2024
+			["timeline"] = { ADDED_11_0_5 },
+			["maps"] = { DORNOGAL },
+		})
 	}),
 	n(YEAR2023, {
 		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_0_5 } }, {
@@ -1902,7 +1906,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.2.56647", "removed 11.0.5.99999" } }, { -- TODO, timeline out with Nov 1 build
+		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.2.56647", "removed 11.0.5.57388" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(187674),	-- Depthstalker (MOUNT!)
 			}),
@@ -2014,7 +2018,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.2.56647", "removed 11.0.5.99999" } }, { -- TODO, timeline in with Nov 1 build
+		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.5.57388", "removed 11.0.5.99999" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(229059),	-- Arsenal: Crests of the Kingdom
 			}),
@@ -2424,7 +2428,6 @@ root(ROOTS.NeverImplemented, {
 			expansion(EXPANSION.DF, patch(2,0), bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				n(ARMOR, {
 					i(211069),	-- Azure Treads of the Kalu'ak
-					i(210849),	-- Trader's Azure Sarong
 					i(210856),	-- Trader's Faded Sarong
 					i(210851),	-- Trader's Grassy Sarong
 					i(210859),	-- Trader's Plum Sarong
@@ -2442,8 +2445,6 @@ root(ROOTS.NeverImplemented, {
 					i(190692),	-- Champion's Battle Standard
 					i(190847),	-- Deathmantle Assassin's Barb
 					i(190090),	-- Dessicated Bouquet
-					i(212627),	-- Dueler's Azure Shoulder Cape
-					i(212617),	-- Dueler's Crimson Shoulder Cape
 					i(212625),	-- Dueler's Grassy Shoulder Cape
 					i(212618),	-- Dueler's Plum Shoulder Cape
 					i(190893),	-- Jeweled Valkyrion Cape
@@ -2454,7 +2455,6 @@ root(ROOTS.NeverImplemented, {
 					i(212713),	-- Spring Reveler's Cornsilk Dress
 					i(212987),	-- Spring Reveler's Cornsilk Pants
 					i(212717),	-- Spring Reveler's Cornsilk Sun Hat
-					i(212612),	-- Wings of the Amethyst Monarch
 					i(212610),	-- Wings of the Emerald Monarch
 				}),
 				n(SETS, {

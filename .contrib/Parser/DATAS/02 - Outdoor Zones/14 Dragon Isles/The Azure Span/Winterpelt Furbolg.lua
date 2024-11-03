@@ -310,7 +310,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(DRAGON_ISLES, {
 		m(THE_AZURE_SPAN, {
-			faction(FACTION_WINTERPELT_FURBOLG, {
+			header(HEADERS.Faction, FACTION_WINTERPELT_FURBOLG, {
 				q(73048),	-- Tell Little Toz 'Make sure to marry Fuzzy Feet immediately' during 'Ancestral Advice' (questID 72941)
 				q(73049),	-- Tell Little Toz 'Make sure to marry Bring Fur immediately' during 'Ancestral Advice' (questID 72941)
 				q(73050),	-- Tell Little Toz 'Make sure to murder Fuzzy Feet immediately' during 'Ancestral Advice' (questID 72941)

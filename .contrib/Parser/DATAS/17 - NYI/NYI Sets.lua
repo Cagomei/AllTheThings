@@ -7303,15 +7303,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205798),	-- Pauldrons of the Onyx Crucible
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
-					-- [BoP]
-					i(204413),	-- Bands of Purified Purpose
-					i(204412),	-- Crucible Curator's Wingspan
-					i(204427),	-- Devoted Warden's Gaze
-					i(204421),	-- Faulds of Failed Experiments
-					i(204416),	-- Laboratory Assistant's Abductors
-					i(204417),	-- Mantle of Sunless Kindling
-					i(204428),	-- Sanctum Guard's Forgewalkers
-					i(204420),	-- Sundered Edgelord's Breastplate
 				})),
 				d(DIFFICULTY.RAID.NORMAL, {
 					cl(DEATHKNIGHT, {
@@ -7405,15 +7396,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205798),	-- Pauldrons of the Onyx Crucible
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
-					-- BoP
-					i(204413),	-- Bands of Purified Purpose
-					i(204412),	-- Crucible Curator's Wingspan
-					i(204427),	-- Devoted Warden's Gaze
-					i(204421),	-- Faulds of Failed Experiments
-					i(204416),	-- Laboratory Assistant's Abductors
-					i(204417),	-- Mantle of Sunless Kindling
-					i(204428),	-- Sanctum Guard's Forgewalkers
-					i(204420),	-- Sundered Edgelord's Breastplate
 				}),
 				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 1 }, {
 					cl(DEATHKNIGHT, {
@@ -7507,15 +7489,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205798),	-- Pauldrons of the Onyx Crucible
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
-					-- BoP
-					i(204413),	-- Bands of Purified Purpose
-					i(204412),	-- Crucible Curator's Wingspan
-					i(204427),	-- Devoted Warden's Gaze
-					i(204421),	-- Faulds of Failed Experiments
-					i(204416),	-- Laboratory Assistant's Abductors
-					i(204417),	-- Mantle of Sunless Kindling
-					i(204428),	-- Sanctum Guard's Forgewalkers
-					i(204420),	-- Sundered Edgelord's Breastplate
 				})),
 				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 450 }, {
 					cl(DEATHKNIGHT, {

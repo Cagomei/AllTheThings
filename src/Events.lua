@@ -105,6 +105,9 @@ local EventSequence = {
 	OnSavesUpdated = {
 		"OnRefreshWindows"
 	},
+	OnCurrentMapIDChanged = {
+		"OnRefreshWindows"
+	},
 }
 -- Classic has some convoluted refresh sequence handling with coroutines and manual calls to events and data refreshes, so
 -- I don't wanna mess with all that. We just won't link the OnRecalculate to the OnRefreshCollections for Classic --Runaway

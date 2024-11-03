@@ -9,6 +9,7 @@ SECRETS_OF_AZEROTH_HEADER = createHeader({
 	text = {
 		en = "Secrets of Azeroth",
 		ru = "Тайны Азерота",
+		cn = "艾泽拉斯之秘",
 	},
 });
 COMMUNITY_CLUES_HEADER = createHeader({
@@ -1161,7 +1162,6 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 
 root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	q(77204),	-- placed 'Golden Chalice'
-	q(76987),	-- completed 'The Inquisitive' (achievementID 18642) (account-wide completion)
 	q(76995),	-- looted Crazed Looter first time (NPC 208182)
 	q(77687),	-- completed 'A Secretive Contact' (questID 77165)
 	q(78202),	-- completed 'Unfinished Thinking Cap' (questID 77237) (account-wide completion)

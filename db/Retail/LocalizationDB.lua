@@ -645,7 +645,7 @@ localize(L.HEADER_NAMES, {
 	[-1001017] = "Faithful Dog Secret",
 	[-1001021] = "Discord Promotion",
 	[-1001024] = "Patron Rewards",
-	[-1001027] = QUEST_REWARDS,
+	[-1001027] = "Filled Travelers Log",
 	[-1001031] = "WoW's 20th Anniversary",
 	[-1001032] = "Mount Mods",
 	[-1001033] = C_Spell.GetSpellName(363104),
@@ -658,8 +658,8 @@ localize(L.HEADER_NAMES, {
 	[-1001040] = "Audience with Arrogance",
 	[-1001041] = "Delve Completion",
 	[-1001045] = "Guest Relations",
-	[-1001049] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
-	[-1001050] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1001051] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
+	[-1001052] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -3113,6 +3113,9 @@ local ObjectNames = {
 	[182032] = "Galaen's Journal",
 	[182115] = "Wanted Poster",
 	[182165] = "Wanted Poster",
+	[182196] = "Arcane Container",
+	[182197] = "Arcane Container",
+	[182198] = "Arcane Container",
 	[182392] = "Garadar Bulletin Board",
 	[182393] = "Telaar Bulletin Board",
 	[182549] = "Fel Orc Plans",
@@ -6776,6 +6779,7 @@ local ObjectNames = {
 	[455716] = "DELVER'S CALL: Fungal Folly",
 	[455720] = "DELVER'S CALL: Tak-Rethan Abyss",
 	[455759] = "Hulking Raptorial Claw",
+	[455761] = "Gerald",
 	[455768] = "Soggy Celebration Crate",
 	[455795] = "Pet Box",
 	[455890] = "Waterlogged Refuse",
@@ -6875,7 +6879,11 @@ local ObjectNames = {
 	[456820] = "Strange Torch",
 	[456927] = "Treatise on Forms: Lords",
 	[456928] = "Treatise on Forms: Ascended",
+	[457025] = "Pre-Calibrated Goblin Transport Vessel",
 	[457062] = "Sky-Captain Lancekat's Curse",
+	[457156] = "Torn Note",
+	[457160] = "Torn Note",
+	[457161] = "Torn Note",
 	[457168] = "Bar Tab Barrel",
 	[457170] = "Bar Tab Barrel",
 	[457171] = "Bar Tab Barrel",
@@ -6886,15 +6894,19 @@ local ObjectNames = {
 	[457180] = "Bar Tab Barrel",
 	[457182] = "Bar Tab Barrel",
 	[457183] = "Bar Tab Barrel",
+	[457197] = "Mounted Spyglass",
 	[457246] = "Fieldhand Stash",
 	[457251] = "Old Rotting Crate",
 	[457260] = "Misplaced Supplies",
 	[457270] = "Surveyor's Box",
 	[457271] = "Crabber Supplies",
+	[459263] = "Abandoned Beach Chair",
 	[459333] = "Jeweled Eye",
 	[459368] = "Half-Buried Chest",
+	[463653] = "Dirt-Caked Celebration Crate",
 	[463979] = "Lightspark Sky Academy Gradebook",
 	[464938] = "Awakened Cache",
+	[465161] = "Water-Resistant Receipt of Sale",
 	[465241] = "Awakened Cache",
 	[465242] = "Awakened Cache",
 	[465243] = "Awakened Cache",
@@ -8362,6 +8374,9 @@ local ObjectModels = {
 	[182032] = 198028,
 	[182115] = 199428,
 	[182165] = 199421,
+	[182196] = 199744,
+	[182197] = 199744,
+	[182198] = 199744,
 	[182392] = 199475,
 	[182393] = 192468,
 	[182549] = 198457,
@@ -11937,6 +11952,7 @@ local ObjectModels = {
 	[455534] = 5128194,
 	[455685] = 5409330,
 	[455759] = 5936948,
+	[455761] = 196999,
 	[455768] = 5282318,
 	[455795] = 1981372,
 	[455890] = 1254955,
@@ -11990,7 +12006,11 @@ local ObjectModels = {
 	[456583] = 955699,
 	[456767] = 970251,
 	[456820] = 167130,
+	[457025] = 315765,
 	[457062] = 4323821,
+	[457156] = 936413,
+	[457160] = 936413,
+	[457161] = 936413,
 	[457168] = 526102,
 	[457170] = 526102,
 	[457171] = 526102,
@@ -12001,15 +12021,19 @@ local ObjectModels = {
 	[457180] = 526102,
 	[457182] = 526102,
 	[457183] = 526102,
+	[457197] = 4496829,
 	[457246] = 5154231,
 	[457251] = 1715104,
 	[457260] = 2123117,
 	[457270] = 5154231,
 	[457271] = 2123117,
+	[459263] = 197230,
 	[459333] = 244062,
 	[459368] = 4323481,
+	[463653] = 5282318,
 	[463979] = 5387320,
 	[464938] = 5128194,
+	[465161] = 936411,
 	[465241] = 4323481,
 	[465242] = 4323481,
 	[465243] = 4323481,
@@ -12052,7 +12076,7 @@ _.PhaseConstants = {
 };
 local phases = {
 	[1] = {
-		name = "Never Implemented",
+		name = "Never Implemented [NYI]",
 		description = "|cFFFF0000This was never available to players.|r",
 		state = 1,
 	},
@@ -14776,7 +14800,7 @@ L.QUEST_NAMES = {
 	[50185] = "Green Crystal Monocle",
 	[50250] = "Posthaste",
 	[50384] = "Doug Test - Completable Quest4",
-	[52819] = _.L.HEADER_NAMES[-1001050],
+	[52819] = _.L.HEADER_NAMES[-1001052],
 	[52917] = "Grimmy Dialogue",
 	[53568] = "Kill Credit 1",
 	[53569] = "Kill Credit 2",
@@ -15335,7 +15359,6 @@ L.QUEST_NAMES = {
 	[77974] = "First Lock",
 	[78912] = "When donating to the Gala (daily)",
 	[79104] = "Increased Renewed Proto-Drake: Love Armor Droprate (Daily Accountwide)",
-	[79573] = "The War Within Campaign Completed [Account]",
 	[79706] = "Stay awhile and listen: Faerin Lothar",
 	[79971] = "Stay awhile and listen: Alleria Windrunner",
 	[80020] = "Stay awhile and listen: Locus-Walker",
@@ -15563,7 +15586,7 @@ L.QUEST_NAMES = {
 	[84539] = "The Weaver considers you an Abettor.",
 	[84540] = "The Weaver considers you a Conspirator.",
 	[84541] = ("The Weaver considers you a Mastermind. Congratulations, Silksinger %s."):format(UnitName("player")),
-	[84562] = "Severed Threads Rank 1",
+	[84562] = "Severed Threads Active",
 	[84620] = "Stay awhile and listen: Magni Bronzebeard",
 	[84631] = "Awakening The Machine: Wave 5 Completed.",
 	[84632] = "Awakening The Machine: Wave 10 Completed.",
@@ -15825,8 +15848,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Elementare Bande",
 	[-1001035] = "Saisonfisch: Sommerbarsch",
 	[-1001036] = "Saisonfisch: Winterkalmar",
-	[-1001049] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
-	[-1001050] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[-1001051] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
+	[-1001052] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -15841,6 +15864,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artefakte",
 	[103] = "Waffenverzauberungen",
+});
+localize(L.FlightPathNames, {
+	[149] = "Trümmerposten, Höllenfeuerhalbinsel",
 });
 localize(ObjectNames, {
 	[31] = "Alte Löwenstatue",
@@ -16214,6 +16240,9 @@ localize(ObjectNames, {
 	[182032] = "Galaens Tagebuch",
 	[182115] = "Steckbrief",
 	[182165] = "Steckbrief",
+	[182196] = "Arkaner Behälter",
+	[182197] = "Arkaner Behälter",
+	[182198] = "Arkaner Behälter",
 	[182392] = "Aushang von Garadar",
 	[182393] = "Aushang von Telaar",
 	[182549] = "Höllenorcpläne",
@@ -19709,6 +19738,7 @@ localize(ObjectNames, {
 	[457246] = "Feldarbeitervorrat",
 	[457251] = "Alte verrottende Kiste",
 	[457270] = "Feldmesserkiste",
+	[459263] = "Verlassener Strandstuhl",
 	[485669] = "RUF DES TIEFENFORSCHERS: Fungusphantasterei",
 	[487805] = "RUF DES TIEFENFORSCHERS: Erdwühlerminen",
 	[487851] = "RUF DES TIEFENFORSCHERS: Spiralgewebe",
@@ -19903,8 +19933,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Liens élémentaires",
 	[-1001035] = "Poisson de saison : bar d'été",
 	[-1001036] = "Poisson de saison : calmar d'hiver",
-	[-1001049] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
-	[-1001050] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[-1001051] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
+	[-1001052] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
@@ -19928,6 +19958,9 @@ localize(L.HEADER_LORE, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artéfact",
+});
+localize(L.FlightPathNames, {
+	[149] = "Halte du Fracas, Péninsule des Flammes infernales",
 });
 localize(ObjectNames, {
 	[31] = "Statue du vieux lion",
@@ -20301,6 +20334,9 @@ localize(ObjectNames, {
 	[182032] = "Journal de Galaen",
 	[182115] = "Avis de recherche",
 	[182165] = "Avis de recherche",
+	[182196] = "Récipient arcanique",
+	[182197] = "Récipient arcanique",
+	[182198] = "Récipient arcanique",
 	[182392] = "Panneau d'affichage de Garadar",
 	[182393] = "Panneau d'affichage de Telaar",
 	[182549] = "Plans des Gangr'orcs",
@@ -23735,6 +23771,7 @@ localize(ObjectNames, {
 	[455534] = "|cff1EFF00Coffre solide",
 	[455685] = "APPEL DU GOUFFRE : fosse de l’Effroi",
 	[455759] = "Griffe de raptor massive",
+	[455761] = "Gérald",
 	[455939] = "Couette nérubienne",
 	[455942] = "Cisoire de rapiéçage terrestre",
 	[455943] = "Aiguilles runiques terrestres",
@@ -23753,6 +23790,7 @@ localize(ObjectNames, {
 	[457062] = "Malédiction du capitaine des cieux Lancekat",
 	[457246] = "Réserve d’ouvrière agricole",
 	[457270] = "Boîte de géomètre",
+	[459263] = "Chaise de plage abandonnée",
 	[485669] = "APPEL DU GOUFFRE : Folie fongique",
 	[487805] = "APPEL DU GOUFFRE : mines de Rampeterre",
 	[487851] = "APPEL DU GOUFFRE : la Trame spiralée",
@@ -23882,8 +23920,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Legami Elementali",
 	[-1001035] = "Pesce di stagione: spigola estiva",
 	[-1001036] = "Pesce di stagione: calamari invernali",
-	[-1001049] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
-	[-1001050] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[-1001051] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
+	[-1001052] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -23893,6 +23931,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "C'è una battaglia 4x4 in corso. Aiuta l'Alleanza sconfiggendo la Squadra della Morte dei Rinnegati.",
 	[-1000856] = "C'è una battaglia 4x4 in corso. Aiuta l'Orda sconfiggendo i Worgen Stalker.",
 	[-1000858] = "Tre cacciatori hanno circondato Mara Mantoveloce. Coinvolgili in combattimento e un forziere malconcio verrà generato vicino a Mara Swiftmane. Una volta terminata la battaglia, Mara ti ringrazierà e ti lascerà con il baule malconcio.",
+});
+localize(L.FlightPathNames, {
+	[149] = "Presidio Frantumato, Penisola del Fuoco Infernale",
 });
 localize(ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
@@ -24138,6 +24179,9 @@ localize(ObjectNames, {
 	[182032] = "Diario di Galaen",
 	[182115] = "Manifesto dei Ricercati",
 	[182165] = "Manifesto dei Ricercati",
+	[182196] = "Contenitore Arcano",
+	[182197] = "Contenitore Arcano",
+	[182198] = "Contenitore Arcano",
 	[182392] = "Bacheca di Garadar",
 	[182393] = "Bacheca di Telaar",
 	[182549] = "Piani dei Vilorchi",
@@ -27397,6 +27441,7 @@ localize(ObjectNames, {
 	[456016] = "Martello di Dornogal",
 	[456024] = "Struttura di Metallo di Dornogal",
 	[457270] = "Scatola dell'Ispettore",
+	[459263] = "Sdraio Abbandonata",
 	[485669] = "CHIAMATA ALLA SCORRIBANDA: Follia Fungina",
 	[487805] = "CHIAMATA ALLA SCORRIBANDA: Miniere Strisciaterra",
 	[487851] = "CHIAMATA ALLA SCORRIBANDA: Trama a Spirale",
@@ -27495,8 +27540,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Prisão Elemental",
 	[-1001035] = "Peixe sazonal: robalo de verão",
 	[-1001036] = "Peixe sazonal: Lula de Inverno",
-	[-1001049] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
-	[-1001050] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[-1001051] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
+	[-1001052] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -27506,6 +27551,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "Há uma batalha 4x4 em andamento. Ajude a Aliança derrotando o Esquadrão da Morte Abandonado.",
 	[-1000856] = "Há uma batalha 4x4 em andamento. Ajude a Horda derrotando os Worgen Stalkers.",
 	[-1000858] = "Três caçadores cercaram Mara Swiftmane. Envolva-os em combate e um baú maltratado aparecerá perto de Mara Swiftmane. Assim que a batalha terminar, Mara agradecerá e deixará você com o Baú Maltratado.",
+});
+localize(L.FlightPathNames, {
+	[149] = "Pontal do Raio, Península Fogo do Inferno",
 });
 localize(ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
@@ -27855,6 +27903,9 @@ localize(ObjectNames, {
 	[182032] = "Diário de Galaen",
 	[182115] = "Cartaz de Procura-se",
 	[182165] = "Cartaz de Procura-se",
+	[182196] = "Recipiente Arcano",
+	[182197] = "Recipiente Arcano",
+	[182198] = "Recipiente Arcano",
 	[182392] = "Quadro de Avisos de Garadar",
 	[182393] = "Quadro de Avisos de Telaar",
 	[182549] = "Planos dos Orcs Vis",
@@ -31224,6 +31275,7 @@ localize(ObjectNames, {
 	[456024] = "Quadro Metálico de Dornogal",
 	[457062] = "Maldição da Capitã Celeste Lancecata",
 	[457246] = "Depósito de Ajudante do Campo",
+	[459263] = "Cadeira de Praia Abandonada",
 	[485669] = "CHAMADO DO IMERSOR: Loucura Fúngica",
 	[487851] = "CHAMADO DO IMERSOR: Trama Espiral",
 	[9999912] = "|cFFFFFFFFStep 5:|r Vigia Diligente",
@@ -31460,8 +31512,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Власть стихий",
 	[-1001035] = "Сезонная рыба: летний окунь",
 	[-1001036] = "Сезонная рыба: зимний кальмар",
-	[-1001049] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
-	[-1001050] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[-1001051] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
+	[-1001052] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
@@ -31488,6 +31540,9 @@ localize(L.HEADER_LORE, {
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Артефакты",
 	[103] = "Иллюзии",
+});
+localize(L.FlightPathNames, {
+	[149] = "Лагерь Удара ,Полуостров Адского Пламени",
 });
 localize(ObjectNames, {
 	[31] = "Статуя старого льва",
@@ -31861,6 +31916,9 @@ localize(ObjectNames, {
 	[182032] = "Записи Галена",
 	[182115] = "Плакат \"Разыскивается\"",
 	[182165] = "Плакат \"Разыскивается\"",
+	[182196] = "Волшебный контейнер",
+	[182197] = "Волшебный контейнер",
+	[182198] = "Волшебный контейнер",
 	[182392] = "Гарадарская доска объявлений",
 	[182393] = "Телаарская доска объявлений",
 	[182549] = "Планы орков Скверны",
@@ -35316,6 +35374,7 @@ localize(ObjectNames, {
 	[455534] = "|cff1EFF00Прочный сундук",
 	[455685] = "Вызов в вылазку: Яма Ужаса",
 	[455759] = "Коготь гигантского ящера",
+	[455761] = "Джеральд",
 	[455939] = "Нерубское стеганое одеяло",
 	[455943] = "Рунические иглы земельников",
 	[455944] = "Метр земельников",
@@ -35334,6 +35393,7 @@ localize(ObjectNames, {
 	[457246] = "Тайник землепашца",
 	[457251] = "Старый гнилой ящик",
 	[457270] = "Коробка геодезиста",
+	[459263] = "Брошенный пляжный шезлонг",
 	[485669] = "Вызов в вылазку: Грибные гадости",
 	[487805] = "Вызов в вылазку: шахты Землескребов",
 	[487851] = "Вызов в вылазку: Сплетенная Спираль",
@@ -35398,7 +35458,7 @@ for i,objectID in ipairs(ALLIANCE_BONFIRES) do ObjectNames[objectID] = "Боль
 for i,objectID in ipairs(CANDY_BUCKETS) do ObjectNames[objectID] = "Кулек конфет"; end
 for i,objectID in ipairs(HORDE_BONFIRES) do ObjectNames[objectID] = "Большой костер Орды"; end
 for key,value in pairs({
-	[1] = "Никогда Не Доступны",
+	[1] = "Никогда Не Доступны [NYI]",
 	[2] = "Убраны Из Игры",
 	[3] = "Кошелек Blizzard",
 	[4] = "ПвП Элита / Гладиатор",
@@ -35529,8 +35589,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "정령의 속박",
 	[-1001035] = "제철 생선: 여름 농어",
 	[-1001036] = "제철 생선: 겨울 오징어",
-	[-1001049] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
-	[-1001050] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[-1001051] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
+	[-1001052] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -35540,6 +35600,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "4대4 전투가 진행 중입니다. Forsaken Deathsquad를 물리쳐 얼라이언스를 지원하세요.",
 	[-1000856] = "4대4 전투가 진행 중입니다. 늑대인간 추적자를 물리쳐 호드를 도와주세요.",
 	[-1000858] = "세 명의 사냥꾼이 마라 스위프트메인을 둘러싸고 있습니다. 전투에 참여하면 마라 스위프트메인 근처에 낡은 상자가 생성됩니다. 전투가 끝나면 마라는 감사 인사를 전하고 낡은 상자를 남겨줄 것입니다.",
+});
+localize(L.FlightPathNames, {
+	[149] = "징검다리 거점 지옥불 반도",
 });
 localize(ObjectNames, {
 	[31] = "오래된 사자상",
@@ -35893,6 +35956,9 @@ localize(ObjectNames, {
 	[182032] = "갈라엔의 일지",
 	[182115] = "현상 수배 전단",
 	[182165] = "현상 수배 전단",
+	[182196] = "마법 단지",
+	[182197] = "마법 단지",
+	[182198] = "마법 단지",
 	[182392] = "가라다르 게시판",
 	[182393] = "텔라아르 게시판",
 	[182549] = "타락한 오크의 계획서",
@@ -38951,6 +39017,7 @@ localize(ObjectNames, {
 	[455685] = "구렁 탐험가의 부름: 공포의 무저갱",
 	[455759] = "거대한 집게 발톱",
 	[455980] = "서예가의 새김 표지",
+	[459263] = "버려진 해변 의자",
 	[485669] = "구렁 탐험가의 부름: 포자의 호정",
 	[487851] = "구렁 탐험가의 부름: 나선의 방직소",
 	[9999912] = "|cFFFFFFFFStep 5:|r 성실한 감시자",
@@ -39046,8 +39113,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Vínculos Elementales",
 	[-1001035] = "Pescado de temporada: lubina de verano",
 	[-1001036] = "Pescado de temporada: calamares de invierno",
-	[-1001049] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
-	[-1001050] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[-1001051] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
+	[-1001052] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -39057,6 +39124,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "Hay una batalla 4x4 en curso. Ayuda a la Alianza derrotando al Forsaken Deathsquad.",
 	[-1000856] = "Hay una batalla 4x4 en curso. Ayuda a la Horda derrotando a los Worgen Stalkers.",
 	[-1000858] = "Tres cazadores han rodeado a Mara Swiftmane. Entra en combate con ellos y aparecerá un cofre maltratado cerca de Mara Swiftmane. Una vez que termine la batalla, Mara te lo agradecerá y te dejará con el Cofre Maltratado.",
+});
+localize(L.FlightPathNames, {
+	[149] = "Puesto Devastación, Península del Fuego Infernal",
 });
 localize(ObjectNames, {
 	[31] = "Estatua de león antigua",
@@ -39428,6 +39498,9 @@ localize(ObjectNames, {
 	[182032] = "Diario de Galaen",
 	[182115] = "Cartel de Se busca",
 	[182165] = "Cartel de Se busca",
+	[182196] = "Contenedor arcano",
+	[182197] = "Contenedor arcano",
+	[182198] = "Contenedor arcano",
 	[182392] = "Tablón de anuncios de Garadar",
 	[182393] = "Tablón de anuncios de Telaar",
 	[182549] = "Planos de orcos viles",
@@ -42766,6 +42839,7 @@ localize(ObjectNames, {
 	[456012] = "Tenazas radiantes",
 	[456016] = "Martillo de Dornogal",
 	[457270] = "Caja de perito",
+	[459263] = "Tumbona de playa abandonada",
 	[485669] = "LLAMADA DE EXPLORADOR DE PROFUNDIDADES: Capricho Fúngico",
 	[487805] = "LLAMADA DE EXPLORADOR DE PROFUNDIDADES: Minas Reptaterra",
 	[487851] = "LLAMADA DE EXPLORADOR DE PROFUNDIDADES: Espiral Serpenteante",
@@ -42812,6 +42886,9 @@ for i,objectID in ipairs(CANDY_BUCKETS) do ObjectNames[objectID] = "Cubo de cara
 for i,objectID in ipairs(HORDE_BONFIRES) do ObjectNames[objectID] = "Fogata de la Horda"; end
 end
 if simplifiedLocale == "zh" then
+localize(_.CategoryNames, {
+	[3] = "塔罗牌",
+});
 localize(L.HEADER_NAMES, {
 	[-1000000] = "东部",
 	[-1000001] = "北部",
@@ -42889,7 +42966,8 @@ localize(L.HEADER_NAMES, {
 	[-1000190] = "疯狂宝箱",
 	[-1000199] = "甲虫的召唤",
 	[-1000201] = "暗月马戏团",
-	[-1000203] = "暗月马戏团舞游戏",
+	[-1000202] = "小游戏",
+	[-1000203] = "暗月马戏团跳舞游戏",
 	[-1000204] = "不死鸟大挑战",
 	[-1000205] = "射击场",
 	[-1000206] = "打豺狼人",
@@ -42976,6 +43054,7 @@ localize(L.HEADER_NAMES, {
 	[-1000353] = "洪荒狩猎",
 	[-1000354] = "伊斯卡拉渔具",
 	[-1000359] = "梦涌",
+	[-1000360] = "艾泽拉斯之秘",
 	[-1000362] = "尤娜的世界旅行",
 	[-1000364] = "暗黑破坏神活动",
 	[-1000365] = "暗黑破坏神20周年庆",
@@ -43030,7 +43109,7 @@ localize(L.HEADER_NAMES, {
 	[-1000967] = "制造订单",
 	[-1001001] = "地心之战季节性促销",
 	[-1001006] = "要塞战役",
-	[-1001017] = "忠诚的狗解密",
+	[-1001017] = "忠诚的狗",
 	[-1001021] = "Discord推广",
 	[-1001024] = "客人订单奖励",
 	[-1001031] = "魔兽世界二十周年",
@@ -43039,8 +43118,9 @@ localize(L.HEADER_NAMES, {
 	[-1001035] = "时令鱼类：夏季鲈鱼",
 	[-1001036] = "时令鱼类：冬鱿鱼",
 	[-1001041] = "地下堡完成",
-	[-1001049] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
-	[-1001050] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-1001045] = "宾客关系",
+	[-1001051] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
+	[-1001052] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "这些物品可以通过做大使任务或获得巅峰宝箱来获得。",
@@ -43070,6 +43150,9 @@ localize(L.HEADER_LORE, {
 localize(L.FILTER_ID_TYPES, {
 	[11] = "神器",
 	[103] = "幻象",
+});
+localize(L.FlightPathNames, {
+	[149] = "破碎岗哨, 地狱火半岛",
 });
 localize(ObjectNames, {
 	[31] = "陈旧的石狮子",
@@ -43417,6 +43500,9 @@ localize(ObjectNames, {
 	[182032] = "加莱恩的日记",
 	[182115] = "通缉布告",
 	[182165] = "通缉布告",
+	[182196] = "奥术容器",
+	[182197] = "奥术容器",
+	[182198] = "奥术容器",
 	[182392] = "加拉达尔布告牌",
 	[182393] = "塔拉布告牌",
 	[182549] = "邪兽人的计划",
@@ -46271,6 +46357,7 @@ localize(ObjectNames, {
 	[408107] = "晶化莹花",
 	[408706] = "魔法花朵",
 	[408707] = "奇怪的树节",
+	[408860] = "米米尔隆的助推器零件",
 	[408980] = "提尔的遗产",
 	[409166] = "泰坦能量中继器",
 	[409200] = "破损的瓮",
@@ -46545,6 +46632,7 @@ localize(ObjectNames, {
 	[455534] = "|cff1EFF00坚固宝箱",
 	[455685] = "地下堡行者的召唤：恐惧陷坑",
 	[455759] = "巨硕掠食之爪",
+	[455761] = "吉拉德",
 	[455939] = "蛛魔被褥",
 	[455942] = "土灵缝纫者的剪子",
 	[455943] = "符文土灵别针",
@@ -46552,6 +46640,7 @@ localize(ObjectNames, {
 	[455945] = "多恩诺嘉尔拆线刀",
 	[456581] = "卵簇",
 	[456583] = "失落之鞋",
+	[459263] = "被遗弃的沙滩椅",
 	[487851] = "地下堡行者的召唤：螺旋织纹",
 	[9000000] = "微风雕塑之石",
 	[9999908] = "|cFFFFFFFF第1步:|r 收集消耗品",
@@ -46615,7 +46704,7 @@ for i,objectID in ipairs(ALLIANCE_BONFIRES) do ObjectNames[objectID] = "联盟�
 for i,objectID in ipairs(CANDY_BUCKETS) do ObjectNames[objectID] = "糖罐"; end
 for i,objectID in ipairs(HORDE_BONFIRES) do ObjectNames[objectID] = "部落篝火"; end
 for key,value in pairs({
-	[1] = "从未实施",
+	[1] = "从未实施 [NYI]",
 	[2] = "从游戏中移除",
 	[4] = "PvP 精良/角斗士",
 	[5] = "不可学",
@@ -46633,7 +46722,7 @@ for key,value in pairs({
 	[6] = "|cFFFFAAAA除非您认识可以使用用于召唤首领的物品的人，否则这将不再可用。|r",
 	[9] = "|cFFAAFFAA此物品可在黑市拍卖行购买。原始来源可能已被删除。|r",
 	[10] = "|cFFAAFFAA最初通过不再印刷的 TCG 卡获得，但仍可通过黑市、游戏内或现实中的拍卖行获得。|r",
-	[38] = "|cFFFFAAAA这仅适用于在《熊猫人之谜》或通过黑市拍卖行完成传奇披风任务链的玩家。|r",
+	[38] = "|cFFFFAAAA这仅适用于在《熊猫人之谜》完成传奇披风任务链、《熊猫人之谜：幻境新生》获取成就的玩家或通过黑市拍卖行获取。|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -46655,13 +46744,18 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000045] = "這些物品可以從稀有菁英、可重複的寶箱、祈願蟋蟀、世界任務、指揮桌任務中取得。",
 	[-1001041] = "包含完成探究時獎勵的東西。",
 });
+localize(L.FlightPathNames, {
+	[149] = "碎裂哨站，地獄火半島",
+});
 localize(ObjectNames, {
 	[327407] = "珍貴的巨魔藏寶箱",
+	[329918] = "野豬人寶藏",
 	[329919] = "遭竊的補給品",
+	[339770] = "被遺棄的寶箱",
 });
 for i,objectID in ipairs(CANDY_BUCKETS) do ObjectNames[objectID] = "糖果桶"; end
 for key,value in pairs({
-	[1] = "從未實裝",
+	[1] = "從未實裝 [NYI]",
 	[2] = "已從遊戲中移除",
 	[3] = "暴雪點數",
 	[4] = "PvP 精良/角鬥士",

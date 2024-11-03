@@ -90,6 +90,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						["crs"] = { 206194 }, -- Invasive Lashroom
 					}),
 				}),
+				i(228741, {	-- Lamplighter Supply Satchel
+					["description"] = "Received upon completing the Weekly Bonus Objectives and Weekly Quests in the Hallowed Light Area.\n\nEach unlocked Lesser and Major Keyflame unlocks either a weekly quest or bonus objective in the area.",
+					["groups"] = {
+						filter(MOUNTS, {
+							i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
+						}),
+					},
+				}),
 				n(QUESTS, {
 					q(82006, {	-- Speak to Attica Whiskervale
 						["name"] = "Speak to Attica Whiskervale",
@@ -124,7 +132,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						["provider"] = { "n", 206533 },	-- Chef Dinaire
 						["coord"] = { 64.5, 31.1, HALLOWFALL },
 						["g"] = {
-							i(215448),	-- Darkstem Stew x5 TODO: Source this item to a vendor?
 							i(218127),	-- Ever-Blossoming Fungi (QI!) TODO: remove from unsorted
 						},
 					}),
@@ -417,128 +424,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						},
 					}),
 				})),
-				n(REWARDS, {
-					i(220756),	-- Flickering Torch
-					i(228741, {	-- Lamplighter Supply Satchel
-						-- Probably all these armors/weapons are from this area and not only from Lamplighter Supply Satchel?
-						n(ARMOR, {
-							filter(BACK_F, {
-								i(229069),	-- Nisa's Spare Cloak
-							}),
-							filter(CLOTH, {
-								i(229061),	-- Nisa's Spare Belt
-								i(229064),	-- Nisa's Spare Shoes
-								i(229062),	-- Nisa's Spare Coronet
-								i(229063),	-- Nisa's Spare Wristguards
-								i(229065),	-- Nisa's Spare Gloves
-								i(229066),	-- Nisa's Spare Cassock
-								i(229067),	-- Nisa's Spare Leggings
-								i(229068),	-- Nisa's Spare Shoulderpads
-								i(229102),	-- The Cleansing Flame's Cord
-								i(229099),	-- The Cleansing Flame's Cowl
-								i(229103),	-- The Cleansing Flame's Cuffs
-								i(229098),	-- The Cleansing Flame's Handwraps
-								i(229100),	-- The Cleansing Flame's Leggings
-								i(229096),	-- The Cleansing Flame's Robes
-								i(229097),	-- The Cleansing Flame's Sandals
-								i(229101),	-- The Cleansing Flame's Shoulderpads
-							}),
-							filter(LEATHER, {
-								i(229075),	-- Azra's Spare Bracers
-								i(229076),	-- Azra's Spare Chestguard
-								i(229074),	-- Azra's Spare Cord
-								i(229071),	-- Azra's Spare Gloves
-								i(229072),	-- Azra's Spare Mask
-								i(229077),	-- Azra's Spare Shoulderguards
-								i(229070),	-- Azra's Spare Striders
-								i(229073),	-- Azra's Spare Trousers
-								i(229111),	-- Ironstrike's Bindings
-								i(229108),	-- Ironstrike's Breeches
-								i(229109),	-- Ironstrike's Epaulets
-								i(229106),	-- Ironstrike's Grips
-								i(229107),	-- Ironstrike's Headgear
-								i(229110),	-- Ironstrike's Sash
-								i(229104),	-- Ironstrike's Vest
-								i(229105),	-- Ironstrike's Waders
-							}),
-							filter(MAIL, {
-								i(229084),	-- Aevery's Spare Belt
-								i(229079),	-- Aevery's Spare Boots
-								i(229085),	-- Aevery's Spare Bracers
-								i(229078),	-- Aevery's Spare Brigandine
-								i(229082),	-- Aevery's Spare Chausses
-								i(229081),	-- Aevery's Spare Cowl
-								i(229080),	-- Aevery's Spare Gauntlets
-								i(229083),	-- Aevery's Spare Shoulderguards
-								i(229118),	-- Flamestonge's Belt
-								i(229119),	-- Flamestonge's Bracers
-								i(229112),	-- Flamestonge's Chainmail
-								i(229115),	-- Flamestonge's Coif
-								i(229116),	-- Flamestonge's Greaves
-								i(229114),	-- Flamestonge's Grips
-								i(229117),	-- Flamestonge's Shoulderguards
-								i(229113),	-- Flamestonge's Striders
-							}),
-							filter(PLATE, {
-								i(229087),	-- Kyros's Spare Chestplate
-								i(229093),	-- Kyros's Spare Cuffs
-								i(229090),	-- Kyros's Spare Faulds
-								i(229092),	-- Kyros's Spare Girdle
-								i(229089),	-- Kyros's Spare Handguards
-								i(229086),	-- Kyros's Spare Helm
-								i(229088),	-- Kyros's Spare Sabatons
-								i(229091),	-- Kyros's Spare Shoulder Plates
-								i(229127),	-- Warstone's Armplates
-								i(229120),	-- Warstone's Breastplate
-								i(229122),	-- Warstone's Gauntlets
-								i(229126),	-- Warstone's Girdle
-								i(229123),	-- Warstone's Helm
-								i(229124),	-- Warstone's Legguards
-								i(229125),	-- Warstone's Mantle
-								i(229121),	-- Warstone's Sabatons
-							}),
-						}),
-						filter(MOUNTS, {
-							i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
-						}),
-						n(WEAPONS, {
-							i(229135),	-- Lamplighter Elite's Blade
-							i(229131),	-- Lamplighter Elite's Dagger
-							i(229146),	-- Lamplighter Elite's Glaive
-							i(229133),	-- Lamplighter Elite's Great Mallet
-							i(229140),	-- Lamplighter Elite's Great Splitter
-							i(229134),	-- Lamplighter Elite's Hammer
-							i(229144),	-- Lamplighter Elite's Lightstone
-							i(229138),	-- Lamplighter Elite's Mace
-							i(229141),	-- Lamplighter Elite's Polearm
-							i(229132),	-- Lamplighter Elite's Ritual Knife
-							i(229145),	-- Lamplighter Elite's Shield
-							i(229137),	-- Lamplighter Elite's Slugthrower
-							i(229143),	-- Lamplighter Elite's Spellstaff
-							i(229142),	-- Lamplighter Elite's Staff
-							i(229136),	-- Lamplighter Elite's Sword
-							i(229139),	-- Lamplighter Elite's Warhammer
-							i(229152),	-- Lamplighter's Battleaxe
-							i(229163),	-- Lamplighter's Blade
-							i(229157),	-- Lamplighter's Bulwark
-							i(229161),	-- Lamplighter's Chopper
-							i(229153),	-- Lamplighter's Cudgel
-							i(229154),	-- Lamplighter's Edge
-							i(229160),	-- Lamplighter's Glaive
-							i(229156),	-- Lamplighter's Great Mallet
-							i(229155),	-- Lamplighter's Greataxe
-							i(229151),	-- Lamplighter's Hatchet
-							i(229159),	-- Lamplighter's Lightstone
-							i(229147),	-- Lamplighter's Polearm
-							i(229149),	-- Lamplighter's Rifle
-							i(229150),	-- Lamplighter's Splitter
-							i(229148),	-- Lamplighter's Staff
-							i(229162),	-- Lamplighter's Sword
-							i(229158),	-- Lamplighter's War Knives
-						}),
-					}),
-					i(RADIANT_REMNANT),
-				}),
 				n(TREASURES, {
 					o(417381, {	-- A Small Bag of Seeds
 						["coord"] = { 65.3, 27.2, HALLOWFALL },
@@ -830,6 +715,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 							i(206670, {	-- Darkroot Grippers
 								["cost"] = {{"i", RADIANT_REMNANT, 5}},
 							}),
+							i(215448, {	-- Darkstem Stew
+								["cost"] = {{"i", RADIANT_REMNANT, 5}},
+							}),
 						},
 					}),
 					n(206150, {	-- Erol Ellimoore
@@ -904,6 +792,122 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						},
 					}),
 				})),
+				n(ZONE_REWARDS, {
+					i(220756),	-- Flickering Torch
+					n(ARMOR, {
+							filter(BACK_F, {
+									i(229069),	-- Nisa's Spare Cloak
+								}),
+							filter(CLOTH, {
+									i(229061),	-- Nisa's Spare Belt
+									i(229064),	-- Nisa's Spare Shoes
+									i(229062),	-- Nisa's Spare Coronet
+									i(229063),	-- Nisa's Spare Wristguards
+									i(229065),	-- Nisa's Spare Gloves
+									i(229066),	-- Nisa's Spare Cassock
+									i(229067),	-- Nisa's Spare Leggings
+									i(229068),	-- Nisa's Spare Shoulderpads
+									i(229102),	-- The Cleansing Flame's Cord
+									i(229099),	-- The Cleansing Flame's Cowl
+									i(229103),	-- The Cleansing Flame's Cuffs
+									i(229098),	-- The Cleansing Flame's Handwraps
+									i(229100),	-- The Cleansing Flame's Leggings
+									i(229096),	-- The Cleansing Flame's Robes
+									i(229097),	-- The Cleansing Flame's Sandals
+									i(229101),	-- The Cleansing Flame's Shoulderpads
+								}),
+							filter(LEATHER, {
+									i(229075),	-- Azra's Spare Bracers
+									i(229076),	-- Azra's Spare Chestguard
+									i(229074),	-- Azra's Spare Cord
+									i(229071),	-- Azra's Spare Gloves
+									i(229072),	-- Azra's Spare Mask
+									i(229077),	-- Azra's Spare Shoulderguards
+									i(229070),	-- Azra's Spare Striders
+									i(229073),	-- Azra's Spare Trousers
+									i(229111),	-- Ironstrike's Bindings
+									i(229108),	-- Ironstrike's Breeches
+									i(229109),	-- Ironstrike's Epaulets
+									i(229106),	-- Ironstrike's Grips
+									i(229107),	-- Ironstrike's Headgear
+									i(229110),	-- Ironstrike's Sash
+									i(229104),	-- Ironstrike's Vest
+									i(229105),	-- Ironstrike's Waders
+								}),
+							filter(MAIL, {
+									i(229084),	-- Aevery's Spare Belt
+									i(229079),	-- Aevery's Spare Boots
+									i(229085),	-- Aevery's Spare Bracers
+									i(229078),	-- Aevery's Spare Brigandine
+									i(229082),	-- Aevery's Spare Chausses
+									i(229081),	-- Aevery's Spare Cowl
+									i(229080),	-- Aevery's Spare Gauntlets
+									i(229083),	-- Aevery's Spare Shoulderguards
+									i(229118),	-- Flamestonge's Belt
+									i(229119),	-- Flamestonge's Bracers
+									i(229112),	-- Flamestonge's Chainmail
+									i(229115),	-- Flamestonge's Coif
+									i(229116),	-- Flamestonge's Greaves
+									i(229114),	-- Flamestonge's Grips
+									i(229117),	-- Flamestonge's Shoulderguards
+									i(229113),	-- Flamestonge's Striders
+								}),
+							filter(PLATE, {
+									i(229087),	-- Kyros's Spare Chestplate
+									i(229093),	-- Kyros's Spare Cuffs
+									i(229090),	-- Kyros's Spare Faulds
+									i(229092),	-- Kyros's Spare Girdle
+									i(229089),	-- Kyros's Spare Handguards
+									i(229086),	-- Kyros's Spare Helm
+									i(229088),	-- Kyros's Spare Sabatons
+									i(229091),	-- Kyros's Spare Shoulder Plates
+									i(229127),	-- Warstone's Armplates
+									i(229120),	-- Warstone's Breastplate
+									i(229122),	-- Warstone's Gauntlets
+									i(229126),	-- Warstone's Girdle
+									i(229123),	-- Warstone's Helm
+									i(229124),	-- Warstone's Legguards
+									i(229125),	-- Warstone's Mantle
+									i(229121),	-- Warstone's Sabatons
+								}),
+						}),
+					n(WEAPONS, {
+							i(229135),	-- Lamplighter Elite's Blade
+							i(229131),	-- Lamplighter Elite's Dagger
+							i(229146),	-- Lamplighter Elite's Glaive
+							i(229133),	-- Lamplighter Elite's Great Mallet
+							i(229140),	-- Lamplighter Elite's Great Splitter
+							i(229134),	-- Lamplighter Elite's Hammer
+							i(229144),	-- Lamplighter Elite's Lightstone
+							i(229138),	-- Lamplighter Elite's Mace
+							i(229141),	-- Lamplighter Elite's Polearm
+							i(229132),	-- Lamplighter Elite's Ritual Knife
+							i(229145),	-- Lamplighter Elite's Shield
+							i(229137),	-- Lamplighter Elite's Slugthrower
+							i(229143),	-- Lamplighter Elite's Spellstaff
+							i(229142),	-- Lamplighter Elite's Staff
+							i(229136),	-- Lamplighter Elite's Sword
+							i(229139),	-- Lamplighter Elite's Warhammer
+							i(229152),	-- Lamplighter's Battleaxe
+							i(229163),	-- Lamplighter's Blade
+							i(229157),	-- Lamplighter's Bulwark
+							i(229161),	-- Lamplighter's Chopper
+							i(229153),	-- Lamplighter's Cudgel
+							i(229154),	-- Lamplighter's Edge
+							i(229160),	-- Lamplighter's Glaive
+							i(229156),	-- Lamplighter's Great Mallet
+							i(229155),	-- Lamplighter's Greataxe
+							i(229151),	-- Lamplighter's Hatchet
+							i(229159),	-- Lamplighter's Lightstone
+							i(229147),	-- Lamplighter's Polearm
+							i(229149),	-- Lamplighter's Rifle
+							i(229150),	-- Lamplighter's Splitter
+							i(229148),	-- Lamplighter's Staff
+							i(229162),	-- Lamplighter's Sword
+							i(229158),	-- Lamplighter's War Knives
+						}),
+					i(RADIANT_REMNANT),
+				}),
 			},
 		})),
 	}),

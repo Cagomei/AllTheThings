@@ -1042,7 +1042,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"
 			q(62247),	-- Triggered when Toothpick dug up a "Burried Chest"
 			q(62290),	-- Triggered when turning in 'Corpse Run' (61523)
 			q(62215),	-- Triggered when turning in Training Program (62216)
-			q(62596),	-- Triggered when completing 'The Great Luckydo'
 			q(59266),	-- triggered when i picked up the last eye for "Prying Eyes"
 			q(60166),	-- Triggered after raising portcullis to access Miru Soulblossom in Etheric Vault
 			-- Unknown

@@ -49,38 +49,29 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(80388, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Last Hurrah: Emerald Dream
 					i(217111),	-- Cache of Awakened Dreams
-					i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
-						["f"] = MISC,
-						["groups"] = {
-							r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
-							r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
-							r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
-						},
-					}),
+					TempForceMisc(i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
+						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
+						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
+						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+					})),
 					i(211515),	-- Splintered Spark of Awakening
 				})),
 				q(80386, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Last Hurrah: Zaralek Caverns and Time Rifts
 					i(217110),	-- Cache of Awakened Embers
-					i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
-						["f"] = MISC,
-						["groups"] = {
-							r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
-							r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
-							r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
-						},
-					}),
+					TempForceMisc(i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
+						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
+						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
+						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+					})),
 					i(211515),	-- Splintered Spark of Awakening
 				})),
 				q(80385, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Last Hurrah: Dragon Isles
 					i(217109),	-- Cache of Awakened Storms
-					i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
-						["f"] = MISC,
-						["groups"] = {
-							r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
-							r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
-							r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
-						},
-					}),
+					TempForceMisc(i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
+						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
+						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
+						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+					})),
 					i(211515),	-- Splintered Spark of Awakening
 				})),
 			})),

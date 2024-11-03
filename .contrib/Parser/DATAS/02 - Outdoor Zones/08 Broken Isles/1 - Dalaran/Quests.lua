@@ -1278,6 +1278,7 @@ root(ROOTS.Zones, {
 });
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.LEGION, {
+		q(46955),	-- Akazamzarak Silenced
 		q(40340),	-- Alard Schmied Greeting Seen - "Well, I'll be... the Ashbringer. ...' in Dalaran
 		q(45518),	-- First Aid Shop Searched - triggered after searching first aid shop during "Confirming Suspicions" (questID 45414)
 		q(47282),	-- First Aid Shop Searched - triggered after searching first aid shop during "Confirming Suspicions" (questID 45414)

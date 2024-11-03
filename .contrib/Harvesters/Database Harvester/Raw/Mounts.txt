@@ -2012,3 +2012,25 @@
 449132@@@Blackrock Warsaber
 449142@@@Kaldorei War Wolf
 454682@@@Startouched Furline
+11.0.5.57292
+465235@@@Trader's Gilded Brutosaur
+466811@@@Chaos-Forged Gryphon
+466812@@@Chaos-Forged Hippogryph
+466838@@@Chaos-Forged Dreadwing
+466845@@@Chaos-Forged Wind Rider
+11.0.7.57361
+432562@@@Brilliant Sunburst Peafowl
+448934@@@Shadow of Doubt
+471538@@@Timely Buzzbee
+471562@@@Thrayir, Eyes of the Siren
+471696@@@Hooktalon
+472253@@@Lunar Launcher
+472479@@@Love Witch's Sweeper
+472487@@@[PH]
+472488@@@Twilight Witch's Sweeper
+472489@@@Sky Witch's Sweeper
+472752@@@The Breaker's Song
+473137@@@[PH] red surfboard
+473472@@@Jani's Trashpile
+473861@@@Savage Alabaster Battle Turtle
+474086@@@Prismatic Snapdragon

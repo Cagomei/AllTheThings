@@ -1319,8 +1319,21 @@ recipe = function(id, t)								-- Create a RECIPE Object
 	return struct("recipeID", id, t);
 end
 r = recipe;												-- Create a RECIPE Object (alternative shortcut)
+local SpecialRoots = {
+	__DropG = function(g)
+		return bubbleDownFiltered({
+			-- keep API data from populating into NYI/Hidden quests
+			["_drop"]={"g"}
+		},FILTERFUNC_questID,g)
+	end,
+}
+SpecialRoots[ROOTS.HiddenQuestTriggers] = SpecialRoots.__DropG
+SpecialRoots[ROOTS.HiddenAchievementTriggers] = SpecialRoots.__DropG
+SpecialRoots[ROOTS.NeverImplemented] = SpecialRoots.__DropG
 root = function(category, g)							-- Create a ROOT CATEGORY Object
 	if not g then g = g or {}; end
+	-- special global handling for certain categories
+	if SpecialRoots[category] then g = SpecialRoots[category](g) end
 	local o = _[category];
 	if not o then
 		if isarray(g) then
@@ -1576,6 +1589,13 @@ usONLY = function(t)
 end
 usUnavailable = function(t)
 	return regionUnavailable("US", t);
+end
+
+-- Temporary function to force Items to use the Misc filter so that they do not get turned into Recipes by the Parser
+-- until the 'guessing' logic is eventually relegated when Prof DB's are sufficient
+TempForceMisc = function(t)
+	t.f = MISC
+	return t
 end
 
 -- Create a Header. Returns a UNIQUE ID, starting at 0.

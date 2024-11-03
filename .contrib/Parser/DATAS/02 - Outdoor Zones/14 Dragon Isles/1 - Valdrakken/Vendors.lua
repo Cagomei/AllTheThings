@@ -331,6 +331,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(201327),	-- Emerald Dreamtime
 				},
 			}),
+			n(187647, {	-- Libergo <Head Librarian>
+				["coord"] = { 33.8, 27.7, VALDRAKKEN },
+				["g"] = {
+					i(232521, {	-- Glyph of Arcane Familiar
+						["cost"] = 5000000,	-- 500g
+						["timeline"] = { ADDED_11_0_5 },
+					}),
+				},
+			}),
 			n(197711, {	-- Lindormi
 				["coord"] = { 53.2, 56.0, VALDRAKKEN },
 				["g"] = {

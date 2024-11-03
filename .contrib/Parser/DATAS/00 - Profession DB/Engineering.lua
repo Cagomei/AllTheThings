@@ -670,6 +670,7 @@ i(0, 198985);		-- Reaves Module: Failure Detection Mode
 i(0, 198987);		-- Reaves Module: Fireworks Display Mode
 i(0, 198990);		-- Reaves Module: Piloted Combat Mode
 i(0, 198984);		-- Reaves Module: Repair Mode
+i(137694, 198984);	-- Schematic: Reaves Module: Repair Mode
 i(0, 198988);		-- Reaves Module: Snack Distribution Mode
 i(0, 200466);		-- Sonic Environment Enhancer
 i(0, 198965);		-- Tactical Headgun [Rank 1]

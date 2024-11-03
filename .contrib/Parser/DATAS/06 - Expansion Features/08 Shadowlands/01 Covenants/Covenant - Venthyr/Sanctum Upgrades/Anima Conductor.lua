@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-local GRATEFUL = currency(GRATEFUL);
+local GRATEFUL_CURRENCY = currency(GRATEFUL);
 local SHRIEKERS_VOICEBOX = i(180713);
 local DREDBATSKIN_JERKIN = i(183720);
 local FORGEMASTERS_MANYFOLD_RAPIER = i(180489);
@@ -46,9 +46,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					["icon"] = 3854016,
 					["g"] = sharedData({ ["icon"] = 3854016 }, {
 						n(REWARDS, {
-							["description"] = "Every Activity within Anima Conductor Rewards this.",
 							["g"] = {
-								GRATEFUL,
+								currency(GRATEFUL, {
+									["description"] = "Grateful Offerings can be collected once you have unlocked the Anima Conductor in for your covenant.\n Once unlocked, you can loot them from Covenant Callings (higher Conductor => more Offerings), Patterns Within Patterns Weekly Quest in Zereth Morthis and from special rares & treasures, based on the channeling of your Anima Conductor.",
+								}),
 							},
 						}),
 						n(TIER_ONE, {
@@ -164,6 +165,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	}),
 })));
 
-for _,t in ipairs({HARIKA_THE_HORRID,FORGEMASTER_MADALAV,GRATEFUL,SHRIEKERS_VOICEBOX,DREDBATSKIN_JERKIN,FORGEMASTERS_MANYFOLD_RAPIER}) do
+for _,t in ipairs({HARIKA_THE_HORRID,FORGEMASTER_MADALAV,GRATEFUL_CURRENCY,SHRIEKERS_VOICEBOX,DREDBATSKIN_JERKIN,FORGEMASTERS_MANYFOLD_RAPIER}) do
 	t.customCollect = nil;
 end

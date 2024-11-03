@@ -3394,7 +3394,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 		q(38315),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
 		q(38401),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
 		q(37311),	-- Drafting Table Interact
-		q(46952),	-- Flag Garrison Dog Quest
 		q(36640),	-- Followers Obtained
 		q(36530),	-- Garrison Max-level Choice Tracker: Frostfire Iron Siegeworks
 		q(36550),	-- Garrison Max-level Choice Tracker: Frostfire Iron Siegeworks

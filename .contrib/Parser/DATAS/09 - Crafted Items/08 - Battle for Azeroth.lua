@@ -1527,5 +1527,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(170323),	-- Uncanny Combatant's Satin Bracers [Alliance]
 			i(170338),	-- Uncanny Combatant's Satin Bracers [Horde]
 		}),
+		filter(REAGENTS, {
+			i(158378),	-- Embroidered Deep Sea Satin
+		}),
 	}),
 }))));

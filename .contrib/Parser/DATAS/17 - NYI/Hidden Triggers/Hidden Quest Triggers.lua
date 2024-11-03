@@ -36,8 +36,8 @@ root(ROOTS.HiddenQuestTriggers, {
 	---------------------
 	expansion(EXPANSION.WRATH, {
 		--	DUNGEONS & RAIDS
-		q(24887, { ["_drop"] = { "g" },	}),	-- LFGDungeons - Burning Crusade - Normal Random - 1st
-		q(24895, { ["_drop"] = { "g" },	}),	-- LFGDungeons - Burning Crusade - Normal Random - Nth
+		q(24887),	-- LFGDungeons - Burning Crusade - Normal Random - 1st
+		q(24895),	-- LFGDungeons - Burning Crusade - Normal Random - Nth
 
 		-- Zones
 		q(12845),	-- Dalaran teleport crystal flag
@@ -155,7 +155,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(31274),	-- LFGDungeons - Mists - Raid Finder - 1st
 		q(31275),	-- LFGDungeons - Mists - Raid Finder - Nth
 		q(32097),	-- Short-Supply Reward
-		q(33233, { ["_drop"] = { "g" }, }),	-- Short-Supply Reward
+		q(33233),	-- Short-Supply Reward
 
 		-- SCENARIOS
 		q(32817),	-- Complete "Loyalty" Scenario - triggeres when turning in "The King and the Council"
@@ -163,13 +163,13 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(32898),	-- Daily Scenario Random (1st) (Mists)
 		q(32899),	-- Daily Scenario Random (Nth) (Mists)
 		q(32897),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth
-		q(32873, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st
-		q(32874, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth
+		q(32873),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st
+		q(32874),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth
 		q(32893),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st Bonus
 		q(32894),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth Bonus
-		q(31616, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Normal Random - 1st
-		q(31617, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Normal Random - Nth
-		q(31987, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Theramore Launch Event
+		q(31616),	-- LFGDungeons - Mists - Scenario - Normal Random - 1st
+		q(31617),	-- LFGDungeons - Mists - Scenario - Normal Random - Nth
+		q(31987),	-- LFGDungeons - Theramore Launch Event
 
 		-- PROVING GROUNDS
 		q(33089),	-- FLAG - Proving Grounds - Damage Bronze
@@ -202,8 +202,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(37502),	-- Draenor Challenge Mode - Consolation (1st)
 		q(37503),	-- Draenor Challenge Mode - Gold Addition (1st)
 		q(37504),	-- Draenor Challenge Mode - Silver Addition (1st)
-		q(36145, {["_drop"] = { "g" }}),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
-		q(36151, {["_drop"] = { "g" }}),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
+		q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
+		q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
 		q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
 		q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
 		q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
@@ -211,16 +211,16 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
 		q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
 		q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
-		q(36143, {["_drop"] = { "g" }}),	-- LFGDungeons - Lich King - Dungeon Normal 1st
-		q(36149, {["_drop"] = { "g" }}),	-- LFGDungeons - Lich King - Dungeon Normal Nth
-		q(31618, {["_drop"] = { "g" }}),	-- LFGDungeons - Mists - Normal Random - 1st
-		q(31619, {["_drop"] = { "g" }}),	-- LFGDungeons - Mists - Normal Random - Nth
-		q(36147, {["_drop"] = { "g" }}),	-- LFGDungeons - Pandaria - Dungeon Normal 1st
-		q(36139, {["_drop"] = { "g" }}),	-- LFGDungeons - Pandaria - Dungeon Normal Nth
-		q(40395, {["_drop"] = { "g" }}),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
-		q(36144, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
-		q(36150, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
-		q(37648, {["_drop"] = { "g" }}),	-- Short-Supply Reward
+		q(36143),	-- LFGDungeons - Lich King - Dungeon Normal 1st
+		q(36149),	-- LFGDungeons - Lich King - Dungeon Normal Nth
+		q(31618),	-- LFGDungeons - Mists - Normal Random - 1st
+		q(31619),	-- LFGDungeons - Mists - Normal Random - Nth
+		q(36147),	-- LFGDungeons - Pandaria - Dungeon Normal 1st
+		q(36139),	-- LFGDungeons - Pandaria - Dungeon Normal Nth
+		q(40395),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
+		q(36144),	-- LFG WLK 75-80
+		q(36150),	-- LFG WLK 75-80
+		q(37648),	-- Short-Supply Reward
 		q(35963),	-- Warlords Heroic Dungeon Reward Quest - triggered at the end of Mythic Grimrail Depot
 		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
 		q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
@@ -228,64 +228,64 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- PVP
 		q(36146),	-- Cataclysm 84-85
 		q(36152),	-- Cataclysm 84-85
-		q(38116, {["_drop"] = { "g" }}),	-- Cata/Mop 80-89
-		q(38127, {["_drop"] = { "g" }}),	-- Cata/MoP 80-89
+		q(38116),	-- Cata/Mop 80-89
+		q(38127),	-- Cata/MoP 80-89
 		q(38138),	-- Cata/MoP 80-89
 		q(38156),	-- Cata/MoP 80-89
 		q(38167),	-- Cata/MoP 80-89
 		q(38149),	-- Classic 10-19
 		q(38160),	-- Classic 10-19
-		q(38110, {["_drop"] = { "g" }}),	-- Classic 20-29
-		q(38121, {["_drop"] = { "g" }}),	-- Classic 20-29
+		q(38110),	-- Classic 20-29
+		q(38121),	-- Classic 20-29
 		q(38132),	-- Classic 20-29
 		q(38150),	-- Classic 20-29
 		q(38161),	-- Classic 20-29
-		q(38111, {["_drop"] = { "g" }}),	-- Classic 30-39
-		q(38122, {["_drop"] = { "g" }}),	-- Classic 30-39
+		q(38111),	-- Classic 30-39
+		q(38122),	-- Classic 30-39
 		q(38133),	-- Classic 30-39
 		q(38151),	-- Classic 30-39
 		q(38162),	-- Classic 30-39
-		q(38112, {["_drop"] = { "g" }}),	-- Classic 40-49
-		q(38123, {["_drop"] = { "g" }}),	-- Classic 40-49
+		q(38112),	-- Classic 40-49
+		q(38123),	-- Classic 40-49
 		q(38134),	-- Classic 40-49
 		q(38152),	-- Classic 40-49
 		q(38163),	-- Classic 40-49
-		q(38113, {["_drop"] = { "g" }}),	-- Classic 50-59
-		q(38124, {["_drop"] = { "g" }}),	-- Classic 50-59
+		q(38113),	-- Classic 50-59
+		q(38124),	-- Classic 50-59
 		q(38135),	-- Classic 50-59
 		q(38153),	-- Classic 50-59
 		q(38164),	-- Classic 50-59
-		q(38118, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-		q(38129, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-		q(38140, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-		q(38158, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38118),	-- Legion 100-109 A
+		q(38129),	-- Legion 100-109 A
+		q(38140),	-- Legion 100-109 A
+		q(38158),	-- Legion 100-109 A
 		q(38169),	-- Legion 100-109 A
-		q(38171, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-		q(38172, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-		q(38119, {["_drop"] = { "g" }}),	-- Legion 100-109 H
-		q(38130, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(38171),	-- Legion 100-109 A
+		q(38172),	-- Legion 100-109 A
+		q(38119),	-- Legion 100-109 H
+		q(38130),	-- Legion 100-109 H
 		q(38141),	-- Legion 100-109 H
-		q(38159, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(38159),	-- Legion 100-109 H
 		q(38170),	-- Legion 100-109 H
-		q(38173, {["_drop"] = { "g" }}),	-- Legion 100-109 H
-		q(38174, {["_drop"] = { "g" }}),	-- Legion 100-109 H
-		q(36140, {["_drop"] = { "g" }}),	-- Pandaria 88-90
-		q(36148, {["_drop"] = { "g" }}),	-- Pandaria 88-90
-		q(38114, {["_drop"] = { "g" }}),	-- TBC 60-69
-		q(38125, {["_drop"] = { "g" }}),	-- TBC 60-69
+		q(38173),	-- Legion 100-109 H
+		q(38174),	-- Legion 100-109 H
+		q(36140),	-- Pandaria 88-90
+		q(36148),	-- Pandaria 88-90
+		q(38114),	-- TBC 60-69
+		q(38125),	-- TBC 60-69
 		q(38136),	-- TBC 60-69
 		q(38154),	-- TBC 60-69
 		q(38165),	-- TBC 60-69
-		q(38109, {["_drop"] = { "g" }}),	-- Vanilla 10-19
-		q(38120, {["_drop"] = { "g" }}),	-- Vanilla 10-19
+		q(38109),	-- Vanilla 10-19
+		q(38120),	-- Vanilla 10-19
 		q(38131),	-- Vanilla 10-19
-		q(38115, {["_drop"] = { "g" }}),	-- WLK 70-79
-		q(38126, {["_drop"] = { "g" }}),	-- WLK 70-79
+		q(38115),	-- WLK 70-79
+		q(38126),	-- WLK 70-79
 		q(38137),	-- WLK 70-79
 		q(38155),	-- WLK 70-79
 		q(38166),	-- WLK 70-79
-		q(38117, {["_drop"] = { "g" }}),	-- WOD 90-99
-		q(38128, {["_drop"] = { "g" }}),	-- WOD 90-99
+		q(38117),	-- WOD 90-99
+		q(38128),	-- WOD 90-99
 		q(38139),	-- WOD 90-99
 		q(38157),	-- WOD 90-99
 		q(38168),	-- WOD 90-99
@@ -398,7 +398,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	--      LEGION      --
 	----------------------
 	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
-		n(GROUP_FINDER, bubbleDown({ ["_drop"] = { "g" }, }, {
+		n(GROUP_FINDER, {
 			q(41710),	-- Legion 110 A
 			q(41712),	-- Legion 110 A
 			q(41714),	-- Legion 110 A
@@ -462,8 +462,8 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(42558),	-- WOD 100 H
 			q(42559),	-- WOD 100 H
 			q(42560),	-- WOD 100 H
-		})),
-		n(PVP, bubbleDown({ ["_drop"] = { "g" }, }, {
+		}),
+		n(PVP, {
 			q(45538),	-- 10v10 Weekly Quest UI
 			q(42548),	-- 10v10 #1
 			q(42549),	-- 10v10 #2
@@ -482,7 +482,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(42546),	-- 3v3 #3
 			q(42547),	-- 3v3 #4
 			q(44909),	-- RBG Weekly
-		})),
+		}),
 		n(FACTIONS, {
 			q(46794),	-- Paragon of the Court
 			q(46796),	-- Paragon of Highmountain
@@ -591,7 +591,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	--      BFA      --
 	-------------------
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-		n(GROUP_FINDER, bubbleDown({ ["_drop"] = { "g" }, }, {
+		n(GROUP_FINDER, {
 			q(53379),	-- BFA 120 E
 			q(53380),	-- BFA 120 E
 			q(53381),	-- BFA 120 E
@@ -647,7 +647,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(52051),	-- LFGDungeons - BFA - Raid Finder - 1st
 			q(52052),	-- LFGDungeons - BFA - Raid Finder - Nth
 			q(53641),	-- LFGDungeons - BFA - Stromgarde (Arathi)
-		})),
+		}),
 		--	VARIOUS
 		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success" (spellID 388051)
 		q(47703),	-- triggered while on #47631, "Rendezvous with the Libation"
@@ -1157,7 +1157,6 @@ root(ROOTS.HiddenQuestTriggers, {
 
 		--	Nazjatar
 		--	PVP
-		q(56792),	-- Nazjatar Horde supply chest
 		q(57111),	-- Nazjatar Horde supply chest (both triggered simultaneously)
 		--	Naga Commanders
 		q(56882),	-- Commander Minezra
@@ -1490,7 +1489,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	--      SL      --
 	------------------
 	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-		n(GROUP_FINDER, bubbleDown({ ["_drop"] = { "g" }, }, {
+		n(GROUP_FINDER, {
 			q(62642),	-- LFGDungeons - SL - Heroic Random - 1st
 			q(62643),	-- LFGDungeons - SL - Heroic Random - Nth
 			q(62644),	-- LFGDungeons - SL - Normal Random - 1st
@@ -1547,15 +1546,15 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(60028),	-- Shadowlands 60 E
 			q(60029),	-- Shadowlands 60 E
 			q(60030),	-- Shadowlands 60 E
-		})),
-		n(PVP, bubbleDown({ ["_drop"] = { "g" }, }, {
+		}),
+		n(PVP, {
 			q(62298),	-- Classic 20-49
 			q(62299),	-- Classic 20-49
 			-- PvP Assassin
 			q(63389),	-- Killed and looted Horde Assasin (as Alliance obviously)
 			q(63390),	-- Killed and looted Horde Assasin (as Alliance obviously)
 			q(63391),	-- Killed and looted Horde Assasin (as Alliance obviously)
-		})),
+		}),
 		n(PROFESSIONS, {
 			-- Profession crafting world quests
 			q(62940),	-- Triggers when opening the box during "Alchemy: Elixir of Humility" (questID 61619) (spellID 345470)
@@ -1712,7 +1711,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(62505),	-- ""
 		q(62487),	-- Ember Court End - Baroness/H-C K/Choofa/Stonehead Elated
 		q(62503),	-- Ember Court End - Baroness/H-C K/Choofa/Stonehead Elated
-		q(62529),	-- Ember Court End - Four Elated Guests
 		q(62488),	-- Ember Court End - (Lady Moonberry / Rendle&Cudgelface as first-time guests, Elated and Very Happy respectively, had Casual maxed)
 		q(62494),	-- ""
 		q(62518),	-- ""
@@ -1767,7 +1765,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	--      DF      --
 	------------------
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
-		n(GROUP_FINDER, bubbleDown({ ["_drop"] = { "g" }, }, {
+		n(GROUP_FINDER, {
 			q(72187),	-- LFGDungeons - DF - Heroic Random - 1st
 			q(72188),	-- LFGDungeons - DF - Heroic Random - Nth
 			q(72181),	-- LFGDungeons - DF - Normal Random - 1st
@@ -1836,10 +1834,10 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(72819),	-- Shadowlands (60) E
 			q(72820),	-- Shadowlands (60) E
 			q(72821),	-- Shadowlands (60) E
-		})),
-		n(PVP, bubbleDown({ ["_drop"] = { "g" }, }, {
+		}),
+		n(PVP, {
 			q(79332, {["timeline"] = {ADDED_10_2_0}}, {["repeatable"]=true}),	-- Triggers after winning a Brawl: Battleground Blitz (possibly only when theres an elistment bonus?)
-		})),
+		}),
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 			q(78204, {["timeline"] = {ADDED_10_1_7}}),	-- Master of Timeways - First Week Trigger (spellID 423861)
 		})),
@@ -1849,7 +1847,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	--     TWW      --
 	------------------
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		n(GROUP_FINDER, bubbleDown({ ["_drop"] = { "g" }, }, {
+		n(GROUP_FINDER, {
 			q(83707),	-- LFGDungeons - 11.0 The War Within - Raid Finder - 1st
 			q(83708),	-- LFGDungeons - 11.0 The War Within - Raid Finder - Nth
 			q(78169),	-- LFGDungeons - Timewalking "Heroic" Random - 1st
@@ -1913,7 +1911,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(82623),	-- The War Within (80) E
 			q(82624),	-- The War Within (80) E
 			q(82625),	-- The War Within (80) E
-		})),
+		}),
 	})),
 
 	--------------------
@@ -1923,201 +1921,197 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- TEMPORARY SOLUTION AS HQT FOR NOW
 	-- SORTED BY ID
 	n(SPECIAL, {
-		["g"] = bubbleDownFiltered({
-			["_drop"] = { "g" },
-		},FILTERFUNC_questID,{
-			q(909),		-- Baron Aquanis - completed with quest 6922
-			q(3366),	-- The Glowing Shard - completed with quest 6981
-			q(3911),	-- The Last Element - completed with quest 4641
-			q(9030),	-- Anthion's Parting Words - completed with quest 8951, 8952, 8953, 8954, 8955, 8956, 8957, 8958, 8959, 9016, 9017, 9018, 9019, 9020, 9021, 9022, 10496, 10497
-			q(9031),	-- Anthion's Parting Words - completed with quest 8951, 8952, 8953, 8954, 8955, 8956, 8957, 8958, 8959, 9016, 9017, 9018, 9019, 9020, 9021, 9022, 10496, 10497
-			q(9749),	-- They're Alive! Maybe... - completed with quest 9670
-			q(9989),	-- Alien Spirits - completed with quest 10917
-			q(10061),	-- The Unyielding - completed with quest 10050
-			q(10062),	-- Looking to the Leadership - completed with quest 10057
-			q(10088),	-- When This Mine's a-Rockin' - completed with quest 10079
-			q(10125),	-- Mission: Disrupt Communications - completed with quest 10144 & 10208
-			q(10149),	-- Mission: End All, Be All - completed with quest 10136 & 10400
-			q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124 & 10143
-			q(10214),	-- When This Mine's a-Rockin' - completed with quest 10079
-			q(10386),	-- The Fel Reaver Slayer - completed with quest 10382
-			q(10387),	-- The Fel Reaver Slayer - completed with quest 10382
-			q(10401),	-- Mission: End All, Be All - completed with quest 10136 & 10400
-			q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
-			q(10841),	-- The Vengeful Harbringer - completed with quest 10720
-			q(10925),	-- Evil Draws Near - completed with quest 10923
-			q(11072),	-- Adversarial Blood - completed with quest 11885
-			q(11790),	-- Cultists Among Us - completed with quest 11920
-			q(13053),	-- Looking for Survivors - completed with quest 12671
-			q(13052),	-- Aerial Surveillance - completed with quest 12696
-			q(14411),	-- The Wilds of Feralas - completed with quest 14410 & 26589
-			q(14414),	-- The Wilds of Feralas - completed with quest 14410 & 26589
-			q(14436),	-- Dwarven Digging - completed with quest 746
-			q(14437),	-- Rites of the Earthmother - completed with quest 763 & 23733
-			q(14447),	-- Takes One to Know One - completed with quest 13260
-			q(14448),	-- Takes One to Know One - completed with quest 13260
-			q(14474),	-- Goblin Escape Pods - completed with quest 14001
-			q(24521),	-- Report For Tryouts - completed with quest 24567
-			q(24716),	-- Returning A-Me 01 - completed with quest 24926
-			q(25033),	-- The Red Messenger - completed with quest 24971
-			q(25198),	-- Winnoa Pineforest - completed with quest 24807
-			q(25305),	-- Never Look Back - completed with quest 25304
-			q(25573),	-- Your Underwater Mount (Temp) - completed with quest 25371
-			q(25631),	-- Caught Off-Guard - completed with quest 25579 & 25952
-			q(25632),	-- Swift Approach - completed with quest 25580 & 25953
-			q(25633),	-- An Occupation of Time - completed with quest 25581 & 25954
-			q(25634),	-- A Better Vantage - completed with quest 25582 & 25955
-			q(25635),	-- Upon the Scene of Battle - completed with quest 25583 & 25956
-			q(26178),	-- Planning for the Future - completed with 11960
-			q(26379),	-- In Aid of the Refugees - completed with quest 13601
-			q(26398),	-- Walk With The Earth Mother - completed with 26397
-			q(26522),	-- Faces of Evil - completed with 26357 & 26521
-			q(26756),	-- Nessa Shadowsong - completed with 6344
-			q(26757),	-- The Bounty of Teldrassil - completed with 6341
-			q(26758),	-- Flight to Auberdine - completed with 6342
-			q(26759),	-- Return to Nessa - completed with 6343
-			q(26879),	-- Disciples of Naralex - completed with 26878
-			q(26893),	-- Blackfathom Deeps - completed with quest 26894
-			q(27150),	-- The Menders' Stead - completed with quest 26952
-			q(27309),	-- The Grimtotem Plot - completed with quest 27293
-			q(27419),	-- Army of the Black Dragon - completed with quest 1168
-			q(27861),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
-			q(27862),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
-			q(28236),	-- The Lost Brother - completed with quest 28233
-			q(29039),	-- Hunting Practice - completed with quest 29038
-			q(29051),	-- Cub's First Toy - completed with quest 29040
-			q(29052),	-- A Cub's Cravings - completed with quest 29035
-			q(29053),	-- 'Borrowing' From the Winterfall - completed with quest 29037
-			q(29405),	-- The Lesson of the Iron Staff - completed with quest 30027 & 30033 & 30334 & 30335 & 30336 & 30337 & 30338
-			q(29447),	-- A Curious Crystal - completed with quest 29443
-			q(29449),	-- An Intriguing Grimoire - completed with quest 29445
-			q(29450),	-- A Wondrous Weapon - completed with quest 29446
-			q(29454),	-- The Master Strategist - completed with quest 29451
-			q(29465),	-- Tools of Divination - completed with quest 29464
-			q(29466),	-- Plenty of Plump Frogs - completed with quest 29513
-			q(29467),	-- Talkin' Tonks - completed with quest 29511
-			q(29468),	-- Baby Needs Two Pair of Shoes - completed with quest 29508
-			q(29469),	-- Rearm, Reuse, Recycle - completed with quest 29518
-			q(29470),	-- Tan My Hide - completed with quest 29519
-			q(29471),	-- Writing the Future - completed with quest 29515
-			q(29472),	-- Eyes on the Prizes - completed with quest 29517
-			q(29474),	-- Putting Trash to Good Use - completed with quest 29510
-			q(29478),	-- A Fizzy Fusion - completed with quest 29506
-			q(29479),	-- Herbs for Healing - completed with quest 29514
-			q(29480),	-- Banners, Banners Everywhere! - completed with quest 29520
-			q(29483),	-- Keeping the Faire Sparkling - completed with quest 29516
-			q(29484),	-- Putting the Crunch in the Frog - completed with quest 29509
-			q(29485),	-- Fun for the Little Ones - completed with quest 29507
-			q(29597),	-- The End of the Exarch - completed with quest 29596
-			q(29638),	-- UNUSED - completed with quest 29639 & 29646 & 29647
-			q(29673),	-- The Black Morass - completed with quest 10296
-			q(29809),	-- Efficient Excavations - completed with quest 28132
-			q(29969),	-- Broken Earthen Figurine - completed with quest 28776
-			q(29970),	-- Broken Earthen Figurine - completed with quest 28776
-			q(30490),	-- Yakity Yak - completed with quest 30587
-			q(30596),	-- A Zandalari Troll? - completed with quest 30619 & 30620
-			q(30615),	-- A Zandalari Troll? - completed with quest 30619 & 30620
-			q(30673),	-- Holed Up - completed with quest 30682
-			q(30680),	-- Holed Up - completed with quest 30682
-			q(30681),	-- Holed Up - completed with quest 30682
-			q(30744),	-- Kota Blend - completed with quest 30825
-			q(30765),	-- Regaining Honor - completed with quest 30724
-			q(30766),	-- Profiting off of the Past - completed with quest 30595
-			q(30817),	-- The Healing of Shen-zin Su - completed with quest 29799
-			q(30818),	-- A New Fate - completed with quest 29800
-			q(30936),	-- UNUSED - completed with quest 30884
-			q(31016),	-- The Lorewalkers - completed with quest 31367 & 31368
-			q(31033),	-- Adventurers Wanted: Ragefire Chasm - completed with quest 31034 & 31036 & 31037
-			q(31035),	-- Enemies Below - completed with quest 26865 & 26866 & 26867
-			q(31129),	-- Fate of the Stormstouts - completed with quest 31076
-			q(31148),	-- Novice Elreth - completed with quest 28651
-			q(31174),	-- The Dread Vos - completed with quest 31019
-			q(31206),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
-			q(31373),	-- The Order of the Cloud Serpent - completed with quest 32461
-			q(31375),	-- The Order of the Cloud Serpent - completed with quest 32461
-			q(31445),	-- zzOld - completed with quest 31369 & 31370
-			q(31469),	-- UNUSED - completed with quest 31311
-			q(31485),	-- UNUSED - completed with quest 31281
-			q(31530),	-- Mission: The Hozen Dozen - completed with quest 31529
-			q(31806),	-- Test Quest - completed with quest 31802
-			q(31877),	-- The Inkmasters of the Arboretum - completed with quest 31876
-			q(32105),	-- Pristine Monument Ledger - completed with quest 31805
-			q(32107),	-- Flying Tiger Gourami - completed with quest 31443
-			q(32125),	-- Don't Try So Hard - DEPRECATED - completed with quest 32235
-			q(32196),	-- A Kind of Magic - DEPRECATED - completed with quest 32143
-			q(32341),	-- Demonstrate Your Power - completed with quest 32340
-			q(32516),	-- The Bloodletter - completed with quest 32495 & 32530
-			q(32534),	-- The Skumblade Threat - completed with quest 32204 & 32535
-			q(33071),	-- The Call of War - completed with quest 39691
-			q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle - completed with quest 33070
-			q(33079),	-- The Demons Among Us - Alliance - completed with quest 40593 & 40607
-			q(33139),	-- Secrets Lost, Forever? - completed with quest 33021
-			q(33264),	-- A Proper Burial - completed with quest 33125
-			q(33267),	-- [Deprecated] - completed with quest 33461
-			q(33380),	-- REUSE - completed with quest 33622
-			q(33407),	-- REUSE - completed with quest 33622
-			q(33684),	-- The Inkmasters of the Arboretum - completed with quest 31876
-			q(33707),	-- Demons Among Us - Horde - completed with quest 40593 & 40607
-			q(33914),	-- Gut Guttra - completed with quest 33132
-			q(33923),	-- Demons? In Auchindoun? - completed with quest 33917
-			q(33974),	-- Dying Wish - completed with quest 33973
-			q(34426),	-- Yrel - completed with quest 34478 & 34427
-			q(34435),	-- Find Ga'nar - completed with quest 34434 & 34740
-			q(34438),	-- Regarding Enormous Tanks - completed with quest 34958
-			q(34506),	-- Bonus Objective: Kill Grimfrost Ogres - completed with quest 33145
-			q(34565),	-- Tearing Up Talador - completed with quest 34898
-			q(34570),	-- REUSE - completed with quest 34154 & 34564
-			q(34734),	-- The Loyalty of Olin Umberhide - completed with quest 34729
-			q(34817),	-- Altar Altercation - completed with quest 34423
-			q(35251),	-- The Bounty of Bladespire - completed with quest 33657
-			q(35340),	-- What Happened Here? - completed with quest 35339
-			q(35387),	-- Through the Nether - completed with quest 35085
-			q(35388),	-- The Void March - completed with quest 35086
-			q(35389),	-- Silence the Call - completed with quest 35084
-			q(35390),	-- The Shadow Over Oshu'gun - completed with quest 35088
-			q(35391),	-- Disrupt The Rituals - completed with quest 35083
-			q(35392),	-- The Nether Approaches - completed with quest 35087
-			q(35431),	-- The Best Poison - completed with quest 35205
-			q(35653),	-- Wood is Wood - completed with quest 36368 & 35505
-			q(36061),	-- [Deprecated] Ogron Boss - completed with quest 37511
-			q(36079),	-- A Hero's Welcome - completed with quest 34575
-			q(36461),	-- Locating the Lapidarist - completed with quest 36352
-			q(36501),	-- Iron Horde Invasion - completed with quest 36498
-			q(36569),	-- Unruly Visitors - completed with quest 36483
-			q(36570),	-- Unruly Visitors - completed with quest 36483
-			q(36635),	-- Your First Work Order - completed with quest 35168 & 37569
-			q(36796),	-- The Flock's Revenge - completed with quest 36790
-			q(36859),	-- Deprecated - completed with quest 36590
-			q(37185),	-- A Personal Summons - completed with quest 28790 & 28825
-			q(37186),	-- The Art of War - completed with quest 29611 & 29612
-			q(37189),	-- A Personal Summons - completed with quest 28825
-			q(37190),	-- Iron Horde Invasion - completed with quest 36499
-			q(37196),	-- Iron Horde Invasion - completed with quest 36498
-			q(37441),	-- Solanian's Belongings - completed with quest 37443
-			q(37564),	-- Your First Blacksmithing Work Order - completed with quest 35168 & 37569
-			q(37667),	-- Building for Professions - completed with quest 36100 & 37669
-			q(37933),	-- Uncovering the Artifact Fragments - completed with quest 36133 & possibly also 36198
-			q(38008),	-- The Road of Glory - completed with quest 36125 & 36227
-			q(38305),	-- Cenarius, Keeper of the Grove - completed with quest 40122
-			q(38713),	-- The Crusade Calls - completed with quest 38710
-			q(38931),	-- Hero's Call: The Hinterlands! - completed with quest 26542
-			q(39058),	-- Critters of Draenor - completed with quest 38299 & 38300
-			q(39127),	-- Beyond the Wall - completed with quest 31386 & 31388
-			q(39189),	-- Warchief's Command: Nagrand! - completed with quest 9957 & 9960 & 9961 & 39182 & 39188
-			q(39396),	-- NOT USED - completed with quest 39394 & 38463
-			q(39692),	-- The Call of War - completed with quest 39691
-			q(39978),	-- Meet the Recruits - completed with quest 32715
-			q(41226),	-- Breaking Out - completed with quest 38672
-			q(41858),	-- No Monk Left Behind - completed with quest 41852
-			q(41873),	-- The Mead Master - completed with quest 41038
-			q(41891),	-- Tainted Growth - completed with quest 38684
-			q(45405),	-- Breaching the Sanctum - completed with quest 44719
-			q(46081),	-- Leather to Legendary - completed with quest 46074
-			q(46176),	-- The Archmage Accosted - completed with quest 44924
-			q(49059),	-- The Bones of Xibala - completed with quest 47257
-			q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
-			q(49769),	-- Wreckage of the Cataclysm - completed with quest 50331
-		}),
+		q(909),		-- Baron Aquanis - completed with quest 6922
+		q(3366),	-- The Glowing Shard - completed with quest 6981
+		q(3911),	-- The Last Element - completed with quest 4641
+		q(9030),	-- Anthion's Parting Words - completed with quest 8951, 8952, 8953, 8954, 8955, 8956, 8957, 8958, 8959, 9016, 9017, 9018, 9019, 9020, 9021, 9022, 10496, 10497
+		q(9031),	-- Anthion's Parting Words - completed with quest 8951, 8952, 8953, 8954, 8955, 8956, 8957, 8958, 8959, 9016, 9017, 9018, 9019, 9020, 9021, 9022, 10496, 10497
+		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
+		q(9989),	-- Alien Spirits - completed with quest 10917
+		q(10061),	-- The Unyielding - completed with quest 10050
+		q(10062),	-- Looking to the Leadership - completed with quest 10057
+		q(10088),	-- When This Mine's a-Rockin' - completed with quest 10079
+		q(10125),	-- Mission: Disrupt Communications - completed with quest 10144 & 10208
+		q(10149),	-- Mission: End All, Be All - completed with quest 10136 & 10400
+		q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124 & 10143
+		q(10214),	-- When This Mine's a-Rockin' - completed with quest 10079
+		q(10386),	-- The Fel Reaver Slayer - completed with quest 10382
+		q(10387),	-- The Fel Reaver Slayer - completed with quest 10382
+		q(10401),	-- Mission: End All, Be All - completed with quest 10136 & 10400
+		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
+		q(10841),	-- The Vengeful Harbringer - completed with quest 10720
+		q(10925),	-- Evil Draws Near - completed with quest 10923
+		q(11072),	-- Adversarial Blood - completed with quest 11885
+		q(11790),	-- Cultists Among Us - completed with quest 11920
+		q(13053),	-- Looking for Survivors - completed with quest 12671
+		q(13052),	-- Aerial Surveillance - completed with quest 12696
+		q(14411),	-- The Wilds of Feralas - completed with quest 14410 & 26589
+		q(14414),	-- The Wilds of Feralas - completed with quest 14410 & 26589
+		q(14436),	-- Dwarven Digging - completed with quest 746
+		q(14437),	-- Rites of the Earthmother - completed with quest 763 & 23733
+		q(14447),	-- Takes One to Know One - completed with quest 13260
+		q(14448),	-- Takes One to Know One - completed with quest 13260
+		q(14474),	-- Goblin Escape Pods - completed with quest 14001
+		q(24521),	-- Report For Tryouts - completed with quest 24567
+		q(24716),	-- Returning A-Me 01 - completed with quest 24926
+		q(25033),	-- The Red Messenger - completed with quest 24971
+		q(25198),	-- Winnoa Pineforest - completed with quest 24807
+		q(25305),	-- Never Look Back - completed with quest 25304
+		q(25573),	-- Your Underwater Mount (Temp) - completed with quest 25371
+		q(25631),	-- Caught Off-Guard - completed with quest 25579 & 25952
+		q(25632),	-- Swift Approach - completed with quest 25580 & 25953
+		q(25633),	-- An Occupation of Time - completed with quest 25581 & 25954
+		q(25634),	-- A Better Vantage - completed with quest 25582 & 25955
+		q(25635),	-- Upon the Scene of Battle - completed with quest 25583 & 25956
+		q(26178),	-- Planning for the Future - completed with 11960
+		q(26379),	-- In Aid of the Refugees - completed with quest 13601
+		q(26398),	-- Walk With The Earth Mother - completed with 26397
+		q(26522),	-- Faces of Evil - completed with 26357 & 26521
+		q(26756),	-- Nessa Shadowsong - completed with 6344
+		q(26757),	-- The Bounty of Teldrassil - completed with 6341
+		q(26758),	-- Flight to Auberdine - completed with 6342
+		q(26759),	-- Return to Nessa - completed with 6343
+		q(26879),	-- Disciples of Naralex - completed with 26878
+		q(26893),	-- Blackfathom Deeps - completed with quest 26894
+		q(27150),	-- The Menders' Stead - completed with quest 26952
+		q(27309),	-- The Grimtotem Plot - completed with quest 27293
+		q(27419),	-- Army of the Black Dragon - completed with quest 1168
+		q(27861),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
+		q(27862),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
+		q(28236),	-- The Lost Brother - completed with quest 28233
+		q(29039),	-- Hunting Practice - completed with quest 29038
+		q(29051),	-- Cub's First Toy - completed with quest 29040
+		q(29052),	-- A Cub's Cravings - completed with quest 29035
+		q(29053),	-- 'Borrowing' From the Winterfall - completed with quest 29037
+		q(29405),	-- The Lesson of the Iron Staff - completed with quest 30027 & 30033 & 30334 & 30335 & 30336 & 30337 & 30338
+		q(29447),	-- A Curious Crystal - completed with quest 29443
+		q(29449),	-- An Intriguing Grimoire - completed with quest 29445
+		q(29450),	-- A Wondrous Weapon - completed with quest 29446
+		q(29454),	-- The Master Strategist - completed with quest 29451
+		q(29465),	-- Tools of Divination - completed with quest 29464
+		q(29466),	-- Plenty of Plump Frogs - completed with quest 29513
+		q(29467),	-- Talkin' Tonks - completed with quest 29511
+		q(29468),	-- Baby Needs Two Pair of Shoes - completed with quest 29508
+		q(29469),	-- Rearm, Reuse, Recycle - completed with quest 29518
+		q(29470),	-- Tan My Hide - completed with quest 29519
+		q(29471),	-- Writing the Future - completed with quest 29515
+		q(29472),	-- Eyes on the Prizes - completed with quest 29517
+		q(29474),	-- Putting Trash to Good Use - completed with quest 29510
+		q(29478),	-- A Fizzy Fusion - completed with quest 29506
+		q(29479),	-- Herbs for Healing - completed with quest 29514
+		q(29480),	-- Banners, Banners Everywhere! - completed with quest 29520
+		q(29483),	-- Keeping the Faire Sparkling - completed with quest 29516
+		q(29484),	-- Putting the Crunch in the Frog - completed with quest 29509
+		q(29485),	-- Fun for the Little Ones - completed with quest 29507
+		q(29597),	-- The End of the Exarch - completed with quest 29596
+		q(29638),	-- UNUSED - completed with quest 29639 & 29646 & 29647
+		q(29673),	-- The Black Morass - completed with quest 10296
+		q(29809),	-- Efficient Excavations - completed with quest 28132
+		q(29969),	-- Broken Earthen Figurine - completed with quest 28776
+		q(29970),	-- Broken Earthen Figurine - completed with quest 28776
+		q(30490),	-- Yakity Yak - completed with quest 30587
+		q(30596),	-- A Zandalari Troll? - completed with quest 30619 & 30620
+		q(30615),	-- A Zandalari Troll? - completed with quest 30619 & 30620
+		q(30673),	-- Holed Up - completed with quest 30682
+		q(30680),	-- Holed Up - completed with quest 30682
+		q(30681),	-- Holed Up - completed with quest 30682
+		q(30744),	-- Kota Blend - completed with quest 30825
+		q(30765),	-- Regaining Honor - completed with quest 30724
+		q(30766),	-- Profiting off of the Past - completed with quest 30595
+		q(30817),	-- The Healing of Shen-zin Su - completed with quest 29799
+		q(30818),	-- A New Fate - completed with quest 29800
+		q(30936),	-- UNUSED - completed with quest 30884
+		q(31016),	-- The Lorewalkers - completed with quest 31367 & 31368
+		q(31033),	-- Adventurers Wanted: Ragefire Chasm - completed with quest 31034 & 31036 & 31037
+		q(31035),	-- Enemies Below - completed with quest 26865 & 26866 & 26867
+		q(31129),	-- Fate of the Stormstouts - completed with quest 31076
+		q(31148),	-- Novice Elreth - completed with quest 28651
+		q(31174),	-- The Dread Vos - completed with quest 31019
+		q(31206),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
+		q(31373),	-- The Order of the Cloud Serpent - completed with quest 32461
+		q(31375),	-- The Order of the Cloud Serpent - completed with quest 32461
+		q(31445),	-- zzOld - completed with quest 31369 & 31370
+		q(31469),	-- UNUSED - completed with quest 31311
+		q(31485),	-- UNUSED - completed with quest 31281
+		q(31530),	-- Mission: The Hozen Dozen - completed with quest 31529
+		q(31806),	-- Test Quest - completed with quest 31802
+		q(31877),	-- The Inkmasters of the Arboretum - completed with quest 31876
+		q(32105),	-- Pristine Monument Ledger - completed with quest 31805
+		q(32107),	-- Flying Tiger Gourami - completed with quest 31443
+		q(32125),	-- Don't Try So Hard - DEPRECATED - completed with quest 32235
+		q(32196),	-- A Kind of Magic - DEPRECATED - completed with quest 32143
+		q(32341),	-- Demonstrate Your Power - completed with quest 32340
+		q(32516),	-- The Bloodletter - completed with quest 32495 & 32530
+		q(32534),	-- The Skumblade Threat - completed with quest 32204 & 32535
+		q(33071),	-- The Call of War - completed with quest 39691
+		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle - completed with quest 33070
+		q(33079),	-- The Demons Among Us - Alliance - completed with quest 40593 & 40607
+		q(33139),	-- Secrets Lost, Forever? - completed with quest 33021
+		q(33264),	-- A Proper Burial - completed with quest 33125
+		q(33267),	-- [Deprecated] - completed with quest 33461
+		q(33380),	-- REUSE - completed with quest 33622
+		q(33407),	-- REUSE - completed with quest 33622
+		q(33684),	-- The Inkmasters of the Arboretum - completed with quest 31876
+		q(33707),	-- Demons Among Us - Horde - completed with quest 40593 & 40607
+		q(33914),	-- Gut Guttra - completed with quest 33132
+		q(33923),	-- Demons? In Auchindoun? - completed with quest 33917
+		q(33974),	-- Dying Wish - completed with quest 33973
+		q(34426),	-- Yrel - completed with quest 34478 & 34427
+		q(34435),	-- Find Ga'nar - completed with quest 34434 & 34740
+		q(34438),	-- Regarding Enormous Tanks - completed with quest 34958
+		q(34506),	-- Bonus Objective: Kill Grimfrost Ogres - completed with quest 33145
+		q(34565),	-- Tearing Up Talador - completed with quest 34898
+		q(34570),	-- REUSE - completed with quest 34154 & 34564
+		q(34734),	-- The Loyalty of Olin Umberhide - completed with quest 34729
+		q(34817),	-- Altar Altercation - completed with quest 34423
+		q(35251),	-- The Bounty of Bladespire - completed with quest 33657
+		q(35340),	-- What Happened Here? - completed with quest 35339
+		q(35387),	-- Through the Nether - completed with quest 35085
+		q(35388),	-- The Void March - completed with quest 35086
+		q(35389),	-- Silence the Call - completed with quest 35084
+		q(35390),	-- The Shadow Over Oshu'gun - completed with quest 35088
+		q(35391),	-- Disrupt The Rituals - completed with quest 35083
+		q(35392),	-- The Nether Approaches - completed with quest 35087
+		q(35431),	-- The Best Poison - completed with quest 35205
+		q(35653),	-- Wood is Wood - completed with quest 36368 & 35505
+		q(36061),	-- [Deprecated] Ogron Boss - completed with quest 37511
+		q(36079),	-- A Hero's Welcome - completed with quest 34575
+		q(36461),	-- Locating the Lapidarist - completed with quest 36352
+		q(36501),	-- Iron Horde Invasion - completed with quest 36498
+		q(36569),	-- Unruly Visitors - completed with quest 36483
+		q(36570),	-- Unruly Visitors - completed with quest 36483
+		q(36635),	-- Your First Work Order - completed with quest 35168 & 37569
+		q(36796),	-- The Flock's Revenge - completed with quest 36790
+		q(36859),	-- Deprecated - completed with quest 36590
+		q(37185),	-- A Personal Summons - completed with quest 28790 & 28825
+		q(37186),	-- The Art of War - completed with quest 29611 & 29612
+		q(37189),	-- A Personal Summons - completed with quest 28825
+		q(37190),	-- Iron Horde Invasion - completed with quest 36499
+		q(37196),	-- Iron Horde Invasion - completed with quest 36498
+		q(37441),	-- Solanian's Belongings - completed with quest 37443
+		q(37564),	-- Your First Blacksmithing Work Order - completed with quest 35168 & 37569
+		q(37667),	-- Building for Professions - completed with quest 36100 & 37669
+		q(37933),	-- Uncovering the Artifact Fragments - completed with quest 36133 & possibly also 36198
+		q(38008),	-- The Road of Glory - completed with quest 36125 & 36227
+		q(38305),	-- Cenarius, Keeper of the Grove - completed with quest 40122
+		q(38713),	-- The Crusade Calls - completed with quest 38710
+		q(38931),	-- Hero's Call: The Hinterlands! - completed with quest 26542
+		q(39058),	-- Critters of Draenor - completed with quest 38299 & 38300
+		q(39127),	-- Beyond the Wall - completed with quest 31386 & 31388
+		q(39189),	-- Warchief's Command: Nagrand! - completed with quest 9957 & 9960 & 9961 & 39182 & 39188
+		q(39396),	-- NOT USED - completed with quest 39394 & 38463
+		q(39692),	-- The Call of War - completed with quest 39691
+		q(39978),	-- Meet the Recruits - completed with quest 32715
+		q(41226),	-- Breaking Out - completed with quest 38672
+		q(41858),	-- No Monk Left Behind - completed with quest 41852
+		q(41873),	-- The Mead Master - completed with quest 41038
+		q(41891),	-- Tainted Growth - completed with quest 38684
+		q(45405),	-- Breaching the Sanctum - completed with quest 44719
+		q(46081),	-- Leather to Legendary - completed with quest 46074
+		q(46176),	-- The Archmage Accosted - completed with quest 44924
+		q(49059),	-- The Bones of Xibala - completed with quest 47257
+		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
+		q(49769),	-- Wreckage of the Cataclysm - completed with quest 50331
 	}),
 
 	-------------------------------
@@ -2177,7 +2171,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(57668),	-- Triggering when using a portal to Orgrimmar as Horde/to Ironforge as Alliance after Dec 25th during the Feast of Winter Veil 2019/2021
 		--- (seems to trigger only the first time you go there that day). Possibly used to determine loot eligibility?
 		q(31990),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
-		q(39695),	-- triggers after applying a Vantus Rune
 
 		-- Events/Holidays
 		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)

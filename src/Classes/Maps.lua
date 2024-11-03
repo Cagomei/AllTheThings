@@ -443,6 +443,18 @@ local function GenerateHitsForMap(grid, mapID)
 	end
 	return any, hits;
 end
+local function CheckHitsForMap(grid, mapID)
+	local hits = {}
+	for _,pos in ipairs(grid) do
+		local explored = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
+		if explored then
+			for _,areaID in ipairs(explored) do
+				hits[areaID] = true
+			end
+		end
+	end
+	return hits
+end
 local OnClickForExplorationHeader = function(row, button)
 	if button == "RightButton" and IsControlKeyDown() then
 		local info = {};
@@ -525,6 +537,49 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 	AllTheThingsAD.ExplorationAreaPositionDB = ExplorationAreaPositionDB;
 	app.print("Done Simplifying Exploration Data.");
 end
+local function CacheExplorationForAllMaps()
+	local grid, Granularity = {}, 200;
+	for i=0,Granularity,1 do
+		for j=0,Granularity,1 do
+			tinsert(grid, CreateVector2D(i / Granularity, j / Granularity));
+		end
+	end
+	local saved = {}
+	for mapID,_ in pairs(app.SearchForFieldContainer("mapID")) do
+		if C_Map_GetMapArtID(mapID) then
+			app.print("Checking Map " .. mapID .. "...");
+			-- Find all points on the grid that have explored an area and make note of them.
+			local ok, hits = pcall(CheckHitsForMap, grid, mapID);
+			if ok and hits then
+				-- app.PrintDebug("HITS")
+				-- app.PrintTable(hits)
+				for areaID,coords in pairs(hits) do
+					saved[areaID] = true;
+				end
+			end
+			coroutine.yield()
+		end
+	end
+	-- app.PrintTable(saved)
+	app.SetBatchCached("Exploration", saved, 1)
+	-- Trigger updates for these exploration areas
+	local rawAreaIDdata = {}
+	for areaID,_ in pairs(saved) do
+		rawAreaIDdata[#rawAreaIDdata + 1] = areaID
+	end
+	RefreshExplorationData(rawAreaIDdata)
+	app.print("Full Map Exploration Cached")
+end
+-- Allows a user to use /att scanmaps
+-- to force a full scan of all known ATT maps to cache exploration data
+app.ChatCommands.Add("collect-exploration", function(args)
+	app:StartATTCoroutine("FullMapExploration",CacheExplorationForAllMaps)
+	return true
+end, {
+	"Usage : /att collect-exploration",
+	"This allows a user to fully-scan the entire known set of Zones to harvest current Exploration data.",
+	"NOTE: This operation should only be needed once per Character as Exploration is otherwise updated when new areas are explored.",
+})
 local function HarvestExploration(simplify)
 	if app.SetupExplorationEvents then app.SetupExplorationEvents(); end
 	app.print("Harvesting Exploration...");
@@ -681,12 +736,49 @@ local function HarvestExploration(simplify)
 	end
 	if simplify then SimplifyExplorationData(rawExplorationAreaPositionDB); end
 end
-app.HarvestExploration = function(simplify)
+-- Allows a user to use /att harvest-exploration
+-- to force a full scan of all known ATT maps to harvest exploration data
+app.ChatCommands.Add("harvest-exploration", function(args)
 	app:StartATTCoroutine("Harvest Exploration", function()
-		HarvestExploration(simplify);
+		HarvestExploration(args[2]);
 		collectgarbage();
 	end);
-end
+	return true
+end, {
+	"Usage : /att harvest-exploration [simplify]",
+	"This allows fully-scanning the entire known set of Zones to harvest current Exploration data based on what the current character has Explored, and capture all the possible coordinates which 'should' unlock the specified Exploration Areas.",
+	"NOTE: This operation is only expected to be used by Development in order to update Exploration in the addon!",
+})
+
+app.ChatCommands.Add("harvest-map", function(args)
+	local mapID = tonumber(args[2])
+	if not mapID then return end
+	local granularity = tonumber(args[3] or 200)
+	app.print("Harvesting Map",mapID);
+	local grid = {}
+	for i=0,granularity,1 do
+		for j=0,granularity,1 do
+			tinsert(grid, CreateVector2D(i / granularity, j / granularity));
+		end
+	end
+
+	local ok, any, hits = pcall(GenerateHitsForMap, grid, mapID)
+	if not ok then app.print("Failed to find any valid areaIDs on map",mapID) return end
+	local i = 6033345
+	local tempGroup = {visible=true,text=app.GetMapName(mapID)}
+	for areaID,coords in pairs(hits) do
+		app.NestObject(tempGroup, app.CreateExploration(areaID, {coords=coords,icon=i}))
+		i = i + 1
+		if i > 6033354 then i = 6033345 end
+	end
+
+	-- app.AddTomTomWaypoint(tempGroup)
+	-- app.PrintTable(tempGroup)
+	-- app.PrintTable(hits)
+	app:CreateMiniListForGroup(tempGroup)
+end, {
+	"Usage : /att harvest-map mapID [granularity]",
+})
 
 -- Maps
 app.CreateMap = app.CreateClass("Map", "mapID", {

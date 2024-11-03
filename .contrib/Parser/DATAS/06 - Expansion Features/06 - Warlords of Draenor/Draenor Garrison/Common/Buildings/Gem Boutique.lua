@@ -42,57 +42,92 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					}),
 					n(VENDORS, {
+						TempForceMisc(i(115359, {	-- Draenor Jewelcrafting
+							r(170709),	-- Whispering Iron Choker
+							r(170706),	-- Whispering Iron Band
+							r(170712),	-- Whispering Blackrock Band
+							r(170708),	-- Shifting Iron Choker
+							r(170705),	-- Shifting Iron Band
+							r(170711),	-- Shifting Blackrock Band
+							r(170707),	-- Glowing Iron Choker
+							r(170704),	-- Glowing Iron Band
+							r(170710),	-- Glowing Blackrock Band
+							r(176087),	-- Secrets of Draenor Jewelcrafting
+							r(170700),	-- Taladite Crystal
+						})),
+						i(116096, {	-- Design: Critical Strike Taladite
+							["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+						}),
+						i(116093, {	-- Design: Glowing Taladite Pendant
+							["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+						}),
+						i(116090, {	-- Design: Glowing Taladite Ring
+							["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+						}),
+						i(116102, {	-- Design: Greater Critical Strike Taladite
+							["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
+						}),
+						i(116103, {	-- Design: Greater Haste Taladite
+							["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
+						}),
+						i(116104, {	-- Design: Greater Mastery Taladite
+							["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
+						}),
+						i(116107, {	-- Design: Greater Stamina Taladite
+							["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
+						}),
+						i(116106, {	-- Design: Greater Versatility Taladite
+							["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
+						}),
+						i(116097, {	-- Design: Haste Taladite
+							["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+						}),
+						i(116098, {	-- Design: Mastery Taladite
+							["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+						}),
+						i(116109, {	-- Design: Prismatic Focusing Lens
+							["cost"] = { { "i", 118723, 3 }, },	-- 3x Secret of Draenor Jewelcrafting
+						}),
+						i(116108, {	-- Design: Reflecting Prism
+							["cost"] = { { "i", 118723, 3 }, },	-- 3x Secret of Draenor Jewelcrafting
+						}),
+						i(116094, {	-- Design: Shifting Taladite Pendant
+							["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+						}),
+						i(116091, {	-- Design: Shifting Taladite Ring
+							["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+						}),
+						i(116101, {	-- Design: Stamina Taladite
+							["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+						}),
+						i(116079, {	-- Design: Taladite Amplifier
+							["collectible"] = false,
+							["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+							["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
+						}),
+						i(116078, {	-- Design: Taladite Recrystalizer
+							["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+						}),
+						i(116100, {	-- Design: Versatility Taladite
+							["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+						}),
+						i(116095, {	-- Design: Whispering Taladite Pendant
+							["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+						}),
+						i(116092, {	-- Design: Whispering Taladite Ring
+							["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+						}),
 						n(77356, {	-- Costan Highwall <Jewelcrafter>
 							["races"] = ALLIANCE_ONLY,
-							["sym"] = {
-								{"select","npcID",87052},{"pop"},	-- Artificer Harlaan <Jewelcrafting Designs> (A)
-								{"exclude", "itemID", 115359 },	-- Draenor Jewelcrafting
-							},
-							["g"] = {
-								i(115359, {	-- Draenor Jewelcrafting
-									["filterID"] = MISC,
-									["g"] = {
-										i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
-											i(116087),	-- Design: Glowing Blackrock Band
-											i(116081),	-- Design: Glowing Iron Band
-											i(116084),	-- Design: Glowing Iron Choker
-											i(116088),	-- Design: Shifting Blackrock Band
-											i(116082),	-- Design: Shifting Iron Band
-											i(116085),	-- Design: Shifting Iron Choker
-											i(116089),	-- Design: Whispering Blackrock Band
-											i(116083),	-- Design: Whispering Iron Band
-											i(116086),	-- Design: Whispering Iron Choker
-											recipe(170700),	-- Taladite Crystal
-										}),
-									},
-								}),
-							},
+							["sym"] = {{"select","garrisonbuildingID",132},{"pop"},
+									{"where","headerID",VENDORS},{"pop"},
+									{"isnt","npcID"}},	-- Gem Boutique / Vendor
 						}),
 						n(79832, {	-- Dorogarr <Jewelcrafter>
 							["races"] = HORDE_ONLY,
-							["sym"] = {
-								{"select","npcID",87548},{"pop"},	-- Kaevan Highwit <Jewelcrafting Designs> (H)
-								{"exclude", "itemID", 115359 },	-- Draenor Jewelcrafting
-							},
-							["g"] = {
-								i(115359, {	-- Draenor Jewelcrafting
-									["filterID"] = MISC,
-									["g"] = {
-										i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
-											i(116087),	-- Design: Glowing Blackrock Band
-											i(116081),	-- Design: Glowing Iron Band
-											i(116084),	-- Design: Glowing Iron Choker
-											i(116088),	-- Design: Shifting Blackrock Band
-											i(116082),	-- Design: Shifting Iron Band
-											i(116085),	-- Design: Shifting Iron Choker
-											i(116089),	-- Design: Whispering Blackrock Band
-											i(116083),	-- Design: Whispering Iron Band
-											i(116086),	-- Design: Whispering Iron Choker
-											recipe(170700),	-- Taladite Crystal
-										}),
-									},
-								}),
-							},
+							["sym"] = {{"select","garrisonbuildingID",132},{"pop"},
+									{"where","headerID",VENDORS},{"pop"},
+									{"isnt","npcID"}},	-- Gem Boutique / Vendor
 						}),
 					}),
 				}),

@@ -457,7 +457,6 @@ root(ROOTS.HiddenQuestTriggers,  expansion(EXPANSION.WOD, {
 			garrisonBuilding(161, pvp({	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)
 				q(37294),	-- COLISEUM BOOBY PRIZE FLAG (DAILY RESET)
 				q(37283),	-- COLISEUM LOSER FLAG (DAILY RESET)
-				q(37282),	-- COLISEUM WINNER FLAG (MONUMENT FLAG-NO RESET)
 				q(37255),	-- COLISEUM WINNER FLAG (WEEKLY RESET)
 			})),
 		}),

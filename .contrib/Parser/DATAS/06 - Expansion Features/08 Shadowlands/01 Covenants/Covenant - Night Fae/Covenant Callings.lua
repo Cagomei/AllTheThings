@@ -27,7 +27,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60418, {	-- A Call to Bastion
 					["provider"] = { "n", 167193 },	-- Featherlight
-					["coord"] = { 59.7, 31.3, ARDENWEALD },
+					["coord"] = { 59.9, 31.7, THE_TRUNK },
 					["g"] = {
 						i(181475),	-- Bounty of the Grove Wardens
 					},

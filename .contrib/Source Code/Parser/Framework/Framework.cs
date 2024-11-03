@@ -576,7 +576,7 @@ namespace ATT
         /// </summary>
         public static Dictionary<string, string> LogFormats = new Dictionary<string, string>
         {
-            { "ItemRecipeFormat", "Add to ItemRecipes.lua: i({0}, {1}); -- {2}" },
+            { "ItemRecipeFormat", "WARN: Add to ItemRecipes.lua: i({0}, {1}); -- {2} (Guessed via {3})" },
         };
 
         /// <summary>

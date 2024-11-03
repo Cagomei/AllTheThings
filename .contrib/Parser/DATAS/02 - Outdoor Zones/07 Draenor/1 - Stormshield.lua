@@ -310,87 +310,7 @@ root(ROOTS.Zones, {
 					["g"] = {
 						n(87052, {	-- Artificer Harlaan <Jewelcrafting Designs>
 							["coord"] = { 44.2, 37.8, STORMSHIELD },
-							["g"] = {
-								i(115359, {	-- Draenor Jewelcrafting
-									["filterID"] = MISC,
-									["g"] = {
-										i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting  Secrets of draenor jewelcrafting.
-											i(116087),	-- Design: Glowing Blackrock Band
-											i(116081),	-- Design: Glowing Iron Band
-											i(116084),	-- Design: Glowing Iron Choker
-											i(116088),	-- Design: Shifting Blackrock Band
-											i(116082),	-- Design: Shifting Iron Band
-											i(116085),	-- Design: Shifting Iron Choker
-											i(116089),	-- Design: Whispering Blackrock Band
-											i(116083),	-- Design: Whispering Iron Band
-											i(116086),	-- Design: Whispering Iron Choker
-											recipe(170700),	-- Taladite Crystal
-										}),
-									},
-								}),
-								i(116096, {	-- Design: Critical Strike Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116093, {	-- Design: Glowing Taladite Pendant
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116090, {	-- Design: Glowing Taladite Ring
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116102, {	-- Design: Greater Critical Strike Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116103, {	-- Design: Greater Haste Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116104, {	-- Design: Greater Mastery Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116107, {	-- Design: Greater Stamina Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116106, {	-- Design: Greater Versatility Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116097, {	-- Design: Haste Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116098, {	-- Design: Mastery Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116109, {	-- Design: Prismatic Focusing Lens
-									["cost"] = { { "i", 118723, 3 }, },	-- 3x Secret of Draenor Jewelcrafting
-								}),
-								i(116108, {	-- Design: Reflecting Prism
-									["cost"] = { { "i", 118723, 3 }, },	-- 3x Secret of Draenor Jewelcrafting
-								}),
-								i(116094, {	-- Design: Shifting Taladite Pendant
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116091, {	-- Design: Shifting Taladite Ring
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116101, {	-- Design: Stamina Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116079, {	-- Design: Taladite Amplifier
-									["collectible"] = false,
-									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116078, {	-- Design: Taladite Recrystalizer
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116100, {	-- Design: Versatility Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116095, {	-- Design: Whispering Taladite Pendant
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116092, {	-- Design: Whispering Taladite Ring
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-							},
+							["sym"] = {{"select","npcID",77356},{"pop"}},	-- Costan Highwall <Jewelcrafter>
 						}),
 						n(93907, {	-- Amelia Clarke <Wild Gladiator>
 							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
@@ -3636,7 +3556,7 @@ root(ROOTS.Zones, {
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
-									["timeline"] = { REMOVED_10_0_5 },
+									["timeline"] = { ADDED_6_0_2, REMOVED_10_0_5 },
 								}),
 								i(118608, { ["timeline"] = { CREATED_6_0_2 }}),	-- Technique: Greater Weapon Crystal
 								i(120266, { ["timeline"] = { CREATED_6_0_2 }}),	-- Technique: Greater Ensorcelled Tarot

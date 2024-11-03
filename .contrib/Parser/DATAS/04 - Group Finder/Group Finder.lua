@@ -836,7 +836,12 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		}),
 	}),
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_1 } }, {
-		i(160054),	-- War-Torn Satchel of Cooperation
+		q(51370, {	-- Short-Supply Reward
+			["repeatable"] = true,
+			["g"] = {
+				i(160054),	-- War-Torn Satchel of Cooperation
+			},
+		}),
 	})),
 	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_0 } }, {
 		i(184522),	-- Veiled Satchel of Cooperation
@@ -847,8 +852,13 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		}),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		i(224573, {	-- Crystal Satchel of Cooperation
-			i(224572),	-- Crystallized Augment Rune
+		q(83023, {	-- Short-Supply Reward
+			["repeatable"] = true,
+			["g"] = {
+				i(224573, {	-- Crystal Satchel of Cooperation
+					i(224572),	-- Crystallized Augment Rune
+				}),
+			},
 		}),
 	})),
 }));

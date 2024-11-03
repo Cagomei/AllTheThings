@@ -1644,10 +1644,10 @@ root(ROOTS.HiddenQuestTriggers, {
 	})),
 	expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }, {
 		n(HERITAGE, {
-			q(78841),	-- Ensemble: Heritage of the Draenei
-			q(78843),	-- Ensemble: Heritage of the Draenei
-			q(78844),	-- Ensemble: Heritage of the Draenei
-			q(78845),	-- Ensemble: Heritage of the Draenei
+			-- q(78841),	-- Ensemble: Heritage of the Draenei
+			-- q(78843),	-- Ensemble: Heritage of the Draenei
+			-- q(78844),	-- Ensemble: Heritage of the Draenei
+			-- q(78845),	-- Ensemble: Heritage of the Draenei
 			q(78913),	-- Ensemble: Heritage of the Darkspear
 			q(80503),	-- Ensemble: Heritage of the Darkspear
 			q(80542),	-- Ensemble: Heritage of the Darkspear
@@ -1656,9 +1656,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- New Heritage questline start HQTs
 			q(78548),	-- Draenei Heritage (spellID 426497)
 			q(78549),	-- Troll Heritage (spellID 426505)
-			--Draenei Heritage Armor ?? TODO
-			--q(78844),	-- Ensemble: Additional Tokens of Lost Embaari
-			--q(78845),	-- Ensemble: Additional Tokens of Telhamat
 		}),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {

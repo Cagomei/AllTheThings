@@ -540,9 +540,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			--q(79326),	-- after turn in questID 82153 (Embassies and Envoys), [DNT] Push RP Event (spellID 362105)
 			--^ seems like currently fire as 79328 instead with name 'Embassies and Envoys', could be horde counter part?
 			q(80538),	-- after turn in questID 79525 (Report to the Councilward), Tracking Quest [DNT] (spellID 441842)
-			q(79573, {	-- triggered after completing 'Surface Bound' (questID 79197)
-				["name"] = "The War Within Campaign Completed [Account]",
-			}),
 		}),
 	}),
 })));

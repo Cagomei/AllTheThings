@@ -37,6 +37,11 @@ namespace ATT.FieldTypes
         private Timeline(object obj)
         {
             _dirty = true;
+            if (obj is Timeline timeline)
+            {
+                _entries = timeline._entries.ToArray();
+                return;
+            }
             if (obj is IEnumerable<string> strs)
             {
                 _entries = strs.Select(TimelineEntry.AsTimelineEntry).ToArray();
@@ -72,7 +77,8 @@ namespace ATT.FieldTypes
 
             if (!data.TryGetValue(Field, out object rawobj))
             {
-                data[Field] = timeline;
+                // copy the Timeline from the incoming value, otherwise we can get Timeline objects linked between different Sources
+                data[Field] = new Timeline(timeline);
                 return timeline;
             }
 

@@ -21,10 +21,6 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(54, {["description"] = "Transport, Feathermoon"}),
 			fp(59, {["description"] = "Dun Baldar, Alterac Valley"}),
 			fp(60, {["description"] = "Frostwolf Keep, Alterac Valley"}),
-			-- #if NOT ANYCLASSIC
-			fp(62, {["description"] = "Nighthaven, Moonglade"}),
-			fp(63, {["description"] = "Nighthaven, Moonglade"}),
-			-- #endif
 			fp(78, {["description"] = "Naxxramas"}),
 		}),
 	}),
@@ -734,12 +730,6 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			fp(2887, {["description"] = "Quest Path 9429: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Lower Floor (MPK)"}),
 			fp(2892, {["description"] = "Quest Path 9443: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Hel'nurath's Room (MPK)"}),
-		})),
-	}),
-	expansion(EXPANSION.TWW, {
-		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
-			fp(3003, {["description"] = "The Crown of Shadows"}),
 		})),
 	}),
 }));

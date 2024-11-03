@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-local GRATEFUL = currency(GRATEFUL);
+local GRATEFUL_CURRENCY = currency(GRATEFUL);
 local AMALGAMTED_FORWORNS_JOURNAL = i(184298);
 local TEMPERED_BONEPLASTE_WAISTGUARD = i(184291);
 local GIEGER = n(162741, {	-- Gieger <Experimental Construct>
@@ -37,9 +37,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					["icon"] = 3854015,
 					["g"] = sharedData({ ["icon"] = 3854015 }, {
 						n(REWARDS, {
-							["description"] = "Every Activity within Anima Conductor Rewards this.",
 							["g"] = {
-								GRATEFUL,
+								currency(GRATEFUL, {
+									["description"] = "Grateful Offerings can be collected once you have unlocked the Anima Conductor in for your covenant.\n Once unlocked, you can loot them from Covenant Callings (higher Conductor => more Offerings), Patterns Within Patterns Weekly Quest in Zereth Morthis and from special rares & treasures, based on the channeling of your Anima Conductor.",
+								}),
 							},
 						}),
 						n(TIER_ONE, {
@@ -177,7 +178,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	}),
 })));
 
-for _,t in ipairs({GIEGER,SABRIEL,GRATEFUL,AMALGAMTED_FORWORNS_JOURNAL,TEMPERED_BONEPLASTE_WAISTGUARD}) do
+for _,t in ipairs({GIEGER,SABRIEL,GRATEFUL_CURRENCY,AMALGAMTED_FORWORNS_JOURNAL,TEMPERED_BONEPLASTE_WAISTGUARD}) do
 	t.customCollect = nil;
 end
 

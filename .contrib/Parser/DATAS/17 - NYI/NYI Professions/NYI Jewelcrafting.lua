@@ -234,6 +234,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			-- 6.0.1
 			expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 				i(116080),	-- Design: Greater Taladite Amplifier
+				i(120131),	-- Recipe: Secrets of Draenor Jewelcrafting
+				i(116087),	-- Design: Glowing Blackrock Band
+				i(116081),	-- Design: Glowing Iron Band
+				i(116084),	-- Design: Glowing Iron Choker
+				i(116088),	-- Design: Shifting Blackrock Band
+				i(116082),	-- Design: Shifting Iron Band
+				i(116085),	-- Design: Shifting Iron Choker
+				i(116089),	-- Design: Whispering Blackrock Band
+				i(116083),	-- Design: Whispering Iron Band
+				i(116086),	-- Design: Whispering Iron Choker
 			})),
 		}),
 	}),

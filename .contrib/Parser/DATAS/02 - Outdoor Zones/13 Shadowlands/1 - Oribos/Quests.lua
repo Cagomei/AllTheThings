@@ -52,12 +52,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					q(60156, {	-- The Path to Bastion
 						["sourceQuests"] = { 60154 },	-- Understanding the Shadowlands
 						["provider"] = { "n", 175829 },	-- Overseer Kah-Sher
-						["coord"] = { 50.5, 62.0, ORIBOS },
+						["coord"] = { 50.5, 62.0, 1671 }, -- Ring of Transference
 					}),
 					q(59773, {	-- Seek the Ascended
 						["sourceQuests"] = { 60156 },	-- The Path to Bastion
 						["provider"] = { "n", 175133 },	-- Pathscribe Roh-Avonavi
-						["coord"] = { 64.3, 49.7, ORIBOS },
+						["coord"] = { 64.3, 49.7, 1671 },
 					}),
 				},
 			}),

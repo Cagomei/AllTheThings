@@ -138,8 +138,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(108023),	-- Draenic Steel Wristwraps
 					i(108031),	-- Draenic Steel Wristwraps
 					i(108039),	-- Draenic Steel Wristwraps
-					i(116653),	-- Unstable Greater Steelforged Essence
-					i(116650),	-- Unstable Greater Truesteel Essence
 
 					-- #if BEFORE 10.1.5
 					-- All was added into Dawn of the Infinite dungeon [Quantum Chestpiece]
@@ -253,8 +251,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(108217),	-- Peerless Draenic Steel Wristwraps
 					i(108225),	-- Peerless Draenic Steel Wristwraps
 					-- #endif
-					i(122538),	-- Unstable Powerful Steelforged Essence
-					i(122539),	-- Unstable Powerful Truesteel Essence
 				})),
 			}),
 			expansion(EXPANSION.LEGION, {

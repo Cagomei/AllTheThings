@@ -553,7 +553,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"
 				q(64697, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Malleus Grakizz / Sentinel Shakorzeth / Versya the Damned
 				q(64698, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Intercessor Razzra / Zul'gath the Flayer (4th Tormentor of week?)
 				q(64120, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Versya the Damned
-				q(64121, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
 			}),
 		}),
 	}),

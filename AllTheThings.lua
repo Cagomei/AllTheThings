@@ -820,12 +820,19 @@ end
 MergeObjects = function(g, g2, newCreate)
 	if not g or not g2 then return end
 	if #g2 > 25 then
-		local t, hash
+		local t, hash, hashObj
 		local hashTable = {}
 		for i,o in ipairs(g) do
 			local hash = o.hash;
 			if hash then
-				hashTable[hash] = o;
+				-- are we merging the same object multiple times from one group?
+				hashObj = hashTable[hash]
+				if hashObj then
+					-- don't replace existing properties
+					MergeProperties(hashObj, o, true);
+				else
+					hashTable[hash] = o;
+				end
 			end
 		end
 		if newCreate then
@@ -4542,25 +4549,28 @@ local function AdjustRowIndent(row, indentAdjust)
 	-- app.PrintDebug("row texture at",x,indentAdjust,offset)
 	row.Texture:SetPoint("LEFT", row, "LEFT", offset, 0);
 end
-local IconPortraitTooltipExtraSettings = {
-	questID = "IconPortraitsForQuests",
-};
-local SetPortraitTexture, SetPortraitTextureFromDisplayID
-	= SetPortraitTexture, SetPortraitTextureFromCreatureDisplayID;
+local PortaitSettingsCache = setmetatable({}, {__index = app.ReturnTrue })
+do
+	local function CachePortraitSettings()
+		PortaitSettingsCache.ALL = app.Settings:GetTooltipSetting("IconPortraits")
+		PortaitSettingsCache.questID = app.Settings:GetTooltipSetting("IconPortraitsForQuests")
+	end
+	app.AddEventHandler("OnStartup", CachePortraitSettings)
+	app.AddEventHandler("OnRenderDirty", CachePortraitSettings)
+end
+local SetPortraitTexture,SetPortraitTextureFromDisplayID
+	= SetPortraitTexture,SetPortraitTextureFromCreatureDisplayID
 local function SetPortraitIcon(self, data)
-	if app.Settings:GetTooltipSetting("IconPortraits") then
-		local extraSetting = IconPortraitTooltipExtraSettings[data.key];
-		if not extraSetting or app.Settings:GetTooltipSetting(extraSetting) then
-			local displayID = GetDisplayID(data);
-			if displayID then
-				SetPortraitTextureFromDisplayID(self, displayID);
-				self:SetTexCoord(0, 1, 0, 1);
-				return true;
-			elseif data.unit and not data.icon then
-				SetPortraitTexture(self, data.unit);
-				self:SetTexCoord(0, 1, 0, 1);
-				return true;
-			end
+	if PortaitSettingsCache.ALL and PortaitSettingsCache[data.key] then
+		local displayID = GetDisplayID(data);
+		if displayID then
+			SetPortraitTextureFromDisplayID(self, displayID);
+			self:SetTexCoord(0, 1, 0, 1);
+			return true;
+		elseif data.unit and not data.icon then
+			SetPortraitTexture(self, data.unit);
+			self:SetTexCoord(0, 1, 0, 1);
+			return true;
 		end
 	end
 
@@ -4690,7 +4700,6 @@ end
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 local RowOnEnter, RowOnLeave;
-local CreateRow;
 local function Refresh(self)
 	if not self:IsVisible() then return; end
 	-- app.PrintDebug(Colorize("Refresh:", app.Colors.TooltipDescription),self.Suffix)
@@ -4715,32 +4724,26 @@ local function Refresh(self)
 	if totalRowCount <= 0 then return; end
 
 	-- Fill the remaining rows up to the (visible) row count.
-	local container, rowCount, totalHeight, windowPad, minIndent = self.Container, 0, 0, 0, nil;
-	local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
+	local container, windowPad, minIndent = self.Container, 0, nil;
+	local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount)) + 1
 
 	-- Ensure that the first row doesn't move out of position.
-	local row = container.rows[1] or CreateRow(container);
+	local row = container.rows[1]
 	SetRowData(self, row, rowData[1]);
-	local containerHeight = container:GetHeight();
-	totalHeight = totalHeight + row:GetHeight();
-	current = current + 1;
-	rowCount = rowCount + 1;
 
-	for i=2,totalRowCount do
-		row = container.rows[i] or CreateRow(container);
+	local containerHeight = container:GetHeight();
+	local rowHeight = row:GetHeight()
+	local rowCount = math_floor(containerHeight / rowHeight)
+
+	for i=2,rowCount do
+		row = container.rows[i]
 		SetRowData(self, row, rowData[current]);
-		totalHeight = totalHeight + row:GetHeight();
-		if totalHeight > containerHeight then
-			break;
-		else
-			-- track the minimum indentation within the set of rows so they can be adjusted later
-			if row.indent and (not minIndent or row.indent < minIndent) then
-				minIndent = row.indent;
-				-- print("new minIndent",minIndent)
-			end
-			current = current + 1;
-			rowCount = rowCount + 1;
+		-- track the minimum indentation within the set of rows so they can be adjusted later
+		if row.indent and (not minIndent or row.indent < minIndent) then
+			minIndent = row.indent;
+			-- print("new minIndent",minIndent)
 		end
+		current = current + 1;
 	end
 
 	-- Readjust the indent of visible rows
@@ -4807,8 +4810,10 @@ local function Refresh(self)
 		if row and row.__ref ~= row.ref then
 			-- app.PrintDebug("owner.ref",app:SearchLink(row.ref))
 			-- force tooltip to refresh since the scroll has changed for but the tooltip is still visible
-			RowOnLeave(row)
-			RowOnEnter(row)
+			local OnLeave = row:GetScript("OnLeave")
+			local OnEnter = row:GetScript("OnEnter")
+			OnLeave(row)
+			OnEnter(row)
 		end
 	end
 end
@@ -5441,32 +5446,32 @@ RowOnEnter = function (self)
 
 	-- Default top row line if nothing is generated from a link.
 	if tooltip:NumLines() < 1 then
-		tinsert(tooltipInfo, { left = reference.text });
+		tooltipInfo[#tooltipInfo + 1] = { left = reference.text }
 	end
 
 	local title = reference.title;
 	if title then
 		local left, right = DESCRIPTION_SEPARATOR:split(title);
 		if right then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = left,
 				right = right,
 				r = 1, g = 1, b = 1
-			});
+			}
 		else
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = title,
 				r = 1, g = 1, b = 1
-			});
+			}
 		end
 	end
 	if reference.speciesID then
 		-- TODO: Once we move the Battle Pets to their own class file, add this using settings.AppendInformationTextEntry to the speciesID InformationType.
 		local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
 		if total then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = tostring(progress) .. " / " .. tostring(total) .. L.COLLECTED_STRING,
-			});
+			}
 		end
 	end
 	if reference.questID then
@@ -5474,15 +5479,15 @@ RowOnEnter = function (self)
 		local oneTimeQuestCharGuid = ATTAccountWideData.OneTimeQuests[reference.questID];
 		if oneTimeQuestCharGuid then
 			local charData = ATTCharacterData[oneTimeQuestCharGuid];
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.QUEST_ONCE_PER_ACCOUNT,
 				right = L.COMPLETED_BY:format(charData and charData.text or UNKNOWN),
-			});
+			}
 		elseif oneTimeQuestCharGuid == false then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.QUEST_ONCE_PER_ACCOUNT,
 				color = "ffcf271b",
-			});
+			}
 		end
 	end
 
@@ -5519,16 +5524,16 @@ RowOnEnter = function (self)
 					reference.working = true;
 					name = RETRIEVING_DATA;
 				end
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo + 1] = {
 					left = (k == 1 and L.COST),
 					right = amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. name,
-				});
+				}
 			end
 		else
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.COST,
 				right = GetMoneyString(reference.cost),
-			});
+			}
 		end
 	end
 
@@ -5536,12 +5541,11 @@ RowOnEnter = function (self)
 	if tooltip.ATT_AttachComplete == nil then
 		-- an item used for a faction which is repeatable
 		if reference.itemID and reference.factionID and reference.repeatable then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.ITEM_GIVES_REP .. (GetFactionName(reference.factionID) or ("Faction #" .. tostring(reference.factionID))) .. "'",
 				color = app.Colors.TooltipDescription,
 				wrap = true,
-			});
-
+			}
 		end
 
 		-- Add any ID toggle fields
@@ -5550,16 +5554,16 @@ RowOnEnter = function (self)
 
 	-- Ignored for Source/Progress
 	if reference.sourceIgnored then
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo + 1] = {
 			left = L.DOES_NOT_CONTRIBUTE_TO_PROGRESS,
 			wrap = true,
-		});
+		}
 	end
 	-- Further conditional texts that can be displayed
 	if reference.timeRemaining then
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo + 1] = {
 			left = app.GetColoredTimeRemaining(reference.timeRemaining),
-		});
+		}
 	end
 
 	-- Calculate Best Drop Percentage. (Legacy Loot Mode)
@@ -5602,15 +5606,15 @@ RowOnEnter = function (self)
 					if totalItems > 0 then
 						chance = 100 / totalItems;
 						color = GetProgressColor(chance / 100);
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo + 1] = {
 							left = L.LOOT_TABLE_CHANCE,
 							right = "|c"..color..GetNumberWithZeros(chance, 1) .. "%|r",
-						});
+						}
 					else
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo + 1] = {
 							left = L.LOOT_TABLE_CHANCE,
 							right = "N/A",
-						});
+						}
 					end
 
 					local specs = reference.specs;
@@ -5638,10 +5642,10 @@ RowOnEnter = function (self)
 							color = GetProgressColor(chance / 100);
 							-- print out the specs with min items
 							local specString = GetSpecsString(rollSpec, true, true) or "???";
-							tinsert(tooltipInfo, {
+							tooltipInfo[#tooltipInfo + 1] = {
 								left = legacyLoot and L.BEST_BONUS_ROLL_CHANCE or L.BEST_PERSONAL_LOOT_CHANCE,
 								right = specString.."  |c"..color..GetNumberWithZeros(chance, 1).."%|r",
-							});
+							}
 						end
 					elseif legacyLoot then
 						-- Not available at all, best loot spec is the one with the most number of items in it.
@@ -5660,15 +5664,15 @@ RowOnEnter = function (self)
 							if totalItems > 0 then
 								chance = 100 / (totalItems - specHits[id]);
 								color = GetProgressColor(chance / 100);
-								tinsert(tooltipInfo, {
+								tooltipInfo[#tooltipInfo + 1] = {
 									left = L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL],
 									right = "|T" .. icon .. ":0|t " .. name .. " |c"..color..GetNumberWithZeros(chance, 1) .. "%|r",
-								});
+								}
 							else
-								tinsert(tooltipInfo, {
+								tooltipInfo[#tooltipInfo + 1] = {
 									left = L.HEADER_NAMES[app.HeaderConstants.BONUS_ROLL],
 									right = "N/A",
-								});
+								}
 							end
 						end
 					end
@@ -5686,15 +5690,15 @@ RowOnEnter = function (self)
 			customCollectEx = L.CUSTOM_COLLECTS_REASONS[c];
 			local icon_color_str = customCollectEx.icon.." |c"..customCollectEx.color..(customCollectEx.text or "[MISSING_LOCALE_KEY]");
 			if not app.CurrentCharacter.CustomCollects[c] then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo + 1] = {
 					left = "|cffc20000" .. requires .. ":|r " .. icon_color_str,
 					right = customCollectEx.desc or "",
-				});
+				}
 			else
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo + 1] = {
 					left = requires .. ": " .. icon_color_str,
 					right = customCollectEx.desc or "",
-				});
+				}
 			end
 		end
 	end
@@ -5734,15 +5738,15 @@ RowOnEnter = function (self)
 			end
 		end
 		if prereqs and #prereqs > 0 then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.PREREQUISITE_QUESTS,
-			});
+			}
 			AddQuestInfoToTooltip(tooltipInfo, prereqs, reference);
 		end
 		if bc and #bc > 0 then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.BREADCRUMBS_WARNING,
-			});
+			}
 			AddQuestInfoToTooltip(tooltipInfo, bc, reference);
 		end
 	end
@@ -5769,9 +5773,9 @@ RowOnEnter = function (self)
 			end
 		end
 		if prereqs and #prereqs > 0 then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = "This has an incomplete prerequisite achievement that you need to complete first.",
-			});
+			}
 			AddAchievementInfoToTooltip(tooltipInfo, prereqs, reference);
 		end
 	end
@@ -5779,10 +5783,10 @@ RowOnEnter = function (self)
 	-- Show Breadcrumb information
 	local lockedWarning;
 	if reference.isBreadcrumb then
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo + 1] = {
 			left = L.THIS_IS_BREADCRUMB,
 			color = app.Colors.Breadcrumb,
-		});
+		}
 		if reference.nextQuests then
 			local isBreadcrumbAvailable = true;
 			local nextq, nq = {}, nil;
@@ -5802,29 +5806,29 @@ RowOnEnter = function (self)
 			end
 			if isBreadcrumbAvailable then
 				-- The character is able to accept the breadcrumb quest without Party Sync
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo + 1] = {
 					left = L.BREADCRUMB_PARTYSYNC,
-				});
+				}
 				AddQuestInfoToTooltip(tooltipInfo, nextq, reference);
 			elseif reference.DisablePartySync == false then
 				-- unknown if party sync will function for this Thing
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo + 1] = {
 					left = L.BREADCRUMB_PARTYSYNC_4,
 					color = app.Colors.LockedWarning,
-				});
+				}
 				AddQuestInfoToTooltip(tooltipInfo, nextq, reference);
 			elseif not reference.DisablePartySync then
 				-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo + 1] = {
 					left = L.BREADCRUMB_PARTYSYNC_2,
 					color = app.Colors.LockedWarning,
-				});
+				}
 				AddQuestInfoToTooltip(tooltipInfo, nextq, reference);
 			else
 				-- known to not be possible in party sync
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo + 1] = {
 					left = L.DISABLE_PARTYSYNC,
-				});
+				}
 			end
 			lockedWarning = true;
 		end
@@ -5837,10 +5841,10 @@ RowOnEnter = function (self)
 		local critKey, critValue;
 		local critFuncs = app.QuestLockCriteriaFunctions;
 		local critFunc;
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo + 1] = {
 			left = L.UNAVAILABLE_WARNING_FORMAT:format(lockCriteria[1]),
 			color = app.Colors.LockedWarning,
-		});
+		}
 		for i=2,#lockCriteria,2 do
 			critKey = lockCriteria[i];
 			critValue = lockCriteria[i + 1];
@@ -5852,9 +5856,9 @@ RowOnEnter = function (self)
 				if not reference.working and IsRetrieving(text) then
 					reference.working = true
 				end
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo + 1] = {
 					left = app.GetCompletionIcon(critFunc(critValue)).." "..label..": "..text,
-				});
+				}
 			end
 		end
 	end
@@ -5866,17 +5870,17 @@ RowOnEnter = function (self)
 		local critFunc = critFuncs.questID;
 		local label = critFuncs.label_questID;
 		local text;
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo + 1] = {
 			left = L.UNAVAILABLE_WARNING_FORMAT:format(1),
 			color = app.Colors.LockedWarning,
-		});
+		}
 		for i=1,#altQuests,1 do
 			critValue = altQuests[i];
 			if critFunc then
 				text = critFuncs.text_questID(critValue);
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo + 1] = {
 					left = app.GetCompletionIcon(critFunc(critValue)).." "..label..": "..text,
-				});
+				}
 			end
 		end
 	end
@@ -5885,21 +5889,21 @@ RowOnEnter = function (self)
 	if not lockedWarning and reference.locked then
 		if reference.DisablePartySync == false then
 			-- unknown if party sync will function for this Thing
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.BREADCRUMB_PARTYSYNC_4,
 				color = app.Colors.LockedWarning,
-			});
+			}
 		elseif not reference.DisablePartySync then
 			-- should be possible in party sync
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.BREADCRUMB_PARTYSYNC_3,
 				color = app.Colors.LockedWarning,
-			});
+			}
 		else
 			-- known to not be possible in party sync
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.DISABLE_PARTYSYNC,
-			});
+			}
 		end
 	end
 
@@ -5907,69 +5911,69 @@ RowOnEnter = function (self)
 		if reference.g then
 			-- If we're at the Auction House
 			if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo + 1] = {
 					left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"],
-				});
+				}
 			else
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo + 1] = {
 					left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"],
-				});
+				}
 			end
 		end
 		if reference.questID then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.QUEST_ROW_INSTRUCTIONS,
-			});
+			}
 		end
 	end
 	-- Add info in tooltip for the header of a Window for whether it is locked or not
 	if self.index == 0 then
 		local owner = self:GetParent():GetParent();
 		if owner and owner.isLocked then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.TOP_ROW_TO_UNLOCK,
-			});
+			}
 		elseif app.Settings:GetTooltipSetting("Show:TooltipHelp") then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.TOP_ROW_TO_LOCK,
-			});
+			}
 		end
 	end
 
 	--[[ ROW DEBUGGING ]
-	tinsert(tooltipInfo, {
+	tooltipInfo[#tooltipInfo + 1] = {
 		left = "Self",
 		right = tostring(reference),
-	});
-	tinsert(tooltipInfo, {
+	}
+	tooltipInfo[#tooltipInfo + 1] = {
 		left = "Base",
 		right = tostring(getmetatable(reference)),
 	});
-	tinsert(tooltipInfo, {
+	tooltipInfo[#tooltipInfo + 1] = {
 		left = "Parent",
 		right = tostring(rawget(reference, "parent")),
-	});
-	tinsert(tooltipInfo, {
+	}
+	tooltipInfo[#tooltipInfo + 1] = {
 		left = "ParentText",
 		right = tostring((rawget(reference, "parent") or app.EmptyTable).text),
-	});
-	tinsert(tooltipInfo, {
+	}
+	tooltipInfo[#tooltipInfo + 1] = {
 		left = "SourceParent",
 		right = tostring(rawget(reference, "sourceParent")),
-	});
-	tinsert(tooltipInfo, {
+	}
+	tooltipInfo[#tooltipInfo + 1] = {
 		left = "SourceParentText",
 		right = tostring((rawget(reference, "sourceParent") or app.EmptyTable).text),
-	});
-	tinsert(tooltipInfo, {
+	}
+	tooltipInfo[#tooltipInfo + 1] = {
 		left = "-- Ref Fields:",
-	});
+	}
 	for key,val in pairs(reference) do
 		if key ~= "lore" and key ~= "description" then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo + 1] = {
 				left = key,
 				right = tostring(val),
-			});
+			}
 		end
 	end
 	local fields = {
@@ -5995,19 +5999,19 @@ RowOnEnter = function (self)
 		-- "itemID",
 		-- "modItemID"
 	};
-	tinsert(tooltipInfo, {
+	tooltipInfo[#tooltipInfo + 1] = {
 		left = "-- Extra Fields:",
-	});
+	}
 	for _,key in ipairs(fields) do
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo + 1] = {
 			left = key,
 			right = tostring(reference[key]),
-		});
+		}
 	end
-	tinsert(tooltipInfo, {
+	tooltipInfo[#tooltipInfo + 1] = {
 		left = "Row Indent",
 		right = tostring(CalculateRowIndent(reference)),
-	});
+	}
 	-- END DEBUGGING]]
 
 
@@ -6034,19 +6038,21 @@ RowOnLeave = function (self)
 	GameTooltip:ClearLines();
 	GameTooltip:Hide();
 end
-CreateRow = function(self)
+local function CreateRow(rows, i)
+	local container, index = rows.__container, i - 1
 	---@class ATTRowButtonClass: Button
-	local row = CreateFrame("Button", nil, self);
-	row.index = #self.rows;
-	self.rows[row.index + 1] = row
-	if row.index == 0 then
+	local row = CreateFrame("Button", nil, container);
+	row.index = index
+	rows[i] = row
+	if index == 0 then
 		-- This means relative to the parent.
 		row:SetPoint("TOPLEFT");
 		row:SetPoint("TOPRIGHT");
 	else
 		-- This means relative to the row above this one.
-		row:SetPoint("TOPLEFT", self.rows[row.index], "BOTTOMLEFT");
-		row:SetPoint("TOPRIGHT", self.rows[row.index], "BOTTOMRIGHT");
+		local aboveRow = rows[index] or CreateRow(rows, index)
+		row:SetPoint("TOPLEFT", aboveRow, "BOTTOMLEFT");
+		row:SetPoint("TOPRIGHT", aboveRow, "BOTTOMRIGHT");
 	end
 
 	-- Setup highlighting and event handling
@@ -6277,6 +6283,11 @@ local function ToggleExtraFilters(self, active)
 		if Setter then Setter(active) end
 	end
 end
+local function NewWindowRowContainer(container)
+	return setmetatable({__container=container}, { __index = function(t,i)
+		return CreateRow(t,i)
+	end})
+end
 function app:GetWindow(suffix, parent, onUpdate)
 	if app.GetCustomWindowParam(suffix, "reset") then
 		ResetWindow(suffix);
@@ -6374,7 +6385,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
 	-- container:SetClipsChildren(true);
 	window.Container = container;
-	container.rows = {};
+	container.rows = NewWindowRowContainer(container)
 	container:Show();
 
 	-- Setup the Event Handlers
@@ -9759,8 +9770,6 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 	if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
 		return;
 	end
-	local C_TradeSkillUI_GetSalvagableItemIDs
-		= C_TradeSkillUI.GetSalvagableItemIDs
 	if not self.initialized then
 		self.initialized = true;
 		self.SkillsInit = {};

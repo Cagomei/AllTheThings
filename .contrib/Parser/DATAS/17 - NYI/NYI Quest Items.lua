@@ -105,7 +105,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(181683),	-- Anointed Talisman
 			i(178031),	-- Anointing Chime
 			i(182473),	-- Archivam Tome
-			i(182479),	-- Ashfallen Key
 			i(173013),	-- Bag of Faerie Dust
 			i(180439),	-- Bagged Frog
 			i(178493),	-- Baine Bloodhoof
@@ -141,7 +140,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(167209),	-- Crude Map
 			i(173267),	-- Crystalized Gormgris
 			i(180446),	-- Curiously Corrosive Concoction
-			i(180607),	-- Cypher of Blinding
 			i(180626),	-- Cypher of Melody
 			i(175012),	-- Dancing Cricket
 			i(171967),	-- Dark Cowl
@@ -427,7 +425,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(193414),	-- Aged Shamanic Dagger
 			i(191924),	-- Alvi's Spyglass
 			i(187854),	-- Arcane Key
-			i(199692),	-- Artifact Locator
 			i(192767),	-- Bag of Ore
 			i(191106),	-- Bakra's Paw
 			i(191847),	-- Basilisk Egg
@@ -592,7 +589,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(202312),	-- Juicy Mammoth Steak
 			i(202340),	-- Laydia's Flower Petals
 			i(202342),	-- Luggage Key
-			i(206160),	-- Madam Shadow's Grimoire
 			i(204983),	-- Primalist Dropbox Key [DNT]
 			i(204275),	-- Slimey Key
 			i(204895),	-- Storm-touched Missive Stone [DNT]

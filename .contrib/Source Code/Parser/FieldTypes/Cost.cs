@@ -21,6 +21,7 @@ namespace ATT.FieldTypes
         private Dictionary<string, IDictionary<decimal, long>> _costTypes;
 
         private Cost(IDictionary<string, object> data) { _data = data; }
+        private Cost(Cost cost) { _data = new Dictionary<string, object>(cost._data); }
 
         private IDictionary<decimal, long> GetCostType(string type)
         {
@@ -60,7 +61,7 @@ namespace ATT.FieldTypes
             {
                 if (value is Cost newCost)
                 {
-                    data[Field] = newCost;
+                    data[Field] = new Cost(newCost);
                     return newCost;
                 }
                 cost = new Cost(data);
@@ -337,7 +338,7 @@ namespace ATT.FieldTypes
 
             if (_costTypes == null)
             {
-                _costTypes = merge._costTypes;
+                _costTypes = new Dictionary<string, IDictionary<decimal, long>>(merge._costTypes);
                 return;
             }
 

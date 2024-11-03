@@ -3698,7 +3698,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 69.73, 45.45, NORTHREND_DALARAN },
 						["groups"] = {
 							i(49177, {	-- Tome of Cold Weather Flight
+								-- #IF ANYCLASSIC
 								["recipeID"] = 54197,	-- Cold Weather Flight
+								-- #ELSE
+								["f"] = MISC,
+								-- #ENDIF
 								["timeline"] = { REMOVED_4_0_1 },
 								["cost"] = {{ "g", 10000000 }},	-- 1000g
 							}),

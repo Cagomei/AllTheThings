@@ -574,7 +574,10 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(183309),	-- Memory of the Ardent Protector
 					i(183389),	-- Memory of the Berserker's Will
 					i(183233),	-- Memory of the Frenzyband
-					i(183293),	-- Memory of the Morning's Tear
+					i(183293, {	-- Memory of the Morning's Tear
+						["description"] = "Reportedly bugged and no longer drops or learned from the Chronicle of Lost Memories. If you learn this or see it drop, please inform the ATT discord or create a GitHub issue.",
+						["timeline"] = { REMOVED_10_0_2 },	-- Total Guess
+					}),
 					i(183356),	-- Memory of the Primal Lava Actuators
 					i(183264),	-- Memory of the Rylakstalker's Strikes
 					i(181455),	-- Icy Propulsion

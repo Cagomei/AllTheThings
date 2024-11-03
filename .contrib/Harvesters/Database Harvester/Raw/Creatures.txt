@@ -22185,3 +22185,120 @@
 233561@@@Pet Pal
 11.0.5.56865
 234163@@@Sha of Anger
+11.0.5.57292
+198987@@@Brrrgl
+232502@@@Reven
+11.0.7.57361
+218867@@@Dauntless Deckhand
+227067@@@Kalecgos
+227545@@@Ikir the Flotsurge
+227641@@@Ookin Scoundrel
+227642@@@Brinescale Cutthroat
+227643@@@Spineskin Horker
+227653@@@Darktide Punisher
+227677@@@Vulpera Toe-Slasher
+227796@@@Sky-Captain Elaena Lancekat
+227797@@@Raen Dawncavalyr
+227810@@@Ricket
+228074@@@Angorla
+228096@@@Dawn
+228422@@@Brinescale Reaver
+228963@@@Lady Jaina Proudmoore
+228964@@@Archmage Aethas Sunreaver
+229424@@@Kalecgos
+229790@@@Blacksteel Loader
+229794@@@Spineskin Fuselighter
+229827@@@Brinescale Cutthroat
+229829@@@Ookin Scoundrel
+229830@@@Spineskin Horker
+229928@@@Gazix Fusegrease
+229970@@@Restless Odek
+230128@@@Kalecgos
+230143@@@Boat
+230394@@@Tidal Kroling
+230398@@@Tidal Kroling
+230524@@@Sharptalon Stalker
+230560@@@Seasmasher Deckmate
+230837@@@Drowned Helhound
+231415@@@Expedition Shieldhand
+231536@@@Apprentice Tanmar
+231542@@@Mounted Stormranger
+231988@@@Rocket-Chief Fuselage
+231997@@@Didi the Wrench
+232295@@@Sacredite Scholar
+232783@@@Ookin Scribbler
+232786@@@Hozen Hang Bunny
+232788@@@Hozen Poetry
+232825@@@First Mate Dat-Dat
+233070@@@Inhyldir the Cursed
+233137@@@Inhyldir the Cursed
+233237@@@Lady Jaina Proudmoore
+233239@@@Archmage Khadgar
+233241@@@Kalecgos
+233244@@@Archmage Aethas Sunreaver
+233449@@@Runed Storm Cache
+233481@@@Razeshi B.
+233529@@@Storm Rook
+233530@@@Lady Jaina Proudmoore
+233532@@@Skaggit
+233694@@@Zexel Fingersnap
+233797@@@Sparklesnap
+233965@@@Portentous Present
+233967@@@Parley
+233979@@@Runed Storm Cache
+234078@@@Overlord Geya'rah
+234097@@@Rusty Kroling
+234099@@@Rusty Kroling
+234100@@@Cave Kroling
+234101@@@Cave Kroling
+234131@@@Living Rose
+234154@@@Living Rose
+234157@@@Kirin Tor Survivor
+234158@@@Silver Covenant Spellcaster
+234159@@@Sunreaver Battlemage
+234185@@@Eirana
+234186@@@Nixx Gearkick
+234231@@@Zeppelin Engineer
+234264@@@Giada Goldleash
+234265@@@Professor Pallin
+234266@@@Abohba
+234267@@@Rhukah
+234268@@@Nargut
+234271@@@Matron Ossela
+234273@@@Nelur Lightsown
+234274@@@Saedelin Whitedawn
+234277@@@Oathsworn Citizen
+234365@@@Marmaduke
+234366@@@Rock Hound Mica
+234367@@@Pillaged Parrot
+234368@@@Pillaged Parrot
+234369@@@Snapdragon Pup
+234370@@@Snapdragon Pup
+234411@@@Angorla
+234537@@@Angorla
+234610@@@Runed Storm Cache
+234611@@@Runed Storm Cache
+234663@@@Wind-Up Wuffi
+234664@@@Wind-Up Woofer
+234710@@@Cliffreach Cub
+234711@@@Cliffreach Cub
+234729@@@Battleboar Piglet
+234734@@@Battleboar Piglet
+234742@@@Supplier Toffa
+234744@@@Supplier Offa
+234746@@@Supplier Mizix
+234747@@@Supplier Felina
+234757@@@Greatwing Macaw
+234823@@@Spots
+234826@@@Test Pickpocket Loot (DNT)
+234908@@@Titan Orb
+234986@@@Greasemonkey Surveyor
+235061@@@Sacredite Savant
+235066@@@Bargus
+235124@@@Crackleroar
+235130@@@Skitterbite
+235152@@@Teatuft Tamer
+235159@@@Fullbelly Rollingpaw
+235169@@@Archivist's Data Orb
+235280@@@Push Loot Test (DNT)
+235281@@@Test Personal Loot (DNT)

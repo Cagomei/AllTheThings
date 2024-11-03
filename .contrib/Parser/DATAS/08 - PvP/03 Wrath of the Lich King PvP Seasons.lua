@@ -64,6 +64,9 @@ end]];
 -- #endif
 root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, pvp(expansion(EXPANSION.WRATH, {
 	n(SEASON_DEADLY, {
+		n(ACHIEVEMENTS, {
+			ach(11710, {["timeline"] = {ADDED_7_2_0}}),	-- Lethal Looks (PvP Season 5)
+		}),
 		elitepvp(n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 			-- #if BEFORE 5.0.1
@@ -80,7 +83,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			i(46708, {	-- Deadly Gladiator's Frost Wyrm
 				["description"] = "Awarded to members of the Arena teams during Wrath Season 1 that were in the 0.5% bracket of their battlegroup.",
 			}),
-			ach(11710, {["timeline"] = {ADDED_7_2_0}}),	-- Lethal Looks (PvP Season 5)
 		}))),
 		-- #if AFTER 7.0.3
 		n(40212, {	-- Trapjaw Rix <Savage Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+]
@@ -1876,6 +1878,9 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		-- #endif
 	}),
 	applyclassicphase(WRATH_PHASE_TWO, n(SEASON_FURIOUS, {
+		n(ACHIEVEMENTS, {
+			ach(11711, {["timeline"] = {ADDED_7_2_0}}),	-- The Fierce and the Furious (PvP Season 6)
+		}),
 		elitepvp(n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 			-- #if BEFORE 5.0.1
@@ -1892,7 +1897,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			i(46171, {	-- Furious Gladiator's Frost Wyrm
 				["description"] = "Awarded to members of the Arena teams during Wrath Season 2 that were in the 0.5% bracket of their battlegroup.",
 			}),
-			ach(11711, {["timeline"] = {ADDED_7_2_0}}),	-- The Fierce and the Furious (PvP Season 6)
 		}))),
 		-- #if AFTER 7.0.3
 		n(69318, {	-- Kylo Kelwin <Furious Gladiator>
@@ -2621,6 +2625,9 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		})),
 	})),
 	applyclassicphase(WRATH_PHASE_THREE, n(SEASON_RELENTLESS, {
+		n(ACHIEVEMENTS, {
+			ach(11712, {["timeline"] = {ADDED_7_2_0}}),	-- Relentlessly Good Looking (PvP Season 7)
+		}),
 		elitepvp(n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { ADDED_3_2_0, REMOVED_3_3_2 },
 			-- #if BEFORE 5.0.1
@@ -2637,7 +2644,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			i(47840, {	-- Relentless Gladiator's Frost Wyrm
 				["description"] = "Awarded to members of the Arena teams during Wrath Season 3 that were in the 0.5% bracket of their battlegroup.",
 			}),
-			ach(11712, {["timeline"] = {ADDED_7_2_0}}),	-- Relentlessly Good Looking (PvP Season 7)
 		}))),
 		-- #if AFTER 7.0.3
 		n(69973, {	-- Zom Bocom <Relentless Gladiator> [Legion?] / Zom Bocom <Honor Quartermaster> [MOP?]
@@ -3384,6 +3390,9 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		})),
 	})),
 	applyclassicphase(WRATH_PHASE_FOUR, n(SEASON_WRATHFUL, {
+		n(ACHIEVEMENTS, {
+			ach(11713, {["timeline"] = {ADDED_7_2_0}}),	-- Wrath of the Stitch King (PvP Season 8)
+		}),
 		elitepvp(n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { ADDED_3_3_2, REMOVED_4_0_1 },
 			-- #if BEFORE 5.0.1
@@ -3400,7 +3409,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			i(50435, {	-- Wrathful Gladiator's Frost Wyrm
 				["description"] = "Awarded to members of the Arena teams during Wrath Season 4 that were in the 0.5% bracket of their battlegroup.",
 			}),
-			ach(11713, {["timeline"] = {ADDED_7_2_0}}),	-- Wrath of the Stitch King (PvP Season 8)
 		}))),
 		-- #if AFTER 7.0.3
 		n(69971, {	-- Xazi Smolderpipe <Wrathful Gladiator> [Legion?] / Xazi Smolderpipe <Conquest Quartermaster> [MOP?]

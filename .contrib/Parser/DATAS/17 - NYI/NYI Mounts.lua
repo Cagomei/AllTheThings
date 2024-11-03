@@ -847,9 +847,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(223570, {	-- Ebonhide Ramolith (MOUNT!)
 				["displayID"] = 117966,
 			}),
-			i(226042, {	-- Plunderlord's Midnight Crocolisk (MOUNT!) [Trading Post?]
-				["displayID"] = 121170,
-			}),
 			i(226044, {	-- Plunderlord's Weathered Crocolisk (MOUNT!) [Trading Post?]
 				["displayID"] = 121171,
 			}),
@@ -945,9 +942,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			}),
 			i(223574, {	-- [PH] Proto Ram Earthen (White Skin, Grand Horns, White Saddle) (MOUNT!)
 				["displayID"] = 117968,
-			}),
-			i(223313, {	-- [PH] Shadow Elemental (Black) (MOUNT!)
-				["displayID"] = 119534,
 			}),
 			i(223587, {	-- [PH] Silver Armored Fel Bat Gladiator Mount (MOUNT!)
 				["displayID"] = 119718,

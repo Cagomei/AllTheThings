@@ -136,64 +136,64 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			q(53160, {	-- Ancient Crypt Key
 				["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 				["providers"] = {
-					{ "n", 61962 },	-- Lorewalker Cho
 					{ "i", 163470 },	-- Ancient Crypt Key
+					{ "n", 61962 },	-- Lorewalker Cho
 				},
 			}),
 			q(53171, {	-- Battered Twilight Scale
 				["coord"] = { 20.2, 54.6, TWILIGHT_HIGHLANDS },
 				["providers"] = {
-					{ "n", 132888 },	-- Eryna
 					{ "i", 163478 },	-- Battered Twilight Scale
+					{ "n", 132888 },	-- Eryna
 				},
 			}),
 			q(53163, {	-- Bloodwake Drinking Horn
 				["coord"] = { 68.4, 54.2, STORMHEIM },
 				["providers"] = {
-					{ "n", 93231 },	-- Vydhar
 					{ "i", 163472 },	-- Bloodwake Drinking Horn
+					{ "n", 93231 },	-- Vydhar
 				},
 			}),
 			q(53177, {	-- Broken Compass
 				["coord"] = { 42.0, 74.6, THE_CAPE_OF_STRANGLETHORN },
 				["providers"] = {
-					{ "n", 908 },	-- Flora Silverwind
 					{ "i", 163482 },	-- Broken Compass
+					{ "n", 908 },	-- Flora Silverwind
 				},
 			}),
 			q(53181, {	-- Druidic Fur
 				["coord"] = { 52.6, 40.6, MOONGLADE },
 				["providers"] = {
-					{ "n", 12042 },	-- Loganaar
 					{ "i", 163485 },	-- Druidic Fur
+					{ "n", 12042 },	-- Loganaar
 				},
 			}),
 			q(53169, {	-- Elemental Core
 				["coord"] = { 92.7, 42.0, AZSHARA },	-- TODO: Verify Coords/npcid
 				["providers"] = {
-					{ "n", 13278 },	-- Duke Hydraxis
 					{ "i", 163476 },	-- Elemental Core
+					{ "n", 13278 },	-- Duke Hydraxis
 				},
 			}),
 			q(53176, {	-- Glittering Scarab
 				["coord"] = { 58.8, 46.2, ULDUM },
 				["providers"] = {
-					{ "n", 46134 },	-- High Commander Kamses
 					{ "i", 163481 },	-- Glittering Scarab
+					{ "n", 46134 },	-- High Commander Kamses
 				},
 			}),
 			q(53167, {	-- Icetusk Fur Cloak
 				["coord"] = { 48.0, 76.0, DRAGONBLIGHT },
 				["providers"] = {
-					{ "n", 26245 },	-- Tua'kea
 					{ "i", 163474 },	-- Icetusk Fur Cloak
+					{ "n", 26245 },	-- Tua'kea
 				},
 			}),
 			q(53168, {	-- Magical Spyglass
 				["coord"] = { 41.0, 73.0, THE_CAPE_OF_STRANGLETHORN },
 				["providers"] = {
-					{ "n", 2496 },	-- Baron Revilgaz
 					{ "i", 163475 },	-- Magical Spyglass
+					{ "n", 2496 },	-- Baron Revilgaz
 				},
 			}),
 			q(53174, {	-- Murloc Eye
@@ -202,50 +202,50 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					{ 49.6, 15.8, HIGHMOUNTAIN },
 				},
 				["providers"] = {
-					{ "n", 98067 },	-- King Mrgl-Mrgl
 					{ "i", 163480 },	-- Murloc Eye
+					{ "n", 98067 },	-- King Mrgl-Mrgl
 				},
 			}),
 			q(53155, {	-- Notched Coin
 				["coord"] = { 55.2, 19.2, THE_JADE_FOREST },
 				["providers"] = {
-					{ "n", 64365 },	-- Mili Wanderbrew
 					{ "i", 163466 },	-- Notched Coin
+					{ "n", 64365 },	-- Mili Wanderbrew
 				},
 			}),
 			q(53178, {	-- Razorfin Hunting Spear
 				["coord"] = { 29.6, 39.0, KRASARANG_WILDS },
 				["providers"] = {
-					{ "n", 58278 },	-- Tired Shushen
 					{ "i", 163483 },	-- Razorfin Hunting Spear
+					{ "n", 58278 },	-- Tired Shushen
 				},
 			}),
 			q(53161, {	-- Ring of the Reefs
 				["coord"] = { 60.2, 51.2, STORMHEIM },
 				["providers"] = {
-					{ "n", 106904 },	-- Valdemar Stormseeker
 					{ "i", 163471 },	-- Ring of the Reefs
+					{ "n", 106904 },	-- Valdemar Stormseeker
 				},
 			}),
 			q(53164, {	-- Sonic Stone
 				["coord"] = { 39.4, 62.0, TOWNLONG_STEPPES },
 				["providers"] = {
-					{ "n", 61584 },	-- Sentinel Commander Qipan
 					{ "i", 163473 },	-- Sonic Stone
+					{ "n", 61584 },	-- Sentinel Commander Qipan
 				},
 			}),
 			q(53182, {	-- Strangling Root
 				["coord"] = { 36.2, 41.8, MOONGLADE },
 				["providers"] = {
-					{ "n", 11832 },	-- Keeper Remulos
 					{ "i", 163486 },	-- Strangling Root
+					{ "n", 11832 },	-- Keeper Remulos
 				},
 			}),
 			q(53170, {	-- Unscarred Black Scale
 				["coord"] = { 47.8, 68.8, BURNING_STEPPES },	-- TODO: Verify map/npc id
 				["providers"] = {
-					{ "n", 66306 },	-- Blacktalon Agent
 					{ "i", 163477 },	-- Unscarred Black Scale
+					{ "n", 66306 },	-- Blacktalon Agent
 				},
 			}),
 			q(53172, {	-- Venture Co. Business Plan
@@ -255,29 +255,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 				["description"] = "Pats along the road between The Crossroads and Ratchet.",
 				["providers"] = {
-					{ "n", 3658 },	-- Lizzarik
 					{ "i", 163479 },	-- Venture Co. Business Plan
+					{ "n", 3658 },	-- Lizzarik
 				},
 			}),
 			q(53180, {	-- Vorus'arak's Carapace
 				["coord"] = { 26.2, 50.6, DRAGONBLIGHT },
 				["providers"] = {
-					{ "n", 26653 },	-- Kilix the Unraveler
 					{ "i", 163484 },	-- Vorus'arak's Carapace
+					{ "n", 26653 },	-- Kilix the Unraveler
 				},
 			}),
 			q(53184, {	-- Weathered Pamphlet
 				["coord"] = { 52.0, 30.0, TANARIS },
 				["providers"] = {
-					{ "n", 132832 },	-- Jordle Flangebender
 					{ "i", 163488 },	-- Weathered Pamphlet
+					{ "n", 132832 },	-- Jordle Flangebender
 				},
 			}),
 			q(53183, {	-- Wriggling Mass
 				["coord"] = { 40.0, 76.6, SILITHUS },
 				["providers"] = {
-					{ "n", 132886 },	-- Twilight Hermit
 					{ "i", 163487 },	-- Wriggling Mass
+					{ "n", 132886 },	-- Twilight Hermit
 				},
 			}),
 		}),

@@ -1073,25 +1073,21 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 		expansion(EXPANSION.TBC, {
 			q(31922, {	-- Nicki Tinytech
 				["qg"] = 66550,	-- Nicki Tinytech
-				-- #if BEFORE 11.0.5
-				["coord"] = { 64.3, 49.3, HELLFIRE_PENINSULA },
-				-- #else
 				["coords"] = {
 					{ 64.3, 49.3, HELLFIRE_PENINSULA },
+					-- #if AFTER 11.0.5
 					{ 62.0, 49.5, TANARIS },
+					-- #endif
 				},
-				-- #endif
 			}),
 			q(31924, {	-- Narrok
 				["provider"] = { "n", 66552 },	-- Narrok <Master Pet Tamer>
-				-- #if BEFORE 11.0.5
-				["coord"] = { 61.0, 49.4, NAGRAND },
-				-- #else
 				["coords"] = {
 					{ 61.0, 49.4, NAGRAND },
+					-- #if AFTER 11.0.5
 					{ 62.0, 49.5, TANARIS },
+					-- #endif
 				},
-				-- #endif
 			}),
 			q(31926, {	-- Grand Master Antari
 				["sourceQuests"] = { 31920 },	-- Grand Master Antari
@@ -1103,28 +1099,41 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			}),
 			q(31923, {	-- Ras'an
 				["provider"] = { "n", 66551 },	-- Ras'an <Master Pet Tamer>
-				-- #if BEFORE 11.0.5
-				["coord"] = { 17.2, 50.5, ZANGARMARSH },
-				-- #else
 				["coords"] = {
 					{ 17.2, 50.5, ZANGARMARSH },
+					-- #if AFTER 11.0.5
 					{ 61.9, 49.6, TANARIS },
+					-- #endif
 				},
-				-- #endif
 			}),
 			q(31925, {	-- Morulu The Elder
 				["provider"] = { "n", 66553 },	-- Morulu The Elder
-				["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
+				["coords"] = {
+					{ 59.0, 70.0, SHATTRATH_CITY },
+					-- #if AFTER 11.0.5
+					{ 61.9, 49.6, TANARIS },
+					-- #endif
+				},
 			}),
 		}),
 		expansion(EXPANSION.WRATH, {
 			q(31932, {	-- Nearly Headless Jacob
 				["provider"] = { "n", 66636 },	-- Nearly Headless Jacob
-				["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
+				["coords"] = {
+					{50.2, 59.0, CRYSTALSONG_FOREST },
+					-- #if AFTER 11.0.5
+					{ 61.9, 49.6, TANARIS },
+					-- #endif
+				},
 			}),
 			q(31933, {	-- Okrut Dragonwaste
 				["provider"] = { "n", 66638 },	-- Okrut Dragonwaste
-				["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
+				["coords"] = {
+					{ 59.0, 77.0, DRAGONBLIGHT },
+					-- #if AFTER 11.0.5
+					{ 61.9, 49.6, TANARIS },
+					-- #endif
+				},
 			}),
 			q(31931, {	-- Beegle Blastfuse
 				["provider"] = { "n", 66635 },	-- Beegle Blastfuse
@@ -1134,64 +1143,66 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			q(31935, {	-- Grand Master Payne
 				["sourceQuests"] = { 31928 },	-- Grand Master Payne
 				["provider"] = { "n", 66675 },	-- Major Payne
-				["coord"] = { 77.4, 19.6, ICECROWN },
+				["coords"] = {
+					{ 77.4, 19.6, ICECROWN },
+					-- #if AFTER 11.0.5
+					{ 62.0, 49.5, TANARIS },
+					-- #endif
+				},
 				["g"] = {
 					SACK_OF_PET_SUPPLIES
 				},
 			}),
 			q(31934, {	-- Gutretch
 				["provider"] = { "n", 66639 },
-				["coord"] = { 13.2, 66.7, ZULDRAK },
+				["coords"] = {
+					{ 13.2, 66.7, ZULDRAK },
+					-- #if AFTER 11.0.5
+					{ 62.0, 49.5, TANARIS },
+					-- #endif
+				},
 			}),
 		}),
 		expansion(EXPANSION.CATA, {
 			q(31972, {	-- Brok
 				["provider"] = { "n", 66819 },	-- Brok
-				-- #if BEFORE 11.0.5
-				["coord"] = { 61.4, 32.7, MOUNT_HYJAL },
-				-- #else
 				["coords"] = {
 					{ 61.4, 32.7, MOUNT_HYJAL },
+					-- #if AFTER 11.0.5
 					{ 62.1, 49.6, TANARIS },
+					-- #endif
 				},
-				-- #endif
 			}),
 			q(31974, {	-- Goz Banefury
 				["provider"] = { "n", 66822 },	-- Goz Banefury
-				-- #if BEFORE 11.0.5
-				["coord"] = { 56.5, 56.7, TWILIGHT_HIGHLANDS },
-				-- #else
 				["coords"] = {
 					{ 56.5, 56.7, TWILIGHT_HIGHLANDS },
+					-- #if AFTER 11.0.5
 					{ 62.1, 49.6, TANARIS },
+					-- #endif
 				},
-				-- #endif
 			}),
 			q(31971, {	-- Grand Master Obalis
 				["sourceQuests"] = { 31970 },	-- Grand Master Obalis
 				["provider"] = { "n", 66824 },	-- Obalis
-				-- #if BEFORE 11.0.5
-				["coord"] = { 56.6, 41.8, ULDUM },
-				-- #else
 				["coords"] = {
 					{ 56.6, 41.8, ULDUM },
+					-- #if AFTER 11.0.5
 					{ 61.9, 49.6, TANARIS },
+					-- #endif
 				},
-				-- #endif
 				["g"] = {
 					SACK_OF_PET_SUPPLIES
 				},
 			}),
 			q(31973, {	-- Bordin Steadyfist
 				["provider"] = { "n", 66815 },	-- Bordin Steadyfist
-				-- #if BEFORE 11.0.5
-				["coord"] = { 49.9, 57.1, DEEPHOLM },
-				-- #else
 				["coords"] = {
 					{ 49.9, 57.1, DEEPHOLM },
+					-- #if AFTER 11.0.5
 					{ 61.9, 49.6, TANARIS },
+					-- #endif
 				},
-				-- #endif
 				["repeatable"] = true,
 			}),
 		}),

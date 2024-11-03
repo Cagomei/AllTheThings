@@ -12327,3 +12327,16 @@
 7529@@@+$k1 Intellect & +$457615s1% Mana |A:Professions-ChatIcon-Quality-Tier1:20:20|a
 7530@@@+$k1 Intellect & +$457616s1% Mana |A:Professions-ChatIcon-Quality-Tier2:20:20|a
 7531@@@+$k1 Intellect & +$457617s1% Mana |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+11.0.7.57361
+7571@@@|C00fff569Thunderlord's Crackling Citrine
+7572@@@|C00fff569Squall Sailor's Citrine
+7573@@@|C00fff569Undersea Overseer's Citrine
+7575@@@|C00f58cbaStormbringer's Runed Citrine
+7576@@@|C00f58cbaFathomdweller's Runed Citrine
+7577@@@|C00f58cbaWindsinger's Runed Citrine
+7579@@@|C00ff8000Storm Sewer's Citrine
+7580@@@|C00ff8000Old Salt's Citrine
+7581@@@|C00ff8000Mariner's Hallowed Citrine
+7583@@@|C003fc7ebLegendary Skipper's Citrine
+7584@@@|C003fc7ebSeabed Leviathan's Citrine
+7585@@@|C003fc7ebRoaring War-Queen's Citrine

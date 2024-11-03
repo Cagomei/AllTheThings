@@ -45,12 +45,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 	["groups"] = {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(19079, {	-- Master of the Turbulent Timeways
-			["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
-			["groups"] = {
-				crit(62267),	-- Gain Mastery of Timeways for 5 weeks
-				i(205208),	-- Sandy Shalewing (MOUNT!)
-			},
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				["groups"] = {
+					crit(62267),	-- Gain Mastery of Timeways for 5 weeks
+					i(205208),	-- Sandy Shalewing (MOUNT!)
+				},
 			}),
+			--[[ TODO: Needs criteria
+			ach(41056, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {	-- Master of the Turbulent Timeways II
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				["groups"] = {
+					--crit(???),	-- Gain Mastery of Timeways for 5 weeks
+					i(232624),	-- Timely Buzzbee (MOUNT!)
+				},
+			})),
+			]]--
 		})),
 		n(COMMON_BOSS_DROPS, {
 			i(133543, {	-- Infinite Timereaver (MOUNT!)
@@ -317,53 +326,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				},
 			}),
 		}),
-		inst_tw(1277, {	-- Dire Maul - Gordok Commons
-			e(411, {	-- Guard Mol'dar
-				["crs"] = { 14326 },	-- Guard Mol'dar
-				["g"] = {
-					i(18493),	-- Bulky Iron Spaulders
-					i(18494),	-- Denwatcher's Shoulders
-					i(18498),	-- Hedgecutter
-					i(18496),	-- Heliotrope Cloak
-					i(18451),	-- Hyena Hide Belt
-					i(18462),	-- Jagged Bone Fist
-					i(18463),	-- Ogre Pocket Knife
-					i(18450),	-- Robe of Combustion
-					i(18497),	-- Sublime Wristguards
-					i(18460),	-- Unsophisticated Hand Cannon
-				},
-			}),
-			e(412, {	-- Stomper Kreeg
-				["crs"] = { 14322 },	-- Stomper Kreeg
-				["g"] = {
-					i(18464),	-- Gordok Nose Ring
-					i(18425),	-- Kreeg's Mug
-				},
-			}),
-			e(416, {	-- Cho'Rush the Observer
-				["crs"] = { 14324 },	-- Cho'Rush the Observer
-				["g"] = {
-					i(18484),	-- Cho'Rush's Blade
-					i(18459),	-- Gallant's Wristguards
-					i(18527),	-- Harmonious Gauntlets
-					i(18490),	-- Insightful Hood
-					i(18483),	-- Mana Channeling Wand
-					i(18485),	-- Observer's Shield
-				},
-			}),
-			e(417, {	-- King Gordok
-				["crs"] = { 11501 },	-- King Gordok
-				["g"] = {
-					i(18522),	-- Band of the Ogre King
-					i(18520),	-- Barbarous Blade
-					i(18525),	-- Bracers of Prosperity
-					i(18523),	-- Brightly Glowing Stone
-					i(18526),	-- Crown of the Ogre King
-					i(18521),	-- Grimy Metal Boots
-					i(18524),	-- Leggings of Destruction
-				},
-			}),
-		}),
 		inst_tw(1276, {	-- Dire Maul - Warpwood Quarter
 			e(404, {	-- Lethtendris
 				["crs"] = { 14327 },	-- Lethtendris
@@ -435,6 +397,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				["crs"] = { 11143 },	-- Postmaster Malown
 				["g"] = {
 					i(13393),	-- Malown's Slam
+					--i(232905),	-- Malown's Slam TODO: missing sourceid?
 					i(13390),	-- The Postmaster's Band
 					i(13392),	-- The Postmaster's Seal
 					i(13391),	-- The Postmaster's Treads
@@ -649,6 +612,18 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 		}),
 	})),
 })));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(EXPANSION.CLASSIC, {
+	-- Dungeons
+	63,		-- Deadmines
+	230,	-- Dire Maul - Capital Gardens
+	1276,	-- Dire Maul - Warpwood Quarter
+	236,	-- Stratholme - Main Gate
+	1292,	-- Stratholme - Service Entrance
+	241,	-- Zul'Farrak
+});
 
 -- The Burning Crusade Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND_DUNGEON_EVENT, {
@@ -5548,11 +5523,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 					{"sub", "common_wod_dungeon_drop_tw", 24, FINGER},
 				},
 				["g"] = {
-					ig(127772, {	-- Gemcutter Module: Haste
+					TempForceMisc(ig(127772, {	-- Gemcutter Module: Haste
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-						["f"] = MISC,
-					}),
+					})),
 					i(110033),	-- Arcanic of the High Sage
 					i(110034),	-- Viryx's Indomitable Bulwark
 					i(110011),	-- Fires of the Sun

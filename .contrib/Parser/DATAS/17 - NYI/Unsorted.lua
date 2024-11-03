@@ -4,6 +4,651 @@
 -- Everything in this file hasn't been sorted yet.
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.TWW, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+			i(17198),	-- Winter Veil Eggnog
+			i(17201),	-- Recipe: Winter Veil Eggnog
+			i(35953),	-- Mead-Basted Caribou
+			i(100739),	-- Superheated Oil
+			i(152858),	-- Cracked Crystalline Fruit Bowl
+			i(185739),	-- Crystalline Shard
+			i(206167),	-- Way of the Wondrous Wavewhisker
+			i(208887),	-- Erden's Notes
+			i(214504),	-- Emerald Necklace
+			i(217269),	-- Arcane-Suffused Organ
+			i(218113),	-- Sweet-Sting Venom
+			i(218738),	-- Bizarrely Shaped Stomach
+			i(222706),	-- Pan-Seared Mycobloom
+			i(222709),	-- Flashfire Fillet
+			i(222716),	-- Ginger-Glazed Fillet
+			i(222757),	-- Hearty Flashfire Fillet
+			i(222764),	-- Hearty Ginger-Glazed Fillet
+			i(222926),	-- Leg Chewer's Stomach
+			i(223292),	-- Gem-Wadded Shoulderpads
+			i(223295),	-- Slag-Accruing Mask
+			i(223303),	-- Gem-Wadded Footwraps
+			i(223304),	-- Slag-Accruing Waistguard
+			i(223956),	-- Recipe: Everything-on-a-Stick
+			i(223966),	-- Everything-on-a-Stick
+			i(224258),	-- [DNT] Flower
+			i(224584),	-- Erosion-Polished Slate
+			i(225484),	-- Technique: Algari Competitor's Lamp
+			i(226377),	-- Mining Journa - Page 1
+			i(226387),	-- Battle-Tested Warhammer
+			i(226388),	-- Battle-Tested Obsidian Warhammer
+			i(226521),	-- Reinforced Wax Plating
+			i(226853),	-- Ore Sample
+			i(227453),	-- Kaja'Cola Stash
+			i(227670),	-- Kaja'Cola Can
+			i(228095),	-- Scroll of Empowered Time Warp
+			i(228411),	-- Cyrce's Circlet
+			i(228526),	-- Cyrce's Circlet
+			i(228621),	-- Bilge Rat Supply Key
+			i(228634),	-- Thunderlord's Crackling Citrine
+			i(228635),	-- Squall Sailor's Citrine
+			i(228636),	-- Undersea Overseer's Citrine
+			i(228637),	-- Delete Me
+			i(228638),	-- Stormbringer's Runed Citrine
+			i(228639),	-- Fathomdweller's Runed Citrine
+			i(228640),	-- Windsinger's Runed Citrine
+			i(228641),	-- Delete Me
+			i(228642),	-- Storm Sewer's Citrine
+			i(228643),	-- Old Salt's Bardic Citrine
+			i(228644),	-- Mariner's Hallowed Citrine
+			i(228645),	-- Delete Me
+			i(228646),	-- Legendary Skipper's Citrine
+			i(228647),	-- Seabed Leviathan's Citrine
+			i(228648),	-- Roaring War-Queen's Citrine
+			i(228649),	-- Delete Me
+			i(228665),	-- Empty Kaja'Cola
+			i(229001),	-- Rune Carved Band
+			i(229002),	-- Cracked Citrine
+			i(229010),	-- Earthen Scallywag's Cloak
+			i(229011),	-- Earthen Scallywag's Vestment
+			i(229012),	-- Earthen Scallywag's Sandals
+			i(229013),	-- Earthen Scallywag's Handwraps
+			i(229014),	-- Earthen Scallywag's Cowl
+			i(229015),	-- Earthen Scallywag's Leggings
+			i(229016),	-- Earthen Scallywag's Mantle
+			i(229017),	-- Earthen Scallywag's Cord
+			i(229018),	-- Earthen Scallywag's Cuffs
+			i(229019),	-- Earthen Deckhand's Cape
+			i(229020),	-- Earthen Deckhand's Vest
+			i(229021),	-- Earthen Deckhand's Waders
+			i(229022),	-- Earthen Deckhand's Grips
+			i(229023),	-- Earthen Deckhand's Breeches
+			i(229024),	-- Earthen Deckhand's Shoulderpads
+			i(229025),	-- Earthen Deckhand's Sash
+			i(229026),	-- Earthen Deckhand's Bindings
+			i(229027),	-- Earthen Islander's Shawl
+			i(229028),	-- Earthen Islander's Chainmail
+			i(229029),	-- Earthen Islander's Striders
+			i(229030),	-- Earthen Islander's Grips
+			i(229031),	-- Earthen Islander's Coif
+			i(229032),	-- Earthen Islander's Greaves
+			i(229033),	-- Earthen Islander's Shoulderguards
+			i(229034),	-- Earthen Islander's Cinch
+			i(229035),	-- Earthen Islander's Bracers
+			i(229036),	-- Earthen Landlubber's Drape
+			i(229037),	-- Earthen Landlubber's Breastplate
+			i(229038),	-- Earthen Landlubber's Sabatons
+			i(229039),	-- Earthen Landlubber's Gauntlets
+			i(229040),	-- Earthen Landlubber's Helm
+			i(229041),	-- Earthen Landlubber's Legguards
+			i(229042),	-- Earthen Landlubber's Mantle
+			i(229043),	-- Earthen Landlubber's Girdle
+			i(229044),	-- Earthen Landlubber's Armplates
+			i(229045),	-- Earthen Deckhand's Cap
+			i(229050),	-- Seafarer's Wandering Signet
+			i(229051),	-- Scurvy Sailor's Ring
+			i(229052),	-- Moneyed Mariner's Pendant
+			i(229053),	-- Conch Collector's Locket
+			i(229167),	-- Earthen Deckhand's Cleaver
+			i(229168),	-- Earthen Landlubber's Axe
+			i(229169),	-- Earthen Landlubber's Sword
+			i(229170),	-- Earthen Scallywag's Saber
+			i(229171),	-- Earthen Landlubber's Polearm
+			i(229172),	-- Earthen Deckhand's Halberd
+			i(229173),	-- Earthen Scallywag's Spear
+			i(229174),	-- Earthen Landlubber's Shield
+			i(229175),	-- Earthen Deckhand's Bulwark
+			i(229176),	-- Earthen Landlubber's Greatsword
+			i(229177),	-- Earthen Landlubber's Greataxe
+			i(229178),	-- Earthen Scallywag's Gavel
+			i(229179),	-- Earthen Deckhand's Cudgel
+			i(229180),	-- Earthen Landlubber's Hammer
+			i(229181),	-- [PH] Placeholder
+			i(229182),	-- Earthen Deckhand's Dagger
+			i(229183),	-- Earthen Landlubber's Knife
+			i(229184),	-- Earthen Deckhand's Knuckles
+			i(229185),	-- Earthen Deckhand's Warglaive
+			i(229186),	-- Earthen Scallywag's Greatstaff
+			i(229187),	-- Earthen Deckhand's Rod
+			i(229188),	-- Earthen Scallywag's Implement
+			i(229189),	-- Earthen Scallywag's Bow
+			i(229190),	-- Earthen Deckhand's Blunderbuss
+			i(229191),	-- Earthen Landlubber's Crossbow
+			i(229192),	-- Earthen Scallywag's Kris
+			i(229365),	-- Raw Singing Citrine
+			i(229811),	-- Frost-Etched Dagger
+			i(229967),	-- Salvageable Scrap
+			i(230207),	-- N.U.K.U.L.A.R. Target Painter
+			i(230211),	-- Singing Citrine
+			i(230728),	-- Experimental Go-Pack
+			i(230770),	-- Sturdy Toolbox
+			i(230771),	-- Earthen Prototype
+			i(230773),	-- Overcharged Battery
+			i(230795),	-- Experimental Go-Pack
+			i(230851),	-- Ornate Arathi Box
+			i(230945),	-- Wayward Vrykul's Lantern
+			i(231116),	-- Cursed Pirate Skull
+			i(231117),	-- Darktide Wavebender's Orb
+			i(231118),	-- Runecaster's Stormbound Rune
+			i(231751),	-- Earthen Backpack
+			i(231786),	-- Ookler's Diary
+			i(231788),	-- Songs of the Siren
+			i(231802),	-- Ashvane Co. Survey Report
+			i(231809),	-- First Mate Dat-Dat's Key
+			i(231812),	-- Hozen Poetry
+			i(231813),	-- Siren Isle Manifest
+			i(232372),	-- Crate of Bygone Riches
+			i(232439),	-- Rune-Seared Spear
+			i(232519),	-- Razeshi B.
+			i(232569),	-- Cyclonic Runekey
+			i(232570),	-- Turbulent Runekey
+			i(232571),	-- Whirling Runekey
+			i(232572),	-- Torrential Runekey
+			i(232573),	-- Thunderous Runekey
+			i(232597),	-- Swabbie's Oar
+			i(232605),	-- Thunderous Fragment
+			i(232629),	-- Distilled Knowledge of Timeways
+			i(232632),	-- Spiral Mollusk Shell
+			i(232633),	-- Shiny Seaside Clam
+			i(232634),	-- Emptied Turtle Shell
+			i(232635),	-- Torn Bilgewater Bandage
+			i(232636),	-- Rum-Soaked Hankerchief
+			i(232637),	-- Cracked Pirate Skull
+			i(232638),	-- Loosened Naga Scales
+			i(232639),	-- Thrayir, Eyes of the Siren
+			i(232643),	-- Mysterious Tattered Journal
+			i(232645),	-- Celestial Barrage
+			i(232646),	-- Root Defender's Spear
+			i(232647),	-- Root Defender's Shield
+			i(232653),	-- Portentous Present
+			i(232654),	-- Compiled Tattered Journal
+			i(232694),	-- Transcribed Kul Tiran Journal
+			i(232860),	-- Singing Fragments
+			i(232861),	-- Singing Fragments
+			i(232862),	-- Singing Fragments
+			i(232901),	-- Lunar Launcher
+			i(232909),	-- Sky Witch's Heartfelt Shoulder Cape
+			i(232910),	-- Vivid Heartfelt Shoulder Cape
+			i(232911),	-- Truly Heartfelt Shoulder Cape
+			i(232912),	-- Twilight Witch's Heartfelt Shoulder Cape
+			i(232913),	-- Sky Witch's Heartfelt Spaulders
+			i(232914),	-- Truly Heartfelt Spaulders
+			i(232915),	-- Twilight Witch's Heartfelt Spaulders
+			i(232916),	-- Vivid Heartfelt Spaulders
+			i(232923),	-- Living Rose
+			i(232924),	-- Sailor's Belt
+			i(232925),	-- Ensemble: Truly Heartfelt Shoulders
+			i(232926),	-- Love Witch's Sweeper
+			i(232933),	-- Ensemble: Sky Witch's Heartfelt Shoulders
+			i(232934),	-- Ensemble: Twilight Witch's Heartfelt Shoulders
+			i(232946),	-- Verus
+			i(232988),	-- Void Tear
+			i(232991),	-- The Breaker's Song
+			i(233013),	-- Coal Cookie
+			i(233019),	-- Sky Witch's Sweeper
+			i(233020),	-- Twilight Witch's Sweeper
+			i(233023),	-- [PH]
+			i(233027),	-- Well Loved Squeaky Toy
+			i(233051),	-- G.R.A.V. Glove
+			i(233056),	-- Marmaduke
+			i(233057),	-- Rock Hound Mica
+			i(233058),	-- [PH] red surfboard
+			i(233072),	-- Short Crimson War Skirt
+			i(233073),	-- Long Crimson War Skirt
+			i(233074),	-- Short Crimson War Skirt and Leg Wraps
+			i(233075),	-- Long Crimson War Skirt and Leg Wraps
+			i(233076),	-- Banded Crimson War Wraps
+			i(233078),	-- Banded Crimson War Slippers
+			i(233079),	-- Short Midnight War Skirt
+			i(233080),	-- Short Azure War Skirt
+			i(233081),	-- Short Sepia War Skirt
+			i(233082),	-- Short Grassy War Skirt
+			i(233083),	-- Short Cloudy War Skirt
+			i(233084),	-- Short Deep War Skirt
+			i(233085),	-- Short Camo War Skirt
+			i(233086),	-- Short Brick War Skirt
+			i(233087),	-- Short Lively War Skirt
+			i(233088),	-- Short Faded War Skirt
+			i(233089),	-- Short Carrot War Skirt
+			i(233090),	-- Short Rosy War Skirt
+			i(233091),	-- Short Plum War Skirt
+			i(233092),	-- Short Violet War Skirt
+			i(233093),	-- Short Aquatic War Skirt
+			i(233094),	-- Short Snowy War Skirt
+			i(233095),	-- Short Sunny War Skirt
+			i(233096),	-- Long Midnight War Skirt
+			i(233097),	-- Long Azure War Skirt
+			i(233098),	-- Long Sepia War Skirt
+			i(233099),	-- Long Grassy War Skirt
+			i(233100),	-- Long Cloudy War Skirt
+			i(233101),	-- Long Deep War Skirt
+			i(233102),	-- Long Camo War Skirt
+			i(233103),	-- Long Brick War Skirt
+			i(233104),	-- Long Lively War Skirt
+			i(233105),	-- Long Faded War Skirt
+			i(233106),	-- Long Carrot War Skirt
+			i(233107),	-- Long Rosy War Skirt
+			i(233108),	-- Long Plum War Skirt
+			i(233109),	-- Long Violet War Skirt
+			i(233110),	-- Long Aquatic War Skirt
+			i(233111),	-- Long Snowy War Skirt
+			i(233112),	-- Long Sunny War Skirt
+			i(233116),	-- Short Midnight War Skirt and Leg Wraps
+			i(233117),	-- Short Azure War Skirt and Leg Wraps
+			i(233120),	-- Short Sepia War Skirt and Leg Wraps
+			i(233121),	-- Short Grassy War Skirt and Leg Wraps
+			i(233122),	-- Short Cloudy War Skirt and Leg Wraps
+			i(233123),	-- Short Deep War Skirt and Leg Wraps
+			i(233124),	-- Short Camo War Skirt and Leg Wraps
+			i(233125),	-- Short Brick War Skirt and Leg Wraps
+			i(233126),	-- Short Lively War Skirt and Leg Wraps
+			i(233127),	-- Short Faded War Skirt and Leg Wraps
+			i(233128),	-- Short Carrot War Skirt and Leg Wraps
+			i(233129),	-- Short Rosy War Skirt and Leg Wraps
+			i(233130),	-- Short Plum War Skirt and Leg Wraps
+			i(233131),	-- Short Violet War Skirt and Leg Wraps
+			i(233132),	-- Short Aquatic War Skirt and Leg Wraps
+			i(233133),	-- Short Snowy War Skirt and Leg Wraps
+			i(233134),	-- Short Sunny War Skirt and Leg Wraps
+			i(233135),	-- Long Midnight War Skirt and Leg Wraps
+			i(233136),	-- Long Azure War Skirt and Leg Wraps
+			i(233137),	-- Long Sepia War Skirt and Leg Wraps
+			i(233138),	-- Long Grassy War Skirt and Leg Wraps
+			i(233139),	-- Long Cloudy War Skirt and Leg Wraps
+			i(233140),	-- Long Deep War Skirt and Leg Wraps
+			i(233141),	-- Long Camo War Skirt and Leg Wraps
+			i(233142),	-- Long Brick War Skirt and Leg Wraps
+			i(233143),	-- Long Lively War Skirt and Leg Wraps
+			i(233144),	-- Long Faded War Skirt and Leg Wraps
+			i(233145),	-- Long Carrot War Skirt and Leg Wraps
+			i(233146),	-- Long Rosy War Skirt and Leg Wraps
+			i(233147),	-- Long Plum War Skirt and Leg Wraps
+			i(233148),	-- Long Violet War Skirt and Leg Wraps
+			i(233149),	-- Long Aquatic War Skirt and Leg Wraps
+			i(233150),	-- Long Snowy War Skirt and Leg Wraps
+			i(233151),	-- Long Sunny War Skirt and Leg Wraps
+			i(233152),	-- Banded Midnight War Wraps
+			i(233153),	-- Banded Azure War Wraps
+			i(233154),	-- Banded Sepia War Wraps
+			i(233155),	-- Banded Grassy War Wraps
+			i(233156),	-- Banded Cloudy War Wraps
+			i(233157),	-- Banded Deep War Wraps
+			i(233158),	-- Banded Camo War Wraps
+			i(233159),	-- Banded Brick War Wraps
+			i(233160),	-- Banded Lively War Wraps
+			i(233161),	-- Banded Faded War Wraps
+			i(233162),	-- Banded Carrot War Wraps
+			i(233163),	-- Banded Rosy War Wraps
+			i(233164),	-- Banded Plum War Wraps
+			i(233165),	-- Banded Violet War Wraps
+			i(233166),	-- Banded Aquatic War Wraps
+			i(233167),	-- Banded Snowy War Wraps
+			i(233168),	-- Banded Sunny War Wraps
+			i(233169),	-- Banded Midnight War Slippers
+			i(233170),	-- Banded Azure War Slippers
+			i(233171),	-- Banded Sepia War Slippers
+			i(233172),	-- Banded Grassy War Slilppers
+			i(233173),	-- Banded Cloudy War Slippers
+			i(233174),	-- Banded Deep War Slippers
+			i(233175),	-- Banded Camo War Slippers
+			i(233176),	-- Banded Brick War Slippers
+			i(233177),	-- Banded Lively War Slippers
+			i(233178),	-- Banded Faded War Slippers
+			i(233179),	-- Banded Carrot War Slippers
+			i(233180),	-- Banded Rosy War Slippers
+			i(233181),	-- Banded Plum War Slippers
+			i(233182),	-- Banded Violet War Slippers
+			i(233183),	-- Banded Aquatic War Slippers
+			i(233184),	-- Banded Snowy War Slippers
+			i(233185),	-- Banded Sunny War Slippers
+			i(233207),	-- The Coward's Azure Target
+			i(233218),	-- Crimson Lunar Lantern
+			i(233219),	-- Azure Lunar Lantern
+			i(233220),	-- Lively Lunar Lantern
+			i(233221),	-- Violet Lunar Lantern
+			i(233223),	-- Jade Lunar Blade
+			i(233224),	-- Obsidian Lunar Blade
+			i(233225),	-- Cobalt Lunar Blade
+			i(233227),	-- Gold Lunar Blade
+			i(233228),	-- Jade Lunar Polearm
+			i(233229),	-- Silver Lunar Polearm
+			i(233230),	-- Gold Lunar Polearm
+			i(233231),	-- Steel Lunar Polearm
+			i(233232),	-- Crimson Lunar Firewhacker
+			i(233233),	-- Azure Lunar Firewhacker
+			i(233234),	-- Lively Lunar Firewhacker
+			i(233235),	-- Violet Lunar Firewhacker
+			i(233236),	-- Crimson Pack of Lunar Explosives
+			i(233237),	-- Lively Pack of Lunar Explosives
+			i(233238),	-- Azure Pack of Lunar Explosives
+			i(233239),	-- Sunny Pack of Lunar Explosives
+			i(233249),	-- Golden Clockwork Mace
+			i(233253),	-- Purple Clockwork Mace
+			i(233254),	-- Blue Clockwork Mace
+			i(233255),	-- Green Clockwork Mace
+			i(233256),	-- Cobalt Clockwork Doomfist
+			i(233257),	-- Golden Clockwork Doomfist
+			i(233258),	-- Green Clockwork Doomfist
+			i(233259),	-- Purple Clockwork Doomfist
+			i(233268),	-- Long-Range Violet Clockstopper
+			i(233269),	-- Long-Range Cobalt Clockstopper
+			i(233270),	-- Long-Range Golden Clockstopper
+			i(233271),	-- Long-Range Green Clockstopper
+			i(233272),	-- Steam-Powered Cobalt Clock Cloak
+			i(233273),	-- Steam-Powered Golden Clock Cloak
+			i(233274),	-- Steam-Powered Green Clock Cloak
+			i(233275),	-- Steam-Powered Violet Clock Cloak
+			i(233277),	-- Golden Clockwork Defender
+			i(233278),	-- Cobalt Clockwork Defender
+			i(233279),	-- Green Clockwork Defender
+			i(233280),	-- Violet Clockwork Defender
+			i(233291),	-- Cobalt Clockwork Cap
+			i(233292),	-- Golden Clockwork Cap
+			i(233293),	-- Green Clockwork Cap
+			i(233294),	-- Violet Clockwork Cap
+			i(233295),	-- Cobalt Clockwork Pauldrons
+			i(233296),	-- Golden Clockwork Pauldrons
+			i(233300),	-- Green Clockwork Pauldrons
+			i(233301),	-- Violet Clockwork Pauldrons
+			i(233302),	-- Cobalt Clockwork Uniform
+			i(233303),	-- Golden Clockwork Uniform
+			i(233304),	-- Green Clockwork Uniform
+			i(233305),	-- Violet Clockwork Uniform
+			i(233306),	-- Cobalt Clockwork Leggings
+			i(233307),	-- Golden Clockwork Leggings
+			i(233308),	-- Green Clockwork Leggings
+			i(233309),	-- Violet Clockwork Leggings
+			i(233310),	-- Cobalt Clockwork Belt
+			i(233311),	-- Golden Clockwork Belt
+			i(233312),	-- Green Clockwork Belt
+			i(233313),	-- Violet Clockwork Belt
+			i(233314),	-- Cobalt Clockwork Bracer
+			i(233315),	-- Golden Clockwork Bracer
+			i(233316),	-- Green Clockwork Bracer
+			i(233317),	-- Violet Clockwork Bracer
+			i(233318),	-- Cobalt Clockwork Glove
+			i(233319),	-- Golden Clockwork Glove
+			i(233320),	-- Green Clockwork Glove
+			i(233321),	-- Violet Clockwork Glove
+			i(233322),	-- Cobalt Clockwork Boots
+			i(233323),	-- Golden Clockwork Boots
+			i(233324),	-- Green Clockwork Boots
+			i(233325),	-- Violet Clockwork Boots
+			i(233327),	-- Cobalt Clockwork Attire
+			i(233328),	-- Ensemble: Golden Clockwork Attire
+			i(233329),	-- Green Clockwork Attire
+			i(233330),	-- Violet Clockwork Attire
+			i(233331),	-- Aura of Zealotry
+			i(233354),	-- Savage Alabaster Battle Turtle
+			i(233355),	-- Bronze Helm of Righteousness
+			i(233359),	-- Green Clockwork Contraptions Collection
+			i(233360),	-- Gold-Reinforced Cushioned Boots
+			i(233361),	-- Wind-Up Wuffi
+			i(233366),	-- Wind-Up Woofer
+			i(233447),	-- Marmaduke's "Ducky Friend"
+			i(233486),	-- Arathi Crate
+			i(233489),	-- [PH] Multi-color Snapdragon
+			i(233493),	-- [PH] Snapdragon Treat 01
+			i(233494),	-- [PH] Snapdragon Treat 02
+			i(233495),	-- [PH] Snapdragon Treat 03
+			i(233497),	-- [PH] Snapdragon Treat 04
+			i(233498),	-- [PH] Snapdragon Treat 05
+			i(233499),	-- [PH] Snapdragon Treat 06
+			i(233500),	-- [PH] Snapdragon Treat 07
+			i(233501),	-- [PH] Snapdragon Treat 08
+			i(233650),	-- Call Galefeather
+			i(233800),	-- [PH] Chris' Flavor Test Item
+			i(233805),	-- [PH] Wand
+			i(233806),	-- [PH] Claymore
+			i(233807),	-- [PH] Claymore
+			i(233809),	-- [PH] Naga Blade
+			i(233810),	-- [PH] Naga Sword
+			i(233811),	-- [PH] Legs
+			i(233812),	-- [PH] Arathi Youngling's Training Sword
+			i(233814),	-- [PH] Sailor's Mop
+			i(233815),	-- [PH] Sailor's Mop
+			i(233816),	-- [PH] Naga Staff
+			i(233817),	-- [PH] Naga Trident
+			i(233818),	-- [PH] Vrykul Blacksmithing Mace
+			i(233819),	-- [PH] Vrykul Blacksmithing Mace
+			i(233820),	-- [PH] Iron Mallet
+			i(233821),	-- [PH] Smith's Tongs
+			i(233822),	-- [PH] Earthen Pitcher
+			i(233823),	-- [PH] Arathor Mallet
+			i(233824),	-- [PH] Earthen Hammer
+			i(233825),	-- [PH] Crafter's Tool
+			i(233827),	-- [PH] Crafter's Mallet
+			i(233828),	-- [PH] Arathor Brush
+			i(233829),	-- [PH] Earthen Goblet
+			i(233830),	-- [PH] Naga's Lobster Claw
+			i(233831),	-- [PH] Fletcher's Blade
+			i(233832),	-- [PH] Naga Blade
+			i(233834),	-- [PH] Crystalline Ritual Blade
+			i(233835),	-- [PH] Arathor Tongs
+			i(233836),	-- [PH] Arathor Chisel
+			i(233838),	-- [PH] Chest
+			i(233839),	-- [PH] Chest
+			i(233840),	-- [PH] Chest
+			i(233841),	-- [PH] Chest
+			i(233842),	-- [PH] Chest
+			i(233843),	-- [PH] Chest
+			i(233844),	-- [PH] Chest
+			i(233845),	-- [PH] Chest
+			i(233846),	-- [PH] Chest
+			i(233847),	-- [PH] Chest
+			i(233848),	-- [PH] Chest
+			i(233849),	-- [PH] Chest
+			i(233850),	-- [PH] Chest
+			i(233851),	-- [PH] Chest
+			i(233852),	-- [PH] Chest
+			i(233853),	-- [PH] Chest
+			i(233854),	-- [PH] Chest
+			i(233855),	-- [PH] Chest
+			i(233856),	-- [PH] Vrykul Longbow
+			i(233857),	-- [PH] Vrykul Bow
+			i(233858),	-- [PH] Waist
+			i(233859),	-- [PH] Feet
+			i(233860),	-- [PH] Waist
+			i(233861),	-- [PH] Feet
+			i(233862),	-- [PH] Hand
+			i(233863),	-- [PH] Head
+			i(233864),	-- [PH] Legs
+			i(233865),	-- [PH] Shoulder
+			i(233866),	-- [PH] Wrist
+			i(233867),	-- [PH] Waist
+			i(233868),	-- [PH] Feet
+			i(233869),	-- [PH] Hand
+			i(233870),	-- [PH] Head
+			i(233871),	-- [PH] Legs
+			i(233872),	-- [PH] Shoulder
+			i(233873),	-- [PH] Wrist
+			i(233874),	-- [PH] Head
+			i(233875),	-- [PH] Waist
+			i(233876),	-- [PH] Feet
+			i(233877),	-- [PH] Hand
+			i(233878),	-- [PH] Head
+			i(233879),	-- [PH] Shoulder
+			i(233880),	-- [PH] Legs
+			i(233881),	-- [PH] Wrist
+			i(233882),	-- [PH] Waist
+			i(233883),	-- [PH] Feet
+			i(233884),	-- [PH] Hand
+			i(233885),	-- [PH] Head
+			i(233886),	-- [PH] Legs
+			i(233887),	-- [PH] Shoulder
+			i(233888),	-- [PH] Wrist
+			i(233889),	-- [PH] Legs
+			i(233890),	-- [PH] Feet
+			i(233891),	-- [PH] Waist
+			i(233892),	-- [PH] Waist
+			i(233893),	-- [PH] Feet
+			i(233894),	-- [PH] Feet
+			i(233895),	-- [PH] Legs
+			i(233896),	-- [PH] Legs
+			i(233897),	-- [PH] Hand
+			i(233898),	-- [PH] Hand
+			i(233899),	-- [PH] Waist
+			i(233900),	-- [PH] Waist
+			i(233901),	-- [PH] Feet
+			i(233902),	-- [PH] Head
+			i(233903),	-- [PH] Head
+			i(233904),	-- [PH] Head
+			i(233905),	-- [PH] Head
+			i(233906),	-- [PH] Head
+			i(233907),	-- [PH] Head
+			i(233908),	-- [PH] Head
+			i(233909),	-- [PH] Head
+			i(233910),	-- [PH] Head
+			i(233911),	-- [PH] Head
+			i(233912),	-- [PH] Head
+			i(233913),	-- [PH] Shield
+			i(233914),	-- [PH] Lumberjack's Hatchet
+			i(233915),	-- [PH] Feet
+			i(233916),	-- [PH] Feet
+			i(233917),	-- [PH] Head
+			i(233918),	-- [PH] Head
+			i(233919),	-- [PH] Head
+			i(233920),	-- [PH] Head
+			i(233921),	-- [PH] Head
+			i(233922),	-- [PH] Head
+			i(233923),	-- [PH] Shoulder
+			i(233924),	-- [PH] Shoulder
+			i(233925),	-- [PH] Shoulder
+			i(233926),	-- [PH] Shoulder
+			i(233927),	-- [PH] Shoulder
+			i(233928),	-- [PH] Tabard
+			i(233929),	-- [PH] Tabard
+			i(233930),	-- [PH] Shoulder
+			i(233931),	-- [PH] Shoulder
+			i(233932),	-- [PH] Tabard
+			i(233933),	-- [PH] Tabard
+			i(233934),	-- [PH] Shield
+			i(233935),	-- [PH] Head
+			i(233936),	-- [PH] Head
+			i(233937),	-- [PH] Head
+			i(233938),	-- [PH] Feet
+			i(233939),	-- [PH] Wrist
+			i(233940),	-- [PH] Legs
+			i(233941),	-- [PH] Legs
+			i(233942),	-- [PH] Waist
+			i(233943),	-- [PH] Wrist
+			i(233944),	-- [PH] Legs
+			i(233945),	-- [PH] Legs
+			i(233946),	-- [PH] Waist
+			i(233947),	-- [PH] Wrist
+			i(233948),	-- [PH] Legs
+			i(233949),	-- [PH] Waist
+			i(233950),	-- [PH] Wrist
+			i(233951),	-- [PH] Waist
+			i(233952),	-- [PH] Legs
+			i(233953),	-- [PH] Wrist
+			i(233954),	-- [PH] Feet
+			i(233955),	-- [PH] Mining Pick
+			i(233957),	-- [PH] Lumberer's Hatchet
+			i(233961),	-- [PH] Bloodwake Shield
+			i(233963),	-- [PH] Naga Buckler
+			i(233970),	-- [PH] Cloak
+			i(233971),	-- [PH] Cloak
+			i(233972),	-- [PH] Cloak
+			i(233973),	-- [PH] Cloak
+			i(233974),	-- [PH] Cloak
+			i(233975),	-- [PH] Cloak
+			i(233976),	-- [PH] Cloak
+			i(233978),	-- [PH] Cloak
+			i(233979),	-- [PH] Cloak
+			i(233980),	-- [PH] Cloak
+			i(233981),	-- [PH] Cloak
+			i(233982),	-- [PH] Naga Pike
+			i(233983),	-- [PH] Hand
+			i(233989),	-- [PH] Shirt
+			i(234037),	-- Lunar Festival Slippers
+			i(234038),	-- Lunar Festival Slippers - Pink
+			i(234039),	-- Lunar Festival Slippers - Purple
+			i(234040),	-- Lunar Festival Slippers - Teal
+			i(234041),	-- Lunar Festival Belt
+			i(234042),	-- Lunar Festival Belt - Pink
+			i(234043),	-- Lunar Festival Belt - Purple
+			i(234044),	-- Lunar Festival Belt - Teal
+			i(234045),	-- Lunar Festival Robe
+			i(234046),	-- Lunar Festival Robe - Pink
+			i(234047),	-- Lunar Festival Robe - Purple
+			i(234048),	-- Lunar Festival Robe - Teal
+			i(234049),	-- Lunar Festival Spaulders
+			i(234050),	-- Lunar Festival Spaulders - Pink
+			i(234051),	-- Lunar Festival Spaulders - Purple
+			i(234052),	-- Lunar Festival Spaulders - Teal
+			i(234053),	-- Lunar Festival Crown
+			i(234054),	-- Lunar Festival Crown - Pink
+			i(234055),	-- Lunar Festival Crown - Purple
+			i(234056),	-- Lunar Festival Crown - Teal
+			i(234057),	-- Lunar Festival Attire
+			i(234058),	-- Lunar Festival Attire - Pink
+			i(234059),	-- Lunar Festival Attire - Purple
+			i(234060),	-- Lunar Festival Attire - Teal
+			i(234074),	-- Gold-Plated Cushioned Boots
+			i(234126),	-- Icicle Cupcake
+			i(234127),	-- Puntable Grumpling
+			i(234229),	-- Technique: Glyph of the Gilded Pistol Shot
+			i(234230),	-- Technique: Glyph of the Twilight Pistol Shot
+			i(234231),	-- Technique: Glyph of the Admiral's Pistol Shot
+			i(234232),	-- Technique: Glyph of the Ashvane Pistol Shot
+			i(234245),	-- Glyph of the Ashvane Pistol Shot
+			i(234246),	-- Glyph of the Admiral's Pistol Shot
+			i(234247),	-- Glyph of the Gilded Pistol Shot
+			i(234248),	-- Glyph of the Twilight Pistol Shot
+			i(234282),	-- Decorative Yard Flamingo
+			i(234287),	-- Radiant Focus
+			i(234313),	-- [DNT] Item
+			i(234327),	-- Turbulent Fragment
+			i(234328),	-- Torrential Fragment
+			i(234379),	-- Crackleroar
+			i(234395),	-- Skitterbite
+			i(234396),	-- Teatuft Tamer
+			i(234397),	-- Fullbelly Rollingpaw
+			i(234398),	-- Festive Green Holiday Belt
+			i(234399),	-- Festive Red Holiday Belt
+			i(234400),	-- Festive Red Holiday Coat
+			i(234401),	-- Festive Green Holiday Coat
+			i(234402),	-- Festive Red Holiday Pants
+			i(234403),	-- Festive Green Holiday Pants
+			i(234404),	-- Festive Red Holiday Shorts
+			i(234405),	-- Festive Green Holiday Shorts
+			i(234406),	-- Festive Red Holiday Boots
+			i(234407),	-- Festive Green Holiday Boots
+			i(234408),	-- [PH] Kilt
+			i(234409),	-- [PH] Cloak
+			i(234410),	-- [PH] Cloak
+			i(234411),	-- [PH] Cloak
+			i(234412),	-- [PH] Cloak
+			i(234414),	-- [PH] Shirt
+			i(234422),	-- Storm-Singed Plunder
+			i(234423),	-- Keg-Leg's Silver Spoils
+			i(234424),	-- Keg-Leg's Bronze Spoils
+			i(234426),	-- Kaja'Cola-braised Meat
+			i(234443),	-- Meaty Ration
+			i(234450),	-- Pirate's Booty
+			i(234453),	-- Swabbie's Lockbox
+			i(234455),	-- Storm-flecked Debris
+			i(234456),	-- Crystal-splintered Rubble
+			i(234466),	-- Tattered Arathi Prayer Scroll
+			i(234470),	-- Forgemaster's Focus
+			i(234471),	-- Earthen Device
+			i(234472),	-- Earthen Crystal
+			i(234473),	-- Slightly Comfortable Chair
+		})),
 		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 			filter(BATTLE_PETS, {
 				i(229993),	-- Bluedoo (PET!) [Trading Post?]
@@ -145,20 +790,13 @@ root(ROOTS.Unsorted, {
 				i(224194),	-- Fashion Frenzy Ribbon
 				i(225252),	-- Bronze Celebration Token
 				-- Secret
-				i(228766),	-- Sandy Ransom Note
 				i(229411),	-- Normal Feather
 
 				i(225678),	-- Spare Key to Shaffar's Stasis Chamber
 				i(228782),	-- PH - Sandbox Wolf
 				i(228783),	-- PH - Sandbox Horse
 				i(228910),	-- Cache of Nerubian Treasures
-				i(228986),	-- Aesthetician's Coupon Book
-				i(228987),	-- Scroll of Fel Binding
-				i(228989),	-- Exotic Critter Taming License
-				i(228990),	-- Bottle of Steam
-				i(228991),	-- Stone of Prophecy
 				i(229165),	-- Quest Journal
-				i(229413),	-- "Dogg-Saron" Costume
 				i(229414),	-- Moira Thaurissan's Hammer
 				i(229958),	-- Decorated Feather
 				i(230283),	-- Weird Egg
@@ -366,17 +1004,26 @@ root(ROOTS.Unsorted, {
 			i(232475),	-- Defias Cuirass
 			i(232510),	-- Electric Eel
 			i(232511),	-- Electric Eel
-			i(232521),	-- Glyph of Arcane Familiar
 			--
-			i(232598),	-- Bag of Timewarped Badges
 			i(232631),	-- Wrapped Spear
 			--
 			i(228911),	-- Xal'atath's Rusty Coin
-
 			i(232905),	-- Malown's Slam
 
-			i(232478),	-- Area 52 Tabard
+			i(228938),	-- Area 52 Tabard
 			i(233053),	-- Crown of the Violet Rose
+			i(234413),	-- Satchel of Exotic Mysteries
+
+			--
+			i(44124),	-- Peculiar Key
+			i(118067),	-- Old Chain Link
+			i(228934),	-- Carefully Penned Note
+			i(228935),	-- Unfinished Note
+			i(228936),	-- Hastily Scrawled Note
+			i(228937),	-- Water-Resistant Note
+			i(228938),	-- Peculiar Gem
+			i(228941),	-- Inert Peculiar Key
+			i(234425),	-- Forgotten Folio
 		})),
 		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			explorationHeader({
@@ -477,11 +1124,11 @@ root(ROOTS.Unsorted, {
 				--- Quest Rewards ---
 				i(220156),	-- Bubbling Wax
 				--- Renown Quest Rewards ---
-				i(226151),	-- Wax-Coated Coffer Unlocker
 				i(226154),	-- Wax-Sealed Crafty Crest
 				i(226152),	-- Wax-sealed Crests
 				--- Attached to Quests via API ---
-				i(215359),	-- Very Large Valdrakken Accord Supply Pack
+				-- i(215359),	-- Very Large Valdrakken Accord Supply Pack
+				-- i(226151),	-- Wax-Coated Coffer Unlocker
 
 				--- Snuffling ---
 				i(224650),	-- Wax-Sealed Pouch
@@ -543,10 +1190,6 @@ root(ROOTS.Unsorted, {
 					i(224823),	-- Shredded Weavercloth
 					i(222348),	-- Unraveling
 					i(222788),	-- Khaz Algar Unraveling
-					--------
-					r(446975),	-- Artisan Tailor's Coat
-					r(447001),	-- Daybreak Spellthread
-					r(447000),	-- Sunset Spellthread
 				}),
 			}),
 			n(PVP, {

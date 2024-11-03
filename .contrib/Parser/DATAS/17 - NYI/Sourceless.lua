@@ -559,7 +559,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 
 			-- 7.2.0
 			expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
-				q(46955),	-- Akazamzarak Silenced
 				q(47215),	-- Tracking Quest
 			})),
 
@@ -700,14 +699,11 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 				q(63925),	--
 				q(64110),	--
-				q(64113),	--
-				q(64114),	--
 				q(64115),	--
 				q(64116),	--
 				q(64117),	--
 				q(64118),	--
 				q(64119),	--
-				q(64127),	--
 				q(64192),	--
 				q(64369),	--
 				q(64516),	--
@@ -725,7 +721,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(66034),	-- On Fail, Reset Player [DNT] (spellID 374750) / MDI Quest Trigger
 				q(67045),	--
 				q(71054),	--
-				q(77131),	-- Killed rares in Thladraszus during snowstorm (?)
 			})),
 
 			-- 10.0.2

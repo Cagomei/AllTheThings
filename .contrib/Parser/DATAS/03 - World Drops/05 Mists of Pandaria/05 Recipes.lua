@@ -6,31 +6,24 @@ root(ROOTS.WorldDrops, {
 	expansion(EXPANSION.MOP, {
 		filter(RECIPES, {
 			prof(BLACKSMITHING, {
-				i(100865, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Plans: Balanced Trillium Ingot and Its Uses (RECIPE!)
-					["f"] = MISC,
-					["g"] = {
-						r(146921),	-- Accelerated Balanced Trillium Ingot (RECIPE!)
-						r(143255),	-- Balanced Trillium Ingot (RECIPE!)
-					},
-				})),
+				TempForceMisc(i(100865, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Plans: Balanced Trillium Ingot and Its Uses (RECIPE!)
+					r(146921),	-- Accelerated Balanced Trillium Ingot (RECIPE!)
+					r(143255),	-- Balanced Trillium Ingot (RECIPE!)
+				}))),
 			}),
 			prof(ENGINEERING, {
-				i(100910, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Schematic: Chief Engineer Jard's Journal
-					["f"] = MISC,
-					["g"] = {
-						r(139197),	-- Advanced Refrigeration Unit
-						r(139176),	-- Jard's Peculiar Energy Source
-						r(139196),	-- Pierre
-						r(143714),	-- Rascal-Bot
-						r(139192),	-- Sky Golem
-					},
-				})),
-				i(94847, {	-- Schematic: Chief Engineer Jard's Journal
-					["f"] = MISC,
+				TempForceMisc(i(100910, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Schematic: Chief Engineer Jard's Journal
+					r(139197),	-- Advanced Refrigeration Unit
+					r(139176),	-- Jard's Peculiar Energy Source
+					r(139196),	-- Pierre
+					r(143714),	-- Rascal-Bot
+					r(139192),	-- Sky Golem
+				}))),
+				TempForceMisc(i(94847, {	-- Schematic: Chief Engineer Jard's Journal
 					["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH },
 					["_drop"] = { "g" },
 					["u"] = NEVER_IMPLEMENTED,
-				}),
+				})),
 				q(32630, {	-- Chief Engineer Jard's Journal
 					["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH },
 					["provider"] = {"i",94847},	-- Schematic: Chief Engineer Jard's Journal
@@ -68,14 +61,13 @@ root(ROOTS.WorldDrops, {
 					["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
 					["timeline"] = { ADDED_5_4_0 },
 				}),
-				i(100864, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Hardened Magnificent Hide and Its Uses (RECIPE!)
+				TempForceMisc(i(100864, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Hardened Magnificent Hide and Its Uses (RECIPE!)
 					["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
-					["f"] = MISC,
 					["g"] = {
 						r(146923),	-- Accelerated Hardened Magnificent Hide (RECIPE!)
 						r(142976),	-- Hardened Magnificent Hide (RECIPE!)
 					},
-				})),
+				}))),
 				i(95467, {	-- Pattern: Magnificence of Leather (RECIPE!)
 					["timeline"] = { ADDED_5_2_0 },
 				}),
@@ -84,12 +76,9 @@ root(ROOTS.WorldDrops, {
 				}),
 			}),
 			prof(TAILORING, {
-				i(100863, {	-- Pattern: Celestial Cloth and Its Uses
-					["f"] = MISC,
-					["g"] = {
-						recipe(143011),	-- Celestial Cloth
-					},
-				}),
+				TempForceMisc(i(100863, {	-- Pattern: Celestial Cloth and Its Uses
+					recipe(143011),	-- Celestial Cloth
+				})),
 			}),
 		}),
 	}),

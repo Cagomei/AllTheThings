@@ -242,11 +242,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						i(128179),	-- Talon-Link Loop
 						i(128146),	-- Ensnared Orb of the Sky
 						ig(127749),	-- Corrupted Nest Guardian (PET!)
-						ig(127771, {	-- Gemcutter Module: Critical Strike
+						TempForceMisc(ig(127771, {	-- Gemcutter Module: Critical Strike
 							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 							["requireSkill"] = JEWELCRAFTING,
-							["f"] = MISC,
-						}),
+						})),
 					})),
 					cr(92330, e(1427, {	-- Socrethar the Eternal
 						i(128197),	-- Felgore Double Blade
@@ -391,11 +390,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["description"] = "Pull the boss and burn him before he transitions. As long as no one touched the Eye of Anzu, you will earn the achievement.",
 					}),
 					ig(127749),	-- Corrupted Nest Guardian (PET!)
-					ig(127771, {	-- Gemcutter Module: Critical Strike
+					TempForceMisc(ig(127771, {	-- Gemcutter Module: Critical Strike
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
-						["f"] = MISC,
-					}),
+					})),
 				})),
 				cr(92330, e(1427, {	-- Socrethar the Eternal
 					ach(10086, {	-- I'm a Soul Man

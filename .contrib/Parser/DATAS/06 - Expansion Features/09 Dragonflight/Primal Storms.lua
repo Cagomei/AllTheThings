@@ -539,9 +539,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					THE_WAKING_SHORES,
 				},
 				-- #if after 10.0.7
-				["sym"] = {{"select","mapID",THE_FORBIDDEN_REACH},{"pop"},
-							{"where","headerID",ZONE_REWARDS},{"pop"},
-							{"exclude","itemID",202196},	-- Zskera Vault Key
+				["sym"] = {
+					{"select","mapID",THE_FORBIDDEN_REACH},{"pop"},
+					{"where","headerID",ZONE_REWARDS},{"pop"},
+					{"exclude","itemID",202196},	-- Zskera Vault Key
 				},
 				-- #endif
 				["g"] = {

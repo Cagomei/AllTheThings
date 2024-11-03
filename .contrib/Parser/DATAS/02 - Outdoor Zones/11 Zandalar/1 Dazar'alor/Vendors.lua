@@ -181,9 +181,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(130901, {	-- Chronicler Grazzul <Inscription Trainer>
 				["coord"] = { 42.3, 39.7, DAZARALOR },
 				["g"] = {
-					i(168026, {	-- Book of Techniques: Sanguine Feather Quill of Lana'thel
-						["f"] = MISC,
-					}),
+					TempForceMisc(i(168026)),	-- Book of Techniques: Sanguine Feather Quill of Lana'thel
 				},
 			}),
 			n(122703, {	-- Clever Kumali <Alchemist Trainer>

@@ -381,8 +381,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(11401, { ["name"] = "Call the Headless Horseman", }),
 			q(11404, { ["name"] = "Call the Headless Horseman", }),
 			q(11405, { ["name"] = "Call the Headless Horseman", }),
-			q(12405, { ["name"] = "Candy Bucket", }),
-			q(12410, { ["name"] = "Candy Bucket", }),
+			q(12405, { ["name"] = "Candy Bucket", ["_drop"] = { "g" }, }),
+			q(12410, { ["name"] = "Candy Bucket", ["_drop"] = { "g" }, }),
 			q(10181, { ["name"] = "Collector's Edition: -pn - E - FLAG", }),
 			q(9577, { ["name"] = "DAILY TEST QUEST (PVP)     TBC:DAILY TEST QUEST (PVP)  WOTLK:DAILY TEST QUEST (PVP)", }),
 			q(11121, { ["name"] = "DAILY TEST QUEST (RAID)", }),
@@ -3282,9 +3282,9 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
 				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
-				["g"] = {
-					i(150753),	-- Decaying Bloodstone (QI!)
-				},
+				-- ["g"] = {
+				-- 	i(150753),	-- Decaying Bloodstone (QI!)
+				-- },
 			}),
 			q(47506, {
 				["lvl"] = 255,
@@ -3605,9 +3605,9 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
 				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
-				["g"] = {
-					i(155830),	-- Runic Core (QI!)
-				},
+				-- ["g"] = {
+				-- 	i(155830),	-- Runic Core (QI!)
+				-- },
 			}),
 			q(49598, {
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
@@ -3761,12 +3761,12 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = 1,
-				["g"] = {
-					i(151557, {	-- Champion's Strongbox
-						["b"] = 1,
-						["q"] = 2,
-					}),
-				},
+				-- ["g"] = {
+				-- 	i(151557, {	-- Champion's Strongbox
+				-- 		["b"] = 1,
+				-- 		["q"] = 2,
+				-- 	}),
+				-- },
 			}),
 			q(51068, {	-- Raiding Their Stores
 				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
@@ -3819,29 +3819,20 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
 				["repeatable"] = 1,
-				["g"] = {
-					i(151557, {	-- Champion's Strongbox
-						["b"] = 1,
-						["q"] = 2,
-					}),
-				},
+				-- ["g"] = {
+				-- 	i(151557, {	-- Champion's Strongbox
+				-- 		["b"] = 1,
+				-- 		["q"] = 2,
+				-- 	}),
+				-- },
 			}),
 			q(51344, {	-- To Matters at Hand
 				["description"] = "Area: |cFFf09f26Hall of Communion|r",
 				["lvl"] = 10,
 				["races"] = HORDE_ONLY,
-				["g"] = {
-					i(159671),	-- Silithus Portal Stone (QI!)
-				},
-			}),
-			q(51370, {
-				["lvl"] = 50,
-				["g"] = {
-					i(160054, {	-- War-Torn Satchel of Cooperation
-						["b"] = 1,
-						["q"] = 3,
-					}),
-				},
+				-- ["g"] = {
+				-- 	i(159671),	-- Silithus Portal Stone (QI!)
+				-- },
 			}),
 			q(51425, {
 				["description"] = "Category: |cFFf09f26Warfronts|r",
@@ -4607,25 +4598,25 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(53271),	-- Blooming Star Moss
 			q(53281),	-- Winter's Kiss Cluster
 			q(53283, {	-- Flourishing Sea Stalks
-				["g"] = {
-					i(163588),	-- Flourishing Sea Stalk (QI!)
-				},
+				-- ["g"] = {
+				-- 	i(163588),	-- Flourishing Sea Stalk (QI!)
+				-- },
 			}),
 			q(53284, {	-- Flourishing Riverbud
-				["g"] = {
-					i(163595),	-- Flourishing Riverbud (QI!)
-				},
+				-- ["g"] = {
+				-- 	i(163595),	-- Flourishing Riverbud (QI!)
+				-- },
 			}),
 			q(53297, {	-- Flourishing Riverbud
-				["g"] = {
-					i(163595),	-- Flourishing Riverbud (QI!)
-				},
+				-- ["g"] = {
+				-- 	i(163595),	-- Flourishing Riverbud (QI!)
+				-- },
 			}),
 			q(53299),	-- Blooming Siren's Sting
 			q(53302, {	-- Flourishing Riverbud
-				["g"] = {
-					i(163595),	-- Flourishing Riverbud (QI!)
-				},
+				-- ["g"] = {
+				-- 	i(163595),	-- Flourishing Riverbud (QI!)
+				-- },
 			}),
 			q(53309),	--
 			-- 8.0.1.26629
@@ -5198,11 +5189,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				i(169189),	-- Blueprint: TK44[DNT]
 			}),
 			q(55742),	-- Bundle of Corroded Parts
-			q(56071, {	-- De-Synced Vibro Blade
-				["g"] = {
-					i(163482),	-- Broken Compass (QI!)
-				},
-			}),
+			q(56071),	-- De-Synced Vibro Blade
 			q(56072),	-- De-Synced Vibro Blade
 			q(55669, {	-- Encrypted Radio Receiver TBD
 				i(168221),	-- Encrypted Raido Receiver
@@ -5634,7 +5621,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(58848),	--
 			q(58874),	--
 			-- 8.3.0.32489
-			q(57596),	--
 			q(58898),	--
 			q(58899),	--
 			q(58913),	--
@@ -8710,7 +8696,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			--["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
 			--["coord"] = { 55.3, 41.2, AZJ_KAHET },
 			}),
-			q(83023),	-- Short-Supply Reward
 		})),
 	}),
 }));

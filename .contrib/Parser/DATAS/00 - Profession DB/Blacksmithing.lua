@@ -370,6 +370,7 @@ i(12836, 16992, nil, MASTER_SWORDSMITH);	-- Frostguard
 i(22389, 27832, nil, MASTER_SWORDSMITH);	-- Sageblade
 -- #else
 i(12834, 16990);	-- Arcanite Champion
+i(142370, 16990);	-- Plans: Arcanite Champion
 i(19211, 23652);	-- Blackguard
 i(12825, 16978);	-- Blazing Rapier [CLASSIC-CATA]
 i(12830, 16985);	-- Corruption

@@ -785,3 +785,8 @@
 596@@@Karazhan Graduate %s
 11.0.5.56572
 584@@@Cataclysm Enthusiast %s
+11.0.7.57361
+560@@@Ascension Breaker %s
+569@@@%s, Witness of the Kirin Tor
+600@@@Landlubber %s
+601@@@%s the Treasured

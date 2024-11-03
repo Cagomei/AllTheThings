@@ -839,25 +839,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 
 		-- 9.2
 		-- Jailers Gauntlet
-		q(65288),	-- Layer 1
-
-		q(65289),	-- Layer 2
 		q(65275),	-- Layer 2 (Weird) PET?
 
-		q(65290),	-- Layer 3
 		--q(64347),	-- Layer 3 (Already in AV probably because it ended in AV) /Might be Death-Bound Shard
 
-		q(65291),	-- Layer 4
 		q(65276),	-- Layer 4 (Weird) Toy?
 
-		q(65292),	-- Layer 5
-
-		q(65293),	-- Layer 6
 		q(65277),	-- Layer 6 (Werid) Title?
 
-		q(65294),	-- Layer 7 (Probably)
-
-		q(65295),	-- Layer 8 (Probably)
 		q(65278),	-- Layer 8 (Weird) Mount?
 
 		q(65298),	-- Unlocking Layer 5-8

@@ -2,7 +2,22 @@
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto
-*.lua	text eol=crlf
+# lua script
+*.lua       text eol=crlf
+# project config / tool config
+*.config    text eol=crlf
+# WOW addon filelist
+*.toc       text eol=crlf
+# VS solution file
+*.sln       text eol=crlf
+# C# project file
+*.csproj    text eol=crlf
+# C# source code
+*.cs        text eol=crlf
+# text file
+*.text      text eol=crlf
+# xml file
+*.xml       text eol=crlf
 
 ###############################################################################
 # Set default behavior for command prompt diff.

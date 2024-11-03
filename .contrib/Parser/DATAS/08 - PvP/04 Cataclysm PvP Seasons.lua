@@ -433,6 +433,9 @@ root(ROOTS.PVP, {
 			}),
 		}))),
 		n(SEASON_VICIOUS, {
+			n(ACHIEVEMENTS, {
+				ach(11714, {["timeline"] = {ADDED_7_2_0}}),	-- Viciously Vintage (PvP Season 9)
+			}),
 			elitepvp(n(ACHIEVEMENTS, bubbleDown({
 				["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 },
 			}, {
@@ -452,7 +455,6 @@ root(ROOTS.PVP, {
 				i(71339, {	-- Vicious Gladiator's Twilight Drake
 					["description"] = "Awarded to members of the Arena teams during Cata Season 1 that were in the 0.5% bracket of their battlegroup.",
 				}),
-				ach(11714, {["timeline"] = {ADDED_7_2_0}}),	-- Viciously Vintage (PvP Season 9)
 			}))),
 			n(PVP_HONOR, {
 				cl(DEATHKNIGHT, {
@@ -2137,6 +2139,9 @@ root(ROOTS.PVP, {
 			})),
 		}),
 		applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(SEASON_RUTHLESS, {
+			n(ACHIEVEMENTS, {
+				ach(11715, {["timeline"] = {ADDED_7_2_0}}),	-- (Ruth)less is More (PvP Season 10)
+			}),
 			elitepvp(n(ACHIEVEMENTS, bubbleDown({
 				["timeline"] = { ADDED_4_2_0, REMOVED_4_3_0 },
 			}, {
@@ -2156,7 +2161,6 @@ root(ROOTS.PVP, {
 				i(71954, {	-- Ruthless Gladiator's Twilight Drake
 					["description"] = "Awarded to members of the Arena teams during Cata Season 2 that were in the 0.5% bracket of their battlegroup.",
 				}),
-				ach(11715, {["timeline"] = {ADDED_7_2_0}}),	-- (Ruth)less is More (PvP Season 10)
 			}))),
 			n(PVP_HONOR, {
 				cl(DEATHKNIGHT, {
@@ -3514,6 +3518,9 @@ root(ROOTS.PVP, {
 			})),
 		})),
 		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(SEASON_CATACLYSMIC, {
+			n(ACHIEVEMENTS, {
+				ach(11716, {["timeline"] = {ADDED_7_2_0}}),	-- Cataclysmic Catwalk (PvP Season 11)
+			}),
 			elitepvp(n(ACHIEVEMENTS, bubbleDown({
 				["timeline"] = { ADDED_5_0_4, REMOVED_5_0_4 },
 			}, {
@@ -3533,7 +3540,6 @@ root(ROOTS.PVP, {
 				i(85785, {	-- Cataclysmic Gladiator's Twilight Drake
 					["description"] = "Awarded to members of the Arena teams during Cata Season 3 that were in the 0.5% bracket of their battlegroup.",
 				}),
-				ach(11716, {["timeline"] = {ADDED_7_2_0}}),	-- Cataclysmic Catwalk (PvP Season 11)
 			}))),
 			n(PVP_HONOR, {
 				-- #if AFTER 7.2.0.23436

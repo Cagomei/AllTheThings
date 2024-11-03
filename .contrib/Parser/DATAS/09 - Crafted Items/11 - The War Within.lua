@@ -998,9 +998,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 					r(447373),	-- Crowd Pummeler 2-30
 				}),
 			}),
-			i(219192, {	-- Comprehensibly Organized Ideas
+			TempForceMisc(i(219192, {	-- Comprehensibly Organized Ideas
 				["description"] = "NOTE: Some of these require a specific specialization to discover.",
-				["f"] = MISC,
 				["g"] = {
 					r(447325, {	-- Aqirite Brainwave Projector
 						["description"] = "Requires specialization - Profession Gear to discover",
@@ -1059,7 +1058,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 						["description"] = "Requires specialization - Bracers to discover",
 					}),
 				},
-			}),
+			})),
 			spell(447310, {	-- Scour Through Scrap
 				i(224822, {	-- Scour Through Scrap
 					r(447340),	-- Chaos Circuit
@@ -1116,18 +1115,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 					}),
 				}),
 			}),
-			i(219191, {	-- Hastily Scrawled Notes
-				-- because parser is still 'guessing' Recipe Items based on SpellID and RequireSkill, this is turning into
-				-- Recipe 448280 (Rearrange Notes) which is harvested in ReagentDB as using Hastily Scrawled Notes as a Reagent
-				-- Thus due to some newer Recipe nesting tech for popouts of Reagents directly, this is nesting itself inside itself
-				-- and then filling it again, which repeats forever.
-				-- Eventually the Profession DBs will be done (right?) and Parser won't be magically turning Items into Recipes unless
-				-- we say so
-				["f"] = MISC,
-			}),
-			i(221968, {	-- Legibly Scribbled Notes
-				["f"] = MISC,
-			}),
+			-- because parser is still 'guessing' Recipe Items based on SpellID and RequireSkill, this is turning into
+			-- Recipe 448280 (Rearrange Notes) which is harvested in ReagentDB as using Hastily Scrawled Notes as a Reagent
+			-- Thus due to some newer Recipe nesting tech for popouts of Reagents directly, this is nesting itself inside itself
+			-- and then filling it again, which repeats forever.
+			-- Eventually the Profession DBs will be done (right?) and Parser won't be magically turning Items into Recipes unless
+			-- we say so
+			TempForceMisc(i(219191)),	-- Hastily Scrawled Notes
+			TempForceMisc(i(221968)),	-- Legibly Scribbled Notes
 		}),
 		spell(447311, {	-- Pilfer Through Parts
 			i(227769),	-- Bountiful Bolts
@@ -1696,7 +1691,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222546),	-- Algari Treatise on Alchemy
 			i(222554),	-- Algari Treatise on Blacksmithing
 			i(222550),	-- Algari Treatise on Enchanting
-			i(222621),	-- Algari Treatise on Engineering
+			TempForceMisc(i(222621)),	-- Algari Treatise on Engineering
 			i(222552),	-- Algari Treatise on Herbalism
 			i(222548),	-- Algari Treatise on Inscription
 			i(222551),	-- Algari Treatise on Jewelcrafting

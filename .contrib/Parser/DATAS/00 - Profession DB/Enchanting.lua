@@ -221,7 +221,7 @@ i(6343, 0);			-- CLASSIC: Imbue Chest - Minor Spirit
 -- #endif
 i(0, 22434);		-- Charged Scale of Onyxia
 i(0, 7864);			-- Enchant Boots - Minor Stamina
-i(6376, 7863);		-- Enchant Boots - Minor Stamina
+i(0, 7863);			-- Enchant Boots - Minor Stamina
 i(6222, 0);			-- Imbue Chest - Minor Spirit
 i(6345, 0);			-- Imbue Cloak - Protection
 

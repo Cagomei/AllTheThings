@@ -450,7 +450,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 				["groups"] = {
 					i(200082, {	-- Battered Imbu-made Net
-						["description"] = "Obtained from Rare fishing pools.",
+						["description"] = "Obtained from fishing in Prismatic Leaper Schools, Overheated Magma Thresher Pools or Deep Ice Fishing Holes.",
 						["providers"] = {
 							{ "o", 377938 },	-- Prismatic Leaper School
 							{ "o", 382180 },	-- Overheated Magma Thresher Pool
@@ -458,7 +458,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					i(200080, {	-- Draconium Nugget
-						["description"] = "Obtained from Rare fishing pools.",
+						["description"] = "Obtained from fishing in Prismatic Leaper Schools, Overheated Magma Thresher Pools or Deep Ice Fishing Holes.",
 						["providers"] = {
 							{ "o", 377938 },	-- Prismatic Leaper School
 							{ "o", 382180 },	-- Overheated Magma Thresher Pool
@@ -466,7 +466,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					i(200081, {	-- Hardened Seavine
-						["description"] = "Obtained from Rare fishing pools.",
+						["description"] = "Obtained from fishing in Prismatic Leaper Schools, Overheated Magma Thresher Pools or Deep Ice Fishing Holes.",
 						["providers"] = {
 							{ "o", 377938 },	-- Prismatic Leaper School
 							{ "o", 382180 },	-- Overheated Magma Thresher Pool
@@ -474,7 +474,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					i(200083, {	-- Irontree Branch
-						["description"] = "Obtained from Rare fishing pools.",
+						["description"] = "Obtained from fishing in Prismatic Leaper Schools, Overheated Magma Thresher Pools or Deep Ice Fishing Holes.",
 						["providers"] = {
 							{ "o", 377938 },	-- Prismatic Leaper School
 							{ "o", 382180 },	-- Overheated Magma Thresher Pool
@@ -502,12 +502,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					i(200084, {	-- Salinated Serevite
-						["description"] = "Obtained from Rare fishing pools.",
+						["description"] = "Obtained from fishing in Prismatic Leaper Schools, Overheated Magma Thresher Pools or Deep Ice Fishing Holes.",
 						["providers"] = {
 							{ "o", 377938 },	-- Prismatic Leaper School
 							{ "o", 382180 },	-- Overheated Magma Thresher Pool
 							{ "n", 197596 },	-- Deep Ice Fishing Hole
-							--[[ Never got one from it and wowhead doesnt have data either. If confirmed, readd them ~Gold Jan 2023
+							--[[ Never got one from it and wowhead doesnt have data either. If confirmed, re-add them ~Gold Jan 2023
 							{ "o", 382071 },	-- Full Fishing Net
 							{ "o", 379314 },	-- Full Fishing Net
 							{ "o", 381069 },	-- Full Fishing Net

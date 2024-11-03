@@ -15,6 +15,7 @@ i(5571);	-- Small Black Pouch
 i(5572);	-- Small Green Pouch
 i(3914);	-- Journeyman's Backpack
 i(44435);	-- Windle's Lighter
+i(73242);	-- Master's Haversack
 i(102144);	-- Kor'kron Cage Key
 i(180786);	-- Empty Binding
 -- Legion

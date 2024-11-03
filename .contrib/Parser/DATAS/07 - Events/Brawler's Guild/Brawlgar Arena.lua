@@ -389,11 +389,10 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 					i(98092),	-- Digmaster's Bodysleeve
 					iensemble(167892),	-- Ensemble: Brawlers Garb
 					i(98079),	-- Floot-Tooter's Tunic
-					i(127773, {	-- Gemcutter Module: Mastery
+					TempForceMisc(i(127773, {	-- Gemcutter Module: Mastery
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
-						["f"] = MISC,
-					}),
+					})),
 					i(98080),	-- Gorgeous Blouse
 					i(98091),	-- Last Season's Shirt
 					i(98084),	-- Ooze-Soaked Shirt

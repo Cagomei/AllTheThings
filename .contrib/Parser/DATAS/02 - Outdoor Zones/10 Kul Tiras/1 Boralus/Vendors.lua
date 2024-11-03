@@ -737,9 +737,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(130399, {	-- Zooey Inksprocket <Inscription Trainer>
 				["coord"] = { 73.4, 6.3, BORALUS },
 				["g"] = {
-					i(168026, {	-- Book of Techniques: Sanguine Feather Quill of Lana'thel
-						["f"] = MISC,
-					}),
+					TempForceMisc(i(168026)),	-- Book of Techniques: Sanguine Feather Quill of Lana'thel
 				},
 			}),
 		}),

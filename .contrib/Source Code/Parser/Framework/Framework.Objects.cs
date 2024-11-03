@@ -719,9 +719,22 @@ namespace ATT
                 if (recipeID > 0)
                     return false;
 
+                // don't guess Recipes for anything Unsorted
+                if (ProcessingUnsortedCategory) return false;
+
                 data.TryGetValue("spellID", out long spellID);
                 // get the name of the recipe item (i.e. Technique: blah blah)
                 Items.TryGetName(data, out string recipeItemName);
+                data.TryGetValue("itemID", out object itemID);
+
+                // have we already Sourced this Recipe? then assume it's also granted by another Item
+                if (TryGetSOURCED("recipeID", spellID, out var _))
+                {
+                    LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, spellID, recipeItemName, $"Duplicate SpellID Match with Sourced RecipeID");
+
+                    recipeID = spellID;
+                    return true;
+                }
 
                 // Item directly marked as a 'Recipe', then assume the associated spellID represents the recipeID
                 if (data.TryGetValue("f", out long filterID))
@@ -732,8 +745,7 @@ namespace ATT
                         {
                             recipeID = spellID;
 
-                            data.TryGetValue("itemID", out object itemID);
-                            LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, spellID, recipeItemName);
+                            LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, spellID, recipeItemName, "Filter Recipe with SpellID");
                             return true;
                         }
                     }
@@ -771,8 +783,7 @@ namespace ATT
                     data.Remove("spellID");
                     recipeID = spellID;
 
-                    data.TryGetValue("itemID", out object itemID);
-                    LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, spellID, recipeItemName);
+                    LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, spellID, recipeItemName, $"Item Name Contains Skill-matched Recipe Name '{matchedRecipeName}'");
                     return true;
                 }
 
@@ -784,8 +795,7 @@ namespace ATT
                     {
                         recipeID = recipeInfo.Key;
 
-                        data.TryGetValue("itemID", out object itemID);
-                        LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, recipeID, recipeItemName);
+                        LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, recipeID, recipeItemName, $"Item Name Partially-Contains Recipe Name '{recipeInfo.Value}'");
                         return true;
                     }
                     // do we need further checking?

@@ -212,7 +212,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			i(183283),	-- Memory of the Invoker
 			i(183294),	-- Memory of the Jade Ignition
 			i(183296),	-- Memory of the Last Emperor
-			i(183293),	-- Memory of the Morning's Tear
+			i(183293, {	-- Memory of the Morning's Tear
+				["description"] = "Reportedly bugged and no longer drops or learned from the Chronicle of Lost Memories. If you learn this or see it drop, please inform the ATT discord or create a GitHub issue.",
+				["timeline"] = { REMOVED_10_0_2 },	-- Total Guess
+			}),
 			i(183285),	-- Memory of the Swiftsure Wraps
 			i(183297),	-- Memory of Xuen
 			i(183291),	-- Memory of Yu'lon

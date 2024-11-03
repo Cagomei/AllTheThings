@@ -1169,7 +1169,6 @@ root(ROOTS.NeverImplemented, {
 				i(91747),	-- Malevolent Gladiator's Fleshslicer
 				i(91751),	-- Malevolent Gladiator's Slasher
 				i(84893),	-- Malevolent Gladiator's Fleshslicer
-				i(84968),	-- Malevolent Gladiator's Slicer
 				i(94899),	-- Malevolent Gladiator's Baton of Light
 				i(94898),	-- Malevolent Gladiator's Touch of Death
 				--i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- in NYI Sourceless
