@@ -5,7 +5,7 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(ACHIEVEMENTS, {	-- Achievements (Achievements that don't really fit into a specific Location which are specific to BFA)
 		--[[ TODO: (!) New achievements not sourced yet
-		ach(20501, bubbleDownSelf({	-- A Farewell to Arms
+		ach(40953, bubbleDownSelf({	-- A Farewell to Arms
 			["timeline"] = { ADDED_11_0_7 },
 		},{
 			-- Meta Achievement
@@ -22,10 +22,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				40957,	-- Maximum Effort (!)
 				13541,	-- Mecha-Done
 				40963,	-- Ny'alotha, the Waking City (!)
-				40962,	-- The Eternal Palace (!)
+				40962,	-- The Eternal Palace
 				13994,	-- Through the Depths of Visions
 				14730,	-- To All the Squirrels I Set Sail to See
-				40960,	-- Uldir (!)
+				40960,	-- Uldir
 				13638,	-- Undersea Usurper
 				40955,	-- War Stories (!)
 			}},

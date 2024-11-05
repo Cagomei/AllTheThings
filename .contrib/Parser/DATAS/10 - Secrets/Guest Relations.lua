@@ -190,7 +190,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					n(226952, {	-- Rexxar
 						["coord"] = { 77.3, 46.2, BOREAN_TUNDRA },
 					}),
-					
+
 				},
 			}),
 			q(84296, {	-- The Trail's Gone Cold
@@ -261,6 +261,88 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 			-- End of Chapter 1 --
+			o(467403, {	-- Darkmoon Fortune Card
+				["description"] = "Behind the crate next to Alyx. After looting this, talk with her, she will tell you to Speak to Alphonse.",
+				["coord"] = { 63.0, 50.2, TANARIS },
+				["crs"] = {
+					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
+					230838,	-- Alphonse Constant <Apprentice Cartomancer>
+				},
+				["g"] = {
+					i(229919),	-- Six of Frost
+				},
+			}),
+			q(84882, {	-- Deck Dismay
+				["description"] = "Speak to Alphonse after having looted the Six of Frost to unlock this quest. Use the Idol of Ohn'ahra to find more cards scattered around the grounds.",
+				["provider"] = { "n", 230838 },	-- Alphonse Constant <Apprentice Cartomancer>
+				["coord"] = { 63.9, 52.3, TANARIS },
+				["cost"] = { { "i",  229919, 1 } }, -- 1x Six of Frost
+				["g"] = {
+					o(467083, {	-- Darkmoon Fortune Card
+						["description"] = "Under a bench near the Story Time stage.",
+						["coord"] = { 63.97, 51.51, TANARIS },
+						["g"] = {
+							i(229207),	-- Two of Fire (QI!)
+						},
+					}),
+					o(467336, {	-- Darkmoon Fortune Card
+						["description"] = "By two barrels near the Story Time seating.",
+						["coord"] = { 63.77, 51.91, TANARIS },
+						["g"] = {
+							i(229210),	-- Five of Fire (QI!)
+						},
+					}),
+					o(467337, {	-- Darkmoon Fortune Card
+						["description"] = "To the right of Leeroy's food stall.",
+						["coord"] = { 63.27, 52.26, TANARIS },
+						["g"] = {
+							i(229211),	-- Six of Fire (QI!)
+						},
+					}),
+					o(467339, {	-- Darkmoon Fortune Card
+						["description"] = "Behind Brivelthwerp near the ice rink.",
+						["coord"] = { 61.91, 51.61, TANARIS },
+						["g"] = {
+							i(229213),	-- Eight of Fire (QI!)
+						},
+					}),
+					o(467351, {	-- Darkmoon Fortune Card
+						["description"] = "Between two caravan carts by the front of the grounds.",
+						["coord"] = { 61.19, 50.88, TANARIS },
+						["g"] = {
+							i(229225),	-- Four of Earth (QI!)
+						},
+					}),
+					o(467334, {	-- Darkmoon Fortune Card
+						["description"] = "By the outhose near the photo-op portals.",
+						["coord"] = { 62.14, 49.34, TANARIS },
+						["g"] = {
+							i(229208),	-- Three of Fire (QI!)
+						},
+					}),
+					o(467338, {	-- Darkmoon Fortune Card
+						["description"] = "Near the black market walls under the Fashion Frenzy stage.",
+						["coord"] = { 63.41, 48.98, TANARIS },
+						["g"] = {
+							i(229212),	-- Seven of Fire (QI!)
+						},
+					}),
+					o(467342, {	-- Darkmoon Fortune Card
+						["description"] = "On one of the steps leading down to the Story Time area.",
+						["coord"] = { 63.58, 51.00, TANARIS },
+						["g"] = {
+							i(229216),	-- Three of Frost (QI!)
+						},
+					}),
+					o(467075, {	-- Darkmoon Fortune Card
+						["description"] = "On the Fashion Frenzy stage to the left.",
+						["coord"] = { 63.18, 49.35, TANARIS },
+						["g"] = {
+							i(229199),	-- Two of Air (QI!)
+						},
+					}),
+				},
+			}),
 		}),
 		-- Chapter 2: November 4th --
 		n(VENDORS, {

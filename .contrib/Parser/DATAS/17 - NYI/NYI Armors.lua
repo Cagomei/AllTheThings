@@ -145,11 +145,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(27718),	-- Aldor Defender's Legplates
 			}),
 		}),
-		filter(TABARDS, {
-			n(P2xx, {
-				i(23388),	-- Tranquillen Tabard
-			}),
-		}),
 		filter(SHIRTS, {
 			n(P2xx, {
 				i(23351),	-- Battleworn Shirt

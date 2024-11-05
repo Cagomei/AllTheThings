@@ -2666,9 +2666,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		prof(ALCHEMY, {
 			q(82473),	-- Transmutation 15/30
 			q(82474),	-- Transmutation 30/30
-
+			q(82388),	-- Together with First Craft of Algari Mana Potion or Algari Healing Potion
 			-- Unsure what are these
-			--q(82388),	-- Together with First Craft of Algari Mana Potion or Algari Healing Potion
+
 			--q(81898),	-- Together with First Craft of Flask of Alchemical Chaos
 
 			--q(78604),	-- Randomly when crafting Wild Experimentation

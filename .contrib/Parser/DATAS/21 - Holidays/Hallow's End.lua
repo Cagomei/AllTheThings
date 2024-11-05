@@ -142,7 +142,11 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	}),
 	i(70722, {	-- Little Wickerman (TOY!)
 		["timeline"] = { ADDED_4_2_0 },
+		-- #if BEFORE 11.0.5
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		-- #else
+		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		-- #endif
 	}),
 	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
@@ -1333,7 +1337,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				candybucket(13472, {	-- Candy Bucket — Dalaran : Northrend, Underbelly, Neutral
 					["provider"] = { "o", 194072 },	-- Candy Bucket, Dalaran
-					["coord"] = { 380, 59.9, NORTHREND_THE_UNDERBELLY },
+					["coord"] = { 38.0, 59.9, NORTHREND_THE_UNDERBELLY },
 					["timeline"] = { ADDED_3_0_2 },
 				}),
 				candybucket(28993, {	-- Candy Bucket — Desolace, Karnum's Glade, Neutral
@@ -1588,7 +1592,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				candybucket(29016, {	-- Candy Bucket — Uldum, Oasis of Vir'sar, Neutral
 					["provider"] = { "o", 208178 },	-- Candy Bucket, Uldum
-					["coord"] = { 26.6, 7.30, ULDUM },
+					["coords"] = {
+						{ 26.6, 7.30, ULDUM },
+						-- #if AFTER 8.3.0
+						{ 26.6, 7.30, NZOTH_ASSAULT_ULDUM },
+						-- #endif
+					},
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				candybucket(29017, {	-- Candy Bucket — Uldum, Ramkahen, Neutral

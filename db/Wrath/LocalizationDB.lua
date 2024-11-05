@@ -523,6 +523,9 @@ localize(L.HEADER_NAMES, {
 	[-1000114] = "Patch 1.x.x",
 	[-1000115] = "Patch 2.x.x",
 	[-1000116] = "Patch 3.x.x",
+	[-1000117] = "Patch 4.x.x",
+	[-1000118] = "Patch 5.x.x",
+	[-1000119] = "Patch 6.x.x",
 	[-1000123] = "Armor Enchantments",
 	[-1000125] = "Weapon Enchantments",
 	[-1000127] = select(2,GetAchievementInfo(2091))..": Season 1",
@@ -606,6 +609,7 @@ localize(L.HEADER_NAMES, {
 	[-1000284] = "WoW's Anniversary",
 	[-1000285] = select(2,GetAchievementInfo(2398)),
 	[-1000286] = select(2,GetAchievementInfo(4400)),
+	[-1000299] = select(2,GetAchievementInfo(15218)),
 	[-1000373] = "New Character",
 	[-1000380] = "Bounty",
 	[-1000872] = "Plunderstorm",
@@ -708,6 +712,9 @@ localize(L.HEADER_ICONS, {
 	[-1000114] = _.asset("expansion_classic"),
 	[-1000115] = _.asset("expansion_tbc"),
 	[-1000116] = _.asset("expansion_wotlk"),
+	[-1000117] = _.asset("expansion_cata"),
+	[-1000118] = _.asset("expansion_mop"),
+	[-1000119] = _.asset("expansion_wod"),
 	[-1000123] = 237019,
 	[-1000125] = 237018,
 	[-1000127] = 236534,
@@ -791,6 +798,7 @@ localize(L.HEADER_ICONS, {
 	[-1000284] = 133783,
 	[-1000285] = 133783,
 	[-1000286] = 133783,
+	[-1000299] = 133783,
 	[-1000373] = 1530081,
 	[-1000380] = 236188,
 	[-1000872] = 133168,
@@ -816,6 +824,7 @@ localize(L.HEADER_EVENTS, {
 	[-1000243] = 1181,
 	[-1000282] = 372,
 	[-1000284] = 590,
+	[-1000299] = 1262,
 	[-1000872] = 446916,
 	[-1001035] = 133889,
 	[-1001036] = 133899,
@@ -829,6 +838,9 @@ localize(L.EVENT_REMAPPING, {
 -- Programmatic Event Scheduling
 _.Modules.Events.SetEventInformation(446916, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=19,["weekday"]=3,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=30,["weekday"]=3,["year"]=2024})
+});
+_.Modules.Events.SetEventInformation(1262, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=6,["weekday"]=1,["year"]=2022},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=27,["weekday"]=1,["year"]=2022})
 });
 _.Modules.Events.SetEventInformation(590, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=22,["weekday"]=1,["year"]=2023},{["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=7,["weekday"]=1,["year"]=2024}),
@@ -2177,6 +2189,9 @@ local ObjectNames = {
 	[182166] = "Ango'rosh Attack Plans",
 	[182184] = "Daggerfen Poison Manual",
 	[182185] = "Daggerfen Poison Vial",
+	[182196] = "Arcane Container",
+	[182197] = "Arcane Container",
+	[182198] = "Arcane Container",
 	[182256] = "Discarded Nutriment",
 	[182265] = "Bleeding Hollow Supply Crate",
 	[182349] = "Corki's Prison",
@@ -3937,6 +3952,9 @@ local ObjectModels = {
 	[182166] = 198457,
 	[182184] = 198031,
 	[182185] = 191827,
+	[182196] = 199744,
+	[182197] = 199744,
+	[182198] = 199744,
 	[182256] = 193909,
 	[182265] = 199099,
 	[182349] = 200938,
@@ -4407,7 +4425,7 @@ _.PhaseConstants = {
 };
 local phases = {
 	[1] = {
-		name = "Never Implemented",
+		name = "Never Implemented [NYI]",
 		description = "|cFFFF0000This was never available to players.|r",
 		state = 1,
 	},
@@ -4501,13 +4519,6 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Naxxramas, which was heralded by the Scourge Invasion.|r",
 		minimumBuildVersion = 11301,
 		buildVersion = 11306,
-		state = 2,
-	},
-	[1601] = {
-		name = "Scourge Invasion",
-		description = "|cFFAAFFAAThis was only available during the Scourge Invasion.|r",
-		lore = "|cFFFFAAAAIf the Scourge Invasion has ended on your server, simply turn this off.|r",
-		minimumBuildVersion = 11301,
 		state = 2,
 	},
 	[1602] = {
@@ -5596,6 +5607,9 @@ localize(ObjectNames, {
 	[182166] = "Angriffspläne der Ango'rosh",
 	[182184] = "Gifthandbuch von Dolchfenn",
 	[182185] = "Giftphiole von Dolchfenn",
+	[182196] = "Arkaner Behälter",
+	[182197] = "Arkaner Behälter",
+	[182198] = "Arkaner Behälter",
 	[182256] = "Liegengelassene Nahrung",
 	[182265] = "Vorratskiste des Blutenden Auges",
 	[182355] = "Waffen von Kil'sorge",
@@ -6888,6 +6902,9 @@ localize(ObjectNames, {
 	[182166] = "Plans d'attaque d'Ango'rosh",
 	[182184] = "Manuel de poison tourbedague",
 	[182185] = "Fiole de poison tourbedague",
+	[182196] = "Récipient arcanique",
+	[182197] = "Récipient arcanique",
+	[182198] = "Récipient arcanique",
 	[182256] = "Aliments abandonnés",
 	[182265] = "Caisse de fournitures de l'Orbite-Sanglante",
 	[182355] = "Armes de Kil'sorrau",
@@ -7811,6 +7828,9 @@ localize(ObjectNames, {
 	[182166] = "Piani d'Attacco degli Ango'rosh",
 	[182184] = "Manuale del Veleno di Limoaguzzo",
 	[182185] = "Fiala di Veleno di Limoaguzzo",
+	[182196] = "Contenitore Arcano",
+	[182197] = "Contenitore Arcano",
+	[182198] = "Contenitore Arcano",
 	[182256] = "Alimento Scartato",
 	[182265] = "Provviste dei Guerci Insanguinati",
 	[182355] = "Armamenti dei Kil'sorin",
@@ -8988,6 +9008,9 @@ localize(ObjectNames, {
 	[182166] = "Plano de Ataque Ango'rosh",
 	[182184] = "Manual de Venenos Lamadaga",
 	[182185] = "Ampola de Veneno Lamadaga",
+	[182196] = "Recipiente Arcano",
+	[182197] = "Recipiente Arcano",
+	[182198] = "Recipiente Arcano",
 	[182256] = "Nutrimento Descartado",
 	[182265] = "Caixa de Suprimentos Olhos Sangrentos",
 	[182355] = "Armamentos de Kil'pesar",
@@ -10293,6 +10316,9 @@ localize(ObjectNames, {
 	[182166] = "План нападения клана Анго'рош",
 	[182184] = "Справочник по ядам Остротопи",
 	[182185] = "Фиал яда Остротопи",
+	[182196] = "Волшебный контейнер",
+	[182197] = "Волшебный контейнер",
+	[182198] = "Волшебный контейнер",
 	[182256] = "Выброшенный корм",
 	[182265] = "Ящик с припасами из Кровавой Глазницы",
 	[182355] = "Оружие Вечной Скорби",
@@ -10711,7 +10737,7 @@ for i,objectID in ipairs(ALLIANCE_BONFIRES) do ObjectNames[objectID] = "Боль
 for i,objectID in ipairs(CANDY_BUCKETS) do ObjectNames[objectID] = "Кулек конфет"; end
 for i,objectID in ipairs(HORDE_BONFIRES) do ObjectNames[objectID] = "Большой костер Орды"; end
 for key,value in pairs({
-	[1] = "Никогда Не Доступны",
+	[1] = "Никогда Не Доступны [NYI]",
 	[2] = "Убраны Из Игры",
 	[3] = "Кошелек Blizzard",
 	[4] = "ПвП Элита / Гладиатор",
@@ -11689,6 +11715,9 @@ localize(ObjectNames, {
 	[182166] = "앙고로쉬 공격 계획서",
 	[182184] = "비수늪 독 조제법",
 	[182185] = "비수늪 독병",
+	[182196] = "마법 단지",
+	[182197] = "마법 단지",
+	[182198] = "마법 단지",
 	[182256] = "버려진 버섯",
 	[182265] = "피눈물 보급품 상자",
 	[182355] = "킬소로우 무기",
@@ -12927,6 +12956,9 @@ localize(ObjectNames, {
 	[182166] = "Planes de ataque de Ango'rosh",
 	[182184] = "Manual de venenos de Dagapantano",
 	[182185] = "Vial de veneno de Dagapantano",
+	[182196] = "Contenedor arcano",
+	[182197] = "Contenedor arcano",
+	[182198] = "Contenedor arcano",
 	[182256] = "Restos de alimentos",
 	[182265] = "Cajón de suministros de Foso Sangrante",
 	[182355] = "Armamento de Mata'penas",
@@ -13361,10 +13393,14 @@ for key,value in pairs({
 do achievements[key].description = value; end
 end
 if simplifiedLocale == "zh" then
+localize(_.CategoryNames, {
+	[3] = "塔罗牌",
+});
 localize(L.HEADER_NAMES, {
 	[-1000010] = "一般首领掉落",
 	[-1000013] = "常规商人物品",
 	[-1000019] = "探索",
+	[-1000021] = "飞行路线",
 	[-1000032] = "稀有",
 	[-1000038] = "宝箱",
 	[-1000039] = "商人",
@@ -14125,6 +14161,9 @@ localize(ObjectNames, {
 	[182165] = "通缉布告",
 	[182184] = "匕潭毒药手册",
 	[182185] = "匕潭毒药瓶",
+	[182196] = "奥术容器",
+	[182197] = "奥术容器",
+	[182198] = "奥术容器",
 	[182256] = "丢弃的食物",
 	[182265] = "血环补给箱",
 	[182355] = "暗影议会军备",
@@ -14483,7 +14522,7 @@ for i,objectID in ipairs(ALLIANCE_BONFIRES) do ObjectNames[objectID] = "联盟�
 for i,objectID in ipairs(CANDY_BUCKETS) do ObjectNames[objectID] = "糖罐"; end
 for i,objectID in ipairs(HORDE_BONFIRES) do ObjectNames[objectID] = "部落篝火"; end
 for key,value in pairs({
-	[1] = "从未实施",
+	[1] = "从未实施 [NYI]",
 	[2] = "从游戏中移除",
 	[4] = "PvP 精良/角斗士",
 	[5] = "不可学",
@@ -14521,12 +14560,13 @@ for key,value in pairs({
 do achievements[key].description = value; end
 if GetLocale():sub(3,4):lower() == "tw" then
 localize(L.HEADER_NAMES, {
+	[-1000021] = "飛行路線",
 	[-1000038] = "寶箱",
 	[-1000044] = "地區掉落",
 });
 for i,objectID in ipairs(CANDY_BUCKETS) do ObjectNames[objectID] = "糖果桶"; end
 for key,value in pairs({
-	[1] = "從未實裝",
+	[1] = "從未實裝 [NYI]",
 	[2] = "已從遊戲中移除",
 	[3] = "暴雪點數",
 	[4] = "PvP 精良/角鬥士",

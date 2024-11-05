@@ -87,35 +87,38 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 22nd, 10:00 a.m. & November 5th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_0_5 },
 			}),
-			--[[ TODO: verify if codes can be redeemed on non-us accounts
-			i(999, {	-- Bot Wrangler’s Crimson Apron
-				["description"] = "Available to redeem for points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+			i(228907, {	-- Bot Wrangler’s Belt
+				["description"] = "Available to redeem for 300 points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
 				["timeline"] = { ADDED_11_0_5 },
 				["u"] = REAL_MONEY,
 			}),
-			i(999, {	-- Bot Wrangler’s Violet Apron
-				["description"] = "Available to redeem for points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+			i(228909, {	-- Bot Wrangler’s Crimson Apron
+				["description"] = "Available to redeem for 300 points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
 				["timeline"] = { ADDED_11_0_5 },
 				["u"] = REAL_MONEY,
 			}),
-			i(999, {	-- Chillbot 9000 (PET!)
-				["description"] = "Available to redeem for points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+			i(228908, {	-- Bot Wrangler’s Violet Apron
+				["description"] = "Available to redeem for 300 points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
 				["timeline"] = { ADDED_11_0_5 },
 				["u"] = REAL_MONEY,
 			}),
-			i(999, {	-- Thrillbot 9000 (PET!)
-				["description"] = "Available to redeem for points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+			i(228793, {	-- Chillbot 9000 (PET!)
+				["description"] = "Available to redeem for 400 points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
 				["timeline"] = { ADDED_11_0_5 },
 				["u"] = REAL_MONEY,
 			}),
-			]]--
+			i(228790, {	-- Thrillbot 9000 (PET!)
+				["description"] = "Available to redeem for 400 points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				["timeline"] = { ADDED_11_0_5 },
+				["u"] = REAL_MONEY,
+			}),
 			i(211087, {	-- Hateforged Blazecycle (MOUNT!)
-				["description"] = "Available to redeem for points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				["description"] = "Available to redeem for 600 points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
 				["timeline"] = { ADDED_11_0_5 },
 				["u"] = REAL_MONEY,
 			}),
 			i(68385, {	-- Lil' Ragnaros (PET!)
-				["description"] = "Available to redeem for points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
+				["description"] = "Available to redeem for 400 points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
 				["timeline"] = { ADDED_11_0_5 },
 				["u"] = REAL_MONEY,
 			}),

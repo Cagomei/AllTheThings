@@ -1232,14 +1232,24 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				},
 			}),
 			q(31954, {	-- Grand Master Mo'ruk
-				["coord"] = { 62.6, 45.8, KRASARANG_WILDS },
+				["coords"] = {
+					{ 62.6, 45.8, KRASARANG_WILDS },
+					-- #if AFTER 11.0.5
+					{ 62.0, 49.5, TANARIS },
+					-- #endif
+				},
 				["provider"] = { "n", 66733 },
 				["g"] = {
 					SACK_OF_PET_SUPPLIES
 				},
 			}),
 			q(31956, {	-- Grand Master Yon
-				["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
+				["coords"] = {
+					{ 35.8, 73.6, KUN_LAI_SUMMIT },
+					-- #if AFTER 11.0.5
+					{ 61.9, 49.6, TANARIS },
+					-- #endif
+				},
 				["provider"] = { "n", 66738 },	-- Courageous Yon
 				["g"] = {
 					SACK_OF_PET_SUPPLIES
@@ -1273,7 +1283,12 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				},
 			}),
 			q(31953, {	-- Grand Master Hyuna
-				["coord"] = { 47.9, 54.1, THE_JADE_FOREST },
+				["coords"] = {
+					{ 47.9, 54.1, THE_JADE_FOREST },
+					-- #if AFTER 11.0.5
+					{ 62.0, 49.5, TANARIS },
+					-- #endif
+				},
 				["provider"] = { "n", 66730 },	-- Hyuna of the Shrines
 				["g"] = {
 					SACK_OF_PET_SUPPLIES
@@ -1375,7 +1390,12 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			}),
 			q(31955, {	-- Grand Master Nishi
 				["provider"] = { "n", 66734 },	-- Farmer Nishi
-				["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
+				["coords"] = {
+					{ 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
+					-- #if AFTER 11.0.5
+					{ 61.9, 49.6, TANARIS },
+					-- #endif
+				},
 				["g"] = {
 					SACK_OF_PET_SUPPLIES
 				},

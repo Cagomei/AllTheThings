@@ -805,7 +805,7 @@ app.CreateMap = app.CreateClass("Map", "mapID", {
 	["playerCoord"] = function(t)
 		local mapID = t.mapID
 		if mapID < 0 then mapID = app.RealMapID end
-		local position = C_Map_GetPlayerMapPosition(mapID, "player")
+		local position = mapID and C_Map_GetPlayerMapPosition(mapID, "player")
 		if position then
 			local x,y = position:GetXY()
 			return { app.round(x * 100, 1), app.round(y * 100, 1), mapID };
@@ -1100,7 +1100,7 @@ app.AddEventRegistration("LOOT_CLOSED", function()
 	app:UnregisterEvent("LOOT_CLOSED");
 	app:RegisterEvent("UPDATE_INSTANCE_INFO");
 	RequestRaidInfo();
-end)
+end, true)
 local function Event_UPDATE_INSTANCE_INFO()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	AfterCombatCallback(RefreshSavesCallback);

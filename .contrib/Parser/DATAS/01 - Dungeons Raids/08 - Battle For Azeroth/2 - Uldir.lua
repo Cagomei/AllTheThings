@@ -65,6 +65,15 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
                         ["_encounter"] = { 2147, DIFFICULTY.RAID.LFR },
                     }),
                 }),
+				ach(40960, { 	-- Uldir
+					["timeline"] = { ADDED_11_0_7 },
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						12522,	-- Crimson Descent
+						12521,	-- Halls of Containment
+						12523,	-- Heart of Corruption
+					}},
+				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {

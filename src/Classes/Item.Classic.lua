@@ -66,7 +66,7 @@ local collectibleAsCostForItem = function(t)
 							costTotal = costTotal + 1;
 						end
 					elseif (ref.collectible and not ref.collected) or (ref.total and ref.total > ref.progress) then
-						if ref.cost then
+						if ref.cost and type(ref.cost) == "table" then
 							for k,v in ipairs(ref.cost) do
 								if v[2] == id and v[1] == "i" then
 									costTotal = costTotal + (v[3] or 1);

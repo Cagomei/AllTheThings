@@ -47,6 +47,15 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
                         ["_encounter"] = { 2361, DIFFICULTY.RAID.LFR },
                     }),
                 }),
+				ach(40962, { 	-- The Eternal Palace
+					["timeline"] = { ADDED_11_0_7 },
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						13719,	-- Depths of the Devoted
+						13725,	-- The Circle of Stars
+						13718,	-- The Grand Reception
+					}},
+				}),
 				ach(13687, {	-- Glory of the Eternal Raider
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

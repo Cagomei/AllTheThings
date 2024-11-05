@@ -6910,6 +6910,15 @@ local ObjectNames = {
 	[465241] = "Awakened Cache",
 	[465242] = "Awakened Cache",
 	[465243] = "Awakened Cache",
+	[467075] = "Darkmoon Fortune Card",
+	[467083] = "Darkmoon Fortune Card",
+	[467334] = "Darkmoon Fortune Card",
+	[467336] = "Darkmoon Fortune Card",
+	[467338] = "Darkmoon Fortune Card",
+	[467339] = "Darkmoon Fortune Card",
+	[467342] = "Darkmoon Fortune Card",
+	[467351] = "Darkmoon Fortune Card",
+	[467403] = "Darkmoon Fortune Card",
 	[485669] = "DELVER'S CALL: Fungal Folly",
 	[487805] = "DELVER'S CALL: Earthcrawl Mines",
 	[487815] = "DELVER'S CALL: The Waterworks",
@@ -12037,6 +12046,15 @@ local ObjectModels = {
 	[465241] = 4323481,
 	[465242] = 4323481,
 	[465243] = 4323481,
+	[467075] = 5334402,
+	[467083] = 5334402,
+	[467334] = 5334402,
+	[467336] = 5334402,
+	[467338] = 5334402,
+	[467339] = 5334402,
+	[467342] = 5334402,
+	[467351] = 5334402,
+	[467403] = 5334402,
 	[485669] = 5409330,
 	[487805] = 5409330,
 	[487815] = 5409331,
@@ -15864,9 +15882,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artefakte",
 	[103] = "Waffenverzauberungen",
-});
-localize(L.FlightPathNames, {
-	[149] = "Trümmerposten, Höllenfeuerhalbinsel",
 });
 localize(ObjectNames, {
 	[31] = "Alte Löwenstatue",
@@ -19959,9 +19974,6 @@ localize(L.HEADER_LORE, {
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artéfact",
 });
-localize(L.FlightPathNames, {
-	[149] = "Halte du Fracas, Péninsule des Flammes infernales",
-});
 localize(ObjectNames, {
 	[31] = "Statue du vieux lion",
 	[33] = "Coffre verrouillé",
@@ -23932,9 +23944,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000856] = "C'è una battaglia 4x4 in corso. Aiuta l'Orda sconfiggendo i Worgen Stalker.",
 	[-1000858] = "Tre cacciatori hanno circondato Mara Mantoveloce. Coinvolgili in combattimento e un forziere malconcio verrà generato vicino a Mara Swiftmane. Una volta terminata la battaglia, Mara ti ringrazierà e ti lascerà con il baule malconcio.",
 });
-localize(L.FlightPathNames, {
-	[149] = "Presidio Frantumato, Penisola del Fuoco Infernale",
-});
 localize(ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
 	[34] = "Vecchio Fiasco",
@@ -27551,9 +27560,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "Há uma batalha 4x4 em andamento. Ajude a Aliança derrotando o Esquadrão da Morte Abandonado.",
 	[-1000856] = "Há uma batalha 4x4 em andamento. Ajude a Horda derrotando os Worgen Stalkers.",
 	[-1000858] = "Três caçadores cercaram Mara Swiftmane. Envolva-os em combate e um baú maltratado aparecerá perto de Mara Swiftmane. Assim que a batalha terminar, Mara agradecerá e deixará você com o Baú Maltratado.",
-});
-localize(L.FlightPathNames, {
-	[149] = "Pontal do Raio, Península Fogo do Inferno",
 });
 localize(ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
@@ -31540,9 +31546,6 @@ localize(L.HEADER_LORE, {
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Артефакты",
 	[103] = "Иллюзии",
-});
-localize(L.FlightPathNames, {
-	[149] = "Лагерь Удара ,Полуостров Адского Пламени",
 });
 localize(ObjectNames, {
 	[31] = "Статуя старого льва",
@@ -35601,9 +35604,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000856] = "4대4 전투가 진행 중입니다. 늑대인간 추적자를 물리쳐 호드를 도와주세요.",
 	[-1000858] = "세 명의 사냥꾼이 마라 스위프트메인을 둘러싸고 있습니다. 전투에 참여하면 마라 스위프트메인 근처에 낡은 상자가 생성됩니다. 전투가 끝나면 마라는 감사 인사를 전하고 낡은 상자를 남겨줄 것입니다.",
 });
-localize(L.FlightPathNames, {
-	[149] = "징검다리 거점 지옥불 반도",
-});
 localize(ObjectNames, {
 	[31] = "오래된 사자상",
 	[33] = "잠긴 궤짝",
@@ -39124,9 +39124,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "Hay una batalla 4x4 en curso. Ayuda a la Alianza derrotando al Forsaken Deathsquad.",
 	[-1000856] = "Hay una batalla 4x4 en curso. Ayuda a la Horda derrotando a los Worgen Stalkers.",
 	[-1000858] = "Tres cazadores han rodeado a Mara Swiftmane. Entra en combate con ellos y aparecerá un cofre maltratado cerca de Mara Swiftmane. Una vez que termine la batalla, Mara te lo agradecerá y te dejará con el Cofre Maltratado.",
-});
-localize(L.FlightPathNames, {
-	[149] = "Puesto Devastación, Península del Fuego Infernal",
 });
 localize(ObjectNames, {
 	[31] = "Estatua de león antigua",
@@ -43151,9 +43148,6 @@ localize(L.FILTER_ID_TYPES, {
 	[11] = "神器",
 	[103] = "幻象",
 });
-localize(L.FlightPathNames, {
-	[149] = "破碎岗哨, 地狱火半岛",
-});
 localize(ObjectNames, {
 	[31] = "陈旧的石狮子",
 	[34] = "旧罐子",
@@ -46743,9 +46737,6 @@ localize(L.HEADER_NAMES, {
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000045] = "這些物品可以從稀有菁英、可重複的寶箱、祈願蟋蟀、世界任務、指揮桌任務中取得。",
 	[-1001041] = "包含完成探究時獎勵的東西。",
-});
-localize(L.FlightPathNames, {
-	[149] = "碎裂哨站，地獄火半島",
 });
 localize(ObjectNames, {
 	[327407] = "珍貴的巨魔藏寶箱",

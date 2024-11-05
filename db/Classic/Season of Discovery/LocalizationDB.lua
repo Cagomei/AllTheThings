@@ -584,7 +584,6 @@ _.Modules.Events.SetEventInformation(141, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(479, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=21,["weekday"]=2,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=28,["weekday"]=2,["year"]=2024},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=4,["weekday"]=2,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=11,["weekday"]=2,["year"]=2024},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=18,["weekday"]=2,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=25,["weekday"]=2,["year"]=2024},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=2,["weekday"]=2,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=9,["weekday"]=2,["year"]=2024},{["remappedID"]=375}),
@@ -610,22 +609,23 @@ _.Modules.Events.SetEventInformation(479, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=8,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=15,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=29,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=6,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=13,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=20,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=27,["weekday"]=2,["year"]=2025},{["remappedID"]=374})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=20,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=27,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=3,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=10,["weekday"]=2,["year"]=2025},{["remappedID"]=375})
 });
 _.Modules.Events.SetEventInformation(201, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=2,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=1,["year"]=2023}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=3,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=4,["year"]=2025})
 });
-_.Modules.Events.SetEventInformation(133889, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=2,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=6,["year"]=2023}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=1,["year"]=2024}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025})
-});
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=7,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=3,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026})
+});
+_.Modules.Events.SetEventInformation(133889, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=2,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=6,["year"]=2023}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=1,["year"]=2024}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025})
 });
 
 -- Filter Database Module
@@ -2840,7 +2840,7 @@ _.PhaseConstants = {
 };
 local phases = {
 	[1] = {
-		name = "Never Implemented",
+		name = "Never Implemented [NYI]",
 		description = "|cFFFF0000This was never available to players.|r",
 		state = 1,
 	},
@@ -8471,7 +8471,7 @@ localize(ObjectNames, {
 	[100000001] = "Незажженный факел",
 });
 for key,value in pairs({
-	[1] = "Никогда Не Доступны",
+	[1] = "Никогда Не Доступны [NYI]",
 	[2] = "Убраны Из Игры",
 	[3] = "Кошелек Blizzard",
 	[4] = "ПвП Элита / Гладиатор",
@@ -11088,11 +11088,15 @@ do achievementCategories[key].name = value; end
 end
 end
 if simplifiedLocale == "zh" then
+localize(_.CategoryNames, {
+	[3] = "塔罗牌",
+});
 localize(L.HEADER_NAMES, {
 	[-1000010] = "一般首领掉落",
 	[-1000013] = "常规商人物品",
 	[-1000015] = "恶魔训练师",
 	[-1000019] = "探索",
+	[-1000021] = "飞行路线",
 	[-1000032] = "稀有",
 	[-1000034] = "骑术训练师",
 	[-1000038] = "宝箱",
@@ -11806,7 +11810,7 @@ localize(ObjectNames, {
 	[100000001] = "未点燃的火把",
 });
 for key,value in pairs({
-	[1] = "从未实施",
+	[1] = "从未实施 [NYI]",
 	[2] = "从游戏中移除",
 	[4] = "PvP 精良/角斗士",
 	[5] = "不可学",
@@ -12128,11 +12132,12 @@ for key,value in pairs({
 do achievementCategories[key].name = value; end
 if GetLocale():sub(3,4):lower() == "tw" then
 localize(L.HEADER_NAMES, {
+	[-1000021] = "飛行路線",
 	[-1000038] = "寶箱",
 	[-1000044] = "地區掉落",
 });
 for key,value in pairs({
-	[1] = "從未實裝",
+	[1] = "從未實裝 [NYI]",
 	[2] = "已從遊戲中移除",
 	[3] = "暴雪點數",
 	[4] = "PvP 精良/角鬥士",

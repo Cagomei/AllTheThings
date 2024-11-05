@@ -1612,7 +1612,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	end or CollectibleAsQuestOrAsLocked,
 	locked = LockedAsBreadcrumb,
 	variants = {
-		AndBreadcrumbWithLockCriteria = AndBreadcrumbWithLockCriteria,
+		AndBreadcrumbWithLockCriteria,
 	},
 }, (function(t) return t.isBreadcrumb; end)
 -- Both: World Quests (Baked back into Quest for now since multiple types can be WorldQuests)

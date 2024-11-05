@@ -652,6 +652,8 @@ localize(L.HEADER_NAMES, {
 	[-1000115] = "Patch 2.x.x",
 	[-1000116] = "Patch 3.x.x",
 	[-1000117] = "Patch 4.x.x",
+	[-1000118] = "Patch 5.x.x",
+	[-1000119] = "Patch 6.x.x",
 	[-1000123] = "Armor Enchantments",
 	[-1000125] = "Weapon Enchantments",
 	[-1000127] = select(2,GetAchievementInfo(2091))..": Season 1",
@@ -745,6 +747,7 @@ localize(L.HEADER_NAMES, {
 	[-1000287] = select(2,GetAchievementInfo(5512)),
 	[-1000288] = select(2,GetAchievementInfo(5863)),
 	[-1000289] = select(2,GetAchievementInfo(6131)),
+	[-1000299] = select(2,GetAchievementInfo(15218)),
 	[-1000373] = "New Character",
 	[-1000380] = "Bounty",
 	[-1000860] = select(2,GetAchievementInfo(6002))..": Season 9",
@@ -866,6 +869,8 @@ localize(L.HEADER_ICONS, {
 	[-1000115] = _.asset("expansion_tbc"),
 	[-1000116] = _.asset("expansion_wotlk"),
 	[-1000117] = _.asset("expansion_cata"),
+	[-1000118] = _.asset("expansion_mop"),
+	[-1000119] = _.asset("expansion_wod"),
 	[-1000123] = 237019,
 	[-1000125] = 237018,
 	[-1000127] = 236534,
@@ -959,6 +964,7 @@ localize(L.HEADER_ICONS, {
 	[-1000287] = 133783,
 	[-1000288] = 133783,
 	[-1000289] = 133783,
+	[-1000299] = 133783,
 	[-1000373] = 1530081,
 	[-1000380] = 236188,
 	[-1000860] = 236235,
@@ -991,6 +997,7 @@ localize(L.HEADER_EVENTS, {
 	[-1000243] = 1181,
 	[-1000282] = 372,
 	[-1000284] = 590,
+	[-1000299] = 1262,
 	[-1000872] = 446916,
 	[-1001035] = 133889,
 	[-1001036] = 133899,
@@ -998,6 +1005,9 @@ localize(L.HEADER_EVENTS, {
 -- Programmatic Event Scheduling
 _.Modules.Events.SetEventInformation(446916, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=19,["weekday"]=3,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=30,["weekday"]=3,["year"]=2024})
+});
+_.Modules.Events.SetEventInformation(1262, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=6,["weekday"]=1,["year"]=2022},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=27,["weekday"]=1,["year"]=2022})
 });
 _.Modules.Events.SetEventInformation(590, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=22,["weekday"]=1,["year"]=2023},{["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=7,["weekday"]=1,["year"]=2024}),
@@ -6600,13 +6610,6 @@ local phases = {
 		buildVersion = 11306,
 		state = 2,
 	},
-	[1601] = {
-		name = "Scourge Invasion",
-		description = "|cFFAAFFAAThis was only available during the Scourge Invasion.|r",
-		lore = "|cFFFFAAAAIf the Scourge Invasion has ended on your server, simply turn this off.|r",
-		minimumBuildVersion = 11301,
-		state = 2,
-	},
 	[1602] = {
 		name = "Silithyst",
 		description = "|cFFAAFFAAThis was only available during the Silithyst Must Flow World PVP Event.|r",
@@ -6903,9 +6906,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artefakte",
-});
-localize(L.FlightPathNames, {
-	[149] = "Trümmerposten, Höllenfeuerhalbinsel",
 });
 localize(ObjectNames, {
 	[31] = "Alte Löwenstatue",
@@ -8834,9 +8834,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artéfact",
 });
-localize(L.FlightPathNames, {
-	[149] = "Halte du Fracas, Péninsule des Flammes infernales",
-});
 localize(ObjectNames, {
 	[31] = "Statue du vieux lion",
 	[32] = "Coffre englouti",
@@ -10731,9 +10728,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000163] = "Questo oggetto ha un aspetto unico. Devi raccogliere questo oggetto appositamente per guadagnare l'aspetto.",
 	[-1000380] = "Questo elenco contiene elementi non ottenibili che ATT Discord ha segnalato come bug che Blizzard deve ancora correggere.\n\nNOTA: tutti i filtri vengono ignorati in questo elenco per motivi di visibilità. In questo elenco sono presenti solo gli oggetti rimossi dal gioco a causa di negligenza e non un gigantesco drago sputafuoco.\n\nAgli sviluppatori Blizzard: correggete gli oggetti e gli incontri elencati di seguito.",
 });
-localize(L.FlightPathNames, {
-	[149] = "Presidio Frantumato, Penisola del Fuoco Infernale",
-});
 localize(ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
 	[34] = "Vecchio Fiasco",
@@ -12282,9 +12276,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
 	[-1000163] = "Este item tem uma aparência única. Você deve coletar este item especificamente para ganhar a aparência.",
 	[-1000380] = "Esta lista contém itens inacessíveis que o ATT Discord relatou como bugs que a Blizzard ainda não corrigiu.\n\nNOTA: Todos os filtros são ignorados nesta lista para visibilidade. Apenas itens removidos do jogo por negligência, em vez de um gigantesco dragão cuspidor de fogo, estão presentes nesta lista.\n\nPara os desenvolvedores da Blizzard: Corrijam os itens e encontros listados abaixo.",
-});
-localize(L.FlightPathNames, {
-	[149] = "Pontal do Raio, Península Fogo do Inferno",
 });
 localize(ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
@@ -14156,9 +14147,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Артефакты",
-});
-localize(L.FlightPathNames, {
-	[149] = "Лагерь Удара ,Полуостров Адского Пламени",
 });
 localize(ObjectNames, {
 	[31] = "Статуя старого льва",
@@ -16302,9 +16290,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000163] = "이 아이템은 독특한 외형을 가지고 있습니다. 외형을 획득하려면 이 아이템을 특별히 수집해야 합니다.",
 	[-1000380] = "이 목록에는 ATT Discord에서 Blizzard가 아직 수정하지 않은 버그로 보고한 얻을 수 없는 항목이 포함되어 있습니다.\n\n참고: 가시성을 위해 이 목록 내에서 모든 필터는 무시됩니다. 거대한 불을 뿜는 용이 아닌 부주의로 인해 게임에서 제거된 아이템만 이 목록에 있습니다.\n\n블리자드 개발자 여러분께: 아래 나열된 아이템과 만남을 수정해 주세요.",
 });
-localize(L.FlightPathNames, {
-	[149] = "징검다리 거점 지옥불 반도",
-});
 localize(ObjectNames, {
 	[31] = "오래된 사자상",
 	[32] = "가라앉은 상자",
@@ -18112,9 +18097,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
 	[-1000163] = "Este artículo tiene una apariencia única. Debes recolectar este artículo específicamente para ganar la apariencia.",
 	[-1000380] = "Esta lista contiene elementos inalcanzables que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los elementos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los elementos y encuentros que se enumeran a continuación.",
-});
-localize(L.FlightPathNames, {
-	[149] = "Puesto Devastación, Península del Fuego Infernal",
 });
 localize(ObjectNames, {
 	[31] = "Estatua de león antigua",
@@ -19972,6 +19954,9 @@ for key,value in pairs({
 do phases[key].description = value; end
 end
 if simplifiedLocale == "zh" then
+localize(_.CategoryNames, {
+	[3] = "塔罗牌",
+});
 localize(L.HEADER_NAMES, {
 	[-1000010] = "一般首领掉落",
 	[-1000013] = "常规商人物品",
@@ -20020,6 +20005,7 @@ localize(L.HEADER_NAMES, {
 	[-1000189] = "霜翼大厅",
 	[-1000190] = "疯狂宝箱",
 	[-1000201] = "暗月马戏团",
+	[-1000202] = "小游戏",
 	[-1000205] = "射击场",
 	[-1000206] = "打豺狼人",
 	[-1000207] = "悼念日",
@@ -20064,9 +20050,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "神器",
-});
-localize(L.FlightPathNames, {
-	[149] = "破碎岗哨, 地狱火半岛",
 });
 localize(ObjectNames, {
 	[31] = "陈旧的石狮子",
@@ -21686,9 +21669,6 @@ localize(L.HEADER_NAMES, {
 	[-1000021] = "飛行路線",
 	[-1000038] = "寶箱",
 	[-1000044] = "地區掉落",
-});
-localize(L.FlightPathNames, {
-	[149] = "碎裂哨站，地獄火半島",
 });
 for i,objectID in ipairs(CANDY_BUCKETS) do ObjectNames[objectID] = "糖果桶"; end
 for key,value in pairs({

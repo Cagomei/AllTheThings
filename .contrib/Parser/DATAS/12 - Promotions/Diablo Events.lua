@@ -139,6 +139,10 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 			},
 		}),
 	}))),
+	i(206007, {	-- Treasure Nabbin' Bag
+		["description"] = "Can be earned by logging into Diablo Immortal on a level 10+ character during the WoW 20th Anniversary.",
+		["timeline"] = { ADDED_11_0_5 },
+	}),
 }));
 -- #endif
 

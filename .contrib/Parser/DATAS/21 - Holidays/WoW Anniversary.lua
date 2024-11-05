@@ -207,9 +207,9 @@ WOW_ANNIVERSARY_TWENTY = createHeader({
 		2024, 10, 22,	-- 10/22/2024
 		2025, 01, 07,	-- 01/07/2025
 	},
-	-- text = {
-	-- 	en = WOWAPI_GetAchievementName(18702),
-	-- },
+	text = {
+		en = WOWAPI_GetAchievementName(41220),
+	},
 	text = {
 		en = "WoW's 20th Anniversary",
 		cn = "魔兽世界二十周年",
@@ -376,29 +376,20 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 -- Common Symlink Drops
-local SYM_ALL_BRD_DROPS = {{"select","instanceID",1301},{"extract","itemID"},
-{"exclude","itemID",
-231490,	-- Arbiter's Blade
-231501,	-- Aristocratic Cuffs
-231507,	-- Battlechaser's Greaves
-231506,	-- Blisterbane Wrap
-231503,	-- Braincage
-232471,	-- Cache of Dark Iron Treasures
-231499,	-- Doomforged Straightedge
-231500,	-- Funeral Pyre Vestment
-231502,	-- Mar Alom's Grip
-231495,	-- Ribsplitter
-231504,	-- Runed Golem Shackles
-231497,	-- Searing Needle
-231498,	-- Spire of the Stoneshaper
-231505,	-- Stoneshield Cloak
-231496,	-- The Judge's Gavel
-232877,	-- Timely Goody Bag
-224278,	-- Timewarped Ironforge Blueprints
-231510,	-- Timewarped Relic Coffer Key [L]
-232365,	-- Timewarped Relic Coffer Key [N]
-232366,	-- Timewarped Relic Coffer Key [H]
-}}
+local SYM_ALL_BRD_DROPS = {{"select","headerID",WOW_ANNIVERSARY_TWENTY},{"pop"},
+{"where","instanceID",1301},{"pop"},
+{"where","headerID",VENDORS},{"extract","itemID"}}
+
+local function RelicCofferKeyPurchase(itemID)
+	local item = i(itemID, {
+		["cost"] = {
+			{"i",231510,40},	-- Timewarped Relic Coffer Key [L]
+			{"i",232365,40},	-- Timewarped Relic Coffer Key [N]
+			{"i",232366,40},	-- Timewarped Relic Coffer Key [H]
+		},
+	})
+	return item
+end
 
 root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, {
 	-- Stuff that's completely gone.
@@ -674,9 +665,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(171498),	-- Savior's Grasp
 								i(171506),	-- Leggings of Eternity
 								i(171497),	-- Legguards of Endless Rage
-								i(122112, {	-- Hyjal Wisp (PET!)
-									["timeline"] = { ADDED_6_1_0 },
-								}),
+								i(122112),	-- Hyjal Wisp (PET!)
 							},
 						}),
 					}),
@@ -941,9 +930,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(171588, {	-- Westfall Saber
 									["races"] = ALLIANCE_ONLY,
 								}),
-								i(142085, {	-- Nerubian Swarmer (PET!)
-									["timeline"] = { ADDED_7_1_0 },
-								}),
+								i(142085),	-- Nerubian Swarmer (PET!)
 							},
 						}),
 						e(1636, {	-- The Lich King
@@ -969,9 +956,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(171573),	-- Warmace of Menethil
 								i(171579),	-- Windrunner's Heartseeker
 								i(50818),	-- Invincible (MOUNT!)
-								i(142098, {	-- Drudge Ghoul (PET!)
-									["timeline"] = { ADDED_7_1_0 },
-								}),
+								i(142098),	-- Drudge Ghoul (PET!)
 								i(122229),	-- Music Roll: Invincible
 								i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 									["sourceQuest"] = 38990,	-- The Call of Icecrown
@@ -2183,6 +2168,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["coord"] = { 62.3, 51.8, TANARIS },
 				-- #endif
 				["isWeekly"] = true,
+				["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5, ADDED_11_0_2 },
 				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
 			}),
 		}),
@@ -2337,6 +2323,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			},
 			["g"] = {
 				n(ACHIEVEMENTS, {
+					ach(41220),	-- WoW's 20th Anniversary
 					ach(40999, {		-- You're in Your Blackrock Depths
 						crit(70642, {	-- Lord Roccor
 							["_encounter"] = { ROCCOR, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
@@ -2413,19 +2400,120 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}),
 				}),
 				n(VENDORS, {
+					-- TODO: maybe once I have figured out better 'Sources' tech to list things with a Source and then assign alternate Sources
+					-- this can be cleaned up again while maintaining proper 'cost' links
+					RelicCofferKeyPurchase(231418),	-- Angerforge's Battle Axe
+					RelicCofferKeyPurchase(231480),	-- Anvilrage Dragoon's Trousers
+					RelicCofferKeyPurchase(231477),	-- Anvilrage Medic's Boots
+					RelicCofferKeyPurchase(231479),	-- Anvilrage Rogue's Belt of Knives
+					RelicCofferKeyPurchase(231488),	-- Anvilrage, Warden's Breastplate
+					RelicCofferKeyPurchase(231463),	-- Arbiter's Blade
+					RelicCofferKeyPurchase(231472),	-- Argelmach's Breaking Bar
+					RelicCofferKeyPurchase(231492),	-- Barman Shanker
+					RelicCofferKeyPurchase(231450),	-- Belt of the Eminent Mason
+					RelicCofferKeyPurchase(231447),	-- Bloodclot Band
+					RelicCofferKeyPurchase(231399),	-- Bloodfist
+					RelicCofferKeyPurchase(231493),	-- Bottle-Popper Ring
+					RelicCofferKeyPurchase(231457),	-- Bottled Magma
+					RelicCofferKeyPurchase(231486),	-- Burning Spirit Tender's Mitts
+					RelicCofferKeyPurchase(231424),	-- Burst of Knowledge
+					RelicCofferKeyPurchase(231415),	-- Cape of the Fire Salamander
+					RelicCofferKeyPurchase(231425),	-- Chief Architect's Monocle
+					RelicCofferKeyPurchase(231404),	-- Cinderhide Armsplints
+					RelicCofferKeyPurchase(231412),	-- Circle of Flame
+					RelicCofferKeyPurchase(231489),	-- Dark Warder's Pauldrons
+					RelicCofferKeyPurchase(231431),	-- Deathdealer Breastplate
+					RelicCofferKeyPurchase(231476),	-- Dope'rel's Calling Rune
+					RelicCofferKeyPurchase(231474),	-- Dope'rel's Finger Gloves
+					RelicCofferKeyPurchase(231482),	-- Dragoon's Volley Gun
+					RelicCofferKeyPurchase(231395),	-- Earthslag Shoulders
+					RelicCofferKeyPurchase(231440),	-- Ebonsteel Spaulders
+					RelicCofferKeyPurchase(231407),	-- Emberplate Armguards
+					RelicCofferKeyPurchase(231455),	-- Embershard Pendant
+					RelicCofferKeyPurchase(231437),	-- Emperor's Seal
+					RelicCofferKeyPurchase(231392),	-- Enthralled Sphere
+					RelicCofferKeyPurchase(231448),	-- Entrenching Boots
+					RelicCofferKeyPurchase(231451),	-- Ferrous Cord
+					RelicCofferKeyPurchase(231484),	-- Fireguard's Lava-Dipped Cleaver
+					RelicCofferKeyPurchase(231400),	-- Fists of Phalanx
+					RelicCofferKeyPurchase(231413),	-- Flame Wrath
+					RelicCofferKeyPurchase(231464),	-- Flame-Tempered Skinner
+					RelicCofferKeyPurchase(231468),	-- Flamekeeper's Fire Blanket
+					RelicCofferKeyPurchase(231478),	-- Flamekeeper's Handwraps
+					RelicCofferKeyPurchase(231483),	-- Flamelash's Fiery Spike
+					RelicCofferKeyPurchase(231467),	-- Flamelord's Emberstaff
+					RelicCofferKeyPurchase(231401),	-- Flamestrider Robes
+					RelicCofferKeyPurchase(231485),	-- Flamewalker Scale Spaulders
+					RelicCofferKeyPurchase(231406),	-- Flameweave Cuffs
+					RelicCofferKeyPurchase(231409),	-- Force of Magma
+					RelicCofferKeyPurchase(231414),	-- Force of Will
+					RelicCofferKeyPurchase(231444),	-- Foreman's Head Protector
+					RelicCofferKeyPurchase(231430),	-- Ghostshroud
+					RelicCofferKeyPurchase(231494),	-- Golem Carapace Opener
+					RelicCofferKeyPurchase(231443),	-- Golem Fitted Pauldrons
+					RelicCofferKeyPurchase(231471),	-- Golem Gearbox
+					RelicCofferKeyPurchase(231446),	-- Greaves of Withering Despair
+					RelicCofferKeyPurchase(231491),	-- Grebmar's Catch Pole
+					RelicCofferKeyPurchase(231465),	-- Grizzle's Skinne
+					RelicCofferKeyPurchase(231435),	-- Guiding Stave of Wisdom
+					RelicCofferKeyPurchase(231417),	-- Hand of Justice
+					RelicCofferKeyPurchase(231439),	-- Hands of the Exalted Herald
+					RelicCofferKeyPurchase(231434),	-- Haunting Specter Leggings
+					RelicCofferKeyPurchase(231456),	-- Heart of Roccor
+					RelicCofferKeyPurchase(231487),	-- Helm of the Molten Avatar
+					RelicCofferKeyPurchase(231393),	-- Houndmaster's Bow
+					RelicCofferKeyPurchase(231436),	-- Imperial Jewel
+					RelicCofferKeyPurchase(231427),	-- Impervious Giant
+					RelicCofferKeyPurchase(231458),	-- Insolent Dark Iron's Vest
+					RelicCofferKeyPurchase(231391),	-- Kentic Amice
+					RelicCofferKeyPurchase(231403),	-- Kindling Stave
+					RelicCofferKeyPurchase(231408),	-- Lavacrest Leggings
+					RelicCofferKeyPurchase(231388),	-- Lead Surveyor's Belt
+					RelicCofferKeyPurchase(231449),	-- Leggings of Frenzied Magic
+					RelicCofferKeyPurchase(231432),	-- Legplates of the Eternal Guardian
+					RelicCofferKeyPurchase(231419),	-- Lord General's Sword
+					RelicCofferKeyPurchase(231389),	-- Luminary Robe
+					RelicCofferKeyPurchase(231461),	-- Magma Giant's Crown
+					RelicCofferKeyPurchase(231454),	-- Magma-Shot Boomstick
+					RelicCofferKeyPurchase(231445),	-- Mantle of Lost Hope
+					RelicCofferKeyPurchase(231416),	-- Molten Fists
+					RelicCofferKeyPurchase(231462),	-- Molten Furnace
+					RelicCofferKeyPurchase(231398),	-- Molten Ironfoe
+					RelicCofferKeyPurchase(231396),	-- Naglering
+					RelicCofferKeyPurchase(231423),	-- Omnicast Boots
+					RelicCofferKeyPurchase(231405),	-- Pyremail Wristguards
+					RelicCofferKeyPurchase(231429),	-- Robes of the Royal Crown
+					RelicCofferKeyPurchase(231421),	-- Royal Decorated Armor
+					RelicCofferKeyPurchase(231397),	-- Rubicund Armguards
+					RelicCofferKeyPurchase(231410),	-- Rubidium Hammer
+					RelicCofferKeyPurchase(231475),	-- Sabaton's of Anger'rel
+					RelicCofferKeyPurchase(231481),	-- Sapper's Waistplate
+					RelicCofferKeyPurchase(231411),	-- Sash of the Burning Heart
+					RelicCofferKeyPurchase(231442),	-- Sash of the Grand Hunt
+					RelicCofferKeyPurchase(231402),	-- Searingscale Leggings
+					RelicCofferKeyPurchase(231420),	-- Second Wind
+					RelicCofferKeyPurchase(231426),	-- Senior Designer's Pantaloons
+					RelicCofferKeyPurchase(231453),	-- Shard Splinter
+					RelicCofferKeyPurchase(231470),	-- Spare Golem Frame
+					RelicCofferKeyPurchase(231469),	-- Spare Golem Pauldrons
+					RelicCofferKeyPurchase(231390),	-- Spritecaster Cape
+					RelicCofferKeyPurchase(231394),	-- Stoneshell Guard
+					RelicCofferKeyPurchase(231438),	-- Swiftwalker Boots
+					RelicCofferKeyPurchase(231433),	-- Thaurissan's Royal Scepter
+					RelicCofferKeyPurchase(231473),	-- The Fifth's Linked Treads
+					RelicCofferKeyPurchase(231428),	-- The Hammer of Grace
+					RelicCofferKeyPurchase(231422),	-- Warstrife Leggings
+					RelicCofferKeyPurchase(231441),	-- Wristguards of Renown
 					n(223881, {	-- Braggi Brazenbrass <Raidfinder Relic Coffer Key Exchanger>
 						["coord"] = { 63.0, 49.8, TANARIS },
-						["cost"] = {{ "i", 231510, 40 }},	-- Timewarped Relic Coffer Key
 						["sym"] = SYM_ALL_BRD_DROPS,
 					}),
 					n(233209, {	-- Kraegan Emberforge <Normal Relic Coffer Key Exchanger>
 						["coord"] = { 63.0, 49.8, TANARIS},
-						["cost"] = {{ "i", 232365, 40 }},	-- Timewarped Relic Coffer Key
 						["sym"] = SYM_ALL_BRD_DROPS,
 					}),
 					n(224322, {	-- Hilda Hellforge <Heroic Relic Coffer Key Exchanger>
 						["coord"] = { 63.0, 49.8, TANARIS},
-						["cost"] = {{ "i", 232366, 40 }},	-- Timewarped Relic Coffer Key
 						["sym"] = SYM_ALL_BRD_DROPS,
 					}),
 				}),
@@ -2551,6 +2639,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				-- The Storm Peaks 226162
 				-- Icecrown 226161
 				-- Grizzly Hills 226160
+				-- Valley of the Four Winds 224532
+				-- Kun-Lai Summit 224531
+				-- Jade Forest 224062
 			}),
 			ach(40997),		-- The Gatecrashers (automated)
 			ach(40995),		-- The Originals (automated)
@@ -2692,7 +2783,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			q(83825),	-- The Case of a Good Book
 			q(84435),	-- The Case of an Old Soul
 			q(84933),	-- The Case of Great Aspirations
-			q(84882),	-- The Case of Misfortune
 			q(85477),	-- The Case of Missing Mementos
 			q(84469),	-- The Case of Pet Games
 			q(84912),	-- The Case of Staged Disaster
