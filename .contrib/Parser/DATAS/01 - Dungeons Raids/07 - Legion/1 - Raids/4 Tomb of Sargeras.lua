@@ -6,6 +6,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 		["isRaid"] = true,
 		["coord"] = { 64.3, 21.0, BROKEN_SHORE },
 		["maps"] = {
+			645,
 			850,
 			851,
 			852,

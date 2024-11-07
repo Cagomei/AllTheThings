@@ -1,0 +1,63 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[465234] = {
+		readable = "Missing Page from Yennu's Snackbook",
+		model = 936413,
+		text = {
+			en = "Missing Page from Yennu's Snackbook",
+			es = "[Missing Page from Yennu's Snackbook]",
+			de = "[Missing Page from Yennu's Snackbook]",
+			fr = "[Missing Page from Yennu's Snackbook]",
+			it = "[Missing Page from Yennu's Snackbook]",
+			pt = "[Missing Page from Yennu's Snackbook]",
+			ru = "[Missing Page from Yennu's Snackbook]",
+			ko = "[Missing Page from Yennu's Snackbook]",
+			cn = "[Missing Page from Yennu's Snackbook]",
+		},
+	},
+	[465277] = {
+		readable = "Mound of Dirt",
+		model = 189528,
+		text = {
+			en = "Mound of Dirt",
+			es = "[Mound of Dirt]",
+			de = "[Mound of Dirt]",
+			fr = "[Mound of Dirt]",
+			it = "[Mound of Dirt]",
+			pt = "[Mound of Dirt]",
+			ru = "[Mound of Dirt]",
+			ko = "[Mound of Dirt]",
+			cn = "[Mound of Dirt]",
+		},
+	},
+	[467060] = {
+		readable = "Ball of Yarn",
+		model = 198143,
+		text = {
+			en = "Ball of Yarn",
+			es = "[Ball of Yarn]",
+			de = "[Ball of Yarn]",
+			fr = "[Ball of Yarn]",
+			it = "[Ball of Yarn]",
+			pt = "[Ball of Yarn]",
+			ru = "[Ball of Yarn]",
+			ko = "[Ball of Yarn]",
+			cn = "[Ball of Yarn]",
+		},
+	},
+	[470229] = {
+		readable = "Plush Toy",
+		model = 1021411,
+		text = {
+			en = "Plush Toy",
+			es = "[Plush Toy]",
+			de = "[Plush Toy]",
+			fr = "[Plush Toy]",
+			it = "[Plush Toy]",
+			pt = "[Plush Toy]",
+			ru = "[Plush Toy]",
+			ko = "[Plush Toy]",
+			cn = "[Plush Toy]",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end

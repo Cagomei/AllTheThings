@@ -791,8 +791,6 @@ root(ROOTS.Unsorted, {
 				i(225252),	-- Bronze Celebration Token
 				-- Secret
 				i(229411),	-- Normal Feather
-
-				i(225678),	-- Spare Key to Shaffar's Stasis Chamber
 				i(228782),	-- PH - Sandbox Wolf
 				i(228783),	-- PH - Sandbox Horse
 				i(228910),	-- Cache of Nerubian Treasures

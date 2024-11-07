@@ -169,6 +169,7 @@ local MobileNPCDB = {
 	 [88026] = true,	-- John J. Keeshan
 	 [88027] = true,	-- Impsy
 	[101527] = true,	-- Blingtron 6000
+	[145005] = true,	-- Lor'themar Theron
 	[145707] = true,	-- Advisor Belgrum
 	[153897] = true,	-- Blingtron 7000
 	[158635] = true,	-- Xolartios <Eternal Traveler>

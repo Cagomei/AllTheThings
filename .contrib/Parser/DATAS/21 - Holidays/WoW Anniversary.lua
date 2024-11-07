@@ -2780,7 +2780,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			q(85195),	-- Chapter 3
 			q(85503),	-- Chapter 4
 			q(84924),	-- The Case of a Feathered Friend
-			q(83825),	-- The Case of a Good Book
 			q(84435),	-- The Case of an Old Soul
 			q(84933),	-- The Case of Great Aspirations
 			q(85477),	-- The Case of Missing Mementos

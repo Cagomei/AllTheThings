@@ -29,7 +29,6 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		-- 7.x.x
 		n(P7xx, {
 			-- 0 (World)
-			m(645),	-- Twisting Nether
 			m(696),	-- Stormheim
 		}),
 	}),

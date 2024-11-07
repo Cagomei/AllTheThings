@@ -16,9 +16,6 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 	["description"] = "***Using Debug Mode is recommended.***\n",
 	["groups"] = {
 		n(ACHIEVEMENTS, {
-			ach(40871, {	-- Assistant to the Assistant Guest Relations Manager (automated)
-				i(231907),	-- Tricked-Out Thinking Cap
-			}),
 			ach(40870, {	-- Azeroth's Greatest Detective
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -31,14 +28,10 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					title(571),	-- Detective <Name> (TITLE!)
 				},
 			}),
-			ach(40872, {	-- I Saved the Party and All I Got Was This Lousy Hat (automated)
-				i(234448),	-- Bright Ideas Thinking Cap
-				i(231906),	-- High-Alert Thinking Cap
-			}),
 			ach(40967),		-- Ratts' Revenge
 		}),
 		n(QUESTS, {
-			-- Chapter 1 --
+			-- Tutorial Questline
 			q(84143, {	-- Lost and Busy
 				["provider"] = { "n", 226683 },	-- Alyx <Volunteer Assistant Guest Relations Manager>
 				["coord"] = { 63.0, 50.2, TANARIS },
@@ -135,8 +128,24 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["coord"] = { 63.3, 52.4, TANARIS },
 				["crs"] = 230711,	-- Maru (Spirit)
 			}),
+		n(VENDORS, {
+			n(226766, {	-- Benatauk <Unco Benny>
+				["description"] = "You need to get up to the quest 'A Whiff of Help' in the chain and accept it in order to buy the items.",
+				["sourceQuests"] = { 84868 },	-- A Whiff of Help (Quest Accepted)
+				["coord"] = { 63.3, 52.4, TANARIS },
+				["g"] = {
+					i(229351),	-- Spiritual Incense
+					i(229375),	-- Neural Enlarger
+				},
+			}),
+		}),
+		header(HEADERS.Achievement, 40872, {
+			ach(40872, {	-- I Saved the Party and All I Got Was This Lousy Hat (automated)
+				i(234448),	-- Bright Ideas Thinking Cap
+				i(231906),	-- High-Alert Thinking Cap
+			}),
+			-- Chapter 1
 			q(84236, {	-- The Great Detective
-				["sourceQuests"] = { 84868 },	-- A Whiff of Help
 				["provider"] = { "n", 226683 },	-- Alyx <Volunteer Assistant Guest Relations Manager>
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
@@ -190,13 +199,12 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					n(226952, {	-- Rexxar
 						["coord"] = { 77.3, 46.2, BOREAN_TUNDRA },
 					}),
-
 				},
 			}),
 			q(84296, {	-- The Trail's Gone Cold
 				["description"] = "1. Locate 3 diary pages around the marked shed and then go to Sholazar Basin.\n2. Interact with the Mounted Spyglass atop the Glimmering Pillar and then head to Icecrown.\n3. Use your Torch of Pyreth at Scrapes.\n4. Summon Rexxar with your Spirit's Whistle and tell him about a shapeshifter.",
 				["sourceQuests"] = { 84278 },	-- Tracking Quest
-				["provider"] = { "n", 226952  },	-- Rexxar
+				["provider"] = { "n", 226952 },	-- Rexxar
 				["coord"] = { 77.3, 46.2, BOREAN_TUNDRA },
 				["crs"] = { 228550 },	-- Rexxar
 				["g"] = {
@@ -205,7 +213,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 						["coord"] = { 85.9, 34.0, BOREAN_TUNDRA },
 						["g"] = {
 							i(227665),	-- Torn Diary, Page 4 (QI!)
-						}
+						},
 					}),
 					o(457161, {	-- Torn Note
 						["description"] = "Use Torch of Pyrreth to reveal the page.",
@@ -213,13 +221,13 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 						["coord"] = { 85.9, 33.9, BOREAN_TUNDRA },
 						["g"] = {
 							i(227672),	-- Torn Diary, Page 7 (QI!)
-						}
+						},
 					}),
 					o(457160, {	-- Torn Note
 						["coord"] = { 88.1, 34.6, BOREAN_TUNDRA },
 						["g"] = {
 							i(227671),	-- Torn Diary, Page 6 (QI!)
-						}
+						},
 					}),
 					o(457197, {	-- Mounted Spyglass
 						["coord"] = { 49.7, 36.0, SHOLAZAR_BASIN },
@@ -260,23 +268,110 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					}),
 				},
 			}),
-			-- End of Chapter 1 --
+			-- Chapter 2
+			--Quests in this chain are faction locked, but both cross complete.
+			q(84563, {	-- Toy Trouble [A]
+				["provider"] = { "n", 232404 },	-- Alyx <Volunteer Assistant Guest Relations Manager and Associate Event Coordinator>
+				["sourceQuests"] = { 84336 },	-- Spot The Difference
+				["coord"] = { 63.0, 50.2, TANARIS },
+			}),
+			q(84564, {	-- Toy Trouble [H]
+				["provider"] = { "n", 232404 },	-- Alyx <Volunteer Assistant Guest Relations Manager and Associate Event Coordinator>
+				["sourceQuests"] = { 84336 },	-- Spot The Difference
+				["coord"] = { 63.0, 50.2, TANARIS },
+			}),
+			q(84588, {	-- Operation Toy Rescue [A]
+				["description"] = "Talk to Yennu in Iskaara, find a note in Dragonscale Basecamp, and find their ball near Maruukai then return. Pet Kenshi in Boralus, find the Ball of Yarn in the park, and talk to Kenshi again.",
+				["provider"] = { "n", 226684 },	-- Maru
+				["sourceQuests"] = { 84563 },	-- Toy Trouble [A]
+				["coord"] = { 63.2, 52.4, TANARIS },
+				["g"] = {
+					i(229990),	-- My Journal: Operation Toy Rescue (QI!)
+					n(228634, {	-- Yennu
+						["coord"] = { 13.4, 48.9, THE_AZURE_SPAN },
+					}),
+					o(465234, {	-- Missing Page from Yennu's Snackbook
+						["description"] = "Inside a cart in Dragonscale Basecamp.",
+						["coord"] = { 47.0, 83.5, THE_WAKING_SHORES },
+						["g"] = {
+							i(228791 ),	-- Missing Page from Yennu's Snackbook (QI!)
+						},
+					}),
+					o(465277, {	-- Mound of Dirt
+						["description"] = "By a river by the eastern side of Maruukai.",
+						["coord"] = { 62.0, 37.5, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(228975),	-- Yennu's Toy Ball (QI!)
+						},
+					}),
+					n(142044, {	-- Kenshi
+						["coord"] = { 54.0, 72.8, BORALUS },
+					}),
+					o(467060, {	-- Ball of Yarn
+						["description"] = "By a river by the eastern side of Maruukai.",
+						["coord"] = { 62.0, 37.5, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(229164 ),	-- Ball of Yarn (QI!)
+						},
+					}),
+				},
+			}),
+			q(85025, {	-- Operation Toy Rescue [H]
+				["description"] = "Talk to Yennu in Iskaara, find a note in Dragonscale Basecamp, and find their ball near Maruukai then return. Pet Nuts in Dazar'Alor, follow the fur sheddings to a Plush Toy, and give it to him.",
+				["provider"] = { "n", 226684 },	-- Maru
+				["sourceQuests"] = { 84564 },	-- Toy Trouble [H]
+				["coord"] = { 63.2, 52.4, TANARIS },
+				["g"] = {
+					i(229991),	-- My Journal: Operation Toy Rescue (QI!)
+					n(228634, {	-- Yennu
+						["coord"] = { 13.4, 48.9, THE_AZURE_SPAN },
+					}),
+					o(465277, {	-- Missing Page from Yennu's Snackbook
+						["description"] = "Inside a cart in Dragonscale Basecamp.",
+						["coord"] = { 47.0, 83.5, THE_WAKING_SHORES },
+						["g"] = {
+							i(228791 ),	-- Missing Page from Yennu's Snackbook (QI!)
+						},
+					}),
+					o(465277, {	-- Mound of Dirt
+						["description"] = "By a river by the eastern side of Maruukai.",
+						["coord"] = { 62.0, 37.5, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(228975),	-- Yennu's Toy Ball (QI!)
+						},
+					}),
+					n(54227, {	-- Nuts
+						["coord"] = { 56.3, 31.7, DAZARALOR },
+					}),
+					o(470229, {	-- Plush Toy
+						["coord"] = { 56.4, 21.3, DAZARALOR },
+						["g"] = {
+							i(229908),	-- Plush Toy (QI!)
+						},
+					}),
+				},
+			}),
+		}),
+		header(HEADERS.Achievement, 40871,{
+			ach(40871, {	-- Assistant to the Assistant Guest Relations Manager (automated)
+				i(231907),	-- Tricked-Out Thinking Cap
+			}),
+			-- The Case of Misfortune
 			o(467403, {	-- Darkmoon Fortune Card
-				["description"] = "Behind the crate next to Alyx. After looting this, talk with her, she will tell you to Speak to Alphonse.",
+				["description"] = "Behind the crate next to Alyx. After looting this, talk with her, she will tell you to Speak to Alphonse.\n\nYou need to obtain 1 card, it does not matter which one, in order to see gossip options and start the quest.\nThis one is just an example as it is located near Alyx, the main quest giver of the event.",
 				["coord"] = { 63.0, 50.2, TANARIS },
 				["crs"] = {
 					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 					230838,	-- Alphonse Constant <Apprentice Cartomancer>
 				},
 				["g"] = {
-					i(229919),	-- Six of Frost
+					i(229219),	-- Six of Frost
 				},
 			}),
 			q(84882, {	-- Deck Dismay
 				["description"] = "Speak to Alphonse after having looted the Six of Frost to unlock this quest. Use the Idol of Ohn'ahra to find more cards scattered around the grounds.",
 				["provider"] = { "n", 230838 },	-- Alphonse Constant <Apprentice Cartomancer>
 				["coord"] = { 63.9, 52.3, TANARIS },
-				["cost"] = { { "i",  229919, 1 } }, -- 1x Six of Frost
 				["g"] = {
 					o(467083, {	-- Darkmoon Fortune Card
 						["description"] = "Under a bench near the Story Time stage.",
@@ -343,19 +438,79 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					}),
 				},
 			}),
-		}),
-		-- Chapter 2: November 4th --
-		n(VENDORS, {
-			n(226766, {	-- Benatauk <Unco Benny>
-				["description"] = "You need to get up to the quest 'A Whiff of Help' in the chain and accept it in order to buy the items.",
-				["sourceQuests"] = { 84868 },	-- A Whiff of Help (Quest Accepted)
-				["coord"] = { 63.3, 52.4, TANARIS },
+			-- The Case of a Good Book
+			q(83832, {	-- Torn Dreams
+				["qgs"] = {
+					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
+					232404,	-- Alyx <Volunteer Assistant Guest Relations Manager and Associate Event Coordinator>
+				},
+				["coord"] = { 63.0, 50.2, TANARIS },
+			}),
+			q(83825, {	-- Restoring A Grand Tale
+				["provider"] = { "n", 231433 },	-- Raenie Fizzlebog
+				["sourceQuests"] = { 83832 },	-- Torn Dreams
+				["coord"] = { 63.1, 52.0, TANARIS },
+				["crs"] = {
+					227257,	-- Archavon the Stone Watcher
+					121820,	-- Azuregos
+					167749,	-- Doomwalker
+					121913,	-- Emeriss
+					121821,	-- Lethon
+					121818,	-- Lord Kazzak
+					226646,	-- Sha of Anger
+					121911,	-- Taerar
+					121912,	-- Ysondre
+				},
 				["g"] = {
-					i(229351),	-- Spiritual Incense
-					i(229375),	-- Neural Enlarger
+					i(226241),	-- Shredded Green Hills of Stranglethorn (QI!)
+					o(456041, {	-- Folded Paper
+						["description"] = "Next to the latrine behind the Fashion Show platform.",
+						["coord"] = { 63.6, 47.8, TANARIS },
+						["g"] = {
+							i(226236),	-- Green Hills of Stranglethorn - Page 21 (QI!)
+						},
+					}),
+					i(226232, {	-- Green Hills of Stranglethorn - Page 6 (QI!)
+						["description"] = "Drops from any of the Anniversary World Bosses.",
+					}),
+					i(226233, {	-- Green Hills of Stranglethorn - Page 11 (QI!)
+						["description"] = "Drops from any of the Anniversary World Bosses.",
+					}),
+					o(456036, {	-- Loose Paper
+						["description"] = "In a Dog Bowl, in front of the Doghouse.",
+						["coord"] = { 61.9, 49.8, TANARIS },
+						["g"] = {
+							i(226234),	-- Green Hills of Stranglethorn - Page 16 (QI!)
+						},
+					}),
+					n(227795, {	-- Sand Devil
+					["description"] = "In the Timeless Tunnel.",
+						["maps"] = { 74 },
+						["g"] = {
+							i(226237),	-- Green Hills of Stranglethorn - Page 25 (QI!)
+							i(226238),	-- Green Hills of Stranglethorn - Page 27 (QI!)
+						},
+					}),
+					o(456038, {	-- Wet Paper
+						["description"] = "Behind the Story Time Stage, next to the Hearthstone Table.",
+						["coord"] = { 64.5, 51.8, TANARIS },
+						["g"] = {
+							i(226235),	-- Green Hills of Stranglethorn - Page 18 (QI!)
+						},
+					}),
+					n(227816, {	-- Cravitz Lorent <Shady Book Dealer>
+						["description"] = "Below the Fashion Frenzy platform.",
+						["coord"] = { 63.6, 48.8, TANARIS },
+						["g"] = {
+							i(226242, {	-- Green Hills of Stranglethorn (QI!)
+								["description"] = "Ultimately, if you could not be bothered to search for the scattered pages,\nyou can buy this item from a vendor... |CFFFF0000Cheater...|r",
+							}),
+						},
+					}),
 				},
 			}),
 		}),
+	}),
 		header(HEADERS.Achievement, 40979,{
 			ach(40873),		-- Crate Insurance Agent
 			ach(40979),		-- No Crate Left Behind
@@ -446,12 +601,44 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					["provider"] = { "i", 228322 },	-- Dirt-Caked Celebration Crate
 				}),
 			}),
+			header(HEADERS.Quest, 83931, {
+				i(226362),	-- Torn Note (Black Market)
+				i(226364),	-- Torn Note (Fiona Caravan)
+				o(456039, {	-- Crumpled Letter
+					["description"] = "Next to the boxes behind Leeroy's tent.",
+					["sourceQuests"] = { 83825 },	-- Restoring A Great Tale
+					["coord"] = { 63.4, 52.4, TANARIS },
+					["g"] = {
+						i(226365),	-- Crumpled Letter
+					},
+					["questID"] = 83837,
+				}),
+				o(456032, {	-- Ruffled Paper
+					["description"] = "Right by Farmer Yoon, near the Mount Mania.",
+					["sourceQuests"] = { 83825 },	-- Restoring A Great Tale
+					["coord"] = { 63.2, 52.0, TANARIS },
+					["g"] = {
+						i(226361),	-- Next Week's Mount Competition Listing
+					},
+					["questID"] = 83833,
+				}),
+				o(456061, {	-- Battered Celebration Crate
+					["coord"] = { 29.4, 6.4, HOWLING_FJORD },
+					["g"] = {
+						i(226375),	-- Battered Celebration Crate (QS!)
+					},
+				}),
+				q(83931, {	-- Battered Celebration Crate
+					["provider"] = { "i", 226375 },	-- Battered Celebration Crate
+				}),
+			}),
 		}),
 	},
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 	n(GUEST_RELATIONS, {
-		q(84617),	-- Accepting Harder Puzzles from Alyx. This unlocks notes on the bulletin board next to Alyx.
+		q(84617, name(HEADERS.Achievement, 40873)),	-- Accepting Harder Puzzles from Alyx. This unlocks notes on the bulletin board next to Alyx.
+		q(83824, name(HEADERS.Item, 226242)),	-- Triggered when restoring the 'Green Hills of Stranglethorn' by gathering all the missing pages.
 	}),
 })));

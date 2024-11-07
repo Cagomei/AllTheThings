@@ -1,7 +1,7 @@
 # AllTheThings
 
-## [DF-3.4.8](https://github.com/DFortun81/AllTheThings/tree/DF-3.4.8) (2023-06-11)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.4.7...DF-3.4.8) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.4.8](https://github.com/ATTWoWAddon/AllTheThings/tree/DF-3.4.8) (2023-06-11)
+[Full Changelog](https://github.com/ATTWoWAddon/AllTheThings/compare/DF-3.4.7...DF-3.4.8) [Previous Releases](https://github.com/ATTWoWAddon/AllTheThings/releases)
 
 
 ### Diablo 4 event crossover 👿

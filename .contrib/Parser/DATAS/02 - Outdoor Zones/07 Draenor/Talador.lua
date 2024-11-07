@@ -1033,7 +1033,7 @@ root(ROOTS.Zones, {
 					}),
 					q(34400, {	-- Frenzied Manafeeders
 						["provider"] = { "n", 78534 },	-- Ageilaa
-						["description"] = "High-level players may require |cff0000ffSoft Foam Sword|r to lower creature health to 10%.",
+						["description"] = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
 						["crs"] = { 78390 }, -- Frenzied Manafeeder NPC
 						["coord"] = { 49.8, 56.1, TALADOR },
 					}),

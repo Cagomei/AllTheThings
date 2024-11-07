@@ -109,6 +109,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(223314, {	-- Shackled Shadow (MOUNT!)
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 8125}},
 						}),
+						i(224553, {	-- Beledar's Attunement (CI!)
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+						}),
 					}, {	-- RENOWN 24 --
 					}, {	-- RENOWN 25 --
 						i(206350, {	-- Radiant Remnant

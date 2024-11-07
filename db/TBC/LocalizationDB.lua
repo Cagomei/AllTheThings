@@ -3478,13 +3478,6 @@ local phases = {
 		buildVersion = 11306,
 		state = 2,
 	},
-	[1601] = {
-		name = "Scourge Invasion",
-		description = "|cFFAAFFAAThis was only available during the Scourge Invasion.|r",
-		lore = "|cFFFFAAAAIf the Scourge Invasion has ended on your server, simply turn this off.|r",
-		minimumBuildVersion = 11301,
-		state = 2,
-	},
 	[1602] = {
 		name = "Silithyst",
 		description = "|cFFAAFFAAThis was only available during the Silithyst Must Flow World PVP Event.|r",

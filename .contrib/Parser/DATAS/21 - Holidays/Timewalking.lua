@@ -886,7 +886,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(232057, {	-- Drake's Breath Heater Shield
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1200}}, Blizzard whyy?? 1s?
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}},
 						}),
 						iensemble(232319, {	-- Ensemble: Auchenai Priest's Raiment
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
@@ -907,6 +907,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
 						}),
 						i(232044, {	-- Hammer of the Forest Loas
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232066, {	-- Icefrost Focuser
 							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(232022, {	-- Point of the Nether Vortex
@@ -1297,6 +1300,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 			}),
 		}),
 		inst_tw(250, {	-- Mana Tombs
+			n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+				i(225678),	-- Spare Key to Shaffar's Stasis Chamber
+			})),
 			e(534, {	-- Pandemonius
 				["creatureID"] = 18341,
 				["groups"] = {
@@ -1332,9 +1338,16 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				},
 			}),
 			e(536, {	-- Yor
+				-- #if BEFORE 11.0.5
 				["description"] = "Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",
+				-- #else
+				["description"] = "Requires one of two keys unlocked via a quest chain in Blades Edge to open or a conjured one rarely dropped from Mana Tombs bosses.",
+				-- #endif
 				["cost"] = {
 					{ "i", 32079, 1 },	-- Shaffar's Stasis Chamber Key
+					-- #if AFTER 11.0.5
+					{ "i", 225678, 1 },	-- Spare Key to Shaffar's Stasis Chamber
+					-- #endif
 					{ "i", 32092, 1 },	-- The Eye of Haramad
 				},
 				["creatureID"] = 22930,
@@ -1376,6 +1389,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 					i(127245),	-- Warp-Scarab Brooch
 				},
 			}),
+
 		}),
 		inst_tw(254, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2, REMOVED_9_1_5 }},{	-- The Arcatraz
 			e(548, {	-- Zereketh the Unbound
@@ -2344,9 +2358,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 						i(232477, {	-- Hand of Vengeance Tabard
 							["cost"] = {{"c", TIMEWARPED_BADGE, 500}},
 							["races"] = HORDE_ONLY,
-						}),
-						i(232066, {	-- Icefrost Focuser
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}}, TODO, still not on vendor?
 						}),
 						i(232004, {	-- Ironforge Hammerhead Rifle
 							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},

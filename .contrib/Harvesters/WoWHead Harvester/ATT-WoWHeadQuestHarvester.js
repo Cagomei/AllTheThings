@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         ATT-WoWHeadQuestHarvester
-// @namespace    https://github.com/DFortun81/AllTheThings
+// @namespace    https://github.com/ATTWoWAddon/AllTheThings
 // @version      0.4
 // @description  Copies the results of a WoWhead quest search into an AllTheThings-compatible quest listing
 // @author       Pr3vention

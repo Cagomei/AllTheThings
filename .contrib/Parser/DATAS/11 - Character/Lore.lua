@@ -11,7 +11,7 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				-- ["sourceQuests"] = { },
 				["provider"] = { "n", 176789 },	-- Lady Liadrin
 				["coord"] = { 25.4, 52.1, ORIBOS },
-				["classes"] = exclude({PALADIN}, ALL_CLASSES),
+				["classes"] = exclude({ PALADIN, SHAMAN, DRUID, EVOKER }, ALL_CLASSES),
 			}),
 			q(63479, {	-- Summons from the Matriarch (Paladin)
 				-- ["sourceQuests"] = { },
