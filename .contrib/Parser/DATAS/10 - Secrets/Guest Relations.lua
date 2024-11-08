@@ -128,6 +128,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["coord"] = { 63.3, 52.4, TANARIS },
 				["crs"] = 230711,	-- Maru (Spirit)
 			}),
+		}),
 		n(VENDORS, {
 			n(226766, {	-- Benatauk <Unco Benny>
 				["description"] = "You need to get up to the quest 'A Whiff of Help' in the chain and accept it in order to buy the items.",
@@ -269,13 +270,13 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 			-- Chapter 2
-			--Quests in this chain are faction locked, but both cross complete.
+			-- Quests in this chapter are faction locked, but both cross complete.
 			q(84563, {	-- Toy Trouble [A]
 				["provider"] = { "n", 232404 },	-- Alyx <Volunteer Assistant Guest Relations Manager and Associate Event Coordinator>
 				["sourceQuests"] = { 84336 },	-- Spot The Difference
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
-			q(84564, {	-- Toy Trouble [H]
+			q(85024, {	-- Toy Trouble [H]
 				["provider"] = { "n", 232404 },	-- Alyx <Volunteer Assistant Guest Relations Manager and Associate Event Coordinator>
 				["sourceQuests"] = { 84336 },	-- Spot The Difference
 				["coord"] = { 63.0, 50.2, TANARIS },
@@ -319,7 +320,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			q(85025, {	-- Operation Toy Rescue [H]
 				["description"] = "Talk to Yennu in Iskaara, find a note in Dragonscale Basecamp, and find their ball near Maruukai then return. Pet Nuts in Dazar'Alor, follow the fur sheddings to a Plush Toy, and give it to him.",
 				["provider"] = { "n", 226684 },	-- Maru
-				["sourceQuests"] = { 84564 },	-- Toy Trouble [H]
+				["sourceQuests"] = { 85024 },	-- Toy Trouble [H]
 				["coord"] = { 63.2, 52.4, TANARIS },
 				["g"] = {
 					i(229991),	-- My Journal: Operation Toy Rescue (QI!)
@@ -351,6 +352,73 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					}),
 				},
 			}),
+			q(84755, {	-- The Final Toy [A]
+				["provider"] = { "n", 232405 },	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Associate Event Coordinator>
+				["sourceQuests"] = { 84588 },	-- Operation Toy Rescue [A]
+				["coord"] = { 63.0, 50.2, TANARIS },
+			}),
+			q(85042, {	-- The Final Toy [H]
+				["provider"] = { "n", 232405 },	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Associate Event Coordinator>
+				["sourceQuests"] = { 85025 },	-- Operation Toy Rescue [H]
+				["coord"] = { 63.0, 50.2, TANARIS },
+			}),
+			q(84756, {	-- The Toy Thief [A]
+				["description"] = "Talk to Maru, suspect a dog, then visit Urban Planner Volrath in Boralus. Collect a chew toy from the mountaintop behind Maruukai in the Ohn'ahran plains, then collect Maru's toy from a cave near Teerakai.",
+				["provider"] = { "n", 226684 },	-- Maru
+				["sourceQuests"] = { 84588 },	-- The Final Toy [A]
+				["coord"] = { 63.2, 52.4, TANARIS },
+				["g"] = {
+					i(229992),	-- My Journal: Operation Toy Rescue (QI!)
+					n(142178, {	-- Urban Planner Volrath
+						["coord"] = { 43.2, 73.7, BORALUS },
+						["g"] = {
+							i(232564),	-- Bakar Sketch (QI!)
+						},
+					}),
+					o(467293, {	-- Chew Toy
+						["description"] = "Atop the high mountain peak behind Maruukai.",
+						["coord"] = { 57.9, 31.7, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(229350),	-- Chew Toy (QI!)
+						}
+					}),
+					o(467329, {	-- Maru's Toy
+						["description"] = "Inside a cave near Teerakai",
+						["coord"] = { 38.8, 56.0, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(229358 ),	-- Miniature Tuskarr Boat (QI!)
+						}
+					}),
+				},
+			}),
+			q(85043, {	-- The Toy Thief [H]
+				--["description"] = "",
+				["provider"] = { "n", 226684 },	-- Maru
+				["sourceQuests"] = { 85042 },	-- The Final Toy [H]
+				["coord"] = { 63.2, 52.4, TANARIS },
+				["g"] = {
+					-- TODO: write horde side description and source Bakar Sketch
+					i(229196),	-- Bakar Sketch (QI!)
+					o(467293, {	-- Chew Toy
+						["description"] = "Atop the high mountain peak behind Maruukai.",
+						["coord"] = { 57.9, 31.7, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(229350),	-- Chew Toy (QI!)
+						}
+					}),
+					o(467329, {	-- Maru's Toy
+						["description"] = "Inside a cave near Teerakai",
+						["coord"] = { 38.8, 56.0, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(229358 ),	-- Miniature Tuskarr Boat (QI!)
+						}
+					}),
+				},
+			}),
+			-- Chapter 3
+			q(85195),	-- Chapter 3
+			-- Chapter 4
+			q(85503),	-- Chapter 4
 		}),
 		header(HEADERS.Achievement, 40871,{
 			ach(40871, {	-- Assistant to the Assistant Guest Relations Manager (automated)
@@ -509,8 +577,14 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					}),
 				},
 			}),
+			q(84924),	-- The Case of a Feathered Friend
+			q(84435),	-- The Case of an Old Soul
+			q(84933),	-- The Case of Great Aspirations
+			q(85477),	-- The Case of Missing Mementos
+			q(84469),	-- The Case of Pet Games
+			q(84912),	-- The Case of Staged Disaster
+			q(84595),	-- The Loud and Smelly Case
 		}),
-	}),
 		header(HEADERS.Achievement, 40979,{
 			ach(40873),		-- Crate Insurance Agent
 			ach(40979),		-- No Crate Left Behind
@@ -592,7 +666,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				i(228321),	-- Dirt-Caked Ransom Note
 				o(463653, {	-- Dirt-Caked Celebration Crate
 					["description"] = "Enter the Karazhan Crypt at 39.83, 73.11 in Deadwind Pass. Follow the spiraling corridor down until you find the pool of Upside Down Sinners. Cross the pool and the crate will be in the back left of the next room.",
-					["coord"] = { 22.43, 83.74, DEADWIND_PASS },
+					["coord"] = { 22.4, 83.7, DEADWIND_PASS },
 					["g"] = {
 						i(228322),	-- Dirt-Caked Celebration Crate (QS!)
 					},
@@ -630,6 +704,19 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				}),
 				q(83931, {	-- Battered Celebration Crate
 					["provider"] = { "i", 226375 },	-- Battered Celebration Crate
+				}),
+			}),
+			header(HEADERS.Quest, 84426, {
+				i(228300),	-- Sun-Baked Ransom Note
+				o(462417, {	-- Waterlogged Celebration Crate
+					["description"] = "Behind a bed on the second floor of an underwater gnomish building off the south-eastern coast of Tanaris.",
+					["coord"] = { 69.2, 68.6, TANARIS },
+					["g"] = {
+						i(228212),	-- Waterlogged Celebration Crate (QS!)
+					},
+				}),
+				q(84426, {	-- Waterlogged Celebration Crate
+					["provider"] = { "i", 228212 },	-- Waterlogged Celebration Crate
 				}),
 			}),
 		}),

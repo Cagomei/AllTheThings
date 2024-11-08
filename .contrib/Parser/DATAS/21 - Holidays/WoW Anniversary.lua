@@ -236,9 +236,9 @@ local LOREGRAIN = 9024;
 
 ------ EncounterToCRS ------
 local EncounterToCRS = {
-	[ROCCOR] = { 9025 },	-- Lord Roccor
+	[ROCCOR] = { 226315 },	-- Lord Roccor
 	[BAELGAR] = { 226303 },	-- Bael'Gar
-	[INCENDIUS] = { 9017 },	-- Lord Incendius
+	[INCENDIUS] = { 226304 },	-- Lord Incendius
 	[ARGELMACH] = { 226306 },	-- Golem Lord Argelmach
 	[THE_SEVEN] = {
 		226307,	-- Anger'rel
@@ -1233,11 +1233,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			n(231351, {	-- Kieule <Souvenirs>
 				["coord"] = { 62.38, 49.92, TANARIS },
 				["g"] = {
-					--[[ No use yet, potential pets/toys?
 					i(140670),	-- Souvenir Elekk
 					i(140671),	-- Souvenir Raptor
 					i(118052),	-- Murloc Chew Toy
-					--]]
 					i(130151, {	-- The "Devilsaur" Lunchbox (TOY!)
 						["cost"] = { { "c", 1155, 1000 }, },	-- 1,000x Ancient Mana
 					}),
@@ -2628,20 +2626,32 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["provider"] = { "i", 224157 },	-- Pet Mirror
 			}),
 			ach(40988, {	-- Photo Op!
-				-- TODO: not sure if we can automate this, haven't checked
-				-- otheriwse list criteria with portal [crs]
-				-- Twilight Highlands 226156
-				-- Uldum 226155
-				-- Mount Hyjal 226154
-				-- Nagrand 226159
-				-- Gorgrond 226158
-				-- Shadowmoon Valley 226157
-				-- The Storm Peaks 226162
-				-- Icecrown 226161
-				-- Grizzly Hills 226160
-				-- Valley of the Four Winds 224532
-				-- Kun-Lai Summit 224531
-				-- Jade Forest 224062
+				["crs"] = {
+					226156,	-- Twilight Highlands
+					226155,	-- Uldum
+					226154,	-- Mount Hyjal
+					226159,	-- Nagrand
+					226158,	-- Gorgrond
+					226157,	-- Shadowmoon Valley
+					226162,	-- The Storm Peaks
+					226161,	-- Icecrown
+					226160,	-- Grizzly Hills
+					224532,	-- Valley of the Four Winds
+					224531,	-- Kun-Lai Summit
+					224062,	-- Jade Forest
+					226181,	-- Val'Sharah
+					226180,	-- Stormheim
+					226178,	-- Suramar
+					226185,	-- Stormsong Valley
+					226183,	-- Drustvar
+					226182,	-- Tiragard Sound
+					226189,	-- Zereth Mortis
+					226188,	-- Ardenweald
+					226186,	-- Revendreth
+					226192,	-- Ohn'ahran Plains
+					226191,	-- Waking Shores
+					226190,	-- Azure Span
+				},
 			}),
 			ach(40997),		-- The Gatecrashers (automated)
 			ach(40995),		-- The Originals (automated)
@@ -2775,17 +2785,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}),
 				},
 			}),
-			q(84756),	-- Chapter 2 (faction?)
-			q(85043),	-- Chapter 2 (faction?)
-			q(85195),	-- Chapter 3
-			q(85503),	-- Chapter 4
-			q(84924),	-- The Case of a Feathered Friend
-			q(84435),	-- The Case of an Old Soul
-			q(84933),	-- The Case of Great Aspirations
-			q(85477),	-- The Case of Missing Mementos
-			q(84469),	-- The Case of Pet Games
-			q(84912),	-- The Case of Staged Disaster
-			q(84595),	-- The Loud and Smelly Case
 			------ Stay awhile and listen ------
 			hqt(84743, {	-- Stay awhile and listen: Moira Thaurissan <Queen of the Dark Iron>
 				["name"] = "Stay awhile and listen: Moira Thaurissan",
@@ -3149,10 +3148,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["cost"] = {{"c", BRONZE_TOKEN, 10}},
 				}, {
 					i(44819),	-- Baby Blizzard Bear (PET!)
-					i(115484),	-- Core Hound (MOUNT!)
+					i(115484, {	-- Core Hound Chain (MOUNT!)
+						["cost"] = {{"c", BRONZE_TOKEN, 20}},
+					}),
 					i(118574),	-- Hatespark the Tiny (PET!)
 					i(172016),	-- Lil' Nefarian (PET!)
 					i(115301),	-- Molten Corgi (PET!)
+					i(172012, {	-- Obsidian Worldbreaker (MOUNT!)
+						["cost"] = {{"c", BRONZE_TOKEN, 20}},
+					}),
 					i(49362),	-- Onyxian Whelpling (PET!)
 				}),
 			}),

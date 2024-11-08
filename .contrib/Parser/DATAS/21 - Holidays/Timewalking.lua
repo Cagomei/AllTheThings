@@ -1341,7 +1341,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				-- #if BEFORE 11.0.5
 				["description"] = "Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",
 				-- #else
-				["description"] = "Requires one of two keys unlocked via a quest chain in Blades Edge to open or a conjured one rarely dropped from Mana Tombs bosses.",
+				["description"] = "Requires one of two keys unlocked via a quest chain in Blades Edge or a conjured one rarely dropped from Mana Tombs bosses to open.",
 				-- #endif
 				["cost"] = {
 					{ "i", 32079, 1 },	-- Shaffar's Stasis Chamber Key
@@ -1389,7 +1389,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 					i(127245),	-- Warp-Scarab Brooch
 				},
 			}),
-
 		}),
 		inst_tw(254, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2, REMOVED_9_1_5 }},{	-- The Arcatraz
 			e(548, {	-- Zereketh the Unbound

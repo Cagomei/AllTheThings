@@ -89,6 +89,3 @@ contrib export-ignore
 ###############################################################################
 # using for Git LFS (Large File Storage)
 ###############################################################################
-*/Categories.lua filter=lfs diff=lfs merge=lfs -text
-db/*/Categories.lua filter=lfs diff=lfs merge=lfs -text
-db/*/*/Categories.lua filter=lfs diff=lfs merge=lfs -text

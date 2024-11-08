@@ -443,8 +443,8 @@ local function GenerateHitsForMap(grid, mapID)
 	end
 	return any, hits;
 end
-local function CheckHitsForMap(grid, mapID)
-	local hits = {}
+local function CheckHitsForMap(grid, mapID, hits)
+	hits = hits or {}
 	for _,pos in ipairs(grid) do
 		local explored = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
 		if explored then
@@ -537,7 +537,18 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 	AllTheThingsAD.ExplorationAreaPositionDB = ExplorationAreaPositionDB;
 	app.print("Done Simplifying Exploration Data.");
 end
+local function CacheAndUpdateExploration(explorationIDTable)
+	-- app.PrintTable(saved)
+	app.SetBatchCached("Exploration", explorationIDTable, 1)
+	-- Trigger updates for these exploration areas
+	local rawAreaIDdata = {}
+	for areaID,_ in pairs(explorationIDTable) do
+		rawAreaIDdata[#rawAreaIDdata + 1] = areaID
+	end
+	RefreshExplorationData(rawAreaIDdata)
+end
 local function CacheExplorationForAllMaps()
+	app.print("Robust Map Exploration Started...")
 	local grid, Granularity = {}, 200;
 	for i=0,Granularity,1 do
 		for j=0,Granularity,1 do
@@ -548,37 +559,54 @@ local function CacheExplorationForAllMaps()
 	for mapID,_ in pairs(app.SearchForFieldContainer("mapID")) do
 		if C_Map_GetMapArtID(mapID) then
 			app.print("Checking Map " .. mapID .. "...");
+			coroutine.yield()
 			-- Find all points on the grid that have explored an area and make note of them.
-			local ok, hits = pcall(CheckHitsForMap, grid, mapID);
-			if ok and hits then
-				-- app.PrintDebug("HITS")
-				-- app.PrintTable(hits)
-				for areaID,coords in pairs(hits) do
-					saved[areaID] = true;
-				end
+			pcall(CheckHitsForMap, grid, mapID, saved);
+		end
+	end
+	CacheAndUpdateExploration(saved)
+	app.print("Robust Map Exploration Cached")
+end
+local function CacheExplorationForAllKnownExploration()
+	app.print("Known Map Exploration Started...")
+	local saved = {}
+	local exploration
+	for explorationID,explorations in pairs(app.SearchForFieldContainer("explorationID")) do
+		-- only ever 1 cached
+		exploration = explorations[1]
+		if exploration.coords then
+			local grid = {}
+			local mapID
+			-- convert the coords into a grid for our common method
+			for _,coord in ipairs(exploration.coords) do
+				grid[#grid + 1] = CreateVector2D(coord[1] / 100, coord[2] / 100)
+				-- TODO: ideally we will make sure all ExplorationDB coords for a specific mapID are actually the same as the mapID...
+				if not mapID then mapID = coord[3] end
 			end
+			-- Find all points on the grid that have explored an area and make note of them.
+			pcall(CheckHitsForMap, grid, mapID, saved);
+			-- app.print("Checking ExplorationID " .. explorationID .. "...");
 			coroutine.yield()
 		end
 	end
-	-- app.PrintTable(saved)
-	app.SetBatchCached("Exploration", saved, 1)
-	-- Trigger updates for these exploration areas
-	local rawAreaIDdata = {}
-	for areaID,_ in pairs(saved) do
-		rawAreaIDdata[#rawAreaIDdata + 1] = areaID
-	end
-	RefreshExplorationData(rawAreaIDdata)
-	app.print("Full Map Exploration Cached")
+	CacheAndUpdateExploration(saved)
+	app.print("Known Map Exploration Cached")
 end
--- Allows a user to use /att scanmaps
--- to force a full scan of all known ATT maps to cache exploration data
+-- add a parameter for a robust scan which checks all known Map data coords by scanning every map
+-- without parameter do simple scan by cached ExplorationID coords
+-- Allows a user to use /att collect-exploration [robust]
+-- to force a full scan of all known ATT exploration or maps to cache visited exploration data
 app.ChatCommands.Add("collect-exploration", function(args)
-	app:StartATTCoroutine("FullMapExploration",CacheExplorationForAllMaps)
+	if args[2] then
+		app:StartATTCoroutine("FullMapExploration",CacheExplorationForAllMaps)
+		return true
+	end
+	app:StartATTCoroutine("FullMapExploration",CacheExplorationForAllKnownExploration)
 	return true
 end, {
-	"Usage : /att collect-exploration",
+	"Usage : /att collect-exploration [robust]",
 	"This allows a user to fully-scan the entire known set of Zones to harvest current Exploration data.",
-	"NOTE: This operation should only be needed once per Character as Exploration is otherwise updated when new areas are explored.",
+	"NOTE: This operation (when providing the 'robust' parameter) should only be needed once per Character as Exploration is otherwise updated when new areas are explored.",
 })
 local function HarvestExploration(simplify)
 	if app.SetupExplorationEvents then app.SetupExplorationEvents(); end
