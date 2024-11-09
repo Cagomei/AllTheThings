@@ -91,9 +91,6 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		mount(307932, {	-- Ensorcelled Everwyrm (MOUNT!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
-		i(208598, {	-- Eve's Ghastly Rider (MOUNT!)
-			["timeline"] = { ADDED_11_0_2 }, -- 1st October 2024 until 5st November 2024
-		}),
 		mount(457485, {	-- Grizzly Hills Packmaster (MOUNT!)
 			["timeline"] = { ADDED_11_0_2 },
 		}),
@@ -183,6 +180,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		i(54811, {	-- Celestial Steed (MOUNT!)
 			["timeline"] = { ADDED_3_3_3, REMOVED_10_0_2_LAUNCH },	-- Removed from shop on Jan 2 2023, will be offered sometimes in Trading Post
+		}),
+		i(208598, {	-- Eve's Ghastly Rider (MOUNT!)
+			["timeline"] = { ADDED_11_0_2, REMOVED_11_0_5 }, -- 1st October 2024 until 5th November 2024
 		}),
 		i(112327, {	-- Grinning Reaver (MOUNT!)
 			["timeline"] = { ADDED_6_0_2, REMOVED_8_3_0 },

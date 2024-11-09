@@ -4252,6 +4252,7 @@ i(229366, 4629);	-- Brrrgl
 i(228793, 4618);	-- Chillbot 9000
 i(224410, 4593);	-- Craggles
 i(222970, 4490);	-- Fuzzy
+i(228740, 4614);
 i(231365, 4689);	-- Karazhan Syphoner
 i(228781, 4678);	-- Lil'Doomy
 i(230011, 4679);	-- Lil'Kaz
@@ -4272,5 +4273,11 @@ i(233251, 4426);		-- Bubbles
 i(233248, 4425);		-- Glamrok
 i(233252, 4435);		-- Happy
 --i(0, ???);	-- Parley
---i(232519, ???);	-- Razeshi B
 --i(233247, ???);	-- Sparklesnap
+--- UNSORTED ---
+--i(234397, ???);	-- Fullbelly Rollingpaw
+--i(232531, ???);	-- Grunch
+--i(232519, ???);	-- Razeshi B
+--i(234396, ???);	-- Teatuft Tamer
+--i(233366, ???);	-- Wind-Up Woofer
+--i(233361, ???);	-- Wind-Up Wuffi

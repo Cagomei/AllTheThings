@@ -17,6 +17,8 @@ local C_Map_GetMapInfo, C_Map_GetAreaInfo = C_Map.GetMapInfo, C_Map.GetAreaInfo;
 local C_Map_GetMapChildrenInfo = C_Map.GetMapChildrenInfo;
 local C_Map_GetWorldPosFromMapPos = C_Map.GetWorldPosFromMapPos;
 local C_MapExplorationInfo_GetExploredAreaIDsAtPosition = C_MapExplorationInfo.GetExploredAreaIDsAtPosition;
+-- added in 8.0, can't use in Classic
+local C_Map_GetMapInfoAtPosition = C_Map.GetMapInfoAtPosition or app.ReturnFalse
 
 -- Current Map Detection
 local CurrentMapID;
@@ -356,6 +358,13 @@ local function PrintDiscordInformationForExploration(o)
 		end
 	end
 
+	local position, coord = mapID and C_Map.GetPlayerMapPosition(mapID, "player"), nil;
+	if position then
+		local x,y = position:GetXY();
+		coord = (math_floor(x * 1000) / 10) .. ", " .. (math_floor(y * 1000) / 10);
+	end
+	tinsert(info, coord and ("coord:"..coord) or "coord:??");
+
 	tinsert(info, "ver: "..app.Version);
 	tinsert(info, "build: "..app.GameBuildVersion);
 	tinsert(info, "```");	-- discord fancy box end
@@ -367,6 +376,35 @@ end
 local RefreshExplorationData = app.IsClassic and (function(data)
 	app:RefreshDataQuietly("RefreshExploration", true);
 end) or (function(data) app.UpdateRawIDs("explorationID", data); end)
+local function CacheAndUpdateExploration(explorationIDTable)
+	-- app.PrintTable(saved)
+	app.SetBatchCached("Exploration", explorationIDTable, 1)
+	-- Trigger updates for these exploration areas
+	local rawAreaIDdata = {}
+	for areaID,_ in pairs(explorationIDTable) do
+		rawAreaIDdata[#rawAreaIDdata + 1] = areaID
+	end
+	RefreshExplorationData(rawAreaIDdata)
+end
+local function GetExplorationBySubzone()
+	local subzone = GetSubZoneText()
+	if subzone and subzone ~= "" then
+		local mapObject = app.SearchForObject("mapID",app.RealMapID,"key")
+		if mapObject and mapObject.g then
+			for _,o in ipairs(mapObject.g) do
+				if o.headerID == app.HeaderConstants.EXPLORATION and o.g then
+					for _,e in ipairs(o.g) do
+						if e.name == subzone and e.collectible then
+							return e
+						end
+					end
+					break
+				end
+			end
+		end
+		PrintDiscordInformationForExploration(app.CreateExploration(app.RealMapID..subzone, { mapID = app.RealMapID, name = subzone}));
+	end
+end
 local function CheckExplorationForPlayerPosition()
 	local mapID = C_Map_GetBestMapForUnit("player");
 	if not mapID then return; end
@@ -379,6 +417,7 @@ local function CheckExplorationForPlayerPosition()
 	local newAreas = {};
 	local saved = {}
 	for _,areaID in ipairs(areaIDs) do
+		-- app.PrintDebug("CheckPlayerExploration",mapID,pos.x,pos.y,app:SearchLink(app.SearchForObject("explorationID",areaID,"field")))
 		if not ExplorationDB[areaID] then
 			saved[areaID] = true
 			tinsert(newAreas, areaID);
@@ -389,9 +428,21 @@ local function CheckExplorationForPlayerPosition()
 			end
 		end
 	end
+	-- do a manual check by way of the sub-zone name (since this is what correlates to the exploration name players see in ATT)
+	-- we will provide a manual collection by way of exact player position having a specific subzone name when performing a check
+	local explorationForSubzone = GetExplorationBySubzone()
+	if explorationForSubzone then
+		-- app.PrintDebug("SubzoneExplorationFind",mapID,pos.x,pos.y,app:SearchLink(explorationForSubzone))
+		local areaID = explorationForSubzone.explorationID
+		if not ExplorationDB[areaID] then
+			-- app.PrintDebug("Manual cached Exploration by Subzone name")
+			-- we won't use regular caching since we're manually checking instead of the expected API utilization
+			-- maybe eventually blizzard will fix the API
+			ExplorationDB[areaID] = 2
+		end
+	end
 	if #newAreas > 0 then
-		app.SetBatchCached("Exploration", saved, 1)
-		RefreshExplorationData(newAreas);
+		CacheAndUpdateExploration(saved)
 	end
 end
 local function CheckExplorationForCurrentLocation()
@@ -414,6 +465,16 @@ app.AddEventRegistration("MAP_EXPLORATION_UPDATED", CheckExplorationForCurrentLo
 app.AddEventRegistration("UI_INFO_MESSAGE", function(messageID)
 	if messageID == 372 then CheckExplorationForCurrentLocation(); end
 end)
+--
+app.ChatCommands.Add("realtime-exploration-check", function(args)
+	app.AddEventRegistration("FOG_OF_WAR_UPDATED", CheckExplorationForPlayerPosition)
+	app.print("Enabled: realtime-exploration-check")
+	return true
+end, {
+	"Usage : /att realtime-exploration-check",
+	"This enables ATT to perform real-time Exploration checks when the Player visits new sub-zones of maps. This cannot be turned off except by reloading the UI.",
+	"NOTE: This is not intended to be used except by Contribs in order to do fine-tuned testing of Exploration data",
+})
 
 -- Harvesting
 local MAXIMUM_COORDS_PER_AREA = 5;
@@ -536,16 +597,6 @@ local SimplifyExplorationData = function(rawExplorationAreaPositionDB)
 	end
 	AllTheThingsAD.ExplorationAreaPositionDB = ExplorationAreaPositionDB;
 	app.print("Done Simplifying Exploration Data.");
-end
-local function CacheAndUpdateExploration(explorationIDTable)
-	-- app.PrintTable(saved)
-	app.SetBatchCached("Exploration", explorationIDTable, 1)
-	-- Trigger updates for these exploration areas
-	local rawAreaIDdata = {}
-	for areaID,_ in pairs(explorationIDTable) do
-		rawAreaIDdata[#rawAreaIDdata + 1] = areaID
-	end
-	RefreshExplorationData(rawAreaIDdata)
 end
 local function CacheExplorationForAllMaps()
 	app.print("Robust Map Exploration Started...")

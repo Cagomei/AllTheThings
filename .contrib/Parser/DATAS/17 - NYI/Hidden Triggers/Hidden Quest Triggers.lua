@@ -1840,6 +1840,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		}),
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 			q(78204, {["timeline"] = {ADDED_10_1_7}}),	-- Master of Timeways - First Week Trigger (spellID 423861)
+			--q(85877, {["timeline"] = {ADDED_11_0_7}}),	-- Master of Timeways (spellID 471544)
 		})),
 	})),
 

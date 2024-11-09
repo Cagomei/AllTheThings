@@ -1051,11 +1051,16 @@ q(82261),	-- Ensemble: Cerulean Dredger
 q(85591)	-- Ensemble: Brunnhildar Scout's Kit
 q(85594)	-- Ensemble: Coldarra Spellbinder's Regalia
 q(85590)	-- Ensemble: Drakkari Stalker's Trappings
+q()			-- Ensemble: Gorgrond Cragstalker's Hunting Gear
 q(85592)	-- Ensemble: Jotunheim Berserker's Battleplate
+q()			-- Ensemble: Karabor Priest's Vestments
 q(85127)	-- Ensemble: Prowler's Faded Headgear
+q()			-- Ensemble: Shadowmoon Anchorite's Guardplate
 q(85587)	-- Ensemble: Shadowmoon Warlock's Vestments
+q()			-- Ensemble: Shattrath Artificer's Regalia
 q(85585)	-- Ensemble: Telhamat Anchorite's Raiment
 q(85593)	-- Ensemble: Ymirjar Deathbringer's Battleplate
+
 
 -- Dornogal Ensemble Vendor
 q(81534),	-- Arcane Peddler's Trinkets

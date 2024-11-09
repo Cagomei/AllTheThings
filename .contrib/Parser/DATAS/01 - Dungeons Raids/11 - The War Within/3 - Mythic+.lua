@@ -58,6 +58,28 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			ach(20584),	-- Keystone Hero: Darkflame Cleft
 			spell(445441),	-- Path of the Warding Candles
 		})),
+		n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+			i(234425, {	-- Forgotten Folio
+				["description"] = "Drops from the last boss of Mythic+ Dungeons. It contains various dungeon dropped profession recipes.",
+				["sym"] = {{"select","itemID",
+					223141,	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
+					223142,	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)
+					223143,	-- Formula: Enchant Ring - Cursed Versatility (RECIPE!)
+					223115,	-- Formula: Enchant Ring - Radiant Critical Strike (RECIPE!)
+					223116,	-- Formula: Enchant Ring - Radiant Haste (RECIPE!)
+					223117,	-- Formula: Enchant Ring - Radiant Mastery (RECIPE!)
+					223118,	-- Formula: Enchant Ring - Radiant Versatility (RECIPE!)
+					223119,	-- Formula: Enchant Weapon - Authority of Air (RECIPE!)
+					223120,	-- Formula: Enchant Weapon - Authority of Radiant Power (RECIPE!)
+					224424,	-- Pattern: Artisan Chef's Hat (RECIPE!)
+					223102,	-- Pattern: Busy Bee's Buckle (RECIPE!)
+					223096,	-- Pattern: Roiling Thunderstrike Talons (RECIPE!)
+					223098,	-- Pattern: Waders of the Unifying Flame (RECIPE!)
+					226643,	-- Plans: Beledar's Bulwark (RECIPE!)
+					--223061,	-- Technique: Inscribed Rolling Pin (RECIPE!) [Wax-Encrusted Chest?] unsure if contained here due to strange acquisition
+				}},
+			}),
+		})),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {

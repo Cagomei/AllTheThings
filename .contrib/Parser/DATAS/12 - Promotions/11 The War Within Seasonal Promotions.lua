@@ -122,6 +122,16 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_0_5 },
 				["u"] = REAL_MONEY,
 			}),
+			i(223459, {	-- Blackrock Warsaber (MOUNT!)
+				["description"] = "Obtained through watching the official Warcraft 30th Anniversary Direct on Twitch or YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nYour Twitch/YouTube account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { ADDED_11_0_5, },
+				--["u"] = REMOVED_FROM_GAME,	-- 11th December 2024
+			}),
+			i(223471, {	-- Kaldorei War Wolf (MOUNT!)
+				["description"] = "Obtained through watching the official Warcraft 30th Anniversary Direct on Twitch or YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nYour Twitch/YouTube account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { ADDED_11_0_5, },
+				--["u"] = REMOVED_FROM_GAME,	-- 11th December 2024
+			}),
 
 		--	i(500001, {    -- The PVE/PVP Banner temporary item -- TEMPLATE
 		--		["sourceID"] = 500001,

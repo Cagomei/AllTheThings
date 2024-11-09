@@ -28,7 +28,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					title(571),	-- Detective <Name> (TITLE!)
 				},
 			}),
-			ach(40967),		-- Ratts' Revenge
+
 		}),
 		n(QUESTS, {
 			-- Tutorial Questline
@@ -140,7 +140,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 		}),
-		header(HEADERS.Achievement, 40872, {
+		header(HEADERS.Achievement, 40872, {	-- I Saved the Party and All I Got Was This Lousy Hat
 			ach(40872, {	-- I Saved the Party and All I Got Was This Lousy Hat (automated)
 				i(234448),	-- Bright Ideas Thinking Cap
 				i(231906),	-- High-Alert Thinking Cap
@@ -307,10 +307,15 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					}),
 					n(142044, {	-- Kenshi
 						["coord"] = { 54.0, 72.8, BORALUS },
+						["g"] = {
+							i(232363, {	-- Half-Eaten Mouse
+								["provider"] = { "i", 232362 },	-- Deluxe Tuna
+							}),
+						},
 					}),
 					o(467060, {	-- Ball of Yarn
-						["description"] = "By a river by the eastern side of Maruukai.",
-						["coord"] = { 62.0, 37.5, OHNAHRAN_PLAINS },
+						["description"] = "Near a fence and tree in Boralus Park.",
+						["coord"] = { 42.1, 75.1, BORALUS },
 						["g"] = {
 							i(229164 ),	-- Ball of Yarn (QI!)
 						},
@@ -420,7 +425,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			-- Chapter 4
 			q(85503),	-- Chapter 4
 		}),
-		header(HEADERS.Achievement, 40871,{
+		header(HEADERS.Achievement, 40871, {	-- Assistant to the Assistant Guest Relations Manager
 			ach(40871, {	-- Assistant to the Assistant Guest Relations Manager (automated)
 				i(231907),	-- Tricked-Out Thinking Cap
 			}),
@@ -577,15 +582,38 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					}),
 				},
 			}),
+			-- The Loud and Smelly Case
+			q(84583, {	-- A Hozen On My Back
+				["provider"] = { "n", 232406 },	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
+				["coord"] = { 63.0, 50.2, TANARIS },
+			}),
+			q(84595, {	-- The Case of the Fur-Getting Wikket
+				["description"] = "Talk to Riko, then Sully. Visit Gizmo's grave in the Jade Forest, then chase him down to return to Riko. Wait 5 minutes for Riko to send you mail.",
+				["provider"] = { "n", 229749 },	-- Riko
+				["coord"] = { 61.9, 50.5, TANARIS },
+				["g"] = {
+					i(228750),	-- My Journal: The Case of the Fur-Getting Wikket
+					n(229775, {	-- Sully "The Pickle" McLeary
+						["coord"] = { 63.1, 49.4, TANARIS },
+					}),
+					n(229776, {
+						["provider"] = { "i", 208092 },	-- Torch of Pyrreth
+						["coord"] = { 43.4, 68.8, THE_JADE_FOREST },
+						["g"] = {
+							i(228755),	-- Gizmo (QI!)
+						},
+					}),
+					i(228740),	-- Gizmo the Pure (PET!)
+				},
+			}),
 			q(84924),	-- The Case of a Feathered Friend
 			q(84435),	-- The Case of an Old Soul
 			q(84933),	-- The Case of Great Aspirations
 			q(85477),	-- The Case of Missing Mementos
 			q(84469),	-- The Case of Pet Games
 			q(84912),	-- The Case of Staged Disaster
-			q(84595),	-- The Loud and Smelly Case
 		}),
-		header(HEADERS.Achievement, 40979,{
+		header(HEADERS.Achievement, 40979, {	-- No Crate Left Behind
 			ach(40873),		-- Crate Insurance Agent
 			ach(40979),		-- No Crate Left Behind
 			header(HEADERS.Quest, 83794, {
@@ -718,6 +746,24 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				q(84426, {	-- Waterlogged Celebration Crate
 					["provider"] = { "i", 228212 },	-- Waterlogged Celebration Crate
 				}),
+			}),
+		}),
+		header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
+			ach(40967),		-- Ratts' Revenge
+			o(182030, {	-- Inert Peculiar Key
+				["description"] = "Inside a rotten tree trunk in the far north of Un'Goro Crater. Use your Torch of Pyrreth to reveal it.",
+				["provider"] = { "i", 208092 },	-- Torch of Pyrreth
+				["coord"] = { 44.5, 8.0, UNGORO_CRATER },
+				["g"] = {
+					i(228941),	-- Inert Peculiar Key
+				},
+			}),
+			i(228938),	-- Peculiar Gem
+			i(44124, {	-- Peculiar Key
+				["cost"] = {
+					{ "i", 228941, 1 }, -- Inert Peculiar Key
+					{ "i", 228938, 1 },	-- Peculiar Gem
+				},
 			}),
 		}),
 	},

@@ -75,7 +75,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 			}, {
 				TolBaradDailyQuest(28122, {	-- A Huge Problem [A]
 					["qg"] = 48066, -- Sergeant Parker
-					["timeline"] = { ADDED_4_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -97,7 +97,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28658, {	-- Swamp Bait [H]
 					["qg"] = 48069, -- Commander Zanoth
-					["timeline"] = { ADDED_8_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -109,7 +109,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28162, {	-- Swamp Bait [A]
 					["qg"] = 48066, -- Sergeant Parker
-					["timeline"] = { ADDED_8_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -121,7 +121,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28163, {	-- The Leftovers [A]
 					["qg"] = 48066, -- Sergeant Parker
-					["timeline"] = { ADDED_4_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -157,7 +157,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 			}, {
 				TolBaradDailyQuest(28117, {	-- Clearing the Depths [A]
 					["qg"] = 48039, -- Commander Stevens
-					["timeline"] = { ADDED_4_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -187,7 +187,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28665, {	-- Cursed Shackles [H]
 					["qg"] = 48070, -- Drillmaster Razgoth
-					["timeline"] = { ADDED_8_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -201,7 +201,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28186, {	-- Cursed Shackles [A]
 					["qg"] = 48061, -- 2nd Lieutenant Wansworth
-					["timeline"] = { ADDED_4_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -215,7 +215,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28165, {	-- D-Block [A]
 					["qg"] = 48061, -- 2nd Lieutenant Wansworth
-					["timeline"] = { ADDED_4_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -251,7 +251,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28670, {	-- Food From Below [H]
 					["qg"] = 48062, -- Staff Sergeant Lazgar
-					["timeline"] = { ADDED_8_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -265,7 +265,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28232, {	-- Food From Below [A]
 					["qg"] = 48074, -- Marshal Fallows
-					["timeline"] = { ADDED_4_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -293,7 +293,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28120, {	-- Learning From The Past [A]
 					["qg"] = 48039, -- Commander Stevens
-					["timeline"] = { ADDED_4_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -307,7 +307,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28188, {	-- Prison Revolt [A]
 					["qg"] = 48074, -- Marshal Fallows
-					["timeline"] = { ADDED_4_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -341,7 +341,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28185, {	-- Svarnos [A]
 					["qg"] = 48061, -- 2nd Lieutenant Wansworth
-					["timeline"] = { ADDED_4_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -353,7 +353,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28664, {	-- Svarnos [H]
 					["qg"] = 48070, -- Drillmaster Razgoth
-					["timeline"] = { ADDED_8_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -363,10 +363,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 						}),
 					},
 				}),
-				TolBaradDailyQuest(28661, {	-- The Imprisoned Archmage [A]
+				TolBaradDailyQuest(28118, {	-- The Imprisoned Archmage [A]
 					["qg"] = 48039, -- Commander Stevens
-					["timeline"] = { ADDED_8_0_1 },
-					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Archmage Galus' Staff
@@ -375,10 +375,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 						}),
 					},
 				}),
-				TolBaradDailyQuest(28118, {	-- The Imprisoned Archmage [H]
+				TolBaradDailyQuest(28661, {	-- The Imprisoned Archmage [H]
 					["qg"] = 48071, -- Private Garnoth
-					["timeline"] = { ADDED_4_0_1 },
-					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Archmage Galus' Staff
@@ -389,7 +389,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28223, {	-- The Warden [A]
 					["qg"] = 48074, -- Marshal Fallows
-					["timeline"] = { ADDED_4_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -401,7 +401,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28669, {	-- The Warden [H]
 					["qg"] = 48062, -- Staff Sergeant Lazgar
-					["timeline"] = { ADDED_8_0_1 },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {

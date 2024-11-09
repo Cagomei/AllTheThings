@@ -3218,7 +3218,8 @@ namespace ATT
                     default:
                         // if a timeline 'specifically' indicates a Thing is available, we will let that 'bubbleOut' the u value
                         // as long as the Thing itself isn't specifically also marked with 'u' directly
-                        if (data.ContainsKey("u"))
+                        // as long as the Thing itself isn't an 'objective'
+                        if (data.ContainsAnyKey("u", "objectiveID"))
                             break;
 
                         // or inherited a 'timeline' to itself

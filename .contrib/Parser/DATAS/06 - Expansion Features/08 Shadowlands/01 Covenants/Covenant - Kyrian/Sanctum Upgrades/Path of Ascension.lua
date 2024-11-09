@@ -1561,7 +1561,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									iensemble(184496, {	-- Ensemble: Vestments of the Discordant
 										["cost"] = { { "c", ANIMA, 12500 } },
 									}),
-									iensemble(184499, {	-- Ensemble: Warplate of the Discordant PLATE
+									iensemble(184499, {	-- Ensemble: Warplate of the Discordant
 										["cost"] = { { "c", ANIMA, 12500 } },
 									}),
 									i(181289, {	-- Halo of the Discordant

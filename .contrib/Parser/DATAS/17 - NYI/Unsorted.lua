@@ -40,28 +40,21 @@ root(ROOTS.Unsorted, {
 			i(227453),	-- Kaja'Cola Stash
 			i(227670),	-- Kaja'Cola Can
 			i(228095),	-- Scroll of Empowered Time Warp
-			i(228411),	-- Cyrce's Circlet
 			i(228526),	-- Cyrce's Circlet
 			i(228621),	-- Bilge Rat Supply Key
-			i(228634),	-- Thunderlord's Crackling Citrine
 			i(228635),	-- Squall Sailor's Citrine
 			i(228636),	-- Undersea Overseer's Citrine
 			i(228637),	-- Delete Me
 			i(228638),	-- Stormbringer's Runed Citrine
 			i(228639),	-- Fathomdweller's Runed Citrine
-			i(228640),	-- Windsinger's Runed Citrine
 			i(228641),	-- Delete Me
 			i(228642),	-- Storm Sewer's Citrine
 			i(228643),	-- Old Salt's Bardic Citrine
-			i(228644),	-- Mariner's Hallowed Citrine
 			i(228645),	-- Delete Me
 			i(228646),	-- Legendary Skipper's Citrine
 			i(228647),	-- Seabed Leviathan's Citrine
 			i(228648),	-- Roaring War-Queen's Citrine
 			i(228649),	-- Delete Me
-			i(228665),	-- Empty Kaja'Cola
-			i(229001),	-- Rune Carved Band
-			i(229002),	-- Cracked Citrine
 			i(229010),	-- Earthen Scallywag's Cloak
 			i(229011),	-- Earthen Scallywag's Vestment
 			i(229012),	-- Earthen Scallywag's Sandals
@@ -128,17 +121,11 @@ root(ROOTS.Unsorted, {
 			i(229190),	-- Earthen Deckhand's Blunderbuss
 			i(229191),	-- Earthen Landlubber's Crossbow
 			i(229192),	-- Earthen Scallywag's Kris
-			i(229365),	-- Raw Singing Citrine
 			i(229811),	-- Frost-Etched Dagger
-			i(229967),	-- Salvageable Scrap
 			i(230207),	-- N.U.K.U.L.A.R. Target Painter
 			i(230211),	-- Singing Citrine
 			i(230728),	-- Experimental Go-Pack
-			i(230770),	-- Sturdy Toolbox
-			i(230771),	-- Earthen Prototype
 			i(230773),	-- Overcharged Battery
-			i(230795),	-- Experimental Go-Pack
-			i(230851),	-- Ornate Arathi Box
 			i(230945),	-- Wayward Vrykul's Lantern
 			i(231116),	-- Cursed Pirate Skull
 			i(231117),	-- Darktide Wavebender's Orb
@@ -150,24 +137,15 @@ root(ROOTS.Unsorted, {
 			i(231809),	-- First Mate Dat-Dat's Key
 			i(231812),	-- Hozen Poetry
 			i(231813),	-- Siren Isle Manifest
-			i(232372),	-- Crate of Bygone Riches
 			i(232439),	-- Rune-Seared Spear
 			i(232519),	-- Razeshi B.
 			i(232569),	-- Cyclonic Runekey
-			i(232570),	-- Turbulent Runekey
-			i(232571),	-- Whirling Runekey
-			i(232572),	-- Torrential Runekey
 			i(232573),	-- Thunderous Runekey
 			i(232597),	-- Swabbie's Oar
-			i(232605),	-- Thunderous Fragment
 			i(232629),	-- Distilled Knowledge of Timeways
-			i(232632),	-- Spiral Mollusk Shell
-			i(232633),	-- Shiny Seaside Clam
-			i(232634),	-- Emptied Turtle Shell
 			i(232635),	-- Torn Bilgewater Bandage
 			i(232636),	-- Rum-Soaked Hankerchief
 			i(232637),	-- Cracked Pirate Skull
-			i(232638),	-- Loosened Naga Scales
 			i(232639),	-- Thrayir, Eyes of the Siren
 			i(232643),	-- Mysterious Tattered Journal
 			i(232645),	-- Celestial Barrage
@@ -176,9 +154,6 @@ root(ROOTS.Unsorted, {
 			i(232653),	-- Portentous Present
 			i(232654),	-- Compiled Tattered Journal
 			i(232694),	-- Transcribed Kul Tiran Journal
-			i(232860),	-- Singing Fragments
-			i(232861),	-- Singing Fragments
-			i(232862),	-- Singing Fragments
 			i(232901),	-- Lunar Launcher
 			i(232909),	-- Sky Witch's Heartfelt Shoulder Cape
 			i(232910),	-- Vivid Heartfelt Shoulder Cape
@@ -1006,21 +981,14 @@ root(ROOTS.Unsorted, {
 			i(232631),	-- Wrapped Spear
 			--
 			i(228911),	-- Xal'atath's Rusty Coin
-
-			i(228938),	-- Area 52 Tabard
 			i(233053),	-- Crown of the Violet Rose
 			i(234413),	-- Satchel of Exotic Mysteries
-
 			--
-			i(44124),	-- Peculiar Key
 			i(118067),	-- Old Chain Link
 			i(228934),	-- Carefully Penned Note
 			i(228935),	-- Unfinished Note
 			i(228936),	-- Hastily Scrawled Note
 			i(228937),	-- Water-Resistant Note
-			i(228938),	-- Peculiar Gem
-			i(228941),	-- Inert Peculiar Key
-			i(234425),	-- Forgotten Folio
 		})),
 		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			explorationHeader({

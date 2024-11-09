@@ -2149,3 +2149,11 @@ i(220491);	-- Wicked Blade Shard
 i(227320);	-- Wicker Wisps
 i(220232);	-- Worm-Eaten Burlap Robe
 i(228911);	-- Xalatath's Rusty Coin
+
+------------------
+-- PATCH 11.0.7 --
+------------------
+i(232634);	-- Emptied Turtle Shell
+i(232638);	-- Loosened Naga Scales
+i(232633);	-- Shiny Seaside Clam
+i(232632);	-- Spiral Mollusk Shell

@@ -10,8 +10,7 @@ ignore: # Files and directories beginning with a dot (such as .git) are automati
   - setup.cfg
   - link_att.bat
   - Link ATT to WoW.bat
-  - AllTheThings_Beta.legacytoc
-  - AllTheThings_PTR.legacytoc
+  - Update.bat
 
 required-dependencies:
 

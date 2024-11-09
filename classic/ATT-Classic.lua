@@ -3471,8 +3471,8 @@ recipeFields.collectible = function(t)
 end;
 recipeFields.collected = function(t)
 	if app.CurrentCharacter.Spells[t.spellID] then return 1; end
-	local isKnown = not t.nmc and app.IsSpellKnown(t.spellID, t.rank, GetRelativeValue(t, "requireSkill") == 261);
-	return app.SetCollected(t, "Spells", t.spellID, isKnown);
+	local state = app.SetCollected(t, "Spells", t.spellID, not t.nmc and app.IsSpellKnown(t.spellID, t.rank, GetRelativeValue(t, "requireSkill") == 261), "Recipes");
+	if state == 1 then return 1; elseif state == 2 and app.Settings.AccountWide.Recipes then return 2; end
 end;
 recipeFields.f = function(t)
 	return app.FilterConstants.RECIPES;
@@ -3523,7 +3523,7 @@ local SetBattlePetCollected = function(t, speciesID, collected)
 	return app.SetCollected(t, "BattlePets", speciesID, collected);
 end
 local SetMountCollected = function(t, spellID, collected)
-	return app.SetCollected(t, "Spells", spellID, collected);
+	return app.SetCollected(t, "Spells", spellID, collected, "Mounts");
 end
 local speciesFields = {
 	["f"] = function(t)

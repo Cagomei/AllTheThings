@@ -1803,8 +1803,6 @@ i(223470, 449141);	-- [PH] Alliance Wolf Mount Red
 i(223282, 448845);	-- [PH] Blue Old God Fish Mount
 i(221270, 446352);	-- [PH] Goblin Surfboard - Blue
 i(223460, 449133);	-- [PH] Nightsaber Horde Mount White
-i(223459, 449132);	-- Blackrock Warsaber
-i(223471, 449142);	-- Kaldorei War Wolf
 i(224574, 453255);	-- Savage Ebony Battle Turtle
 i(223284, 448849);	-- Underlight Shorestalker
 
@@ -1907,6 +1905,7 @@ i(223276, 448680);	-- Widow's Undercrawler
 -- PATCH 11.0.5 --
 ------------------
 i(224399, 452645);	-- Amani Hunting Bear
+i(223459, 449132);	-- Blackrock Warsaber
 i(230200, 466838);	-- Chaos-Forged Dreadwing
 i(230184, 466811);	-- Chaos-Forged Gryphon
 i(230185, 466812);	-- Chaos-Forged Hippogryph
@@ -1915,23 +1914,29 @@ i(228760, 463133);	-- Coldflame Tempest
 i(231374, 468353);	-- Enchanted Spellweave Carpet
 i(224398, 452643);	-- Frayfeather Hippogryph
 i(211087, 428067);	-- Hateforged Blazecycle
+i(223471, 449142);	-- Kaldorei War Wolf
 i(229418, 465235);	-- Trader's Gilded Brutosaur
 
 ------------------
 -- PATCH 11.0.7 --
 ------------------
+i(234730, 1214946);	-- Broodling of Sinestra
+i(234740, 1214974);	-- Copper-Maned Quilen
 i(233241, 471696);	-- Hooktalon
 i(0, 473472);		-- Jani's Trashpile
-i(232901, 472253);	-- Lunar Launcher
-i(232926, 472479);	-- Love Witch's Sweeper
+i(234716, 1214920);	-- Nightfall Skyreaver
 i(226042, 457656);	-- Plunderlord's Midnight Crocolisk
 i(233240, 437162);	-- Polly Roger
 i(233242, 254812);	-- Royal Seafeather
-i(233354, 473861);	-- Savage Alabaster Battle Turtle
 i(223313, 448934);	-- Shadow of Doubt
 i(233243, 300154);	-- Silver Tidestallion
-i(233019, 472489);	-- Sky Witch's Sweeper
 i(232991, 472752);	-- The Breaker's Song
+i(234721, 1214940);	-- Ur'zul Fleshripper
+--- UNSORTED ---
+i(232901, 472253);	-- Lunar Launcher
+i(232926, 472479);	-- Love Witch's Sweeper
+i(233354, 473861);	-- Savage Alabaster Battle Turtle
+i(233019, 472489);	-- Sky Witch's Sweeper
 i(232639, 471562);	-- Thrayir, Eyes of the Siren
 i(232624, 471538);	-- Timely Buzzbee
 i(233020, 472488);	-- Twilight Witch's Sweeper

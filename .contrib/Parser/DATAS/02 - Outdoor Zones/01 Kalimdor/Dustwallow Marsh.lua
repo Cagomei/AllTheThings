@@ -163,7 +163,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(403, {["timeline"] = { ADDED_4_0_1 }}),	-- Shady Rest Inn
 				exploration(508, {["timeline"] = { ADDED_4_0_1 }}),	-- Stonemaul Ruins
 				exploration(497, {["timeline"] = { ADDED_4_0_1 }}),	-- Swamplight Manor
-				exploration(509),	-- The Den of Flame
+				exploration(509, {	-- The Den of Flame
+					-- Runaway note: I don't have this on my Main and based on the current harvested coords (all off the map) I have no idea how
+					-- to even find a subzone with matching name to force collect with new logic
+					["collectible"] = false,
+				}),
 				-- #if BEFORE CATA
 				exploration(2302),	-- The Quagmire
 				-- #endif
