@@ -284,14 +284,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					["g"] = {
 						o(439562, {	-- Fallen Aeroknight
 							["coords"] = {
-								{ 26.5, 42.1, NERUBAR },
-								{ 27.8, 39.7, NERUBAR },
-								{ 28.7, 37.6, NERUBAR },
-								{ 29.3, 43.8, NERUBAR },
-								{ 29.5, 37.0, NERUBAR },
-								{ 31.5, 45.7, NERUBAR },
-								{ 31.6, 37.7, NERUBAR },
-								{ 32.0, 42.0, NERUBAR },
+								{ 26.5, 42.1, AZJ_KAHET },
+								{ 27.8, 39.7, AZJ_KAHET },
+								{ 28.7, 37.6, AZJ_KAHET },
+								{ 29.3, 43.8, AZJ_KAHET },
+								{ 29.5, 37.0, AZJ_KAHET },
+								{ 31.5, 45.7, AZJ_KAHET },
+								{ 31.6, 37.7, AZJ_KAHET },
+								{ 32.0, 42.0, AZJ_KAHET },
 							},
 							["groups"] = { i(219415), },	-- Bloodied Insignia (QI!)
 						}),

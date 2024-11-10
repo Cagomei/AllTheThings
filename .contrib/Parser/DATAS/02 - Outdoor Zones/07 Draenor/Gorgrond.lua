@@ -1419,7 +1419,7 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					n(-357, sharedData({	-- Sparring Arena (A) (Proofs of Strength)
-						["description"] = "Quest Item will only drop from mobs killed while your Sparring Arena follower is summoned, they do not need to hit any.",
+						["sharedDescription"] = "Quest Item will only drop from mobs killed while your Sparring Arena follower is summoned, they do not need to hit any.",
 						["sourceQuest"] = 35137,	-- The Sparring Arena (A)
 						["races"] = ALLIANCE_ONLY,
 					},{
@@ -1509,7 +1509,7 @@ root(ROOTS.Zones, {
 						}),
 					})),
 					n(-357, sharedData({	-- Sparring Arena (H) (Proofs of Strength)
-						["description"] = "Quest Item will only drop from mobs killed while your Sparring Arena follower is summoned, they do not need to hit any.",
+						["sharedDescription"] = "Quest Item will only drop from mobs killed while your Sparring Arena follower is summoned, they do not need to hit any.",
 						["sourceQuest"] = 35152,	-- The Sparring Arena (H)
 						["races"] = HORDE_ONLY,
 					},{

@@ -3,7 +3,7 @@
 ----------------------------------------------
 root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(SPECIAL, sharedData({
-		["description"] = "You may only learn the pet offered once per character from this Battle Pet Trainer.|r"
+		["sharedDescription"] = "You may only learn the pet offered once per character from this Battle Pet Trainer.|r"
 	}, {
 		n(63596, {  -- Audrey Burnhep
 			["coord"] = { 69.4, 24.4, STORMWIND_CITY },

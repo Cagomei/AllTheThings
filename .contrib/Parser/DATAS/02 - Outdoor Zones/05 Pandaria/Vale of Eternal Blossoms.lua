@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(VALE_OF_ETERNAL_BLOSSOMS, {
@@ -1425,6 +1424,26 @@ root(ROOTS.Zones, {
 					--n(50843, {	-- Portent	}),
 				}),
 				n(VENDORS, {
+					n(61650, {	-- Big Keech <Rare Antiquities>
+						["coord"] = { 62.6, 41.8, VALE_OF_ETERNAL_BLOSSOMS },
+						["groups"] = {
+							i(44500, {	-- Elementium-Plated Exhaust Pipe
+								["cost"] = 15000000,	-- 1500g
+							}),
+							i(44501, {	-- Goblin-Machined Piston
+								["cost"] = 10000000,	-- 1000g
+							}),
+							i(83092, {	-- Orb of Mystery
+								["cost"] = 200000000,	-- 20000g
+							}),
+							i(44499, {	-- Salvaged Iron Golem Parts
+								["cost"] = 30000000,	-- 3000g
+							}),
+							i(65893, {	-- Sands of Time
+								["cost"] = 30000000,	-- 3000g
+							}),
+						},
+					}),
 					n(64922, {	-- Brann Bronzebeard <Archaeology Trainer>
 						["coord"] = { 83.4, 30.9, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {

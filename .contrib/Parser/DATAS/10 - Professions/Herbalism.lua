@@ -1354,7 +1354,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			}),
 		}),
 		n(QUESTS, sharedData({
-			["description"] = "Requires 25 Skill.",
+			["sharedDescription"] = "Requires 25 Skill.",
 			["provider"] = { "n", 185549 },	-- Agrikus
 			["coord"] = { 38.2, 68.6, VALDRAKKEN },
 			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
@@ -1416,7 +1416,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(QUESTS, sharedData({
-			["description"] = "Requires 25 Skill.",
+			["sharedDescription"] = "Requires 25 Skill.",
 			["provider"] = { "n", 219101 },	-- Akdan <Herbalism Trainer>
 			["coord"] = { 44.8, 69.3, DORNOGAL },
 			["isWeekly"] = true,

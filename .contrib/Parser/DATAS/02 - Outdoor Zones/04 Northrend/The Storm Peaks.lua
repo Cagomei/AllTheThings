@@ -1730,6 +1730,20 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					n(31247, {	-- Roxi Ramrocket <Flying Trainer>
+						["coord"] = { 40.6, 84.8, THE_STORM_PEAKS },
+						["groups"] = {
+							i(44500, {	-- Elementium-Plated Exhaust Pipe
+								["cost"] = 15000000,	-- 1500g
+							}),
+							i(44501, {	-- Goblin-Machined Piston
+								["cost"] = 10000000,	-- 1000g
+							}),
+							i(44499, {	-- Salvaged Iron Golem Parts
+								["cost"] = 30000000,	-- 3000g
+							}),
+						},
+					}),
 					n(30006, {	-- Warsmith Sigfinna
 						["coord"] = { 47.4, 70.4, THE_STORM_PEAKS },
 						["groups"] = {

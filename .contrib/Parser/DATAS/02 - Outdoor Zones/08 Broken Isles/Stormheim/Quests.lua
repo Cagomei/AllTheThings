@@ -1035,7 +1035,7 @@ root(ROOTS.Zones, {
 				}),
 				n(BONUS_OBJECTIVES, sharedData({
 					["lockCriteria"] = { 1, "lvl", 45 },
-					["description"] = "This can be completed in party-sync with a character who is in Chromie Time for Legion.",
+					["sharedDescription"] = "This can be completed in party-sync with a character who is in Chromie Time for Legion.",
 				},{
 					-- TODO: Check SQ, also probably can't do after a certain level
 					q(38442, {	-- A Worthy Challenger

@@ -1129,6 +1129,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				faction(2427),	-- Aqir Hatchling
 				faction(FACTION_ULDUM_ACCORD),	-- Uldum Accord
 			}),
+			n(VENDORS, {
+				n(163252, {	-- Yasmin <Innkeeper>
+					["coord"] = { 26.6, 7.2, ULDUM },
+					["description"] = "Since this version of Yasmin is part of a faction, you can buy the sands of time item from her with a discount at higher reputation levels!",
+					["groups"] = {
+						i(65893, {	-- Sands of Time
+							["cost"] = 30000000,	-- 3000g
+						}),
+					},
+				}),
+			}),
 			n(NZOTH_ASSAULTS, {
 				n(ACHIEVEMENTS, {
 					ach(14155),		-- Uldum Accord

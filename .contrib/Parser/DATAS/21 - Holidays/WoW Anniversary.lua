@@ -1713,7 +1713,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 				n(VENDORS, {
 					n(158386, {	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
-						["coord"] = { 58.1, 33.6, HILLSBRAD_FOOTHILLS },
+						["coords"] = {
+							{ 58.1, 33.6, HILLSBRAD_FOOTHILLS },
+						},
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							n(BACK, {
@@ -1927,7 +1929,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						},
 					}),
 					n(158385, {	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
-						["coord"] = { 44.7, 46.4, HILLSBRAD_FOOTHILLS },
+						["coords"] = {
+							{ 44.7, 46.4, HILLSBRAD_FOOTHILLS },
+						},
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							n(BACK, {
@@ -2143,9 +2147,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					-- #if AFTER 11.0.5
 					n(158386, {	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
 						["crs"] = { 229711 },	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
+						["coords"] = {
+							{ 62.8, 51.1, TANARIS },
+						},
 					}),
 					n(158385, {	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
 						["crs"] = { 229710 },	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
+						["coords"] = {
+							{ 62.7, 51.0, TANARIS },
+						},
 					}),
 					-- #endif
 				}),
@@ -2676,7 +2686,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["icon"] = 135727,
 			}),
 		}),
-		n(GROUP_FINDER, {
+		n(GROUP_FINDER, sharedData({
+			["maps"] = { 2354 },	-- Silithus
+		},{
 			i(229355, {	-- Chromie's Premium Goodie Bag
 				i(226046),	-- Timely Tourist's Band
 				i(226064),	-- Timely Tourist's Beacon Staff
@@ -2755,11 +2767,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					{ "pop" },
 				},
 			}),
-		}),
+		})),
 		n(QUESTS, {
 			q(82672),	-- Another Timely Invitation
 			q(84254, {	-- Meet and Greet
-				["sourceQuests"] = { 82672 },	-- Another Timely Invitation
 				["provider"] = { "n", 223877 },	-- Yllana <Event Coordinator>
 				["coord"] = { 62.9, 50.7, TANARIS },
 			}),

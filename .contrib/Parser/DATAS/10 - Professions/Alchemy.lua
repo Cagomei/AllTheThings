@@ -120,7 +120,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 		})),
 		n(QUESTS, sharedData({
-			["description"] = "Requires 300 Classic Alchemy.",
+			["sharedDescription"] = "Requires 300 Classic Alchemy.",
 			["qgs"] = {
 				4160,	-- Ainethil
 				3347,	-- Yelmak

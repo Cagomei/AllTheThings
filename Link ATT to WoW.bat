@@ -75,7 +75,6 @@ if NOT exist "%~1\" (
 	mklink "%~1\AllTheThings.lua" "%cd%\AllTheThings.lua"
 	mklink "%~1\AllTheThings.toc" "%cd%\AllTheThings.toc"
 	mklink "%~1\Bindings.xml" "%cd%\Bindings.xml"
-	mklink "%~1\Settings.lua" "%cd%\Settings.lua"
 )
 EXIT /B 0
 
@@ -111,7 +110,6 @@ if NOT exist "%~1\" (
 	mklink "%~1\AllTheThings.lua" "%cd%\AllTheThings.lua"
 	mklink "%~1\AllTheThings.toc" "%cd%\AllTheThings.toc"
 	mklink "%~1\Bindings.xml" "%cd%\Bindings.xml"
-	mklink "%~1\Settings.lua" "%cd%\Settings.lua"
 )
 EXIT /B 0
 

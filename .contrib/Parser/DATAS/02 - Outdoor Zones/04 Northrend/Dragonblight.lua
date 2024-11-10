@@ -1613,6 +1613,15 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.2, 74.3, DRAGONBLIGHT },
 						["maxReputation"] = { FACTION_THE_KALUAK, EXALTED },	-- The Kalu'ak, Exalted.
 						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/12 Snowfall Glade Pup
+								["providers"] = {
+									{ "i", 35692 },	-- Snowfall Glade Pup
+									{ "n", 26200 },	-- Snowfall Glade Pup
+								},
+								["coord"] = { 44.4, 71.6, DRAGONBLIGHT },
+							}),
+						},
 					}),
 					q(12463, {	-- Plunderbeard Must Be Found!
 						["coord"] = { 85.9, 50.8, DRAGONBLIGHT },

@@ -92,6 +92,16 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					i(174861),	-- Wriggling Parasite (MOUNT!)
 				}),
 				ach(14039),	-- Ny'alotha, the Waking City Guild Run
+				ach(40963, { 	-- Ny'alotha, the Waking City
+					["timeline"] = { ADDED_11_0_7 },
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						14193,	-- Vision of Destiny
+						14194,	-- Halls of Devotion
+						14195,	-- Gift of Flesh
+						14196,	-- The Waking Dream
+					}},
+				}),
 			}),
 			n(AZERITE_ESSENCES, {
 				i(173883, {	-- Replicating Void Droplets (Rank 1)

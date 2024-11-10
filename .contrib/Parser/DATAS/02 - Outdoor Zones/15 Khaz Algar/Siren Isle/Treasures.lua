@@ -4,9 +4,17 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
 	m(SIREN_ISLE, {
 		n(TREASURES, {
-			--o(474822, {	-- Runed Storm Cache
-			--	repeatable local treasure
-			--}),
+			--repeatable local treasure
+			--o(474822),	-- Runed Storm Cache
+			--o(500683),	-- Seafarer's Cache
+			--o(500686),	-- Seafarer's Cache
+			--
+			o(465272, {	--  Empty Kaja'Cola Can
+				["coord"] = { 60.8, 62.9, SIREN_ISLE },
+				["g"] = {
+					i(228665),	-- Empty Kaja'Cola (QS!)
+				},
+			}),
 			o(463539, {	-- Pilfered Earthen Chest
 				["coord"] = { 68.4, 94.4, SIREN_ISLE },
 				["questID"] = 84527,

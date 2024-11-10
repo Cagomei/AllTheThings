@@ -746,22 +746,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["cr"] = 94366,	-- Lelyn Swiftshadow
 				}),
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 				q(39015, {	-- Grumpy
 					-- not sure if there are prereqs for this.
 					["coord"] = { 38.6, 65.6, VALSHARAH },
@@ -770,12 +754,8 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					},
 				}),
 
-
-
-
-
 				n(BONUS_OBJECTIVES, sharedData({
-					["description"] = "This can be completed in party-sync with a character who is in Chromie Time for Legion.",
+					["sharedDescription"] = "This can be completed in party-sync with a character who is in Chromie Time for Legion.",
 					["lockCriteria"] = { 1, "lvl", 45 },
 				},{
 					-- TODO: Check SQ, also probably can't do after a certain level

@@ -28,6 +28,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(26012, {	-- Trouble at Wyrmrest
 					["qg"] = 16128,	-- Rhonin
+					["sourceAchievements"] = {
+						4531,	-- Storming the Citadel (10 Player)
+						4604,	-- Storming the Citadel (25 Player)
+					},
 					["coord"] = { 30.6, 48.6, NORTHREND_DALARAN },
 					["description"] = "You need to have cleared the first four bosses in Icecrown Citadel before this quest will be available to you.",
 					["maps"] = { DRAGONBLIGHT },

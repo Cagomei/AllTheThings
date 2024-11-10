@@ -275,7 +275,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 			}),
 		}),
 		n(QUESTS, sharedData({
-			["description"] = "Requires 25 Skill.",
+			["sharedDescription"] = "Requires 25 Skill.",
 			["provider"] = { "n", 193846 },	-- Ralathor the Rugged
 			["coord"] = { 28.8, 60.4, VALDRAKKEN },
 			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },

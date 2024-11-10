@@ -331,8 +331,31 @@ app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 });
 
 -- Reporting
+local AreaIDNameMapper = setmetatable({}, {__index = function(t,key)
+	local id = #t + 1
+	local keyid = tonumber(key)
+	local name
+	while id < 25000 do
+		name = C_Map_GetAreaInfo(id)
+		if name then
+			t[name] = id
+		end
+		t[id] = name or UNKNOWN
+		if key == name then
+			-- app.PrintDebug("Found AreaID",id,"for",key)
+			return id
+		end
+		if keyid == id then
+			-- app.PrintDebug("Found Name",name,"for",id)
+			return name or UNKNOWN
+		end
+		id = id + 1
+	end
+	app.PrintDebug("Ran out of AreaID and never found for",key)
+end})
 local ReportedAreas = {};
 local function PrintDiscordInformationForExploration(o)
+	if not app.Contributor then return end
 	local areaID = o.explorationID;
 	if not areaID or ReportedAreas[areaID] then return; end
 	ReportedAreas[areaID] = o;
@@ -363,7 +386,7 @@ local function PrintDiscordInformationForExploration(o)
 		local x,y = position:GetXY();
 		coord = (math_floor(x * 1000) / 10) .. ", " .. (math_floor(y * 1000) / 10);
 	end
-	tinsert(info, coord and ("coord:"..coord) or "coord:??");
+	tinsert(info, coord and ("playercoord:"..coord) or "playercoord:??");
 
 	tinsert(info, "ver: "..app.Version);
 	tinsert(info, "build: "..app.GameBuildVersion);
@@ -371,7 +394,7 @@ local function PrintDiscordInformationForExploration(o)
 
 	local popupID = "area-" .. areaID;
 	app:SetupReportDialog(popupID, text, info);
-	print("Found Area:", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID));
+	app.print("Found New Area:", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID));
 end
 local RefreshExplorationData = app.IsClassic and (function(data)
 	app:RefreshDataQuietly("RefreshExploration", true);
@@ -402,7 +425,9 @@ local function GetExplorationBySubzone()
 				end
 			end
 		end
-		PrintDiscordInformationForExploration(app.CreateExploration(app.RealMapID..subzone, { mapID = app.RealMapID, name = subzone}));
+		local e = app.CreateExploration(AreaIDNameMapper[subzone], { mapID = app.RealMapID, name = subzone})
+		PrintDiscordInformationForExploration(e);
+		return e
 	end
 end
 local function CheckExplorationForPlayerPosition()

@@ -138,10 +138,30 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["provider"] = { "n", 228074 },	-- Angorla
 				["coord"] = { 71.2, 44.0, SIREN_ISLE },
 				["g"] = {
-					-- TODO: build 57361 - unable to progress further
 					--spell(470168),	-- Cyrce's Zephyr
 					--
 					i(229365),	-- Raw Singing Citrine
+				},
+			}),
+			q(85656, {	-- The Singing Bandit Catcher
+				["sourceQuests"] = { 85655 },	-- Unleashing Her Power
+				["provider"] = { "n", 231536 },	-- Apprentice Tanmar
+				["coord"] = { 72.1, 42.9, SIREN_ISLE },
+				["g"] = {
+					i(232860), -- Singing Fragments (QI!)
+					i(232861), -- Singing Fragments (QI!)
+					i(232862), -- Singing Fragments (QI!) 
+					--spell(470169),	-- Thieves of the Siren
+					--
+					i(229365),	-- Raw Singing Citrine
+				},
+			}),
+			q(85657, {	-- Cyrce Would Be So Proud
+				["sourceQuests"] = { 85656 },	-- The Singing Bandit Catcher
+				["provider"] = { "n", 231997 },	-- Didi the Wrench
+				["coord"] = { 71.2, 45.8, SIREN_ISLE },
+				["g"] = {
+					--spell(470170),	-- Wings of the Siren
 				},
 			}),
 			-- isWeekly/isDaily
@@ -169,7 +189,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["coord"] = { 71.0, 39.6, SIREN_ISLE },
 				["isWeekly"] = true,
 				["g"] = {
-					i(232361),	-- Ruffled Pages (QI!)
+					o(487825, {	-- Ruffled Pages
+						i(232361),	-- Ruffled Pages (QI!)
+					}),
 				},
 			}),
 			q(85051, {	-- Beach Comber
@@ -223,6 +245,56 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["provider"] = { "i", 228665 },	-- Empty Kaja'Cola
 				["coord"] = { 69.3, 43.7, SIREN_ISLE },
 			}),
+			q(85570, {	-- The Tattered Journal
+				--["sourceQuests"] = { ??? },	-- ???
+				["provider"] = { "o", 494923 },	-- Tattered Journal
+				["coord"] = { 37.1, 77.2, 2375 },	-- The Forgotten Vault
+				["g"] = {
+					i(232643),	-- Mysterious Tattered Journal (QI!)
+				},
+			}),
+			q(85571, {	-- Scattered To The Winds
+				["sourceQuests"] = { 85570 },	-- The Tattered Journal
+				["provider"] = { "n", 229716 },	-- Stellin Verasa
+				["coord"] = { 71.0, 39.6, SIREN_ISLE },
+				["g"] = {
+					o(499443, {	-- Faded Journal Page
+						i(232651),	-- Faded Journal Page (QI!) 
+					}),
+				},
+			}),
+			q(85572, {	-- A Group Effort
+				["sourceQuests"] = { 85571 },	-- Scattered To The Winds
+				["provider"] = { "n", 229716 },	-- Stellin Verasa
+				["coord"] = { 71.0, 39.6, SIREN_ISLE },
+			}),
+			q(85573, {	-- Laid To Rest At Last
+				["sourceQuests"] = { 85572 },	-- A Group Effort
+				["provider"] = { "n", 229716 },	-- Stellin Verasa
+				["coord"] = { 71.0, 39.6, SIREN_ISLE },
+				["g"] = {
+					i(232694), -- Transcribed Kul Tiran Journal [book]
+				},
+			}),
+			-- Snapdragon?
+			q(85573, {	-- A Lifeline
+				--["sourceQuests"] = { 84547 },	-- Redemption Guaranteed (TODO: speculation)
+				["provider"] = { "n", 235216 },	-- Starving Snapdragon Runt
+				["coord"] = { 70.9, 48.6, SIREN_ISLE },
+				["g"] = {
+					i(234426),	-- Kaja'Cola-braised Meat (QI!)
+				},
+			}),
+			q(86486, {	-- Hungry, Hungry Snapdragon
+				-- available after 24hrs (not on next day!) of turn in previous quest
+				["sourceQuests"] = { 85573 },	-- A Lifeline
+				["provider"] = { "n", 235237 },	-- Growing Snapdragon Runt
+				["coord"] = { 70.9, 48.6, SIREN_ISLE },
+				["isDaily"] = true,
+				["g"] = {
+					-- It require some meat (in quest description but not on ptr)
+				},
+			}),
 			--- Stay awhile and listen ---
 			hqt(85103, {	-- Stay awhile and listen: Apprentice Tanmar
 				["name"] = "Stay awhile and listen: Apprentice Tanmar",
@@ -253,21 +325,39 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				q(85672),	-- Mariner's Hallowed Citrine unlock (speculation based on questID range, need more data)
 				q(85669),	-- Thunderlord's Crackling Citrine unlock (speculation based on questID range, need more data)
 				q(85675),	-- Windsinger's Runed Citrine unlock (according to spellID should also fire 85765 with spellID 470833 but it is not)				
-				-- Need more data / re-confirmation
+				-- Need more data / re-confirmation, questIDs are fires only IF it WAS LOOTED, it doesn't fire if you buy anything from vendor
+				-- plate stuff didn't trigger questIDs on druid (Earthen Landlubber's Gauntlets & Earthen Landlubber's Sabatons if to be clear)
+				-- but it seems like try to give you pieces that you don't have
+				--q(84874),	-- Conch Collector's Locket (itemID 229053) drop
 				--q(85956),	-- Cursed Pirate Skull (itemID 231116) drop
 				--q(),	-- 84795 OR 84871 -- Earthen Deckhand's Halberd (itemID 229172) drop
+				--q(84846),	-- Earthen Deckhand's Bindings (itemID 229026) drop
+				--q(84841),	-- Earthen Deckhand's Breeches (itemID 229023) drop
+				--q(85839),	-- Earthen Deckhand's Cap (itemID 229045) drop
+				--q(84847),	-- Earthen Deckhand's Cape (itemID 229019) drop
+				--q(84844),	-- Earthen Deckhand's Grips (itemID 229022) drop
+				--q(84845),	-- Earthen Deckhand's Sash (itemID 229025) drop
 				--q(84840),	-- Earthen Deckhand's Shoulderpads (itemID 229024) drop
-				--q(85937),	-- Earthen Scallywag's Gavel (itemID 229178) drop
+				--q(84842),	-- Earthen Deckhand's Vest (itemID 229020) from Crate of Bygone Riches (or just after opening crate?)
+				--q(84872),	-- Earthen Scallywag's Gavel (itemID 229178) drop
 				--q(84873),	-- Earthen Scallywag's Implement (itemID 229188) from Crate of Bygone Riches (or just after opening crate?)
 				--q(85957),	-- Runecaster's Stormbound Rune (itemID 231118) drop / small rp after first stone during Buried Secrets (questID 84723)
 				--q(84875),	-- Scurvy Sailor's Ring (itemID 229051) drop from treasure chest (same objectID as for other one that didn't fire questIDs)
-				--q(84846),	-- Earthen Deckhand's Bindings (itemID 229026) drop
-
-				--q(85070),	-- pop after completion Serpent's Wrath (questID 84850)
-				--q(85708),	-- pop after completion Serpent's Wrath (questID 84850)
-
-				-- Some interaction with gems on terrain during storm phase
-				q(86437),	-- @ 67.1, 78.5 (spellID 1213217 - Take Fragment)
+				--
+				q(85070),	-- pop when Special Assigment npc unlocked for storm phase (pop talking head)
+				--q(85708),	-- pop after completion Serpent's Wrath (questID 84850) (could be one of gem? Seabed Leviathan's Citrine but I'm not sure)
+				-- Some interaction with gems on terrain during storm phase, reward you with Turbulent Fragment (itemID 234327)
+				q(86437),	-- missing objectID or npcID? @ 67.1, 78.5 (spellID 1213217 - Take Fragment)
+				q(86435),	-- after interact with Runic Fragment (npcID 234934) @ 52.6, 38.7
+				q(86436),	-- after interact with Dirt Pile (npcID 235134) @ 38.2, 51.8
+				-- Runestone activation questIDs in The Forgotten Vault (stormed phase) for Thrayir, Eyes of the Siren (npcID 233540)
+				q(85800),	-- Cyclonic (spellID 471163)
+				q(85803),	-- Thunderous (spellID 471169)
+				q(85801),	-- Torrential (spellID 471166)
+				--q(85799),	-- Turbulent (spellID 471162) (bugged on ptr - you can't create this key, cannot confirm questID)
+				q(85802),	-- Whirling (spellID 471167)
+				-- Snapdragon timer after quest?
+				q(86566),	-- [DNT] Snapdragon Progress Update (spellID 1214684)
 			}),
 		}),
 	}),

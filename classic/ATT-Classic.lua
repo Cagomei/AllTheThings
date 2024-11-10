@@ -935,16 +935,13 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if b then paramB = b; end
 		-- Move all post processing here?
 		if paramA == "creatureID" or paramA == "encounterID" then
-			local difficultyID = app.GetCurrentDifficultyID();
-			if difficultyID > 0 then
-				local subgroup = {};
-				for _,j in ipairs(group) do
-					if GetRelativeDifficulty(j, difficultyID) then
-						tinsert(subgroup, j);
-					end
+			local subgroup = {};
+			for _,j in ipairs(group) do
+				if not j.ShouldExcludeFromTooltip then
+					tinsert(subgroup, j);
 				end
-				group = subgroup;
 			end
+			group = subgroup;
 
 			local regroup = {};
 			if app.MODE_DEBUG then

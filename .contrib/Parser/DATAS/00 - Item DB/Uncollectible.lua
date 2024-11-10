@@ -7,6 +7,7 @@ local i = function(itemID)
 end
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 -- Put items between these two bars if you dont want to sort them /Braghe
+i(804);		-- Large Blue Sack
 i(805);		-- Small Red Pouch
 i(828);		-- Small Blue Pouch
 i(1725);	-- Large Knapsack
@@ -30,6 +31,7 @@ i(187603);	-- The Mad Duke's Tea
 -- DF
 i(195572);	-- Empty Elixir
 i(194742);	-- Worn Book
+i(211768);	-- Hastily Scrawled Satyr Ravings
 -- TWW
 i(221485);	-- Defias Gunpowder
 i(229371);	-- Companion Experience
@@ -2153,7 +2155,11 @@ i(228911);	-- Xalatath's Rusty Coin
 ------------------
 -- PATCH 11.0.7 --
 ------------------
+i(234718);	-- Ancient Runic Hilt
+i(234722);	-- Carved Stone Fragment
 i(232634);	-- Emptied Turtle Shell
 i(232638);	-- Loosened Naga Scales
+i(234720);	-- Memoric Residue
+i(232636);	-- Rum-Soaked Hankerchief
 i(232633);	-- Shiny Seaside Clam
 i(232632);	-- Spiral Mollusk Shell

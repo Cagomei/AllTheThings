@@ -21,7 +21,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				40956,	-- I'm On Island Time (!)
 				40957,	-- Maximum Effort (!)
 				13541,	-- Mecha-Done
-				40963,	-- Ny'alotha, the Waking City (!)
+				40963,	-- Ny'alotha, the Waking City
 				40962,	-- The Eternal Palace
 				13994,	-- Through the Depths of Visions
 				14730,	-- To All the Squirrels I Set Sail to See
@@ -173,7 +173,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		pvp(h(ach(13403))),	-- Frontline Slayer (H)
 		pvp(ach(13387, {	-- Frontline Veteran (A)
 			["races"] = ALLIANCE_ONLY,
-			["g"] = bubbleDown({["description"] = "Requires War Mode Active" }, {
+			["g"] = bubbleDown({["sharedDescription"] = "Requires War Mode Active" }, {
 				crit(44016, {		-- A Sound Defense
 					["_quests"] = { 53711 },	-- A Sound Defense (Faction Assault WQ)
 				}),
@@ -196,7 +196,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		})),
 		pvp(ach(13388, {	-- Frontline Veteran (H)
 			["races"] = HORDE_ONLY,
-			["g"] = bubbleDown({["description"] = "Requires War Mode Active" }, {
+			["g"] = bubbleDown({["sharedDescription"] = "Requires War Mode Active" }, {
 				crit(44022, {		-- Breaching Boralus
 					["_quests"] = { 53939 },	-- Breaching Boralus (Faction Assault WQ)
 				}),

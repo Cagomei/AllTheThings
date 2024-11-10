@@ -1218,7 +1218,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			}),
 		}),
 		n(QUESTS, sharedData({
-			["description"] = "Requires 25 Skill.",
+			["sharedDescription"] = "Requires 25 Skill.",
 			["provider"] = { "n", 185553 },	-- Sekita the Burrower
 			["coord"] = { 39.0, 51.2, VALDRAKKEN },
 			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
@@ -1284,7 +1284,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(QUESTS, sharedData({
-			["description"] = "Requires 25 Skill.",
+			["sharedDescription"] = "Requires 25 Skill.",
 			["provider"] = { "n", 219097 },	-- Tarib <Mining Trainer>
 			["coord"] = { 52.6, 52.6, DORNOGAL },
 			["isWeekly"] = true,

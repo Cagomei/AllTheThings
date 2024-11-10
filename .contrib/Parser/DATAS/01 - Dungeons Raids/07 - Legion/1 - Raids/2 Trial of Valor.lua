@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			n(COMMON_BOSS_DROPS, {
 				["g"] = sharedData({
 					["modID"] = 4,	-- LFR
-					["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic difficulties.",
+					["sharedDescription"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic difficulties.",
 					["crs"] = {
 						114263,	-- Odyn
 						114344,	-- Guarm

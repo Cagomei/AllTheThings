@@ -42,94 +42,15 @@ root(ROOTS.Unsorted, {
 			i(228095),	-- Scroll of Empowered Time Warp
 			i(228526),	-- Cyrce's Circlet
 			i(228621),	-- Bilge Rat Supply Key
-			i(228635),	-- Squall Sailor's Citrine
-			i(228636),	-- Undersea Overseer's Citrine
 			i(228637),	-- Delete Me
-			i(228638),	-- Stormbringer's Runed Citrine
-			i(228639),	-- Fathomdweller's Runed Citrine
 			i(228641),	-- Delete Me
-			i(228642),	-- Storm Sewer's Citrine
-			i(228643),	-- Old Salt's Bardic Citrine
 			i(228645),	-- Delete Me
-			i(228646),	-- Legendary Skipper's Citrine
-			i(228647),	-- Seabed Leviathan's Citrine
-			i(228648),	-- Roaring War-Queen's Citrine
 			i(228649),	-- Delete Me
-			i(229010),	-- Earthen Scallywag's Cloak
-			i(229011),	-- Earthen Scallywag's Vestment
-			i(229012),	-- Earthen Scallywag's Sandals
-			i(229013),	-- Earthen Scallywag's Handwraps
-			i(229014),	-- Earthen Scallywag's Cowl
-			i(229015),	-- Earthen Scallywag's Leggings
-			i(229016),	-- Earthen Scallywag's Mantle
-			i(229017),	-- Earthen Scallywag's Cord
-			i(229018),	-- Earthen Scallywag's Cuffs
-			i(229019),	-- Earthen Deckhand's Cape
-			i(229020),	-- Earthen Deckhand's Vest
-			i(229021),	-- Earthen Deckhand's Waders
-			i(229022),	-- Earthen Deckhand's Grips
-			i(229023),	-- Earthen Deckhand's Breeches
-			i(229024),	-- Earthen Deckhand's Shoulderpads
-			i(229025),	-- Earthen Deckhand's Sash
-			i(229026),	-- Earthen Deckhand's Bindings
-			i(229027),	-- Earthen Islander's Shawl
-			i(229028),	-- Earthen Islander's Chainmail
-			i(229029),	-- Earthen Islander's Striders
-			i(229030),	-- Earthen Islander's Grips
-			i(229031),	-- Earthen Islander's Coif
-			i(229032),	-- Earthen Islander's Greaves
-			i(229033),	-- Earthen Islander's Shoulderguards
-			i(229034),	-- Earthen Islander's Cinch
-			i(229035),	-- Earthen Islander's Bracers
-			i(229036),	-- Earthen Landlubber's Drape
-			i(229037),	-- Earthen Landlubber's Breastplate
-			i(229038),	-- Earthen Landlubber's Sabatons
-			i(229039),	-- Earthen Landlubber's Gauntlets
-			i(229040),	-- Earthen Landlubber's Helm
-			i(229041),	-- Earthen Landlubber's Legguards
-			i(229042),	-- Earthen Landlubber's Mantle
-			i(229043),	-- Earthen Landlubber's Girdle
-			i(229044),	-- Earthen Landlubber's Armplates
-			i(229045),	-- Earthen Deckhand's Cap
-			i(229050),	-- Seafarer's Wandering Signet
-			i(229051),	-- Scurvy Sailor's Ring
-			i(229052),	-- Moneyed Mariner's Pendant
-			i(229053),	-- Conch Collector's Locket
-			i(229167),	-- Earthen Deckhand's Cleaver
-			i(229168),	-- Earthen Landlubber's Axe
-			i(229169),	-- Earthen Landlubber's Sword
-			i(229170),	-- Earthen Scallywag's Saber
-			i(229171),	-- Earthen Landlubber's Polearm
-			i(229172),	-- Earthen Deckhand's Halberd
-			i(229173),	-- Earthen Scallywag's Spear
-			i(229174),	-- Earthen Landlubber's Shield
-			i(229175),	-- Earthen Deckhand's Bulwark
-			i(229176),	-- Earthen Landlubber's Greatsword
-			i(229177),	-- Earthen Landlubber's Greataxe
-			i(229178),	-- Earthen Scallywag's Gavel
-			i(229179),	-- Earthen Deckhand's Cudgel
-			i(229180),	-- Earthen Landlubber's Hammer
 			i(229181),	-- [PH] Placeholder
-			i(229182),	-- Earthen Deckhand's Dagger
-			i(229183),	-- Earthen Landlubber's Knife
-			i(229184),	-- Earthen Deckhand's Knuckles
-			i(229185),	-- Earthen Deckhand's Warglaive
-			i(229186),	-- Earthen Scallywag's Greatstaff
-			i(229187),	-- Earthen Deckhand's Rod
-			i(229188),	-- Earthen Scallywag's Implement
-			i(229189),	-- Earthen Scallywag's Bow
-			i(229190),	-- Earthen Deckhand's Blunderbuss
-			i(229191),	-- Earthen Landlubber's Crossbow
-			i(229192),	-- Earthen Scallywag's Kris
 			i(229811),	-- Frost-Etched Dagger
 			i(230207),	-- N.U.K.U.L.A.R. Target Painter
 			i(230211),	-- Singing Citrine
-			i(230728),	-- Experimental Go-Pack
 			i(230773),	-- Overcharged Battery
-			i(230945),	-- Wayward Vrykul's Lantern
-			i(231116),	-- Cursed Pirate Skull
-			i(231117),	-- Darktide Wavebender's Orb
-			i(231118),	-- Runecaster's Stormbound Rune
 			i(231751),	-- Earthen Backpack
 			i(231786),	-- Ookler's Diary
 			i(231788),	-- Songs of the Siren
@@ -139,21 +60,17 @@ root(ROOTS.Unsorted, {
 			i(231813),	-- Siren Isle Manifest
 			i(232439),	-- Rune-Seared Spear
 			i(232519),	-- Razeshi B.
-			i(232569),	-- Cyclonic Runekey
 			i(232573),	-- Thunderous Runekey
 			i(232597),	-- Swabbie's Oar
 			i(232629),	-- Distilled Knowledge of Timeways
 			i(232635),	-- Torn Bilgewater Bandage
-			i(232636),	-- Rum-Soaked Hankerchief
 			i(232637),	-- Cracked Pirate Skull
 			i(232639),	-- Thrayir, Eyes of the Siren
-			i(232643),	-- Mysterious Tattered Journal
 			i(232645),	-- Celestial Barrage
 			i(232646),	-- Root Defender's Spear
 			i(232647),	-- Root Defender's Shield
 			i(232653),	-- Portentous Present
 			i(232654),	-- Compiled Tattered Journal
-			i(232694),	-- Transcribed Kul Tiran Journal
 			i(232901),	-- Lunar Launcher
 			i(232909),	-- Sky Witch's Heartfelt Shoulder Cape
 			i(232910),	-- Vivid Heartfelt Shoulder Cape
@@ -171,7 +88,6 @@ root(ROOTS.Unsorted, {
 			i(232934),	-- Ensemble: Twilight Witch's Heartfelt Shoulders
 			i(232946),	-- Verus
 			i(232988),	-- Void Tear
-			i(232991),	-- The Breaker's Song
 			i(233013),	-- Coal Cookie
 			i(233019),	-- Sky Witch's Sweeper
 			i(233020),	-- Twilight Witch's Sweeper
@@ -180,7 +96,6 @@ root(ROOTS.Unsorted, {
 			i(233051),	-- G.R.A.V. Glove
 			i(233056),	-- Marmaduke
 			i(233057),	-- Rock Hound Mica
-			i(233058),	-- [PH] red surfboard
 			i(233072),	-- Short Crimson War Skirt
 			i(233073),	-- Long Crimson War Skirt
 			i(233074),	-- Short Crimson War Skirt and Leg Wraps
@@ -386,31 +301,17 @@ root(ROOTS.Unsorted, {
 			i(233501),	-- [PH] Snapdragon Treat 08
 			i(233650),	-- Call Galefeather
 			i(233800),	-- [PH] Chris' Flavor Test Item
-			i(233805),	-- [PH] Wand
-			i(233806),	-- [PH] Claymore
-			i(233807),	-- [PH] Claymore
-			i(233809),	-- [PH] Naga Blade
-			i(233810),	-- [PH] Naga Sword
 			i(233811),	-- [PH] Legs
 			i(233812),	-- [PH] Arathi Youngling's Training Sword
 			i(233814),	-- [PH] Sailor's Mop
 			i(233815),	-- [PH] Sailor's Mop
-			i(233816),	-- [PH] Naga Staff
-			i(233817),	-- [PH] Naga Trident
-			i(233818),	-- [PH] Vrykul Blacksmithing Mace
-			i(233819),	-- [PH] Vrykul Blacksmithing Mace
 			i(233820),	-- [PH] Iron Mallet
 			i(233821),	-- [PH] Smith's Tongs
-			i(233822),	-- [PH] Earthen Pitcher
 			i(233823),	-- [PH] Arathor Mallet
-			i(233824),	-- [PH] Earthen Hammer
 			i(233825),	-- [PH] Crafter's Tool
 			i(233827),	-- [PH] Crafter's Mallet
 			i(233828),	-- [PH] Arathor Brush
-			i(233829),	-- [PH] Earthen Goblet
-			i(233830),	-- [PH] Naga's Lobster Claw
 			i(233831),	-- [PH] Fletcher's Blade
-			i(233832),	-- [PH] Naga Blade
 			i(233834),	-- [PH] Crystalline Ritual Blade
 			i(233835),	-- [PH] Arathor Tongs
 			i(233836),	-- [PH] Arathor Chisel
@@ -420,8 +321,6 @@ root(ROOTS.Unsorted, {
 			i(233841),	-- [PH] Chest
 			i(233842),	-- [PH] Chest
 			i(233843),	-- [PH] Chest
-			i(233844),	-- [PH] Chest
-			i(233845),	-- [PH] Chest
 			i(233846),	-- [PH] Chest
 			i(233847),	-- [PH] Chest
 			i(233848),	-- [PH] Chest
@@ -432,8 +331,6 @@ root(ROOTS.Unsorted, {
 			i(233853),	-- [PH] Chest
 			i(233854),	-- [PH] Chest
 			i(233855),	-- [PH] Chest
-			i(233856),	-- [PH] Vrykul Longbow
-			i(233857),	-- [PH] Vrykul Bow
 			i(233858),	-- [PH] Waist
 			i(233859),	-- [PH] Feet
 			i(233860),	-- [PH] Waist
@@ -468,7 +365,6 @@ root(ROOTS.Unsorted, {
 			i(233889),	-- [PH] Legs
 			i(233890),	-- [PH] Feet
 			i(233891),	-- [PH] Waist
-			i(233892),	-- [PH] Waist
 			i(233893),	-- [PH] Feet
 			i(233894),	-- [PH] Feet
 			i(233895),	-- [PH] Legs
@@ -478,21 +374,14 @@ root(ROOTS.Unsorted, {
 			i(233899),	-- [PH] Waist
 			i(233900),	-- [PH] Waist
 			i(233901),	-- [PH] Feet
-			i(233902),	-- [PH] Head
-			i(233903),	-- [PH] Head
 			i(233904),	-- [PH] Head
 			i(233905),	-- [PH] Head
 			i(233906),	-- [PH] Head
 			i(233907),	-- [PH] Head
 			i(233908),	-- [PH] Head
 			i(233909),	-- [PH] Head
-			i(233910),	-- [PH] Head
-			i(233911),	-- [PH] Head
-			i(233912),	-- [PH] Head
 			i(233913),	-- [PH] Shield
 			i(233914),	-- [PH] Lumberjack's Hatchet
-			i(233915),	-- [PH] Feet
-			i(233916),	-- [PH] Feet
 			i(233917),	-- [PH] Head
 			i(233918),	-- [PH] Head
 			i(233919),	-- [PH] Head
@@ -533,8 +422,6 @@ root(ROOTS.Unsorted, {
 			i(233954),	-- [PH] Feet
 			i(233955),	-- [PH] Mining Pick
 			i(233957),	-- [PH] Lumberer's Hatchet
-			i(233961),	-- [PH] Bloodwake Shield
-			i(233963),	-- [PH] Naga Buckler
 			i(233970),	-- [PH] Cloak
 			i(233971),	-- [PH] Cloak
 			i(233972),	-- [PH] Cloak
@@ -542,11 +429,6 @@ root(ROOTS.Unsorted, {
 			i(233974),	-- [PH] Cloak
 			i(233975),	-- [PH] Cloak
 			i(233976),	-- [PH] Cloak
-			i(233978),	-- [PH] Cloak
-			i(233979),	-- [PH] Cloak
-			i(233980),	-- [PH] Cloak
-			i(233981),	-- [PH] Cloak
-			i(233982),	-- [PH] Naga Pike
 			i(233983),	-- [PH] Hand
 			i(233989),	-- [PH] Shirt
 			i(234037),	-- Lunar Festival Slippers
@@ -587,7 +469,6 @@ root(ROOTS.Unsorted, {
 			i(234282),	-- Decorative Yard Flamingo
 			i(234287),	-- Radiant Focus
 			i(234313),	-- [DNT] Item
-			i(234327),	-- Turbulent Fragment
 			i(234328),	-- Torrential Fragment
 			i(234379),	-- Crackleroar
 			i(234395),	-- Skitterbite
@@ -608,11 +489,9 @@ root(ROOTS.Unsorted, {
 			i(234410),	-- [PH] Cloak
 			i(234411),	-- [PH] Cloak
 			i(234412),	-- [PH] Cloak
-			i(234414),	-- [PH] Shirt
 			i(234422),	-- Storm-Singed Plunder
 			i(234423),	-- Keg-Leg's Silver Spoils
 			i(234424),	-- Keg-Leg's Bronze Spoils
-			i(234426),	-- Kaja'Cola-braised Meat
 			i(234443),	-- Meaty Ration
 			i(234450),	-- Pirate's Booty
 			i(234453),	-- Swabbie's Lockbox

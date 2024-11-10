@@ -6,10 +6,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["lore"] = "Uldum, a new zone added with Cataclysm, was known as the Land of the Titans. An ancient desert formerly inaccessible to the Alliance and the Horde, it is rich with Titan lore and an advanced civilization, the Tol'vir. This region draws aesthetic influences heavily from Ancient Egypt, with pyramids, obelisks, similar deities, and irrigation systems.\n\nThis zone requires the use of flying mounts.",
 		["icon"] = 409550,
 		["timeline"] = { ADDED_4_0_3 },
-		--["maps"] = {
-			-- 737,	-- The Vortex Pinnacle
-			-- 857,	-- Throne of the Four Winds
-		--},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				explorationAch(4865),	-- Explore Uldum
@@ -1649,6 +1645,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(63045),	-- Tan Riding Camel (MOUNT!)
 						},
 					}),
+				}),
+				n(49406, {	-- Yasmin <Innkeeper>
+					["coord"] = { 26.6, 7.2, ULDUM },
+					["groups"] = {
+						i(65893, {	-- Sands of Time
+							["cost"] = 30000000,	-- 3000g
+						}),
+					},
 				}),
 			}),
 			n(ZONE_DROPS, {

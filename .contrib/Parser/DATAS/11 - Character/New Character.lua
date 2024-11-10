@@ -1763,7 +1763,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	-- #if AFTER 10.0.7
 	filter(CLOTH, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 		["g"] = sharedData({
-			["description"] = "This item is obtained by a newly created worgen monk, but because it's soulbound cloth item, you can't learn it.",
+			["sharedDescription"] = "This item is obtained by a newly created worgen monk, but because it's soulbound cloth item, you can't learn it.",
 			["collectible"] = false,
 		},{
 			i(204268),	-- Gilnean Trainee's Cord
@@ -1774,7 +1774,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	})),
 	filter(CLOTH, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 		["g"] = sharedData({
-			["description"] = "This item is obtained by a newly created goblin monk, but because it's soulbound cloth item, you can't learn it.",
+			["sharedDescription"] = "This item is obtained by a newly created goblin monk, but because it's soulbound cloth item, you can't learn it.",
 			["collectible"] = false,
 		},{
 			i(204259),	-- Goblin Trainee's Cord

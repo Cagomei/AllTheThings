@@ -2332,19 +2332,13 @@ local function GetSearchResults(method, paramA, paramB, options)
 		if #group > 0 then
 			-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 			if paramA == "creatureID" or paramA == "encounterID" then
-				local difficultyID = app.GetCurrentDifficultyID();
-				-- app.PrintDebug("difficultyID",difficultyID,"params",paramA,paramB)
-				if difficultyID > 0 then
-					local subgroup = {};
-					for _,j in ipairs(group) do
-						-- app.PrintDebug("Check",j.hash,GetRelativeValue(j, "difficultyID"))
-						if GetRelativeDifficulty(j, difficultyID) then
-							-- app.PrintDebug("Match Difficulty",j.hash)
-							tinsert(subgroup, j);
-						end
+				local subgroup = {};
+				for _,j in ipairs(group) do
+					if not j.ShouldExcludeFromTooltip then
+						tinsert(subgroup, j);
 					end
-					group = subgroup;
 				end
+				group = subgroup;
 			elseif paramA == "azeriteessenceID" then
 				local regroup = {};
 				local rank = options and options.Rank

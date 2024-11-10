@@ -893,7 +893,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					}),
 					n(ZONE_DROPS, sharedData({
 						-- #if AFTER 9.0.3
-						["description"] = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
+						["sharedDescription"] = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
 						-- #endif
 					}, {
 						i(21002),	-- Unkempt Belt
@@ -2116,7 +2116,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			n(ZONE_DROPS, sharedData({
 				-- #if AFTER 9.0.3
-				["description"] = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
+				["sharedDescription"] = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
 				-- #endif
 			}, {
 				i(21002),	-- Unkempt Belt

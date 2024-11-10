@@ -183,31 +183,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					q(29135, {	-- All-Seeing Eye
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 29134,	-- A Wrinkle in Time
+						-- #if NOT OBJECTIVES
 						["cost"] = {
-							{ "i", 65893, 3, },	-- Sands of Time
+							{ "i", 71141, 25 },	-- Eternal Ember
+							{ "i", 65893, 3 },	-- Sands of Time
 						},
+						-- #else
 						["groups"] = {
-							objective(1, {
-								i(71141, {	-- Eternal Ember
-									["crs"] = {
-										53691,	-- Shannox
-										52498,	-- Beth'tilac <The Red Widow>
-										52530,	-- Alysrazor
-										52558,	-- Lord Rhyolith
-										53494,	-- Baleroc <The Gatekeeper>
-										52571,	-- Majordomo Staghelm <Archdruid of the Flame>
-										52409,	-- Ragnaros
-									},
-								}),
+							objective(1, {	-- 0/25 Eternal Ember
+								["provider"] = { "i", 71141 },	-- Eternal Ember
 							}),
-							i(65893, {	-- Sands of Time
-								["crs"] = {
-									61650,	-- Big Keech <Rare Antiquities>
-									49406,	-- Yasmin <Innkeeper>
-									163252,	-- Yasmin (BFA version)
-								},
+							objective(2, {	-- 0/3 Sands of Time
+								["provider"] = { "i", 65893 },	-- Sands of Time
 							}),
 						},
+						-- #endif
 					}),
 					q(29193, {	-- On a Wing and a Prayer
 						["qg"] = 15192,	-- Anachronos
@@ -453,6 +443,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				i(71367),	-- Theck's Emberseal
 			}),
 			d(NORMAL_HEROIC_DIFFICULTY_ID, {
+				n(COMMON_BOSS_DROPS, {
+					i(71141, {	-- Eternal Ember
+						["crs"] = {
+							53691,	-- Shannox
+							52498,	-- Beth'tilac <The Red Widow>
+							52530,	-- Alysrazor
+							52558,	-- Lord Rhyolith
+							53494,	-- Baleroc <The Gatekeeper>
+							52571,	-- Majordomo Staghelm <Archdruid of the Flame>
+							52409,	-- Ragnaros
+						},
+					}),
+				}),
 				e(192, {	-- Beth'tilac
 					["creatureID"] = 52498,
 					["groups"] = {

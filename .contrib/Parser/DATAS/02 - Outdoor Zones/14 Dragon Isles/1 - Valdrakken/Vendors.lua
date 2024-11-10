@@ -366,7 +366,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
 				["g"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
-					["description"] = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
+					["sharedDescription"] = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
 				}, {
 					i(217601),	-- Crucible Raider's Bronzed Beacon
 					i(217555),	-- Crucible Raider's Bronzed Cannon
@@ -435,7 +435,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
 				["g"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
-					["description"] = "Shared Transmog with |cFFFFFFFFNormal|r.",
+					["sharedDescription"] = "Shared Transmog with |cFFFFFFFFNormal|r.",
 				}, {
 					i(217602),	-- Crucible Raider's Shadowed Beacon
 					i(217556),	-- Crucible Raider's Shadowed Cannon
@@ -503,7 +503,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
 				["g"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
-					["description"] = "Shared Transmog with |cFFA330C9Heroic|r.",
+					["sharedDescription"] = "Shared Transmog with |cFFA330C9Heroic|r.",
 				}, {
 					i(217603),	-- Crucible Raider's Molten Beacon
 					i(217557),	-- Crucible Raider's Molten Cannon
@@ -571,7 +571,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
 				["g"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
-					["description"] = "Shared Transmog with |cFFED7014Mythic|r.",
+					["sharedDescription"] = "Shared Transmog with |cFFED7014Mythic|r.",
 				}, {
 					i(217604),	-- Crucible Raider's Corrupted Beacon
 					i(217558),	-- Crucible Raider's Corrupted Cannon

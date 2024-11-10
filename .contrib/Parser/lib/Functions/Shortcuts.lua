@@ -91,6 +91,13 @@ appendAllGroups = function(g, ...)
 	end
 	return g;
 end
+local SharedKeyWarnings = {
+	-- sharedData description is not 'always' correct to consolidate to sharedDescription since it is recursive for all children, and may not be intentional for them
+	-- description = "Using an identical 'description' on nested multiple groups via bubbleDown is not recommended. Use 'sharedDescription' instead for reduced data requirements!",
+}
+local BubbleDownKeyWarnings = {
+	description = "Using an identical 'description' on nested multiple groups via bubbleDown is not recommended. Use 'sharedDescription' instead for reduced data requirements!",
+}
 -- I've determined that this isn't going to work out with how our data is currently organized
 -- Since we've grown accustomed to making the inner timeline fully-replace any bubbleDown, there's no
 -- real way to add logic to merge these properly. Oh well, maybe another field will eventually benefit
@@ -130,6 +137,9 @@ applyData = function(data, t)
 	if data and t then
 		for key, value in pairs(data) do
 			if t[key] == nil then	-- don't replace existing data
+				if SharedKeyWarnings[key] then
+					print(SharedKeyWarnings[key],"[",value,"]")
+				end
 				t[key] = clone(value)
 			-- else
 			-- 	local custom = CustomMergedData[key]
@@ -241,6 +251,11 @@ bubbleDown = function(data, t)
 	end
 	if not t then
 		print("bubbleDown: No Source 't'")
+	end
+	for key,val in pairs(data) do
+		if BubbleDownKeyWarnings[key] then
+			print(BubbleDownKeyWarnings[key],"[",val,"]")
+		end
 	end
 	if t then
 		if t.g or t.groups then
@@ -620,6 +635,10 @@ emov = function(cost, item)								-- Assign a Emblem of Valor cost to an item w
 end
 epicurean = function(cost, item)						-- Assign a Epicurean's Award cost to an item.
 	applycost(item, { "c", 81, cost });
+	return item;
+end
+fbiron = function(cost, item)						-- Assign a Flame-Blessed Iron cost to an item.
+	if cost > 0 then applycost(item, { "c", 3090, cost }); end
 	return item;
 end
 gold = function(cost, item)								-- Assign a Gold cost to an item.

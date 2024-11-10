@@ -1499,7 +1499,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			-- TODO: depending on prevalance of this sort of object/etc. throughout TWW, we may want to consolidate
 			-- providers of these 'light' emitting sources, and use a shortcut to wrap all necessary groups
 			n(TREASURES, sharedData({
-				["description"] = "Requires any 'light' emitting consumable item to be active.",
+				["sharedDescription"] = "Requires any 'light' emitting consumable item to be active.",
 			},{
 				-- requires any 'light' item
 				o(454037, {	-- Stolen Supplies

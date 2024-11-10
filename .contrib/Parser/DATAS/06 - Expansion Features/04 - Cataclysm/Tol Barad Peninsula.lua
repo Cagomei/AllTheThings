@@ -4,7 +4,7 @@
 local function TolBaradDailyQuest(questID, t)
 	local quest = q(questID, t);
 	quest.isDaily = true;
-	
+
 	-- Each daily quest awards a commendation
 	local g = quest.g or quest.groups;
 	if not g then
@@ -12,7 +12,7 @@ local function TolBaradDailyQuest(questID, t)
 		quest.groups = g;
 	end
 	table.insert(g, currency(391));	-- Tol Barad Commendation
-	
+
 	-- Assign the Reputation Requirements
 	t.maxReputation = { t.races == ALLIANCE_ONLY and FACTION_BARADINS_WARDENS or FACTION_HELLSCREAMS_REACH, EXALTED };
 	return t;
@@ -609,7 +609,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 			-- #if AFTER 8.0.3
 			-- CRIEVE NOTE: Not sure we need to describe this.
 			n(QUESTS, sharedData({ -- Questgivers in Tol Barad Peninsula with rotating quests
-				["description"] = "Due to how sharding works, you will usually only get the same eight daily quests from the camp in Tol Barad Peninsula. The trick for having a chance at getting offered some of the other quests in rotation is to have zoned into Tol Barad Peninsula a few minutes before the daily reset occurs. Then you can wait for the daily reset, or leave the zone for up to 15 minutes before returning. Protip: Do the same with Warmode on, which zones you to a different shard. Quests picked up in Warmode can be completed and turned in outside Warmode.",
+				["sharedDescription"] = "Due to how sharding works, you will usually only get the same eight daily quests from the camp in Tol Barad Peninsula. The trick for having a chance at getting offered some of the other quests in rotation is to have zoned into Tol Barad Peninsula a few minutes before the daily reset occurs. Then you can wait for the daily reset, or leave the zone for up to 15 minutes before returning. Protip: Do the same with Warmode on, which zones you to a different shard. Quests picked up in Warmode can be completed and turned in outside Warmode.",
 			},{
 				n(47240), -- Commander Marcus Johnson
 				n(48250), -- Lieutenant Farnsworth

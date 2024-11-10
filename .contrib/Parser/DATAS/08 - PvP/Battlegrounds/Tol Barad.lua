@@ -4,7 +4,7 @@
 local function TolBaradDailyQuest(questID, t)
 	local quest = q(questID, t);
 	if not quest.isWeekly then quest.isDaily = true; end
-	
+
 	-- Each daily quest awards a commendation
 	local g = quest.g or quest.groups;
 	if not g then
@@ -12,7 +12,7 @@ local function TolBaradDailyQuest(questID, t)
 		quest.groups = g;
 	end
 	table.insert(g, currency(391));	-- Tol Barad Commendation
-	
+
 	-- Assign the Reputation Requirements
 	t.maxReputation = { t.races == ALLIANCE_ONLY and FACTION_BARADINS_WARDENS or FACTION_HELLSCREAMS_REACH, EXALTED };
 	return t;
@@ -413,7 +413,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 			})),
 			n(QUESTS, sharedData({ -- Rotating questgivers in Tol Barad
-				["description"] = "This questgiver shares it's spawn with two other quest givers. Win the battle of Tol Barad to have a chance at getting a different questgiver offering other quests in it's place.",
+				["sharedDescription"] = "This questgiver shares it's spawn with two other quest givers. Win the battle of Tol Barad to have a chance at getting a different questgiver offering other quests in it's place.",
 			}, {
 				n(48039), -- Commander Stevens
 				n(48061), -- 2nd Lieutenant Wansworth

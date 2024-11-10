@@ -1930,6 +1930,7 @@ i(233240, 437162);	-- Polly Roger
 i(233242, 254812);	-- Royal Seafeather
 i(223313, 448934);	-- Shadow of Doubt
 i(233243, 300154);	-- Silver Tidestallion
+i(233058, 473137);	-- Soweezi's Vintage Waveshredder
 i(232991, 472752);	-- The Breaker's Song
 i(234721, 1214940);	-- Ur'zul Fleshripper
 --- UNSORTED ---

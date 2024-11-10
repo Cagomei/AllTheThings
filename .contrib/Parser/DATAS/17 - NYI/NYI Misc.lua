@@ -1524,7 +1524,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(217016),	-- Fragmented Medallion of the Darkspear
 			i(217010),	-- Fragmented Medallion of the Draenei
 			i(213540),	-- Ghostly Motes
-			i(211768),	-- Hastily Scrawled Satyr Ravings
 			i(213531),	-- Nether Sands
 			i(223475),	-- Set Keystone Level: 2
 			i(223476),	-- Set Keystone Level: 3

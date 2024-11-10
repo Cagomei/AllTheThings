@@ -63,6 +63,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83537, {	-- Geothermal Gem Treatment
 					["coord"] = { 41.5, 20.3, THE_RINGING_DEEPS },
 				}),
+				q(82238, {	-- Lava Glob Lobbin'
+					["coord"] = { 52.2, 16.7, THE_RINGING_DEEPS },
+				}),
 				q(83079, {	-- Mineral Buildup
 					["coord"] = { 45.8, 42.8, THE_RINGING_DEEPS },
 				}),

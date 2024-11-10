@@ -621,6 +621,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(51443, {	-- Battle For Azeroth: Mission Statement (BfA version)
 					-- available to a level 47, pre-9.0 character during patch 9.0
 					["providers"] = {
+						{ "n", 121210 },	-- Nathanos Blightcaller
 						{ "n", 140176 },	-- Nathanos Blightcaller
 						{ "n", 49750 },	-- Warchief's Herald
 					},
@@ -631,6 +632,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						52428,	-- Infusing the Heart
 					},	--]]
 					["coords"] = {
+						{ 58.0, 62.8, DAZARALOR },	-- Nathanos Blightcaller
 						{ 48.9, 91.4, ORGRIMMAR },	-- Nathanos Blightcaller
 						{ 49.4, 76.6, ORGRIMMAR },	-- Warchief's Herald
 					},

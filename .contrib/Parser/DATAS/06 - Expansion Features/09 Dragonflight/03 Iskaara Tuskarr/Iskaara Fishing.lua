@@ -395,7 +395,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			})),
 			n(RARES, sharedData({
-				["description"] = "Chance to spawn after using 5 |cffffffffOminous Conches|r at specific |cffffffffLarge Lunker Sighting|r Locations.\nWhich Lunker Sighting is up changes every week & if there is no fish icon, the pool is not up and you cannot spawn a Lunker at that location.",
+				["sharedDescription"] = "Chance to spawn after using 5 |cffffffffOminous Conches|r at specific |cffffffffLarge Lunker Sighting|r Locations.\nWhich Lunker Sighting is up changes every week & if there is no fish icon, the pool is not up and you cannot spawn a Lunker at that location.",
 				["cost"] = { { "i", 194701, 5 } },	-- 5x Ominous Conch
 				["isDaily"] = true,
 				["g"] = {
@@ -534,7 +534,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			n(SPECIAL, sharedData({
-				["description"] = "Chance to spawn after using 5 |cffffffffOminous Conches|r at specific |cffffffffLarge Lunker Sighting|r Locations.\nWhich Lunker Sighting is up changes every week & if there is no fish icon, the pool is not up and you cannot spawn a Thresher at that location.",
+				["sharedDescription"] = "Chance to spawn after using 5 |cffffffffOminous Conches|r at specific |cffffffffLarge Lunker Sighting|r Locations.\nWhich Lunker Sighting is up changes every week & if there is no fish icon, the pool is not up and you cannot spawn a Thresher at that location.",
 				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
 			},{
 				n(192919, {	-- Gigantic Thresher <Lunker>

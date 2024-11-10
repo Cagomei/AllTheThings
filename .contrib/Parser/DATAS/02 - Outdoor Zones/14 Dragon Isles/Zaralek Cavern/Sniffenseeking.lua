@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				})),
 				-- Quest Starting Items... apparently random on any digs
 				n(DROPS, sharedData({
-					["description"] = "Randomly available to pick up during a Dig.",
+					["sharedDescription"] = "Randomly available to pick up during a Dig.",
 				},{
 					i(205913),	-- Blank Notebook
 					i(205910),	-- Bubbling Elixir

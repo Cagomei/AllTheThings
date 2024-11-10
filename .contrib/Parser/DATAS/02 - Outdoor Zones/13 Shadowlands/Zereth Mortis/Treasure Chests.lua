@@ -71,7 +71,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["g"] = sharedData({
 					["sourceQuest"] = 65346,	-- Dormant Alcove Arrangement
 					["cost"] = { { "i", 189863, 1 }, },	-- 1 Spatial Opener
-					["description"] = "Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+					["sharedDescription"] = "Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
 					["crs"] = {
 						184329,	-- Locus Shift (Gravid Repose)
 						184485,	-- Locus Shift (Interior)

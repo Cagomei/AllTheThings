@@ -3,7 +3,7 @@
 -------------------------------------------
 root(ROOTS.Character,
 	n(FACTIONS, sharedData({
-		["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
+		["sharedDescription"] = "This is a hidden reputation. It might not count towards reputation achievements.",
 		["collectible"] = false,
 	},{
 		faction(469, {["races"] = ALLIANCE_ONLY}),			-- Alliance

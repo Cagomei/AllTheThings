@@ -60,15 +60,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						}),
 					}),
 					n(VENDORS, {
+						-- #if BEFORE 4.1.0
 						n(52915, {	-- Harald
 							["cost"] = {
 								{ "i", 33865, 1 },	-- Amani Hex Stick
 							},
 							["groups"] = {
 								i(33926, {	-- Sealed Scroll Case
-									["description"] = "Can contain profession recipes."
+									["description"] = "Can contain profession recipes." -- Only applies for the TBC version of Zul'Aman.
 								})
 							},
+						}),
+						-- #endif
+						n(52924, {	-- Vol'jin (Not a Vendor, but a placeholder for information.)
+							["description"] = "To open the gates you have to tell Vol'jin you are ready to open the gates, and then click ONCE on the gong when it becomes interactable. Your character will keep auto-hitting it, and Vol'jin will open the gates.",
 						}),
 					}),
 					n(ZONE_DROPS, {
@@ -151,7 +156,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(69799),	-- Quickfinger Ring
 					}),
 					n(24396, {	-- Forest Frog
-						["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
+						["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags, as well as vendors and bags of gold.",
 						["cost"] = {
 							{ "i", 33865, 1 },	-- Amani Hex Stick
 						},
@@ -200,7 +205,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						},
 					}),
 					n(ZULAMAN_TIMED_EVENT, {
-						["description"] = "Enter the instance and talk to Vol'Jin to start the event and open the doors. You will now have 15 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, but two of them will add extra time to the timer.\n\n    Killing Nalorakk (bear) will add 5 minutes to your timer.\n    Killing Akil'zon (eagle) will add 5 minutes to your timer.\n    Other bosses will not grant additional time.\n\nThe loot from the event is dependent on the number of hostages you rescue.",
+						["description"] = "Enter the instance and talk to Vol'Jin to start the event and open the doors. You will now have 15 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, but two of them will add extra time to the timer.\n\nKilling Nalorakk (bear) will add 5 minutes to your timer.\nKilling Akil'zon (eagle) will add 5 minutes to your timer.\nOther bosses will not grant additional time.\n\nThe loot from the event is dependent on the number of hostages you rescue, and spawns in containers near the hostage's cage upon release.",
 						["groups"] = {
 							n(ZULAMAN_CHEST_1, {
 								i(69886),	-- Bag of Coins
@@ -226,6 +231,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 									i(69747),	-- Amani Battle Bear (MOUNT!)
 								},
 							}),
+						},
+					}),
+					n(ZULAMAN_TIMED_EVENT, {
+						["sharedDescription"] = "Stay with them after their release to get additional loot.",
+						["groups"] = {
+							n(52941), -- Bakkal'zu
+							n(52939), -- Hazlek
+							n(52945), -- Kasha
+							n(52943), -- Norkani
 						},
 					}),
 					e(186, {	-- Akil'zon

@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					ach(18635),	-- Verified Rifter
 				}),
 				n(BOSSES, bubbleDownFiltered({
-					["description"] = "Can drop any Time Rift Vendor Item.",
+					["sharedDescription"] = "Can drop any Time Rift Vendor Item.",
 				}, FILTERFUNC_npcID,{
 					-- testing out organizing with raw NPCs for bosses and nesting under the respective maps where they spawn
 					-- this will allow the achievement criteria to move under the proper bosses instead of being listed separately in lists

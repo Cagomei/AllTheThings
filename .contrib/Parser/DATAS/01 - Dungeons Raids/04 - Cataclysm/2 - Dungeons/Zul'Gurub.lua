@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-CACHE_OF_MADNESS = createHeader({ -- This is the header for the event boss Cache of Madness. 
+CACHE_OF_MADNESS = createHeader({	-- This is the header for the event boss Cache of Madness.
 	readable = "Cache of Madness",
 	icon = 441139,
 	text = {
@@ -779,6 +779,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							i(69640), -- Kilt of Forgotten Rites
 							i(69641), -- Troll Skull Chestplate
 						}),
+					},
+				}),
+				n(CACHE_OF_MADNESS, {
+					["sharedDescription"] = "Not this one.",
+					["groups"] = {
+						n(52449),	-- Ancient Dwarven Artifact
+						n(52451),	-- Ancient Elven Artifact
+						n(52455),	-- Ancient Fossil
+						n(52453),	-- Ancient Troll Artifact
+					},
+				}),
+				n(CACHE_OF_MADNESS, {
+					["sharedDescription"] = "This one!",
+					["groups"] = {
+						n(52446),	-- Ancient Dwarven Artifact
+						n(52450),	-- Ancient Elven Artifact
+						n(52454),	-- Ancient Fossil
+						n(52452),	-- Ancient Troll Artifact
 					},
 				}),
 				e(181, {	-- High Priestess Kilnara

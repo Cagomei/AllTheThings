@@ -674,14 +674,14 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 		}),
 		n(VENDORS, {
 			-- Big list of items from multiple vendors.. feels messy doing it like this
+			-- TODO: think we have better tech now to consolidate all this somehow, look into this...
 			n(165840, {	-- Quartermaster Lungren
 				["coord"] = { 53.1, 76.9, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = bubbleDown({
 					["cost"] = { { "c", 1754, 15 } },	-- Argent Commendation
-					["description"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
-					}, 
-					{
+					["sharedDescription"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
+				},{
 					i(183552, {	-- Argent Conscript's Drape
 						["classes"] = { MAGE, PRIEST, WARLOCK },
 					}),
@@ -729,7 +729,6 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 					i(180454),	-- Anti-Doom Broom
 					i(183621, {	-- Putrid Geist (PET!)
 						["cost"] = { { "c", 1754, 20 } },
-						["description"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
 					}),
 				}),
 			}),
@@ -737,9 +736,8 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 71.04, 21.66, ICECROWN },
 				["groups"] = bubbleDown({
 					["cost"] = { { "c", 1754, 15 } },	-- Argent Commendation
-					["description"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
-					}, 
-					{
+					["sharedDescription"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
+				},{
 					-- Alliance items
 					i(183524, {	-- Argent Conscript's Drape
 						["classes"] = { MAGE, PRIEST, WARLOCK },
@@ -834,7 +832,6 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 					i(180454),	-- Anti-Doom Broom
 					i(183621, {	-- Putrid Geist (PET!)
 						["cost"] = { { "c", 1754, 20 } },
-						["description"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
 					}),
 				}),
 			}),
@@ -843,9 +840,8 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = bubbleDown({
 					["cost"] = { { "c", 1754, 15 } },	-- Argent Commendation
-					["description"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
-					}, 
-					{
+					["sharedDescription"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
+				},{
 					i(183524, {	-- Argent Conscript's Drape
 						["classes"] = { MAGE, PRIEST, WARLOCK },
 					}),
@@ -901,10 +897,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 69.4, 23.3, ICECROWN },
 				["groups"] = bubbleDown({
 					["cost"] = { { "c", 1754, 15 } },	-- Argent Commendation
-					["description"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
-					}, 
-					{
-				-- Alliance items
+					["sharedDescription"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
+				},{
+					-- Alliance items
 					i(183524, {	-- Argent Conscript's Drape
 						["classes"] = { MAGE, PRIEST, WARLOCK },
 					}),
@@ -998,7 +993,6 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 					i(180454),	-- Anti-Doom Broom
 					i(183621, {	-- Putrid Geist (PET!)
 						["cost"] = { { "c", 1754, 20 } },	-- 20x Argent Commendation
-						["description"] = "While available on the vendor, the currency required to buy the item is unobtainable.",
 					}),
 				}),
 			}),

@@ -216,7 +216,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							{ 66.3, 69.9, STORMSONG_VALLEY },
 							{ 72.3, 52.2, STORMSONG_VALLEY },
 						},
-						["description"] = "This Rare has a chance to spawn during the Honeyback Harvester Event on either Wave 4, 9, 14, 19 and so on.",
+						["sharedDescription"] = "This Rare has a chance to spawn during the Honeyback Harvester Event on either Wave 4, 9, 14, 19 and so on.",
 					}, {
 						n(155055, {	-- Gurg the Hivethief
 							["groups"] = {

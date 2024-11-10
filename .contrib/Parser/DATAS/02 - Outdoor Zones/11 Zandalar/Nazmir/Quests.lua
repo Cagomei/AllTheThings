@@ -1429,7 +1429,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52477, {	-- WANTED: Ayame (H)
-				["provider"] = { "n", 131987 },	-- Crez
+				["provider"] = { "o", 293567 },	-- Wanted Poster
 				["coord"] = { 67.2, 40.8, NAZMIR },
 				["races"] = HORDE_ONLY,
 			}),

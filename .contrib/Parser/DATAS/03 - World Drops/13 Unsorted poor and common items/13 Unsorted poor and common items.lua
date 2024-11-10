@@ -7,7 +7,7 @@
 -- DO NOT REMOVE OR I WILL FIND YOU! -Darkal
 
 -- #if NOT ANYCLASSIC
-root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"] = "This item is currently in a temporary group of unsorted items under World Drops. It will be sorted soon.\nYou don't need to report this." }, {
+root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["sharedDescription"] = "This item is currently in a temporary group of unsorted items under World Drops. It will be sorted soon.\nYou don't need to report this." }, {
 	-- I AM HIDING THIS FOR NOW -Darkal
 	--[[
 	n(QUALITY_POOR, {
@@ -26,7 +26,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				-- The Burning Crusade
 				-- CRIEVE NOTE: This one is actually NYI, as far as I can tell:
 				i(28408),	-- Broken Silver Star
-				
+
 				-- CRIEVE NOTE: The following are common vendor items:
 				i(25872),	-- Balanced Throwing Dagger
 				i(29014),	-- Blacksteel Throwing Dagger
@@ -56,14 +56,14 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(73412),	-- Cataclysmic Gladiator's War Edge
 				i(73471),	-- Cataclysmic Gladiator's Hatchet
 				i(73445),	-- Cataclysmic Gladiator's War Edge
-				
+
 				-- CRIEVE NOTE: Vendor item from the Lost Isles (Brett "Coins" McQuid)
 				i(49258),	-- Light Throwing Tusk
 				i(49257),	-- Seashell Throwing Axe
-				
+
 				-- Regular vendor throwing weapons
 				i(25877),	-- Master's Throwing Dagger
-				
+
 				-- These are all Heroic/Raid Finder versions of Valor Point Vendor items that never were implemented?
 				i(78558),	-- Darting Chakram [Heroic - NYI]
 				i(78638),	-- Darting Chakram [Raid Finder - NYI]

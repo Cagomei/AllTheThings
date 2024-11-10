@@ -18,7 +18,7 @@ root(ROOTS.Promotions, n(HEROES_OF_THE_STORM, {
 		}),
 		n(REWARDS, bubbleDown({
 			["u"] = REAL_MONEY,
-			["description"] = "Obtained by playing Heroes of the Storm and reaching level 20.",
+			["sharedDescription"] = "Obtained by playing Heroes of the Storm and reaching level 20.",
 			["timeline"] = { ADDED_6_1_2 },
 		}, {
 			ach(9926),	-- Hero of the Storm
@@ -26,7 +26,7 @@ root(ROOTS.Promotions, n(HEROES_OF_THE_STORM, {
 		})),
 		n(REWARDS, bubbleDown({
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "Obtained by winning 15 games of Heroes of the Storm.\n\nSadly, this is no longer available.",
+			["sharedDescription"] = "Obtained by winning 15 games of Heroes of the Storm.\n\nSadly, this is no longer available.",
 			["timeline"] = { ADDED_7_2_0 },
 		}, {
 			ach(11425),	-- Herald of Flames
