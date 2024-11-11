@@ -532,6 +532,138 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				}),
 			}),
 		}),
+		header(HEADERS.Achievement, 40791, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {	-- Fate of the Kirin Tor
+			header(HEADERS.AchCriteria, 40791.01, {	-- Arcane Desolation
+				q(84223, {	-- Survivor's Guilt
+					--["sourceQuests"] = { ??? },	-- ???
+					["provider"] = { "n", 227436 },	-- Archmage Khadgar
+					["coord"] = { 42.5, 27.1, DORNOGAL },
+					--["g"] = {
+					--	spell(458818),	-- Title: Witness of the Kirin Tor
+					--},
+				}),
+				q(83031, {	-- The Hardest Part
+					["sourceQuests"] = { 84223 },	-- Survivor's Guilt
+					["provider"] = { "n", 225355 },	-- Archmage Aethas Sunreaver
+					["coord"] = { 29.5, 58.1, ISLE_OF_DORN },
+				}),
+				q(83499, {	-- Arcane Wasteland
+					["sourceQuests"] = { 83031 },	-- The Hardest Part
+					["provider"] = { "n", 225355 },	-- Archmage Aethas Sunreaver
+					["coord"] = { 29.5, 58.1, ISLE_OF_DORN },
+					["g"] = {
+						i(225662), -- Arcane Dust (QI!)
+						i(225895), -- Frostfire Essence (QI!)
+						o(454205, { -- Radiant Prism Crystals
+							i(225663), -- Radiant Prism Crystals (QI!)
+						}), 
+					},
+				}),
+				q(83502, {	-- Lessons in Defensive Magic
+					["sourceQuests"] = { 83499 },	-- Arcane Wasteland
+					["provider"] = { "n", 225355 },	-- Archmage Aethas Sunreaver
+					["coord"] = { 29.5, 58.1, ISLE_OF_DORN },
+				}),
+				q(83539, {	-- Feeling Blue
+					["sourceQuests"] = { 83502 },	-- Lessons in Defensive Magic
+					["provider"] = { "n", 226895 },	-- Archmage Aethas Sunreaver
+					["coord"] = { 29.7, 57.9, ISLE_OF_DORN },
+					--["g"] = {
+					--	this quest unlock flypoint
+					--	n: 227029 (Flying Carpet) @ 29.7, 58.3
+					--	FlightPath Tranquil Strand, Isle of Dorn # 2970
+					--},
+				}),
+				q(83553, {	-- Magic-stealing Kobolds
+					["sourceQuests"] = { 83539 },	-- Feeling Blue
+					["provider"] = { "n", 227067 },	-- Kalecgos
+					["coord"] = { 29.7, 57.8, ISLE_OF_DORN },
+				}),
+				q(83554, {	-- Trinkets, Curios and Other Powerful Objects
+					["sourceQuests"] = { 83553 },	-- Magic-stealing Kobolds
+					["provider"] = { "n", 227067 },	-- Kalecgos
+					["coord"] = { 61.7, 41.5, ISLE_OF_DORN },
+					["g"] = {
+						i(225920), -- Stolen Kirin Tor Artifacts (QI!)
+						o(454707, { -- Bag of Stolen Goods
+							i(226162), -- Arcane Manuscript (QI!)
+						}),
+					},
+				}),
+				q(83555, {	-- Mysterious Necklace
+					["sourceQuests"] = { 83553 },	-- Magic-stealing Kobolds
+					["provider"] = { "n", 228520 },	-- Kobold Thief
+					["coord"] = { 62.1, 41.6, ISLE_OF_DORN },
+				}),
+				q(83556, {	-- Maybe You Shouldn't Touch That
+					["sourceQuests"] = {
+						83555,	-- Mysterious Necklace
+						83554,	-- Trinkets, Curios and Other Powerful Objects
+					},
+					["provider"] = { "n", 227375 },	-- Kalecgos
+					["coord"] = { 61.5, 42.8, ISLE_OF_DORN },
+				}),
+				q(83641, {	-- Trapped Between Life and Death
+					["sourceQuests"] = { 83553 },	-- Maybe You Shouldn't Touch That
+					["provider"] = { "n", 227208 },	-- Kalecgos
+					--["coord"] = { ??, ??, ISLE_OF_DORN },
+				}),
+				q(83643, {	-- Somehow We Survived
+					["sourceQuests"] = { 83641 },	-- Trapped Between Life and Death
+					["provider"] = { "n", 227392 },	-- Kalecgos
+					--["coord"] = { ??, ??, ISLE_OF_DORN },
+				}),
+			}),
+			header(HEADERS.AchCriteria, 40791.02, {	-- Strength Amidst Ruins
+				q(83723, {	-- A Helping Hand
+					["sourceQuests"] = { 83643 },	-- Somehow We Survived
+					["provider"] = { "n", 212829 },	-- Lady Jaina Proudmoore
+					["coord"] = { 30.9, 57.7, ISLE_OF_DORN },
+				}),
+				q(83743, {	-- Arcane Cold War
+					["sourceQuests"] = { 83723 },	-- A Helping Hand
+					["provider"] = { "n", 227409 },	-- Lady Jaina Proudmoore
+					["coord"] = { 29.8, 57.8, ISLE_OF_DORN },
+				}),
+				q(83762, {	-- Critical Mass
+					["sourceQuests"] = { 83743 },	-- Arcane Cold War
+					["provider"] = { "n", 227529 },	-- Lady Jaina Proudmoore
+					["coord"] = { 35.2, 53.1, AZJ_KAHET },
+				}),
+				q(83763, {	-- Preserve the Legacy
+					["sourceQuests"] = { 83762 },	-- Critical Mass
+					["provider"] = { "n", 229763 },	-- Lady Jaina Proudmoore
+					["coord"] = { 35.5, 52.4, AZJ_KAHET },
+					["g"] = {
+						o(465294, { -- Antonidas' Introduction to Arcane Magic
+							i(228820), -- Antonidas' Introduction to Arcane Magic (QI!)
+						}),
+						o(465295, { -- Medivh's Karazhan Schematics
+							i(228821), -- Medivh's Karazhan Schematics (QI!)
+						}),
+						o(465300, { -- Thalen Songweaver's Notes
+							i(228823), -- Thalen Songweaver's Notes (QI!)
+						}),
+					},
+				}),
+				q(83764, {	-- Too Powerful, Too Dangerous
+					["sourceQuests"] = { 83762 },	-- Critical Mass
+					["provider"] = { "n", 229763 },	-- Lady Jaina Proudmoore
+					["coord"] = { 35.5, 52.4, AZJ_KAHET },
+				}),
+				q(83773, {	-- Farewell, City of Magic
+					["sourceQuests"] = {
+						83763,	-- Preserve the Legacy
+						83764,	-- Too Powerful, Too Dangerous
+					},
+					["provider"] = { "n", 227436 },	-- Archmage Khadgar
+					["coord"] = { 31.4, 50.9, ISLE_OF_DORN },
+					--["g"] = {
+					--	should be title
+					--},
+				}),
+			}),
+		})),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {

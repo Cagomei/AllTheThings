@@ -43,6 +43,9 @@ root(ROOTS.Zones, {
 				q(31055, {    -- Between a Saurok and a Hard Place
 					["provider"] = { "i", 83769 },    -- Between a Saurok and a Hard Place
 					["description"] = "This will be mailed to you upon completion of Between a Saurok and a Hard Place achievement.",
+					["g"] = {
+						i(83076),	-- Between a Saurok and a Hard Place (QI!)
+					},
 				}),
 				q(31094, {    -- Fish Tales
 					["provider"] = { "i", 83771 },    -- Fish Tales

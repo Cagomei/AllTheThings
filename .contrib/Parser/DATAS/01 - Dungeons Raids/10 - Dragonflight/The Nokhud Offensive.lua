@@ -159,11 +159,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			n(MYTHIC_PLUS, bubbleDownSelf({
-				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
-			},{
-				i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor (RECIPE!)
-			})),
 		},
 	})
 })));

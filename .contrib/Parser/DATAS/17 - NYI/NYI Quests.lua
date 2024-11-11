@@ -5473,7 +5473,11 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		-- 8.3.0
 		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
 			q(58801),	-- Enter the Void
-			q(58904),	-- Shards of Corruption
+			q(58904, {	-- Shards of Corruption
+				["g"] = {
+					i(174867),	-- Shard of Corruption (QI!)
+				},
+			}),
 			q(57112),	-- Test Shared Quest
 			q(60185),	-- LFGDungeons - BFA - Ny'alotha Raid Finder - 1st
 			q(58707),	-- Sorting Through Visions

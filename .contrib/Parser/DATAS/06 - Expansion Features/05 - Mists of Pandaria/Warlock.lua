@@ -55,12 +55,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						{ 50.2, 6.8, IRONFORGE },
 					},
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(83078),	-- Legacy of the Masters (Part 1)
+					},
 				}),
 				q(32309, {	-- A Tale of Six Masters (H)
 					["sourceQuests"] = { 32307 },	-- Reader for the Dead Tongue
 					["qg"] = 88705,	-- Kranosh
 					["coord"] = { 53.8, 35.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(83078),	-- Legacy of the Masters (Part 1)
+					},
 				}),
 				q(32317, {	-- Seeking the Soulstones
 					["sourceQuests"] = {

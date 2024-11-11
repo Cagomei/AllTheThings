@@ -267,6 +267,11 @@ namespace ATT
         private static long NestedDifficultyID { get; set; }
 
         /// <summary>
+        /// Represents the nested HeaderID currently being processed
+        /// </summary>
+        private static long NestedHeaderID { get; set; }
+
+        /// <summary>
         /// Represents the nested ModID currently being processed
         /// </summary>
         private static long NestedModID { get; set; }

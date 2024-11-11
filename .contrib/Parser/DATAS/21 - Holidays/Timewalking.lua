@@ -652,6 +652,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 							97555,	-- Tiny Fel Engine Key
 						}},
 						["groups"] = {
+							i(150774),	-- Timewarped Illidari Battleplans (QI!)
 						-- Can also contain any item from BT
 							i(32458),	-- Ashes of Al'ar (MOUNT!)
 							i(133543),	-- Infinite Timereaver (MOUNT!)
@@ -1849,6 +1850,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 				["isWeekly"] = true,
 				["timeline"] = { ADDED_7_3_5 },
 				["g"] = {
+					i(157030),	-- Titan Prison Fragment (QI!)
 					i(208094, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (WOTLK)
 						["description"] = "This bag contains an item from Ulduar or an item from the WoW's 15th Birthday Event Bosses Anub, Lich King or Heigan.\nThe droprate for the mounts seems rather high (5-10%).", -- Might have been removed in 10.2.7 as a pouch dropped instead for me
 						["sym"] = {{"select","itemID",

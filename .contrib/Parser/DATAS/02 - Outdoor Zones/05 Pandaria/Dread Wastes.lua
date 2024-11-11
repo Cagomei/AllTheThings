@@ -220,6 +220,10 @@ root(ROOTS.Zones, {
 							31092,	-- Feed or Be Eaten
 							31359,	-- The Kunchong Whisperer
 						},
+						["g"] = {
+							i(85885),	-- Amber-Encrusted Brain (QI!)
+							i(85884),	-- Sonic Emitter (QI!)
+						},
 					}),
 					q(31730, {	-- A Not So Friendly Request
 						["coord"] = { 55.0, 35.8, DREAD_WASTES },
@@ -312,6 +316,9 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["provider"] = { "n", 62180 },	-- Korven the Prime
 						["sourceQuest"] = 31026,	-- The Root of the Problem
+						["g"] = {
+							i(85634),	-- Gurthani Tablet (QI!)
+						},
 					}),
 					q(31676, {	-- Ancient Vengeance
 						["coord"] = { 70.1, 25.6, DREAD_WASTES },
@@ -413,6 +420,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							31092,	-- Feed or Be Eaten
 							31359,	-- The Kunchong Whisperer
+						},
+						["g"] = {
+							i(85665),	-- Mushan Tongue (QI!)
 						},
 					}),
 					q(31682, {	-- By the Sea, Nevermore
@@ -594,6 +604,9 @@ root(ROOTS.Zones, {
 						["altQuests"] = { 31679 },	-- Extending Our Coverage
 						["sourceQuest"] = 31066,	-- A Cry From Darkness
 						["description"] = "This version is available if Kor'ik has not been killed yet.",
+						["g"] = {
+							i(86009),	-- Resonating Crystal (QI!)
+						},
 					}),
 					q(31679, {	-- Extending Our Coverage
 						["coord"] = { 48.0, 49.6, DREAD_WASTES },
@@ -601,6 +614,9 @@ root(ROOTS.Zones, {
 						["altQuests"] = { 31087 },	-- Extending Our Coverage
 						["sourceQuest"] = 31441,	-- Corruption Runs Deep
 						["description"] = "This version is available if Kor'ik has been killed.",
+						["g"] = {
+							i(86009),	-- Resonating Crystal (QI!)
+						},
 					}),
 					q(31465, {	-- Extracting Answers
 						["coord"] = { 56.2, 58.2, DREAD_WASTES },
@@ -842,6 +858,9 @@ root(ROOTS.Zones, {
 							31092,	-- Feed or Be Eaten
 							31359,	-- The Kunchong Whisperer
 						},
+						["g"] = {
+							i(82869),	-- Meaty Turtle Haunch (QI!)
+						},
 					}),
 					q(31598, {	-- Kypa'rak's Core
 						["cr"] = 65229,	-- Kypa'rak
@@ -902,6 +921,9 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["provider"] = { "n", 62180 },	-- Korven the Prime
 						["sourceQuest"] = 31026,	-- The Root of the Problem
+						["g"]  = {
+							i(87841),	-- Korven's Experimental Grenades (QI!)
+						},
 					}),
 					q(31267, {	-- Mistblade Destruction
 						["coord"] = { 55.0, 35.8, DREAD_WASTES },
@@ -1035,6 +1057,9 @@ root(ROOTS.Zones, {
 							{ "n", 63072 },	-- Rik'kal the Dissector
 							{ "n", 67091 },	-- Rik'kal the Dissector
 						},
+						["g"] = {
+							i(85635),	-- Pristine Mire Beast Eye (QI!)
+						},
 					}),
 					q(31510, {	-- Quiet Now
 						["coord"] = { 54.8, 36.2, DREAD_WASTES },
@@ -1136,18 +1161,27 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["provider"] = { "n", 62180 },	-- Korven the Prime
 						["sourceQuest"] = 31026,	-- The Root of the Problem
+						["g"] = {
+							i(87400),	-- Sap Jar (QI!)
+						},
 					}),
 					q(31233, {	-- Sap Tapping
 						["coord"] = { 54.3, 36.0, DREAD_WASTES },
 						["isDaily"] = true,
 						["provider"] = { "n", 62180 },	-- Korven the Prime
 						["sourceQuest"] = 31026,	-- The Root of the Problem
+						["g"] = {
+							i(85664),	-- Amber Sap (QI!)
+						},
 					}),
 					q(31603, {	-- Seeds of Fear
 						["coord"] = { 55.0, 35.6, DREAD_WASTES },
 						["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 						["repeatable"] = true,
 						["sourceQuest"] = 31108,	-- Concentrated Fear
+						["g"] = {
+							i(87903),	-- Dread Amber Shards (QI!)
+						},
 					}),
 					q(31506, {	-- Shackles of Manipulation
 						["coord"] = { 54.3, 35.8, DREAD_WASTES },
@@ -1156,6 +1190,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							31092,	-- Feed or Be Eaten
 							31359,	-- The Kunchong Whisperer
+						},
+						["g"] = {
+							i(87813),	-- Zan'thik Shackles (QI!)
 						},
 					}),
 					q(31612, {	-- Shadow of the Empire
@@ -1210,6 +1247,9 @@ root(ROOTS.Zones, {
 							31092,	-- Feed or Be Eaten
 							31359,	-- The Kunchong Whisperer
 						},
+						["g"] = {
+							i(87394),	-- Sonic Disruption Fork (QI!)
+						},
 					}),
 					q(31508, {	-- Specimen Request
 						["coord"] = { 54.4, 35.9, DREAD_WASTES },
@@ -1218,6 +1258,9 @@ root(ROOTS.Zones, {
 						["providers"] = {
 							{ "n", 63072 },	-- Rik'kal the Dissector
 							{ "n", 67091 },	-- Rik'kal the Dissector
+						},
+						["g"] = {
+							i(87874),	-- Kyparite Shards (QI!)
 						},
 					}),
 					q(31075, {	-- Sunset Kings
@@ -1443,6 +1486,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 63317 },	-- Captain "Soggy" Su-Dao
 						["sourceQuest"] = 31183,	-- Meet the Cap'n
 						["g"] = {
+							i(85955),	-- Dog's Whistle (QI!)
 							i(84010),	-- Motherseed Leggings
 							i(84011),	-- Sapfly Legguards
 							i(84012),	-- Withered Wood Kilt
@@ -1469,6 +1513,9 @@ root(ROOTS.Zones, {
 						["providers"] = {
 							{ "n", 63072 },	-- Rik'kal the Dissector
 							{ "n", 67091 },	-- Rik'kal the Dissector
+						},
+						["g"] = {
+							i(87401),	-- Needler Wings (QI!)
 						},
 					}),
 					q(31074, {	-- Wood and Shade

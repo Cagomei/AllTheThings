@@ -33,90 +33,44 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17213, {	-- Defense Protocol Alpha: Utgarde Keep
 					crit(57666, {	-- Prince Keleseth
-						["_encounter"] = { 638, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39345),	-- Girdle of the Ascended Phantom
-							i(39379),	-- Spectral Rider's Girdle
-							i(39392),	-- Veiled Amulet of Life
-						},
+						["_encounter"] = { 638, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57665, {	-- Skarvald the Constructor
-						["_encounter"] = { 639, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39309),	-- Leggings of the Instructor
-							i(39344),	-- Slayer of the Lifeless
-							i(39369),	-- Sabatons of Deathlike Gloom
-						},
+						["_encounter"] = { 639, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57667, {	-- Dalronn the Controller
-						["_encounter"] = { 639, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 639, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57668, {	-- Ingvar the Plunderer
-						["_encounter"] = { 640, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(40519),	-- Footsteps of Malygos
-							i(40474),	-- Surge Needle Ring
-							i(39424),	-- The Soulblade
-							i(40616),	-- Helm of the Lost Conqueror
-							i(40617),	-- Helm of the Lost Protector
-							i(40618),	-- Helm of the Lost Vanquisher
-							i(40622),	-- Spaulders of the Lost Conqueror
-							i(40623),	-- Spaulders of the Lost Protector
-							i(40624),	-- Spaulders of the Lost Vanquisher
-							i(40619),	-- Leggings of the Lost Conqueror
-							i(40620),	-- Leggings of the Lost Protector
-							i(40621),	-- Leggings of the Lost Vanquisher
-						},
+						["_encounter"] = { 640, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18590, {	-- Defense Protocol Beta: Utgarde Keep
 					crit(60571, {	-- Prince Keleseth
-						["_encounter"] = { 638, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45378),	-- Boots of the Petrified Forest
-						},
+						["_encounter"] = { 638, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60570, {	-- Skarvald the Constructor
-						["_encounter"] = { 639, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45322),	-- Cloak of the Iron Council
-							i(45329),	-- Circlet of True Sight
-						},
+						["_encounter"] = { 639, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60572, {	-- Dalronn the Controller
-						["_encounter"] = { 639, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 639, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60573, {	-- Ingvar the Plunderer
-						["_encounter"] = { 640, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							currency(SIDEREAL_ESSENCE),
-							i(45330),	-- Greaves of Iron Intensity
-							i(45418),	-- Lady Maye's Sapphire Ring
-							i(45324),	-- Leggings of Swift Reflexes
-						},
+						["_encounter"] = { 640, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19427, {	-- Defense Protocol Gamma: Utgarde Keep
 					crit(63319, {	-- Prince Keleseth
-						["_encounter"] = { 638, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 638, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63318, {	-- Skarvald the Constructor
-						["_encounter"] = { 639, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 639, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63321, {	-- Dalronn the Controller
-						["_encounter"] = { 639, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 639, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63320, {	-- Ingvar the Plunderer
-						["_encounter"] = { 640, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 640, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
@@ -439,6 +393,99 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(392430, 412770, 424194),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(638, {	-- Prince Keleseth <The San'layn>
+						["creatureID"] = 23953,	-- Prince Keleseth <The San'layn>
+						["groups"] = {
+							i(39345),	-- Girdle of the Ascended Phantom
+							i(39379),	-- Spectral Rider's Girdle
+							i(39392),	-- Veiled Amulet of Life
+						},
+					}),
+					e(639, {	-- Skarvald the Constructor and Dalronn the Controller
+						["crs"] = {
+							24200,	-- Skarvald the Constructor
+							24201,	-- Dalronn the Controller
+						},
+						["groups"] = {
+							i(39309),	-- Leggings of the Instructor
+							i(39344),	-- Slayer of the Lifeless
+							i(39369),	-- Sabatons of Deathlike Gloom
+						},
+					}),
+					e(640, {	-- Ingvar the Plunderer
+						["creatureID"] = 23954,	-- Ingvar the Plunderer
+						["groups"] = {
+							i(40519),	-- Footsteps of Malygos
+							i(40474),	-- Surge Needle Ring
+							i(39424),	-- The Soulblade
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(412770, 424194),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(638, {	-- Prince Keleseth <The San'layn>
+						["creatureID"] = 23953,	-- Prince Keleseth <The San'layn>
+						["groups"] = {
+							i(45333),	-- Belt of the Iron Servant
+							i(45378),	-- Boots of the Petrified Forest
+						},
+					}),
+					e(639, {	-- Skarvald the Constructor and Dalronn the Controller
+						["crs"] = {
+							24200,	-- Skarvald the Constructor
+							24201,	-- Dalronn the Controller
+						},
+						["groups"] = {
+							i(45322),	-- Cloak of the Iron Council
+							i(45329),	-- Circlet of True Sight
+						},
+					}),
+					e(640, {	-- Ingvar the Plunderer
+						["creatureID"] = 23954,	-- Ingvar the Plunderer
+						["groups"] = {
+							i(45330),	-- Greaves of Iron Intensity
+							i(45418),	-- Lady Maye's Sapphire Ring
+							i(45324),	-- Leggings of Swift Reflexes
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424194),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(638, {	-- Prince Keleseth <The San'layn>
+						["creatureID"] = 23953,	-- Prince Keleseth <The San'layn>
+						["groups"] = {
+							
+						},
+					}),
+					e(639, {	-- Skarvald the Constructor and Dalronn the Controller
+						["crs"] = {
+							24200,	-- Skarvald the Constructor
+							24201,	-- Dalronn the Controller
+						},
+						["groups"] = {
+							
+						},
+					}),
+					e(640, {	-- Ingvar the Plunderer
+						["creatureID"] = 23954,	-- Ingvar the Plunderer
+						["groups"] = {
+							
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 })));

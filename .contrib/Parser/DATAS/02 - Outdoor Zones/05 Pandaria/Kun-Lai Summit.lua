@@ -494,6 +494,7 @@ root(ROOTS.Zones, {
 							o(211023, {	-- Cast Iron Pot
 								i(80230),	-- Cast Iron Pot (QI!)
 							}),
+							i(88398),	-- Root Veggie Stew
 						},
 					}),
 					q(30746, {	-- A Fair Trade
@@ -743,6 +744,9 @@ root(ROOTS.Zones, {
 							30599,	-- A Monkey Idol
 							30604,	-- Breaking Broketooth
 							30600,	-- No Pack Left Behind
+						},
+						["g"] = {
+							i(88379),	-- Grummlecake
 						},
 					}),
 					q(30807, {	-- By the Falls, For the Fallen
@@ -1245,6 +1249,7 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = {
 							i(80307),	-- Grummlepack (QI!)
+							i(88397),	-- Grummlepack
 						},
 					}),
 					q(30750, {	-- Off the Wall!
@@ -1599,6 +1604,9 @@ root(ROOTS.Zones, {
 					q(30592, {	-- The Burlap Trail: To Burlap Waystation
 						["coord"] = { 58.0, 61.4, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59701 },	-- Brother Lintpocket
+						["g"] = {
+							i(88384),	-- Burlap Ritual Bag
+						},
 					}),
 					q(30692, {	-- The Burlap Trail: To Kota Basecamp
 						["coord"] = { 51.6, 67.8, KUN_LAI_SUMMIT },
@@ -1657,6 +1665,9 @@ root(ROOTS.Zones, {
 						["cr"] = 59335,	-- Burilgi Despoiler
 						["coord"] = { 70.3, 71.9, KUN_LAI_SUMMIT },
 						["provider"] = { "i", 80241 },	-- Muskpaw's Keepsake
+						["g"] = {
+							i(80241),	-- Muskpaw's Keepsake (QI!)
+						},
 					}),
 					q(30612, {	-- The Leader Hozen
 						["coord"] = { 45.9, 64.0, KUN_LAI_SUMMIT },
@@ -1831,6 +1842,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60785 },	-- Sage Liao
 						["sourceQuest"] = 30794,	-- Emergency Care
+						["g"] = {
+							i(80907),	-- Opalescent Blue Crab Shell (QI!)
+							i(81261),	-- Stolen Pandaren Spices (QI!)
+						},
 					}),
 					q(30281, {	-- The Silent Approach
 						["coord"] = { 55.2, 92.0, KUN_LAI_SUMMIT },
@@ -2172,6 +2187,9 @@ root(ROOTS.Zones, {
 							{ 44.8, 63.6, KUN_LAI_SUMMIT },
 							{ 47.2, 63.0, KUN_LAI_SUMMIT },
 							{ 46.2, 61.5, KUN_LAI_SUMMIT },
+						},
+						["g"] = {
+							i(86592),	-- Hozen Peace Pipe
 						},
 					}),
 					n(50733, {	-- Ski'thik

@@ -82,6 +82,8 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 54568 },	-- Ji Firepaw
 						["sourceQuests"] = { 29417 },	-- The Way of the Huojin
 						["g"] = {
+							i(72112),	-- Fluttering Breeze (QI!)
+							i(72109),	-- Wind Stone (QI!)
 							i(131906, {	-- Initiate's Boots
 								["timeline"] = { ADDED_7_0_3 },
 							}),
@@ -93,6 +95,9 @@ root(ROOTS.Zones, {
 					q(29676, {	-- Finding an Old Friend
 						["provider"] = { "n", 54975 },	-- Aysa Cloudsinger
 						["sourceQuests"] = { 29661, 29663 },	-- The Lesson of Dry Fur, The Lesson of the Balanced Rock
+						["g"] = {
+							i(73183),	-- Snowblossom Petals (QI!)
+						},
 					}),
 					q(29665, {	-- From Bad to Worse
 						["provider"] = { "n", 55940 },	-- Jojo Ironbrow
@@ -101,14 +106,23 @@ root(ROOTS.Zones, {
 					q(30590, {	-- Handle With Care
 						["provider"] = { "n", 60055 },	-- Makael Bay
 						["sourceQuests"] = { 30589 },	-- Wrecking the Wreck
+						["g"] = {
+							i(74955),	-- Packed Explosion Charge (QI!)
+						},
 					}),
 					q(29422, {	-- Huo, the Spirit of Fire
 						["provider"] = { "n", 54135 },	-- Master Li Fei
 						["sourceQuests"] = { 29421 },	-- Only the Worthy Shall Pass
+						["g"] = {
+							i(72583),	-- Huo's Offerings (QI!)
+						},
 					}),
 					q(29424, {	-- Items of Utmost Importance
 						["provider"] = { "n", 54943 },	-- Merchant Lorvo
 						["sourceQuests"] = { 29410 },	-- Aysa of the Ushui
+						["g"] = {
+							i(72071),	-- Stolen Training Supplies (QI!)
+						},
 					}),
 					q(29522, {	-- Ji of the Huojin
 						["provider"] = { "n", 54608 },	-- Master Shang Xi
@@ -117,15 +131,22 @@ root(ROOTS.Zones, {
 					q(29418, {	-- Kindling the Fire
 						["provider"] = { "n", 54568 },	-- Ji Firepaw
 						["sourceQuests"] = { 29417 },	-- The Way of the Huojin
+						["g"] = {
+							i(72111),	-- Dry Dogwood Root (QI!)
+						},
 					}),
 					q(29797, {	-- Medical Supplies
 						["provider"] = { "n", 55944 },	-- Delora Lionheart
 						["sourceQuests"] = { 29796 },	-- Urgent News
+						["g"] = {
+							i(74958),	-- Alliance Medical Supplies (QI!)
+						},
 					}),
 					q(29768, {	-- Missing Mallet
 						["provider"] = { "n", 55477 },	-- Ji Firepaw
 						["sourceQuests"] = { 29769 },	-- Rascals
 						["g"] = {
+							i(74298),	-- Dai-Lo Recess Mallet (QI!)
 							i(74585),	-- Dancing Boots
 							i(131912, {	-- Ringing Boots
 								["timeline"] = { ADDED_7_0_3 },
@@ -137,6 +158,9 @@ root(ROOTS.Zones, {
 					q(29781, {	-- Monkey Advisory Warning
 						["provider"] = { "n", 55583 },	-- Ji Firepaw
 						["sourceQuests"] = { 29778 },	-- Rewritten Wisdoms
+						["g"] = {
+							i(74631),	-- Stolen Firework Bundle (QI!)
+						},
 					}),
 					q(29776, {	-- Morning Breeze Village
 						["provider"] = { "n", 54786 },	-- Master Shang Xi
@@ -222,15 +246,24 @@ root(ROOTS.Zones, {
 					q(29678, {	-- Shu, the Spirit of Water
 						["provider"] = { "n", 55020 },	-- Old Man Liang
 						["sourceQuests"] = { 29666, 29677 },	-- The Sting of Learning, The Sun Pearl
+						["g"] = {
+							i(73791),	-- Sun Pearl (QI!)
+						},
 					}),
 					q(29789, {	-- Small, But Significant
 						["provider"] = { "n", 55672 },	-- Master Shang Xi
 						["sourceQuests"] = { 29787 },	-- Worthy of Passing
+						["g"] = {
+							i(74634),	-- Kun-Pai Ritual Charm (QI!)
+						},
 					}),
 					q(29770, {	-- Still Good!
 						["provider"] = { "n", 55479 },	-- Gao Summerdraft
 						["sourceQuests"] = { 29680 },	-- The Source of Our Livelihood
 						["g"] = {
+							i(74297),	-- Pilfered Pumpkin (QI!)
+							i(74296),	-- Stolen Carrot (QI!)
+							i(74295),	-- Uprooted Turnip (QI!)
 							i(74582),	-- Comfortable Greaves
 							i(74580),	-- Homespun Leggings
 							i(131911, {	-- Padded Greaves
@@ -242,12 +275,16 @@ root(ROOTS.Zones, {
 					q(29795, {	-- Stocking Stalks
 						["provider"] = { "n", 60042 },	-- Korga Strongmane
 						["sourceQuests"] = { 29792 },	-- Bidden to Greatness
+						["g"] = {
+							i(80806),	-- Broken Bamboo Stalk (QI!)
+						},
 					}),
 					q(29782, {	-- Stronger Than Bone
 						["sourceQuests"] = { 29778 },	-- Rewritten Wisdoms
 						["provider"] = { "o", 209673 },	-- Jade Tiger Pillar
 						["coord"] = { 26.5, 33.8, THE_WANDERING_ISLE },
 						["g"] = {
+							i(76174),	-- Jade Tiger Pillar (QI!)
 							i(157020, {	-- Humble Cudgel
 								["timeline"] = { ADDED_7_0_3 },
 							}),
@@ -259,18 +296,31 @@ root(ROOTS.Zones, {
 					}),
 					q(29662, {	-- Stronger Than Reeds
 						["provider"] = { "n", 55585 },	-- Jojo Ironbrow
+						["g"] = {
+							i(73178),	-- Hard Tearwood Reed (QI!)
+						},
 					}),
 					q(29783, {	-- Stronger Than Stone
 						["provider"] = { "n", 55585 },	-- Jojo Ironbrow
 						["sourceQuests"] = { 29776 },	-- Morning Breeze Village
+						["g"] = {
+							i(74624),	-- Abandoned Stone Block (QI!)
+						},
 					}),
 					q(29771, {	-- Stronger Than Wood
 						["provider"] = { "n", 55478 },	-- Jojo Ironbrow
 						["sourceQuests"] = { 29769 },	-- Rascals
+						["g"] = {
+							i(74301),	-- Discarded Wood Plank (QI!)
+						},
 					}),
 					q(29664, {	-- The Challenger's Fires
 						["provider"] = { "n", 54135 },	-- Master Li Fei
 						["sourceQuests"] = { 29420 },	-- The Spirit's Guardian
+						["g"] = {
+							i(75000),	-- Torch of Prismatic Flame (QI!)
+							i(75008),	-- Unlit Challenger's Torch (QI!)
+						},
 					}),
 					q(29779, {	-- The Direct Solution
 						["provider"] = { "n", 55583 },	-- Ji Firepaw
@@ -331,6 +381,9 @@ root(ROOTS.Zones, {
 					q(29408, {	-- The Lesson of the Burning Scroll
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
 						["sourceQuests"] = { 29524 },	-- The Lesson of Stifled Pride
+						["g"] = {
+							i(80212),	-- The Master's Flame (QI!)
+						},
 					}),
 					q(30034, {	-- The Lesson of the Iron Bough (Hunter)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
@@ -425,6 +478,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 55020 },	-- Old Man Liang
 						["sourceQuests"] = { 29676 },	-- Finding an Old Friend
 						["g"] = {
+							i(73184),	-- Sun Pearl (QI!)
 							i(74576),	-- Sun Pearl Bracers
 							i(131909, {	-- Sun Pearl Chainmail
 								["timeline"] = { ADDED_7_0_3 },
@@ -460,6 +514,9 @@ root(ROOTS.Zones, {
 					q(29777, {	-- Tools of the Enemy
 						["provider"] = { "n", 55588 },	-- Elder Shaopai
 						["sourceQuests"] = { 29776 },	-- Morning Breeze Village
+						["g"] = {
+							i(74615),	-- Paint Soaked Brush (QI!)
+						},
 					}),
 					q(29788, {	-- Unwelcome Nature
 						["provider"] = { "n", 55672 },	-- Master Shang Xi

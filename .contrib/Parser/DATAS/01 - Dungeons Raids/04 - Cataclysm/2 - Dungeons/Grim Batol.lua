@@ -348,6 +348,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			}),
 			-- #endif
+			-- #if ANYCLASSIC
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(PROTOCOL_INFERNO, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(470595),
+				["groups"] = {
+					e(131, {	-- General Umbriss
+						["crs"] = { 39625 },	-- General Umbriss
+						["groups"] = {
+							ach(41143),	-- Protocol Inferno: Grim Batol
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	})),
 })));

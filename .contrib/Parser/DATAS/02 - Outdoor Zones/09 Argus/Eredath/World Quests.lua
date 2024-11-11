@@ -27,6 +27,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sym"] = {{"select","npcID",126910}},	-- Select the WQ NPC
 			}),
 			q(48096, {	-- Core Mechanics
+				["g"] = {
+					i(152689),	-- Crystalline Construct Core (QI!)
+				},
 			}),
 			q(48095, {	-- Dark Experimentation
 			}),
@@ -40,6 +43,11 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(48098, {	-- Garden Pests
 			}),
 			q(48097, {	-- Gatekeeper's Review: Cunning
+				["g"] = {
+					i(151126),	-- Fragment of Acuity (QI!)
+					i(151128),	-- Fragment of Guile (QI!)
+					i(151127),	-- Fragment of Wit (QI!)
+				},
 			}),
 			q(48103, {	-- Gatekeeper's Review: Tenacity
 			}),
@@ -66,6 +74,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(49052, {	-- Mar'cuus
 			}),
 			q(47828, {	-- Memories of the Fallen
+				["g"] = {
+					i(151555),	-- Crystallized Memory (QI!)
+				},
 			}),
 			q(48106, {	-- No Love Lost
 			}),
@@ -81,11 +92,17 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(48105, {	-- Peer Review
 			}),
 			q(47844, {	-- Recurring Madness
+				["g"] = {
+					i(151570),	-- Lightbound Crystal (QI!)
+				},
 			}),
 			q(48732, {	-- Sabuul
 				["sym"] = {{"select","npcID",126898}},	-- Select the WQ NPC
 			}),
 			q(48102, {	-- Scale Samples
+				["g"] = {
+					i(152411),	-- Delicate Panthara Scales (QI!)
+				},
 			}),
 			q(47858, {	-- Security: Engaged
 			}),
@@ -126,6 +143,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sym"] = {{"select","npcID",126865}},	-- Select the WQ NPC
 			}),
 			q(48094, {	-- Void Clot
+				["g"] = {
+					i(152415),	-- Clotted Void Crystal (QI!)
+				},
 			}),
 			q(48696, {	-- Wrangler Kravos
 				["sym"] = {{"select","npcID",126852}},	-- Select the WQ NPC

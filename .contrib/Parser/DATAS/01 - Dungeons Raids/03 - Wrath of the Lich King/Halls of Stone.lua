@@ -32,102 +32,44 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17297, {	-- Defense Protocol Alpha: Halls of Stone
 					crit(57752, {	-- Maiden of Grief
-						["_encounter"] = { 605, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39215),	-- Boots of the Follower
-							i(39216),	-- Sash of Mortal Desire
-							i(39196),	-- Boots of the Worshiper
-						},
+						["_encounter"] = { 605, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57749, {	-- Krystallus
-						["_encounter"] = { 604, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39195),	-- Bracers of Lost Sentiments
-							i(39199),	-- Watchful Eye
-							i(39198),	-- Frostblight Pauldrons
-						},
+						["_encounter"] = { 604, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57751, {	-- Tribunal of Ages
-						["_encounter"] = { 606, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39197),	-- Gauntlets of the Master
-							i(39200),	-- Grieving Spellblade
-							i(39193),	-- Band of Neglected Pleas
-						},
+						["_encounter"] = { 606, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57748, {	-- Sjonnir the Ironshaper
-						["_encounter"] = { 607, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(43993),	-- Greatring of Collision
-							i(40489),	-- Greatstaff of the Nexus
-							i(44659),	-- Pendant of the Dragonsworn
-							i(40616),	-- Helm of the Lost Conqueror
-							i(40617),	-- Helm of the Lost Protector
-							i(40618),	-- Helm of the Lost Vanquisher
-							i(40622),	-- Spaulders of the Lost Conqueror
-							i(40623),	-- Spaulders of the Lost Protector
-							i(40624),	-- Spaulders of the Lost Vanquisher
-							i(40619),	-- Leggings of the Lost Conqueror
-							i(40620),	-- Leggings of the Lost Protector
-							i(40621),	-- Leggings of the Lost Vanquisher
-						},
+						["_encounter"] = { 607, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18597, {	-- Defense Protocol Beta: Halls of Stone
 					crit(60600, {	-- Maiden of Grief
-						["_encounter"] = { 605, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45895),	-- Belt of the Blood Pit
-						},
+						["_encounter"] = { 605, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60598, {	-- Krystallus
-						["_encounter"] = { 604, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45927),	-- Handwraps of Resonance
-							i(45892),	-- Legacy of Thunder
-						},
+						["_encounter"] = { 604, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60599, {	-- Tribunal of Ages
-						["_encounter"] = { 606, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(46340),	-- Adamant Handguards
-							i(45894),	-- Leggings of Unstable Discharge
-						},
+						["_encounter"] = { 606, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60597, {	-- Sjonnir the Ironshaper
-						["_encounter"] = { 607, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							currency(SIDEREAL_ESSENCE),
-							i(46345),	-- Bracers of Righteous Reformation
-							i(46351),	-- Bloodcrush Cudgel
-							i(46346),	-- Boots of Unsettled Prey
-						},
+						["_encounter"] = { 607, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19434, {	-- Defense Protocol Gamma: Halls of Stone
 					crit(63347, {	-- Maiden of Grief
-						["_encounter"] = { 605, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 605, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63345, {	-- Krystallus
-						["_encounter"] = { 604, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 604, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63346, {	-- Tribunal of Ages
-						["_encounter"] = { 606, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 606, DEFENSE_PROTOCOL_GAMMA },
 					}),
-					crit(63347, {	-- Sjonnir the Ironshaper
-						["_encounter"] = { 607, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+					crit(63344, {	-- Sjonnir the Ironshaper
+						["_encounter"] = { 607, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
@@ -358,6 +300,111 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394441, 413078, 424205),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(604, {	-- Krystallus
+						["creatureID"] = 27977,	-- Krystallus
+						["groups"] = {
+							i(39195),	-- Bracers of Lost Sentiments
+							i(39199),	-- Watchful Eye
+							i(39198),	-- Frostblight Pauldrons
+						},
+					}),
+					e(605, {	-- Maiden of Grief
+						["creatureID"] = 27975,	-- Maiden of Grief
+						["groups"] = {
+							i(39215),	-- Boots of the Follower
+							i(39216),	-- Sash of Mortal Desire
+							i(39196),	-- Boots of the Worshiper
+						},
+					}),
+					e(606, {	-- Tribunal of Ages
+						["creatureID"] = 28234,	-- Tribunal of Ages
+						["groups"] = {
+							i(39197),	-- Gauntlets of the Master
+							i(39200),	-- Grieving Spellblade
+							i(39193),	-- Band of Neglected Pleas
+						},
+					}),
+					e(607, {	-- Sjonnir The Ironshaper
+						["creatureID"] = 27978,	-- Sjonnir The Ironshaper
+						["groups"] = {
+							i(43993),	-- Greatring of Collision
+							i(40489),	-- Greatstaff of the Nexus
+							i(44659),	-- Pendant of the Dragonsworn
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(413078, 424205),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(604, {	-- Krystallus
+						["creatureID"] = 27977,	-- Krystallus
+						["groups"] = {
+							i(45927),	-- Handwraps of Resonance
+							i(45892),	-- Legacy of Thunder
+						},
+					}),
+					e(605, {	-- Maiden of Grief
+						["creatureID"] = 27975,	-- Maiden of Grief
+						["groups"] = {
+							i(45895),	-- Belt of the Blood Pit
+							i(45302),	-- Treads of the Invader
+						},
+					}),
+					e(606, {	-- Tribunal of Ages
+						["creatureID"] = 28234,	-- Tribunal of Ages
+						["groups"] = {
+							i(46340),	-- Adamant Handguards
+							i(45894),	-- Leggings of Unstable Discharge
+						},
+					}),
+					e(607, {	-- Sjonnir The Ironshaper
+						["creatureID"] = 27978,	-- Sjonnir The Ironshaper
+						["groups"] = {
+							i(46345),	-- Bracers of Righteous Reformation
+							i(46351),	-- Bloodcrush Cudgel
+							i(46346),	-- Boots of Unsettled Prey
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424205),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(604, {	-- Krystallus
+						["creatureID"] = 27977,	-- Krystallus
+						["groups"] = {
+							
+						},
+					}),
+					e(605, {	-- Maiden of Grief
+						["creatureID"] = 27975,	-- Maiden of Grief
+						["groups"] = {
+							
+						},
+					}),
+					e(606, {	-- Tribunal of Ages
+						["creatureID"] = 28234,	-- Tribunal of Ages
+						["groups"] = {
+							
+						},
+					}),
+					e(607, {	-- Sjonnir The Ironshaper
+						["creatureID"] = 27978,	-- Sjonnir The Ironshaper
+						["groups"] = {
+							
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 })));

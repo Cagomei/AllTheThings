@@ -96,11 +96,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 			}),
-			n(MYTHIC_PLUS, bubbleDownSelf({
-				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
-			},{
-				i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
-			})),
 		},
 	})
 })));

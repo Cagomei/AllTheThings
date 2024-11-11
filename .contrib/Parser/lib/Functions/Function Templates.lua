@@ -66,6 +66,28 @@ FUNCTION_TEMPLATES = {
 			end
 			return t;
 		end]],
+		GenerateShouldExcludeFromTooltipForBuffs = function(...)
+			local buffs = {...};
+			local OnInitName = "ShouldExcludeFromTooltipForBuffs_"..table.concat(buffs, "_")
+			ExportDB.OnInitDB[OnInitName] = [[~function(t)
+				local buffs={};
+				for i,id in ipairs({]] .. table.concat(buffs, ", ") .. [[}) do buffs[id]=1; end
+				t.ShouldExcludeFromTooltipHelper = function(t)
+					local target = UnitExists("mouseover") and "mouseover" or "target";
+					for i=1,10,1 do
+						local id = select(10, UnitBuff(target,i));
+						if id then
+							if buffs[id] then return false; end
+						else
+							break;
+						end
+					end
+					return true;
+				end
+				return t;
+			end]];
+			return [[_.OnInitDB.]]..OnInitName..[[]]
+		end,
 	},
 	-- TODO: use _.IsSpellKnownHelper once Classic uses Classes/Spell.lua
 	-- Generates an OnTooltip function into ExportDB.OnTooltipDB to return the cooldown status of a

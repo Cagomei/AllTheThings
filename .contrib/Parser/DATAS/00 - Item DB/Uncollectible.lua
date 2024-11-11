@@ -2157,9 +2157,11 @@ i(228911);	-- Xalatath's Rusty Coin
 ------------------
 i(234718);	-- Ancient Runic Hilt
 i(234722);	-- Carved Stone Fragment
+i(232637);	-- Cracked Pirate Skull
 i(232634);	-- Emptied Turtle Shell
 i(232638);	-- Loosened Naga Scales
 i(234720);	-- Memoric Residue
 i(232636);	-- Rum-Soaked Hankerchief
 i(232633);	-- Shiny Seaside Clam
 i(232632);	-- Spiral Mollusk Shell
+i(232635);	-- Torn Bilgewater Bandage

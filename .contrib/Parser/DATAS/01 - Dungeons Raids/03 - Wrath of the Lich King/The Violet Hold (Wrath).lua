@@ -257,17 +257,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(43405),	-- Sabatons of Erekem
-							-- #if ANYCLASSIC
-							applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
-								i(39275),	-- Contagion Gloves
-								i(39293),	-- Blackened Legplates of Feugen
-								i(39281),	-- Infection Repulser
-							})),
-							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
-								i(45289),	-- Lifespark Visage
-								i(45935),	-- Ironbark Faceguard
-							})),
-							-- #endif
 						},
 					}),
 					e(627, {	-- Moragg
@@ -285,16 +274,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(43382),	-- Band of Eyes (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(43408),	-- Solitaire of Reflecting Doom
-							-- #if ANYCLASSIC
-							applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
-								i(39292),	-- Repelling Charge
-								i(39280),	-- Leggings of Innumerable Barbs
-								i(39274),	-- Retcher's Shoulderpads
-							})),
-							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
-								i(45935),	-- Ironbark Faceguard
-							})),
-							-- #endif
 						},
 					}),
 					e(628, {	-- Ichoron
@@ -313,16 +292,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37869),	-- Globule Signet
-							-- #if ANYCLASSIC
-							applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
-								i(39273),	-- Sullen Cloth Boots
-								i(39279),	-- Blistered Belt of Decay
-								i(39291),	-- Torment of the Banished
-							})),
-							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
-								i(45941),	-- Chestguard of the Lasher
-							})),
-							-- #endif
 						},
 					}),
 					e(629, {	-- Xevozz
@@ -343,16 +312,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(35644),	-- Xevozz's Belt (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(37867),	-- Footwraps of Teleportation
-							-- #if ANYCLASSIC
-							applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
-								i(39278),	-- Bands of Anxiety
-								i(39285),	-- Handgrips of Turmoil
-								i(39272),	-- Drape of Surgery
-							})),
-							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
-								i(45285),	-- Might of the Leviathan
-							})),
-							-- #endif
 						},
 					}),
 					e(630, {	-- Levanthor
@@ -373,17 +332,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #endif
 							i(37870),	-- Twin-Headed Boots
 							i(37872),	-- Levanthor's Talisman
-							-- #if ANYCLASSIC
-							applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
-								i(39277),	-- Sealing Ring of Grobbulus
-								i(39271),	-- Blade of Dormant Memories
-								i(39307),	-- Iron Rings of Endurance
-							})),
-							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
-								i(45284),	-- Kinetic Ripper
-								i(45935),	-- Ironbark Faceguard
-							})),
-							-- #endif
 						},
 					}),
 					e(631, {	-- Zuramat the Obliterator
@@ -402,47 +350,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(43353),	-- Void Sentry Legplates (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(43402),	-- The Obliterator Greaves
-							-- #if ANYCLASSIC
-							applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
-								i(39270),	-- Hatestrike
-								i(39276),	-- The Skull of Ruin
-								i(39282),	-- Bone-Linked Amulet
-							})),
-							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
-								i(45289),	-- Lifespark Visage
-								i(45936),	-- Legplates of Fluorishing Resolve
-								i(45934),	-- Unraveling Reach
-							})),
-							-- #endif
 						},
 					}),
 					e(632, {	-- Cyanigosa
 						["creatureID"] = 31134,	-- Cyanigosa
 						["groups"] = {
-							-- #if ANYCLASSIC
-							applyclassicphase(WRATH_PHASE_TWO, ach(17293, {	-- Defense Protocol Alpha: The Violet Hold
-								i(39420),	-- Anarchy
-								i(40511),	-- Focusing Energy Epaulets
-								i(39426),	-- Wand of the Archlich
-								i(40616),	-- Helm of the Lost Conqueror
-								i(40617),	-- Helm of the Lost Protector
-								i(40618),	-- Helm of the Lost Vanquisher
-								i(40622),	-- Spaulders of the Lost Conqueror
-								i(40623),	-- Spaulders of the Lost Protector
-								i(40624),	-- Spaulders of the Lost Vanquisher
-								i(40619),	-- Leggings of the Lost Conqueror
-								i(40620),	-- Leggings of the Lost Protector
-								i(40621),	-- Leggings of the Lost Vanquisher
-							})),
-							applyclassicphase(WRATH_PHASE_THREE, ach(18595, {	-- Defense Protocol Beta: The Violet Hold
-								currency(SIDEREAL_ESSENCE),
-								i(46009),	-- Bindings of the Depths
-								i(46010),	-- Darkstone Ring
-							})),
-							applyclassicphase(WRATH_PHASE_FOUR, ach(19432, {	-- Defense Protocol Gamma: The Violet Hold
-
-							})),
-							-- #endif
 							ach(494),	-- Heroic: The Violet Hold
 							ach(5100, {	-- Heroic: The Violet Hold Guild Run
 								["timeline"] = { ADDED_4_0_3 },
@@ -478,6 +390,154 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394435, 412991, 424196),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(626, {	-- Erekem
+						["creatureID"] = 29315,	-- Erekem
+						["groups"] = {
+							i(39275),	-- Contagion Gloves
+							i(39293),	-- Blackened Legplates of Feugen
+							i(39281),	-- Infection Repulser
+						},
+					}),
+					e(627, {	-- Moragg
+						["creatureID"] = 29316,	-- Moragg
+						["groups"] = {
+							i(39292),	-- Repelling Charge
+							i(39280),	-- Leggings of Innumerable Barbs
+							i(39274),	-- Retcher's Shoulderpads
+						},
+					}),
+					e(628, {	-- Ichoron
+						["creatureID"] = 29313,	-- Ichoron
+						["groups"] = {
+							i(39273),	-- Sullen Cloth Boots
+							i(39279),	-- Blistered Belt of Decay
+							i(39291),	-- Torment of the Banished
+						},
+					}),
+					e(629, {	-- Xevozz
+						["creatureID"] = 29266,	-- Xevozz
+						["groups"] = {
+							i(39278),	-- Bands of Anxiety
+							i(39285),	-- Handgrips of Turmoil
+							i(39272),	-- Drape of Surgery
+						},
+					}),
+					e(630, {	-- Levanthor
+						["creatureID"] = 29312,	-- Levanthor
+						["groups"] = {
+							i(39277),	-- Sealing Ring of Grobbulus
+							i(39271),	-- Blade of Dormant Memories
+							i(39307),	-- Iron Rings of Endurance
+						},
+					}),
+					e(631, {	-- Zuramat the Obliterator
+						["creatureID"] = 29314,	-- Zuramat the Obliterator
+						["groups"] = {
+							i(39270),	-- Hatestrike
+							i(39276),	-- The Skull of Ruin
+							i(39282),	-- Bone-Linked Amulet
+						},
+					}),
+					e(632, {	-- Cyanigosa
+						["creatureID"] = 31134,	-- Cyanigosa
+						["groups"] = {
+							ach(17293),	-- Defense Protocol Alpha: The Violet Hold
+							i(39420),	-- Anarchy
+							i(40511),	-- Focusing Energy Epaulets
+							i(39426),	-- Wand of the Archlich
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(412991, 424196),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					n(COMMON_BOSS_DROPS, {
+						["crs"] = {
+							29315,	-- Erekem
+							29316,	-- Moragg
+							29313,	-- Ichoron
+							29266,	-- Xevozz
+							29312,	-- Levanthor
+							29314,	-- Zuramat the Obliterator
+						},
+						["groups"] = {
+							i(45284),	-- Kinetic Ripper
+							i(45934),	-- Unraveling Reach
+							i(45935),	-- Ironbark Faceguard
+							i(45289),	-- Lifespark Visage
+							i(45941),	-- Chestguard of the Lasher
+							i(45285),	-- Might of the Leviathan
+							i(45940),	-- Tunic of the Limber Stalker
+							i(45936),	-- Legplates of Fluorishing Resolve
+						},
+					}),
+					e(626, {	-- Erekem
+						["creatureID"] = 29315,	-- Erekem
+						["groups"] = {
+							
+						},
+					}),
+					e(627, {	-- Moragg
+						["creatureID"] = 29316,	-- Moragg
+						["groups"] = {
+							
+						},
+					}),
+					e(628, {	-- Ichoron
+						["creatureID"] = 29313,	-- Ichoron
+						["groups"] = {
+							
+						},
+					}),
+					e(629, {	-- Xevozz
+						["creatureID"] = 29266,	-- Xevozz
+						["groups"] = {
+							
+						},
+					}),
+					e(630, {	-- Levanthor
+						["creatureID"] = 29312,	-- Levanthor
+						["groups"] = {
+							
+						},
+					}),
+					e(631, {	-- Zuramat the Obliterator
+						["creatureID"] = 29314,	-- Zuramat the Obliterator
+						["groups"] = {
+							
+						},
+					}),
+					e(632, {	-- Cyanigosa
+						["creatureID"] = 31134,	-- Cyanigosa
+						["groups"] = {
+							ach(18595),	-- Defense Protocol Beta: The Violet Hold
+							i(46009),	-- Bindings of the Depths
+							i(46008),	-- Choker of the Abyss
+							i(46010),	-- Darkstone Ring
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424196),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(632, {	-- Cyanigosa
+						["creatureID"] = 31134,	-- Cyanigosa
+						["groups"] = {
+							ach(19432),	-- Defense Protocol Gamma: The Violet Hold
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 })));

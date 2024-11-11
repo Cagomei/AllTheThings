@@ -716,6 +716,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				r(247700),	-- Felslate Anchor (RECIPE!)
+				i(151871),	-- Crate of Felslate (QI!)
 			},
 		})),
 		q(48054, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Weigh Anchor [H]
@@ -725,6 +726,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				r(247700),	-- Felslate Anchor (RECIPE!)
+				i(151871),	-- Crate of Felslate (QI!)
 			},
 		})),
 	})),

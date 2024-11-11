@@ -930,6 +930,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["coord"] = { 38.8, 25.6, LEGION_DALARAN },
 				["g"] = {
 					r(247744),	-- Wormhole Generator: Argus (RECIPE!)
+					i(151926),	-- Ionized Geographical Recorder (QI!)
 				},
 			})),
 		}),

@@ -26,102 +26,44 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17292, {	-- Defense Protocol Alpha: Drak'Tharon Keep
 					crit(57735, {	-- Trollgore
-						["_encounter"] = { 588, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39241),	-- Dark Shroud of the Scourge
-							i(39245),	-- Demise
-							i(39242),	-- Robes of Hoarse Breaths
-						},
+						["_encounter"] = { 588, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57736, {	-- Novos the Summoner
-						["_encounter"] = { 589, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39244),	-- Ring of the Fated
-							i(39236),	-- Trespasser's Boots
-							i(39237),	-- Spaulders of Resumed Battle
-						},
+						["_encounter"] = { 589, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57737, {	-- King Dred
-						["_encounter"] = { 590, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39239),	-- Chestplate of the Risen Soldier
-							i(39240),	-- Noth's Curse
-							i(39243),	-- Handgrips of the Foredoomed
-						},
+						["_encounter"] = { 590, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57738, {	-- The Prophet Tharon'ja
-						["_encounter"] = { 591, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(43995),	-- Enamored Cowl
-							i(39416),	-- Kel'Thuzad's Reach
-							i(43996),	-- Sabatons of Firmament
-							i(40616),	-- Helm of the Lost Conqueror
-							i(40617),	-- Helm of the Lost Protector
-							i(40618),	-- Helm of the Lost Vanquisher
-							i(40622),	-- Spaulders of the Lost Conqueror
-							i(40623),	-- Spaulders of the Lost Protector
-							i(40624),	-- Spaulders of the Lost Vanquisher
-							i(40619),	-- Leggings of the Lost Conqueror
-							i(40620),	-- Leggings of the Lost Protector
-							i(40621),	-- Leggings of the Lost Vanquisher
-						},
+						["_encounter"] = { 591, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18594, {	-- Defense Protocol Beta: Drak'Tharon Keep
 					crit(60587, {	-- Trollgore
-						["_encounter"] = { 588, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45697),	-- Shoulderguards of the Solemn Watch
-							i(45698),	-- Sabatons of the Iron Watcher
-						},
+						["_encounter"] = { 588, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60588, {	-- Novos the Summoner
-						["_encounter"] = { 589, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45703),	-- Spark of Hope
-						},
+						["_encounter"] = { 589, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60589, {	-- King Dred
-						["_encounter"] = { 590, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45975),	-- Cable of the Metrognome
-							i(45700),	-- Stoneguard
-						},
+						["_encounter"] = { 590, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60590, {	-- The Prophet Tharon'ja
-						["_encounter"] = { 591, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							currency(SIDEREAL_ESSENCE),
-							i(45303),	-- Band of Draconic Guile
-							i(45972),	-- Pulse Baton
-							i(45974),	-- Shoulderguards of Assimilation
-						},
+						["_encounter"] = { 591, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19431, {	-- Defense Protocol Gamma: Drak'Tharon Keep
 					crit(63334, {	-- Trollgore
-						["_encounter"] = { 588, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 588, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63335, {	-- Novos the Summoner
-						["_encounter"] = { 589, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 589, DEFENSE_PROTOCOL_GAMMA },
 					}),
-					crit(63334, {	-- King Dred
-						["_encounter"] = { 590, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+					crit(63336, {	-- King Dred
+						["_encounter"] = { 590, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63337, {	-- The Prophet Tharon'ja
-						["_encounter"] = { 591, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 591, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
@@ -447,6 +389,111 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394438, 413169, 424203),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(588, {	-- Trollgore
+						["creatureID"] = 26630,	-- Trollgore
+						["groups"] = {
+							i(39241),	-- Dark Shroud of the Scourge
+							i(39245),	-- Demise
+							i(39242),	-- Robes of Hoarse Breaths
+						},
+					}),
+					e(589, {	-- Novos the Summoner
+						["creatureID"] = 26631,	-- Novos the Summoner
+						["groups"] = {
+							i(39244),	-- Ring of the Fated
+							i(39236),	-- Trespasser's Boots
+							i(39237),	-- Spaulders of Resumed Battle
+						},
+					}),
+					e(590, {	-- King Dred
+						["creatureID"] = 27483,	-- King Dred
+						["groups"] = {
+							i(39239),	-- Chestplate of the Risen Soldier
+							i(39240),	-- Noth's Curse
+							i(39243),	-- Handgrips of the Foredoomed
+						},
+					}),
+					e(591, {	-- The Prophet Tharon'ja
+						["creatureID"] = 26632,	-- The Prophet Tharon'ja
+						["groups"] = {
+							i(43995),	-- Enamored Cowl
+							i(39416),	-- Kel'Thuzad's Reach
+							i(43996),	-- Sabatons of Firmament
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(413169, 424203),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(588, {	-- Trollgore
+						["creatureID"] = 26630,	-- Trollgore
+						["groups"] = {
+							i(45697),	-- Shoulderguards of the Solemn Watch
+							i(45698),	-- Sabatons of the Iron Watcher
+						},
+					}),
+					e(589, {	-- Novos the Summoner
+						["creatureID"] = 26631,	-- Novos the Summoner
+						["groups"] = {
+							i(45687),	-- Helm of Veiled Energies
+							i(45703),	-- Spark of Hope
+						},
+					}),
+					e(590, {	-- King Dred
+						["creatureID"] = 27483,	-- King Dred
+						["groups"] = {
+							i(45975),	-- Cable of the Metrognome
+							i(45700),	-- Stoneguard
+						},
+					}),
+					e(591, {	-- The Prophet Tharon'ja
+						["creatureID"] = 26632,	-- The Prophet Tharon'ja
+						["groups"] = {
+							i(45303),	-- Band of Draconic Guile
+							i(45972),	-- Pulse Baton
+							i(45974),	-- Shoulderguards of Assimilation
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424203),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(588, {	-- Trollgore
+						["creatureID"] = 26630,	-- Trollgore
+						["groups"] = {
+							
+						},
+					}),
+					e(589, {	-- Novos the Summoner
+						["creatureID"] = 26631,	-- Novos the Summoner
+						["groups"] = {
+							
+						},
+					}),
+					e(590, {	-- King Dred
+						["creatureID"] = 27483,	-- King Dred
+						["groups"] = {
+							
+						},
+					}),
+					e(591, {	-- The Prophet Tharon'ja
+						["creatureID"] = 26632,	-- The Prophet Tharon'ja
+						["groups"] = {
+							
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 })));

@@ -96,6 +96,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				e(115, {	-- Altairus
 					["crs"] = { 43873 },	-- Altairus
 					["groups"] = {
+						i(63040),	-- Drake of the North Wind (MOUNT!)
 						i(55840),	-- Amulet of Tender Breath
 						i(55841),	-- Axe of the Eclipse
 						i(55835),	-- Hail-Strung Belt
@@ -251,6 +252,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			}),
+			-- #endif
+			-- #if ANYCLASSIC
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(PROTOCOL_INFERNO, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(470595),
+				["groups"] = {
+					e(116, {	-- Asaad, Caliph of Zephyrs
+						["crs"] = { 43875 },	-- Asaad, Caliph of Zephyrs
+						["groups"] = {
+							ach(41142),	-- Protocol Inferno: The Vortex Pinnacle
+						},
+					}),
+				},
+			})),
 			-- #endif
 			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 				i(206183),	-- Amulet of Tender Breath

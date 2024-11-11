@@ -32,103 +32,44 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17283, {	-- Defense Protocol Alpha: The Nexus
 					crit(57690, {	-- Grand Magus Telestra
-						["_encounter"] = { 618, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39393),	-- Claymore of Ancient Power
-							i(39388),	-- Spirit-World Glass
-							i(39397),	-- Pauldrons of Havoc
-						},
+						["_encounter"] = { 618, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57688, {	-- Anomalus
-						["_encounter"] = { 619, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39407),	-- Circle of Life
-							i(39396),	-- Gown of Blaumeux
-							i(39386),	-- Tunic of Dislocation
-						},
+						["_encounter"] = { 619, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57687, {	-- Ormorok the Tree-Shaper
-						["_encounter"] = { 620, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39389),	-- Signet of the Malevolent
-							i(39395),	-- Thane's Tainted Greathelm
-							i(39391),	-- Heinous Mail Chestguard
-						},
+						["_encounter"] = { 620, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57689, {	-- Keristrasza
-						["_encounter"] = { 621, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39306),	-- Plated Gloves of Relief
-							i(39422),	-- Staff of the Plaguehound
-							i(44657),	-- Torque of the Red Dragonflight
-							i(40616),	-- Helm of the Lost Conqueror
-							i(40617),	-- Helm of the Lost Protector
-							i(40618),	-- Helm of the Lost Vanquisher
-							i(40622),	-- Spaulders of the Lost Conqueror
-							i(40623),	-- Spaulders of the Lost Protector
-							i(40624),	-- Spaulders of the Lost Vanquisher
-							i(40619),	-- Leggings of the Lost Conqueror
-							i(40620),	-- Leggings of the Lost Protector
-							i(40621),	-- Leggings of the Lost Vanquisher
-						},
+						["_encounter"] = { 621, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18591, {	-- Defense Protocol Beta: The Nexus
 					crit(60578, {	-- Grand Magus Telestra
-						["_encounter"] = { 618, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45865),	-- Raiments of the Corrupted
-							i(45707),	-- Shieldwall of the Breaker
-						},
+						["_encounter"] = { 618, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60576, {	-- Anomalus
-						["_encounter"] = { 619, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45291),	-- Combustion Bracers
-							i(45292),	-- Energy Siphon
-						},
+						["_encounter"] = { 619, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60575, {	-- Ormorok the Tree-Shaper
-						["_encounter"] = { 620, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45287),	-- Firesoul
-							i(45288),	-- Firestrider Chestguard
-						},
+						["_encounter"] = { 620, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60577, {	-- Keristrasza
-						["_encounter"] = { 621, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							currency(SIDEREAL_ESSENCE),
-							i(45283),	-- Flamewatch Armguards
-							i(45282),	-- Ironsoul
-							i(45286),	-- Pyrite Infuser
-						},
+						["_encounter"] = { 621, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19428, {	-- Defense Protocol Gamma: The Nexus
 					crit(63325, {	-- Grand Magus Telestra
-						["_encounter"] = { 618, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 618, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63323, {	-- Anomalus
-						["_encounter"] = { 619, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 619, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63322, {	-- Ormorok the Tree-Shaper
-						["_encounter"] = { 620, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 620, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63324, {	-- Keristrasza
-						["_encounter"] = { 621, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 621, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
@@ -354,17 +295,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(37729),	-- Grips of Sculptured Icicles
 							i(37731),	-- Opposed Stasis Leggings
 							i(37730),	-- Cleric's Linen Shoes
-							-- #if ANYCLASSIC
-							applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
-								i(39394),	-- Charmed Cierge
-								i(39398),	-- Massive Skeletal Ribcage
-								i(39390),	-- Resurgent Phantom Bindings
-							})),
-							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
-								i(45832),	-- Mantle of the Preserver
-								i(45713),	-- Nurturing Touch
-							})),
-							-- #endif
 						},
 					}),
 					e(618, {	-- Grand Magus Telestra
@@ -457,6 +387,162 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394435, 412991, 424196),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(617, {	-- Commander [Commander Kolurg (A) / Commander Stoutbeard (H)]
+						-- This is a smart header that will change itself to the faction specific version on initial load.
+						["crs"] = { 26796 },	-- Commander Kolurg (A)
+						["OnInit"] = [[function(t)
+							if _.FactionID == Enum.FlightPathFaction.Horde then
+								t.crs = { 26798 };
+							else
+								t.encounterID = 833;
+								t.npcID = 26798;
+								t.crs = { 26796 };
+							end
+							return t;
+						end]],
+						["groups"] = {
+							i(39394),	-- Charmed Cierge
+							i(39398),	-- Massive Skeletal Ribcage
+							i(39390),	-- Resurgent Phantom Bindings
+						},
+					}),
+					e(618, {	-- Grand Magus Telestra
+						["creatureID"] = 26731,	-- Grand Magus Telestra
+						["groups"] = {
+							i(39393),	-- Claymore of Ancient Power
+							i(39388),	-- Spirit-World Glass
+							i(39397),	-- Pauldrons of Havoc
+						},
+					}),
+					e(619, {	-- Anomalus
+						["creatureID"] = 26763,	-- Anomalus
+						["groups"] = {
+							i(39407),	-- Circle of Life
+							i(39396),	-- Gown of Blaumeux
+							i(39386),	-- Tunic of Dislocation
+						},
+					}),
+					e(620, {	-- Ormorok the Tree-Shaper
+						["creatureID"] = 26794,	-- Ormorok the Tree-Shaper
+						["groups"] = {
+							i(39389),	-- Signet of the Malevolent
+							i(39395),	-- Thane's Tainted Greathelm
+							i(39391),	-- Heinous Mail Chestguard
+						},
+					}),
+					e(621, {	-- Keristrasza
+						["creatureID"] = 26723,	-- Keristrasza
+						["groups"] = {
+							i(39306),	-- Plated Gloves of Relief
+							i(39422),	-- Staff of the Plaguehound
+							i(44657),	-- Torque of the Red Dragonflight
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(412991, 424196),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(617, {	-- Commander [Commander Kolurg (A) / Commander Stoutbeard (H)]
+						-- This is a smart header that will change itself to the faction specific version on initial load.
+						["crs"] = { 26796 },	-- Commander Kolurg (A)
+						["OnInit"] = [[function(t)
+							if _.FactionID == Enum.FlightPathFaction.Horde then
+								t.crs = { 26798 };
+							else
+								t.encounterID = 833;
+								t.npcID = 26798;
+								t.crs = { 26796 };
+							end
+							return t;
+						end]],
+						["groups"] = {
+							i(45832),	-- Mantle of the Preserver
+							i(45713),	-- Nurturing Touch
+						},
+					}),
+					e(618, {	-- Grand Magus Telestra
+						["creatureID"] = 26731,	-- Grand Magus Telestra
+						["groups"] = {
+							i(45865),	-- Raiments of the Corrupted
+							i(45707),	-- Shieldwall of the Breaker
+						},
+					}),
+					e(619, {	-- Anomalus
+						["creatureID"] = 26763,	-- Anomalus
+						["groups"] = {
+							i(45291),	-- Combustion Bracers
+							i(45292),	-- Energy Siphon
+						},
+					}),
+					e(620, {	-- Ormorok the Tree-Shaper
+						["creatureID"] = 26794,	-- Ormorok the Tree-Shaper
+						["groups"] = {
+							i(45287),	-- Firesoul
+							i(45288),	-- Firestrider Chestguard
+						},
+					}),
+					e(621, {	-- Keristrasza
+						["creatureID"] = 26723,	-- Keristrasza
+						["groups"] = {
+							i(45283),	-- Flamewatch Armguards
+							i(45282),	-- Ironsoul
+							i(45286),	-- Pyrite Infuser
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424196),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(617, {	-- Commander [Commander Kolurg (A) / Commander Stoutbeard (H)]
+						-- This is a smart header that will change itself to the faction specific version on initial load.
+						["crs"] = { 26796 },	-- Commander Kolurg (A)
+						["OnInit"] = [[function(t)
+							if _.FactionID == Enum.FlightPathFaction.Horde then
+								t.crs = { 26798 };
+							else
+								t.encounterID = 833;
+								t.npcID = 26798;
+								t.crs = { 26796 };
+							end
+							return t;
+						end]],
+					}),
+					e(618, {	-- Grand Magus Telestra
+						["creatureID"] = 26731,	-- Grand Magus Telestra
+						["groups"] = {
+							
+						},
+					}),
+					e(619, {	-- Anomalus
+						["creatureID"] = 26763,	-- Anomalus
+						["groups"] = {
+							
+						},
+					}),
+					e(620, {	-- Ormorok the Tree-Shaper
+						["creatureID"] = 26794,	-- Ormorok the Tree-Shaper
+						["groups"] = {
+							
+						},
+					}),
+					e(621, {	-- Keristrasza
+						["creatureID"] = 26723,	-- Keristrasza
+						["groups"] = {
+							
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 })));

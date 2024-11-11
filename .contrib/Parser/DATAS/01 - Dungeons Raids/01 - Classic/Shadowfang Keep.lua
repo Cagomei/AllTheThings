@@ -2238,6 +2238,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(PROTOCOL_INFERNO, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(470595),
+				["timeline"] = { ADDED_4_0_3 },
+				["lvl"] = 85,
+				["groups"] = {
+					e(100, {	-- Lord Godfrey
+						["creatureID"] = 46964,
+						["groups"] = {
+							ach(41147),	-- Protocol Inferno: Shadowfang Keep
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 }));

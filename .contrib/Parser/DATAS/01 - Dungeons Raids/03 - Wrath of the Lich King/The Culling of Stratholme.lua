@@ -33,102 +33,44 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17302, {	-- Defense Protocol Alpha: The Culling of Stratholme
 					crit(57771, {	-- Meathook
-						["_encounter"] = { 611, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(43992),	-- Volitant Amulet
-							i(40429),	-- Crimson Steel
-							i(43988),	-- Gale-Proof Cloak
-						},
+						["_encounter"] = { 611, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57773, {	-- Salramm the Fleshcrafter
-						["_encounter"] = { 612, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(43991),	-- Legguards of Composure
-							i(43989),	-- Remembrance Girdle
-							i(40428),	-- Titan's Outlook
-						},
+						["_encounter"] = { 612, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57772, {	-- Chrono-Lord Epoch
-						["_encounter"] = { 613, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(43990),	-- Blade-Scarred Tunic
-							i(40430),	-- Majestic Dragon Figurine
-							i(40427),	-- Circle of Arcane Streams
-						},
+						["_encounter"] = { 613, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57770, {	-- Mal'Ganis
-						["_encounter"] = { 614, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(40475),	-- Barricade of Eternity
-							i(39235),	-- Bone-Framed Bracers
-							i(44658),	-- Chain of the Ancient Wyrm
-							i(40616),	-- Helm of the Lost Conqueror
-							i(40617),	-- Helm of the Lost Protector
-							i(40618),	-- Helm of the Lost Vanquisher
-							i(40622),	-- Spaulders of the Lost Conqueror
-							i(40623),	-- Spaulders of the Lost Protector
-							i(40624),	-- Spaulders of the Lost Vanquisher
-							i(40619),	-- Leggings of the Lost Conqueror
-							i(40620),	-- Leggings of the Lost Protector
-							i(40621),	-- Leggings of the Lost Vanquisher
-						},
+						["_encounter"] = { 614, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18601, {	-- Defense Protocol Beta: The Culling of Stratholme
 					crit(60614, {	-- Meathook
-						["_encounter"] = { 611, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45694),	-- Conductive Cord
-							i(46339),	-- Mimiron's Repeater
-						},
+						["_encounter"] = { 611, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60616, {	-- Salramm the Fleshcrafter
-						["_encounter"] = { 612, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45695),	-- Spire of Withering Dreams
-						},
+						["_encounter"] = { 612, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60615, {	-- Chrono-Lord Epoch
-						["_encounter"] = { 613, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45685),	-- Plasma Foil
-							i(45675),	-- Power Enhancing Loop
-						},
+						["_encounter"] = { 613, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60613, {	-- Mal'Ganis
-						["_encounter"] = { 614, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							currency(SIDEREAL_ESSENCE),
-							i(46016),	-- Abaddon
-							i(46025),	-- Devotion
-							i(46018),	-- Deliverance
-						},
+						["_encounter"] = { 614, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19438, {	-- Defense Protocol Gamma: The Culling of Stratholme
-					crit(63374, {	-- Meathook
-						["_encounter"] = { 611, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+					crit(63375, {	-- Meathook
+						["_encounter"] = { 611, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63377, {	-- Salramm the Fleshcrafter
-						["_encounter"] = { 612, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 612, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63376, {	-- Chrono-Lord Epoch
-						["_encounter"] = { 613, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 613, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63374, {	-- Mal'Ganis
-						["_encounter"] = { 614, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 614, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
@@ -365,19 +307,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					n(32273, {	-- Infinite Corruptor
 						ach(1817),	-- The Culling of Time
 						i(43951),	-- Bronze Drake (MOUNT!)
-						-- #if ANYCLASSIC
-						applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
-							i(39427),	-- Omen of Ruin
-							i(39468),	-- The Stray
-							i(39473),	-- Contortion
-							i(39470),	-- Medallion of the Disgraced
-							i(39467),	-- Minion Bracers
-						})),
-						applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
-							i(45682),	-- Pulsing Spellshield
-							i(45686),	-- Vest of the Glowing Crescent
-						})),
-						-- #endif
 					}),
 					e(614, {	-- Mal'Ganis
 						["creatureID"] = 26533,	-- Mal'Ganis
@@ -421,6 +350,122 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394444, 412867, 424210),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(611, {	-- Meathook
+						["creatureID"] = 26529,	-- Meathook
+						["groups"] = {
+							i(43992),	-- Volitant Amulet
+							i(40429),	-- Crimson Steel
+							i(43988),	-- Gale-Proof Cloak
+						},
+					}),
+					e(612, {	-- Salramm the Fleshcrafter
+						["creatureID"] = 26530,	-- Salramm the Fleshcrafter
+						["groups"] = {
+							i(43991),	-- Legguards of Composure
+							i(43989),	-- Remembrance Girdle
+							i(40428),	-- Titan's Outlook
+						},
+					}),
+					e(613, {	-- Chrono-Lord Epoch
+						["creatureID"] = 26532,	-- Chrono-Lord Epoch
+						["groups"] = {
+							i(43990),	-- Blade-Scarred Tunic
+							i(40430),	-- Majestic Dragon Figurine
+							i(40427),	-- Circle of Arcane Streams
+						},
+					}),
+					n(32273, {	-- Infinite Corruptor
+						i(39427),	-- Omen of Ruin
+						i(39468),	-- The Stray
+						i(39473),	-- Contortion
+						i(39470),	-- Medallion of the Disgraced
+						i(39467),	-- Minion Bracers
+					}),
+					e(614, {	-- Mal'Ganis
+						["creatureID"] = 26533,	-- Mal'Ganis
+						["groups"] = {
+							i(40475),	-- Barricade of Eternity
+							i(39235),	-- Bone-Framed Bracers
+							i(44658),	-- Chain of the Ancient Wyrm
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(412867, 424210),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(611, {	-- Meathook
+						["creatureID"] = 26529,	-- Meathook
+						["groups"] = {
+							i(45694),	-- Conductive Cord
+							i(46339),	-- Mimiron's Repeater
+						},
+					}),
+					e(612, {	-- Salramm the Fleshcrafter
+						["creatureID"] = 26530,	-- Salramm the Fleshcrafter
+						["groups"] = {
+							i(45695),	-- Spire of Withering Dreams
+							i(45679),	-- Gloves of Taut Grip
+						},
+					}),
+					e(613, {	-- Chrono-Lord Epoch
+						["creatureID"] = 26532,	-- Chrono-Lord Epoch
+						["groups"] = {
+							i(45685),	-- Plasma Foil
+							i(45675),	-- Power Enhancing Loop
+						},
+					}),
+					n(32273, {	-- Infinite Corruptor
+						i(45682),	-- Pulsing Spellshield
+						i(45686),	-- Vest of the Glowing Crescent
+					}),
+					e(614, {	-- Mal'Ganis
+						["creatureID"] = 26533,	-- Mal'Ganis
+						["groups"] = {
+							i(46016),	-- Abaddon
+							i(46025),	-- Devotion
+							i(46018),	-- Deliverance
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424210),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(611, {	-- Meathook
+						["creatureID"] = 26529,	-- Meathook
+						["groups"] = {
+							
+						},
+					}),
+					e(612, {	-- Salramm the Fleshcrafter
+						["creatureID"] = 26530,	-- Salramm the Fleshcrafter
+						["groups"] = {
+							
+						},
+					}),
+					e(613, {	-- Chrono-Lord Epoch
+						["creatureID"] = 26532,	-- Chrono-Lord Epoch
+						["groups"] = {
+							
+						},
+					}),
+					e(614, {	-- Mal'Ganis
+						["creatureID"] = 26533,	-- Mal'Ganis
+						["groups"] = {
+							
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 })));

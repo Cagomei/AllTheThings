@@ -33,124 +33,53 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17295, {	-- Defense Protocol Alpha: Gundrak
 					crit(57743, {	-- Slad'ran
-						["_encounter"] = { 592, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39229),	-- Embrace of the Spider
-							i(39234),	-- Plague-Impervious Boots
-							i(39230),	-- Spaulders of the Monstrosity
-						},
+						["_encounter"] = { 592, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57746, {	-- Drakkari Colossus
-						["_encounter"] = { 593, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39233),	-- Aegis of Damnation
-							i(39225),	-- Cloak of Armed Strife
-							i(39224),	-- Leggings of Discord
-						},
+						["_encounter"] = { 593, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57744, {	-- Moorabi
-						["_encounter"] = { 594, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39232),	-- Pendant of Lost Vocations
-							i(39228),	-- Web Cocoon Grips
-							i(39221),	-- Wraith Spear
-						},
+						["_encounter"] = { 594, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57745, {	-- Eck the Ferocious
-						["_encounter"] = { 595, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39217),	-- Avenging Combat Leggings
-							i(39231),	-- Timeworn Silken Band
-							i(39226),	-- Maexxna's Femur
-						},
+						["_encounter"] = { 595, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57747, {	-- Gal'darah
-						["_encounter"] = { 596, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(40491),	-- Hailstorm
-							i(39283),	-- Putrescent Bands
-							i(44660),	-- Drakescale Collar
-							i(40616),	-- Helm of the Lost Conqueror
-							i(40617),	-- Helm of the Lost Protector
-							i(40618),	-- Helm of the Lost Vanquisher
-							i(40622),	-- Spaulders of the Lost Conqueror
-							i(40623),	-- Spaulders of the Lost Protector
-							i(40624),	-- Spaulders of the Lost Vanquisher
-							i(40619),	-- Leggings of the Lost Conqueror
-							i(40620),	-- Leggings of the Lost Protector
-							i(40621),	-- Leggings of the Lost Vanquisher
-						},
+						["_encounter"] = { 596, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18596, {	-- Defense Protocol Beta: Gundrak
 					crit(60592, {	-- Slad'ran
-						["_encounter"] = { 592, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45687),	-- Helm of Veiled Energies
-							i(45976),	-- Static Charge Handwraps
-						},
+						["_encounter"] = { 592, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60595, {	-- Drakkari Colossus
-						["_encounter"] = { 593, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45301),	-- Bracers of the Smothering Inferno
-						},
+						["_encounter"] = { 593, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60593, {	-- Moorabi
-						["_encounter"] = { 594, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45305),	-- Breastplate of the Afterlife
-							i(45306),	-- Binding of the Dragon Matriarch
-							i(45299),	-- Dragonsteel Faceplate
-						},
+						["_encounter"] = { 594, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60594, {	-- Eck the Ferocious
-						["_encounter"] = { 595, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45308),	-- Eye of the Broodmother
-							i(45307),	-- Ironscale Leggings
-						},
+						["_encounter"] = { 595, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60596, {	-- Gal'darah
-						["_encounter"] = { 596, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							currency(SIDEREAL_ESSENCE),
-							i(45298),	-- Razorscale Talon
-							i(45893),	-- Guise of the Midgard Serpent
-							i(45973),	-- Stylish Power Cape
-						},
+						["_encounter"] = { 596, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19433, {	-- Defense Protocol Gamma: Gundrak
 					crit(63339, {	-- Slad'ran
-						["_encounter"] = { 592, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 592, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63342, {	-- Drakkari Colossus
-						["_encounter"] = { 593, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 593, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63340, {	-- Moorabi
-						["_encounter"] = { 594, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 594, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63341, {	-- Eck the Ferocious
-						["_encounter"] = { 595, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 595, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63343, {	-- Gal'darah
-						["_encounter"] = { 596, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 596, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
@@ -181,7 +110,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/6 Drakkari History Tablet
-							["provider"] = { "i", 43140 },	-- Drakkari History Tablet
+							["providers"] = {
+								{ "i",  43140 },	-- Drakkari History Tablet
+								{ "o", 192826 },	-- Drakkari History Tablet
+							},
 						}),
 						i(43180),	-- Lion's Head Ring
 						i(43178),	-- Ring of Foul Mojo
@@ -195,7 +127,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/6 Drakkari History Tablet
-							["provider"] = { "i", 43140 },	-- Drakkari History Tablet
+							["providers"] = {
+								{ "i",  43140 },	-- Drakkari History Tablet
+								{ "o", 192826 },	-- Drakkari History Tablet
+							},
 						}),
 						i(43180),	-- Lion's Head Ring
 						i(43178),	-- Ring of Foul Mojo
@@ -209,7 +144,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
 						objective(1, {	-- 0/6 Drakkari History Tablet
-							["provider"] = { "i", 43140 },	-- Drakkari History Tablet
+							["providers"] = {
+								{ "i",  43140 },	-- Drakkari History Tablet
+								{ "o", 192826 },	-- Drakkari History Tablet
+							},
 						}),
 						i(43180),	-- Lion's Head Ring
 						i(43178),	-- Ring of Foul Mojo
@@ -510,6 +448,132 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394438, 413169, 424203),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(592, {	-- Slad'ran
+						["creatureID"] = 29304,	-- Slad'ran
+						["groups"] = {
+							i(39229),	-- Embrace of the Spider
+							i(39234),	-- Plague-Impervious Boots
+							i(39230),	-- Spaulders of the Monstrosity
+						},
+					}),
+					e(593, {	-- Drakkari Colossus
+						["creatureID"] = 29307,	-- Drakkari Colossus
+						["groups"] = {
+							i(39233),	-- Aegis of Damnation
+							i(39225),	-- Cloak of Armed Strife
+							i(39224),	-- Leggings of Discord
+						},
+					}),
+					e(594, {	-- Moorabi
+						["creatureID"] = 29305,	-- Moorabi
+						["groups"] = {
+							i(39232),	-- Pendant of Lost Vocations
+							i(39228),	-- Web Cocoon Grips
+							i(39221),	-- Wraith Spear
+						},
+					}),
+					e(595, {	-- Eck the Ferocious
+						["creatureID"] = 29932,	-- Eck the Ferocious
+						["groups"] = {
+							i(39217),	-- Avenging Combat Leggings
+							i(39231),	-- Timeworn Silken Band
+							i(39226),	-- Maexxna's Femur
+						},
+					}),
+					e(596, {	-- Gal'darah
+						["creatureID"] = 29306,	-- Gal'darah
+						["groups"] = {
+							i(40491),	-- Hailstorm
+							i(39283),	-- Putrescent Bands
+							i(44660),	-- Drakescale Collar
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(413169, 424203),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(592, {	-- Slad'ran
+						["creatureID"] = 29304,	-- Slad'ran
+						["groups"] = {
+							i(45973),	-- Stylish Power Cape
+							i(45976),	-- Static Charge Handwraps
+						},
+					}),
+					e(593, {	-- Drakkari Colossus
+						["creatureID"] = 29307,	-- Drakkari Colossus
+						["groups"] = {
+							i(45306),	-- Binding of the Dragon Matriarch
+							i(45301),	-- Bracers of the Smothering Inferno
+						},
+					}),
+					e(594, {	-- Moorabi
+						["creatureID"] = 29305,	-- Moorabi
+						["groups"] = {
+							i(45305),	-- Breastplate of the Afterlife
+							i(45299),	-- Dragonsteel Faceplate
+						},
+					}),
+					e(595, {	-- Eck the Ferocious
+						["creatureID"] = 29932,	-- Eck the Ferocious
+						["groups"] = {
+							i(45308),	-- Eye of the Broodmother
+							i(45307),	-- Ironscale Leggings
+						},
+					}),
+					e(596, {	-- Gal'darah
+						["creatureID"] = 29306,	-- Gal'darah
+						["groups"] = {
+							i(45298),	-- Razorscale Talon
+							i(45893),	-- Guise of the Midgard Serpent
+							i(45973),	-- Stylish Power Cape
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424203),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(592, {	-- Slad'ran
+						["creatureID"] = 29304,	-- Slad'ran
+						["groups"] = {
+							
+						},
+					}),
+					e(593, {	-- Drakkari Colossus
+						["creatureID"] = 29307,	-- Drakkari Colossus
+						["groups"] = {
+							
+						},
+					}),
+					e(594, {	-- Moorabi
+						["creatureID"] = 29305,	-- Moorabi
+						["groups"] = {
+							
+						},
+					}),
+					e(595, {	-- Eck the Ferocious
+						["creatureID"] = 29932,	-- Eck the Ferocious
+						["groups"] = {
+							
+						},
+					}),
+					e(596, {	-- Gal'darah
+						["creatureID"] = 29306,	-- Gal'darah
+						["groups"] = {
+							
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 })));

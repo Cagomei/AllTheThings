@@ -117,7 +117,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["lvl"] = 20,
 				["g"] = {
 					i(161329),	-- Tabard of the Dark Iron
-					i(157022),	-- Letter from King Anduin Wrynn
+					i(157022),	-- Letter from King Anduin Wrynn (QI!)
 				},
 			}),
 			q(53500, {	-- Stranger in a Strange Land
@@ -523,7 +523,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["lvl"] = 20,
 				["g"] = {
 					i(157757),	-- Highmountain Tabard
-					i(157028),	-- Letter from Lady Sylvannas
+					i(157028),	-- Letter from Lady Sylvannas (QI!)
 				},
 			}),
 			q(50319, {	-- Stranger in a Strange Land
@@ -703,7 +703,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["lvl"] = 20,
 				["g"] = {
 					i(165010),	-- Tabard of Kul Tiras
-					i(157022),	-- Letter from King Anduin Wrynn
+					i(157022),	-- Letter from King Anduin Wrynn (QI!)
 				},
 			}),
 			q(55146, {	-- Stranger in a Strange Lane
@@ -755,7 +755,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["lvl"] = 20,
 				["g"] = {
 					i(157756),	-- Lightforged Tabard
-					i(157022),	-- Letter from King Anduin Wrynn
+					i(157022),	-- Letter from King Anduin Wrynn (QI!)
 				},
 			}),
 			q(50313, {	-- Stranger in a Strange Land
@@ -849,7 +849,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["lvl"] = 20,
 				["g"] = {
 					i(161328),	-- Tabard of the Mag'har Clans
-					i(157028),	-- Letter from Lady Sylvannas
+					i(157028),	-- Letter from Lady Sylvannas (QI!)
 				},
 			}),
 			q(53502, {	-- Stranger in a Strange Land
@@ -977,7 +977,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["lvl"] = 20,
 				["g"] = {
 					i(174068),	-- Mechagonian Tabard
-					i(157022),	-- Letter from King Anduin Wrynn
+					i(157022),	-- Letter from King Anduin Wrynn (QI!)
 				},
 			}),
 			q(58147, {	-- Stranger in a Strange Land
@@ -1033,7 +1033,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["lvl"] = 20,
 				["g"] = {
 					i(157759),	-- Shal'dorei Tabard
-					i(157028),	-- Letter from Lady Sylvannas
+					i(157028),	-- Letter from Lady Sylvannas (QI!)
 				},
 			}),
 			q(50303, {	-- Stranger in a Strange Land
@@ -1079,7 +1079,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["lvl"] = 20,
 				["g"] = {
 					i(157758),	-- Ren'dorei Tabard
-					i(157022),	-- Letter from King Anduin Wrynn
+					i(157022),	-- Letter from King Anduin Wrynn (QI!)
 				},
 			}),
 			q(50305, {	-- Stranger in a Strange Land

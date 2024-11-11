@@ -1111,6 +1111,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					-- 50372,	-- Desert Research (A)
 					-- },
 					["coord"] = { 29.6, 69.6, SILITHUS },
+					["g"] = {
+						i(156797),	-- Twilight Silk (QI!)
+					},
 				}),
 				q(50372, {	-- Desert Research (A)
 					["qg"] = 131963,	-- Nolan Speed
@@ -1132,6 +1135,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					["sourceQuest"] = 49981,	-- Witness to the Wound
 					["coord"] = { 69.4, 17.6, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(156711),	-- Mysterious Ore (QI!)
+					},
 				}),
 				q(50046, {	-- It's a Sabotage
 					["qg"] = 130030,	-- Kelsey Steelspark
@@ -1152,12 +1158,18 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					["sourceQuest"] = 50372,	-- Desert Research (A)
 					["coord"] = { 69.4, 19.0, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(156795),	-- Silithid Broodling (QI!)
+					},
 				}),
 				q(50231, {	-- Larvae By The Dozen (H)
 					["qg"] = 132040,	-- Pixni Rustbomb
 					["sourceQuest"] = 50358,	-- Desert Research (H)
 					["coord"] = { 66.9, 56.5, SILITHUS },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(156795),	-- Silithid Broodling (QI!)
+					},
 				}),
 				q(50053, {	-- Lazy Prospectors
 					["qg"] = 132147,	-- Grol Warblade
@@ -1212,12 +1224,18 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					["sourceQuest"] = 50372,	-- Desert Research (A)
 					["coord"] = { 69.4, 19.0, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(156794),	-- Silithid Brain (QI!)
+					},
 				}),
 				q(50230, {	-- The Source of Power (H)
 					["qg"] = 132040,	-- Pixni Rustbomb
 					["sourceQuest"] = 50358,	-- Desert Research (H)
 					["coord"] = { 66.9, 56.5, SILITHUS },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(156794),	-- Silithid Brain (QI!)
+					},
 				}),
 				q(50056, {	-- The Speaker's Call (A)
 					["qg"] = 131963,	-- Nolan Speed
@@ -1251,12 +1269,18 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					},
 					["coord"] = { 69.4, 17.6, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(156796),	-- Michiel Voidstrider's Head (QI!)
+					},
 				}),
 				q(50232, {	-- The Twilight Survivor (H)
 					["qg"] = 132147,	-- Grol Warblade
 					["sourceQuest"] = 50053,	-- Lazy Prospectors
 					["coord"] = { 65.9, 54.7, SILITHUS },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(156796),	-- Michiel Voidstrider's Head (QI!)
+					},
 				}),
 				q(49981, {	-- Witness to the Wound (A)
 					["qg"] = 132255,	-- Master Mathias Shaw

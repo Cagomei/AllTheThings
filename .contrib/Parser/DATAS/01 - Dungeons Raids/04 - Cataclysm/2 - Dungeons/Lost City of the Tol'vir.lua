@@ -289,6 +289,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			}),
 			-- #endif
+			-- #if ANYCLASSIC
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(PROTOCOL_INFERNO, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(470595),
+				["groups"] = {
+					e(122, {	-- Siamat
+						["crs"] = { 44819 },	-- Siamat
+						["groups"] = {
+							ach(41145),	-- Protocol Inferno: Lost City of the Tol'vir
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	})),
 })));

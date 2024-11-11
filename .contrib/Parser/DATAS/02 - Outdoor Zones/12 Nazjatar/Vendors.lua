@@ -330,6 +330,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(167915, {	-- Sweet Sea Vegetable
 					["cost"] = 10000,	-- 1g
 				}),
+				i(169783),	-- Cultist Pinky Finger
 			},
 		}),
 		n(145838, {	-- Marshal Frazer <Gladiator Quartermaster>

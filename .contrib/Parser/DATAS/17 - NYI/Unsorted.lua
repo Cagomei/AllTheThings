@@ -36,12 +36,8 @@ root(ROOTS.Unsorted, {
 			i(226387),	-- Battle-Tested Warhammer
 			i(226388),	-- Battle-Tested Obsidian Warhammer
 			i(226521),	-- Reinforced Wax Plating
-			i(226853),	-- Ore Sample
-			i(227453),	-- Kaja'Cola Stash
-			i(227670),	-- Kaja'Cola Can
 			i(228095),	-- Scroll of Empowered Time Warp
 			i(228526),	-- Cyrce's Circlet
-			i(228621),	-- Bilge Rat Supply Key
 			i(228637),	-- Delete Me
 			i(228641),	-- Delete Me
 			i(228645),	-- Delete Me
@@ -52,19 +48,11 @@ root(ROOTS.Unsorted, {
 			i(230211),	-- Singing Citrine
 			i(230773),	-- Overcharged Battery
 			i(231751),	-- Earthen Backpack
-			i(231786),	-- Ookler's Diary
-			i(231788),	-- Songs of the Siren
-			i(231802),	-- Ashvane Co. Survey Report
-			i(231809),	-- First Mate Dat-Dat's Key
-			i(231812),	-- Hozen Poetry
-			i(231813),	-- Siren Isle Manifest
 			i(232439),	-- Rune-Seared Spear
 			i(232519),	-- Razeshi B.
 			i(232573),	-- Thunderous Runekey
 			i(232597),	-- Swabbie's Oar
 			i(232629),	-- Distilled Knowledge of Timeways
-			i(232635),	-- Torn Bilgewater Bandage
-			i(232637),	-- Cracked Pirate Skull
 			i(232639),	-- Thrayir, Eyes of the Siren
 			i(232645),	-- Celestial Barrage
 			i(232646),	-- Root Defender's Spear
@@ -492,7 +480,6 @@ root(ROOTS.Unsorted, {
 			i(234422),	-- Storm-Singed Plunder
 			i(234423),	-- Keg-Leg's Silver Spoils
 			i(234424),	-- Keg-Leg's Bronze Spoils
-			i(234443),	-- Meaty Ration
 			i(234450),	-- Pirate's Booty
 			i(234453),	-- Swabbie's Lockbox
 			i(234455),	-- Storm-flecked Debris

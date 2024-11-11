@@ -1074,7 +1074,10 @@ root(ROOTS.Zones, {
 					["timeline"] = {
 						ADDED_7_3_5,
 						REMOVED_8_0_1
-					}
+					},
+					["g"] = {
+						i(154880),	-- Cursed Shard (QI!)
+					},
 				}),
 				q(42970, {	-- The Diamond King
 					["provider"] = { "n", 113655 },	-- Brann Bronzebeard

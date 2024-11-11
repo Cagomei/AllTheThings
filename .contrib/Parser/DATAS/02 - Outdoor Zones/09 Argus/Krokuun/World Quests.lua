@@ -15,6 +15,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(47496, {	-- Bunker Buster
 			}),
 			q(47624, {	-- Bury It
+				["g"] = {
+					i(151061),	-- Chewed Eredar Bones (QI!)
+				},
 			}),
 			q(48511, {	-- Commander Endaxis
 				["sym"] = {{"select","npcID",124775}},	-- Select the WQ NPC
@@ -80,6 +83,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sym"] = {{"select","npcID",124804}},	-- Select the WQ NPC
 			}),
 			q(47712, {	-- The Devastator
+				["g"] = {
+					i(151188),	-- Devastator Energy Cell (QI!)
+				},
 			}),
 			q(47625, {	-- The Ritual We Share
 			}),

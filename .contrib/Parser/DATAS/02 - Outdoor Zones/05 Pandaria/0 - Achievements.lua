@@ -497,6 +497,9 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 			o(213771, {	-- Statue of Xuen
 				["questID"] = 31416,	-- Statue of Xuen
 				["coord"] = { 72.0, 33.9, KUN_LAI_SUMMIT },
+				["g"] = {
+					i(86422),	-- Statue of Xuen
+				},
 			}),
 			o(213770, {	-- Stolen Sprite Treasure
 				["description"] = "Entrance is at |cFFFFD70059.5 52.9|r.",
@@ -694,7 +697,7 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 				["sourceQuests"] = { 30968 },	-- The Sha of Hatred
 			}),
 			crit(19136, {	-- Sha of Anger
-				["_encounter"] = { 691 },
+				["_encounter"] = { 691, WORLD_BOSSES },
 			}),
 			crit(19913, {	-- Sha of Fear
 				["_encounter"] = { 709, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },

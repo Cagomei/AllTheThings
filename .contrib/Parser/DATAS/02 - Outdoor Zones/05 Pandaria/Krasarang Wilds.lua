@@ -1574,12 +1574,19 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 60135 },	-- Trawler Yotimo
 									["isDaily"] = true,
 									["coord"] = { 70.9, 39.0, KRASARANG_WILDS },
+									["g"] = {
+										i(80403),	-- Angler's Fishing Spear (QI!)
+										i(80437),	-- Armored Carp (QI!)
+									},
 								}),
 								q(30754, {	-- Bright Bait
 									["requireSkill"] = FISHING,
 									["provider"] = { "n", 60674 },	-- John "Big Hook" Marsock
 									["isDaily"] = true,
 									["coord"] = { 71.6, 40.0, KRASARANG_WILDS },
+									["g"] = {
+										i(81116),	-- Suncrawler (QI!)
+									},
 								}),
 								q(30588, {	-- Fishing for a Bruising
 									["requireSkill"] = FISHING,
@@ -1592,12 +1599,19 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 60135 },	-- Trawler Yotimo
 									["isDaily"] = true,
 									["coord"] = { 70.9, 39.0, KRASARANG_WILDS },
+									["g"] = {
+										i(80403),	-- Angler's Fishing Spear (QI!)
+										i(80529),	-- Prickly Puffer Spine (QI!)
+									},
 								}),
 								q(30586, {	-- Jagged Abalone
 									["requireSkill"] = FISHING,
 									["provider"] = { "n", 59584 },	-- Fisherman Haito
 									["isDaily"] = true,
 									["coord"] = { 71.2, 41.9, KRASARANG_WILDS },
+									["g"] = {
+										i(80277),	-- Jagged Abalone Meat (QI!)
+									},
 								}),
 								q(30753, {	-- Jumping the Shark
 									["requireSkill"] = FISHING,
@@ -1610,48 +1624,75 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 60136 },	-- Fiznix
 									["isDaily"] = true,
 									["coord"] = { 70.8, 41.3, KRASARANG_WILDS },
+									["g"] = {
+										i(80599),	-- Goblin Fishing Bomb (QI!)
+										i(80600),	-- Stinger (QI!)
+									},
 								}),
 								q(30763, {	-- Piranha!
 									["requireSkill"] = FISHING,
 									["provider"] = { "n", 60675 },	-- Fo Fook
 									["isDaily"] = true,
 									["coord"] = { 70.5, 37.5, KRASARANG_WILDS },
+									["g"] = {
+										i(81122),	-- Wolf Piranha (QI!)
+									},
 								}),
 								q(30698, {	-- Scavenger Hunt
 									["requireSkill"] = FISHING,
 									["provider"] = { "n", 60136 },	-- Fiznix
 									["isDaily"] = true,
 									["coord"] = { 70.8, 41.3, KRASARANG_WILDS },
+									["g"] = {
+										i(80830),	-- Rusty Shipwreck Debris (QI!)
+									},
 								}),
 								q(30584, {	-- Shocking!
 									["requireSkill"] = FISHING,
 									["provider"] = { "n", 59584 },	-- Fisherman Haito
 									["isDaily"] = true,
 									["coord"] = { 71.2, 41.8, KRASARANG_WILDS },
+									["g"] = {
+										i(80260),	-- Dojani Eel (QI!)
+										i(81175),	-- Crispy Dojani Eel
+									},
 								}),
 								q(30700, {	-- Snapclaw
 									["requireSkill"] = FISHING,
 									["provider"] = { "n", 59586 },	-- Angler Shen
 									["isDaily"] = true,
 									["coord"] = { 70.8, 40.2, KRASARANG_WILDS },
+									["g"] = {
+										i(80831),	-- Snapclaw's Claw (QI!)
+									},
 								}),
 								q(30701, {	-- Viseclaw Soup
 									["requireSkill"] = FISHING,
 									["provider"] = { "n", 60675 },	-- Fo Fook
 									["isDaily"] = true,
 									["coord"] = { 70.5, 37.5, KRASARANG_WILDS },
+									["g"] = {
+										i(80832),	-- Viseclaw Fisher Eye (QI!)
+									},
 								}),
 								q(30585, {	-- What Lurks Below
 									["requireSkill"] = FISHING,
 									["provider"] = { "n", 60673 },	-- Elder Fisherman Rassan
 									["isDaily"] = true,
 									["coord"] = { 71.7, 38.7, KRASARANG_WILDS },
+									["g"] = {
+										i(80262),	-- Beloved Ring (QI!)
+									},
 								}),
 								q(30598, {	-- Who Knew Fish Liked Eggs?
 									["requireSkill"] = FISHING,
 									["provider"] = { "n", 60673 },	-- Elder Fisherman Rassan
 									["isDaily"] = true,
 									["coord"] = { 71.6, 38.6, KRASARANG_WILDS },
+									["g"] = {
+										i(80303),	-- Pristine Crane Egg (QI!)
+										i(80310),	-- Silver Goby (QI!)
+									},
 								}),
 							}),
 							n(VENDORS, {
@@ -1959,6 +2000,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 58779 },	-- Daggle Bombstrider
 						["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
 						["g"] = {
+							i(85854),	-- The Needlebeak (QI!)
 							i(88052),	-- Nayeli Waistband
 							i(88051),	-- Mortbreath Waistband
 							i(88050),	-- Deepwild Belt
@@ -2006,6 +2048,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 58735 },	-- Lyalia
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(79332),	-- Sentinel Scout's Report (QI!)
+						},
 					}),
 					q(30465, {	-- Going on the Offensive
 					--	does this have different SQs than the previous version?
@@ -2020,6 +2065,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 63.1, 20.7, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 						["lockCriteria"] = { 1, "questID", 30273 },	-- In the House of the Red Crane
+						["g"] = {
+							i(79745),	-- Sunwalker Scout's Report (QI!)
+						},
 					}),
 					q(30464, {	-- Going West
 						["sourceQuests"] = {
@@ -2042,6 +2090,7 @@ root(ROOTS.Zones, {
 							o(210209, {	-- Imperial Lotus
 								i(78918),	-- Imperial Lotus Leaves (QI!)
 							}),
+							i(88532),	-- Lotus Water
 						},
 					}),
 					heroscall(q(49558, {	-- Hero's Call: Krasarang Wilds!
@@ -2143,6 +2192,10 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56114 },	-- Kang Bramblestaff
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(78918),	-- Imperial Lotus Leaves (QI!)
+							i(88532),	-- Lotus Water
+						},
 					}),
 					q(30081, {	-- Materia Medica
 						["sourceQuests"] = {
@@ -2203,6 +2256,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 58779 },	-- Daggle Bombstrider
 						["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
 						["g"] = {
+							i(78914),	-- Vial of Tiger Blood (QI!)
 							i(81494),	-- Nayeli Gloves
 							i(81495),	-- Mortbreath Gloves
 							i(81496),	-- Deepwild Gauntlets
@@ -2221,6 +2275,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 30353 },	-- Profit Mastery
 						["provider"] = { "n", 58779 },	-- Daggle Bombstrider
 						["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
+						["g"] = {
+							i(85774),	-- Ancient Tiger's Blood (QI!)
+						},
 					}),
 					q(30169, {	-- Raid Leader Slovan
 						["provider"] = { "n", 58278 }, -- Tired Shushen <Waterspeaker>
@@ -2322,6 +2379,10 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56114 },	-- Kang Bramblestaff
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(78911),	-- Intact Skitterer Glands (QI!)
+							i(88388),	-- Squirmy Delight
+						},
 					}),
 					q(30272, {	-- Striking the Rain
 						["sourceQuests"] = {
@@ -2377,6 +2438,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 50.9, 31.7, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
+							i(79713),	-- Dynastic Tablet (QI!)
 							i(81522),	-- Ring of the Pools of Youth
 							i(81523),	-- Ring of Tears
 							i(81524),	-- Toothrow Band
@@ -2530,6 +2592,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 58278 },	-- Tired Shushen
 						["coord"] = { 29.7, 39, KRASARANG_WILDS },
 						["g"] = {
+							i(78958),	-- Pillaged Jinyu Loot (QI!)
 							i(81532),	-- Silkspawn Carving
 							i(81534),	-- Carp Hunter Feather
 							i(81535),	-- Glade Pincher Feather
@@ -2919,6 +2982,9 @@ root(ROOTS.Zones, {
 					o(214403, {	-- Stack of Papers
 						["questID"] = 31863,
 						["coord"] = { 52.16, 73.42, KRASARANG_WILDS },
+						["g"] = {
+							i(87798),	-- Stack of Papers
+						},
 					}),
 				}),
 			},

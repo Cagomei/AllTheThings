@@ -28,6 +28,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					-- TODO: available one every time after 85760 version is completed
 					["coord"] = { 27.3, 65.5, SIREN_ISLE },
 				}),
+				q(84851, {	-- Tides of Greed
+					-- TODO: Pirates
+					--["coord"] = { x, y, SIREN_ISLE },	-- Entire zone
+					--["g"] = {
+					--	i(228646),	-- Legendary Skipper's Citrine
+					--},
+				}),
 				n(SPECIAL, {
 					q(86174),	-- Special Assignment: Storm's a Brewin (TODO: seems to be unlock tracker)
 					q(85113, {	-- Special Assignment: Storm's a Brewin

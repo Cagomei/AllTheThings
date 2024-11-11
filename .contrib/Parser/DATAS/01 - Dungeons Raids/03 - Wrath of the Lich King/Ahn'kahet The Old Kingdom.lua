@@ -32,120 +32,53 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17291, {	-- Defense Protocol Alpha: Ahn'kahet: The Old Kingdom
 					crit(57731, {	-- Elder Nadox
-						["_encounter"] = { 580, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39249),	-- Shoulderplates of Bloodshed
-							i(39255),	-- Staff of the Plague Beast
-							i(39263),	-- Dissevered Leggings
-						},
+						["_encounter"] = { 580, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57733, {	-- Prince Taldaram
-						["_encounter"] = { 581, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39260),	-- Helm of the Corrupted Mind
-							i(39247),	-- Cuffs of Dark Shadows
-							i(39251),	-- Necrogenic Belt
-						},
+						["_encounter"] = { 581, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57734, {	-- Amanitar
-						["_encounter"] = { 583, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39247),	-- Cuffs of Dark Shadows
-							i(39260),	-- Helm of the Corrupted Mind
-							i(39251),	-- Necrogenic Belt
-						},
+						["_encounter"] = { 583, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57732, {	-- Jedoga Shadowseeker
-						["_encounter"] = { 582, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39246),	-- Amulet of Autopsy
-							i(39250),	-- Ring of Holy Cleansing
-							i(39258),	-- Legplates of Inescapable Death
-						},
+						["_encounter"] = { 582, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57730, {	-- Herald Volazj
-						["_encounter"] = { 584, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(43998),	-- Chestguard of Flagrant Prowess
-							i(39417),	-- Death's Bite
-							i(40486),	-- Necklace of the Glittering Chamber
-							i(40616),	-- Helm of the Lost Conqueror
-							i(40617),	-- Helm of the Lost Protector
-							i(40618),	-- Helm of the Lost Vanquisher
-							i(40622),	-- Spaulders of the Lost Conqueror
-							i(40623),	-- Spaulders of the Lost Protector
-							i(40624),	-- Spaulders of the Lost Vanquisher
-							i(40619),	-- Leggings of the Lost Conqueror
-							i(40620),	-- Leggings of the Lost Protector
-							i(40621),	-- Leggings of the Lost Vanquisher
-						},
+						["_encounter"] = { 584, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18593, {	-- Defense Protocol Beta: Ahn'kahet: The Old Kingdom
 					crit(60583, {	-- Elder Nadox
-						["_encounter"] = { 580, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45314),	-- Igniter Rod
-						},
+						["_encounter"] = { 580, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60586, {	-- Prince Taldaram
-						["_encounter"] = { 581, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45321),	-- Pauldrons of Tempered Will
-							i(46019),	-- Leggings of the Insatiable
-						},
+						["_encounter"] = { 581, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60585, {	-- Amanitar
-						["_encounter"] = { 583, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 583, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60584, {	-- Jedoga Shadowseeker
-						["_encounter"] = { 582, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45702),	-- Emerald Signet Ring
-						},
+						["_encounter"] = { 582, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60582, {	-- Herald Volazj
-						["_encounter"] = { 584, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							currency(SIDEREAL_ESSENCE),
-							i(45699),	-- Pendant of the Piercing Glare
-							i(45704),	-- Shawl of the Shattered Giant
-						},
+						["_encounter"] = { 584, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19430, {	-- Defense Protocol Gamma: Ahn'kahet: The Old Kingdom
 					crit(63330, {	-- Elder Nadox
-						["_encounter"] = { 580, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 580, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63332, {	-- Prince Taldaram
-						["_encounter"] = { 581, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 581, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63333, {	-- Amanitar
-						["_encounter"] = { 583, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 583, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63331, {	-- Jedoga Shadowseeker
-						["_encounter"] = { 582, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 582, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63329, {	-- Herald Volazj
-						["_encounter"] = { 584, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 584, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
@@ -439,6 +372,132 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394437, 412470, 424201),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(580, {	-- Elder Nadox
+						["creatureID"] = 29309,	-- Elder Nadox
+						["groups"] = {
+							i(39249),	-- Shoulderplates of Bloodshed
+							i(39255),	-- Staff of the Plague Beast
+							i(39263),	-- Dissevered Leggings
+						},
+					}),
+					e(581, {	-- Prince Taldaram
+						["creatureID"] = 29308,	-- Prince Taldaram
+						["groups"] = {
+							i(39260),	-- Helm of the Corrupted Mind
+							i(39247),	-- Cuffs of Dark Shadows
+							i(39251),	-- Necrogenic Belt
+						},
+					}),
+					e(583, {	-- Amanitar
+						["creatureID"] = 30258,	-- Amanitar
+						["groups"] = {
+							i(39247),	-- Cuffs of Dark Shadows
+							i(39260),	-- Helm of the Corrupted Mind
+							i(39251),	-- Necrogenic Belt
+						},
+					}),
+					e(582, {	-- Jedoga Shadowseeker
+						["creatureID"] = 29310,	-- Jedoga Shadowseeker
+						["groups"] = {
+							i(39246),	-- Amulet of Autopsy
+							i(39250),	-- Ring of Holy Cleansing
+							i(39258),	-- Legplates of Inescapable Death
+						},
+					}),
+					e(584, {	-- Herald Volazj
+						["creatureID"] = 29311,	-- Herald Volazj
+						["groups"] = {
+							i(39417),	-- Death's Bite
+							i(40486),	-- Necklace of the Glittering Chamber
+							i(43998),	-- Chestguard of Flagrant Prowess
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(412470, 424201),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(580, {	-- Elder Nadox
+						["creatureID"] = 29309,	-- Elder Nadox
+						["groups"] = {
+							i(45314),	-- Igniter Rod
+							i(45310),	-- Gauntlets of the Iron Furnace
+						},
+					}),
+					e(581, {	-- Prince Taldaram
+						["creatureID"] = 29308,	-- Prince Taldaram
+						["groups"] = {
+							i(45321),	-- Pauldrons of Tempered Will
+							i(46019),	-- Leggings of the Insatiable
+						},
+					}),
+					e(583, {	-- Amanitar
+						["creatureID"] = 30258,	-- Amanitar
+						["groups"] = {
+							i(45309),	-- Rifle of the Platinum Guard
+							i(45317),	-- Shawl of the Caretaker
+						},
+					}),
+					e(582, {	-- Jedoga Shadowseeker
+						["creatureID"] = 29310,	-- Jedoga Shadowseeker
+						["groups"] = {
+							i(45701),	-- Greaves of the Earthbinder
+							i(45702),	-- Emerald Signet Ring
+						},
+					}),
+					e(584, {	-- Herald Volazj
+						["creatureID"] = 29311,	-- Herald Volazj
+						["groups"] = {
+							i(45696),	-- Mark of the Unyielding
+							i(45699),	-- Pendant of the Piercing Glare
+							i(45704),	-- Shawl of the Shattered Giant
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424201),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(580, {	-- Elder Nadox
+						["creatureID"] = 29309,	-- Elder Nadox
+						["groups"] = {
+							
+						},
+					}),
+					e(581, {	-- Prince Taldaram
+						["creatureID"] = 29308,	-- Prince Taldaram
+						["groups"] = {
+							
+						},
+					}),
+					e(583, {	-- Amanitar
+						["creatureID"] = 30258,	-- Amanitar
+						["groups"] = {
+							
+						},
+					}),
+					e(582, {	-- Jedoga Shadowseeker
+						["creatureID"] = 29310,	-- Jedoga Shadowseeker
+						["groups"] = {
+							
+						},
+					}),
+					e(584, {	-- Herald Volazj
+						["creatureID"] = 29311,	-- Herald Volazj
+						["groups"] = {
+							
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 })));

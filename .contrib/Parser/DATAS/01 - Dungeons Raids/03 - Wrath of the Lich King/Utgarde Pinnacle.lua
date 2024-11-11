@@ -33,100 +33,44 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17301, {	-- Defense Protocol Alpha: Utgarde Pinnacle
 					crit(57767, {	-- Svala Sorrowgrave
-						["_encounter"] = { 641, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39296),	-- Accursed Bow of the Elite
-							i(39308),	-- Girdle of Lenience
-							i(39299),	-- Rapid Attack Gloves
-						},
+						["_encounter"] = { 641, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57769, {	-- Gortok Palehoof
-						["_encounter"] = { 642, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39284),	-- Miasma Mantle
-							i(39298),	-- Waistguard of the Tutor
-							i(39295),	-- Cowl of Sheet Lightning
-						},
+						["_encounter"] = { 642, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57768, {	-- Skadi the Ruthless
-						["_encounter"] = { 643, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39294),	-- Arc-Scorched Helmet
-							i(39297),	-- Cloak of Darkening
-							i(39472),	-- Chain of Latent Energies
-						},
+						["_encounter"] = { 643, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57766, {	-- King Ymiron
-						["_encounter"] = { 644, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39421),	-- Gem of Imprisoned Vassals
-							i(39423),	-- Hammer of the Astral Plane
-							i(39194),	-- Rusted-Link Spiked Gauntlets
-							i(40616),	-- Helm of the Lost Conqueror
-							i(40617),	-- Helm of the Lost Protector
-							i(40618),	-- Helm of the Lost Vanquisher
-							i(40622),	-- Spaulders of the Lost Conqueror
-							i(40623),	-- Spaulders of the Lost Protector
-							i(40624),	-- Spaulders of the Lost Vanquisher
-							i(40619),	-- Leggings of the Lost Conqueror
-							i(40620),	-- Leggings of the Lost Protector
-							i(40621),	-- Leggings of the Lost Vanquisher
-						},
+						["_encounter"] = { 644, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18600, {	-- Defense Protocol Beta: Utgarde Pinnacle
 					crit(60610, {	-- Svala Sorrowgrave
-						["_encounter"] = { 641, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45423),	-- Runetouch Wristwraps
-						},
+						["_encounter"] = { 641, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60612, {	-- Gortok Palehoof
-						["_encounter"] = { 642, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45332),	-- Stormtip
-						},
+						["_encounter"] = { 642, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60611, {	-- Skadi the Ruthless
-						["_encounter"] = { 643, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45864),	-- Cover of the Keepers
-							i(45712),	-- Chestplate of Titanic Fury
-						},
+						["_encounter"] = { 643, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60609, {	-- King Ymiron
-						["_encounter"] = { 644, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							currency(SIDEREAL_ESSENCE),
-							i(45711),	-- Ironaya's Discarded Mantle
-							i(45866),	-- Elemental Focus Stone
-						},
+						["_encounter"] = { 644, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19437, {	-- Defense Protocol Gamma: Utgarde Pinnacle
 					crit(63367, {	-- Svala Sorrowgrave
-						["_encounter"] = { 641, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 641, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63371, {	-- Gortok Palehoof
-						["_encounter"] = { 642, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 642, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63369, {	-- Skadi the Ruthless
-						["_encounter"] = { 643, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 643, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63366, {	-- King Ymiron
-						["_encounter"] = { 644, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 644, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
@@ -428,6 +372,111 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(392430, 412770, 424194),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(641, {	-- Svala Sorrowgrave
+						["creatureID"] = 26668,	-- Svala Sorrowgrave
+						["groups"] = {
+							i(39296),	-- Accursed Bow of the Elite
+							i(39308),	-- Girdle of Lenience
+							i(39299),	-- Rapid Attack Gloves
+						},
+					}),
+					e(642, {	-- Gortok Palehoof
+						["creatureID"] = 26687,	-- Gortok Palehoof
+						["groups"] = {
+							i(39284),	-- Miasma Mantle
+							i(39298),	-- Waistguard of the Tutor
+							i(39295),	-- Cowl of Sheet Lightning
+						},
+					}),
+					e(643, {	-- Skadi the Ruthless
+						["creatureID"] = 26693,	-- Skadi the Ruthless
+						["groups"] = {
+							i(39294),	-- Arc-Scorched Helmet
+							i(39297),	-- Cloak of Darkening
+							i(39472),	-- Chain of Latent Energies
+						},
+					}),
+					e(644, {	-- King Ymiron
+						["creatureID"] = 26861,	-- King Ymiron
+						["groups"] = {
+							i(39421),	-- Gem of Imprisoned Vassals
+							i(39423),	-- Hammer of the Astral Plane
+							i(39194),	-- Rusted-Link Spiked Gauntlets
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(412770, 424194),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(641, {	-- Svala Sorrowgrave
+						["creatureID"] = 26668,	-- Svala Sorrowgrave
+						["groups"] = {
+							i(45331),	-- Rune-Etched Nightblade
+							i(45423),	-- Runetouch Wristwraps
+						},
+					}),
+					e(642, {	-- Gortok Palehoof
+						["creatureID"] = 26687,	-- Gortok Palehoof
+						["groups"] = {
+							i(45332),	-- Stormtip
+							i(45708),	-- Archaedas' Lost Legplates
+						},
+					}),
+					e(643, {	-- Skadi the Ruthless
+						["creatureID"] = 26693,	-- Skadi the Ruthless
+						["groups"] = {
+							i(45864),	-- Cover of the Keepers
+							i(45712),	-- Chestplate of Titanic Fury
+						},
+					}),
+					e(644, {	-- King Ymiron
+						["creatureID"] = 26861,	-- King Ymiron
+						["groups"] = {
+							i(45711),	-- Ironaya's Discarded Mantle
+							i(45866),	-- Elemental Focus Stone
+							i(45709),	-- Nimble Climber's Belt
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424194),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(641, {	-- Svala Sorrowgrave
+						["creatureID"] = 26668,	-- Svala Sorrowgrave
+						["groups"] = {
+							
+						},
+					}),
+					e(642, {	-- Gortok Palehoof
+						["creatureID"] = 26687,	-- Gortok Palehoof
+						["groups"] = {
+							
+						},
+					}),
+					e(643, {	-- Skadi the Ruthless
+						["creatureID"] = 26693,	-- Skadi the Ruthless
+						["groups"] = {
+							
+						},
+					}),
+					e(644, {	-- King Ymiron
+						["creatureID"] = 26861,	-- King Ymiron
+						["groups"] = {
+							
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 })));

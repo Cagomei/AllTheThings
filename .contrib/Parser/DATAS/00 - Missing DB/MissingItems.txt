@@ -14664,41 +14664,44 @@ i(65731),	-- choke Hearts \\ Yetichoke Hearts
 i(65732),	-- icious Badges \\ Suspicious Badges
 i(65734),	-- ight Documents \\ Twilight Documents
 i(65745),	-- ial Sandals \\ Martial Sandals
-i(65747),	-- 
-i(65748),	-- 
-i(65749),	-- 
-i(65750),	-- 
-i(65751),	-- 
-i(65752),	-- 
-i(65753),	-- 
-i(65754),	-- 
-i(65755),	-- 
-i(65756),	-- 
-i(65757),	-- 
-i(65758),	-- 
-i(65759),	-- 
-i(65760),	-- 
-i(65761),	-- 
-i(65762),	-- 
-i(65763),	-- 
-i(65764),	-- 
-i(65765),	-- 
-i(65766),	-- 
-i(65767),	-- 
-i(65768),	-- 
-i(65769),	-- 
-i(65770),	-- 
-i(65771),	-- 
-i(65772),	-- 
-i(65777),	-- 
-i(65778),	-- 
-i(65779),	-- 
-i(65780),	-- 
-i(65781),	-- 
-i(65782),	-- 
-i(65783),	-- 
-i(65784),	-- 
-i(65785),	-- 
+i(65747),	--
+i(65748),	--
+i(65749),	--
+i(65750),	--
+i(65751),	--
+i(65752),	--
+i(65753),	--
+i(65754),	--
+i(65755),	--
+i(65756),	--
+i(65757),	--
+i(65758),	--
+i(65759),	--
+i(65760),	--
+i(65761),	--
+i(65762),	--
+i(65763),	--
+i(65764),	--
+i(65765),	--
+i(65766),	--
+i(65767),	--
+i(65768),	--
+i(65769),	--
+i(65770),	--
+i(65771),	--
+i(65772),	--
+i(65777),	--
+i(65778),	--
+i(65779),	--
+i(65780),	--
+i(65781),	--
+i(65782),	--
+i(65783),	--
+i(65784),	--
+i(65785),	--
+i(65803),	-- ison's Insignia of Panache \\ Harrison's Insignia of Panache
+i(65804),	-- sman of Sinister Order \\ Talisman of Sinister Order
+i(65805),	-- ottz's Medallion of Command \\ Schnottz's Medallion of Command
 i(65812),	-- hare's Cabochon Charm \\ Namkhare's Cabochon Charm
 i(65879),	-- on Stabilizer \\ Cannon Stabilizer
 i(65892),	-- um-Laced Crystalline Vial \\ Pyrium-Laced Crystalline Vial
@@ -18383,27 +18386,18 @@ i(232977),	-- Satchel of the Stormwake, the Tempest's Reach
 i(233017),	-- Monster - Baleroc Sword
 7.3.0.24473
 i(71079),	-- Shimmering Lotus \\ mering Lotus
-i(72071),	-- Stolen Training Supplies \\ en Training Supplies
-i(72109),	-- Wind Stone \\ Stone
-i(72111),	-- Dry Dogwood Root \\ Dogwood Root
-i(72112),	-- Fluttering Breeze \\ tering Breeze
 i(72162),	-- Sha-Touched Leather \\ Touched Leather
 i(72163),	-- Magnificent Hide \\ ificent Hide
-i(72583),	-- Huo's Offerings \\ s Offerings
 i(72985),	-- Windwool Bandage \\ wool Bandage
 i(72986),	-- Heavy Windwool Bandage \\ y Windwool Bandage
 i(73058),	-- Mogu Pocket Lint \\ Pocket Lint
 i(73059),	-- Mogu Pocket Lint \\ Pocket Lint
-i(73178),	-- Hard Tearwood Reed \\ Tearwood Reed
-i(73183),	-- Snowblossom Petals \\ blossom Petals
-i(73184),	-- Sun Pearl \\ Pearl
+i(73241),	-- Merchant's Satchel \\ hant's Satchel
 i(73242),	-- Master's Haversack \\ er's Haversack
 i(73265),	-- Nazgrim's Axe \\ rim's Axe
 i(73367),	-- Kiryn's Throwing Star \\ n's Throwing Star
-i(73368),	-- Tortoise Flank \\ oise Flank
 i(73411),	-- Stolen Brewsky \\ en Brewsky
 i(73782),	-- Unstable Solenoid \\ able Solenoid
-i(73791),	-- Sun Pearl \\ Pearl
 i(73798),	-- Fresh Water Barrel \\ h Water Barrel
 i(73799),	-- Spirit-Touched Water Globule \\ it-Touched Water Globule
 i(73800),	-- Empty Water Barrel \\ y Water Barrel
@@ -18412,28 +18406,16 @@ i(73837),	-- Makeshift Dynamite \\ shift Dynamite
 i(73853),	-- Fallen Vanguard \\ en Vanguard
 i(73861),	-- Goblin Drone Dispenser \\ in Drone Dispenser
 i(73901),	-- Coiled Cliff Glider Tail \\ ed Cliff Glider Tail
-i(74030),	-- Scroll of Introduction \\ ll of Introduction
-i(74033),	-- Ancient Hozen Skull \\ ent Hozen Skull
-i(74260),	-- Bamboo Key \\ oo Key
 i(74279),	-- Jardu's Key \\ u's Key
 i(74280),	-- Raki's Key \\ 's Key
 i(74281),	-- Soota's Key \\ a's Key
-i(74295),	-- Uprooted Turnip \\ oted Turnip
-i(74296),	-- Stolen Carrot \\ en Carrot
-i(74297),	-- Pilfered Pumpkin \\ ered Pumpkin
-i(74298),	-- Dai-Lo Recess Mallet \\ Lo Recess Mallet
-i(74301),	-- Discarded Wood Plank \\ arded Wood Plank
 i(74323),	-- Shackle Key - Test \\ kle Key - Test
 i(74609),	-- Battered Carp \\ ered Carp
 i(74612),	-- Red Panda Lasso \\ Panda Lasso
 i(74614),	-- Battered Carp \\ ered Carp
-i(74615),	-- Paint Soaked Brush \\ t Soaked Brush
 i(74620),	-- Toxin Sample \\ n Sample
 i(74622),	-- Dead Fire Spirit \\ Fire Spirit
-i(74624),	-- Abandoned Stone Block \\ doned Stone Block
-i(74631),	-- Stolen Firework Bundle \\ en Firework Bundle
 i(74633),	-- Sobering Herbs \\ ring Herbs
-i(74634),	-- Kun-Pai Ritual Charm \\ Pai Ritual Charm
 i(74637),	-- Kiryn's Poison Vial \\ n's Poison Vial
 i(74659),	-- Farm Chicken \\ Chicken
 i(74660),	-- Pandaren Peach \\ aren Peach
@@ -18454,17 +18436,12 @@ i(74847),	-- Jade Squash \\ Squash
 i(74848),	-- Striped Melon \\ ped Melon
 i(74849),	-- Pink Turnip \\ Turnip
 i(74850),	-- White Turnip \\ e Turnip
-i(74851),	-- Rice \\ 
+i(74851),	-- Rice \\
 i(74852),	-- Yak Milk \\ Milk
 i(74854),	-- Instant Noodles \\ ant Noodles
 i(74925),	-- Meditation Candle \\ tation Candle
-i(74955),	-- Packed Explosion Charge \\ ed Explosion Charge
-i(74958),	-- Alliance Medical Supplies \\ ance Medical Supplies
-i(75000),	-- Torch of Prismatic Flame \\ h of Prismatic Flame
-i(75008),	-- Unlit Challenger's Torch \\ t Challenger's Torch
 i(75014),	-- Raw Crocolisk Belly \\ Crocolisk Belly
 i(75015),	-- Sirloin Steak \\ oin Steak
-i(75202),	-- Speckled Trout \\ kled Trout
 i(75212),	-- Intact Pottery Jar \\ ct Pottery Jar
 i(75217),	-- Zen Lotus \\ Lotus
 i(75218),	-- Electrified Oil \\ trified Oil
@@ -18473,18 +18450,12 @@ i(76057),	-- Spirit of Summer \\ it of Summer
 i(76058),	-- Spirit of Winter \\ it of Winter
 i(76059),	-- Spirit of Spring \\ it of Spring
 i(76060),	-- Spirit of Autumn \\ it of Autumn
-i(76107),	-- Pristine Crocolisk Eye \\ tine Crocolisk Eye
-i(76115),	-- Amberfly Wing \\ rfly Wing
-i(76128),	-- Delicate Shearing Knife \\ cate Shearing Knife
-i(76129),	-- Mist Horror Heart \\ Horror Heart
 i(76130),	-- Tiger Opal \\ r Opal
 i(76133),	-- Lapis Lazuli \\ s Lazuli
 i(76134),	-- Sunstone \\ tone
 i(76135),	-- Roguestone \\ estone
 i(76136),	-- Pandarian Garnet \\ arian Garnet
 i(76137),	-- Alexandrite \\ andrite
-i(76174),	-- Jade Tiger Pillar \\ Tiger Pillar
-i(76350),	-- Li Li's Wishing-Stone \\ i's Wishing-Stone
 i(76502),	-- Rigid Lapis Lazuli \\ d Lapis Lazuli
 i(76504),	-- Stormy Lapis Lazuli \\ my Lapis Lazuli
 i(76505),	-- Sparkling Lapis Lazuli \\ kling Lapis Lazuli
@@ -18683,10 +18654,8 @@ i(76698),	-- Subtle Sun's Radiance \\ le Sun's Radiance
 i(76699),	-- Quick Sun's Radiance \\ k Sun's Radiance
 i(76700),	-- Fractured Sun's Radiance \\ tured Sun's Radiance
 i(76701),	-- Mystic Sun's Radiance \\ ic Sun's Radiance
-i(76727),	-- Slimy Bottle \\ y Bottle
 i(76728),	-- Cracked Claw \\ ked Claw
 i(76748),	-- Dud Holy Hand Grenade \\ Holy Hand Grenade
-i(76761),	-- Pandaren Scroll \\ aren Scroll
 i(76879),	-- Ember Primal Diamond \\ r Primal Diamond
 i(76884),	-- Agile Primal Diamond \\ e Primal Diamond
 i(76885),	-- Burning Primal Diamond \\ ing Primal Diamond
@@ -18701,38 +18670,20 @@ i(76894),	-- Forlorn Primal Diamond \\ orn Primal Diamond
 i(76895),	-- Austere Primal Diamond \\ ere Primal Diamond
 i(76896),	-- Eternal Primal Diamond \\ nal Primal Diamond
 i(76897),	-- Effulgent Primal Diamond \\ lgent Primal Diamond
-i(76973),	-- Sprig of Dreamleaf \\ g of Dreamleaf
 i(77264),	-- Small Bamboo Shoot \\ l Bamboo Shoot
 i(77272),	-- Small Sugarcane Stalk \\ l Sugarcane Stalk
 i(77273),	-- Small Rice Cake \\ l Rice Cake
-i(77379),	-- Virmen Tooth \\ en Tooth
-i(77419),	-- Mask of Doubt \\ of Doubt
-i(77432),	-- Ancient Sutra \\ ent Sutra
-i(77452),	-- Defender's Arrow \\ nder's Arrow
-i(77455),	-- Mulberry Leaves \\ erry Leaves
-i(77456),	-- Raw Silk \\ Silk
 i(77469),	-- Salvaged Parts \\ aged Parts
-i(77475),	-- Stack of Mantras \\ k of Mantras
 i(77497),	-- Winning Ticket! \\ ing Ticket!
 i(77501),	-- Blue Blizzcon Bag \\ Blizzcon Bag
 i(78914),	-- Vial of Tiger Blood \\ of Tiger Blood
 i(78958),	-- Pillaged Jinyu Loot \\ aged Jinyu Loot
 i(79017),	-- Mysterious Seed \\ erious Seed
-i(79025),	-- Slitherscale Harpoon \\ herscale Harpoon
-i(79027),	-- Saltback Meat \\ back Meat
-i(79028),	-- Saltback Meat Scrap \\ back Meat Scrap
-i(79030),	-- Honeycomb \\ ycomb
 i(79039),	-- Fire Wood \\ Wood
-i(79043),	-- Bouncy Ball \\ cy Ball
-i(79046),	-- Sugar Minnow \\ r Minnow
-i(79049),	-- Serpentrider Relic \\ entrider Relic
 i(79061),	-- Enchant Weapon - Pandamonium \\ ant Weapon - Pandamonium
 i(79063),	-- Reinforced Mining Pick \\ forced Mining Pick
 i(79102),	-- Green Cabbage Seeds \\ n Cabbage Seeds
-i(79197),	-- Glade Glimmer \\ e Glimmer
-i(79198),	-- Spindly Bloodfeather \\ dly Bloodfeather
 i(79201),	-- Faded Glyph \\ d Glyph
-i(79237),	-- Enormous Crocolisk Tail \\ mous Crocolisk Tail
 i(79238),	-- Enormous Crocolisk Tail \\ mous Crocolisk Tail
 i(79244),	-- Fairlands Gazelle Meat \\ lands Gazelle Meat
 i(79246),	-- Delicate Blossom Petals \\ cate Blossom Petals
@@ -18749,91 +18700,20 @@ i(79513),	-- Charred Glyph \\ red Glyph
 i(79514),	-- Charred Glyph \\ red Glyph
 i(79515),	-- Charred Glyph \\ red Glyph
 i(79538),	-- Glyph of the Heavens \\ h of the Heavens
-i(79713),	-- Dynastic Tablet \\ stic Tablet
-i(79745),	-- Sunwalker Scout's Report \\ alker Scout's Report
-i(79753),	-- Slingtail Key \\ gtail Key
+i(79731),	-- Scroll of Wisdom \\ ll of Wisdom
 i(79784),	-- Diving Helm \\ ng Helm
-i(79807),	-- Waterspeaker's Staff \\ rspeaker's Staff
-i(79808),	-- Ceremonial Robes \\ monial Robes
-i(79809),	-- Jade Crown \\ Crown
-i(79810),	-- Rosewood Beads \\ wood Beads
-i(79811),	-- Glassfin Heirloom \\ sfin Heirloom
 i(79812),	-- Alliance Cloak \\ ance Cloak
 i(79813),	-- Alliance Scrap \\ ance Scrap
-i(79824),	-- Stolen Vegetable \\ en Vegetable
 i(79826),	-- Spent Shado-Pan Arrow \\ t Shado-Pan Arrow
-i(79827),	-- Authentic Valley Stir Fry \\ entic Valley Stir Fry
-i(79828),	-- Yak Statuette \\ Statuette
-i(79833),	-- Shadelight Truffle \\ elight Truffle
-i(79864),	-- Cindergut Pepper \\ ergut Pepper
-i(79866),	-- Kunzen Legend-Book \\ en Legend-Book
-i(79867),	-- Fatty Goatsteak \\ y Goatsteak
-i(79870),	-- Yu-Ping Soup \\ ing Soup
-i(79871),	-- Spicy Shrimp Dumplings \\ y Shrimp Dumplings
-i(79875),	-- Song of the Vale \\ of the Vale
-i(79884),	-- Bucket of Slicky Water \\ et of Slicky Water
-i(79885),	-- Barrel of Fireworks \\ el of Fireworks
-i(79894),	-- Mushan Tail Stew \\ an Tail Stew
-i(79895),	-- Master's Pot \\ er's Pot
 i(79906),	-- Umbrella of Chi-Ji \\ ella of Chi-Ji
 i(79929),	-- Qu Mo Mask \\ o Mask
 i(79932),	-- Qu Mo Mask \\ o Mask
-i(80013),	-- Shademaster Kiryn's Report \\ emaster Kiryn's Report
-i(80014),	-- Rivett Clutchpop's Report \\ tt Clutchpop's Report
-i(80015),	-- Shokia's Report \\ ia's Report
 i(80040),	-- Endless Master Healing Potion \\ ess Master Healing Potion
-i(80061),	-- Riko's Report \\ 's Report
-i(80074),	-- Celestial Jade \\ stial Jade
-i(80116),	-- Partially Chewed Carrot \\ ially Chewed Carrot
-i(80122),	-- Spideroot \\ eroot
-i(80127),	-- Shadelight Truffle Spores \\ elight Truffle Spores
-i(80133),	-- Preserved Vegetables \\ erved Vegetables
-i(80134),	-- Uncut Chrysoberyl \\ t Chrysoberyl
-i(80136),	-- Waxed Plank \\ d Plank
-i(80137),	-- Ransacked Ring \\ acked Ring
-i(80138),	-- Stolen Circlet \\ en Circlet
-i(80139),	-- Burglarized Bracelet \\ larized Bracelet
-i(80140),	-- Bloodbloom \\ dbloom
-i(80141),	-- Cave Lily \\ Lily
-i(80142),	-- Ghostcap \\ tcap
-i(80143),	-- Violet Lichen \\ et Lichen
-i(80144),	-- Tasty T-Bone \\ y T-Bone
-i(80176),	-- Water-Damaged Gear \\ r-Damaged Gear
-i(80177),	-- Rusty Locking Bolt \\ y Locking Bolt
 i(80184),	-- Pink Melon \\ Melon
-i(80212),	-- The Master's Flame \\ Master's Flame
-i(80213),	-- Spicemaster Jin Jao's Payment \\ emaster Jin Jao's Payment
-i(80214),	-- Trader Jambeezi's Payment \\ er Jambeezi's Payment
-i(80215),	-- Innkeeper Lei Lan's Payment \\ eeper Lei Lan's Payment
-i(80216),	-- Lolo Lio's Payment \\ Lio's Payment
 i(80220),	-- Forest Remedy \\ st Remedy
 i(80222),	-- Battle Helm of the Thunder King \\ le Helm of the Thunder King
-i(80223),	-- Old Hillpaw's Prize Chicken \\ Hillpaw's Prize Chicken
-i(80228),	-- Enormous Cattail Grouper Tooth \\ mous Cattail Grouper Tooth
-i(80229),	-- Blue Freshwater Pearl \\ Freshwater Pearl
-i(80231),	-- Goldenfire Orchid \\ enfire Orchid
-i(80232),	-- Bloody Plainshawk Leg \\ dy Plainshawk Leg
-i(80233),	-- Grilled Plainshawk Leg \\ led Plainshawk Leg
-i(80234),	-- Yoon's Apple \\ 's Apple
-i(80235),	-- Yoon's Craneberry \\ 's Craneberry
-i(80236),	-- Apple-Berry Hooch \\ e-Berry Hooch
-i(80240),	-- Strange Spherical Stone \\ nge Spherical Stone
-i(80241),	-- Muskpaw's Keepsake \\ paw's Keepsake
-i(80260),	-- Dojani Eel \\ ni Eel
-i(80262),	-- Beloved Ring \\ ved Ring
-i(80277),	-- Jagged Abalone Meat \\ ed Abalone Meat
-i(80295),	-- Packet of Green Cabbage Seeds \\ et of Green Cabbage Seeds
-i(80302),	-- EZ-Gro Green Cabbage Seeds \\ ro Green Cabbage Seeds
-i(80303),	-- Pristine Crane Egg \\ tine Crane Egg
-i(80310),	-- Silver Goby \\ er Goby
-i(80314),	-- EZ-Gro Green Cabbage \\ ro Green Cabbage
-i(80337),	-- Ken-Ken's Mask \\ Ken's Mask
-i(80403),	-- Angler's Fishing Spear \\ er's Fishing Spear
 i(80432),	-- Heavy Ghost Iron Bar \\ y Ghost Iron Bar
-i(80437),	-- Armored Carp \\ red Carp
-i(80484),	-- Explosive Keg \\ osive Keg
 i(80511),	-- Revelite Crystal \\ lite Crystal
-i(80529),	-- Prickly Puffer Spine \\ kly Puffer Spine
 i(80546),	-- Tap Tool \\ Tool
 i(80581),	-- Charred Glyph \\ red Glyph
 i(80584),	-- Charred Glyph \\ red Glyph
@@ -18850,24 +18730,15 @@ i(80595),	-- White Turnip Seeds \\ e Turnip Seeds
 i(80596),	-- Keg of Explosive Powder \\ of Explosive Powder
 i(80597),	-- Intriguing Mogu Relic \\ iguing Mogu Relic
 i(80598),	-- Zhen's Banner \\ 's Banner
-i(80599),	-- Goblin Fishing Bomb \\ in Fishing Bomb
-i(80600),	-- Stinger \\ ger
 i(80610),	-- Conjured Mana Pudding \\ ured Mana Pudding
 i(80618),	-- Conjured Mana Fritter \\ ured Mana Fritter
-i(80806),	-- Broken Bamboo Stalk \\ en Bamboo Stalk
 i(80807),	-- Battle Axe of the Thunder King \\ le Axe of the Thunder King
 i(80808),	-- Battle Spear of the Thunder King \\ le Spear of the Thunder King
 i(80809),	-- Bag of Green Cabbage Seeds \\ of Green Cabbage Seeds
 i(80816),	-- Spirit of the Season \\ it of the Season
 i(80827),	-- Confusing Treasure Map \\ using Treasure Map
-i(80830),	-- Rusty Shipwreck Debris \\ y Shipwreck Debris
-i(80831),	-- Snapclaw's Claw \\ claw's Claw
-i(80832),	-- Viseclaw Fisher Eye \\ claw Fisher Eye
-i(80907),	-- Opalescent Blue Crab Shell \\ escent Blue Crab Shell
 i(81055),	-- Darkmoon Ride Ticket \\ moon Ride Ticket
 i(81115),	-- Lifeless Shark \\ less Shark
-i(81116),	-- Suncrawler \\ rawler
-i(81122),	-- Wolf Piranha \\ Piranha
 i(81124),	-- Crystallized Droplet \\ tallized Droplet
 i(81125),	-- Windswept Pages \\ swept Pages
 i(81128),	-- Signet of Dancing Jade \\ et of Dancing Jade
@@ -18991,19 +18862,15 @@ i(82448),	-- Smoked Squid Belly \\ ed Squid Belly
 i(82449),	-- Barnacle Bouillabaisse \\ acle Bouillabaisse
 i(82450),	-- Cornmeal Biscuit \\ meal Biscuit
 i(82451),	-- Frybread \\ read
-i(82468),	-- Yak Lasso \\ Lasso
 i(82808),	-- Call of the Lorewalkers \\ of the Lorewalkers
 i(82829),	-- Windwool Bandage \\ wool Bandage
 i(82866),	-- Pound of Crocolisk Meat \\ d of Crocolisk Meat
 i(82868),	-- Blood Lily \\ d Lily
-i(82869),	-- Meaty Turtle Haunch \\ y Turtle Haunch
 i(82870),	-- Strange Relic \\ nge Relic
 i(83006),	-- Greater Tiger Fang Inscription \\ ter Tiger Fang Inscription
 i(83007),	-- Greater Tiger Claw Inscription \\ ter Tiger Claw Inscription
 i(83064),	-- Spinefish \\ efish
 i(83065),	-- Desecrated Carcass \\ crated Carcass
-i(83076),	-- Between a Saurok and a Hard Place \\ een a Saurok and a Hard Place
-i(83092),	-- Orb of Mystery \\ of Mystery
 i(83094),	-- Foote Tripel \\ e Tripel
 i(83095),	-- Lagrave Stout \\ ave Stout
 i(83096),	-- Charred Glyph \\ red Glyph
@@ -19011,11 +18878,7 @@ i(83107),	-- Charred Glyph \\ red Glyph
 i(83120),	-- Amber Medallion \\ r Medallion
 i(83124),	-- Mug of Jungle Brew \\ of Jungle Brew
 i(83128),	-- Brew Defender Ball \\ Defender Ball
-i(83129),	-- Cloudrunner Egg \\ drunner Egg
-i(83130),	-- Shan'ze Tablet \\ 'ze Tablet
-i(83134),	-- Bronze Claws \\ ze Claws
 i(83137),	-- Hozen Remedy Pouch \\ n Remedy Pouch
-i(83138),	-- Onyx Heart \\ Heart
 i(83141),	-- Bold Serpent's Eye \\ Serpent's Eye
 i(83142),	-- Quick Serpent's Eye \\ k Serpent's Eye
 i(83143),	-- Fractured Serpent's Eye \\ tured Serpent's Eye
@@ -19028,7 +18891,6 @@ i(83149),	-- Sparkling Serpent's Eye \\ kling Serpent's Eye
 i(83150),	-- Brilliant Serpent's Eye \\ liant Serpent's Eye
 i(83151),	-- Delicate Serpent's Eye \\ cate Serpent's Eye
 i(83152),	-- Flashing Serpent's Eye \\ hing Serpent's Eye
-i(83153),	-- Bronze Claw \\ ze Claw
 i(83156),	-- Trembling Stone Shard \\ bling Stone Shard
 i(83157),	-- Shattered Bone Fragment \\ tered Bone Fragment
 i(83767),	-- Krosh's Back \\ h's Back
@@ -19048,7 +18910,6 @@ i(83786),	-- Rothek's Resonating Crystal \\ ek's Resonating Crystal
 i(83795),	-- Scrying Roguestone \\ ing Roguestone
 i(84070),	-- Fearwurm Relic \\ wurm Relic
 i(84074),	-- Fearwurm Badge \\ wurm Badge
-i(84102),	-- Ancient Arcane Powder \\ ent Arcane Powder
 i(84121),	-- Silken Feather \\ en Feather
 i(84240),	-- Fresh Whitepetal Worm \\ h Whitepetal Worm
 i(84241),	-- Whitepetal Reed \\ epetal Reed
@@ -19141,10 +19002,6 @@ i(85581),	-- Shado-Pan Torch \\ o-Pan Torch
 i(85583),	-- Needle Mushrooms \\ le Mushrooms
 i(85584),	-- Silkworm Pupa \\ worm Pupa
 i(85585),	-- Red Beans \\ Beans
-i(85634),	-- Gurthani Tablet \\ hani Tablet
-i(85635),	-- Pristine Mire Beast Eye \\ tine Mire Beast Eye
-i(85664),	-- Amber Sap \\ r Sap
-i(85665),	-- Mushan Tongue \\ an Tongue
 i(85681),	-- Lushroom \\ room
 i(85683),	-- Charred Glyph \\ red Glyph
 i(85684),	-- Charred Glyph \\ red Glyph
@@ -19161,40 +19018,23 @@ i(85698),	-- Charred Glyph \\ red Glyph
 i(85699),	-- Charred Glyph \\ red Glyph
 i(85700),	-- Charred Glyph \\ red Glyph
 i(85716),	-- Charred Glyph \\ red Glyph
-i(85774),	-- Ancient Tiger's Blood \\ ent Tiger's Blood
 i(85778),	-- Stolen Mistfall Keg \\ en Mistfall Keg
 i(85782),	-- Mistfall Water Bucket \\ fall Water Bucket
 i(85783),	-- Captain Jack's Head \\ ain Jack's Head
-i(85854),	-- The Needlebeak \\ Needlebeak
 i(85875),	-- Pure Amber \\ Amber
-i(85884),	-- Sonic Emitter \\ c Emitter
-i(85885),	-- Amber-Encrusted Brain \\ r-Encrusted Brain
 i(85950),	-- Mistfall Water Bucket \\ fall Water Bucket
-i(85955),	-- Dog's Whistle \\ s Whistle
-i(85981),	-- Black Market Merchandise \\ k Market Merchandise
-i(86009),	-- Resonating Crystal \\ nating Crystal
 i(86067),	-- Horde Missive \\ e Missive
 i(86068),	-- Alliance Missive \\ ance Missive
 i(86099),	-- Wu Kao Scouting Report \\ ao Scouting Report
 i(86100),	-- Farm Egg \\ Egg
-i(86392),	-- Letter to Sungshin Ironpaw \\ er to Sungshin Ironpaw
 i(86404),	-- Old Map \\ Map
 i(86421),	-- Old Man Thistle's Almanac \\ Man Thistle's Almanac
-i(86422),	-- Statue of Xuen \\ ue of Xuen
 i(86433),	-- Nice Necklace \\ Necklace
 i(86434),	-- Tasteful Tiara \\ eful Tiara
 i(86435),	-- Exquisite Earring \\ isite Earring
 i(86436),	-- Beautiful Brooch \\ tiful Brooch
-i(86446),	-- Sheepie \\ pie
-i(86465),	-- Old Sheepskin \\ Sheepskin
-i(86467),	-- Cho's Fireworks \\ s Fireworks
 i(86508),	-- Fresh Bread \\ h Bread
-i(86511),	-- Cho's Fireworks \\ s Fireworks
-i(86532),	-- Bag of Shado-Pan Gas Bombs \\ of Shado-Pan Gas Bombs
-i(86534),	-- Shiny Shado-Pan Coin \\ y Shado-Pan Coin
-i(86536),	-- Wu Kao Dart of Lethargy \\ ao Dart of Lethargy
 i(86541),	-- Charred Glyph \\ red Glyph
-i(86592),	-- Hozen Peace Pipe \\ n Peace Pipe
 i(86595),	-- Bag of Helpful Things \\ of Helpful Things
 i(87079),	-- Jade Bandit Figurine \\ Bandit Figurine
 i(87080),	-- Jade Magistrate Figurine \\ Magistrate Figurine
@@ -19215,9 +19055,6 @@ i(87279),	-- Charred Glyph \\ red Glyph
 i(87391),	-- Plundered Treasure \\ dered Treasure
 i(87392),	-- Glyph of Shadowy Friends \\ h of Shadowy Friends
 i(87393),	-- Charred Glyph \\ red Glyph
-i(87394),	-- Sonic Disruption Fork \\ c Disruption Fork
-i(87400),	-- Sap Jar \\ Jar
-i(87401),	-- Needler Wings \\ ler Wings
 i(87414),	-- Quality Folded Ghost Iron \\ ity Folded Ghost Iron
 i(87415),	-- Masterfully Folded Ghost Iron \\ erfully Folded Ghost Iron
 i(87416),	-- Perfect Folded Ghost Iron \\ ect Folded Ghost Iron
@@ -19229,12 +19066,6 @@ i(87470),	-- Scabripper Necklace \\ ripper Necklace
 i(87471),	-- Stitcher's Spare Needles \\ cher's Spare Needles
 i(87472),	-- Gaze of the Serpent \\ of the Serpent
 i(87530),	-- A Steamy Romance Novel: Hot and Misty \\ eamy Romance Novel: Hot and Misty
-i(87553),	-- Red Radish \\ Radish
-i(87554),	-- Sweet Lakemelon \\ t Lakemelon
-i(87555),	-- Fuzzy Peach \\ y Peach
-i(87556),	-- Black Cherries \\ k Cherries
-i(87557),	-- Bundle of Groceries \\ le of Groceries
-i(87558),	-- Ella's Brew \\ 's Brew
 i(87559),	-- Greater Crane Wing Inscription \\ ter Crane Wing Inscription
 i(87560),	-- Greater Ox Horn Inscription \\ ter Ox Horn Inscription
 i(87577),	-- Ox Horn Inscription \\ orn Inscription
@@ -19299,23 +19130,11 @@ i(87727),	-- Sack of Reef Octopus \\ of Reef Octopus
 i(87728),	-- Sack of Krasarang Paddlefish \\ of Krasarang Paddlefish
 i(87729),	-- Sack of Golden Carp \\ of Golden Carp
 i(87730),	-- Sack of Crocolisk Belly \\ of Crocolisk Belly
-i(87763),	-- Ella's Brew \\ 's Brew
-i(87790),	-- Ancient Guo-Lai Artifact \\ ent Guo-Lai Artifact
-i(87798),	-- Stack of Papers \\ k of Papers
 i(87807),	-- Stone of the Water Strider \\ e of the Water Strider
-i(87811),	-- Commissioned Painting \\ issioned Painting
-i(87812),	-- Jade Serpent Commission \\ Serpent Commission
-i(87813),	-- Zan'thik Shackles \\ thik Shackles
-i(87814),	-- Engraved Jade Disk \\ aved Jade Disk
-i(87815),	-- Jade Disk \\ Disk
 i(87816),	-- Tigersblood Tincture \\ rsblood Tincture
-i(87817),	-- Incarnadine Ink \\ rnadine Ink
 i(87821),	-- Coagulated Tiger's Blood \\ ulated Tiger's Blood
 i(87828),	-- Tigersblood Pigment \\ rsblood Pigment
-i(87831),	-- Inscribed Monument \\ ribed Monument
-i(87841),	-- Korven's Experimental Grenades \\ en's Experimental Grenades
 i(87871),	-- Massive Kyparite Core \\ ive Kyparite Core
-i(87874),	-- Kyparite Shards \\ rite Shards
 i(87875),	-- Charred Glyph \\ red Glyph
 i(87878),	-- Enormous Kunchong Mandibles \\ mous Kunchong Mandibles
 i(87880),	-- Charred Glyph \\ red Glyph
@@ -19340,7 +19159,6 @@ i(87899),	-- Charred Glyph \\ red Glyph
 i(87900),	-- Charred Glyph \\ red Glyph
 i(87901),	-- Charred Glyph \\ red Glyph
 i(87902),	-- Charred Glyph \\ red Glyph
-i(87903),	-- Dread Amber Shards \\ d Amber Shards
 i(88008),	-- Long Spine \\ Spine
 i(88009),	-- Elegant Fin \\ ant Fin
 i(88151),	-- Smelly Feather \\ ly Feather
@@ -19361,6 +19179,7 @@ i(88368),	-- Flamelager's Summer Keg \\ elager's Summer Keg
 i(88369),	-- Alerage's Reserve Keg \\ age's Reserve Keg
 i(88378),	-- Mothallus' Spinneret \\ allus' Spinneret
 i(88380),	-- Snow Lily Incense \\ Lily Incense
+i(88382),	-- Keenbean Kafa \\ bean Kafa
 i(88386),	-- Kickable Keg \\ able Keg
 i(88416),	-- Adrenaline Shot \\ naline Shot
 i(88538),	-- Sha-Haunted Crystal \\ Haunted Crystal
@@ -19372,13 +19191,7 @@ i(88588),	-- Exploding Keg \\ oding Keg
 i(88604),	-- Nat's Fishing Journal \\ s Fishing Journal
 i(88669),	-- Vegetron 4000 \\ tron 4000
 i(88715),	-- Ashes of Warlord Gurthan \\ s of Warlord Gurthan
-i(88806),	-- Portrait of Madam Goya \\ rait of Madam Goya
-i(88807),	-- Uninscribed Monument \\ scribed Monument
-i(88808),	-- Fine Canvas \\ Canvas
 i(88855),	-- Stolen Sri-La Stout \\ en Sri-La Stout
-i(88894),	-- Rescued Serpent \\ ued Serpent
-i(88895),	-- Serpent's Scale \\ ent's Scale
-i(88907),	-- Tiny Spider Eye \\ Spider Eye
 i(88911),	-- Balanced Adventurine \\ nced Adventurine
 i(88912),	-- Effulgent Adventurine \\ lgent Adventurine
 i(88913),	-- Energized Adventurine \\ gized Adventurine
@@ -19430,17 +19243,11 @@ i(88960),	-- Shifting Zyanite \\ ting Zyanite
 i(88961),	-- Sovereign Zyanite \\ reign Zyanite
 i(88962),	-- Timeless Zyanite \\ less Zyanite
 i(88963),	-- Veiled Zyanite \\ ed Zyanite
-i(88966),	-- Sha Attunement Device \\ Attunement Device
 i(88987),	-- Mysterious Zyanite \\ erious Zyanite
-i(89052),	-- Tiny Bag of Poop \\ Bag of Poop
-i(89053),	-- Big Bag of Poop \\ Bag of Poop
-i(89054),	-- Stolen Boots \\ en Boots
-i(89113),	-- Golden Honey \\ en Honey
 i(89123),	-- Wu Kao Explosive \\ ao Explosive
 i(89197),	-- Windshear Cactus Seed \\ shear Cactus Seed
 i(89202),	-- Raptorleaf Seed \\ orleaf Seed
 i(89233),	-- Songbell Seed \\ bell Seed
-i(89297),	-- Shao-Tien Spirit Dagger \\ -Tien Spirit Dagger
 i(89326),	-- Witchberry Seeds \\ hberry Seeds
 i(89328),	-- Jade Squash Seeds \\ Squash Seeds
 i(89329),	-- Striped Melon Seeds \\ ped Melon Seeds
@@ -19462,14 +19269,10 @@ i(89598),	-- Tiger Brew of Pilgrimage \\ r Brew of Pilgrimage
 i(89599),	-- Tiger Brew of Meditation \\ r Brew of Meditation
 i(89600),	-- Tiger Brew of Fallen Blossoms \\ r Brew of Fallen Blossoms
 i(89601),	-- Tiger Brew of Serenity \\ r Brew of Serenity
-i(89602),	-- Alliance Flare \\ ance Flare
-i(89603),	-- Encoded Captain's Log \\ ded Captain's Log
 i(89607),	-- Crate of Leather \\ e of Leather
 i(89608),	-- Crate of Ore \\ e of Ore
 i(89609),	-- Crate of Dust \\ e of Dust
 i(89610),	-- Pandaria Herbs \\ aria Herbs
-i(89612),	-- Sully's Flaregun \\ y's Flaregun
-i(89624),	-- Sully's Flaregun \\ y's Flaregun
 i(89640),	-- Life Spirit \\ Spirit
 i(89641),	-- Water Spirit \\ r Spirit
 i(89674),	-- Tense Imperial Amethyst \\ e Imperial Amethyst
@@ -19500,8 +19303,6 @@ i(89856),	-- Amber Encased Treasure Pouch \\ r Encased Treasure Pouch
 i(89857),	-- Dividends of the Everlasting Spring \\ dends of the Everlasting Spring
 i(89858),	-- Cache of Mogu Riches \\ e of Mogu Riches
 i(89880),	-- Dented Shovel \\ ed Shovel
-i(89902),	-- Empty Pitcher \\ y Pitcher
-i(89903),	-- Thousand-Year Water \\ sand-Year Water
 i(89911),	-- Alliance Firework \\ ance Firework
 i(89912),	-- Horde Firework \\ e Firework
 i(89990),	-- Assorted Parts \\ rted Parts
@@ -21336,11 +21137,11 @@ i(114243),	-- Abu'Gar's Finest Reel \\ Gar's Finest Reel
 i(114244),	-- GG-117 Micro-Jetpack \\ 17 Micro-Jetpack
 i(114245),	-- Abu'Gar's Favorite Lure \\ Gar's Favorite Lure
 i(114246),	-- "Skyterror" Personal Delivery System \\ terror" Personal Delivery System
-i(114279),	-- Ring \\ 
-i(114280),	-- Ring \\ 
-i(114281),	-- Ring \\ 
-i(114282),	-- Ring \\ 
-i(114283),	-- Ring \\ 
+i(114279),	-- Ring \\
+i(114280),	-- Ring \\
+i(114281),	-- Ring \\
+i(114282),	-- Ring \\
+i(114283),	-- Ring \\
 i(114285),	-- Fangtooth Ring \\ tooth Ring
 i(114286),	-- Melting Pureice Band \\ ing Pureice Band
 i(114287),	-- Ivy Bloodring \\ Bloodring
@@ -21356,11 +21157,11 @@ i(114304),	-- Spectral Ghost of Insight \\ tral Ghost of Insight
 i(114305),	-- Spectral Whisper of Healing \\ tral Whisper of Healing
 i(114306),	-- Spectral Claw of Might \\ tral Claw of Might
 i(114307),	-- Spectral Miasma of Fortitude \\ tral Miasma of Fortitude
-i(114342),	-- Ring \\ 
-i(114343),	-- Ring \\ 
-i(114344),	-- Ring \\ 
-i(114345),	-- Ring \\ 
-i(114346),	-- Ring \\ 
+i(114342),	-- Ring \\
+i(114343),	-- Ring \\
+i(114344),	-- Ring \\
+i(114345),	-- Ring \\
+i(114346),	-- Ring \\
 i(114348),	-- Arrow-Kissed Loop \\ w-Kissed Loop
 i(114349),	-- Shadowflame Seal \\ owflame Seal
 i(114350),	-- Transluminescent Band \\ sluminescent Band
@@ -21371,36 +21172,36 @@ i(114355),	-- Locket of Crackling Lightning \\ et of Crackling Lightning
 i(114356),	-- Sea Foam Pendant \\ Foam Pendant
 i(114357),	-- Scytheblade Choker \\ heblade Choker
 i(114358),	-- Choker of Binding Steel \\ er of Binding Steel
-i(114403),	-- Ring \\ 
-i(114404),	-- Ring \\ 
-i(114405),	-- Ring \\ 
-i(114406),	-- Ring \\ 
-i(114407),	-- Ring \\ 
+i(114403),	-- Ring \\
+i(114404),	-- Ring \\
+i(114405),	-- Ring \\
+i(114406),	-- Ring \\
+i(114407),	-- Ring \\
 i(114409),	-- Poisoner's Ring \\ oner's Ring
 i(114410),	-- Loop of Frozen Leaves \\ of Frozen Leaves
 i(114411),	-- Windfire Band \\ fire Band
 i(114412),	-- Valiant Soldier's Signet \\ ant Soldier's Signet
 i(114413),	-- Doomed Guardian's Band \\ ed Guardian's Band
-i(114464),	-- Ring \\ 
-i(114465),	-- Ring \\ 
-i(114466),	-- Ring \\ 
-i(114467),	-- Ring \\ 
-i(114468),	-- Ring \\ 
+i(114464),	-- Ring \\
+i(114465),	-- Ring \\
+i(114466),	-- Ring \\
+i(114467),	-- Ring \\
+i(114468),	-- Ring \\
 i(114470),	-- Stealthy Hunter's Band \\ lthy Hunter's Band
 i(114471),	-- Mindstalker Seal \\ stalker Seal
 i(114472),	-- Loop of Soothing Visions \\ of Soothing Visions
 i(114473),	-- Calcified Finger of Dread \\ ified Finger of Dread
 i(114474),	-- Unbowed Signet \\ wed Signet
-i(114525),	-- Ring \\ 
-i(114526),	-- Ring \\ 
-i(114527),	-- Ring \\ 
-i(114528),	-- Ring \\ 
-i(114529),	-- Ring \\ 
-i(114586),	-- RING \\ 
-i(114587),	-- Ring \\ 
-i(114588),	-- RING \\ 
-i(114589),	-- RING \\ 
-i(114590),	-- RING \\ 
+i(114525),	-- Ring \\
+i(114526),	-- Ring \\
+i(114527),	-- Ring \\
+i(114528),	-- Ring \\
+i(114529),	-- Ring \\
+i(114586),	-- RING \\
+i(114587),	-- Ring \\
+i(114588),	-- RING \\
+i(114589),	-- RING \\
+i(114590),	-- RING \\
 i(114610),	-- Formidable Jar of Doom \\ idable Jar of Doom
 i(114611),	-- Formidable Orb of Putrescence \\ idable Orb of Putrescence
 i(114612),	-- Formidable Censer of Faith \\ idable Censer of Faith
@@ -21580,7 +21381,7 @@ i(115978),	-- Enchant Weapon - Glory of the Frostwolf \\ ant Weapon - Glory of t
 i(116020),	-- An Old Key \\ ld Key
 i(116024),	-- Holy Tome \\ Tome
 i(116054),	-- Garden \\ en
-i(116055),	-- Mine \\ 
+i(116055),	-- Mine \\
 i(116063),	-- Prestige Card: The Turn \\ tige Card: The Turn
 i(116068),	-- Ring of Promises \\ of Promises
 i(116069),	-- Misappropriated Draenic Texts \\ ppropriated Draenic Texts
@@ -22081,7 +21882,7 @@ i(120180),	-- Ogre Cage Key \\ Cage Key
 i(120181),	-- Giants' Stash of Weapons \\ ts' Stash of Weapons
 i(120183),	-- Excess Potion of Accumulated Power \\ ss Potion of Accumulated Power
 i(120204),	-- Forged Weapons and Armor \\ ed Weapons and Armor
-i(120205),	-- XP \\ 
+i(120205),	-- XP \\
 i(120263),	-- Unstable Ensorcelled Tarot \\ able Ensorcelled Tarot
 i(120264),	-- Unstable Greater Ensorcelled Tarot \\ able Greater Ensorcelled Tarot
 i(120269),	-- Autographed Portrait of Jaina Proudmoore \\ graphed Portrait of Jaina Proudmoore
@@ -23008,7 +22809,7 @@ i(130246),	-- Saber's Eye of Strength \\ r's Eye of Strength
 i(130247),	-- Saber's Eye of Agility \\ r's Eye of Agility
 i(130248),	-- Saber's Eye of Intellect \\ r's Eye of Intellect
 i(130250),	-- Jeweled Lockpick \\ led Lockpick
-i(130252),	-- Hack \\ 
+i(130252),	-- Hack \\
 i(130253),	-- Slash \\ h
 i(130255),	-- Latara's Bow \\ ra's Bow
 i(130257),	-- Pocket Friend \\ et Friend
@@ -23333,7 +23134,7 @@ i(133583),	-- Warmongering Gladiator's Runeaxe \\ ongering Gladiator's Runeaxe
 i(133586),	-- Illidari Waterskin \\ dari Waterskin
 i(133587),	-- Broken Eye Protectors \\ en Eye Protectors
 i(133588),	-- Flaked Sea Salt \\ ed Sea Salt
-i(133589),	-- Dalape�o Pepper \\ Dalapeño Pepper \\ Dalape�o Pepper \\ pe�o Pepper
+i(133589),	-- Dalape�o Pepper \\ Dalapeño Pepper \\ Dalape�o Pepper \\ pe�o Pepper
 i(133590),	-- Muskenbutter \\ enbutter
 i(133591),	-- River Onion \\ r Onion
 i(133592),	-- Stonedark Snail \\ edark Snail
@@ -23886,7 +23687,7 @@ i(137597),	-- Oily Transmutagen \\ Transmutagen
 i(137598),	-- Pearl of Arcane Wisdom \\ l of Arcane Wisdom
 i(137601),	-- Stack of Letters \\ k of Letters
 i(137604),	-- Unstable Riftstone \\ able Riftstone
-i(137609),	-- Wood \\ 
+i(137609),	-- Wood \\
 i(137610),	-- Intact Greatstag Antler \\ ct Greatstag Antler
 i(137611),	-- Pristine Eagle Tailfeather \\ tine Eagle Tailfeather
 i(137612),	-- Raw Meat \\ Meat
@@ -24066,7 +23867,7 @@ i(138814),	-- Adventurer's Renown \\ nturer's Renown
 i(138815),	-- Old Grizzleback's Staff \\ Grizzleback's Staff
 i(138816),	-- Adventurer's Glory \\ nturer's Glory
 i(138817),	-- Demonic Runestone \\ nic Runestone
-i(138826),	-- ???? \\ 
+i(138826),	-- ???? \\
 i(138830),	-- Demonic Logbook on Uthalesh \\ nic Logbook on Uthalesh
 i(138839),	-- Valiant's Glory \\ ant's Glory
 i(138849),	-- Demonic Logbook on Thal'kiel \\ nic Logbook on Thal'kiel
@@ -24687,7 +24488,7 @@ i(140629),	-- Bottled Maelstrom \\ led Maelstrom
 i(140631),	-- Nightpear \\ tpear
 i(140635),	-- Notable Antiquities of Ancient Azeroth \\ ble Antiquities of Ancient Azeroth
 i(140654),	-- Pestilential Hide of Nythendra \\ ilential Hide of Nythendra
-i(140655),	-- Log \\ 
+i(140655),	-- Log \\
 i(140668),	-- Meaty Racks of Musken Ribs \\ y Racks of Musken Ribs
 i(140670),	-- Souvenir Elekk \\ enir Elekk
 i(140671),	-- Souvenir Raptor \\ enir Raptor
@@ -25625,7 +25426,7 @@ i(147563),	-- Stone Totem \\ e Totem
 i(147564),	-- Diamond Stone \\ ond Stone
 i(147565),	-- Book of Lost Sermons \\ of Lost Sermons
 i(147566),	-- Horn of Valor \\ of Valor
-i(147567),	-- Soothing Focus \\ 
+i(147567),	-- Soothing Focus \\
 i(147568),	-- Essence of Nether \\ nce of Nether
 i(147569),	-- Arcane Trap \\ ne Trap
 i(147570),	-- Dreamgrove Leaf \\ mgrove Leaf
@@ -25746,30 +25547,22 @@ i(150931),	-- Seal of Authority \\ of Authority
 i(150938),	-- Demonic Corestone \\ nic Corestone
 i(150940),	-- Soul Crystal \\ Crystal
 i(150941),	-- Voidcallers' Scroll \\ callers' Scroll
-i(150942),	-- Argunite Crystal \\ nite Crystal \\ gunite Crystal
 i(150943),	-- Smoldering Chronoshard \\ dering Chronoshard
 i(150944),	-- Fel-Touched Chronoshard \\ Touched Chronoshard
 i(150945),	-- Gleaming Chronoshard \\ ming Chronoshard
 i(150946),	-- Frozen Chronoshard \\ en Chronoshard
 i(150991),	-- [Unused] \\ rgus Trinket AGI A
 i(150992),	-- [Unused] \\ rgus Trinket STR A
-i(150993),	-- Army of the Light Code Book \\ of the Light Code Book
 i(150994),	-- [Unused] \\ rgus Trinket INT A
-i(150995),	-- Enigmatic Legion Orders \\ matic Legion Orders
 i(151017),	-- [Unused] \\ rgus Trinket STR B
 i(151018),	-- [Unused] \\ rgus Trinket INT B
 i(151019),	-- [Unused] \\ rgus Trinket AGI B
 i(151020),	-- [Unused] \\ rgus Ring B
 i(151028),	-- Demon Soul \\ n Soul
-i(151061),	-- Chewed Eredar Bones \\ ed Eredar Bones
-i(151088),	-- Heart of Nhal'athoth \\ t of Nhal'athoth
 i(151090),	-- The Crest of Knowledge \\ Crest of Knowledge
-i(151126),	-- Fragment of Acuity \\ ment of Acuity
-i(151127),	-- Fragment of Wit \\ ment of Wit
-i(151128),	-- Fragment of Guile \\ ment of Guile
 i(151129),	-- Emergency Wardrobe Kit \\ gency Wardrobe Kit
 i(151133),	-- Nomi Snacks \\ Snacks
-i(151188),	-- Devastator Energy Cell \\ stator Energy Cell
+i(151191),	-- Old Bottle Cap \\ Bottle Cap
 i(151197),	-- Polished Lamp \\ shed Lamp
 i(151240),	-- Corroded Hologram Crystal \\ oded Hologram Crystal \\ rgus AP A
 i(151241),	-- Blistering Infernal Fragment \\ tering Infernal Fragment \\ rgus AP B
@@ -25832,12 +25625,9 @@ i(151550),	-- Time-Lost Keepsake Box \\ -Lost Keepsake Box
 i(151551),	-- Time-Lost Keepsake Box \\ -Lost Keepsake Box
 i(151552),	-- Time-Lost Keepsake Box \\ -Lost Keepsake Box
 i(151553),	-- Time-Lost Keepsake Box \\ -Lost Keepsake Box
-i(151555),	-- Crystallized Memory \\ tallized Memory
 i(151556),	-- Spoils of the Triumphant \\ ls of the Triumphant
 i(151561),	-- Bauble of the Triumphant \\ le of the Triumphant
-i(151563),	-- Hallowed Prayer Effigy \\ owed Prayer Effigy
 i(151568),	-- Primal Sargerite \\ al Sargerite
-i(151570),	-- Lightbound Crystal \\ tbound Crystal
 i(151580),	-- Deadly Deep Chemirine \\ ly Deep Chemirine
 i(151583),	-- Quick Lightsphene \\ k Lightsphene
 i(151584),	-- Masterful Argulite \\ erful Argulite
@@ -25876,7 +25666,6 @@ i(151839),	-- Vindicator Plating \\ icator Plating
 i(151842),	-- Krokul Armor Set \\ ul Armor Set
 i(151843),	-- Eredath Armor Set \\ Mac'Aree Armor Set \\ Aree Armor Set
 i(151845),	-- Used Vial \\ Vial
-i(151851),	-- Immaculate Felcore \\ culate Felcore
 i(151866),	-- Tainted Scraps \\ ted Scraps
 i(151867),	-- Spoiled Fiendish Leather \\ led Fiendish Leather
 i(151868),	-- Corrupted Tooth \\ upted Tooth
@@ -25894,7 +25683,6 @@ i(151919),	-- Gladiator's Perseverance \\ iator's Perseverance
 i(151920),	-- Gladiator's Perseverance \\ iator's Perseverance
 i(151921),	-- Gladiator's Perseverance \\ iator's Perseverance
 i(151922),	-- Gladiator's Perseverance \\ iator's Perseverance
-i(151926),	-- Ionized Geographical Recorder \\ zed Geographical Recorder
 i(151927),	-- Prototype Gravitational Reduction Slippers \\ otype Gravitational Reduction Slippers
 i(151929),	-- Vindicaar Teleport Beacon \\ icaar Teleport Beacon
 i(151930),	-- Tears of the Naaru \\ s of the Naaru
@@ -25922,9 +25710,6 @@ i(152081),	-- Cloak of the Foregone Conqueror
 i(152082),	-- Cloak of the Foregone Protector
 i(152098),	-- Lightforged Warframe \\ tforged Warframe \\ tforged Warframe Activator
 i(152110),	-- Talisman of the Prophet \\ sman of the Prophet
-i(152200),	-- Dendrite Cluster \\ rite Cluster \\ gunite Stone
-i(152201),	-- Armory Key Fragment \\ ry Key Fragment
-i(152202),	-- Armor of the Triumvirate \\ r of the Triumvirate
 i(152203),	-- Reforged Armory Key \\ rged Armory Key
 i(152204),	-- Glowing Key Fragment \\ ing Key Fragment
 i(152205),	-- Glowing Key Fragment \\ eea's Satchel \\ ing Key Fragment
@@ -25940,10 +25725,7 @@ i(152386),	-- Raid - World Boss - Mistress Alluradel - Ring 1
 i(152387),	-- Raid - World Boss - Inquisitor Percontatum - Ring 2
 i(152388),	-- Raid - World Boss - Ovetigo - Ring 3
 i(152389),	-- Raid - World Boss - Pit Lord Vilemus - Ring 4
-i(152407),	-- Argunite Keystone \\ nite Keystone
 i(152408),	-- Stolen Pylon Core \\ en Pylon Core
-i(152411),	-- Delicate Panthara Scales \\ cate Panthara Scales
-i(152415),	-- Clotted Void Crystal \\ ted Void Crystal
 i(152419),	-- Fossilized Resin \\ ilized Resin
 i(152430),	-- Krokul Hovel Chronicle \\ Krokul Enclave Chronicle \\ ul Enclave Chronicle \\ rgus 1 Mission AP Item A
 i(152431),	-- Shadowguard Harvester \\ owguard Harvester \\ rgus 2 Mission AP Item A
@@ -25965,12 +25747,11 @@ i(152451),	-- Volatile Stygian Scroll \\ tile Stygian Scroll \\ ian Scroll
 i(152452),	-- Pulsing Wrathguard Skull \\ ating Wrathguard Skull \\ hguard Skull
 i(152453),	-- Fel-Infused Legion Effigy \\ Infused Legion Effigy \\ Infused Effigy
 i(152454),	-- Darklost Claw \\ lost Claw
-i(152465),	-- Banishment Stone Shard \\ shment Stone Shard \\ t Rock \\ erite Keystone
 i(152466),	-- Jewel of the Vindicaar \\ l of the Vindicaar
 i(152467),	-- Fragile Cargo \\ Lightforged Satchel Charge \\ tforged Satchel Charge
 i(152469),	-- Matrix Uplink \\ ix Uplink
 i(152470),	-- Matrix Uplink \\ ix Uplink
-i(152472),	-- Chieftain's Salve \\ ftain's Salve
+i(152504),	-- Shattered Seal of the Unrepentant Guardian \\ tered Seal of the Unrepentant Guardian
 i(152515),	-- Cloak of the Antoran Protector \\ Antoran Cloak of the Protector \\ ran Cloak of the Protector \\ Cloak of the Protector
 i(152516),	-- Cloak of the Antoran Conqueror \\ Antoran Cloak of the Conqueror \\ ran Cloak of the Conqueror \\ Cloak of the Conqueror
 i(152517),	-- Cloak of the Antoran Vanquisher \\ Antoran Cloak of the Vanquisher \\ ran Cloak of the Vanquisher \\ Cloak of the Vanquisher
@@ -25992,20 +25773,21 @@ i(152532),	-- Shoulders of the Antoran Protector \\ Antoran Shoulders of the Pro
 i(152558),	-- Cherry Pie Slice \\ ry Pie Slice
 i(152575),	-- Birth of the Ur'zul \\ h of the Ur'zul
 7.3.0.24500
-i(152593),	-- Essence of Light \\ nce of Light
-i(152594),	-- Essence of Shadow \\ nce of Shadow
+ \\ nce of Light
+ \\ nce of Shadow
 i(152619),	-- Astral Mana Potion \\ al Mana Potion
 i(152620),	-- Recipe: Astral Mana Potion \\ pe: Astral Mana Potion
 i(152621),	-- Recipe: Astral Mana Potion \\ pe: Astral Mana Potion
 i(152622),	-- Recipe: Astral Mana Potion \\ pe: Astral Mana Potion
 7.3.0.24539
-i(152648),	-- Brightsoul Scepter \\ htsoul Scepter
+ \\ htsoul Scepter
 i(152651),	-- Crumbling Chronicles of Argus \\ Argussian Reach Emissary Artifact Power
 i(152653),	-- Virtue of the Light \\ Commendation of the Light \\ Army of the Light Emissary Artifact Power
 i(152654),	-- Lesser Unity of the Orders \\ er Unity of the Orders
 i(152657),	-- Target Designator \\ et Designator
 7.3.0.24608
-i(152689),	-- Crystalline Construct Core \\ talline Construct Core
+ \\ talline Construct Core
+i(152700),	-- Krokul Battle Horn \\ Pit Lord Artifact Power
 i(152701),	-- 7.3 Raid - Antorus - Boss 11 - Trinket Melee Agi WS \\ Raid - Antorus - Boss 11 - Trinket Melee Agi WS
 i(152702),	-- 7.3 Raid - Antorus - Boss 11 - Trinket All WS \\ Raid - Antorus - Boss 11 - Trinket All WS
 i(152708),	-- [PH] Lightly Roasted Artifact Power \\ Lightly Roasted Artifact Power
@@ -26023,7 +25805,6 @@ i(152859),	-- Defaced Argussian Family Crest \\ ced Argussian Family Crest
 i(152861),	-- Rusted Cragscaler Horseshoe \\ ed Cragscaler Horseshoe
 i(152863),	-- Orphaned Krokul Doll \\ aned Krokul Doll
 7.3.0.24651
-i(151871),	-- Crate of Felslate \\ e of Felslate
 i(152602),	-- Remnant of Nhal'athoth \\ ant of Nhal'athoth
 i(152897),	-- Fouled Felcore \\ ed Felcore
 i(152906),	-- Rune of Passage \\ of Passage
@@ -26152,7 +25933,6 @@ i(153473),	-- Battering Tempest
 i(153474),	-- Thundering Impact
 i(153475),	-- Roar of the Crowd
 7.3.2.25079
-i(154880),	-- Cursed Shard
 i(154991),	-- Brawler's Footlocker
 7.3.2.25163
 i(155657),	-- Alor'idal Crystal Shard
@@ -26161,7 +25941,6 @@ i(93227),	-- Blood-Soaked Invitation
 i(97944),	-- Malevolent Gladiator's Spellblade
 i(132208),	-- Various Small Bones
 i(137467),	-- Shimmerfield Crystal
-i(155832),	-- Pristine Crystal Shard
 i(155905),	-- Cursed Rabbit's Foot
 i(155907),	-- Undercity "Skull Shocker"
 i(155909),	-- Bottled Stillwater
@@ -26171,13 +25950,7 @@ i(155918),	-- Special Duty Assignments
 i(156474),	-- Special Duty Assignments
 i(156477),	-- Special Duty Assignments
 i(156707),	-- Bret's Satchel of Helpful Goods
-i(156711),	-- Mysterious Ore
 i(156718),	-- Stolen Ore
-i(156794),	-- Silithid Brain
-i(156795),	-- Silithid Broodling
-i(156796),	-- Michiel Voidstrider's Head
-i(156797),	-- Twilight Silk
-i(157030),	-- Titan Prison Fragment
 8.0.1.25902
 i(144031),	-- Hardened Shovel
 i(144040),	-- Great Sea Mackerel
@@ -28740,7 +28513,6 @@ i(168952),	-- Hardened Spring
 i(169780),	-- Pulsating Blood Stone
 i(169781),	-- Overwhelmingly-Alluring Idol
 i(169782),	-- Beckoner's Rosetta Stone
-i(169783),	-- Cultist Pinky Finger
 i(170156),	-- Wavebeaten Armor Kit
 8.2.0.31229
 i(169976),	-- Disintegrating Leaf \\ Touch of the Everlasting Empty Item
@@ -29056,7 +28828,6 @@ i(174969),	-- Alpaca Saddlebag
 i(174983),	-- Void Sliver
 i(175002),	-- Amber Incubator
 8.3.0.32712
-i(174867),	-- Shard of Corruption
 i(175057),	-- H'partho's Whistle
 8.3.7.34872
 i(177955),	-- Spoiled Contaminant \\ TR: Deadly Momentum - 15 Corruption \\ Preserved Contaminant: Deadly Momentum

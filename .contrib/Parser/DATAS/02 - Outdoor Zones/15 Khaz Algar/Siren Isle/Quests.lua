@@ -213,6 +213,78 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					i(230795),	-- Experimental Go-Pack (QI!)
 				},
 			}),
+			q(83753, {	-- Cannon Karma
+				-- TODO: Pirates
+				["sourceQuests"] = { 84725 },	-- The Circlet Calls
+				["provider"] = { "n", 227818 },	-- Skaggit
+				["coord"] = { 69.3, 43.4, SIREN_ISLE },
+				["isWeekly"] = true,
+				["g"] = {
+					i(226133),	-- Blacksteel Cannonball (QI!)
+				},
+			}),
+			q(84001, {	-- Cart Blanche
+				-- TODO: Pirates
+				["sourceQuests"] = { 84725 },	-- The Circlet Calls
+				["provider"] = { "n", 232730 },	-- Machinist Kromleg
+				["coord"] = { 48.5, 53.0, SIREN_ISLE },
+				["isWeekly"] = true,
+				["g"] = {
+					o(456665, {	-- Ore Sample
+						i(226853),	-- Ore Sample (QI!)
+					}),
+				},
+			}),
+			q(84619, {	-- Ooker Dooker Literature Club
+				-- TODO: Pirates
+				["sourceQuests"] = { 84725 },	-- The Circlet Calls
+				["provider"] = { "n", 229716 },	-- Stellin Verasa
+				["coord"] = { 71.0, 39.6, SIREN_ISLE },
+				["isWeekly"] = true,
+				["g"] = {
+					i(231812), -- Hozen Poetry (QI!)
+					n(232825, {	-- First Mate Dat-Dat
+						i(231809),	-- First Mate Dat-Dat's Key (QI!)
+					}),
+					o(477098, {	-- Bilge Rat Trunk
+						i(231786), -- Ookler's Diary (QI!)
+					}),
+					o(477366, {	-- Dat-Dat's Book Stash
+						i(231802), -- Ashvane Co. Survey Report (QI!)
+					}),
+					o(477612, {	-- Siren Isle Manifest
+						i(231813), -- Siren Isle Manifest (QI!)
+					}),
+					o(477248, {	-- Songs of the Siren
+						i(231788), -- Songs of the Siren (QI!)
+					}),
+				},
+			}),
+			q(84299, {	-- Pirate Plunder
+				-- TODO: Pirates
+				["sourceQuests"] = { 84725 },	-- The Circlet Calls
+				["provider"] = { "n", 227818 },	-- Skaggit
+				["coord"] = { 69.3, 43.4, SIREN_ISLE },
+				["isWeekly"] = true,
+				["g"] = {
+					o(456869, {	-- Kaja'Cola Stash
+						i(227453),	-- Kaja'Cola Stash (QI!)
+					}),
+					o(457143, {	-- 
+						i(227670),	-- Kaja'Cola Can (QI!)
+					}),
+				},
+			}),
+			q(83827, {	-- Silence the Song
+				-- TODO: Pirates
+				["sourceQuests"] = { 84725 },	-- The Circlet Calls
+				["provider"] = { "n", 232753 },	-- Regald Hornfyre
+				["coord"] = { 45.2, 67.7, SIREN_ISLE },
+				["isWeekly"] = true,
+				["g"] = {
+					i(226261),	-- Sonic Scrambler (QI!)
+				},
+			}),
 			q(84225, {	-- Eggstinction
 				-- TODO: STORM PHASE
 				["sourceQuests"] = { 84725 },	-- The Circlet Calls
@@ -276,13 +348,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					i(232694), -- Transcribed Kul Tiran Journal [book]
 				},
 			}),
-			-- Snapdragon?
+			-- Snapdragon
 			q(85573, {	-- A Lifeline
 				--["sourceQuests"] = { 84547 },	-- Redemption Guaranteed (TODO: speculation)
 				["provider"] = { "n", 235216 },	-- Starving Snapdragon Runt
 				["coord"] = { 70.9, 48.6, SIREN_ISLE },
 				["g"] = {
 					i(234426),	-- Kaja'Cola-braised Meat (QI!)
+				},
+			}),
+			q(86483, {	-- Snap To It
+				--["sourceQuests"] = { 86486 },	-- Hungry, Hungry Snapdragon (TODO: It take 2 (same) dailies for this quest to pop)
+				["provider"] = { "n", 235237 },	-- Growing Snapdragon Runt
+				["coord"] = { 70.9, 48.6, SIREN_ISLE },
+				["g"] = {
+					i(234443),	-- Meaty Ration (QI!)
 				},
 			}),
 			q(86486, {	-- Hungry, Hungry Snapdragon
@@ -322,20 +402,25 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		m(SIREN_ISLE, {
 			n(QUESTS, {
 				-- Citrine unlocks on vendors
+				q(85707),	-- Legendary Skipper's Citrine unlock (speculation was cross fire with rare kill (84797))
+				--q(85708),	-- Seabed Leviathan's Citrine but I'm not sure
 				q(85672),	-- Mariner's Hallowed Citrine unlock (speculation based on questID range, need more data)
 				q(85669),	-- Thunderlord's Crackling Citrine unlock (speculation based on questID range, need more data)
 				q(85675),	-- Windsinger's Runed Citrine unlock (according to spellID should also fire 85765 with spellID 470833 but it is not)				
 				-- Need more data / re-confirmation, questIDs are fires only IF it WAS LOOTED, it doesn't fire if you buy anything from vendor
-				-- plate stuff didn't trigger questIDs on druid (Earthen Landlubber's Gauntlets & Earthen Landlubber's Sabatons if to be clear)
+				-- plate stuff didn't trigger questIDs on druid:
+				-- Earthen Landlubber's Breastplate
+				-- Earthen Landlubber's Gauntlets
+				-- Earthen Landlubber's Sabatons
 				-- but it seems like try to give you pieces that you don't have
 				--q(84874),	-- Conch Collector's Locket (itemID 229053) drop
 				--q(85956),	-- Cursed Pirate Skull (itemID 231116) drop
-				--q(),	-- 84795 OR 84871 -- Earthen Deckhand's Halberd (itemID 229172) drop
 				--q(84846),	-- Earthen Deckhand's Bindings (itemID 229026) drop
 				--q(84841),	-- Earthen Deckhand's Breeches (itemID 229023) drop
 				--q(85839),	-- Earthen Deckhand's Cap (itemID 229045) drop
 				--q(84847),	-- Earthen Deckhand's Cape (itemID 229019) drop
 				--q(84844),	-- Earthen Deckhand's Grips (itemID 229022) drop
+				--q(84871),	-- Earthen Deckhand's Halberd (itemID 229172) drop
 				--q(84845),	-- Earthen Deckhand's Sash (itemID 229025) drop
 				--q(84840),	-- Earthen Deckhand's Shoulderpads (itemID 229024) drop
 				--q(84842),	-- Earthen Deckhand's Vest (itemID 229020) from Crate of Bygone Riches (or just after opening crate?)
@@ -344,11 +429,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				--q(85957),	-- Runecaster's Stormbound Rune (itemID 231118) drop / small rp after first stone during Buried Secrets (questID 84723)
 				--q(84875),	-- Scurvy Sailor's Ring (itemID 229051) drop from treasure chest (same objectID as for other one that didn't fire questIDs)
 				--
-				q(85070),	-- pop when Special Assigment npc unlocked for storm phase (pop talking head)
-				--q(85708),	-- pop after completion Serpent's Wrath (questID 84850) (could be one of gem? Seabed Leviathan's Citrine but I'm not sure)
+				q(85070),	-- when Special Assigment npc unlocked for storm phase (pop talking head)
 				-- Some interaction with gems on terrain during storm phase, reward you with Turbulent Fragment (itemID 234327)
 				q(86437),	-- missing objectID or npcID? @ 67.1, 78.5 (spellID 1213217 - Take Fragment)
-				q(86435),	-- after interact with Runic Fragment (npcID 234934) @ 52.6, 38.7
+				q(86435),	-- after interact with Runic Fragment (npcID 234934) @ 52.6, 38.7 / was able to loot it again but didn't fire questID
 				q(86436),	-- after interact with Dirt Pile (npcID 235134) @ 38.2, 51.8
 				-- Runestone activation questIDs in The Forgotten Vault (stormed phase) for Thrayir, Eyes of the Siren (npcID 233540)
 				q(85800),	-- Cyclonic (spellID 471163)
@@ -356,7 +440,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				q(85801),	-- Torrential (spellID 471166)
 				--q(85799),	-- Turbulent (spellID 471162) (bugged on ptr - you can't create this key, cannot confirm questID)
 				q(85802),	-- Whirling (spellID 471167)
-				-- Snapdragon timer after quest?
+				-- Snapdragon timer after quest
 				q(86566),	-- [DNT] Snapdragon Progress Update (spellID 1214684)
 			}),
 		}),

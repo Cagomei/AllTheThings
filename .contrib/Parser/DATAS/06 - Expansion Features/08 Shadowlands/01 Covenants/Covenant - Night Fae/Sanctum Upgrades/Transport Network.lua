@@ -115,7 +115,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(62296),	-- Into the Unknown (1)
 								q(60153),	-- Into the Unknown (2)
 								q(62382),	-- Into the Unknown (3)
-								q(62453),	-- Into the Unknown (4)
+								q(62453, {	-- Into the Unknown (4)
+									["g"] = {
+										i(183961, {	-- Gorm "Juice" (QI!)
+											["description"] = "Speak to Mixy Mak to mix a drink using this for you to relax."
+										}),
+									},
+								}),
 							})),
 						}),
 						n(TIER_THREE, {

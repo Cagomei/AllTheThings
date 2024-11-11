@@ -891,16 +891,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				["g"] = {
 					ach(8535, {	-- Celestial Challenge
 						crit(23743, {	-- Chi-Ji slain
-							["_encounter"] =  { 857 },
+							["_encounter"] =  { 857, WORLD_BOSSES },
 						}),
 						crit(23745, {	-- Niuzao slain
-							["_encounter"] =  { 859 },
+							["_encounter"] =  { 859, WORLD_BOSSES },
 						}),
 						crit(23746, {	-- Xuen slain
-							["_encounter"] =  { 860 },
+							["_encounter"] =  { 860, WORLD_BOSSES },
 						}),
 						crit(23744, {	-- Yu'lon slain
-							["_encounter"] =  { 858 },
+							["_encounter"] =  { 858, WORLD_BOSSES },
 						}),
 					}),
 					ach(8789),	-- Celestial Challenge Guild Run

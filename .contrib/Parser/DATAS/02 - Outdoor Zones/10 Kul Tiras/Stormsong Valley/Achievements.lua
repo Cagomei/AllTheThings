@@ -40,6 +40,20 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["crs"] = { 139359 },
 				}),
 			}),
+			ach(41206, {	-- Songs of Storms
+				["timeline"] = { ADDED_11_0_7 },
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					12940,	-- Adventurer of Stormsong Valley
+					13047,	-- Clever Use of Mechanical Explosives
+					13053, 	-- Deadliest Cache
+					13045,	-- Every Day I'm Truffling
+					13062,	-- Let's Bee Friends
+					13051,	-- Legends of the Tidesages
+					12853,	-- Treasures of Stormsong Valley
+					13046,	-- These Hills Sing
+				}},
+			}),
 			ach(12953, {	-- Storm's Wake
 				["races"] = ALLIANCE_ONLY,
 			}),

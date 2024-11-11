@@ -827,7 +827,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["g"] = {
 					i(151740),	-- Pattern: Fiendish Shoulderguards [Rank 1] (RECIPE!)
 					i(151743),	-- Pattern: Fiendish Spaulders [Rank 1] (RECIPE!)
-					i(151880),	-- Enstraa's Tanning Oil
+					i(151880),	-- Enstraa's Tanning Oil (QI!)
 					i(151879),	-- Purified Fiendish Leather
 				},
 			})),

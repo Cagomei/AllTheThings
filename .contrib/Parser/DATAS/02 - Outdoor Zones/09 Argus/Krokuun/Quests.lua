@@ -13,6 +13,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 46938 },	-- Alone in the Abyss
 				["provider"] = { "n", 126239 },	-- Chieftain Hatuun
 				["coord"] = { 58.8, 78.4, KROKUUN },
+				["g"] = {
+					i(152472),	-- Chieftain's Salve (QI!)
+				},
 			}),
 			q(46842, {	-- A Strike at the Heart
 				["sourceQuests"] = {
@@ -30,6 +33,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				},
 				["provider"] = { "n", 124975 },	-- Image of Grand Artificer Romuul
 				["coord"] = { 60.7, 47.2, KROKUUN },
+				["g"] = {
+					i(151851),	-- Immaculate Felcore (QI!)
+				},
 			}),
 			q(47526, {	-- Bringing the Big Guns
 				["sourceQuests"] = { 47771 },	-- Locating the Longshot
@@ -45,6 +51,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 47431 },	-- Gathering Light
 				["provider"] = { "n", 121519 },	-- Captain Fareeya
 				["coord"] = { 40.5, 63.5, KROKUUN },
+				["g"] = {
+					i(150942),	-- Argunite Crystal (QI!)
+				},
 			}),
 			q(47991, {	-- Dark Machinations
 				["sourceQuests"] = {
@@ -102,7 +111,11 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 47102 },	-- The Mysterious Missive
 				["provider"] = { "n", 121519 },	-- Captain Fareeya
 				["coord"] = { 40.5, 63.6, KROKUUN },
-				["lvl"] = 110,
+				["lvl"] = 45,
+				["g"] = {
+					i(150993),	-- Army of the Light Code Book (QI!)
+					i(150995),	-- Enigmatic Legion Orders (QI!)
+				},
 			}),
 			q(48440, {	-- Into the Night
 				["sourceQuests"] = { 47224 },	-- The Vidicaar
@@ -198,6 +211,11 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 47892 },	-- Storming the Citadel
 				["provider"] = { "n", 124975 },	-- Image of Grand Artificer Romuul
 				["coord"] = { 60.8, 47.3, KROKUUN },
+				["g"] = {
+					i(151837),	-- Invocation Array (QI!)
+					i(151838),	-- Judgment Core (QI!)
+					i(151839),	-- Vindicator Plating (QI!)
+				},
 			}),
 			q(47641, {	-- Signs of Resistance
 				["sourceQuests"] = { 47627 },	-- Vengeance

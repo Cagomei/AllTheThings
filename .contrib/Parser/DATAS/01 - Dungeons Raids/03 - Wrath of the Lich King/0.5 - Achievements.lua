@@ -50,40 +50,40 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 				["_encounter"] = { 1617, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, 1617, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 			}),
 			crit(5611, {	-- Herald Volazj slain
-				["_encounter"] = { 584, DIFFICULTY.DUNGEON.HEROIC, },
+				["_encounter"] = { 584, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(5610, {	-- Anub'arak slain
-				["_encounter"] = { 587, DIFFICULTY.DUNGEON.HEROIC, },
+				["_encounter"] = { 587, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(9261, {	-- The Prophet Tharon'ja slain
-				["_encounter"] = { 591, DIFFICULTY.DUNGEON.HEROIC, },
+				["_encounter"] = { 591, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(5614, {	-- Gal'darah slain
-				["_encounter"] = { 596, DIFFICULTY.DUNGEON.HEROIC, },
+				["_encounter"] = { 596, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(5616, {	-- Loken slain
-				["_encounter"] = { 600, DIFFICULTY.DUNGEON.HEROIC, },
+				["_encounter"] = { 600, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(5615, {	-- Sjonnir The Ironshaper slain
-				["_encounter"] = { 607, DIFFICULTY.DUNGEON.HEROIC, },
+				["_encounter"] = { 607, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(6434, {	-- Mal'Ganis slain
-				["_encounter"] = { 614, DIFFICULTY.DUNGEON.HEROIC, },
+				["_encounter"] = { 614, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(5609, {	-- Keristrasza slain
-				["_encounter"] = { 621, DIFFICULTY.DUNGEON.HEROIC, },
+				["_encounter"] = { 621, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(5617, {	-- Ley-Guardian Eregos slain
-				["_encounter"] = { 625, DIFFICULTY.DUNGEON.HEROIC, },
+				["_encounter"] = { 625, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(5613, {	-- Cyanigosa slain
-				["_encounter"] = { 632, DIFFICULTY.DUNGEON.HEROIC, },
+				["_encounter"] = { 632, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(5608, {	-- Ingvar the Plunderer slain
-				["_encounter"] = { 640, DIFFICULTY.DUNGEON.HEROIC, },
+				["_encounter"] = { 640, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 			crit(5618, {	-- King Ymiron slain
-				["_encounter"] = { 644, DIFFICULTY.DUNGEON.HEROIC, },
+				["_encounter"] = { 644, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 		}))),
 		applyclassicphase(WRATH_PHASE_ONE, ach(2136, {	-- Glory of the Hero

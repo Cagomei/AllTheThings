@@ -138,29 +138,29 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
 					crit(60760, {	-- Mokra the Skullcrusher
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60761, {	-- Deathstalker Visceri
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60765, {	-- Runok Wildmane
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60766, {	-- Eressea Dawnsinger
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60763, {	-- Zul'tore
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60764, {	-- Argent Confessor Paletress
-						["_encounter"] = { 636, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 636, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60762, {	-- Eadric the Pure
-						["_encounter"] = { 635, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 635, DEFENSE_PROTOCOL_BETA },
 					}),
 					-- #endif
 					crit(60621, {	-- The Black Knight
-						["_encounter"] = { 637, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 637, DEFENSE_PROTOCOL_BETA },
 					}),
 				}))),
 				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ ["races"] = HORDE_ONLY },	-- Defense Protocol Beta: Trial of the Champion (H)
@@ -168,29 +168,29 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
 					crit(60768, {	-- Marshal Jacob Alerius
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60771, {	-- Lana Stouthammer
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60770, {	-- Colosos
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60764, {	-- Ambrose Boltspark
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60767, {	-- Jaelyne Evensong
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60764, {	-- Argent Confessor Paletress
-						["_encounter"] = { 636, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 636, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60762, {	-- Eadric the Pure
-						["_encounter"] = { 635, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 635, DEFENSE_PROTOCOL_BETA },
 					}),
 					-- #endif
 					crit(60621, {	-- The Black Knight
-						["_encounter"] = { 637, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 637, DEFENSE_PROTOCOL_BETA },
 					}),
 				}))),
 				applyclassicphase(WRATH_PHASE_FOUR, bubbleDownFiltered({ ["races"] = ALLIANCE_ONLY },	-- Defense Protocol Gamma: Trial of the Champion (A)
@@ -198,29 +198,29 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
 					crit(63308, {	-- Mokra the Skullcrusher
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63317, {	-- Deathstalker Visceri
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63314, {	-- Runok Wildmane
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63313, {	-- Eressea Dawnsinger
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63306, {	-- Zul'tore
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63310, {	-- Argent Confessor Paletress
-						["_encounter"] = { 636, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 636, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63315, {	-- Eadric the Pure
-						["_encounter"] = { 635, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 635, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					-- #endif
 					crit(63310, {	-- The Black Knight
-						["_encounter"] = { 637, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 637, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				}))),
 				applyclassicphase(WRATH_PHASE_FOUR, bubbleDownFiltered({ ["races"] = HORDE_ONLY },	-- Defense Protocol Gamma: Trial of the Champion (H)
@@ -228,29 +228,29 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
 					crit(63308, {	-- Marshal Jacob Alerius
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(60771, {	-- Lana Stouthammer
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63314, {	-- Colosos
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63313, {	-- Ambrose Boltspark
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63306, {	-- Jaelyne Evensong
-						["_encounter"] = { 634, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 634, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63316, {	-- Argent Confessor Paletress
-						["_encounter"] = { 636, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 636, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63315, {	-- Eadric the Pure
-						["_encounter"] = { 635, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 635, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					-- #endif
 					crit(63310, {	-- The Black Knight
-						["_encounter"] = { 637, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { 637, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				}))),
 				-- #endif
@@ -498,12 +498,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							-- #if AFTER 7.3.5
 							i(47213),	-- Abyssal Rune (7.3.5 - Used to be only from Eadric and Confessor)
 							-- #endif
-							-- #if ANYCLASSIC
-							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
-								i(46028),	-- Faceguard of the Eyeless Horror
-								i(46024),	-- Kingsbane
-							})),
-							-- #endif
 						},
 					}),
 					e(635, {	-- Eadric the Pure
@@ -543,11 +537,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(47199),	-- Greaves of the Grand Paladin (7.3.5 - Used to be only Normal Mode)
 							i(47200),	-- Signet of Purity (7.3.5 - Used to be only Normal Mode)
 							i(47213),	-- Abyssal Rune (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							-- #if ANYCLASSIC
-							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
-								i(46022),	-- Pendant of a Thousand Maws
-							})),
 							-- #endif
 						},
 					}),
@@ -669,11 +658,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(47213),	-- Abyssal Rune (7.3.5 - Used to be only Normal Mode)
 							i(47214),	-- Banner of Victory (7.3.5 - Used to be only Normal Mode)
 							-- #endif
-							-- #if ANYCLASSIC
-							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
-								i(45311),	-- Relentless Edge
-							})),
-							-- #endif
 						},
 					}),
 					e(637, {	-- The Black Knight
@@ -724,18 +708,70 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							-- #if BEFORE 4.0.1
 							i(48418),	-- Fragment of the Black Knight's Soul
 							-- #endif
-							-- #if ANYCLASSIC
-							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
-								currency(SIDEREAL_ESSENCE),
-								i(46021),	-- Royal Seal of King Llane
-								i(46030),	-- Treads of the Dragon Council
-								i(46031),	-- Touch of Madness
-							})),
-							-- #endif
 						},
 					}),
 				},
-			})
+			}),
+			-- #if ANYCLASSIC
+			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(413573, 424211),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(634, {	-- Grand Champions
+						["crs"] = {
+							34705,	-- Marshal Jacob Alerius
+							34702,	-- Ambrose Boltspark
+							34701,	-- Colosos
+							34657,	-- Jaelyne Evensong
+							34703,	-- Lana Stouthammer
+							35572,	-- Mokra the Skullcrusher
+							35569,	-- Eressea Dawnsinger
+							35571,	-- Runok Wildmane
+							35570,	-- Zul'tore
+							35617,	-- Deathstalker Visceri
+						},
+						["groups"] = {
+							i(46028),	-- Faceguard of the Eyeless Horror
+							i(46024),	-- Kingsbane
+						},
+					}),
+					e(635, {	-- Eadric the Pure
+						["creatureID"] = 35119,	-- Eadric the Pure
+						["groups"] = {
+							i(46022),	-- Pendant of a Thousand Maws
+							i(45311),	-- Relentless Edge
+						},
+					}),
+					e(636, {	-- Argent Confessor Paletress
+						["creatureID"] = 34928,	-- Argent Confessor Paletress
+						["groups"] = {
+							i(46022),	-- Pendant of a Thousand Maws
+							i(45311),	-- Relentless Edge
+						},
+					}),
+					e(637, {	-- The Black Knight
+						["creatureID"] = 35451,	-- The Black Knight
+						["groups"] = {
+							i(46021),	-- Royal Seal of King Llane
+							i(46030),	-- Treads of the Dragon Council
+							i(46031),	-- Touch of Madness
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424211),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(637, {	-- The Black Knight
+						["creatureID"] = 35451,	-- The Black Knight
+						["groups"] = {
+							
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 })));

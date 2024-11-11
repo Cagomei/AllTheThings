@@ -195,6 +195,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(134296, {	-- Lucille (Chag's Challenge)
 				["questID"] = 50567,
 				["coord"] = { 68.0, 19.8, NAZMIR },
+				["description"] = "This rare is sometimes bugged when the world quest is active. If you cannot talk to Chag to summon Lucille, try Warmode On/Off to enter another shard that he might be working in, or come back later.",
 				["g"] = {
 					crit(41452, {	-- Chag's Challenge
 						["achievementID"] = 12942,	-- Adventurer of Nazmir

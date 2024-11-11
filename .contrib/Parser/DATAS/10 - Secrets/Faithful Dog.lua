@@ -19,6 +19,9 @@ root(ROOTS.Secrets, n(FAITHFUL_DOG, {
 			["coord"] = { 42.4, 50.2, VALLEY_OF_THE_FOUR_WINDS },
 			["minReputation"] = { FACTION_THE_TILLERS, REVERED+600 },	-- The Tillers, 12600 Rep
 			["timeline"] = { ADDED_5_0_4 },
+			["g"] = {
+				i(80144),	-- Tasty T-Bone (QI!)
+			},
 		}),
 		q(46952, {	-- Step 2: Show the Pebble to Dog
 			["name"] = "|cFFFFFFFFStep 2|r: Show the Pebble to Dog",

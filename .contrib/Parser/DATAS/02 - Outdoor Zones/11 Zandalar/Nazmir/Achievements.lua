@@ -8,6 +8,20 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			ach(12942, {	-- Adventurer of Nazmir
 				["sym"] = {{ "achievement_criteria" }},
 			}),
+			ach(41203, {	-- Bwon Voyage
+				["timeline"] = { ADDED_11_0_7 },
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					13021,	-- A Most Efficient Apocalypse
+					12942,	-- Adventurer of Nazmir
+					13024,	-- Carved in Stone, Written in Blood
+					12588,	-- Eat Your Greens
+					13028,	-- Hoppin' Sad
+					13023,	-- It's Really Getting Out of Hand
+					13022,	-- Revenge is Best Served Speedily
+					12771,	-- Treasures of Nazmir
+				}},
+			}),
 			ach(13024),		-- Carved in Stone, Written in Blood (automated)
 			ach(12588, {	-- Eat Your Greens
 				crit(40542, {	-- Saurolisk Tail

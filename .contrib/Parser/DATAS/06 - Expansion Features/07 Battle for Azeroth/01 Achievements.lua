@@ -120,6 +120,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		un(BLACK_MARKET, ach(14183, {	-- Conspicuous Consumption
 			["provider"] = { "i", 163042 },	-- Mighty Caravan Brutosaur
 		})),
+		ach(41209, {	-- Dressed to Kill: Battle for Azeroth
+			["timeline"] = { ADDED_11_0_7 },
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				14058,	-- All Eyes On Me
+				13385,	-- Daz'aling Attire
+				12993,	-- Don't Warfront Me
+				13585,	-- Never Lose, Never Choose To
+				12991,	-- New Mog, G'huun This?
+				13433,	-- Tall, Dark, and Sinister
+				14059,	-- The Eyes Have It
+				13571,	-- Under the Seams
+			}},
+		}),
 		ach(13029, {	-- Eating Out of the Palm of My Tiny Hand
 			crit(41575, {	-- Brutosaur of Nazmir Fed
 				["description"] = "Buy Primitive Watermelon from Blind Wunja inside the cave at 34.6, 54.9 and feed it to Goramor.",

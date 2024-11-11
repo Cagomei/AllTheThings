@@ -846,6 +846,20 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				}),
 			},
 		}),
+		-- #if ANYCLASSIC
+		applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(PROTOCOL_INFERNO, {
+			["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(470595),
+			["timeline"] = { ADDED_4_0_3 },
+			["groups"] = {
+				e(95, {	-- Vanessa VanCleef
+					["creatureID"] = 49541,	-- Vanessa VanCleef
+					["groups"] = {
+						ach(41146),	-- Protocol Inferno: Deadmines
+					},
+				}),
+			},
+		})),
+		-- #endif
 	},
 });
 

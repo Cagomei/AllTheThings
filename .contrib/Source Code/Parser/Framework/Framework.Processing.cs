@@ -538,6 +538,15 @@ namespace ATT
                     restoreDifficulty = true;
                     //LogDebug($"INFO: New inherited difficultyID {NestedDifficultyID}", data);
                 }
+                // Track the hierarchy of headerID
+                bool restoreHeader = false;
+                var previousHeaderID = NestedHeaderID;
+                // NOTE: Once autoID no longer clashes with headerID and npcID is no longer dumb, use headerID instead.
+                if (data.TryGetValue("npcID", out long npcID) && npcID < 0 && long.TryParse(npcID.ToString(), out long headerID))
+                {
+                    NestedHeaderID = headerID;
+                    restoreHeader = true;
+                }
                 // Track the hierarchy of lvl
                 bool restoreLvl = false;
                 long previousLvl = NestedMinLvl;
@@ -560,6 +569,11 @@ namespace ATT
                     //LogDebug($"INFO: Restore previous difficultyID {previousDifficulty} => {NestedDifficultyID}", data);
                     DifficultyRoot = previousDifficultyRoot;
                     NestedDifficultyID = previousDifficulty;
+                }
+                if (restoreHeader)
+                {
+                    //LogDebug($"INFO: Restore previous headerID {previousHeaderID} => {NestedHeaderID}", data);
+                    NestedHeaderID = previousHeaderID;
                 }
                 if (restoreModID)
                 {
@@ -1506,7 +1520,7 @@ namespace ATT
                 return;
 
             // Hash the Encounter for MergeIntos if needed
-            data["_encounterHash"] = GetEncounterHash(encounterID, NestedDifficultyID);
+            data["_encounterHash"] = NestedDifficultyID > 0 ? GetEncounterHash(encounterID, NestedDifficultyID) : GetEncounterHash(encounterID, NestedHeaderID);
 
             // Clean up Encounters which only have a single npcID assigned via 'crs'
             if (!data.ContainsKey("npcID") && data.TryGetValue("crs", out List<object> crs) && crs.Count == 1 && crs[0].TryConvert(out long crID))
@@ -3687,6 +3701,7 @@ namespace ATT
 
         private static decimal GetEncounterHash(long encounterID, long difficultyID)
         {
+            if (difficultyID < 0) return encounterID + ((Math.Abs(difficultyID) - 1000000) / 10000M);
             // expecting difficultyID to be a positive, 100-999 value
             return encounterID + difficultyID / 1000M;
         }

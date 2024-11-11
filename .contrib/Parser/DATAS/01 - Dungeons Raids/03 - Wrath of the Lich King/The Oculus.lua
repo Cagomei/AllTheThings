@@ -33,106 +33,44 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17300, {	-- Defense Protocol Alpha: The Oculus
 					crit(57763, {	-- Drakos the Interrogator
-						["_encounter"] = { 622, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39399),	-- Helm of the Vast Legions
-							i(39404),	-- Cloak of Mastery
-							i(39408),	-- Leggings of Sapphiron
-						},
+						["_encounter"] = { 622, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57765, {	-- Varos Cloudstrider
-						["_encounter"] = { 623, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39401),	-- Circle of Death
-							i(39409),	-- Cowl of Winged Fear
-							i(39405),	-- Helmet of the Inner Sanctum
-						},
+						["_encounter"] = { 623, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57762, {	-- Mage-Lord Urom
-						["_encounter"] = { 624, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39403),	-- Helm of the Unsubmissive
-							i(39311),	-- Scepter of Murmuring Spirits
-							i(39415),	-- Shroud of the Citadel
-						},
+						["_encounter"] = { 624, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57764, {	-- Ley-Guardian Eregos
-						["_encounter"] = { 625, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(44658),	-- Chain of the Ancient Wyrm
-							i(44660),	-- Drakescale Collar
-							i(44659),	-- Pendant of the Dragonsworn
-							i(44657),	-- Torque of the Red Dragonflight
-							i(40497),	-- Black Ice
-							i(39310),	-- Mantle of the Extensive Mind
-							i(40616),	-- Helm of the Lost Conqueror
-							i(40617),	-- Helm of the Lost Protector
-							i(40618),	-- Helm of the Lost Vanquisher
-							i(40622),	-- Spaulders of the Lost Conqueror
-							i(40623),	-- Spaulders of the Lost Protector
-							i(40624),	-- Spaulders of the Lost Vanquisher
-							i(40619),	-- Leggings of the Lost Conqueror
-							i(40620),	-- Leggings of the Lost Protector
-							i(40621),	-- Leggings of the Lost Vanquisher
-						},
+						["_encounter"] = { 625, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18599, {	-- Defense Protocol Beta: The Oculus
 					crit(60606, {	-- Drakos the Interrogator
-						["_encounter"] = { 622, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45997),	-- Gauntlets of the Wretched
-							i(45996),	-- Hoperender
-						},
+						["_encounter"] = { 622, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60608, {	-- Varos Cloudstrider
-						["_encounter"] = { 623, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(46015),	-- Pendant of Endless Despair
-							i(46014),	-- Saronite Animus Cloak
-						},
+						["_encounter"] = { 623, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60605, {	-- Mage-Lord Urom
-						["_encounter"] = { 624, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(46013),	-- Underworld Mantle
-							i(46011),	-- Shadowbite
-						},
+						["_encounter"] = { 624, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60607, {	-- Ley-Guardian Eregos
-						["_encounter"] = { 625, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							currency(SIDEREAL_ESSENCE),
-							i(45872),	-- Avalanche
-							i(46009),	-- Bindings of the Depths
-							i(46010),	-- Darkstone Ring
-						},
+						["_encounter"] = { 625, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19436, {	-- Defense Protocol Gamma: The Oculus
 					crit(63358, {	-- Drakos the Interrogator
-						["_encounter"] = { 622, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 622, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63361, {	-- Varos Cloudstrider
-						["_encounter"] = { 623, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 623, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63356, {	-- Mage-Lord Urom
-						["_encounter"] = { 624, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 624, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63360, {	-- Ley-Guardian Eregos
-						["_encounter"] = { 625, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 625, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
@@ -472,6 +410,114 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394435, 412991, 424196),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(622, {	-- Drakos the Interrogator
+						["creatureID"] = 27654,	-- Drakos the Interrogator
+						["groups"] = {
+							i(39399),	-- Helm of the Vast Legions
+							i(39404),	-- Cloak of Mastery
+							i(39408),	-- Leggings of Sapphiron
+						},
+					}),
+					e(623, {	-- Varos Cloudstrider
+						["creatureID"] = 27447,	-- Varos Cloudstrider
+						["groups"] = {
+							i(39401),	-- Circle of Death
+							i(39409),	-- Cowl of Winged Fear
+							i(39405),	-- Helmet of the Inner Sanctum
+						},
+					}),
+					e(624, {	-- Mage-Lord Urom
+						["creatureID"] = 27655,	-- Mage-Lord Urom
+						["groups"] = {
+							i(39403),	-- Helm of the Unsubmissive
+							i(39311),	-- Scepter of Murmuring Spirits
+							i(39415),	-- Shroud of the Citadel
+						},
+					}),
+					e(625, {	-- Ley-Guardian Eregos
+						["creatureID"] = 27656,	-- Ley-Guardian Eregos
+						["groups"] = {
+							i(44658),	-- Chain of the Ancient Wyrm
+							i(44660),	-- Drakescale Collar
+							i(44659),	-- Pendant of the Dragonsworn
+							i(44657),	-- Torque of the Red Dragonflight
+							i(40497),	-- Black Ice
+							i(39310),	-- Mantle of the Extensive Mind
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(412991, 424196),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(622, {	-- Drakos the Interrogator
+						["creatureID"] = 27654,	-- Drakos the Interrogator
+						["groups"] = {
+							i(45997),	-- Gauntlets of the Wretched
+							i(45996),	-- Hoperender
+						},
+					}),
+					e(623, {	-- Varos Cloudstrider
+						["creatureID"] = 27447,	-- Varos Cloudstrider
+						["groups"] = {
+							i(46015),	-- Pendant of Endless Despair
+							i(46014),	-- Saronite Animus Cloak
+						},
+					}),
+					e(624, {	-- Mage-Lord Urom
+						["creatureID"] = 27655,	-- Mage-Lord Urom
+						["groups"] = {
+							i(46013),	-- Underworld Mantle
+							i(46011),	-- Shadowbite
+						},
+					}),
+					e(625, {	-- Ley-Guardian Eregos
+						["creatureID"] = 27656,	-- Ley-Guardian Eregos
+						["groups"] = {
+							i(45872),	-- Avalanche
+							i(46012),	-- Vestments of the Piercing Light
+							i(45873),	-- Winter's Frigid Embrace
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424196),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(622, {	-- Drakos the Interrogator
+						["creatureID"] = 27654,	-- Drakos the Interrogator
+						["groups"] = {
+							
+						},
+					}),
+					e(623, {	-- Varos Cloudstrider
+						["creatureID"] = 27447,	-- Varos Cloudstrider
+						["groups"] = {
+							
+						},
+					}),
+					e(624, {	-- Mage-Lord Urom
+						["creatureID"] = 27655,	-- Mage-Lord Urom
+						["groups"] = {
+							
+						},
+					}),
+					e(625, {	-- Ley-Guardian Eregos
+						["creatureID"] = 27656,	-- Ley-Guardian Eregos
+						["groups"] = {
+							
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 })));

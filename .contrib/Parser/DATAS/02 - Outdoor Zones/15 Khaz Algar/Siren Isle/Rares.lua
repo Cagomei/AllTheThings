@@ -10,7 +10,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			-- NON STORM PHASE RARES
 			n(228154, {	-- Bloodbrine
 				["coord"] = { 36.0, 72.1, SIREN_ISLE },
-				["questID"] = 84795,	-- TODO: see notes in hqts
+				["questID"] = 84795,
+			}),
+			n(228583, {	-- Chef Chum Platter
+				-- pirates
+				["coord"] = { 66.4, 85.5, SIREN_ISLE },
+				["questID"] = 84800,
 			}),
 			n(229852, {	-- Coralweaver Calliso
 				["coord"] = { 61.5, 89.4, SIREN_ISLE },
@@ -34,6 +39,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["coord"] = { 37.2, 21.8, SIREN_ISLE },
 				["questID"] = 84796,
 			}),
+			n(228580, {	-- Plank-Master Bluebelly
+				-- pirates
+				["coord"] = { 59.7, 87.8, SIREN_ISLE },
+				["questID"] = 84799,
+			}),
 			n(229853, {	-- Siris the Sea Scorpion
 				["coord"] = { 56.0, 83.6, SIREN_ISLE },
 				["questID"] = 84803,
@@ -50,6 +60,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			n(228151, {	-- Wreckwater
 				["coord"] = { 46.7, 78.4, SIREN_ISLE },
 				--["questID"] = 84794,	-- bugged? share kill questID with Snacker?
+			}),
+			-- The Forgotten Tomb (non-storm, pirates theme)
+			n(228159, {	-- Gunnlod the Sea-Drinker
+				["coord"] = { 66.5, 55.9, 2375 },
+				["questID"] = 84797,
+			}),
+			n(227550, {	-- Shardsong
+				["coord"] = { 28.1, 24.9, 2375 },
+				--["questID"] = ???,	-- (TODO: didn't fire questID on kill)
 			}),
 			-- STORM PHASE RARES
 			n(231356, {	-- Brinebough
@@ -89,7 +108,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		m(SIREN_ISLE, {
 			n(RARES, {
 				-- Need more data / confirmation, current data is mess
-				-- after kill Bloodbrine (228154) - 84795, 84871 (one of it is i(229172), -- Earthen Deckhand's Halberd drop?)
+				-- after kill Bloodbrine (228154) - 84795 (on re-kill), 84871 (one of it is i(229172), -- Earthen Deckhand's Halberd drop?)
 				-- after kill Gravesludge (228201) - 84872 (i(229178), -- Earthen Scallywag's Gavel drop?, 85669 (speculated - gem looted and unlocked on vendor), 85937 (on re-kill)
 				-- after kill Nerathor (229982) - 84841 (i(229023), -- Earthen Deckhand's Breeches drop?), 85672 (citrine?), 85938 (on re-kill)
 			}),

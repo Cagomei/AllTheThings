@@ -37,102 +37,44 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17299, {	-- Defense Protocol Alpha: Halls of Lightning
 					crit(57761, {	-- General Bjarngrim
-						["_encounter"] = { 597, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39189),	-- Boots of Persistence
-							i(39192),	-- Gloves of Dark Gestures
-							i(39141),	-- Deflection Band
-						},
+						["_encounter"] = { 597, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57759, {	-- Volkhan
-						["_encounter"] = { 598, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39188),	-- Chivalric Chestguard
-							i(39140),	-- Knife of Incision
-							i(39191),	-- Splint-Bound Leggings
-						},
+						["_encounter"] = { 598, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57760, {	-- Ionar
-						["_encounter"] = { 599, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39139),	-- Ravaging Sabatons
-							i(39190),	-- Agonal Sash
-							i(39146),	-- Collar of Dissolution
-						},
+						["_encounter"] = { 599, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57756, {	-- Loken
-						["_encounter"] = { 600, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(40526),	-- Gown of the Spell-Weaver
-							i(40426),	-- Signet of the Accord
-							i(40488),	-- Ice Spire Scepter
-							i(40616),	-- Helm of the Lost Conqueror
-							i(40617),	-- Helm of the Lost Protector
-							i(40618),	-- Helm of the Lost Vanquisher
-							i(40622),	-- Spaulders of the Lost Conqueror
-							i(40623),	-- Spaulders of the Lost Protector
-							i(40624),	-- Spaulders of the Lost Vanquisher
-							i(40619),	-- Leggings of the Lost Conqueror
-							i(40620),	-- Leggings of the Lost Protector
-							i(40621),	-- Leggings of the Lost Vanquisher
-						},
+						["_encounter"] = { 600, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18598, {	-- Defense Protocol Beta: Halls of Lightning
 					crit(60604, {	-- General Bjarngrim
-						["_encounter"] = { 597, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(46347),	-- Cloak of the Dormant Blaze
-							i(46341),	-- Drape of the Spellweaver
-						},
+						["_encounter"] = { 597, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60602, {	-- Volkhan
-						["_encounter"] = { 598, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(46342),	-- Golemheart Longbow
-							i(46343),	-- Fervor of the Protectorate
-						},
+						["_encounter"] = { 598, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60603, {	-- Ionar
-						["_encounter"] = { 599, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(46344),	-- Iceshear Mantle
-							i(45677),	-- Treacherous Shoulderpads
-						},
+						["_encounter"] = { 599, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60601, {	-- Loken
-						["_encounter"] = { 600, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							currency(SIDEREAL_ESSENCE),
-							i(45676),	-- Chestplate of Vicious Potency
-							i(46350),	-- Pillar of Fortitude
-						},
+						["_encounter"] = { 600, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19435, {	-- Defense Protocol Gamma: Halls of Lightning
 					crit(63353, {	-- General Bjarngrim
-						["_encounter"] = { 597, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 597, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63349, {	-- Volkhan
-						["_encounter"] = { 598, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 598, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63350, {	-- Ionar
-						["_encounter"] = { 599, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 599, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63348, {	-- Loken
-						["_encounter"] = { 600, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 600, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
@@ -467,6 +409,111 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394441, 413078, 424205),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(597, {	-- General Bjarngrim
+						["creatureID"] = 28586,	-- General Bjarngrim
+						["groups"] = {
+							i(39189),	-- Boots of Persistence
+							i(39192),	-- Gloves of Dark Gestures
+							i(39141),	-- Deflection Band
+						},
+					}),
+					e(598, {	-- Volkhan
+						["creatureID"] = 28587,	-- Volkhan
+						["groups"] = {
+							i(39188),	-- Chivalric Chestguard
+							i(39140),	-- Knife of Incision
+							i(39191),	-- Splint-Bound Leggings
+						},
+					}),
+					e(599, {	-- Ionar
+						["creatureID"] = 28546,	-- Ionar
+						["groups"] = {
+							i(39139),	-- Ravaging Sabatons
+							i(39190),	-- Agonal Sash
+							i(39146),	-- Collar of Dissolution
+						},
+					}),
+					e(600, {	-- Loken
+						["creatureID"] = 28923,	-- Loken
+						["groups"] = {
+							i(40526),	-- Gown of the Spell-Weaver
+							i(40426),	-- Signet of the Accord
+							i(40488),	-- Ice Spire Scepter
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(413078, 424205),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(597, {	-- General Bjarngrim
+						["creatureID"] = 28586,	-- General Bjarngrim
+						["groups"] = {
+							i(46347),	-- Cloak of the Dormant Blaze
+							i(46341),	-- Drape of the Spellweaver
+						},
+					}),
+					e(598, {	-- Volkhan
+						["creatureID"] = 28587,	-- Volkhan
+						["groups"] = {
+							i(46342),	-- Golemheart Longbow
+							i(46343),	-- Fervor of the Protectorate
+						},
+					}),
+					e(599, {	-- Ionar
+						["creatureID"] = 28546,	-- Ionar
+						["groups"] = {
+							i(46344),	-- Iceshear Mantle
+							i(45677),	-- Treacherous Shoulderpads
+						},
+					}),
+					e(600, {	-- Loken
+						["creatureID"] = 28923,	-- Loken
+						["groups"] = {
+							i(45680),	-- Armbands of the Construct
+							i(45676),	-- Chestplate of Vicious Potency
+							i(46350),	-- Pillar of Fortitude
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424205),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(597, {	-- General Bjarngrim
+						["creatureID"] = 28586,	-- General Bjarngrim
+						["groups"] = {
+							
+						},
+					}),
+					e(598, {	-- Volkhan
+						["creatureID"] = 28587,	-- Volkhan
+						["groups"] = {
+							
+						},
+					}),
+					e(599, {	-- Ionar
+						["creatureID"] = 28546,	-- Ionar
+						["groups"] = {
+							
+						},
+					}),
+					e(600, {	-- Loken
+						["creatureID"] = 28923,	-- Loken
+						["groups"] = {
+							
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 })));

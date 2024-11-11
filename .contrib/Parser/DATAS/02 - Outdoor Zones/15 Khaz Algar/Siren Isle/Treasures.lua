@@ -9,6 +9,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			--o(500683),	-- Seafarer's Cache
 			--o(500686),	-- Seafarer's Cache
 			--
+			o(464233, {	--  Bilge Rat Supply Chest
+				["coord"] = { 62.4, 90.8, SIREN_ISLE },
+				["questID"] = 84529,
+				["cost"] = {{ "i", 228621, 1 }},	-- Bilge Rat Supply Key
+			}),
 			o(465272, {	--  Empty Kaja'Cola Can
 				["coord"] = { 60.8, 62.9, SIREN_ISLE },
 				["g"] = {

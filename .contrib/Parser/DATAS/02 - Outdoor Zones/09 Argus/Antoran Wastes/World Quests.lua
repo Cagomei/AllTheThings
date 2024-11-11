@@ -20,7 +20,11 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(48867, {	-- Chief Alchemist Munculus
 				["sym"] = {{"select","npcID",127376}},	-- Select the WQ NPC
 			}),
-			q(48637),	-- Cleansing Fire
+			q(48637, {	-- Cleansing Fire
+				["g"] = {
+					i(152648),	-- Brightsoul Scepter (QI!)
+				},
+			}),
 			q(48831, {	-- Commander Texlaz
 				["sym"] = {{"select","npcID",127084}},	-- Select the WQ NPC
 			}),
@@ -52,7 +56,11 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sym"] = {{"select","npcID",126040}},	-- Select the WQ NPC
 			}),
 			q(48833),	-- Ritual Completion
-			q(48958),	-- Ritual Interruption
+			q(48958, {	-- Ritual Interruption
+				["g"] = {
+					i(152465),	-- Banishment Stone Shard (QI!)
+				},
+			}),
 			q(48526),	-- Scuttled
 			q(48662),	-- Short Fuses
 			q(48514),	-- Slumbering Behemoths

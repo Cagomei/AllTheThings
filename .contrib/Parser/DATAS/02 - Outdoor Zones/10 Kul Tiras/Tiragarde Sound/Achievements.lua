@@ -122,6 +122,20 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			ach(12951, {	-- Proudmoore Admiralty
 				["races"] = ALLIANCE_ONLY,
 			}),
+			ach(41205, {	-- Sound Off
+				["timeline"] = { ADDED_11_0_7 },
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					12939,	-- Adventurer of Tiragarde Sound
+					13050,	-- Bless the Rains Down in Freehold
+					13058,	-- Kul Tiran Up the Dance Floor
+					13049,	-- The Long Con
+					12087,	-- The Reining Champion
+					12852,	-- Treasures of Tiragarde Sound
+					13061,	-- Three Sheets to the Wind
+					13057,	-- Sailed in Sea Minor
+				}},
+			}),
 			a(ach(13049, {	-- The Long Con
 				crit(41668),	-- Aged to Perfection
 				crit(41669),	-- Trixie Business

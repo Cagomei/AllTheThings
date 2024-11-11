@@ -328,6 +328,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["maps"] = { PANDARIA },
 			["cost"] = {{ "i", 72238, 3 }},	-- 3x Golden Lotus
 			["g"] = {
+				i(80240),	-- Strange Spherical Stone (QI!)
 				i(75274),	-- Zen Alchemist Stone
 			},
 		}),

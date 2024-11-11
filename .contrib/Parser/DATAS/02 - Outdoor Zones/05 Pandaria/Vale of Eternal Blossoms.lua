@@ -208,6 +208,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 58471 },	-- Kun Autumnlight
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(80484),	-- Explosive Keg (QI!)
+						},
 					}),
 					q(30642, {	-- Battle Axe of the Thunder King
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
@@ -362,6 +365,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 58468 },	-- Sun Tenderheart
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(89297),	-- Shao-Tien Spirit Dagger (QI!)
+						},
 					}),
 					q(30289, {	-- Freeing Mind and Body
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
@@ -816,6 +822,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 21.4, 71.5, VALE_OF_ETERNAL_BLOSSOMS },
 						["isDaily"] = true,
 						["provider"] = { "n", 58919 },	-- Anji Autumnlight
+						["g"] = {
+							i(87790),	-- Ancient Guo-Lai Artifact (QI!)
+						},
 					}),
 					q(31095, {	-- The Dark Heart of the Mogu
 						["provider"] = { "i", 83772 },	-- The Dark Heart of the Mogu

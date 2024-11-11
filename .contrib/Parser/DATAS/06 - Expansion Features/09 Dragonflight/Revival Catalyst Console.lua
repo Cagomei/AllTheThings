@@ -2200,10 +2200,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			})),
 			-- #else
 			-- Hide in main list to reduce duplication (it's already sourced elsewhere)
-			header(HEADERS.Achievement, SEASON_DRACONIC_PVE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
+			header(HEADERS.Achievement, SEASON_DRACONIC_PVE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {
 				-- There are new IDs only for "Tier Slots" in season 4 - main source in raid from tokens
 				-- "Off Slots" use old IDs of original items - main source in Catalyst of previous tiers/raids (new "Off Slot" IDs are NYI)
-				d(DIFFICULTY.RAID.LFR, {
+				d(DIFFICULTY.RAID.LFR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 4 }, {
 						cl(DEATHKNIGHT, {
@@ -2402,7 +2402,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 					}),
-				}),
+				})),
+				-- #if BEFORE 11.0.2
 				d(DIFFICULTY.RAID.NORMAL, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 3 }, {
@@ -2603,7 +2604,119 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 				}),
-				d(DIFFICULTY.RAID.HEROIC, {
+				-- #else
+				-- Blizzard forgot to remove season 4 from dungeons, so all of these are possible to gain from Mythic difficulty
+				d(DIFFICULTY.RAID.NORMAL, {
+					["description"] = "These items are still obtainable by converting Dragonflight Mythic Dungeon items in the Catalyst",
+					["g"] = bubbleDown({ ["modID"] = 3 }, {
+						cl(DEATHKNIGHT, {
+							-- "Tier Slots"
+							i(217221),	-- Casket of the Risen Nightmare
+							i(217224),	-- Greaves of the Risen Nightmare
+							i(217223),	-- Piercing Gaze of the Risen Nightmare
+							i(217225),	-- Skewers of the Risen Nightmare
+							i(217222),	-- Thorns of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {
+							-- "Tier Slots"
+							i(217226),	-- Screaming Torchfiend's Binding
+							i(217229),	-- Screaming Torchfiend's Blazewraps
+							i(217228),	-- Screaming Torchfiend's Burning Scowl
+							i(217227),	-- Screaming Torchfiend's Grasp
+							i(217230),	-- Screaming Torchfiend's Horned Memento
+						}),
+						cl(DRUID, {
+							-- "Tier Slots"
+							i(217193),	-- Bough of the Autumn Blaze
+							i(217191),	-- Chestroots of the Autumn Blaze
+							i(217192),	-- Handguards of the Autumn Blaze
+							i(217195),	-- Mantle of the Autumn Blaze
+							i(217194),	-- Pants of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							-- "Tier Slots"
+							i(217178),	-- Crown of the Awakened
+							i(217177),	-- Gauntlets of the Awakened
+							i(217176),	-- Hauberk of the Awakened
+							i(217179),	-- Legguards of the Awakened
+							i(217180),	-- Talons of the Awakened
+						}),
+						cl(HUNTER, {
+							-- "Tier Slots"
+							i(217181),	-- Stormwing Harrier's Cuirass
+							i(217184),	-- Stormwing Harrier's Greaves
+							i(217182),	-- Stormwing Harrier's Handguards
+							i(217185),	-- Stormwing Harrier's Pinions
+							i(217183),	-- Stormwing Harrier's Skullmask
+						}),
+						cl(MAGE, {
+							-- "Tier Slots"
+							i(217232),	-- Wayward Chronomancer's Chronocap
+							i(217231),	-- Wayward Chronomancer's Gloves
+							i(217234),	-- Wayward Chronomancer's Metronomes
+							i(217233),	-- Wayward Chronomancer's Pantaloons
+							i(217235),	-- Wayward Chronomancer's Patchwork
+						}),
+						cl(MONK, {
+							-- "Tier Slots"
+							i(217186),	-- Chestwrap of the Waking Fist
+							i(217188),	-- Gaze of the Waking Fist
+							i(217189),	-- Legguards of the Waking Fist
+							i(217190),	-- Mantle of the Waking Fist
+							i(217187),	-- Palms of the Waking Fist
+						}),
+						cl(PALADIN, {
+							-- "Tier Slots"
+							i(217196),	-- Heartfire Sentinel's Brigandine
+							i(217199),	-- Heartfire Sentinel's Faulds
+							i(217198),	-- Heartfire Sentinel's Forgehelm
+							i(217197),	-- Heartfire Sentinel's Protectors
+							i(217200),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							-- "Tier Slots"
+							i(217203),	-- Breeches of the Furnace Seraph
+							i(217205),	-- Command of the Furnace Seraph
+							i(217204),	-- Devotion of the Furnace Seraph
+							i(217201),	-- Grasp of the Furnace Seraph
+							i(217202),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							-- "Tier Slots"
+							i(217206),	-- Lurking Specter's Brigandine
+							i(217207),	-- Lurking Specter's Handgrips
+							i(217210),	-- Lurking Specter's Shoulderblades
+							i(217209),	-- Lurking Specter's Tights
+							i(217208),	-- Lurking Specter's Visage
+						}),
+						cl(SHAMAN, {
+							-- "Tier Slots"
+							i(217240),	-- Greatwolf Outcast's Companions
+							i(217239),	-- Greatwolf Outcast's Fur-Lined Kilt
+							i(217237),	-- Greatwolf Outcast's Grips
+							i(217236),	-- Greatwolf Outcast's Harness
+							i(217238),	-- Greatwolf Outcast's Jaws
+						}),
+						cl(WARLOCK, {
+							-- "Tier Slots"
+							i(217214),	-- Amice of the Sinister Savant
+							i(217215),	-- Cursed Robes of the Sinister Savant
+							i(217212),	-- Grimhorns of the Sinister Savant
+							i(217211),	-- Grips of the Sinister Savant
+							i(217213),	-- Leggings of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							-- "Tier Slots"
+							i(217216),	-- Battlechest of the Onyx Crucible
+							i(217217),	-- Handguards of the Onyx Crucible
+							i(217219),	-- Legplates of the Onyx Crucible
+							i(217220),	-- Pauldrons of the Onyx Crucible
+							i(217218),	-- Thraexhelm of the Onyx Crucible
+						}),
+					}),
+				}),
+				-- #endif
+				d(DIFFICULTY.RAID.HEROIC, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 5 }, {
 						cl(DEATHKNIGHT, {
@@ -2802,8 +2915,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 					}),
-				}),
-				d(DIFFICULTY.RAID.MYTHIC, {
+				})),
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 6 }, {
 						cl(DEATHKNIGHT, {
@@ -3002,7 +3115,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}},
 						}),
 					}),
-				}),
+				})),
 			})),
 			-- #endif
 			pvp(n(SEASON_OBSIDIAN, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {

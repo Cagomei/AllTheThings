@@ -839,6 +839,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["collectible"] = false,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(155832),	-- Pristine Crystal Shard (QI!)
 						i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
 							["timeline"] = { ADDED_6_1_0 },
 							["groups"] = {

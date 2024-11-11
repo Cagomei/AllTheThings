@@ -33,6 +33,9 @@ root(ROOTS.Zones, {
 					q(31286, {	-- Robbing Robbers of Robbers
 						["provider"] = { "n", 63484 },	-- Len the Whisperer
 						["coord"] = { 53.51, 65.75, THE_VEILED_STAIR },
+						["g"] = {
+							i(85981),	-- Black Market Merchandise (QI!)
+						},
 					}),
 					q(31611, {	-- The Kun-Lai Kicker
 						["description"] = "If you don't see questgiver in The Veiled Stair, look in the Binan Village to the north.",

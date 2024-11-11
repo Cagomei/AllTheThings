@@ -30,81 +30,35 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17285, {	-- Defense Protocol Alpha: Azjol-Nerub
 					crit(57699, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39257),	-- Loatheb's Shadow
-							i(39267),	-- Abomination Shoulderblades
-							i(39259),	-- Fungi-Stained Coverings
-						},
+						["_encounter"] = { 585, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57697, {	-- Hadronox
-						["_encounter"] = { 586, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39256),	-- Sulfur Stave
-							i(39252),	-- Preceptor's Bindings
-							i(39261),	-- Tainted Girdle of Mending
-						},
+						["_encounter"] = { 586, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57698, {	-- Anub'arak
-						["_encounter"] = { 587, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(39419),	-- Nerubian Conquerer
-							i(43994),	-- Belabored Legplates
-							i(39425),	-- Cloak of the Dying
-							i(40616),	-- Helm of the Lost Conqueror
-							i(40617),	-- Helm of the Lost Protector
-							i(40618),	-- Helm of the Lost Vanquisher
-							i(40622),	-- Spaulders of the Lost Conqueror
-							i(40623),	-- Spaulders of the Lost Protector
-							i(40624),	-- Spaulders of the Lost Vanquisher
-							i(40619),	-- Leggings of the Lost Conqueror
-							i(40620),	-- Leggings of the Lost Protector
-							i(40621),	-- Leggings of the Lost Vanquisher
-						},
+						["_encounter"] = { 587, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18592, {	-- Defense Protocol Beta: Azjol-Nerub
 					crit(60581, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45464),	-- Cowl of Icy Breaths
-							i(45874),	-- Signet of Winter
-						},
+						["_encounter"] = { 585, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60579, {	-- Hadronox
-						["_encounter"] = { 586, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							i(45316),	-- Armbraces of the Vibrant Flame
-							i(45458),	-- Stormedge
-						},
+						["_encounter"] = { 586, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60580, {	-- Anub'arak
-						["_encounter"] = { 587, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-							currency(SIDEREAL_ESSENCE),
-							i(45318),	-- Drape of Fuming Anger
-							i(45313),	-- Furnace Stone
-						},
+						["_encounter"] = { 587, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19429, {	-- Defense Protocol Gamma: Azjol-Nerub
 					crit(63328, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 585, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63326, {	-- Hadronox
-						["_encounter"] = { 586, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 586, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63327, {	-- Anub'arak
-						["_encounter"] = { 587, DIFFICULTY.DUNGEON.HEROIC },
-						["groups"] = {
-
-						},
+						["_encounter"] = { 587, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
@@ -391,6 +345,90 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394437, 412470, 424201),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(585, {	-- Krik'thir the Gatewatcher
+						["creatureID"] = 28684,	-- Krik'thir the Gatewatcher
+						["groups"] = {
+							i(39257),	-- Loatheb's Shadow
+							i(39267),	-- Abomination Shoulderblades
+							i(39259),	-- Fungi-Stained Coverings
+						},
+					}),
+					e(586, {	-- Hadronox
+						["creatureID"] = 28921,	-- Hadronox
+						["groups"] = {
+							i(39256),	-- Sulfur Stave
+							i(39252),	-- Preceptor's Bindings
+							i(39261),	-- Tainted Girdle of Mending
+						},
+					}),
+					e(587, {	-- Anub'arak
+						["creatureID"] = 29120,	-- Anub'arak
+						["groups"] = {
+							i(39419),	-- Nerubian Conquerer
+							i(43994),	-- Belabored Legplates
+							i(39425),	-- Cloak of the Dying
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(412470, 424201),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(585, {	-- Krik'thir the Gatewatcher
+						["creatureID"] = 28684,	-- Krik'thir the Gatewatcher
+						["groups"] = {
+							i(45464),	-- Cowl of Icy Breaths
+							i(45874),	-- Signet of Winter
+						},
+					}),
+					e(586, {	-- Hadronox
+						["creatureID"] = 28921,	-- Hadronox
+						["groups"] = {
+							i(45316),	-- Armbraces of the Vibrant Flame
+							i(45458),	-- Stormedge
+						},
+					}),
+					e(587, {	-- Anub'arak
+						["creatureID"] = 29120,	-- Anub'arak
+						["groups"] = {
+							i(45318),	-- Drape of Fuming Anger
+							i(45312),	-- Gloves of Smoldering Touch
+							i(45313),	-- Furnace Stone
+						},
+					}),
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424201),
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					e(585, {	-- Krik'thir the Gatewatcher
+						["creatureID"] = 28684,	-- Krik'thir the Gatewatcher
+						["groups"] = {
+							
+						},
+					}),
+					e(586, {	-- Hadronox
+						["creatureID"] = 28921,	-- Hadronox
+						["groups"] = {
+							
+						},
+					}),
+					e(587, {	-- Anub'arak
+						["creatureID"] = 29120,	-- Anub'arak
+						["groups"] = {
+							
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 })));

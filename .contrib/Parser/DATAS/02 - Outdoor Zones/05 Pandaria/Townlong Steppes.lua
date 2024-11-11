@@ -277,6 +277,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 62304 },	-- Ban Bearheart
 						["coord"] = { 49.0, 70.6, TOWNLONG_STEPPES },
 						["isDaily"] = true,
+						["g"] = {
+							i(83153),	-- Bronze Claw (QI!)
+						},
 					}),
 					q(31065, {	-- Buried Beneath
 						["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },
@@ -314,6 +317,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
 						["provider"] = { "n", 62304 },	-- Ban Bearheart
+						["g"] = {
+							i(83130),	-- Shan'ze Tablet (QI!)
+						},
 					}),
 					q(31199, {	-- Destroy the Siege Weapons!
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
@@ -345,6 +351,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
 						["provider"] = { "n", 62304 },	-- Ban Bearheart
+						["g"] = {
+							i(83129),	-- Cloudrunner Egg (QI!)
+						},
 					}),
 					q(30970, {	-- Enraged By Hatred
 						["coord"] = { 67.3, 80.8, TOWNLONG_STEPPES },
@@ -388,6 +397,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
 						["isDaily"] = true,
 						["provider"] = { "n", 63614 },	-- Ling of the Six Pools
+						["g"] = {
+							i(86532),	-- Bag of Shado-Pan Gas Bombs (QI!)
+						},
 					}),
 					q(30785, {	-- Gao-Ran Battlefront
 						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
@@ -531,6 +543,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 30891,	-- Treatment for the Troops
 						["groups"] = {
 							i(82783),	-- Initiate Chao's Sword (QI!)
+							i(88586),	-- Chao Cookies
 						},
 					}),
 					q(30972, {	-- Joining the Fight
@@ -655,6 +668,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
 						["provider"] = { "n", 62304 },	-- Ban Bearheart
+						["g"] = {
+							i(83138),	-- Onyx Heart (QI!)
+						},
 					}),
 					q(30792, {	-- Orbiss Fades
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
@@ -679,6 +695,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 30929,	-- Bad Yak
 						["g"] = {
 							i(82467),	-- Ruthers' Harness (TOY!)
+							i(82468),	-- Yak Lasso (QI!)
 						},
 					}),
 					q(30773, {	-- Pitching In
@@ -722,6 +739,9 @@ root(ROOTS.Zones, {
 							{ "n", 62295 },	-- Omnia Mage
 							{ "n", 62379 },	-- Omnia Mage
 							{ "n", 62378 },	-- Omnia Priest
+						},
+						["g"] = {
+							i(83134),	-- Bronze Claws (QI!)
 						},
 					}),
 					q(30894, {	-- Rummaging Through the Remains
@@ -776,6 +796,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["isDaily"] = true,
 						["provider"] = { "n", 63009 },	-- Master Snowdrift
+						["g"] = {
+							i(84727),	-- Ancient Spirit Dust (QI!)
+						},
 					}),
 					q(30782, {	-- Spiteful Spirits
 						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
@@ -836,6 +859,10 @@ root(ROOTS.Zones, {
 							{ "n", 63623 },	-- Wu Kao Assassin
 							{ "n", 63624 },	-- Wu Kao Hawkmaster
 							{ "n", 63622 },	-- Wu Kao Rogue
+						},
+						["g"] = {
+							i(86534),	-- Shiny Shado-Pan Coin (QI!)
+							i(86536),	-- Wu Kao Dart of Lethargy (QI!)
 						},
 					}),
 					q(30900, {	-- Terror of the Dread Wastes
@@ -900,6 +927,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["isDaily"] = true,
 						["provider"] = { "n", 63009 },	-- Master Snowdrift
+						["g"] = {
+							i(84759),	-- Ciphered Scroll (QI!)
+						},
 					}),
 					q(30815, {	-- The Death of Me
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
@@ -937,6 +967,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["isDaily"] = true,
 						["provider"] = { "n", 63009 },	-- Master Snowdrift
+						["g"] = {
+							i(84762),	-- Highly Explosive Yaungol Oil (QI!)
+						},
 					}),
 					q(30775, {	-- The Exile
 						["coord"] = { 66.9, 51.4, TOWNLONG_STEPPES },
@@ -1138,6 +1171,7 @@ root(ROOTS.Zones, {
 								o(211719),	-- Violet Citron
 								o(211721),	-- Violet Citron
 							}),
+							i(88487),	-- Volatile Orb
 						},
 					}),
 					q(31687, {	-- Thinning the Sik'thik
@@ -1155,6 +1189,9 @@ root(ROOTS.Zones, {
 					q(31110, {	-- Through the Portal
 						["coord"] = { 28.8, 22.5, TOWNLONG_STEPPES },
 						["provider"] = { "n", 62810 },	-- Moshu the Arcane
+						["g"] = {
+							i(84102),	-- Ancient Arcane Powder (QI!)
+						},
 					}),
 					q(30780, {	-- Totemic Research
 						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },

@@ -128,13 +128,22 @@ root(ROOTS.Zones, {
 								},{
 									q(31341, {	-- A Wolf In Sheep's Clothing
 										["sourceQuests"] = { 31340 },	-- Oh Sheepie....
+										["g"] = {
+											i(86465),	-- Old Sheepskin (QI!)
+										},
 									}),
 									q(31338, {	-- Lost Sheepie
 										["minReputation"] = { FACTION_CHEE_CHEE, 3 },	-- Buddy
+										["g"] = {
+											i(86446),	-- Sheepie (QI!)
+										},
 									}),
 									q(31339, {	-- Lost Sheepie... Again
 										["sourceQuests"] = { 31338 },	-- Lost Sheepie
 										["minReputation"] = { FACTION_CHEE_CHEE, 4 },	-- Friend
+										["g"] = {
+											i(86446),	-- Sheepie (QI!)
+										},
 									}),
 									q(31340, {	-- Oh Sheepie...
 										["sourceQuests"] = { 31339 },	-- Lost Sheepie... Again
@@ -148,6 +157,9 @@ root(ROOTS.Zones, {
 										["isDaily"] = true,
 										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
 										["qg"] = 64464,	-- Andi
+										["g"] = {
+											i(79827),	-- Authentic Valley Stir Fry (QI!)
+										},
 									}),
 									q(30324, {	-- Not in Chee-Chee's Backyard
 										["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
@@ -184,12 +196,24 @@ root(ROOTS.Zones, {
 								},{
 									q(31534, {	-- The Beginner's Brew
 										["minReputation"] = { FACTION_ELLA, 3 },	-- Buddy
+										["g"] = {
+											i(87556),	-- Black Cherries (QI!)
+											i(87555),	-- Fuzzy Peach (QI!)
+											i(87553),	-- Red Radish (QI!)
+											i(87554),	-- Sweet Lakemelon (QI!)
+										},
 									}),
 									q(31537, {	-- Ella's Taste Test
 										["minReputation"] = { FACTION_ELLA, 4 },	-- Friend
+										["g"] = {
+											i(87558),	-- Ella's Brew (QI!)
+										},
 									}),
 									q(31538, {	-- A Worthy Brew
 										["minReputation"] = { FACTION_ELLA, 5 },	-- Good Friend
+										["g"] = {
+											i(87763),	-- Ella's Brew (QI!)
+										},
 									}),
 									q(30386, {	-- A Dish for Ella
 										["isDaily"] = true,
@@ -200,6 +224,9 @@ root(ROOTS.Zones, {
 										["qg"] = 64464,	-- Andi
 										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
 										["isDaily"] = true,
+										["g"] = {
+											i(79871),	-- Spicy Shrimp Dumplings (QI!)
+										},
 									}),
 									q(30327, {	-- You Have to Burn the Ropes
 										["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
@@ -216,6 +243,9 @@ root(ROOTS.Zones, {
 									q(30189, {	-- A Lovely Apple for Ella
 										["repeatable"] = true,
 										["cost"] = {{"i",79267,1}},	-- Lovely Apple
+										["g"] = {
+											i(79320),	-- Half a Lovely Apple
+										},
 									}),
 									q(30383, {	-- A Marsh Lily for Ella
 										["repeatable"] = true,
@@ -254,6 +284,10 @@ root(ROOTS.Zones, {
 										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
 										["qg"] = 64464,	-- Andi
 										["isDaily"] = true,
+										["g"] = {
+											i(80232),	-- Bloody Plainshawk Leg (QI!)
+											i(80233),	-- Grilled Plainshawk Leg (QI!)
+										},
 									}),
 									q(30317, {	-- Water, Water Everywhere
 										["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
@@ -299,9 +333,15 @@ root(ROOTS.Zones, {
 										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
 										["qgs"] = { 64464 },	-- Andi
 										["isDaily"] = true,
+										["g"] = {
+											i(79828),	-- Yak Statuette (QI!)
+										},
 									}),
 									q(30326, {	-- The Kunzen Legend-Chief
 										["isDaily"] = true,
+										["g"] = {
+											i(79866),	-- Kunzen Legend-Book (QI!)
+										},
 									}),
 									q(30425, {	-- A Blue Feather for Fish
 										["repeatable"] = true,
@@ -349,9 +389,18 @@ root(ROOTS.Zones, {
 										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
 										["qg"] = 64464,	-- Andi
 										["isDaily"] = true,
+										["g"] = {
+											i(80231),	-- Goldenfire Orchid (QI!)
+										},
 									}),
 									q(30322, {	-- Money Matters
 										["isDaily"] = true,
+										["g"] = {
+											i(80215),	-- Innkeeper Lei Lan's Payment (QI!)
+											i(80216),	-- Lolo Lio's Payment (QI!)
+											i(80213),	-- Spicemaster Jin Jao's Payment (QI!)
+											i(80214),	-- Trader Jambeezi's Payment (QI!)
+										},
 									}),
 									q(30388, {	-- A Blue Feather for Gina
 										["repeatable"] = true,
@@ -396,6 +445,9 @@ root(ROOTS.Zones, {
 										["qg"] = 64464,	-- Andi
 										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
 										["isDaily"] = true,
+										["g"] = {
+											i(80228),	-- Enormous Cattail Grouper Tooth (QI!)
+										},
 									}),
 									q(30319, {	-- Pest Problems
 										["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
@@ -450,6 +502,11 @@ root(ROOTS.Zones, {
 										["isDaily"] = true,
 										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
 										["qg"] = 64464,	-- Andi
+										["g"] = {
+											i(80236),	-- Apple-Berry Hooch (QI!)
+											i(80234),	-- Yoon's Apple (QI!)
+											i(80235),	-- Yoon's Craneberry (QI!)
+										}
 									}),
 									q(30321, {	-- Weed War II
 										["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
@@ -492,9 +549,15 @@ root(ROOTS.Zones, {
 										["isDaily"] = true,
 										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
 										["qg"] = 64464,	-- Andi
+										["g"] = {
+											i(80229),	-- Blue Freshwater Pearl (QI!)
+										},
 									}),
 									q(30318, {	-- Chasing the Chicken
 										["isDaily"] = true,
+										["g"] = {
+											i(80223),	-- Old Hillpaw's Prize Chicken (QI!)
+										},
 									}),
 									q(30394, {	-- A Blue Feather for Old Hillpaw
 										["repeatable"] = true,
@@ -545,6 +608,9 @@ root(ROOTS.Zones, {
 										["isDaily"] = true,
 										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
 										["qg"] = 64464,	-- Andi
+										["g"] = {
+											i(79870),	-- Yu-Ping Soup (QI!)
+										},
 									}),
 									q(30325, {	-- Where It Counts
 										["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
@@ -679,9 +745,17 @@ root(ROOTS.Zones, {
 										["isDaily"] = true,
 										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
 										["qg"] = 64464,	-- Andi
+										["g"] = {
+											i(80134),	-- Uncut Chrysoberyl (QI!)
+										},
 									}),
 									q(30323, {	-- They Don't Even Wear Them
 										["isDaily"] = true,
+										["g"] = {
+											i(80139),	-- Burglarized Bracelet (QI!)
+											i(80137),	-- Ransacked Ring (QI!)
+											i(80138),	-- Stolen Circlet (QI!)
+										},
 									}),
 									q(30431, {	-- A Blue Feather for Tina
 										["repeatable"] = true,
@@ -720,6 +794,9 @@ root(ROOTS.Zones, {
 									["sourceQuests"] = { 30260 },	-- Growing the Farm I: The Weeds
 									["provider"] = { "n", 57385 },	-- Gai Lan
 									["coord"] = { 38.7, 51.7, VALLEY_OF_THE_FOUR_WINDS },
+									["g"] = {
+										i(80122),	-- Spideroot (QI!)
+									},
 								}),
 								q(30260, {	-- Growing the Farm I: The Weeds
 									["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
@@ -730,6 +807,9 @@ root(ROOTS.Zones, {
 									["sourceQuests"] = { 30523 },	-- Growing the Farm II: The Broken Wagon
 									["provider"] = { "n", 58705 },	-- Fish Fellreed
 									["coord"] = { 41.7, 30.1, VALLEY_OF_THE_FOUR_WINDS },
+									["g"] = {
+										i(80136),	-- Waxed Plank (QI!)
+									},
 								}),
 								q(30523, {	-- Growing the Farm II: The Broken Wagon
 									["minReputation"] = { FACTION_THE_TILLERS, REVERED },
@@ -753,6 +833,12 @@ root(ROOTS.Zones, {
 									["sourceQuests"] = { 30522 },	-- Haohan's Vote II: The Real Culprits
 									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
 									["provider"] = { "n", 58646 },	-- Farmer Yoon
+									["g"] = {
+										i(80140),	-- Bloodbloom (QI!)
+										i(80141),	-- Cave Lily (QI!)
+										i(80142),	-- Ghostcap (QI!)
+										i(80143),	-- Violet Lichen (QI!)
+									},
 								}),
 								q(30527, {	-- Haohan's Vote IV: Melons For Felons
 									["sourceQuests"] = { 30525 },	-- Haohan's Vote III: Pure Poison
@@ -772,11 +858,17 @@ root(ROOTS.Zones, {
 									["sourceQuests"] = { 30252 },	-- A Helping Hand
 									["provider"] = { "n", 58646 },	-- Farmer Yoon
 									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
+									["g"] = {
+										i(80295),	-- Packet of Green Cabbage Seeds (QI!)
+									},
 								}),
 								q(30254, {	-- Learn and Grow II: Tilling and Planting
 									["sourceQuests"] = { 30535 },	-- Learn and Grow I: Seeds
 									["provider"] = { "n", 58646 },	-- Farmer Yoon
 									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
+									["g"] = {
+										i(80302),	-- EZ-Gro Green Cabbage Seeds (QI!)
+									},
 								}),
 								q(30255, {	-- Learn and Grow III: Tending Crops
 									["sourceQuests"] = { 30254 },	-- Learn and Grow II: Tilling and Planting
@@ -787,6 +879,9 @@ root(ROOTS.Zones, {
 									["sourceQuests"] = { 30255 },	-- Learn and Grow III: Tending Crops
 									["provider"] = { "n", 58646 },	-- Farmer Yoon
 									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
+									["g"] = {
+										i(80314),	-- EZ-Gro Green Cabbage (QI!)
+									},
 								}),
 								q(30258, {	-- Mung-Mung's Vote I: A Hozen's Problem
 									["sourceQuests"] = { 31945 },	-- Learn and Grow VI: Gina's Vote
@@ -797,6 +892,9 @@ root(ROOTS.Zones, {
 									["sourceQuests"] = { 30258 },	-- Mung-Mung's Vote I: A Hozen's Problem
 									["provider"] = { "n", 57401 },	-- Mung-Mung
 									["coord"] = { 44.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
+									["g"] = {
+										i(80116),	-- Partially Chewed Carrot (QI!)
+									},
 								}),
 								q(31946, {	-- Mung-Mung's Vote III: The Great Carrot Caper
 									["sourceQuests"] = { 30258 },	-- Mung-Mung's Vote II: Rotten to the Core
@@ -812,6 +910,10 @@ root(ROOTS.Zones, {
 									["sourceQuests"] = { 30519 },	-- Nana's Vote I: Nana's Secret Recipe
 									["coord"] = { 54.7, 47.0, VALLEY_OF_THE_FOUR_WINDS },
 									["provider"] = { "n", 64597 },	-- Nana Mudclaw
+									["g"] = {
+										i(89902),	-- Empty Pitcher (QI!)
+										i(89903),	-- Thousand-Year Water (QI!)
+									},
 								}),
 								q(31949, {	-- Nana's Vote III: Witchberry Julep
 									["sourceQuests"] = { 31948 },	-- Nana's Vote II: The Sacred Springs
@@ -821,6 +923,9 @@ root(ROOTS.Zones, {
 								q(31314, {	-- Old Man Thistle's Treasure
 									["sourceQuests"] = { 31313 },	-- Just a Folk Story
 									["provider"] = { "n", 58705 },	-- Fish Fellreed
+									["g"] = {
+										i(86428),	-- Old Man Thistle's Treasure
+									},
 								}),
 								q(32198, {	-- One Magical, Flying Kingdom's Trash...
 									["sourceQuests"] = { 32189 },	-- A Shabby New Face
@@ -848,6 +953,9 @@ root(ROOTS.Zones, {
 									["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
 									["provider"] = { "n", 58646 },	-- Farmer Yoon
 									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
+									["g"] = {
+										i(79824),	-- Stolen Vegetable (QI!)
+									},
 								}),
 								q(30336, {	-- The Kunzen Hunter-Chief
 									["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
@@ -1033,6 +1141,9 @@ root(ROOTS.Zones, {
 								["isDaily"] = true,
 								["coord"] = { 52.7, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 								["provider"] = { "n", 58713 },	-- Anthea Ironpaw
+								["g"] = {
+									i(79864),	-- Cindergut Pepper (QI!)
+								},
 							}),
 							q(31486, {	-- Everything I Know About Cooking (A)
 							--	this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
@@ -1043,6 +1154,9 @@ root(ROOTS.Zones, {
 								["coords"] = {
 									{ 46.2, 45.4, THE_JADE_FOREST },	-- Chin
 									{ 53.5, 76.4, KRASARANG_WILDS },	-- Cranfur the Noodler
+								},
+								["g"] = {
+									i(86392),	-- Letter to Sungshin Ironpaw (QI!)
 								},
 							}),
 							q(31279, {	-- Everything I Know About Cooking (H)
@@ -1056,12 +1170,18 @@ root(ROOTS.Zones, {
 									{ 83.6, 20.2, VALLEY_OF_THE_FOUR_WINDS },	-- Nan Thunderfoot
 									{ 64.2, 61.3, KUN_LAI_SUMMIT },	-- Li Goldendraft
 								},
+								["g"] = {
+									i(86392),	-- Letter to Sungshin Ironpaw (QI!)
+								},
 							}),
 							q(30332, {	-- Fatty Goatsteak
 								["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
 								["provider"] = { "n", 58712 },	-- Kol Ironpaw
 								["isDaily"] = true,
 								["coord"] = { 53.0, 51.3, VALLEY_OF_THE_FOUR_WINDS },
+								["g"] = {
+									i(79867),	-- Fatty Goatsteak (QI!)
+								},
 							}),
 							q(31332, {	-- Lesson 1: Sliced Peaches
 								["isDaily"] = true,
@@ -1113,22 +1233,36 @@ root(ROOTS.Zones, {
 								["repeatable"] = true,
 								["provider"] = { "n", 64395 },	-- Nam Ironpaw
 								["coord"] = { 53.5, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+								["g"] = {
+									i(87557),	-- Bundle of Groceries (QI!)
+								},
 							}),
 							q(30331, {	-- The Mile-High Grub
 								["provider"] = { "n", 58714 },	-- Mei Mei Ironpaw
 								["isDaily"] = true,
 								["coord"] = { 52.5, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+								["g"] = {
+									i(79895),	-- Master's Pot (QI!)
+									i(79894),	-- Mushan Tail Stew (QI!)
+								},
 							}),
 							q(30328, {	-- The Thousand-Year Dumpling
 								["isDaily"] = true,
 								["coord"] = { 52.6, 51.7, VALLEY_OF_THE_FOUR_WINDS },
 								["provider"] = { "n", 58715 },	-- Yan Ironpaw
+								["g"] = {
+									i(80133),	-- Preserved Vegetables (QI!)
+								},
 							}),
 							q(30330, {	-- The Truffle Shuffle
 								["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
 								["provider"] = { "n", 58716 },	-- Jian Ironpaw
 								["isDaily"] = true,
 								["coord"] = { 53.4, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+								["g"] = {
+									i(79833),	-- Shadelight Truffle (QI!)
+									i(80127),	-- Shadelight Truffle Spores (QI!)
+								},
 							}),
 							q(31521, {	-- To Be a Master
 								["description"] = "You must master all 6 Pandaren cooking ways for this quest to become available.",
@@ -1158,6 +1292,9 @@ root(ROOTS.Zones, {
 						["crs"] = {
 							58754,	-- Manglemaw
 							58755,	-- Manglemaw's Mother
+						},
+						["g"] = {
+							i(79237),	-- Enormous Crocolisk Tail (QI!)
 						},
 					}),
 					q(29918, {	-- A Lesson in Bravery
@@ -1191,6 +1328,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29907 },	-- Chen and Li Li
 						["coord"] = { 82.7, 21.2, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56440 },	-- Muno the Farmhand
+						["g"] = {
+							i(88371),	-- Watermelon Bomb
+						},
 					}),
 					q(31672, {	-- A Pumpkin-y Perfume
 						["isDaily"] = true,
@@ -1264,6 +1404,9 @@ root(ROOTS.Zones, {
 					q(29757, {	-- Bottletoads
 						["coord"] = { 60.6, 33.7, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56773 },	-- Yan
+						["g"] = {
+							i(76727),	-- Slimy Bottle (QI!)
+						},
 					}),
 					q(29952, {	-- Broken Dreams
 						["sourceQuests"] = { 29950 },	-- Li Li's Day Off
@@ -1351,6 +1494,9 @@ root(ROOTS.Zones, {
 						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
 						["coord"] = { 44.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 57401 },	-- Mung-Mung
+						["g"] = {
+							i(77379),	-- Virmen Tooth (QI!)
+						},
 					}),
 					q(29982, {	-- Evacuation Orders
 						["coord"] = { 19.5, 56.9, VALLEY_OF_THE_FOUR_WINDS },
@@ -1524,6 +1670,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29949 },	-- Legacy
 						["coord"] = { 68.8, 43.4, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56138 },	-- Li Li
+						["g"] = {
+							i(76350),	-- Li Li's Wishing-Stone (QI!)
+						},
 					}),
 					q(29872, {	-- Lin Tenderpaw
 						["isBreadcrumb"] = true,
@@ -1667,6 +1816,9 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 58646 },	-- Farmer Yoon
+						["g"] = {
+							i(79885),	-- Barrel of Fireworks (QI!)
+						},
 					}),
 					q(29600, {	-- Snap Judgment
 						["provider"] = { "n", 56802 },	-- Zhang Yue
@@ -1842,6 +1994,9 @@ root(ROOTS.Zones, {
 					q(29581, {	-- The Golden Dream
 						["sourceQuests"] = { 29577 },	-- Ashyo's Vision
 						["provider"] = { "n", 56802 },	-- Zhang Yue
+						["g"] = {
+							i(76973),	-- Sprig of Dreamleaf (QI!)
+						},
 					}),
 					q(30628, {	-- The Gratitude of Stoneplow
 						["sourceQuests"] = { 30627 },	-- The Gratitude of Stoneplow
@@ -1902,6 +2057,9 @@ root(ROOTS.Zones, {
 							29990,	-- Training and Discipline
 							30360,	-- Warn Stoneplow (A)
 							30241,	-- Warn Stoneplow (H)
+						},
+						["g"] = {
+							i(80337),	-- Ken-Ken's Mask (QI!)
 						},
 					}),
 					q(29913, {	-- The Meat They'll Eat
@@ -2062,6 +2220,10 @@ root(ROOTS.Zones, {
 					q(30267, {	-- Watery Woes
 						["coord"] = { 61.0, 32.9, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 58736 },	-- Gladecaster Lang
+						["g"] = {
+							i(79197),	-- Glade Glimmer (QI!)
+							i(79198),	-- Spindly Bloodfeather (QI!)
+						},
 					}),
 					q(30029, {	-- Wee Little Shenanigans
 						["sourceQuests"] = { 30048 },	-- Li Li and the Grain
@@ -2086,6 +2248,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 62.7, 59.7, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 57405 },	-- Silkmaster Tsai
 						["g"] = {
+							i(77455),	-- Mulberry Leaves (QI!)
+							i(77456),	-- Raw Silk (QI!)
 							i(84343),	-- Silkmaster's Cloak
 							i(84342),	-- Silkmaster's Manteau
 							i(84341),	-- Silkmaster's Cape

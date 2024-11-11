@@ -404,6 +404,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 			}),
+			ach(41207, {	-- When the Drust Settles
+				["timeline"] = { ADDED_11_0_7 },
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					12941,	-- Adventurer of Drustvar
+					13083,	-- Better, Faster, Stronger
+					13094,	-- Cursed Game Hunter
+					13064,	-- Drust the Facts, Ma'am
+					13082,	-- Everything Old Is New Again
+					12995,	-- Treasures of Drustvar
+					13087,	-- Sausage Sampler
+				}},
+			}),
 		}),
 	}),
 })));

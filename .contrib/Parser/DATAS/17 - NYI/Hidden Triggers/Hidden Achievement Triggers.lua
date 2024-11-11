@@ -3626,5 +3626,11 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(40886),	-- <Hidden> Is Dracthyr For Soar Wingman
 			ach(40910),	-- Successfully Stress Test CN Realms
 		})),
+
+		-- 11.0.7
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
+			ach(41213),	-- Family Battler of Khaz Algar (copy)
+			ach(41218),	-- <DNT> Plunderstorm Plunder Tracker - V1.5 11.0.7 - Mainline Power
+		})),
 	}),
 });

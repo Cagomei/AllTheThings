@@ -218,11 +218,17 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["sourceQuests"] = { 49143 },	-- Essence of the Light Mother
 					["provider"] = { "n", 126307 },	-- Prophet Velen
 					["coord"] = { 46.0, 36.7, THE_VINDICAAR_KROKUUN_UPPER },
+					["g"] = {
+						i(152593),	-- Essence of Light (QI!)
+					},
 				}),
 				q(48560, {	-- An Offering of Shadow
 					["sourceQuests"] = { 47220 },	-- A Beacon in the Dark
 					["provider"] = { "n", 128722 },	-- Prophet Velen
 					["coord"] = { 53.1, 48.8, THE_VINDICAAR_EREDATH_UPPER },
+					["g"] = {
+						i(152594),	-- Essence of Shadow (QI!)
+					},
 				}),
 				q(49143, {	-- Essence of the Light Mother
 					["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow

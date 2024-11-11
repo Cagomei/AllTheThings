@@ -761,6 +761,10 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Elemental Bonds",
 	[-1001035] = "Seasonal Fish: Summer Bass",
 	[-1001036] = "Seasonal Fish: Winter Squid",
+	[-1001051] = "Defense Protocol Alpha",
+	[-1001052] = "Defense Protocol Beta",
+	[-1001053] = "Defense Protocol Gamma",
+	[-1001054] = "Protocol Inferno",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -978,6 +982,10 @@ localize(L.HEADER_ICONS, {
 	[-1001034] = 516313,
 	[-1001035] = 133889,
 	[-1001036] = 133899,
+	[-1001051] = 236514,
+	[-1001052] = 236516,
+	[-1001053] = 236521,
+	[-1001054] = 512617,
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -1014,15 +1022,15 @@ _.Modules.Events.SetEventInformation(590, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=22,["weekday"]=3,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=7,["weekday"]=3,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=22,["weekday"]=4,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=7,["weekday"]=4,["year"]=2026})
 });
-_.Modules.Events.SetEventInformation(133889, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=2,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=6,["year"]=2023}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=1,["year"]=2024}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025})
-});
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=7,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=3,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026})
+});
+_.Modules.Events.SetEventInformation(133889, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=2,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=6,["year"]=2023}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=1,["year"]=2024}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025})
 });
 
 -- Filter Database Module
@@ -6901,6 +6909,10 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Elementare Bande",
 	[-1001035] = "Saisonfisch: Sommerbarsch",
 	[-1001036] = "Saisonfisch: Winterkalmar",
+	[-1001051] = "Verteidigungsprotokoll Alpha",
+	[-1001052] = "Verteidigungsprotokoll Beta",
+	[-1001053] = "Verteidigungsprotokoll Gamma",
+	[-1001054] = "Protokoll Inferno",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -8830,6 +8842,10 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Liens élémentaires",
 	[-1001035] = "Poisson de saison : bar d'été",
 	[-1001036] = "Poisson de saison : calmar d'hiver",
+	[-1001051] = "Protocole de défense Alpha",
+	[-1001052] = "Protocole de défense Bêta",
+	[-1001053] = "Protocole de défense Gamma",
+	[-1001054] = "Protocole Inferno",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -12281,6 +12297,10 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Prisão Elemental",
 	[-1001035] = "Peixe sazonal: robalo de verão",
 	[-1001036] = "Peixe sazonal: Lula de Inverno",
+	[-1001051] = "Protocolo de Defesa Alfa",
+	[-1001052] = "Protocolo de Defesa Beta",
+	[-1001053] = "Protocolo de Defesa Gama",
+	[-1001054] = "Protocolo Inferno",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -14149,6 +14169,10 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Власть стихий",
 	[-1001035] = "Сезонная рыба: летний окунь",
 	[-1001036] = "Сезонная рыба: зимний кальмар",
+	[-1001051] = "Защитный протокол \"Альфа\"",
+	[-1001052] = "Защитный протокол \"Бета\"",
+	[-1001053] = "Защитный протокол \"Гамма\"",
+	[-1001054] = "Протокол \"Пекло\"",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -16298,6 +16322,10 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "정령의 속박",
 	[-1001035] = "제철 생선: 여름 농어",
 	[-1001036] = "제철 생선: 겨울 오징어",
+	[-1001051] = "방어 프로토콜 알파",
+	[-1001052] = "방어 프로토콜 베타",
+	[-1001053] = "방어 프로토콜 감마",
+	[-1001054] = "프로토콜 지옥불",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -18108,6 +18136,10 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Vínculos Elementales",
 	[-1001035] = "Pescado de temporada: lubina de verano",
 	[-1001036] = "Pescado de temporada: calamares de invierno",
+	[-1001051] = "Protocolo de defensa Alfa",
+	[-1001052] = "Protocolo de defensa Beta",
+	[-1001053] = "Protocolo de defensa Gamma",
+	[-1001054] = "Protocolo Inferno",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -20056,6 +20088,10 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "元素誓约",
 	[-1001035] = "时令鱼类：夏季鲈鱼",
 	[-1001036] = "时令鱼类：冬鱿鱼",
+	[-1001051] = "防御协议阿尔法",
+	[-1001052] = "防御协议贝塔",
+	[-1001053] = "防御协议伽马",
+	[-1001054] = "地狱火协议",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",

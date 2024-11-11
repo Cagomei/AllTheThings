@@ -477,6 +477,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 106271 },	-- Jarum Skymane
 						["coord"] = { 53.8, 87.8, HIGHMOUNTAIN },
 						["g"] = {
+							i(139501),	-- Frostcrag Drums (QI!)
 							follower(711),	-- Hymdall
 							artifact(793),	-- Strom'kar, the Warbreaker
 							artifact(656),	-- Warswords of the Valarjar [Main Hand]

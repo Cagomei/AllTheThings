@@ -42,6 +42,20 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["npcID"] = 143255
 				]]--
 			}),
+			ach(41204, {	-- Dune Squad
+				["timeline"] = { ADDED_11_0_7 },
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					13009,	-- Adept Sandfisher
+					12943,	-- Adventurer of Vol'dun
+					13017,	-- Champion of the Vulpera
+					13018,	-- Dune Rider
+					13016,	-- Scavenger of the Sands
+					13437,	-- Scavenge like a Vulpera
+					13011,	-- Scourge of Zem'lan
+					12849,	-- Treasures of Vol'dun
+				}},
+			}),
 			explorationAch(12560),	-- Explore Vol'dun
 			ach(13016, {	-- Scavenger of the Sands
 				crit(41342,  {	-- Jason's Rusty Blade

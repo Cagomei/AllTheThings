@@ -60,6 +60,19 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 				},
 			}),
+			ach(41202, {	-- Hot Tropic
+				["timeline"] = { ADDED_11_0_7 },
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					12944,	-- Adventurer of Zuldazar
+					13020,	-- Bow to Your Masters
+					13029,	-- Eating Out of the Palm of My Tiny Hand
+					12482,	-- Get Hek'd
+					12614,	-- Loa Expectations
+					13038,	-- Raptari Rider
+					12851,	-- Treasures of Zuldazar
+				}},
+			}),
 			ach(12481, {	-- The Final Seal
 				["sourceQuests"] = { 50954 },	-- Zandalar Forever!
 				["races"] = HORDE_ONLY,

@@ -350,6 +350,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			}),
 			-- #endif
+			-- #if ANYCLASSIC
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(PROTOCOL_INFERNO, {
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(470595),
+				["groups"] = {
+					e(109, {  -- Ascendent Lord Obsidius
+						["crs"] = { 39705 },	-- Ascendent Lord Obsidius
+						["groups"] = {
+							ach(41139),	-- Protocol Inferno: Blackrock Caverns
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	})),
 })));
