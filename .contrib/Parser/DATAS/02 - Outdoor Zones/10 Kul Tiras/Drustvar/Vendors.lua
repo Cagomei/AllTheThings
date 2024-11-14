@@ -122,9 +122,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						}),
 						i(161908, {	-- Reins of the Dusky Waycrest Gryphon (MOUNT!)
 							["cost"] = 900000000,	-- 90,000g
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(161910, {	-- Reins of the Smoky Charger (MOUNT!)
 							["cost"] = 125000000,	-- 12,500g
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(161594, {	-- Woven Thornspeaker's Leggings
 							["cost"] = 19000000,	-- 1,900g

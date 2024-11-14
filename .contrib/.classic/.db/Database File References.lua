@@ -6,6 +6,8 @@
 -- #IMPORT: 00 - DB\\AccountWideQuestsDB.lua
 -- #IMPORT: 00 - DB\\CategoryDB.lua
 -- #IMPORT: 00 - DB\\ClassInfoDB.lua
+-- #IMPORT: 00 - DB\\ClassPresetsDB\\
+-- #IMPORT: 00 - DB\\ExplorationDB\\
 -- #IMPORT: 00 - DB\\FilterDB.lua
 -- #IMPORT: 00 - DB\\FlightPathDB.lua
 -- #IMPORT: 00 - DB\\FlightPathDB_Conditionals.lua

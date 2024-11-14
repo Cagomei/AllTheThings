@@ -2596,6 +2596,7 @@ local ObjectNames = {
 	[192823] = "Full Jug of Wine",
 	[192824] = "Half Full Glass of Wine",
 	[192825] = "Aged Dalaran Limburger",
+	[192826] = "Drakkari History Tablet",
 	[192827] = "Wild Mustard",
 	[192828] = "Crystalsong Carrot",
 	[192833] = "Bridenbrad's Possessions",
@@ -4353,6 +4354,7 @@ local ObjectModels = {
 	[192823] = 189821,
 	[192824] = 192003,
 	[192825] = 198221,
+	[192826] = 194086,
 	[192827] = 189763,
 	[192828] = 219486,
 	[192833] = 196979,
@@ -5979,6 +5981,7 @@ localize(ObjectNames, {
 	[192823] = "Voller Weinkrug",
 	[192824] = "Halbvolles Weinglas",
 	[192825] = "Reifer Dalaranlimburger",
+	[192826] = "Geschichtstafel der Drakkari",
 	[192827] = "Wilder Senf",
 	[192828] = "Kristallsangkarotte",
 	[192833] = "Bridenbrads Hab und Gut",
@@ -7284,6 +7287,7 @@ localize(ObjectNames, {
 	[192823] = "Cruche de vin pleine",
 	[192824] = "Verre de vin à moitié plein",
 	[192825] = "Vieux limbourg de Dalaran",
+	[192826] = "Tablette de l'histoire drakkari",
 	[192827] = "Moutarde sauvage",
 	[192828] = "Carotte du Chant de cristal",
 	[192833] = "Possessions de Bridenbrad",
@@ -8203,6 +8207,7 @@ localize(ObjectNames, {
 	[192823] = "Brocca Piena di Vino",
 	[192824] = "Bicchiere Mezzo Pieno di Vino",
 	[192825] = "Groviera Stagionato di Dalaran",
+	[192826] = "Tavoletta Storica Drakkari",
 	[192827] = "Senape Selvatica",
 	[192828] = "Carota della Foresta di Cristallo",
 	[192833] = "Spada di Bridenbrad",
@@ -9390,6 +9395,7 @@ localize(ObjectNames, {
 	[192823] = "Jarra de Vinho Cheia",
 	[192824] = "Taça de Vinho Meio Cheia",
 	[192825] = "Roquefort de Dalaran Curado",
+	[192826] = "Tabuleta de História Drakkari",
 	[192827] = "Mostarda Selvagem",
 	[192828] = "Cenoura do Canto Cristalino",
 	[192833] = "Posses do Brindeiro",
@@ -10712,6 +10718,7 @@ localize(ObjectNames, {
 	[192823] = "Полный кувшин с вином",
 	[192824] = "Недопитый стакан",
 	[192825] = "Зрелый даларанский камамбер",
+	[192826] = "Табличка с летописью Драккари",
 	[192827] = "Полевая горчица",
 	[192828] = "Морковь из леса Хрустальной Песни",
 	[192833] = "Имущество Бриденбрада",
@@ -12097,6 +12104,7 @@ localize(ObjectNames, {
 	[192823] = "가득 찬 포도주 단지",
 	[192824] = "반쯤 찬 포도주 잔",
 	[192825] = "숙성된 달라란 연치즈",
+	[192826] = "드라카리 역사 서판",
 	[192827] = "야생 겨자",
 	[192828] = "수정노래 당근",
 	[192833] = "브라이든브래드의 물건 상자",
@@ -13353,6 +13361,7 @@ localize(ObjectNames, {
 	[192823] = "Jarra llena de vino",
 	[192824] = "Vaso de vino medio lleno",
 	[192825] = "Queso Limburger de Dalaran viejo",
+	[192826] = "Tablilla de historia Drakkari",
 	[192827] = "Mostaza silvestre",
 	[192828] = "Zanahoria Canto de Cristal",
 	[192833] = "Posesiones de Bridenbrad",
@@ -14516,6 +14525,7 @@ localize(ObjectNames, {
 	[192823] = "一壶葡萄酒",
 	[192824] = "半满的酒杯",
 	[192825] = "达拉然奶酪",
+	[192826] = "达卡莱历史石板",
 	[192827] = "野芥菜",
 	[192828] = "晶歌胡萝卜",
 	[192833] = "布雷登布莱德的物品",
@@ -14653,3 +14663,20 @@ for key,value in pairs({
 do achievements[key].description = value; end
 end
 end
+
+
+-- Add a Header & Filter debugger
+setmetatable(_.FilterConstants, {
+	__index = function(t, key)
+		_.print("MISSING FilterConstant:", key);
+		rawset(t, key, -9999999999);
+		return -9999999999;
+	end
+});
+setmetatable(_.HeaderConstants, {
+	__index = function(t, key)
+		_.print("MISSING HeaderConstant:", key);
+		rawset(t, key, -9999999999);
+		return -9999999999;
+	end
+});

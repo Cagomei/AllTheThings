@@ -34,7 +34,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60421, {	-- A Call to Revendreth
 					["provider"] = { "n", 167193 },	-- Featherlight
-					["coord"] = { 59.9, 32.4, THE_TRUNK },
+					["coord"] = { 59.9, 32.4, THE_ROOTS },
 					["g"] = {
 						i(181556),	-- Tribute of the Court
 					},
@@ -112,7 +112,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60435, {	-- Challenges in Revendreth
 					["provider"] = { "n", 167206 },	-- Yanlar
-					--["coord"] = { 36.8, 24.8,  }, this had Bastion map, should be fixed
+					["coord"] = { 37.0, 26.2, THE_TRUNK },
 					["g"] = {
 						i(181476),	-- Tribute of the Wild Hunt
 					},

@@ -408,6 +408,31 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			},
 			-- Chapter 3
+			q(85047, {	-- A Pirate Predicament
+				["provider"] = { "n", 232407 },	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
+				["coord"] = { 63.0, 50.2, TANARIS },
+			}),
+			q(85060, {	-- Pirate Foods and Superstitions
+				["description"] = "Talk to Kelsey Yance in the Old Port Authority building or Mrs. Gant in a room on the lowest level of Booty Bay. Collect the Boonful Banquet from a barrel in the same room as Mrs. Gant then show it to Scowling Rosa who paths around the wharf.",
+				["provider"] = { "n", 231413 },	-- Bonenose
+				["coord"] = { 60.9, 44.7, TANARIS },
+				["g"] = {
+					i(231263),	-- My Journal: The Case of the Superstitious and Hungry Pirates (QI!)
+					n(2664, {	-- Kelsey Yance <Cook>
+						["coord"] = { 42.8, 69.0, THE_CAPE_OF_STRANGLETHORN },
+					}),
+					n(54232, {	-- Mrs. Gant <Cooking Trainer & Supplies>
+						["coord"] = { 42.7, 72.7, THE_CAPE_OF_STRANGLETHORN },
+					}),
+					o(473934, {	-- Property of Cooktholomew
+						["description"] = "On the bottom floor of a building in Booty Bay by some bunks.",
+						["coord"] = { 60.9, 44.7, THE_CAPE_OF_STRANGLETHORN },
+						["g"] = {
+							i(229968),	-- Boonful Banquet (QI!)
+						},
+					}),
+				},
+			}),
 			q(85195),	-- Chapter 3
 			-- Chapter 4
 			q(85503),	-- Chapter 4
@@ -430,8 +455,12 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			}),
 			q(84882, {	-- Deck Dismay
 				["description"] = "Speak to Alphonse after having looted the Six of Frost to unlock this quest. Use the Idol of Ohn'ahra to find more cards scattered around the grounds.",
-				["provider"] = { "n", 230838 },	-- Alphonse Constant <Apprentice Cartomancer>
-				["coord"] = { 63.9, 52.3, TANARIS },
+				["providers"] = {
+					{ "n", 230838 },	-- Alphonse Constant <Apprentice Cartomancer>
+					-- Need this here so you can link the source item / object to this quest without using debug mode
+					{ "i", 229219 },	-- Six of Frost
+				},
+				["coord"] = { 63.9, 52.4, TANARIS },
 				["g"] = {
 					o(467083, {	-- Darkmoon Fortune Card
 						["description"] = "Under a bench near the Story Time stage.",
@@ -573,7 +602,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["provider"] = { "n", 229749 },	-- Riko
 				["coord"] = { 61.9, 50.5, TANARIS },
 				["g"] = {
-					i(228750),	-- My Journal: The Case of the Fur-Getting Wikket
+					i(228750),	-- My Journal: The Case of the Fur-Getting Wikket (QI!)
 					n(229775, {	-- Sully "The Pickle" McLeary
 						["coord"] = { 63.1, 49.4, TANARIS },
 					}),
@@ -587,9 +616,56 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					i(228740),	-- Gizmo the Pure (PET!)
 				},
 			}),
+			-- The Case of an Old Soul
+			q(84435, {	-- Nola's Last Wish
+				["description"] = "Speak to Lashk by the story time stage, locate Nola's Last Wish south of Tortaka Refuge in Vol'Dun, then used it to summon and speak to Scrollsage Nola's spirit at the underwater Tortollan wedding east of Atal'Dazar.",
+				["qgs"] = {
+					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
+					232406,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
+				},
+				["coord"] = { 63.0, 50.2, TANARIS },
+				["g"] = {
+					i(228302),	-- My Journal: Nola's Last Wish (QI!)
+					n(229102, {	-- Lashk
+						["description"] = "Near the story time stage.",
+						["coord"] = { 63.9, 53.5, TANARIS },
+					}),
+					o(463104, {	-- Nola's Last Wish
+						["description"] = "In a pile of scrolls south of Tortaka Refuge in Vol'Dun.",
+						["coord"] = { 64.0, 26.0, VOLDUN },
+						["g"] = {
+							i(228233),	-- Nola's Last Wish (QI!)
+						},
+					}),
+					n(229103, {	-- Scrollsage Nola
+						["description"] = "Use Nola's Last Wish to summon and speak to at the underwater Tortollan wedding east of Atal'Dazar.",
+						["coord"] = { 24.4, 44.4, ZULDAZAR },
+					})
+				},
+			}),
+			-- The Case of Great Aspirations
+			q(84932, {	-- A Legacy of Destruction
+				["qgs"] = {
+					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
+					232406,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
+				},
+				["coord"] = { 63.0, 50.2, TANARIS },
+			}),
+			q(84933, {	-- From Ashes to Wisdom
+				["description"] = "Summon Voidfire with the provided whistle then talk to him in the following locations:\nNear the Ruins of Thaurissan in the Burning Steppes (61.4, 28.7)\nNear the Scar of the Worldbreaker in the Badlands (33.1, 53.0)\nNear the Twilight Breach north of Victor's Point in the Twilight Highlands (38.3, 49.1)\nIn the Quel'Dormir Gardens by the Ruins of Vash'jir in the Shimmering Expanse (38.8, 66.9)",
+				["provider"] = { "n", 231029 },	-- Voidfire
+				["coords"] = {
+					{ 61.7, 49.8, TANARIS },
+					{ 61.4, 28.7, BURNING_STEPPES },
+					{ 33.1, 53.0, BADLANDS },
+					{ 38.3, 49.1, TWILIGHT_HIGHLANDS },
+					{ 38.8, 66.9, VASHJIR_SHIMMERING_EXPANSE },
+				},
+				["g"] = {
+					i(231292),	-- Whelpling Whistle (QI!)
+				},
+			}),
 			q(84924),	-- The Case of a Feathered Friend
-			q(84435),	-- The Case of an Old Soul
-			q(84933),	-- The Case of Great Aspirations
 			q(85477),	-- The Case of Missing Mementos
 			q(84469),	-- The Case of Pet Games
 			q(84912),	-- The Case of Staged Disaster
@@ -728,6 +804,35 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					["provider"] = { "i", 228212 },	-- Waterlogged Celebration Crate
 				}),
 			}),
+			header(HEADERS.Quest, 84767, {
+				i(228977),	-- Burnt Ransom Note
+				o(466438, {	-- Charred Celebration Crate
+					["description"] = "On the ground by the bear trampoline in the north-western corner of Mount Hyjal.",
+					["coord"] = { 13.6, 33.5, MOUNT_HYJAL },
+					["g"] = {
+						i(228976),	-- Charred Celebration Crate (QS!)
+					},
+				}),
+				q(84767, {	-- Charred Celebration Crate
+					["provider"] = { "i", 228976 },	-- Charred Celebration Crate
+				}),
+			}),
+			header(HEADERS.Quest, 85523, {
+				i(231888),	-- Mildewed Ransom Note
+				o(478090, {	-- Mildewed Celebration Crate
+					["description"] = "In a corner within Eldreth Row by the exterior of Dire Maul.\nVisible only with a buff, obtained from the Potion of Truth found at the top of Thunder Peak behind Lord Magmathar in Ashenvale. The buff will be lost if you encounter any load screens or try to leave Kalimdor.",
+					["coords"] = {
+						{ 47.9, 38.3, ASHENVALE },
+						{ 60.4, 35.4, FERALAS },
+					},
+					["g"] = {
+						i(231886),	-- Mildewed Celebration Crate (QS!)
+					},
+				}),
+				q(85523, {	-- Mildewed Celebration Crate
+					["provider"] = { "i", 231886 },	-- Mildewed Celebration Crate
+				}),
+			}),
 		}),
 		header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 			ach(40967),		-- Ratts' Revenge
@@ -746,7 +851,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					{ "i", 228938, 1 },	-- Peculiar Gem
 				},
 			}),
-			o(457130, {	-- Hidden Hatch
+			o(475130, {	-- Hidden Hatch
 				["description"] = "Behind an energy conduit in an alcove to the right when first entering the Mechanar.",
 			}),
 		}),
@@ -755,6 +860,8 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 	n(GUEST_RELATIONS, {
+		q(85564),	-- Triggered after talking to Kelsey during (85060) Pirate Foods and Superstitions.
+		q(85565),	-- Triggered after talking to Mrs. Gant during (85060) Pirate Foods and Superstitions.
 		q(83831),	-- Triggered on turn in of (84868) A Whiff of Help. For missing secret toys?
 		q(84617, name(HEADERS.Achievement, 40873)),	-- Accepting Harder Puzzles from Alyx. This unlocks notes on the bulletin board next to Alyx.
 		q(83824, name(HEADERS.Item, 226242)),	-- Triggered when restoring the 'Green Hills of Stranglethorn' by gathering all the missing pages.

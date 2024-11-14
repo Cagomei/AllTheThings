@@ -894,16 +894,16 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 						}),
 						iensemble(232321, {	-- Ensemble: Boulderfist Mystic's Battlegear
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
-						}),	--TODO: iensemble includes i(44675), verify
+						}),
 						iensemble(232322, {	-- Ensemble: Cenarion Mender's Battlegear
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
-						}),	--TODO: iensemble includes i(33466), i(34602), i(44732), verify
+						}),
 						iensemble(232318, {	-- Ensemble: Shadowmoon Warlock's Vestments
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
-						}),	--TODO: iensemble does not include i(43070) but ctrl+click does, accurate?
+						}),
 						iensemble(232320, {	-- Ensemble: Telhamat Anchorite's Raiment
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
-						}),	--TODO: iensemble includes i(44112), verify?
+						}),
 						i(232048, {	-- Felguard Sentinel's Polearm
 							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
 						}),
@@ -3594,6 +3594,18 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						}),
 					}),
 					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+						iensemble(234859, {	-- Ensemble: Twilight Acolyte's Regalia
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+						}),
+						iensemble(234857, {	-- Ensemble: Twilight Hunter's Guise
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+						}),
+						iensemble(234856, {	-- Ensemble: Twilight Zealot's Battleplate
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+						}),
+						iensemble(234855, {	-- Ensemble: Vestments of the Twisted Grove
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+						}),
 						i(234860, {	-- Explorer's League Deepholm Expedition Tabard
 							["races"] = ALLIANCE_ONLY,
 							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
@@ -4421,11 +4433,104 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 						})
 					}),
 					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
-						i(234755, {	-- Tabard of the Pandaran Elders
+						i(234775, {	-- Amber Pandaren Fan
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234763, {	-- Bloody Expeditionary Cleaver
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234783, {	-- Caravan Guard's Buckler
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234774, {	-- Crimson Amber Incubator
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234796, {	-- Embroidered Shado-Pan Kilt
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234762, {	-- Embroidered Shado-Pan Robes
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234764, {	-- Fist of Knives
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234767, {	-- Flame-Bladed Long Sword
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234765, {	-- Flame-Bladed Steel Sword
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234794, {	-- Gilded Shado-Pan Kilt
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234759, {	-- Gilded Shado-Pan Robes
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234789, {	-- Gourd-Topped Mallet
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234773, {	-- Imperial Gut Render
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234768, {	-- Jungle Gourd Splitter
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234757, {	-- Kor'kron Pauldrons
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234758, {	-- Korkron Spaulders
 							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(234756, {	-- Kor'kron Tabard
 							--["races"] = HORDE_ONLY,
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234772, {	-- Kris of the Mogu Shaman
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234771, {	-- Mogu Lightning Spitter
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234781, {	-- Mogu'shan Vault's Improvised Shield
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234787, {	-- Mogu'shan Warden's Crystal Spear
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234957, {	-- Monstrous Gluttony
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234784, {	-- Pandaran Bolt Thrower
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234770, {	-- Pandaran Guard's Halberd
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234769, {	-- Pandaren Guard's Poleaxe
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234791, {	-- Reforged Harmonic Mallet
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234790, {	-- Restored Harmonic Mallet
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234766, {	-- Ringed Pandaran Falchion
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234776, {	-- Saurok Mystic's Voodoo Stick
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234795, {	-- Shado-Pan Guise
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234778, {	-- Staff of the Jade Serpent
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234777, {	-- Stave-Master's Spire
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(234755, {	-- Tabard of the Pandaran Elders
 							--["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 					})),
@@ -5912,11 +6017,67 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 						}),
 					}),
 					filter(COSMETIC, {
+						i(234943, {	-- Broken Shore Battlemender's Drape
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(234954, {	-- Corrupted Knot
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(234952, {	-- Crux of Blind Faith
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(234941, {	-- Drake Hunter's Drape
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(234953, {	-- Edge of the First Blade
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						iensemble(234946, {	-- Ensemble: Broken Shore Battlemender's Gear
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						iensemble(234947, {	-- Ensemble: Drake Hunter's Kit
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						iensemble(234948, {	-- Ensemble: Drekirjar Warrior's Battlegear
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						iensemble(234945, {	-- Ensemble: Invasion Stalker's Guise
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+							["timeline"] = { ADDED_11_0_7 },
+						}),
 						iensemble(188209, {	-- Ensemble: Ravencrest's Battleplate
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
 						}),
+						i(234958, {	-- Fenryr's Bloodstained Fang
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(234949, {	-- Howling Echoes
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(234942, {	-- Invasion Stalker's Cloak
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(234959, {	-- Key to the Halls
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["timeline"] = { ADDED_11_0_7 },
+						}),
 						i(187562, {	-- Replica Aegis of Aggramar
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 3000 }},
+						}),
+						i(234956, {	-- Rod of Crystalline Energies
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+							["timeline"] = { ADDED_11_0_7 },
 						}),
 					}),
 					filter(MISC, {

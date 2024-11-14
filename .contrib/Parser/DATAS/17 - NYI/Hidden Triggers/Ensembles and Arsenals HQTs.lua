@@ -1044,22 +1044,30 @@ q(76582),	-- Ensemble: Valhalas Ceremonial Armor
 q(78086),	-- Ensemble: Raiment of Amirdrassi
 
 --- The War Within
-q(85586)	-- Ensemble: Auchenai Priest's Raiment
-q(85580)	-- Ensemble: Boulderfist Mystic's Battlegear
-q(85575)	-- Ensemble: Cenarion Mender's Battlegear
+q(85586),	-- Ensemble: Auchenai Priest's Raiment
+q(85580),	-- Ensemble: Boulderfist Mystic's Battlegear
+q(),		-- Ensemble: Broken Shore Battlemender's Gear
+q(85575),	-- Ensemble: Cenarion Mender's Battlegear
 q(82261),	-- Ensemble: Cerulean Dredger
-q(85591)	-- Ensemble: Brunnhildar Scout's Kit
-q(85594)	-- Ensemble: Coldarra Spellbinder's Regalia
-q(85590)	-- Ensemble: Drakkari Stalker's Trappings
-q()			-- Ensemble: Gorgrond Cragstalker's Hunting Gear
-q(85592)	-- Ensemble: Jotunheim Berserker's Battleplate
-q()			-- Ensemble: Karabor Priest's Vestments
-q(85127)	-- Ensemble: Prowler's Faded Headgear
-q()			-- Ensemble: Shadowmoon Anchorite's Guardplate
-q(85587)	-- Ensemble: Shadowmoon Warlock's Vestments
-q()			-- Ensemble: Shattrath Artificer's Regalia
-q(85585)	-- Ensemble: Telhamat Anchorite's Raiment
-q(85593)	-- Ensemble: Ymirjar Deathbringer's Battleplate
+q(85591),	-- Ensemble: Brunnhildar Scout's Kit
+q(85594),	-- Ensemble: Coldarra Spellbinder's Regalia
+q(),		-- Ensemble: Drake Hunter's Kit
+q(85590),	-- Ensemble: Drakkari Stalker's Trappings
+q(),		-- Ensemble: Drekirjar Warrior's Battlegear
+q(),		-- Ensemble: Gorgrond Cragstalker's Hunting Gear
+q(),		-- Ensemble: Invasion Stalker's Guise
+q(85592),	-- Ensemble: Jotunheim Berserker's Battleplate
+q(),		-- Ensemble: Karabor Priest's Vestments
+q(85127),	-- Ensemble: Prowler's Faded Headgear
+q(),		-- Ensemble: Shadowmoon Anchorite's Guardplate
+q(85587),	-- Ensemble: Shadowmoon Warlock's Vestments
+q(),		-- Ensemble: Shattrath Artificer's Regalia
+q(85585),	-- Ensemble: Telhamat Anchorite's Raiment
+q(),		-- Ensemble: Twilight Acolyte's Regalia
+q(),		-- Ensemble: Twilight Hunter's Guise
+q(),		-- Ensemble: Twilight Zealot's Battleplate
+q(),		-- Ensemble: Vestments of the Twisted Grove
+q(85593),	-- Ensemble: Ymirjar Deathbringer's Battleplate
 
 
 -- Dornogal Ensemble Vendor

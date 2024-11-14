@@ -1315,12 +1315,12 @@ questobjective = function(id, t)						-- Create a QUEST OBJECTIVE Object
 	t = struct("objectiveID", id, t);
 	if t then
 		-- #if NOT OBJECTIVES
-		ProcessProviderForRetailAsUncollectible(t.provider);
-		if t.providers then
-			for i,provider in ipairs(t.providers) do
-				ProcessProviderForRetailAsUncollectible(provider);
-			end
-		end
+		-- ProcessProviderForRetailAsUncollectible(t.provider);
+		-- if t.providers then
+		-- 	for i,provider in ipairs(t.providers) do
+		-- 		ProcessProviderForRetailAsUncollectible(provider);
+		-- 	end
+		-- end
 		-- #endif
 		if t.itemID then
 			print("INCORRECT OBJECTIVE FORMAT", id, t.itemID);
@@ -1346,8 +1346,9 @@ local SpecialRoots = {
 		},FILTERFUNC_questID,g)
 	end,
 }
-SpecialRoots[ROOTS.HiddenQuestTriggers] = SpecialRoots.__DropG
 SpecialRoots[ROOTS.HiddenAchievementTriggers] = SpecialRoots.__DropG
+SpecialRoots[ROOTS.HiddenCurrencyTriggers] = SpecialRoots.__DropG
+SpecialRoots[ROOTS.HiddenQuestTriggers] = SpecialRoots.__DropG
 SpecialRoots[ROOTS.NeverImplemented] = SpecialRoots.__DropG
 root = function(category, g)							-- Create a ROOT CATEGORY Object
 	if not g then g = g or {}; end

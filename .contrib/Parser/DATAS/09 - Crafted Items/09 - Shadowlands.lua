@@ -422,15 +422,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(173110),	-- Umbryl
 		}),
 		n(DISCOVERY, {
-			spell(338977, {	-- Shadowghast Necklace [Rank 1]
-				r(332075),	-- Shadowghast Necklace [Rank 2]
-				r(332040),	-- Shadowghast Necklace [Rank 3]
-				r(327921),	-- Shadowghast Necklace [Rank 4]
+			spell(327921, {	-- Shadowghast Necklace [Rank 1]
+				r(332040),	-- Shadowghast Necklace [Rank 2]
+				r(332075),	-- Shadowghast Necklace [Rank 3]
+				r(338977),	-- Shadowghast Necklace [Rank 4]
 			}),
-			spell(338978, {	-- Shadowghast Ring [Rank 1]
-				r(332074),	-- Shadowghast Ring [Rank 2]
-				r(332039),	-- Shadowghast Ring [Rank 3]
-				r(327920),	-- Shadowghast Ring [Rank 4]
+			spell(327920, {	-- Shadowghast Ring [Rank 1]
+				r(332039),	-- Shadowghast Ring [Rank 2]
+				r(332074),	-- Shadowghast Ring [Rank 3]
+				r(338978),	-- Shadowghast Ring [Rank 4]
 			}),
 		}),
 		filter(COSMETIC, {

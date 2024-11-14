@@ -12,6 +12,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(40959, {	-- Black Empire State of Mind
+					["timeline"] = { ADDED_11_0_7 },
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						14161,	-- All Consuming
+						14159,	-- Combating the Corruption
+						14154,	-- Defend the Vale
+						14158,	-- It's Not A Tumor!
+						14155,	-- Uldum Accord
+						14153,	-- Uldum Under Assault
+						14156,	-- The Rajani
+					}},
+				}),
 				ach(14159, {	-- Combating the Corruption
 					crit(47211,  {		-- Corrupted Acolyte slain
 						["description"] = "Shares a spawn with Acolyte of N'Zoth.",

@@ -6505,17 +6505,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(87501, {	-- Paulie
-					["coord"] = { 73.0, 59.3, STORMWIND_CITY },
-					["timeline"] = { ADDED_6_0_2 },
+				n(87501, bubbleDownSelf({	-- Paulie
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_6_0_2 },
+				},{
+					["coord"] = { 73.0, 59.3, STORMWIND_CITY },
 					["groups"] = {
 						i(116789, {	-- Champion's Treadblade (MOUNT!)
-							["timeline"] = { ADDED_6_0_2 },
 							["cost"] = 1000000000,	-- 100,000g
 						})
 					},
-				}),
+				})),
 				n(167429, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Quartermaster Richter
 					["description"] = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
 					["coord"] = { 79.5, 69.0, STORMWIND_CITY },

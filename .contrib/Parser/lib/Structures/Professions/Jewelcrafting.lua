@@ -625,7 +625,7 @@ SL_JEWELCRAFTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timel
 		r(311886),	-- Masterful Phaedrum Ring
 		r(311881),	-- Quick Laestrite Band
 		r(311885),	-- Quick Oxxein Ring
-		r(338978, {	-- Shadowghast Ring [Rank 1]
+		r(327920, {	-- Shadowghast Ring [Rank 1]
 			["sourceQuests"] = { 62800 },	-- The Vessels of Jewels
 		}),
 		r(311883),	-- Versatile Laestrite Band
@@ -653,7 +653,7 @@ SL_JEWELCRAFTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timel
 		r(311908),	-- Masterful Phaedrum Necklace
 		r(311903),	-- Quick Laestrite Choker
 		r(311907),	-- Quick Oxxein Necklace
-		r(338977, {	-- Shadowghast Necklace [Rank 1]
+		r(327921, {	-- Shadowghast Necklace [Rank 1]
 			["sourceQuests"] = { 62800 },	-- The Vessels of Jewels
 		}),
 		r(311905),	-- Versatile Laestrite Choker

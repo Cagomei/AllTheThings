@@ -408,6 +408,7 @@ namespace ATT
 
             ProcessingAchievementCategory = container.Key.Contains("Achievement");
             ProcessingUnsortedCategory = container.Key.Contains("HiddenAchievementTriggers") ||
+                                        container.Key.Contains("HiddenCurrencyTriggers") ||
                                         container.Key.Contains("HiddenQuestTriggers") ||
                                         container.Key.Contains("NeverImplemented") ||
                                         container.Key.Contains("Uncollectible") ||
@@ -1130,6 +1131,8 @@ namespace ATT
 
         private static void RemoveWrongFilterSources(IDictionary<string, object> data, long ensembleID, List<IDictionary<string, object>> symlinkSources, List<IDictionary<string, object>> rawSources)
         {
+            // as of later 2024, Blizz seems to have fixed their logic for granting all Appearances in Ensembles, even when Class/Armor restricted! Huzzah
+            return;
             Dictionary<long, int> ensembleFilterCount = new Dictionary<long, int>();
             // track the known filters for the sources
             foreach (IDictionary<string, object> source in symlinkSources.Union(rawSources))
@@ -1691,7 +1694,7 @@ namespace ATT
 
         private static void Validate_InheritedFields(IDictionary<string, object> data, IDictionary<string, object> parentData)
         {
-            foreach(string inheritedField in InheritingFields)
+            foreach (string inheritedField in InheritingFields)
             {
                 // parent must have the field in order in inherit it
                 if (!parentData.TryGetValue(inheritedField, out object inheritedValue))
@@ -3241,8 +3244,10 @@ namespace ATT
                             break;
 
                         // ignore this thing being forcibly-obtainable due to an 'added' timeline when the parent group contains a 'rwp' beyond the 'awp' of this group
-                        if (parentData.TryGetValue("rwp", out long parentRwp) && parentRwp >= addedPatch)
+                        // if _forcetimeline is specified, then don't let parent's timeline override this timeline
+                        if (!data.ContainsKey("_forcetimeline") && parentData.TryGetValue("rwp", out long parentRwp) && parentRwp >= addedPatch)
                         {
+                            //LogDebug($"INFO: timeline indicates available Thing {addedPatch} within removed Parent {parentRwp}", data);
                             // also inherit the rwp so that further children don't also reverse force-obtainable themselves back over the parent
                             removedPatch = parentRwp;
                             break;

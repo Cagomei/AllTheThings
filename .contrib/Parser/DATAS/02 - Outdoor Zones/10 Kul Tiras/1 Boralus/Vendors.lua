@@ -511,9 +511,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						}),
 						i(161911, {	-- Reins of the Admiralty Stallion (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(161879, {	-- Reins of the Proudmoore Sea Scout (MOUNT!)
 							["cost"] = 900000000,	-- 90,000g
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(166277, {	-- Schematic: Unstable Temporal Time Shifter [Rank 2] (RECIPE!)
 							["cost"] = 19000000,	-- 1,900g

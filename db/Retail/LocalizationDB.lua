@@ -6889,7 +6889,6 @@ local ObjectNames = {
 	[456928] = "Treatise on Forms: Ascended",
 	[457025] = "Pre-Calibrated Goblin Transport Vessel",
 	[457062] = "Sky-Captain Lancekat's Curse",
-	[457130] = "Hidden Hatch",
 	[457156] = "Torn Note",
 	[457160] = "Torn Note",
 	[457161] = "Torn Note",
@@ -6913,6 +6912,7 @@ local ObjectNames = {
 	[459333] = "Jeweled Eye",
 	[459368] = "Half-Buried Chest",
 	[462417] = "Waterlogged Celebration Crate",
+	[463104] = "Nola's Lash Wish",
 	[463653] = "Dirt-Caked Celebration Crate",
 	[463979] = "Lightspark Sky Academy Gradebook",
 	[464938] = "Awakened Cache",
@@ -6922,6 +6922,7 @@ local ObjectNames = {
 	[465242] = "Awakened Cache",
 	[465243] = "Awakened Cache",
 	[465277] = "Mound of Dirt",
+	[466438] = "Charred Celebration Crate",
 	[467060] = "Ball of Yarn",
 	[467075] = "Darkmoon Fortune Card",
 	[467083] = "Darkmoon Fortune Card",
@@ -6938,6 +6939,7 @@ local ObjectNames = {
 	[467403] = "Darkmoon Fortune Card",
 	[470229] = "Plush Toy",
 	[472068] = "Bakar Sketch",
+	[475130] = "Hidden Hatch",
 	[485669] = "DELVER'S CALL: Fungal Folly",
 	[487805] = "DELVER'S CALL: Earthcrawl Mines",
 	[487815] = "DELVER'S CALL: The Waterworks",
@@ -12067,6 +12069,7 @@ local ObjectModels = {
 	[459333] = 244062,
 	[459368] = 4323481,
 	[462417] = 5282318,
+	[463104] = 511490,
 	[463653] = 5282318,
 	[463979] = 5387320,
 	[464938] = 5128194,
@@ -12092,6 +12095,7 @@ local ObjectModels = {
 	[467403] = 5334402,
 	[470229] = 1021411,
 	[472068] = 936413,
+	[475130] = 243849,
 	[485669] = 5409330,
 	[487805] = 5409330,
 	[487815] = 5409331,
@@ -31547,6 +31551,7 @@ localize(L.HEADER_NAMES, {
 	[-1000883] = "Подземелья Боевых питомцев",
 	[-1000900] = "Захваченная область",
 	[-1000901] = "Заражённая область",
+	[-1000907] = "Вылазки",
 	[-1000919] = "Традиционные доспехи",
 	[-1000923] = "Манускрипты наблюдений за драконами",
 	[-1000924] = "Изначальные Бури",
@@ -35176,6 +35181,7 @@ localize(ObjectNames, {
 	[417136] = "Любопытный обрезок",
 	[417137] = "Любопытный обрезок",
 	[417138] = "Любопытный обрезок",
+	[419729] = "Странные яйца",
 	[420019] = "Инструменты механолога",
 	[420039] = "Инструменты механолога",
 	[420040] = "Инструменты механолога",
@@ -35252,6 +35258,7 @@ localize(ObjectNames, {
 	[439339] = "Теневещатель суреки",
 	[439348] = "Тайник с мутагеном",
 	[439382] = "Подозрительный груз",
+	[439473] = "Тенир и орден Ночи",
 	[439531] = "Брошенная аркбаллиста",
 	[439532] = "Кузнечный инструмент суреки",
 	[439562] = "Павший воздушный рыцарь",
@@ -35265,6 +35272,7 @@ localize(ObjectNames, {
 	[444275] = "Купить \"Манифест Ман'Горо\" – 5 серебра",
 	[444276] = "Купить \"Апельсиновый апокалипсис\" – 5 серебра",
 	[444277] = "Купить \"Устричную усладу\" – 5 серебра",
+	[444798] = "Тайник с сокровищами арати",
 	[445275] = "Королевский сейф суреки",
 	[445360] = "Украденные трофеи",
 	[446362] = "Багровая чаровница",
@@ -42881,6 +42889,7 @@ localize(ObjectNames, {
 	[456016] = "Martillo de Dornogal",
 	[457270] = "Caja de perito",
 	[459263] = "Tumbona de playa abandonada",
+	[475130] = "Trampilla oculta",
 	[485669] = "LLAMADA DE EXPLORADOR DE PROFUNDIDADES: Capricho Fúngico",
 	[487805] = "LLAMADA DE EXPLORADOR DE PROFUNDIDADES: Minas Reptaterra",
 	[487851] = "LLAMADA DE EXPLORADOR DE PROFUNDIDADES: Espiral Serpenteante",
@@ -43065,7 +43074,7 @@ localize(L.HEADER_NAMES, {
 	[-1000305] = "垃圾场",
 	[-1000309] = "进攻黑暗之门",
 	[-1000312] = "纪元边界",
-	[-1000316] = "事件投骰",
+	[-1000316] = "事件掷骰",
 	[-1000317] = "伟大的奥丁与炎魔之王",
 	[-1000318] = "流浪者与蛇",
 	[-1000319] = "黄金与荣耀的殿堂",
@@ -43078,7 +43087,7 @@ localize(L.HEADER_NAMES, {
 	[-1000326] = "神谕者莱萨斯的预言",
 	[-1000327] = "黑拳的教诲",
 	[-1000328] = "沃伦德的愚行",
-	[-1000329] = "事件投骰",
+	[-1000329] = "事件掷骰",
 	[-1000340] = "残破的镜子",
 	[-1000341] = "残破的镜子",
 	[-1000342] = "残破的镜子",
@@ -43147,6 +43156,9 @@ localize(L.HEADER_NAMES, {
 	[-1000956] = "邃渊协盟",
 	[-1000957] = "陨圣峪阿拉希人",
 	[-1000958] = "斩离之丝",
+	[-1000960] = "主机觉醒",
+	[-1000963] = "嗅探",
+	[-1000966] = "斩离之丝契约",
 	[-1000967] = "制造订单",
 	[-1001001] = "地心之战季节性促销",
 	[-1001006] = "要塞战役",
@@ -46819,3 +46831,20 @@ for key,value in pairs({
 do phases[key].lore = value; end
 end
 end
+
+
+-- Add a Header & Filter debugger
+setmetatable(_.FilterConstants, {
+	__index = function(t, key)
+		_.print("MISSING FilterConstant:", key);
+		rawset(t, key, -9999999999);
+		return -9999999999;
+	end
+});
+setmetatable(_.HeaderConstants, {
+	__index = function(t, key)
+		_.print("MISSING HeaderConstant:", key);
+		rawset(t, key, -9999999999);
+		return -9999999999;
+	end
+});

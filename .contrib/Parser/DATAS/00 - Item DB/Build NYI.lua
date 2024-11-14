@@ -67,6 +67,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 	expansion(EXPANSION.DF),
 	expansion(EXPANSION.TWW),
 });
+root(ROOTS.HiddenCurrencyTriggers, {
+	expansion(EXPANSION.TWW),
+});
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.CLASSIC),
 	expansion(EXPANSION.TBC),

@@ -11,6 +11,7 @@ ROOTS = {
 	["Factions"] = "Factions",
 	["GroupFinder"] = "GroupFinder",
 	["HiddenAchievementTriggers"] = "HiddenAchievementTriggers",
+	["HiddenCurrencyTriggers"] = "HiddenCurrencyTriggers",
 	["HiddenQuestTriggers"] = "HiddenQuestTriggers",
 	["Holidays"] = "Holidays",
 	["InGameShop"] = "InGameShop",

@@ -1922,6 +1922,7 @@ i(229418, 465235);	-- Trader's Gilded Brutosaur
 ------------------
 i(234730, 1214946);	-- Broodling of Sinestra
 i(234740, 1214974);	-- Copper-Maned Quilen
+i(0, 303767);		-- Honeyback Hivemother
 i(233241, 471696);	-- Hooktalon
 i(0, 473472);		-- Jani's Trashpile
 i(234716, 1214920);	-- Nightfall Skyreaver

@@ -417,7 +417,7 @@ local function GetExplorationBySubzone()
 			for _,o in ipairs(mapObject.g) do
 				if o.headerID == app.HeaderConstants.EXPLORATION and o.g then
 					for _,e in ipairs(o.g) do
-						if e.name == subzone and e.collectible then
+						if e.name == subzone and e.__type == "Exploration" then
 							return e
 						end
 					end
@@ -459,7 +459,8 @@ local function CheckExplorationForPlayerPosition()
 	if explorationForSubzone then
 		-- app.PrintDebug("SubzoneExplorationFind",mapID,pos.x,pos.y,app:SearchLink(explorationForSubzone))
 		local areaID = explorationForSubzone.explorationID
-		if not ExplorationDB[areaID] then
+		-- don't know how areaID could be nil here...
+		if areaID and not ExplorationDB[areaID] then
 			-- app.PrintDebug("Manual cached Exploration by Subzone name")
 			-- we won't use regular caching since we're manually checking instead of the expected API utilization
 			-- maybe eventually blizzard will fix the API

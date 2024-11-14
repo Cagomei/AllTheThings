@@ -36,6 +36,18 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							ach(13772),	-- Essence Essentials
 							ach(13773),	-- Essence Gains
 						})),
+						ach(40958, {	-- Full Heart, Can't Lose
+							["timeline"] = { ADDED_11_0_7 },
+							-- Meta Achievement
+							["sym"] = {{"meta_achievement",
+								13772,	-- Essence Essentials
+								12918,	-- Have a Heart
+								13777,	-- My Heart Container is Full
+								13771,	-- Power Is Beautiful
+								13998,	-- Pure of Heart
+								13572,	-- The Heart Forge
+							}},
+						}),
 						ach(12918, {	-- Have a Heart
 							["sourceQuest"] = 51211,	-- The Heart of Azeroth
 						}),

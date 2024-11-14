@@ -507,13 +507,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["provider"] = { "i", 147881 },	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
 				["coord"] = { 36.4, 74.4, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
-				["isYearly"] = true,
 			}),
 			q(47252, {	-- Interesting Things
 				["provider"] = { "i", 147880 },	-- A Slightly More Urgent Letter from the Timewalkers [Alliance]
 				["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
-				["isYearly"] = true,
 			}),
 		}),
 	})),
@@ -1258,6 +1256,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				-- #else
 				["coord"] = { 62.3, 51.8, TANARIS },
 				-- #endif
+				-- make sure this available timeline doesn't get eaten by matching removed timeline on merged parent Quests
+				["_forcetimeline"] = true,
 				["sym"] = {{"select","npcID",
 					121818,	-- Lord Kazzak [Blasted Lands - Always up]
 					121820,	-- Azuregos [Azshara - Always Up]
@@ -1280,6 +1280,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				-- #else
 				["coord"] = { 62.3, 51.8, TANARIS },
 				-- #endif
+				-- make sure this available timeline doesn't get eaten by matching removed timeline on merged parent Quests
+				["_forcetimeline"] = true,
 				["sym"] = {{"select","npcID",
 					121818,	-- Lord Kazzak [Blasted Lands - Always up]
 					121820,	-- Azuregos [Azshara - Always Up]
@@ -3036,7 +3038,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						["cost"] = {{"c", TIMEWARPED_BADGE, 5000}}
 					}),
 					i(232598, {	-- Bag of Timewarped Badges
-						["cost"] = {{"c", BRONZE_TOKEN, 1}}
+						["cost"] = {{"c", BRONZE_TOKEN, 1}},
+						["g"] = {
+							currency(TIMEWARPED_BADGE),
+						},
 					}),
 					i(228785, {	-- Coldflame Bulwark
 						["cost"] = {{"c", BRONZE_TOKEN, 10}}

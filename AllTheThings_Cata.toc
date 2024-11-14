@@ -75,9 +75,7 @@ src\Modules\Vignette.lua
 # src\Modules\Contributor.lua
 
 # Expansion specific localization files
-db\Cata\ExplorationDB.lua
 db\Cata\LocalizationDB.lua
-db\Presets.lua
 
 # Load object class templates
 src\Classes\base.lua

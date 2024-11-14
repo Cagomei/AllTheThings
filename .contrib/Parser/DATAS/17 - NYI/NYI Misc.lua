@@ -860,7 +860,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(186972),	-- Teleporter Repair Kit
 			i(184844),	-- Test Item
 			i(186525),	-- The Mad Duke's Tea
-			i(187603),	-- The Mad Duke's Tea
 			i(187917),	-- The Mad Duke's Tea
 			i(186526),	-- The Mad Duke's Tea of Haste
 			i(186527),	-- The Mad Duke's Tea of Precision

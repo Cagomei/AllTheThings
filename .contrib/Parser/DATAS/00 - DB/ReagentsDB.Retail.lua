@@ -1,4 +1,6 @@
--- #IF NOT ANYCLASSIC
+-- #IF ANYCLASSIC
+if true then return end
+-- #ENDIF
 ---------------------------------------------------------
 --   R E A G E N T S   D A T A B A S E   M O D U L E   --
 ---------------------------------------------------------
@@ -9,6 +11,7 @@
 -- /rl
 -- Replace all content with AllTheThingsHarvestItems.ReagentsDB from Saved Variables
 -- With VSC, Ctrl+Shift+P -> Format Document
+ExportDB._Compressed.ReagentsDB = true
 ExportDB.ReagentsDB = {
     [14342] = {
         [18454] = {14146, 10},
@@ -37398,5 +37401,3 @@ ExportDB.ReagentsDB = {
         [26878] = {20969, 4}
     }
 }
-
--- #ENDIF

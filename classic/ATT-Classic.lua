@@ -148,6 +148,38 @@ local function GetUnobtainableTexture(group)
 end
 app.GetUnobtainableTexture = GetUnobtainableTexture;
 
+-- Keys for groups which are in-game 'Things'
+-- Copied from Retail since it's used in UI/Waypoints.lua
+app.ThingKeys = {
+	-- filterID = true,
+	flightpathID = true,
+	-- professionID = true,
+	-- categoryID = true,
+	-- mapID = true,
+	npcID = true,
+	creatureID = true,
+	currencyID = true,
+	itemID = true,
+	toyID = true,
+	sourceID = true,
+	speciesID = true,
+	recipeID = true,
+	runeforgepowerID = true,
+	spellID = true,
+	mountID = true,
+	mountmodID = true,
+	illusionID = true,
+	questID = true,
+	objectID = true,
+	encounterID = true,
+	artifactID = true,
+	azeriteessenceID = true,
+	followerID = true,
+	factionID = true,
+	explorationID = true,
+	achievementID = true,	-- special handling
+	criteriaID = true,	-- special handling
+};
 
 local MergeObject;
 local CloneArray = app.CloneArray;

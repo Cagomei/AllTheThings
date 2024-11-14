@@ -962,14 +962,14 @@ i(0, 343696);	-- Crafter's Mark II
 i(180783, 334548);	-- Crown of the Righteous
 i(183099, 311870);	-- Revitalizing Jewel Doublet
 --- LEGENDARY ---
-i(0, 338977);	-- Shadowghast Necklace [Rank 1]
-i(0, 332075);	-- Shadowghast Necklace [Rank 2]
-i(0, 332040);	-- Shadowghast Necklace [Rank 3]
-i(0, 327921);	-- Shadowghast Necklace [Rank 4]
-i(0, 338978);	-- Shadowghast Ring [Rank 1]
-i(0, 332074);	-- Shadowghast Ring [Rank 2]
-i(0, 332039);	-- Shadowghast Ring [Rank 3]
-i(0, 327920);	-- Shadowghast Ring [Rank 4]
+i(0, 327921);	-- Shadowghast Necklace [Rank 1]
+i(0, 332040);	-- Shadowghast Necklace [Rank 2]
+i(0, 332075);	-- Shadowghast Necklace [Rank 3]
+i(0, 338977);	-- Shadowghast Necklace [Rank 4]
+i(0, 327920);	-- Shadowghast Ring [Rank 1]
+i(0, 332039);	-- Shadowghast Ring [Rank 2]
+i(0, 332074);	-- Shadowghast Ring [Rank 3]
+i(0, 338978);	-- Shadowghast Ring [Rank 4]
 --- QUEST ---
 i(0, 338248);	-- Brilliant Bauble
 i(0, 338244);	-- Carved Crystal Ring

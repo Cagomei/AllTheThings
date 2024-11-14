@@ -368,7 +368,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			q(86486, {	-- Hungry, Hungry Snapdragon
 				-- available after 24hrs (not on next day!) of turn in previous quest
 				["sourceQuests"] = { 85573 },	-- A Lifeline
-				["provider"] = { "n", 235237 },	-- Growing Snapdragon Runt
+				["providers"] = {
+					{ "n", 235237 },	-- Growing Snapdragon Runt
+					{ "n", 235243 },	-- Maturing Prismatic Snapdragon
+				},
 				["coord"] = { 70.9, 48.6, SIREN_ISLE },
 				["isDaily"] = true,
 				["g"] = {

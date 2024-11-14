@@ -277,9 +277,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						}),
 						i(161912, {	-- Reins of the Dapple Gray (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(161909, {	-- Reins of the Stormsong Coastwatcher (MOUNT!)
 							["cost"] = 900000000,	-- 90,000g
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(161576, {	-- Sea Priest's Waistcord
 							["cost"] = 19000000,	-- 1,900g

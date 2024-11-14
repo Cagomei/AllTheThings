@@ -782,16 +782,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				n(CACHE_OF_MADNESS, {
-					["sharedDescription"] = "Not this one.",
-					["nomerge"] = true,
-					["groups"] = {
-						n(52449),	-- Ancient Dwarven Artifact
-						n(52451),	-- Ancient Elven Artifact
-						n(52455),	-- Ancient Fossil
-						n(52453),	-- Ancient Troll Artifact
-					},
-				}),
-				n(CACHE_OF_MADNESS, {
 					["sharedDescription"] = "This one!",
 					["nomerge"] = true,
 					["groups"] = {

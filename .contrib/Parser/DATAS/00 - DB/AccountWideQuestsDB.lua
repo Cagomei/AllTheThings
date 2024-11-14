@@ -12,6 +12,7 @@
 -- 	-- #ENDIF
 -- 	return a
 -- end
+ExportDB._Compressed.AccountWideQuestsDB = true
 ExportDB.AccountWideQuestsDB = {
 
 	------------------------------------------------------------------------------

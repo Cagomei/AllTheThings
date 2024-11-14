@@ -840,7 +840,6 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
 			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
 			-- #endif
-			["f"] = 100,
 			-- #endif
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
@@ -856,7 +855,6 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
 			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
 			-- #endif
-			["f"] = 100,
 			-- #endif
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
@@ -871,7 +869,6 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			-- #if BEFORE WRATH
 			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
 			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
-			["f"] = 100,
 			-- #endif
 			-- #endif
 			["timeline"] = { ADDED_2_0_1 },
@@ -887,7 +884,6 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
 			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
 			-- #endif
-			["f"] = 100,
 			-- #endif
 			["rank"] = 25,
 		}),
@@ -898,7 +894,6 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
 			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
 			-- #endif
-			["f"] = 100,
 			-- #endif
 			["rank"] = 10,
 		}),

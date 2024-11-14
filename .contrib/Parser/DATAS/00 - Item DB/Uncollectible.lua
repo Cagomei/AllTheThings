@@ -56,20 +56,20 @@ i(232385);	-- Elekk Ear
 
 -- Dont add anything here /Braghe
 -------------------------------------------------------------------- NOT SORTED --------------------------------------------------------------------
+-- Sorted by QuestDB API
+-- i(143542);	-- Crown Co. "Kure-Everything" Tonic
+-- i(140239);	-- Excavated Highborne Artifact
 i(5956);	-- Blacksmith Hammer
 i(85663);	-- Herbalist's Spade
 i(2901);	-- Mining Pick
 i(7005);	-- Skinning Knife
 i(139786);	-- Ancient Mana Crystal
 i(103644);	-- Blessed Bandage
-i(23123);	-- Blessed Wizard Oil
 i(18595);	-- Blood Opal ("Retrieving Data" in-game)
 i(168124);	-- Cash of War Resources
 i(44626);	-- Cask of Aged Dalaran Red
 i(44629);	-- Cask of Peaked Dalaran Red
 i(13509);	-- Clutch of Foresight
-i(23122);	-- Consecrated Sharpening Stone
-i(143542);	-- Crown Co. "Kure-Everything" Tonic
 i(142264);	-- Drudge Fluid
 i(120257);	-- Drums of Fury
 i(142262);	-- Electrified Key
@@ -176,7 +176,6 @@ i(169228);	-- Hazardous Container
 i(118383);	-- Heart of Stone (N)
 i(118386);	-- Heart of Stone (H)
 i(118389);	-- Heart of Stone (M)
-i(168236);	-- Hearthstone Card
 i(169240);	-- Idea Starter
 i(169233);	-- Infinite Loop Spring
 i(169227);	-- Irradiated Bolts
@@ -191,13 +190,11 @@ i(146680);	-- Melandrus' Star-Touched Bracers
 i(122618);	-- Misprinted Draenic Coin
 i(169238);	-- Modified Radio Receiver
 i(169222);	-- Murloc Treasure
-i(168223);	-- Old Parchment
 i(169231);	-- Optical Override Drive
 i(163601);	-- Overgrown Anchor Weed
 i(167830);	-- Petrified Ebony Scale
 i(169325);	-- Petrified Ebony Scale
 i(169237);	-- Pulsating Marble
-i(168184);	-- Rare Metal
 i(160983);	-- Recruitment Orders
 i(169230);	-- Reflective Plating
 i(167875);	-- Reforged Dreamglow Dragonscale
@@ -272,33 +269,24 @@ i(137215);	-- Cut Azsunite.  You get it for a split second after completing the 
 -- Recipes (Not actual recipes)
 i(168326);	-- Eye of Theras
 -- Mount
-i(37011);	-- Magic Broom
 i(33183);	-- Old Magic Broom
 i(33189);	-- Rickety Magic Broom
 i(33184);	-- Swift Magic Broom
 -- "Toy"
-i(160364);	-- Bunch of Berries
-i(6351);	-- Dented Crate
 i(118265);	-- Echoing Betrayal
 i(2460);	-- Elixir of Tongues
 i(151754);	-- Gold Plated Cage Head Key
-i(13874);	-- Heavy Crate
 i(151757);	-- Limited Run Blight Boar Poster
-i(80914);	-- Mourning Glory
 i(72201);	-- Plump Intestines
 i(79104);	-- Rusty Watering Can
 i(139590);	-- Scroll of Teleport: Ravenholdt
-i(6357);	-- Sealed Crate
 i(88496);	-- Sealed Crate
 i(67495);	-- Strange Bloated Stomach
 i(80513);	-- Vintage Bug Sprayer
-i(6352);	-- Waterlogged Crate
-i(160376);	-- Wilderbew Special
 -- Bfa Consumables
 i(162108);	-- [Rough-hooked Tidespray Linen]
 i(162109);	-- [Storm Silver Spurs]
 i(162110);	-- [Disenchanting Rod]
-i(162111);	-- [Kaleidoscopic Lens]
 i(163826);	-- Raider's Supply Cache
 -- Bfa Quest Items
 i(169473);	-- Dormant Scale of the Blue Aspect
@@ -309,7 +297,6 @@ i(162126);	-- River Clam Meat
 -- Suramar Mana Gems
 i(139890);	-- Ancient Mana Gem
 i(140236);	-- A Mrglrmrl Mlrglr
-i(140239);	-- Excavated Highborne Artifact
 i(140240);	-- Enchanted Moonwell Waters
 -- "Weekly Holidays"
 i(167872);	-- Damaged Diving Helmet
@@ -401,6 +388,9 @@ i(175242);	-- Waterlogged Supplies
 -----------------
 -- PATCH 9.0.2 --
 -----------------
+-- Anima Providers (Quest Rewards and sourced by API)
+-- i(184379);	-- Queen's Frozen Tear
+--
 i(180686);	-- "Borrowed" Soulstone
 i(183936);	-- A Curt Note
 i(183928);	-- A Polite, But Short Thank You Note
@@ -427,7 +417,6 @@ i(180979);	-- Artisan's Large Satchel
 i(180976);	-- Artisan's Satchel
 i(180983);	-- Artisan's Stuffed Satchel
 i(178924);	-- Ash Clod
-i(180450);	-- Assorted Bolts
 i(184381);	-- Astral Sapwood
 i(176886);	-- Augmented Femur
 i(178217);	-- Azurebloom Tea
@@ -603,7 +592,6 @@ i(176861);	-- Engorged Venom Sac
 i(183945);	-- Enlarged Nerve
 i(182763);	-- Enormous Jade Pendant
 i(178134);	-- Ephemeral Digits
-i(180448);	-- Eroded Heat Sink
 i(184370);	-- Erratic Sparkshield
 i(180622);	-- Essence of Ephemeral Knowledge
 i(184294);	-- Ethereal Ambrosia
@@ -617,7 +605,6 @@ i(180330);	-- Fading Denathrius Pennant
 i(173870);	-- Fading Glimmerdust
 i(178123);	-- Fading Lightspawn Ember
 i(184378);	-- Faeweald Amber
-i(180449);	-- Failed Experiment
 i(180624);	-- Faintly Glowing Vellum
 i(184077);	-- Famous Sinstone Headers
 i(182709);	-- Fancy Half-Leggings
@@ -851,7 +838,6 @@ i(182764);	-- Pulsing Star Amethyst
 i(183109);	-- Pulsing Voidscarred Fragment
 i(174281);	-- Purified Skyspring Water
 i(176866);	-- Putrid Sludge
-i(184379);	-- Queen's Frozen Tear
 i(177043);	-- Reaped Larion Flank
 i(180377);	-- Red Rum
 i(182757);	-- Redelav Silver Set

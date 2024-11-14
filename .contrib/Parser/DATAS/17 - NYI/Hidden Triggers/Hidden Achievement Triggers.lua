@@ -1477,422 +1477,445 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(12453),	-- Allied Races: Nightborne (Hidden Character Achievement)
 	}),
 	expansion(EXPANSION.BFA, {
-		-- 8.0.1.25976
-		ach(12472),	-- <Hidden> Zandalar Intro Breadcrumb Launch
-		-- 8.0.1.26287
-		ach(12516),	-- Allied Races: Dark Iron Dwarf (Hidden Character Achievement)
-		ach(12517),	-- Allied Races: Mag'har Orc (Hidden Character Achievement)
-		ach(12608),	-- 8.0 WQ Unlock - Alliance <DND>
-		ach(12609),	-- 8.0 WQ Unlock - Horde <DND>
-		ach(12610),	-- Mephistroth kills (Heroic Cathedral of Eternal Night)
-		ach(12611),	-- Mephistroth kills (Mythic Cathedral of Eternal Night)
-		ach(12612),	-- L'ura kills (Heroic Seat of the Triumvirate)
-		ach(12613),	-- L'ura kills (Mythic Seat of the Triumvirate)
-		-- 8.0.1.26567
-		ach(12710),	-- Seething Shore battles
-		ach(12712),	-- Seething Shore victories
-		ach(12713),	-- Rated Seething Shore battles
-		ach(12714),	-- Rated Seething Shore victories
-		ach(12720),	-- Yazma kills (Normal Atal'Dazar)
-		ach(12728),	-- Unbound Abomination kills (Normal The Underrot) \\ Unbound Abomination (Normal The Underrot)
-		ach(12729),	-- Unbound Abomination kills (Heroic The Underrot) \\ Unbound Abomination (Heroic The Underrot)
-		ach(12745),	-- Unbound Abomination kills (Mythic The Underrot) \\ Unbound Abomination (Mythic The Underrot)
-		ach(12748),	-- Yazma kills (Heroic Atal'Dazar)
-		ach(12749),	-- Yazma kills (Mythic Atal'Dazar)
-		ach(12750),	-- Harlan Sweete kills (Normal Freehold) \\ Harlan Sweete (Normal Freehold)
-		ach(12751),	-- Harlan Sweete kills (Heroic Freehold) \\ Harlan Sweete (Heroic Freehold)
-		ach(12752),	-- Harlan Sweete kills (Mythic Freehold) \\ Harlan Sweete (Mythic Freehold)
-		ach(12763),	-- Dazar, The First King kills (Mythic King's Rest) \\ Dazar, The First King  (Mythic King's Rest)
-		ach(12766),	-- Vol'zith the Whisperer kills (Normal Shrine of the Storm) \\ Vol'zith the Whisperer (Normal Shrine of the Storm)
-		ach(12767),	-- Vol'zith the Whisperer kills (Heroic Shrine of the Storm) \\ Vol'zith the Whisperer (Heroic Shrine of the Storm)
-		ach(12768),	-- Vol'zith the Whisperer kills (Mythic Shrine of the Storm) \\ Vol'zith the Whisperer (Mythic Shrine of the Storm)
-		-- 8.0.1.26624
-		ach(12773),	-- Viq'Goth kills (Mythic Siege of Boralus)
-		ach(12774),	-- Avatar of Sethraliss kills (Normal Temple of Sethraliss)
-		ach(12775),	-- Avatar of Sethraliss kills (Heroic Temple of Sethraliss)
-		ach(12776),	-- Avatar of Sethraliss kills (Mythic Temple of Sethraliss)
-		ach(12777),	-- Mogul Razdunk kills (Normal The MOTHERLODE!!)
-		ach(12778),	-- Mogul Razdunk kills (Heroic The MOTHERLODE!!)
-		ach(12779),	-- Mogul Razdunk kills (Mythic The MOTHERLODE!!)
-		ach(12780),	-- Overseer Korgus kills (Normal Tol Dagor)
-		ach(12781),	-- Overseer Korgus kills (Heroic Tol Dagor)
-		ach(12782),	-- Overseer Korgus kills (Mythic Tol Dagor)
-		ach(12783),	-- Gorak Tul kills (Normal Waycrest Manor)
-		ach(12784),	-- Gorak Tul kills (Heroic Waycrest Manor)
-		ach(12785),	-- Gorak Tul kills (Mythic Waycrest Manor)
-		ach(12786),	-- Taloc kills (Raid Finder Uldir)
-		ach(12787),	-- Taloc kills (Normal Uldir)
-		ach(12788),	-- Taloc kills (Heroic Uldir)
-		ach(12789),	-- Taloc kills (Mythic Uldir)
-		ach(12790),	-- MOTHER kills (Raid Finder Uldir)
-		ach(12791),	-- MOTHER kills (Normal Uldir)
-		ach(12792),	-- MOTHER kills (Heroic Uldir)
-		ach(12793),	-- MOTHER kills (Mythic Uldir)
-		ach(12794),	-- Fetid Devourer kills (Raid Finder Uldir)
-		ach(12795),	-- Fetid Devourer kills (Normal Uldir)
-		ach(12796),	-- Fetid Devourer kills (Heroic Uldir)
-		ach(12797),	-- Fetid Devourer kills (Mythic Uldir)
-		ach(12798),	-- Zek'voz, Herald of N'Zoth kills (Raid Finder Uldir) \\ Zek'voz, Herald of N'zoth kills (Raid Finder Uldir)
-		ach(12799),	-- Zek'voz, Herald of N'Zoth kills (Normal Uldir) \\ Zek'voz, Herald of N'zoth kills (Normal Uldir)
-		ach(12800),	-- Zek'voz, Herald of N'Zoth kills (Heroic Uldir) \\ Zek'voz, Herald of N'zoth kills (Heroic Uldir)
-		ach(12801),	-- Zek'voz, Herald of N'Zoth kills (Mythic Uldir) \\ Zek'voz, Herald of N'zoth kills (Mythic Uldir)
-		ach(12802),	-- Vectis kills (Raid Finder Uldir)
-		ach(12803),	-- Vectis kills (Normal Uldir)
-		ach(12804),	-- Vectis kills (Heroic Uldir)
-		ach(12805),	-- Vectis kills (Mythic Uldir)
-		ach(12808),	-- Zul, Reborn kills (Raid Finder Uldir)
-		ach(12809),	-- Zul, Reborn kills (Normal Uldir)
-		ach(12810),	-- Zul, Reborn kills (Heroic Uldir)
-		ach(12811),	-- Zul, Reborn kills (Mythic Uldir)
-		ach(12813),	-- Mythrax the Unraveler kills (Raid Finder Uldir)
-		ach(12814),	-- Mythrax the Unraveler kills (Normal Uldir)
-		ach(12815),	-- Mythrax the Unraveler kills (Heroic Uldir)
-		ach(12816),	-- Mythrax the Unraveler kills (Mythic Uldir)
-		ach(12817),	-- G'huun kills (Raid Finder Uldir)
-		ach(12818),	-- G'huun kills (Normal Uldir)
-		ach(12819),	-- G'huun kills (Heroic Uldir)
-		ach(12820),	-- G'huun kills (Mythic Uldir)
-		ach(12821),	-- Dueler's Guild victories
-		ach(12926),	-- Artifact Power Earned By The Heart of Azeroth
-		-- 8.0.1.26707
-		ach(13063),	-- Hidden Tracking - 110 Class Trial Quest End
-		ach(13065),	-- <Hidden> War Campaign Auto-Launch - Foothold 2
-		ach(13066),	-- <Hidden> War Campaign Auto-Launch - Islands
-		ach(13067),	-- <Hidden> War Campaign Auto-Launch - Foothold 3
-		ach(13068),	-- <Hidden> War Campaign Auto-Launch - World Quests
-		ach(13069),	-- <Hidden> War Campaign Auto-Launch - Chapter 02
-		ach(13070),	-- <Hidden> War Campaign Auto-Launch - Chapter 03
-		ach(13071),	-- <Hidden> War Campaign Auto-Launch - Chapter 04
-		ach(13072),	-- <Hidden> War Campaign Auto-Launch - Chapter 05
-		ach(13073),	-- <Hidden> War Campaign Auto-Launch - Warfronts
-		ach(13089),	-- Allied Races: Dark Iron Dwarf Unlock Requirements
-		ach(13092),	-- Allied Races: Mag'har Orc Unlock Requirements
-		-- 8.0.1.26788
-		ach(13136),	-- Dread Combatant
-		ach(13139),	-- 8.0 Lordaeron Skip Unlock - Alliance \\ 8.0 Lordaeron Unlock - Alliance
-		ach(13140),	-- 8.0 Lordaeron Skip Unlock - Horde \\ 8.0 Lordaeron Unlock - Horde
-		-- 8.0.1.26903
-		ach(13147),	-- 8.0 Darkshore Skip Unlock - Alliance
-		ach(13148),	-- 8.0 Darkshore Skip Unlock - Horde
-		ach(13149),	-- [DNT] Player Expansion Level is "Battle for Azeroth"
-		-- 8.0.1.26926
-		ach(13137),	-- Dread Combatant
-		-- 8.0.1.26970
-		ach(13152),	-- <Hidden> Magni Heart of Azeroth Intro Auto-Launch (DNT)
-		-- 8.0.1.27026
-		ach(13153),	-- 8.0 Lordaeron Push - Alliance and Horde [CRITERIA 66724 and SPELL 273245 REMOVED] \\ 8.0 Lordaeron Push - Alliance and Horde \\ 8.0 Lordaeron Push - Alliance
-		ach(13154),	-- 8.0 Lordaeron Push - Horde (UNUSED DELETE ME) \\ 8.0 Lordaeron Push - Horde
-		ach(13155),	-- 8.0 Teldrassil Push - Horde and Alliance
-		-- 8.0.1.27219
-		ach(13166),	-- Remove Alchemy Anti-Venoms
-		ach(13167),	-- Remove Tailoring Bandages
-		ach(13169),	-- Remove Tailoring Legion Luffa
-		ach(13170),	-- Remove Inscription Recipes
-		-- 8.1.0.27934
-		ach(13172),	-- 8.0.1 Micro Hubs - A - Mistvine Ledge - Unlocked (KMS)
-		ach(13173),	-- 8.0.1 Micro Hubs - A - Mugamba Overlook - Unlocked (KMS)
-		ach(13174),	-- 8.0.1 Micro Hubs - A - Veiled Grotto - Unlocked (KMS)
-		ach(13175),	-- 8.0.1 Micro Hubs - A - Verdant Hollow - Unlocked (KMS)
-		ach(13177),	-- 8.0.1 Micro Hubs - A - Grimwatt's Crash - Unlocked (KMS)
-		ach(13178),	-- 8.0.1 Micro Hubs - A - Vulture's Nest - Unlocked (KMS)
-		ach(13179),	-- 8.0.1 Micro Hubs - H - Mudfisher Cove - Unlocked (KMS)
-		ach(13180),	-- 8.0.1 Micro Hubs - H - Swiftwind Post - Unlocked (KMS)
-		ach(13181),	-- 8.0.1 Micro Hubs - H - Hillcrest Pasture - Unlocked (KMS)
-		ach(13182),	-- 8.0.1 Micro Hubs - H - Stonetusk Watch - Unlocked (KMS)
-		ach(13183),	-- 8.0.1 Micro Hubs - H - Windfall Cavern - Unlocked (KMS)
-		ach(13184),	-- 8.0.1 Micro Hubs - H - Stonefist Watch - Unlocked (KMS)
-		ach(13185),	-- 8.0.1 Micro Hubs - H - Wolf's Den - Unlocked (KMS)
-		ach(13197),	-- <Hidden> War Campaign - Chapter 04 Complete (H)
-		ach(13198),	-- <Hidden> War Campaign - Chapter 04 Complete (A)
-		ach(13227),	-- Sinister Combatant
-		ach(13228),	-- Sinister Combatant
-		ach(13254),	-- Defeat 2 Commanders (Horde) (Hidden)
-		ach(13255),	-- Defeat 2 Commanders (Alliance) (Hidden)
-		ach(13258),	-- <Hidden> Kings' Rest unlocked
-		ach(13259),	-- <Hidden> Siege of Boralus unlocked
-		-- 8.1.0.28202
-		ach(13328),	-- Champion of the Light kills (Raid Finder Battle of Dazar'alor)
-		ach(13329),	-- Champion of the Light kills (Normal Battle of Dazar'alor)
-		ach(13330),	-- Champion of the Light kills (Heroic Battle of Dazar'alor)
-		ach(13331),	-- Champion of the Light kills (Mythic Battle of Dazar'alor)
-		ach(13332),	-- Grong kills (Raid Finder Battle of Dazar'alor) \\ King Grong kills (Raid Finder Battle of Dazar'alor)
-		ach(13333),	-- Grong kills (Normal Battle of Dazar'alor) \\ King Grong kills (Normal Battle of Dazar'alor)
-		ach(13334),	-- Grong kills (Heroic Battle of Dazar'alor) \\ King Grong kills (Heroic Battle of Dazar'alor)
-		ach(13336),	-- Grong kills (Mythic Battle of Dazar'alor) \\ King Grong kills (Mythic Battle of Dazar'alor)
-		ach(13344),	-- Grong the Revenant kills (Raid Finder Battle of Dazar'alor) \\ Grong the Revanent kills (Raid Finder Battle of Dazar'alor)
-		ach(13346),	-- Grong the Revenant kills (Normal Battle of Dazar'alor) \\ Grong the Revanent kills (Normal Battle of Dazar'alor)
-		ach(13347),	-- Grong the Revenant kills (Heroic Battle of Dazar'alor) \\ Grong the Revanent kills (Heroic Battle of Dazar'alor)
-		ach(13348),	-- Grong the Revenant kills (Mythic Battle of Dazar'alor) \\ Grong the Revanent kills (Mythic Battle of Dazar'alor)
-		ach(13349),	-- Grimfang and Firecaller kills (Raid Finder Battle of Dazar'alor)
-		ach(13350),	-- Grimfang and Firecaller kills (Normal Battle of Dazar'alor)
-		ach(13351),	-- Grimfang and Firecaller kills (Heroic Battle of Dazar'alor)
-		ach(13353),	-- Grimfang and Firecaller kills (Mythic Battle of Dazar'alor)
-		ach(13354),	-- Flamefist and the Illuminated kills (Raid Finder Battle of Dazar'alor)
-		ach(13355),	-- Flamefist and the Illuminated kills (Normal Battle of Dazar'alor)
-		ach(13356),	-- Flamefist and the Illuminated kills (Heroic Battle of Dazar'alor)
-		ach(13357),	-- Flamefist and the Illuminated kills (Mythic Battle of Dazar'alor)
-		ach(13358),	-- Opulence kills (Raid Finder Battle of Dazar'alor) \\ Treasure Guardian kills (Raid Finder Battle of Dazar'alor)
-		ach(13359),	-- Opulence kills (Normal Battle of Dazar'alor) \\ Treasure Guardian kills (Normal Battle of Dazar'alor)
-		ach(13361),	-- Opulence kills (Heroic Battle of Dazar'alor) \\ Treasure Guardian kills (Heroic Battle of Dazar'alor)
-		ach(13362),	-- Opulence kills (Mythic Battle of Dazar'alor) \\ Treasure Guardian kills (Mythic Battle of Dazar'alor)
-		ach(13363),	-- Conclave of the Chosen kills (Raid Finder Battle of Dazar'alor)
-		ach(13364),	-- Conclave of the Chosen kills (Normal Battle of Dazar'alor)
-		ach(13365),	-- Conclave of the Chosen kills (Heroic Battle of Dazar'alor)
-		ach(13366),	-- Conclave of the Chosen kills (Mythic Battle of Dazar'alor)
-		ach(13367),	-- King Rastakhan kills (Raid Finder Battle of Dazar'alor)
-		ach(13368),	-- King Rastakhan kills (Normal Battle of Dazar'alor)
-		ach(13369),	-- King Rastakhan kills (Heroic Battle of Dazar'alor)
-		ach(13370),	-- King Rastakhan kills (Mythic Battle of Dazar'alor)
-		ach(13371),	-- Mekkatorque kills (Raid Finder Battle of Dazar'alor)
-		ach(13372),	-- Mekkatorque kills (Normal Battle of Dazar'alor)
-		ach(13373),	-- Mekkatorque kills (Heroic Battle of Dazar'alor)
-		ach(13374),	-- Mekkatorque kills (Mythic Battle of Dazar'alor)
-		ach(13375),	-- Stormwall Blockade kills (Raid Finder Battle of Dazar'alor)
-		ach(13376),	-- Stormwall Blockade kills (Normal Battle of Dazar'alor)
-		ach(13377),	-- Stormwall Blockade kills (Heroic Battle of Dazar'alor)
-		ach(13378),	-- Stormwall Blockade kills (Mythic Battle of Dazar'alor)
-		ach(13379),	-- Lady Jaina Proudmoore kills (Raid Finder Battle of Dazar'alor)
-		ach(13380),	-- Lady Jaina Proudmoore kills (Normal Battle of Dazar'alor)
-		ach(13381),	-- Lady Jaina Proudmoore kills (Heroic Battle of Dazar'alor)
-		ach(13382),	-- Lady Jaina Proudmoore kills (Mythic Battle of Dazar'alor)
-		ach(13404),	-- The Restless Cabal kills (Raid Finder Crucible of Storms)
-		ach(13405),	-- The Restless Cabal kills (Normal Crucible of Storms)
-		ach(13406),	-- The Restless Cabal kills (Heroic Crucible of Storms)
-		ach(13407),	-- The Restless Cabal kills (Mythic Crucible of Storms)
-		ach(13408),	-- Uu'nat, Harbinger of the Void kills (Raid Finder Crucible of Storms)
-		ach(13411),	-- Uu'nat, Harbinger of the Void kills (Normal Crucible of Storms)
-		ach(13412),	-- Uu'nat, Harbinger of the Void kills (Heroic Crucible of Storms)
-		ach(13413),	-- Uu'nat, Harbinger of the Void kills (Mythic Crucible of Storms)
-		-- 8.1.0.28616
-		ach(13452),	-- Vicious Saddle (1) \\ Sinister Saddle
-		ach(13453),	-- Vicious Saddle (1) \\ Sinister Saddle
-		-- 8.1.5.28938
-		ach(13156),	-- Allied Races: Zandalari Troll (Hidden Character Achievement)
-		ach(13157),	-- Allied Races: Kul Tiran (Hidden Character Achievement)
-		ach(13159),	-- Allied Races: Zandalari Troll Unlock Requirements
-		ach(13160),	-- Allied Races: Kul Tiran Unlock Requirements
-		-- 8.1.5.29141
-		ach(13488),	-- In Teldrassil's Shadow (Hidden Character Achievement)
-		-- 8.1.5.29220
-		ach(13509),	-- The Speaker's Resolve
-		-- 8.1.5.29558
-		ach(13521),	-- Vicious Saddle (2)
-		ach(13522),	-- Vicious Saddle (3)
-		ach(13523),	-- Vicious Saddle (4)
-		ach(13524),	-- Vicious Saddle (5)
-		ach(13525),	-- Vicious Saddle (6)
-		ach(13526),	-- Vicious Saddle (7)
-		ach(13527),	-- Vicious Saddle (8)
-		ach(13528),	-- Vicious Saddle (9)
-		ach(13529),	-- Vicious Saddle (10)
-		ach(13530),	-- Vicious Saddle (2)
-		ach(13531),	-- Vicious Saddle (3)
-		ach(13532),	-- Vicious Saddle (4)
-		ach(13533),	-- Vicious Saddle (5)
-		ach(13534),	-- Vicious Saddle (6)
-		ach(13535),	-- Vicious Saddle (7)
-		ach(13536),	-- Vicious Saddle (8)
-		ach(13537),	-- Vicious Saddle (9)
-		ach(13538),	-- Vicious Saddle (10)
-		ach(13539),	-- 8.1.5 - Zandalari Troll - Loa Selected
-		-- 8.2.0.30080
-		ach(13544),	-- Essential Empowerment
-		ach(13552),	-- 8.2 BfA - PATCH Quest Launch
-		ach(13587),	-- Abyssal Commander Sivara kills (Raid Finder Eternal Palace)
-		ach(13588),	-- Abyssal Commander Sivara kills (Normal Eternal Palace)
-		ach(13589),	-- Abyssal Commander Sivara kills (Heroic Eternal Palace)
-		ach(13590),	-- Abyssal Commander Sivara kills (Mythic Eternal Palace)
-		ach(13591),	-- Blackwater Behemoth kills (Raid Finder Eternal Palace) \\ Underwater Monstrosity kills (Raid Finder Eternal Palace)
-		ach(13592),	-- Blackwater Behemoth kills (Normal Eternal Palace) \\ Underwater Monstrosity kills (Normal Eternal Palace)
-		ach(13593),	-- Blackwater Behemoth kills (Heroic Eternal Palace) \\ Underwater Monstrosity kills (Heroic Eternal Palace)
-		ach(13594),	-- Blackwater Behemoth kills (Mythic Eternal Palace) \\ Underwater Monstrosity kills (Mythic Eternal Palace)
-		ach(13595),	-- Radiance of Azshara kills (Raid Finder Eternal Palace) \\ Rage of Azshara kills (Raid Finder Eternal Palace)
-		ach(13596),	-- Radiance of Azshara kills (Normal Eternal Palace) \\ Rage of Azshara kills (Normal Eternal Palace)
-		ach(13597),	-- Radiance of Azshara kills (Heroic Eternal Palace) \\ Rage of Azshara kills (Heroic Eternal Palace)
-		ach(13598),	-- Radiance of Azshara kills (Mythic Eternal Palace) \\ Rage of Azshara kills (Mythic Eternal Palace)
-		ach(13600),	-- Lady Ashvane kills (Raid Finder Eternal Palace) \\ Priscilla Ashvane kills (Raid Finder Eternal Palace)
-		ach(13601),	-- Lady Ashvane kills (Normal Eternal Palace) \\ Priscilla Ashvane kills (Normal Eternal Palace)
-		ach(13602),	-- Lady Ashvane kills (Heroic Eternal Palace) \\ Priscilla Ashvane kills (Heroic Eternal Palace)
-		ach(13603),	-- Lady Ashvane kills (Mythic Eternal Palace) \\ Priscilla Ashvane kills (Mythic Eternal Palace)
-		ach(13604),	-- Orgozoa kills (Raid Finder Eternal Palace)
-		ach(13605),	-- Orgozoa kills (Normal Eternal Palace)
-		ach(13606),	-- Orgozoa kills (Heroic Eternal Palace)
-		ach(13607),	-- Orgozoa kills (Mythic Eternal Palace)
-		ach(13608),	-- The Queen's Court kills (Raid Finder Eternal Palace)
-		ach(13609),	-- The Queen's Court kills (Normal Eternal Palace)
-		ach(13610),	-- The Queen's Court kills (Heroic Eternal Palace)
-		ach(13611),	-- The Queen's Court kills (Mythic Eternal Palace)
-		ach(13612),	-- Za'qul kills (Raid Finder Eternal Palace)
-		ach(13613),	-- Za'qul kills (Normal Eternal Palace)
-		ach(13614),	-- Za'qul kills (Heroic Eternal Palace)
-		ach(13615),	-- Za'qul kills (Mythic Eternal Palace)
-		-- 8.2.0.30168
-		ach(13616),	-- Queen Azshara kills (Raid Finder Eternal Palace)
-		ach(13617),	-- Queen Azshara kills (Normal Eternal Palace)
-		ach(13618),	-- Queen Azshara kills (Heroic Eternal Palace)
-		ach(13619),	-- Queen Azshara kills (Mythic Eternal Palace) \\ Queen Azshara kills Mythic Eternal Palace)
-		ach(13620),	-- King Mechagon kills (Mythic Operation: Mechagon)
-		-- 8.2.0.30262
-		ach(13636),	-- Notorious Combatant
-		ach(13637),	-- Notorious Combatant
-		ach(13688),	-- Battle for Wintergrasp victories
-		ach(13689),	-- Solesa Naksu [DNT]
-		-- 8.2.0.30430
-		ach(13741),	-- <Hidden> Nazjatar - Flight Master Whistle Upgrade - Alliance (DNT) \\ <Hidden> Nazjatar - Completed Quest 1 of Week 3 - Alliance (DNT)
-		ach(13742),	-- <Hidden> Nazjatar - Flight Master Whistle Upgrade - Horde (DNT) \\ <Hidden> Nazjatar - Completed Quest 1 of Week 3 - Horde (DNT)
-		-- 8.2.0.30495
-		ach(13812),	-- Vicious Saddle (11)
-		ach(13813),	-- Vicious Saddle (12)
-		ach(13814),	-- Vicious Saddle (13)
-		ach(13815),	-- Vicious Saddle (14)
-		ach(13816),	-- Vicious Saddle (15)
-		ach(13817),	-- Vicious Saddle (16)
-		ach(13818),	-- Vicious Saddle (17)
-		ach(13819),	-- Vicious Saddle (18)
-		ach(13820),	-- Vicious Saddle (19)
-		ach(13821),	-- Vicious Saddle (20)
-		ach(13822),	-- Vicious Saddle (11)
-		ach(13823),	-- Vicious Saddle (12)
-		ach(13824),	-- Vicious Saddle (13)
-		ach(13825),	-- Vicious Saddle (14)
-		ach(13826),	-- Vicious Saddle (15)
-		ach(13827),	-- Vicious Saddle (16)
-		ach(13828),	-- Vicious Saddle (17)
-		ach(13829),	-- Vicious Saddle (18)
-		ach(13830),	-- Vicious Saddle (19)
-		ach(13831),	-- Vicious Saddle (20)
-		-- 8.2.0.31229
-		ach(13907),	-- Mugambala matches
-		ach(13908),	-- Mugambala victories
-		ach(13909),	-- The Robodrome matches
-		ach(13910),	-- The Robodrome victories
-		ach(13911),	-- Black Rook Hold Arena matches
-		ach(13912),	-- Black Rook Hold Arena victories
-		ach(13913),	-- Ashamane's Fall matches
-		ach(13914),	-- Ashamane's Fall victories
-		ach(13915),	-- Hook Point victories
-		ach(13916),	-- Hook Point matches
-		-- 8.3.0.32044
-		ach(13207),	-- Allied Races: Vulpera (Hidden Character Achievement)
-		ach(13933),	-- Vicious Saddle (21)
-		ach(13934),	-- Vicious Saddle (22)
-		ach(13935),	-- Vicious Saddle (23)
-		ach(13936),	-- Vicious Saddle (24)
-		ach(13937),	-- Vicious Saddle (25)
-		ach(13938),	-- Vicious Saddle (26)
-		ach(13939),	-- Vicious Saddle (27)
-		ach(13940),	-- Vicious Saddle (28)
-		ach(13941),	-- Vicious Saddle (29)
-		ach(13942),	-- Vicious Saddle (30)
-		ach(13943),	-- Corrupted Combatant
-		ach(13944),	-- Corrupted Combatant
-		ach(13945),	-- Vicious Saddle (21)
-		ach(13946),	-- Vicious Saddle (22)
-		ach(13947),	-- Vicious Saddle (23)
-		ach(13948),	-- Vicious Saddle (24)
-		ach(13949),	-- Vicious Saddle (25)
-		ach(13950),	-- Vicious Saddle (26)
-		ach(13951),	-- Vicious Saddle (27)
-		ach(13952),	-- Vicious Saddle (28)
-		ach(13953),	-- Vicious Saddle (29)
-		ach(13954),	-- Vicious Saddle (30)
-		ach(13991),	-- Allied Races: Mechagnome Unlock Requirements
-		ach(13993),	-- Allied Races: Vulpera Unlock Requirements
-		ach(14012),	-- Allied Races: Mechagnome (Hidden Character Achievement)
-		-- 8.3.0.32272
-		ach(14056),	-- King Mechagon kills (Heroic Mechagon - Workshop)
-		ach(14057),	-- HK-8 Aerial Opression Unit kills (Heroic Mechagon - Junkyard)
-		-- 8.3.0.32414
-		ach(14073),	-- Faceless Mask of the Pained
-		ach(14074),	-- Faceless Mask of the Dark Imagination
-		ach(14075),	-- Faceless Mask of the Burned Bridge
-		ach(14076),	-- Faceless Mask of the Daredevil
-		ach(14077),	-- Faceless Mask of the Long Night
-		ach(14078),	-- Wrathion, the Black Emperor kills (Raid Finder Ny'alotha, the Waking City)
-		ach(14079),	-- Wrathion, the Black Emperor kills (Normal Ny'alotha, the Waking City)
-		ach(14080),	-- Wrathion, the Black Emperor kills (Heroic Ny'alotha, the Waking City)
-		ach(14082),	-- Wrathion, the Black Emperor kills (Mythic Ny'alotha, the Waking City)
-		ach(14089),	-- Maut kills (Raid Finder Ny'alotha, the Waking City)
-		ach(14091),	-- Maut kills (Normal Ny'alotha, the Waking City)
-		ach(14093),	-- Maut kills (Heroic Ny'alotha, the Waking City)
-		ach(14094),	-- Maut kills (Mythic Ny'alotha, the Waking City)
-		ach(14095),	-- The Prophet Skitra kills (Raid Finder Ny'alotha, the Waking City)
-		ach(14096),	-- The Prophet Skitra kills (Normal Ny'alotha, the Waking City)
-		ach(14097),	-- The Prophet Skitra kills (Heroic Ny'alotha, the Waking City)
-		ach(14098),	-- The Prophet Skitra kills (Mythic Ny'alotha, the Waking City)
-		ach(14101),	-- Dark Inquisitor Xanesh kills (Raid Finder Ny'alotha, the Waking City)
-		ach(14102),	-- Dark Inquisitor Xanesh kills (Normal Ny'alotha, the Waking City)
-		ach(14104),	-- Dark Inquisitor Xanesh kills (Heroic Ny'alotha, the Waking City)
-		ach(14105),	-- Dark Inquisitor Xanesh kills (Mythic Ny'alotha, the Waking City)
-		ach(14107),	-- The Hivemind kills (Raid Finder Ny'alotha, the Waking City)
-		ach(14108),	-- The Hivemind kills (Nomral Ny'alotha, the Waking City)
-		ach(14109),	-- The Hivemind kills (Heroic Ny'alotha, the Waking City)
-		ach(14110),	-- The Hivemind kills (Mythic Ny'alotha, the Waking City)
-		ach(14111),	-- Shad'har the Insatiable kills (Raid Finder Ny'alotha, the Waking City)
-		ach(14112),	-- Shad'har the Insatiable kills (Normal Ny'alotha, the Waking City)
-		ach(14114),	-- Shad'har the Insatiable kills (Heroic Ny'alotha, the Waking City)
-		ach(14115),	-- Shad'har the Insatiable kills (Mythic Ny'alotha, the Waking City)
-		ach(14117),	-- Drest'agath kills (Raid Finder Ny'alotha, the Waking City)
-		ach(14118),	-- Drest'agath kills (Normal Ny'alotha, the Waking City)
-		ach(14119),	-- Drest'agath kills (Heroic Ny'alotha, the Waking City)
-		ach(14120),	-- Drest'agath kills (Mythic Ny'alotha, the Waking City)
-		ach(14123),	-- Vexiona kills (Raid Finder Ny'alotha, the Waking City)
-		ach(14124),	-- Vexiona kills (Normal Ny'alotha, the Waking City)
-		ach(14125),	-- Vexiona kills (Heroic Ny'alotha, the Waking City)
-		ach(14126),	-- Vexiona kills (Mythic Ny'alotha, the Waking City)
-		ach(14127),	-- Ra-den the Despoiled kills (Raid Finder Ny'alotha, the Waking City)
-		ach(14128),	-- Ra-den the Despoiled kills (Normal Ny'alotha, the Waking City)
-		ach(14129),	-- Ra-den the Despoiled kills (Heroic Ny'alotha, the Waking City)
-		ach(14130),	-- Ra-den the Despoiled kills (Mythic Ny'alotha, the Waking City)
-		ach(14131),	-- Carapace of N'Zoth kills (Raid Finder Ny'alotha, the Waking City)
-		ach(14132),	-- Carapace of N'Zoth kills (Normal Ny'alotha, the Waking City)
-		ach(14133),	-- Carapace of N'Zoth kills (Heroic Ny'alotha, the Waking City)
-		ach(14134),	-- Carapace of N'Zoth kills (Mythic Ny'alotha, the Waking City)
-		ach(14135),	-- N'Zoth the Corruptor kills (Raid Finder Ny'alotha, the Waking City) \\ N'Zoth, the Corruptor kills (Raid Finder Ny'alotha, the Waking City)
-		ach(14136),	-- N'Zoth the Corruptor kills (Normal Ny'alotha, the Waking City) \\ N'Zoth, the Corruptor kills (Normal Ny'alotha, the Waking City)
-		ach(14137),	-- N'Zoth the Corruptor kills (Heroic Ny'alotha, the Waking City) \\ N'Zoth, the Corruptor kills (Heroic Ny'alotha, the Waking City)
-		ach(14138),	-- N'Zoth the Corruptor kills (Mythic Ny'alotha, the Waking City) \\ N'Zoth, the Corruptor kills (Mythic Ny'alotha, the Waking City)
-		-- 8.3.0.32712
-		ach(14185),	-- 8.3 Patch Quest Launch
-		ach(14189),	-- Joined Shadowy Figures <DND>
-		-- 8.3.7.34872
-		ach(14207),	-- Il'gynoth, Corruption Reborn (Raid Finder Ny'alotha, the Waking City)
-		ach(14208),	-- Il'gynoth, Corruption Reborn (Normal Ny'alotha, the Waking City)
-		ach(14210),	-- Il'gynoth, Corruption Reborn (Heroic Ny'alotha, the Waking City)
-		ach(14211),	-- Il'gynoth, Corruption Reborn (Mythic Ny'alotha, the Waking City)
-		ach(14212),	-- <Hidden> 8.3 Main Line - Account Has Obtained Legendary Cloak (DNT)
-		ach(14238),	-- Azerite Essence - Rank 3 on any character - Azeroth's Undying Gift <DND>
-		ach(14239),	-- Azerite Essence - Rank 3 on any character - Sphere of Suppression <DND>
-		ach(14240),	-- Azerite Essence - Rank 3 on any character - Worldvein Resonance <DND>
-		ach(14241),	-- Azerite Essence - Rank 3 on any character - Focusing Iris <DND>
-		ach(14242),	-- Azerite Essence - Rank 3 on any character - Purification Protocol <DND>
-		ach(14243),	-- Azerite Essence - Rank 3 on any character - Anima of Life and Death <DND>
-		ach(14244),	-- Azerite Essence - Rank 3 on any character - Crucible of Flame <DND>
-		ach(14245),	-- Azerite Essence - Rank 3 on any character - Nullification Dynamo <DND>
-		ach(14246),	-- Azerite Essence - Rank 3 on any character - Condensed Life Force <DND>
-		ach(14247),	-- Azerite Essence - Rank 3 on any character - Ripple in Space <DND>
-		ach(14248),	-- Azerite Essence - Rank 3 on any character - Unwavering Ward <DND>
-		ach(14249),	-- Azerite Essence - Rank 3 on any character - Ever-Rising Tide <DND>
-		ach(14250),	-- Azerite Essence - Rank 3 on any character - Artifice of Time <DND>
-		ach(14251),	-- Azerite Essence - Rank 3 on any character - Well of Existence <DND>
-		ach(14252),	-- Azerite Essence - Rank 3 on any character - Lifebinder's Invocation <DND>
-		ach(14253),	-- Azerite Essence - Rank 3 on any character - Vitality Conduit <DND>
-		ach(14254),	-- Azerite Essence - Rank 3 on any character - Vision of Perfection <DND>
-		ach(14255),	-- Azerite Essence - Rank 3 on any character - Blood of the Enemy <DND>
-		ach(14256),	-- Azerite Essence - Rank 3 on any character - Spirit of Preservation <DND>
-		ach(14257),	-- Azerite Essence - Rank 3 on any character - Aegis of the Deep <DND>
-		ach(14258),	-- Azerite Essence - Rank 3 on any character - Memory of Lucid Dreams <DND>
-		ach(14259),	-- Azerite Essence - Rank 3 on any character - Unbound Force <DND>
-		ach(14260),	-- Azerite Essence - Rank 3 on any character - Conflict and Strife <DND>
-		ach(14261),	-- Azerite Essence - Rank 3 on any character - Touch of the Everlasting <DND>
-		ach(14262),	-- Azerite Essence - Rank 3 on any character - Strength of the Warden <DND>
-		ach(14263),	-- Azerite Essence - Rank 3 on any character - Breath of the Dying <DND>
-		ach(14264),	-- Azerite Essence - Rank 3 on any character - Spark of Inspiration <DND>
-		ach(14265),	-- Azerite Essence - Rank 3 on any character - Formless Void <DND>
+		-- 8.0.1
+		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
+			-- 8.0.1.25976
+			ach(12472),	-- <Hidden> Zandalar Intro Breadcrumb Launch
+			-- 8.0.1.26287
+			ach(12516),	-- Allied Races: Dark Iron Dwarf (Hidden Character Achievement)
+			ach(12517),	-- Allied Races: Mag'har Orc (Hidden Character Achievement)
+			ach(12608),	-- 8.0 WQ Unlock - Alliance <DND>
+			ach(12609),	-- 8.0 WQ Unlock - Horde <DND>
+			ach(12610),	-- Mephistroth kills (Heroic Cathedral of Eternal Night)
+			ach(12611),	-- Mephistroth kills (Mythic Cathedral of Eternal Night)
+			ach(12612),	-- L'ura kills (Heroic Seat of the Triumvirate)
+			ach(12613),	-- L'ura kills (Mythic Seat of the Triumvirate)
+			-- 8.0.1.26567
+			ach(12710),	-- Seething Shore battles
+			ach(12712),	-- Seething Shore victories
+			ach(12713),	-- Rated Seething Shore battles
+			ach(12714),	-- Rated Seething Shore victories
+			ach(12720),	-- Yazma kills (Normal Atal'Dazar)
+			ach(12728),	-- Unbound Abomination kills (Normal The Underrot) \\ Unbound Abomination (Normal The Underrot)
+			ach(12729),	-- Unbound Abomination kills (Heroic The Underrot) \\ Unbound Abomination (Heroic The Underrot)
+			ach(12745),	-- Unbound Abomination kills (Mythic The Underrot) \\ Unbound Abomination (Mythic The Underrot)
+			ach(12748),	-- Yazma kills (Heroic Atal'Dazar)
+			ach(12749),	-- Yazma kills (Mythic Atal'Dazar)
+			ach(12750),	-- Harlan Sweete kills (Normal Freehold) \\ Harlan Sweete (Normal Freehold)
+			ach(12751),	-- Harlan Sweete kills (Heroic Freehold) \\ Harlan Sweete (Heroic Freehold)
+			ach(12752),	-- Harlan Sweete kills (Mythic Freehold) \\ Harlan Sweete (Mythic Freehold)
+			ach(12763),	-- Dazar, The First King kills (Mythic King's Rest) \\ Dazar, The First King  (Mythic King's Rest)
+			ach(12766),	-- Vol'zith the Whisperer kills (Normal Shrine of the Storm) \\ Vol'zith the Whisperer (Normal Shrine of the Storm)
+			ach(12767),	-- Vol'zith the Whisperer kills (Heroic Shrine of the Storm) \\ Vol'zith the Whisperer (Heroic Shrine of the Storm)
+			ach(12768),	-- Vol'zith the Whisperer kills (Mythic Shrine of the Storm) \\ Vol'zith the Whisperer (Mythic Shrine of the Storm)
+			-- 8.0.1.26624
+			ach(12773),	-- Viq'Goth kills (Mythic Siege of Boralus)
+			ach(12774),	-- Avatar of Sethraliss kills (Normal Temple of Sethraliss)
+			ach(12775),	-- Avatar of Sethraliss kills (Heroic Temple of Sethraliss)
+			ach(12776),	-- Avatar of Sethraliss kills (Mythic Temple of Sethraliss)
+			ach(12777),	-- Mogul Razdunk kills (Normal The MOTHERLODE!!)
+			ach(12778),	-- Mogul Razdunk kills (Heroic The MOTHERLODE!!)
+			ach(12779),	-- Mogul Razdunk kills (Mythic The MOTHERLODE!!)
+			ach(12780),	-- Overseer Korgus kills (Normal Tol Dagor)
+			ach(12781),	-- Overseer Korgus kills (Heroic Tol Dagor)
+			ach(12782),	-- Overseer Korgus kills (Mythic Tol Dagor)
+			ach(12783),	-- Gorak Tul kills (Normal Waycrest Manor)
+			ach(12784),	-- Gorak Tul kills (Heroic Waycrest Manor)
+			ach(12785),	-- Gorak Tul kills (Mythic Waycrest Manor)
+			ach(12786),	-- Taloc kills (Raid Finder Uldir)
+			ach(12787),	-- Taloc kills (Normal Uldir)
+			ach(12788),	-- Taloc kills (Heroic Uldir)
+			ach(12789),	-- Taloc kills (Mythic Uldir)
+			ach(12790),	-- MOTHER kills (Raid Finder Uldir)
+			ach(12791),	-- MOTHER kills (Normal Uldir)
+			ach(12792),	-- MOTHER kills (Heroic Uldir)
+			ach(12793),	-- MOTHER kills (Mythic Uldir)
+			ach(12794),	-- Fetid Devourer kills (Raid Finder Uldir)
+			ach(12795),	-- Fetid Devourer kills (Normal Uldir)
+			ach(12796),	-- Fetid Devourer kills (Heroic Uldir)
+			ach(12797),	-- Fetid Devourer kills (Mythic Uldir)
+			ach(12798),	-- Zek'voz, Herald of N'Zoth kills (Raid Finder Uldir) \\ Zek'voz, Herald of N'zoth kills (Raid Finder Uldir)
+			ach(12799),	-- Zek'voz, Herald of N'Zoth kills (Normal Uldir) \\ Zek'voz, Herald of N'zoth kills (Normal Uldir)
+			ach(12800),	-- Zek'voz, Herald of N'Zoth kills (Heroic Uldir) \\ Zek'voz, Herald of N'zoth kills (Heroic Uldir)
+			ach(12801),	-- Zek'voz, Herald of N'Zoth kills (Mythic Uldir) \\ Zek'voz, Herald of N'zoth kills (Mythic Uldir)
+			ach(12802),	-- Vectis kills (Raid Finder Uldir)
+			ach(12803),	-- Vectis kills (Normal Uldir)
+			ach(12804),	-- Vectis kills (Heroic Uldir)
+			ach(12805),	-- Vectis kills (Mythic Uldir)
+			ach(12808),	-- Zul, Reborn kills (Raid Finder Uldir)
+			ach(12809),	-- Zul, Reborn kills (Normal Uldir)
+			ach(12810),	-- Zul, Reborn kills (Heroic Uldir)
+			ach(12811),	-- Zul, Reborn kills (Mythic Uldir)
+			ach(12813),	-- Mythrax the Unraveler kills (Raid Finder Uldir)
+			ach(12814),	-- Mythrax the Unraveler kills (Normal Uldir)
+			ach(12815),	-- Mythrax the Unraveler kills (Heroic Uldir)
+			ach(12816),	-- Mythrax the Unraveler kills (Mythic Uldir)
+			ach(12817),	-- G'huun kills (Raid Finder Uldir)
+			ach(12818),	-- G'huun kills (Normal Uldir)
+			ach(12819),	-- G'huun kills (Heroic Uldir)
+			ach(12820),	-- G'huun kills (Mythic Uldir)
+			ach(12821),	-- Dueler's Guild victories
+			ach(12926),	-- Artifact Power Earned By The Heart of Azeroth
+			-- 8.0.1.26707
+			ach(13063),	-- Hidden Tracking - 110 Class Trial Quest End
+			ach(13065),	-- <Hidden> War Campaign Auto-Launch - Foothold 2
+			ach(13066),	-- <Hidden> War Campaign Auto-Launch - Islands
+			ach(13067),	-- <Hidden> War Campaign Auto-Launch - Foothold 3
+			ach(13068),	-- <Hidden> War Campaign Auto-Launch - World Quests
+			ach(13069),	-- <Hidden> War Campaign Auto-Launch - Chapter 02
+			ach(13070),	-- <Hidden> War Campaign Auto-Launch - Chapter 03
+			ach(13071),	-- <Hidden> War Campaign Auto-Launch - Chapter 04
+			ach(13072),	-- <Hidden> War Campaign Auto-Launch - Chapter 05
+			ach(13073),	-- <Hidden> War Campaign Auto-Launch - Warfronts
+			ach(13089),	-- Allied Races: Dark Iron Dwarf Unlock Requirements
+			ach(13092),	-- Allied Races: Mag'har Orc Unlock Requirements
+			-- 8.0.1.26788
+			ach(13136),	-- Dread Combatant
+			ach(13139),	-- 8.0 Lordaeron Skip Unlock - Alliance \\ 8.0 Lordaeron Unlock - Alliance
+			ach(13140),	-- 8.0 Lordaeron Skip Unlock - Horde \\ 8.0 Lordaeron Unlock - Horde
+			-- 8.0.1.26903
+			ach(13147),	-- 8.0 Darkshore Skip Unlock - Alliance
+			ach(13148),	-- 8.0 Darkshore Skip Unlock - Horde
+			ach(13149),	-- [DNT] Player Expansion Level is "Battle for Azeroth"
+			-- 8.0.1.26926
+			ach(13137),	-- Dread Combatant
+			-- 8.0.1.26970
+			ach(13152),	-- <Hidden> Magni Heart of Azeroth Intro Auto-Launch (DNT)
+			-- 8.0.1.27026
+			ach(13153),	-- 8.0 Lordaeron Push - Alliance and Horde [CRITERIA 66724 and SPELL 273245 REMOVED] \\ 8.0 Lordaeron Push - Alliance and Horde \\ 8.0 Lordaeron Push - Alliance
+			ach(13154),	-- 8.0 Lordaeron Push - Horde (UNUSED DELETE ME) \\ 8.0 Lordaeron Push - Horde
+			ach(13155),	-- 8.0 Teldrassil Push - Horde and Alliance
+			-- 8.0.1.27219
+			ach(13166),	-- Remove Alchemy Anti-Venoms
+			ach(13167),	-- Remove Tailoring Bandages
+			ach(13169),	-- Remove Tailoring Legion Luffa
+			ach(13170),	-- Remove Inscription Recipes
+		})),
+
+		-- 8.1.0
+		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {
+			-- 8.1.0.27934
+			ach(13172),	-- 8.0.1 Micro Hubs - A - Mistvine Ledge - Unlocked (KMS)
+			ach(13173),	-- 8.0.1 Micro Hubs - A - Mugamba Overlook - Unlocked (KMS)
+			ach(13174),	-- 8.0.1 Micro Hubs - A - Veiled Grotto - Unlocked (KMS)
+			ach(13175),	-- 8.0.1 Micro Hubs - A - Verdant Hollow - Unlocked (KMS)
+			ach(13177),	-- 8.0.1 Micro Hubs - A - Grimwatt's Crash - Unlocked (KMS)
+			ach(13178),	-- 8.0.1 Micro Hubs - A - Vulture's Nest - Unlocked (KMS)
+			ach(13179),	-- 8.0.1 Micro Hubs - H - Mudfisher Cove - Unlocked (KMS)
+			ach(13180),	-- 8.0.1 Micro Hubs - H - Swiftwind Post - Unlocked (KMS)
+			ach(13181),	-- 8.0.1 Micro Hubs - H - Hillcrest Pasture - Unlocked (KMS)
+			ach(13182),	-- 8.0.1 Micro Hubs - H - Stonetusk Watch - Unlocked (KMS)
+			ach(13183),	-- 8.0.1 Micro Hubs - H - Windfall Cavern - Unlocked (KMS)
+			ach(13184),	-- 8.0.1 Micro Hubs - H - Stonefist Watch - Unlocked (KMS)
+			ach(13185),	-- 8.0.1 Micro Hubs - H - Wolf's Den - Unlocked (KMS)
+			ach(13197),	-- <Hidden> War Campaign - Chapter 04 Complete (H)
+			ach(13198),	-- <Hidden> War Campaign - Chapter 04 Complete (A)
+			ach(13227),	-- Sinister Combatant
+			ach(13228),	-- Sinister Combatant
+			ach(13254),	-- Defeat 2 Commanders (Horde) (Hidden)
+			ach(13255),	-- Defeat 2 Commanders (Alliance) (Hidden)
+			ach(13258),	-- <Hidden> Kings' Rest unlocked
+			ach(13259),	-- <Hidden> Siege of Boralus unlocked
+			-- 8.1.0.28202
+			ach(13328),	-- Champion of the Light kills (Raid Finder Battle of Dazar'alor)
+			ach(13329),	-- Champion of the Light kills (Normal Battle of Dazar'alor)
+			ach(13330),	-- Champion of the Light kills (Heroic Battle of Dazar'alor)
+			ach(13331),	-- Champion of the Light kills (Mythic Battle of Dazar'alor)
+			ach(13332),	-- Grong kills (Raid Finder Battle of Dazar'alor) \\ King Grong kills (Raid Finder Battle of Dazar'alor)
+			ach(13333),	-- Grong kills (Normal Battle of Dazar'alor) \\ King Grong kills (Normal Battle of Dazar'alor)
+			ach(13334),	-- Grong kills (Heroic Battle of Dazar'alor) \\ King Grong kills (Heroic Battle of Dazar'alor)
+			ach(13336),	-- Grong kills (Mythic Battle of Dazar'alor) \\ King Grong kills (Mythic Battle of Dazar'alor)
+			ach(13344),	-- Grong the Revenant kills (Raid Finder Battle of Dazar'alor) \\ Grong the Revanent kills (Raid Finder Battle of Dazar'alor)
+			ach(13346),	-- Grong the Revenant kills (Normal Battle of Dazar'alor) \\ Grong the Revanent kills (Normal Battle of Dazar'alor)
+			ach(13347),	-- Grong the Revenant kills (Heroic Battle of Dazar'alor) \\ Grong the Revanent kills (Heroic Battle of Dazar'alor)
+			ach(13348),	-- Grong the Revenant kills (Mythic Battle of Dazar'alor) \\ Grong the Revanent kills (Mythic Battle of Dazar'alor)
+			ach(13349),	-- Grimfang and Firecaller kills (Raid Finder Battle of Dazar'alor)
+			ach(13350),	-- Grimfang and Firecaller kills (Normal Battle of Dazar'alor)
+			ach(13351),	-- Grimfang and Firecaller kills (Heroic Battle of Dazar'alor)
+			ach(13353),	-- Grimfang and Firecaller kills (Mythic Battle of Dazar'alor)
+			ach(13354),	-- Flamefist and the Illuminated kills (Raid Finder Battle of Dazar'alor)
+			ach(13355),	-- Flamefist and the Illuminated kills (Normal Battle of Dazar'alor)
+			ach(13356),	-- Flamefist and the Illuminated kills (Heroic Battle of Dazar'alor)
+			ach(13357),	-- Flamefist and the Illuminated kills (Mythic Battle of Dazar'alor)
+			ach(13358),	-- Opulence kills (Raid Finder Battle of Dazar'alor) \\ Treasure Guardian kills (Raid Finder Battle of Dazar'alor)
+			ach(13359),	-- Opulence kills (Normal Battle of Dazar'alor) \\ Treasure Guardian kills (Normal Battle of Dazar'alor)
+			ach(13361),	-- Opulence kills (Heroic Battle of Dazar'alor) \\ Treasure Guardian kills (Heroic Battle of Dazar'alor)
+			ach(13362),	-- Opulence kills (Mythic Battle of Dazar'alor) \\ Treasure Guardian kills (Mythic Battle of Dazar'alor)
+			ach(13363),	-- Conclave of the Chosen kills (Raid Finder Battle of Dazar'alor)
+			ach(13364),	-- Conclave of the Chosen kills (Normal Battle of Dazar'alor)
+			ach(13365),	-- Conclave of the Chosen kills (Heroic Battle of Dazar'alor)
+			ach(13366),	-- Conclave of the Chosen kills (Mythic Battle of Dazar'alor)
+			ach(13367),	-- King Rastakhan kills (Raid Finder Battle of Dazar'alor)
+			ach(13368),	-- King Rastakhan kills (Normal Battle of Dazar'alor)
+			ach(13369),	-- King Rastakhan kills (Heroic Battle of Dazar'alor)
+			ach(13370),	-- King Rastakhan kills (Mythic Battle of Dazar'alor)
+			ach(13371),	-- Mekkatorque kills (Raid Finder Battle of Dazar'alor)
+			ach(13372),	-- Mekkatorque kills (Normal Battle of Dazar'alor)
+			ach(13373),	-- Mekkatorque kills (Heroic Battle of Dazar'alor)
+			ach(13374),	-- Mekkatorque kills (Mythic Battle of Dazar'alor)
+			ach(13375),	-- Stormwall Blockade kills (Raid Finder Battle of Dazar'alor)
+			ach(13376),	-- Stormwall Blockade kills (Normal Battle of Dazar'alor)
+			ach(13377),	-- Stormwall Blockade kills (Heroic Battle of Dazar'alor)
+			ach(13378),	-- Stormwall Blockade kills (Mythic Battle of Dazar'alor)
+			ach(13379),	-- Lady Jaina Proudmoore kills (Raid Finder Battle of Dazar'alor)
+			ach(13380),	-- Lady Jaina Proudmoore kills (Normal Battle of Dazar'alor)
+			ach(13381),	-- Lady Jaina Proudmoore kills (Heroic Battle of Dazar'alor)
+			ach(13382),	-- Lady Jaina Proudmoore kills (Mythic Battle of Dazar'alor)
+			ach(13404),	-- The Restless Cabal kills (Raid Finder Crucible of Storms)
+			ach(13405),	-- The Restless Cabal kills (Normal Crucible of Storms)
+			ach(13406),	-- The Restless Cabal kills (Heroic Crucible of Storms)
+			ach(13407),	-- The Restless Cabal kills (Mythic Crucible of Storms)
+			ach(13408),	-- Uu'nat, Harbinger of the Void kills (Raid Finder Crucible of Storms)
+			ach(13411),	-- Uu'nat, Harbinger of the Void kills (Normal Crucible of Storms)
+			ach(13412),	-- Uu'nat, Harbinger of the Void kills (Heroic Crucible of Storms)
+			ach(13413),	-- Uu'nat, Harbinger of the Void kills (Mythic Crucible of Storms)
+			-- 8.1.0.28616
+			ach(13452),	-- Vicious Saddle (1) \\ Sinister Saddle
+			ach(13453),	-- Vicious Saddle (1) \\ Sinister Saddle
+		})),
+
+		-- 8.1.5
+		expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
+			-- 8.1.5.28938
+			ach(13156),	-- Allied Races: Zandalari Troll (Hidden Character Achievement)
+			ach(13157),	-- Allied Races: Kul Tiran (Hidden Character Achievement)
+			ach(13159),	-- Allied Races: Zandalari Troll Unlock Requirements
+			ach(13160),	-- Allied Races: Kul Tiran Unlock Requirements
+			-- 8.1.5.29141
+			ach(13488),	-- In Teldrassil's Shadow (Hidden Character Achievement)
+			-- 8.1.5.29220
+			ach(13509),	-- The Speaker's Resolve
+			-- 8.1.5.29558
+			ach(13521),	-- Vicious Saddle (2)
+			ach(13522),	-- Vicious Saddle (3)
+			ach(13523),	-- Vicious Saddle (4)
+			ach(13524),	-- Vicious Saddle (5)
+			ach(13525),	-- Vicious Saddle (6)
+			ach(13526),	-- Vicious Saddle (7)
+			ach(13527),	-- Vicious Saddle (8)
+			ach(13528),	-- Vicious Saddle (9)
+			ach(13529),	-- Vicious Saddle (10)
+			ach(13530),	-- Vicious Saddle (2)
+			ach(13531),	-- Vicious Saddle (3)
+			ach(13532),	-- Vicious Saddle (4)
+			ach(13533),	-- Vicious Saddle (5)
+			ach(13534),	-- Vicious Saddle (6)
+			ach(13535),	-- Vicious Saddle (7)
+			ach(13536),	-- Vicious Saddle (8)
+			ach(13537),	-- Vicious Saddle (9)
+			ach(13538),	-- Vicious Saddle (10)
+			ach(13539),	-- 8.1.5 - Zandalari Troll - Loa Selected
+		})),
+
+		-- 8.2.0
+		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
+			-- 8.2.0.30080
+			ach(13544),	-- Essential Empowerment
+			ach(13552),	-- 8.2 BfA - PATCH Quest Launch
+			ach(13587),	-- Abyssal Commander Sivara kills (Raid Finder Eternal Palace)
+			ach(13588),	-- Abyssal Commander Sivara kills (Normal Eternal Palace)
+			ach(13589),	-- Abyssal Commander Sivara kills (Heroic Eternal Palace)
+			ach(13590),	-- Abyssal Commander Sivara kills (Mythic Eternal Palace)
+			ach(13591),	-- Blackwater Behemoth kills (Raid Finder Eternal Palace) \\ Underwater Monstrosity kills (Raid Finder Eternal Palace)
+			ach(13592),	-- Blackwater Behemoth kills (Normal Eternal Palace) \\ Underwater Monstrosity kills (Normal Eternal Palace)
+			ach(13593),	-- Blackwater Behemoth kills (Heroic Eternal Palace) \\ Underwater Monstrosity kills (Heroic Eternal Palace)
+			ach(13594),	-- Blackwater Behemoth kills (Mythic Eternal Palace) \\ Underwater Monstrosity kills (Mythic Eternal Palace)
+			ach(13595),	-- Radiance of Azshara kills (Raid Finder Eternal Palace) \\ Rage of Azshara kills (Raid Finder Eternal Palace)
+			ach(13596),	-- Radiance of Azshara kills (Normal Eternal Palace) \\ Rage of Azshara kills (Normal Eternal Palace)
+			ach(13597),	-- Radiance of Azshara kills (Heroic Eternal Palace) \\ Rage of Azshara kills (Heroic Eternal Palace)
+			ach(13598),	-- Radiance of Azshara kills (Mythic Eternal Palace) \\ Rage of Azshara kills (Mythic Eternal Palace)
+			ach(13600),	-- Lady Ashvane kills (Raid Finder Eternal Palace) \\ Priscilla Ashvane kills (Raid Finder Eternal Palace)
+			ach(13601),	-- Lady Ashvane kills (Normal Eternal Palace) \\ Priscilla Ashvane kills (Normal Eternal Palace)
+			ach(13602),	-- Lady Ashvane kills (Heroic Eternal Palace) \\ Priscilla Ashvane kills (Heroic Eternal Palace)
+			ach(13603),	-- Lady Ashvane kills (Mythic Eternal Palace) \\ Priscilla Ashvane kills (Mythic Eternal Palace)
+			ach(13604),	-- Orgozoa kills (Raid Finder Eternal Palace)
+			ach(13605),	-- Orgozoa kills (Normal Eternal Palace)
+			ach(13606),	-- Orgozoa kills (Heroic Eternal Palace)
+			ach(13607),	-- Orgozoa kills (Mythic Eternal Palace)
+			ach(13608),	-- The Queen's Court kills (Raid Finder Eternal Palace)
+			ach(13609),	-- The Queen's Court kills (Normal Eternal Palace)
+			ach(13610),	-- The Queen's Court kills (Heroic Eternal Palace)
+			ach(13611),	-- The Queen's Court kills (Mythic Eternal Palace)
+			ach(13612),	-- Za'qul kills (Raid Finder Eternal Palace)
+			ach(13613),	-- Za'qul kills (Normal Eternal Palace)
+			ach(13614),	-- Za'qul kills (Heroic Eternal Palace)
+			ach(13615),	-- Za'qul kills (Mythic Eternal Palace)
+			-- 8.2.0.30168
+			ach(13616),	-- Queen Azshara kills (Raid Finder Eternal Palace)
+			ach(13617),	-- Queen Azshara kills (Normal Eternal Palace)
+			ach(13618),	-- Queen Azshara kills (Heroic Eternal Palace)
+			ach(13619),	-- Queen Azshara kills (Mythic Eternal Palace) \\ Queen Azshara kills Mythic Eternal Palace)
+			ach(13620),	-- King Mechagon kills (Mythic Operation: Mechagon)
+			-- 8.2.0.30262
+			ach(13636),	-- Notorious Combatant
+			ach(13637),	-- Notorious Combatant
+			ach(13688),	-- Battle for Wintergrasp victories
+			ach(13689),	-- Solesa Naksu [DNT]
+			-- 8.2.0.30430
+			ach(13741),	-- <Hidden> Nazjatar - Flight Master Whistle Upgrade - Alliance (DNT) \\ <Hidden> Nazjatar - Completed Quest 1 of Week 3 - Alliance (DNT)
+			ach(13742),	-- <Hidden> Nazjatar - Flight Master Whistle Upgrade - Horde (DNT) \\ <Hidden> Nazjatar - Completed Quest 1 of Week 3 - Horde (DNT)
+			-- 8.2.0.30495
+			ach(13812),	-- Vicious Saddle (11)
+			ach(13813),	-- Vicious Saddle (12)
+			ach(13814),	-- Vicious Saddle (13)
+			ach(13815),	-- Vicious Saddle (14)
+			ach(13816),	-- Vicious Saddle (15)
+			ach(13817),	-- Vicious Saddle (16)
+			ach(13818),	-- Vicious Saddle (17)
+			ach(13819),	-- Vicious Saddle (18)
+			ach(13820),	-- Vicious Saddle (19)
+			ach(13821),	-- Vicious Saddle (20)
+			ach(13822),	-- Vicious Saddle (11)
+			ach(13823),	-- Vicious Saddle (12)
+			ach(13824),	-- Vicious Saddle (13)
+			ach(13825),	-- Vicious Saddle (14)
+			ach(13826),	-- Vicious Saddle (15)
+			ach(13827),	-- Vicious Saddle (16)
+			ach(13828),	-- Vicious Saddle (17)
+			ach(13829),	-- Vicious Saddle (18)
+			ach(13830),	-- Vicious Saddle (19)
+			ach(13831),	-- Vicious Saddle (20)
+			-- 8.2.0.31229
+			ach(13907),	-- Mugambala matches
+			ach(13908),	-- Mugambala victories
+			ach(13909),	-- The Robodrome matches
+			ach(13910),	-- The Robodrome victories
+			ach(13911),	-- Black Rook Hold Arena matches
+			ach(13912),	-- Black Rook Hold Arena victories
+			ach(13913),	-- Ashamane's Fall matches
+			ach(13914),	-- Ashamane's Fall victories
+			ach(13915),	-- Hook Point victories
+			ach(13916),	-- Hook Point matches
+		})),
+
+		-- 8.3.0
+		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {
+			-- 8.3.0.32044
+			ach(13207),	-- Allied Races: Vulpera (Hidden Character Achievement)
+			ach(13933),	-- Vicious Saddle (21)
+			ach(13934),	-- Vicious Saddle (22)
+			ach(13935),	-- Vicious Saddle (23)
+			ach(13936),	-- Vicious Saddle (24)
+			ach(13937),	-- Vicious Saddle (25)
+			ach(13938),	-- Vicious Saddle (26)
+			ach(13939),	-- Vicious Saddle (27)
+			ach(13940),	-- Vicious Saddle (28)
+			ach(13941),	-- Vicious Saddle (29)
+			ach(13942),	-- Vicious Saddle (30)
+			ach(13943),	-- Corrupted Combatant
+			ach(13944),	-- Corrupted Combatant
+			ach(13945),	-- Vicious Saddle (21)
+			ach(13946),	-- Vicious Saddle (22)
+			ach(13947),	-- Vicious Saddle (23)
+			ach(13948),	-- Vicious Saddle (24)
+			ach(13949),	-- Vicious Saddle (25)
+			ach(13950),	-- Vicious Saddle (26)
+			ach(13951),	-- Vicious Saddle (27)
+			ach(13952),	-- Vicious Saddle (28)
+			ach(13953),	-- Vicious Saddle (29)
+			ach(13954),	-- Vicious Saddle (30)
+			ach(13991),	-- Allied Races: Mechagnome Unlock Requirements
+			ach(13993),	-- Allied Races: Vulpera Unlock Requirements
+			ach(14012),	-- Allied Races: Mechagnome (Hidden Character Achievement)
+			-- 8.3.0.32272
+			ach(14056),	-- King Mechagon kills (Heroic Mechagon - Workshop)
+			ach(14057),	-- HK-8 Aerial Opression Unit kills (Heroic Mechagon - Junkyard)
+			-- 8.3.0.32414
+			ach(14073),	-- Faceless Mask of the Pained
+			ach(14074),	-- Faceless Mask of the Dark Imagination
+			ach(14075),	-- Faceless Mask of the Burned Bridge
+			ach(14076),	-- Faceless Mask of the Daredevil
+			ach(14077),	-- Faceless Mask of the Long Night
+			ach(14078),	-- Wrathion, the Black Emperor kills (Raid Finder Ny'alotha, the Waking City)
+			ach(14079),	-- Wrathion, the Black Emperor kills (Normal Ny'alotha, the Waking City)
+			ach(14080),	-- Wrathion, the Black Emperor kills (Heroic Ny'alotha, the Waking City)
+			ach(14082),	-- Wrathion, the Black Emperor kills (Mythic Ny'alotha, the Waking City)
+			ach(14089),	-- Maut kills (Raid Finder Ny'alotha, the Waking City)
+			ach(14091),	-- Maut kills (Normal Ny'alotha, the Waking City)
+			ach(14093),	-- Maut kills (Heroic Ny'alotha, the Waking City)
+			ach(14094),	-- Maut kills (Mythic Ny'alotha, the Waking City)
+			ach(14095),	-- The Prophet Skitra kills (Raid Finder Ny'alotha, the Waking City)
+			ach(14096),	-- The Prophet Skitra kills (Normal Ny'alotha, the Waking City)
+			ach(14097),	-- The Prophet Skitra kills (Heroic Ny'alotha, the Waking City)
+			ach(14098),	-- The Prophet Skitra kills (Mythic Ny'alotha, the Waking City)
+			ach(14101),	-- Dark Inquisitor Xanesh kills (Raid Finder Ny'alotha, the Waking City)
+			ach(14102),	-- Dark Inquisitor Xanesh kills (Normal Ny'alotha, the Waking City)
+			ach(14104),	-- Dark Inquisitor Xanesh kills (Heroic Ny'alotha, the Waking City)
+			ach(14105),	-- Dark Inquisitor Xanesh kills (Mythic Ny'alotha, the Waking City)
+			ach(14107),	-- The Hivemind kills (Raid Finder Ny'alotha, the Waking City)
+			ach(14108),	-- The Hivemind kills (Nomral Ny'alotha, the Waking City)
+			ach(14109),	-- The Hivemind kills (Heroic Ny'alotha, the Waking City)
+			ach(14110),	-- The Hivemind kills (Mythic Ny'alotha, the Waking City)
+			ach(14111),	-- Shad'har the Insatiable kills (Raid Finder Ny'alotha, the Waking City)
+			ach(14112),	-- Shad'har the Insatiable kills (Normal Ny'alotha, the Waking City)
+			ach(14114),	-- Shad'har the Insatiable kills (Heroic Ny'alotha, the Waking City)
+			ach(14115),	-- Shad'har the Insatiable kills (Mythic Ny'alotha, the Waking City)
+			ach(14117),	-- Drest'agath kills (Raid Finder Ny'alotha, the Waking City)
+			ach(14118),	-- Drest'agath kills (Normal Ny'alotha, the Waking City)
+			ach(14119),	-- Drest'agath kills (Heroic Ny'alotha, the Waking City)
+			ach(14120),	-- Drest'agath kills (Mythic Ny'alotha, the Waking City)
+			ach(14123),	-- Vexiona kills (Raid Finder Ny'alotha, the Waking City)
+			ach(14124),	-- Vexiona kills (Normal Ny'alotha, the Waking City)
+			ach(14125),	-- Vexiona kills (Heroic Ny'alotha, the Waking City)
+			ach(14126),	-- Vexiona kills (Mythic Ny'alotha, the Waking City)
+			ach(14127),	-- Ra-den the Despoiled kills (Raid Finder Ny'alotha, the Waking City)
+			ach(14128),	-- Ra-den the Despoiled kills (Normal Ny'alotha, the Waking City)
+			ach(14129),	-- Ra-den the Despoiled kills (Heroic Ny'alotha, the Waking City)
+			ach(14130),	-- Ra-den the Despoiled kills (Mythic Ny'alotha, the Waking City)
+			ach(14131),	-- Carapace of N'Zoth kills (Raid Finder Ny'alotha, the Waking City)
+			ach(14132),	-- Carapace of N'Zoth kills (Normal Ny'alotha, the Waking City)
+			ach(14133),	-- Carapace of N'Zoth kills (Heroic Ny'alotha, the Waking City)
+			ach(14134),	-- Carapace of N'Zoth kills (Mythic Ny'alotha, the Waking City)
+			ach(14135),	-- N'Zoth the Corruptor kills (Raid Finder Ny'alotha, the Waking City) \\ N'Zoth, the Corruptor kills (Raid Finder Ny'alotha, the Waking City)
+			ach(14136),	-- N'Zoth the Corruptor kills (Normal Ny'alotha, the Waking City) \\ N'Zoth, the Corruptor kills (Normal Ny'alotha, the Waking City)
+			ach(14137),	-- N'Zoth the Corruptor kills (Heroic Ny'alotha, the Waking City) \\ N'Zoth, the Corruptor kills (Heroic Ny'alotha, the Waking City)
+			ach(14138),	-- N'Zoth the Corruptor kills (Mythic Ny'alotha, the Waking City) \\ N'Zoth, the Corruptor kills (Mythic Ny'alotha, the Waking City)
+			-- 8.3.0.32712
+			ach(14185),	-- 8.3 Patch Quest Launch
+			ach(14189),	-- Joined Shadowy Figures <DND>
+		})),
+
+		-- 8.3.7
+		expansion(EXPANSION.BFA, patch(3,7), bubbleDownSelf({ ["timeline"] = { ADDED_8_3_7 } }, {
+			-- 8.3.7.34872
+			ach(14207),	-- Il'gynoth, Corruption Reborn (Raid Finder Ny'alotha, the Waking City)
+			ach(14208),	-- Il'gynoth, Corruption Reborn (Normal Ny'alotha, the Waking City)
+			ach(14210),	-- Il'gynoth, Corruption Reborn (Heroic Ny'alotha, the Waking City)
+			ach(14211),	-- Il'gynoth, Corruption Reborn (Mythic Ny'alotha, the Waking City)
+			ach(14212),	-- <Hidden> 8.3 Main Line - Account Has Obtained Legendary Cloak (DNT)
+			ach(14238),	-- Azerite Essence - Rank 3 on any character - Azeroth's Undying Gift <DND>
+			ach(14239),	-- Azerite Essence - Rank 3 on any character - Sphere of Suppression <DND>
+			ach(14240),	-- Azerite Essence - Rank 3 on any character - Worldvein Resonance <DND>
+			ach(14241),	-- Azerite Essence - Rank 3 on any character - Focusing Iris <DND>
+			ach(14242),	-- Azerite Essence - Rank 3 on any character - Purification Protocol <DND>
+			ach(14243),	-- Azerite Essence - Rank 3 on any character - Anima of Life and Death <DND>
+			ach(14244),	-- Azerite Essence - Rank 3 on any character - Crucible of Flame <DND>
+			ach(14245),	-- Azerite Essence - Rank 3 on any character - Nullification Dynamo <DND>
+			ach(14246),	-- Azerite Essence - Rank 3 on any character - Condensed Life Force <DND>
+			ach(14247),	-- Azerite Essence - Rank 3 on any character - Ripple in Space <DND>
+			ach(14248),	-- Azerite Essence - Rank 3 on any character - Unwavering Ward <DND>
+			ach(14249),	-- Azerite Essence - Rank 3 on any character - Ever-Rising Tide <DND>
+			ach(14250),	-- Azerite Essence - Rank 3 on any character - Artifice of Time <DND>
+			ach(14251),	-- Azerite Essence - Rank 3 on any character - Well of Existence <DND>
+			ach(14252),	-- Azerite Essence - Rank 3 on any character - Lifebinder's Invocation <DND>
+			ach(14253),	-- Azerite Essence - Rank 3 on any character - Vitality Conduit <DND>
+			ach(14254),	-- Azerite Essence - Rank 3 on any character - Vision of Perfection <DND>
+			ach(14255),	-- Azerite Essence - Rank 3 on any character - Blood of the Enemy <DND>
+			ach(14256),	-- Azerite Essence - Rank 3 on any character - Spirit of Preservation <DND>
+			ach(14257),	-- Azerite Essence - Rank 3 on any character - Aegis of the Deep <DND>
+			ach(14258),	-- Azerite Essence - Rank 3 on any character - Memory of Lucid Dreams <DND>
+			ach(14259),	-- Azerite Essence - Rank 3 on any character - Unbound Force <DND>
+			ach(14260),	-- Azerite Essence - Rank 3 on any character - Conflict and Strife <DND>
+			ach(14261),	-- Azerite Essence - Rank 3 on any character - Touch of the Everlasting <DND>
+			ach(14262),	-- Azerite Essence - Rank 3 on any character - Strength of the Warden <DND>
+			ach(14263),	-- Azerite Essence - Rank 3 on any character - Breath of the Dying <DND>
+			ach(14264),	-- Azerite Essence - Rank 3 on any character - Spark of Inspiration <DND>
+			ach(14265),	-- Azerite Essence - Rank 3 on any character - Formless Void <DND>
+		})),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = {CREATED_9_0_1} }, {
+		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {
 			ach(14340),	-- The Path Towards Ascension 1
 			ach(14342),	-- The Path Towards Ascension 3
 			ach(14343),	-- The Path Towards Ascension 5
@@ -2034,7 +2057,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ ["timeline"] = {CREATED_9_0_2} }, {
+		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2 } }, {
 			-- 9.0.2.35854
 			ach(14807),	-- <Hidden> Completed Shadowlands Story (DNT) <Account>
 			ach(14811),	-- <Hidden> Shadowlands Alt - Launch Chromie if Shadowlands in Progress (DNT)
@@ -2081,7 +2104,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.0.5
-		expansion(EXPANSION.SL, patch(0,5), bubbleDownSelf({ ["timeline"] = {CREATED_9_0_5} }, {
+		expansion(EXPANSION.SL, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5 } }, {
 			ach(14933),	-- 9.0 - Covenant - Night Fae - Small Shape Selected
 			--
 			ach(15010),	-- Maw Tracking - Vendor - Items Unlocked - Apprehensive [DNT]
@@ -2105,7 +2128,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = {CREATED_9_1_0} }, {
+		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 			ach(14934),	-- 9.1 Campaign - Quest Launch \\ 9.1 Campaign - Patch Quest Launch - Intro (RMV)
 			--
 			ach(14944),	-- Torghast Tracking 9.1 - Layer 9 Unlocked - Account [DNT]
@@ -2182,7 +2205,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ ["timeline"] = {CREATED_9_1_5} }, {
+		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {
 			ach(15395),	-- Fae's Giving [DNT]
 			ach(15242),	-- Renowned - Kyrian
 			ach(15243),	-- Renowned - Necrolords
@@ -2202,7 +2225,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ ["timeline"] = {CREATED_9_2_0} }, {
+		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
 			ach(15559),	-- 9.2 ZM - Cypher System - Talent Unlocked - Aealic
 			ach(15560),	-- 9.2 ZM - Cypher System - Talent Unlocked - Dealic
 			ach(15561),	-- 9.2 ZM - Cypher System - Talent Unlocked - Trebalim
@@ -2294,13 +2317,13 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.2.5
-		expansion(EXPANSION.SL, patch(2,5), bubbleDownSelf({ ["timeline"] = {CREATED_9_2_5} }, {
+		expansion(EXPANSION.SL, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } }, {
 			ach(15596),	-- Return to Lordaeron (Hidden Character Achievement)
 		})),
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {
 			ach(15992),	-- <DNT> Dragonscale Expedition Rank 01
 			ach(16022),	-- <DNT> Dragonscale Expedition Rank 02
 			ach(16023),	-- <DNT> Dragonscale Expedition Rank 03
@@ -2557,7 +2580,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.0.2
-		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
+		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 } }, {
 			-- 10.0.2.45779
 			ach(16703),	-- 10.0 Thal - Raid Intro Quest Launch [DNT]
 			ach(16713),	-- <DNT> Wrathion - 1 - Trusted Champion
@@ -2848,7 +2871,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.0.5
-		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
+		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 			--10.0.5.47871
 			ach(16735),	-- 10.0.5 Trading Post - Tutorial Quest - Objective: Tenders Claimed - JZB <DND>
 			ach(16737),	-- 10.0.5 Trading Post - Tutorial Quest - Completed (Reward for Player) - JZB <DND>
@@ -2863,7 +2886,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.0.7
-		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 			--10.0.7.47910
 			ach(17306),	-- <DNT> Winterpelt Furbolg - 1 - Friendly
 			ach(17307),	-- <DNT> Winterpelt Furbolg - 1 - Honored
@@ -2883,7 +2906,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 			--10.1.0.48480
 			ach(17537),	-- Dragon Chase - WS01
 			ach(17538),	-- Dragon Chase - WS02
@@ -3002,7 +3025,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 			--10.1.5.49516
 			ach(17732),	-- <Hidden>10.1.5 Chromie Time - Hit 60 While In Chromie Time (copy) (copy)
 			ach(17733),	-- <Hidden> 10.1.5 Chromie Time - Hit 61 While In Chromie Time (copy) (copy)
@@ -3022,7 +3045,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		--10.1.7
-		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			--10.1.7.50442
 			ach(18860),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 3
 			ach(18938),	-- Seeing Red (account)
@@ -3035,7 +3058,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 			ach(19216),	-- <DNT> Dream Wardens Rank 1 (Account)
 			ach(19217),	-- <DNT> Dream Wardens Rank 2 (Account)
 			ach(19218),	-- <DNT> Dream Wardens Rank 3 (Account)
@@ -3128,14 +3151,14 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 			ach(19784),	-- Hearthstone Game Wins
 			--10.2.5.52968
 			ach(19720),	-- Reclamation of Gilneas (Hidden Character Achievement)
 		})),
 
 		-- 10.2.6
-		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
+		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
 			ach(19579),	-- The Awakened Aspects
 			ach(19577),	-- The Awakened Drake
 			ach(19578),	-- The Awakened Wyrm
@@ -3192,7 +3215,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
 			-- 10.2.7.54171
 			ach(20039),	-- [DNT] Damage - Humanoid
 			ach(20046),	-- [DNT] Damage - Beast
@@ -3223,7 +3246,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			-- 11.0.0.54311
 			ach(19467),	-- 1st level 80 on account (DNT)
 			ach(19469),	-- 2nd level 80 on account (DNT)
@@ -3600,7 +3623,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			-- 11.0.2.55399
 			ach(40857),	-- Warbands: Bank Quest Unlock
 			ach(40861),	-- Mislaid Curiosities looted
@@ -3621,14 +3644,14 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 			-- 11.0.5.56487
 			ach(40886),	-- <Hidden> Is Dracthyr For Soar Wingman
 			ach(40910),	-- Successfully Stress Test CN Realms
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 			ach(41213),	-- Family Battler of Khaz Algar (copy)
 			ach(41218),	-- <DNT> Plunderstorm Plunder Tracker - V1.5 11.0.7 - Mainline Power
 		})),

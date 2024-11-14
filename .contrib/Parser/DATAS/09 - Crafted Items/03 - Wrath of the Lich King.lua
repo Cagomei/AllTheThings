@@ -558,9 +558,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					{ "i", 44413 },	-- Mekgineer's Chopper
 					{ "i", 41508 },	-- Mechano-hog
 				},
-				-- #if ANYCLASSIC
-				["f"] = 100,
-				-- #endif
 			}),
 			i(41508),	-- Mechano-Hog (MOUNT!)
 			i(44413),	-- Mekgineer's Chopper (MOUNT!)

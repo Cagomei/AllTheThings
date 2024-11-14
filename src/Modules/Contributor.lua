@@ -169,6 +169,7 @@ local MobileNPCDB = {
 	 [88026] = true,	-- John J. Keeshan
 	 [88027] = true,	-- Impsy
 	[101527] = true,	-- Blingtron 6000
+	[115785] = true,	-- Direbeak Hatchling
 	[117475] = true,	-- Lord Darius Crowley
 	[145005] = true,	-- Lor'themar Theron
 	[145707] = true,	-- Advisor Belgrum
@@ -300,7 +301,7 @@ local function OnQUEST_DETAIL(...)
 	providerid = tonumber(providerid)
 	if not providerid or not guidtype then
 		-- app.print("Unknown Quest Provider",guidtype,providerid,"during Contribute check!")
-		if guidtype ~= "Item" then
+		if not IgnoredQuestChecksByTypes[guidtype].provider() then
 			app.print("No Quest check performed for Quest #", questID,"[ProviderID]")
 		end
 		return

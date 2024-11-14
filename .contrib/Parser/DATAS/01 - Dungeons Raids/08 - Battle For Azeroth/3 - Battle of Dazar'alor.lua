@@ -20,6 +20,18 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(40961, {	-- Batle of Dazar'alor
+					["timeline"] = { ADDED_11_0_7 },
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						13290,	-- Death's Bargain
+						13289,	-- Defense of Dazar'alor
+						13287,	-- Empire's Fall
+						13288,	-- Might of the Alliance
+						13286,	-- Siege of Dazar'alor
+						13291,	-- Victory or Death
+					}},
+				}),
 				ach(13385),	-- Daz'aling Attire
 				ach(13315, {	-- Glory of the Dazar'alor Raider
 					["sym"] = {{"meta_achievement",

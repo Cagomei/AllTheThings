@@ -35,8 +35,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 8 },
 					}),
 					q(82784, {	-- Resonant Performance
-						["provider"] = { "n", 215744 },
-						["coord"] = { 56.7, 52.4, ISLE_OF_DORN },
+						["provider"] = { "n", 215744 },	-- Burkhalt
+						["coords"] = {
+							{ 56.7, 52.4, ISLE_OF_DORN },
+							{ 53.7, 77.7, THE_PROSCENIUM },
+						},
 						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 21 },
 					}),
 					q(79282, {	-- The Grand Debut

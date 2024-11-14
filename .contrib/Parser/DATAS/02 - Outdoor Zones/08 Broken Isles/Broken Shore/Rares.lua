@@ -120,13 +120,15 @@ root(ROOTS.Zones, {
 					["coord"] = { 41.0, 16.0, BROKEN_SHORE },
 				}),
 				n(119629, {	-- Lord Hel'Nurath
-					["description"] = "This mount is only available to warlocks who have completed |cFFFFD700The Wrathsteed of Xoroth|r quest from the class mount campaign. \nOnce completed you can kill Lord Hel'Nurath for a 100% chance at getting the mount skin.",
 					["questID"] = 46304,	-- Rare Elite 15
-					["classes"] = { WARLOCK },
 					["isDaily"] = true,
 					["coord"] = { 45.0, 51.3, BROKEN_SHORE },
 					["g"] = {
-						i(142233),	-- Netherlord's Accursed Wrathsteed (MOUNT!)
+						i(142233, {	-- Netherlord's Accursed Wrathsteed (MOUNT!)
+							["description"] = "This mount is only available to warlocks who have completed |cFFFFD700The Wrathsteed of Xoroth|r quest from the class mount campaign. \nOnce completed you can kill Lord Hel'Nurath for a 100% chance at getting the mount skin.",
+							["classes"] = { WARLOCK },
+							["sourceQuests"] = { 46243 },	-- The Wrathsteed of Xoroth
+						}),
 					},
 				}),
 				n(117141, {	-- Malgrazoth

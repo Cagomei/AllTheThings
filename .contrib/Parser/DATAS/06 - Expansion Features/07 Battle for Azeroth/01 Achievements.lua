@@ -4,7 +4,6 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(ACHIEVEMENTS, {	-- Achievements (Achievements that don't really fit into a specific Location which are specific to BFA)
-		--[[ TODO: (!) New achievements not sourced yet
 		ach(40953, bubbleDownSelf({	-- A Farewell to Arms
 			["timeline"] = { ADDED_11_0_7 },
 		},{
@@ -12,14 +11,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			["sym"] = {{"meta_achievement",
 				12947,	-- Azerothian Diplomat
 				12807,	-- Battle for Azeroth Dungeon Hero
-				40961,	-- Batle of Dazar'alor (!)
-				40959,	-- Black Empire State of Mind (!)
-				41209,	-- Dressed to Kill: Battle for Azeroth (!)
+				40961,	-- Batle of Dazar'alor
+				40959,	-- Black Empire State of Mind
+				41209,	-- Dressed to Kill: Battle for Azeroth
 				13414,	-- Crucible of Storms
 				13134,	-- Expedition Leader
-				40958,	-- Full Heart, Can't Lose (!)
-				40956,	-- I'm On Island Time (!)
-				40957,	-- Maximum Effort (!)
+				40958,	-- Full Heart, Can't Lose
+				40956,	-- I'm On Island Time
+				40957,	-- Maximum Effort
 				13541,	-- Mecha-Done
 				40963,	-- Ny'alotha, the Waking City
 				40962,	-- The Eternal Palace
@@ -27,13 +26,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				14730,	-- To All the Squirrels I Set Sail to See
 				40960,	-- Uldir
 				13638,	-- Undersea Usurper
-				40955,	-- War Stories (!)
+				40955,	-- War Stories
 			}},
 			["groups"] = {
 				mount(473472),	-- Jani's Trashpile (MOUNT!)
 			},
 		})),
-		]]--
 		ach(13036),		-- A Loa of a Tale (automated)
 		pvp(ach(12573, {	-- Band of Brothers
 			crit(41008),		-- Honorable Kill
@@ -343,6 +341,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				}),
 			},
 		}),
+		ach(40956, bubbleDownSelf({	-- I'm On Island Time
+			["timeline"] = { ADDED_11_0_7 },
+		},{
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				12988,	-- Battle for Azeroth Explorer
+				41203,	-- Bwon Voyage
+				41204,	-- Dune Squad
+				41202,	-- Hot Tropic
+				12593,	-- Loremaster of Kul Tiras
+				13294,	-- Loremaster of Zandalar
+				41206,	-- Songs of Storms
+				41205,	-- Sound Off
+				41207,	-- When the Drust Settles
+				13144,	-- Wide World of Quests
+			}},
+			["groups"] = {
+				mount(303767),	-- Honeyback Hivemother (MOUNT!)
+			},
+		})),
 		pvp(ach(12861, {	-- Master of Duels
 			["maps"] = {
 				BORALUS,
@@ -473,6 +491,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				["crs"] = { 134700 },	-- Vale Flutterby
 				["coord"] = { 52.75, 83.73, VOLDUN },
 			}),
+		}),
+		ach(40955, {	-- War Stories
+			["timeline"] = { ADDED_11_0_7 },
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				12582,	-- Come Sail Away
+				13251,	-- In Teldrassil's Shadow
+				12719,	-- Spirits Be With You
+				13710,	-- Sunken Ambitions
+				14157,	-- The Corruptor's End
+				13925,	-- The Fourth War (A)
+				13924,	-- The Fourth War (H)
+				13700,	-- The Mechagonian Threat (H)
+				13553,	-- The Mechagonian Threat (A)
+				12997,	-- The Pride of Kul Tiras
+				13263,	-- The Shadow Hunter
+				13517,	-- Two Sides to Every Tale
+				13709,	-- Unfathomable
+				12555,	-- Welcome to Zandalar
+			}},
 		}),
 		pvp(ach(12572)),	-- War Supplied
 	}),
