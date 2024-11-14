@@ -4,6 +4,33 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
 	m(SIREN_ISLE, {
 		n(VENDORS, {
+			n(236045, {	-- Ailenda Hedgemyr
+				["coord"] = { 70.8, 40.2, SIREN_ISLE },
+				["g"] = {
+					fbiron(3000, i(234518)),	-- Ensemble: Sacred Wayfarer's Attire
+					fbiron(3000, i(234517)),	-- Ensemble: Adventurous Lamplighter's Attire
+					fbiron(350, i(233925)),	-- Arathi Knight's Shoulderguard
+					fbiron(350, i(233922)),	-- Arathi Knight's Headguard
+					fbiron(350, i(233917)),	-- Sacredite's Ceremonial Cowl
+					fbiron(350, i(233924)),	-- Arathi Champion's Shoulderguard
+					fbiron(350, i(233921)),	-- Arathi Champion's Headguard
+					fbiron(350, i(233918)),	-- Sacredite Scholar's Hood
+					fbiron(350, i(233923)),	-- Arathi Footman's Shoulderguard
+					fbiron(350, i(233920)),	-- Arathi Footman's Headguard
+					fbiron(350, i(233919)),	-- Sacredite Expedionary Hood
+					fbiron(350, i(233812)),	-- Arathi Youngling's Training Sword
+					fbiron(200, i(233828)),	-- Sacredite's Ceremonial Brush
+					fbiron(750, i(233486)),	-- Hallowfall Supply Cache (TOY!)
+				},
+			}),
+			n(232295, {	-- Almyr Sunhart
+				["coord"] = { 70.6, 38.6, SIREN_ISLE },
+				["g"] = {
+					i(234527), -- Sacredite's Ledger
+					i(234466), -- Tattered Arathi Prayer Scroll
+					i(234287), -- Radiant Focus
+				},
+			}),
 			n(228093, {	-- Argarom
 				["coord"] = { 67.3, 41.7, SIREN_ISLE },
 				["g"] = {
@@ -78,6 +105,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					fbiron(105, i(229050)),	-- Seafarer's Wandering Signet
 				},
 			}),
+			n(228103, {	-- Flori
+				["coord"] = { 67.4, 40.0, SIREN_ISLE },
+				["g"] = {
+					i(234526), -- Archivist's Codex
+				},
+			}),
 			n(235407, {	-- Hooded Purveyor
 				["coord"] = { 67.9, 39.3, SIREN_ISLE },
 				["g"] = {
@@ -106,13 +139,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["g"] = {
 					fbiron(10000, i(233058)),	-- Soweezi's Vintage Waveshredder (MOUNT!)
 					fbiron(5000, i(221543)),	-- Ensemble: Pink Tropical
-					fbiron(5000, i(222960)),	-- Ensemble: Pink Tropical Swimwear
+					fbiron(4500, i(222960)),	-- Ensemble: Pink Tropical Swimwear
 					fbiron(2000, i(220655)),	-- Water Blaster P.K. (COSMETIC!)
-					fbiron(4000, i(234523)),	-- Ensemble: Salvage Rig Garments
-					fbiron(4000, i(234522)),	-- Ensemble: Southsea Cruise Loungewear
-					fbiron(4000, i(234521)),	-- Ensemble: Rusty Bruiser's Outfit
-					fbiron(4000, i(234520)),	-- Ensemble: Sun-Soaked Clothing
-					fbiron(4000, i(234519)),	-- Ensemble: Paradise Beach Loungewear
+					fbiron(2000, i(234523)),	-- Ensemble: Salvage Rig Garments
+					fbiron(2000, i(234522)),	-- Ensemble: Southsea Cruise Loungewear
+					fbiron(2000, i(234521)),	-- Ensemble: Rusty Bruiser's Outfit
+					fbiron(2000, i(234520)),	-- Ensemble: Sun-Soaked Clothing
+					fbiron(2000, i(234519)),	-- Ensemble: Paradise Beach Loungewear
+					fbiron(750, i(234473)),	-- Soweezi's Comfy Lawn Chair (TOY!)
 				},
 			}),
 			n(233259, {	-- Taljori

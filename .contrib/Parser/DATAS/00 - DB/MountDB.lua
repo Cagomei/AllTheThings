@@ -1933,12 +1933,12 @@ i(223313, 448934);	-- Shadow of Doubt
 i(233243, 300154);	-- Silver Tidestallion
 i(233058, 473137);	-- Soweezi's Vintage Waveshredder
 i(232991, 472752);	-- The Breaker's Song
+i(232639, 471562);	-- Thrayir, Eyes of the Siren
 i(234721, 1214940);	-- Ur'zul Fleshripper
 --- UNSORTED ---
 i(232901, 472253);	-- Lunar Launcher
 i(232926, 472479);	-- Love Witch's Sweeper
 i(233354, 473861);	-- Savage Alabaster Battle Turtle
 i(233019, 472489);	-- Sky Witch's Sweeper
-i(232639, 471562);	-- Thrayir, Eyes of the Siren
 i(232624, 471538);	-- Timely Buzzbee
 i(233020, 472488);	-- Twilight Witch's Sweeper

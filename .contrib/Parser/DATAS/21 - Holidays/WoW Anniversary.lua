@@ -210,10 +210,6 @@ WOW_ANNIVERSARY_TWENTY = createHeader({
 	text = {
 		en = WOWAPI_GetAchievementName(41220),
 	},
-	text = {
-		en = "WoW's 20th Anniversary",
-		cn = "魔兽世界二十周年",
-	},
 });
 local BRONZE_TOKEN = 3100;
 
@@ -2377,6 +2373,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}),
 				}),
 				n(QUESTS, {
+					q(85948, {	-- A Burning Journey Through Time
+						-- TODO: move out of here if will be up after anniversary
+						--["provider"] = { "n", ? },	-- push quest in tw bc dungeon for low level character
+						--["coord"] = { X, Y, Z },
+						["isWeekly"] = true,
+						["g"] = {
+							i(232877),	-- Timely Goodie Bag
+						},
+					}),
 					q(83274, {	-- An Original Path Through Time
 						["provider"] = { "n", 223884 },	-- Bobadormu
 						["coord"] = { 62.7, 50.3, TANARIS },

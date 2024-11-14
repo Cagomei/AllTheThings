@@ -22,6 +22,7 @@ WORLD_PVP = createHeader({
 	text = {
 		en = "World PvP",
 		cn = "世界PvP",
+		ru = "Мировое PvP",
 	},
 });
 root(ROOTS.PVP, pvp(n(WORLD_PVP, {

@@ -6,6 +6,7 @@ DELVE_COMPLETION = createHeader({
 		en = "Delve Completion",
 		cn = "地下堡完成",
 		tw = "探究完成",
+		ru = "Награда Вылазки",
 	},
 	description = {
 		en = "Contains things that are rewarded upon completing that event.",

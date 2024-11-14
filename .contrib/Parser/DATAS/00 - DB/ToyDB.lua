@@ -1391,7 +1391,7 @@ i(225347);	-- Web-Vandal's Spinning Wheel
 i(221966);	-- Wormhole Generator: Khaz Algar
 
 ------------------
--- PATCH 11.0.2 --
+-- PATCH 11.0.5 --
 ------------------
 i(229828);	-- 20th Anniversary Balloon Chest
 i(228789);	-- Coldflame Ring
@@ -1405,3 +1405,9 @@ i(232304);	-- Unknown
 i(232306);	-- Unknown
 i(232307);	-- Unknown
 i(232308);	-- Unknown
+
+------------------
+-- PATCH 11.0.7 --
+------------------
+i(233486);	-- Hallowfall Supply Cache
+i(234473);	-- Soweezi's Comfy Lawn Chair

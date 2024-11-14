@@ -9,8 +9,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				84725,	-- The Circlet Calls
 			},
 			["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+				q(84852, {	-- Legacy of the Vrykul
+					--["coord"] = { 71.0, 44.1, SIREN_ISLE },	-- entire zone
+					--["g"] = {
+					--	i(228648),	-- Roaring War-Queen's Citrine
+					--},
+				}),
 				q(84850, {	-- Serpent's Wrath
-					--["coord"] = { 71.0, 44.1, SIREN_ISLE },	-- inaccurate, pop after unlock
+					--["coord"] = { 71.0, 44.1, SIREN_ISLE },	-- entire zone
+				}),
+				q(85764, {	-- Shuddering Hollow
+					["coord"] = { 45.5, 41.6, SIREN_ISLE },
 				}),
 				q(85755, {	-- The Drain
 					-- TODO: available one every time after 85753 version is completed

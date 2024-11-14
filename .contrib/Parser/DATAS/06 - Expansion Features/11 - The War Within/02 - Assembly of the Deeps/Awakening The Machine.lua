@@ -7,6 +7,7 @@ AWAKENING_THE_MACHINE = createHeader({
 	text = {
 		en = "Awakening The Machine",
 		cn = "主机觉醒",
+		ru = "Пробуждение Машины",
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {

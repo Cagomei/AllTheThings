@@ -86,13 +86,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["coord"] = { 71.0, 44.1, SIREN_ISLE },
 				["g"] = {
 					o(499620, {	-- Runed Storm Cache
-						i(232860), -- Singing Fragments (QI!)
+						i(232860),	-- Singing Fragments (QI!)
 					}),
 					o(499862, {	-- Runed Storm Cache
-						i(232861), -- Singing Fragments (QI!)
+						i(232861),	-- Singing Fragments (QI!)
 					}),
 					o(499863, {	-- Runed Storm Cache
-						i(232862), -- Singing Fragments (QI!) 
+						i(232862),	-- Singing Fragments (QI!) 
 					}),
 					--spell(472051),	-- Runecaster's Eye
 					--
@@ -105,13 +105,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["coord"] = { 72.3, 42.9, SIREN_ISLE },
 				["g"] = {
 					o(500688, {	-- Seafarer's Cache
-						i(232860), -- Singing Fragments (QI!)
+						i(232860),	-- Singing Fragments (QI!)
 					}),
 					o(500690, {	-- Seafarer's Cache
-						i(232861), -- Singing Fragments (QI!)
+						i(232861),	-- Singing Fragments (QI!)
 					}),
 					o(500689, {	-- Seafarer's Cache
-						i(232862), -- Singing Fragments (QI!) 
+						i(232862),	-- Singing Fragments (QI!) 
 					}),
 					--spell(470197),	-- Blessing of the Seadweller
 					--
@@ -148,9 +148,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["provider"] = { "n", 231536 },	-- Apprentice Tanmar
 				["coord"] = { 72.1, 42.9, SIREN_ISLE },
 				["g"] = {
-					i(232860), -- Singing Fragments (QI!)
-					i(232861), -- Singing Fragments (QI!)
-					i(232862), -- Singing Fragments (QI!) 
+					i(232860),	-- Singing Fragments (QI!)
+					i(232861),	-- Singing Fragments (QI!)
+					i(232862),	-- Singing Fragments (QI!) 
 					--spell(470169),	-- Thieves of the Siren
 					--
 					i(229365),	-- Raw Singing Citrine
@@ -164,53 +164,33 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					--spell(470170),	-- Wings of the Siren
 				},
 			}),
+			--
+			q(84252, {	-- Peak Precision
+				-- TODO: it look like SHOULD BE same as all weekly quests but it is not marked as such in-game
+				["sourceQuests"] = { 84725 },	-- The Circlet Calls
+				["provider"] = { "n", 232255 },	-- Benny Springjet
+				["coord"] = { 41.9, 68.0, SIREN_ISLE },
+				--["isWeekly"] = true,
+				["g"] = {
+					i(230795),	-- Experimental Go-Pack (QI!)
+				},
+			}),
 			-- isWeekly/isDaily
-			q(84430, {	-- Crystal Crusade
+			q(84248, {	-- A Ritual of Runes
+				-- TODO: Vrykul
 				["sourceQuests"] = { 84725 },	-- The Circlet Calls
-				["provider"] = { "n", 227796 },	-- Sky-Captain Elaena Lancekat
-				["coord"] = { 69.4, 42.8, SIREN_ISLE },
+				["provider"] = { "n", 233139 },	-- Machinist Kromleg
+				["coord"] = { 51.4, 48.2, SIREN_ISLE },
 				["isWeekly"] = true,
-				["g"] = {
-					o(465208, {	-- Crystal Chunk
-						i(228780),	-- Crystal Chunk (QI!)
-					}),
-					i(228787),	-- Crystal Fragment (QI!)
-				},
-			}),
-			q(84627, {	-- Three Heads of the Deep
-				["sourceQuests"] = { 84725 },	-- The Circlet Calls
-				["provider"] = { "n", 227796 },	-- Sky-Captain Elaena Lancekat
-				["coord"] = { 69.4, 42.8, SIREN_ISLE },
-				["isWeekly"] = true,
-			}),
-			q(85589, {	-- Ruffled Pages
-				["sourceQuests"] = { 84725 },	-- The Circlet Calls
-				["provider"] = { "n", 229716 },	-- Stellin Verasa
-				["coord"] = { 71.0, 39.6, SIREN_ISLE },
-				["isWeekly"] = true,
-				["g"] = {
-					o(487825, {	-- Ruffled Pages
-						i(232361),	-- Ruffled Pages (QI!)
-					}),
-				},
 			}),
 			q(85051, {	-- Beach Comber
+				-- TODO: Naga
 				["sourceQuests"] = { 84725 },	-- The Circlet Calls
 				["provider"] = { "n", 231783 },	-- Machinist Kromleg
 				["coord"] = { 41.9, 68.0, SIREN_ISLE },
 				["isWeekly"] = true,
 				["g"] = {
 					i(229967),	-- Salvageable Scrap (QI!)
-				},
-			}),
-			q(84252, {	-- Peak Precision
-				-- TODO: it look like SHOULD BE same as all weekly quests but it is not marked as such in-game
-				["sourceQuests"] = { 84725 },	-- The Circlet Calls
-				["provider"] = { "n", 232255 },	-- Benny Springjet
-				["coord"] = { 41.9, 68.0, SIREN_ISLE },
-				["isWeekly"] = true,
-				["g"] = {
-					i(230795),	-- Experimental Go-Pack (QI!)
 				},
 			}),
 			q(83753, {	-- Cannon Karma
@@ -235,6 +215,37 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					}),
 				},
 			}),
+			q(84430, {	-- Crystal Crusade
+				-- TODO: Naga
+				["sourceQuests"] = { 84725 },	-- The Circlet Calls
+				["provider"] = { "n", 227796 },	-- Sky-Captain Elaena Lancekat
+				["coord"] = { 69.4, 42.8, SIREN_ISLE },
+				["isWeekly"] = true,
+				["g"] = {
+					o(465208, {	-- Crystal Chunk
+						i(228780),	-- Crystal Chunk (QI!)
+					}),
+					i(228787),	-- Crystal Fragment (QI!)
+				},
+			}),
+			q(83932, {	-- Historical Documents
+				-- TODO: Vrykul
+				["sourceQuests"] = { 84725 },	-- The Circlet Calls
+				["provider"] = { "n", 229716 },	-- Stellin Verasa
+				["coord"] = { 71.0, 39.6, SIREN_ISLE },
+				["isWeekly"] = true,
+				["g"] = {
+					i(227405),	-- Research Journal (QI!)
+					i(227406),	-- Interesting Notes (QI!)
+				},
+			}),
+			q(84432, {	-- Longship Landing
+				-- TODO: Vrykul
+				["sourceQuests"] = { 84725 },	-- The Circlet Calls
+				["provider"] = { "n", 228096 },	-- Dawn
+				["coord"] = { 69.1, 43.0, SIREN_ISLE },
+				["isWeekly"] = true,
+			}),
 			q(84619, {	-- Ooker Dooker Literature Club
 				-- TODO: Pirates
 				["sourceQuests"] = { 84725 },	-- The Circlet Calls
@@ -242,21 +253,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["coord"] = { 71.0, 39.6, SIREN_ISLE },
 				["isWeekly"] = true,
 				["g"] = {
-					i(231812), -- Hozen Poetry (QI!)
+					i(231812),	-- Hozen Poetry (QI!)
 					n(232825, {	-- First Mate Dat-Dat
 						i(231809),	-- First Mate Dat-Dat's Key (QI!)
 					}),
 					o(477098, {	-- Bilge Rat Trunk
-						i(231786), -- Ookler's Diary (QI!)
+						i(231786),	-- Ookler's Diary (QI!)
 					}),
 					o(477366, {	-- Dat-Dat's Book Stash
-						i(231802), -- Ashvane Co. Survey Report (QI!)
+						i(231802),	-- Ashvane Co. Survey Report (QI!)
 					}),
 					o(477612, {	-- Siren Isle Manifest
-						i(231813), -- Siren Isle Manifest (QI!)
+						i(231813),	-- Siren Isle Manifest (QI!)
 					}),
 					o(477248, {	-- Songs of the Siren
-						i(231788), -- Songs of the Siren (QI!)
+						i(231788),	-- Songs of the Siren (QI!)
 					}),
 				},
 			}),
@@ -275,6 +286,35 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					}),
 				},
 			}),
+			q(84680, {	-- Rock 'n Stone Revival
+				-- TODO: Vrykul
+				["sourceQuests"] = { 84725 },	-- The Circlet Calls
+				["provider"] = { "n", 228096 },	-- Dawn
+				["coord"] = { 69.1, 43.0, SIREN_ISLE },
+				["isWeekly"] = true,
+				["g"] = {
+					i(228988),	-- Rock Reviver (QI!)
+				},
+			}),
+			q(85589, {	-- Ruffled Pages
+				-- TODO: Naga
+				["sourceQuests"] = { 84725 },	-- The Circlet Calls
+				["provider"] = { "n", 229716 },	-- Stellin Verasa
+				["coord"] = { 71.0, 39.6, SIREN_ISLE },
+				["isWeekly"] = true,
+				["g"] = {
+					o(487825, {	-- Ruffled Pages
+						i(232361),	-- Ruffled Pages (QI!)
+					}),
+				},
+			}),
+			q(84222, {	-- Secure the Perimeter
+				-- TODO: Vrykul
+				["sourceQuests"] = { 84725 },	-- The Circlet Calls
+				["provider"] = { "n", 227796 },	-- Sky-Captain Elaena Lancekat
+				["coord"] = { 69.4, 42.8, SIREN_ISLE },
+				["isWeekly"] = true,
+			}),
 			q(83827, {	-- Silence the Song
 				-- TODO: Pirates
 				["sourceQuests"] = { 84725 },	-- The Circlet Calls
@@ -284,6 +324,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["g"] = {
 					i(226261),	-- Sonic Scrambler (QI!)
 				},
+			}),
+			q(84627, {	-- Three Heads of the Deep
+				-- TODO: Naga
+				["sourceQuests"] = { 84725 },	-- The Circlet Calls
+				["provider"] = { "n", 227796 },	-- Sky-Captain Elaena Lancekat
+				["coord"] = { 69.4, 42.8, SIREN_ISLE },
+				["isWeekly"] = true,
 			}),
 			q(84225, {	-- Eggstinction
 				-- TODO: STORM PHASE
@@ -345,7 +392,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["provider"] = { "n", 229716 },	-- Stellin Verasa
 				["coord"] = { 71.0, 39.6, SIREN_ISLE },
 				["g"] = {
-					i(232694), -- Transcribed Kul Tiran Journal [book]
+					i(232694),	-- Transcribed Kul Tiran Journal [book]
 				},
 			}),
 			-- Snapdragon
@@ -378,6 +425,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					-- It require some meat (in quest description but not on ptr)
 				},
 			}),
+			--[[
+			-- Birdy
+			-- commenting it out cause parser to throw System.ArgumentOutOfRangeException: index out of reach
+			q(85811, {	-- Thrayir, Eyes of the Siren
+				["sourceQuests"] = {
+				--	TODO: hqts as sourceQuest since you cannot take this quest without unlocking them
+				--	probably gonna need to add as cost runekeys, dunno
+					85800,	-- Cyclonic (spellID 471163)
+					85803,	-- Thunderous (spellID 471169)
+					85801,	-- Torrential (spellID 471166)
+					85799,	-- Turbulent (spellID 471162)
+					85802,	-- Whirling (spellID 471167)
+				},
+				["provider"] = { 233582 },	-- Thrayir, Eyes of the Siren
+				["coord"] = { 72.5, 61.3, 2375 },
+				["g"] = {
+					i(232639),	-- Thrayir, Eyes of the Siren (MOUNT!)
+				},
+			}),]]--
 			--- Stay awhile and listen ---
 			hqt(85103, {	-- Stay awhile and listen: Apprentice Tanmar
 				["name"] = "Stay awhile and listen: Apprentice Tanmar",
@@ -406,7 +472,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			n(QUESTS, {
 				-- Citrine unlocks on vendors
 				q(85707),	-- Legendary Skipper's Citrine unlock (speculation was cross fire with rare kill (84797))
-				--q(85708),	-- Seabed Leviathan's Citrine but I'm not sure
+				q(85708),	-- Seabed Leviathan's Citrine unlock
+				q(85709),	-- Roaring War-Queen's Citrine unlock
 				q(85672),	-- Mariner's Hallowed Citrine unlock (speculation based on questID range, need more data)
 				q(85669),	-- Thunderlord's Crackling Citrine unlock (speculation based on questID range, need more data)
 				q(85675),	-- Windsinger's Runed Citrine unlock (according to spellID should also fire 85765 with spellID 470833 but it is not)				
@@ -434,14 +501,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				--
 				q(85070),	-- when Special Assigment npc unlocked for storm phase (pop talking head)
 				-- Some interaction with gems on terrain during storm phase, reward you with Turbulent Fragment (itemID 234327)
-				q(86437),	-- missing objectID or npcID? @ 67.1, 78.5 (spellID 1213217 - Take Fragment)
+				q(86437),	-- after interact with Runic Fragment (npcID 234934) @ 67.1, 78.5 (spellID 1213217 - Take Fragment)
 				q(86435),	-- after interact with Runic Fragment (npcID 234934) @ 52.6, 38.7 / was able to loot it again but didn't fire questID
 				q(86436),	-- after interact with Dirt Pile (npcID 235134) @ 38.2, 51.8
 				-- Runestone activation questIDs in The Forgotten Vault (stormed phase) for Thrayir, Eyes of the Siren (npcID 233540)
 				q(85800),	-- Cyclonic (spellID 471163)
 				q(85803),	-- Thunderous (spellID 471169)
 				q(85801),	-- Torrential (spellID 471166)
-				--q(85799),	-- Turbulent (spellID 471162) (bugged on ptr - you can't create this key, cannot confirm questID)
+				q(85799),	-- Turbulent (spellID 471162)
 				q(85802),	-- Whirling (spellID 471167)
 				-- Snapdragon timer after quest
 				q(86566),	-- [DNT] Snapdragon Progress Update (spellID 1214684)

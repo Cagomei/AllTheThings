@@ -277,7 +277,6 @@ root(ROOTS.Unsorted, {
 			i(233361),	-- Wind-Up Wuffi
 			i(233366),	-- Wind-Up Woofer
 			i(233447),	-- Marmaduke's "Ducky Friend"
-			i(233486),	-- Arathi Crate
 			i(233489),	-- [PH] Multi-color Snapdragon
 			i(233493),	-- [PH] Snapdragon Treat 01
 			i(233494),	-- [PH] Snapdragon Treat 02
@@ -290,7 +289,6 @@ root(ROOTS.Unsorted, {
 			i(233650),	-- Call Galefeather
 			i(233800),	-- [PH] Chris' Flavor Test Item
 			i(233811),	-- [PH] Legs
-			i(233812),	-- [PH] Arathi Youngling's Training Sword
 			i(233814),	-- [PH] Sailor's Mop
 			i(233815),	-- [PH] Sailor's Mop
 			i(233820),	-- [PH] Iron Mallet
@@ -298,9 +296,7 @@ root(ROOTS.Unsorted, {
 			i(233823),	-- [PH] Arathor Mallet
 			i(233825),	-- [PH] Crafter's Tool
 			i(233827),	-- [PH] Crafter's Mallet
-			i(233828),	-- [PH] Arathor Brush
 			i(233831),	-- [PH] Fletcher's Blade
-			i(233834),	-- [PH] Crystalline Ritual Blade
 			i(233835),	-- [PH] Arathor Tongs
 			i(233836),	-- [PH] Arathor Chisel
 			i(233838),	-- [PH] Chest
@@ -370,15 +366,6 @@ root(ROOTS.Unsorted, {
 			i(233909),	-- [PH] Head
 			i(233913),	-- [PH] Shield
 			i(233914),	-- [PH] Lumberjack's Hatchet
-			i(233917),	-- [PH] Head
-			i(233918),	-- [PH] Head
-			i(233919),	-- [PH] Head
-			i(233920),	-- [PH] Head
-			i(233921),	-- [PH] Head
-			i(233922),	-- [PH] Head
-			i(233923),	-- [PH] Shoulder
-			i(233924),	-- [PH] Shoulder
-			i(233925),	-- [PH] Shoulder
 			i(233926),	-- [PH] Shoulder
 			i(233927),	-- [PH] Shoulder
 			i(233928),	-- [PH] Tabard
@@ -455,7 +442,6 @@ root(ROOTS.Unsorted, {
 			i(234247),	-- Glyph of the Gilded Pistol Shot
 			i(234248),	-- Glyph of the Twilight Pistol Shot
 			i(234282),	-- Decorative Yard Flamingo
-			i(234287),	-- Radiant Focus
 			i(234313),	-- [DNT] Item
 			i(234328),	-- Torrential Fragment
 			i(234379),	-- Crackleroar
@@ -484,11 +470,9 @@ root(ROOTS.Unsorted, {
 			i(234453),	-- Swabbie's Lockbox
 			i(234455),	-- Storm-flecked Debris
 			i(234456),	-- Crystal-splintered Rubble
-			i(234466),	-- Tattered Arathi Prayer Scroll
 			i(234470),	-- Forgemaster's Focus
 			i(234471),	-- Earthen Device
 			i(234472),	-- Earthen Crystal
-			i(234473),	-- Slightly Comfortable Chair
 		})),
 		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 			filter(BATTLE_PETS, {

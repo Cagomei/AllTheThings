@@ -4,5 +4,6 @@ HALLOWFALL_ARATHI = createHeader({
 	text = {
 		en = "Hallowfall Arathi",
 		cn = "陨圣峪阿拉希人",
+		ru = "Арати Тайносводья",
 	},
 });

@@ -4,5 +4,6 @@ COUNCIL_OF_DORNOGAL = createHeader({
 	text = {
 		en = "Council of Dornogal",
 		cn = "多恩诺加尔议会",
+		ru = "Совет Дорногала",
 	},
 });
