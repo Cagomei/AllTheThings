@@ -169,6 +169,7 @@ local MobileNPCDB = {
 	 [88026] = true,	-- John J. Keeshan
 	 [88027] = true,	-- Impsy
 	[101527] = true,	-- Blingtron 6000
+	[105637] = true,	-- Scowling Rosa <Texts and Specialty Goods>
 	[115785] = true,	-- Direbeak Hatchling
 	[117475] = true,	-- Lord Darius Crowley
 	[145005] = true,	-- Lor'themar Theron

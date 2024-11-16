@@ -615,13 +615,11 @@ root(ROOTS.Unsorted, {
 				i(224194),	-- Fashion Frenzy Ribbon
 				i(225252),	-- Bronze Celebration Token
 				-- Secret
-				i(229411),	-- Normal Feather
 				i(228782),	-- PH - Sandbox Wolf
 				i(228783),	-- PH - Sandbox Horse
 				i(228910),	-- Cache of Nerubian Treasures
 				i(229165),	-- Quest Journal
 				i(229414),	-- Moira Thaurissan's Hammer
-				i(229958),	-- Decorated Feather
 				i(230283),	-- Weird Egg
 			}),
 			n(DUNGEONS_AND_RAIDS, {	-- Timewalking Dungeon Gear

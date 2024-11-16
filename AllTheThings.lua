@@ -6102,83 +6102,39 @@ function app:GetDataCache()
 	-- app.PrintDebugPrior("Ended Cache Prime")
 	-- app.PrintMemoryUsage()
 
-	-- Parameters for hidden windows
-	local nyiParams = {L.NEVER_IMPLEMENTED, "status-unobtainable", L.NEVER_IMPLEMENTED_DESC, "NeverImplemented"}
-	local hatParams = {L.HIDDEN_ACHIEVEMENT_TRIGGERS, "Category_Achievements", L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC, "HiddenAchievementTriggers", { _hqt = true, _nosearch = true, Color = app.Colors.ChatLinkHQT }}
-	local hctParams = {L.HIDDEN_CURRENCY_TRIGGERS, "Interface_Vendor", L.HIDDEN_CURRENCY_TRIGGERS_DESC, "HiddenCurrencyTriggers", { _hqt = true, _nosearch = true, Color = app.Colors.ChatLinkHQT }}
-	local hqtParams = {L.HIDDEN_QUEST_TRIGGERS, "Interface_Quest", L.HIDDEN_QUEST_TRIGGERS_DESC, "HiddenQuestTriggers", { _hqt = true, _nosearch = true, Color = app.Colors.ChatLinkHQT }}
-	local sourcelessParams = {L.SOURCELESS, "WindowIcon_Unsorted", L.SOURCELESS_DESC, "Sourceless", { _missing = true, _unsorted = true, _nosearch = true, Color = app.Colors.TooltipWarning }}
-	local unsortedParams = {L.UNSORTED, "WindowIcon_Unsorted", L.UNSORTED_DESC, "Unsorted", { _missing = true, _unsorted = true, _nosearch = true }}
-	local hiddenWindowParams = {L.HIDDEN_CATEGORIES, "WindowIcon_Unsorted", L.HIDDEN_CATEGORIES, "HiddenCategories"}
-	local allParams = {nyiParams, hatParams, hctParams, hqtParams, sourcelessParams, unsortedParams}
-
 	-- Function to build a hidden window's data
 	local function BuildHiddenWindowData(name, icon, description, category, flags)
-		if category ~= "HiddenCategories" then
-			if not app.Categories[category] then return end
+		if not app.Categories[category] then return end
 
-			local windowData = app.CreateRawText(Colorize(name, flags and flags.Color or app.Colors.ChatLinkError), app.Categories[category])
-			windowData.title = name .. DESCRIPTION_SEPARATOR .. app.Version
-			windowData.icon = app.asset(icon)
-			windowData.description = description
-			windowData.font = "GameFontNormalLarge"
-			for k, v in pairs(flags or app.EmptyTable) do
-				windowData[k] = v
-			end
-
-			CacheFields(windowData, true)
-
-			-- Filter for Never Implemented things
-			if category == "NeverImplemented" then
-				app.AssignFieldValue(windowData, "u", 1)
-			end
-
-			local window = app:GetWindow(category)
-			window.AdHoc = true
-			window:SetData(windowData)
-			window:BuildData()
-		elseif category == "HiddenCategories" then
-			local g = {}
-			local windowData = app.CreateRawText(name, {
-				title = name .. DESCRIPTION_SEPARATOR .. app.Version,
-				icon = app.asset(icon),
-				description = description,
-				font = "GameFontNormalLarge",
-				g = g,
-			})
-
-			for _, params in ipairs(allParams) do
-				local db = app.CreateRawText(params[1])
-				db.icon = app.asset(params[2])
-				db.description = params[3]
-				db.g = app.Categories[params[4]]
-				for k, v in pairs(params[5] or app.EmptyTable) do
-					db[k] = v
-				end
-				tinsert(g, db)
-				CacheFields(db, true)
-
-				-- Filter for Never Implemented things
-				if params[4] == "NeverImplemented" then
-					app.AssignFieldValue(db, "u", 1)
-				end
-			end
-
-			local window = app:GetWindow("HiddenCategories")
-			window.AdHoc = true
-			window:SetData(windowData)
-			window:BuildData()
+		local windowData = app.CreateRawText(Colorize(name, flags and flags.Color or app.Colors.ChatLinkError), app.Categories[category])
+		windowData.title = name .. DESCRIPTION_SEPARATOR .. app.Version
+		windowData.icon = app.asset(icon)
+		windowData.description = description
+		windowData.font = "GameFontNormalLarge"
+		for k, v in pairs(flags or app.EmptyTable) do
+			windowData[k] = v
 		end
+
+		CacheFields(windowData, true)
+
+		-- Filter for Never Implemented things
+		if category == "NeverImplemented" then
+			app.AssignFieldValue(windowData, "u", 1)
+		end
+
+		local window = app:GetWindow(category)
+		window.AdHoc = true
+		window:SetData(windowData)
+		window:BuildData()
 	end
 
 	-- Build all the hidden window's data
-	BuildHiddenWindowData(unpack(nyiParams))
-	BuildHiddenWindowData(unpack(hatParams))
-	BuildHiddenWindowData(unpack(hctParams))
-	BuildHiddenWindowData(unpack(hqtParams))
-	BuildHiddenWindowData(unpack(sourcelessParams))
-	BuildHiddenWindowData(unpack(unsortedParams))
-	BuildHiddenWindowData(unpack(hiddenWindowParams))
+	BuildHiddenWindowData(L.UNSORTED, "WindowIcon_Unsorted", L.UNSORTED_DESC, "Unsorted", { _missing = true, _unsorted = true, _nosearch = true })
+	BuildHiddenWindowData(L.NEVER_IMPLEMENTED, "status-unobtainable", L.NEVER_IMPLEMENTED_DESC, "NeverImplemented", { _nyi = true, _nosearch = true })
+	BuildHiddenWindowData(L.HIDDEN_ACHIEVEMENT_TRIGGERS, "Category_Achievements", L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC, "HiddenAchievementTriggers", { _hqt = true, _nosearch = true, Color = app.Colors.ChatLinkHQT })
+	BuildHiddenWindowData(L.HIDDEN_CURRENCY_TRIGGERS, "Interface_Vendor", L.HIDDEN_CURRENCY_TRIGGERS_DESC, "HiddenCurrencyTriggers", { _hqt = true, _nosearch = true, Color = app.Colors.ChatLinkHQT })
+	BuildHiddenWindowData(L.HIDDEN_QUEST_TRIGGERS, "Interface_Quest", L.HIDDEN_QUEST_TRIGGERS_DESC, "HiddenQuestTriggers", { _hqt = true, _nosearch = true, Color = app.Colors.ChatLinkHQT })
+	BuildHiddenWindowData(L.SOURCELESS, "WindowIcon_Unsorted", L.SOURCELESS_DESC, "Sourceless", { _missing = true, _unsorted = true, _nosearch = true, Color = app.Colors.TooltipWarning })
 
 	-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
 	-- app.PrintDebug("Finished loading data cache")
@@ -11253,9 +11209,6 @@ SlashCmdList.AllTheThings = function(cmd)
 			return true;
 		elseif cmd == "sourceless" then
 			app:GetWindow("Sourceless"):Toggle();
-			return true;
-		elseif cmd == "hidden" then
-			app:GetWindow("HiddenCategories"):Toggle();
 			return true;
 		elseif cmd:sub(1, 4) == "mini" then
 			app:ToggleMiniListForCurrentZone();

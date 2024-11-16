@@ -2583,17 +2583,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 				Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
 					CommonBossDrops({
-						i(231510),	-- Timewarped Relic Coffer Key
+						i(231510, {	-- Timewarped Relic Coffer Key
+							["description"] = "You can only loot 120 keys per difficulty per character for the entire event.",
+						}),
 					}),
 				}),
 				Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 					CommonBossDrops({
-						i(232365),	-- Timewarped Relic Coffer Key
+						i(232365, {	-- Timewarped Relic Coffer Key
+							["description"] = "You can only loot 120 keys per difficulty per character for the entire event.",
+						}),
 					}),
 				}),
 				Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 					CommonBossDrops({
-						i(232366),	-- Timewarped Relic Coffer Key
+						i(232366, {	-- Timewarped Relic Coffer Key
+							["description"] = "You can only loot 120 keys per difficulty per character for the entire event.",
+						}),
 					}),
 				}),
 			},
@@ -3470,6 +3476,7 @@ what is the highest rank that can be bestowed on a night elf watcher? Warden
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_5 } }, {
 	n(WOW_ANNIVERSARY_TWENTY, {
+		q(84309),	-- Bonus chance for Reins of the Heavenly Onyx Cloud Serpent from Sha of Anger on first kill per day
 		q(84312),	-- Bonus chance for Grand Black War Mammoth from Doomwalker/Archavon on first kill per day
 		q(86398),	-- Bonus chance for ? mount (need more data) from Doomwalker on first kill per day
 		q(85723),	-- first WB kill of day/event or maybe Doomwalker

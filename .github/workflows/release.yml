@@ -4,9 +4,9 @@ name: Release
 
 # Controls when the action will run.
 on:
-  # Package alpha version at 06:00 UTC every Thursday
+  # Package alpha version at 06:00 UTC everyday
   schedule:
-    - cron: '0 6 * * THU'
+    - cron: '0 6 * * *'
   # Triggers the workflow on tag events
   push:
     tags: '*'
@@ -37,7 +37,7 @@ jobs:
         with:
             name: db-output  # Artifact name
             path: db/  # File path to upload
-            retention-days: 1
+            retention-days: 7
 
   release-linux:
     runs-on: ubuntu-latest

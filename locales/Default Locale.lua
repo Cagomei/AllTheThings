@@ -546,8 +546,6 @@ local L = setmetatable({
 	-- Windows
 	HIDDEN_ACHIEVEMENT_TRIGGERS = "Hidden Achievement Triggers";
 	HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "These are Achievements which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
-	HIDDEN_CATEGORIES = "Hidden Categories";
-	HIDDEN_CATEGORIES_DESC = "These are Hidden Categories. None of these things are meant to be tracked for normal in-game collection";
 	HIDDEN_CURRENCY_TRIGGERS = "Hidden Currency Triggers";
 	HIDDEN_CURRENCY_TRIGGERS_DESC = "These are Currencies which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
 	HIDDEN_QUEST_TRIGGERS = "Hidden Quest Triggers";

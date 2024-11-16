@@ -297,7 +297,6 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 163329 },	-- Ghostwolf
 					["coord"] = { 52.3, 55.6, EXILES_REACH },
 					["g"] = {
-						i(174947),	-- Old Grimoire (QI!)
 						i(174968),	-- Veil Blossom (QI!)
 					},
 				}),
