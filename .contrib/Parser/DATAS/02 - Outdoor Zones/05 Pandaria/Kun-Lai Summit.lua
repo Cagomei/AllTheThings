@@ -313,6 +313,7 @@ root(ROOTS.Zones, {
 					exploration(6114),	-- Mogujia
 					exploration(6185),	-- Mount Neverest
 					exploration(6100),	-- Muskpaw Ranch
+					visit_exploration(6180,{coord={44.7,52.2,KUN_LAI_SUMMIT}}),    -- Neverest Pinnacle
 					exploration(6085),	-- One Keg
 					exploration(6081),	-- Peak of Serenity
 					exploration(6294),	-- Shado-Li Basin

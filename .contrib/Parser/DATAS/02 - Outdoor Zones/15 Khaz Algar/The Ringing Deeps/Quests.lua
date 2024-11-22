@@ -175,8 +175,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(219460),	-- Earthen Traveler's Handaxe
 						i(219463),	-- Earthen Traveler's Javelin
 						i(219457),	-- Earthen Traveler's Saber
-						i(219456),	-- Earthen Traveler's Scepter
-						i(219455),	-- Earthen Traveler's Shield
 						i(219459),	-- Earthen Traveler's Staff
 					},
 				}),
@@ -736,8 +734,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 225583 },	-- Machinist Kilton
 					["coord"] = { 41.1, 21.4, THE_RINGING_DEEPS },
-					-- Same loot table as from 'New Candle, New Hope'
-					["sym"] = {{"select","questID",78642},{"pop"}},	-- New Candle, New Hope
+					["g"] = {
+						i(219464),	-- Earthen Traveler's Boomstick
+						i(219466),	-- Earthen Traveler's Chopper
+						i(219462),	-- Earthen Traveler's Claymore
+						i(219465),	-- Earthen Traveler's Crossbow
+						i(219458),	-- Earthen Traveler's Dagger
+						i(219467),	-- Earthen Traveler's Fist
+						i(219461),	-- Earthen Traveler's Gavel
+						i(219460),	-- Earthen Traveler's Handaxe
+						i(219463),	-- Earthen Traveler's Javelin
+						i(219457),	-- Earthen Traveler's Saber
+						i(219456),	-- Earthen Traveler's Scepter
+						i(219455),	-- Earthen Traveler's Shield
+						i(219459),	-- Earthen Traveler's Staff
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.09, {	-- Kobold Candles

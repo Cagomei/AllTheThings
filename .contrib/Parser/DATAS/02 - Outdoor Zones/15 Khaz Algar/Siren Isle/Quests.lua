@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			q(84940, {	-- Friendly Competition
 				["sourceQuests"] = { 84720 },	-- To the Siren Isle!
 				["provider"] = { "n", 230235 },	-- Skaggit
-				["coord"] = { 69.2, 48.0, SIREN_ISLE },
+				["coord"] = { 70.3, 52.4, SIREN_ISLE },
 			}),
 			q(84721, {	-- To Scan a Crystal
 				["sourceQuests"] = { 84720 },	-- To the Siren Isle!
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 						i(232861),	-- Singing Fragments (QI!)
 					}),
 					o(499863, {	-- Runed Storm Cache
-						i(232862),	-- Singing Fragments (QI!) 
+						i(232862),	-- Singing Fragments (QI!)
 					}),
 					--spell(472051),	-- Runecaster's Eye
 					--
@@ -111,7 +111,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 						i(232861),	-- Singing Fragments (QI!)
 					}),
 					o(500689, {	-- Seafarer's Cache
-						i(232862),	-- Singing Fragments (QI!) 
+						i(232862),	-- Singing Fragments (QI!)
 					}),
 					--spell(470197),	-- Blessing of the Seadweller
 					--
@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["g"] = {
 					i(232860),	-- Singing Fragments (QI!)
 					i(232861),	-- Singing Fragments (QI!)
-					i(232862),	-- Singing Fragments (QI!) 
+					i(232862),	-- Singing Fragments (QI!)
 					--spell(470169),	-- Thieves of the Siren
 					--
 					i(229365),	-- Raw Singing Citrine
@@ -169,8 +169,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				-- TODO: it look like SHOULD BE same as all weekly quests but it is not marked as such in-game
 				["sourceQuests"] = { 84725 },	-- The Circlet Calls
 				["provider"] = { "n", 232255 },	-- Benny Springjet
-				["coord"] = { 41.9, 68.0, SIREN_ISLE },
-				--["isWeekly"] = true,
+				["coord"] = { 42.3, 49.1, SIREN_ISLE },
 				["g"] = {
 					i(230795),	-- Experimental Go-Pack (QI!)
 				},
@@ -281,12 +280,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					o(456869, {	-- Kaja'Cola Stash
 						i(227453),	-- Kaja'Cola Stash (QI!)
 					}),
-					o(457143, {	-- 
+					o(457143, {	-- Kaja'Cola Can
 						i(227670),	-- Kaja'Cola Can (QI!)
 					}),
 				},
 			}),
-			q(84680, {	-- Rock 'n Stone Revival
+			q(84680, {	-- Rock 'n' Stone Revival
 				-- TODO: Vrykul
 				["sourceQuests"] = { 84725 },	-- The Circlet Calls
 				["provider"] = { "n", 228096 },	-- Dawn
@@ -377,9 +376,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["provider"] = { "n", 229716 },	-- Stellin Verasa
 				["coord"] = { 71.0, 39.6, SIREN_ISLE },
 				["g"] = {
-					o(499443, {	-- Faded Journal Page
-						i(232651),	-- Faded Journal Page (QI!) 
-					}),
+					i(235543),	-- Faded Journal Page (QI!)
+					i(235545),	-- Stained Journal Page (QI!)
+					i(235544),	-- Soggy Journal Page (QI!)
+					i(235546),	-- Torn Journal Page (QI!)
+					i(235547),	-- Weathered Journal Page (QI!)
+					--o(499443, {	-- Faded Journal Page
+					--	i(232651),	-- Faded Journal Page (QI!)
+					--	changed for some reason?
+					--}),
 				},
 			}),
 			q(85572, {	-- A Group Effort
@@ -405,11 +410,26 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				},
 			}),
 			q(86483, {	-- Snap To It
-				--["sourceQuests"] = { 86486 },	-- Hungry, Hungry Snapdragon (TODO: It take 2 (same) dailies for this quest to pop)
+				["sourceQuests"] = {
+					85573,	-- A Lifeline
+					--86486,	-- Hungry, Hungry Snapdragon (TODO: It take 2 (same) dailies for this quest to pop)
+				},
 				["provider"] = { "n", 235237 },	-- Growing Snapdragon Runt
 				["coord"] = { 70.9, 48.6, SIREN_ISLE },
 				["g"] = {
 					i(234443),	-- Meaty Ration (QI!)
+				},
+			}),
+			q(86484, {	-- Temper Like A Tempest
+				["sourceQuests"] = {
+					86483,	-- Snap To It
+					--86486,	-- Hungry, Hungry Snapdragon (TODO: It take 2 (same) dailies for this quest to pop)
+				},
+				["provider"] = { "n", 235243 },	-- Maturing Prismatic Snapdragon
+				["coord"] = { 70.9, 48.6, SIREN_ISLE },
+				["g"] = {
+					i(234592),	-- Storminfused Mystery Meat (QI!)
+					-- TODO: doesn't exist in loot table on ptr (57528), cannot progress further
 				},
 			}),
 			q(86486, {	-- Hungry, Hungry Snapdragon
@@ -418,6 +438,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["providers"] = {
 					{ "n", 235237 },	-- Growing Snapdragon Runt
 					{ "n", 235243 },	-- Maturing Prismatic Snapdragon
+					{ "n", 235250 },	-- Maturing Prismatic Snapdragon
 				},
 				["coord"] = { 70.9, 48.6, SIREN_ISLE },
 				["isDaily"] = true,
@@ -425,9 +446,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					-- It require some meat (in quest description but not on ptr)
 				},
 			}),
-			--[[
-			-- Birdy
-			-- commenting it out cause parser to throw System.ArgumentOutOfRangeException: index out of reach
+			-- Birdy (move to special?)
 			q(85811, {	-- Thrayir, Eyes of the Siren
 				["sourceQuests"] = {
 				--	TODO: hqts as sourceQuest since you cannot take this quest without unlocking them
@@ -438,12 +457,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					85799,	-- Turbulent (spellID 471162)
 					85802,	-- Whirling (spellID 471167)
 				},
-				["provider"] = { 233582 },	-- Thrayir, Eyes of the Siren
+				["provider"] = { "n", 233582 },	-- Thrayir, Eyes of the Siren
 				["coord"] = { 72.5, 61.3, 2375 },
 				["g"] = {
 					i(232639),	-- Thrayir, Eyes of the Siren (MOUNT!)
 				},
-			}),]]--
+			}),
+			-- Marmaduke (move to special?)
+			q(86261, {	-- Homeward Bound to Safer Shores
+				["description"] = "You need to give Marmaduke the well loved squeky toy before to trigger this quest",
+				["sourceQuests"] = { 86240 },	-- HQT: give toy to Marmaduke
+				["provider"] = { "n", 234357 },	-- Marmaduke
+				["coord"] = { 68.3, 44.9, SIREN_ISLE },
+				["g"] = {
+					i(233056),	-- Marmaduke (PET!)
+				},
+			}),
 			--- Stay awhile and listen ---
 			hqt(85103, {	-- Stay awhile and listen: Apprentice Tanmar
 				["name"] = "Stay awhile and listen: Apprentice Tanmar",
@@ -463,6 +492,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["provider"] = { "n", 231997 },	-- Didi the Wrench
 				["coord"] = { 71.2, 45.9, SIREN_ISLE },
 			}),
+			--
+			hqt(86240, {	-- Give Marmaduke the well loved squeky toy
+				["name"] = "Give Marmaduke the Well Loved Squeaky Toy",
+				["cost"] = {{ "i", 233027, 1 }},	-- Well Loved Squeaky Toy
+				["provider"] = { "n", 234172 },	-- Marmaduke
+				["coord"] = { 42.5, 47.4, SIREN_ISLE },
+			}),
 		}),
 	}),
 })));
@@ -470,19 +506,40 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	m(KHAZ_ALGAR, {
 		m(SIREN_ISLE, {
 			n(QUESTS, {
-				-- Citrine unlocks on vendors
-				q(85707),	-- Legendary Skipper's Citrine unlock (speculation was cross fire with rare kill (84797))
-				q(85708),	-- Seabed Leviathan's Citrine unlock
-				q(85709),	-- Roaring War-Queen's Citrine unlock
-				q(85672),	-- Mariner's Hallowed Citrine unlock (speculation based on questID range, need more data)
-				q(85669),	-- Thunderlord's Crackling Citrine unlock (speculation based on questID range, need more data)
-				q(85675),	-- Windsinger's Runed Citrine unlock (according to spellID should also fire 85765 with spellID 470833 but it is not)				
-				-- Need more data / re-confirmation, questIDs are fires only IF it WAS LOOTED, it doesn't fire if you buy anything from vendor
-				-- plate stuff didn't trigger questIDs on druid:
-				-- Earthen Landlubber's Breastplate
-				-- Earthen Landlubber's Gauntlets
-				-- Earthen Landlubber's Sabatons
-				-- but it seems like try to give you pieces that you don't have
+				-- A Choir of Citrines achievement tracking quests
+				q(85674),	-- Storm Sewer's Citrine
+				q(85673),	-- Old Salt's Bardic Citrine
+				q(85672),	-- Mariner's Hallowed Citrine
+				q(85707),	-- Legendary Skipper's Citrine
+				q(85708),	-- Seabed Leviathan's Citrine
+				q(85709),	-- Roaring War-Queen's Citrine
+				q(85676),	-- Stormbringer's Runed Citrine
+				q(85677),	-- Fathomdweller's Runed Citrine
+				q(85675),	-- Windsinger's Runed Citrine
+				q(85669),	-- Thunderlord's Crackling Citrine
+				q(85670),	-- Undersea Overseer's Citrine
+				q(85671),	-- Squall Sailor's Citrine
+				--
+				q(85070),	-- when Special Assigment npc unlocked for storm phase (pop talking head)
+				-- Some interaction with gems on terrain during storm phase, reward you with Turbulent Fragment (itemID 234327)
+				q(86437),	-- after interact with Runic Fragment (npcID 234934) @ 67.1, 78.5 (spellID 1213217 - Take Fragment)
+				q(86435),	-- after interact with Runic Fragment (npcID 234934) @ 52.6, 38.7 / was able to loot it again but didn't fire questID
+				q(86436),	-- after interact with Dirt Pile (npcID 235134) @ 38.2, 51.8
+				-- Runestone activation questIDs in The Forgotten Vault (stormed phase) for Thrayir, Eyes of the Siren (npcID 233540)
+				q(85800),	-- Cyclonic (spellID 471163)
+				q(85803),	-- Thunderous (spellID 471169)
+				q(85801),	-- Torrential (spellID 471166)
+				q(85799),	-- Turbulent (spellID 471162)
+				q(85802),	-- Whirling (spellID 471167)
+				-- Snapdragon timer after quest
+				q(86566),	-- [DNT] Snapdragon Progress Update (spellID 1214684)
+				--
+				--Probably won't be on live:
+				--plate stuff didn't trigger questIDs on druid:
+				--Earthen Landlubber's Breastplate
+				--Earthen Landlubber's Gauntlets
+				--Earthen Landlubber's Sabatons
+				--but it seems like try to give you pieces that you don't have
 				--q(84874),	-- Conch Collector's Locket (itemID 229053) drop
 				--q(85956),	-- Cursed Pirate Skull (itemID 231116) drop
 				--q(84846),	-- Earthen Deckhand's Bindings (itemID 229026) drop
@@ -498,20 +555,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				--q(84873),	-- Earthen Scallywag's Implement (itemID 229188) from Crate of Bygone Riches (or just after opening crate?)
 				--q(85957),	-- Runecaster's Stormbound Rune (itemID 231118) drop / small rp after first stone during Buried Secrets (questID 84723)
 				--q(84875),	-- Scurvy Sailor's Ring (itemID 229051) drop from treasure chest (same objectID as for other one that didn't fire questIDs)
-				--
-				q(85070),	-- when Special Assigment npc unlocked for storm phase (pop talking head)
-				-- Some interaction with gems on terrain during storm phase, reward you with Turbulent Fragment (itemID 234327)
-				q(86437),	-- after interact with Runic Fragment (npcID 234934) @ 67.1, 78.5 (spellID 1213217 - Take Fragment)
-				q(86435),	-- after interact with Runic Fragment (npcID 234934) @ 52.6, 38.7 / was able to loot it again but didn't fire questID
-				q(86436),	-- after interact with Dirt Pile (npcID 235134) @ 38.2, 51.8
-				-- Runestone activation questIDs in The Forgotten Vault (stormed phase) for Thrayir, Eyes of the Siren (npcID 233540)
-				q(85800),	-- Cyclonic (spellID 471163)
-				q(85803),	-- Thunderous (spellID 471169)
-				q(85801),	-- Torrential (spellID 471166)
-				q(85799),	-- Turbulent (spellID 471162)
-				q(85802),	-- Whirling (spellID 471167)
-				-- Snapdragon timer after quest
-				q(86566),	-- [DNT] Snapdragon Progress Update (spellID 1214684)
 			}),
 		}),
 	}),

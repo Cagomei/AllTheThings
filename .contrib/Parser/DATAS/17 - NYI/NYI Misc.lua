@@ -1447,7 +1447,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(210223),	-- Unstable Element
 			i(208569),	-- Verdant Crest of Honor
 			i(208565),	-- Verdant Trophy of Conquest
-			i(210438),	-- Wisp Dust
 			i(208745),	-- Your Reward [DNT]
 		})),
 

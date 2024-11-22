@@ -3505,21 +3505,14 @@ root(ROOTS.Zones, {
 							["coord"] = { 62.0, 33.5, STORMSHIELD },
 							["g"] = {
 								i(111923, {	-- Secret of Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
-									["filterID"] = MISC,
-									["g"] = {
-										i(120136),		-- Recipe: Secrets of Draenor Inscription
-										recipe(169081),	-- War Paints
-										recipe(167950, {	-- Research: Warbinder's Ink
-											i(113992, {	-- Scribe's Research Notes
-												["filterID"] = MISC,
-											}),
-										}),
-										recipe(175390),	-- Laughing Tarot
-										recipe(175389),	-- Ocean Tarot
-										recipe(175392),	-- Savage Tarot
-										recipe(166669),	-- Card of Omens
-										recipe(178497),	-- Warbinder's Ink
-									},
+									i(120136),		-- Recipe: Secrets of Draenor Inscription
+									recipe(169081),	-- War Paints
+									recipe(167950),	-- Research: Warbinder's Ink
+									recipe(175390),	-- Laughing Tarot
+									recipe(175389),	-- Ocean Tarot
+									recipe(175392),	-- Savage Tarot
+									recipe(166669),	-- Card of Omens
+									recipe(178497),	-- Warbinder's Ink
 								}),
 								i(118605, {	-- Technique: Crystalfire Spellstaff
 									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription

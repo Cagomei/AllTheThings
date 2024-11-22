@@ -7,9 +7,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			faction(FACTION_THE_SEVERED_THREADS, {
 				ach(40838, {	-- The Severed Threads
 					["minReputation"] = { FACTION_THE_SEVERED_THREADS , 15 },	-- The Severed Threads Renown 15
+					["timeline"] = { REMOVED_11_0_7 },
+				}),
+				ach(41149, {	-- The Severed Threads
+					["minReputation"] = { FACTION_THE_SEVERED_THREADS , 15 },	-- The Severed Threads Renown 15
+					["timeline"] = { ADDED_11_0_7 },
 				}),
 				ach(40907, {	-- We Rise Anew
 					["minReputation"] = { FACTION_THE_SEVERED_THREADS , 25 },	-- The Severed Threads Renown 25
+					["timeline"] = { REMOVED_11_0_7 },
+				}),
+				ach(41164, {	-- We Rise Anew
+					["minReputation"] = { FACTION_THE_SEVERED_THREADS , 25 },	-- The Severed Threads Renown 25
+					["timeline"] = { ADDED_11_0_7 },
 				}),
 				title(567, {	-- Thread-Spinner
 					["minReputation"] = { FACTION_THE_SEVERED_THREADS , 25 },	-- The Severed Threads Renown 25

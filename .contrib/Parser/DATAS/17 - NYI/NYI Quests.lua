@@ -4771,7 +4771,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(54095),	--
 			q(54115),	--
 			q(54116),	--
-			q(54119),	-- Hartford Sternbach
 			q(54142),	--
 			q(54173),	--
 			q(54209),	--

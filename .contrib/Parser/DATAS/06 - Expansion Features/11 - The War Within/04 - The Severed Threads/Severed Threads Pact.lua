@@ -236,6 +236,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				q(81477, {	-- Armaments: Weaponry
 					["provider"] = { "n", 224170 },	-- Eirzay
 					["coord"] = { 58.1, 39.3, NERUBAR_LOWER },
+					["g"] = {
+						o(439474),	-- Queensguard Weaponry
+					},
 				}),
 				q(81490, {	-- Bounty: Balaxir the Bully
 					["provider"] = { "n", 224168 },	-- Eirzay
@@ -447,7 +450,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					["provider"] = { "n", 224195 },	-- Ru'murh
 					["coord"] = { 73.3, 50.9, NERUBAR },
 					["g"] = {
-						n(221116),	-- Mug of Screamer Venom
+						n(221116, {	-- Mug of Screamer Venom
+							["coord"] = { 77.7, 53.8, NERUBAR },
+						}),
 						o(439324, {	-- Discarded Artifacts
 							["coord"] = { 36.6, 28.1, NERUBAR },
 							["groups"] = { i(219347), },	-- Kaheti Etching (QI!)

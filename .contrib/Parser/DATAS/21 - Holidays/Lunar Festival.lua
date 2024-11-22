@@ -50,6 +50,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				title(43),				-- Elder
 			},
 		}),
+		ach(41130, {	-- Elders of Khaz Algar (automated!)
+			["timeline"] = { ADDED_11_0_7 },
+		}),
 		ach(17321, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Elders of the Dragon Isles
 			crit(57843, {
 				["_quests"] = { 73848 },	-- Iskaara Elder Shomkol
@@ -550,6 +553,40 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				VALE_OF_ETERNAL_BLOSSOMS,
 			},
 			["isBreadcrumb"] = true,
+			["isYearly"] = true,
+		}),
+
+		-- Elders of Khaz Algar
+		q(85929, {	-- Archivist Rubbleglint on The Isle of Dorn
+			["timeline"] = { ADDED_11_0_7 },
+			["isYearly"] = true,
+		}),
+		q(85930, {	-- Archivist Coppermoss on The Isle of Dorn
+			["timeline"] = { ADDED_11_0_7 },
+			["isYearly"] = true,
+		}),
+		q(85931, {	-- Archivist Farolt in The Ringing Deeps
+			["timeline"] = { ADDED_11_0_7 },
+			["isYearly"] = true,
+		}),
+		q(85932, {	-- Archivist Silsigra in The Ringing Deeps
+			["timeline"] = { ADDED_11_0_7 },
+			["isYearly"] = true,
+		}),
+		q(85933, {	-- Elder Knythall in Hallowfall
+			["timeline"] = { ADDED_11_0_7 },
+			["isYearly"] = true,
+		}),
+		q(85934, {	-- Elder Swornvow in Hallowfall
+			["timeline"] = { ADDED_11_0_7 },
+			["isYearly"] = true,
+		}),
+		q(85935, {	-- Elder Ikk'zivan in Azj-Kahet
+			["timeline"] = { ADDED_11_0_7 },
+			["isYearly"] = true,
+		}),
+		q(85936, {	-- Elder Ikk'xataz in Azj-Kahet
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 

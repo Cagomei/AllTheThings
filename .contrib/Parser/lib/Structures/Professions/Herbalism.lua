@@ -104,7 +104,6 @@ MOP_HERBALISM = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 }));
 DRAENOR_HERBALISM = applyclassicphase(WOD_PHASE_ONE, i(111350, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This can drop from any herb gathering node on Draenor.",
-	["filterID"] = MISC,
 	["g"] = {
 		r(158745, {	-- Herb Gathering (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },

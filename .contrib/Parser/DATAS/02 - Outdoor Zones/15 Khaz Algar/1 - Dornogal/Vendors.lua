@@ -8,6 +8,15 @@ local ALGARI_TOKEN_OF_MERIT_S1 = 220769;
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(DORNOGAL, {
 		n(VENDORS, {
+			n(222561, {	-- Agmera <Dungeon Exploration Equipment>
+				["coord"] = { 53.8, 38.2, DORNOGAL },
+				["g"] = {
+					i(225948, {	-- Harbinger's Equipment Chest
+						["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0 },
+						["cost"] = {{ "c", 3008, 350 }},	-- 350x Valorstones
+					}),
+				},
+			}),
 			n(219036, {	-- Ardgaz <Token Exchange>
 				["coord"] = { 54.8, 42.5, DORNOGAL },
 				["g"] = {
@@ -380,33 +389,33 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					-- Season 1
 					-- Trade Down
 					i(221268, {	-- Pouch of Weathered Harbinger Crests
-						["description"] = "Cost: Normal Crest\nReceive: LFR Crest",
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						["cost"] = {{"c", CARVED_HARBINGER_CREST, 15}},
 					}),
 					i(221373, {	-- Satchel of Carved Harbinger Crests
-						["description"] = "Cost: Heroic Crest\nReceive: Normal Crest",
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						["cost"] = {{"c", RUNED_HARBINGER_CREST, 15}},
 					}),
 					i(221375, {	-- Pack of Runed Harbinger Crests
-						["description"] = "Cost: Mythic Crest\nReceive: Heroic Crest",
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						["cost"] = {{"c", GILDED_HARBINGER_CREST, 15}},
 					}),
 					-- Trade UP
 					i(220767, {	-- Triumphant Satchel of Carved Harbinger Crests
-						["description"] = "Cost: LFR Crest\nReceive: Normal Crest",
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						["cost"] = {{ "c", WEATHERED_HARBINGER_CREST, 90 }},
 					}),
 					i(220773, {	-- Celebratory Pack of Runed Harbinger Crests
-						["description"] = "Cost: Normal Crest\nReceive: Heroic Crest",
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Heroic Crest",
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						["cost"] = {{ "c", CARVED_HARBINGER_CREST, 90 }},
 					}),
 					i(220776, {	-- Glorious Cluster of Gilded Harbinger Crests
-						["description"] = "Cost: Heroic Crest\nReceive: Mythic Crest",
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Heroic Crest\nReceive: Mythic Crest",
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						["cost"] = {{ "c", RUNED_HARBINGER_CREST, 90 }},
 					}),

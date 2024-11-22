@@ -457,7 +457,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 50}}
 					}),
 					i(167881, {	-- Pattern: Belt of the Archmage
-						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 100}}
+						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 150}}
 					}),
 					i(167887, {	-- Pattern: Cindercloth Gloves
 						["cost"] = {{"i", EMBROIDERED_DEEP_SEA_SATIN, 75}}

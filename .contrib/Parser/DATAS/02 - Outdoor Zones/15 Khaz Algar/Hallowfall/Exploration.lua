@@ -6,6 +6,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		explorationHeader({
 			exploration(14921),	-- Beledar's Bounty
 			exploration(15038),	-- Cliffside Beacon
+			visit_exploration(15158,{coord={66.2,17.8,HALLOWFALL}}),    -- Coldshadow Cave
 			exploration(14922),	-- Dayspring Fields
 			exploration(14916),	-- Dunelle's Kindness
 			exploration(15326),	-- Growling Hollow
@@ -18,6 +19,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			exploration(14918),	-- Priory of the Sacred Flame
 			exploration(15337),	-- Priory of the Sacred Flame
 			exploration(14924),	-- Rumshackle
+			visit_exploration(15460,{coord={41.0,33.7,HALLOWFALL}}),    -- Sanctified Grounds
 			exploration(15176),	-- Sanguine Grasps
 			exploration(15032),	-- Shadowmire
 			exploration(15097),	-- Sina's Yearning

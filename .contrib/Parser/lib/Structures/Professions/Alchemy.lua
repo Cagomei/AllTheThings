@@ -272,7 +272,6 @@ MOP_ALCHEMY = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 }));
 DRAENOR_ALCHEMY = applyclassicphase(WOD_PHASE_ONE, i(109558, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This is a reward for completing the introductory Alchemy questline that can drop from any Draenor mob.",
-	["filterID"] = MISC,
 	["g"] = {
 		r(156606, {	-- Alchemy (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },

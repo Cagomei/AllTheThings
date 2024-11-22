@@ -29,7 +29,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				40955,	-- War Stories
 			}},
 			["groups"] = {
-				mount(473472),	-- Jani's Trashpile (MOUNT!)
+				i(235515),	-- Jani's Trashpile (MOUNT!)
 			},
 		})),
 		ach(13036),		-- A Loa of a Tale (automated)

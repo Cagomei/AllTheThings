@@ -36,7 +36,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(27978),	-- Soap on a Rope
 					i(200265),	-- Lucky Dragon's Claw
 					i(200268),	-- Crumbling Elemental Stone
-
 					i(203652),	-- Griftah's All-Purpose Embellishing Powder
 					i(200269),	-- Taliman of the Dragon Hoard
 					i(200271),	-- Infallible Hornswog Ward

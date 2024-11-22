@@ -224,6 +224,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 })));
 root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
 	n(PLUNDERSTORM, {
+		n(ACHIEVEMENTS, {
+			-- INFO: Sorted in ascending order of plunder to collect, just makes more sense this way
+			ach(41152),	-- Lub and Plunder
+			ach(41153),	-- Swabbie Swag
+			ach(41154),	-- Decked Out
+			ach(41156),	-- Buckled Up
+			ach(41157),	-- Plunder Siege
+			ach(41160),	-- It's a Plunderful Life
+		}),
 		n(PLUNDERSTORE, {
 			n(BATTLE_PETS, {
 				i(233251, {	-- Bubbles

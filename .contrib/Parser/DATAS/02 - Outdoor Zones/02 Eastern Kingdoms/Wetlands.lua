@@ -199,6 +199,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5074),	-- Slabchisel's Survey
 				-- #endif
 				exploration(1024),	-- Sundown Marsh
+				visit_exploration(5304,{coord={26.3,25.9,WETLANDS}}),    -- Swiftgear Station
 				-- #if BEFORE CATA
 				exploration(1025),	-- The Green Belt
 				-- #endif

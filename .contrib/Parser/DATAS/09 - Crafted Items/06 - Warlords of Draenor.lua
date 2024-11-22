@@ -669,6 +669,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			-- #ENDIF
 		}),
 		filter(MISC, {
+			sp(167950, {	-- Research: Warbinder's Ink
+				-- TODO: use this ItemID as 'provider' on Glyph recipes which can ONLY be learned from using it
+				i(113992),	-- Scribe's Research Notes
+				-- learned:
+				-- glyph of the geist
+			}),
 			i(202220, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Weapon Crystal
 			i(202221, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Weapon Crystal
 		}),

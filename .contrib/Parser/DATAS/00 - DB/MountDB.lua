@@ -1595,7 +1595,6 @@ i(190231, 366962);	-- Ash'adar, Harbinger of Dawn
 i(192800, 352926);	-- Skyskin Hornstrider
 --- NYI ---
 i(0, 369480);		-- Cerulean Marsh Hopper
-i(190767, 368126);	-- Armored Golden Pterrordax
 i(190539, 367620);	-- Coral-Stalker Waveray
 i(190168, 366789);	-- Crusty Crawler
 i(203226, 399708);	-- Stormfused Salamanther
@@ -1672,8 +1671,10 @@ i(210022, 424082);	-- Mimiron's Jumpjets
 -- PATCH 10.2.0 --
 ------------------
 i(210061, 424484);	-- Anu'relos, Flame's Guidance
+i(190767, 368126);	-- Armored Golden Pterrordax
 i(0, 418286);		-- Auspicious Arborwyrm
 i(209947, 423871);	-- Blossoming Dreamstag
+i(211074, 428005);	-- Jeweled Copper Scarab
 i(210919, 427435);	-- Crimson Glimmerfur
 i(210831, 427222);	-- Delugen
 i(210058, 424479);	-- Evening Sun Dreamsaber
@@ -1703,9 +1704,10 @@ i(210141, 424601);	-- [PH] Brown-Furred Spiky Bakar
 i(210143, 424608);	-- [PH] White-Furred Bakar
 i(210144, 424610);	-- [PH] Yellow-Furred Spiky Bakar
 i(210145, 424611);	-- [PH] YellowBlack-Furred Bakar
+-- #if BEFORE 11.0.5
 i(211075, 428013);	-- Deathbringer's Shadowcycle
+-- #endif
 i(211089, 428068);	-- Felreaver Deathcycle
-i(211074, 428005);	-- Jeweled Copper Scarab
 i(211086, 428065);	-- Jeweled Jade Scarab
 i(211085, 428062);	-- Jeweled Sapphire Scarab
 i(210140, 0);		-- [PH] Black-Furred Bakar
@@ -1803,7 +1805,6 @@ i(223470, 449141);	-- [PH] Alliance Wolf Mount Red
 i(223282, 448845);	-- [PH] Blue Old God Fish Mount
 i(221270, 446352);	-- [PH] Goblin Surfboard - Blue
 i(223460, 449133);	-- [PH] Nightsaber Horde Mount White
-i(224574, 453255);	-- Savage Ebony Battle Turtle
 i(223284, 448849);	-- Underlight Shorestalker
 
 ------------------
@@ -1815,7 +1816,6 @@ i(217987, 441325);	-- Remembered Wind Rider
 --- NYI ---
 i(0, 405623);		-- Armadillo Roller
 i(223570, 449416);	-- Ebonhide Ramolith
-i(226506, 459193);	-- Hand of Reshkigaal
 i(226044, 457659);	-- Plunderlord's Weathered Crocolisk
 i(223321, 448984);	-- [PH] ArathiLynxMount (Black Fur, Black Armor)
 i(223319, 448980);	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
@@ -1875,6 +1875,7 @@ i(223274, 447957);	-- Ferocious Jawcrawler
 i(223586, 449466);	-- Forged Gladiator's Fel Bat
 i(228751, 463025);	-- Gigantic Grrloc
 i(0, 457485);		-- Grizzly Hills Packmaster
+i(226506, 459193);	-- Hand of Reshkigaal
 i(223278, 448685);	-- Heritage Undercrawler
 i(224415, 452779);	-- Ivory Goliathus
 i(223286, 448850);	-- Kah, Legend of the Deep
@@ -1884,6 +1885,7 @@ i(223501, 449258);	-- Ol' Mole Rufus
 i(226040, 457650);	-- Plunderlord's Golden Crocolisk
 i(223158, 447160);	-- Raging Cinderbee
 i(223279, 448689);	-- Royal Court Undercrawler
+i(224574, 453255);	-- Savage Ebony Battle Turtle
 i(223314, 448939);	-- Shackled Shadow
 i(223266, 447190);	-- Shadowed Swarmite
 i(223571, 449418);	-- Shale Ramolith
@@ -1914,6 +1916,9 @@ i(228760, 463133);	-- Coldflame Tempest
 i(231374, 468353);	-- Enchanted Spellweave Carpet
 i(224398, 452643);	-- Frayfeather Hippogryph
 i(211087, 428067);	-- Hateforged Blazecycle
+-- #if AFTER 11.0.5
+i(0, 428013);		-- Incognitro, the Indecipherable Felcycle
+-- #endif
 i(223471, 449142);	-- Kaldorei War Wolf
 i(229418, 465235);	-- Trader's Gilded Brutosaur
 
@@ -1924,7 +1929,7 @@ i(234730, 1214946);	-- Broodling of Sinestra
 i(234740, 1214974);	-- Copper-Maned Quilen
 i(0, 303767);		-- Honeyback Hivemother
 i(233241, 471696);	-- Hooktalon
-i(0, 473472);		-- Jani's Trashpile
+i(235515, 473472);	-- Jani's Trashpile
 i(234716, 1214920);	-- Nightfall Skyreaver
 i(226042, 457656);	-- Plunderlord's Midnight Crocolisk
 i(233240, 437162);	-- Polly Roger
@@ -1934,11 +1939,11 @@ i(233243, 300154);	-- Silver Tidestallion
 i(233058, 473137);	-- Soweezi's Vintage Waveshredder
 i(232991, 472752);	-- The Breaker's Song
 i(232639, 471562);	-- Thrayir, Eyes of the Siren
+i(232624, 471538);	-- Timely Buzzbee
 i(234721, 1214940);	-- Ur'zul Fleshripper
 --- UNSORTED ---
 i(232901, 472253);	-- Lunar Launcher
 i(232926, 472479);	-- Love Witch's Sweeper
 i(233354, 473861);	-- Savage Alabaster Battle Turtle
 i(233019, 472489);	-- Sky Witch's Sweeper
-i(232624, 471538);	-- Timely Buzzbee
 i(233020, 472488);	-- Twilight Witch's Sweeper

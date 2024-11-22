@@ -1038,6 +1038,11 @@ exploration = function(id, t)							-- Create an EXPLORATION Object
 	end
 	return struct("explorationID", id, t);
 end
+visit_exploration = function(id, t)						-- Create an EXPLORATION Object (which fails to return in exploration API and must be visited manually for name-based area check to capture)
+	t = struct("explorationID", id, t);
+	t.collectible = false	-- only way to cache these is to visit manually -- too tedious :/
+	return t
+end
 faction = function(id, t)								-- Create a FACTION Object
 	return struct("factionID", id, t);
 end

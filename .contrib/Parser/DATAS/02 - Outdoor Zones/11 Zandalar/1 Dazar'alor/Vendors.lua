@@ -559,9 +559,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(161521, {	-- Goblin Sapper's Legguards
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(166444, {	-- Honorbound Scouting Map
-						["filterID"] = MISC,
-					}),
+					i(166444),	-- Honorbound Scouting Map
 					i(163779, {	-- Lil' War Machine (PET!)
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
@@ -670,7 +668,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["g"] = {
 					i(168025, {	-- Book of Schematics: Ub3r-Spanner
 						["sourceQuest"] = 53937,	-- The Ub3r-Spanner (H)
-						["filterID"] = MISC,
 						["g"] = {
 							r(282975),	-- The Ub3r-Spanner (RECIPE!)
 							r(283399),	-- Ub3r-Module: Short-Fused Bomb Bots (RECIPE!)

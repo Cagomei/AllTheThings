@@ -13,8 +13,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(48104, {	-- A Greater Challenge
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(54119, {	-- Hartford Sternbach
-			}),
 			q(47894, {	-- Jump Around
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -238,6 +236,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51844),	-- Gulliver
 			q(52167, {	-- Hardcore Raiders
 				["races"] = ALLIANCE_ONLY,
+			}),
+			q(54119, {	-- Hartford Sternbach
+				["races"] = HORDE_ONLY,
 			}),
 			q(52145, {	-- Heave-Ho!
 				["description"] = "This WQ doesn't show up on the map when active, plot waypoint to find the location!",

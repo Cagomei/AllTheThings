@@ -6,6 +6,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		explorationHeader({
 			exploration(13921),	-- Ancient Bough
 			exploration(13772),	-- Broadhoof Outpost
+			visit_exploration(14447,{coord={44.0,48.4,2023}}),    -- Deadsnare Caverns
 			exploration(13767),	-- Emberwatch
 			exploration(13669),	-- Emerald Gardens
 			exploration(13755),	-- Forkriver Crossing

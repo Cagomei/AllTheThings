@@ -1873,20 +1873,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			explorationHeader({
 				-- #if AFTER CATA
 				exploration(374),	-- Bladefist Bay
+				visit_exploration(365,{coord={54.50,19.20,VALLEY_OF_TRIALS}}),    -- Burning Blade Coven
+				visit_exploration(393,{coord={61.20,65.50,DUROTAR}}),    -- Darkspear Strand
 				exploration(4865),	-- Darkspear Training Grounds
-				exploration(375),	-- Deadeye Shore
+				visit_exploration(375,{coord={58.70,25.40,DUROTAR}}),	-- Deadeye Shore
 				exploration(370),	-- Drygulch Ravine
 				exploration(6453),	-- Echo Isles
 				exploration(368),	-- Echo Isles
+				visit_exploration(1297,{coord={50.40,19.00,DUROTAR}}),	-- Jaggedswine Farm
 				exploration(366),	-- Northwatch Foothold
 				exploration(1637),	-- Orgrimmar
 				exploration(362),	-- Razor Hill
+				visit_exploration(6747,{coord={52.50,45.50,DUROTAR}}),    -- Razor Hill Outskirts
+				visit_exploration(6750,{coord={50.30,39.50,DUROTAR}}),    -- Razor Hill Watchtower
 				exploration(816),	-- Razormane Grounds
 				exploration(410),	-- Razorwind Canyon
+				visit_exploration(1296,{coord={43.20,16.20,DUROTAR}}),    -- Rocktusk Farm
+				visit_exploration(373,{coord={60.60,61.10,DUROTAR}}),    -- Scuttle Coast
 				exploration(367),	-- Sen'jin Village
+				visit_exploration(6748,{coord={59.20,72.00,DUROTAR}}),    -- Sen'jin Village Outskirts
 				exploration(817),	-- Skull Rock
+				visit_exploration(879,{coord={37.80,20.70,DUROTAR}}),	-- Southfury River
 				exploration(4981),	-- Southfury Watershed
-				exploration(4982),	-- The Dranosh'ar Blockade
+				visit_exploration(4982),    -- The Dranosh'ar Blockade
 				exploration(369),	-- Thunder Ridge
 				exploration(372),	-- Tiragarde Keep
 				exploration(2979),	-- Tor'kren Farm

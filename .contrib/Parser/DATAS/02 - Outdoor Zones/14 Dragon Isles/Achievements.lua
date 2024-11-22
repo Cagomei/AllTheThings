@@ -662,7 +662,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				17756,	-- Loamm Niffen
 				19230,	-- Dream Wardens
 			}},
-			["timeline"] = { ADDED_10_2_0 },
+			["timeline"] = { ADDED_10_2_0, REMOVED_11_0_7 },
+		}),
+		ach(41184, {	-- Freshscales Fifteen
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				41171,	-- Friends in the Accord
+				41172,	-- Friends in the Field
+				41173,	-- Friend of the Family
+				41170,	-- Friends in the Plains
+				41175,	-- Friends in Loamm Places
+				41176,	-- Friends in the Dream
+			}},
+			["timeline"] = { ADDED_11_0_7 },
 		}),
 		ach(16585, {	-- Loremaster of the Dragon Isles
 			-- Meta Achievement

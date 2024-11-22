@@ -8,6 +8,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			exploration(13896),	-- Antecedent Isle
 			exploration(13758),	-- Arrangement Index
 			exploration(13791),	-- Catalyst Gardens
+			visit_exploration(13935,{coord={47.10,62.50,ZERETH_MORTIS}}),    -- Circle of Thought
 			exploration(13759),	-- Deserted Overlook
 			exploration(13897),	-- Dimensional Falls
 			exploration(13927),	-- Droning Precipice

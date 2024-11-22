@@ -21,7 +21,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			exploration(14762),	-- Ruptured Lake
 			exploration(15153),	-- Salien Gutters
 			exploration(14756),	-- Siegehold
+			visit_exploration(14761,{coord={53.80,48.30,AZJ_KAHET}}),	-- Silken Ward (Azj-Kahet)
 			exploration(14901),	-- The Blood Pits
+			visit_exploration(15346,{coord={50.70,57.00,AZJ_KAHET}}),	-- The Hanging Gateway (Azj-Kahet)
 			exploration(14769),	-- The Maddening Deep
 			exploration(14793),	-- The Skeins
 			exploration(14953),	-- The Threading Way
@@ -36,7 +38,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 	}),
 	m(AZJ_KAHET_LOWER, {
 		explorationHeader({
-			exploration(14761),	-- Silken Ward
 			exploration(14755),	-- The Weaver's Lair
 		}),
 	}),

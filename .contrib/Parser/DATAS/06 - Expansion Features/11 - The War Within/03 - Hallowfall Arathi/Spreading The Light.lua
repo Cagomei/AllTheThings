@@ -380,6 +380,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						["questID"] = 82557,
 						["g"] = {
 							i(223924),	-- Chitin-Inscribed Vest
+							i(221240),	-- Nerubian Stagshell Gouger
 						},
 					}),
 					n(220771, {	-- Murkspike

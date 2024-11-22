@@ -1156,6 +1156,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		ach(19466, {	-- Oh My God, They Were Clutchmates
 			["timeline"] = { ADDED_10_2_6 },
 			-- Meta Achievement
+			-- #if BEFORE 11.0.7
 			["sym"] = {{"meta_achievement",
 				16522,	-- A True Explorer
 				16530,	-- Ally of the Flights
@@ -1170,6 +1171,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				19235,	-- Warden of the Dream
 				17427,	-- Winterpelt Conversationalist
 			}},
+			-- #else
+			["sym"] = {{"meta_achievement",
+				41174,	-- A True Explorer
+				41174,	-- Ally of the Flights
+				16539,	-- In High Esteem
+				41181,	-- Joining the Community
+				41180,	-- Joining the Khansguard
+				18615,	-- Legend of the Multiverse
+				16494,	-- Loyalty to the Prince
+				16537,	-- Maximum Power!
+				16760,	-- The Obsidian Bloodline
+				41183,	-- There's No Place Like Loamm
+				41177,	-- Warden of the Dream
+				17427,	-- Winterpelt Conversationalist
+			}},
+			-- #endif
 		}),
 		ach(16549, {	-- Popular Around the Isles
 			-- Meta Achievement
@@ -1179,6 +1196,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				16529,	-- Joining the Community
 				16528,	-- Joining the Khansguard
 			}},
+			["timeline"] = { REMOVED_11_0_7 }
+		}),
+		ach(41179, {	-- Popular Around the Isles
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				41174,	-- A True Explorer
+				41182,	-- Ally of the Flights
+				41181,	-- Joining the Community
+				41180,	-- Joining the Khansguard
+			}},
+			["timeline"] = { ADDED_11_0_7 }
 		}),
 		ach(17978),	-- Stones Can Fly!
 		ach(17977),	-- Stones Can Try To Fly!

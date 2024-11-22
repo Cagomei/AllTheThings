@@ -171,6 +171,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(5597),	-- Obelisk of the Sun
 				exploration(5465),	-- Orsis
 				exploration(5466),	-- Ramkahen
+				visit_exploration(5500,{coord={58.4,45.9,ULDUM}}),    -- Ramkahen Legion Outpost
 				exploration(5647),	-- Ruins of Ahmtul
 				exploration(5606),	-- Ruins of Ammon
 				exploration(5671),	-- Ruins of Khintaset
@@ -185,7 +186,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(5583),	-- The Vortex Pinnacle
 				exploration(5684),	-- Throne of the Four Winds
 				exploration(5689),	-- Tombs of the Precursors
-				exploration(5666),	-- Vir'naal Dam
+				visit_exploration(5666,{coord={54.7,42.6,ULDUM}}),    -- Vir'naal Dam
+				visit_exploration(5586,{coord={55.0,46.4,ULDUM}}),    -- Vir'naal River
 			}),
 			n(FACTIONS, {
 				faction(FACTION_RAMKAHEN, {	-- Ramkahen

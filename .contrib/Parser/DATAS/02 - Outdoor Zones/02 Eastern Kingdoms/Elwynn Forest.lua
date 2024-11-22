@@ -1967,6 +1967,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				exploration(54),	-- Jasperlode Mine
 				exploration(797),	-- Jerod's Landing
+				visit_exploration(5637,{coord={42.9,65.6,ELWYNN_FOREST}}),    -- Lion's Pride Inn
 				exploration(9),		-- Northshire Valley
 				exploration(798),	-- Ridgepoint Tower
 				exploration(86),	-- Stone Cairn Lake

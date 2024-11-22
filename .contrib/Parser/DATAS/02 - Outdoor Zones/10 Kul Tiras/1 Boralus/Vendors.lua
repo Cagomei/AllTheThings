@@ -304,7 +304,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["g"] = {
 					i(168025, {	-- Book of Schematics: Ub3r-Spanner
 						["sourceQuests"] = { 53949 },	-- The Ub3r-Spanner (A)
-						["filterID"] = MISC,
 						["g"] = {
 							r(282975),	-- The Ub3r-Spanner (RECIPE!)
 							r(283399),	-- Ub3r-Module: Short-Fused Bomb Bots (RECIPE!)
@@ -634,9 +633,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = bubbleDownClassicRep(FACTION_7TH_LEGION, {
 					{		-- Neutral
-						i(166445, {	-- 7th Legion Scouting Map
-							["filterID"] = MISC,
-						}),
+						i(166445),	-- 7th Legion Scouting Map
 					}, {	-- Friendly
 					}, {	-- Honored
 						i(160536, {	-- 7th Legionnaire's Cloak

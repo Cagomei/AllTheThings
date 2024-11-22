@@ -18,22 +18,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					203660,	-- Flowfy
 					203592,	-- General Zskorro
 					203477,	-- Goopal
-					203611,	-- Hadexia <Ember of Twilight>
+					-- 203611,	-- Hadexia <Ember of Twilight>
 					203627,	-- Invohq
 					203625,	-- Karokta
 					203466,	-- Kapraku
 					203618,	-- Klakatak
 					203462,	-- Kob'rok
-					203642,	-- Kronkapace
-					203630,	-- Lavermix
+					-- 203642,	-- Kronkapace
+					-- 203630,	-- Lavermix
 					200111,	-- Magtembo
 					203521,	-- Professor Gastrinax
-					204096,	-- Shadowforge Mole Machine
+					-- 204096,	-- Shadowforge Mole Machine
 					203643,	-- Skornak
 					203480,	-- Spinmarrow
 					203662,	-- Subterrax
 					203593,	-- Underlight Queen
 					201029,	-- Viridian King
+					-- Researchers Rares
+					202270,	-- Animated Contaminant
+					203355,	-- Captain Reykal
+					202309,	-- Cavern Flayer Matriarch
+					203834,	-- Contaminated Titan Watcher
+					203846,	-- Elder Magma Serpent
+					204214,	-- Monstrous Magmaclaw Snapper
+					202318,	-- Response Team Watcher
 				},
 				["g"] = {
 					n(BACK, {
@@ -91,12 +99,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205081),	-- Zaralek Surveyor's Sabatons
 					}),
 					filter(TRINKET_F, {
-						i(204714),	-- Satchel of Healing Spores
-						i(204728),	-- Friendship Censer
-						i(204797),	-- Djaradin Boasting Tablets
-						i(204805),	-- Suspended Sulfuric Droplet
 						i(204810),	-- Drogbar Rocks
 						i(204811),	-- Drogbar Stones
+						i(205194),	-- Fractured Crystalspine Quill
+						i(204728),	-- Friendship Censer
+						i(204797),	-- Djaradin Boasting Tablets
+						i(205195),	-- Drakeforged Magma Charm
+						i(204714),	-- Satchel of Healing Spores
+						i(205201),	-- Smoldering Howler Horn
+						i(205200),	-- Stirring Twilight Ember
+						i(205193),	-- Sturdy Deepflayer Scute
+						i(204805),	-- Suspended Sulfuric Droplet
+						i(205191),	-- Underlight Globe
+						i(205192),	-- Volatile Crystal Shard
+						i(205196),	-- Zaqali Hand Cauldron
 					}),
 					n(WEAPONS, {
 						i(205090),	-- Zaralek Surveyor's Barrier
@@ -177,10 +193,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					bo(75353, true),
 					i(205419),	-- Dinn's Drum (TOY!)
 					i(203320),	-- Winding Slitherdrake: Ears (MM!)
-					i(205195),	-- Drakeforged Magma Charm
 					i(205299),	-- Rudiment Cuffs
 					i(205304),	-- Snareguard Sash
-					i(205200),	-- Stirring Twilight Ember
 				},
 			}),
 			n(203664, {	-- Emberdusk
@@ -190,9 +204,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					bo(75364, true),
 					i(203363),	-- Winding Slitherdrake: Large Finned Throat (MM!)
 					i(205293),	-- Emberdusk's Embrace
-					i(205201),	-- Smoldering Howler Horn
 					i(205335),	-- Talisman of the Dusk
-					i(205196),	-- Zaqali Hand Cauldron
 				},
 			}),
 			n(203660, {	-- Flowfy
@@ -226,13 +238,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205296),	-- Goopal's Visage
 				},
 			}),
-			n(203611, {	-- Hadexia <Ember of Twilight>
+			-- n(203611, {	-- Hadexia <Ember of Twilight>
 				--["coord"] = { , , ZARALEK_CAVERN },
 				--["questID"] = ,	-- Old QuestID:
 				--["g"] = {
 				--	bo(, true),
 				--},
-			}),
+			-- }),
 			n(203627, {	-- Invohq
 				["coord"] = { 46.0, 33.3, ZARALEK_CAVERN },
 				["questID"] = 75335,	-- Old QuestID: 75558
@@ -257,7 +269,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(203358),	-- Winding Slitherdrake: Small Finned Tail (MM!)
 					i(205298),	-- Belt of Floating Stone
 					i(205292),	-- Karokta's Mane
-					i(205192),	-- Volatile Crystal Shard
 				},
 			}),
 			n(203466, {	-- Kapraku
@@ -292,20 +303,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(206021),	-- Kob'rok's Luminescent Scale
 				},
 			}),
-			n(203642, {	-- Kronkapace
+			-- n(203642, {	-- Kronkapace
 				--["coord"] = { , , ZARALEK_CAVERN },
 				--["questID"] = ,	-- Old QuestID:
 				--["g"] = {
 				--	bo(, true),
 				--},
-			}),
-			n(203630, {	-- Lavermix
+			-- }),
+			-- n(203630, {	-- Lavermix
 				--["coord"] = { , , ZARALEK_CAVERN },
 				--["questID"] = ,	-- Old QuestID:
 				--["g"] = {
 				--	bo(, true),
 				--},
-			}),
+			-- }),
 			n(200111, {	-- Magtembo
 				["coord"] = { 41.1, 37.7, ZARALEK_CAVERN },
 				["questID"] = 75339,	-- Old QuestID: 75561
@@ -326,13 +337,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205333),	-- Obsidian Amulet of Transmutation
 				},
 			}),
-			n(204096, {	-- Shadowforge Mole Machine
+			-- n(204096, {	-- Shadowforge Mole Machine
 				--["coord"] = { , , ZARALEK_CAVERN },
 				--["questID"] = ,	-- Old QuestID:
 				--["g"] = {
 				--	bo(, true),
 				--},
-			}),
+			-- }),
 			n(203643, {	-- Skornak
 				["coord"] = { 36.3, 52.9, ZARALEK_CAVERN },
 				["questID"] = 75348,	-- Old QuestID: 75563
@@ -351,7 +362,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(203318),	-- Winding Slitherdrake: Hairy Chest (MM!)
 					i(205326),	-- Crystalweb Chelicera
 					i(205290),	-- Greatcloak of Spun Marrow
-					i(205191),	-- Underlight Globe
 					i(205305),	-- Zaralek Arachnid Armbands
 				},
 			}),

@@ -36,6 +36,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			explorationHeader({
 				exploration(2697),	-- Deadman's Crossing
 				exploration(2562),	-- Karazhan
+				visit_exploration(7971,{coord={46.7,69.0,DEADWIND_PASS}}),	-- Karazhan Catacombs
 				exploration(2938),	-- Sleeping Gorge
 				exploration(2561),	-- The Vice
 			}),
@@ -139,7 +140,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 216947 },	-- Whirring Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					--["sourceQuest"] = ,	-- 
+					--["sourceQuest"] = ,	--
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 					["maps"] = { ARATHI_HIGHLANDS },
 				})),
@@ -148,7 +149,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 216951 },	-- Slippery Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					--["sourceQuest"] = ,	-- 
+					--["sourceQuest"] = ,	--
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 					["maps"] = { BADLANDS },
 				})),
@@ -157,7 +158,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 216945 },	-- Curious Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					--["sourceQuest"] = ,	-- 
+					--["sourceQuest"] = ,	--
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80151, {	-- Curious Dalaran Relic [Desolace]
@@ -165,7 +166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 216950 },	-- Creepy Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					--["sourceQuest"] = ,	-- 
+					--["sourceQuest"] = ,	--
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 					["maps"] = { DESOLACE },
 				})),
@@ -174,7 +175,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 216946 },	-- Glittering Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					--["sourceQuest"] = ,	-- 
+					--["sourceQuest"] = ,	--
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 					["maps"] = { DUSKWOOD },
 				})),
@@ -183,7 +184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 216948 },	-- Odd Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					--["sourceQuest"] = ,	-- 
+					--["sourceQuest"] = ,	--
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 					["maps"] = { SWAMP_OF_SORROWS },
 				})),
@@ -192,7 +193,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 216949 },	-- Heavy Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					--["sourceQuest"] = ,	-- 
+					--["sourceQuest"] = ,	--
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 					["maps"] = { THE_BARRENS },
 				})),

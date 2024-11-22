@@ -99,6 +99,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				exploration(193),	-- Andorhal
 				-- #endif
+				visit_exploration(2298,{coord={67.5,73.4,WESTERN_PLAGUELANDS}}),    -- Caer Darrow
 				-- #if AFTER CATA
 				exploration(3197),	-- Chillwind Camp
 				-- #endif

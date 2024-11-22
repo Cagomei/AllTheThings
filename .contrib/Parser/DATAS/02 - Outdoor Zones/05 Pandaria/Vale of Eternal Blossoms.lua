@@ -62,6 +62,7 @@ root(ROOTS.Zones, {
 				}),
 				explorationHeader({
 					exploration(6149),	-- Ancestral Rise
+					visit_exploration(6538,{coord={17.4,37.4,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Autumnshade Ridge
 					exploration(6074),	-- Guo-Lai Halls
 					exploration(6144),	-- Jin Yang Road
 					exploration(6031),	-- Mistfall Village

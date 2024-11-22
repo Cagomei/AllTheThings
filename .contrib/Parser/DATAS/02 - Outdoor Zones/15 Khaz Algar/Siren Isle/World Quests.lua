@@ -10,12 +10,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			},
 			["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 				q(84852, {	-- Legacy of the Vrykul
+					-- Vrykul
 					--["coord"] = { 71.0, 44.1, SIREN_ISLE },	-- entire zone
 					--["g"] = {
 					--	i(228648),	-- Roaring War-Queen's Citrine
 					--},
 				}),
 				q(84850, {	-- Serpent's Wrath
+					-- Naga
 					--["coord"] = { 71.0, 44.1, SIREN_ISLE },	-- entire zone
 				}),
 				q(85764, {	-- Shuddering Hollow
@@ -38,7 +40,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					["coord"] = { 27.3, 65.5, SIREN_ISLE },
 				}),
 				q(84851, {	-- Tides of Greed
-					-- TODO: Pirates
+					-- Pirates
 					--["coord"] = { x, y, SIREN_ISLE },	-- Entire zone
 					--["g"] = {
 					--	i(228646),	-- Legendary Skipper's Citrine

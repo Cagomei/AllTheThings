@@ -29,6 +29,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				-- naga
 				["coord"] = { 61.5, 89.4, SIREN_ISLE },
 				["questID"] = 84802,
+				["g"] = {
+					i(234973),	-- Pearlshell Scroll Case [book]
+				},
 			}),
 			n(228601, {	-- Ghostmaker
 				["coord"] = { 52.0, 32.3, SIREN_ISLE },
@@ -62,12 +65,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				-- naga
 				["coord"] = { 56.0, 83.6, SIREN_ISLE },
 				["questID"] = 84803,
+				["g"] = {
+					i(234973),	-- Pearlshell Scroll Case [book]
+				},
 			}),
 			n(231090, {	-- Snacker
 				["coord"] = { 67.8, 20.7, SIREN_ISLE },
 				["questID"] = 84794,
 			}),
-			n(229992, {	-- Stalgnarok
+			n(229992, {	-- Stalagnarok
 				["description"] = "Available during Shuddering Hollow objective",
 				["coord"] = { 67.8, 20.7, SIREN_ISLE },
 				["questID"] = 85437,

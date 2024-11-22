@@ -5868,6 +5868,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(97921, {	-- Bom'bay's Color-Seein'Sauce (TOY!)
 							["timeline"] = { ADDED_5_3_0 },
 						}),
+						i(138382, {	-- Lucky Rat's Tooth
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 						i(138385, {	-- Lucky Shirt
 							["timeline"] = { ADDED_7_0_3 },
 						}),

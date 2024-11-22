@@ -132,6 +132,7 @@ end
 -- either by following the player or having player-based decisions that cause them to have any coordinates
 local MobileNPCDB = {
 	 [19644] = true,	-- Image of Archmage Vargoth
+	 [19935] = true,	-- Soridormi
 	 [23870] = true,	-- Ember Clutch Ancient
 	 [26206] = true,	-- Keristrasza
 	 [29795] = true,	-- Kolitra Deathweaver (Orgrim's Hammer)

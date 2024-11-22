@@ -16,13 +16,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 		ach(40939, {	-- Harbinger of the Gilded
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
-        -- TODO: Unfun fact: Blizzard isn't currently showing these criteria ingame, and manually adding them doesn't properly fetch their names, I'm just gonna leave them here for reference for when they fix this. It can be either automated, or written out in full.
 		ach(40591, {	-- Khaz Algar Diplomat
+            -- Unfun fact: Blizzard isn't currently showing these criteria ingame, and manually adding them doesn't properly fetch their names, I'm just gonna leave them here for reference for when they fix this. It can be either automated, or written out in full.
+            -- Unfun fact the second: They never fixed the achievement, they just remade it.
             -- crit(68907),    -- Council of Dornogal
             -- crit(68908),    -- The Assembly of the Deeps
             -- crit(68909),    -- Hallowfall Arathi
             -- crit(68910),    -- The Severed Threads
-			iensemble(219110),	-- Vermillion Patron's Elegance
+            ["timeline"] = { REMOVED_11_0_7 },
+            ["g"] = {
+                iensemble(219110),	-- Vermillion Patron's Elegance
+            },
+		}),
+        ach(41169, {	-- Khaz Algar Diplomat
+            ["timeline"] = { ADDED_11_0_7 },
+            ["g"] = {
+                crit(71181), -- Council of Dornogal
+                crit(71180), -- The Assembly of the Deeps
+                crit(71179), -- Hallowfall Arathi
+                crit(71177), -- The Severed Threads
+                iensemble(219110),	-- Vermillion Patron's Elegance
+            },
 		}),
         -- INFO: Verified 2024-10-04, only shows one criteria without achraw
 		achraw(40660, bubbleDownSelf({ ["timeline"] = { REMOVED_11_1_0 }, }, {	-- The War Within Season 1: Spelunker Supreme
@@ -384,7 +398,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 			},
 		}),
-        --[[ TODO: (!) New achievements not sourced yet
 		ach(41201, bubbleDownSelf({	-- You Xal Not Pass
 			["timeline"] = { ADDED_11_0_7 },
 		},{
@@ -392,7 +405,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			["sym"] = {{"meta_achievement",
 				41189,	-- Azj the World Turns
                 41188,  -- Crystal Chronicled
-                41133,  -- Isle Remember You (!)
+                41133,  -- Isle Remember You
                 41187,  -- Rage Aside the Machine
                 41186,  -- Slate of the Union
 			}},
@@ -400,7 +413,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				i(223313),	-- Shadow of Doubt (MOUNT!)
 			},
 		})),
-		]]--
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {

@@ -345,9 +345,7 @@ root(ROOTS.Zones, {
 						["requireSkill"] = JEWELCRAFTING,
 						["g"] = {
 							i(115503),	-- Blazing Diamond Pendant (TOY!)
-							i(115359, {	-- Draenor Jewelcrafting
-								["filterID"] = MISC,
-							}),
+							i(115359),	-- Draenor Jewelcrafting
 							i(111814),	-- Gem Boutique, Level 1
 						},
 					}),
@@ -360,7 +358,6 @@ root(ROOTS.Zones, {
 						["g"] = {
 							i(115357, {	-- Draenor Tailoring
 								["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
-								["filterID"] = MISC,
 								["g"] = {
 									recipe(168835),	-- Hexweave Cloth
 									recipe(176058),	-- Secrets of Draenor Tailoring
@@ -768,21 +765,14 @@ root(ROOTS.Zones, {
 						["g"] = {
 							i(111815),	-- Scribe's Quarters, Level 1
 							i(111923, {	-- Secret of Draenor Inscription
-								["filterID"] = MISC,
-								["g"] = {
-									i(120136),		-- Recipe: Secrets of Draenor Inscription
-									recipe(169081),	-- War Paints
-									recipe(167950, {	-- Research: Warbinder's Ink
-										i(113992, {	-- Scribe's Research Notes
-											["filterID"] = MISC,
-										}),
-									}),
-									recipe(175390),	-- Laughing Tarot
-									recipe(175389),	-- Ocean Tarot
-									recipe(175392),	-- Savage Tarot
-									recipe(166669),	-- Card of Omens
-									recipe(178497),	-- Warbinder's Ink
-								},
+								i(120136),		-- Recipe: Secrets of Draenor Inscription
+								recipe(169081),	-- War Paints
+								recipe(167950),	-- Research: Warbinder's Ink
+								recipe(175390),	-- Laughing Tarot
+								recipe(175389),	-- Ocean Tarot
+								recipe(175392),	-- Savage Tarot
+								recipe(166669),	-- Card of Omens
+								recipe(178497),	-- Warbinder's Ink
 							}),
 							i(116114),	-- Prestige Card: The Turn
 						},

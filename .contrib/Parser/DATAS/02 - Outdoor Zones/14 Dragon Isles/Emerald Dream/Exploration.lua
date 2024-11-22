@@ -6,6 +6,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 		explorationHeader({
 			exploration(14860),	-- Amirdrassil
 			exploration(14856),	-- Ancient Bough
+			visit_exploration(14960,{coord={50.1,62.1,EMERALD_DREAM}}),	-- Central Encampment
 			exploration(14939),	-- Cinder Summit
 			exploration(14994),	-- Dreamsurge Basin
 			exploration(14904),	-- Eye of Ysera

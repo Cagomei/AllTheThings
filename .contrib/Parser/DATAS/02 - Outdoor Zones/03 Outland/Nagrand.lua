@@ -262,6 +262,7 @@ root(ROOTS.Zones, {
 				}),
 				explorationHeader({
 					exploration(3839),	-- Abandoned Armory
+					visit_exploration(3623,{coord={30.3,58.9,NAGRAND}}),    -- Aeris Landing
 					exploration(3610),	-- Burning Blade Ruins
 					exploration(3611),	-- Clan Watch
 					exploration(3636),	-- Elemental Plateau
@@ -285,6 +286,7 @@ root(ROOTS.Zones, {
 					-- #endif
 					exploration(3622),	-- Sunspring Post
 					exploration(3626),	-- Telaar
+					visit_exploration(3705,{coord={52.2,68.7,NAGRAND}}),    -- Telaari Basin
 					exploration(3760),	-- The Barrier Hills
 					exploration(3788),	-- The Low Path
 					exploration(3700),	-- The Ring of Blood
@@ -1190,10 +1192,20 @@ root(ROOTS.Zones, {
 					{
 						["allianceQuestData"] = q(9871, {	-- Murkblood Invaders (A)
 							["provider"] = { "i", 24559 },	-- Murkblood Invasion Plans (QI!)
+							-- Alliance version reported as being available normally even on max lvl @ Honored
+							["lockCriteria"] = { 1, "factionID", FACTION_KURENAI + 0.7 },	-- Revered Kurenai (guessed)
 						}),
 						["hordeQuestData"] = q(9872, {	-- Murkblood Invaders (H)
 							["provider"] = { "i", 24558 },	-- Murkblood Invasion Plans (QI!)
+							["lockCriteria"] = { 1,
+								"factionID", FACTION_THE_MAGHAR + 0.6,	-- Honored Mag'har (guessed)
+								"lvl", 50,	-- Level 50 character (guessed)
+							},
+							-- Runaway - N-A: L70/HONORED | L80/NEUTRAL | L70/NEUTRAL | L55/NEUTRAL
+							-- Runaway - A  : L30/UNFRIENDLY
 						}),
+						["isBreadcrumb"] = true,
+						["DisablePartySync"] = true,
 						["coord"] = { 33.9, 58.0, NAGRAND },
 						["crs"] = { 18238 },	-- Murkblood Invader
 						-- #if AFTER 9.0.2

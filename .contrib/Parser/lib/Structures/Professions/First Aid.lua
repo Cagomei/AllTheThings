@@ -106,7 +106,6 @@ MOP_FIRST_AID = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 	}),
 }));
 DRAENOR_FIRST_AID = applyclassicphase(WOD_PHASE_ONE, i(111364, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1 } }, {
-	["filterID"] = MISC,
 	["g"] = {
 		r(158741, {	-- First Aid (Draenor Master)
 			-- #if NOT ANYCLASSIC

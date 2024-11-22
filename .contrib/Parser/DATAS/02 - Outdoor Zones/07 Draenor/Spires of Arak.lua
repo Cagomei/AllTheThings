@@ -1224,7 +1224,7 @@ root(ROOTS.Zones, {
 					}),
 					q(37144, {	-- Talon Guard Kurekk
 						["provider"] = { "n", 80758 },	-- Talon Guard Kurekk
-						["coord"] = { 62.2, 42.6, SPIRES_OF_ARAK },
+						["coord"] = { 46.7, 46.4, SPIRES_OF_ARAK },
 						["minReputation"] = { FACTION_ARAKKOA_OUTCASTS, EXALTED },
 						["g"] = {
 							follower(224),	-- Talon Guard Kurekk

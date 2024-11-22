@@ -504,12 +504,27 @@ CREATED_11_0_5 = "created 11.0.5.57171";				-- The War Within 11.0.5 Launch on O
 ADDED_11_0_5 = "added 11.0.5.57171";					-- The War Within 11.0.5 Launch on October 22nd, 2024
 REMOVED_11_0_5 = "removed 11.0.5.57171";				-- The War Within 11.0.5 Launch on October 22nd, 2024
 DELETED_11_0_5 = "deleted 11.0.5.57171";				-- The War Within 11.0.5 Launch on October 22nd, 2024
-CREATED_11_0_7 = "created 11.0.7";						-- The War Within 11.0.7 Launch on
-ADDED_11_0_7 = "added 11.0.7";							-- The War Within 11.0.7 Launch on
-REMOVED_11_0_7 = "removed 11.0.7";						-- The War Within 11.0.7 Launch on
+CREATED_11_0_7 = "created 11.0.7";						-- The War Within 11.0.7 Launch on December 17th, 2024
+ADDED_11_0_7 = "added 11.0.7";							-- The War Within 11.0.7 Launch on December 17th, 2024
+REMOVED_11_0_7 = "removed 11.0.7";						-- The War Within 11.0.7 Launch on December 17th, 2024
 CREATED_11_1_0 = "created 11.1.0";						-- The War Within 11.1.0 Launch on
 ADDED_11_1_0 = "added 11.1.0";							-- The War Within 11.1.0 Launch on
 REMOVED_11_1_0 = "removed 11.1.0";						-- The War Within 11.1.0 Launch on
+CREATED_11_1_5 = "created 11.1.5";						-- The War Within 11.1.5 Launch on
+ADDED_11_1_5 = "added 11.1.5";							-- The War Within 11.1.5 Launch on
+REMOVED_11_1_5 = "removed 11.1.5";						-- The War Within 11.1.5 Launch on
+CREATED_11_1_7 = "created 11.1.7";						-- The War Within 11.1.7 Launch on
+ADDED_11_1_7 = "added 11.1.7";							-- The War Within 11.1.7 Launch on
+REMOVED_11_1_7 = "removed 11.1.7";						-- The War Within 11.1.7 Launch on
+CREATED_11_2_0 = "created 11.2.0";						-- The War Within 11.2.0 Launch on
+ADDED_11_2_0 = "added 11.2.0";							-- The War Within 11.2.0 Launch on
+REMOVED_11_2_0 = "removed 11.2.0";						-- The War Within 11.2.0 Launch on
+CREATED_11_2_5 = "created 11.2.5";						-- The War Within 11.2.5 Launch on
+ADDED_11_2_5 = "added 11.2.5";							-- The War Within 11.2.5 Launch on
+REMOVED_11_2_5 = "removed 11.2.5";						-- The War Within 11.2.5 Launch on
+CREATED_11_2_7 = "created 11.2.7";						-- The War Within 11.2.7 Launch on
+ADDED_11_2_7 = "added 11.2.7";							-- The War Within 11.2.7 Launch on
+REMOVED_11_2_7 = "removed 11.2.7";						-- The War Within 11.2.7 Launch on
 
 --------------
 -- MIDNIGHT --

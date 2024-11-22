@@ -360,11 +360,6 @@ root(ROOTS.NeverImplemented, {
 					i(201245),	-- Emerald Blessed Greatsword
 				}),
 			}),
-			expansion(EXPANSION.TWW, {
-				expansion(EXPANSION.TWW, patch(0,5), {
-					i(231344),	-- Obsidian Gladiator's Greatsword
-				}),
-			}),
 		}),
 		filter(WANDS, {
 			expansion(EXPANSION.DF, {

@@ -32,7 +32,6 @@ root(ROOTS.ExpansionFeatures,
 							["g"] = {
 								i(115357, {	-- Draenor Tailoring
 									["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
-									["filterID"] = MISC,
 									["g"] = {
 										recipe(168835),	-- Hexweave Cloth
 										recipe(176058),	-- Secrets of Draenor Tailoring
@@ -67,7 +66,6 @@ root(ROOTS.ExpansionFeatures,
 							["g"] = {
 								i(115357, {	-- Draenor Tailoring
 									["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
-									["filterID"] = MISC,
 									["g"] = {
 										recipe(168835),	-- Hexweave Cloth
 										recipe(176058),	-- Secrets of Draenor Tailoring

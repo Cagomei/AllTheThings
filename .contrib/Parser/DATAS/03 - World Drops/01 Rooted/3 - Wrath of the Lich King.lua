@@ -1130,7 +1130,6 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 				-- TODO: this spell is not sourced in Retail... it probably should be but I'm not sure where that's all being done currently
 				-- ["sym"] = {{"select","spellID",165465}},	-- Research: Ink of the Sea
 				-- #endif
-				["filterID"] = MISC,
 			}),
 		}),
 		prof(JEWELCRAFTING, {

@@ -46,7 +46,6 @@ root(ROOTS.Unsorted, {
 			i(229811),	-- Frost-Etched Dagger
 			i(230207),	-- N.U.K.U.L.A.R. Target Painter
 			i(230211),	-- Singing Citrine
-			i(230773),	-- Overcharged Battery
 			i(231751),	-- Earthen Backpack
 			i(232439),	-- Rune-Seared Spear
 			i(232519),	-- Razeshi B.
@@ -80,7 +79,6 @@ root(ROOTS.Unsorted, {
 			i(233019),	-- Sky Witch's Sweeper
 			i(233020),	-- Twilight Witch's Sweeper
 			i(233023),	-- [PH]
-			i(233027),	-- Well Loved Squeaky Toy
 			i(233051),	-- G.R.A.V. Glove
 			i(233056),	-- Marmaduke
 			i(233057),	-- Rock Hound Mica
@@ -293,12 +291,8 @@ root(ROOTS.Unsorted, {
 			i(233815),	-- [PH] Sailor's Mop
 			i(233820),	-- [PH] Iron Mallet
 			i(233821),	-- [PH] Smith's Tongs
-			i(233823),	-- [PH] Arathor Mallet
 			i(233825),	-- [PH] Crafter's Tool
 			i(233827),	-- [PH] Crafter's Mallet
-			i(233831),	-- [PH] Fletcher's Blade
-			i(233835),	-- [PH] Arathor Tongs
-			i(233836),	-- [PH] Arathor Chisel
 			i(233838),	-- [PH] Chest
 			i(233839),	-- [PH] Chest
 			i(233840),	-- [PH] Chest
@@ -396,7 +390,6 @@ root(ROOTS.Unsorted, {
 			i(233953),	-- [PH] Wrist
 			i(233954),	-- [PH] Feet
 			i(233955),	-- [PH] Mining Pick
-			i(233957),	-- [PH] Lumberer's Hatchet
 			i(233970),	-- [PH] Cloak
 			i(233971),	-- [PH] Cloak
 			i(233972),	-- [PH] Cloak
@@ -445,7 +438,6 @@ root(ROOTS.Unsorted, {
 			i(234313),	-- [DNT] Item
 			i(234328),	-- Torrential Fragment
 			i(234379),	-- Crackleroar
-			i(234395),	-- Skitterbite
 			i(234396),	-- Teatuft Tamer
 			i(234397),	-- Fullbelly Rollingpaw
 			i(234398),	-- Festive Green Holiday Belt
@@ -832,11 +824,6 @@ root(ROOTS.Unsorted, {
 			i(233053),	-- Crown of the Violet Rose
 			i(234413),	-- Satchel of Exotic Mysteries
 			--
-			i(118067),	-- Old Chain Link
-			i(228934),	-- Carefully Penned Note
-			i(228935),	-- Unfinished Note
-			i(228936),	-- Hastily Scrawled Note
-			i(228937),	-- Water-Resistant Note
 		})),
 		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			explorationHeader({
@@ -912,9 +899,6 @@ root(ROOTS.Unsorted, {
 			f(MISC, {
 				--- Achievement: Gobblin' with Glublurp ---
 				i(225930),	-- Glimmering Crystal
-				--- Chest ---
-				i(225948),	-- Harbinger's Equipment Chest
-
 				--- Not Sure ---
 				i(226257),	-- Delver's Pouch of Valorstones
 				i(226260),	-- Delver's Pouch of Gold
@@ -924,7 +908,6 @@ root(ROOTS.Unsorted, {
 				i(228416),	-- Steelvein's Manifesto
 				--- Draenei ---
 				i(226524),	-- Partially-Charged Hologem
-
 				--- Delves ---
 				--- Probably NYI ---
 				--- Fungal Folly ---
@@ -933,7 +916,6 @@ root(ROOTS.Unsorted, {
 				i(224767),	-- Giant Candle Parts
 				--- Waterworks ---
 				i(211481),	-- Stomping Shoes
-
 				--- Quest Rewards ---
 				i(220156),	-- Bubbling Wax
 				--- Renown Quest Rewards ---
@@ -942,16 +924,13 @@ root(ROOTS.Unsorted, {
 				--- Attached to Quests via API ---
 				-- i(215359),	-- Very Large Valdrakken Accord Supply Pack
 				-- i(226151),	-- Wax-Coated Coffer Unlocker
-
 				--- Snuffling ---
 				i(224650),	-- Wax-Sealed Pouch
-
 				--- World Quests ---
 				--- Azj ---
 				i(213420),	-- Fungarian Mushroom Cap
 				--- Ringing ---
 				i(224913),	-- Radiant Fuel Cache
-
 				--- Winter Veil ---
 				i(218309),	-- Gently Shaken Gift
 				i(219291),	-- Puntable Baby Greench
@@ -1056,7 +1035,6 @@ root(ROOTS.Unsorted, {
 				exploration(15103),	-- Cinderbrew Meadery
 				exploration(14753),	-- City of Threads
 				exploration(14979),	-- City of Threads
-				exploration(15158),	-- Coldshadow Cave
 				exploration(15110),	-- Contender's Gate
 				exploration(15172),	-- Councilward's Rise
 				exploration(14952),	-- Crawling Chasm
@@ -1133,7 +1111,6 @@ root(ROOTS.Unsorted, {
 				exploration(15143),	-- Processing Unit
 				exploration(14512),	-- RebornTree
 				exploration(15453),	-- Rock Bottom Inn
-				exploration(15460),	-- Sanctified Grounds
 				exploration(15114),	-- Shadowgrove Vineyards
 				exploration(14820),	-- Shadowvein Point
 				exploration(15169),	-- Shadowvein Power Station
@@ -1189,7 +1166,6 @@ root(ROOTS.Unsorted, {
 				exploration(15339),	-- The Stills
 				exploration(15340),	-- The Buzz Barns
 				exploration(15341),	-- The BEE.E.O. Suite
-				exploration(15346),	-- The Hanging Gateway
 				exploration(15364),	-- The Pulsing Pit
 				exploration(15365),	-- The Congealing Pool
 				exploration(15366),	-- The Ascending Reach
@@ -1260,7 +1236,6 @@ root(ROOTS.Unsorted, {
 					i(219219),	-- Timerunner's Starter Kit
 					i(219220),	-- Catch Up Thread
 					i(224120),	-- Timerunner's Gem Box
-					i(226037),	-- Timeless Neural Silencer
 				}),
 				n(WEAPONS, {
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
