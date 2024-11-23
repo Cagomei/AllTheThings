@@ -987,7 +987,6 @@ root(ROOTS.Unsorted, {
 			n(PVP, {
 				--- Typical Seasonal PvP Stuff ---
 				i(224557),	-- Field Medic's Hazard Payout
-				i(220378),	-- Forged Equipment Chest
 				i(225493),	-- Medal of Conquest
 			}),
 			f(QUEST_ITEMS, {

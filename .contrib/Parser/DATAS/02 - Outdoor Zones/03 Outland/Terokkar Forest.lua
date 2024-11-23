@@ -30,7 +30,7 @@ root(ROOTS.Zones, {
 				n(ACHIEVEMENTS, {
 					explorationAch(867),	-- Explore Terokkar Forest
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, achWithRep(894, FACTION_SHATARI_SKYGUARD, {	-- Flying High Over Skettis
-						
+
 					})),
 					ach(726, {	-- Mr. Pinchy's Magical Crawdad Box
 						["provider"] = { "i", 27445 },	-- Magical Crawdad Box
@@ -267,16 +267,19 @@ root(ROOTS.Zones, {
 					exploration(3894),	-- Auchenai Grounds (Wrath Classic: Can't be collected)
 					-- #endif
 					exploration(3688),	-- Auchindoun
+					visit_exploration(3917,{coord={35.1,70.1,TEROKKAR_FOREST}}),    -- Auchindoun
 					exploration(3690),	-- Blackwind Lake
 					exploration(3973),	-- Blackwind Landing
 					exploration(3680),	-- Blackwind Valley
 					exploration(3719),	-- Bleeding Hollow Ruins
-					exploration(3685),	-- Bonechewer Ruins
+					visit_exploration(3685,{coord={64.2,55.2,TEROKKAR_FOREST}}),    -- Bonechewer Ruins
 					-- #if AFTER CATA
-					exploration(3891),	-- Carrion Hill (Wrath Classic: Can't be collected)
+					visit_exploration(3891,{coord={43.6,53.5,TEROKKAR_FOREST}}),    -- Carrion Hill (Wrath Classic: Can't be collected)
 					-- #endif
 					exploration(3674),	-- Cenarion Thicket
-					--exploration(3886),	-- Derelict Caravan (Wrath Classic: Can't be collected)
+					-- #if AFTER CATA
+					visit_exploration(3886,{coord={43.4,76.2,TEROKKAR_FOREST}}),    -- Derelict Caravan (Wrath Classic: Can't be collected)
+					-- #endif
 					exploration(3681),	-- Firewing Point
 					exploration(3682),	-- Grangol'var Village
 					exploration(3691),	-- Lake Ere'Noru
@@ -284,36 +287,44 @@ root(ROOTS.Zones, {
 					-- #if AFTER CATA
 					exploration(3978),	-- Lower Veil Shil'ak
 					-- #endif
-					exploration(3860),	-- Raastok Glade
+					visit_exploration(3885,{coord={51.7,81.7,TEROKKAR_FOREST}}),    -- Netherweb Ridge
+					visit_exploration(3860,{coord={60.6,45.4,TEROKKAR_FOREST}}),    -- Raastok Glade
+					visit_exploration(4078,{coord={51.9,11.8,TEROKKAR_FOREST}}),    -- Razorthorn Rise
 					exploration(3858),	-- Razorthorn Shelf
-					exploration(3887),	-- Refugee Caravan
-					exploration(3893),	-- Ring of Observance
-					exploration(3958),	-- Sha'tari Base Camp
+					visit_exploration(3887,{coord={35.8,49.5,TEROKKAR_FOREST}}),    -- Refugee Caravan
+					visit_exploration(3893,{coord={39.8,62.9,TEROKKAR_FOREST}}),    -- Ring of Observance
+					visit_exploration(3958,{coord={30.6,75.4,TEROKKAR_FOREST}}),    -- Sha'tari Base Camp
 					exploration(3957),	-- Sha'tari Outpost
-					exploration(3888),	-- Shadow Tomb
+					visit_exploration(3888,{coord={31.7,53.2,TEROKKAR_FOREST}}),    -- Shadow Tomb
 					exploration(3703),	-- Shattrath City
 					exploration(3859),	-- Silmyr Lake
 					exploration(3693),	-- Skethyl Mountains
 					exploration(3679),	-- Skettis
 					exploration(3902),	-- Stonebreaker Camp
 					exploration(3683),	-- Stonebreaker Hold
+					visit_exploration(3975,{coord={66.1,76.4,TEROKKAR_FOREST}}),    -- Terokk's Rest
 					exploration(3696),	-- The Barrier Hills
 					exploration(3760),	-- The Barrier Hills (Nagrand)
-					exploration(3697),	-- The Bone Wastes
-					exploration(3890),	-- Tomb of Lights
+					visit_exploration(3697,{coord={49.2,53.1,TEROKKAR_FOREST}}),    -- The Bone Wastes
+					visit_exploration(3956,{coord={41.5,58.1,TEROKKAR_FOREST}}),    -- The Shadow Stair
+					visit_exploration(3890,{coord={47.7,55.2,TEROKKAR_FOREST}}),    -- Tomb of Lights
 					exploration(3675),	-- Tuurem
+					visit_exploration(3977,{coord={75.1,82.5,TEROKKAR_FOREST}}),    -- Upper Veil Shil'ak
 					-- #if AFTER CATA
-					exploration(3976),	-- Veil Ala'rak
+					visit_exploration(3976,{coord={69.9,74.2,TEROKKAR_FOREST}}),    -- Veil Ala'rak
 					-- #endif
+					visit_exploration(3974,{coord={61.2,72.6,TEROKKAR_FOREST}}),    -- Veil Harr'ik
 					exploration(3686),	-- Veil Lithic
-					exploration(3689),	-- Veil Reskk
+					visit_exploration(3689,{coord={49.8,14.7,TEROKKAR_FOREST}}),    -- Veil Reskk
 					-- #if AFTER CATA
-					exploration(3889),	-- Veil Rhaze (Wrath Classic: Can't be collected)
+					visit_exploration(3889,{coord={27.4,57.7,TEROKKAR_FOREST}}),    -- Veil Rhaze (Wrath Classic: Can't be collected)
 					-- #endif
-					exploration(3678),	-- Veil Shalas
+					visit_exploration(3678,{coord={56.5,72.3,TEROKKAR_FOREST}}),    -- Veil Shalas
 					exploration(3676),	-- Veil Shienor
 					exploration(3677),	-- Veil Skith
-					--exploration(3892),	-- Writhing Mound (Wrath Classic: Can't be collected)
+					-- #if AFTER CATA
+					visit_exploration(3892,{coord={50.8,68.2,TEROKKAR_FOREST}}),    -- Writhing Mound (Wrath Classic: Can't be collected)
+					-- #endif
 				}),
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, faction(FACTION_SHATARI_SKYGUARD, {	-- Sha'tari Skyguard

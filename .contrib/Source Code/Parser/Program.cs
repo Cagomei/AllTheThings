@@ -102,27 +102,12 @@ namespace ATT
                 {
                     Errored = false;
                     // Load all of the RAW JSON Data into the database.
-                    var files = new List<string>();
-                    if (PreProcessorTags.Contains(new KeyValuePair<string, bool>("PTR", true)))
+                    if (!string.IsNullOrWhiteSpace(Framework.Config["wago-directory"]))
                     {
-                        Trace.WriteLine("PTR Mode: Loading Wago DB CSV files from PTR folder.");
-                        files = Directory.EnumerateFiles(databaseRootFolder, "*.csv", SearchOption.AllDirectories).Where(p => p.Contains("Wago") && p.Contains("PTR")).ToList();
+                        Trace.WriteLine($"Loading Wago DB CSV files from {Framework.Config["wago-directory"]}.");
                     }
-                    else if (PreProcessorTags.Contains(new KeyValuePair<string, bool>("BETA", true)))
-                    {
-                        Trace.WriteLine("Beta Mode: Loading Wago DB CSV files from Beta folder.");
-                        files = Directory.EnumerateFiles(databaseRootFolder, "*.csv", SearchOption.AllDirectories).Where(p => p.Contains("Wago") && p.Contains("Beta")).ToList();
-                    }
-                    else if (PreProcessorTags.Contains(new KeyValuePair<string, bool>("ANYCLASSIC", true)))
-                    {
-                        Trace.WriteLine("Classic Mode: Loading Wago DB CSV files from Classic folder.");
-                        files = Directory.EnumerateFiles(databaseRootFolder, "*.csv", SearchOption.AllDirectories).Where(p => p.Contains("Wago")).ToList();
-                    }
-                    else
-                    {
-                        Trace.WriteLine("Retail Mode: Loading Wago DB CSV files from Retail folder.");
-                        files = Directory.EnumerateFiles(databaseRootFolder, "*.csv", SearchOption.AllDirectories).Where(p => p.Contains("Wago") && p.Contains("Retail")).ToList();
-                    }
+                    var files = Directory.EnumerateFiles(databaseRootFolder + Framework.Config["wago-directory"], "*.csv", SearchOption.AllDirectories).ToList();
+
                     files.Sort(StringComparer.InvariantCulture);
                     foreach (var f in files) ParseWagoDbCsvFile(f);
 

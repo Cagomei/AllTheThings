@@ -311,7 +311,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 
 		-- 9.0.2
 		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
-			i(175841),	-- Ani-Matter Orb
 			i(175013),	-- Bug Dissolver
 			i(181824),	-- Corrosive Bile
 			i(177905),	-- Deathstone

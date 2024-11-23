@@ -530,6 +530,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(82687),	-- Triggered after 'Only Darkness' (questID 82689)
 			q(82688),	-- Triggered after 'Only Darkness' (questID 82689)
 			q(84083),	-- First Radiant 'boss' (of the week?) rewarding a Champion piece per character
+			q(82416),	-- Summoning Remembered Riverpaw for the first time
 		}),
 	}),
 })));

@@ -2,11 +2,10 @@ root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.BFA, {
 		n(WAR_EFFORT, {
 			n(ACHIEVEMENTS, {
-				ach(40957, {	-- Maximum
+				ach(40957, {	-- Maximum Effort
 					["timeline"] = { ADDED_11_0_7 },
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
-						12874,	-- An Eventful Battle
 						12898,	-- Azeroth at War: After Lordaeron (A)
 						12869,	-- Azeroth at War: After Lordaeron (H)
 						12899,	-- Azeroth at War: Kalimdor on Fire (A)

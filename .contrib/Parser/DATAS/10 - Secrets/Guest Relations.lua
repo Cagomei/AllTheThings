@@ -612,6 +612,20 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["coord"] = { 63.1, 52.0, TANARIS },
 				["g"] = {
 					i(226241),	-- Shredded Green Hills of Stranglethorn (QI!)
+					i(226362),	-- Torn Note (Black Market)
+					i(226364),	-- Torn Note (Fiona Caravan)
+					o(456039, {	-- Crumpled Letter
+						["description"] = "Next to the boxes behind Leeroy's tent.",
+						["coord"] = { 63.4, 52.4, TANARIS },
+						["questID"] = 83837,
+						["g"] = { i(226365) },	-- Crumpled Letter
+					}),
+					o(456032, {	-- Ruffled Paper
+						["description"] = "Right by Farmer Yoon, near the Mount Mania.",
+						["coord"] = { 63.2, 52.0, TANARIS },
+						["questID"] = 83833,
+						["g"] = { i(226361) },	-- Next Week's Mount Competition Listing
+					}),
 					o(456041, {	-- Folded Paper
 						["description"] = "Next to the outhouse behind the Fashion Show platform.",
 						["coord"] = { 63.6, 47.8, TANARIS },
@@ -999,23 +1013,8 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				}),
 			}),
 			header(HEADERS.Quest, 83931, {
-				i(226362),	-- Torn Note (Black Market)
-				i(226364),	-- Torn Note (Fiona Caravan)
-				o(456039, {	-- Crumpled Letter
-					["description"] = "Next to the boxes behind Leeroy's tent.",
-					["sourceQuest"] = 83825,	-- Restoring A Great Tale
-					["coord"] = { 63.4, 52.4, TANARIS },
-					["questID"] = 83837,
-					["g"] = { i(226365) },	-- Crumpled Letter
-				}),
-				o(456032, {	-- Ruffled Paper
-					["description"] = "Right by Farmer Yoon, near the Mount Mania.",
-					["sourceQuest"] = 83825,	-- Restoring A Great Tale
-					["coord"] = { 63.2, 52.0, TANARIS },
-					["questID"] = 83833,
-					["g"] = { i(226361) },	-- Next Week's Mount Competition Listing
-				}),
 				o(456061, {	-- Battered Celebration Crate
+					["description"] = "Outside a worg den near Gjalerbron in Howling Fjord.",
 					["coord"] = { 29.4, 6.4, HOWLING_FJORD },
 					["g"] = { i(226375) },	-- Battered Celebration Crate (QS!)
 				}),
@@ -1167,7 +1166,8 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["g"] = {
 					--1 O'clock Basin
 					header(HEADERS.Quest, 84676, {	-- The Light of Their Love
-						["description"] = "Acquire The Light of Their Love buff (spellID 153715) 3 times from visiting areas relevant to Oldgra, Mankrik's wife. Stand at these areas with your Torch of Pyrreth until a stack is gained.\n1. The Humble Monument in Borthern Barrens.\n2. Young Olgra in Draenor.\n3. Decimator Olgra in Maldraxxus.\nFully lights up the 1 O'clock basin.",
+						["description"] = "Acquire The Light of Their Love buff (spellID 153715) 3 times from visiting areas relevant to Olgra, Mankrik's wife. Stand at these areas with your Torch of Pyrreth until a stack is gained.\n1. The Humble Monument in Borthern Barrens.\n2. Young Olgra in Draenor.\n3. Decimator Olgra in Maldraxxus.\nFully lights up the 1 O'clock basin.",
+						["sourceQuest"] = 84684,	-- Ratts' Race
 						["provider"] = { "i", 208092 },	-- Torch of Pyrreth
 						["coords"] = {
 							{ 55.0, 40.2, NORTHERN_BARRENS },
@@ -1182,13 +1182,13 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 						},
 						["g"] = {
 							hqt(84676, {
-								["name"] = "Acquire The Light of Their Love buff stacked 3 times."
+								["name"] = "Acquire The Light of Their Love buff stacked 3 times"
 							})
 						},
 					}),
 					--2 O'clock Basin
-					header(HEADERS.Quest, 84677, {	-- Acquire The Key of Shadows
-						["description"] = "Requires 1 O'clock basin to have been completed first\n1. Acquire the Twitching Eyaball or All-Seeing Eyes toys\n2. Acquire a Perky Pug with either the Dogg-Saron costume from Vashti the Wandering Merchant in Aszuna or the Yipp-Saron costume from Hallow's End (or the AH.)\n3. Bring these items OR find a friend who has them and visit the Ny'Alotha Obelisk above the Seat of Knowledge in the Vale of Eternal Blossoms (BFA).\n4. Have someone summon a perky pug and use the toys, then /pray in front of the obelisk to be granted the Key of Shadows.\nThere is a 5-15 minute delay even if you do everything right. Everyone within 10 yards should get the key if anyone in range does it correctly.\nFully lights up the 2 O'clock basin",
+					header(HEADERS.Quest, 84677, {	-- Acquire the Key of Shadows
+						["description"] = "Requires the 1 O'clock basin to have been completed to see the obelisk personally.\n1. Acquire the Twitching Eyaball or All-Seeing Eyes toys\n2. Acquire a Perky Pug with either the Dogg-Saron costume from Vashti the Wandering Merchant in Aszuna or the Yipp-Saron costume from Hallow's End (or the AH.)\n3. Bring these items OR find a friend who has them and visit the Ny'Alotha Obelisk above the Seat of Knowledge in the Vale of Eternal Blossoms (BFA).\n4. Have someone summon a perky pug and use the toys, then /pray in front of the obelisk to be granted the Key of Shadows.\nThere is a 5-15 minute delay even if you do everything right. Everyone within 10 yards should get the key if anyone in range does it correctly.\nFully lights up the 2 O'clock basin",
 						["providers"] = {
 							{ "n", 153297 },	-- Ny'Alotha Obelisk
 							{ "n", 37865 },	-- Perky Pug
@@ -1209,14 +1209,14 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 								},
 							}),
 							hqt(84677, {
-								["name"] = "Acquire The Key of Shadows from the Ny'Alotha Obelisk."
+								["name"] = "Acquire the Key of Shadows from the Ny'Alotha Obelisk"
 							}),
 						},
 					}),
 					--3 O'clock Basin
 					header(HEADERS.Item, 228967, {	-- Header will use HQT once discovered
 						["description"] = "Requires 2 O'clock basin to have been completed first\n1. Use the Key of Shadows to enter the room to the left of the Red Button. Fish up an Astral key from the bowl on the left bookshelf. Open the Astral chest in the same room, use the goggles.\n2. Interact with any of the consoles around the catacombs until you get a new actionbar. Can't see it? Look in your spellbook for a Number Sequence spell. Click the console again to submit your code.\n3. Enter the codes on adjacent consoles to open each of the chests, each Piece of Hate will give you an orb at the 3 O'clock basin.",
-						["sourceQuest"] = 84677,	-- Acquire The Key of Shadows
+						["sourceQuest"] = 84677,	-- Acquire the Key of Shadows
 						["provider"] = { "i", 53156 },	-- Key of Shadows
 						["g"] = {
 							i(228965),	-- Astral Key
@@ -1275,7 +1275,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 							o(466489, {	-- Encrypted Chest
 								["description"] = "Code to open at the adjacent decryption console: 115",
 								["provider"] = { "i", 228966 },	-- Starry-Eyed Goggles
-								["coord"] = { 70.3, 55.4, 46 },	-- Karazhan Catacombs
+								["coord"] = { 66.3, 15.2, 46 },	-- Karazhan Catacombs
 								["questID"] = 84770,	-- Orb
 								["g"] = { i(228967) },	-- Piece of Hate
 							}),
@@ -1293,7 +1293,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 								["g"] = {
 									i(228967),	-- Piece of Hate
 									hqt(84786, {	-- Orb
-										["name"] = "Acquire the Piece of Hate from the Lucky slot machine consoles.",
+										["name"] = "Acquire the Piece of Hate from the Lucky slot machine consoles",
 									}),
 								},
 							}),
@@ -1335,10 +1335,12 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 						["coord"] = { 47.4, 68.3, 46 },	-- Karazhan Catacombs
 						["g"] = {
 							hqt(84702, {	-- Red Button x100
-								["name"] = "Press the Red Button 100 times, unlocks an orb at Basin 10.",	-- Orb
+								["name"] = "Press the Red Button 100 times",
+								["description"] = "Unlocks an orb at the 10 O'clock basin."	-- Orb
 							}),
 							hqt(84703, {	-- Red Button x1000
-								["name"] = "Press the Red Button 1000 times, unlocks an orb at Basin 10.",	-- Orb
+								["name"] = "Press the Red Button 1000 times",
+								["description"] = "Unlocks an orb at the 10 O'clock basin."	-- Orb
 							}),
 						},
 					}),

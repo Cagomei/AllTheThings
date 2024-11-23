@@ -306,10 +306,12 @@ root(ROOTS.Zones, {
 					exploration(6152),	-- Fire Camp Yongqi
 					exploration(6129),	-- Firebough Nook
 					exploration(6498),	-- Gate of the August Celestials
+					visit_exploration(6427,{coord={71.3,87.4,KUN_LAI_SUMMIT}}),    -- Inkgill Mere
 					exploration(6406),	-- Isle of Reckoning
 					exploration(6157),	-- Kota Basecamp
 					exploration(6156),	-- Kota Peak
 					exploration(6062),	-- Kun-Lai Pass
+					visit_exploration(6467,{coord={59.8,39.1,KUN_LAI_SUMMIT}}),    -- Mogu'shan Terrace
 					exploration(6114),	-- Mogujia
 					exploration(6185),	-- Mount Neverest
 					exploration(6100),	-- Muskpaw Ranch
@@ -320,6 +322,7 @@ root(ROOTS.Zones, {
 					exploration(6128),	-- Shado-Pan Fallback
 					exploration(6173),	-- Shado-Pan Monastery
 					exploration(6174),	-- Temple of the White Tiger
+					visit_exploration(6073,{coord={70.5,75.6,KUN_LAI_SUMMIT}}),    -- The Autumn Plains
 					exploration(6090),	-- The Burlap Trail
 					exploration(6087),	-- The Dooker Dome
 					exploration(6207),	-- The Zandalari Vanguard
@@ -327,6 +330,7 @@ root(ROOTS.Zones, {
 						-- CRIEVE NOTE: This appears to be unavailable after Legion, someone let me know if you RECENTLY collect this.
 						["collectible"] = false,
 					}),
+					visit_exploration(6181,{coord={71.3,80.5,KUN_LAI_SUMMIT}}),    -- Waterspeaker's Sanctuary
 					exploration(6095),	-- Westwind Rest
 					exploration(6154),	-- Yinying Village
 					exploration(6169),	-- Zouchin Village

@@ -61,26 +61,29 @@ root(ROOTS.Zones, {
 					pet(752),	-- Yellow-Bellied Bullfrog (PET!)
 				}),
 				explorationHeader({
-					exploration(6149),	-- Ancestral Rise
+					visit_exploration(6149,{coord={18.8,22.0,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Ancestral Rise
 					visit_exploration(6538,{coord={17.4,37.4,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Autumnshade Ridge
 					exploration(6074),	-- Guo-Lai Halls
-					exploration(6144),	-- Jin Yang Road
+					visit_exploration(6144,{coord={40.6,61.3,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Jin Yang Road
 					exploration(6031),	-- Mistfall Village
 					exploration(6143),	-- Mogu'shan Palace
-					exploration(6032),	-- Ruins of Guo-Lai
-					exploration(6035),	-- Setting Sun Garrison
+					visit_exploration(6032,{coord={25.9,44.8,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Ruins of Guo-Lai
+					visit_exploration(6053,{coord={29.8,23.4,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Ruins Rise
+					visit_exploration(6035,{coord={20.8,71.2,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Setting Sun Garrison
 					exploration(6553),	-- Shrine of Seven Stars
 					exploration(6142),	-- Shrine of Seven Stars
 					exploration(6141),	-- Shrine of Two Moons
 					exploration(6554),	-- Shrine of Two Moons
+					visit_exploration(6539,{coord={27.1,72.6,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Sunblossom Hill
 					exploration(6055),	-- The Five Sisters
 					exploration(6036),	-- The Golden Pagoda
-					exploration(6033),	-- The Golden Stair
+					visit_exploration(6033,{coord={43.0,16.6,VALE_OF_ETERNAL_BLOSSOMS}}),    -- The Golden Stair
 					exploration(6560),	-- The Golden Terrace
 					exploration(6145),	-- The Summer Fields
 					exploration(6482),	-- The Summer Terrace
 					exploration(6037),	-- Tu Shen Burial Ground
-					exploration(6034),	-- Whitepetal Lake
+					visit_exploration(6034,{coord={45.6,51.8,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Whitepetal Lake
+					visit_exploration(6054,{coord={24.0,47.8,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Winterbough Glade
 				}),
 				n(FACTIONS, {
 					faction(FACTION_GOLDEN_LOTUS),	-- Golden Lotus

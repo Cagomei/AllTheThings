@@ -19,7 +19,7 @@ root(ROOTS.Zones, {
 				}),
 				explorationHeader({
 					exploration(4553),	-- Forlorn Woods
-					exploration(4554),	-- Ruins of Shandaral
+					visit_exploration(4554,{coord={73.0,57.4,CRYSTALSONG_FOREST}}),    -- Ruins of Shandaral
 					exploration(4558),	-- Sunreaver's Command
 					exploration(4555),	-- The Azure Front
 					exploration(4552),	-- The Decrepit Flow

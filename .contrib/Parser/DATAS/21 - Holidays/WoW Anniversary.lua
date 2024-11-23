@@ -2760,18 +2760,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					{ "select", "itemID", 229355},	-- Chromie's Premium Goodie Bag
 					{ "pop" },
 				},
+				["skipFill"] = true,
 			}),
 			i(229359, {	-- Chromie's Goodie Bag
 				["sym"] = {
 					{ "select", "itemID", 229355},	-- Chromie's Premium Goodie Bag
 					{ "pop" },
 				},
+				["skipFill"] = true,
 			}),
 			i(232877, {	-- Timely Goodie Bag
 				["sym"] = {
 					{ "select", "itemID", 229355},	-- Chromie's Premium Goodie Bag
 					{ "pop" },
 				},
+				["skipFill"] = true,
 			}),
 		})),
 		n(QUESTS, {

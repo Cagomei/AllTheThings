@@ -1,0 +1,7 @@
+curl -o "Achievement.csv" "https://wago.tools/db2/Achievement/csv"
+curl -o "Criteria.csv" "https://wago.tools/db2/Criteria/csv"
+curl -o "CriteriaTree.csv" "https://wago.tools/db2/CriteriaTree/csv"
+curl -o "ModifierTree.csv" "https://wago.tools/db2/ModifierTree/csv"
+curl -o "SpellEffect.csv" "https://wago.tools/db2/SpellEffect/csv"
+curl -o "TransmogSet.csv" "https://wago.tools/db2/TransmogSet/csv"
+curl -o "TransmogSetItem.csv" "https://wago.tools/db2/TransmogSetItem/csv"

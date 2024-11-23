@@ -918,6 +918,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 26.3, 42.7, MALDRAXXUS },
 				["g"] = {
 					i(175827),	-- Ani-Matter Orb (QI!)
+					i(175841),	-- Ani-Matter Orb (QI!)
 				},
 			}),
 			q(57301, {	-- Callous Concoctions

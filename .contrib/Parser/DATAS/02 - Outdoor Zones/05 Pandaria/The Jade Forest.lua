@@ -68,6 +68,7 @@ root(ROOTS.Zones, {
 				}),
 				explorationHeader({
 					exploration(5943),	-- Amberfly Bog
+					visit_exploration(5857,{coord={40.0,75.3,THE_JADE_FOREST}}),    -- Camp Gormal
 					exploration(5905),	-- Camp Nooka Nooka
 					exploration(5930),	-- Dawn's Blossom
 					exploration(5951),	-- Dookin' Grounds

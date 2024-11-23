@@ -130,7 +130,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					13050,	-- Bless the Rains Down in Freehold
 					13058,	-- Kul Tiran Up the Dance Floor
 					13049,	-- The Long Con
-					12087,	-- The Reining Champion
 					12852,	-- Treasures of Tiragarde Sound
 					13061,	-- Three Sheets to the Wind
 					13057,	-- Sailed in Sea Minor

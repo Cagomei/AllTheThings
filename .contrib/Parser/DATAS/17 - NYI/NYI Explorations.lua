@@ -499,14 +499,10 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(3715),	-- The Steamvault
 	exploration(3716),	-- The Underbog
 	exploration(3717),	-- The Slave Pens
-	exploration(3721),	-- The Crumbling Waste
-	exploration(3728),	-- The Vortex Fields
 	exploration(3733),	-- The Violet Tower
-	exploration(3735),	-- Voidwind Plateau
 	exploration(3751),	-- Sunfire Point
 	exploration(3755),	-- The Stair of Doom
 	exploration(3761),	-- The High Path
-	exploration(3765),	-- Razorthorn Trail
 	exploration(3767),	-- Blades' Run
 	exploration(3770),	-- Blade Tooth Canyon
 	exploration(3779),	-- Trogma's Claim
@@ -518,12 +514,8 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(3793),	-- Felspark Ravine
 	exploration(3805),	-- Zul'Aman
 	exploration(3806),	-- Supply Caravan
-	exploration(3809),	-- Southern Rampart
 	exploration(3817),	-- Testing
 	exploration(3820),	-- Eye of The Storm
-	exploration(3824),	-- Bloodmaul Ravine
-	exploration(3825),	-- Dragons' End
-	exploration(3826),	-- Daggermaw Canyon
 	exploration(3834),	-- Ridge of Madness
 	exploration(3835),	-- Dustquill Ravine
 	exploration(3836),	-- Magtheridon's Lair
@@ -537,18 +529,15 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(3854),	-- Protectorate Watch Post
 	exploration(3855),	-- Circle of Blood Arena
 	exploration(3856),	-- Elrendar Crossing
-	exploration(3862),	-- Churning Gulch
 	exploration(3869),	-- Mage Tower
 	exploration(3870),	-- Blood Elf Tower
 	exploration(3871),	-- Draenei Ruins
 	exploration(3872),	-- Fel Reaver Ruins
-	exploration(3873),	-- The Proving Grounds
 	exploration(3880),	-- Access Shaft Zeon
 	exploration(3881),	-- Trelleum Mine
 	exploration(3882),	-- Invasion Point: Destroyer
 	exploration(3883),	-- Camp of Boom
 	exploration(3884),	-- Spinebreaker Pass
-	exploration(3885),	-- Netherweb Ridge
 	exploration(3886),	-- Derelict Caravan
 	exploration(3892),	-- Writhing Mound
 	exploration(3896),	-- Aldor Rise
@@ -556,51 +545,30 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(3898),	-- Scryer's Tier
 	exploration(3899),	-- Lower City
 	exploration(3900),	-- Invasion Point: Overlord
-	exploration(3903),	-- Boulder'mok
-	exploration(3904),	-- Cursed Hollow
-	exploration(3917),	-- Auchindoun
 	exploration(3921),	-- Arklonis Ridge
 	exploration(3922),	-- Bladespire Outpost
 	exploration(3923),	-- Gruul's Lair
 	exploration(3924),	-- Northmaul Tower
 	exploration(3925),	-- Southmaul Tower
-	exploration(3926),	-- Shattered Plains
-	exploration(3929),	-- The Path of Conquest
-	exploration(3930),	-- Eclipsion Fields
-	exploration(3931),	-- Bladespire Grounds
 	exploration(3936),	-- Deathforge Tower
 	exploration(3937),	-- Slag Watch
 	exploration(3940),	-- The Fetid Pool
 	exploration(3941),	-- Test
 	exploration(3942),	-- Razaan's Landing
 	exploration(3943),	-- Invasion Point: Cataclysm
-	exploration(3944),	-- The Altar of Shadows
 	exploration(3946),	-- Wayne's Refuge
 	exploration(3947),	-- The Scalding Pools
 	exploration(3948),	-- Brian and Pat Test
 	exploration(3949),	-- Magma Fields
-	exploration(3950),	-- Crimson Watch
 	exploration(3952),	-- Wyrmskull Bridge
-	exploration(3953),	-- Scalewing Shelf
 	exploration(3954),	-- Wyrmskull Tunnel
-	exploration(3955),	-- Hellfire Basin
-	exploration(3956),	-- The Shadow Stair
 	exploration(3959),	-- Black Temple
-	exploration(3960),	-- Soulgrinder's Barrow
 	exploration(3961),	-- Sorrow Wing Point
-	exploration(3962),	-- Vim'gol's Circle
-	exploration(3963),	-- Dragonspine Ridge
 	exploration(3965),	-- Netherwing Mines
 	exploration(3966),	-- Dragonmaw Base Camp
-	exploration(3967),	-- Dragonmaw Skyway
 	exploration(3968),	-- Ruins of Lordaeron
 	exploration(3969),	-- Rivendark's Perch
 	exploration(3970),	-- Obsidia's Perch
-	exploration(3971),	-- Insidion's Perch
-	exploration(3972),	-- Furywing's Perch
-	exploration(3974),	-- Veil Harr'ik
-	exploration(3975),	-- Terokk's Rest
-	exploration(3977),	-- Upper Veil Shil'ak
 	exploration(3979),	-- The Frozen Sea
 	exploration(3985),	-- Falls of Ymiron
 	exploration(3986),	-- Echo Reach
@@ -630,7 +598,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(4074),	-- The Waking Halls
 	exploration(4075),	-- Sunwell Plateau
 	exploration(4076),	-- Reuse Me 7
-	exploration(4078),	-- Razorthorn Rise
 	exploration(4079),	-- Frostblade Pass
 	exploration(4080),	-- Isle of Quel'Danas
 	exploration(4081),	-- The Dawnchaser
@@ -710,12 +677,10 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(4257),	-- Dragonspine Tributary
 	exploration(4258),	-- The North Sea
 	exploration(4259),	-- Drak'ural
-	exploration(4264),	-- Halls of Stone
 	exploration(4265),	-- The Nexus
 	exploration(4268),	-- Ruuna's Camp
 	exploration(4270),	-- Drak'atal Passage
 	exploration(4271),	-- Utgarde Pinnacle
-	exploration(4272),	-- Halls of Lightning
 	exploration(4273),	-- Ulduar
 	exploration(4277),	-- Azjol-Nerub
 	exploration(4280),	-- Drak'Agal
@@ -778,19 +743,15 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(4414),	-- Scarlet Tower
 	exploration(4415),	-- The Violet Hold
 	exploration(4416),	-- Gundrak
-	exploration(4420),	-- Snowblind Terrace
-	exploration(4425),	-- The Forlorn Mine
 	exploration(4426),	-- Bor's Breath River
 	exploration(4427),	-- Argent Vanguard
 	exploration(4433),	-- Dragonspine Peaks
 	exploration(4443),	-- Gate of Echoes
 	exploration(4447),	-- Gate of Lightning
 	exploration(4448),	-- Path of The Titans
-	exploration(4449),	-- Uldis
 	exploration(4450),	-- Loken's Bargain
 	exploration(4451),	-- Bor's Fall
 	exploration(4454),	-- The Storm Foundry
-	exploration(4455),	-- Hibernal Cavern
 	exploration(4456),	-- Voldrune Dwelling
 	exploration(4457),	-- Torseg's Rest
 	exploration(4462),	-- Crystalweb Cavern
@@ -803,15 +764,12 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(4475),	-- Zim'bo's Hideout
 	exploration(4476),	-- Abandoned Camp
 	exploration(4485),	-- The Inventor's Library
-	exploration(4486),	-- The Frozen Mine
 	exploration(4487),	-- Frostfloe Deep
-	exploration(4488),	-- The Howling Hollow
 	exploration(4489),	-- Crusader Forward Camp
 	exploration(4491),	-- Bonesnap's Camp
 	exploration(4493),	-- The Obsidian Sanctum
 	exploration(4494),	-- Ahn'kahet: The Old Kingdom
 	exploration(4498),	-- Halls of The Ancestors
-	exploration(4499),	-- The Blighted Pool
 	exploration(4500),	-- The Eye of Eternity
 	exploration(4502),	-- Mimir's Workshop
 	exploration(4511),	-- The Skybreaker
@@ -827,7 +785,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(4538),	-- The Sunken Ring
 	exploration(4539),	-- The Broken Temple
 	exploration(4541),	-- Vanguard Infirmary
-	exploration(4542),	-- Hall of The Shaper
 	exploration(4544),	-- Death's Breach
 	exploration(4545),	-- Abandoned Mine
 	exploration(4547),	-- Halls of Stone
@@ -859,7 +816,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(4589),	-- The Chilled Quagmire
 	exploration(4590),	-- The Steppe of Life
 	exploration(4591),	-- Silent Vigil
-	exploration(4592),	-- Gimorak's Den
 	exploration(4593),	-- The Pit of Fiends
 	exploration(4594),	-- Battlescar Spire
 	exploration(4595),	-- Hall of Horrors
@@ -1468,7 +1424,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(5659),	-- The Hole
 	exploration(5660),	-- Obsidian Lair
 	exploration(5664),	-- Iso'rath
-	exploration(5665),	-- Sunwatcher's Ridge
 	exploration(5667),	-- Cannon's Inferno
 	exploration(5670),	-- Oasis of Vir'sar
 	exploration(5672),	-- Chamber of The Moon
@@ -1477,7 +1432,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(5675),	-- Arikara's Needle
 	exploration(5676),	-- Irontree Clearing
 	exploration(5678),	-- Sindweller's Rise
-	exploration(5679),	-- Neferset City Outskirts
 	exploration(5680),	-- Wildhammer Flag Room
 	exploration(5681),	-- Dragonmaw Flag Room
 	exploration(5682),	-- Thunderstrike Mountain
@@ -1485,7 +1439,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(5685),	-- Pilgrim's Precipice
 	exploration(5686),	-- Bashal'Aran Collapse
 	exploration(5687),	-- The Howling Oak
-	exploration(5688),	-- Mount Akher
 	exploration(5690),	-- Arsad Trade Post
 	exploration(5691),	-- Darkspear Shore
 	exploration(5692),	-- The Deathknell Graves
@@ -1510,7 +1463,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(5714),	-- Stormglen Village
 	exploration(5715),	-- Vir'naal Oasis
 	exploration(5716),	-- Vir'naal Lake
-	exploration(5717),	-- Vir'naal River Delta
 	exploration(5718),	-- Fortune's Fist
 	exploration(5719),	-- The Commons
 	exploration(5720),	-- Duskmist Shore
@@ -1623,7 +1575,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(5850),	-- Silken Shore
 	exploration(5852),	-- Wreck of The Vanguard
 	exploration(5856),	-- Shrine of Remembrance
-	exploration(5857),	-- Camp Gormal
 	exploration(5859),	-- The Elders' Path
 	exploration(5860),	-- Liang's Retreat
 	exploration(5861),	-- Darkmoon Island
@@ -1734,8 +1685,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(6050),	-- Spiritsong River
 	exploration(6051),	-- Temple of Kotmogu
 	exploration(6052),	-- Scarlet Halls
-	exploration(6053),	-- Ruins Rise
-	exploration(6054),	-- Winterbough Glade
 	exploration(6060),	-- Temple of Kotmogu
 	exploration(6061),	-- Temple of Kotmogu
 	exploration(6066),	-- Scholomance
@@ -1743,7 +1692,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(6069),	-- Inkgill Mere
 	exploration(6071),	-- The Drunken Hozen
 	exploration(6072),	-- Lao & Son's Yakwash
-	exploration(6073),	-- The Autumn Plains
 	exploration(6075),	-- The Golden Gateway
 	exploration(6078),	-- Seat of The Spirit Waker
 	exploration(6079),	-- The Grummle Bazaar
@@ -1799,7 +1747,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(6175),	-- Seeker's Folly
 	exploration(6176),	-- Coldridge Valley
 	exploration(6179),	-- Owen's Wishing Well
-	exploration(6181),	-- Waterspeaker's Sanctuary
 	exploration(6182),	-- Mogu'shan Palace
 	exploration(6184),	-- Seeker's Point
 	exploration(6186),	-- Neverest Basecamp
@@ -1913,7 +1860,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(6424),	-- Sra'vess Rootchamber
 	exploration(6425),	-- Forgotten Mire
 	exploration(6426),	-- Brewmoon Festival
-	exploration(6427),	-- Inkgill Mere
 	exploration(6428),	-- The Ancient Passage
 	exploration(6430),	-- Anglers Expedition
 	exploration(6431),	-- Seaspittle Cove
@@ -1941,7 +1887,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(6462),	-- Path of Conquerors
 	exploration(6463),	-- Dustwallow Marsh
 	exploration(6466),	-- Cavern of Endless Echoes
-	exploration(6467),	-- Mogu'shan Terrace
 	exploration(6468),	-- The Emperor's Reach
 	exploration(6469),	-- Howlingwind Trail
 	exploration(6470),	-- The Gilded Foyer
@@ -2001,7 +1946,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(6533),	-- The Skyfire
 	exploration(6534),	-- Twinspire Keep Interior
 	exploration(6535),	-- Den of Defiance
-	exploration(6539),	-- Sunblossom Hill
 	exploration(6540),	-- Spiritsong's Rest
 	exploration(6541),	-- Applebloom Tavern
 	exploration(6542),	-- Terrace of Gurthan
@@ -5467,7 +5411,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(13754),	-- The Carving Winds
 	exploration(13762),	-- Sylvan Glade
 	exploration(13763),	-- Cloverwood Hollow
-	exploration(13764),	-- Maruukai
 	exploration(13765),	-- Ohn'ahra's Roost
 	exploration(13768),	-- The Slumbering Vault
 	exploration(13769),	-- The Forbidden Reach
