@@ -133,6 +133,10 @@ root(ROOTS.Zones, {
 					exploration(4527),	-- Balargarde Fortress
 					exploration(4521),	-- Cathedral of Darkness
 					exploration(4518),	-- Corp'rethar: The Horror Gate
+					visit_exploration(4580,{coord={79.6,72.3,ICECROWN}}),    -- Crusaders' Pinnacle
+					visit_exploration(4467,{coord={21.1,47.8,ICECROWN}}),    -- Death's Rise
+					visit_exploration(4743,{coord={60.7,21.9,ICECROWN}}),    -- Deathspeaker's Watch
+					visit_exploration(4498,{coord={27.6,47.2,ICECROWN}}),    -- Halls of the Ancestors
 					exploration(4522),	-- Icecrown Citadel
 					exploration(4523),	-- Icecrown Glacier
 					exploration(4503),	-- Ironwall Dam
@@ -143,24 +147,32 @@ root(ROOTS.Zones, {
 					exploration(4508),	-- Mord'rethar: The Death Gate
 					exploration(4526),	-- Njorndar Village
 					exploration(4417),	-- Onslaught Harbor
+					visit_exploration(4514,{coord={56.5,57.4,ICECROWN}}),    -- Saronite Mines
 					exploration(4497),	-- Savage Ledge
 					exploration(4506),	-- Scourgeholme
 					exploration(4533),	-- Sindragosa's Fall
+					visit_exploration(4676,{coord={76.2,24.1,ICECROWN}}),    -- Sunreaver Pavilion
+					visit_exploration(4672,{coord={75.3,18.3,ICECROWN}}),    -- The Alliance Valiants' Ring
 					exploration(4501),	-- The Argent Vanguard
-					exploration(4509),	-- The Bombardment
+					visit_exploration(4670,{coord={70.9,19.8,ICECROWN}}),    -- The Aspirants' Ring
+					visit_exploration(4509,{coord={57.4,42.1,ICECROWN}}),    -- The Bombardment
 					exploration(4505),	-- The Breach
 					exploration(4507),	-- The Broken Front
-					exploration(4515),	-- The Conflagration
+					visit_exploration(4515,{coord={47.7,63.2,ICECROWN}}),    -- The Conflagration
 					exploration(4519),	-- The Court of Bones
+					visit_exploration(4529,{coord={9.7,46.6,ICECROWN}}),    -- The Crimson Cathedral
 					exploration(4531),	-- The Fleshwerks
+					visit_exploration(4862,{coord={54.2,90.6,ICECROWN}}),    -- The Frozen Halls
+					visit_exploration(4593,{coord={76.4,52.6,ICECROWN}}),    -- The Pit of Fiends
+					visit_exploration(4669,{coord={72.0,24.0,ICECROWN}}),    -- The Ring of Champions
 					exploration(4477),	-- The Shadow Vault
 					exploration(4540),	-- The Valley of Fallen Heroes
-					exploration(4537),	-- The Valley of Lost Hope
+					visit_exploration(4537,{coord={64.3,49.2,ICECROWN}}),    -- The Valley of Lost Hope
 					exploration(4492),	-- Ufrang's Hall
 					exploration(4524),	-- Valhalas
 					exploration(4504),	-- Valley of Echoes
 					exploration(4517),	-- Weeping Quarry
-					exploration(4513),	-- Ymirheim
+					visit_exploration(4513,{coord={53.0,53.7,ICECROWN}}),    -- Ymirheim
 				}),
 				n(FACTIONS, {
 					faction(FACTION_ARGENT_CRUSADE, {	-- Argent Crusade

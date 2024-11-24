@@ -235,10 +235,14 @@ root(ROOTS.Zones, {
 					},
 				}),
 				explorationHeader({
+					visit_exploration(4385,{coord={38.7,38.5,SHOLAZAR_BASIN}}),    -- Bittertide Lake
 					exploration(4369),	-- Dorian's Outpost
 					exploration(4292),	-- Frenzyheart Hill
+					visit_exploration(10191,{coord={64.5,68.7,SHOLAZAR_BASIN}}),    -- Frenzyheart River
+					visit_exploration(10186,{coord={66.5,75.1,SHOLAZAR_BASIN}}),    -- Hardknuckle Clearing
 					exploration(4287),	-- Kartak's Hold
 					exploration(4306),	-- Mistwhisper Refuge
+					visit_exploration(10184,{coord={76.1,50.5,SHOLAZAR_BASIN}}),    -- Mosswalker Village
 					exploration(4284),	-- Nesingwary Base Camp
 					exploration(4291),	-- Rainspeaker Canopy
 					exploration(4386),	-- Rainspeaker Rapids
@@ -256,12 +260,17 @@ root(ROOTS.Zones, {
 					exploration(4412),	-- The Makers' Overlook
 					exploration(4413),	-- The Makers' Perch
 					exploration(4400),	-- The Mosslight Pillar
+					visit_exploration(4289,{coord={24.6,53.3,SHOLAZAR_BASIN}}),    -- The Path of the Lifewarden
 					exploration(4376),	-- The Savage Thicket
+					visit_exploration(4285,{coord={20.3,60.8,SHOLAZAR_BASIN}}),    -- The Seabreach Flow
 					exploration(4302),	-- The Skyreach Pillar
 					exploration(4392),	-- The Stormwright's Shelf
+					visit_exploration(10182,{coord={70.7,58.6,SHOLAZAR_BASIN}}),    -- The Sundered Shard
 					exploration(4389),	-- The Suntouched Pillar
 					exploration(4300),	-- Waygate
 					exploration(4293),	-- Wildgrowth Mangal
+					visit_exploration(10181,{coord={44.1,57.9,SHOLAZAR_BASIN}}),    -- Wildgrowth Mangal
+					visit_exploration(10192,{coord={47.4,72.9,SHOLAZAR_BASIN}}),    -- Wintergrasp River
 				}),
 				n(FACTIONS, {
 					faction(1117, {	-- Sholazar Basin

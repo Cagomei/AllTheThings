@@ -2169,9 +2169,6 @@ root(ROOTS.Zones, {
 						["description"] = "Inside the Cavern of Lost Spirits.",
 						["questID"] = 33203,
 						["coord"] = { 62.9, 35.3, 555 },	-- Cavern of Lost Spirits
-						["g"] = {
-
-						},
 					}),
 					o(221672, {	-- Smoldering Chest
 						["questID"] = 33208,

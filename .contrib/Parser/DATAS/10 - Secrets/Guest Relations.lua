@@ -141,6 +141,51 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					i(229375),	-- Neural Enlarger
 				},
 			}),
+			n(230310, {	-- Pointless Treasure Salesman
+				["description"] = "Inside the Booty Bay goblin statue behind chests in the back.",
+				["coord"] = { 33.6, 63.5, THE_CAPE_OF_STRANGLETHORN },
+				["g"] = {
+					i(228996, {	-- Relic of Crystal Connections
+						["cost"] = {
+							{ "i", 228995, 1 },	-- Golden Muffin
+							{ "i", 228967, 9 },	-- Piece of Hate
+						},
+					}),
+				},
+			}),
+			n(91079, {	-- Vashti the Wandering Merchant <General Goods>
+				["description"] = "Can be found pathing up and down the road between Felblaze Ingress and The Ruined Sanctum in Azsuna, Broken Isles.",
+				["coords"] = {
+					-- North stop
+					{ 66.0, 22.2, AZSUNA },
+					-- Middle
+					{ 65.2, 36.4, AZSUNA },
+					-- South stop
+					{ 65.8, 48.2, AZSUNA },
+				},
+				["g"] = {
+					i(228986, {	-- Aesthetician's Coupon Book
+						["cost"] = 5000000,	-- 500g
+					}),
+					i(229413), 	-- Bottle of Steam
+					i(229413, {	-- "Dogg-Saron" Costume
+						["cost"] = 250000000,	-- 25,000g
+					}),
+					i(228989, {	-- Exotic Critter Taming License
+						["cost"] = 5000000,	-- 500g
+					}),
+					i(228767, {	-- Sandy Celebration Crate (QS!)
+						["provider"] = { "i", 228768 },	-- Water-Resistant Receipt
+						["cost"] = 5000000,	-- 500g
+					}),
+					i(228987, {	-- Scroll of Fel Binding
+						["cost"] = 5000000,	-- 500g
+					}),
+					i(228991, {	-- Stone of Prophecy
+						["cost"] = 50000000,	-- 5,000g
+					}),
+				},
+			}),
 		}),
 		header(HEADERS.Achievement, 40872, {	-- I Saved the Party and All I Got Was This Lousy Hat
 			ach(40872, {	-- I Saved the Party and All I Got Was This Lousy Hat (automated)
@@ -154,7 +199,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(84237, {	-- The "Great" Detective
-				["description"] = "1. Talk to the members of Team Solid in following order until the quest shows 48% progress.\n- Ellanoir\n- Duryllin\n- Juddson Rakes\n- Ellanoir\n2. Interact with the Abandoned Beach Chair at the Southbreak Shore.\n.3 Use your Torch of Pyrreth at Wavestrider Beach to reveal Herrkrop's body.\n4. Talk to all nearby NPCs.\n5. Talk to Athelton Jones to complete the quest requirements.",
+				["description"] = "1. Talk to the members of Team Solid in following order until the quest shows 48% progress.\n- Ellanoir\n- Duryllin\n- Juddson Rakes\n- Ellanoir\n2. Interact with the Abandoned Beach Chair at the Southbreak Shore.\n3. Use your Torch of Pyrreth at Wavestrider Beach to reveal Herrkrop's body.\n4. Talk to all nearby NPCs.\n5. Talk to Athelton Jones to complete the quest requirements.",
 				["provider"] = { "n", 226796 },	-- Athektin Jones
 				["sourceQuest"] = 84236,	-- The Great Detective
 				["coord"] = { 63.9, 51.7, TANARIS },
@@ -192,8 +237,11 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			}),
 			q(84278, {	-- Tracking Quest
 				["description"] = "Use the Goblin Transport at 68.0, 40.8 to travel to Borean Tundra, then find Rexxar.",
-				["provider"] = { "n", 226683 },	-- Alyx <Volunteer Assistant Guest Relations Manager>
 				["sourceQuest"] = 84237,	-- The 'Great' Detective
+				["qgs"] = {
+					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
+					232406,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
+				},
 				["coord"] = { 63.0, 50.2, TANARIS },
 				["g"] = {
 					i(227551),	-- Note from Rexxar (QI!)
@@ -343,6 +391,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["qgs"] = {
 					232404,	-- Alyx <Volunteer Assistant Guest Relations Manager and Associate Event Coordinator>
 					232405,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Associate Event Coordinator>
+					232407,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 				},
 				["coord"] = { 63.0, 50.2, TANARIS },
 			},
@@ -389,7 +438,10 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			},
 			-- Chapter 3
 			q(85047, {	-- A Pirate Predicament
-				["provider"] = { "n", 232407 },	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
+				["providers"] = {
+					{ "n", 232407 },	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
+					{ "n", 232408 },	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator, and Temporary Service Agent>
+				},
 				["sourceQuests"] = {
 					84756,	-- The Toy Thief [A]
 					85043,	-- The Toy Thief [H]
@@ -964,39 +1016,6 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					["coord"] = { 64.9, 84.4, THOUSAND_NEEDLES },
 					["g"] = { i(228768) },	-- Water-Resistant Receipt
 				}),
-				n(91079, {	-- Vashti the Wandering Merchant <General Goods>
-					["description"] = "Can be found pathing up and down the road between Felblaze Ingress and The Ruined Sanctum in Azsuna, Broken Isles.",
-					["coords"] = {
-						-- North stop
-						{ 66.0, 22.2, AZSUNA },
-						-- Middle
-						{ 65.2, 36.4, AZSUNA },
-						-- South stop
-						{ 65.8, 48.2, AZSUNA },
-					},
-					["g"] = {
-						i(228986, {	-- Aesthetician's Coupon Book
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(229413), 	-- Bottle of Steam
-						i(229413, {	-- "Dogg-Saron" Costume
-							["cost"] = 250000000,	-- 25,000g
-						}),
-						i(228989, {	-- Exotic Critter Taming License
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(228767, {	-- Sandy Celebration Crate (QS!)
-							["provider"] = { "i", 228768 },	-- Water-Resistant Receipt
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(228987, {	-- Scroll of Fel Binding
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(228991, {	-- Stone of Prophecy
-							["cost"] = 50000000,	-- 5,000g
-						}),
-					},
-				}),
 				q(84624, {	-- Sandy Celebration Crate
 					["provider"] = { "i", 228767 },	-- Sandy Celebration Crate
 				}),
@@ -1166,7 +1185,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["g"] = {
 					--1 O'clock Basin
 					header(HEADERS.Quest, 84676, {	-- The Light of Their Love
-						["description"] = "Acquire The Light of Their Love buff (spellID 153715) 3 times from visiting areas relevant to Olgra, Mankrik's wife. Stand at these areas with your Torch of Pyrreth until a stack is gained.\n1. The Humble Monument in Borthern Barrens.\n2. Young Olgra in Draenor.\n3. Decimator Olgra in Maldraxxus.\nFully lights up the 1 O'clock basin.",
+						["description"] = "Acquire The Light of Their Love buff (spellID 153715) 3 times from visiting areas relevant to Olgra, Mankrik's wife. Stand at these areas with your Torch of Pyrreth until a stack is gained.\n1. The Humble Monument in Borthern Barrens.\n2. Young Olgra in Draenor.\n3. Decimator Olgra in Maldraxxus.\n\nFully lights up the 1 O'clock basin.",
 						["sourceQuest"] = 84684,	-- Ratts' Race
 						["provider"] = { "i", 208092 },	-- Torch of Pyrreth
 						["coords"] = {
@@ -1188,7 +1207,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					}),
 					--2 O'clock Basin
 					header(HEADERS.Quest, 84677, {	-- Acquire the Key of Shadows
-						["description"] = "Requires the 1 O'clock basin to have been completed to see the obelisk personally.\n1. Acquire the Twitching Eyaball or All-Seeing Eyes toys\n2. Acquire a Perky Pug with either the Dogg-Saron costume from Vashti the Wandering Merchant in Aszuna or the Yipp-Saron costume from Hallow's End (or the AH.)\n3. Bring these items OR find a friend who has them and visit the Ny'Alotha Obelisk above the Seat of Knowledge in the Vale of Eternal Blossoms (BFA).\n4. Have someone summon a perky pug and use the toys, then /pray in front of the obelisk to be granted the Key of Shadows.\nThere is a 5-15 minute delay even if you do everything right. Everyone within 10 yards should get the key if anyone in range does it correctly.\nFully lights up the 2 O'clock basin",
+						["description"] = "Requires the 1 O'clock basin to have been completed to see the obelisk personally.\n1. Acquire the Twitching Eyaball or All-Seeing Eyes toys\n2. Acquire a Perky Pug with either the Dogg-Saron costume from Vashti the Wandering Merchant in Aszuna or the Yipp-Saron costume from Hallow's End (or the AH.)\n3. Bring these items OR find a friend who has them and visit the Ny'Alotha Obelisk above the Seat of Knowledge in the Vale of Eternal Blossoms (BFA).\n4. Have someone summon a perky pug and use the toys, then /pray in front of the obelisk to be granted the Key of Shadows.\n\nThere is a 5-15 minute delay even if you do everything right. Everyone within 10 yards should get the key if anyone in range does it correctly.\n\nFully lights up the 2 O'clock basin",
 						["providers"] = {
 							{ "n", 153297 },	-- Ny'Alotha Obelisk
 							{ "n", 37865 },	-- Perky Pug
@@ -1215,7 +1234,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					}),
 					--3 O'clock Basin
 					header(HEADERS.Item, 228967, {	-- Header will use HQT once discovered
-						["description"] = "Requires 2 O'clock basin to have been completed first\n1. Use the Key of Shadows to enter the room to the left of the Red Button. Fish up an Astral key from the bowl on the left bookshelf. Open the Astral chest in the same room, use the goggles.\n2. Interact with any of the consoles around the catacombs until you get a new actionbar. Can't see it? Look in your spellbook for a Number Sequence spell. Click the console again to submit your code.\n3. Enter the codes on adjacent consoles to open each of the chests, each Piece of Hate will give you an orb at the 3 O'clock basin.",
+						["description"] = "1. Use the Key of Shadows to enter the room to the left of the Red Button. Fish up an Astral key from the bowl on the left bookshelf. Open the Astral chest in the same room, use the goggles.\n2. Interact with any of the consoles around the catacombs until you get a new actionbar. Can't see it? Look in your spellbook for a Number Sequence spell. Click the console again to submit your code.\n3. Enter the codes on adjacent consoles to open each of the chests, each Piece of Hate will give you an orb at the 3 O'clock basin, fully lighting with 9 orbs.",
 						["sourceQuest"] = 84677,	-- Acquire the Key of Shadows
 						["provider"] = { "i", 53156 },	-- Key of Shadows
 						["g"] = {
@@ -1303,7 +1322,38 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 						},
 					}),
 					--4 O'clock Basin
+					hqt(84780, {	-- Use the Scroll of Fel Binding at Uther's Tomb
+						["name"] = "Use the Scroll of Fel Binding at Uther's Tomb",
+						["description"] = "1. Use the Scroll of Fel Binding sold by Vashti the Wandering Merchant in Aszuna, Broken Isles right outside Uther's Tomb in the Western Plaugelands.\n2. You will die, return to your corpse and fight the Doomguard while inspecting the writings on the floor of the tomb.\n\nFully lights up the 4 O'clock basin.",
+						["cost"] = { { "i", 228987, 1 }	},	-- Scroll of Fel Binding
+						["coord"] = { 52.1, 85.1, WESTERN_PLAGUELANDS },
+					}),
 					--5 O'clock Basin
+					q(84781, {	-- Master of Secrets
+						["description"] = "1. Visit the Timeless isle and find Zarhym in the Cavern of Lost Spirits. Talk to Zarhym, a rare ghostly skull inside the entrance to enter the spirit realm.\n2. Within 5 minutes, Navigate to the back of the cave while avoiding ghosts to find Jeremy Feasel. Stay nearby to him, and you will not exit the spirit realm even if your 5 minutes buff expires.\n3. Defeat Jeremy in a pet battle using only 'secret' pets from the list. If someone in your group beats him in a battle, that also counts and he will grant you the quest too on talking to him.\n\nFully lights up the 5 O'clock basin.\n\nValid pets:\nBaa'l, Bumbles, Glimr, Jenafur, Nelthara, Snowclaw Cub, Spyragos, Sun Darter Hatchling, Taptaf, Terky, Wicker Pup",
+						["sourceQuest"] = 84780,	-- Use the Scroll of Fel Binding at Uther's Tomb
+						["providers"] = {
+							{ "n", 232048 },	-- Jeremy Feasel
+							{ "n", 141941 },	-- Baa'l
+							{ "n", 143730 },	-- Bumbles
+							{ "n", 169514 },	-- Glimr
+							{ "n", 159783 },	-- Jenafur
+							{ "n", 204367 },	-- Nelthara
+							{ "n", 192343 },	-- Snowclaw Cub
+							{ "n", 191381 },	-- Spyragos
+							{ "n", 61087 },		-- Sun Darter Hatchling
+							{ "n", 139770 },	-- Taptaf
+							{ "n", 16445 },		-- Terky
+							{ "n", 143189 },	-- Wicker Pup
+						},
+						["coords"] = {
+							{ 43.1, 41.4, TIMELESS_ISLE },
+							{ 53.3, 56.8, 555 },	-- Cavern of Lost Spirits
+							{ 39.6, 38.4, 555 },	-- Cavern of Lost Spirits
+						},
+						["crs"] = 71876,
+						["g"] = { i(228995) },	-- Golden Muffin
+					}),
 					--6 O'clock Basin
 					--7 O'clock Basin
 					header(HEADERS.Object, 254262, {	-- Owl of the Watchers [4 Orbs confirmed from this step.]
@@ -1363,18 +1413,6 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			o(475130, {	-- Hidden Hatch
 				["description"] = "Behind an energy conduit in an alcove to the right when first entering the Mechanar.",
 			}),
-			n(230310, {	-- Pointless Treasure Salesman
-				["description"] = "Inside the Booty Bay goblin statue behind chests in the back.",
-				["coord"] = { 33.6, 63.5, THE_CAPE_OF_STRANGLETHORN },
-				["g"] = {
-					i(228996, {	-- Relic of Crystal Connections
-						["cost"] = {
-							{ "i", 228995, 1 },	-- Golden Muffin
-							{ "i", 228967, 9 },	-- Piece of Hate
-						},
-					}),
-				},
-			}),
 		}),
 	},
 })));
@@ -1384,6 +1422,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(85564),	-- Talking to Kelsey during (85060) Pirate Foods and Superstitions.
 		q(85565),	-- Talking to Mrs. Gant during (85060) Pirate Foods and Superstitions.
 		q(85411),	-- Speaking to Bottlenose second option during (85195) Pirate Gastronomy.
+		q(85412),	-- Speaking to Bottlenose third option during (85195) Pirate Gastronomy.
 		q(85414),	-- Acquire 2 Swiftthistle for (85195) Pirate Gastronomy.
 		q(85415),	-- Acquire 2 Witchberries for (85195) Pirate Gastronomy.
 		q(85416),	-- Acquire 1 Small Flame Sac for (85195) Pirate Gastronomy.

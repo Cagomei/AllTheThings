@@ -237,39 +237,39 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					-- TODO: use provider instead for crits
 					i(163110, {	-- Fried Boar Sausage
 						["coord"] = { 26.7, 72.5, DRUSTVAR },
-						["criteriaID"] = 1,
+						["criteriaID"] = 41649,
 						["crs"] = {
 							136655,	-- Alisha Darkwater
 						},
 					}),
 					i(155812, {	-- Goldshire Farms Smoked Sausage
 						["coord"] = { 55.6, 34.8, DRUSTVAR },
-						["criteriaID"] = 2,
+						["criteriaID"] = 41648,
 						["crs"] = {
 							128467,	-- Elijah Eggleton <Sausages>
 						},
 					}),
 					i(163781, {	-- Heartsbane Hexenwurst
 						["description"] = "Recipe for cooks is dropped by Raal the Gluttonous in Waycrest Manor or buy the sausage off the AH.",
-						["criteriaID"] = 3,
+						["criteriaID"] = 41650,
 					}),
 					i(155811, {	-- Roland's Famous Frankfurter
 						["coord"] = { 55.6, 34.8, DRUSTVAR },
-						["criteriaID"] = 4,
+						["criteriaID"] = 41651,
 						["crs"] = {
 							128467,	-- Elijah Eggleton <Sausages>
 						},
 					}),
 					i(155813, {	-- Rosco Fryer's Mostly-Meat Brat
 						["coord"] = { 55.6, 34.8, DRUSTVAR },
-						["criteriaID"] = 5,
+						["criteriaID"] = 41652,
 						["crs"] = {
 							128467,	-- Elijah Eggleton <Sausages>
 						},
 					}),
 					i(155814, {	-- Timmy Gene Sunrise Pork
 						["coord"] = { 55.6, 34.8, DRUSTVAR },
-						["criteriaID"] = 6,
+						["criteriaID"] = 41653,
 						["crs"] = {
 							128467,	-- Elijah Eggleton <Sausages>
 						},

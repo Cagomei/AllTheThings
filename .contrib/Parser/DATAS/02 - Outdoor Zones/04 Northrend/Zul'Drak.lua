@@ -133,9 +133,10 @@ root(ROOTS.Zones, {
 					exploration(4327),	-- Drak'Mabwa
 					exploration(4279),	-- Drak'Sotra
 					exploration(4278),	-- Drak'Sotra Fields
+					visit_exploration(4309,{coord={26.5,86.8,ZULDRAK}}),    -- Drak'Tharon Keep
 					exploration(4312),	-- Ebon Watch
 					exploration(4375),	-- Gundrak
-					exploration(4326),	-- Heb'Drakkar
+					visit_exploration(4326,{coord={64.2,53.7,ZULDRAK}}),    -- Heb'Drakkar
 					exploration(4294),	-- Heb'Valok
 					exploration(4481),	-- Jintha'kalar Passage
 					exploration(4299),	-- Kolramas
@@ -155,6 +156,7 @@ root(ROOTS.Zones, {
 					exploration(4319),	-- Zim'Abwa
 					exploration(4328),	-- Zim'Rhuk
 					exploration(4323),	-- Zim'Torga
+					visit_exploration(4373,{coord={79.8,37.2,ZULDRAK}}),    -- Zol'Heb
 					exploration(4372),	-- Zol'Maz Stronghold
 				}),
 				n(FLIGHT_PATHS, {
