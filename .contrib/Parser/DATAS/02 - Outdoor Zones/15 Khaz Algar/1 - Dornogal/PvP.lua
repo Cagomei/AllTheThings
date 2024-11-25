@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			})),
 			n(VENDORS, {
 				n(219215, {	-- Hotharn <Competitor's Recipes>
-					["coord"] = { 55.4, 70.0, DORNOGAL },
+					["coord"] = { 55.5, 77.1, DORNOGAL },
 					["g"] = sharedData({ ["cost"] = {{"c", HONOR, 7500}} }, {
 						i(225433),	-- Design: Algari Competitor's Amulet (RECIPIE!)
 						i(225432),	-- Design: Algari Competitor's Signet (RECIPIE!)

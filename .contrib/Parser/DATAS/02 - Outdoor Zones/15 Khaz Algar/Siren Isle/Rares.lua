@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			n(227550, {	-- Shardsong
 				-- pirates / vrykul
 				["coord"] = { 28.1, 24.9, 2375 },
-				--["questID"] = ???,	-- (TODO: didn't fire questID on kill)
+				["questID"] = 86779,
 			}),
 			-- STORM PHASE RARES
 			n(231356, {	-- Brinebough

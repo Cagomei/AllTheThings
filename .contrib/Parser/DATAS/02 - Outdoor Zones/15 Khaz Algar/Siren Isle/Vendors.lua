@@ -142,6 +142,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					fbiron(10, i(230728)),	-- Experimental Go-Pack
 				},
 			}),
+			n(228390, {	-- Snizzle Fumblecrank
+				["coord"] = { 69.0, 46.4, SIREN_ISLE },
+				["g"] = {
+					i(234282), -- Decorative Yard Flamingo (TODO: unsure at what point it pop here)
+				},
+			}),
 			n(234390, {	-- Soweezi
 				["coord"] = { 70.0, 48.4, SIREN_ISLE },
 				["g"] = {
@@ -161,25 +167,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			n(233259, {	-- Taljori
 				["coord"] = { 65.7, 41.7, SIREN_ISLE },
 				["g"] = {
-					--I suspect missing stuff could be due to bug that citrine is added into vendor and replace cosmetic?
-					--I unlocked 2 for this vendor and 2 items are missing
 					fbiron(3000, i(234536)),	-- Ensemble: Bilgeswabby's Garb
 					fbiron(3000, i(234537)),	-- Ensemble: Pilfered Mariner's Garb
 					fbiron(3000, i(234538)),	-- Ensemble: Salt-Stained Garb
 					--fbiron(350, i(233910)),	-- Salt-Stained Sweatcap (TODO: now treasure, same questID as it was for Ashvane boots)
 					fbiron(350, i(233845)),	-- Quilted Long-Sleeved Sea Tunic
 					fbiron(350, i(233844)),	-- Quilted Sea Vest
-					fbiron(350, i(233892)),	-- Quilted Waist Wrap
 					fbiron(350, i(233912)),	-- Bilge Rat Pirate Hat
-					fbiron(350, i(233902)),	-- Tattered Rat Hat (missing?)
 					fbiron(350, i(233903)),	-- Knife Juggler's Bicorne
+					fbiron(350, i(233902)),	-- Tattered Rat Hat
 					fbiron(350, i(233911)),	-- Bloodstained Rat Cap
-					--fbiron(350, i(233916)),	-- Ashvane Issued Workboots (TODO: was treasure, not it is not, again, and missing)
+					fbiron(350, i(233892)),	-- Quilted Waist Wrap
+					--fbiron(350, i(233916)),	-- Ashvane Issued Workboots (TODO: was treasure, now it is not, again, and missing)
 					--fbiron(350, i(233915)),	-- Plated Sea Boots (TODO: now in crate)
 					fbiron(3000, i(234513)),	-- Ensemble: Rune Scribe's Vestments
 					fbiron(3000, i(234514)),	-- Ensemble: Bloodscout Outfit
 					fbiron(3000, i(234515)),	-- Ensemble: Hydraflayer Regalia
 					fbiron(3000, i(234516)),	-- Ensemble: Tidecrasher Armor
+					fbiron(350, i(234414)),	-- Runescribe's Ritual Tunic
 					fbiron(350, i(233818)),	-- Vrykul Blacksmith's Gavel
 					fbiron(350, i(233819)),	-- Stormtouched Blacksmith's Gavel
 					fbiron(350, i(233807)),	-- Bloodwake Hullrender
@@ -187,7 +192,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					fbiron(350, i(233857)),	-- Bloodwake Sailpiercer
 					fbiron(350, i(233856)),	-- Hydraflayer's Longbow
 					fbiron(350, i(233961)),	-- Bloodstained War Buckler
-					fbiron(350, i(234414)),	-- Runescribe's Ritual Tunic
 					fbiron(350, i(233805)),	-- Vrykul Pyromancer's Wand
 					fbiron(350, i(233832)),	-- Tidestalker's Gutter
 					fbiron(350, i(233809)),	-- Myrmidon's Wave Slasher

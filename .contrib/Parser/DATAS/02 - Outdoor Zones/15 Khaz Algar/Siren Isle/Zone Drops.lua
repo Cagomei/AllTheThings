@@ -8,9 +8,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			i(232605),	-- Thunderous Fragment (TODO: from Pilfered Earthen Chest but seems to be can rng drop from any mobs?)
 			i(232572),	-- Torrential Runekey
 			--i(232570),	-- Turbulent Runekey
-			n(228582, {	-- First Mate Shellshock (TODO: but could be rng drop, unsure)
+			n(228582, {	-- First Mate Shellshock
 				i(228621),	-- Bilge Rat Supply Key
 			}),
+			i(234816),	-- Overflowing Bag of Iron
 		}),
 	}),
 })));

@@ -1036,6 +1036,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 163211 },	-- Henry Garrick
 					["coord"] = { 75.3, 54.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_9_0_1, REMOVED_10_0_2 },
 					["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
 				}),
 				q(58983, {	-- Battle for Azeroth: Tides of War (SL/new player version)
@@ -1170,6 +1171,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 168771 },	-- Shuja Grimaxe
 					["coord"] = { 70.9, 49.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_9_0_1, REMOVED_10_0_2 },
 					["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
 				}),
 				q(60361, {	-- Battle for Azeroth: Mission Statement (SL/new player version)

@@ -2391,6 +2391,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(81448, 226232),	-- Skinning Elusive Razormouth Steelhide
 			FirstSkin(81451, 219265),	-- Skinning Emperor Pitfang
 			FirstSkin(85548, 220492),	-- Skinning Finclaw Bloodtide
+			FirstSkin(86795, 228601, ADDED_11_0_7),	-- Skinning Ghostmaker
 			FirstSkin(83402, 221668),	-- Skinning Horror of the Shallows
 			FirstSkin(83413, 221327),	-- Skinning Kaheti Silk Hauler
 			FirstSkin(83409, 220285),	-- Skinning Lurker of the Deeps

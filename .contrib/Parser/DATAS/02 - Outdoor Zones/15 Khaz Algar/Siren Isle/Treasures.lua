@@ -6,32 +6,47 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 		n(TREASURES, {
 			--repeatable local treasure
 			--o(474822),	-- Runed Storm Cache
+			--o(494499),	-- Seafarer's Cache
+			--o(500682),	-- Seafarer's Cache
 			--o(500683),	-- Seafarer's Cache
+			--o(500684),	-- Seafarer's Cache
+			--o(500685),	-- Seafarer's Cache
 			--o(500686),	-- Seafarer's Cache
+			--^ probably even more ids exist
 			--
-			--o(??, {	--  ??
-			--	-- TODO: unsure if something needed in addition or it just exist here now
-			--	-- TODO: with build 57641 reward for this questID treasure is changed
-			--	["coord"] = { 74.1, 53.4, SIREN_ISLE },
-			--	["questID"] = 86765,
-			--	["g"] = {
-			--		i(233910), -- Salt-Stained Sweatcap (COSMETIC!)
-			--	},
-			--}),
-			o(464233, {	--  Bilge Rat Supply Chest
+			i(233501),	-- Sandy Snapdragon Treat
+			--was looted from Seafarer's Cache in water (o: 500685 if to be more accurate was for me)
+			--
+			o(505510, {	-- Barnacle-Encrusted Chest
+				-- TODO: with build 57641 reward for this questID treasure is changed
+				["coord"] = { 74.1, 53.2, SIREN_ISLE },
+				["questID"] = 86765,
+				["g"] = {
+					i(233910), -- Salt-Stained Sweatcap (COSMETIC!)
+				},
+			}),
+			o(464233, {	-- Bilge Rat Supply Chest
 				-- Pirates
 				["coord"] = { 62.4, 90.8, SIREN_ISLE },
 				["questID"] = 84529,
 				["cost"] = {{ "i", 228621, 1 }},	-- Bilge Rat Supply Key
 				["isWeekly"] = true,
 			}),
-			o(465272, {	--  Empty Kaja'Cola Can
+			o(507120, {	-- Ducky Friend
+				-- Storm phase
+				--["description"] = "Was found in storm phase in house at 2nd floor, on bed.",
+				["coord"] = { 39.2, 54.2, SIREN_ISLE },
+				["g"] = {
+					i(233447),	-- Marmaduke's "Ducky Friend"
+				},
+			}),
+			o(465272, {	-- Empty Kaja'Cola Can
 				["coord"] = { 60.8, 62.9, SIREN_ISLE },
 				["g"] = {
 					i(228665),	-- Empty Kaja'Cola (QS!)
 				},
 			}),
-			o(505504, {	--  Kul Tiran Lumberer's Hatchet
+			o(505504, {	-- Kul Tiran Lumberer's Hatchet
 				-- Naga?
 				["coord"] = { 40.2, 41.8, SIREN_ISLE },
 				["questID"] = 86764,
@@ -72,9 +87,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["questID"] = 84843,
 			}),
 			o(493375, {	-- Rune-Sealed Coffer
-				-- TODO: move to hqt? 85714 solving puzzle before unlock it
+				-- Vrykul
 				["coord"] = { 67.8, 73.5, SIREN_ISLE },
 				["questID"] = 86171,
+				["isWeekly"] = true,
+			}),
+			o(494475, {	-- Rune-Speared Spear
+				["coord"] = { 57.9, 78.5, SIREN_ISLE },
+				["g"] = {
+					i(232439),	-- Rune-Seared Spear (QS!)
+				},
 			}),
 			o(505476, {	-- Stone Carver's Scramseax
 				["coord"] = { 26.5, 23.4, 2375 },

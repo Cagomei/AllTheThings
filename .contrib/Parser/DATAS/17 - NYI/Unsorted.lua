@@ -47,7 +47,6 @@ root(ROOTS.Unsorted, {
 			i(230207),	-- N.U.K.U.L.A.R. Target Painter
 			i(230211),	-- Singing Citrine
 			i(231751),	-- Earthen Backpack
-			i(232439),	-- Rune-Seared Spear
 			i(232519),	-- Razeshi B.
 			i(232573),	-- Thunderous Runekey
 			i(232597),	-- Swabbie's Oar
@@ -274,16 +273,11 @@ root(ROOTS.Unsorted, {
 			i(233360),	-- Gold-Reinforced Cushioned Boots
 			i(233361),	-- Wind-Up Wuffi
 			i(233366),	-- Wind-Up Woofer
-			i(233447),	-- Marmaduke's "Ducky Friend"
-			i(233489),	-- [PH] Multi-color Snapdragon
-			i(233493),	-- [PH] Snapdragon Treat 01
 			i(233494),	-- [PH] Snapdragon Treat 02
 			i(233495),	-- [PH] Snapdragon Treat 03
-			i(233497),	-- [PH] Snapdragon Treat 04
 			i(233498),	-- [PH] Snapdragon Treat 05
 			i(233499),	-- [PH] Snapdragon Treat 06
 			i(233500),	-- [PH] Snapdragon Treat 07
-			i(233501),	-- [PH] Snapdragon Treat 08
 			i(233650),	-- Call Galefeather
 			i(233800),	-- [PH] Chris' Flavor Test Item
 			i(233811),	-- [PH] Legs
@@ -434,7 +428,6 @@ root(ROOTS.Unsorted, {
 			i(234246),	-- Glyph of the Admiral's Pistol Shot
 			i(234247),	-- Glyph of the Gilded Pistol Shot
 			i(234248),	-- Glyph of the Twilight Pistol Shot
-			i(234282),	-- Decorative Yard Flamingo
 			i(234313),	-- [DNT] Item
 			i(234328),	-- Torrential Fragment
 			i(234379),	-- Crackleroar

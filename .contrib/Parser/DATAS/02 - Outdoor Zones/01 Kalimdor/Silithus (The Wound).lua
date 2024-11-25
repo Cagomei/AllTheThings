@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["g"] = {
 								i(171219),	-- Corrupt Black Dragonscales (QI!)
 								i(169223, {	-- Ashjra'kamas, Shroud of Resolve
-									["bonusID"] = 6272,	-- Rank 1 Appearence
+									["bonusID"] = 6272,	-- Rank 1 Appearance
 								}),
 							},
 						}),
@@ -647,7 +647,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["cost"] = { { "i", 174782, 1 } },	-- Fear and Flesh
 							["g"] = {
 								i(169223, {	-- Ashjra'kamas, Shroud of Resolve
-									["bonusID"] = 6277,	-- (Rank 6 appearence)
+									["bonusID"] = 6277,	-- (Rank 6 Appearance)
 								}),
 								i(171354),	-- Horrific Core
 							},
@@ -800,7 +800,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["cost"] = { { "i", 174784, 1 } },	-- The Final Truth
 							["g"] = {
 								i(169223, {	-- Ashjra'kamas, Shroud of Resolve
-									["bonusID"] = 6283,	-- (Rank 12 Appearence)
+									["bonusID"] = 6283,	-- (Rank 12 Appearance)
 								}),
 								i(171355),	-- Voidborn Core
 							},

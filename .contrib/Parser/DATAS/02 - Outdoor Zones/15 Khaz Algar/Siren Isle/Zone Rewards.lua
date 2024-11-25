@@ -20,6 +20,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			i(232372, {	-- Crate of Bygone Riches
 				i(233915),	-- Plated Sea Boots (COSMETIC!)
 			}),
+			n(228099, {	-- Blinky Greasefingers
+				["description"] = "Click on dialog option that pop, after you learn Snapdragom mount",
+				--["lockCriteria"] = {1, "questID", 86485 },	-- TODO: probably a spellID will be better?
+				["coord"] = { 69.2, 45.8, SIREN_ISLE },
+				["g"] = {
+					i(233497), -- Kaja'Cola-braised Snapdragon Treat
+				},
+			}),
 			-- Do nothing, placeholder?
 			--i(191087, {	-- Treasure Map: Ohn'ahran Plains (NYI, after use fire questID 65912)
 			--	["cost"] = {

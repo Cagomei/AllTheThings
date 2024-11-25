@@ -242,7 +242,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				-- TODO: Vrykul
 				["sourceQuests"] = { 84725 },	-- The Circlet Calls
 				["provider"] = { "n", 228096 },	-- Dawn
-				["coord"] = { 69.1, 43.0, SIREN_ISLE },
+				["coords"] = {
+					{ 69.1, 43.0, SIREN_ISLE },
+					{ 71.4, 44.1, SIREN_ISLE },
+				},
 				["isWeekly"] = true,
 			}),
 			q(84619, {	-- Ooker Dooker Literature Club
@@ -289,7 +292,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				-- TODO: Vrykul
 				["sourceQuests"] = { 84725 },	-- The Circlet Calls
 				["provider"] = { "n", 228096 },	-- Dawn
-				["coord"] = { 69.1, 43.0, SIREN_ISLE },
+				["coords"] = {
+					{ 69.1, 43.0, SIREN_ISLE },
+					{ 71.4, 44.1, SIREN_ISLE },
+				},
 				["isWeekly"] = true,
 				["g"] = {
 					i(228988),	-- Rock Reviver (QI!)
@@ -363,6 +369,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["provider"] = { "i", 228665 },	-- Empty Kaja'Cola
 				["coord"] = { 69.3, 43.7, SIREN_ISLE },
 			}),
+			q(85716, {	-- Rune-Seared Spear
+				--["sourceQuests"] = { 85059 },	-- A Piece of the Action (TODO: ???)
+				["provider"] = { "i", 232439 },	-- Rune-Seared Spear
+				["coord"] = { 57.9, 78.5, SIREN_ISLE },
+			}),
 			q(85570, {	-- The Tattered Journal
 				--["sourceQuests"] = { ??? },	-- ???
 				["provider"] = { "o", 494923 },	-- Tattered Journal
@@ -400,7 +411,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					i(232694),	-- Transcribed Kul Tiran Journal [book]
 				},
 			}),
-			-- Snapdragon
+			-- Snapdragon (need to add into Account Wide quests)
 			q(85573, {	-- A Lifeline
 				--["sourceQuests"] = { 84547 },	-- Redemption Guaranteed (TODO: speculation)
 				["provider"] = { "n", 235216 },	-- Starving Snapdragon Runt
@@ -410,10 +421,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				},
 			}),
 			q(86483, {	-- Snap To It
-				["sourceQuests"] = {
-					85573,	-- A Lifeline
-					--86486,	-- Hungry, Hungry Snapdragon (TODO: It take 2 (same) dailies for this quest to pop)
-				},
+				["sourceQuests"] = { 85573 },	-- A Lifeline
 				["provider"] = { "n", 235237 },	-- Growing Snapdragon Runt
 				["coord"] = { 70.9, 48.6, SIREN_ISLE },
 				["g"] = {
@@ -421,29 +429,36 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				},
 			}),
 			q(86484, {	-- Temper Like A Tempest
-				["sourceQuests"] = {
-					86483,	-- Snap To It
-					--86486,	-- Hungry, Hungry Snapdragon (TODO: It take 2 (same) dailies for this quest to pop)
-				},
+				["sourceQuests"] = { 86483 },	-- Snap To It
 				["provider"] = { "n", 235243 },	-- Maturing Prismatic Snapdragon
 				["coord"] = { 70.9, 48.6, SIREN_ISLE },
 				["g"] = {
 					i(234592),	-- Storminfused Mystery Meat (QI!)
-					-- TODO: doesn't exist in loot table on ptr (57528), cannot progress further
+				},
+			}),
+			q(86485, {	-- A Loyal Friend
+				-- dialogs do nothing and didn't trigger additional hqts on ptr
+				["sourceQuests"] = { 86483 },	-- Snap To It
+				["provider"] = { "n", 235250 },	-- Mature Prismatic Snapdragon
+				["coord"] = { 70.9, 48.6, SIREN_ISLE },
+				["g"] = {
+					i(233489), -- Prismatic Snapdragon (MOUNT!)
+					i(233493), -- Teal Snapdragon Treat
 				},
 			}),
 			q(86486, {	-- Hungry, Hungry Snapdragon
 				-- available after 24hrs (not on next day!) of turn in previous quest
+				-- require 2 time per growing phase to do it
 				["sourceQuests"] = { 85573 },	-- A Lifeline
 				["providers"] = {
 					{ "n", 235237 },	-- Growing Snapdragon Runt
+					{ "n", 235250 },	-- Mature Prismatic Snapdragon
 					{ "n", 235243 },	-- Maturing Prismatic Snapdragon
-					{ "n", 235250 },	-- Maturing Prismatic Snapdragon
 				},
 				["coord"] = { 70.9, 48.6, SIREN_ISLE },
 				["isDaily"] = true,
 				["g"] = {
-					-- It require some meat (in quest description but not on ptr)
+					i(235368),	-- Mystery Meat Snack (QI!)
 				},
 			}),
 			-- Birdy (move to special?)
@@ -533,6 +548,16 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				q(85802),	-- Whirling (spellID 471167)
 				-- Snapdragon timer after quest
 				q(86566),	-- [DNT] Snapdragon Progress Update (spellID 1214684)
+				-- Treasure
+				q(85714, {["isWeekly"]=true,}),	-- Solving puzzle to unlock Rune-Sealed Coffer
+				-- Another unlock for vendor (snapdragon treats)
+				--q(),	-- Crimson Snapdragon Treat
+				--q(),	-- Inky Snapdragon Treat
+				q(86376),	-- Kaja'Cola-braised Snapdragon Treat
+				--q(),	-- Muddy Snapdragon Treat
+				--q(),	-- Royal Snapdragon Treat
+				q(86380),	-- Sandy Snapdragon Treat
+				--q(),	-- Storminfused Snapdragon Treat
 				--
 				--Probably won't be on live:
 				--plate stuff didn't trigger questIDs on druid:

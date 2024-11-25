@@ -681,3 +681,15 @@ iq(230262, 85222);	-- Bronze Celebration Titles: Pandaria Enthusiast
 iq(229827, 85014);	-- Bronze Celebration Titles: Plaguelands Survivor
 iq(230267, 85227);	-- Bronze Celebration Titles: Shadowlands Enthusiast
 iq(230265, 85225);	-- Bronze Celebration Titles: Zuldazar Enthusiast
+
+------------------
+-- PATCH 11.0.7 --
+------------------
+--iq(233500, 86386);	-- Crimson Snapdragon Treat
+--iq(233495, 86382);	-- Inky Snapdragon Treat
+iq(233497, 86383);	-- Kaja'Cola-braised Snapdragon Treat
+--iq(233494, 86381);	-- Muddy Snapdragon Treat
+--iq(233499, 86385);	-- Royal Snapdragon Treat
+iq(233501, 86387);	-- Sandy Snapdragon Treat
+--iq(233498, 86384);	-- Storminfused Snapdragon Treat
+iq(233493, 86373);	-- Teal Snapdragon Treat

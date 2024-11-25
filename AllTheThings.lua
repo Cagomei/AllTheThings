@@ -5086,7 +5086,8 @@ app.AddEventHandler("RowOnEnter", function(self)
 
 	-- Default top row line if nothing is generated from a link.
 	if tooltip:NumLines() < 1 then
-		tooltipInfo[#tooltipInfo + 1] = { left = reference.text }
+		-- sometimes text is nil
+		tooltipInfo[#tooltipInfo + 1] = { left = reference.text or RETRIEVING_DATA }
 	end
 
 	local title = reference.title;
@@ -8853,7 +8854,12 @@ customWindowUpdates.list = function(self, force, got)
 			-- can only determine a sourceID if there is an itemID/sourceID on the group
 			if not data.itemID and not data.sourceID then return true end
 			if not data._VerifyGroupSourceID then data._VerifyGroupSourceID = 0 end
-			if data._VerifyGroupSourceID > 5 then return true end
+			if data._VerifyGroupSourceID > 5 then
+				-- app.PrintDebug("Cannot Harvest: No Item Info",
+				-- 	app:SearchLink(SearchForObject("itemID",data.modItemID,"field") or SearchForObject("sourceID",data.sourceID,"field")),
+				-- 	data._VerifyGroupSourceID)
+				return true
+			end
 			data._VerifyGroupSourceID = data._VerifyGroupSourceID + 1
 			local link, source = data.link or data.silentLink, data.sourceID;
 			if not link then return; end
@@ -8863,7 +8869,7 @@ customWindowUpdates.list = function(self, force, got)
 			end
 			-- If it doesn't, the source ID will need to be harvested.
 			local sourceID = app.GetSourceID(link);
-			-- app.PrintDebug("SourceIDs",data.modItemID,source,sourceID,success,link,app.GetSourceID(link))
+			-- app.PrintDebug("SourceIDs",data.modItemID,source,app.GetSourceID(link),link)
 			if sourceID and sourceID > 0 then
 				-- only save the source if it is different than what we already have, or being forced
 				if not source or source < 1 or source ~= sourceID then
@@ -8985,7 +8991,7 @@ customWindowUpdates.list = function(self, force, got)
 						added[cacheID] = true;
 						-- app.PrintDebug("CacheID",cacheID,"from cache",id,"@",index,#groups)
 						-- app.PrintDebug(o.modItemID,o[dataType],o[cacheKeyID])
-					-- else app.PrintDebug("Ignored Data for Harvest due to Matching CacheID",cacheID,app:SearchLink(o))
+					-- else app.PrintDebug("Ignored Data for Harvest due to CacheID Bounds",cacheID,app:SearchLink(o))
 					end
 				end
 			end

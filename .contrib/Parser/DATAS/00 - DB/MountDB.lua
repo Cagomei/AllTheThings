@@ -1933,6 +1933,7 @@ i(235515, 473472);	-- Jani's Trashpile
 i(234716, 1214920);	-- Nightfall Skyreaver
 i(226042, 457656);	-- Plunderlord's Midnight Crocolisk
 i(233240, 437162);	-- Polly Roger
+i(233489, 474086);	-- Prismatic Snapdragon
 i(233242, 254812);	-- Royal Seafeather
 i(223313, 448934);	-- Shadow of Doubt
 i(233243, 300154);	-- Silver Tidestallion

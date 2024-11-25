@@ -990,7 +990,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					49748,	-- Hero's Herald
 					-- #endif
 				},
-				["coord"] = { 27.6, 21.2, STORMWIND_CITY },
+				["coords"] = {
+					{ 27.6, 21.2, STORMWIND_CITY },
+					{ 62.3, 30.3, STORMWIND_CITY },
+				},
 				["timeline"] = { ADDED_8_0_1 },
 				["races"] = ALLIANCE_ONLY,
 			}),
