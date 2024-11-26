@@ -355,6 +355,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					19172,	-- Gnome Commoner
 					19173,	-- Night Elf Commoner
 					20102,	-- Goblin Commoner
+					220307,	-- Holiday Enthusiast
 				},
 				["maps"] = {
 					NORTHERN_BARRENS,

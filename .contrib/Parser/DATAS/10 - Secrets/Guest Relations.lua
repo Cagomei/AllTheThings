@@ -199,7 +199,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(84237, {	-- The "Great" Detective
-				["description"] = "1. Talk to the members of Team Solid in following order until the quest shows 48% progress.\n- Ellanoir\n- Duryllin\n- Juddson Rakes\n- Ellanoir\n2. Interact with the Abandoned Beach Chair at the Southbreak Shore.\n3. Use your Torch of Pyrreth at Wavestrider Beach to reveal Herrkrop's body.\n4. Talk to all nearby NPCs.\n5. Talk to Athelton Jones to complete the quest requirements.",
+				["description"] = "1. Talk to the members of Team Solid in following order until the quest shows 48% progress.\n- Ellanoir\n- Duryllin\n- Juddson Rakes\n- Ellanoir\n2. Use your Torch of Pyrreth at Wavestrider Beach to reveal Herrkrop's body.\n3. Talk to all nearby NPCs.\n4. Talk to Athelton Jones to complete the quest requirements.",
 				["provider"] = { "n", 226796 },	-- Athektin Jones
 				["sourceQuest"] = 84236,	-- The Great Detective
 				["coord"] = { 63.9, 51.7, TANARIS },
@@ -212,10 +212,6 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					}),
 					n(226803, {	-- Juddson Rakes
 						["coord"] = { 63.8, 51.1, TANARIS },
-					}),
-					o(459263, {	-- Abandoned Beach Chair
-						["coord"] = { 66.0, 59.5, TANARIS },
-						["description"] = "Investigate the Abandoned Beach Chair.",
 					}),
 					n(226810, {	-- Herrkrop
 						["provider"] = { "i", 208092 },	-- Torch of Pyrreth
@@ -470,9 +466,9 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			}),
 			q(85208, {	-- A Pirate Missive
 				["sourceQuest"] = 85060,	-- Pirate Foods and Superstitions
-				["providers"] = {
-					{ "n", 232407 },	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
-					{ "n", 232408 },	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
+				["qgs"] = {
+					232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
+					232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 				},
 				["coord"] = { 63.0, 50.2, TANARIS },
 				["isBreadcrumb"] = true,
@@ -1322,14 +1318,16 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					}),
 					--5 O'clock Basin
 					q(84781, {	-- Master of Secrets
-						["description"] = "1. Visit the Timeless isle and find Zarhym in the Cavern of Lost Spirits. Talk to Zarhym, a rare ghostly skull inside the entrance to enter the spirit realm.\n2. Within 5 minutes, Navigate to the back of the cave while avoiding ghosts to find Jeremy Feasel. Stay nearby to him, and you will not exit the spirit realm even if your 5 minutes buff expires.\n3. Defeat Jeremy in a pet battle using only 'secret' pets from the list. If someone in your group beats him in a battle, that also counts and he will grant you the quest too on talking to him. The pets MUST be level 25.\n\nFully lights up the 5 O'clock basin.\n\nValid pets:\nBaa'l, Bumbles, Glimr, Jenafur, Nelthara, Phoenix Wishwing, Snowclaw Cub, Spyragos, Sun Darter Hatchling, Taptaf, Terky, Wicker Pup",
+						["description"] = "1. Visit the Timeless isle and find Zarhym in the Cavern of Lost Spirits. Talk to Zarhym, a rare ghostly skull inside the entrance to enter the spirit realm.\n2. Within 5 minutes, Navigate to the back of the cave while avoiding ghosts to find Jeremy Feasel. Stay nearby to him, and you will not exit the spirit realm even if your 5 minutes buff expires.\n3. Defeat Jeremy in a pet battle using only 'secret' pets from the list. If someone in your group beats him in a battle, that also counts and he will grant you the quest too on talking to him. The pets MUST be level 25.\n\nFully lights up the 5 O'clock basin.\n\nValid pets:\nBaa'l, Bumbles, Filthy Slime, Glimr, Jenafur, Lil' Abom, Nelthara, Phoenix Wishwing, Snowclaw Cub, Spyragos, Sun Darter Hatchling, Taptaf, Terky, Wicker Pup",
 						["sourceQuest"] = 84780,	-- Use the Scroll of Fel Binding at Uther's Tomb
 						["providers"] = {
 							{ "n", 232048 },	-- Jeremy Feasel
 							{ "n", 141941 },	-- Baa'l
 							{ "n", 143730 },	-- Bumbles
+							{ "n", 160704 },	-- Filthy Slime
 							{ "n", 169514 },	-- Glimr
 							{ "n", 159783 },	-- Jenafur
+							{ "n", 179008 },	-- Lil' Abom
 							{ "n", 204367 },	-- Nelthara
 							{ "n", 189117 },	-- Phoenix Wishwing
 							{ "n", 192343 },	-- Snowclaw Cub
@@ -1366,7 +1364,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 								["crs"] = 230424,
 							}),
 							hqt(84810, {	-- Appease the Spirit of Collections (Shadow)
-								["description"] = "Confirmed actions to appease:\nOutfit: Cloak of the Black Void (or a cloak with the same appearance)\n\nEmotes: /smirk with the spirit targeted\n\nPets: Lesser Voidcaller\n\nToys: Shadowy Disguise, Void Totem",
+								["description"] = "Confirmed actions to appease:\nOutfit: Cloak of the Black Void (or a cloak with the same appearance)\n\nEmotes: /smirk with the spirit targeted\n\nPets: Lesser Voidcaller, Sir Shady Mrrgglton Junior, Voidwiggler\n\nToys: Shadowy Disguise, Void Totem",
 								["name"] = "Appease the Spirit of Collections (Shadow)",
 								["coord"] = { 78.1, 46.3, NORTHERN_STRANGLETHORN },
 								["crs"] = 230440,
@@ -1436,8 +1434,11 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 								["maps"] = { 710, 711, 712 },	-- Vault of the Wardens
 							}),
 							o(466960, {	-- Treasure of the Wardens
-								["description"] = "Once you place the Sentry Statue in the Vault of Mirrors, a grid of watcher statues will appear. You need to make each statue descend into the floor, but each statue you click will toggle the state of 4 other statues.\n\nThere are addons and website tools to solve this, for your sanity, use one. You can do this in a group but you must personally place the Sentry Statue for the ending chest to be interactable. That means everyone would have to get the Statue themselves, place it in a solo dungeon, then leave and reset the instance if you want to solve it as a group.\n\nFully lights up the 7 O'clock basin.",
-								["sourceQuest"] = 84916,	-- Place the Sentry Statue in the Vault of Mirrors
+								["description"] = "Once you place the Sentry Statue in the Vault of Mirrors, a 5x5 grid of watcher statues will appear. You need to make each statue descend into the floor, but each statue you click will toggle the state of 4 other statues.\n\nThere are addons and website tools to solve this, for your sanity, use one. You may solve this secret in a group.\n\nFully lights up the 7 O'clock basin.",
+								["providers"] = {
+									{ "n", 97128 },	-- Fledgling Warden Owl
+									{ "i", 208092 },	-- Torch of Pyrreth
+								},
 								["maps"] = { 710, 711, 712 },	-- Vault of the Wardens
 								["crs"] = 109300,	-- Sentry
 								["g"] = { i(229054) },	-- Warden's Mirror
@@ -1446,15 +1447,55 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					}),
 					--8 O'clock Basin
 					o(466975, {	-- Enigma Machine
+						["description"] = "On the left side of the hallway after the second stairwell.",
 						["coord"] = { 59.9, 42.6, 46 },	-- Karazhan Catacombs
 						["g"] = {
 							hqt(84829, {	-- Insert the Ancient Shaman Blood into the Enigma Machine
 								["name"] = "Insert the Ancient Shaman Blood into the Enigma Machine",
+								["sourceQuest"] = 84811,	-- Acquire the Ancient Shaman Blood
 								["cost"] = { { "i", 229007, 1 } },	-- Ancient Shaman Blood
 							}),
 							hqt(84830, {	-- Insert the Warden's Mirror into the Enigma Machine
 								["name"] = "Insert the Warden's Mirror into the Enigma Machine",
+								["sourceQuest"] = 84823,	-- Acquire the Warden's Mirror
 								["cost"] = { { "i", 229054, 1 } },	-- Warden's Mirror
+							}),
+							hqt(84837, {	-- Decipher the Enigma Machine
+								["name"] = "Decipher the Enigma Machine",
+								["description"] ="1. Hit begin on the console, then hit submit. A randomized number of rats will spawn in the catacombs.\n2. Count the number of Rats in the whole catacombs, use a targeting macro to make sure you don't miss one. There will also be Catacombs Rats, those DO NOT COUNT. Kill both types of rats once you are sure of your count so they cannot interfere with pressure plates.\n3. Depending on the number of rats, you need to drag a certain number of statues to a specific pressure plate and stack them, the beacon color will shift from Blue->Green->Yellow->Orange->Purple as a plate has 1->2->3->4->5 entities stack on it.\n4. Head back to the Enigma Machine and submit, you will be electrocuted if you get it wrong, leave and reset the instance if you do, restarting at lock 1. Otherwise, continue counting the next set of rats and submitting results using info from the next column until you've completed all 7 locks.\n\nPlate 1 is at 71.6, 20.1 at the top of the map in the felcycle room\nPlate 2 is at 68.5, 34.2 right at the entrance to the felcycle room\nPlate 3 is at 73.6, 43.0 behind the locked gate on the right of the map, use your Relic of Crystal Connections to teleport to the humming crystal in the room by targeting it\nPlate 4 is at 68.8, 50.9 in the center of the hallway opposite the felcycle room\nPlate 5 is at 73.6, 65.3 in the flooded dead end hallway right as you enter the catacombs\nPlate 6 is at 60.2, 71.6 on the left side of the hallway before the cat room\nPlate 7 is at 47.8, 78.9 in the corner of the room with the Astral chest\n\n[# Rats | Lock 1| Lock 2| Lock 3| Lock 4| Lock 5| Lock 6| Lock 7|\n[1 Rats | 1 > P1 | 1 > P2 | 1 > P3 | 1 > P4 | 1 > P5 | 1 > P6 | 1 > P7 |\n[2 Rats | 1 > P2 | 1 > P4 | 1 > P6 | 2 > P1 | 2 > P3 | 2 > P5 | 2 > P7 |\n[3 Rats | 1 > P3 | 1 > P6 | 2 > P2 | 2 > P5 | 3 > P1 | 3 > P4 | 1 > P1 |\n[4 Rats | 1 > P4 | 2 > P1 | 2 > P5 | 3 > P2 | 3 > P6 | 1 > P4 | 2 > P1 |\n[5 Rats | 1 > P5 | 2 > P3 | 3 > P1 | 3 > P6 | 1 > P5 | 2 > P3 | 3 > P1 |\n[6 Rats | 1 > P6 | 2 > P3 | 3 > P4 | 1 > P4 | 2 > P3 | 3 > P2 | 1 > P2 |\n[7 Rats | 1 > P7 | 2 > P7 | 1 > P1 | 2 > P1 | 3 > P1 | 1 > P2 | 2 > P2 |\n[8 Rats | 2 > P1 | 3 > P2 | 1 > P4 | 2 > P5 | 3 > P6 | 2 > P1 | 3 > P2 |\n[9 Rats | 2 > P2 | 3 > P4 | 1 > P7 | 3 > P2 | 1 > P5 | 2 > P7 | 1 > P3 |\n[10Rats| 2 > P3 | 3 > P6 | 2 > P3 | 3 > P6 | 2 > P3 | 3 > P6 | 2 > P3 |\nExample: Counting 5 rats during Lock 5, stack 1 statue on pressure plate 5.\n\nFully lights up the 8 O'clock basin.",
+								["sourceQuests"] = {
+									84829,	-- Insert the Ancient Shaman Blood into the Enigma Machine
+									84830,	-- Insert the Warden's Mirror into the Enigma Machine
+								},
+								["provider"] = { "i", 228996 },	-- Relic of Crystal Connections
+								["g"] = {
+									n(230653, {	-- Greed Statue
+										["description"] = "Right of the entrance of the felcycle room.",
+										["coord"] = { 70.6, 34.5, 46 },	-- Karazhan Catacombs
+									}),
+									n(230654, {	-- Guardian Statue
+										["description"] = "Opposite the Enigma Machine.",
+										["coord"] = { 61.2, 47.9, 46 },	-- Karazhan Catacombs
+									}),
+									n(230655, {	-- Watcher  Statue
+										["description"] = "On the right inside the room ahead of the Red Button.",
+										["coord"] = { 43.4, 64.9, 46 },	-- Karazhan Catacombs
+									}),
+									n(230652, {	-- Nature Statue
+										["description"] = "In the room with the Astral Chest, left of the Red Button.",
+										["coord"] = { 49.3, 75.9, 46 },	-- Karazhan Catacombs
+									}),
+									n(230657, {	-- Rage Statue
+										["description"] = "At the bottom of the entrance stairwell.",
+										["coord"] = { 70.3, 79.1, 46 },	-- Karazhan Catacombs
+									}),
+									n(230596, {	-- Rat
+										["description"] = "This is a |cff4caf50VALID|r rat, it counts!",
+									}),
+									n(230599, {	-- Catacombs Rat
+										["description"] = "This is an |cffff0000INVALID|r rat, it DOESN'T count!",
+									}),
+								},
 							}),
 						},
 					}),
@@ -1477,7 +1518,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					--11 O'clock Basin
 					--12 O'clock Basin
 					o(475116, {	-- Ordinary Pebble
-						["description"] = "These pebbles can be found throughout the catacombs.\n1. Halfway down the entrance stairwell, behind a candelabra sitting on the bannister.\n2. Behind the frame of the archway halfway down the entrance stairwell, opposite the skeleton sitting on the other side of the arch.\n3. To the left of the tilted Replica Owl of the Watchers in the first room after the entrance stairs.\n4. On the inside corner of the doorway to the cat room, interactable through the gate.\n5. In the hand of a skeleton in the corner of the hallway leading to the Felcycle.\n6. On a shelf in the back in he Nature statue room.",
+						["description"] = "These pebbles can be found throughout the catacombs.\n1. Halfway down the entrance stairwell, behind a candelabra sitting on the bannister.\n2. Behind the frame of the archway halfway down the entrance stairwell, opposite the skeleton sitting on the other side of the arch.\n3. To the left of the tilted Replica Owl of the Watchers in the first room after the entrance stairs.\n4. On the inside corner of the doorway to the cat room, interactable through the gate.\n5. In the hand of a skeleton in the corner of the hallway leading to the Felcycle.\n6. On a shelf in the back in the Nature statue room.",
 						["coords"] = {
 							{ 70.1, 90.3, 46 },	-- Stair Pebble
 							{ 70.3, 81.0, 46 },	-- Arch Pebble

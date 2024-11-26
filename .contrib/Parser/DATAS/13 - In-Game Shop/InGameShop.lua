@@ -240,10 +240,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(128424, {	-- Brightpaw (PET!)
 			["timeline"] = { ADDED_6_2_3 },
 		}),
-		i(229366, {	-- Brrrgl (PET!)
-			["description"] = "Available with the purchase of an Ice Murloc Funko Pop from the Blizzard Gear Store to a US/UK mailing address. The code will be emailed and can be redeemed on Battle.net or the launcher.",
-			["timeline"] = { ADDED_11_0_5 },
-		}),
+		--i(229366),	-- Brrrgl (PET!)	-- Under TWW Promos
 		i(92707, {	-- Cinder Kitten (PET!)
 			["timeline"] = { ADDED_5_1_0 },
 		}),
@@ -256,9 +253,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(109014, {	-- Dread Hatchling (PET!)
 			["timeline"] = { ADDED_5_4_7, REMOVED_8_3_0, ADDED_10_1_0 },
 		}),
-		applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(68385, {	-- Lil' Ragnaros (PET!)
+		i(68385, {	-- Lil' Ragnaros (PET!)
 			["timeline"] = { ADDED_4_0_3 },
-		})),
+		}),
+		--i(229368),	-- Gill'el (PET!)	-- Under TWW Promos
 		i(190586, {	-- Lil' Ursoc (PET!)
 			["timeline"] = { ADDED_9_2_5 },
 		}),
@@ -543,7 +541,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_5_4_0, REMOVED_8_3_0 },
 		}),
 		i(231290, {	-- Reven's Comfy Carrier
-			["timeline"] = { ADDED_11_0_5, "removed 11.0.5.99999" },	-- Available through January 7, 2025
+			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.99999" },	-- Available through January 7, 2025
 		}),
 		i(188260, {	-- Ruby Wings of Awakening
 			["timeline"] = { ADDED_10_2_0 },

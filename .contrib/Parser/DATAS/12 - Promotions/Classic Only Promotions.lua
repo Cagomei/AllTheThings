@@ -125,6 +125,10 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 				},
 				["u"] = REMOVED_FROM_GAME,
 			}),
+			i(33225, {	-- Reins of the Swift Spectral Tiger (CN Only)
+				["description"] = "Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",
+				["u"] = REMOVED_FROM_GAME,
+			}),			
 		},
 	}),
 	expansion(EXPANSION.WRATH, {
@@ -206,6 +210,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 				["groups"] = {
 					i(187794),	-- Flurky
 				},
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(75492, {	-- Glub [2023 17th January until 31st July 2023]
 				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
@@ -243,6 +248,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 						-- Description is under the 6 Months Promo?
 					}),
 				},
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(70863, {	-- Hoplet [2023 17th January until 31st July 2023]
 				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
@@ -281,13 +287,36 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					-- ["description"] = "Obtained if you set up a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023 or a 6 Month WoW Subscription between 17th January 2023 until 31st July 2023.",
 					}),
 				},
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(207097, {	-- Nightmarish Emerald Drake
 				["description"] = "Obtained if you set up a 12 Month WoW Subscription after 27th October 2023.",
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(209877, {	-- Cypress
 				["description"] = "Obtained if you set up a 6 Month WoW Subscription after 10th January 2024.",
+				["u"] = REMOVED_FROM_GAME,
 			}),
+			mount(49290, {	-- Magic Rooster (TW Only)[2023 10th October until 8th January 2024]
+				["description"] = "Obtained if you set up a 3 Month WoW Subscription between 10th October 2022 until 8th January 2024.",
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			i(74269, {	-- Blazing Hippogryph (TW Only)[2024 8th January until 8th April 2024] (Unknown which exact dates)
+				["description"] = "Obtained if you set up a 3 Month WoW Subscription between 8th January 2024 until 8th April 2024.",
+				["u"] = REMOVED_FROM_GAME,
+			}),
+		},
+	}),
+	expansion(EXPANSION.CATA, {
+		["timeline"] = { ADDED_4_4_0 },
+		["groups"] = {
+			mount(463045, {	-- Lava Drake
+				["description"] = "Obtained if you set up a 12 Month WoW Subscription after 15th October 2024.",
+			}),
+			i(224002, {	-- Swoopy
+				["description"] = "Obtained if you set up a 12 Month WoW Subscription after 15th October 2024.",
+			}),
+			-- add flying spectral tiger (yes) to chinese server only
 		},
 	}),
 	-- #endif

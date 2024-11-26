@@ -1158,6 +1158,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					{ 36.6, 74.6, ORGRIMMAR },
 					{ 62.8, 50.2, TANARIS },
 				},
+				-- make sure this available timeline doesn't get eaten by matching removed timeline on merged parent Quests
+				["_forcetimeline"] = true,
 				-- #endif
 				["races"] = HORDE_ONLY,
 			}),
@@ -1171,6 +1173,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					{ 84.6, 25.0, STORMWIND_CITY },
 					{ 62.8, 50.2, TANARIS },
 				},
+				-- make sure this available timeline doesn't get eaten by matching removed timeline on merged parent Quests
+				["_forcetimeline"] = true,
 				-- #endif
 				["races"] = ALLIANCE_ONLY,
 			}),

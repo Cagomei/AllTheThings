@@ -17,8 +17,13 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 		n(ACHIEVEMENTS, {
 			ach(14222, {	-- Exile's Reach
 				["sourceQuests"] = {
+					-- #IF BEFORE 10.0.2
 					59641,	-- The Nation of Kul Tiras
 					60361,	-- Battle for Azeroth: Mission Statement
+					-- #ELSE
+					55991,	-- An End to Beginnings [A]
+					59985,	-- An End to Beginnings [H]
+					-- #ENDIF
 				},
 				["sourceQuestNumRequired"] = 1,
 			}),
@@ -1045,7 +1050,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["description"] = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
 					["coord"] = { 85.2, 32.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { ADDED_9_0_1 },
+					["timeline"] = { ADDED_9_0_1, REMOVED_10_0_2 },
 					["groups"] = {
 						i(178941),	-- Alliance Dog Tags,
 					}
@@ -1055,7 +1060,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["sourceQuest"] = 58983,	-- Battle for Azeroth: Tides of War (SL/new player version)
 					["coord"] = { 85.8, 31.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { ADDED_9_0_1 },
+					["timeline"] = { ADDED_9_0_1, REMOVED_10_0_2 },
 				}),
 
 					-- Orgrimmar --
@@ -1180,6 +1185,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["qg"] = 168431,	-- Warlord Breka Grimaxe
 					["coord"] = { 48.3, 71.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_9_0_1, REMOVED_10_0_2 },
 					["groups"] = {
 						i(178942),	-- War-Chain of the Horde
 					},

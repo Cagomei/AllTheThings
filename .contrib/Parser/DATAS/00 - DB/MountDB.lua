@@ -30,6 +30,9 @@ i(207097, 416158);	-- Nightmarish Emerald Drake
 i(0, 440915);		-- Auspicious Arborwyrm
 i(0, 423869);		-- Avatar of Flame
 i(0, 446902);		-- Polly Roger
+
+-- Cata Classic --
+i(0, 463045);		-- Lava Drake
 --- NYI ---
 i(0, 388516);		-- Hao-Yue, River Foreseer
 i(198632, 387319);	-- Big Battle Bear
