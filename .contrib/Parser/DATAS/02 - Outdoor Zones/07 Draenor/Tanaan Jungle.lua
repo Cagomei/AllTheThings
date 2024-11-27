@@ -267,15 +267,21 @@ root(ROOTS.Zones, {
 					exploration(7716),	-- Hellfire Citadel
 					exploration(7723),	-- Ironhold Approach
 					exploration(7515),	-- Ironhold Harbor
+					visit_exploration(7632,{coord={38.4,44.3,TANAAN_JUNGLE}}),	-- Ironmonger's Hold
 					exploration(7522),	-- Lion's Watch
 					exploration(7655),	-- Rangari Refuge
 					exploration(7524),	-- Ruins of Kra'nak
 					exploration(7718),	-- Scuttler's Coast
+					visit_exploration(7654,{coord={44.8,77.7,TANAAN_JUNGLE}}),	-- Stygana Cavern
+					visit_exploration(7265,{coord={29.3,91.9,TANAAN_JUNGLE}}),	-- Tanaan Channel
+					visit_exploration(7025,{coord={61.1,46.1,TANAAN_JUNGLE}}),	-- Tanaan Jungle
+					visit_exploration(6682,{coord={62.4,32.6,TANAAN_JUNGLE}}),	-- Tanaan Jungle
 					exploration(7526),	-- Temple of Sha'naar
 					exploration(7722),	-- The Broken Rampart
 					exploration(7615),	-- The Fel Forge
 					exploration(7719),	-- The Felblight
 					exploration(7527),	-- The Iron Front
+					visit_exploration(7639,{coord={56.2,67.0,TANAAN_JUNGLE}}),	-- Thornmire
 					exploration(7538),	-- Throne of Kil'jaeden
 					exploration(7721),	-- Thundertail Wallow
 					exploration(7523),	-- Vol'mar

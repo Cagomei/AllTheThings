@@ -4,12 +4,16 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(ISLE_OF_DORN, {
 		explorationHeader({
+			visit_exploration(14777,{coord={52.0,65.7,ISLE_OF_DORN}}),    -- Boskroot Basin
 			exploration(14875),	-- Boulder Springs
 			exploration(14781),	-- Cinderbrew Meadery
 			exploration(14786),	-- Cinderwold
+			visit_exploration(14780,{coord={72.9,54.2,ISLE_OF_DORN}}),	-- Dhar Bandar
+			visit_exploration(15039,{coord={44.0,78.4,ISLE_OF_DORN}}),	-- Dhar Durgaz
 			exploration(14783),	-- Dhar Kazhad
 			exploration(14789),	-- Dhar Oztan
 			exploration(14771),	-- Dornogal
+			visit_exploration(14837,{coord={67.2,43.3,ISLE_OF_DORN}}),	-- Durgaz Cabin
 			exploration(14772),	-- Freywold Village
 			exploration(14778),	-- Glimmering Shore
 			exploration(14779),	-- Golgrin's Reach
@@ -21,7 +25,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			exploration(14785),	-- Skolzgal Mill
 			exploration(14775),	-- Storm's Watch
 			exploration(15386),	-- Sunken Shield
+			visit_exploration(15385,{coord={74.6,35.6,ISLE_OF_DORN}}),	-- Sunrise Shadow
 			exploration(15046),	-- The Coreway
+			visit_exploration(14788,{coord={45.8,59.2,ISLE_OF_DORN}}),	-- The Opalcreg
 			exploration(14773),	-- The Orecreg
 			exploration(14776),	-- The Proscenium
 			exploration(15040),	-- The Three Shields

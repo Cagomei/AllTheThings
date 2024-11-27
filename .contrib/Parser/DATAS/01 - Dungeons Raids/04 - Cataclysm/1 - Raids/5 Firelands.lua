@@ -560,7 +560,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71782),	-- Shatterskull Bonecrusher
 							i(71775),	-- Smoldering Censer of Purity
 							i(71780),	-- Zoid's Firelit Greatsword
-							i(69237),	-- Living Ember
+							ig(69237),	-- Living Ember
 						},
 					}),
 					e(192, {	-- Beth'tilac
@@ -876,7 +876,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71783),	-- Shatterskull Bonecrusher
 							i(71774),	-- Smoldering Censer of Purity
 							i(71781),	-- Zoid's Firelit Greatsword
-							i(69237),	-- Living Ember
+							ig(69237),	-- Living Ember
 							i(71617, {	-- Crystallized Firestone
 								["description"] = "You can use this item to upgrade certain normal mode BoE items to Heroic BoP versions.",
 							}),

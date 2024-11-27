@@ -189,28 +189,51 @@ root(ROOTS.Zones, {
 				})),
 				explorationHeader({
 					exploration(6925),	-- Anchorite's Sojourn
+					visit_exploration(6997,{coord={41.7,85.9,TALADOR}}),	-- Ango'rosh Ruins
+					visit_exploration(7141,{coord={52.7,37.8,TALADOR}}),	-- Arch of Sha'tar
 					exploration(6948),	-- Archenon Siegeyard
 					exploration(6924),	-- Aruuna
 					exploration(7084),	-- Aruuna's Desolation
 					exploration(7200),	-- Auchindoun
+					visit_exploration(7419,{coord={35.4,16.0,TALADOR}}),	-- Beacon of Sha'tar
 					exploration(7389),	-- Bladefury's Command
 					exploration(6916),	-- Court of Souls
 					exploration(6918),	-- Deathweb Hollow
 					exploration(6927),	-- Duskfall Island
+					visit_exploration(7029,{coord={55.6,69.2,TALADOR}}),	-- Exarch's Refuge
 					exploration(7097),	-- Fort Wrynn
 					exploration(7112),	-- Frostwolf Overlook
 					exploration(7176),	-- Gordal Foothills
 					exploration(7131),	-- Gordal Fortress
 					exploration(6761),	-- Gul'rok
+					visit_exploration(6986,{coord={50.1,53.8,TALADOR}}),	-- Jorune Mine
+					visit_exploration(7157,{coord={84.7,30.9,TALADOR}}),	-- Khadgar's Tower
+					visit_exploration(6917,{coord={45.3,54.7,TALADOR}}),	-- Liadrin's Watch
 					exploration(6950),	-- Mor'gran Logworks
 					exploration(7251),	-- Orunai Bay
 					exploration(6947),	-- Orunai Coast
+					visit_exploration(7500,{coord={63.6,4.20,TALADOR}}),	-- Orunai Delta
+					visit_exploration(7020,{coord={43.9,75.9,TALADOR}}),	-- Retribution Point
+					visit_exploration(7000,{coord={31.8,74.3,TALADOR}}),	-- Seat of Depravity
+					visit_exploration(7453,{coord={41.4,46.5,TALADOR}}),	-- Sha'tar Way Station
+					visit_exploration(7417,{coord={43.5,14.3,TALADOR}}),	-- Sha'tari Anchorage
+					visit_exploration(7422,{coord={45.5,43.4,TALADOR}}),	-- Sha'tari Market District
+					visit_exploration(6937,{coord={71.6,18.6,TALADOR}}),	-- Sharptusk Lake
+					visit_exploration(7420,{coord={48.4,31.1,TALADOR}}),	-- Shattrath City
 					exploration(6762),	-- Shattrath City Center
 					exploration(7421),	-- Shattrath Commons
+					visit_exploration(7480,{coord={30.8,29.6,TALADOR}}),	-- Shattrath Overlook
 					exploration(7418),	-- Shattrath Port Authority
 					exploration(7455),	-- Shattrath Residential District
+					visit_exploration(7269,{coord={51.7,44.9,TALADOR}}),	-- Spire of Light
+					visit_exploration(7001,{coord={60.5,72.2,TALADOR}}),	-- Sunsworn Camp
+					visit_exploration(7191,{coord={40.8,77.3,TALADOR}}),	-- Talador
 					exploration(6920),	-- Telmor
+					visit_exploration(6933,{coord={70.5,56.9,TALADOR}}),	-- Terokkar Refuge
+					visit_exploration(7021,{coord={54.4,61.8,TALADOR}}),	-- The Burning Front
 					exploration(7391),	-- The Path of Glory
+					visit_exploration(7179,{coord={64.5,81.6,TALADOR}}),	-- Throne of the Witch Lord
+					visit_exploration(6949,{coord={62.1,41.5,TALADOR}}),	-- Tuurem
 					exploration(6926),	-- Veil Shadar
 					exploration(7098),	-- Vol'jin's Pride
 					exploration(7115),	-- Zangarra

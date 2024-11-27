@@ -61,29 +61,32 @@ root(ROOTS.Zones, {
 					pet(752),	-- Yellow-Bellied Bullfrog (PET!)
 				}),
 				explorationHeader({
-					visit_exploration(6149,{coord={18.8,22.0,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Ancestral Rise
-					visit_exploration(6538,{coord={17.4,37.4,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Autumnshade Ridge
+					visit_exploration(6149,{coord={18.8,22.0,VALE_OF_ETERNAL_BLOSSOMS}}),	-- Ancestral Rise
+					visit_exploration(6538,{coord={17.4,37.4,VALE_OF_ETERNAL_BLOSSOMS}}),	-- Autumnshade Ridge
+					visit_exploration(6735,{coord={61.5,59.1,VALE_OF_ETERNAL_BLOSSOMS}}),	-- Big Blossom Mine
 					exploration(6074),	-- Guo-Lai Halls
-					visit_exploration(6144,{coord={40.6,61.3,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Jin Yang Road
+					visit_exploration(6144,{coord={40.6,61.3,VALE_OF_ETERNAL_BLOSSOMS}}),	-- Jin Yang Road
 					exploration(6031),	-- Mistfall Village
 					exploration(6143),	-- Mogu'shan Palace
-					visit_exploration(6032,{coord={25.9,44.8,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Ruins of Guo-Lai
-					visit_exploration(6053,{coord={29.8,23.4,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Ruins Rise
-					visit_exploration(6035,{coord={20.8,71.2,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Setting Sun Garrison
+					visit_exploration(6032,{coord={25.9,44.8,VALE_OF_ETERNAL_BLOSSOMS}}),	-- Ruins of Guo-Lai
+					visit_exploration(6053,{coord={29.8,23.4,VALE_OF_ETERNAL_BLOSSOMS}}),	-- Ruins Rise
+					visit_exploration(6035,{coord={20.8,71.2,VALE_OF_ETERNAL_BLOSSOMS}}),	-- Setting Sun Garrison
 					exploration(6553),	-- Shrine of Seven Stars
 					exploration(6142),	-- Shrine of Seven Stars
 					exploration(6141),	-- Shrine of Two Moons
 					exploration(6554),	-- Shrine of Two Moons
-					visit_exploration(6539,{coord={27.1,72.6,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Sunblossom Hill
+					visit_exploration(6539,{coord={27.1,72.6,VALE_OF_ETERNAL_BLOSSOMS}}),	-- Sunblossom Hill
+					visit_exploration(6504,{coord={49.5,42.3,VALE_OF_ETERNAL_BLOSSOMS}}),	-- The Emperor's Approach
 					exploration(6055),	-- The Five Sisters
 					exploration(6036),	-- The Golden Pagoda
-					visit_exploration(6033,{coord={43.0,16.6,VALE_OF_ETERNAL_BLOSSOMS}}),    -- The Golden Stair
+					visit_exploration(6033,{coord={43.0,16.6,VALE_OF_ETERNAL_BLOSSOMS}}),	-- The Golden Stair
 					exploration(6560),	-- The Golden Terrace
+					visit_exploration(6127,{coord={40.6,77.0,VALE_OF_ETERNAL_BLOSSOMS}}),	-- The Silent Sanctuary
 					exploration(6145),	-- The Summer Fields
 					exploration(6482),	-- The Summer Terrace
 					exploration(6037),	-- Tu Shen Burial Ground
-					visit_exploration(6034,{coord={45.6,51.8,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Whitepetal Lake
-					visit_exploration(6054,{coord={24.0,47.8,VALE_OF_ETERNAL_BLOSSOMS}}),    -- Winterbough Glade
+					visit_exploration(6034,{coord={45.6,51.8,VALE_OF_ETERNAL_BLOSSOMS}}),	-- Whitepetal Lake
+					visit_exploration(6054,{coord={24.0,47.8,VALE_OF_ETERNAL_BLOSSOMS}}),	-- Winterbough Glade
 				}),
 				n(FACTIONS, {
 					faction(FACTION_GOLDEN_LOTUS),	-- Golden Lotus

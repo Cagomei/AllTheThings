@@ -91,22 +91,38 @@ root(ROOTS.Zones, {
 					},
 				}),
 				explorationHeader({
+					visit_exploration(6342,{coord={59.2,85.9,TOWNLONG_STEPPES}}),	-- Ambermarsh
+					visit_exploration(6190,{coord={77.9,78.2,TOWNLONG_STEPPES}}),	-- Dampsoil Burrow
+					visit_exploration(6348,{coord={51.6,52.3,TOWNLONG_STEPPES}}),	-- Deadtalker's Plateau
 					exploration(6192),	-- Dusklight Bridge
 					exploration(6191),	-- Dusklight Hollow
+					visit_exploration(6194,{coord={51.0,84.0,TOWNLONG_STEPPES}}),	-- Farwatch Overlook
+					visit_exploration(6550,{coord={35.1,47.9,TOWNLONG_STEPPES}}),	-- Fields of Niuzao
 					exploration(6312),	-- Fire Camp Gai-Cho
 					exploration(6163),	-- Fire Camp Osul
+					visit_exploration(6411,{coord={32.0,75.4,TOWNLONG_STEPPES}}),	-- Forward Assault Camp
+					visit_exploration(6390,{coord={61.6,47.4,TOWNLONG_STEPPES}}),	-- Gai-Cho Battlefield
 					exploration(6187),	-- Gao-Ran Battlefront
 					exploration(6171),	-- Hatred's Vice
+					visit_exploration(6413,{coord={34.4,81.3,TOWNLONG_STEPPES}}),	-- Hollowed Out Tree
+					visit_exploration(6423,{coord={16.9,42.7,TOWNLONG_STEPPES}}),	-- Ikz'ka Ridge
 					exploration(6205),	-- Kri'vess
+					visit_exploration(6421,{coord={27.4,54.1,TOWNLONG_STEPPES}}),	-- Kzzok Warcamp
 					exploration(6166),	-- Longying Outpost
 					exploration(6164),	-- Lower Sumprushes
 					exploration(6213),	-- Niuzao Temple
+					visit_exploration(6412,{coord={29.5,79.5,TOWNLONG_STEPPES}}),	-- Rear Staging Area
 					exploration(6193),	-- Rensai's Watchpost
 					exploration(6197),	-- Shado-Pan Garrison
+					visit_exploration(6188,{coord={81.1,83.6,TOWNLONG_STEPPES}}),	-- Shallowstep Pass
 					exploration(6307),	-- Shan'ze Dao
 					exploration(6195),	-- Sik'vess
 					exploration(6212),	-- Sra'thik Incursion
+					visit_exploration(6422,{coord={27.1,41.1,TOWNLONG_STEPPES}}),	-- Sra'thik Swarmdock
 					exploration(6314),	-- Sra'vess
+					visit_exploration(6420,{coord={18.3,56.3,TOWNLONG_STEPPES}}),	-- The Feeding Pits
+					visit_exploration(6392,{coord={56.8,43.6,TOWNLONG_STEPPES}}),	-- The Underbough
+					visit_exploration(6189,{coord={54.6,86.0,TOWNLONG_STEPPES}}),	-- The Widening Deep
 					exploration(6165),	-- Upper Sumprushes
 				}),
 				n(FACTIONS, {

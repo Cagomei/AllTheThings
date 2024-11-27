@@ -170,6 +170,7 @@ root(ROOTS.Zones, {
 					},
 				})),
 				explorationHeader({
+					visit_exploration(7222,{coord={36.4,56.7,SPIRES_OF_ARAK}}),	-- Admiral Taylor's Farm
 					exploration(6999),	-- Admiral Taylor's Garrison
 					exploration(7199),	-- Apexis Excavation
 					exploration(7197),	-- Axefall
@@ -177,7 +178,9 @@ root(ROOTS.Zones, {
 					exploration(7277),	-- Bloodmane Pridelands
 					exploration(7140),	-- Bloodmane Valley
 					exploration(7126),	-- Camp Thornscar
+					visit_exploration(7111,{coord={51.7,31.2,SPIRES_OF_ARAK}}),	-- Crow's Crook
 					exploration(7034),	-- Dreadtalon Peak
+					visit_exploration(7440,{coord={72.4,53.1,SPIRES_OF_ARAK}}),	-- Echidnean Shelf
 					exploration(7276, {	-- Forlorn Delta
 						-- CRIEVE NOTE: I was initially able to collect this, but if you collect Pinchwhistle Gearworks, it gets masked behind it.
 						["collectible"] = false,
@@ -190,22 +193,30 @@ root(ROOTS.Zones, {
 					exploration(7163),	-- Pinchwhistle Point
 					exploration(7035),	-- Ravenskar
 					exploration(7145),	-- Sethekk Hollow
+					visit_exploration(7302,{coord={54.7,21.8,SPIRES_OF_ARAK}}),	-- Shadow's Vigil
 					exploration(7125),	-- Shadowglade
 					exploration(7031),	-- Skettis
 					exploration(7316),	-- Skettis
 					exploration(7198),	-- Southport
+					visit_exploration(7016,{coord={52.0,18.6,SPIRES_OF_ARAK}}),	-- Spires of Arak
 					exploration(7182),	-- Talon Altar
+					visit_exploration(7180,{coord={62.0,42.5,SPIRES_OF_ARAK}}),	-- Talon Watch
+					visit_exploration(7093,{coord={39.8,20.3,SPIRES_OF_ARAK}}),	-- Terokkar Pass
 					exploration(7305),	-- Terrace of Dawn
 					exploration(7147),	-- The Broken Spire
+					visit_exploration(7445,{coord={66.8,61.6,SPIRES_OF_ARAK}}),	-- The Evanescent Sea
 					exploration(7270),	-- The Howling Crag
+					visit_exploration(7449,{coord={30.0,32.7,SPIRES_OF_ARAK}}),	-- The Thorn Pits
 					exploration(7110),	-- The Undergrowth
 					exploration(7202),	-- The Writhing Mire
 					exploration(7127),	-- Veil Akraz
+					visit_exploration(7036,{coord={46.6,45.5,SPIRES_OF_ARAK}}),	-- Veil Terokk
 					exploration(7274, {	-- Veil Zekk
 						-- CRIEVE NOTE: I was initially able to collect this, but if you collect Bloodmane Valley, it gets masked behind it.
 						["collectible"] = false,
 					}),
 					exploration(7306),	-- Windswept Terrace
+					visit_exploration(7164,{coord={60.6,79.8,SPIRES_OF_ARAK}}),    -- Wreck of the Mother Lode
 				}),
 				n(FACTIONS, {
 					faction(FACTION_ARAKKOA_OUTCASTS),	-- Arakkoa Outcasts

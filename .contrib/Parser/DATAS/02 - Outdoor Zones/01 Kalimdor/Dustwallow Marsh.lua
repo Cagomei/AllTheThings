@@ -152,6 +152,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(498, {["timeline"] = { ADDED_2_0_1 }}),	-- Bloodfen Burrow
 				-- #if BEFORE CATA
 				exploration(507),	-- Bluefen
+				-- #else
+				visit_exploration(507,{coord={42.2,23.4,DUSTWALLOW_MARSH}}),	-- Bluefen
 				-- #endif
 				exploration(496),	-- Brackenwall Village
 				exploration(499, {["timeline"] = { ADDED_4_0_1 }}),	-- Darkmist Cavern

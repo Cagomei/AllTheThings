@@ -1913,6 +1913,9 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(82624),	-- The War Within (80) E
 			q(82625),	-- The War Within (80) E
 		}),
+		n(GROUP_FINDER, {
+			q(39751, {["timeline"] = { ADDED_11_0_5 }}),	-- Classic Timewalking LFG completion
+		})
 	})),
 
 	--------------------

@@ -85,6 +85,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(5041),	-- Fizzle & Pozzik's Speedbarge
 				exploration(484),	-- Freewind Post
 				exploration(482),	-- Highperch
+				visit_exploration(5046,{coord={96.5,61.4,THOUSAND_NEEDLES}}),	-- Mirage Abyss
 				exploration(5092),	-- Razorfen Downs
 				exploration(5028),	-- Southsea Holdfast
 				exploration(5027),	-- Splithoof Heights

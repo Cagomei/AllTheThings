@@ -29,6 +29,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			exploration(14808),	-- The Rumbling Wastes
 			exploration(14817),	-- The Stonevault Exterior
 			exploration(14803),	-- The Warrens
+			visit_exploration(15099,{coord={48.2,40.8,THE_RINGING_DEEPS}}),	-- The Waterworks
 		}),
 	}),
 })));

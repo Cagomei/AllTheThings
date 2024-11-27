@@ -28,17 +28,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			exploration(14793),	-- The Skeins
 			exploration(14953),	-- The Threading Way
 			exploration(14790),	-- The Transformatory
+			visit_exploration(14755,{coord={56.9,46.7,AZJ_KAHET}}),	-- The Weaver's Lair
 			exploration(14902),	-- The Whispering Chasm
 			exploration(14754),	-- The Wormlands
 			exploration(14759),	-- Trickling Abyss
 			exploration(14765),	-- Twitching Gorge
 			exploration(15451),	-- Untamed Valley
 			exploration(14958),	-- Wildcamp Or'lay
+			visit_exploration(14766,{coord={43.7,67.1,AZJ_KAHET}}),	-- Wildcamp Ul'ar
 		}),
 	}),
 	m(AZJ_KAHET_LOWER, {
 		explorationHeader({
-			exploration(14755),	-- The Weaver's Lair
 		}),
 	}),
 })));

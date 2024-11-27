@@ -17,6 +17,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			exploration(13938),	-- Fissured Breach
 			exploration(13842),	-- Genesis Vestibule
 			exploration(13948),	-- Genesis Fields
+			visit_exploration(13632,{coord={35.1,64.7,ZERETH_MORTIS}}),    -- Haven
 			exploration(13805),	-- Lexical Glade
 			exploration(13841),	-- Path of Inception
 			exploration(13658),	-- Pilgrim's Grace

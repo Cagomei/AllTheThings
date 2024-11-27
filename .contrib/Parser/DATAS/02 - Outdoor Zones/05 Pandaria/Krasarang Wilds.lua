@@ -45,17 +45,28 @@ root(ROOTS.Zones, {
 					},
 				}),
 				explorationHeader({
+					visit_exploration(6160,{coord={31.9,70.6,KRASARANG_WILDS}}),	-- Angkhal Pavilion
+					visit_exploration(6430,{coord={62.3,39.7,KRASARANG_WILDS}}),	-- Anglers Expedition
 					exploration(6106),	-- Anglers Wharf
 					exploration(6155),	-- Cradle of Chi-Ji
 					exploration(6049),	-- Crane Wing Refuge
 					exploration(6013),	-- Dawnchaser Retreat
 					exploration(6010),	-- Dojani River
+					visit_exploration(6162,{coord={34.6,82.7,KRASARANG_WILDS}}),	-- Dome Balrissa
 					exploration(6017),	-- Fallsong Village
+					visit_exploration(6612,{coord={14.2,59.4,KRASARANG_WILDS}}),	-- Horde Landing Site
+					visit_exploration(6147,{coord={46.2,63.9,KRASARANG_WILDS}}),	-- Kea Krak
 					exploration(6369),	-- Krasarang Cove
+					visit_exploration(6018,{coord={35.9,38.8,KRASARANG_WILDS}}),	-- Krasari Falls
 					exploration(6146),	-- Marista
+					visit_exploration(6113,{coord={64.9,48.5,KRASARANG_WILDS}}),	-- Narsong Spires
+					visit_exploration(6108,{coord={71.6,40.8,KRASARANG_WILDS}}),	-- Narsong Trench
 					exploration(6135),	-- Nayeli Lagoon
+					visit_exploration(6161,{coord={36.8,75.9,KRASARANG_WILDS}}),	-- Pedestal of Hope
+					visit_exploration(6011,{coord={52.5,33.0,KRASARANG_WILDS}}),	-- Pools of Youth
 					exploration(6008),	-- Ruins of Dojan
 					exploration(6015),	-- Ruins of Korja
+					visit_exploration(6158,{coord={60.9,43.5,KRASARANG_WILDS}}),	-- Sandy Shallows
 					exploration(6016),	-- Sentinel Basecamp
 					exploration(6058),	-- Shattered Convoy
 					exploration(6048),	-- Temple of the Red Crane

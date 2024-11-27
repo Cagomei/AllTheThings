@@ -663,7 +663,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		q(28601),	-- Old Puttery
 		q(25435),	-- Pressure is Mounting
 		q(25384),	-- Raw Materials
-		q(26704),	-- REUSE
 		q(28270),	-- Riding Shotgun
 		q(25117),	-- Scout's Dishonor
 		q(25506),	-- Sea-Food Chain
@@ -2214,7 +2213,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(40572, { ["name"] = "Darkheart Thicket Normal Reward Quest", }),	-- Darkheart Thicket Normal Reward Quest
 			q(41880, { ["name"] = "Den of Shadows", }),	-- Den of Shadows
 			q(40720, { ["name"] = "DEPRECATE - REUSE", }),	-- DEPRECATE - REUSE
-			q(40721, { ["name"] = "DEPRECATE - REUSE", }),	-- DEPRECATE - REUSE
 			q(40719, { ["name"] = "DEPRECATE- REUSE", }),	-- DEPRECATE- REUSE
 			q(39116, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
 			q(39190, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
@@ -2463,7 +2461,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(41879, { ["name"] = "TBD", }),	-- TBD
 			q(38896, { ["name"] = "Tearing down the Legion", }),	-- Tearing down the Legion
 			q(40502, { ["name"] = "Test - Fireball", }),	-- Test - Fireball
-			q(39353, { ["name"] = "Test - New", }),	-- Test - New
 			q(40940, { ["name"] = "Test Quest Two", }),	-- Test Quest Two
 			q(40726, { ["name"] = "Test Reward Quest", }),	-- Test Reward Quest
 			q(39981, { ["name"] = "Thassarian Slotted", }),	-- Thassarian Slotted

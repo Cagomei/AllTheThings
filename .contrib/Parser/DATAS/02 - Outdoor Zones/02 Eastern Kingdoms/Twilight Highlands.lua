@@ -307,6 +307,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5594),	-- Highland Forest
 				exploration(5640),	-- Humboldt Conflagration
 				exploration(5143),	-- Kirthaven
+				visit_exploration(5563,{coord={35.2,57.4,TWILIGHT_HIGHLANDS}}),    -- Loch Verrall
 				exploration(5595),	-- Obsidian Forest
 				exploration(5439),	-- Ruins of Drakgor
 				exploration(5479),	-- Slithering Cove

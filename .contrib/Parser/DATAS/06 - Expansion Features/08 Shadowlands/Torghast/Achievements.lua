@@ -183,7 +183,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				crit(49165,  {		-- Kosarus the Fallen
 					["crs"] = { 153451 },	-- Kosarus the Fallen
-					["description"] = "This boss can be found in Skoldus Hall.",
+					["description"] = "This boss can be found in Fracture Chambers.",
 				}),
 				crit(49166,  {		-- The Grand Malleare
 					["crs"] = { 159755 },	-- The Grand Malleare

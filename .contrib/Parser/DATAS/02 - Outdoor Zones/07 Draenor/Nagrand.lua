@@ -153,19 +153,25 @@ root(ROOTS.Zones, {
 				})),
 				explorationHeader({
 					exploration(7072),	-- Ancestral Grounds
+					visit_exploration(7156,{coord={81.0,60.3,DRAENOR_NAGRAND}}),	-- Anguish Point
 					exploration(7303),	-- Broken Precipice
 					exploration(7331),	-- Cerulean Lagoon
+					visit_exploration(7461,{coord={51.7,25.9,DRAENOR_NAGRAND}}),	-- Earthshaker Gorge
+					visit_exploration(7226,{coord={83.2,35.9,DRAENOR_NAGRAND}}),	-- Eastwind Gulch
 					exploration(7139),	-- Elemental Plateau
 					exploration(7069),	-- Gates of Grommashar
 					exploration(7375),	-- Gorian Proving Grounds
+					visit_exploration(7465,{coord={33.9,25.8,DRAENOR_NAGRAND}}),	-- Gorian Strand
 					exploration(7188),	-- Gra'ah
 					exploration(7068),	-- Grommashar
 					exploration(7123),	-- Hallvalor
 					exploration(7060),	-- Hemet's Happy Hunting Grounds
+					visit_exploration(7469,{coord={49.9,37.0,DRAENOR_NAGRAND}}),	-- Hidden Camp
 					exploration(7367),	-- Highmaul
 					exploration(7405),	-- Highmaul Harbor
 					exploration(7070),	-- Ironfist Harbor
 					exploration(7065),	-- Lok-rath
+					visit_exploration(7206,{coord={57.3,69.0,DRAENOR_NAGRAND}}),	-- Lonely Falls
 					exploration(7067),	-- Mar'gok's Overwatch
 					exploration(7296, {	-- Mok'gol Watchpost
 						-- CRIEVE NOTE: I was initially able to collect this, but if you collect Highmaul Harbor / Broken Precipe, it gets masked behind it.
@@ -176,6 +182,7 @@ root(ROOTS.Zones, {
 					exploration(7297),	-- Ruins of Na'gwa
 					exploration(7052),	-- Sabermaw
 					exploration(7172),	-- Shadowfall Canyon
+					visit_exploration(7227,{coord={67.7,22.8,DRAENOR_NAGRAND}}),	-- Skysong Lake
 					exploration(7071),	-- Snarlpaw Ledge
 					exploration(7151),	-- Spirit Woods
 					exploration(7386),	-- Spiteleaf Thicket
@@ -183,9 +190,16 @@ root(ROOTS.Zones, {
 					exploration(7074),	-- Telaar
 					exploration(7406),	-- The Cliffs of Highmaul
 					exploration(7395),	-- The Coliseum
+					visit_exploration(7466,{coord={26.2,39.6,DRAENOR_NAGRAND}}),	-- The Imperator's Favor
 					exploration(7376),	-- The Ring of Blood
 					exploration(7073),	-- The Ring of Trials
+					visit_exploration(7436,{coord={39.3,61.0,DRAENOR_NAGRAND}}),	-- The South Sea
+					visit_exploration(7064,{coord={66.0,37.4,DRAENOR_NAGRAND}}),	-- The Stones of Prophecy
+					visit_exploration(7594,{coord={29.0,32.7,DRAENOR_NAGRAND}}),	-- The Underbelly
 					exploration(7280),	-- Throne of the Elements
+					visit_exploration(7377,{coord={93.0,32.3,DRAENOR_NAGRAND}}),	-- Time-Lost Glade
+					visit_exploration(7056,{coord={88.7,67.3,DRAENOR_NAGRAND}}),	-- Warsong Lookout
+					visit_exploration(7408,{coord={44.3,77.7,DRAENOR_NAGRAND}}),	-- Windroc Bay
 					exploration(7059),	-- Wor'var
 					exploration(7271),	-- Worgskin's Camp
 					exploration(7095),	-- Wrecked Caravan

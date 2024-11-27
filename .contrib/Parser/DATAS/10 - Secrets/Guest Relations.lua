@@ -543,7 +543,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(85503, {	--  A Surprising Investigation
-				["description"] = "Speak to the time-displaced visitors, toss letters to eventgoers, speak to Bottlenose again, then head a bit north up the beach to celebrate with Alyx.",
+				["description"] = "Speak to the time-displaced visitors, toss letters to eventgoers, speak to Bonenose at the north camp again, then head a bit northeast up the beach to celebrate with Alyx.",
 				["sourceQuest"] = 85502,	-- Festive Reflections
 				["provider"] = { "n", 226796 },	-- Athelton Jones
 				["coord"] = { 61.0, 50.7, TANARIS },
@@ -1130,14 +1130,14 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["coord"] = { 44.5, 8.0, UNGORO_CRATER },
 				["g"] = { i(228941) },	-- Inert Peculiar Key
 			}),
-			hqt(84685, {	-- Talk to the Dalaran Survivor while using the Detective Title
-				["name"] = "Talk to the Dalaran Survivor while using the Detective Title",
+			hqt(84685, {	-- Talk to the Dalaran Survivor while using the Detective title
+				["name"] = "Talk to the Dalaran Survivor while using the Detective title",
 				["sourceAchievement"] = 40870,	-- Azeroth's Greatest Detective
 				["coord"] = { 54.9, 28.9, DORNOGAL },
 			}),
 			q(84684, {	-- Ratts' Race
 				["description"] = "Find 3 notes scattered around Azj-Kahet then confront Ratts in Pillar-nest Vosh.",
-				["sourceQuest"]	= 84685,	-- Talk to the Dalaran Survivor with the Detective Title
+				["sourceQuest"]	= 84685,	-- Talk to the Dalaran Survivor with the Detective title
 				["provider"] = { "n", 230042 },	-- Dalaran Survivor
 				["coord"] = { 54.9, 28.9, DORNOGAL },
 				["g"] = {
@@ -1312,22 +1312,22 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					--4 O'clock Basin
 					hqt(84780, {	-- Use the Scroll of Fel Binding at Uther's Tomb
 						["name"] = "Use the Scroll of Fel Binding at Uther's Tomb",
-						["description"] = "1. Use the Scroll of Fel Binding sold by Vashti the Wandering Merchant in Aszuna (Broken Isles) right outside Uther's Tomb in the Western Plaugelands.\n2. You will die, return to your corpse and fight the Doomguard while inspecting the writings on the floor of the tomb. Anyone can summon the demon and writings will stay visible as long as it lives.\n\nFully lights up the 4 O'clock basin.",
+						["description"] = "1. Use the Scroll of Fel Binding sold by Vashti the Wandering Merchant in Aszuna (Broken Isles) right outside Uther's Tomb in the Western Plaugelands.\n2. You will die, return to your corpse and fight the Doomguard while inspecting the four writings on the floor of the tomb. Anyone can summon the demon and writings will stay visible as long as it lives.\n\nFully lights up the 4 O'clock basin.",
 						["cost"] = { { "i", 228987, 1 }	},	-- Scroll of Fel Binding
 						["coord"] = { 52.1, 85.1, WESTERN_PLAGUELANDS },
 					}),
 					--5 O'clock Basin
 					q(84781, {	-- Master of Secrets
-						["description"] = "1. Visit the Timeless isle and find Zarhym in the Cavern of Lost Spirits. Talk to Zarhym, a rare ghostly skull inside the entrance to enter the spirit realm.\n2. Within 5 minutes, Navigate to the back of the cave while avoiding ghosts to find Jeremy Feasel. Stay nearby to him, and you will not exit the spirit realm even if your 5 minutes buff expires.\n3. Defeat Jeremy in a pet battle using only 'secret' pets from the list. If someone in your group beats him in a battle, that also counts and he will grant you the quest too on talking to him. The pets MUST be level 25.\n\nFully lights up the 5 O'clock basin.\n\nValid pets:\nBaa'l, Bumbles, Filthy Slime, Glimr, Jenafur, Lil' Abom, Nelthara, Phoenix Wishwing, Snowclaw Cub, Spyragos, Sun Darter Hatchling, Taptaf, Terky, Wicker Pup",
+						["description"] = "1. Visit the Timeless isle and find Zarhym in the Cavern of Lost Spirits. Talk to Zarhym, a rare ghostly skull inside the entrance to enter the spirit realm.\n2. Within 5 minutes, Navigate to the back of the cave while avoiding ghosts to find Jeremy Feasel. Stay nearby to him, and you will not exit the spirit realm even if your 5 minutes buff expires.\n3. Defeat Jeremy in a pet battle using only 'secret' pets from the list. If someone in your group beats him in a battle, that also counts and he will grant you the quest too on talking to him. The pets MUST be level 25.\n\nFully lights up the 5 O'clock basin.\n\nValid pets:\nBaa'l, Bumbles, Filthy Slime, Gizmo the Pure, Glimr, Jenafur, Nelthara, Phoenix Wishwing, Snowclaw Cub, Spyragos, Sun Darter Hatchling, Taptaf, Terky, Wicker Pup",
 						["sourceQuest"] = 84780,	-- Use the Scroll of Fel Binding at Uther's Tomb
 						["providers"] = {
 							{ "n", 232048 },	-- Jeremy Feasel
 							{ "n", 141941 },	-- Baa'l
 							{ "n", 143730 },	-- Bumbles
 							{ "n", 160704 },	-- Filthy Slime
+							{ "n", 229779 },	-- Gizmo the Pure
 							{ "n", 169514 },	-- Glimr
 							{ "n", 159783 },	-- Jenafur
-							{ "n", 179008 },	-- Lil' Abom
 							{ "n", 204367 },	-- Nelthara
 							{ "n", 189117 },	-- Phoenix Wishwing
 							{ "n", 192343 },	-- Snowclaw Cub
@@ -1560,5 +1560,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(85170),	-- Triggered on interacting with an ordinary pebble in the catacombs. Doesn't reliably trigger on first click, or from specific pebble locations, can unflag.
 		q(85171),	-- Triggered on interacting with an ordinary pebble in the catacombs. Doesn't reliably trigger on first click, or from specific pebble locations, can unflag.
 		q(85172),	-- Triggered on interacting with an ordinary pebble in the catacombs. Doesn't reliably trigger on first click, or from specific pebble locations, can unflag.
+		q(39353),	-- Triggered on Warden Statue completion #1 (Red buff)
+		q(26704),	-- Triggered on Warden Statue completion #3 (Purple buff)
+		q(40721),	-- Triggered on Warden Statue completion #4 (Blue buff)
 	}),
 })));

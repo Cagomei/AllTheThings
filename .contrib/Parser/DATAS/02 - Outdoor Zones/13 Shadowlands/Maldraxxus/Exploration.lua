@@ -10,6 +10,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			exploration(12899),	-- Blighted Scar
 			exploration(13346),	-- Body Banks
 			exploration(13306),	-- Burning Thicket
+			visit_exploration(13188,{coord={54.4,68.4,MALDRAXXUS}}),	-- Butchers Block
 			exploration(12810),	-- Challenger's Promenade
 			exploration(11537),	-- Forgotten Wounds
 			exploration(12805),	-- Glutharn's Decay

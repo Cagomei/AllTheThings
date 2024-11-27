@@ -412,6 +412,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			}),
 			n(WEAPONS, {
 				i(219203),	-- Arathi Holy Standard
+				i(218126),	-- Befouler's Syringe
 				i(219207),	-- Flame-Bearing Crozier
 				i(219206),	-- Hand of Piety
 				i(219204),	-- Imperial Flarebolt

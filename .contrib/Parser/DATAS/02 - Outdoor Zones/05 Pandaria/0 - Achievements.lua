@@ -94,7 +94,11 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 			}),
 			o(214439, {		-- Barrel of Banana Infused Rum
 				["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
-				["coord"] = { 54.0, 88.0, KRASARANG_WILDS },
+				["coords"] = {
+					-- coords vary due to zone phasing
+					{ 52.3, 88.7, KRASARANG_WILDS },
+					{ 54.0, 88.0, KRASARANG_WILDS },
+				},
 				["g"] = {
 					i(87266),	-- Recipe: Banana-Infused Rum (RECIPE!)
 				},

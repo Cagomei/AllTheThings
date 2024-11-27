@@ -2867,28 +2867,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			explorationHeader({
 				exploration(1939),	-- Abyssal Sands
-				visit_exploration(5062,{coord={55.3,59.8,TANARIS}}),    -- Bootlegger Outpost
+				visit_exploration(5062,{coord={55.3,59.8,TANARIS}}),	-- Bootlegger Outpost
 				exploration(1938),	-- Broken Pillar
-				visit_exploration(1941,{coord={62.8,50.9,TANARIS}}),    -- Caverns of Time
+				visit_exploration(1941,{coord={62.8,50.9,TANARIS}}),	-- Caverns of Time
 				exploration(2300),	-- Caverns of Time
 				exploration(983),	-- Dunemaul Compound
+				visit_exploration(5063,{coord={44.9,52.8,TANARIS}}),	-- Dunemaul Recruitment Camp
 				exploration(984),	-- Eastmoon Ruins
 				exploration(976),	-- Gadgetzan
 				exploration(987),	-- Land's End Beach
 				exploration(1336),	-- Lost Rigger Cove
 				-- #if BEFORE CATA
 				exploration(1937),	-- Noonshade Ruins
+				-- #else
+				visit_exploration(1937,{coord={58.7,24.4,TANARIS}}),	-- Noonshade Ruins
 				-- #endif
 				exploration(979),	-- Sandsorrow Watch
-				visit_exploration(1940,{coord={62.3,58.9,TANARIS}}),    -- Southbreak Shore
+				visit_exploration(1940,{coord={62.3,58.9,TANARIS}}),	-- Southbreak Shore
 				exploration(992),	-- Southmoon Ruins
-				visit_exploration(977,{coord={64.9,21.8,TANARIS}}),    -- Steamwheedle Port
+				visit_exploration(977,{coord={64.9,21.8,TANARIS}}),	-- Steamwheedle Port
 				exploration(981),	-- The Gaping Chasm
 				exploration(982),	-- The Noxious Lair
 				exploration(980),	-- Thistleshrub Valley
 				exploration(990),	-- Valley of the Watchers
 				-- #if BEFORE CATA
 				exploration(985),	-- Waterspring Field
+				-- #else
+				visit_exploration(985,{coord={59.0,47.5,TANARIS}}),	-- Waterspring Field
+				-- #endif
+				-- #if BEFORE CATA
 				exploration(986),	-- Zalashji's Den
 				-- #endif
 				exploration(978),	-- Zul'Farrak

@@ -46,6 +46,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				i(180380),	-- Lace Draperies
 				i(180355, {	-- Ornate Pyx
 					i(180349),	-- Nethrezim Acolyte's Band
+					i(180352),	-- Cracked Inquisitor's Band [Discord - 2024117]
 				}),
 				i(181208),	-- Anima-Infused Muck
 				i(181224),	-- Avowed Arcanist's Staff

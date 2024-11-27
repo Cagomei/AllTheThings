@@ -44,16 +44,22 @@ root(ROOTS.Zones, {
 					},
 				}),
 				explorationHeader({
+					visit_exploration(6096,{coord={45.4,26.8,VALLEY_OF_THE_FOUR_WINDS}}),	-- Cattail Lake
+					visit_exploration(6466,{coord={36.7,25.0,VALLEY_OF_THE_FOUR_WINDS}}),	-- Cavern of Endless Echoes
 					exploration(6028),	-- Dustback Gorge
 					exploration(5984),	-- Gilded Fan
-					exploration(5980),	-- Halfhill
+					visit_exploration(5948,{coord={73.3,23.6,VALLEY_OF_THE_FOUR_WINDS}}),	-- Grassy Cline
+					visit_exploration(5980,{coord={58.2,45.0,VALLEY_OF_THE_FOUR_WINDS}}),	-- Halfhill
 					exploration(6097),	-- Kunzen Cave
 					exploration(6065),	-- Kunzen Village
 					exploration(5957),	-- Mudmug's Place
 					exploration(6025),	-- Nesingwary's Safari
+					visit_exploration(5973,{coord={60.0,33.8,VALLEY_OF_THE_FOUR_WINDS}}),	-- New Cifera
+					visit_exploration(5936,{coord={83.6,19.4,VALLEY_OF_THE_FOUR_WINDS}}),	-- Pang's Stead
 					exploration(5967),	-- Paoquan Hollow
 					exploration(5972),	-- Pools of Purity
 					exploration(6387),	-- Rumbling Terrace
+					visit_exploration(5949,{coord={75.2,36.2,VALLEY_OF_THE_FOUR_WINDS}}),	-- Shang's Stead
 					exploration(5986),	-- Silken Fields
 					exploration(5970),	-- Singing Marshes
 					exploration(6064),	-- Skyrange
@@ -61,15 +67,21 @@ root(ROOTS.Zones, {
 					exploration(5969),	-- Stoneplow Fields
 					exploration(6001),	-- Stormstout Brewery
 					exploration(5958),	-- Sunsoaked Meadow
+					visit_exploration(6039,{coord={52.0,46.1,VALLEY_OF_THE_FOUR_WINDS}}),	-- Sunsong Ranch
+					visit_exploration(5987,{coord={57.7,54.8,VALLEY_OF_THE_FOUR_WINDS}}),	-- The Gilding Stream
+					visit_exploration(6862,{coord={54.1,53.2,VALLEY_OF_THE_FOUR_WINDS}}),	-- The Halfhill Market
 					exploration(5992),	-- The Heartland
 					exploration(5982),	-- The Imperial Granary
 					exploration(6029),	-- The Torjari Pit
+					visit_exploration(5959,{coord={65.8,38.4,VALLEY_OF_THE_FOUR_WINDS}}),	-- The Twisted Warren
 					exploration(6030),	-- The Wild Plains
+					visit_exploration(6002,{coord={37.1,65.2,VALLEY_OF_THE_FOUR_WINDS}}),	-- Thirsty Alley
 					exploration(5939),	-- Thunderfoot Farm
 					exploration(5937),	-- Thunderfoot Fields
 					exploration(5938),	-- Thunderfoot Ranch
-					exploration(6107),	-- Verdant Belt
+					visit_exploration(6107,{coord={49.5,33.5,VALLEY_OF_THE_FOUR_WINDS}}),	-- Verdant Belt
 					exploration(5985),	-- Winds' Edge
+					visit_exploration(6417,{coord={42.0,71.2,VALLEY_OF_THE_FOUR_WINDS}}),	-- Yan-Zhe River
 					exploration(6388),	-- Zhu's Descent
 				}),
 				n(FACTIONS, {

@@ -218,35 +218,55 @@ root(ROOTS.Zones, {
 					},
 				})),
 				explorationHeader({
+					visit_exploration(6899,{coord={44.9,63.7,GORGROND}}),	-- Affliction Ridge
+					visit_exploration(7448,{coord={71.5,18.9,GORGROND}}),	-- Barrier Sea
 					exploration(6876),	-- Bastion Rise
 					exploration(6881),	-- Beastwatch
+					visit_exploration(7387,{coord={43.1,43.7,GORGROND}}),	-- Brak's Excavation
 					exploration(6889),	-- Brimstone Springs
+					visit_exploration(7451,{coord={63.2,23.0,GORGROND}}),	-- Broken Horn Village
 					exploration(6885),	-- Cragplume Cauldron
 					exploration(7149),	-- Crimson Fen
+					visit_exploration(7322,{coord={48.5,52.5,GORGROND}}),	-- Crushfang's End
 					exploration(6877),	-- Deadgrin
 					exploration(6914),	-- Deeproot
+					visit_exploration(7154,{coord={44.4,53.7,GORGROND}}),	-- Drywind Gorge
+					visit_exploration(7190,{coord={49.9,45.5,GORGROND}}),	-- Dionor's Demise
 					exploration(7320),	-- Everbloom Wilds
 					exploration(7402),	-- Evermorn Rise
 					exploration(6880),	-- Evermorn Springs
 					exploration(7319),	-- Gorgorek's Fall
+					visit_exploration(6913,{coord={36.2,78.2,GORGROND}}),	-- Gorgrond Pass
 					exploration(6901),	-- Grimrail Depot
+					visit_exploration(7205,{coord={49.6,44.9,GORGROND}}),	-- Grom'kar Gulch
 					exploration(6891),	-- Gronn Canyon
 					exploration(7158),	-- Highpass
+					visit_exploration(7520,{coord={54.2,18.3,GORGROND}}),	-- Iron Docks
 					exploration(6893),	-- Iyun Weald
 					exploration(6884),	-- Mistcreep Mire
+					visit_exploration(7152,{coord={64.7,49.1,GORGROND}}),	-- Naielle's Watch
+					visit_exploration(7501,{coord={39.6,94.5,GORGROND}}),	-- Orunai Coast
 					exploration(7298),	-- Overlook Ruins
 					exploration(6935),	-- Razorbloom
+					visit_exploration(6934,{coord={42.7,36.0,GORGROND}}),	-- Rooter's Pass
+					visit_exploration(7299,{coord={50.7,80.1,GORGROND}}),	-- Ruins of the First Bastion
 					exploration(7394),	-- Steamburst Cauldron
 					exploration(7304),	-- Steamscar Rise
 					exploration(6887),	-- Stonemaul Arena
 					exploration(6900),	-- Sulfur Basin
 					exploration(6878),	-- Tailthrasher Basin
 					exploration(7224),	-- Tangleheart
+					visit_exploration(7474,{coord={69.6,23.9,GORGROND}}),	-- Thaelin's Workshop
+					visit_exploration(6879,{coord={43.4,69.2,GORGROND}}),	-- The Broken Spine
+					visit_exploration(7403,{coord={41.1,84.7,GORGROND}}),	-- The Compost Heap
+					visit_exploration(7313,{coord={45.9,86.6,GORGROND}}),	-- The Destroyed Expedition
 					exploration(6915),	-- The Fertile Ground
 					exploration(7415),	-- The Iron Approach
 					exploration(7411),	-- The Iron Approach
 					exploration(6892),	-- The Pit
+					visit_exploration(7155,{coord={44.3,43.7,GORGROND}}),	-- Valley of Destruction
 					exploration(7153),	-- Wildwood Wash
+					visit_exploration(7437,{coord={54.4,71.9,GORGROND}}),	-- Witherwind Pass
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1511, {	-- Bastion Rise, Gorgrond

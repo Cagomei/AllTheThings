@@ -151,34 +151,63 @@ root(ROOTS.Zones, {
 					},
 				})),
 				explorationHeader({
+					visit_exploration(7120,{coord={60.9,26.4,DRAENOR_SHADOWMOON_VALLEY}}),	-- Altar of Sha'tar
 					exploration(6873),	-- Anguish Fortress
+					visit_exploration(7122,{coord={52.6,38.8,DRAENOR_SHADOWMOON_VALLEY}}),	-- Arbor Glen
 					exploration(7144),	-- Blademoon Bloom
+					visit_exploration(7048,{coord={23.4,33.8,DRAENOR_SHADOWMOON_VALLEY}}),	-- Bloodthorn Hill
 					exploration(6910),	-- Darktide Roost
+					visit_exploration(7256,{coord={53.5,84.3,DRAENOR_SHADOWMOON_VALLEY}}),	-- Darktide Strait
+					visit_exploration(7472,{coord={50.6,16.2,DRAENOR_SHADOWMOON_VALLEY}}),	-- Deadwalker Pass
 					exploration(7232),	-- Drybone Hollow
 					exploration(7051),	-- Dyvari Overgrowth
 					exploration(7116),	-- Elodor
 					exploration(7117),	-- Elodor Fields
 					exploration(6923),	-- Embaari Village
+					visit_exploration(7760,{coord={27.6,9.50,DRAENOR_SHADOWMOON_VALLEY}}),	-- Eventide Bay
+					visit_exploration(7173,{coord={25.2,7.60,DRAENOR_SHADOWMOON_VALLEY}}),	-- Eventide Landing
 					exploration(6957),	-- Exile's Rise
+					visit_exploration(7118,{coord={59.1,30.6,DRAENOR_SHADOWMOON_VALLEY}}),	-- Fey Landing
+					visit_exploration(7165,{coord={54.1,57.1,DRAENOR_SHADOWMOON_VALLEY}}),	-- Fiona's Caravan
+					visit_exploration(7220,{coord={42.1,77.3,DRAENOR_SHADOWMOON_VALLEY}}),	-- Forgotten Shore
+					visit_exploration(6870,{coord={46.5,15.3,DRAENOR_SHADOWMOON_VALLEY}}),	-- Gloomshade Grotto
 					exploration(6855),	-- Gloomshade Grove
 					exploration(7216),	-- Great Tree Valuundira
 					exploration(6797),	-- Gul'var
+					visit_exploration(7473,{coord={61.4,34.5,DRAENOR_SHADOWMOON_VALLEY}}),	-- Hills of Valuun
 					exploration(7221),	-- Isle of Shadows
 					exploration(6930),	-- Karabor
+					visit_exploration(6946,{coord={80.6,42.5,DRAENOR_SHADOWMOON_VALLEY}}),	-- Karabor Harbor
 					exploration(6793),	-- Light's Fall
 					exploration(6922),	-- Moonflower Valley
+					visit_exploration(7397,{coord={66.2,35.3,DRAENOR_SHADOWMOON_VALLEY}}),	-- Moonlit Shore
+					visit_exploration(6993,{coord={37.3,53.7,DRAENOR_SHADOWMOON_VALLEY}}),	-- Moonwillow Peak
+					visit_exploration(7470,{coord={48.4,22.3,DRAENOR_SHADOWMOON_VALLEY}}),	-- Mount Kra'gor
 					exploration(6931),	-- Path of the Light
 					exploration(7392),	-- Pillars of Fate
 					exploration(6921),	-- Plains of Serenity
+					visit_exploration(7119,{coord={57.2,23.4,DRAENOR_SHADOWMOON_VALLEY}}),	-- Rangari Enclave
+					visit_exploration(7492,{coord={50.4,30.8,DRAENOR_SHADOWMOON_VALLEY}}),	-- Saraah's Vale
+					visit_exploration(6811,{coord={23.0,20.2,DRAENOR_SHADOWMOON_VALLEY}}),	-- Secluded Glade
 					exploration(6792),	-- Shaz'gul
+					visit_exploration(7189,{coord={50.4,82.0,DRAENOR_SHADOWMOON_VALLEY}}),	-- Shrine of Othaar
 					exploration(6909),	-- Socrethar's Rise
 					exploration(7231),	-- Swamplight Trail
+					visit_exploration(7265,{coord={41.8,10.7,DRAENOR_SHADOWMOON_VALLEY}}),	-- Tanaan Channel
+					visit_exploration(6794,{coord={48.3,36.2,DRAENOR_SHADOWMOON_VALLEY}}),	-- Teluuna Observatory
+					visit_exploration(6872,{coord={30.7,42.6,DRAENOR_SHADOWMOON_VALLEY}}),	-- Terrace of the Stars
 					exploration(6791),	-- The Burial Fields
+					visit_exploration(6945,{coord={74.7,53.0,DRAENOR_SHADOWMOON_VALLEY}}),	-- The Coliseum of Light
+					visit_exploration(7426,{coord={56.7,57.3,DRAENOR_SHADOWMOON_VALLEY}}),	-- The Crescent Hearth
 					exploration(6772),	-- The Cursed Woods
 					exploration(7161),	-- The Draakorium
 					exploration(7049),	-- The Nightmarsh
+					visit_exploration(6857,{coord={18.4,29.8,DRAENOR_SHADOWMOON_VALLEY}}),	-- The Shadow Rise
 					exploration(7091),	-- The Shimmer Moor
+					visit_exploration(7427,{coord={60.0,27.3,DRAENOR_SHADOWMOON_VALLEY}}),	-- The Silken Pillow
+					visit_exploration(6977,{coord={53.3,42.7,DRAENOR_SHADOWMOON_VALLEY}}),	-- The Verdant Mire
 					exploration(6944),	-- Tranquil Court
+					visit_exploration(6866,{coord={41.0,55.1,DRAENOR_SHADOWMOON_VALLEY}}),	-- Twilight Glade
 					exploration(7225),	-- Umbrafen
 				}),
 				n(FACTIONS, {

@@ -98,7 +98,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60437, {	-- Challenges in Bastion
 					["provider"] = { "n", 167206 },	-- Yanlar
-					["coord"] = { 37.1, 25.5, THE_TRUNK },
+					["coord"] = { 37.1, 25.5, THE_ROOTS },
 					["g"] = {
 						i(181741),	-- Tribute of the Paragon
 					},

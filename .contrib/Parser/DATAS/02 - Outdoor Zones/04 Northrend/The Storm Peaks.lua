@@ -246,50 +246,60 @@ root(ROOTS.Zones, {
 				}),
 				explorationHeader({
 					exploration(4452),	-- Bor's Breath
-					visit_exploration(4484,{coord={30.2,37.4,THE_STORM_PEAKS}}),    -- Bouldercrag's Refuge
+					visit_exploration(4451,{coord={36.8,75.3,THE_STORM_PEAKS}}),	-- Bor's Fall
+					visit_exploration(4484,{coord={30.2,37.4,THE_STORM_PEAKS}}),	-- Bouldercrag's Refuge
 					exploration(4442),	-- Brann's Base-Camp
 					exploration(4422),	-- Brunnhildar Village
 					exploration(4441),	-- Camp Tunka'lo
+					visit_exploration(4433,{coord={52.3,76.0,THE_STORM_PEAKS}}),	-- Dragonspine Peaks
 					exploration(4438),	-- Dun Niffelem
 					exploration(4431),	-- Engine of the Makers
 					exploration(4495),	-- Fjorn's Anvil
 					exploration(4439),	-- Frostfield Lake
+					visit_exploration(4487,{coord={62.4,41.4,THE_STORM_PEAKS}}),	-- Frostfloe Deep
 					exploration(4428),	-- Frosthold
 					exploration(4421),	-- Garm
 					exploration(4460),	-- Garm's Bane
 					exploration(4461),	-- Garm's Rise
-					visit_exploration(4592,{coord={47.3,55.0,THE_STORM_PEAKS}}),    -- Gimorak's Den
+					visit_exploration(4592,{coord={47.3,55.0,THE_STORM_PEAKS}}),	-- Gimorak's Den
 					exploration(4429),	-- Grom'arsh Crash-Site
-					visit_exploration(4542,{coord={57.2,44.9,THE_STORM_PEAKS}}),    -- Hall of the Shaper
-					visit_exploration(4272,{coord={44.6,21.8,THE_STORM_PEAKS}}),    -- Halls of Lightning
-					visit_exploration(4264,{coord={39.3,28.1,THE_STORM_PEAKS}}),    -- Halls of Stone
-					visit_exploration(4455,{coord={55.8,63.7,THE_STORM_PEAKS}}),    -- Hibernal Cavern
+					visit_exploration(4542,{coord={57.2,44.9,THE_STORM_PEAKS}}),	-- Hall of the Shaper
+					visit_exploration(4272,{coord={44.6,21.8,THE_STORM_PEAKS}}),	-- Halls of Lightning
+					visit_exploration(4264,{coord={39.3,28.1,THE_STORM_PEAKS}}),	-- Halls of Stone
+					visit_exploration(4455,{coord={55.8,63.7,THE_STORM_PEAKS}}),	-- Hibernal Cavern
 					exploration(4418),	-- K3
-					visit_exploration(4435,{coord={28.5,40.7,THE_STORM_PEAKS}}),    -- Narvir's Cradle
+					visit_exploration(4450,{coord={56.2,58.3,THE_STORM_PEAKS}}),	-- Loken's Bargain
+					visit_exploration(4502,{coord={33.7,38.8,THE_STORM_PEAKS}}),	-- Mimir's Workshop
+					visit_exploration(4435,{coord={28.5,40.7,THE_STORM_PEAKS}}),	-- Narvir's Cradle
 					exploration(4434),	-- Nidavelir
 					exploration(4444),	-- Plain of Echoes
 					exploration(4459),	-- Ricket's Folly
 					exploration(4453),	-- Rohemdal Pass
 					exploration(4423),	-- Sifreldar Village
 					exploration(4419),	-- Snowblind Hills
-					visit_exploration(4420,{coord={47.3,74.1,THE_STORM_PEAKS}}),    -- Snowblind Terrace
+					visit_exploration(4420,{coord={47.3,74.1,THE_STORM_PEAKS}}),	-- Snowblind Terrace
 					exploration(4436),	-- Snowdrift Plains
 					exploration(4458),	-- Sparksocket Minefield
 					exploration(4490),	-- Stormcrest
+					visit_exploration(4466,{coord={46.1,49.1,THE_STORM_PEAKS}}),	-- Temple of Invention
 					exploration(4463),	-- Temple of Life
 					exploration(4464),	-- Temple of Order
 					exploration(4430),	-- Temple of Storms
 					exploration(4465),	-- Temple of Winter
 					exploration(4543),	-- Temple of Wisdom
 					exploration(4446),	-- Terrace of the Makers
-					visit_exploration(4499,{coord={21.9,58.9,THE_STORM_PEAKS}}),    -- The Blighted Pool
-					visit_exploration(4488,{coord={66.3,43.0,THE_STORM_PEAKS}}),    -- The Howling Hollow
+					visit_exploration(4499,{coord={21.9,58.9,THE_STORM_PEAKS}}),	-- The Blighted Pool
+					visit_exploration(4631,{coord={38.8,65.7,THE_STORM_PEAKS}}),	-- The Broodmother's Nest
+					visit_exploration(4485,{coord={37.2,45.2,THE_STORM_PEAKS}}),	-- The Inventor's Library
+					visit_exploration(4488,{coord={66.3,43.0,THE_STORM_PEAKS}}),	-- The Howling Hollow
 					exploration(4432),	-- The Foot Steppes
-					visit_exploration(4425,{coord={47.0,68.4,THE_STORM_PEAKS}}),    -- The Forlorn Mine
+					visit_exploration(4425,{coord={47.0,68.4,THE_STORM_PEAKS}}),	-- The Forlorn Mine
 					exploration(4473),	-- The Frigid Tomb
-					visit_exploration(4486,{coord={27.4,49.9,THE_STORM_PEAKS}}),    -- The Frozen Mine
+					visit_exploration(4486,{coord={27.4,49.9,THE_STORM_PEAKS}}),	-- The Frozen Mine
+					visit_exploration(4535,{coord={49.5,69.3,THE_STORM_PEAKS}}),	-- The Pit of The Fang
 					exploration(4440),	-- Thunderfall
-					visit_exploration(4449,{coord={33.5,60.9,THE_STORM_PEAKS}}),    -- Uldis
+					visit_exploration(4457,{coord={33.0,83.5,THE_STORM_PEAKS}}),	-- Torseg's Rest
+					visit_exploration(4449,{coord={33.5,60.9,THE_STORM_PEAKS}}),	-- Uldis
 					exploration(4445),	-- Ulduar
 					exploration(4424),	-- Valkyrion
 					exploration(4437),	-- Valley of Ancient Winters

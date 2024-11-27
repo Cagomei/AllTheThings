@@ -130,13 +130,16 @@ root(ROOTS.Zones, {
 					exploration(4276),	-- Altar of Sseratus
 					exploration(4320),	-- Amphitheater of Anguish
 					exploration(4469),	-- Dargath's Demise
+					visit_exploration(4280,{coord={46.4,63.3,ZULDRAK}}),	-- Drak'Agal
 					exploration(4327),	-- Drak'Mabwa
 					exploration(4279),	-- Drak'Sotra
 					exploration(4278),	-- Drak'Sotra Fields
-					visit_exploration(4309,{coord={26.5,86.8,ZULDRAK}}),    -- Drak'Tharon Keep
+					visit_exploration(4309,{coord={26.5,86.8,ZULDRAK}}),	-- Drak'Tharon Keep
+					visit_exploration(4579,{coord={70.8,23.4,ZULDRAK}}),	-- Dubra'Jin
 					exploration(4312),	-- Ebon Watch
+					visit_exploration(4390,{coord={33.3,39.9,ZULDRAK}}),	-- Frigid Breach
 					exploration(4375),	-- Gundrak
-					visit_exploration(4326,{coord={64.2,53.7,ZULDRAK}}),    -- Heb'Drakkar
+					visit_exploration(4326,{coord={64.2,53.7,ZULDRAK}}),	-- Heb'Drakkar
 					exploration(4294),	-- Heb'Valok
 					exploration(4481),	-- Jintha'kalar Passage
 					exploration(4299),	-- Kolramas
@@ -155,8 +158,8 @@ root(ROOTS.Zones, {
 					exploration(4310),	-- Zeramas
 					exploration(4319),	-- Zim'Abwa
 					exploration(4328),	-- Zim'Rhuk
-					exploration(4323),	-- Zim'Torga
-					visit_exploration(4373,{coord={79.8,37.2,ZULDRAK}}),    -- Zol'Heb
+					visit_exploration(4323,{coord={59.0,54.8,ZULDRAK}}),	-- Zim'Torga
+					visit_exploration(4373,{coord={79.8,37.2,ZULDRAK}}),	-- Zol'Heb
 					exploration(4372),	-- Zol'Maz Stronghold
 				}),
 				n(FLIGHT_PATHS, {

@@ -1019,8 +1019,6 @@ root(ROOTS.Unsorted, {
 				exploration(15380),	-- Awakening Machine
 				exploration(14752),	-- Azj-Kahet
 				exploration(15547),	-- Beledar's Bounty
-				exploration(15106),	-- Bleak Sand
-				exploration(14777),	-- Boskroot Basin
 				exploration(15372),	-- Brood Pens
 				exploration(15378),	-- Bulwark of Authorization
 				exploration(15051),	-- Chamber of Heart
@@ -1044,10 +1042,7 @@ root(ROOTS.Unsorted, {
 				exploration(15474),	-- Deepwalker Pass
 				exploration(15329),	-- Delver's Headquarters
 				exploration(15108),	-- Dev Map - Exile's Reach - Tower
-				exploration(14780),	-- Dhar Bandar
-				exploration(15039),	-- Dhar Durgaz
 				exploration(15358),	-- Discordant Sieve
-				exploration(14837),	-- Durgaz Cabin
 				exploration(15094),	-- Duskrise Acreage
 				exploration(14999),	-- Earthcrawl Mines
 				exploration(15155),	-- Echoing Overlook
@@ -1057,7 +1052,6 @@ root(ROOTS.Unsorted, {
 				exploration(15142),	-- Firewall of Negation
 				exploration(15179),	-- Fortune's Fall
 				exploration(15044),	-- Foundation Hall
-				exploration(14851),	-- Fungal Fields
 				exploration(14957),	-- Fungal Folly
 				exploration(15361),	-- Gemvein Tunnels
 				exploration(15140),	-- Gloomcrag Bower
@@ -1073,8 +1067,6 @@ root(ROOTS.Unsorted, {
 				exploration(15145),	-- Hallowfall
 				exploration(15019),	-- Hewn Passage
 				exploration(15112),	-- High Hollows
-				exploration(14854),	-- Hillhelm Stead
-				exploration(15166),	-- Isaec's Folly
 				exploration(14717),	-- Isle of Dorn
 				exploration(15101),	-- Junction
 				exploration(15042),	-- Keepers Terrace
@@ -1103,7 +1095,6 @@ root(ROOTS.Unsorted, {
 				exploration(15143),	-- Processing Unit
 				exploration(14512),	-- RebornTree
 				exploration(15453),	-- Rock Bottom Inn
-				exploration(15114),	-- Shadowgrove Vineyards
 				exploration(14820),	-- Shadowvein Point
 				exploration(15169),	-- Shadowvein Power Station
 				exploration(15170),	-- Shadowvein Mine
@@ -1114,18 +1105,14 @@ root(ROOTS.Unsorted, {
 				exploration(15020),	-- Sprawling Trackyard
 				exploration(14919),	-- Stagnant Mire
 				exploration(15550),	-- Stagnant Mire
-				exploration(14852),	-- Stillstone Pond
 				exploration(15184),	-- Stoneshaper's Atrium
 				exploration(15182),	-- Stoneward's Rise
 				exploration(15359),	-- Sundered's Crucible
-				exploration(15035),	-- Sunless Strand
-				exploration(15385),	-- Sunrise Shadow
 				exploration(15008),	-- Tak-Rethan Abyss
 				exploration(15327),	-- Tak-Rethan Abyss
 				exploration(15544),	-- Tenir's Ascent
 				exploration(15367),	-- Terrace of Majesty
 				exploration(14853),	-- Test Dungeon
-				exploration(14788),	-- The Opalcreg
 				exploration(14794),	-- The Burrows
 				exploration(14795),	-- The Ringing Deeps
 				exploration(14798),	-- The Waterworks
@@ -1141,9 +1128,7 @@ root(ROOTS.Unsorted, {
 				exploration(15007),	-- The Spiral Weave
 				exploration(15009),	-- The Underkeep
 				exploration(15021),	-- The Waxatory
-				exploration(15025),	-- The Faded Shore
 				exploration(15043),	-- The Forgegrounds
-				exploration(15099),	-- The Waterworks
 				exploration(15100),	-- The Earthenworks
 				exploration(15113),	-- The Transformatory
 				exploration(15134),	-- The Burrows
@@ -1169,7 +1154,6 @@ root(ROOTS.Unsorted, {
 				exploration(15548),	-- The Hungering Pool
 				exploration(15551),	-- The Fangs
 				exploration(15185),	-- Thraegar Rest
-				exploration(15024),	-- Torchlight Mine
 				exploration(14791),	-- Umbral Bazaar
 				exploration(15111),	-- Umbral Bazaar
 				exploration(15148),	-- Velhan's Claim
@@ -1177,7 +1161,6 @@ root(ROOTS.Unsorted, {
 				exploration(15546),	-- Veneration Grounds
 				exploration(15387),	-- Warband Camp
 				exploration(15384),	-- Whispering Pool
-				exploration(14766),	-- Wildcamp Ul'ar
 				exploration(15001),	-- Zekvir's Lair
 				exploration(14747),	-- Zone 4 Dev Land
 				exploration(15055),	-- zzoldPriory of the Sacred Flame

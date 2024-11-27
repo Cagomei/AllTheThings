@@ -3728,7 +3728,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						i(173278),	-- Shatterskull Bonecrusher
 						i(173273),	-- Smoldering Censer of Purity
 						i(173272),	-- Zoid's Firelit Greatsword
-						i(69237),	-- Living Ember
+						ig(69237),	-- Living Ember
 					},
 				}),
 				e(192, {	-- Beth'tilac

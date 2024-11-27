@@ -68,28 +68,46 @@ root(ROOTS.Zones, {
 				}),
 				explorationHeader({
 					exploration(5943),	-- Amberfly Bog
-					visit_exploration(5857,{coord={40.0,75.3,THE_JADE_FOREST}}),    -- Camp Gormal
+					visit_exploration(5866,{coord={31.2,17.2,THE_JADE_FOREST}}),	-- Ascent of Swirling Winds
+					visit_exploration(5863,{coord={43.2,23.6,THE_JADE_FOREST}}),	-- Banquet Grounds
+					visit_exploration(5857,{coord={40.0,75.3,THE_JADE_FOREST}}),	-- Camp Gormal
 					exploration(5905),	-- Camp Nooka Nooka
+					visit_exploration(5901,{coord={27.3,32.0,THE_JADE_FOREST}}),	-- Cave of Words
+					visit_exploration(6867,{coord={30.9,37.0,THE_JADE_FOREST}}),	-- Circle of Blood
+					visit_exploration(5910,{coord={30.7,33.9,THE_JADE_FOREST}}),	-- Circle of Bone
+					visit_exploration(5911,{coord={28.9,32.4,THE_JADE_FOREST}}),	-- Circle of Stone
 					exploration(5930),	-- Dawn's Blossom
 					exploration(5951),	-- Dookin' Grounds
 					exploration(5940),	-- Dreamer's Pavilion
 					exploration(5962),	-- Emperor's Omen
+					visit_exploration(5836,{coord={42.7,36.8,THE_JADE_FOREST}}),	-- Forest Heart
 					exploration(5890),	-- Fox Grove
 					exploration(5853),	-- Garrosh'ar Point
 					exploration(5955),	-- Greenstone Quarry
 					exploration(6204),	-- Greenstone Village
 					exploration(5950),	-- Grookin Hill
+					visit_exploration(6523,{coord={29.2,8.90,THE_JADE_FOREST}}),	-- Honeydew Farm
 					exploration(6522),	-- Honeydew Glade
 					exploration(6521),	-- Honeydew Village
 					exploration(5974),	-- Jade Temple Grounds
+					visit_exploration(5875,{coord={39.4,45.1,THE_JADE_FOREST}}),	-- Lair of the Jade Witch
+					visit_exploration(5907,{coord={22.5,35.0,THE_JADE_FOREST}}),	-- Lake Kittitata
+					visit_exploration(6022,{coord={71.2,88.6,THE_JADE_FOREST}}),	-- Mistveil Sea
 					exploration(6063),	-- Moonwater Retreat
+					visit_exploration(5953,{coord={26.7,56.0,THE_JADE_FOREST}}),	-- Murky Bank
 					exploration(5854),	-- Nectarbreeze Orchard
 					exploration(5878),	-- Orchid Hollow
 					exploration(5899),	-- Path of Enlightenment
 					exploration(5851),	-- Paw'don Glade
 					exploration(5934),	-- Pearl Lake
+					visit_exploration(5935,{coord={57.7,81.7,THE_JADE_FOREST}}),	-- Pearlfin Village
+					visit_exploration(6078,{coord={42.6,10.3,THE_JADE_FOREST}}),	-- Seat of the Spirit Waker
+					visit_exploration(5898,{coord={25.1,25.2,THE_JADE_FOREST}}),	-- Serenity Falls
 					exploration(5876),	-- Serpent's Heart
+					visit_exploration(6080,{coord={45.2,67.0,THE_JADE_FOREST}}),	-- Serpent's Overlook
+					visit_exploration(5891,{coord={56.7,73.1,THE_JADE_FOREST}}),	-- Shang's Valley
 					exploration(5932),	-- Shrine of the Dawn
+					visit_exploration(5961,{coord={35.6,47.7,THE_JADE_FOREST}}),	-- Slicky Stream
 					exploration(5872),	-- Slingtail Pits
 					exploration(6077),	-- Sri-La Village
 					exploration(5867),	-- Strongarm Airstrip
@@ -98,15 +116,26 @@ root(ROOTS.Zones, {
 					exploration(5931),	-- The Arboretum
 					exploration(5964),	-- The Bamboo Wilds
 					exploration(5897),	-- The Fertile Copse
+					visit_exploration(5933,{coord={39.9,40.7,THE_JADE_FOREST}}),	-- The Gong of Hope
+					visit_exploration(5871,{coord={41.3,27.2,THE_JADE_FOREST}}),	-- The Ring of Balance
+					visit_exploration(5868,{coord={39.8,22.2,THE_JADE_FOREST}}),	-- The Ring of Inner Focus
 					exploration(5929),	-- The Silkwood
+					visit_exploration(6653,{coord={42.0,93.4,THE_JADE_FOREST}}),	-- The Skyfire
+					visit_exploration(6082,{coord={41.4,72.0,THE_JADE_FOREST}}),	-- The Splintered Path
 					exploration(6110),	-- The Thunderwood
+					visit_exploration(6024,{coord={65.3,51.3,THE_JADE_FOREST}}),	-- The Windspire
 					exploration(6524),	-- Thunder Hold
+					visit_exploration(6104,{coord={34.8,32.5,THE_JADE_FOREST}}),	-- Thunderpaw Refuge
 					exploration(5855),	-- Tian Monastery
 					exploration(5912),	-- Tideview Thicket
 					exploration(5942),	-- Tigers' Wood
+					visit_exploration(6517,{coord={40.7,81.5,THE_JADE_FOREST}}),	-- Twinspire Keep
+					visit_exploration(5919,{coord={51.4,98.5,THE_JADE_FOREST}}),	-- Uncharted Sea
 					exploration(5874),	-- Waxwood
+					visit_exploration(6023,{coord={61.8,54.5,THE_JADE_FOREST}}),	-- Windspire Bridge
 					exploration(6012),	-- Windward Isle
 					exploration(5966),	-- Woods of the Lost
+					visit_exploration(5865,{coord={27.4,17.7,THE_JADE_FOREST}}),	-- Wreck of Hellscream's Fist
 				}),
 				n(FACTIONS, {
 					faction(FACTION_ORDER_OF_THE_CLOUD_SERPENT, {	-- Order of the Cloud Serpent

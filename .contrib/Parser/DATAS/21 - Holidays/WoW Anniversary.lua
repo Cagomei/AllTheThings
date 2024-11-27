@@ -3492,7 +3492,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	n(WOW_ANNIVERSARY_TWENTY, {
 		q(84309),	-- Bonus chance for Reins of the Heavenly Onyx Cloud Serpent from Sha of Anger on first kill per day
 		q(84312),	-- Bonus chance for Grand Black War Mammoth from Doomwalker/Archavon on first kill per day
-		q(86398),	-- Bonus chance for ? mount (need more data) from Doomwalker on first kill per day
+		q(86398),	-- Bonus chance for Illidary Doomhawk from Doomwalker on first kill per day
 		q(85723),	-- first WB kill of day/event or maybe Doomwalker
 		q(85168),	-- fourth WB kill of day/event or mayba Kazzak
 		q(84878),	-- triggered with turnin of 'Chromie's Codex' [82783] (Bronze Cel Cache lockout?)

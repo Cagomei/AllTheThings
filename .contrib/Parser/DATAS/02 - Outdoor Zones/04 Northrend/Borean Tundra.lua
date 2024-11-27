@@ -252,9 +252,9 @@ root(ROOTS.Zones, {
 					},
 				}),
 				explorationHeader({
-					visit_exploration(4023,{coord={47.2,33.9,BOREAN_TUNDRA}}),    -- Amber Ledge
-					visit_exploration(4105,{coord={42.3,36.4,BOREAN_TUNDRA}}),    -- Beryl Point
-					visit_exploration(4134,{coord={47.2,12.7,BOREAN_TUNDRA}}),    -- Blistering Pool
+					visit_exploration(4023,{coord={47.2,33.9,BOREAN_TUNDRA}}),	-- Amber Ledge
+					visit_exploration(4105,{coord={42.3,36.4,BOREAN_TUNDRA}}),	-- Beryl Point
+					visit_exploration(4134,{coord={47.2,12.7,BOREAN_TUNDRA}}),	-- Blistering Pool
 					exploration(4021),	-- Bloodspore Plains
 					exploration(4122),	-- Bor'gorok Outpost
 					exploration(4133),	-- Charred Rise
@@ -262,46 +262,49 @@ root(ROOTS.Zones, {
 					exploration(4024),	-- Coldarra
 					exploration(4039),	-- Coldrock Quarry
 					exploration(4114),	-- Death's Stand
-					visit_exploration(4104,{coord={33.8,68.4,BOREAN_TUNDRA}}),    -- Echo Cove
+					visit_exploration(4104,{coord={33.8,68.4,BOREAN_TUNDRA}}),	-- Echo Cove
 					exploration(4111),	-- Farshire
-					visit_exploration(4112,{coord={59.2,64.3,BOREAN_TUNDRA}}),    -- Farshire Lighthouse
+					visit_exploration(4112,{coord={59.2,64.3,BOREAN_TUNDRA}}),	-- Farshire Lighthouse
 					exploration(4108),	-- Fizzcrank Airstrip
-					visit_exploration(10160,{coord={64.8,22.9,BOREAN_TUNDRA}}),    -- Fizzcrank Pumping Station
+					visit_exploration(4119,{coord={66.9,18.9,BOREAN_TUNDRA}}),	-- Festering Pools
+					visit_exploration(10160,{coord={64.8,22.9,BOREAN_TUNDRA}}),	-- Fizzcrank Pumping Station
 					exploration(4138),	-- Frozen Reach
-					visit_exploration(4022,{coord={46.8,59.4,BOREAN_TUNDRA}}),    -- Gammoth
+					visit_exploration(4022,{coord={46.8,59.4,BOREAN_TUNDRA}}),	-- Gammoth
 					exploration(4106),	-- Garrosh's Landing
+					visit_exploration(4098,{coord={40.0,10.2,BOREAN_TUNDRA}}),	-- Glimmer Bay
 					exploration(4041),	-- Kaskala
 					exploration(4109),	-- Lake Kum'uya
 					exploration(4123),	-- Magmoth
 					exploration(4020),	-- Mightstone Quarry
-					visit_exploration(4040,{coord={67.0,51.6,BOREAN_TUNDRA}}),    -- Njord's Breath Bay
+					visit_exploration(4040,{coord={67.0,51.6,BOREAN_TUNDRA}}),	-- Njord's Breath Bay
+					visit_exploration(4146,{coord={65.2,17.7,114}}),	-- North Point Station
 					exploration(4031),	-- Pal'ea
-					visit_exploration(4130,{coord={36.4,64.1,BOREAN_TUNDRA}}),    -- Plains of Nasam
+					visit_exploration(4130,{coord={36.4,64.1,BOREAN_TUNDRA}}),	-- Plains of Nasam
 					exploration(4029),	-- Riplash Ruins
 					exploration(4028),	-- Riplash Strand
-					visit_exploration(4132,{coord={41.3,10.1,BOREAN_TUNDRA}}),    -- Ruins of Eldra'nath
+					visit_exploration(4132,{coord={41.3,10.1,BOREAN_TUNDRA}}),	-- Ruins of Eldra'nath
 					exploration(4101),	-- Sands of Nasam
-					visit_exploration(4116,{coord={60.9,21.4,BOREAN_TUNDRA}}),    -- Scalding Pools
+					visit_exploration(4116,{coord={60.9,21.4,BOREAN_TUNDRA}}),	-- Scalding Pools
 					exploration(4269),	-- Shrine of Scales
-					visit_exploration(4148,{coord={65.3,28.7,BOREAN_TUNDRA}}),    -- South Point Station
-					visit_exploration(4135,{coord={88.8,22.7,BOREAN_TUNDRA}}),    -- Spire of Blood
-					visit_exploration(4136,{coord={84.0,21.6,BOREAN_TUNDRA}}),    -- Spire of Decay
-					visit_exploration(4137,{coord={88.6,28.9,BOREAN_TUNDRA}}),    -- Spire of Pain
-					visit_exploration(10162,{coord={74.2,31.7,BOREAN_TUNDRA}}),    -- Steam Springs
+					visit_exploration(4148,{coord={65.3,28.7,BOREAN_TUNDRA}}),	-- South Point Station
+					visit_exploration(4135,{coord={88.8,22.7,BOREAN_TUNDRA}}),	-- Spire of Blood
+					visit_exploration(4136,{coord={84.0,21.6,BOREAN_TUNDRA}}),	-- Spire of Decay
+					visit_exploration(4137,{coord={88.6,28.9,BOREAN_TUNDRA}}),	-- Spire of Pain
+					visit_exploration(10162,{coord={74.2,31.7,BOREAN_TUNDRA}}),	-- Steam Springs
 					exploration(4127),	-- Steeljaw's Caravan
 					exploration(4118),	-- Talramas
 					exploration(4037),	-- Taunka'le Village
 					exploration(4125),	-- Temple City of En'kilah
-					visit_exploration(4115,{coord={60.3,60.1,BOREAN_TUNDRA}}),    -- The Abandoned Reach
+					visit_exploration(4115,{coord={60.3,60.1,BOREAN_TUNDRA}}),	-- The Abandoned Reach
 					exploration(4124),	-- The Dens of Dying
 					exploration(4043),	-- The Flood Plains
 					exploration(4035),	-- The Geyser Fields
 					exploration(4120),	-- The Nexus
-					visit_exploration(4265,{coord={27.6,26.5,BOREAN_TUNDRA}}),    -- The Nexus
+					visit_exploration(4265,{coord={27.6,26.5,BOREAN_TUNDRA}}),	-- The Nexus
 					exploration(4026),	-- The Transitus Stair
 					exploration(4126),	-- The Wailing Ziggurat
-					visit_exploration(4025,{coord={43.4,16.8,BOREAN_TUNDRA}}),    -- The Westrift
-					visit_exploration(4141,{coord={36.4,51.4,BOREAN_TUNDRA}}),    -- Torp's Farm
+					visit_exploration(4025,{coord={43.4,16.8,BOREAN_TUNDRA}}),	-- The Westrift
+					visit_exploration(4141,{coord={36.4,51.4,BOREAN_TUNDRA}}),	-- Torp's Farm
 					exploration(4042),	-- Transborea
 					exploration(4121),	-- Transitus Shield
 					exploration(4113),	-- Unu'pe
@@ -309,9 +312,11 @@ root(ROOTS.Zones, {
 					exploration(4144),	-- Warsong Farms / Warsong Farms Outpost
 					exploration(4142),	-- Warsong Granary
 					exploration(4129),	-- Warsong Hold
-					visit_exploration(4107,{coord={27.2,54.2,BOREAN_TUNDRA}}),    -- Warsong Jetty
-					visit_exploration(4097,{coord={40.0,19.9,BOREAN_TUNDRA}}),    -- Winterfin Caverns
-					visit_exploration(4033,{coord={38.7,14.9,BOREAN_TUNDRA}}),    -- Winterfin Village
+					visit_exploration(4107,{coord={27.2,54.2,BOREAN_TUNDRA}}),	-- Warsong Jetty
+					visit_exploration(4145,{coord={60.2,20.1,BOREAN_TUNDRA}}),	-- West Point Station
+					visit_exploration(4097,{coord={40.0,19.9,BOREAN_TUNDRA}}),	-- Winterfin Caverns
+					visit_exploration(4099,{coord={43.5,14.7,BOREAN_TUNDRA}}),	-- Winterfin Retreat
+					visit_exploration(4033,{coord={38.7,14.9,BOREAN_TUNDRA}}),	-- Winterfin Village
 				}),
 				n(FACTIONS, {
 					faction(FACTION_ALLIANCE_VANGUARD, {	-- Alliance Vanguard

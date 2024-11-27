@@ -355,7 +355,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					19172,	-- Gnome Commoner
 					19173,	-- Night Elf Commoner
 					20102,	-- Goblin Commoner
+					-- #if AFTER TWW
 					220307,	-- Holiday Enthusiast
+					-- #endif
 				},
 				["maps"] = {
 					NORTHERN_BARRENS,
@@ -371,6 +373,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					THE_STORM_PEAKS,
 					THE_CAPE_OF_STRANGLETHORN,
 					ISLE_OF_THUNDER,
+					-- #if AFTER TWW
+					DORNOGAL,
+					-- #endif
 				},
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,

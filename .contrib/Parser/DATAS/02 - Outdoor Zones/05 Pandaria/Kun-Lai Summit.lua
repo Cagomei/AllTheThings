@@ -300,39 +300,60 @@ root(ROOTS.Zones, {
 				explorationHeader({
 					exploration(6076),	-- Auburn Bluffs
 					exploration(6059),	-- Binan Village
+					visit_exploration(6086,{coord={48.4,72.1,KUN_LAI_SUMMIT}}),	-- Broketooth Outpost
 					exploration(6098),	-- Chow Farmstead
 					exploration(6094),	-- Eastwind Rest
+					visit_exploration(6124,{coord={47.4,80.1,KUN_LAI_SUMMIT}}),	-- Fire Camp Ordo
 					exploration(6121),	-- Fire Camp Ruqin
 					exploration(6152),	-- Fire Camp Yongqi
 					exploration(6129),	-- Firebough Nook
+					visit_exploration(6617,{coord={60.0,55.8,KUN_LAI_SUMMIT}}),	-- Garrosh'ar Advance
 					exploration(6498),	-- Gate of the August Celestials
-					visit_exploration(6427,{coord={71.3,87.4,KUN_LAI_SUMMIT}}),    -- Inkgill Mere
+					visit_exploration(6389,{coord={59.4,53.0,KUN_LAI_SUMMIT}}),	-- Howlingwind Cavern
+					visit_exploration(6469,{coord={58.7,54.1,KUN_LAI_SUMMIT}}),	-- Howlingwind Trail
+					visit_exploration(6427,{coord={71.3,87.4,KUN_LAI_SUMMIT}}),	-- Inkgill Mere
 					exploration(6406),	-- Isle of Reckoning
+					visit_exploration(6088,{coord={50.8,61.9,KUN_LAI_SUMMIT}}),	-- Knucklethump Hole
 					exploration(6157),	-- Kota Basecamp
 					exploration(6156),	-- Kota Peak
 					exploration(6062),	-- Kun-Lai Pass
-					visit_exploration(6467,{coord={59.8,39.1,KUN_LAI_SUMMIT}}),    -- Mogu'shan Terrace
+					visit_exploration(6467,{coord={59.8,39.1,KUN_LAI_SUMMIT}}),	-- Mogu'shan Terrace
 					exploration(6114),	-- Mogujia
 					exploration(6185),	-- Mount Neverest
 					exploration(6100),	-- Muskpaw Ranch
-					visit_exploration(6180,{coord={44.7,52.2,KUN_LAI_SUMMIT}}),    -- Neverest Pinnacle
+					visit_exploration(6180,{coord={44.7,52.2,KUN_LAI_SUMMIT}}),	-- Neverest Pinnacle
 					exploration(6085),	-- One Keg
 					exploration(6081),	-- Peak of Serenity
+					visit_exploration(6099,{coord={73.2,73.6,KUN_LAI_SUMMIT}}),	-- Pranksters' Hollow
+					visit_exploration(6530,{coord={44.6,89.3,KUN_LAI_SUMMIT}}),	-- Serpent's Spine
 					exploration(6294),	-- Shado-Li Basin
 					exploration(6128),	-- Shado-Pan Fallback
 					exploration(6173),	-- Shado-Pan Monastery
+					visit_exploration(6202,{coord={51.2,46.1,KUN_LAI_SUMMIT}}),	-- Shrine of the Merciless One
 					exploration(6174),	-- Temple of the White Tiger
-					visit_exploration(6073,{coord={70.5,75.6,KUN_LAI_SUMMIT}}),    -- The Autumn Plains
+					visit_exploration(6527,{coord={51.2,38.0,KUN_LAI_SUMMIT}}),	-- Terrace of the Tiger
+					visit_exploration(6073,{coord={70.5,75.6,KUN_LAI_SUMMIT}}),	-- The Autumn Plains
 					exploration(6090),	-- The Burlap Trail
 					exploration(6087),	-- The Dooker Dome
+					visit_exploration(6468,{coord={57.1,35.5,KUN_LAI_SUMMIT}}),	-- The Emperor's Reach
+					visit_exploration(6079,{coord={65.8,61.8,KUN_LAI_SUMMIT}}),	-- The Grummle Bazaar
+					visit_exploration(6415,{coord={64.3,50.7,KUN_LAI_SUMMIT}}),	-- The Yaungol Advance
 					exploration(6207),	-- The Zandalari Vanguard
+					visit_exploration(6201,{coord={53.1,46.3,KUN_LAI_SUMMIT}}),	-- Tomb of Conquerors
+					visit_exploration(6200,{coord={53.2,49.6,KUN_LAI_SUMMIT}}),	-- Tomb of Secrets
+					visit_exploration(6199,{coord={56.1,45.8,KUN_LAI_SUMMIT}}),	-- Tomb of Shadows
+					visit_exploration(6526,{coord={47.5,39.5,KUN_LAI_SUMMIT}}),	-- Training Grounds
 					exploration(6198, {	-- Valley of Emperors
 						-- CRIEVE NOTE: This appears to be unavailable after Legion, someone let me know if you RECENTLY collect this.
 						["collectible"] = false,
 					}),
-					visit_exploration(6181,{coord={71.3,80.5,KUN_LAI_SUMMIT}}),    -- Waterspeaker's Sanctuary
+					visit_exploration(6181,{coord={71.3,80.5,KUN_LAI_SUMMIT}}),	-- Waterspeaker's Sanctuary
 					exploration(6095),	-- Westwind Rest
+					visit_exploration(6206,{coord={62.8,41.1,KUN_LAI_SUMMIT}}),	-- Whispercloud Rise
+					visit_exploration(6383,{coord={35.2,59.4,KUN_LAI_SUMMIT}}),	-- Winter's Blossom
 					exploration(6154),	-- Yinying Village
+					visit_exploration(6405,{coord={62.8,36.5,KUN_LAI_SUMMIT}}),	-- Zouchin Province
+					visit_exploration(6168,{coord={57.7,20.4,KUN_LAI_SUMMIT}}),	-- Zouchin Strand
 					exploration(6169),	-- Zouchin Village
 				}),
 				n(FACTIONS, {

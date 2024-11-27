@@ -111,8 +111,11 @@ root(ROOTS.Zones, {
 					},
 				}),
 				explorationHeader({
+					visit_exploration(6446,{coord={29.6,89.6,DREAD_WASTES}}),	-- Amber Quarry
 					exploration(6429),	-- Chittering Coast
+					visit_exploration(6441,{coord={53.4,56.6,DREAD_WASTES}}),	-- Duskroot Fen
 					exploration(6437),	-- Fear Clutch
+					visit_exploration(6425,{coord={67.5,36.9,DREAD_WASTES}}),	-- Forgotten Mire
 					exploration(6435),	-- Heart of Fear
 					exploration(6315),	-- Klaxxi'vess
 					exploration(6329),	-- Kor'vess
@@ -121,15 +124,21 @@ root(ROOTS.Zones, {
 					exploration(6300),	-- Kypari Zar
 					exploration(6293),	-- Lake of Stars
 					exploration(6433),	-- Lonesome Cove
+					visit_exploration(6448,{coord={51.9,71.8,DREAD_WASTES}}),	-- Mazu's Overlook
+					visit_exploration(6346,{coord={47.0,16.8,DREAD_WASTES}}),	-- Morrowchamber
+					visit_exploration(6506,{coord={36.9,16.9,DREAD_WASTES}}),	-- Motherseed Pit
 					exploration(6404),	-- Muckscale Shallows
 					exploration(6439),	-- Panic Clutch
 					exploration(6339),	-- Rikkilea
 					exploration(6336),	-- Rikkitun Village
 					exploration(6368),	-- Soggy's Gamble
 					exploration(6306),	-- Terrace of Gurthan
+					visit_exploration(6347,{coord={53.6,15.3,DREAD_WASTES}}),	-- The Amber Vault
 					exploration(6391),	-- The Briny Muck
 					exploration(6442),	-- The Clutches of Shek'zeer
+					visit_exploration(6447,{coord={32.8,51.7,DREAD_WASTES}}),	-- The Stinging Trail
 					exploration(6334),	-- The Sunset Brewgarden
+					visit_exploration(6434,{coord={66.4,23.0,DREAD_WASTES}}),	-- The Thundering Run
 					exploration(6418),	-- Venomous Ledge
 					exploration(6443),	-- Writhingwood
 					exploration(6444),	-- Zan'vess

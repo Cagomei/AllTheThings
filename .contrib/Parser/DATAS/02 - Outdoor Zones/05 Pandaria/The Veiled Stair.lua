@@ -15,6 +15,8 @@ root(ROOTS.Zones, {
 					}},
 				}),
 				explorationHeader({
+					visit_exploration(6377,{coord={55.7,55.4,THE_VEILED_STAIR}}),	-- Hatescale Burrow
+					visit_exploration(6382,{coord={69.4,78.6,THE_VEILED_STAIR}}),	-- Mason's Folly
 					exploration(6380),	-- Path of a Hundred Steps
 					exploration(6375),	-- Tavern in the Mists
 					exploration(6373),	-- The Secret Aerie

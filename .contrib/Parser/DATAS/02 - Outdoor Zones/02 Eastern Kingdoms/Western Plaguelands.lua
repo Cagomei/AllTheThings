@@ -105,6 +105,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				exploration(200),	-- Dalson's Tears / Dalson's Farm [CATA+]
 				exploration(2297),	-- Darrowmere Lake
+				visit_exploration(2625,{coord={43.4,19.3,WESTERN_PLAGUELANDS}}),	-- Eastwall Gate
 				exploration(199),	-- Felstone Field
 				exploration(201),	-- Gahrron's Withering
 				exploration(190),	-- Hearthglen

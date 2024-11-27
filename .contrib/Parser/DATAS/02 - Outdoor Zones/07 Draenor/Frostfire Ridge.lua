@@ -103,28 +103,60 @@ root(ROOTS.Zones, {
 					},
 				})),
 				explorationHeader({
+					visit_exploration(6995,{coord={82.9,75.1,FROSTFIRE_RIDGE}}),	-- Agurak's Fall
+					visit_exploration(6781,{coord={70.4,38.2,FROSTFIRE_RIDGE}}),	-- Altar of Kron
+					visit_exploration(6782,{coord={72.9,35.4,FROSTFIRE_RIDGE}}),	-- Ascent of Frostfire
+					visit_exploration(7323,{coord={52.1,31.8,FROSTFIRE_RIDGE}}),	-- Ashen Crater
+					visit_exploration(7054,{coord={45.1,40.0,FROSTFIRE_RIDGE}}),	-- Blade's Edge Mountain
 					exploration(6864),	-- Bladespire Citadel
 					exploration(6962),	-- Bladespire Ravine
 					exploration(6875),	-- Bladespire Throne
+					visit_exploration(7237,{coord={46.9,9.50,FROSTFIRE_RIDGE}}),	-- Bloodmaul Landing
 					exploration(7013),	-- Bloodmaul Stronghold
 					exploration(6994),	-- Bones of Agurak
+					visit_exploration(7006,{coord={54.8,16.0,FROSTFIRE_RIDGE}}),	-- Coldsnap Bluffs
+					visit_exploration(7447,{coord={55.3,8.30,FROSTFIRE_RIDGE}}),	-- Colossal Depths
 					exploration(6775),	-- Colossal's Fall
 					exploration(6744),	-- Daggermaw Ravine
+					visit_exploration(7047,{coord={30.8,54.2,FROSTFIRE_RIDGE}}),	-- Forbidden Glacier
+					visit_exploration(6929,{coord={14.1,55.4,FROSTFIRE_RIDGE}}),	-- Frostboar Drifts
 					exploration(6742),	-- Frostwind Crag
+					visit_exploration(6805,{coord={66.8,33.8,FROSTFIRE_RIDGE}}),	-- Gate of the Breakers
+					visit_exploration(7257,{coord={41.0,64.6,FROSTFIRE_RIDGE}}),	-- Glacier Bay
+					visit_exploration(6905,{coord={18.9,44.1,FROSTFIRE_RIDGE}}),	-- Gormaul Tower
 					exploration(6817),	-- Grimfrost Hill
 					exploration(6779),	-- Grom'gar
+					visit_exploration(6758,{coord={23.3,11.9,FROSTFIRE_RIDGE}}),	-- Icescar Boneyard
+					visit_exploration(6778,{coord={64.8,45.7,FROSTFIRE_RIDGE}}),	-- Icewind Drifts
 					exploration(6983),	-- Iron Siegeworks
 					exploration(7076, {	-- Iron Waystation
 						-- CRIEVE NOTE: I was initially able to collect this, but if you collect Bones of Agurak, it gets masked behind it.
 						["collectible"] = false,
 					}),
+					visit_exploration(6759,{coord={26.1,19.9,FROSTFIRE_RIDGE}}),	-- Lashwind Cleft
 					exploration(6784),	-- Magnarok
+					visit_exploration(6907,{coord={30.9,50.6,FROSTFIRE_RIDGE}}),	-- Mor'dul Tower
+					visit_exploration(6911,{coord={62.4,42.8,FROSTFIRE_RIDGE}}),	-- Pit of the Devourer
+					visit_exploration(7018,{coord={22.2,18.8,FROSTFIRE_RIDGE}}),	-- Ruins of Ata'gar
+					visit_exploration(6966,{coord={55.0,61.4,FROSTFIRE_RIDGE}}),	-- Shivering Trench
+					visit_exploration(7005,{coord={65.6,15.2,FROSTFIRE_RIDGE}}),	-- Snowfall Alcove
+					visit_exploration(6850,{coord={26.9,42.1,FROSTFIRE_RIDGE}}),	-- Sootstained Mining Camp
+					visit_exploration(7055,{coord={72.9,71.1,FROSTFIRE_RIDGE}}),	-- Southwind Cliffs
+					visit_exploration(7765,{coord={43.9,70.7,FROSTFIRE_RIDGE}}),	-- Southwind Shore
 					exploration(6777),	-- Stonefang Outpost
 					exploration(6964),	-- Stonefang Ridge
 					exploration(6968),	-- Stonefury Cliffs
+					visit_exploration(7058,{coord={71.6,51.7,FROSTFIRE_RIDGE}}),	-- The Bleeding Mountain
 					exploration(6776),	-- The Boneslag
+					visit_exploration(7062,{coord={42.6,63.2,FROSTFIRE_RIDGE}}),	-- The Burning Glacier
 					exploration(6774),	-- The Cracking Plains
+					visit_exploration(7450,{coord={49.5,38.5,FROSTFIRE_RIDGE}}),	-- The Savage Crag
+					visit_exploration(6743,{coord={31.5,12.4,FROSTFIRE_RIDGE}}),	-- Throm'var
+					visit_exploration(7014,{coord={79.3,56.3,FROSTFIRE_RIDGE}}),	-- Thunder Pass
+					visit_exploration(7236,{coord={41.5,10.3,FROSTFIRE_RIDGE}}),	-- Tor'goroth's Tooth
+					visit_exploration(7113,{coord={74.4,59.7,FROSTFIRE_RIDGE}}),	-- Wolf's Stand
 					exploration(6869),	-- Wor'gol
+					visit_exploration(7255,{coord={15.2,66.9,FROSTFIRE_RIDGE}}),	-- Zangar Sea
 				}),
 				n(FACTIONS, {
 					faction(FACTION_FROSTWOLF_ORCS, {["races"] = HORDE_ONLY}),	-- Frostwolf Orcs
