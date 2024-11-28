@@ -165,7 +165,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(83450),	-- Play Scene (spellID 455916), after finished Archives weekly (1st week) / unlocked new log entry
 				q(83460),	-- Play Scene (spellID 455918), after finished Archives weekly (2nd week) / unlocked new log entry
 				q(83462),	-- Play Scene (spellID 455920), after finished Archives weekly (3rd week) / unlocked new log entry
-				q(83463),	-- Play Scene (spellID 455921), after finished Archives weekly (4rd week) / unlocked new log entry
+				q(83463),	-- Play Scene (spellID 455921), after finished Archives weekly (4th week) / unlocked new log entry
+				q(83464),	-- Play Scene (spellID 455922), after finished Archives weekly (5th week) / unlocked new log entry
 				q(84669),	-- after accept questID 82679 (Archives: Seeking History) (2nd week)
 				q(84671),	-- after accept questID 82679 (Archives: Seeking History) / also after 82746 (Delves: Breaking Tough to Loot Stuff)
 				-- Alt intro skip
