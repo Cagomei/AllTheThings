@@ -223,13 +223,13 @@ root(ROOTS.Zones, {
 					exploration(4241),	-- Eldritch Heights
 					exploration(4179),	-- Emerald Dragonshrine
 					exploration(4169),	-- Fordragon Hold
-					visit_exploration(4192,{coord={74.2,23.2,DRAGONBLIGHT}}),    -- Frostmourne Cavern
+					visit_exploration(4192,{coord={74.2,23.2,DRAGONBLIGHT}}),	-- Frostmourne Cavern
 					exploration(4173),	-- Galakrond's Rest
-					visit_exploration(4225,{coord={22.1,65.1,DRAGONBLIGHT}}),    -- Glittering Strand
+					visit_exploration(4225,{coord={22.1,65.1,DRAGONBLIGHT}}),	-- Glittering Strand
 					exploration(4163),	-- Icemist Village
-					visit_exploration(4153,{coord={38.2,62.6,DRAGONBLIGHT}}),    -- Indu'le Village
+					visit_exploration(4153,{coord={38.2,62.6,DRAGONBLIGHT}}),	-- Indu'le Village
 					exploration(4194),	-- Jintha'kalar
-					visit_exploration(4198,{coord={42.8,81.2,DRAGONBLIGHT}}),    -- Kili'ua's Atoll
+					visit_exploration(4198,{coord={42.8,81.2,DRAGONBLIGHT}}),	-- Kili'ua's Atoll
 					exploration(4170),	-- Kor'kron Vanguard
 					exploration(4166),	-- Lake Indu'le
 					exploration(4191),	-- Light's Trust
@@ -241,27 +241,27 @@ root(ROOTS.Zones, {
 					exploration(4396),	-- Nozzlerust Post
 					exploration(4167),	-- Obsidian Dragonshrine
 					exploration(4189),	-- Onslaught Base Camp
-					visit_exploration(4448,{coord={67.3,22.0,DRAGONBLIGHT}}),    -- Path of the Titans
+					visit_exploration(4448,{coord={67.3,22.0,DRAGONBLIGHT}}),	-- Path of the Titans
 					exploration(4168),	-- Ruby Dragonshrine
-					visit_exploration(4193,{coord={71.8,22.8,DRAGONBLIGHT}}),    -- Scarlet Point
-					visit_exploration(4414,{coord={71.0,24.1,DRAGONBLIGHT}}),    -- Scarlet Tower
+					visit_exploration(4193,{coord={71.8,22.8,DRAGONBLIGHT}}),	-- Scarlet Point
+					visit_exploration(4414,{coord={71.0,24.1,DRAGONBLIGHT}}),	-- Scarlet Tower
 					exploration(4154),	-- Snowfall Glade
 					exploration(4158),	-- Stars' Rest
 					exploration(4188),	-- The Carrion Fields
 					exploration(4171),	-- The Court of Skulls
 					exploration(4187),	-- The Crystal Vice
-					visit_exploration(4254,{coord={52.3,50.9,DRAGONBLIGHT}}),    -- The Dragon Wastes
+					visit_exploration(4254,{coord={52.3,50.9,DRAGONBLIGHT}}),	-- The Dragon Wastes
 					exploration(4185),	-- The Forgotten Shore
 					exploration(4176),	-- The Mirror of Dawn
 					exploration(4164),	-- The Pit of Narjun
-					visit_exploration(4174,{coord={53.2,32.0,DRAGONBLIGHT}}),    -- The Wicked Coil
-					visit_exploration(4190,{coord={89.6,45.0,DRAGONBLIGHT}}),    -- Thorson's Post
+					visit_exploration(4174,{coord={53.2,32.0,DRAGONBLIGHT}}),	-- The Wicked Coil
+					visit_exploration(4190,{coord={89.6,45.0,DRAGONBLIGHT}}),	-- Thorson's Post
 					exploration(4232),	-- Vengeance Pass
 					exploration(4186),	-- Venomspite
 					exploration(4151),	-- Westwind Refugee Camp
 					exploration(4177),	-- Wintergarde Keep
-					visit_exploration(4246,{coord={86.0,50.1,DRAGONBLIGHT}}),    -- Wintergarde Mausoleum
-					visit_exploration(4178,{coord={80.0,44.8,DRAGONBLIGHT}}),    -- Wintergarde Mine
+					visit_exploration(4246,{coord={86.0,50.1,DRAGONBLIGHT}}),	-- Wintergarde Mausoleum
+					visit_exploration(4178,{coord={80.0,44.8,DRAGONBLIGHT}}),	-- Wintergarde Mine
 					exploration(4161),	-- Wyrmrest Temple
 				}),
 				n(FACTIONS, {

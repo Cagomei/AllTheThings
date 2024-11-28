@@ -242,10 +242,10 @@ root(ROOTS.Zones, {
 				explorationHeader({
 					exploration(4062),	-- Apothecary Camp
 					exploration(3996),	-- Baelgun's Excavation Site
-					visit_exploration(4001,{coord={64.9,41.6,HOWLING_FJORD}}),    -- Baleheim
+					visit_exploration(4001,{coord={64.9,41.6,HOWLING_FJORD}}),	-- Baleheim
 					exploration(4403),	-- Balejar Watch
-					visit_exploration(4060,{coord={75.8,35.9,HOWLING_FJORD}}),    -- Bleeding Vale
-					visit_exploration(4055,{coord={63.4,18.3,HOWLING_FJORD}}),    -- Caldemere Lake
+					visit_exploration(4060,{coord={75.8,35.9,HOWLING_FJORD}}),	-- Bleeding Vale
+					visit_exploration(4055,{coord={63.4,18.3,HOWLING_FJORD}}),	-- Caldemere Lake
 					exploration(4018),	-- Camp Winterhoof
 					exploration(4059),	-- Cauldros Isle
 					exploration(4070),	-- Chillmere Coast
@@ -254,8 +254,8 @@ root(ROOTS.Zones, {
 					exploration(4048),	-- Ember Clutch
 					exploration(4063),	-- Ember Spear Tower
 					exploration(3997),	-- Explorers' League Outpost
-					visit_exploration(4003,{coord={59.5,14.5,HOWLING_FJORD}}),    -- Fort Wildervar
-					visit_exploration(4066,{coord={69.2,11.5,HOWLING_FJORD}}),    -- Frostblade Peak
+					visit_exploration(4003,{coord={59.5,14.5,HOWLING_FJORD}}),	-- Fort Wildervar
+					visit_exploration(4066,{coord={69.2,11.5,HOWLING_FJORD}}),	-- Frostblade Peak
 					exploration(3989),	-- Garvan's Reef
 					exploration(4261),	-- Ghostblade Post
 					exploration(4061),	-- Giants' Run
@@ -271,16 +271,16 @@ root(ROOTS.Zones, {
 					exploration(4054),	-- Rivenwood
 					exploration(3990),	-- Scalawag Point
 					exploration(4057),	-- Shield Hill
-					visit_exploration(4002,{coord={46.8,30.5,HOWLING_FJORD}}),    -- Skorn
+					visit_exploration(4002,{coord={46.8,30.5,HOWLING_FJORD}}),	-- Skorn
 					exploration(4077),	-- Sorlof's Strand
 					exploration(3999),	-- Steel Gate
 					exploration(3992),	-- The Ancient Lift
 					exploration(4051),	-- The Frozen Glade
 					exploration(3987),	-- The Isle of Spears
-					visit_exploration(4053,{coord={54.4,18.9,HOWLING_FJORD}}),    -- The Twisted Glade
-					visit_exploration(4052,{coord={51.1,27.2,HOWLING_FJORD}}),    -- The Vibrant Glade
+					visit_exploration(4053,{coord={54.4,18.9,HOWLING_FJORD}}),	-- The Twisted Glade
+					visit_exploration(4052,{coord={51.1,27.2,HOWLING_FJORD}}),	-- The Vibrant Glade
 					exploration(4260),	-- Thorvald's Camp
-					visit_exploration(4474,{coord={32.4,73.3,HOWLING_FJORD}}),    -- Twin Shores
+					visit_exploration(4474,{coord={32.4,73.3,HOWLING_FJORD}}),	-- Twin Shores
 					exploration(3983),	-- Utgarde Keep
 					exploration(3981),	-- Valgarde
 					exploration(4000),	-- Vengeance Landing

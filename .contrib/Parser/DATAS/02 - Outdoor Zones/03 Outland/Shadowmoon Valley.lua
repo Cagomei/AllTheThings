@@ -121,37 +121,37 @@ root(ROOTS.Zones, {
 					},
 				}),
 				explorationHeader({
-					visit_exploration(3754,{coord={63.3,29.9,SHADOWMOON_VALLEY}}),    -- Altar of Sha'tar
+					visit_exploration(3754,{coord={63.3,29.9,SHADOWMOON_VALLEY}}),	-- Altar of Sha'tar
 					exploration(3757),	-- Ata'mal Terrace
 					exploration(3749),	-- Coilskar Cistern
 					exploration(3750),	-- Coilskar Point
-					visit_exploration(3950,{coord={52.1,71.9,SHADOWMOON_VALLEY}}),    -- Crimson Watch
-					visit_exploration(3939,{coord={66.4,60.1,SHADOWMOON_VALLEY}}),    -- Dragonmaw Fortress
-					visit_exploration(3967,{coord={74.6,78.0,SHADOWMOON_VALLEY}}),    -- Dragonmaw Skyway
+					visit_exploration(3950,{coord={52.1,71.9,SHADOWMOON_VALLEY}}),	-- Crimson Watch
+					visit_exploration(3939,{coord={66.4,60.1,SHADOWMOON_VALLEY}}),	-- Dragonmaw Fortress
+					visit_exploration(3967,{coord={74.6,78.0,SHADOWMOON_VALLEY}}),	-- Dragonmaw Skyway
 					exploration(3822),	-- Eclipse Point
-					visit_exploration(3930,{coord={40.3,68.0,SHADOWMOON_VALLEY}}),    -- Eclipsion Fields
-					visit_exploration(3752,{coord={28.8,56.2,SHADOWMOON_VALLEY}}),    -- Illidari Point
+					visit_exploration(3930,{coord={40.3,68.0,SHADOWMOON_VALLEY}}),	-- Eclipsion Fields
+					visit_exploration(3752,{coord={28.8,56.2,SHADOWMOON_VALLEY}}),	-- Illidari Point
 					exploration(3743),	-- Legion Hold
-					visit_exploration(3758,{coord={63.5,54.2,SHADOWMOON_VALLEY}}),    -- Netherwing Fields
+					visit_exploration(3758,{coord={63.5,54.2,SHADOWMOON_VALLEY}}),	-- Netherwing Fields
 					exploration(3759),	-- Netherwing Ledge
-					visit_exploration(3945,{coord={61.5,68.3,SHADOWMOON_VALLEY}}),    -- Netherwing Pass
+					visit_exploration(3945,{coord={61.5,68.3,SHADOWMOON_VALLEY}}),	-- Netherwing Pass
 					exploration(3927),	-- Oronok's Farm
-					visit_exploration(3753,{coord={58.1,37.4,SHADOWMOON_VALLEY}}),    -- Ruins of Baa'ri
+					visit_exploration(3753,{coord={58.1,37.4,SHADOWMOON_VALLEY}}),	-- Ruins of Baa'ri
 					exploration(3756),	-- Ruins of Karabor
-					visit_exploration(3938,{coord={55.0,59.8,SHADOWMOON_VALLEY}}),    -- Sanctum of the Stars
+					visit_exploration(3938,{coord={55.0,59.8,SHADOWMOON_VALLEY}}),	-- Sanctum of the Stars
 					--exploration(3520),	-- Shadowmoon Valley (Wrath Classic: Can't be collected)
 					exploration(3744),	-- Shadowmoon Village
-					visit_exploration(3926,{coord={52.2,18.2,SHADOWMOON_VALLEY}}),    -- Shattered Plains
+					visit_exploration(3926,{coord={52.2,18.2,SHADOWMOON_VALLEY}}),	-- Shattered Plains
 					exploration(3932),	-- Sketh'lon Base Camp
-					visit_exploration(3933,{coord={37.2,28.9,SHADOWMOON_VALLEY}}),    -- Sketh'lon Wreckage
+					visit_exploration(3933,{coord={37.2,28.9,SHADOWMOON_VALLEY}}),	-- Sketh'lon Wreckage
 					exploration(3928),	-- The Altar of Damnation
-					visit_exploration(3944,{coord={58.7,71.9,SHADOWMOON_VALLEY}}),    -- The Altar of Shadows
+					visit_exploration(3944,{coord={58.7,71.9,SHADOWMOON_VALLEY}}),	-- The Altar of Shadows
 					exploration(3840),	-- The Black Temple
-					visit_exploration(3748,{coord={40.5,39.6,SHADOWMOON_VALLEY}}),    -- The Deathforge
+					visit_exploration(3748,{coord={40.5,39.6,SHADOWMOON_VALLEY}}),	-- The Deathforge
 					exploration(3747),	-- The Fel Pits
 					exploration(3746),	-- The Hand of Gul'dan
-					visit_exploration(3929,{coord={53.5,65.8,SHADOWMOON_VALLEY}}),    -- The Path of Conquest
-					visit_exploration(3821,{coord={61.3,49.3,SHADOWMOON_VALLEY}}),    -- Warden's Cage
+					visit_exploration(3929,{coord={53.5,65.8,SHADOWMOON_VALLEY}}),	-- The Path of Conquest
+					visit_exploration(3821,{coord={61.3,49.3,SHADOWMOON_VALLEY}}),	-- Warden's Cage
 					exploration(3745),	-- Wildhammer Stronghold
 				}),
 				n(FACTIONS, {

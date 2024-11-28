@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			exploration(13724),	-- Skytop Observatory
 			exploration(13716),	-- The Overflowing Spring
 			exploration(14012),	-- The Slagmire
-			visit_exploration(14524,{coord={17.5,88.7,THE_WAKING_SHORES}}),    -- Uktulut Outpost
+			visit_exploration(14524,{coord={17.5,88.7,THE_WAKING_SHORES}}),	-- Uktulut Outpost
 			exploration(13722),	-- Wild Coast
 			exploration(13733),	-- Wild Preserve
 			exploration(13939),	-- Wingrest Embassy

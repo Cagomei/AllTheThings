@@ -40,6 +40,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coords"] = {
 						{ 55.9, 32.4, NERUBAR },
 						{ 55.1, 68.8, NERUBAR },	-- NPCID: 220568
+						{ 60.6, 10.6, AZJ_KAHET },	-- NPCID: 224894
 					},
 				}),
 				crit(68978, {	-- Scampering Weave-Rat

@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			explorationHeader({
 				exploration(35),	-- Booty Bay
-				visit_exploration(1577,{coord={54.6,23.8,THE_CAPE_OF_STRANGLETHORN}}),    -- Cape of Stranglethorn
+				visit_exploration(1577,{coord={54.6,23.8,THE_CAPE_OF_STRANGLETHORN}}),	-- Cape of Stranglethorn
 				exploration(310),	-- Crystalvein Mine
 				exploration(1741),	-- Gurubashi Arena
 				exploration(1739),	-- Hardwrench Hideaway
@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1738),	-- Nek'mani Wellspring
 				exploration(311),	-- Ruins of Aboraz
 				exploration(477),	-- Ruins of Jubuwal
-				visit_exploration(1578,{coord={38.6,56.9,THE_CAPE_OF_STRANGLETHORN}}),    -- Southern Savage Coast
+				visit_exploration(1578,{coord={38.6,56.9,THE_CAPE_OF_STRANGLETHORN}}),	-- Southern Savage Coast
 				exploration(5318),	-- The Sundering
 				exploration(43),	-- Wild Shore
 			}),

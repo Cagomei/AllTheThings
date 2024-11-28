@@ -6,13 +6,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		explorationHeader({
 			exploration(13921),	-- Ancient Bough
 			exploration(13772),	-- Broadhoof Outpost
-			visit_exploration(14447,{coord={44.0,48.4,OHNAHRAN_PLAINS}}),    -- Deadsnare Caverns
+			visit_exploration(14447,{coord={44.0,48.4,OHNAHRAN_PLAINS}}),	-- Deadsnare Caverns
 			exploration(13767),	-- Emberwatch
 			exploration(13669),	-- Emerald Gardens
 			exploration(13755),	-- Forkriver Crossing
 			exploration(13746),	-- Horn of Drusahl
 			exploration(14079),	-- Lilac Ramble
-			visit_exploration(13764,{coord={60.2,38.0,OHNAHRAN_PLAINS}}),    -- Maruukai
+			visit_exploration(13764,{coord={60.2,38.0,OHNAHRAN_PLAINS}}),	-- Maruukai
 			exploration(13778),	-- Mirror of the Sky
 			exploration(13766),	-- Nelthazan Ruins
 			exploration(13782),	-- Nokhudon Hold

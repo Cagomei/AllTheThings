@@ -1967,12 +1967,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				exploration(54),	-- Jasperlode Mine
 				exploration(797),	-- Jerod's Landing
-				visit_exploration(5637,{coord={42.9,65.6,ELWYNN_FOREST}}),    -- Lion's Pride Inn
+				visit_exploration(5637,{coord={42.9,65.6,ELWYNN_FOREST}}),	-- Lion's Pride Inn
 				exploration(9),		-- Northshire Valley
 				exploration(798),	-- Ridgepoint Tower
 				exploration(86),	-- Stone Cairn Lake
 				exploration(1519),	-- Stormwind City
-				visit_exploration(7486,{coord={33.7,50.8,ELWYNN_FOREST}}),    -- Stormwind Gate
+				visit_exploration(7486,{coord={33.7,50.8,ELWYNN_FOREST}}),	-- Stormwind Gate
 				exploration(64),	-- The Maclure Vineyards
 				exploration(63),	-- The Stonefield Farm
 				exploration(91),	-- Tower of Azora

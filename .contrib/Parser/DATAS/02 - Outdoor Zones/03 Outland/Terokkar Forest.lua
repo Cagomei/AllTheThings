@@ -267,19 +267,15 @@ root(ROOTS.Zones, {
 					exploration(3894),	-- Auchenai Grounds (Wrath Classic: Can't be collected)
 					-- #endif
 					exploration(3688),	-- Auchindoun
-					visit_exploration(3917,{coord={35.1,70.1,TEROKKAR_FOREST}}),    -- Auchindoun
+					visit_exploration(3917,{coord={35.1,70.1,TEROKKAR_FOREST}}),	-- Auchindoun
 					exploration(3690),	-- Blackwind Lake
 					exploration(3973),	-- Blackwind Landing
 					exploration(3680),	-- Blackwind Valley
 					exploration(3719),	-- Bleeding Hollow Ruins
-					visit_exploration(3685,{coord={64.2,55.2,TEROKKAR_FOREST}}),    -- Bonechewer Ruins
-					-- #if AFTER CATA
-					visit_exploration(3891,{coord={43.6,53.5,TEROKKAR_FOREST}}),    -- Carrion Hill (Wrath Classic: Can't be collected)
-					-- #endif
+					visit_exploration(3685,{coord={64.2,55.2,TEROKKAR_FOREST}}),	-- Bonechewer Ruins
+					visit_exploration(3891,{coord={43.6,53.5,TEROKKAR_FOREST}}),	-- Carrion Hill
 					exploration(3674),	-- Cenarion Thicket
-					-- #if AFTER CATA
-					visit_exploration(3886,{coord={43.4,76.2,TEROKKAR_FOREST}}),    -- Derelict Caravan (Wrath Classic: Can't be collected)
-					-- #endif
+					visit_exploration(3886,{coord={43.4,76.2,TEROKKAR_FOREST}}),	-- Derelict Caravan
 					exploration(3681),	-- Firewing Point
 					exploration(3682),	-- Grangol'var Village
 					exploration(3691),	-- Lake Ere'Noru
@@ -287,44 +283,38 @@ root(ROOTS.Zones, {
 					-- #if AFTER CATA
 					exploration(3978),	-- Lower Veil Shil'ak
 					-- #endif
-					visit_exploration(3885,{coord={51.7,81.7,TEROKKAR_FOREST}}),    -- Netherweb Ridge
-					visit_exploration(3860,{coord={60.6,45.4,TEROKKAR_FOREST}}),    -- Raastok Glade
-					visit_exploration(4078,{coord={51.9,11.8,TEROKKAR_FOREST}}),    -- Razorthorn Rise
+					visit_exploration(3885,{coord={51.7,81.7,TEROKKAR_FOREST}}),	-- Netherweb Ridge
+					visit_exploration(3860,{coord={60.6,45.4,TEROKKAR_FOREST}}),	-- Raastok Glade
+					visit_exploration(4078,{coord={51.9,11.8,TEROKKAR_FOREST}}),	-- Razorthorn Rise
 					exploration(3858),	-- Razorthorn Shelf
-					visit_exploration(3887,{coord={35.8,49.5,TEROKKAR_FOREST}}),    -- Refugee Caravan
-					visit_exploration(3893,{coord={39.8,62.9,TEROKKAR_FOREST}}),    -- Ring of Observance
-					visit_exploration(3958,{coord={30.6,75.4,TEROKKAR_FOREST}}),    -- Sha'tari Base Camp
+					visit_exploration(3887,{coord={35.8,49.5,TEROKKAR_FOREST}}),	-- Refugee Caravan
+					visit_exploration(3893,{coord={39.8,62.9,TEROKKAR_FOREST}}),	-- Ring of Observance
+					visit_exploration(3958,{coord={30.6,75.4,TEROKKAR_FOREST}}),	-- Sha'tari Base Camp
 					exploration(3957),	-- Sha'tari Outpost
-					visit_exploration(3888,{coord={31.7,53.2,TEROKKAR_FOREST}}),    -- Shadow Tomb
+					visit_exploration(3888,{coord={31.7,53.2,TEROKKAR_FOREST}}),	-- Shadow Tomb
 					exploration(3703),	-- Shattrath City
 					exploration(3859),	-- Silmyr Lake
 					exploration(3693),	-- Skethyl Mountains
 					exploration(3679),	-- Skettis
 					exploration(3902),	-- Stonebreaker Camp
 					exploration(3683),	-- Stonebreaker Hold
-					visit_exploration(3975,{coord={66.1,76.4,TEROKKAR_FOREST}}),    -- Terokk's Rest
+					visit_exploration(3975,{coord={66.1,76.4,TEROKKAR_FOREST}}),	-- Terokk's Rest
 					exploration(3696),	-- The Barrier Hills
 					exploration(3760),	-- The Barrier Hills (Nagrand)
-					visit_exploration(3697,{coord={49.2,53.1,TEROKKAR_FOREST}}),    -- The Bone Wastes
-					visit_exploration(3956,{coord={41.5,58.1,TEROKKAR_FOREST}}),    -- The Shadow Stair
-					visit_exploration(3890,{coord={47.7,55.2,TEROKKAR_FOREST}}),    -- Tomb of Lights
+					visit_exploration(3697,{coord={49.2,53.1,TEROKKAR_FOREST}}),	-- The Bone Wastes
+					visit_exploration(3956,{coord={41.5,58.1,TEROKKAR_FOREST}}),	-- The Shadow Stair
+					visit_exploration(3890,{coord={47.7,55.2,TEROKKAR_FOREST}}),	-- Tomb of Lights
 					exploration(3675),	-- Tuurem
-					visit_exploration(3977,{coord={75.1,82.5,TEROKKAR_FOREST}}),    -- Upper Veil Shil'ak
-					-- #if AFTER CATA
-					visit_exploration(3976,{coord={69.9,74.2,TEROKKAR_FOREST}}),    -- Veil Ala'rak
-					-- #endif
-					visit_exploration(3974,{coord={61.2,72.6,TEROKKAR_FOREST}}),    -- Veil Harr'ik
+					visit_exploration(3977,{coord={75.1,82.5,TEROKKAR_FOREST}}),	-- Upper Veil Shil'ak
+					visit_exploration(3976,{coord={69.9,74.2,TEROKKAR_FOREST}}),	-- Veil Ala'rak
+					visit_exploration(3974,{coord={61.2,72.6,TEROKKAR_FOREST}}),	-- Veil Harr'ik
 					exploration(3686),	-- Veil Lithic
-					visit_exploration(3689,{coord={49.8,14.7,TEROKKAR_FOREST}}),    -- Veil Reskk
-					-- #if AFTER CATA
-					visit_exploration(3889,{coord={27.4,57.7,TEROKKAR_FOREST}}),    -- Veil Rhaze (Wrath Classic: Can't be collected)
-					-- #endif
-					visit_exploration(3678,{coord={56.5,72.3,TEROKKAR_FOREST}}),    -- Veil Shalas
+					visit_exploration(3689,{coord={49.8,14.7,TEROKKAR_FOREST}}),	-- Veil Reskk
+					visit_exploration(3889,{coord={27.4,57.7,TEROKKAR_FOREST}}),	-- Veil Rhaze
+					visit_exploration(3678,{coord={56.5,72.3,TEROKKAR_FOREST}}),	-- Veil Shalas
 					exploration(3676),	-- Veil Shienor
 					exploration(3677),	-- Veil Skith
-					-- #if AFTER CATA
-					visit_exploration(3892,{coord={50.8,68.2,TEROKKAR_FOREST}}),    -- Writhing Mound (Wrath Classic: Can't be collected)
-					-- #endif
+					visit_exploration(3892,{coord={50.8,68.2,TEROKKAR_FOREST}}),	-- Writhing Mound
 				}),
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, faction(FACTION_SHATARI_SKYGUARD, {	-- Sha'tari Skyguard
@@ -2090,12 +2080,12 @@ root(ROOTS.Zones, {
 						["description"] = "Drops commonly from any Arakkoa in Terokkar Forest, except the Sethekk Halls. Can be turned in to the NPC named Vekax for Outcast's Cache and reputation with the Lower City up to Honored, and again when at Exalted. Each turn in requires 30 Arakkoa Feathers. Vekax can be found in the northwestern section of the Lower City in Shattrath.",
 						-- #endif
 					}),
-					i(34491, {    -- Pattern: Bag of Many Hides (RECIPE!)
+					i(34491, {	-- Pattern: Bag of Many Hides (RECIPE!)
 						["crs"] = {
-							22143,    -- Gordunni Back-Breaker
-							22144,    -- Gordunni Elementalist
-							22148,    -- Gordunni Head-Splitter
-							23022,    -- Gordunni Soulreaper
+							22143,	-- Gordunni Back-Breaker
+							22144,	-- Gordunni Elementalist
+							22148,	-- Gordunni Head-Splitter
+							23022,	-- Gordunni Soulreaper
 						},
 						["timeline"] = { ADDED_2_3_0 },
 					}),

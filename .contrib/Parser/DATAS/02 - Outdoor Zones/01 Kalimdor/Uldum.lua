@@ -158,27 +158,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
-				visit_exploration(5499,{coord={53.4,48.5,ULDUM}}),    -- Akhenet Fields
+				visit_exploration(5499,{coord={53.4,48.5,ULDUM}}),	-- Akhenet Fields
 				exploration(5596),	-- Cradle of the Ancients
 				exploration(5701),	-- Halls of Origination Entrance
 				exploration(5455),	-- Khartut's Tomb
-				visit_exploration(5599,{coord={60.9,65.2,ULDUM}}),    -- Lost City of the Tol'vir
+				visit_exploration(5599,{coord={60.9,65.2,ULDUM}}),	-- Lost City of the Tol'vir
 				exploration(5498),	-- Mar'at
-				visit_exploration(5688,{coord={52.2,71.8,ULDUM}}),    -- Mount Akher
+				visit_exploration(5688,{coord={52.2,71.8,ULDUM}}),	-- Mount Akher
 				exploration(5467),	-- Nahom
-				visit_exploration(5663,{coord={51.9,72.1,ULDUM}}),    -- Neferset City
-				visit_exploration(5679,{coord={50.7,64.4,ULDUM}}),    -- Neferset City Outskirts
+				visit_exploration(5663,{coord={51.9,72.1,ULDUM}}),	-- Neferset City
+				visit_exploration(5679,{coord={50.7,64.4,ULDUM}}),	-- Neferset City Outskirts
 				exploration(5668),	-- Obelisk of the Moon
 				exploration(5423),	-- Obelisk of the Stars
 				exploration(5597),	-- Obelisk of the Sun
 				exploration(5465),	-- Orsis
 				exploration(5466),	-- Ramkahen
-				visit_exploration(5500,{coord={58.4,45.9,ULDUM}}),    -- Ramkahen Legion Outpost
+				visit_exploration(5500,{coord={58.4,45.9,ULDUM}}),	-- Ramkahen Legion Outpost
 				exploration(5647),	-- Ruins of Ahmtul
 				exploration(5606),	-- Ruins of Ammon
 				exploration(5671),	-- Ruins of Khintaset
 				exploration(5602),	-- Schnottz's Landing
-				visit_exploration(5665,{coord={57.6,61.5,ULDUM}}),    -- Sunwatcher's Ridge
+				visit_exploration(5665,{coord={57.6,61.5,ULDUM}}),	-- Sunwatcher's Ridge
 				exploration(5696),	-- Surveyors' Outpost
 				exploration(5669),	-- Temple of Uldum
 				exploration(5612),	-- The Cursed Landing
@@ -189,9 +189,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(5583),	-- The Vortex Pinnacle
 				exploration(5684),	-- Throne of the Four Winds
 				exploration(5689),	-- Tombs of the Precursors
-				visit_exploration(5666,{coord={54.7,42.6,ULDUM}}),    -- Vir'naal Dam
-				visit_exploration(5586,{coord={55.0,46.4,ULDUM}}),    -- Vir'naal River
-				visit_exploration(5717,{coord={66.5,68.3,ULDUM}}),    -- Vir'naal River Delta
+				visit_exploration(5666,{coord={54.7,42.6,ULDUM}}),	-- Vir'naal Dam
+				visit_exploration(5586,{coord={55.0,46.4,ULDUM}}),	-- Vir'naal River
+				visit_exploration(5717,{coord={66.5,68.3,ULDUM}}),	-- Vir'naal River Delta
 			}),
 			n(FACTIONS, {
 				faction(FACTION_RAMKAHEN, {	-- Ramkahen

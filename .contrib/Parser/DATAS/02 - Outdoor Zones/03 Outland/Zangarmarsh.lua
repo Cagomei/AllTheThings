@@ -223,7 +223,7 @@ root(ROOTS.Zones, {
 					exploration(3905),	-- Coilfang Reservoir
 					exploration(3640),	-- Daggerfen Village
 					exploration(3819),	-- Darkcrest Enclave
-					visit_exploration(3841,{coord={70.1,81.1,ZANGARMARSH}}),    -- Darkcrest Shore
+					visit_exploration(3841,{coord={70.1,81.1,ZANGARMARSH}}),	-- Darkcrest Shore
 					exploration(3642),	-- Feralfen Village
 					exploration(3667),	-- Hewn Bog
 					exploration(3656),	-- Marshlight Lake
@@ -241,7 +241,7 @@ root(ROOTS.Zones, {
 					exploration(3720),	-- Twin Spire Ruins
 					exploration(3655),	-- Umbrafen Lake
 					exploration(3641),	-- Umbrafen Village
-					visit_exploration(3645,{coord={32.2,50.6,ZANGARMARSH}}),    -- Zabra'jin
+					visit_exploration(3645,{coord={32.2,50.6,ZANGARMARSH}}),	-- Zabra'jin
 				}),
 				n(FACTIONS, {
 					faction(FACTION_CENARION_EXPEDITION, {	-- Cenarion Expedition

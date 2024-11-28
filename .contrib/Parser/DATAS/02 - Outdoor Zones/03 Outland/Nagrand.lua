@@ -261,10 +261,10 @@ root(ROOTS.Zones, {
 					},
 				}),
 				explorationHeader({
-					visit_exploration(3839,{coord={52.0,57.5,NAGRAND}}),    -- Abandoned Armory
-					visit_exploration(3623,{coord={30.3,58.9,NAGRAND}}),    -- Aeris Landing
+					visit_exploration(3839,{coord={52.0,57.5,NAGRAND}}),	-- Abandoned Armory
+					visit_exploration(3623,{coord={30.3,58.9,NAGRAND}}),	-- Aeris Landing
 					exploration(3610),	-- Burning Blade Ruins
-					visit_exploration(3611,{coord={62.9,65.0,NAGRAND}}),    -- Clan Watch
+					visit_exploration(3611,{coord={62.9,65.0,NAGRAND}}),	-- Clan Watch
 					exploration(3636),	-- Elemental Plateau
 					exploration(3624),	-- Forge Camp: Fear
 					exploration(3625),	-- Forge Camp: Hate
@@ -279,15 +279,15 @@ root(ROOTS.Zones, {
 					exploration(3673),	-- Nesingwary Safari
 					exploration(3627),	-- Northwind Cleft
 					exploration(3630),	-- Oshu'gun
-					visit_exploration(7273,{coord={74.6,37.9,NAGRAND}}),    -- Silence Pond
+					visit_exploration(7273,{coord={74.6,37.9,NAGRAND}}),	-- Silence Pond
 					exploration(3614),	-- Skysong Lake
-					visit_exploration(3629,{coord={48.1,54.8,NAGRAND}}),    -- Southwind Cleft
+					visit_exploration(3629,{coord={48.1,54.8,NAGRAND}}),	-- Southwind Cleft
 					-- #if AFTER CATA
 					exploration(3631),	-- Spirit Fields (Wrath Classic: Can't be collected)
 					-- #endif
 					exploration(3622),	-- Sunspring Post
-					visit_exploration(3626,{coord={53.8,74.8,NAGRAND}}),    -- Telaar
-					visit_exploration(3705,{coord={52.2,68.7,NAGRAND}}),    -- Telaari Basin
+					visit_exploration(3626,{coord={53.8,74.8,NAGRAND}}),	-- Telaar
+					visit_exploration(3705,{coord={52.2,68.7,NAGRAND}}),	-- Telaari Basin
 					exploration(3760),	-- The Barrier Hills
 					exploration(3788),	-- The Low Path
 					exploration(3700),	-- The Ring of Blood

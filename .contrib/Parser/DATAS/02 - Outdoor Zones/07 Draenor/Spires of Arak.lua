@@ -216,7 +216,7 @@ root(ROOTS.Zones, {
 						["collectible"] = false,
 					}),
 					exploration(7306),	-- Windswept Terrace
-					visit_exploration(7164,{coord={60.6,79.8,SPIRES_OF_ARAK}}),    -- Wreck of the Mother Lode
+					visit_exploration(7164,{coord={60.6,79.8,SPIRES_OF_ARAK}}),	-- Wreck of the Mother Lode
 				}),
 				n(FACTIONS, {
 					faction(FACTION_ARAKKOA_OUTCASTS),	-- Arakkoa Outcasts

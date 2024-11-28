@@ -1970,6 +1970,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 84. (TODO: Confirm this.)
 					["lvl"] = 84,
+					-- #elseif AFTER 9.0.3
+					["groups"] = {
+						n(14720, { -- Hogh Overlord Saurfang
+							["description"] = "Saurfang will not give you any quests after turning in 'Warchied's Command: Twilight Highlands!'. You can get the proper beginning of the Twilight Highland intro questline from Eitrigg in the same room, with the quest 'Machines of War'.\n\nThe same applies for the quest 'Saurfang Will be Pleased', where the continuation yet again is obtained from Eitrigg with the quest 'Traitor's Bait'.",
+						}),
+					},
 					-- #endif
 				})),
 				q(60968, {	-- Warlords of Draenor: Onward to Adventure in Draenor

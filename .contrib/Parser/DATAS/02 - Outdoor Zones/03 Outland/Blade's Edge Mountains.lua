@@ -143,56 +143,53 @@ root(ROOTS.Zones, {
 					-- #if AFTER CATA
 					exploration(3867),	-- Bladed Gulch (Wrath Classic: Can't be collected)
 					-- #endif
-					visit_exploration(3931,{coord={44.6,58.3,BLADES_EDGE_MOUNTAINS}}),    -- Bladespire Grounds
+					visit_exploration(3931,{coord={44.6,58.3,BLADES_EDGE_MOUNTAINS}}),	-- Bladespire Grounds
 					exploration(3773),	-- Bladespire Hold
 					exploration(3777),	-- Bloodmaul Camp
 					exploration(3776),	-- Bloodmaul Outpost
-					visit_exploration(3824,{coord={42.0,81.1,BLADES_EDGE_MOUNTAINS}}),    -- Bloodmaul Ravine
-					visit_exploration(3903,{coord={31.0,24.0,BLADES_EDGE_MOUNTAINS}}),    -- Boulder'mok
+					visit_exploration(3824,{coord={42.0,81.1,BLADES_EDGE_MOUNTAINS}}),	-- Bloodmaul Ravine
+					visit_exploration(3903,{coord={31.0,24.0,BLADES_EDGE_MOUNTAINS}}),	-- Boulder'mok
 					-- #if AFTER CATA
 					exploration(3863),	-- Broken Wilds (Wrath Classic: Can't be collected)
 					-- #endif
-					visit_exploration(3862,{coord={49.6,42.8,BLADES_EDGE_MOUNTAINS}}),    -- Churning Gulch
+					visit_exploration(3862,{coord={49.6,42.8,BLADES_EDGE_MOUNTAINS}}),	-- Churning Gulch
 					exploration(3775),	-- Circle of Blood
 					exploration(3865),	-- Crystal Spine
-					visit_exploration(3904,{coord={60.8,46.5,BLADES_EDGE_MOUNTAINS}}),    -- Cursed Hollow
-					visit_exploration(3826,{coord={52.2,39.1,BLADES_EDGE_MOUNTAINS}}),    -- Daggermaw Canyon
+					visit_exploration(3904,{coord={60.8,46.5,BLADES_EDGE_MOUNTAINS}}),	-- Cursed Hollow
+					visit_exploration(3826,{coord={52.2,39.1,BLADES_EDGE_MOUNTAINS}}),	-- Daggermaw Canyon
 					exploration(3831),	-- Death's Door
 					exploration(3778),	-- Draenethyst Mine
-					visit_exploration(3825,{coord={56.9,47.6,BLADES_EDGE_MOUNTAINS}}),    -- Dragons' End
-					visit_exploration(3963,{coord={46.4,30.8,BLADES_EDGE_MOUNTAINS}}),    -- Dragonspine Ridge
-					visit_exploration(3951,{coord={62.6,37.9,BLADES_EDGE_MOUNTAINS}}),    -- Evergrove
+					visit_exploration(3825,{coord={56.9,47.6,BLADES_EDGE_MOUNTAINS}}),	-- Dragons' End
+					visit_exploration(3963,{coord={46.4,30.8,BLADES_EDGE_MOUNTAINS}}),	-- Dragonspine Ridge
+					visit_exploration(3951,{coord={62.6,37.9,BLADES_EDGE_MOUNTAINS}}),	-- Evergrove
 					exploration(3787),	-- Forge Camp: Anger
 					exploration(3784),	-- Forge Camp: Terror
 					exploration(3785),	-- Forge Camp: Wrath
-					visit_exploration(3972,{coord={65.8,13.3,BLADES_EDGE_MOUNTAINS}}),    -- Furywing's Perch
+					visit_exploration(3972,{coord={65.8,13.3,BLADES_EDGE_MOUNTAINS}}),	-- Furywing's Perch
 					exploration(3781),	-- Grishnath
 					exploration(3774),	-- Gruul's Lair
-					visit_exploration(3971,{coord={62.4,8.4,BLADES_EDGE_MOUNTAINS}}),    -- Insidion's Perch
-					-- #if AFTER CATA
-					visit_exploration(3768,{coord={53.7,67.7,BLADES_EDGE_MOUNTAINS}}),    -- Jagged Ridge (Wrath Classic: Can't be collected)
-					-- #endif
+					visit_exploration(3971,{coord={62.4,8.4,BLADES_EDGE_MOUNTAINS}}),	-- Insidion's Perch
+					visit_exploration(3768,{coord={53.7,67.7,BLADES_EDGE_MOUNTAINS}}),	-- Jagged Ridge
 					exploration(3844),	-- Mok'Nathal Village
 					exploration(3786),	-- Ogri'la
 					exploration(3830),	-- Raven's Wood
 					exploration(3833),	-- Razor Ridge
-					visit_exploration(3828,{coord={60.4,31.9,BLADES_EDGE_MOUNTAINS}}),    -- Ruuan Weald
-					visit_exploration(3953,{coord={66.7,66.9,BLADES_EDGE_MOUNTAINS}}),    -- Scalewing Shelf
-					visit_exploration(3919,{coord={61.6,80.3,BLADES_EDGE_MOUNTAINS}}),    -- Singing Ridge
+					visit_exploration(3828,{coord={60.4,31.9,BLADES_EDGE_MOUNTAINS}}),	-- Ruuan Weald
+					visit_exploration(3953,{coord={66.7,66.9,BLADES_EDGE_MOUNTAINS}}),	-- Scalewing Shelf
+					visit_exploration(3919,{coord={61.6,80.3,BLADES_EDGE_MOUNTAINS}}),	-- Singing Ridge
 					-- #if AFTER CATA
 					exploration(3866),	-- Skald (Wrath Classic: Can't be collected)
 					-- #endif
 					exploration(3964),	-- Skyguard Outpost
-					visit_exploration(3960,{coord={60.4,23.2,BLADES_EDGE_MOUNTAINS}}),    -- Soulgrinder's Barrow
-					visit_exploration(3772,{coord={37.0,66.7,BLADES_EDGE_MOUNTAINS}}),    -- Sylvanaar
-					visit_exploration(3771,{coord={37.3,70.2,BLADES_EDGE_MOUNTAINS}}),    -- The Living Grove
-					visit_exploration(3769,{coord={52.3,56.1,BLADES_EDGE_MOUNTAINS}}),    -- Thunderlord Stronghold
-					visit_exploration(3918,{coord={60.4,66.3,BLADES_EDGE_MOUNTAINS}}),    -- Toshley's Station
-					visit_exploration(3782,{coord={37.3,77.4,BLADES_EDGE_MOUNTAINS}}),    -- Veil Lashh
-					exploration(3829),	-- Veil Ruuan
-					visit_exploration(3829,{coord={65.3,33.8,BLADES_EDGE_MOUNTAINS}}),    -- Veil Ruuan
+					visit_exploration(3960,{coord={60.4,23.2,BLADES_EDGE_MOUNTAINS}}),	-- Soulgrinder's Barrow
+					visit_exploration(3772,{coord={37.0,66.7,BLADES_EDGE_MOUNTAINS}}),	-- Sylvanaar
+					visit_exploration(3771,{coord={37.3,70.2,BLADES_EDGE_MOUNTAINS}}),	-- The Living Grove
+					visit_exploration(3769,{coord={52.3,56.1,BLADES_EDGE_MOUNTAINS}}),	-- Thunderlord Stronghold
+					visit_exploration(3918,{coord={60.4,66.3,BLADES_EDGE_MOUNTAINS}}),	-- Toshley's Station
+					visit_exploration(3782,{coord={37.3,77.4,BLADES_EDGE_MOUNTAINS}}),	-- Veil Lashh
+					visit_exploration(3829,{coord={65.3,33.8,BLADES_EDGE_MOUNTAINS}}),	-- Veil Ruuan
 					exploration(3827),	-- Vekhaar Stand
-					visit_exploration(3962,{coord={78.3,27.7,BLADES_EDGE_MOUNTAINS}}),    -- Vim'gol's Circle
+					visit_exploration(3962,{coord={78.3,27.7,BLADES_EDGE_MOUNTAINS}}),	-- Vim'gol's Circle
 					exploration(3832),	-- Vortex Pinnacle / Vortex Summit [CATA+]
 				}),
 				n(FACTIONS, {

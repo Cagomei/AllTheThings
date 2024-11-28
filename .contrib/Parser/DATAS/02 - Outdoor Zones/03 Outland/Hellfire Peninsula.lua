@@ -282,17 +282,17 @@ root(ROOTS.Zones, {
 				explorationHeader({
 					exploration(3671),	-- Broken Hill
 					exploration(3808),	-- Cenarion Post
-					visit_exploration(3556,{coord={26.2,72.0,HELLFIRE_PENINSULA}}),    -- Den of Haal'esh
+					visit_exploration(3556,{coord={26.2,72.0,HELLFIRE_PENINSULA}}),	-- Den of Haal'esh
 					exploration(3814),	-- East Supply Caravan
 					exploration(3546),	-- Expedition Armory
 					exploration(3815),	-- Expedition Point
 					exploration(3554),	-- Falcon Watch
 					exploration(3797),	-- Fallen Sky Ridge
 					exploration(3541),	-- Forge Camp: Mageddon
-					visit_exploration(3548,{coord={58.2,30.7,HELLFIRE_PENINSULA}}),    -- Forge Camp: Rage
+					visit_exploration(3548,{coord={58.2,30.7,HELLFIRE_PENINSULA}}),	-- Forge Camp: Rage
 					exploration(3811),	-- Gor'gaz Outpost
-					visit_exploration(3798,{coord={26.8,78.8,HELLFIRE_PENINSULA}}),    -- Haal'eshi Gorge
-					visit_exploration(3955,{coord={46.1,51.4,HELLFIRE_PENINSULA}}),    -- Hellfire Basin
+					visit_exploration(3798,{coord={26.8,78.8,HELLFIRE_PENINSULA}}),	-- Haal'eshi Gorge
+					visit_exploration(3955,{coord={46.1,51.4,HELLFIRE_PENINSULA}}),	-- Hellfire Basin
 					exploration(3545),	-- Hellfire Citadel
 					exploration(3538),	-- Honor Hold
 					exploration(3549),	-- Invasion Point: Annihilator
@@ -300,29 +300,29 @@ root(ROOTS.Zones, {
 					exploration(3555),	-- Mag'har Post
 					exploration(3810),	-- Northern Rampart
 					exploration(3553),	-- Pools of Aggonar
-					visit_exploration(3765,{coord={39.3,82.1,HELLFIRE_PENINSULA}}),    -- Razorthorn Trail
+					visit_exploration(3765,{coord={39.3,82.1,HELLFIRE_PENINSULA}}),	-- Razorthorn Trail
 					exploration(3807),	-- Reaver's Fall
 					exploration(3551),	-- Ruins of Sha'naar
 					exploration(3795),	-- Sha'naari Wastes
-					visit_exploration(3920,{coord={79.4,32.9,HELLFIRE_PENINSULA}}),    -- Shatter Point
-					visit_exploration(3809,{coord={44.4,82.2,HELLFIRE_PENINSULA}}),    -- Southern Rampart
+					visit_exploration(3920,{coord={79.4,32.9,HELLFIRE_PENINSULA}}),	-- Shatter Point
+					visit_exploration(3809,{coord={44.4,82.2,HELLFIRE_PENINSULA}}),	-- Southern Rampart
 					exploration(3838),	-- Spinebreaker Mountains
-					visit_exploration(3812,{coord={60.6,81.2,HELLFIRE_PENINSULA}}),    -- Spinebreaker Post
+					visit_exploration(3812,{coord={60.6,81.2,HELLFIRE_PENINSULA}}),	-- Spinebreaker Post
 					exploration(3799),	-- Stonewall Canyon
 					exploration(3552),	-- Temple of Telhamat
-					visit_exploration(3803,{coord={70.3,23.4,HELLFIRE_PENINSULA}}),    -- The Abyssal Shelf
+					visit_exploration(3803,{coord={70.3,23.4,HELLFIRE_PENINSULA}}),	-- The Abyssal Shelf
 					exploration(3543),	-- The Great Fissure
 					exploration(3804),	-- The Legion Front
 					exploration(3670),	-- The Overlook
 					exploration(3813),	-- The Path of Anguish
 					exploration(3669),	-- The Stadium
 					exploration(3539),	-- The Stair of Destiny
-					visit_exploration(3796,{coord={50.1,82.9,HELLFIRE_PENINSULA}}),    -- The Warp Fields
+					visit_exploration(3796,{coord={50.1,82.9,HELLFIRE_PENINSULA}}),	-- The Warp Fields
 					exploration(3800),	-- Thornfang Hill
-					visit_exploration(3536,{coord={55.8,38.2,HELLFIRE_PENINSULA}}),    -- Thrallmar
+					visit_exploration(3536,{coord={55.8,38.2,HELLFIRE_PENINSULA}}),	-- Thrallmar
 					exploration(3547),	-- Throne of Kil'jaeden
 					exploration(3794),	-- Valley of Bones
-					visit_exploration(3802,{coord={76.0,65.9,HELLFIRE_PENINSULA}}),    -- Void Ridge
+					visit_exploration(3802,{coord={76.0,65.9,HELLFIRE_PENINSULA}}),	-- Void Ridge
 					exploration(3816),	-- Zeppelin Crash
 					exploration(3582),	-- Zeth'Gor
 				}),

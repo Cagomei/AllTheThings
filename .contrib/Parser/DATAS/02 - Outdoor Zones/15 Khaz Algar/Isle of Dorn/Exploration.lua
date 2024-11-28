@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(ISLE_OF_DORN, {
 		explorationHeader({
-			visit_exploration(14777,{coord={52.0,65.7,ISLE_OF_DORN}}),    -- Boskroot Basin
+			visit_exploration(14777,{coord={52.0,65.7,ISLE_OF_DORN}}),	-- Boskroot Basin
 			exploration(14875),	-- Boulder Springs
 			exploration(14781),	-- Cinderbrew Meadery
 			exploration(14786),	-- Cinderwold

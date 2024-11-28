@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			exploration(13363),	-- Blistering Bog
 			exploration(11020),	-- Caretaker's Manor
 			exploration(10980),	-- Castle Nathria
-			visit_exploration(10981,{coord={66.2,37.7,REVENDRETH}}),    -- Catacombs of Regret
+			visit_exploration(10981,{coord={66.2,37.7,REVENDRETH}}),	-- Catacombs of Regret
 			exploration(12849),	-- Catacombs of Regret
 			exploration(11001),	-- Chalice District
 			exploration(10994),	-- Charred Ramparts

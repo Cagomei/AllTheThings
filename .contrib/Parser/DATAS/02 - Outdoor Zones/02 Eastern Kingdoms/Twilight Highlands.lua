@@ -307,7 +307,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5594),	-- Highland Forest
 				exploration(5640),	-- Humboldt Conflagration
 				exploration(5143),	-- Kirthaven
-				visit_exploration(5563,{coord={35.2,57.4,TWILIGHT_HIGHLANDS}}),    -- Loch Verrall
+				visit_exploration(5563,{coord={35.2,57.4,TWILIGHT_HIGHLANDS}}),	-- Loch Verrall
 				exploration(5595),	-- Obsidian Forest
 				exploration(5439),	-- Ruins of Drakgor
 				exploration(5479),	-- Slithering Cove
@@ -976,6 +976,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "You must die for this quest to continue.",
 					["coord"] = { 48.3, 14.5, TWILIGHT_HIGHLANDS },
 					["qg"] = 47991,	-- Earthcaller Yevaa
+					-- #if AFTER 9.0.3
+					["sharedDescription"] = "Welcome to the buggy part of the questline!\n\nYou are supposed to become overwhelmed and die during the quest 'Devoured'. Then you spawn by Thrall in The Maelstrom for a bugged nightmare scenario. Get gaslighted during the whole quest event 'The Worldbreaker', and get stuck there after accepting 'The Terrors of Iso'rath'. Use your hearthstone to leave the place, and return to Twilight Highlands.",
+					["groups"] = {
+						n(47991),  -- Earthcaller Yevaa
+						n(45435),  -- Earthen Ring Gryphon
+					},
+					-- #endif
 				}),
 				q(27688, {	-- Distract Them for Me (A)
 					["sourceQuests"] = {
@@ -2166,6 +2173,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuests"] = { 27657, 27658 },	-- Help From the Earthcaller (A/H)
 					["coord"] = { 37.5, 88.6, TWILIGHT_HIGHLANDS },
 					["qg"] = 46242,	-- Earthcaller Yevaa
+					["description"] = "Aetharon can be found on a floating island above the ground.",
 					["groups"] = {
 						objective(1, {	-- 0/1 Debilitated Apexar slain
 							["provider"] = { "n", 46273 },	-- Debilitated Apexar

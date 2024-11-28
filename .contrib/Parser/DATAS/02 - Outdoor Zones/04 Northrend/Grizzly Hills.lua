@@ -177,7 +177,7 @@ root(ROOTS.Zones, {
 					exploration(4214),	-- Boulder Hills
 					exploration(4211),	-- Camp Oneqwah
 					exploration(4206),	-- Conquest Hold
-					visit_exploration(4270,{coord={44.6,25.9,GRIZZLY_HILLS}}),    -- Drak'atal Passage
+					visit_exploration(4270,{coord={44.6,25.9,GRIZZLY_HILLS}}),	-- Drak'atal Passage
 					exploration(4210),	-- Drak'Tharon Keep
 					exploration(4216),	-- Drakil'jin Ruins
 					exploration(4220),	-- Dun Argol
@@ -187,23 +187,23 @@ root(ROOTS.Zones, {
 					exploration(395),	-- Grizzlemaw
 					exploration(4266),	-- Harkor's Camp
 					exploration(4218),	-- Heart's Blood Shrine
-					visit_exploration(4219,{coord={55.2,23.6,GRIZZLY_HILLS}}),    -- Hollowstone Mine
+					visit_exploration(4219,{coord={55.2,23.6,GRIZZLY_HILLS}}),	-- Hollowstone Mine
 					exploration(4229),	-- Prospector's Point
 					exploration(4215),	-- Rage Fang Shrine
 					exploration(4231),	-- Redwood Trading Post
 					exploration(4255),	-- Ruins of Drak'Zin
-					visit_exploration(4250,{coord={80.1,35.7,GRIZZLY_HILLS}}),    -- Ruins of Tethys
-					visit_exploration(4245,{coord={87.6,25.7,GRIZZLY_HILLS}}),    -- Shadowfang Tower
+					visit_exploration(4250,{coord={80.1,35.7,GRIZZLY_HILLS}}),	-- Ruins of Tethys
+					visit_exploration(4245,{coord={87.6,25.7,GRIZZLY_HILLS}}),	-- Shadowfang Tower
 					exploration(4199),	-- Silverbrook
 					exploration(4251),	-- Silverbrook Hills
-					visit_exploration(4205,{coord={61.8,39.7,GRIZZLY_HILLS}}),    -- Solstice Village
+					visit_exploration(4205,{coord={61.8,39.7,GRIZZLY_HILLS}}),	-- Solstice Village
 					exploration(4480),	-- The Forgotten Overlook
 					exploration(4221),	-- Thor Modan
 					exploration(4366),	-- Ursoc's Den
 					exploration(4242),	-- Venture Bay
 					exploration(4207),	-- Voldrune
 					exploration(4267),	-- Vordrassil Pass
-					visit_exploration(4200,{coord={38.7,51.5,GRIZZLY_HILLS}}),    -- Vordrassil's Heart
+					visit_exploration(4200,{coord={38.7,51.5,GRIZZLY_HILLS}}),	-- Vordrassil's Heart
 					exploration(4203),	-- Vordrassil's Limb
 					exploration(4202),	-- Vordrassil's Tears
 					exploration(4159),	-- Westfall Brigade Encampment

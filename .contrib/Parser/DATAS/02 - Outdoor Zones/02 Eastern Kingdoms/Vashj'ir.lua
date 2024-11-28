@@ -1119,6 +1119,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 27.4, 24.2, STORMWIND_CITY },
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 9.0.3
+							["groups"] = {
+								n(36799, { -- Recruiter Burns
+									["description"] = "Accepting the quest 'Call of Duty' will instantly teleport you to Vashj'ir. Although the old event and cutscene is skipped, the questline is still intact.\n\nIf Burns do not offer you the quest, you might be phased due to Legion intro questline (even by being within the eligible level range!).",
+								}),
+							},
+							-- #endif
 						}),
 						q(25924, {	-- Call of Duty (H)
 							["qg"] = 41621,	-- Commander Thorak
