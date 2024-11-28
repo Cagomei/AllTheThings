@@ -2018,7 +2018,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.5.57388", "removed 11.0.5.99999" } }, {
+		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.5.57388", "removed 11.0.5.99999" } }, {	-- TODO: Timeline out correctly
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(229059),	-- Arsenal: Crests of the Kingdom
 			}),
@@ -2172,6 +2172,33 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(211158, {	-- Witch Doctor's Fetish Guard
 					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				}),
+			}),
+		})),
+		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.5.57388", "removed 11.0.7.99999" } }, {	-- TODO: Timeline in correctly
+			n(FILLED_TRAVELERS_LOG, {
+				iensemble(223486),	-- Ensemble: Purple Snugglefin Murloc Romper
+			}),
+			filter(MOUNTS, {
+				i(212229, {	-- Reins of the Twilight Sky Prowler
+					["cost"] = {{"c", TRADERS_TENDER, 750}},
+				}),
+			}),
+			filter(COSMETIC, {
+				i(230853, {	-- Aegis of Yuletide
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(229960, {	-- Cheerbringer XL
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				i(229720, {	-- Frostwolf Earmuffs
+					["cost"] = {{"c", TRADERS_TENDER, 170}},
+				}),
+				i(229714, {	-- Lion's Crest Earmuffs
+					["cost"] = {{"c", TRADERS_TENDER, 170}},
+				}),
+				i(230940, {	-- Wings of the Sapphire Monarch
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
 				}),
 			}),
 		})),

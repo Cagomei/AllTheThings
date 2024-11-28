@@ -1287,15 +1287,15 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 				q(72110),	-- when delivering Gleamfish to spawn 'The Great Shellkhan' (spellID 392694)
 				q(72125),	-- Triggers during 'Tying Things Together' (questID 66248) (spellID 392925)
 				-- During Solicited Opinions (72418)
-				q(75199, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 3 answer 3
-				q(75198, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 3 answer 2
-				q(75197, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 3 answer 1
-				q(75196, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 2 answer 3
-				q(75195, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 2 answer 2
-				q(75194, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 2 answer 1
-				q(75193, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 1 answer 3
-				q(75192, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 1 answer 2
-				q(75191, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 1 answer 1
+				q(75199, {["timeline"] = {ADDED_10_1_0}}),	-- Solicited Opinions question 3 answer 3
+				q(75198, {["timeline"] = {ADDED_10_1_0}}),	-- Solicited Opinions question 3 answer 2
+				q(75197, {["timeline"] = {ADDED_10_1_0}}),	-- Solicited Opinions question 3 answer 1
+				q(75196, {["timeline"] = {ADDED_10_1_0}}),	-- Solicited Opinions question 2 answer 3
+				q(75195, {["timeline"] = {ADDED_10_1_0}}),	-- Solicited Opinions question 2 answer 2
+				q(75194, {["timeline"] = {ADDED_10_1_0}}),	-- Solicited Opinions question 2 answer 1
+				q(75193, {["timeline"] = {ADDED_10_1_0}}),	-- Solicited Opinions question 1 answer 3
+				q(75192, {["timeline"] = {ADDED_10_1_0}}),	-- Solicited Opinions question 1 answer 2
+				q(75191, {["timeline"] = {ADDED_10_1_0}}),	-- Solicited Opinions question 1 answer 1
 				------ Stay awhile and listen ------
 				hqt(73960),	-- Stay awhile and listen (spellID 406027)
 				-- 10.1.7

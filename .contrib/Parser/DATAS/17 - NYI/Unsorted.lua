@@ -644,8 +644,6 @@ root(ROOTS.Unsorted, {
 				i(227597),	-- Red Crane Legwraps
 			}),
 			filter(COSMETIC, {
-				i(229714),	-- Lion's Crest Earmuffs
-				i(229720),	-- Frostwolf Earmuffs
 				i(229807),	-- Crown of the Icy Blue Rose
 				i(229808),	-- Gossamer Cyan Gown
 				i(229811),	-- Frost Etched Dagger
@@ -655,7 +653,6 @@ root(ROOTS.Unsorted, {
 				i(229815),	-- Sky Witch's Airy Stave
 				i(229816),	-- Sky Witch's Airy Wand
 				i(229817),	-- Lovely Airy Longbow
-				i(229960),	-- Cheerbringer XL
 				i(229961),	-- Candied Knife
 				i(229962),	-- Tree Topper
 				i(229963),	-- Great Candied Blade
@@ -728,8 +725,6 @@ root(ROOTS.Unsorted, {
 				i(230178),	-- Ensemble: Prowler's Plum Headgear
 				i(230181),	-- Ensemble: Prowler's Aquatic Headgear
 				i(230182),	-- Ensemble: Prowler's Snowy Headgear
-				i(230853),	-- Aegis of Yuletide
-				i(230940),	-- Wings of the Sapphire Monarch
 				i(231017),	-- Wings of the Onyx Monarch
 			}),
 			n(DUNGEONS_AND_RAIDS, {	-- Raid

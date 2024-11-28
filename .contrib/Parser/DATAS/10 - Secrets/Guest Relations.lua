@@ -1417,6 +1417,24 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 									{ 47.48, 84.74, AZSUNA },
 									{ 45.97, 84.06, AZSUNA },
 								}, -- TODO: if we REALLY want to, we could source objectids for each statue but it'd be trial and error with coordinates since wowhead is missing data and debugger doesn't report.
+								["g"] = {
+									hqt(39353, {	-- Empower your owl with the red statue aura
+										["name"] = "Empower your owl with the red statue aura",
+										["description"] = "Unlocks an orb at the 7 O'clock basin."	-- Orb
+									}),
+									hqt(26741, {	-- Empower your owl with the green statue aura
+									["name"] = "Empower your owl with the green statue aura",
+										["description"] = "Unlocks an orb at the 7 O'clock basin."	-- Orb
+									}),
+									hqt(40721, {	-- Empower your owl with the blue statue aura
+										["name"] = "Empower your owl with the blue statue aura",
+										["description"] = "Unlocks an orb at the 7 O'clock basin."	-- Orb
+									}),
+									hqt(26704, {	-- Empower your owl with the purple statue aura
+										["name"] = "Empower your owl with the purple statue aura",
+										["description"] = "Unlocks an orb at the 7 O'clock basin."	-- Orb
+									}),
+								},
 							}),
 							o(466943, {	-- Sentry Statue
 								["description"] = "You must first have completed the previous steps with the watcher statues and empowering your owl.\n1. Clear Vault of the Wardens (any difficulty) with your owl pet summoned through to last boss.\n2. Pick up Elune's light from a statue in the corner of Cordana's arena and QUICKLY get back up to the first boss's room.\n3. Backtrack from the first boss room towards the dungeon entrance, enter the newly opened door on your right, the statue will sit in the center.",
@@ -1560,8 +1578,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(85170),	-- Triggered on interacting with an ordinary pebble in the catacombs. Doesn't reliably trigger on first click, or from specific pebble locations, can unflag.
 		q(85171),	-- Triggered on interacting with an ordinary pebble in the catacombs. Doesn't reliably trigger on first click, or from specific pebble locations, can unflag.
 		q(85172),	-- Triggered on interacting with an ordinary pebble in the catacombs. Doesn't reliably trigger on first click, or from specific pebble locations, can unflag.
-		q(39353),	-- Triggered on Warden Statue completion #1 (Red buff)
-		q(26704),	-- Triggered on Warden Statue completion #3 (Purple buff)
-		q(40721),	-- Triggered on Warden Statue completion #4 (Blue buff)
 	}),
 })));

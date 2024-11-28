@@ -634,6 +634,7 @@ q(85119),	-- Ensemble: Prowler's Azure Headgear
 q(85131),	-- Ensemble: Prowler's Crimson Headgear
 q(85135),	-- Ensemble: Prowler's Sunny Headgear
 q(85132),	-- Ensemble: Prowler's Violet Headgear
+q(82031),	-- Ensemble: Purple Snugglefin Murloc Romper
 q(83989),	-- Ensemble: Ragged Harvest Golem
 q(79468),	-- Ensemble: Spring Reveler's Lavender Apparel
 q(79467),	-- Ensemble: Spring Reveler's Lavender Collection

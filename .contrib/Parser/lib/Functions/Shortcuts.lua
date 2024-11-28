@@ -1038,9 +1038,23 @@ exploration = function(id, t)							-- Create an EXPLORATION Object
 	end
 	return struct("explorationID", id, t);
 end
+local ValidExplorationAreaIDsForClassic = {
+	-- #IF BEFORE CATA
+	[507] = true,	-- Bluefen
+	-- #ENDIF
+}
 visit_exploration = function(id, t)						-- Create an EXPLORATION Object (which fails to return in exploration API and must be visited manually for name-based area check to capture)
-	t = struct("explorationID", id, t);
+	t = struct("explorationID", id, t)
 	t.collectible = false	-- only way to cache these is to visit manually -- too tedious :/
+	-- #IF ANYCLASSIC
+	-- leave it up to the ExplorationAreaPositionDB for that Classic Version
+	t.coord = nil
+	t.coords = nil
+	-- Flag as collectible if the areaID is confirmed as validly-working in that Classic Version
+	if ValidExplorationAreaIDsForClassic[id] then
+		t.collectible = nil
+	end
+	-- #ENDIF
 	return t
 end
 faction = function(id, t)								-- Create a FACTION Object

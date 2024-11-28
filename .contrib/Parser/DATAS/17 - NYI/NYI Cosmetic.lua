@@ -485,15 +485,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(221531),	-- Pink Tropical Trunks
 				i(221532),	-- Pink Tropical Wristwraps
 
-				------ Purple Snugglefin Murloc Set ------
-				i(223486),	-- Ensemble: Purple Snugglefin Murloc Romper
-				i(221015),	-- Angry Purple Snugglefin Murloc Hood
-				i(221016),	-- Happy Purple Snugglefin Murloc Hood
-				i(221479),	-- Purple Snugglefin Murloc Backpack
-				i(221013),	-- Purple Snugglefin Murloc Mittens
-				i(221011),	-- Purple Snugglefin Murloc Pullover
-				i(221012),	-- Purple Snugglefin Murloc Slippers
-				i(221014),	-- Purple Snugglefin Murloc Sweatpants
 			}),
 			n(WEAPONS, {
 				------ Single Pieces ------

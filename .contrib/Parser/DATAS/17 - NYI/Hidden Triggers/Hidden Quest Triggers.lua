@@ -99,7 +99,9 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(28846),	-- Lost Isles - Repel the Paratroopers accepted tracking flag
 		q(25226),	-- Lost Isles - Kill Chip Endale tracking flag
 		q(25245),	-- Lost Isles - Kill Candy Cane tracking flag
+		-- #if BEFORE 11.0.5
 		q(26741),	-- REUSE - triggered after completing "The Hunt" (questID 26340)
+		-- #endif
 		q(27224),	-- Andorhal Phase Flag — Western Plaguelands — triggers during "The Depravity of the Forsaken"
 		q(25040),	-- FLAG - Worgen Attacked — Tirisfal Glades — attacked by a worgen during "Darkhound Pounding" to trigger the "Escaped From Gilneas" quest
 		q(28855),	-- Northern Stranglethorn 4.x: PRK - E - Just Hatched FLAG (Triggers when you collect the 7th "Jungle Remedy" during the Bad Medicine quest. A Lashtail Hatchling will start following you)
