@@ -18,6 +18,7 @@ root(ROOTS.Zones, {
 				exploration(7646),	-- Felblaze Ingress
 				exploration(8209),	-- Felsurge Nest
 				exploration(7554),	-- Garden of Elune
+				visit_exploration(8297,{coord={29.9,35.2,AZSUNA}}),	-- Grey Shoals
 				exploration(7365),	-- Hatecoil Warcamp
 				exploration(8147),	-- Isle of the Watchers
 				exploration(7354),	-- Legion Camp: Chaos

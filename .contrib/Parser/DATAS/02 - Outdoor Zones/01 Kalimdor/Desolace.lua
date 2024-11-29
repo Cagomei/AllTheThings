@@ -128,16 +128,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(604),	-- Magram Village / Shok'Thokar [CATA+]
 				-- #endif
 				exploration(602),	-- Mannoroc Coven
-				-- #if AFTER CATA
 				visit_exploration(2100,{coord={29.4,62.3,DESOLACE}}),	-- Maraudon
-				-- #endif
 				exploration(608),	-- Nijel's Point
 				exploration(2406),	-- Ranazjar Isle
 				exploration(603),	-- Sargeron
 				exploration(2198),	-- Shadowbreak Ravine
 				exploration(2408),	-- Shadowprey Village
 				-- #if AFTER CATA
-				exploration(604),	-- Shok'Thokar [CATA+] / Magram Village
+				visit_exploration(604,{coord={66.0,76.7,DESOLACE}}),	-- Shok'Thokar [CATA+] / Magram Village
 				exploration(4796),	-- Slitherblade Shore
 				-- #endif
 				exploration(2404),	-- Tethris Aran

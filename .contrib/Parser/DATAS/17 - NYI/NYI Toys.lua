@@ -154,5 +154,9 @@ root(ROOTS.NeverImplemented, filter(TOYS, {
 			i(224809),	-- Earthen Plumber's Pipe (TOY!)
 			i(216887),	-- Unknown (TOY!)
 		})),
+		-- 11.0.7
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
+			i(235016),	-- Redeployment Module
+		})),
 	}),
 }));

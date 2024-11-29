@@ -1185,7 +1185,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					--1 O'clock Basin
 					hqt(84676, {	-- The Light of Their Love
 						["name"] = "Acquire The Light of Their Love buff stacked 3 times",
-						["description"] = "Acquire The Light of Their Love buff (spellID 153715) 3 times from visiting areas relevant to Olgra, Mankrik's wife. Stand at these areas with your Torch of Pyrreth until a stack is gained.\n1. The Humble Monument in Borthern Barrens.\n2. Young Olgra in Draenor.\n3. Decimator Olgra in Maldraxxus.\n\nFully lights up the 1 O'clock basin.",
+						["description"] = "Acquire The Light of Their Love buff (spellID 153715) 3 times from visiting areas relevant to Olgra, Mankrik's wife. Stand at these areas with your Torch of Pyrreth until a stack is gained.\n1. The Humble Monument in Northern Barrens.\n2. Young Olgra in Draenor.\n3. Decimator Olgra in Maldraxxus.\n\nFully lights up the 1 O'clock basin.",
 						["sourceQuest"] = 84684,	-- Ratts' Race
 						["provider"] = { "i", 208092 },	-- Torch of Pyrreth
 						["coords"] = {

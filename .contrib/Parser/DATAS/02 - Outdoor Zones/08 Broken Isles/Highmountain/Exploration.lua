@@ -10,6 +10,7 @@ root(ROOTS.Zones, {
 				exploration(7725),	-- Bloodhunt Highland
 				exploration(8088),	-- Clackbrine Coast
 				exploration(7782),	-- Cliff's Edge
+				visit_exploration(8253,{coord={31.2,45.4,HIGHMOUNTAIN}}),	-- Cliffhorn Watch
 				exploration(8051),	-- Cordana's Apex
 				exploration(7845),	-- Crystal Fissure
 				exploration(7755),	-- Darkfeather Valley

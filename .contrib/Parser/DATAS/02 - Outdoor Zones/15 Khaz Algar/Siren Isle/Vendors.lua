@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					fbiron(350, i(235299)),	-- Smuggled Meadery Pitcher
 					fbiron(200, i(233822)),	-- Smuggled Meadery Pitcher
 					fbiron(750, i(235015)),	-- Awakened Supply Crate (TOY!)
-					fbiron(1000, i(235016)),	-- Redeployment Module (TOY!)
+					--fbiron(1000, i(235016)),	-- Redeployment Module (TOY!) (57788 - NYI?)
 				},
 			}),
 			n(227814, {	-- Sally Boltwrench

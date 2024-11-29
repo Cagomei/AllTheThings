@@ -2670,7 +2670,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(82388),	-- Together with First Craft of Algari Mana Potion or Algari Healing Potion
 			-- Unsure what are these
 
-			--q(81898),	-- Together with First Craft of Flask of Alchemical Chaos
+			q(81898),	-- On proc of bonus flask
 
 			--q(78604),	-- Randomly when crafting Wild Experimentation
 						-- When learning Algari Mana Potion (first use of Mycobloom in Wild Experimentation)
@@ -2710,6 +2710,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		prof(SKINNING, {
 			q(81440),	-- 20/40 Tanning
 			q(81441),	-- 40/40 Tanning
+			q(81442),	-- 10/?? Meat Carver
+			q(81443),	-- 30/?? Meat Carver
 		}),
 		prof(TAILORING, {
 			q(84591),	-- 0/20 Dawnweaving

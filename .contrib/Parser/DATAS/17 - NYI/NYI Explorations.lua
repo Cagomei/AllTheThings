@@ -2810,7 +2810,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(8250),	-- Rescue Koltira
 	exploration(8251),	-- Reliquary Base Camp
 	exploration(8252),	-- The Oculus
-	exploration(8253),	-- Cliffhorn Watch
 	exploration(8254),	-- Pass of An'she
 	exploration(8255),	-- The Ettinwalk
 	exploration(8257),	-- Temple Summit
@@ -2848,7 +2847,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(8294),	-- Terrace of The Twin Dragons
 	exploration(8295),	-- The Heart of Jade
 	exploration(8296),	-- Pit of Malinoth
-	exploration(8297),	-- Grey Shoals
 	exploration(8298),	-- Mulgore
 	exploration(8299),	-- Royal Quarter
 	exploration(8300),	-- Theodric's Lodge

@@ -488,6 +488,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					i(233056),	-- Marmaduke (PET!)
 				},
 			}),
+			--[[ build 57788 - removed, uncomment on live or remove it from here
 			--- Stay awhile and listen ---
 			hqt(85103, {	-- Stay awhile and listen: Apprentice Tanmar
 				["name"] = "Stay awhile and listen: Apprentice Tanmar",
@@ -507,7 +508,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["provider"] = { "n", 231997 },	-- Didi the Wrench
 				["coord"] = { 71.2, 45.9, SIREN_ISLE },
 			}),
-			--
+			--]]--
 			hqt(86240, {	-- Give Marmaduke the well loved squeky toy
 				["name"] = "Give Marmaduke the Well Loved Squeaky Toy",
 				["cost"] = {{ "i", 233027, 1 }},	-- Well Loved Squeaky Toy

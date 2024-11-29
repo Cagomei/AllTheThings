@@ -1972,7 +1972,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 84,
 					-- #elseif AFTER 9.0.3
 					["groups"] = {
-						n(14720, { -- Hogh Overlord Saurfang
+						n(14720, { -- High Overlord Saurfang
 							["description"] = "Saurfang will not give you any quests after turning in 'Warchied's Command: Twilight Highlands!'. You can get the proper beginning of the Twilight Highland intro questline from Eitrigg in the same room, with the quest 'Machines of War'.\n\nThe same applies for the quest 'Saurfang Will be Pleased', where the continuation yet again is obtained from Eitrigg with the quest 'Traitor's Bait'.",
 						}),
 					},

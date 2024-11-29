@@ -1411,5 +1411,6 @@ i(232308);	-- Unknown
 ------------------
 i(235015);	-- Awakened Supply Crate
 i(233486);	-- Hallowfall Supply Cache
-i(235016);	-- Redeployment Module
 i(234473);	-- Soweezi's Comfy Lawn Chair
+--- NYI ---
+i(235016);	-- Redeployment Module

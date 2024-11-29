@@ -34,7 +34,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60421, {	-- A Call to Revendreth
 					["provider"] = { "n", 167193 },	-- Featherlight
-					["coord"] = { 59.9, 32.4, THE_ROOTS },
+					["coords"] = {
+						{ 59.9, 32.4, THE_TRUNK },
+						{ 59.9, 32.4, THE_ROOTS },
+					},
 					["g"] = {
 						i(181556),	-- Tribute of the Court
 					},
@@ -98,7 +101,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60437, {	-- Challenges in Bastion
 					["provider"] = { "n", 167206 },	-- Yanlar
-					["coord"] = { 37.1, 25.5, THE_ROOTS },
+					["coords"] = {
+						{ 37.1, 25.5, THE_TRUNK },
+						{ 37.1, 25.5, THE_ROOTS },
+					},
 					["g"] = {
 						i(181741),	-- Tribute of the Paragon
 					},
