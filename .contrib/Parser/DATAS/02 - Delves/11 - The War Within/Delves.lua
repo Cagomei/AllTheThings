@@ -207,6 +207,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(40864, {	-- Plentiful Perplexing Puzzles
 			["maps"] = ALL_REGULAR_DELVES,
+			["crs"] = {
+				225401,	-- Wrapped Spool
+			},
 		}),
 		ach(40820, {	-- Raisin' Brann
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },

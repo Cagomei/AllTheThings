@@ -283,14 +283,16 @@ root(ROOTS.Zones, {
 					exploration(3671),	-- Broken Hill
 					exploration(3808),	-- Cenarion Post
 					visit_exploration(3556,{coord={26.2,72.0,HELLFIRE_PENINSULA}}),	-- Den of Haal'esh
+					visit_exploration(3835,{coord={21.8,66.7,HELLFIRE_PENINSULA}}),	-- Dustquill Ravine
 					exploration(3814),	-- East Supply Caravan
 					exploration(3546),	-- Expedition Armory
 					exploration(3815),	-- Expedition Point
 					exploration(3554),	-- Falcon Watch
 					exploration(3797),	-- Fallen Sky Ridge
-					exploration(3541),	-- Forge Camp: Mageddon
+					visit_exploration(3793,{coord={61.4,34.8,HELLFIRE_PENINSULA}}),	-- Felspark Ravine
+					visit_exploration(3541,{coord={65.3,29.8,HELLFIRE_PENINSULA}}),	-- Forge Camp: Mageddon
 					visit_exploration(3548,{coord={58.2,30.7,HELLFIRE_PENINSULA}}),	-- Forge Camp: Rage
-					exploration(3811),	-- Gor'gaz Outpost
+					visit_exploration(3811,{coord={44.7,75.3,HELLFIRE_PENINSULA}}),	-- Gor'gaz Outpost
 					visit_exploration(3798,{coord={26.8,78.8,HELLFIRE_PENINSULA}}),	-- Haal'eshi Gorge
 					visit_exploration(3955,{coord={46.1,51.4,HELLFIRE_PENINSULA}}),	-- Hellfire Basin
 					exploration(3545),	-- Hellfire Citadel
@@ -315,6 +317,7 @@ root(ROOTS.Zones, {
 					exploration(3804),	-- The Legion Front
 					exploration(3670),	-- The Overlook
 					exploration(3813),	-- The Path of Anguish
+					visit_exploration(3542,{coord={72.6,48.7,HELLFIRE_PENINSULA}}),	-- The Path of Glory
 					exploration(3669),	-- The Stadium
 					exploration(3539),	-- The Stair of Destiny
 					visit_exploration(3796,{coord={50.1,82.9,HELLFIRE_PENINSULA}}),	-- The Warp Fields

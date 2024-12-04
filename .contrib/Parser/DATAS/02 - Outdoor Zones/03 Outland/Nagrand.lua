@@ -263,6 +263,7 @@ root(ROOTS.Zones, {
 				explorationHeader({
 					visit_exploration(3839,{coord={52.0,57.5,NAGRAND}}),	-- Abandoned Armory
 					visit_exploration(3623,{coord={30.3,58.9,NAGRAND}}),	-- Aeris Landing
+					visit_exploration(3633,{coord={26.1,60.0,NAGRAND}}),	-- Ancestral Grounds
 					exploration(3610),	-- Burning Blade Ruins
 					visit_exploration(3611,{coord={62.9,65.0,NAGRAND}}),	-- Clan Watch
 					exploration(3636),	-- Elemental Plateau
@@ -289,6 +290,7 @@ root(ROOTS.Zones, {
 					visit_exploration(3626,{coord={53.8,74.8,NAGRAND}}),	-- Telaar
 					visit_exploration(3705,{coord={52.2,68.7,NAGRAND}}),	-- Telaari Basin
 					exploration(3760),	-- The Barrier Hills
+					visit_exploration(3761,{coord={76.9,56.0,NAGRAND}}),	-- The High Path
 					exploration(3788),	-- The Low Path
 					exploration(3700),	-- The Ring of Blood
 					exploration(3638),	-- The Ring of Trials
@@ -297,7 +299,7 @@ root(ROOTS.Zones, {
 					exploration(3617),	-- Warmaul Hill
 					exploration(3762),	-- Windyreed Pass
 					exploration(3634),	-- Windyreed Village
-					exploration(3763),	-- Zangar Ridge
+					visit_exploration(3763,{coord={35.9,17.0,NAGRAND}}),	-- Zangar Ridge
 				}),
 				n(FACTIONS, {
 					faction(FACTION_KURENAI, {	-- Kurenai

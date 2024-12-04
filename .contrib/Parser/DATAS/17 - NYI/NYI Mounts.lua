@@ -799,9 +799,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(212631, {	-- Brilliant Sunburst Peafowl (MOUNT!)
 				-- ["displayID"] = ,
 			}),
-			i(212228, {	-- Soaring Sky Fox (MOUNT!)
-				-- ["displayID"] = ,
-			}),
 			i(212632, {	-- Starry Twilight Peafowl (MOUNT!)
 				-- ["displayID"] = ,
 			}),

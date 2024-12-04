@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			43,	-- The Master's Cellar
 			44,	-- The Master's Cellar
 			45,	-- The Master's Cellar
-			46,	-- Karazhan Catacombs
+			-- 46,	-- Karazhan Catacombs [not really helpful to show all Deadwind Pass in the Catacombs]
 		},
 		-- #endif
 		["icon"] = 236741,

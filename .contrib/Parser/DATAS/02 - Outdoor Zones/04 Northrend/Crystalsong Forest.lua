@@ -23,7 +23,8 @@ root(ROOTS.Zones, {
 					exploration(4558),	-- Sunreaver's Command
 					exploration(4555),	-- The Azure Front
 					exploration(4552),	-- The Decrepit Flow
-					exploration(4549),	-- The Great Tree
+					visit_exploration(4549,{coord={9.40,35.2,CRYSTALSONG_FOREST}}),	-- The Great Tree
+					visit_exploration(4550,{coord={48.4,56.7,CRYSTALSONG_FOREST}}),	-- The Mirror of Twilight
 					visit_exploration(4551,{coord={19.4,27.8,CRYSTALSONG_FOREST}}),	-- The Twilight Rivulet
 					exploration(4557),	-- The Unbound Thicket
 					exploration(4556),	-- Violet Stand

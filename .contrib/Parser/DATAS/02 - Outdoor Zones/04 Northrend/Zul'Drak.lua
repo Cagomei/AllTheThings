@@ -141,7 +141,7 @@ root(ROOTS.Zones, {
 					exploration(4375),	-- Gundrak
 					visit_exploration(4326,{coord={64.2,53.7,ZULDRAK}}),	-- Heb'Drakkar
 					exploration(4294),	-- Heb'Valok
-					exploration(4481),	-- Jintha'kalar Passage
+					visit_exploration(4194,{coord={14.9,89.2,ZULDRAK}}),	-- Jintha'kalar
 					exploration(4299),	-- Kolramas
 					exploration(4317),	-- Light's Breach
 					exploration(4371),	-- Mam'toth Crater

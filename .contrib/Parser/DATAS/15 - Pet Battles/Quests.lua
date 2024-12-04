@@ -1039,7 +1039,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 		}),
 		q(31780, {	-- Old MacDonald
 			["provider"] = { "n", 65648 },	-- Old MacDonald
-			["coord"] = { 80.6, 18.4, WESTFALL },
+			["coord"] = { 60.9, 18.5, WESTFALL },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuests"] = { 31724 },	-- Old MacDonald
 		}),

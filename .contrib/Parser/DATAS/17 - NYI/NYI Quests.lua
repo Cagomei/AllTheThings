@@ -8427,10 +8427,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75605),	--
 			q(76198),	--
 			q(76220),	--
-			q(76225),	--
 			q(76226),	--
 			q(76231),	--
-			q(76236),	--
 			q(76237),	--
 			q(76245),	--
 			q(76289),	--
@@ -8621,7 +8619,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		-- 10.2.5
 		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			q(77764),	-- Curious Find: Apprentice Astrologist Homework
-			q(79210),	-- Ensemble: Sky Witch's Attire
 			q(80059),	-- Ensemble: Spring Reveler's Dandelion Collection
 			q(80060),	-- Ensemble: Spring Reveler's Dandelion Collection
 			q(80061),	-- Ensemble: Spring Reveler's Turquoise Collection

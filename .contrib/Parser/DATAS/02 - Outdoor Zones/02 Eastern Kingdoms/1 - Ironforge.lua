@@ -63,6 +63,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "i", 34484 },	-- Old Ironjaw
 					["timeline"] = { ADDED_2_0_1 },
 					["requireSkill"] = FISHING,
+					["_noautomation"] = true, -- This achievement has 2 hidden criteria which we'd prefer to remain hidden.
 				})),
 			}),
 			battlepets({

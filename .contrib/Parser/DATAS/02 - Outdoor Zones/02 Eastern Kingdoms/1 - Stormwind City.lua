@@ -1388,6 +1388,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
+					["description"] = "This quest gets marked as completed when you complete the quest 'Dungar Longdrink' (26395).",
 					["races"] = { HUMAN },
 					["lvl"] = 10,
 				}),
@@ -2632,6 +2633,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
+					["description"] = "This quest gets marked as completed when you complete the quest 'Return to Argus' (26396) in Elwynn Forest.",
 					["maps"] = { WESTFALL },
 					["races"] = { HUMAN },
 					["lvl"] = 10,

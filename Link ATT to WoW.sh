@@ -44,9 +44,7 @@ link_beta_files() {
   fi
   if [[ ! -d "$1" ]]; then
     mkdir -p "$1/db/Retail"
-    rsync -a --link-dest="$PWD/db/Presets.lua" "$PWD/db/Presets.lua" "$1/db/Presets.lua"
     rsync -a --link-dest="$PWD/db/Retail/.beta/Categories.lua" "$PWD/db/Retail/.beta/Categories.lua" "$1/db/Retail/Categories.lua"
-    rsync -a --link-dest="$PWD/db/Retail/ExplorationDB.lua" "$PWD/db/Retail/ExplorationDB.lua" "$1/db/Retail/ExplorationDB.lua"
     rsync -a --link-dest="$PWD/db/Retail/.beta/LocalizationDB.lua" "$PWD/db/Retail/.beta/LocalizationDB.lua" "$1/db/Retail/LocalizationDB.lua"
     rsync -a --link-dest="$PWD/db/Retail/.beta/ReferenceDB.lua" "$PWD/db/Retail/.beta/ReferenceDB.lua" "$1/db/Retail/ReferenceDB.lua"
 
@@ -75,9 +73,7 @@ link_ptr_files() {
   fi
   if [[ ! -d "$1" ]]; then
     mkdir -p "$1/db/Retail"
-    rsync -a --link-dest="$PWD/db/Presets.lua" "$PWD/db/Presets.lua" "$1/db/Presets.lua"
     rsync -a --link-dest="$PWD/db/Retail/.ptr/Categories.lua" "$PWD/db/Retail/.ptr/Categories.lua" "$1/db/Retail/Categories.lua"
-    rsync -a --link-dest="$PWD/db/Retail/ExplorationDB.lua" "$PWD/db/Retail/ExplorationDB.lua" "$1/db/Retail/ExplorationDB.lua"
     rsync -a --link-dest="$PWD/db/Retail/.ptr/LocalizationDB.lua" "$PWD/db/Retail/.ptr/LocalizationDB.lua" "$1/db/Retail/LocalizationDB.lua"
     rsync -a --link-dest="$PWD/db/Retail/.ptr/ReferenceDB.lua" "$PWD/db/Retail/.ptr/ReferenceDB.lua" "$1/db/Retail/ReferenceDB.lua"
 

@@ -171,6 +171,7 @@ root(ROOTS.Zones, {
 					exploration(4204),	-- Amberpine Lodge
 					exploration(4482),	-- Arriga Footbridge
 					exploration(4262),	-- Ashwood Post
+					visit_exploration(4239,{coord={34.6,56.0,GRIZZLY_HILLS}}),	-- Aspen Grove Post
 					exploration(4217),	-- Blackriver Logging Camp
 					exploration(4244),	-- Bloodmoon Isle
 					exploration(4222),	-- Blue Sky Logging Grounds
@@ -182,11 +183,13 @@ root(ROOTS.Zones, {
 					exploration(4216),	-- Drakil'jin Ruins
 					exploration(4220),	-- Dun Argol
 					exploration(4212),	-- Eastwind Shore
+					visit_exploration(4236,{coord={15.3,66.5,GRIZZLY_HILLS}}),	-- Evergreen Trading Post
 					exploration(4240),	-- Forest's Edge Post
 					exploration(4208),	-- Granite Springs
 					exploration(395),	-- Grizzlemaw
 					exploration(4266),	-- Harkor's Camp
 					exploration(4218),	-- Heart's Blood Shrine
+					visit_exploration(4235,{coord={48.8,33.9,GRIZZLY_HILLS}}),	-- Heartwood Trading Post
 					visit_exploration(4219,{coord={55.2,23.6,GRIZZLY_HILLS}}),	-- Hollowstone Mine
 					exploration(4229),	-- Prospector's Point
 					exploration(4215),	-- Rage Fang Shrine
@@ -198,17 +201,20 @@ root(ROOTS.Zones, {
 					exploration(4251),	-- Silverbrook Hills
 					visit_exploration(4205,{coord={61.8,39.7,GRIZZLY_HILLS}}),	-- Solstice Village
 					exploration(4480),	-- The Forgotten Overlook
+					visit_exploration(4249,{coord={74.2,43.0,GRIZZLY_HILLS}}),	-- The Path of Iron
 					exploration(4221),	-- Thor Modan
 					exploration(4366),	-- Ursoc's Den
 					exploration(4242),	-- Venture Bay
 					exploration(4207),	-- Voldrune
+					visit_exploration(4456,{coord={28.8,72.2,GRIZZLY_HILLS}}),	-- Voldrune Dwelling
 					exploration(4267),	-- Vordrassil Pass
 					visit_exploration(4200,{coord={38.7,51.5,GRIZZLY_HILLS}}),	-- Vordrassil's Heart
-					exploration(4203),	-- Vordrassil's Limb
+					visit_exploration(4203,{coord={33.2,49.6,GRIZZLY_HILLS}}),	-- Vordrassil's Limb
 					exploration(4202),	-- Vordrassil's Tears
 					exploration(4159),	-- Westfall Brigade Encampment
 					exploration(4238),	-- White Pine Trading Post
 					exploration(4209),	-- Zeb'Halak
+					visit_exploration(4475,{coord={14.3,38.2,GRIZZLY_HILLS}}),	-- Zim'bo's Hideout
 				}),
 				prof(FISHING, {
 					-- #if ANYCLASSIC

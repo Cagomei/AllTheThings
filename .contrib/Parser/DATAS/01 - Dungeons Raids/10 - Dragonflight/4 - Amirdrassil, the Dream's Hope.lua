@@ -602,9 +602,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						--["maps"] = { 2211 },	-- Aberrus, the Shadowed Crucible
 						-- It seems this subzone is still in The Waking Shores (mapID 2022)
 						["g"] = {
-							i(206448, {	-- Fyr'alath the Dreamrender
-								ach(19450),	-- Fyr'alath the Dreamrender
-							}),
+							i(206448),	-- Fyr'alath the Dreamrender
+							ach(19450),	-- Fyr'alath the Dreamrender
 						},
 					}),
 				})),

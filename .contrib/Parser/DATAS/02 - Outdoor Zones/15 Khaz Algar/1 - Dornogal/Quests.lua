@@ -138,6 +138,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(82678, {	-- Archives: The First Disk
 				["provider"] = { "n", 226511 },	-- High Speaker Brinthe
 				["coord"] = { 46.3, 49.3, DORNOGAL },
+				["maps"] = { VAULT_OF_MEMORY },
 				["g"] = {
 					i(225741),	-- Titan Disc Fragment (QI!)
 				},
@@ -146,6 +147,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				--["sourceQuests"] = { 82678 },	-- Archives: The First Disk (TODO: or just rng weekly?)
 				["provider"] = { "n", 226511 },	-- High Speaker Brinthe
 				["coord"] = { 46.3, 49.3, DORNOGAL },
+				["maps"] = { VAULT_OF_MEMORY },
 				["g"] = {
 					i(225741),	-- Titan Disc Fragment (QI!)
 				},

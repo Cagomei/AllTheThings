@@ -20,78 +20,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 		["isRaid"] = true,
 		["lvl"] = 85,
 		["groups"] = {
-			n(ACHIEVEMENTS, {
-				ach(6106, {	-- Siege of Wyrmrest Temple
-					crit(18445, {	-- Morchok
-						["_encounter"] = { 311, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
-					}),
-					crit(18446, {	-- Warlord Zon'ozz
-						["_encounter"] = { 324, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
-					}),
-					crit(18447, {	-- Yor'sahj the Unsleeping
-						["_encounter"] = { 325, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
-					}),
-					crit(18448, {	-- Hagara the Stormbinder
-						["_encounter"] = { 317, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
-					}),
-				}),
-				ach(6107, {	-- Fall of Deathwing
-					crit(18449, {	-- Ultraxion
-						["_encounter"] = { 331, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
-					}),
-					crit(18450, {	-- Warmaster Blackthorn
-						["_encounter"] = { 332, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
-					}),
-					crit(18451, {	-- Spine of Deathwing
-						["_encounter"] = { 318, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
-					}),
-					crit(18452, {	-- Madness of Deathwing
-						["_encounter"] = { 333, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
-					}),
-				}),
-				ach(6169, {	-- Glory of the Dragon Soul Raider
-					["sym"] = {{"meta_achievement",
-						6109,	-- Heroic: Morchok
-						6110,	-- Heroic: Warlord Zon'ozz
-						6111,	-- Heroic: Yor'sahj the Unsleeping
-						6112,	-- Heroic: Hagara the Stormbinder
-						6113,	-- Heroic: Ultraxion
-						6114,	-- Heroic: Warmaster Blackhorn
-						6174,	-- Don't Stand So Close to Me
-						6129,	-- Taste the Rainbow!
-						6128,	-- Ping Pong Champion
-						6084,	-- Minutes to Midnight
-						6105,	-- Deck Defender
-						6133,	-- Maybe He'll Get Dizzy...
-						6180,	-- Chromatic Champion
-					}},
-					["groups"] = {
-						i(77068),	-- Twilight Harbinger (MOUNT!)
-					},
-				}),
-				ach(11756, {["timeline"] = {ADDED_7_2_0}}),	-- Wardrobe of the Old Gods (Dragon Soul)
-				ach(6123),	-- Dragon Soul Guild Run
-			}),
-			n(COMMON_BOSS_DROPS, {
-				["crs"] = {
-					55265,	-- Morchok
-					55308,	-- Warlord Zon'ozz
-					55312,	-- Yor'sahj the Unsleeping
-					55689,	-- Hagara the Stormbinder
-					55294,	-- Ultraxion
-					56427,	-- Warmaster Blackhorn
-				},
-				["groups"] = {
-					currency(614),	-- Mote of Darkness
-				},
-			}),
-			n(QUALITY_LEGENDARY, {
-				["title"] = "Fangs of the Father",
-				["icon"] = 132090,
-				["classes"] = { ROGUE },
+			header(HEADERS.Achievement, 6181,	-- Fangs of the Father
+			bubbleDownSelf({ ["classes"] = { ROGUE } }, {
 				["isRaid"] = true,
 				["lvl"] = 85,
-				["groups"] = bubbleDown({ ["classes"] = { ROGUE } }, {
+				["groups"] = {
 					q(29802, {	-- A Hidden Message
 						["qg"] = 55476,	-- Lord Afrasastrasz
 						["sourceQuest"] = 29801,	-- Proving Your Worth
@@ -216,7 +149,72 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(77948),	-- The Dreamer
 						},
 					}),
+				},
+			})),
+			n(ACHIEVEMENTS, {
+				ach(6106, {	-- Siege of Wyrmrest Temple
+					crit(18445, {	-- Morchok
+						["_encounter"] = { 311, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+					}),
+					crit(18446, {	-- Warlord Zon'ozz
+						["_encounter"] = { 324, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+					}),
+					crit(18447, {	-- Yor'sahj the Unsleeping
+						["_encounter"] = { 325, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+					}),
+					crit(18448, {	-- Hagara the Stormbinder
+						["_encounter"] = { 317, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+					}),
 				}),
+				ach(6107, {	-- Fall of Deathwing
+					crit(18449, {	-- Ultraxion
+						["_encounter"] = { 331, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+					}),
+					crit(18450, {	-- Warmaster Blackthorn
+						["_encounter"] = { 332, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+					}),
+					crit(18451, {	-- Spine of Deathwing
+						["_encounter"] = { 318, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+					}),
+					crit(18452, {	-- Madness of Deathwing
+						["_encounter"] = { 333, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+					}),
+				}),
+				ach(6169, {	-- Glory of the Dragon Soul Raider
+					["sym"] = {{"meta_achievement",
+						6109,	-- Heroic: Morchok
+						6110,	-- Heroic: Warlord Zon'ozz
+						6111,	-- Heroic: Yor'sahj the Unsleeping
+						6112,	-- Heroic: Hagara the Stormbinder
+						6113,	-- Heroic: Ultraxion
+						6114,	-- Heroic: Warmaster Blackhorn
+						6174,	-- Don't Stand So Close to Me
+						6129,	-- Taste the Rainbow!
+						6128,	-- Ping Pong Champion
+						6084,	-- Minutes to Midnight
+						6105,	-- Deck Defender
+						6133,	-- Maybe He'll Get Dizzy...
+						6180,	-- Chromatic Champion
+					}},
+					["groups"] = {
+						i(77068),	-- Twilight Harbinger (MOUNT!)
+					},
+				}),
+				ach(11756, {["timeline"] = {ADDED_7_2_0}}),	-- Wardrobe of the Old Gods (Dragon Soul)
+				ach(6123),	-- Dragon Soul Guild Run
+			}),
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					55265,	-- Morchok
+					55308,	-- Warlord Zon'ozz
+					55312,	-- Yor'sahj the Unsleeping
+					55689,	-- Hagara the Stormbinder
+					55294,	-- Ultraxion
+					56427,	-- Warmaster Blackhorn
+				},
+				["groups"] = {
+					currency(614),	-- Mote of Darkness
+				},
 			}),
 			n(VENDORS, {
 				n(58153, {	-- Dasnurimi <Geologist & Conservator>

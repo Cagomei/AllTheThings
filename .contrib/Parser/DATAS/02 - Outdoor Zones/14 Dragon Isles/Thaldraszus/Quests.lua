@@ -285,6 +285,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 61.4, 50.2, THE_PRIMALIST_FUTURE },
 					["g"] = {
 						i(195185),	-- Annihilation Warder's Cloak
+						i(192454),	-- Elemental Essence (QI!)
 					},
 				}),
 				q(66030, {	-- Resistance Isn't Futile
@@ -400,7 +401,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
-					["provider"] = { "n", 190902 },	-- Alexstrasza the Life-Binder
+					["providers"] = {
+						{ "n", 187678 },	-- Alexstrasza the Life-Binder
+						{ "n", 190902 },	-- Alexstrasza the Life-Binder
+					},
 					["coords"] = {
 						{ 72.5, 56.2, THALDRASZUS },
 						{ 57.9, 35.6, VALDRAKKEN },	-- TODO: possibly only after DF?

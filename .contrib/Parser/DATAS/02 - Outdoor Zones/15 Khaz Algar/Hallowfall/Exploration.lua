@@ -10,16 +10,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			visit_exploration(15158,{coord={66.2,17.8,HALLOWFALL}}),	-- Coldshadow Cave
 			exploration(14922),	-- Dayspring Fields
 			exploration(14916),	-- Dunelle's Kindness
+			visit_exploration(15179,{coord={30.4,53.3,HALLOWFALL}}),	-- Fortune's Fall
 			visit_exploration(14851,{coord={64.4,31.1,HALLOWFALL}}),	-- Fungal Fields
 			exploration(15326),	-- Growling Hollow
 			visit_exploration(14854,{coord={61.3,30.8,HALLOWFALL}}),	-- Hillhelm Stead
 			visit_exploration(15166,{coord={60.7,22.1,HALLOWFALL}}),	-- Isaec's Folly
 			exploration(15037),	-- Light's Blooming
 			exploration(14928),	-- Light's Redoubt
+			visit_exploration(15034,{coord={53.0,59.5,HALLOWFALL}}),	-- Lightspark
 			exploration(14929),	-- Livia's Patience
 			exploration(15107),	-- Lorel's Crossing
 			exploration(14927),	-- Lothar's Landing
 			exploration(14917),	-- Mereldar
+			visit_exploration(15335,{coord={30.8,56.4,HALLOWFALL}}),	-- Morgaen's Tears
 			exploration(14918),	-- Priory of the Sacred Flame
 			exploration(15337),	-- Priory of the Sacred Flame
 			exploration(14924),	-- Rumshackle
@@ -42,6 +45,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			visit_exploration(15024,{coord={64.0,20.1,HALLOWFALL}}),	-- Torchlight Mine
 			exploration(14926),	-- Velhan's Claim
 			exploration(14925),	-- Veneration Grounds
+			visit_exploration(15384,{coord={59.8,67.1,HALLOWFALL}}),	-- Whispering Pool
 		}),
 	}),
 })));

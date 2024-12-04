@@ -444,7 +444,7 @@ q(85318),	-- Ensemble: Obsidian Gladiator's Rogue Armor
 q(85322),	-- Ensemble: Obsidian Gladiator's Shaman Armor
 q(85310),	-- Ensemble: Obsidian Gladiator's Warlock Armor
 q(85326),	-- Ensemble: Obsidian Gladiator's Warrior Armor
-q(85307),	-- Ensemble: Elite Crimson Gladiator's Death Knight Armor
+q(TODO),	-- Ensemble: Elite Crimson Gladiator's Death Knight Armor
 q(),	-- Ensemble: Elite Crimson Gladiator's Demon Hunter Armor
 q(),	-- Ensemble: Elite Crimson Gladiator's Druid Armor
 q(),	-- Ensemble: Elite Crimson Gladiator's Evoker Armor
@@ -502,6 +502,7 @@ q(79208),	-- Ensemble: Dreadlord's Venombane Regalia
 q(79207),	-- Ensemble: Dreadlord's Shadowsbane Regalia
 q(80171),	-- Ensemble: Gladiator's Ragged Armor
 q(82027),	-- Ensemble: Green Snugglefin Murloc Romper
+q(79210),	-- Ensemble: Sky Witch's Attire
 q(72092),	-- Ensemble: Solemn Watchman's Garb
 q(79211),	-- Ensemble: Twilight Witch's Attire
 q(75449),	-- Ensemble: Waveborne Diplomat's Regalia
@@ -632,6 +633,8 @@ q(79709),	-- Ensemble: Moonlit Burden of Unrelenting Justice
 q(83712),	-- Ensemble: Plunderlord's Radiant Finery
 q(85119),	-- Ensemble: Prowler's Azure Headgear
 q(85131),	-- Ensemble: Prowler's Crimson Headgear
+q(85128),	-- Ensemble: Prowler's Icy Headgear
+q(85134),	-- Ensemble: Prowler's Snowy Headgear
 q(85135),	-- Ensemble: Prowler's Sunny Headgear
 q(85132),	-- Ensemble: Prowler's Violet Headgear
 q(82031),	-- Ensemble: Purple Snugglefin Murloc Romper
@@ -649,6 +652,7 @@ q(65678),	-- Ensemble: Vagabond's Azure Threads
 q(76233),	-- Ensemble: Vagabond's Brick Threads
 q(76234),	-- Ensemble: Vagabond's Camo Threads
 q(72829),	-- Ensemble: Vagabond's Carrot Threads
+q(76236),	-- Ensemble: Vagabond's Cloudy Threads
 q(65723),	-- Ensemble: Vagabond's Crimson Threads
 q(76235),	-- Ensemble: Vagabond's Deep Threads
 q(76232),	-- Ensemble: Vagabond's Faded Threads
@@ -665,6 +669,7 @@ q(65677),	-- Ensemble: Wanderer's Azure Trappings
 q(76222),	-- Ensemble: Wanderer's Brick Trappings
 q(76223),	-- Ensemble: Wanderer's Camo Trappings
 q(72830),	-- Ensemble: Wanderer's Carrot Trappings
+q(76225),	-- Ensemble: Wanderer's Cloudy Trappings
 q(65721),	-- Ensemble: Wanderer's Crimson Trappings
 q(76224),	-- Ensemble: Wanderer's Deep Trappings
 q(76221),	-- Ensemble: Wanderer's Faded Trappings

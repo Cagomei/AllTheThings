@@ -499,6 +499,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					Boss(SILKEN_COURT),
 					Boss(ANSUREK, {
 						i(225634, {	-- Web-Wrapped Curio
+							["crs"] = 227003,	-- Kir'xal (Vendor)
 							["sym"] = {{"sub","instance_tier",1273,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 						}),
@@ -557,6 +558,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				Boss(SILKEN_COURT),
 				Boss(ANSUREK, {
 					i(225634, {	-- Web-Wrapped Curio
+						["crs"] = 227003,	-- Kir'xal (Vendor)
 						["sym"] = {{"sub","instance_tier",1273,DIFFICULTY.RAID.NORMAL}},
 						["up"] = IGNORED_VALUE,
 					}),
@@ -600,6 +602,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				Boss(SILKEN_COURT),
 				Boss(ANSUREK, {
 					i(225634, {	-- Web-Wrapped Curio
+						["crs"] = 227003,	-- Kir'xal (Vendor)
 						["sym"] = {{"sub","instance_tier",1273,DIFFICULTY.RAID.HEROIC}},
 						["up"] = IGNORED_VALUE,
 					}),
@@ -654,6 +657,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					ach(40258),	-- Mythic: Queen Ansurek Guild Run
 					i(224151),	-- Ascendant Skyrazor (MOUNT!)
 					i(225634, {	-- Web-Wrapped Curio
+						["crs"] = 227003,	-- Kir'xal (Vendor)
 						["sym"] = {{"sub","instance_tier",1273,DIFFICULTY.RAID.MYTHIC}},
 						["up"] = IGNORED_VALUE,
 					}),

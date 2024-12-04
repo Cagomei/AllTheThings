@@ -16,12 +16,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			exploration(13835),	-- Cobalt Assembly
 			exploration(13852),	-- Creektooth Den
 			exploration(14159),	-- Creektooth Den
+			visit_exploration(13850,{coord={36.0,45.3,THE_AZURE_SPAN}}),	-- Darktooth Pond
 			exploration(14455),	-- Forge of Arcanum
+			visit_exploration(13838,{coord={11.0,41.3,THE_AZURE_SPAN}}),	-- Gorloc Shore
 			exploration(13892),	-- Grimtusk's Hideaway
 			exploration(13828),	-- Imbu
 			exploration(13837),	-- Iskaara
+			visit_exploration(13826,{coord={44.3,53.8,THE_AZURE_SPAN}}),	-- Kauriq Gleamlet
 			exploration(14039),	-- Khuri's Fishing Spot
 			exploration(14103),	-- Lost Ruins
+			visit_exploration(13858,{coord={64.4,14.5,THE_AZURE_SPAN}}),	-- Misty Canyon
+			visit_exploration(13889,{coord={65.1,58.0,THE_AZURE_SPAN}}),	-- Ruins of Karnthar
 			exploration(13833),	-- Shiverweb Vale
 			exploration(13836),	-- Slyvern Plunge
 			exploration(13932),	-- Snowhide Camp

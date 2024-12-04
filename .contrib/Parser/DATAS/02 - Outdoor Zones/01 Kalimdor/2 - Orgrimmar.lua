@@ -75,6 +75,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(TBC_PHASE_ONE, ach(1836, {	-- Old Crafty
 					["provider"] = { "i", 34486 },	-- Old Crafty
 					["requireSkill"] = FISHING,
+					["_noautomation"] = true, -- This achievement has 2 hidden criteria which we'd prefer to remain hidden.
 				})),
 			}),
 			battlepets({

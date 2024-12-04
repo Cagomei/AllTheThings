@@ -221,7 +221,7 @@ do
 			text = "Achievement_CriteriaFor",
 			priority = 1.5, HideCheckBox = true, ForceActive = true,
 			Process = function(t, reference, tooltipInfo)
-				if reference.criteriaID and reference.achievementID and not (reference.parent and reference.parent.achievementID) then
+				if reference.criteriaID and reference.achievementID then
 					local achievement = SearchForObject("achievementID", reference.achievementID, "key")
 					tinsert(tooltipInfo, {
 						left = L.CRITERIA_FOR,

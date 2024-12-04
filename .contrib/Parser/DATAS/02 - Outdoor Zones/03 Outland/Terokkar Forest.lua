@@ -263,13 +263,14 @@ root(ROOTS.Zones, {
 				explorationHeader({
 					exploration(3901),	-- Allerian Post
 					exploration(3684),	-- Allerian Stronghold
+					visit_exploration(3790,{coord={35.7,65.5,TEROKKAR_FOREST}}),	-- Auchenai Crypts
 					-- #if AFTER CATA
 					exploration(3894),	-- Auchenai Grounds (Wrath Classic: Can't be collected)
 					-- #endif
 					exploration(3688),	-- Auchindoun
 					visit_exploration(3917,{coord={35.1,70.1,TEROKKAR_FOREST}}),	-- Auchindoun
 					exploration(3690),	-- Blackwind Lake
-					exploration(3973),	-- Blackwind Landing
+					visit_exploration(3973,{coord={63.4,66.1,TEROKKAR_FOREST}}),    -- Blackwind Landing
 					exploration(3680),	-- Blackwind Valley
 					exploration(3719),	-- Bleeding Hollow Ruins
 					visit_exploration(3685,{coord={64.2,55.2,TEROKKAR_FOREST}}),	-- Bonechewer Ruins
@@ -289,13 +290,16 @@ root(ROOTS.Zones, {
 					exploration(3858),	-- Razorthorn Shelf
 					visit_exploration(3887,{coord={35.8,49.5,TEROKKAR_FOREST}}),	-- Refugee Caravan
 					visit_exploration(3893,{coord={39.8,62.9,TEROKKAR_FOREST}}),	-- Ring of Observance
+					visit_exploration(3791,{coord={43.4,65.6,TEROKKAR_FOREST}}),	-- Sethekk Halls
 					visit_exploration(3958,{coord={30.6,75.4,TEROKKAR_FOREST}}),	-- Sha'tari Base Camp
 					exploration(3957),	-- Sha'tari Outpost
+					visit_exploration(3789,{coord={39.6,71.1,TEROKKAR_FOREST}}),	-- Shadow Labyrinth
 					visit_exploration(3888,{coord={31.7,53.2,TEROKKAR_FOREST}}),	-- Shadow Tomb
 					exploration(3703),	-- Shattrath City
 					exploration(3859),	-- Silmyr Lake
 					exploration(3693),	-- Skethyl Mountains
 					exploration(3679),	-- Skettis
+					visit_exploration(3961,{coord={46.7,89.2,TEROKKAR_FOREST}}),	-- Sorrow Wing Point
 					exploration(3902),	-- Stonebreaker Camp
 					exploration(3683),	-- Stonebreaker Hold
 					visit_exploration(3975,{coord={66.1,76.4,TEROKKAR_FOREST}}),	-- Terokk's Rest

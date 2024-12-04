@@ -763,7 +763,8 @@ end
 
 local function GetRelativeFieldInSet(group, field, set)
 	if group then
-		return set[group[field]] or GetRelativeFieldInSet(group.sourceParent or group.parent, field, set);
+		local val = group[field]
+		return set[val] and val or GetRelativeFieldInSet(group.sourceParent or group.parent, field, set);
 	end
 end
 
@@ -1920,8 +1921,8 @@ local function BuildContainsInfo(subgroups, entries, indent, layer)
 	if not subgroups or #subgroups == 0 then return end
 
 	for _,group in ipairs(subgroups) do
-		-- If there's progress to display, then let's summarize a bit better.
-		if group.visible then
+		-- If there's progress to display for a non-sourceIgnored group, then let's summarize a bit better.
+		if group.visible and not group.sourceIgnored then
 			-- Count it, but don't actually add it to entries if it meets the limit
 			if #entries >= ContainsLimit then
 				ContainsExceeded = ContainsExceeded + 1;
@@ -2916,6 +2917,10 @@ local function DetermineNPCDrops(group, FillData)
 							npcDiff = GetRelativeValue(npcGroup, "difficultyID");
 							-- copy the header under the NPC groups
 							if not npcDiff or npcDiff == difficultyID then
+								-- wrap the npcGroup in the matching header if it is not a header
+								if not npcGroup.headerID then
+									npcGroup = app.CreateCustomHeader(headerID, {g={CreateObject(npcGroup)}})
+								end
 								-- app.PrintDebug("IsDrop.Diff",difficultyID,group.hash,"<==",npcGroup.hash)
 								if groups then tinsert(groups, CreateObject(npcGroup))
 								else groups = { CreateObject(npcGroup) }; end
@@ -2934,6 +2939,10 @@ local function DetermineNPCDrops(group, FillData)
 						-- where headerID is allowed
 						if headerID then
 							-- copy the header under the NPC groups
+							-- wrap the npcGroup in the matching header if it is not a header
+							if not npcGroup.headerID then
+								npcGroup = app.CreateCustomHeader(headerID, {g={CreateObject(npcGroup)}})
+							end
 							-- app.PrintDebug("IsDrop",group.hash,"<==",npcGroup.hash)
 							if groups then tinsert(groups, CreateObject(npcGroup))
 							else groups = { CreateObject(npcGroup) }; end
@@ -3228,6 +3237,7 @@ app.ThingKeys = {
 	followerID = true,
 	factionID = true,
 	explorationID = true,
+	titleID = true,
 	achievementID = true,	-- special handling
 	criteriaID = true,	-- special handling
 };
@@ -8084,191 +8094,43 @@ customWindowUpdates.Random = function(self)
 			-- results with specific settings
 			self:AddEventHandler("OnRecalculate_NewSettings", ClearCache)
 
-			local function SearchRecursively(group, field, temp, func)
+			local function SearchRecursively(group, results, func, field)
 				if group.visible and not (group.saved or group.collected) then
 					if group.g then
 						for i, subgroup in ipairs(group.g) do
-							SearchRecursively(subgroup, field, temp, func);
+							SearchRecursively(subgroup, field, results, func);
 						end
 					end
 					if group[field] and (not func or func(group)) then
-						tinsert(temp, group);
+						results[#results + 1] = group
 					end
 				end
 			end
-			local function SearchRecursivelyForValue(group, field, value, temp, func)
+			local function SearchRecursivelyForValue(group, results, func, field, value)
 				if group.visible and not (group.saved or group.collected) then
 					if group.g then
 						for i, subgroup in ipairs(group.g) do
-							SearchRecursivelyForValue(subgroup, field, value, temp, func);
+							SearchRecursivelyForValue(subgroup, field, value, results, func);
 						end
 					end
 					if group[field] and group[field] == value and (not func or func(group)) then
-						tinsert(temp, group);
+						results[#results + 1] = group
 					end
 				end
 			end
-			local function SearchRecursivelyForEverything(group, temp)
+			local function SearchRecursivelyForEverything(group, results)
 				if group.visible and not (group.saved or group.collected) then
 					if group.g then
 						for i, subgroup in ipairs(group.g) do
-							SearchRecursivelyForEverything(subgroup, temp);
+							SearchRecursivelyForEverything(subgroup, results);
 						end
 					end
 					if group.collectible then
-						tinsert(temp, group);
+						results[#results + 1] = group
 					end
 				end
 			end
-			function self.SelectAllTheThings(rootData)
-				if searchCache.randomatt then
-					return searchCache.randomatt;
-				else
-					local searchResults = {};
-					for i, subgroup in ipairs(rootData.g) do
-						SearchRecursivelyForEverything(subgroup, searchResults);
-					end
-					if #searchResults > 0 then
-						searchCache.randomatt = searchResults;
-						return searchResults;
-					end
-				end
-			end
-			function self.SelectAchievement(rootData)
-				if searchCache.randomachievement then
-					return searchCache.randomachievement;
-				else
-					local searchResults = {};
-					local func = function(o)
-						return o.collectible and not o.collected and not o.mapID and not o.criteriaID;
-					end
-					SearchRecursively(rootData, "achievementID", searchResults, func);
-					if #searchResults > 0 then
-						searchCache.randomachievement = searchResults;
-						return searchResults;
-					end
-				end
-			end
-			function self.SelectItem(rootData)
-				if searchCache.randomitem then
-					return searchCache.randomitem;
-				else
-					local searchResults = {};
-					local func = function(o)
-						return o.collectible and not o.collected;
-					end
-					SearchRecursively(rootData, "itemID", searchResults, func);
-					if #searchResults > 0 then
-						searchCache.randomitem = searchResults;
-						return searchResults;
-					end
-				end
-			end
-			function self.SelectInstance(rootData)
-				if searchCache.randominstance then
-					return searchCache.randominstance;
-				else
-					local searchResults = {};
-					local func = function(o)
-						return ((o.total or 0) - (o.progress or 0)) > 0;
-					end
-					SearchRecursively(rootData, "instanceID", searchResults, func);
-					if #searchResults > 0 then
-						searchCache.randominstance = searchResults;
-						return searchResults;
-					end
-				end
-			end
-			function self.SelectDungeon(rootData)
-				if searchCache.randomdungeon then
-					return searchCache.randomdungeon;
-				else
-					local searchResults = {};
-					local func = function(o)
-						return not o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0);
-					end
-					SearchRecursively(rootData, "instanceID", searchResults, func);
-					if #searchResults > 0 then
-						searchCache.randomdungeon = searchResults;
-						return searchResults;
-					end
-				end
-			end
-			function self.SelectQuest(rootData)
-				if searchCache.quests then
-					return searchCache.quests;
-				else
-					local searchResults = {};
-					local func = function(o)
-						return o.collectible and not o.collected;
-					end
-					SearchRecursively(rootData, "questID", searchResults, func);
-					if #searchResults > 0 then
-						searchCache.quests = searchResults;
-						return searchResults;
-					end
-				end
-			end
-			function self.SelectRaid(rootData)
-				if searchCache.randomraid then
-					return searchCache.randomraid;
-				else
-					local searchResults = {};
-					local func = function(o)
-						return o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0);
-					end
-					SearchRecursively(rootData, "instanceID", searchResults, func);
-					if #searchResults > 0 then
-						searchCache.randomraid = searchResults;
-						return searchResults;
-					end
-				end
-			end
-			function self.SelectMount(rootData)
-				if searchCache.randommount then
-					return searchCache.randommount;
-				else
-					local searchResults = {};
-					local func = function(o)
-						return o.collectible and not o.collected and (not o.achievementID or o.itemID);
-					end
-					SearchRecursivelyForValue(rootData, "filterID", 100, searchResults, func);
-					if #searchResults > 0 then
-						searchCache.randommount = searchResults;
-						return searchResults;
-					end
-				end
-			end
-			function self.SelectPet(rootData)
-				if searchCache.randompet then
-					return searchCache.randompet;
-				else
-					local searchResults = {};
-					local func = function(o)
-						return o.collectible and not o.collected;
-					end
-					SearchRecursively(rootData, "speciesID", searchResults, func);
-					if #searchResults > 0 then
-						searchCache.randompet = searchResults;
-						return searchResults;
-					end
-				end
-			end
-			function self.SelectToy(rootData)
-				if searchCache.randomtoy then
-					return searchCache.randomtoy;
-				else
-					local searchResults = {};
-					local func = function(o)
-						return o.collectible and not o.collected;
-					end
-					SearchRecursively(rootData, "toyID", searchResults, func);
-					if #searchResults > 0 then
-						searchCache.randomtoy = searchResults;
-						return searchResults;
-					end
-				end
-			end
+
 			local excludedZones = {
 				[12] = 1,	-- Kalimdor
 				[13] = 1, -- Eastern Kingdoms
@@ -8285,22 +8147,86 @@ customWindowUpdates.Random = function(self)
 				[1978] = 1,	-- Dragon Isles
 				[2274] = 1,	-- Khaz Algar
 			};
-			function self.SelectZone(rootData)
-				if searchCache.randomzone then
-					return searchCache.randomzone;
-				else
-					local searchResults = {};
-					local func = function(o)
-						return (((o.total or 0) - (o.progress or 0)) > 0) and not o.instanceID and not excludedZones[o.mapID];
-					end
-					SearchRecursively(rootData, "mapID", searchResults, func);
-					if #searchResults > 0 then
-						searchCache.randomzone = searchResults;
-						return searchResults;
-					end
+
+			-- Represents how to search for a given named-Thing
+			local SelectionMethods = setmetatable({
+				AllTheThings = SearchRecursivelyForEverything,
+			}, { __index = function() return SearchRecursively end})
+			-- Named-TypeIDs for the field to Select for a given named-Thing
+			local TypeIDLookups = {
+				Achievement = "achievementID",
+				Dungeon = "instanceID",
+				Factions = "factionID",
+				-- Follower = "followerID",
+				Item = "itemID",
+				Instance = "instanceID",
+				Mount = "mountID",
+				Pet = "speciesID",
+				Quest = "questID",
+				Raid = "instanceID",
+				Titles = "titleID",
+				Toy = "toyID",
+				Zone = "mapID",
+			}
+			-- Named-Values for the value of a field in the Select
+			local TypeIDValueLookups = {
+			}
+			local DefaultSelectionFilter = function(o) return o.collectible and not o.collected end
+			-- Named-Functions (if not ignored) for whether to select data pertaining to a specific named-Thing
+			local SelectionFilters = setmetatable({
+				Achievement = function(o)
+					return o.collectible and not o.collected and not o.mapID and not o.criteriaID;
+				end,
+				Dungeon = function(o)
+					return not o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0);
+				end,
+				-- Factions - default
+				-- Follower - default
+				-- Item - default
+				Instance = function(o)
+					return ((o.total or 0) - (o.progress or 0)) > 0;
+				end,
+				-- Mount - default
+				-- Pet - default
+				-- Quest - default
+				Raid = function(o)
+					return o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0);
+				end,
+				-- Titles - default
+				-- Toy - default
+				Zone = function(o)
+					return (((o.total or 0) - (o.progress or 0)) > 0) and not o.instanceID and not excludedZones[o.mapID];
+				end,
+			}, { __index = function() return DefaultSelectionFilter end})
+
+			local function GetSearchResults(rootData, name)
+				if searchCache[name] then return searchCache[name] end
+				local searchResults = {}
+				SelectionMethods[name](rootData, searchResults, SelectionFilters[name], TypeIDLookups[name], TypeIDValueLookups[name])
+				if #searchResults > 0 then
+					searchCache[name] = searchResults
+					return searchResults
 				end
 			end
-			local mainHeader, filterHeader;
+
+			local mainHeader
+			local function AddRandomCategoryButton(text, icon, desc, name)
+				return
+				{
+					["text"] = text,
+					["icon"] = icon,
+					["description"] = desc,
+					["visible"] = true,
+					["OnUpdate"] = app.AlwaysShowUpdate,
+					["OnClick"] = function(row, button)
+						self.RandomSearchFilter = name
+						self:SetData(mainHeader)
+						self:Reroll()
+						return true
+					end,
+				}
+			end
+
 			local rerollOption = {
 				['text'] = L.REROLL,
 				['icon'] = app.asset("Button_Reroll"),
@@ -8312,7 +8238,7 @@ customWindowUpdates.Random = function(self)
 				end,
 				['OnUpdate'] = app.AlwaysShowUpdate,
 			};
-			filterHeader = {
+			local filterHeader = {
 				['text'] = L.APPLY_SEARCH_FILTER,
 				['icon'] = app.asset("Button_Search"),
 				["description"] = L.APPLY_SEARCH_FILTER_DESC,
@@ -8336,136 +8262,20 @@ customWindowUpdates.Random = function(self)
 							return app:GetWindow("Prime").data[key];
 						end
 					end}),
-					{
-						['text'] = L.ACHIEVEMENT,
-						['icon'] = app.asset("Category_Achievements"),
-						['description'] = L.ACHIEVEMENT_DESC,
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							self.RandomSearchFilter = "Achievement";
-							self:SetData(mainHeader);
-							self:Reroll();
-							return true;
-						end,
-						['OnUpdate'] = app.AlwaysShowUpdate,
-					},
-					{
-						['text'] = L.ITEM,
-						['icon'] = app.asset("Interface_Zone_drop"),
-						['description'] = L.ITEM_DESC,
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							self.RandomSearchFilter = "Item";
-							self:SetData(mainHeader);
-							self:Reroll();
-							return true;
-						end,
-						['OnUpdate'] = app.AlwaysShowUpdate,
-					},
-					{
-						['text'] = L.INSTANCE,
-						['icon'] = app.asset("Category_D&R"),
-						['description'] = L.INSTANCE_DESC,
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							self.RandomSearchFilter = "Instance";
-							self:SetData(mainHeader);
-							self:Reroll();
-							return true;
-						end,
-						['OnUpdate'] = app.AlwaysShowUpdate,
-					},
-					{
-						['text'] = L.DUNGEON,
-						['icon'] = app.asset("Difficulty_Normal"),
-						['description'] = L.DUNGEON_DESC,
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							self.RandomSearchFilter = "Dungeon";
-							self:SetData(mainHeader);
-							self:Reroll();
-							return true;
-						end,
-						['OnUpdate'] = app.AlwaysShowUpdate,
-					},
-					{
-						['text'] = L.RAID,
-						['icon'] = app.asset("Difficulty_Heroic"),
-						['description'] = L.RAID_DESC,
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							self.RandomSearchFilter = "Raid";
-							self:SetData(mainHeader);
-							self:Reroll();
-							return true;
-						end,
-						['OnUpdate'] = app.AlwaysShowUpdate,
-					},
-					{
-						['text'] = L.MOUNT,
-						['icon'] = app.asset("Category_Mounts"),
-						['description'] = L.MOUNT_DESC,
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							self.RandomSearchFilter = "Mount";
-							self:SetData(mainHeader);
-							self:Reroll();
-							return true;
-						end,
-						['OnUpdate'] = app.AlwaysShowUpdate,
-					},
-					{
-						['text'] = L.PET,
-						['icon'] = app.asset("Category_PetBattles"),
-						['description'] = L.PET_DESC,
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							self.RandomSearchFilter = "Pet";
-							self:SetData(mainHeader);
-							self:Reroll();
-							return true;
-						end,
-						['OnUpdate'] = app.AlwaysShowUpdate,
-					},
-					{
-						['text'] = L.QUEST,
-						['icon'] = app.asset("Interface_Quest"),
-						['description'] = L.QUEST_DESC,
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							self.RandomSearchFilter = "Quest";
-							self:SetData(mainHeader);
-							self:Reroll();
-							return true;
-						end,
-						['OnUpdate'] = app.AlwaysShowUpdate,
-					},
-					{
-						['text'] = L.TOY,
-						['icon'] = app.asset("Category_ToyBox"),
-						['description'] = L.TOY_DESC,
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							self.RandomSearchFilter = "Toy";
-							self:SetData(mainHeader);
-							self:Reroll();
-							return true;
-						end,
-						['OnUpdate'] = app.AlwaysShowUpdate,
-					},
-					{
-						['text'] = L.ZONE,
-						['icon'] = app.asset("Category_Zones"),
-						['description'] = L.ZONE_DESC,
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							self.RandomSearchFilter = "Zone";
-							self:SetData(mainHeader);
-							self:Reroll();
-							return true;
-						end,
-						['OnUpdate'] = app.AlwaysShowUpdate,
-					},
+					AddRandomCategoryButton(L.ACHIEVEMENT, app.asset("Category_Achievements"), L.ACHIEVEMENT_DESC, "Achievement"),
+					AddRandomCategoryButton(L.DUNGEON, app.asset("Difficulty_Normal"), L.DUNGEON_DESC, "Dungeon"),
+					AddRandomCategoryButton(L.FACTIONS, app.asset("Category_Factions"), L.FACTION_DESC, "Factions"),
+					-- missing locale values
+					-- AddRandomCategoryButton(app.NPCNameFromID[app.HeaderConstants.FOLLOWERS], L.HEADER_ICONS[app.HeaderConstants.FOLLOWERS], L.FOLLOWER_DESC, "Follower"),
+					AddRandomCategoryButton(L.INSTANCE, app.asset("Category_D&R"), L.INSTANCE_DESC, "Instance"),
+					AddRandomCategoryButton(L.ITEM, app.asset("Interface_Zone_drop"), L.ITEM_DESC, "Item"),
+					AddRandomCategoryButton(L.MOUNT, app.asset("Category_Mounts"), L.MOUNT_DESC, "Mount"),
+					AddRandomCategoryButton(L.PET, app.asset("Category_PetBattles"), L.PET_DESC, "Pet"),
+					AddRandomCategoryButton(L.QUEST, app.asset("Interface_Quest"), L.QUEST_DESC, "Quest"),
+					AddRandomCategoryButton(L.RAID, app.asset("Difficulty_Heroic"), L.RAID_DESC, "Raid"),
+					AddRandomCategoryButton(L.TITLES, app.asset("Category_Titles"), L.TITLES_RAND_DESC, "Titles"),
+					AddRandomCategoryButton(L.TOY, app.asset("Category_ToyBox"), L.TOY_DESC, "Toy"),
+					AddRandomCategoryButton(L.ZONE, app.asset("Category_Zones"), L.ZONE_DESC, "Zone"),
 				},
 			};
 			mainHeader = {
@@ -8502,11 +8312,10 @@ customWindowUpdates.Random = function(self)
 				local primePending = primeWindow.HasPendingUpdate
 
 				-- Call to our method and build a list to draw from if Prime has been opened
-				local method = not primePending and self.RandomSearchFilter or "Instance";
-				if method then
+				if not primePending then
+					local method = self.RandomSearchFilter or appName;
 					rerollOption.text = L.REROLL_2 .. (method ~= appName and L[method:upper()] or method);
-					method = "Select" .. method;
-					local temp = self[method](primeWindow.data) or app.EmptyTable;
+					local temp = GetSearchResults(primeWindow.data, method) or app.EmptyTable;
 					local totalWeight = 0;
 					for i,o in ipairs(temp) do
 						totalWeight = totalWeight + ((o.total or 1) - (o.progress or 0));
@@ -8533,11 +8342,8 @@ customWindowUpdates.Random = function(self)
 						app.print(L.NOTHING_TO_SELECT_FROM);
 					end
 				else
-					if primePending then
-						app.print(L.NOTHING_TO_SELECT_FROM);
-					else
-						app.print(L.NO_SEARCH_METHOD);
-					end
+					rerollOption.text = "Please open /att"
+					app.print(L.NOTHING_TO_SELECT_FROM);
 				end
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);
@@ -8551,7 +8357,7 @@ customWindowUpdates.Random = function(self)
 			for i,o in ipairs(self.data.options) do
 				tinsert(self.data.g, o);
 			end
-			local method = self.RandomSearchFilter or "Instance";
+			local method = self.RandomSearchFilter or appName;
 			rerollOption.text = L.REROLL_2 .. (method ~= appName and L[method:upper()] or method);
 		end
 

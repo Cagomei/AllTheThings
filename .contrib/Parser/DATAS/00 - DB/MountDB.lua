@@ -1730,7 +1730,6 @@ i(212599, 432455);	-- Noble Flying Carpet
 i(212229, 431360);	-- Twilight Sky Prowler
 --- NYI ---
 i(212631, 432562);	-- Brilliant Sunburst Peafowl
-i(212228, 431359);	-- Soaring Sky Fox
 i(212632, 432564);	-- Starry Twilight Peafowl
 i(211486, 0);		-- Winding Slitherdrake
 
@@ -1923,6 +1922,7 @@ i(211087, 428067);	-- Hateforged Blazecycle
 i(0, 428013);		-- Incognitro, the Indecipherable Felcycle
 -- #endif
 i(223471, 449142);	-- Kaldorei War Wolf
+i(212228, 431359);	-- Soaring Sky Fox
 i(229418, 465235);	-- Trader's Gilded Brutosaur
 
 ------------------

@@ -89,6 +89,7 @@ root(ROOTS.Zones, {
 				explorationHeader({
 					exploration(3712),	-- Area 52
 					visit_exploration(3723,{coord={43.3,71.2,NETHERSTORM}}),	-- Arklon Ruins
+					visit_exploration(3921,{coord={38.9,69.0,NETHERSTORM}}),	-- Arklonis Ridge
 					exploration(3737),	-- Celestial Ridge
 					visit_exploration(3879,{coord={62.1,79.9,NETHERSTORM}}),	-- Chapel Yard
 					exploration(3724),	-- Cosmowrench
@@ -100,6 +101,7 @@ root(ROOTS.Zones, {
 					exploration(3740),	-- Forge Base: Gehenna
 					exploration(3739),	-- Forge Base: Oblivion
 					exploration(3868),	-- Gyro-Plank Bridge
+					visit_exploration(3882,{coord={50.1,65.6,NETHERSTORM}}),	-- Invasion Point: Destroyer
 					exploration(3732),	-- Kirin'Var Village
 					exploration(3722),	-- Manaforge Ara
 					exploration(3726),	-- Manaforge B'naar
@@ -109,6 +111,7 @@ root(ROOTS.Zones, {
 					-- #if AFTER CATA
 					exploration(3850),	-- Netherstone (Wrath Classic: Can't be collected)
 					-- #endif
+					visit_exploration(3854,{coord={59.8,31.9,NETHERSTORM}}),	-- Protectorate Watch Post
 					exploration(3725),	-- Ruins of Enkaat
 					exploration(3741),	-- Ruins of Farahlon
 					exploration(3742),	-- Socrethar's Seat
@@ -122,6 +125,7 @@ root(ROOTS.Zones, {
 					exploration(3731),	-- The Tempest Rift
 					visit_exploration(3728,{coord={56.0,64.1,NETHERSTORM}}),	-- The Vortex Fields
 					visit_exploration(3934,{coord={60.7,88.2,NETHERSTORM}}),	-- Town Square
+					visit_exploration(3881,{coord={26.4,44.0,NETHERSTORM}}),	-- Trelleum Mine
 					visit_exploration(3735,{coord={57.4,47.7,NETHERSTORM}}),	-- Voidwind Plateau
 					exploration(3935),	-- Wizard Row
 				}),

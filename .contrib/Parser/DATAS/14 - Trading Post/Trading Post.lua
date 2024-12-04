@@ -2018,7 +2018,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.5.57388", "removed 11.0.5.99999" } }, {	-- TODO: Timeline out correctly
+		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.5.57388", "removed 11.0.5.57689" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(229059),	-- Arsenal: Crests of the Kingdom
 			}),
@@ -2175,12 +2175,23 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.5.57388", "removed 11.0.7.99999" } }, {	-- TODO: Timeline in correctly
+		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.5.57689", "removed 11.0.7.99999" } }, {	-- TODO: Timeline out correctly
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(223486),	-- Ensemble: Purple Snugglefin Murloc Romper
 			}),
+			filter(BATTLE_PETS, {
+				i(229993, {	-- Bluedoo (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				}),
+				i(210870, {	-- Mitzy (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+			}),
 			filter(MOUNTS, {
-				i(212229, {	-- Reins of the Twilight Sky Prowler
+				i(137576, {	-- Dim Coldflame Core (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 700}},
+				}),
+				i(212229, {	-- Reins of the Twilight Sky Prowler (MOUNT!)
 					["cost"] = {{"c", TRADERS_TENDER, 750}},
 				}),
 			}),
@@ -2188,16 +2199,106 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(230853, {	-- Aegis of Yuletide
 					["cost"] = {{"c", TRADERS_TENDER, 300}},
 				}),
+				i(211069, {	-- Azure Treads of the Kalu'ak
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(210843, {	-- Candied Blade
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+				i(229961, {	-- Candied Knife
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				}),
 				i(229960, {	-- Cheerbringer XL
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
+				i(229812, {	-- Chilled Axe
+					["cost"] = {{"c", TRADERS_TENDER, 120}},
+				}),
+				i(229999, {	-- Classic Cloudy Tabard
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(95475, {	-- Crown of Eternal Winter
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				}),
+				i(229807, {	-- Crown of the Icy Blue Rose
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+				i(229813, {	-- Crystalline Longbow of the Heavens
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				iensemble(230174, {	-- Ensemble: Prowler's Icy Headgear
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(230182, {	-- Ensemble: Prowler's Snowy Headgear
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(212222, {	-- Ensemble: Twilight Witch's Attire
+					["cost"] = {{"c", TRADERS_TENDER, 750}},
+				}),
+				iensemble(206328, {	-- Ensemble: Vagabond's Cloudy Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(190095, {	-- Ensemble: Vestment of the Honored Valarjar
+					["cost"] = {{"c", TRADERS_TENDER, 850}},
+				}),
+				iensemble(206339, {	-- Ensemble: Wanderer's Cloudy Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(229814, {	-- Fan of Cooling
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190842, {	-- Fists of Polar Fury
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(229811, {	-- Frost Etched Dagger
+					["cost"] = {{"c", TRADERS_TENDER, 90}},
 				}),
 				i(229720, {	-- Frostwolf Earmuffs
 					["cost"] = {{"c", TRADERS_TENDER, 170}},
 				}),
+				i(229808, {	-- Gossamer Cyan Gown
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(229963, {	-- Great Candied Blade
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+				}),
 				i(229714, {	-- Lion's Crest Earmuffs
 					["cost"] = {{"c", TRADERS_TENDER, 170}},
 				}),
+				i(229817, {	-- Lovely Airy Longbow
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(212376, {	-- Lovely Gothic Longbow
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(230043, {	-- Prowler's Icy Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(230051, {	-- Prowler's Snowy Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(190143, {	-- Shard of Frozen Secrets
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(229815, {	-- Sky Witch's Airy Stave
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+				i(229816, {	-- Sky Witch's Airy Wand
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(229962, {	-- Tree Topper
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				}),
+				i(212378, {	-- Twilight Witch's Gothic Scepter
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(212380, {	-- Twilight Witch's Gothic Stave
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
 				i(230940, {	-- Wings of the Sapphire Monarch
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
+				i(231017, {	-- Wings of the Onyx Monarch
 					["cost"] = {{"c", TRADERS_TENDER, 225}},
 				}),
 			}),
@@ -2408,11 +2509,6 @@ root(ROOTS.NeverImplemented, {
 				n(SETS, {
 					i(200917),	-- Ensemble: Tidecaller's Chainmail
 
-					------ Vagabond's Cloudy Threads ------
-					i(206328),	-- Ensemble: Vagabond's Cloudy Threads
-					i(206284),	-- Vagabond's Cloudy Cape
-					i(206295),	-- Vagabond's Cloudy Hood
-
 					------ Vagabond's Deep Threads ------
 					i(206283),	-- Vagabond's Deep Cape
 					i(206294),	-- Vagabond's Deep Hood
@@ -2426,11 +2522,6 @@ root(ROOTS.NeverImplemented, {
 					i(206323),	-- Ensemble: Vagabond's Plum Threads
 					i(206279),	-- Vagabond's Plum Cape
 					i(206290),	-- Vagabond's Plum Hood
-
-					------ Wanderer's Cloudy Trappings ------
-					i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
-					i(206317),	-- Wanderer's Cloudy Cloak
-					i(206306),	-- Wanderer's Cloudy Scarf
 
 					------ Wanderer's Deep Trappings ------
 					i(206316),	-- Wanderer's Deep Cloak
@@ -2454,7 +2545,6 @@ root(ROOTS.NeverImplemented, {
 			-- 10.2.0
 			expansion(EXPANSION.DF, patch(2,0), bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				n(ARMOR, {
-					i(211069),	-- Azure Treads of the Kalu'ak
 					i(210856),	-- Trader's Faded Sarong
 					i(210851),	-- Trader's Grassy Sarong
 					i(210859),	-- Trader's Plum Sarong
@@ -2492,16 +2582,6 @@ root(ROOTS.NeverImplemented, {
 					i(200924),	-- Ensemble: Void-Bound Battlegear
 					i(201000),	-- Ensemble: Void-Bound Chains
 					i(201001),	-- Ensemble: Void-Bound Warplate
-
-					------ Sky Witch's Attire ------
-					i(212221),	-- Ensemble: Sky Witch's Attire
-					i(212204),	-- Sky Witch's Blouse
-					i(212205),	-- Sky Witch's Boots
-					i(212206),	-- Sky Witch's Gloves
-					i(212207),	-- Sky Witch's Hat
-					i(212210),	-- Sky Witch's Sash
-					i(212209),	-- Sky Witch's Shoulders
-					i(212208),	-- Sky Witch's Skirt
 				}),
 				n(WEAPONS, {
 					i(190848),	-- [DNT] Do not use

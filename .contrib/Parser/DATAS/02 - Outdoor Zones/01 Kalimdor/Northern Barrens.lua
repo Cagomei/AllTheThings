@@ -3830,6 +3830,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.0, 63.2, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					-- #if AFTER 9.0.1
+					["description"] = "This quest is a stand-alone quest involving lvl 30 raptors and have nothing to do with the lvl 35 Kor'kron mobs around the zone. The lvl 35 mobs got added with patch 5.3.0 as part of the late MoP storyline.",
+					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/5 Wittle Waptor
 							["providers"] = {

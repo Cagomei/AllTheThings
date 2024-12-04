@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			explorationHeader({
 				exploration(123),	-- Bal'lal Ruins
 				exploration(127),	-- Balia'mah Ruins
-				exploration(5317),	-- Bambala
+				visit_exploration(5317,{coord={65.1,39.9,NORTHERN_STRANGLETHORN}}),	-- Bambala
 				exploration(5320),	-- Fort Livingston
 				exploration(117),	-- Grom'gol Base Camp
 				exploration(125),	-- Kal'ai Ruins
@@ -105,7 +105,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(99),	-- Rebel Camp
 				exploration(102),	-- Ruins of Zul'Kunda
 				exploration(103),	-- Ruins of Zul'Mamwe
-				exploration(301),	-- The Savage Coast
+				visit_exploration(301,{coord={43.8,57.4,NORTHERN_STRANGLETHORN}}),	-- The Savage Coast
+				visit_exploration(106,{coord={60.0,18.3,NORTHERN_STRANGLETHORN}}),	-- The Stockpile
 				exploration(104),	-- The Vile Reef
 				exploration(126),	-- Tkashi Ruins
 				exploration(1740),	-- Venture Co. Base Camp

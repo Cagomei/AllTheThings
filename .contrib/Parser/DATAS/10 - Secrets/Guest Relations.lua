@@ -1174,7 +1174,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					{ "i", 228938, 1 },	-- Peculiar Gem
 				},
 			}),
-			header(HEADERS.Map, 46, {	-- Karazhan Catacombs
+			m(46, {	-- Karazhan Catacombs (this makes sense to have as a root map when it's the minilist)
 				["description"] = "Deep into the catacombs the bike is just sitting there out of reach, but is surrounded by 12 basins which can light up with orbs if enough actions are performed.",
 				["coord"] = { 46.3, 69.1, DEADWIND_PASS },
 				["cost"] = {
@@ -1318,23 +1318,28 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					}),
 					--5 O'clock Basin
 					q(84781, {	-- Master of Secrets
-						["description"] = "1. Visit the Timeless isle and find Zarhym in the Cavern of Lost Spirits. Talk to Zarhym, a rare ghostly skull inside the entrance to enter the spirit realm.\n2. Within 5 minutes, Navigate to the back of the cave while avoiding ghosts to find Jeremy Feasel. Stay nearby to him, and you will not exit the spirit realm even if your 5 minutes buff expires.\n3. Defeat Jeremy in a pet battle using only 'secret' pets from the list. If someone in your group beats him in a battle, that also counts and he will grant you the quest too on talking to him. The pets MUST be level 25.\n\nFully lights up the 5 O'clock basin.\n\nValid pets:\nBaa'l, Bumbles, Filthy Slime, Gizmo the Pure, Glimr, Jenafur, Nelthara, Phoenix Wishwing, Snowclaw Cub, Spyragos, Sun Darter Hatchling, Taptaf, Terky, Wicker Pup",
+						["description"] = "1. Visit the Timeless isle and find Zarhym in the Cavern of Lost Spirits. Talk to Zarhym, a rare ghostly skull inside the entrance to enter the spirit realm.\n2. Within 5 minutes, Navigate to the back of the cave while avoiding ghosts to find Jeremy Feasel. Stay nearby to him, and you will not exit the spirit realm even if your 5 minutes buff expires.\n3. Defeat Jeremy in a pet battle using only 'secret' pets from the list. If someone in your group beats him in a battle, that also counts and he will grant you the quest too on talking to him. The pets MUST be level 25.\n\nFully lights up the 5 O'clock basin.\n\nValid pets:\nBaa'l, Bumbles, Filthy Slime, Francois, Gizmo the Pure, Glimr, Hungering Claw, Jenafur, Lil' Abom, Nelthara, Phoenix Wishwing, Renny, Snowclaw Cub, Spyragos, Sun Darter Hatchling, Taptaf, Terky, Tobias, Wicker Pup",
 						["sourceQuest"] = 84780,	-- Use the Scroll of Fel Binding at Uther's Tomb
 						["providers"] = {
 							{ "n", 232048 },	-- Jeremy Feasel
 							{ "n", 141941 },	-- Baa'l
 							{ "n", 143730 },	-- Bumbles
 							{ "n", 160704 },	-- Filthy Slime
+							{ "n", 134406 },	-- Francois
 							{ "n", 229779 },	-- Gizmo the Pure
 							{ "n", 169514 },	-- Glimr
+							{ "n", 111984 },	-- Hungering Claw
 							{ "n", 159783 },	-- Jenafur
+							{ "n", 179008 },	-- Lil' Abom
 							{ "n", 204367 },	-- Nelthara
 							{ "n", 189117 },	-- Phoenix Wishwing
+							{ "n", 163897 },	-- Renny
 							{ "n", 192343 },	-- Snowclaw Cub
 							{ "n", 191381 },	-- Spyragos
 							{ "n", 61087 },		-- Sun Darter Hatchling
 							{ "n", 139770 },	-- Taptaf
 							{ "n", 16445 },		-- Terky
+							{ "n", 208643 },	-- Tobias
 							{ "n", 143189 },	-- Wicker Pup
 						},
 						["coords"] = {

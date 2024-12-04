@@ -288,11 +288,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(SETS, {
 				iensemble(200917),	-- Ensemble: Tidecaller's Chainmail
 
-				------ Vagabond's Cloudy Threads ------
-				iensemble(206328),	-- Ensemble: Vagabond's Cloudy Threads
-				i(206284),	-- Vagabond's Cloudy Cape
-				i(206295),	-- Vagabond's Cloudy Hood
-
 				------ Vagabond's Grassy Threads ------
 				iensemble(206329),	-- Ensemble: Vagabond's Grassy Threads
 				i(206285),	-- Vagabond's Grassy Cape
@@ -302,12 +297,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				iensemble(206323),	-- Ensemble: Vagabond's Plum Threads
 				i(206279),	-- Vagabond's Plum Cape
 				i(206290),	-- Vagabond's Plum Hood
-
-				------ Wanderer's Cloudy Trappings ------
-				iensemble(206339),	-- Ensemble: Wanderer's Cloudy Trappings
-				i(206317),	-- Wanderer's Cloudy Cloak
-				i(206306),	-- Wanderer's Cloudy Scarf
-
 
 				------ Wanderer's Grassy Trappings ------
 				iensemble(206340),	-- Ensemble: Wanderer's Grassy Trappings
@@ -328,7 +317,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 				------ Trading Post ------
 			n(ARMOR, {
-				i(211069),	-- Azure Treads of the Kalu'ak
 				i(210856),	-- Trader's Faded Sarong
 				i(210851),	-- Trader's Grassy Sarong
 				i(210859),	-- Trader's Plum Sarong
@@ -370,16 +358,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				iensemble(200924),	-- Ensemble: Void-Bound Battlegear
 				iensemble(201000),	-- Ensemble: Void-Bound Chains
 				iensemble(201001),	-- Ensemble: Void-Bound Warplate
-
-				------ Sky Witch's Attire ------
-				iensemble(212221),	-- Ensemble: Sky Witch's Attire
-				i(212204),	-- Sky Witch's Blouse
-				i(212205),	-- Sky Witch's Boots
-				i(212206),	-- Sky Witch's Gloves
-				i(212207),	-- Sky Witch's Hat
-				i(212210),	-- Sky Witch's Sash
-				i(212209),	-- Sky Witch's Shoulders
-				i(212208),	-- Sky Witch's Skirt
 			}),
 			n(WEAPONS, {
 				i(190848),	-- [DNT] Do not use

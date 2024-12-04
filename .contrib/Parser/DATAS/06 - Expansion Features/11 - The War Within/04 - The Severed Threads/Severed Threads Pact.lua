@@ -564,10 +564,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 					["sourceQuestNumRequired"] = 1,
 					["providers"] = {
+						{ "n", 224729 },	-- Anub'okki
 						{ "n", 223750 },	-- Lady Vinazian
 						{ "n", 220867 },	-- Y'tekhi
 					},
-					["coord"] = { 55.2, 41, AZJ_KAHET },
+					["coords"] = {
+						{ 55.2, 41, AZJ_KAHET },
+						{ 55.9, 42.2, AZJ_KAHET },
+					},
 					["g"] = {
 						i(225572, {	-- The General's War Chest
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)

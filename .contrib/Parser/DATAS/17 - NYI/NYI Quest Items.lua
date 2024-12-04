@@ -455,7 +455,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(190960),	-- Duck Tail Feathers
 			i(191104),	-- Durgun's Paw
 			i(193049),	-- Earth Key [DNT/UNUSED]
-			i(192454),	-- Elemental Essence
 			i(194428),	-- Elemental Soul Cage NYI
 			i(191117),	-- Enchanted Claws
 			i(193858),	-- Enchanted Tools

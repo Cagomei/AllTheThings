@@ -18,6 +18,34 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(80, 80, 30),
 		["groups"] = {
+			applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO,
+			header(HEADERS.Item, 46017, {	-- Val'anyr, Hammer of Ancient Kings
+				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
+				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
+				["isRaid"] = true,
+				["groups"] = {
+					ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
+						["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
+						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
+					}),
+					q(13622, {	-- Ancient History
+						["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
+						["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
+					}),
+					q(13629, {	-- Val'anyr, Hammer of Ancient Kings
+						["provider"] = { "o", 194555 },	-- Archivum Console
+						["sourceQuest"] = 13622,	-- Ancient History
+						["groups"] = {
+							objective(1, {	-- 0/1 Reforged Hammer of Ancient Kings
+								["provider"] = { "i", 45897 },	-- Reforged Hammer of Ancient Kings
+								["cost"] = { { "i", 45896, 1 } },	-- Unbound Fragments of Val'anyr
+								["cr"] = 33288,	-- Yogg-Saron
+							}),
+							i(46017)	-- Val'anyr, Hammer of Ancient Kings
+						},
+					}),
+				},
+			})),
 			-- #if AFTER 7.3.5.25727
 			n(ACHIEVEMENTS, {
 				ach(12401, {	-- Glory of the Ulduar Raider
@@ -142,35 +170,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 			}),
-			applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(QUALITY_LEGENDARY, {
-				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
-				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
-				["title"] = "Val'anyr, Hammer of Ancient Kings",
-				["icon"] = 253399,
-				["isRaid"] = true,
-				["groups"] = {
-					ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
-						["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
-						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
-					}),
-					q(13622, {	-- Ancient History
-						["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
-						["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
-					}),
-					q(13629, {	-- Val'anyr, Hammer of Ancient Kings
-						["provider"] = { "o", 194555 },	-- Archivum Console
-						["sourceQuest"] = 13622,	-- Ancient History
-						["groups"] = {
-							objective(1, {	-- 0/1 Reforged Hammer of Ancient Kings
-								["provider"] = { "i", 45897 },	-- Reforged Hammer of Ancient Kings
-								["cost"] = { { "i", 45896, 1 } },	-- Unbound Fragments of Val'anyr
-								["cr"] = 33288,	-- Yogg-Saron
-							}),
-							i(46017)	-- Val'anyr, Hammer of Ancient Kings
-						},
-					}),
-				},
-			})),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					33113,	-- Flame Leviathan

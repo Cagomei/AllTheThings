@@ -45,7 +45,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 		["groups"] = {
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				header(HEADERS.Achievement, 17366, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Relics of a Fallen Empire
-					["description"] = "To unlock the Zul'Gurub content of patch 10.0.7:\n\n1. Kill any two bosses to spawn Jin'do the Godbreaker. Cache of Madness does not count.\n\n2. Head to the Altar of the Light, and enter the ground floor using either side entrance.\n\n3. Look for a gong by the southern entrance. On the ground in front of it lays a Shattered Hakkari Bijou. Loot it.\n\n4. Go upstairs towards Jin'do the Godbreaker, and kill at least one Gurubashi Spirit Warrior on your way. (You will need it for the encounter!)\n\n5. Pull Jin'do the Godbreaker and burst him down until Phase 2 begins. (This phase begins even if you oneshot him.)\n\n6. Walk back downstairs and inside the ground floor where you found the Shattered Hakkari Bijou, and a Fragmented Hakkari Bijou lays in it's place. Loot it.\n\n7. Finish the boss encounter above by pulling a Gurubashi Spirit up to Hakkari's Chains, and wait until they break the chain protection with their ability 'Body Slam'. Then you can 'kill' the chains, and kill Jin'do.\n\n8. Combine the Shattered Hakkari Bijou with the Fragmented Hakkari Bijou, and accept the quest 'Restored Hakkari Bijou'.\n\n9. Travel to Dazar'alor in Zandalar. |CFFFF0000Beware Alliance players, this is a Horde city!|r You can get here using the ship service from Echo Isles in Durotar. From the Port of Zuldazar, fly eastwards to the southfacing building entrances. Above the transmogifier shop is the Yojamba Exchange, where you can turn in the quest at Rin'wosho the Trader.\n\n10. Zul'Gurub is now unlocked for your account, and the vendor Rin'Wosho with his wares can now be found at the beginning of the dungeon.",
+					["description"] = "To unlock the Zul'Gurub content of patch 10.0.7:\n\n1. Kill any two bosses to spawn Jin'do the Godbreaker. Cache of Madness does not count.\n\n2. Head to the Altar of the Light, and enter the ground floor using either side entrance.\n\n3. Look for a gong by the southern entrance. On the ground in front of it lays a Shattered Hakkari Bijou. Loot it.\n\n4. Go upstairs towards Jin'do the Godbreaker, and kill at least one Gurubashi Spirit Warrior on your way. (You will need it for the encounter!)\n\n5. Pull Jin'do the Godbreaker and burst him down until Phase 2 begins. (This phase begins even if you oneshot him.)\n\n6. Walk back downstairs and inside the ground floor where you found the Shattered Hakkari Bijou, and a Fragmented Hakkari Bijou lays in it's place. Loot it.\n\n7. Finish the boss encounter above by pulling a Gurubashi Spirit up to Hakkari's Chains, and wait until they break the chain protection with their ability 'Body Slam'. Then you can 'kill' the chains, and kill Jin'do.\n\n8. Combine the Shattered Hakkari Bijou with the Fragmented Hakkari Bijou, and accept the quest 'Restored Hakkari Bijou'.\n\n9. Travel to Dazar'alor in Zandalar. |CFFFF0000Beware Alliance players, this is a Horde city!|r You can get here using the ship service from Echo Isles in Durotar. From the Port of Zuldazar, fly eastwards to the southfacing building entrances. Above the transmogifier shop is the Yojamba Exchange, where you can turn in the quest at Rin'wosho the Trader.\n\n10. Zul'Gurub is now unlocked for your account, and the vendor Rin'Wosho with his wares can now be found at the beginning of the dungeon.\n\n11. Protip: Start the Gurubashi Tribute farm as early as possible as it is a decent source for coins. See the header for Brazier of Madness for more information.",
 					["groups"] = {
 						n(ACHIEVEMENTS, {
 							ach(17367, {	-- Deadliest Cache
@@ -62,7 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							}),
 						}),
 						header(HEADERS.Item, 203757, {	-- Brazier of Madness
-							["description"] = "Requires the toy Brazier of Madness",
+							["description"] = "To get started farming Gurubashi Tributes for recipes:\n\n1. Go to the site of the boss Cache of Madness.\n\n2. By the eastern wall is an altar. Here hangs Tablet of Madness, which teaches Alchemists with 300 skill points in classic alchemy how to create Gurubashi Mojo Madness.\n\n3. On the left side of the altar is an interactable brazier, which gives you the toy Brazier of Madness.\n\n4. The four main bosses Venoxia, Mandokir, Kilnara and Zanzil have piles of skull near them. Use the toy Blazier of Madness near one of these piles, and consume a Gurubashi Mojo Madness. This will transform you to a troll for one hour, and make you able to interact with the different piles of skulls to offer bijous for Gurubashi Tributes. The transformation will make you friendly to the mobs in the dungeon, so this should be done after killng the bosses.\n\n5. The different piles requires different bijous, and rewards 1-2 recipes and/or 3-7 coins. For more information see the header for Gurubashi Tribute.",
 							["cost"] = {
 								{ "i", BLUE_HAKKARI_BIJOU, 1 },
 								{ "i", BRONZE_HAKKARI_BIJOU, 1 },
@@ -76,7 +76,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							},
 							["groups"] = {
 								i(203959, {	-- Gurubashi Tribute
-									["description"] = "Behind the 4 Main Bosses is an offering bonepile. It can only be interacted with the 'Succumbed to Madness' Buff, received by using the Gurubashi Mojo Madness potion near the Brazier of Madness Toy. With the buff, you can sacrifice bijous to receive 1-2 recipes and/or 3-7 coins.\n\nVenoxis' available offerings: 2x Silver Bijou / 3x Green Bijou / 3x Gold Bijou. Coords: 51.5, 55.8 Behind the Boss\n\nMandokir's available offerings: 2x Bronze Bijou / 3x Red Bijou / 3x Gold Bijou. Coords: 60.8, 80.9 Right side of Boss\n\nKilnara's available offerings: 2x Orange Bijou / 3x Yellow Bijou / 3x Gold Bijou. Coords: 47.5, 22.1 Behind Boss at the wall\n\nZanzil's available offerings: 2x Purple Bijou / 3x Blue Bijou / 3x Gold Bijou. Coords: 30.4, 19.9 North side of the Boss room, at the left wall.",
+									["description"] = "Venoxis' available offerings: 2x Silver Bijou / 3x Green Bijou / 3x Gold Bijou. Coords: 51.5, 55.8 Behind the Boss\n\nMandokir's available offerings: 2x Bronze Bijou / 3x Red Bijou / 3x Gold Bijou. Coords: 60.8, 80.9 Right side of Boss\n\nKilnara's available offerings: 2x Orange Bijou / 3x Yellow Bijou / 3x Gold Bijou. Coords: 47.5, 22.1 Behind Boss at the wall\n\nZanzil's available offerings: 2x Purple Bijou / 3x Blue Bijou / 3x Gold Bijou. Coords: 30.4, 19.9 North side of the Boss room, at the left wall.",
 									["groups"] = {
 										-- Epic
 										i(203838),	-- Ancient Formula: Mindslave's Reach (RECIPE!)
@@ -116,14 +116,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						}),
 						n(COMMON_BOSS_DROPS, {
 							["description"] = "Can drop from High Priest Venoxis, Bloodlord Mandokir, High Priestess Kilnara, Zanzil, and Jin'do the Godbreaker after completing the quest 'Restored Hakkari Bijou'.",
-							--Danny Donkey: Description above replaces crs below as otherwise the 10.0.7 common boss drops will appear under the respective bosses for all players after 10.0.7, even those who have not unlocked 'Relics of a Fallem Empire'.
-							--["crs"] = {
+							-- Danny Donkey: Description above replaces crs below as otherwise the 10.0.7 common boss drops will appear under the respective bosses for all players after 10.0.7, even those who have not unlocked 'Relics of a Fallem Empire'.
+							-- ["crs"] = {
 								--52155,	-- High Priest Venoxis
 								--52151,	-- Bloodlord Mandokir
 								--52059,	-- High Priestess Kilnara
 								--52053,	-- Zanzil
 								--52148,	-- Jin'do the Godbreaker
-							--},
+							-- },
 							["groups"] = sharedData({ ["modID"] = 0 }, {
 								i(203842),	-- Ancient Pattern: Animist's Footwraps (RECIPE!)
 								i(203843),	-- Ancient Pattern: Animists Legguards (RECIPE!)

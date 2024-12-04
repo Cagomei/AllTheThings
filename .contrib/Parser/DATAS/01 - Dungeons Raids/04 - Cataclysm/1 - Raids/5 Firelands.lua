@@ -85,69 +85,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 		["isRaid"] = true,
 		["lvl"] = 85,
 		["groups"] = {
-			n(ACHIEVEMENTS, {
-				ach(5828, {	-- Glory of the Firelands Raider
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						5807,	-- Heroic: Beth'tilac
-						5808,	-- Heroic: Lord Rhyolith
-						5806,	-- Heroic: Shannox
-						5809,	-- Heroic: Alysrazor
-						5805,	-- Heroic: Baleroc
-						5804,	-- Heroic: Majordomo Fandral Staghelm
-						5821,	-- Death from Above
-						5810,	-- Not an Ambi-Turner
-						5813,	-- Do a Barrel Roll!
-						5829,	-- Bucket List
-						5830,	-- Share the Pain
-						5799,	-- Only the Penitent...
-					}},
-					["groups"] = {
-						i(69230),	-- Corrupted Fire Hawk (MOUNT!)
-					},
-				}),
-				achWithRep(5827, FACTION_AVENGERS_OF_HYJAL, {	-- Avengers of Hyjal
-					title(188),	-- <Name>, Avenger of Hyjal
-				}),
-				ach(11755, {["timeline"] = {ADDED_7_2_0}}),	-- Hot Couture (Firelands)
-				ach(5802, {	-- Firelands
-					crit(17430, {	-- Beth'tilac
-						["_encounter"] = { 192, NORMAL_HEROIC_DIFFICULTY_ID },
-					}),
-					crit(17431, {	-- Lord Rhyolith
-						["_encounter"] = { 193, NORMAL_HEROIC_DIFFICULTY_ID },
-					}),
-					crit(17435, {	-- Alysrazor
-						["_encounter"] = { 194, NORMAL_HEROIC_DIFFICULTY_ID },
-					}),
-					crit(17429, {	-- Shannox
-						["_encounter"] = { 195, NORMAL_HEROIC_DIFFICULTY_ID },
-					}),
-					crit(17432, {	-- Baleroc, the Gatekeeper
-						["_encounter"] = { 196, NORMAL_HEROIC_DIFFICULTY_ID },
-					}),
-					crit(17433, {	-- Majordomo Staghelm
-						["_encounter"] = { 197, NORMAL_HEROIC_DIFFICULTY_ID },
-					}),
-					crit(17434, {	-- Ragnaros
-						["_encounter"] = { 198, NORMAL_HEROIC_DIFFICULTY_ID },
-					}),
-				}),
-				ach(5983),	-- Firelands Guild Run
-			}),
-			n(FACTIONS, {
-				faction(FACTION_AVENGERS_OF_HYJAL, {	-- Avengers of Hyjal
-					["icon"] = 512609,
-				}),
-			}),
-			n(QUALITY_LEGENDARY, {
-				["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
-				["title"] = "Dragonwrath, Tarecgosa's Rest",
-				["icon"] = 523897,
+			header(HEADERS.Item, 71086,	-- Dragonwrath, Tarecgosa's Rest
+			sharedDataSelf({["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER }},{
 				["isRaid"] = true,
 				["lvl"] = 85,
 				-- TODO: coords for all these quests
-				["groups"] = sharedData({["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER }},{
+				["groups"] = {
 					-- the achieve is a little out of place but FL is structured quite differently with the legendary quest line so eh....
 					ach(5839, {	-- Dragonwrath, Tarecgosa's Rest
 						["provider"] = { "i", 71086 },	-- Dragonwrath, Tarecgosa's Rest
@@ -157,32 +100,39 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["qg"] = 53115,	-- Molten Lord
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
 						["isBreadcrumb"] = true,    -- for A Legendary Engagement
+						["maps"] = { STORMWIND_CITY },
 					})),
 					h(q(29452, {	-- Your Time Has Come [H]
 						["qg"] = 53115,	-- Molten Lord
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
 						["isBreadcrumb"] = true,    -- for A Legendary Engagement
+						["maps"] = { ORGRIMMAR },
 					})),
 					a(q(29132, {	-- A Legendary Engagement [A]
-						["qg"] = 52382,	-- Ziradormi
+						["qg"] = 52408,	-- Coridormi
 						["sourceQuest"] = 29453,	-- Your Time Has Come [A]
-						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						["description"] = "Located inside Portal tower.\n\nThis is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						["coord"] = { 47.2, 91.2, STORMWIND_CITY },
+						["maps"] = { CAVERNS_OF_TIME },
 					})),
 					h(q(29129, {	-- A Legendary Engagement [H]
 						["qg"] = 52382,	-- Ziradormi
 						["sourceQuest"] = 29452,	-- Your Time Has Come [H]
 						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						["maps"] = { CAVERNS_OF_TIME },
 					})),
 					q(29134, {	-- A Wrinkle in Time
 						["qg"] = 15192,	-- Anachronos
+						["coord"] = { 41.8, 49.8, CAVERNS_OF_TIME },
 						["sourceQuests"] = {
-							29129,	-- A Legendary Engagement (horde)
-							29132,	-- A Legendary Engagement (alliance)
+							29129,	-- A Legendary Engagement [H]
+							29132,	-- A Legendary Engagement [A]
 						},
 					}),
 					q(29135, {	-- All-Seeing Eye
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 29134,	-- A Wrinkle in Time
+						["coord"] = { 41.8, 49.8, CAVERNS_OF_TIME },
 						-- #if NOT OBJECTIVES
 						["cost"] = {
 							{ "i", 71141, 25 },	-- Eternal Ember
@@ -378,6 +328,61 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest
 						},
 					}),
+				},
+			})),
+			n(ACHIEVEMENTS, {
+				ach(5828, {	-- Glory of the Firelands Raider
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						5807,	-- Heroic: Beth'tilac
+						5808,	-- Heroic: Lord Rhyolith
+						5806,	-- Heroic: Shannox
+						5809,	-- Heroic: Alysrazor
+						5805,	-- Heroic: Baleroc
+						5804,	-- Heroic: Majordomo Fandral Staghelm
+						5821,	-- Death from Above
+						5810,	-- Not an Ambi-Turner
+						5813,	-- Do a Barrel Roll!
+						5829,	-- Bucket List
+						5830,	-- Share the Pain
+						5799,	-- Only the Penitent...
+					}},
+					["groups"] = {
+						i(69230),	-- Corrupted Fire Hawk (MOUNT!)
+					},
+				}),
+				achWithRep(5827, FACTION_AVENGERS_OF_HYJAL, {	-- Avengers of Hyjal
+					title(188),	-- <Name>, Avenger of Hyjal
+				}),
+				ach(11755, {["timeline"] = {ADDED_7_2_0}}),	-- Hot Couture (Firelands)
+				ach(5802, {	-- Firelands
+					crit(17430, {	-- Beth'tilac
+						["_encounter"] = { 192, NORMAL_HEROIC_DIFFICULTY_ID },
+					}),
+					crit(17431, {	-- Lord Rhyolith
+						["_encounter"] = { 193, NORMAL_HEROIC_DIFFICULTY_ID },
+					}),
+					crit(17435, {	-- Alysrazor
+						["_encounter"] = { 194, NORMAL_HEROIC_DIFFICULTY_ID },
+					}),
+					crit(17429, {	-- Shannox
+						["_encounter"] = { 195, NORMAL_HEROIC_DIFFICULTY_ID },
+					}),
+					crit(17432, {	-- Baleroc, the Gatekeeper
+						["_encounter"] = { 196, NORMAL_HEROIC_DIFFICULTY_ID },
+					}),
+					crit(17433, {	-- Majordomo Staghelm
+						["_encounter"] = { 197, NORMAL_HEROIC_DIFFICULTY_ID },
+					}),
+					crit(17434, {	-- Ragnaros
+						["_encounter"] = { 198, NORMAL_HEROIC_DIFFICULTY_ID },
+					}),
+				}),
+				ach(5983),	-- Firelands Guild Run
+			}),
+			n(FACTIONS, {
+				faction(FACTION_AVENGERS_OF_HYJAL, {	-- Avengers of Hyjal
+					["icon"] = 512609,
 				}),
 			}),
 			n(VENDORS, {

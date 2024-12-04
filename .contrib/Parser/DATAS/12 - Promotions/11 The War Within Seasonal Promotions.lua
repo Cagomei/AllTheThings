@@ -31,13 +31,13 @@ root(ROOTS.Promotions, {
 			})),
 			i(93671, {	-- Ghastly Charger's Skull (MOUNT!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 26th, 03:00 p.m. & September 19th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_11_0_2, },
+				["timeline"] = { ADDED_11_0_2 },
 				["u"] = REMOVED_FROM_GAME,	-- 19th September 2024
 			}),
 			i(190609, {	-- Watcher of the Huntress (PET!)
 				["description"] = "Obtained by gifting an eligible creator's channel two Twitch subscriptions between August 26th, 03:00 p.m. & September 26th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.\n\nSpecial Note: If you buy a sub for yourself and gift one more, that will also reward the pet!",
-				["timeline"] = { ADDED_11_0_2, },
-				["u"] = REAL_MONEY,
+				["timeline"] = { ADDED_11_0_2 },
+				["u"] = REMOVED_FROM_GAME,	-- 26th September 2024
 			}),
 			-- Season 1
 			i(232305, {	-- Forged Champion's Prestigious Banner (TOY!)(PVP)
@@ -86,6 +86,7 @@ root(ROOTS.Promotions, {
 			i(72153, {	-- Sand Scarab (PET!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 22nd, 10:00 a.m. & November 5th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_0_5 },
+				["u"] = REMOVED_FROM_GAME,	-- 5th November 2024
 			}),
 			i(228907, {	-- Bot Wrangler’s Belt
 				["description"] = "Available to redeem for 300 points at DoritosDewRockstar.com. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",
@@ -129,12 +130,12 @@ root(ROOTS.Promotions, {
 			}),
 			i(223459, {	-- Blackrock Warsaber (MOUNT!)
 				["description"] = "Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/Youtube Account has to be connected with your Battle.net Account.",
-				["timeline"] = { ADDED_11_0_5, },
+				["timeline"] = { ADDED_11_0_5 },
 				--["u"] = REMOVED_FROM_GAME,	-- 11th December 2024
 			}),
 			i(223471, {	-- Kaldorei War Wolf (MOUNT!)
 				["description"] = "Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/Youtube Account has to be connected with your Battle.net Account.",
-				["timeline"] = { ADDED_11_0_5, },
+				["timeline"] = { ADDED_11_0_5 },
 				--["u"] = REMOVED_FROM_GAME,	-- 11th December 2024
 			}),
 			i(229368, {	-- Gill'el (PET!)

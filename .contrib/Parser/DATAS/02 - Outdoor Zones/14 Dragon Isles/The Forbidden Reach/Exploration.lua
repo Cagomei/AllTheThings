@@ -12,6 +12,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			exploration(14656),	-- Morqut Village
 			exploration(14590),	-- Scaleborn Pass
 			exploration(14593),	-- Sharpscale Coast
+			visit_exploration(14700,{coord={13.3,53.3,THE_FORBIDDEN_REACH}}),	-- Slyvern's Roost
 			exploration(14585),	-- Stormsunder Crater
 			exploration(14592),	-- Stormsunder Mountain
 			exploration(14583),	-- Tempest Coast

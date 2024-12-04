@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1741),	-- Gurubashi Arena
 				exploration(1739),	-- Hardwrench Hideaway
 				exploration(297),	-- Jaguero Isle
-				exploration(312),	-- Janeiro's Point
+				visit_exploration(312,{coord={34.9,62.2,THE_CAPE_OF_STRANGLETHORN}}),	-- Janeiro's Point
 				exploration(1737),	-- Mistvale Valley
 				exploration(1738),	-- Nek'mani Wellspring
 				exploration(311),	-- Ruins of Aboraz

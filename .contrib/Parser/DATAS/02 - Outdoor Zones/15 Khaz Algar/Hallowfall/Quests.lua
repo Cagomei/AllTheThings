@@ -221,6 +221,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							i(217995),	-- Order of Night Propaganda (QI!)
 							i(217993),	-- Order of Night Propaganda (QI!)
 							i(217900),	-- Order of Night Propaganda (QI!)
+							i(217990),	-- Order of Night Propaganda (QI!)
 							o(433907),	-- Order of Night Propaganda
 							o(424436),	-- Order of Night Propaganda
 						}),

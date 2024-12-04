@@ -126,14 +126,17 @@ root(ROOTS.Zones, {
 					exploration(3749),	-- Coilskar Cistern
 					exploration(3750),	-- Coilskar Point
 					visit_exploration(3950,{coord={52.1,71.9,SHADOWMOON_VALLEY}}),	-- Crimson Watch
+					visit_exploration(3966,{coord={66.1,86.3,SHADOWMOON_VALLEY}}),	-- Dragonmaw Base Camp
 					visit_exploration(3939,{coord={66.4,60.1,SHADOWMOON_VALLEY}}),	-- Dragonmaw Fortress
 					visit_exploration(3967,{coord={74.6,78.0,SHADOWMOON_VALLEY}}),	-- Dragonmaw Skyway
 					exploration(3822),	-- Eclipse Point
 					visit_exploration(3930,{coord={40.3,68.0,SHADOWMOON_VALLEY}}),	-- Eclipsion Fields
 					visit_exploration(3752,{coord={28.8,56.2,SHADOWMOON_VALLEY}}),	-- Illidari Point
+					visit_exploration(3943,{coord={37.6,21.8,SHADOWMOON_VALLEY}}),	-- Invasion Point: Cataclysm
 					exploration(3743),	-- Legion Hold
 					visit_exploration(3758,{coord={63.5,54.2,SHADOWMOON_VALLEY}}),	-- Netherwing Fields
 					exploration(3759),	-- Netherwing Ledge
+					visit_exploration(3965,{coord={63.3,87.5,SHADOWMOON_VALLEY}}),	-- Netherwing Mines
 					visit_exploration(3945,{coord={61.5,68.3,SHADOWMOON_VALLEY}}),	-- Netherwing Pass
 					exploration(3927),	-- Oronok's Farm
 					visit_exploration(3753,{coord={58.1,37.4,SHADOWMOON_VALLEY}}),	-- Ruins of Baa'ri
@@ -149,6 +152,7 @@ root(ROOTS.Zones, {
 					exploration(3840),	-- The Black Temple
 					visit_exploration(3748,{coord={40.5,39.6,SHADOWMOON_VALLEY}}),	-- The Deathforge
 					exploration(3747),	-- The Fel Pits
+					visit_exploration(3940,{coord={26.3,39.6,SHADOWMOON_VALLEY}}),	-- The Fetid Pool
 					exploration(3746),	-- The Hand of Gul'dan
 					visit_exploration(3929,{coord={53.5,65.8,SHADOWMOON_VALLEY}}),	-- The Path of Conquest
 					visit_exploration(3821,{coord={61.3,49.3,SHADOWMOON_VALLEY}}),	-- Warden's Cage

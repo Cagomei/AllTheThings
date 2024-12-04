@@ -1444,7 +1444,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"
 			q(54928),	-- Triggered after getting 3 holy power and striking Warlord Grimaxe with the first major combat ability. Didn't trigger at all on an alliance priest
 			q(58336),	-- Triggered at the same time as 54928. Possibly dialog-related?
 			q(55607),	-- Triggered while killing quilboars in Quilboar Briarpatch on an alliance priest. Did not see it trigger as horde
-			q(55611),	-- triggered when completing "Message to Base" in Exile's Reach on alliance priest
+			q(55611),	-- Triggered when completing "Message to Base" in Exile's Reach on alliance priest
 			q(59610),	-- Triggered after killing Torgok. Loot controller for "Torgok's Reagent Pouch"
 			q(59143),	-- Triggered after looting the Runetusk Necklace from ogres in Darkmaul Citadel
 			q(59139),	-- Triggered after looting the Spider-Eye Ring from spiders in Hrun's Barrow / Dented Legplates
@@ -1456,7 +1456,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"
 			q(62655),	-- Triggers after you activate your specialization (both NPE and non-NPE characters)
 			q(62802),	-- Triggered after going to Stormwind for An End to Beginnings
 			q(62803),	-- Triggered after going to Orgrimmar for An End to Beginnings
-			q(63012),	-- Triggered after talking to Jaina at docks for The Nation of Kul Tiras
+			q(63012),	-- Triggered after accepting first quest for your current leveling expansion
 			q(62912),	-- Triggered when flying from Exile's Reach (as Alliance if it matters)
 		}),
 	}),

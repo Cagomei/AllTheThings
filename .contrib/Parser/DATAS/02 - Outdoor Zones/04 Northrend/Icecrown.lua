@@ -131,7 +131,8 @@ root(ROOTS.Zones, {
 					exploration(4510),	-- Aldur'thar: The Desolation Gate
 					applyclassicphase(WRATH_PHASE_TWO, exploration(4658)),	-- Argent Tournament Grounds
 					exploration(4527),	-- Balargarde Fortress
-					visit_exploration(4588,{coord={35.5,66.3,118}}),	-- Blackwatch
+					visit_exploration(4594,{coord={28.3,50.5,ICECROWN}}),	-- Battlescar Spire
+					visit_exploration(4588,{coord={35.5,66.3,ICECROWN}}),	-- Blackwatch
 					exploration(4521),	-- Cathedral of Darkness
 					exploration(4518),	-- Corp'rethar: The Horror Gate
 					visit_exploration(4580,{coord={79.6,72.3,ICECROWN}}),	-- Crusaders' Pinnacle
@@ -149,6 +150,7 @@ root(ROOTS.Zones, {
 					exploration(4508),	-- Mord'rethar: The Death Gate
 					exploration(4526),	-- Njorndar Village
 					exploration(4417),	-- Onslaught Harbor
+					visit_exploration(4692,{coord={74.0,30.9,ICECROWN}}),	-- Quel'Delar's Rest
 					visit_exploration(4597,{coord={54.4,70.2,ICECROWN}}),	-- Rise of Suffering
 					visit_exploration(4530,{coord={34.4,68.4,ICECROWN}}),	-- Sanctum of Reanimation
 					visit_exploration(4514,{coord={56.5,57.4,ICECROWN}}),	-- Saronite Mines
@@ -158,6 +160,7 @@ root(ROOTS.Zones, {
 					exploration(4533),	-- Sindragosa's Fall
 					visit_exploration(4676,{coord={76.2,24.1,ICECROWN}}),	-- Sunreaver Pavilion
 					visit_exploration(4672,{coord={75.3,18.3,ICECROWN}}),	-- The Alliance Valiants' Ring
+					visit_exploration(4671,{coord={68.9,20.3,ICECROWN}}),	-- The Argent Valiants' Ring
 					exploration(4501),	-- The Argent Vanguard
 					visit_exploration(4670,{coord={70.9,19.8,ICECROWN}}),	-- The Aspirants' Ring
 					visit_exploration(4509,{coord={57.4,42.1,ICECROWN}}),	-- The Bombardment
@@ -168,6 +171,7 @@ root(ROOTS.Zones, {
 					visit_exploration(4529,{coord={9.7,46.6,ICECROWN}}),	-- The Crimson Cathedral
 					exploration(4531),	-- The Fleshwerks
 					visit_exploration(4862,{coord={54.2,90.6,ICECROWN}}),	-- The Frozen Halls
+					visit_exploration(4673,{coord={75.6,25.7,ICECROWN}}),	-- The Horde Valiants' Ring
 					visit_exploration(4593,{coord={76.4,52.6,ICECROWN}}),	-- The Pit of Fiends
 					visit_exploration(4669,{coord={72.0,24.0,ICECROWN}}),	-- The Ring of Champions
 					exploration(4477),	-- The Shadow Vault

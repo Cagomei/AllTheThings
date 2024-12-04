@@ -74,114 +74,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["groups"] = {
-			n(ACHIEVEMENTS, {
-				applyclassicphase(WRATH_PHASE_FOUR, ach(4602, {	-- Glory of the Icecrown Raider (10 player)
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						4628,	-- Heroic: Storming the Citadel (10 player)
-						4629,	-- Heroic: The Plagueworks (10 player)
-						4630,	-- Heroic: The Crimson Hall (10 player)
-						4631,	-- Heroic: The Frostwing Halls (10 player)
-						4534,	-- Boned (10 player)
-						4535,	-- Full House (10 player)
-						4536,	-- I'm on a Boat (10 player)
-						4537,	-- I've Gone and Made a Mess (10 player)
-						4538,	-- Dances with Oozes (10 player)
-						4577,	-- Flu Shot Shortage (10 player)
-						4578,	-- Nausea, Heartburn, Indigestion... (10 player)
-						4582,	-- The Orb Whisperer (10 player)
-						4539,	-- Once Bitten, Twice Shy (10 player)
-						4579,	-- Portal Jockey (10 player)
-						4580,	-- All You Can Eat (10 player)
-						4601,	-- Been Waiting a Long Time for This (10 player)
-					}},
-					["timeline"] = { ADDED_3_0_2 },
-					["groups"] = {
-						i(51954),		-- Bloodbathed Frostbrood Vanquisher (MOUNT!)
-					},
-				})),
-				applyclassicphase(WRATH_PHASE_FOUR, ach(4603, {	-- Glory of the Icecrown Raider (25 player)
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						4632,	-- Heroic: Storming the Citadel (25 player)
-						4633,	-- Heroic: The Plagueworks (25 player)
-						4634,	-- Heroic: The Crimson Hall (25 player)
-						4635,	-- Heroic: The Frostwing Halls (25 player)
-						4610,	-- Boned (25 player)
-						4611,	-- Full House (25 player)
-						4612,	-- I'm on a Boat (25 player)
-						4613,	-- I've Gone and Made a Mess (25 player)
-						4614,	-- Dances with Oozes (25 player)
-						4615,	-- Flu Shot Shortage (25 player)
-						4616,	-- Nausea, Heartburn, Indigestion... (25 player)
-						4617,	-- The Orb Whisperer (25 player)
-						4618,	-- Once Bitten, Twice Shy (25 player)
-						4619,	-- Portal Jockey (25 player)
-						4620,	-- All You Can Eat (25 player)
-						4621,	-- Been Waiting a Long Time for This (25 player)
-						4622,	-- Neck-Deep in Vile (25 player)
-					}},
-					["timeline"] = { ADDED_3_0_2 },
-					["groups"] = {
-						i(51955),		-- Icebound Frostbrood Vanquisher (MOUNT!)
-					},
-				})),
-				ach(4532, {	-- Fall of the Lich King (10 player)
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						4531,	-- Storming the Citadel (10 player)
-						4528,	-- The Plagueworks (10 player)
-						4529,	-- The Crimson Hall (10 player)
-						4527,	-- The Frostwing Halls (10 player)
-						4530,	-- The Frozen Throne (10 player)
-					}},
-				}),
-				ach(4608, {	-- Fall of the Lich King (25 player)
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						4604,	-- Storming the Citadel (25 player)
-						4605,	-- The Plagueworks (25 player)
-						4606,	-- The Crimson Hall (25 player)
-						4607,	-- The Frostwing Halls (25 player)
-						4597,	-- The Frozen Throne (25 player)
-					}},
-				}),
-				ach(4636, {	-- Heroic: Fall of the Lich King (10 player)
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						4628,	-- Heroic: Storming the Citadel (10 player)
-						4629,	-- Heroic: The Plagueworks (10 player)
-						4630,	-- Heroic: The Crimson Hall (10 player)
-						4631,	-- Heroic: The Frostwing Halls (10 player)
-						4583,	-- Bane of the Fallen King
-					}},
-				}),
-				ach(4637, {	-- Heroic: Fall of the Lich King (25 player)
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						4632,	-- Heroic: Storming the Citadel (25 player)
-						4633,	-- Heroic: The Plagueworks (25 player)
-						4634,	-- Heroic: The Crimson Hall (25 player)
-						4635,	-- Heroic: The Frostwing Halls (25 player)
-						4584,	-- The Light of Dawn
-					}},
-				}),
-				achWithRep(4598, FACTION_THE_ASHEN_VERDICT, {	-- The Ashen Verdict
-					title(141),	-- <Name> of the Ashen Verdict
-				}),
-				ach(11753, {["timeline"] = {ADDED_7_2_0}}),	-- Winter Catalog (Icecrown Citadel)
-				ach(4576, {	-- Realm First! Fall of the Lich King
-					["timeline"] = { ADDED_3_3_3, REMOVED_3_3_5 },
-				}),
-			}),
-			n(FACTIONS, {
-				faction(FACTION_THE_ASHEN_VERDICT),	-- The Ashen Verdict
-			}),
-			applyclassicphase(WRATH_PHASE_FOUR_SHADOWMOURNE, n(QUALITY_LEGENDARY, {
+			applyclassicphase(WRATH_PHASE_FOUR_SHADOWMOURNE,
+			header(HEADERS.Item, 49623, {	-- Shadowmourne
 				["description"] = "These quests can only be completed on 25-Man Normal or Heroic difficulty.",
 				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-				["title"] = "Shadowmourne",
-				["icon"] = 313914,
 				["isRaid"] = true,
 				["lvl"] = 80,
 				["groups"] = {
@@ -318,6 +214,109 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					}),
 				},
 			})),
+			n(ACHIEVEMENTS, {
+				applyclassicphase(WRATH_PHASE_FOUR, ach(4602, {	-- Glory of the Icecrown Raider (10 player)
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						4628,	-- Heroic: Storming the Citadel (10 player)
+						4629,	-- Heroic: The Plagueworks (10 player)
+						4630,	-- Heroic: The Crimson Hall (10 player)
+						4631,	-- Heroic: The Frostwing Halls (10 player)
+						4534,	-- Boned (10 player)
+						4535,	-- Full House (10 player)
+						4536,	-- I'm on a Boat (10 player)
+						4537,	-- I've Gone and Made a Mess (10 player)
+						4538,	-- Dances with Oozes (10 player)
+						4577,	-- Flu Shot Shortage (10 player)
+						4578,	-- Nausea, Heartburn, Indigestion... (10 player)
+						4582,	-- The Orb Whisperer (10 player)
+						4539,	-- Once Bitten, Twice Shy (10 player)
+						4579,	-- Portal Jockey (10 player)
+						4580,	-- All You Can Eat (10 player)
+						4601,	-- Been Waiting a Long Time for This (10 player)
+					}},
+					["timeline"] = { ADDED_3_0_2 },
+					["groups"] = {
+						i(51954),		-- Bloodbathed Frostbrood Vanquisher (MOUNT!)
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(4603, {	-- Glory of the Icecrown Raider (25 player)
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						4632,	-- Heroic: Storming the Citadel (25 player)
+						4633,	-- Heroic: The Plagueworks (25 player)
+						4634,	-- Heroic: The Crimson Hall (25 player)
+						4635,	-- Heroic: The Frostwing Halls (25 player)
+						4610,	-- Boned (25 player)
+						4611,	-- Full House (25 player)
+						4612,	-- I'm on a Boat (25 player)
+						4613,	-- I've Gone and Made a Mess (25 player)
+						4614,	-- Dances with Oozes (25 player)
+						4615,	-- Flu Shot Shortage (25 player)
+						4616,	-- Nausea, Heartburn, Indigestion... (25 player)
+						4617,	-- The Orb Whisperer (25 player)
+						4618,	-- Once Bitten, Twice Shy (25 player)
+						4619,	-- Portal Jockey (25 player)
+						4620,	-- All You Can Eat (25 player)
+						4621,	-- Been Waiting a Long Time for This (25 player)
+						4622,	-- Neck-Deep in Vile (25 player)
+					}},
+					["timeline"] = { ADDED_3_0_2 },
+					["groups"] = {
+						i(51955),		-- Icebound Frostbrood Vanquisher (MOUNT!)
+					},
+				})),
+				ach(4532, {	-- Fall of the Lich King (10 player)
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						4531,	-- Storming the Citadel (10 player)
+						4528,	-- The Plagueworks (10 player)
+						4529,	-- The Crimson Hall (10 player)
+						4527,	-- The Frostwing Halls (10 player)
+						4530,	-- The Frozen Throne (10 player)
+					}},
+				}),
+				ach(4608, {	-- Fall of the Lich King (25 player)
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						4604,	-- Storming the Citadel (25 player)
+						4605,	-- The Plagueworks (25 player)
+						4606,	-- The Crimson Hall (25 player)
+						4607,	-- The Frostwing Halls (25 player)
+						4597,	-- The Frozen Throne (25 player)
+					}},
+				}),
+				ach(4636, {	-- Heroic: Fall of the Lich King (10 player)
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						4628,	-- Heroic: Storming the Citadel (10 player)
+						4629,	-- Heroic: The Plagueworks (10 player)
+						4630,	-- Heroic: The Crimson Hall (10 player)
+						4631,	-- Heroic: The Frostwing Halls (10 player)
+						4583,	-- Bane of the Fallen King
+					}},
+				}),
+				ach(4637, {	-- Heroic: Fall of the Lich King (25 player)
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						4632,	-- Heroic: Storming the Citadel (25 player)
+						4633,	-- Heroic: The Plagueworks (25 player)
+						4634,	-- Heroic: The Crimson Hall (25 player)
+						4635,	-- Heroic: The Frostwing Halls (25 player)
+						4584,	-- The Light of Dawn
+					}},
+				}),
+				achWithRep(4598, FACTION_THE_ASHEN_VERDICT, {	-- The Ashen Verdict
+					title(141),	-- <Name> of the Ashen Verdict
+				}),
+				ach(11753, {["timeline"] = {ADDED_7_2_0}}),	-- Winter Catalog (Icecrown Citadel)
+				ach(4576, {	-- Realm First! Fall of the Lich King
+					["timeline"] = { ADDED_3_3_3, REMOVED_3_3_5 },
+				}),
+			}),
+			n(FACTIONS, {
+				faction(FACTION_THE_ASHEN_VERDICT),	-- The Ashen Verdict
+			}),
 			n(QUESTS, {
 				q(24815, {	-- Choose Your Path
 					["qg"] = 38316,	-- Ormus the Penitent

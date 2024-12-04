@@ -2710,8 +2710,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		prof(SKINNING, {
 			q(81440),	-- 20/40 Tanning
 			q(81441),	-- 40/40 Tanning
-			q(81442),	-- 10/?? Meat Carver
-			q(81443),	-- 30/?? Meat Carver
+			q(81442),	-- 10/40 Meat Carver
+			q(81443),	-- 30/40 Meat Carver
+			q(81444),	-- 40/40 Meat Carver
 		}),
 		prof(TAILORING, {
 			q(84591),	-- 0/20 Dawnweaving

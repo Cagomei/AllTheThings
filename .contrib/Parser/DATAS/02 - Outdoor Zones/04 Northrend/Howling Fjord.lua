@@ -254,6 +254,7 @@ root(ROOTS.Zones, {
 					exploration(4048),	-- Ember Clutch
 					exploration(4063),	-- Ember Spear Tower
 					exploration(3997),	-- Explorers' League Outpost
+					visit_exploration(3985,{coord={61.1,46.0,HOWLING_FJORD}}),	-- Falls of Ymiron
 					visit_exploration(4003,{coord={59.5,14.5,HOWLING_FJORD}}),	-- Fort Wildervar
 					visit_exploration(4066,{coord={69.2,11.5,HOWLING_FJORD}}),	-- Frostblade Peak
 					exploration(3989),	-- Garvan's Reef
@@ -262,6 +263,7 @@ root(ROOTS.Zones, {
 					exploration(4006),	-- Gjalerbron
 					exploration(4065),	-- Gjalerhorn
 					exploration(3994),	-- Halgrind
+					visit_exploration(4226,{coord={34.5,61.8,HOWLING_FJORD}}),	-- Iskaal
 					exploration(4005),	-- Ivald's Ruin
 					exploration(3988),	-- Kamagua
 					exploration(4058),	-- Lake Cauldros

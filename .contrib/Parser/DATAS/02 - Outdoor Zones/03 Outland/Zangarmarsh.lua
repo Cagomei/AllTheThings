@@ -216,6 +216,7 @@ root(ROOTS.Zones, {
 				explorationHeader({
 					exploration(3650),	-- Ango'rosh Grounds
 					exploration(3651),	-- Ango'rosh Stronghold
+					visit_exploration(3643,{coord={27.2,42.4,ZANGARMARSH}}),	-- Bloodscale Enclave
 					exploration(3818),	-- Bloodscale Grounds
 					exploration(3668),	-- Boha'mu Ruins
 					exploration(3565),	-- Cenarion Refuge

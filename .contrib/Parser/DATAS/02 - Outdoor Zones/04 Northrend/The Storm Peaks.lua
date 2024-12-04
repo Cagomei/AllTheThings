@@ -257,6 +257,7 @@ root(ROOTS.Zones, {
 					exploration(4495),	-- Fjorn's Anvil
 					exploration(4439),	-- Frostfield Lake
 					visit_exploration(4487,{coord={62.4,41.4,THE_STORM_PEAKS}}),	-- Frostfloe Deep
+					visit_exploration(4472,{coord={26.7,66.7,THE_STORM_PEAKS}}),	-- Frostgrip's Hollow
 					exploration(4428),	-- Frosthold
 					exploration(4421),	-- Garm
 					exploration(4460),	-- Garm's Bane

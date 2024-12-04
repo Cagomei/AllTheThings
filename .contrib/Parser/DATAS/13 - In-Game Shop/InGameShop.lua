@@ -128,6 +128,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(156564, {	-- Shu-zen, the Divine Sentinel (MOUNT!)
 			["timeline"] = { ADDED_8_0_1 },
 		}),
+		i(212228, {	-- Soaring Sky Fox (MOUNT!)
+			["timeline"] = { ADDED_11_0_5, "removed 11.1.7.99999" },	-- Removed March 31, 2025
+		}),
 		mount(308078, {	-- Squeakers, the Trickster (MOUNT!)
 			["timeline"] = { ADDED_8_3_0 },
 		}),
@@ -148,7 +151,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_10_2_0 },
 		}),
 		i(229418, {	-- Trader's Gilded Brutosaur (MOUNT!)
-			["timeline"] = { ADDED_11_0_5, "removed 11.0.5.99999" },	-- Available through January 6, 2025
+			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.99999" },	-- Available through January 6, 2025
 		}),
 		mount(346136, {	-- Viridian Phase-Hunter (MOUNT!)
 			["timeline"] = { ADDED_10_0_2 },	-- Not sure when exactly it got added to the shop.
@@ -470,6 +473,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		i(188136, {	-- Mrrgl's Shiny Shell
 			["timeline"] = { ADDED_9_1_5 },
+		}),
+
+		------ Sky Witch's Attire Set ------
+		iensemble(212221, {	-- Ensemble: Sky Witch's Attire
+			["timeline"] = { ADDED_11_0_5, "removed 11.1.7.99999" },	-- Removed March 31, 2025
 		}),
 
 		------ Sky-Captain's Masquerade Attire Set ------

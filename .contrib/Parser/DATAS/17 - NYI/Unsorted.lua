@@ -460,9 +460,6 @@ root(ROOTS.Unsorted, {
 			i(234472),	-- Earthen Crystal
 		})),
 		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
-			filter(BATTLE_PETS, {
-				i(229993),	-- Bluedoo (PET!) [Trading Post?]
-			}),
 			filter(TOYS, {
 				i(232302),	-- Unknown (TOY!)
 				i(232303),	-- Unknown (TOY!)
@@ -644,19 +641,6 @@ root(ROOTS.Unsorted, {
 				i(227597),	-- Red Crane Legwraps
 			}),
 			filter(COSMETIC, {
-				i(229807),	-- Crown of the Icy Blue Rose
-				i(229808),	-- Gossamer Cyan Gown
-				i(229811),	-- Frost Etched Dagger
-				i(229812),	-- Chilled Axe
-				i(229813),	-- Crystalline Longbow of the Heavens
-				i(229814),	-- Fan of Cooling
-				i(229815),	-- Sky Witch's Airy Stave
-				i(229816),	-- Sky Witch's Airy Wand
-				i(229817),	-- Lovely Airy Longbow
-				i(229961),	-- Candied Knife
-				i(229962),	-- Tree Topper
-				i(229963),	-- Great Candied Blade
-				i(229999),	-- Classic Cloudy Tabard
 				i(230033),	-- Prowler's Midnight Shoulder Cape
 				i(230035),	-- Prowler's Sepia Shoulder Cape
 				i(230036),	-- Prowler's Grassy Shoulder Cape
@@ -665,13 +649,11 @@ root(ROOTS.Unsorted, {
 				i(230039),	-- Prowler's Brick Shoulder Cape
 				i(230040),	-- Prowler's Camo Shoulder Cape
 				i(230041),	-- Prowler's Lively Shoulder Cape
-				i(230043),	-- Prowler's Icy Shoulder Cape
 				i(230044),	-- Prowler's Pink Shoulder Cape
 				i(230045),	-- Prowler's Carrot Shoulder Cape
 				i(230046),	-- Prowler's Rosy Shoulder Cape
 				i(230047),	-- Prowler's Plum Shoulder Cape
 				i(230050),	-- Prowler's Aquatic Shoulder Cape
-				i(230051),	-- Prowler's Snowy Shoulder Cape
 				i(230054),	-- Prowler's Midnight Cowl
 				i(230055),	-- Prowler's Azure Cowl
 				i(230056),	-- Prowler's Sepia Cowl
@@ -681,7 +663,6 @@ root(ROOTS.Unsorted, {
 				i(230060),	-- Prowler's Camo Cowl
 				i(230061),	-- Prowler's Brick Cowl
 				i(230062),	-- Prowler's Lively Cowl
-				i(230064),	-- Prowler's Icy Cowl
 				i(230065),	-- Prowler's Pink Cowl
 				i(230066),	-- Prowler's Carrot Cowl
 				i(230067),	-- Prowler's Rosy Cowl
@@ -689,7 +670,6 @@ root(ROOTS.Unsorted, {
 				i(230069),	-- Prowler's Crimson Cowl
 				i(230070),	-- Prowler's Violet Cowl
 				i(230071),	-- Prowler's Aquatic Cowl
-				i(230072),	-- Prowler's Snowy Cowl
 				i(230073),	-- Prowler's Sunny Cowl
 				i(230074),	-- Prowler's Midnight Mask
 				i(230075),	-- Prowler's Azure Mask
@@ -700,7 +680,6 @@ root(ROOTS.Unsorted, {
 				i(230080),	-- Prowler's Camo Mask
 				i(230081),	-- Prowler's Brick Mask
 				i(230082),	-- Prowler's Lively Mask
-				i(230084),	-- Prowler's Icy Mask
 				i(230085),	-- Prowler's Pink Mask
 				i(230086),	-- Prowler's Carrot Mask
 				i(230087),	-- Prowler's Rosy Mask
@@ -708,7 +687,6 @@ root(ROOTS.Unsorted, {
 				i(230089),	-- Prowler's Crimson Mask
 				i(230090),	-- Prowler's Violet Mask
 				i(230091),	-- Prowler's Aquatic Mask
-				i(230092),	-- Prowler's Snowy Mask
 				i(230093),	-- Prowler's Sunny Mask
 				i(230152),	-- Ensemble: Prowler's Midnight Headgear
 				i(230166),	-- Ensemble: Prowler's Sepia Headgear
@@ -718,14 +696,11 @@ root(ROOTS.Unsorted, {
 				i(230170),	-- Ensemble: Prowler's Camo Headgear
 				i(230171),	-- Ensemble: Prowler's Brick Headgear
 				i(230172),	-- Ensemble: Prowler's Lively Headgear
-				i(230174),	-- Ensemble: Prowler's Icy Headgear
 				i(230175),	-- Ensemble: Prowler's Pink Headgear
 				i(230176),	-- Ensemble: Prowler's Carrot Headgear
 				i(230177),	-- Ensemble: Prowler's Rosy Headgear
 				i(230178),	-- Ensemble: Prowler's Plum Headgear
 				i(230181),	-- Ensemble: Prowler's Aquatic Headgear
-				i(230182),	-- Ensemble: Prowler's Snowy Headgear
-				i(231017),	-- Wings of the Onyx Monarch
 			}),
 			n(DUNGEONS_AND_RAIDS, {	-- Raid
 				i(231511),	-- Relic Coffer Key Fragment
@@ -809,7 +784,6 @@ root(ROOTS.Unsorted, {
 			i(232631),	-- Wrapped Spear
 			--
 			i(228911),	-- Xal'atath's Rusty Coin
-			i(233053),	-- Crown of the Violet Rose
 			i(234413),	-- Satchel of Exotic Mysteries
 			--
 		})),
@@ -1022,7 +996,6 @@ root(ROOTS.Unsorted, {
 				exploration(14979),	-- City of Threads
 				exploration(15110),	-- Contender's Gate
 				exploration(15172),	-- Councilward's Rise
-				exploration(14952),	-- Crawling Chasm
 				exploration(15178),	-- Crossroads Plaza
 				exploration(15376),	-- Crown of Shadows
 				exploration(15177),	-- Dalaran
@@ -1034,18 +1007,14 @@ root(ROOTS.Unsorted, {
 				exploration(15171),	-- Deepforge Manufacturing Bay
 				exploration(14990),	-- Deephaul Ravine
 				exploration(14903),	-- Deepstrike Point
-				exploration(15474),	-- Deepwalker Pass
 				exploration(15329),	-- Delver's Headquarters
 				exploration(15108),	-- Dev Map - Exile's Reach - Tower
-				exploration(15358),	-- Discordant Sieve
 				exploration(15094),	-- Duskrise Acreage
 				exploration(14999),	-- Earthcrawl Mines
 				exploration(15155),	-- Echoing Overlook
-				exploration(14945),	-- Faerin's Advance
 				exploration(15047),	-- Fallside Outpost
 				exploration(14821),	-- Fetid Grotto
 				exploration(15142),	-- Firewall of Negation
-				exploration(15179),	-- Fortune's Fall
 				exploration(15044),	-- Foundation Hall
 				exploration(14957),	-- Fungal Folly
 				exploration(15361),	-- Gemvein Tunnels
@@ -1072,17 +1041,14 @@ root(ROOTS.Unsorted, {
 				exploration(15343),	-- KVigue Test
 				exploration(15470),	-- Laboratory of the Grand Splicer
 				exploration(15023),	-- Lightless Depths
-				exploration(15034),	-- Lightspark
 				exploration(15149),	-- Mereldar
 				exploration(15545),	-- Mereldar
-				exploration(15335),	-- Morgaen's Tears
 				exploration(14998),	-- Mycomancer Cavern
 				exploration(14980),	-- Nerub-ar Palace
 				exploration(15362),	-- Nerub-ar Gatehouse
 				exploration(15005),	-- Nightfall Sanctum
 				exploration(15183),	-- Oath Gate
 				exploration(14822),	-- Pillarstone Spire
-				exploration(14947),	-- Pillar-nest Noth
 				exploration(15513),	-- Pocket Dimension
 				exploration(14954),	-- Priory of the Sacred Flame
 				exploration(15150),	-- Priory of the Sacred Flame
@@ -1116,7 +1082,6 @@ root(ROOTS.Unsorted, {
 				exploration(14883),	-- The Stonevault
 				exploration(14920),	-- The Basin
 				exploration(14938),	-- The Rookery
-				exploration(14951),	-- The Silken Path
 				exploration(15002),	-- The Waterworks
 				exploration(15003),	-- The Dread Pit
 				exploration(15006),	-- The Sinkhole
@@ -1155,7 +1120,6 @@ root(ROOTS.Unsorted, {
 				exploration(15147),	-- Veneration Grounds
 				exploration(15546),	-- Veneration Grounds
 				exploration(15387),	-- Warband Camp
-				exploration(15384),	-- Whispering Pool
 				exploration(15001),	-- Zekvir's Lair
 				exploration(14747),	-- Zone 4 Dev Land
 				exploration(15055),	-- zzoldPriory of the Sacred Flame

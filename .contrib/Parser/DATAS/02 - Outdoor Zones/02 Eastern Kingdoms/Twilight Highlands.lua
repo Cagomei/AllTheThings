@@ -3003,7 +3003,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						107574,	-- Anduin Wrynn
 					},
 					["sourceQuest"] = 28716,	-- Hero's Call: Twilight Highlands!
-					["coord"] = { 85.6, 31.8, STORMWIND_CITY },
+					["coord"] = { 85.9, 32.8, STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),

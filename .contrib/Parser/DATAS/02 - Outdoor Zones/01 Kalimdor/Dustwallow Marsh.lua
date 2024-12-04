@@ -1675,8 +1675,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
 					["timeline"] = { ADDED_3_1_0 },
 					["OnUpdate"] = [[function(t)
-						if not t.collected and t.collectible then
-							t.collectible = ]] .. WOWAPI_GetItemCount(45858) .. [[ == 0;
+						if not t.collected and t.collectible and ]] .. WOWAPI_GetItemCount(45858) .. [[ == 0 then
+							t.collectible = false;
 						end
 					end]],
 					["requireSkill"] = FISHING,

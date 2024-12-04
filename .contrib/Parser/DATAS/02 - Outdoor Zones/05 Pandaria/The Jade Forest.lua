@@ -2378,10 +2378,12 @@ root(ROOTS.Zones, {
 					warchiefscommand(q(29611, {	-- The Art of War (Nobody)
 						["description"] = "Players who have not completed Vashj'ir will receive this version of The Art of War.",
 						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_5_0_4 },
 					})),
 					warchiefscommand(q(29612, {	-- The Art of War (Veteran)
 						["description"] = "Players who have completed Vashj'ir will receive this version of The Art of War.",
 						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_5_0_4 },
 					})),
 					q(29933, {	-- The Bees' Knees
 						["minReputation"] = { FACTION_FOREST_HOZEN, FRIENDLY },

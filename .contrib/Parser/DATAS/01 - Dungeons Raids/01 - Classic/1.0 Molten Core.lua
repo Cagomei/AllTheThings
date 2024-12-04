@@ -50,6 +50,134 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(50, 50, 25),
 		["groups"] = {
+			header(HEADERS.Item, 17182, {	-- Sulfuras, Hand of Ragnaros
+				["isRaid"] = true,
+				["groups"] = {
+					-- #IF NOT SEASON_OF_DISCOVERY
+					ach(429, {	-- Sulfuras, Hand of Ragnaros
+						["provider"] = { "i", 17182 },	-- Sulfuras, Hand of Ragnaros
+						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
+					}),
+					-- #ENDIF
+					i(17182, {	-- Sulfuras, Hand of Ragnaros
+						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+						["cost"] = {
+							{ "i", 17204, 1 },	-- Eye of Sulfuras
+							{ "i", 17193, 1 },	-- Sulfuron Hammer
+						},
+					}),
+				},
+			}),
+			-- #if NOT SEASON_OF_DISCOVERY
+			header(HEADERS.Item, 19019, {	-- Thunderfury, Blessed Blade of the Windseeker
+				["isRaid"] = true,
+				["groups"] = {
+					applyclassicphase(PHASE_THREE, q(7785, {	-- Examine the Vessel
+						["qg"] = 14347,	-- Highlord Demitrian
+						["provider"] = { "i", 19016 },	-- Vessel of Rebirth
+						["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
+						-- #if ANYCLASSIC
+						-- Completable by any class in Retail... confirm for Classic
+						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
+						["classes"] = SWORD_CLASSES,
+						-- #endif
+						["coords"] = {
+							-- #if AFTER LEGION
+							{ 29.6, 10.6, SILITHUS },
+							-- #else
+							{ 21.7, 8.6, SILITHUS },
+							-- #endif
+						},
+						["lvl"] = 60,
+						["cost"] = {
+							{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
+							{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
+						},
+					})),
+					applyclassicphase(PHASE_THREE, q(7786, {	-- Thunderaan the Windseeker
+						["qg"] = 14347,	-- Highlord Demitrian
+						["sourceQuest"] = 7785,	-- Examine the Vessel
+						["altQuests"] = { 7521 },	-- Thunderaan the Windseeker [Original?]
+						["coords"] = {
+							-- #if AFTER LEGION
+							{ 29.6, 10.6, SILITHUS },
+							-- #else
+							{ 21.7, 8.6, SILITHUS },
+							-- #endif
+						},
+						-- #if ANYCLASSIC
+						-- Completable by any class in Retail... confirm for Classic
+						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
+						["classes"] = SWORD_CLASSES,
+						-- #endif
+						-- #if NOT ANYCLASSIC
+						["cost"] = {
+							{ "i", 17771, 10 },	-- Elementium Bar x10
+							{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
+							{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
+						},
+						-- #endif
+						["lvl"] = 60,
+						["groups"] = {
+							objective(1, {	-- 0/10 Elementium Bar
+								["provider"] = { "i", 17771 },	-- Elementium Bar
+								-- #if SEASON_OF_DISCOVERY
+								-- #if BEFORE 1.15.4
+								["description"] = "Neither the Elementium Ore nor the recipe for smelting these bars are in the game until BWL... In the mean time, gather the required materials while things are less in demand.",
+								-- #endif
+								-- #endif
+								["cost"] = {
+									{ "i", 18562,  10 },	-- Elementium Ore
+									{ "i", 12360, 100 },	-- Arcanite Bar
+									{ "i", 17010,  10 },	-- Fiery Core
+									{ "i", 18567,  30 },	-- Elemental Flex
+								},
+							}),
+							objective(2, {	-- 0/1 Essence of the Firelord
+								["provider"] = { "i", 19017 },	-- Essence of the Firelord
+							}),
+							objective(3, {	-- 0/1 Bindings of the Windseeker [Left]
+								["provider"] = { "i", 18563 },	-- Bindings of the Windseeker [Left]
+							}),
+							objective(4, {	-- 0/1 Bindings of the Windseeker [Right]
+								["provider"] = { "i", 18564 },	-- Bindings of the Windseeker [Right]
+							}),
+							n(14435, {	-- Prince Thunderaan <The Wind Seeker>
+								["description"] = "This is a 40-man raid boss.",
+								-- #if ANYCLASSIC
+								["modelScale"] = 20,
+								-- #endif
+								["groups"] = {
+									i(19018),	-- Dormant Wind Kissed Blade
+								},
+							}),
+						},
+					})),
+					applyclassicphase(PHASE_THREE, q(7787, {	-- Rise, Thunderfury!
+						["qg"] = 14347,	-- Highlord Demitrian
+						["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
+						["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
+						-- #if ANYCLASSIC
+						-- Completable by any class in Retail... confirm for Classic
+						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
+						["classes"] = SWORD_CLASSES,
+						-- #endif
+						["coord"] = { 21.7, 8.6, SILITHUS },
+						["lvl"] = 60,
+						["groups"] = {
+							ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
+								["provider"] = { "i", 19019 },	-- Thunderfury, Blessed Blade of the Windseeker
+								["classes"] = { DEATHKNIGHT, DEMONHUNTER, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
+							}),
+							i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(ACHIEVEMENTS, {
 				achWithRep(955, FACTION_HYDRAXIAN_WATERLORDS, {	-- Hydraxian Waterlords
 					["maps"] = {
@@ -142,30 +270,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				-- #if NOT SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_THREE, q(7785, {	-- Examine the Vessel
-					["qg"] = 14347,	-- Highlord Demitrian
-					["provider"] = { "i", 19016 },	-- Vessel of Rebirth
-					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
-					-- #if ANYCLASSIC
-					-- Completable by any class in Retail... confirm for Classic
-					-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
-					["classes"] = SWORD_CLASSES,
-					-- #endif
-					["coords"] = {
-						-- #if AFTER LEGION
-						{ 29.6, 10.6, SILITHUS },
-						-- #else
-						{ 21.7, 8.6, SILITHUS },
-						-- #endif
-					},
-					["lvl"] = 60,
-					["cost"] = {
-						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
-						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
-					},
-				})),
-				-- #endif
 				q(6821, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Eye of the Emberseer
 					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuests"] = {
@@ -234,27 +338,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				-- #if NOT SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_THREE, q(7787, {	-- Rise, Thunderfury!
-					["qg"] = 14347,	-- Highlord Demitrian
-					["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
-					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
-					-- #if ANYCLASSIC
-					-- Completable by any class in Retail... confirm for Classic
-					-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
-					["classes"] = SWORD_CLASSES,
-					-- #endif
-					["coord"] = { 21.7, 8.6, SILITHUS },
-					["lvl"] = 60,
-					["groups"] = {
-						ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
-							["provider"] = { "i", 19019 },	-- Thunderfury, Blessed Blade of the Windseeker
-							["classes"] = { DEATHKNIGHT, DEMONHUNTER, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
-						}),
-						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
-					},
-				})),
-				-- #endif
 				q(6805, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- Stormers and Rumblers
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
@@ -299,67 +382,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				-- #if NOT SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_THREE, q(7786, {	-- Thunderaan the Windseeker
-					["qg"] = 14347,	-- Highlord Demitrian
-					["sourceQuest"] = 7785,	-- Examine the Vessel
-					["altQuests"] = { 7521 },	-- Thunderaan the Windseeker [Original?]
-					["coords"] = {
-						-- #if AFTER LEGION
-						{ 29.6, 10.6, SILITHUS },
-						-- #else
-						{ 21.7, 8.6, SILITHUS },
-						-- #endif
-					},
-					-- #if ANYCLASSIC
-					-- Completable by any class in Retail... confirm for Classic
-					-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
-					["classes"] = SWORD_CLASSES,
-					-- #endif
-					-- #if NOT ANYCLASSIC
-					["cost"] = {
-						{ "i", 17771, 10 },	-- Elementium Bar x10
-						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
-						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
-					},
-					-- #endif
-					["lvl"] = 60,
-					["groups"] = {
-						objective(1, {	-- 0/10 Elementium Bar
-							["provider"] = { "i", 17771 },	-- Elementium Bar
-							-- #if SEASON_OF_DISCOVERY
-							-- #if BEFORE 1.15.4
-							["description"] = "Neither the Elementium Ore nor the recipe for smelting these bars are in the game until BWL... In the mean time, gather the required materials while things are less in demand.",
-							-- #endif
-							-- #endif
-							["cost"] = {
-								{ "i", 18562,  10 },	-- Elementium Ore
-								{ "i", 12360, 100 },	-- Arcanite Bar
-								{ "i", 17010,  10 },	-- Fiery Core
-								{ "i", 18567,  30 },	-- Elemental Flex
-							},
-						}),
-						objective(2, {	-- 0/1 Essence of the Firelord
-							["provider"] = { "i", 19017 },	-- Essence of the Firelord
-						}),
-						objective(3, {	-- 0/1 Bindings of the Windseeker [Left]
-							["provider"] = { "i", 18563 },	-- Bindings of the Windseeker [Left]
-						}),
-						objective(4, {	-- 0/1 Bindings of the Windseeker [Right]
-							["provider"] = { "i", 18564 },	-- Bindings of the Windseeker [Right]
-						}),
-						n(14435, {	-- Prince Thunderaan <The Wind Seeker>
-							["description"] = "This is a 40-man raid boss.",
-							-- #if ANYCLASSIC
-							["modelScale"] = 20,
-							-- #endif
-							["groups"] = {
-								i(19018),	-- Dormant Wind Kissed Blade
-							},
-						}),
-					},
-				})),
-				-- #endif
 			}),
 			n(REWARDS, {
 				i(17333, {	-- Aqual Quintessence
@@ -842,21 +864,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					ach(5056, {	-- Molten Core Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),
-					ach(429, {	-- Sulfuras, Hand of Ragnaros
-						["provider"] = { "i", 17182 },	-- Sulfuras, Hand of Ragnaros
-						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
-					}),
 					-- #endif
-					i(17182, {	-- Sulfuras, Hand of Ragnaros
-						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
-						-- #if SEASON_OF_DISCOVERY
-						["timeline"] = { "removed 1.15.3" },
-						-- #endif
-						["cost"] = {
-							{ "i", 17204, 1 },	-- Eye of Sulfuras
-							{ "i", 17193, 1 },	-- Sulfuron Hammer
-						},
-					}),
 					i(17204, {	-- Eye of Sulfuras
 						-- #if SEASON_OF_DISCOVERY
 						["timeline"] = { "removed 1.15.3" },

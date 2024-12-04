@@ -61,7 +61,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(109),	-- Furlbrow's Pumpkin Farm
 				exploration(113),	-- Gold Coast Quarry
 				exploration(111),	-- Jangolode Mine
+				visit_exploration(2,	{coord={58.4,9.4,WESTFALL}}),	-- Longshore
 				exploration(20),	-- Moonbrook
+				visit_exploration(5289,{coord={69.9,74.0,WESTFALL}}),	-- Mortwake's Tower
 				exploration(107),	-- Saldean's Farm
 				exploration(108),	-- Sentinel Hill
 				exploration(919),	-- Stendel's Pond
@@ -73,9 +75,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(922),	-- The Dust Plains
 				exploration(916),	-- The Jansen Stead
 				exploration(918),	-- The Molsen Farm
-				-- #if AFTER CATA
-				exploration(5290),	-- The Raging Chasm
-				-- #endif
+				visit_exploration(5290,{coord={35.3,45.3,WESTFALL}}),	-- The Raging Chasm
 				exploration(115),	-- Westfall Lighthouse
 			}),
 			-- #if AFTER 4.1.0.13726
@@ -180,6 +180,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 56.9, 47.2, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
+					["description"] = "This quest gets marked as completed when you complete the quest 'A Swift Message' (26393) in Elwynn Forest.",
 					["races"] = { HUMAN },
 					["lvl"] = 10,
 				}),
@@ -318,6 +319,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						THE_BARRENS,
 						REDRIDGE_MOUNTAINS,
 						TIRISFAL_GLADES,
+						WESTFALL,
 					},
 					["cost"] = { { "i", 11109, 1 } },	-- Special Chicken Feed
 					["repeatable"] = true,
@@ -340,6 +342,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 6181,	-- A Swift Message
 					["coord"] = { 56.4, 52.6, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
+					["description"] = "This quest gets marked as completed when you complete the quest 'Continue to Stormwind' (26394) in Stormwind.",
 					["maps"] = { STORMWIND_CITY },
 					["races"] = { HUMAN },
 					["lvl"] = 10,
@@ -1959,10 +1962,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),
+				n(43948, {	-- Private Jackson <Provisioner>
+					["coord"] = { 42.2, 64.8, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select","itemID",
+						1198,	-- Claymore
+						821,	-- Cutlass
+						922,	-- Dacian Falx
+						2024,	-- Espadon
+						2207,	-- Jambiya
+						2209,	-- Kris
+						923,	-- Longsword
+						2208,	-- Poniard
+						20977,	-- Recruit's Shortsword
+						2027,	-- Scimitar
+						20982,	-- Sharp Dagger
+					}},
+				}),
 				n(1668, {	-- William MacGregor <Bowyer>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 57.6, 53.6, WESTFALL },
+						{ 57.7, 53.7, WESTFALL },
 						-- #else
 						{ 57.6, 53.8, WESTFALL },
 						-- #endif

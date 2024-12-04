@@ -211,6 +211,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				--
 				q(78464, {	-- Delve into the Earth
+					["description"] = "For some reason, Blizzard decided that this quest would have Spec-specific loot attached. You will NOT collect all available appearances for your class automatically - make sure you are in the correct spec.",
 					["sourceQuests"] = { 78461 },	-- The Fourth Seat
 					["provider"] = { "n", 217879 },	-- Adelgonn
 					["coord"] = { 41.8, 72.6, ISLE_OF_DORN },
@@ -248,6 +249,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(78462, {	-- Echoes of Compassion
+					["description"] = "For some reason, Blizzard decided that this quest would have Spec-specific loot attached. You will NOT collect all available appearances for your class automatically - make sure you are in the correct spec.",
 					["sourceQuests"] = {
 						79553,	-- A Natural Remedy
 						78463,	-- Building Blocks
@@ -739,7 +741,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79724, {	-- A Titanic Expedition!
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 217763 },	-- Rannan Korren
-					["coord"] = { 59.4, 25.2, ISLE_OF_DORN },
+					["coord"] = { 58.8, 28.3, ISLE_OF_DORN },
 				}),
 				q(79726, {	-- "Cataloguing"
 					["sourceQuests"] = { 79724 },	-- A Titanic Expedition!

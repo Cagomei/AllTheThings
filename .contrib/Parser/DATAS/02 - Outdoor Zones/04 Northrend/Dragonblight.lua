@@ -216,7 +216,7 @@ root(ROOTS.Zones, {
 					exploration(4165),	-- Agmar's Hammer
 					exploration(4172),	-- Angrathar the Wrathgate
 					exploration(4183),	-- Azure Dragonshrine
-					exploration(4175),	-- Bronze Dragonshrine
+					visit_exploration(4175,{coord={74.1,36.5,DRAGONBLIGHT}}),	-- Bronze Dragonshrine
 					exploration(4230),	-- Coldwind Heights
 					exploration(4478),	-- Coldwind Pass
 					exploration(4227),	-- Dragon's Fall
@@ -228,12 +228,13 @@ root(ROOTS.Zones, {
 					visit_exploration(4225,{coord={22.1,65.1,DRAGONBLIGHT}}),	-- Glittering Strand
 					exploration(4163),	-- Icemist Village
 					visit_exploration(4153,{coord={38.2,62.6,DRAGONBLIGHT}}),	-- Indu'le Village
-					exploration(4194),	-- Jintha'kalar
+					visit_exploration(4481,{coord={88.4,21.7,DRAGONBLIGHT}}),	-- Jintha'kalar Passage
 					visit_exploration(4198,{coord={42.8,81.2,DRAGONBLIGHT}}),	-- Kili'ua's Atoll
 					exploration(4170),	-- Kor'kron Vanguard
 					exploration(4166),	-- Lake Indu'le
 					exploration(4191),	-- Light's Trust
 					exploration(4160),	-- Lothalor Woodlands
+					visit_exploration(4223,{coord={37.3,32.4,DRAGONBLIGHT}}),	-- Maw of Neltharion
 					exploration(4152),	-- Moa'ki Harbor
 					exploration(4157),	-- Moonrest Gardens
 					exploration(4234),	-- Naxxramas
