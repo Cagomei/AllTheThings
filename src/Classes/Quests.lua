@@ -467,6 +467,29 @@ local function CollectibleAsQuestOrAsLocked(t)
 	return (not locked and CollectibleAsQuest(t))
 		or CollectibleAsLocked(t, locked);
 end
+-- Returns whether the provided Quest group is expected to be available to the current character or another character when in debug/account mode
+app.IsQuestAvailable = function(t)
+	local questID = t.questID
+	return
+	-- must have a questID associated
+	questID
+	and
+	-- and not OTQ or is OTQ not yet known to be completed by any character
+	not OneTimeQuests[questID]
+	and
+	(
+		-- able to access quest on current character
+		not t.locked
+		or
+		(
+			-- debug/account mode
+			app.MODE_DEBUG_OR_ACCOUNT
+			and
+			-- Not Locked by a OPA/AW Quest (to access via another Character)
+			not AccountWideLockedQuestsCache[questID]
+		)
+	)
+end
 
 local function IsQuestSaved(questID)
 	-- NOTE: If Party Sync is supported, this will be replaced!

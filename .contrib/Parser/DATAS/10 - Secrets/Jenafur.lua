@@ -6,22 +6,23 @@ root(ROOTS.Secrets, {
 	n(159783, {	-- Jenafur
 		["description"] = "***Debug Mode is required to see all the steps.***\n",
 		["g"] = {
-			q(58076, {	-- Step 1: Speak to Amara
+			hqt(58076, {	-- Step 1: Speak to Amara
+				["name"] = "|cFFFFFFFFStep 1:|r Speak to Amara",
 				["description"] = "|cFFFFFFFFStep 1:|r Go to |cFFFFFFFF17.4, 49.3|r in Ashenvale. Speak with |cFFFFD700Amara Lunastar|r and follow her dialogue about her cat.\n",
 				["provider"] = { "n", 159799 },	-- Amara Lunastar
-				["name"] = "|cFFFFFFFFStep 1:|r Speak to Amara",
 				["coord"] = { 17.4, 49.3, ASHENVALE },
 			}),
-			o(339211, {	-- Step 2: Empty Dish
+			hqt(58098, {	-- Step 2: Empty Dish
+				["name"] = "|cFFFFFFFFStep 2:|r Empty Dish",
 				["description"] = "|cFFFFFFFFStep 2:|r Go inside the house at |cFFFFFFFF44.2, 53.0|r in Elwynn Forest to find the |cFFFFD700Empty Dish|r.\n",
-				["altQuests"] = { 58099 },	-- Amara's Wish (interacting with Empty Dish is optional)
-				["questID"] = 58098,	-- Step 2: Find the empty dish bowl
-				["isBreadcrumb"] = true,
+				["provider"] = { "o", 339211 },	-- Empty Dish
 				["sourceQuest"] = 58076,	-- Step 1: Speak to Amara
 				["coord"] = { 44.2, 53.0, ELWYNN_FOREST },
 				["lockCriteria"] = { 1, "questID", 58099 },	-- Amara's Wish
+				["DisablePartySync"] = true,
 			}),
-			q(58099, {	-- Amara's Wish
+			hqt(58099, {	-- Amara's Wish
+				["name"] = "|cFFFFFFFFStep 3:|r Amara's Wish",
 				["description"] = "|cFFFFFFFFStep 3:|r This step requires collecting various meats throughout |cffffd200Return to Karazhan|r and placing them in the Opera Hall to mimic a section of the Amara's Wish sheet music.\n\n|cffde1c1cOnce the items are picked up, you have 5 minutes to place them into the puzzle.  Once placed, they despawn after 5 minutes and 20 seconds.  Because of these time limits, it may be wise to ensure you have cleared the trash in the dungeon and have acquainted yourself with the locations of all the meats you need to pick up.\n\nTurn on Debug Mode to see descriptions for the locations of each meat and how to place them in the correct order!|r\n\nYou will need to collect items from Moroes' room as well as the hallways near Maiden of Virtue, and then take the items back to the audience area of the Opera Hall to place them.\n",
 				["providers"] = {
 					{ "n", 160374 },	-- Fishy Bits
@@ -32,7 +33,6 @@ root(ROOTS.Secrets, {
 				},
 				["sourceQuest"] = 58098,	-- Step 2: Empty Dish
 				["coord"] = { 46.7, 70.1, DEADWIND_PASS },	-- Return to Karazhan entrance
-				["name"] = "|cFFFFFFFFStep 3:|r Amara's Wish",
 				["g"] = {
 					n(160374, {	-- Fishy Bits (2)
 						["description"] = "Two are required.\n\n|cFFFFFFFF1.|r The first Fishy Bits can be found in the hallway prior to Maiden of Virtue.  Near the middle of hall on the left side, there is a doorway flanked by two lion statues.  The Fishy Bits are just past the lion statues and before the left-hand bust directly after them, against the wall.\n\n|cFFFFFFFF2.|r The second Fishy Bits can be found in Moroes' room, very close to the boss's platform.  It's between the bottom right corner of the platform and the upper left corner of the small right-hand table.\n",
