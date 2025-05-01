@@ -22,6 +22,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 		["lvl"] = { 45 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(42032, {	-- Antorus, the Burning Throne (automated)
+					["timeline"] = { ADDED_11_1_7 },
+				}),
 				ach(12020),	-- Argussy Up (Antorus, the Burning Throne)
 				ach(11988, {	-- Light's Breach
                     crit(37232, {    -- Garothi Worldbreaker

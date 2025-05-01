@@ -55,20 +55,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 	["modID"] = 22,	-- Timewalking
 	["difficultyID"] = DIFFICULTY.DUNGEON.TIMEWALKING;
 	["groups"] = {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 } }, {
-			ach(19079, {	-- Master of the Turbulent Timeways (automated!)
+		n(ACHIEVEMENTS, {
+			ach(19079, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 } },{	-- Master of the Turbulent Timeways (automated!)
 				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
-				["groups"] = {
-					i(205208),	-- Sandy Shalewing (MOUNT!)
-				},
-			}),
+				["groups"] = { i(205208) },	-- Sandy Shalewing (MOUNT!)
+			})),
 			ach(41056, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, REMOVED_11_1_0 } }, {	-- Master of the Turbulent Timeways II (automated!)
 				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
-				["groups"] = {
-					i(232624),	-- Timely Buzzbee (MOUNT!)
-				},
+				["groups"] = { i(232624) },	-- Timely Buzzbee (MOUNT!)
 			})),
-		})),
+			ach(41779, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 } }, {	-- Master of the Turbulent Timeways III (automated!)
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				["groups"] = { i(238739) },	-- Chrono Corsair (MOUNT!)
+			})),
+		}),
 		n(COMMON_BOSS_DROPS, {
 			i(133543, {	-- Infinite Timereaver (MOUNT!)
 				["crs"] = TIMEWALKING_DUNGEON_CREATURE_IDS,
@@ -87,11 +87,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 				118828,	-- Mistweaver Xia <Timewalking Vendor>
 				-- #endif
 				-- #if AFTER 8.1.5.29701
-				151987,	-- Kronnus <Timewalking Vendor> [Horde Side]
-				151955,	-- Tempra <Timewalking Vendor> [Alliance Side]
+				151987,	-- Kronnus <Timewalking Vendor> [Horde]
+				151955,	-- Tempra <Timewalking Vendor> [Alliance]
 				-- #endif
 				-- #if AFTER 9.1.5.40871
 				180899,	-- Aridormi <Timewalking Vendor>
+				-- #endif
+				-- #if AFTER 11.1.7
+					-- TODO Churbro
 				-- #endif
 			},
 			["maps"] = {
@@ -112,6 +115,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 				-- #endif
 				-- #if AFTER 9.1.5.40871
 				LEGION_DALARAN,
+				-- #endif
+				-- #if AFTER 11.1.7
+				BORALUS,
+				DAZARALOR, -- TODO or Zuldazar?
 				-- #endif
 			},
 			["groups"] = {
@@ -2119,7 +2126,6 @@ AddInstancesToRotation(EXPANSION.TBC, {
 	-- #endif
 });
 
-
 -- Wrath of the Lich King Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT, {
 	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
@@ -3681,8 +3687,6 @@ AddInstancesToRotation(EXPANSION.WRATH, {
 	-- #endif
 });
 
-
-
 -- Cataclysm Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLYSM_DUNGEON_EVENT, {
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3 }},{
@@ -4653,7 +4657,6 @@ AddInstancesToRotation(EXPANSION.CATA, {
 	-- #endif
 });
 
-
 -- Mists of Pandaria Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_OF_PANDARIA_DUNGEON_EVENT, {
 	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 }},{
@@ -5267,7 +5270,6 @@ AddInstancesToRotation(EXPANSION.CLASSIC, {
 	246,	-- Scholomance
 	-- #endif
 });
-
 
 -- Warlords of Draenor Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORDS_OF_DRAENOR_DUNGEON_EVENT, {
@@ -6244,7 +6246,6 @@ AddInstancesToRotation(EXPANSION.WOD, {
 	-- #endif
 });
 
-
 -- Legion Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_DUNGEON_EVENT, {
 	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{
@@ -6952,19 +6953,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
-			q(78204),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways I (spellID 423861)
-		})),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
-		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
-			q(85877),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways II (spellID 471544)
-		})),
-	})),
-});
-
 -- Only instances still in rotation should be in this list.
 -- This will prevent instances that don't have Timewalking currently from showing in the mini list.
 AddInstancesToRotation(EXPANSION.LEGION, {
@@ -6979,6 +6967,81 @@ AddInstancesToRotation(EXPANSION.LEGION, {
 	767,	-- Neltharion's Lair
 	707,	-- Vault of the Wardens
 });
+
+-- Battle for Azeroth Timewalking
+root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_DUNGEON_EVENT, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 }},{
+		n(QUESTS, {
+		}),
+		n(VENDORS, {
+			--[[
+
+			n(???, {	-- Churbro <Timewalking Vendor>
+				["coords"] = {
+
+				},
+				["g"] = {
+					n(ARMOR, {
+						filter(CLOTH, {
+
+						}),
+						filter(LEATHER, {
+
+						}),
+						filter(MAIL, {
+
+						}),
+						filter(PLATE, {
+
+						}),
+					}),
+					filter(BATTLE_PETS, {
+						i(245543, {	-- Flotsam Harvester (PET!)
+							["cost"] = {{ "c", TIMEWARPED_BADGE, ??? }},
+						}),
+						i(245574, {	-- Lil' Daz'ti (PET!)
+							["cost"] = {{ "c", TIMEWARPED_BADGE, ??? }},
+						}),
+					}),
+					filter(COSMETIC, {
+
+					}),
+					filter(MISC, {
+
+					}),
+					filter(MOUNTS, {
+						i(245695, {	-- Reins of the Ivory Savagemane (MOUNT!)
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+						}),
+						i(245695, {	-- Reins of the Moonlit Nightsaber (MOUNT!)
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+						}),
+					}),
+					filter(TOYS, {
+
+					}),
+					n(WEAPONS, {
+
+					}),
+				},
+			}),
+			]]--
+		}),
+	})),
+})));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(EXPANSION.BFA, {
+	-- Dungeons
+	968,	-- Atal'Dazar
+	1001,	-- Freehold
+	1041,	-- King's Rest
+	1036,	-- Shrine of the Storm
+	1030,	-- Temple of Sethraliss
+	1021,	-- Waycrest Manor
+});
+
 --[[
 -- Post Processors
 table.insert(POST_PROCESSING_FUNCTIONS, function()
@@ -6986,3 +7049,17 @@ table.insert(POST_PROCESSING_FUNCTIONS, function()
 	root(ROOTS.Holidays, InfiniteTimereaver);
 end);
 ]]--
+
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
+			q(78204),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways I (spellID 423861)
+		})),
+	})),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
+			q(85877),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways II (spellID 471544)
+			--q(???, { ["timeline"] = { ADDED_11_1_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways III (spellID ???)
+		})),
+	})),
+});

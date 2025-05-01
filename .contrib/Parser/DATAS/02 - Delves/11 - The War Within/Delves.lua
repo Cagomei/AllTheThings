@@ -689,6 +689,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		ach(40455, {	-- Buddy System
 			["maps"] = ALL_THE_DELVES,
 		}),
+		ach(42212, {	-- Console Overcharged
+			["timeline"] = { ADDED_11_1_7 },
+		}),
 		ach(40882, {	-- Copious Coffers
 			["maps"] = ALL_REGULAR_DELVES,
 			["g"] = {

@@ -311,6 +311,7 @@ HeaderAssignments = {
 	["Little Scales Daycare"] = -1000310,
 	["Loamm Niffen"] = -1001154,
 	["Lore"] = -1000955,
+	["Lorewalking"] = -1001182,
 	["Lost Area"] = -1000900,
 	["Love is in the Air"] = -1000220,
 	["Loyalty"] = -1001133,
@@ -650,4 +651,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001181;
+NextHeaderID = -1001183;

@@ -30,7 +30,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 				ach(42003),	-- Bullhorn of More Plenty
 				ach(42004),	-- Bullhorn of Most Plenty
 				ach(41905),	-- Center of Attention
-				ach(41700),	-- Dastardly Duos Weekly Wins
+				ach(41700, {	-- Dastardly Duos Weekly Wins
+					["timeline"] = { REMOVED_11_1_7 },
+				}),
 				ach(41706, {	-- Dastardly Duos Weekly High Score
 					-- TODO: Does parser know what to do with 21 (Designer Value{`Uses Record ID})?
 					["sym"] = {{ "achievement_criteria"}},

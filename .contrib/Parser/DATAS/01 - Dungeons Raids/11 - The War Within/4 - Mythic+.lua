@@ -103,6 +103,28 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			ach(15050, {	-- Keystone Hero: Theater of Pain
 				spell(354467),	-- Path of the Undefeated
 			}),
+			ach(42144, {	-- The Enterprising Damage Dealer (automated)
+				["timeline"] = { ADDED_11_1_7 },
+			}),
+			ach(42148, {	-- The Enterprising Dungeon Master
+				["timeline"] = { ADDED_11_1_7 },
+				-- Meta achievement
+				["sym"] = {{"meta_achievement",
+					42144,	-- The Enterprising Damage Dealer
+					42141,	-- The Enterprising Healer
+					42139,	-- The Enterprising Tank
+				}},
+				["groups"] = {
+					-- TODO: Title: Triple Threat
+				},
+			}),
+			ach(42141, {	-- The Enterprising Healer (automated)
+				["timeline"] = { ADDED_11_1_7 },
+			}),
+			ach(42139, {	-- The Enterprising Tank (automated)
+				["timeline"] = { ADDED_11_1_7 },
+			}),
+
 			ach(41724, {	-- The War Within Season 2: Resilient Keystone 12 (automated)
 				["collectible"] = false,
 			}),

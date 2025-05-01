@@ -22644,3 +22644,105 @@
 11.1.5.59919
 185425@@@Helpful Workshop Bot
 243253@@@Layne Pontelle
+11.1.7.60520
+228832@@@Lorewalker Cho
+230097@@@Marran Trollbane
+230246@@@Lorewalker Cho
+230330@@@N'Zoth the Corruptor
+230333@@@Yogg-Saron
+230334@@@C'Thun
+230336@@@Y'Shaarj
+230400@@@Xal'atath
+230561@@@C'Thun
+230571@@@Aqir Destroyer
+230573@@@Umbral Seer
+230576@@@Chosen Champion
+231472@@@Alonsus Faol
+231927@@@Y'Shaarj
+231931@@@Yogg-Saron
+232214@@@Xal'atath
+232231@@@Lorewalker Cho
+232987@@@Faerin Lothar
+233754@@@Jaina Proudmoore
+234125@@@Felguard Legionnaire
+234126@@@Horde Soldier
+234127@@@Hero of Azeroth
+234128@@@Hero of Azeroth
+234129@@@Hero of Azeroth
+234130@@@Alliance Soldier
+234232@@@Lorewalker Cho
+235669@@@Arthas
+236259@@@Terenas Menethil II
+236348@@@Arthas Menethil
+236617@@@Faerin Lothar
+238142@@@The Lich King
+238913@@@Captain Garrick
+240716@@@Highborne Arcanist
+240717@@@Highborne Arcanist
+240718@@@Highborne Arcanist
+240719@@@Night Elf Druid
+240720@@@Night Elf Druid
+240721@@@Malfurion Stormrage
+240813@@@Uther Lightbringer
+240814@@@Arthas Menethil
+240815@@@Jaina Proudmoore
+240816@@@Protectorate Commander
+241479@@@Protectorate Soldier
+241480@@@Consortium Merchant
+241497@@@Dimensius the All-Devouring
+241504@@@Faerin Lothar
+241510@@@Danath Trollbane
+241528@@@Ethereal Citizen
+241529@@@Ethereal Citizen
+241530@@@Ethereal Citizen
+241531@@@Wandering Warpweaver
+241759@@@High Elf Arcanist
+241760@@@High Elf Arcanist
+241762@@@High Elf Arcanist
+241779@@@[DNT] Invisible Bunny
+241912@@@Danath Trollbane
+241913@@@Eitrigg
+241914@@@Marran Trollbane
+241917@@@Faerin Lothar
+241918@@@Overlord Geya'rah
+241925@@@Amani Striker
+241926@@@Amani Commander
+241927@@@Amani Caster
+241933@@@Captain Roderick Brewston
+241934@@@Danath Loyalist
+241942@@@Scourge Ghoul
+241943@@@Red Dawn Recruit
+241946@@@Arthas Menethil
+241981@@@Quel'thalas Mage
+241982@@@Radiant Wyrm
+241983@@@Starving Wretched
+241984@@@Kael'thas Sunstrider
+241986@@@M'uru
+242095@@@Lady Liadrin
+242096@@@Lor'themar Theron
+242097@@@Prophet Velen
+242413@@@Grand Magister Rommath
+242414@@@Halduron Brightwing
+242415@@@Halduron Brightwing
+242819@@@Faerin Lothar
+242822@@@Marran Trollbane
+242825@@@Colonel Veronica Nials
+242826@@@Marran Trollbane
+242864@@@Stromgarde Footman
+242868@@@Stromgarde Footman
+242916@@@Colonel Veronica Nials
+243115@@@Eitrigg
+243116@@@Overlord Geya'rah
+243117@@@Danath Trollbane
+243905@@@Danath Trollbane
+244304@@@Newstead Farmer
+244308@@@Overlord Geya'rah
+244920@@@Danath Trollbane
+245178@@@Waypoint A
+245191@@@Dagran Thaurissan II
+245242@@@Waypoint B
+245245@@@G.M.O.D
+245362@@@Chosen Champion
+245545@@@Flotsam Harvester
+245647@@@Lil' Daz'ti
+245776@@@Waypoint C

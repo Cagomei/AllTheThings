@@ -4373,6 +4373,7 @@ i(232857, 4635);	-- Goggles
 i(241193, 3245);	-- Helpful Workshop Bot
 i(238986, 4794);	-- Mister Mans
 i(235980, 4756);	-- Scourge of the Aspects
+i(241188, 4804);	-- Swiftpaw
 i(235793, 4748);	-- Void-Scarred Parrot
 i(235795, 4749);	-- Void-Scarred Scorpid
 i(235797, 4750);	-- Void-Scarred Tallstrider Chick
@@ -4382,4 +4383,9 @@ i(223498, 4568);	-- Whoopy
 i(0, 4792);	-- Ada the Sweetest
 i(0, 4761);	-- Pascal the Wonder Pup
 i(239019, 4806);	-- Spicy Mean-Ball
-i(241188, 4804);	-- Swiftpaw
+------------------
+-- PATCH 11.1.7 --
+------------------
+--- UNSORTED ---
+i(245543, 4849);	-- Flotsam Harvester
+i(245574, 4852);	-- Lil' Daz'ti

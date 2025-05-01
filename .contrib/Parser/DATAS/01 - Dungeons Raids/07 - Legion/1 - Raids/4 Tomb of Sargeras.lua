@@ -74,6 +74,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				}),
 				ach(11760, {["timeline"] = {ADDED_7_2_0}}),	-- Retro Trend (Tomb of Sargeras)
+				ach(42031, {	-- Tomb of Sargeras (automated)
+					["timeline"] = { ADDED_11_1_7 },
+				}),
 				ach(11782),	-- Tomb of Sargeras Guild Run
 			}),
 			n(WORLD_QUESTS, {

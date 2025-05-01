@@ -5096,6 +5096,13 @@
 8795@@@Collector's Edition: Treasure Goblin
 8913@@@Collector's Edition: Dread Raven
 8915@@@Collector's Edition: Dread Hatchling
+5.5.0.60548
+8066@@@Heroic: Twin Empyreans
+8193@@@Twin Empyreans kills (LFR Throne of Thunder)
+8194@@@Twin Empyreans kills (10-player Normal Throne of Thunder)
+8195@@@Twin Empyreans kills (25-player Normal Throne of Thunder)
+8196@@@Twin Empyreans kills (10-player Heroic Throne of Thunder)
+8197@@@Twin Empyreans kills (25-player Heroic Throne of Thunder)
 6.0.1.18179
 8394@@@The Frostwind Slayer
 8463@@@Mythic: Immerseus
@@ -9599,7 +9606,6 @@
 15244@@@Renowned - Night Fae
 15245@@@Renowned - Venthyr
 9.1.5.40290
-8066@@@Heroic: Twin Empyreans
 9.1.5.40383
 15308@@@Tower Overwhelming
 15309@@@A Towering Success
@@ -16004,3 +16010,41 @@
 42004@@@Bullhorn of Most Plenty
 11.1.5.60008
 41990@@@Total Kill Score
+11.1.7.60520
+41757@@@11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid (YGR)
+41779@@@Master of the Turbulent Timeways III
+41818@@@Rise of the Red Dawn
+41820@@@Rise of the Red Dawn
+41859@@@Thanks for the Mementos
+42028@@@Ashes to Ashes
+42029@@@The Emerald Nightmare
+42030@@@The Nighthold
+42031@@@Tomb of Sargeras
+42032@@@Antorus, the Burning Throne
+42114@@@Broken Memories
+42139@@@The Enterprising Tank
+42141@@@The Enterprising Healer
+42144@@@The Enterprising Damage Dealer
+42148@@@The Enterprising Dungeon Master
+42187@@@Lorewalking: Ethereal Wisdom
+42188@@@Lorewalking: Blade's Bane
+42189@@@Lorewalking: The Lich King
+42212@@@Console Overcharged
+42213@@@Console Overcharged Purchase 1
+42214@@@Console Overcharged Purchase 2
+42215@@@Console Overcharged Purchase 3
+42216@@@Console Overcharged Purchase 4
+42217@@@Console Overcharged Purchase 5
+42218@@@Console Overcharged Purchase 6
+42219@@@Console Overcharged Purchase 7
+42220@@@Console Overcharged Purchase 8
+42221@@@Console Overcharged Purchase 9
+42222@@@Console Overcharged Purchase 10
+42223@@@Console Overcharged Purchase 11
+42224@@@Console Overcharged Purchase 12
+42225@@@Console Overcharged Purchase 13
+42226@@@Console Overcharged Purchase 14
+42227@@@Console Overcharged Purchase 15
+42228@@@Console Overcharged Purchase 16
+42229@@@Console Overcharged Purchase 17
+42230@@@11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid, First Time Tracker

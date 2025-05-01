@@ -3821,5 +3821,29 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(42000),	-- Total Props Destroyed
 			ach(42001),	-- Total Runs Completed
 		})),
+
+		-- 11.1.7
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
+			-- 11.1.7.60520
+			ach(41757),	-- 11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid (YGR)
+			ach(42213),	-- Console Overcharged Purchase 1
+			ach(42214),	-- Console Overcharged Purchase 2
+			ach(42215),	-- Console Overcharged Purchase 3
+			ach(42216),	-- Console Overcharged Purchase 4
+			ach(42217),	-- Console Overcharged Purchase 5
+			ach(42218),	-- Console Overcharged Purchase 6
+			ach(42219),	-- Console Overcharged Purchase 7
+			ach(42220),	-- Console Overcharged Purchase 8
+			ach(42221),	-- Console Overcharged Purchase 9
+			ach(42222),	-- Console Overcharged Purchase 10
+			ach(42223),	-- Console Overcharged Purchase 11
+			ach(42224),	-- Console Overcharged Purchase 12
+			ach(42225),	-- Console Overcharged Purchase 13
+			ach(42226),	-- Console Overcharged Purchase 14
+			ach(42227),	-- Console Overcharged Purchase 15
+			ach(42228),	-- Console Overcharged Purchase 16
+			ach(42229),	-- Console Overcharged Purchase 17
+			ach(42230),	-- 11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid, First Time Tracker
+		})),
 	}),
 });

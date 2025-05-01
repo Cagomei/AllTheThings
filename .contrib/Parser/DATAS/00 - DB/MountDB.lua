@@ -2058,3 +2058,21 @@ i(238967, 1226855);	-- Molten Cormaera
 i(236415, 1219705);	-- Spotted Black Riding Goat
 i(238900, 1226531);	-- Summer Harvesthog
 i(238901, 1226532);	-- Winter Harvesthog
+
+------------------
+-- PATCH 11.1.7 --
+------------------
+i(238739, 1226144);	-- Chrono Corsair
+--- UNSORTED ---
+i(243593, 1234859);	-- Banshee's Chilling Charger
+i(243594, 1235817);	-- Banshee's Grotesque Charger
+i(243596, 1235819);	-- Banshee's Putrid Charger
+i(243597, 1235820);	-- Banshee's Sickening Charger
+i(245694, 1237703);	-- Ivory Savagemane
+i(243590, 1235763);	-- Grandmaster's Deep Board
+i(243572, 1235756);	-- Grandmaster's Fire Board
+i(243591, 1235803);	-- Grandmaster's Royal Board
+i(243592, 1235806);	-- Grandmaster's Smokey Board
+i(245695, 1237631);	-- Moonlit Nightsaber
+i(0, 1236262);	-- Shaohao's Sage Serpent
+i(245936, 1240003);	-- Unarmored Deathtusk Felboar

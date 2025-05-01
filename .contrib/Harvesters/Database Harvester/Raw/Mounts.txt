@@ -2139,3 +2139,21 @@
 1226851@@@Felborn Cormaera
 1226855@@@Molten Cormaera
 1226856@@@Lavaborn Cormaera
+11.1.5.60568
+1226760@@@Prophet's Great Raven
+1226983@@@Archmage's Great Raven
+11.1.7.60520
+446352@@@Kickin' Kezan Waveshredder
+1226144@@@Chrono Corsair
+1234859@@@Banshee's Chilling Charger
+1235756@@@Grandmaster's Fire Board
+1235763@@@Grandmaster's Deep Board
+1235803@@@Grandmaster's Royal Board
+1235806@@@Grandmaster's Smokey Board
+1235817@@@Banshee's Grotesque Charger
+1235819@@@Banshee's Putrid Charger
+1235820@@@Banshee's Sickening Charger
+1236262@@@Shaohao's Sage Serpent
+1237631@@@Moonlit Nightsaber
+1237703@@@Ivory Savagemane
+1240003@@@Unarmored Deathtusk Felboar

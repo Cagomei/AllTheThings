@@ -50,6 +50,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
                         ["_encounter"] = { 1726, DIFFICULTY.RAID.LFR },
                     }),
                 }),
+				ach(42029, {	-- The Emerald Nightmare (automated)
+					["timeline"] = { ADDED_11_1_7 },
+				}),
 				ach(10866),	-- The Emerald Nightmare Guild Run
 			}),
 			petbattle(filter(BATTLE_PETS, {

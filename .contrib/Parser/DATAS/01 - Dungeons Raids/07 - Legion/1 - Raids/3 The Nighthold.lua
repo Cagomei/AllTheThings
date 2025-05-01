@@ -53,6 +53,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
                     }),
                 }),
 				ach(11628, {["timeline"] = {ADDED_7_2_0}}),	-- That's So Last Millennium (Nighthold)
+				ach(42030, {	-- The Nighthold (automated)
+					["timeline"] = { ADDED_11_1_7 },
+				}),
 				ach(10868),	-- The Nighthold Guild Run
 			}),
 			n(WORLD_QUESTS, {

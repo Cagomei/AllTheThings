@@ -2744,3 +2744,6 @@
 2998@@@Demolition Dome
 2999@@@The Gallagio
 3000@@@Gutterville, The Ringing Deeps
+11.1.7.60520
+3005@@@Quest Path 10165: 0.x Generic - Taxi - Cross Continent Load Spline Test (LAS)
+3122@@@Quest Path 10677: 11.1.7 Lorewalking - Xal - Q2 - Vehicle - Summon - stormsong to drustvar - Quest Taxi Version (LAS)

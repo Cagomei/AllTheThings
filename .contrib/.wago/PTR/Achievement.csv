@@ -4649,9 +4649,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat a Storm Drake after allowing it to gain 10 stacks of Killing Blow in Halls of Valor on Mythic difficulty.","Stag Party",,10544,-1,-1,0,15254,0,10,0,45,136112,0,47169,0,0,0,0
 "Defeat Millificent Manastorm after she becomes very cross with you in Assault on Violet Hold on Mythic difficulty.","You're Just Making It WORSE!",,10553,1544,-1,0,15254,0,10,0,49,237552,0,47207,0,0,0,0
 "Defeat Festerface after slaying a Black Bile in Assault on Violet Hold on Mythic difficulty.","I Made a Food!",,10554,-1,-1,0,15254,0,10,0,48,134438,0,47205,0,0,0,0
-"Defeat Nythendra in The Emerald Nightmare after squishing 15 Glow Bugs on Normal difficulty or higher.","Buggy Fight",,10555,-1,-1,0,15255,0,10,0,14,609616,0,47209,0,0,0,0
+"Defeat Nythendra in The Emerald Nightmare after squishing 15 Glow Bugs on Normal difficulty or higher.","Buggy Fight",,10555,-1,-1,0,15255,0,10,0,15,609616,0,47209,0,0,0,0
 "Enter a Battleground or Arena and learn the spell Honorable Medallion.","Honorable Medallion",,10561,-1,-1,0,15279,0,0,2048,121,338784,0,47301,0,0,0,0
-"Defeat Krosus in The Nighthold after quenching 15 Burning Embers on Normal difficulty or higher.","Burning Bridges",,10575,1530,-1,0,15255,0,10,0,50,840409,0,47356,0,0,0,0
+"Defeat Krosus in The Nighthold after quenching 15 Burning Embers on Normal difficulty or higher.","Burning Bridges",,10575,1530,-1,0,15255,0,10,0,52,840409,0,47356,0,0,0,0
 "Obtain 800 skill points in Fishing, First Aid, Cooking, and Archaeology.","Heroic Skills to Pay the Bills",,10580,-1,-1,9506,172,0,0,133120,7,134328,0,47565,0,0,0,0
 "Obtain 100 skill points in a ""Legion"" category of two primary professions.","Working the Isles",,10581,-1,-1,10582,169,2,10,131072,16,132281,0,65874,0,0,0,0
 "Obtain 100 skill points in a ""Legion"" category of a primary profession.","Professional Legion Master",,10582,-1,-1,0,169,1,10,4096,15,134327,0,47586,0,0,0,0
@@ -4685,17 +4685,17 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Hidden Tracking - 325 Artifact XP Earned",,10614,-1,-1,0,15304,0,0,1048576,27,136243,0,48043,0,0,0,0
 "Establish relations with the Nightfallen by completing the storylines below.","Nightfallen But Not Forgotten","Unlock: Suramar World Quests",10617,-1,-1,0,15252,0,10,131072,24,1409002,0,48103,0,0,0,0
 "Help Zoom win the snail race in Stonedark Grotto.",Zoom!,,10626,-1,-1,0,15252,0,5,133120,31,442735,137298,48216,0,0,0,0
-"Ascend to the top of Nashal's Watch in Stormheim.","Going Up",,10627,-1,-1,0,15257,0,5,0,9,1409000,0,48278,0,0,0,0
+"Ascend to the top of Nashal's Watch in Stormheim.","Going Up",,10627,-1,-1,0,15257,0,5,0,10,1409000,0,48278,0,0,0,0
 "Raise your character's level to 20.","Fledgling Hero of Warcraft","Cross-Game Reward: Lady Liadrin Paladin Hero in Hearthstone",10657,-1,-1,0,15268,0,0,133124,52,1061040,0,48441,0,0,0,0
-"Defeat Ysondre in The Emerald Nightmare while all members of the raid have Dream Essences from all four gateway locations on Normal difficulty or higher.","Imagined Dragons World Tour",,10663,-1,-1,0,15255,0,10,0,18,1354172,0,48566,0,0,0,0
-"Explore Azsuna, revealing the covered areas of the world map.","Explore Azsuna",,10665,-1,-1,0,15257,0,10,2228224,3,1408998,0,48630,0,0,0,0
-"Explore Val'sharah, revealing the covered areas of the world map.","Explore Val'sharah",,10666,-1,-1,0,15257,0,10,2228224,4,1409010,0,48646,0,0,0,0
-"Explore Highmountain, revealing the covered areas of the world map.","Explore Highmountain",,10667,-1,-1,0,15257,0,10,2228224,5,1409000,0,48662,0,0,0,0
-"Explore Stormheim, revealing the covered areas of the world map.","Explore Stormheim",,10668,-1,-1,0,15257,0,10,2228224,6,1409001,0,48678,0,0,0,0
-"Explore Suramar, revealing the covered areas of the world map.","Explore Suramar",,10669,-1,-1,0,15257,0,10,2228224,7,1409002,0,48694,0,0,0,0
+"Defeat Ysondre in The Emerald Nightmare while all members of the raid have Dream Essences from all four gateway locations on Normal difficulty or higher.","Imagined Dragons World Tour",,10663,-1,-1,0,15255,0,10,0,19,1354172,0,48566,0,0,0,0
+"Explore Azsuna, revealing the covered areas of the world map.","Explore Azsuna",,10665,-1,-1,0,15257,0,10,2228224,4,1408998,0,48630,0,0,0,0
+"Explore Val'sharah, revealing the covered areas of the world map.","Explore Val'sharah",,10666,-1,-1,0,15257,0,10,2228224,5,1409010,0,48646,0,0,0,0
+"Explore Highmountain, revealing the covered areas of the world map.","Explore Highmountain",,10667,-1,-1,0,15257,0,10,2228224,6,1409000,0,48662,0,0,0,0
+"Explore Stormheim, revealing the covered areas of the world map.","Explore Stormheim",,10668,-1,-1,0,15257,0,10,2228224,7,1409001,0,48678,0,0,0,0
+"Explore Suramar, revealing the covered areas of the world map.","Explore Suramar",,10669,-1,-1,0,15257,0,10,2228224,8,1409002,0,48694,0,0,0,0
 "Reached level 110 prior to the Shadowlands expansion.","Level 110 (Legacy)",,10671,-1,-1,9060,15446,0,0,14340,8,1408997,0,0,0,0,0,0
 "Earn Revered with all of the Broken Isles reputations listed below.","Broken Isles Diplomat",,10672,-1,-1,0,15258,0,10,131072,1,1408999,0,48715,0,0,0,0
-"Defeat Skorpyron in The Nighthold on Normal difficulty or higher without any player leaving the center rings.","Cage Rematch",,10678,1530,-1,0,15255,0,10,0,43,133832,0,48806,0,0,0,0
+"Defeat Skorpyron in The Nighthold on Normal difficulty or higher without any player leaving the center rings.","Cage Rematch",,10678,1530,-1,0,15255,0,10,0,45,133832,0,48806,0,0,0,0
 "Defeat Ash'Golm while all party members are Fired Up in the Vault of the Wardens on Mythic difficulty.","I Ain't Even Cold",,10679,1493,-1,0,15254,0,10,0,50,133886,0,48847,0,0,0,0
 "Defeat Cordana after successfully navigating Creeping Doom without holding Elune's Light while she is in the air, in Vault of the Wardens on Mythic difficulty.","Who's Afraid of the Dark?",,10680,-1,-1,0,15254,0,10,0,51,136122,0,48849,0,0,0,0
 "Collect 100 head slot appearances.","Fashionista: Head",,10681,-1,-1,0,15259,0,5,131072,1,133127,0,48856,0,0,0,0
@@ -4712,11 +4712,11 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Collect 100 shoulder slot appearances.","Fashionista: Shoulder",,10692,-1,-1,0,15259,0,5,131072,12,135061,0,48889,0,0,0,0
 "Collect 100 hand slot appearances.","Fashionista: Hand",,10693,-1,-1,0,15259,0,5,131072,13,133816,0,48891,0,0,0,0
 "Unlock each of the achievements listed below.",Fabulous,"Title: the Fabulous",10694,-1,-1,0,15259,0,10,131072,15,133384,0,48893,0,0,0,0
-"Defeat Gul'dan in The Nighthold on Normal difficulty or higher, after defeating 16 Eyes of Gul'dan within 3 seconds.","I've Got My Eyes On You",,10696,1530,-1,0,15255,0,10,0,52,1100023,0,48931,0,0,0,0
-"Activate all the spotlights around the Nightwell and then defeat the Chronomatic Anomaly in The Nighthold, on Normal difficulty or higher.","Grand Opening",,10697,1530,-1,0,15255,0,10,0,44,462534,0,48964,0,0,0,0
+"Defeat Gul'dan in The Nighthold on Normal difficulty or higher, after defeating 16 Eyes of Gul'dan within 3 seconds.","I've Got My Eyes On You",,10696,1530,-1,0,15255,0,10,0,54,1100023,0,48931,0,0,0,0
+"Activate all the spotlights around the Nightwell and then defeat the Chronomatic Anomaly in The Nighthold, on Normal difficulty or higher.","Grand Opening",,10697,1530,-1,0,15255,0,10,0,46,462534,0,48964,0,0,0,0
 "Complete the Val'sharah storylines listed below.","That's Val'sharah Folks!",,10698,-1,-1,0,15252,0,10,131072,20,1409010,0,48968,0,0,0,0
-"Get betrayed by and then defeat an Infinite Whelpling during the Grand Magistrix Elisande encounter, then defeat Grand Magistrix Elisande in The Nighthold, on Normal difficulty or higher.",Infinitesimal,,10699,1530,-1,0,15255,0,10,0,51,298656,0,48989,0,0,0,0
-"Defeat Tichondrius in The Nighthold without taking any damage from Echoes of the Void on Normal difficulty or higher.","Not For You",,10704,1530,-1,0,15255,0,10,0,49,236625,0,49029,0,0,0,0
+"Get betrayed by and then defeat an Infinite Whelpling during the Grand Magistrix Elisande encounter, then defeat Grand Magistrix Elisande in The Nighthold, on Normal difficulty or higher.",Infinitesimal,,10699,1530,-1,0,15255,0,10,0,53,298656,0,48989,0,0,0,0
+"Defeat Tichondrius in The Nighthold without taking any damage from Echoes of the Void on Normal difficulty or higher.","Not For You",,10704,1530,-1,0,15255,0,10,0,51,236625,0,49029,0,0,0,0
 "Recruit 5 troops.","Training the Troops",,10706,-1,-1,0,15304,0,5,131072,4,1033594,0,49035,0,0,0,0
 "Illuminate and free the Specter of Vengeance in Vault of the Wardens on Mythic difficulty.","A Specter, Illuminated",,10707,-1,-1,0,15254,0,10,0,52,136215,0,49067,0,0,0,0
 "Find all entries of Illysanna Ravencrest's diary in Black Rook Hold.","You Used to Scrawl Me In Your Fel Tome",,10709,-1,-1,0,15254,0,10,131072,53,354435,0,50230,0,0,0,0
@@ -4734,7 +4734,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Artifact Power earned from Honor System","Artifact Power - Earned - Honor System",,10721,-1,-1,0,130,0,0,1048576,21,136243,0,49135,0,0,0,0
 "Fish up all of the below coins from the Broken Isles Dalaran fountain.","The Wish Remover",,10722,-1,-1,0,171,0,10,131072,68,133858,0,49182,0,0,0,0
 "Logged in during WoW's 12th Anniversary.","WoW's 12th Anniversary",,10741,-1,-1,0,15274,0,0,2048,67,133783,139284,49489,0,0,0,0
-"Defeat Trilliax in The Nighthold while eating no more than 20 Toxic Slices on Normal Difficulty or higher.","Gluten Free",,10742,1530,-1,0,15255,0,10,0,45,237360,0,49502,0,0,0,0
+"Defeat Trilliax in The Nighthold while eating no more than 20 Toxic Slices on Normal Difficulty or higher.","Gluten Free",,10742,1530,-1,0,15255,0,10,0,47,237360,0,49502,0,0,0,0
 "Successfully reach Prestige level 1, rank 50 and be recognized for your valor by the leaders of the Alliance.","The Prestige",,10743,-1,1,0,15279,0,0,6144,119,458725,0,49504,0,0,0,0
 "Successfully reach Prestige level 1, rank 50 and be recognized for your valor by the leaders of the Horde.","The Prestige",,10745,-1,0,0,15279,0,0,6144,120,458725,0,49506,0,0,0,0
 "Complete your Order Campaign and unlock a new appearance for your artifact weapon.","Forged for Battle",,10746,-1,-1,0,15304,0,10,4096,17,236368,0,49542,0,0,0,0
@@ -4743,9 +4743,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Unlock all 4 color variations for your war-torn artifact appearance.","Fighting with Style: War-torn",,10749,-1,1,0,15304,0,10,0,24,236342,0,51922,0,0,0,0
 "Unlock all 4 color variations for your hidden artifact appearance.","Fighting with Style: Hidden",,10750,-1,-1,0,15304,0,10,0,25,236343,0,55245,0,0,0,0
 "Proud owner of the 2016 Vintage Winter Veil gift, the Endothermic Blaster.","Brr... It's Cold in Here",,10751,-1,-1,0,15274,0,0,133120,29,133202,0,49553,0,0,0,0
-"Defeat Ursoc in The Emerald Nightmare while keeping Tur Ragepaw alive on Normal difficulty or higher.","Scare Bear",,10753,-1,-1,0,15255,0,10,0,16,571585,0,51067,0,0,0,0
-"Defeat High Botanist Tel'arn in The Nighthold while all members of the raid are afflicted with Arcane Exposure on Normal Difficulty or higher.","Fruit of All Evil",,10754,1530,-1,0,15255,0,10,0,48,132100,0,49725,0,0,0,0
-"Defeat a Creature in the Dark during each of phase of the encounter with Xavius in The Emerald Nightmare on Normal difficulty or higher.","I Attack the Darkness",,10755,-1,-1,0,15255,0,10,0,20,1357796,0,49729,0,0,0,0
+"Defeat Ursoc in The Emerald Nightmare while keeping Tur Ragepaw alive on Normal difficulty or higher.","Scare Bear",,10753,-1,-1,0,15255,0,10,0,17,571585,0,51067,0,0,0,0
+"Defeat High Botanist Tel'arn in The Nighthold while all members of the raid are afflicted with Arcane Exposure on Normal Difficulty or higher.","Fruit of All Evil",,10754,1530,-1,0,15255,0,10,0,50,132100,0,49725,0,0,0,0
+"Defeat a Creature in the Dark during each of phase of the encounter with Xavius in The Emerald Nightmare on Normal difficulty or higher.","I Attack the Darkness",,10755,-1,-1,0,15255,0,10,0,21,1357796,0,49729,0,0,0,0
 "Activate all leyline feeds in Suramar.","Leyline Bling",,10756,-1,-1,0,15252,0,10,131072,36,1391767,0,49749,0,0,0,0
 "Upgrade all star recipes in one primary profession to 2 stars or higher.",Resourceful,,10761,-1,-1,0,169,0,10,131072,42,1387621,0,49815,0,0,0,0
 "Cook 15 of the Legion recipes listed below.","The Legion Menu",,10762,-1,-1,0,170,0,10,131072,65,1387654,0,50012,0,0,0,0
@@ -4756,8 +4756,8 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Number of Ghouls Summoned by Unholy DK Artifact","Hidden Tracking - Apocalypse Ghouls Summoned",,10768,-1,-1,0,15304,0,0,1048577,29,136243,0,50156,0,0,0,0
 "Defeat the Shade of Xavius while he has 10 stacks of Apocalyptic Empowerment in Darkheart Thicket on Mythic difficulty.","Burning Down the House",,10769,-1,-1,0,15254,0,10,0,42,1396976,0,50206,0,0,0,0
 "Find Pepe wearing his tiny, adorable goggles.","The Tangerine Traveler",,10770,-1,-1,0,15246,0,5,131072,15,1044996,0,50208,0,0,0,0
-"Defeat Elerethe Renferal in The Emerald Nightmare after destroying all her Pulsing Egg Sacs during the encounter on Normal difficulty or higher.","Webbing Crashers",,10771,-1,-1,0,15255,0,10,0,15,136113,0,50213,0,0,0,0
-"Defeat Cenarius without cleansing each of the following Forces of Nightmare in The Emerald Nightmare on Normal difficulty or higher.","Use the Force(s)",,10772,1520,-1,0,15255,0,10,0,19,1357812,0,50215,0,0,0,0
+"Defeat Elerethe Renferal in The Emerald Nightmare after destroying all her Pulsing Egg Sacs during the encounter on Normal difficulty or higher.","Webbing Crashers",,10771,-1,-1,0,15255,0,10,0,16,136113,0,50213,0,0,0,0
+"Defeat Cenarius without cleansing each of the following Forces of Nightmare in The Emerald Nightmare on Normal difficulty or higher.","Use the Force(s)",,10772,1520,-1,0,15255,0,10,0,20,1357812,0,50215,0,0,0,0
 "Defeat Ivanyr without taking any damage from Charged Bolt in The Arcway on Mythic difficulty.","Arcanic Cling",,10773,1516,-1,0,15254,0,10,0,61,135753,0,50253,0,0,0,0
 "Gather 10 Emerald Orbs in a single session of Aviana's challenge in Sylvan Falls.","Hatchling of the Talon","Toy: Emerald Winds",10774,-1,-1,0,15252,0,5,0,30,134206,139773,50237,0,0,0,0
 "Defeat Corstilax without any pools of Nightwell Energy expiring in the Arcway on Mythic difficulty.","Clean House",,10775,1516,-1,0,15254,0,10,0,60,655994,0,50251,0,0,0,0
@@ -4791,33 +4791,33 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Helya in Maw of Souls on Mythic difficulty.","Mythic: Maw of Souls",,10809,1492,-1,10808,15254,0,10,0,24,1417428,0,50338,0,0,0,0
 "Defeat Advisor Vandros in The Arcway on Mythic difficulty.","Mythic: The Arcway",,10813,1516,-1,0,15254,0,10,0,27,1417430,0,50346,0,0,0,0
 "Defeat Advisor Melandrus in Court of Stars on Mythic difficulty.","Mythic: Court of Stars",,10816,1571,-1,0,15254,0,10,0,30,1417424,0,50350,0,0,0,0
-"Engage and defeat Spellblade Aluriel in the following areas of The Nighthold on Normal difficulty or higher. She must reach her destination within 120 seconds of entering combat and remain there until defeated:","A Change In Scenery",,10817,1530,-1,0,15255,0,10,0,46,306845,0,50356,0,0,0,0
+"Engage and defeat Spellblade Aluriel in the following areas of The Nighthold on Normal difficulty or higher. She must reach her destination within 120 seconds of entering combat and remain there until defeated:","A Change In Scenery",,10817,1530,-1,0,15255,0,10,0,48,306845,0,50356,0,0,0,0
 "Defeat the following bosses within the clutches of The Emerald Nightmare.",Darkbough,,10818,1520,-1,0,15255,0,10,131072,4,1413864,0,50361,0,0,0,0
 "Defeat the following corrupted protectors in The Emerald Nightmare.","Tormented Guardians",,10819,1520,-1,0,15255,0,10,131072,5,1413865,0,50365,0,0,0,0
 "Defeat Xavius in The Emerald Nightmare.","Rift of Aln",,10820,1520,-1,0,15255,0,10,0,6,1413871,0,50369,0,0,0,0
-"Defeat Nythendra in the Emerald Nightmare on Mythic difficulty.","Mythic: Nythendra",,10821,1520,-1,0,15255,0,10,4096,7,1413869,0,50371,0,0,0,0
-"Defeat Elerethe Renferal in the Emerald Nightmare on Mythic difficulty.","Mythic: Elerethe Renferal",,10822,1520,-1,0,15255,0,10,4096,8,1413867,0,50373,0,0,0,0
-"Defeat Il'gynoth, the Heart of Corruption, in the Emerald Nightmare on Mythic difficulty.","Mythic: Il'gynoth",,10823,1520,-1,0,15255,0,10,4096,9,1413868,0,50375,0,0,0,0
-"Defeat Ursoc in the Emerald Nightmare on Mythic difficulty.","Mythic: Ursoc",,10824,1520,-1,0,15255,0,10,4096,10,1413870,0,50377,0,0,0,0
-"Defeat the Dragons of Nightmare in the Emerald Nightmare on Mythic difficulty.","Mythic: Dragons of Nightmare",,10825,1520,-1,0,15255,0,10,4096,11,1413866,0,50379,0,0,0,0
-"Defeat Cenarius in the Emerald Nightmare on Mythic difficulty.","Mythic: Cenarius",,10826,1520,-1,0,15255,0,10,4096,12,1413865,0,50381,0,0,0,0
-"Defeat Xavius in the Emerald Nightmare on Mythic difficulty.","Mythic: Xavius","Title: the Dreamer",10827,1520,-1,0,15255,0,10,4096,13,1413871,0,50383,0,0,0,0
-"Defeat the following bosses within the base of The Nighthold.","Arcing Aqueducts",,10829,1530,-1,0,15255,0,10,131072,29,1413863,0,50387,0,0,0,0
-"Defeat Il'gynoth in The Emerald Nightmare after inflicting 20 Nightmare Explosions on the Eye of Il'gynoth within 10 seconds on Normal difficulty or higher.","Took the Red Eye Down",,10830,-1,-1,0,15255,0,10,0,17,1357795,0,50391,0,0,0,0
-"Defeat the following bosses within The Nighthold.","Royal Athenaeum",,10837,1530,-1,0,15255,0,10,131072,30,1413857,0,50393,0,0,0,0
-"Defeat the following bosses within The Nighthold.",Nightspire,,10838,1530,-1,0,15255,0,10,131072,31,1413855,0,50397,0,0,0,0
-"Defeat Gul'dan atop The Nighthold.","Betrayer's Rise",,10839,1530,-1,0,15255,0,10,0,32,1413856,0,50401,0,0,0,0
-"Defeat Skorpyron in The Nighthold on Mythic difficulty.","Mythic: Skorpyron",,10840,1530,-1,0,15255,0,10,4096,33,1413859,0,50403,0,0,0,0
-"Defeat Chronomatic Anomaly in The Nighthold on Mythic difficulty.","Mythic: Chronomatic Anomaly",,10842,1530,-1,0,15255,0,10,4096,34,1413854,0,50405,0,0,0,0
-"Defeat Trilliax in The Nighthold on Mythic difficulty.","Mythic: Trilliax",,10843,1530,-1,0,15255,0,10,4096,35,1413863,0,50408,0,0,0,0
-"Defeat Spellblade Aluriel in The Nighthold on Mythic difficulty.","Mythic: Spellblade Aluriel",,10844,1530,-1,0,15255,0,10,4096,36,1413860,0,50410,0,0,0,0
-"Defeat Star Augur Etraeus in The Nighthold on Mythic difficulty.","Mythic: Star Augur Etraeus",,10845,1530,-1,0,15255,0,10,4096,37,1413861,0,50412,0,0,0,0
-"Defeat High Botanist Tel'arn in The Nighthold on Mythic difficulty.","Mythic: High Botanist Tel'arn",,10846,1530,-1,0,15255,0,10,4096,38,1413857,0,50414,0,0,0,0
-"Defeat Tichondrius in The Nighthold on Mythic difficulty.","Mythic: Tichondrius",,10847,1530,-1,0,15255,0,10,4096,39,1413862,0,50416,0,0,0,0
-"Defeat Krosus in The Nighthold on Mythic difficulty.","Mythic: Krosus",,10848,1530,-1,0,15255,0,10,4096,40,1413858,0,50418,0,0,0,0
-"Defeat Grand Magistrix Elisande in The Nighthold on Mythic difficulty.","Mythic: Grand Magistrix Elisande",,10849,1530,-1,0,15255,0,10,4096,41,1413855,0,50420,0,0,0,0
-"Defeat Gul'dan in The Nighthold on Mythic difficulty.","Mythic: Gul'dan","Title: Vengeance Incarnate",10850,1530,-1,0,15255,0,10,4096,42,1413856,0,50422,0,0,0,0
-"Defeat Star Augur Etraeus in The Nighthold after having defeated a Well-Traveled Nether Elemental on Normal difficulty or higher.",Elementalry!,,10851,1530,-1,0,15255,0,10,0,47,135728,0,50424,0,0,0,0
+"Defeat Nythendra in the Emerald Nightmare on Mythic difficulty.","Mythic: Nythendra",,10821,1520,-1,0,15255,0,10,4096,8,1413869,0,50371,0,0,0,0
+"Defeat Elerethe Renferal in the Emerald Nightmare on Mythic difficulty.","Mythic: Elerethe Renferal",,10822,1520,-1,0,15255,0,10,4096,9,1413867,0,50373,0,0,0,0
+"Defeat Il'gynoth, the Heart of Corruption, in the Emerald Nightmare on Mythic difficulty.","Mythic: Il'gynoth",,10823,1520,-1,0,15255,0,10,4096,10,1413868,0,50375,0,0,0,0
+"Defeat Ursoc in the Emerald Nightmare on Mythic difficulty.","Mythic: Ursoc",,10824,1520,-1,0,15255,0,10,4096,11,1413870,0,50377,0,0,0,0
+"Defeat the Dragons of Nightmare in the Emerald Nightmare on Mythic difficulty.","Mythic: Dragons of Nightmare",,10825,1520,-1,0,15255,0,10,4096,12,1413866,0,50379,0,0,0,0
+"Defeat Cenarius in the Emerald Nightmare on Mythic difficulty.","Mythic: Cenarius",,10826,1520,-1,0,15255,0,10,4096,13,1413865,0,50381,0,0,0,0
+"Defeat Xavius in the Emerald Nightmare on Mythic difficulty.","Mythic: Xavius","Title: the Dreamer",10827,1520,-1,0,15255,0,10,4096,14,1413871,0,50383,0,0,0,0
+"Defeat the following bosses within the base of The Nighthold.","Arcing Aqueducts",,10829,1530,-1,0,15255,0,10,131072,30,1413863,0,50387,0,0,0,0
+"Defeat Il'gynoth in The Emerald Nightmare after inflicting 20 Nightmare Explosions on the Eye of Il'gynoth within 10 seconds on Normal difficulty or higher.","Took the Red Eye Down",,10830,-1,-1,0,15255,0,10,0,18,1357795,0,50391,0,0,0,0
+"Defeat the following bosses within The Nighthold.","Royal Athenaeum",,10837,1530,-1,0,15255,0,10,131072,31,1413857,0,50393,0,0,0,0
+"Defeat the following bosses within The Nighthold.",Nightspire,,10838,1530,-1,0,15255,0,10,131072,32,1413855,0,50397,0,0,0,0
+"Defeat Gul'dan atop The Nighthold.","Betrayer's Rise",,10839,1530,-1,0,15255,0,10,0,33,1413856,0,50401,0,0,0,0
+"Defeat Skorpyron in The Nighthold on Mythic difficulty.","Mythic: Skorpyron",,10840,1530,-1,0,15255,0,10,4096,35,1413859,0,50403,0,0,0,0
+"Defeat Chronomatic Anomaly in The Nighthold on Mythic difficulty.","Mythic: Chronomatic Anomaly",,10842,1530,-1,0,15255,0,10,4096,36,1413854,0,50405,0,0,0,0
+"Defeat Trilliax in The Nighthold on Mythic difficulty.","Mythic: Trilliax",,10843,1530,-1,0,15255,0,10,4096,37,1413863,0,50408,0,0,0,0
+"Defeat Spellblade Aluriel in The Nighthold on Mythic difficulty.","Mythic: Spellblade Aluriel",,10844,1530,-1,0,15255,0,10,4096,38,1413860,0,50410,0,0,0,0
+"Defeat Star Augur Etraeus in The Nighthold on Mythic difficulty.","Mythic: Star Augur Etraeus",,10845,1530,-1,0,15255,0,10,4096,39,1413861,0,50412,0,0,0,0
+"Defeat High Botanist Tel'arn in The Nighthold on Mythic difficulty.","Mythic: High Botanist Tel'arn",,10846,1530,-1,0,15255,0,10,4096,40,1413857,0,50414,0,0,0,0
+"Defeat Tichondrius in The Nighthold on Mythic difficulty.","Mythic: Tichondrius",,10847,1530,-1,0,15255,0,10,4096,41,1413862,0,50416,0,0,0,0
+"Defeat Krosus in The Nighthold on Mythic difficulty.","Mythic: Krosus",,10848,1530,-1,0,15255,0,10,4096,42,1413858,0,50418,0,0,0,0
+"Defeat Grand Magistrix Elisande in The Nighthold on Mythic difficulty.","Mythic: Grand Magistrix Elisande",,10849,1530,-1,0,15255,0,10,4096,43,1413855,0,50420,0,0,0,0
+"Defeat Gul'dan in The Nighthold on Mythic difficulty.","Mythic: Gul'dan","Title: Vengeance Incarnate",10850,1530,-1,0,15255,0,10,4096,44,1413856,0,50422,0,0,0,0
+"Defeat Star Augur Etraeus in The Nighthold after having defeated a Well-Traveled Nether Elemental on Normal difficulty or higher.",Elementalry!,,10851,1530,-1,0,15255,0,10,0,49,135728,0,50424,0,0,0,0
 "Reach Artifact Knowledge level 10 through the researchers in your Class Hall.","Artifact or Artifiction",,10852,-1,-1,0,15411,0,0,2048,7,1411834,0,0,0,0,0,0
 "Learn everything there is to know about an artifact weapon through the researchers in your Class Hall.","Part of History",,10853,-1,-1,10852,15411,0,0,2048,8,1411833,0,0,0,0,0,0
 "First guild on the realm to defeat Xavius in The Emerald Nightmare on Mythic difficulty while in a guild group.","Realm First! Xavius",,10854,-1,-1,0,15093,0,0,63744,24,1413871,0,50432,0,0,0,0
@@ -5013,7 +5013,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Has completed 1 acquisition line of any spec, for purposes of adventure journal.","Hidden Tracking - 1+ Acquision Line Completed",,11063,-1,-1,0,15304,0,0,1048576,31,136243,0,51284,0,0,0,0
 "Owner of the Overwatch Origins Edition and Collector's Edition pet, Baby Winston.","Collector's Edition: Baby Winston",,11064,-1,-1,0,15268,1,0,133120,33,1303199,0,51282,0,0,0,0
 "Collect all 12 pamphlets from doomsayers during the Legion pre-launch events.","It All Makes Sense Now",,11065,-1,-1,0,15274,0,0,133120,50,134329,0,51324,0,0,0,0
-"Loot 20,000 Sightless Eyes in Dalaran's Underbelly.","Underbelly Tycoon","Mount: Ratstallion",11066,-1,-1,0,15257,0,10,131072,10,236693,138387,51337,0,0,0,0
+"Loot 20,000 Sightless Eyes in Dalaran's Underbelly.","Underbelly Tycoon","Mount: Ratstallion",11066,-1,-1,0,15257,0,10,131072,11,236693,138387,51337,0,0,0,0
 "Complete the Suramar storylines listed below.","Good Suramaritan",,11124,-1,-1,0,15252,0,10,131072,25,1409002,0,51582,0,0,0,0
 "Activate all teleporters in Suramar.","Now You're Thinking With Portals",,11125,-1,-1,0,15252,0,10,131200,37,1405806,0,51601,0,0,0,0
 "Complete 50 World Quests.","50 World Quests Completed",,11126,-1,-1,0,96,0,5,131072,18,236664,0,53570,0,0,0,0
@@ -5051,10 +5051,10 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Obtain every artifact available to your class.","Arsenal of Power",,11171,-1,-1,0,15304,0,10,0,26,1309100,0,52002,0,0,0,0
 "Unlock all 4 color variations for your war-torn artifact appearance.","Fighting with Style: War-torn",,11173,-1,0,0,15304,0,10,0,23,236342,0,52051,0,0,0,0
 "Has completed 2+ acquisition lines, for purposes of adventure journal.","Hidden Tracking - 2+ Acquision Line Completed",,11174,-1,-1,0,15304,0,0,1048576,32,136243,0,51436,0,0,0,0
-"Read the seven chapters of the Beginner's Guide to Dimensional Rifting scattered across Azsuna.","Higher Dimensional Learning","Item Reward: Adept's Guide to Dimensional Rifting",11175,-1,-1,0,15257,0,10,0,11,134915,140493,52064,0,0,0,0
+"Read the seven chapters of the Beginner's Guide to Dimensional Rifting scattered across Azsuna.","Higher Dimensional Learning","Item Reward: Adept's Guide to Dimensional Rifting",11175,-1,-1,0,15257,0,10,0,12,134915,140493,52064,0,0,0,0
 "Collect 300 toys.","Remember to Share","Mount: Mechanized Lumber Extractor",11176,-1,-1,10354,15247,0,10,131072,6,660263,140500,52072,0,0,0,0
 "Raise 70 reputations to Exalted.","70 Exalted Reputations",,11177,-1,-1,6742,201,0,10,143488,14,236688,0,75880,0,0,0,0
-"Mount Stormtalon in Storm's Reach","Wake the Dragon",,11178,-1,-1,0,15257,0,10,0,36,461145,0,52205,0,0,0,0
+"Mount Stormtalon in Storm's Reach","Wake the Dragon",,11178,-1,-1,0,15257,0,10,0,37,461145,0,52205,0,0,0,0
 "Complete the Legion raid achievements listed below.","Glory of the Legion Raider","Mount: Grove Defiler",11180,-1,-1,0,168,0,25,143360,42,1137681,141216,52211,0,0,0,0
 "Complete the following Legion dungeons using a Mythic Keystone:","Legion Keymaster",,11181,-1,-1,0,15277,0,0,133120,102,525134,0,52234,0,0,0,0
 "Complete a Level 2 or higher Mythic dungeon within the time limit.","Keystone Initiate",,11183,-1,-1,0,168,0,10,0,4,618857,0,52244,0,0,0,0
@@ -5063,7 +5063,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Find and aid Tehd & Marius in a demon encounter in each of the following zones.","Tehd & Marius' Excellent Adventure",,11186,-1,-1,0,15252,0,5,131072,39,134179,0,52346,0,0,0,0
 "Explore the regions of the Broken Isles.","Broken Isles Explorer",,11188,-1,-1,0,97,0,25,131072,8,1408999,0,52361,0,0,0,0
 "Complete 100 different Legion World Quests.","Variety is the Spice of Life",,11189,-1,-1,0,15252,0,10,131200,29,1060986,0,54305,0,0,0,0
-"Complete the Broken Isles achievements listed below.","Broken Isles Pathfinder, Part One","Reward: Increased Mount Speed in Broken Isles",11190,-1,-1,0,15257,0,25,131072,1,237385,0,52370,0,0,0,0
+"Complete the Broken Isles achievements listed below.","Broken Isles Pathfinder, Part One","Reward: Increased Mount Speed in Broken Isles",11190,-1,-1,0,15257,0,25,131072,2,237385,0,52370,0,0,0,0
 "Defeat Xavius in the Emerald Nightmare on Mythic difficulty, before the opening of the Nighthold.","Cutting Edge: Xavius",,11191,1520,-1,11194,15271,0,0,6144,54,1413871,0,52493,0,0,0,0
 "Defeat Gul'dan in The Nighthold on Mythic difficulty, before the opening of the Tomb of Sargeras.","Cutting Edge: Gul'dan",,11192,1530,-1,11195,15271,0,0,6144,59,1413856,0,52495,0,0,0,0
 "Defeat Xavius in the Emerald Nightmare on Heroic difficulty or higher, before the opening of the Nighthold.","Ahead of the Curve: Xavius",,11194,1520,-1,0,15271,0,0,6144,53,1413871,0,52497,0,0,0,0
@@ -5097,16 +5097,16 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Xavius in the Emerald Nightmare on Mythic difficulty, while in a guild group.","Mythic: Xavius Guild Run",,11238,1520,-1,0,15263,0,10,61440,6,1413871,0,53641,0,0,0,0
 "Defeat Gul'dan in The Nighthold on Mythic difficulty, while in a guild group.","Mythic: Gul'dan Guild Run",,11239,1530,-1,0,15263,0,10,61440,8,1413856,0,53645,0,0,0,0
 "Unearth the stories of the Harbingers of the Legion's invasion.",Harbinger,,11240,-1,-1,0,15252,0,5,131072,40,236415,0,53647,0,0,0,0
-"Discover 35 treasures in Azsuna.","Treasures of Azsuna",,11256,-1,-1,0,15257,0,10,131200,14,1001977,0,53746,0,0,0,0
-"Discover 40 treasures in Highmountain.","Treasures of Highmountain",,11257,-1,-1,0,15257,0,10,131200,16,1001977,0,53801,0,0,0,0
-"Discover 40 treasures in Val'sharah.","Treasures of Val'sharah",,11258,-1,-1,0,15257,0,10,131200,15,1001977,0,53804,0,0,0,0
-"Discover 60 treasures in Stormheim.","Treasures of Stormheim",,11259,-1,-1,0,15257,0,10,131200,17,1001977,0,53806,0,0,0,0
-"Discover 45 treasures in Suramar.","Treasures of Suramar",,11260,-1,-1,0,15257,0,10,131200,18,1001977,0,53808,0,0,0,0
-"Complete the following special encounters in Azsuna.","Adventurer of Azsuna",,11261,-1,-1,0,15257,0,10,131072,19,1408998,0,53796,0,0,0,0
-"Complete the following special encounters in Val'sharah.","Adventurer of Val'sharah",,11262,-1,-1,0,15257,0,10,131072,20,1409010,0,53828,0,0,0,0
-"Complete the following special encounters in Stormheim.","Adventurer of Stormheim",,11263,-1,-1,0,15257,0,10,131072,21,1409001,0,53850,0,0,0,0
-"Complete the following special encounters in Highmountain.","Adventurer of Highmountain",,11264,-1,-1,0,15257,0,10,131072,22,1409000,0,53876,0,0,0,0
-"Complete the following special encounters in Suramar.","Adventurer of Suramar",,11265,-1,-1,0,15257,0,10,131072,23,1409002,0,53901,0,0,0,0
+"Discover 35 treasures in Azsuna.","Treasures of Azsuna",,11256,-1,-1,0,15257,0,10,131200,15,1001977,0,53746,0,0,0,0
+"Discover 40 treasures in Highmountain.","Treasures of Highmountain",,11257,-1,-1,0,15257,0,10,131200,17,1001977,0,53801,0,0,0,0
+"Discover 40 treasures in Val'sharah.","Treasures of Val'sharah",,11258,-1,-1,0,15257,0,10,131200,16,1001977,0,53804,0,0,0,0
+"Discover 60 treasures in Stormheim.","Treasures of Stormheim",,11259,-1,-1,0,15257,0,10,131200,18,1001977,0,53806,0,0,0,0
+"Discover 45 treasures in Suramar.","Treasures of Suramar",,11260,-1,-1,0,15257,0,10,131200,19,1001977,0,53808,0,0,0,0
+"Complete the following special encounters in Azsuna.","Adventurer of Azsuna",,11261,-1,-1,0,15257,0,10,131072,20,1408998,0,53796,0,0,0,0
+"Complete the following special encounters in Val'sharah.","Adventurer of Val'sharah",,11262,-1,-1,0,15257,0,10,131072,21,1409010,0,53828,0,0,0,0
+"Complete the following special encounters in Stormheim.","Adventurer of Stormheim",,11263,-1,-1,0,15257,0,10,131072,22,1409001,0,53850,0,0,0,0
+"Complete the following special encounters in Highmountain.","Adventurer of Highmountain",,11264,-1,-1,0,15257,0,10,131072,23,1409000,0,53876,0,0,0,0
+"Complete the following special encounters in Suramar.","Adventurer of Suramar",,11265,-1,-1,0,15257,0,10,131072,24,1409002,0,53901,0,0,0,0
 "Desecrate the Horde's bonfire in Draenor's Frostfire Ridge.","Extinguishing Draenor",,11276,-1,1,0,161,0,10,0,22,135820,0,54206,0,0,0,0
 "Desecrate the Alliance's bonfire in Draenor's Shadowmoon Valley.","Extinguishing Draenor",,11277,-1,0,0,161,0,10,0,44,135820,0,54208,0,0,0,0
 "Desecrate the Horde's bonfire in Suramar.","Extinguishing the Broken Isles",,11278,-1,1,0,161,0,10,0,23,135820,0,54210,0,0,0,0
@@ -5122,17 +5122,17 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Hidden Tracking - Artifact Knowledge Shipments Picked Up",,11318,-1,-1,0,15304,0,0,1048577,30,136243,0,55251,0,0,0,0
 "Collect all of the battle pets listed below from Ulduar, Trial of the Crusader, and Icecrown Citadel.","Raiding with Leashes IV: Wrath of the Lick King","Reward: A Celestial Invitation",11320,-1,-1,0,15118,0,10,131072,61,341221,142210,55350,0,0,0,0
 "Complete each of the following Opera Hall plays in Return to Karazhan on Mythic difficulty:","Season Tickets",,11335,1651,-1,0,15254,0,10,131072,65,237451,0,55379,0,0,0,0
-"Defeat Odyn in the Trial of Valor after gaining Runic Mastery on Normal difficulty or higher.","You Runed Everything!",,11337,1648,-1,0,15255,0,10,0,26,528693,0,55452,0,0,0,0
+"Defeat Odyn in the Trial of Valor after gaining Runic Mastery on Normal difficulty or higher.","You Runed Everything!",,11337,1648,-1,0,15255,0,10,0,27,528693,0,55452,0,0,0,0
 "Complete the Moroes encounter in Return to Karazhan on Mythic difficulty after defeating all 4 dinner guests within 10 seconds of each other.","Dine and Bash",,11338,1651,-1,0,15254,0,10,0,66,1053712,0,55462,0,0,0,0
 "Complete the Suramar storylines listed below.",Insurrection,,11340,-1,-1,0,15252,0,10,131072,42,1525722,0,55488,0,0,0,0
-"Defeat Helya while all raid members but one are afflicted with Fetid Rot, in Trial of Valor on Normal difficulty or higher.","Patient Zero",,11377,1648,-1,0,15255,0,10,0,28,646782,0,55682,0,0,0,0
-"Defeat Guarm after taking his Chew Toy into all three Guardian's Breaths in Trial of Valor on Normal difficulty or higher.","Boneafide Tri Tip",,11386,-1,-1,0,15255,0,10,0,27,133718,0,55738,0,0,0,0
+"Defeat Helya while all raid members but one are afflicted with Fetid Rot, in Trial of Valor on Normal difficulty or higher.","Patient Zero",,11377,1648,-1,0,15255,0,10,0,29,646782,0,55682,0,0,0,0
+"Defeat Guarm after taking his Chew Toy into all three Guardian's Breaths in Trial of Valor on Normal difficulty or higher.","Boneafide Tri Tip",,11386,-1,-1,0,15255,0,10,0,28,133718,0,55738,0,0,0,0
 "Defeat Helya in Trial of Valor on Mythic difficulty without failing the Test of the Chosen.","The Chosen","Title: The Chosen",11387,1648,-1,0,15271,0,0,2048,57,1530373,143617,0,0,0,0,0
-"Defeat the following bosses within the Trial of Valor.","Trial of Valor",,11394,1648,-1,0,15255,0,10,131072,21,1530373,0,55786,0,0,0,0
+"Defeat the following bosses within the Trial of Valor.","Trial of Valor",,11394,1648,-1,0,15255,0,10,131072,22,1530373,0,55786,0,0,0,0
 "There is no cow level.","Diablo's 20th Anniversary",,11395,-1,-1,0,15274,0,0,133120,74,1529344,0,55790,0,0,0,0
-"Defeat Odyn in Trial of Valor on Mythic difficulty.","Mythic: Odyn",,11396,1648,-1,0,15255,0,10,0,23,1530371,0,55797,0,0,0,0
-"Defeat Guarm in Trial of Valor on Mythic difficulty.","Mythic: Guarm",,11397,1648,-1,0,15255,0,10,0,24,1530369,0,55799,0,0,0,0
-"Defeat Helya in Trial of Valor on Mythic difficulty.","Mythic: Helya",,11398,1648,-1,0,15255,0,10,0,25,1530370,0,55801,0,0,0,0
+"Defeat Odyn in Trial of Valor on Mythic difficulty.","Mythic: Odyn",,11396,1648,-1,0,15255,0,10,0,24,1530371,0,55797,0,0,0,0
+"Defeat Guarm in Trial of Valor on Mythic difficulty.","Mythic: Guarm",,11397,1648,-1,0,15255,0,10,0,25,1530369,0,55799,0,0,0,0
+"Defeat Helya in Trial of Valor on Mythic difficulty.","Mythic: Helya",,11398,1648,-1,0,15255,0,10,0,26,1530370,0,55801,0,0,0,0
 "Defeat the bosses of Trial of Valor on Normal difficulty or higher, while in a guild group.","Trial of Valor Guild Run",,11403,1648,-1,0,15263,0,10,61440,2,1530373,0,55818,0,0,0,0
 "Defeat Helya in Trial of Valor on Mythic difficulty, while in a guild group.","Mythic: Helya Guild Run",,11404,1648,-1,0,15263,0,10,61440,7,1530370,0,55822,0,0,0,0
 "First guild on the realm to defeat Helya in Trial of Valor on Mythic difficulty while in a guild group.","Realm First! Helya",,11405,1648,-1,0,15093,0,10,61696,25,1530370,0,55824,0,0,0,0
@@ -5151,7 +5151,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Helya kills (Mythic Trial of Valor)",,11418,1648,-1,0,15264,0,0,1,76,136243,0,55858,0,0,0,0
 "Players must defeat the Chronomatic Anomaly in the Nighthold.","<Hidden> Insurrection - Capper",,11419,-1,-1,0,15252,0,0,1048576,50,136243,0,55860,0,0,0,0
 "Owner of the Primal Flamesaber mount from the Heroes of the Storm promotion.","Herald of Flames",,11425,-1,-1,0,15268,0,0,133120,47,1530249,0,55864,0,0,0,0
-"Defeat the following bosses within the Trial of Valor on Heroic difficulty or higher.","Heroic: Trial of Valor",,11426,1648,-1,11394,15255,0,10,131072,22,1530373,0,55912,0,0,0,0
+"Defeat the following bosses within the Trial of Valor on Heroic difficulty or higher.","Heroic: Trial of Valor",,11426,1648,-1,11394,15255,0,10,131072,23,1530373,0,55912,0,0,0,0
 "Complete the Murky quests listed below.","No Shellfish Endeavor","Toy: Mrgrglhjorn",11427,-1,-1,0,15252,0,5,131072,33,656556,0,55927,0,0,0,0
 "Defeat Viz'aduum the Watcher in Return to Karazhan on Mythic difficulty while in a guild group.","Return to Karazhan Guild Run",,11428,1651,-1,0,15262,0,10,49152,11,1417424,0,55931,0,0,0,0
 "Defeat Viz'aduum the Watcher in Return to Karazhan on Mythic difficulty.","Mythic: Return to Karazhan",,11429,1651,-1,0,15254,0,10,0,31,1530372,0,55933,0,0,0,0
@@ -5159,7 +5159,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat a Mana Devourer while the entire party is riding a Rodents of Usual Size.","The Rat Pack",,11431,1651,-1,0,15254,0,10,0,68,135226,0,56279,0,0,0,0
 "Defeat the Shade of Medivh while all party members have Paranoid on Mythic difficulty in Return to Karazhan.","Scared Straight",,11432,-1,-1,0,15254,0,10,0,67,463286,0,55942,0,0,0,0
 "Collect all four Sealed Tomes from Return to Karazhan on Mythic difficulty.","Burn After Reading",,11433,-1,-1,0,15254,0,10,131072,64,633139,0,55937,0,0,0,0
-"Complete the Broken Isles achievements listed below.","Broken Isles Pathfinder, Part Two","Reward: Increased Mount Speed in Broken Isles",11446,-1,-1,11190,15257,0,25,393216,2,237385,0,56300,0,0,0,0
+"Complete the Broken Isles achievements listed below.","Broken Isles Pathfinder, Part Two","Reward: Increased Mount Speed in Broken Isles",11446,-1,-1,11190,15257,0,25,393216,3,237385,0,56300,0,0,0,0
 "Reach Prestige Level 5.","Alive for Five",,11468,-1,-1,10995,15279,0,0,2048,82,1523628,0,56419,0,0,0,0
 "Reach Prestige Level 6.","The River Six",,11469,-1,-1,11468,15279,0,0,2048,83,1523629,0,56421,0,0,0,0
 "Reach Prestige Level 7.","Slayin' to Seven",,11470,-1,-1,11469,15279,0,0,2048,84,1523630,0,56423,0,0,0,0
@@ -5171,7 +5171,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete Bareback Brawl 20 times.","Saddle Sore",,11476,-1,-1,0,15283,0,10,131072,53,877477,0,56439,0,0,0,0
 "Complete Black Rook Rumble 20 times.","Off the Top Rook",,11477,-1,-1,0,15283,0,10,131072,54,1417423,0,56441,0,0,0,0
 "Complete Darkbrul Arena 20 times.","The Darkbrul-oh",,11478,-1,-1,0,15283,0,10,131072,55,1322281,0,56443,0,0,0,0
-"Explore the Broken Shore, revealing the covered areas of the world map.","Explore Broken Shore",,11543,-1,-1,0,15257,0,10,2228224,8,1536896,0,58969,0,0,0,0
+"Explore the Broken Shore, revealing the covered areas of the world map.","Explore Broken Shore",,11543,-1,-1,0,15257,0,10,2228224,9,1536896,0,58969,0,0,0,0
 "Repel Legion assaults against Azsuna, Highmountain, Stormheim, and Val'sharah.","Defender of the Broken Isles",,11544,-1,-1,0,15252,0,10,131072,44,1380867,0,58906,0,0,0,0
 "Earn Revered status with the Armies of Legionfall.","Legionfall Commander",,11545,-1,-1,0,15258,0,5,131072,5,1585421,0,58034,0,0,0,0
 "Complete the Legionfall campaign.","Breaching the Tomb",,11546,-1,-1,0,15252,0,10,131072,46,1536894,0,58978,0,0,0,0
@@ -5220,11 +5220,11 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Hidden Tracking - Appearance Unlock - Challenge - Color 4 - Spec 2",,11666,-1,-1,0,15304,0,0,1048576,43,136243,0,58189,0,0,0,0
 ,"Hidden Tracking - Appearance Unlock - Challenge - Color 4 - Spec 3",,11667,-1,-1,0,15304,0,0,1048576,44,136243,0,58202,0,0,0,0
 ,"Hidden Tracking - Appearance Unlock - Challenge - Color 4 - Spec 4",,11668,-1,-1,0,15304,0,0,1048576,45,136243,0,58215,0,0,0,0
-"Defeat the Desolate Host in Tomb of Sargeras while keeping the Diminishing Soul from perishing on Normal difficulty or higher.","Great Soul, Great Purpose",,11674,1676,-1,0,15255,0,10,0,71,1519263,0,58248,0,0,0,0
-"Defeat the Maiden of Vigilance in Tomb of Sargeras having captured every Titanic Anomaly on Normal difficulty or higher.","Sky Walker",,11675,1676,-1,0,15255,0,10,0,72,897131,0,58250,0,0,0,0
-"Defeat Mistress Sass'zine in Tomb of Sargeras after feeding the following items to Sarukel on Normal difficulty or higher.","Five Course Seafood Buffet",,11676,1676,-1,0,15255,0,10,0,69,1053713,0,58254,0,0,0,0
+"Defeat the Desolate Host in Tomb of Sargeras while keeping the Diminishing Soul from perishing on Normal difficulty or higher.","Great Soul, Great Purpose",,11674,1676,-1,0,15255,0,10,0,74,1519263,0,58248,0,0,0,0
+"Defeat the Maiden of Vigilance in Tomb of Sargeras having captured every Titanic Anomaly on Normal difficulty or higher.","Sky Walker",,11675,1676,-1,0,15255,0,10,0,75,897131,0,58250,0,0,0,0
+"Defeat Mistress Sass'zine in Tomb of Sargeras after feeding the following items to Sarukel on Normal difficulty or higher.","Five Course Seafood Buffet",,11676,1676,-1,0,15255,0,10,0,72,1053713,0,58254,0,0,0,0
 "Reach the final portal of the Dreadex without losing your Wyrmtongue Transformation.","Crate Expectations",,11681,-1,-1,0,15252,0,10,0,51,1387710,0,58294,0,0,0,0
-"Defeat the Fallen Avatar in Tomb of Sargeras without breaking any floor segments in the following patterns on Normal difficulty or higher.",Bingo!,,11683,1676,-1,0,15255,0,10,0,73,1118738,0,58297,0,0,0,0
+"Defeat the Fallen Avatar in Tomb of Sargeras without breaking any floor segments in the following patterns on Normal difficulty or higher.",Bingo!,,11683,1676,-1,0,15255,0,10,0,76,1118738,0,58297,0,0,0,0
 "Reach Prestige Level 10.","Decade of Dominance",,11685,-1,-1,11472,15279,0,0,2048,87,1596899,0,58309,0,0,0,0
 "Reach Prestige Level 11.","These Go To Eleven",,11686,-1,-1,11685,15279,0,0,2048,88,1596900,0,58311,0,0,0,0
 "Reach Prestige Level 12.","Demonic Dozen",,11687,-1,-1,11686,15279,0,0,2048,89,1596901,0,58313,0,0,0,0
@@ -5235,10 +5235,10 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Reach Prestige Level 17.","Going On Seventeen",,11692,-1,-1,11691,15279,0,0,2048,94,1596907,0,58323,0,0,0,0
 "Reach Prestige Level 18.","Eighteen and Over",,11693,-1,-1,11692,15279,0,0,2048,95,1713478,0,58325,0,0,0,0
 "Reach Prestige Level 19.","Hell, It's About Nineteen",,11694,-1,-1,11693,15279,0,0,2048,96,1713479,0,58327,0,0,0,0
-"Defeat the Demonic Inquisition in Tomb of Sargeras while every party member is at maximum Torment on Normal difficulty or higher.","Grin and Bear It",,11696,1676,-1,0,15255,0,10,0,67,1546411,0,59158,0,0,0,0
+"Defeat the Demonic Inquisition in Tomb of Sargeras while every party member is at maximum Torment on Normal difficulty or higher.","Grin and Bear It",,11696,1676,-1,0,15255,0,10,0,70,1546411,0,59158,0,0,0,0
 "Reach 2000 in any Rated PvP Bracket during Legion Season 3","Cruel Elite",,11697,-1,-1,0,15270,0,0,6144,471,1582141,0,58355,0,0,0,0
 "Reach 2000 in any Rated PvP Bracket during Legion Season 4","Ferocious Elite",,11698,-1,-1,0,15270,0,0,14336,475,1582142,0,58359,0,0,0,0
-"Summon Elder Murk-Eye using a Mrgrglhjorn, then defeat him and Harjatan in Tomb of Sargeras on Normal difficulty or higher.","Grand Fin-ale",,11699,1676,-1,0,15255,0,10,0,68,134169,0,58353,0,0,0,0
+"Summon Elder Murk-Eye using a Mrgrglhjorn, then defeat him and Harjatan in Tomb of Sargeras on Normal difficulty or higher.","Grand Fin-ale",,11699,1676,-1,0,15255,0,10,0,71,134169,0,58353,0,0,0,0
 "Defeat Mephistroth within the Cathedral of Eternal Night.","Cathedral of Eternal Night",,11700,1677,-1,0,15254,0,10,0,33,1378283,0,58373,0,0,0,0
 "Defeat Mephistroth in Cathedral of Eternal Night on Heroic difficulty or higher.","Heroic: Cathedral of Eternal Night",,11701,1677,-1,11700,15254,0,10,0,34,136149,0,58375,0,0,0,0
 "Defeat Mephistroth in Cathedral of Eternal Night on Mythic difficulty.","Mythic: Cathedral of Eternal Night",,11702,1677,-1,11701,15254,0,10,0,35,237561,0,58377,0,0,0,0
@@ -5262,7 +5262,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Collect any class armor set from Warlords PvP Season 2.","Wild Style",,11721,-1,-1,0,15259,10,10,131072,72,1062744,0,58428,0,0,0,0
 "Collect any class armor set from Warlords PvP Season 3.",War-Mog-ering,,11722,-1,-1,0,15259,0,10,131072,73,1065077,0,58430,0,0,0,0
 "Collect any class armor set from Legion PvP Season 3 or 4.","Cruel Intentions",,11723,-1,-1,0,15259,0,10,131072,75,1531493,0,58432,0,0,0,0
-"Destroy 30 Infernal Spikes with Shattering Stars and then defeat Goroth in Tomb of Sargeras on Normal difficulty or higher.","Fel Turkey!",,11724,1676,-1,0,15255,0,10,0,66,250626,0,58523,0,0,0,0
+"Destroy 30 Infernal Spikes with Shattering Stars and then defeat Goroth in Tomb of Sargeras on Normal difficulty or higher.","Fel Turkey!",,11724,1676,-1,0,15255,0,10,0,69,250626,0,58523,0,0,0,0
 "Become Best Friends with the Fishing Masters of the Broken Isles.","Fisherfriend of the Isles","Item Reward: Underlight Emerald",11725,-1,-1,0,171,0,5,131072,69,236575,152583,58535,0,0,0,0
 "Contribute to the Mage Tower on the Broken Shore 5 times.","A Magic Contribution",,11731,-1,-1,0,15252,0,5,131072,52,609811,0,58544,0,0,0,0
 "Contribute to the Mage Tower on the Broken Shore 50 times.","A Magnificent Contribution",,11732,-1,-1,11731,15252,0,10,131072,53,609811,0,58546,0,0,0,0
@@ -5293,31 +5293,31 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Collect any class armor set from the Trial of Valor.","Can I Get A Helya",,11762,-1,-1,0,15259,0,10,131072,37,1530373,0,58646,0,0,0,0
 "Complete the Tomb of Sargeras raid achievements listed below.","Glory of the Tomb Raider","Title: The Tomb Raider",11763,-1,-1,0,168,0,25,143360,43,1017827,101426,58739,0,0,0,0
 "Complete Pet Battle Challenge in Wailing Caverns.","Pet Battle Challenge: Wailing Caverns","Pet: Son of Skum",11765,-1,-1,0,15117,0,5,131072,11,134310,0,58748,0,0,0,0
-"Defeat Goroth in Tomb of Sargeras on Mythic difficulty.","Mythic: Goroth",,11767,1676,-1,0,15255,0,10,4096,57,1546414,0,58753,0,0,0,0
+"Defeat Goroth in Tomb of Sargeras on Mythic difficulty.","Mythic: Goroth",,11767,1676,-1,0,15255,0,10,4096,60,1546414,0,58753,0,0,0,0
 "Defeat Agronox after fulminating 4 budding flowers in the Cathedral of Eternal Night on Mythic difficulty.","Boom Bloom",,11768,1677,-1,0,15254,0,10,0,70,133035,0,59097,0,0,0,0
 "Defeat Thrashbite the Scornful after all party members have read the entire Steamy Romance saga within Cathedral of Eternal Night on Mythic difficulty.","A Steamy Romance Saga",,11769,1677,-1,0,15254,0,10,0,71,133741,0,59292,0,0,0,0
-"Defeat Kil'jaeden in Tomb of Sargeras without any Shadowsouls finishing a cast of Destabilized Shadowsoul on Normal difficulty or higher.","Dark Souls",,11770,1676,-1,0,15255,0,10,0,74,895888,0,58768,0,0,0,0
+"Defeat Kil'jaeden in Tomb of Sargeras without any Shadowsouls finishing a cast of Destabilized Shadowsoul on Normal difficulty or higher.","Dark Souls",,11770,1676,-1,0,15255,0,10,0,77,895888,0,58768,0,0,0,0
 "Unlock every Artifact Trait for a single artifact weapon after empowering it.","Power Ascended",,11772,-1,-1,11144,15411,0,0,2048,4,1411839,0,58783,0,0,0,0
-"Defeat a Waxing Twilight Soul and then defeat the Sisters of the Moon in Tomb of Sargeras on Normal difficulty or higher.","Wax On, Wax Off",,11773,1676,-1,0,15255,0,10,0,70,1033491,0,58857,0,0,0,0
-"Defeat Demonic Inquisition in Tomb of Sargeras on Mythic difficulty.","Mythic: Demonic Inquisition",,11774,1676,-1,0,15255,0,10,4096,58,1546411,0,58875,0,0,0,0
-"Defeat Harjatan in Tomb of Sargeras on Mythic difficulty.","Mythic: Harjatan",,11775,1676,-1,0,15255,0,10,4096,59,1546413,0,58877,0,0,0,0
-"Defeat Mistress Sassz'ine in Tomb of Sargeras on Mythic difficulty.","Mythic: Mistress Sassz'ine",,11776,1676,-1,0,15255,0,10,4096,60,1546415,0,58879,0,0,0,0
-"Defeat Sisters of the Moon in Tomb of Sargeras on Mythic difficulty.","Mythic: Sisters of the Moon",,11777,1676,-1,0,15255,0,10,4096,61,1568516,0,58881,0,0,0,0
-"Defeat the Desolate Host in Tomb of Sargeras on Mythic difficulty.","Mythic: The Desolate Host",,11778,1676,-1,0,15255,0,10,4096,62,1546416,0,58883,0,0,0,0
-"Defeat the Maiden of Vigilance in Tomb of Sargeras on Mythic difficulty.","Mythic: Maiden of Vigilance",,11779,1676,-1,0,15255,0,10,4096,63,298664,0,58885,0,0,0,0
-"Defeat the Fallen Avatar in Tomb of Sargeras on Mythic difficulty.","Mythic: Fallen Avatar",,11780,1676,-1,0,15255,0,10,4096,64,1546417,0,58887,0,0,0,0
-"Defeat Kil'jaeden in Tomb of Sargeras on Mythic difficulty.","Mythic: Kil'jaeden","Title: The Darkener",11781,1676,-1,0,15255,0,10,4096,65,1546412,0,58889,0,0,0,0
+"Defeat a Waxing Twilight Soul and then defeat the Sisters of the Moon in Tomb of Sargeras on Normal difficulty or higher.","Wax On, Wax Off",,11773,1676,-1,0,15255,0,10,0,73,1033491,0,58857,0,0,0,0
+"Defeat Demonic Inquisition in Tomb of Sargeras on Mythic difficulty.","Mythic: Demonic Inquisition",,11774,1676,-1,0,15255,0,10,4096,61,1546411,0,58875,0,0,0,0
+"Defeat Harjatan in Tomb of Sargeras on Mythic difficulty.","Mythic: Harjatan",,11775,1676,-1,0,15255,0,10,4096,62,1546413,0,58877,0,0,0,0
+"Defeat Mistress Sassz'ine in Tomb of Sargeras on Mythic difficulty.","Mythic: Mistress Sassz'ine",,11776,1676,-1,0,15255,0,10,4096,63,1546415,0,58879,0,0,0,0
+"Defeat Sisters of the Moon in Tomb of Sargeras on Mythic difficulty.","Mythic: Sisters of the Moon",,11777,1676,-1,0,15255,0,10,4096,64,1568516,0,58881,0,0,0,0
+"Defeat the Desolate Host in Tomb of Sargeras on Mythic difficulty.","Mythic: The Desolate Host",,11778,1676,-1,0,15255,0,10,4096,65,1546416,0,58883,0,0,0,0
+"Defeat the Maiden of Vigilance in Tomb of Sargeras on Mythic difficulty.","Mythic: Maiden of Vigilance",,11779,1676,-1,0,15255,0,10,4096,66,298664,0,58885,0,0,0,0
+"Defeat the Fallen Avatar in Tomb of Sargeras on Mythic difficulty.","Mythic: Fallen Avatar",,11780,1676,-1,0,15255,0,10,4096,67,1546417,0,58887,0,0,0,0
+"Defeat Kil'jaeden in Tomb of Sargeras on Mythic difficulty.","Mythic: Kil'jaeden","Title: The Darkener",11781,1676,-1,0,15255,0,10,4096,68,1546412,0,58889,0,0,0,0
 "Defeat the bosses of Tomb of Sargeras on Normal difficulty or higher, while in a guild group.","Tomb of Sargeras Guild Run",,11782,1676,-1,0,15263,0,10,61440,4,1536895,0,58891,0,0,0,0
 "First guild on the realm to defeat Kil'jaeden in Tomb of Sargeras on Mythic difficulty while in a guild group.","Realm First! Kil'jaeden",,11783,-1,-1,0,15093,0,0,63744,27,1536895,0,58901,0,0,0,0
 "Defeat Kil'jaeden in Tomb of Sargeras on Mythic difficulty, while in a guild group.","Mythic: Kil'jaeden Guild Run",,11784,1676,-1,0,15263,0,10,61440,9,1536895,0,58911,0,0,0,0
 "Defeat all 4 of the following monstrous creatures in Broken Shore.","Terrors of the Shore",,11786,-1,-1,0,15255,0,10,131072,3,236293,0,58913,0,0,0,0
-"Defeat the following bosses near the entrance to the Tomb of Sargeras.","The Gates of Hell",,11787,1676,-1,0,15255,0,10,131072,53,1546415,0,58920,0,0,0,0
-"Defeat the following bosses in the lower levels of the Tomb of Sargeras.","Wailing Halls",,11788,1676,-1,0,15255,0,10,131072,54,1546416,0,58924,0,0,0,0
-"Defeat the following bosses in the ancient vault beneath the Tomb of Sargeras.","Chamber of the Avatar",,11789,1676,-1,0,15255,0,10,131072,55,1546417,0,58928,0,0,0,0
-"Defeat Kil'jaeden in the Tomb of Sargeras.","Deceiver's Fall",,11790,1676,-1,0,15255,0,10,0,56,1546412,0,58931,0,0,0,0
+"Defeat the following bosses near the entrance to the Tomb of Sargeras.","The Gates of Hell",,11787,1676,-1,0,15255,0,10,131072,55,1546415,0,58920,0,0,0,0
+"Defeat the following bosses in the lower levels of the Tomb of Sargeras.","Wailing Halls",,11788,1676,-1,0,15255,0,10,131072,56,1546416,0,58924,0,0,0,0
+"Defeat the following bosses in the ancient vault beneath the Tomb of Sargeras.","Chamber of the Avatar",,11789,1676,-1,0,15255,0,10,131072,57,1546417,0,58928,0,0,0,0
+"Defeat Kil'jaeden in the Tomb of Sargeras.","Deceiver's Fall",,11790,1676,-1,0,15255,0,10,0,58,1546412,0,58931,0,0,0,0
 "Earn Exalted status with the Armies of Legionfall.","Armies of Legionfall",,11796,-1,-1,11545,15258,0,5,131072,7,1585421,0,59008,0,0,0,0
-"Use a Sentinax beacon in each of the following areas.","Bringing Home the Beacon",,11802,-1,-1,0,15257,0,10,131072,24,133267,0,59066,0,0,0,0
-"Slay each of the demonic lieutenants that can be summoned from the Sentinax in Broken Shore.","Naxt Victim",,11841,-1,-1,0,15257,0,10,131072,25,615148,0,59090,0,0,0,0
+"Use a Sentinax beacon in each of the following areas.","Bringing Home the Beacon",,11802,-1,-1,0,15257,0,10,131072,25,133267,0,59066,0,0,0,0
+"Slay each of the demonic lieutenants that can be summoned from the Sentinax in Broken Shore.","Naxt Victim",,11841,-1,-1,0,15257,0,10,131072,26,615148,0,59090,0,0,0,0
 "Recruit your Legionfall campaign follower by completing the quest ""Champions of Legionfall.""","Champions of Legionfall",,11846,-1,-1,0,15252,0,10,0,49,1033590,0,59126,0,0,0,0
 "50 Work Orders Sent","7.2.0 50 Work Orders Sent",,11847,-1,-1,0,15268,0,0,1048576,66,136243,0,59128,0,0,0,0
 "Logged in during WoW's 13th Anniversary.","WoW's 13th Anniversary",,11848,-1,-1,0,15274,0,0,2048,75,133783,147876,59144,0,0,0,0
@@ -5366,18 +5366,18 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Kil'jaeden kills (Heroic Tomb of Sargeras)",,11911,1676,-1,0,15264,0,0,1,151,136243,0,59892,0,0,0,0
 ,"Kil'jaeden kills (Mythic Tomb of Sargeras)",,11912,1676,-1,0,15264,0,0,1,152,136243,0,59894,0,0,0,0
 "Proud owner of the 2017 Vintage Winter Veil gift, the Toy Weapon Set.","Don't Play With That In The House",,11913,-1,-1,0,15274,0,0,133120,30,133202,0,59896,0,0,0,0
-"Defeat Aggramar after slaying a Manifestation of Taeshalach in Antorus, the Burning Throne on Normal difficulty or higher.","Don't Sweat the Technique",,11915,1712,-1,0,15255,0,10,0,100,1600299,0,59908,0,0,0,0
+"Defeat Aggramar after slaying a Manifestation of Taeshalach in Antorus, the Burning Throne on Normal difficulty or higher.","Don't Sweat the Technique",,11915,1712,-1,0,15255,0,10,0,104,1600299,0,59908,0,0,0,0
 "Participate in the Blight Boar concert.","Hey, You're a Rockstar!",,11918,-1,-1,0,15101,0,5,524288,58,237186,0,59925,0,0,0,0
 "Have each of the band's roles assigned to you after participating in the Blight Boar concert.","Taking this Show on the Road",,11919,-1,-1,0,15101,0,10,131072,59,236812,0,59927,0,0,0,0
 "Participate in a perfect performance of the Blight Boar concert.","Perfect Performance",,11920,-1,-1,0,15101,0,10,0,60,629172,0,59933,0,0,0,0
 "Don't allow any ghouls to reach Devlynn Styx during the Blight Boar concert.","Mosh Pit",,11921,-1,-1,0,15101,0,5,0,61,236362,0,60211,0,0,0,0
-"Defeat Portal Keeper Hasabel in Antorus, the Burning Throne after opening a chaotic rift on Normal difficulty or higher.","Portal Combat",,11928,1712,-1,0,15255,0,10,0,94,1394890,0,59945,0,0,0,0
+"Defeat Portal Keeper Hasabel in Antorus, the Burning Throne after opening a chaotic rift on Normal difficulty or higher.","Portal Combat",,11928,1712,-1,0,15255,0,10,0,98,1394890,0,59945,0,0,0,0
 "Defeat Viz'aduum the Watcher in Return to Karazhan on Heroic difficulty or higher.","Heroic: Return to Karazhan",,11929,1651,-1,0,15254,0,10,0,32,1530372,0,59947,0,0,0,0
-"Defeat Garothi Worldbreaker in Antorus, the Burning Throne after decimating 16 Blightscale Worms on Normal difficulty or higher.",Worm-monger,,11930,1712,-1,0,15255,0,10,0,91,236197,0,59957,0,0,0,0
+"Defeat Garothi Worldbreaker in Antorus, the Burning Throne after decimating 16 Blightscale Worms on Normal difficulty or higher.",Worm-monger,,11930,1712,-1,0,15255,0,10,0,95,236197,0,59957,0,0,0,0
 "Proud owner of the Stormwind Skychaser and Orgrimmar Interceptor from the 2017 BlizzCon.","Rides of War",,11931,-1,-1,0,15268,1,0,133120,12,1634246,0,59976,0,0,0,0
 "Reach the ""Timelord"" friendship rank with Chromie.","Chromie Homie","Title: Timelord",11941,-1,-1,0,15258,0,10,131072,10,236699,0,60190,0,0,0,0
-"Defeat Varimathras in Antorus, the Burning Throne on Normal difficulty or higher without triggering Alone in the Darkness.","Together We Stand",,11948,1712,-1,0,15255,0,10,0,98,1322721,0,60305,0,0,0,0
-"Defeat Imonar the Soulhunter in Antorus, the Burning Throne after triggering every trap on the bridge on Normal difficulty or higher.","Hard to Kill",,11949,1712,-1,0,15255,0,10,0,96,136088,0,60441,0,0,0,0
+"Defeat Varimathras in Antorus, the Burning Throne on Normal difficulty or higher without triggering Alone in the Darkness.","Together We Stand",,11948,1712,-1,0,15255,0,10,0,102,1322721,0,60305,0,0,0,0
+"Defeat Imonar the Soulhunter in Antorus, the Burning Throne after triggering every trap on the bridge on Normal difficulty or higher.","Hard to Kill",,11949,1712,-1,0,15255,0,10,0,100,136088,0,60441,0,0,0,0
 ,"Garothi Worldbreaker kills (Normal Antorus, the Burning Throne)",,11954,1712,-1,0,15264,0,0,1,154,136243,0,60459,0,0,0,0
 ,"Garothi Worldbreaker kills (Heroic Antorus, the Burning Throne)",,11955,1712,-1,0,15264,0,0,1,155,136243,0,60461,0,0,0,0
 ,"Garothi Worldbreaker kills (Mythic Antorus, the Burning Throne)",,11956,1712,-1,0,15264,0,0,1,156,136243,0,60463,0,0,0,0
@@ -5412,21 +5412,21 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Argus the Unmaker kills (Heroic Antorus, the Burning Throne)",,11985,1712,-1,0,15264,0,0,1,195,136243,0,60521,0,0,0,0
 ,"Argus the Unmaker kills (Mythic Antorus, the Burning Throne)",,11986,1712,-1,0,15264,0,0,1,196,136243,0,60523,0,0,0,0
 "Complete the Antorus, the Burning Throne raid achievements listed below.","Glory of the Argus Raider","Mount: Antoran Gloomhound",11987,-1,-1,0,168,0,25,143360,44,1711341,152815,60525,0,0,0,0
-"Defeat the following bosses at the entrance to Antorus, the Burning Throne.","Light's Breach",,11988,1712,-1,0,15255,0,10,131072,75,1711331,0,60531,0,0,0,0
-"Defeat the following bosses on the second island of Antorus, the Burning Throne.","Forbidden Descent",,11989,1712,-1,0,15255,0,10,131072,76,1711326,0,60535,0,0,0,0
-"Defeat the following bosses in the depths of Antorus, the Burning Throne.","Hope's End",,11990,1712,-1,0,15255,0,10,131072,77,1711332,0,60539,0,0,0,0
-"Defeat the following bosses in the depths of Antorus, the Burning Throne.","Seat of the Pantheon",,11991,1712,-1,0,15255,0,10,131072,78,1711335,0,60543,0,0,0,0
-"Defeat the Garothi Worldbreaker in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Garothi Worldbreaker",,11992,1712,-1,0,15255,0,10,4096,80,1711328,0,60546,0,0,0,0
-"Defeat the Hounds of Sargeras in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Hounds of Sargeras",,11993,1712,-1,0,15255,0,10,4096,81,1711330,0,60548,0,0,0,0
-"Defeat the Antoran High Command in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Antoran High Command",,11994,1712,-1,0,15255,0,10,4096,82,1711331,0,60550,0,0,0,0
-"Defeat Portal Keeper Hasabel in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Portal Keeper Hasabel",,11995,1712,-1,0,15255,0,10,4096,83,1711329,0,60552,0,0,0,0
-"Successfully defend Eonar in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Eonar",,11996,1712,-1,0,15255,0,10,4096,84,1711327,0,60554,0,0,0,0
-"Defeat Imonar the Soulhunter in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Imonar the Soulhunter",,11997,1712,-1,0,15255,0,10,4096,85,1711326,0,60556,0,0,0,0
-"Defeat Kin'garoth in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Kin'garoth",,11998,1712,-1,0,15255,0,10,4096,86,1711333,0,60558,0,0,0,0
-"Defeat Varimathras in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Varimathras",,11999,1712,-1,0,15255,0,10,4096,87,1711334,0,60560,0,0,0,0
-"Defeat The Coven of Shivarra in Antorus, the Burning Throne on Mythic difficulty.","Mythic: The Coven of Shivarra",,12000,1712,-1,0,15255,0,10,4096,88,1711332,0,60562,0,0,0,0
-"Defeat Aggramar in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Aggramar",,12001,1712,-1,0,15255,0,10,4096,89,1711325,0,60564,0,0,0,0
-"Defeat Argus the Unmaker in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Argus the Unmaker","Title: Titanslayer",12002,1712,-1,0,15255,0,10,4096,90,1711335,0,60566,0,0,0,0
+"Defeat the following bosses at the entrance to Antorus, the Burning Throne.","Light's Breach",,11988,1712,-1,0,15255,0,10,131072,78,1711331,0,60531,0,0,0,0
+"Defeat the following bosses on the second island of Antorus, the Burning Throne.","Forbidden Descent",,11989,1712,-1,0,15255,0,10,131072,79,1711326,0,60535,0,0,0,0
+"Defeat the following bosses in the depths of Antorus, the Burning Throne.","Hope's End",,11990,1712,-1,0,15255,0,10,131072,80,1711332,0,60539,0,0,0,0
+"Defeat the following bosses in the depths of Antorus, the Burning Throne.","Seat of the Pantheon",,11991,1712,-1,0,15255,0,10,131072,81,1711335,0,60543,0,0,0,0
+"Defeat the Garothi Worldbreaker in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Garothi Worldbreaker",,11992,1712,-1,0,15255,0,10,4096,84,1711328,0,60546,0,0,0,0
+"Defeat the Hounds of Sargeras in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Hounds of Sargeras",,11993,1712,-1,0,15255,0,10,4096,85,1711330,0,60548,0,0,0,0
+"Defeat the Antoran High Command in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Antoran High Command",,11994,1712,-1,0,15255,0,10,4096,86,1711331,0,60550,0,0,0,0
+"Defeat Portal Keeper Hasabel in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Portal Keeper Hasabel",,11995,1712,-1,0,15255,0,10,4096,87,1711329,0,60552,0,0,0,0
+"Successfully defend Eonar in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Eonar",,11996,1712,-1,0,15255,0,10,4096,88,1711327,0,60554,0,0,0,0
+"Defeat Imonar the Soulhunter in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Imonar the Soulhunter",,11997,1712,-1,0,15255,0,10,4096,89,1711326,0,60556,0,0,0,0
+"Defeat Kin'garoth in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Kin'garoth",,11998,1712,-1,0,15255,0,10,4096,90,1711333,0,60558,0,0,0,0
+"Defeat Varimathras in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Varimathras",,11999,1712,-1,0,15255,0,10,4096,91,1711334,0,60560,0,0,0,0
+"Defeat The Coven of Shivarra in Antorus, the Burning Throne on Mythic difficulty.","Mythic: The Coven of Shivarra",,12000,1712,-1,0,15255,0,10,4096,92,1711332,0,60562,0,0,0,0
+"Defeat Aggramar in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Aggramar",,12001,1712,-1,0,15255,0,10,4096,93,1711325,0,60564,0,0,0,0
+"Defeat Argus the Unmaker in Antorus, the Burning Throne on Mythic difficulty.","Mythic: Argus the Unmaker","Title: Titanslayer",12002,1712,-1,0,15255,0,10,4096,94,1711335,0,60566,0,0,0,0
 "Bring Urjad from the void realm using Void Tear, then defeat him and Zuraal the Ascended in Seat of the Triumvirate on Mythic Difficulty.","Welcome the Void",,12004,1753,-1,0,15254,0,10,0,73,136221,0,60653,0,0,0,0
 "Have Darkfang destroy 4 Sealed Void Caches using Shadow Pounce, then defeat Saprish in Seat of the Triumvirate on Mythic Difficulty.","Let it All Out",,12005,1753,-1,0,15254,0,10,0,74,1097742,0,60658,0,0,0,0
 "Defeat L'ura in Seat of the Triumvirate on Heroic difficulty or higher.","Heroic: Seat of the Triumvirate",,12007,1753,-1,0,15254,0,10,0,36,1711340,0,60660,0,0,0,0
@@ -5436,9 +5436,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"BS Unlock <DND>",,12015,-1,-1,0,15252,0,0,1179648,62,136243,0,60748,0,0,0,0
 "Collect any class armor set from Antorus, the Burning Throne.","Argussy Up",,12020,-1,-1,0,15259,0,10,131072,39,1711341,0,60845,0,0,0,0
 "Collect any class armor set from Legion PvP Season 5, 6, or 7.","Claws Out",,12021,-1,-1,0,15259,0,10,131072,76,1605807,0,60847,0,0,0,0
-"Defeat each of the following Legion Generals by completing each of the Greater Invasion Point scenarios.","Invasion Obliteration",,12026,-1,-1,0,15257,0,10,131072,27,1394890,0,61020,0,0,0,0
-"Slay each of the demonic commanders that can control the Invasion Points.","Envision Invasion Eradication",,12028,-1,-1,0,15257,0,10,131072,26,1378284,0,61027,0,0,0,0
-"Defeat Kin'garoth with 9 Diabolic Bombs active in Antorus, the Burning Throne on Normal difficulty or higher.","The World Revolves Around Me",,12030,1712,-1,0,15255,0,10,0,97,1392544,0,61045,0,0,0,0
+"Defeat each of the following Legion Generals by completing each of the Greater Invasion Point scenarios.","Invasion Obliteration",,12026,-1,-1,0,15257,0,10,131072,28,1394890,0,61020,0,0,0,0
+"Slay each of the demonic commanders that can control the Invasion Points.","Envision Invasion Eradication",,12028,-1,-1,0,15257,0,10,131072,27,1378284,0,61027,0,0,0,0
+"Defeat Kin'garoth with 9 Diabolic Bombs active in Antorus, the Burning Throne on Normal difficulty or higher.","The World Revolves Around Me",,12030,1712,-1,0,15255,0,10,0,101,1392544,0,61045,0,0,0,0
 "Win 100 Arena (3v3) or 40 Rated Battlegrounds in Legion Season 5.","Fierce Combatant","Mount Reward: Vicious Saddle",12031,-1,0,0,15270,0,0,6144,467,463449,103533,61050,0,0,0,0
 "Win 100 Arena (3v3) or 40 Rated Battlegrounds in Legion Season 5.","Fierce Combatant","Mount Reward: Vicious Saddle",12032,-1,1,0,15270,0,0,6144,468,463448,103533,61053,0,0,0,0
 "End Legion PvP season 5 in the top 3% of the arena ladder (requires 50 games won your current faction in Legion Season 5).","Duelist: Legion Season 5","Seasonal Character Title: Duelist",12034,-1,-1,0,15270,0,0,14336,299,236540,0,0,0,0,0,0
@@ -5454,23 +5454,23 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "End Legion PvP season 5 in the top 10% of the rated battleground ladder (requires 50 games won your current faction in Legion Season 5).","Defender of the Horde: Legion Season 5","Seasonal Character Title: Defender of the Horde",12043,-1,0,0,15270,0,0,14336,443,236646,0,0,0,0,0,0
 "End Legion PvP season 5 in the top 35% of the rated battleground ladder (requires 50 games won your current faction in Legion Season 5).","Soldier of the Horde: Legion Season 5","Seasonal Character Title: Soldier of the Horde",12044,-1,0,0,15270,0,0,14336,461,236611,0,0,0,0,0,0
 "End Legion PvP season 5 in the top 0.5% of the arena ladder (requires 150 games won your current faction in Legion Season 5).","Gladiator: Legion Season 5","Seasonal Character Title: Gladiator",12045,-1,-1,0,15270,0,0,14336,287,236540,141847,0,0,0,0,0
-"Defeat the Coven of Shivarra in Antorus, the Burning Throne on Normal difficulty or higher while at least one of each Torment survives.","Remember the Titans",,12046,1712,-1,0,15255,0,10,0,99,254117,0,61061,0,0,0,0
-"Defeat the Felhounds of Sargeras in Antorus, the Burning Throne on Normal difficulty or higher with both Felhounds afflicted with 5 stacks of Fel Imbuement.","Hounds Good To Me",,12065,1712,-1,0,15255,0,10,0,92,135800,0,61126,0,0,0,0
+"Defeat the Coven of Shivarra in Antorus, the Burning Throne on Normal difficulty or higher while at least one of each Torment survives.","Remember the Titans",,12046,1712,-1,0,15255,0,10,0,103,254117,0,61061,0,0,0,0
+"Defeat the Felhounds of Sargeras in Antorus, the Burning Throne on Normal difficulty or higher with both Felhounds afflicted with 5 stacks of Fel Imbuement.","Hounds Good To Me",,12065,1712,-1,0,15255,0,10,0,96,135800,0,61126,0,0,0,0
 "Complete the Argus campaign.","You Are Now Prepared!",,12066,-1,-1,0,15252,0,10,131072,48,1247264,0,61110,0,0,0,0
-"Collect the 5 Orbs of Life placed around Eonar's sanctuary in Antorus, the Burning Throne on Normal difficulty or higher.","Spheres of Influence",,12067,1712,-1,0,15255,0,10,131072,95,897131,0,61238,0,0,0,0
-"Explore Argus, revealing the covered areas of the world map on Krokuun, Eredath, and the Antoran Wastes.","Explore Argus","Reward: Increased Mount Speed on Argus",12069,-1,-1,0,15257,0,10,2228224,28,1714097,0,61241,0,0,0,0
+"Collect the 5 Orbs of Life placed around Eonar's sanctuary in Antorus, the Burning Throne on Normal difficulty or higher.","Spheres of Influence",,12067,1712,-1,0,15255,0,10,131072,99,897131,0,61238,0,0,0,0
+"Explore Argus, revealing the covered areas of the world map on Krokuun, Eredath, and the Antoran Wastes.","Explore Argus","Reward: Increased Mount Speed on Argus",12069,-1,-1,0,15257,0,10,2228224,29,1714097,0,61241,0,0,0,0
 "Fully unlock the power of the Netherlight Crucible on one of your artifact weapons.","Crucible's Promise",,12071,-1,-1,0,15411,0,0,2048,9,1030100,0,0,0,0,0,0
 "Unlock the Netherlight Crucible.","Now You're Cooking with Netherlight",,12072,-1,-1,0,15411,0,0,133120,10,892446,0,61559,0,0,0,0
 "Unlock all of the powers for the Vindicaar Matrix Core.","Locked and Loaded",,12073,-1,-1,0,15252,0,5,131072,64,237541,0,62047,0,0,0,0
-"Discover the hidden treasures of Argus.","Shoot First, Loot Later",,12074,-1,-1,0,15257,0,10,131072,12,1125255,0,61265,0,0,0,0
+"Discover the hidden treasures of Argus.","Shoot First, Loot Later",,12074,-1,-1,0,15257,0,10,131072,13,1125255,0,61265,0,0,0,0
 "Earn Exalted status with the Argussian Reach.","Protector of the Argussian Reach",,12076,-1,-1,0,15258,0,10,131072,11,1714098,0,61495,0,0,0,0
-"Complete 25 of the following special encounters on Argus.","Adventurer of Argus",,12077,-1,-1,0,15257,0,10,131072,29,1378283,0,61433,0,0,0,0
-"Complete the following special encounters on Argus.","Commander of Argus","Arsenal: Weapons of the Lightforged",12078,-1,-1,12077,15257,0,10,131072,30,1380367,0,61348,0,0,0,0
+"Complete 25 of the following special encounters on Argus.","Adventurer of Argus",,12077,-1,-1,0,15257,0,10,131072,30,1378283,0,61433,0,0,0,0
+"Complete the following special encounters on Argus.","Commander of Argus","Arsenal: Weapons of the Lightforged",12078,-1,-1,12077,15257,0,10,131072,31,1380367,0,61348,0,0,0,0
 "Collect all of the battle pets listed below from Bastion of Twilight, Blackwing Descent, Throne of the Four Winds, Firelands, and Dragon Soul.","Raiding with Leashes V: Cuteaclysm","Pet: Amalgam of Destruction",12079,-1,-1,0,15118,0,10,131072,62,574788,152963,61417,0,0,0,0
 "Earn Exalted status with the Army of the Light.","Officer of the Light",,12081,-1,-1,0,15258,0,10,131072,12,1714094,0,61501,0,0,0,0
 ,"Argus - Block 1 Unlock <DND>",,12082,-1,-1,0,15252,0,0,1179648,59,136243,0,61505,0,0,0,0
-"Complete the Argus achievements listed below.","Paragon of Argus","Title: Lightbringer",12083,-1,-1,0,15257,0,25,131072,31,1714939,0,61513,0,0,0,0
-"Kill 10 enemies while Fel Infused from a single lightning strike on Argus.","Infused and Abused",,12084,-1,-1,0,15257,0,5,131072,13,841221,0,61519,0,0,0,0
+"Complete the Argus achievements listed below.","Paragon of Argus","Title: Lightbringer",12083,-1,-1,0,15257,0,25,131072,32,1714939,0,61513,0,0,0,0
+"Kill 10 enemies while Fel Infused from a single lightning strike on Argus.","Infused and Abused",,12084,-1,-1,0,15257,0,5,131072,14,841221,0,61519,0,0,0,0
 "Score at least 600 points in the Norwington Estate horse show in Tiragarde Sound.","The Reining Champion",,12087,-1,1,0,15284,0,5,0,55,2143091,0,61546,0,0,0,0
 "Defeat the following corrupted pets on Argus.","Anomalous Animals of Argus",,12088,-1,-1,0,15119,0,10,131072,68,1602317,0,61565,0,0,0,0
 "Defeat the corrupted pets of Argus with all Aquatic pets.","Aquatic Assault",,12089,-1,-1,0,15119,0,5,131072,69,463493,0,61584,0,0,0,0
@@ -5485,10 +5485,10 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat the corrupted pets of Argus with all Mechanical pets.","Mechanical Melee",,12098,-1,-1,0,15119,0,5,131072,77,134152,0,61741,0,0,0,0
 "Defeat the corrupted pets of Argus with all Undead pets.","Unstoppable Undead",,12099,-1,-1,0,15119,0,5,131072,78,237441,0,61760,0,0,0,0
 "Complete the following achievements.","Family Fighter","Pet: Felclaw Marsuul",12100,-1,-1,0,15119,0,10,135168,79,1045097,153040,61779,0,0,0,0
-"Slay 100 non-trivial demons in Krokuun, Eredath, and the Antoran Wastes.","We Came Here For Two Reasons",,12101,-1,-1,0,15257,0,10,131072,32,1305152,0,61790,0,0,0,0
-"Slay 500 non-trivial demons in Krokuun, Eredath, and the Antoran Wastes.","To Kill Demons...",,12102,-1,-1,12101,15257,0,10,131072,33,1305152,0,61792,0,0,0,0
-"Slay 2000 non-trivial demons in Krokuun, Eredath, and the Antoran Wastes.","...And Chew Mana Buns","Mount: Bleakhoof Ruinstrider",12103,-1,-1,12102,15257,0,10,131072,34,1305152,153041,61794,0,0,0,0
-"Slay 5000 non-trivial demons in Krokuun, Eredath, and the Antoran Wastes.","And We're All Out of Mana Buns","Title: Demonslayer",12104,-1,-1,12103,15257,0,10,131072,35,1305152,0,61796,0,0,0,0
+"Slay 100 non-trivial demons in Krokuun, Eredath, and the Antoran Wastes.","We Came Here For Two Reasons",,12101,-1,-1,0,15257,0,10,131072,33,1305152,0,61790,0,0,0,0
+"Slay 500 non-trivial demons in Krokuun, Eredath, and the Antoran Wastes.","To Kill Demons...",,12102,-1,-1,12101,15257,0,10,131072,34,1305152,0,61792,0,0,0,0
+"Slay 2000 non-trivial demons in Krokuun, Eredath, and the Antoran Wastes.","...And Chew Mana Buns","Mount: Bleakhoof Ruinstrider",12103,-1,-1,12102,15257,0,10,131072,35,1305152,153041,61794,0,0,0,0
+"Slay 5000 non-trivial demons in Krokuun, Eredath, and the Antoran Wastes.","And We're All Out of Mana Buns","Title: Demonslayer",12104,-1,-1,12103,15257,0,10,131072,36,1305152,0,61796,0,0,0,0
 "Reach Prestige Level 20.","Double Decade of Dominance",,12108,-1,-1,11694,15279,0,0,2048,97,1713480,0,61865,0,0,0,0
 "Reach Prestige Level 21.","Twenty-One Arms Salute",,12109,-1,-1,12108,15279,0,0,2048,98,1713481,0,61867,0,0,0,0
 "Defeat Argus the Unmaker in Antorus, the Burning Throne, on Heroic difficulty or higher, before the release of patch 8.0.","Ahead of the Curve: Argus the Unmaker",,12110,1712,-1,0,15271,0,0,6144,62,1711335,0,61876,0,0,0,0
@@ -5506,7 +5506,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"The Coven of Shivarra kills (Raid Finder Antorus, the Burning Throne)",,12125,1712,-1,0,15264,0,0,1,185,136243,0,61951,0,0,0,0
 ,"Aggramar kills (Raid Finder Antorus, the Burning Throne)",,12126,1712,-1,0,15264,0,0,1,189,136243,0,61953,0,0,0,0
 ,"Argus the Unmaker kills (Raid Finder Antorus, the Burning Throne)",,12127,1712,-1,0,15264,0,0,1,193,136243,0,61955,0,0,0,0
-"Defeat the Antoran High Command in Antorus, the Burning Throne while placing three or fewer Felshield Emitters.","This is the War Room!",,12129,1712,-1,0,15255,0,10,0,93,135796,0,61983,0,0,0,0
+"Defeat the Antoran High Command in Antorus, the Burning Throne while placing three or fewer Felshield Emitters.","This is the War Room!",,12129,1712,-1,0,15255,0,10,0,97,135796,0,61983,0,0,0,0
 "End Legion PvP season 6 in the top 0.1% of the arena ladder (requires 150 games won your current faction in Legion Season 6).","Dominant Gladiator: Legion Season 6","Character Title: Dominant Gladiator",12134,-1,-1,0,15270,0,0,14336,260,236540,0,0,0,0,0,0
 "Reach 2000 in any Rated PvP Bracket during Legion Season 6","Dominant Elite",,12135,-1,-1,0,15270,0,0,14336,470,1582142,0,63058,0,0,0,0
 "Win 100 Arena (3v3) or 40 Rated Battlegrounds in Legion Season 6.","Dominant Combatant","Mount Reward: Vicious Saddle",12136,-1,0,0,15279,0,0,6144,103,463449,103533,62078,0,0,0,0
@@ -5554,9 +5554,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Earn the allegiance of the Lightforged draenei and welcome them into the Alliance.","Allied Races: Lightforged Draenei","Reward: Lightforged Draenei Race Unlocked",12243,-1,-1,0,201,0,10,131072,26,1786420,0,62298,0,0,0,0
 "Earn the allegiance of the Nightborne elves and welcome them into the Horde.","Allied Races: Nightborne","Reward: Nightborne Race Unlocked",12244,-1,-1,0,201,0,10,131072,36,1786421,0,62300,0,0,0,0
 "Earn the allegiance of the Highmountain tauren and welcome them into the Horde.","Allied Races: Highmountain Tauren","Reward: Highmountain Tauren Race Unlocked",12245,-1,-1,0,201,0,10,131072,34,1786419,0,62302,0,0,0,0
-"Collect 20 Motes of Titanic Power within 5 seconds and then defeat Argus the Unmaker in Antorus, the Burning Throne on Normal difficulty or higher.","Stardust Crusaders",,12257,1712,-1,0,15255,0,10,0,101,1387618,0,62544,0,0,0,0
+"Collect 20 Motes of Titanic Power within 5 seconds and then defeat Argus the Unmaker in Antorus, the Burning Throne on Normal difficulty or higher.","Stardust Crusaders",,12257,1712,-1,0,15255,0,10,0,105,1387618,0,62544,0,0,0,0
 "First guild on the realm to defeat Argus the Unmaker in Antorus, the Burning Throne on Mythic difficulty, while in a guild group.","Realm First! Argus the Unmaker",,12258,1712,-1,0,15093,0,0,63744,28,1711335,0,62689,0,0,0,0
-,"Argus Raid - Argus the Unmaker Defeated",,12266,-1,-1,0,15255,0,0,1048580,115,136243,0,62342,0,0,0,0
+,"Argus Raid - Argus the Unmaker Defeated",,12266,-1,-1,0,15255,0,0,1048580,119,136243,0,62342,0,0,0,0
 "Defeat all four bosses with at least one party member under the affects of Unstable Hex in Atal'Dazar on Mythic difficulty.","Bringing Hexy Back",,12270,-1,-1,0,15285,0,10,131072,38,797327,0,62876,0,0,0,0
 "Defeat Priestess Alun'za after defeating the Fatal Corruption in Atal'Dazar on Mythic difficulty.","Gold Fever",,12272,-1,-1,0,15285,0,10,0,39,135725,0,62892,0,0,0,0
 "Defeat Yazma while all four Shadowflame Sconces are lit in Atal'Dazar on Mythic difficulty.","It's Lit!",,12273,-1,-1,0,15285,0,10,0,40,425951,0,62897,0,0,0,0
@@ -6786,9 +6786,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Il'gynoth, Corruption Reborn (Mythic Ny'alotha, the Waking City)",,14211,-1,-1,0,15409,0,0,1,186,136243,0,83385,0,0,0,0
 ,"<Hidden> 8.3 Main Line - Account Has Obtained Legendary Cloak (DNT)",,14212,-1,-1,0,15284,0,0,1179652,119,136243,0,84755,0,0,0,0
 "Soulshape form currently selected if you have joined the Night Fae covenant.","9.0 - Covenant - Night Fae - Soulshape Selected",,14213,-1,-1,0,130,0,0,3145733,7,136243,0,84764,0,0,0,0
-,"<Hidden> - NPE - Sold Item",,14221,-1,-1,0,96,0,0,1048576,38,136243,0,84853,0,0,0,0
+,"<Hidden> - NPE - Sold Item",,14221,-1,-1,0,96,0,0,1048576,40,136243,0,84853,0,0,0,0
 "Escape the isle of Exile's Reach and embark upon a greater adventure.","Exile's Reach",,14222,-1,-1,0,96,0,10,131072,1,3567434,0,84901,0,0,0,0
-,"<Hidden> - NPE - Bought Item",,14223,-1,-1,0,96,0,0,1048576,39,136243,0,84857,0,0,0,0
+,"<Hidden> - NPE - Bought Item",,14223,-1,-1,0,96,0,0,1048576,41,136243,0,84857,0,0,0,0
 "Hear every side of the story at Theotar's tea party.","Tea Tales",,14233,-1,-1,0,15422,0,10,131072,38,611418,0,84917,0,0,0,0
 ,"9.0 Shadowlands - Expansion Quest Launch - Prologue",,14235,-1,-1,0,92,0,0,18087940,70,136243,0,85059,0,0,0,0
 "Tracking for account-wide essences","Azerite Essence - Rank 3 on any character - Azeroth's Undying Gift <DND>",,14238,-1,-1,0,15417,0,0,1179648,40,136243,0,85084,0,0,0,0
@@ -6831,7 +6831,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Echelon after shattering 18 or more Undying Stonefiends at one time in the Halls of Atonement on Mythic difficulty.","Breaking Bad",,14284,2287,-1,0,15428,0,10,0,45,1519262,0,85320,0,0,0,0
 "Defeat Nalthor the Rimebinder without being struck by Comet Storm, Blizzard, or the secondary effect of Frozen Binds in the Necrotic Wake on Mythic difficulty.","Ready for Raiding VII",,14285,2286,-1,0,15428,0,10,0,34,1033907,0,85466,0,0,0,0
 "Defeat Executor Tarvold after slaying 8 Forlorn Captives with the effects of Residue in Sanguine Depths on Mythic difficulty.","Residue Evil",,14286,2284,-1,0,15428,0,10,0,56,3528309,0,85470,0,0,0,0
-"Once earned, the player is no longer considered ""new"" and is allowed to choose between Exlie's Reach and the racial starting experience when creating a new character.","<Hidden> Completed New Player Experience (Account)",,14287,-1,-1,0,96,0,0,11665412,41,136243,0,85509,0,0,0,0
+"Once earned, the player is no longer considered ""new"" and is allowed to choose between Exlie's Reach and the racial starting experience when creating a new character.","<Hidden> Completed New Player Experience (Account)",,14287,-1,-1,0,96,0,0,11665412,43,136243,0,85509,0,0,0,0
 ,"<Hidden> - The Master of Lies - Scenario Complete",,14288,-1,-1,0,15422,0,0,1048576,49,136243,0,85532,0,0,0,0
 "Defeat General Kaal while affected by Slammed! in the Sanguine Depths on Mythic difficulty.","Kaal-ed Shot",,14289,2284,-1,0,15428,0,10,0,58,1545375,0,85555,0,0,0,0
 "Defeat Duraka the Unbreakable in the Sanguine Depths on Mythic difficulty.","I Only Have Eyes For You",,14290,2284,-1,0,15428,0,10,0,57,136172,0,85557,0,0,0,0
@@ -7061,7 +7061,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Artificer Xy'mox after returning loose Maldraxxus, Ardenweald, and Maw Anima to their display cases in Castle Nathria on Normal difficulty or higher.","Private Stock",,14617,2296,-1,0,15438,0,10,0,18,3528287,0,87423,0,0,0,0
 "Earn 5000 Conquest during Shadowlands Season 1.","Forged through Conquest: Shadowlands Season 1",,14618,-1,-1,0,165,0,0,1048576,22,135986,0,87442,0,0,0,0
 "Defeat the Council of Blood after throwing four bottles of wine in Castle Nathria on Normal difficulty or higher.","Pour Decision Making",,14619,-1,-1,0,15438,0,10,0,21,461806,0,87449,0,0,0,0
-"Complete 14 Pet Battle World Quests throughout the Shadowlands with a full team of level 25 pets.","Battle in the Shadowlands","Pet: Mawsworn Pet Leash",14625,-1,-1,0,15119,0,10,135168,95,652174,184508,87483,0,0,0,0
+"Complete 14 Pet Battle World Quests throughout the Shadowlands with a full team of level 25 pets.","Battle in the Shadowlands","Toy: Mawsworn Pet Leash",14625,-1,-1,0,15119,0,10,135168,95,652174,184508,87483,0,0,0,0
 "Obtain Sorrowbane from the Theater of Pain.","Harvester of Sorrow",,14626,-1,-1,0,15436,0,5,0,44,135293,0,87540,0,0,0,0
 "Pledge your allegiance to one of the covenants in the Shadowlands.","Choosing Your Purpose",,14627,-1,-1,0,15441,0,10,0,1,3601566,0,87510,0,0,0,0
 "Reach Renown level 10.","The Road to Renown",,14628,-1,-1,0,15441,0,10,0,11,3726261,0,87514,0,0,0,0
@@ -7125,7 +7125,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Host Ember Courts with the following attributes at high levels.","It's Certainly Never Boring",,14726,-1,-1,0,15441,0,5,131072,86,3257751,0,88023,0,0,0,0
 "Complete 10 Events during a single Ember Court.","Master of Ceremonies",,14727,-1,-1,0,15441,0,5,0,87,3257751,0,89092,0,0,0,0
 "Draenor is home to many familiar, but different critters, who have been waiting to get some /love.","To All the Squirrels Through Time and Space",,14728,-1,-1,0,15235,0,10,131072,29,237182,0,88034,0,0,0,0
-"The critters of the Broken Shore need /love.","To All the Squirrels I Love Despite Their Scars",,14729,-1,-1,0,15257,0,10,131072,37,237182,0,88673,0,0,0,0
+"The critters of the Broken Shore need /love.","To All the Squirrels I Love Despite Their Scars",,14729,-1,-1,0,15257,0,10,131072,38,237182,0,88673,0,0,0,0
 "The critters of Kul Tiras and Zandalar are worthy of /love as well.","To All the Squirrels I Set Sail to See",,14730,-1,-1,0,15298,0,10,131072,113,237182,0,88687,0,0,0,0
 "The critters of the Shadowlands have been loved, but need more /love.","To All the Squirrels I've Loved and Lost",,14731,-1,-1,0,15436,0,10,131072,58,237182,0,88701,0,0,0,0
 "Survive Sundancer's wrath and earn the right to challenge him to a trial by combat.","In the Hot Seat",,14733,-1,-1,0,15436,0,10,133120,43,135890,0,88074,0,0,0,0
@@ -7190,8 +7190,8 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the optional Ardenweald storylines listed below.","Sojourner of Ardenweald",,14800,-1,-1,0,15422,0,10,131072,28,3716925,0,88801,0,0,0,0
 "Complete the optional Bastion storylines listed below.","Sojourner of Bastion",,14801,-1,-1,0,15422,0,10,131072,29,3716926,0,88806,0,0,0,0
 "Defeat all seven champions in the Theater of Pain.",Bloodsport,,14802,-1,-1,0,15436,0,10,131072,45,132334,0,88920,0,0,0,0
-"Complete the Exile's Reach introductory experience while a recruit of the Recruit-A-Friend program.","<Hidden> Exile's Reach RAF Bag",,14804,-1,-1,0,96,0,0,11534340,46,3567434,184033,88949,0,0,0,0
-"Once earned, a player's alt can access the Shadowlands Time Skip mode. (DNT)","<Hidden> Completed Shadowlands Story (DNT) <Account>",,14807,-1,-1,0,96,0,0,9568260,45,136243,0,88985,0,0,0,0
+"Complete the Exile's Reach introductory experience while a recruit of the Recruit-A-Friend program.","<Hidden> Exile's Reach RAF Bag",,14804,-1,-1,0,96,0,0,11534340,48,3567434,184033,88949,0,0,0,0
+"Once earned, a player's alt can access the Shadowlands Time Skip mode. (DNT)","<Hidden> Completed Shadowlands Story (DNT) <Account>",,14807,-1,-1,0,96,0,0,9568260,47,136243,0,88985,0,0,0,0
 "Successfully complete the first Layer of each of the following sections of Torghast, Tower of the Damned:","Touring Torghast",,14808,-1,-1,0,15440,0,10,0,7,2178509,0,88987,0,0,0,0
 "Successfully complete Layer 4 of each of the following sections of Torghast, Tower of the Damned:","Traversing Torghast",,14809,-1,-1,14808,15440,0,10,0,8,2178509,0,88994,0,0,0,0
 "Successfully complete Layer 8 of each of the following sections of Torghast, Tower of the Damned:","Terror of Torghast",,14810,-1,-1,14809,15440,0,10,0,9,2178509,0,89001,0,0,0,0
@@ -7226,7 +7226,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Alderyn and Myn'ir, and Splinterbark Nightmare in a Trial of Loyalty as Mikanikos.","The Hoot of the Issue",,14852,-1,-1,0,15441,0,5,131072,53,3586266,0,90074,0,0,0,0
 "Defeat Mad Mortimer after being afflicted by Fiery Veins, Frozen, and Uncontrolled Vomiting.","All The Colors of the Painbow",,14853,-1,-1,0,15441,0,5,0,54,132099,0,0,0,0,0,0
 "Overcome a Trial of Loyalty using each piece of soulbind equipment.","It's Not What You Wear",,14854,-1,-1,0,15441,0,5,131072,55,1408456,0,90077,0,0,0,0
-,"<Hidden> - NPE Restrictions Removed",,14855,-1,-1,0,96,0,0,11534340,40,136243,0,89866,0,0,0,0
+,"<Hidden> - NPE Restrictions Removed",,14855,-1,-1,0,96,0,0,11534340,42,136243,0,89866,0,0,0,0
 "Overcome a Trial of Wisdom with five Charms equipped.","Charmed, I'm Sure",,14856,-1,-1,0,15441,0,5,0,56,236502,0,0,0,0,0,0
 "Defeat Echthra in a Trial of Wisdom after killing 20 Crawlers.","Itsy Bitsy Fighters",,14857,-1,-1,0,15441,0,5,0,57,2027947,0,0,0,0,0,0
 "Defeat Craven Corinth in a Trial of Wisdom after he has consumed two anima orbs.","Curse of Thirst",,14858,-1,-1,0,15441,0,5,0,58,3528308,0,0,0,0,0,0
@@ -8977,8 +8977,8 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Obtain gold in all races in Kalimdor.","Kalimdor Racing Completionist: Gold","Title: Kalimdor Racer",17723,-1,-1,17722,15462,0,20,131072,640,1100022,0,144520,0,0,0,0
 ,"Vicious Saddle (37)",,17725,-1,1,17104,15270,0,0,1180672,121,1379171,103533,144544,0,0,0,0
 "Set on login, will be true 33% of the time. Mutually exclusive with A version.","Random Login Variable B",,17730,-1,-1,0,92,0,0,3145732,112,136243,0,144557,0,0,0,0
-,"<Hidden> 00.x Chromie Time - Hit Previous Max Level While In Chromie Time",,17732,-1,-1,0,96,0,0,1048580,47,136243,0,144567,0,0,0,0
-,"<Hidden> 00.x Chromie Time - Is Greater Than Previous Max Level While In Chromie Time",,17733,-1,-1,0,96,0,0,1048580,48,136243,0,144569,0,0,0,0
+,"<Hidden> 00.x Chromie Time - Hit Previous Max Level While In Chromie Time",,17732,-1,-1,0,96,0,0,1048580,49,136243,0,144567,0,0,0,0
+,"<Hidden> 00.x Chromie Time - Is Greater Than Previous Max Level While In Chromie Time",,17733,-1,-1,0,96,0,0,1048580,50,136243,0,144569,0,0,0,0
 "Complete the Rebel Dragonkin storyline.","Active Listening Skills","Title: The Reconciler",17734,-1,-1,0,15455,0,15,131072,81,4630421,0,144581,0,0,0,0
 "Douse 100 fires at the Suffusion Camps.","We Didn't Start the Fire",,17735,-1,-1,0,15455,0,5,131200,67,132839,0,144585,0,0,0,0
 "Share the Recipe Rat's greatest recipe with hungry rats across Azeroth.","The Gift of Cheese","Pet: Roland",17736,-1,-1,0,170,0,5,131072,71,515993,204894,144600,0,0,0,0
@@ -10023,7 +10023,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Owner of The War Within Heroic Edition Algarian Stormrider mount.","Heroic Edition: Algarian Stormrider",,19027,-1,-1,0,15268,0,0,133120,92,5306251,0,149859,0,0,0,0
 "Owner of the Lil' Maggz pet.","Lil' Maggz",,19029,-1,-1,0,15268,1,0,133120,94,4891625,0,149929,0,0,0,0
 "Owner of the Squally pet.",Squally,,19030,-1,-1,0,15268,1,0,133120,95,5333904,0,149931,0,0,0,0
-"Owner of the Fyrn pet.",Fyrn,,19031,-1,-1,0,15268,1,0,133120,96,5003505,0,149933,0,0,0,0
+"Owner of the Fyrn pet.",Fyrn,,19031,-1,-1,0,15268,1,0,1181696,96,5003505,0,149933,0,0,0,0
 "Complete the Emerald Dream Shoreline Switchback.","Shoreline Switchback: Bronze",,19032,-1,-1,0,15462,0,0,1048576,1298,1002572,0,0,0,0,0,0
 "Get Silver ranked time for the Emerald Dream Shoreline Switchback.","Shoreline Switchback: Silver",,19033,-1,-1,19032,15462,0,0,1048576,1299,1002575,0,0,0,0,0,0
 "Get Gold ranked time for the Emerald Dream Shoreline Switchback.","Shoreline Switchback: Gold",,19034,-1,-1,19033,15462,0,0,1048576,1300,1002573,0,0,0,0,0,0
@@ -10071,7 +10071,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Get Silver ranked time for the Emerald Dream Emerald Amble Reverse Challenge.","Emerald Amble Reverse Challenge: Silver",,19075,-1,-1,19074,15462,0,0,1048576,1341,1002575,0,0,0,0,0,0
 "Get Gold ranked time for the Emerald Dream Emerald Amble Reverse Challenge.","Emerald Amble Reverse Challenge: Gold",,19076,-1,-1,19075,15462,0,0,1048576,1342,1002573,0,0,0,0,0,0
 "Proud owner of the 2023 Vintage Winter Veil gift, Junior Timekeeper's Racing Belt.","Catch Me If You Can!",,19077,-1,-1,0,15274,0,0,133120,35,133202,0,150037,0,0,0,0
-"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways event.","Master of the Turbulent Timeways","Mount: Sandy Shalewing",19079,-1,-1,0,15269,0,0,131072,69,4630413,205208,150048,0,0,0,0
+"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways event.","Master of the Turbulent Timeways","Mount: Sandy Shalewing",19079,-1,-1,0,15274,0,0,133120,85,4630413,205208,150048,0,0,0,0
 "Participated in empowering the Arcane Forge in Valdrakken during the Secrets of Azeroth event.","Arcane Influence",,19080,-1,-1,0,15274,0,0,133120,79,1723986,0,150210,0,0,0,0
 "Complete Throne of the Tides at Mythic Level 20 or higher, within the time limit.","Keystone Hero: Throne of the Tides","Max Level Unlock: Teleport to Throne of the Tides",19082,643,-1,0,15272,0,0,395264,9,409600,0,150227,0,0,0,0
 "Complete The Everbloom at Mythic Level 20 or higher, within the time limit.","Keystone Hero: The Everbloom","Max Level Unlock: Teleport to The Everbloom",19083,1279,-1,0,15272,0,0,395264,14,1052644,0,150229,0,0,0,0
@@ -10281,7 +10281,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "End Dragonflight PvP Season 4 in the top 0.1% of the 3v3 arena ladder (requires 150 games won in Dragonflight Season 4).","Draconic Gladiator: Dragonflight Season 4","Character Title: Draconic Gladiator",19454,-1,-1,0,15270,0,0,14336,273,236540,0,0,0,0,0,0
 "End Dragonflight Season 4 in the top 0.5% of the rated battleground ladder (requires 50 games won in Dragonflight Season 4).","Hero of the Alliance: Draconic",,19455,-1,1,0,15270,0,0,14336,440,236593,0,0,0,0,0,0
 "End Dragonflight Season 4 in the top 0.5% of the rated battleground ladder (requires 50 games won in Dragonflight Season 4).","Hero of the Horde: Draconic",,19456,-1,0,0,15270,0,0,14336,421,236629,0,0,0,0,0,0
-"Usher in the second Age of Dragons by completing the following achievements.","A World Awoken","Mount: Taivan",19458,-1,-1,0,15301,0,100,229376,6,4723908,210142,153272,0,0,0,0
+"Usher in the second Age of Dragons by completing the following achievements.","A World Awoken","Mount: Taivan",19458,-1,-1,0,15301,0,100,229376,7,4723908,210142,153272,0,0,0,0
 "Reach level 80.","Level 80",,19459,-1,-1,15805,92,0,10,2101252,20,236569,0,153290,0,0,0,0
 "Reach level 80 with two characters.","Two Warband Mentors: The War Within","Reward: 10% additional experience up to level 80",19460,-1,-1,19470,92,0,10,2490496,7,236569,0,153292,0,0,0,0
 "Obtained a transformative blessing from Ohn'ahra herself.","Kissed by the Wind",,19461,-1,-1,0,15465,0,5,131072,171,4094306,0,153294,0,0,0,0
@@ -10903,7 +10903,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Runed Harbinger Crests earned",,20491,-1,-1,0,15176,0,0,1,30,136243,0,157163,0,0,0,0
 ,"Gilded Harbinger Crests earned",,20492,-1,-1,0,15176,0,0,1,31,136243,0,157165,0,0,0,0
 "Complete the Lion's Landing scenario with a Timerunner.","Lion's Landing","Minor Bronze Cache",20500,-1,1,0,15536,0,0,2048,101,902177,0,157221,0,0,0,0
-"Leave the Shadowlands better than they were when you entered by completing the following achievements.","Back from the Beyond","Mount: Zovaal's Soul Eater",20501,-1,-1,0,15301,0,100,131072,5,3642306,217612,157225,0,0,0,0
+"Leave the Shadowlands better than they were when you entered by completing the following achievements.","Back from the Beyond","Mount: Zovaal's Soul Eater",20501,-1,-1,0,15301,0,100,131072,6,3642306,217612,157225,0,0,0,0
 ,"<Hidden> Achievement Title - Plunderlord - 10.2.6 Void Zone",,20507,-1,-1,0,81,0,0,3276804,2,136243,0,157442,0,0,0,0
 "Win a game of Plunderstorm.","Plunder Wonder",,20508,-1,-1,0,15274,1,0,133120,3,5689350,0,157401,0,0,0,0
 "Collect 1,000,000 Plunder.",Plunderkind,,20509,-1,-1,0,15274,1,0,133120,4,4203076,0,157403,0,0,0,0
@@ -11050,7 +11050,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Earn Revered status with the Armies of Legionfall.","Legionfall Commander (char specific hidden copy)",,40020,-1,-1,0,15258,0,0,1048576,6,1585421,0,160984,0,0,0,0
 "Complete the Zuldazar storylines listed below.","The Throne of Zuldazar (char specific hidden copy)",,40021,-1,0,0,15284,0,0,1048576,18,803814,0,160986,0,0,0,0
 "Complete the Nazmir storylines listed below.","The Dark Heart of Nazmir (char specific hidden copy)",,40022,-1,0,0,15284,0,0,1048576,21,2032229,0,160996,0,0,0,0
-"Defeat the following bosses in the depths of Antorus, the Burning Throne.","Seat of the Pantheon (char specific hidden copy)",,40023,1712,-1,0,15255,0,0,1048576,79,1711335,0,161005,0,0,0,0
+"Defeat the following bosses in the depths of Antorus, the Burning Throne.","Seat of the Pantheon (char specific hidden copy)",,40023,1712,-1,0,15255,0,0,1048576,82,1711335,0,161005,0,0,0,0
 "Defeat the bosses of the Descent into Madness area of Ulduar.","The Descent into Madness (char specific hidden copy)",,40024,603,-1,0,14922,0,0,3145728,69,254105,0,161008,0,0,0,0
 "Complete the Wetlands storylines listed below.","Wetlands Quests (char specific hidden copy)",,40025,-1,1,0,14861,0,0,1048576,24,236853,0,161017,0,0,0,0
 "Complete the Duskwood storylines listed below.","Duskwood Quests (char specific hidden copy)",,40026,-1,1,0,14861,0,0,1048576,40,236757,0,161038,0,0,0,0
@@ -11187,7 +11187,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Win a Battleground Blitz match on each map in under 7 minutes.","Battleground Blitzest",,40219,-1,-1,40217,15092,0,10,131072,224,236387,0,162085,0,0,0,0
 "Participate in 300 matches in Battleground Blitz.","Setting Records",,40220,-1,-1,19418,15092,0,15,131072,223,236378,0,162105,0,0,0,0
 "Complete 150 victories in Battleground Blitz.","Battleground Blitz Master",,40221,-1,-1,19413,15092,0,15,131072,218,236380,0,162109,0,0,0,0
-"On Radiant Discord difficulty, defeat each of the following rare creatures encountered during the Worldsoul Memory events in Khaz Algar.","Echoes of Danger","Title: Echochaser",40222,-1,-1,0,15521,0,15,135168,39,255345,0,162197,0,0,0,0
+"On Radiant Discord difficulty, defeat 20 of the following rare creatures encountered during the Worldsoul Memory events in Khaz Algar.","Echoes of Danger","Title: Echochaser",40222,-1,-1,0,15521,0,15,135168,39,255345,0,162197,0,0,0,0
 "Reach level 70 with a Timerunner.",Timerunner,"Title: Timerunner & Item: Timerunner's Idol",40223,-1,-1,0,15536,0,0,2048,15,4622478,0,162211,0,0,0,0
 "Complete the War Within achievements listed below.","The War Within Pathfinder","Reward: Steady Flight unlocked in Khaz Algar",40231,-1,-1,0,15521,0,10,2228224,34,237386,0,167674,0,0,0,0
 "Complete the Nerub-ar Palace raid achievements listed below.","Glory of the Nerub-ar Raider","Mount: Shadowed Swarmite",40232,2657,-1,0,168,0,25,143360,61,5779391,223266,162372,0,0,0,0
@@ -11706,7 +11706,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Attain a Mythic+ Rating of at least 1500 during The War Within Season Two.","The War Within Keystone Conqueror: Season Two","Title: The Enterprising",40950,-1,-1,40949,15272,0,0,133120,121,618860,0,168579,0,0,0,0
 "Attain a Mythic+ Rating of at least 3000 during The War Within Season Two.","The War Within Keystone Legend: Season Two","Mount: Enterprising Shreddertank",40951,-1,-1,40952,15272,0,0,2048,124,648758,237141,206629,0,0,0,0
 "Attain a Mythic+ Rating of at least 2500 during The War Within Season Two.","The War Within Keystone Hero: Season Two",,40952,-1,-1,41533,15272,0,0,133120,123,648760,0,168583,0,0,0,0
-"Put an end to the Battle for Azeroth by completing the following achievements.","A Farewell to Arms","Mount Reward: Jani's Trashpile",40953,-1,-1,0,15301,0,100,131072,4,2065618,235515,168588,0,0,0,0
+"Put an end to the Battle for Azeroth by completing the following achievements.","A Farewell to Arms","Mount Reward: Jani's Trashpile",40953,-1,-1,0,15301,0,100,131072,5,2065618,235515,168588,0,0,0,0
 "End The War Within Mythic+ Season 2 with a Mythic+ Rating in the top 0.1% of all players in your region.","Enterprising Hero: The War Within Season Two","Title: The Enterprising Hero",40954,-1,-1,0,15272,0,0,14336,139,618859,0,168585,0,0,0,0
 "Complete each of the Battle for Azeroth Quest Achievements listed below.","War Stories",,40955,-1,-1,0,15284,0,20,131072,1,2437241,0,170397,0,0,0,0
 "Aid Zandalar and Kul Tiras by completing the achievements below.","I'm On Island Time","Mount Reward: Honeyback Hivemother",40956,-1,-1,0,15298,0,40,131072,1,236817,170070,170347,0,0,0,0
@@ -11762,7 +11762,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat all of the rare creatures found on the Siren Isle.","Clean Up on Isle Siren",,41046,-1,-1,0,15521,0,15,131072,98,132147,0,169569,0,0,0,0
 "Earn 2500 Conquest on this character during The War Within Season 2.","Prized Weapons of Conquest","Item Reward: Prized Gladiator's Weapon Token (x2)",41047,-1,-1,0,15270,0,0,33554432,479,1594747,0,169605,0,0,0,0
 "Collect each of the Citrine gems on the Siren Isle.","A Choir of Citrines",,41050,-1,-1,0,15521,0,10,131072,10,6215541,0,169648,0,0,0,0
-"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways II event.","Master of the Turbulent Timeways II","Mount: Timely Buzzbee",41056,-1,-1,0,15454,0,20,131072,3,2026009,232624,169686,0,0,0,0
+"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways II event.","Master of the Turbulent Timeways II","Mount: Timely Buzzbee",41056,-1,-1,0,15274,0,0,133120,86,2026009,232624,169686,0,0,0,0
 "Complete the Breakneck Bolt.","Breakneck Bolt: Bronze",,41057,-1,-1,0,15462,0,0,1048576,1795,1002572,0,0,0,0,0,0
 "Get Silver ranked time for the Breakneck Bolt.","Breakneck Bolt: Silver",,41058,-1,-1,41057,15462,0,0,1048576,1796,1002575,0,0,0,0,0,0
 "Get Gold ranked time for the Breakneck Bolt.","Breakneck Bolt: Gold",,41059,-1,-1,41058,15462,0,0,1048576,1797,1002573,0,0,0,0,0,0
@@ -12062,18 +12062,17 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Vicious Saddle (40)",,41697,-1,0,19552,15270,0,0,1179648,63,1379171,103533,207460,0,0,0,0
 ,"Vicious Saddle (41)",,41698,-1,1,41696,15270,0,0,1179648,125,1379171,103533,207462,0,0,0,0
 ,"Vicious Saddle (41)",,41699,-1,0,41697,15270,0,0,1179648,64,1379171,103533,207464,0,0,0,0
-"Win Dastardly Duos matches each week!","Dastardly Duos Weekly Wins",,41700,-1,-1,0,15545,0,0,1048576,1,6740278,0,207470,0,0,0,0
-"Gain new High Scores each week!","Dastardly Duos Weekly High Score",,41706,-1,-1,0,15545,0,50,0,2,6740278,0,207477,0,0,0,0
-"Those bosses are inhuman. Really! Collect their gears to prove it.","Dastardly Devices",,41707,-1,-1,0,15545,0,10,0,8,6740278,0,207484,0,0,0,0
+"Gain new High Scores each week!","Dastardly Duos Weekly High Score",,41706,-1,-1,0,15545,0,50,131072,1,6740278,0,207477,0,0,0,0
+"Those bosses are inhuman. Really! Collect their gears to prove it.","Dastardly Devices",,41707,-1,-1,0,15545,0,10,131072,7,6740278,0,207484,0,0,0,0
 "Make friends with all 5 Grabbable Rats in Undermine.","You're My Friend Now",,41708,-1,-1,0,15521,0,5,131072,2,6351952,0,207587,0,0,0,0
 "Complete the Delver's Journey before Season 2 ends.","Journey's End (Season 2)",,41709,-1,-1,0,15531,0,0,133120,10,6025441,0,207593,0,0,0,0
 "Obtain the Faceless Mask of the Nemesis in a Revisited Vision.","Faceless Mask of the Nemesis",,41710,-1,-1,0,15546,0,0,1048576,14,136243,0,207597,0,0,0,0
 "Defeat Sprocketmonger Lockenstock without being struck by Blazing Beam, Rocket Barrage, Mega Magnetize, Jumbo Void Beam, or Void Barrage in Liberation of Undermine on Normal difficulty or higher.","Conveyor Slayer",,41711,2769,-1,0,15526,0,10,0,27,132996,0,207600,0,0,0,0
 "Collect the following cosmetic unlocks for the Delver's Gob-Trotter.","From Trash to Treasure",,41714,-1,-1,41532,15523,0,10,131072,24,132241,0,207651,0,0,0,0
-"You draw extra cheers from the crowd!","Fiendishly Famous","Cheery bombs collect more cheers near you",41715,-1,-1,0,15545,0,10,0,3,6740278,0,207661,0,0,0,0
-"The fans love you and want to see you succeed.","Duo Darling","Gain higher scores when you don't die in Dastardly Duos matches",41716,-1,-1,0,15545,0,10,0,7,6740278,0,207663,0,0,0,0
-"You came from behind, then won!","Duos Underdog",,41717,-1,-1,0,15545,0,10,131072,6,6740278,0,207666,0,0,0,0
-"Give the set workers job security!","Inside Connections","Workers hide an extra present inside one Dastardly Duos prop.",41722,-1,-1,0,15545,0,10,0,4,6740278,0,207761,0,0,0,0
+"You draw extra cheers from the crowd!","Fiendishly Famous","Cheery bombs collect more cheers near you",41715,-1,-1,0,15545,0,10,131072,2,6740278,0,207661,0,0,0,0
+"The fans love you and want to see you succeed.","Duo Darling","Gain higher scores when you don't die in Dastardly Duos matches",41716,-1,-1,0,15545,0,10,131072,6,6740278,0,207663,0,0,0,0
+"You came from behind, then won!","Duos Underdog",,41717,-1,-1,0,15545,0,10,131072,5,6740278,0,207666,0,0,0,0
+"Give the set workers job security!","Inside Connections","Workers hide an extra present inside one Dastardly Duos prop.",41722,-1,-1,0,15545,0,10,131072,3,6740278,0,207761,0,0,0,0
 "Raise a companion to level 80.","Buddy System VIII",,41723,-1,-1,41537,15522,0,10,131072,14,236569,0,207767,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 12 during The War Within Season Two.","The War Within Season 2: Resilient Keystone 12","Keystones will no longer deplete below level 12 during the War Within Season 2.",41724,-1,-1,0,15272,0,0,1050624,125,648754,0,207769,0,0,0,0
 "Purchase enough Echoes of N'Zoth to research all of the items in the Hourglass of Horrific Visions.","We Have the Memories",,41725,-1,-1,0,15546,0,10,131072,4,525134,0,207778,0,0,0,0
@@ -12086,12 +12085,15 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete all Mythic+ dungeons within the time limit at keystone level 19 during The War Within Season Two.","The War Within Season 2: Resilient Keystone 19","Keystones will no longer deplete below level 19 during the War Within Season 2.",41732,-1,-1,0,15272,0,0,1050624,132,648754,0,207839,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 20 during The War Within Season Two.","The War Within Season 2: Resilient Keystone 20","Keystones will no longer deplete below level 20 during the War Within Season 2.",41733,-1,-1,0,15272,0,0,1050624,133,648754,0,207848,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 21 during The War Within Season Two.","The War Within Season 2: Resilient Keystone 21","Keystones will no longer deplete below level 21 during the War Within Season 2.",41734,-1,-1,0,15272,0,0,1050624,134,648754,0,207857,0,0,0,0
+"Obtain 1000 Displaced Corrupted Mementos.","Thanks for the Mementos",,41859,-1,-1,0,15546,0,5,131072,55,646678,0,208654,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 22 during The War Within Season Two.","The War Within Season 2: Resilient Keystone 22","Keystones will no longer deplete below level 22 during the War Within Season 2.",41735,-1,-1,0,15272,0,0,1050624,135,648754,0,207866,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 23 during The War Within Season Two.","The War Within Season 2: Resilient Keystone 23","Keystones will no longer deplete below level 23 during the War Within Season 2.",41736,-1,-1,0,15272,0,0,1050624,136,648754,0,207875,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 24 during The War Within Season Two.","The War Within Season 2: Resilient Keystone 24","Keystones will no longer deplete below level 24 during the War Within Season 2.",41737,-1,-1,0,15272,0,0,1050624,137,648754,0,207884,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 25 during The War Within Season Two.","The War Within Season 2: Resilient Keystone 25","Keystones will no longer deplete below level 25 during the War Within Season 2.",41738,-1,-1,0,15272,0,0,1050624,138,648754,0,207893,0,0,0,0
 "Has completed quest Ship it! and does not have mount.","Delver's Dirigible Recovery",,41751,-1,-1,0,15523,0,0,1179652,66,136243,219391,207943,0,0,0,0
 ,"<DNT> Plunderstorm Plunder Tracker - Mainline Power Rewards",,41752,-1,-1,0,15455,0,0,3276804,108,136243,0,205853,0,0,0,0
+"Quest counter remaining for mid-season 11.1.5","11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid (YGR)",,41757,-1,-1,0,96,0,0,3145732,35,136243,0,208065,0,0,0,0
+"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways III event.","Master of the Turbulent Timeways III","Mount: Chrono Corsair",41779,-1,-1,0,15454,0,20,131072,3,525134,238739,208163,0,0,0,0
 ,"Weathered Undermine Crests earned",,41786,-1,-1,0,130,0,0,1,72,136243,0,208192,0,0,0,0
 ,"Carved Undermine Crests earned",,41789,-1,-1,0,130,0,0,1,73,136243,0,208194,0,0,0,0
 ,"Runed Undermine Crests earned",,41790,-1,-1,0,130,0,0,1,74,136243,0,208196,0,0,0,0
@@ -12106,15 +12108,16 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"<DNT> Mug'Zee, Heads of Security defeated",,41800,-1,-1,0,15526,0,0,1048576,59,136243,0,208216,0,0,0,0
 ,"<DNT> Chrome King Gallywix defeated",,41801,-1,-1,0,15526,0,0,1048576,60,136243,0,208218,0,0,0,0
 ,"11.0.7 Plunderstorm - Mainline Power Reward - Fixup Achievement",,41807,-1,-1,0,15506,0,0,137756676,1,136243,0,208252,0,0,0,0
-"Gain and upgrade your podium!","Winner's Podium",,41810,-1,-1,0,15545,0,10,0,5,6403295,0,208328,0,0,0,0
+"Gain and upgrade your podium!","Winner's Podium",,41810,-1,-1,0,15545,0,10,131072,4,6403295,0,208328,0,0,0,0
 ,"[DNT] 11.0.7 Plunderstorm - Mainline Power Reward - Fixup Quest Tracker",,41816,-1,-1,0,15506,0,0,3276800,2,136243,0,208370,0,0,0,0
+"Complete the Rise of the Red Dawn storyline.","Rise of the Red Dawn","Title: of Stromgarde",41818,-1,1,0,15506,0,10,131072,50,6714213,0,208400,0,0,0,0
+"Complete the Rise of the Red Dawn storyline.","Rise of the Red Dawn","Title: of Hammerfall",41820,-1,0,0,15506,0,10,131072,51,6714318,0,208402,0,0,0,0
 "Defeat Alleria in the Revisited Horrific Vision of Stormwind.","Horrific Vision of Stormwind",,41853,-1,-1,0,15546,0,5,0,5,135763,0,208642,0,0,0,0
 "Complete all objectives in the Revisited Horrific Vision of Stormwind in a single visit.","The Even More Horrific Vision of Stormwind",,41854,-1,-1,41853,15546,0,10,0,6,135763,0,208644,0,0,0,0
 "Complete all objectives in the Revisited Horrific Vision of Stormwind in a single visit and with any 5 Faceless Masks active.","The Most Horrific Vision of Stormwind",,41855,-1,-1,41854,15546,0,15,0,7,135763,0,208646,0,0,0,0
 "Obtain the Faceless Mask of the Pained in a Revisited Vision.","Faceless Mask of the Pained",,41856,-1,-1,0,15546,0,0,1048576,17,136243,0,208648,0,0,0,0
 "Complete all objectives in any Revisited Horrific Vision with any Faceless Mask active.","Masked Soliloquy","Unlocks Rhythferr, the Champion Weaponsmith's weapons",41857,-1,-1,0,15546,0,5,0,23,446125,0,208460,0,0,0,0
 "Complete all objectives in any Revisited Horrific Vision with any 6 Faceless Masks active.","Masked Sextet",,41858,-1,-1,41874,15546,0,10,0,28,446124,0,208652,0,0,0,0
-"Obtain 1000 Displaced Corrupted Mementos.","Thanks For The Mementos",,41859,-1,-1,0,15546,0,5,131072,55,646678,0,208654,0,0,0,0
 "Complete at least 2 objectives and defeat the boss of any Revisited Horrific Vision in a single visit.","Incremental Progress","Unlocks TickTak, the Veteran Weaponsmith's weapons",41873,-1,-1,0,15546,0,10,0,13,413594,0,208767,0,0,0,0
 "Complete all objectives in any Revisited Horrific Vision with any 5 Faceless Masks active.","Symphony of Masks","Unlocks Chreni, the Heroic Weaponsmith's weapons",41874,-1,-1,41893,15546,0,10,0,27,446124,0,208468,0,0,0,0
 "Defeat Thrall in the Revisited Horrific Vision of Orgrimmar.","Horrific Vision of Orgrimmar",,41875,-1,-1,0,15546,0,5,0,9,135759,0,208867,0,0,0,0
@@ -12135,20 +12138,20 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Obtain 10000 Displaced Corrupted Mementos.","Memento Mori",,41896,-1,-1,41859,15546,0,10,131072,56,646678,0,208973,0,0,0,0
 "Obtain 50000 Displaced Corrupted Mementos.","A Monumental Amount of Mementos",,41897,-1,-1,41983,15546,0,10,131072,58,646678,0,208975,0,0,0,0
 "Obtain 75000 Displaced Corrupted Mementos.","A Mountain of Mementos",,41898,-1,-1,41897,15546,0,20,131072,59,646678,0,208977,0,0,0,0
-"Get into the Limelight! Show the crowd you're a star!","Center of Attention",,41905,-1,-1,0,15545,0,10,0,14,6740278,0,208991,0,0,0,0
-"Keep things moving. Build momentum!","My Way, The Highway",,41916,-1,-1,0,15545,0,10,0,15,6740278,0,209015,0,0,0,0
-"You somehow snatch victory from dastardly clutches.",Undefeatable,,41922,-1,-1,0,15545,0,10,0,16,6740278,0,209032,0,0,0,0
+"Get into the Limelight! Show the crowd you're a star!","Center of Attention",,41905,-1,-1,0,15545,0,10,131072,13,6740278,0,208991,0,0,0,0
+"Keep things moving. Build momentum!","My Way, The Highway",,41916,-1,-1,0,15545,0,10,131072,14,6740278,0,209015,0,0,0,0
+"You somehow snatch victory from dastardly clutches.",Undefeatable,,41922,-1,-1,0,15545,0,10,131072,15,6740278,0,209032,0,0,0,0
 "Complete the Revisited Horrific Vision achievements listed below.","Reeking of Visions","Pet: Reek",41928,-1,-1,0,15546,0,10,131072,1,1022950,174463,209056,0,0,0,0
 "Complete the Revisited Horrific Vision achievements listed below.","Through the Depths of Visions","Mount: Black Serpent of N'Zoth",41929,-1,-1,41928,15546,0,20,131072,2,136122,174654,209059,0,0,0,0
 ,"Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)",,41930,-1,-1,0,81,0,0,1048580,202,136243,0,209063,0,0,0,0
 ,"Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)",,41938,-1,-1,0,81,0,0,1048580,205,136243,0,209075,0,0,0,0
 ,"Greater Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)",,41946,-1,-1,0,81,0,0,1048580,203,136243,0,209077,0,0,0,0
 ,"Greater Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)",,41947,-1,-1,0,81,0,0,1048580,206,136243,0,209079,0,0,0,0
-"Defeat at least two bosses.","Defeat the Dastardlies",,41948,-1,-1,0,15545,0,10,0,9,6740278,0,209096,0,0,0,0
-"Defeat at least four bosses.","Defeat the Dastardlies",,41949,-1,-1,41948,15545,0,10,0,10,6740278,0,209107,0,0,0,0
-"Defeat at least six bosses.","Defeat the Dastardlies",,41950,-1,-1,41949,15545,0,10,0,11,6740278,0,209118,0,0,0,0
-"Defeat at least eight bosses.","Defeat the Dastardlies",,41951,-1,-1,41950,15545,0,10,0,12,6740278,0,209129,0,0,0,0
-"Defeat all the Dastardly Bosses","Defeat the Dastardlies",,41952,-1,-1,41951,15545,0,10,0,13,6740278,0,209140,0,0,0,0
+"Defeat at least two bosses.","Defeat the Dastardlies",,41948,-1,-1,0,15545,0,10,131072,8,6740278,0,209096,0,0,0,0
+"Defeat at least four bosses.","Defeat the Dastardlies",,41949,-1,-1,41948,15545,0,10,131072,9,6740278,0,209107,0,0,0,0
+"Defeat at least six bosses.","Defeat the Dastardlies",,41950,-1,-1,41949,15545,0,10,131072,10,6740278,0,209118,0,0,0,0
+"Defeat at least eight bosses.","Defeat the Dastardlies",,41951,-1,-1,41950,15545,0,10,131072,11,6740278,0,209129,0,0,0,0
+"Defeat all the Dastardly Bosses.","Defeat the Dastardlies",,41952,-1,-1,41951,15545,0,10,131072,12,6740278,0,209140,0,0,0,0
 "Complete all objectives in the Revisited Horrific Visions of Stormwind and Orgrimmar in a single visit while not in a party and with any 5 Faceless Masks active .","Mad World","Title: The Faceless One",41953,-1,-1,0,81,0,0,2048,199,3163628,0,209151,0,0,0,0
 "Complete all objectives in the Revisited Horrific Vision of Stormwind in a single visit and with all 8 Faceless Masks active.","Beyond the Most Horrific Vision of Stormwind",,41964,-1,-1,41855,15546,0,20,0,8,135763,0,209174,0,0,0,0
 "Complete all objectives in the Revisited Horrific Vision of Orgrimmar in a single visit and with all 8 Faceless Masks active.","Beyond the Most Horrific Vision of Orgrimmar",,41965,-1,-1,41879,15546,0,20,0,12,135759,0,209176,0,0,0,0
@@ -12167,15 +12170,47 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Total Goblin Zappers Killed",,41992,-1,-1,0,15550,0,0,1,7,6740278,0,209368,0,0,0,0
 ,"Total Pyro Machines Destroyed",,41993,-1,-1,0,15550,0,0,1,8,6740278,0,209370,0,0,0,0
 ,"Total Tombstones",,41994,-1,-1,0,15550,0,0,1,9,6740278,0,209372,0,0,0,0
-"Your Dastardly Duos group created enough tombstones for two graveyards!","Boot Hill",,41995,-1,-1,0,15274,0,10,0,84,6740278,0,209374,0,0,0,0
+"Your Dastardly Duos group created enough tombstones for two graveyards!","Boot Hill",,41995,-1,-1,0,15274,0,0,131072,84,6740278,0,209374,0,0,0,0
 "Complete the Nightfall Scenario.","I'm Doing My Part",,41996,-1,-1,0,15521,0,10,131072,114,236379,0,209405,0,0,0,0
 "Reach Renown rank 10 with Flame's Radiance.","Owner of a Radiant Heart",,41997,-1,-1,0,15530,0,10,131072,18,5764903,0,209407,0,0,0,0
 "Complete 10 Incursion quests in Hallowfall or Azj-Kahet.","Turning the Venom Tide",,41998,-1,-1,0,15521,0,10,131072,115,5764925,0,209409,0,0,0,0
 "Kill at least 5 of the following Nightfall elites in Hallowfall or Azj-Kahet.","Fighter of the Nightman",,41999,-1,-1,0,15521,0,10,131072,116,135945,0,209392,0,0,0,0
 "Total Props Destroyed","Total Props Destroyed",,42000,-1,-1,0,15550,0,0,1,10,6740278,0,209376,0,0,0,0
 ,"Total Runs Completed",,42001,-1,-1,0,15550,0,0,1,11,6740278,0,209378,0,0,0,0
-"Call out more enemies. More, more!!","Bullhorn of Plenty",,42002,-1,-1,0,15545,0,10,0,17,6740278,0,209415,0,0,0,0
-"Call out more enemies. More, more!!","Bullhorn of More Plenty",,42003,-1,-1,42002,15545,0,10,0,18,6740278,0,209417,0,0,0,0
-"Call out more enemies. More, more!!","Bullhorn of Most Plenty",,42004,-1,-1,42003,15545,0,10,0,19,6740278,0,209419,0,0,0,0
+"Call out more enemies. More, more!!","Bullhorn of Plenty",,42002,-1,-1,0,15545,0,10,131072,16,6740278,0,209415,0,0,0,0
+"Call out more enemies. More, more!!","Bullhorn of More Plenty",,42003,-1,-1,42002,15545,0,10,131072,17,6740278,0,209417,0,0,0,0
+"Call out more enemies. More, more!!","Bullhorn of Most Plenty",,42004,-1,-1,42003,15545,0,10,131072,18,6740278,0,209419,0,0,0,0
+"Subdue the Dark Titan at last by completing the following achievements.","Ashes to Ashes","Mount Reward: Rites of the Felsoul",42028,-1,-1,0,15301,0,100,131072,4,5927628,235515,209548,0,0,0,0
+"Defeat the bosses of The Emerald Nightmare on Normal difficulty or higher.","The Emerald Nightmare",,42029,1520,-1,0,15255,0,10,0,7,1413864,0,209567,0,0,0,0
+"Defeat the bosses within The Nighthold on Normal difficulty or higher.","The Nighthold",,42030,1530,-1,0,15255,0,10,0,34,1413853,0,209571,0,0,0,0
+"Defeat the bosses withiin the Tomb of Sargeras on Normal difficulty or higher.","Tomb of Sargeras",,42031,1676,-1,0,15255,0,10,0,59,1536894,0,209576,0,0,0,0
+"Defeat the bosses of Antorus, the Burning Throne on Normal difficulty or higher.","Antorus, the Burning Throne",,42032,1712,-1,0,15255,0,10,131072,83,1711341,0,209581,0,0,0,0
+"Aid the people of the Broken Isles by completing the achievements below.","Broken Memories",,42114,-1,-1,0,15257,0,40,131072,1,1408999,0,0,0,0,0,0
 "Defeat The Underpin in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Him: The Underpin (copy)","Reward: Delver's Gob-Trotter Schematic: Gold",42116,-1,-1,0,15531,0,0,1179652,9,6100921,0,209721,0,0,0,0
+"As a Tank, complete all seasonal dungeons at Mythic Keystone level 10 or higher within the time limit during The War Within Season 2.","The Enterprising Tank",,42139,-1,-1,0,15272,0,0,131072,140,134951,0,210047,0,0,0,0
+"As a Healer, complete all seasonal dungeons at Mythic Keystone level 10 or higher within the time limit during The War Within Season 2.","The Enterprising Healer",,42141,-1,-1,0,15272,0,0,131072,141,648207,0,210065,0,0,0,0
+"As a Damage Dealer, complete all seasonal dungeons at Mythic Keystone level 10 or higher within the time limit during The War Within Season 2.","The Enterprising Damage Dealer",,42144,-1,-1,0,15272,0,0,131072,142,132147,0,210056,0,0,0,0
+"Complete the following achievements during The War Within Season 2.","The Enterprising Dungeon Master","Title: Triple Threat",42148,-1,-1,0,15272,0,0,131072,143,255347,0,210082,0,0,0,0
+"Complete the Ethereals Lorewalking Campaign.","Lorewalking: Ethereal Wisdom",,42187,-1,-1,0,15552,0,0,131072,3,1711337,244843,210375,0,0,0,0
+"Complete the Xal'atath Lorewalking Campaign.","Lorewalking: Blade's Bane",,42188,-1,-1,0,15552,0,5,131072,1,1131285,0,210377,0,0,0,0
+"Complete the Lich King Lorewalking Campaign.","Lorewalking: The Lich King",,42189,-1,-1,0,15552,0,5,131072,2,343637,0,210379,0,0,0,0
+"Collect enough Titan Discs to fully upgrade the Titan Console.","Console Overcharged",,42212,-1,-1,0,15523,0,0,131072,67,136243,0,210543,0,0,0,0
+,"Console Overcharged Purchase 1",,42213,-1,-1,0,15523,0,0,1179648,68,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 2",,42214,-1,-1,0,15523,0,0,1179648,69,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 3",,42215,-1,-1,0,15523,0,0,1179648,70,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 4",,42216,-1,-1,0,15523,0,0,1179648,71,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 5",,42217,-1,-1,0,15523,0,0,1179648,72,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 6",,42218,-1,-1,0,15523,0,0,1179648,73,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 7",,42219,-1,-1,0,15523,0,0,1179648,74,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 8",,42220,-1,-1,0,15523,0,0,1179648,75,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 9",,42221,-1,-1,0,15523,0,0,1179648,76,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 10",,42222,-1,-1,0,15523,0,0,1179648,77,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 11",,42223,-1,-1,0,15523,0,0,1179648,78,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 12",,42224,-1,-1,0,15523,0,0,1179648,79,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 13",,42225,-1,-1,0,15523,0,0,1179648,80,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 14",,42226,-1,-1,0,15523,0,0,1179648,81,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 15",,42227,-1,-1,0,15523,0,0,1179648,82,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 16",,42228,-1,-1,0,15523,0,0,1179648,83,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 17",,42229,-1,-1,0,15523,0,0,1179648,84,136243,0,0,0,0,0,0
+"Quest counter remaining for first mid-season quest","11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid, First Time Tracker",,42230,-1,-1,0,96,0,0,3145732,36,136243,0,210549,0,0,0,0
 "Complete the Lingering Shadows storyline.","Lingering Shadows","Appearance: Root Defender's Spear and Root Defender's Shield",41052,-1,-1,0,15506,0,10,131072,5,5976943,0,169684,0,0,0,0

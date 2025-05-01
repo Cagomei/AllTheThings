@@ -65,6 +65,8 @@ local KeyMaps = setmetatable({
 	follower = "followerID",
 	garrbuilding = "garrisonbuildingID",
 	garrfollower = "followerID",
+	["journal:0"] = "instanceID",
+	["journal:1"] = "encounterID",
 	i = "modItemID",
 	item = "modItemID",
 	itemid = "modItemID",
@@ -157,6 +159,12 @@ local function SearchByKindLink(link)
 	if not id or not kind then
 		-- can't search for nothing!
 		return;
+	end
+	-- special case for 'journal' since it can split to instance or encounter
+	if kind == "journal" then
+		kind = kind..":"..id
+		id = id2
+		id = tonumber(id)
 	end
 	--print(link:gsub("|c", "c"):gsub("|h", "h"));
 	-- app.PrintDebug("SFL",itemString,kind,">",KeyMaps[kind],id,id2,id3)
