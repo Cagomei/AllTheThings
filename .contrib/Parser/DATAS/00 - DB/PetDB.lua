@@ -4291,11 +4291,10 @@ n(236041, 4732);	-- Scavenging Snapdragon
 n(234369, 4711);	-- Snapdragon Pup
 n(236040, 4731);	-- Storminfused Snapdragon
 n(230394, 4628);	-- Tidal Kroling
---- UNSORTED ---
-i(234905, 4730);	-- Mech-Friend Maya
-i(233057, 4709);	-- Rock Hound Mica
 --- NYI ---
 i(0, 4725);			-- Titan Orb
+i(234905, 4730);	-- Mech-Friend Maya
+i(233057, 4709);	-- Rock Hound Mica
 
 ------------------
 -- PATCH 11.1.0 --

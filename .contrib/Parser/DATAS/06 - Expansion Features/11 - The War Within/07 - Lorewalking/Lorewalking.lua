@@ -9,8 +9,8 @@ LOREWALKING = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_1_7 } }, {
-	n(LOREWALKING, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
+	n(LOREWALKING, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(42188),	-- Lorewalking: Blade's Bane
@@ -18,5 +18,5 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				ach(42189),	-- Lorewalking: The Lich King
 			}),
 		},
-	}),
-})));
+	})),
+}));

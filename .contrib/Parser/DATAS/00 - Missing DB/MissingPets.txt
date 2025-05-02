@@ -46,6 +46,9 @@ pet(4746),	-- Sooty Croach
 11.1.5.59571
 pet(4761),	-- Pascal the Wonder Pup
 pet(4792),	-- Ada the Sweetest
+11.1.7.60520
+pet(4849),	-- Flotsam Harvester
+pet(4852),	-- Lil' Daz'ti
 
 
 

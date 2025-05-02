@@ -12,13 +12,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			a(ach(41818, {	-- Rise of the Red Dawn (A)
 				["timeline"] = { ADDED_11_1_7 },
 				["groups"] = {
-					-- TODO: Title: of Stromgarde
+					title(630),	-- <Name> of Stromgarde
 				},
 			})),
 			h(ach(41820, {	-- Rise of the Red Dawn (H)
 				["timeline"] = { ADDED_11_1_7 },
 				["groups"] = {
-					-- TODO: Title: of Hammerfall
+					title(629),	-- <Name> of Hammerfall
 				},
 			})),
 		}),

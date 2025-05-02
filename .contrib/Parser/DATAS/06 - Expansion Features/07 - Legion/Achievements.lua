@@ -1,9 +1,10 @@
 -------------------------------------------------------------------
 --	  E X P A N S I O N   F E A T U R E S	M O D U L E	   --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	n(ACHIEVEMENTS, {
 		ach(42028, {	-- Ashes to Ashes
+			["timeline"] = { ADDED_11_1_7 },
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				42032,	-- Antorus, the Burning Throne
@@ -20,4 +21,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["tim
 			},
 		})
 	}),
-})));
+}))

@@ -968,6 +968,18 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(232523, {	-- G-99 Breakneck
 				--["displayID"] = ,
 			}),
+			i(235659, {	-- Midnight Butterfly (MOUNT!)
+				--["displayID"] = 126175,
+			}),
+			i(235554, {	-- Midnight Darkmoon Charger (MOUNT!)
+				--["displayID"] = 126058,
+			}),
+			i(235557, {	-- Snowy Darkmoon Charger (MOUNT!)
+				--["displayID"] = 126061,
+			}),
+			i(235658, {	-- Spring Butterfly (MOUNT!)
+				--["displayID"] = 126174,
+			}),
 		})),
 	}),
 }));

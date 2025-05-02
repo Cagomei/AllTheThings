@@ -25,6 +25,7 @@ local C_VignetteInfo_GetVignettes = C_VignetteInfo.GetVignettes;
 local C_VignetteInfo_GetVignettePosition = C_VignetteInfo.GetVignettePosition;
 
 -- Helper Functions
+local SettingsCache = {}
 local ActiveWaypointGUID;
 local function GetWaypointLink(guid, text)
 	-- Generates a waypoint link with text (optional) inside the link should the vignette guid have a valid position.
@@ -33,7 +34,7 @@ local function GetWaypointLink(guid, text)
 		if mapID then
 			local pos = C_VignetteInfo_GetVignettePosition(guid, mapID);
 			if pos then
-				if app.Settings:GetTooltipSetting("Nearby:PlotWaypoints") then
+				if SettingsCache.PlotWaypoints then
 					ActiveWaypointGUID = guid;
 					C_SuperTrack.SetSuperTrackedUserWaypoint(false);
 					C_Map.ClearUserWaypoint();
@@ -71,14 +72,15 @@ local function AlertForVignetteInfo(info)
 	app.SetSkipLevel(1)
 	local group = app.GetCachedSearchResults(app.SearchForLink, link);
 	app.SetSkipLevel(0)
-	if not app.Settings:GetTooltipSetting("Nearby:IncludeCompleted") and (not group.visible or app.IsComplete(group)) then return false; end
+	-- app.PrintDebug("Vignette.Alert",link)
+	if not SettingsCache.IncludeCompleted and (not group.visible or app.IsComplete(group)) then return false; end
 	local progressText = group.progressText
 		or GetProgressColorText(group.progress or 0, group.total or 0)
 		or (group.collectible and app.GetCollectionIcon(group.collected))
 		or (group.trackable and app.GetCompletionIcon(group.saved));
 	if progressText then
 		link = app:Linkify(info.name or id, app.Colors.ChatLink, "search:" .. link) .. " " .. progressText;
-	elseif app.Settings:GetTooltipSetting("Nearby:IncludeUnknown") then
+	elseif SettingsCache.IncludeUnknown then
 		link = app:Linkify(info.name or id, app.Colors.SourceIgnored, "search:" .. link);
 	else
 		return true;
@@ -88,24 +90,24 @@ local function AlertForVignetteInfo(info)
 	if waypointLink then link = waypointLink .. " " .. link; end
 	app.print(L.NEARBY, link);
 	app.Audio:PlayRareFindSound();
-	if FlashClientIcon and app.Settings:GetTooltipSetting("Nearby:FlashTheTaskbar") then FlashClientIcon(); end
+	if FlashClientIcon and SettingsCache.FlashTheTaskbar then FlashClientIcon(); end
 	return true;
 end
 local AlertMeta = {
 	__newindex = function(t, key, info)
 		if info then
-			if app.Settings:GetTooltipSetting("Nearby:ReportContent") then
-				local guid = info.objectGUID;
-				if guid and not ReportedVignettes[guid] then
-					-- if we encounter situations where a ton of vignettes all attempt to load in a single frame
-					-- each one processing fresh search results, we may want to easily split that reporting into
-					-- multiple frames to remove the lag spike potential
-					if AlertForVignetteInfo(info) then
-						-- If someone has completed turned off
-						ReportedVignettes[guid] = true;
-						rawset(t, key, info);
-					end
-				end
+			if not SettingsCache.ReportContent then return end
+
+			local guid = info.objectGUID;
+			if not guid or ReportedVignettes[guid] then return end
+
+			-- if we encounter situations where a ton of vignettes all attempt to load in a single frame
+			-- each one processing fresh search results, we may want to easily split that reporting into
+			-- multiple frames to remove the lag spike potential
+			if AlertForVignetteInfo(info) then
+				-- If someone has completed turned off
+				ReportedVignettes[guid] = true;
+				rawset(t, key, info);
 			end
 		else
 			rawset(t, key, info);
@@ -136,7 +138,7 @@ local function ClearVignette(guid)
 	if guid then
 		local vignetteInfo = CachedVignetteInfo[guid];
 		if vignetteInfo then
-			if ActiveWaypointGUID == guid and app.Settings:GetTooltipSetting("Nearby:ClearWaypoints") then
+			if ActiveWaypointGUID == guid and SettingsCache.ClearWaypoints then
 				C_Map.ClearUserWaypoint();
 				ActiveWaypointGUID = nil;
 			end
@@ -144,7 +146,7 @@ local function ClearVignette(guid)
 			local searchType, id = vignetteInfo.SearchType, vignetteInfo.ID;
 			if searchType and id then
 				ActiveVignettes[searchType][id] = nil;
-				--app.print("Cleared:", app:Linkify(vignetteInfo.name or id,app.Colors.ChatLink,"search:" .. searchType .. ":"..id));
+				-- app.PrintDebug("Vignette.Clear",searchType,id,app:RawSearchLink(searchType,id));
 			end
 		end
 	end
@@ -157,7 +159,7 @@ local function UpdateVignette(guid)
 			id = id and tonumber(id);
 			if id then
 				local searchType = VignetteSearchTypes[type];
-				if app.Settings:GetTooltipSetting("Nearby:Type:" .. searchType) then
+				if SettingsCache[searchType] then
 					vignetteInfo.SearchType = searchType;
 					vignetteInfo.ID = id;
 					CachedVignetteInfo[guid] = vignetteInfo;
@@ -190,3 +192,15 @@ app.AddEventHandler("OnReady", function()
 	Event_VIGNETTES_UPDATED();
 	app.AddEventHandler("OnReportNearbySettingsChanged", Event_VIGNETTES_UPDATED);
 end);
+app.AddEventHandler("OnSettingsRefreshed", function()
+	local settings = app.Settings
+	SettingsCache.IncludeCompleted = settings:GetTooltipSetting("Nearby:IncludeCompleted")
+	SettingsCache.IncludeUnknown = settings:GetTooltipSetting("Nearby:IncludeUnknown")
+	SettingsCache.FlashTheTaskbar = settings:GetTooltipSetting("Nearby:FlashTheTaskbar")
+	SettingsCache.ReportContent = settings:GetTooltipSetting("Nearby:ReportContent")
+	SettingsCache.PlotWaypoints = settings:GetTooltipSetting("Nearby:PlotWaypoints")
+	SettingsCache.ClearWaypoints = settings:GetTooltipSetting("Nearby:ClearWaypoints")
+	for searchType,search in pairs(VignetteSearchTypes) do
+		SettingsCache[search] = settings:GetTooltipSetting("Nearby:Type:" .. search)
+	end
+end)

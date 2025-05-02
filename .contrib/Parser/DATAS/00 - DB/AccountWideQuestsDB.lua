@@ -460,6 +460,10 @@ ExportDB.AccountWideQuestsDB = {
 	[85181] = true,	-- Delver's Gob-Trotter Schematic: Balloon
 	[85183] = true,	-- Delver's Gob-Trotter Schematic: Green
 	[85775] = true,	-- G77C Ultra
+
+	-- 11.1.5
+	[86199] = true;	-- Delver's Dirigible Schematic: Arathi Decal
+	[86198] = true;	-- Delver's Dirigible Schematic: Pale Paint
 	-- #ENDIF
 
 	-- Manual scrape from a brand new character & 86000 scan of C_QuestLog.IsAccountQuest

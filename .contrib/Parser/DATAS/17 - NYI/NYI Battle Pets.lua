@@ -1537,8 +1537,15 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 		-- 11.0.7
 		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
 			-- Only SpeciesID
-			pet(4725, {	-- Titan Orb PET!)
-				--["displayID"] = ,
+			pet(4725, {	-- Titan Orb (PET!)
+				["displayID"] = 124606,
+			}),
+			-- With SpeciesID Attached
+			i(234905, {	-- Mech-Friend Maya (PET!)
+				["displayID"] = 125160,
+			}),
+			i(233057, {	-- Rock Hound Mica (PET!)
+				["displayID"] = 124374,
 			}),
 		})),
 	}),

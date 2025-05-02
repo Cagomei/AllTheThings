@@ -1,5 +1,9 @@
 3.4.3.58528
 i(235464),	-- Sha-Touched Tea Set
+11.1.7.60520
+i(244888),	-- Echo of the Xal'atath, Blade of the Black Empire
+i(245567),	-- K'aresh Memory Crystal
+i(245631),	-- Royal Visage
 
 
 Nothing is Missing in ToyDB.lua! Good Work!

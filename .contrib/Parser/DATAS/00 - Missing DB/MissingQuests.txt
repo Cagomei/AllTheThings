@@ -2421,8 +2421,61 @@ q(48457),	-- Tracking Quest
 q(48796),	--
 q(48798),	--
 q(48937),	-- Create Netherwalker's Portal Generator
-10.1.0.48661
-q(75866),	--
+10.1.5.49719
+q(76606),	--
+q(76607),	--
+q(76608),	--
+q(76609),	--
+q(76611),	--
+q(76613),	--
+q(76614),	--
+q(76615),	--
+q(76616),	--
+q(76617),	--
+q(76619),	--
+q(76635),	--
+q(76639),	--
+q(76640),	--
+q(76641),	--
+q(76642),	--
+q(76643),	--
+q(76644),	--
+q(76645),	--
+q(76646),	--
+q(76647),	--
+q(76650),	--
+q(76651),	--
+q(76652),	--
+q(76653),	--
+q(76654),	--
+q(76655),	--
+q(76656),	--
+q(76657),	--
+q(76658),	--
+q(76659),	--
+q(76660),	--
+q(76674),	--
+q(76678),	--
+q(76679),	--
+q(76682),	--
+q(76684),	--
+q(76689),	--
+q(76690),	--
+q(76691),	--
+q(76692),	--
+q(76695),	--
+q(76697),	--
+q(76698),	--
+q(76699),	--
+q(76700),	--
+q(76701),	--
+q(76702),	--
+q(76705),	--
+q(76706),	--
+q(76707),	--
+q(76708),	--
+10.2.6.53840
+q(80436),	--
 10.2.7.54171
 q(75889),	--
 q(75933),	--
@@ -2927,9 +2980,6 @@ q(81515),	--
 q(81516),	--
 q(81538),	--
 q(81554),	--
-q(81608),	--
-q(81609),	--
-q(81610),	-- What About the Children?
 q(81629),	--
 q(81637),	--
 q(81671),	-- UNUSED [DNT]	 PTR2:UNUSED [DNT]
@@ -3524,6 +3574,8 @@ q(86115),	--
 q(86116),	--
 q(86312),	--
 q(86316),	--
+q(86328),	--
+q(86329),	--
 q(86337),	--
 q(86388),	-- Spark - Template
 q(86397),	--
@@ -3554,14 +3606,7 @@ q(88863),	--
 q(88864),	--
 q(88865),	--
 11.1.0.58945
-q(89020),	-- Loyal Customer: Platinum
-q(89021),	-- Loyal Customer: Black
-q(89022),	-- Loyal Customer: Diamond
 q(89023),	-- Loyal Customer: GOLDEN LEGENDARY!!!
-q(89025),	-- Time is Money!!
-q(89026),	-- Time is Money!!!
-q(89028),	-- Chip Service
-q(89029),	-- Chip Service
 11.1.0.58999
 q(89251),	-- Running Hot!
 11.1.0.59570
@@ -3586,16 +3631,12 @@ q(87479),	-- [DNT] Repeatable - Camp 006
 q(87481),	-- [DNT] Repeatable - Camp 008
 q(87482),	-- [DNT] Repeatable - Camp 009
 q(87485),	-- [DNT] Repeatable - Camp 010
-q(87523),	--
 q(87524),	--
-q(87525),	--
 q(87526),	--
 q(87536),	--
 q(87537),	--
 q(87538),	--
 q(87671),	--
-q(88689),	--
-q(88695),	--
 q(88906),	--
 q(88907),	--
 q(88908),	--
@@ -3620,27 +3661,14 @@ q(89218),	--
 q(89219),	--
 q(89220),	--
 q(89248),	--
-q(89273),	--
-q(89317),	--
-q(89318),	--
-q(89319),	--
-q(89320),	--
-q(89321),	--
-q(89322),	--
 q(89333),	--
 q(89335),	--
 q(89336),	--
 q(89337),	--
 q(89392),	--
-q(89393),	-- Flame's Radiance Stipend
 q(89394),	--
 q(89395),	--
 q(89396),	--
-q(89397),	--
-q(89399),	--
-q(89400),	--
-q(89494),	-- A Frocking Good Job
-q(89496),	--
 q(90130),	--
 q(90131),	--
 q(90132),	--
@@ -3664,10 +3692,6 @@ q(90528),	--
 q(90529),	--
 q(90530),	--
 q(90531),	--
-11.1.5.59651
-q(90597),	--
-q(90598),	--
-q(90599),	--
 11.1.5.59919
 q(90661),	-- Dastardly Duos
 q(90774),	--
@@ -3675,3 +3699,162 @@ q(90775),	--
 11.1.5.60179
 q(90899),	--
 q(90900),	--
+11.1.5.60568
+q(90877),	--
+q(90878),	--
+q(91155),	--
+q(91156),	--
+q(91158),	--
+11.1.7.60520
+q(84371),	-- PTR:Lorewalking: The Blade and the High Priest
+q(84638),	-- PTR:Trouble in the Highlands
+q(84639),	-- PTR:Torches and Tar
+q(84640),	-- PTR:Emblematic of Things to Come
+q(84641),	-- PTR:Ill Tidings
+q(84643),	-- PTR:Curfew Kerfuffle
+q(84645),	-- PTR:Deputy Delivery
+q(84649),	-- PTR:Marran Trollbane
+q(84650),	-- PTR:Finding Refuge at Refuge Pointe
+q(84651),	-- PTR:A Familiar Face
+q(84652),	-- PTR:Supply Run
+q(84653),	-- PTR:DEPRECATED
+q(84654),	--
+q(84655),	--
+q(84656),	-- PTR:Onward to Hammerfall
+q(84657),	-- PTR:Return to Stromgarde
+q(84658),	-- PTR:Finding Family
+q(84659),	-- PTR:The Search for Faerin
+q(84660),	--
+q(84704),	-- PTR:A Different Point of View
+q(84705),	-- PTR:Withering the Witherbark
+q(84706),	-- PTR:Crime Family
+q(84707),	-- PTR:To See a Troll
+q(84708),	-- PTR:The Syndicate Strikes Back
+q(84709),	-- PTR:Hammerfall Down
+q(84710),	-- PTR:Once Bitten Twice Shy
+q(84711),	-- PTR:Danath's Disappearance
+q(84712),	-- PTR:False Flag
+q(84713),	-- PTR:Fallen Fortress
+q(84714),	-- PTR:From Ironforge With Love
+q(84715),	-- PTR:The Search for Danath
+q(84716),	--
+q(84717),	-- PTR:Rise of the Red Dawn
+q(84779),	-- PTR:Lorewalking: The Blade's Gambit
+q(84782),	-- PTR:Lorewalking: The Blade's Past
+q(84784),	-- PTR:Lorewalking: The Blade's Nemeses
+q(84789),	-- PTR:Lorewalking: The Blade's Downfall
+q(84790),	--
+q(85027),	-- PTR:Lorewalking: The Protectorate
+q(85028),	-- PTR:Lorewalking: The Brokers
+q(85029),	-- PTR:Lorewalking: Locus-Walker
+q(85035),	-- PTR:Locus-Walker, Telogrus Ranger
+q(85036),	-- PTR:Veni Vidi Ve'nari
+q(85235),	--
+q(85252),	--
+q(85253),	--
+q(85254),	--
+q(85451),	-- PTR:The Burning of Hammerfall
+q(85529),	-- PTR:Past Glory
+q(85678),	--
+q(85679),	-- PTR:Repair Yourself
+q(85862),	-- PTR:A Prince's Duty
+q(85871),	-- PTR:Lorewalking: The Blade's Forces
+q(85875),	-- PTR:Ascent of the Lich King
+q(85878),	-- PTR:O' Thanagor
+q(85884),	-- PTR:Lorewalking: The Prince Who Would Be King
+q(85885),	-- PTR:Lorewalking: No King Rules Forever
+q(86469),	--
+q(86470),	--
+q(86854),	--
+q(87299),	-- PTR:How Old Are These Things?
+q(87547),	--
+q(87555),	--
+q(87560),	--
+q(87562),	--
+q(88805),	--
+q(88808),	--
+q(89039),	--
+q(89211),	--
+q(89222),	--
+q(89223),	--
+q(89382),	--
+q(89566),	--
+q(90607),	--
+q(90608),	--
+q(90609),	--
+q(90610),	--
+q(90639),	--
+q(90640),	--
+q(90641),	--
+q(90642),	--
+q(90643),	--
+q(90644),	--
+q(90645),	--
+q(90646),	--
+q(90648),	--
+q(90649),	--
+q(90650),	--
+q(90651),	--
+q(90652),	--
+q(90653),	--
+q(90654),	--
+q(90655),	--
+q(90656),	--
+q(90657),	--
+q(90705),	-- PTR:Lorewalking
+q(90757),	--
+q(90784),	--
+q(90853),	--
+q(90855),	--
+q(90856),	--
+q(90857),	--
+q(90909),	--
+q(90925),	--
+q(90926),	--
+q(90927),	--
+q(90928),	--
+q(90929),	--
+q(90939),	--
+q(90940),	--
+q(90945),	--
+q(90946),	--
+q(90947),	--
+q(90948),	--
+q(90949),	--
+q(90950),	--
+q(90951),	--
+q(90952),	--
+q(90953),	--
+q(90968),	-- PTR:Titanic Rumblings
+q(90969),	-- PTR:Titan Consoles
+q(90970),	-- PTR:Titan Disc-Count
+q(90971),	-- PTR:Overcharged Console
+q(91009),	--
+q(91025),	--
+q(91026),	--
+q(91027),	--
+q(91028),	--
+q(91029),	--
+q(91030),	--
+q(91031),	--
+q(91033),	--
+q(91035),	--
+q(91038),	--
+q(91039),	-- PTR:Faerin's Request
+q(91052),	-- PTR:Worldsoul: Overcharged Delves
+q(91079),	--
+q(91080),	--
+q(91081),	--
+q(91082),	--
+q(91083),	--
+q(91091),	--
+q(91092),	--
+q(91166),	--
+q(91167),	--
+q(91168),	--
+q(91169),	--
+q(91170),	--
+q(91171),	--
+q(91172),	--
+q(91202),	--
+q(91205),	--

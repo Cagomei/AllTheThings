@@ -164,6 +164,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
 					["timeline"] = { ADDED_11_0_7 },
 				}),
+				i(232624, {	-- Timely Buzzbee (MOUNT!)
+					["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					["timeline"] = { ADDED_11_1_7 },
+				}),
 				i(122340, {	-- Timeworn Heirloom Armor Casing
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
 					["sym"] = {{ "fill" }},

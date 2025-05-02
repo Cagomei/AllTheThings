@@ -1393,7 +1393,7 @@ i(228789);	-- Coldflame Ring
 i(232305);	-- Forged Champion's Prestigious Banner
 i(224192);	-- Practice Ravager
 i(232301);	-- Tempered Banner of the Algari
---- UNSORTED ---
+--- NYI ---
 i(232303);	-- Unknown
 i(232304);	-- Unknown
 i(232307);	-- Unknown

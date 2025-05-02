@@ -742,5 +742,12 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
 			fp(2987, {["description"] = "The Congealing Pool (One-way)"}),
 		})),
+
+		-- 11.1.7
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+			-- 11.1.7.60520
+			fp(3005, {["description"] = "Quest Path 10165: 0.x Generic - Taxi - Cross Continent Load Spline Test (LAS)"}),
+			fp(3122, {["description"] = "Quest Path 10677: 11.1.7 Lorewalking - Xal - Q2 - Vehicle - Summon - stormsong to drustvar - Quest Taxi Version (LAS)"}),
+		})),
 	}),
 }));

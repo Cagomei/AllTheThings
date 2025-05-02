@@ -258,7 +258,8 @@ local EncounterToLoot = {
 		i(204399),	-- Oblivion's Immortal Coil
 		i(202599),	-- Sarkareth's Abyssal Embrace
 		i(202584),	-- Scalecommander's Ebon Schynbalds
-		i(204465),	-- Voice of the Silent Star
+		-- Has special ItemAppearanceModifierID assignments
+		-- i(204465),	-- Voice of the Silent Star
 		i(217408, {	-- Awakened Tempostone
 			["sym"] = GET_SYM_DF_S4_TIER_TOKENS(),
 			["up"] = IGNORED_VALUE,
@@ -902,6 +903,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 							["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 						}),
+						i(204465, {ItemAppearanceModifierID=0}),	-- Voice of the Silent Star
 					}),
 				}),
 			})),
@@ -1120,6 +1122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.NORMAL}},
 						["up"] = IGNORED_VALUE,
 					}),
+					i(204465, {ItemAppearanceModifierID=1}),	-- Voice of the Silent Star
 				}),
 			}),
 			-- This is needed for Achievement distribution
@@ -1132,7 +1135,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				BossOnly(ZSKARN),
 				BossOnly(MAGMORAX),
 				BossOnly(NELTHARION),
-				BossOnly(SARKARETH),
+				BossOnly(SARKARETH, {
+					i(204465, {ItemAppearanceModifierID=3}),	-- Voice of the Silent Star
+				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {

@@ -634,3 +634,5 @@
 2694@@@UNUSED - Brann Bronzebeard (Season 2)
 2695@@@Test Account Wide Stormwind (DNT)
 2697@@@Chase's test faction (DNT)
+11.1.5.59571
+2689@@@Flame's Radiance (Paragon)

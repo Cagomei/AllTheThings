@@ -121,7 +121,8 @@ local EncounterToLoot = {
 		i(225586),	-- Rasha'nan's Grotesque Talons
 		i(212437),	-- Ravaged Lamplighter's Manacles
 		i(212453),	-- Skyterror's Corrosive Organ
-		i(225574),	-- Wings of Shattered Sorrow
+		-- Has special ItemAppearanceModifierID assignments
+		-- i(225574),	-- Wings of Shattered Sorrow
 	};
 	[OVINAX] = {
 		i(225614, {	-- Dreadful Blasphemer's Effigy
@@ -496,7 +497,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						i(225574, {	-- Wings of Shattered Sorrow
 							["modID"] = 67,	-- unique modID for warband drop only
 							["nomerge"] = true,
+							["ItemAppearanceModifierID"]=4,
 						}),
+						i(225574, {ItemAppearanceModifierID=0}),	-- Wings of Shattered Sorrow
 					}),
 					Boss(OVINAX),
 					Boss(KYVEZA),
@@ -559,6 +562,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				Boss(BLOODBOUND_HORROR),
 				Boss(SIKRAN),
 				Boss(RASHANAN),
+				Boss(RASHANAN, {
+					i(225574, {ItemAppearanceModifierID=1}),	-- Wings of Shattered Sorrow
+				}),
 				Boss(OVINAX),
 				Boss(KYVEZA),
 				Boss(SILKEN_COURT),
@@ -574,7 +580,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(ULGRAX),
 				BossOnly(BLOODBOUND_HORROR),
 				BossOnly(SIKRAN),
-				BossOnly(RASHANAN),
+				BossOnly(RASHANAN, {
+					i(225574, {ItemAppearanceModifierID=3}),	-- Wings of Shattered Sorrow
+				}),
 				BossOnly(OVINAX),
 				BossOnly(KYVEZA),
 				BossOnly(SILKEN_COURT),

@@ -154,6 +154,15 @@ root(ROOTS.NeverImplemented, filter(TOYS, {
 			i(216665),	-- Warband Bank Distance Inhibitor (TOY!)
 			i(216887),	-- Unknown (TOY!)
 		})),
+
+		-- 11.0.5
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
+			i(232303),	-- Unknown (TOY!)
+			i(232304),	-- Unknown (TOY!)
+			i(232307),	-- Unknown (TOY!)
+			i(232308),	-- Unknown (TOY!)
+		})),
+
 		-- 11.0.7
 		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
 			i(235016),	-- Redeployment Module

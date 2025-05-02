@@ -115,7 +115,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					42139,	-- The Enterprising Tank
 				}},
 				["groups"] = {
-					-- TODO: Title: Triple Threat
+					title(636),	-- <Name> the Triple Threat
 				},
 			}),
 			ach(42141, {	-- The Enterprising Healer (automated)

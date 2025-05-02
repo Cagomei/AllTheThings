@@ -93,27 +93,40 @@ namespace ATT.DB.Types
                 }
             }
 
-            // Parse Race Requirements
-            long allowableRace = AllowableRace;
-            if (allowableRace > 0)
+            // Is this Faction Exclusive?
+            if ((Flags_1 & 0x1) == 0x1)  // Horde Only
             {
-                var races = new List<long>();
-                RaceTypeFlags flags = (RaceTypeFlags)allowableRace;
-                if (!Has(flags, RaceTypeFlags.ALL))
+                data["r"] = 1;  // Horde Only!
+            }
+            else if ((Flags_1 & 0x2) == 0x2)  // Alliance Only
+            {
+                data["r"] = 2;  // Alliance Only!
+            }
+            else
+            {
+                // Parse Race Requirements
+                long allowableRace = AllowableRace;
+                if (allowableRace > 0)
                 {
-                    bool includedAll = true;
-                    foreach (var o in Framework.ALL_RACES)
+                    // CRIEVE NOTE: This parsing is busted. AllowableRace is strangely formatted.
+                    var races = new List<long>();
+                    RaceTypeFlags flags = (RaceTypeFlags)allowableRace;
+                    if (!Has(flags, RaceTypeFlags.ALL))
                     {
-                        if (o is long raceID)
+                        bool includedAll = true;
+                        foreach (var o in Framework.ALL_RACES)
                         {
-                            if (Has(flags, RACE_TYPE_FLAGS[raceID])) races.Add(raceID);
-                            else includedAll = false;
+                            if (o is long raceID)
+                            {
+                                if (Has(flags, RACE_TYPE_FLAGS[raceID])) races.Add(raceID);
+                                else includedAll = false;
+                            }
                         }
-                    }
-                    if (races.Count > 0 && !includedAll)
-                    {
-                        races.Sort();
-                        data["races"] = races;
+                        if (races.Count > 0 && !includedAll)
+                        {
+                            races.Sort();
+                            data["races"] = races;
+                        }
                     }
                 }
             }

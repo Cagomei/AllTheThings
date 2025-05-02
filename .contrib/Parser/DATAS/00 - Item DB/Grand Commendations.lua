@@ -427,3 +427,22 @@ i(236764, FACTION_TWW_BILGEWATER_CARTEL);	-- Finder's Fee [500 Rep]
 i(236689, FACTION_TWW_STEAMWHEEDLE_CARTEL);	-- Finder's Fee [500 Rep]
 i(236765, FACTION_TWW_VENTURE_CO);			-- Finder's Fee [500 Rep]
 i(237014, FACTION_THE_SEVERED_THREADS);		-- Severed Threads Commendation [1500 rep with choice of three subreps.] Not technically correct to apply metafaction but is close while only one rep may be attached.
+
+------------------
+-- PATCH 11.1.7 --
+------------------
+i(238804, FACTION_PROUDMOORE_ADMIRALTY);	-- Commendation of Proudmoore Admiralty [300 Rep]
+i(238805, FACTION_STORMS_WAKE);				-- Commendation of Storm's Wake [300 Rep]
+i(238816, FACTION_TALANJIS_EXPEDITION);		-- Commendation of Talanji's Expedition [300 Rep]
+i(238806, FACTION_7TH_LEGION);				-- Commendation of the 7th Legion [300 Rep]
+i(238821, FACTION_CHAMPIONS_OF_AZEROTH);	-- Commendation of the Champions of Azeroth [300 Rep]
+i(238819, FACTION_THE_HONORBOUND);			-- Commendation of the Honorbound [300 Rep]
+i(238803, FACTION_ORDER_OF_EMBERS);			-- Commendation of the Order of Embers [300 Rep]
+i(238826, FACTION_RAJANI);					-- Commendation of the Rajani [300 Rep]
+i(238823, FACTION_RUSTBOLT_RESISTANCE);		-- Commendation of the Rustbolt Resistance [300 Rep]
+i(238822, FACTION_TORTOLLAN_SEEKERS);		-- Commendation of the Tortollan Seekers [300 Rep]
+i(238827, FACTION_ULDUM_ACCORD);			-- Commendation of the Uldum Accord [300 Rep]
+i(238820, FACTION_THE_UNSHACKLED);			-- Commendation of the Unshackled [300 Rep]
+i(238817, FACTION_VOLDUNAI);				-- Commendation of the Voldunai [300 Rep]
+i(238809, FACTION_WAVEBLADE_ANKOAN);		-- Commendation of the Waveblade Ankoan [300 Rep]
+i(238818, FACTION_ZANDALARI_EMPIRE);		-- Commendation of the Zandalari Empire [300 Rep]

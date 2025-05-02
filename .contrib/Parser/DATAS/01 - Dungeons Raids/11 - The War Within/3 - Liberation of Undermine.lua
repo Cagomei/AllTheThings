@@ -171,7 +171,8 @@ local EncounterToLoot = {
 		i(230186),	-- Mister Pick-Me-Up
 		i(228882),	-- Refiner's Conveyor Belt
 		i(228888),	-- Rushed Beta Launchers
-		i(228844, {up=IGNORED_VALUE}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
+		-- Has differing ItemAppearanceModifierID associations
+		-- i(228844, {up=IGNORED_VALUE}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
 		i(228884),	-- Test Subject's Clasps
 	};
 	[BANDIT] = {
@@ -643,7 +644,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				header(HEADERS.LFGDungeon, 2781, {	-- Maniacle Machinist
 					Boss(STIX),
-					Boss(LOCKENSTOCK),
+					Boss(LOCKENSTOCK, {
+						i(228844, {up=IGNORED_VALUE, ["ItemAppearanceModifierID"] = 0}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
+					}),
 				}),
 				header(HEADERS.LFGDungeon, 2782, {	-- Two Heads Are Better
 					Boss(VEXIE),
@@ -716,7 +719,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				Boss(CARNAGE),
 				Boss(RIK),
 				Boss(STIX),
-				Boss(LOCKENSTOCK),
+				Boss(LOCKENSTOCK, {
+					i(228844, {up=IGNORED_VALUE, ["ItemAppearanceModifierID"] = 1}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
+				}),
 				Boss(BANDIT),
 				Boss(MUGZEE),
 				Boss(GALLYWIX, {
@@ -732,7 +737,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(CARNAGE),
 				BossOnly(RIK),
 				BossOnly(STIX),
-				BossOnly(LOCKENSTOCK),
+				BossOnly(LOCKENSTOCK, {
+					i(228844, {up=IGNORED_VALUE, ["ItemAppearanceModifierID"] = 3}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
+				}),
 				BossOnly(BANDIT),
 				BossOnly(MUGZEE),
 				BossOnly(GALLYWIX, {
@@ -890,7 +897,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(88868),	-- Trashmaster Blazedump Trash
 			q(88832),	-- Scraps Trash
 			q(88860),	-- Globikus Trash
-			--q(),	-- Melbo The Magnificent Trash
+			q(88851, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
 			--q(),	-- The Junkmaker Trash
 			-- All
 			q(89478),	-- Guk Boomdog Trash first per week any difficulty
