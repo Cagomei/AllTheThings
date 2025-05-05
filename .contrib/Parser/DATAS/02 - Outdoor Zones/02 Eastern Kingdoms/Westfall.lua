@@ -118,6 +118,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(65648, {	-- Old MacDonald <Master Pet Tamer>
+					["coord"] = { 60.8, 18.6, WESTFALL },
+				}),
+			}),
 			-- #if SEASON_OF_DISCOVERY
 			spell(921, {	-- Pickpocketing
 				["classes"] = { ROGUE },

@@ -124,6 +124,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(63194, {	-- Steven Lisbane <Master Pet Tamer>
+					["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					o(180901),	-- Bloodsail Wreckage

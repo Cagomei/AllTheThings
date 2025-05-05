@@ -1791,7 +1791,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(237259),	-- Kapow Kanapes
 			i(230017),	-- Master Blaster's Insignia
 			i(234618),	-- Omega Oyster Outbreak
-			i(234620),	-- Perfectly Preserved Kaja'Classic Original Taste
 			i(231291),	-- Radar
 			i(235627),	-- Scribbles' Favorite Candies
 			i(230990),	-- Set Keystone Map: Operation: Floodgate

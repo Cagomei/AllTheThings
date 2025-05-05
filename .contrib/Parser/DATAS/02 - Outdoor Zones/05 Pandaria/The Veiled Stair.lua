@@ -51,6 +51,20 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.90, 43.73, THE_VEILED_STAIR },
 					}),
 				}),
+				n(TREASURES, {
+					o(214325, {	-- Forgotten Lockbox
+						["questID"] = 31867, -- Forgotten Lockbox
+						["description"] = "Located on a barrel on the second floor of the inn",
+						["coord"] = { 54.66, 71.67, THE_VEILED_STAIR },
+					}),
+					o(213845, {	-- The Hammer of Folly
+						["questID"] = 31428,
+						["coord"] = { 74.92, 76.47, THE_VEILED_STAIR },
+						["g"] = {
+							i(86473),	-- The Hammer of Folly
+						},
+					}),
+				}),
 				n(VENDORS, {
 					un(38, n(70436, {	-- Blacktalon Quartermaster <Supplier to the Black Prince> (Ordos - Legendary Cloak filter)
 						["description"] = "To purchase the epic cloaks you must have obtained the achievement |r |cFFFFD700'Chapter IV: Celestial Blessings'|r during Mists of Pandaria. ",

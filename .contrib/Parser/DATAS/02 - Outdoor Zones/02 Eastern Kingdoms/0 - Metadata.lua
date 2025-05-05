@@ -225,6 +225,7 @@ root(ROOTS.Zones, {
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				}),
+				-- #if BEFORE 5.0.4
 				ach(1677, {	-- Loremaster of Eastern Kingdoms (H)
 					-- #if AFTER CATA
 					["sym"] = {{"meta_achievement",
@@ -254,23 +255,11 @@ root(ROOTS.Zones, {
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
-				petbattle(ach(6603, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Taming Eastern Kingdoms
+				-- #endif
+				petbattle(ach(6603, {	-- Taming Eastern Kingdoms
+					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						crit(21396),	-- Julia Stevens
-						crit(21397),	-- Old MacDonald
-						crit(21398),	-- Lindsay
-						crit(21399),	-- Eric Davidson
-						crit(21400),	-- Steven Lisbane
-						crit(21401),	-- Bill Buckler
-						crit(21598),	-- David Kosse
-						crit(21599),	-- Deiza Plaguehorn
-						crit(21600),	-- Kortas Darkhammer
-						crit(21603),	-- Durin Darkhammer
-						crit(21601),	-- Everessa
-						crit(21602),	-- Lydia Accoste
-					},
-				}))),
+				})),
 				ach(12455, {	-- Westfall & Duskwood Quests
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_7_3_5 },

@@ -127,6 +127,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(65656, {	-- Bill Buckler <Master Pet Tamer>
+					["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(ENGINEERING, {
 					n(7406, {	-- Oglethorpe Obnoticus <Gnomish Engineering Trainer>

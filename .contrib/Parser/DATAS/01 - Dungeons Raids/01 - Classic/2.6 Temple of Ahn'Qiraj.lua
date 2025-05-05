@@ -1735,6 +1735,170 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						},
 					}),
 				}),
+				n(15502, {	-- Anachronos (RINGS)
+					["coord"] = { 65.2, 50.0, TANARIS },
+					["groups"] = {
+						-- NEUTRAL
+						i(234016, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						}),
+						i(234017, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						}),
+						i(234018, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						}),
+						i(234019, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						}),
+						i(234020, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						}),
+						i(234440, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
+						}),	
+						i(234968, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
+						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
+						}),					
+						
+						-- FRIENDLY
+						i(234021, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						}),
+						i(234022, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						}),
+						i(234023, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						}),
+						i(234024, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						}),
+						i(234025, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						}),
+						i(234439, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
+						}),
+						i(234967, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
+						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
+						}),
+						
+						-- HONORED
+						i(234026, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						}),
+						i(234027, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						}),
+						i(234028, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						}),
+						i(234029, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						}),
+						i(234030, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						}),
+						i(234438, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
+						}),
+						i(234966, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
+						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
+						}),
+						
+						-- REVERED
+						i(234031, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+						}),
+						i(234032, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+						}),
+						i(234033, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+						}),
+						i(234034, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+						}),
+						i(234035, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+						}),
+						i(234437, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
+						}),	
+						i(234965, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
+						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
+						}),
+						
+						-- Exalted
+						i(234198, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+						}),
+						i(234199, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+						}),
+						i(234200, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+						}),
+						i(234201, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+						}),
+						i(234202, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+						}),
+						i(234436, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
+						}),	
+						i(234964, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
+						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
+						}),	
+					},
+				}),
 				n(15502, {	-- Andorgos <Brood of Malygos> (HEAD & SHOULDER)
 					["groups"] = {
 						cl(DRUID, {
@@ -2902,7 +3066,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(AQ_TEMPLE_HARDMODE, {
-					["description"] = "When players enter Ahn'Qiraj (both Ruins and Temple), and arrive at the first boss, they will see an obelisk. By interacting with the obelisk (deactivating it), they add additional mechanics to the raid, and the raid will have a finite number of attempts to defeat the next 3 bosses. Each boss has an individual obelisk that must be deactivated to continue. Doing so will give you bonus loot chests & and you also receive a Void-Touched Emblem which turns Temple of Ahn'Qiraj Weapons into a 'Voidtouched' varient of the weapon. They have a neat void appearance despite providing no difference in quality. (Cosmetic only!)",
+					["description"] = "Descent into Madness!\n\nWhen players enter Ahn'Qiraj (both Ruins and Temple), and arrive at the first boss, they will see an obelisk. By interacting with the obelisk (deactivating it), they add additional mechanics to the raid, and the raid will have a finite number of attempts to defeat the next 3 bosses. Each boss has an individual obelisk that must be deactivated to continue. Doing so will give you bonus loot chests & and you also receive a Void-Touched Emblem which turns Temple of Ahn'Qiraj Weapons into a 'Voidtouched' varient of the weapon. They have a neat void appearance despite providing no difference in quality. (Cosmetic only!)",
 					["groups"] = {
 						i(233351), -- Light Green Qiraji Resonating Crystal
 						i(233352), -- Dark Blue Qiraji Resonating Crystal

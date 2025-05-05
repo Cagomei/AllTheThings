@@ -327,6 +327,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66478, {	-- David Kosse <Master Pet Tamer>
+					["coord"] = { 62.8, 54.6, THE_HINTERLANDS },
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(LEATHERWORKING, {
 					n(11097, {	-- Drakk Stonehand <Master Leatherworking Trainer>

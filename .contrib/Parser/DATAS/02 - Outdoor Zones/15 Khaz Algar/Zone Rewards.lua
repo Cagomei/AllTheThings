@@ -2,6 +2,10 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	i(228963, {	-- Unfamiliar Emblem (QS!)
+		["timeline"] = { ADDED_11_1_7 },
+		["maps"] = { 2372 },	-- Arathi Highlands
+	}),
 	n(ZONE_REWARDS, {
 		n(ARMOR, {
 			filter(BACK_F, {

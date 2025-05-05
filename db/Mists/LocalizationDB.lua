@@ -724,7 +724,6 @@ localize(L.HEADER_NAMES, {
 	[-1000039] = TUTORIAL_TITLE20,
 	[-1000042] = WORLD.." "..RAID_BOSSES,
 	[-1000044] = ZONE.." "..BATTLE_PET_SOURCE_1,
-	[-1000046] = CHALLENGE_MODE,
 	[-1000048] = "Dragons of Nightmare",
 	[-1000049] = DUNGEON_FLOOR_NAXXRAMAS2,
 	[-1000050] = DUNGEON_FLOOR_NAXXRAMAS1,
@@ -762,6 +761,7 @@ localize(L.HEADER_NAMES, {
 	[-1000104] = ITEM_QUALITY5_DESC,
 	[-1000106] = ITEM_QUALITY0_DESC,
 	[-1000108] = "Thunderforged",
+	[-1000112] = "Warforged",
 	[-1000114] = "Patch 1.x.x",
 	[-1000115] = "Patch 2.x.x",
 	[-1000116] = "Patch 3.x.x",
@@ -867,10 +867,6 @@ localize(L.HEADER_NAMES, {
 	[-1000289] = select(2,GetAchievementInfo(6131)),
 	[-1000290] = select(2,GetAchievementInfo(7853)),
 	[-1000299] = select(2,GetAchievementInfo(15218)),
-	[-1000301] = "Raid Finder (5.4)",
-	[-1000302] = "Flexible (5.4)",
-	[-1000303] = "Normal (5.4)",
-	[-1000304] = "Heroic (5.4)",
 	[-1000308] = C_Spell.GetSpellName(147343),
 	[-1000373] = "New Character",
 	[-1000380] = "Bounty",
@@ -910,6 +906,10 @@ localize(L.HEADER_NAMES, {
 	[-1001165] = select(2,GetAchievementInfo(8666)),
 	[-1001166] = "Honor Gear Prideful Season",
 	[-1001180] = "Wanderer's Festival",
+	[-1001183] = "Raid Finder Vendor",
+	[-1001184] = "Flexible Vendor",
+	[-1001185] = "Raid Vendor",
+	[-1001186] = "Heroic Vendor",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -948,10 +948,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000265] = "The following item sets were implemented as boosted character rewards for recipients of the Scroll of Resurrection.\n\nThey were later added to vendors in Mount Hyjal and Vash'jir once the Scroll of Resurrection Service was retired.",
 	[-1000266] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
 	[-1000284] = "This is a yearly recurring event that occurs between the beginning of November and the end of the year.",
-	[-1000301] = "This version of the instance was the original Raid Finder difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
-	[-1000302] = "This version of the instance was the original Flexible difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
-	[-1000303] = "This version of the instance was the original Normal difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
-	[-1000304] = "This version of the instance was the original Heroic difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 	[-1000380] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
 	[-1000381] = "Buy a Kukuru's Cache Key to open this. Has a very small chance of containing a Burden of Eternity and more frequently, the Bonkers pet.",
 	[-1000850] = "Contains Things which are rewarded that upon completing that scenario.",
@@ -995,7 +991,6 @@ localize(L.HEADER_ICONS, {
 	[-1000039] = _.asset("interface_vendor"),
 	[-1000042] = _.asset("interface_world_boss"),
 	[-1000044] = _.asset("interface_zone_drop"),
-	[-1000046] = 618858,
 	[-1000048] = 134157,
 	[-1000049] = 135442,
 	[-1000050] = 236271,
@@ -1033,6 +1028,7 @@ localize(L.HEADER_ICONS, {
 	[-1000104] = _.asset("weapon_type_legendary"),
 	[-1000106] = 135025,
 	[-1000108] = 839979,
+	[-1000112] = 450907,
 	[-1000114] = _.asset("expansion_classic"),
 	[-1000115] = _.asset("expansion_tbc"),
 	[-1000116] = _.asset("expansion_wotlk"),
@@ -1138,10 +1134,6 @@ localize(L.HEADER_ICONS, {
 	[-1000289] = 133783,
 	[-1000290] = 133783,
 	[-1000299] = 133783,
-	[-1000301] = _.asset("difficulty_lfr"),
-	[-1000302] = _.asset("difficulty_normal"),
-	[-1000303] = _.asset("difficulty_heroic"),
-	[-1000304] = _.asset("difficulty_mythic"),
 	[-1000308] = 775461,
 	[-1000373] = 1530081,
 	[-1000380] = 236188,
@@ -1178,6 +1170,10 @@ localize(L.HEADER_ICONS, {
 	[-1001165] = 838515,
 	[-1001166] = 838515,
 	[-1001180] = 606553,
+	[-1001183] = 308480,
+	[-1001184] = _.asset("category_commonbossdrop"),
+	[-1001185] = 311236,
+	[-1001186] = 311235,
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -1204,11 +1200,6 @@ localize(L.HEADER_EVENTS, {
 	[-1001180] = 133900,
 });
 -- Programmatic Event Scheduling
-_.Modules.Events.SetEventInformation(133889, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=1,["year"]=2024}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026})
-});
 _.Modules.Events.SetEventInformation(446916, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=14,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=26,["weekday"]=4,["year"]=2025})
 });
@@ -1221,7 +1212,6 @@ _.Modules.Events.SetEventInformation(590, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=22,["weekday"]=5,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=7,["weekday"]=5,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=27,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=4,["monthDay"]=27,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=4,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=5,["monthDay"]=4,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=11,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=5,["monthDay"]=11,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=18,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=5,["monthDay"]=18,["weekday"]=1,["year"]=2025}),
@@ -1273,12 +1263,18 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=5,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=4,["monthDay"]=5,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=12,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=4,["monthDay"]=12,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=19,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=4,["monthDay"]=19,["weekday"]=1,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=26,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=4,["monthDay"]=26,["weekday"]=1,["year"]=2026})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=26,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=4,["monthDay"]=26,["weekday"]=1,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=3,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=3,["weekday"]=1,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=4,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=6,["year"]=2027})
+});
+_.Modules.Events.SetEventInformation(133889, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=1,["year"]=2024}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026})
 });
 
 -- Filter Database Module
@@ -4745,6 +4741,10 @@ local ObjectNames = {
 	[214438] = "Ancient Mogu Tablet",
 	[214439] = "Barrel of Banana Infused Rum",
 	[214562] = "Sha-Haunted Crystal",
+	[214824] = "Ancient Mogu Chest",
+	[214825] = "Ancient Mogu Chest",
+	[214826] = "Ancient Mogu Chest",
+	[214827] = "Ancient Mogu Chest",
 	[214871] = "Shattered Destroyer",
 	[214903] = "The Tan-Chao",
 	[214945] = "Onyx Egg",
@@ -7707,6 +7707,10 @@ local ObjectModels = {
 	[214438] = 194086,
 	[214439] = 199737,
 	[214562] = 392110,
+	[214824] = 629720,
+	[214825] = 629720,
+	[214826] = 629720,
+	[214827] = 629720,
 	[214871] = 589967,
 	[214903] = 528748,
 	[214945] = 623765,
@@ -8305,8 +8309,6 @@ localize(L.HEADER_NAMES, {
 	[-1000227] = "Anglerwettbewerb im Schlingendorntal",
 	[-1000235] = "Die Öffnung des Dunklen Portals",
 	[-1000236] = "Das Szepter der Sandstürme",
-	[-1000301] = "Schlachtzugbrowser (5.4)",
-	[-1000304] = "Heroisch (5.4)",
 	[-1000373] = "Neuer Charakter",
 	[-1000380] = "Kopfgeld",
 	[-1000381] = "Kukurus Schatzkammer",
@@ -8322,6 +8324,9 @@ localize(L.HEADER_NAMES, {
 	[-1001054] = "Protokoll Inferno",
 	[-1001074] = "Protokoll Zwielicht",
 	[-1001180] = "Wanderfest",
+	[-1001183] = "Händlerin des Schlachtzugsbrowsers",
+	[-1001185] = "Händlerin für Schlachtzüge",
+	[-1001186] = "Händlerin für heroische Schlachtzüge",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -10448,6 +10453,10 @@ localize(ObjectNames, {
 	[214438] = "Uralte Mogutafel",
 	[214439] = "Fass mit Bananenrum",
 	[214562] = "Sha-besessener Kristall",
+	[214824] = "Uralte Mogutruhe",
+	[214825] = "Uralte Mogutruhe",
+	[214826] = "Uralte Mogutruhe",
+	[214827] = "Uralte Mogutruhe",
 	[214871] = "Zerschmetterter Zerstörer",
 	[214903] = "Der Tan-Chao",
 	[214945] = "Onyxei",
@@ -10684,8 +10693,6 @@ localize(L.HEADER_NAMES, {
 	[-1000236] = "Le Sceptre des Sables changeants",
 	[-1000244] = "Edition Collector",
 	[-1000247] = "Édition BC Classic Deluxe",
-	[-1000301] = "Recherche de Raid (5.4)",
-	[-1000304] = "Héroïque (5.4)",
 	[-1000373] = "Nouveau personnage",
 	[-1000380] = "Prime",
 	[-1000381] = "Cache de Koukourou",
@@ -10709,6 +10716,9 @@ localize(L.HEADER_NAMES, {
 	[-1001164] = "Équipement Honneur Saison Dramatique",
 	[-1001166] = "Équipement Honneur Saison Orgueilleux",
 	[-1001180] = "Festival de l’explorateur",
+	[-1001183] = "Marchand de l’outil Raids",
+	[-1001185] = "Marchande d’équipement de raids",
+	[-1001186] = "Marchande d’équipement héroïque",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -12842,6 +12852,10 @@ localize(ObjectNames, {
 	[214438] = "Tablette mogu ancienne",
 	[214439] = "Tonneau de rhum infusé à la banane",
 	[214562] = "Cristal hanté par les sha",
+	[214824] = "Coffre mogu ancien",
+	[214825] = "Coffre mogu ancien",
+	[214826] = "Coffre mogu ancien",
+	[214827] = "Coffre mogu ancien",
 	[214871] = "Destructeur brisé",
 	[214903] = "Le tan-chao",
 	[214945] = "Œuf d’onyx",
@@ -13057,6 +13071,9 @@ localize(L.HEADER_NAMES, {
 	[-1001035] = "Pesce di stagione: spigola estiva",
 	[-1001036] = "Pesce di stagione: calamari invernali",
 	[-1001180] = "Festa del Nomade",
+	[-1001183] = "Mercante della Ricerca delle Incursioni",
+	[-1001185] = "Mercante delle Incursioni",
+	[-1001186] = "Mercante Eroica",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -14835,6 +14852,10 @@ localize(ObjectNames, {
 	[214438] = "Antica Tavoletta dei Mogu",
 	[214439] = "Barile di Rum alla Banana",
 	[214562] = "Cristallo Infestato dallo Sha",
+	[214824] = "Antica Cassa dei Mogu",
+	[214825] = "Antica Cassa dei Mogu",
+	[214826] = "Antica Cassa dei Mogu",
+	[214827] = "Antica Cassa dei Mogu",
 	[214871] = "Distruttore Infranto",
 	[214903] = "Tan-Chao",
 	[214945] = "Uovo d'Onice",
@@ -15052,6 +15073,9 @@ localize(L.HEADER_NAMES, {
 	[-1001054] = "Protocolo Inferno",
 	[-1001074] = "Protocolo Crepúsculo",
 	[-1001180] = "Festival do Andarilho",
+	[-1001183] = "Comerciante de Localizador de Raides",
+	[-1001185] = "Comerciante do Raide",
+	[-1001186] = "Comerciante Heroico",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -17105,6 +17129,10 @@ localize(ObjectNames, {
 	[214438] = "Tabuleta Mogu Antiga",
 	[214439] = "Barril de Rum com Essência de Banana",
 	[214562] = "Cristal Assombrado pelo Sha",
+	[214824] = "Arca Mogu Antiga",
+	[214825] = "Arca Mogu Antiga",
+	[214826] = "Arca Mogu Antiga",
+	[214827] = "Arca Mogu Antiga",
 	[214871] = "Destruidor Despedaçado",
 	[214903] = "Tan-Chao",
 	[214945] = "Ovo Ônix",
@@ -17350,10 +17378,6 @@ localize(L.HEADER_NAMES, {
 	[-1000237] = "Вторжение Плети",
 	[-1000244] = "Коллекционное издание",
 	[-1000284] = "Годовщина WoW",
-	[-1000301] = "Поиск Рейда (5.4)",
-	[-1000302] = "Гибкий (5.4)",
-	[-1000303] = "Обычный (5.4)",
-	[-1000304] = "Героический (5.4)",
 	[-1000373] = "Новый персонаж",
 	[-1000380] = "Премия",
 	[-1000381] = "клада Кукуру",
@@ -17378,6 +17402,9 @@ localize(L.HEADER_NAMES, {
 	[-1001164] = "Доспехи Бездушного гладиатора за очки чести",
 	[-1001166] = "Доспехи Гордого гладиатора за очки чести",
 	[-1001180] = "Фестиваль странника",
+	[-1001183] = "Награды за поиск рейда",
+	[-1001185] = "Награды за рейд",
+	[-1001186] = "Награды за рейд в героическом режиме",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -19524,6 +19551,10 @@ localize(ObjectNames, {
 	[214438] = "Древняя табличка могу",
 	[214439] = "Бочонок настоянного на бананах рома",
 	[214562] = "Тронутый ша кристалл",
+	[214824] = "Древний сундук могу",
+	[214825] = "Древний сундук могу",
+	[214826] = "Древний сундук могу",
+	[214827] = "Древний сундук могу",
 	[214871] = "Разбитый разрушитель",
 	[214903] = "Тань-Чао",
 	[214945] = "Ониксовое яйцо",
@@ -20014,6 +20045,9 @@ localize(L.HEADER_NAMES, {
 	[-1001054] = "프로토콜 지옥불",
 	[-1001074] = "프로토콜 황혼",
 	[-1001180] = "유랑객의 축제",
+	[-1001183] = "공격대 찾기 상인",
+	[-1001185] = "공격대 상인",
+	[-1001186] = "영웅급 상인",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -22051,6 +22085,10 @@ localize(ObjectNames, {
 	[214438] = "고대 모구 서판",
 	[214439] = "바나나 맛 럼주 통",
 	[214562] = "샤에 물든 수정",
+	[214824] = "고대 모구 궤짝",
+	[214825] = "고대 모구 궤짝",
+	[214826] = "고대 모구 궤짝",
+	[214827] = "고대 모구 궤짝",
 	[214871] = "무너진 파괴자",
 	[214903] = "탄차오",
 	[214945] = "마노 알",
@@ -22266,6 +22304,9 @@ localize(L.HEADER_NAMES, {
 	[-1001054] = "Protocolo Inferno",
 	[-1001074] = "Protocolo Crepúsculo",
 	[-1001180] = "Festival del Errante",
+	[-1001183] = "Vendedora de buscador de bandas",
+	[-1001185] = "Vendedora de banda",
+	[-1001186] = "Vendedora heroica",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -24384,6 +24425,10 @@ localize(ObjectNames, {
 	[214438] = "Tablilla mogu antigua",
 	[214439] = "Barril de ron con plátano",
 	[214562] = "Cristal embrujado por el sha",
+	[214824] = "Cofre mogu antiguo",
+	[214825] = "Cofre mogu antiguo",
+	[214826] = "Cofre mogu antiguo",
+	[214827] = "Cofre mogu antiguo",
 	[214871] = "Destructor destrozado",
 	[214903] = "El Tan-Chao",
 	[214945] = "Huevo de ónice",
@@ -24571,6 +24616,8 @@ do phases[key].description = value; end
 if GetLocale():sub(3,4):lower() == "mx" then
 localize(L.HEADER_NAMES, {
 	[-1001180] = "Festival del errante",
+	[-1001185] = "Vendedor de banda",
+	[-1001186] = "Vendedor de modo heroico",
 });
 end
 end
@@ -24656,10 +24703,6 @@ localize(L.HEADER_NAMES, {
 	[-1000260] = "炉石传说",
 	[-1000263] = "可口可乐活动",
 	[-1000284] = "魔兽世界周年庆",
-	[-1000301] = "团队查找器 (5.4)",
-	[-1000302] = "弹性 (5.4)",
-	[-1000303] = "普通 (5.4)",
-	[-1000304] = "英雄 (5.4)",
 	[-1000373] = "新角色",
 	[-1000380] = "赏金任务",
 	[-1000381] = "库库鲁的宝箱",
@@ -24686,6 +24729,9 @@ localize(L.HEADER_NAMES, {
 	[-1001164] = "荣誉装备恶孽赛季",
 	[-1001166] = "荣誉装备骄矜赛季",
 	[-1001180] = "云游节",
+	[-1001183] = "随机副本商人",
+	[-1001185] = "团队副本商人",
+	[-1001186] = "英雄副本商人",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
@@ -26541,6 +26587,10 @@ localize(ObjectNames, {
 	[214438] = "古代魔古石板",
 	[214439] = "一桶泡蕉朗姆酒",
 	[214562] = "染煞水晶",
+	[214824] = "古代魔古箱子",
+	[214825] = "古代魔古箱子",
+	[214826] = "古代魔古箱子",
+	[214827] = "古代魔古箱子",
 	[214871] = "破碎毁灭者",
 	[214903] = "接天桥",
 	[214945] = "玛瑙翔龙蛋",
@@ -26834,6 +26884,9 @@ localize(L.HEADER_NAMES, {
 	[-1001164] = "榮譽裝備惡孽賽季",
 	[-1001166] = "榮譽裝備驕矜賽季",
 	[-1001180] = "遊子節",
+	[-1001183] = "隨機團隊商人",
+	[-1001185] = "團隊模式商人",
+	[-1001186] = "英雄模式商人",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定節日的活動中才能完成本節中的事物。",

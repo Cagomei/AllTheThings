@@ -224,6 +224,7 @@ root(ROOTS.Zones, {
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				}),
+				-- #if BEFORE 5.0.4
 				ach(1680, {	-- Loremaster of Kalimdor (H)
 					-- #if AFTER CATA
 					["sym"] = {{"meta_achievement",
@@ -257,23 +258,11 @@ root(ROOTS.Zones, {
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
-				petbattle(ach(6602, bubbleDownSelf({["timeline"] = { ADDED_5_0_4 } }, {	-- Taming Kalimdor
+				-- #endif
+				petbattle(ach(6602, {	-- Taming Kalimdor
+					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(21402),	-- Zunta
-						crit(21403),	-- Dagra the Fierce
-						crit(21404),	-- Analynn
-						crit(21405),	-- Zonya the Sadist
-						crit(21406),	-- Merda Stronghoof
-						crit(21407),	-- Traitor Gluk
-						crit(21408),	-- Elena Flutterfly
-						crit(21409),	-- Cassandra Kaboom
-						crit(21410),	-- Grazzle the Great
-						crit(21411),	-- Zoltan
-						crit(21416),	-- Kela Grimtotem
-						crit(21415),	-- Stone Cold Trixxy
-					},
-				}))),
+				})),
 			}),
 		},
 	}),

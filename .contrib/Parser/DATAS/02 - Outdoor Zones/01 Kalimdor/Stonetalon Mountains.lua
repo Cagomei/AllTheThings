@@ -163,6 +163,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66137, {	-- Zonya the Sadist <Master Pet Tamer>
+					["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
+				}),
+			}),
 			-- #if SEASON_OF_DISCOVERY
 			spell(921, {	-- Pickpocketing
 				["classes"] = { ROGUE },

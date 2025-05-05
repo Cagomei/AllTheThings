@@ -101,6 +101,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66452, {	-- Kela Grimtotem <Master Pet Tamer>
+					["coord"] = { 31.8, 32.8, THOUSAND_NEEDLES },
+				}),
+			}),
 			-- #if AFTER CATA
 			n(PROFESSIONS, {
 				prof(FISHING, {

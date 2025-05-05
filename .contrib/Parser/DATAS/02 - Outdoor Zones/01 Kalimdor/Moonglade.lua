@@ -49,6 +49,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66412, {	-- Elena Flutterfly <Master Pet Tamer>
+					["coord"] = { 46.0, 60.6, MOONGLADE },
+				}),
+			}),
 			n(QUESTS, {
 				q(26, {	-- A Lesson to Learn [A]
 					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>

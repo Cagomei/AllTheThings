@@ -250,9 +250,46 @@ i(42945);	-- Venerable Dal'Rend's Sacred Charge
 i(48716);	-- Venerable Mass of McGowan
 
 -----------------
---   CLASSIC   --
+-- PATCH 5.4.0 --
 -----------------
-i(12844);	-- Argent Dawn Valor Token
+-- Flexible
+i(105674);	-- Hellscream's Barrier
+i(105672);	-- Hellscream's Cleaver
+i(105679);	-- Hellscream's Decapitator
+i(105678);	-- Hellscream's Doomblade
+i(105673);	-- Hellscream's Pig Sticker
+i(105671);	-- Hellscream's Razor
+i(105680);	-- Hellscream's Shield Wall
+i(105676);	-- Hellscream's Tome of Destruction
+i(105677);	-- Hellscream's War Staff
+i(105670);	-- Hellscream's Warbow
+i(105675);	-- Hellscream's Warmace
+
+-- Normal
+i(104409);	-- Hellscream's Barrier
+i(104404);	-- Hellscream's Cleaver
+i(104405);	-- Hellscream's Decapitator
+i(104401);	-- Hellscream's Doomblade
+i(104403);	-- Hellscream's Pig Sticker
+i(104400);	-- Hellscream's Razor
+i(104407);	-- Hellscream's Shield Wall
+i(104408);	-- Hellscream's Tome of Destruction
+i(104406);	-- Hellscream's War Staff
+i(104399);	-- Hellscream's Warbow
+i(104402);	-- Hellscream's Warmace
+
+-- Heroic
+i(105687);	-- Hellscream's Barrier
+i(105685);	-- Hellscream's Cleaver
+i(105692);	-- Hellscream's Decapitator
+i(105691);	-- Hellscream's Doomblade
+i(105686);	-- Hellscream's Pig Sticker
+i(105684);	-- Hellscream's Razor
+i(105693);	-- Hellscream's Shield Wall
+i(105689);	-- Hellscream's Tome of Destruction
+i(105690);	-- Hellscream's War Staff
+i(105683);	-- Hellscream's Warbow
+i(105688);	-- Hellscream's Warmace
 
 -----------------
 -- PATCH 6.1.0 --
@@ -459,6 +496,9 @@ i(206270);	-- Volcanic Equipment Chest
 ------------------
 -- PATCH 10.1.5 --
 ------------------
+-- #if AFTER 10.1.5
+i(12844);	-- Argent Dawn Valor Token
+-- #endif
 i(206375);	-- Corruptor's Scourgestone
 i(208567);	-- Medal of Conquest (Season 2)
 i(206576);	-- Death's Bargaining Chip

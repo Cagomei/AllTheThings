@@ -3751,91 +3751,91 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					})),
 
 					-- Old Heirlooms
-					darkmoonprizeticket(50, i(42944, {	-- Balanced Heartseeker
+					darkmoonprizeticket(110, i(42944, {	-- Balanced Heartseeker
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(75, i(42943, {	-- Bloodied Arcanite Reaper
+					darkmoonprizeticket(160, i(42943, {	-- Bloodied Arcanite Reaper
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(69893, {	-- Bloodsoaked Skullforge Reaver
+					darkmoonprizeticket(110, i(69893, {	-- Bloodsoaked Skullforge Reaver
 						["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(69889, {	-- Burnished Breastplate of Might
+					darkmoonprizeticket(110, i(69889, {	-- Burnished Breastplate of Might
 						["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(69890, {	-- Burnished Pauldrons of Might
+					darkmoonprizeticket(110, i(69890, {	-- Burnished Pauldrons of Might
 						["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(75, i(79131, {	-- Burnished Warden Staff
+					darkmoonprizeticket(160, i(79131, {	-- Burnished Warden Staff
 						["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42950, {	-- Champion Herod's Shoulders
+					darkmoonprizeticket(110, i(42950, {	-- Champion Herod's Shoulders
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(48677, {	-- Champion's Deathdealer Breastplate
+					darkmoonprizeticket(110, i(48677, {	-- Champion's Deathdealer Breastplate
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(75, i(42946, {	-- Charmed Ancient Bone Bow
+					darkmoonprizeticket(160, i(42946, {	-- Charmed Ancient Bone Bow
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42948, {	-- Devout Aurastone Hammer
+					darkmoonprizeticket(110, i(42948, {	-- Devout Aurastone Hammer
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(75, i(42947, {	-- Dignified Headmaster's Charge
+					darkmoonprizeticket(160, i(42947, {	-- Dignified Headmaster's Charge
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(70, i(42992, {	-- Discerning Eye of the Beast
+					darkmoonprizeticket(130, i(42992, {	-- Discerning Eye of the Beast
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(93902, {	-- Flamescarred Draconian Deflector
+					darkmoonprizeticket(110, i(93902, {	-- Flamescarred Draconian Deflector
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(93904, {	-- Musty Tome of the Lost
+					darkmoonprizeticket(110, i(93904, {	-- Musty Tome of the Lost
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42951, {	-- Mystical Pauldrons of Elements
+					darkmoonprizeticket(110, i(42951, {	-- Mystical Pauldrons of Elements
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(48683, {	-- Mystical Vest of Elements
+					darkmoonprizeticket(110, i(48683, {	-- Mystical Vest of Elements
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(48685, {	-- Polished Breastplate of Valor
+					darkmoonprizeticket(110, i(48685, {	-- Polished Breastplate of Valor
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42949, {	-- Polished Spaulders of Valor
+					darkmoonprizeticket(110, i(42949, {	-- Polished Spaulders of Valor
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(48687, {	-- Preened Ironfeather Breastplate
+					darkmoonprizeticket(110, i(48687, {	-- Preened Ironfeather Breastplate
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42984, {	-- Preened Ironfeather Shoulders
+					darkmoonprizeticket(110, i(42984, {	-- Preened Ironfeather Shoulders
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(75, i(48718, {	-- Repurposed Lava Dredger
+					darkmoonprizeticket(160, i(48718, {	-- Repurposed Lava Dredger
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42952, {	-- Stained Shadowcraft Spaulders
+					darkmoonprizeticket(110, i(42952, {	-- Stained Shadowcraft Spaulders
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(48689, {	-- Stained Shadowcraft Tunic
+					darkmoonprizeticket(110, i(48689, {	-- Stained Shadowcraft Tunic
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(70, i(42991, {	-- Swift Hand of Justice
+					darkmoonprizeticket(130, i(42991, {	-- Swift Hand of Justice
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42985, {	-- Tattered Dreadmist Mantle
+					darkmoonprizeticket(110, i(42985, {	-- Tattered Dreadmist Mantle
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(48691, {	-- Tattered Dreadmist Robe
+					darkmoonprizeticket(110, i(48691, {	-- Tattered Dreadmist Robe
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42945, {	-- Venerable Dal'Rend's Sacred Charge
+					darkmoonprizeticket(110, i(42945, {	-- Venerable Dal'Rend's Sacred Charge
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(48716, {	-- Venerable Mass of McGowan
+					darkmoonprizeticket(110, i(48716, {	-- Venerable Mass of McGowan
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(93903, {	-- Weathered Observer's Shield
+					darkmoonprizeticket(110, i(93903, {	-- Weathered Observer's Shield
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 					})),
 

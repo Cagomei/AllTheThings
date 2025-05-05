@@ -4042,5 +4042,18 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				})),
 			}),
 		})),
+		-- 11.1.5
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+			n(SPECIAL, {	-- Duos
+				-- Hellfire Ramprats
+				i(238934),	-- Boots of the Darkwalker
+				i(238936),	-- Scale Leggings of the Skirmisher
+				i(238937),	-- Light-Touched Breastplate
+				-- Shadowfang Keeep
+				i(238981),	-- Gloves of the Uplifted Cup
+				i(238982),	-- Baron Silverlaine's Greaves
+				i(238983),	-- Boots of Lingering Sorrow
+			}),
+		})),
 	}),
 }));

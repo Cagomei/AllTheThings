@@ -776,6 +776,18 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 	tinsert(info, "```");	-- discord fancy box end
 	return info;
 end
+local function SearchForQuestData(questID)
+	-- Retail: This is too fine grained and ignores altQuests, which are perfectly valid.
+	local questRef = Search("questID", questID, "field");
+	if not questRef then
+		-- This should find altQuests.
+		local searchResults = SearchForField("questID", questID);
+		if searchResults and #searchResults > 0 then
+			return searchResults[1];
+		end
+	end
+	return questRef;
+end
 PrintQuestInfo = function(questID, new)
 	if not DoQuestPrints then return end
 	-- Users can manually set certain QuestIDs to be ignored because Blizzard decides to toggle them on and off constantly forever
@@ -783,7 +795,7 @@ PrintQuestInfo = function(questID, new)
 
 	local text
 	local questChange = (new == true and "accepted") or (new == false and "unflagged") or "completed";
-	local questRef = Search("questID", questID, "field")
+	local questRef = SearchForQuestData(questID)
 	if questRef then
 
 		local nyi = GetRelativeField(questRef, "u", 1)

@@ -77,6 +77,60 @@ local INSANE_IN_THE_MEMBRANE_OnTooltip = [[function(t, tooltipInfo)
 	end
 end]];
 root(ROOTS.Character, n(ACHIEVEMENTS, {
+	-- #if BEFORE 4.0.1
+	ach(4784, {	-- Emblematic [A]
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+		["races"] = ALLIANCE_ONLY,
+	}),
+	ach(4785, {	-- Emblematic [H]
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+		["races"] = HORDE_ONLY,
+	}),
+	ach(3838, {	-- Dungeon & Raid Emblem
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	ach(3839, {	-- 25 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	ach(3840, {	-- 50 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	ach(3841, {	-- 100 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	ach(3842, {	-- 250 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	ach(3843, {	-- 500 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	-- #endif
+	ach(3844, {	-- 1000 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	-- #if BEFORE 4.0.1
+	ach(3876, {	-- 1500 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	-- #endif
+	ach(4316, {	-- 2500 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	ach(5535, {	-- 1000 Valor Points
+		["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+	}),
+	ach(5536, {	-- 5000 Valor Points
+		["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+	}),
+	ach(5537, {	-- 25,000 Valor Points
+		["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+	}),
+	ach(5538, {	-- 50,000 Valor Points
+		["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+	}),
+	ach(6924, {	-- 100,000 Valor Points
+		["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
+	}),
 	ach(523, {		-- 5 Exalted Reputations
 		-- #if ANYCLASSIC
 		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],

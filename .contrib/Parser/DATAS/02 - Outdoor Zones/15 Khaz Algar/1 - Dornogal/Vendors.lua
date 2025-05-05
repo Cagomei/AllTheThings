@@ -420,6 +420,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(230937),	-- Enchanted Weathered Undermine Crest
 					i(230936),	-- Enchanted Runed Undermine Crest
 					i(230935),	-- Enchanted Gilded Undermine Crest
+					i(239146, {	-- Gilded Augmentation Matrix
+						["timeline"] = { ADDED_11_1_7 },
+					}),
+					i(239203, {	-- Runed Augmentation Matrix
+						["timeline"] = { ADDED_11_1_7 },
+					}),
 				},
 			}),
 			n(219226, {	-- Vaskarn

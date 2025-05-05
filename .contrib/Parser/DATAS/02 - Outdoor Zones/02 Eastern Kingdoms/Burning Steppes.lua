@@ -99,6 +99,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66520, {	-- Durin Darkhammer <Master Pet Tamer>
+					["coord"] = { 25.6, 47.6, BURNING_STEPPES },
+				}),
+			}),
 			n(QUESTS, {
 				q(28316, {	-- A Deal With a Dragon (A)
 					["providers"] = {	-- Accepting any quest from the NPC turns him into a mobileNPC

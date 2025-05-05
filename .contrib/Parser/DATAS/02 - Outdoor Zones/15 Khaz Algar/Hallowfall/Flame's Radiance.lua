@@ -5,6 +5,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 	m(HALLOWFALL, {
 		header(HEADERS.Faction, FACTION_FLAMES_RADIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
 			faction(FACTION_FLAMES_RADIANCE),
+			n(ACHIEVEMENTS, {
+				ach(41997),	-- Owner of a Radiant Heart
+			}),
 			f(TITLES, {
 				["g"] = bubbleDownRep(FACTION_FLAMES_RADIANCE, { -- Blizzard changed their mind on most of the titles I guess
 					{		-- RENOWN 1 --
@@ -65,6 +68,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(233290),	-- Sacred Templar's Tabard
 					}),
 					q(89397),	-- Flame's Radiance Stipend
+					------ Paragon ------
+					q(89515, {	-- Renowned with Flame's Radiance
+						["isRepeatable"] = true,
+						["g"] = {
+							i(239489),	-- Radiant Officer's Cache
+						},
+					}),
 				},
 			}))),
 			n(VENDORS, {

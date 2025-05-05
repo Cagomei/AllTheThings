@@ -43,6 +43,21 @@ root(ROOTS.Zones, {
 									["provider"] = { "i", 102146 },
 								}),
 							}),
+							petbattle(ach(8518, {	-- Master of the Master
+								crit(23620),	-- Blingtron 4000
+								crit(23610),	-- Wrathion
+								crit(23611),	-- Lorewalker Cho
+								crit(23616),	-- Chen Stormstout
+								crit(23619),	-- Wise Mari
+								crit(23607),	-- Shademaster Kiryn
+								crit(23617),	-- Sully "The Pickle" McLeary
+								crit(23618),	-- Taran Zhu
+								crit(23621),	-- Dr. Ion Goldbloom
+								crit(23612),	-- Xu-Fu, Cub of Xuen
+								crit(23615),	-- Chi-Chi, Hatchling of Chi-Ji
+								crit(23614),	-- Zao, Calfling of Niuzao
+								crit(23613),	-- Yu'la, Broodling of Yu'lon
+							})),
 							ach(8410),	-- The Celestial Tournament
 						}),
 						n(PET_BATTLE, {

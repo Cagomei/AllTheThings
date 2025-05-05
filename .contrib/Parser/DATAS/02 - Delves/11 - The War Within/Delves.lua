@@ -1001,6 +1001,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			i(235617), 	-- Lucky Goblin's Strapped Rockets
 			i(235615),	-- Rusty Gobjets
 		})),
+		filter(MISC, {
+			i(244465, {	-- Titan Disc Fragments
+				["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			}),
+		}),
 		n(BOUNTIFUL, bubbleDownFiltered({
 			["cost"] = {{"c", RESTORED_COFFER_KEY, 1}},
 		},FILTERFUNC_itemID,{
@@ -1472,6 +1477,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			i(234619, {	-- Ultimate Orange O-pocalypse (Curio buff item)
 				["timeline"] = { ADDED_11_1_0_SEASONSTART },
 			}),
+			i(234620, { ["timeline"] = { ADDED_11_1_0_SEASONSTART } }),	-- Perfectly Preserved Kaja'Classic Original Taste
 			--
 			i(228560),	-- Ancient Curio (QI!/QS!)
 			i(228581),	-- Ancient Curio (QI!/QS!)
@@ -1724,6 +1730,36 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["provider"] = { "i", 242919 },	-- Cracked Keystone
 			["timeline"] = { ADDED_11_1_5 },	-- TODO: REMOVED_11_2_0?
 		}),
+		-- Season 2 - Overload stuff
+		q(90969, {	-- Titan Consoles
+			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II (can also be picked up from journal)
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["coord"] = { 48.0, 43.4, DORNOGAL },
+		}),
+		q(90970, {	-- Titan Disc-Count
+			["sourceQuests"] = { 90969 },	-- Titan Consoles
+			["providers"] = {
+				{ "n", 210759 },	-- Overcharged Titan Console
+				{ "n", 235490 },	-- Overcharged Titan Console
+			},
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			--["coord"] = { any delve? },
+			["g"] = {
+				i(244466),	-- Dagran's Pouch of Fragments
+			},
+		}),
+		q(90971, {	-- Overcharged Console
+			["sourceQuests"] = { 90970 },	-- Titan Disc-Count
+			["providers"] = {
+				-- TODO: I'm not sure but it seems like there 2 unique console IDs per delve which will make there a lot of providers.
+				-- TODO: Check later on live?
+				{ "n", 210759 },	-- Overcharged Titan Console
+				{ "n", 235490 },	-- Overcharged Titan Console
+			},
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			--["coord"] = { any delve? },
+			--TODO: also quest id bugged in 60520 build
+		}),
 	}),
 	n(QUESTS, sharedData({
 		["provider"] = { "n", 206017 },	-- Brann Bronzebeard
@@ -1757,6 +1793,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		n(207482),	-- Invasive Sporecap
 		n(236895, {	-- Malfuctioning Pummeler
 			["timeline"] = { ADDED_11_1_0 },
+		}),
+		n(236838, {	-- Overcharged Bot
+			["timeline"] = { ADDED_11_1_7 },
 		}),
 		n(209721),	-- Secret Treasure
 		n(228030),	-- Sir Finley Mrgglton

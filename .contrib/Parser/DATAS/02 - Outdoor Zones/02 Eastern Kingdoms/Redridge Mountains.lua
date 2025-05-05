@@ -105,6 +105,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(65651, {	-- Lindsay <Master Pet Tamer>
+					["coord"] = { 33.2, 52.6, REDRIDGE_MOUNTAINS },
+				}),
+			}),
 			n(QUESTS, {
 				q(124, {	-- A Baying of Gnolls
 					["qg"] = 415,	-- Verner Osgood

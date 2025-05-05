@@ -13,8 +13,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 	})),
 	expansion(EXPANSION.CLASSIC, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-			ach(18765, {	-- Destined to be Legendary
-				["provider"] = { "i", 17193 },	-- Sulfuron Hammer
+			ach(18765, {	-- Destined to be Legendary (automated)
 				["timeline"] = { ADDED_10_1_7 },
 			}),
 			ach(17497, {	-- Renowned Armorsmith

@@ -18,23 +18,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				n(ACHIEVEMENTS, {
 					ach(41999),	-- Fighter of the Nightman
 					ach(41996),	-- I'm Doing My Part
-					ach(41997),	-- Owner of a Radiant Heart
 					ach(41998),	-- Turning the Venom Tide
 				}),
 				n(QUESTS, {
 					q(85005, {	-- A Radiant Call
-						--["sourceQuests"] = { xxx },	-- ??
 						["provider"] = { "n", 242126 },	-- Flame's Radiance Recruiter
 						["coord"] = { 45.9, 49.3, DORNOGAL },
-						["isBreadcrumb"] = true,	-- TODO: unsure
 					}),
 					q(89332, {	-- Boot Camp
-						["sourceQuests"] = { 85005 },	-- A Radiant Call (TODO: unsure)
 						["provider"] = { "n", 234774 },	-- Mylton Wyldbraun
 						["coord"] = { 28.3, 56.1, HALLOWFALL },
 					}),
 					q(89331, {	-- Flame Fortification
-						["sourceQuests"] = { 85005 },	-- A Radiant Call (TODO: unsure)
 						["provider"] = { "n", 234774 },	-- Mylton Wyldbraun
 						["coord"] = { 28.3, 56.1, HALLOWFALL },
 					}),
@@ -43,9 +38,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 234774 },	-- Mylton Wyldbraun
 						["coord"] = { 28.3, 56.1, HALLOWFALL },
 						["isWeekly"] = true,
-						["sym"] = {{"select","itemID",
-							239546,	-- Confiscated Cultist's Bag
-						}},
+						["g"] = {
+							i(239546, {	-- Confiscated Cultist's Bag
+								["sym"] = {{"fill"}},
+							}),
+						},
 				}, {
 					q(88945),	-- Radiant Incursion: Rak-Zakaz
 					q(88916),	-- Radiant Incursion: Sureki's End
@@ -53,6 +50,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["g"] = {
 							o(529289, {	-- Spore Sample
 								i(240215),	-- Fungal Sample (QI!)
+							}),
+							i(239546, {	-- Confiscated Cultist's Bag
+								["sym"] = {{"fill"}},
 							}),
 						},
 					}),
@@ -67,7 +67,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							}),
 						},
 					}),
-					q(91173),	-- The Flame Burns Eternal
+					q(91173, {	-- The Flame Burns Eternal
+						["g"] = {
+							i(239004, {	-- Radiant Service Satchel
+								i(RADIANT_EMBLEM),
+							}),
+						},
+					}),
 				})),
 				n(RARES, {
 					n(COMMON_BOSS_DROPS, {
@@ -356,7 +362,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						},
 					}),
 					i(237743, {	-- Arathi Soldier's Coffer (Uncommon) Only Green Cosmetics
-						["description"] = "Granted for achieving 33% during the Nightfall Event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe Event always starts on the hour.\n\nBest time to fill the bar is the 90seconds before the Boss spawns & the Boss itself also gives 42%.",
+						["description"] = "Granted for achieving 33% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
 						["groups"] = {
 							i(241019),	-- Arathi Camper's Knife (COSMETIC!)
 							i(241016),	-- Arathi Lancer's Polearm (COSMETIC!)
@@ -364,7 +370,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						},
 					}),
 					i(237759, {	-- Arathi Cleric's Chest (Rare) Only Weapons
-						["description"] = "Granted for achieving 66% during the Nightfall Event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe Event always starts on the hour.\n\nBest time to fill the bar is the 90seconds before the Boss spawns & the Boss itself also gives 42%.",
+						["description"] = "Granted for achieving 66% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
 						["groups"] = {
 							n(WEAPONS, {
 								i(237795), -- Arathi Abbot's Gavel
@@ -390,7 +396,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						},
 					}),
 					i(237760, {	-- Arathi Champion's Spoils (Epic)
-						["description"] = "Granted for achieving 100% during the Nightfall Event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe Event always starts on the hour.\n\nBest time to fill the bar is the 90seconds before the Boss spawns & the Boss itself also gives 42%.",
+						["description"] = "Granted for achieving 100% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
 						["sym"] = {	-- Arathi Cleric's Chest (Rare)
 							{"select","itemID",237759},{"pop"},
 							{"where","headerID",WEAPONS},
@@ -636,25 +642,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								i(238391),	-- Arathi Minister's Receptacle
 								i(237494),	-- Hallowed Tome of the Abbot
 							}),
-							--[[	-- No Weapons on Vendor
 							n(WEAPONS, {
+								i(237795),	-- Arathi Abbot's Gavel
+								i(237799),	-- Arathi Abbot's Greatstaff
+								i(237801),	-- Arathi Abbot's Implement
+								i(237803),	-- Arathi Abbot's Kris
+								i(237806),	-- Arathi Abbot's Wand
+								i(237802),	-- Arathi Cleric's Blunderbuss
+								i(237800),	-- Arathi Cleric's Rod
+								i(237793),	-- Arathi Crusader's Bulwark
+								i(237794),	-- Arathi Crusader's Greatsword
+								i(237792),	-- Arathi Crusader's Halberd
 								i(237791),	-- Arathi Zealot's Cleaver
+								i(237796),	-- Arathi Zealot's Cudgel
 								i(237797),	-- Arathi Zealot's Dagger
 								i(237798),	-- Arathi Zealot's Knife
-								i(237803),	-- Arathi Abbot's Kris
-								i(237802),	-- Arathi Cleric's Blunderbuss
 								i(237804),	-- Arathi Zealot's Shotgun
-								i(237795),	-- Arathi Abbot's Gavel
-								i(237796),	-- Arathi Zealot's Cudgel
-								i(237801),	-- Arathi Abbot's Implement
-								i(237792),	-- Arathi Crusader's Halberd
-								i(237793),	-- Arathi Crusader's Bulwark
-								i(237800),	-- Arathi Cleric's Rod
-								i(237799),	-- Arathi Abbot's Greatstaff
-								i(237794),	-- Arathi Crusader's Greatsword
-								i(237806),	-- Arathi Abbot's Wand
 								i(237805),	-- Arathi Zealot's Warglaive
-							}),--]]
+							}),
 						}),
 					}),
 				}),

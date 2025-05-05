@@ -6,27 +6,14 @@ root(ROOTS.Unsorted, {
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
 			filter(QUEST_ITEMS, {
-				i(228963),	-- Unfamiliar Emblem
 				i(228964),	-- Scarlet Signet Ring
-				i(229094),	-- Barrel of Tar
-				i(229095),	-- Stolen Torches
-				i(229361),	-- Xal'atath, Blade of the Black Empire
-				i(230000),	-- Ellie
 				i(231766),	-- Hammerfall Horn
-				i(231831),	-- Ve'nari's Parcel
 				i(231878),	-- Articles of Proof
 				i(231879),	-- Defias Bandana
 				i(231880),	-- Orange Bandana
 				i(231881),	-- Syndicate Emblem
 				i(231883),	-- Scarlet Crusade Tabard
 				i(231884),	-- Stromgarde Tabard
-				i(235345),	-- Familiar Emblem
-				i(235996),	-- Stolen Ironforge Supplies
-				i(235997),	-- Skins of Dwarven Stout
-				i(235998),	-- Packages of Blood Sausage
-				i(235999),	-- Bundle of Heavy Silk Bandages
-				i(236000),	-- Pack of Heavy Armor Kits
-				i(236001),	-- Cans of Loch Frenzy
 			}),
 			n(TIMEWALKING_HEADER, {
 				i(238740),	-- Distilled Knowledge of Timeways
@@ -143,14 +130,9 @@ root(ROOTS.Unsorted, {
 			}),
 			n(QUESTS, {
 				-- Arathor Questline
-				i(239135),	-- Hammerfall Tabard
 				i(239136),	-- Stromgarde Tabard
-				i(239137),	-- Lamplighter's Pauldrons
 			}),
 			n(PROFESSIONS, {
-				-- Aug Matrix for new gear track on crafted items
-				i(239146),	-- Gilded Augmentation Matrix
-				i(239203),	-- Runed Augmentation Matrix
 				-- Ins
 				i(243051),	-- Glyph of the Strix
 				i(243052),	-- Technique: Glyph of the Strix
@@ -164,8 +146,6 @@ root(ROOTS.Unsorted, {
 				i(245964),	-- Durable Information Securing Container [Leather]
 				i(245965),	-- Durable Information Securing Container [Mail]
 				i(245966),	-- Durable Information Securing Container [Plate]
-				i(244465),	-- Titan Disc Fragments
-				i(244466),	-- Dagran's Pouch of Fragments
 				i(244696),	-- Overcharged Chest
 				i(244899),	-- Miniature Titan Disc: Critical Chain
 				i(244900),	-- Miniature Titan Disc: Spark Burst
@@ -175,9 +155,6 @@ root(ROOTS.Unsorted, {
 				i(244905),	-- Miniature Titan Disc: Charged Crystal
 				-- Lorewalking
 				i(242386),	-- Lorewalker's Crate of Memorabilia
-				i(244843),	-- Lorewalker's Notes: The Ethereals
-				i(244846),	-- Lorewalker's Notes: Xal'atath, Blade of the Black Empire
-				i(244858),	-- Lorewalker's Notes: The Lich King
 				-- Misc
 				i(244848),	-- Severed Threads Commendation
 				i(245942),	-- Tidesage Shrine
@@ -639,17 +616,12 @@ root(ROOTS.Unsorted, {
 				i(245695),	-- Reins of the Moonlit Nightsaber
 				i(245936),	-- Unarmored Deathtusk Felboar
 			}),
-			filter(TOYS, {
-				-- Lorewalking?
-				i(244888),	-- Echo of the Xal'atath, Blade of the Black Empire
-				i(245567),	-- K'aresh Memory Crystal
-				i(245631),	-- Royal Visage
-			}),
 			filter(BATTLE_PETS, {
 				--- BFA TW?
 				i(245543),	-- Flotsam Harvester
 				i(245574),	-- Lil' Daz'ti
 			}),
+			-- #if AFTER 7.1.0.22908
 			n(GREEDY_EMISSARY_EVENT, {
 				i(245589),	-- Hellcaller Chest
 				i(245590),	-- Magma Elixir
@@ -696,6 +668,7 @@ root(ROOTS.Unsorted, {
 				i(245899),	-- Bat's Grand Charm
 				i(245924),	-- Mongoose's Grand Charm
 			}),
+			-- #endif
 		})),
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
 			n(SPECIAL, {	-- Horrific Revisited
@@ -712,26 +685,20 @@ root(ROOTS.Unsorted, {
 				i(236919),	-- Void Spike
 			}),
 			n(SPECIAL, {	-- Duos
-				i(238929),	-- Cloak of Whispering Shells
-				i(238930),	-- Scintillating Coral Band
-				i(238932),	-- Gauntlets of the Bold
+				-- Hellfire Ramprats (didnt make it)
 				i(238934),	-- Boots of the Darkwalker
 				i(238936),	-- Scale Leggings of the Skirmisher
 				i(238937),	-- Light-Touched Breastplate
-				i(238938),	-- Vest of the Curious Visitor
-				i(238939),	-- Missing Diplomat's Pauldrons
-				i(238940),	-- Defias Brotherhood Vest
-				i(238976),	-- Blinders of the Follower
-				i(238977),	-- Iron Will Girdle
-				i(238978),	-- Burden of Lost Humanity
-				i(238979),	-- Phantom Armor
+
+				-- Shadowfang Keeep
+				-- Unsure
 				i(238980),	-- Pendant of the Keep
+				-- Didnt make it
 				i(238981),	-- Gloves of the Uplifted Cup
 				i(238982),	-- Baron Silverlaine's Greaves
 				i(238983),	-- Boots of Lingering Sorrow
-				i(238988),	-- Earth Mantle Handwraps
-				i(238991),	-- Gloves of Distorted Time
-				i(238993),	-- Cracked Epoch Grasps
+
+				-- The Blood Furnace
 				i(239009),	-- Signet of Repose
 			}),
 			n(SPECIAL, {	-- Radiant

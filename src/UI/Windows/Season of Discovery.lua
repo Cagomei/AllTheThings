@@ -1,8 +1,9 @@
+local appName, app = ...;
+
 ---@diagnostic disable: deprecated
 if not (C_Seasons and C_Seasons.GetActiveSeason() == 2) or app.GameBuildVersion >= 20000 then return; end
 
 -- App locals
-local appName, app = ...;
 local tinsert = tinsert;
 
 -- Implementation

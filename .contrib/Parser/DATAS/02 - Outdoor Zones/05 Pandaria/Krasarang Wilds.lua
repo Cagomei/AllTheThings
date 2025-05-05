@@ -3048,6 +3048,14 @@ root(ROOTS.Zones, {
 					o(213407, {	-- Quan Tou Kuo the Two Fisted
 						["coord"] = { 81.4, 11.4, KRASARANG_WILDS },
 					}),
+					o(213750, {	-- Saurok Stone Tablet
+						["questID"] = 31408,
+						["coord"] = { 71.0, 9.0, KRASARANG_WILDS },
+						["description"] = "Located at the back of the cave, to the right of the junk pile.",
+						["g"] = {
+							i(86220),	-- Saurok Stone Tablet
+						},
+					}),
 					o(214403, {	-- Stack of Papers
 						["provider"] = { "i", 87798 },	-- Stack of Papers
 						["coord"] = { 52.16, 73.42, KRASARANG_WILDS },

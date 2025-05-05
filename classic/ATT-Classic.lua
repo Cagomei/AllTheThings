@@ -636,6 +636,16 @@ ResolveSymbolicLink = function(o)
                     local result = searchResults[k];
                     if result.criteriaID then tremove(searchResults, k); end
                 end
+			elseif cmd == "partial_achievement" then
+                -- Instruction to search the full database for an achievementID and persist the associated Criteria
+                local cache = app.SearchForField("achievementID", sym[2])
+				local crit
+				for i=1,#cache do
+					crit = cache[i]
+					if crit.criteriaID then
+						searchResults[#searchResults + 1] = crit
+					end
+				end
 			end
 		end
 
@@ -1188,7 +1198,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			local usedToBuy = app.CreateNPC(app.HeaderConstants.VENDORS);
 			if not usedToBuy.g then usedToBuy.g = {}; end
 			for i,o in ipairs(costResults) do
-				if o.key == "instanceID" or ((o.key == "difficultyID" or o.key == "mapID" or o.key == "headerID") and (o.parent and GetRelativeValue(o.parent, "instanceID"))) then
+				if o.key == "instanceID" or ((o.key == "difficultyID" or o.key == "mapID" or o.key == "headerID") and (o.parent and GetRelativeValue(o.parent, "instanceID")) and not o[o.key] == app.HeaderConstants.REWARDS) then
 					if app.Settings.Collectibles.Quests then
 						local d = CloneClassInstance(o);
 						d.sourceParent = o.parent;
@@ -2331,13 +2341,19 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 			if achievementID then
 				local criteriaID = t.criteriaID;
 				if criteriaID then
-					local name = t.GetInfo(achievementID, criteriaID, true) or app.GetNameFromProviders(t);
+					local name = t.GetInfo(achievementID, criteriaID, true);
+					if not IsRetrieving(name) then return name; end
+					name = app.GetNameFromProviders(t);
 					if not IsRetrieving(name) then return name; end
 					local sourceQuests = t.sourceQuests;
 					if sourceQuests then
 						for k,id in ipairs(sourceQuests) do
 							return app.GetQuestName(id);
 						end
+					end
+					local parent = t.parent;
+					if parent and parent.npcID then
+						return parent.text;
 					end
 					return "achievementID:" .. achievementID .. ":" .. criteriaID;
 				end

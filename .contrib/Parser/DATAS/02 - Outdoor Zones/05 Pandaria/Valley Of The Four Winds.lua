@@ -2381,6 +2381,13 @@ root(ROOTS.Zones, {
 					o(213460, { -- A Most Famous Bill of Sale
 						["coord"] = { 55.0, 47.3, VALLEY_OF_THE_FOUR_WINDS },
 					}),
+					o(214340, {	-- Boat-Building Instructions
+						["questID"] = 31869,
+						["coord"] = { 92.2, 39.2, VALLEY_OF_THE_FOUR_WINDS },
+						["g"] = {
+							i(87524),	-- Boat-Building Instructions
+						},
+					}),
 					o(213649, {	-- Cache of Pilfered Goods
 						["coord"] = { 43.61, 37.48, VALLEY_OF_THE_FOUR_WINDS },
 						["questID"] = 31406,
@@ -2460,6 +2467,14 @@ root(ROOTS.Zones, {
 					}),
 					o(213461, {	-- The Wandering Widow
 						["coord"] = { 34.6, 64.0, VALLEY_OF_THE_FOUR_WINDS },
+					}),
+					o(213650, {	-- Virmen Treasure Cache
+						["description"] = "Has a respawn timer of approx 7 minutes.",
+						["questID"] = 31405,
+						["coords"] = {
+							{ 23.2, 30.8, VALLEY_OF_THE_FOUR_WINDS },
+							{ 23.8, 28.4, VALLEY_OF_THE_FOUR_WINDS },
+						},
 					}),
 					o(215780, {	-- Waterspeakers
 						["coord"] = { 61.52, 34.88, VALLEY_OF_THE_FOUR_WINDS },

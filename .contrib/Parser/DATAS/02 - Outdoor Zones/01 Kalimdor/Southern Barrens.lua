@@ -150,6 +150,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66422, {	-- Cassandra Kaboom <Master Pet Tamer>
+					["coord"] = { 39.6, 79.2, SOUTHERN_BARRENS },
+				}),
+			}),
 			n(QUESTS, {
 				q(1153, {	-- A New Ore Sample
 					["qg"] = 3433,	-- Tatternack Steelforge

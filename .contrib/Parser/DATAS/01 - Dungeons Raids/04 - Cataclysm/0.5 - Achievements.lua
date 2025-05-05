@@ -4,18 +4,6 @@
 
 root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
 	n(ACHIEVEMENTS, {
-		ach(5535, {	-- 1000 Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-		}),
-		ach(5536, {	-- 5000 Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-		}),
-		ach(5537, {	-- 25,000 Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-		}),
-		ach(5538, {	-- 50,000 Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-		}),
 		ach(4844, {	-- Cataclysm Dungeon Hero
 			["sym"] = {{"meta_achievement",
 				5060,	-- Heroic: Blackrock Caverns
@@ -48,7 +36,6 @@ root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA
 				title(185),	-- <Name>, Defender of a Shattered World
 			},
 		}),
-		ach(11754, {["timeline"] = {ADDED_7_2_0}}),	-- Glamour of Twilight (The Bastion of Twilight and Blackwing Descent)
 		ach(4845, {	-- Glory of the Cataclysm Hero
 			["sym"] = {{"meta_achievement",
 				4844,	-- Cataclysm Dungeon Hero

@@ -177,6 +177,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66135, {	-- Dagra the Fierce <Master Pet Tamer>
+					["coord"] = { 58.6, 53.0, NORTHERN_BARRENS },
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(6651, {	-- Broken Wine Bottle

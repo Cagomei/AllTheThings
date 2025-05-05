@@ -2205,11 +2205,31 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					e(99, {	-- Lord Walden
 						["creatureID"] = 46963,
 						["groups"] = {
-							i(63455),	-- Blinders of the Follower
-							i(63452),	-- Burden of Lost Humanity
-							i(63450),	-- Phantom Armor
+							i(63455, {	-- Blinders of the Follower
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238976, {	-- Blinders of the Follower
+								["timeline"] = { ADDED_11_1_5 },
+							}),
+							i(63452, {	-- Burden of Lost Humanity
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238978, {	-- Burden of Lost Humanity
+								["timeline"] = { ADDED_11_1_5 },
+							}),
+							i(63450, {	-- Phantom Armor
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238979, {	-- Phantom Armor
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
 							i(63454),	-- Double Dealing Bracers
-							i(63453),	-- Iron Will Girdle
+							i(63453, {	-- Iron Will Girdle
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238977, {	-- Iron Will Girdle
+								["timeline"] = { ADDED_11_1_5 },
+							}),
 						},
 					}),
 					e(100, {	-- Lord Godfrey

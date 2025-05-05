@@ -446,6 +446,8 @@ local L = setmetatable({
 		["25 Player (Heroic)"] = "25M (H)",
 		[BATTLEGROUNDS] = "BGs",
 		-- Dungeon & Raid Names
+		-- Classic
+		["Scarlet Monastery of Old"] = "SM: Old",
 		-- Cata
 		["Baleroc, the Gatekeeper"] = "Baleroc",
 		["The Conclave of Wind"] = "Conclave",

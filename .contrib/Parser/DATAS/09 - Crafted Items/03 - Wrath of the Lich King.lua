@@ -679,6 +679,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		i(44703, {	-- Dark Herring
 			["maps"] = { HOWLING_FJORD },
 			["provider"] = { "o", 192049 },	-- Fangtooth Herring School
+			["description"] = 
+				-- #if BEFORE LEGION
+				"Keep this in your bank until Transmog is added, otherwise you'll need to obtain it again. Fair warning!",
+				-- #elseif AFTER TWW
+				"Keep this in your bank until the appearance can be learned again, otherwise you'll need to obtain it again. Fair warning!",
+				-- #else
+				nil,
+				-- #endif
+				-- #if AFTER TWW
+				["collectible"] = false,  -- remove when Blizzard fix fish collection
+				-- #endif
 		}),
 		i(44505, {	-- Dustbringer
 			["description"] = "Can be caught in schools or open water in Northrend.",

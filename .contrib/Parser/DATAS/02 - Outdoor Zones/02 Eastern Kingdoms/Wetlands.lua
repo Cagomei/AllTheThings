@@ -1905,9 +1905,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6198, {	-- Jurassic Wristguards
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
+						-- #if BEFORE 3.3.0
 						i(48124, {	-- Razormaw Hatchling (PET!)
-							["timeline"] = { ADDED_3_2_0, REMOVED_3_3_0 },
+							["timeline"] = { ADDED_3_1_0, REMOVED_3_3_0 },
 						}),
+						-- #endif
 					},
 				}),
 				n(44225, {	-- Rufus Darkshot

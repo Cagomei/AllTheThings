@@ -185,6 +185,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
+			petbattles({
+				n(66372, {	-- Merda Stronghoof <Master Pet Tamer>
+					["coord"] = { 57.2, 45.8, DESOLACE },
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					o(180685),	-- Waterlogged Wreckage

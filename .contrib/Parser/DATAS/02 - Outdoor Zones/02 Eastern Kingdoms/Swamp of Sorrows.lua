@@ -94,6 +94,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66518, {	-- Everessa <Master Pet Tamer>
+					["coord"] = { 76.6, 41.6, SWAMP_OF_SORROWS },
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(1386, {	-- Rogvar <Alchemy Trainer>

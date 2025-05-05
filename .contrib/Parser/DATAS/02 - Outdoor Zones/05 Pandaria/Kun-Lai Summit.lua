@@ -1099,19 +1099,6 @@ root(ROOTS.Zones, {
 							i(80308),	-- Fire Lotus Incense (QI!)
 						},
 					}),
-					q(31030, {	-- Into the Monastery
-						["coord"] = { 36.6, 47.7, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 62227 },	-- Ban Bearheart
-						["sourceQuest"] = 30752,	-- Unbelievable!
-						["isBreadcrumb"] = true,
-					}),
-					q(31031, {	-- Into the Monastery
-						["coord"] = { 35.3, 49.5, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 62227 },	-- Ban Bearheart
-						["description"] = "This version is available if you abandon the other version.",
-						["sourceQuest"] = 30752,	-- Unbelievable!
-						["isBreadcrumb"] = true,
-					}),
 					q(30944, {	-- It Takes A Village
 						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 61371 },	-- Lorewalker Cho
@@ -2269,6 +2256,18 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(TREASURES, {
+					o(214438, {	-- Ancient Mogu Tablet
+						["description"] = "Entrance is at |cFFFFD70063.94 49.84|r.",
+						["questID"] = 31420,
+						["coord"] = { 64.2, 45.2, KUN_LAI_SUMMIT },
+						["g"] = {
+							i(86471),	-- Ancient Mogu Tablet
+						},
+					}),
+					o(213769, {	-- Hozen Treasure Cache
+						["questID"] = 31414,	-- Hozen Treasure Cache
+						["coord"] = { 49.5, 59.4, KUN_LAI_SUMMIT },
+					}),
 					o(213768, {	-- Hozen Warrior Spear
 						["description"] = "Cave entrance is at |cFFFFD70052.8 71.3|r, go down and to the section with water, it is in a rock. Might take some time to spawn.",
 						["questID"] = 31413,
@@ -2290,6 +2289,10 @@ root(ROOTS.Zones, {
 							i(86125),	-- Kafa Press
 						},
 					}),
+					o(213774, {	-- Lost Adventurer's Belongings
+						["questID"] = 31418,	-- Lost Adventurer's Belongings
+						["coord"] = { 36.7, 79.8, KUN_LAI_SUMMIT },
+					}),
 					o(214407, {	-- Mo-Mo's Treasure Chest
 						["coord"] = { 47.8, 73.5, KUN_LAI_SUMMIT },
 						["description"] = "Inside Mo-Mo's Cave",
@@ -2297,6 +2300,13 @@ root(ROOTS.Zones, {
 					}),
 					o(213438, {	-- Ren Yun the Blind
 						["coord"] = { 44.7, 52.5, KUN_LAI_SUMMIT },
+					}),
+					o(213793, {	-- Rikktik's Tiny Chest
+						["questID"] = 31419,
+						["coord"] = { 52.5, 51.5, KUN_LAI_SUMMIT },
+						["g"] = {
+							i(86430),	-- Rikktik's Tiny Chest
+						},
 					}),
 					o(215783, {	-- Role Call
 						["coord"] = { 74.5, 83.5, KUN_LAI_SUMMIT },
@@ -2335,11 +2345,30 @@ root(ROOTS.Zones, {
 							i(88723),	-- Sturdy Yaungol Spear
 						},
 					}),
+					o(213771, {	-- Statue of Xuen
+						["questID"] = 31416,	-- Statue of Xuen
+						["coord"] = { 72.0, 33.9, KUN_LAI_SUMMIT },
+						["g"] = {
+							i(86422),	-- Statue of Xuen
+						},
+					}),
+					o(213770, {	-- Stolen Sprite Treasure
+						["description"] = "Entrance is at |cFFFFD70059.5 52.9|r.",
+						["questID"] = 31415,	-- Stolen Sprite Treasure
+						["coord"] = { 41.6, 44.1, 380 },	-- Howlingwind Cavern
+					}),
 					o(213765, {	-- Tablet of Ren Yun
 						["coord"] = { 44.7, 52.5, KUN_LAI_SUMMIT },
 						["questID"] = 31417,	-- FLAG - Tablet of Ren Yun
 						["g"] = {
 							i(86393),	-- Tablet of Ren Yun (RECIPE!)
+						},
+					}),
+					o(213782, {	-- Terracotta Head
+						["questID"] = 31422,
+						["coord"] = { 59.2, 73.0, KUN_LAI_SUMMIT },
+						["g"] = {
+							i(86427),	-- Terracotta Head
 						},
 					}),
 					o(213328, {	-- The Defiant

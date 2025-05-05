@@ -334,7 +334,6 @@ i(181248);	-- Ancient Sinstone
 i(184227);	-- Angelic Feather
 i(184563);	-- Anima Condenser
 i(181540);	-- Animaflower Bud
-i(180485);	-- Ansel's Lucky Violin
 i(181722);	-- Antiquated Verdigris Coin
 i(181477);	-- Ardendew Pearl
 i(182122);	-- Ardenwood Vermouth
@@ -407,7 +406,6 @@ i(184372);	-- Charred Dreadplate
 i(179276);	-- Chimaera Tripe Soup
 i(181382);	-- Chime of Eternity
 i(183918);	-- Chipped Serving Bowl
-i(180486);	-- Chiu's Lute
 i(184766);	-- Chronicles of the Paragons
 i(179022);	-- Clearleaf Cabbage
 i(179298);	-- Cloth Parisol Strips
@@ -710,7 +708,6 @@ i(179166);	-- Night Harvest Rolls
 i(180508);	-- Night Lily's Bell
 i(176086);	-- Nightmare Silt
 i(181547);	-- Noble's Draught
-i(180484);	-- Noko's Flute
 i(175960);	-- Notched Bone
 i(181642);	-- Novice Principles of Plaguistry
 i(180981);	-- Novice's Large Satchel

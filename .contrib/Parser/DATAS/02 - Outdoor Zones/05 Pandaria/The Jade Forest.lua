@@ -3120,6 +3120,13 @@ root(ROOTS.Zones, {
 							i(85777),	-- Ancient Pandaren Mining Pick
 						},
 					}),
+					o(213366, {	-- Ancient Pandaren Tea Pot
+						["questID"] = 31400,
+						["coord"] = { 26.22, 32.35, THE_JADE_FOREST },
+						["g"] = {
+							i(85780),	-- Ancient Pandaren Tea Pot
+						},
+					}),
 					o(214339, {	-- Chest of Supplies
 						["coord"] = { 24.6, 53.2, THE_JADE_FOREST },
 						["questID"] = 31864, -- Chest of Supplies
@@ -3147,6 +3154,14 @@ root(ROOTS.Zones, {
 							i(86199),	-- Jade-Infused Blade
 						},
 					}),
+					o(213368, {	-- Lucky Pandaren Coin
+						["questID"] = 31401,
+						["description"] = "Located in the wishing fountain.",
+						["coord"] = { 31.96, 27.76, THE_JADE_FOREST },
+						["g"] = {
+							i(85781),	-- Lucky Pandaren Coin
+						},
+					}),
 					o(213363, {	-- Wodin's Mantid Shanker
 						["coord"] = { 39.41, 7.23, THE_JADE_FOREST },
 						["questID"] = 31397,
@@ -3158,14 +3173,26 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.3, 80.6, THE_JADE_FOREST },
 						["questID"] = 31865, -- Offering of Remembrance
 					}),
-					o(214337, {	-- Stash of Gems
-						["coord"] = { 62.4, 27.5, THE_JADE_FOREST },
-						["description"] = "Located in a cave.",
-						["questID"] = 31866, -- Stash of Gems
+					o(213748, {	-- Pandaren Ritual Stone
+						["questID"] = 31404,
+						["coord"] = { 23.49, 35.05, THE_JADE_FOREST },
+						["g"] = {
+							i(86216),	-- Pandaren Ritual Stone
+						},
+					}),
+					o(213362, {	-- Ship's Locker
+						["questID"] = 31396, -- Ship's Locker
+						["description"] = "Located underwater in a boat.",
+						["coord"] = { 51.28, 100.54, THE_JADE_FOREST },	-- Can't use Uncharted Sea MapID, plots the point incorrectly.
 					}),
 					o(214379),	-- Shrine of Fellowship [TODO]
 					o(213333, {	-- Spirit Binders
 						["coord"] = { 42.2, 17.4, THE_JADE_FOREST },
+					}),
+					o(214337, {	-- Stash of Gems
+						["coord"] = { 62.4, 27.5, THE_JADE_FOREST },
+						["description"] = "Located in a cave.",
+						["questID"] = 31866, -- Stash of Gems
 					}),
 					o(215799, {	-- The Emperor's Burden - Part 1
 						["coord"] = { 47.0, 45.1, THE_JADE_FOREST },

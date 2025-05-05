@@ -276,7 +276,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			-----------------------------------------------------------------------------------------------------------------------------
 			-- CRIEVE TODO: After I add the vendor data for Protocol Twilight, this section can likely be excluded for Cataclysm Classic.
 			-----------------------------------------------------------------------------------------------------------------------------
-			d(DIFFICULTY.RAID.FINDER, {
+			d(DIFFICULTY.LEGACY_RAID.FINDER, {
 				-- #if AFTER 6.0.1.18322
 				["crs"] = { 80675 },	-- Auridormi <Raid Finder Guardian>
 				["coord"] = { 63.0, 27.6, CAVERNS_OF_TIME },

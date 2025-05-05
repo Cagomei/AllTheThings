@@ -98,6 +98,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(65655, {	-- Eric Davidson <Master Pet Tamer>
+					["coord"] = { 19.8, 44.8, DUSKWOOD },
+				}),
+			}),
 			-- #if SEASON_OF_DISCOVERY
 			spell(921, {	-- Pickpocketing
 				["classes"] = { ROGUE },

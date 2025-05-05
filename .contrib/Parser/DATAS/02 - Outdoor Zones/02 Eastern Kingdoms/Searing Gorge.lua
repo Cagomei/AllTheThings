@@ -308,6 +308,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66515, {	-- Kortas Darkhammer <Master Pet Tamer>
+					["coord"] = { 35.4, 27.8, SEARING_GORGE },
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(LEATHERWORKING, {
 					n(7868, {	-- Sarah Tanner <Master Elemental Leatherworker>

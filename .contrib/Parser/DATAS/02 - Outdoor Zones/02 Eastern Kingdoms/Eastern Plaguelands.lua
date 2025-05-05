@@ -959,6 +959,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 			}),
+			petbattles({
+				n(66512, {	-- Deiza Plaguehorn <Master Pet Tamer>
+					["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },
+				}),
+			}),
 			-- #if AFTER CATA
 			n(PROFESSIONS, {
 				prof(FISHING, {

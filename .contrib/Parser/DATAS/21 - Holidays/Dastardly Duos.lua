@@ -190,7 +190,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						--- Gear
 						--there are list only with new (unsorted) items
 						i(238984),	-- Baroness Silverlaine's Locket
-						i(238992),	-- Mobius Band
 						i(239008),	-- Moonchild Leggings
 						i(238990),	-- Necklace of the Chrono-Lord
 						i(238989),	-- Steam-Hinge Chain of Valor

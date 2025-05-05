@@ -1940,6 +1940,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
+			petbattles({
+				n(66126, {	-- Zunta <Aspiring Pet Tamer>
+					["coord"] = { 43.8, 28.8, DUROTAR },
+				}),
+			}),
 			-- #if SEASON_OF_DISCOVERY
 			spell(921, {	-- Pickpocketing
 				["classes"] = { ROGUE },

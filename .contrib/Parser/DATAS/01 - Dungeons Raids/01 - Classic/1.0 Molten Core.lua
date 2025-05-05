@@ -289,7 +289,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #else
 						"This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
 						-- #endif
-					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
+					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN_LEVEL3 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["lvl"] = 55,
 					["groups"] = {

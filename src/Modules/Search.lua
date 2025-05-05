@@ -69,12 +69,12 @@ local KeyMaps = setmetatable({
 	["journal:1"] = "encounterID",
 	i = "modItemID",
 	item = "modItemID",
-	itemid = "modItemID",
+	m = "spellID",
 	mount = "spellID",
-	mountid = "spellID",
+	mm = "itemID",
+	mountmod = "itemID",
 	n = "creatureID",
 	npc = "creatureID",
-	npcid = "creatureID",
 	o = "objectID",
 	object = "objectID",
 	r = "spellID",
@@ -87,7 +87,7 @@ local KeyMaps = setmetatable({
 	talent = "spellID",
 	q = "questID",
 	quest = "questID",
-}, { __index = function(t,key) return key:gsub("id", "ID") end})
+}, { __index = function(t,key) return key.."ID" end})
 
 local function SearchByItemLink(link)
 	-- Parse the link and get the itemID and bonus ids.
@@ -154,7 +154,7 @@ end
 local function SearchByKindLink(link)
 	-- app.PrintDebug("SearchByKindLink",link)
 	local kind, id, id2, id3 = (":"):split(link)
-	kind = kind:lower()
+	kind = kind:lower():gsub("id", "")
 	if id then id = tonumber(id) end
 	if not id or not kind then
 		-- can't search for nothing!
@@ -167,8 +167,8 @@ local function SearchByKindLink(link)
 		id = tonumber(id)
 	end
 	--print(link:gsub("|c", "c"):gsub("|h", "h"));
-	-- app.PrintDebug("SFL",itemString,kind,">",KeyMaps[kind],id,id2,id3)
-	kind = (KeyMaps[kind].."ID"):gsub("IDID", "ID")
+	-- app.PrintDebug("SFL",kind,">",KeyMaps[kind],id,id2,id3)
+	kind = KeyMaps[kind]
 	if kind == "modItemID" then
 		if not id2 and not id3 then
 			id, id2, id3 = GetItemIDAndModID(id)

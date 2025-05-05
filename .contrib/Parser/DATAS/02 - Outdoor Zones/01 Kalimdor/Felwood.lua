@@ -132,6 +132,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
+			petbattles({
+				n(66442, {	-- Zoltan <Master Pet Tamer>
+					["coord"] = { 40.0, 56.6, FELWOOD },
+				}),
+			}),
 			n(QUESTS, {
 				q(28340, {	-- A Bomb Deal
 					["qg"] = 48333,	-- Foreman Pikwik

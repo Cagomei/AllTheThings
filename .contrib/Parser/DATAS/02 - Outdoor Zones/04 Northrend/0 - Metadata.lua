@@ -9,77 +9,7 @@ root(ROOTS.Zones, {
 		["timeline"] = { ADDED_3_0_2 },	-- NOTE: This is the base patch for all of the content on this continent and does not need to be added to everything within it.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(2257, {	-- Frostbitten
-					crit(8100, {	-- Loque'nahak (Sholazar Basin)
-						["_npcs"] = { 32517 },
-					}),
-					crit(8101, {	-- High Thane Jorfus (Icecrown)
-						["_npcs"] = { 32501 },
-					}),
-					crit(8102, {	-- Hildana Deathstealer (Icecrown)
-						["_npcs"] = { 32495 },
-					}),
-					crit(8103, {	-- Old Crystalbark (Borean Tundra)
-						["_npcs"] = { 32357 },
-					}),
-					crit(8104, {	-- Fumblub Gearwind (Borean Tundra)
-						["_npcs"] = { 32358 },
-					}),
-					crit(8105, {	-- Icehorn (Borean Tundra)
-						["_npcs"] = { 32361 },
-					}),
-					crit(8106, {	-- Perobas the Bloodthirster (Howling Fjord)
-						["_npcs"] = { 32377 },
-					}),
-					crit(8107, {	-- Vigdis the War Maiden (Howling Fjord)
-						["_npcs"] = { 32386 },
-					}),
-					crit(8108, {	-- King Ping (Howling Fjord)
-						["_npcs"] = { 32398 },
-					}),
-					crit(8109, {	-- Tukemuth (Dragonblight)
-						["_npcs"] = { 32400 },
-					}),
-					crit(8110, {	-- Crazed Indu'le Survivor (Dragonblight)
-						["_npcs"] = { 32409 },
-					}),
-					crit(8111, {	-- Scarlet Highlord Daion (Dragonblight)
-						["_npcs"] = { 32417 },
-					}),
-					crit(8112, {	-- Grocklar (Grizzly Hills)
-						["_npcs"] = { 32422 },
-					}),
-					crit(8113, {	-- Seething Hate (Grizzly Hills)
-						["_npcs"] = { 32429 },
-					}),
-					crit(8114, {	-- Syreian the Bonecarver (Grizzly Hills)
-						["_npcs"] = { 32438 },
-					}),
-					crit(8115, {	-- Zul'drak Sentinel (Zul'Drak)
-						["_npcs"] = { 32447 },
-					}),
-					crit(8116, {	-- Griegen (Zul'Drak)
-						["_npcs"] = { 32471 },
-					}),
-					crit(8117, {	-- Terror Spinner (Zul'Drak and Storm Peaks)
-						["_npcs"] = { 32475 },
-					}),
-					crit(8118, {	-- Aotona (Sholazar Basin)
-						["_npcs"] = { 32481 },
-					}),
-					crit(8119, {	-- King Krush (Sholazar Basin)
-						["_npcs"] = { 32485 },
-					}),
-					crit(8120, {	-- Vyragosa (The Storm Peaks)
-						["_npcs"] = { 32630 },
-					}),
-					crit(8121, {	-- Dirkee (The Storm Peaks)
-						["_npcs"] = { 32500 },
-					}),
-					crit(8122, {	-- Putridus the Ancient (Icecrown)
-						["_npcs"] = { 32487 },
-					}),
-				}),
+				ach(2257),	-- Frostbitten
 				applyclassicphase(WRATH_PHASE_ONE, ach(41, {	-- Loremaster of Northrend (A)
 					-- #if AFTER WRATH
 					["sym"] = { {"meta_achievement",
@@ -98,6 +28,7 @@ root(ROOTS.Zones, {
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				})),
+				-- #if BEFORE 5.0.4
 				applyclassicphase(WRATH_PHASE_ONE, ach(1360, {	-- Loremaster of Northrend (H)
 					-- #if AFTER WRATH
 					["sym"] = { {"meta_achievement", 1358, 1356, 38, 1357, 1359, 39, 36, 40 } },
@@ -109,13 +40,9 @@ root(ROOTS.Zones, {
 					["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				})),
+				-- #endif
 				ach(2256, {	-- Northern Exposure
-					["sym"] =
-					-- #IF ANYCLASSIC
-						{{"select","achievementID",2257},{"pop"}},	-- Frostbitten Criteria
-					-- #ELSE
-						{{"partial_achievement",2257}},	-- Frostbitten
-					-- #ENDIF
+					["sym"] = {{"partial_achievement",2257}},	-- Frostbitten
 				}),
 				applyclassicphase(WRATH_PHASE_ONE, ach(45, {	-- Northrend Explorer [7.0.3] / Explore Northrend
 					-- Meta Achievement
@@ -180,13 +107,9 @@ root(ROOTS.Zones, {
 					crit(21484),	-- The Storm Peaks
 					crit(21485),	-- Zul'Drak
 				}))),
-				petbattle(ach(6605, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Taming Northrend
-					crit(21848),	-- Beegle Blastfuse [Howling Fjord]
-					crit(21849),	-- Nearly Headless Jacob [Crystalsong Forest]
-					crit(21850),	-- Okrut Dragonwaste [Dragonblight]
-					crit(21851),	-- Gutretch [Zul'Drak]
-					crit(21852),	-- Major Payne [Icecrown]
-				}))),
+				petbattle(ach(6605, {	-- Taming Northrend
+					["timeline"] = { ADDED_5_0_4 },
+				})),
 				ach(2557, {	-- To All The Squirrels Who Shared My Life
 					-- #if ANYCLASSIC
 					crit(9299, {	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)

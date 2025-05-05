@@ -545,7 +545,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LAND
 	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
+			i(80433, {	-- Blood Spirit
+				["description"] = "Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of the Eternal Spring",
+			}),
 			i(74247),	-- Ethereal Shard
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94289, {	-- Haunting Spirit
+				["description"] = "Can be obtained by disenchanting epics from Throne of Thunder",
+				["timeline"] = { ADDED_5_2_0 },
+			})),
 			i(74250),	-- Mysterious Essence
 			i(74248),	-- Sha Crystal
 			i(105718, {["timeline"] = {ADDED_5_4_0}}),	-- Sha Crystal Fragment

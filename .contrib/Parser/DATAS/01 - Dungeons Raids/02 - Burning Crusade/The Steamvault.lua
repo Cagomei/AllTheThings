@@ -145,7 +145,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27787),	-- Chestguard of No Remorse (7.3.5 - Moved to Mekgineer Steamrigger)
 						-- #endif
 						i(27783),	-- Moonrage Girdle
-						i(27784),	-- Scintillating Coral Band
+						i(27784, {	-- Scintillating Coral Band
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
+						i(238930, {	-- Scintillating Coral Band
+							["timeline"] = { ADDED_11_1_5 },
+						}),
 						i(29673, {	-- Pattern: Frost Armor Kit (RECIPE!)
 							["timeline"] = { REMOVED_5_0_4 },
 						}),

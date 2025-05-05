@@ -147,6 +147,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66436, {	-- Grazzle the Great <Master Pet Tamer>
+					["coord"] = { 53.8, 74.8, DUSTWALLOW_MARSH },
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(FIRST_AID, {
 					n(12939, {	-- Doctor Gustaf VanHowzen <Trauma Surgeon>

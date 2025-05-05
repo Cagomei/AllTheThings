@@ -518,6 +518,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				}),
 				i(44802, {	-- Borrowed Egg Basket
 					["timeline"] = { ADDED_3_1_0 },
+					["ignoreSource"] = true,
 				}),
 				i(188698, {	-- Eagger Basket (TOY!)
 					["timeline"] = { ADDED_9_1_5 },

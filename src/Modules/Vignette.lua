@@ -123,7 +123,6 @@ setmetatable(ActiveVignettes, {
 });
 
 -- Event Handling
-local CachedVignetteInfo = {};
 local VignetteSearchTypes = setmetatable({
 	Creature = "npc",
 	GameObject = "object",
@@ -134,41 +133,47 @@ local VignetteSearchTypes = setmetatable({
 		return "npc";
 	end
 });
-local function ClearVignette(guid)
-	if guid then
-		local vignetteInfo = CachedVignetteInfo[guid];
-		if vignetteInfo then
-			if ActiveWaypointGUID == guid and SettingsCache.ClearWaypoints then
-				C_Map.ClearUserWaypoint();
-				ActiveWaypointGUID = nil;
-			end
-			CachedVignetteInfo[guid] = nil;
-			local searchType, id = vignetteInfo.SearchType, vignetteInfo.ID;
-			if searchType and id then
-				ActiveVignettes[searchType][id] = nil;
-				-- app.PrintDebug("Vignette.Clear",searchType,id,app:RawSearchLink(searchType,id));
+local CachedVignetteInfo = setmetatable({}, {
+	__index = function(t, guid)
+		local vignetteInfo = C_VignetteInfo_GetVignetteInfo(guid)
+		if vignetteInfo and not vignetteInfo.isDead and vignetteInfo.objectGUID then
+			local type, _, _, _, _, id, _ = ("-"):split(vignetteInfo.objectGUID)
+			id = id and tonumber(id)
+			if id then
+				local searchType = VignetteSearchTypes[type]
+				if SettingsCache[searchType] then
+					vignetteInfo.SearchType = searchType
+					vignetteInfo.ID = id
+					-- app.PrintDebug("CachedVignetteInfo",searchType,id,guid)
+					rawset(t, guid, vignetteInfo)
+					return vignetteInfo
+				end
 			end
 		end
+		return false
+	end,
+})
+local function ClearVignette(guid)
+	if not guid then return end
+
+	local vignetteInfo = CachedVignetteInfo[guid]
+	if not vignetteInfo then return end
+
+	-- app.PrintDebug("Vignette.Clear",vignetteInfo.SearchType,vignetteInfo.ID,guid);
+	ActiveVignettes[vignetteInfo.SearchType][vignetteInfo.ID] = nil
+	CachedVignetteInfo[guid] = nil
+	if ActiveWaypointGUID == guid and SettingsCache.ClearWaypoints then
+		C_Map.ClearUserWaypoint()
+		ActiveWaypointGUID = nil
 	end
 end
 local function UpdateVignette(guid)
-	if guid then
-		local vignetteInfo = C_VignetteInfo_GetVignetteInfo(guid);
-		if vignetteInfo and not vignetteInfo.isDead and vignetteInfo.objectGUID then
-			local type, _, _, _, _, id, _ = ("-"):split(vignetteInfo.objectGUID);
-			id = id and tonumber(id);
-			if id then
-				local searchType = VignetteSearchTypes[type];
-				if SettingsCache[searchType] then
-					vignetteInfo.SearchType = searchType;
-					vignetteInfo.ID = id;
-					CachedVignetteInfo[guid] = vignetteInfo;
-					ActiveVignettes[searchType][id] = vignetteInfo;
-				end
-			end
-		else
-			ClearVignette(guid);
-		end
+	if not guid then return end
+
+	local vignetteInfo = CachedVignetteInfo[guid]
+	if vignetteInfo then
+		-- app.PrintDebug("Vignette.Update",vignetteInfo.SearchType,vignetteInfo.ID,guid);
+		ActiveVignettes[vignetteInfo.SearchType][vignetteInfo.ID] = vignetteInfo
 	end
 end
 app.AddEventRegistration("VIGNETTE_MINIMAP_UPDATED", UpdateVignette);

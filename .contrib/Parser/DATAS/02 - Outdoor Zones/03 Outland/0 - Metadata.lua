@@ -9,68 +9,9 @@ root(ROOTS.Zones, {
 		["timeline"] = { ADDED_2_0_1 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(1312, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Bloody Rare
-					crit(4504, {	-- Ambassador Jerrikar (Shadowmoon Valley)
-						["_npcs"] = { 18695 },
-					}),
-					crit(4505, {	-- Bog Lurker (Zangarmarsh)
-						["_npcs"] = { 18682 },
-					}),
-					crit(4506, {	-- Chief Engineer Lorthander (Netherstorm)
-						["_npcs"] = { 18697 },
-					}),
-					crit(4507, {	-- Coilfang Emissary (Zangarmarsh)
-						["_npcs"] = { 18681 },
-					}),
-					crit(4508, {	-- Collidus the Warp-Watcher (Shadowmoon Valley)
-						["_npcs"] = { 18694 },
-					}),
-					crit(4509, {	-- Crippler (Terokkar Forest)
-						["_npcs"] = { 18689 },
-					}),
-					crit(4510, {	-- Doomsayer Jurim (Terokkar Forest)
-						["_npcs"] = { 18686 },
-					}),
-					crit(4511, {	-- Ever-Core the Punisher (Netherstorm)
-						["_npcs"] = { 18698 },
-					}),
-					crit(4512, {	-- Fulgorge (Hellfire Peninsula)
-						["_npcs"] = { 18678 },
-					}),
-					crit(4513, {	-- Goretooth (Nagrand)
-						["_npcs"] = { 17144 },
-					}),
-					crit(4514, {	-- Hemathion (Blade's Edge Mountains)
-						["_npcs"] = { 18692 },
-					}),
-					crit(4515, {	-- Kraator (Shadowmoon Valley)
-						["_npcs"] = { 18696 },
-					}),
-					crit(4516, {	-- Marticar (Zangarmarsh)
-						["_npcs"] = { 18680 },
-					}),
-					crit(4517, {	-- Mekthorg the Wild (Hellfire Peninsula)
-						["_npcs"] = { 18677 },
-					}),
-					crit(4518, {	-- Morcrush (Blade's Edge Mountains)
-						["_npcs"] = { 18690 },
-					}),
-					crit(4519, {	-- Nuramoc (Netherstorm)
-						["_npcs"] = { 20932 },
-					}),
-					crit(4520, {	-- Okrek (Terokkar Forest)
-						["_npcs"] = { 18685 },
-					}),
-					crit(4521, {	-- Speaker Mar'grom (Blade's Edge Mountains)
-						["_npcs"] = { 18693 },
-					}),
-					crit(4522, {	-- Voidhunter Yar (Nagrand)
-						["_npcs"] = { 18683 },
-					}),
-					crit(4523, {	-- Vorakem Doomspeaker (Hellfire Peninsula)
-						["_npcs"] = { 18679 },
-					}),
-				})),
+				ach(1312, {	-- Bloody Rare
+					["timeline"] = { ADDED_3_0_2 },
+				}),
 				ach(1262, {	-- Loremaster of Outland (A)
 					-- #if BEFORE WRATH
 					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
@@ -96,6 +37,7 @@ root(ROOTS.Zones, {
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				}),
+				-- #if BEFORE 5.0.4
 				ach(1274, {	-- Loremaster of Outland (H)
 					-- #if BEFORE WRATH
 					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
@@ -107,13 +49,9 @@ root(ROOTS.Zones, {
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
+				-- #endif
 				ach(1311, {	-- Medium Rare
-					["sym"] =
-					-- #IF ANYCLASSIC
-						{{"select","achievementID",1312},{"pop"}},	-- Bloody Rare Criteria
-					-- #ELSE
-						{{"partial_achievement",1312}},	-- Bloody Rare
-					-- #ENDIF
+					["sym"] = {{"partial_achievement",1312}},	-- Bloody Rare
 					["timeline"] = { ADDED_3_0_2 },
 				}),
 				applyclassicphase(TBC_PHASE_ONE, ach(44, {	-- Outland Explorer [7.0.3] / Explore Outland
@@ -171,13 +109,9 @@ root(ROOTS.Zones, {
 					crit(21471),	-- Terokkar Forest
 					crit(21476),	-- Zangarmarsh
 				}))),
-				petbattle(ach(6604, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Taming Outland
-					crit(21604),	-- Nicki Tinytech [Hellfire Peninsula)
-					crit(21605),	-- Ras'an [Zangarmarsh)
-					crit(21606),	-- Narrok [Nagrand)
-					crit(21607),	-- Morulu The Elder [Shattrath City)
-					crit(21847),	-- Bloodknight Antari [Shadowmoon Valley)
-				}))),
+				petbattle(ach(6604, {	-- Taming Outland
+					["timeline"] = { ADDED_5_0_4 },
+				})),
 			}),
 		},
 	})),

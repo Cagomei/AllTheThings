@@ -290,7 +290,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5723, {	-- Testing an Enemy's Strength
 					["qg"] = 11833,	-- Rahauro <Magatha's Servant>
 					["coord"] = { 70.6, 31.4, THUNDER_BLUFF },
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {

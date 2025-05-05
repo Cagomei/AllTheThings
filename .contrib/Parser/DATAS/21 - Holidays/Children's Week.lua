@@ -280,7 +280,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		ach(1791, {	-- Home Alone
 			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(1786, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- School of Hard Knocks
+		pvp(ach(1786, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- School of Hard Knocks
 			crit(6643, {	-- Assault a flag in Arathi Basin
 				["maps"] = {
 					ARATHI_BASIN,
@@ -307,7 +307,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 					1339,	-- Warsong Gulch
 				},
 			}),
-		})),
+		}))),
 		ach(275, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Veteran Nanny
 			["maps"] = { SHATTRATH_CITY },
 			["groups"] = {
@@ -667,12 +667,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		}),
 		q(10968, {	-- Call on the Farseer [Alliance - Draenei]
 			["providers"] = {
+				{ "n", 17538 },	-- O'ros
 				{ "i", 31881 },	-- Draenei Orphan Whistle
 				{ "n", 22818 },	-- Draenei Orphan
 			},
 			["sourceQuest"] = 10956,	-- The Seat of the Naaru
 			["timeline"] = { ADDED_2_0_1 },
-			["maps"] = { SHATTRATH_CITY, THE_EXODAR },
+			["coord"] = { 57.6, 41.2, THE_EXODAR },
+			["maps"] = { SHATTRATH_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -732,6 +734,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
+			["groups"] = {
+				i(31880),	-- Blood Elf Orphan Whistle
+			},
 		}),
 		q(172, {	-- Children's Week [Horde - Orc - START]
 			["providers"] = {
@@ -756,6 +761,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
+			["groups"] = {
+				i(18597),	-- Orcish Orphan Whistle
+			},
 		}),
 		q(53965, {	-- Children's Week [Horde - Zandalari - START]
 			["qg"] = 131346,	-- Caretaker Padae
@@ -771,6 +779,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
+			["groups"] = {
+				i(164965),	-- Casteless Zandalari Whistle
+			},
 		}),
 		q(29093, {	-- Cruisin' the Chasm [Alliance - Human]
 			["providers"] = {
@@ -1040,6 +1051,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["timeline"] = { ADDED_3_0_2 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				i(46396),	-- Wolvar Orphan Whistle
+			},
 		}),
 		q(13926, {	-- Little Orphan Roo Of The Oracles [Neutral - Oracles - START]
 			["providers"] = {
@@ -1051,6 +1065,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["timeline"] = { ADDED_3_0_2 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				i(46397),	-- Oracle Orphan Whistle
+			},
 		}),
 		q(53966, {	-- Loa of Winds [Horde - Zandalari]
 			["providers"] = {
@@ -2075,6 +2092,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		n(242651, {	-- Brundia Braidhammer <Toy and Pet Seller>
 			["coord"] = { 58.0, 56.8, STORMWIND_CITY },
 			["g"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP), -- 1x Well-loved Figurine
+		}),
+		n(243031, {	-- Clockwork Assistant
+			["coord"] = { 55.8, 26.6, DORNOGAL },
+			["g"] = {
+				i(140309, {	-- Prismatic Bauble (TOY!) (More accessible than Mad Merchant)
+					["cost"] = 2500000000,	-- 250,000g
+				}),
+			},
 		}),
 		n(243032, {	-- Jepetto Joybuzz
 			["coord"] = { 55.8, 26.4, DORNOGAL },

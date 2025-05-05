@@ -187,6 +187,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66136, {	-- Analynn <Master Pet Tamer>
+					["coord"] = { 20.2, 29.6, ASHENVALE },
+				}),
+			}),
 			-- #if SEASON_OF_DISCOVERY
 			pvp(n(PVP, {
 				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Defeat a Lieutenant

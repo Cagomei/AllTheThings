@@ -2223,6 +2223,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
+			petbattles({
+				n(64330, {	--  Julia Stevens <Aspiring Pet Tamer>
+					["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
+				}),
+			}),
 			-- #if SEASON_OF_DISCOVERY
 			spell(921, {	-- Pickpocketing
 				["classes"] = { ROGUE },

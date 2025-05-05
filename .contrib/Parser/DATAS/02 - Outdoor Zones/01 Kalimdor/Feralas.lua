@@ -191,6 +191,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66352, {	-- Traitor Gluk <Master Pet Tamer>
+					["coord"] = { 59.6, 49.6, FERALAS },
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(7948, {	-- Kylanna Windwhisper <Alchemy Trainer>

@@ -282,10 +282,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 					i(34486, {	-- Old Crafty
-						-- #if BEFORE WRATH
-						["description"] = "Keep this in your bank until Achievements are added otherwise you'll need to fish it up again. Fair warning!",
-						-- #elseif BEFORE LEGION
-						["description"] = "Keep this in your bank until Transmog is added otherwise you'll need to fish it up again. Fair warning!",
+						["description"] = 
+							-- #if BEFORE WRATH
+							"Keep this in your bank until Achievements are added, otherwise you'll need to obtain it again. Fair warning!",
+							-- #elseif BEFORE LEGION
+							"Keep this in your bank until Transmog is added, otherwise you'll need to obtain it again. Fair warning!",
+							-- #elseif AFTER TWW
+							"Keep this in your bank until the appearance can be learned again, otherwise you'll need to obtain it again. Fair warning!",
+							-- #else
+							nil,
+							-- #endif
+						-- #if AFTER TWW
+						["collectible"] = false,  -- remove when Blizzard fix fish collection
 						-- #endif
 						["timeline"] = { ADDED_2_3_0 },
 					}),

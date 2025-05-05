@@ -874,6 +874,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coords"] = {
 								-- #IF AFTER 9.2
 								{ 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
+								{ 85.3, 32.3, STORMWIND_CITY },
 								-- #ELSE
 								{ 74.9, 15.1, BORALUS },
 								-- #ENDIF

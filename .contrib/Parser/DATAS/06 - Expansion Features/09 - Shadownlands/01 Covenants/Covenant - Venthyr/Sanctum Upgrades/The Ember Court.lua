@@ -759,14 +759,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							q(60957, {	-- Ansel's Lucky Violin
 								["qg"] = 170881, -- Lucky Ansel
 								["coord"] = { 53.3, 36.5, 1644 }, -- Ember Court
+								["g"] = {
+									o(354173, {	-- Ansel's Lucky Violin
+										["coord"] = { 60, 48.2, 1644 },
+										["g"] = { i(180485) },	-- Ansel's Lucky Violin
+									}),
+								},
 							}),
 							q(60960, {	-- Chiu's Lute
-								-- ["qg"] = 171449, -- Keeper Ta'saran
-								-- ["coord"] = { 42.5, 73.6, 1644 }, -- Ember Court
+								["qg"] = 170878, -- Chiu Brightcask
+								["coord"] = { 53.1, 36.2, 1644 }, -- Ember Court
+								["g"] = {
+									o(354174, {	-- Chiu's Lute
+										["coord"] = { 38, 31.9, 1644 },
+										["g"] = { i(180486) },	-- Chiu's Lute
+									}),
+								},
 							}),
 							q(60955, {	-- Noko's Flute
-								-- ["qg"] = 171449, -- Keeper Ta'saran
-								-- ["coord"] = { 42.5, 73.6, 1644 }, -- Ember Court
+								["qg"] = 170874, -- Noko
+								["coord"] = { 54, 38.2, 1644 }, -- Ember Court
+								["crs"] = 170916,	-- Rowdy Roadie
+								["g"] = { i(180484) },	-- Noko's Flute
 							}),
 						})),
 						n(SCENARIO_COMPLETION, {
