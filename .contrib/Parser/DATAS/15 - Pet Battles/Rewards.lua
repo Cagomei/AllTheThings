@@ -70,5 +70,12 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 				i(89587),	-- Porcupette (PET!)
 			},
 		}),
+
+		-- This itemID is for the bugged Caged Pet tooltip.
+		-- Keep it here to prevent NYI false reports whenever someone hovers over the tooltip.
+		i(82800, {	-- Pet Cage (PET!) [NYI]
+			["description"] = "|cffff0000This item serves as a placeholder for a Caged Pet.\nIt appears in chat tooltips when caging a pet, or as a tooltip when viewing pets in the guild bank.|r",
+			["collectible"] = false,
+		}),
 	})),
 }));

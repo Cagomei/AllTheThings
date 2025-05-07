@@ -381,7 +381,7 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			}),
 			-- Without SpeciesID Attached
 			i(88148),	-- Jade Crane Chick (PET!) [Jade Crane Chick, item was never used]
-			i(82800),	-- Pet Cage (PET!)
+			--i(82800),	-- Pet Cage (PET!)
 		})),
 
 		-- 5.1.0

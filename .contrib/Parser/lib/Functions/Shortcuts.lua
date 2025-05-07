@@ -1820,7 +1820,7 @@ local getTimestamp = function(t)
 	return os.time({
 		year=t.year,
 		month=t.month,
-		day=t.monthDay,
+		day=t.monthDay or t.day,
 		hour=t.hour,
 		minute=t.minute,
 	});
@@ -2024,7 +2024,6 @@ createHeader = function(data)
 				}) + 30;	-- Add a 30 second offset to prevent bad imprecision from causing problems.
 
 				-- Calculate the difference between the first recorded event to now.
-				local currentYear, currentMonth = currentDate.year, currentDate.month;
 				local currentTimeStamp = os.time(currentDate);
 				local totalOffset, SECONDS_IN_TWO_WEEKS = 0, SECONDS_IN_A_WEEK * 2;
 				while true do
@@ -2077,7 +2076,7 @@ createHeader = function(data)
 				-- Example: 1, 21, 0, 120,	-- Sunday at 09:00 PM (21:00) until 11:00 AM (23:00)
 				-- Calculate the Duration of the Event (in seconds)
 				local durationOfEvent = data.eventSchedule[5] * 60;
-				
+
 				-- Find the first timestamp matching the desired weekday.
 				local weekday = data.eventSchedule[2];
 				local startTimeStamp = getTimestamp({
@@ -2092,7 +2091,6 @@ createHeader = function(data)
 				end
 
 				-- Calculate the difference between the first recorded event to now.
-				local currentYear, currentMonth = currentDate.year, currentDate.month;
 				local currentTimeStamp = os.time(currentDate);
 				local totalOffset = 0;
 				while true do
@@ -2106,6 +2104,9 @@ createHeader = function(data)
 					end
 				end
 
+				-- Hour and minute don't change per week, so make sure these persist since there's randomly rounding errors in time?
+				local eventHour, eventMinute = data.eventSchedule[3], data.eventSchedule[4]
+
 				-- Now generate a full years worth of events going forward.
 				local veryfirst = true;
 				for week = 0,52,1 do
@@ -2117,7 +2118,9 @@ createHeader = function(data)
 
 					-- Determine when the event is supposed to end.
 					local startTime = os.date("*t", startTimeStamp);
-					local endTime = os.date("*t", startTimeStamp + durationOfEvent);
+					startTime.hour = eventHour ~= 0 and eventHour or nil
+					startTime.minute = eventMinute ~= 0 and eventMinute or nil
+					local endTime = os.date("*t", getTimestamp(startTime) + durationOfEvent);
 
 					-- Append the schedule
 					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs({

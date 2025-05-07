@@ -739,7 +739,7 @@ iq(219289, 81618);	-- Puntable Tiny Snowman
 ------------------
 ihqt(234745, 86598);	-- Bilgewater's Trove (Honored)
 ihqt(235258, 86748);	-- Bilgewater's Trove (Revered)
---ihqt(235259, XXX);	-- Bilgewater's Trove (Exalted)
+ihqt(235259, 86749);	-- Bilgewater's Trove (Exalted)
 ihqt(234744, 86750);	-- Blackwater's Trove (Honored)
 ihqt(235260, 86751);	-- Blackwater's Trove (Revered)
 --ihqt(235261, 86752?);	-- Blackwater's Trove (Exalted)

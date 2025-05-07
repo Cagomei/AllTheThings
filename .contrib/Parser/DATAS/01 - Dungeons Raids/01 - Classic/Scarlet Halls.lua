@@ -22,10 +22,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						ach(7413),	-- Scarlet Halls
 						ach(7434),	-- Scarlet Halls Guild Run
-						i(82469, {	-- Ancient Tome of Teleport: Dalaran (CI!)
-							["provider"] = { "o", 212968 },	-- Ancient Tome
-							["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
+						o(212968, {	-- Ancient Tome
 							["coord"] = { 48.4, 14.6, SCARLET_MONASTERY_HALLS_LEVEL2 },
+							["groups"] = {
+								i(82469, {	-- Ancient Tome of Teleport: Dalaran (CI!)
+									["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
+								}),
+							},
 						}),
 					},
 				}),

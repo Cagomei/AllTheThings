@@ -2259,6 +2259,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon Toy (TOY!)
 							["timeline"] = { ADDED_4_1_0 },
 						})),
+						i(48601, {	-- Red Rider Air Rifle Ammo
+							["timeline"] = { ADDED_4_0_3 },
+						}),
 						i(137663, {	-- Soft Foam Sword (TOY!)
 							["timeline"] = { ADDED_7_0_3 },
 						}),

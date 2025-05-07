@@ -1818,6 +1818,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.5, 66.8, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(48665) },	-- Surveyor's Beacon (QI!)
 				}),
 				q(14132, {	-- That's Just Rude!
 					["qg"] = 35142,	-- Ergll

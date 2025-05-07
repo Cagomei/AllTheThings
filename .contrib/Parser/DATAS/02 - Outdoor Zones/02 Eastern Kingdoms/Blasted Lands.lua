@@ -262,8 +262,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(28865, {	-- Call of the Warmatron
-					["qg"] = 50587,	-- Okril'on Mage
-					["coord"] = { 53.2, 33.4, SILITHUS },
+					["qg"] = 50587,	-- Okril'lon Mage
+					["coord"] = { 53.3, 33.5, SILITHUS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -635,7 +635,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28867, {	-- Nethergarde Needs You!
 					["qg"] = 50588,	-- Nethergarde Mage
-					["coord"] = { 53.4, 33.4, SILITHUS },
+					["coord"] = { 53.6, 33.3, SILITHUS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,

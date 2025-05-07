@@ -157,21 +157,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(73, {	-- Cenarion Hold, Silithus (A)
 					["cr"] = 15177,	-- Cloud Skydancer <Hippogryph Master>
 					-- #if AFTER CATA
-					["description"] = "Speak to Zidormi to visit the past to access this point.",
-					["coord"] = { 54.4, 32.8, SILITHUS },
-					-- #else
-					["coord"] = { 50.6, 34.4, SILITHUS },
+					["description"] = "Speak to Zidormi to visit the past and access this point.",
 					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 54.4, 32.7, SILITHUS },
+						-- #else
+						{ 50.6, 34.4, SILITHUS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(72, {	-- Cenarion Hold, Silithus (H)
 					["cr"] = 15178,	-- Runk Windtamer <Wind Rider Master>
 					-- #if AFTER CATA
-					["description"] = "Speak to Zidormi to visit the past to access this point.",
-					["coord"] = { 52.8, 34.6, SILITHUS },
-					-- #else
-					["coord"] = { 48.8, 36.6, SILITHUS },
+					["description"] = "Speak to Zidormi to visit the past and access this point.",
 					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 52.8, 34.6, SILITHUS },
+						-- #else
+						{ 48.8, 36.6, SILITHUS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -195,19 +203,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 20405 },	-- Decoded Tablet Transcription
 					},
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
-					-- #if AFTER CATA
-					["coord"] = { 68.6, 63.0, SILITHUS },
-					-- #else
-					["coord"] = { 67, 69.6, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.7, 63.0, SILITHUS },
+						-- #else
+						{ 67, 69.6, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(40, 40, 15),
 					["groups"] = {
 						i(20645, {	-- Nature's Whisper
-							-- #if AFTER TBC
-							["description"] = "This is a reward that is mailed to you in about a day after completing the quest A Terrible Purpose.",
-							-- #else
-							["description"] = "This is a reward that is mailed to you in about a day after completing the quest A Terrible Purpose. Keep this for your Nature Resist set.",
-							-- #endif
+							["description"] =
+								-- #if AFTER TBC
+								"This is a reward that is mailed to you in about a day after completing the quest A Terrible Purpose.",
+								-- #else
+								"This is a reward that is mailed to you in about a day after completing the quest A Terrible Purpose. Keep this for your Nature Resist set.",
+								-- #endif
 						}),
 					},
 				})),
@@ -632,11 +643,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8310, {	-- Breaking the Code
 					["qg"] = 15171,	-- Frankal Stonebridge
 					["sourceQuest"] = 8304,	-- Dearest Natalia
-					-- #if AFTER CATA
-					["coord"] = { 46.0, 79.4, SILITHUS },
-					-- #else
-					["coord"] = { 40.8, 88.6, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46.0, 79.4, SILITHUS },
+						-- #else
+						{ 40.8, 88.6, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(58, 58, 15),
 					["groups"] = {
 						-- #if AFTER CATA
@@ -733,11 +746,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8277, {	-- Deadly Desert Venom
 					["qg"] = 15189,	-- Beetix Ficklespragg
-					-- #if AFTER CATA
-					["coord"] = { 55.2, 36.3, SILITHUS },
-					-- #else
-					["coord"] = { 51.6, 38.6, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.4, 36.3, SILITHUS },
+						-- #else
+						{ 51.6, 38.6, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(54, 54, 15),
 					["groups"] = {
 						objective(1, {	-- 0/8 Stonelash Scorpid Stinger
@@ -751,42 +766,53 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8304, {	-- Dearest Natalia
-					["qg"] = 15181,	-- Commander Mar'alith
+					["providers"] = {
+						{ "n", 15181 },	-- Commander Mar'alith
+						{ "i", 68032 },	-- Mar'alith's Speaking Shard
+					},
 					-- #if AFTER 4.1.0
 					["sourceQuest"] = 8321,	-- Vyral the Vile
 					-- #endif
-					-- #if AFTER CATA
-					["coord"] = { 53.2, 32.5, SILITHUS },
-					-- #else
-					["coord"] = { 49.2, 34.2, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.2, 32.5, SILITHUS },
+						-- #else
+						{ 49.2, 34.2, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(58, 58, 15),
 					["groups"] = {
 						objective(1, {	-- Frankal Questioned
 							["provider"] = { "n", 15171 },	-- Frankal Stonebridge
-							-- #if AFTER CATA
-							["coord"] = { 46.0, 79.2, SILITHUS },
-							-- #else
-							["coord"] = { 40.8, 88.6, SILITHUS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 46.0, 79.2, SILITHUS },
+								-- #else
+								{ 40.8, 88.6, SILITHUS },
+								-- #endif
+							},
 						}),
 						objective(2, {	-- Rutgar Questioned
 							["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
-							-- #if AFTER CATA
-							["coord"] = { 46.4, 79.0, SILITHUS },
-							-- #else
-							["coord"] = { 41.2, 88.4, SILITHUS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 46.4, 79.0, SILITHUS },
+								-- #else
+								{ 41.2, 88.4, SILITHUS },
+								-- #endif
+							},
 						}),
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8307, {	-- Desert Recipe
 					["qg"] = 15174,	-- Calandrath <Innkeeper>
-					-- #if AFTER CATA
-					["coord"] = { 55.4, 36.6, SILITHUS },
-					-- #else
-					["coord"] = { 51.8, 39, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.4, 36.6, SILITHUS },
+						-- #else
+						{ 51.8, 39.0, SILITHUS },
+						-- #endif
+					},
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 285,
 					["lvl"] = lvlsquish(54, 54, 15),
@@ -871,11 +897,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8319, {	-- Encrypted Twilight Texts
 					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8318,	-- Secret Communication
-					-- #if AFTER CATA
-					["coord"] = { 53.15, 35.12, SILITHUS },
-					-- #else
-					["coord"] = { 48.6, 37.8, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.2, 35.1, SILITHUS },
+						-- #else
+						{ 48.6, 37.8, SILITHUS },
+						-- #endif
+					},
 					["maxReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 					["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Texts
 					["repeatable"] = true,
@@ -977,29 +1005,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8309, {	-- Glyph Chasing
-					["qg"] = 15170,	-- Rutgar Glyphshaper
+					["providers"] = {
+						{ "n", 15170 },	-- Rutgar Glyphshaper
+						{ "i", 20453 },	-- Geologist's Transcription Kit
+					},
 					["sourceQuest"] = 8304,	-- Dearest Natalia
-					-- #if AFTER CATA
-					["coord"] = { 46.4, 79.0, SILITHUS },
-					-- #else
-					["coord"] = { 41.2, 88.4, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46.4, 79.1, SILITHUS },
+						-- #else
+						{ 41.2, 88.4, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(58, 58, 15),
 					["groups"] = {
 						-- #if AFTER CATA
 						objective(1, {	-- 0/1 Hive'Regal Rubbing
 							["providers"] = {
-								{ "i", 20456 },	-- Hive'Regal Rubbing
-								{ "i", 20453 },	-- Geologist's Transcription Kit
+								{ "i",  20456 },	-- Hive'Regal Rubbing
 								{ "o", 180453 },	-- Hive'Regal Glyphed Crystal
 							},
-							["coord"] = { 55, 90, SILITHUS },
+							["coord"] = { 55.6, 90.6, SILITHUS },
 						}),
 						-- #else
 						objective(1, {	-- 0/1 Hive'Ashi Rubbing
 							["providers"] = {
 								{ "i", 20455 },	-- Hive'Ashi Rubbing
-								{ "i", 20453 },	-- Geologist's Transcription Kit
 								{ "o", 180454 },	-- Hive'Ashi Glyphed Crystal
 							},
 							["coord"] = { 50, 26, SILITHUS },
@@ -1007,7 +1038,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(2, {	-- 0/1 Hive'Zora Rubbing
 							["providers"] = {
 								{ "i", 20454 },	-- Hive'Zora Rubbing
-								{ "i", 20453 },	-- Geologist's Transcription Kit
 								{ "o", 180455 },	-- Hive'Zora Glyphed Crystal
 							},
 							["coord"] = { 37, 62, SILITHUS },
@@ -1015,7 +1045,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(3, {	-- 0/1 Hive'Regal Rubbing
 							["providers"] = {
 								{ "i", 20456 },	-- Hive'Regal Rubbing
-								{ "i", 20453 },	-- Geologist's Transcription Kit
 								{ "o", 180453 },	-- Hive'Regal Glyphed Crystal
 							},
 							["coord"] = { 52, 99, SILITHUS },
@@ -1067,7 +1096,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 57 (TODO: Test max level between 57 and 65)
+					-- Cataclysm: Maximum is level 57. (TODO: Test max level between 57 and 65)
 					["lvl"] = { 54, 57 },
 					-- #endif
 				})),
@@ -1150,20 +1179,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8306, {	-- Into The Maw of Madness
 					["qg"] = 15181,	-- Commander Mar'alith
 					["sourceQuest"] = 8304,	-- Dearest Natalia
-					-- #if AFTER CATA
-					["coord"] = { 53.2, 32.5, SILITHUS },
-					-- #else
-					["coord"] = { 49.2, 34.2, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.2, 32.5, SILITHUS },
+						-- #else
+						{ 49.2, 34.2, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(58, 58, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 The Fate of Mistress Natalia Mar'alith
 							["provider"] = { "n", 15215 },	-- Mistress Natalia Mar'alith <High Priestess of C'Thun>
-							-- #if AFTER CATA
-							["coord"] = { 55.6, 90.58, SILITHUS },
-							-- #else
-							["coord"] = { 53.6, 98.0, SILITHUS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 55.6, 90.6, SILITHUS },
+								-- #else
+								{ 53.6, 98.0, SILITHUS },
+								-- #endif
+							},
 						}),
 						i(20724),	-- Corrupted Blackwood Staff
 					},
@@ -1171,11 +1204,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8317, {	-- Kitchen Assistance
 					["qg"] = 15174,	-- Calandrath <Innkeeper>
 					["sourceQuest"] = 8313,	-- Sharing the Knowledge
-					-- #if AFTER CATA
-					["coord"] = { 55.4, 36.6, SILITHUS },
-					-- #else
-					["coord"] = { 51.8, 39, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.4, 36.6, SILITHUS },
+						-- #else
+						{ 51.8, 39.0, SILITHUS },
+						-- #endif
+					},
 					["cost"] = {{ "i", 20452, 10 }},	-- Smoked Desert Dumplings
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 285,
@@ -1218,11 +1253,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8278, {	-- Noggle's Last Hope
 					["qg"] = 15189,	-- Beetix Ficklespragg
 					["sourceQuest"] = 8277,	-- Deadly Desert Venom
-					-- #if AFTER CATA
-					["coord"] = { 55.3, 36.3, SILITHUS },
-					-- #else
-					["coord"] = { 51.6, 38.6, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.4, 36.3, SILITHUS },
+						-- #else
+						{ 51.6, 38.6, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(54, 54, 15),
 					["groups"] = {
 						objective(1, {	-- 0/3 Stonelash Flayer Stinger
@@ -1242,11 +1279,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8282, {	-- Noggle's Lost Satchel
 					["qg"] = 15190,	-- Noggle Ficklespragg
 					["sourceQuest"] = 8278,	-- Noggle's Last Hope
-					-- #if AFTER CATA
-					["coord"] = { 55.2, 36.1, SILITHUS },
-					-- #else
-					["coord"] = { 51.6, 38.5, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.3, 36.2, SILITHUS },
+						-- #else
+						{ 51.6, 38.5, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(54, 54, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Noggle's Satchel
@@ -1254,7 +1293,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  20379 },	-- Noggle's Satchel
 								{ "o", 180435 },	-- Noggle's Satchel
 							},
-							["coord"] = { 44, 91, SILITHUS },
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 49.2, 81.6, SILITHUS },
+								-- #else
+								{ 44.7, 91.5, SILITHUS },
+								-- #endif
+							},
 						}),
 						i(13452),	-- Elixir of the Mongoose
 						i(13447),	-- Elixir of the Sages
@@ -1391,11 +1436,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8318, {	-- Secret Communication
 					["qg"] = 15306,	-- Bor Wildmane
-					-- #if AFTER CATA
-					["coord"] = { 53.15, 35.12, SILITHUS },
-					-- #else
-					["coord"] = { 48.6, 37.8, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.2, 35.1, SILITHUS },
+						-- #else
+						{ 48.6, 37.8, SILITHUS },
+						-- #endif
+					},
 					["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Texts
 					["lvl"] = lvlsquish(57, 57, 15),
 				})),
@@ -1412,11 +1459,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						8276,	-- Taking Back Silithus (H)
 						-- #endif
 					},
-					-- #if AFTER CATA
-					["coord"] = { 54.9, 36.0, SILITHUS },
-					-- #else
-					["coord"] = { 51.2, 38.3, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 54.9, 36.0, SILITHUS },
+						-- #else
+						{ 51.2, 38.3, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(54, 54, 15),
 					["groups"] = {
 						objective(1, {	-- 0/15 Dredge Striker slain
@@ -1430,11 +1479,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i",  20467 },	-- Torn Recipe Page
 					},
 					["sourceQuest"] = 8307,	-- Desert Recipe
-					-- #if AFTER CATA
-					["coord"] = { 43.6, 42.0, SILITHUS },
-					-- #else
-					["coord"] = { 37.9, 45.3, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 43.6, 42.0, SILITHUS },
+						-- #else
+						{ 37.9, 45.3, SILITHUS },
+						-- #endif
+					},
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 285,
 					["lvl"] = lvlsquish(54, 54, 15),
@@ -1502,11 +1553,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8281, {	-- Stepping Up Security
 					["qg"] = 15191,	-- Windcaller Proudhorn
 					["sourceQuest"] = 8280, -- Securing the Supply Lines
-					-- #if AFTER CATA
-					["coord"] = { 54.8, 36.0, SILITHUS },
-					-- #else
-					["coord"] = { 51.2, 38.3, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 54.9, 36.0, SILITHUS },
+						-- #else
+						{ 51.2, 38.3, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(54, 54, 15),
 					["groups"] = {
 						objective(1, {	-- 0/20 Dredge Crusher
@@ -1517,11 +1570,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8324, {	-- Still Believing
 					["qg"] = 15194,	-- Hermit Ortell
 					["sourceQuest"] = 8323,	-- True Believers
-					-- #if AFTER CATA
-					["coord"] = { 68.66, 63.03, SILITHUS },
-					-- #else
-					["coord"] = { 67, 69.6, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.7, 63.0, SILITHUS },
+						-- #else
+						{ 67.0, 69.6, SILITHUS },
+						-- #endif
+					},
 					["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Text
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(54, 54, 15),
@@ -1709,11 +1764,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 20401 },	-- Restored Twilight Tablet
 					},
 					["sourceQuest"] = 8284,	-- The Twilight Mystery
-					-- #if AFTER CATA
-					["coord"] = { 53.6, 35.3, SILITHUS },
-					-- #else
-					["coord"] = { 49.7, 37.5, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.6, 35.3, SILITHUS },
+						-- #else
+						{ 49.7, 37.5, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(54, 54, 15),
 				})),
 				q(28859, {	-- The Dunes of Silithus
@@ -1835,11 +1892,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8279, {	-- The Twilight Lexicon
 					["qg"] = 15194,	-- Hermit Ortell
 					["sourceQuest"] = 8285,	-- The Deserter
-					-- #if AFTER CATA
-					["coord"] = { 68.6, 63.0, SILITHUS },
-					-- #else
-					["coord"] = { 67, 69.6, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.7, 63.0, SILITHUS },
+						-- #else
+						{ 67.0, 69.6, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(54, 54, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Twilight Lexicon - Chapter 1
@@ -1861,11 +1920,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8284, {	-- The Twilight Mystery
 					["qg"] = 15183,	-- Geologist Larksbane
-					-- #if AFTER CATA
-					["coord"] = { 53.6, 35.3, SILITHUS },
-					-- #else
-					["coord"] = { 49.7, 37.5, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.6, 35.3, SILITHUS },
+						-- #else
+						{ 49.7, 37.5, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(54, 54, 15),
 					["groups"] = {
 						objective(1, {	-- 0/8 Twilight Tablet Fragment
@@ -1897,11 +1958,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8323, {	-- True Believers
 					["qg"] = 15194,	-- Hermit Ortell
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
-					-- #if AFTER CATA
-					["coord"] = { 68.7, 63.0, SILITHUS },
-					-- #else
-					["coord"] = { 67, 69.6, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.7, 63.0, SILITHUS },
+						-- #else
+						{ 67, 69.6, SILITHUS },
+						-- #endif
+					},
 					["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Text
 					["lvl"] = lvlsquish(54, 54, 15),
 				})),
@@ -1921,11 +1984,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8320, {	-- Twilight Geolords
 					["qg"] = 15270,	-- Huum Wildmane
-					-- #if AFTER CATA
-					["coord"] = { 53.2, 35.0, SILITHUS },
-					-- #else
-					["coord"] = { 48.7, 37.9, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.2, 35.2, SILITHUS },
+						-- #else
+						{ 48.7, 37.9, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(60, 60, 15),
 					["groups"] = {
 						objective(1, {	-- 0/10 Twilight Geolord slain
@@ -2017,11 +2082,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						8310,	-- Breaking the Code
 						8309,	-- Glyph Chasing
 					},
-					-- #if AFTER CATA
-					["coord"] = { 46.4, 79.0, SILITHUS },
-					-- #else
-					["coord"] = { 41.2, 88.4, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46.4, 79.1, SILITHUS },
+						-- #else
+						{ 41.2, 88.4, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(58, 58, 15),
 				})),
 				applyclassicphase(PHASE_FIVE, q(8572, {	-- Veteran's Battlegear
@@ -2077,11 +2144,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8321, {	-- Vyral the Vile
 					["qg"] = 15270,	-- Huum Wildmane
 					["sourceQuest"] = 8320,	-- Twilight Geolords
-					-- #if AFTER CATA
-					["coord"] = { 53.2, 35.1, SILITHUS },
-					-- #else
-					["coord"] = { 48.7, 37.9, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.2, 35.2, SILITHUS },
+						-- #else
+						{ 48.7, 37.9, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(60, 60, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Vyral's Signet Ring
@@ -2095,20 +2164,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8283, {	-- Wanted - Deathclasp, Terror of the Sands
 					["provider"] = { "o", 180448 },	-- Wanted Poster: Deathclasp
-					-- #if AFTER CATA
-					["coord"] = { 55.0, 35.9, SILITHUS },
-					-- #else
-					["coord"] = { 51.34, 38.25, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.1, 35.0, SILITHUS },
+						-- #else
+						{ 51.3, 38.3, SILITHUS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(54, 54, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Deathclasp's Pincer
 							["provider"] = { "i", 20385 },	-- Deathclasp's Pincer
-							-- #if AFTER CATA
-							["coord"] = { 49.6, 82.0, SILITHUS },
-							-- #else
-							["coord"] = { 45.0, 91.0, SILITHUS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 49.6, 82.0, SILITHUS },
+								-- #else
+								{ 45.0, 91.0, SILITHUS },
+								-- #endif
+							},
 							["cr"] = 15196,	-- Deathclasp
 						}),
 						i(20646),	-- Sandstrider's Mark
@@ -2119,7 +2192,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
-					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
 					-- Cataclysm: Maximum is level 57. (TODO: Test max level)
@@ -2705,16 +2777,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20469, {	-- Decoded True Believer Clippings
-						["description"] = "This will arrive in your mailbox approximately 12-24 hours either of the quests are turned in.",
+						["description"] = "This will arrive in your mailbox approximately 12-24 hours if either of the quests are turned in.",
 						["sourceQuests"] = {
 							8324,	-- Still Believing
 							8323,	-- True Believers
 						},
 						["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Text
 						["groups"] = {
-							i(20547),	-- Pattern: Runed Stygian Boots
-							i(20548),	-- Pattern: Runed Stygian Belt
-							i(20546),	-- Pattern: Runed Stygian Leggings
+							i(20547),	-- Pattern: Runed Stygian Boots (RECIPE!)
+							i(20548),	-- Pattern: Runed Stygian Belt (RECIPE!)
+							i(20546),	-- Pattern: Runed Stygian Leggings (RECIPE!)
 							applyclassicphase(PHASE_FOUR, i(20554)),	-- Plans: Darkrune Breastplate (RECIPE!)
 							applyclassicphase(PHASE_FOUR, i(20553)),	-- Plans: Darkrune Gauntlets (RECIPE!)
 							applyclassicphase(PHASE_FOUR, i(20555)),	-- Plans: Darkrune Helm (RECIPE!)
@@ -2846,11 +2918,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(VENDORS, {
 				n(15293, {	-- Aendel Windspear
-					-- #if AFTER CATA
-					["coord"] = { 64.6, 45.8, SILITHUS },
-					-- #else
-					["coord"] = { 62.6, 49.8, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 64.6, 45.8, SILITHUS },
+						-- #else
+						{ 62.6, 49.8, SILITHUS },
+						-- #endif
+					},
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 						{		-- Neutral
 						}, {	-- Friendly
@@ -2871,11 +2945,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				n(15174, {	-- Calandrath <Innkeeper>
-					-- #if AFTER CATA
-					["coord"] = { 55.4, 36.6, SILITHUS },
-					-- #else
-					["coord"] = { 51.8, 39.0, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.5, 36.8, SILITHUS },
+						-- #else
+						{ 51.8, 39.0, SILITHUS },
+						-- #endif
+					},
 					["groups"] = {
 						i(13496, {	-- Recipe: Greater Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
@@ -2884,19 +2960,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(15419, {	-- Kania <Enchanting Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 55.6, 37.2, SILITHUS },
-					-- #else
-					["coord"] = { 52.0, 39.7, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.6, 37.2, SILITHUS },
+						-- #else
+						{ 52.0, 39.7, SILITHUS },
+						-- #endif
+					},
 					["groups"] = {
 						-- #if BEFORE CATA
-						i(6342),	-- Formula: Enchant Chest - Minor Mana
+						i(6342),	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
 						-- #endif
-						applyclassicphase(PHASE_FIVE, i(20732, {	-- Formula: Enchant Cloak - Greater Fire Resistance
+						applyclassicphase(PHASE_FIVE, i(20732, {	-- Formula: Enchant Cloak - Greater Fire Resistance (RECIPE!)
 							["timeline"] = { REMOVED_5_0_4 },
 						})),
-						applyclassicphase(PHASE_FIVE, i(20733, {	-- Formula: Enchant Cloak - Greater Nature Resistance
+						applyclassicphase(PHASE_FIVE, i(20733, {	-- Formula: Enchant Cloak - Greater Nature Resistance (RECIPE!)
 							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						i(20754),	-- Formula: Lesser Mana Oil (RECIPE!)
@@ -2904,24 +2982,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_SIX, i(234272, {	-- Formula: Enchanted Repellent
+						applyclassicphase(SOD_PHASE_SIX, i(234272, {	-- Formula: Enchanted Repellent (RECIPE!)
 							["timeline"] = { ADDED_1_15_5 },
 						})),
-						applyclassicphase(SOD_PHASE_SIX, i(234271, {	-- Formula: Scroll: Wrath of the Swarm
+						applyclassicphase(SOD_PHASE_SIX, i(234271, {	-- Formula: Scroll: Wrath of the Swarm (RECIPE!)
 							["timeline"] = { ADDED_1_15_5 },
 						})),
 						-- #endif
 						i(20755),	-- Formula: Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-						i(22308),	-- Pattern: Enchanted Runecloth Bag
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+						i(22308),	-- Pattern: Enchanted Runecloth Bag (RECIPE!)
 					},
 				}),
 				n(15175, {	-- Khur Hornstriker <Reagent Vendor>
-					-- #if AFTER CATA
-					["coord"] = { 52.8, 34.8, SILITHUS },
-					-- #else
-					["coord"] = { 48.8, 37.0, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 52.8, 34.8, SILITHUS },
+						-- #else
+						{ 48.8, 37.0, SILITHUS },
+						-- #endif
+					},
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 						{		-- Neutral
 						}, {	-- Friendly
@@ -2948,11 +3028,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				n(15179, {	-- Mishta <Trade Supplies> [TBC+] / Mishta <General Trade Goods Vendor>
-					-- #if AFTER CATA
-					["coord"] = { 53.8, 34.4, SILITHUS },
-					-- #else
-					["coord"] = { 49.8, 36.4, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.8, 34.3, SILITHUS },
+						-- #else
+						{ 49.8, 36.4, SILITHUS },
+						-- #endif
+					},
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 						{		-- Neutral
 							i(21952, {	-- Design: Emerald Crown of Destruction (RECIPE!)
@@ -2980,7 +3062,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							})),
 							-- #endif
 						}, {	-- Honored
-							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22773,	{-- Pattern: Sylvan Crown (RECIPE!)
+							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22773,	{	-- Pattern: Sylvan Crown (RECIPE!)
 							-- #if SEASON_OF_DISCOVERY
 								["timeline"] = { REMOVED_1_15_5 },
 							-- #endif
@@ -3005,7 +3087,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							applyclassicphase(SOD_PHASE_SIX, i(234318, {	--	Pattern: Sylvan Vest (RECIPE!)
 								["timeline"] = { ADDED_1_15_5 },
 							})),
-							applyclassicphase(SOD_PHASE_SIX, i(234261, {		-- Schematic: Arcane Megabomb (RECIPE!)
+							applyclassicphase(SOD_PHASE_SIX, i(234261, {	-- Schematic: Arcane Megabomb (RECIPE!)
 								["timeline"] = { ADDED_1_15_5 },
 							})),
 							-- #endif
@@ -3014,11 +3096,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				n(15176, {	-- Vargus <Blacksmith>
-					-- #if AFTER CATA
-					["coord"] = { 55.0, 36.5, SILITHUS },
-					-- #else
-					["coord"] = { 51.2, 38.8, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.0, 36.5, SILITHUS },
+						-- #else
+						{ 51.2, 38.8, SILITHUS },
+						-- #endif
+					},
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 						{		-- Neutral
 						}, {	-- Friendly
@@ -3045,11 +3129,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				n(12956, {	-- Zannok Hidepiercer <Leatherworking Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 81.2, 18.6, SILITHUS },
-					-- #else
-					["coord"] = { 81.8, 17.8, SILITHUS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 81.2, 18.6, SILITHUS },
+						-- #else
+						{ 81.8, 17.8, SILITHUS },
+						-- #endif
+					},
 					["groups"] = {
 						i(15724, {	-- Pattern: Heavy Scorpid Bracers (RECIPE!)
 							["isLimited"] = true,

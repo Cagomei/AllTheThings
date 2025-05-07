@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["sourceQuest"] = 86961,	-- Diversified Investments
 			}),
 			i(236668, {	-- C.H.E.T.T. Card
-				["description"] = "Drops very often from Underpin affiliated enemies in any delve, commonly from Undermine Rares, and rarely as an Undermine zone drop.",
+				["description"] = "Drops very often in Sidestreet Sluice, and commonly from enemies in Undermine.\n\nWill |cffff0000NOT|r drop if you have an active C.H.E.T.T. List in your bags.",
 				["crs"] = {
 					234905,	-- Aggressively Lost Hobgoblin <Underpin's Fan>
 					231925,	-- Drill Sergeant

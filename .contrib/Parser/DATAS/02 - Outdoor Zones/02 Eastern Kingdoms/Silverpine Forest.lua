@@ -700,6 +700,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.9, 41.6, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(60862) },	-- Forsaken Insignia (QI!)
 				}),
 				q(27574, {	-- I Never Forget a Face
 					["provider"] = { "i", 61505 },	-- Partially Digested Head
@@ -1454,9 +1455,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(27513, {	-- Transdimensional Warfare: Chapter II
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["qg"] = 45752,	-- Ambermill Dimensional Portal
 					["sourceQuest"] = 27512,	-- Transdimensional Warfare: Chapter I
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["coord"] = { 58.0, 69.9, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {

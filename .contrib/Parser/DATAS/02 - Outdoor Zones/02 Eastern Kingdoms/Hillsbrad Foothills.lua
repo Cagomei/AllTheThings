@@ -2097,7 +2097,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28230, {	-- Protocol
-					["qg"] = 48020,	-- Master Apothecary Lydon
+					["qgs"] = {
+						47900,	-- Master Apothecary Lydon
+						48020,	-- Master Apothecary Lydon
+					},
 					["sourceQuest"] = 28209,	-- Freedom for Lydon
 					["coord"] = { 40.2, 59.3, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },

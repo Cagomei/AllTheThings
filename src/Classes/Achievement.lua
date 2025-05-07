@@ -7,8 +7,8 @@ local setmetatable, rawget, select, tostring, ipairs, pairs, tinsert, tonumber
 	= setmetatable, rawget, select, tostring, ipairs, pairs, tinsert, tonumber
 
 -- WoW API Cache
-local GetAchievementNumCriteria,GetAchievementInfo,GetAchievementLink,GetAchievementCriteriaInfo,GetAchievementCategory
-	= GetAchievementNumCriteria,GetAchievementInfo,GetAchievementLink,GetAchievementCriteriaInfo,GetAchievementCategory
+local GetAchievementNumCriteria,GetAchievementInfo,GetAchievementLink,GetAchievementCriteriaInfo,GetAchievementCategory,GetAchievementCriteriaInfoByID
+	= GetAchievementNumCriteria,GetAchievementInfo,GetAchievementLink,GetAchievementCriteriaInfo,GetAchievementCategory,GetAchievementCriteriaInfoByID
 local GetItemInfo = app.WOWAPI.GetItemInfo
 
 -- Module
@@ -396,9 +396,6 @@ end
 
 -- Achievement Criteria Lib
 do
-	local GetAchievementCriteriaInfoByID
-		= GetAchievementCriteriaInfoByID
-
 	-- Returns expected criteria data for either criteriaIndex or criteriaID
 	local function GetCriteriaInfo(t, achievementID)
 		-- prioritize the correct id

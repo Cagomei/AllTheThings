@@ -2484,6 +2484,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15048, {	-- Blue Dragonscale Breastplate
 					["timeline"] = {
 						REMOVED_4_0_3,
+						ADDED_11_1_5,
 					}
 				}),
 				i(20295),	-- Blue Dragonscale Leggings
@@ -2646,7 +2647,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
 			["groups"] = {
 				i(15073),	-- Chimeric Boots
-				i(15074, {["timeline"] = {REMOVED_4_0_3}}),	-- Chimeric Gloves
+				i(15074, {["timeline"] = {REMOVED_4_0_3, ADDED_11_1_5}}),	-- Chimeric Gloves
 				i(15072),	-- Chimeric Leggings
 				i(15075),	-- Chimeric Vest
 				applyclassicphase(PHASE_THREE_RECIPES, i(19162)),	-- Corehound Belt
@@ -2919,7 +2920,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #if AFTER TBC
 				-- Tribal
 				i(15073),	-- Chimeric Boots
-				i(15074, {["timeline"] = {REMOVED_4_0_3}}),	-- Chimeric Gloves
+				i(15074, {["timeline"] = {REMOVED_4_0_3, ADDED_11_1_5}}),	-- Chimeric Gloves
 				i(15072),	-- Chimeric Leggings
 				i(15075),	-- Chimeric Vest
 				applyclassicphase(PHASE_THREE_RECIPES, i(19162)),	-- Corehound Belt
@@ -3120,7 +3121,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15050),	-- Black Dragonscale Breastplate
 				i(15052),	-- Black Dragonscale Leggings
 				i(15051),	-- Black Dragonscale Shoulders
-				i(15048, {["timeline"] = {REMOVED_4_0_3}}),	-- Blue Dragonscale Breastplate
+				i(15048, {["timeline"] = {REMOVED_4_0_3, ADDED_11_1_5}}),	-- Blue Dragonscale Breastplate
 				i(20295),	-- Blue Dragonscale Leggings
 				i(15049, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Blue Dragonscale Shoulders
 				applyclassicphase(PHASE_THREE_RECIPES, i(19157)),	-- Chromatic Gauntlets
@@ -3291,7 +3292,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_SIX, i(234003, {	-- Obsidian-Infused Thorium Bar
 				["timeline"] = { ADDED_1_15_5 },
-				["cost"] = ClassicCost({ 
+				["cost"] = ClassicCost({
 					{ "i", 12655, 2 },	-- Enchanted Thorium Bar
 					{ "i", 22203, 2 },	-- Large Obsidian Shard
 				}),

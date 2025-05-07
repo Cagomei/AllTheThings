@@ -497,6 +497,23 @@ for i,guid in ipairs({
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
 
+-- OF_THE_ASYLUM GUIDs
+local OF_THE_ASYLUM_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_OF_THE_ASYLUM, "ffa335ee");
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
+	local leftSide = _G[self:GetName() .. "TextLeft1"];
+	if leftSide then leftSide:SetText(OF_THE_ASYLUM_TITLE:format(name)); end
+end
+for i,guid in ipairs({
+	"Player-4372-03E56CDC",	-- Slorche-Atiesh
+	"Player-4372-03F46784",	-- Bankmänfried-Atiesh
+	"Player-4372-03E57EE7",	-- Slorchey-Atiesh
+	"Player-4372-03E57EE6",	-- Slorchejr-Atiesh
+	"Player-4372-03E57EFD",	-- Slorpp-Atiesh
+	"Player-4372-03E57EE4",	-- Slorloko-Atiesh
+}) do
+	PLAYER_TOOLTIPS[guid] = tooltipFunction;
+end
+
 -- Pinkey GUID
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];

@@ -55,12 +55,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(233298),	-- Radiant Stalwart's Buckle
 						i(233289),	-- Radiant Stalwart's Tabard
 					}),
+					q(89392),	-- Flame's Radiance Stipend
 				}, {	-- RENOWN 6 --
 					q(89393),	-- Flame's Radiance Stipend
 				}, {	-- RENOWN 7 --
 					q(89399),	-- Carved Crests
+					q(89394),	-- Flame's Radiance Stipend
 				}, {	-- RENOWN 8 --
+					q(89395),	-- Flame's Radiance Stipend
 				}, {	-- RENOWN 9 --
+					q(89396),	-- Flame's Radiance Stipend
 				}, {	-- RENOWN 10 --
 					q(89400),	-- Carved Crests
 					q(89496, {	-- Defender of the Sacred Flame

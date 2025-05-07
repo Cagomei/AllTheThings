@@ -296,7 +296,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(56814, {	-- Anytime You Need a Friend
-			["provider"] = { "n", 149904 },	-- Neri Sharpfin
+			["qgs"] = {
+				149904,	-- Neri Sharpfin
+				151300,	-- Kelfin Scout
+			},
 			["races"] = HORDE_ONLY,
 			["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 5.",
 			["g"] = {

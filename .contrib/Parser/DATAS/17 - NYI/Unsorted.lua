@@ -701,9 +701,6 @@ root(ROOTS.Unsorted, {
 				-- The Blood Furnace
 				i(239009),	-- Signet of Repose
 			}),
-			n(SPECIAL, {	-- Radiant
-				i(239489),	-- Radiant Officer's Cache
-			}),
 			n(SPECIAL, {	-- Mysterious???
 				-- Nothing load atm
 				i(235631),	-- [NOT USED] Mysterious Large Satchel of Goodies
@@ -844,10 +841,6 @@ root(ROOTS.Unsorted, {
 				i(240187),	-- Refulgent Crystal Shards
 			}),
 			n(WEEKLY_HOLIDAYS, {	-- Childrens Week
-				i(241632),	-- Heroic Waxy Figurine
-				i(241633),	-- Tiny Decorative Rocket
-				i(241635),	-- Patchy Spider-Silk Square
-				i(241636),	-- Storm Glass and Feather Necklace
 				i(242318),	-- Wooden Orgrimmar Shield
 			}),
 			i(237508),	-- Can of Amps

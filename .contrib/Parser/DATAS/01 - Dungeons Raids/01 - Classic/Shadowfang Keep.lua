@@ -111,7 +111,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["coords"] = {
 						-- #if AFTER SHADOWLANDS
-						{ 80.2, 70.2, STORMWIND_CITY },
+						{ 80.3, 70.4, STORMWIND_CITY },
 						-- #else
 						{ 79.4, 69.0, STORMWIND_CITY },
 						-- #endif

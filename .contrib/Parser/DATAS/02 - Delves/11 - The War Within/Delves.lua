@@ -1893,6 +1893,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["g"] = {
 				-- gold bag, delves reagents
 				i(235607),	-- Chunk of Companion Experience (epic)
+				i(235813),	-- Machine Gob's Iron Grin
 			},
 		}),
 	})),

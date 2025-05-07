@@ -76,7 +76,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 		["groups"] = {
 			-- #if AFTER 10.1.7
-			spell(419654, {	-- Scarlet Monastery of Old
+			header(HEADERS.Spell, 419654, {	-- Scarlet Monastery of Old
 				["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End, or bought from the Auction House.\n\nInteract with the keychain at the top of the stairs to get The Scarlet Key buff, which opens up all four old wings. This unlock is account-wide.\n\nFrom left to right: Graveyard, Monastary, Armory, Library.",
 				["groups"] = {
 				-- #endif
@@ -774,7 +774,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					-- #if AFTER 10.1.7
 				},
-			}),	
+			}),
 			-- #endif
 			-- #if AFTER MOP
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {

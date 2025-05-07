@@ -260,7 +260,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 		n(QUESTS, sharedData({
 			["customCollect"] = "SL_SKIP",
-			-- TODO: post-DF is threads of fate still a thing, or are these quests available to a first-time/storyline character as well?
 		}, {
 			------ Skip Quests ------
 			q(62704, {	-- The Threads of Fate
@@ -278,7 +277,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 62704 },	-- The Threads of Fate
 				["altQuests"] = { 62713 },	-- Becoming a Skip character will exclude this Quest from being available
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["lockCriteria"] = { 1, "lvl", 60 },
 			}),
 			q(62716, {	-- Re-Introductions
@@ -347,7 +346,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 69.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { REMOVED_10_0_0 },
+				["timeline"] = { ADDED_9_0_5, REMOVED_10_0_0, ADDED_11_1_0 },
 				["lockCriteria"] = { 4,	-- Completing 4 Zone Meta Quest
 					"questID", 62763,	-- Support the Court
 					"questID", 62723,	-- Bolstering Bastion
@@ -389,13 +388,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
 				["lockCriteria"] = { 1, "questID", 65030 },	-- accepting this Quest
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 			}),
 			q(64846, {	-- Torghast
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 			}),
 			------ Zone Travel Breadcrumbs ------
 			------ Ardenweald ------
@@ -468,7 +467,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 			}),
 			------ Torghast ------
 			q(64849, {	-- Tower of the Damned
@@ -476,7 +475,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 			}),
 			------ Zone Meta Quests (keep in Oribos for visibility to players who may skip storyline I suppose) ------
 			------ Ardenweald ------
@@ -682,7 +681,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 65033 },	-- Observing Victory
 				["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 				["coord"] = { 34.7, 56.5, ORIBOS },
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["lvl"] = { 48, 60 },
 			})),
 			------ Torghast ------
@@ -690,7 +689,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 64850 },	-- Traversing Torghast
 				["provider"] = { "n", 181328 },	-- Ve'nish
 				["coord"] = { 35.5, 46.9, 1911 },	-- Torghast - Entrance
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["lvl"] = { 48, 60 },
 			}),
 		})),

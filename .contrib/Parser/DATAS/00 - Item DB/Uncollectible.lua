@@ -2187,3 +2187,11 @@ i(236635);	-- Uncut Semi-Smoky Quartz
 i(236651);	-- Vince's Old Left Shoe
 i(229809);	-- Weighted Metal Ball
 i(235713);	-- Weird Sand
+
+------------------
+-- PATCH 11.1.5 --
+------------------
+i(241632);	-- Heroic Waxy Figurine
+i(241635);	-- Patchy Spider-Silk Square
+i(241633);	-- Tiny Decorative Rocket
+i(241636);	-- Storm Glass and Feather Necklace

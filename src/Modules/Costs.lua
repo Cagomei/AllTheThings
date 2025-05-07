@@ -913,7 +913,6 @@ end
 -- information contained by all groups within the provided 'group'
 -- and captures the information into trackable Cost groups under a 'Total Costs' header
 local function BuildTotalCost(group)
-	if not group.g then return end
 
 	-- Pop out the cost totals into their own sub-groups for accessibility
 	local costGroup = app.CreateRawText(L.COST_TOTAL, {
@@ -928,15 +927,12 @@ local function BuildTotalCost(group)
 
 	local Collector = app.Modules.Costs.GetCostCollector()
 
-	local function RefreshCollector()
+	local function RefreshCollector(window)
+		-- don't process the refresh if there was a window provided to the event and it's a different window
+		if window and window ~= group.window then return end
 		wipe(costGroup.g)
-		-- app.DirectGroupUpdate(costGroup)
-		-- this triggers prior to the update in the window completing, and cost groups are determined by visibility
-		-- so delay the refresh
-		app.CallbackHandlers.DelayedCallback(Collector.ScanGroups, 1, group, costGroup)
+		Collector.ScanGroups(group, costGroup)
 	end
-
-	RefreshCollector()
 
 	-- we need to make sure we have a window reference for this group's Collector
 	-- so that when the window is expired, we know to remove the necessary Handler(s)
@@ -945,6 +941,8 @@ local function BuildTotalCost(group)
 		group.window:AddEventHandler("OnRecalculate_NewSettings", RefreshCollector)
 		-- force refresh should refresh collector...
 		group.window:AddEventHandler("OnRefreshCollections", RefreshCollector)
+		-- when the window is done filling, we can run the collector
+		group.window:AddEventHandler("OnWindowFillComplete", RefreshCollector)
 	end
 
 	-- Add the cost group to the popout

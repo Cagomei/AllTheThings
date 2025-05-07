@@ -44,7 +44,7 @@ root(ROOTS.Promotions, {
 		["timeline"] = { ADDED_11_0_0 },
 		["groups"] = {
 			n(RAZER, sharedDataSelf({
-				["timeline"] = { ADDED_11_0_7, "removed 11.1.5.99999" },
+				["timeline"] = { ADDED_11_0_7, "removed 11.1.5.60568" },
 				["u"] = REAL_MONEY,
 			}, {
 				i(190539, {	-- Coral-Stalker Waveray (MOUNT!)

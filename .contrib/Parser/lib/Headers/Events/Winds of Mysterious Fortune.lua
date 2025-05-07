@@ -3,9 +3,9 @@ WINDS_OF_MYSTERIOUS_FORTUNE_HEADER = createHeader({
 	icon = 6439633,
 	eventID = EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE,
 	eventSchedule = {
-		0, -- April 23rd, 2025 to May 14th, 2025
-		2025, 4, 23,	-- 4/23/2025
-		2025, 5, 14,	-- 5/14/2025
+		0, -- April 22nd, 2025 to May 20th, 2025
+		2025, 4, 22,	-- 4/22/2025
+		2025, 5, 20,	-- 5/20/2025
 	},
 	text = {
 		en = "Winds of Mysterious Fortune",

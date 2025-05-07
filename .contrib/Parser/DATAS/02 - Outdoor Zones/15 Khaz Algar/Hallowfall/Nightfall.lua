@@ -268,12 +268,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["isDaily"] = true,
 					}),
 					-- The Eastern Assault
-					--o() TODO
+					o(527411, {	-- Suspicious Document (Dissenter Troosilver/Whisperer Bravefort)
+						["coord"] = { 72.7, 41.5, HALLOWFALL },
+					}),
 					n(241232, {	-- Dissenter Troosilver
 						["description"] = "Within The Eastern Assault.",
+						["provider"] = { "o", 527411 },	-- Suspicious Document
+						["questID"] = 91158,
+						["isDaily"] = true,
 					}),
 					n(241236, {	-- Whisperer Bravefort
 						["description"] = "Within The Eastern Assault.",
+						["provider"] = { "o", 527411 },	-- Suspicious Document
+						["questID"] = 91155,
+						["isDaily"] = true,
 					}),
 				}),
 				n(REWARDS, {
