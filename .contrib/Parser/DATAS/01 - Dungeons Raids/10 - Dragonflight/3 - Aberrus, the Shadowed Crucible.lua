@@ -1136,7 +1136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				BossOnly(MAGMORAX),
 				BossOnly(NELTHARION),
 				BossOnly(SARKARETH, {
-					i(204465, {ItemAppearanceModifierID=3}),	-- Voice of the Silent Star
+					i(204465, {up=IGNORED_VALUE, modID=5, ItemAppearanceModifierID=3}),	-- Voice of the Silent Star
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({

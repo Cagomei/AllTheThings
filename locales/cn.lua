@@ -282,10 +282,22 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 			L.TITLE_NONE_THINGS = "一无所有 ";
 			L.TITLE_ONLY = " 仅 ";
 			L.TITLE_INSANE = app.ccColors.Insane.."疯狂|R ";
+			--TODO: L.TITLE_RANKED = "Ranked ";
+			--TODO: L.TITLE_CORE = "Core ";
 			L.TITLE_SOME_THINGS = "随随便便 ";
 			L.TITLE_LEVEL = "等级 ";
 			L.TITLE_SOLO = "个人 ";
 			L._BETA_LABEL = " |cff4AA7FF[测试]|R";
+
+			--TODO: L.PRESET_TOOLTIP = "Enable this preset. This will adjust only the relevant tracking options of the current profile.";
+			--TODO: L.PRESET_NONE = "None of the Things Mode disables the tracking of all collectibles. Way to challenge yourself.";
+			--TODO: L.PRESET_CORE = "Core Mode enables the collectibles visible in the game's Warband Collections journal.";
+			--TODO: L.PRESET_RANKED = "Ranked Mode enables the collectibles tracked by websites such as Data For Azeroth and WoWthing.";
+			--TODO: L.PRESET_INSANE = app.ccColors.Insane .. "Insane Mode|R enables all " .. app.ccColors.Insane .. "colored options|R and gives you a real challenge!";
+			--TODO: L.PRESET_ACCOUNT = app.ccColors.Account .. "Account Mode|R enables all account-wide tracking, and will show progress from all of your characters.";
+			--TODO: L.PRESET_SOLO = "Solo Mode disables all account-wide tracking, and will only show progress for your current character.";
+			--TODO: L.PRESET_UNIQUE = "Unique Mode disables Sources, marking gear as collected when you have learned their unique appearance. This will still show gear if you only know a class-locked version of that appearance.";
+			--TODO: L.PRESET_COMP = "Completionist Mode enables Sources, only marking gear as collected when you have learned the appearance from that specific item.";
 
 		L.MINIMAP_SLIDER = "小地图按钮尺寸";
 		L.MINIMAP_SLIDER_TOOLTIP = '使用此选项可自定义小地图按钮的大小。\n\n默认：36';

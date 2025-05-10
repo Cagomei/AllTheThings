@@ -1413,8 +1413,6 @@ i(228966);	-- Starry-Eyed Goggles
 -- #endif
 i(234473);	-- Soweezi's Comfy Lawn Chair
 i(218308);	-- Winter Veil Cracker
---- NYI ---
-i(235016);	-- Redeployment Module
 
 ------------------
 -- PATCH 11.1.0 --
@@ -1464,6 +1462,10 @@ i(239018);	-- Winner's Podium
 ------------------
 -- PATCH 11.1.7 --
 ------------------
-i(245567);	-- K'aresh Memory Crystal
-i(245631);	-- Royal Visage
 i(244888);	-- Echo of the Xal'atath, Blade of the Black Empire
+i(245567);	-- K'aresh Memory Crystal
+i(235016);	-- Redeployment Module
+i(245631);	-- Royal Visage
+--- UNSORTED ---
+i(246227);	-- Lightning-Blessed Spire
+i(245942);	-- Sea-Blessed Shrine

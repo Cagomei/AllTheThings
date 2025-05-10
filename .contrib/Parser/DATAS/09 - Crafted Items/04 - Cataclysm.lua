@@ -1608,9 +1608,9 @@ Fire and Water - Damage against Elementals increased by 15%.
 			bloodthirsty(i(70061)),	-- Bloodthirsty Embersilk Boots
 			bloodthirsty(i(70053)),	-- Bloodthirsty Fireweave Boots
 			i(54477),	-- Deathsilk Boots
-			i(54499, { ["timeline"] = { CREATED_4_4_0 } }),	-- Emberfire Boots, never got added to the game
-			i(54490, { ["timeline"] = { CREATED_4_4_0 } }),	-- Fireweave Boots, never got added to the game
+			bloodied(i(54499)),	-- Emberfire Boots
 			firelands(i(69953)),	-- Endless Dream Walkers
+			bloodied(i(54490)),	-- Fireweave Boots
 			i(54482),	-- Spiritmend Boots
 			dragonsoul(i(75095)),	-- Vicious Embersilk Boots
 			dragonsoul(i(75087)),	-- Vicious Fireweave Boots
@@ -1620,8 +1620,8 @@ Fire and Water - Damage against Elementals increased by 15%.
 			bloodthirsty(i(70056)),	-- Bloodthirsty Fireweave Gloves
 			i(54478),	-- Deathsilk Gloves
 			firelands(i(69945)),	-- Don Tayo's Inferno Mittens
-			i(54497, { ["timeline"] = { CREATED_4_4_0 } }),	-- Emberfire Gloves, never got added to the game
-			i(54492, { ["timeline"] = { CREATED_4_4_0 } }),	-- Fireweave Gloves, never got added to the game
+			bloodied(i(54497)),	-- Emberfire Gloves
+			bloodied(i(54492)),	-- Fireweave Gloves
 			firelands(i(69944)),	-- Grips of Altered Reality
 			i(54484),	-- Spiritmend Gloves
 			dragonsoul(i(75070)),	-- Vicious Embersilk Gloves
@@ -1656,8 +1656,8 @@ Fire and Water - Damage against Elementals increased by 15%.
 			bloodthirsty(i(70064)),	-- Bloodthirsty Embersilk Shoulders
 			bloodthirsty(i(70059)),	-- Bloodthirsty Fireweave Shoulders
 			i(54474),	-- Deathsilk Shoulders
-			i(54502, { ["timeline"] = { CREATED_4_4_0 } }),	-- Emberfire Shoulders, never got added to the game
-			i(54487, { ["timeline"] = { CREATED_4_4_0 } }),	-- Fireweave Shoulders, never got added to the game
+			bloodied(i(54502)),	-- Emberfire Shoulders
+			bloodied(i(54487)),	-- Fireweave Shoulders
 			i(54479),	-- Spiritmend Shoulders
 			dragonsoul(i(75064)),	-- Vicious Embersilk Shoulders
 			dragonsoul(i(75091)),	-- Vicious Fireweave Shoulders
@@ -1668,8 +1668,8 @@ Fire and Water - Damage against Elementals increased by 15%.
 			bloodthirsty(i(70052)),	-- Bloodthirsty Fireweave Belt
 			i(54471),	-- Deathsilk Belt
 			i(54503),	-- Dreamless Belt
-			i(54500, { ["timeline"] = { CREATED_4_4_0 } }),	-- Emberfire Belt, never got added to the game
-			i(54489, { ["timeline"] = { CREATED_4_4_0 } }),	-- Fireweave Belt, never got added to the game
+			bloodied(i(54500)),	-- Emberfire Belt
+			bloodied(i(54489)),	-- Fireweave Belt
 			i(54481),	-- Spiritmend Belt
 			dragonsoul(i(75096)),	-- Vicious Embersilk Belt
 			dragonsoul(i(75086)),	-- Vicious Fireweave Belt
@@ -1680,8 +1680,8 @@ Fire and Water - Damage against Elementals increased by 15%.
 			dragonsoul(i(71989)),	-- Bracers of Unconquered Power
 			i(54473),	-- Deathsilk Bracers
 			dragonsoul(i(71990)),	-- Dreamwraps of the Light
-			i(54501, { ["timeline"] = { CREATED_4_4_0 } }),	-- Emberfire Bracers, never got added to the game
-			i(54488, { ["timeline"] = { CREATED_4_4_0 } }),	-- Fireweave Bracers, never got added to the game
+			bloodied(i(54501)),	-- Emberfire Bracers
+			bloodied(i(54488)),	-- Fireweave Bracers
 			i(54480),	-- Spiritmend Bracers
 			dragonsoul(i(75098)),	-- Vicious Embersilk Bracers
 			dragonsoul(i(75089)),	-- Vicious Fireweave Bracers

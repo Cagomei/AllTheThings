@@ -1028,13 +1028,17 @@ namespace ATT
 
                 // Firstly check to see if there's an ArtifactID associated with the data.
                 long ItemAppearanceModifierID = NestedItemAppearanceModifierID;
+                long AssignedItemAppearanceModifierID = 0;
                 if (data.TryGetValue("artifactID", out var artifactIDObj)
                     && TryGetTypeDBObject((long)artifactIDObj, out ArtifactAppearance artifactAppearance)
                     && artifactAppearance != null)
                 {
                     ItemAppearanceModifierID = artifactAppearance.ItemAppearanceModifierID;
                 }
-                else if (data.TryGetValue("ItemAppearanceModifierID", out var ItemAppearanceModifierIDObj)) ItemAppearanceModifierID = (long)ItemAppearanceModifierIDObj;
+                else
+                {
+                    data.TryGetValue("ItemAppearanceModifierID", out AssignedItemAppearanceModifierID);
+                }
 
                 // Attempt to get the SourceID from the ItemModifiedAppearanceDB
                 long? ItemModifiedAppearanceID = null;
@@ -1048,7 +1052,7 @@ namespace ATT
                         if (itemModifiedAppearanceObj is ItemModifiedAppearance appearance)
                         {
                             // Well, we found the sourceID in the database. Let's report it.
-                            if (appearance.ID == sourceIDFromSourcesDB)
+                            if (AssignedItemAppearanceModifierID == 0 && appearance.ID == sourceIDFromSourcesDB)
                             {
                                 itemModifiedAppearance = appearance;
                                 break;
@@ -1069,7 +1073,7 @@ namespace ATT
                     if (itemModifiedAppearance != null)
                     {
                         ItemModifiedAppearanceID = itemModifiedAppearance.ID;
-                        if(itemModifiedAppearances.Count == 1)
+                        if (itemModifiedAppearances.Count == 1)
                         {
                             // If its the only one, ignore it. This is common for old items that don't conform to modID/bonusID.
                             ItemAppearanceModifierID = itemModifiedAppearance.ItemAppearanceModifierID;
@@ -1079,8 +1083,14 @@ namespace ATT
 
                 // Compare the appearance from the ItemModifiedAppearance database and the one from ours.
                 long? sourceID = sourceIDFromSourcesDB ?? ItemModifiedAppearanceID;
+                // If we've forced an ItemAppearanceModifierID, then use the matching ItemModifiedAppearanceID
+                if (AssignedItemAppearanceModifierID > 0)
+                {
+                    sourceID = ItemModifiedAppearanceID;
+                }
                 if (sourceID.HasValue && sourceID > 0)
                 {
+                    // Don't report if the ItemAppearanceModifierID was specifically assigned
 #pragma warning disable CS0162 // Unreachable code detected
                     // Details regarding how the selected SourceID was reached.
                     string message = ItemModifiedAppearanceID.ToString();
@@ -1107,7 +1117,7 @@ namespace ATT
                         }
                         else if (substituted)
                         {
-                            // Report when we found a matching sourceID to the SourceID database, but 
+                            // Report when we found a matching sourceID to the SourceID database, but
                             LogWarn($"Item:{sourceIDKey} SourceID == {message}");
                         }
                         else if (DoSpammyDebugLogging)
@@ -1116,7 +1126,7 @@ namespace ATT
                         }
                     }
                     else if (substituted) LogWarn($"Item:{sourceIDKey} Using SourceID from {message}");
-                    else if(DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Using SourceID from {message}");
+                    else if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Using SourceID from {message}");
 #pragma warning restore CS0162 // Unreachable code detected
 
                     // quite spammmmmy, only enable if needed

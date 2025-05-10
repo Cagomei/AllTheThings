@@ -12689,14 +12689,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
-			-- For some reason, they made 1 item in TWW too.
-			n(SEASON_DRACONIC_PVP, {
-				n(PVP_GLADIATOR, {
-					cl(MAGE, {
-						i(216027, { ["bonusID"] = 1, ["modID"] = 0 }),	-- Draconic Gladiator's Silk Blouse [sourceID 227796]
-					}),
-				}),
-			}),
 			n(SEASON_FORGED, {
 				n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 7532 }, {
 					cl(DEATHKNIGHT, {

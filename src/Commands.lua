@@ -339,9 +339,15 @@ function(cmd)
 		local group = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill = true});
 		app.SetSkipLevel(0);
 		-- make sure it's 'something' returned from the search before throwing it into a window
-		if group and (group.link or group.name or group.text or group.key) then
-			app:CreateMiniListForGroup(group);
-			return true;
+		if group then
+			if group.criteriaID and not group.achievementID then
+				app.print("Unsourced Criteria",group.criteriaID,"Use /att criteriaID:achievementID to view unsourced Criteria info")
+				return true
+			end
+			if group.link or group.name or group.text or group.key then
+				app:CreateMiniListForGroup(group);
+				return true;
+			end
 		end
 		app.print("Unknown Command: ", cmd);
 	else

@@ -566,7 +566,7 @@ namespace ATT
             }
 
             // Cache the state of values that are inherited from parent objects to their children.
-            
+
             var cachedDifficultyRoot = DifficultyRoot;
             long cachedDifficulty = NestedDifficultyID;
             long cachedHeaderID = NestedHeaderID;
@@ -2021,8 +2021,13 @@ namespace ATT
             if (achInfo.TryGetValue("criteriaTreeID", out long criteriaTreeID) &&
                 TryGetTypeDBObject(criteriaTreeID, out CriteriaTree criteriaTree))
             {
-                // Some Achievements we use specific symlinks to show information instead of Criteria
-                if (CheckSymlink(data, "meta_achievement", "partial_achievement", "select"))
+                // Some Achievements we use specific symlinks to show information instead of Criteria (for pre-CATA parses)
+                if (CURRENT_RELEASE_VERSION < FIRST_EXPANSION_PATCH["CATA"].ConvertVersion() && CheckSymlink(data, "meta_achievement"))
+                {
+                    LogDebug($"INFO: Achievement {achID} skipping Criteria incorporation due to symlink:", data["sym"]);
+                    return;
+                }
+                else if (CheckSymlink(data, "partial_achievement", "select"))
                 {
                     LogDebug($"INFO: Achievement {achID} skipping Criteria incorporation due to symlink:", data["sym"]);
                     return;
@@ -2885,6 +2890,17 @@ namespace ATT
                 }
             }
 
+            // Remove any added SourceIDs which don't actually exist in the ItemModifiedAppearance DB
+            allSourceIDs.RemoveAll(id =>
+            {
+                if (!TryGetTypeDBObject<ItemModifiedAppearance>(id, out _))
+                {
+                    LogDebugWarn($"Removing SourceID {id} from TransmogSet {tmogSetID} since it does not exist in ItemModifiedAppearanceDB");
+                    return true;
+                }
+                return false;
+            });
+
             Objects.Merge(data, "_sourceIDs", allSourceIDs);
             TrackIncorporationData(data, "_sourceIDs", allSourceIDs);
             LogDebug($"INFO: Ensemble {type} with TransmogSet {tmogSetID} merged {allSourceIDs.Count} SourceIDs", data);
@@ -3040,9 +3056,9 @@ namespace ATT
                     TrackIncorporationData(data, "tmogSetID", tmogSetID);
                     LogDebug($"INFO: Assigned 'tmogSetID' {tmogSetID}", data);
                 }
-                Incorporate_Item_TransmogSetItems(data, tmogSetID);
                 // this is repeated later for the same data, yes, but we need to ensure some things happen in the correct order
                 Incorporate_Ensemble(data);
+                Incorporate_Item_TransmogSetItems(data, tmogSetID);
             }
         }
 
@@ -3124,6 +3140,17 @@ namespace ATT
                     cloned = true;
                 }
             }
+            if (data.TryGetValue("_species", out object species))
+            {
+                DuplicateDataIntoGroups(data, species, "speciesID");
+                cloned = true;
+                // don't also nest to NPCs if we are nesting species, can warn to remove the NPCs
+                if (data.TryGetValue("_npcs", out object speciesNpcs))
+                {
+                    LogDebugWarn($"Removing _npcs {ToJSON(speciesNpcs)} since _species {ToJSON(species)} was prioritized instead", data);
+                    data.Remove("_npcs");
+                }
+            }
             if (data.TryGetValue("_npcs", out object npcs))
             {
                 // TODO: consolidate when creature/npc are the same... if that ever happens
@@ -3186,11 +3213,6 @@ namespace ATT
                 DuplicateDataIntoGroups(data, mission, "missionID");
                 cloned = true;
             }
-            if (data.TryGetValue("_species", out object species))
-            {
-                DuplicateDataIntoGroups(data, species, "speciesID");
-                cloned = true;
-            }
 
             // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
             if (cloned && data.TryGetValue("criteriaID", out criteriaID))
@@ -3201,7 +3223,7 @@ namespace ATT
                     List<long> crs = new List<long>();
                     foreach (long npcID in npcObjs.AsTypedEnumerable<long>())
                     {
-                        if (!SOURCED["npcID"].ContainsKey(npcID))
+                        if (!TryGetSOURCED("npcID", npcID, out var npcSources))
                         {
                             // remove the creatures which are not sourced from being reported as failed to merge
                             data.TryGetValue("achID", out long achID);

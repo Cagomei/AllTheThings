@@ -5,6 +5,7 @@ namespace ATT.DB.Types
     /// <summary>
     /// https://wago.tools/db2/TransmogSetItem
     /// </summary>
+    /// <remarks>Any new comparisons by Effect need to update the associated .contrib\.wago\SpellEffect.regex to include the expected Effect value</remarks>
     internal class SpellEffect : IDBType
     {
         public long ID { get; set; }

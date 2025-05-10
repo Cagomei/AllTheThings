@@ -315,7 +315,7 @@ local function default_link(t)
 		end
 		-- app.PrintDebug("default_link",itemLink,modID,bonusID)
 		if bonusID then
-			itemLink = ("item:%d:::::::::::%d:1:%d:"):format(itemLink, modID, bonusID);
+			itemLink = ("item:%d:::::::::::%s:1:%d:"):format(itemLink, modID or "", bonusID);
 		elseif modID then
 			-- bonusID 3524 seems to imply "use ModID to determine SourceID" since without it, everything with ModID resolves as the base SourceID from links
 			itemLink = ("item:%d:::::::::::%d:1:3524:"):format(itemLink, modID);

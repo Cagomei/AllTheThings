@@ -3510,15 +3510,12 @@ profession(TAILORING, {
 					["recipeID"] = 75251
 				},
 				-- #if ANYCLASSIC
-				-- AWESOME NOTE: Emberfire Shoulders & Fireweave Shoulders never made it to the game
 				{
 					["name"] = "Emberfire Shoulders",
-					["timeline"] = { CREATED_4_4_0 },
 					["recipeID"] = 1224211
 				},
 				{
 					["name"] = "Fireweave Shoulders",
-					["timeline"] = { CREATED_4_4_0 },
 					["recipeID"] = 1224212
 				},
 				-- #endif
@@ -3637,15 +3634,12 @@ profession(TAILORING, {
 					["recipeID"] = 101922
 				}),
 				-- #if ANYCLASSIC
-				-- AWESOME NOTE: Emberfire Bracers & Fireweave Bracers never made it to the game
 				{
 					["name"] = "Emberfire Bracers",
-					["timeline"] = { CREATED_4_4_0 },
 					["recipeID"] = 1224209
 				},
 				{
 					["name"] = "Fireweave Bracers",
-					["timeline"] = { CREATED_4_4_0 },
 					["recipeID"] = 1224210
 				},
 				-- #endif
@@ -3694,19 +3688,6 @@ profession(TAILORING, {
 					["name"] = "Belt of the Depths",
 					["recipeID"] = 75298
 				},
-				-- #if ANYCLASSIC
-				-- AWESOME NOTE: Emberfire Belt & Fireweave Belt never made it to the game
-				{
-					["name"] = "Emberfire Belt",
-					["timeline"] = { CREATED_4_4_0 },
-					["recipeID"] = 1224213
-				},
-				{
-					["name"] = "Fireweave Belt",
-					["timeline"] = { CREATED_4_4_0 },
-					["recipeID"] = 1224208
-				},
-				-- #endif
 				{
 					["name"] = "Deathsilk Belt",
 					["recipeID"] = 75248
@@ -3715,6 +3696,16 @@ profession(TAILORING, {
 					["name"] = "Dreamless Belt",
 					["recipeID"] = 75299
 				},
+				-- #if ANYCLASSIC
+				{
+					["name"] = "Emberfire Belt",
+					["recipeID"] = 1224213
+				},
+				{
+					["name"] = "Fireweave Belt",
+					["recipeID"] = 1224208
+				},
+				-- #endif
 				{
 					["name"] = "Spiritmend Belt",
 					["recipeID"] = 75258
@@ -3766,15 +3757,12 @@ profession(TAILORING, {
 					["recipeID"] = 99449
 				}),
 				-- #if ANYCLASSIC
-				-- AWESOME NOTE: Emberfire Gloves & Fireweave Gloves never made it to the game
 				{
 					["name"] = "Emberfire Gloves",
-					["timeline"] = { CREATED_4_4_0 },
 					["recipeID"] = 1224215
 				},
 				{
 					["name"] = "Fireweave Gloves",
-					["timeline"] = { CREATED_4_4_0 },
 					["recipeID"] = 1224216
 				},
 				-- #endif
@@ -3915,15 +3903,12 @@ profession(TAILORING, {
 					["recipeID"] = 99459
 				}),
 				-- #if ANYCLASSIC
-				-- AWESOME NOTE: Emberfire Boots & Fireweave Boots never made it to the game
 				{
 					["name"] = "Emberfire Boots",
-					["timeline"] = { CREATED_4_4_0 },
 					["recipeID"] = 1224217
 				},
 				{
 					["name"] = "Fireweave Boots",
-					["timeline"] = { CREATED_4_4_0 },
 					["recipeID"] = 1224214
 				},
 				-- #endif

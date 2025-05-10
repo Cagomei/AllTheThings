@@ -3085,7 +3085,7 @@ root(ROOTS.Zones, {
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
 					})),
-					n(20889, {	-- Ethereum Prisoner (Group Energy Ball)
+					o(184595, {	-- Ethereum Stasis Chamber
 						["description"] = "You can use either of the listed keys to open an Ethereum Stasis Chamber.",
 						["coords"] = {
 							{ 51.2, 11.6, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
@@ -3093,6 +3093,7 @@ root(ROOTS.Zones, {
 							{ 49.6, 21.2, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
 							{ 52.6, 20.0, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
 						},
+						["cr"] = 20889,	-- Ethereum Prisoner (Group Energy Ball)
 						["cost"] = {
 							{ "i", 32773, 1 },	-- Bash'ir's Skeleton Key
 							{ "i", 29750, 1 },	-- Ethereum Stasis Chamber Key

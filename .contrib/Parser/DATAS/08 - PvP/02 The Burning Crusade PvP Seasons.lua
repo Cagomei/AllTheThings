@@ -1409,7 +1409,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 		n(ACHIEVEMENTS, {
 			ach(11707, {["timeline"] = {ADDED_7_2_0}}),	-- No Mercy (PvP Season 2)
 		}),
-		elitepvp(n(ACHIEVEMENTS, bubbleDown({
+		n(ACHIEVEMENTS, elitepvp(bubbleDown({
 			["timeline"] = { ADDED_2_1_2, REMOVED_2_3_0 },
 			-- #if BEFORE WRATH
 			["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
@@ -2140,7 +2140,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 		n(ACHIEVEMENTS, {
 			ach(11708, {["timeline"] = {ADDED_7_2_0}}),	-- With a Vengeance (PvP Season 3)
 		}),
-		elitepvp(n(ACHIEVEMENTS, bubbleDown({
+		n(ACHIEVEMENTS, elitepvp(bubbleDown({
 			["timeline"] = { ADDED_2_3_0, REMOVED_2_4_3 },
 			-- #if BEFORE WRATH
 			["OnUpdate"] = VENGEFUL_GLADIATOR_ONUPDATE,
@@ -2914,7 +2914,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 		n(ACHIEVEMENTS, {
 			ach(11709, {["timeline"] = {ADDED_7_2_0}}),	-- Tough Threads (PvP Season 4)
 		}),
-		elitepvp(n(ACHIEVEMENTS, bubbleDown({
+		n(ACHIEVEMENTS, elitepvp(bubbleDown({
 			["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 },
 			-- #if BEFORE 4.0.1
 			["OnUpdate"] = BRUTAL_GLADIATOR_ONUPDATE,

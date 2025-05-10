@@ -581,7 +581,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(BLOODBOUND_HORROR),
 				BossOnly(SIKRAN),
 				BossOnly(RASHANAN, {
-					i(225574, {ItemAppearanceModifierID=3}),	-- Wings of Shattered Sorrow
+					i(225574, {up=IGNORED_VALUE, modID=5, ItemAppearanceModifierID=3}),	-- Wings of Shattered Sorrow
 				}),
 				BossOnly(OVINAX),
 				BossOnly(KYVEZA),

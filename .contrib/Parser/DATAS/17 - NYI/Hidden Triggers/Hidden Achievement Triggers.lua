@@ -3844,6 +3844,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(42228),	-- Console Overcharged Purchase 16
 			ach(42229),	-- Console Overcharged Purchase 17
 			ach(42230),	-- 11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid, First Time Tracker
+
+			-- 11.1.7.60672
+			ach(42240),	-- Anu'relos, Flame's Guidance <Tracking Achievement>
 		})),
 	}),
 });

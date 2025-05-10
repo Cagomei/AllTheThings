@@ -402,14 +402,18 @@ do
 		local critUID = t.uid or t.criteriaID
 		local critID = t.id or critUID
 		achievementID = achievementID or t.achievementID
+		if not achievementID or not critID then return end
+
 		local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
 			= GetAchievementCriteriaInfoByID(achievementID, critUID)
-		if IsRetrieving(criteriaString) and critID <= GetAchievementNumCriteria(achievementID) then
-			criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
-			---@diagnostic disable-next-line: redundant-parameter
-			= GetAchievementCriteriaInfo(achievementID, critID, true)
+		-- criteriaType will exist even when criteriaString is empty, so don't need to check retrieving and stuff
+		if criteriaType then
+			return criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
 		end
-		return criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
+		if critID <= GetAchievementNumCriteria(achievementID) then
+			---@diagnostic disable-next-line: redundant-parameter
+			return GetAchievementCriteriaInfo(achievementID, critID, true)
+		end
 	end
 
 	local QuickAchievementCache = setmetatable({}, { __index = function(t,key)

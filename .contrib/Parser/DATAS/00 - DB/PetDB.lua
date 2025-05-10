@@ -4385,6 +4385,6 @@ i(239019, 4806);	-- Spicy Mean-Ball
 ------------------
 -- PATCH 11.1.7 --
 ------------------
---- UNSORTED ---
 i(245543, 4849);	-- Flotsam Harvester
 i(245574, 4852);	-- Lil' Daz'ti
+--- UNSORTED ---

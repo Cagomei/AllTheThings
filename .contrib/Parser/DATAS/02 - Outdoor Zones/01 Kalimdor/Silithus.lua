@@ -183,6 +183,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if BEFORE 4.3.0
+			n(PROFESSIONS, {
+				prof(SKINNING, {
+					i(20501, {	-- Heavy Silithid Carapace
+						["timeline"] = { DELETED_4_3_0 },
+						["crs"] = {
+							11723,	-- Hive'Ashi Sandstalker
+							11730,	-- Hive'Regal Ambusher
+							11734,	-- Hive'Regal Hive Lord
+							15323,	-- Hive'Zara Sandstalker
+							11728,	-- Hive'Zora Reaver
+						},
+					}),
+					i(20500, {	-- Light Silithid Carapace
+						["timeline"] = { DELETED_4_3_0 },
+						["crs"] = {
+							13136,	-- Hive'Ashi Drone
+							11698,	-- Hive'Ashi Stinger
+							11724,	-- Hive'Ashi Swarmer
+							11732,	-- Hive'Regal Spitfire
+							11727,	-- Hive'Zora Wasp
+						},
+					}),
+					i(20498, {	-- Silithid Chitin
+						["timeline"] = { DELETED_4_3_0 },
+					}),
+				}),
+			}),
+			-- #endif
 			n(QUESTS, {
 				applyclassicphase(PHASE_FIVE_CATCH_UP, q(9248, {	-- A Humble Offering
 					["qg"] = 15282,	-- Aurel Goldleaf
@@ -2201,19 +2230,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(RARES, {
 				o(180456, {	-- Lesser Wind Stone
-					["description"] = "Summons one of 4 Abyssal Templars. The ritual requires a Twilight Trappings set. To guarantee that a specific Templar is summoned, a Crest of Beckoning can be used.",
+					["description"] =
+						-- #if AFTER CATA
+						"Before Cataclysm, this was the summoning place of Abyssal Templars.\nNow, it is unusable as items required for the summonings can't be obtained.",
+						-- #else
+						"Summons one of 4 Abyssal Templars. The ritual requires a Twilight Trappings set. To guarantee that a specific Templar is summoned, a Crest of Beckoning can be used.",
+						-- #endif
 					["cost"] = {
 						{ "i", 20408, 1 },	-- Twilight Cultist Cowl
 						{ "i", 20406, 1 },	-- Twilight Cultist Mantle
 						{ "i", 20407, 1 },	-- Twilight Cultist Robe
 					},
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 28.6, 77.1, SILITHUS },
+						{ 35.0, 29.5, SILITHUS },
+						{ 44.4, 39.6, SILITHUS },
+						-- #else
 						{ 20.5, 86.2, SILITHUS },
 						{ 18.2, 81.1, SILITHUS },
 						{ 39.0, 42.4, SILITHUS },
 						{ 38.3, 46.5, SILITHUS },
 						{ 27.9, 30.6, SILITHUS },
 						{ 24.4, 36.0, SILITHUS },
+						-- #endif
 					},
 					["groups"] = {
 						i(20513, {	-- Abyssal Crest
@@ -2288,7 +2328,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				o(180461, {	-- Wind Stone
-					["description"] = "Summons one of 4 Abyssal Dukes. The ritual requires a Twilight Trappings set and a medallion of station. To guarantee that a specific Duke is summoned, a Signet of Beckoning can be used.",
+					["description"] =
+						-- #if AFTER CATA
+						"Before Cataclysm, this was the summoning place of Abyssal Dukes.\nNow, it is unusable as items required for the summonings can't be obtained.",
+						-- #else
+						"Summons one of 4 Abyssal Dukes. The ritual requires a Twilight Trappings set and a medallion of station. To guarantee that a specific Duke is summoned, a Signet of Beckoning can be used.",
+						-- #endif
 					["cost"] = {
 						{ "i", 20422, 1 },	-- Twilight Cultist Medallion of Station
 						{ "i", 20408, 1 },	-- Twilight Cultist Cowl
@@ -2296,9 +2341,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 20407, 1 },	-- Twilight Cultist Robe
 					},
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 25.8, 75.9, SILITHUS },
+						{ 32.2, 31.2, SILITHUS },
+						{ 43.3, 41.6, SILITHUS },
+						-- #else
 						{ 17.2, 84.8, SILITHUS },
 						{ 37.6, 44.8, SILITHUS },
 						{ 24.7, 32.7, SILITHUS },
+						-- #endif
 					},
 					["groups"] = {
 						i(20514, {	-- Abyssal Signet
@@ -2376,7 +2427,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, o(180466, {	-- Greater Wind Stone
-					["description"] = "Summons one of 4 Abyssal High Council bosses. The ritual requires a Twilight Trappings set, a medallion of station, and a ring of lordship. To guarantee that a specific High Council is summoned, a Scepter of Beckoning can be used.",
+					["description"] =
+						-- #if AFTER CATA
+						"Before Cataclysm, this was the summoning place of Abyssal High Council.\nNow, it is unusable as items required for the summonings can't be obtained.",
+						-- #else
+						"Summons one of 4 Abyssal High Council bosses. The ritual requires a Twilight Trappings set, a medallion of station, and a ring of lordship. To guarantee that a specific High Council is summoned, a Scepter of Beckoning can be used.",
+						-- #endif
 					["cost"] = {
 						{ "i", 20451, 1 },	-- Twilight Cultist Ring of Lordship
 						{ "i", 20422, 1 },	-- Twilight Cultist Medallion of Station
@@ -2385,9 +2441,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 20407, 1 },	-- Twilight Cultist Robe
 					},
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 26.9, 74.8, SILITHUS },
+						{ 32.9, 32.4, SILITHUS },
+						{ 45.0, 41.9, SILITHUS },
+						-- #else
 						{ 18.6, 83.5, SILITHUS },
 						{ 39.6, 45.1, SILITHUS },
 						{ 25.6, 34.0, SILITHUS },
+						-- #endif
 					},
 					["groups"] = {
 						i(20515, {	-- Abyssal Scepter
@@ -2693,6 +2755,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					}))),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20419, {	-- Crest of Beckoning: Earth
+						-- #if AFTER CATA
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
+						-- #endif
 						["cost"] = {
 							{ "i", 20527, 1 },	-- Scroll: Create Crest of Beckoning (Earth)
 							{ "i", 8170, 1 },	-- Rugged Leather
@@ -2700,6 +2765,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20416, {	-- Crest of Beckoning: Fire
+						-- #if AFTER CATA
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
+						-- #endif
 						["cost"] = {
 							{ "i", 20518, 1 },	-- Scroll: Create Crest of Beckoning (Fire)
 							{ "i", 8170, 1 },	-- Rugged Leather
@@ -2707,6 +2775,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20418, {	-- Crest of Beckoning: Thunder
+						-- #if AFTER CATA
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
+						-- #endif
 						["cost"] = {
 							{ "i", 20526, 1 },	-- Scroll: Create Crest of Beckoning (Thunder)
 							{ "i", 8170, 1 },	-- Rugged Leather
@@ -2714,6 +2785,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20420, {	-- Crest of Beckoning: Water
+						-- #if AFTER CATA
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
+						-- #endif
 						["cost"] = {
 							{ "i", 20528, 1 },	-- Scroll: Create Crest of Beckoning (Water)
 							{ "i", 8170, 1 },	-- Rugged Leather
@@ -2721,6 +2795,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20449, {	-- Scepter of Beckoning: Stone
+						-- #if AFTER CATA
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
+						-- #endif
 						["cost"] = {
 							{ "i", 20543, 1 },	-- Scroll: Create Scepter of Beckoning (Earth)
 							{ "i", 11144, 1 },	-- Truesilver Rod
@@ -2728,6 +2805,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20447, {	-- Scepter of Beckoning: Fire
+						-- #if AFTER CATA
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
+						-- #endif
 						["cost"] = {
 							{ "i", 20540, 1 },	-- Scroll: Create Scepter of Beckoning (Fire)
 							{ "i", 11144, 1 },	-- Truesilver Rod
@@ -2735,6 +2815,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20448, {	-- Scepter of Beckoning: Thunder
+						-- #if AFTER CATA
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
+						-- #endif
 						["cost"] = {
 							{ "i", 20542, 1 },	-- Scroll: Create Scepter of Beckoning (Thunder)
 							{ "i", 11144, 1 },	-- Truesilver Rod
@@ -2742,6 +2825,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20450, {	-- Scepter of Beckoning: Water
+						-- #if AFTER CATA
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
+						-- #endif
 						["cost"] = {
 							{ "i", 20544, 1 },	-- Scroll: Create Scepter of Beckoning (Water)
 							{ "i", 11144, 1 },	-- Truesilver Rod
@@ -2749,6 +2835,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20435, {	-- Signet of Beckoning: Stone
+						-- #if AFTER CATA
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
+						-- #endif
 						["cost"] = {
 							{ "i", 20533, 1 },	-- Scroll: Create Signet of Beckoning (Earth)
 							{ "i", 20520, 1 },	-- Dark Rune
@@ -2756,6 +2845,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20432, {	-- Signet of Beckoning: Fire
+						-- #if AFTER CATA
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
+						-- #endif
 						["cost"] = {
 							{ "i", 20531, 1 },	-- Scroll: Create Signet of Beckoning (Fire)
 							{ "i", 20520, 1 },	-- Dark Rune
@@ -2763,6 +2855,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20433, {	-- Signet of Beckoning: Thunder
+						-- #if AFTER CATA
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
+						-- #endif
 						["cost"] = {
 							{ "i", 20532, 1 },	-- Scroll: Create Signet of Beckoning (Thunder)
 							{ "i", 20520, 1 },	-- Dark Rune
@@ -2770,6 +2865,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20436, {	-- Signet of Beckoning: Water
+						-- #if AFTER CATA
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
+						-- #endif
 						["cost"] = {
 							{ "i", 20535, 1 },	-- Scroll: Create Signet of Beckoning (Water)
 							{ "i", 20520, 1 },	-- Dark Rune
@@ -2790,18 +2888,66 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							applyclassicphase(PHASE_FOUR, i(20554)),	-- Plans: Darkrune Breastplate (RECIPE!)
 							applyclassicphase(PHASE_FOUR, i(20553)),	-- Plans: Darkrune Gauntlets (RECIPE!)
 							applyclassicphase(PHASE_FOUR, i(20555)),	-- Plans: Darkrune Helm (RECIPE!)
-							i(20527),	-- Scroll: Create Crest of Beckoning (Earth)
-							i(20518),	-- Scroll: Create Crest of Beckoning (Fire)
-							i(20526),	-- Scroll: Create Crest of Beckoning (Thunder)
-							i(20528),	-- Scroll: Create Crest of Beckoning (Water)
-							i(20543),	-- Scroll: Create Scepter of Beckoning (Earth)
-							i(20540),	-- Scroll: Create Scepter of Beckoning (Fire)
-							i(20542),	-- Scroll: Create Scepter of Beckoning (Thunder)
-							i(20544),	-- Scroll: Create Scepter of Beckoning (Water)
-							i(20533),	-- Scroll: Create Signet of Beckoning (Earth)
-							i(20531),	-- Scroll: Create Signet of Beckoning (Fire)
-							i(20532),	-- Scroll: Create Signet of Beckoning (Thunder)
-							i(20535),	-- Scroll: Create Signet of Beckoning (Water)
+							i(20527, {	-- Scroll: Create Crest of Beckoning (Earth)
+								-- #if AFTER CATA
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
+								-- #endif
+							}),
+							i(20518, {	-- Scroll: Create Crest of Beckoning (Fire)
+								-- #if AFTER CATA
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
+								-- #endif
+							}),
+							i(20526, {	-- Scroll: Create Crest of Beckoning (Thunder)
+								-- #if AFTER CATA
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
+								-- #endif
+							}),
+							i(20528, {	-- Scroll: Create Crest of Beckoning (Water)
+								-- #if AFTER CATA
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
+								-- #endif
+							}),
+							i(20543, {	-- Scroll: Create Scepter of Beckoning (Earth)
+								-- #if AFTER CATA
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
+								-- #endif
+							}),
+							i(20540, {	-- Scroll: Create Scepter of Beckoning (Fire)
+								-- #if AFTER CATA
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
+								-- #endif
+							}),
+							i(20542, {	-- Scroll: Create Scepter of Beckoning (Thunder)
+								-- #if AFTER CATA
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
+								-- #endif
+							}),
+							i(20544, {	-- Scroll: Create Scepter of Beckoning (Water)
+								-- #if AFTER CATA
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
+								-- #endif
+							}),
+							i(20533, {	-- Scroll: Create Signet of Beckoning (Earth)
+								-- #if AFTER CATA
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
+								-- #endif
+							}),
+							i(20531, {	-- Scroll: Create Signet of Beckoning (Fire)
+								-- #if AFTER CATA
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
+								-- #endif
+							}),
+							i(20532, {	-- Scroll: Create Signet of Beckoning (Thunder)
+								-- #if AFTER CATA
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
+								-- #endif
+							}),
+							i(20535, {	-- Scroll: Create Signet of Beckoning (Water)
+								-- #if AFTER CATA
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
+								-- #endif
+							}),
 						},
 					})),
 					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(20805, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (A)
@@ -2863,33 +3009,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}))),
 				},
 			}),
-			-- #if BEFORE 4.3.0
-			prof(SKINNING, {
-				i(20501, {	-- Heavy Silithid Carapace
-					["timeline"] = { DELETED_4_3_0 },
-					["crs"] = {
-						11723,	-- Hive'Ashi Sandstalker
-						11730,	-- Hive'Regal Ambusher
-						11734,	-- Hive'Regal Hive Lord
-						15323,	-- Hive'Zara Sandstalker
-						11728,	-- Hive'Zora Reaver
-					},
-				}),
-				i(20500, {	-- Light Silithid Carapace
-					["timeline"] = { DELETED_4_3_0 },
-					["crs"] = {
-						13136,	-- Hive'Ashi Drone
-						11698,	-- Hive'Ashi Stinger
-						11724,	-- Hive'Ashi Swarmer
-						11732,	-- Hive'Regal Spitfire
-						11727,	-- Hive'Zora Wasp
-					},
-				}),
-				i(20498, {	-- Silithid Chitin
-					["timeline"] = { DELETED_4_3_0 },
-				}),
-			}),
-			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_FOUR, i(226409, {	-- Rune of Dagger Specialization

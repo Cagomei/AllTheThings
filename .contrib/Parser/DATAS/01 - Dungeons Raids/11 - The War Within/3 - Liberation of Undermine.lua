@@ -429,74 +429,54 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						}),
 					}),
 				}),
-				n(QUESTS, bubbleDownRep(FACTION_GLRC, {	-- Gallagio Loyalty Rewards Club
+				n(QUESTS, sharedData({
+					["qg"] = 235617,	-- Paula Piranha <Renown Quartermaster>
+				}, bubbleDownRep(FACTION_GLRC, {	-- Gallagio Loyalty Rewards Club
 					{		-- RENOWN 1 --
-						q(89016, {	-- Members Only
-							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						}),
+						q(89016),	-- Members Only
 					}, {	-- RENOWN 2 --
-						q(89027, {	-- Fast Food
-							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						}),
+						q(89027),	-- Fast Food
 					}, {	-- RENOWN 3 --
 					}, {	-- RENOWN 4 --
 						q(89018, {	-- Loyal Customer: Silver
-							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
 							["g"] = { i(234389) },	-- Gallagio Loyalty Rewards Card: Silver
 						}),
 					}, {	-- RENOWN 5 --
 					}, {	-- RENOWN 6 --
-						q(89252, {	-- Need a Jump?
-							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						}),
-						q(89024, {	-- Time is Money!
-							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						}),
+						q(89252),	-- Need a Jump?
+						q(89024),	-- Time is Money!
 					}, {	-- RENOWN 7 --
-						q(89019, {	-- Loyal Customer: Gold
-							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						}),
+						q(89019),	-- Loyal Customer: Gold
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --
 					}, {	-- RENOWN 10 --
-						q(89020, {	-- Loyal Customer: Platinum
-							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						}),
+						q(89020),	-- Loyal Customer: Platinum
 					}, {	-- RENOWN 11 --
 						q(89028, {	-- Chip Service
-							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
 							["g"] = { i(237578) },	-- Counterfeit Dealer's Chip
 						}),
-						q(89025, {	-- Time is Money!!
-							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						}),
+						q(89025),	-- Time is Money!!
 					}, {	-- RENOWN 12 --
 					}, {	-- RENOWN 13 --
-						q(89021, {	-- Loyal Customer: Black
-							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						}),
+						q(89021),	-- Loyal Customer: Black
 					}, {	-- RENOWN 14 --
 					}, {	-- RENOWN 15 --
 						q(89029, {	-- Chip Service
-							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
 							["g"] = { i(237578) },	-- Counterfeit Dealer's Chip
 						}),
-						q(89022, {	-- Loyal Customer: Diamond
-							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						}),
+						q(89022),	-- Loyal Customer: Diamond
 					}, {	-- RENOWN 16 --
 					}, {	-- RENOWN 17 --
 					}, {	-- RENOWN 18 --
-						q(89026, {	-- Time is Money!!!
-							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						}),
+						q(89026),	-- Time is Money!!!
 					}, {	-- RENOWN 19 --
+						q(89023),	-- Loyal Customer: GOLDEN LEGENDARY!!!
 					}, {	-- RENOWN 20 --
 					},
-				})),
+				}))),
 				n(TREASURES, {
 					o(505248, {	-- Rune Dispenser
-						["description"] = "Interact with for a 1 in 10 chance for a free Crystalized Augment Rune.\n\nAt renown 14, you are guaranteed at least one.",
+						["description"] = "Interact with for a 10% chance for a free Crystalized Augment Rune.\n\nAt renown 14, you are guaranteed at least one.",
 						["questID"]	= 89350,
 						["minReputation"] = { FACTION_GLRC, 2 },
 						["isWeekly"] = true,
@@ -738,7 +718,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(RIK),
 				BossOnly(STIX),
 				BossOnly(LOCKENSTOCK, {
-					i(228844, {up=IGNORED_VALUE, ["ItemAppearanceModifierID"] = 3}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
+					i(228844, {up=IGNORED_VALUE, modID=5, ["ItemAppearanceModifierID"] = 3}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
 				}),
 				BossOnly(BANDIT),
 				BossOnly(MUGZEE),
@@ -855,58 +835,57 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				}),
 			}),
 		}),
-
 		inst(1296, bubbleDown({	-- Liberation of Undermine
 			["isWeekly"] = true,
 		},{
 			-- LFR
-			q(88835),	-- Guk Boomdog Trash
-			q(88838),	-- Professor Boomspark Trash
-			q(88842),	-- King Flamespite Trash
-			q(88846),	-- Skiggy Muckheimer Trash
-			q(88867),	-- Trashmaster Blazedump Trash
-			q(88829),	-- Scraps Trash
-			q(88859),	-- Globikus Trash
+			q(88835, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
+			q(88838, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
+			q(88842, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
+			q(88846, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+			q(88867, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+			q(88829, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+			q(88859, name(HEADERS.NPC, 234640)),	-- Globikus Trash
 			q(88850, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88854),	-- The Junkmaker Trash
+			q(88854, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
 			-- Normal
-			q(88833),	-- Guk Boomdog Trash
+			q(88833, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
 			q(88840),	-- King Flamespite/Professor Boomspark Trash
 			q(88844),	-- King Flamespite/Professor Boomspark Trash
-			q(88848),	-- Skiggy Muckheimer Trash
-			q(88869),	-- Trashmaster Blazedump Trash
-			q(88830),	-- Scraps Trash
-			q(88861),	-- Globikus Trash
+			q(88848, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+			q(88869, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+			q(88830, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+			q(88861, name(HEADERS.NPC, 234640)),	-- Globikus Trash
 			q(88852, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88856),	-- The Junkmaker Trash
+			q(88856, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
 			-- Heroic
-			q(88836),	-- Guk Boomdog Trash
-			q(88837),	-- Professor Boomspark Trash
-			q(88841),	-- King Flamespite Trash
-			q(88845),	-- Skiggy Muckheimer Trash
-			q(88866),	-- Trashmaster Blazedump Trash
-			q(88831),	-- Scraps Trash
-			q(88858),	-- Globikus Trash
+			q(88836, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
+			q(88837, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
+			q(88841, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
+			q(88845, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+			q(88866, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+			q(88831, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+			q(88858, name(HEADERS.NPC, 234640)),	-- Globikus Trash
 			q(88849, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88853),	-- The Junkmaker Trash
+			q(88853, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
 			-- Mythic
-			q(88834),	-- Guk Boomdog Trash
+			q(88834, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
 			q(88839),	-- King Flamespite/Professor Boomspark Trash
 			q(88843),	-- King Flamespite/Professor Boomspark Trash
-			q(88847),	-- Skiggy Muckheimer Trash
-			q(88868),	-- Trashmaster Blazedump Trash
-			q(88832),	-- Scraps Trash
-			q(88860),	-- Globikus Trash
+			q(88847, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+			q(88868, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+			q(88832, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+			q(88860, name(HEADERS.NPC, 234640)),	-- Globikus Trash
 			q(88851, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			--q(),	-- The Junkmaker Trash
+			--q(, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
 			-- All
-			q(89478),	-- Guk Boomdog Trash first per week any difficulty
-			q(89479),	-- Skiggy Muckheimer Trash first per week any difficulty
-			q(89484),	-- Trashmaster Blazedump Trash first per week any difficulty
-			q(89477),	-- Scraps Trash first per week any difficulty
-			q(89482),	-- Globikus Trash first per week any difficulty
+			q(89478, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash first per week any difficulty
+			q(89479, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash first per week any difficulty
+			q(89484, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash first per week any difficulty
+			q(89477, name(HEADERS.NPC, 229283)),	-- Scraps Trash first per week any difficulty
+			q(89482, name(HEADERS.NPC, 234640)),	-- Globikus Trash first per week any difficulty
 			q(89480, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash first per week any difficulty
-			q(89481),	-- The Junkmaker Trash first per week any difficulty
+			q(89481, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash first per week any difficulty
 
 			q(89452),	-- Vexie Fullthrottle
 			q(89453),	-- Cauldron of Carnage

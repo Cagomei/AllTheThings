@@ -75,9 +75,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					------ Paragon ------
 					q(89515, {	-- Renowned with Flame's Radiance
 						["isRepeatable"] = true,
-						["g"] = {
-							i(239489),	-- Radiant Officer's Cache
-						},
+						["g"] = { i(239489) },	-- Radiant Officer's Cache
 					}),
 				},
 			}))),

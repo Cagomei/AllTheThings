@@ -179,7 +179,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(159062),	-- Ritual Flayer's Mantle
 				}),
 				filter(MAIL, {
-					i(155317),	-- Death-Pledged Sabatons
 					i(159020),	-- Death-Pledged Handguards
 					i(159023),	-- Death-Pledged Helmet
 					i(159033),	-- Death-Pledged Mantle
@@ -365,7 +364,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				-- Vol'dun items = Stormsong Valley quest rewards
 				i(161295),	-- Scorching Sands Battleaxe
 				i(161302),	-- Scorching Sands Mace
-				i(161303),	-- Scorching Sands Bludgeon
+
 
 				-- Zuldazar items = Tiragarde Sound quest rewards
 				i(154985),	-- Golden Protectorate

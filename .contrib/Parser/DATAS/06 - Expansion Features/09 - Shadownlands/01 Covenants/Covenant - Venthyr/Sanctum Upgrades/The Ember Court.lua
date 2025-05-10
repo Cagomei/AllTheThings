@@ -1994,7 +1994,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								q(63693, {	-- Rendle and Cudgelface's Best Friend
 									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Rendle and Cudgelface?
 									["provider"] = { "n", 171190 },	-- Alexandros Mograine
-									["coord"] = { 31.0, 40.0, REVENDRETH },
+									["coord"] = { 31.0, 40.0, SINFALL_DEPTHS },
 								}),
 								q(61255, {	-- RSVP: Alexandros Mograine
 									["sourceQuests"] = { 61943 },	-- Court Influencer

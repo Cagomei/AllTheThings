@@ -446,7 +446,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222503),	-- Ironclaw Whetstone++
 			i(222504),	-- Ironclaw Whetstone+++
 		}),
-		filter(PROFESSION_EQUIPMENT, {
+		filter(PROFESSION_EQUIPMENT, sharedData({
+			-- #if after TWW
+				["description"] = "If this item has an appearance, it is currently not collectible.",
+				["collectible"] = false,
+			-- #endif
+			}, {
 			i(222494, {["requireSkill"] = BLACKSMITHING}),	-- Artisan Blacksmith's Hammer
 			i(222495, {["requireSkill"] = BLACKSMITHING}),	-- Artisan Blacksmith's Toolbox
 			i(222492, {["requireSkill"] = LEATHERWORKING}),	-- Artisan Leatherworker's Knife
@@ -463,7 +468,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222481, {["requireSkill"] = MINING}),	-- Proficient Pickaxe
 			i(222480, {["requireSkill"] = HERBALISM}),	-- Proficient Sickle
 			i(222482, {["requireSkill"] = SKINNING}),	-- Proficient Skinning Knife
-		}),
+		})),
 		filter(REAGENTS, {
 			i(222511),	-- Adjustable Framework+
 			i(222512),	-- Adjustable Framework++
@@ -935,11 +940,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(224112),	-- Oil of Deep Toxins++
 			i(224113),	-- Oil of Deep Toxins+++
 		}),
-		filter(PROFESSION_EQUIPMENT, {
+		filter(PROFESSION_EQUIPMENT, sharedData({
+			-- #if after TWW
+				["description"] = "If this item has an appearance, it is currently not collectible.",
+				["collectible"] = false,
+			-- #endif
+			}, {
 			i(224114),	-- Runed Bismuth Rod
 			i(224115),	-- Runed Ironclaw Rod
 			i(224116),	-- Runed Null Stone Rod
-		}),
+		})),
 		filter(REAGENTS, {
 			i(224173),	-- Concentration Concentrate+
 			i(224174),	-- Concentration Concentrate++
@@ -1311,7 +1321,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(221913),	-- Serrated Cogwheel+++
 			i(221959),	-- Summon Portable Profession Possibility Projector
 		}),
-		filter(PROFESSION_EQUIPMENT, {
+		filter(PROFESSION_EQUIPMENT, sharedData({
+			-- #if after TWW
+				["description"] = "If this item has an appearance, it is currently not collectible.",
+				["collectible"] = false,
+			-- #endif
+			}, {
 			i(221789),	-- Aqirite Brainwave Projector
 			i(221791),	-- Aqirite Fisherfriend
 			i(221798),	-- Aqirite Fueled Samophlange
@@ -1326,7 +1341,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(221799),	-- Miner's Bismuth Hoard
 			i(221787),	-- Spring-Loaded Aqirite Fabric Cutters
 			i(221786),	-- Spring-Loaded Bismuth Fabric Cutters
-		}),
+		})),
 		filter(MOUNTS, {
 			i(221967),	-- Crowd Pummeler 2-30 (MOUNT!)
 		}),
@@ -1760,14 +1775,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(232935, {["timeline"] = {ADDED_11_1_0}}),	-- Vantus Rune: Liberation of Undermine++
 			i(232937, {["timeline"] = {ADDED_11_1_0}}),	-- Vantus Rune: Liberation of Undermine+++
 		}),
-		filter(PROFESSION_EQUIPMENT, {
+		filter(PROFESSION_EQUIPMENT, sharedData({
+			-- #if after TWW
+				["description"] = "If this item has an appearance, it is currently not collectible.",
+				["collectible"] = false,
+			-- #endif
+			}, {
 			i(222577),	-- Burnt Rolling Pin
 			i(222575),	-- Hasty Alchemist's Mixing Rod
 			i(222578),	-- Inscribed Rolling Pin
 			i(222573),	-- Lightweight Scribe's Quill
 			i(222576),	-- Patient Alchemist's Mixing Rod
 			i(222574),	-- Silver Tongue's Quill
-		}),
+		})),
 		filter(REAGENTS, {
 			i(222615),	-- Apricate Ink+
 			i(222616),	-- Apricate Ink++
@@ -2072,7 +2092,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		filter(MOUNTS, {
 			i(235712, {["timeline"] = {ADDED_11_1_5}}),	-- Void-Crystal Panther (MOUNT!)
 		}),
-		filter(PROFESSION_EQUIPMENT, {
+		filter(PROFESSION_EQUIPMENT, sharedData({
+			-- #if after TWW
+				["description"] = "If this item has an appearance, it is currently not collectible.",
+				["collectible"] = false,
+			-- #endif
+			}, {
 			i(215125, {["requireSkill"] = ENCHANTING}),		-- Enchanter's Crystal
 			i(215124, {["requireSkill"] = JEWELCRAFTING}),	-- Extravagant Loupes
 			i(215123, {["requireSkill"] = INSCRIPTION}),	-- Forger's Font Inspector
@@ -2081,7 +2106,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(215120, {["requireSkill"] = JEWELCRAFTING}),	-- Radiant Loupes
 			i(215119, {["requireSkill"] = INSCRIPTION}),	-- Right-Handed Magnifying Glass
 			i(215117, {["requireSkill"] = INSCRIPTION}),	-- Storyteller's Glasses
-		}),
+		})),
 		filter(REAGENTS, {
 			i(213753),	-- Decorative Lens+
 			i(213754),	-- Decorative Lens++
@@ -2292,7 +2317,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(219505),	-- Writhing Armor Banding++
 			i(219506),	-- Writhing Armor Banding+++
 		}),
-		filter(PROFESSION_EQUIPMENT, {
+		filter(PROFESSION_EQUIPMENT, sharedData({
+			-- #if after TWW
+				["description"] = "If this item has an appearance, it is currently not collectible.",
+				["collectible"] = false,
+			-- #endif
+			}, {
 			i(219866),	-- Apothecary's Cap
 			i(219871),	-- Arathi Leatherworker's Smock
 			i(219870),	-- Charged Scrapmaster's Gauntlets
@@ -2309,7 +2339,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(219864),	-- Scrapsmith's Gloves
 			i(219873),	-- Steelsmith's Apron
 			i(219867),	-- Stonebound Herbalist's Pack
-		}),
+		})),
 		filter(REAGENTS, {
 			i(219880),	-- Carapace-Backed Hide+
 			i(219881),	-- Carapace-Backed Hide++
@@ -2597,7 +2627,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222889),	-- Weavercloth Spellthread++
 			i(222890),	-- Weavercloth Spellthread+++
 		}),
-		filter(PROFESSION_EQUIPMENT, {
+		filter(PROFESSION_EQUIPMENT, sharedData({
+			-- #if after TWW
+				["description"] = "If this item has an appearance, it is currently not collectible.",
+				["collectible"] = false,
+			-- #endif
+			}, {
 			i(222850),	-- Artisan Alchemist's Robe
 			i(222851),	-- Artisan Chef's Hat
 			i(222849),	-- Artisan Enchanter's Hat
@@ -2610,7 +2645,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222842),	-- Weavercloth Fishing Cap
 			i(222841),	-- Weavercloth Gardening Hat
 			i(222844),	-- Weavercloth Tailor's Coat
-		}),
+		})),
 		filter(REAGENTS, {
 			i(228930),	-- Adorning Ribbon
 			i(222801),	-- Dawnweave Bolt+

@@ -872,9 +872,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(160367),	-- Stormchaser Greaves
 					i(158690),	-- Tidespeaker Cord
 					i(160361),	-- Tidespeaker Pants
-					-- Horde sourceid's(not actual reward)
-					i(161276),	-- Lastwind Legguards
-					i(161278),	-- Resilient Outcast's Leggings
+					--
+					h(i(161276)),	-- Lastwind Legguards
+					h(i(161278)),	-- Resilient Outcast's Leggings
 				},
 			}),
 			q(52068, {	-- Helping Out, Somewhere Else
@@ -1456,8 +1456,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(155218),	-- Kraulguard Poleaxe
 					i(155203),	-- Needleshot Repeater
 					i(155200),	-- Thornmatron's Vinecaller
-					-- Horde sourceid's(not actual reward)
-					i(161310),	-- Glaive of Zak'rajan
+					--
+					h(i(161310)),	-- Glaive of Zak'rajan
 				},
 			}),
 			q(50783, {	-- The Abyssal Council

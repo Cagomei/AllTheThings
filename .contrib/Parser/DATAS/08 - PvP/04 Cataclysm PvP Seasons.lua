@@ -465,7 +465,7 @@ root(ROOTS.PVP, {
 			n(ACHIEVEMENTS, {
 				ach(11714, {["timeline"] = {ADDED_7_2_0}}),	-- Viciously Vintage (PvP Season 9)
 			}),
-			elitepvp(n(ACHIEVEMENTS, bubbleDown({
+			n(ACHIEVEMENTS, elitepvp(bubbleDown({
 				["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 },
 			}, {
 				ach(5344, {	-- Hero of the Alliance: Vicious
@@ -2176,7 +2176,7 @@ root(ROOTS.PVP, {
 			n(ACHIEVEMENTS, {
 				ach(11715, {["timeline"] = {ADDED_7_2_0}}),	-- (Ruth)less is More (PvP Season 10)
 			}),
-			elitepvp(n(ACHIEVEMENTS, bubbleDown({
+			n(ACHIEVEMENTS, elitepvp(bubbleDown({
 				["timeline"] = { ADDED_4_2_0, REMOVED_4_3_0 },
 			}, {
 				ach(6316, {	-- Hero of the Alliance: Ruthless
@@ -3560,7 +3560,7 @@ root(ROOTS.PVP, {
 			n(ACHIEVEMENTS, {
 				ach(11716, {["timeline"] = {ADDED_7_2_0}}),	-- Cataclysmic Catwalk (PvP Season 11)
 			}),
-			elitepvp(n(ACHIEVEMENTS, bubbleDown({
+			n(ACHIEVEMENTS, elitepvp(bubbleDown({
 				["timeline"] = { ADDED_5_0_4, REMOVED_5_0_4 },
 			}, {
 				ach(6939, {	-- Hero of the Alliance: Cataclysmic

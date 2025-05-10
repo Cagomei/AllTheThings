@@ -94,7 +94,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 				180899,	-- Aridormi <Timewalking Vendor>
 				-- #endif
 				-- #if AFTER 11.1.7
-					-- TODO Churbro
+				239840,	-- Churbro <Timewalking Vendor>
 				-- #endif
 			},
 			["maps"] = {
@@ -6978,12 +6978,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 		n(QUESTS, {
 		}),
 		n(VENDORS, {
-			--[[
+			n(239840, {	-- Churbro <Timewalking Vendor>
+				--["coords"] = {
 
-			n(???, {	-- Churbro <Timewalking Vendor>
-				["coords"] = {
-
-				},
+				--},
 				["g"] = {
 					n(ARMOR, {
 						filter(CLOTH, {
@@ -7001,10 +6999,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 					}),
 					filter(BATTLE_PETS, {
 						i(245543, {	-- Flotsam Harvester (PET!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, ??? }},
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, ??? }},
 						}),
 						i(245574, {	-- Lil' Daz'ti (PET!)
-							["cost"] = {{ "c", TIMEWARPED_BADGE, ??? }},
+							--["cost"] = {{ "c", TIMEWARPED_BADGE, ??? }},
 						}),
 					}),
 					filter(COSMETIC, {
@@ -7014,7 +7012,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 
 					}),
 					filter(MOUNTS, {
-						i(245695, {	-- Reins of the Ivory Savagemane (MOUNT!)
+						i(245694, {	-- Reins of the Ivory Savagemane (MOUNT!)
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
 						}),
 						i(245695, {	-- Reins of the Moonlit Nightsaber (MOUNT!)
@@ -7029,7 +7027,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 					}),
 				},
 			}),
-			]]--
 		}),
 	})),
 })));

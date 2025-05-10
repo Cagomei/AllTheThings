@@ -67,7 +67,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		n(ACHIEVEMENTS, {
 			ach(11710, {["timeline"] = {ADDED_7_2_0}}),	-- Lethal Looks (PvP Season 5)
 		}),
-		elitepvp(n(ACHIEVEMENTS, bubbleDown({
+		n(ACHIEVEMENTS, elitepvp(bubbleDown({
 			["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
@@ -1962,7 +1962,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		n(ACHIEVEMENTS, {
 			ach(11711, {["timeline"] = {ADDED_7_2_0}}),	-- The Fierce and the Furious (PvP Season 6)
 		}),
-		elitepvp(n(ACHIEVEMENTS, bubbleDown({
+		n(ACHIEVEMENTS, elitepvp(bubbleDown({
 			["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
@@ -2709,7 +2709,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		n(ACHIEVEMENTS, {
 			ach(11712, {["timeline"] = {ADDED_7_2_0}}),	-- Relentlessly Good Looking (PvP Season 7)
 		}),
-		elitepvp(n(ACHIEVEMENTS, bubbleDown({
+		n(ACHIEVEMENTS, elitepvp(bubbleDown({
 			["timeline"] = { ADDED_3_2_0, REMOVED_3_3_2 },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
@@ -3474,7 +3474,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		n(ACHIEVEMENTS, {
 			ach(11713, {["timeline"] = {ADDED_7_2_0}}),	-- Wrath of the Stitch King (PvP Season 8)
 		}),
-		elitepvp(n(ACHIEVEMENTS, bubbleDown({
+		n(ACHIEVEMENTS, elitepvp(bubbleDown({
 			["timeline"] = { ADDED_3_3_2, REMOVED_4_0_1 },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,

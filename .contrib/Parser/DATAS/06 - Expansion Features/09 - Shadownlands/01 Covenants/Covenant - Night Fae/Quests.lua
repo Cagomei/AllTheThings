@@ -81,7 +81,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 161509 },	-- Lady Moonberry
-				["coord"] = { 49.2, 39.9, THE_TRUNK },
+				["coords"] = {
+					{ 47.5, 36.5, THE_TRUNK },
+					{ 49.2, 39.9, THE_TRUNK },
+				},
 			}),
 			q(61058, {	-- Bound in Dreams
 				["sourceQuests"] = {

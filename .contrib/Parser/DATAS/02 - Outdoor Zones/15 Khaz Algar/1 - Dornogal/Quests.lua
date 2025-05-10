@@ -63,21 +63,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(228378),	-- Pristine Council's Seal (QI!)
 				},
 			}),
-			q(82050, {	-- The Hardbringer of Crests
+			q(82050, {	-- The Harbinger of Crests
 				["sourceQuests"] = { 82042 },	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["g"] = {
-					i(221269),	-- Crimson Valorstone
-				},
+				["timeline"] = { REMOVED_11_1_0 },
+				["g"] = { i(221269) },	-- Crimson Valorstone
 			}),
 			q(82059, {	-- Transmutation Station
-				["sourceQuests"] = { 82050 },	-- The Hardbringer of Crests
+				["sourceQuests"] = { 82050 },	-- The Harbinger of Crests
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["g"] = {
-					i(221269),	-- Crimson Valorstone
-				},
+				["timeline"] = { REMOVED_11_1_0 },
+				["g"] = { i(221269) },	-- Crimson Valorstone
 			}),
 		}),
 		------ Alts ------

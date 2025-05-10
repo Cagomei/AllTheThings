@@ -1786,7 +1786,13 @@ local function GetSearchResults(method, paramA, paramB, options)
 		end
 		if not root then
 			-- app.PrintDebug("Create New Root",paramA,paramB)
-			root = CreateObject({ [paramA] = paramB, missing = true });
+			if paramA == "criteriaID" then
+				local critID, achID = (":"):split(paramB)
+				root = CreateObject({ [paramA] = tonumber(critID), achievementID = tonumber(achID) })
+			else
+				root = CreateObject({ [paramA] = paramB })
+			end
+			root.missing = true
 		end
 		-- If rawLink exists, import it into the root
 		if rawlink then app.ImportRawLink(root, rawlink); end
@@ -2344,6 +2350,9 @@ local function SyncCharacterQuestData(allCharacters, key)
 	-- don't completely wipe quest data, some questID are marked as 'complete' due to other restrictions on the account
 	-- so we want to maintain those even though no character actually has it completed
 	-- TODO: perhaps in the future we can instead treat these quests as 'uncollectible' for the account rather than 'complete'
+	-- TODO: once these quests are no longer assigned as completion == 2 we can then use the PartialSyncCharacterData for Quests
+	-- and make sure AccountWide quests are instead saved directly into ATTAccountWideData when completed
+	-- and cleaned from individual Character caches here during sync
 	for questID,completion in pairs(data) do
 		if completion ~= 2 then
 			data[questID] = nil

@@ -689,8 +689,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		ach(40455, {	-- Buddy System
 			["maps"] = ALL_THE_DELVES,
 		}),
-		ach(42212, {	-- Console Overcharged
+		ach(42212, {	-- Titan Console Overcharged
 			["timeline"] = { ADDED_11_1_7 },
+			["groups"] = { i(246237) },	-- OC91 Chariot (MOUNT!)
 		}),
 		ach(40882, {	-- Copious Coffers
 			["maps"] = ALL_REGULAR_DELVES,
@@ -838,6 +839,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(40523, {	-- On Brand
 			["maps"] = ALL_THE_DELVES,
+		}),
+		ach(42241, {	-- Overcharged Delver
+			["timeline"] = { ADDED_11_1_7 },
+			["groups"] = { i(235016) },	-- Redeployment Module (TOY!)
 		}),
 		ach(40863, {	-- Perplexing Puzzle
 			["maps"] = ALL_REGULAR_DELVES,
@@ -993,14 +998,16 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			}),
 			i(223624),	-- Sneef (PET!)
 			i(225337),	-- Violet Sporbit (PET!)
+			i(221496),	-- Wriggle (PET!)
 		}),
 		filter(TOYS, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
 			i(230924), 	-- Spotlight Materializer 1000 (TOY!)
 		})),
-		filter(COSMETIC, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
-			i(235617), 	-- Lucky Goblin's Strapped Rockets
-			i(235615),	-- Rusty Gobjets
-		})),
+		filter(COSMETIC, {
+			i(235617, { ["timeline"] = { ADDED_11_1_0 } }),	-- Lucky Goblin's Strapped Rockets
+			i(235615, { ["timeline"] = { ADDED_11_1_0 } }),	-- Rusty Gobjets
+			i(212164),	-- Shallow Nautic Helm
+		}),
 		filter(MISC, {
 			i(244465, {	-- Titan Disc Fragments
 				["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
@@ -1643,6 +1650,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["sourceQuests"] = { 81510 },	-- Ship It!
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
+			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(81595, {	-- Seasonal Start
 			["sourceQuests"] = {
@@ -1652,24 +1660,26 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["sourceQuestNumRequired"] = 1,
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
+			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(84224, {	-- To Delves!
 			--["sourceQuests"] = { 81510 },	-- Ship It! TODO: wrong, auto pop on fresh (first) 80s on account, as of 11.0.5
 			--["provider"] = { "n", xxxxx },	-- Auto-accept?
 			["coord"] = { 47.4, 44.4, DORNOGAL },
+			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(81596, {	-- Delve Hunter
 			["sourceQuests"] = { 81595 },	-- Seasonal Start
 			["provider"] = { "n", 226763 },	-- Naleidea Rivergleam
 			["coord"] = { 47.8, 44.5, DORNOGAL },
+			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(83500, {	-- Zekvir, Hand of the Harbinger
 			["sourceQuests"] = { 81596 },	-- Delve Hunter
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
-			["g"] = {
-				i(225547),	-- Toxic Victory (TOY!)
-			},
+			["timeline"] = { REMOVED_11_1_0 },
+			["g"] = { i(225547) },	-- Toxic Victory (TOY!)
 		}),
 		-- Season 2
 		q(86461, {	-- Ancient Curiosity: Combat
@@ -1836,6 +1846,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				i(233205),	-- Go-Go Juice
 				i(233062),	-- Pocket Pizza
 				i(233061),	-- Rock-in-a-Bottle
+				i(233186, {	-- Wave Scrambler 2000
+					["timeline"] = { ADDED_11_1_0_SEASONSTART },
+				}),
 			},
 		}),
 		o(455759, {	-- Hulking Raptorial Claw
@@ -2578,7 +2591,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					filter(COSMETIC, {
 						i(212168),	-- Cinderbee Wax Candle Hat
 						i(211801),	-- Poisonous Shroom Cap
-						i(212164),	-- Shallow Nautic Helm
 					}),
 				}),
 			}),
@@ -2635,7 +2647,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 						i(212162),	-- Bitter Shroom Cap
 						i(212168),	-- Cinderbee Wax Candle Hat
 						i(211801),	-- Poisonous Shroom Cap
-						i(212164),	-- Shallow Nautic Helm
 						i(212163),	-- Soporific Shroom Cap
 					}),
 				}),
@@ -2709,9 +2720,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			}),
 			n(DELVE_COMPLETION, {
 				n(TREASURES, {
-					filter(BATTLE_PETS, {
-						i(221496),	-- Wriggle (PET!)
-					}),
 					filter(COSMETIC, {
 						i(212168),	-- Cinderbee Wax Candle Hat
 						i(212169),	-- Mint-Scented Candle Hat
@@ -2778,7 +2786,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 						i(212162),	-- Bitter Shroom Cap
 						i(212165),	-- Deep Nautic Helm
 						i(211801),	-- Poisonous Shroom Cap
-						i(212164),	-- Shallow Nautic Helm
 						i(212163),	-- Soporific Shroom Cap
 					}),
 				}),
@@ -2932,9 +2939,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			}),
 			n(DELVE_COMPLETION, {
 				n(TREASURES, {
-					filter(BATTLE_PETS, {
-						i(221496),	-- Wriggle (PET!)
-					}),
 					filter(COSMETIC, {
 						i(212162),	-- Bitter Shroom Cap
 						i(212167),	-- Taken Candle
@@ -2983,9 +2987,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			}),
 			n(DELVE_COMPLETION, {
 				n(TREASURES, {
-					filter(BATTLE_PETS, {
-						i(221496),	-- Wriggle (PET!)
-					}),
 					filter(COSMETIC, {
 						i(212172),	-- Ajul'Nerub Raptorial Spine
 						i(212162),	-- Bitter Shroom Cap
@@ -3045,13 +3046,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			}),
 			n(DELVE_COMPLETION, {
 				n(TREASURES, {
-					filter(BATTLE_PETS, {
-						i(221496),	-- Wriggle (PET!)
-					}),
 					filter(COSMETIC, {
 						i(212166),	-- Coral Nautic Helm
 						i(212165),	-- Deep Nautic Helm
-						i(212164),	-- Shallow Nautic Helm
 					}),
 				}),
 			}),
@@ -3161,14 +3158,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			}),
 			n(DELVE_COMPLETION, {
 				n(TREASURES, {
-					filter(BATTLE_PETS, {
-						i(221496),	-- Wriggle (PET!)
-					}),
 					filter(COSMETIC, {
 						i(212166),	-- Coral Nautic Helm
 						i(212165),	-- Deep Nautic Helm
 						i(225067),	-- Shadowlit Haversack
-						i(212164),	-- Shallow Nautic Helm
 					}),
 				}),
 			}),
@@ -3243,13 +3236,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					o(504093),	-- Web Bomb
 					o(504195),	-- Web Bomb
 				})),
-				o_repeated(sharedData({	-- Plundered Artifacts
+				o(506525, {	-- Plundered Artifacts
 					["timeline"] = { ADDED_11_1_0 },
-				},{
-					i(235257),	-- Plundered Artifacts (QI!)
-					o(506525),	-- Web Bomb
-					o(504195),	-- Web Bomb
-				})),
+					["g"] = { i(235257) },	-- Plundered Artifacts (QI!)
+				}),
 			}),
 			n(QUESTS, {
 				q(83770, {	-- Delver's Call: Spiral Weave

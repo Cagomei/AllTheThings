@@ -335,14 +335,14 @@ local function TopLevelUpdateGroup(group)
 	end
 	if group.OnUpdate then
 		if not group:OnUpdate(nil, UpdateGroup) then
-			UpdateGroup(group, rawget(group, "parent"))
+			UpdateGroup(group)
 		elseif group.visible then
 			group.total = nil
 			group.progress = nil
 			UpdateGroups(group, group.g)
 		end
 	else
-		UpdateGroup(group, rawget(group, "parent"))
+		UpdateGroup(group)
 	end
 	-- app.PrintDebugPrior("TLUG",group.hash)
 end

@@ -12066,7 +12066,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Those bosses are inhuman. Really! Collect their gears to prove it.","Dastardly Devices",,41707,-1,-1,0,15545,0,10,131072,7,6740278,0,207484,0,0,0,0
 "Make friends with all 5 Grabbable Rats in Undermine.","You're My Friend Now",,41708,-1,-1,0,15521,0,5,131072,2,6351952,0,207587,0,0,0,0
 "Complete the Delver's Journey before Season 2 ends.","Journey's End (Season 2)",,41709,-1,-1,0,15531,0,0,133120,10,6025441,0,207593,0,0,0,0
-"Obtain the Faceless Mask of the Nemesis in a Revisited Vision.","Faceless Mask of the Nemesis",,41710,-1,-1,0,15546,0,0,1048576,14,136243,0,207597,0,0,0,0
+"Obtain the Faceless Mask of the Nemesis in a Revisited Vision.","Faceless Mask of the Nemesis",,41710,-1,-1,0,15546,0,0,1179648,14,136243,0,207597,0,0,0,0
 "Defeat Sprocketmonger Lockenstock without being struck by Blazing Beam, Rocket Barrage, Mega Magnetize, Jumbo Void Beam, or Void Barrage in Liberation of Undermine on Normal difficulty or higher.","Conveyor Slayer",,41711,2769,-1,0,15526,0,10,0,27,132996,0,207600,0,0,0,0
 "Collect the following cosmetic unlocks for the Delver's Gob-Trotter.","From Trash to Treasure",,41714,-1,-1,41532,15523,0,10,131072,24,132241,0,207651,0,0,0,0
 "You draw extra cheers from the crowd!","Fiendishly Famous","Cheery bombs collect more cheers near you",41715,-1,-1,0,15545,0,10,131072,2,6740278,0,207661,0,0,0,0
@@ -12115,7 +12115,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Alleria in the Revisited Horrific Vision of Stormwind.","Horrific Vision of Stormwind",,41853,-1,-1,0,15546,0,5,0,5,135763,0,208642,0,0,0,0
 "Complete all objectives in the Revisited Horrific Vision of Stormwind in a single visit.","The Even More Horrific Vision of Stormwind",,41854,-1,-1,41853,15546,0,10,0,6,135763,0,208644,0,0,0,0
 "Complete all objectives in the Revisited Horrific Vision of Stormwind in a single visit and with any 5 Faceless Masks active.","The Most Horrific Vision of Stormwind",,41855,-1,-1,41854,15546,0,15,0,7,135763,0,208646,0,0,0,0
-"Obtain the Faceless Mask of the Pained in a Revisited Vision.","Faceless Mask of the Pained",,41856,-1,-1,0,15546,0,0,1048576,17,136243,0,208648,0,0,0,0
+"Obtain the Faceless Mask of the Pained in a Revisited Vision.","Faceless Mask of the Pained",,41856,-1,-1,0,15546,0,0,1179648,17,136243,0,208648,0,0,0,0
 "Complete all objectives in any Revisited Horrific Vision with any Faceless Mask active.","Masked Soliloquy","Unlocks Rhythferr, the Champion Weaponsmith's weapons",41857,-1,-1,0,15546,0,5,0,23,446125,0,208460,0,0,0,0
 "Complete all objectives in any Revisited Horrific Vision with any 6 Faceless Masks active.","Masked Sextet",,41858,-1,-1,41874,15546,0,10,0,28,446124,0,208652,0,0,0,0
 "Complete at least 2 objectives and defeat the boss of any Revisited Horrific Vision in a single visit.","Incremental Progress","Unlocks TickTak, the Veteran Weaponsmith's weapons",41873,-1,-1,0,15546,0,10,0,13,413594,0,208767,0,0,0,0
@@ -12123,12 +12123,12 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Thrall in the Revisited Horrific Vision of Orgrimmar.","Horrific Vision of Orgrimmar",,41875,-1,-1,0,15546,0,5,0,9,135759,0,208867,0,0,0,0
 "Complete all objectives in the Revisited Horrific Vision of Orgrimmar in a single visit.","The Even More Horrific Vision of Orgrimmar",,41876,-1,-1,41875,15546,0,10,0,10,135759,0,208869,0,0,0,0
 "Complete all objectives in the Revisited Horrific Vision of Orgrimmar in a single visit and with any 5 Faceless Masks active.","The Most Horrific Vision of Orgrimmar",,41879,-1,-1,41876,15546,0,15,0,11,135759,0,208871,0,0,0,0
-"Obtain the Faceless Mask of the Dark Imagination in a Revisited Vision.","Faceless Mask of the Dark Imagination",,41880,-1,-1,0,15546,0,0,1048576,18,136243,0,208939,0,0,0,0
-"Obtain the Faceless Mask of the Burned Bridge in a Revisited Vision.","Faceless Mask of the Burned Bridge",,41881,-1,-1,0,15546,0,0,1048576,19,136243,0,208941,0,0,0,0
-"Obtain the Faceless Mask of the Daredevil in a Revisited Vision.","Faceless Mask of the Daredevil",,41882,-1,-1,0,15546,0,0,1048576,20,136243,0,208943,0,0,0,0
-"Obtain the Faceless Mask of the Long Night in a Revisited Vision.","Faceless Mask of the Long Night",,41883,-1,-1,0,15546,0,0,1048576,21,136243,0,208945,0,0,0,0
-"Obtain the Faceless Mask of Vengeance in a Revisited Vision.","Faceless Mask of Vengeance",,41884,-1,-1,0,15546,0,0,1048576,15,136243,0,208947,0,0,0,0
-"Obtain the Faceless Mask of Multitudes in a Revisited Vision.","Faceless Mask of Multitudes",,41885,-1,-1,0,15546,0,0,1048576,16,136243,0,208949,0,0,0,0
+"Obtain the Faceless Mask of the Dark Imagination in a Revisited Vision.","Faceless Mask of the Dark Imagination",,41880,-1,-1,0,15546,0,0,1179648,18,136243,0,208939,0,0,0,0
+"Obtain the Faceless Mask of the Burned Bridge in a Revisited Vision.","Faceless Mask of the Burned Bridge",,41881,-1,-1,0,15546,0,0,1179648,19,136243,0,208941,0,0,0,0
+"Obtain the Faceless Mask of the Daredevil in a Revisited Vision.","Faceless Mask of the Daredevil",,41882,-1,-1,0,15546,0,0,1179648,20,136243,0,208943,0,0,0,0
+"Obtain the Faceless Mask of the Long Night in a Revisited Vision.","Faceless Mask of the Long Night",,41883,-1,-1,0,15546,0,0,1179648,21,136243,0,208945,0,0,0,0
+"Obtain the Faceless Mask of Vengeance in a Revisited Vision.","Faceless Mask of Vengeance",,41884,-1,-1,0,15546,0,0,1179648,15,136243,0,208947,0,0,0,0
+"Obtain the Faceless Mask of Multitudes in a Revisited Vision.","Faceless Mask of Multitudes",,41885,-1,-1,0,15546,0,0,1179648,16,136243,0,208949,0,0,0,0
 "Obtain all 8 Faceless Masks.","Horrific Masquerade",,41889,-1,-1,0,15546,0,10,131072,22,1354189,0,208954,0,0,0,0
 "Complete all objectives in any Revisited Horrific Vision with any 2 Faceless Masks active.","Masked Duet",,41890,-1,-1,41857,15546,0,5,0,24,367033,0,208963,0,0,0,0
 "Complete all objectives in any Revisited Horrific Vision with any 3 Faceless Masks active.","Masked Trio",,41891,-1,-1,41890,15546,0,5,0,25,446126,0,208965,0,0,0,0
@@ -12194,23 +12194,25 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the Ethereals Lorewalking Campaign.","Lorewalking: Ethereal Wisdom",,42187,-1,-1,0,15552,0,0,131072,3,1711337,244843,210375,0,0,0,0
 "Complete the Xal'atath Lorewalking Campaign.","Lorewalking: Blade's Bane",,42188,-1,-1,0,15552,0,5,131072,1,1131285,0,210377,0,0,0,0
 "Complete the Lich King Lorewalking Campaign.","Lorewalking: The Lich King",,42189,-1,-1,0,15552,0,5,131072,2,343637,0,210379,0,0,0,0
-"Collect enough Titan Discs to fully upgrade the Titan Console.","Console Overcharged",,42212,-1,-1,0,15523,0,0,131072,67,136243,0,210543,0,0,0,0
-,"Console Overcharged Purchase 1",,42213,-1,-1,0,15523,0,0,1179648,68,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 2",,42214,-1,-1,0,15523,0,0,1179648,69,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 3",,42215,-1,-1,0,15523,0,0,1179648,70,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 4",,42216,-1,-1,0,15523,0,0,1179648,71,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 5",,42217,-1,-1,0,15523,0,0,1179648,72,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 6",,42218,-1,-1,0,15523,0,0,1179648,73,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 7",,42219,-1,-1,0,15523,0,0,1179648,74,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 8",,42220,-1,-1,0,15523,0,0,1179648,75,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 9",,42221,-1,-1,0,15523,0,0,1179648,76,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 10",,42222,-1,-1,0,15523,0,0,1179648,77,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 11",,42223,-1,-1,0,15523,0,0,1179648,78,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 12",,42224,-1,-1,0,15523,0,0,1179648,79,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 13",,42225,-1,-1,0,15523,0,0,1179648,80,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 14",,42226,-1,-1,0,15523,0,0,1179648,81,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 15",,42227,-1,-1,0,15523,0,0,1179648,82,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 16",,42228,-1,-1,0,15523,0,0,1179648,83,136243,0,0,0,0,0,0
-,"Console Overcharged Purchase 17",,42229,-1,-1,0,15523,0,0,1179648,84,136243,0,0,0,0,0,0
+"Purchase enough Titan Discs to unlock all of the skills in the Overcharged Titan Console.","Titan Console Overcharged","Mount: OC91 Chariot",42212,-1,-1,0,15523,0,0,131072,67,2000853,246237,210543,0,0,0,0
+,"Console Overcharged Purchase 1",,42213,-1,-1,0,15523,0,0,1179648,69,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 2",,42214,-1,-1,0,15523,0,0,1179648,70,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 3",,42215,-1,-1,0,15523,0,0,1179648,71,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 4",,42216,-1,-1,0,15523,0,0,1179648,72,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 5",,42217,-1,-1,0,15523,0,0,1179648,73,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 6",,42218,-1,-1,0,15523,0,0,1179648,74,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 7",,42219,-1,-1,0,15523,0,0,1179648,75,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 8",,42220,-1,-1,0,15523,0,0,1179648,76,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 9",,42221,-1,-1,0,15523,0,0,1179648,77,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 10",,42222,-1,-1,0,15523,0,0,1179648,78,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 11",,42223,-1,-1,0,15523,0,0,1179648,79,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 12",,42224,-1,-1,0,15523,0,0,1179648,80,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 13",,42225,-1,-1,0,15523,0,0,1179648,81,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 14",,42226,-1,-1,0,15523,0,0,1179648,82,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 15",,42227,-1,-1,0,15523,0,0,1179648,83,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 16",,42228,-1,-1,0,15523,0,0,1179648,84,136243,0,0,0,0,0,0
+,"Console Overcharged Purchase 17",,42229,-1,-1,0,15523,0,0,1179648,85,136243,0,0,0,0,0,0
 "Quest counter remaining for first mid-season quest","11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid, First Time Tracker",,42230,-1,-1,0,96,0,0,3145732,36,136243,0,210549,0,0,0,0
+,"Anu'relos, Flame's Guidance <Tracking Achievement>",,42240,-1,-1,0,15248,0,0,1179652,34,136243,0,210585,0,0,0,0
+"Complete 4 out of the 6 Overcharged Delves.","Overcharged Delver","Toy: Redeployment Module",42241,-1,-1,0,15523,0,0,131072,68,2000853,235016,210760,0,0,0,0
 "Complete the Lingering Shadows storyline.","Lingering Shadows","Appearance: Root Defender's Spear and Root Defender's Shield",41052,-1,-1,0,15506,0,10,131072,5,5976943,0,169684,0,0,0,0

@@ -60,6 +60,7 @@ local KeyMaps = setmetatable({
 	battlepet = "speciesID",
 	c = "currencyID",
 	currency = "currencyID",
+	crit = "criteriaID",
 	enchant = "spellID",
 	fp = "flightpathID",
 	follower = "followerID",
@@ -176,7 +177,12 @@ local function SearchByKindLink(link)
 		id = GetGroupItemIDWithModID(nil, id, id2, id3)
 	end
 	-- app.PrintDebug("Search",kind,id,#SearchForObject(kind, id, nil, true))
-	return SearchForObject(kind, id, nil, true), kind, id
+	local results = SearchForObject(kind, id, nil, true)
+	-- special case for missing criteria
+	if #results == 0 and kind == "criteriaID" then
+		return results, kind, id..":"..(id2 or "")
+	end
+	return results, kind, id
 end
 
 local function SearchForLink(link)
