@@ -3110,6 +3110,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 			filter(COSMETIC, {
+				i(233170, {	-- Banded Azure War Slippers
+					["cost"] = {{"c", TRADERS_TENDER, 20}},
+				}),
 				i(233153, {	-- Banded Azure War Wraps
 					["cost"] = {{"c", TRADERS_TENDER, 20}},
 				}),
@@ -3166,6 +3169,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(233148, {	-- Long Violet War Skirt and Leg Wraps
 					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(233109, {	-- Long Violet War Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
 				}),
 				i(236627, {	-- Night Hag's Blade
 					["cost"] = {{"c", TRADERS_TENDER, 150}},

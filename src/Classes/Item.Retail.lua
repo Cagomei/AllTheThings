@@ -380,31 +380,31 @@ local function default_costCollectibles(t)
 	return app.EmptyTable;
 end
 local itemFields = {
-	["_cache"] = function(t)
+	_cache = function(t)
 		return cache;
 	end,
-	["icon"] = function(t)
+	icon = function(t)
 		return cache.GetCachedField(t, "icon", default_icon);
 	end,
-	["link"] = function(t)
+	link = function(t)
 		return cache.GetCachedField(t, "link", default_link);
 	end,
-	["name"] = function(t)
+	name = function(t)
 		return cache.GetCachedField(t, "name");
 	end,
-	["specs"] = function(t)
+	specs = function(t)
 		return cache.GetCachedField(t, "specs", default_specs);
 	end,
-	["q"] = function(t)
+	q = function(t)
 		return cache.GetCachedField(t, "q");
 	end,
-	["b"] = function(t)
+	b = function(t)
 		return cache.GetCachedField(t, "b") or 2;
 	end,
-	["title"] = function(t)
+	title = function(t)
 		return cache.GetCachedField(t, "title");
 	end,
-	["tsm"] = function(t)
+	tsm = function(t)
 		local itemLink = t.itemID;
 		if itemLink then
 			local bonusID = t.bonusID;
@@ -417,19 +417,19 @@ local itemFields = {
 			return ("i:%d"):format(itemLink);
 		end
 	end,
-	["modItemID"] = function(t)
+	modItemID = function(t)
 		-- if app.IsReady then app.PrintDebug("item.modItemID?",t.key,t[t.key]) end
 		local modItemID = GetGroupItemIDWithModID(t) or t.itemID;
 		-- if app.IsReady then app.PrintDebug("item.modItemID=",modItemID) end
 		t.modItemID = modItemID;
 		return modItemID;
 	end,
-	["indicatorIcon"] = app.GetQuestIndicator,
-	["costCollectibles"] = function(t)
+	indicatorIcon = app.GetQuestIndicator,
+	costCollectibles = function(t)
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
-	["collectibleAsCost"] = app.CollectibleAsCost,
-	["costsCount"] = function(t)
+	collectibleAsCost = app.CollectibleAsCost,
+	costsCount = function(t)
 		if t.costCollectibles then return #t.costCollectibles; end
 	end,
 	bonuses = function(t)
@@ -544,25 +544,23 @@ app.CreateItem = app.CreateClass(CLASS, KEY, itemFields,
 local CreateCostItem = app.CreateClass("CostItem", KEY, {
 	IsClassIsolated = true,
 	-- total is the count of the cost item required
-	["total"] = function(t)
+	total = function(t)
 		return t.count or 1;
 	end,
 	-- progress is how many of the cost item your character has anywhere (bag/bank/reagent bank/warband bank)
-	["progress"] = function(t)
+	progress = function(t)
 		return GetItemCount(t.itemID, true, nil, true, true) or 0;
 	end,
-	["collectible"] = app.ReturnFalse,
+	collectible = app.ReturnFalse,
 	-- show a check when it is has matching quantity in your bags/reagent bank (bank/warband bank don't count at vendors)
-	["saved"] = function(t)
+	saved = function(t)
 		return GetItemCount(t.itemID, nil, nil, true) >= t.total;
 	end,
-	-- Imply Item Costs are always BoP so that they aren't hidden via the 'BoE/Warband Items' being unchecked
-	b = function() return 1 end,
 	-- hide any irrelevant wrapped fields of a cost item
-	["g"] = app.EmptyFunction,
-	["costCollectibles"] = app.EmptyFunction,
-	["collectibleAsCost"] = app.EmptyFunction,
-	["costsCount"] = app.EmptyFunction,
+	g = app.EmptyFunction,
+	costCollectibles = app.EmptyFunction,
+	collectibleAsCost = app.EmptyFunction,
+	costsCount = app.EmptyFunction,
 })
 app.CreateCostItem = function(t, total)
 	local c = app.WrapObject(CreateCostItem(t[KEY]), t);
@@ -612,16 +610,16 @@ app.CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
 				end
 				CreateItemTooltipHarvester(t.itemID, t);
 				local info = {
-					["name"] = itemName,
-					["itemID"] = t.itemID,
-					["equippable"] = itemEquipLoc and itemEquipLoc ~= "" and true or false,
-					["class"] = classID,
-					["subclass"] = subclassID,
-					["inventoryType"] = C_Item_GetItemInventoryTypeByID(t.itemID),
-					["b"] = bindType,
-					["q"] = itemQuality,
-					["iLvl"] = itemLevel,
-					["spellID"] = spellID,
+					name = itemName,
+					itemID = t.itemID,
+					equippable = itemEquipLoc and itemEquipLoc ~= "" and true or false,
+					class = classID,
+					subclass = subclassID,
+					inventoryType = C_Item_GetItemInventoryTypeByID(t.itemID),
+					b = bindType,
+					q = itemQuality,
+					iLvl = itemLevel,
+					spellID = spellID,
 				};
 				if itemMinLevel and itemMinLevel > 0 then
 					info.lvl = itemMinLevel;

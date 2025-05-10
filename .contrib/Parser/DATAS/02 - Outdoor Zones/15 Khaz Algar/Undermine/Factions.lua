@@ -185,7 +185,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 									["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, EXALTED },	-- Blackwater Cartel Exalted
 									["isRepeatable"] = true,
 									["g"] = {
-										i(237135, {	-- Blackwater Trove (Paragon)
+										i(237135, {	-- Blackwater's Trove (Paragon)
 											i(234741),	-- Miscellaneous Mechanica
 											i(229937),	-- Blackwater Bonecrusher (MOUNT!)
 										}),

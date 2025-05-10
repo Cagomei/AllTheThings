@@ -67,19 +67,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
 					["coord"] = { 55.7, 43.8, AZJ_KAHET },
 				}),
+				q(84700, {	-- Pacts Below
+					["provider"] = { "n", 230098 },	-- Spindle
+					["coord"] = { 46.1, 50.0, DORNOGAL },
+					["isBreadcrumb"] = true,
+				}),
 				q(84682, {	-- Of Pacts and Patrons
+					["sourceQuests"] = { 84700 },	-- Pacts Below
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
 					["coord"] = { 55.7, 43.8, AZJ_KAHET },
 				}),
 				header(HEADERS.Achievement, 40832, {	-- Leave it to Weaver
-					q(84700, {	-- Pacts Below
-						--["sourceQuests"] = { 79030 },	-- The Voice of the Speakers (?)
-						["provider"] = { "n", 230098 },	-- Spindle
-						["coord"] = { 46.1, 50.0, DORNOGAL },
-						["isBreadcrumb"] = true,
-					}),
 					q(83276, {	-- Saving Private Spindle
-						["sourceQuests"] = { 84700 },	-- Pacts Below (still unsure)
+						--["sourceQuests"] = {  },
 						["provider"] = { "n", 207471 },	-- Widow Arak'nai
 						["minReputation"] = { FACTION_THE_WEAVER, 4 },
 						["coord"] = { 55.6, 43.9, AZJ_KAHET },

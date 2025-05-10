@@ -637,12 +637,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(205039, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Belt Clasp+++
 			i(191304),	-- Sturdy Expedition Shovel
 		}),
-		filter(PROFESSION_EQUIPMENT, sharedData({
-			-- #if after TWW
-				["description"] = "If this item has an appearance, it is currently not collectible.",
-				["collectible"] = false,
-			-- #endif
-			}, {
+		filter(PROFESSION_EQUIPMENT, {
 			i(191228, {["requireSkill"] = BLACKSMITHING}),	-- Black Dragon Touched Hammer
 			i(191237, {["requireSkill"] = BLACKSMITHING}),	-- Draconium Blacksmith's Hammer
 			i(191235, {["requireSkill"] = BLACKSMITHING}),	-- Draconium Blacksmith's Toolbox
@@ -660,7 +655,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(191223, {["requireSkill"] = MINING}),	-- Khaz'gorite Pickaxe
 			i(191224, {["requireSkill"] = HERBALISM}),	-- Khaz'gorite Sickle
 			i(191225, {["requireSkill"] = SKINNING}),	-- Khaz'gorite Skinning Knife
-		})),
+		}),
 		filter(REAGENTS, {
 			i(190530),	-- Frostfire Alloy+
 			i(190531),	-- Frostfire Alloy++
@@ -1069,16 +1064,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				["collectible"] = false,
 			}),
 		}),
-		filter(PROFESSION_EQUIPMENT, sharedData({
-			-- #if after TWW
-				["description"] = "If this item has an appearance, it is currently not collectible.",
-				["collectible"] = false,
-			-- #endif
-			}, {
+		filter(PROFESSION_EQUIPMENT, {
 			i(198715, {["requireSkill"] = ENCHANTING}),	-- Runed Draconium Rod
 			i(198716, {["requireSkill"] = ENCHANTING}),	-- Runed Khaz'gorite Rod
 			i(201601, {["requireSkill"] = ENCHANTING}),	-- Runed Serevite Rod
-		})),
+		}),
 		filter(REAGENTS, {
 			i(211519, {["timeline"] = {ADDED_10_2_6_SEASON_FOUR}}),	-- Enchanted Aspect's Awakened Crest
 			i(206961, {["timeline"] = {ADDED_10_2_0}}),	-- Enchanted Aspect's Dreaming Crest
@@ -1506,12 +1496,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			-- Weird
 			i(198650),	-- Rummage Through Scrap
 		}),
-		filter(PROFESSION_EQUIPMENT, sharedData({
-			-- #if after TWW
-				["description"] = "If this item has an appearance, it is currently not collectible.",
-				["collectible"] = false,
-			-- #endif
-			}, {
+		filter(PROFESSION_EQUIPMENT, {
 			i(198204, {["requireSkill"] = ENGINEERING}),	-- Draconium Brainwave Amplifier
 			i(198243, {["requireSkill"] = MINING}),	-- Draconium Delver's Helmet
 			i(198245, {["requireSkill"] = ENGINEERING}),	-- Draconium Encased Samophlange
@@ -1524,7 +1509,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198235, {["requireSkill"] = JEWELCRAFTING}),	-- Lapidary's Khaz'gorite Clamps
 			i(194125, {["requireSkill"] = TAILORING}),	-- Spring-Loaded Draconium Fabric Cutters
 			i(194126, {["requireSkill"] = TAILORING}),	-- Spring-Loaded Khaz'gorite Fabric Cutters
-		})),
+		}),
 		filter(REAGENTS, {
 			i(198195),	-- Arclight Capacitor+
 			i(198196),	-- Arclight Capacitor++
@@ -2162,19 +2147,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198492),	-- Vantus Rune: Vault of the Incarnates++
 			i(198493),	-- Vantus Rune: Vault of the Incarnates+++
 		}),
-		filter(PROFESSION_EQUIPMENT, sharedData({
-			-- #if after TWW
-				["description"] = "If this item has an appearance, it is currently not collectible.",
-				["collectible"] = false,
-			-- #endif
-			}, {
+		filter(PROFESSION_EQUIPMENT, {
 			i(191234, {["requireSkill"] = ALCHEMY}),	-- Alchemist's Sturdy Mixing Rod
 			i(191231, {["requireSkill"] = ALCHEMY}),	-- Alchemist's Brilliant Mixing Rod
 			i(191232, {["requireSkill"] = COOKING}),	-- Chef's Splendid Rolling Pin
 			i(191233, {["requireSkill"] = COOKING}),	-- Chef's Smooth Rolling Pin
 			i(194874, {["requireSkill"] = INSCRIPTION}),	-- Scribe's Fastened Quill
 			i(194875, {["requireSkill"] = INSCRIPTION}),	-- Scribe's Resplendent Quill
-		})),
+		}),
 		filter(REAGENTS, {
 			i(194751),	-- Blazing Ink+
 			i(194752),	-- Blazing Ink++
@@ -2591,12 +2571,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(202058),	-- Timewatcher's Patience+++
 			i(204217, {["timeline"] = {ADDED_10_0_7}}),	-- Unstable Elementium
 		}),
-		filter(PROFESSION_EQUIPMENT, sharedData({
-			-- #if after TWW
-				["description"] = "If this item has an appearance, it is currently not collectible.",
-				["collectible"] = false,
-			-- #endif
-			}, {
+		filter(PROFESSION_EQUIPMENT, {
 			i(193041, {["requireSkill"] = JEWELCRAFTING}),	-- Alexstraszite Loupes
 			i(193035, {["requireSkill"] = INSCRIPTION}),	-- Bold-Print Bifocals
 			i(193038, {["requireSkill"] = ENCHANTING}),	-- Chromatic Focus
@@ -2605,7 +2580,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(193040, {["requireSkill"] = INSCRIPTION}),	-- Magnificent Margin Magnifier
 			i(193042, {["requireSkill"] = ENCHANTING}),	-- Resonant Focus
 			i(193037, {["requireSkill"] = JEWELCRAFTING}),	-- Sundered Onyx Loupe
-		})),
+		}),
 		filter(REAGENTS, {
 			i(191474),	-- Draconic Vial+
 			i(191475),	-- Draconic Vial++
@@ -2959,12 +2934,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(208188, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Conduit++
 			i(208189, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Conduit+++
 		}),
-		filter(PROFESSION_EQUIPMENT, sharedData({
-			-- #if after TWW
-				["description"] = "If this item has an appearance, it is currently not collectible.",
-				["collectible"] = false,
-			-- #endif
-			}, {
+		filter(PROFESSION_EQUIPMENT, {
 			i(193487, {["requireSkill"] = ALCHEMY}),	-- Alchemist's Hat
 			i(193493, {["requireSkill"] = ALCHEMY}),	-- Expert Alchemist's Hat
 			i(193490, {["requireSkill"] = SKINNING}),	-- Expert Skinner's Cap
@@ -2981,7 +2951,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(193491, {["requireSkill"] = ENGINEERING}),	-- Shockproof Gloves
 			i(193482, {["requireSkill"] = SKINNING}),	-- Skinner's Cap
 			i(193612, {["requireSkill"] = BLACKSMITHING}),	-- Smithing Apron
-		})),
+		}),
 		filter(REAGENTS, {
 			i(193242),	-- Earthshine Scales+
 			i(193243),	-- Earthshine Scales++
@@ -3431,12 +3401,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(194049),	-- Wildercloth Bandage++
 			i(194050),	-- Wildercloth Bandage+++
 		}),
-		filter(PROFESSION_EQUIPMENT, sharedData({
-			-- #if after TWW
-				["description"] = "If this item has an appearance, it is currently not collectible.",
-				["collectible"] = false,
-			-- #endif
-			}, {
+		filter(PROFESSION_EQUIPMENT, {
 			i(193540, {["requireSkill"] = TAILORING}),	-- Dragoncloth Tailoring Vestments
 			i(193544, {["requireSkill"] = ALCHEMY}),	-- Master's Wildercloth Alchemist's Robe
 			i(193545, {["requireSkill"] = COOKING}),	-- Master's Wildercloth Chef's Hat
@@ -3449,7 +3414,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(193529, {["requireSkill"] = FISHING}),	-- Wildercloth Fishing Cap
 			i(193538, {["requireSkill"] = HERBALISM}),	-- Wildercloth Gardening Hat
 			i(193541, {["requireSkill"] = TAILORING}),	-- Wildercloth Tailor's Coat
-		})),
+		}),
 		filter(REAGENTS, {
 			i(193938),	-- Azureweave Bolt+
 			i(193939),	-- Azureweave Bolt++

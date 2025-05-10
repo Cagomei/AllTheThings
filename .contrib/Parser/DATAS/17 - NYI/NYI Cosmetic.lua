@@ -604,7 +604,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233238),	-- Azure Pack of Lunar Explosives
 				i(233183),	-- Banded Aquatic War Slippers
 				i(233166),	-- Banded Aquatic War Wraps
-				i(233170),	-- Banded Azure War Slippers
 				i(233176),	-- Banded Brick War Slippers
 				i(233159),	-- Banded Brick War Wraps
 				i(233179),	-- Banded Carrot War Slippers
@@ -649,7 +648,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233146),	-- Long Rosy War Skirt and Leg Wraps
 				i(233111),	-- Long Snowy War Skirt
 				i(233150),	-- Long Snowy War Skirt and Leg Wraps
-				i(233109),	-- Long Violet War Skirt
 				i(234059),	-- Lunar Festival Attire - Purple
 				i(234060),	-- Lunar Festival Attire - Teal
 				i(234043),	-- Lunar Festival Belt - Purple
