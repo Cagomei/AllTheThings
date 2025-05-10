@@ -1784,10 +1784,8 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(232898),	-- Delver's Bounty
 			i(235535),	-- Discretely-Packaged Invention
 			i(230807),	-- Drill Hands
-			i(237260),	-- Glass of Daylight Dew
 			i(228798),	-- Gob-Glider
 			i(235559),	-- Hidden Trove
-			i(237259),	-- Kapow Kanapes
 			i(230017),	-- Master Blaster's Insignia
 			i(234618),	-- Omega Oyster Outbreak
 			i(231291),	-- Radar

@@ -78,7 +78,6 @@ root(ROOTS.Unsorted, {
 				i(239071),	-- Secret Spinner's Miter
 				i(239072),	-- Loa Betrayer's Vestments
 				i(239073),	-- Coif of the Court Spider
-
 				-- Probably Timwalking Vendor
 				i(243558),	-- Stormsong Mariner's Cuff
 				i(243559),	-- Pilfered Wristguards of Akal'ali
@@ -88,45 +87,16 @@ root(ROOTS.Unsorted, {
 				i(243563),	-- Tal'aman Ambassador's Amice
 				i(243564),	-- Boralus Cityguard Spaulders
 				i(243565),	-- Navigator's Flagship Mantle
-				i(243566),	-- Waycrest Sentry Cloak
-				i(243567),	-- Cloak of the Tideguard
-				i(243568),	-- Tidecaller's Ritual Cape
-				i(243569),	-- Bloodstained Shawl of Atal'Gurub
-				i(244053),	-- Ashvane Smuggler's Kilt
-				i(244054),	-- Ashvane Smuggler's Longcoat
-				i(244055),	-- Ashvane Smuggler's Coat
-				i(244058),	-- Ashvane Smuggler's Pants
-				i(244059),	-- Ashvane Smuggler's Waistband
-				i(244145),	-- Ensemble: Ashvane Smuggler's Attire
-				i(244150),	-- Seaglass Ritual Rod
 				i(244151),	-- Ashvane Ore Crusher
-				i(244152),	-- Pilfered Golden Scepter
 				i(244153),	-- Reclaimed Ancestral Blade of the Deeps
 				i(244154),	-- Freehold Boarding Halberd
 				i(244155),	-- Siren Slayer's Trident
 				i(244156),	-- Crackling Stormbow of the Devoted
 				i(244157),	-- Blessed Bulwark of Zanchul
-				i(244158),	-- Azerite-Carved Ritual Kris
 				i(244159),	-- Tol'Dagor Pocket Shank
 				i(244160),	-- Junkyard Clobberstick
 				i(244161),	-- Mugambala Champion's Axe
 				i(244162),	-- Bondo's Spare Mechano-Clamps
-				i(244170),	-- Ashvane Smuggler's Waistwrap
-				-- BFA timewalking?
-				i(244426),	-- Dinomancer's Calming Rod
-				i(244427),	-- Blood Witch's Hex Cane
-				i(244428),	-- Fang of Sethraliss
-				i(244430),	-- Blade of the Prophet
-				i(244431),	-- Tideguard's Blessed Gavel
-				i(244432),	-- 7th Legion Commander's Crest
-				i(244433),	-- Waycrest Training Buckler
-				i(244434),	-- Witch-Hunter's Shortsword
-				i(244436),	-- Parrot King's Hook-Leg
-				i(244437),	-- Dark Ranger's Black Bow
-				i(244438),	-- Nazmani Blood Drinker
-				i(244439),	-- Stormcrook of the Faithless
-				i(244440),	-- Blade of the Rezani Prelate
-				i(244441),	-- Dazar's Ceremonial Negotiator
 			}),
 			n(QUESTS, {
 				-- Arathor Questline
@@ -366,15 +336,12 @@ root(ROOTS.Unsorted, {
 				i(244221),	-- Putrid Banshee Cinch
 				i(244222),	-- Sickly Banshee Cinch
 				i(244223),	-- Ensemble: Banshee's Chilling Collection
-				i(244224),	-- Ensemble: Bloodsail Smuggler's Attire
 				i(244225),	-- Ensemble: Banshee's Grotesque Collection
 				i(244226),	-- Ensemble: Banshee's Putrid Collection
 				i(244227),	-- Ensemble: Banshee's Sickly Collection
 				i(244356),	-- Crown of the Frost Lord
 				i(244422),	-- Glazfuris, Scythe of the Deep Chill
 				i(244423),	-- Rethfuras, Scorched Scythe of Cinders
-				i(244445),	-- Razdunk's WR0-NC4 5300
-				i(244471),	-- Time-Lost Tempest Caller
 				i(244540),	-- Charred Flamewake Sprout
 				i(244541),	-- Zin-Azshari Court Scepter
 				i(244542),	-- Chronosmith's Temporal Safeguard
@@ -424,26 +391,6 @@ root(ROOTS.Unsorted, {
 				i(244836),	-- Cane of the Runic Wanderer
 				i(244837),	-- Rookforged Dragonblade
 				i(245745),	-- Classic Plum Tabard
-				-- BFA or trading post?
-				i(244299),	-- Golden Fleet Tunic
-				i(244301),	-- Golden Fleet Mantle
-				i(244302),	-- Golden Fleet Waistcord
-				i(244303),	-- Golden Fleet Trousers
-				i(244304),	-- Golden Fleet Sea-Kilt
-				i(244305),	-- Golden Fleet Cuff
-				i(244306),	-- Ensemble: Golden Fleet's Sailing Garb
-				i(244307),	-- Bloodsail Smuggler's Kilt
-				i(244308),	-- Bloodsail Smuggler's Longcoat
-				i(244309),	-- Bloodsail Smuggler's Jacket
-				i(244310),	-- Bloodsail Smuggler's Pants
-				i(244312),	-- Bloodsail Smuggler's Waistband
-				i(244327),	-- Ensemble: Zocalo Merchant's Wear
-				i(244328),	-- Zocalo Merchant's Tunic
-				i(244329),	-- Zocalo Merchant's Mantle
-				i(244330),	-- Zocalo Merchant's Waistcord
-				i(244331),	-- Zocalo Merchant's Trousers
-				i(244332),	-- Zocalo Merchant's Trade-Kilt
-				i(244333),	-- Zocalo Merchant's Cuff
 			}),
 			n(CLASSES, {
 				-- T2 Greedy Emissary?

@@ -556,6 +556,8 @@ local CreateCostItem = app.CreateClass("CostItem", KEY, {
 	["saved"] = function(t)
 		return GetItemCount(t.itemID, nil, nil, true) >= t.total;
 	end,
+	-- Imply Item Costs are always BoP so that they aren't hidden via the 'BoE/Warband Items' being unchecked
+	b = function() return 1 end,
 	-- hide any irrelevant wrapped fields of a cost item
 	["g"] = app.EmptyFunction,
 	["costCollectibles"] = app.EmptyFunction,

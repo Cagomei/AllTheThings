@@ -6984,32 +6984,90 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 				--},
 				["g"] = {
 					n(ARMOR, {
-						filter(CLOTH, {
-
-						}),
-						filter(LEATHER, {
-
-						}),
-						filter(MAIL, {
-
-						}),
-						filter(PLATE, {
-
+						filter(BACK_F, {
+							i(243569, {	-- Bloodstained Shawl of Atal'Gurub
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
+							i(243567, {	-- Cloak of the Tideguard
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
+							i(243568, {	-- Tidecaller's Ritual Cape
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
+							i(243566, {	-- Waycrest Sentry Cloak
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
 						}),
 					}),
 					filter(BATTLE_PETS, {
 						i(245543, {	-- Flotsam Harvester (PET!)
-							--["cost"] = {{ "c", TIMEWARPED_BADGE, ??? }},
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 2200 }},
 						}),
 						i(245574, {	-- Lil' Daz'ti (PET!)
-							--["cost"] = {{ "c", TIMEWARPED_BADGE, ??? }},
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 2200 }},
 						}),
 					}),
 					filter(COSMETIC, {
-
-					}),
-					filter(MISC, {
-
+						i(244432, {	-- 7th Legion Commander's Crest
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 2000 }},
+						}),
+						i(244430, {	-- Blade of the Prophet
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(244440, {	-- Blade of the Rezani Prelate
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(244427, {	-- Blood Witch's Hex Cane
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(244437, {	-- Dark Ranger's Black Bow
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(244441, {	-- Dazar's Ceremonial Negotiator
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(244426, {	-- Dinomancer's Calming Rod
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						iensemble(244145, {	-- Ensemble: Ashvane Smuggler's Attire
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+						}),
+						iensemble(244224, {	-- Ensemble: Bloodsail Smuggler's Attire
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+						}),
+						iensemble(244306, {	-- Ensemble: Golden Fleet's Sailing Garb
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+						}),
+						iensemble(244327, {	-- Ensemble: Zocalo Merchant's Wear
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+						}),
+						i(244428, {	-- Fang of Sethraliss
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+						}),
+						i(244438, {	-- Nazmani Blood Drinker
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(244436, {	-- Parrot King's Hook-Leg
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+						}),
+						i(244445, {	-- Razdunk's WR0-NC4 5300
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1800 }},
+						}),
+						i(244439, {	-- Stormcrook of the Faithless
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+						}),
+						i(244431, {	-- Tideguard's Blessed Gavel
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+						}),
+						i(244471, {	-- Time-Lost Tempest Caller
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+						}),
+						i(244433, {	-- Waycrest Training Buckler
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+						}),
+						i(244434, {	-- Witch-Hunter's Shortsword
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+						}),
 					}),
 					filter(MOUNTS, {
 						i(245694, {	-- Reins of the Ivory Savagemane (MOUNT!)
@@ -7019,11 +7077,16 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
 						}),
 					}),
-					filter(TOYS, {
-
-					}),
 					n(WEAPONS, {
-
+						i(244158, {	-- Azerite-Carved Ritual Kris
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(244152, {	-- Pilfered Golden Scepter
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+						}),
+						i(244150, {	-- Seaglass Ritual Rod
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+						}),
 					}),
 				},
 			}),
