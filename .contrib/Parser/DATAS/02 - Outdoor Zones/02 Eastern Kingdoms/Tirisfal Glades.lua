@@ -1252,7 +1252,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1515,	-- Executor Zygand
 					["sourceQuest"] = 24992,	-- Escaped From Gilneas
 					["coord"] = { 60.5, 51.8, TIRISFAL_GLADES },
+					-- #if ANYCLASSIC
+					["description"] = "This quest was never available in Cata Classic.",
+					["timeline"] = { CREATED_4_0_3 },
+					-- #else
 					["timeline"] = { ADDED_4_0_3 },
+					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Worgen Infiltrator slain
@@ -1494,8 +1499,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24992, {	-- Escaped From Gilneas
 					["sourceQuest"] = 24990,	-- Darkhound Pounding
 					["cr"] = 1548,	-- Cursed Darkhound
+					-- #if ANYCLASSIC
+					["description"] = "This quest was never available in Cata Classic.",
+					["timeline"] = { CREATED_4_0_3 },
+					-- #else
 					["description"] = "Quest is granted by getting in combat with (not by killing) a Cursed Darkhound while on or after completing |cFFFFD700Darkhound Pounding|r.",
 					["timeline"] = { ADDED_4_0_3 },
+					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
 				q(24974, {	-- Ever So Lonely
@@ -1682,9 +1692,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25039, {	-- Have You Seen Anything Weird Out There?
 					["qg"] = 6785,	-- Ratslin Maime
 					["sourceQuest"] = 24980,	-- The Scarlet Palisade
-					["description"] = "Available if you abandon |cFFFFD700Escaped From Gilneas|r.",
 					["coord"] = { 61.9, 52.0, TIRISFAL_GLADES },
+					-- #if ANYCLASSIC
+					["description"] = "This quest was never available in Cata Classic.",
+					["timeline"] = { CREATED_4_0_3 },
+					-- #else
+					["description"] = "Available if you abandon |cFFFFD700Escaped From Gilneas|r.",
 					["timeline"] = { ADDED_4_0_3 },
+					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
 				q(25031, {	-- Head for the Mills

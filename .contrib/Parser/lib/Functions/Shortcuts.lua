@@ -1436,7 +1436,11 @@ recipe = function(id, t)								-- Create a RECIPE Object
 end
 r = recipe;												-- Create a RECIPE Object (alternative shortcut)
 local function HQTCleanup(data)
-	if data.questID then return end
+	if data.questID then
+		-- force quests under the HQT section to be the HQT type
+		data.type = "hqt"
+		return
+	end
 	data.timeline = nil
 	data.u = nil
 end

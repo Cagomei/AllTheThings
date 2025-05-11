@@ -51,6 +51,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(89502, {	-- Worldsoul: Nightfall
 					["timeline"] = { ADDED_11_1_5 },
 				}),
+				q(91052, {	-- Worldsoul: Overcharged Delves
+					["timeline"] = { ADDED_11_1_7 },
+				}),
 				q(82490),	-- Worldsoul: Priory of the Sacred Flame [N]
 				q(82499),	-- Worldsoul: Priory of the Sacred Flame [H]
 				q(82507),	-- Worldsoul: Priory of the Sacred Flame [M]

@@ -1748,10 +1748,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		q(90970, {	-- Titan Disc-Count
 			["sourceQuests"] = { 90969 },	-- Titan Consoles
-			["providers"] = {
-				{ "n", 210759 },	-- Overcharged Titan Console
-				{ "n", 235490 },	-- Overcharged Titan Console
-			},
+			["provider"] = { "n", 235490 },	-- Overcharged Titan Console
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			--["coord"] = { any delve? },
 			["g"] = {
@@ -1760,15 +1757,33 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		q(90971, {	-- Overcharged Console
 			["sourceQuests"] = { 90970 },	-- Titan Disc-Count
-			["providers"] = {
-				-- TODO: I'm not sure but it seems like there 2 unique console IDs per delve which will make there a lot of providers.
-				-- TODO: Check later on live?
-				{ "n", 210759 },	-- Overcharged Titan Console
-				{ "n", 235490 },	-- Overcharged Titan Console
-			},
+			["provider"] = { "n", 235490 },	-- Overcharged Titan Console
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			--["coord"] = { any delve? },
-			--TODO: also quest id bugged in 60520 build
+		}),
+		q(91009, {	-- Durable Information Storage Container
+			["sourceQuests"] = { 90971 },	-- Overcharged Console (TODO: re-check on live)
+			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["coord"] = { 48.0, 43.4, DORNOGAL },
+			["g"] = {
+				i(242664),	-- Durable Information Securing Container (cloth)
+				i(245964),	-- Durable Information Securing Container (leather)
+				i(245965),	-- Durable Information Securing Container (mail)
+				i(245966),	-- Durable Information Securing Container (plate)
+				i(244696),	-- Overcharged Chest (delve s2 loot table)
+			},
+		}),
+		q(91026, {	-- Gathering an Upgrade
+			["sourceQuests"] = { 91009 },	-- Durable Information Storage Container
+			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["coord"] = { 48.0, 43.4, DORNOGAL },
+			["g"] = {
+				i(244825),	-- Faulty Titan Directives (QI!)
+				i(244696),	-- Overcharged Chest (delve s2 loot table)
+				i(244311),	-- Titan Memory Card
+			},
 		}),
 	}),
 	n(QUESTS, sharedData({
@@ -2659,6 +2674,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					},
 				}),
 				i(210017),	-- Fungal Fish (QI!)
+				i(244900, {["timeline"] = { ADDED_11_1_7 }}),	-- Miniature Titan Disc: Spark Burst
 			}),
 			n(QUESTS, {
 				q(83758, {	-- Delver's Call: Fungal Folly
@@ -3459,6 +3475,17 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			-- Underpin Invasion
 			q(87287),	-- after openining Jettisoned Pile of Goblin-Bucks (objectID 507768), First per week, Delve Tier doesn't matter
 			q(87286),	-- after openining Jettisoned Pile of Goblin-Bucks (objectID 507768), Second per week, Delve Tier doesn't matter
+			--- Overcharged Delves
+			-- Belt unlocks
+			q(90945, {["timeline"]={ADDED_11_1_7}}),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
+			q(90946, {["timeline"]={ADDED_11_1_7}}),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
+			q(90952, {["timeline"]={ADDED_11_1_7}}),	-- Energy Shield ability (spellID 1238258); after learning Titan Force Shield (spellID 1225004) in delve console
+			q(90948, {["timeline"]={ADDED_11_1_7}}),	-- Spark Burst ability (spellID 1238251); after using Miniature Titan Disc: Spark Burst (itemID 244900)
+			--q(, {["timeline"]={ADDED_11_1_7}}),	--  
+			--q(, {["timeline"]={ADDED_11_1_7}}),	--  
+			--q(, {["timeline"]={ADDED_11_1_7}}),	--  
+			--q(, {["timeline"]={ADDED_11_1_7}}),	--  
+			--q(, {["timeline"]={ADDED_11_1_7}}),	--  
 		})),
 		q(85651),	-- Triggers with 'Delver's Call: The Sinkhole' (questID 83767)
 		q(85719),	-- Unknown. Seems to pop very rarely on completion of a delve

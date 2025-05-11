@@ -19,21 +19,6 @@ root(ROOTS.Unsorted, {
 				i(238740),	-- Distilled Knowledge of Timeways
 				i(238790),	-- Remnant of Azeroth
 				i(238791),	-- Remnant of Azeroth
-				i(238803),	-- Commendation of the Order of Embers
-				i(238804),	-- Commendation of Proudmoore Admiralty
-				i(238805),	-- Commendation of Storm's Wake
-				i(238806),	-- Commendation of the 7th Legion
-				i(238809),	-- Commendation of the Waveblade Ankoan
-				i(238816),	-- Commendation of Talanji's Expedition
-				i(238817),	-- Commendation of the Voldunai
-				i(238818),	-- Commendation of the Zandalari Empire
-				i(238819),	-- Commendation of the Honorbound
-				i(238820),	-- Commendation of the Unshackled
-				i(238821),	-- Commendation of the Champions of Azeroth
-				i(238822),	-- Commendation of the Tortollan Seekers
-				i(238823),	-- Commendation of the Rustbolt Resistance
-				i(238826),	-- Commendation of the Rajani
-				i(238827),	-- Commendation of the Uldum Accord
 				-- New BFA Gear (Might be in dungeons? No azerite versions)
 				i(239023),	-- Amice of the Returned
 				i(239024),	-- Soulfuel Headdress
@@ -78,25 +63,6 @@ root(ROOTS.Unsorted, {
 				i(239071),	-- Secret Spinner's Miter
 				i(239072),	-- Loa Betrayer's Vestments
 				i(239073),	-- Coif of the Court Spider
-				-- Probably Timwalking Vendor
-				i(243558),	-- Stormsong Mariner's Cuff
-				i(243559),	-- Pilfered Wristguards of Akal'ali
-				i(243560),	-- Naval Officer's Armband
-				i(243561),	-- Ancient Nazmani Bracelet
-				i(243562),	-- Mirestained Scout's Mantle
-				i(243563),	-- Tal'aman Ambassador's Amice
-				i(243564),	-- Boralus Cityguard Spaulders
-				i(243565),	-- Navigator's Flagship Mantle
-				i(244151),	-- Ashvane Ore Crusher
-				i(244153),	-- Reclaimed Ancestral Blade of the Deeps
-				i(244154),	-- Freehold Boarding Halberd
-				i(244155),	-- Siren Slayer's Trident
-				i(244156),	-- Crackling Stormbow of the Devoted
-				i(244157),	-- Blessed Bulwark of Zanchul
-				i(244159),	-- Tol'Dagor Pocket Shank
-				i(244160),	-- Junkyard Clobberstick
-				i(244161),	-- Mugambala Champion's Axe
-				i(244162),	-- Bondo's Spare Mechano-Clamps
 			}),
 			n(QUESTS, {
 				-- Arathor Questline
@@ -110,15 +76,8 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				-- Delves
 				i(239502),	-- Big Wheel of Cheese
-				i(244311),	-- Titan Memory Card
-				i(242664),	-- Durable Information Securing Container [Cloth]
 				i(242743),	-- Durable Information Securing Container [Trinket]
-				i(245964),	-- Durable Information Securing Container [Leather]
-				i(245965),	-- Durable Information Securing Container [Mail]
-				i(245966),	-- Durable Information Securing Container [Plate]
-				i(244696),	-- Overcharged Chest
 				i(244899),	-- Miniature Titan Disc: Critical Chain
-				i(244900),	-- Miniature Titan Disc: Spark Burst
 				i(244901),	-- Miniature Titan Disc: Statically Charged
 				i(244902),	-- Miniature Titan Disc: Electric Current
 				i(244903),	-- Miniature Titan Disc: Overcharged Touch

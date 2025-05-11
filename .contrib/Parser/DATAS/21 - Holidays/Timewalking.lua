@@ -6980,7 +6980,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 		n(VENDORS, {
 			n(239840, {	-- Churbro <Timewalking Vendor>
 				--["coords"] = {
-
+				--{ X, Y, BORALUS },	-- Alliance
+				--{ 46.1, 94.9, ZULDAZAR },	-- Horde
 				--},
 				["g"] = {
 					n(ARMOR, {
@@ -6995,6 +6996,38 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 							}),
 							i(243566, {	-- Waycrest Sentry Cloak
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
+						}),
+						filter(CLOTH, {
+							i(243561, {	-- Ancient Nazmani Bracelet
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
+							i(243563, {	-- Tal'aman Ambassador's Amice
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+							}),
+						}),
+						filter(LEATHER, {
+							i(243562, {	-- Mirestained Scout's Mantle
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+							}),
+							i(243560, {	-- Naval Officer's Armband
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
+						}),
+						filter(MAIL, {
+							i(243565, {	-- Navigator's Flagship Mantle
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+							}),
+							i(243558, {	-- Stormsong Mariner's Cuff
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
+							}),
+						}),
+						filter(PLATE, {
+							i(243564, {	-- Boralus Cityguard Spaulders
+								["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+							}),
+							i(243559, {	-- Pilfered Wristguards of Aka'ali
 								["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 							}),
 						}),
@@ -7036,10 +7069,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
 						}),
 						iensemble(244306, {	-- Ensemble: Golden Fleet's Sailing Garb
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 2000 }},
 						}),
 						iensemble(244327, {	-- Ensemble: Zocalo Merchant's Wear
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 2000 }},
 						}),
 						i(244428, {	-- Fang of Sethraliss
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
@@ -7069,6 +7102,63 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
 						}),
 					}),
+					filter(MISC, {
+						i(238804, {	-- Commendation of Proudmoore Admiralty
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238816, {	-- Commendation of Talanji's Expedition
+							["races"] = HORDE_ONLY,
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238806, {	-- Commendation of the 7th Legion
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238821, {	-- Commendation of the Champions of Azeroth
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238819, {	-- Commendation of the Honorbound
+							["races"] = HORDE_ONLY,
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238803, {	-- Commendation of the Order of Embers
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238826, {	-- Commendation of the Rajani
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238823, {	-- Commendation of the Rustbolt Resistance
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238822, {	-- Commendation of the Tortollan Seekers
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238827, {	-- Commendation of the Uldum Accord
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238820, {	-- Commendation of the Unshackled
+							["races"] = HORDE_ONLY,
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238817, {	-- Commendation of the Voldunai
+							["races"] = HORDE_ONLY,
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238818, {	-- Commendation of the Zandalari Empire
+							["races"] = HORDE_ONLY,
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238809, {	-- Commendation of the Waveblade Ankoan
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238805, {	-- Commendation of Storm's Wake
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+					}),
 					filter(MOUNTS, {
 						i(245694, {	-- Reins of the Ivory Savagemane (MOUNT!)
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
@@ -7078,14 +7168,44 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 						}),
 					}),
 					n(WEAPONS, {
+						i(244151, {	-- Ashvane Ore Crusher
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+						}),
 						i(244158, {	-- Azerite-Carved Ritual Kris
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(244157, {	-- Blessed Bulwark of Zanchul
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(244162, {	-- Bondo's Spare Mechano-Clamps
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(244156, {	-- Crackling Stormbow of the Devoted
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+						}),
+						i(244154, {	-- Freehold Boarding Halberd
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+						}),
+						i(244160, {	-- Junkyard Clobberstick
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(244161, {	-- Mugambala Champion's Axe
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(244152, {	-- Pilfered Golden Scepter
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
 						}),
+						i(244153, {	-- Reclaimed Ancestral Blade of the Deeps
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
 						i(244150, {	-- Seaglass Ritual Rod
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
+						}),
+						i(244155, {	-- Siren Slayer's Trident
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 100 }},
+						}),
+						i(244159, {	-- Tol'Dagor Pocket Shank
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 					}),
 				},
