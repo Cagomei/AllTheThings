@@ -785,7 +785,6 @@ do
 		-- app.PrintTable(Collector.Data)
 		group.text = Collector.__text
 		-- Build all the cost data which is available to the current filters into the cost group
-		local Filter = app.RecursiveGroupRequirementsFilter
 		local costItems = group.g
 		for costKey,costType in pairs(Collector.Data) do
 			if type(costType) == "table" then
@@ -806,9 +805,8 @@ do
 						-- 		app.SearchForObject("itemID", id, "field")
 						-- 			or app.CreateItem(id), amount)
 						end
-						if costThing and Filter(costThing) then
+						if costThing then
 							costItems[#costItems + 1] = costThing
-						-- else app.PrintDebug("Filtered?") app.PrintTable(costThing)
 						end
 					end
 				end

@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				["groups"] = {
 					-- #if AFTER 10.1.7
-					spell(921, {	-- Pickpocketing
+					header(HEADERS.Spell, 921, {	-- Pickpocketing
 						i(2109, {	-- Frostmane Chain Vest
 							["timeline"] = { ADDED_10_1_7 },
 							["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel creatures on Azeroth.",
@@ -2420,7 +2420,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			-- #if AFTER 10.1.7
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				i(2109, {	-- Frostmane Chain Vest
 					["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 20.09.2023
 					["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel creatures on Azeroth.",
@@ -2432,7 +2432,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(208205, {	-- Blackrat's Note

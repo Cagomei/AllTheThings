@@ -180,7 +180,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				},
 			}),
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				i(186161),	-- Stygian Lockbox
 			}),
 			-- #if AFTER 9.2.0

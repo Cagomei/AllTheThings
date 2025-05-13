@@ -2176,17 +2176,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						17187,	-- Banded Buckler
 						17183,	-- Dented Buckler
 						1200,	-- Large Wooden Shield
-						2398,	-- Light Chain Armor
-						2399,	-- Light Chain Belt
-						2401,	-- Light Chain Boots
-						2402,	-- Light Chain Bracers
-						2403,	-- Light Chain Gloves
-						2400,	-- Light Chain Leggings
 						17185,	-- Round Buckler
 						1202,	-- Wall Shield
 						2376,	-- Worn Heater Shield
 					}},
 					["groups"] = {
+						i(2398),	-- Light Chain Armor
+						i(2399),	-- Light Chain Belt
+						i(2401),	-- Light Chain Boots
+						i(2402),	-- Light Chain Bracers
+						i(2403),	-- Light Chain Gloves
+						i(2400),	-- Light Chain Leggings
 						i(2387),	-- Rusted Chain Belt
 						i(2389),	-- Rusted Chain Boots
 						i(2390),	-- Rusted Chain Bracers

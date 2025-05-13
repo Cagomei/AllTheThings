@@ -282,7 +282,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 					i(34486, {	-- Old Crafty
-						["description"] = 
+						["description"] =
 							-- #if BEFORE WRATH
 							"Keep this in your bank until Achievements are added, otherwise you'll need to obtain it again. Fair warning!",
 							-- #elseif BEFORE LEGION
@@ -4265,11 +4265,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = TIER_ELEVEN_GROUPS,
 					["description"] = "Sells gear related to Cataclysm raid tier 11 (Throne of the Four Winds, Blackwing Descent, and Bastion of Twilight) as well as Baradin Hold.",
 				}),
-				-- #if AFTER 10.0.5
+				-- #if AFTER CATA
 				n(3319, {	-- Sana <Mail Armor Merchant>
 					["coord"] = { 45.6, 77.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
+						17187,	-- Banded Buckler
 						847,	-- Chainmail Armor
 						1845,	-- Chainmail Belt
 						849,	-- Chainmail Boots
@@ -4277,30 +4278,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						850,	-- Chainmail Gloves
 						848,	-- Chainmail Pants
 						2445,	-- Large Metal Shield
+						2398,	-- Light Chain Armor
+						2399,	-- Light Chain Belt
+						2401,	-- Light Chain Boots
+						2402,	-- Light Chain Bracers
+						2403,	-- Light Chain Gloves
+						2400,	-- Light Chain Leggings
+						17185,	-- Round Buckler
+						17188,	-- Ringed Buckler
 						1853,	-- Scalemail Belt
 						287,	-- Scalemail Boots
 						1852,	-- Scalemail Bracers
 						718,	-- Scalemail Gloves
 						286,	-- Scalemail Pants
 						285,	-- Scalemail Vest
+						1202,	-- Wall Shield
+						2376,	-- Worn Heater Shield
 					}},
 					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
-						i(17187),	-- Banded Buckler
-						i(2445),	-- Large Metal Shield
-						i(2398),	-- Light Chain Armor
-						i(2399),	-- Light Chain Belt
-						i(2401),	-- Light Chain Boots
-						i(2402),	-- Light Chain Bracers
-						i(2403),	-- Light Chain Gloves
-						i(2400),	-- Light Chain Leggings
-						i(17185),	-- Round Buckler
-						i(17188),	-- Ringed Buckler
-						i(1202),	-- Wall Shield
-						i(2376),	-- Worn Heater Shield
 						-- Now any class and race can buy this
 						-- HUNTER --
-						i(129),	-- Rugged Trapper's Boots
-						i(147),	-- Rugged Trapper's Pants
+						i(129),		-- Rugged Trapper's Boots
+						i(147),		-- Rugged Trapper's Pants
 						i(58232),	-- Rugged Trapper's Vest
 						i(6137),	-- Thug Pants
 						i(6138),	-- Trapper's Boots

@@ -2545,7 +2545,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["questID"] = 39615,
 				}),
 				i(128668, {	-- Festive Outfits
-					["description"] = "This becomes un-saved if you remove the decorations even though the decorations remain unlocked.\n\nThis may also not be the correct QuestID for this Item unlock.",
+					["description"] = "This becomes un-saved if you remove the decorations even though the decorations remain unlocked.",
 					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 					["questID"] = 39671,	-- apparently repeatable if you remove the festive decorations... or might be the wrong QuestID for the unlock specifically

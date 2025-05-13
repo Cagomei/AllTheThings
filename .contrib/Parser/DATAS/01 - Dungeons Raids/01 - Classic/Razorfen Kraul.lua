@@ -138,6 +138,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
+				q(26908, {	-- Feeling Thorny
+					["qg"] = 37812,	-- Mahka
+					["coord"] = { 45.1, 85.4, SOUTHERN_BARRENS },
+					["timeline"] = { ADDED_4_0_3 },
+					["lvl"] = 30,
+				}),
 				q(1109, {	-- Going, Going, Guano!
 					["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 					["coord"] = { 49.0, 69.8, UNDERCITY },

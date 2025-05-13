@@ -596,7 +596,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(56881),	-- Triggered upon first entry into Nazjatar
 		q(56677),	-- Triggered sometime after turning in "Needs of the People", after picking up the dailies, but before leaving Newhome. TODO:: research more (possibly bodyguard dialogue quest?)
 		q(56661),	-- Triggered when walking into the "Void Chamber" cave
-		q(55604),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
+		q(55604, {isDaily=true}),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
 		q(56901),	-- Triggers after buying Mrrl's secret trader stock (requires cloak with special stock trait). Received 170162 - waterlogged toolbox first
 		q(57191),	-- Glimmering Chest — Prismatic Manapearls
 		q(57192),	-- Glimmering Chest — Prismatic Manapearls

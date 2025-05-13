@@ -180,62 +180,57 @@ namespace ATT
         /// <summary>
         /// All of the Category IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static Dictionary<long, bool> CATEGORIES_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> CATEGORIES_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of the Custom Header Constants listed by their constant name and id value.
         /// </summary>
-        private static Dictionary<string, long> CUSTOM_HEADER_CONSTANTS = new Dictionary<string, long>();
+        private static IDictionary<string, long> CUSTOM_HEADER_CONSTANTS = new ConcurrentDictionary<string, long>();
 
         /// <summary>
         /// All of the Custom Header IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static Dictionary<long, bool> CUSTOM_HEADERS_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> CUSTOM_HEADERS_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of the Filter IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static Dictionary<long, bool> FILTERS_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> FILTERS_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of the Flight Path IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static IDictionary<long, bool> FLIGHTPATHS_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> FLIGHTPATHS_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of the NPC IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static IDictionary<long, bool> NPCS_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> NPCS_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of the Object IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static IDictionary<long, bool> OBJECTS_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> OBJECTS_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of thePhase Constants listed by their constant name and id value.
         /// </summary>
-        private static Dictionary<string, long> PHASE_CONSTANTS = new Dictionary<string, long>();
+        private static IDictionary<string, long> PHASE_CONSTANTS = new Dictionary<string, long>();
 
         /// <summary>
         /// All of the Phase IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static Dictionary<long, bool> PHASES_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> PHASES_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of the Quest IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static IDictionary<long, bool> QUESTS_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> QUESTS_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of the Export Data Keys that have been referenced somewhere in the database.
         /// </summary>
-        private static IDictionary<string, List<string>> EXPORTDATA_WITH_REFERENCES = new Dictionary<string, List<string>>();
-
-        /// <summary>
-        /// All of the species that have been parsed sorted by Species ID.
-        /// </summary>
-        private static IDictionary<long, IDictionary<string, object>> SPECIES = new Dictionary<long, IDictionary<string, object>>();
+        private static IDictionary<string, List<string>> EXPORTDATA_WITH_REFERENCES = new ConcurrentDictionary<string, List<string>>();
 
         /// <summary>
         /// All of the quests that have been parsed sorted by Quest ID.

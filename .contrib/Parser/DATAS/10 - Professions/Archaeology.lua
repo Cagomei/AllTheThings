@@ -1392,11 +1392,9 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				}),
 			}),
 			ach(10601, {	-- Surveying the Land
-				-- identical criteria as full achievement
 				["sym"] = {{"partial_achievement",10603}},	-- A Keen Eye
 			}),
 			ach(10602, {	-- This Side Up (gets filled with class-wrapped artifacts from Artifacts file)
-				-- identical criteria as full achievement
 				["sym"] = {{"partial_achievement",10603}},	-- A Keen Eye
 			}),
 			ach(10605, {	-- Handle With Care

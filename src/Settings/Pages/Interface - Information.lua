@@ -221,7 +221,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 				end
 			end
 			if #knownBy == 0 and IsQuestFlaggedCompletedOnAccount(id) then
-				tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE or "Account-Wide"});
+				tinsert(knownBy, {text=ACCOUNT_COMPLETED_QUEST_NOTICE or "Previously completed on your Account"});
 			end
 		end
 		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
@@ -1267,5 +1267,18 @@ settings.CreateInformationType("bonuses", {
 			left = "Item Bonuses",
 			right = app.TableConcat(bonuses, nil, nil, " | ")
 		});
+	end
+})
+settings.CreateInformationType("rawfields", {
+	priority = 99999,
+	text = "DEBUG: Raw Fields",
+	HideCheckBox = not app.Debugging,
+	Process = function(t, data, tooltipInfo)
+		for k, v in pairs(data) do
+			tinsert(tooltipInfo, {
+				left = "Raw: "..tostring(k),
+				right = tostring(v)
+			});
+		end
 	end
 })

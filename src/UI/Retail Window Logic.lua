@@ -1361,7 +1361,7 @@ function app:CreateMiniListForGroup(group, forceFresh)
 
 		app.HandleEvent("OnNewPopoutGroup", popout.data)
 		-- Sort any content added to the Popout data by the Global sort (not for popped out difficulty groups)
-		if not popout.data.difficultyID then
+		if not (popout.data.difficultyID or popout.data.instanceID) then
 			app.Sort(popout.data.g, app.SortDefaults.Global)
 		end
 

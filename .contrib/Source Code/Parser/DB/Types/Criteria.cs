@@ -55,6 +55,7 @@ namespace ATT.DB.Types
             GetRequiredFlightPath() > 0 ||
             GetRecruitFollowerID() > 0 ||
             GetGarrisonMissionID() > 0 ||
+            GetRequiredSkillID() > 0 ||
             // Currency gained
             Type == 12 ||
             // Do an emote
@@ -114,6 +115,9 @@ namespace ATT.DB.Types
 
         public long GetRequiredFlightPath() =>
             Type == 262 ? Asset : 0;
+
+        public long GetRequiredSkillID() =>
+            Type == 7 ? Asset : 0;
 
         public long GetModifierTreeID() =>
             Modifier_tree_ID;

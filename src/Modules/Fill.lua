@@ -472,8 +472,15 @@ local function RunGroupsLayeredAsync(FillData)
 		Run(RunGroupsLayeredAsync, FillData)
 	end
 end
+-- If we fill something under the group where it may be usable without itself meeting current filters,
+-- then it should override filtering during UpdateGroup
+local function AssignGroupFilledTag(group)
+	group.wasFilled = group.filledReagent or group.filledCost or group.filledUpgrade
+	-- app.PrintDebug("wasFilled",app:SearchLink(group),group.filledReagent,group.filledCost,group.filledUpgrade)
+end
 local function HandleOnWindowFillComplete(window)
 	window.data._fillcomplete = true
+	AssignGroupFilledTag(window.data)
 	app.HandleEvent("OnWindowFillComplete", window)
 end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
@@ -544,6 +551,7 @@ local FillGroups = function(group)
 			NextLayer = {}
 		end
 
+		AssignGroupFilledTag(group)
 		-- app.PrintDebugPrior("FG",group.hash)
 	end
 

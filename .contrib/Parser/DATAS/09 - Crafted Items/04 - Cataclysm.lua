@@ -744,6 +744,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 		o(207724, {	-- Shipwreck Debris
 			["maps"] = { TOL_BARAD_PENINSULA },
+			["groups"] = {
+				i(67597),	-- Sealed Crate
+			},
 		}),
 		--	Recipe:
 		filter(RECIPES, {

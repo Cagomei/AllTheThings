@@ -5,7 +5,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 	m(THE_FORBIDDEN_REACH, {
 		n(ACHIEVEMENTS, {
 			ach(17524, {	-- Adventurer of the Forbidden Reach
-				-- identical criteria as full achievement
 				["sym"] = {{"partial_achievement",17525}},	-- Champion of the Forbidden Reach
 			}),
 			ach(17525, {	-- Champion of the Forbidden Reach

@@ -661,7 +661,7 @@ local L = setmetatable({
 	PRESET_INSANE = app.ccColors.Insane .. "Insane Mode|R enables all " .. app.ccColors.Insane .. "colored options|R and gives you a real challenge!";
 	PRESET_ACCOUNT = app.ccColors.Account .. "Account Mode|R enables all account-wide tracking, and will show progress from all of your characters.";
 	PRESET_SOLO = "Solo Mode disables all account-wide tracking, and will only show progress for your current character.";
-	PRESET_UNIQUE = "Unique Mode disables Sources, marking gear as collected when you have learned their unique appearance. This will still show gear if you only know a class-locked version of that appearance.";
+	PRESET_UNIQUE = "Unique Mode disables Sources, marking gear as collected when you have learned their unique appearance.";
 	PRESET_COMP = "Completionist Mode enables Sources, only marking gear as collected when you have learned the appearance from that specific item.";
 
 	EXTRA_THINGS_LABEL = "Additional Resources";	-- unused

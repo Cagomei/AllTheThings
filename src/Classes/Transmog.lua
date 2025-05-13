@@ -968,32 +968,47 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 				if not working and linkInfo.working then
 					working = true
 				end
-				local failText = "";
-				sourceFilter = sourceGroup.f
-				otherFilter = otherATTSource.f
-				-- Show all of the reasons why an appearance does not meet given criteria.
-				-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-				if sourceFilter ~= otherFilter and sourceFilter ~= 2 and otherFilter ~= 2 then
-					-- This is NOT the same type. Therefore, no credit for you!
-					if #failText > 0 then failText = failText .. ", "; end
-					failText = failText .. (L.FILTER_ID_TYPES[otherATTSource.f] or "???");
-				elseif otherATTSource.nmc then
-					-- This is NOT for your class. Therefore, no credit for you!
-					if #failText > 0 then failText = failText .. ", "; end
-					-- failText = failText .. "Class Locked";
-					for i,classID in ipairs(otherATTSource.c) do
-						if i > 1 then failText = failText .. ", "; end
-						failText = failText .. (app.ClassInfoByID[classID].name or "???");
+				-- Showing failure texts for Shared Appearances really only matters in Unique modes, where it's useful to see why a
+				-- matching Appearance hasn't unlocked another one
+				if not app.Settings:Get("Completionist") then
+					local failTexts = {};
+					sourceFilter = sourceGroup.f
+					otherFilter = otherATTSource.f
+					-- Show all of the reasons why an appearance does not meet given criteria.
+					-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
+					if sourceFilter ~= otherFilter and sourceFilter ~= 2 and otherFilter ~= 2 then
+						-- This is NOT the same type. Therefore, no credit for you!
+						failTexts[#failTexts + 1] = L.FILTER_ID_TYPES[otherATTSource.f] or L.FILTER_ID
 					end
-				elseif otherATTSource.nmr then
-					-- This is NOT for your race. Therefore, no credit for you!
-					if #failText > 1 then failText = failText .. ", "; end
-					failText = failText .. L.RACE_LOCKED;
-				else
-					-- Should be fine
-				end
+					-- Classes
+					if otherATTSource.nmc then
+						-- This is NOT for your class. Therefore, no credit for you!
+						if #otherATTSource.c == 1 then
+							failTexts[#failTexts + 1] = app.ClassInfoByID[otherATTSource.c[1]].name or UNKNOWN
+						else
+							local classes = {}
+							for i,classID in ipairs(otherATTSource.c) do
+								classes[#classes + 1] = app.ClassInfoByID[classID].name or UNKNOWN
+							end
+							failTexts[#failTexts + 1] = app.TableConcat(classes, nil, nil, ", ")
+						end
+					end
+					-- Faction
+					if otherATTSource.r then
+						if sourceGroup.r ~= otherATTSource.r then
+							-- This is NOT for your Faction. Therefore, no credit for you!
+							failTexts[#failTexts + 1] = otherATTSource.r == Enum.FlightPathFaction.Horde and FACTION_HORDE or FACTION_ALLIANCE
+						end
+					else
+						-- Races (only if not Faction)
+						if otherATTSource.nmr then
+							-- This is NOT for your race. Therefore, no credit for you!
+							failTexts[#failTexts + 1] = RACE
+						end
+					end
 
-				if #failText > 0 then linkInfo.left = linkInfo.left .. " |CFFFF0000(" .. failText .. ")|r"; end
+					if #failTexts > 0 then linkInfo.left = linkInfo.left .. " |CFFFF0000(" .. app.TableConcat(failTexts, nil, nil, " & ") .. ")|r"; end
+				end
 				info[#info + 1] = linkInfo
 			end
 		end

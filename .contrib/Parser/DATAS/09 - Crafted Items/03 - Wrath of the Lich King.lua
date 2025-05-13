@@ -1105,8 +1105,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+] (CI!)
 				["timeline"]={ ADDED_3_0_2 },
 			}),
-
 			i(167539, {["timeline"] = {ADDED_8_1_5}}),	-- Glyph of Dalaran Brilliance
+			i(44922, {	-- Glyph of Typhoon / Glyph of Stars[WOD?+]
+				["timeline"]={ ADDED_3_0_2 },
+			}),
 		}),
 		-- #endif
 		category(106, {	-- Tarot Cards

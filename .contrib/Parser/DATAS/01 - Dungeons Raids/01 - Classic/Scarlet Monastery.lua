@@ -62,6 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		},
 		["maps"] = {
 			SCARLET_MONASTERY,	-- Scarlet Monastery: Forlorn Cloister (First Boss)
+			805,				-- Scarlet Monastery: Pathway to the Chapel
 			SCARLET_MONASTERY_CRUSADERS_CHAPEL,	-- Scarlet Monasatery: Crusader's Chapel (Last two bosses)
 			SCARLET_MONASTERY_GRAVEYARD,	-- Scarlet Monastery: Graveyard
 			SCARLET_MONASTERY_LIBRARY,	-- Scarlet Monastery: Library

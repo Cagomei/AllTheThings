@@ -295,10 +295,11 @@ modeButton:SetScript("OnClick", function()
 			else
 				settings:Set("Thing:CharacterUnlocks", false)
 			end
-			settings:Set("Thing:DeathTracker", true)
 			if app.IsClassic then
+				settings:Set("Thing:DeathTracker", true)
 				settings:Set("Thing:Exploration", true)
 			else
+				settings:Set("Thing:DeathTracker", false)
 				settings:Set("Thing:Exploration", false)
 			end
 			settings:Set("Thing:FlightPaths", true)

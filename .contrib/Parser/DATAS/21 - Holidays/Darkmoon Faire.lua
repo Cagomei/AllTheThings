@@ -2165,6 +2165,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 47.3, 78.9, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_4_3_0 },
 				["cost"] = { { "i", 74034, 12 } },	-- Pit Fighter
+				["repeatable"] = true,
 				["groups"] = {
 					ach(6024, {	-- Darkmoon Dominator
 						["timeline"] = { ADDED_4_3_0 },

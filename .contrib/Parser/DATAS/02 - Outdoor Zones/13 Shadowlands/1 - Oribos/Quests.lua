@@ -220,7 +220,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
 				["provider"] = { "i", 158932 },	-- Secretest Fish
 				["crs"] = { 151583 },	-- Secret Fish
-				["cost"] = { { "i", 167698, 1 } },	-- Secret Fish Goggles
 				["maps"] = {
 					ARDENWEALD,
 					BASTION,

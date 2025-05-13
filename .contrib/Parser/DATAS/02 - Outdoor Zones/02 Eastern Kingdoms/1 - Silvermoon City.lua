@@ -745,7 +745,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 60.6, 86.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
-						17187,    -- Banded Buckler
+						17187,   -- Banded Buckler
 						2446,    -- Kite Shield
 						2445,    -- Large Metal Shield
 						2398,    -- Light Chain Armor
@@ -754,15 +754,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						2402,    -- Light Chain Bracers
 						2403,    -- Light Chain Gloves
 						2400,    -- Light Chain Leggings
-						17192,    -- Reinforced Targe
-						17188,    -- Ringed Buckler
-						17185,    -- Round Buckler
+						17192,   -- Reinforced Targe
+						17188,   -- Ringed Buckler
 						1202,    -- Wall Shield
-						2376,    -- Worn Heater Shield
 					}},
 					["groups"] = {
 						i(17183),	-- Dented Buckler
 						i(1200),	-- Large Wooden Shield
+						i(17185),   -- Round Buckler
+						i(2376),    -- Worn Heater Shield
 					},
 				}),
 				n(16782, {	-- Yatheon <Engineering Supplies>

@@ -100,9 +100,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 50.1, 50.7, AZJ_KAHET },
 					{ 51.8, 29.9, AZJ_KAHET },
 				},
-				["g"] = {
-					i(220504),	-- Deep-Dweller's Orb of the Harmonious
-				},
 			}),
 			o(444797, {	-- Threadspun Cache
 				["coords"] = {

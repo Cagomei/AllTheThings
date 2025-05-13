@@ -197,39 +197,6 @@ end)
 end -- TradeSkill Functionality
 
 local ResolveSymbolicLink;
--- Fills & returns a group with its symlink references, along with all sub-groups recursively if specified
--- This should only be used on a cloned group so the source group is not contaminated
-local function FillSymLinks(group, recursive)
-	if recursive and group.g then
-		for _,obj in ipairs(group.g) do
-			FillSymLinks(obj, recursive);
-		end
-	end
-	if group.sym then
-		-- app.PrintDebug("FillSymLinks",group.hash)
-		NestObjects(group, ResolveSymbolicLink(group));
-		-- make sure this group doesn't waste time getting resolved again somehow
-		group.sym = nil;
-	end
-	-- if app.Debugging == group then app.Debugging = nil; end
-	return group;
-end
-app.FillSymLinks = FillSymLinks;
-app.RecreateObject = function(t)
-	-- Clones an Object, fills any symlinks, builds groups, and does an Update pass before returning the Object
-	local obj = CreateObject(t);
-	-- fill the copied Item's symlink if any
-	FillSymLinks(obj);
-	-- Build the Item's groups if any
-	AssignChildren(obj);
-	-- Update the group while ignoring some visibility functionality
-	obj.collectibleAsCost = false
-	obj.collectibleAsUpgrade = false
-	app.TopLevelUpdateGroup(obj);
-	obj.collectibleAsCost = nil
-	obj.collectibleAsUpgrade = nil
-	return obj;
-end
 
 local GetSpecsString, GetGroupItemIDWithModID, GetItemIDAndModID, GroupMatchesParams, GetClassesString
 	= app.GetSpecsString, app.GetGroupItemIDWithModID, app.GetItemIDAndModID, app.GroupMatchesParams, app.GetClassesString

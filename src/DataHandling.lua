@@ -184,9 +184,10 @@ local function UpdateGroup(group, parent)
 	-- Determine if this user can enter the instance or acquire the item and item is equippable/usable
 	-- Things which are determined to be a cost for something else which meets user filters will
 	-- be shown anyway, so don't need to undergo a filtering pass
-	local valid = group.isCost or group.forceShow
+	local isCost = group.isCost
+	local valid = isCost or group.forceShow or group.wasFilled
 	-- if valid then
-		-- app.PrintDebug("Pre-valid group as from cost/upgrade",group.isCost,group.isUpgrade,app:SearchLink(group))
+	-- 	app.PrintDebug("Pre-valid group as from cost/forceShow/wasFilled/upgrade",group.isCost,group.forceShow,group.wasFilled,group.isUpgrade,app:SearchLink(group))
 	-- end
 	-- A group with a source parent means it has a different 'real' heirarchy than in the current window
 	-- so need to verify filtering based on that instead of only itself
@@ -220,7 +221,7 @@ local function UpdateGroup(group, parent)
 		-- if debug then print("UG.prog",progress,total,group.collectible) end
 		group.progress = progress
 		group.total = total
-		group.costTotal = group.isCost and 1 or 0
+		group.costTotal = isCost and 1 or 0
 		group.upgradeTotal = group.isUpgrade and 1 or 0
 
 		-- Check if this is a group
@@ -344,7 +345,7 @@ local function TopLevelUpdateGroup(group)
 	else
 		UpdateGroup(group)
 	end
-	-- app.PrintDebugPrior("TLUG",group.hash)
+	-- app.PrintDebugPrior("TLUG",group.hash,group.visible)
 end
 app.TopLevelUpdateGroup = TopLevelUpdateGroup
 local DGUDelay = 0.5

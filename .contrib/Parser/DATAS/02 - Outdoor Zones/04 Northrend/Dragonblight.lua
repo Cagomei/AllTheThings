@@ -321,7 +321,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
 					}),
 				}),
-				spell(921, {	-- Pickpocketing
+				header(HEADERS.Spell, 921, {	-- Pickpocketing
 					["classes"] = { ROGUE },
 					["groups"] = {
 						i(38268, {	-- Spare Hand

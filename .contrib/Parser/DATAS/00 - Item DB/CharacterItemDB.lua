@@ -151,6 +151,22 @@ iq(128490, 39561);					-- Blueprint: Oil Rig
 iq(128446, 39564);					-- Saberstalker Teachings: Trailblazer
 
 -----------------
+-- PATCH 6.2.2 --
+-----------------
+-- Hallow's End
+iq(128664, 39759);	-- Creepy Crawlers
+iq(128660, 39758);	-- Ghoulish Guises
+iq(128661, 39612);	-- Hallow's Glow
+iq(128662, 39613);	-- Seer's Invitation
+iq(128663, 39611);	-- Witch's Brew
+-- Feast of Winter Veil --
+iq(128665, 39615);	-- Ball of Tangled Lights
+iq(128666, 39616);	-- Imported Trees
+iq(128667, 39767);	-- Little Helpers
+iq(128669, 39712);	-- Old Box of Decorations
+-- iq(128668, 39671);	-- Festive Outfits [this quest is not permanently completed, so it can't be a character unlock]
+
+-----------------
 -- PATCH 7.0.3 --
 -----------------
 is(136796, 127344, DEATHKNIGHT);	-- Necrophile Tome: Corpse Exploder

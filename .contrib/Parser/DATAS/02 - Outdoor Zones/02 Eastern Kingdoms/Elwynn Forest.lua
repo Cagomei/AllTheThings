@@ -2229,7 +2229,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(203723, {	-- Cutty's Note

@@ -12,7 +12,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			["sourceQuest"] = 50954,	-- Zandalar Forever!
 			["provider"] = { "n", 120171 },	-- Rokhan
 			["coords"] = {
-				{ 39.3, 72.3, DAZARALOR },
+				{ 39.3, 72.3, HALL_OF_CHRONICLERS },
 				{ 57.6, 62.4, ZULDAZAR },
 			},
 			["minReputation"] = { FACTION_ZANDALARI_EMPIRE, REVERED },
@@ -96,7 +96,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 		q(51521, {	-- The True Leader of Zandalar
 			["sourceQuest"] = 51520,	-- Justice for the Fallen
 			["provider"] = { "n", 140725 },	-- Spirit of Vol'jin
-			["coord"] = { 57.6, 63.0, ZULDAZAR },
+			["coord"] = { 49.9, 39.5, DAZARALOR },
 		}),
 	}))
 })));

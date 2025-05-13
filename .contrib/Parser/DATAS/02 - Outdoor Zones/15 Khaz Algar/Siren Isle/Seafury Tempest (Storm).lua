@@ -97,7 +97,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					["coord"] = { 37.9, 76.1, 2375 },
 					["questID"] = 85406,
 					["g"] = {
-						i(235017),	-- Glittering Vault Shard (TOY!)
+						i(235017, {	-- Glittering Vault Shard (TOY!)
+							["description"] = "The toy can drop on every kill and is unaffected by daily lockout.",
+						}),
 						i(232571),	-- Whirling Runekey
 					},
 				}),
@@ -111,8 +113,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					},
 				}),
 				o(499127, {	-- Runemarked Coffer
-					-- TODO: The Forgotten Vault + storm phase
-					-- TODO: I don't make screenshot for this one, so I'm unsure if it something in loot or it is related to treasure chest)
 					["description"] = "In the back of the left room of the Forgotten Vault during a storm.",
 					["coord"] = { 26.6, 23.9, 2375 },
 					["questID"] = 85859,

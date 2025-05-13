@@ -1179,7 +1179,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(44871, { ["timeline"] = { ADDED_7_1_0 } }),	-- 7.1 World - 850 - Special - Moroes 1
 			q(44872, { ["timeline"] = { ADDED_7_1_0 } }),	-- 7.1 World - 850 - Special - Moroes 2
 			q(42061),	-- Charge Trigger Hit - triggered after leaving the citadel during the Fangs of the Devourer scenario
-			q(43634),	-- Looted Rogue Vault
+			q(43634,{isDaily=true}),	-- Looted Rogue Vault
 			q(50804),	-- Opened the way to the order hall for the first time during "Call of The Uncrowned" (questID 40832)
 			q(43716),	-- Rogue Vault Rare Triggered
 			-- q(43719),	-- Rare Item One Obtained - looted the "Suspicious Crate" toy (itemID 139587)

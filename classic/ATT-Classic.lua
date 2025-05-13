@@ -2412,12 +2412,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 		GetInfo = function()
 			return GetAchievementCriteriaInfoByID;
 		end,
-	},
-	"WithIndex", {
-		GetInfo = function()
-			return GetAchievementCriteriaInfo;
-		end;
-	}, (function(t) return t.criteriaID < 100; end));
+	});
 	app.CreateGuildAchievementCriteria = app.ExtendClass("AchievementCriteria", "GuildAchievementCriteria", "guildCriteriaID", {
 		collectible = app.ReturnFalse,
 		criteriaID = function(t) return t.guildCriteriaID; end,

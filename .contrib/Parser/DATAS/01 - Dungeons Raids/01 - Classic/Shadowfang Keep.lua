@@ -26,7 +26,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lvl"] = lvlsquish(14, 14, 8),
 		["groups"] = {
 			-- #if SEASON_OF_DISCOVERY
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				["description"] = "The Rare Creatures only spawn if a Rogue enters the instance alone while on the quest The Horn of Xelthos.",
 				["classes"] = { ROGUE },
 				["groups"] = {

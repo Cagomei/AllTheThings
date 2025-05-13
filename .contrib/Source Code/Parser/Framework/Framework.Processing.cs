@@ -302,6 +302,7 @@ namespace ATT
                                     var newItem = new Dictionary<string, object>
                                     {
                                         {"itemID", itemID },
+                                        { "_unsorted", true },
                                     };
                                     Items.MergeInto(itemID, item, newItem);
                                     Items.DetermineSourceID(newItem);
@@ -334,6 +335,7 @@ namespace ATT
                                     var newItem = new Dictionary<string, object>
                                     {
                                         {"itemID", itemID },
+                                        { "_unsorted", true },
                                     };
                                     Items.MergeInto(itemID, item, newItem);
                                     Items.DetermineSourceID(newItem);
@@ -2390,6 +2392,21 @@ namespace ATT
                 }
             }
 
+            long requireSkillID = criteriaData.GetRequiredSkillID();
+            if (requireSkillID > 0)
+            {
+                Objects.Merge(data, "requireSkill", requireSkillID);
+                // TODO: it's nice for requireSkill to consolidate to the base profession, but also want to see the 'exact' profession requirement for these cases...
+                //data["_specificRequireSkill"] = true;
+                data.TryGetValue("_parentAmount", out long parentAmount);
+                if (parentAmount > 0)
+                {
+                    Objects.Merge(data, "learnedAt", parentAmount);
+                }
+                LogDebug($"INFO: Added requireSkill to Criteria {achID}:{criteriaID} with ProfessionID: {requireSkillID} @ {parentAmount}");
+                incorporated = true;
+            }
+
             // This needs to be the last check performed since it will remove the Criteria group if nothing useful was added from the Criteria data
             long modifierTreeID = criteriaData.GetModifierTreeID();
             if (modifierTreeID > 0)
@@ -2749,6 +2766,8 @@ namespace ATT
                     // 99 (SKILL)
                     case 99:
                         Objects.Merge(data, "requireSkill", existingModifierTree.Asset);
+                        // TODO: it's nice for requireSkill to consolidate to the base profession, but also want to see the 'exact' profession requirement for these cases...
+                        //data["_specificRequireSkill"] = true;
                         TrackIncorporationData(data, "requireSkill", existingModifierTree.Asset);
                         // SecondaryAsset = skill level
                         break;
@@ -4258,7 +4277,7 @@ namespace ATT
         /// <param name="data"></param>
         private static void CheckRequireSkill(IDictionary<string, object> data)
         {
-            if (data.TryGetValue("requireSkill", out long requiredSkill))
+            if (!data.ContainsKey("_specificRequireSkill") && data.TryGetValue("requireSkill", out long requiredSkill))
             {
                 if (Objects.SKILL_ID_CONVERSION_TABLE.TryGetValue(requiredSkill, out long newRequiredSkill))
                 {
@@ -4279,7 +4298,7 @@ namespace ATT
                             data.Remove("requireSkill");
                             break;
                         default:
-                            Log($"Missing Skill ID in Conversion Table: {requiredSkill}{Environment.NewLine}{ToJSON(data)}");
+                            LogDebugWarn($"Missing Skill ID in Conversion Table: {requiredSkill}", data);
                             break;
                     }
                 }

@@ -1125,7 +1125,17 @@ namespace ATT
                             LogDebug($"INFO: Item:{sourceIDKey} SourceID == {message}");
                         }
                     }
-                    else if (substituted) LogWarn($"Item:{sourceIDKey} Using SourceID from {message}");
+                    else if (substituted)
+                    {
+                        if (!data.ContainsKey("_unsorted"))
+                        {
+                            LogWarn($"Item:{sourceIDKey} Using SourceID from {message}", data);
+                        }
+                        else
+                        {
+                            LogDebugWarn($"Item:{sourceIDKey} Using SourceID from {message}", data);
+                        }
+                    }
                     else if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Using SourceID from {message}");
 #pragma warning restore CS0162 // Unreachable code detected
 

@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(208768, {	-- Buccaneer's Matchbox
