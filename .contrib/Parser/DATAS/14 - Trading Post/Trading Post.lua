@@ -3024,7 +3024,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				iensemble(212940, {	-- Ensemble: Spring Reveler's Lavender Collection
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 				}),
-				i(230170, {	-- Ensemble: Prowler's Camo Headgear
+				iensemble(230170, {	-- Ensemble: Prowler's Camo Headgear
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
 				i(212787, {	-- Gloves of the Violet Gala

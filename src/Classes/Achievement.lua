@@ -362,7 +362,7 @@ local function BuildSourceAchievements(group)
 		OnUpdate = app.AlwaysShowUpdate,
 		OnClick = app.UI.OnClick.IgnoreRightClick,
 		sourceIgnored = true,
-		skipFill = true,
+		skipFull = true,
 		SortPriority = -2.9,
 		g = sas,
 	})

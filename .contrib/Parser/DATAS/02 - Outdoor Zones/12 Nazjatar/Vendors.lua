@@ -154,7 +154,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						},
 					}),
 					i(174523, {	-- Waveswept Abyssal Conch
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1721, 20 }, },	-- 20x Prismatic Manapearl
 					}),
 				}, {	-- Exalted
@@ -545,7 +544,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						},
 					}),
 					i(174522, {	-- Waveswept Abyssal Conch
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1721, 20 }, },	-- 20x Prismatic Manapearl
 					}),
 				}, {	-- Exalted

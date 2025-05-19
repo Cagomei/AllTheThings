@@ -662,6 +662,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(142116),	-- Fel-Infused Gunpowder Cache (QI!)
+						},
 					}),
 					q(46323, {	-- What's the Cache? (H)
 						["sourceQuest"] = 46322,	-- The Pirate's Bay
@@ -669,6 +672,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(142116),	-- Fel-Infused Gunpowder Cache (QI!)
+						},
 					}),
 					q(45835, {	-- False Orders (A)
 						["sourceQuest"] = 45833,	-- The Pirate's Bay

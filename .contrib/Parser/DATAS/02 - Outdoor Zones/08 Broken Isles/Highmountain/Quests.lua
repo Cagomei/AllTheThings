@@ -821,6 +821,9 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 31.3, 25.1, HIGHMOUNTAIN },
 					["provider"] = { "n", 117249 },	-- Navarrogg
+					["g"] = {
+						i(143863),	-- Fel Exfoliator (QI!)
+					},
 				}),
 				q(39321, {	-- The Three
 					["sourceQuests"] = { 38910 },	-- Rocs vs Eagles
@@ -983,7 +986,11 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 95799 },	-- Damrul the Stronk
 				}),
 				n(BONUS_OBJECTIVES, sharedData({
+					-- #if BEFORE DF
 					["lockCriteria"] = { 1, "lvl", 45 },
+					-- #else
+					["lockCriteria"] = { 1, "lvl", 60 },
+					-- #endif
 					["sharedDescription"] = "This can be completed in party-sync with a character who is in Chromie Time for Legion.",
 				},{
 					-- TODO: Check SQ, also probably can't do after a certain level

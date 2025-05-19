@@ -370,7 +370,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel
 				["coord"] = { 35.4, 58.6, THE_FORBIDDEN_REACH },
 				["g"] = {
-					i(202647),	-- Stolen Goods (QI!)
+					o(385999, {	-- Stolen Booty
+						i(202647),	-- Stolen Goods (QI!)
+					}),
 				},
 			}),
 			q(73191, {	-- Snake Wrangling

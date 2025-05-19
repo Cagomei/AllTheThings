@@ -168,8 +168,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["cost"] = 75000000,	-- 7500g
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
-					i(190184, {	-- Incense of Infinity
-						["questID"] = 65623,
+					i(190184, {	-- Incense of Infinity (CI!)
 						["cost"] = 5000000,	-- 500g
 						["sym"] = {
 							{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands

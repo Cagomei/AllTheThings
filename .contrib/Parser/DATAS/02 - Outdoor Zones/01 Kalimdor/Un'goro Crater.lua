@@ -179,6 +179,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
 					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
+					["g"] = {
+						i(142388),	-- Bleached Stegodon Spike (QI!)
+						i(142387),	-- Calcified Diemetradon Scale (QI!)
+						i(142386),	-- Mostly Powerful Mojo (QI!)
+						i(142385),	-- Stolen Enchanted Thorium Bar (QI!)
+					},
 				}),
 				q(4142, {	-- A Visit to Gregan
 					["providers"] = {
@@ -1281,6 +1287,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
 					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
+					["g"] = {
+						i(142389),	-- Broken Darkspear (QI!)
+					},
 				}),
 				q(24730, {	-- Roll the Bones
 					["qg"] = 9272,	-- Spark Nilminer

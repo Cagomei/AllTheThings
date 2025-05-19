@@ -144,6 +144,7 @@ local L = setmetatable({
 	ARTIFACT_ID = "Artifact ID";
 	AZERITE_ESSENCE_ID = "Azerite Essence ID";
 	ART_ID = "Art ID";
+	CAMPSITE_ID = "Campsite ID";
 	CREATURE_ID = "Creature ID";
 	CURRENCY_ID = "Currency ID";
 	DESCRIPTIONS = "Descriptions";
@@ -869,6 +870,8 @@ L.SETTINGS_MENU = {
 		APPEARANCES_CHECKBOX_TOOLTIP = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.";
 		BATTLE_PETS_CHECKBOX = "Battle Pets";
 		BATTLE_PETS_CHECKBOX_TOOLTIP = "Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.";
+		CAMPSITES_CHECKBOX = "Campsites";
+		CAMPSITES_CHECKBOX_TOOLTIP = "Enable this option to track warband campsite completion.";
 		DEATHS_CHECKBOX = "Deaths";
 		DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.";
 		EXPLORATION_CHECKBOX = "Exploration (inaccurate)";
@@ -1072,10 +1075,8 @@ L.SETTINGS_MENU = {
 	-- Interface: Information Page
 		ACHIEVEMENT_ID = "Achievement ID";
 		ACHIEVEMENT_CATEGORY_ID = "Achievement Category ID";
-		ADDED_WITH_PATCH_CLASSIC_FORMAT = "This gets added with patch %s";
 		READDED_WITH_PATCH_CLASSIC_FORMAT = "This gets readded with patch %s";
 		REMOVED_WITH_PATCH_CLASSIC_FORMAT = "This gets removed with patch %s";
-		WAS_ADDED_WITH_PATCH_CLASSIC_FORMAT = "This was added with patch %s";
 
 	-- Features Page
 		FEATURES_PAGE = FEATURES_LABEL;

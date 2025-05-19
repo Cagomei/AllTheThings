@@ -42,9 +42,20 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 			pvprank(13),	-- Field Marshal / Warlord
 			pvprank(14),	-- Grand Marshal / High Warlord
 		})),
-		n(FACTION_HEADER_ALLIANCE, {
+		n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({
+			["timeline"] = {
+				ADDED_1_11_1,
+				-- #if NOT ANYCLASSIC
+				REMOVED_2_0_1,
+				-- #endif
+			}
+		}, {
 			["races"] = ALLIANCE_ONLY,
-			["groups"] = {
+			["groups"] = sharedData({
+				-- #if AFTER 2.0.1
+				["description"] = "This item can be purchased, but without the original PvP title, it cannot be used for transmogrification and may not grant collection credit.",
+				-- #endif
+			}, {
 				-- Original Classic Gear, only collectable with the original title.
 				n(WEAPONS, {
 					i(18825, {	-- Grand Marshal's Aegis
@@ -513,11 +524,22 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				i(18856, {	-- Insignia of the Alliance
 					["classes"] = { HUNTER },
 				}),
-			},
-		}),
-		n(FACTION_HEADER_HORDE, {
+			}),
+		})),
+		n(FACTION_HEADER_HORDE, bubbleDownSelf({
+			["timeline"] = {
+				ADDED_1_11_1,
+				-- #if NOT ANYCLASSIC
+				REMOVED_2_0_1,
+				-- #endif
+			}
+		}, {
 			["races"] = HORDE_ONLY,
-			["groups"] = {
+			["groups"] = sharedData({
+				-- #if AFTER 2.0.1
+				["description"] = "This item can be purchased, but without the original PvP title, it cannot be used for transmogrification and may not grant collection credit.",
+				-- #endif
+			}, {
 				n(WEAPONS, {
 					i(18831, {	-- High Warlord's Battle Axe
 						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
@@ -736,8 +758,8 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				i(18845, {	-- Insignia of the Horde
 					["classes"] = { SHAMAN },
 				}),
-			},
-		}),
+			}),
+		})),
 		n(QUESTS, {
 			q(8371, {	-- Concerted Efforts
 				["qg"] = 15351,	-- Alliance Brigadier General

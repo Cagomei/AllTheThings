@@ -2133,6 +2133,7 @@ i(234734);	-- Inscribed Drinking Horn
 i(235378);	-- Landro's Loot Box
 i(232638);	-- Loosened Naga Scales
 i(234720);	-- Memoric Residue
+i(226377);	-- Mining Journal - Page 1
 i(234750);	-- Myrmidon's Osminium Bracer
 i(234751);	-- Pearl-Adorned Tailband
 i(232636);	-- Rum-Soaked Hankerchief
@@ -2163,6 +2164,7 @@ i(236639);	-- Dented Censer
 i(234204);	-- Depleted Battery
 i(237330);	-- Disposable Hamburger
 i(237331);	-- Disposable Hotdog
+i(234617);	-- Dulux Bluesberry Blast
 i(235280);	-- Extra Crispy Laundry
 i(228194);	-- Fully Scrapped Scrap
 i(234197);	-- Gilded Screwdriver
@@ -2180,6 +2182,7 @@ i(236924);	-- Pouch of Weathered Harbinger Crests
 i(236652);	-- Re-Down-Upcycled Salvage
 i(236925);	-- Satchel of Carved Harbinger Crests
 i(237332);	-- Single-Use Grill
+i(234616);	-- Supreme Mangoro Madness
 i(228195);	-- Tattered Goblin Cap
 i(237313);	-- Totally Legit Samophlange
 i(231899);	-- Trash

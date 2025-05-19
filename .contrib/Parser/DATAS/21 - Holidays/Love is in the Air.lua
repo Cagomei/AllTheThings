@@ -1989,6 +1989,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				i(210928),	-- Healthy Body Package
+				i(239015, {	-- Rock Candy Package
+					["timeline"] = { ADDED_11_0_7 },
+				}),
 			},
 		})),
 		n(214482, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Grogg Skullsmasher <Fruit Vendor>
@@ -1997,6 +2000,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["g"] = {
 				i(210821),	-- Berry Chocolate Tart
 				i(210819),	-- Chocolate-Covered Cherries
+				i(239015, {	-- Rock Candy Package
+					["timeline"] = { ADDED_11_0_7 },
+				}),
 			},
 		})),
 		n(214493, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Guo Plumpaw
@@ -2006,6 +2012,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				i(210841),	-- Buttered Oysters
 				i(210929),	-- Comfort Food Package
 				i(210842),	-- Fresh Fig
+				i(239015, {	-- Rock Candy Package
+					["timeline"] = { ADDED_11_0_7 },
+				}),
 			},
 		})),
 		n(214488, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Hana Breezeheart <Flower Vendor>
@@ -2525,6 +2534,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						i(22238),	-- Very Berry Cream
 					},
 				}),
+				i(239015, {	-- Rock Candy Package
+					["timeline"] = { ADDED_11_0_7 },
+				}),
 			},
 		})),
 		n(212886, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Melanie Charles <Bountiful Brews>
@@ -2539,7 +2551,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				i(210841),	-- Buttered Oysters
+				i(210929),	-- Comfort Food Package
 				i(210842),	-- Fresh Fig
+				i(239015, {	-- Rock Candy Package
+					["timeline"] = { ADDED_11_0_7 },
+				}),
 			},
 		})),
 		n(211810, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Ronathan Graham <Fruit Vendor>

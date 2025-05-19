@@ -2221,7 +2221,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { REMOVED_11_1_5 },
 							}),
 							i(238979, {	-- Phantom Armor
-								["timeline"] = { REMOVED_11_1_5 },
+								["timeline"] = { ADDED_11_1_5 },
 							}),
 							i(63454),	-- Double Dealing Bracers
 							i(63453, {	-- Iron Will Girdle

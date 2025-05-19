@@ -21,6 +21,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					40152,	-- Skyriding Glyphs: The Three Shields
 				}},
 			}),
+			ach(41186, {	-- Slate of the Union
+				["timeline"] = { ADDED_11_0_7 },
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					40860,	-- A Star of Dorn
+					40435,	-- Adventurer of the Isle of Dorn
+					40606,	-- Flat Earthen
+					40504,	-- Rocked to Sleep
+					40434,	-- Treasures of the Isle of Dorn
+					40859,	-- We're Here All Night
+				}},
+			}),
 			ach(40665, {	-- Skyriding Glyphs: Dhar Durgaz
 				["coord"] = { 44.5, 79.7, ISLE_OF_DORN },
 			}),

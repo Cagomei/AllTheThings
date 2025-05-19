@@ -22746,3 +22746,8 @@
 245545@@@Flotsam Harvester
 245647@@@Lil' Daz'ti
 245776@@@Waypoint C
+11.1.7.60672
+230815@@@Faerin Lothar
+231759@@@Eitrigg
+231764@@@Faerin Lothar
+236815@@@Karga Bloodfury

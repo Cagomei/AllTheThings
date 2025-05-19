@@ -5,7 +5,7 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 	m(STORMSONG_VALLEY, {
 		n(FACTIONS, {
-			faction(FACTION_HONEYBACK_HIVE, {	-- Honeyback Hive
+			header(HEADERS.Faction, FACTION_HONEYBACK_HIVE, {	-- Honeyback Hive
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = 3066348,
 				-- Possible to use HQT's to track unlock
@@ -19,6 +19,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 					n(FACTIONS, {
 						faction(FACTION_HONEYBACK_HARVESTER, {	-- Honeyback Harvester
 							["races"] = ALLIANCE_ONLY,
+						}),
+						faction(FACTION_HONEYBACK_HIVE, {	-- Honeyback Hive
+							["races"] = ALLIANCE_ONLY,
+							["icon"] = 3066348,
 						}),
 					}),
 					n(QUESTS, {

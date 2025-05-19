@@ -354,32 +354,25 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(134125),	-- Mecha-Bond Imprint Matrix (CI!)
 			i(132511),	-- Pump-Action Bandage Gun
 			i(132523),	-- Reaves Battery
-			i(132530, {	-- Reaves Module: Bling Mode
-				["questID"] = 40736,	-- FLAG - Reaves Bling Module
+			i(132530, {	-- Reaves Module: Bling Mode (CI!)
 				["requireSkill"] = ENGINEERING,
 			}),
-			i(132526, {	-- Reaves Module: Failure Detection Mode
-				["questID"] = 40733,	-- FLAG - Reaves Failure Detection Module
+			i(132526, {	-- Reaves Module: Failure Detection Mode (CI!)
 				["requireSkill"] = ENGINEERING,
 			}),
-			i(132528, {	-- Reaves Module: Fireworks Display Mode
-				["questID"] = 40734,	-- FLAG - Reaves Fireworks Module
+			i(132528, {	-- Reaves Module: Fireworks Display Mode (CI!)
 				["requireSkill"] = ENGINEERING,
 			}),
-			i(132531, {	-- Reaves Module: Piloted Combat Mode
-				["questID"] = 40737,	-- FLAG - Reaves Piloted Combat Module
+			i(132531, {	-- Reaves Module: Piloted Combat Mode (CI!)
 				["requireSkill"] = ENGINEERING,
 			}),
-			i(132525, {	-- Reaves Module: Repair Mode
-				["questID"] = 40732,	-- FLAG - Reaves Repair Module
+			i(132525, {	-- Reaves Module: Repair Mode (CI!)
 				["requireSkill"] = ENGINEERING,
 			}),
-			i(132529, {	-- Reaves Module: Snack Distribution Mode
-				["questID"] = 40735,	-- FLAG - Reaves Snack Distribution Module
+			i(132529, {	-- Reaves Module: Snack Distribution Mode (CI!)
 				["requireSkill"] = ENGINEERING,
 			}),
-			i(132524, {	-- Reaves Module: Wormhole Generator Mode
-				["questID"] = 40738,	-- FLAG - Reaves Wormhole Generator Module
+			i(132524, {	-- Reaves Module: Wormhole Generator Mode (CI!)
 				["requireSkill"] = ENGINEERING,
 			}),
 			i(144341, {["timeline"] = {ADDED_7_1_5}}),	-- Rechargeable Reaves Battery

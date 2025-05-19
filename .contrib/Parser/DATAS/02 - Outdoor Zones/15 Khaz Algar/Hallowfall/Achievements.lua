@@ -6,6 +6,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		n(ACHIEVEMENTS, {
 			ach(40851),		-- Adventurer of Hallowfall (automated)
 			ach(40622),		-- Biblo Archivist (automated)
+			ach(41188, {	-- Crystal Chronicled
+				["timeline"] = { ADDED_11_0_7 },
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					40851,	-- Adventurer of Hallowfall
+					40308,	-- Beacon of Hope
+					40622,	-- Biblo Archivist
+					40150,	-- Children's Entertainer
+					40313,	-- Igniting the Keyflames
+					40618,	-- Lost and Found
+					40151,	-- Mereldar Menace
+					40311,	-- Sharing the Light
+					40625,	-- The Missing Lynx
+					40848,	-- Treasures of Hallowfall
+				}},
+			}),
 			ach(40826),		-- Explore Hallowfall (automated)
 			ach(20594, {	-- Flamegard's Hope
 				["description"] = "Use healing spells, bandages or Algari Healing Potion to heal 20 patients over 20 days. This does not have to be done on consecutive days.",

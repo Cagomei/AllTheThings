@@ -1401,11 +1401,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.8, 48.2, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(5950) },	-- Reethe's Badge (QI!)
 				}),
 				q(1269, {	-- Lieutenant Paval Reethe [H]
 					["providers"] = {
 						{ "o", 21042 },	-- Theramore Guard Badge
-						{ "i", 5950 },	-- Reethe's Badge
+						{ "i", 5950 },	-- Reethe's Badge (QI!) not prov
 					},
 					["coord"] = { 29.8, 48.2, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2491,7 +2492,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1253, {	-- The Black Shield (1/3) [A]
 					["providers"] = {
 						{ "o", 20992 },	-- Black Shield
-						{ "i", 5919 },	-- Blackened Iron Shield
+						{ "i", 5919 },	-- Blackened Iron Shield (QI!) not prov
 					},
 					["coord"] = { 29.6, 48.5, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2501,7 +2502,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1319, {	-- The Black Shield (2/3) [A]
 					["providers"] = {
 						{ "n", 4944 },	-- Captain Garran Vimes
-						{ "i", 5919 },	-- Blackened Iron Shield
+						{ "i", 5919 },	-- Blackened Iron Shield (QI!) not prov
 					},
 					["sourceQuest"] = 1253,	-- The Black Shield (1/3) [A]
 					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
@@ -2565,7 +2566,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1251, {	-- The Black Shield (1/5) [H]
 					["providers"] = {
 						{ "o", 20992 },	-- Black Shield
-						{ "i", 5919 },	-- Blackened Iron Shield
+						{ "i", 5919 },	-- Blackened Iron Shield (QI!) not prov
 					},
 					["coord"] = { 29.6, 48.5, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2575,7 +2576,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1321, {	-- The Black Shield (2/5) [H]
 					["providers"] = {
 						{ "n", 4926 },	-- Krog
-						{ "i", 5919 },	-- Blackened Iron Shield
+						{ "i", 5919 },	-- Blackened Iron Shield (QI!) not prov
 					},
 					["sourceQuest"] = 1251,	-- The Black Shield (1/5) [H]
 					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
@@ -2618,7 +2619,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1276, {	-- The Black Shield (5/5) [H]
 					["providers"] = {
 						{ "n", 4926 },	-- Krog
-						{ "i", 5919 },	-- Blackened Iron Shield
+						{ "i", 5919 },	-- Blackened Iron Shield (QI!) not prov
 					},
 					["sourceQuest"] = 1323,	-- The Black Shield (4/5) [H]
 					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },

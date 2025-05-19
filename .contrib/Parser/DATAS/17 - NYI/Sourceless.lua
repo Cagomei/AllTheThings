@@ -357,7 +357,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(158509),	-- Tideshaper Staff
 				i(158506),	-- Scalawags Claymore
 				i(161924),	-- Seapriest's Wand (A) (never addedd)
-				i(161926),	-- Talanji's Salutary Scepter (A) (never added)
 
 				-- Nazmir items = Drustvar quest rewards
 
@@ -673,6 +672,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 11.0.2
 			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 				q(84255),	-- Received item 'The Warband Map to Everywhere All At Once' (itemID 212174) - Not for me, it has to be something else - Darkal
+				i(228580),	-- Brute Force Idol
 			})),
 		}),
 	}),

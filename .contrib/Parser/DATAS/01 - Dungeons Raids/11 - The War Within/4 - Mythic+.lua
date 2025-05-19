@@ -104,10 +104,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				spell(354467),	-- Path of the Undefeated
 			}),
 			ach(42144, {	-- The Enterprising Damage Dealer (automated)
-				["timeline"] = { ADDED_11_1_7 },
+				["timeline"] = { ADDED_11_1_5 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
 			}),
 			ach(42148, {	-- The Enterprising Dungeon Master
-				["timeline"] = { ADDED_11_1_7 },
+				["timeline"] = { ADDED_11_1_5 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
 				-- Meta achievement
 				["sym"] = {{"meta_achievement",
 					42144,	-- The Enterprising Damage Dealer
@@ -119,10 +119,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				},
 			}),
 			ach(42141, {	-- The Enterprising Healer (automated)
-				["timeline"] = { ADDED_11_1_7 },
+				["timeline"] = { ADDED_11_1_5 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
 			}),
 			ach(42139, {	-- The Enterprising Tank (automated)
-				["timeline"] = { ADDED_11_1_7 },
+				["timeline"] = { ADDED_11_1_5 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
 			}),
 
 			ach(41724, {	-- The War Within Season 2: Resilient Keystone 12 (automated)

@@ -128,6 +128,7 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("Thing:Mounts", false)
 			settings:Set("Thing:BattlePets", false)
 			settings:Set("Thing:Toys", false)
+			settings:Set("Thing:Campsites", false)
 
 			-- General Things
 			settings:Set("Thing:Achievements", false)
@@ -181,6 +182,7 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("Thing:Mounts", true)
 			settings:Set("Thing:BattlePets", true)
 			settings:Set("Thing:Toys", true)
+			settings:Set("Thing:Campsites", true)
 
 			-- General Things
 			settings:Set("Thing:Achievements", false)
@@ -234,6 +236,7 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("Thing:Mounts", true)
 			settings:Set("Thing:BattlePets", true)
 			settings:Set("Thing:Toys", true)
+			settings:Set("Thing:Campsites", false)
 
 			-- General Things
 			settings:Set("Thing:Achievements", true)
@@ -287,6 +290,7 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("Thing:Mounts", true)
 			settings:Set("Thing:BattlePets", true)
 			settings:Set("Thing:Toys", true)
+			settings:Set("Thing:Campsites", true)
 
 			-- General Things
 			settings:Set("Thing:Achievements", true)
@@ -346,7 +350,7 @@ modeButton:SetScript("OnClick", function()
 		end)
 		preset:SetResponder(function()
 			settings:SetAccountMode(true)
-			
+
 			-- General Things
 			settings:Set("AccountWide:Achievements", true)
 			settings:Set("AccountWide:CharacterUnlocks", true)
@@ -360,7 +364,7 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("AccountWide:Followers", true)
 			settings:Set("AccountWide:AzeriteEssences", true)
 			settings:Set("AccountWide:Conduits", true)
-			
+
 			-- Close menu after clicking and refresh
 			settings:UpdateMode(1)
 			return MenuResponse.Close
@@ -374,7 +378,7 @@ modeButton:SetScript("OnClick", function()
 		end)
 		preset:SetResponder(function()
 			settings:SetAccountMode(false)
-			
+
 			-- General Things
 			settings:Set("AccountWide:Achievements", false)
 			settings:Set("AccountWide:CharacterUnlocks", false)
@@ -388,7 +392,7 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("AccountWide:Followers", false)
 			settings:Set("AccountWide:AzeriteEssences", false)
 			settings:Set("AccountWide:Conduits", false)
-			
+
 			-- Close menu after clicking and refresh
 			settings:UpdateMode(1)
 			return MenuResponse.Close
@@ -418,7 +422,7 @@ modeButton:SetScript("OnClick", function()
 		preset:SetResponder(function()
 			settings:Set("Thing:Transmog", true)
 			settings:Set("Completionist", true)
-			
+
 			-- Close menu after clicking and refresh
 			settings:UpdateMode(1)
 			return MenuResponse.Close
@@ -689,6 +693,16 @@ child:CreateAccountWideCheckbox("TOYS", "Toys")
 	:AlignBelow(accwideCheckboxBattlePets)
 child:CreateTrackingCheckbox("TOYS", "Toys", app.GameBuildVersion >= 30000)	-- Official Support added with Wrath
 	:AlignAfter(accwideCheckboxToys)
+
+-- Campsites were added during The War Within
+local accwideCheckboxCampsites;
+if app.GameBuildVersion >= 110100 then
+accwideCheckboxCampsites =
+child:CreateAccountWideCheckbox("CAMPSITES", "Campsites")
+	:AlignBelow(accwideCheckboxToys)
+child:CreateTrackingCheckbox("CAMPSITES", "Campsites", true)
+	:AlignAfter(accwideCheckboxCampsites)
+end
 
 local headerGeneralThings = child:CreateHeaderLabel(L.GENERAL_THINGS_LABEL)
 headerGeneralThings:SetPoint("LEFT", headerMode, 0, 0)

@@ -253,6 +253,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 			}),
 			ach(20509),	-- Plunderkind
 		}),
+		n(QUESTS, {
+			q(89263, {	-- Your Cut of the Spoils
+				i(238946),	-- Letter from Keg Leg
+				i(234422),	-- Storm-Singed Plunder
+			}),
+		}),
 		filter(MISC, {
 			i(234422, { -- Storm-Singed Plunder
 				["description"] = "Contains 1 Silver and 2 Bronze Spoils.",

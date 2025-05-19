@@ -365,7 +365,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["description"] = "This is awarded as a consolation prize to players who did not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
 						-- #if BEFORE 9.0.1
 						-- CRIEVE NOTE: Rumor has it that this doesn't drop pets anymore, despite originally having them be possible.
-						["sym"] = {MOP_SYM_PETS},
+						-- Goldenshacal Note: They had very low droprate, similar to a world drop. Commenting them out for visual cleanup
+						--["sym"] = {MOP_SYM_PETS},
 						-- #endif
 						["groups"] = {
 							i(95972),	-- Abandoned Zandalari Arrowlinks
@@ -450,7 +451,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["description"] = "This is awarded as a consolation prize to players who did not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
 						-- #if BEFORE 9.0.1
 						-- CRIEVE NOTE: Rumor has it that this doesn't drop pets anymore, despite originally having them be possible.
-						["sym"] = {MOP_SYM_PETS},
+						-- Goldenshacal Note: They had very low droprate, similar to a world drop. Commenting them out for visual cleanup
+						--["sym"] = {MOP_SYM_PETS},
 						-- #endif
 						["groups"] = {
 							i(95972),	-- Abandoned Zandalari Arrowlinks
@@ -655,7 +657,36 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					-- Consolation Prize
 					i(90840, {	-- Marauder's Gleaming Sack of Gold
 						["description"] = "This is awarded as a consolation prize to players who do not win actual loot.  Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
+						-- #if BEFORE 6.0.0
 						["sym"] = {{ "select", "itemID", 95618 }},	-- Cache of Mogu Riches
+						-- #endif
+						["groups"] = {
+							-- #if AFTER 6.0.0
+							-- Belts
+							i(86884),	-- Belt of Embodied Terror
+							i(86900),	-- Binder's Chain of Unending Summer
+							i(86895),	-- Healer's Belt of Final Winter
+							i(86896),	-- Invoker's Belt of Final Winter
+							i(86902),	-- Mender's Girdle of Endless Spring
+							i(86904),	-- Patroller's Girdle of Endless Spring
+							i(86903),	-- Protector's Girdle of Endless Spring
+							i(86901),	-- Ranger's Chain of Unending Summer
+							i(86897),	-- Sorcerer's Belt of Final Winter
+							i(86899),	-- Stalker's Cord of Eternal Autumn
+							i(86898),	-- Weaver's Cord of Eternal Autumn
+							-- Bracers
+							i(86850),	-- Darting Damselfly Cuffs
+							i(86844),	-- Gleaming Moth Cuffs
+							i(86846),	-- Inlaid Cricket Bracers
+							i(86847),	-- Jagged Hornet Bracers
+							i(86842),	-- Luminescent Firefly Wristguards
+							i(86845),	-- Pearlescent Butterfly Wristbands
+							i(86849),	-- Plated Locust Bracers
+							i(86848),	-- Serrated Wasp Bracers
+							i(86841),	-- Shining Cicada Bracers
+							i(86843),	-- Smooth Beetle Wristbands
+							-- #endif
+						},
 					}),
 				},
 			})),
@@ -901,7 +932,36 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					-- Consolation Prize
 					i(90839, {	-- Cache of Sha-Touched Gold
 						["description"] = "This is awarded as a consolation prize to players who do not win actual loot.  Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
+						-- #if BEFORE 6.0.0
 						["sym"] = {{ "select", "itemID", 95618 }},	-- Cache of Mogu Riches
+						-- #endif
+						["groups"] = {
+							-- #if AFTER 6.0.0
+							-- Belts
+							i(86884),	-- Belt of Embodied Terror
+							i(86900),	-- Binder's Chain of Unending Summer
+							i(86895),	-- Healer's Belt of Final Winter
+							i(86896),	-- Invoker's Belt of Final Winter
+							i(86902),	-- Mender's Girdle of Endless Spring
+							i(86904),	-- Patroller's Girdle of Endless Spring
+							i(86903),	-- Protector's Girdle of Endless Spring
+							i(86901),	-- Ranger's Chain of Unending Summer
+							i(86897),	-- Sorcerer's Belt of Final Winter
+							i(86899),	-- Stalker's Cord of Eternal Autumn
+							i(86898),	-- Weaver's Cord of Eternal Autumn
+							-- Bracers
+							i(86850),	-- Darting Damselfly Cuffs
+							i(86844),	-- Gleaming Moth Cuffs
+							i(86846),	-- Inlaid Cricket Bracers
+							i(86847),	-- Jagged Hornet Bracers
+							i(86842),	-- Luminescent Firefly Wristguards
+							i(86845),	-- Pearlescent Butterfly Wristbands
+							i(86849),	-- Plated Locust Bracers
+							i(86848),	-- Serrated Wasp Bracers
+							i(86841),	-- Shining Cicada Bracers
+							i(86843),	-- Smooth Beetle Wristbands
+							-- #endif
+						},
 					}),
 				},
 			})),

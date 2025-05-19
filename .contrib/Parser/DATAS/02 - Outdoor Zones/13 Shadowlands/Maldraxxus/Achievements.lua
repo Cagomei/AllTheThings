@@ -204,6 +204,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58794 },	-- Stabbing Wasteward
 				}),
 			}),
+			achWithRep(14336, FACTION_THE_UNDYING_ARMY),	-- The Undying Army
 			ach(14513, {	-- Tour of Duty: Maldraxxus
 				["pvp"] = true,
 			}),

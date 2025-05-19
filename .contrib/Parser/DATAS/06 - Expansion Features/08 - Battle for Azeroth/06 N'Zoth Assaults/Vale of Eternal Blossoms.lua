@@ -321,7 +321,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					})),
 					n(ZONE_DROPS, {
 						i(170553, {	-- Void Focus Splinter
-							["description"] = "The fastest way is to farm them inside Lesser Vision.",
+							["description"] = "The fastest way is to farm them inside Lesser Vision. To unlock these and the related recipes, you need to complete the Descending Into Madness quest.",
 						}),
 						-- #IF BEFORE TWW
 						i(174768, {	-- Cursed Relic

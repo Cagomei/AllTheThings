@@ -812,6 +812,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["coord"] = { 43.5, 58.3, BROKEN_SHORE },
 						["sourceQuests"] = { 46674 },	-- The Preservation of Nature
+						["g"] = {
+							i(147282),	-- Impsorrow Missive (QI!)
+						},
 					}),
 					q(42035, {	-- Tracking the Enemy
 						["lvl"] = 103,

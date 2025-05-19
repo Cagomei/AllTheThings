@@ -389,7 +389,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(58881),	-- triggered when i fed the uldum friendly alpaca for the last time (not with the quest that gives the mount afterward, but the final feed)
 		q(59072),	-- speaking to Tasha Riley and joining the Council of Chaos in the BRD pet battle dungeon
 		-- q(54635),	-- additional version of Mekkatorque's Battle Plans, presumably if you don't pick it up from a mob during "Killing on the Side," but idk how that could happen
-		-- q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
 		q(53532),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Akunda". Makes the loa book available to read in The Great Seal
 		q(53534),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Bwonsamdi". Makes the loa book available to read in The Great Seal
@@ -413,7 +412,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
 		q(55237),	-- closing the last rift while on #55214, "Seam Stress"
 		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
-		-- q(54705),	-- Using 7th Legion Scouting Map
 		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
 
 		--	PVP / WAR MODE

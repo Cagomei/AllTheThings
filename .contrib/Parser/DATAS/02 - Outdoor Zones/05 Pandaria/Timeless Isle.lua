@@ -593,7 +593,9 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						pet(1324),	-- Ashwing Moth (PET!)
 						pet(1325),	-- Flamering Moth (PET!)
-						pet(1326),	-- Skywisp Moth (PET!)
+						pet(1326, {	-- Skywisp Moth (PET!)
+							["description"] = "Found on the tallest peaks of the isle, accessible easiest from an Albatross ride.",
+						}),
 					},
 				}),
 				n(BURDEN_OF_ETERNITY, {

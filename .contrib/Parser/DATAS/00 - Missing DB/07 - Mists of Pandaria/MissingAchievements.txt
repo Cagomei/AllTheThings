@@ -1,0 +1,11 @@
+5.0.3.15882
+ach(6941),	-- Hero of the Horde
+ach(6942),	-- Hero of the Alliance
+ach(7467),	-- Theramore's Fall
+ach(7468),	-- Theramore's Fall
+5.5.0.60481
+ach(7274),	-- Learning from the Best
+ach(8913),	-- Collector's Edition: Dread Raven
+ach(8915),	-- Collector's Edition: Dread Hatchling
+5.5.0.60700
+ach(42242),	-- [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden)

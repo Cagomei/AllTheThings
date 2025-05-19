@@ -2117,16 +2117,14 @@ root(ROOTS.Zones, {
 										follower(581),	-- Dowser Goodwell
 									},
 								}),
-								i(128251, {	-- Equipment Blueprint: Tuskarr Fishing Net
-									["questID"] = 39359,	-- Equipment Blueprint: Tuskarr Fishing Net
+								i(128251, {	-- Equipment Blueprint: Tuskarr Fishing Net (CI!)
+									["cost"] = 2200000,	-- 220g
 								}),
-								i(113212, {	-- Treasure Map: Tanaan Jungle
-									["questID"] = 39463,
+								i(113212, {	-- Treasure Map: Tanaan Jungle (CI!)
 									["cost"] = 6000000,	-- 600g
 								}),
 							}, {	-- Revered
-								i(128490, {	-- Blueprint: Oil Rig
-									["questID"] = 39561,
+								i(128490, {	-- Blueprint: Oil Rig (CI!)
 									["cost"] = 12000000,	-- 1,200g
 								}),
 								iensemble(128472, {	-- Ensemble: Battlegear of the Frostwolves
@@ -2138,8 +2136,7 @@ root(ROOTS.Zones, {
 									["cost"] = 9000000,	-- 900g
 								}),
 								i(128471),	-- Frostwolf Grunt's Battlegear (TOY!)
-								i(128294, {	-- Trade Agreement: Arakkoa Outcasts
-									["questID"] = 37485,
+								i(128294, {	-- Trade Agreement: Arakkoa Outcasts (CI!)
 									["cost"] = 25000000,	-- 2,500g
 								}),
 							}, {	-- Exalted
@@ -2180,26 +2177,22 @@ root(ROOTS.Zones, {
 								i(128491, {	-- Equipment Blueprint: Tuskarr Fishing Net
 									["questID"] = 39359,	-- Equipment Blueprint: Tuskarr Fishing Net
 								}),
-								i(128474, {	-- Treasure Map: Tanaan Jungle
-									["questID"] = 39463,
+								i(128474, {	-- Treasure Map: Tanaan Jungle (CI!)
 									["cost"] = 6000000,	-- 600g
 								}),
 							}, {	-- Revered
-								i(128444, {	-- Blueprint: Oil Rig
-									["questID"] = 39561,
+								i(128444, {	-- Blueprint: Oil Rig (CI!)
 									["cost"] = 12000000,	-- 1,200g
 								}),
 								iensemble(128473, {	-- Ensemble: Ceremonial Karabor Finery
 									["classes"] = CLOTH_CLASSES,
 									["cost"] = 5000000,	-- 500g
 								}),
-								i(128250, {	-- Equipment Blueprint: Unsinkable
-									["questID"] = 39358,	-- Equipment Blueprint: Unsinkable
+								i(128250, {	-- Equipment Blueprint: Unsinkable (CI!)
 									["cost"] = 9000000,	-- 900g
 								}),
 								i(128462),	-- Karabor Councilor's Attire (TOY!)
-								i(128294, {	-- Trade Agreement: Arakkoa Outcasts
-									["questID"] = 37485,
+								i(128294, {	-- Trade Agreement: Arakkoa Outcasts (CI!)
 									["cost"] = 25000000,	-- 2,500g
 								}),
 							}, {	-- Exalted
@@ -2238,7 +2231,9 @@ root(ROOTS.Zones, {
 									["cost"] = { { "i", 124099, 1000 }, },	-- 1,000x Blackfang Claw
 								}),
 							}, {	-- Revered
-								i(128446),	-- Saberstalker Teachings: Trailblazer
+								i(128446, {	-- Saberstalker Teachings: Trailblazer (CI!)
+									["cost"] = 7000000,	-- 700g
+								}),
 								i(128477, {	-- Savage Cub (PET!)
 									["cost"] = { { "i", 124099, 1500 }, },	-- 1,500x Blackfang Claw
 								}),

@@ -1,0 +1,8 @@
+2.0.0.6080
+r(26790),	-- Tailoring
+r(26797),	-- Spellfire Tailoring
+r(26798),	-- Mooncloth Tailoring
+r(26801),	-- Shadoweave Tailoring
+
+
+Nothing is Missing in Tailoring! Good Work!

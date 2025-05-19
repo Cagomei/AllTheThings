@@ -106,7 +106,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						65801,	-- Making Introductions
 						65802,	-- Supplies for the Journey
 					},
-					["provider"] = { "n", 181217 },	-- Sansok Khan
+					["provider"] = { "n", 185882 },	-- Scout Tomul
 					["coord"] = { 84.7, 22.9, OHNAHRAN_PLAINS },
 				}),
 				q(65804, {	-- For Food and Rivalry

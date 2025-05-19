@@ -160,6 +160,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							{ 61.9, 30.1, AZJ_KAHET },
 							{ 62.6, 26.7, AZJ_KAHET },
 							{ 64.1, 30.1, AZJ_KAHET },
+							{ 66.5, 28.2, AZJ_KAHET },
 							{ 67.4, 27.6, AZJ_KAHET },
 						},
 					}),
@@ -174,6 +175,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["description"] = "Within the Rak-Zakaz assault.",
 						["provider"] = { "o", 527416 },	-- Suspicious Document
 						["maps"] = { AZJ_KAHET },
+						["questID"] = 91156,
+						["isDaily"] = true,
 					}),
 					-- Sureki's End
 					o(527415, {	-- Suspicious Document (Dissenter Tailtrek/Whisperer Hillhelm)

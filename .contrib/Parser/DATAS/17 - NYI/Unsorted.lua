@@ -75,7 +75,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MISC, {
 				-- Delves
-				i(239502),	-- Big Wheel of Cheese
 				i(242743),	-- Durable Information Securing Container [Trinket]
 				i(244899),	-- Miniature Titan Disc: Critical Chain
 				i(244901),	-- Miniature Titan Disc: Statically Charged
@@ -352,160 +351,9 @@ root(ROOTS.Unsorted, {
 				i(245745),	-- Classic Plum Tabard
 			}),
 			n(CLASSES, {
-				-- T2 Greedy Emissary?
-				-- Warrior
-				i(242892),	-- Executioner's Bladed Helm
-				i(242893),	-- Executioner's Bladed Pauldrons
-				i(242894),	-- Executioner's Bladed Breastplate
-				i(242895),	-- Executioner's Bladed Waistband
-				i(242896),	-- Executioner's Bladed Gauntlets
-				i(242897),	-- Executioner's Bladed Bracelets
-				i(242898),	-- Executioner's Bladed Legplates
-				i(242899),	-- Executioner's Bladed Sabatons
-				i(242900),	-- Executioner's Bladed Cloak
-				-- Demon hUnter
-				i(242901),	-- Cloak of Torment
-				i(242902),	-- Harness of Torment
-				i(242903),	-- Sandals of Torment
-				i(242904),	-- Gloves of Torment
-				i(242905),	-- Skullcap of Torment
-				i(242906),	-- Leggings of Torment
-				i(242907),	-- Shoulderblades of Torment
-				i(242908),	-- Bracers of Torment
-				i(242909),	-- Cord of Torment
-				-- Druid
-				i(242910),	-- Staghelm Cloak
-				i(242911),	-- Staghelm Chestguard
-				i(242912),	-- Staghelm Boots
-				i(242913),	-- Staghelm Handguards
-				i(242914),	-- Staghelm Cover
-				i(242915),	-- Staghelm Legguards
-				i(242916),	-- Staghelm Pauldrons
-				i(242917),	-- Staghelm Belt
-				i(242918),	-- Staghelm Bracers
-				-- Evoker
-				i(242920),	-- Life-Binder's Cloak
-				i(242921),	-- Life-Binder's Breastplate
-				i(242922),	-- Life-Binder's Talons
-				i(242923),	-- Life-Binder's Claws
-				i(242924),	-- Life-Binder's Crown
-				i(242925),	-- Life-Binder's Legplates
-				i(242926),	-- Life-Binder's Pauldrons
-				i(242927),	-- Life-Binder's Girdle
-				i(242928),	-- Life-Binder's Vambraces
-
-				-- Hunter
-				i(242929),	-- Timestalker's Cloak
-				i(242930),	-- Timestalker's Breastplate
-				i(242931),	-- Timestalker's Greaves
-				i(242932),	-- Timestalker's Gauntlets
-				i(242933),	-- Timestalker's Helm
-				i(242934),	-- Timestalker's Legguards
-				i(242935),	-- Timestalker's Spaulders
-				i(242936),	-- Timestalker's Belt
-				i(242937),	-- Timestalker's Bracers
-				-- Mage
-				i(242938),	-- Emberwind Boots
-				i(242939),	-- Emberwind Gloves
-				i(242940),	-- Emberwind Crown
-				i(242941),	-- Emberwind Pants
-				i(242942),	-- Emberwind Robes
-				i(242943),	-- Emberwind Mantle
-				i(242944),	-- Emberwind Belt
-				i(242945),	-- Emberwind Bindings
-				i(242946),	-- Emberwind Cloak
-				-- Paladin
-				i(242953),	-- Blood Vindicator's Cloak
-				i(242954),	-- Blood Vindicator's Breastplate
-				i(242955),	-- Blood Vindicator's Sabatons
-				i(242956),	-- Blood Vindicator's Gauntlets
-				i(242957),	-- Blood Vindicator's Crown
-				i(242959),	-- Blood Vindicator's Spaulders
-				i(242960),	-- Blood Vindicator's Belt
-				i(242961),	-- Blood Vindicator's Bindings
-
-				-- Rogue
-				i(242962),	-- Shadowslayer Cloak
-				i(242963),	-- Shadowslayer Chestpieces
-				i(242964),	-- Shadowslayer Boots
-				i(242965),	-- Shadowslayer Gloves
-				i(242966),	-- Shadowslayer Hood
-				i(242967),	-- Shadowslayer Pants
-				i(242968),	-- Shadowslayer Spaulders
-				i(242969),	-- Shadowslayer Belt
-				i(242970),	-- Shadowslayer Bracers
-
-				-- Warlock
-				i(242971),	-- Hellfire Boots
-				i(242972),	-- Hellfire Robes
-				i(242973),	-- Hellfire Spaulders
-				i(242974),	-- Hellfire Gloves
-				i(242975),	-- Hellfire Skullcap
-				i(242976),	-- Hellfire Leggings
-				i(242977),	-- Hellfire Belt
-				i(242978),	-- Hellfire Bracers
-				i(242979),	-- Hellfire Cloak
-
-				-- DK
-				i(242990),	-- Grimforged Girdle
-				i(242991),	-- Grimforged Vambraces
-				i(242992),	-- Grimforged Cloak
-				i(242993),	-- Grimforged Breastplate
-				i(242994),	-- Grimforged Sabatons
-				i(242995),	-- Grimforged Gloves
-				i(242996),	-- Grimforged Helm
-				i(242997),	-- Grimforged Leggings
-				i(242998),	-- Grimforged Pauldrons
-
-				-- Priest
-				i(244371),	-- Boots of Searing Radiance
-				i(244372),	-- Handguards of Searing Radiance
-				i(244373),	-- Halo of Searing Radiance
-				i(244374),	-- Leggings of Searing Radiance
-				i(244375),	-- Robes of Searing Radiance
-				i(244376),	-- Pauldrons of Searing Radiance
-				i(244377),	-- Belt of Searing Radiance
-				i(244378),	-- Bindings of Searing Radiance
-				i(244379),	-- Cloak of Searing Radiance
-				-- Shaman
-				i(244392),	-- Flamelash Cloak
-				i(244393),	-- Flamelash Breastplate
-				i(244394),	-- Flamelash Greaves
-				i(244395),	-- Flamelash Gauntlets
-				i(244396),	-- Flamelash Helmet
-				i(244397),	-- Flamelash Kilt
-				i(244398),	-- Flamelash Legplates
-				i(244399),	-- Flamelash Epaulets
-				i(244400),	-- Flamelash Belt
-				i(244401),	-- Flamelash Bracers
-				-- Monk
-				i(244412),	-- Death-Touched Cloak
-				i(244413),	-- Death-Touched Vest
-				i(244414),	-- Death-Touched Talons
-				i(244415),	-- Death-Touched Grips
-				i(244416),	-- Death-Touched Helm
-				i(244417),	-- Death-Touched Pants
-				i(244418),	-- Death-Touched Spaulders
-				i(244419),	-- Death-Touched Cord
-				i(244420),	-- Death-Touched Bindings
-
-				i(244793),	-- Ensemble: Grimforged Armor
-				i(244794),	-- Ensemble: Armor of Torment
-				i(244795),	-- Ensemble: Staghelm Armor
-				i(244796),	-- Ensemble: Life-Binder's Armor
-				i(244797),	-- Ensemble: Timestalker's Armor
-				i(244798),	-- Ensemble: Emberwind Regalia
-				i(244799),	-- Ensemble: Death-Touched Battlegear
-				i(244800),	-- Ensemble: Blood Vindicator's Armor
-				i(244801),	-- Ensemble: Vestments of Searing Radiance
-				i(244802),	-- Ensemble: Shadowslayer Armor
-				i(244803),	-- Ensemble: Flamelash Armor
-				i(244804),	-- Ensemble: Hellfire Raiment
-				i(244805),	-- Ensemble: Executioner's Bladed Battlegear
-
+				-- T2 Greedy Emissary Alternative Chest/Offset Pieces?
 				i(244443),	-- Emberwind Blouse
 				i(244444),	-- Staghelm Robe
-
 				i(244446),	-- Blouse of Searing Radiance
 				i(244448),	-- Hellfire Blouse
 			}),
@@ -520,54 +368,6 @@ root(ROOTS.Unsorted, {
 				i(245936),	-- Unarmored Deathtusk Felboar
 				i(243596),	-- Wailing Banshee's Charger
 			}),
-			-- #if AFTER 7.1.0.22908
-			n(GREEDY_EMISSARY_EVENT, {
-				i(245589),	-- Hellcaller Chest
-				i(245590),	-- Magma Elixir
-				i(245591),	-- Flawed Amethyst
-				i(245592),	-- Chipped Skull
-				i(245593),	-- Runed Cube
-				i(245594),	-- Worn Rune
-				i(245595),	-- Splintered Charm
-				i(245596),	-- Damaged Eburine Jewel
-				i(245597),	-- Empty Antidote Bottle
-				i(245598),	-- Unknown Spellbook
-				i(245599),	-- Rusted Adventurer's Leg
-				i(245606),	-- Blank Scroll
-				i(245607),	-- Dull Javelin
-				i(245608),	-- Chipped Sapphire
-				i(245609),	-- Flawed Skull
-				i(245614),	-- Trapper Elixir
-				i(245630),	-- Ghostly Elixir
-				i(245632),	-- Rallying Elixir
-				i(245633),	-- Sneaky Elixir
-				i(245634),	-- Cursing Elixir
-				i(245635),	-- Rich Elixir
-				i(245636),	-- Deafening Elixir
-				i(245637),	-- Windforce Elixir
-				i(245638),	-- Explosive Elixir
-				i(245639),	-- Arcane Elixir
-				i(245640),	-- Tempestuous Elixir
-				i(245641),	-- Molten Elixir
-				i(245642),	-- Blistering Elixir
-				i(245643),	-- Storming Elixir
-				i(245652),	-- Chromic Elixir
-				i(245654),	-- Connected Elixir
-				i(245749),	-- Large Charm of Intelligence
-				i(245887),	-- Stalwart's Grand Charm
-				i(245888),	-- Serpent's Grand Charm
-				i(245889),	-- Large Charm of Dexterity
-				i(245890),	-- Large Charm of Strength
-				i(245891),	-- Small Charm of Inertia
-				i(245892),	-- Small Charm of Life
-				i(245893),	-- Small Charm of Alacrity
-				i(245894),	-- Small Charm of Proficiency
-				i(245895),	-- Small Charm of Savagery
-				i(245896),	-- Small Charm of Adaptability
-				i(245899),	-- Bat's Grand Charm
-				i(245924),	-- Mongoose's Grand Charm
-			}),
-			-- #endif
 		})),
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
 			n(SPECIAL, {	-- Horrific Revisited
@@ -758,33 +558,9 @@ root(ROOTS.Unsorted, {
 				-- Darkal Check Later
 				i(238243),	-- Hidden Boots
 			}),
-			filter(BATTLE_PETS, {
-				i(232854),	-- Grinner
-				i(232856),	-- Scruff
-				i(235909),	-- Gleam
-				i(235988),	-- Parley
-			}),
-			filter(COSMETIC, {
-				i(237502),	-- Puzzling Cartel Chip
-			}),
 			filter(MISC, {	-- More known
-				-- Chestos
-				i(238207),	-- Nanny's Surge Dividends
-
-				-- Buying things? see later
+				i(238207),	-- Nanny's Surge Dividend
 				i(229810),	-- Vintage Kaja'Cola Can
-
-				-- Delve?
-				i(233021),	-- Grappling-Grabber 9000
-				i(234616),	-- Supreme Mangoro Madness
-				i(234617),	-- Dulux Bluesberry Blast
-
-				-- See if these will come from raid later
-				i(234390),	-- Gallagio Loyalty Rewards Card: Gold
-				i(234391),	-- Gallagio Loyalty Rewards Card: Platinum
-				i(234392),	-- Gallagio Loyalty Rewards Card: Black
-				i(234393),	-- Gallagio Loyalty Rewards Card: Diamond
-				i(234394),	-- Gallagio Loyalty Rewards Card: Legendary
 			}),
 			n(PVP, {	-- See Later...
 				i(232886),	-- Ensemble: Algari Warmonger's Cloth Armor

@@ -2442,7 +2442,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(11150, {	-- Formula: Enchant Gloves - Mining (RECIPE!)
-							["timeline"] = { ADDED_4_0_3 },
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 						i(4833, {	-- Glorious Shoulders
 							["isLimited"] = true,

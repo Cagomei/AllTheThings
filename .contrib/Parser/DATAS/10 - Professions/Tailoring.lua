@@ -934,21 +934,30 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
-	n(PROFESSIONS, {
-		prof(TAILORING, {
-			q(38976),	-- FLAG: Undying Silkweave Bracers
-			q(38977),	-- FLAG: Undying Silkweave Cinch Crafted
-			q(38978),	-- FLAG: Undying Silkweave Epaulets Crafted
-			q(38979),	-- FLAG: Undying Silkweave Slippers Crafted
-			q(38980),	-- FLAG: Undying Silkweave Gloves Crafted
-			q(38981),	-- FLAG: Undying Silkweave Hood Crafted
-			q(38982),	-- FLAG: Undying Silkweave Pantaloons Crafted
-			q(38983),	-- FLAG: Undying Silkweave Robe Crafted
-			q(47093),	-- Broken Shore - Choice: Tailoring
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+		n(PROFESSIONS, {
+			prof(TAILORING, {
+				q(38976),	-- FLAG: Undying Silkweave Bracers
+				q(38977),	-- FLAG: Undying Silkweave Cinch Crafted
+				q(38978),	-- FLAG: Undying Silkweave Epaulets Crafted
+				q(38979),	-- FLAG: Undying Silkweave Slippers Crafted
+				q(38980),	-- FLAG: Undying Silkweave Gloves Crafted
+				q(38981),	-- FLAG: Undying Silkweave Hood Crafted
+				q(38982),	-- FLAG: Undying Silkweave Pantaloons Crafted
+				q(38983),	-- FLAG: Undying Silkweave Robe Crafted
+				q(47093),	-- Broken Shore - Choice: Tailoring
+			}),
 		}),
-	}),
-})));
+	})),
+	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
+		n(PROFESSIONS, {
+			prof(TAILORING, {
+				q(55239),	-- During quest objective of Seam Stress (55214)
+			}),
+		}),
+	})),
+});
 
 -- #if ANYCLASSIC
 local applytraining = function(g)
@@ -983,34 +992,6 @@ local function bloodied(t)
 	return t;
 end
 
--- Bloodthirsty Crafted Gear was added with Firelands and then removed from the game after Dragon Soul was released.
--- #if ANYCLASSIC
-local BLOODTHIRSTY_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_HOUR_OF_TWILIGHT .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = ]] .. CATA_PHASE_RAGE_OF_THE_FIRELANDS .. [[;
-		t.rwp = 40300;
-	end
-end]];
--- #endif
-local function bloodthirsty(t)
-	-- #if CATA
-	t.timeline = { ADDED_4_2_0, REMOVED_5_0_4 };
-		-- #if ANYCLASSIC
-		t.OnUpdate = BLOODTHIRSTY_ONUPDATE;
-		-- #endif
-	-- #else
-	t.timeline = { ADDED_4_2_0, REMOVED_4_3_0 };
-	-- #endif
-	return applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, t);
-end
-
-local function moltenfront(t)
-	t.timeline = { ADDED_4_2_0 };
-	return applyclassicphase(CATA_PHASE_MOLTEN_FRONT, t);
-end
 local function firelands(t)
 	t.timeline = { ADDED_4_2_0 };
 	return applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, t);

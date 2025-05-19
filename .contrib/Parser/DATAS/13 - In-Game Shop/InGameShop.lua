@@ -463,26 +463,14 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 
 		------ Feathered Archmage Set ------
-		i(238998, {	-- Feathered Cowl of the Archmage
-			["timeline"] = { ADDED_11_1_5 },
-		}),
-		i(238996, {	-- Feathered Drape of the Archmage
-			["timeline"] = { ADDED_11_1_5 },
-		}),
-		i(239002, {	-- Feathered Mantle of the Archmage
+		iensemble(243480, {	-- Ensemble: Feathered Collection of the Archmage
 			["timeline"] = { ADDED_11_1_5 },
 		}),
 		i(238999, {	-- Standard of the Archmage
 			["timeline"] = { ADDED_11_1_5 },
 		}),
 		------ Feathered Prophet Set ------
-		i(238997, {	-- Feathered Cowl of the Prophet
-			["timeline"] = { ADDED_11_1_5 },
-		}),
-		i(238995, {	-- Feathered Drape of the Prophet
-			["timeline"] = { ADDED_11_1_5 },
-		}),
-		i(239001, {	-- Feathered Mantle of the Prophet
+		iensemble(243481, {	-- Ensemble: Feathered Collection of the Prophet
 			["timeline"] = { ADDED_11_1_5 },
 		}),
 		i(239000, {	-- Standard of the Prophet

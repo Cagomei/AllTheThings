@@ -749,10 +749,8 @@ for key,value in pairs({
 	-- Interface: Information Page
 		ACHIEVEMENT_ID = "成就 ID";
 		ACHIEVEMENT_CATEGORY_ID = "成就類別 ID";
-		ADDED_WITH_PATCH_CLASSIC_FORMAT = "該物品是隨更新 %s 加入的";
 		READDED_WITH_PATCH_CLASSIC_FORMAT = "該物品是隨更新 %s 重新加入的";
 		REMOVED_WITH_PATCH_CLASSIC_FORMAT = "該物品是隨更新 %s 移除的";
-		WAS_ADDED_WITH_PATCH_CLASSIC_FORMAT = "該物品曾是隨更新 %s 加入的";
 
 
 	-- Features Page

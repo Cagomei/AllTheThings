@@ -5067,7 +5067,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		}),
 		n(SPECIAL, {
 			i(172450, {	-- Technique: Glyph of Lavish Servings (RECIPE!)
-				["description"] = "A Mage inscriptionist with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
+				["description"] = "A Mage scribe with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
 				["timeline"] = { ADDED_8_2_5 },
 			}),
 		}),

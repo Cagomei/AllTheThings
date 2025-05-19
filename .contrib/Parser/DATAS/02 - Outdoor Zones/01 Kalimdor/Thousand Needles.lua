@@ -415,6 +415,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25661,	-- With a Little Help...
 					["coord"] = { 96.8, 72.5, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = { i(55226) },	-- Creature Carcass (QI!)
 				}),
 				q(25542, {	-- Circle the Wagons... er, Boats [A]
 					["qg"] = 40475,	-- Jinky Twizzlefixxit
@@ -591,6 +592,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 91.4, 57.8, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(56011) },	-- Oil Drilling Rig (QI!)
 				}),
 				q(25799, {	-- Defend the Drill [H]
 					["qg"] = 41184,	-- Riznek
@@ -598,6 +600,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(56011) },	-- Oil Drilling Rig (QI!)
 				}),
 				q(25825, {	-- Deliver the Goods [A]
 					["qg"] = 41190,	-- Crazzle Sprysprocket
@@ -970,6 +973,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(55807) },	-- Alliance's Proposal (QI!)
 				}),
 				q(1120, {	-- Get the Gnomes Drunk
 					["providers"] = {
@@ -1479,6 +1483,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(63643, {	-- Ring of the Subduer
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(61043),	-- Shu'halo Artifacts (QI!)
 					},
 				}),
 				q(27330, {	-- Invoking the Serpent [H]
@@ -1503,6 +1509,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(63647, {	-- Ring of the Subduer
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(61043),	-- Shu'halo Artifacts (QI!)
 					},
 				}),
 				q(1190, {	-- Keeping Pace
@@ -2378,6 +2386,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(63587, {	-- Discarded Wedding Band
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(55230),	-- Soul Stick (QI!)
 					},
 				}),
 				q(3843, {	-- The Newest Member of the Family
@@ -2401,6 +2411,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.3, 43.4, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(60959) },	-- The Rattle of Bones (QI!)
 				}),
 				q(27317, {	-- The Rattle of Bones [H]
 					["qg"] = 48208,	-- The Rattle of Bones
@@ -2411,6 +2422,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.4, 43.4, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(60959) },	-- The Rattle of Bones (QI!)
 				}),
 				q(1115, {	-- The Rumormonger
 					["qg"] = 4452,	-- Kravel Koalbeard
@@ -2660,6 +2672,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(63627, {	-- Drinker's Bracers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(55158),	-- Fake Treasure (QI!)
 					},
 				}),
 				q(25628, {	-- Two-Tusk Takedown [H]
@@ -2685,6 +2699,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(63631, {	-- Drinker's Bracers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(55158),	-- Fake Treasure (QI!)
 					},
 				}),
 				q(28158, {	-- Unbound
@@ -2783,7 +2799,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(28284, {	-- What's that Rattle? [H]
-					["qg"] = 45278,	-- Freewind Brave
+					["qg"] = 45278,	-- Freewind Brave (mobileNPC)
 					["sourceQuest"] = 27315,	-- Grimtotem Chiefs: Isha Gloomaxe (only pops up if you complete "Grimtotem Chiefs: Isha Gloomaxe" and haven't picked up "The Rattle of Bones")
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,

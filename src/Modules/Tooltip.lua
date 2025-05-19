@@ -29,6 +29,7 @@ local objectNamesToIDs = {};
 local function OnLoad_CacheObjectNames()
 	local o
 	for objectID,name in pairs(app.ObjectNames) do
+		name = name:lower()
 		o = objectNamesToIDs[name];
 		if not o then
 			o = { objectID };
@@ -38,13 +39,17 @@ local function OnLoad_CacheObjectNames()
 		end
 	end
 end
+local function GetObjectIDsByName(name)
+	if not name then return end
+	return objectNamesToIDs[name:trim():lower()]
+end
 local GetBestObjectIDForName;
 if app.IsRetail then
 	local InGame = app.Modules.Filter.Filters.InGame
 	GetBestObjectIDForName = function(name)
 		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
 		-- then correlate those search results by closest distance to the player's current position
-		local o = objectNamesToIDs[name];
+		local o = GetObjectIDsByName(name)
 		if o and #o > 0 then
 			local mapID, px, py = GetPlayerPosition();
 			-- if we don't know where the player is, we have literally no way to reduce the set of matching objects by name
@@ -118,7 +123,7 @@ else
 		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
 		-- then correlate those search results by closest distance to the player's current position
 		--print("GetBestObjectIDForName:", "'" .. (name or RETRIEVING_DATA) .. "'");
-		local o = objectNamesToIDs[name and name:trim()];
+		local o = GetObjectIDsByName(name)
 		if o and #o > 0 then
 			local objects = {};
 			local mapID, px, py = GetPlayerPosition();
@@ -803,6 +808,15 @@ local function AttachBattlePetTooltip(tooltip, data, quantity, detail)
 end
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
+-- For some reason, Blizzard puts some secure access functionality within the GetOwner() call on certain
+-- tooltips, which means when ATT checks the Owner via this function, a secure code taint error is thrown
+local function SafeGetOwner(tooltip)
+	local ok, owner = pcall(tooltip.GetOwner,tooltip)
+	if ok then
+		return owner
+	else app.PrintDebug("Bad GetOwner on tooltip",tooltip:GetName())
+	end
+end
 -- Tooltip API Differences between Modern and Legacy APIs.
 if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 	-- 10.0.2
@@ -868,7 +882,7 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 		-- self:Show();
 
 		-- Does the tooltip have an owner?
-		local owner = self:GetOwner();
+		local owner = SafeGetOwner(self)
 		if owner then
 			if owner.SpellHighlightTexture	-- Action bars
 			or owner.TrainBook		-- Spellbook spell tooltips
@@ -1119,9 +1133,6 @@ else
 				self:AddDoubleLine("GetUnit", tostring(select(2, self:GetUnit()) or "nil"));
 				--]]--
 
-				-- Does the tooltip have an owner?
-				local owner = self:GetOwner();
-
 				-- Does the tooltip have a target?
 				local target = select(2, self:GetUnit());
 				if target then
@@ -1161,10 +1172,13 @@ else
 					end
 				end
 
+				-- Does the tooltip have an owner?
+				local owner = SafeGetOwner(self)
+
 				-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
 				local spellID = select(2, self:GetSpell());
 				if spellID then
-					if owner.SpellHighlightTexture then
+					if owner and owner.SpellHighlightTexture then
 						-- Actionbars, don't want that.
 						return true;
 					end

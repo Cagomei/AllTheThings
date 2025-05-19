@@ -397,9 +397,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 
 			-- Deep Recon
 				q(35837, {	-- Garrison Campaign: Deep Recon
+					["qg"] = 81492,	-- Bodrick Grey <SI:7>
+					["coord"] = { 38.0, 37.6, LUNARFALL },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35843, {	-- Garrison Campaign: Deep Recon
+					["qg"] = 78487,	-- Rokhan
+					["coord"] = { 45.8, 43.1, FROSTWALL },
 					["races"] = HORDE_ONLY,
 				}),
 				q(35838, {	-- The Warlord's Council

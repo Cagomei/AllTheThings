@@ -1739,6 +1739,7 @@ ExportDB.AccountWideQuestsDB = {
 	[85531] = true,	-- Earth-Encrusted Gem
 	[85532] = true,	-- The Wealth of a Kingdom
 	[85533] = true,	-- Kej
+	[85534] = true,	-- The General's Cache
 	[85535] = true,	-- Kej
 	[85536] = true,	-- Resonance Crystals
 	[85537] = true,	-- Crystals

@@ -649,6 +649,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 116193 },	-- Aerylia
 						["coord"] = { 34.3, 28.5, HELHEIM },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(142285),	-- Stolen Warrior's Blade (QI!)
+							i(142312),	-- Stolen Warrior's Shield (QI!)
+						},
 					}),
 					q(45834, {	-- Stolen Souls
 						["sourceQuest"] = 44849,	-- Recruitment Drive

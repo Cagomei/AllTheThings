@@ -5103,6 +5103,8 @@
 8195@@@Twin Empyreans kills (25-player Normal Throne of Thunder)
 8196@@@Twin Empyreans kills (10-player Heroic Throne of Thunder)
 8197@@@Twin Empyreans kills (25-player Heroic Throne of Thunder)
+5.5.0.60700
+42242@@@[DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden)
 6.0.1.18179
 8394@@@The Frostwind Slayer
 8463@@@Mythic: Immerseus
@@ -16010,6 +16012,8 @@
 42004@@@Bullhorn of Most Plenty
 11.1.5.60008
 41990@@@Total Kill Score
+11.1.5.60822
+42240@@@Anu'relos, Flame's Guidance <Tracking Achievement>
 11.1.7.60520
 41757@@@11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid (YGR)
 41779@@@Master of the Turbulent Timeways III
@@ -16048,3 +16052,6 @@
 42228@@@Console Overcharged Purchase 16
 42229@@@Console Overcharged Purchase 17
 42230@@@11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid, First Time Tracker
+11.1.7.60672
+42212@@@Titan Console Overcharged
+42241@@@Overcharged Delver

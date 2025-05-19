@@ -1689,5 +1689,5 @@ i(234230, 1213512);	-- Glyph of the Twilight Pistol Shot
 ------------------
 -- PATCH 11.1.0 --
 ------------------
-i(233022, 471132);	-- Contract: The Cartels of Undermine
-i(232535, 472951);	-- Vantus Rune: Undermine
+i(232535, 471132);	-- Contract: The Cartels of Undermine
+i(233022, 472951);	-- Vantus Rune: Undermine

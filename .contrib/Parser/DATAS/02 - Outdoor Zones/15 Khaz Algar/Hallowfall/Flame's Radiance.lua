@@ -15,10 +15,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}, {	-- RENOWN 2 --
 						--title(620),	-- Reservist <Name>
 					}, {	-- RENOWN 3 --
-						title(622),	-- Sentry <Name>
 					}, {	-- RENOWN 4 --
 						--title(621),	-- Field Sacredite <Name>
 					}, {	-- RENOWN 5 --
+						title(622),	-- Sentry <Name>
 						--title(623),	-- Stalwart <Name>
 					}, {	-- RENOWN 6 --
 						--title(624),	-- Ardent <Name>
@@ -52,8 +52,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(89391),	-- Flame's Radiance Stipend
 				}, {	-- RENOWN 5 --
 					q(89494, {	-- A Frocking Good Job
-						i(233298),	-- Radiant Stalwart's Buckle
-						i(233289),	-- Radiant Stalwart's Tabard
+						["sourceQuest"] = 89493,	-- Welcome to the Field
+						["g"] = {
+							i(233298),	-- Radiant Stalwart's Buckle
+							i(233289),	-- Radiant Stalwart's Tabard
+						},
 					}),
 					q(89392),	-- Flame's Radiance Stipend
 				}, {	-- RENOWN 6 --

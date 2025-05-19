@@ -205,10 +205,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					applyclassicphase(SOD_PHASE_SEVEN, i(234228, { ["timeline"] = { ADDED_1_15_6 }, })), -- Plans: Obsidian Defender
 					applyclassicphase(SOD_PHASE_SEVEN, i(234227, { ["timeline"] = { ADDED_1_15_6 }, })), -- Plans: Obsidian Sageblade
 					applyclassicphase(SOD_PHASE_SEVEN, i(234429, { ["timeline"] = { ADDED_1_15_6 }, })), -- Plans: Obsidian Heartseeker
-					applyclassicphase(SOD_PHASE_SEVEN, i(234252, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Unyielding Sorrow
-					applyclassicphase(SOD_PHASE_SEVEN, i(234253, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Ancient Knowledge
-					applyclassicphase(SOD_PHASE_SEVEN, i(234255, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of the Old Gods
-					applyclassicphase(SOD_PHASE_SEVEN, i(234256, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Madness
+					applyclassicphase(SOD_PHASE_SEVEN, i(234252, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Unyielding Sorrow (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234253, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Ancient Knowledge (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234255, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of the Old Gods (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234256, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Madness (RECIPE!)
 					applyclassicphase(SOD_PHASE_SEVEN, i(234264, { ["timeline"] = { ADDED_1_15_6 }, })), -- Schematic: G00 DV-1B3 Generator
 					applyclassicphase(SOD_PHASE_SEVEN, i(234265, { ["timeline"] = { ADDED_1_15_6 }, })), -- Schematic: Tuned Force Reactive Disk
 					applyclassicphase(SOD_PHASE_SEVEN, i(234435, { ["timeline"] = { ADDED_1_15_6 }, })), -- Schematic: Obsidian Shotgun
@@ -220,7 +220,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(234159, {	-- Polished Ironwood Crossbow
 					["description"] = "If you get this to drop, @crieve on Discord!",
 				}),
-				
+
 				-- Confirmed Drops:
 				i(234157),	-- Circlet of Restless Dreams
 				i(234158),	-- Dragonheart Necklace

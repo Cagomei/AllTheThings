@@ -12,8 +12,8 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		r(53123, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 4 }),	-- Toughness [Rank 4]
 		r(53124, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 5 }),	-- Toughness [Rank 5]
 		r(53040, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}, ["rank"] = 6 }),	-- Toughness [Rank 6]
-		r(74496, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Toughness [Rank 7]
-		r(102163, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Toughness [Rank 8]
+		r(74496, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}, ["rank"] = 7 }),	-- Toughness [Rank 7]
+		r(102163, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}, ["rank"] = 8 }),	-- Toughness [Rank 8]
 	}),
 	-- #endif
 	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {

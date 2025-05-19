@@ -192,6 +192,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 49208 },	-- Mutilated Mistwing Carcass
 							["cr"] = 36304,	-- Mistwing Cliffdweller
 						}),
+						i(49132),	-- Fireliminator X-21 (QI!)
 					},
 				}),
 				q(24458, {	-- A Hello to Arms
@@ -200,6 +201,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.3, 74.4, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(49705)	},	-- Armed Azsharite Core (QI!)
 				}),
 				q(5536, {	-- A Land Filled with Hatred
 					["qg"] = 11548,	-- Loth'atu
@@ -254,6 +256,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								36015,	-- Blackmaw Pathfinder
 							},
 						}),
+						o(196834, {	-- Briaroot Brew
+							["coords"] = {
+								{ 29.4, 39.5, AZSHARA },
+								{ 30.0, 38.6, AZSHARA },
+								{ 30.4, 37.4, AZSHARA },
+								{ 30.4, 39.8, AZSHARA },
+								{ 30.5, 39.9, AZSHARA },
+								{ 30.6, 38.1, AZSHARA },
+								{ 31.0, 34.0, AZSHARA },
+								{ 31.1, 35.1, AZSHARA },
+							},
+							["groups"] = { i(49365) },	-- Briaroot Brew (QI!)
+						}),
 					},
 				}),
 				q(46177, {	-- A Portal Away
@@ -305,6 +320,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 70.3, 36.2, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(49168),	-- Enchanted Azshari Sea Sponge (QI!)
+						i(49172),	-- Simmering Water Droplet (QI!)
+					},
 				}),
 				q(24497, {	-- Airborne Again
 					["qg"] = 37142,	-- Gurlorn
@@ -427,6 +446,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coord"] = { 39.9, 84.7, AZSHARA },
 						}),
+						i(49229),	-- Purchase Order Receipt
 					},
 				}),
 				q(14388, {	-- Azsharite Experiment Number Two
@@ -475,6 +495,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.4, 74.3, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] ={ i(49211) },	-- Mound o' Meat (QI!)
 				}),
 				q(3504, {	-- Betrayed (1/4)
 					["providers"] = {
@@ -714,6 +735,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.6, 25.1, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(49201) },	-- Dingy Wizard Hat (QI!)
 				}),
 				q(14390, {	-- Easy is Boring
 					["sourceQuest"] = 14389,	-- Wasn't it Obvious?
@@ -742,6 +764,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(53418, {	-- Honorary Gob Squad Shield
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(49629),	-- Gob Squad Flare (QI!)
 					},
 				}),
 				q(24467, {	-- Fade to Black
@@ -799,6 +823,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 39.1, 51.7, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(49685) },	-- Flag of Territorial Claim (QI!)
 				}),
 				q(14471, {	-- First Degree Mortar
 					["sourceQuest"] = 14468,	-- Another Warm Body
@@ -881,6 +906,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131346, {	-- Ergll's Body Sieve
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(49176),	-- Engorged Azshari Sea Sponge (QI!)
 					},
 				}),
 				q(14475, {	-- Grounded!
@@ -939,6 +966,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(156943, {	-- Hort's Motivator
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(49679),	-- Sanctified Flaregun (QI!)
 					},
 				}),
 				q(14469, {	-- Hand-me-downs
@@ -979,6 +1008,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131362, {	-- Profit Boon Legguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(49629),	-- Gob Squad Flare (QI!)
 					},
 				}),
 				q(14484, {	-- Head of the Snake
@@ -991,6 +1022,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Lord Kassarus slain
 							["provider"] = { "n", 36822 },	-- Lord Kassarus
 						}),
+						i(49629),	-- Gob Squad Flare (QI!)
 					},
 				}),
 				q(14261, {	-- Ice Cold
@@ -1003,6 +1035,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/8 Sable Drake slain
 							["provider"] = { "n", 36640 },	-- Sable Drake
 						}),
+						i(49596),	-- Cryomatic 16 (QI!)
 					},
 				}),
 				q(45570, {	-- In Safer Hands
@@ -1308,6 +1341,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 152631 },	-- Azsharite Formation
 							},
 						}),
+						i(10839),	-- Crystallized Note
+						i(10840),	-- Crystallized Note
 					},
 				}),
 				q(14216, {	-- Mystery of the Sarcen Stone
@@ -1347,6 +1382,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.2, 76.0, AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(49204) },	-- Secret Rocket Plans (QI!)
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8255, {	-- Of Coursers We Know
 					["qg"] = 8405,	-- Ogtinc
@@ -1441,6 +1477,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						ROGUE,			-- Subtlety
 						WARRIOR,		-- Arms
 					},
+					["g"] = {
+						i(142374),	-- Fanciful Hat (QI!)
+						i(142365),	-- Magnificent Mantle (QI!)
+						i(142372),	-- Well-Tailored Robes (QI!)
+					},
 				}),
 				q(24452, {	-- Profitability Scouting
 					["qg"] = 36749,	-- Commander Molotov
@@ -1470,6 +1511,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/4 Bilgewater Laborer rescued
 							["provider"] = { "n", 36722 },	-- Bilgewater Laborer
 						}),
+						i(49533),	-- Ironwrought Key (QI!)
 					},
 				}),
 				q(14477, {	-- Push the Button!
@@ -1561,6 +1603,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 195602 },	-- Animate Besalt Chunk
 							},
 						}),
+						i(49038),	-- Arcane Charge (QI!)
 					},
 				}),
 				q(14162, {	-- Report to Horzak
@@ -1804,6 +1847,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 200298 },	-- Heart of Arkkoroc
 							},
 						}),
+						i(49629),	-- Gob Squad Flare (QI!)
 					},
 				}),
 				q(14165, {	-- Stone Cold
@@ -1872,6 +1916,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131359, {	-- Accomodating Cinch
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(49368),	-- Ambassador Disguise (QI!)
 					},
 				}),
 				q(14431, {	-- The Blackmaw Scar
@@ -2143,6 +2189,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 34.4, 44.7, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(49629) },	-- Gob Squad Flare (QI!)
 				}),
 				q(14262, {	-- To Gut a Fish
 					["qg"] = 35657,	-- Torg Twocrush
@@ -2341,6 +2388,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.4, 74.2, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(49132) },	-- Fireliminator X-21 (QI!)
 				}),
 				q(14462, {	-- Where's My Head?
 					["qg"] = 36730,	-- Chawg

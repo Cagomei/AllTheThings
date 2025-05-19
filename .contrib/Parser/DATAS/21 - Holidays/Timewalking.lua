@@ -335,9 +335,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 						i(224561),	-- Commendation of the Hydraxian Waterlords
 						i(224571),	-- Commendation of the Thorium Brotherhood
 						i(224566),	-- Commendation of the Timbermaw Hold
-						i(224565, {	-- Commendation of the Wintersaber Trainers
-							["races"] = ALLIANCE_ONLY,
-						}),
+						i(224565),	-- Commendation of the Wintersaber Trainers
 						i(224570),	-- Commendation of the Zandalar Tribe
 					})),
 					filter(MISC, {	-- Might be unecessary..
@@ -1251,7 +1249,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 							},
 						}),
 						i(129948, {	-- Commendation of Honor Hold
-							["races"] = ALLIANCE_ONLY,
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
 						i(129951, {	-- Commendation of Lower City
@@ -1270,7 +1267,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
 						i(129947, {	-- Commendation of Thrallmar
-							["races"] = HORDE_ONLY,
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
 						i(33857, {	-- Crate of Meat
@@ -2711,7 +2707,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							["sym"] = {{"fill" }},
 						}),
 						i(129955, {	-- Commendation of the Alliance Vanguard
-							["races"] = ALLIANCE_ONLY,
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
 						i(129942, {	-- Commendation of the Argent Crusade
@@ -2721,7 +2716,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
 						i(129954, {	-- Commendation of the Horde Expedition
-							["races"] = HORDE_ONLY,
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
 						i(129940, {	-- Commendation of the Kirin Tor
@@ -3963,7 +3957,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 							},
 						}),
 						i(133150, {	-- Commendation of the Dragonmaw Clan
-							["races"] = HORDE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(133159, {	-- Commendation of the Earthen Ring
@@ -3976,7 +3969,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(133151, {	-- Commendation of the Wildhammer Clan
-							["races"] = ALLIANCE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(133160, {	-- Commendation of Therazanae
@@ -4890,7 +4882,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(143944, {	-- Commendation of Operation: Shieldwall
-							["races"] = ALLIANCE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(143946, {	-- Commendation of The Anglers
@@ -4900,14 +4891,12 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(143943, {	-- Commendation of the Dominance Offensive
-							["races"] = HORDE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(143937, {	-- Commendation of the Golden Lotus
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(143940, {	-- Commendation of the Kirin Tor Offensive
-							["races"] = ALLIANCE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(143935, {	-- Commendation of The Klaxxi
@@ -4923,7 +4912,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(143939, {	-- Commendation of the Sunreaver Onslaught
-							["races"] = HORDE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(143941, {	-- Commendation of The Tillers
@@ -6973,7 +6961,7 @@ AddInstancesToRotation(EXPANSION.LEGION, {
 });
 
 -- Battle for Azeroth Timewalking
-root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_DUNGEON_EVENT, {
+root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_FOR_AZEROTH_DUNGEON_EVENT, {
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 }},{
 		n(QUESTS, {
 		}),
@@ -7104,26 +7092,24 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 					}),
 					filter(MISC, {
 						i(238804, {	-- Commendation of Proudmoore Admiralty
-							["races"] = ALLIANCE_ONLY,
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+						}),
+						i(238805, {	-- Commendation of Storm's Wake
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(238816, {	-- Commendation of Talanji's Expedition
-							["races"] = HORDE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(238806, {	-- Commendation of the 7th Legion
-							["races"] = ALLIANCE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(238821, {	-- Commendation of the Champions of Azeroth
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(238819, {	-- Commendation of the Honorbound
-							["races"] = HORDE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(238803, {	-- Commendation of the Order of Embers
-							["races"] = ALLIANCE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(238826, {	-- Commendation of the Rajani
@@ -7139,23 +7125,15 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(238820, {	-- Commendation of the Unshackled
-							["races"] = HORDE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(238817, {	-- Commendation of the Voldunai
-							["races"] = HORDE_ONLY,
-							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
-						}),
-						i(238818, {	-- Commendation of the Zandalari Empire
-							["races"] = HORDE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 						i(238809, {	-- Commendation of the Waveblade Ankoan
-							["races"] = ALLIANCE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
-						i(238805, {	-- Commendation of Storm's Wake
-							["races"] = ALLIANCE_ONLY,
+						i(238818, {	-- Commendation of the Zandalari Empire
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						}),
 					}),

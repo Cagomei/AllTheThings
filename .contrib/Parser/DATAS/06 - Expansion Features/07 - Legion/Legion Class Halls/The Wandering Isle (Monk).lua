@@ -655,6 +655,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 117305 },	-- Brewmaster Almai
 						["coord"] = { 53.6, 53.3, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(146312),	-- Demonic Ash (QI!)
+							i(146311),	-- Flask of Fel Blood (QI!)
+							i(146310),	-- Vial of Liquid Felflame (QI!)
+						},
 					}),
 					q(45545, {	-- Barrel Toss
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
@@ -728,6 +733,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 120744 },	-- Smelly Mountaintop
 						["coord"] = { 47.9, 49.0, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(147314),	-- Part of Smelly's Luckydo (QI!)
+						},
 					}),
 					q(46346, {	-- The Shadow of Ban-Lu
 						["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
@@ -752,6 +760,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["coord"] = { 74.4, 88.7, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(147313),	-- Moon Lily (QI!)
+						},
 					}),
 					q(46350, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Trial of Ban-Lu
 						["sourceQuests"] = { 46349 },	-- Lilies for Ryuli

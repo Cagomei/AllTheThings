@@ -92,6 +92,22 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 		})),
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_EIGHT, n(QUESTS, bubbleDown({ ["timeline"] = { ADDED_1_15_7 }}, {
+			q(90560, {	-- Familiar Foulness
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(241651),	-- Recipe: Major Discolored Healing Potion (RECIPE!)
+				},
+			}),
+			q(90567, {	-- Unfamiliar Foulness
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(241651),	-- Recipe: Major Discolored Healing Potion (RECIPE!)
+				},
+			}),
+		}))),
+		-- #endif
 	}),
 	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 		q(10906, {	-- Master of Elixirs (1/2)

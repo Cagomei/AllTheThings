@@ -1,9 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
-		header(HEADERS.Faction, FACTION_WINTERPELT_FURBOLG, {
+		header(HEADERS.Faction, FACTION_WINTERPELT_FURBOLG, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 			faction(FACTION_WINTERPELT_FURBOLG, {
 				-- completing the whole quest chain will always give exactly exalted
 				["sourceQuest"] = 73031,	-- Champion of the Winterpelt
@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 					["coord"] = { 55.1, 19.7, THE_AZURE_SPAN },
 				}),
 			}),
-		}),
+		})),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {

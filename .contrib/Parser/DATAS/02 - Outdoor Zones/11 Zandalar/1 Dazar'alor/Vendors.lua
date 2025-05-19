@@ -97,8 +97,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(163620, {	-- Island Flotsam
 						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
 					}),
-					i(166749, {	-- Lyrics: Song of the Sea
-						["questID"] = 54859,
+					i(166749, {	-- Lyrics: Song of the Sea (CI!)
 						["cost"] = { { "c", 1710, 25 }, },	-- 25x Seaferer's Dubloon
 					}),
 					i(160290, {	-- Red Tricorne Hat
@@ -271,12 +270,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(163705, {	-- Imaginary Gun (TOY!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 250 }, },
 					}),
-					i(165840, {	-- Interdimensional Pet Portal
-						["questID"] = 54264,
+					i(165840, {	-- Shattered Pet Portal (CI!)
 						-- #if BEFORE 9.0.2
 						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 }, },
 						-- #endif
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { REMOVED_9_1_0 },
 					}),
 					i(163502, {	-- Lil' Ben'fon (PET!)
 						["sourceQuests"] = { 50297 },	-- The Head of Her Enemy
@@ -288,10 +286,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = HORDE_ONLY,	-- Note!! We are only marking the item that learns it as Horde.  Alliance can use it so we don't mark the actual species.
 						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
-					i(139003, {	-- Pocket Pet Portal
-						["questID"] = 43016,
+					i(139003, {	-- Pocket Pet Portal (CI!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 }, },
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { REMOVED_9_1_0 },
 					}),
 					i(163499, {	-- Zandalari Shinchomper (PET!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
@@ -559,7 +556,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(161521, {	-- Goblin Sapper's Legguards
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(166444),	-- Honorbound Scouting Map
+					i(166444),	-- Honorbound Scouting Map (CI!)
 					i(163779, {	-- Lil' War Machine (PET!)
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },

@@ -48,7 +48,6 @@ root(ROOTS.NeverImplemented, filter(BAGS, {
 		-- 8.1.0
 		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
 			i(166699),	-- Desert Rucksack
-			i(166700),	-- Durable Sailor's Duffel
 		})),
 	}),
 }));

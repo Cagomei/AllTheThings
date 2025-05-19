@@ -1547,6 +1547,23 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(233057, {	-- Rock Hound Mica (PET!)
 				["displayID"] = 124374,
 			}),
+			-- Without SpeciesID Attached
+			i(235988, {	-- Parley (PET!)
+				["displayID"] = 124174,
+			}),
+		})),
+
+		-- 11.1.0
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
+			i(235909, {	-- Gleam (PET!)
+				["displayID"] = 89251,
+			}),
+			i(232854, {	-- Grinner (PET!)
+				["displayID"] = 121850,
+			}),
+			i(232856, {	-- Scruff (PET!)
+				["displayID"] = 121851,
+			}),
 		})),
 	}),
 }));

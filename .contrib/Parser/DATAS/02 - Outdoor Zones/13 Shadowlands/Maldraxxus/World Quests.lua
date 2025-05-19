@@ -246,7 +246,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61060),	-- Spore Losers
 			q(60231, {	-- State of Decay
 				i(177245, {	-- Maldraxxi Challenge Banner (EC!)
-					["questID"] = 59695,
+					["customCollect"] = "SL_COV_VEN",
 				}),
 			}),
 			q(61615, {	-- Tailoring: Haunting Hood

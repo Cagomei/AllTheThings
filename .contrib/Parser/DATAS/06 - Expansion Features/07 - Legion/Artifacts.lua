@@ -2605,7 +2605,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 		q(45915),	-- Triggers when you do any of "The Folly of Levia Laurence" quests
 		q(47234),	-- Unlocked the order hall storyline artifact appearance from "A Hero's Weapon" for mage
 		q(46790),	-- Unlocked the order hall storyline artifact appearance from "A Hero's Weapon" for rogue
-		-- q(48546, { ["timeline"] = { ADDED_7_3_0 } }),	-- Unlocking alternate Underlight Angler appearances from 'Fisherfriend of the Isles'
 	}),
 })));
 -- Fill certain Artifacts into the Arch Achievement which is needed to earn them

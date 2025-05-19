@@ -618,6 +618,10 @@ local QUANTUM_GROUP = sharedData({
 		hqt(77610, {	-- when you learn everything from Quantum Wand
 			["name"] = "Quantum Wand completed.",
 		}),
+		ig(161926, {	-- Talanji's Salutary Scepter 		(NYI)
+			["description"] = "Likely possible to also get from completing Quests in Tirisgarde as Alliance and relogging. We dont know which quest",
+			["races"] = HORDE_ONLY,
+		}),
 		ig(134728),	-- Cold-Touched Wand					(Removed)
 		ig(134590),	-- Vanguard Baton of Light				(Removed)
 	}),

@@ -3616,24 +3616,19 @@ root(ROOTS.Zones, {
 								i(117390, {	-- Draenor Archaeologist's Map
 									["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
 								}),
-								i(118727, {	-- Frostfire Treasure Map
-									["questID"] = 34557,
+								i(118727, {	-- Frostfire Treasure Map (CI!)
 									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
-								i(118729, {	-- Gorgrond Treasure Map
-									["questID"] = 36465,
+								i(118729, {	-- Gorgrond Treasure Map (CI!)
 									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
-								i(118732, {	-- Nagrand Treasure Map
-									["questID"] = 36468,
+								i(118732, {	-- Nagrand Treasure Map (CI!)
 									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
-								i(118731, {	-- Spires of Arak Treasure Map
-									["questID"] = 36467,
+								i(118731, {	-- Spires of Arak Treasure Map (CI!)
 									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
-								i(118730, {	-- Talador Treasure Map
-									["questID"] = 36466,
+								i(118730, {	-- Talador Treasure Map (CI!)
 									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
 							},

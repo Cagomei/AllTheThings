@@ -693,7 +693,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25044, {	-- Diplomacy By Another Means
 					["providers"] = {
 						{ "n", 38986 },	-- Ambassador Gaines
-						{ "i", 49782 },	-- Horn of Challenge
+						{ "i", 49782 },	-- Horn of Challenge (QI!) not prov
 					},
 					["sourceQuest"] = 25022,	-- A Failure to Communicate
 					["coord"] = { 50.0, 49.5, SOUTHERN_BARRENS },
@@ -883,6 +883,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.6, 69.4, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(50128),	-- Bucket of Burning Pitch (QI!)
+						i(50162),	-- Crawgol's Silithid Field Guide (QI!)
+					},
 				}),
 				q(24631, {	-- Flightmare
 					["qg"] = 37909,	-- Tomusa
@@ -905,6 +909,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131382, {	-- Earthbound Trousers
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(50031),	-- Tomusa's Hook (QI!)
 					},
 				}),
 				q(25186, {	-- Futile Resistance
@@ -1397,6 +1403,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
+					["groups"] = { i(52714) },	-- Dwarven Slug (QI!)
 				}),
 				q(25102, {	-- No Bull
 					["qg"] = 39154,	-- Hurlston Stonesthrow
@@ -1444,6 +1451,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 201904 },	-- Mutilated Remains
 							},
 						}),
+						i(49948),	-- Calder's Bonesaw (QI!)
 					},
 				}),
 				q(25075, {	-- Pick-a-Part
@@ -1755,6 +1763,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131376, {	-- Grease-Covered Footguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(49874),	-- Goblin Stickybombs (QI!)
 					},
 				}),
 				q(24515, {	-- Signals in the Sky
@@ -1861,6 +1871,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131374, {	-- Bristleback Challenge Treads
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(49782),	-- Horn of Challenge (QI!)
 					},
 				}),
 				q(889, {	-- Spirit of the Wind
@@ -2275,7 +2287,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25082, {	-- Working the Bugs Out
 					["providers"] = {
 						{ "n", 39085 },	-- Logan Talonstrike
-						{ "i", 50128 },	-- Bucket of Burning Pitch
+						{ "i", 50128 },	-- Bucket of Burning Pitch (QI!) not prov
 					},
 					["coord"] = { 49.2, 67.9, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },

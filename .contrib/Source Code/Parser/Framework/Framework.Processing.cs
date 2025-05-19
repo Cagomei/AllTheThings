@@ -788,6 +788,7 @@ namespace ATT
 
             Validate_Achievement(data);
             Validate_Criteria(data);
+            Validate_Faction(data);
             Validate_LocationData(data);
             Validate_Quest(data);
 
@@ -1818,6 +1819,19 @@ namespace ATT
             {
                 data.Remove("crs");
                 Objects.Merge(data, "_npcs", crs);
+            }
+        }
+
+        private static void Validate_Faction(IDictionary<string, object> data)
+        {
+            if (!data.TryGetValue("factionID", out long factionID))
+                return;
+
+            // Factions should not contain Sourced content as they are considered standalone collectibles
+            if (data.TryGetValue("g", out List<object> g) && g.Count > 0)
+            {
+                // TODO: normal warn once eventually cleaned up
+                LogDebugWarn($"Faction {factionID} should not contain nested content. Use an auto-header to nest content related to a Faction", data);
             }
         }
 

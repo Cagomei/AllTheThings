@@ -383,6 +383,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60296 },   -- Pride or Unit (Nemea - Larion)
 				}),
 			}),
+			achWithRep(14335, FACTION_THE_ASCENDED),	-- The Ascended
 			ach(14281, {	-- The Path to Ascension
 				crit(48148, {	-- Eternity's Call
 					["sourceQuests"] = { 57677 },	-- A Soulbind In Need

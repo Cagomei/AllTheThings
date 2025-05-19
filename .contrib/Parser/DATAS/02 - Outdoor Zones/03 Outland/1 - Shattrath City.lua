@@ -760,6 +760,9 @@ root(ROOTS.Zones, {
 							i(142279),	-- Plans: Windforged Rapier (RECIPE!)
 							i(142283),	-- Plans: Skyforged Great Axe (RECIPE!)
 							i(142282),	-- Plans: Stormforged Axe (RECIPE!)
+							i(142272),	-- Cardinal Sky Core (QI!)
+							i(142271),	-- Cardinal Storm Core (QI!)
+							i(142270),	-- Cardinal Wind Core (QI!)
 						},
 					})),
 					applyclassicphase(TBC_PHASE_FIVE, q(11481, {	-- Crisis at the Sunwell
@@ -785,6 +788,9 @@ root(ROOTS.Zones, {
 							i(142284),	-- Plans: Stoneforged Claymore (RECIPE!)
 							i(142287),	-- Plans: Great Earthforged Hammer (RECIPE!)
 							i(142286),	-- Plans: Lavaforged Warhammer (RECIPE!)
+							i(142269),	-- Cardinal Earth Core (QI!)
+							i(142268),	-- Cardinal Lava Core (QI!)
+							i(142267),	-- Cardinal Stone Core (QI!)
 						},
 					})),
 					q(10421, {	-- Fel Armaments

@@ -1545,6 +1545,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26068, {	-- Kobold Fury!
 					["qg"] = 42023,	-- Subjugator Devo
 					["sourceQuest"] = 26066,	-- Reinforcements...
+					["coord"] = { 71.2, 91.1, STONETALON_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {

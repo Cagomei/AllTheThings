@@ -1749,6 +1749,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 11.0.7
 		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+			i(224258),	-- [DNT] Flower
 			i(234313),	-- [DNT] Item
 			i(234969),	-- Archivist Chassis
 			i(233331),	-- Aura of Zealotry
@@ -1784,6 +1785,11 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(232898),	-- Delver's Bounty
 			i(235535),	-- Discretely-Packaged Invention
 			i(230807),	-- Drill Hands
+			i(234390),	-- Gallagio Loyalty Rewards Card: Gold
+			i(234391),	-- Gallagio Loyalty Rewards Card: Platinum
+			i(234392),	-- Gallagio Loyalty Rewards Card: Black
+			i(234393),	-- Gallagio Loyalty Rewards Card: Diamond
+			i(234394),	-- Gallagio Loyalty Rewards Card: Legendary
 			i(228798),	-- Gob-Glider
 			i(235559),	-- Hidden Trove
 			i(230017),	-- Master Blaster's Insignia

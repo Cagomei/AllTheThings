@@ -4295,6 +4295,7 @@ n(230394, 4628);	-- Tidal Kroling
 i(0, 4725);			-- Titan Orb
 i(234905, 4730);	-- Mech-Friend Maya
 i(233057, 4709);	-- Rock Hound Mica
+i(235988, 0);		-- Parley
 
 ------------------
 -- PATCH 11.1.0 --
@@ -4354,10 +4355,19 @@ i(0, 4745);	-- Rusty Croach
 i(0, 4746);	-- Sooty Croach
 i(0, 4738);	-- Status Symbol
 i(0, 4743);	-- Swabbie
---- UNSORTED ---
+--- NYI ---
+i(231628, 4676);	-- Bawkinator 2000
+i(231627, 4677);	-- Black Cave Crab
+i(231757, 4671);	-- Cauldrone
+i(231760, 4673);	-- Crunchy
+i(231762, 4674);	-- Dosh
+i(231758, 4672);	-- Finnity
+i(231763, 4675);	-- FO-MO Mark II
 i(235909, 4755);	-- Gleam
 i(232854, 4634);	-- Grinner
+i(231756, 4670);	-- Hermes
 i(232856, 4633);	-- Scruff
+i(231613, 4665);	-- Yellow Tropical Frog
 
 ------------------
 -- PATCH 11.1.5 --

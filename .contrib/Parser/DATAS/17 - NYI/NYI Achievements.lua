@@ -363,6 +363,9 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(6549),	-- The Brewmasters
 			ach(8394),	-- The Frostwind Slayer
 			ach(7277),	-- Zero Bug Count
+			-- 5.5.0.60481
+			ach(8913),	-- Collector's Edition: Dread Raven
+			ach(8915),	-- Collector's Edition: Dread Hatchling
 		}),
 	}),
 	expansion(EXPANSION.WOD, {

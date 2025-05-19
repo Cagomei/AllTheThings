@@ -336,7 +336,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						),
 					}),
 				}),
-				-- #if NOT ANYCLASSIC
 				prof(INSCRIPTION, {
 					n(30713, {	-- Catarina Stanford <Inscription Trainer>
 						["coords"] = {
@@ -351,7 +350,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["groups"] = CLASSIC_INSCRIPTION,
 					}),
 				}),
-				-- #endif
 				prof(JEWELCRAFTING, {
 					n(44582, {	-- Theresa Denman <Jewelcrafting Trainer>
 						["coord"] = { 63.6, 61.6, STORMWIND_CITY },

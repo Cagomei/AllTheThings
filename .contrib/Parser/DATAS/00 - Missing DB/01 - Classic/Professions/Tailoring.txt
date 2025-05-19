@@ -1,0 +1,237 @@
+0.5.3.3368
+r(3908),	-- Tailoring
+r(3909),	-- Tailoring
+r(3910),	-- Tailoring
+0.5.5.3494
+r(8468),	-- White Woolen Dress
+0.8.0.3734
+r(12180),	-- Tailoring
+
+
+
+
+Missing in Tailoring
+
+0.5.3.3368
+r(2385),	-- Brown Linen Vest
+r(2386),	-- Linen Boots
+r(2387),	-- Linen Cloak
+r(2389),	-- Red Linen Robe
+r(2392),	-- Red Linen Shirt
+r(2393),	-- White Linen Shirt
+r(2394),	-- Blue Linen Shirt
+r(2395),	-- Barbaric Linen Vest
+r(2396),	-- Green Linen Shirt
+r(2397),	-- Reinforced Linen Cape
+r(2399),	-- Green Woolen Vest
+r(2401),	-- Woolen Boots
+r(2402),	-- Woolen Cape
+r(2403),	-- Gray Woolen Robe
+r(2406),	-- Gray Woolen Shirt
+r(2963),	-- Bolt of Linen Cloth
+r(2964),	-- Bolt of Woolen Cloth
+r(3755),	-- Linen Bag
+r(3757),	-- Woolen Bag
+r(3758),	-- Green Woolen Bag
+r(3813),	-- Small Silk Pack
+r(3839),	-- Bolt of Silk Cloth
+r(3840),	-- Heavy Linen Gloves
+r(3841),	-- Green Linen Bracers
+r(3842),	-- Handstitched Linen Britches
+r(3843),	-- Heavy Woolen Gloves
+r(3844),	-- Heavy Woolen Cloak
+r(3845),	-- Soft-soled Linen Boots
+r(3847),	-- Red Woolen Boots
+r(3848),	-- Double-stitched Woolen Shoulders
+r(3849),	-- Reinforced Woolen Shoulders
+r(3850),	-- Heavy Woolen Pants
+r(3851),	-- Phoenix Pants
+r(3852),	-- Gloves of Meditation
+r(3854),	-- Azure Silk Gloves
+r(3855),	-- Spidersilk Boots
+r(3856),	-- Spider Silk Slippers
+r(3857),	-- Enchanter's Cowl
+r(3858),	-- Shadow Hood
+r(3859),	-- Azure Silk Vest
+r(3860),	-- Boots of the Enchanter
+r(3861),	-- Long Silken Cloak
+r(3863),	-- Spider Belt
+r(3864),	-- Star Belt
+r(3865),	-- Bolt of Mageweave
+r(3866),	-- Stylish Red Shirt
+r(3868),	-- Phoenix Gloves
+r(3869),	-- Bright Yellow Shirt
+r(3870),	-- Dark Silk Shirt
+r(3871),	-- Formal White Shirt
+r(3872),	-- Rich Purple Silk Shirt
+r(3873),	-- Black Swashbuckler's Shirt
+r(3908),	-- Tailoring
+r(3909),	-- Tailoring
+r(3910),	-- Tailoring
+r(3914),	-- Brown Linen Pants
+r(3915),	-- Brown Linen Shirt
+r(6521),	-- Pearl-clasped Cloak
+r(6686),	-- Red Linen Bag
+r(6688),	-- Red Woolen Bag
+r(6690),	-- Lesser Wizard's Robe
+r(6693),	-- Green Silk Pack
+r(6695),	-- Black Silk Pack
+r(7623),	-- Brown Linen Robe
+r(7624),	-- White Linen Robe
+r(7629),	-- Red Linen Vest
+r(7630),	-- Blue Linen Vest
+r(7633),	-- Blue Linen Robe
+r(7636),	-- Green Woolen Robe
+r(7639),	-- Blue Overalls
+r(7643),	-- Greater Adept's Robe
+r(7892),	-- Stylish Blue Shirt
+r(7893),	-- Stylish Green Shirt
+0.5.5.3494
+r(8465),	-- Simple Dress
+r(8467),	-- White Woolen Dress
+r(8468),	-- White Woolen Dress
+r(8483),	-- White Swashbuckler's Shirt
+r(8489),	-- Red Swashbuckler's Shirt
+0.6.0.3592
+r(8758),	-- Azure Silk Pants
+r(8760),	-- Azure Silk Hood
+r(8762),	-- Silk Headband
+r(8764),	-- Earthen Vest
+r(8766),	-- Azure Silk Belt
+r(8770),	-- Robe of Power
+r(8772),	-- Crimson Silk Belt
+r(8774),	-- Green Silken Shoulders
+r(8776),	-- Linen Belt
+r(8778),	-- Boots of Darkness
+r(8780),	-- Hands of Darkness
+r(8782),	-- Truefaith Gloves
+r(8784),	-- Green Silk Armor
+r(8789),	-- Crimson Silk Cloak
+r(8791),	-- Crimson Silk Vest
+r(8793),	-- Crimson Silk Shoulders
+r(8795),	-- Azure Shoulders
+r(8797),	-- Earthen Silk Belt
+r(8799),	-- Crimson Silk Pantaloons
+r(8802),	-- Crimson Silk Robe
+r(8804),	-- Crimson Silk Gloves
+0.8.0.3734
+r(12044),	-- Simple Linen Pants
+r(12045),	-- Simple Linen Boots
+r(12046),	-- Simple Kilt
+r(12047),	-- Colorful Kilt
+r(12048),	-- Black Mageweave Vest
+r(12049),	-- Black Mageweave Leggings
+r(12050),	-- Black Mageweave Robe
+r(12052),	-- Shadoweave Pants
+r(12053),	-- Black Mageweave Gloves
+r(12055),	-- Shadoweave Robe
+r(12056),	-- Red Mageweave Vest
+r(12059),	-- White Bandit Mask
+r(12060),	-- Red Mageweave Pants
+r(12061),	-- Orange Mageweave Shirt
+r(12062),	-- Stormcloth Pants
+r(12063),	-- Stormcloth Gloves
+r(12064),	-- Orange Martial Shirt
+r(12065),	-- Mageweave Bag
+r(12066),	-- Red Mageweave Gloves
+r(12067),	-- Dreamweave Gloves
+r(12068),	-- Stormcloth Vest
+r(12069),	-- Cindercloth Robe
+r(12070),	-- Dreamweave Vest
+r(12071),	-- Shadoweave Gloves
+r(12072),	-- Black Mageweave Headband
+r(12073),	-- Black Mageweave Boots
+r(12074),	-- Black Mageweave Shoulders
+r(12075),	-- Lavender Mageweave Shirt
+r(12076),	-- Shadoweave Shoulders
+r(12077),	-- Simple Black Dress
+r(12078),	-- Red Mageweave Shoulders
+r(12079),	-- Red Mageweave Bag
+r(12080),	-- Pink Mageweave Shirt
+r(12081),	-- Admiral's Hat
+r(12082),	-- Shadoweave Boots
+r(12083),	-- Stormcloth Headband
+r(12084),	-- Red Mageweave Headband
+r(12085),	-- Tuxedo Shirt
+r(12086),	-- Shadoweave Mask
+r(12087),	-- Stormcloth Shoulders
+r(12088),	-- Cindercloth Boots
+r(12089),	-- Tuxedo Pants
+r(12090),	-- Stormcloth Boots
+r(12091),	-- White Wedding Dress
+r(12092),	-- Dreamweave Circlet
+r(12093),	-- Tuxedo Jacket
+r(12180),	-- Tailoring
+1.0.0.3980
+r(18401),	-- Bolt of Runecloth
+r(18402),	-- Runecloth Belt
+r(18403),	-- Frostweave Tunic
+r(18404),	-- Frostweave Robe
+r(18405),	-- Runecloth Bag
+r(18406),	-- Runecloth Robe
+r(18407),	-- Runecloth Tunic
+r(18409),	-- Runecloth Cloak
+r(18410),	-- Ghostweave Belt
+r(18411),	-- Frostweave Gloves
+r(18413),	-- Ghostweave Gloves
+r(18419),	-- Felcloth Pants
+r(18420),	-- Brightcloth Cloak
+r(18421),	-- Wizardweave Leggings
+r(18422),	-- Cloak of Fire
+r(18423),	-- Runecloth Boots
+r(18424),	-- Frostweave Pants
+r(18434),	-- Cindercloth Pants
+r(18437),	-- Felcloth Boots
+r(18438),	-- Runecloth Pants
+r(18439),	-- Brightcloth Pants
+r(18440),	-- Mooncloth Leggings
+r(18441),	-- Ghostweave Pants
+r(18442),	-- Felcloth Hood
+r(18444),	-- Runecloth Headband
+r(18445),	-- Mooncloth Bag
+r(18446),	-- Wizardweave Robe
+r(18447),	-- Mooncloth Vest
+r(18448),	-- Mooncloth Shoulders
+r(18449),	-- Runecloth Shoulders
+r(18450),	-- Wizardweave Turban
+r(18451),	-- Felcloth Robe
+r(18452),	-- Mooncloth Circlet
+r(18453),	-- Felcloth Shoulders
+r(18454),	-- Gloves of Spell Mastery
+r(18455),	-- Bottomless Bag
+r(18456),	-- Truefaith Vestments
+r(18457),	-- Robe of the Archmage
+r(18458),	-- Robe of the Void
+r(18560),	-- Mooncloth
+1.1.2.4125
+r(19435),	-- Mooncloth Boots
+r(20848),	-- Flarecore Mantle
+r(20849),	-- Flarecore Gloves
+1.13.0.28211
+r(22759),	-- Flarecore Wraps
+r(22813),	-- Gordok Ogre Suit
+r(22902),	-- Mooncloth Robe
+r(23662),	-- Wisdom of the Timbermaw
+r(23663),	-- Mantle of the Timbermaw
+r(23664),	-- Argent Boots
+r(23665),	-- Argent Shoulders
+r(23666),	-- Flarecore Robe
+r(23667),	-- Flarecore Leggings
+r(24091),	-- Bloodvine Vest
+r(24092),	-- Bloodvine Leggings
+r(24093),	-- Bloodvine Boots
+r(24901),	-- Runed Stygian Leggings
+r(24902),	-- Runed Stygian Belt
+r(24903),	-- Runed Stygian Boots
+r(26085),	-- Soul Pouch
+r(26086),	-- Felcloth Bag
+r(26087),	-- Core Felcloth Bag
+r(27658),	-- Enchanted Mageweave Pouch
+r(27659),	-- Enchanted Runecloth Bag
+r(27660),	-- Big Bag of Enchantment
+r(27724),	-- Cenarion Herb Bag
+r(27725),	-- Satchel of Cenarius
+r(28210),	-- Gaea's Embrace
+r(28480),	-- Sylvan Vest
+r(28481),	-- Sylvan Crown
+r(28482),	-- Sylvan Shoulders

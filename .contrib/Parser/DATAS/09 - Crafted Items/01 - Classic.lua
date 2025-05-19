@@ -15,20 +15,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(233977, { ["timeline"] = { ADDED_1_15_5 }, })), -- Elixir of Alacrity
-			-- #endif
 			i(6452, {["timeline"] = {ADDED_8_0_1}}),	-- Anti-Venom
 			i(9155),	-- Arcane Elixir
 			i(10592),	-- Catseye Elixir
 			i(4596, {["timeline"] = {REMOVED_4_0_3}}),	-- Discolored Healing Potion
 			i(12190),	-- Dreamless Sleep Potion
 			i(8949),	-- Elixir of Agility
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_SIX, i(233977, {["timeline"] = {ADDED_1_15_5}})), -- Elixir of Alacrity
+			-- #endif
 			i(13453),	-- Elixir of Brute Force
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(210708, {	-- Elixir of Coelesced Regret
-				["timeline"] = { ADDED_1_15_0 },
-			})),
+			applyclassicphase(SOD_PHASE_ONE, i(210708, {["timeline"] = {ADDED_1_15_0}})),	-- Elixir of Coelesced Regret
 			-- #endif
 			i(3389),	-- Elixir of Defense
 			i(9224),	-- Elixir of Demonslaying
@@ -55,35 +53,35 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(3391),	-- Elixir of Ogre's Strength
 			i(9264),	-- Elixir of Shadow Power
 			i(13445),	-- Elixir of Superior Defense
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_SIX, i(233967, {["timeline"] = {ADDED_1_15_5}})), -- Elixir of the Honey Badger
+			applyclassicphase(SOD_PHASE_SIX, i(233969, {["timeline"] = {ADDED_1_15_5}})), -- Elixir of the Ironside
+			applyclassicphase(SOD_PHASE_SIX, i(233968, {["timeline"] = {ADDED_1_15_5}})), -- Elixir of the Mage-Lord
+			-- #endif
 			i(13452, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Elixir of the Mongoose
 			i(13447),	-- Elixir of the Sages
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(233967, { ["timeline"] = { ADDED_1_15_5 }, })), -- Elixir of the Honey Badger
-			applyclassicphase(SOD_PHASE_SIX, i(233969, { ["timeline"] = { ADDED_1_15_5 }, })), -- Elixir of the Ironside
-			applyclassicphase(SOD_PHASE_SIX, i(233968, { ["timeline"] = { ADDED_1_15_5 }, })), -- Elixir of the Mage-Lord
-			-- #endif
 			i(5996),	-- Elixir of Water Breathing
 			i(3383),	-- Elixir of Wisdom
 			i(6049),	-- Fire Protection Potion
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_SIX, i(233964, {["timeline"] = {ADDED_1_15_5}})), -- Flask of Ancient Knowledge
+			-- #endif
 			i(13513, {["timeline"] = {REMOVED_5_0_4}}),	-- Flask of Chromatic Resistance
 			i(13511),	-- Flask of Distilled Wisdom
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(234253, { ["timeline"] = { ADDED_1_15_5 }, })), -- Recipe: Flask of Ancient Knowledge
-			applyclassicphase(SOD_PHASE_THREE, i(221024, {	-- Flask of Everlasting Nightmares
-				["timeline"] = { ADDED_1_15_2 },
-			})),
-			applyclassicphase(SOD_PHASE_SIX, i(234256, { ["timeline"] = { ADDED_1_15_5 }, })), -- Recipe: Flask of Madness
-			applyclassicphase(SOD_PHASE_THREE, i(221313, {	-- Flask of Nightmarish Mojo
-				["timeline"] = { ADDED_1_15_2 },
-			})),
-			applyclassicphase(SOD_PHASE_THREE, i(222952, {	-- Flask of Restless Dreams
-				["timeline"] = { ADDED_1_15_2 },
-			})),
-			applyclassicphase(SOD_PHASE_SIX, i(234255, { ["timeline"] = { ADDED_1_15_5 }, })), -- Recipe: Flask of the Old Gods
-			applyclassicphase(SOD_PHASE_SIX, i(234252, { ["timeline"] = { ADDED_1_15_5 }, })), -- Recipe: Flask of Unyielding Sorrow
+			applyclassicphase(SOD_PHASE_THREE, i(221024, {["timeline"] = {ADDED_1_15_2}})),	-- Flask of Everlasting Nightmares
+			applyclassicphase(SOD_PHASE_SIX, i(233962, {["timeline"] = {ADDED_1_15_5}})), -- Flask of Madness
+			applyclassicphase(SOD_PHASE_THREE, i(221313, {["timeline"] = {ADDED_1_15_2}})),	-- Flask of Nightmarish Mojo
+			applyclassicphase(SOD_PHASE_THREE, i(222952, {["timeline"] = {ADDED_1_15_2}})),	-- Flask of Restless Dreams
 			-- #endif
 			i(13512),	-- Flask of Supreme Power
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_SIX, i(233966, {["timeline"] = {ADDED_1_15_5}})), -- Flask of Unyielding Sorrow
+			-- #endif
 			i(13510),	-- Flask of the Titans
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_SIX, i(233966, {["timeline"] = {ADDED_1_15_5}})), -- Flask of Unyielding Sorrow
+			-- #endif
 			i(5634),	-- Free Action Potion
 			i(6050),	-- Frost Protection Potion
 			i(9088, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Gift of Arthas
@@ -102,9 +100,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(6051),	-- Holy Protection Potion
 			i(9172),	-- Invisibility Potion
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217398, {	-- Lesser Arcane Elixir
-				["timeline"] = { ADDED_1_15_1 },
-			})),
+			applyclassicphase(SOD_PHASE_TWO, i(217398, {["timeline"] = {ADDED_1_15_1}})),	-- Lesser Arcane Elixir
 			-- #endif
 			i(858),		-- Lesser Healing Potion
 			i(3823),	-- Lesser Invisibility Potion
@@ -114,6 +110,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_FOUR, i(20008)),	-- Living Action Potion
 			applyclassicphase(PHASE_FOUR, i(20007, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Mageblood Elixir[2.1.0+] / Mageblood Potion
 			i(9036, {["timeline"] = {REMOVED_5_0_4}}),	-- Magic Resistance Potion
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_EIGHT, i(241650, {["timeline"] = {ADDED_1_15_7}})), -- Major Discolored Healing Potion
+			-- #endif
 			i(13446),	-- Major Healing Potion
 			i(13444),	-- Major Mana Potion
 			i(18253),	-- Major Rejuvenation Potion
@@ -122,9 +121,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(13442),	-- Mighty Rage Potion
 			i(20004),	-- Mighty Troll's Blood Elixir[Wrath+] / Major Troll's Blood Potion
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(215162, {	-- Mildly Irradiated Rejuvenation Potion
-				["timeline"] = { ADDED_1_15_1 },
-			})),
+			applyclassicphase(SOD_PHASE_TWO, i(215162, {["timeline"] = {ADDED_1_15_1}})),	-- Mildly Irradiated Rejuvenation Potion
 			-- #endif
 			i(118),		-- Minor Healing Potion
 			i(3384, {["timeline"] = {REMOVED_5_0_4}}),	-- Minor Magic Resistance Potion
@@ -518,7 +515,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				prof(17039, {	-- Master Swordsmith
 					["description"] = "These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",
 					["groups"] = {
-						i(12790, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Arcanite Champion
+						i(12790, {["timeline"] = {REMOVED_6_0_2, ADDED_7_1_5}}),	-- Arcanite Champion
 						applyclassicphase(PHASE_THREE_RECIPES, i(19168)),	-- Blackguard
 						i(12777, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Blazing Rapier
 						i(12782, {	-- Corruption
@@ -1027,7 +1024,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(206488, {["timeline"] = {ADDED_10_1_5}}),	-- Widow's Weep
 			-- #if AFTER TBC
 			i(12798),	-- Annihilator
-			i(12790, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Arcanite Champion
+			i(12790, {["timeline"] = {REMOVED_6_0_2, ADDED_7_1_5}}),	-- Arcanite Champion
 			i(12784),	-- Arcanite Reaper
 			applyclassicphase(PHASE_THREE_RECIPES, i(19166)),	-- Black Amnesty
 			applyclassicphase(PHASE_THREE_RECIPES, i(19167)),	-- Blackfury
@@ -1314,7 +1311,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(38857),	-- Enchant Gloves - Greater Strength
 			i(38889),	-- Enchant Gloves - Healing Power
 			i(38801),	-- Enchant Gloves - Herbalism
-			i(38800),	-- Enchant Gloves - Mining
+			i(38800, {	-- Enchant Gloves - Mining
+				["timeline"] = { REMOVED_4_0_3, ADDED_6_1_0 },
+			}),
 			i(38851),	-- Enchant Gloves - Minor Haste
 			i(38850),	-- Enchant Gloves - Riding Skill
 			i(38886),	-- Enchant Gloves - Shadow Power

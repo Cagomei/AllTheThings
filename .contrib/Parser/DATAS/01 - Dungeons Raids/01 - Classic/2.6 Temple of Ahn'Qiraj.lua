@@ -1724,10 +1724,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							i(234220), -- Plans: Razorspike Headcage
 							i(234221), -- Plans: Razorspike Shoulderplates
 							i(234222), -- Plans: Razorspike Battleplate
-							i(234252), -- Recipe: Flask of Unyielding Sorrow
-							i(234253), -- Recipe: Flask of Ancient Knowledge
-							i(234255), -- Recipe: Flask of the Old Gods
-							i(234256), -- Recipe: Flask of Madness
+							i(234252), -- Recipe: Flask of Unyielding Sorrow (RECIPE!)
+							i(234253), -- Recipe: Flask of Ancient Knowledge (RECIPE!)
+							i(234255), -- Recipe: Flask of the Old Gods (RECIPE!)
+							i(234256), -- Recipe: Flask of Madness (RECIPE!)
 							i(234264), -- Schematic: G00 DV-1B3 Generator
 							i(234265), -- Schematic: Tuned Force Reactive Disk
 							i(234435), -- Schematic: Obsidian Shotgun
@@ -1740,59 +1740,59 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					["groups"] = {
 						-- NEUTRAL
 						i(234016, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 						}),
 						i(234017, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 						}),
 						i(234018, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 						}),
 						i(234019, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 						}),
 						i(234020, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 						}),
 						i(234440, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
-						}),	
+						}),
 						i(234968, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
 						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
-						}),					
-						
+						}),
+
 						-- FRIENDLY
 						i(234021, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 						}),
 						i(234022, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 						}),
 						i(234023, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 						}),
 						i(234024, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 						}),
 						i(234025, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 						}),
 						i(234439, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
 						}),
@@ -1801,30 +1801,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
 						}),
-						
+
 						-- HONORED
 						i(234026, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
 						}),
 						i(234027, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
 						}),
 						i(234028, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
 						}),
 						i(234029, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
 						}),
 						i(234030, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
 						}),
 						i(234438, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
 							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
 						}),
@@ -1833,70 +1833,70 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
 							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
 						}),
-						
+
 						-- REVERED
 						i(234031, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
 						}),
 						i(234032, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
 						}),
 						i(234033, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
 						}),
 						i(234034, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
 						}),
 						i(234035, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
 						}),
 						i(234437, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
 							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
-						}),	
+						}),
 						i(234965, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
 						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
 							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
 						}),
-						
+
 						-- Exalted
 						i(234198, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 						}),
 						i(234199, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 						}),
 						i(234200, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 						}),
 						i(234201, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 						}),
 						i(234202, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 						}),
 						i(234436, {	-- Signet Ring of the Bronze Dragonflight
-						--	["cost"] = { { "i", 00000, 1 }, },	-- 
+						--	["cost"] = { { "i", 00000, 1 }, },	--
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
-						}),	
+						}),
 						i(234964, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
 						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
 							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
-						}),	
+						}),
 					},
 				}),
 				n(15502, {	-- Andorgos <Brood of Malygos> (HEAD & SHOULDER)

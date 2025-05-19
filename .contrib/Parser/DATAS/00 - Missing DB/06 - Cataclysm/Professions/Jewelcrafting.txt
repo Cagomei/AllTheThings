@@ -1,0 +1,155 @@
+4.0.1.12911
+r(73318),	-- Jewelcrafting
+r(73639),	-- Figurine - King of Boars
+r(73640),	-- Figurine - Demon Panther
+r(73641),	-- Figurine - Earthen Guardian
+r(73642),	-- Figurine - Jeweled Serpent
+r(73643),	-- Figurine - Dream Owl
+
+
+
+
+Missing in Jewelcrafting
+
+4.0.1.12911
+r(73222),	-- Bold Carnelian
+r(73223),	-- Delicate Carnelian
+r(73225),	-- Brilliant Carnelian
+r(73226),	-- Precise Carnelian
+r(73227),	-- Solid Zephyrite
+r(73228),	-- Sparkling Zephyrite
+r(73230),	-- Rigid Zephyrite
+r(73232),	-- Smooth Alicite
+r(73233),	-- Mystic Alicite
+r(73234),	-- Quick Alicite
+r(73239),	-- Fractured Alicite
+r(73240),	-- Sovereign Nightstone
+r(73241),	-- Shifting Nightstone
+r(73243),	-- Timeless Nightstone
+r(73246),	-- Etched Nightstone
+r(73247),	-- Glinting Nightstone
+r(73249),	-- Veiled Nightstone
+r(73250),	-- Accurate Nightstone
+r(73259),	-- Resolute Hessonite
+r(73267),	-- Skillful Hessonite
+r(73268),	-- Adept Hessonite
+r(73270),	-- Artful Hessonite
+r(73274),	-- Jagged Jasper
+r(73279),	-- Puissant Jasper
+r(73281),	-- Sensei's Jasper
+r(73318),	-- Jewelcrafting
+r(73335),	-- Bold Inferno Ruby
+r(73336),	-- Delicate Inferno Ruby
+r(73337),	-- Flashing Inferno Ruby
+r(73338),	-- Brilliant Inferno Ruby
+r(73339),	-- Precise Inferno Ruby
+r(73340),	-- Solid Ocean Sapphire
+r(73341),	-- Sparkling Ocean Sapphire
+r(73343),	-- Stormy Ocean Sapphire
+r(73344),	-- Rigid Ocean Sapphire
+r(73345),	-- Subtle Amberjewel
+r(73346),	-- Smooth Amberjewel
+r(73347),	-- Mystic Amberjewel
+r(73348),	-- Quick Amberjewel
+r(73349),	-- Fractured Amberjewel
+r(73350),	-- Sovereign Demonseye
+r(73351),	-- Shifting Demonseye
+r(73352),	-- Defender's Demonseye
+r(73353),	-- Timeless Demonseye
+r(73354),	-- Guardian's Demonseye
+r(73355),	-- Purified Demonseye
+r(73356),	-- Etched Demonseye
+r(73357),	-- Glinting Demonseye
+r(73358),	-- Retaliating Demonseye
+r(73359),	-- Veiled Demonseye
+r(73360),	-- Accurate Demonseye
+r(73361),	-- Polished Ember Topaz
+r(73362),	-- Resolute Ember Topaz
+r(73364),	-- Inscribed Ember Topaz
+r(73365),	-- Deadly Ember Topaz
+r(73366),	-- Potent Ember Topaz
+r(73367),	-- Fierce Ember Topaz
+r(73368),	-- Deft Ember Topaz
+r(73369),	-- Reckless Ember Topaz
+r(73370),	-- Skillful Ember Topaz
+r(73371),	-- Adept Ember Topaz
+r(73372),	-- Fine Ember Topaz
+r(73373),	-- Artful Ember Topaz
+r(73374),	-- Keen Ember Topaz
+r(73375),	-- Regal Dream Emerald
+r(73376),	-- Nimble Dream Emerald
+r(73377),	-- Jagged Dream Emerald
+r(73378),	-- Piercing Dream Emerald
+r(73379),	-- Steady Dream Emerald
+r(73380),	-- Forceful Dream Emerald
+r(73381),	-- Lightning Dream Emerald
+r(73382),	-- Puissant Dream Emerald
+r(73383),	-- Zen Dream Emerald
+r(73384),	-- Sensei's Dream Emerald
+r(73396),	-- Bold Chimera's Eye
+r(73397),	-- Delicate Chimera's Eye
+r(73398),	-- Flashing Chimera's Eye
+r(73399),	-- Brilliant Chimera's Eye
+r(73400),	-- Precise Chimera's Eye
+r(73401),	-- Solid Chimera's Eye
+r(73402),	-- Sparkling Chimera's Eye
+r(73403),	-- Stormy Chimera's Eye
+r(73404),	-- Rigid Chimera's Eye
+r(73405),	-- Subtle Chimera's Eye
+r(73406),	-- Smooth Chimera's Eye
+r(73407),	-- Mystic Chimera's Eye
+r(73408),	-- Quick Chimera's Eye
+r(73409),	-- Fractured Chimera's Eye
+r(73464),	-- Fleet Shadowspirit Diamond
+r(73465),	-- Chaotic Shadowspirit Diamond
+r(73466),	-- Bracing Shadowspirit Diamond
+r(73467),	-- Eternal Shadowspirit Diamond
+r(73468),	-- Austere Shadowspirit Diamond
+r(73469),	-- Effulgent Shadowspirit Diamond
+r(73470),	-- Ember Shadowspirit Diamond
+r(73471),	-- Revitalizing Shadowspirit Diamond
+r(73472),	-- Destructive Shadowspirit Diamond
+r(73473),	-- Powerful Shadowspirit Diamond
+r(73474),	-- Enigmatic Shadowspirit Diamond
+r(73475),	-- Impassive Shadowspirit Diamond
+r(73476),	-- Forlorn Shadowspirit Diamond
+r(73478),	-- Fire Prism
+r(73620),	-- Carnelian Spikes
+r(73621),	-- The Perforator
+r(73622),	-- Stardust
+r(73639),	-- Figurine - King of Boars
+r(73640),	-- Figurine - Demon Panther
+r(73641),	-- Figurine - Earthen Guardian
+r(73642),	-- Figurine - Jeweled Serpent
+r(73643),	-- Figurine - Dream Owl
+4.3.4.15595
+r(73494),	-- Jasper Ring
+r(73495),	-- Hessonite Band
+r(73496),	-- Alicite Pendant
+r(73497),	-- Nightstone Choker
+r(73498),	-- Band of Blades
+r(73502),	-- Ring of Warring Elements
+r(73503),	-- Elementium Moebius Band
+r(73504),	-- Entwined Elementium Choker
+r(73505),	-- Eye of Many Deaths
+r(73506),	-- Elementium Guardian
+r(73520),	-- Elementium Destroyer's Ring
+r(73521),	-- Brazen Elementium Medallion
+r(95754),	-- Willful Ember Topaz
+r(95755),	-- Lucent Ember Topaz
+r(95756),	-- Resplendent Ember Topaz
+r(96226),	-- Vivid Dream Emerald
+r(98921),	-- Punisher's Band
+r(99539),	-- Vicious Sapphire Ring
+r(99540),	-- Vicious Amberjewel Band
+r(99541),	-- Vicious Ruby Signet
+r(99542),	-- Vicious Sapphire Necklace
+r(99543),	-- Vicious Amberjewel Pendant
+r(99544),	-- Vicious Ruby Choker
+4.4.1.57916
+r(1216321),	-- Bloodthirsty Amberjewel Pendant
+r(1216323),	-- Bloodthirsty Sapphire Ring
+r(1216328),	-- Bloodthirsty Amberjewel Band
+r(1216329),	-- Bloodthirsty Ruby Signet
+r(1216330),	-- Bloodthirsty Sapphire Necklace
+r(1216331),	-- Bloodthirsty Ruby Choker

@@ -971,43 +971,41 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 				-- Showing failure texts for Shared Appearances really only matters in Unique modes, where it's useful to see why a
 				-- matching Appearance hasn't unlocked another one
 				if not app.Settings:Get("Completionist") then
-					local failTexts = {};
+					local failText
 					sourceFilter = sourceGroup.f
 					otherFilter = otherATTSource.f
-					-- Show all of the reasons why an appearance does not meet given criteria.
+					-- Show the primary reason why an appearance does not meet given criteria.
 					-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
 					if sourceFilter ~= otherFilter and sourceFilter ~= 2 and otherFilter ~= 2 then
 						-- This is NOT the same type. Therefore, no credit for you!
-						failTexts[#failTexts + 1] = L.FILTER_ID_TYPES[otherATTSource.f] or L.FILTER_ID
-					end
+						failText = L.FILTER_ID_TYPES[otherFilter] or L.FILTER_ID
 					-- Classes
-					if otherATTSource.nmc then
+					elseif otherATTSource.nmc then
 						-- This is NOT for your class. Therefore, no credit for you!
 						if #otherATTSource.c == 1 then
-							failTexts[#failTexts + 1] = app.ClassInfoByID[otherATTSource.c[1]].name or UNKNOWN
+							failText = app.ClassInfoByID[otherATTSource.c[1]].name or UNKNOWN
 						else
 							local classes = {}
 							for i,classID in ipairs(otherATTSource.c) do
 								classes[#classes + 1] = app.ClassInfoByID[classID].name or UNKNOWN
 							end
-							failTexts[#failTexts + 1] = app.TableConcat(classes, nil, nil, ", ")
+							failText = app.TableConcat(classes, nil, nil, ", ")
 						end
-					end
 					-- Faction
-					if otherATTSource.r then
+					elseif otherATTSource.r then
 						if sourceGroup.r ~= otherATTSource.r then
 							-- This is NOT for your Faction. Therefore, no credit for you!
-							failTexts[#failTexts + 1] = otherATTSource.r == Enum.FlightPathFaction.Horde and FACTION_HORDE or FACTION_ALLIANCE
+							failText = otherATTSource.r == Enum.FlightPathFaction.Horde and FACTION_HORDE or FACTION_ALLIANCE
 						end
 					else
 						-- Races (only if not Faction)
 						if otherATTSource.nmr then
 							-- This is NOT for your race. Therefore, no credit for you!
-							failTexts[#failTexts + 1] = RACE
+							failText = RACE
 						end
 					end
 
-					if #failTexts > 0 then linkInfo.left = linkInfo.left .. " |CFFFF0000(" .. app.TableConcat(failTexts, nil, nil, " & ") .. ")|r"; end
+					if failText then linkInfo.left = linkInfo.left .. " |CFFFF0000(" .. failText .. ")|r"; end
 				end
 				info[#info + 1] = linkInfo
 			end
@@ -1085,18 +1083,18 @@ local function BuildSourceInformationForPopout(group)
 			local shared = app.SearchForObject("sourceID", otherSourceID, "key");
 			if shared then
 				shared = app.CloneObject(shared, true);
-				tinsert(g, shared);
+				g[#g + 1] = shared
 				-- print("ATT Appearance:",shared.hash,shared.modItemID)
 			else
 				local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 				-- print("Missing Appearance")
 				-- app.PrintTable(otherSourceInfo)
 				if otherSourceInfo then
-					local newItem = app.CreateItemSource(otherSourceID);
+					local newItem = UnknownAppearancesCache[otherSourceID]
 					if otherSourceInfo.isCollected then
 						AccountSources[otherSourceID] = 1;
 					end
-					tinsert(g, newItem);
+					g[#g + 1] = newItem
 				end
 			end
 		end
@@ -1107,7 +1105,7 @@ local function BuildSourceInformationForPopout(group)
 			OnUpdate = app.AlwaysShowUpdate,
 			OnClick = app.UI.OnClick.IgnoreRightClick,
 			sourceIgnored = true,
-			skipFill = true,
+			skipFull = true,
 			SortPriority = -2.3,
 			g = g,
 		});
@@ -1116,7 +1114,7 @@ local function BuildSourceInformationForPopout(group)
 			OnUpdate = app.AlwaysShowUpdate,
 			OnClick = app.UI.OnClick.IgnoreRightClick,
 			sourceIgnored = true,
-			skipFill = true,
+			skipFull = true,
 			SortPriority = -2.3,
 		});
 	end

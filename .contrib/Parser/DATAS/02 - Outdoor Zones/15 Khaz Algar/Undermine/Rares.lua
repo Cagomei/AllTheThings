@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(231012, {	-- Candy Stickemup
 				["coord"] = { 42.2, 76.7, UNDERMINE },
 				["questID"] = 84927,	-- Candy Stickemup
-				["isWeekly"] = true,
+				["isDaily"] = true,
 				["g"] = {
 					i(235347),	-- 100% Sharp Glimmerblade
 					i(235348),	-- Back Alley Shank
@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},
 				["cost"] = {{"i", 229823, 1}},	-- Canister of Darkfuse Solution
 				["coord"] = { 41.2, 91.4, UNDERMINE },
-				["questID"] = 85010,
+				["questID"] = 90492,
 				["isWeekly"] = true,
 				["g"] = {
 					i(229955),	-- Darkfuse Spy-Eye (MOUNT!)
@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["description"] = "Can be summoned by anyone who has a contract with the Steamwheedle Cartel.",
 				["coord"] = { 32.0, 76.5, UNDERMINE },
 				["crs"] = { 234751 },	-- Noggenfogger Recall Technician
-				["questID"] = 86307,
+				["questID"] = 90489,
 				["isWeekly"] = true,
 				["g"] = {
 					i(235824),	-- Flame Sputterer
@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(231017, {	-- Grimewick
 				["coord"] = { 67.5, 33.5, UNDERMINE },
 				["questID"] = 84928,
-				["isWeekly"] = true,
+				["isDaily"] = true,
 				["g"] = {
 					i(235323),	-- Blastshell Bracers
 					i(235303),	-- Seafused Brimstone Band
@@ -183,7 +183,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["crs"] = {
 					234819,	-- Magno-Scrapper 9000
 				},
-				["questID"] = 86298,
+				["questID"] = 90488,
 				["isWeekly"] = true,
 				["g"] = {
 					i(235835),	-- Braided Wire Wrap
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(230995, {	-- Nitro
 				["coord"] = { 47.0, 55.7, UNDERMINE },
 				["questID"] = 84926,	-- Nitro
-				["isWeekly"] = true,
+				["isDaily"] = true,
 				["g"] = {
 					i(235318),	-- Ironfang Plate Legguards
 					i(235325),	-- Rusthide Gloves
@@ -209,7 +209,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},
 				["coord"] = { 25.3, 36.7, UNDERMINE },
 				["questID"] = 84918,	-- Court of Rats
-				["isWeekly"] = true,
+				["isDaily"] = true,
 				["g"] = {
 					i(235308),	-- Filthtread Boots
 					i(235359),	-- Ratfang Toxin
@@ -219,7 +219,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(230979, {	-- S.A.L.
 				["coord"] = { 41.8, 25.3, UNDERMINE },
 				["questID"] = 84922,
-				["isWeekly"] = true,
+				["isDaily"] = true,
 				["g"] = {
 					i(235300),	-- Cloak of Mecha Shards
 					i(235351),	-- Hypersteel CX4 Greatsword
@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(230931, {	-- Scrapbeak
 				["coord"] = { 68.6, 81.2, UNDERMINE },
 				["questID"] = 84917,	-- Scrapbeak
-				["isWeekly"] = true,
+				["isDaily"] = true,
 				["g"] = {
 					i(235301),	-- Drape of the Dazzling Feather
 					i(235321),	-- Feather-Spike Girdle
@@ -246,7 +246,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					234911,	-- Vignette Bunny [DNT]
 					234832,	-- Krazzik's Drill Rig
 				},
-				["questID"] = 85778,
+				["questID"] = 90491,
 				["isWeekly"] = true,
 				["g"] = {
 					i(235831),	-- Battery-Powered Longshank
@@ -273,7 +273,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(231288, {	-- Swigs Farsight
 				["coord"] = { 41.3, 43.6, UNDERMINE },
 				["questID"] = 85004,	-- Swigs Farsight
-				["isWeekly"] = true,
+				["isDaily"] = true,
 				["g"] = {
 					i(235347),	-- 100% Sharp Glimmerblade
 					i(235310),	-- Flashy Patchwork Trousers
@@ -286,7 +286,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(230940, {	-- Tally Doublespeak
 				["coord"] = { 36.2, 43.3, UNDERMINE },
 				["questID"] = 84919,	-- Tally Doublespeak
-				["isWeekly"] = true,
+				["isDaily"] = true,
 				["g"] = {
 					i(235328),	-- Boots of the Silver Tongue
 					i(235310),	-- Flashy Patchwork Trousers
@@ -310,7 +310,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(230951, {	-- Thwack
 				["coord"] = { 54.1, 50.3, UNDERMINE },
 				["questID"] = 84921,	-- Thwack
-				["isWeekly"] = true,
+				["isDaily"] = true,
 				["g"] = {
 					i(235347),	-- 100% Sharp Glimmerblade
 					i(235317),	-- Chestplate of the Ultimatum
@@ -324,7 +324,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["crs"] = { 230947 },	-- Slimesby
 				["coord"] = { 36.9, 78.2, UNDERMINE },
 				["questID"] = 84920,
-				["isWeekly"] = true,
+				["isDaily"] = true,
 				["g"] = {
 					i(235347),	-- 100% Sharp Glimmerblade
 					i(235329),	-- Cowl of Acidic Mire
@@ -337,7 +337,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(233472, {	-- Voltstrike the Charged
 				["description"] = "Can be summoned by anyome who has a contract with the Blackwater Cartel.",
 				["coord"] = { 62.7, 26.1, UNDERMINE },
-				["questID"] = 85777,
+				["questID"] = 90490,
 				["isWeekly"] = true,
 				["g"] = {
 					i(235373),	-- Abyssal Volt
@@ -353,12 +353,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
 	m(KHAZ_ALGAR, {
 		m(UNDERMINE, {
-			n(RARES, {
-				q(90492),	-- Triggers on killing Darkfuse Precipitant
-				q(90488),	-- Triggers on killing M.A.G.N.O.
-				q(90489),	-- Triggers on killing Giovante
-				q(90490),	-- Triggers on killing Voltstrike
-				q(90491),	-- Triggers on killing Scrapchewer
+			n(RARES, { -- Orphaned Cartel Rare HQTs, used to trigger on each kill, no longer trigger at all?
+				q(85010),	-- Related to killing Darkfuse Precipitant
+				q(86298),	-- Related to killing M.A.G.N.O.
+				q(86307),	-- Related to killing Giovante
+				q(85777),	-- Related to killing Voltstrike
+				q(85778),	-- Related to killing Scrapchewer
 			}),
 		}),
 	}),

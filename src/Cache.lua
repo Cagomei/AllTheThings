@@ -411,6 +411,9 @@ local fieldConverters = {
 	["azeriteessenceID"] = function(group, value)
 		CacheField(group, "azeriteessenceID", value);
 	end,
+	["campsiteID"] = function(group, value)
+		CacheField(group, "campsiteID", value);
+	end,
 	["creatureID"] = cacheCreatureID,
 	["criteriaID"] = function(group, value)
 		CacheField(group, "criteriaID", value);

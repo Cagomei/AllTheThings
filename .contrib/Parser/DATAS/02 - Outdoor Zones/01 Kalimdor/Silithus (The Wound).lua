@@ -611,6 +611,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						q(56261, {	-- Return to the Heart (A)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian <Messenger of the Speaker>
 							["coord"] = { 74.8, 15.2, BORALUS },
+							["sourceQuest"] = 57010,	-- Harnessing the Power
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
@@ -625,6 +626,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								{ 50.4, 41.7, DAZARALOR },
 								-- #endif
 							},
+							["sourceQuest"] = 57010,	-- Harnessing the Power
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,

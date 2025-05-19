@@ -247,48 +247,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(208052),	-- Grimoire of the Voracious Felmaw (CI!)
 					},
 				}),
-				n(FACTIONS, {
+				header(HEADERS.Faction, FACTION_SORIDORMI, {
 					faction(FACTION_SORIDORMI, {
 						["cost"] = {{ "c", SORIDORMIS_RECOGNITION, 42000 }},
-						["g"] = {
-							ach(18615,	-- Legend of the Multiverse
-							bubbleDownSelf({ ["minReputation"] = { FACTION_SORIDORMI, 5 } }, {
-								title(513),	-- <Name> Unparalleled
-							})),
-							q(77241, {	-- A Foreseeable Friendship
-								["provider"] = { "n", 204450 },	-- Soridormi
-								["coord"] = { 51.0, 57.0, THALDRASZUS },
-								["minReputation"] = { FACTION_SORIDORMI, 2 },
-								["g"] = {
-									i(208058),	-- Minute Glass (TOY!)
-								},
-							}),
-							q(77248, {	-- A Recognition of Skill
-								["provider"] = { "n", 204450 },	-- Soridormi
-								["coord"] = { 51.0, 57.0, THALDRASZUS },
-								["minReputation"] = { FACTION_SORIDORMI, 3 },
-								["g"] = {
-									iensemble(207020),	-- Ensemble: Rift-Mender's Vestments
-								},
-							}),
-							q(77249, {	-- One of Us
-								["provider"] = { "n", 204450 },	-- Soridormi
-								["coord"] = { 51.0, 57.0, THALDRASZUS },
-								["minReputation"] = { FACTION_SORIDORMI, 4 },
-								["g"] = {
-									i(207027),	-- Greater Encapsulated Destiny
-								},
-							}),
-							q(77250, {	-- Realized Potentional
-								["provider"] = { "n", 204450 },	-- Soridormi
-								["coord"] = { 51.0, 57.0, THALDRASZUS },
-								["minReputation"] = { FACTION_SORIDORMI, 5 },
-								["g"] = {
-									i(208006),	-- Greater Paracausal Chest / it also could contain vendor stuff, was Ensemble: Hauberk of Discipline - Alex
-									spell(417360),	-- Unparalleled (TITLE!)
-								},
-							}),
-						},
+					}),
+					ach(18615,	-- Legend of the Multiverse
+					bubbleDownSelf({ ["minReputation"] = { FACTION_SORIDORMI, 5 } }, {
+						title(513),	-- <Name> Unparalleled
+					})),
+					n(QUESTS, {
+						q(77241, {	-- A Foreseeable Friendship
+							["provider"] = { "n", 204450 },	-- Soridormi
+							["coord"] = { 51.0, 57.0, THALDRASZUS },
+							["minReputation"] = { FACTION_SORIDORMI, 2 },
+							["g"] = {
+								i(208058),	-- Minute Glass (TOY!)
+							},
+						}),
+						q(77248, {	-- A Recognition of Skill
+							["provider"] = { "n", 204450 },	-- Soridormi
+							["coord"] = { 51.0, 57.0, THALDRASZUS },
+							["minReputation"] = { FACTION_SORIDORMI, 3 },
+							["g"] = {
+								iensemble(207020),	-- Ensemble: Rift-Mender's Vestments
+							},
+						}),
+						q(77249, {	-- One of Us
+							["provider"] = { "n", 204450 },	-- Soridormi
+							["coord"] = { 51.0, 57.0, THALDRASZUS },
+							["minReputation"] = { FACTION_SORIDORMI, 4 },
+							["g"] = {
+								i(207027),	-- Greater Encapsulated Destiny
+							},
+						}),
+						q(77250, {	-- Realized Potentional
+							["provider"] = { "n", 204450 },	-- Soridormi
+							["coord"] = { 51.0, 57.0, THALDRASZUS },
+							["minReputation"] = { FACTION_SORIDORMI, 5 },
+							["g"] = {
+								i(208006),	-- Greater Paracausal Chest / it also could contain vendor stuff, was Ensemble: Hauberk of Discipline - Alex
+								spell(417360),	-- Unparalleled (TITLE!)
+							},
+						}),
 					}),
 				}),
 				n(QUESTS, {

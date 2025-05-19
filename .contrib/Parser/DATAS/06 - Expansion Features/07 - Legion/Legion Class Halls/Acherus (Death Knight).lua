@@ -556,6 +556,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 45240, -- Making Preparations
 						["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
 						["coord"] = { 47.8, 19.2, 823 },	-- Pit of Saron (Scenario Map)
+						["g"] = {
+							i(143676),	-- Rimefang's Harness (QI!)
+						},
 					}),
 					q(45399, {	-- Severing the Sveldrek
 						["sourceQuest"] = 45240, -- Making Preparations

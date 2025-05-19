@@ -2472,9 +2472,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
-				-- #if BEFORE 4.0.3
-				-- Moved to a Vendor, Dark Iron Entrepreneur after 4.0.3
+				-- #if BEFORE 6.1.0
+				-- Moved to a Vendor, Dark Iron Entrepreneur after 6.1.0
 				i(11150, {	-- Formula: Enchant Gloves - Mining (RECIPE!)
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						1364,	-- Balgaras the Foul
 						1054,	-- Dark Iron Demolitionist

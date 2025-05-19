@@ -786,7 +786,11 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["provider"] = { "n", 90383 },	-- Runas the Shamed
 			}),
 			n(BONUS_OBJECTIVES, sharedData({
+				-- #if BEFORE DF
 				["lockCriteria"] = { 1, "lvl", 45 },
+				-- #else
+				["lockCriteria"] = { 1, "lvl", 60 },
+				-- #endif
 				["sharedDescription"] = "This can be completed in party-sync with a character who is in Chromie Time for Legion.",
 			},{
 				-- TODO: Check SQ, also probably can't do after a certain level

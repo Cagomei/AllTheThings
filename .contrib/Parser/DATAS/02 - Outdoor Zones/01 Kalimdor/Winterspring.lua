@@ -468,6 +468,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(142357, {	-- Plans: Dawn's Edge (RECIPE!)
 							["timeline"] = { ADDED_7_1_5 },
 						}),
+						i(142351),	-- Blackrock Ruby (QI!)
+						i(142352),	-- Core of Bael'Gar (QI!)
+						i(142353),	-- Core of Roccor (QI!)
+						i(142354),	-- Essence of Incendius (QI!)
+						i(142355),	-- Essence of Magmus (QI!)
 					},
 				}),
 				q(28618, {	-- Boulder Delivery

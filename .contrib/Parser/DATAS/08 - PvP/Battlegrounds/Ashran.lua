@@ -237,16 +237,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 			}),
 			n(FACTIONS, {
-				faction(FACTION_VOLJINS_SPEAR, sharedDataSelf({ -- Vol'jin's Spear
-					["races"] = HORDE_ONLY,
-				},{
+				h(header(HEADERS.Faction, FACTION_VOLJINS_SPEAR, { -- Vol'jin's Spear
+					faction(FACTION_VOLJINS_SPEAR),
 					ach(9473, {	-- Vol'jin's Spear
 						un(REMOVED_FROM_GAME, title(285)),	-- <Name>, Spear of Vol'jin
 					}),
 				})),
-				faction(FACTION_WRYNNS_VANGUARD, sharedDataSelf({ -- Wyrnn's Vanguard
-					["races"] = ALLIANCE_ONLY,
-				},{
+				a(header(HEADERS.Faction, FACTION_WRYNNS_VANGUARD, { -- Wyrnn's Vanguard
+					faction(FACTION_WRYNNS_VANGUARD),
 					ach(9474, {	-- Wrynn's Vanguard
 						un(REMOVED_FROM_GAME, title(286)),	-- <Name>, Sword of Wrynn
 					}),

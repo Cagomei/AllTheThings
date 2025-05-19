@@ -1092,20 +1092,10 @@ local function ResolveSymlinkGroupAsync(group)
 	end
 end
 -- Fills the symlinks within a group by using an 'async' process to spread the filler function over multiple game frames to reduce stutter or apparent lag
-app.FillSymlinkAsync = function(o)
-	app.FillRunner.Run(ResolveSymlinkGroupAsync, o);
-end
--- Fills the symlinks within a group by using an 'async' process to spread the filler function over multiple game frames to reduce stutter or apparent lag
 -- NOTE: ONLY performs the symlink for 'achievement_criteria'
 app.FillAchievementCriteriaAsync = function(o)
 	local sym = o.sym
-	if not sym then
-		-- manually apply achievement_criteria symlink if no symlink exists
-		-- this is insane but actually works... bloated AF and needs refinement of checking for existing criteria etc.
-		-- o.sym = {{"achievement_criteria"}}
-		-- app.FillRunner.Run(ResolveSymlinkGroupAsync, o);
-		return
-	end
+	if not sym then return end
 
 	local sym = sym[1][1]
 	if sym ~= "achievement_criteria" then return end
@@ -1414,7 +1404,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 			-- app.PrintDebug("SourceLocation",text,FilterInGame(j),FilterSettings(parent),FilterCharacter(parent))
 			if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
 				-- doesn't meet current unobtainable filters from the Thing itself
-				if not FilterInGame(j) then
+				if not FilterInGame(parent) then
 					unobtainable[#unobtainable + 1] = text..UnobtainableTexture
 				else
 					-- something user would currently see in a list or not
@@ -1424,8 +1414,8 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 						sourcesToShow[#sourcesToShow + 1] = text..NotCurrentCharacterTexture
 					else
 						-- check if this needs a status icon even though it's being shown
-						right = GetUnobtainableTexture(FirstParent(j, "e", true) or FirstParent(j, "u", true) or j)
-							or (j.rwp and app.asset("status-prerequisites"))
+						right = GetUnobtainableTexture(FirstParent(parent, "e", true) or FirstParent(parent, "u", true) or parent)
+							or (parent.rwp and app.asset("status-prerequisites"))
 						if right then
 							sourcesToShow[#sourcesToShow + 1] = text.." |T" .. right .. ":0|t"
 						else
@@ -1945,6 +1935,7 @@ app.ThingKeys = {
 	factionID = true,
 	explorationID = true,
 	titleID = true,
+	campsiteID = true,
 	achievementID = true,	-- special handling
 	criteriaID = true,	-- special handling
 };
@@ -2125,7 +2116,7 @@ local function BuildSourceParent(group)
 			icon = 134441,
 			OnUpdate = app.AlwaysShowUpdate,
 			sourceIgnored = true,
-			skipFill = true,
+			skipFull = true,
 			SortPriority = -3.0,
 			g = {},
 			OnClick = app.UI.OnClick.IgnoreRightClick,
@@ -2274,7 +2265,7 @@ local function DefaultSyncCharacterData(allCharacters, key)
 		end
 	end
 end
--- Used for data which is primarily Account-learned, but has Character-learned exceptions
+-- Used for data which is defaulted as Account-learned, but has Character-learned exceptions
 local function PartialSyncCharacterData(allCharacters, key)
 	local characterData
 	local data = ATTAccountWideData[key];
@@ -2813,6 +2804,12 @@ function app:GetDataCache()
 			app.CreateDynamicHeader("speciesID", {
 				name = AUCTION_CATEGORY_BATTLE_PETS,
 				icon = app.asset("Category_PetJournal")
+			}),
+
+			-- Campsites
+			app.CreateDynamicHeader("campsiteID", {
+				name = WARBAND_SCENES,
+				icon = 6124644	-- app.asset("Category_Campsites") TODO
 			}),
 
 			-- Character Unlocks
@@ -4053,6 +4050,7 @@ customWindowUpdates.NWP = function(self, force)
 				{ id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") },
 				{ id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") },
 				{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
+				{ id = "campsiteID", name = WARBAND_SCENES, icon = 6124644 },	-- app.asset("Category_Campsites") TODO
 				{ id = "characterUnlock", name = CHARACTER .. " " .. UNLOCK .. "s", icon = app.asset("Category_ItemSets") },
 				{ id = "conduitID", name = GetSpellName(348869) .. " (" .. EXPANSION_NAME8 .. ")", icon = 3601566 },
 				{ id = "currencyID", name = CURRENCY, icon = app.asset("Interface_Vendor") },
@@ -4243,6 +4241,7 @@ customWindowUpdates.awp = function(self, force)	-- TODO: Change this to remember
 					{ id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") },
 					{ id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") },
 					{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
+					{ id = "campsiteID", name = WARBAND_SCENES, icon = 6124644 },	-- app.asset("Category_Campsites") TODO
 					{ id = "characterUnlock", name = CHARACTER .. " " .. UNLOCK .. "s", icon = app.asset("Category_ItemSets") },
 					{ id = "conduitID", name = GetSpellName(348869) .. " (" .. EXPANSION_NAME8 .. ")", icon = 3601566 },
 					{ id = "currencyID", name = CURRENCY, icon = app.asset("Interface_Vendor") },

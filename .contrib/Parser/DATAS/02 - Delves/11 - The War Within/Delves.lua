@@ -1457,6 +1457,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			i(224181),	-- Companion Experience (Tier 1-2)
 			i(224411),	-- Companion Experience (Tier 3)
 			i(224412),	-- Companion Experience (every tier)
+			i(239502, {["timeline"]={ ADDED_11_1_5 }}),	-- Big Wheel of Cheese (Hidden Cache)
 			i(227784, {["timeline"]={ REMOVED_11_1_0_SEASONSTART }}),	-- Delver's Bounty
 			i(233071, {["timeline"]={ ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },["isWeekly"]=true}),	-- Delver's Bounty (actual item, looted from Jettisoned Pile of Goblin-Bucks)
 			i(235628, {["timeline"]={ ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 }}),	-- Delver's Bounty (probably exist only to display rewards)
@@ -1976,7 +1977,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					i(235608, {	-- Nightfall Sanctum Campsite
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["g"] = { ws(5) },	-- Cultists' Quay (WS!)
+						["g"] = { campsite(5) },	-- Cultists' Quay (CS!)
 					}),
 				}),
 				n(ARMOR, {
@@ -2543,6 +2544,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				}),
 			}),
 			filter(MISC, {
+				i(233021, {	-- Grappling-Grabber 9000 (QI!)
+					["timeline"] = { ADDED_11_1_0 },
+				}),
 				i(213000),	-- Holy Flamethrower Torch (QI!)
 				i(213085, {	-- Lost Treasure (QI!)
 					["timeline"] = { ADDED_11_1_0 }
@@ -3481,11 +3485,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(90946, {["timeline"]={ADDED_11_1_7}}),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
 			q(90952, {["timeline"]={ADDED_11_1_7}}),	-- Energy Shield ability (spellID 1238258); after learning Titan Force Shield (spellID 1225004) in delve console
 			q(90948, {["timeline"]={ADDED_11_1_7}}),	-- Spark Burst ability (spellID 1238251); after using Miniature Titan Disc: Spark Burst (itemID 244900)
-			--q(, {["timeline"]={ADDED_11_1_7}}),	--  
-			--q(, {["timeline"]={ADDED_11_1_7}}),	--  
-			--q(, {["timeline"]={ADDED_11_1_7}}),	--  
-			--q(, {["timeline"]={ADDED_11_1_7}}),	--  
-			--q(, {["timeline"]={ADDED_11_1_7}}),	--  
+			--q(, {["timeline"]={ADDED_11_1_7}}),	--
+			--q(, {["timeline"]={ADDED_11_1_7}}),	--
+			--q(, {["timeline"]={ADDED_11_1_7}}),	--
+			--q(, {["timeline"]={ADDED_11_1_7}}),	--
+			--q(, {["timeline"]={ADDED_11_1_7}}),	--
 		})),
 		q(85651),	-- Triggers with 'Delver's Call: The Sinkhole' (questID 83767)
 		q(85719),	-- Unknown. Seems to pop very rarely on completion of a delve

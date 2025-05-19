@@ -496,6 +496,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 45343 },	-- A Curious Contagion
 						["provider"] = { "n", 118528 },	-- Aelthalyste
 						["coord"] = { 30.0, 55.9, HIGHMOUNTAIN },
+						["g"] = {
+							i(143678),	-- Shimmering Dust (QI!)
+						},
 					}),
 					q(45347, {	-- Crafting a Cure
 						["sourceQuests"] = {

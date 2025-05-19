@@ -706,12 +706,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(144443),	-- Overcharged Fel Core (QI!)
+						},
 					}),
 					q(46240, {	-- Give Me Fuel, Give Me Fire
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(144444),	-- Owlbeast Blood (QI!)
+						},
 					}),
 					q(46238, {	-- If You Build It
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
@@ -738,6 +744,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 46241 },	-- The Minions of Hel'nurath
 						["maps"] = { BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(144445),	-- Xorothian Calling Stone (QI!)
+						},
 					}),
 					q(46243, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wrathsteed of Xoroth
 						["sourceQuests"] = { 46242 },	-- The Dreadlord's Calling

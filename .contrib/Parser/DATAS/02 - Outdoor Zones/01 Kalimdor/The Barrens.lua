@@ -4726,8 +4726,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Incredibly rare drop from Fray Island.",
 					-- #else
 					["description"] = "While technically this shirt does still drop in retail, the drop rate is reduced from fairly common to 1 in 12k with the Cataclysm. For the purposes of collecting, get it now and stock up on extras!",
-					["timeline"] = { REMOVED_4_0_3 },
 					-- #endif
+					["timeline"] = { REMOVED_4_0_3 },	-- Likely Removed -- 13th May 2025 -- Goldenshacal
+														-- If somebody gets it, we can remove the timeline & set a note here since people are asking every couple months
 					["crs"] = {
 						-- #if BEFORE 4.0.3
 						3381,	-- Southsea Brigand

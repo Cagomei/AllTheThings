@@ -1,0 +1,13 @@
+3.0.1.8622
+r(51309),	-- Tailoring
+3.0.1.8874
+r(56048),	-- Duskweave Boots
+
+
+
+
+Missing in Tailoring
+
+3.0.1.8874
+r(56017),	-- Deathchill Cloak
+r(56048),	-- Duskweave Boots

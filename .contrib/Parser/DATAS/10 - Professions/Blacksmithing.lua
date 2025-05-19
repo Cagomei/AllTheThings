@@ -625,6 +625,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["maps"] = { 703, 704, 705 },	-- Halls of Valor
 			["repeatable"] = true,
 			["g"] = {
+				i(146703),	-- Godfighter Hammer (QI!)
 				i(146702),	-- White Lightningsteel (QI!)
 			},
 		})),
@@ -635,6 +636,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["maps"] = { 806, 807, 808 },	-- Trial of Valor
 			["repeatable"] = true,
 			["g"] = {
+				i(146707),	-- Hellslayer Hammer (QI!)
 				i(146706),	-- Frostveined Shale (QI!)
 			},
 		})),
@@ -649,9 +651,9 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["coord"] = { 41.1, 59.3, BROKEN_SHORE },
 			["repeatable"] = true,
 			["g"] = {
-				i(146714),	-- Hammer of Forgotten Heroes
 				i(147443),	-- Carrying Case For Hammer of Forgotten Heroes (QI!)
 				i(147207),	-- Legendary Blacksmithing Supplies (QI!)
+				i(146714),	-- Hammer of Forgotten Heroes
 			},
 		})),
 		------ 7.3.0 ------

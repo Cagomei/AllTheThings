@@ -4026,9 +4026,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["repeatable"] = true,	-- probably yearly, Blizzard API says it's daily, in practice it unflaggs right after completion
 			["maps"] = { 1644 },	-- The Ember Court
 			["groups"] = {
-				i(181442, {	-- Vision of Sire Denathrius
-					["questID"] = 61458,
-				}),
+				i(181442),	-- Visions of Sire Denathrius (EC!)
 			},
 		})),
 		q(76075, {	-- A Ghostly Message
@@ -4252,28 +4250,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 44.2, 51.0, LUNARFALL },
 			},
 			["groups"] = {
-				i(128664, {	-- Creepy Crawlers
+				i(128664, {	-- Creepy Crawlers (CI!)
 					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
-					["questID"] = 39759,
 				}),
-				i(128660, {	-- Ghoulish Guises
+				i(128660, {	-- Ghoulish Guises (CI!)
 					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
-					["questID"] = 39758,
 				}),
-				i(128661, {	-- Hallow's Glow
+				i(128661, {	-- Hallow's Glow (CI!)
 					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
-					["questID"] = 39612,
 				}),
-				i(128662, {	-- Seer's Invitation
+				i(128662, {	-- Seer's Invitation (CI!)
 					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
-					["questID"] = 39613,
 				}),
 				i(33226, {	-- Tricky Treat
 					["cost"] = { { "i", 128658, 1 }, },	-- 1x Spooky Supplies
 				}),
-				i(128663, {	-- Witch's Brew
+				i(128663, {	-- Witch's Brew (CI!)
 					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
-					["questID"] = 39611,
 				}),
 			},
 		}),

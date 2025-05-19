@@ -689,6 +689,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 108247 },	-- Archmage Kalec
 						["coord"] = { 56.2, 37.9, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(146404),	-- Coronet of the Lu'minellia (QI!)
+							i(146405),	-- Crystallized Silithid Essence (QI!)
+							i(146402),	-- Erno's Enigma (QI!)
+							i(146409),	-- Nightborne Soulstone (QI!)
+							i(146403),	-- Twilight Device (QI!)
+						},
 					}),
 					q(46338, {	-- A Creative Solution
 						["sourceQuest"] = 46335,	-- The Vault of the Tirisgarde
@@ -713,6 +720,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 121357 },	-- Arcanist Ryanna
 						["coord"] = { 55.8, 41.9, SURAMAR },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(142241),	-- Unusual Crystal (QI!)
+						},
 					}),
 					q(46345, {	-- Into the Hornet's Nest
 						["sourceQuests"] = {
@@ -728,6 +738,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 116321 },	-- Arcanist Ryanna
 						["coord"] = { 47.1, 23.5, 691 },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(142212),	-- Nighborne Construct Progenitor (QI!)
+						},
 					}),
 					q(44770, {	-- Secrets of the Shal'dorei
 						["sourceQuest"] = 46345,	-- Into the Hornet's Nest
@@ -761,6 +774,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 117331 },	-- Aethas Sunreaver
 						["coord"] = { 49.2, 18.6, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(143795),	-- Nightborne Soulstone (QI!)
+						},
 					}),
 					q(46000, {	-- Arming Dalaran
 						["sourceQuests"] = {

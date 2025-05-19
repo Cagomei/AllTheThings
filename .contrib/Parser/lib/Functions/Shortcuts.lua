@@ -794,6 +794,7 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 end
 achWithRep = function(id, factionID, t)					-- Create an ACHIEVEMENT Object with getting Exalted with a Faction as a requirement.
 	t = ach(id, t);
+	t.minReputation = { factionID, EXALTED }
 	if t then
 		-- #if ANYCLASSIC
 		-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
@@ -901,8 +902,8 @@ azewrongItem = function(id, t)							-- Create an Item which is marked as having
 	t.customCollect = { "!HOA" };
 	return t;
 end
-ws = function(id, t)
-	return struct("warbandSceneID", id, t);
+campsite = function(id, t)
+	return struct("campsiteID", id, t);
 end
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
 	return struct("speciesID", id, t);

@@ -456,22 +456,22 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			crit(20582, { ["provider"] = { "i", 74653 } } ),	-- Steamed Crab Surprise
 			crit(20583, { ["provider"] = { "i", 74656 } } ),	-- Chun Tian Spring Rolls
 		}),
-		faction(1357, {		-- Nomi (Faction)
-			["description"] = "Summon Nomi once per day, complete the daily he gives and you'll soon (42+ days later), earn your Apron.\n\nThen this little bastard will learn nothing and burn all of your food in Dalaran.",
-			["cr"] = 64337,	-- Nomi (Child)
-			["groups"] = {
-				q(31820, {	-- A Present for Teacher
-					["providers"] = {
-						{ "n", 64337 },	-- Nomi
-						{ "i", 86425 },	-- Cooking School Bell
-					},
-					["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.",
-					["minReputation"] = { 1357, 6 },	-- Level 6, Best Friend
-					["groups"] = {
-						i(86468),	-- Apron
-					},
-				}),
-			},
+		header(HEADERS.Faction, 1357, {	-- Nomi (Faction)
+			faction(1357, {
+				["description"] = "Summon Nomi once per day, complete the daily he gives and you'll soon (42+ days later), earn your Apron.\n\nThen this little bastard will learn nothing and burn all of your food in Dalaran.",
+				["cr"] = 64337,	-- Nomi (Child)
+			}),
+			q(31820, {	-- A Present for Teacher
+				["providers"] = {
+					{ "n", 64337 },	-- Nomi
+					{ "i", 86425 },	-- Cooking School Bell
+				},
+				["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.",
+				["minReputation"] = { 1357, 6 },	-- Level 6, Best Friend
+				["groups"] = {
+					i(86468),	-- Apron
+				},
+			}),
 		}),
 		n(QUESTS, {
 			q(31281, {	-- So You Want to Be a Chef...

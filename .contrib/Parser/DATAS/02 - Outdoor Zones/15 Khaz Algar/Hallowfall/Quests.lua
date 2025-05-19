@@ -1028,10 +1028,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(83279, {	-- Prove One's Mettle
-					["description"] = "This quest is only obtainable as either a Death Knight, Demon Hunter, Shadow Priest, or Warlock or as an Undead or Void Elf. It will be properly filtered by ATT on these criteria soon.",
+					["description"] = "This quest is only obtainable as either a Death Knight, Demon Hunter, Shadow Priest, or Warlock or as an Undead or Void Elf.",
 					["sourceQuests"] = { 83247 },	-- Suspicious Minds
 					["provider"] = { "n", 225879 },	-- Derill Fayn
 					["coord"] = { 68.1, 44.2, HALLOWFALL },
+					["classes"] = { DEATHKNIGHT, DEMONHUNTER, PRIEST, WARLOCK },
+					["races"] = { UNDEAD, VOIDELF },
+					["OnInit"] = FUNCTION_TEMPLATES.OnInit.ClassORRaceRequirements,
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.15, {	-- Memories of the Sky

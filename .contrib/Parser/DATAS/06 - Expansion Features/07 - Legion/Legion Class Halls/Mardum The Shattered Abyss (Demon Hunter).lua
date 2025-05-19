@@ -660,6 +660,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 45385 },	-- We Must be Prepared!
 						["provider"] = { "n", 117709 },	-- Lady S'theno
 						["coord"] = { 52.1, 21.3, BROKEN_SHORE },
+						["g"] = {
+							i(143918),	-- Stabilizing Crystal (QI!)
+						},
 					}),
 					q(46266, {	-- Return of the Slayer
 						["sourceQuests"] = {

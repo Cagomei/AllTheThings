@@ -1056,7 +1056,10 @@ root(ROOTS.Zones, {
 						PRIEST,		-- Shadow
 						WARLOCK,	-- Affliction
 					},
-					["lvl"] = 110,
+					["lvl"] = 45,
+					["g"] = {
+						i(143496),	-- Nethersworn Manifesto (QI!)
+					},
 				}),
 				q(47042, {	-- Shadow: The Twisted Twin
 					["sourceQuests"] = {
@@ -1189,7 +1192,10 @@ root(ROOTS.Zones, {
 						PRIEST,		-- Shadow
 						WARLOCK,	-- Affliction
 					},
-					["lvl"] = 110,
+					["lvl"] = 45,
+					["g"] = {
+						i(143496),	-- Nethersworn Manifesto (QI!)
+					},
 				}),
 				q(43331, {	-- Time to Collect
 					["sourceQuests"] = { 42483 },	-- Put It All on Red

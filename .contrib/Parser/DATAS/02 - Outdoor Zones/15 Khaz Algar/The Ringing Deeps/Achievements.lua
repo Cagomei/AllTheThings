@@ -20,6 +20,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40628),		-- Notable Machines (automated)
 			ach(40473),		-- Not So Quick Fix (automated)
 			ach(40731),		-- Panhandled
+			ach(41187, {	-- Rage Aside the Machine
+				["timeline"] = { ADDED_11_0_7 },
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					40837,	-- Adventurer of The Ringing Deeps
+					40662,	-- It's Not Much, But It's Honest Work
+					40473,	-- Not So Quick Fix
+					40628,	-- Notable Machines
+					40585,	-- Super Size Snuffling
+					40475,	-- To All the Slimes I Love
+					40724,	-- Treasures of The Ringing Deeps
+				}},
+			}),
 			ach(40504),		-- Rocked to Sleep (automated)
 			ach(40678, {	-- Skyriding Glyphs: Abyssal Excavation
 				["coord"] = { 63.7, 95.0, THE_RINGING_DEEPS },

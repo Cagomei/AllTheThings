@@ -7,6 +7,7 @@ local Things = {
 	"Achievements",
 	"AzeriteEssences",
 	"BattlePets",
+	"Campsites",
 	"CharacterUnlocks",
 	"Conduits",
 	"DeathTracker",
@@ -28,7 +29,6 @@ local Things = {
 	"Titles",
 	"Toys",
 	"Transmog",
-	--"WarbandScenes",
 }
 local GeneralSettingsBase = {
 	__index = {
@@ -60,6 +60,7 @@ local GeneralSettingsBase = {
 		["Thing:Achievements"] = true,
 		["Thing:AzeriteEssences"] = app.GameBuildVersion >= 80000,
 		["Thing:BattlePets"] = true,
+		["Thing:Campsites"] = app.GameBuildVersion >= 110100,
 		["Thing:CharacterUnlocks"] = app.IsRetail,	-- CRIEVE NOTE: This class might be up to the chopping block with a thing I have on my todo list. I'll leave it for now.
 		["Thing:Conduits"] = app.GameBuildVersion >= 100000,
 		["Thing:MountMods"] = app.GameBuildVersion >= 100000,
@@ -80,7 +81,6 @@ local GeneralSettingsBase = {
 		["Thing:Titles"] = true,
 		["Thing:Toys"] = true,
 		["Thing:Transmog"] = app.GameBuildVersion >= 40000,
-		--["Thing:WarbandScenes"] = app.GameBuildVersion >= 110100,
 		["DeathTracker"] = app.GameBuildVersion < 40000,
 		["Only:RWP"] = app.GameBuildVersion < 40000,
 		["Skip:AutoRefresh"] = false,
@@ -261,32 +261,28 @@ settings.Initialize = function(self)
 	self.sliderPercentagePrecision:SetValue(self:GetTooltipSetting("Precision"))
 	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"))
 
-	app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
+	self:UpdateMode()
+	-- TODO: need to properly use other libraries to create minimap button if delayed...
+	-- but other addons only handle pre-existing minimap buttons when they load, so for now move back to the order it was
 	app.SetMinimapButtonSettings(
 		self:GetTooltipSetting("MinimapButton"),
 		self:GetTooltipSetting("MinimapSize"));
-	self:UpdateMode()
 
-	if self:GetTooltipSetting("Auto:MainList") then
-		app.AddEventHandler("OnInit", function()
+	app.AddEventHandler("OnInit", function()
+		if self:GetTooltipSetting("Auto:MainList") then
 			app:GetWindow("Prime"):SetVisible(true)
-		end)
-	end
-	if self:GetTooltipSetting("Auto:MiniList") then
-		app.AddEventHandler("OnInit", function()
+		end
+		if self:GetTooltipSetting("Auto:MiniList") then
 			app:GetWindow("CurrentInstance"):SetVisible(true)
-		end)
-	end
-	if self:GetTooltipSetting("Auto:RaidAssistant") then
-		app.AddEventHandler("OnInit", function()
+		end
+		if self:GetTooltipSetting("Auto:RaidAssistant") then
 			app:GetWindow("RaidAssistant"):SetVisible(true)
-		end)
-	end
-	if self:GetTooltipSetting("Auto:WorldQuestsList") then
-		app.AddEventHandler("OnInit", function()
+		end
+		if self:GetTooltipSetting("Auto:WorldQuestsList") then
 			app:GetWindow("WorldQuests"):SetVisible(true)
-		end)
-	end
+		end
+		app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
+	end)
 
 	if settings.RefreshActiveInformationTypes then
 		settings.RefreshActiveInformationTypes()

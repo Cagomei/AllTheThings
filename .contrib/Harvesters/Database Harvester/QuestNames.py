@@ -6,6 +6,7 @@ from packaging import version
 from ThingTypes import (
     DATAS_FOLDER,
     DELIMITER,
+    FLAVOR_FOLDERS
 )
 
 
@@ -117,7 +118,7 @@ def get_available_expansions(patch: str) -> dict[str, str]:
         print("11.1.7 :", patch)
     return expansion_dict
 
-def get_quest_names() -> None:
+def get_quest_names(flavor: str) -> None:
     """This function gives questIDs names based on wowhead"""
     expansion_dict: dict[str, str] = {
         "Retail": "",
@@ -141,6 +142,7 @@ def get_quest_names() -> None:
     missing_path = Path(
         DATAS_FOLDER,
         "00 - Missing DB",
+        f"{FLAVOR_FOLDERS[flavor]}",
         "MissingQuests.txt",
     )
     with open(missing_path, "r") as missing_file:

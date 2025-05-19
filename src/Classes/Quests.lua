@@ -2418,7 +2418,7 @@ if app.IsRetail then
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = app.UI.OnClick.IgnoreRightClick,
 				-- sourceIgnored = true,
-				skipFill = true,
+				skipFull = true,
 				skipContains = true,
 				SortPriority = 1.0,	-- follow any raw content in group
 				SortType = "Total",

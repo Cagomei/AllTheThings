@@ -869,5 +869,13 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(234368),	-- Worshipper's Poniard
 			}),
 		})),
+
+		-- 11.1.5
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+			n(ARMOR, {
+				-- 11.1.5.60568
+				i(239003),	-- Feathered Mantle of the Guardian
+			}),
+		})),
 	}),
 }));

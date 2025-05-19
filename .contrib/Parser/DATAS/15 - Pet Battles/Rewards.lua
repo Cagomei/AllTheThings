@@ -15,12 +15,12 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 		i(92681),	-- Flawless Undead Battle-Stone
 	})),
 	petbattle(n(REWARDS, {
-		pvp(i(165944, {	-- A Shady Message [A]
+		pvp(i(165944, {	-- A Shady Message [A] (CI!)
 			["description"] = "Rewarded from winning PvP Pet Battles",
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { ADDED_8_1_0 },
 		})),
-		pvp(i(166242, {	-- A Shady Message [H]
+		pvp(i(166242, {	-- A Shady Message [H] (CI!)
 			["description"] = "Rewarded from winning PvP Pet Battles",
 			["races"] = HORDE_ONLY,
 			["timeline"] = { ADDED_8_1_0 },

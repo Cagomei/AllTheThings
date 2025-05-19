@@ -691,6 +691,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 74.4, 43.3, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(9596),	-- Faerie Dragon Muisek (QI!)
+						i(9620),	-- Faerie Dragon Muisek Vessel (QI!)
+					},
 				}),
 				q(3125, {	-- Faerie Dragon Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
@@ -911,6 +915,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.2, 48.0, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(9595),	-- Hippogryph Muisek (QI!)
+						i(9619),	-- Hippogryph Muisek Vessel (QI!)
+					},
 				}),
 				q(3124, {	-- Hippogryph Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
@@ -1220,6 +1228,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 74.4, 43.3, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(9597),	-- Mountain Giant Muisek (QI!)
+						i(9621),	-- Mountain Giant Muisek Vessel (QI!)
+					},
 				}),
 				q(3127, {	-- Mountain Giant Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
@@ -1319,6 +1331,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131423, {	-- Spaulders of the Ogre-Nabber
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(52833),	-- Modified Soul Orb (QI!)
 					},
 				}),
 				q(25344, {	-- Ogre Abduction [H]
@@ -1346,6 +1360,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131418, {	-- Spaulders of the Ogre-Nabber
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(52833),	-- Modified Soul Orb (QI!)
 					},
 				}),
 				q(27134, {	-- Ogre in the Field
@@ -1566,7 +1582,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25398, {	-- Sealing the Dream [A]
 					["providers"] = {
 						{ "n", 40032 },	-- Telaron Windflight
-						{ "i", 52576 },	-- Ysondre's Tear
+						{ "i", 52576 },	-- Ysondre's Tear (QI!) not prov
 					},
 					["sourceQuests"] = {
 						25396,	-- Tears of Stone
@@ -1590,7 +1606,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25250, {	-- Sealing the Dream [H]
 					["providers"] = {
 						{ "n", 39377 },	-- Konu Runetotem
-						{ "i", 52576 },	-- Ysondre's Tear
+						{ "i", 52576 },	-- Ysondre's Tear (QI!) not prov
 					},
 					["sourceQuests"] = {
 						25237,	-- Tears of Stone
@@ -1811,6 +1827,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.2, 48.0, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(9594),	-- Beast Muisek (QI!)
+						i(9618),	-- Beast Muisek Vessel (QI!)
+					},
 				}),
 				q(3123, {	-- Testing the Vessel
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
@@ -1856,6 +1876,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(54950, {	-- Swiftstride Boots
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(9266),	-- Woodpaw Battle Plans (QI!)
 					},
 				}),
 				q(2903, {	-- The Battle Plans
@@ -1907,6 +1929,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.2, 48.0, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(55175) },	-- Hippogryph Muisek Vessel (QI!)
 				}),
 				q(2844, {	-- The Giant Guardian
 					["qg"] = 7765,	-- Rockbiter
@@ -2384,6 +2407,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 74.4, 43.3, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(9593),	-- Treant Muisek (QI!)
+						i(9606),	-- Treant Muisek Vessel (QI!)
+					},
 				}),
 				q(3126, {	-- Treant Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i

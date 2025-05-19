@@ -83,6 +83,7 @@ HeaderAssignments = {
 	["C.H.E.T.T."] = -1001068,
 	["Cache of Madness"] = -1000190,
 	["Call of the Scarab"] = -1000199,
+	["Campsites"] = -1001190,
 	["Capital Gardens"] = -1000175,
 	["Captains"] = -1000166,
 	["Cartels of Undermine"] = -1001065,
@@ -656,4 +657,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001188;
+NextHeaderID = -1001191;
