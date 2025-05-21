@@ -1175,9 +1175,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["questID"] = 75186,
 				["g"] = {
 					i(204475),	-- Busted Wyrmhole Generator
-					i(205954, {	-- Three-Dimensional Compass
-						["questID"] = 76017,
-					}),
+					i(205954),	-- Three-Dimensional Compass (CI!)
 				},
 			})),
 			o(392582,	-- Defective Survival Pack

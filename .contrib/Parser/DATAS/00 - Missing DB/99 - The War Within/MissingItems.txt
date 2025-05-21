@@ -34832,8 +34832,6 @@ i(192558),	-- Emerald Tear
 i(202083),	-- Tyler's Test Box
 i(202103),	-- Immaculate Sac of Swog Treasures
 i(202104),	-- Weighted Sac of Swog Treasures
-10.1.0.48661
-i(205451),	-- Flawless Crystal Scale
 10.2.0.51297
 i(210768),	-- Viridescent Bouquet of Aspect's Dreaming Crests \\ Bouquet of Aspect's Dreaming Crests
 10.2.0.51425

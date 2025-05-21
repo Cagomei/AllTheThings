@@ -375,15 +375,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},{
 					q(88870, {	-- Honored with the Bilgewater Cartel
 						["minReputation"] = { FACTION_TWW_BILGEWATER_CARTEL, HONORED },	-- Bilgewater Cartel Honored
-						["g"] = { i(234745) },	-- Bilgewater's Trove (Green)
+						["g"] = { i(234745) },	-- Bilgewater's Trove (CI!) (Green)
 					}),
 					q(88871, {	-- Revered with the Bilgewater Cartel
 						["minReputation"] = { FACTION_TWW_BILGEWATER_CARTEL, REVERED },	-- Bilgewater Cartel Revered
-						["g"] = { i(235258) },	-- Bilgewater's Trove (Blue)
+						["g"] = { i(235258) },	-- Bilgewater's Trove (CI!) (Blue)
 					}),
 					q(88872, {	-- Exalted with the Bilgewater Cartel
 						["minReputation"] = { FACTION_TWW_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel Exalted
-						["g"] = { i(235259) },	-- Bilgewater's Trove (Epic)
+						["g"] = { i(235259) },	-- Bilgewater's Trove (CI!) (Epic)
 					}),
 					q(85806, {	-- Exalted with the Bilgewater Cartel (Paragon)
 						["minReputation"] = { FACTION_TWW_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel Exalted
@@ -441,15 +441,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},{
 					q(88876, {	-- Honored with the Blackwater Cartel
 						["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, HONORED },	-- Blackwater Cartel Honored
-						["g"] = { i(234744) },	-- Blackwater's Trove (Green)
+						["g"] = { i(234744) },	-- Blackwater's Trove (CI!) (Green)
 					}),
 					q(88877, {	-- Revered with the Blackwater Cartel
 						["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, REVERED },	-- Blackwater Cartel Revered
-						["g"] = { i(235260) },	-- Blackwater's Trove (Blue)
+						["g"] = { i(235260) },	-- Blackwater's Trove (CI!) (Blue)
 					}),
 					q(88878, {	-- Exalted with the Blackwater Cartel
 						["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, EXALTED },	-- Blackwater Cartel Exalted
-						["g"] = { i(235261) },	-- Blackwater's Trove (Purple)
+						["g"] = { i(235261) },	-- Blackwater's Trove (CI!) (Purple)
 					}),
 					q(85807, {	-- Exalted with the Blackwater Cartel (Paragon)
 						["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, EXALTED },	-- Blackwater Cartel Exalted
@@ -507,15 +507,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},{
 					q(88873, {	-- Honored with the Steamwheedle Cartel
 						["minReputation"] = { FACTION_TWW_STEAMWHEEDLE_CARTEL, HONORED },	-- Steamwheedle Cartel Honored
-						["g"] = { i(235262) },	-- Steamwheedle's Trove (Green)
+						["g"] = { i(235262) },	-- Steamwheedle's Trove (CI!) (Green)
 					}),
 					q(88874, {	-- Revered with the Steamwheedle Cartel
 						["minReputation"] = { FACTION_TWW_STEAMWHEEDLE_CARTEL, REVERED },	-- Steamwheedle Cartel Revered
-						["g"] = { i(234743) },	-- Steamwheedle's Trove (Blue)
+						["g"] = { i(234743) },	-- Steamwheedle's Trove (CI!) (Blue)
 					}),
 					q(88875, {	-- Exalted with the Steamwheedle Cartel
 						["minReputation"] = { FACTION_TWW_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel Exalted
-						["g"] = { i(235263) },	-- Steamwheedle's Trove (Purple)
+						["g"] = { i(235263) },	-- Steamwheedle's Trove (CI!) (Purple)
 					}),
 					q(85809, {	-- Exalted with the Steamwheedle Cartel (Paragon)
 						["minReputation"] = { FACTION_TWW_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel Exalted
@@ -573,15 +573,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},{
 					q(88879, {	-- Honored with the Venture Co
 						["minReputation"] = { FACTION_TWW_VENTURE_CO, HONORED },	-- Venture Co Honored
-						["g"] = { i(234746) },	-- Venture Co. Trove (Green)
+						["g"] = { i(234746) },	-- Venture Co.'s Trove (CI!) (Green)
 					}),
 					q(88880, {	-- Revered with the Venture Co
 						["minReputation"] = { FACTION_TWW_VENTURE_CO, REVERED },	-- Venture Co Revered
-						["g"] = { i(235264) },	-- Venture Co. Trove (Blue)
+						["g"] = { i(235264) },	-- Venture Co.'s Trove (CI!) (Blue)
 					}),
 					q(88881, {	-- Exalted with the Venture Co
 						["minReputation"] = { FACTION_TWW_VENTURE_CO, EXALTED },	-- Venture Co Exalted
-						["g"] = { i(235265) },	-- Venture Co. Trove (Purple)
+						["g"] = { i(235265) },	-- Venture Co.'s Trove (CI!) (Purple)
 					}),
 					q(85810, {	-- Exalted with the Venture Co (Paragon)
 						["minReputation"] = { FACTION_TWW_VENTURE_CO, EXALTED },	-- Venture Co Exalted

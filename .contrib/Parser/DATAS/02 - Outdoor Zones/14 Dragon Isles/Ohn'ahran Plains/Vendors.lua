@@ -34,9 +34,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Pet!",
 				["coord"] = { 61.7, 41.0, OHNAHRAN_PLAINS },
 				["g"] = {
-					i(195453, {	-- Ludo's Stash Map
-						["questID"] = 67718,
-					}),
+					i(195453),	-- Ludo's Stash Map (CI!)
 				},
 			}),
 			n(190015, {	-- Ohn Meluun

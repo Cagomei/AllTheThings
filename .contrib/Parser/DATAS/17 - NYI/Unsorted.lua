@@ -473,16 +473,7 @@ root(ROOTS.Unsorted, {
 				i(238415),	-- Coldflame Bracer \\ Lavaborn Azure Bracer
 				i(238416),	-- Coldflame Cloak \\ Lavaborn Azure Cloak
 				i(238418),	-- Ensemble: Coldflame Battlegear \\ Ensemble: Lavaborn Azure Attire
-				i(238419),	-- Lavaborn Emerald Cinch
-				i(238420),	-- Lavaborn Emerald Mantle
-				i(238421),	-- Lavaborn Emerald Pants
-				i(238422),	-- Lavaborn Emerald Helm
-				i(238423),	-- Lavaborn Emerald Glove
-				i(238424),	-- Lavaborn Emerald Treads
-				i(238425),	-- Lavaborn Emerald Chestguard
-				i(238426),	-- Lavaborn Emerald Bracer
-				i(238427),	-- Lavaborn Emerald Cloak
-				i(238428),	-- Ensemble: Lavaborn Emerald Attire
+
 				i(238429),	-- Lavaborn Cinch \\ Lavaborn Ruby Cinch
 				i(238430),	-- Lavaborn Mantle \\ Lavaborn Ruby Mantle
 				i(238431),	-- Lavaborn Pants \\ Lavaborn Ruby Pants
@@ -512,7 +503,6 @@ root(ROOTS.Unsorted, {
 				i(238894),	-- Lavaborn Barb \\ Lavaborn Ruby Blade
 				i(238895),	-- Lavaborn Citrine Blade
 				i(238947),	-- Arcano-Stone Greathelm \\ Blue Inferno Helm
-				i(238948),	-- Fel Inferno Helm \\ Green Inferno Helm
 				i(238949),	-- Inferno Helm \\ Yellow Inferno Helm
 				i(238950),	-- Molten Inferno Helm \\ Red Inferno Helm
 				i(238951),	-- Coldflame Burner \\ Blue Flame Burner
@@ -532,7 +522,6 @@ root(ROOTS.Unsorted, {
 				i(238901),	-- Winter Harvesthog
 				i(238902),	-- Autumn Harvesthog
 				i(238941),	-- Coldflame Cormaera \\ Lavaborn Azure Chimaera
-				i(238966),	-- Felborn Cormaera \\ Lavaborn Emerald Chimaera
 				i(238967),	-- Molten Cormaera \\ Lavaborn Ruby Chimaera
 				i(238968),	-- Lavaborn Cormaera \\ Lavaborn Citrine Chimaera
 

@@ -3104,91 +3104,91 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			n(231352, {	-- Notary Grably <Titles of Olde>
 				["coord"] = { 63.3, 50.7, TANARIS },
 				["g"] = {
-					i(230264, {	-- Bronze Celebration Titles: Broken Isles Enthusiast
+					i(230264, {	-- Bronze Celebration Titles: Broken Isles Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(587),	-- Broken Isles Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(230261, {	-- Bronze Celebration Titles: Cataclysm Enthusiast
+					i(230261, {	-- Bronze Celebration Titles: Cataclysm Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(584),	-- Cataclsym Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(230258, {	-- Bronze Celebration Titles: Classic Enthusiast
+					i(230258, {	-- Bronze Celebration Titles: Classic Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(581),	-- Classic Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(230263, {	-- Bronze Celebration Titles: Draenor Enthusiast
+					i(230263, {	-- Bronze Celebration Titles: Draenor Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(586),	-- Draenor Enthusias <Name> (TITLE!)
 						},
 					}),
-					i(230268, {	-- Bronze Celebration Titles: Dragon Isles Enthusiast
+					i(230268, {	-- Bronze Celebration Titles: Dragon Isles Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(591),	-- Dragon Isles Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(229826, {	-- Bronze Celebration Titles: Grizzly Hills Hiker
+					i(229826, {	-- Bronze Celebration Titles: Grizzly Hills Hiker (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(577),	-- Grizzly Hills Hiker <Name> (TITLE!)
 						},
 					}),
-					i(231833, {	-- Bronze Celebration Titles: Karazhan Graduate
+					i(231833, {	-- Bronze Celebration Titles: Karazhan Graduate (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(596),	-- Karazhan Graduate <Name> (TITLE!)
 						},
 					}),
-					i(230266, {	-- Bronze Celebration Titles: Kul Tiras Enthusiast
+					i(230266, {	-- Bronze Celebration Titles: Kul Tiras Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(589),	-- Kul Tiras Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(231832, {	-- Bronze Celebration Titles: Molten Core Prospector
+					i(231832, {	-- Bronze Celebration Titles: Molten Core Prospector (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(595),	-- Molten Core Prospector <Name> (TITLE!)
 						},
 					}),
-					i(230260, {	-- Bronze Celebration Titles: Northrend Enthusiast
+					i(230260, {	-- Bronze Celebration Titles: Northrend Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(583),	-- Northrend Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(230259, {	-- Bronze Celebration Titles: Outland Enthusiast
+					i(230259, {	-- Bronze Celebration Titles: Outland Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(582),	-- Outland Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(230262, {	-- Bronze Celebration Titles: Pandaria Enthusiast
+					i(230262, {	-- Bronze Celebration Titles: Pandaria Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(585),	-- Pandaria Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(229827, {	-- Bronze Celebration Titles: Plaguelands Survivor
+					i(229827, {	-- Bronze Celebration Titles: Plaguelands Survivor (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(578),	-- Plaguelands Survivor <Name> (TITLE!)
 						},
 					}),
-					i(230267, {	-- Bronze Celebration Titles: Shadowlands Enthusiast
+					i(230267, {	-- Bronze Celebration Titles: Shadowlands Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(590),	-- Shadowlands Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(230265, {	-- Bronze Celebration Titles: Zuldazar Enthusiast
+					i(230265, {	-- Bronze Celebration Titles: Zuldazar Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(588),	-- Zuldazar Enthusiast <Name> (TITLE!)

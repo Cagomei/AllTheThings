@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			o(504096, {	-- Crumpled Schematics
 				["coord"] = { 42.3, 82.2, UNDERMINE },
 				["questID"] = 86487,
-				["g"] = { i(235037) },	-- Crumpled Schematic: Wormhole Generator: Undermine
+				["g"] = { i(235037) },	-- Crumpled Schematic: Wormhole Generator: Undermine (CI!)
 			}),
 			o(493305, {	-- Exploded Plunger
 				["coord"] = { 49.6, 90.2, UNDERMINE },

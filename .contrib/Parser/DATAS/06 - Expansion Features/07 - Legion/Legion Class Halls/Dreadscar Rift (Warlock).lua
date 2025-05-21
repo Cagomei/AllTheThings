@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 			["g"] = {
 				n(ARTIFACTS, {
 					cl(WARLOCK, AFFLICTION, {
-						i(140764, {	-- Grimoire of the First Necrolyte
+						i(140764, {	-- Grimoire of the First Necrolyte (QS!)
 							["description"] = "Any demon can drop this.",
 						}),
 						q(44083, {	-- The Grimoire of the First Necrolyte

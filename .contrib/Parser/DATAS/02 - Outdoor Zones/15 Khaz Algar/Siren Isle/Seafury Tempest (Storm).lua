@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				i(234379, {	-- Crackleroar (PET!)
 					["crs"] = { 230827 },	-- Stormtouched Pridetalon
 				}),
-				i(233498, {	-- Storminfused Snapdragon Treat
+				i(233498, {	-- Storminfused Snapdragon Treat (CI!)
 					["description"] = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from crab mobs during tempest.",
 					["crs"] = {
 						231986,	-- Deepwater Matriarch

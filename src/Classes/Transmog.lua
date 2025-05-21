@@ -1082,6 +1082,9 @@ local function BuildSourceInformationForPopout(group)
 		if otherSourceID ~= group.sourceID then
 			local shared = app.SearchForObject("sourceID", otherSourceID, "key");
 			if shared then
+				-- TODO: this causes the object to lose it's source and lead to other relative data issues in some situations
+				-- make sure that consoldiated 'clone' object tech accounts for this properly like in Retail app.__CreateObject
+				-- ref: 8ef82aae48d055b266786c5c6111c832af788b90
 				shared = app.CloneObject(shared, true);
 				g[#g + 1] = shared
 				-- print("ATT Appearance:",shared.hash,shared.modItemID)

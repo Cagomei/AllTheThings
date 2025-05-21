@@ -2036,6 +2036,7 @@ i(232523, 460013);	-- G-99 Breakneck
 i(238994, 1226983);	-- Archmage's Great Raven
 i(210141, 424601);	-- Brown-Furred Spiky Bakar
 i(235711, 1218316);	-- Corruption of the Aspects
+i(238966, 1226851);	-- Felborn Cormaera
 i(223265, 447189);	-- Nesting Swarmite
 i(235709, 1218314);	-- Ny'alothan Shadow Worm
 i(238943, 1226760);	-- Prophet's Great Raven
@@ -2052,7 +2053,6 @@ i(211089, 428068);	-- Voidfire Deathcycle
 --- UNSORTED ---
 i(238902, 1226533);	-- Autumn Harvesthog
 i(238941, 1226740);	-- Coldflame Cormaera
-i(238966, 1226851);	-- Felborn Cormaera
 i(238968, 1226856);	-- Lavaborn Cormaera
 i(238967, 1226855);	-- Molten Cormaera
 i(236415, 1219705);	-- Spotted Black Riding Goat

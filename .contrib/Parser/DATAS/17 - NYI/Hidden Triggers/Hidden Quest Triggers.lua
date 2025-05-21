@@ -326,7 +326,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(48579),	-- Shroud of Arcane Echoes active tracking quest?
 
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
-		-- q(44455),	-- Downfall tracking - in Suramar, possibly tied to a Demon Hunter artifact?
 
 		q(45302),	-- 7.1.5 Class Hall - Brawlers Missions - Has Completed Any Brawlers Mission with Overmax - Tracking Quest - triggered when doing my first brawl for BFA
 		q(45311),	-- 7.1.5 Class Hall - Special - Brawlers - Fight 04 - Tracking Quest - completing "I've Got a Strange Feeling About This" mission while unlocking Meatball

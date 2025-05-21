@@ -71,9 +71,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			n(QUESTS, {
 				-- Intro --
 				q(86706, {	-- Seeking Knowledge of the Past
-					--["sourceQuests"] = { xx },	-- TODO: doesn't exist/time gated?
-					--["provider"] = { "n", XXX },	-- TODO: Didn't find questgiver for this one, picked up from journal
-					--["coord"] = { X, Y, DORNOGAL },
+					["provider"] = { "n", 238129 },	-- Researcher Onermu
+					["coord"] = { 42.4, 28.3, DORNOGAL },
+					["description"] = "May need to be acquired from the Adventure Journal if not automatically given on login",
 					["isBreadcrumb"] = true,	-- TODO: next quest was up without this one
 				}),
 				q(87328, {	-- Truly Horrific to Behold
@@ -108,11 +108,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 238337 },	-- Bronze Hourglass
 					["coords"] = {
 						{ 51.9, 82.7, RE_HORRIFIC_ORGRIMMAR },
+						{ 53.2, 50.3, RE_HORRIFIC_STORMWIND },
 					},
-					--TODO: ^ missing Stormwind vision coords
 				}),
 				-- Corruptions quest
-				q(90719, {	-- Borrowing Corruption (TODO: warbound)
+				q(90719, {	-- Borrowing Corruption
 					--["sourceQuests"] = { ??? },	-- TODO: it was just up with some of new builds
 					["provider"] = { "n", 238136 },	-- Augermu
 					["coord"] = { 35.2, 68.6, DORNOGAL },
@@ -125,7 +125,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(238403),	-- Lesser Rune of Twilight Devastation
 					},
 				}),
-				q(90731, {	-- Enhancing Corruption (TODO: warbound)
+				q(90731, {	-- Enhancing Corruption
 					["sourceQuests"] = { 90719 },	-- Borrowing Corruption
 					["provider"] = { "n", 238136 },	-- Augermu
 					["coord"] = { 35.2, 68.6, DORNOGAL },
@@ -917,6 +917,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						ach(41964),	-- Beyond the Most Horrific Vision of Stormwind
 					}),
 					n(SCENARIO_COMPLETION, {
+						o(495367, {	-- Corrupted Chest (Participation)
+							["description"] = "Default Chest if you don't clear any district.",
+							["coord"] = { 41.6, 34.3, RE_HORRIFIC_STORMWIND },
+						}),
 						o(499031, {	-- Corrupted Chest (Trade District/Wyrmbane)
 							["description"] = "Bonus Chest for completing the Trade District Objective/Wyrmbane.",
 							["coord"] = { 41.3, 34.1, RE_HORRIFIC_STORMWIND },

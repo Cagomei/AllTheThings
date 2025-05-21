@@ -518,8 +518,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(187393),	-- Sterling Hound-Handler's Gauntlets
 					i(186217),	-- Supple Helhound Leather Pants
 					i(187359),	-- Ylva's Water Dish
-					i(186970, {	-- Feeder's Hand and Key
-						["questID"] = 62683,
+					i(186970, {	-- Feeder's Hand and Key (CI!)
 						["g"] = {
 							i(186727),	-- Seal Breaker Key
 						},

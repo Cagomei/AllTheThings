@@ -946,7 +946,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				i(211022),	-- Torchbearer's Striders
 			}),
 			filter(MISC, {
-				i(242919, {	-- Cracked Keystone (QS!/QI!) (TODO: Alex - I speculate it may have different sources but cannot confirm it due to lack of time)
+				i(242919, {	-- Cracked Keystone (QS!/QI!/CI!)
 					["timeline"] = { ADDED_11_1_5 },	-- TODO: REMOVED_11_2_0?
 				}),
 			}),
@@ -1974,7 +1974,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					}),
 				}),
 				filter(MISC, {
-					i(235608, {	-- Nightfall Sanctum Campsite
+					i(235608, {	-- Nightfall Sanctum Campsite (CI!)
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
 						["g"] = { campsite(5) },	-- Cultists' Quay (CS!)
@@ -3460,7 +3460,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			n(QUESTS, {
 				-- q(86329),	-- Delver's Cosmetic Surprise Bag (itemID 233281) [linked to Item]
 				-- q(86328),	-- Delver's Starter Kit (itemID 233276) [linked to Item]
-				-- q(90780),	-- when Cracked Keystone was obtained (push loot in Fungal Folly?)
 			}),
 			--Delver's Journey Rewards
 			q(85204),	-- Delver's Dirigible Schematic: Flamethrower (spellID 467083)
@@ -3472,7 +3471,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(85210),	-- Delve-O-Bot 7001 (spellID 467097)
 			q(85206),	-- Warbound Equipment Set (spellID 467089)
 			q(85205),	-- Discounted Restored Coffer Key (spellID 467087)
-			-- q(86878),	-- Where We Thrive (camp site) (spellID 1217505?) [linked to Item]
 
 			-- q(86371),	-- Delver's Bounty weekly lockout (source doesn't matter) [linked to Item]
 			q(86438),	-- Opened first Nemesis Strongbox (first purple on account)

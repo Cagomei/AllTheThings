@@ -82,6 +82,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		mount(307932, {	-- Ensorcelled Everwyrm (MOUNT!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		i(238966, {	-- Felborn Cormaera (MOUNT!)
+			["timeline"] = { ADDED_11_1_5 },
+		}),
 		mount(457485, {	-- Grizzly Hills Packmaster (MOUNT!)
 			["timeline"] = { ADDED_11_0_2 },
 		}),
@@ -522,6 +525,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		iensemble(223485, {	-- Ensemble: Green Snugglefin Murloc Romper
 			["timeline"] = { ADDED_10_2_7 },
 		}),
+		------ Lavaborn Emerald Attire Set ------
+		iensemble(238428, {	["timeline"] = { ADDED_11_1_5 } }),	-- Ensemble: Lavaborn Emerald Attire
+		i(238948, {	["timeline"] = { ADDED_11_1_5 } }),	-- Fel Inferno Helm
+
 		------ Murloc Shells Set ------
 		i(188135, {	-- Frrgl's Shaking Shell
 			["timeline"] = { ADDED_9_1_5 },

@@ -1254,7 +1254,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 									["cost"] = {{"i", RADIANT_REMNANT, 30}},
 									["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 }
 								}),
-								i(210826, {	-- Harvestbot Repair Kit
+								i(210826, {	-- Harvestbot Repair Kit (CI!)
 									["cost"] = {{"i", RADIANT_REMNANT, 1}},
 								}),
 							},
@@ -1354,7 +1354,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					})),
 					n(ZONE_REWARDS, {
 						i(220756),	-- Flickering Torch
-						i(RADIANT_REMNANT),	
+						i(RADIANT_REMNANT),
 					}),
 				},
 			})),

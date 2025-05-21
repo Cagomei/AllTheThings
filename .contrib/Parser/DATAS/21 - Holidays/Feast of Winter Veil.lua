@@ -244,10 +244,10 @@ local STOLEN_PRESENT_GROUPS = {
 	}),
 	-- Misc:
 	i(46725),	-- Red Rider Air Rifle
-	i(219291, {	-- Puntable Baby Greench
+	i(219291, {	-- Puntable Baby Greench (CI!)
 		["timeline"] = { ADDED_11_0_7 },
 	}),
-	i(219255, {	-- Puntable Rotten Little Helper
+	i(219255, {	-- Puntable Rotten Little Helper (CI!)
 		["timeline"] = { ADDED_11_0_7 },
 	}),
 };
@@ -1400,9 +1400,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(218308, {	-- Winter Veil Cracker (TOY!)
 					i(233013),	-- Coal Cookie
 					i(234126),	-- Icicle Cupcake
-					i(219286),	-- Puntable Globe Yeti
-					i(234127),	-- Puntable Grumpling
-					i(219289),	-- Puntable Tiny Snowman
+					i(219286),	-- Puntable Globe Yeti (CI!)
+					i(234127),	-- Puntable Grumpling (CI!)
+					i(219289),	-- Puntable Tiny Snowman (CI!)
 				}),
 			},
 		})),

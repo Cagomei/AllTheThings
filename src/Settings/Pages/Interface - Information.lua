@@ -142,9 +142,19 @@ end
 local function GetRecursiveValueForInformationType(t, reference)
 	local rowReference = app.ActiveRowReference
 	local informationTypeID = t.informationTypeID
+	-- app.PrintDebug("IT-recur",informationTypeID,rowReference,rowReference and rowReference[informationTypeID],
+	-- 				reference,reference[informationTypeID],GetRelativeValue(rowReference or reference, informationTypeID),
+	-- 				app:SearchLink(app.GetRelativeGroup((rowReference and rowReference.sourceParent)
+						-- or reference.sourceParent
+						-- or (not reference.sourceIgnored and reference.parent)
+						-- or nil, informationTypeID)))
 	return rowReference and rowReference[informationTypeID]
 		or reference[informationTypeID]
-		or GetRelativeValue(rowReference or reference, informationTypeID)
+		-- prioritize sourceParent for recursive values, and only allow parent when not a sourceIgnored group
+		or GetRelativeValue((rowReference and rowReference.sourceParent)
+						or reference.sourceParent
+						or (not reference.sourceIgnored and reference.parent)
+						or nil, informationTypeID)
 end
 local function ProcessInformationType(t, reference, tooltipInfo)
 	local val = t.GetValue(t, reference);

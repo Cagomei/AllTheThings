@@ -890,7 +890,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				}),
 				n(SPECIAL, {
 					cl(DEMONHUNTER, HAVOC, {
-						i(141409, {	-- Candrael's Charm
+						i(141409, {	-- Candrael's Charm (CI!)
 							["description"] = "Find this item on mobs in Suramar.",
 							["maps"] = { SURAMAR },
 						}),

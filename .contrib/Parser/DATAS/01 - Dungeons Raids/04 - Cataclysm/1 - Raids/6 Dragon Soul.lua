@@ -118,6 +118,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["description"] = "This quest requires you to turn in 60 unopened Elementium Gem Clusters.",
 						["sourceQuest"] = 30113,	-- Victory in the Depths
+						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
 						["cost"] = {
 							{ "i", 77952, 60 },	-- Elementium Gem Cluster
 						},
@@ -286,7 +287,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				["timeline"] = { CREATED_4_4_2 },
 				-- #endif
 				["ignoreBonus"] = true,
-				["groups"] = 
+				["groups"] =
 				-- #if ANYCLASSIC
 				bubbleDown({ ["timeline"] = { CREATED_4_4_2 }, },
 				-- #endif

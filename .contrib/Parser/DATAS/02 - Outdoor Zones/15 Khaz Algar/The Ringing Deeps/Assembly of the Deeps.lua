@@ -428,15 +428,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							}),
 						}, {	-- RENOWN 11 --
 						}, {	-- RENOWN 12 --
-							i(224653, {	-- Machine-Learned Engineering Notes
+							i(224653, {	-- Machine-Learned Engineering Notes (CI!)
 								["cost"] = {{"i", ARTISANS_ACUITY, 50}},
 								["requireSkill"] = ENGINEERING,
 							}),
-							i(224654, {	-- Machine-Learned Inscription Notes
+							i(224654, {	-- Machine-Learned Inscription Notes (CI!)
 								["cost"] = {{"i", ARTISANS_ACUITY, 50}},
 								["requireSkill"] = INSCRIPTION,
 							}),
-							i(224651, {	-- Machine-Learned Mining Notes
+							i(224651, {	-- Machine-Learned Mining Notes (CI!)
 								["cost"] = {{"i", ARTISANS_ACUITY, 50}},
 								["requireSkill"] = MINING,
 							}),
