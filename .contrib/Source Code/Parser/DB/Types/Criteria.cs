@@ -71,7 +71,9 @@ namespace ATT.DB.Types
             // Obtain a pet through battle (Account Only)
             Type == 157 ||
             // Win a pet battle
-            Type == 158;
+            Type == 158 ||
+            // Reach Max Level
+            Type == 221;
 
         public long GetSourceQuest() =>
             Type == 27 ? Asset : 0;

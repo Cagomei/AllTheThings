@@ -2722,6 +2722,16 @@ namespace ATT
                         Objects.Merge(data, "provider", new List<object> { "i", existingModifierTree.Asset });
                         TrackIncorporationData(data, "provider", new List<object> { "i", existingModifierTree.Asset });
                         break;
+                    // 25 (SOURCE_RACE)
+                    case 25:
+                        Objects.Merge(data, "races", new List<object> { existingModifierTree.Asset });
+                        TrackIncorporationData(data, "races", new List<object> { existingModifierTree.Asset });
+                        break;
+                    // 26 (SOURCE_CLASS)
+                    case 26:
+                        Objects.Merge(data, "c", new List<object> { existingModifierTree.Asset });
+                        TrackIncorporationData(data, "c", new List<object> { existingModifierTree.Asset });
+                        break;
                     // 62 (GUILD_REPUTATION)
                     case 62:
                         Objects.Merge(data, "minReputation", new List<object> { 1168, existingModifierTree.Asset });
@@ -2818,6 +2828,11 @@ namespace ATT
                         Objects.Merge(data, "minReputation", new List<object> { existingModifierTree.SecondaryAsset, existingModifierTree.Asset });
                         TrackIncorporationData(data, "provider", new List<object> { existingModifierTree.SecondaryAsset, existingModifierTree.Asset });
                         Objects.Merge(data, "_factions", existingModifierTree.SecondaryAsset);
+                        break;
+                    // 271 (QUEST_IS_ON_OR_HAS_COMPLETED)
+                    case 271:
+                        Objects.Merge(data, "sourceQuests", new List<object> { existingModifierTree.Asset });
+                        TrackIncorporationData(data, "sourceQuests", new List<object> { existingModifierTree.Asset });
                         break;
                     default:
                         incorporated = false;

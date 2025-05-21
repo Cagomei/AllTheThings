@@ -149,12 +149,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(84700, {	-- Pacts Below
 						["provider"] = { "n", 230098 },	-- Spindle
 						["coord"] = { 46.1, 50.0, DORNOGAL },
+						["lockCriteria"] = { 1, "questID", 84681 },	-- AW HQT for 'Of Pacts and Patrons'
 						["isBreadcrumb"] = true,
+						["DisablePartySync"] = true,
 					}),
 					q(84682, {	-- Of Pacts and Patrons
 						["sourceQuests"] = { 84700 },	-- Pacts Below
 						["provider"] = { "n", 207471 },	-- Widow Arak'nai
 						["coord"] = { 55.7, 43.8, AZJ_KAHET },
+						["lockCriteria"] = { 1, "questID", 84681 },	-- AW HQT for 'Of Pacts and Patrons'
+						["DisablePartySync"] = true,
 					}),
 					header(HEADERS.Achievement, 40832, {	-- Leave it to Weaver
 						q(83276, {	-- Saving Private Spindle

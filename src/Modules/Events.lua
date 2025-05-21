@@ -35,7 +35,7 @@ end
 -- Event ID Remapping by Region
 local remapping = L.EVENT_REMAPPING;
 if GetCVar("portal") == "EU" then
-	remapping[1583] = 1508; -- EU Classic Timewalking
+	remapping[1508] = 1583; -- EU Classic Timewalking
 	remapping[622] = 559; -- EU BC Timewalking
 	remapping[616] = 562; -- EU Wrath Timewalking
 	remapping[628] = 587; -- EU Cata Timewalking
@@ -46,7 +46,7 @@ if GetCVar("portal") == "EU" then
 	remapping[1398] = 1396;	-- EU Secrets of Azeroth
 	remapping[1514] = 1525;	-- EU Remix: Mists of Pandaria
 elseif GetCVar("portal") == "KO" then
-	remapping[1585] = 1508; -- KO Classic Timewalking
+	remapping[1508] = 1585; -- KO Classic Timewalking
 	remapping[623] = 559; -- KO BC Timewalking
 	remapping[618] = 562; -- KO Wrath Timewalking
 	remapping[629] = 587; -- KO Cata Timewalking
@@ -56,7 +56,7 @@ elseif GetCVar("portal") == "KO" then
 	remapping[1666] = 1669;	-- KO BFA Timewalking
 	remapping[1399] = 1396;	-- KO Secrets of Azeroth
 elseif GetCVar("portal") == "TW" or "CN" then
-	remapping[1584] = 1508; -- TW Classic Timewalking
+	remapping[1508] = 1584; -- TW Classic Timewalking
 	remapping[624] = 559; -- TW BC Timewalking
 	remapping[617] = 562; -- TW Wrath Timewalking
 	remapping[630] = 587; -- TW Cata Timewalking

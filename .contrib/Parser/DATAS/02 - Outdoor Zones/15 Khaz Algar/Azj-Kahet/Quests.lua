@@ -1171,7 +1171,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(84471),	-- triggered after turn in questID 84682 (Of Pacts and Patrons) (spellID 463432 - [DNT] Choice Complete Credit)
 				q(84681, {	-- triggered after turn in questID 84682 (Of Pacts and Patrons) (spellID 463432 - [DNT] Choice Complete Credit)
 					["name"] = "'Of Pacts and Patrons' Completed Credit (Account-wide)",
-					["sourceQuests"] = { 84700 },	-- Pacts Below
+					["sourceQuest"] = 84682,	-- Of Pacts and Patrons
 				}),
 				q(84666),	-- triggered after turn in questID 84664 (Making the Underworld Go Round) (spellID 463299 - [DNT] Push Loot)
 				q(86931, {	-- triggered after turn in of any of the pact weeklies?

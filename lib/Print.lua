@@ -54,6 +54,12 @@ app.PrintGroup = function(group,depth)
 	end
 	print("---")
 end
+local SkipTableFields = {
+	parent = 1,
+	sourceParent = 1,
+	__merge = 1,
+	window = 1,
+}
 app.PrintTable = function(t,depth)
 	-- only allowing table prints when Debug print is active
 	if not app.Debugging then return; end
@@ -70,7 +76,7 @@ app.PrintTable = function(t,depth)
 		app._PrintTable[t] = true;
 		print(p,tostring(t),"__type",t.__type," {");
 		for k,v in pairs(t) do
-			if k == "parent" or k == "sourceParent" or k == "__merge" then
+			if SkipTableFields[k] then
 				print(p,k,":",tostring(v), "[SKIPPED]")
 			elseif type(v) == "table" then
 				if k == "g" then

@@ -1291,15 +1291,26 @@ settings.CreateInformationType("rawfields", {
 			left = "Self:",
 			right = tostring(data)
 		});
-		tinsert(tooltipInfo, {
-			left = "Row:",
-			right = tostring(app.ActiveRowReference)
-		});
 		for k, v in pairs(data) do
 			tinsert(tooltipInfo, {
-				left = "Raw: "..tostring(k),
+				left = tostring(k),
 				right = tostring(v)
 			});
+		end
+		if app.ActiveRowReference then
+			tinsert(tooltipInfo, {
+				left = "----"
+			});
+			tinsert(tooltipInfo, {
+				left = "Row:",
+				right = tostring(app.ActiveRowReference)
+			});
+			for k, v in pairs(app.ActiveRowReference) do
+				tinsert(tooltipInfo, {
+					left = tostring(k),
+					right = tostring(v)
+				});
+			end
 		end
 	end
 })

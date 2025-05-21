@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(170774, {	-- Eketra <The Impaler>
-				["coord"] = { 22.8, 52.4, THE_MAW },
+				["coord"] = { 23.8, 53.6, THE_MAW },
 				["questID"] = 60915,
 				["g"] = {
 					i(186563),	-- Spear of the Impaler
