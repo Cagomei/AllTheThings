@@ -1867,6 +1867,9 @@ local function GetSearchResults(method, paramA, paramB, options)
 	return group
 end
 app.GetCachedSearchResults = function(method, paramA, paramB, options)
+	if options and options.IgnoreCache then
+		return GetSearchResults(method, paramA, paramB, options)
+	end
 	return app.GetCachedData(paramB and paramA..":"..paramB or paramA, GetSearchResults, method, paramA, paramB, options);
 end
 

@@ -144,12 +144,13 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 		n(246220, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0, } }, {	-- Demon Portal
 			-- Double CheckID
 			-- July 1st to August 1st 2025
-			["coords"] = {
+			--["coords"] = {
 			--	{ 68.3, 40.8, ORGRIMMAR },
 			--	{ 50.6, 85.6, STORMWIND_CITY },
 			--	{ 54.7, 54.4, STORMWIND_CITY },
-			--	{ 54.7, 54.4, DORNOGAL },
-			},
+			--	{ 54.3, 53.9, ISLE_OF_DORN },
+			-- { UNDERMINE },	-- basically entire map
+			--},
 			["maps"] = { DORNOGAL, ORGRIMMAR, STORMWIND_CITY, UNDERMINE },	-- TODO: remove once proper coords added, parser will complain
 			["description"] = "Every 60 Minutes a Portal spawns in either Dornogal, Stormwind or Orgrimmar, causing a Treasure Goblin to appear after 5 minutes.\n\nCan also spawn in Undermine after defeating a rare (one portal per rare, per hour)",
 			["groups"] = {
@@ -178,6 +179,9 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 							i(245640), -- Tempestuous Elixir
 							i(245614), -- Trapper Elixir
 							i(245637), -- Windforce Elixir
+							-- Cosmetic
+							i(246242),	-- Blood-Wrapped Treasure Bag (COSMETIC!)
+							i(206007),	-- Treasure Nabbin' Bag (COSMETIC!)
 							-- Temp Buff Items
 							i(245899), -- Bat's Grand Charm
 							i(245749), -- Large Charm of Intelligence
@@ -207,40 +211,43 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 							i(245598), -- Unknown Spellbook
 							i(245594), -- Worn Rune
 						}),
+						-- previous loot
+						-- uncomment if confirmed
+						i(206018),	-- Baa'lial (PET!)
+						--i(206039, {	-- Enmity Bundle
+							i(206004),	-- Enmity Cloak
+							--i(206020),	-- Enmity Hood
+						--}),
+						i(206003),	-- Horadric Haversack (BAG)
+						--i(142548),	-- Large Charm of Dexterity
+						--i(206274),	-- Large Charm of Intelligence
+						--i(142547),	-- Large Charm of Strength
+						--i(143327),	-- Lovestock Lochaber Axe
+						i(206008),	-- Nightmare Banner (TOY!)
+						--i(142549),	-- Serpent's Grand Charm
+						--i(142546),	-- Small Charm of Inertia
+						--i(142545),	-- Small Charm of Life
+						--i(142551),	-- Stalwart's Grand Charm
+						i(206007),	-- Treasure Nabbin Bag
+						i(142542),	-- Tome of Town Portal (TOY!)
+						i(143543),	-- Twelve String Guitar (TOY!)
+						--i(76755),	-- Tyrael's Charger (MOUNT!)
+						i(206275),	-- Wirt's Fightin' Leg (BOE)
+						--i(206276),	-- Wirt's Haunted Leg (BOE)
+						i(206005),	-- Wirt's Last Leg (BOE)
 					},
-						--[[	Unconfirmed Returning Items
-							i(206018),	-- Baa'lial (PET!)
-							i(206039, {	-- Enmity Bundle
-								i(206004),	-- Enmity Cloak
-								i(206020),	-- Enmity Hood
-							}),
-							i(206003),	-- Horadric Haversack (BAG)
-							i(142548),	-- Large Charm of Dexterity
-							i(206274),	-- Large Charm of Intelligence
-							i(142547),	-- Large Charm of Strength
-							i(143327),	-- Lovestock Lochaber Axe
-							i(206008),	-- Nightmare Banner (TOY!)
-							i(142549),	-- Serpent's Grand Charm
-							i(142546),	-- Small Charm of Inertia
-							i(142545),	-- Small Charm of Life
-							i(142551),	-- Stalwart's Grand Charm
-							i(206007),	-- Treasure Nabbin Bag
-							i(142542),	-- Tome of Town Portal (TOY!)
-							i(143543),	-- Twelve String Guitar (TOY!)
-							i(76755),	-- Tyrael's Charger (MOUNT!)
-							i(206275),	-- Wirt's Fightin' Leg (BOE)
-							i(206276),	-- Wirt's Haunted Leg (BOE)
-							i(206005),	-- Wirt's Last Leg (BOE)
-						--]]
 				}),
 			},
 		})),
+		n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0, } }, {
+			q(91038, {	-- Hellhunters Wanted
+				--["provider"] = { "o", ??? },	-- missing objectID
+				["coord"] = { 49.1, 27.1, DORNOGAL },	-- TODO: probably more coords
+			}),
+		})),
 		n(VENDORS, {
 			n(245378, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0, } }, {	-- Baranar <Hellhunter>
-			--	["coords"] = {
-				--	{ 54.7, 54.4, DORNOGAL },
-			--	},
-				["maps"] = { DORNOGAL },
+				["coord"] = { 52.9, 68.0, DORNOGAL },
 				["g"] = sharedData({
 					["cost"] = {
 						{"c", 3309, 40},	-- 40x Hellstone Shard
@@ -292,6 +299,20 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0} }, {
 	n(DIABLO_EVENTS, {
 		q(76216),	-- 'Bonus loot' if Tyrael's Charger unlearned / first goblin kill per day for account
+		--
+		q(91091, {["timeline"]={ADDED_11_1_7}}),	-- Blood-Wrapped Treasure Bag was looted (itemID 246242)
+		q(91092, {["timeline"]={ADDED_11_1_7}}),	-- Treasure Nabbin' Bag was looted (itemID 206007)
+		-- Hellcaller chest questID after being opened, daily?
+		q(91079, {["timeline"]={ADDED_11_1_7}}),	-- 01
+		q(91080, {["timeline"]={ADDED_11_1_7}}),	-- 02
+		--q(, {["timeline"]={ADDED_11_1_7}}),	-- 03 is missing
+		q(91082, {["timeline"]={ADDED_11_1_7}}),	-- 04
+		q(91083, {["timeline"]={ADDED_11_1_7}}),	-- 05
+		q(91166, {["timeline"]={ADDED_11_1_7}}),	-- 06
+		q(91167, {["timeline"]={ADDED_11_1_7}}),	-- 07
+		q(91168, {["timeline"]={ADDED_11_1_7}}),	-- 08
+		q(91169, {["timeline"]={ADDED_11_1_7}}),	-- 09
+		q(91170, {["timeline"]={ADDED_11_1_7}}),	-- 10
 	}),
 })));
 -- #endif

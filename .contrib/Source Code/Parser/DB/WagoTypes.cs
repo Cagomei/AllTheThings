@@ -20,6 +20,7 @@ namespace ATT.DB
             typeof(CriteriaTree),
             typeof(GlyphProperties),
             typeof(Item),
+            typeof(ItemBonus),
             typeof(ItemEffect),
             typeof(ItemXItemEffect),
             typeof(ItemModifiedAppearance),

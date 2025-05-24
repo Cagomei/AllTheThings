@@ -1432,6 +1432,10 @@ namespace ATT
                 case "autoname":
                     return "an";
 
+                case "trackID":
+                case "upgradeTrackID":
+                    return "trackID";
+
                 // tags which are accurate already
                 case "azeriteessenceID":
                 case "buildingID":

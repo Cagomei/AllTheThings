@@ -179,6 +179,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			})),
 			n(170711, {	-- Dolos
+				["description"] = "Will not spawn during Necrolord assault.",
 				["coord"] = { 28.6, 60.6, THE_MAW },
 				["questID"] = 60909,
 				["g"] = {

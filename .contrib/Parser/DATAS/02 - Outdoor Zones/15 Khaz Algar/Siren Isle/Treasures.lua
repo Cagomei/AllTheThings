@@ -93,21 +93,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					i(233831),	-- Minnow's Favorite Blade (COSMETIC!)
 				},
 			}),
-			o(463539, {	-- Pilfered Earthen Chest
-				-- Naga
-				["coord"] = { 68.4, 94.4, SIREN_ISLE },
-				["questID"] = 84527,
-				["isWeekly"] = true,
-				["g"] = {
-					i(229181),	-- Ordained Forge Maul
-				},
-			}),
-			o(493375, {	-- Rune-Sealed Coffer
-				-- Vrykul
-				["coord"] = { 67.8, 73.5, SIREN_ISLE },
-				["questID"] = 86171,
-				["isWeekly"] = true,
-			}),
 			o(494475, {	-- Rune-Speared Spear
 				["coord"] = { 57.9, 78.5, SIREN_ISLE },
 				["g"] = {

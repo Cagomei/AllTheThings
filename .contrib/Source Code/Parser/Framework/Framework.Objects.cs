@@ -1720,6 +1720,8 @@ end");
                     case "uid":
                     case "tmogSetID":
                     case "_multiDifficultyID":
+                    case "trackID":
+                    case "catalystID":
                         {
                             try
                             {

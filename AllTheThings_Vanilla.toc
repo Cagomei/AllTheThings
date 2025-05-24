@@ -106,6 +106,7 @@ db\Classic\Season of Discovery\LocalizationDB.lua
 
 # Load object class templates
 src\Classes\base.lua
+src\Classes\Achievement.Classic.lua
 # src\Classes\Achievement.lua
 # src\Classes\BattlePet.lua
 src\Classes\CharacterClass.lua

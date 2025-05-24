@@ -893,68 +893,85 @@ namespace ATT
             return new List<object>();
         }
 
-        internal static void ParseWagoCsv(string type, string csv)
+        /// <summary>
+        /// Parse the Wago CSV database module.
+        /// </summary>
+        /// <param name="filename">The name of the file being parsed.</param>
+        internal static void ParseWagoCSV(string path)
         {
-            TypeDB[type] = WagoTypes.ParseCsvType(type, csv);
+            // Parse the filename for the database type and locale, if specified.
+            var filename = path.Substring(path.LastIndexOf('\\') + 1);
+            var segments = filename.Split('.', '-', '_'); // Example: Item_enUS.1.15.7.60277
 
-            // CriteriaTree creates parent mapping one-time
-            if (type == nameof(CriteriaTree))
+            // The Type is always listed first, followed by the locale (Default: enUS)
+            string type = segments[0];
+            string locale = segments[1];
+            if (char.IsDigit(locale[0]) || locale == "csv") locale = "enUS";
+
+            // Parse the database file and merge the data elements within
+            IDictionary<long, IDBType> parsedWagoData = WagoTypes.ParseCsvType(type, File.ReadAllText(path));
+
+            // CRIEVE NOTE: At some point I want to parse complex locale data and deprecate the AchievementDB as it is in Classic in favor of this data package
+            TypeDB[type] = parsedWagoData;
+
+            switch (type)
             {
-                CollectObjectsByValue<CriteriaTree>(type, (se) => se.Parent);
-            }
-            // ItemModifiedAppearance creates ItemID mapping one-time
-            if (type == nameof(ItemModifiedAppearance))
-            {
-                CollectObjectsByValue<ItemModifiedAppearance>(type, (se) => se.ItemID);
-            }
-            // ItemEffect creates SpellID mapping one-time
-            if (type == nameof(ItemEffect))
-            {
-                CollectObjectsByValue<ItemEffect>(type, (se) => se.SpellID);
-            }
-            // ItemXItemEffect creates ItemID mapping one-time
-            if (type == nameof(ItemXItemEffect))
-            {
-                CollectObjectsByValue<ItemXItemEffect>(type, (se) => se.ItemID);
-            }
-            // ModifierTree creates parent mapping one-time
-            if (type == nameof(ModifierTree))
-            {
-                CollectObjectsByValue<ModifierTree>(type, (se) => se.Parent);
-            }
-            // SpellEffect creates SpellID mapping one-time
-            if (type == nameof(SpellEffect))
-            {
-                CollectObjectsByValue<SpellEffect>(type, (se) => se.SpellID);
-            }
-            // TransmogSet creates QuestID mapping one-time
-            if (type == nameof(TransmogSet))
-            {
-                CollectObjectsByValue<TransmogSet>(type, (se) => se.TrackingQuestID);
-            }
-            // TransmogSetItem creates TransmogSetID mapping one-time
-            if (type == nameof(TransmogSetItem))
-            {
-                CollectObjectsByValue<TransmogSetItem>(type, (se) => se.TransmogSetID);
-                CollectObjectsByValue<TransmogSetItem>(type, (se) => se.ItemModifiedAppearanceID, nameof(TransmogSetItem.ItemModifiedAppearanceID));
+                case nameof(CriteriaTree):
+                    // CriteriaTree creates parent mapping one-time
+                    CollectObjectsByValue<CriteriaTree>(parsedWagoData, type, (se) => se.Parent);
+                    break;
+                case nameof(ItemModifiedAppearance):
+                    // ItemModifiedAppearance creates ItemID mapping one-time
+                    CollectObjectsByValue<ItemModifiedAppearance>(parsedWagoData, type, (se) => se.ItemID);
+                    break;
+                case nameof(ItemEffect):
+                    // ItemEffect creates SpellID mapping one-time
+                    CollectObjectsByValue<ItemEffect>(parsedWagoData, type, (se) => se.SpellID);
+                    break;
+                case nameof(ItemXItemEffect):
+                    // ItemXItemEffect creates ItemID mapping one-time
+                    CollectObjectsByValue<ItemXItemEffect>(parsedWagoData, type, (se) => se.ItemID);
+                    break;
+                case nameof(ModifierTree):
+                    // ModifierTree creates parent mapping one-time
+                    CollectObjectsByValue<ModifierTree>(parsedWagoData, type, (se) => se.Parent);
+                    break;
+                case nameof(SpellEffect):
+                    // SpellEffect creates SpellID mapping one-time
+                    CollectObjectsByValue<SpellEffect>(parsedWagoData, type, (se) => se.SpellID);
+                    break;
+                case nameof(TransmogSet):
+                    // TransmogSet creates QuestID mapping one-time
+                    CollectObjectsByValue<TransmogSet>(parsedWagoData, type, (se) => se.TrackingQuestID);
+                    break;
+                case nameof(TransmogSetItem):
+                    // TransmogSetItem creates TransmogSetID mapping one-time
+                    CollectObjectsByValue<TransmogSetItem>(parsedWagoData, type, (se) => se.TransmogSetID);
+                    CollectObjectsByValue<TransmogSetItem>(parsedWagoData, type, (se) => se.ItemModifiedAppearanceID, nameof(TransmogSetItem.ItemModifiedAppearanceID));
+                    break;
+                default:
+                    //Console.WriteLine($"WARNING: Unhandled Wago Object Type '{type}'!");
+                    break;
             }
         }
 
-        private static void CollectObjectsByValue<T>(string type, Func<T, long> valueFunc, string subname = null)
+        private static void CollectObjectsByValue<T>(IDictionary<long, IDBType> db, string type, Func<T, long> valueFunc, string subname = null)
             where T : IDBType
         {
-            IDictionary<long, IDBType> db = TypeDB[type];
-            Dictionary<long, IDBType> group = new Dictionary<long, IDBType>();
-            TypeDB[type + (subname ?? nameof(TypeCollection<T>))] = group;
+            var subtype = type + (subname ?? nameof(TypeCollection<T>));
+            if (!TypeDB.TryGetValue(subtype, out var subTypeDB))
+            {
+                TypeDB[subtype] = subTypeDB = new Dictionary<long, IDBType>();
+            }
 
             foreach (T obj in db.Values.AsTypedEnumerable<T>())
             {
                 long groupID = valueFunc(obj);
                 if (groupID != 0)
                 {
-                    if (!(group.TryGetValue(groupID, out IDBType groupDB) && groupDB is TypeCollection<T> groupCollection))
+                    if (!(subTypeDB.TryGetValue(groupID, out IDBType groupDB) && groupDB is TypeCollection<T> groupCollection))
                     {
-                        group[groupID] = groupCollection = new TypeCollection<T>();
+                        subTypeDB[groupID] = groupCollection = new TypeCollection<T>();
                     }
 
                     groupCollection.Collection.Add(obj);

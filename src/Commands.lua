@@ -48,7 +48,7 @@ hooksecurefunc("SetItemRef", function(link, text)
 		if data1 == "search" then
 			local cmd = data2 .. ":" .. data3;
 			app.SetSkipLevel(2);
-			local group = app.GetCachedSearchResults(app.SearchForLink, cmd);
+			local group = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {IgnoreCache=true})
 			app.SetSkipLevel(0);
 
 			if IsShiftKeyDown() then
@@ -361,7 +361,7 @@ function(cmd)
 
 		-- Search for the Link in the database
 		app.SetSkipLevel(2);
-		local group = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill = true});
+		local group = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill=true,IgnoreCache=true});
 		app.SetSkipLevel(0);
 		-- make sure it's 'something' returned from the search before throwing it into a window
 		if group then

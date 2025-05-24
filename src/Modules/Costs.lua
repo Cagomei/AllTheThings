@@ -925,9 +925,12 @@ local function BuildTotalCost(group)
 
 	local Collector = app.Modules.Costs.GetCostCollector()
 
-	local function RefreshCollector(window)
-		-- don't process the refresh if there was a window provided to the event and it's a different window
-		if window and window ~= group.window then return end
+	local function RefreshCollector(data)
+		if data then
+			-- don't process the refresh if there was a data provided to the event and it's a different window and not a Thing
+			if not data.__type and data ~= group.window then return end
+		end
+		-- app.PrintDebug("RefreshCollector",group.window.Suffix,data and (data.Suffix or app:SearchLink(data)))
 		wipe(costGroup.g)
 		Collector.ScanGroups(group, costGroup)
 	end
@@ -941,6 +944,9 @@ local function BuildTotalCost(group)
 		group.window:AddEventHandler("OnRefreshCollections", RefreshCollector)
 		-- when the window is done filling, we can run the collector
 		group.window:AddEventHandler("OnWindowFillComplete", RefreshCollector)
+		-- when something is collected/removed, refresh the collector
+		group.window:AddEventHandler("OnThingCollected", RefreshCollector)
+		group.window:AddEventHandler("OnThingRemoved", RefreshCollector)
 	end
 
 	-- Add the cost group to the popout

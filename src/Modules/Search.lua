@@ -182,14 +182,14 @@ local function SearchByKindLink(link)
 	-- field search if nothing found
 	if #results == 0 then
 		results = SearchForObject(kind, id, "field", true)
-	end
-	-- lenient search if nothing found
-	if #results == 0 then
-		results = SearchForObject(kind, id, nil, true)
-	end
-	-- special case for missing criteria
-	if #results == 0 and kind == "criteriaID" then
-		return results, kind, id..":"..(id2 or "")
+		-- lenient search if nothing found
+		if #results == 0 then
+			results = SearchForObject(kind, id, nil, true)
+		end
+		-- special case for missing criteria
+		if #results == 0 and kind == "criteriaID" then
+			return results, kind, id..":"..(id2 or "")
+		end
 	end
 	return results, kind, id
 end

@@ -1464,8 +1464,7 @@ i(239018);	-- Winner's Podium
 ------------------
 i(244888);	-- Echo of the Xal'atath, Blade of the Black Empire
 i(245567);	-- K'aresh Memory Crystal
+i(246227);	-- Lightning-Blessed Spire
 i(235016);	-- Redeployment Module
 i(245631);	-- Royal Visage
---- UNSORTED ---
-i(246227);	-- Lightning-Blessed Spire
 i(245942);	-- Sea-Blessed Shrine

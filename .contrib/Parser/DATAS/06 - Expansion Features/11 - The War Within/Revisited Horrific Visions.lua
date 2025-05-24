@@ -15,8 +15,9 @@ local RE_HORRIFIC_STORMWIND = 2404;	-- Vision of Stormwind
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_1_5 } }, {
 	n(HORRIFIC_VISIONS_REVISITED, {
 		["maps"] = {
-			RE_HORRIFIC_ORGRIMMAR,
-			RE_HORRIFIC_STORMWIND,
+			-- RE_HORRIFIC_ORGRIMMAR,
+			-- RE_HORRIFIC_STORMWIND,
+			DORNOGAL,
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -74,7 +75,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 238129 },	-- Researcher Onermu
 					["coord"] = { 42.4, 28.3, DORNOGAL },
 					["description"] = "May need to be acquired from the Adventure Journal if not automatically given on login",
-					["isBreadcrumb"] = true,	-- TODO: next quest was up without this one
+					["isBreadcrumb"] = true,
 				}),
 				q(87328, {	-- Truly Horrific to Behold
 					["sourceQuests"] = { 86706 },	-- Seeking Knowledge of the Past
@@ -212,10 +213,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				i(239106, {	-- Shadow Infused Onyx
 					["description"] = "Chance to drop from any Horrific Vision reward chest if at least one mask is active.",
 				}),
-				filter(MISC, {
-					i(232921),	-- Faceless Mask of the Long Night (QI!/QS!)
-					i(235414),	-- Faceless Mask of Multitudes (QS!/QI!) (TODO: require to complete run with 4 masks?)
-				}),
 				n(ARMOR, {
 					filter(BACK_F, {
 						i(236970),	-- Cloak of Insatiable Vision (leathers class only?)
@@ -308,6 +305,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(236804),	-- Malignant Vision's Wargreaves
 					}),
 					filter(TRINKET_F, {
+						i(236916),	-- Void-Whittled Spike
 					}),
 				}),
 			}),
@@ -376,15 +374,46 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 								{ "i", 240178, 1 },	-- 1x Voidflame-Resistant Hide
 							},
 						}),
+						---
+						--hqt(???, {	-- Add the Boarhide Deathcycle Seat to the Voidfire Deathcycle Frame
+							--["name"] = "Add the Boarhide Deathcycle Seat to the Voidfire Deathcycle Frame",
+							--["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
+							--["cost"] = {{ "i", 240181, 1 }},	-- 1x Boarhide Deathcycle Seat
+						--}),
+						hqt(90523, {	-- Add the Deathcycle Exhaust System to the Voidfire Deathcycle Frame
+							["name"] = "Add the Deathcycle Exhaust System to the Voidfire Deathcycle Frame",
+							["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
+							["cost"] = {{ "i", 240190, 1 }},	-- 1x Deathcycle Exhaust System
+						}),
+						hqt(90135, {	-- Add the Pulsing Void Crystal to the Voidfire Deathcycle Frame
+							["name"] = "Add the Pulsing Void Crystal to the Voidfire Deathcycle Frame",
+							["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
+							["cost"] = {{ "i", 240185, 1 }},	-- 1x Pulsing Void Crystal
+						}),
+						hqt(90132, {	-- Add the Skull-Scythe Handlebars to the Voidfire Deathcycle Frame
+							["name"] = "Add the Skull-Scythe Handlebars to the Voidfire Deathcycle Frame",
+							["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
+							["cost"] = {{ "i", 240182, 1 }},	-- 1x Skull-Scythe Handlebars
+						}),
+						--hqt(???, {	-- Add the Void-Forged Inline Four Engine to the Voidfire Deathcycle Frame
+							--["name"] = "Add the Void-Forged Inline Four Engine to the Voidfire Deathcycle Frame",
+							--["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
+							--["cost"] = {{ "i", 240188, 1 }},	-- 1x Void-Forged Inline Four Engine
+						--}),
+						--hqt(???, {	-- Add both Voidflame Wheels to the Voidfire Deathcycle Frame
+							--["name"] = "Add both Voidflame Wheels to the Voidfire Deathcycle Frame",
+							--["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
+							--["cost"] = {{ "i", 240179, 2 }},	-- 2x Voidflame Wheel
+						--}),
 						i(211089, {	-- Voidfire Deathcycle
-							["provider"] = { "n", 242544 }, -- or maybe 242545
-							["cost"] = {
-								{ "i", 240181, 1 },	-- 1x Boarhide Deathcycle Seat
-								{ "i", 240190, 1 },	-- 1x Deathcycle Exhaust System
-								{ "i", 240185, 1 },	-- 1x Pulsing Void Crystal
-								{ "i", 240182, 1 },	-- 1x Skull-Scythe Handlebars
-								{ "i", 240188, 1 },	-- 1x Void-Forged Inline Four Engine
-								{ "i", 240179, 2 },	-- 2x Voidflame Wheel
+							["provider"] = { "n", 242545 },	-- -- Voidfire Deathcycle Frame
+							["sourceQuests"] = {
+								--??,	-- Boarhide Deathcycle Seat
+								90523,	-- Deathcycle Exhaust System
+								90135,	-- Pulsing Void Crystal
+								90132,	-- Skull-Scythe Handlebars
+								--?,	-- Void-Forged Inline Four Engine
+								--?,	-- Voidflame Wheels
 							},
 						}),
 					},
@@ -412,168 +441,178 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				n(238544, {	-- Chreni "HEROIC/Hero Quality Vendor"
 					["sourceAchievement"] = 41874,	-- Symphony of Masks
 					["coord"] = { 33.8, 68.6, DORNOGAL },
-					["g"] = {
-						i(242623, {	-- Enchanted Warbound Purifying Kit
-							["cost"] = {{"c", 3149, 2000 }},	-- 2000x Displaced Corrupted Mementos
-						}),
-					},
-					["g"] = bubbleDown({["modID"] = 84}, {
-						i(236892, {	-- Void-Touched Battle Staff
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236896, {	-- Void-Touched Blade
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236894, {	-- Void-Touched Bow
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236901, {	-- Void-Touched Broadsword
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236900, {	-- Void-Touched Claws
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236898, {	-- Void-Touched Cleaver
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236903, {	-- Void-Touched Glaive
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236885, {	-- Void-Touched Gladius
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236902, {	-- Void-Touched Greatsword
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236897, {	-- Void-Touched Hacker
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236904, {	-- Void-Touched Lantern
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236888, {	-- Void-Touched Occular
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236891, {	-- Void-Touched Polearm
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236883, {	-- Void-Touched Pummeler
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236882, {	-- Void-Touched Ritual Knife
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236887, {	-- Void-Touched Sharpshooter
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236905, {	-- Void-Touched Shield
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236881, {	-- Void-Touched Shank
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236895, {	-- Void-Touched Spellblade
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236890, {	-- Void-Touched Spear
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236886, {	-- Void-Touched Sword
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236893, {	-- Void-Touched Stave
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236899, {	-- Void-Touched Wand
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236889, {	-- Void-Touched Waraxe
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-					}),
+					["g"] = appendAllGroups(
+						{
+							i(242623, {	-- Enchanted Warbound Purifying Kit
+								["questID"] = 90710,
+								["cost"] = {{"c", 3149, 2000 }},	-- 2000x Displaced Corrupted Mementos
+							}),
+						},
+						bubbleDown({["modID"] = 84}, {
+							i(236892, {	-- Void-Touched Battle Staff
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236896, {	-- Void-Touched Blade
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236884, {	-- Void-Touched Bludgeon
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236894, {	-- Void-Touched Bow
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236901, {	-- Void-Touched Broadsword
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236900, {	-- Void-Touched Claws
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236898, {	-- Void-Touched Cleaver
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236903, {	-- Void-Touched Glaive
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236885, {	-- Void-Touched Gladius
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236902, {	-- Void-Touched Greatsword
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236897, {	-- Void-Touched Hacker
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236904, {	-- Void-Touched Lantern
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236888, {	-- Void-Touched Occular
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236891, {	-- Void-Touched Polearm
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236883, {	-- Void-Touched Pummeler
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236882, {	-- Void-Touched Ritual Knife
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236887, {	-- Void-Touched Sharpshooter
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236905, {	-- Void-Touched Shield
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236881, {	-- Void-Touched Shank
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236895, {	-- Void-Touched Spellblade
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236890, {	-- Void-Touched Spear
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236886, {	-- Void-Touched Sword
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236893, {	-- Void-Touched Stave
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236899, {	-- Void-Touched Wand
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236889, {	-- Void-Touched Waraxe
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+						})),
 				}),
 				n(238546, {	-- Rhythferr "NORMAL/Champion Quality Vendor"
 					["sourceAchievement"] = 41857,	-- Masked Soliloquy
 					["coord"] = { 34.1, 68.5, DORNOGAL },
-					["g"] = {
-						i(242622, {	-- Warbound Purifying Kit
-							["cost"] = {{"c", 3149, 1000 }},	-- 1000x Displaced Corrupted Mementos
-						}),
-					},
-					["g"] = bubbleDown({["modID"] = 82}, {
-						i(236892, {	-- Void-Touched Battle Staff
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236896, {	-- Void-Touched Blade
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236894, {	-- Void-Touched Bow
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236901, {	-- Void-Touched Broadsword
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236900, {	-- Void-Touched Claws
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236898, {	-- Void-Touched Cleaver
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236903, {	-- Void-Touched Glaive
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236885, {	-- Void-Touched Gladius
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236902, {	-- Void-Touched Greatsword
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236897, {	-- Void-Touched Hacker
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236904, {	-- Void-Touched Lantern
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236888, {	-- Void-Touched Occular
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236891, {	-- Void-Touched Polearm
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236883, {	-- Void-Touched Pummeler
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236882, {	-- Void-Touched Ritual Knife
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236887, {	-- Void-Touched Sharpshooter
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236905, {	-- Void-Touched Shield
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236881, {	-- Void-Touched Shank
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236895, {	-- Void-Touched Spellblade
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236890, {	-- Void-Touched Spear
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236886, {	-- Void-Touched Sword
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236893, {	-- Void-Touched Stave
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236899, {	-- Void-Touched Wand
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-						i(236889, {	-- Void-Touched Waraxe
-							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
-						}),
-					}),
+					["g"] = appendAllGroups(
+						{
+							i(242622, {	-- Warbound Purifying Kit
+								["questID"] = 90709,
+								["cost"] = {{"c", 3149, 1000 }},	-- 1000x Displaced Corrupted Mementos
+							}),
+						},
+						bubbleDown({["modID"] = 82}, {
+							i(236892, {	-- Void-Touched Battle Staff
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236896, {	-- Void-Touched Blade
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236884, {	-- Void-Touched Bludgeon
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236894, {	-- Void-Touched Bow
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236901, {	-- Void-Touched Broadsword
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236900, {	-- Void-Touched Claws
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236898, {	-- Void-Touched Cleaver
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236903, {	-- Void-Touched Glaive
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236885, {	-- Void-Touched Gladius
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236902, {	-- Void-Touched Greatsword
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236897, {	-- Void-Touched Hacker
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236904, {	-- Void-Touched Lantern
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236888, {	-- Void-Touched Occular
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236891, {	-- Void-Touched Polearm
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236883, {	-- Void-Touched Pummeler
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236882, {	-- Void-Touched Ritual Knife
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236887, {	-- Void-Touched Sharpshooter
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236905, {	-- Void-Touched Shield
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236881, {	-- Void-Touched Shank
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236895, {	-- Void-Touched Spellblade
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236890, {	-- Void-Touched Spear
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236886, {	-- Void-Touched Sword
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236893, {	-- Void-Touched Stave
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236899, {	-- Void-Touched Wand
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+							i(236889, {	-- Void-Touched Waraxe
+								["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+							}),
+						})),
 				}),
 				n(238545, {	-- TickTak "LFR/Veteran Quality Vendor"
 					["coord"] = { 33.9, 68.8, DORNOGAL },
@@ -583,6 +622,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
 						}),
 						i(236896, {	-- Void-Touched Blade
+							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
+						}),
+						i(236884, {	-- Void-Touched Bludgeon
 							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
 						}),
 						i(236894, {	-- Void-Touched Bow
@@ -656,24 +698,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				n(238138, {	-- Torie
 					["coord"] = { 34.4, 68.4, DORNOGAL },
 					["g"] = {
-						-- TODO: sort it out near live release, sorted via listing in vendor for easy self-navigation
-						-- 1
-						i(235711, {	-- Corruption of the Aspects (MOUNT!)
-							["cost"] = {{ "c", 3149, 40000 }},
-						}),
-						i(235980, {	-- Scourge of the Aspects (PET!)
-							["sourceAchievement"] = 41725,	-- We Have the Memories
-							["cost"] = {{ "c", 3149, 5000 }},
-						}),
-						i(238255, {	-- Bronze Dragonscale Backpack
-							["cost"] = {{ "c", 3149, 5000 }},
-						}),
-						i(174770, {	-- Wicked Swarmer (MOUNT!)
-							["cost"] = {{ "c", 3149, 20000 }},
-						}),
-						i(174361, {	-- Black Dragonscale Backpack
-							["cost"] = {{ "c", 3149, 2000 }},
-						}),
 						i(238666, {	-- Ashjra'kamas, The Corrupted
 							["cost"] = {{ "c", 3149, 1000 }},
 						}),
@@ -683,20 +707,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(238668, {	-- Ashjra'kamas, The Celestial
 							["cost"] = {{ "c", 3149, 2000 }},
 						}),
+						i(174361, {	-- Black Dragonscale Backpack
+							["cost"] = {{ "c", 3149, 2000 }},
+						}),
+						i(238255, {	-- Bronze Dragonscale Backpack
+							["cost"] = {{ "c", 3149, 5000 }},
+						}),
+						i(235711, {	-- Corruption of the Aspects (MOUNT!)
+							["cost"] = {{ "c", 3149, 40000 }},
+						}),
+						i(235980, {	-- Scourge of the Aspects (PET!)
+							["cost"] = {{ "c", 3149, 5000 }},
+						}),
+						i(174770, {	-- Wicked Swarmer (MOUNT!)
+							["cost"] = {{ "c", 3149, 20000 }},
+						}),
+						-- Cloth
+						i(236976, {	-- Vision Manipulator's Cinch
+							["cost"] = {{ "c", 3149, 400 }},
+						}),
 						i(237008, {	-- Vision Manipulator's Cloak
 							["cost"] = {{ "c", 3149, 400 }},
 						}),
-						i(237007, {	-- Cloak of the Insatiable Vision
-							["cost"] = {{ "c", 3149, 400 }},
-						}),
-						-- 2
-						i(237006, {	-- Vision Tormentor's Tentacles
-							["cost"] = {{ "c", 3149, 400 }},
-						}),
-						i(237005, {	-- Malignant Vision's Drape
-							["cost"] = {{ "c", 3149, 400 }},
-						}),
-						i(236993, {	-- Vision Manipulator's Robe
+						i(236994, {	-- Vision Manipulator's Cowl
 							["cost"] = {{ "c", 3149, 600 }},
 						}),
 						i(236973, {	-- Vision Manipulator's Footwraps
@@ -705,24 +738,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(236974, {	-- Vision Manipulator's Handwraps
 							["cost"] = {{ "c", 3149, 400 }},
 						}),
-						i(236994, {	-- Vision Manipulator's Cowl
-							["cost"] = {{ "c", 3149, 600 }},
-						}),
 						i(236975, {	-- Vision Manipulator's Leggings
 							["cost"] = {{ "c", 3149, 400 }},
 						}),
 						i(236995, {	-- Vision Manipulator's Mantle
 							["cost"] = {{ "c", 3149, 600 }},
 						}),
-						i(236976, {	-- Vision Manipulator's Cinch
-							["cost"] = {{ "c", 3149, 400 }},
+						i(236993, {	-- Vision Manipulator's Robe
+							["cost"] = {{ "c", 3149, 600 }},
 						}),
 						i(236977, {	-- Vision Manipulator's Wristwraps
 							["cost"] = {{ "c", 3149, 200 }},
 						}),
-						-- 3
+						-- Leather
 						i(236996, {	-- Chestguard of the Insatiable Vision
 							["cost"] = {{ "c", 3149, 600 }},
+						}),
+						i(237007, {	-- Cloak of the Insatiable Vision
+							["cost"] = {{ "c", 3149, 400 }},
 						}),
 						i(236978, {	-- Footpads of the Insatiable Vision
 							["cost"] = {{ "c", 3149, 400 }},
@@ -745,55 +778,61 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(236982, {	-- Wristwraps of the Insatiable Vision
 							["cost"] = {{ "c", 3149, 200 }},
 						}),
+						-- Mail
+						i(236986, {	-- Vision Tormentor's Belt
+							["cost"] = {{ "c", 3149, 400 }},
+						}),
 						i(236999, {	-- Vision Tormentor's Breastplate
 							["cost"] = {{ "c", 3149, 600 }},
 						}),
 						i(236983, {	-- Vision Tormentor's Footguards
 							["cost"] = {{ "c", 3149, 400 }},
 						}),
-						-- 4
 						i(236984, {	-- Vision Tormentor's Handguards
+							["cost"] = {{ "c", 3149, 400 }},
+						}),
+						i(236985, {	-- Vision Tormentor's Legguards
 							["cost"] = {{ "c", 3149, 400 }},
 						}),
 						i(237000, {	-- Vision Tormentor's Mask
 							["cost"] = {{ "c", 3149, 600 }},
 						}),
-						i(236985, {	-- Vision Tormentor's Legguards
-							["cost"] = {{ "c", 3149, 400 }},
-						}),
 						i(237001, {	-- Vision Tormentor's Spaulders
 							["cost"] = {{ "c", 3149, 600 }},
 						}),
-						i(236986, {	-- Vision Tormentor's Belt
+						i(237006, {	-- Vision Tormentor's Tentacles
 							["cost"] = {{ "c", 3149, 400 }},
 						}),
 						i(236987, {	-- Vision Tormentor's Vambraces
 							["cost"] = {{ "c", 3149, 200 }},
 						}),
+						-- Plate
+							i(236992, {	-- Malignant Vision's Armguards
+							["cost"] = {{ "c", 3149, 200 }},
+						}),
 						i(237002, {	-- Malignant Vision's Chestplate
 							["cost"] = {{ "c", 3149, 600 }},
 						}),
-						i(236988, {	-- Malignant Vision's Stompers
+						i(236989, {	-- Malignant Vision's Crushers
 							["cost"] = {{ "c", 3149, 400 }},
 						}),
-						i(236989, {	-- Malignant Vision's Crushers
+						i(237005, {	-- Malignant Vision's Drape
+							["cost"] = {{ "c", 3149, 400 }},
+						}),
+						i(236991, {	-- Malignant Vision's Greatbelt
 							["cost"] = {{ "c", 3149, 400 }},
 						}),
 						i(237003, {	-- Malignant Vision's Headguard
 							["cost"] = {{ "c", 3149, 600 }},
 						}),
-						-- 5
-						i(236990, {	-- Malignant Vision's Wargreaves
-							["cost"] = {{ "c", 3149, 400 }},
-						}),
 						i(237004, {	-- Malignant Vision's Spaulders
 							["cost"] = {{ "c", 3149, 600 }},
 						}),
-						i(236991, {	-- Malignant Vision's Greatbelt
+						i(236988, {	-- Malignant Vision's Stompers
 							["cost"] = {{ "c", 3149, 400 }},
 						}),
-						i(236992, {	-- Malignant Vision's Armguards
-							["cost"] = {{ "c", 3149, 200 }},
+						i(236990, {	-- Malignant Vision's Wargreaves
+							["cost"] = {{ "c", 3149, 400 }},
 						}),
 					},
 				}),
@@ -943,7 +982,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["g"] = {
 								i(242648),	-- Black Blood Coagulate
 								i(240186),	-- Depleted Void Crystal
-								i(232919),	-- Faceless Mask of Dark Imagination (QI!/QS!)
+								i(232919, {	-- Faceless Mask of Dark Imagination (QI!/QS!)
+									["description"] = "Granted by completing Mage Quarter, with at least one mask active.",
+								}),
 								i(174458),	-- Void-Scarred Hare (PET!)
 							},
 						}),
@@ -953,7 +994,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["g"] = {
 								i(242648),	-- Black Blood Coagulate
 								i(235794),	-- Eye of Chaos (PET!)
-								i(232920),	-- Faceless Mask of the Pained (QI!/QS!)
+								i(232920, {	-- Faceless Mask of the Pained (QI!/QS!)
+									["description"] = "Granted by completing Old Town, with at least one mask active.",
+								}),
 								i(240183),	-- Twisted Skull-Scythe Handlebars
 								i(239105, {	-- Unusual Gems
 									["description"] = "Can only drop if you have at least 1 mask active.",
@@ -964,6 +1007,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["description"] = "Chest for completing the Cathedral Objective/Alleria.",
 							["coord"] = { 41.6, 34.4, RE_HORRIFIC_STORMWIND },
 							["g"] = {
+								i(232921, {	-- Faceless Mask of the Long Night (QI!/QS!)
+									["description"] = "Granted by completing all five districts within a single visit.",
+								}),
+								i(235414, {	-- Faceless Mask of Multitudes (QS!/QI!)
+									["description"] = "Granted by completing all five districts and killing every last NPC, with at least one mask active.",
+								}),
 								i(174459),	-- Void-Scarred Cat (PET!)
 							},
 						}),
@@ -980,28 +1029,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["g"] = { i(174926) },	-- Overly Sensitive Void Spectacles (TOY!)
 						}),
 						n(241698, {	-- Hogger
-							["description"] = "Interact with his WANTED poster just to the right of the entrance to the Mage Quarter area",
-							--["coord"] = { X, Y, RE_HORRIFIC_STORMWIND },
-							["g"] = {
-								i(239157),	-- Nemesis Shard (HOGGER)
-							},
+							["description"] = "Interact with his WANTED poster just to the right of the entrance to the Mage Quarter area\n\nRequires an active Mask",
+							["coord"] = { 55.8, 75.2, RE_HORRIFIC_STORMWIND },
+							["g"] = { i(239157) },	-- Nemesis Shard (HOGGER)
 						}),
 						n(241718, {	-- Vengeful Voidspeaker
-							--["coord"] = { X, Y, RE_HORRIFIC_STORMWIND },
+							["coord"] = { 71.0, 70.0, RE_HORRIFIC_STORMWIND },
 							["g"] = {
 								i(238260, {	-- Faceless Mask of Vengeance (QI!/QS!)
-									["description"] = "Need at least one mask active",
+									["description"] = "Requires an active Mask",
 								}),
 							},
 						}),
 						n(242639, {	-- Voidfire Deathcycle Frame
-							["description"] = "Must be tagged to start progress towards unlocking the mount, will only be visible with at least one mask active.",
+							["description"] = "Must be tagged to start progress towards unlocking the mount\n\nRequires an active Mask",
 							["coord"] = { 62.5, 32.0, RE_HORRIFIC_STORMWIND },
 							["cr"] = 242570,	-- Haymar the Devout
 							["questID"] = 90129,
 						}),
 						n(238079, {	-- Void-Forged Stallion
-							["description"] = "Interact with Cursed Horseshoes around Stormwind's districts to gain a stacking buff, visit the blacksmithing area in the Dwarven District to summon the rare when you have 4 stacks.\n\nHorseshoes are only visible with at least one mask active.",
+							["description"] = "Interact with Cursed Horseshoes around Stormwind's districts to gain a stacking buff, visit the blacksmithing area in the Dwarven District to summon the rare when you have 4 stacks.\n\nRequires an active Mask",
 							["providers"] = {
 								{ "o", 517344 },	-- Cursed Horseshoe (Cathedral)
 								{ "o", 517350 },	-- Cursed Horseshoe (Old Town)
@@ -1019,13 +1066,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						}),
 						header(HEADERS.Item, 235700, {	-- Reins of the Void-Scarred Gryphon
 							n(237918, {	-- Claw Marked Bowl
-								["description"] = "Interact with the nearby Ripped Note to read the clue then place the desired item into the bowl to spawn the rare.\n...fish: Fresh Fillet\n...fungus: Chopped Mycobloom\n...meat that has been spiced: Spiced Meat Stock\n...steak: Portioned Steak\n\nThe note and bowl are only visible with at least three masks active.",
+								["description"] = "Interact with the nearby Ripped Notes (top of ramp, right of inquisitor) to read the clues then place the desired item into the bowl and rattle it to spawn the rare.\n...fish: Fresh Fillet (Raw) / Skewered Fillet (Cooked)\n...fungus: Chopped Mycobloom (Raw) / Roasted Mycobloom (Cooked)\n...meat that has been spiced: Spiced Meat Stock (Raw) / Simple Stew (Cooked)\n...steak: Portioned Steak (Raw) / Unseasoned Field Steak (Cooked)\n\nThe notes and bowl are only visible with at least two masks active.",
 								["coord"] = { 66.0, 70.8, RE_HORRIFIC_STORMWIND },
 								["cost"] = {
 									{ "i",  222737, 1 },	-- 1x Chopped Mycobloom
 									{ "i",  222741, 1 },	-- 1x Fresh Fillet
 									{ "i",  222738, 1 },	-- 1x Portioned Steak
+									{ "i",  222705, 1 },	-- 1x Roasted Mycobloom
+									{ "i",  222703, 1 },	-- 1x Simple Stew
+									{ "i",  222702, 1 },	-- 1x Skewered Fillet
 									{ "i",  222739, 1 },	-- 1x Spiced Meat Stock
+									{ "i",  222704, 1 },	-- 1x Unseasoned Field Steak
 								},
 							}),
 							n(237991, {	-- Void-Scarred Gryphon
@@ -1035,8 +1086,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						}),
 					}),
 					n(TREASURES, {
-						i(240191, {	-- Magic-Lined Manifold TODO - Almost certainly has an object container
+						o(529673, {	-- Unclaimed Auction House Crate
+							["questID"] = 90525,
 							["coord"] = { 61.5, 72.7, RE_HORRIFIC_STORMWIND },
+							["g"] = {
+								i(240191),	-- Magic-Lined Manifold
+							},
 						}),
 						i(174928, {	-- Rotten Apple (TOY!)
 							["description"] = "Repeatedly click the bouncing apples at the coordinates provided.  Supposedly, clicking them 100 times will guarantee that the toy is in your final chest, but any click should give you a chance if you're running short on time.",
@@ -1080,30 +1135,30 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(85831),	-- Mage Quarter
 		q(85832),	-- Old Town
 		--
-		--q(90528),	-- either hqt to pop thing for moto or mask drop hqt after clearing up old town (with Long Night mask)
-		--q(90524),	-- either hqt to pop thing for moto or mask drop hqt after clearing up mage quarter (with Long Night mask)
+		q(90528, {name="Old Town & Mask"}),	-- either hqt to pop thing for moto or mask drop hqt after clearing up old town (with Long Night mask)
+		q(90524, {name="Mage Quarter & Mask"}),	-- either hqt to pop thing for moto or mask drop hqt after clearing up mage quarter (with Long Night mask)
 		--q(90531),	-- pop with delay after Alleria was killed (all district was cleared with Long Night mask), when was moved into chests room
 		--^ one of it could be tribute upgrade?
 		q(87389),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
 		q(88905),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
 		--87389 & 88905 also pop on 2nd run (without quests in stormwind)
 		--q(88906),	-- ???
-		--q(88907),	-- All district was cleared (without masks), pop after killing Alleria // one of it mask sourceQuest
-		--q(87387),	-- All district was cleared (without masks), pop after killing Alleria // or veteran vendor unlock? / champion piece lockout?
-		--q(88908),	-- All district was cleared  (with Long Night mask), pop after killing Alleria // one of it could be champion vendor unlock?
-		--q(87382),	-- All district was cleared  (with Long Night mask), pop after killing Alleria // one of it could be champion vendor unlock? / champion piece lockout?
-		--q(87384),	-- All district was cleared  (3 masks), pop after killing Thrall // reward lockout questID?
-		--q(88910),	-- All district was cleared  (3 masks), pop after killing Thrall // reward lockout questID?
-		--q(87385),	-- All district was cleared  (4 masks), pop after killing Thrall // reward lockout questID?
-		--q(88911),	-- All district was cleared  (4 masks), pop after killing Thrall // reward lockout questID?
-		--q(87386),	-- All district was cleared  (5 masks), pop after killing Thrall // reward lockout questID?
-		--q(88912),	-- All district was cleared  (5 masks), pop after killing Thrall // reward lockout questID?
+		q(87387, {name="Completion"}),	-- All district was cleared (without masks), pop after killing Alleria // or veteran vendor unlock? / champion piece lockout?
+		q(88907, {name="Completion"}),	-- All district was cleared (without masks), pop after killing Alleria // one of it mask sourceQuest
+		q(87382, {name="Completion & 1 Mask"}),	-- All district was cleared  (with Long Night mask), pop after killing Alleria // one of it could be champion vendor unlock? / champion piece lockout?
+		q(88908, {name="Completion & 1 Mask"}),	-- All district was cleared  (with Long Night mask), pop after killing Alleria // one of it could be champion vendor unlock?
+		q(87383, {name="Completion & 2 Mask"}),
+		q(88909, {name="Completion & 2 Mask"}),
+		q(87384, {name="Completion & 3 Mask"}),	-- All district was cleared  (3 masks), pop after killing Thrall // reward lockout questID?
+		q(88910, {name="Completion & 3 Mask"}),	-- All district was cleared  (3 masks), pop after killing Thrall // reward lockout questID?
+		q(87385, {name="Completion & 4 Mask"}),	-- All district was cleared  (4 masks), pop after killing Thrall // reward lockout questID?
+		q(88911, {name="Completion & 4 Mask"}),	-- All district was cleared  (4 masks), pop after killing Thrall // reward lockout questID?
+		q(87386, {name="Completion & 5 Mask"}),	-- All district was cleared  (5 masks), pop after killing Thrall // reward lockout questID?
+		q(88912, {name="Completion & 5 Mask"}),	-- All district was cleared  (5 masks), pop after killing Thrall // reward lockout questID?
 		--
 		--q(90530),	-- pop after clearing Valley of Wisdom with 2 masks (new masks sourceQuest?)
 		--q(90529),	-- pop after killing Rexxar with 3 masks (mask sourceQuest?)
 		--
-		-- q(90709),	-- after using itemID 242622 (Warbound Purifying Kit)
-		-- q(90710),	-- after using itemID 242623 (Enchanted Warbound Purifying Kit)
 
 		-- combine things for byke
 		--q(),	--

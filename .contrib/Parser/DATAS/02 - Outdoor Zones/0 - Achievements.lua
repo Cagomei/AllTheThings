@@ -326,6 +326,9 @@ root(ROOTS.Zones, {
 					13275,	-- Magician's Secrets
 					13278,	-- Not Quite Dead Yet
 				}},
+				["groups"] = {
+					i(165907),	-- Wicker Wraith (PET!)
+				},
 			})),
 			petbattle(ach(13270, {	-- Beast Mode
 				crit(43620, {	-- Burly
@@ -1342,7 +1345,7 @@ root(ROOTS.Zones, {
 				-- ["coord"] = { X, Y, MAP },
 			}),
 		})),
-		
+
 		petbattle(ach(6607, {	-- Taming Azeroth
 			["sym"] = {{"meta_achievement",
 				6604,	-- Taming Outland

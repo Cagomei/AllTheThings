@@ -17,10 +17,17 @@ local INSANE_IN_THE_MEMBRANE_OnInit = [[function(t)
 				809,
 			}) do
 				local f = _.SearchForField("factionID", factionID);
-				if f and #f > 0 then
-					tinsert(factions, f and f[1] or _.CreateFaction(factionID));
+				if f then
+					for k=1,#f,1 do
+						local o = f[k];
+						if o.key == "factionID" then
+							tinsert(factions, o);
+							break;
+						end
+					end
+					
 				else
-					return;
+					tinsert(factions, _.CreateFaction(factionID));
 				end
 			end
 			local bloodsail = _.CreateFaction( ]] .. FACTION_BLOODSAIL_BUCCANEERS .. [[ );

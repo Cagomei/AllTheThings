@@ -104,6 +104,21 @@ namespace ATT
                 }
             }
 
+            // ItemConversionDB
+            if (TypeDB.TryGetValue("ItemBonus", out IDictionary<long, IDBType> wagoItemBonusDb))
+            {
+                var itemConversionDB = new Dictionary<long, object>();
+                Exports.Add("ItemConversionDB", itemConversionDB);
+                if (Exports.TryGetValue("_Compressed", out IDictionary<string, object> compressed))
+                {
+                    compressed.Add("ItemConversionDB", true);
+                }
+                foreach (var obj in wagoItemBonusDb.Values.AsTypedEnumerable<ItemBonus>().Where(i => i.Type == 37))
+                {
+                    itemConversionDB[obj.ParentItemBonusListID] = obj.Value_0;
+                }
+            }
+
             // Go through all of the items in the database and calculate the Filter ID
             // if the Filter ID is not already assigned. (manual assignment should always override this)
             foreach (var data in Items.AllItems)

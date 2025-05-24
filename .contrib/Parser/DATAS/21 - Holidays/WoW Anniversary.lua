@@ -213,6 +213,21 @@ WOW_ANNIVERSARY_TWENTY = createHeader({
 		en = WOWAPI_GetAchievementName(41220),
 	},
 });
+--[[
+WOW_ANNIVERSARY_TWENTYONE = createHeader({
+	readable = "WoW's 21st Anniversary",
+	icon = 133783,
+	eventID = 1501,
+	eventSchedule = {
+		0, -- November 16th through December 7th
+		2025, 11, 16,	-- 11/16/2025
+		2025, 12, 07,	-- 12/07/2025
+	},
+	-- text = {
+	-- 	en = WOWAPI_GetAchievementName(41220),
+	-- },
+});
+]]--
 local BRONZE_TOKEN = 3100;
 
 ------ Encounter Constants ------
@@ -3507,7 +3522,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(84312),	-- Bonus chance for Grand Black War Mammoth from Doomwalker/Archavon on first kill per day
 		q(86398),	-- Bonus chance for Illidary Doomhawk from Doomwalker on first kill per day
 		q(85723),	-- first WB kill of day/event or maybe Doomwalker
-		q(85168),	-- fourth WB kill of day/event or mayba Kazzak
+		q(85168),	-- fourth WB kill of day/event or maybe Kazzak
 		q(84878),	-- triggered with turnin of 'Chromie's Codex' [82783] (Bronze Cel Cache lockout?)
 		q(84665),	-- triggered with turnin of 'Timely Gate Crashers' [60215] (Bronze Cel Cache lockout?)
 		q(86202, name(HEADERS.Item, 233014)),	-- opening first Bronze Celebration Cache of week

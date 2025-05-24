@@ -101,9 +101,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(2, {	-- Stormwind City, Elwynn
 					["cr"] = 352,	-- Dungar Longdrink <Gryphon Master>
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 71.0, 72.6, STORMWIND_CITY },
-						-- #elseif AFTER WRATH
+						-- #if AFTER WRATH
 						{ 71.0, 72.5, STORMWIND_CITY },
 						-- #else
 						{ 66.2, 62.4, STORMWIND_CITY },
@@ -1053,7 +1051,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(29412, {	-- Blown Away
 					["qg"] = 54117,	-- Vin
-					["coord"] = { 58.8, 52.8, STORMWIND_CITY },
+					["coord"] = { 58.9, 52.7, STORMWIND_CITY },
 					["timeline"] = { ADDED_4_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1385,7 +1383,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6261, {	-- Dungar Longdrink
 					["providers"] = {
 						{ "n", 1323 },	-- Osric Strang
-						{ "i", 16115 },	-- Osric's Crate
+						{ "i", 16115 },	-- Osric's Crate (PQI!)
 					},
 					["sourceQuest"] = 6281,	-- Continue to Stormwind
 					["coords"] = {
@@ -1405,12 +1403,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26395, {	-- Dungar Longdrink
 					["providers"] = {
 						{ "n", 1323 },	-- Osric Strang
-						{ "i", 16115 },	-- Osric's Crate
+						{ "i", 16115 },	-- Osric's Crate (PQI!)
 					},
 					["sourceQuest"] = 26394,	-- Continue to Stormwind
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 77.0, 61.2, STORMWIND_CITY },
+						{ 77.2, 61.0, STORMWIND_CITY },
 						-- #else
 						{ 74.2, 47.6, STORMWIND_CITY },
 						-- #endif
@@ -1826,12 +1824,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(333, {	-- Harlan Needs a Resupply
 					["providers"] = {
 						{ "n", 1427 },	-- Harlan Bagley
-						{ "i", 2724 },	-- Cloth Request
+						{ "i", 2724 },	-- Cloth Request (PQI!)
 					},
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 62.2, 67.8, STORMWIND_CITY },
-						-- #elseif AFTER WRATH
+						-- #if AFTER WRATH
 						{ 62.3, 67.9, STORMWIND_CITY },
 						-- #else
 						{ 55.1, 56.0, STORMWIND_CITY },
@@ -2529,9 +2525,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 2760 },	-- Thurman's Sewing Kit
 					},
 					["coords"] = {
-						-- #if AFTER LEGION
-						{ 58.0, 67.2, STORMWIND_CITY },
-						-- #elseif AFTER WRATH
+						-- #if AFTER WRATH
 						{ 58.1, 67.5, STORMWIND_CITY },
 						-- #else
 						{ 49.5, 55.3, STORMWIND_CITY },
@@ -2646,7 +2640,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26396, {	-- Return to Argus
 					["providers"] = {
 						{ "n", 352 },	-- Dungar Longdrink <Gryphon Master>
-						{ "i", 16115 },	-- Osric's Crate
+						{ "i", 16115 },	-- Osric's Crate (PQI!)
 					},
 					["sourceQuest"] = 26395,	-- Dungar Longdrink
 					["coord"] = { 71.0, 72.6, STORMWIND_CITY },
@@ -2657,7 +2651,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6285, {	-- Return to Lewis
 					["providers"] = {
 						{ "n", 352 },	-- Dungar Longdrink <Gryphon Master>
-						{ "i", 16115 },	-- Osric's Crate
+						{ "i", 16115 },	-- Osric's Crate (PQI!)
 					},
 					["sourceQuest"] = 6261,	-- Dungar Longdrink
 					["coords"] = {
@@ -2905,7 +2899,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(353, {	-- Stormpike's Delivery
 					["providers"] = {
 						{ "n", 1416 },	-- Grimand Elmore
-						{ "i", 2806 },	-- Package for Stormpike
+						{ "i", 2806 },	-- Package for Stormpike (PQI!)
 					},
 					["sourceQuest"] = 1097,	-- Elmore's Task
 					["coords"] = {
@@ -4179,15 +4173,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(332, {	-- Wine Shop Advert
 					["providers"] = {
 						{ "n", 1432 },	-- Renato Gallina
-						{ "i", 2722 },	-- Wine Ticket
+						{ "i", 2722 },	-- Wine Ticket (PQI!)
 					},
 					-- #if BEFORE CATA
 					["sourceQuest"] = 61,	-- Shipment to Stormwind
 					-- #endif
 					["coords"] = {
-						-- #if AFTER LEGION
-						{ 63.8, 73.4, STORMWIND_CITY },
-						-- #elseif AFTER WRATH
+						-- #if AFTER WRATH
 						{ 63.8, 73.6, STORMWIND_CITY },
 						-- #else
 						{ 57.0, 63.4, STORMWIND_CITY },
@@ -4317,7 +4309,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(112958, {	-- Soulare of Andorhal
 					["description"] = "Emote |cFFFFFFFF/tired|r at him to get the toy.  Horde players can do this, too!",
-					["coord"] = { 38.2, 64.6, STORMWIND_CITY },
+					["coord"] = { 38.1, 64.4, STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["groups"] = {
 						i(117573, {	-- Wayfarer's Bonfire (TOY!)
@@ -4599,7 +4591,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(1302, {	-- Bernard Gump <Florist>
 					["coords"] = {
-						-- #if AFTER WRATH
+						-- #if AFTER CATA
+						{ 69.2, 71.8, STORMWIND_CITY },
+						-- #elseif AFTER WRATH
 						{ 69.6, 71.4, STORMWIND_CITY },
 						-- #else
 						{ 64.2, 61.0, STORMWIND_CITY },
@@ -5193,6 +5187,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(20856, {	-- Design: Heavy Golden Necklace of Battle (RECIPE!)
 							["isLimited"] = true,
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 					},
 				}),
@@ -5464,7 +5459,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				n(1303, {	-- Felicia Gump <Herbalism Supplier>
 					["coords"] = {
-						-- #if AFTER WRATH
+						-- #if AFTER CATA
+						{ 69.3, 71.4, STORMWIND_CITY },
+						-- #elseif AFTER WRATH
 						{ 64.2, 60.6, STORMWIND_CITY },
 						-- #else
 						{ 64.2, 60.6, STORMWIND_CITY },
@@ -5484,7 +5481,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(179896, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Finn
-					["coord"] = { 61.0, 65.0, STORMWIND_CITY },
+					["coord"] = { 61.6, 65.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(187009),	-- Dazzling Spectacles
@@ -6680,7 +6677,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_6_0_2 },
 				},{
-					["coord"] = { 73.0, 59.3, STORMWIND_CITY },
+					["coord"] = { 73.0, 59.5, STORMWIND_CITY },
 					["groups"] = {
 						i(116789, {	-- Champion's Treadblade (MOUNT!)
 							["cost"] = 1000000000,	-- 100,000g
@@ -6798,6 +6795,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(5976),	-- Guild Tabard
+						i(210469, {	-- Personal Tabard
+							["timeline"] = { ADDED_10_2_7 },
+						}),
 					},
 				}),
 				n(277, {	-- Roberto Pupellyverbos <Merlot Connoisseur>
@@ -6998,6 +6998,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(79740),	-- Plain Wooden Staff
+						i(1515),	-- Rough Wooden Staff
 						i(39489, {	-- Scribe's Satchel
 							["isLimited"] = true,
 						}),

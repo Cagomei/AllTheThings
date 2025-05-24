@@ -2184,6 +2184,7 @@ i(236925);	-- Satchel of Carved Harbinger Crests
 i(237332);	-- Single-Use Grill
 i(234616);	-- Supreme Mangoro Madness
 i(228195);	-- Tattered Goblin Cap
+i(241616);	-- The Underpin
 i(237313);	-- Totally Legit Samophlange
 i(231899);	-- Trash
 i(236921);	-- Triumphant Satchel of Carved Harbinger Crests

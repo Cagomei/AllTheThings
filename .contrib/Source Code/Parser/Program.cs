@@ -112,22 +112,29 @@ namespace ATT
                 do
                 {
                     Errored = false;
+
                     // Load all of the RAW JSON Data into the database.
-                    var wagoDirectory = Framework.Config["wago-directory"];
-                    if (!string.IsNullOrWhiteSpace(wagoDirectory))
+                    var directories = Framework.Config["wago-directories"];
+                    if (directories != null)
                     {
-                        Trace.WriteLine($"Loading Wago DB CSV files from {wagoDirectory}.");
-                    }
-                    var files = Directory.EnumerateFiles(wagoDirectory, "*.csv", SearchOption.AllDirectories).ToList();
+                        var filenames = new List<string>();
+                        foreach (var wagoDirectory in (string[])directories)
+                        {
+                            if (!string.IsNullOrWhiteSpace(wagoDirectory))
+                            {
+                                Trace.WriteLine($"Loading Wago DB CSV files from {wagoDirectory}.");
+                                filenames.AddRange(Directory.GetFiles(wagoDirectory, "*.csv", SearchOption.AllDirectories));
+                            }
+                        }
+                        filenames.Sort(StringComparer.InvariantCulture);
+                        foreach (var filename in filenames) Framework.ParseWagoCSV(filename);
 
-                    files.Sort(StringComparer.InvariantCulture);
-                    foreach (var f in files) ParseWagoDbCsvFile(f);
-
-                    if (Errored)
-                    {
-                        Trace.WriteLine("Please re-download the above Invalid CSV file(s) from wago.tools/db2");
-                        Trace.WriteLine("Press Enter once you have resolved the issue.");
-                        Framework.WaitForUser();
+                        if (Errored)
+                        {
+                            Trace.WriteLine("Please re-download the above Invalid CSV file(s) from wago.tools/db2");
+                            Trace.WriteLine("Press Enter once you have resolved the issue.");
+                            Framework.WaitForUser();
+                        }
                     }
                 }
                 while (Errored && !Framework.Automated);
@@ -378,17 +385,6 @@ namespace ATT
                     Framework.Objects.MAPID_COORD_SHIFTS.Remove(key);
                 }
             }
-        }
-
-        private static void ParseWagoDbCsvFile(string f)
-        {
-            // Ignore Wago DB files if not on Retail... they're always latest so can't be used for older versions
-            //if (!((string[])Framework.Config["PreProcessorTags"]).Contains("RETAIL")) return;
-
-            string csv = File.ReadAllText(f);
-            string type = f.Substring(f.LastIndexOf('\\') + 1);
-            type = type.Substring(0, type.IndexOf('.'));
-            Framework.ParseWagoCsv(type, csv);
         }
 
         private static void HandleParserArgument(string name, string value)

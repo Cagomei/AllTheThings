@@ -734,7 +734,7 @@ local InformationTypes = {
 			local awp = t.GetValue(t, reference);
 			if awp then
 				if awp > app.GameBuildVersion then
-					tinsert(tooltipInfo, 1, { left = Colorize(L.READDED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(awp)), app.Colors.AddedWithPatch)});
+					tinsert(tooltipInfo, { left = Colorize(L.READDED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(awp)), app.Colors.AddedWithPatch)});
 				else
 					tinsert(tooltipInfo, { left = t.text, right = Colorize(GetPatchString(awp), app.Colors.AddedWithPatch)});
 				end
@@ -747,7 +747,7 @@ local InformationTypes = {
 			local rwp = reference.rwp;	-- NOTE: For Retail, namely pre-Cata, this can't be recursive!
 			if rwp then
 				if app.GameBuildVersion < rwp then
-					tinsert(tooltipInfo, 1, { left = Colorize(L.REMOVED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(rwp)), app.Colors.RemovedWithPatch)});
+					tinsert(tooltipInfo, { left = Colorize(L.REMOVED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(rwp)), app.Colors.RemovedWithPatch)});
 				else
 					tinsert(tooltipInfo, { left = t.text, right = Colorize(GetPatchString(rwp), app.Colors.RemovedWithPatch)});
 				end
@@ -1238,7 +1238,8 @@ settings.CreateInformationType("LinkSourceID", {
 	text = "DEBUG: Link SourceID",
 	HideCheckBox = not app.Debugging,
 	Process = function(t, data, tooltipInfo)
-		local link, source = data.link or data.silentLink, data.sourceID;
+		local link, source = data.link or data.silentLink, data.sourceID
+		local rowSource = app.ActiveRowReference and app.ActiveRowReference.sourceID
 		if not link then return; end
 		local itemName = GetItemInfo(link)
 		-- If it doesn't, the source ID will need to be harvested.
@@ -1252,10 +1253,17 @@ settings.CreateInformationType("LinkSourceID", {
 				app.SaveHarvestSource(data);
 			end
 		end
+		local matchingSourceIDs = true
+		if rowSource and source and sourceID then
+			if rowSource ~= source or source ~= sourceID or rowSource ~= sourceID then
+				matchingSourceIDs = false
+			end
+		end
 		tinsert(tooltipInfo, {
 			left = Colorize("Link Source", success and app.Colors.ChatLinkHQT or app.Colors.ChatLinkError).." / "
 				..Colorize("Item Info", itemName and app.Colors.ChatLinkHQT or app.Colors.ChatLinkError),
-			right = "Sourced:"..(source or "?").." / Checked:"..(sourceID or "?")
+			right = Colorize("RowSource:"..(rowSource or "?").." / Sourced:"..(source or "?").." / Checked:"..(sourceID or "?"),
+				matchingSourceIDs and app.Colors.ChatLinkHQT or app.Colors.ChatLinkError)
 		});
 	end
 })

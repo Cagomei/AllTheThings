@@ -505,7 +505,7 @@ local FillGroups = function(group)
 		-- Debug = group.itemID == 207026
 	};
 
-	-- app.PrintDebug("FillGroups",group.__type,app:SearchLink(group))
+	-- app.PrintDebug("FillGroups",group.__type,group,app:SearchLink(group))
 	-- app.PrintTable(FillData)
 
 	-- Fill the group with all nestable content
@@ -566,6 +566,7 @@ local function TryFillPopoutGroup(group)
 		app.SetSkipLevel(2)
 		FillGroups(group)
 		app.SetSkipLevel(0)
+	-- else app.PrintDebug("already filled",app:SearchLink(group))
 	end
 end
 app.AddEventHandler("OnNewPopoutGroup", TryFillPopoutGroup)

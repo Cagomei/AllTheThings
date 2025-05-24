@@ -77,6 +77,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					}),
 				})),
 				n(TREASURES, {
+					o(493375, {	-- Rune-Sealed Coffer
+						["coord"] = { 67.8, 73.5, SIREN_ISLE },
+						["questID"] = 86171,
+						["isWeekly"] = true,
+					}),
 				}),
 				n(WORLD_QUESTS, {
 					["sourceQuests"] = {

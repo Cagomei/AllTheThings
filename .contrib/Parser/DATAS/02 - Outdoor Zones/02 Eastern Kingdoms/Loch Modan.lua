@@ -310,6 +310,62 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(417, {	-- A Pilot's Revenge
+					["providers"] = {
+						{ "o", 2059 },	-- A Dwarven Corpse
+						{ "i", 3117 },	-- Hildelve's Journal (PQI!)
+					},
+					["sourceQuest"] = 419,	-- The Lost Pilot
+					["coord"] = { 79.7, 36.2, DUN_MOROGH },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 8,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mangy Claw
+							["provider"] = { "i", 3183 },	-- Mangy Claw (QI!)
+							["coord"] = { 78.34, 37.74, DUN_MOROGH },
+							["cr"] = 1961,	-- Mangeclaw
+						}),
+						i(2218, {	-- Craftsman's Dagger
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
+						i(1009, {	-- Compact Hammer
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
+					},
+				}),
+				q(26855, {	-- A Pilot's Revenge
+					["providers"] = {
+						{ "o", 2059 },	-- A Dwarven Corpse
+						{ "i", 3117 },	-- Hildelve's Journal (PQI!)
+					},
+					["sourceQuest"] = 26854,	-- The Lost Pilot
+					["coord"] = { 87.6, 50.2, DUN_MOROGH },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mangy Claw
+							["provider"] = { "i", 3183 },	-- Mangy Claw (QI!)
+							["coord"] = { 87.4, 49.2, DUN_MOROGH },
+							["cr"] = 1961,	-- Mangeclaw
+						}),
+						i(57560, {	-- Mangy Claw Mitts
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(57566, {	-- Siege Engineer's Belt
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(57562, {	-- Hammerfoot's Plate Leggings
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(57563, {	-- South Gate Blunderbuss
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(131612, {	-- Siege Engineer's Waistband
+							["timeline"] = { ADDED_7_0_3 },
+						}),
+					},
+				}),
 				q(26843, {	-- A Tiny, Clever Commander
 					["qg"] = 1343,	-- Mountaineer Stormpike
 					["sourceQuest"] = 13636,	-- Stormpike's Orders
@@ -857,7 +913,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6387, {	-- Honor Students
 					["providers"] = {
 						{ "n", 1681 },	-- Brock Stoneseeker
-						{ "i", 16310 },	-- Brock's List
+						{ "i", 16310 },	-- Brock's List (PQI!)
 					},
 					["coord"] = { 37, 47.8, LOCH_MODAN },
 					["races"] = { DWARF, GNOME },
@@ -1192,7 +1248,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26131, {	-- Reinforcements for Loch Modan
 					["qg"] = 1959,	-- Mountaineer Barleybrew
-					["coord"] = { 41.8, 52.2, IRONFORGE },
+					["coord"] = { 41.4, 52.3, IRONFORGE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1252,9 +1308,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/7 Mo'grosh Ogre slain
 							["providers"] = {
-								{ "n", 44758},	-- Mo'grosh Darkmauler
-								{ "n", 14267},	-- Emogg the Crusher
-								{ "n", 44760},	-- Mo'grosh Earthbender
+								{ "n", 44758 },	-- Mo'grosh Darkmauler
+								{ "n", 14267 },	-- Emogg the Crusher
+								{ "n", 44760 },	-- Mo'grosh Earthbender
 							},
 						}),
 					},
@@ -1267,9 +1323,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13635, {	-- South Gate Status Report
-					["qg"] = 1960,	-- Pilot Hammerfoot
+					["providers"] = {
+						{ "n",  1960 },	-- Pilot Hammerfoot
+						{ "i", 60494 },	-- South Gate Status Report (PQI!)
+					},
 					["sourceQuest"] = 26855,	-- A Pilot's Revenge
-					["coord"] = { 14.0, 56.4, LOCH_MODAN },
+					["coord"] = { 14.0, 56.5, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1370,7 +1429,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26131,	-- Reinforcements for Loch Modan
 						28567,	-- Hero's Call: Loch Modan!
 					},
-					["coord"] = { 14.0, 56.6, LOCH_MODAN },
+					["coord"] = { 14.0, 56.5, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

@@ -164,6 +164,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					n(EVENT_COMPLETION, {
 						i(172491),	-- Papi (PET!)
 						i(172492),	-- Sunsoaked Flitter (PET!)
+						i(172448),	-- Super Sticky Honey
 						i(170175),	-- Technique: Glyph of Dire Bees (RECIPE!)
 					}),
 				},

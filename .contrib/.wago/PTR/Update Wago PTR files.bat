@@ -6,6 +6,7 @@ call :download Criteria
 call :download CriteriaTree
 call :download GlyphProperties
 call :download Item
+call :download ItemBonus
 call :download ItemEffect
 call :download ItemModifiedAppearance
 call :download ItemXItemEffect
@@ -17,6 +18,8 @@ call :download TransmogSet
 call :download TransmogSetItem
 call :download WorldMapOverlay
 
+@REM Cleanup the ItemBonus file
+call "..\Release\net8.0\CSVCleaner.exe" "%~dp0\ItemBonus.csv" "..\ItemBonus.regex"
 @REM Cleanup the SpellEffect file
 call "..\Release\net8.0\CSVCleaner.exe" "%~dp0\SpellEffect.csv" "..\SpellEffect.regex"
 exit /b

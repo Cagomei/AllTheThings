@@ -6967,10 +6967,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 		}),
 		n(VENDORS, {
 			n(239840, {	-- Churbro <Timewalking Vendor>
-				--["coords"] = {
-				--{ X, Y, BORALUS },	-- Alliance
-				--{ 46.1, 94.9, ZULDAZAR },	-- Horde
-				--},
+				["coords"] = {
+					{ 70.8, 17.3, BORALUS },	-- Alliance
+					{ 46.1, 94.9, ZULDAZAR },	-- Horde
+				},
 				["g"] = {
 					n(ARMOR, {
 						filter(BACK_F, {
@@ -7143,6 +7143,14 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 						}),
 						i(245695, {	-- Reins of the Moonlit Nightsaber (MOUNT!)
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+						}),
+					}),
+					filter(TOYS, {
+						i(246227, {	-- Lightning-Blessed Spire (TOY!)
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+						}),
+						i(245942, {	-- Sea-Blessed Shrine (TOY!)
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
 						}),
 					}),
 					n(WEAPONS, {

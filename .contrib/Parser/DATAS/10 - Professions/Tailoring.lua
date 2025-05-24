@@ -1005,7 +1005,7 @@ end
 profession(TAILORING, {
 	-- #if BEFORE 4.0.1.12984
 	applyclassicphase(TBC_PHASE_ONE, prof(26798, {	-- Mooncloth Tailoring
-		["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Mooncloth Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+		["description"] = "These items can only be crafted by Tailors that have completed the Becoming a Mooncloth Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
 		["sourceQuest"] = 10831,	-- Becoming a Mooncloth Tailor
 		["groups"] = {
 			recipe(26760),	-- Primal Mooncloth Belt
@@ -1014,7 +1014,7 @@ profession(TAILORING, {
 		},
 	})),
 	applyclassicphase(TBC_PHASE_ONE, prof(26801, {	-- Shadoweave Tailoring
-		["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Shadoweave Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+		["description"] = "These items can only be crafted by Tailors that have completed the Becoming a Shadoweave Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
 		["sourceQuest"] = 10833,	-- Becoming a Shadoweave Tailor
 		["groups"] = {
 			recipe(26756),	-- Frozen Shadoweave Shoulders
@@ -1023,7 +1023,7 @@ profession(TAILORING, {
 		},
 	})),
 	applyclassicphase(TBC_PHASE_ONE, prof(26797, {	-- Spellfire Tailoring
-		["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Spellfire Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+		["description"] = "These items can only be crafted by Tailors that have completed the Becoming a Spellfire Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
 		["sourceQuest"] = 10832,	-- Becoming a Spellfire Tailor
 		["groups"] = {
 			recipe(26752),	-- Spellfire Belt

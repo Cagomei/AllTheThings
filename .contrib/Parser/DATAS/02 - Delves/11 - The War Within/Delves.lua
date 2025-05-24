@@ -1786,6 +1786,25 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				i(244311),	-- Titan Memory Card
 			},
 		}),
+		q(91030, {	-- New Titan Directives
+			["sourceQuests"] = { 91026 },	-- Gathering an Upgrade
+			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["coord"] = { 48.0, 43.4, DORNOGAL },
+			["g"] = {
+				i(244696),	-- Overcharged Chest (delve s2 loot table)
+			},
+		}),
+		q(91031, {	-- Pushing it to the Limit
+			["sourceQuests"] = { 91030 },	-- New Titan Directives
+			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["coord"] = { 48.0, 43.4, DORNOGAL },
+			["g"] = {
+				i(244696),	-- Overcharged Chest (delve s2 loot table)
+				--i(244311),	-- Titan Memory Card
+			},
+		}),
 	}),
 	n(QUESTS, sharedData({
 		["provider"] = { "n", 206017 },	-- Brann Bronzebeard
@@ -2751,6 +2770,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			filter(MISC, {
 				i(210970),	-- Crumbled Keepsake (QI!)
 				i(210981),	-- Kriegval's Helm (QI!)
+				i(244903, {["timeline"] = { ADDED_11_1_7 }}),	-- Miniature Titan Disc: Charged Touch
 				i(211209),	-- Suspicious Candle (QI!)
 			}),
 			n(QUESTS, {
@@ -2903,6 +2923,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				}),
 			}),
 			filter(MISC, {
+				i(244905, { ["timeline"] = { ADDED_11_1_7 } }),	-- Miniature Titan Disc: Charged Crystal
 				i(215466),	-- Sanctified Supplies (QI!)
 				i(216420),	-- Symbol of Light (QI!)
 				i(216433),	-- Stolen Relic (QI!)
@@ -2966,6 +2987,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				}),
 			}),
 			filter(MISC, {
+				i(244901, {["timeline"] = { ADDED_11_1_7 }}),	-- Miniature Titan Disc: Statically Charged
 				i(234454),	-- Remote Teleporter (QI!)
 				i(234451),	-- Stolen Goods (QI!)
 			}),
@@ -3016,6 +3038,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			}),
 			filter(MISC, {
 				i(225719),	-- Light's Mantle (QI!)
+				i(244899, {["timeline"] = { ADDED_11_1_7 }}),	-- Miniature Titan Disc: Critical Chain
 			}),
 			n(QUESTS, {
 				q(83768, {	-- Delver's Call: The Skittering Breach
@@ -3248,6 +3271,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				}),
 			}),
 			filter(MISC, {
+				i(244902, {["timeline"] = { ADDED_11_1_7 }}),	-- Miniature Titan Disc: Electric Current
 				i(216772),	-- Whispering Explosives (QI!)
 				o_repeated(sharedData({	-- Web Bomb
 					["timeline"] = { ADDED_11_1_0 },
@@ -3483,11 +3507,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(90946, {["timeline"]={ADDED_11_1_7}}),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
 			q(90952, {["timeline"]={ADDED_11_1_7}}),	-- Energy Shield ability (spellID 1238258); after learning Titan Force Shield (spellID 1225004) in delve console
 			q(90948, {["timeline"]={ADDED_11_1_7}}),	-- Spark Burst ability (spellID 1238251); after using Miniature Titan Disc: Spark Burst (itemID 244900)
-			--q(, {["timeline"]={ADDED_11_1_7}}),	--
-			--q(, {["timeline"]={ADDED_11_1_7}}),	--
-			--q(, {["timeline"]={ADDED_11_1_7}}),	--
-			--q(, {["timeline"]={ADDED_11_1_7}}),	--
-			--q(, {["timeline"]={ADDED_11_1_7}}),	--
+			q(90953, {["timeline"]={ADDED_11_1_7}}),	-- Charged Crystal ability (spellID 1238259); after using Miniature Titan Disc: Charged Crystal (itemID 244905)
+			q(90947, {["timeline"]={ADDED_11_1_7}}),	-- Critical Chain ability (spellID 1238250); after using Miniature Titan Disc: Critical Chain (itemID 244899)
+			q(90950, {["timeline"]={ADDED_11_1_7}}),	-- Electric Current ability (spellID 1238256); after using Miniature Titan Disc: Electric Current (itemID 244902)
+			q(90951, {["timeline"]={ADDED_11_1_7}}),	-- Charged Touch ability (spellID 1238257); after using Miniature Titan Disc: Charged Touch (itemID 244903)
+			q(90949, {["timeline"]={ADDED_11_1_7}}),	-- Static Charge ability (spellID 1238252); after using Miniature Titan Disc: Statically Charged (itemID 244901)
 		})),
 		q(85651),	-- Triggers with 'Delver's Call: The Sinkhole' (questID 83767)
 		q(85719),	-- Unknown. Seems to pop very rarely on completion of a delve

@@ -1292,7 +1292,7 @@ function app:CreateMiniListForGroup(group, forceFresh)
 			if not group.g and not group.criteriaID and app.ThingKeys[key] then
 				local cmd = group.link or key .. ":" .. group[key];
 				app.SetSkipLevel(2);
-				local groupSearch = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill=true});
+				local groupSearch = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill=true,IgnoreCache=true});
 				app.SetSkipLevel(0);
 
 				-- app.PrintDebug(Colorize("search",app.Colors.ChatLink))

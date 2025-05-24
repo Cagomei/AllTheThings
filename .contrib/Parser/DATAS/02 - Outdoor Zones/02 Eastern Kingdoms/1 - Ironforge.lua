@@ -1106,18 +1106,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 25,
 				}),
 				applyclassicphase(CATA_PHASE_ONE, q(26118, {	-- Seize the Ambassador
-					["qg"] = 42129,	-- Moira Thaurissan
+					["providers"] = {
+						{ "n", 42129 },	-- Moira Thaurissan
+						{ "i", 56837 },	-- Sturdy Manacles (PQI!)
+					},
 					["sourceQuest"] = 26112,	-- Demanding Answers
-					["coord"] = { 39.7, 57.3, IRONFORGE },
+					["coord"] = { 39.8, 57.2, IRONFORGE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Arrest Ambassador Slaghammer and bring him to the High Seat
 							["providers"] = {
-								{ "i", 56837 },	-- Sturdy Manacles
 								{ "n", 42146 },	-- Ambassador Slaghammer <Dark Iron Ambassador>
 							},
-							["coord"] = { 36.6, 43.6, IRONFORGE },
+							["coord"] = { 36.6, 43.2, IRONFORGE },
 						}),
 						i(57583, {	-- The Slaghammer
 							["timeline"] = { ADDED_4_0_3 },

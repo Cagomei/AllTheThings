@@ -120,7 +120,9 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 	}
 	local function Difficulty(difficultyID, t)
 		local diff = d(difficultyID, t)
-		CurrentDifficultyID = diff.difficultyID
+		-- d() can sometimes change the applied difficultyID, so just track the exact one passed in since
+		-- it's likely the same one re-used in the file
+		CurrentDifficultyID = difficultyID
 		return setmetatable(diff, helperMeta)
 	end
 

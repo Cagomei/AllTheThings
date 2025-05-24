@@ -1331,12 +1331,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72854, {	-- Our Enemies Abound
 				["sourceQuests"] = { 76530 },	-- Unliving Summons
 				["provider"] = { "n", 186091 },	-- Lilian Voss
-				["coord"] = { 63.8, 68.2, TIRISFAL_GLADES },
+				["coord"] = { 63.8, 68.2, 2070 },	-- Tirisfal Glades
 			}),
 			q(72855, {	-- To the Sepulcher
 				["sourceQuests"] = { 72854 },	-- Our Enemies Abound
 				["provider"] = { "n", 199761 },	-- Deathstalker Commander Belmont
-				["coord"] = { 61.2, 82.6, TIRISFAL_GLADES },
+				["coord"] = { 61.2, 82.6, 2070 },	-- Tirisfal Glades
 			}),
 			q(72858, {	-- Acid Beats Paper
 				["sourceQuests"] = { 72855 },	-- To the Sepulcher
@@ -1421,8 +1421,11 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			}),
 			q(72867, {	-- I Am Forsaken
 				["sourceQuests"] = { 72866 },	-- Return to Lordaeron
-				["provider"] = { "n", 199893 },	-- Lilian Voss
-				["coord"] = { 61.8, 69.4, TIRISFAL_GLADES },
+				["qgs"] = {
+					199893,	-- Lilian Voss
+					199922,	-- Lilian Voss
+				},
+				["coord"] = { 61.8, 69.4, 2070 },	-- Tirisfal Glades
 				["g"] = {
 					iensemble(208475, {	-- Ensemble: Forsaken Champion's Attire
 						["extraTransmogSetSpells"] = {

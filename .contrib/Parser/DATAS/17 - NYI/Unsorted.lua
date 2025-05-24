@@ -76,16 +76,10 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				-- Delves
 				i(242743),	-- Durable Information Securing Container [Trinket]
-				i(244899),	-- Miniature Titan Disc: Critical Chain
-				i(244901),	-- Miniature Titan Disc: Statically Charged
-				i(244902),	-- Miniature Titan Disc: Electric Current
-				i(244903),	-- Miniature Titan Disc: Overcharged Touch
-				i(244905),	-- Miniature Titan Disc: Charged Crystal
 				-- Lorewalking
 				i(242386),	-- Lorewalker's Crate of Memorabilia
 				-- Misc
 				i(244848),	-- Severed Threads Commendation
-				i(245942),	-- Sea-Blessed Shrine
 			}),
 			filter(COSMETIC, {
 				i(242324),	-- Squall Braced Galoshes
@@ -378,7 +372,6 @@ root(ROOTS.Unsorted, {
 				-- Trinkets?
 				i(236914),	-- Unbound Vision Journal
 				i(236915),	-- Book of Dark Visions
-				i(236916),	-- Void-Whittled Spike
 				i(236917),	-- Dark Dreamer's Talisman
 				i(236918),	-- Pulsating Void Disk
 				i(236919),	-- Void Spike
@@ -514,7 +507,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MISC, {
 				i(238896),	-- Macho's Magnificent "Fish" Tacos
-				i(241616),	-- The Underpin
 			}),
 			filter(MOUNTS, {
 				i(236415),	-- Reins of the Spotted Black Riding Goat

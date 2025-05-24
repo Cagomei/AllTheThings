@@ -376,7 +376,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["provider"] = { "n", 177175 },	-- Mikanikos
 							["coord"] = { 37.0, 63.5, THE_MAW },
 							["g"] = {
-								i(185685),	-- Automaton Bolts (QI!)
+								o(367965, {
+									["coords"] = {
+										{ 35.6, 64.8, THE_MAW },
+										{ 36.4, 58.9, THE_MAW },
+										{ 36.9, 61.6, THE_MAW },
+										{ 37.1, 64.8, THE_MAW },
+										{ 37.4, 67.7, THE_MAW },
+										{ 37.6, 59.8, THE_MAW },
+										{ 38.0, 62.5, THE_MAW },
+										{ 39.0, 58.6, THE_MAW },
+										{ 39.0, 65.5, THE_MAW },
+										{ 39.4, 60.4, THE_MAW },
+									},
+									["g"] = { i(185685) },	-- Automaton Bolts (QI!)
+								}),
 								i(184513),	-- Containment Orb (QI!)
 							},
 						}),
