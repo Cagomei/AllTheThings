@@ -145,6 +145,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				achWithRep(5788, FACTION_SHENDRALAR, {	-- Agent of the Shen'dralar [Shen'dralar Exalted]
+					-- #if BEFORE WRATH
+					["icon"] = 133736,	-- CRIEVE NOTE: The other icon doesn't exist in the game files yet
+					-- #endif
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { REMOVED_4_0_3 },
 				}),

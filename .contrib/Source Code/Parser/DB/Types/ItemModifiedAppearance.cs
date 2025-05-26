@@ -5,9 +5,12 @@ namespace ATT.DB.Types
     /// <summary>
     /// https://wago.tools/db2/ItemModifiedAppearance
     /// </summary>
-    internal class ItemModifiedAppearance : IDBType
+    [DataModule]
+    public class ItemModifiedAppearance : IDBType, IWagoItemID
     {
+        [ExportableData("sourceID")]
         public long ID { get; set; }
+        [ExportableData("itemID")]
         public long ItemID { get; set; }
         public long ItemAppearanceModifierID { get; set; }
         public long ItemAppearanceID { get; set; }
@@ -17,15 +20,6 @@ namespace ATT.DB.Types
 
         private TransmogSourceTypeFlags _flags => (TransmogSourceTypeFlags)Flags;
 
-        public IDictionary<string, object> AsData()
-        {
-            return new Dictionary<string, object>
-            {
-                { "itemID", ItemID },
-                //{ "ItemAppearanceModifierID", ItemAppearanceModifierID },
-                { "sourceID", ID }
-            };
-        }
         public bool IsNotValidForTransmog() =>
             (_flags & TransmogSourceTypeFlags.NotValidForTransmog) == TransmogSourceTypeFlags.NotValidForTransmog;
         public bool IsHiddenUntilCollected() =>

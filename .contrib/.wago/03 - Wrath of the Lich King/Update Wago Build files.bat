@@ -2,9 +2,6 @@
 SET BUILD=3.4.4.60430
 
 @REM Download new file versions
-call :download Achievement
-call :download Criteria
-call :download CriteriaTree
 call :download Item
 call :download ItemEffect
 call :download ItemModifiedAppearance

@@ -4886,8 +4886,9 @@ local achievements = {
 	[5788] = {
 		name = "Agent of the Shen'dralar",
 		description = "Earn exalted status with the Shen'dralar.",
-		icon = 133736,
+		icon = 354719,
 		category = 81,
+		criteria = {17023},
 	},
 };
 L.ACHIEVEMENT_DATA = achievements;
@@ -4895,6 +4896,16 @@ L.ACHIEVEMENT_DATA = achievements;
 local achievementCategories = {
 };
 L.ACHIEVEMENT_CATEGORY_DATA = achievementCategories;
+
+local achievementCriterias = {
+	[17023] = {
+		name = "Exalted with the Shen'dralar.",
+		amount = 42000,
+		type = 46,
+		asset = 809,
+	},
+};
+L.ACHIEVEMENT_CRITERIA_DATA = achievementCriterias;
 
 -- Supported Locales
 local simplifiedLocale = GetLocale():sub(1,2);
@@ -6237,6 +6248,10 @@ for key,value in pairs({
 	[5788] = "Erreicht bei den Shen'dralar den Status ehrfürchtig.",
 })
 do achievements[key].description = value; end
+for key,value in pairs({
+	[17023] = "Ehrfürchtig bei den Shen'dralar.",
+})
+do achievementCriterias[key].name = value; end
 end
 if simplifiedLocale == "fr" then
 localize(L.HEADER_NAMES, {
@@ -7604,6 +7619,10 @@ for key,value in pairs({
 	[5788] = "Être exalté auprès des Shen’dralar.",
 })
 do achievements[key].description = value; end
+for key,value in pairs({
+	[17023] = "Exalté auprès des Shen’dralar",
+})
+do achievementCriterias[key].name = value; end
 end
 if simplifiedLocale == "it" then
 localize(L.HEADER_NAMES, {
@@ -8568,6 +8587,10 @@ for key,value in pairs({
 	[33] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di Wrath Classic.|r",
 })
 do phases[key].description = value; end
+for key,value in pairs({
+	[17023] = "Exalted with the Shen'dralar.",
+})
+do achievementCriterias[key].name = value; end
 end
 if simplifiedLocale == "pt" then
 localize(L.HEADER_NAMES, {
@@ -9824,6 +9847,10 @@ for key,value in pairs({
 	[5788] = "Tornar-se exaltado pelos Shen'dralar.",
 })
 do achievements[key].description = value; end
+for key,value in pairs({
+	[17023] = "Exaltado com os Shen'dralar",
+})
+do achievementCriterias[key].name = value; end
 end
 if simplifiedLocale == "ru" then
 localize(L.HEADER_NAMES, {
@@ -11217,6 +11244,10 @@ for key,value in pairs({
 	[5788] = "Добейтесь того, чтобы вас превозносили Шен'дралар.",
 })
 do achievements[key].description = value; end
+for key,value in pairs({
+	[17023] = "Превознесение у шен'дралар",
+})
+do achievementCriterias[key].name = value; end
 end
 if simplifiedLocale == "ko" then
 localize(_.CategoryNames, {
@@ -12639,6 +12670,10 @@ for key,value in pairs({
 	[5788] = "셴드랄라 확고한 동맹",
 })
 do achievements[key].description = value; end
+for key,value in pairs({
+	[17023] = "셴드랄라 확고한 동맹",
+})
+do achievementCriterias[key].name = value; end
 end
 if simplifiedLocale == "es" then
 localize(L.HEADER_NAMES, {
@@ -13962,6 +13997,16 @@ for key,value in pairs({
 	[5788] = "Alcanza la reputación Exaltado con los Shen'dralar",
 })
 do achievements[key].description = value; end
+for key,value in pairs({
+	[17023] = "Exaltado con los Shen'dralar",
+})
+do achievementCriterias[key].name = value; end
+if GetLocale():sub(3,4):lower() == "mx" then
+for key,value in pairs({
+	[17023] = "Exaltado con los Shen'dralar.",
+})
+do achievementCriterias[key].name = value; end
+end
 end
 if simplifiedLocale == "zh" then
 localize(_.CategoryNames, {
@@ -15191,6 +15236,10 @@ for key,value in pairs({
 	[5788] = "在辛德拉阵营中达到崇拜声望。",
 })
 do achievements[key].description = value; end
+for key,value in pairs({
+	[17023] = "辛德拉崇拜",
+})
+do achievementCriterias[key].name = value; end
 if GetLocale():sub(3,4):lower() == "tw" then
 localize(_.CategoryNames, {
 	[106] = "卡片",
@@ -15375,6 +15424,10 @@ for key,value in pairs({
 	[5788] = "取得辛德拉的聲望崇拜。",
 })
 do achievements[key].description = value; end
+for key,value in pairs({
+	[17023] = "辛德拉崇拜。",
+})
+do achievementCriterias[key].name = value; end
 end
 end
 

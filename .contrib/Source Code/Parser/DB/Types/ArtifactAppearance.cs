@@ -5,9 +5,11 @@ namespace ATT.DB.Types
     /// <summary>
     /// https://wago.tools/db2/ArtifactAppearance
     /// </summary>
-    internal class ArtifactAppearance : IDBType
+    [DataModule]
+    public class ArtifactAppearance : IDBType
     {
         public long ID { get; set; }
+        [Localize]
         public string Name_lang { get; set; }
         public long ArtifactAppearanceSetID { get; set; }
         public long DisplayIndex { get; set; }
@@ -23,10 +25,5 @@ namespace ATT.DB.Types
         public long Flags { get; set; }
         public long UiCameraID { get; set; }
         public long UsablePlayerConditionID { get; set; }
-
-        public IDictionary<string, object> AsData()
-        {
-            return new Dictionary<string, object>();
-        }
     }
 }

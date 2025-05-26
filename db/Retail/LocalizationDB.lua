@@ -569,17 +569,6 @@ localize(L.HEADER_NAMES, {
 	[-1000881] = "World PvP",
 	[-1000883] = "Pet Battle Dungeons",
 	[-1000885] = RAIDS,
-	[-1000887] = "Archaeology: PH1",
-	[-1000888] = "Archaeology: PH2",
-	[-1000889] = "Archaeology: PH3",
-	[-1000890] = "Archaeology: PH4",
-	[-1000891] = "Archaeology: PH5",
-	[-1000892] = "Archaeology: PH6",
-	[-1000893] = "Archaeology: PH7",
-	[-1000894] = "Archaeology: PH8",
-	[-1000895] = "Archaeology: PH9",
-	[-1000896] = "Archaeology: PH10",
-	[-1000897] = "Archaeology: PH11",
 	[-1000899] = SPLASH_BATTLEFORAZEROTH_8_3_0_FEATURE1_TITLE,
 	[-1000900] = "Lost Area",
 	[-1000901] = "Corrupted Area",
@@ -766,7 +755,18 @@ localize(L.HEADER_NAMES, {
 	[-1001187] = "Mythic Vendor",
 	[-1001190] = ACCOUNT_LEVEL_SCENE,
 	[-1001191] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
-	[-1001192] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1001192] = "Archaeology: Arakkoa",
+	[-1001193] = "Archaeology: Demonic",
+	[-1001194] = "Archaeology: Draenor Clans",
+	[-1001195] = "Archaeology: Drust",
+	[-1001196] = "Archaeology: Highborne",
+	[-1001197] = "Archaeology: Highmountain",
+	[-1001198] = "Archaeology: Mantid",
+	[-1001199] = "Archaeology: Mogu",
+	[-1001200] = "Archaeology: Ogre",
+	[-1001201] = "Archaeology: Pandaren",
+	[-1001202] = "Archaeology: Zandalari",
+	[-1001203] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -1409,6 +1409,17 @@ localize(L.HEADER_ICONS, {
 	[-1001186] = 311235,
 	[-1001187] = 311237,
 	[-1001190] = 6124644,
+	[-1001192] = 441139,
+	[-1001193] = 441139,
+	[-1001194] = 441139,
+	[-1001195] = 441139,
+	[-1001196] = 441139,
+	[-1001197] = 441139,
+	[-1001198] = 441139,
+	[-1001199] = 441139,
+	[-1001200] = 441139,
+	[-1001201] = 441139,
+	[-1001202] = 441139,
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -1510,7 +1521,6 @@ _.Modules.Events.SetEventInformation(1509, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=22,["weekday"]=3,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=7,["weekday"]=3,["year"]=2025})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=18,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=5,["monthDay"]=18,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=25,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=5,["monthDay"]=25,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=1,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=6,["monthDay"]=1,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=8,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=6,["monthDay"]=8,["weekday"]=1,["year"]=2025}),
@@ -1562,7 +1572,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=4,["monthDay"]=26,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=4,["monthDay"]=26,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=3,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=3,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=10,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=10,["weekday"]=1,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=17,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=17,["weekday"]=1,["year"]=2026})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=17,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=17,["weekday"]=1,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=24,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=24,["weekday"]=1,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
@@ -6795,6 +6806,7 @@ local ObjectNames = {
 	[270917] = "Glenbrook Register",
 	[270991] = "Ancient Urn",
 	[271103] = "Prayer Effigy",
+	[271114] = "Eredar Bones",
 	[271648] = "Stolen Idol of Krag'wa",
 	[271706] = "Hunters' Board",
 	[271746] = "Damaged Artillery Barrel",
@@ -13883,6 +13895,7 @@ local ObjectModels = {
 	[270917] = 916185,
 	[270991] = 794719,
 	[271103] = 1671032,
+	[271114] = 1119647,
 	[271648] = 1141734,
 	[271706] = 1312884,
 	[271746] = 983119,
@@ -19386,7 +19399,7 @@ L.QUEST_NAMES = {
 	[50185] = "Green Crystal Monocle",
 	[50250] = "Posthaste",
 	[50384] = "Doug Test - Completable Quest4",
-	[52819] = _.L.HEADER_NAMES[-1001192],
+	[52819] = _.L.HEADER_NAMES[-1001203],
 	[52917] = "Grimmy Dialogue",
 	[53417] = "Lost Spawn of Krag'wa (The Shattered River)",
 	[53418] = "Lost Spawn of Krag'wa (Razorjaw River)",
@@ -20496,7 +20509,7 @@ localize(L.HEADER_NAMES, {
 	[-1001186] = "Händlerin für heroische Schlachtzüge",
 	[-1001187] = "Händlerin für mythische Schlachtzüge",
 	[-1001191] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
-	[-1001192] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[-1001203] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -23435,6 +23448,7 @@ localize(ObjectNames, {
 	[270917] = "Verzeichnis von Schluchtbach",
 	[270991] = "Antike Urne",
 	[271103] = "Gebetsbildnis",
+	[271114] = "Eredarknochen",
 	[271648] = "Krag'was gestohlener Götze",
 	[271706] = "Jägertafel",
 	[271746] = "Beschädigter Artillerielauf",
@@ -26099,7 +26113,7 @@ localize(L.HEADER_NAMES, {
 	[-1001186] = "Marchande d’équipement héroïque",
 	[-1001187] = "Marchande d’équipement mythique",
 	[-1001191] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
-	[-1001192] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[-1001203] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
@@ -29053,6 +29067,7 @@ localize(ObjectNames, {
 	[270917] = "Registre de Ruisseval",
 	[270991] = "Urne antique",
 	[271103] = "Effigie de prière",
+	[271114] = "Ossements érédar",
 	[271648] = "Idole volée de Krag’wa",
 	[271706] = "Tableau des chasseurs",
 	[271746] = "Canon d’artillerie endommagé",
@@ -31590,7 +31605,7 @@ localize(L.HEADER_NAMES, {
 	[-1001186] = "Mercante Eroica",
 	[-1001187] = "Mercante Mitica",
 	[-1001191] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
-	[-1001192] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[-1001203] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -34355,6 +34370,7 @@ localize(ObjectNames, {
 	[270917] = "Registro degli Acqualunga",
 	[270991] = "Urna Antica",
 	[271103] = "Effige di Preghiera",
+	[271114] = "Ossa degli Eredar",
 	[271648] = "Idolo di Krag'wa Rubato",
 	[271706] = "Tavola dei Cacciatori",
 	[271746] = "Canna d'Artiglieria Danneggiata",
@@ -36630,7 +36646,7 @@ localize(L.HEADER_NAMES, {
 	[-1001186] = "Comerciante Heroico",
 	[-1001187] = "Comerciante Mítico",
 	[-1001191] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
-	[-1001192] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[-1001203] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -39538,6 +39554,7 @@ localize(ObjectNames, {
 	[270917] = "Registros de Arroio do Vale",
 	[270991] = "Urna Antiga",
 	[271103] = "Efígie da Prece",
+	[271114] = "Ossada Eredar",
 	[271648] = "Ídolo de Krag'wa Roubado",
 	[271706] = "Quadro de Caçadores",
 	[271746] = "Cano de Artilharia Danificado",
@@ -42106,7 +42123,7 @@ localize(L.HEADER_NAMES, {
 	[-1001186] = "Награды за рейд в героическом режиме",
 	[-1001187] = "Награды за рейд в эпохальном режиме",
 	[-1001191] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
-	[-1001192] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[-1001203] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
@@ -45075,6 +45092,7 @@ localize(ObjectNames, {
 	[270917] = "Реестр Гленбрука",
 	[270991] = "Древняя урна",
 	[271103] = "Молитвенное изваяние",
+	[271114] = "Кости эредара",
 	[271648] = "Украденный идол Краг'вы",
 	[271706] = "Доска объявлений для охотников",
 	[271746] = "Поврежденный ствол",
@@ -47698,7 +47716,7 @@ localize(L.HEADER_NAMES, {
 	[-1001186] = "영웅급 상인",
 	[-1001187] = "신화 공격대 상인",
 	[-1001191] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
-	[-1001192] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[-1001203] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -50534,6 +50552,7 @@ localize(ObjectNames, {
 	[270917] = "글렌브룩 명부",
 	[270991] = "고대 단지",
 	[271103] = "기도 조각상",
+	[271114] = "에레다르 뼈",
 	[271648] = "도둑맞은 크라그와의 우상",
 	[271706] = "사냥꾼의 판",
 	[271746] = "손상된 완멋죽포 포신",
@@ -52631,7 +52650,7 @@ localize(L.HEADER_NAMES, {
 	[-1001186] = "Vendedora heroica",
 	[-1001187] = "Vendedora mítica",
 	[-1001191] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
-	[-1001192] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[-1001203] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000035] = "Secretitos traviesos...",
@@ -55564,6 +55583,7 @@ localize(ObjectNames, {
 	[270917] = "Registro de Valarroyo",
 	[270991] = "Urna antigua",
 	[271103] = "Efigie de oración",
+	[271114] = "Huesos de eredar",
 	[271648] = "Ídolo robado de Krag'wa",
 	[271706] = "Tablero de cazadores",
 	[271746] = "Cañón de artillería dañado",
@@ -58174,7 +58194,7 @@ localize(L.HEADER_NAMES, {
 	[-1001186] = "英雄副本商人",
 	[-1001187] = "史诗副本商人",
 	[-1001191] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
-	[-1001192] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-1001203] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "这些物品可以通过做大使任务或获得巅峰宝箱来获得。",
@@ -60873,6 +60893,7 @@ localize(ObjectNames, {
 	[270917] = "格伦布鲁克登记簿",
 	[270991] = "远古的石罐",
 	[271103] = "祈祷者雕像",
+	[271114] = "艾瑞达遗骨",
 	[271648] = "被盗的卡格瓦雕像",
 	[271706] = "猎人的看板",
 	[271746] = "受损的炮管",

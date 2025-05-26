@@ -91,6 +91,21 @@ local function ShouldFillPurchases(group, FillData)
 	return true;
 end
 
+-- TODO: allow Modules to define Fill functions and use that for Cost/Upgrade/Catalyst/Reagents?
+-- TODO: Settings automatically updated via Modules adding Fill functions
+
+-- Determines searches required for catalyst using this group
+local function DetermineCatalystGroups(group, FillData)
+	local catalystResult = group.catalystResult;
+	if catalystResult then
+		if not catalystResult.collected then
+			group.filledCatalyst = true;
+		end
+		-- app.PrintDebug("filledCatalyst=",catalystResult.modItemID,catalystResult.collected,"<",group.modItemID)
+		local o = CreateObject(catalystResult);
+		return { o };
+	end
+end
 -- Determines searches required for upgrades using this group
 local function DetermineUpgradeGroups(group, FillData)
 	local nextUpgrade = group.nextUpgrade;
@@ -363,6 +378,7 @@ local function FillGroupDirect(group, FillData, doDGU)
 		DeterminePurchaseGroups(group, FillData),
 		DetermineUpgradeGroups(group, FillData),
 		DetermineCraftedGroups(group, FillData),
+		DetermineCatalystGroups(group, FillData),
 		DetermineNPCDrops(group, FillData),
 		DetermineSymlinkGroups(group));
 
@@ -391,7 +407,10 @@ local function FillGroupDirect(group, FillData, doDGU)
 	end
 end
 local function SkipFillingGroup(group, FillData)
-	local skipFill = group.skipFill
+	local skipFill = group.skipFull
+	if skipFill then return true end
+
+	skipFill = group.skipFill
 	if (skipFill and FillData.InWindow) or skipFill == 2 then return true; end
 
 	-- do not fill the same object twice in multiple Locations

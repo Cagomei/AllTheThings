@@ -6,8 +6,10 @@ namespace ATT.DB.Types
     /// <summary>
     /// https://wago.tools/db2/Criteria
     /// </summary>
-    internal class Criteria : IDBType
+    [DataModule]
+    public class Criteria : IDBType
     {
+        [ExportableData("criteriaID")]
         public long ID { get; set; }
         public long Type { get; set; }
         public long Asset { get; set; }
@@ -22,14 +24,6 @@ namespace ATT.DB.Types
         public long Eligibility_world_state_value { get; set; }
 
         private TypeFlags _flags => (TypeFlags)Flags;
-
-        public IDictionary<string, object> AsData()
-        {
-            return new Dictionary<string, object>
-            {
-                { "criteriaID", ID },
-            };
-        }
 
         public bool IsIgnoreFlags() =>
             (_flags & TypeFlags.DoNotDisplay) == TypeFlags.DoNotDisplay;

@@ -118,6 +118,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 238136 },	-- Augermu
 					["coord"] = { 35.2, 68.6, DORNOGAL },
 					["g"] = {
+						i(238407),	-- Black Blood Residue
 						i(238678),	-- Lesser Rune of Echoing Void
 						i(239084),	-- Lesser Rune of Gushing Wound
 						i(239078),	-- Lesser Rune of Infinite Stars
@@ -444,7 +445,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["g"] = appendAllGroups(
 						{
 							i(242623, {	-- Enchanted Warbound Purifying Kit
-								["questID"] = 90710,
 								["cost"] = {{"c", 3149, 2000 }},	-- 2000x Displaced Corrupted Mementos
 							}),
 						},
@@ -532,7 +532,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["g"] = appendAllGroups(
 						{
 							i(242622, {	-- Warbound Purifying Kit
-								["questID"] = 90709,
 								["cost"] = {{"c", 3149, 1000 }},	-- 1000x Displaced Corrupted Mementos
 							}),
 						},

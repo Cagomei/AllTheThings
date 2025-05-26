@@ -476,7 +476,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						},
 					}),
 					-- Crafting reagent?
-					i(238407),	-- Black Blood Residue
 					n(EVENT_COMPLETION, {
 						["description"] = "The Boss spawns at the end of the Nightfall Event.\nThe Event always starts on the hour.",
 						["coord"] = { 25.2, 55.6, HALLOWFALL },

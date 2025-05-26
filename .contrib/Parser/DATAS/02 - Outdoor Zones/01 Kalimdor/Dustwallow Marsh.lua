@@ -1949,6 +1949,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.5, 22.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(33069) },	-- Sturdy Rope (QI!)
 				}),
 				q(11146, {	-- Raptor Captor
 					["qg"] = 23723,	-- Sergeant Lukas
@@ -3338,6 +3339,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131662, {	-- Crested Chain Epaulets
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(33070),	-- Raptor Bait (QI!)
 					},
 				}),
 				q(11147, {	-- Unleash the Raptors

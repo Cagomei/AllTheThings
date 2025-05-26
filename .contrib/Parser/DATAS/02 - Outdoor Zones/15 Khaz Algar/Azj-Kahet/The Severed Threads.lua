@@ -1358,12 +1358,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 			-- 'City Rumors' events are available after unlocking Level 1 (Acquaintance) with the General, Vizier and Weaver
 			-- Using 'Rumor Map Bundle' (ItemID: 228950) triggers following 6 quests as completed and reveals 6 NPCs with "rumors" on the map
-			q(82616),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
-			q(82641),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
-			q(82643),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
-			q(82645),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
-			q(82647),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
-			q(82649),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
+			q(82616, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
+			q(82641, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
+			q(82643, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
+			q(82645, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
+			q(82647, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
+			q(82649, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
 			-- Quest Givers or "Rumor Givers" are Eirzay <Agent of the General>, Ghos'opp <Agent of the Vizier>, Ru'murh <Agent of the Weaver>
 			-- Different rumors can trigger the same HQTs as commented below. They are not triggered until you talk to the NPC that gives you the rumor
 			q(82581, {	-- Ru'murh  (n: 224199 @ 45.6, 51.0), starts questID 81483 (Infiltration: Production Blocker)

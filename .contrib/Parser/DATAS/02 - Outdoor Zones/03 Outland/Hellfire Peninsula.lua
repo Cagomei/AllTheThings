@@ -1074,7 +1074,9 @@ root(ROOTS.Zones, {
 								},
 								["coord"] = { 54.1, 63.3, HELLFIRE_PENINSULA },
 							}),
+							i(31799),	-- Fei Fei Doggy Treat
 						},
+						["description"] = "You can forego interacting with Warrant Officer Tracy Proudwell and go directly to the given coordinates.",
 					}),
 					q(10144, {	-- Disrupt Their Reinforcements [Alliance]
 						["qg"] = 19310,	-- Forward Commander Kingston

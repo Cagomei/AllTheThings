@@ -280,7 +280,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #else
 						"This faction gets removed completely with the TBC prepatch, so grinding this to Exalted makes no sense.\n\nYou can grind to 11999/12000 by just killing trolls and then you can *technically* grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces, but rather than encourage you to totally waste your life on a Reputation that gets ultimately removed from the game after the season is over, I'll artificially cap the goal in ATT to Revered.\n\nGodspeed.",
 						-- #endif
-					-- #if CLASSICERA
+					-- #if NOT CLASSICERA
 					["minReputation"] = { 471, REVERED },	-- Wildhammer Clan, Revered.
 					-- #endif
 					["OnTooltip"] = [[function(t, tooltipInfo)

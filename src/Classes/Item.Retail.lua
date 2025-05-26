@@ -473,6 +473,8 @@ local itemFields = {
 -- Module imports
 itemFields.nextUpgrade = app.Modules.Upgrade.NextUpgrade;
 itemFields.collectibleAsUpgrade = app.Modules.Upgrade.CollectibleAsUpgrade;
+itemFields.catalystResult = app.Modules.Catalyst.ViaCatalyst;
+-- itemFields.collectibleAsCatalyst = app.Modules.Catalyst.CollectibleAsCatalyst;
 
 -- This is used for the Grand Commendations unlocking Bonus Reputation
 local ItemWithFactionBonus = {

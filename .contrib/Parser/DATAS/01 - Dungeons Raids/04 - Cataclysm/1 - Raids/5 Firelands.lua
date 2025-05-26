@@ -113,6 +113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["qg"] = 52382,	-- Ziradormi
 						["sourceQuest"] = 29452,	-- Your Time Has Come [H]
 						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						["coord"] = { 48.8, 70.1, ORGRIMMAR },
 						["maps"] = { CAVERNS_OF_TIME },
 					})),
 					q(29134, {	-- A Wrinkle in Time

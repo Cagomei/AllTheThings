@@ -85,7 +85,7 @@ src\Cache.lua
 # Helper Modules
 #src\Modules\Analyzers.lua
 src\Modules\RetrievingData.lua
-#src\Modules\Catalyst.lua
+src\Modules\Catalyst.lua
 src\Modules\Collection.lua
 src\Modules\CustomCollect.lua
 src\Modules\ExtraCategories.lua

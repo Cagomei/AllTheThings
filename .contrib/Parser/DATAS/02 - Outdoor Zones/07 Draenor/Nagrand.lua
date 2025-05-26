@@ -1445,8 +1445,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34964, {	-- The Farseer Awaits
-						["provider"] = { "n", 80003 },	-- Thrall
-						["coord"] = { 82.8, 45.0, DRAENOR_NAGRAND },
+						["qgs"] = {
+							80003,	-- Thrall
+							81419,	-- Thrall
+						},
+						["coords"] = {
+							{ 82.8, 45.0, DRAENOR_NAGRAND },
+							{ 67.0, 33.7, DRAENOR_NAGRAND },
+						},
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34918,	-- Shields Down!
 						["isBreadcrumb"] = true,

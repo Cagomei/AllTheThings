@@ -448,6 +448,26 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					},
 				})
 			}),
+			o(456208, {	-- The Catalyst
+				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
+				["coord"] = { 50.0, 54.2, DORNOGAL },
+				["modelScale"] = 4,
+				["catalystID"] = 8,	-- ItemBonus.Value_0 TWW:S1
+				["g"] = {
+					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.LFR)
+					),
+					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=UPGRADETRACKS.CHAMPION}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.NORMAL)
+					),
+					Difficulty(DIFFICULTY.RAID.HEROIC, {["upgradeTrackID"]=UPGRADETRACKS.HERO}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.HEROIC)
+					),
+					Difficulty(DIFFICULTY.RAID.MYTHIC, {["upgradeTrackID"]=UPGRADETRACKS.MYTH}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.MYTHIC)
+					),
+				},
+			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				CommonBossDrops({
 					currency(3093),	-- Nerub-ar Finery

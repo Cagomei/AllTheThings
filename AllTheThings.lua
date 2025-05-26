@@ -285,7 +285,8 @@ local ResolveFunctions = {
 			if cache and #cache > 0 then
 				ArrayAppend(searchResults, cache)
 			else
-				app.print("Failed to select ", field, val);
+				-- TODO: re-enable after all catalystID's are re-structured
+				-- app.print("Failed to select ", field, val);
 			end
 		end
 		SelectMod = nil

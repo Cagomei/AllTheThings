@@ -391,10 +391,16 @@ local function GetNextItemUnlockBonusIDByString(item)
 end
 local function GetNextItemUnlockBonusIDByTable(item)
 	local upgrades = BonusIDNextUnlock[item.bonusID or 0]
-	if upgrades then return upgrades end
+	if upgrades then
+		-- app.PrintDebug("upgrade.bonusID",upgrades,app:SearchLink(item))
+		return upgrades
+	end
 
 	upgrades = GetFirstValueAndKey(BonusIDNextUnlock, item.bonuses)
-	if upgrades then return upgrades end
+	if upgrades then
+		-- app.PrintDebug("upgrade.bonuses",upgrades,app:SearchLink(item))
+		return upgrades
+	end
 
 	local link = item.link or item.rawlink or item.silentLink
 	if link then
