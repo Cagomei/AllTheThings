@@ -227,7 +227,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(172453),	-- Prisoner Transfer Orders
 			i(178467),	-- Profane Shadestone
 			i(180828),	-- Promissory Note
-			i(173973),	-- Purian
 			i(177963),	-- Purified Armor Fragments
 			i(183733),	-- Purified Nectar
 			i(175973),	-- Ravager Talon

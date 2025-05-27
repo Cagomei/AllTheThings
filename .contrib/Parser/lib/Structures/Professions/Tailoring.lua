@@ -1,6 +1,23 @@
 ---------------
 -- TAILORING --
 ---------------
+VANILLA_TAILORING_VENDOR_REAGENTS = {
+	i(2325),	-- Black Dye
+	i(2324),	-- Bleach
+	i(6260),	-- Blue Dye
+	i(2605),	-- Green Dye
+	i(4340),	-- Grey Dye
+	i(6261),	-- Orange Dye
+	i(10290),	-- Pink Dye
+	i(4342),	-- Purple Dye
+	i(2604),	-- Red Dye
+	i(4341),	-- Yellow Dye
+	i(2320),	-- Coarse Thread
+	i(2321),	-- Fine Thread
+	i(4291),	-- Silken Thread
+	i(8343),	-- Heavy Silken Thread
+	i(14341),	-- Rune Thread
+};
 COMMON_CATACLYSM_TAILORING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	i(54601, {	-- Pattern: Belt of the Depths
 		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth

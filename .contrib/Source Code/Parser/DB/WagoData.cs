@@ -834,7 +834,7 @@ namespace ATT.DB
                         }
                         */
                     }
-                    CachedData[obj.ID] = obj;
+                    if (!CachedData.ContainsKey(obj.ID)) CachedData[obj.ID] = obj;
                     StoreLocalizedData(obj, locale);
                 }
             }
@@ -900,7 +900,7 @@ namespace ATT.DB
                     {
                         if (result.TryGetValue(property.Name, out Dictionary<string, object> localizedData))
                         {
-                            localizedData[locale] = value.Trim();
+                            if (!localizedData.ContainsKey(locale)) localizedData[locale] = value.Trim();
                         }
                         else
                         {

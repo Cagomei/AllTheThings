@@ -158,14 +158,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_ALCHEMY_VENDOR_REAGENTS, {
 							i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 					n(3347, {	-- Yelmak <Alchemy Trainer>
 						["coord"] = { 55.6, 46.6, ORGRIMMAR },
@@ -893,7 +893,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
+						["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, VANILLA_LEATHERWORKING_VENDOR_REAGENTS, {
 							i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -936,7 +936,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
+						["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, VANILLA_TAILORING_VENDOR_REAGENTS, {
 							i(6270, {	-- Pattern: Blue Linen Vest
 								["isLimited"] = true,
 							}),
@@ -1032,6 +1032,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							}),
 						},
 					}),
+				}),
+				n(5817, {	-- Shimra <Trade Supplies>
+					["coord"] = { 57.0, 50.05, ORGRIMMAR },
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 54.0, 81.87, ORGRIMMAR },
+						-- #else
+						{ 47.8, 80.5, ORGRIMMAR },
+						-- #endif
+					},
+					["races"] = HORDE_ONLY,
+					["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
 				}),
 			}),
 			n(QUESTS, {
@@ -2833,7 +2845,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(RIDING_TRAINER, {
 				n(4752, {	-- Kildar <Wolf Riding Instructor>
 					["coord"] = { 69.2, 13.0, ORGRIMMAR },
-					["races"] = { ORC, TROLL, UNDEAD },
+					["races"] = HORDE_ONLY,
 
 					-- Available to Orcs without faction requirements.
 					["minReputation"] = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.

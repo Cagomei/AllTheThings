@@ -117,6 +117,12 @@ EXPERT_ARTISAN_ALCHEMY
 	{}
 -- #endif
 );
+VANILLA_ALCHEMY_VENDOR_REAGENTS = {
+	i(3371),	-- Empty Vial [Vanilla - WotLK] / Crystal Vial [Cata -> ]
+	i(3372),	-- Leaded Vial, turns into Cracked Vial with Cataclysm.
+	i(8925),	-- Crystal Vial, turns into Tainted Vial with Cataclysm.
+	i(18256),	-- Imbued Vial, turns into Melted Vial with Cataclysm.
+};
 TBC_ALCHEMY = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(28596, {	-- ALchemy (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },

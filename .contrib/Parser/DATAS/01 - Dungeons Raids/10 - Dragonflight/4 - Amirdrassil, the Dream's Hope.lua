@@ -376,10 +376,14 @@ InstanceHelper.ExtraLoots = {
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+-- TODO: fix when LFR DF is available again
+local TIMELINE_LFR = { ADDED_10_2_0, REMOVED_11_0_2 }
+
+root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1207, {	-- Amirdrassil, the Dream's Hope
 		["isRaid"] = true,
 		["coord"] = { 27.3, 30.9, EMERALD_DREAM },
+		["timeline"] = { ADDED_10_2_0 },
 		["maps"] = {
 			2232,	-- Wellspring Atrium
 			2233,	-- Throne of the Firelord
@@ -832,7 +836,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				["modelScale"] = 4,
 				["catalystID"] = 7,	-- ItemBonus.Value_0 DF:S3
 				["g"] = {
-					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups({
+					Difficulty(DIFFICULTY.RAID.LFR, {
+						["upgradeTrackID"]=UPGRADETRACKS.VETERAN,
+						["timeline"] = TIMELINE_LFR,
+					}).AddGroups({
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.LFR),
 							["g"] = {
@@ -1529,7 +1536,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				}),
 			}),
-			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades(bubbleDown({ ["timeline"] = { ADDED_10_2_0, REMOVED_11_0_2 } }, {
+			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades(bubbleDown({ ["timeline"] = TIMELINE_LFR }, {
 				ZoneDrops({
 				}),
 				CommonBossDrops({
@@ -1751,7 +1758,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 	inst(1207, {	-- Amirdrassil, the Dream's Hope

@@ -1715,32 +1715,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222594),	-- Algari Missive of the Quickblade+
 			i(222595),	-- Algari Missive of the Quickblade++
 			i(222596),	-- Algari Missive of the Quickblade+++
-			i(222546),	-- Algari Treatise on Alchemy
-			i(222554),	-- Algari Treatise on Blacksmithing
-			i(222550),	-- Algari Treatise on Enchanting
-			TempForceMisc(i(222621)),	-- Algari Treatise on Engineering
-			i(222552),	-- Algari Treatise on Herbalism
-			i(222548),	-- Algari Treatise on Inscription
-			i(222551),	-- Algari Treatise on Jewelcrafting
-			i(222549),	-- Algari Treatise on Leatherworking
-			i(222553),	-- Algari Treatise on Mining
-			i(222649),	-- Algari Treatise on Skinning
-			i(222547),	-- Algari Treatise on Tailoring
-			i(222600),	-- Contract: Assembly of the Deeps+
-			i(222601),	-- Contract: Assembly of the Deeps++
-			i(222602),	-- Contract: Assembly of the Deeps+++
-			i(232532, {["timeline"] = {ADDED_11_1_0}}),	-- Contract: The Cartels of Undermine+
-			i(232533, {["timeline"] = {ADDED_11_1_0}}),	-- Contract: The Cartels of Undermine++
-			i(232534, {["timeline"] = {ADDED_11_1_0}}),	-- Contract: The Cartels of Undermine+++
-			i(222597),	-- Contract: Council of Dornogal+
-			i(222598),	-- Contract: Council of Dornogal++
-			i(222599),	-- Contract: Council of Dornogal+++
-			i(222603),	-- Contract: Hallowfall Arathi+
-			i(222604),	-- Contract: Hallowfall Arathi++
-			i(222605),	-- Contract: Hallowfall Arathi+++
-			i(222606),	-- Contract: The Severed Threads+
-			i(222607),	-- Contract: The Severed Threads++
-			i(222608),	-- Contract: The Severed Threads+++
+			i(222546, {["questID"]=83725,["isWeekly"]=true}),	-- Algari Treatise on Alchemy
+			i(222554, {["questID"]=83726,["isWeekly"]=true}),	-- Algari Treatise on Blacksmithing
+			i(222550, {["questID"]=83727,["isWeekly"]=true}),	-- Algari Treatise on Enchanting
+			TempForceMisc(i(222621, {["questID"]=83728,["isWeekly"]=true})),	-- Algari Treatise on Engineering
+			i(222552, {["questID"]=83729,["isWeekly"]=true}),	-- Algari Treatise on Herbalism
+			i(222548, {["questID"]=83730,["isWeekly"]=true}),	-- Algari Treatise on Inscription
+			i(222551, {["questID"]=83731,["isWeekly"]=true}),	-- Algari Treatise on Jewelcrafting
+			i(222549, {["questID"]=83732,["isWeekly"]=true}),	-- Algari Treatise on Leatherworking
+			i(222553, {["questID"]=83733,["isWeekly"]=true}),	-- Algari Treatise on Mining
+			i(222649, {["questID"]=83734,["isWeekly"]=true}),	-- Algari Treatise on Skinning
+			i(222547, {["questID"]=83735,["isWeekly"]=true}),	-- Algari Treatise on Tailoring
+			i(222600, {["questID"]=84484,["isWeekly"]=true}),	-- Contract: Assembly of the Deeps+
+			i(222601, {["questID"]=84483,["isWeekly"]=true}),	-- Contract: Assembly of the Deeps++
+			i(222602, {["questID"]=84482,["isWeekly"]=true}),	-- Contract: Assembly of the Deeps+++
+			i(232532, {["timeline"]={ADDED_11_1_0},["questID"]=85793,["isWeekly"]=true}),	-- Contract: The Cartels of Undermine+
+			i(232533, {["timeline"]={ADDED_11_1_0},["questID"]=85794,["isWeekly"]=true}),	-- Contract: The Cartels of Undermine++
+			i(232534, {["timeline"]={ADDED_11_1_0},["questID"]=85795,["isWeekly"]=true}),	-- Contract: The Cartels of Undermine+++
+			i(222597, {["questID"]=84473,["isWeekly"]=true}),	-- Contract: Council of Dornogal+
+			i(222598, {["questID"]=84474,["isWeekly"]=true}),	-- Contract: Council of Dornogal++
+			i(222599, {["questID"]=84475,["isWeekly"]=true}),	-- Contract: Council of Dornogal+++
+			i(222603, {["questID"]=84479,["isWeekly"]=true}),	-- Contract: Hallowfall Arathi+
+			i(222604, {["questID"]=84480,["isWeekly"]=true}),	-- Contract: Hallowfall Arathi++
+			i(222605, {["questID"]=84481,["isWeekly"]=true}),	-- Contract: Hallowfall Arathi+++
+			i(222606, {["questID"]=84478,["isWeekly"]=true}),	-- Contract: The Severed Threads+
+			i(222607, {["questID"]=84477,["isWeekly"]=true}),	-- Contract: The Severed Threads++
+			i(222608, {["questID"]=84476,["isWeekly"]=true}),	-- Contract: The Severed Threads+++
 			i(226022),	-- Darkmoon Sigil: Ascension+
 			i(226023),	-- Darkmoon Sigil: Ascension++
 			i(226024),	-- Darkmoon Sigil: Ascension+++

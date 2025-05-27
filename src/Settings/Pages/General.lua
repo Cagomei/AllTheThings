@@ -157,6 +157,19 @@ local function presetStore()
 		["CC:SL_COV_NEC"] = settings:Get("CC:SL_COV_NEC"),
 		["CC:SL_COV_NFA"] = settings:Get("CC:SL_COV_NFA"),
 		["CC:SL_COV_VEN"] = settings:Get("CC:SL_COV_VEN"),
+
+		-- Account-wide ticks
+		["AccountMode"] = settings:Get("AccountMode"),
+		["AccountWide:Achievements"] = settings:Get("AccountWide:Achievements"),
+		["AccountWide:CharacterUnlocks"] = settings:Get("AccountWide:CharacterUnlocks"),
+		["AccountWide:DeathTracker"] = settings:Get("AccountWide:DeathTracker"),
+		["AccountWide:Quests"] = settings:Get("AccountWide:Quests"),
+		["AccountWide:Recipes"] = settings:Get("AccountWide:Recipes"),
+		["AccountWide:Reputations"] = settings:Get("AccountWide:Reputations"),
+		["AccountWide:Titles"] = settings:Get("AccountWide:Titles"),
+		["AccountWide:Followers"] = settings:Get("AccountWide:Followers"),
+		["AccountWide:AzeriteEssences"] = settings:Get("AccountWide:AzeriteEssences"),
+		["AccountWide:Conduits"] = settings:Get("AccountWide:Conduits"),
 	}
 
 	settings:Set("PresetRestore", settingsTable)
@@ -226,6 +239,19 @@ modeButton:SetScript("OnClick", function()
 				settings:Set("CC:SL_COV_NEC", settings:Get("PresetRestore")["CC:SL_COV_NEC"])
 				settings:Set("CC:SL_COV_NFA", settings:Get("PresetRestore")["CC:SL_COV_NFA"])
 				settings:Set("CC:SL_COV_VEN", settings:Get("PresetRestore")["CC:SL_COV_VEN"])
+
+				-- Account-wide ticks
+				settings:Set("AccountMode", settings:Get("PresetRestore")["AccountMode"])
+				settings:Set("AccountWide:Achievements", settings:Get("PresetRestore")["AccountWide:Achievements"])
+				settings:Set("AccountWide:CharacterUnlocks", settings:Get("PresetRestore")["AccountWide:CharacterUnlocks"])
+				settings:Set("AccountWide:DeathTracker", settings:Get("PresetRestore")["AccountWide:DeathTracker"])
+				settings:Set("AccountWide:Quests", settings:Get("PresetRestore")["AccountWide:Quests"])
+				settings:Set("AccountWide:Recipes", settings:Get("PresetRestore")["AccountWide:Recipes"])
+				settings:Set("AccountWide:Reputations", settings:Get("PresetRestore")["AccountWide:Reputations"])
+				settings:Set("AccountWide:Titles", settings:Get("PresetRestore")["AccountWide:Titles"])
+				settings:Set("AccountWide:Followers", settings:Get("PresetRestore")["AccountWide:Followers"])
+				settings:Set("AccountWide:AzeriteEssences", settings:Get("PresetRestore")["AccountWide:AzeriteEssences"])
+				settings:Set("AccountWide:Conduits", settings:Get("PresetRestore")["AccountWide:Conduits"])
 
 				-- Reset our preset storage
 				settings:Set("PresetRestore", {})

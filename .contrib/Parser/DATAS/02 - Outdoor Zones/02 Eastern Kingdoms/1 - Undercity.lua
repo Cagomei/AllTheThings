@@ -92,14 +92,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(4610, {	-- Algernon <Alchemy Supplies>
 						["coord"] = { 51.8, 74.6, UNDERCITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_ALCHEMY_VENDOR_REAGENTS, {
 							i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(13477, {	-- Recipe: Superior Mana Potion (RECIPE!)
 								["timeline"] = { REMOVED_2_0_1 },	-- Now taught by trainer, recipe removed from the game.
 							}),
-						},
+						}),
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -239,14 +239,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = { {"sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
 						["coord"] = { 70.1, 58.4, UNDERCITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_LEATHERWORKING_VENDOR_REAGENTS, {
 							i(18949, {	-- Pattern: Barbaric Bracers (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 				}),
 				prof(TAILORING, {
@@ -254,7 +254,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = { {"sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
 						["coord"] = { 70.6, 30.1, UNDERCITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
 							i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -270,7 +270,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(10321, {	-- Pattern: Tuxedo Shirt (RECIPE!)
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 					n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
 						["coord"] = { 62.0, 60.8, UNDERCITY },

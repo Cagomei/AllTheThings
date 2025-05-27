@@ -192,7 +192,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		})),
 		-- TWW Season 2 Boss (Still available)
 		m(DEMOLITION_DOME, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
-			--["icon"] = [[~_.asset("Delves_Nerubian")]],
+			["icon"] = [[~_.asset("Delves_Goblin")]],
 			["maps"] = { 2426 },
 			["coord"] = { 52.7, 9.4, UNDERMINE },
 			["g"] = {
@@ -2613,7 +2613,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		},
 	}),
 	m(EXCAVATION_SITE_9, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
-		--["icon"] = [[~_.asset("Delves_Nerubian")]],
+		["icon"] = [[~_.asset("Delves_Goblin")]],
 		["coord"] = { 81.0, 98.2, THE_RINGING_DEEPS },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -2961,7 +2961,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		},
 	}),
 	m(SIDESTREET_SLUICE, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
-		--["icon"] = [[~_.asset("Delves_Nerubian")]],
+		["icon"] = [[~_.asset("Delves_Goblin")]],
 		["coord"] = { 35.2, 52.2, UNDERMINE },
 		["maps"] = {
 			--2420,	-- The Pits (constant mapID)

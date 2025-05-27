@@ -29,8 +29,7 @@ do
 	app.CreateWarbandScene = app.CreateClassWithInfo(CLASSNAME, KEY, WarbandSceneInfoMeta, {
 		CACHE = function() return CACHE end,
 		icon = function(t)
-			-- return app.asset("Category_Campsites") TODO
-			return 648901
+			return app.asset("Category_Campsites")
 		end,
 		collectible = function(t)
 			return app.Settings.Collectibles[CACHE]

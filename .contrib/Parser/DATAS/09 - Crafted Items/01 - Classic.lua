@@ -2150,7 +2150,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(42462, {["timeline"]={ADDED_3_0_2,REMOVED_6_0_2}}),	-- Glyph of Healthstone
 			i(41106, {["timeline"]={ADDED_3_0_2,REMOVED_6_0_2}}),	-- Glyph of Holy Light / Glyph of Divine Favor[CATA] / Glyph of Illumination[MOP]
 			i(42961, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Eviscerate / Glyph of Debilitation[MOP-5.4.0] / Glyph of Recovery[5.4.0+]
-			i(43342, {["timeline"]={ADDED_3_1_0,REMOVED_6_0_2}}),	-- Glyph of Fade
+			i(42398, {["timeline"]={ADDED_3_1_0,REMOVED_6_0_2}}),	-- Glyph of Fade
 			i(43423, {["timeline"]={ADDED_3_0_2,REMOVED_4_0_3}}),	-- Glyph of Rending
 			i(41530, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Fire Nova Totem / Glyph of Fire Nova[3.3.0+]
 			i(40914, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Healing Touch
@@ -3911,120 +3911,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 	}),
 	-- Non-crafted reagents from vendors for professions:
-	-- Dyes and threads from LW and Tailor vendors:
 	filter(REAGENTS, {
-		["g"] = appendAllGroups(
-			sharedData({	-- Unique to Tailoring vendors
+		["groups"] = appendAllGroups(
+			-- Dyes and threads from LW and Tailor vendors:
+			{i(2324, {	-- Bleach (unique to Tailoring vendors)
 				["description"] = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the old world.",
-				["providers"] = {
-					-- Darnassus
-					{ "n", 4168 },	-- Elynna <Tailoring Supplies>
-					-- Ironforge
-					{ "n", 8681 },	-- Outfitter Eric <Speciality Tailoring Supplies>
-					{ "n", 5154 },	-- Poranna Snowbraid <Tailoring Supplies>
-					-- Orgrimmar
-					{ "n", 3364 },	-- Borya <Tailoring Supplies>
-					-- Stormwind
-					{ "n", 1347 },	-- Alexandra Bolero <Tailoring Supplies>
-					-- Thunder Bluff
-					{ "n", 3005 },	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
-					-- Undercity
-					{ "n", 4577 },	-- Millie Gregorian <Tailoring Supplies>
-					-- #if AFTER TBC
-					-- Exodar
-					{ "n", 16767 },	-- Neii <Tailoring Supplies>
-					-- Silvermoon
-					{ "n", 16638 },	-- Deynna <Tailoring Supplies>
-					-- #endif
-				},
-			},{
-				i(2324),	-- Bleach
-			}),
+			})},
 			sharedData({	-- Unique to Letherworking and Tailoring vendors
 				["description"] = "Can be bought from Leatherworking and Tailoring Suppliers, as well as some Trade vendors around the old world.",
-				["providers"] = {
-					-- Darnassus
-					{ "n", 4168 },	-- Elynna <Tailoring Supplies>
-					{ "n", 4225 },	-- Saenorion <Leatherworking Supplies>
-					-- Ironforge
-					{ "n", 5128 },	-- Bombus Finespindle <Leatherworking Supplies>
-					{ "n", 8681 },	-- Outfitter Eric <Speciality Tailoring Supplies>
-					{ "n", 5154 },	-- Poranna Snowbraid <Tailoring Supplies>
-					-- Orgrimmar
-					{ "n", 3364 },	-- Borya <Tailoring Supplies>
-					{ "n", 3366 },	-- Tamar <Leatherworking Supplies>
-					-- Stormwind
-					{ "n", 1347 },	-- Alexandra Bolero <Tailoring Supplies>
-					{ "n", 5565 },	-- Jillian Tanner <Leatherworking Supplies>
-					-- Thunder Bluff
-					{ "n", 3005 },	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
-					-- #if AFTER CATA
-					{ "n", 3008 },	-- Mak <Leatherworking Supplies>
-					-- #endif
-					-- Undercity
-					{ "n", 4589 },	-- Joseph Moore <Leatherworking Supplies>
-					{ "n", 4577 },	-- Millie Gregorian <Tailoring Supplies>
-					-- #if AFTER TBC
-					-- Exodar
-					{ "n", 16748 },	-- Haferet <Leatherworking Supplies>
-					{ "n", 16767 },	-- Neii <Tailoring Supplies>
-					-- Silvermoon
-					{ "n", 16638 },	-- Deynna <Tailoring Supplies>
-					{ "n", 16689 },	-- Zaralda <Leatherworking Supplies>
-					-- #endif
-				},
-			},{
-				i(6260),	-- Blue Dye
-				i(2605),	-- Green Dye
-				i(10290),	-- Pink Dye
-				i(6261),	-- Orange Dye
-			}),
-			sharedData({	-- Available on most trade vendors
-				["description"] = "Can be bought from Leatherworking and Tailoring Suppliers, as well as some Trade vendors around the old world.",
-				["providers"] = {
-					-- Darnassus
-					{ "n", 4168 },	-- Elynna <Tailoring Supplies>
-					{ "n", 4229 },	-- Mythrin'dir <Trade Supplies>
-					{ "n", 4225 },	-- Saenorion <Leatherworking Supplies>
-					-- Ironforge
-					{ "n", 5128 },	-- Bombus Finespindle <Leatherworking Supplies>
-					{ "n", 5163 },	-- Burbik Gearspanner <Trade Supplies>
-					{ "n", 8681 },	-- Outfitter Eric <Speciality Tailoring Supplies>
-					{ "n", 5154 },	-- Poranna Snowbraid <Tailoring Supplies>
-					-- Orgrimmar
-					{ "n", 3364 },	-- Borya <Tailoring Supplies>
-					{ "n", 3367 },	-- Felika <Trade Supplies>
-					{ "n", 3366 },	-- Tamar <Leatherworking Supplies>
-					-- Stormwind
-					{ "n", 1347 },	-- Alexandra Bolero <Tailoring Supplies>
-					{ "n", 1286 },	-- Edna Mulby <Trade Supplies>
-					{ "n", 5565 },	-- Jillian Tanner <Leatherworking Supplies>
-					-- Thunder Bluff
-					{ "n", 3005 },	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
-					-- #if AFTER CATA
-					{ "n", 3008 },	-- Mak <Leatherworking Supplies>
-					-- #endif
-					{ "n", 8363 },	-- Shadi Mistrunner <Trade Supplies>
-					-- Undercity
-					{ "n", 4561 },	-- Daniel Bartlett <Trade Supplies>
-					{ "n", 4775 },	-- Felicia Doan <Trade Supplies>
-					{ "n", 4589 },	-- Joseph Moore <Leatherworking Supplies>
-					{ "n", 4577 },	-- Millie Gregorian <Tailoring Supplies>
-					-- #if AFTER TBC
-					-- Exodar
-					{ "n", 16748 },	-- Haferet <Leatherworking Supplies>
-					{ "n", 16767 },	-- Neii <Tailoring Supplies>
-					{ "n", 16768 },	-- Nurguni <Tradesman>
-					-- Silvermoon
-					{ "n", 16638 },	-- Deynna <Tailoring Supplies>
-					{ "n", 16613 },	-- Parnis <Tradesman>
-					{ "n", 16689 },	-- Zaralda <Leatherworking Supplies>
-					-- #endif
-				},
 			},{
 				-- Dyes:
 				i(2325),	-- Black Dye
+				i(6260),	-- Blue Dye
+				i(2605),	-- Green Dye
 				i(4340),	-- Grey Dye
+				i(6261),	-- Orange Dye
+				i(10290),	-- Pink Dye
 				i(4342),	-- Purple Dye
 				i(2604),	-- Red Dye
 				i(4341),	-- Yellow Dye
@@ -4034,6 +3936,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(4291),	-- Silken Thread
 				i(8343),	-- Heavy Silken Thread
 				i(14341),	-- Rune Thread
+				-- Patterns:
+			}),
+			-- Alchemy vials from vendors
+			sharedData({	-- Empty-/Leaded-/Crystal-/Imbued Vial
+				["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
+			},{
+				i(3371),	-- Empty Vial [Vanilla - WotLK] / Crystal Vial [Cata -> ]
+				i(3372, { ["timeline"] = { REMOVED_4_0_1 }}),	-- Leaded Vial, turns into Cracked Vial with Cataclysm.
+				i(8925, { ["timeline"] = { REMOVED_4_0_1 }}),	-- Crystal Vial, turns into Tainted Vial with Cataclysm.
+				i(18256, { ["timeline"] = { REMOVED_4_0_1 }}),	-- Imbued Vial, turns into Melted Vial with Cataclysm.
 			})
 		),
 	}),

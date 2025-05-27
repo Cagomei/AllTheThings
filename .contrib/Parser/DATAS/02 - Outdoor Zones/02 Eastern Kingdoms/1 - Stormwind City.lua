@@ -131,6 +131,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
+					n(1257, {	-- Keldric Boucher <Alchemy Supplies & Reagents>/<Arcane Goods Vendor>
+						["coords"] = {
+							-- #if AFTER WRATH
+							{ 62.8, 75.0, STORMWIND_CITY },
+							-- #else
+							{ 55.6, 65.8, STORMWIND_CITY },
+							-- #endif
+						},
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
+					}),
 					n(5499, {	-- Lilyssia Nightbreeze <Alchemy Trainer>
 						["coords"] = {
 							-- #if AFTER WRATH
@@ -157,11 +168,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_ALCHEMY_VENDOR_REAGENTS, {
 							i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -848,7 +859,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5565, {	-- Jillian Tanner <Leatherworking Supplies>
 						["coord"] = { 71.7, 62.8, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {}),
+						["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, VANILLA_LEATHERWORKING_VENDOR_REAGENTS, {}),
 					}),
 					n(5564, {	-- Simon Tanner <Expert Leatherworker>
 						["coords"] = {
@@ -907,7 +918,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
+						["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, VANILLA_TAILORING_VENDOR_REAGENTS, {
 							i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
 								["isLimited"] = true,
 							}),

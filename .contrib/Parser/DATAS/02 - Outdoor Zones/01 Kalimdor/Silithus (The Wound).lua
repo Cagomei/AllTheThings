@@ -136,7 +136,10 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 							["sourceQuest"] = 53406,	-- The Chamber of Heart
 							["description"] = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
-							["coord"] = { 42.1, 44.3, SILITHUS },
+							["coords"] = {
+								{ 42.1, 44.3, SILITHUS },
+								{ 50.5, 59.9, REPAIRED_CHAMBER_OF_HEART },
+							},
 							["timeline"] = { ADDED_8_1_5 },
 						}),
 						q(55374, {	-- A Disturbance Beneath the Earth

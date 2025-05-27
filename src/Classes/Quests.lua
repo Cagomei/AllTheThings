@@ -2377,7 +2377,7 @@ if app.IsRetail then
 	local function BuildSourceQuestChain(group)
 		if not ((group.key == "questID" and group.questID) or group.sourceQuests) then return end
 
-		group.isQuestChain = true;
+		GetRelativeValue(group, "window").isQuestChain = true
 
 		-- if the group was created from a popout and thus contains its own pre-req quests already, then clean out direct quest entries from the group
 		if group.g then

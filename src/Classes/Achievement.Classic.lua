@@ -3,7 +3,8 @@ local L = app.L
 
 -- Globals
 local rawget, select, tostring, ipairs, pairs, tinsert, tonumber
-	= rawget, select, tostring, ipairs, pairs, tinsert, tonumber
+	= rawget, select, tostring, ipairs, pairs, tinsert, tonumber;
+local math_min = math.min;
 
 -- App & Module locals
 local SearchForField, SearchForFieldContainer
@@ -11,6 +12,7 @@ local SearchForField, SearchForFieldContainer
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local IsQuestFlaggedCompleted;
 local ResolveSymbolicLink;
+local IsSpellKnown;
 
 -- WoW API Cache
 local GetAchievementInfo, GetAchievementCriteriaInfoByID, GetCategoryInfo
@@ -23,8 +25,288 @@ local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 app.AddEventHandler("OnLoad", function()
 	ResolveSymbolicLink = app.ResolveSymbolicLink
 	IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
+	IsSpellKnown = app.IsSpellKnown;
 end)
 
+
+-- Achievement Criteria Data have independent detection methods based on their internal type.
+local GetItemCount = app.WOWAPI.GetItemCount;
+local GetPVPLifetimeStats = GetPVPLifetimeStats;
+local GetNumBankSlots = GetNumBankSlots;
+local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
+local function GetQuestCompleted(questID)
+	if IsQuestFlaggedCompleted(questID) then
+		return 1;
+	else
+		local quests = SearchForField("questID", questID);
+		if quests then
+			for i,quest in ipairs(quests) do
+				if quest.providers then
+					for i,provider in ipairs(quest.providers) do
+						if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+							return 1;
+						end
+					end
+				end
+				if quest.g then
+					for i,o in ipairs(quest.g) do
+						if o.itemID and GetItemCount(o.itemID, true) > 0 then
+							return 1;
+						end
+					end
+				end
+			end
+		end
+	end
+	return 0;
+end
+local function GetSpellCompleted(spellID)
+	if IsSpellKnown(spellID) then
+		return 1;
+	else
+		local spells = SearchForField("spellID", spellID);
+		if spells then
+			for i,o in ipairs(spells) do
+				if o.collected then return 1; end
+				break;
+			end
+		end
+	end
+	return 0;
+end
+local IgnoredReputationsForAchievements = {
+	[169] = 1,	-- Steamweedle Cartel doesn't count toward reputation achievements
+};
+local AchievementCriteriaCommands = {
+	CriteriaTypeForExaltedReputations = function()
+		local count = 0;
+		for factionID,g in pairs(SearchForFieldContainer("factionID")) do
+			if not IgnoredReputationsForAchievements[factionID] then
+				for j=1,#g,1 do
+					local o = g[j];
+					if o.key == "factionID" and o.standing == 8 then
+						count = count + 1;
+						break;
+					end
+				end
+			end
+		end
+		--print("Currently " .. count .. " Reputations at Exalted!");
+		return count;
+	end,
+	CriteriaTypeForHonorableKills = function()
+		local count = GetPVPLifetimeStats();
+		--print("Currently " .. count .. " Honorable Kills!");
+		return count;
+	end,
+	CriteriaTypeForMounts = function()
+		local count = 0;
+		for i,g in pairs(SearchForFieldContainer("spellID")) do
+			for j,o in ipairs(g) do
+				if ((o.f and o.f == app.FilterConstants.MOUNTS)
+				or (o.filterID and o.filterID == app.FilterConstants.MOUNTS)) then
+					if o.collected then count = count + 1; end
+					break;
+				end
+			end
+		end
+		--print("Currently " .. count .. " Total Mounts!");
+		return count;
+	end,
+	CriteriaTypeForBankSlots = function()
+		local count = GetNumBankSlots();
+		--print("Currently " .. count .. " Bank Slots!");
+		return count;
+	end,
+};
+local AchievementCriteriaDataCache = setmetatable({}, {
+	__index = function(t, key)
+		local command = AchievementCriteriaCommands[key];
+		if command then
+			local value = command();
+			t[key] = value;
+			return value;
+		else
+			print("Could not find command '" .. key .. "'");
+			t[key] = 0;
+			return 0;
+		end
+	end,
+});
+local AchievementCriteriaQuestDataCache = setmetatable({}, {
+	__index = function(t, key)
+		local value = GetQuestCompleted(key);
+		t[key] = value;
+		return value;
+	end,
+});
+local AchievementCriteriaSpellDataCache = setmetatable({}, {
+	__index = function(t, key)
+		local value = GetSpellCompleted(key);
+		t[key] = value;
+		return value;
+	end,
+});
+local DefaultCriteriaFields = {	-- Type 45, 47, 113
+	["collectible"] = app.ReturnTrue,
+	["collected"] = function(t)
+		return t.current >= t.amount;
+	end,
+};
+local ForBrokenTypesFields = {	-- Type 11 [Loremaster]
+	["collectible"] = app.ReturnFalse,
+	["current"] = function(t)
+		return 0;
+	end,
+};
+local ForLevelFields = {	-- Type 5
+	["collectible"] = app.ReturnTrue,
+	["collected"] = function(t)
+		return t.current >= t.amount;
+	end,
+	["current"] = function(t)
+		return app.Level;
+	end,
+};
+local ForOwnItemFields = {	-- Type 36
+	["collectible"] = app.ReturnTrue,
+	["amount"] = function(t) return 1; end,
+	["collected"] = function(t)
+		return t.current >= t.amount;
+	end,
+	["current"] = function(t)
+		return GetItemCount(t.asset, true);
+	end,
+	["provider"] = function(t)
+		local provider = {"i",t.asset};
+		t.provider = provider;
+		return provider;
+	end,
+};
+local ForQuestFields = {	-- Type 27
+	["collectible"] = app.ReturnTrue,
+	["amount"] = function(t) return 1; end,
+	["collected"] = function(t)
+		return t.current >= t.amount;
+	end,
+	["current"] = function(t)
+		return AchievementCriteriaQuestDataCache[t.asset];
+	end,
+	["sourceQuest"] = function(t)
+		return t.asset;
+	end,
+};
+local ForMountsFields = {	-- Type 75
+	["collectible"] = app.ReturnTrue,--function() return app.Settings.Collectibles.Mounts; end,
+	["collected"] = function(t)
+		return t.current >= t.amount;
+	end,
+};
+local ForSkillRankFields = {	-- Type 40
+	["collectible"] = app.ReturnTrue,
+	["collected"] = function(t)
+		return t.current >= t.total;
+	end,
+	["current"] = function(t)
+		local skill = app.CurrentCharacter.ActiveSkills[t.spellID];
+		if skill then return skill[1]; end
+		return 0;
+	end,
+	["total"] = function(t) return t.amount * 75; end,
+	["spellID"] = function(t)
+		return app.SkillDB.SkillToSpell[t.asset];
+	end,
+};
+local ForReputationFields = {	-- Type 46
+	["collectible"] = app.ReturnTrue,
+	["collected"] = function(t)
+		return t.current >= t.amount;
+	end,
+	["current"] = function(t)
+		return GetFactionCurrentReputation(t.asset) or 0;
+	end,
+}
+local ForSpellsFields = {	-- Type 34
+	["collectible"] = app.ReturnTrue,
+	["amount"] = function(t) return 1; end,
+	["collected"] = function(t)
+		return t.current >= t.amount;
+	end,
+	["current"] = function(t)
+		return AchievementCriteriaSpellDataCache[t.asset];
+	end,
+};
+local ForExplorationFields = {	-- Type 43
+	["collectible"] = app.ReturnTrue,
+	["amount"] = function(t) return 1; end,
+	["collected"] = function(t)
+		return t.current >= t.amount;
+	end,
+	["current"] = function(t)
+		return app.CurrentCharacter.Exploration[t.asset] and 1 or 0;
+	end,
+};
+local ForSubAchievementFields = {	-- Type 8
+	["collectible"] = function(t)
+		local achievements = SearchForField("achievementID", t.asset);
+		if achievements and #achievements > 0 then
+			t.collectible = true;
+			return true;
+		end
+	end,
+	["amount"] = function(t) return 1; end,
+	["collected"] = function(t)
+		return t.current >= t.amount;
+	end,
+	["current"] = function(t)
+		return app.CurrentCharacter.Achievements[t.asset] and 1 or 0;
+	end,
+};
+
+local CreateCriteriaType = app.CreateClass("CriteriaType", "__criteriaUID", {
+	RefreshCollectionOnly = true,
+	["collectible"] = app.ReturnFalse,
+	["collected"] = app.ReturnFalse,
+	["amount"] = function(t) return 0; end,
+	["name"] = function(t) return t.__criteriaUID; end,
+	["progress"] = function(t)
+		return math_min(t.current, t.total);
+	end,
+	["total"] = function(t) return t.amount; end,
+	["current"] = function(t)
+		return AchievementCriteriaDataCache[t.__type];
+	end,
+},
+"ForBankSlots", DefaultCriteriaFields, function(t) return t.type == 45; end,
+"ForBrokenTypes", ForBrokenTypesFields, function(t) return t.type == 11; end,
+"ForSkillRank", ForSkillRankFields, function(t) return t.type == 40; end,
+"ForSubAchievement", ForSubAchievementFields, function(t) return t.type == 8; end,
+"ForExaltedReputations", DefaultCriteriaFields, function(t) return t.type == 47; end,
+"ForHonorableKills", DefaultCriteriaFields, function(t) return t.type == 113; end,
+"ForReputation", ForReputationFields, function(t) return t.type == 46; end,
+"ForLevel", ForLevelFields, function(t) return t.type == 5; end,
+"ForOwnItem", ForOwnItemFields, function(t) return t.type == 36 or t.type == 57; end,
+"ForQuest", ForQuestFields, function(t) return t.type == 27; end,
+"ForMounts", ForMountsFields, function(t) return t.type == 75; end,
+"ForSpells", ForSpellsFields, function(t) return t.type == 34; end,
+"ForExploration", ForExplorationFields, function(t) return t.type == 43; end);
+
+-- Add Handlers for updating the completion status
+local AchievementCriteriaData = rawget(L, "ACHIEVEMENT_CRITERIA_DATA") or {};
+for id,criteria in pairs(AchievementCriteriaData) do
+	AchievementCriteriaData[id] = CreateCriteriaType(id, criteria);
+end
+app.AddEventHandler("OnRecalculate", function()
+	wipe(AchievementCriteriaDataCache);
+	wipe(AchievementCriteriaQuestDataCache);
+	wipe(AchievementCriteriaSpellDataCache);
+end);
+
+
+
+
+
+-- OLD IMPLEMENTATION:
 local SetAchievementCollected = function(t, achievementID, collected)
 	return app.SetCollected(t, "Achievements", achievementID, collected);
 end
@@ -738,6 +1020,42 @@ else
 		local data = achievementCategoryData[t.achievementCategoryID];
 		return data and data.parent or -1;
 	end
+	
+	
+	local onTooltipForAchievement = function(t, tooltipInfo)
+		local data = achievementData[t.achievementID];
+		if data and data.criteria and IsShiftKeyDown() then
+			local criteriaDatas,criteriaDatasByUID = {}, {};
+			for i,__criteriaUID in ipairs(data.criteria) do
+				local criteria = AchievementCriteriaData[__criteriaUID];
+				if criteria then
+					criteriaDatasByUID[__criteriaUID] = true;
+					tinsert(criteriaDatas, {
+						" [" .. __criteriaUID .. "]: " .. tostring(criteria.text),
+						"(" .. tostring(criteria.asset or "--") .. " @ " .. tostring(criteria.type) .. ") " .. tostring(criteria.progress) .. " / " .. tostring(criteria.total) .. " " .. app.GetCompletionIcon(criteria.collected)
+					});
+				end
+			end
+			if #criteriaDatas > 0 then
+				tinsert(tooltipInfo, { left = " " });
+				tinsert(tooltipInfo, {
+					left = "Total Criteria",
+					right = tostring(#criteriaDatas),
+					r = 0.8, g = 0.8, b = 1
+				});
+				for i,criteriaData in ipairs(criteriaDatas) do
+					tinsert(tooltipInfo, {
+						left = criteriaData[1],
+						right = criteriaData[2],
+						r = 1, g = 1, b = 1
+					});
+				end
+			end
+		end
+	end
+	fields.OnTooltip = function()
+		return onTooltipForAchievement;
+	end
 
 	local fieldsWithSpellID = {
 		OnUpdate = function(t)
@@ -747,7 +1065,7 @@ else
 		end
 	};
 	app.CreateAchievement = app.CreateClass("Achievement", "achievementID", fields,
-		"WithSpell", fieldsWithSpellID, function(t) return t.spellID; end);	-- This is a conditional contructor.
+		"WithSpell", fieldsWithSpellID, function(t) return t.spellID; end);
 	app.CreateAchievementCriteria = function(id, t) return nil; end	-- We don't support showing criteria before Wrath
 
 	-- Add in manual achievement handlers

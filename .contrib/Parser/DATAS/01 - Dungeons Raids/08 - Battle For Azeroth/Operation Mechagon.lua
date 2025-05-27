@@ -223,13 +223,12 @@ if CombineSeasonalLoot then
 			-- Azewrong Helms only have a single Appearance
 		-- H/M5+ have Heroic Appearance (non-Season Heroic) -> (Hero track Upgrades to Mythic appearance)
 		-- Technically it requires dropping at M+6 to be on Hero track to Upgrade, but I don't want to duplicate in both places
-		-- TODO add heroic difficulty to this
 		Difficulty(DIFFICULTY.DUNGEON.SEASONAL.TWWS2_HEROTRACK, {
 			difficulties = { DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
 		}).AddGroupsWithUpgrades({
 			n(MECHAGON_WORKSHOP, {
 				BossOnly(TUSSLETONKS, appendAllGroups(
-					-- Items that work properly
+					-- Items that work properly (i.e. Heroic=Adventurer=Champion=Hero, Mythic=Myth)
 					{
 						i(168962),	-- Apex Perforator
 						i(168955),	-- Electrifying Cognitive Amplifier
@@ -273,7 +272,7 @@ if CombineSeasonalLoot then
 				Boss(MACHINIST, {
 				}),
 				BossOnly(KING, appendAllGroups(
-					-- Items that work properly
+					-- Items that work properly (i.e. Heroic=Adventurer=Champion=Hero, Mythic=Myth)
 					{
 						i(168978),	-- Anodized Deflectors
 						i(235811),	-- Extravagant Epaulets
@@ -287,7 +286,9 @@ if CombineSeasonalLoot then
 						modID = 33,
 						up = 35,	-- Upgrades to the modID 35 version
 					},{
-						i(235810),	-- Circuit-Linked Chainmail
+						i(235810, {	-- Circuit-Linked Chainmail
+							["description"] = "Mythic Keystone drops the Mythic appearance of this Item (upgrades into Heroic)",
+						}),
 						i(168989),	-- Hyperthread Wristwraps
 						i(168980),	-- Gauntlets of Absolute Authority
 						i(168985),	-- Self-Sanitizing Handwraps
@@ -299,6 +300,7 @@ if CombineSeasonalLoot then
 				))),
 			}),
 		}),
+		-- Non-upgraded Items
 		Difficulty(DIFFICULTY.DUNGEON.SEASONAL.TWWS2_HEROTRACK, {
 			difficulties = { DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
 		}).AddGroups({
@@ -313,13 +315,7 @@ if CombineSeasonalLoot then
 				})),
 			}),
 		}),
-		-- Myth Track Appearances (non-Season Mythic)
-		-- Only reported way to obtain is from Vault??
-		-- Does this really exist??
-		-- n(THE_GREAT_VAULT, {
-		-- 	Boss(KING, clone(AzeriteLoot[KING])),
-		-- }),
-		-- Myth Track Appearances (non-Season Mythic)
+		-- Myth Track Appearances via Upgrade
 		Difficulty(DIFFICULTY.DUNGEON.SEASONAL.TWWS2_HEROTRACK).AddGroups({
 			n(UPGRADE, bubbleDownFiltered({
 				modID = DifficultyDB[DIFFICULTY.DUNGEON.SEASONAL.TWWS2_MYTHTRACK].modID
@@ -381,7 +377,9 @@ if CombineSeasonalLoot then
 							-- during the Season, Blizz changed the Item/Appearance association such that Heroic Mod is no longer accurate to the previous Heroic Appearance
 							modID = 35,
 						},{
-							i(235810),	-- Circuit-Linked Chainmail
+							i(235810, {	-- Circuit-Linked Chainmail
+								["description"] = "Mythic Keystone drops the Mythic appearance of this Item (upgrades into Heroic)",
+							}),
 							i(168989),	-- Hyperthread Wristwraps
 							i(168980),	-- Gauntlets of Absolute Authority
 							i(168985),	-- Self-Sanitizing Handwraps
@@ -390,7 +388,7 @@ if CombineSeasonalLoot then
 							i(168982),	-- Regal Mekanospurs
 							i(168988),	-- Royal Attendant's Trouser
 						}
-					))),
+					)))
 				}),
 			})),
 		}),

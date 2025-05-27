@@ -42,14 +42,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					n(16641, {	-- Melaris <Alchemy Supplies>
 						["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_ALCHEMY_VENDOR_REAGENTS, {
 							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
 								["isLimited"] = true,
 							}),
-						},
+						}),
+					}),
+					n(16612, {	-- Velanni <Alchemy Supplies & Reagents>
+						["coord"] = { 68.95, 66.8, SILVERMOON_CITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -157,7 +162,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER CATA
 						["sym"] = { { "sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
 						-- #endif
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_LEATHERWORKING_VENDOR_REAGENTS, {
 							i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -167,7 +172,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								["isLimited"] = true,
 								["f"] = RECIPES,
 							}),
-						},
+						}),
 					}),
 				}),
 				prof(TAILORING, {
@@ -177,15 +182,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER CATA
 						["sym"] = { { "sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
 						-- #endif
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
 							i(21892),	-- Pattern: Bolt of Imbued Netherweave (RECIPE!)
 							i(21894, {	-- Pattern: Bolt of Soulcloth (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(21896),	-- Pattern: Netherweave Robe (RECIPE!)
 							i(21897),	-- Pattern: Netherweave Tunic (RECIPE!)
-						},
+						}),
 					}),
+				}),
+				n(16613, {	-- Parnis <Tradesman>
+					["coord"] = { 64.9, 64.7, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
 				}),
 			}),
 			n(QUESTS, {
@@ -758,11 +768,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						846,    -- Tanned Leather Jerkin
 						845,    -- Tanned Leather Pants
 					}},
-				}),
-				n(16613, {	-- Parnis <Tradesman>
-					["coord"] = { 64.9, 64.7, SILVERMOON_CITY },
-					["races"] = HORDE_ONLY,
-					-- Danny Donkey: Is used as a provider for reagents.
 				}),
 				n(16678, {	-- Rahein <Blade Vendor>
 					["coord"] = { 52.6, 64.6, SILVERMOON_CITY },

@@ -4,7 +4,7 @@ MOUNT_MODS = createHeader({
 	-- #if NOT ANYCLASSIC
 	export = true,	-- NOTE: Currently referenced in Mount Mods (Dynamic)
 	-- #endif
-	icon = 975744,
+	icon = [[~_.asset("Category_MountMods")]],
 	text = {
 		en = "Mount Mods",
 		--es = "",

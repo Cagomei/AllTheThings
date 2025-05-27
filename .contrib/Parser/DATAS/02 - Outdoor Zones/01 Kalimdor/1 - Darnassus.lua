@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 55.8, 24.5, DARNASSUS },
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_ALCHEMY_VENDOR_REAGENTS, {
 							i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(13477, {	-- Recipe: Superior Mana Potion (RECIPE!)
 								["timeline"] = { REMOVED_2_0_1 },	-- Moved to Trainers
 							}),
-						},
+						}),
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -266,14 +266,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["sym"] = {
 							{"sub", "common_recipes_vendor", 3366},	-- Tamar <Leatherworking Supplies>
 						},
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_LEATHERWORKING_VENDOR_REAGENTS, {
 							i(18949, {	-- Pattern: Barbaric Bracers (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 				}),
 				prof(TAILORING, {
@@ -287,7 +287,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["sym"] = {
 							{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
 						},
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
 							i(6272, {	-- Pattern: Blue Linen Robe
 								["isLimited"] = true,
 							}),
@@ -301,7 +301,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(10311, {	-- Pattern: Orange Martial Shirt
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 					n(4228, {	-- Vaean <Enchanting Supplies>
 						-- #if AFTER CATA

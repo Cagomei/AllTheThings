@@ -114,14 +114,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5178, {	-- Soolie Berryfizz <Alchemy Supplies>
 						["coord"] = { 66.6, 54.6, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_ALCHEMY_VENDOR_REAGENTS, {
 							i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -306,18 +306,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER CATA
 						["sym"] = { {"sub", "common_recipes_vendor", 3366} },	-- Tamar <Leatherworking Supplies>
 						-- #endif
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_LEATHERWORKING_VENDOR_REAGENTS, {
 							i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 				}),
 				prof(TAILORING, {
 					n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
 						["coord"] = { 43.0, 29.2, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
 							i(10314, {	-- Pattern: Lavender Mageweave Shirt (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -333,7 +333,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(10321, {	-- Pattern: Tuxedo Shirt (RECIPE!)
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 					n(5154, {	-- Poranna Snowbraid <Tailoring Supplies>
 						["coord"] = { 43.8, 29.6, IRONFORGE },
@@ -341,6 +341,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = { {"sub", "common_recipes_vendor", 3364} },	-- Borya <Tailoring Supplies>
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {}),
 					}),
 					n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
 						["coord"] = { 60.8, 44.2, IRONFORGE },

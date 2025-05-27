@@ -47,7 +47,9 @@ namespace ATT
                 switch (criteria.Type)
                 {
                     case 5:     // Reach level X.
+                    case 40:    // Reach x rank in a skill / profession.
                     case 47:    // Raise X reputations to Exalted
+                    case 75:    // Obtain X mounts
                     case 113:   // X Honorable Kills
                         // We need to make a unique criteriaID for this.
                         criteriaID = --UNIQUE_CRITERIA_ID;

@@ -81,8 +81,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			-- #if AFTER 4.0.1.12984
 			n(PROFESSIONS, {
+				prof(ALCHEMY, {
+					n(3010, {	-- Mani Winterhoof <Alchemy Supplies>
+						["coord"] = { 47.4, 33.73, THUNDER_BLUFF },
+						["races"] = HORDE_ONLY,
+						["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
+					}),
+					n(3014, {	-- Nida Winterhoof <Herbalism Supplies>
+						["coord"] = { 49.6, 39.6, THUNDER_BLUFF },
+						["races"] = HORDE_ONLY,
+						["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
+					}),
+				}),
 				prof(BLACKSMITHING, {
 					n(2999, {	-- Taur Stonehoof <Blacksmithing Supplies>
 						["coord"] = { 39.8, 55.6, THUNDER_BLUFF },
@@ -205,6 +216,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 42.08, 43.46, THUNDER_BLUFF },
 						["sym"] = { {"sub", "common_recipes_vendor", 3366} },	-- Tamar <Leatherworking Supplies>
 						["races"] = HORDE_ONLY,
+						-- #if AFTER CATA
+						["groups"] = appendGroups(VANILLA_LEATHERWORKING_VENDOR_REAGENTS, {}),
+						-- #endif
 					}),
 				}),
 				prof(TAILORING, {
@@ -212,7 +226,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 43.8, 45.1, THUNDER_BLUFF },
 						["sym"] = { {"sub", "common_recipes_vendor", 3364} },	-- Borya <Tailoring Supplies>
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
 							i(10311, {	-- Pattern: Orange Martial Shirt
 								["isLimited"] = true,
 							}),
@@ -225,7 +239,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(10325, {	-- Pattern: White Wedding Dress
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 					n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
 						["coord"] = { 44.9, 37.7, THUNDER_BLUFF },
@@ -236,7 +250,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 			}),
-			-- #endif
 			n(QUESTS, {
 				q(29362, {	-- "Magic" Mushrooms
 					["qg"] = 3026,	-- Aska Mistrunner

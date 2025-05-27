@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			ach(20598),		-- Hallowfall (automated)
-			ach(40704, {	-- Hallowfall Glyph Hunter
+			skyriding(ach(40704, {	-- Hallowfall Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
 					40685,	-- Skyriding Glyphs: Bleak Sand
@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					40690,	-- Skyriding Glyphs: Tenir's Ascent
 					40689,	-- Skyriding Glyphs: Velhan's Claim
 				}},
-			}),
+			})),
 			ach(40360, {	-- Life on the Farm (automated)
 				["g"] = {
 					i(226160),	-- Hillhelm Farmhand's Hoe
@@ -72,36 +72,36 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					219368,	-- Alyza Bowblaze
 				},
 			}),
-			ach(40685, {	-- Skyriding Glyphs: Bleak Sand
+			skyriding(ach(40685, {	-- Skyriding Glyphs: Bleak Sand
 				["coord"] = { 62.8, 7.2, HALLOWFALL },
-			}),
-			ach(40684, {	-- Skyriding Glyphs: Dunelle's Kindness
+			})),
+			skyriding(ach(40684, {	-- Skyriding Glyphs: Dunelle's Kindness
 				["coord"] = { 69.9, 44.2, HALLOWFALL },
-			}),
-			ach(40688, {	-- Skyriding Glyphs: Fortune's Fall
+			})),
+			skyriding(ach(40688, {	-- Skyriding Glyphs: Fortune's Fall
 				["coord"] = { 30.8, 51.6, HALLOWFALL },
-			}),
-			ach(40686, {	-- Skyriding Glyphs: Mereldar
+			})),
+			skyriding(ach(40686, {	-- Skyriding Glyphs: Mereldar
 				["coord"] = { 43.3, 52.8, HALLOWFALL },
-			}),
-			ach(40687, {	-- Skyriding Glyphs: Priory of the Sacred Flame
+			})),
+			skyriding(ach(40687, {	-- Skyriding Glyphs: Priory of the Sacred Flame
 				["coord"] = { 35.4, 33.9, HALLOWFALL },
-			}),
-			ach(40683, {	-- Skyriding Glyphs: Sanguine Grasps
+			})),
+			skyriding(ach(40683, {	-- Skyriding Glyphs: Sanguine Grasps
 				["coord"] = { 63.6, 65.5, HALLOWFALL },
-			}),
-			ach(40682, {	-- Skyriding Glyphs: Sina's Yearning
+			})),
+			skyriding(ach(40682, {	-- Skyriding Glyphs: Sina's Yearning
 				["coord"] = { 57.3, 32.8, HALLOWFALL },
-			}),
-			ach(40681, {	-- Skyriding Glyphs: The Fangs
+			})),
+			skyriding(ach(40681, {	-- Skyriding Glyphs: The Fangs
 				["coord"] = { 62.9, 51.8, HALLOWFALL },
-			}),
-			ach(40690, {	-- Skyriding Glyphs: Tenir's Ascent
+			})),
+			skyriding(ach(40690, {	-- Skyriding Glyphs: Tenir's Ascent
 				["coord"] = { 57.6, 64.6, HALLOWFALL },
-			}),
-			ach(40689, {	-- Skyriding Glyphs: Velhan's Claim
+			})),
+			skyriding(ach(40689, {	-- Skyriding Glyphs: Velhan's Claim
 				["coord"] = { 45.7, 12.4, HALLOWFALL },
-			}),
+			})),
 			ach(40844),		-- Sojourner of Hallowfall (automated)
 			ach(40625, {	-- The Missing Lynx
 				crit(68975, {	-- Magpie

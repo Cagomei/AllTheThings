@@ -63,14 +63,19 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					n(16705, {	-- Altaa <Alchemy Supplies>
 						["coord"] = { 28.1, 61.9, THE_EXODAR },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_ALCHEMY_VENDOR_REAGENTS, {
 							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
 								["isLimited"] = true,
 							}),
-						},
+						}),
+					}),
+					n(16706, {	-- Musal <Alchemy Supplies & Reagents>
+						["coord"] = { 44.77, 63.2, THE_EXODAR },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -178,7 +183,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER CATA
 						["sym"] = { { "sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
 						-- #endif
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_LEATHERWORKING_VENDOR_REAGENTS, {
 							i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -188,7 +193,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								["isLimited"] = true,
 								["f"] = RECIPES,
 							}),
-						},
+						}),
 					}),
 				}),
 				prof(TAILORING, {
@@ -198,15 +203,20 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER CATA
 						["sym"] = { { "sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
 						-- #endif
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
 							i(21892),	-- Pattern: Bolt of Imbued Netherweave (RECIPE!)
 							i(21894, {	-- Pattern: Bolt of Soulcloth (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(21896),	-- Pattern: Netherweave Robe (RECIPE!)
 							i(21897),	-- Pattern: Netherweave Tunic (RECIPE!)
-						},
+						}),
 					}),
+				}),
+				n(16768, {	-- Nurguni <Tradesman>
+					["coord"] = { 57.0, 50.05, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
 				}),
 			}),
 			n(QUESTS, {
@@ -612,11 +622,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						2509,    -- Ornate Blunderbuss
 						2511,    -- Hunter's Boomstick
 					}},
-				}),
-				n(16768, {	-- Nurguni <Tradesman>
-					["coord"] = { 57.0, 50.05, THE_EXODAR },
-					["races"] = ALLIANCE_ONLY,
-					-- Danny Donkey: Is used as a provider for reagents.
 				}),
 				n(16632, {	-- Oss
 					["coord"] = { 46.8, 60.4, THE_EXODAR },

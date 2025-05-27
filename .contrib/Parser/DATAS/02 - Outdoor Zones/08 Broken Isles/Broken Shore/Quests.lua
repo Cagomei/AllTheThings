@@ -372,7 +372,10 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			}),
 			q(46253, {	-- Pillars of Creation
 				["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["qgs"] = {
+					116302,	-- Archmage Khadgar
+					122799,	-- Archmage Khadgar
+				},
 				["coord"] = { 44.6, 63.1, BROKEN_SHORE },
 			}),
 			q(46769, {	-- Relieved of Their Valuables
@@ -462,7 +465,10 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			}),
 			q(46805, {	-- The Deceiver's Downfall
 				["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
-				["provider"] = { "n", 120372 },	-- Prophet Velen
+				["qgs"] = {
+					120372,	-- Prophet Velen
+					122800,	-- Prophet Velen
+				},
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 			}),
 			q(46282, {	-- The King's Path

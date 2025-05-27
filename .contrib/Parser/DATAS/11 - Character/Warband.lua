@@ -11,7 +11,7 @@ WARBAND = createHeader({
 
 CAMPSITES = createHeader({
 	readable = "Campsites",
-	icon = 6124644,
+	icon = [[~_.asset("Category_Campsites")]],
 	text = {
 		en = [[~ACCOUNT_LEVEL_SCENE]],
 	},

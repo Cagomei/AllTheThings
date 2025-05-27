@@ -311,6 +311,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 			}),
 			n(TREASURES, {
+				o(495367, {	-- Corrupted Chest (Participation)
+					["description"] = "Default Chest if you don't clear any district.",
+					["coords"] = {
+						{ 41.6, 34.3, RE_HORRIFIC_STORMWIND },
+						{ 48.4, 58.6, RE_HORRIFIC_ORGRIMMAR },
+					},
+				}),
 				o(527842, {	-- Black Blood Infused Bar
 					["description"] = "Can be looted once per run",
 					["coords"] = {
@@ -903,10 +910,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						}),
 						n(241702, {	-- Gamon <Hero of Orgrimmar>
 							["description"] = "Interact with his axe on the table on the right portion of the first floor of the Broken Tusk inn at the Valley of Strength",
-							--["coord"] = { X, Y, RE_HORRIFIC_ORGRIMMAR },
-							["g"] = {
-								i(239158),	-- Nemesis Shard (GAMON)
-							},
+							["coord"] = { 54.7, 79.0, RE_HORRIFIC_ORGRIMMAR },
+							["g"] = { i(239158) },	-- Nemesis Shard (GAMON)
 						}),
 						n(238836, {	-- Void-Scarred Wolf
 							["description"] = "Interact with Wolf Rider gear in the Valleys of Honor and Wisdom to gain a stacking buff, then interact with a wolf rug at the Drag's leatherworking shop to spawn the rare.\n\nWolf rider packs are only visible with at least one mask active.",
@@ -924,6 +929,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						}),
 						n(238145, {	-- Void-Scarred Wyvern Matriarch
 							["description"] = "Clear the Valley of Wisdom to access the elevator up to the Skyway. Defeat waves of Void-Scarred Wyverns until the matriarch spawns.\n\nThe path up to the Skyway will remain blocked without at least 3 masks active.",
+							--["coord"] = { , RE_HORRIFIC_ORGRIMMAR },
 							["crs"] = {
 								238054,	-- Void Scarred Cub
 								238098,	-- Void-Scarred Wyvern
@@ -955,10 +961,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						ach(41964),	-- Beyond the Most Horrific Vision of Stormwind
 					}),
 					n(SCENARIO_COMPLETION, {
-						o(495367, {	-- Corrupted Chest (Participation)
-							["description"] = "Default Chest if you don't clear any district.",
-							["coord"] = { 41.6, 34.3, RE_HORRIFIC_STORMWIND },
-						}),
 						o(499031, {	-- Corrupted Chest (Trade District/Wyrmbane)
 							["description"] = "Bonus Chest for completing the Trade District Objective/Wyrmbane.",
 							["coord"] = { 41.3, 34.1, RE_HORRIFIC_STORMWIND },

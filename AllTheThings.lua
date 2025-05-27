@@ -2675,17 +2675,6 @@ function app:GetDataCache()
 		tinsert(g, db);
 	end
 
-	-- TODO: Do we need this as a new root?
-	-- Skyriding
-	--if app.Categories.Skyriding then
-	--	db = app.CreateNPC(app.HeaderConstants.SKYRIDING);
-	--	db.g = app.Categories.Skyriding;
-	--	db.lvl = 10;
-	--	db.text = DYNAMIC_FLIGHT; -- Skyriding
-	--	db.icon = "|TInterface\\Icons\\ability_dragonriding_dragonridinggliding01:0|t";
-	--	tinsert(g, db);
-	--end
-
 	-- Craftables
 	if app.Categories.Craftables then
 		db = app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM);
@@ -2813,7 +2802,7 @@ function app:GetDataCache()
 			-- Campsites
 			app.CreateDynamicHeader("campsiteID", {
 				name = WARBAND_SCENES,
-				icon = 6124644	-- app.asset("Category_Campsites") TODO
+				icon = app.asset("Category_Campsites")
 			}),
 
 			-- Character Unlocks
@@ -4054,7 +4043,7 @@ customWindowUpdates.NWP = function(self, force)
 				{ id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") },
 				{ id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") },
 				{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
-				{ id = "campsiteID", name = WARBAND_SCENES, icon = 6124644 },	-- app.asset("Category_Campsites") TODO
+				{ id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") },
 				{ id = "characterUnlock", name = CHARACTER .. " " .. UNLOCK .. "s", icon = app.asset("Category_ItemSets") },
 				{ id = "conduitID", name = GetSpellName(348869) .. " (" .. EXPANSION_NAME8 .. ")", icon = 3601566 },
 				{ id = "currencyID", name = CURRENCY, icon = app.asset("Interface_Vendor") },
@@ -4245,7 +4234,7 @@ customWindowUpdates.awp = function(self, force)	-- TODO: Change this to remember
 					{ id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") },
 					{ id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") },
 					{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
-					{ id = "campsiteID", name = WARBAND_SCENES, icon = 6124644 },	-- app.asset("Category_Campsites") TODO
+					{ id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") },
 					{ id = "characterUnlock", name = CHARACTER .. " " .. UNLOCK .. "s", icon = app.asset("Category_ItemSets") },
 					{ id = "conduitID", name = GetSpellName(348869) .. " (" .. EXPANSION_NAME8 .. ")", icon = 3601566 },
 					{ id = "currencyID", name = CURRENCY, icon = app.asset("Interface_Vendor") },

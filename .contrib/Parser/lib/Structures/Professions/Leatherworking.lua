@@ -201,6 +201,22 @@ EXPERT_ARTISAN_LEATHERWORKING
 	{}
 -- #endif
 );
+VANILLA_LEATHERWORKING_VENDOR_REAGENTS = {
+	i(2325),	-- Black Dye
+	i(6260),	-- Blue Dye
+	i(2605),	-- Green Dye
+	i(4340),	-- Grey Dye
+	i(6261),	-- Orange Dye
+	i(10290),	-- Pink Dye
+	i(4342),	-- Purple Dye
+	i(2604),	-- Red Dye
+	i(4341),	-- Yellow Dye
+	i(2320),	-- Coarse Thread
+	i(2321),	-- Fine Thread
+	i(4291),	-- Silken Thread
+	i(8343),	-- Heavy Silken Thread
+	i(14341),	-- Rune Thread
+};
 TBC_LEATHERWORKING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(32549, {	-- Leatherworking (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },

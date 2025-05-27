@@ -306,6 +306,17 @@ ExportDB.SkillDB = {
 		[125586] = 125586,	-- Way of the Pot
 		[125587] = 125587,	-- Way of the Steamer
 		[125584] = 125584,	-- Way of the Wok
+		
+		-- #if BEFORE TBC
+		[148] = 824,	-- Horse Riding
+		[713] = 18995,	-- Kodo Riding
+		[553] = 10907,	-- Mechanostrider Piloting
+		[152] = 826,	-- Ram Riding
+		[533] = 10861,	-- Raptor Riding
+		[150] = 828,	-- Tiger Riding
+		[554] = 10906,	-- Undead Horsemanship
+		[149] = 825,	-- Wolf Riding
+		-- #endif
 	},
 	-- Skills with possible Specializations
 	Specializations = {
