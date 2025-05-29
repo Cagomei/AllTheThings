@@ -45,7 +45,7 @@ root(ROOTS.Zones, {
 					explorationAch(865),	-- Explore Blade's Edge Mountains
 					ach(1193, {	-- On the Blade's Edge
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER WRATH
 						["sourceQuests"] = {
 							-- Sylvanaar (A)
 							10518,	-- Planting the Banner

@@ -24,7 +24,6 @@ root(ROOTS.Zones, {
 					ach(34, {	-- I've Toured the Fjord (A)
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
 						["sourceQuests"] = {
 							11291,	-- To Westguard Keep!
 							-- TODO:: confirm the quest below
@@ -46,12 +45,6 @@ root(ROOTS.Zones, {
 							11348,	-- The Rune of Command
 							11326,	-- Alpha Worg
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 130,
-						-- #endif
 						-- #else
 						["groups"] = {
 							crit(38976, {	-- The Ill-Equipped Port
@@ -114,7 +107,6 @@ root(ROOTS.Zones, {
 					ach(1356, {	-- I've Toured the Fjord (H)
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
 						["sourceQuests"] = {
 							11234,	-- Report to Anselm
 							12481,	-- Adding Injury to Insult
@@ -134,12 +126,6 @@ root(ROOTS.Zones, {
 							11268,	-- The Walking Dead
 							11324,	-- Alpha Worg
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 105,
-						-- #endif
 						-- #else
 						["groups"] = {
 							crit(38993, {	-- Visitors from the Keep

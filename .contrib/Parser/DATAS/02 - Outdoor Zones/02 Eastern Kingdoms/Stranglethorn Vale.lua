@@ -131,25 +131,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				applyclassicphase(PHASE_ONE, ach(871, {	-- Avast Ye, Admiral!
-					["sourceQuest"] = 4621,	-- Avast Ye, Admiral!
-					["groups"] = {
-						title(111, {	-- Bloodsail Admiral <Name>
-							["timeline"] = { ADDED_3_0_2 },
-						}),
-					},
+					title(111, {	-- Bloodsail Admiral <Name>
+						["timeline"] = { ADDED_3_0_2 },
+					}),
 				})),
 				explorationAch(781),	-- Explore Stranglethorn Vale
-				ach(940, {	-- The Green Hills of Stranglethorn
-					["sourceQuests"] = {
-						208,	-- Big Game Hunter
-						-- #if BEFORE CATA
-						338,	-- The Green Hills of Stranglethorn
-						-- #endif
-					},
-					-- #if BEFORE WRATH
-					["AllSourceQuestsRequiredForAchievement"] = true,
-					-- #endif
-				}),
+				ach(940),	-- The Green Hills of Stranglethorn
 			}),
 			pvp(o(179697, {	-- Arena Treasure Chest
 				["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
@@ -161,14 +148,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				},
 				["groups"] = {
-					ach(389, {	-- Gurubashi Arena Master
-						["provider"] = { "i", 18706 },	-- Arena Master
+					ach(389),	-- Gurubashi Arena Master
+					i(18706, {	-- Arena Master
 						-- #if BEFORE WRATH
-						["lore"] = "Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
-						["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, ]] .. WOWAPI_GetItemCount(18706) .. [[ > 0 or ]] .. WOWAPI_GetItemCount(19024) .. [[ > 0); end]],
+						["lore"] = "Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
 						-- #endif
 					}),
-					i(18706),	-- Arena Master
 					i(18711),	-- Arena Bands
 					i(18710),	-- Arena Bracers
 					i(18712),	-- Arena Vambraces
@@ -450,11 +435,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						ach(396, {	-- Arena Grandmaster
 							["provider"] = { "i", 19024 },	-- Arena Grand Master
+						}),
+						i(19024, {	-- Arena Grand Master
 							-- #if BEFORE WRATH
 							["lore"] = "Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
 							-- #endif
 						}),
-						i(19024),	-- Arena Grand Master
 					},
 				})),
 				pvp(q(7810, {	-- Arena Master

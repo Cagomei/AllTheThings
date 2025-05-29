@@ -26,19 +26,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				ach(940, {	-- The Green Hills of Stranglethorn
-					-- #if AFTER CATA
-					["sourceQuest"] = 208,	-- Big Game Hunter
-					-- #else
-					["sourceQuests"] = {
-						208,	-- Big Game Hunter
-						338,	-- The Green Hills of Stranglethorn
-					},
-					-- #endif
-					-- #if BEFORE WRATH
-					["AllSourceQuestsRequiredForAchievement"] = true,
-					-- #endif
-				}),
+				ach(940),	-- The Green Hills of Stranglethorn
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

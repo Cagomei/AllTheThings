@@ -12,7 +12,6 @@ root(ROOTS.Zones, {
 					ach(33, {	-- Nothing Boring About Borean (A)
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
 						["sourceQuests"] = {
 							11794,	-- The Hunt is On
 							11965,	-- Call to Arms!
@@ -36,12 +35,6 @@ root(ROOTS.Zones, {
 							12088,	-- Thassarian, the Death Knight
 							12019,	-- Last Rites
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 130,
-						-- #endif
 						-- #else
 						["groups"] = {
 							crit(39025, {	-- Hiding in Plain Sight
@@ -107,7 +100,6 @@ root(ROOTS.Zones, {
 					ach(1358, {	-- Nothing Boring About Borean (H)
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
 						["sourceQuests"] = {
 							11638,	-- Return My Remains
 							11652,	-- The Plains of Nasam
@@ -136,12 +128,6 @@ root(ROOTS.Zones, {
 							11907,	-- The Sub-Chieftains
 							11930,	-- Across Transborea
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 150,
-						-- #endif
 						-- #else
 						["groups"] = {
 							crit(39043, {	-- The Fate of Farseer Grimwalker

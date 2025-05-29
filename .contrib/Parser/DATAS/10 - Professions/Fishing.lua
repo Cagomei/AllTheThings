@@ -157,33 +157,24 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 		ach(126, {	-- Journeyman Fisherman
 			-- #if NOT ANYCLASSIC
 			["timeline"] = { ADDED_3_0_2 },
-			-- #else
-			["spellID"] = 7731,	-- Fishing (Journeyman)
 			-- #endif
-			["rank"] = 2,
 		}),
 		ach(127, {	-- Expert Fisherman
 			-- #if NOT ANYCLASSIC
 			["timeline"] = { ADDED_3_0_2 },
-			-- #else
-			["spellID"] = 7732,	-- Fishing (Expert)
 			-- #endif
-			["rank"] = 3,
 		}),
 		ach(128, {	-- Artisan Fisherman
 			-- #if NOT ANYCLASSIC
 			["timeline"] = { ADDED_3_0_2 },
-			-- #else
-			["spellID"] = 18248,	-- Fishing (Artisan)
 			-- #endif
-			["rank"] = 4,
 		}),
 		ach(150, {	-- The Fishing Diplomat
 			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 	}),
-	expansion(EXPANSION.TBC, {
+	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, {
 		["timeline"] = {
 			-- #if NOT ANYCLASSIC
 			ADDED_3_0_2,
@@ -192,12 +183,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			-- #endif
 		},
 		["groups"] = {
-			applyclassicphase(TBC_PHASE_ONE, ach(129, {	-- Master Fisherman / Outland Fisherman
-				-- #if ANYCLASSIC
-				["spellID"] = 33095,	-- Fishing (Master)
-				-- #endif
-				["rank"] = 5,
-			})),
+			ach(129),	-- Master Fisherman / Outland Fisherman
 			ach(1225, {	-- Outland Angler
 				["maps"] = { NAGRAND, TEROKKAR_FOREST, ZANGARMARSH },
 				["timeline"] = { ADDED_3_0_2 },
@@ -215,14 +201,9 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				-- #endif
 			}),
 		},
-	}),
+	})),
 	expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
-		ach(130, {	-- Grand Master Fisherman
-			-- #if ANYCLASSIC
-			["spellID"] = 51294,	-- Fishing (Grand Master)
-			-- #endif
-			["rank"] = 6,
-		}),
+		ach(130),	-- Grand Master Fisherman
 		ach(1517, {	-- Northrend Angler
 			["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, HOWLING_FJORD, GRIZZLY_HILLS, CRYSTALSONG_FOREST, SHOLAZAR_BASIN },
 			["g"] = {

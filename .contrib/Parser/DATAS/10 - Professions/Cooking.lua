@@ -124,8 +124,6 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 	}),
 	expansion(EXPANSION.CLASSIC, {
 		ach(123, {	-- Artisan Cook / Classic Cook [8.0.1]
-			-- #if BEFORE 8.0.1
-			["spellID"] = 18260,	-- Cooking (Artisan)
 			-- #if SEASON_OF_DISCOVERY
 			["OnUpdate"] = [[function(t)
 				if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
@@ -133,12 +131,8 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				end
 			end]],
 			-- #endif
-			["rank"] = 4,
-			-- #endif
 		}),
 		ach(122, {	-- Expert Cook
-			-- #if BEFORE 8.0.1
-			["spellID"] = 3413,	-- Cooking (Expert)
 			 -- #if SEASON_OF_DISCOVERY
 			["OnUpdate"] = [[function(t)
 				if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
@@ -146,23 +140,12 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				end
 			end]],
 			-- #endif
-			["rank"] = 3,
-			-- #endif
 		}),
-		ach(121, {	-- Journeyman Cook
-			-- #if BEFORE 8.0.1
-			["spellID"] = 3102,	-- Cooking (Journeyman)
-			["rank"] = 2,
-			-- #endif
-		}),
+		ach(121),	-- Journeyman Cook
 	}),
 	expansion(EXPANSION.TBC, {
 		applyclassicphase(TBC_PHASE_ONE, ach(124, {	-- Master Cook / Outland Cook [8.0.1+]
 			["timeline"] = { ADDED_2_0_1 },
-			-- #if BEFORE 8.0.1
-			["spellID"] = 33359,	-- Cooking (Master)
-			["rank"] = 5,
-			-- #endif
 		})),
 		-- CRIEVE NOTE: Despite being classified as TBC, these achievements weren't available (or possible to do) prior to Wrath prepatch.
 		applyclassicphase(WRATH_PHASE_ONE, ach(1801, {	-- Captain Rumsey's Lager
@@ -205,12 +188,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 		})),
 	}),
 	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
-		ach(125, {	-- Grand Master Cook / Northrend Cook [8.0.1+]
-			-- #if BEFORE 8.0.1
-			["spellID"] = 51296,	-- Cooking (Grand Master)
-			["rank"] = 6,
-			-- #endif
-		}),
+		ach(125),	-- Grand Master Cook / Northrend Cook [8.0.1+]
 		ach(1781, {	-- Critter Gitter
 			["cost"] = {{"i", 43004, 10}},	-- 10x Critter Bites
 		}),
@@ -288,12 +266,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 		}),
 	}))),
 	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
-		ach(4916, {	-- Illustrious Grand Master Cook / Cataclysmic Cook [8.0.1+]
-			-- #if BEFORE 8.0.1
-			["spellID"] = 88053,	-- Cooking (Illustrious)
-			["rank"] = 7,
-			-- #endif
-		}),
+		ach(4916),	-- Illustrious Grand Master Cook / Cataclysmic Cook [8.0.1+]
 		ach(5845, {	-- A Bunch of Lunch (A)
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -367,12 +340,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 		}),
 	}))),
 	applyclassicphase(MOP_PHASE_LANDFALL, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
-		ach(6365, {	-- Zen Master Cook / Pandaria Cook [8.0.1+]
-			-- #if BEFORE 8.0.1
-			["spellID"] = 104381,	-- Cooking (Zen Master)
-			["rank"] = 8,
-			-- #endif
-		}),
+		ach(6365),	-- Zen Master Cook / Pandaria Cook [8.0.1+]
 		ach(7306, {	-- Master of Pandaren Cooking
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

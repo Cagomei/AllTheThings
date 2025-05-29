@@ -5,6 +5,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 	m(THE_MAW, {
 		header(HEADERS.Spell, 354778, {	-- The Rift
 			["description"] = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.\n\nThis phase can be accessed by using a |cFF1eff00Repaired Riftkey|r on a |cFFFFFFFFMaw Rift|r in Korthia or by using a |cFF0070ddCollapsing Riftstone|r.",
+			["cost"] = {
+				{"i",186969,1},	-- Collapsing Riftstone
+				{"i",186731,1},	-- Repaired Riftkey
+			},
 			["g"] = {
 				n(QUESTS, {
 					q(64282, {	-- Full of Surprises
@@ -103,6 +107,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 									i(187416),	-- Jailer's Cage (TOY!)
 									i(187113),	-- Personal Ball and Chain (TOY!)
 									i(187251),	-- Shaded Skull Shoulderguards
+									i(186969),	-- Collapsing Riftstone
 								},
 							}),
 						},

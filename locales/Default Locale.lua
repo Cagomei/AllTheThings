@@ -121,6 +121,7 @@ local L = setmetatable({
 	REMOVED_WITH_PATCH_FORMAT = "This gets removed with patch %s";
 	WAS_ADDED_WITH_PATCH_FORMAT = "This was added with patch %s";
 	WAS_ADDED_BACK_WITH_PATCH_FORMAT = "This was added back with patch %s";
+	CRITERIA_FORMAT = "|cffffff00[Criteria: %s]|r";
 
 	FACTION_SPECIFIC_REP = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
 	MINUMUM_STANDING_WITH_FACTION = "Requires a minimum standing of %s with %s.";

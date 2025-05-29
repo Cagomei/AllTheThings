@@ -12,7 +12,6 @@ root(ROOTS.Zones, {
 					explorationAch(1270),	-- Explore Icecrown
 					ach(40, {	-- Icecrown: The Final Goal
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
 						["sourceQuests"] = {
 							13083,	-- Light Within the Darkness
 							13219,	-- Battle at Valhalas: Final Challenge
@@ -29,12 +28,6 @@ root(ROOTS.Zones, {
 							13346,	-- No Rest For The Wicked (A)
 							13367,	-- No Rest For The Wicked (H)
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 140,
-						-- #endif
 						-- #else
 						crit(39139, {	-- Crusader Bridenbrad
 							["sourceQuest"] = 13083,	-- Light Within the Darkness

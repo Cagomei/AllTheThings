@@ -13,7 +13,30 @@ local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
 		t.rwp = 30100;
 	end
 end]];
+ExportDB.OnUpdateDB.DEDICATED_10M = [[~function(t)
+	rawset(t, "collectible", nil);
+	if _.MODE_DEBUG_OR_ACCOUNT then
+		return false;
+	elseif IsInGroup() and GetNumGroupMembers() >= 9 then
+		rawset(t, "collectible", false);
+		return true;
+	end
+end]];
+ExportDB.OnUpdateDB.DEDICATED_25M = [[~function(t)
+	rawset(t, "collectible", nil);
+	if _.MODE_DEBUG_OR_ACCOUNT then
+		return false;
+	elseif IsInGroup() and GetNumGroupMembers() >= 21 then
+		rawset(t, "collectible", false);
+		return true;
+	end
+end]];
 -- #endif
+local CLASSIC_ONLY_DB_FUNC = function(func)
+	-- #IF ANYCLASSIC
+	return func
+	-- #ENDIF
+end
 local DEATHS_BARGAINING_CHIP = 206576;
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(754, {	-- Naxxramas
@@ -1362,9 +1385,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7146,	-- Anub'Rehkan slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(39140),	-- Knife of Incision
 								i(39146),	-- Collar of Dissolution
@@ -1395,9 +1416,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7147,	-- Grand Widow Faerlina slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(206472, {	-- Faerlina's Sewing Kit
 									["sourceQuests"] = {
@@ -1430,9 +1449,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7148,	-- Maexxna slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(93030, {	-- Giant Bone Spider (PET!)
 									["timeline"] = { ADDED_5_1_0 },
@@ -1460,9 +1477,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7153,	-- Noth the Plaguebringer slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(39240),	-- Noth's Curse
 								i(39237),	-- Spaulders of Resumed Battle
@@ -1493,9 +1508,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7154,	-- Heigan the Unclean slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(39245),	-- Demise
 								i(39255),	-- Staff of the Plague Beast
@@ -1536,9 +1549,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7155,	-- Loatheb slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(93032, {	-- Fungal Abomination (PET!)
 									["timeline"] = { ADDED_5_1_0 },
@@ -1571,9 +1582,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7156,	-- Instructor Razuvious slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(39296),	-- Accursed Bow of the Elite
 								i(39311),	-- Scepter of Murmuring Spirits
@@ -1603,9 +1612,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7157,	-- Gothik the Harvester slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(39344),	-- Slayer of the Lifeless
 								i(39392),	-- Veiled Amulet of Life
@@ -1655,9 +1662,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7149,	-- Patchwerk slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(39271),	-- Blade of Dormant Memories
 								i(39270),	-- Hatestrike
@@ -1702,9 +1707,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7150,	-- Grobbulus slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(39281),	-- Infection Repulser
 								i(39276),	-- The Skull of Ruin
@@ -1751,9 +1754,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7151,	-- Gluth slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(93029, {	-- Stitched Pup (PET!)
 									["timeline"] = { ADDED_5_1_0 },
@@ -1913,9 +1914,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7152,	-- Thaddius slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(40619),	-- Leggings of the Lost Conqueror
 								i(40620),	-- Leggings of the Lost Protector
@@ -1937,9 +1936,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								ach(2146),	-- The Hundred Club (10 player)
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7158,	-- Sapphiron slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(44569, {	-- Key to the Focusing Iris (Item)
 									-- #if ANYCLASSIC
@@ -1974,9 +1971,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 6802,	-- Kel'Thuzad slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(40616),	-- Helm of the Lost Conqueror
 								i(40617),	-- Helm of the Lost Protector
@@ -2058,9 +2053,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7159,	-- Anub'Rekhan slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(39714),	-- Webbed Death
 								i(39712),	-- Gemmed Wand of the Nerubians
@@ -2097,9 +2090,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7160,	-- Grand Widow Faerlina slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(206472, {	-- Faerlina's Sewing Kit
 									["sourceQuests"] = {
@@ -2150,9 +2141,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7161,	-- Maexxna slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(93030, {	-- Giant Bone Spider (PET!)
 									["timeline"] = { ADDED_5_1_0 },
@@ -2194,9 +2183,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7166,	-- Noth the Plaguebringer slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40189),	-- Angry Dread
 								i(40192),	-- Accursed Spine
@@ -2238,9 +2225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7167,	-- Heigan the Unclean slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40208),	-- Cryptfiend's Bite
 								i(40233),	-- The Undeath Carrier
@@ -2287,9 +2272,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7168,	-- Loatheb slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(93032, {	-- Fungal Abomination (PET!)
 									["timeline"] = { ADDED_5_1_0 },
@@ -2320,9 +2303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7169,	-- Instructor Razuvious slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40071),	-- Chains of Adoration
 								i(40065),	-- Fool's Trial
@@ -2363,9 +2344,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7170,	-- Gothik the Harvester slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40336),	-- Life and Death
 								i(40335),	-- Touch of Horror
@@ -2449,9 +2428,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7162,	-- Patchwerk slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40264),	-- Split Greathammer
 								i(40265),	-- Arrowsong
@@ -2492,9 +2469,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7163,	-- Grobbulus slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40280),	-- Origin of Nightmares
 								i(40281),	-- Twilight Mist
@@ -2548,9 +2523,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7164,	-- Gluth slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(93029, {	-- Stitched Pup (PET!)
 									["timeline"] = { ADDED_5_1_0 },
@@ -2747,9 +2720,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7165,	-- Thaddius slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40634),	-- Legplates of the Lost Conqueror
 								i(40635),	-- Legplates of the Lost Protector
@@ -2776,9 +2747,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								ach(2147),	-- The Hundred Club (25 player)
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7171,	-- Sapphiron slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(44577),	-- Heroic Key to the Focusing Iris (Item)
 								i(40368),	-- Murder
@@ -2827,9 +2796,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7172,	-- Kel'Thuzad slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40631),	-- Crown of the Lost Conqueror
 								i(40632),	-- Crown of the Lost Protector

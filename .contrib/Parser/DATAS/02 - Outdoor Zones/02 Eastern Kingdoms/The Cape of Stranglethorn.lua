@@ -14,12 +14,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				applyclassicphase(PHASE_ONE, ach(871, {	-- Avast Ye, Admiral!
-					["sourceQuest"] = 4621,	-- Avast Ye, Admiral!
-					["groups"] = {
-						title(111, {	-- Bloodsail Admiral <Name>
-							["timeline"] = { ADDED_3_0_2 },
-						}),
-					},
+					title(111, {	-- Bloodsail Admiral <Name>
+						["timeline"] = { ADDED_3_0_2 },
+					}),
 				})),
 				ach(4905, {	-- Cape of Stranglethorn Quests
 					["timeline"] = { ADDED_4_0_3 },
@@ -41,9 +38,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["description"] = "WARNING: FREE-FOR-ALL PVP EVENT\n\nChest is dropped in arena every 3 hours, starting at midnight.\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",
 				["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
 				["groups"] = {
-					ach(389, {	-- Gurubashi Arena Master
-						["provider"] = { "i", 18706 },	-- Arena Master
-					}),
+					ach(389),	-- Gurubashi Arena Master
 					i(18706),	-- Arena Master
 					i(18711),	-- Arena Bands
 					i(18710),	-- Arena Bracers

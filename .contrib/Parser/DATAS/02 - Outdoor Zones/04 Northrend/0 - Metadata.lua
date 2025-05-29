@@ -19,10 +19,6 @@ root(ROOTS.Zones, {
 						-- #endif
 						39, 34, 40
 					} },
-					-- #else
-					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 33, 35, 36, 37, 38, 39, 34, 40); end]],
 					-- #endif
 					-- #if BEFORE 5.0.4
 					["races"] = ALLIANCE_ONLY,
@@ -32,10 +28,6 @@ root(ROOTS.Zones, {
 				applyclassicphase(WRATH_PHASE_ONE, ach(1360, {	-- Loremaster of Northrend (H)
 					-- #if AFTER WRATH
 					["sym"] = { {"meta_achievement", 1358, 1356, 38, 1357, 1359, 39, 36, 40 } },
-					-- #else
-					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 1358, 1356, 38, 1357, 1359, 39, 36, 40); end]],
 					-- #endif
 					["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,

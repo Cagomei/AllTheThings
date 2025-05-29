@@ -11,7 +11,7 @@ root(ROOTS.Zones, {
 					explorationAch(864),	-- Explore Shadowmoon Valley
 					ach(1195, {	-- Shadow of the Betrayer
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER WRATH
 						["sourceQuests"] = {
 							-- Wildhammer Stronghold
 							10776,	-- Dissension Amongst the Ranks...

@@ -572,21 +572,6 @@ local fieldConverters = {
 	["minReputation"] = function(group, value)
 		cacheFactionID(group, value[1]);
 	end,
-	["c"] = function(group, value)
-		if not contains(value, classIndex) then
-			group.nmc = true; -- "Not My Class"
-		end
-	end,
-	["r"] = function(group, value)
-		if value ~= factionID then
-			group.nmr = true;	-- "Not My Race"
-		end
-	end,
-	["races"] = function(group, value)
-		if not contains(value, raceIndex) then
-			group.nmr = true;	-- "Not My Race"
-		end
-	end,
 	["nextQuests"] = function(group, value)
 		for i=1,#value,1 do
 			CacheField(group, "nextQuests", value[i])
@@ -686,10 +671,6 @@ if app.IsRetail then
 	fieldConverters.awp = nil;
 	-- 'rwp' is never used as a 'search' and this breaks dynamic future removed in Simple mode
 	fieldConverters.rwp = nil;
-	-- Base Class provides auto-fields for these and they do no actual caching
-	fieldConverters.c = nil
-	fieldConverters.r = nil
-	fieldConverters.races = nil
 
 	-- use single iteration of each group by way of not performing any group field additions while the cache process is running
 	_CacheFields = function(group)

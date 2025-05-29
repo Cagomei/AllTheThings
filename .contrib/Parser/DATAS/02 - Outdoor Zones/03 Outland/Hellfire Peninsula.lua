@@ -83,7 +83,7 @@ root(ROOTS.Zones, {
 					ach(1189, {	-- To Hellfire and Back [Alliance Version]
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER WRATH
 						["sourceQuests"] = {
 							-- Disrupt the Burning Legion
 							10397,	-- Invasion Point: Annihilator
@@ -171,7 +171,7 @@ root(ROOTS.Zones, {
 					ach(1271, {	-- To Hellfire and Back [Horde Version]
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER WRATH
 						["sourceQuests"] = {
 							-- Disrupt the Burning Legion
 							10388,	-- Return to Thrallmar

@@ -12,7 +12,6 @@ root(ROOTS.Zones, {
 					ach(37, {	-- Fo' Grizzle My Shizzle (A)
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
 						["sourceQuests"] = {
 							12249,	-- Ursoc, the Bear God
 							12153,	-- The Iron Thane and His Anvil
@@ -21,12 +20,6 @@ root(ROOTS.Zones, {
 							12164,	-- Hour of the Worg
 							12152,	-- Jin'arrak's End
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 85,
-						-- #endif
 						-- #else
 						["groups"] = {
 							crit(39108, {	-- Ursoc, the Bear God
@@ -53,7 +46,6 @@ root(ROOTS.Zones, {
 					ach(1357, {	-- Fo' Grizzle My Shizzle (H)
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
 						["sourceQuests"] = {
 							12236,	-- Ursoc, the Bear God
 							12431,	-- The Conquest Pit: Final Showdown
@@ -63,12 +55,6 @@ root(ROOTS.Zones, {
 							12068,	-- Voices From the Dust
 							12152,	-- Jin'arrak's End
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 75,
-						-- #endif
 						-- #else
 						["groups"] = {
 							crit(39114, {	-- Ursoc, the Bear God

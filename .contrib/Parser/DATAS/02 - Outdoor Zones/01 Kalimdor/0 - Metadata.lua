@@ -44,10 +44,6 @@ root(ROOTS.Zones, {
 						854,	-- Explore Un'Goro Crater
 						857,	-- Explore Winterspring
 					}},
-					-- #else
-					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_KALIMDOR_EXP .. [[); end]],
 					-- #endif
 				}),
 				petbattle(ach(6585, bubbleDownSelf({["timeline"] = { ADDED_5_0_4 } }, {	-- Kalimdor Safari
@@ -215,10 +211,10 @@ root(ROOTS.Zones, {
 					-- #else
 					["rank"] = 625,
 					-- #endif
-					-- #endif
 					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. KALIMDOR .. [[); end]],
+					-- #endif
 					-- #endif
 					-- #if BEFORE 5.0.4
 					["races"] = ALLIANCE_ONLY,
@@ -250,10 +246,10 @@ root(ROOTS.Zones, {
 					-- #else
 					["rank"] = 625,
 					-- #endif
-					-- #endif
 					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. KALIMDOR .. [[); end]],
+					-- #endif
 					-- #endif
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,

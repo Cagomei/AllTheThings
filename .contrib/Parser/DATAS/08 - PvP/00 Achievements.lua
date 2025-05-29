@@ -1,196 +1,33 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-local HK_OnUpdate = [[function(t) t:SetAchievementCollected(t.achievementID, GetPVPLifetimeStats() >= t.rank); end]];
-local HK_OnTooltip = [[function(t, tooltipInfo)
-	local summary = "Get " .. t.rank .. " honorable kill" .. (t.rank == 1 and "" or "s") .. ".";
-	if not t.collected then
-		tinsert(tooltipInfo, {
-			left = summary,
-			right = select(1, GetPVPLifetimeStats()) .. " / " .. t.rank,
-			r = 1, g = 1, b = 1
-		});
-	else
-		tinsert(tooltipInfo, { left = summary });
-	end
-end]];
-local THE_CONQUEROR_OnUpdate = [[function(t)
-	if t.collectible then
-		if not t.wsg then
-			local f = _.SearchForObject("factionID", 889, "key");
-			if f then
-				t.wsg = f;
-			else
-				return true;
-			end
-		end
-		if not t.ab then
-			local f = _.SearchForObject("factionID", 510, "key");
-			if f then
-				t.ab = f;
-			else
-				return true;
-			end
-		end
-		if not t.av then
-			local f = _.SearchForObject("factionID", 729, "key");
-			if f then
-				t.av = f;
-			else
-				return true;
-			end
-		end
-		t:SetAchievementCollected(t.achievementID, t.wsg.standing == 8 and t.ab.standing == 8 and t.av.standing == 8);
-	end
-end]];
-local THE_JUSTICAR_OnUpdate = [[function(t)
-	if t.collectible then
-		if not t.wsg then
-			local f = _.SearchForObject("factionID", 890, "key");
-			if f then
-				t.wsg = f;
-			else
-				return true;
-			end
-		end
-		if not t.ab then
-			local f = _.SearchForObject("factionID", 509, "key");
-			if f then
-				t.ab = f;
-			else
-				return true;
-			end
-		end
-		if not t.av then
-			local f = _.SearchForObject("factionID", 730, "key");
-			if f then
-				t.av = f;
-			else
-				return true;
-			end
-		end
-		t:SetAchievementCollected(t.achievementID, t.wsg.standing == 8 and t.ab.standing == 8 and t.av.standing == 8);
-	end
-end]];
-local THE_JUSTICAR_AND_THE_CONQUEROR_OnClick = [[function(row, button)
-	if button == "RightButton" then
-		local t = row.ref;
-		local clone = _:CreateMiniListForGroup(_.CreateAchievement(t[t.key], {
-			t.wsg,
-			t.ab,
-			t.av
-		})).data;
-		clone.description = t.description;
-		return true;
-	end
-end]];
-local THE_JUSTICAR_AND_THE_CONQUEROR_OnTooltip = [[function(t, tooltipInfo)
-	if t.collectible then
-		tinsert(tooltipInfo, { left = " " });
-		tinsert(tooltipInfo, {
-			left = " |T" .. t.wsg.icon .. ":0|t " .. t.wsg.text,
-			right = _.GetCollectionIcon(t.wsg.standing == 8),
-			r = 1, g = 1, b = 1
-		});
-		tinsert(tooltipInfo, {
-			left = " |T" .. t.ab.icon .. ":0|t " .. t.ab.text,
-			right = _.GetCollectionIcon(t.ab.standing == 8),
-			r = 1, g = 1, b = 1
-		});
-		tinsert(tooltipInfo, {
-			left = " |T" .. t.av.icon .. ":0|t " .. t.av.text,
-			right = _.GetCollectionIcon(t.av.standing == 8),
-			r = 1, g = 1, b = 1
-		});
-	end
-end]];
 root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
-	applyclassicphase(PHASE_TWO, ach(238, {	-- An Honorable Kill
-		["rank"] = 1,
-		-- #if BEFORE WRATH
-		["OnTooltip"] = HK_OnTooltip,
-		["OnUpdate"] = HK_OnUpdate,
-		-- #endif
-	})),
-	applyclassicphase(PHASE_TWO, ach(513, {	-- 100 Honorable Kills
-		["rank"] = 100,
-		-- #if BEFORE WRATH
-		["OnTooltip"] = HK_OnTooltip,
-		["OnUpdate"] = HK_OnUpdate,
-		-- #endif
-	})),
-	applyclassicphase(PHASE_TWO, ach(515, {	-- 500 Honorable Kills
-		["rank"] = 500,
-		-- #if BEFORE WRATH
-		["OnTooltip"] = HK_OnTooltip,
-		["OnUpdate"] = HK_OnUpdate,
-		-- #endif
-	})),
-	applyclassicphase(PHASE_TWO, ach(516, {	-- 1000 Honorable Kills
-		["rank"] = 1000,
-		-- #if BEFORE WRATH
-		["OnTooltip"] = HK_OnTooltip,
-		["OnUpdate"] = HK_OnUpdate,
-		-- #endif
-	})),
-	applyclassicphase(PHASE_TWO, ach(512, {	-- 5000 Honorable Kills
-		["rank"] = 5000,
-		-- #if BEFORE WRATH
-		["OnTooltip"] = HK_OnTooltip,
-		["OnUpdate"] = HK_OnUpdate,
-		-- #endif
-	})),
-	applyclassicphase(PHASE_TWO, ach(509, {	-- 10000 Honorable Kills
-		["rank"] = 10000,
-		-- #if BEFORE WRATH
-		["OnTooltip"] = HK_OnTooltip,
-		["OnUpdate"] = HK_OnUpdate,
-		-- #endif
-	})),
-	applyclassicphase(PHASE_TWO, ach(239, {	-- 25000 Honorable Kills
-		["rank"] = 25000,
-		-- #if BEFORE WRATH
-		["OnTooltip"] = HK_OnTooltip,
-		["OnUpdate"] = HK_OnUpdate,
-		-- #endif
-	})),
-	applyclassicphase(WRATH_PHASE_ONE, ach(869, {	-- 50000 Honorable Kills
-		["timeline"] = { ADDED_3_0_2 },
-		["rank"] = 50000,
-		-- #if BEFORE WRATH
-		["OnTooltip"] = HK_OnTooltip,
-		["OnUpdate"] = HK_OnUpdate,
-		-- #endif
-	})),
-	applyclassicphase(WRATH_PHASE_ONE, ach(870, {	-- 100000 Honorable Kills
-		["timeline"] = { ADDED_3_0_2 },
-		["rank"] = 100000,
-		-- #if BEFORE WRATH
-		["OnTooltip"] = HK_OnTooltip,
-		["OnUpdate"] = HK_OnUpdate,
-		-- #endif
-		["groups"] = {
-			title(94, {	-- <Name> of the Alliance
-				["races"] = ALLIANCE_ONLY,
-			}),
-			title(95, {	-- <Name> of the Horde
-				["races"] = HORDE_ONLY,
-			}),
-		},
+	applyclassicphase(PHASE_TWO, ach(238)),	-- An Honorable Kill
+	applyclassicphase(PHASE_TWO, ach(513)),	-- 100 Honorable Kills
+	applyclassicphase(PHASE_TWO, ach(515)),	-- 500 Honorable Kills
+	applyclassicphase(PHASE_TWO, ach(516)),	-- 1000 Honorable Kills
+	applyclassicphase(PHASE_TWO, ach(512)),	-- 5000 Honorable Kills
+	applyclassicphase(PHASE_TWO, ach(509)),	-- 10000 Honorable Kills
+	applyclassicphase(PHASE_TWO, ach(239)),	-- 25000 Honorable Kills
+	applyclassicphase(PHASE_TWO, ach(869)),	-- 50000 Honorable Kills
+	applyclassicphase(PHASE_TWO, ach(870, {	-- 100000 Honorable Kills
+		title(94, {	-- <Name> of the Alliance
+			["timeline"] = { ADDED_3_0_2 },
+			["races"] = ALLIANCE_ONLY,
+		}),
+		title(95, {	-- <Name> of the Horde
+			["timeline"] = { ADDED_3_0_2 },
+			["races"] = HORDE_ONLY,
+		}),
 	})),
 	applyclassicphase(CATA_PHASE_ONE, ach(5363, {	-- 250000 Honorable Kills
 		["timeline"] = { ADDED_4_0_3 },
-		["rank"] = 250000,
-		-- #if BEFORE WRATH
-		["OnTooltip"] = HK_OnTooltip,
-		["OnUpdate"] = HK_OnUpdate,
-		-- #endif
 		["groups"] = {
 			title(184),		-- <Name> the Bloodthirsty
 		},
 	})),
-	applyclassicphase(WRATH_PHASE_ONE, ach(230, {	-- Battlemaster (Alliance)
-		-- #if AFTER 3.0.1
+	applyclassicphase(TBC_PHASE_ONE, ach(230, {	-- Battlemaster (Alliance)
+		-- #if AFTER 2.0.1
 		-- Meta Achievement
 		["sym"] = {{"meta_achievement",
 			1167,	-- Master of Alterac Valley
@@ -199,18 +36,26 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			1171,	-- Master of Eye of the Storm
 		}},
 		-- #endif
-		["timeline"] = { ADDED_3_0_2 },
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			ADDED_2_0_1,
+			-- #else
+			ADDED_3_0_2,
+			-- #endif
+		},
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			-- #if ANYCLASSIC
-			title(210),		-- Battlemaster <Name>
+			title(210, {	-- Battlemaster <Name>
+				["timeline"] = { ADDED_3_0_2 }
+			}),
 			-- #else
 			title(41),		-- Battlemaster <Name>
 			-- #endif
 		},
 	})),
-	applyclassicphase(WRATH_PHASE_ONE, ach(1175, {	-- Battlemaster (Horde)
-		-- #if AFTER 3.0.1
+	applyclassicphase(TBC_PHASE_ONE, ach(1175, {	-- Battlemaster (Horde)
+		-- #if AFTER 2.0.1
 		-- Meta Achievement
 		["sym"] = {{"meta_achievement",
 			-- #if AFTER 4.3.0
@@ -225,11 +70,19 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			1171,	-- Master of Eye of the Storm
 		}},
 		-- #endif
-		["timeline"] = { ADDED_3_0_2 },
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			ADDED_2_0_1,
+			-- #else
+			ADDED_3_0_2,
+			-- #endif
+		},
 		["races"] = HORDE_ONLY,
 		["groups"] = {
 			-- #if ANYCLASSIC
-			title(210),		-- Battlemaster <Name>
+			title(210, {	-- Battlemaster <Name>
+				["timeline"] = { ADDED_3_0_2 }
+			}),
 			-- #else
 			title(41),		-- Battlemaster <Name>
 			-- #endif
@@ -587,16 +440,12 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(11689, {	-- Fourteen for the Team
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 	}),
-	ach(701, {		-- Freedom of the Alliance
-		-- TODO: Add providers and make accessible to classic
-		["timeline"] = { ADDED_3_0_2 },
+	applyclassicphase(PHASE_TWO, ach(701, {	-- Freedom of the Alliance
 		["races"] = ALLIANCE_ONLY,
-	}),
-	ach(700, {		-- Freedom of the Horde
-		-- TODO: Add providers and make accessible to classic
-		["timeline"] = { ADDED_3_0_2 },
+	})),
+	applyclassicphase(PHASE_TWO, ach(700, {	-- Freedom of the Horde
 		["races"] = HORDE_ONLY,
-	}),
+	})),
 	-- #if AFTER 3.0.1
 	ach(446, {		-- General
 		["races"] = HORDE_ONLY,
@@ -1025,11 +874,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 	}),
 	applyclassicphase(PHASE_TWO, ach(714, {	-- The Conqueror
-		-- #if BEFORE 3.0.1
-		["OnClick"] = THE_JUSTICAR_AND_THE_CONQUEROR_OnClick,
-		["OnTooltip"] = THE_JUSTICAR_AND_THE_CONQUEROR_OnTooltip,
-		["OnUpdate"] = THE_CONQUEROR_OnUpdate,
-		-- #else
+		-- #if AFTER 3.0.1
 		-- Meta Achievement
 		["sym"] = {{"meta_achievement",
 			708,	-- Hero of the Frostwolf Clan
@@ -1049,11 +894,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_3_0_2 },
 	}),
 	applyclassicphase(PHASE_TWO, ach(907, {	-- The Justicar
-		-- #if BEFORE 3.0.1
-		["OnClick"] = THE_JUSTICAR_AND_THE_CONQUEROR_OnClick,
-		["OnTooltip"] = THE_JUSTICAR_AND_THE_CONQUEROR_OnTooltip,
-		["OnUpdate"] = THE_JUSTICAR_OnUpdate,
-		-- #else
+		-- #if AFTER 3.0.1
 		-- Meta Achievement
 		["sym"] = {{"meta_achievement",
 			709,	-- Hero of the Stormpike Guard

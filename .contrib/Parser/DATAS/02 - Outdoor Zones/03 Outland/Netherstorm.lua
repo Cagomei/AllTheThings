@@ -12,7 +12,7 @@ root(ROOTS.Zones, {
 					explorationAch(843),	-- Explore Netherstorm
 					ach(1194, {	-- Into the Nether
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER WRATH
 						["sourceQuests"] = {
 							-- Socrethar
 							10409,	-- Deathblow to the Legion (Aldor)

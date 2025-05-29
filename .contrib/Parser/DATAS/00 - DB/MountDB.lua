@@ -2035,12 +2035,15 @@ i(232523, 460013);	-- G-99 Breakneck
 ------------------
 i(238994, 1226983);	-- Archmage's Great Raven
 i(210141, 424601);	-- Brown-Furred Spiky Bakar
+i(238941, 1226740);	-- Coldflame Cormaera
 i(235711, 1218316);	-- Corruption of the Aspects
 i(238966, 1226851);	-- Felborn Cormaera
+i(238967, 1226855);	-- Molten Cormaera
 i(223265, 447189);	-- Nesting Swarmite
 i(235709, 1218314);	-- Ny'alothan Shadow Worm
 i(238943, 1226760);	-- Prophet's Great Raven
 i(238829, 1226421);	-- Radiant Imperial Lynx
+i(236415, 1219705);	-- Spotted Black Riding Goat
 i(238897, 1226511);	-- Spring Harvesthog
 i(239020, 1227076);	-- Tyrannotort
 i(235712, 1218317);	-- Void-Crystal Panther
@@ -2052,10 +2055,7 @@ i(235707, 1218307);	-- Void-Scarred Windrider
 i(211089, 428068);	-- Voidfire Deathcycle
 --- UNSORTED ---
 i(238902, 1226533);	-- Autumn Harvesthog
-i(238941, 1226740);	-- Coldflame Cormaera
 i(238968, 1226856);	-- Lavaborn Cormaera
-i(238967, 1226855);	-- Molten Cormaera
-i(236415, 1219705);	-- Spotted Black Riding Goat
 i(238900, 1226531);	-- Summer Harvesthog
 i(238901, 1226532);	-- Winter Harvesthog
 
@@ -2063,9 +2063,11 @@ i(238901, 1226532);	-- Winter Harvesthog
 -- PATCH 11.1.7 --
 ------------------
 i(238739, 1226144);	-- Chrono Corsair
+i(246264, 1241429);	-- Inarius' Charger
 i(245694, 1237703);	-- Ivory Savagemane
 i(245695, 1237631);	-- Moonlit Nightsaber
 i(246237, 1241263);	-- OC91 Chariot
+i(0, 1236262);	-- Shaohao's Sage Serpent
 --- UNSORTED ---
 i(243593, 1234859);	-- Banshee's Chilling Charger
 i(243597, 1235820);	-- Banshee's Sickening Charger
@@ -2074,7 +2076,5 @@ i(243590, 1235763);	-- Grandmaster's Deep Board
 i(243572, 1235756);	-- Grandmaster's Prophetic Board
 i(243591, 1235803);	-- Grandmaster's Royal Board
 i(243592, 1235806);	-- Grandmaster's Smokey Board
-i(246264, 1241429);	-- Inarius' Charger
-i(0, 1236262);	-- Shaohao's Sage Serpent
 i(245936, 1240003);	-- Unarmored Deathtusk Felboar
 i(243596, 1235819);	-- Wailing Banshee's Charger

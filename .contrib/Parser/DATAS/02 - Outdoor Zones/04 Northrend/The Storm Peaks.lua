@@ -130,7 +130,6 @@ root(ROOTS.Zones, {
 					ach(1428),	-- Mine Sweeper
 					ach(38, {	-- The Summit of Storm Peaks
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
 						["sourceQuests"] = {
 							12824,	-- Demolitionist Extraordinaire
 							--12822,	-- Know No Fear -- TODO: verify. This wasn't required on horde but appears to be required for alliance...?
@@ -155,12 +154,6 @@ root(ROOTS.Zones, {
 							13001,	-- Raising Hodir's Spear
 							13047,	-- Loken
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 100,
-						-- #endif
 						-- #else
 						-- NOTE: Blizzard shifted a bunch of the criteriaIDs between alliance/horde, so this looks a bit messy but it is correct
 						crit(39058, {	-- Defending K3

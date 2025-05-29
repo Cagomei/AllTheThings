@@ -38,7 +38,6 @@ root(ROOTS.Zones, {
 					ach(35, {	-- Might of Dragonblight (A)
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
 						["sourceQuests"] = {
 							12169,	-- The High Cultist
 							12107,	-- The End of the Line
@@ -55,12 +54,6 @@ root(ROOTS.Zones, {
 							12078,	-- Worm Wrangler
 							12032,	-- Conversing With the Depths
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 115,
-						-- #endif
 						-- #else
 						["groups"] = {
 							crit(39007, {	-- The Warden's Task
@@ -105,7 +98,6 @@ root(ROOTS.Zones, {
 					ach(1359, {	-- Might of Dragonblight (H)
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
 						["sourceQuests"] = {
 							12008,	-- Agmar's Hammer
 							12136,	-- The Translated Tome
@@ -124,12 +116,6 @@ root(ROOTS.Zones, {
 							12285,	-- Do Unto Others
 							12032,	-- Conversing With the Depths
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 130,
-						-- #endif
 						-- #else
 						["groups"] = {
 							crit(39018, {	-- The Taunka

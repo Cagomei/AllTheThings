@@ -47,7 +47,7 @@ root(ROOTS.Zones, {
 					explorationAch(863),	-- Explore Zangarmarsh
 					ach(1190, {	-- Mysteries of the Marsh
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER WRATH
 						["sourceQuests"] = {
 							-- Draenei Diplomacy (A)
 							9803,	-- Messenger to the Feralfen

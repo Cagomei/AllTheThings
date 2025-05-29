@@ -448,35 +448,10 @@ root(ROOTS.Unsorted, {
 				i(237377),	-- Stormstout's Pants
 				i(237378),	-- Stormstout's Boots
 				i(237379),	-- Ensemble: Stormstout's Collection
-				i(237854),	-- Voidstorm Bardiche \\ Netherstorm Flame's Bardiche
 				i(237855),	-- Shadowmoon Flame's Bardiche
-				i(237856),	-- Sunwell Bardiche \\ Hellfire Flame's Bardiche
 				i(237857),	-- Sunwell Flame's Bardiche
-				i(238397),	-- Coldflame Chopper \\ Lavaborn Azure Choper
 				i(238398),	-- Lavaborn Emerald Chopper \\ Lavaborn Emerald Choper
-				i(238399),	-- Lavaborn Ruby's Edge \\ Lavaborn Ruby Choper
 				i(238400),	-- Lavaborn Citrine Chopper \\ Lavaborn Citrine Choper
-				i(238408),	-- Coldflame Cinch \\ Lavaborn Azure Cinch
-				i(238409),	-- Coldflame Mantle \\ Lavaborn Azure Mantle
-				i(238410),	-- Coldflame Pants \\ Lavaborn Azure Pants
-				i(238411),	-- Coldflame Helm \\ Lavaborn Azure Helm
-				i(238412),	-- Coldflame Glove \\ Lavaborn Azure Glove
-				i(238413),	-- Coldflame Treads \\ Lavaborn Azure Treads
-				i(238414),	-- Coldflame Chestguard \\ Lavaborn Azure Chestguard
-				i(238415),	-- Coldflame Bracer \\ Lavaborn Azure Bracer
-				i(238416),	-- Coldflame Cloak \\ Lavaborn Azure Cloak
-				i(238418),	-- Ensemble: Coldflame Battlegear \\ Ensemble: Lavaborn Azure Attire
-
-				i(238429),	-- Lavaborn Cinch \\ Lavaborn Ruby Cinch
-				i(238430),	-- Lavaborn Mantle \\ Lavaborn Ruby Mantle
-				i(238431),	-- Lavaborn Pants \\ Lavaborn Ruby Pants
-				i(238432),	-- Lavaborn Helm \\ Lavaborn Ruby Helm
-				i(238433),	-- Lavaborn Glove \\ Lavaborn Ruby Glove
-				i(238434),	-- Lavaborn Treads \\ Lavaborn Ruby Treads
-				i(238435),	-- Lavaborn Chestguard \\ Lavaborn Ruby Chestguard
-				i(238436),	-- Lavaborn Bracer \\ Lavaborn Ruby Bracer
-				i(238437),	-- Lavaborn Cloak \\ Lavaborn Ruby Cloak
-				i(238438),	-- Ensemble: Lavaborn Battleplate \\ Ensemble: Lavaborn Ruby Attire
 				i(238439),	-- Lavaborn Citrine Cinch
 				i(238440),	-- Lavaborn Citrine Mantle
 				i(238441),	-- Lavaborn Citrine Pants
@@ -491,16 +466,10 @@ root(ROOTS.Unsorted, {
 				i(238621),	-- Blackwater Pinchzapper
 				i(238622),	-- Steamweedle Pinchzapper
 				i(238623),	-- Undermine City Pinchzapper
-				i(238892),	-- Coldflame's Bite \\ Lavaborn Azure Blade
 				i(238893),	-- Lavaborn Emerald Blade
-				i(238894),	-- Lavaborn Barb \\ Lavaborn Ruby Blade
 				i(238895),	-- Lavaborn Citrine Blade
-				i(238947),	-- Arcano-Stone Greathelm \\ Blue Inferno Helm
 				i(238949),	-- Inferno Helm \\ Yellow Inferno Helm
-				i(238950),	-- Molten Inferno Helm \\ Red Inferno Helm
-				i(238951),	-- Coldflame Burner \\ Blue Flame Burner
 				i(238952),	-- Green Flame Burner
-				i(238953),	-- Red Flame Burner
 				i(238955),	-- Yellow Flame Burner
 				i(238957),	-- Deathwarder's Great Grove Blade
 				i(238958),	-- Deathwarder's Great Twilight Blade
@@ -509,14 +478,10 @@ root(ROOTS.Unsorted, {
 				i(238896),	-- Macho's Magnificent "Fish" Tacos
 			}),
 			filter(MOUNTS, {
-				i(236415),	-- Reins of the Spotted Black Riding Goat
 				i(238900),	-- Summer Harvesthog
 				i(238901),	-- Winter Harvesthog
 				i(238902),	-- Autumn Harvesthog
-				i(238941),	-- Coldflame Cormaera \\ Lavaborn Azure Chimaera
-				i(238967),	-- Molten Cormaera \\ Lavaborn Ruby Chimaera
 				i(238968),	-- Lavaborn Cormaera \\ Lavaborn Citrine Chimaera
-
 				-- Mount Parts!
 				i(240187),	-- Refulgent Crystal Shards
 			}),

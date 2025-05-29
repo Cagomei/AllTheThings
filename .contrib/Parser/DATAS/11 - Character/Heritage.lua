@@ -1342,16 +1342,30 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 72855 },	-- To the Sepulcher
 				["provider"] = { "n", 199768 },	-- Dark Ranger Velonara
 				["coord"] = { 45.4, 42, SILVERPINE_FOREST },
-				["g"] = {
-					i(202182),	-- Acid Rifle (QI!)
-				},
+				["g"] = { i(202182) },	-- Acid Rifle (QI!)
 			}),
 			q(72857, {	-- Boom Weed
 				["sourceQuests"] = { 72855 },	-- To the Sepulcher
 				["provider"] = { "n", 199767 },	-- Master Apothecary Faranell
 				["coord"] = { 45.5, 41.9, SILVERPINE_FOREST },
 				["g"] = {
-					i(202186),	-- Boom Weed (QI!)
+					o(385373, {	-- Boom Weed
+						["coords"] = {
+							{ 45.4, 48.4, SILVERPINE_FOREST },
+							{ 45.4, 49.6, SILVERPINE_FOREST },
+							{ 45.4, 51.4, SILVERPINE_FOREST },
+							{ 45.5, 49.0, SILVERPINE_FOREST },
+							{ 45.8, 47.7, SILVERPINE_FOREST },
+							{ 45.9, 50.1, SILVERPINE_FOREST },
+							{ 46.6, 50.9, SILVERPINE_FOREST },
+							{ 47.1, 48.7, SILVERPINE_FOREST },
+							{ 47.3, 47.8, SILVERPINE_FOREST },
+							{ 47.3, 49.8, SILVERPINE_FOREST },
+							{ 47.8, 49.0, SILVERPINE_FOREST },
+							{ 48.0, 50.6, SILVERPINE_FOREST },
+						},
+						["g"] = { i(202186) },	-- Boom Weed (QI!)
+					}),
 				},
 			}),
 			q(72856, {	-- Nothing Like the Classic

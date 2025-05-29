@@ -89,10 +89,6 @@ root("Achievements", {
 				938,	-- The Snows of Northrend
 				940,	-- The Green Hills of Stranglethorn
 			}},
-			-- #else
-			["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
-			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 939, 938, 940); end]],
 			-- #endif
 			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = {
@@ -211,10 +207,6 @@ root("Achievements", {
 				802,	-- Explore Westfall
 				841,	-- Explore Wetlands
 			}},
-			-- #else
-			["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
-			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_EASTERN_KINGDOMS_EXP .. [[); end]],
 			-- #endif
 		}),
 		ach(43, {	-- Kalimdor Explorer [7.0.3] / Explore Kalimdor
@@ -250,10 +242,6 @@ root("Achievements", {
 				854,	-- Explore Un'Goro Crater
 				857,	-- Explore Winterspring
 			}},
-			-- #else
-			["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
-			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_KALIMDOR_EXP .. [[); end]],
 			-- #endif
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(45, {	-- Northrend Explorer [7.0.3] / Explore Northrend
@@ -286,10 +274,6 @@ root("Achievements", {
 				867,	-- Explore Terokkar Forest
 				863,	-- Explore Zangarmarsh
 			}},
-			-- #else
-			["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
-			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_OUTLAND_EXP .. [[); end]],
 			-- #endif
 			["timeline"] = { ADDED_2_0_1 },
 		})),

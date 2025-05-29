@@ -137,26 +137,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_5_0_4 },
 			["rank"] = 200000,
 		}),
-		ach(891, {	-- Giddy Up!
-			-- #if AFTER TBC
-			["spellID"] = 33388,	-- Apprentice Riding
-			["rank"] = 1,
-			-- #else
-			["OnClick"] = [[_.CommonAchievementHandlers.KNOW_SPELLS_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.KNOW_SPELLS_OnTooltip]],
-			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.KNOW_SPELLS_ANY_OnUpdate(t, 824, 18995, 10907, 826, 10861, 828, 10906, 825); end]],
-			--[[
-				824,	-- Horse Riding
-				18995,	-- Kodo Riding
-				10907,	-- Mechanostrider Piloting
-				826,	-- Ram Riding
-				10861,	-- Raptor Riding
-				828,	-- Tiger Riding
-				10906,	-- Undead Horsemanship
-				825,	-- Wolf Riding
-			]]--
-			-- #endif
-		}),
+		ach(891),	-- Giddy Up!
 		applyclassicphase(TBC_PHASE_ONE, ach(890, {	-- Into the Wild Blue Yonder
 			["spellID"] = 34090,	-- Expert Riding
 			["timeline"] = { ADDED_2_0_1 },
@@ -178,13 +159,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 1,
 		}),
-		ach(546, {	-- Safe Deposit
-			-- #if BEFORE TBC
-			["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, GetNumBankSlots() >= 6); end]],
-			-- #elseif BEFORE WRATH
-			["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, GetNumBankSlots() >= 7); end]],
-			-- #endif
-		}),
+		ach(546),	-- Safe Deposit
 		ach(545, {	-- Shave and a Haircut
 			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { STORMWIND_CITY, ORGRIMMAR, NORTHREND_DALARAN },

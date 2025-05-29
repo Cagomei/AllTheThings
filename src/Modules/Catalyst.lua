@@ -75,7 +75,7 @@ local function GetCatalystSlot(data)
 	if classID ~= 4 or not CatalystArmorSlots[itemEquipLoc] then return end
 
 	-- Correct Armor type for current Class (or a Cloth Cloak)
-	if subclassID ~= ClassArmorSubtype or (itemEquipLoc == "INVTYPE_CLOAK" and subclassID == 1) then return end
+	if not (subclassID == ClassArmorSubtype or (itemEquipLoc == "INVTYPE_CLOAK" and subclassID == 1)) then return end
 
 	return itemEquipLoc
 end
@@ -133,8 +133,11 @@ local function GetCatalyst(data)
 	-- Copy all but the catalyst bonusID to the resulting item
 	tremove(bonuses, app.indexOf(bonuses, bonusID))
 	catalystResult.bonuses = app.CloneArray(bonuses)
+	-- Don't let a baked-in upgrade persist since our upgradeLevel might not allow it
+	catalystResult.up = nil
+	catalystResult.containsType = "CATALYST"
 
-	-- app.PrintDebug("Catalyst Result:",catalystResult.hash,app:SearchLink(catalystResult))
+	-- app.PrintDebug("Catalyst Result:",catalystResult.hash,catalystResult.up,app:SearchLink(catalystResult))
 	-- app.PrintTable(catalystResult.bonuses)
 	data._cata = catalystResult
 	return catalystResult
@@ -190,3 +193,7 @@ api.ViaCatalyst = function(t)
 	local cata = t._cata or GetCatalyst(t);
 	if cata then return cata end
 end
+
+-- TODO: some way to fill AccountMode/ItemUnbound Catalyst results. Since this typically only happens within Tooltips (other than Item link popouts)
+-- we can dynamically add the extra Fill operation into the Fill sequence based on the Fill Source?? and also only when necessary based on Settings
+-- potentially even the Fill sequence could then be split based on the Source being Filled instead of checking (Window/Tooltip)

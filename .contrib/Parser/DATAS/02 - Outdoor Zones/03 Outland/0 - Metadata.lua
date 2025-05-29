@@ -13,25 +13,25 @@ root(ROOTS.Zones, {
 					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(1262, {	-- Loremaster of Outland (A)
-					-- #if BEFORE WRATH
-					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 1194, 1190, 1192, 1193, 1195, 1191, 1189); end]],
-					-- #elseif AFTER 5.0.4
+					-- #if AFTER WRATH
 					["sym"] = {{"meta_achievement",
 						1189,	-- To Hellfire and Back (Alliance)
+						-- #if AFTER 5.0.4
 						1271,	-- To Hellfire and Back (Horde)
+						-- #endif
 						1190,	-- Mysteries of the Marsh
 						1191,	-- Terror of Terokkar (Alliance)
+						-- #if AFTER 5.0.4
 						1272,	-- Terror of Terokkar (Horde)
+						-- #endif
 						1192,	-- Nagrand Slam (Alliance)
+						-- #if AFTER 5.0.4
 						1273,	-- Nagrand Slam (Horde)
+						-- #endif
 						1193,	-- On the Blade's Edge
 						1194,	-- Into the Nether
 						1195,	-- Shadow of the Betrayer
 					}},
-					-- #else
-					["sym"] = { {"meta_achievement", 1194, 1190, 1192, 1193, 1195, 1191, 1189 } },
 					-- #endif
 					-- #if BEFORE 5.0.4
 					["races"] = ALLIANCE_ONLY,
@@ -39,11 +39,7 @@ root(ROOTS.Zones, {
 				}),
 				-- #if BEFORE 5.0.4
 				ach(1274, {	-- Loremaster of Outland (H)
-					-- #if BEFORE WRATH
-					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 1194, 1190, 1273, 1193, 1195, 1272, 1271); end]],
-					-- #else
+					-- #if AFTER WRATH
 					["sym"] = { {"meta_achievement", 1194, 1190, 1273, 1193, 1195, 1272, 1271 } },
 					-- #endif
 					["timeline"] = { REMOVED_5_0_4 },
@@ -66,10 +62,6 @@ root(ROOTS.Zones, {
 						867,	-- Explore Terokkar Forest
 						863,	-- Explore Zangarmarsh
 					}},
-					-- #else
-					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_OUTLAND_EXP .. [[); end]],
 					-- #endif
 				})),
 				petbattle(ach(6587, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Outland Safari

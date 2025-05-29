@@ -458,6 +458,8 @@ local function GetUpgrade(t, up)
 		return;
 	end
 
+	itemSource.containsType = "UPGRADE"
+
 	-- cache the upgrade within the item itself
 	t._up = itemSource;
 	-- app.PrintDebug("GU:",itemSource.__type,t.isUpgrade,t.modItemID,itemSource.modItemID)

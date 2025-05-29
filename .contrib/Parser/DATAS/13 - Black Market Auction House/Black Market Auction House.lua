@@ -9,6 +9,16 @@ root(ROOTS.BlackMarket, {
 				{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
 			},
 		},{
+		-- #IF BEFORE WOD
+		n(62943, {	-- Madam Goya [Veiled Stair]
+			["coord"] = { 63.8, 75.8, THE_VEILED_STAIR },
+		}),
+		-- #ENDIF
+		-- #IF BEFORE LEGION
+		n(83867, {	-- Madam Goya [Nagrand]
+			["coord"] = { 53.8, 15.0, DRAENOR_NAGRAND },
+		}),
+		-- #ENDIF
 		-- #IF BEFORE BFA
 		n(103791, {	-- Madam Gosu [Rogue Class Hall]
 			["coord"] = { 57.91, 46.28, 626 },
@@ -31,13 +41,16 @@ root(ROOTS.BlackMarket, {
 		}),
 		-- #ENDIF
 		-- #IF BEFORE TWW
-		n(189676, {	-- Madam Goya
+		n(189676, {	-- Madam Goya [Valdrakken]
 			["coord"] = { 20.2, 49.1, VALDRAKKEN },
 		}),
 		-- #ENDIF
 		-- #IF AFTER TWW
-		n(219055, {	-- Madam Goya
+		n(219055, {	-- Madam Goya [Dornogal]
 			["coord"] = { 64.8, 52.7, DORNOGAL },
+		}),
+		n(100986, {	-- Madam Goya [Underbelly]
+			["coord"] = { 71.37, 17.93, LEGION_THE_UNDERBELLY },
 		}),
 		-- #ENDIF
 		-- n(94829, {	-- Zhang Yeoh [Garrison]

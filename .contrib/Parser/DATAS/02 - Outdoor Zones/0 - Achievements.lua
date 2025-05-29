@@ -1159,11 +1159,6 @@ root(ROOTS.Zones, {
 			crit(27864, { ["races"] = ALLIANCE_ONLY }),	-- Stormwind City
 		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(941, {	-- Hemet Nesingwary: The Collected Quests
-			-- #if BEFORE WRATH
-			["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
-			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 939, 938, 940); end]],
-			-- #else
 			["maps"] = {
 				NAGRAND,
 				-- #if AFTER CATA
@@ -1173,6 +1168,7 @@ root(ROOTS.Zones, {
 				-- #endif
 				SHOLAZAR_BASIN,
 			},
+			-- #if AFTER WRATH
 			["sym"] = {{"meta_achievement",
 				939,	-- Hills Like White Elekk
 				938,	-- The Snows of Northrend

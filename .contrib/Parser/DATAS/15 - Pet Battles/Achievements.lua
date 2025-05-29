@@ -339,15 +339,14 @@ root(ROOTS.PetBattles, petbattle({
 		ach(5876, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {	-- Petting Zoo (100)
 			i(71140),	-- Nuts (PET!)
 		})),
+		
+	})),
+	n(ACHIEVEMENTS, {
 		applyclassicphase(WRATH_PHASE_ONE, ach(2516, bubbleDownSelf({	-- Lil' Game Hunter (75)
 			-- #if NOT ANYCLASSIC
 			["timeline"] = { ADDED_3_1_0 },
 			-- #endif
 		}, {
-			-- #if ANYCLASSIC
-			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
-			["rank"] = 75,
-			-- #endif
 			["g"] = {
 				i(44841),	-- Little Fawn (PET!)
 			},
@@ -357,14 +356,6 @@ root(ROOTS.PetBattles, petbattle({
 			["timeline"] = { ADDED_3_0_2 },
 			-- #endif
 		}, {
-			-- #if ANYCLASSIC
-			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
-			["rank"] = 50,
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.COMPANIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.COMPANIONS_OnUpdate]],
-			-- #endif
-			-- #endif
 			["g"] = {
 				i(40653),	-- Stinker (PET!)
 			},
@@ -372,38 +363,17 @@ root(ROOTS.PetBattles, petbattle({
 		ach(1248, {	-- Plethora of Pets (25)
 			-- #if NOT ANYCLASSIC
 			["timeline"] = { ADDED_3_0_2 },
-			-- #else
-			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
-			["rank"] = 25,
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.COMPANIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.COMPANIONS_OnUpdate]],
-			-- #endif
 			-- #endif
 		}),
 		ach(15, {	-- Plenty of Pets (15)
 			-- #if NOT ANYCLASSIC
 			["timeline"] = { ADDED_3_0_2 },
-			-- #else
-			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
-			["rank"] = 15,
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.COMPANIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.COMPANIONS_OnUpdate]],
-			-- #endif
 			-- #endif
 		}),
 		ach(1017, {	-- Can I Keep Him? (1)
 			-- #if NOT ANYCLASSIC
 			["timeline"] = { ADDED_3_0_2 },
-			-- #else
-			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
-			["rank"] = 1,
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.COMPANIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.COMPANIONS_OnUpdate]],
-			-- #endif
 			-- #endif
 		}),
-	})),
+	}),
 }));

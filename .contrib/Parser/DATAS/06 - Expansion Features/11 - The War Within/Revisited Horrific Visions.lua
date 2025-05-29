@@ -312,7 +312,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}),
 			n(TREASURES, {
 				o(495367, {	-- Corrupted Chest (Participation)
-					["description"] = "Default Chest if you don't clear any district.",
+					["description"] = "Default Chest if you don't clear the central district.",
 					["coords"] = {
 						{ 41.6, 34.3, RE_HORRIFIC_STORMWIND },
 						{ 48.4, 58.6, RE_HORRIFIC_ORGRIMMAR },
@@ -383,11 +383,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							},
 						}),
 						---
-						--hqt(???, {	-- Add the Boarhide Deathcycle Seat to the Voidfire Deathcycle Frame
-							--["name"] = "Add the Boarhide Deathcycle Seat to the Voidfire Deathcycle Frame",
-							--["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
-							--["cost"] = {{ "i", 240181, 1 }},	-- 1x Boarhide Deathcycle Seat
-						--}),
+						hqt(90131, {	-- Add the Boarhide Deathcycle Seat to the Voidfire Deathcycle Frame
+							["name"] = "Add the Boarhide Deathcycle Seat to the Voidfire Deathcycle Frame",
+							["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
+							["cost"] = {{ "i", 240181, 1 }},	-- 1x Boarhide Deathcycle Seat
+						}),
 						hqt(90523, {	-- Add the Deathcycle Exhaust System to the Voidfire Deathcycle Frame
 							["name"] = "Add the Deathcycle Exhaust System to the Voidfire Deathcycle Frame",
 							["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
@@ -403,25 +403,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
 							["cost"] = {{ "i", 240182, 1 }},	-- 1x Skull-Scythe Handlebars
 						}),
-						--hqt(???, {	-- Add the Void-Forged Inline Four Engine to the Voidfire Deathcycle Frame
-							--["name"] = "Add the Void-Forged Inline Four Engine to the Voidfire Deathcycle Frame",
-							--["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
-							--["cost"] = {{ "i", 240188, 1 }},	-- 1x Void-Forged Inline Four Engine
-						--}),
-						--hqt(???, {	-- Add both Voidflame Wheels to the Voidfire Deathcycle Frame
-							--["name"] = "Add both Voidflame Wheels to the Voidfire Deathcycle Frame",
-							--["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
-							--["cost"] = {{ "i", 240179, 2 }},	-- 2x Voidflame Wheel
-						--}),
+						hqt(90133, {	-- Add the Void-Forged Inline Four Engine to the Voidfire Deathcycle Frame
+							["name"] = "Add the Void-Forged Inline Four Engine to the Voidfire Deathcycle Frame",
+							["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
+							["cost"] = {{ "i", 240188, 1 }},	-- 1x Void-Forged Inline Four Engine
+						}),
+						hqt(90130, {	-- Add both Voidflame Wheels to the Voidfire Deathcycle Frame
+							["name"] = "Add both Voidflame Wheels to the Voidfire Deathcycle Frame",
+							["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
+							["cost"] = {{ "i", 240179, 2 }},	-- 2x Voidflame Wheel
+						}),
 						i(211089, {	-- Voidfire Deathcycle
-							["provider"] = { "n", 242545 },	-- -- Voidfire Deathcycle Frame
+							["questID"] = 90136,
+							["provider"] = { "n", 242545 },	-- Voidfire Deathcycle Frame
 							["sourceQuests"] = {
-								--??,	-- Boarhide Deathcycle Seat
+								90131,	-- Boarhide Deathcycle Seat
 								90523,	-- Deathcycle Exhaust System
 								90135,	-- Pulsing Void Crystal
 								90132,	-- Skull-Scythe Handlebars
-								--?,	-- Void-Forged Inline Four Engine
-								--?,	-- Voidflame Wheels
+								90133,	-- Void-Forged Inline Four Engine
+								90130,	-- Voidflame Wheels
 							},
 						}),
 					},
@@ -1055,6 +1056,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 								{ "o", 517350 },	-- Cursed Horseshoe (Old Town)
 								{ "o", 517348 },	-- Cursed Horseshoe (Trade)
 								{ "o", 517349 },	-- Cursed Horseshoe (Mage)
+								{ "n", 238549 },	-- Forge
 							},
 							["coords"] = {
 								{ 56.0, 55.5, RE_HORRIFIC_STORMWIND },	-- Cathedral Horseshoe (517344)
@@ -1160,12 +1162,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		--q(90530),	-- pop after clearing Valley of Wisdom with 2 masks (new masks sourceQuest?)
 		--q(90529),	-- pop after killing Rexxar with 3 masks (mask sourceQuest?)
 		--
-
-		-- combine things for byke
-		--q(),	--
-		--q(),	--
-		--q(),	--
-		--q(),	--
-		--q(),	--
 	}),
 })));

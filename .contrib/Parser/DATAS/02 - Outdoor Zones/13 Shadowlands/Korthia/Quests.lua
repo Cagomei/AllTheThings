@@ -1144,7 +1144,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			}),
 			q(63916, {	-- Sack of Strange Soil
 				["provider"] = { "o", 369288 },	-- Sack of Strange Soil
-				["coord"] = { 45.0, 35.5, KORTHIA },
+				["coord"] = { 55.3, 28.6, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
 				["g"] = {

@@ -77,8 +77,7 @@ function app:Linkify(text, color, operation)
 end
 function app:SearchLink(group)
 	if not group then return end
-	local key = group.key
-	return app:Linkify(group.text or group.hash or UNKNOWN, app.Colors.ChatLink, "search:"..(key or "?")..":"..(group[key] or "?"))
+	return app:Linkify(group.text or group.hash or UNKNOWN, app.Colors.ChatLink, "search:"..(group.searchKey or group.key or "?")..":"..(group[group.key] or "?"))
 end
 function app:RawSearchLink(field,id)
 	return app:SearchLink(app.SearchForObject(field, id, "field"))

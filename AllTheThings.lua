@@ -1122,6 +1122,11 @@ local Indents = {
 for i=2,MaxLayer do
 	Indents[i] = Indents[i-1].."  "
 end
+local ContainsTypesIndicators = {
+	CATALYST = app.asset("Interface_Catalyst"),
+	UPGRADE = app.asset("Interface_Upgrade"),
+	REAGENT = app.asset("Interface_Reagent"),
+}
 local function BuildContainsInfo(subgroups, entries, indent, layer)
 	if not subgroups or #subgroups == 0 then return end
 
@@ -1135,7 +1140,7 @@ local function BuildContainsInfo(subgroups, entries, indent, layer)
 				-- Insert into the display.
 				-- app.PrintDebug("INCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
 				local o = { group = group, right = GetProgressTextForRow(group) };
-				local indicator = Indicator(group);
+				local indicator = ContainsTypesIndicators[group.containsType] or Indicator(group);
 				o.prefix = indicator and (Indents[indent]:sub(3) .. "|T" .. indicator .. ":0|t ") or Indents[indent]
 				entries[#entries + 1] = o
 			end
@@ -2662,9 +2667,6 @@ function app:GetDataCache()
 	if app.Categories.PetBattles then
 		db = app.CreateNPC(app.HeaderConstants.PET_BATTLE);
 		db.g = app.Categories.PetBattles;
-		db.lvl = 3; -- Must be 3 to train (used to be 5 pre-scale)
-		db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
-		db.icon = app.asset("Category_PetBattles");
 		tinsert(g, db);
 	end
 

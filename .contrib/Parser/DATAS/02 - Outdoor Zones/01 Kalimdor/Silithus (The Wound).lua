@@ -743,6 +743,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coord"] = { 50.1, 53.6, CHAMBER_OF_HEART },
 							["sourceQuest"] = 52428,	-- Infusing the Heart
 							["races"] = ALLIANCE_ONLY,
+							["timeline"] = { ADDED_8_0_1, REMOVED_10_1_5 },
 						}),
 						q(53031, {	-- The Speaker's Imperative (H)
 							-- was unable to enter the chamber to acquire this quest once i left the chamber of heart after receiving my neck
@@ -751,6 +752,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coord"] = { 50.1, 53.6, CHAMBER_OF_HEART },
 							["sourceQuest"] = 52428,	-- Infusing the Heart
 							["races"] = HORDE_ONLY,
+							["timeline"] = { ADDED_8_0_1, REMOVED_10_1_5 },
 						}),
 						q(55396, {	-- The Stuff Dreams Are Made Of
 							["provider"] = { "n", 151825 },	-- Merithra of the Dream

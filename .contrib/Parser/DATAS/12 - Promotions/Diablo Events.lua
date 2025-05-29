@@ -160,7 +160,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 					["groups"] = {
 						i(245589, {	--	Hellcaller Chest
 							currency(3309),	-- Hellstone Shard
-							mount(1241429),	-- Inarius' Charger
+							i(246264),	-- Inarius' Charger
 							-- Buff Gobo Items
 							i(245639), -- Arcane Elixir
 							i(245642), -- Blistering Elixir

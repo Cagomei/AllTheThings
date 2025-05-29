@@ -713,7 +713,7 @@ localize(L.HEADER_NAMES, {
 	[-1000025] = "Holidays",
 	[-1000026] = MINIMAP_TRACKING_MAILBOX,
 	[-1000027] = BRAWL_TOOLTIP_MAPS,
-	[-1000029] = BATTLE_PET_SOURCE_5,
+	[-1000029] = SHOW_PET_BATTLES_ON_MAP_TEXT,
 	[-1000030] = TRADE_SKILLS,
 	[-1000031] = TRACKER_HEADER_QUESTS,
 	[-1000032] = BATTLE_PET_BREED_QUALITY4,
@@ -880,9 +880,6 @@ localize(L.HEADER_NAMES, {
 	[-1000866] = "Legendary: The Black Prince",
 	[-1000870] = "The Troll Incursion",
 	[-1000872] = "Plunderstorm",
-	[-1000893] = "Archaeology: PH7",
-	[-1000894] = "Archaeology: PH8",
-	[-1000896] = "Archaeology: PH10",
 	[-1000904] = "Source IDs",
 	[-1000905] = GUILD .. " " .. TUTORIAL_TITLE20,
 	[-1001028] = "Memory of Scholomance",
@@ -910,6 +907,9 @@ localize(L.HEADER_NAMES, {
 	[-1001184] = "Flexible Vendor",
 	[-1001185] = "Raid Vendor",
 	[-1001186] = "Heroic Vendor",
+	[-1001198] = "Archaeology: Mantid",
+	[-1001199] = "Archaeology: Mogu",
+	[-1001201] = "Archaeology: Pandaren",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1174,6 +1174,9 @@ localize(L.HEADER_ICONS, {
 	[-1001184] = _.asset("category_commonbossdrop"),
 	[-1001185] = 311236,
 	[-1001186] = 311235,
+	[-1001198] = 441139,
+	[-1001199] = 441139,
+	[-1001201] = 441139,
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,

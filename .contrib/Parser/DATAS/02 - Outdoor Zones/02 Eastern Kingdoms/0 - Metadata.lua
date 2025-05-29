@@ -51,10 +51,6 @@ root(ROOTS.Zones, {
 						802,	-- Explore Westfall
 						841,	-- Explore Wetlands
 					}},
-					-- #else
-					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_EASTERN_KINGDOMS_EXP .. [[); end]],
 					-- #endif
 				}),
 				petbattle(ach(6586, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Eastern Kingdoms Safari
@@ -215,11 +211,11 @@ root(ROOTS.Zones, {
 					}},
 					-- #else
 					-- #if BEFORE WRATH
-					["rank"] = 700,
-					-- #endif
 					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. EASTERN_KINGDOMS .. [[); end]],
+					["rank"] = 700,
+					-- #endif
 					-- #endif
 					-- #if BEFORE 5.0.4
 					["races"] = ALLIANCE_ONLY,
@@ -246,11 +242,11 @@ root(ROOTS.Zones, {
 					}},
 					-- #else
 					-- #if BEFORE WRATH
-					["rank"] = 550,
-					-- #endif
 					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. EASTERN_KINGDOMS .. [[); end]],
+					["rank"] = 550,
+					-- #endif
 					-- #endif
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,

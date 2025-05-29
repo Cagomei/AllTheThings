@@ -79,6 +79,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 		},FILTERFUNC_questIDORencounterID,{
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = appendAllGroups(
+					nil,
 					EncounterToCRS[AOH],
 					EncounterToCRS[KORDAC],
 					EncounterToCRS[ORTA],

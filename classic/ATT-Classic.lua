@@ -191,8 +191,6 @@ MergeObject = function(g, t, index)
 					rawset(o, k, v);
 				end
 			end
-			rawset(o, "nmr", (o.races and not contains(o.races, app.RaceIndex)) or (o.r and o.r ~= app.FactionID));
-			rawset(o, "nmc", o.c and not contains(o.c, app.ClassIndex));
 			return o;
 		end
 	end
@@ -347,10 +345,6 @@ ResolveSymbolicLink = function(o)
 				end
 			elseif cmd == "selectprofession" then
 				local requireSkill, response = sym[2], nil;
-				if app.Categories.Achievements then
-					response = app:BuildSearchResponse(app.Categories.Achievements, "requireSkill", requireSkill);
-					if response then tinsert(searchResults, {text=ACHIEVEMENTS,icon = app.asset("Category_Achievements"),g=response}); end
-				end
 				response = app:BuildSearchResponse(app.Categories.Instances, "requireSkill", requireSkill);
 				if response then tinsert(searchResults, {text=GROUP_FINDER,icon = app.asset("Category_D&R"),g=response}); end
 				response = app:BuildSearchResponse(app.Categories.Zones, "requireSkill", requireSkill);
@@ -630,14 +624,7 @@ ResolveSymbolicLink = function(o)
                 end
 			elseif cmd == "partial_achievement" then
                 -- Instruction to search the full database for an achievementID and persist the associated Criteria
-                local cache = app.SearchForField("achievementID", sym[2])
-				local crit
-				for i=1,#cache do
-					crit = cache[i]
-					if crit.criteriaID then
-						searchResults[#searchResults + 1] = crit
-					end
-				end
+                -- Do nothing, this is done in the mini list instead. We don't want to build a useless list of criteria.
 			end
 		end
 
@@ -875,11 +862,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB, group)
 		end
 	end
 end
-app.Settings.CreateInformationType("SourceLocations", {
-	priority = 2.7,
-	text = "Source Locations",
-	HideCheckBox = true,
-	keys = {
+local SourceShowKeys = {
 		["achievementID"] = true,
 		["creatureID"] = true,
 		["expansionID"] = false,
@@ -890,10 +873,17 @@ app.Settings.CreateInformationType("SourceLocations", {
 		["itemID"] = true,
 		["speciesID"] = true,
 		["titleID"] = true,
-	},
+	};
+if app.GameBuildVersion < 20000 then
+	SourceShowKeys.spellID = true;
+end
+app.Settings.CreateInformationType("SourceLocations", {
+	priority = 2.7,
+	text = "Source Locations",
+	HideCheckBox = true,
 	Process = function(t, data, tooltipInfo)
 		local key, id = data.key, data[data.key];
-		if key and id and t.keys[key] then
+		if key and id and SourceShowKeys[key] then
 			if tooltipInfo.hasSourceLocations then return; end
 			AddSourceLinesForTooltip(tooltipInfo, key, id, app.SearchForField(key, id));
 		end
@@ -1651,6 +1641,14 @@ function app:GetDataCache()
 		if app.Categories.InGameShop then
 			tinsert(g, app.CreateNPC(app.HeaderConstants.IN_GAME_SHOP, {
 				g = app.Categories.InGameShop,
+				expanded = false
+			}));
+		end
+		
+		-- Pet Battles
+		if app.Categories.PetBattles then
+			tinsert(g, app.CreateNPC(app.HeaderConstants.PET_BATTLE, {
+				g = app.Categories.PetBattles,
 				expanded = false
 			}));
 		end

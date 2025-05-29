@@ -139,7 +139,6 @@ root(ROOTS.Zones, {
 					}),
 					ach(39, {	-- Into the Basin
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
 						["sourceQuests"] = {
 							12595,	-- In Search of Bigger Game
 							12614,	-- Post-partum Aggression
@@ -148,12 +147,6 @@ root(ROOTS.Zones, {
 							12805,	-- Salvaging Life's Strength
 							12546,	-- Reclamation
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 75,
-						-- #endif
 						-- #else
 						crit(39053, {	-- Hunting Bigger Game
 							["sourceQuest"] = 12595,	-- In Search of Bigger Game

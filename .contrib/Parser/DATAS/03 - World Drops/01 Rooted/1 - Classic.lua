@@ -3957,6 +3957,75 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 	}),
 	filter(REAGENTS, {
+		-- Elemental reagents:
+		i(10286, {	-- Heart of the Wild
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
+				-- #else
+				{ 51.5, 25.0, FELWOOD },	-- Irontree Woods
+				-- #endif
+				{ 55.3, 21.6, UNGORO_CRATER },	-- Lakkari Tar Pits
+				{ 69.5, 36.7, UNGORO_CRATER },	-- The Roiling Gardens
+			},
+			["crs"] = {
+				6510,	-- Bloodpetal Flayer
+				6509,	-- Bloodpetal Lasher
+				6511,	-- Bloodpetal Thresher
+				6512,	-- Bloodpetal Trapper
+				7139,	-- Irontree Stomper
+				6517,	-- Tar Beast
+				6527,	-- Tar Creeper
+				6519,	-- Tar Lord
+				6518,	-- Tar Lurker
+				7100,	-- Warpwood Moss Flayer
+				7149,	-- Withered Protector
+				-- #if BEFORE 4.0.3
+				7138,	-- Irontree Wanderer
+				7101,	-- Warpwood Shredder
+				-- #endif
+			},
+			["maps"] = {
+				DIRE_MAUL,
+				MARAUDON,
+				-- #if BEFORE 4.0.3
+				SWAMP_OF_SORROWS,
+				-- #endif
+			},
+		}),
+		-- Alchemy:
+		i(9260, {	-- Volatile Rum
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 54.0, 93.0, TANARIS },	-- Land's End Beach
+				-- #else
+				{ 77.0, 90.0, NORTHERN_BARRENS },	-- Fray Island
+				{ 69.4, 53.5, TANARIS },	-- Southbreak Shore
+				-- #endif
+				{ 74.0, 47.0, TANARIS },	-- Lost Rigger Cove
+			},
+			["crs"] = {
+				-- #if BEFORE 4.0.3
+				7857,	-- Southsea Dock Worker
+				7856,	-- Southsea Frebooter
+				15685,	-- Southsea Kidnapper
+				7902,	-- Treasure Hunting Buccaneer
+				7899,	-- Treasure Hunting Pirate
+				7901,	-- Treasure Hunting Swashbuckler
+				-- #else
+				3382,	-- Southsea Cannoneer
+				3383,	-- Southsea Cutthroat
+				40632,	-- Southsea Musketeer
+				3384,	-- Southsea Privateer
+				44168,	-- Southsea Recruit
+				40635,	-- Southsea Strongarm
+				40636,	-- Southsea Swabbie
+				-- #endif
+				7855,	-- Southsea Pirate
+				7858,	-- Southsea Swashbuckler
+			},
+		}),
+		-- Engineering:
 		i(7191),	-- Fused Wiring
 	}),
 }));

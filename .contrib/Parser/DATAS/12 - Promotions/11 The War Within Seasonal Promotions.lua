@@ -266,7 +266,11 @@ root(ROOTS.Promotions, {
 			}),
 			i(212791, {	-- Beetriz (PET!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 22nd, 10:00 a.m. & May 20th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_11_1_5, "removed 11.1.5.99999" },	-- Removed May 20, 2025
+				["timeline"] = { ADDED_11_1_5, "removed 11.1.5.60822" },	-- Removed May 20, 2025
+			}),
+			mount(1236262, {	-- Shaohao's Sage Serpent
+				["description"] = "Finish the Pandaren Wandering Isle starting zone in |cFFfe040fMoP Classic|r up to leaving the turtle to recieve this mount in Retail.",
+				["timeline"] = { ADDED_11_1_7, "removed 11.1.7.99999" },	-- Removed July 30th, 2025
 			}),
 		--	i(500001, {    -- The PVE/PVP Banner temporary item -- TEMPLATE
 		--		["sourceID"] = 500001,

@@ -4,7 +4,7 @@
 local DF_ENCHANTING_KNOWLEDGE = 2030;
 local TWW_ENCHANTING_KNOWLEDGE = 2787;
 root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+	n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18769),	-- Disenchantment IV
 		ach(18768),	-- Disenchantment III
 		ach(18767),	-- Disenchantment II

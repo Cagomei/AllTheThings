@@ -767,90 +767,24 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	else
 		t = struct("achievementID", id, altID);
 	end
-	if t then
-		-- #if BEFORE WRATH
-		-- These are helper variables (capitalized for a reason)
-		local AllProvidersRequiredForAchievement = t.AllProvidersRequiredForAchievement;
-		t.AllProvidersRequiredForAchievement = nil;
-		local AllSourceQuestsRequiredForAchievement = t.AllSourceQuestsRequiredForAchievement;
-		t.AllSourceQuestsRequiredForAchievement = nil;
-		if not t.OnUpdate then
-			if t.provider or t.providers then
-				-- A lot of achievements are proc'd by having an item, quests with providers on them pretty much guarantee it works.
-				t.OnUpdate = AllProvidersRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]] or [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]];
-			elseif t.sourceQuest or t.sourceQuests then
-				-- For Classic, we can detect if you've completed an achievement if there's a quest that involves killing the mob in question.
-				t.OnUpdate = AllSourceQuestsRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]] or [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]];
-			end
-		end
-		-- #else
-			-- Apply a default timeline of 3.0.2 to Achievements
-			if not t.timeline then
-				t._defaulttimeline = { ADDED_3_0_2 }
-			end
-		-- #endif
+	-- #if AFTER WRATH
+	-- Apply a default timeline of 3.0.2 to Achievements
+	if not t.timeline then
+		t._defaulttimeline = { ADDED_3_0_2 }
 	end
+	-- #endif
 	return t;
 end
 achWithRep = function(id, factionID, t)					-- Create an ACHIEVEMENT Object with getting Exalted with a Faction as a requirement.
 	t = ach(id, t);
 	t.minReputation = { factionID, EXALTED }
-	if t then
-		-- #if ANYCLASSIC
-		-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
-		t.OnInit = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnInit(t, ]] .. factionID ..[[); end]];
-		if not t.OnUpdate then
-			-- #if AFTER 3.0.1
-			if id == 5788 then	-- Agent of Shen'dralar still needs this until after 4.1.0
-			-- #endif
-				t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REP_OnUpdate]];
-			-- #if AFTER 3.0.1
-			end
-			-- #endif
-		end
-		t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]];
-		t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]];
-		-- #endif
-	end
 	return t;
 end
 achWithReps = function(id, factions, t)					-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
-	t = ach(id, t);
-	if t then
-		-- #if ANYCLASSIC
-		-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
-		local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
-		for i=2,#factions,1 do init = init .. "," .. factions[i]; end
-		t.OnInit = init ..[[); end]];
-		-- #if BEFORE 3.0.1
-		if not t.OnUpdate then
-			t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REPS_OnUpdate]];
-		end
-		-- #endif
-		t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]];
-		t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]];
-		-- #endif
-	end
-	return t;
+	return ach(id, t);
 end
 achWithAnyReps = function(id, factions, t)				-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
-	t = ach(id, t);
-	if t then
-		-- #if ANYCLASSIC
-		-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
-		local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
-		for i=2,#factions,1 do init = init .. "," .. factions[i]; end
-		t.OnInit = init ..[[); end]];
-		-- #if BEFORE 3.0.1
-		if not t.OnUpdate then
-			t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REPS_ANY_OnUpdate]];
-		end
-		-- #endif
-		t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]];
-		t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]];
-		-- #endif
-	end
-	return t;
+	return ach(id, t);
 end
 achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by AchievementDB info
 	t = ach(id, altID, t);
@@ -866,12 +800,7 @@ achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Crit
 	return t;
 end
 explorationAch = function(id, t)						-- Create an EXPLORATION ACHIEVEMENT Object
-	t = struct("achievementID", id, t or {});
-	-- #if BEFORE WRATH
-	t.OnClick = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]];
-	t.OnUpdate = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]];
-	-- #endif
-	return t;
+	return struct("achievementID", id, t or {});
 end
 
 -- SHORTCUTS for Object Class Types

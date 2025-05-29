@@ -549,12 +549,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(230091),	-- Prowler's Aquatic Mask
 				i(230050),	-- Prowler's Aquatic Shoulder Cape
 
-				------ Prowler's Brick Set ------
-				i(230171),	-- Ensemble: Prowler's Brick Headgear
-				i(230061),	-- Prowler's Brick Cowl
-				i(230081),	-- Prowler's Brick Mask
-				i(230039),	-- Prowler's Brick Shoulder Cape
-
 				------ Prowler's Cloudy Set ------
 				i(230168),	-- Ensemble: Prowler's Cloudy Headgear
 				i(230058),	-- Prowler's Cloudy Cowl
@@ -604,8 +598,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233238),	-- Azure Pack of Lunar Explosives
 				i(233183),	-- Banded Aquatic War Slippers
 				i(233166),	-- Banded Aquatic War Wraps
-				i(233176),	-- Banded Brick War Slippers
-				i(233159),	-- Banded Brick War Wraps
 				i(233179),	-- Banded Carrot War Slippers
 				i(233162),	-- Banded Carrot War Wraps
 				i(233173),	-- Banded Cloudy War Slippers
@@ -630,8 +622,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233237),	-- Lively Pack of Lunar Explosives
 				i(233110),	-- Long Aquatic War Skirt
 				i(233149),	-- Long Aquatic War Skirt and Leg Wraps
-				i(233103),	-- Long Brick War Skirt
-				i(233142),	-- Long Brick War Skirt and Leg Wraps
 				i(233106),	-- Long Carrot War Skirt
 				i(233145),	-- Long Carrot War Skirt and Leg Wraps
 				i(233100),	-- Long Cloudy War Skirt
@@ -663,8 +653,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(232924),	-- Sailor's Belt
 				i(233093),	-- Short Aquatic War Skirt
 				i(233132),	-- Short Aquatic War Skirt and Leg Wraps
-				i(233086),	-- Short Brick War Skirt
-				i(233125),	-- Short Brick War Skirt and Leg Wraps
 				i(233089),	-- Short Carrot War Skirt
 				i(233128),	-- Short Carrot War Skirt and Leg Wraps
 				i(233083),	-- Short Cloudy War Skirt
@@ -742,7 +730,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(ARMOR, {
 				i(231559),	-- [DNT] Experimental Gobbo-Flyer v3
 				i(235034),	-- Vigilante's Aquatic Mask
-				i(235026),	-- Vigilante's Brick Mask
 				i(235023),	-- Vigilante's Cloudy Mask
 				i(235028),	-- Vigilante's Faded Mask
 				i(235022),	-- Vigilante's Grassy Mask

@@ -646,6 +646,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					})),
 					header(HEADERS.Spell, 354778, {	-- The Rift
 						["description"] = "The things in this section are only accessible when you are in the Rift, a version of the Maw populated by shades.\n\nIn Korthia, this phase can be accessed by using a |cFF1eff00Repaired Riftkey|r on a |cFFFFFFFFMaw Rift|r. To get there in the Maw, you can either walk to the Maw after entering a |cFFFFFFFFMaw Rift|r in Korthia, or use the |cFFFFFFFFUnbalanced Riftstone|r from the Night Fae covenant assault quest |cFF349cffA Shady Place|r.",
+						["cost"] = {
+							{"i",186969,1},	-- Collapsing Riftstone
+							{"i",186731,1},	-- Repaired Riftkey
+						},
 						["g"] = {
 							n(ACHIEVEMENTS, {
 								ach(15001, {	-- Jailer's Personal Stash
@@ -836,6 +840,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 								ach(15043, {	-- Hoarder of Torghast
 									["crs"] = { 178118 },	-- Fangcrack
 									["coord"] = { 31.1, 13.0, THE_MAW },
+								}),
+								n(179520, {	-- Broker Ve'kot
+									-- Technically accurate but such a rare occurrence & possibility that it's not worth listing
+									-- every 4th week + 1hr+ spawn time chance with 30 sec despawn... kek
+									-- ["coord"] = { 31.0, 13.2, THE_MAW },
+									-- ["g"] = {
+									-- 	i(186969, {	-- Collapsing Riftstone
+									-- 		["cost"] = {{"c",1767,100}},	-- 100 Stygia
+									-- 	}),
+									-- },
 								}),
 							},
 						}),

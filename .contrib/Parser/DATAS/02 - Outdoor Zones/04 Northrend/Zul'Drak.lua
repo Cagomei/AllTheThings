@@ -19,7 +19,6 @@ root(ROOTS.Zones, {
 					}),
 					ach(36, {	-- The Empire of Zul'Drak
 						-- #if ANYCLASSIC
-						-- #if AFTER CATA
 						["sourceQuests"] = {
 							12516,	-- Too Much of a Good Thing
 							12685,	-- You Reap What You Sow
@@ -45,12 +44,6 @@ root(ROOTS.Zones, {
 							12554,	-- Malas the Corrupter
 							12508,	-- Mopping Up
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 100,
-						-- #endif
 						-- #else
 						crit(39098, {	-- Sseratus
 							["sourceQuest"] = 12516,	-- Too Much of a Good Thing

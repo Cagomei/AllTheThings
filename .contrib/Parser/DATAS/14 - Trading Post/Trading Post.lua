@@ -3235,6 +3235,103 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
+		n(JUNE, bubbleDownSelf({ ["timeline"] = { "added 11.1.5.60568", "removed 11.1.5.99999" } }, {	-- TODO: Timeline in/out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				i(238967),	-- Molten Cormaera (MOUNT!)
+			}),
+			filter(MOUNTS, {
+				i(238941, {	-- Coldflame Cormaera (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 700}},
+				}),
+				i(221814, {	-- Pearlescent Goblin Wave Shredder (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 700}},
+				}),
+				i(236415, {	-- Reins of the Spotted Black Riding Goat (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 325}},
+				}),
+			}),
+			filter(BATTLE_PETS, {
+				i(190607, {	-- Garrlok (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 750}},
+				}),
+			}),
+			filter(TOYS, {
+				i(218112, {	-- Colorful Beach Chair (TOY!)
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+			}),
+			filter(COSMETIC, {
+				i(238947, {	-- Arcano-Stone Greathelm
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(233176, {	-- Banded Brick War Slippers
+					["cost"] = {{"c", TRADERS_TENDER, 20}},
+				}),
+				i(233159, {	-- Banded Brick War Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 20}},
+				}),
+				i(238397, {	-- Coldflame Chopper
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(238892, {	-- Coldflame's Bite
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(238951, {	-- Coldflame Burner
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				iensemble(238418, {	-- Ensemble: Coldflame Battlegear
+					["cost"] = {{"c", TRADERS_TENDER, 550}},
+				}),
+				iensemble(238438, {	-- Ensemble: Lavaborn Battleplate
+					["cost"] = {{"c", TRADERS_TENDER, 550}},
+				}),
+				iensemble(230171, {	-- Ensemble: Prowler's Brick Headgear
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(221542, {	-- Ensemble: Sunny Tropical Beachwear
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
+				}),
+				iensemble(222961, {	-- Ensemble: Sunny Tropical Swimwear
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
+				}),
+				i(238894, {	-- Lavaborn Barb
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(238399, {	-- Lavaborn Ruby's Edge
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(233103, {	-- Long Brick War Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(233142, {	-- Long Brick War Skirt and Leg Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(238950, {	-- Molten Inferno Helm
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(230039, {	-- Prowler's Brick Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(238953, {	-- Red Flame Burner
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(233086, {	-- Short Brick War Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(233125, {	-- Short Brick War Skirt and Leg Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(237856, {	-- Sunwell Bardiche
+					["cost"] = {{"c", TRADERS_TENDER, 245}},
+				}),
+				i(235026, {	-- Vigilante's Brick Mask
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(237854, {	-- Voidstorm Bardiche
+					["cost"] = {{"c", TRADERS_TENDER, 245}},
+				}),
+			}),
+		})),
 	}),
 }));
 

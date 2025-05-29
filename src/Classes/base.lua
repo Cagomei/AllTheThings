@@ -163,6 +163,21 @@ local DefaultFields = {
     ["upgradeTotal"] = returnZero,
 	["progress"] = returnZero,
     ["total"] = returnZero,
+	["nmc"] = function(t)
+		local c = t.c;
+		local nmc = c and not containsValue(c, app.ClassIndex) or false;
+		-- app.PrintDebug("base.nmc",t.__type,nmc)
+		t.nmc = nmc;
+		return nmc;
+	end,
+	["nmr"] = function(t)
+		local races = t.races;
+		local r = t.r;
+		local nmr = (r and r ~= app.FactionID) or (races and not containsValue(races, app.RaceIndex)) or false;
+		-- app.PrintDebug("base.nmr",t.__type,nmr)
+		t.nmr = nmr;
+		return nmr;
+	end,
 	["AccessibilityScore"] = function(t)
 		local score = 0;
 		if GetRelativeValue(t, "nmr") then
@@ -192,6 +207,12 @@ local DefaultFields = {
 	end,
 	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
 		return t.npcID;
+	end,
+	["filterID"] = function(t)	-- we like to use different field names in different places
+		return t.f
+	end,
+	["iconPath"] = function(t)
+		return rawget(t, "icon")
 	end,
 	["ShouldExcludeFromTooltipHelper"] = function(t)
 		return ShouldExcludeFromTooltipHelper;
@@ -231,37 +252,11 @@ local DefaultFields = {
 if app.IsRetail then
 	-- Crieve doesn't see these fields being included as necessary,
 	-- future research project is to look into seeing if this is something we want to keep or put somewhere else. (such as a function)
-	for fieldName,fieldMethod in pairs({
-		-- Default text should be a valid link or name
-		-- In Retail, text can be colored and can be based on a variety of possible fields
-		-- trying to individually maintain variable coloring in every object class is quite absurd
-		["text"] = function(t)
-			return t.link or app.TryColorizeName(t);
-		end,
-		["nmc"] = function(t)
-			local c = t.c;
-			local nmc = c and not containsValue(c, app.ClassIndex) or false;
-			-- app.PrintDebug("base.nmc",t.__type,nmc)
-			t.nmc = nmc;
-			return nmc;
-		end,
-		["nmr"] = function(t)
-			local races = t.races;
-			local r = t.r;
-			local nmr = (r and r ~= app.FactionID) or (races and not containsValue(races, app.RaceIndex)) or false;
-			-- app.PrintDebug("base.nmr",t.__type,nmr)
-			t.nmr = nmr;
-			return nmr;
-		end,
-		-- we like to use different field names in different places
-		["filterID"] = function(t)
-			return t.f
-		end,
-		["iconPath"] = function(t)
-			return rawget(t, "icon")
-		end,
-	}) do
-		DefaultFields[fieldName] = fieldMethod;
+	-- Default text should be a valid link or name
+	-- In Retail, text can be colored and can be based on a variety of possible fields
+	-- trying to individually maintain variable coloring in every object class is quite absurd
+	DefaultFields.text = function(t)
+		return t.link or app.TryColorizeName(t);
 	end
 end
 

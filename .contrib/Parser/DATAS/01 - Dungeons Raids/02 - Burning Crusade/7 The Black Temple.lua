@@ -416,21 +416,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 									{ "i", 32837 },	-- Warglaive of Azzinoth (LEGENDARY! MH)
 									{ "i", 32838 },	-- Warglaive of Azzinoth (LEGENDARY! OH)
 								},
-								["classes"] = { DEATHKNIGHT, DEMONHUNTER, MONK, ROGUE, WARRIOR },
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[function(t)
-									local collected = true;
-									for i,provider in ipairs(t.providers) do
-										if provider[1] == "i" and ]] .. WOWAPI_GetItemCount("provider[2]") .. [[ == 0 then
-											collected = false;
-											break;
-										end
-									end
-									t:SetAchievementCollected(t.achievementID, collected);
-								end]],
-								-- #else
 								["description"] = "Once you have both, simply equip them for this achievement.",
-								-- #endif
+								["classes"] = { DEATHKNIGHT, DEMONHUNTER, MONK, ROGUE, WARRIOR },
 							})),
 							i(122196, {	-- Music Roll: The Burning Legion
 								["timeline"] = { ADDED_6_1_0 },

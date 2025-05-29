@@ -3686,6 +3686,7 @@ namespace ATT
                         keys.Clear();
                         localizationForText.Clear();
                         localizationForDescriptions.Clear();
+                        Dictionary<long, bool> referencedWorldMapOverlays = new Dictionary<long, bool>();
                         allAchievementKeys = AchievementCriteriaData.Keys.ToList();
                         allAchievementKeys.Sort();
                         foreach (var key in allAchievementKeys)
@@ -3749,6 +3750,10 @@ namespace ATT
                                 if (criteriaData.TryGetValue("asset", out var asset))
                                 {
                                     builder.AppendLine(",").Append("\t\tasset = ").Append(asset);
+                                    if (t != null && (long)t == 43) // Exploration Criteria
+                                    {
+                                        referencedWorldMapOverlays[(long)asset] = true;
+                                    }
                                 }
                                 if (criteriaData.TryGetValue("criteria", out List<object> criteria))
                                 {
@@ -3767,6 +3772,25 @@ namespace ATT
                             }
                         }
                         builder.AppendLine("};\nL.ACHIEVEMENT_CRITERIA_DATA = achievementCriterias;");
+
+                        // Write out the World Map Overlay explorationIDs that are referenced.
+                        if (referencedWorldMapOverlays.Count > 0)
+                        {
+                            builder.AppendLine("local worldMapOverlayData = {");
+                            foreach (var worldMapOverlayID in referencedWorldMapOverlays.Keys)
+                            {
+                                if (WagoData.TryGetValue(worldMapOverlayID, out WorldMapOverlay worldMapOverlay))
+                                {
+                                    builder.Append("\t[").Append(worldMapOverlayID).Append("] = { ");
+                                    if (worldMapOverlay.AreaID_0 > 0) builder.Append(worldMapOverlay.AreaID_0);
+                                    if (worldMapOverlay.AreaID_1 > 0) builder.Append(",").Append(worldMapOverlay.AreaID_1);
+                                    if (worldMapOverlay.AreaID_2 > 0) builder.Append(",").Append(worldMapOverlay.AreaID_2);
+                                    if (worldMapOverlay.AreaID_3 > 0) builder.Append(",").Append(worldMapOverlay.AreaID_3);
+                                    builder.AppendLine(" },");
+                                }
+                            }
+                            builder.AppendLine("};\nL.WORLD_MAP_OVERLAY_DATA = worldMapOverlayData;");
+                        }
 
                         // Now grab the non-english localizations and conditionally write them to the file.
                         foreach (var localePair in localizationForText)
