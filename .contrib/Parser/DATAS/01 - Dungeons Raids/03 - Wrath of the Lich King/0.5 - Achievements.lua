@@ -2,8 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, {
-	n(ACHIEVEMENTS, {
-		applyclassicphase(WRATH_PHASE_ONE, ach(1658, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Champion of the Frozen Wastes
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+		ach(1658, {	-- Champion of the Frozen Wastes
 			title(97),	-- , Champion of the Frozen Wastes
 			crit(5888, {	-- Kel'Thuzad (10 or 25 player) slain
 				["_encounter"] = { 1615, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, 1615, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
@@ -50,8 +50,8 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 			crit(5618, {	-- King Ymiron slain
 				["_encounter"] = { 644, DIFFICULTY.DUNGEON.HEROIC },
 			}),
-		}))),
-		applyclassicphase(WRATH_PHASE_ONE, ach(2136, {	-- Glory of the Hero
+		}),
+		ach(2136, {	-- Glory of the Hero
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				1919,	-- On The Rocks
@@ -95,23 +95,29 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 			["groups"] = {
 				i(44160),	-- Red Proto-Drake (MOUNT!)
 			},
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(2137, {	-- Glory of the Raider (10 player)
+		}),
+		ach(2137, {	-- Glory of the Raider (10 player)
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				-- #if BEFORE 4.0.1
 				2187,	-- The Undying
 				-- #endif
+				-- #if NOT ANYCLASSIC
 				578,	-- The Dedicated Few (10 player)
+				-- #endif
 				1858,	-- Arachnophobia (10 player)
 				1856,	-- Make Quick Werk of Him (10 player)
 				1996,	-- The Safety Dance (10 player)
 				1997,	-- Momma Said Knock You Out (10 player)
 				2178,	-- Shocking! (10 player)
+				-- #if NOT ANYCLASSIC
 				2180,	-- Subtraction (10 player)
+				-- #endif
 				622,	-- The Spellweaver's Downfall (10 player)
 				1874,	-- You Don't Have an Eternity (10 player)
+				-- #if NOT ANYCLASSIC
 				1869,	-- A Poke in the Eye (10 player)
+				-- #endif
 				2047,	-- Gonna Go When the Volcano Blows (10 player)
 				2051,	-- The Twilight Zone (10 player)
 				2146,	-- The Hundred Club (10 player)
@@ -122,9 +128,10 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 			["maps"] = { THE_EYE_OF_ETERNITY, THE_OBSIDIAN_SANCTUM, NAXXRAMAS },
 			["groups"] = {
 				i(44175, {	-- Plagued Proto-Drake (MOUNT!)
-					-- #if ANYCLASSIC
+					-- #if BEFORE CATA
+					-- They didn't actually remove this with Phase 2... Blizzard?!
 					["OnUpdate"] = [[function(t)
-						if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
+						if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
 							t.u = ]] .. REMOVED_FROM_GAME .. [[;
 							t.rwp = nil;
 						else
@@ -132,16 +139,17 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 							t.rwp = 30100;
 						end
 					end]],
-					-- #else
-					["timeline"] = { REMOVED_3_1_0 },
 					-- #endif
+					["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 				}),
 			},
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(2138, {	-- Glory of the Raider (25 player)
+		}),
+		ach(2138, {	-- Glory of the Raider (25 player)
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
+				-- #if NOT ANYCLASSIC
 				579,	-- The Dedicated Few (25 player)
+				-- #endif
 				1859,	-- Arachnophobia (25 player)
 				1857,	-- Make Quick Werk of Him (25 player)
 				-- #if BEFORE 4.0.1
@@ -151,10 +159,14 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 				2140,	-- Momma Said Knock You Out (25 player)
 				2179,	-- Shocking! (25 player)
 				2177,	-- And They Would All Go Down Together (25 player)
+				-- #if NOT ANYCLASSIC
 				2181,	-- Subtraction (25 player)
+				-- #endif
 				623,	-- The Spellweaver's Downfall (25 player)
 				1875,	-- You Don't Have an Eternity (25 player)
+				-- #if NOT ANYCLASSIC
 				1870,	-- A Poke in the Eye (25 player)
+				-- #endif
 				2048,	-- Gonna Go When the Volcano Blows (25 player)
 				2149,	-- Denyin' the Scion (25 player)
 				2054,	-- The Twilight Zone (25 player)
@@ -164,9 +176,10 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 			["maps"] = { THE_EYE_OF_ETERNITY, THE_OBSIDIAN_SANCTUM, NAXXRAMAS },
 			["groups"] = {
 				i(44164, {	-- Black Proto-Drake (MOUNT!)
-					-- #if ANYCLASSIC
+					-- #if BEFORE CATA
+					-- They didn't actually remove this with Phase 2... Blizzard?!
 					["OnUpdate"] = [[function(t)
-						if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
+						if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
 							t.u = ]] .. REMOVED_FROM_GAME .. [[;
 							t.rwp = nil;
 						else
@@ -174,13 +187,12 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 							t.rwp = 30100;
 						end
 					end]],
-					-- #else
-					["timeline"] = { REMOVED_3_1_0 },
 					-- #endif
+					["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 				}),
 			},
-		})),
-		ach(1289, {		-- Northrend Dungeon Hero
+		}),
+		ach(1289, {	-- Northrend Dungeon Hero
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				492,	-- Heroic: Ahn'kahet: The Old Kingdom
@@ -197,7 +209,7 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 				499,	-- Heroic: Utgarde Pinnacle
 			}},
 		}),
-		ach(1288, {		-- Northrend Dungeonmaster
+		ach(1288, {	-- Northrend Dungeonmaster
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				481,	-- Ahn'kahet: The Old Kingdom
@@ -220,5 +232,5 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 				i(142210),	-- Celestial Invitation (Begins a quest for a pet)
 			},
 		}),
-	}),
+	})),
 })))

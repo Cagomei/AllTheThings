@@ -86,13 +86,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["creatureID"] = 17257,
 				["groups"] = {
 					ach(693, {	-- Magtheridon's Lair
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							11002,	-- The Fall of Magtheridon
-							11003,	-- The Fall of Magtheridon
-							10888,	-- Trial of the Naaru: Magtheridon
-							11116,	-- Trial of the Naaru: (QUEST FLAG)
-						},
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This achievement can be earned ahead of time by having completing one of 4 quests.
+						["timeline"] = { ADDED_3_0_2 },
 						-- #endif
 					}),
 					ach(5087, {	-- Magtheridon's Lair Guild Run

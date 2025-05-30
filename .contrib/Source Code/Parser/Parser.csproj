@@ -86,7 +86,12 @@
     <Compile Include="DB\Interfaces\IWagoItemID.cs" />
     <Compile Include="DB\Interfaces\IWagoChild.cs" />
     <Compile Include="DB\Attributes\LocalizeAttribute.cs" />
+    <Compile Include="DB\Types\UiMapAssignment.cs" />
+    <Compile Include="DB\Types\UiMap.cs" />
+    <Compile Include="DB\Types\ContentTuning.cs" />
+    <Compile Include="DB\Types\AreaTable.cs" />
     <Compile Include="DB\Types\AchievementCategory.cs" />
+    <Compile Include="DB\Types\BattlePetSpecies.cs" />
     <Compile Include="DB\Types\ArtifactAppearance.cs" />
     <Compile Include="DB\Types\ItemBonus.cs" />
     <Compile Include="DB\Types\WorldMapOverlay.cs" />

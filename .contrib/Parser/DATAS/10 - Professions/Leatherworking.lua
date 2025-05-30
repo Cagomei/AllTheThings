@@ -3983,7 +3983,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Fur Lining - Arcane Resist",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { DELETED_5_5_0 },
 					["recipeID"] = 57701
 				},
 				{
@@ -3993,17 +3993,17 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Fur Lining - Fire Resist",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { DELETED_5_5_0 },
 					["recipeID"] = 57692
 				},
 				{
 					["name"] = "Fur Lining - Frost Resist",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { DELETED_5_5_0 },
 					["recipeID"] = 57694
 				},
 				{
 					["name"] = "Fur Lining - Nature Resist",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { DELETED_5_5_0 },
 					["recipeID"] = 57699
 				},
 				{
@@ -4013,7 +4013,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Fur Lining - Shadow Resist",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { DELETED_5_5_0 },
 					["recipeID"] = 57696
 				},
 				{
@@ -4039,7 +4039,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Jormungar Leg Reinforcements",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { DELETED_5_5_0 },
 					["recipeID"] = 60583
 				},
 				{
@@ -4048,7 +4048,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Nerubian Leg Reinforcements",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { DELETED_5_5_0 },
 					["recipeID"] = 60584
 				},
 			},

@@ -1623,7 +1623,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Flask of Chromatic Resistance",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 17638,
 				},
 				{
@@ -2016,7 +2016,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Flask of Chromatic Wonder",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 42736
 				}),
 				{
@@ -2344,7 +2344,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Flask of the North",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 67025
 				},
 				{
@@ -2353,7 +2353,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Lesser Flask of Resistance",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 62213
 				},
 			}

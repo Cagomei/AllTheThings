@@ -49,5 +49,11 @@ root(ROOTS.NeverImplemented, filter(BAGS, {
 		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
 			i(166699),	-- Desert Rucksack
 		})),
+
+		-- 8.3.0
+		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
+			-- 8.3.0.32593
+			i(174969),	-- Alpaca Saddlebag
+		})),
 	}),
 }));

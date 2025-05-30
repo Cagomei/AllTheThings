@@ -404,8 +404,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						["creatureID"] = 22917,
 						["groups"] = {
 							ach(697, {	-- The Black Temple
-								-- #if BEFORE WRATH
-								["sourceQuest"] = 10959,	-- The Fall of the Betrayer
+								-- #if NOT ANYCLASSIC
+								-- CRIEVE NOTE: This achievement can be earned ahead of time by completing 'The Fall of the Betrayer'.
+								["timeline"] = { ADDED_3_0_2 },
 								-- #endif
 							}),
 							ach(5091, {	-- The Black Temple Guild Run

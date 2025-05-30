@@ -1781,6 +1781,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			expansion(EXPANSION.SL, patch(2,0), {
 				i(188117),	-- Cypher Attunement Cloak
+				i(188186),	-- Drape of Dominion
 				i(184123),	-- Sinful Gladiator's Cape
 				i(184145),	-- Sinful Aspirant's Greatcloak
 			}),
@@ -1874,6 +1875,19 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(180619),	-- Wristwraps of Broken Trust
 			}),
 			expansion(EXPANSION.SL, patch(2,0), {
+				i(188182),	-- Cavalier Hat of the First Rogue
+				i(188180),	-- Cloak of the First Rogue
+				i(188181),	-- Gloves of the First Rogue
+				i(188183),	-- Pants of the First Rogue
+				i(188184),	-- Shoulderpads of the First Rogue
+				i(188179),	-- Vest of the First Rogue
+				--
+				i(188185),	-- Indomitable Vest
+				i(188187),	-- Quickfinger Pocketlifters
+				i(188189),	-- Shadowwrap Leggings
+				i(188190),	-- Shoulderpads of the Primordial
+				i(188188),	-- Worldbinder Tricorne
+				--
 				i(188068),	-- Staccato Bands
 				i(188072),	-- Staccato Bracers
 				i(188069),	-- Staccato Cap

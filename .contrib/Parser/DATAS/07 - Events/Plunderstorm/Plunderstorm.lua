@@ -73,6 +73,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 						i(217412, {	-- Blackened Flightstone
 							["cost"] = {{"i", 217397, 1}},	-- 1x Keg-Stamped Coin
 						}),
+						i(210923, {	-- Clutch of Wyrm's Dreaming Crests
+							["cost"] = {{"i", 217397, 3}},	-- 3x Keg-Stamped Coin
+						}),
 						i(217419, {	-- Large Satchel of Drake's Dreaming Crests
 							["cost"] = {{"i", 217397, 2}},	-- 2x Keg-Stamped Coin
 						}),

@@ -3,7 +3,10 @@ SET BUILD=7.3.5.26972
 
 @REM Download new file versions
 call :download Achievement
+call :downloadrenamed AreaTable areatable
 call :download ArtifactAppearance
+call :downloadrenamed BattlePetSpecies battlepetspecies
+call :download ContentTuning
 call :download Criteria
 call :download CriteriaTree
 call :download GlyphProperties
@@ -16,7 +19,9 @@ call :download SpellEffect
 call :download TaxiNodes
 call :download TransmogSet
 call :download TransmogSetItem
-call :download WorldMapOverlay
+call :download UiMap
+call :download UiMapAssignment
+call :downloadrenamed WorldMapOverlay worldmapoverlay
 
 @REM Cleanup the SpellEffect file
 call "..\Release\net8.0\CSVCleaner.exe" "%~dp0\SpellEffect.%BUILD%.csv" "..\SpellEffect.regex"
@@ -27,10 +32,15 @@ if not exist "%1.%BUILD%.csv" (
 	if exist "%1*.csv" (
 		del /Q "%1*.csv"
 	)
-	if "%1" == "WorldMapOverlay" (
-		curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/worldmapoverlay/csv?build=%BUILD%"
-	) else (
-		curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%"
+	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%"
+)
+exit /b
+
+:downloadrenamed
+if not exist "%1.%BUILD%.csv" (
+	if exist "%1*.csv" (
+		del /Q "%1*.csv"
 	)
+	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%"
 )
 exit /b

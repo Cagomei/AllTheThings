@@ -149,11 +149,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				["creatureID"] = 19622,
 				["groups"] = {
 					ach(696, {	-- Tempest Keep
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							10445,	-- The Vials of Eternity
-							11007,	-- Kael'thas and the Verdant Sphere
-						},
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This achievement can be earned ahead of time by having completing 'The Vials of Eternity'.
+						["timeline"] = { ADDED_3_0_2 },
 						-- #endif
 					}),
 					ach(5089, {	-- Tempest Keep Guild Run

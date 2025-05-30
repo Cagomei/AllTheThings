@@ -70,6 +70,4 @@ app.AddEventHandler("OnRefreshComplete", WipeSearchCache);
 app.AddEventHandler("OnThingCollected", WipeSearchCache);
 app.AddEventHandler("OnThingRemoved", WipeSearchCache);
 app.AddEventHandler("OnSettingsRefreshed", WipeSearchCache);
-app.AddEventHandler("Fill.OnAddFiller", WipeSearchCache)
-app.AddEventHandler("Fill.ActivateFiller", WipeSearchCache)
-app.AddEventHandler("Fill.DeactivateFiller", WipeSearchCache)
+app.AddEventHandler("Fill.RefreshFillers", WipeSearchCache)

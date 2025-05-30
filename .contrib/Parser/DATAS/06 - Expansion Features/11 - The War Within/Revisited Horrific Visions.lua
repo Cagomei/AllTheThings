@@ -1109,7 +1109,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						o(343698, {	-- Void-Touched Skull
 							["description"] = "Behind the orphanage in Cathedral Square.  It's on the ground next to some crates, is very small, and doesn't have the typical interactable sparkle.",
 							["coord"] = { 58.9, 52.9, RE_HORRIFIC_STORMWIND },
-							["g"] = { i(174921) },	-- Void-Touched Skull (TOY!)
+							["g"] = {
+								i(174921, {	-- Void-Touched Skull (TOY!)
+									i(174922),	-- Void-Touched Skull
+								}),
+							},
 						}),
 					}),
 				},

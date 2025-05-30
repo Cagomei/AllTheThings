@@ -1203,6 +1203,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							58806,	-- Warmth of the Sun
 							58807,	-- Wrapping Up
 						},
+						["g"] = {
+							i(175002),	-- Amber Incubator (QI!)
+						},
 					}),
 					q(58806, {	-- Warmth of the Sun (Amathet assault)
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },

@@ -377,3 +377,11 @@ root(ROOTS.PetBattles, petbattle({
 		}),
 	}),
 }));
+
+-- #if BEFORE 4.2.0
+root("NeverImplemented", {
+	i(54810, {	-- Celestial Dragon (PET!)
+		["timeline"] = { CREATED_3_3_0, ADDED_4_2_0 },
+	}),
+});
+-- #endif

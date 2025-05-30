@@ -197,8 +197,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				["creatureID"] = 21212,
 				["groups"] = {
 					ach(694, {	-- Serpentshrine Cavern
-						-- #if BEFORE WRATH
-						["sourceQuest"] = 10445,	-- The Vials of Eternity
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This achievement can be earned ahead of time by having completing 'The Vials of Eternity'.
+						["timeline"] = { ADDED_3_0_2 },
 						-- #endif
 					}),
 					ach(5088, {	-- Serpentshrine Cavern Guild Run

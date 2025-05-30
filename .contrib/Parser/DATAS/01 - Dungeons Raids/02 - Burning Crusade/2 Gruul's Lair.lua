@@ -37,8 +37,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["creatureID"] = 19044,
 				["groups"] = {
 					ach(692, {	-- Gruul's Lair
-						-- #if BEFORE WRATH
-						["sourceQuest"] = 10901,	-- The Cudgel of Kar'desh
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This achievement can be earned ahead of time by having completing 'The Cudgel of Kar'desh'
+						["timeline"] = { ADDED_3_0_2 },
 						-- #endif
 					}),
 					ach(5086, {	-- Gruul's Lair Guild Run

@@ -186,23 +186,6 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				}),
 			}),
 		})),
-		n(QUESTS, {
-			q(32621, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Lightning Steel
-				["provider"] = { "i", 94721 },	-- Strange Metal Ingot
-				["coord"] = { 57.6, 33.8, ISLE_OF_THUNDER },
-				["g"] = {
-					i(94553, {	-- Notes on Lightning Steel
-						i(94568),	-- Plans: Drakefist Hammer, Reborn (RECIPE!)
-						i(94572),	-- Plans: Fireguard, Reborn (RECIPE!)
-						i(94552),	-- Plans: Lightning Steel Ingot (RECIPE!)
-						i(94571),	-- Plans: Lionheart Blade, Reborn (RECIPE!)
-						i(94569),	-- Plans: Lunar Crescent, Reborn (RECIPE!)
-						i(94570),	-- Plans: Planar Edge, Reborn (RECIPE!)
-						i(94567),	-- Plans: Thunder, Reborn (RECIPE!)
-					}),
-				},
-			})),
-		}),
 	})),
 	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		q(38499, {	-- Strange New Ores
@@ -1528,7 +1511,7 @@ profession(BLACKSMITHING, {
 			["groups"] = {
 				{
 					["name"] = "Arcanite Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 20201,
 				},
 				{
@@ -1541,7 +1524,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Golden Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 14379,
 				},
 				{
@@ -1562,7 +1545,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Silver Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 7818,
 				},
 				{
@@ -1571,7 +1554,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Truesilver Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 14380,
 				},
 			},
@@ -2999,27 +2982,29 @@ profession(BLACKSMITHING, {
 			},
 		},
 		-- #endif
+		-- #if BEFORE 5.0.4
 		{
 			["name"] = "Materials",
 			["categoryID"] = 215,
 			["groups"] = {
 				{
 					["name"] = "Adamantite Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 32656,
 				},
 				{
 					["name"] = "Eternium Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 32657,
 				},
 				{
 					["name"] = "Fel Iron Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 32655,
 				},
 			},
 		},
+		-- #endif
 		{
 			["name"] = "Weapon Mods",
 			["categoryID"] = 216,
@@ -3550,17 +3535,19 @@ profession(BLACKSMITHING, {
 			},
 		},
 		-- #endif
+		-- #if BEFORE 5.0.4
 		{
 			["name"] = "Materials",
 			["categoryID"] = 215,
 			["groups"] = {
 				{
 					["name"] = "Titanium Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 55732,
 				},
 			},
 		},
+		-- #endif
 		{
 			["name"] = "Equipment Mods",
 			["categoryID"] = 578,
@@ -3801,12 +3788,14 @@ profession(BLACKSMITHING, {
 					["name"] = "Righteous Greaves",
 					["recipeID"] = 55304,
 				},
-				applyclassicphase(WRATH_PHASE_THREE, {	-- Saronite Swordbreakers [Alliance],
-					["recipeID"] = 67092--[[Saronite Swordbreakers]],
+				applyclassicphase(WRATH_PHASE_THREE, {
+					["name"] = "Saronite Swordbreakers [Alliance]",
+					["recipeID"] = 67092,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_THREE, {	-- Saronite Swordbreakers [Horde],
-					["recipeID"] = 67131--[[Saronite Swordbreakers]],
+				applyclassicphase(WRATH_PHASE_THREE, {
+					["name"] = "Saronite Swordbreakers [Horde]",
+					["recipeID"] = 67131,
 					["races"] = HORDE_ONLY,
 				}),
 				{
@@ -3885,20 +3874,24 @@ profession(BLACKSMITHING, {
 					["name"] = "Spiked Titansteel Treads",
 					["recipeID"] = 55375,
 				},
-				applyclassicphase(WRATH_PHASE_THREE, {	-- Sunforged Bracers [Alliance],
-					["recipeID"] = 67096--[[Sunforged Bracers]],
+				applyclassicphase(WRATH_PHASE_THREE, {
+					["name"] = "Sunforged Bracers [Alliance]",
+					["recipeID"] = 67096,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_THREE, {	-- Sunforged Bracers [Horde],
-					["recipeID"] = 67135--[[Sunforged Bracers]],
+				applyclassicphase(WRATH_PHASE_THREE, {
+					["name"] = "Sunforged Bracers [Horde]",
+					["recipeID"] = 67135,
 					["races"] = HORDE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_THREE, {	-- Sunforged Breastplate [Alliance],
-					["recipeID"] = 67095--[[Sunforged Breastplate]],
+				applyclassicphase(WRATH_PHASE_THREE, {
+					["name"] = "Sunforged Breastplate [Alliance]",
+					["recipeID"] = 67095,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_THREE, {	-- Sunforged Breastplate [Horde],
-					["recipeID"] = 67134--[[Sunforged Breastplate]],
+				applyclassicphase(WRATH_PHASE_THREE, {
+					["name"] = "Sunforged Breastplate [Horde]",
+					["recipeID"] = 67134,
 					["races"] = HORDE_ONLY,
 				}),
 				{
@@ -4053,7 +4046,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Sure-Fire Shuriken",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 55202,
 				},
 				{

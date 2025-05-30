@@ -187,18 +187,6 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			ach(1225, {	-- Outland Angler
 				["maps"] = { NAGRAND, TEROKKAR_FOREST, ZANGARMARSH },
 				["timeline"] = { ADDED_3_0_2 },
-				-- #if ANYCLASSIC
-				["sym"] = {{ "achievement_criteria" }},
-				-- #else
-				["g"] = {
-					crit(3623),	-- Brackish Mixed School
-					crit(3624),	-- Bluefish School
-					crit(3625),	-- Mudfish School
-					crit(3626),	-- School of Darter
-					crit(3627),	-- Highland Mixed School
-					crit(3628),	-- Sporefish School
-				},
-				-- #endif
 			}),
 		},
 	})),
@@ -206,18 +194,6 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 		ach(130),	-- Grand Master Fisherman
 		ach(1517, {	-- Northrend Angler
 			["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, HOWLING_FJORD, GRIZZLY_HILLS, CRYSTALSONG_FOREST, SHOLAZAR_BASIN },
-			["g"] = {
-				crit(5278),	-- Borean Man O' War School
-				crit(5279),	-- Deep Sea Monsterbelly School
-				crit(5280),	-- Dragonfin Angelfish School
-				crit(5281),	-- Fangtooth Herring School
-				crit(5282),	-- Glacial Salmon School
-				crit(5283),	-- Glassfin Minnow School
-				crit(5284),	-- Imperial Manta Ray School
-				crit(5285),	-- Moonglow Cuttlefish School
-				crit(5286),	-- Musselback Sculpin School
-				crit(5287),	-- Nettlefish School
-			}
 		}),
 	}))),
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
@@ -238,17 +214,17 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				-- #endif
 			}},
 		}),
+		-- #if BEFORE 5.0.4
 		ach(5852, {	-- Gone Fishin' (H)
 			["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
 			["races"] = HORDE_ONLY,
-			-- #if BEFORE 5.0.4
 			["sym"] = {{"meta_achievement",
 				5850,	-- Fish or Cut Bait: Undercity
 				5849,	-- Fish or Cut Bait: Thunder Bluff
 				5477,	-- Fish or Cut Bait: Orgrimmar
 			}},
-			-- #endif
 		}),
+		-- #endif
 	})),
 	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		ach(6839),	-- Zen Master Fisherman

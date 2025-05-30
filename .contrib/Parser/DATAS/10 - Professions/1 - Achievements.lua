@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+root(ROOTS.Professions, n(ACHIEVEMENTS, {
 	ach(19410, { ["timeline"] = { ADDED_11_0_2 } }),	-- Algari Master of All
 	ach(19515, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2 } }, {	-- Algari Master of Many
 		["sym"] = {{"partial_achievement",19410}},	-- Algari Master of All
@@ -21,11 +21,13 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 	}),
 	ach(10583, { ["timeline"] = { ADDED_7_0_3_LAUNCH } }),	-- Legion Master of All
 	ach(9087, { ["timeline"] = { ADDED_6_0_3_LAUNCH } }),	-- Draenor Master of All
-	ach(7379, { ["timeline"] = { ADDED_5_0_4 } }),			-- Pandaren Master of All
-	ach(7378, {			-- Jack of All Trades
+	applyclassicphase(MOP_PHASE_ONE, ach(7379, {			-- Pandaren Master of All
+		["timeline"] = { ADDED_5_0_4 }
+	})),
+	applyclassicphase(MOP_PHASE_ONE, ach(7378, {			-- Jack of All Trades
 		["timeline"] = { ADDED_5_0_4 },
 		["sym"] = {{"partial_achievement",7379}},	-- Pandaren Master of All
-	}),
+	})),
 	ach(18719, { ["timeline"] = { ADDED_10_1_7 } }),		-- Cataclysmic Master of All
 	ach(18722, { ["timeline"] = { ADDED_10_1_7 } }),		-- Northrend Master of All
 	ach(18721, { ["timeline"] = { ADDED_10_1_7 } }),		-- Outland Master of All
@@ -40,29 +42,29 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 	ach(14329, {	-- Working the Afterlife
 		["timeline"] = { ADDED_9_0_2_LAUNCH },
 	}),
-	ach(12734, {	-- Working in Kul Tiras (A)
+	applyclassicphase(BFA_PHASE_ONE, ach(12734, {	-- Working in Kul Tiras (A)
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_8_0_1_LAUNCH },
-	}),
-	ach(12735, {	-- Working in Zandalar (H)
+	})),
+	applyclassicphase(BFA_PHASE_ONE, ach(12735, {	-- Working in Zandalar (H)
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_8_0_1_LAUNCH },
-	}),
-	ach(10581, {	-- Working the Isles
+	})),
+	applyclassicphase(LEGION_PHASE_ONE, ach(10581, {	-- Working the Isles
 		["timeline"] = { ADDED_7_0_3_LAUNCH },
-	}),
-	ach(9507, {		-- Working in Draenor
+	})),
+	applyclassicphase(WOD_PHASE_ONE, ach(9507, {		-- Working in Draenor
 		["timeline"] = { ADDED_6_0_3_LAUNCH },
-	}),
-	ach(6835, {		-- Working For a Living
+	})),
+	applyclassicphase(MOP_PHASE_ONE, ach(6835, {		-- Working For a Living
 		["timeline"] = { ADDED_5_0_4 },
-	}),
-	ach(4914, {		-- Working In the Heat
+	})),
+	applyclassicphase(CATA_PHASE_ONE, ach(4914, {		-- Working In the Heat
 		["timeline"] = { ADDED_4_0_3_LAUNCH },
-	}),
-	ach(735, {		-- Working In the Cold
+	})),
+	applyclassicphase(WRATH_PHASE_ONE, ach(735, {		-- Working Day and Night / Working In the Cold [BFA]
 		["timeline"] = { ADDED_3_0_3 },
-	}),
+	})),
 	ach(18729, {	-- Working in Hellfire
 		["timeline"] = { ADDED_10_1_7 },
 	}),
@@ -78,34 +80,54 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 	ach(14328, {	-- Professional Shadowlands Master
 		["timeline"] = { ADDED_9_0_2_LAUNCH },
 	}),
-	ach(12731, {	-- Professional Kul Tiran Master (A)
+	applyclassicphase(BFA_PHASE_ONE, ach(12731, {	-- Professional Kul Tiran Master (A)
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_8_0_1_LAUNCH },
-	}),
-	ach(12733, {	-- Professional Zandalari Master (H)
+	})),
+	applyclassicphase(BFA_PHASE_ONE, ach(12733, {	-- Professional Zandalari Master (H)
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_8_0_1_LAUNCH },
-	}),
-	ach(10582, {	-- Professional Legion Master
-		["timeline"] = { ADDED_7_0_3_LAUNCH },
-	}),
-	ach(9464, sharedDataSelf({["timeline"] = { ADDED_6_0_3_LAUNCH }},{		-- Professional Draenor Master
-		title(305),	-- Artisan <Name>
 	})),
-	ach(6830, {		-- Professional Zen Master
+	applyclassicphase(LEGION_PHASE_ONE, ach(10582, {	-- Professional Legion Master
+		["timeline"] = { ADDED_7_0_3_LAUNCH },
+	})),
+	applyclassicphase(WOD_PHASE_ONE, ach(9464, sharedDataSelf({["timeline"] = { ADDED_6_0_3_LAUNCH }},{		-- Professional Draenor Master
+		title(305),	-- Artisan <Name>
+	}))),
+	applyclassicphase(MOP_PHASE_ONE, ach(6830, {		-- Professional Zen Master
 		["timeline"] = { ADDED_5_0_4 },
-	}),
-	ach(4924, {		-- Professional Cataclysmic Master
+	})),
+	applyclassicphase(CATA_PHASE_ONE, ach(4924, {		-- Professional Illustrious Grand Master / Professional Cataclysmic Master [BFA]
 		["timeline"] = { ADDED_4_0_3_LAUNCH },
-	}),
-	ach(734, {		-- Professional Northrend Master
+	})),
+	applyclassicphase(WRATH_PHASE_ONE, ach(734, {	-- Professional Grand Master / Professional Northrend Master [BFA]
 		["timeline"] = { ADDED_3_0_3 },
+	})),
+	applyclassicphase(TBC_PHASE_ONE, ach(733, {	-- Professional Master / Professional Outland Master [BFA]
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			ADDED_2_0_1,
+			-- #else
+			ADDED_3_0_2,
+			-- #endif
+		},
+	})),
+	ach(732, {	-- Professional Artisan / Professional Classic Master [BFA]
+		-- #if NOT ANYCLASSIC
+		["timeline"] = { ADDED_3_0_3 },
+		-- #endif
 	}),
-	ach(733),		-- Professional Outland Master
-	ach(732),		-- Professional Classic Master
-	ach(731),		-- Professional Expert
-	ach(116),		-- Professional Journeyman
-	ach(10580, sharedDataSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 } }, {	-- Heroic Skills to Pay the Bills
+	ach(731, {	-- Professional Expert
+		-- #if NOT ANYCLASSIC
+		["timeline"] = { ADDED_3_0_3 },
+		-- #endif
+	}),
+	ach(116, {	-- Professional Journeyman
+		-- #if NOT ANYCLASSIC
+		["timeline"] = { ADDED_3_0_3 },
+		-- #endif
+	}),
+	applyclassicphase(WOD_PHASE_ONE, ach(10580, {	-- Heroic Skills to Pay the Bills
 		-- Meta Achievement
 		["sym"] = {{"meta_achievement",
 			10600,	-- Legion Archaeologist
@@ -113,8 +135,9 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 			10594,	-- Legion Fisherman
 			10599,	-- Legion Medic
 		}},
+		["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
 	})),
-	ach(9506, sharedDataSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1 } }, {	-- Savage Skills to Pay the Bills
+	applyclassicphase(WOD_PHASE_ONE, ach(9506, {	-- Savage Skills to Pay the Bills
 		-- Meta Achievement
 		["sym"] = {{"meta_achievement",
 			9409,	-- Draenor Archaeologist
@@ -122,8 +145,9 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 			9503,	-- Draenor Fisherman
 			9505,	-- Draenor Medic
 		}},
+		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1 },
 	})),
-	ach(6836, sharedDataSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 } }, {			-- Serious Skills to Pay the Bills
+	applyclassicphase(MOP_PHASE_ONE, ach(6836, {	-- Serious Skills to Pay the Bills
 		-- Meta Achievement
 		["sym"] = {{"meta_achievement",
 			6837,	-- Zen Master Archaeologist
@@ -131,8 +155,9 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 			6839,	-- Zen Master Fisherman
 			6838,	-- Zen Master Medic
 		}},
+		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },
 	})),
-	ach(4915, sharedDataSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1 } }, {	-- More Skills to Pay the Bills
+	applyclassicphase(CATA_PHASE_ONE, ach(4915, {	-- More Skills to Pay the Bills
 		-- Meta Achievement
 		["sym"] = {{"meta_achievement",
 			4923,	-- Illustrious Grand Master Archaeologist
@@ -140,14 +165,16 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 			4917,	-- Cataclysmic Fisherman / Illustrious Grand Master Fisherman
 			4918,	-- Illustrious Grand Master Medic
 		}},
+		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1 },
 	})),
-	ach(730, sharedDataSelf({ ["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1 } }, {			-- Skills to Pay the Bills
+	applyclassicphase(WRATH_PHASE_ONE, ach(730, {	-- Skills to Pay the Bills
 		-- Meta Achievement
 		["sym"] = {{"meta_achievement",
 			125,	-- Northrend Cook / Grand Master Cook
 			130,	-- Northrend Fisherman / Grand Master Fisherman
 			135,	-- Grand Master Medic
 		}},
+		["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1 },
 	})),
 	ach(17412, {	-- Craftsman of the Argent Dawn
 		["timeline"] = { ADDED_10_0_7, REMOVED_10_0_7 },
@@ -200,7 +227,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 		["provider"] = { "i", 132518 },	-- Blingtron's Circuit Design Tutorial
 		["timeline"] = { ADDED_7_0_3 },
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	n(PROFESSIONS, {

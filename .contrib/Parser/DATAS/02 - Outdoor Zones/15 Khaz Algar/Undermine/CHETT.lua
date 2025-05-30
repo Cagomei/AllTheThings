@@ -13,7 +13,7 @@ local CHETT = createHeader({
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
 	m(UNDERMINE, {
 		n(CHETT, bubbleDownSelf({ ["minReputation"] = { FACTION_CARTELS_OF_UNDERMINE, 13 } }, {
-			["description"] = "Once per week you can interact with the C.H.E.T.T. machine to recieve a weekly set of tasks with rewards for completing each one. You can turn in a completed list to C.H.E.T.T. for some valorstones or to your cartel's quartermaster for 500 rep.",
+			["description"] = "Once per week you can interact with the C.H.E.T.T. machine to receive a weekly set of tasks with rewards for completing each one. You can turn in a completed list to C.H.E.T.T. for some valorstones or to your cartel's quartermaster for 500 rep.",
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(41626),	-- C.H.E.T.T. a Look

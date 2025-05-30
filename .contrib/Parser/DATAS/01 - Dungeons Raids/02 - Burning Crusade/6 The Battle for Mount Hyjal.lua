@@ -1060,7 +1060,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				["creatureID"] = 17968,
 				["groups"] = {
 					ach(695, {	-- The Battle for Mount Hyjal
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This achievement can be earned ahead of time by having an item from Archimonde in your bags.
 						["timeline"] = { ADDED_3_0_2 },
+						-- #endif
 					}),
 					ach(5090, {	-- The Battle for Mount Hyjal Guild Run
 						["timeline"] = { ADDED_4_0_3 },

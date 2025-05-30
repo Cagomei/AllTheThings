@@ -752,14 +752,17 @@ end
 end
 settings.Set = function(self, setting, value)
 	RawSettings.General[setting] = value
+	app.HandleEvent("Settings.OnSet","General",setting,value)
 	self:Refresh()
 end
 settings.SetValue = function(self, container, setting, value)
 	RawSettings[container][setting] = value
+	app.HandleEvent("Settings.OnSet",container,setting,value)
 	self:Refresh()
 end
 settings.SetTooltipSetting = function(self, setting, value)
 	RawSettings.Tooltips[setting] = value
+	app.HandleEvent("Settings.OnSet","Tooltips",setting,value)
 	app.WipeSearchCache();
 	self:Refresh()
 end

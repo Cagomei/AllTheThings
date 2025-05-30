@@ -83,10 +83,17 @@ GLYPH_OF_ARCANE_BLAST = r(56991, {	-- Glyph of Arcane Blast
 	["name"] = "Glyph of Arcane Blast",
 	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
+-- #if BEFORE 5.0.4
 GLYPH_OF_ARCANE_EXPLOSION = r(56968, {	-- Glyph of Arcane Explosion
 	["name"] = "Glyph of Arcane Explosion",
-	["timeline"] = { ADDED_3_0_2, DELETED_4_0_1, ADDED_5_0_4, DELETED_7_0_3 },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_1 },
 });
+-- #else
+GLYPH_OF_ARCANE_EXPLOSION = r(115718, {	-- Glyph of Arcane Explosion
+	["name"] = "Glyph of Arcane Explosion",
+	["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
+});
+-- #endif
 GLYPH_OF_ARCANE_INTELLECT_AND_THE_PORCUPINE = r(58303, {	-- Glyph of Arcane Intellect / Glyph of the Porcupine [MOP+]
 	-- #if AFTER MOP
 	["name"] = "Glyph of the Porcupine",

@@ -582,7 +582,7 @@ local function UpdateUpgrades()
 end
 
 -- Returns the different and upgraded version of 't' (via item link/bonuses or 'up' field)
-api.NextUpgrade = function(t)
+local function NextUpgrade(t)
 
 	-- app.PrintDebug("NU:",t.modItemID)
 	-- try basic upgrade logic first (checking 'up' field)
@@ -618,4 +618,30 @@ api.CollectibleAsUpgrade = function(t)
 	return upgrade and not upgrade.collected;
 end
 
+-- Event Handling
 app.AddEventHandler("OnRecalculate_NewSettings", UpdateUpgrades)
+
+app.AddEventHandler("OnLoad", function()
+	local Fill = app.Modules.Fill
+	if not Fill then return end
+
+	local CreateObject = app.__CreateObject
+	Fill.AddFiller("UPGRADE",
+	function(group, FillData)
+		local nextUpgrade = NextUpgrade(group)
+		if not nextUpgrade then return end
+
+		if not nextUpgrade.collected then
+			group.filledUpgrade = true
+		end
+		-- app.PrintDebug("filledUpgrade=",nextUpgrade.modItemID,nextUpgrade.collected,"<",group.modItemID)
+		local o = CreateObject(nextUpgrade)
+		return { o }
+	end,
+	{
+		-- Settings = {
+		-- 	Container = TODO,
+		-- 	Key = TODO,
+		-- }
+	})
+end)

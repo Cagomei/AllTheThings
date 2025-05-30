@@ -269,7 +269,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_1_5, "removed 11.1.5.60822" },	-- Removed May 20, 2025
 			}),
 			mount(1236262, {	-- Shaohao's Sage Serpent
-				["description"] = "Finish the Pandaren Wandering Isle starting zone in |cFFfe040fMoP Classic|r up to leaving the turtle to recieve this mount in Retail.",
+				["description"] = "Finish the Pandaren Wandering Isle starting zone in |cFFfe040fMoP Classic|r up to leaving the turtle to receive this mount in Retail.",
 				["timeline"] = { ADDED_11_1_7, "removed 11.1.7.99999" },	-- Removed July 30th, 2025
 			}),
 		--	i(500001, {    -- The PVE/PVP Banner temporary item -- TEMPLATE

@@ -1032,8 +1032,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["creatureID"] = 15690,
 				["groups"] = {
 					ach(690, {	-- Karazhan
-						-- #if BEFORE WRATH
-						["sourceQuest"] = 9844,	-- A Demonic Presence
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This achievement can be earned ahead of time by having completing 'A Demonic Presence'
+						["timeline"] = { ADDED_3_0_2 },
 						-- #endif
 					}),
 					ach(5084, {	-- Karazhan Guild Run

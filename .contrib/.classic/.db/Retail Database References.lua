@@ -64,6 +64,7 @@
 
 -- PvP
 -- #IMPORT: 08 - PvP\\00 Achievements.lua
+-- #IMPORT: 08 - PvP\\Arena.lua
 -- #IMPORT: 08 - PvP\\Battlegrounds\\
 -- #IMPORT: 08 - PvP\\01 Classic PvP.lua
 -- #IMPORT: 08 - PvP\\02 The Burning Crusade PvP Seasons.lua

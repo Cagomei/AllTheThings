@@ -2771,13 +2771,17 @@ namespace ATT
                         TrackIncorporationData(data, "minReputation", new List<object> { 1271, existingModifierTree.Asset });
                         Objects.Merge(data, "_factions", 1271);
                         break;
-                    // 91 (BETTLE_PET_SPECIES)
+                    // 91 (BATTLE_PET_SPECIES)
                     case 91:
                         // world quest battle pets have 'speciesID' and are sourced under NYI... don't move any of their criteria there
                         if (TryGetSOURCED("speciesID", existingModifierTree.Asset, out HashSet<IDictionary<string, object>> sourcedSpecies)
                             && sourcedSpecies.All(s => IsObtainableData(s)))
                         {
                             Objects.Merge(data, "_species", existingModifierTree.Asset);
+                        }
+                        else if(WagoData.TryGetValue(existingModifierTree.Asset, out BattlePetSpecies battlePetSpecies))
+                        {
+                            Objects.Merge(data, "_npcs", battlePetSpecies.CreatureID);
                         }
                         break;
                     // 95 (FACTION_STANDING)

@@ -257,7 +257,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				["creatureID"] = 25315,
 				["groups"] = {
 					ach(698, {	-- Sunwell Plateau
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This achievement can be earned ahead of time by having an item from KJ in your bags.
 						["timeline"] = { ADDED_3_0_2 },
+						-- #endif
 					}),
 					ach(5092, {	-- Sunwell Plateau Guild Run
 						["timeline"] = { ADDED_4_0_3 },

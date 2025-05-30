@@ -259,9 +259,9 @@ local CLASS = "Item"
 local KEY = "itemID"
 local cache = app.CreateCache("modItemID");
 -- Consolidated function to cache available Item information
-local function RawSetItemInfoFromLink(t, link)
-	-- app.PrintDebug("RawSetLink:=",link)
-	local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(link);
+local function RawSetItemInfoFromLink(t, rawlink)
+	local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(rawlink);
+	-- app.PrintDebug("RawSetLink:=",rawlink,"->",link)
 	if link then
 		--[[ -- Debug Prints
 		local _t, id = cache.GetCached(t);
@@ -280,7 +280,20 @@ local function RawSetItemInfoFromLink(t, link)
 			_t.b = b;
 		end
 		return link;
-	elseif t.CanRetry == nil then
+	end
+	local canretry = t.CanRetry
+	if not canretry then
+		-- somehow another process is activating the CanRetry on this item via another means, so if that's the case ignore the retry
+		-- local nextcanretry = t.CanRetry
+		-- app.PrintDebug("__RawSetItemInfoFromLink.check",t.hash,t.__RawSetItemInfoFromLink,canretry,nextcanretry,GetItemInfoInstant(rawlink))
+		-- check CanRetry again, this will restart the retry timer for this Item now that the actual get item info has been hit
+		if not t.__RawSetItemInfoFromLink then
+			-- this causes situtations where the raw set link is the first attempt and thus will do 2 retries before giving up
+			-- typically only /att list situations... but would be nice to fix properly
+			t.__RawSetItemInfoFromLink = true
+			-- app.PrintDebug("__RawSetItemInfoFromLink.set.stale",t.hash)
+			return
+		end
 		local _t, id = cache.GetCached(t)
 		local itemName = t.baselink or L.ITEM_NAMES[id] or (t.sourceID and L.SOURCE_NAMES and L.SOURCE_NAMES[t.sourceID])
 			or "Item #" .. tostring(id) .. "*";
@@ -289,8 +302,11 @@ local function RawSetItemInfoFromLink(t, link)
 		_t.sourceID = nil;
 		-- save the "name" field in the source group to prevent further requests to the cache
 		t.name = itemName;
-		-- app.PrintDebug("NoItemInfo",app:SearchLink(t))
-		return nil
+		-- app.PrintDebug("NoItemInfo",t.hash)
+		return
+	-- elseif canretry ~= true then
+	-- 	t.__RawSetItemInfoFromLink = true
+	-- 	app.PrintDebug("__RawSetItemInfoFromLink.set.fresh",t.hash)
 	end
 end
 local function default_link(t)
@@ -471,10 +487,7 @@ local itemFields = {
 	end,
 };
 -- Module imports
-itemFields.nextUpgrade = app.Modules.Upgrade.NextUpgrade;
 itemFields.collectibleAsUpgrade = app.Modules.Upgrade.CollectibleAsUpgrade;
-itemFields.catalystResult = app.Modules.Catalyst.ViaCatalyst;
--- itemFields.collectibleAsCatalyst = app.Modules.Catalyst.CollectibleAsCatalyst;
 
 -- This is used for the Grand Commendations unlocking Bonus Reputation
 local ItemWithFactionBonus = {

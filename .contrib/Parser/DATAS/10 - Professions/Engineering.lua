@@ -2580,7 +2580,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Springy Arachnoweave",
-					["timeline"] = { ADDED_3_0_3, REMOVED_4_0_1 },
+					["timeline"] = { ADDED_3_0_3, DELETED_4_0_1 },
 					["recipeID"] = 63765,
 				},
 			},

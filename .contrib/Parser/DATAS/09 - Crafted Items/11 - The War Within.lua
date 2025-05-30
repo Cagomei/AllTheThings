@@ -2602,7 +2602,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222851),	-- Artisan Chef's Hat
 			i(222849),	-- Artisan Enchanter's Hat
 			i(222848),	-- Artisan Fishing Cap
-			i(222847),	-- Artisan Gardening Hat
+			i(222847, {_drop={"requireSkill"},requireSkill=HERBALISM}),	-- Artisan Gardening Hat
 			i(222852),	-- Artisan Tailor's Coat
 			i(222845),	-- Weavercloth Alchemist's Robe
 			i(222846),	-- Weavercloth Chef's Hat

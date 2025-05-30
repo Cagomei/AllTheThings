@@ -1,9 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
--- #if AFTER 3.0.1
 root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, {
-	n(ACHIEVEMENTS, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 		ach(11747, {["timeline"] = {ADDED_7_2_0}}),	-- Merely a Set (Serpentshrine Cavern and The Eye)
 		ach(1287, {		-- Outland Dungeon Hero
 			-- Meta Achievement
@@ -25,6 +24,8 @@ root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, 
 				677,	-- Heroic: The Steamvault
 				670,	-- Heroic: Underbog
 			}},
+			-- CRIEVE NOTE: This achievement can not be earned ahead of time.
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(1284, {		-- Outland Dungeonmaster
 			-- Meta Achievement
@@ -46,6 +47,8 @@ root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, 
 				656,	-- The Steamvault
 				650,	-- Underbog
 			}},
+			-- CRIEVE NOTE: This achievement can not be earned ahead of time.
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(1286, {		-- Outland Raider
 			-- Meta Achievement
@@ -59,6 +62,10 @@ root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, 
 				697,	-- The Black Temple
 				698,	-- Sunwell Plateau
 			}},
+			-- #if NOT ANYCLASSIC
+			-- CRIEVE NOTE: This achievement can be earned ahead of time by completing the criteria for the other achievements.
+			["timeline"] = { ADDED_3_0_2 },
+			-- #endif
 		}),
 		ach(11746, {["timeline"] = {ADDED_7_2_0}}),	-- Outlandish Style (Gruuls' Lair, Karazhan, and Magtheridon's Lair)
 		ach(8293, {	-- Raiding with Leashes II: Attunement Edition
@@ -73,6 +80,5 @@ root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, 
 				i(122116),	-- K'ute (PET!)
 			},
 		}),
-	}),
+	})),
 })));
--- #endif

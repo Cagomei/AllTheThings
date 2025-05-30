@@ -126,6 +126,28 @@ local EventSequence = {
 		"OnRefreshWindows"
 	},
 }
+-- Allows adding an EventSequence entry, preventing any duplication
+app.LinkEventSequence = function(event, followupEvent)
+	if not (event and followupEvent) then
+		app.print("LinkEventSequence needs both event and followupEvent",event,followupEvent)
+		return
+	end
+
+	local triggerEventSequence = EventSequence[event]
+	if not triggerEventSequence then
+		triggerEventSequence = {}
+		EventSequence[event] = triggerEventSequence
+	end
+
+	for i=1,#triggerEventSequence do
+		if triggerEventSequence[i] == followupEvent then
+			app.print("LinkEventSequence duplicate followupEvent defined",event,followupEvent)
+			return
+		end
+	end
+
+	triggerEventSequence[#triggerEventSequence + 1] = followupEvent
+end
 -- Classic has some convoluted refresh sequence handling with coroutines and manual calls to events and data refreshes, so
 -- I don't wanna mess with all that. We just won't link the OnRecalculate to the OnRefreshCollections for Classic --Runaway
 if app.IsRetail then

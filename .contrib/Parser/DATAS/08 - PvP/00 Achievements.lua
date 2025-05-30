@@ -162,33 +162,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(19417, {		-- Brawlroom Blitzer
 		["timeline"] = { ADDED_10_2_0 },
 	}),
-	applyclassicphase(PHASE_TWO, ach(727, {	-- Call in the Cavalry (automated)
-	-- #IF ANYCLASSIC
-	-- @Crieve: This should be automated now
-		["providers"] = {
-			{ "i", 18243 },	-- Black Battlestrider (Original)
-			{ "i", 18247 },	-- Black War Kodo (Original)
-			{ "i", 18244 },	-- Black War Ram (Original)
-			{ "i", 18241 },	-- Black War Steed Bridle (Original)
-			{ "i", 18245 },	-- Horn of the Black War Wolf (Original)
-			{ "i", 18248 },	-- Red Skeletal Warhorse (Original)
-			{ "i", 18242 },	-- Reins of the Black War Tiger (Original)
-			{ "i", 18246 },	-- Whistle of the Black War Raptor (Original)
-			-- #if AFTER TBC
-			{ "i", 29465 },	-- Black Battlestrider
-			{ "i", 29466 },	-- Black War Kodo
-			{ "i", 29467 },	-- Black War Ram
-			{ "i", 29468 },	-- Black War Steed Bridle
-			{ "i", 29469 },	-- Horn of the Black War Wolf
-			{ "i", 29470 },	-- Red Skeletal Warhorse
-			{ "i", 35906 },	-- Reins of the Black War Elekk
-			{ "i", 29471 },	-- Reins of the Black War Tiger
-			{ "i", 34129 },	-- Swift Warstrider
-			{ "i", 29472 },	-- Whistle of the Black War Raptor
-			-- #endif
-		},
-		-- #ENDIF
-	})),
+	applyclassicphase(PHASE_TWO, ach(727)),	-- Call in the Cavalry (automated)
 	applyclassicphase(WRATH_PHASE_ONE, ach(908, {	-- Call to Arms! (Alliance)
 		["timeline"] = { ADDED_3_0_2 },
 		["races"] = ALLIANCE_ONLY,
@@ -512,18 +486,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_6_0_2, REMOVED_8_0_1 },
 		["minReputation"] = { FACTION_VOLJINS_SPEAR, EXALTED },	-- Vol'jin's Spear
 	}),
-	ach(406, {		-- High Five: 1550
-		["timeline"] = { ADDED_3_0_2, REMOVED_6_2_0 },
-	}),
-	ach(407, {		-- High Five: 1750
-		["timeline"] = { ADDED_3_0_2, REMOVED_6_2_0 },
-	}),
-	ach(404, {		-- High Five: 2000
-		["timeline"] = { ADDED_3_0_2, REMOVED_6_2_0 },
-	}),
-	ach(1161, {		-- High Five: 2200
-		["timeline"] = { ADDED_3_0_2, REMOVED_6_2_0 },
-	}),
 	-- #if AFTER 3.0.1
 	ach(443, {		-- High Warlord
 		["races"] = HORDE_ONLY,
@@ -635,9 +597,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_3_0_2 },
 		["races"] = HORDE_ONLY,
 	}),
-	ach(409, {		-- Last Man Standing
-		["timeline"] = { ADDED_3_0_2, REMOVED_6_2_0 },
-	}),
 	-- #if AFTER 3.0.1
 	ach(469, {		-- Legionnaire
 		["races"] = HORDE_ONLY,
@@ -650,7 +609,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 	}),
 	-- #endif
-	ach(19416, {		-- Learning the Ropes
+	ach(19416, {	-- Learning the Ropes
 		["timeline"] = { ADDED_10_2_0 },
 	}),
 	-- #if AFTER 3.0.1
@@ -864,14 +823,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(245, {		-- That Takes Class
 		["sym"] = {{ "achievement_criteria" }},
 		["timeline"] = { ADDED_3_0_2 },
-	}),
-	ach(1174, {		-- The Arena Master
-		["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
-		["g"] = {
-			title(50, {	-- Arena Master <Name>
-				["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
-			}),
-		},
 	}),
 	applyclassicphase(PHASE_TWO, ach(714, {	-- The Conqueror
 		-- #if AFTER 3.0.1

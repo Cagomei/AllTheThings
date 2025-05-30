@@ -424,6 +424,30 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(174664),	-- Set Keystone Map: Operation: Mechagon - Workshop
 			i(175150),	-- Self-Shaping Amber
 			i(175018),	-- Shadowy Rune
+			i(174892),	-- Veteran 7th Legion Shocktroopers Contract
+			i(174901),	-- Veteran Ankoan Tidehunters Contract
+			i(174897),	-- Veteran Bloodfang Stalkers Contract
+			i(174900),	-- Veteran Dark Iron Shadowcasters Contract
+			i(174880),	-- Veteran Darkspear Shaman Contract
+			i(174894),	-- Veteran Darnassus Sentinel Contract
+			i(174893),	-- Veteran Dwarven Rifleman Contract
+			i(174896),	-- Veteran Exodar Peacekeeper Contract
+			i(174881),	-- Veteran Forsaken Dreadguards Contract
+			i(174895),	-- Veteran Gnomeregan Mechano-Tanks Contract
+			i(174883),	-- Veteran Goblin Sappers Contract
+			i(174885),	-- Veteran Highmountain Warbraves Contract
+			i(174884),	-- Veteran Huojin Monks Contract
+			i(174902),	-- Veteran Kul Tiran Marines Contract
+			i(174886),	-- Veteran Mag'har Outriders Contract
+			i(174903),	-- Veteran Mechagnome Spidercrawlers Contract
+			i(174878),	-- Veteran Shattered Hand Specialists Contract
+			i(174882),	-- Veteran Silvermoon Sorceress Contract
+			i(174879),	-- Veteran Tauren Earthshakers Contract
+			i(174898),	-- Veteran Tushui Monks Contract
+			i(174887),	-- Veteran Unshackled Mercenaries Contract
+			i(174899),	-- Veteran Veiled Riftblades Contract
+			i(174889),	-- Veteran Vulpera Sharpshooters Contract
+			i(174888),	-- Veteran Zandalari Wingriders Contract
 			i(171334),	-- Void-Touched Cloth
 			i(175017),	-- Volatile Ember
 		})),
@@ -1166,6 +1190,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(200937),	-- Flavorful Soup Bone
 			i(201423),	-- Hallowed Helm
 			i(200965),	-- Horde Dueling Flag
+			i(202103),	-- Immaculate Sac of Swog Treasures
 			i(201723),	-- Indecipherable Pages
 			i(193054),	-- Luxurious Loop
 			i(201200),	-- Makeshift Totem
@@ -1187,6 +1212,8 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(192696),	-- Third Head's Eye
 			i(201223),	-- Thorn Bracelet
 			i(193447),	-- Thunder Thigh
+			i(202083),	-- Tyler's Test Box
+			i(202104),	-- Weighted Sac of Swog Treasures
 		})),
 
 		-- 10.0.5

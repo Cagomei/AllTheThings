@@ -1177,7 +1177,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["sourceQuestNumRequired"] = 1,
 				}),
 				----- The original ending of the questline where new players got funneled into BfA -----
-				-- After 11.0.2 players recieve Lost Dragonscale and the quest The Dragon Isles Await (65436 [A] / 65435 [H])
+				-- After 11.0.2 players receive Lost Dragonscale and the quest The Dragon Isles Await (65436 [A] / 65435 [H])
 				q(60360, {	-- An Urgent Meeting [H]
 					["sourceQuests"] = { 60359 },	-- Home Is Where the Hearth Is [H]
 					["provider"] = { "n", 168771 },	-- Shuja Grimaxe

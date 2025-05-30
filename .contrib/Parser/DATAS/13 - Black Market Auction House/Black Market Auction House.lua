@@ -45,7 +45,7 @@ root(ROOTS.BlackMarket, {
 			["coord"] = { 20.2, 49.1, VALDRAKKEN },
 		}),
 		-- #ENDIF
-		-- #IF AFTER TWW
+		-- #IF BEFORE MID
 		n(219055, {	-- Madam Goya [Dornogal]
 			["coord"] = { 64.8, 52.7, DORNOGAL },
 		}),

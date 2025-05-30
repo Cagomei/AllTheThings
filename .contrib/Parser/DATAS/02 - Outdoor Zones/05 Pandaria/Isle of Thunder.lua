@@ -587,29 +587,47 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(QUESTS, {
-					q(32505, {	-- The Crumbled Chamberlain
-						["isWeekly"] = true,
-						["g"] = {
-							ach(8105),	-- The Crumble Bundle
+					q(32621, {	-- Lightning Steel
+						["provider"] = { "i", 94721 },	-- Strange Metal Ingot
+						["coord"] = { 57.6, 33.8, ISLE_OF_THUNDER },
+						["requireSkill"] = BLACKSMITHING,
+						["groups"] = {
+							i(94553, {	-- Notes on Lightning Steel
+								i(94568),	-- Plans: Drakefist Hammer, Reborn (RECIPE!)
+								i(94572),	-- Plans: Fireguard, Reborn (RECIPE!)
+								i(94552),	-- Plans: Lightning Steel Ingot (RECIPE!)
+								i(94571),	-- Plans: Lionheart Blade, Reborn (RECIPE!)
+								i(94569),	-- Plans: Lunar Crescent, Reborn (RECIPE!)
+								i(94570),	-- Plans: Planar Edge, Reborn (RECIPE!)
+								i(94567),	-- Plans: Thunder, Reborn (RECIPE!)
+							}),
 						},
 					}),
-					q(32708, {	-- Setting the Trap
-						["coord"] = { 51.4, 46.0, ISLE_OF_THUNDER },
-						["qg"] = 70160,	-- Taran Zhu <Lord of the Shado-Pan>
-					}),
 					q(32707, {	-- Secrets in the Isle of Thunder
-						["coord"] = { 51.4, 46.0, ISLE_OF_THUNDER },
 						["provider"] = { "n", 70160 },	-- Taran Zhu <Lord of the Shado-Pan>
 						["sourceQuests"] = {
 							32709,	-- Allies in the Shadows [Horde]
 							32706,	-- Allies in the Shadows [Alliance]
 						},
+						["coord"] = { 51.4, 46.0, ISLE_OF_THUNDER },
+					}),
+					q(32708, {	-- Setting the Trap
+						["qg"] = 70160,	-- Taran Zhu <Lord of the Shado-Pan>
+						["coord"] = { 51.4, 46.0, ISLE_OF_THUNDER },
+					}),
+					q(32505, {	-- The Crumbled Chamberlain
+						["provider"] = { "o", 218072 },	-- Head of the Chamberlain
+						["isWeekly"] = true,
+						["g"] = {
+							ach(8105),	-- The Crumble Bundle
+							i(94221),	-- Shan'ze Ritual Stone
+						},
 					}),
 					q(32296, {	-- Treasures of the Thunder King
-						["isWeekly"] = true,
-						["cost"] = { { "i", 94222, 1} },	-- 1x Key to the Palace of Lei Shen
 						["qg"] = 70316,	-- Taoshi
+						["cost"] = { { "i", 94222, 1} },	-- 1x Key to the Palace of Lei Shen
 						["_drop"] = { "g" },	-- unnecessary API data
+						["isWeekly"] = true,
 						["g"] = {
 							m(518, {	-- Thunder King's Citadel
 								ach(8106, {				-- In the Hall of the Thunder King

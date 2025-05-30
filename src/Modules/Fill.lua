@@ -31,8 +31,8 @@ if app.IsClassic then return end
 
 
 
-local wipe,pairs,ipairs,rawget,math_floor
-	= wipe,pairs,ipairs,rawget,math.floor
+local wipe,pairs,ipairs,rawget,math_floor,unpack
+	= wipe,pairs,ipairs,rawget,math.floor,unpack
 
 -- App locals
 local SearchForObject, SearchForField, GetRelativeValue, ArrayAppend, AssignChildren
@@ -53,53 +53,6 @@ app.AddEventHandler("OnLoad", function()
 	ForceFillDB = app.ForceFillDB
 end)
 
--- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
-local SkipPurchases = {
-	-- 0 	- (default, never skipped)
-	-- 1 	- (tooltip, skipped unless within tooltip/popout)
-	-- 1.5	- (tooltip root, skipped unless tooltip root or within popout)
-	-- 2 	- (popout, skipped unless within popout)
-	-- 2.5 	- (popout root, skipped unless root of popout)
-	itemID = {
-		[137642] = 2.5,	-- Mark of Honor
-		[21100] = 1,	-- Coin of Ancestry
-		[23247] = 1,	-- Burning Blossom
-		[33226] = 1,	-- Tricky Treat
-		[37829] = 1,	-- Brewfest Prize Token
-		[49927] = 1,	-- Love Token
-	},
-	currencyID = {
-		[515] = 1,		-- Darkmoon Prize Ticket
-		[1166] = 1.5,	-- Timewarped Badge
-		[2778] = 2.5,	-- Bronze
-	},
-	LearnedTypes = {
-		Toy = 1,
-		Recipe = 1,
-		RecipeWithItem = 1,
-		Mount = 1,
-		BattlePet = 1,
-	}
-}
--- TODO: TBD some consolidation of Fillers based on the Root being filled...
--- i.e. if filling MoH or Bronze, we would just remove the PURCHASE Filler from ActiveFillers, and not need to check this for every group
-local function ShouldFillPurchases(group, FillData)
-	local val
-	for key,values in pairs(SkipPurchases) do
-		val = group[key]
-		if val then
-			val = values[val]
-			if not val then return true end
-			if (FillData.SkipLevel or CurrentSkipLevel) < val - (group == FillData.Root and 0.5 or 0) then
-				return
-			end
-		end
-	end
-	return true;
-end
-
--- TODO: allow Modules to define Fill functions and use that for Cost/Upgrade/Catalyst/Reagents?
--- TODO: Settings automatically updated via Modules adding Fill functions
 -- TODO: splitting Fill functions by Fill Source? (Window vs Tooltip)
 
 -- TODO: TBD helper functions move to modules which need them for their Fillers
@@ -161,79 +114,12 @@ end
 local ActiveFillFunctions = {}
 -- TODO: TBD by functions/values provided by the Modules which define the Fillers
 local FillPriority = {
-	"UPGRADE",
-	"CATALYST",
-	"PURCHASE",
 	"SYMLINK",
-	"NPC",
 	"CRAFTED",
 }
 -- TODO: TBD provided by the Modules which define the Fillers
 local FillFunctions = {
-	CATALYST = function(group, FillData)
-		local catalystResult = group.catalystResult;
-		if catalystResult then
-			if not catalystResult.collected then
-				group.filledCatalyst = true;
-			end
-			-- app.PrintDebug("filledCatalyst=",catalystResult.modItemID,catalystResult.collected,"<",group.modItemID)
-			local o = CreateObject(catalystResult);
-			return { o };
-		end
-	end,
-	UPGRADE = function(group, FillData)
-		local nextUpgrade = group.nextUpgrade;
-		if nextUpgrade then
-			if not nextUpgrade.collected then
-				group.filledUpgrade = true;
-			end
-			-- app.PrintDebug("filledUpgrade=",nextUpgrade.modItemID,nextUpgrade.collected,"<",group.modItemID)
-			local o = CreateObject(nextUpgrade);
-			return { o };
-		end
-	end,
-	PURCHASE = function(group, FillData)
-		-- do not fill purchases on certain items, can skip the skip though based on a level
-		if not ShouldFillPurchases(group, FillData) then return end
-
-		-- Certain Collected Types which are NOT the Root of the Fill should not be filled
-		if SkipPurchases.LearnedTypes[group.__type] and group ~= FillData.Root and group.collected then
-			-- app.PrintDebug("Don't Fill purchases for non-Root collected Toy",app:SearchLink(group))
-			return
-		end
-
-		local collectibles = group.costCollectibles;
-		if collectibles and #collectibles > 0 then
-			-- if app.Debugging then
-			-- 	local sourceGroup = app.CreateRawText("RAW COLLECTIBLES", {
-			-- 		["OnUpdate"] = app.AlwaysShowUpdate,
-			-- 		["skipFill"] = true,
-			-- 		["g"] = {},
-			-- 	})
-			-- 	NestObjects(sourceGroup, collectibles, true)
-			-- 	NestObject(group, sourceGroup, nil, 1)
-			-- end
-			local groupHash = group.hash;
-			-- app.PrintDebug("DeterminePurchaseGroups",app:SearchLink(group),"-collectibles",collectibles and #collectibles);
-			local groups = {};
-			local clone;
-			for _,o in ipairs(collectibles) do
-				if o.hash ~= groupHash then
-					-- app.PrintDebug("Purchase @",app:SearchLink(o))
-					clone = CreateObject(o);
-					groups[#groups + 1] = clone
-				end
-			end
-			-- app.PrintDebug("DeterminePurchaseGroups-final",groups and #groups);
-			-- mark this group as no-longer collectible as a cost since its cost collectibles have been determined
-			if #groups > 0 then
-				group.collectibleAsCost = false;
-				group.filledCost = true;
-				group.costTotal = nil;
-			end
-			return groups;
-		end
-	end,
+	-- TODO: Move to Reagents module once added
 	CRAFTED = function(group, FillData)
 		local itemID = group.itemID;
 		local itemRecipes = app.ReagentsDB[itemID];
@@ -313,6 +199,7 @@ local FillFunctions = {
 		end
 		return groups;
 	end,
+	-- TODO: Move to symlink module once added
 	SYMLINK = function(group, FillData)
 		if group.sym then
 			-- app.PrintDebug("DSG-Now",app:SearchLink(group));
@@ -334,7 +221,7 @@ local FillFunctions = {
 	-- Pulls in Common drop content for specific NPCs if any exists
 	-- (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
 	NPC = function(group, FillData)
-		if not FillData.NestNPCData or group.NestNPCDataSkip then return end
+		if group.NestNPCDataSkip then return end
 
 		local npcID = GetNpcIDForDrops(group)
 		if not npcID then return end
@@ -396,11 +283,18 @@ local FillFunctions = {
 	end
 }
 
+local SettingsBasedFillers = {
+	Tooltips = {
+		["NPCData:Nested"] = {"NPC"}
+	}
+}
+
 local function RefreshActiveFillFunctions()
 	local ActiveFillers = #ActiveFillFunctions
 	wipe(ActiveFillFunctions)
 	for i=1,#FillPriority do
 		ActiveFillFunctions[#ActiveFillFunctions + 1] = FillFunctions[FillPriority[i]]
+		-- app.PrintDebug("ActiveFiller",i,ActiveFillFunctions[i])
 	end
 	-- was there a change in fillers?
 	if ActiveFillers ~= #ActiveFillFunctions then
@@ -408,15 +302,63 @@ local function RefreshActiveFillFunctions()
 		-- only one is minilist can rebuild
 	end
 end
-app.AddEventHandler("OnLoad", RefreshActiveFillFunctions)
-app.AddEventHandler("OnSettingsRefreshed", RefreshActiveFillFunctions)
-app.AddEventHandler("Fill.OnAddFiller", RefreshActiveFillFunctions)
-app.AddEventHandler("Fill.ActivateFiller", RefreshActiveFillFunctions)
-app.AddEventHandler("Fill.DeactivateFiller", RefreshActiveFillFunctions)
+local function ToggleFiller(name, active)
+	-- if ever 'false' settings require active fillers, then figure that out
+	if active then
+		api.ActivateFiller(name)
+	else
+		api.DeactivateFiller(name)
+	end
+end
+local function ToggleFillersBySetting(container, key)
+	local check = SettingsBasedFillers[container]
+	if not check then return end
+
+	check = check[key]
+	if not check then return end
+
+	local value = app.Settings:GetValue(container, key)
+	for i=1,#check do
+		ToggleFiller(check[i], value)
+	end
+end
+local function ToggleFillersBySettingValue(container, key, value)
+	local check = SettingsBasedFillers[container]
+	if not check then return end
+
+	check = check[key]
+	if not check then return end
+
+	for i=1,#check do
+		ToggleFiller(check[i], value)
+	end
+end
+app.AddEventHandler("OnStartup", function()
+	-- sync the active fillers with any fillers based on Settings
+	for container,keys in pairs(SettingsBasedFillers) do
+		for key,fillers in pairs(keys) do
+			ToggleFillersBySetting(container, key)
+		end
+	end
+	RefreshActiveFillFunctions()
+
+	-- add a OnSet handler for settings changes later
+	app.AddEventHandler("Settings.OnSet", function(container, key, value)
+		ToggleFillersBySettingValue(container, key, value)
+	end)
+
+	-- add a refresh fillers event
+	app.AddEventHandler("Fill.RefreshFillers", RefreshActiveFillFunctions)
+	-- add event sequences for filler changes later (this ensures that the refresh event is performed via callback)
+	app.LinkEventSequence("Fill.OnAddFiller", "Fill.RefreshFillers")
+	app.LinkEventSequence("Fill.OnActivateFiller", "Fill.RefreshFillers")
+	app.LinkEventSequence("Fill.OnDeactivateFiller", "Fill.RefreshFillers")
+end)
 
 -- TODO: how to handle agnostic Filler priorities?
 -- Allows adding a Filler to the set of FillFunctions
-api.AddFiller = function(name, func)
+-- options.Settings.[Container|Key]
+api.AddFiller = function(name, func, options)
 	if not name then error("Fill.AddFiller - Requires a 'name'") end
 	if not func or type(func) ~= "function" then error("Fill.AddFillter - Requires a 'func' provided as a function which accepts a 'group' and 'FillData'") end
 
@@ -426,10 +368,35 @@ api.AddFiller = function(name, func)
 	FillFunctions[name] = func
 	FillPriority[#FillPriority + 1] = name
 
-	app.HandleEvent("Fill.OnAddFiller")
+	if options then
+		-- linked to a Settings value
+		if options.Settings then
+			local container = options.Settings.Container
+			local key = options.Settings.Key
+			if not container and not key then error("Fill.AddFiller - Requires both options.Settings.Container or options.Settings.Key for options.Settings: "..name) end
+
+			local settingscontainer = SettingsBasedFillers[container]
+			if not settingscontainer then
+				settingscontainer = {}
+				SettingsBasedFillers[container] = settingscontainer
+			end
+
+			local settingskey = settingscontainer[key]
+			if not settingskey then
+				settingskey = {}
+				settingscontainer[key] = settingskey
+			end
+
+			settingskey[#settingskey + 1] = name
+
+			ToggleFiller(name, app.Settings:GetValue(container, key))
+		end
+	end
+
+	app.HandleEvent("Fill.OnAddFiller",name)
 end
 
--- Handles making an existing Filler active
+-- Handles making an existing Filler active, whether or not it is already present within FillPriority
 api.ActivateFiller = function(name)
 	if not name then error("Fill.ActivateFiller - Requires a 'name'") end
 
@@ -444,8 +411,19 @@ api.ActivateFiller = function(name)
 		filler = FillPriority[i]
 	end
 	-- app.PrintDebug("Fill.ActivateFiller.Backup",i,filler)
-	-- already an active filler
-	if not filler then return end
+	-- already an active filler?
+	-- find the Filler index
+	if not filler then
+		i = 1
+		filler = FillPriority[i]
+		while (filler and filler ~= name) do
+			i = i + 1
+			filler = FillPriority[i]
+		end
+		-- app.PrintDebug("Fill.ActivateFiller.Active",i,filler)
+		-- it's already active, so return
+		if filler then return end
+	end
 
 	-- move the filter to the active filter set
 	FillPriority[#FillPriority + 1] = name
@@ -458,17 +436,17 @@ api.ActivateFiller = function(name)
 		filler = FillPriority[i]
 	end
 
-	app.HandleEvent("Fill.ActivateFiller")
+	app.HandleEvent("Fill.OnActivateFiller",name)
 end
 
--- Handles making an existing Filler inactive
+-- Handles making an existing Filler inactive, whether or not it is already present within FillPriority
 api.DeactivateFiller = function(name)
 	if not name then error("Fill.DeactivateFiller - Requires a 'name'") end
 
 	name = name:upper()
 	if not FillFunctions[name] then error("Fill.DeactivateFiller - Filler is not defined: "..name) end
 
-	-- find the Filler index
+	-- find the Filler index if existing
 	for i=1,#FillPriority do
 		if FillPriority[i] == name then
 			-- app.PrintDebug("Fill.DeactivateFiller.Remove",name,i)
@@ -477,24 +455,28 @@ api.DeactivateFiller = function(name)
 		end
 	end
 
-	-- insert the Filler name in the next available negative index
+	-- find the next negative Filler index if not already deactivated
 	local i = -1
-	while (FillPriority[i]) do
+	local filler = FillPriority[i]
+	while (filler and filler ~= name) do
 		i = i - 1
+		filler = FillPriority[i]
 	end
-	-- app.PrintDebug("Fill.DeactivateFiller.Backup",i)
-	FillPriority[i] = name
-
-	app.HandleEvent("Fill.DeactivateFiller")
+	if not filler then
+		-- app.PrintDebug("Fill.DeactivateFiller.Backup",i,name)
+		FillPriority[i] = name
+		app.HandleEvent("Fill.OnDeactivateFiller",name)
+	end
 end
 
 local function FillGroupDirect(group, FillData, doDGU)
 	local ignoreSkip = group.sym or group.headerID or group.classID
-	local groups = {}
-	-- TODO compare performance with table assigns and then unpack into single arrayappend, but probably worse?
+	local groups, temp = {}, {}
+	-- Unpack & single Append seems to typically be about 30% faster than repeat Append
 	for i=1,#ActiveFillFunctions do
-		ArrayAppend(groups, ActiveFillFunctions[i](group, FillData))
+		temp[#temp + 1] = ActiveFillFunctions[i](group, FillData)
 	end
+	ArrayAppend(groups, unpack(temp))
 
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);
@@ -631,7 +613,6 @@ local FillGroups = function(group)
 		NextLayer = {},
 		-- CurrentLayer = 0,	-- debugging
 		InWindow = groupWindow and true or nil,
-		NestNPCData = app.Settings:GetTooltipSetting("NPCData:Nested"),
 		SkipLevel = app.GetSkipLevel(),
 		Root = group,
 		FillRecipes = group.recipeID or app.ReagentsDB[group.itemID or 0],

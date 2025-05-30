@@ -27,6 +27,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				645,	-- Scholomance
 				646,	-- Stratholme
 			}},
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(1285, {		-- Classic Raider
 			-- Meta Achievement
@@ -36,6 +37,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				687,	-- Temple of Ahn'Qiraj
 				689,	-- Ruins of Ahn'Qiraj
 			}},
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(7934, {	-- Raiding with Leashes
 			["timeline"] = { ADDED_5_1_0 },

@@ -55,12 +55,12 @@ root(ROOTS.Zones, {
 		ach(32, {		-- 2000 Quests Completed
 			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(978, {		-- 3000 Quests Completed
+		applyclassicphase(WRATH_PHASE_ONE, ach(978, {		-- 3000 Quests Completed
 			["timeline"] = { ADDED_3_0_2 },
 			["g"] = {
 				title(42),		-- <Name> the Seeker
 			},
-		}),
+		})),
 		ach(11126, {	-- 50 World Quests Completed
 			["timeline"] = { ADDED_7_0_3 },
 		}),
@@ -1257,7 +1257,7 @@ root(ROOTS.Zones, {
 				}),
 			},
 		}))),
-		ach(2556, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {	-- Pest Control
+		applyclassicphase(WRATH_PHASE_ONE, ach(2556, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {	-- Pest Control
 			crit(9364),	-- Larva (Naxxramas, Ghostlands)
 			crit(9366),	-- Water Snake (Orgrimmar, Northern Stranglethorn, Durotar, Twilight Highlands)
 			crit(9372),	-- Spider (Eastern Plaguelands, Gilneas, Winterspring, The Hinterlands, Zul'Aman, Drak'Tharon Keep, Ahn'kahet: The Old Kingdom, Icecrown Citadel, Teldrassil, Utgarde Pinnacle, Dustwallow Marsh, Sethekk Halls, The Culling of Stratholme, Pit of Saron, Elwynn Forest and Sunken Temple)
@@ -1276,7 +1276,7 @@ root(ROOTS.Zones, {
 			crit(9361),	-- Fire Beetle (Mount Hyjal, Searing Gorge, Blackrock Mountain, Blasted Lands, Un'Goro Crater)
 			crit(9363),	-- Gold Beetle (Halls of Stone, Badlands, Tanaris, Halls of Lightning)
 			crit(9368),	-- Rat (Ashenvale, Dire Maul, The Lost Isles, Gilneas, Loch Modan, The Deadmines, Stormwind City, Arathi Highlands, Darkshore, Nagrand, Terokkar Forest, Scholomance, Tirisfal Glades, Howling Fjord, The Cape of Stranglethorn, The Culling of Stratholme, Azshara, Desolace, Gilneas City, Maraudon, Sunken Temple and The Hinterlands)
-		})),
+		}))),
 		ach(5518, bubbleDownSelf({["timeline"] = { ADDED_4_0_3_LAUNCH } }, {	-- Stood in the Fire
 			-- #IF AFTER MOP
 			["description"] = "Achievement can be completed in Dragon Soul.",
@@ -1926,6 +1926,9 @@ root(ROOTS.Zones, {
 				}),
 				crit(42349, {
 					["_quests"] = 51431,	-- Soul Goliath
+				}),
+				crit(42348, {
+					["_quests"] = 51433,	-- Matron Morana
 				}),
 			},
 		}),

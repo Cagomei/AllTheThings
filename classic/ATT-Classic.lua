@@ -2232,7 +2232,7 @@ local linkFromSpellID = function(t)
 	return link;
 end;
 local nameFromSpellID = function(t)
-	return app.GetSpellName(t.spellID) or GetSpellLink(t.spellID) or RETRIEVING_DATA;
+	return app.GetSpellName(t.spellID) or ("Invalid Spell " .. t.spellID) or GetSpellLink(t.spellID) or RETRIEVING_DATA;
 end;
 local spellFields = {
 	CACHE = function() return "Spells" end,

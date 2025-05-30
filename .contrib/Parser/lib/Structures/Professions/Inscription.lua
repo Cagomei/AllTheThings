@@ -128,7 +128,8 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		-- #if BEFORE WOD
 		-- These Recipes changed from trainer to Research (and expansion) with WoD revamp
 		r(56994, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Aimed Shot / Glyph of Aspects[MOP+]
-		r(56968, {["timeline"]={ADDED_3_0_2,DELETED_4_0_1,ADDED_5_0_4,DELETED_7_0_3}}),	-- Glyph of Arcane Explosion
+		r(56968, {["timeline"]={ADDED_3_0_2,DELETED_4_0_1}}),	-- Glyph of Arcane Explosion
+		r(115718, {["timeline"]={ADDED_5_0_4,DELETED_7_0_3}}),	-- Glyph of Arcane Explosion [MOP+]
 		r(56995, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
 		r(57210, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Bone Shield / Glyph of Icebound Fortitude[MOP+]
 		r(57000, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Deterrence

@@ -86,6 +86,12 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(169832),	-- The Infinity Tube
 			i(169575),	-- Worthless data
 		})),
+
+		-- 8.3.0
+		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
+			-- 8.3.0.32712
+			i(175057),	-- H'partho's Whistle
+		})),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1

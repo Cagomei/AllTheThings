@@ -186,13 +186,30 @@ app.AddEventHandler("OnLoad", function()
 	app.RegisterSymlinkSubroutine("catalyst_select_proper_tier_item", catalyst_select_proper_tier_item)
 end)
 
--- Returns the different and upgraded version of 't' (via item link/bonuses or 'up' field)
-api.ViaCatalyst = function(t)
+app.AddEventHandler("OnLoad", function()
+	local Fill = app.Modules.Fill
+	if not Fill then return end
 
-	-- app.PrintDebug("NU:",t.modItemID)
-	local cata = t._cata or GetCatalyst(t);
-	if cata then return cata end
-end
+	local CreateObject = app.__CreateObject
+	Fill.AddFiller("CATALYST",
+	function(t, FillData)
+		local catalystResult = t._cata or GetCatalyst(t)
+		if not catalystResult then return end
+
+		if not catalystResult.collected then
+			t.filledCatalyst = true
+		end
+		-- app.PrintDebug("filledCatalyst=",catalystResult.modItemID,catalystResult.collected,"<",t.modItemID)
+		local o = CreateObject(catalystResult)
+		return { o };
+	end,
+	{
+		-- Settings = {
+		-- 	Container = TODO,
+		-- 	Key = TODO,
+		-- }
+	})
+end)
 
 -- TODO: some way to fill AccountMode/ItemUnbound Catalyst results. Since this typically only happens within Tooltips (other than Item link popouts)
 -- we can dynamically add the extra Fill operation into the Fill sequence based on the Fill Source?? and also only when necessary based on Settings

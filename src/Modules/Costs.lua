@@ -955,3 +955,104 @@ end
 
 app.AddEventHandler("OnNewPopoutGroup", BuildCost)
 app.AddEventHandler("OnNewPopoutGroup", BuildTotalCost)
+
+-- Filler
+-- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
+local SkipPurchases = {
+	-- 0 	- (default, never skipped)
+	-- 1 	- (tooltip, skipped unless within tooltip/popout)
+	-- 1.5	- (tooltip root, skipped unless tooltip root or within popout)
+	-- 2 	- (popout, skipped unless within popout)
+	-- 2.5 	- (popout root, skipped unless root of popout)
+	itemID = {
+		[137642] = 2.5,	-- Mark of Honor
+		[21100] = 1,	-- Coin of Ancestry
+		[23247] = 1,	-- Burning Blossom
+		[33226] = 1,	-- Tricky Treat
+		[37829] = 1,	-- Brewfest Prize Token
+		[49927] = 1,	-- Love Token
+	},
+	currencyID = {
+		[515] = 1,		-- Darkmoon Prize Ticket
+		[1166] = 1.5,	-- Timewarped Badge
+		[2778] = 2.5,	-- Bronze
+	},
+	LearnedTypes = {
+		Toy = 1,
+		Recipe = 1,
+		RecipeWithItem = 1,
+		Mount = 1,
+		BattlePet = 1,
+	}
+}
+-- TODO: TBD some consolidation of Fillers based on the Root being filled...
+-- i.e. if filling MoH or Bronze, we would just remove the PURCHASE Filler from ActiveFillers, and not need to check this for every group
+local function ShouldFillPurchases(group, FillData)
+	local val
+	for key,values in pairs(SkipPurchases) do
+		val = group[key]
+		if val then
+			val = values[val]
+			if not val then return true end
+			if (FillData.SkipLevel or 0) < val - (group == FillData.Root and 0.5 or 0) then
+				return
+			end
+		end
+	end
+	return true;
+end
+app.AddEventHandler("OnLoad", function()
+	local Fill = app.Modules.Fill
+	if not Fill then return end
+
+	local CreateObject = app.__CreateObject
+	Fill.AddFiller("PURCHASE",
+	function(group, FillData)
+		-- do not fill purchases on certain items, can skip the skip though based on a level
+		if not ShouldFillPurchases(group, FillData) then return end
+
+		-- Certain Collected Types which are NOT the Root of the Fill should not be filled
+		if SkipPurchases.LearnedTypes[group.__type] and group ~= FillData.Root and group.collected then
+			-- app.PrintDebug("Don't Fill purchases for non-Root collected Toy",app:SearchLink(group))
+			return
+		end
+
+		local collectibles = group.costCollectibles;
+		if collectibles and #collectibles > 0 then
+			-- if app.Debugging then
+			-- 	local sourceGroup = app.CreateRawText("RAW COLLECTIBLES", {
+			-- 		["OnUpdate"] = app.AlwaysShowUpdate,
+			-- 		["skipFill"] = true,
+			-- 		["g"] = {},
+			-- 	})
+			-- 	NestObjects(sourceGroup, collectibles, true)
+			-- 	NestObject(group, sourceGroup, nil, 1)
+			-- end
+			local groupHash = group.hash;
+			-- app.PrintDebug("DeterminePurchaseGroups",app:SearchLink(group),"-collectibles",collectibles and #collectibles);
+			local groups = {};
+			local clone;
+			for _,o in ipairs(collectibles) do
+				if o.hash ~= groupHash then
+					-- app.PrintDebug("Purchase @",app:SearchLink(o))
+					clone = CreateObject(o);
+					groups[#groups + 1] = clone
+				end
+			end
+			-- app.PrintDebug("DeterminePurchaseGroups-final",groups and #groups);
+			-- mark this group as no-longer collectible as a cost since its cost collectibles have been determined
+			if #groups > 0 then
+				group.collectibleAsCost = false;
+				group.filledCost = true;
+				group.costTotal = nil;
+			end
+			return groups;
+		end
+	end,
+	{
+		-- Settings = {
+		-- 	Container = TODO,
+		-- 	Key = TODO,
+		-- }
+	})
+end)

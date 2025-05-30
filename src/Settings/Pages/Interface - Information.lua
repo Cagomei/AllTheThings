@@ -14,6 +14,7 @@ local GetRealmName = GetRealmName
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemCount = app.WOWAPI.GetItemCount;
 local GetSpellName = app.WOWAPI.GetSpellName;
+local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 local IsQuestFlaggedCompletedOnAccount = app.WOWAPI.IsQuestFlaggedCompletedOnAccount;
 
 -- Settings: Interface Page
@@ -62,11 +63,22 @@ local ConversionMethods = setmetatable({
 	awp = function(val) return Colorize(GetPatchString(val), app.Colors.AddedWithPatch) end,
 	rwp = function(val) return Colorize(GetPatchString(val), app.Colors.RemovedWithPatch) end,
 	spellID = function(spellID, reference)
+		local name = tostring(spellID);
 		if app.Settings:GetTooltipSetting("spellName") then
-			return tostring(spellID) .. " (" .. (app.GetSpellName(spellID, reference.rank) or "??") .. ")";
-		else
-			return tostring(spellID);
+			name = name .. " (" .. (app.GetSpellName(spellID, reference.rank) or "??") .. ")";
 		end
+		return name;
+	end,
+	spellIDAndIcon = function(spellID, reference)
+		local name = tostring(spellID);
+		if app.Settings:GetTooltipSetting("spellName") then
+			name = name .. " (" .. (app.GetSpellName(spellID, reference.rank) or "??") .. ")";
+		end
+		local icon = GetSpellIcon(spellID);
+		if icon then
+			name = "|T" .. icon .. ":0|t" .. name;
+		end
+		return name;
 	end,
 	creatureName = function(creatureID, reference)
 		if app.Settings:GetTooltipSetting("creatureID") then
@@ -127,7 +139,7 @@ ConversionMethods.provider = function(provider, reference)
 	elseif providerType == "i" then
 		return ConversionMethods.itemNameAndIcon(providerID, reference);
 	elseif providerType == "s" then
-		return ConversionMethods.spellID(providerID, reference);
+		return ConversionMethods.spellIDAndIcon(providerID, reference);
 	end
 	return UNKNOWN;
 end;
