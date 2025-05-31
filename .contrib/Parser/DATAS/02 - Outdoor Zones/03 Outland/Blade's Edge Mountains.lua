@@ -1532,10 +1532,13 @@ root(ROOTS.Zones, {
 								["provider"] = { "i", 31656 },	-- Lesser Nether Drake Spirit
 								["cr"] = 21004,	-- Lesser Nether Drake
 							}),
+							i(31437),	-- Medicinal Drake Essence
 							i(31712),	-- Mok'Nathal Champion's Shoulderguards
 							i(31711),	-- Nether-Empowered Footgear
 							i(31714),	-- Nether Drake Wristguards
 							i(31713),	-- Ritualist's Helm
+							--
+							i(31663),	-- Spirit Calling Totems (QI!)
 						},
 					}),
 					q(10511, {	-- Strange Brew
@@ -2108,7 +2111,13 @@ root(ROOTS.Zones, {
 							i(31441),	-- Clocktock's Jumpers
 							i(31440),	-- Devolved Drake Girdle
 							i(31438),	-- Fizit's Mantle of Drake Hunting
+							i(31437),	-- Medicinal Drake Essence
 							i(31439),	-- Precise Gloves of Alacrity
+							--
+							i(30782),	-- Adolescent Nether Drake Essence (QI!)
+							i(30783),	-- Mature Nether Drake Essence (QI!)
+							i(30743),	-- Proto-Nether Drake Essence (QI!)
+							i(30742),	-- Temporal Phase Modulator (QI!)
 						},
 					}),
 					q(10747, {	-- Whelps of the Wyrmcult

@@ -148,12 +148,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		filter(REAGENTS, {
 			i(12360),	-- Arcanite Bar
 			i(6370),	-- Blackmouth Oil
-			i(7068),	-- Elemental Fire
-			i(7082),	-- Essence of Air
-			i(7076),	-- Essence of Earth
-			i(7078),	-- Essence of Fire
-			i(7080),	-- Essence of Water
-			i(12808),	-- Essence of Undeath
 			i(6371),	-- Fire Oil
 			i(3829),	-- Frost Oil
 			i(9210),	-- Ghost Dye
@@ -170,7 +164,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { ADDED_1_15_1 },
 			})),
 			-- #endif
-			i(12803),	-- Living Essence
 			i(3824, {["timeline"] = {REMOVED_4_0_3, ADDED_4_1_0}}),	-- Shadow Oil
 			i(13423),	-- Stonescale Oil
 			i(6037),	-- Truesilver Bar

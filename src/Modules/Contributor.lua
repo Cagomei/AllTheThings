@@ -127,6 +127,7 @@ local MapPrecisionOverrides = {
 	[1699] = 3,	-- Sinfall
 	[1700] = 3,	-- Sinfall
 	[1701] = 2,	-- The Trunk
+	[1701] = 2,	-- The Roots
 	[1912] = 10,	-- The Runecarver's Oubliette
 	[2328] = 3,	-- The Proscenium
 }
@@ -1026,6 +1027,7 @@ MobileDB.GameObject = {
 	[382118] = true,	-- Dragonscale Expedition Flag
 	[382120] = true,	-- Dragonscale Expedition Flag
 	[382284] = true,	-- Mature Gift of the Grove [Dragon Isle Resources]
+	[382299] = true,	-- Sundered Flame Supply Crate [Dragon Isle Resources]
 	[383732] = true,	-- Tuskarr Tacklebox
 	[383733] = true,	-- Disturbed Dirt
 	[383734] = true,	-- Disturbed Dirt

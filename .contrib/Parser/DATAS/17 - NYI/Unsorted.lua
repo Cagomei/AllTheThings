@@ -370,11 +370,9 @@ root(ROOTS.Unsorted, {
 				i(235284),	-- Echo of N'zoth
 				i(235285),	-- Echo of N'zoth
 				-- Trinkets?
-				i(236914),	-- Unbound Vision Journal
 				i(236915),	-- Book of Dark Visions
 				i(236917),	-- Dark Dreamer's Talisman
 				i(236918),	-- Pulsating Void Disk
-				i(236919),	-- Void Spike
 			}),
 			n(SPECIAL, {	-- Duos
 				-- Hellfire Ramprats (didnt make it)

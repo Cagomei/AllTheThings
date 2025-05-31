@@ -3958,12 +3958,312 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 	}),
 	filter(REAGENTS, {
 		-- Elemental reagents:
+			-- Air:
+		i(7069, {	-- Elemental Air
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 52.0, 50.0, ARATHI_HIGHLANDS },	-- Circle of Outer Binding
+				{ 30.0, 78.0, DESOLACE },	-- Sar'theris Strand, east of
+				{ 53.0, 86.0, DESOLACE },	-- Mannoroc Coven, south of
+				{ 62.0, 73.0, DESOLACE },	-- Mannoroc Coven, east of
+				{ 61.0, 50.0, DESOLACE },	-- Kodo Graveyard, northeast of
+				{ 44.0, 52.0, DESOLACE },	-- Kodo Graveyard, northwest of
+				{ 50.0, 32.0, DESOLACE },	-- Northwestern Desolace
+				{ 32.0, 72.0, TANARIS },	-- Southwestern Tanaris
+				{ 46.0, 72.0, TANARIS },	-- Southern Tanaris
+				{ 32.0, 16.0, SILITHUS },	-- The Crystal Vale, east of
+				{ 29.0, 25.0, SILITHUS },	-- The Crystal Vale, southeast of
+				{ 20.0, 25.0, SILITHUS },	-- The Crystal Vale, south of
+				-- #else
+				{ 46.4, 52.1, ARATHI_HIGHLANDS },	-- Circle of Outer Binding
+				{ 44.7, 43.0, DESOLACE },	-- Cenarion Wildlands, west of
+				{ 37.7, 17.4, SILITHUS },	-- The Crystal Vale, east of
+				{ 27.9, 25.5, SILITHUS },	-- The Crystal Vale, south of
+				-- #endif
+				{ 44.9, 44.8, TANARIS },	-- Abyssal Sands
+			},
+			["crs"] = {
+				11745,	-- Cyclone Warrior
+				11744,	-- Dust Stormer
+				8667,	-- Gusting Vortex
+				2762,	-- Thundering Exile
+				11576,	-- Whirlwind Ripper
+				11578,	-- Whirlwind Shredder
+				11577,	-- Whirlwind Stormwalker
+				-- #if BEFORE 4.0.3
+				9397,	-- Living Storm
+				14455,	-- Whirling Invader
+				-- #endif
+			},
+		}),
+		i(7081, {	-- Breath of Wind
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 32.0, 72.0, TANARIS },	-- Southwestern Tanaris
+				{ 46.0, 72.0, TANARIS },	-- Southern Tanaris
+				{ 32.0, 16.0, SILITHUS },	-- The Crystal Vale, east of
+				{ 29.0, 25.0, SILITHUS },	-- The Crystal Vale, southeast of
+				{ 20.0, 25.0, SILITHUS },	-- The Crystal Vale, south of
+				-- #else
+				{ 46.4, 52.1, ARATHI_HIGHLANDS },	-- Circle of Outer Binding
+				{ 44.7, 43.0, DESOLACE },	-- Cenarion Wildlands, west of
+				{ 37.7, 17.4, SILITHUS },	-- The Crystal Vale, east of
+				{ 27.9, 25.5, SILITHUS },	-- The Crystal Vale, south of
+				-- #endif
+				{ 44.9, 44.8, TANARIS },	-- Abyssal Sands
+			},
+			["crs"] = {
+				11745,	-- Cyclone Warrior
+				11744,	-- Dust Stormer
+				8667,	-- Gusting Vortex
+				-- #if BEFORE 4.0.3
+				9397,	-- Living Storm
+				14455,	-- Whirling Invader
+				-- #else
+				2762,	-- Thundering Exile
+				11576,	-- Whirlwind Ripper
+				11578,	-- Whirlwind Shredder
+				11577,	-- Whirlwind Stormwalker
+				-- #endif
+			},
+			-- #if AFTER 4.0.3
+			["description"] = "Silithus is the best place to farm these in terms of mob density and drop rate.",
+			-- #endif
+		}),
+		i(7082, {	-- Essence of Air
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 32.0, 16.0, SILITHUS },	-- The Crystal Vale, east of
+				{ 29.0, 25.0, SILITHUS },	-- The Crystal Vale, southeast of
+				{ 20.0, 25.0, SILITHUS },	-- The Crystal Vale, south of
+				-- #else
+				{ 37.7, 17.4, SILITHUS },	-- The Crystal Vale, east of
+				{ 27.9, 25.5, SILITHUS },	-- The Crystal Vale, south of
+				-- #endif
+			},
+			["crs"] = {
+				11745,	-- Cyclone Warrior
+				11744,	-- Dust Stormer
+				-- #if BEFORE 4.0.3
+				14455,	-- Whirling Invader
+				-- #endif
+				-- #if AFTER TBC
+				17158,	-- Dust Howler
+				17160,	-- Living Cyclone
+				17159,	-- Storm Rager
+				22310,	-- Storming Wind-Ripper
+				-- #endif
+			},
+			-- #if AFTER TBC
+			["description"] = "If there is competition about spawns in Silithus, Nagrand in the second best option where air elementals can be found almost everywhere.",
+			["maps"] = { NAGRAND },
+			-- #endif
+		}),
+			-- Earth:
+		i(7067, {	-- Elemental Earth
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 36.0, 57.0, ARATHI_HIGHLANDS },	-- Circle of Inner Binding
+				{ 54.0, 82.0, BADLANDS },	-- Eastern shelf, southside
+				{ 42.0, 78.0, BADLANDS },	-- Middle shelf, southside
+				{ 9.0, 80.0, BADLANDS },	-- Southwest side
+				{ 18.0, 41.0, BADLANDS },	-- Northwest side
+				{ 65.0, 27.0, BURNING_STEPPES },	-- Flame Crest
+				{ 37.0, 60.0, BURNING_STEPPES },	-- Black Tooth Hovel, west of
+				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				{ 48.0, 48.0, TANARIS },	-- Tanaris Heights
+				{ 49.0, 25.0, TANARIS },	-- Tanaris North
+				-- #else
+				{ 29.9, 59.7, ARATHI_HIGHLANDS },	-- Circle of Inner Binding
+				{ 32.5, 53.8, BADLANDS },	-- Scar of the Worldbreaker
+				{ 18.2, 44.0, BURNING_STEPPES },	-- Flamestar Post, north of
+				{ 47.6, 81.0, SOUTHERN_BARRENS },	-- Bael Modan, north of
+				{ 72.1, 78.4, STONETALON_MOUNTAINS },	-- The Deep Reaches (Alliance entrance)
+				{ 66.4, 60.6, STONETALON_MOUNTAINS },	-- The Deep Reaches (Horde entrance)
+				{ 59.6, 59.3, WINTERSPRING },	-- Beryl Egress, north of
+				-- #endif
+				{ 62.3, 46.8, BURNING_STEPPES },	-- Valley of Ashes
+				{ 31.4, 14.0, SILITHUS },	-- The Crystal Vale
+			},
+			["crs"] = {
+				11747,	-- Desert Rager
+				11746,	-- Desert Rumbler
+				7032,	-- Greater Obsidian Elemental
+				7031,	-- Obsidian Elemental
+				92,	-- Rock Elemental
+				2592,	-- Rumbling Exile
+				-- #if BEFORE 4.0.3
+				2791,	-- Enraged Rock Elemental
+				2736,	-- Greater Rock Elemental
+				9396,	-- Ground Pounder
+				7135,	-- Infernal Bodyguard
+				7136,	-- Infernal Sentry
+				5465,	-- Land Rager
+				2735,	-- Lesser Rock Elemental
+				-- #else
+				37553,	-- Disturbed Earth elemental
+				48960,	-- Frostshard Rumbler
+				41993,	-- Raging Earth Elemental
+				-- #endif
+			},
+			["maps"] = {
+				MOLTEN_CORE,
+			},
+		}),
+		i(7075, {	-- Core of Earth
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 65.0, 27.0, BURNING_STEPPES },	-- Flame Crest
+				{ 37.0, 60.0, BURNING_STEPPES },	-- Black Tooth Hovel, west of
+				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				{ 48.0, 48.0, TANARIS },	-- Tanaris Heights
+				{ 49.0, 25.0, TANARIS },	-- Tanaris North
+				-- #else
+				{ 32.5, 53.8, BADLANDS },	-- Scar of the Worldbreaker
+				{ 18.2, 44.0, BURNING_STEPPES },	-- Flamestar Post, north of
+				{ 59.6, 59.3, WINTERSPRING },	-- Beryl Egress, north of
+				-- #endif
+				{ 62.3, 46.8, BURNING_STEPPES },	-- Valley of Ashes
+				{ 31.4, 14.0, SILITHUS },	-- The Crystal Vale
+			},
+			["crs"] = {
+				11747,	-- Desert Rager
+				11746,	-- Desert Rumbler
+				7032,	-- Greater Obsidian Elemental
+				7031,	-- Obsidian Elemental
+				-- #if BEFORE 4.0.3
+				9396,	-- Ground Pounder
+				7135,	-- Infernal Bodyguard
+				7136,	-- Infernal Sentry
+				5465,	-- Land Rager
+				-- #else
+				48960,	-- Frostshard Rumbler
+				92,	-- Rock Elemental
+				-- #endif
+			},
+			["maps"] = {
+				MOLTEN_CORE,
+			},
+		}),
+		i(7076, {	-- Essence of Earth
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 65.0, 27.0, BURNING_STEPPES },	-- Flame Crest
+				{ 37.0, 60.0, BURNING_STEPPES },	-- Black Tooth Hovel, west of
+				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				-- #else
+				{ 18.2, 44.0, BURNING_STEPPES },	-- Flamestar Post, north of
+				{ 59.6, 59.3, WINTERSPRING },	-- Beryl Egress, north of
+				-- #endif
+				{ 62.3, 46.8, BURNING_STEPPES },	-- Valley of Ashes
+				{ 31.4, 14.0, SILITHUS },	-- The Crystal Vale
+			},
+			["crs"] = {
+				11747,	-- Desert Rager
+				11746,	-- Desert Rumbler
+				7032,	-- Greater Obsidian Elemental
+				7031,	-- Obsidian Elemental
+				-- #if BEFORE 4.0.3
+				7135,	-- Infernal Bodyguard
+				7136,	-- Infernal Sentry
+				-- #else
+				48960,	-- Frostshard Rumbler
+				-- #endif
+			},
+			["maps"] = {
+				MOLTEN_CORE,
+			},
+			["providers"] = {
+				{ "o", 181069 },	-- Large Obsidian Chunk
+				{ "o", 181068 },	-- Small Obsidian Chunk
+			},
+		}),
+			-- Fire:
+		i(7068, {	-- Elemental Fire
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 25.0, 30.0, ARATHI_HIGHLANDS },	-- Circle of West Binding
+				{ 34.0, 64.0, STONETALON_MOUNTAINS },	-- The Charred Vale
+				-- #else
+				{ 18.8, 30.7, ARATHI_HIGHLANDS },	-- Circle of West Binding
+				-- #endif
+				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				{ 51.7, 50.7, UNGORO_CRATER },	-- Fire Plum Ridge
+			},
+			["crs"] = {
+				5850,	-- Blazing Elemental
+				2760,	-- Burning Exile
+				9879,	-- Entropic Horror
+				5852,	-- Inferno Elemental
+				6521,	-- Living Blaze
+				6520,	-- Scorching Elemental
+				-- #if BEFORE 4.0.3
+				4038,	-- Burning Destroyer
+				4037,	-- Burning Ravager
+				9878,	-- Entropic Beast
+				4036,	-- Rogue Flame Spirit
+				-- #endif
+			},
+			["maps"] = {
+				BLACKROCK_DEPTHS,
+				MOLTEN_CORE,
+				SEARING_GORGE,
+			},
+		}),
+		i(7077, {	-- Hearth of Fire
+			["coords"] = {
+				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				{ 51.7, 50.7, UNGORO_CRATER },	-- Fire Plum Ridge
+			},
+			["crs"] = {
+				5850,	-- Blazing Elemental
+				9879,	-- Entropic Horror
+				5852,	-- Inferno Elemental
+				6521,	-- Living Blaze
+				6520,	-- Scorching Elemental
+				-- #if BEFORE 4.0.3
+				9878,	-- Entropic Beast
+				-- #endif
+			},
+			["maps"] = {
+				BLACKROCK_DEPTHS,
+				MOLTEN_CORE,
+				SEARING_GORGE,
+			},
+		}),
+		i(7078, {	-- Essence of Fire
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				-- #endif
+				{ 51.7, 50.7, UNGORO_CRATER },	-- Fire Plum Ridge
+			},
+			["crs"] = {
+				6521,	-- Living Blaze
+				6520,	-- Scorching Elemental
+				-- #if BEFORE 4.0.3
+				9878,	-- Entropic Beast
+				9879,	-- Entropic Horror
+				-- #endif
+			},
+			["maps"] = {
+				BLACKROCK_DEPTHS,
+				MOLTEN_CORE,
+			},
+		}),
+			-- Life:
 		i(10286, {	-- Heart of the Wild
 			["coords"] = {
 				-- #if BEFORE 4.0.3
 				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
+				{ 64.0, 36.0, WESTERN_PLAGUELANDS },	-- The Weeping Cave
 				-- #else
+				{ 44.8, 81.0, BLASTED_LANDS },	-- Surwich, north of
+				{ 33.7, 78.2, BLASTED_LANDS },	-- Western Tainted Forest
+				{ 40.3, 69.5, BLASTED_LANDS },	-- Central Tainted Forest
+				{ 37.5, 56.2, BLASTED_LANDS },	-- Northen Tainted Forest
 				{ 51.5, 25.0, FELWOOD },	-- Irontree Woods
+				{ 50.3, 48.9, WINTERSPRING },	-- Lake Kel'Theril, north of
 				-- #endif
 				{ 55.3, 21.6, UNGORO_CRATER },	-- Lakkari Tar Pits
 				{ 69.5, 36.7, UNGORO_CRATER },	-- The Roiling Gardens
@@ -3981,8 +4281,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				7100,	-- Warpwood Moss Flayer
 				7149,	-- Withered Protector
 				-- #if BEFORE 4.0.3
+				1813, 	-- Decaying Horror
 				7138,	-- Irontree Wanderer
 				7101,	-- Warpwood Shredder
+				1812, 	-- Rottin Behemoth
+				-- #else
+				45119,	-- Corrupted Darkwood Treant
+				45118,	-- Darkwood Treant
+				45125,	-- Felspore Bog Lord
+				48952,	-- Frostleaf Treant
+				49217,	-- Wintervine Lasher
 				-- #endif
 			},
 			["maps"] = {
@@ -3990,6 +4298,234 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				MARAUDON,
 				-- #if BEFORE 4.0.3
 				SWAMP_OF_SORROWS,
+				-- #endif
+			},
+		}),
+		i(12803, {	-- Living Essence
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
+				{ 64.0, 36.0, WESTERN_PLAGUELANDS },	-- The Weeping Cave
+				-- #else
+				{ 44.8, 81.0, BLASTED_LANDS },	-- Surwich, north of
+				{ 33.7, 78.2, BLASTED_LANDS },	-- Western Tainted Forest
+				{ 40.3, 69.5, BLASTED_LANDS },	-- Central Tainted Forest
+				{ 37.5, 56.2, BLASTED_LANDS },	-- Northen Tainted Forest
+				{ 51.5, 25.0, FELWOOD },	-- Irontree Woods
+				{ 69.5, 36.7, UNGORO_CRATER },	-- The Roiling Gardens
+				{ 50.3, 48.9, WINTERSPRING },	-- Lake Kel'Theril, north of
+				-- #endif
+				{ 55.3, 21.6, UNGORO_CRATER },	-- Lakkari Tar Pits
+			},
+			["crs"] = {
+				7139,	-- Irontree Stomper
+				6517,	-- Tar Beast
+				6527,	-- Tar Creeper
+				6519,	-- Tar Lord
+				6518,	-- Tar Lurker
+				7100,	-- Warpwood Moss Flayer
+				7149,	-- Withered Protector
+				-- #if BEFORE 4.0.3
+				1813, 	-- Decaying Horror
+				7138,	-- Irontree Wanderer
+				7101,	-- Warpwood Shredder
+				1812, 	-- Rottin Behemoth
+				-- #else
+				6510,	-- Bloodpetal Flayer
+				6509,	-- Bloodpetal Lasher
+				6511,	-- Bloodpetal Thresher
+				6512,	-- Bloodpetal Trapper
+				45119,	-- Corrupted Darkwood Treant
+				45118,	-- Darkwood Treant
+				45125,	-- Felspore Bog Lord
+				48952,	-- Frostleaf Treant
+				49217,	-- Wintervine Lasher
+				-- #endif
+			},
+			["maps"] = {
+				DIRE_MAUL,
+			},
+		}),
+			-- Undeath:
+		i(7972, {	-- Ichor of Undeath
+			-- #if BEFORE 4.0.3
+			["coords"] = {
+				{ 16.0, 70.0, AZSHARA },	-- Talrendis Point, northeast of
+				{ 37.0, 54.0, AZSHARA },	-- Ruins of Eldarath
+				{ 46.0, 70.0, DEADWIND_PASS },	-- Around Karazhan
+				{ 53.0, 42.0, WINTERSPRING },	-- Lake Kel'Theril
+			},
+			["crs"] = {
+				7524,	-- Anghuished Highborne
+				12378,	-- Damned Soul
+				6116,	-- Highborne Apparition
+				6117,	-- Highborne Lichling
+				7864,	-- Lingering Highborne
+				7370,	-- Restless Shade
+				7523,	-- Suffering Highborne
+				12379,	-- Unliving Caretaker
+				12380,	-- Unliving Resident
+				12377,	-- Wailing Spectre
+			},
+			-- #endif
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from Undead creatures in the given zones.",
+			-- #else
+			["description"] = "Open world sources have been heavily nerfed, and this reagent will only reliably drop from Undead creatures in the given instances.",
+			-- #endif
+			["maps"] = {
+				-- #if BEFORE 4.0.3
+				EASTERN_PLAGUELANDS,
+				WESTERN_PLAGUELANDS,
+				-- #endif
+				DIRE_MAUL,
+				SCHOLOMANCE,
+				STRATHOLME,
+			},
+		}),
+		i(12808, {	-- Essence of Undeath
+			["coords"] = {
+				-- #if AFTER 4.0.3
+				{ 53.0, 42.0, WINTERSPRING },	-- Lake Kel'Theril
+				-- #endif
+			},
+			["crs"] = {
+				-- #if AFTER 4.0.3
+				7524,	-- Anghuished Highborne
+				7523,	-- Suffering Highborne
+				48665,	-- Wretched Spectre
+				48664,	-- Wretched Spirit
+				-- #endif
+			},
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from Undead creatures in the given instances.",
+			-- #else
+			["description"] = "Drops from Undead creatures in the given zones.",
+			-- #endif
+			["maps"] = {
+				-- #if BEFORE WRATH
+				NAXXRAMAS,
+				-- #elseif AFTER 4.0.3
+				EASTERN_PLAGUELANDS,
+				-- #endif
+				DIRE_MAUL,
+				SCHOLOMANCE,
+				STRATHOLME,
+			},
+		}),
+			-- Water:
+		i(7070, {	-- Elemental Water
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 66.0, 29.0, ARATHI_HIGHLANDS },	-- Circle of East Binding
+				{ 51.0, 50.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 62.0, 81.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 71.0, 34.0, EASTERN_PLAGUELANDS },	-- Northdale
+				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
+				{ 54.0, 40.0, WINTERSPRING },	-- Lake Kal'Theril
+				-- #else
+				{ 61.6, 30.4, ARATHI_HIGHLANDS },	-- Circle of East Binding
+				{ 46.5, 44.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 56.4, 74.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 66.3, 29.6, EASTERN_PLAGUELANDS },	-- Northdale
+				{ 18.3, 60.2, SWAMP_OF_SORROWS },	-- Purespring Cavern
+				{ 30.5, 53.2, UNGORO_CRATER },	-- Golakka Hot Springs
+				{ 33.0, 50.5, WINTERSPRING },	-- Frostfire Hot Springs
+				{ 60.0, 85.1, WINTERSPRING },	-- Frostwhisper Gorge
+				-- #endif
+				{ 49.1, 70.2, ASHENVALE },	-- Mystral Lake
+				{ 38.5, 35.4, FERALAS },	-- The Forgotten Coast, north
+				{ 46.9, 55.9, FERALAS },	-- The Forgotten Coast, south
+			},
+			["crs"] = {
+				3917,	-- Befouled Water Elemental
+				8521,	-- Blighted Horror
+				8519,	-- Blighted Surge
+				2761,	-- Cresting Exile
+				8522,	-- Plague Monstrosity
+				8520,	-- Plague Ravager
+				5461,	-- Sea Elemental
+				5462,	-- Sea Spray
+				-- #if BEFORE 4.0.3
+				7132,	-- Toxic Horror
+				14458,	-- Watery Invader
+				-- #else
+				50250,	-- Ice Avatar
+				46953,	-- Purespring Elemental
+				48767,	-- Scalding Springsurge
+				38254,	-- Steaming Fury
+				-- #endif
+			},
+		}),
+		i(7079, {	-- Globe of Water
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 51.0, 50.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 62.0, 81.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 71.0, 34.0, EASTERN_PLAGUELANDS },	-- Northdale
+				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
+				{ 54.0, 40.0, WINTERSPRING },	-- Lake Kal'Theril
+				-- #else
+				{ 46.5, 44.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 56.4, 74.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 66.3, 29.6, EASTERN_PLAGUELANDS },	-- Northdale
+				{ 18.3, 60.2, SWAMP_OF_SORROWS },	-- Purespring Cavern
+				{ 30.5, 53.2, UNGORO_CRATER },	-- Golakka Hot Springs
+				{ 33.0, 50.5, WINTERSPRING },	-- Frostfire Hot Springs
+				{ 60.0, 85.1, WINTERSPRING },	-- Frostwhisper Gorge
+				-- #endif
+				{ 38.5, 35.4, FERALAS },	-- The Forgotten Coast, north
+				{ 46.9, 55.9, FERALAS },	-- The Forgotten Coast, south
+			},
+			["crs"] = {
+				8521,	-- Blighted Horror
+				8519,	-- Blighted Surge
+				8522,	-- Plague Monstrosity
+				8520,	-- Plague Ravager
+				5461,	-- Sea Elemental
+				5462,	-- Sea Spray
+				-- #if BEFORE 4.0.3
+				7132,	-- Toxic Horror
+				14458,	-- Watery Invader
+				-- #else
+				50250,	-- Ice Avatar
+				46953,	-- Purespring Elemental
+				48767,	-- Scalding Springsurge
+				38254,	-- Steaming Fury
+				-- #endif
+			},
+		}),
+		i(7080, {	-- Essence of Water
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 51.0, 50.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 62.0, 81.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 71.0, 34.0, EASTERN_PLAGUELANDS },	-- Northdale
+				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
+				{ 54.0, 40.0, WINTERSPRING },	-- Lake Kal'Theril
+				-- #else
+				{ 46.5, 44.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 56.4, 74.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 66.3, 29.6, EASTERN_PLAGUELANDS },	-- Northdale
+				{ 18.3, 60.2, SWAMP_OF_SORROWS },	-- Purespring Cavern
+				{ 30.5, 53.2, UNGORO_CRATER },	-- Golakka Hot Springs
+				{ 33.0, 50.5, WINTERSPRING },	-- Frostfire Hot Springs
+				{ 60.0, 85.1, WINTERSPRING },	-- Frostwhisper Gorge
+				-- #endif
+			},
+			["crs"] = {
+				8521,	-- Blighted Horror
+				8519,	-- Blighted Surge
+				8522,	-- Plague Monstrosity
+				8520,	-- Plague Ravager
+				-- #if BEFORE 4.0.3
+				7132,	-- Toxic Horror
+				14458,	-- Watery Invader
+				-- #else
+				50250,	-- Ice Avatar
+				46953,	-- Purespring Elemental
+				48767,	-- Scalding Springsurge
+				38254,	-- Steaming Fury
 				-- #endif
 			},
 		}),

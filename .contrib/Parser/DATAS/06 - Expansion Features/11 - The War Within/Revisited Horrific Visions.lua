@@ -306,6 +306,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(236804),	-- Malignant Vision's Wargreaves
 					}),
 					filter(TRINKET_F, {
+						i(236914),	-- Unbound Vision Journal
+						i(236919),	-- Void Spike
 						i(236916),	-- Void-Whittled Spike
 					}),
 				}),
