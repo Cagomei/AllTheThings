@@ -1393,6 +1393,10 @@ root(ROOTS.NeverImplemented, {
 			i(159554),	-- Wintersail Hammer
 			i(159592),	-- Wintersail Sabre
 			i(159510),	-- Wintersail Strikers
+			-- 8.3.0.32044
+			i(169387),	-- Myth of Ardoros
+			-- 8.3.0.32489
+			i(170742),	-- Felsoul Staff
 		}),
 		expansion(EXPANSION.SL, {
 			n(SEASON_SINFUL, {

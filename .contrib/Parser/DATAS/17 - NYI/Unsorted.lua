@@ -370,7 +370,6 @@ root(ROOTS.Unsorted, {
 				i(235284),	-- Echo of N'zoth
 				i(235285),	-- Echo of N'zoth
 				-- Trinkets?
-				i(236915),	-- Book of Dark Visions
 				i(236917),	-- Dark Dreamer's Talisman
 				i(236918),	-- Pulsating Void Disk
 			}),

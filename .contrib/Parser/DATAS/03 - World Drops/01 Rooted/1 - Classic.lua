@@ -4529,7 +4529,144 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 		}),
+		-- From beasts:
+		i(5637, {	-- Large Fang
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats ranging from level 25 to 40.",
+			["maps"] = {
+				ASHENVALE,
+				BADLANDS,
+				DESOLACE,
+				DUSKWOOD,
+				DUSTWALLOW_MARSH,
+				HILLSBRAD_FOOTHILLS,
+				LOCH_MODAN,
+				RAZORFEN_DOWNS,
+				RAZORFEN_KRAUL,
+				STONETALON_MOUNTAINS,
+				STRANGLETHORN_VALE,
+				SWAMP_OF_SORROWS,
+				THOUSAND_NEEDLES,
+				WETLANDS,
+				-- #if AFTER TBC
+				BLOODMYST_ISLE,
+				GHOSTLANDS,
+				-- #endif
+			},
+			-- #else
+			["coord"] = { 50.0, 70.0, ARATHI_HIGHLANDS },
+			["cr"] =  2561,	-- Highland Fleshstalker
+			["description"] = "Cataclysm messed up with the drop sources for Large Fangs. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
+			-- #endif
+		}),
+		i(5635, {	-- Sharp Claw
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",
+			["maps"] = {
+				ASHENVALE,
+				DARKSHORE,
+				DUSKWOOD,
+				HILLSBRAD_FOOTHILLS,
+				LOCH_MODAN,
+				RAZORFEN_KRAUL,
+				REDRIDGE_MOUNTAINS,
+				SHADOWFANG_KEEP,
+				SILVERPINE_FOREST,
+				STONETALON_MOUNTAINS,
+				THE_BARRENS,
+				THOUSAND_NEEDLES,
+				WAILING_CAVERNS,
+				WESTFALL,
+				WETLANDS,
+				-- #if AFTER TBC
+				BLOODMYST_ISLE,
+				GHOSTLANDS,
+				-- #endif
+			},
+			-- #else
+			["coords"] = {
+				{ 27.0, 60.0, GHOSTLANDS },
+				{ 50.0, 60.0, GHOSTLANDS },
+				{ 70.0, 38.0, GHOSTLANDS },
+			},
+			["crs"] = {
+				16348,	-- Ghostclaw Lynx
+				16349,	-- Ghostclaw Ravager
+				16347,	-- Starving Ghostclaw
+			},
+			["description"] = "Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!",
+			-- #endif
+		}),
+		-- From trolls:
+		i(12804, {
+			-- #if BEFORE 4.0.3
+			["coord"] = { 72.0, 15.0, EASTERN_PLAGUELANDS },	-- Zul'mashar
+			-- #endif
+			["description"] = "Can drop from trolls.",
+			["maps"] = {
+				LOWER_BLACKROCK_SPIRE,
+				ZULGURUB,
+			},
+		}),
+		-- Black Diamonds:
+			i(11754, {["maps"] = { BLACKROCK_DEPTHS }, }),	-- Black Diamond
+			i(18335, {	-- Pristine Black Diamond
+				["description"] = "Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",
+			}),
 		-- Alchemy:
+		i(19441, {	-- Huge Venom Sac
+			-- #if BEFORE 4.0.3
+			["description"] = "Can drop from scorpids and spiders in the level bracket 50-60, and are most abundant in Burning Steppes and Silithus. Spiders and scorpids often share a spawn with other bests, so kill the hound or whatever if you cannot find scorpids and spiders.",
+			["maps"] = {
+				BURNING_STEPPES,
+				SILITHUS,
+			},
+			-- #else
+			["description"] = "Cataclysm messed up with the drop sources for Huge Venom Sac, and the only reliable sources are scorpids and spiders in Ruins of Ahn'Qiraj and Naxxramas.",
+			["maps"] = {
+				NAXXRAMAS,
+				RUINS_OF_AHNQIRAJ,
+			},
+			-- #endif
+		}),
+		i(1288, {	-- Large Venom Sac
+			-- #if BEFORE 4.0.3
+			["description"] = "Can drop from spiders in the level bracket 20-35, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["maps"] = {
+				ASHENVALE,
+				DUSKWOOD,
+			},
+			-- #elseif AFTER BFA
+			["description"] = "Can drop from spiders in most vanilla zones, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["maps"] = {
+				ASHENVALE,
+				DUSKWOOD,
+			},
+			-- #else
+			["coords"] = {
+				{ 86.0, 54.0, DUSKWOOD },	-- By spider cave east of Darkshire
+				{ 77.0, 60.0, DUSKWOOD },	-- Windmill crossroad
+			},
+			["cr"] = { 930 },	-- Black Widow Hatchling
+			-- #endif
+		}),
+		i(1475, {	-- Small Venom Sac
+			-- #if BEFORE 4.0.3
+			["description"] = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["maps"] = {
+				LOCH_MODAN,
+				STONETALON_MOUNTAINS,
+			},
+			-- #else
+			["coord"] = { 18.8, 35.8, BLOODMYST_ISLE },
+			["crs"] = {
+				17523,	-- Myst Leecher
+				17522,	-- Myst Spinner
+				17683,	-- Zarakh
+			},
+			["description"] = "Cataclysm messed up with the drop sources for Small Venom Sac, and unfortunately for Horde players the only reliable farming spot is on Bloodmyst Isle.",
+			-- #endif
+		}),
 		i(9260, {	-- Volatile Rum
 			["coords"] = {
 				-- #if BEFORE 4.0.3

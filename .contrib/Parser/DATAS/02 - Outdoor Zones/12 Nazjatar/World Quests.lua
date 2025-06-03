@@ -131,7 +131,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			q(55898),	-- Tempest-Speaker Shalan'ali
 			q(57333, {	-- Terrace Terrors
 				["g"] = {
-					i(171250),	-- Zanj'ir Armaments (QI!)
+					o(334751, {	-- Zanj'ir Weapon Rack
+						i(171250),	-- Zanj'ir Armaments (QI!)
+					}),
 				},
 			}),
 			q(56048),	-- The Drowned Oracles

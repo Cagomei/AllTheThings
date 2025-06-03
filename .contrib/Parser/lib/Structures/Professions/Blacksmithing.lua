@@ -205,6 +205,12 @@ ARTISAN_BLACKSMITHING
 	{}
 -- #endif
 );
+VANILLA_BLACKSMITHING_VENDOR_REAGENTS = {
+	i(2880),	-- Weak Flux
+	i(3466),	-- Strong Flux
+	i(18567),	-- Elemental Flux
+	i(3857),	-- Coal
+};
 TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(29844, {	-- Blacksmithing (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },

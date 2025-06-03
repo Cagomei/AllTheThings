@@ -258,7 +258,7 @@ GetQuestLinkForObject = function(t)
 	local questID = t.questID;
 	if questID then return GetQuestLink(questID)
 		-- technically the second number value is some other value to make the link actually usable
-		or CustomQuestLinkFormat:format(questID,app.Level,t.name,questID) end
+		or CustomQuestLinkFormat:format(questID,app.Level,t.name or UNKNOWN,questID) end
 end
 end
 

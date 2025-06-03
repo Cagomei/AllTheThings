@@ -43,9 +43,6 @@ i(139845);	-- Band of Primordial Strength
 i(152442);	-- Impervious Shadoweave Hood \\ rvious Shadowweave Hood \\ rvious Hood
 -- BFA Vendor
 i(162588);	-- Weathered Scrollcase
--- BFA Minor Visions
-i(169294);	-- Resilient Soul
-i(173888);	-- Shard of Self Sacrifice \\ Lingering Soul
 -- BFA Trash drops available during quest
 i(168006);	-- Wilted Direbloom Petal
 i(168007);	-- Torn Direbloom Petal
@@ -304,15 +301,78 @@ i(132183);	-- Razor Tooth
 i(123865);	-- Relic of Ursol
 
 -----------------
+-- PATCH 8.2.5 --
+-----------------
+i(172503);	-- Beekeeper Bybee's Photograph
+i(172504);	-- Bottled Tidebreak Water
+i(173533);	-- Collected Tidebloom Honey
+i(172383);	-- Collected Tidebloom Honey
+i(172502);	-- Delicious Sugar
+i(172447);	-- Honey-Glazed Dough
+i(172500);	-- Lisa Honeysuckle's Photograph
+i(172448);	-- Super Sticky Honey
+i(172501);	-- Tantalizing Nectar
+
+-----------------
 -- PATCH 8.3.0 --
 -----------------
+i(174779);	-- Aqir Egg Pieces
+i(174208);	-- Azure Amber
+i(174517);	-- Bluish Residue
+i(174207);	-- Bony Amber Fragment
+i(174511);	-- Burnt Manual
+i(174825);	-- Chunk of Amber
+i(174512);	-- Cracked Badge
+i(173908);	-- Crumbling Stone Slab
+i(174516);	-- Dampened Ward
+i(169296);	-- Defiled Soul
+i(174824);	-- Depleted Soul Ruby
+i(174347);	-- Deteriorating Umbral Wing
+i(174820);	-- Discarded Ny'alothan Tome
+i(174514);	-- Discarded Token
 i(174908);	-- Dragon Heart
 i(174909);	-- Dragon Heart
 i(174910);	-- Dragon Heart
+i(174383);	-- Ebony Stone
+i(174209);	-- Encased Arthropod
+i(172947);	-- Faceless Mask of Dark Imagination
+i(172925);	-- Faceless Mask of the Burned Bridge
+i(169957);	-- Faceless Mask of the Daredevil
+i(172946);	-- Faceless Mask of the Long Night
+i(170062);	-- Faceless Mask of the Pained
+i(167999);	-- Fancy Letter
+i(174782);	-- Fear and Flesh \\ Compendium of Ny'alotha, Vol. II
+i(174819);	-- Fractured Aqiri Idol
+i(174826);	-- Frail Ceremonial Spear
+i(173913);	-- Imbued Malformed Scale
+i(174513);	-- Inert Geode \\ Innert Geode
+i(174494);	-- Ivory Sigilstone
+i(168160);	-- Jeweled Scarab Figurine
+i(174823);	-- Miniature Plates of Uldum Replica
+i(173912);	-- Oozing Vocal Sac
+i(174510);	-- Pile of Shredded Paper
 i(174911);	-- Prophetic Eye
 i(174912);	-- Prophetic Eye
 i(174913);	-- Prophetic Eye
+i(107799);	-- Racing Regs
+i(173906);	-- Ruptured Power Cell
+i(174360);	-- Shadowy Gem
+i(171176);	-- Shred of Insanity \\ Shred of Nightmare
+i(173911);	-- Snapped Acid-Spine
+i(173907);	-- Soul-Infused Cranium
+i(174515);	-- Star Powder
+i(174509);	-- Tarnished Mark
+i(174777);	-- The Curse of Stone \\ Compendium of Ny'alotha, Vol. I
+i(174784);	-- The Final Truth \\ Compendium of Ny'alotha, Vol. III
+i(174063);	-- Titan Core \\ Corrupted Flesh Samples
+i(174064);	-- Titan Core \\ Corrupted Flesh Samples
+i(174065);	-- Titan Core \\ Corrupted Flesh Samples
+i(174783);	-- Torn Page of "Fear and Flesh" \\ Torn Page of Compendium, Vol. II
+i(171353);	-- Torn Page of "The Curse of Stone" \\ Torn Page of Compendium, Vol. I \\ Journal of Ny'alotha
+i(174785);	-- Torn Page of "The Final Truth" \\ Torn Page of Compendium, Vol. III
+i(174822);	-- Torn Rune-Embroidered Pouch
 i(174983);	-- Void Sliver
+i(164992);	-- Volatile Potion
 
 -----------------
 -- PATCH 8.3.7 --
@@ -1970,7 +2030,7 @@ i(216708);	-- Holy Candle
 i(227306);	-- Holy Mackerel
 i(227298);	-- Humble Pie
 i(220246);	-- Humming Power Core
-i(220445);	-- Illusionary Charm
+i(220447);	-- Illusionary Charm
 i(220380);	-- Immature Spiderling
 i(220275);	-- Indigo Shard
 i(220253);	-- Inert Dust
@@ -2254,20 +2314,87 @@ i(236652);	-- Re-Down-Upcycled Salvage
 i(236925);	-- Satchel of Carved Harbinger Crests
 i(237332);	-- Single-Use Grill
 i(234616);	-- Supreme Mangoro Madness
-i(228195);	-- Tattered Goblin Cap
-i(241616);	-- The Underpin
-i(237313);	-- Totally Legit Samophlange
-i(231899);	-- Trash
-i(236921);	-- Triumphant Satchel of Carved Harbinger Crests
-i(236635);	-- Uncut Semi-Smoky Quartz
-i(236651);	-- Vince's Old Left Shoe
-i(229809);	-- Weighted Metal Ball
-i(235713);	-- Weird Sand
-
-------------------
--- PATCH 11.1.5 --
-------------------
-i(241632);	-- Heroic Waxy Figurine
-i(241635);	-- Patchy Spider-Silk Square
-i(241633);	-- Tiny Decorative Rocket
-i(241636);	-- Storm Glass and Feather Necklace
+i(228194);	-- Fully Scrapped Scrap
+i(234197);	-- Gilded Screwdriver
+i(236923);	-- Glorious Cluster of Gilded Harbinger Crests
+i(237036);	-- Golden Valorstone
+i(237334);	-- Half-Eaten Takeout
+i(236680);	-- Imitation Crab Meat
+i(233031);	-- Intact Interlock
+i(236634);	-- Itty Bitty Bonsai
+i(239115);	-- L.O.S.E.R. Ticket
+i(235268);	-- Misprinted Card
+i(236637);	-- Not-Quite-Crystal Ball
+i(236926);	-- Pack of Runed Harbinger Crests
+i(236924);	-- Pouch of Weathered Harbinger Crests
+i(236652);	-- Re-Down-Upcycled Salvage
+i(236925);	-- Satchel of Carved Harbinger Crests
+i(237332);	-- Single-Use Grill
+i(234616);	-- Supreme Mangoro Madness
+i(228194);	-- Fully Scrapped Scrap
+i(234197);	-- Gilded Screwdriver
+i(236923);	-- Glorious Cluster of Gilded Harbinger Crests
+i(237036);	-- Golden Valorstone
+i(237334);	-- Half-Eaten Takeout
+i(236680);	-- Imitation Crab Meat
+i(233031);	-- Intact Interlock
+i(236634);	-- Itty Bitty Bonsai
+i(239115);	-- L.O.S.E.R. Ticket
+i(235268);	-- Misprinted Card
+i(236637);	-- Not-Quite-Crystal Ball
+i(236926);	-- Pack of Runed Harbinger Crests
+i(236924);	-- Pouch of Weathered Harbinger Crests
+i(236652);	-- Re-Down-Upcycled Salvage
+i(236925);	-- Satchel of Carved Harbinger Crests
+i(237332);	-- Single-Use Grill
+i(234616);	-- Supreme Mangoro Madness
+i(228194);	-- Fully Scrapped Scrap
+i(234197);	-- Gilded Screwdriver
+i(236923);	-- Glorious Cluster of Gilded Harbinger Crests
+i(237036);	-- Golden Valorstone
+i(237334);	-- Half-Eaten Takeout
+i(236680);	-- Imitation Crab Meat
+i(233031);	-- Intact Interlock
+i(236634);	-- Itty Bitty Bonsai
+i(239115);	-- L.O.S.E.R. Ticket
+i(235268);	-- Misprinted Card
+i(236637);	-- Not-Quite-Crystal Ball
+i(236926);	-- Pack of Runed Harbinger Crests
+i(236924);	-- Pouch of Weathered Harbinger Crests
+i(236652);	-- Re-Down-Upcycled Salvage
+i(236925);	-- Satchel of Carved Harbinger Crests
+i(237332);	-- Single-Use Grill
+i(234616);	-- Supreme Mangoro Madness
+i(228194);	-- Fully Scrapped Scrap
+i(234197);	-- Gilded Screwdriver
+i(236923);	-- Glorious Cluster of Gilded Harbinger Crests
+i(237036);	-- Golden Valorstone
+i(237334);	-- Half-Eaten Takeout
+i(236680);	-- Imitation Crab Meat
+i(233031);	-- Intact Interlock
+i(236634);	-- Itty Bitty Bonsai
+i(239115);	-- L.O.S.E.R. Ticket
+i(235268);	-- Misprinted Card
+i(236637);	-- Not-Quite-Crystal Ball
+i(236926);	-- Pack of Runed Harbinger Crests
+i(236924);	-- Pouch of Weathered Harbinger Crests
+i(236652);	-- Re-Down-Upcycled Salvage
+i(236925);	-- Satchel of Carved Harbinger Crests
+i(237332);	-- Single-Use Grill
+i(234616);	-- Supreme Mangoro Madness
+i(228194);	-- Fully Scrapped Scrap
+i(234197);	-- Gilded Screwdriver
+i(236923);	-- Glorious Cluster of Gilded Harbinger Crests
+i(237036);	-- Golden Valorstone
+i(237334);	-- Half-Eaten Takeout
+i(236680);	-- Imitation Crab Meat
+i(233031);	-- Intact Interlock
+i(236634);	-- Itty Bitty Bonsai
+i(239115);	-- L.O.S.E.R. Ticket
+i(235268);	-- Misprinted Card
+i(236637);	-- Not-Quite-Crystal Ball
+i(236926);	-- Pack of Runed Harbinger Crests
+i(236924);	-- Pouch of Weathered Harbinger Crests
+i(236652);	-- Re-Down-Upcycled Salvage
+i(236925);	-- Satchel of Carved Harbinger Crests
+i(237332);	-- Single-Use Grill

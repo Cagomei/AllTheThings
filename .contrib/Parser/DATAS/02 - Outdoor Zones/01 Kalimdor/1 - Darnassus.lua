@@ -135,11 +135,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER 4.3.0
 						["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 						-- #endif
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {
 							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 				}),
 				prof(COOKING, {

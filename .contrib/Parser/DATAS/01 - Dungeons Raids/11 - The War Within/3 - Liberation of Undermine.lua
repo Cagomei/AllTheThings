@@ -899,7 +899,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(88832, name(HEADERS.NPC, 229283)),	-- Scraps Trash
 			q(88860, name(HEADERS.NPC, 234640)),	-- Globikus Trash
 			q(88851, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			--q(, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
+			q(88855, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
 			-- All
 			q(89478, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash first per week any difficulty
 			q(89479, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash first per week any difficulty

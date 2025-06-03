@@ -431,6 +431,7 @@ HeaderAssignments = {
 	["Relentless Gladiator"] = -1000134,
 	["Relics"] = -1000069,
 	["Reliquary of Opulence"] = -1001038,
+	["Remix: Legion"] = -1001203,
 	["Remix: Mists of Pandaria"] = -1000873,
 	["Renown"] = -1001141,
 	["Rewards"] = -1000033,
@@ -668,4 +669,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001203;
+NextHeaderID = -1001204;

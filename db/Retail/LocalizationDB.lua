@@ -168,6 +168,7 @@ _.HeaderConstants = {
 	QUESTS = -1000031,
 	RAIDS = -1000885,
 	RARES = -1000032,
+	REMIX_LEGION = -1001203,
 	REMIX_MOP = -1000873,
 	REWARDS = -1000033,
 	SCENARIO_COMPLETION = -1000850,
@@ -203,7 +204,7 @@ _.HeaderConstants = {
 	ZULAMAN_CHEST_4 = -1000059,
 };
 _.HeaderData = {
-	IGNOREINMINILIST = {[-1000885]=1,[-1000879]=1,[-1000877]=1,[-1000873]=1,[-1000850]=1,[-1000092]=1,[-1000054]=1},
+	IGNOREINMINILIST = {[-1001203]=1,[-1000885]=1,[-1000879]=1,[-1000877]=1,[-1000873]=1,[-1000850]=1,[-1000092]=1,[-1000054]=1},
 	FILLNPCS = {[-1000070]=1,[-1000067]=1,[-1000066]=1,[-1000065]=1,[-1000062]=1,[-1000044]=1,[-1000033]=1,[-1000017]=1,[-1000013]=1,[-1000010]=1},
 };
 localize(L.HEADER_NAMES, {
@@ -765,8 +766,9 @@ localize(L.HEADER_NAMES, {
 	[-1001200] = "Archaeology: Ogre",
 	[-1001201] = "Archaeology: Pandaren",
 	[-1001202] = "Archaeology: Zandalari",
-	[-1001203] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
-	[-1001204] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1001203] = "Remix: Legion",
+	[-1001204] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
+	[-1001205] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -1420,6 +1422,7 @@ localize(L.HEADER_ICONS, {
 	[-1001200] = 441139,
 	[-1001201] = 441139,
 	[-1001202] = 441139,
+	[-1001203] = _.asset("category_remix"),
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -1470,9 +1473,11 @@ localize(L.HEADER_EVENTS, {
 	[-1001092] = 1599,
 	[-1001178] = 1670,
 	[-1001180] = 133900,
+	[-1001203] = 1525555,
 });
 localize(L.EVENT_TIMERUNNING_SEASONS, {
 	[1] = 1525,
+	[1] = 1525555,
 });
 
 -- Programmatic Event Scheduling
@@ -1521,7 +1526,6 @@ _.Modules.Events.SetEventInformation(1509, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=22,["weekday"]=3,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=7,["weekday"]=3,["year"]=2025})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=25,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=5,["monthDay"]=25,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=1,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=6,["monthDay"]=1,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=8,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=6,["monthDay"]=8,["weekday"]=1,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=6,["monthDay"]=15,["weekday"]=1,["year"]=2025},{["hour"]=23,["month"]=6,["monthDay"]=15,["weekday"]=1,["year"]=2025}),
@@ -1573,7 +1577,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=3,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=3,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=10,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=10,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=17,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=17,["weekday"]=1,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=24,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=24,["weekday"]=1,["year"]=2026})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=24,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=24,["weekday"]=1,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=5,["monthDay"]=31,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=5,["monthDay"]=31,["weekday"]=1,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
@@ -1590,6 +1595,9 @@ _.Modules.Events.SetEventInformation(1599, {
 });
 _.Modules.Events.SetEventInformation(1670, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=22,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=20,["weekday"]=3,["year"]=2025})
+});
+_.Modules.Events.SetEventInformation(1525555, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=30,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=30,["weekday"]=1,["year"]=2025})
 });
 
 -- Filter Database Module
@@ -4194,6 +4202,7 @@ local ObjectNames = {
 	[179499] = "Ogre Tannin Basket",
 	[179501] = "Knot Thimblejack's Cache",
 	[179517] = "Treasure of the Shen'dralar",
+	[179526] = "Warpwood Pod",
 	[179545] = "The Prince's Chest",
 	[179547] = "A Dusty Tome",
 	[179551] = "Hydraxis' Coffer",
@@ -4264,6 +4273,8 @@ local ObjectNames = {
 	[180920] = "Duskwither Spire Power Source",
 	[180921] = "Tainted Soil Sample",
 	[181011] = "Magister Duskwither's Journal",
+	[181068] = "Small Obsidian Chunk",
+	[181069] = "Large Obsidian Chunk",
 	[181073] = "Fragrant Cauldron",
 	[181074] = "Arena Spoils",
 	[181083] = "Sothos and Jarien's Heirlooms",
@@ -7405,6 +7416,7 @@ local ObjectNames = {
 	[325873] = "Rich Osmenite Deposit",
 	[325874] = "Osmenite Seam",
 	[325875] = "Osmenite Deposit",
+	[325881] = "Sand Pile",
 	[325883] = "Highborne Relic",
 	[325894] = "Arcane Cache",
 	[325907] = "Tri-dimensional Coordinates",
@@ -7496,6 +7508,7 @@ local ObjectNames = {
 	[332576] = "Crystalline Cat Figurine",
 	[334216] = "Black Empire Cache",
 	[334220] = "Black Empire Cache",
+	[334751] = "Zanj'ir Weapon Rack",
 	[335655] = "Oonar's Arm",
 	[336415] = "Discarded Scroll",
 	[337237] = "Lost Vault",
@@ -11318,6 +11331,7 @@ local ObjectModels = {
 	[179499] = 200377,
 	[179501] = 200961,
 	[179517] = 200953,
+	[179526] = 201087,
 	[179545] = 196976,
 	[179547] = 198028,
 	[179551] = 200953,
@@ -11386,6 +11400,8 @@ local ObjectModels = {
 	[180920] = 192010,
 	[180921] = 204112,
 	[181011] = 191948,
+	[181068] = 219544,
+	[181069] = 219544,
 	[181073] = 198100,
 	[181074] = 196976,
 	[181083] = 196976,
@@ -14497,6 +14513,7 @@ local ObjectModels = {
 	[325873] = 2530473,
 	[325874] = 2530474,
 	[325875] = 2530472,
+	[325881] = 2059166,
 	[325883] = 1567951,
 	[325894] = 2833918,
 	[325907] = 192532,
@@ -14588,6 +14605,7 @@ local ObjectModels = {
 	[332576] = 192711,
 	[334216] = 3048900,
 	[334220] = 3048900,
+	[334751] = 2737690,
 	[335655] = 240803,
 	[336415] = 3448138,
 	[337237] = 3597238,
@@ -19405,7 +19423,7 @@ L.QUEST_NAMES = {
 	[50185] = "Green Crystal Monocle",
 	[50250] = "Posthaste",
 	[50384] = "Doug Test - Completable Quest4",
-	[52819] = _.L.HEADER_NAMES[-1001204],
+	[52819] = _.L.HEADER_NAMES[-1001205],
 	[52917] = "Grimmy Dialogue",
 	[53417] = "Lost Spawn of Krag'wa (The Shattered River)",
 	[53418] = "Lost Spawn of Krag'wa (Razorjaw River)",
@@ -20517,8 +20535,8 @@ localize(L.HEADER_NAMES, {
 	[-1001185] = "Händlerin für Schlachtzüge",
 	[-1001186] = "Händlerin für heroische Schlachtzüge",
 	[-1001187] = "Händlerin für mythische Schlachtzüge",
-	[-1001203] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
-	[-1001204] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[-1001204] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
+	[-1001205] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -20934,6 +20952,7 @@ localize(ObjectNames, {
 	[179499] = "Gerbekorb der Oger",
 	[179501] = "Knot Zwingschraubs Behälter",
 	[179517] = "Schatz der Shen'dralar",
+	[179526] = "Wucherborkenkapsel",
 	[179545] = "Die Truhe des Prinzen",
 	[179547] = "Ein verstaubter Foliant",
 	[179551] = "Hydraxis Truhe",
@@ -21004,6 +21023,8 @@ localize(ObjectNames, {
 	[180920] = "Kraftquelle des Nachtschimmerturms",
 	[180921] = "Besudelte Erdprobe",
 	[181011] = "Magister Nachtschimmers Tagebuch",
+	[181068] = "Kleiner Obsidianbrocken",
+	[181069] = "Großer Obsidianbrocken",
 	[181073] = "Duftender Kessel",
 	[181074] = "Arenabeute",
 	[181083] = "Sothos' und Jariens Erbstücke",
@@ -24048,6 +24069,7 @@ localize(ObjectNames, {
 	[325873] = "Reiches Osmenitvorkommen",
 	[325874] = "Osmenitflöz",
 	[325875] = "Osmenitvorkommen",
+	[325881] = "Sandhaufen",
 	[325883] = "Hochgeborenenrelikt",
 	[325894] = "Arkane Truhe",
 	[325907] = "Tridimensionale Koordinaten",
@@ -24137,6 +24159,7 @@ localize(ObjectNames, {
 	[332576] = "Kristallkatzenstatuette",
 	[334216] = "Truhe des Schwarzen Imperiums",
 	[334220] = "Truhe des Schwarzen Imperiums",
+	[334751] = "Waffenständer der Zanj'ir",
 	[335655] = "Oonars Arm",
 	[336415] = "Weggeworfene Schriftrolle",
 	[337237] = "Verlorene Schatztruhe",
@@ -26124,8 +26147,8 @@ localize(L.HEADER_NAMES, {
 	[-1001185] = "Marchande d’équipement de raids",
 	[-1001186] = "Marchande d’équipement héroïque",
 	[-1001187] = "Marchande d’équipement mythique",
-	[-1001203] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
-	[-1001204] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[-1001204] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
+	[-1001205] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
@@ -26550,6 +26573,7 @@ localize(ObjectNames, {
 	[179499] = "Panier de tanin ogre",
 	[179501] = "Réserve de Noué Dédodevie",
 	[179517] = "Trésor des Shen'dralar",
+	[179526] = "Cosse de Crochebois",
 	[179545] = "Le coffre du prince",
 	[179547] = "Un tome poussiéreux",
 	[179551] = "Coffre d'Hydraxis",
@@ -26620,6 +26644,8 @@ localize(ObjectNames, {
 	[180920] = "Source d'énergie de la Flèche de Ternesoir n° 3",
 	[180921] = "Echantillon de terre contaminée",
 	[181011] = "Journal du magistère Ternesoir",
+	[181068] = "Petit morceau d'obsidienne",
+	[181069] = "Grand morceau d'obsidienne",
 	[181073] = "Chaudron parfumé",
 	[181074] = "Butin de l'arène",
 	[181083] = "Possessions de Sothos et Jarien",
@@ -29673,6 +29699,7 @@ localize(ObjectNames, {
 	[325873] = "Riche gisement d’osménite",
 	[325874] = "Veine d’osménite",
 	[325875] = "Gisement d’osménite",
+	[325881] = "Tas de sable",
 	[325883] = "Relique de Bien-né",
 	[325894] = "Cache des Arcanes",
 	[325907] = "Coordonnées tri-dimensionnelles",
@@ -29763,6 +29790,7 @@ localize(ObjectNames, {
 	[332576] = "Figurine de chat en cristal",
 	[334216] = "Cache de l’Empire noir",
 	[334220] = "Cache de l’Empire noir",
+	[334751] = "Râtelier d’armes zanj’ir",
 	[335655] = "Bras d’Oonar",
 	[336415] = "Parchemin abandonné",
 	[337237] = "Caveau perdu",
@@ -31618,8 +31646,8 @@ localize(L.HEADER_NAMES, {
 	[-1001185] = "Mercante delle Incursioni",
 	[-1001186] = "Mercante Eroica",
 	[-1001187] = "Mercante Mitica",
-	[-1001203] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
-	[-1001204] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[-1001204] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
+	[-1001205] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -31887,6 +31915,7 @@ localize(ObjectNames, {
 	[179485] = "Trappola Rotta",
 	[179499] = "Cestello di Colorante Ogre",
 	[179517] = "Il Tesoro degli Shen'dralar",
+	[179526] = "Baccello di Legnotorto",
 	[179545] = "Cassa del Principe",
 	[179552] = "Schema: Robot di Riparazione 74A",
 	[179553] = "Frammento di Nucleo",
@@ -31943,6 +31972,8 @@ localize(ObjectNames, {
 	[180920] = "Fonte di Potere del Pinnacolo di Lungovespro",
 	[180921] = "Campione di Terreno Corrotto",
 	[181011] = "Diario del Magistro Lungovespro",
+	[181068] = "Frammento Piccolo d'Ossidiana",
+	[181069] = "Frammento Grande d'Ossidiana",
 	[181073] = "Calderone Profumato",
 	[181085] = "Cassa di Rifornimenti di Stratholme",
 	[181107] = "Contenitore d'Armi",
@@ -34957,6 +34988,7 @@ localize(ObjectNames, {
 	[325873] = "Deposito Ricco di Osmenite",
 	[325874] = "Vena di Osmenite",
 	[325875] = "Deposito di Osmenite",
+	[325881] = "Cumulo di Sabbia",
 	[325883] = "Reliquia degli Alti Nobili",
 	[325894] = "Cassa Arcana",
 	[325907] = "Coordinate Tridimensionali",
@@ -35035,6 +35067,7 @@ localize(ObjectNames, {
 	[332576] = "Statuetta Felina Cristallina",
 	[334216] = "Cassa dell'Impero Nero",
 	[334220] = "Cassa dell'Impero Nero",
+	[334751] = "Rastrelliera delle Armi degli Zanj'ir",
 	[335655] = "Braccio di Oonar",
 	[336415] = "Pergamena Scartata",
 	[337237] = "Segrete Perdute",
@@ -36662,8 +36695,8 @@ localize(L.HEADER_NAMES, {
 	[-1001185] = "Comerciante do Raide",
 	[-1001186] = "Comerciante Heroico",
 	[-1001187] = "Comerciante Mítico",
-	[-1001203] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
-	[-1001204] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[-1001204] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
+	[-1001205] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -37054,6 +37087,7 @@ localize(ObjectNames, {
 	[179499] = "Cesta de Tanino Ôgrico",
 	[179501] = "Tesouro do Fiapo Agulhacerta",
 	[179517] = "Tesouro dos Shen'dralar",
+	[179526] = "Vagem de Lenhatorta",
 	[179545] = "Baú do Príncipe",
 	[179552] = "Diagrama: Robô de Reparos em Campo 74A",
 	[179553] = "Fragmento de Núcleo",
@@ -37119,6 +37153,8 @@ localize(ObjectNames, {
 	[180920] = "Fonte de Força da Torre do Ocaso",
 	[180921] = "Amostra de Solo Infecto",
 	[181011] = "Diário do Magíster Ocaso",
+	[181068] = "Pequeno Estilhaço de Obsidiana",
+	[181069] = "Grande Estilhaço de Obsidiana",
 	[181073] = "Caldeirão Cheiroso",
 	[181085] = "Caixote de Suprimentos de Stratholme",
 	[181107] = "Contêiner de Armas",
@@ -40137,6 +40173,7 @@ localize(ObjectNames, {
 	[325873] = "Depósito de Osmenita Abundante",
 	[325874] = "Jazida de Osmenita",
 	[325875] = "Depósito de Osmenita",
+	[325881] = "Monte de Areia",
 	[325883] = "Relíquia dos Altaneiros",
 	[325894] = "Baú Arcano",
 	[325907] = "Coordenadas Tridimensionais",
@@ -40219,6 +40256,7 @@ localize(ObjectNames, {
 	[332576] = "Estatueta de Gato Cristalina",
 	[334216] = "Depósito do Império Negro",
 	[334220] = "Depósito do Império Negro",
+	[334751] = "Cavalete de Armas de Zanj'ir",
 	[335655] = "Braço de Oonar",
 	[336415] = "Pergaminho Descartado",
 	[337237] = "Cofre Perdido",
@@ -42142,8 +42180,8 @@ localize(L.HEADER_NAMES, {
 	[-1001185] = "Награды за рейд",
 	[-1001186] = "Награды за рейд в героическом режиме",
 	[-1001187] = "Награды за рейд в эпохальном режиме",
-	[-1001203] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
-	[-1001204] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[-1001204] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
+	[-1001205] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
@@ -42571,6 +42609,7 @@ localize(ObjectNames, {
 	[179499] = "Огрский дубильный чан",
 	[179501] = "Тайник Уззла Наперстяка",
 	[179517] = "Сокровище шен'дралар",
+	[179526] = "Стручок Кривого дерева",
 	[179545] = "Сундук принца",
 	[179547] = "Пыльный фолиант",
 	[179551] = "Сундук Гидраксиса",
@@ -42641,6 +42680,8 @@ localize(ObjectNames, {
 	[180920] = "Источник энергии замка Блеклых Сумерек",
 	[180921] = "Проба зараженной земли",
 	[181011] = "Журнал магистра Блеклые Сумерки",
+	[181068] = "Маленький кусочек обсидиана",
+	[181069] = "Большая обсидиановая глыба",
 	[181073] = "Котел Ароматов",
 	[181074] = "Трофеи арены",
 	[181083] = "Наследие Сотоса и Джариена",
@@ -45710,6 +45751,7 @@ localize(ObjectNames, {
 	[325873] = "Богатые залежи осменита",
 	[325874] = "Пласт осменита",
 	[325875] = "Залежи осменита",
+	[325881] = "Кучка песка",
 	[325883] = "Реликвия высокорожденных",
 	[325894] = "Чародейский тайник",
 	[325907] = "Трехмерные координаты",
@@ -45800,6 +45842,7 @@ localize(ObjectNames, {
 	[332576] = "Кристальная статуэтка кошки",
 	[334216] = "Тайник Темной Империи",
 	[334220] = "Тайник Темной Империи",
+	[334751] = "Оружейная стойка занш'иров",
 	[335655] = "Рука Унара",
 	[336415] = "Выброшенный свиток",
 	[337237] = "Утерянное хранилище",
@@ -47738,8 +47781,8 @@ localize(L.HEADER_NAMES, {
 	[-1001185] = "공격대 상인",
 	[-1001186] = "영웅급 상인",
 	[-1001187] = "신화 공격대 상인",
-	[-1001203] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
-	[-1001204] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[-1001204] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
+	[-1001205] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -48132,6 +48175,7 @@ localize(ObjectNames, {
 	[179499] = "오우거 타닌 광주리",
 	[179501] = "노트 팀블잭의 은닉품",
 	[179517] = "셴드랄라의 보물",
+	[179526] = "굽이나무 고치",
 	[179545] = "왕자의 궤짝",
 	[179552] = "설계도: 야전수리로봇 74A",
 	[179553] = "핵 조각",
@@ -48198,6 +48242,8 @@ localize(ObjectNames, {
 	[180920] = "더스크위더 첨탑 마력원천",
 	[180921] = "오염된 토양 견본",
 	[181011] = "마법학자 더스크위더의 일지",
+	[181068] = "작은 흑요석 덩어리",
+	[181069] = "커다란 흑요석 덩어리",
 	[181073] = "맛있는 향기의 가마솥",
 	[181074] = "투기장 전리품",
 	[181085] = "스트라솔름 보급품 상자",
@@ -51065,6 +51111,7 @@ localize(ObjectNames, {
 	[325873] = "풍부한 오스미나이트 광맥",
 	[325874] = "오스미나이트 융기",
 	[325875] = "오스미나이트 광맥",
+	[325881] = "모래 더미",
 	[325883] = "명가의 유물",
 	[325894] = "비전 보관함",
 	[325954] = "읽을 수 없는 보물 지도",
@@ -51145,6 +51192,7 @@ localize(ObjectNames, {
 	[332576] = "수정 호랑이 조각상",
 	[334216] = "검은 제국 보관함",
 	[334220] = "검은 제국 보관함",
+	[334751] = "잔지르 무기 선반",
 	[335655] = "오오나의 팔",
 	[336415] = "버려진 두루마리",
 	[337237] = "잃어버린 금고",
@@ -52675,8 +52723,8 @@ localize(L.HEADER_NAMES, {
 	[-1001185] = "Vendedora de banda",
 	[-1001186] = "Vendedora heroica",
 	[-1001187] = "Vendedora mítica",
-	[-1001203] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
-	[-1001204] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[-1001204] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
+	[-1001205] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000035] = "Secretitos traviesos...",
@@ -53089,6 +53137,7 @@ localize(ObjectNames, {
 	[179499] = "Cesta de tanino de ogro",
 	[179501] = "Alijo de Knot Thimblejack",
 	[179517] = "Tesoro de los Shen'dralar",
+	[179526] = "Capullo de Alabeo",
 	[179545] = "El cofre del Príncipe",
 	[179547] = "Un tomo polvoriento",
 	[179551] = "Arca de Hydraxis",
@@ -53158,6 +53207,8 @@ localize(ObjectNames, {
 	[180920] = "Fuente de alimentación de Aguja Ocaso Marchito",
 	[180921] = "Muestra de tierra mácula",
 	[181011] = "Diario del magister Ocaso Marchito",
+	[181068] = "Trozo de obsidiana pequeño",
+	[181069] = "Trozo de obsidiana grande",
 	[181073] = "Caldera apetitosa",
 	[181074] = "Botín de la arena",
 	[181085] = "Cajón de suministros de Stratholme",
@@ -56199,6 +56250,7 @@ localize(ObjectNames, {
 	[325873] = "Depósito de osmenita rico",
 	[325874] = "Veta de osmenita",
 	[325875] = "Depósito de osmenita",
+	[325881] = "Montón de arena",
 	[325883] = "Reliquia de Altonato",
 	[325894] = "Alijo Arcano",
 	[325907] = "Coordenadas tridimensionales",
@@ -56278,6 +56330,7 @@ localize(ObjectNames, {
 	[332576] = "Figurilla de gato cristalina",
 	[334216] = "Alijo del Imperio Negro",
 	[334220] = "Alijo del Imperio Negro",
+	[334751] = "Expositor de armas Zanj'ir",
 	[335655] = "Brazo de Oonar",
 	[336415] = "Pergamino desechado",
 	[337237] = "Cámara perdida",
@@ -58221,8 +58274,8 @@ localize(L.HEADER_NAMES, {
 	[-1001185] = "团队副本商人",
 	[-1001186] = "英雄副本商人",
 	[-1001187] = "史诗副本商人",
-	[-1001203] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
-	[-1001204] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-1001204] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
+	[-1001205] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "这些物品可以通过做大使任务或获得巅峰宝箱来获得。",
@@ -58632,6 +58685,7 @@ localize(ObjectNames, {
 	[179499] = "食人魔鞣酸篮",
 	[179501] = "诺特·希姆加克的储物箱",
 	[179517] = "辛德拉的宝藏",
+	[179526] = "扭木茧",
 	[179545] = "王子的箱子",
 	[179552] = "结构图：修理机器人74A型",
 	[179553] = "熔核碎片",
@@ -58694,6 +58748,8 @@ localize(ObjectNames, {
 	[180918] = "通缉：饥饿者泰里斯",
 	[180921] = "被污染的土壤样本",
 	[181011] = "魔导师达斯维瑟的日记",
+	[181068] = "小型黑曜石碎块",
+	[181069] = "大型黑曜石碎块",
 	[181073] = "薰炉",
 	[181074] = "竞技场的泥土",
 	[181085] = "斯坦索姆物资箱",
@@ -61449,6 +61505,7 @@ localize(ObjectNames, {
 	[325873] = "富透金矿脉",
 	[325874] = "透金矿层",
 	[325875] = "透金矿脉",
+	[325881] = "沙堆",
 	[325883] = "上层精灵圣物",
 	[325894] = "奥术宝箱",
 	[325907] = "三维坐标",

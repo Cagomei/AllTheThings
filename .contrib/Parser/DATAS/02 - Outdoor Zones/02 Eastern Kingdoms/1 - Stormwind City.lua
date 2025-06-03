@@ -194,11 +194,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {
 							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 					n(5511, {	-- Therum Deepforge <Expert Blacksmith>
 						["coords"] = {

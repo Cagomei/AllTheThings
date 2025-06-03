@@ -132,6 +132,7 @@ root(ROOTS.Zones, {
 				n(109954, {	-- Magister Phaedris
 					["questID"] = 43348,
 					["coord"] = { 42.1, 80.1, SURAMAR },
+					["g"] = { i(140405) },	-- Illusion Matrix Crystal
 				}),
 				n(112497, {	-- Maia the White
 					["questID"] = 44072,

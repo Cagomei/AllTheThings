@@ -99,6 +99,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 39.8, 55.6, THUNDER_BLUFF },
 						["sym"] = { {"sub", "common_recipes_vendor", 3356} },	-- Sumi <Blacksmithing Supplies>
 						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {}),
 					}),
 				}),
 				prof(COOKING, {

@@ -107,6 +107,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = { {"sub", "common_recipes_vendor", 3356 } },	-- Sumi <Blacksmithing Supplies>
 						["coord"] = { 61.4, 30.1, UNDERCITY },
 						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {}),
 					}),
 				}),
 				prof(COOKING, {

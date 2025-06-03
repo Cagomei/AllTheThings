@@ -89,6 +89,9 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 
 		-- 8.3.0
 		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
+			-- 8.3.0.32044
+			i(170543),	-- Strange Stone
+			i(172515),	-- Writhing Prison Cage Rune
 			-- 8.3.0.32712
 			i(175057),	-- H'partho's Whistle
 		})),

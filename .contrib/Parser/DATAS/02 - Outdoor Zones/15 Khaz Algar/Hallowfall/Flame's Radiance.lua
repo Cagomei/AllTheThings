@@ -71,8 +71,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}, {	-- RENOWN 10 --
 					q(89400),	-- Carved Crests
 					q(89496, {	-- Defender of the Sacred Flame
-						i(233299),	-- Sacred Templar's Buckle
-						i(233290),	-- Sacred Templar's Tabard
+						["sourceQuest"] = 89494,	-- A Frocking Good Job
+						["g"] = {
+							i(233299),	-- Sacred Templar's Buckle
+							i(233290),	-- Sacred Templar's Tabard
+						},
 					}),
 					q(89397),	-- Flame's Radiance Stipend
 					------ Paragon ------

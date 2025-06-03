@@ -654,7 +654,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 43.8, 54.5, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(168230),	-- Buried Treasure (QI!)
+				o(325881, {	-- Sand Pile
+					i(168230),	-- Buried Treasure (QI!)
+				}),
 			},
 		}),
 		q(57004, {	-- Create Your Own Strength
@@ -911,7 +913,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		q(57247,{	-- Fathom Ray Wing [A]
 			["races"] = ALLIANCE_ONLY,
-			["provider"] = { "i", 170176 },	-- Fathom Ray Wing
+			["providers"] = {
+				{ "i", 170176 },	-- Fathom Ray Wing
+				{ "n", 150202 },	-- Hunter Akana
+			},
 			["repeatable"] = true,
 		}),
 		q(56972,{	-- Fathom Ray Wing [H]

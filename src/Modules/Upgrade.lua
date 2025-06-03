@@ -390,6 +390,8 @@ local function GetNextItemUnlockBonusIDByString(item)
 	end
 end
 local function GetNextItemUnlockBonusIDByTable(item)
+	if not item.itemID then return end
+
 	local upgrades = BonusIDNextUnlock[item.bonusID or 0]
 	if upgrades then
 		-- app.PrintDebug("upgrade.bonusID",upgrades,app:SearchLink(item))

@@ -275,9 +275,9 @@ if CombineSeasonalLoot then
 					-- Items that work properly (i.e. Heroic=Adventurer=Champion=Hero, Mythic=Myth)
 					{
 						i(168978),	-- Anodized Deflectors
-						i(235811),	-- Extravagant Epaulets
-						i(235809),	-- Mechanized Plate Chasse
-						i(235812),	-- Shoulderguards of Fraying Sanity
+						i(235811, {timeline={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART}}),	-- Extravagant Epaulets
+						i(235809, {timeline={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART}}),	-- Mechanized Plate Chasse
+						i(235812, {timeline={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART}}),	-- Shoulderguards of Fraying Sanity
 					},
 					-- Items that Blizzard switched from the default appearances for this difficulty
 					sharedData({
@@ -288,6 +288,7 @@ if CombineSeasonalLoot then
 					},{
 						i(235810, {	-- Circuit-Linked Chainmail
 							["description"] = "Mythic Keystone drops the Mythic appearance of this Item (upgrades into Heroic)",
+							["timeline"]={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART},
 						}),
 						i(168989),	-- Hyperthread Wristwraps
 						i(168980),	-- Gauntlets of Absolute Authority
@@ -315,83 +316,82 @@ if CombineSeasonalLoot then
 				})),
 			}),
 		}),
-		-- Myth Track Appearances via Upgrade
-		Difficulty(DIFFICULTY.DUNGEON.SEASONAL.TWWS2_HEROTRACK).AddGroups({
-			n(UPGRADE, bubbleDownFiltered({
-				modID = DifficultyDB[DIFFICULTY.DUNGEON.SEASONAL.TWWS2_MYTHTRACK].modID
-			},FILTERFUNC_itemID,{
-				n(MECHAGON_WORKSHOP, {
-					BossOnly(TUSSLETONKS, appendAllGroups(
-						-- Items that work properly
-						{
-							i(168962),	-- Apex Perforator
-							i(168955),	-- Electrifying Cognitive Amplifier
-							i(168967),	-- Gold-Coated Superconductors
-							i(168958),	-- Ringmaster's Cummerbund
-							i(168965),	-- Modular Platinum Plating
-						},
-						-- Items that Blizzard switched from the default appearances for this difficulty
-						sharedData({
-							ItemAppearanceModifierID = 1,
-							-- during the Season, Blizz changed the Item/Appearance association such that Mythic Mod is no longer accurate to the previous Mythic Appearance
-							modID = 35,
-						},{
-							i(168966),	-- Heavy Alloy Legplates
-							i(168964),	-- Hyperthread Boots
-							i(168957),	-- Mekgineer's Championship Belt
-						}
-					))),
-					BossOnly(KUJO, appendAllGroups(
-						-- Items that work properly
-						{
-							i(232546, {timeline={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART}}),	-- K.U.-J.0.'s Flame Vents
-							i(168972),	-- Pyroclastic Greatboots
-							i(168971),	-- Swift Pneumatic Grips
-							i(199921, {	-- Trashmaster's Mantle
-								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
-							}),
-						},
-						-- Items that Blizzard switched from the default appearances for this difficulty
-						sharedData({
-							ItemAppearanceModifierID = 1,
-							-- during the Season, Blizz changed the Item/Appearance association such that Heroic Mod is no longer accurate to the previous Heroic Appearance
-							modID = 35,
-						},{
-							i(168969),	-- Operator's Mitts
-							i(168968),	-- Flame-Seared Leggings
-						}
-					))),
-					Boss(MACHINIST, {
-					}),
-					BossOnly(KING, appendAllGroups(
-						-- Items that work properly
-						{
-							i(168978),	-- Anodized Deflectors
-							i(235811),	-- Extravagant Epaulets
-							i(235809),	-- Mechanized Plate Chasse
-							i(235812),	-- Shoulderguards of Fraying Sanity
-						},
-						-- Items that Blizzard switched from the default appearances for this difficulty
-						sharedData({
-							ItemAppearanceModifierID = 1,
-							-- during the Season, Blizz changed the Item/Appearance association such that Heroic Mod is no longer accurate to the previous Heroic Appearance
-							modID = 35,
-						},{
-							i(235810, {	-- Circuit-Linked Chainmail
-								["description"] = "Mythic Keystone drops the Mythic appearance of this Item (upgrades into Heroic)",
-							}),
-							i(168989),	-- Hyperthread Wristwraps
-							i(168980),	-- Gauntlets of Absolute Authority
-							i(168985),	-- Self-Sanitizing Handwraps
-							i(168986),	-- Mad King's Sporran
-							i(168983),	-- Maniacal Monarch's Girdle
-							i(168982),	-- Regal Mekanospurs
-							i(168988),	-- Royal Attendant's Trouser
-						}
-					)))
+		-- Myth Track Appearances via Upgrade only
+		n(UPGRADE, bubbleDownFiltered({
+			modID = DifficultyDB[DIFFICULTY.DUNGEON.SEASONAL.TWWS2_MYTHTRACK].modID
+		},FILTERFUNC_itemID,{
+			n(MECHAGON_WORKSHOP, {
+				BossOnly(TUSSLETONKS, appendAllGroups(
+					-- Items that work properly
+					{
+						i(168962),	-- Apex Perforator
+						i(168955),	-- Electrifying Cognitive Amplifier
+						i(168967),	-- Gold-Coated Superconductors
+						i(168958),	-- Ringmaster's Cummerbund
+						i(168965),	-- Modular Platinum Plating
+					},
+					-- Items that Blizzard switched from the default appearances for this difficulty
+					sharedData({
+						ItemAppearanceModifierID = 1,
+						-- during the Season, Blizz changed the Item/Appearance association such that Mythic Mod is no longer accurate to the previous Mythic Appearance
+						modID = 35,
+					},{
+						i(168966),	-- Heavy Alloy Legplates
+						i(168964),	-- Hyperthread Boots
+						i(168957),	-- Mekgineer's Championship Belt
+					}
+				))),
+				BossOnly(KUJO, appendAllGroups(
+					-- Items that work properly
+					{
+						i(232546, {timeline={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART}}),	-- K.U.-J.0.'s Flame Vents
+						i(168972),	-- Pyroclastic Greatboots
+						i(168971),	-- Swift Pneumatic Grips
+						i(199921, {	-- Trashmaster's Mantle
+							["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+						}),
+					},
+					-- Items that Blizzard switched from the default appearances for this difficulty
+					sharedData({
+						ItemAppearanceModifierID = 1,
+						-- during the Season, Blizz changed the Item/Appearance association such that Heroic Mod is no longer accurate to the previous Heroic Appearance
+						modID = 35,
+					},{
+						i(168969),	-- Operator's Mitts
+						i(168968),	-- Flame-Seared Leggings
+					}
+				))),
+				Boss(MACHINIST, {
 				}),
-			})),
-		}),
+				BossOnly(KING, appendAllGroups(
+					-- Items that work properly
+					{
+						i(168978),	-- Anodized Deflectors
+						i(235811, {timeline={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART}}),	-- Extravagant Epaulets
+						i(235809, {timeline={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART}}),	-- Mechanized Plate Chasse
+						i(235812, {timeline={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART}}),	-- Shoulderguards of Fraying Sanity
+					},
+					-- Items that Blizzard switched from the default appearances for this difficulty
+					sharedData({
+						ItemAppearanceModifierID = 1,
+						-- during the Season, Blizz changed the Item/Appearance association such that Heroic Mod is no longer accurate to the previous Heroic Appearance
+						modID = 35,
+					},{
+						i(235810, {	-- Circuit-Linked Chainmail
+							["description"] = "Mythic Keystone drops the Mythic appearance of this Item (upgrades into Heroic)",
+							["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+						}),
+						i(168989),	-- Hyperthread Wristwraps
+						i(168980),	-- Gauntlets of Absolute Authority
+						i(168985),	-- Self-Sanitizing Handwraps
+						i(168986),	-- Mad King's Sporran
+						i(168983),	-- Maniacal Monarch's Girdle
+						i(168982),	-- Regal Mekanospurs
+						i(168988),	-- Royal Attendant's Trouser
+					}
+				)))
+			}),
+		})),
 		-- Item Appearance changes during the Season
 		Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
 			n(MECHAGON_JUNKYARD, {

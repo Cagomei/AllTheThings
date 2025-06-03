@@ -3565,7 +3565,7 @@ root(ROOTS.Zones, {
 							i(21910),	-- Pattern: Spellfire Robe (RECIPE!)
 						},
 					}),
-					-- #if BEFORE 4.0.1
+					-- #if BEFORE 7.0.3
 					n(28723, {	-- Larana Drome <Inscription Supplies>
 						["coord"] = { 41.8, 36.8, NORTHREND_DALARAN },
 						["groups"] = {

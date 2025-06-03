@@ -197,11 +197,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {
 							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 					n(3355, {	-- Saru Steelfury <Blacksmithing Trainer>
 						["coord"] = { 76.4, 34.4, ORGRIMMAR },
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
+						["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {
 							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 								["isLimited"] = true,
 							}),

@@ -35,6 +35,7 @@ EVENTS = {
 
 	-- FOMO
 	PLUNDERSTORM = 446916,	-- This is a fake eventID. (Crieve made this up!) ((Pinchy the Plunderer spellID!))
+	REMIX_LEGION = 1525555,	-- This is a fake eventID. (Goldenshacal made this up!)
 	REMIX_MOP = 1525,
 	DASTARDLY_DUOS = 1599,
 	WINDS_OF_MYSTERIOUS_FORTUNE = 1670,

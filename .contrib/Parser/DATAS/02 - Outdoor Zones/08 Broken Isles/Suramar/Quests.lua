@@ -554,7 +554,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 103568 },	-- Mayruna Moonwing
 				}),
 				q(41575, {	-- Felsoul Teleporter Online!
-					["coord"] = { 53.6, 36.7, SURAMAR },
+					["coord"] = { 53.6, 36.7, 682 },	-- Felsoul Hold
 					["provider"] = { "o", 252107 },	-- Unpowered Telemancy Beacon
 				}),
 				q(41474, {	-- Fertilizing the Future

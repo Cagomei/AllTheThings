@@ -1403,6 +1403,114 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 	}),
 	expansion(EXPANSION.BFA, {
+		expansion(EXPANSION.BFA, patch(3,0), {	-- Not loading ingame
+			i(173391),	-- Belt of the Black Empire
+			i(173151),	-- Boots of the Black Empire
+			i(173390),	-- Bracers of the Black Empire
+			i(173389),	-- Chestpiece of the Black Empire
+			i(174240),	-- Cloth Belt - PH \\ Cloth Belt
+			i(174239),	-- Cloth Boots - PH \\ Cloth Boots
+			i(174238),	-- Cloth Bracer - PH \\ Cloth Bracer
+			i(174235),	-- Cloth Chest - PH \\ Cloth Chest
+			i(174241),	-- Cloth Gloves - PH \\ Cloth Gloves
+			i(173833),	-- Cloth Headdress
+			i(173857),	-- Cloth Headdress
+			i(173832),	-- Cloth Mantle
+			i(173856),	-- Cloth Mantle
+			i(174236),	-- Cloth Shoulder - PH \\ Cloth Shoulder
+			i(173834),	-- Cloth Wraps
+			i(173858),	-- Cloth Wraps
+			i(173177),	-- Corrupted Greaves
+			i(173178),	-- Corrupted Greaves
+			i(173181),	-- Corrupted Greaves
+			i(173184),	-- Corrupted Greaves
+			i(173185),	-- Corrupted Greaves
+			i(173176),	-- Corrupted Smashers
+			i(173179),	-- Corrupted Smashers
+			i(173182),	-- Corrupted Smashers
+			i(173183),	-- Corrupted Smashers
+			i(173186),	-- Corrupted Smashers
+			i(173388),	-- Gloves of the Black Empire
+			i(172978),	-- H Vision Buckle
+			i(172986),	-- H Vision Buckle
+			i(172994),	-- H Vision Buckle
+			i(172972),	-- H Vision Chestplate
+			i(172980),	-- H Vision Chestplate
+			i(172988),	-- H Vision Chestplate
+			i(172974),	-- H Vision Crushers
+			i(172982),	-- H Vision Crushers
+			i(172990),	-- H Vision Crushers
+			i(172976),	-- H Vision Greaves
+			i(172984),	-- H Vision Greaves
+			i(172992),	-- H Vision Greaves
+			i(172975),	-- H Vision Headguard
+			i(172983),	-- H Vision Headguard
+			i(172991),	-- H Vision Headguard
+			i(172977),	-- H Vision Shoulderplates
+			i(172985),	-- H Vision Shoulderplates
+			i(172993),	-- H Vision Shoulderplates
+			i(172973),	-- H Vision Smashers
+			i(172981),	-- H Vision Smashers
+			i(172989),	-- H Vision Smashers
+			i(172979),	-- H Vision Wristguards
+			i(172987),	-- H Vision Wristguards
+			i(172995),	-- H Vision Wristguards
+			i(173387),	-- Helm of the Black Empire
+			i(174248),	-- Leather Belt - PH \\ Leather Belt
+			i(174249),	-- Leather Boots - PH \\ Leather Boots
+			i(174246),	-- Leather Bracer - PH \\ Leather Bracer
+			i(174245),	-- Leather Gloves - PH \\ Leather Gloves
+			i(173830),	-- Leather Headcover
+			i(173854),	-- Leather Headcover
+			i(174244),	-- Leather Shoulder - PH \\ Leather Shoulder
+			i(173829),	-- Leather Shoulderpads
+			i(173853),	-- Leather Shoulderpads
+			i(173831),	-- Leather Wraps
+			i(173855),	-- Leather Wraps
+			i(173152),	-- Leggings of the Black Empire
+			i(174242),	-- Lether Chest - PH \\ Lether Chest
+			i(174256),	-- Mail Belt - PH \\ Mail Belt
+			i(174257),	-- Mail Boots - PH \\ Mail Boots
+			i(174254),	-- Mail Bracer - PH \\ Mail Bracer
+			i(174251),	-- Mail Chest - PH \\ Mail Chest
+			i(174253),	-- Mail Gloves - PH \\ Mail Gloves
+			i(173827),	-- Mail Helm
+			i(173851),	-- Mail Helm
+			i(174252),	-- Mail Shoulder - PH \\ Mail Shoulder
+			i(173826),	-- Mail Shoulderguards
+			i(173850),	-- Mail Shoulderguards
+			i(173828),	-- Mail Vest
+			i(173852),	-- Mail Vest
+			i(174263),	-- Plate Belt - PH \\ Plate Belt
+			i(174265),	-- Plate Boots - PH \\ Plate Boots
+			i(174262),	-- Plate Bracer - PH \\ Plate Bracer
+			i(174259),	-- Plate Chest - PH \\ Plate Chest
+			i(173825),	-- Plate Chestplate
+			i(173849),	-- Plate Chestplate
+			i(173824),	-- Plate Faceguard
+			i(173848),	-- Plate Faceguard
+			i(174261),	-- Plate Gloves - PH \\ Plate Gloves
+			i(174260),	-- Plate Shoulder - PH \\ Plate Shoulder
+			i(173823),	-- Plate Shoulderplates
+			i(173847),	-- Plate Shoulderplates
+			i(173860),	-- Ring
+			i(173861),	-- Ring
+			i(173865),	-- Ring
+			i(173866),	-- Ring
+			i(174085),	-- Ring
+			i(174086),	-- Ring
+			i(174087),	-- Ring
+			i(174088),	-- Ring
+			i(173386),	-- Spaulders of the Black Empire
+			i(173862),	-- Trinket
+			i(173863),	-- Trinket
+			i(173864),	-- Trinket
+			i(173867),	-- Trinket
+			i(173868),	-- Trinket
+			i(173869),	-- Trinket
+			i(174266),	-- Trinket - PH \\ Trinket
+			i(174267),	-- Trinket - PH \\ Trinket
+		}),
 		d(DIFFICULTY.DUNGEON.TIMEWALKING, {
 			expansion(EXPANSION.LEGION, patch(2,5), {
 				i(150450),	-- Nether Shadow Tunic
@@ -1432,6 +1540,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(165792),	-- Worn Cloak
 			}),
 			expansion(EXPANSION.BFA, patch(3,0), {
+				i(170741),	-- Felsoul Cloak of Destruction
 				i(174857),	-- Hidden Cloak
 			}),
 			n(P8xx, {
@@ -1498,6 +1607,16 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(167117, {["sourceID"] = 103269 }),	-- QA Combat Test Caster Boots
 				i(167118, {["sourceID"] = 103270 }),	-- QA Combat Test Caster Bracer 1
 			}),
+			expansion(EXPANSION.BFA, patch(3,0), {
+				i(170909),	-- Felsoul Cord
+				i(170905),	-- Felsoul Cowl
+				i(170904),	-- Felsoul Handwraps
+				i(170906),	-- Felsoul Leggings
+				i(170907),	-- Felsoul Robe
+				i(170903),	-- Felsoul Sandals
+				i(170908),	-- Felsoul Shoulderpads
+				i(170910),	-- Felsoul Wristwraps
+			})
 		}),
 		filter(LEATHER, {
 			expansion(EXPANSION.BFA, patch(0,1), {
@@ -1710,10 +1829,13 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(166490),	-- Shiny Ring
 			}),
 			expansion(EXPANSION.BFA, patch(3,0), {
+				i(174470),	-- Bound Sinew Ring \\ Ring - PH
 				i(174050),	-- Corrupted Ring - Revel in Violence
 				i(174051),	-- Corrupted Ring - Spontaneous Fury
 				i(174056),	-- Corrupted Ring - Face the Truth
 				i(174057),	-- Corrupted Ring - Mesmerizing
+				i(170738),	-- Felsoul Band of Destruction
+				i(174468),	-- Ring of Deceitful Rumors \\ Ring - PH
 			}),
 			n(P8xx, {
 				i(167135),	-- QA Combat Test Ring 1
@@ -1758,6 +1880,8 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			expansion(EXPANSION.BFA, patch(3,0), {
 				i(173426),	-- Black Empire trinkets
+				i(170737),	-- Felsoul Idol of Destruction
+				i(170740),	-- Felsoul Stone of Destruction
 			}),
 			n(P8xx, {
 				i(167138),	-- QA Combat Test Trinket 1

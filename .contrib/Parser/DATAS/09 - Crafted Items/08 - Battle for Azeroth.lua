@@ -1316,6 +1316,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(152579),	-- Storm Silver Ore
 		i(161085),	-- Tattered Map
 	}),
+	prof(SKINNING, {
+		i(174353),	-- Questionable Meat
+	}),
 	prof(TAILORING, {
 		n(DISCOVERY, {
 			{	-- Embroidered Deep Sea Breeches

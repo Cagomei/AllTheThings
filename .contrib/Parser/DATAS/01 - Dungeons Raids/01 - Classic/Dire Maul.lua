@@ -1127,6 +1127,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 			}),
+			n(TREASURES, {
+				o(179526, {	-- Warpwood Pod
+					filter(REAGENTS, i(18255)),	-- Runn Tum Tuber
+					filter(CONSUMABLES, i(18297)),	-- Thornling Seed
+				}),
+			}),
 			n(ZONE_DROPS, {
 				["maps"] = ALL_DIREMAUL_MAPS,
 				["groups"] = {
@@ -1346,6 +1352,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								["timeline"] = { ADDED_10_1_5 },
 							}),
 							i(18267),	-- Recipe: Runn Tum Tuber Surprise (RECIPE!)
+							filter(REAGENTS, i(18255)),	-- Runn Tum Tuber
 						},
 					}),
 					n(14349, {	-- Pimgib

@@ -26,6 +26,10 @@ app.Modules.Catalyst = api
 -- References the CatalystID of the corresponding Catalyst object which contains the available Catalyst results in ATT
 -- Blizzard likely has some other meaning for the value I've used for 'catalystID' but it seems to correlate to this purpose
 local PossibleCatalystBonusIDLookups = app.ItemConversionDB
+if not PossibleCatalystBonusIDLookups then
+	app.print("Catalyst Module missing ItemConversionDB! Cannot load!")
+	return
+end
 
 local CatalystArmorSlots = {
 	["INVTYPE_HEAD"] = true,
@@ -135,6 +139,7 @@ local function GetCatalyst(data)
 	catalystResult.bonuses = app.CloneArray(bonuses)
 	-- Don't let a baked-in upgrade persist since our upgradeLevel might not allow it
 	catalystResult.up = nil
+	catalystResult._up = nil
 	catalystResult.containsType = "CATALYST"
 
 	-- app.PrintDebug("Catalyst Result:",catalystResult.hash,catalystResult.up,app:SearchLink(catalystResult))

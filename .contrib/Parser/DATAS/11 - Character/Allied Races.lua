@@ -1231,6 +1231,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["coord"] = { 74.8, 63.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(171970),	-- Nazeshi Trident (QI!)
+					i(171971),	-- Nazeshi Mace (QI!)
+					i(171972),	-- Nazeshi Spear (QI!)
+					i(171973),	-- Nazeshi Staff (QI!)
+					i(171974),	-- Nazeshi Sword (QI!)
 					i(171968),	-- Nazeshi Weaponry (QI!)
 				},
 			}),
