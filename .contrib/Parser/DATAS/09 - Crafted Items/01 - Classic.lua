@@ -903,6 +903,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(15871),	-- Truesilver Skeleton Key
 			i(206648, {["timeline"] = {ADDED_10_1_5}}),	-- Undeath Metal
 		}),
+		-- Tools:
+		i(5956, {["collectible"] = false}),	-- Blacksmithing Hammer
 		n(WEAPONS, {
 			i(206493, {["timeline"] = {ADDED_10_1_5}}),	-- Axe of Sundered Bone
 			i(7945),	-- Big Black Mace
@@ -1913,6 +1915,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(6522),	-- Deviate Fish
 		i(6359),	-- Firefin Snapper
+		i(13893),	-- Large Raw Mightfish
 		i(6358),	-- Oily Blackmouth
 		i(6291, {	-- Raw Brilliant Smallfish
 			-- #if AFTER 4.0.3
@@ -1986,12 +1989,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			["description"] = "Can be caught in open sea water in Azshara, Cape of Stranglethorn, Dustwallow Marsh and Tanaris.",
 			-- #endif
 		}),
+	--	i(13756),	-- Raw Summer Bass
+		i(13760),	-- Raw Sunscale Salmon
 		i(13889, {	-- Raw Whitescale Salmon
 			-- #if AFTER 4.0.3
 			["description"] = "Can be caught in open inland waters in Blasted Lands, Un'Goro Crater and Winterspring.",
 			-- #endif
 		}),
 		i(13422),	-- Stonescale Eel
+	--	i(13755),	-- Winter Squid
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
 				["description"] = "Can be fished from schools.",
@@ -3939,6 +3945,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(3466),	-- Strong Flux
 				i(18567),	-- Elemental Flux
 				i(3857),	-- Coal
+			}),
+			-- Cooking reagents from vendors
+			sharedData({
+				["description"] = "Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",
+			},{
+				i(159),	-- Refreshing Spring Water
+				i(30817, { ["timeline"] = { ADDED_2_0_1 }}),	-- Simple Flour
+				i(2678),	-- Mild Spices
+				i(2692, { ["timeline"] = { REMOVED_3_0_2 }}),	-- Hot Spices
+				i(3713, { ["timeline"] = { REMOVED_3_0_2 }}),	-- Soothing Spices
 			})
 		),
 	}),

@@ -62,6 +62,13 @@ CLASSIC_COOKING = {
 	r(3399, {["timeline"] = {ADDED_4_0_3}}),	-- Tasty Lion Steak
 	r(93741, {["timeline"] = {ADDED_4_0_3}}),	-- Venison Jerky
 };
+VANILLA_COOKING_VENDOR_REAGENTS = {
+	i(159),	-- Refreshing Spring Water
+	i(30817),	-- Simple Flour
+	i(2678),	-- Mild Spices
+	i(2692),	-- Hot Spices
+	i(3713),	-- Soothing Spices
+};
 TBC_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_1_0 } }, {
 	r(33359, {	-- Cooking (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },

@@ -153,10 +153,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						["sym"] = {{"sub", "common_recipes_vendor", 49701}},	-- Jon Casper <Sous Chef>
 						-- #endif
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_COOKING_VENDOR_REAGENTS, {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						},
+						}),
 					}),
 				}),
 				prof(ENCHANTING, {

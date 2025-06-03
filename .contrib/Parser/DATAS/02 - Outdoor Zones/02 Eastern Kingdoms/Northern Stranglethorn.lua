@@ -3097,6 +3097,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_6 },
 				}),
 			}),
+			n(TREASURES, {
+				o(2744, {	-- Giant Clam
+					["coords"] = {
+						{ 28.1, 45.9, NORTHERN_STRANGLETHORN },	-- The Vile Reef
+					},
+					["nomerge"] = true,
+					["groups"] = {
+						i(4611),	-- Blue Pearl
+						i(4655),	-- Giant Clam Meat
+					},
+				}),
+			}),
 			n(VENDORS, {
 				n(734, {	-- Corporal Bluth <Camp Trader>
 					["coords"] = {

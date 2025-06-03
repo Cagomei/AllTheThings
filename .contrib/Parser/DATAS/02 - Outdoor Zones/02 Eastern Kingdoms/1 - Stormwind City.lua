@@ -238,10 +238,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 51.4, 18.0, STORMWIND_CITY },
 						["timeline"] = { ADDED_7_3_5 },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_COOKING_VENDOR_REAGENTS, {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						},
+						}),
 					}),
 					n(5483, {	-- Erika Tate <Cooking Supplies> [TBC+] / Erika Tate <Cooking Supplier>
 						["coords"] = {
@@ -252,10 +252,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_COOKING_VENDOR_REAGENTS, {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						},
+						}),
 					}),
 					n(49701, {	-- Jon Casper <Sous Chef>
 						["coords"] = {

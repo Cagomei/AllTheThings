@@ -1320,6 +1320,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 			}),
+			n(TREASURES, {
+				o(19017),	-- Giant Clam
+			}),
 			n(VENDORS, {
 				n(18427, {	-- Fazu <Tradesman>
 					["coord"] = { 53.4, 56.6, BLOODMYST_ISLE },

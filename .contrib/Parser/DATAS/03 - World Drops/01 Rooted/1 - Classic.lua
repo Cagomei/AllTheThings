@@ -4529,7 +4529,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 		}),
-		-- From beasts:
+		-- Claws, fangs, feathers,+++:
 		i(5637, {	-- Large Fang
 			-- #if BEFORE 4.0.3
 			["description"] = "Drops from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats ranging from level 25 to 40.",
@@ -4609,10 +4609,62 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		-- Black Diamonds:
-			i(11754, {["maps"] = { BLACKROCK_DEPTHS }, }),	-- Black Diamond
-			i(18335, {	-- Pristine Black Diamond
-				["description"] = "Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",
-			}),
+		i(11754, {["maps"] = { BLACKROCK_DEPTHS }, }),	-- Black Diamond
+		i(18335, {	-- Pristine Black Diamond
+			["description"] = "Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",
+		}),
+		-- Clams:
+		i(7973, {	-- Big-mouth Clam
+			-- #if AFTER 4.0.3
+			["coords"] = {
+				{ 66.0, 70.0, BLASTED_LANDS },	-- The Red Reaches
+			},
+			-- #endif
+			["maps"] = {
+				-- #if BEFORE 4.0.3
+				AZSHARA,
+				DUSTWALLOW_MARSH,
+				FERALAS,
+				STRANGLETHORN_VALE,
+				-- #else
+				THOUSAND_NEEDLES,
+				-- #endif
+				SWAMP_OF_SORROWS,
+				TANARIS,
+				THE_HINTERLANDS,
+			},
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops commonly from humanoid and beast sea creatures like naga, giants and turtles in the level bracket 40-60.",
+			-- #elseif AFTER BFA
+			["description"] = "Drops commonly from humanoid and beast sea creatures like naga, giants and turtles in the level bracket 30-60.",
+			-- #else
+			["description"] = "Drops commonly from humanoid and beast sea creatures like naga, giants and turtles in the listed zones.",
+			-- #endif
+			["groups"] = {
+				i(7974),	-- Zesty Clam Meat
+				i(7971),	-- Black Pearl
+				i(13926),	-- Golden Pearl
+				i(5500),	-- Iridescent Pearl
+				i(5498),	-- Small Lustrous Pearl
+			},
+		}),
+		o(2744),	-- Giant Clam (with Giant Clam Meat, found in STV)
+		o(19017, {	-- Giant Clam (with Clam Meat, found in Bloodmyst Isle and Ghostlands)
+			["description"] = "Can be found in the sea.",
+			["nomerge"] = true,
+			["groups"] = {
+				i(5503),	-- Clam Meat
+				i(5498),	-- Small Lustrous Pearl
+			},
+		}),
+		o(19018, {	-- Giant Clam (with Tangy Clam Meat, found in BfD)
+			["nomerge"] = true,
+			["groups"] = {
+				i(2143),	-- Cuirboulli Boots (confirmed - Danny Donkey)
+				i(5500),	-- Iridescent Pearl
+				i(5504),	-- Tangy Clam Meat
+			},
+		}),
 		-- Alchemy:
 		i(19441, {	-- Huge Venom Sac
 			-- #if BEFORE 4.0.3
@@ -4697,6 +4749,127 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				7855,	-- Southsea Pirate
 				7858,	-- Southsea Swashbuckler
 			},
+		}),
+		-- Cooking:
+		i(35562, {	-- Bear Flank
+			["coords"] = {
+				{ 39.0, 45.2, FELWOOD },	-- Shatter Scale Vale, west of
+				{ 43.5, 63.0, FELWOOD },	-- Wildhearth Point, west of
+				{ 46.1, 83.0, FELWOOD },	-- Dreadwood Village, north of
+				{ 54.1, 86.7, FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border)
+			},
+			["crs"] = {
+				8956,	-- Angerclaw Bear
+				8958,	-- Angerclaw Mauler
+			},
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from bears in the level bracket 45-60 like Angerclaw bears in Felwood.",
+			-- #elseif AFTER BFA
+			["description"] = "Drops from bears in previously highlevel vanilla zones like Angerclaw bears in Felwood.",
+			-- #else
+			["description"] = "Drops from bears in the old level bracket 45-60 like Angerclaw bears in Felwood.",
+			-- #endif
+			["timeline"] = { ADDED_2_4_0 },
+		}),
+		i(3404, {	-- Buzzard Wing
+			["coords"] = {
+				{ 47.1, 42.0, TANARIS },	-- Northen Abyssal Sands
+				{ 36.5, 61.2, TANARIS },	-- Southern Abyssal Sands
+			},
+			["crs"] = {
+				5429,	-- Fire Roc
+				-- #if BEFORE 4.0.3
+				5428,	-- Roc
+				-- #endif
+				5430,	-- Searing Roc
+			},
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from carrion birds in the level bracket 30-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			-- #elseif AFTER BFA
+			["description"] = "Drops from carrion birds in previously higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			-- #else
+			["description"] = "Drops from carrion birds in the old level bracket 30-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			-- #endif
+		}),
+		i(12207, {	-- Giant Egg
+			["coords"] = {
+				{ 47.1, 42.0, TANARIS },	-- Northen Abyssal Sands
+				{ 36.5, 61.2, TANARIS },	-- Southern Abyssal Sands
+			},
+			["crs"] = {
+				5429,	-- Fire Roc
+				-- #if BEFORE 4.0.3
+				5428,	-- Roc
+				-- #endif
+				5430,	-- Searing Roc
+			},
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from birds and owlbeasts in the level bracket 40-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			-- #elseif AFTER BFA
+			["description"] = "Drops from birds and owlbeasts in previously higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			-- #else
+			["description"] = "Drops from birds and owlbeasts in the old level bracket 40-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			-- #endif
+		}),
+		i(12037, {	-- Mystery Meat
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 35.0, 8.0, STRANGLETHORN_VALE },	-- Nesingwary's Expedition, north of.
+				{ 40.0, 22.0, STRANGLETHORN_VALE },	-- Lake Nazieriti, south end.
+				-- #else
+				{ 43.3, 19.7, NORTHERN_STRANGLETHORN },	-- Nesingwary's Expedition, north of.
+				{ 50.9, 40.6, NORTHERN_STRANGLETHORN },	-- Lake Nazieriti, south end.
+				-- #endif
+			},
+			["crs"] = {
+				2635,	-- Elder Snapjaw Crocolisk
+				1150,	-- River Crocolisk
+				-- #if BEFORE 4.0.3
+				1151,	-- Saltwater Crocolisk
+				-- #endif
+				1152,	-- Snapjaw Crocolisk
+			},
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in the level bracket 30-60 like Crocolisks in Stranglethorn.",
+			-- #elseif AFTER BFA
+			["description"] = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in previously higher intermediate to highlevel vanilla zones like Crocolisks in Stranglethorn.",
+			-- #else
+			["description"] = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in the old level bracket 30-60 like Crocolisks in Stranglethorn.",
+			-- #endif
+		}),
+		i(12206, {	-- Tender Crab Meat
+			["coords"] = {
+				{ 81.9, 11.5, SWAMP_OF_SORROWS },	-- Bogpaddle, east of.
+				{ 88.6, 22.9, SWAMP_OF_SORROWS },	-- Misty Reed Strand, by Giblin settlement.
+			},
+			["crs"] = {
+				1088,	-- Monstrous Crawler
+				922,	-- Silt Crawler
+			},
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from crawlers in the level bracket 40-45 like Crawlers in Swamp of Sorrows.",
+			-- #elseif AFTER BFA
+			["description"] = "Drops from crawlers in previously higher intermediate level vanilla zones like Crawlers in Swamp of Sorrows.",
+			-- #else
+			["description"] = "Drops from crawlers in the old level bracket 40-45 like Crawlers in Swamp of Sorrows.",
+			-- #endif
+		}),
+		i(12208, {	-- Tender Wolf Meat
+			["coords"] = {
+				{ 54.1, 86.7, FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border).
+				{ 45.2, 69.0, FELWOOD },	-- Ruins of Constellas, east of.
+			},
+			["crs"] = {
+				8960,	-- Felpaw Scavenger
+				8959,	-- Felpaw Wolf
+			},
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from wolves in the level bracket 40-60 like Felpaw wolves in Felwood.",
+			-- #elseif AFTER BFA
+			["description"] = "Drops from wolves in previously higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",
+			-- #else
+			["description"] = "Drops from wolves in the old level bracket 40-60 like Felpaw wolves in Felwood.",
+			-- #endif
 		}),
 		-- Engineering:
 		i(7191),	-- Fused Wiring

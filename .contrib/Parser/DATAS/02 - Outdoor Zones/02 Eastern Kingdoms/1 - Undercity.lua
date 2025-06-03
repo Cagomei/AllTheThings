@@ -127,12 +127,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = {{"sub", "common_recipes_vendor", 49737}},	-- Shazdar <Sous Chef>
 						-- #endif
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_COOKING_VENDOR_REAGENTS, {
 							i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 							i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						},
+						}),
 					}),
 				}),
 				prof(ENCHANTING, {

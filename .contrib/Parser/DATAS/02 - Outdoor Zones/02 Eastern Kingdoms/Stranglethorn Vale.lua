@@ -2667,6 +2667,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}))),
 			-- #endif
+			n(TREASURES, {
+				o(2744, {	-- Giant Clam
+					["coords"] = {
+						{ 28.1, 45.9, NORTHERN_STRANGLETHORN },	-- The Vile Reef
+					},
+					["nomerge"] = true,
+					["groups"] = {
+						i(4611),	-- Blue Pearl
+						i(4655),	-- Giant Clam Meat
+					},
+				}),
+			}),
 			n(VENDORS, {
 				n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
 					["coords"] = {
@@ -3450,16 +3462,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 697,	-- Bloodscalp Shaman
 				}),
+				-- #if BEFORE CATA
 				i(4611, {	-- Blue Pearl
-					["provider"] = { "o", 2744 },	-- Giant Clam
-					-- #if BEFORE CATA
 					["crs"] = {
 						877,	-- Saltscale Forager
 						879,	-- Saltscale Hunter
 						871,	-- Saltscale Warrior
 					},
-					-- #endif
 				}),
+				-- #endif
 				i(5079, {	-- Cold Basilisk Eye
 					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 690,	-- Cold Eye Basilisk

@@ -491,6 +491,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 			}),
+			n(TREASURES, {
+				o(19018),	-- Giant Clam
+			}),
 			n(4887, {	-- Ghamoo-ra
 				["timeline"] = { REMOVED_6_0_2 },
 				-- #if BEFORE 6.0.1.18322

@@ -248,14 +248,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 41.0, 79.4, ORGRIMMAR },
 						["timeline"] = { ADDED_7_3_5 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_COOKING_VENDOR_REAGENTS, {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						},
+						}),
 					}),
 					n(45551, {	-- Karizi Porkpatty <Cooking Supplies>
 						["coord"] = { 39.0, 85.6, ORGRIMMAR },
-						["timeline"] = { ADDED_4_0_1 },
+						["timeline"] = { ADDED_4_0_1, REMOVED_7_3_5 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
@@ -319,10 +319,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 56.6, 61.2, ORGRIMMAR },
 						["timeline"] = { ADDED_4_0_1 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_COOKING_VENDOR_REAGENTS, {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						},
+						}),
 					}),
 					n(3400, {	-- Xen'to <Cooking Supplies>
 						["coords"] = {
@@ -333,10 +333,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_COOKING_VENDOR_REAGENTS, {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						},
+						}),
 					}),
 					n(3399, bubbleDownSelf({ ["timeline"] = { ADDED_1_11_1 }, }, {	-- Zamja <Cooking Trainer>
 						["coord"] = { 32.2, 69.6, ORGRIMMAR },
@@ -1034,7 +1034,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				n(5817, {	-- Shimra <Trade Supplies>
-					["coord"] = { 57.0, 50.05, ORGRIMMAR },
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 54.0, 81.87, ORGRIMMAR },

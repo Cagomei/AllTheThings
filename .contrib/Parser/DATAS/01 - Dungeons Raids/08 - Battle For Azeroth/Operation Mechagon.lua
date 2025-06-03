@@ -214,6 +214,10 @@ end
 -- Combine all the Seasonal Difficulties into one difficulty group since they are all shared
 local SeasonDifficultyGroups
 if CombineSeasonalLoot then
+	local function BackwardsHeroTrackItem(item)
+		item.description = "Mythic Keystone drops the Mythic appearance of this Item (upgrades into Heroic)"
+		return item
+	end
 	SeasonDifficultyGroups = {
 		-- Assumptions:
 			-- No Azerite is available in any difficulty during Season
@@ -286,14 +290,13 @@ if CombineSeasonalLoot then
 						modID = 33,
 						up = 35,	-- Upgrades to the modID 35 version
 					},{
-						i(235810, {	-- Circuit-Linked Chainmail
-							["description"] = "Mythic Keystone drops the Mythic appearance of this Item (upgrades into Heroic)",
+						BackwardsHeroTrackItem(i(235810, {	-- Circuit-Linked Chainmail
 							["timeline"]={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART},
-						}),
+						})),
 						i(168989),	-- Hyperthread Wristwraps
 						i(168980),	-- Gauntlets of Absolute Authority
 						i(168985),	-- Self-Sanitizing Handwraps
-						i(168986),	-- Mad King's Sporran
+						BackwardsHeroTrackItem(i(168986)),	-- Mad King's Sporran
 						i(168983),	-- Maniacal Monarch's Girdle
 						i(168982),	-- Regal Mekanospurs
 						i(168988),	-- Royal Attendant's Trouser
@@ -377,14 +380,13 @@ if CombineSeasonalLoot then
 						-- during the Season, Blizz changed the Item/Appearance association such that Heroic Mod is no longer accurate to the previous Heroic Appearance
 						modID = 35,
 					},{
-						i(235810, {	-- Circuit-Linked Chainmail
-							["description"] = "Mythic Keystone drops the Mythic appearance of this Item (upgrades into Heroic)",
-							["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
-						}),
+						BackwardsHeroTrackItem(i(235810, {	-- Circuit-Linked Chainmail
+							["timeline"]={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART},
+						})),
 						i(168989),	-- Hyperthread Wristwraps
 						i(168980),	-- Gauntlets of Absolute Authority
 						i(168985),	-- Self-Sanitizing Handwraps
-						i(168986),	-- Mad King's Sporran
+						BackwardsHeroTrackItem(i(168986)),	-- Mad King's Sporran
 						i(168983),	-- Maniacal Monarch's Girdle
 						i(168982),	-- Regal Mekanospurs
 						i(168988),	-- Royal Attendant's Trouser

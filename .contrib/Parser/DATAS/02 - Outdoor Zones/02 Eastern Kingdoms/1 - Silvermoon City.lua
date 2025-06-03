@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					n(16677, {	-- Quelis <Cooking Supplies>
 						["coord"] = { 69.6, 71.2, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = QUELIS_GROUPS,
+						["groups"] = appendGroups(QUELIS_GROUPS, VANILLA_COOKING_VENDOR_REAGENTS, {}),
 					}),
 				}),
 				prof(ENCHANTING, {

@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					n(16718, {	-- Phea <Cooking Supplies>
 						["coord"] = { 54.4, 26.3, THE_EXODAR },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = PHEA_GROUPS,
+						["groups"] = appendGroups(PHEA_GROUPS, VANILLA_COOKING_VENDOR_REAGENTS, {}),
 					}),
 				}),
 				prof(ENCHANTING, {

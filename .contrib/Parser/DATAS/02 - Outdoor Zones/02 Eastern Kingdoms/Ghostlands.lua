@@ -1323,6 +1323,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				o(19017),	-- Giant Clam
 				o(184793, {	-- Primitive Chest
 					["coords"] = {
 						{ 81.5, 36.6, GHOSTLANDS },
