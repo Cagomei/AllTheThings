@@ -9,6 +9,7 @@ local pairs,ipairs,rawget,tinsert,tonumber,GetTimePreciseSec,tremove,select,setm
 	= pairs,ipairs,rawget,tinsert,tonumber,GetTimePreciseSec,tremove,select,setmetatable,getmetatable,type
 
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
+local Callback = app.CallbackHandlers.Callback
 local Runner = app.CreateRunner("update")
 app.UpdateRunner = Runner
 
@@ -418,7 +419,7 @@ local function DirectGroupUpdate(group, got)
 end
 app.DirectGroupUpdate = DirectGroupUpdate
 -- Trigger a soft-Update of the window containing the specific group, regardless of Filtering/Visibility of the group
-local function DirectGroupRefresh(group)
+local function DirectGroupRefresh(group, immediate)
 	local isForceShown = group.forceShow
 	-- Allow adjusting visibility only if needed
 	if isForceShown then
@@ -427,7 +428,11 @@ local function DirectGroupRefresh(group)
 	local window = app.GetRelativeRawWithField(group, "window")
 	if window then
 		-- app.PrintDebug("DGR:Refresh",group.hash,">",DGUDelay,window.Suffix,window.Refresh)
-		DelayedCallback(window.Update, DGUDelay, window)
+		if immediate then
+			Callback(window.Update, window)
+		else
+			DelayedCallback(window.Update, DGUDelay, window)
+		end
 	else
 		-- app.PrintDebug("DGR:Refresh",group.hash,">",DGUDelay,"No window!")
 		-- app.PrintTable(group)

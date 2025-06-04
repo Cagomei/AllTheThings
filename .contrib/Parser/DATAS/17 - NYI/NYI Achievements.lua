@@ -684,6 +684,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
 			-- 11.1.5.60008
 			ach(15558),	-- Survey Bot (Added in 11.1.5.60008, removed in 11.1.5.60067)
+			ach(41700),	-- Dastardly Duos Weekly Wins
 		})),
 	}),
 }));

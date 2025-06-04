@@ -17,7 +17,7 @@ local floor, 	  type, tonumber,pairs,wipe
 local SearchForObject, GetRelativeRawWithField
 	= app.SearchForObject, app.GetRelativeRawWithField
 
--- Upgrade API Implementation
+-- Search API Implementation
 -- Access via AllTheThings.Modules.Search
 local api = {};
 app.Modules.Search = api;

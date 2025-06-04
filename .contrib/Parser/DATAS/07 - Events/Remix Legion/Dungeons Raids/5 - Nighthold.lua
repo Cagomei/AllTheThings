@@ -3,19 +3,13 @@
 -----------------------------------------------------
 --[[root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_LEGION_REMIX_END } }, {
 	n(RAIDS, {
-		inst(362, {	-- Throne of Thunder
+		inst(786, {	-- The Nighthold
 			["isRaid"] = true,
-			["coord"] = { 63.4, 32.6, ISLE_OF_THUNDER },	-- Throne of Thunder
-			["maps"] = {
-				508,	-- Overgrown Statuary
-				509,	-- Royal Amphitheater
-				510,	-- Forgotten Depths
-				511,	-- Roost of Ji-Kun
-				512,	-- Halls of Flesh-Shaping
-				513,	-- Hall of Kings
-				514,	-- Pinnacle of Storms
-				515,	-- Hidden Cell
+			["coords"] = {
+				{ 43.3, 62.3, SURAMAR },	-- entrance that leads underground
+				{ 44.1, 59.7, SURAMAR },	-- actual raid entrance
 			},
+			["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(19955, {	-- Raid Finder: Throne of Thunder

@@ -3,28 +3,10 @@
 -----------------------------------------------------
 --[[root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_LEGION_REMIX_END } }, {
 	n(RAIDS, {
-		inst(369, {	-- Siege of Orgrimmar
+		inst(861, {	-- Trial of Valor
 			["isRaid"] = true,
-			["coords"] = {
-				{ 72.3, 44.3, VALE_OF_ETERNAL_BLOSSOMS },
-			},
-			["maps"] = {
-				556,
-				557,
-				558,
-				559,
-				560,
-				561,
-				562,
-				563,
-				564,
-				565,
-				566,
-				567,
-				568,
-				569,
-				570,
-			},
+			["coord"] = { 70.4, 69.4, STORMHEIM },
+			["maps"] = { 806, 807, 808 },
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(19958, {	-- Raid Finder: Siege of Orgrimmar

@@ -30,9 +30,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 				ach(42003),	-- Bullhorn of More Plenty
 				ach(42004),	-- Bullhorn of Most Plenty
 				ach(41905),	-- Center of Attention
-				ach(41700, {	-- Dastardly Duos Weekly Wins
-					["timeline"] = { REMOVED_11_1_7 },
-				}),
 				ach(41706, {	-- Dastardly Duos Weekly High Score
 					-- TODO: Does parser know what to do with 21 (Designer Value{`Uses Record ID})?
 					["sym"] = {{ "achievement_criteria"}},
@@ -190,7 +187,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						--- Gear
 						-- Sorted with D&R Source too
 						i(238990),	-- Necklace of the Chrono-Lord
-						
+
 						--there are list only with new (unsorted) items
 						i(238984),	-- Baroness Silverlaine's Locket
 						i(239008),	-- Moonchild Leggings
@@ -203,7 +200,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						--i(157628),	-- Gold-Fiecked Gloves
 						--i(157755),	-- Missing Diplomat's Pauldrons
 						--i(157754),	-- Old Friend's Gloves
-						
+
 						--[[ Probably all items that drop here too
 						-- The Steamvault (sourced under the dungeon)
 							--i(238929),	-- Cloak of Whispering Shells
@@ -227,7 +224,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 							i(238978),	-- Burden of Lost Humanity
 							i(238979),	-- Phantom Armor
 							i(238980),	-- Pendant of the Keep
-							
+
 							-- Shadowfang Keeep (not yet sourced)
 							i(238981),	-- Gloves of the Uplifted Cup
 							i(238982),	-- Baron Silverlaine's Greaves

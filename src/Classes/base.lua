@@ -225,25 +225,29 @@ local DefaultFields = {
 	-- check 'if [not] o.CanRetry then ...'
 	-- Assign this field directly in the group if re-tries on the group should be permanently disabled
 	-- i.e. if not t.CanRetry then t.CanRetry = false end
+	-- (number) - the retry has been started with this duration in seconds
+	-- true - the group is pending an active retry timer
+	-- nil - the group has retried and the retry timer has not been re-started
 	["CanRetry"] = function(t)
 		local canretry = t.__canretry
 		if canretry == nil then
 			-- first check if we can retry for this group
 			canretry = true
 			t.__canretry = canretry
-			-- app.PrintDebug("retry:start",app:SearchLink(t))
+			-- app.PrintDebug("retry:start",t,canretry,t.hash)
 			-- after some seconds, mark this group to no longer retry
 			DelayedCallback(function(t)
-				-- app.PrintDebug("__cantry:done",app:SearchLink(t))
+				-- app.PrintDebug("__cantry:done",t,false,t.hash)
 				t.__canretry = false
 				t.HasRetried = true
 			end, CAN_RETRY_DURATION_SEC, t)
+			return CAN_RETRY_DURATION_SEC
 		elseif canretry == false then
 			-- group has been marked to stop retrying, but it can be re-tried later
 			t.__canretry = nil
-			-- app.PrintDebug("retry:nil",app:SearchLink(t))
+			-- app.PrintDebug("retry:nil",t,nil,t.hash)
 			return
-		-- else app.PrintDebug("retry:wait",t)
+		-- else app.PrintDebug("retry:wait",t,canretry)	-- cannot ref t fields here or may infinite loop on CanRetry from .text
 		end
 		return canretry
 	end,

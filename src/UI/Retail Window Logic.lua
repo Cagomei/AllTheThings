@@ -1748,9 +1748,11 @@ app.AddEventHandler("RowOnEnter", function(self)
 	-- Attempt to show the object as a hyperlink in the tooltip
 	local linkSuccessful;
 	local refkey = reference.key
-	local questReplace = app.Settings:GetTooltipSetting("Objectives")
-	if refkey ~= "encounterID" and refkey ~= "instanceID" and (refkey ~= "questID" or not questReplace) then
-		-- Encounter & Instance Links break the tooltip
+	-- Items always use their links
+	if reference.itemID
+		-- Quest links are ignored if 'Objectives' is enabled
+		or (refkey ~= (app.Settings:GetTooltipSetting("Objectives") and "questID" or "_Z_"))
+	then
 		local link = reference.link or reference.tooltipLink or reference.silentLink
 		if link and link:sub(1, 1) ~= "[" then
 			local ok, result = pcall(tooltip.SetHyperlink, tooltip, link);
@@ -1760,7 +1762,6 @@ app.AddEventHandler("RowOnEnter", function(self)
 				-- if a link fails to render a tooltip, it clears the tooltip and the owner
 				-- so we have to re-assign it here for it to use :Show()
 				tooltip:SetOwner(self, owner);
-				if not questReplace then questReplace = true end
 			end
 			-- app.PrintDebug("Link:", link:gsub("|","\\"));
 			-- app.PrintDebug("Link Result!", result, refkey, reference.__type,"TT lines",tooltip:NumLines());
