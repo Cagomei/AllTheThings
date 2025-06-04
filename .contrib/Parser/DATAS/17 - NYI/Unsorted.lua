@@ -379,9 +379,6 @@ root(ROOTS.Unsorted, {
 				i(238936),	-- Scale Leggings of the Skirmisher
 				i(238937),	-- Light-Touched Breastplate
 
-				-- Shadowfang Keeep
-				-- Unsure
-				i(238980),	-- Pendant of the Keep
 				-- Didnt make it
 				i(238981),	-- Gloves of the Uplifted Cup
 				i(238982),	-- Baron Silverlaine's Greaves

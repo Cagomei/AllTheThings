@@ -21,7 +21,7 @@ DASTARDLY_DUOS = createHeader({
 
 root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"] = { ADDED_11_1_5 } }, {
 	n(DASTARDLY_DUOS, {
-		--["maps"] = {  },	--
+		["maps"] = { 2447 },	-- Dastardly Duos
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				-- TODO: These all currently have the same achievement icon so I don't think Blizzard has finished this yet. Maybe the PTR event date 17/3 to 24/3 is their deadline? :D
@@ -201,7 +201,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						--i(157755),	-- Missing Diplomat's Pauldrons
 						--i(157754),	-- Old Friend's Gloves
 
-						--[[ Probably all items that drop here too
+						-- Probably all items that drop here too
 						-- The Steamvault (sourced under the dungeon)
 							--i(238929),	-- Cloak of Whispering Shells
 							--i(238930),	-- Scintillating Coral Band
@@ -209,25 +209,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 							--i(238988),	-- Earth Mantle Handwraps
 
 							-- Hellfire Ramprats (not yet sourced)
-							i(238934),	-- Boots of the Darkwalker
-							i(238936),	-- Scale Leggings of the Skirmisher
-							i(238937),	-- Light-Touched Breastplate
+							-- i(238934),	-- Boots of the Darkwalker
+							-- i(238936),	-- Scale Leggings of the Skirmisher
+							-- i(238937),	-- Light-Touched Breastplate
 
 							-- Deadmines (sourced under the dungeon)
-							i(238938),	-- Vest of the Curious Visitor
-							i(238939),	-- Missing Diplomat's Pauldrons
-							i(238940),	-- Defias Brotherhood Vest
+							-- i(238938),	-- Vest of the Curious Visitor
+							-- i(238939),	-- Missing Diplomat's Pauldrons
+							-- i(238940),	-- Defias Brotherhood Vest
 
 							-- Shadowfang Keeep (sourced under the dungeon)
-							i(238976),	-- Blinders of the Follower
-							i(238977),	-- Iron Will Girdle
-							i(238978),	-- Burden of Lost Humanity
-							i(238979),	-- Phantom Armor
+							-- i(238976),	-- Blinders of the Follower
+							-- i(238977),	-- Iron Will Girdle
+							-- i(238978),	-- Burden of Lost Humanity
+							-- i(238979),	-- Phantom Armor
 							i(238980),	-- Pendant of the Keep
 
 							-- Shadowfang Keeep (not yet sourced)
-							i(238981),	-- Gloves of the Uplifted Cup
-							i(238982),	-- Baron Silverlaine's Greaves
+							-- i(238981),	-- Gloves of the Uplifted Cup
+							-- i(238982),	-- Baron Silverlaine's Greaves
 							i(238983),	-- Boots of Lingering Sorrow
 
 							-- The Culling of Stratholme (sourced under the dungeon)
@@ -236,7 +236,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 							--i(238993),	-- Cracked Epoch Grasps
 
 							-- The Blood Furnace (not yet sourced)
-							i(239009),	-- Signet of Repose
+							-- i(239009),	-- Signet of Repose
 						--]]
 						--- Podium Upgrade?
 						i(240203),	-- Podium Upgrade: Scrappy
@@ -279,6 +279,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- In order to clear a bit messup and to sort out more clearly on live
 			-- Week 1:
 			--q (87510),	-- fired after first completion Dastardly Duos
+			q(90775),	-- completed with '86503'
 			-- Week 2:
 			--q (87511),	-- ^ same as above, but week 2
 			q(87527),	-- there also was crit for other achievements but I wasn't smart enought to log it

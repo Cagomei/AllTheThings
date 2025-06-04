@@ -61,7 +61,12 @@ local SkipAutoExpands = {
 	headerID = {
 		[app.HeaderConstants.ZONE_DROPS] = true,
 		[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
-		[app.HeaderConstants.HOLIDAYS] = true
+		[app.HeaderConstants.HOLIDAYS] = true,
+	},
+	objectID = {
+		[375368] = true,	-- Creation Catalyst Console
+		[382621] = true,	-- Revival Catalyst Console
+		[456208] = true,	-- The Catalyst
 	},
 	-- Item/Difficulty as Headers should not expand
 	itemID = true,

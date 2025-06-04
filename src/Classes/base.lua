@@ -733,7 +733,7 @@ app.SwapClassDefinitionMethod = function(className, classField, newFunc)
 	local curFunc = class[classField]
 	if not curFunc then app.print("Class",className,"does not contain field",classField) return end
 
-	if newFunc and type(newFunc) ~= "function" then app.print("Cannot assing non-function for Class",className,"field",classField) return end
+	if newFunc and type(newFunc) ~= "function" then app.print("Cannot assign non-function for Class",className,"field",classField) return end
 
 	local swapdefaults = class.__swapdefaults
 	if not swapdefaults then
@@ -823,7 +823,18 @@ app.CreateCache = function(idField, className)
 		end
 		app.PrintDebug("CACHE_MISS",idField,">",id,t.__type,t.hash)
 		app.PrintTable(t)
-	end;
+	end
+	cache.GetCachedByID = function(id)
+		if id then
+			_t = cache[id];
+			if not _t then
+				_t = {};
+				cache[id] = _t;
+			end
+			return _t, id;
+		end
+		app.PrintDebug("CACHE_MISS_ID",idField,">",id)
+	end
 	cache.GetCachedField = function(t, field, default_function)
 		--[[ -- Debug Prints
 		local _t, id = cache.GetCached(t);
@@ -845,7 +856,7 @@ app.CreateCache = function(idField, className)
 			end
 			return v
 		end
-	end;
+	end
 	cache.SetCachedField = function(t, field, value)
 		--[[ Debug Prints
 		local _t, id = cache.GetCached(t);
@@ -857,11 +868,11 @@ app.CreateCache = function(idField, className)
 		--]]
 		_t = cache.GetCached(t);
 		if _t then _t[field] = value; end
-	end;
+	end
 	if app.__perf then
 		return app.__perf.AutoCaptureTable(cache, "ClassCache:"..(className or idField))
 	end
-	return cache;
+	return cache
 end
 
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
