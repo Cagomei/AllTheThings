@@ -4,7 +4,7 @@
     /// https://wago.tools/db2/UiMapAssignment
     /// </summary>
     [DataModule]
-    public class UiMapAssignment : IDBType
+    public class UiMapAssignment : IDBType, IWagoAreaID, IWagoUiMapID
     {
         public long ID { get; set; }
         public double UiMin_0 { get; set; }

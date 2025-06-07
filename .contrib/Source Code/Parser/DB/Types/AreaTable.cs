@@ -4,7 +4,7 @@
     /// https://wago.tools/db2/AreaTable
     /// </summary>
     [DataModule]
-    public class AreaTable : IDBType
+    public class AreaTable : IDBType, IWagoAreaID
     {
         public long ID { get; set; }
         public string ZoneName { get; set; }
@@ -35,5 +35,15 @@
         public long LiquidTypeID_1 { get; set; }
         public long LiquidTypeID_2 { get; set; }
         public long LiquidTypeID_3 { get; set; }
+
+        #region Data Transformations
+        public long AreaID
+        {
+            get
+            {
+                return ID;
+            }
+        }
+        #endregion
     }
 }

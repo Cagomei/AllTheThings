@@ -789,7 +789,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				["coord"] = { 20.5, 39.6, 2372 },	-- Is it like 3rd version of Arathi?
 				["g"] = {
 					o(474102, {	-- Ellie
-						i(230000),	-- Ellie (QI!)
+						["coord"] = { 14.2, 41.9, 2372 },	-- Arathi Highlands
+						["g"] = {
+							i(230000),	-- Ellie (QI!)
+						},
 					}),
 				},
 			}),
@@ -868,7 +871,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				["coord"] = { 69.7, 39.2, 2372 },
 				["g"] = {
 					o(475190, {	-- Supply Crate
-						["coord"] = { 70.1, 37.7, 2372 },
+						["coord"] = { 69.0, 35.2, 2372 },
 					}),
 				},
 			}),
@@ -932,14 +935,56 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					}),
 				},
 			}),
-			q(84713, {	-- Fallen Fortress
+			q(84657, {	-- Return to Stromgarde // ALLIANCE_ONLY
 				["sourceQuests"] = { 84712 },	-- False Flag
-				["provider"] = { "n", 231826 },	-- Eitrigg
+				["provider"] = { "n", 231828 },	-- Faering Lothar
+				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 41.5, 61.4, 2372 },
 			}),
-			q(84715, {	-- The Search for Danath
+			q(87299, {	-- How Old Are These Things? // ALLIANCE_ONLY
+				["sourceQuests"] = { 84657 },	-- Return to Stromgarde
+				["provider"] = { "n", 238012 },	-- Captain Roderick Brewston
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 17.7, 60.3, 2372 },
+				["g"] = {
+					i(231878), -- Articles of Proof (QI!)
+					i(231879), -- Defias Bandana (QI!)
+					i(231880), -- Orange Bandana (QI!)
+					i(231883), -- Scarlet Crusade Tabard (QI!)
+					i(231884), -- Stromgarde Tabard (QI!)
+					i(231881), -- Syndicate Emblem (QI!)
+				},
+			}),
+			q(84659, {	-- The Search for Faerin // ALLIANCE_ONLY
+				["sourceQuests"] = { 84657 },	-- Return to Stromgarde
+				["provider"] = { "n", 238012 },	-- Captain Roderick Brewston
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 17.7, 60.3, 2372 },
+				["g"] = {
+					o(516416, {	-- Red Dawn Propaganda
+						["coord"] = { 15.2, 62.0, 2372 },
+					}),
+					o(516414, {	-- Red Dawn Oaths of Loyalty
+						["coord"] = { 14.5, 65.0, 2372 },
+					}),
+					o(516417, {	-- Red Dawn Propaganda
+						["coord"] = { 16.4, 68.8, 2372 },
+					}),
+					o(516415, {	-- Red Dawn Propaganda
+						["coord"] = { 14.2, 69.3, 2372 },
+					}),
+				},
+			}),
+			q(84713, {	-- Fallen Fortress // HORDE_ONLY
+				["sourceQuests"] = { 84712 },	-- False Flag
+				["provider"] = { "n", 231826 },	-- Eitrigg
+				["races"] = HORDE_ONLY,
+				["coord"] = { 41.5, 61.4, 2372 },
+			}),
+			q(84715, {	-- The Search for Danath // HORDE_ONLY
 				["sourceQuests"] = { 84713 },	-- Fallen Fortress
 				["provider"] = { "n", 231832 },	-- Eitrigg
+				["races"] = HORDE_ONLY,
 				["coord"] = { 27.8, 25.6, 2372 },
 				["g"] = {
 					o(478203, {	-- Barracks Prison Key
@@ -959,9 +1004,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					}),
 				},
 			}),
-			q(84714, {	-- From Ironforge With Love
+			q(84714, {	-- From Ironforge With Love // HORDE_ONLY
 				["sourceQuests"] = { 84713 },	-- Fallen Fortress
 				["provider"] = { "n", 231833 },	-- Overlord Geya'rah
+				["races"] = HORDE_ONLY,
 				["coord"] = { 27.9, 25.7, 2372 },
 				["g"] = {
 					i(235999),	-- Bundle of Heavy Silk Bandages (QI!)
@@ -972,20 +1018,28 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					i(235996),	-- Stolen Ironforge Supplies (QI!)
 				},
 			}),
-			q(84716, {	-- Returning to Stromgarde
+			q(84716, {	-- Returning to Stromgarde // HORDE_ONLY
 				["sourceQuests"] = {
 					84715,	-- The Search for Danath
 					84714,	-- From Ironforge With Love
 				},
 				["provider"] = { "n", 230154 },	-- Danath Trollbane
+				["races"] = HORDE_ONLY,
 				["coord"] = { 27.9, 34.3, 2372 },
 			}),
 			q(84717, {	-- Rise of the Red Dawn
-				["sourceQuests"] = { 84716 },	-- Returning to Stromgarde
+				["sourceQuests"] = {
+					84716,	-- Returning to Stromgarde
+					--
+					87299,	-- How Old Are These Things?
+					84659,	-- The Search for Faerin
+				},
+				["sourceQuestNumRequired"] = 1,	-- TODO: for horde it is 1 quest (84716) but for alliance it is up after 2 (84659 & 87299)
 				["provider"] = { "n", 231837 },	-- Faering Lothar
 				["coord"] = { 19.4, 59.1, 2372 },
 				["g"] = {
 					i(239135),	-- Hammerfall Tabard (COSMETIC!)
+					i(239136),	-- Stromgarde Tabard (COSMETIC!)
 				},
 			}),
 			q(85529, {	-- Past Glory
@@ -994,11 +1048,29 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				["coord"] = { 21.6, 65.0, 2372 },
 				["g"] = {
 					i(239137),	-- Lamplighter's Pauldrons (COSMETIC!)
-					-- TODO: Myrh worth a look at here
-					-- Chain was runned on ptr at horde @ 60520 build
+					-- TODO: Myrh worth a look at here, just in case
 					ach(41820),	-- Rise of the Red Dawn
 					title(629),	-- %s of Hammerfall
 				},
+			}),
+			--- Stay awhile and listen ---
+			hqt(91524, {	-- Stay awhile and listen: Captaion Roderick Brewston
+				["name"] = "Stay awhile and listen: Captaion Roderick Brewston",
+				["sourceQuests"] = { 84649 },	-- Marran Trollbane
+				["provider"] = { "n", 229951 },	-- Captaion Roderick Brewston
+				["coord"] = { 17.4, 59.5, 2372 },
+			}),
+			hqt(91532, {	-- Stay awhile and listen: Faerin Lothar
+				["name"] = "Stay awhile and listen: Faerin Lothar",
+				["sourceQuests"] = { 84650 },	-- Finding Refuge at Refuge Pointe
+				["provider"] = { "n", 230815 },	-- Faerin Lothar
+				["coord"] = { 40.8, 53.5, 2372 },
+			}),
+			hqt(91534, {	-- Stay awhile and listen: Eitrigg
+				["name"] = "Stay awhile and listen: Eitrigg",
+				["sourceQuests"] = { 84656 },	-- Onward to Hammerfall (TODO: but probably only during 84704?)
+				["provider"] = { "n", 231759 },	-- Eitrigg
+				["coord"] = { 69.6, 32.8, 2372 },
 			}),
 		})),
 	}),

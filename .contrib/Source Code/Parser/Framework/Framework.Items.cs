@@ -450,10 +450,6 @@ namespace ATT
                     case "skipFill":
                     case "pvp":
                     case "pb":
-                        {
-                            item[field] = Convert.ToBoolean(value);
-                            break;
-                        }
                     case "sr":
                         {
                             item[field] = Convert.ToBoolean(value);
@@ -705,6 +701,13 @@ namespace ATT
                         if (field.StartsWith("_"))
                         {
                             Objects.Merge(item, field, value);
+                            return;
+                        }
+                        // Config-defined fields
+                        if (Objects.SINGULAR_PLURAL_FIELDS_LONG.TryGetValue(field, out string pluarlFieldName))
+                        {
+                            Objects.MergeSingularFieldAsArray<long>(item, pluarlFieldName, value);
+                            return;
                         }
                         break;
                 }

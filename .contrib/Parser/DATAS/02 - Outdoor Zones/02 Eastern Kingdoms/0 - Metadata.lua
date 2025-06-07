@@ -209,13 +209,6 @@ root(ROOTS.Zones, {
 						4898,	-- Wetlands Quests
 						-- #endif
 					}},
-					-- #else
-					-- #if BEFORE WRATH
-					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. EASTERN_KINGDOMS .. [[); end]],
-					["rank"] = 700,
-					-- #endif
 					-- #endif
 					-- #if BEFORE 5.0.4
 					["races"] = ALLIANCE_ONLY,
@@ -240,13 +233,6 @@ root(ROOTS.Zones, {
 						4893,	-- Western Plaguelands Quests
 						4894,	-- Silverpine Forest Quests
 					}},
-					-- #else
-					-- #if BEFORE WRATH
-					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. EASTERN_KINGDOMS .. [[); end]],
-					["rank"] = 550,
-					-- #endif
 					-- #endif
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,

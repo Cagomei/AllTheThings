@@ -1,9 +1,7 @@
 TREASURES = createHeader({
 	readable = "Treasures",
 	constant = "TREASURES",
-	-- #if NOT ANYCLASSIC
-	export = true,	-- This is referenced in topHeaders
-	-- #endif
+	export = true,
 	icon = [[~_.asset("Interface_Tchest")]],
 	text = {
 		-- #if ANYCLASSIC

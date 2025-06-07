@@ -803,7 +803,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(168850),	-- Time-Lost Battlefield Memento (Rank 1)
 			},
 		})),
-		q(56001, {	-- Drunk Angry Murlocs
+		q(56001, {	-- Drunk Angry Murlocs (A)
 			["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
@@ -812,10 +812,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				i(170075),	-- Recipe: Unagi Skewer (RECIPE!)
-				i(168629),	-- Ocean "Infused" Lager (QI!)
+				o(326727, {	-- Shipwrecked Keg
+					i(168629),	-- Ocean "Infused" Lager (QI!)
+				}),
 			},
 		}),
-		q(56265, {	-- Drunk Angry Murlocs
+		q(56265, {	-- Drunk Angry Murlocs (H)
 			["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 			["coord"] = { 25.5, 26.5, NAZJATAR },
 			["sourceQuest"] = 55500,	-- Save A Friend
@@ -824,7 +826,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				i(170075),	-- Recipe: Unagi Skewer (RECIPE!)
-				i(168629),	-- Ocean "Infused" Lager (QI!)
+				o(326727, {	-- Shipwrecked Keg
+					i(168629),	-- Ocean "Infused" Lager (QI!)
+				}),
 			},
 		}),
 		q(55569, {	-- Echoes of Pain
@@ -1235,19 +1239,27 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					o(322803),	-- Kelpberry
 				}),
 				o(327221, {	-- Kelpberry Cask
-					i(168174),	-- Cask of Kelpberry Juice (QI!)
+					["coord"] = { 57.8, 40.9, NAZJATAR },
+					["g"] = { i(168174) },	-- Cask of Kelpberry Juice (QI!)
 				}),
 			},
 		}),
 		q(55638, {	-- Making Kelpberry Wine (H)
-			["coord"] = { 59.5, 41.8, NAZJATAR },
-			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
-			["provider"] = { "o", 325869 },	-- Empty Cask
 			["sourceQuest"] = 55500,	-- Save A Friend
+			["provider"] = { "o", 325869 },	-- Empty Cask
+			["isDaily"] = true,
+			["coord"] = { 59.5, 42.0, NAZJATAR },
+			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(168174),	-- Cask of Kelpberry Juice (QI!)
-				i(168173),	-- Kelpberry (QI!)
+				o_repeated({
+					i(168173),	-- Kelpberry (QI!)
+					o(322791),	-- Kelpberry
+					o(322803),	-- Kelpberry
+				}),
+				o(327221, {	-- Kelpberry Cask
+					["coord"] = { 57.8, 40.9, NAZJATAR },
+					["g"] = { i(168174) },	-- Cask of Kelpberry Juice (QI!)
+				}),
 			},
 		}),
 		q(55482, {	-- Making the Connection
@@ -1300,7 +1312,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154239 },	-- Tracker Otaru
 			["g"] = {
-				i(168658),	-- Neptulian Clam (QI!)
+				o(327158, {	-- Neptulian Clam
+					i(168658),	-- Neptulian Clam (QI!)
+				}),
 				i(168672),	-- Rift Diver (QI!)
 			},
 		}),
@@ -1312,7 +1326,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			["g"] = {
-				i(168658),	-- Neptulian Clam (QI!)
+				o(327158, {	-- Neptulian Clam
+					i(168658),	-- Neptulian Clam (QI!)
+				}),
 				i(168672),	-- Rift Diver (QI!)
 			},
 		}),

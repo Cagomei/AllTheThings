@@ -310,6 +310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest
 							ach(5839, {	-- Dragonwrath, Tarecgosa's Rest
 								["provider"] = { "i", 71086 },	-- Dragonwrath, Tarecgosa's Rest
+								["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
 							}),
 						},
 					},

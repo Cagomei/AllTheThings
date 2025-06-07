@@ -4699,7 +4699,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 86.0, 54.0, DUSKWOOD },	-- By spider cave east of Darkshire
 				{ 77.0, 60.0, DUSKWOOD },	-- Windmill crossroad
 			},
-			["cr"] = { 930 },	-- Black Widow Hatchling
+			["crs"] = { 930 },	-- Black Widow Hatchling
 			-- #endif
 		}),
 		i(1475, {	-- Small Venom Sac

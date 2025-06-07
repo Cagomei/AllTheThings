@@ -2320,7 +2320,7 @@ namespace ATT
             long worldMapOverlayID = criteriaData.GetExplorationWorldMapOverlayID();
             if (worldMapOverlayID > 0)
             {
-                if (WagoData.TryGetValue<WorldMapOverlay>(worldMapOverlayID, out var overlay))
+                if (WagoData.TryGetValue(worldMapOverlayID, out WorldMapOverlay overlay))
                 {
                     long explorationID = overlay.AreaID_0;
                     if (explorationID > 0)
@@ -2730,6 +2730,48 @@ namespace ATT
                     case 26:
                         Objects.Merge(data, "c", new List<object> { existingModifierTree.Asset });
                         TrackIncorporationData(data, "c", new List<object> { existingModifierTree.Asset });
+                        break;
+                    // 41 (SOURCE_ZONE)
+                    case 41:
+                        if (WagoData.TryGetAreaAssociations(existingModifierTree.Asset, out List<UiMapAssignment> associations))
+                        {
+                            var dict = new Dictionary<long, object>();
+                            foreach (var uiMapAssociation in associations)
+                            {
+                                var mapID = uiMapAssociation.UiMapID;
+                                if (mapID > 0) dict[mapID] = mapID;
+                            }
+                            if (dict.Count > 0)
+                            {
+                                var maps = dict.Values.ToList();
+                                Objects.Merge(data, "maps", maps);
+                                TrackIncorporationData(data, "maps", maps);
+                                /*
+                                Console.WriteLine("ADDED MAP DATA TO ACHIEVEMENT:");
+                                Console.WriteLine(MiniJSON.Json.Serialize(data));
+                                Console.ReadLine();
+                                */
+                            }
+                            /*
+                            else
+                            {
+                                Console.WriteLine("FAILED TO FIND MAP DATA TO ACHIEVEMENT:");
+                                Console.WriteLine(MiniJSON.Json.Serialize(data));
+                                Console.WriteLine(MiniJSON.Json.Serialize(existingModifierTree));
+                                Console.WriteLine(MiniJSON.Json.Serialize(associations));
+                                Console.ReadLine();
+                            }
+                            */
+                        }
+                        /*
+                        else
+                        {
+                            Console.WriteLine("FAILED TO FIND AREA DATA TO ACHIEVEMENT:");
+                            Console.WriteLine(MiniJSON.Json.Serialize(data));
+                            Console.WriteLine(MiniJSON.Json.Serialize(existingModifierTree));
+                            Console.ReadLine();
+                        }
+                        */
                         break;
                     // 62 (GUILD_REPUTATION)
                     case 62:

@@ -175,7 +175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["sourceQuest"] = 24548,	-- The Splintered Throne
 						["groups"] = {
 							i(49623),	-- Shadowmourne
-							ach(4623),	-- Shadowmourne
+							ach(4623, { ["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT } }),	-- Shadowmourne
 						},
 					}),
 					q(24748, {	-- The Lich King's Last Stand

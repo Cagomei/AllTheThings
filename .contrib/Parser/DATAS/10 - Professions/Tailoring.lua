@@ -1763,6 +1763,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Felcloth Gloves",
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 					["recipeID"] = 22867,
 				}),
 				{
@@ -1804,10 +1805,12 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Inferno Gloves",
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 					["recipeID"] = 22868,
 				}),
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Mooncloth Gloves",
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 					["recipeID"] = 22869,
 				}),
 				{
@@ -2078,6 +2081,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Cloak of Warding",
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 					["recipeID"] = 22870,
 				}),
 				{
@@ -6767,10 +6771,10 @@ itemrecipe("Pattern: Soul Pouch", 21358, 26085);
 itemrecipe("Pattern: Enchanted Mageweave Pouch", 22307, 27658);
 
 itemrecipe("Pattern: Belt of the Archmage", 18414, 22866, PHASE_ONE_DIREMAUL);
-itemrecipe("Pattern: Felcloth Gloves", 18415, 22867, PHASE_ONE_DIREMAUL);
-itemrecipe("Pattern: Inferno Gloves", 18416, 22868, PHASE_ONE_DIREMAUL);
-itemrecipe("Pattern: Mooncloth Gloves", 18417, 22869, PHASE_ONE_DIREMAUL);
-itemrecipe("Pattern: Cloak of Warding", 18418, 22870, PHASE_ONE_DIREMAUL);
+itemrecipe("Pattern: Felcloth Gloves", 18415, 22867, PHASE_ONE_DIREMAUL, { REMOVED_4_0_3 });
+itemrecipe("Pattern: Inferno Gloves", 18416, 22868, PHASE_ONE_DIREMAUL, { REMOVED_4_0_3 });
+itemrecipe("Pattern: Mooncloth Gloves", 18417, 22869, PHASE_ONE_DIREMAUL, { REMOVED_4_0_3 });
+itemrecipe("Pattern: Cloak of Warding", 18418, 22870, PHASE_ONE_DIREMAUL, { REMOVED_4_0_3 });
 itemrecipe("Pattern: Mooncloth Robe", 18487, 22902, PHASE_ONE_DIREMAUL);
 
 itemrecipe("Pattern: Wisdom of the Timbermaw", 19215, 23662, PHASE_THREE_RECIPES);

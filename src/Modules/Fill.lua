@@ -290,16 +290,10 @@ local SettingsBasedFillers = {
 }
 
 local function RefreshActiveFillFunctions()
-	local ActiveFillers = #ActiveFillFunctions
 	wipe(ActiveFillFunctions)
 	for i=1,#FillPriority do
 		ActiveFillFunctions[#ActiveFillFunctions + 1] = FillFunctions[FillPriority[i]]
 		-- app.PrintDebug("ActiveFiller",i,ActiveFillFunctions[i])
-	end
-	-- was there a change in fillers?
-	if ActiveFillers ~= #ActiveFillFunctions then
-		-- TODO: don't really have a consistent way to 'rebuild' any given window due to Filler changes...
-		-- only one is minilist can rebuild
 	end
 end
 local function ToggleFiller(name, active)
@@ -348,6 +342,7 @@ app.AddEventHandler("OnStartup", function()
 	end)
 
 	-- add a refresh fillers event
+	-- TODO: hook this to minilist to rebuild
 	app.AddEventHandler("Fill.RefreshFillers", RefreshActiveFillFunctions)
 	-- add event sequences for filler changes later (this ensures that the refresh event is performed via callback)
 	app.LinkEventSequence("Fill.OnAddFiller", "Fill.RefreshFillers")

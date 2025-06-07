@@ -1305,7 +1305,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		 i(203730),	-- Rustic Winterpelt Supplies
 		 i(204213),	-- Short-Range Teleport
 		 i(202075),	-- Temp Currency
-		 i(203657),	-- Toxin Antidote
 		 i(203223),	-- Valdrakken Supply Coffe
 		 i(203854),	-- Warblades of the Hakkari, Reborn
 		})),

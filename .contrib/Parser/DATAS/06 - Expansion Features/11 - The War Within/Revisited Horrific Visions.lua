@@ -307,6 +307,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					filter(TRINKET_F, {
 						i(236915),	-- Book of Dark Visions
+						i(236917),	-- Dark Dreamer's Talisman
+						i(236918),	-- Pulsating Void Disk
 						i(236914),	-- Unbound Vision Journal
 						i(236919),	-- Void Spike
 						i(236916),	-- Void-Whittled Spike
@@ -1145,8 +1147,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(85831),	-- Mage Quarter
 		q(85832),	-- Old Town
 		--
-		q(90528, {name="Old Town & Mask"}),	-- either hqt to pop thing for moto or mask drop hqt after clearing up old town (with Long Night mask)
 		q(90524, {name="Mage Quarter & Mask"}),	-- either hqt to pop thing for moto or mask drop hqt after clearing up mage quarter (with Long Night mask)
+		q(90528, {name="Old Town & Mask"}),	-- either hqt to pop thing for moto or mask drop hqt after clearing up old town (with Long Night mask)
+		q(90529, {name="Valley of Honor & Mask"}),	-- pop after clearing Valley of Honor with 1 mask (mask sourceQuest?)
+		q(90530, {name="Valley of Wisdom & Mask"}),	-- pop after clearing Valley of Wisdom with 1 mask (new masks sourceQuest?)
 		--q(90531),	-- pop with delay after Alleria was killed (all district was cleared with Long Night mask), when was moved into chests room
 		--^ one of it could be tribute upgrade?
 		q(87389),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
@@ -1165,9 +1169,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(88911, {name="Completion & 4 Mask"}),	-- All district was cleared  (4 masks), pop after killing Thrall // reward lockout questID?
 		q(87386, {name="Completion & 5 Mask"}),	-- All district was cleared  (5 masks), pop after killing Thrall // reward lockout questID?
 		q(88912, {name="Completion & 5 Mask"}),	-- All district was cleared  (5 masks), pop after killing Thrall // reward lockout questID?
-		--
-		--q(90530),	-- pop after clearing Valley of Wisdom with 2 masks (new masks sourceQuest?)
-		--q(90529),	-- pop after killing Rexxar with 3 masks (mask sourceQuest?)
-		--
+		q(88915),	-- First 8 Mask Vision of Stormwind?
 	}),
 })));

@@ -80,6 +80,8 @@
     <Compile Include="DataValidator.cs" />
     <Compile Include="DB\Attributes\ExportableDataAttribute.cs" />
     <Compile Include="DB\Attributes\DataModuleAttribute.cs" />
+    <Compile Include="DB\Interfaces\IWagoUiMapID.cs" />
+    <Compile Include="DB\Interfaces\IWagoAreaID.cs" />
     <Compile Include="DB\Interfaces\IWagoItemModifiedAppearanceID.cs" />
     <Compile Include="DB\Interfaces\IWagoTransmogSetID.cs" />
     <Compile Include="DB\Interfaces\IWagoSpellID.cs" />

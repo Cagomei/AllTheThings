@@ -16,6 +16,7 @@ SET FILTER=^&filter^\[ID\]=exact%%3A17023
 call :download Criteria
 SET FILTER=^&filter^\[ID\]=exact%%3A18653^|18654
 call :downloadlocalized CriteriaTree
+call :downloadrenamed WorldMapOverlay worldmapoverlay
 exit /b
 
 :download
@@ -55,5 +56,14 @@ if not exist "%1.%2.%BUILD%.csv" (
 	) else (
 		curl -o "%1.%2.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%&locale=%2%FILTER%"
 	)
+)
+exit /b
+
+:downloadrenamed
+if not exist "%1.%BUILD%.csv" (
+	if exist "%1*.csv" (
+		del /Q "%1*.csv"
+	)
+	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%"
 )
 exit /b

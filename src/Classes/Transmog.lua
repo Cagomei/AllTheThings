@@ -30,8 +30,8 @@ local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
 
 -- Transmog is supported!
 -- Global locals
-local ipairs, select, tinsert, pairs, rawget
-	= ipairs, select, tinsert, pairs, rawget;
+local ipairs, select, tinsert, pairs, rawget,rawset
+	= ipairs, select, tinsert, pairs, rawget,rawset
 local C_Item_IsDressableItemByID, GetSlotForInventoryType
 ---@diagnostic disable-next-line: deprecated
 	= C_Item.IsDressableItemByID, C_Transmog.GetSlotForInventoryType
@@ -468,6 +468,73 @@ local ArmorTypeMogs = {
 local function MainOnlyCanTransmogAppearanceItem(knownItem)
 	return not knownItem.nmr and not knownItem.nmc and ArmorTypeMogs[knownItem.f] and CurrentCharacterFilterIDSet[knownItem.f]
 end
+local DualFactionCollectedVisualIDs
+do
+local HordeFaction = Enum.FlightPathFaction.Horde
+local HordeVisualIDs = {}
+local AllianceVisualIDs = {}
+local Known = {}
+-- track dual-faction-collected appearances so that we can post-assign those items' shared appearances as also collected in Unique mode...
+DualFactionCollectedVisualIDs = {
+	Add = function(visualID, faction)
+		if faction == HordeFaction then
+			if AllianceVisualIDs[visualID] then
+				Known[visualID] = true
+				-- app.PrintDebug("VisualID",visualID,"known by both Factions!")
+				return
+			end
+			HordeVisualIDs[visualID] = true
+		else
+			if HordeVisualIDs[visualID] then
+				Known[visualID] = true
+				-- app.PrintDebug("VisualID",visualID,"known by both Factions!")
+				return
+			end
+			AllianceVisualIDs[visualID] = true
+		end
+	end,
+	Known = Known,
+}
+end
+local EncompassingClassArmorTypeVisualIDs
+do
+local ArmorTypeClasses = {
+	[1] = 4,
+	[2] = 4,
+	[3] = 3,
+	[4] = 2,
+	[5] = 1,
+	[6] = 4,
+	[7] = 3,
+	[8] = 1,
+	[9] = 1,
+	[10] = 2,
+	[11] = 2,
+	[12] = 2,
+	[13] = 3,
+}
+local ClassesByArmorType = {
+	[1] = { 5,8,9 },
+	[2] = { 4,10,11,12 },
+	[3] = { 3,7,13 },
+	[4] = { 1,2,6 },
+}
+local Known = {}
+-- track class-encompassing known visualIDs so we can post-assign those items' shared appearances as also collected in Unique mode...
+EncompassingClassArmorTypeVisualIDs = {
+	Add = function(visualID, classes, f)
+		-- don't assign this for cloaks UNLESS literally every class is assigned on the cloak
+		if f == 3 and #classes ~= 13 then return end
+
+		-- the first class assigned to the visualID gives an armor-matched set of classes which is a different count than the visualID's classes...
+		if #ClassesByArmorType[ArmorTypeClasses[classes[1]]] ~= #classes then return end
+
+		Known[visualID] = true
+		-- app.PrintDebug("VisualID",visualID,"known by encompassing Armor-Type Item!")
+	end,
+	Known = Known,
+}
+end
 -- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
 local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly)
 	-- Find this source in ATT
@@ -480,13 +547,14 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 		return;
 	end
 
+	local visualID = knownSource.visualID
 	-- For each shared Visual SourceID
-	-- if knownSource.visualID == 322 then app.Debugging = true; app.PrintTable(knownSource); end
+	-- if visualID == 322 then app.Debugging = true; app.PrintTable(knownSource); end
 	-- account cannot collect sourceID? not available for transmog?
 	-- local _, canCollect = C_TransmogCollection.AccountCanCollectSource(knownSourceID); -- pointless, always false if sourceID is known
 	-- local unknown1 = select(8, C_TransmogCollection.GetAppearanceSourceInfo(knownSourceID)); -- pointless, returns nil for many valid transmogs
 	-- Trust that Blizzard returns SourceID's which can actually be used as Transmog for the VisualID
-	local sourceIDs = VisualIDSourceIDsCache[knownSource.visualID]
+	local sourceIDs = VisualIDSourceIDsCache[visualID]
 	local canMog;
 	local verifySourceIDs
 	for _,sourceID in ipairs(sourceIDs) do
@@ -516,8 +584,27 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 	local knownRaces, knownClasses, knownFaction, knownFilter = knownItem.races, knownItem.c, knownItem.r, knownItem.f;
 	local factionRaces = app.Modules.FactionData.FACTION_RACES;
 
+	-- if the known item is faction-based, then capture which faction has it known
+	if knownFaction then
+		DualFactionCollectedVisualIDs.Add(visualID, knownFaction)
+		-- if this visual is now learned for both factions, ignore the knownfaction requirement
+		-- note: this will properly apply to all shared appearances regardless of the order of processing
+		-- since the set of unlearned sourceIDs will be repeatably checked for each matching visualID
+		if DualFactionCollectedVisualIDs.Known[visualID] then
+			knownFaction = nil
+			-- app.PrintDebug("Skip Faction Unique Check for shared",app:SearchLink(knownItem))
+		end
+	end
+	if knownClasses then
+		EncompassingClassArmorTypeVisualIDs.Add(visualID, knownClasses, knownItem.f)
+		if EncompassingClassArmorTypeVisualIDs.Known[visualID] then
+			knownClasses = nil
+			-- app.PrintDebug("Skip Classes Unique Check for shared",app:SearchLink(knownItem))
+		end
+	end
+
 	for _,sourceID in ipairs(verifySourceIDs) do
-		-- app.PrintDebug("visualID",knownSource.visualID,"sourceID",sourceID,"known:",acctSources[sourceID)]
+		-- app.PrintDebug("visualID",visualID,"sourceID",sourceID,"known:",acctSources[sourceID)]
 		-- Find the check Source in ATT
 		checkItem = SearchForSourceIDQuickly(sourceID);
 		if checkItem then
@@ -542,6 +629,8 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 						-- the known source has a class restriction that is not shared by the source in question
 						if not containsAny(checkItem.c, knownClasses) then valid = nil; end
 					else
+						-- TODO: situation where Classes is the full set of available classes for that armor type
+						-- i.e. Priest/Mage/Lock is learned, and checks against a Cloth with no classes... should consider collected
 						valid = nil;
 					end
 				end
@@ -980,8 +1069,11 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 						-- This is NOT the same type. Therefore, no credit for you!
 						failText = L.FILTER_ID_TYPES[otherFilter] or L.FILTER_ID
 					-- Classes
-					elseif otherATTSource.nmc then
-						-- This is NOT for your class. Therefore, no credit for you!
+					elseif otherATTSource.c
+						and (not sourceGroup.c or not containsAny(otherATTSource.c, sourceGroup.c))
+						and not EncompassingClassArmorTypeVisualIDs.Known[sourceInfo.visualID]
+					then
+						-- This is NOT for the shared appearance class. Therefore, no credit for you!
 						if #otherATTSource.c == 1 then
 							failText = app.ClassInfoByID[otherATTSource.c[1]].name or UNKNOWN
 						else
@@ -992,17 +1084,18 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 							failText = app.TableConcat(classes, nil, nil, ", ")
 						end
 					-- Faction
-					elseif otherATTSource.r then
-						if sourceGroup.r ~= otherATTSource.r then
-							-- This is NOT for your Faction. Therefore, no credit for you!
-							failText = otherATTSource.r == Enum.FlightPathFaction.Horde and FACTION_HORDE or FACTION_ALLIANCE
-						end
-					else
-						-- Races (only if not Faction)
-						if otherATTSource.nmr then
-							-- This is NOT for your race. Therefore, no credit for you!
-							failText = RACE
-						end
+					elseif otherATTSource.r
+						and sourceGroup.r ~= otherATTSource.r
+						and not DualFactionCollectedVisualIDs.Known[sourceInfo.visualID]
+					then
+						-- This is NOT for the shared appearance Faction. Therefore, no credit for you!
+						failText = otherATTSource.r == Enum.FlightPathFaction.Horde and FACTION_HORDE or FACTION_ALLIANCE
+					-- Races (only if not Faction)
+					elseif otherATTSource.races
+						and (not sourceGroup.races or not containsAny(otherATTSource.races, sourceGroup.races))
+					then
+						-- This is NOT for the shared appearance race. Therefore, no credit for you!
+						failText = RACE
 					end
 
 					if failText then linkInfo.left = linkInfo.left .. " |CFFFF0000(" .. failText .. ")|r"; end

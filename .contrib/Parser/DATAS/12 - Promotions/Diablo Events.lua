@@ -305,7 +305,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 		-- Hellcaller chest questID after being opened, daily?
 		q(91079, {["timeline"]={ADDED_11_1_7}}),	-- 01
 		q(91080, {["timeline"]={ADDED_11_1_7}}),	-- 02
-		--q(, {["timeline"]={ADDED_11_1_7}}),	-- 03 is missing
+		q(91081, {["timeline"]={ADDED_11_1_7}}),	-- 03
 		q(91082, {["timeline"]={ADDED_11_1_7}}),	-- 04
 		q(91083, {["timeline"]={ADDED_11_1_7}}),	-- 05
 		q(91166, {["timeline"]={ADDED_11_1_7}}),	-- 06

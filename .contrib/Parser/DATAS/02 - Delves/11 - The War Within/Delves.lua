@@ -1805,6 +1805,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				--i(244311),	-- Titan Memory Card
 			},
 		}),
+		q(91033, {	-- Monitoring 'Construct'ing
+			["sourceQuests"] = { 91031 },	-- Pushing it to the Limit
+			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["coord"] = { 48.0, 43.4, DORNOGAL },
+			["g"] = {
+				i(244696),	-- Overcharged Chest (delve s2 loot table)
+			},
+		}),
+		q(91035, {	-- Construct De-Escalation
+			["sourceQuests"] = { 91033 },	-- Monitoring 'Construct'ing
+			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["coord"] = { 48.0, 43.4, DORNOGAL },
+			["g"] = {
+				i(244696),	-- Overcharged Chest (delve s2 loot table)
+			},
+		}),
 	}),
 	n(QUESTS, sharedData({
 		["provider"] = { "n", 206017 },	-- Brann Bronzebeard

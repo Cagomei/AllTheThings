@@ -173,10 +173,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 			-- Awakening
 				q(36134, {	-- Garrison Campaign: Awakening
 					["provider"] = { "n", 81492 },	-- Bodrick Grey
+					["coord"] = { 37.8, 36.8, LUNARFALL },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36136, {	-- Garrison Campaign: Awakening
 					["provider"] = { "n", 78487 },	-- Rokhan
+					["coord"] = { 45.7, 43.2, FROSTWALL },
 					["races"] = HORDE_ONLY,
 				}),
 				q(36341, {	-- Primal Fury (A)

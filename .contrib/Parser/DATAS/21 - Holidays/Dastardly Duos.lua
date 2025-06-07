@@ -24,7 +24,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 		["maps"] = { 2447 },	-- Dastardly Duos
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				-- TODO: These all currently have the same achievement icon so I don't think Blizzard has finished this yet. Maybe the PTR event date 17/3 to 24/3 is their deadline? :D
 				ach(41995),	-- Boot Hill
 				ach(42002),	-- Bullhorn of Plenty
 				ach(42003),	-- Bullhorn of More Plenty
@@ -59,7 +58,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 				q(86503, {	-- Who are the Dastardly Duos?
 					["sourceQuests"] = { 86491 },	-- Dastardly Invitation
 					["provider"] = { "n", 234296 },	-- Vinnie Sweets
-					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
+					["coords"] = {
+						{ 52.8, 51.6, ISLE_OF_DORN },	-- Khaz Algar
+						--{ x, y, ORGRIMMAR },	-- Orgrimmar
+						{ 68.2, 79.0, STORMWIND_CITY },	-- Stormwind
+					},
 					["g"] = {
 						i(239007),	-- Dastardly Banner (TOY!)
 						i(239440),	-- Dastardly Prize Purse
@@ -115,7 +118,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 				q(90701, {	-- Cowardly Cheery Bombs
 					["sourceQuests"] = { 86503 },	-- Who are the Dastardly Duos?
 					["provider"] = { "n", 234297 },	-- Wodin the Troll Servant
-					["coord"] = { 52.7, 51.3, ISLE_OF_DORN },
+					["coords"] = {
+						{ 52.8, 51.6, ISLE_OF_DORN },	-- Khaz Algar
+						--{ x, y, ORGRIMMAR },	-- Orgrimmar
+						{ 68.2, 79.0, STORMWIND_CITY },	-- Stormwind
+					},
 					["g"] = {
 						i(239440, {	-- Dastardly Prize Purse
 							i(238989),	-- Steam-Hinge Chain of Valor (TODO: ph since lack of data)
@@ -123,46 +130,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					},
 				}),
 				-- TODO: Sort this section out, it's just here to make the parser happy
-				q(90504), --
-				q(90503), --
-				q(90502), --
-				q(90501), --
-				q(90500), --
-				q(90499), --
-				q(90498), --
-				q(90497), --
-				q(90496), --
-				q(90495), --
-				q(90504), --
-				q(90503), --
-				q(90502), --
-				q(90501), --
-				q(90500), --
-				q(90499), --
-				q(90498), --
-				q(90497), --
-				q(90496), --
-				q(90495), --
-				q(90504), --
-				q(90503), --
-				q(90502), --
-				q(90501), --
-				q(90500), --
-				q(90499), --
-				q(90498), --
-				q(90497), --
-				q(90496), --
-				q(90495), --
-				q(90504), --
-				q(90503), --
-				q(90502), --
-				q(90501), --
-				q(90500), --
-				q(90499), --
-				q(90498), --
-				q(90497), --
-				q(90496), --
-				q(90495), --
 				q(90504), --
 				q(90503), --
 				q(90502), --
@@ -210,8 +177,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 
 							-- Hellfire Ramprats (not yet sourced)
 							-- i(238934),	-- Boots of the Darkwalker
-							-- i(238936),	-- Scale Leggings of the Skirmisher
-							-- i(238937),	-- Light-Touched Breastplate
+							i(238936),	-- Scale Leggings of the Skirmisher
+							i(238937),	-- Light-Touched Breastplate
 
 							-- Deadmines (sourced under the dungeon)
 							-- i(238938),	-- Vest of the Curious Visitor
@@ -227,7 +194,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 
 							-- Shadowfang Keeep (not yet sourced)
 							-- i(238981),	-- Gloves of the Uplifted Cup
-							-- i(238982),	-- Baron Silverlaine's Greaves
+							i(238982),	-- Baron Silverlaine's Greaves
 							i(238983),	-- Boots of Lingering Sorrow
 
 							-- The Culling of Stratholme (sourced under the dungeon)
@@ -236,7 +203,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 							--i(238993),	-- Cracked Epoch Grasps
 
 							-- The Blood Furnace (not yet sourced)
-							-- i(239009),	-- Signet of Repose
+							i(239009),	-- Signet of Repose
 						--]]
 						--- Podium Upgrade?
 						i(240203),	-- Podium Upgrade: Scrappy
@@ -247,8 +214,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 				}),
 			}),
 			n(TREASURES, {
-				-- TODO: Sort this section out, it's just here to make the parser happy
-				o(505680),	--
+				o(505680),	-- Animatronic Gear
 			}),
 			n(VENDORS, {
 				n(234297, {	-- Wodin the Troll-Servant

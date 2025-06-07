@@ -708,7 +708,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ "i", 33154 },	-- Sinister Squashling
 				{ "i", 33292 },	-- Hallowed Helm
 			},
-			["AllProvidersRequiredForAchievement"] = true,
 			["timeline"] = { ADDED_2_0_1 },
 			-- #else
 			crit(5783, {	-- Sinister Squashling

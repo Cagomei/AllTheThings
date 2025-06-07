@@ -189,6 +189,17 @@ namespace ATT
             throw new InvalidOperationException($"CustomConfigurationNode cannot convert to object[] type: {(string)value}");
         }
 
+        public static implicit operator Dictionary<string, string>(CustomConfigurationNode value)
+        {
+            try
+            {
+                return value?._dict.ToDictionary(k => k.Key, v => (string)v.Value);
+            }
+            catch { }
+
+            throw new InvalidOperationException($"CustomConfigurationNode cannot convert to Dictionary<string, string> type: {(string)value}");
+        }
+
         /// <summary>
         /// Allows enumeration across config values contained by a CustomConfigurationNode
         /// </summary>

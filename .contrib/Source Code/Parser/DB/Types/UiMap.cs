@@ -4,7 +4,7 @@
     /// https://wago.tools/db2/UiMap
     /// </summary>
     [DataModule]
-    public class UiMap : IDBType
+    public class UiMap : IDBType, IWagoChild, IWagoUiMapID
     {
         public long ID { get; set; }
         [Localize]
@@ -23,5 +23,17 @@
         public long ContentTuningID { get; set; }
         public long AdventureMapTextureKitID { get; set; }
         public long MapArtZoneTextPosition { get; set; }
+
+        #region Data Transformations
+        public long Parent
+        {
+            get { return ParentUiMapID; }
+        }
+
+        public long UiMapID
+        {
+            get { return ID; }
+        }
+        #endregion
     }
 }

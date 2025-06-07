@@ -204,17 +204,6 @@ root(ROOTS.Zones, {
 						4939,	-- Un'Goro Crater Quests
 						4940,	-- Winterspring Quests
 					}},
-					-- #else
-					-- #if BEFORE WRATH
-					-- #if AFTER TBC
-					["rank"] = 700,
-					-- #else
-					["rank"] = 625,
-					-- #endif
-					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. KALIMDOR .. [[); end]],
-					-- #endif
 					-- #endif
 					-- #if BEFORE 5.0.4
 					["races"] = ALLIANCE_ONLY,
@@ -239,17 +228,6 @@ root(ROOTS.Zones, {
 						4939,	-- Un'Goro Crater Quests
 						4940,	-- Winterspring Quests
 					}},
-					-- #else
-					-- #if BEFORE WRATH
-					-- #if AFTER TBC
-					["rank"] = 685,
-					-- #else
-					["rank"] = 625,
-					-- #endif
-					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. KALIMDOR .. [[); end]],
-					-- #endif
 					-- #endif
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,

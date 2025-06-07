@@ -64,8 +64,7 @@ root(ROOTS.Zones, {
 					}),
 					ach(1191, {	-- Terror of Terokkar (A)
 						["races"] = ALLIANCE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER WRATH
+						-- #if BEFORE 7.3.5
 						["sourceQuests"] = {
 							-- The Skettis Offensive
 							10879,	-- The Skettis Offensive
@@ -101,63 +100,11 @@ root(ROOTS.Zones, {
 							9986,	-- Stymying the Arakkoa
 							10028,	-- Vessels of Power
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 63,
-						-- #endif
-						-- #else
-						-- ["groups"] = {
-						-- 	crit(1, {	-- The Skettis Offensive
-						-- 		["sourceQuest"] = 10879,	-- The Skettis Offensive
-						-- 	}),
-						-- 	crit(2, {	-- Refugee Caravan
-						-- 		["sourceQuests"] = {
-						-- 			10878,	-- Before Darkness Falls
-						-- 			10031,	-- Helping the Lost Find Their Way
-						-- 			10852,	-- Missing Friends
-						-- 			10896,	-- The Infested Protectors
-						-- 			10881,	-- The Shadow Tomb
-						-- 			10842,	-- Vengeful Souls
-						-- 		},
-						-- 	}),
-						-- 	crit(3, {	-- Sha'tari Base Camp
-						-- 		["sourceQuests"] = {
-						-- 			10915,	-- The Fallen Exarch
-						-- 			10926,	-- Return to Sha'tari Base Camp
-						-- 			10930,	-- The Big Bone Worm
-						-- 			-- TODO: verify below:
-						-- 			10923,	-- Evil Draws Near
-						-- 			10873,	-- Taken in the Night
-						-- 		},
-						-- 	}),
-						-- 	crit(4, {	-- The Warden's Secret
-						-- 		["sourceQuests"] = {
-						-- 			9951,	-- It's Watching You!
-						-- 			10005,	-- Letting Earthbinder Tavgren Know
-						-- 		},
-						-- 	}),
-						-- 	crit(5, {	-- Allerian Stronghold
-						-- 		["sourceQuests"] = {
-						-- 			10042,	-- Kill the Shadow Council!
-						-- 			10035,	-- Torgos!
-						-- 			10022,	-- The Elusive Ironjaw
-						-- 			-- TODO: not 100% sure if every quest below is required
-						-- 			10012,	-- Fel Orc Plans
-						-- 			10007,	-- Thinning the Ranks
-						-- 			10869,	-- Thin the Flock
-						-- 			9986,	-- Stymying the Arakkoa
-						-- 			10028,	-- Vessels of Power
-						-- 		},
-						-- 	}),
-						-- },
 						-- #endif
 					}),
 					ach(1272, {	-- Terror of Terokkar (H)
 						["races"] = HORDE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER WRATH
+						-- #if BEFORE 7.3.5
 						["sourceQuests"] = {
 							-- The Skettis Offensive
 							10879,	-- The Skettis Offensive
@@ -192,56 +139,6 @@ root(ROOTS.Zones, {
 							9987,	-- Stymying the Arakkoa
 							10036,	-- Torgos!
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 68,
-						-- #endif
-						-- #else
-						-- ["groups"] = {
-						-- 	crit(1, {	-- The Skettis Offensive
-						-- 		["sourceQuest"] = 10879,	-- The Skettis Offensive
-						-- 	}),
-						-- 	crit(2, {	-- Refugee Caravan
-						-- 		["sourceQuests"] = {
-						-- 			10878,	-- Before Darkness Falls
-						-- 			10031,	-- Helping the Lost Find Their Way
-						-- 			10852,	-- Missing Friends
-						-- 			10896,	-- The Infested Protectors
-						-- 			10881,	-- The Shadow Tomb
-						-- 			10842,	-- Vengeful Souls
-						-- 		},
-						-- 	}),
-						-- 	crit(3, {	-- Sha'tari Base Camp
-						-- 		["sourceQuests"] = {
-						-- 			10915,	-- The Fallen Exarch
-						-- 			10926,	-- Return to Sha'tari Base Camp
-						-- 			10930,	-- The Big Bone Worm
-						-- 			-- TODO: verify below:
-						-- 			10923,	-- Evil Draws Near
-						-- 			10873,	-- Taken in the Night
-						-- 		},
-						-- 	}),
-						-- 	crit(4, {	-- The Warden's Secret
-						-- 		["sourceQuests"] = {
-						-- 			9951,	-- It's Watching You!
-						-- 			10005,	-- Letting Earthbinder Tavgren Know
-						-- 		},
-						-- 	}),
-						-- 	crit(5, {	-- Stonebreaker Hold
-						-- 		["sourceQuests"] = {
-						-- 			10013,	-- An Unseen Hand
-						-- 			10043,	-- Kill the Shadow Council
-						-- 			10791,	-- Welcoming the Wolf Spirit
-						-- 			-- TODO: Verify below:
-						-- 			10201,	-- And Now, the Moment of Truth
-						-- 			10868,	-- Arakkoa War Path
-						-- 			9987,	-- Stymying the Arakkoa
-						-- 			10036,	-- Torgos!
-						-- 		},
-						-- 	}),
-						-- },
 						-- #endif
 					}),
 				}),

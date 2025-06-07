@@ -3521,10 +3521,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				n(6779, {	-- Smudge Thunderwood <Poison Supplies> (Alterac Mountains)
 					["coord"] = { 71.0, 45.8, HILLSBRAD_FOOTHILLS },
-					["classes"] = { ROGUE },
 					["groups"] = {
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { ADDED_1_3_0, REMOVED_6_0_2, ADDED_7_1_0 },
+							["classes"] = { ROGUE },
 						}),
 					},
 				}),

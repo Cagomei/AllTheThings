@@ -116,9 +116,7 @@ do
 		or function() return "QuestsHidden" end,
 		collectible = app.GlobalVariants.AndLockCriteria.collectible or app.CollectibleAsQuest,
 		locked = app.GlobalVariants.AndLockCriteria.locked,
-		collected = function(t)
-			return IsQuestFlaggedCompletedForObject(t)
-		end,
+		collected = IsQuestFlaggedCompletedForObject,
 		trackable = function(t)
 			-- raw repeatable quests can't really be tracked since they immediately unflag
 			return not rawget(t, "repeatable") and t.repeatable

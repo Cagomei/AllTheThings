@@ -27,6 +27,11 @@ namespace ATT
             private static IDictionary<string, bool> WARNED_FIELDS = new ConcurrentDictionary<string, bool>();
 
             /// <summary>
+            /// A mapping of singular fields to their pluralized equivalents
+            /// </summary>
+            public static Dictionary<string, string> SINGULAR_PLURAL_FIELDS_LONG;
+
+            /// <summary>
             /// All of the containers that are in the database.
             /// </summary>
             public static IDictionary<string, List<object>> AllContainers { get; } = new ConcurrentDictionary<string, List<object>>();
@@ -1532,6 +1537,18 @@ end");
                 }
             }
 
+            public static void MergeSingularFieldAsArray<T>(IDictionary<string, object> item, string field, object value)
+            {
+                try
+                {
+                    Merge(item, field, value);
+                }
+                catch
+                {
+                    LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
+                }
+            }
+
             /// <summary>
             /// Merge the field into the item reference if it is whitelisted.
             /// Only a couple of fields will successfully merge into an item.
@@ -1744,71 +1761,7 @@ end");
                         }
 
                     // Integer -> Integer-Array Data Type conversion
-                    case "sourceAchievement":
-                        {
-                            try
-                            {
-                                // Convert a single sourceAchievement to a sourceAchievements list.
-                                Merge(item, "sourceAchievements", Convert.ToInt64(value));
-                            }
-                            catch
-                            {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
-                            }
-                            break;
-                        }
-                    case "sourceQuest":
-                        {
-                            try
-                            {
-                                // Convert a single sourceQuest to a sourceQuests list.
-                                Merge(item, "sourceQuests", Convert.ToInt64(value));
-                            }
-                            catch
-                            {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
-                            }
-                            break;
-                        }
-                    case "altQuestID":
-                        {
-                            try
-                            {
-                                // Convert a single altQuestID into an altQuests list.
-                                Merge(item, "altQuests", Convert.ToInt64(value));
-                            }
-                            catch
-                            {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
-                            }
-                            break;
-                        }
-                    case "qg":
-                        {
-                            try
-                            {
-                                // Convert a single qg to a qgs list.
-                                Merge(item, "qgs", Convert.ToInt64(value));
-                            }
-                            catch
-                            {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
-                            }
-                            break;
-                        }
-                    case "cr":
-                        {
-                            try
-                            {
-                                // Convert a single cr to a crs list.
-                                Merge(item, "crs", Convert.ToInt64(value));
-                            }
-                            catch
-                            {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
-                            }
-                            break;
-                        }
+                    // now handled via root.config
 
                     // Integer-Array Data Type Fields (stored as List<object> for usability reasons)
                     case "c":
@@ -2044,6 +1997,13 @@ end");
                     // Report all other fields.
                     default:
                         {
+                            // Config-defined fields
+                            if (SINGULAR_PLURAL_FIELDS_LONG.TryGetValue(field, out string pluarlFieldName))
+                            {
+                                MergeSingularFieldAsArray<long>(item, pluarlFieldName, value);
+                                return;
+                            }
+
                             // Integer Data Type Fields
                             if (ATT.Export.ObjectData.ContainsObjectType(field))
                             {
@@ -2564,15 +2524,20 @@ end");
                     found = true;
                     list = new List<object> { vallng };
                 }
-                else if (value is double valdbl)
+                else if (value is decimal valDec)
                 {
                     found = true;
-                    list = new List<object> { valdbl };
+                    list = new List<object> { valDec };
                 }
                 else if (value is float valflt)
                 {
                     found = true;
                     list = new List<object> { valflt };
+                }
+                else if (value is double valdbl)
+                {
+                    found = true;
+                    list = new List<object> { valdbl };
                 }
                 else if (value is bool valbol)
                 {

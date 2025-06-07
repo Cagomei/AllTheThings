@@ -1952,7 +1952,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81257, 435391);	-- Beautification Iris
 			FirstCraft(81255, 435389);	-- Remembrance Stone
 			-- Mounts
-			--FirstCraft(XXXXX, 1226650, ADDED_11_1_5);	-- Void-Crystal Panther
+			FirstCraft(89248, 1226650, ADDED_11_1_5);	-- Void-Crystal Panther
 		})),
 		filter(GEMS, {
 			i(213748),	-- Cognitive Bloodstone

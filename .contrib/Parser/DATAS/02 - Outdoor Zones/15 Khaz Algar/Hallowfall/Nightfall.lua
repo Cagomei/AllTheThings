@@ -272,7 +272,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 					-- The Eastern Assault
 					o(527411, {	-- Suspicious Document (Dissenter Troosilver/Whisperer Bravefort)
-						["coord"] = { 72.7, 41.5, HALLOWFALL },
+						["coords"] = {
+							{ 71.8, 43.0, HALLOWFALL },
+							{ 72.4, 47.5, HALLOWFALL },
+							{ 72.7, 41.5, HALLOWFALL },
+							{ 73.0, 44.8, HALLOWFALL },
+							{ 74.7, 42.9, HALLOWFALL },
+						},
 					}),
 					n(241232, {	-- Dissenter Troosilver
 						["description"] = "Within The Eastern Assault.",

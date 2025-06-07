@@ -7229,6 +7229,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 			q(85877),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways II (spellID 471544)
+			q(86295, { ["timeline"] = { ADDED_11_1_5 } }),	-- Disturbance Detected: Black Temple
 			--q(???, { ["timeline"] = { ADDED_11_1_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways III (spellID ???)
 		})),
 	})),

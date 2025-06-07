@@ -890,10 +890,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(6779, {	-- Smudge Thunderwood <Poison Vendor>
 					["coord"] = { 86.0, 79.6, ALTERAC_MOUNTAINS },
-					["classes"] = { ROGUE },
 					["groups"] = {
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { ADDED_1_3_0, REMOVED_6_0_2, ADDED_7_1_0 },
+							["classes"] = { ROGUE },
 						}),
 					},
 				}),

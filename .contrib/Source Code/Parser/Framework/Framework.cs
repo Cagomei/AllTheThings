@@ -3777,7 +3777,9 @@ namespace ATT
                         if (referencedWorldMapOverlays.Count > 0)
                         {
                             builder.AppendLine("local worldMapOverlayData = {");
-                            foreach (var worldMapOverlayID in referencedWorldMapOverlays.Keys)
+                            var worldMapOverlayIDs = referencedWorldMapOverlays.Keys.ToList();
+                            worldMapOverlayIDs.Sort();
+                            foreach (var worldMapOverlayID in worldMapOverlayIDs)
                             {
                                 if (WagoData.TryGetValue(worldMapOverlayID, out WorldMapOverlay worldMapOverlay))
                                 {

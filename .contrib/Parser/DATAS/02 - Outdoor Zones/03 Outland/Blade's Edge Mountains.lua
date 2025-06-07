@@ -44,8 +44,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithRep(896, FACTION_ORGILA)),	-- A Quest a Day Keeps the Ogres at Bay
 					explorationAch(865),	-- Explore Blade's Edge Mountains
 					ach(1193, {	-- On the Blade's Edge
-						-- #if ANYCLASSIC
-						-- #if AFTER WRATH
+						-- #if BEFORE 7.3.5
 						["sourceQuests"] = {
 							-- Sylvanaar (A)
 							10518,	-- Planting the Banner
@@ -71,47 +70,6 @@ root(ROOTS.Zones, {
 							-- Ruuan Weald (A+H)
 							10748,	-- Maxnar Must Die!
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 86,
-						-- #endif
-						-- #else
-						-- crit(1, {	-- Sylvanaar (A)
-						-- 	["races"] = ALLIANCE_ONLY,
-						-- 	["sourceQuests"] = {
-						-- 		10518,	-- Planting the Banner
-						-- 		10504,	-- The Bladespire Ogres
-						-- 	},
-						-- }),
-						-- crit(1, {	-- Thunderlord Stronghold (H)
-						-- 	["races"] = HORDE_ONLY,
-						-- 	["sourceQuest"] = 10505,	-- The Bloodmaul Ogres (need to verify horde quests, might be more needed)
-						-- }),
-						-- crit(2, {	-- Toshley's Station (A)
-						-- 	["races"] = ALLIANCE_ONLY,
-						-- 	["sourceQuests"] = {
-						-- 		10594,	-- Gauging the Resonant Frequency
-						-- 		10671,	-- More than a Pound of Flesh
-						-- 		10675,	-- Show Them Gnome Mercy!
-						-- 	},
-						-- }),
-						-- crit(2, {	-- Reunion (H)
-						-- 	["races"] = HORDE_ONLY,
-						-- 	["sourceQuest"] = 10742,	-- Showdown
-						-- }),
-						-- crit(3, {	-- The Gronn Threat (A)
-						-- 	["races"] = ALLIANCE_ONLY,
-						-- 	["sourceQuest"] = 10806,	-- Showdown
-						-- }),
-						-- crit(3, {	-- The Mok'Nathal (H)
-						-- 	["races"] = HORDE_ONLY,
-						-- 	["sourceQuest"] = 10867,	-- There Can Be Only One Response
-						-- }),
-						-- crit(4, {	-- Ruuan Weald (A+H)
-						-- 	["sourceQuest"] = 10748,	-- Maxnar Must Die!
-						-- }),
 						-- #endif
 					}),
 				}),
