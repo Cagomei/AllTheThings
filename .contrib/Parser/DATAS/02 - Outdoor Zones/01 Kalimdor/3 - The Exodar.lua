@@ -102,6 +102,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					}),
 				}),
 				prof(COOKING, {
+					n(16739, {	-- Caregiver Breel <Innkeeper>
+						["coord"] = { 59.5, 18.76, THE_EXODAR },	-- The Exobar
+						["races"] = ALLIANCE_ONLY,
+						["group"] = {
+							i(1179),	-- Ice Cold Milk
+						},
+					}),
 					n(16718, {	-- Phea <Cooking Supplies>
 						["coord"] = { 54.4, 26.3, THE_EXODAR },
 						["races"] = ALLIANCE_ONLY,

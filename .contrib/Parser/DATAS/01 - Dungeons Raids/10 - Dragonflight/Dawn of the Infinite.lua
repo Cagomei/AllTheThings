@@ -507,6 +507,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(49120),	-- Direbrew's Bloody Shanker			(Removed)
 		ig(93625),	-- Miniature Winter Veil Tree			(Removed)(MOP Version)
 		ig(66540),	-- Miniature Winter Veil Tree			(Removed)
+		ig(117371),	-- Miniature Winter Veil Tree			(Removed)(WOD Version)
 		ig(2941),	-- Prison Shank							(Removed)
 		ig(134610),	-- Scorching Shanker					(Removed)
 		ig(134779),	-- Seasoned Shanker						(Removed)

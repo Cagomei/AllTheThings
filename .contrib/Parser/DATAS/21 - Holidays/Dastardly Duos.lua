@@ -5,11 +5,6 @@ DASTARDLY_DUOS = createHeader({
 	readable = "Dastardly Duos",
 	icon = [[~_.asset("Event_Dastardly Duos")]],
 	eventID = EVENTS.DASTARDLY_DUOS,
-	eventSchedule = {
-		0, -- June 3rd, 2025 to July 15th, 2025
-		2025, 6, 03,	-- 6/3/2025
-		2025, 7, 15,	-- 7/15/2025
-	},
 	text = {
 		en = "Dastardly Duos",
 		cn = "卑鄙双雄",
@@ -150,57 +145,58 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 				}),
 				o(524391, {	-- Prize Chest
 					--["coord"] = ??
+					["sym"] = {{"select","itemID",
+						238984,	-- Baroness Silverlaine's Locket (Shadowfang Keep)
+						88343,	-- Bone Golem Boots (Scholomance)
+						238978,	-- Burden of Lost Humanity (Shadowfang Keep)
+						65166,	-- Buzz Saw (Deadmines)
+						27448,	-- Cloak of the Everliving (Hellfire Ramparts)
+						238993,	-- Cracked Epoch Grasps (Culling of Stratholme)
+						238940,	-- Defias Brotherhood Vest (Deadmines)
+						238988,	-- Earth Mantle Handwraps (Steamvault)
+						27806,	-- Fathomheart Gauntlets (Steamvault)
+						238991,	-- Gloves of Distorted Time (Culling of Stratholme)
+						238939,	-- Missing Diplomat's Pauldrons (Deadmines)
+						238992,	-- Mobius Band (Culling of Stratholme)
+						238990,	-- Necklace of the Chrono-Lord (Culling of Stratholme)
+						157754,	-- Old Friend's Gloves (Deadmines)
+						27794,	-- Recoiless Rocket Ripper X-54 (Steamvault)
+						238930,	-- Scintillating Coral Band (Steamvault)
+						63467,	-- Shadow of the Past (Deadmines)
+						37105,	-- Treads of Altered History (Culling of Stratholme)
+						238938,	-- Vest of the Curious Visitor (Deadmines)
+						27450,	-- Wild Stalker Boots (Hellfire Ramparts)
+					}},
 					["g"] = {
-						--- Gear
-						-- Sorted with D&R Source too
-						i(238990),	-- Necklace of the Chrono-Lord
-
-						--there are list only with new (unsorted) items
-						i(238984),	-- Baroness Silverlaine's Locket
-						i(239008),	-- Moonchild Leggings
-						i(238989),	-- Steam-Hinge Chain of Valor
+						--Unconfirmed to drop from dungeon bosses, move to symlink once proven
+						i(239008),	-- Moonchild Leggings (Blood Furnace)
+						i(238989),	-- Steam-Hinge Chain of Valor (Steamvault)
 						--also seems like contain some TW loot from certain bosses (list of them in achievement 41948) that already exist
-						--possibly can be symlinked from each boss, idk?
 						--i(24023),	-- Bracers of Finesse
-						--i(65166),	-- Buzz Saw
 						--i(63454),	-- Double Dealing Bracers
 						--i(157628),	-- Gold-Fiecked Gloves
 						--i(157755),	-- Missing Diplomat's Pauldrons
-						--i(157754),	-- Old Friend's Gloves
 
 						-- Probably all items that drop here too
 						-- The Steamvault (sourced under the dungeon)
 							--i(238929),	-- Cloak of Whispering Shells
-							--i(238930),	-- Scintillating Coral Band
 							--i(238932),	-- Gauntlets of the Bold
-							--i(238988),	-- Earth Mantle Handwraps
 
 							-- Hellfire Ramprats (not yet sourced)
 							-- i(238934),	-- Boots of the Darkwalker
 							i(238936),	-- Scale Leggings of the Skirmisher
 							i(238937),	-- Light-Touched Breastplate
 
-							-- Deadmines (sourced under the dungeon)
-							-- i(238938),	-- Vest of the Curious Visitor
-							-- i(238939),	-- Missing Diplomat's Pauldrons
-							-- i(238940),	-- Defias Brotherhood Vest
-
 							-- Shadowfang Keeep (sourced under the dungeon)
 							-- i(238976),	-- Blinders of the Follower
 							-- i(238977),	-- Iron Will Girdle
-							-- i(238978),	-- Burden of Lost Humanity
 							-- i(238979),	-- Phantom Armor
 							i(238980),	-- Pendant of the Keep
 
-							-- Shadowfang Keeep (not yet sourced)
+							-- Shadowfang Keep (not yet sourced)
 							-- i(238981),	-- Gloves of the Uplifted Cup
 							i(238982),	-- Baron Silverlaine's Greaves
 							i(238983),	-- Boots of Lingering Sorrow
-
-							-- The Culling of Stratholme (sourced under the dungeon)
-							--i(238991),	-- Gloves of Distorted Time
-							--i(238992),	-- Mobius Band
-							--i(238993),	-- Cracked Epoch Grasps
 
 							-- The Blood Furnace (not yet sourced)
 							i(239009),	-- Signet of Repose

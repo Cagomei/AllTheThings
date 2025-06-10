@@ -1156,7 +1156,7 @@ local function LocationTrigger(forceNewMap)
 	if not app.InWorld or not app.IsReady then return end
 	local window = app:GetWindow("CurrentInstance");
 	if not window:IsVisible() then return end
-	-- app.PrintDebug("LocationTrigger-Callback")
+	-- app.PrintDebug("LocationTrigger-Callback",forceNewMap)
 	if forceNewMap then
 		-- this allows minilist to rebuild itself
 		wipe(window.CurrentMaps)
@@ -1165,6 +1165,7 @@ local function LocationTrigger(forceNewMap)
 end
 app.LocationTrigger = LocationTrigger;
 app.AddEventHandler("OnCurrentMapIDChanged", LocationTrigger);
+app.AddEventHandler("Fill.RefreshFillers", function() LocationTrigger(true) end)
 
 app.ToggleMainList = function()
 	app:GetWindow("Prime"):Toggle();

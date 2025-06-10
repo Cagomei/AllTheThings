@@ -111,12 +111,9 @@ local function GetRelativeFieldInSet(group, field, set)
 	end
 end
 
+local Scopes = {"TOOLTIP","WINDOW"}
 local ActiveFillFunctions = {}
--- TODO: TBD by functions/values provided by the Modules which define the Fillers
-local FillPriority = {
-	"SYMLINK",
-	"CRAFTED",
-}
+local ScopeFillPriority = {}
 -- TODO: TBD provided by the Modules which define the Fillers
 local FillFunctions = {
 	-- TODO: Move to Reagents module once added
@@ -283,35 +280,67 @@ local FillFunctions = {
 	end
 }
 
+do
+-- Scope the Filler tables
+for _,scope in ipairs(Scopes) do
+	ScopeFillPriority[scope] = {}
+	ActiveFillFunctions[scope] = {}
+end
+-- TEMP: fill the Priority scopes with any remaining static values
+local tempPriority = {
+	"SYMLINK",
+	"CRAFTED",
+}
+for scope,priority in pairs(ScopeFillPriority) do
+	for i=1,#tempPriority do
+		priority[#priority + 1] = tempPriority[i]
+	end
+end
+-- TODO: OnStartup should determine all the needed settings based on FillFunctions and define a set of required Settings
+-- for the Fill settings tab to populate automatically. Note this would need to then trigger the Fill tab to populate those
+-- settings since settings are initialized in OnLoad
+end
+
+-- TODO: this will change when Fillers have their own settings section, also remove the current setting at that time
 local SettingsBasedFillers = {
 	Tooltips = {
 		["NPCData:Nested"] = {"NPC"}
 	}
+	-- TODO: settings will be stored by a new 'Fillers' container, and keyed by 'Scope:Name'
+	-- i.e. Settings:GetValue("Fillers", "Window:NPC")
+	-- ALL fillers will be settings-based
 }
 
 local function RefreshActiveFillFunctions()
-	wipe(ActiveFillFunctions)
-	for i=1,#FillPriority do
-		ActiveFillFunctions[#ActiveFillFunctions + 1] = FillFunctions[FillPriority[i]]
-		-- app.PrintDebug("ActiveFiller",i,ActiveFillFunctions[i])
+	local scopedFunctions
+	for scope,priority in pairs(ScopeFillPriority) do
+		scopedFunctions = ActiveFillFunctions[scope]
+		wipe(scopedFunctions)
+		for i=1,#priority do
+			scopedFunctions[#scopedFunctions + 1] = FillFunctions[priority[i]]
+			-- app.PrintDebug("ActiveFiller",scope,i,scopedFunctions[i])
+		end
 	end
 end
 local function ToggleFiller(name, active)
 	-- if ever 'false' settings require active fillers, then figure that out
-	if active then
-		api.ActivateFiller(name)
-	else
-		api.DeactivateFiller(name)
+	-- TEMP: for now Fillers are (de)activated within all Scopes
+	for i=1,#Scopes do
+		if active then
+			api.ActivateFiller(name, Scopes[i])
+		else
+			api.DeactivateFiller(name, Scopes[i])
+		end
 	end
 end
-local function ToggleFillersBySetting(container, key)
+local function ToggleFillersBySetting(container, name)
 	local check = SettingsBasedFillers[container]
 	if not check then return end
 
-	check = check[key]
+	check = check[name]
 	if not check then return end
 
-	local value = app.Settings:GetValue(container, key)
+	local value = app.Settings:GetValue(container, name)
 	for i=1,#check do
 		ToggleFiller(check[i], value)
 	end
@@ -342,8 +371,7 @@ app.AddEventHandler("OnStartup", function()
 	end)
 
 	-- add a refresh fillers event
-	-- TODO: hook this to minilist to rebuild
-	app.AddEventHandler("Fill.RefreshFillers", RefreshActiveFillFunctions)
+	app.AddEventHandler("Fill.RefreshFillers", RefreshActiveFillFunctions, true)
 	-- add event sequences for filler changes later (this ensures that the refresh event is performed via callback)
 	app.LinkEventSequence("Fill.OnAddFiller", "Fill.RefreshFillers")
 	app.LinkEventSequence("Fill.OnActivateFiller", "Fill.RefreshFillers")
@@ -361,7 +389,11 @@ api.AddFiller = function(name, func, options)
 	if FillFunctions[name] then error("Fill.AddFiller - Duplicate Filler name: "..name) end
 
 	FillFunctions[name] = func
-	FillPriority[#FillPriority + 1] = name
+	local priority
+	for i=1,#Scopes do
+		priority = ScopeFillPriority[Scopes[i]]
+		priority[#priority + 1] = name
+	end
 
 	if options then
 		-- linked to a Settings value
@@ -391,12 +423,16 @@ api.AddFiller = function(name, func, options)
 	app.HandleEvent("Fill.OnAddFiller",name)
 end
 
--- Handles making an existing Filler active, whether or not it is already present within FillPriority
-api.ActivateFiller = function(name)
+-- Handles making an existing Filler active within a given Scope, whether or not it is already present within the ScopeFillPriority
+api.ActivateFiller = function(name, scope)
 	if not name then error("Fill.ActivateFiller - Requires a 'name'") end
 
 	name = name:upper()
 	if not FillFunctions[name] then error("Fill.ActivateFiller - Filler is not defined: "..name) end
+
+	scope = scope:upper()
+	local FillPriority = ScopeFillPriority[scope]
+	if not FillPriority then error("Fill.ActivateFiller - Scope is not defined: "..scope) end
 
 	-- find the negative Filler index
 	local i = -1
@@ -431,15 +467,19 @@ api.ActivateFiller = function(name)
 		filler = FillPriority[i]
 	end
 
-	app.HandleEvent("Fill.OnActivateFiller",name)
+	app.HandleEvent("Fill.OnActivateFiller",scope,name)
 end
 
 -- Handles making an existing Filler inactive, whether or not it is already present within FillPriority
-api.DeactivateFiller = function(name)
+api.DeactivateFiller = function(name, scope)
 	if not name then error("Fill.DeactivateFiller - Requires a 'name'") end
 
 	name = name:upper()
 	if not FillFunctions[name] then error("Fill.DeactivateFiller - Filler is not defined: "..name) end
+
+	scope = scope:upper()
+	local FillPriority = ScopeFillPriority[scope]
+	if not FillPriority then error("Fill.DeactivateFiller - Scope is not defined: "..scope) end
 
 	-- find the Filler index if existing
 	for i=1,#FillPriority do
@@ -460,16 +500,18 @@ api.DeactivateFiller = function(name)
 	if not filler then
 		-- app.PrintDebug("Fill.DeactivateFiller.Backup",i,name)
 		FillPriority[i] = name
-		app.HandleEvent("Fill.OnDeactivateFiller",name)
+		app.HandleEvent("Fill.OnDeactivateFiller",scope,name)
 	end
 end
 
 local function FillGroupDirect(group, FillData, doDGU)
 	local ignoreSkip = group.sym or group.headerID or group.classID
 	local groups, temp = {}, {}
+	-- only use Fillers from within the respective FillData.Fillers
+	local fillers = FillData.Fillers
 	-- Unpack & single Append seems to typically be about 30% faster than repeat Append
-	for i=1,#ActiveFillFunctions do
-		temp[#temp + 1] = ActiveFillFunctions[i](group, FillData)
+	for i=1,#fillers do
+		temp[#temp + 1] = fillers[i](group, FillData)
 	end
 	ArrayAppend(groups, unpack(temp))
 
@@ -608,6 +650,7 @@ local FillGroups = function(group)
 		NextLayer = {},
 		-- CurrentLayer = 0,	-- debugging
 		InWindow = groupWindow and true or nil,
+		Fillers = ActiveFillFunctions[groupWindow and "WINDOW" or "TOOLTIP"],
 		SkipLevel = app.GetSkipLevel(),
 		Root = group,
 		FillRecipes = group.recipeID or app.ReagentsDB[group.itemID or 0],

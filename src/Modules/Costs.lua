@@ -28,15 +28,6 @@ local RecursiveGroupRequirementsFilter, RecursiveAccountFilter, DGU, UpdateRunne
 local function IsAvailable(ref)
 	return not ref.questID or app.IsQuestAvailable(ref)
 end
-local function ToggleExtraFilters(active)
-	if not ExtraFilters then return end
-	local Set = app.Modules.Filter.Set
-	local Setter
-	for name,_ in pairs(ExtraFilters) do
-		Setter = Set[name]
-		if Setter then Setter(active) end
-	end
-end
 
 local Depth = 0
 local CostDebugIDs = {
@@ -56,6 +47,7 @@ local CostDebugIDs = {
 	-- [205052] = true,	-- Miloh
 	-- [515] = true, -- DMF Ticket
 	-- [241] = true, -- Champion's Seal
+	-- [40610] = true, -- Chestguard of the Lost Conqueror [10M]
 }
 local function PrintDebug(id, ...)
 	if CostDebugIDs.ALL then
@@ -214,12 +206,13 @@ do
 		return total
 	end
 end
-local function SetCostTotals(costs, isCost, refresh)
+local function SetCostTotals(costs, isCost, refresh, costID)
 	-- Iterate on the search result of the entry key
 	local parent, blockedBy
+	-- PrintDebug(costID, "SetCostTotals",#costs,isCost)
 	for _,c in ipairs(costs) do
 		-- Mark the group with a costTotal
-		-- PrintDebug("Force Cost",app:SearchLink(c),isCost)
+		-- PrintDebug(costID, "Force Cost",app:SearchLink(c),isCost,c.hash,c.modItemID or c.currencyID)
 		c._SettingsRefresh = refresh;
 		-- only mark cost on visible content
 		if isCost and RecursiveGroupRequirementsFilter(c, ExtraFilters) then
@@ -227,15 +220,15 @@ local function SetCostTotals(costs, isCost, refresh)
 			blockedBy = GetRelativeByFunc(parent, BlockedParent)
 			if not blockedBy then
 				c.isCost = isCost;
-				-- PrintDebug("Unblocked Cost",app:SearchLink(c))
+				-- PrintDebug(costID, "Unblocked Cost",app:SearchLink(c))
 			else
 				c.isCost = nil;
-				-- PrintDebug("Skipped cost under locked/saved parent"
+				-- PrintDebug(costID, "Skipped cost under locked/saved parent"
 				-- 	,app:SearchLink(c)
 				-- 	,app:SearchLink(blockedBy))
 			end
 		else
-			-- PrintDebug("Not a cost",app:SearchLink(c))
+			-- PrintDebug(costID, "Not a cost",app:SearchLink(c))
 			c.isCost = nil;
 		end
 		-- regardless of the Cost state, make sure to update this specific cost group for visibility
@@ -352,14 +345,14 @@ local function FinishCostAssignmentsForItem(itemID, costs, refresh)
 		isProv = PlayerIsMissingProviderItem(itemID)
 		-- PrintDebug(itemID, app:SearchLink(costs[1]),isProv and "IS PROV" or "NOT PROV")
 	end
-	SetCostTotals(costs, isCost or isProv, refresh)
+	SetCostTotals(costs, isCost or isProv, refresh, itemID)
 end
 local function FinishCostAssignmentsForCurr(currencyID, costs, refresh)
 	local total = CostTotals.c[currencyID] or 0
 	local owned = CurrencyAmounts[currencyID]
 	local isCost = total > owned
 	-- PrintDebug(currencyID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
-	SetCostTotals(costs, isCost, refresh)
+	SetCostTotals(costs, isCost, refresh, currencyID)
 end
 local function PlayerIsMissingProviderSpell(spellID)
 	return not IsSpellKnownHelper(spellID)
@@ -374,7 +367,7 @@ local function FinishCostAssignmentsForSpell(spellID, costs, refresh)
 		-- 	PrintDebug(spellID, app:SearchLink(costs[1]),"NOT PROV")
 		-- end
 	end
-	SetCostTotals(costs, isProv, refresh)
+	SetCostTotals(costs, isProv, refresh, spellID)
 end
 
 local UpdateCostGroup
@@ -391,38 +384,7 @@ local function UpdateCostsByItemID(itemID, refresh, includeUpdate, refs)
 			-- local ref
 			for i=1,#refs do
 				UpdateRunner.Run(DoCollectibleCheckForItemRef, refs[i], itemID, itemUnbound)
-				-- ref = refs[i];
-				-- if CheckCollectible(ref, itemID) then
-				-- 	local refproviders = ref.providers
-				-- 	if refproviders then
-				-- 		for _,providerCheck in ipairs(refproviders) do
-				-- 			if providerCheck[1] == "i" and providerCheck[2] == itemID then
-				-- 				-- PrintDebug(itemID, app:SearchLink(costs[1]),isCost and "IS PROV" or "NOT PROV","with owned:",PlayerHasToy(itemID) or GetItemCount(itemID, true, nil, true, true) > 0)
-				-- 				if not PlayerHasToy(itemID) and GetItemCount(itemID, true, nil, true, true) == 0 then
-				-- 					isProv = true
-				-- 				end
-				-- 				break
-				-- 			end
-				-- 		end
-				-- 	end
-				-- 	local refcosts = ref.cost
-				-- 	if refcosts then
-				-- 		for _,costCheck in ipairs(refcosts) do
-				-- 			if costCheck[1] == "i" and costCheck[2] == itemID then
-				-- 				-- add the total item cost amount from this ref to our tracker
-				-- 				CostTotals.AddItem(itemID, costCheck[3], ref)
-				-- 				break
-				-- 			end
-				-- 		end
-				-- 	end
-				-- end
 			end
-			-- if not isProv then
-			-- 	local total = CostTotals.i[itemID] or 0
-			-- 	local owned = GetItemCount(itemID, true, nil, true, true)
-			-- 	isCost = total > owned
-			-- 	-- PrintDebug(itemID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
-			-- end
 		end
 		UpdateRunner.Run(FinishCostAssignmentsForItem, itemID, costs, refresh)
 		if includeUpdate then
@@ -430,10 +392,8 @@ local function UpdateCostsByItemID(itemID, refresh, includeUpdate, refs)
 				UpdateRunner.Run(UpdateCostGroup, costs[i]);
 			end
 		end
-		-- SetCostTotals(costs, isCost or isProv, refresh)
 	-- else PrintDebug("Item as Cost is not Sourced!",itemID)
 	end
-	-- return costs;
 end
 local function UpdateCostsByCurrencyID(currencyID, refresh, includeUpdate, refs)
 	local costs = SearchForObject("currencyID", currencyID, "field", true);
@@ -446,24 +406,7 @@ local function UpdateCostsByCurrencyID(currencyID, refresh, includeUpdate, refs)
 			-- local ref
 			for i=1,#refs do
 				UpdateRunner.Run(DoCollectibleCheckForCurrRef, refs[i], currencyID)
-				-- ref = refs[i];
-				-- if CheckCollectible(ref, currencyID) then
-				-- 	local refcosts = ref.cost
-				-- 	if refcosts then
-				-- 		for _,costCheck in ipairs(refcosts) do
-				-- 			if costCheck[1] == "c" and costCheck[2] == currencyID then
-				-- 				-- add the total currency cost amount from this ref to our tracker
-				-- 				CostTotals.AddCurr(currencyID, costCheck[3], ref)
-				-- 				break
-				-- 			end
-				-- 		end
-				-- 	end
-				-- end
 			end
-			-- local total = CostTotals.c[currencyID] or 0
-			-- local owned = CurrencyAmounts[currencyID]
-			-- isCost = total > owned
-			-- PrintDebug(currencyID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
 		end
 		UpdateRunner.Run(FinishCostAssignmentsForCurr, currencyID, costs, refresh)
 		if includeUpdate then
@@ -471,10 +414,8 @@ local function UpdateCostsByCurrencyID(currencyID, refresh, includeUpdate, refs)
 				UpdateRunner.Run(UpdateCostGroup, costs[i]);
 			end
 		end
-		-- SetCostTotals(costs, isCost, refresh)
 	-- else PrintDebug(key,"as Cost is not Sourced!",id)
 	end
-	-- return costs;
 end
 local function UpdateCostsBySpellID(spellID, refresh, includeUpdate, refs)
 	local costs = SearchForObject("spellID", spellID, "field", true);
@@ -522,29 +463,13 @@ local function UpdateCosts()
 	UpdateRunner.Run(CostCalcStart)
 	-- app.PrintDebug("UpdateCosts",refresh)
 
-	-- app.Debugging = nil
 	-- Get all itemIDAsCost entries
 	for itemID,refs in pairs(SearchForFieldContainer("itemIDAsCost")) do
-		-- app.Debugging = nil
-		-- if itemID == 105867.06 then app.Debugging = true end
-		-- if itemID == 105867 then app.Debugging = true end
-		-- if itemID == 163036 then app.Debugging = true end	-- Polished Pet Charms
-		-- if itemID == 40619 then app.Debugging = true end	-- Leggings of the Lost Conqueror
-		-- app.PrintDebug("Check Cost Item",itemID)
-		-- UpdateCostsByItemID(itemID, refresh, refs);
 		UpdateRunner.Run(UpdateCostsByItemID, itemID, refresh, false, refs)
-		-- app.Debugging = nil
 	end
-	-- app.Debugging = true
-	-- app.PrintDebugPrior("UpdateCosts:Items")
-	-- app.Debugging = nil
 
 	-- Get all currencyIDAsCost entries
 	for currencyID,refs in pairs(SearchForFieldContainer("currencyIDAsCost")) do
-		-- app.Debugging = nil
-		-- if currencyID == 2029 then app.Debugging = true end
-		-- app.PrintDebug("Check Cost Curr",currencyID)
-		-- UpdateCostsByCurrencyID(currencyID, refresh, refs);
 		UpdateRunner.Run(UpdateCostsByCurrencyID, currencyID, refresh, false, refs)
 	end
 
@@ -552,15 +477,12 @@ local function UpdateCosts()
 	for spellID,refs in pairs(SearchForFieldContainer("spellIDAsCost")) do
 		UpdateRunner.Run(UpdateCostsBySpellID, spellID, refresh, false, refs)
 	end
-	-- app.Debugging = true
-	-- app.PrintDebugPrior("UpdateCosts:Done",app._SettingsRefresh)
 end
 
 -- Performs a recursive update sequence and update of cost against the referenced 'cost'/'providers' table
 UpdateCostGroup = function(c)
 	-- app.PrintDebug("UCG",app:SearchLink(c),app._SettingsRefresh)
 	local refresh = app._SettingsRefresh;
-	-- local groups
 	local costs, providers = c.cost, c.providers
 	-- update cost
 	if costs and type(costs) == "table" then
@@ -572,10 +494,8 @@ UpdateCostGroup = function(c)
 			-- app.PrintDebug("UCG:",type,id)
 			if type == "i" then
 				UpdateCostsByItemID(id, refresh, true)
-				-- groups = ArrayAppend(groups, UpdateCostsByItemID(id, refresh))
 			elseif type == "c" then
 				UpdateCostsByCurrencyID(id, refresh, true)
-				-- groups = ArrayAppend(groups, UpdateCostsByCurrencyID(id, refresh))
 			end
 		end
 	end
@@ -589,21 +509,11 @@ UpdateCostGroup = function(c)
 			-- app.PrintDebug("UCG:",type,id)
 			if type == "i" then
 				UpdateCostsByItemID(id, refresh, true)
-				-- groups = ArrayAppend(groups, UpdateCostsByItemID(id, refresh))
 			elseif type == "c" then
 				UpdateCostsByCurrencyID(id, refresh, true)
-				-- groups = ArrayAppend(groups, UpdateCostsByCurrencyID(id, refresh))
 			end
 		end
 	end
-	-- if groups then
-	-- 	-- app.PrintDebug("UCG:groups",#groups)
-	-- 	local p
-	-- 	for i=1,#groups do
-	-- 		p = groups[i]
-	-- 		UpdateRunner.Run(UpdateCostGroup, p);
-	-- 	end
-	-- end
 	-- app.PrintDebug("UCG:Done",c.hash,app._SettingsRefresh)
 end
 local function OnSearchResultUpdate(group)

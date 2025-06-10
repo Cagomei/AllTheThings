@@ -81,10 +81,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					}),
 				}),
 				prof(COOKING, {
+					n(17630, {	-- Innkeeper Jovia <Innkeeper>
+						["coord"] = { 67.85, 72.9, SILVERMOON_CITY },	-- Wayfarer's Rest
+						["races"] = HORDE_ONLY,
+						["group"] = {
+							i(1179),	-- Ice Cold Milk
+						},
+					}),
 					n(16677, {	-- Quelis <Cooking Supplies>
 						["coord"] = { 69.6, 71.2, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
 						["groups"] = appendGroups(QUELIS_GROUPS, VANILLA_COOKING_VENDOR_REAGENTS, {}),
+					}),
+					n(16442, {	-- Vinemaster Suntouched <Wine & Spirits Merchant>
+						["coord"] = { 79.5, 58.5, SILVERMOON_CITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(2596),	-- Skin of Dwarven Stout
+						},
 					}),
 				}),
 				prof(ENCHANTING, {

@@ -9,6 +9,7 @@ call :download ContentTuning
 call :download Criteria
 call :download CriteriaTree
 call :download GlyphProperties
+call :downloadrenamed Holiday Holidays
 call :download Item
 call :download ItemEffect
 call :download ItemModifiedAppearance

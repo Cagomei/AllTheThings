@@ -1921,14 +1921,20 @@ root(ROOTS.Zones, {
 		ach(13144, {	-- Wide World of Quests
 			["timeline"] = { ADDED_8_0_1 },
 			["g"] = {
-				crit(42566, {
-					["_quests"] = 50483,	-- Underlord Xerxiz
+				crit(42348, {
+					["_quests"] = 51433,	-- Matron Morana
 				}),
 				crit(42349, {
 					["_quests"] = 51431,	-- Soul Goliath
 				}),
-				crit(42348, {
-					["_quests"] = 51433,	-- Matron Morana
+				crit(42350, {
+					["_quests"] = 51434,	-- Stone Golem
+				}),
+				crit(42566, {
+					["_quests"] = 50483,	-- Underlord Xerxiz
+				}),
+				crit(42561, {
+					["_quests"] = 50461,	-- Zujothgul
 				}),
 			},
 		}),

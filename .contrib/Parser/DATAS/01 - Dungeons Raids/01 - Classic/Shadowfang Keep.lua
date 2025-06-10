@@ -2184,7 +2184,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					e(97, {	-- Baron Silverlaine
 						["creatureID"] = 3887,
 						["groups"] = {
-							i(63438),	-- Baroness Silverlaine's Locket
+							i(63438, {	-- Baroness Silverlaine's Locket
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238984, {	-- Baroness Silverlaine's Locket
+								["timeline"] = { ADDED_11_1_5 },
+							}),
 							i(63441),	-- Pendant of the Keep
 							i(63439),	-- Gloves of the Uplifted Cup
 							i(63444),	-- Baron Silverlaine's Greaves

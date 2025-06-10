@@ -2626,10 +2626,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
-				i(5051, {	-- Dig Rat
-					["coord"] = { 49.4, 88.2, SOUTHERN_BARRENS },
-					["cr"] = 3444,	-- Dig Rat
-				}),
 				i(78342, {	-- Plump Dig Rat (RECIPE!)
 					["timeline"] = { ADDED_4_3_0 },
 					["coord"] = { 49.4, 88.2, SOUTHERN_BARRENS },
@@ -2690,6 +2686,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
 					["description"] = "Can drop from any creature in the Barrens.",
+				}),
+				i(5052, {	-- Unconscious Dig Rat
+					["cr"] = 3444,	-- Dig Rat
 				}),
 			}),
 		},

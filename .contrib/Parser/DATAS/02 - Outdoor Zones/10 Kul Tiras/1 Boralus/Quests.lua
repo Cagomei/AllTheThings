@@ -587,7 +587,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 51487 },	-- Searching for Answers
 				["provider"] = { "n", 137871 },	-- Taelia
 				["races"] = ALLIANCE_ONLY,
-				-- NOTE: This might have to move to a different map. - Crieve
+				["coord"] = { 60.1, 85.4, BORALUS },
+				["maps"] = { STORMSONG_VALLEY },
 			}),
 			q(50789, {	-- Clear the Air
 				["sourceQuests"] = { 50787 },	-- Make Our Case

@@ -253,18 +253,20 @@ namespace ATT
                     }
                 }
 
-                Framework.InitConfigSettings(".config/root.config");
-                Framework.Objects.SINGULAR_PLURAL_FIELDS_LONG = Framework.Config["SINGULAR_PLURAL_FIELDS_LONG"];
-
                 if (!Framework.HasConfig())
                 {
                     // Ensure the Parser uses the default config if nothing is specified.
                     Framework.InitConfigSettings(".config/retail/retail.config");
 
 #if DEBUG
-                    Framework.InitConfigSettings("parser/retail/debug.config");
+                    Framework.InitConfigSettings(".config/retail/debug.config");
 #endif
                 }
+
+                Framework.InitConfigSettings(".config/root.config");
+
+                Framework.Objects.SINGULAR_PLURAL_FIELDS_LONG = Framework.Config["SINGULAR_PLURAL_FIELDS_LONG"];
+                Framework.Objects.NON_SORTED_FIELDS = Framework.Config["NON_SORTED_FIELDS"];
             }
             catch (FormatException configException)
             {

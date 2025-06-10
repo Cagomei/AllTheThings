@@ -121,6 +121,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 						},
 					}),
+					n(4555, {	-- Eleanor Rusk <General Goods>
+						["coord"] = { 69.2, 48.9, UNDERCITY },	-- Trade Quarter
+						["races"] = HORDE_ONLY,
+						["group"] = {
+							i(1179),	-- Ice Cold Milk
+						},
+					}),
 					n(4553, {	-- Ronald Burch <Cooking Supplies> [TBC+] / Ronald Burch <Cooking Supplier>
 						["coord"] = { 62.3, 43.1, UNDERCITY },
 						-- #if AFTER CATA

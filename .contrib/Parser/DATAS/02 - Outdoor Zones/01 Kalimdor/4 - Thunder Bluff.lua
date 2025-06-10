@@ -103,6 +103,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				prof(COOKING, {
+					n(8362, {	-- Kuruk <General Goods>
+						["coord"] = { 39.0, 64.4, THUNDER_BLUFF },	-- Wayfarer's Rest
+						["races"] = HORDE_ONLY,
+						["group"] = {
+							i(1179),	-- Ice Cold Milk
+						},
+					}),
 					n(3027, {	-- Naal Mistrunner <Cooking Supplies>
 						["coord"] = { 51.0, 52.5, THUNDER_BLUFF },
 						-- #if AFTER CATA

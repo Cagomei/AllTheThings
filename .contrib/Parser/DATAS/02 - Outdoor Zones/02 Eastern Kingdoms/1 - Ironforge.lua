@@ -163,6 +163,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						}),
 					}),
+					n(5112, {	-- Gwenna Firebrew <Barmaid>
+						["coord"] = { 18.6, 51.9, IRONFORGE },	-- The Stonefire Tavern
+						["races"] = ALLIANCE_ONLY,
+						["group"] = {
+							i(1179),	-- Ice Cold Milk
+							i(2596),	-- Skin of Dwarven Stout
+						},
+					}),
 					n(5162, {	-- Tansy Puddlefizz <Fishing Supplier>
 						["coord"] = { 47.8, 6.6, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,

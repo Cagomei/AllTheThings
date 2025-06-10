@@ -80,6 +80,7 @@
     <Compile Include="DataValidator.cs" />
     <Compile Include="DB\Attributes\ExportableDataAttribute.cs" />
     <Compile Include="DB\Attributes\DataModuleAttribute.cs" />
+    <Compile Include="DB\Interfaces\IWagoHolidayNameID.cs" />
     <Compile Include="DB\Interfaces\IWagoUiMapID.cs" />
     <Compile Include="DB\Interfaces\IWagoAreaID.cs" />
     <Compile Include="DB\Interfaces\IWagoItemModifiedAppearanceID.cs" />
@@ -88,6 +89,8 @@
     <Compile Include="DB\Interfaces\IWagoItemID.cs" />
     <Compile Include="DB\Interfaces\IWagoChild.cs" />
     <Compile Include="DB\Attributes\LocalizeAttribute.cs" />
+    <Compile Include="DB\Types\HolidayNames.cs" />
+    <Compile Include="DB\Types\Holiday.cs" />
     <Compile Include="DB\Types\UiMapAssignment.cs" />
     <Compile Include="DB\Types\UiMap.cs" />
     <Compile Include="DB\Types\ContentTuning.cs" />

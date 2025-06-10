@@ -12180,7 +12180,6 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Call out more enemies. More, more!!","Bullhorn of Plenty",,42002,-1,-1,0,15545,0,10,131072,16,6740278,0,209415,0,0,0,0
 "Call out more enemies. More, more!!","Bullhorn of More Plenty",,42003,-1,-1,42002,15545,0,10,131072,17,6740278,0,209417,0,0,0,0
 "Call out more enemies. More, more!!","Bullhorn of Most Plenty",,42004,-1,-1,42003,15545,0,10,131072,18,6740278,0,209419,0,0,0,0
-"Subdue the Dark Titan at last by completing the following achievements.","Ashes to Ashes","Mount Reward: Rites of the Felsoul",42028,-1,-1,0,15301,0,100,131072,4,5927628,235515,209548,0,0,0,0
 "Defeat the bosses of The Emerald Nightmare on Normal difficulty or higher.","The Emerald Nightmare",,42029,1520,-1,0,15255,0,10,0,7,1413864,0,209567,0,0,0,0
 "Defeat the bosses within The Nighthold on Normal difficulty or higher.","The Nighthold",,42030,1530,-1,0,15255,0,10,0,34,1413853,0,209571,0,0,0,0
 "Defeat the bosses withiin the Tomb of Sargeras on Normal difficulty or higher.","Tomb of Sargeras",,42031,1676,-1,0,15255,0,10,0,59,1536894,0,209576,0,0,0,0
@@ -12191,7 +12190,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "As a Healer, complete all seasonal dungeons at Mythic Keystone level 10 or higher within the time limit during The War Within Season 2.","The Enterprising Healer",,42141,-1,-1,0,15272,0,0,131072,141,648207,0,210065,0,0,0,0
 "As a Damage Dealer, complete all seasonal dungeons at Mythic Keystone level 10 or higher within the time limit during The War Within Season 2.","The Enterprising Damage Dealer",,42144,-1,-1,0,15272,0,0,131072,142,132147,0,210056,0,0,0,0
 "Complete the following achievements during The War Within Season 2.","The Enterprising Dungeon Master","Title: Triple Threat",42148,-1,-1,0,15272,0,0,131072,143,255347,0,210082,0,0,0,0
-"Complete the Ethereals Lorewalking Campaign.","Lorewalking: Ethereal Wisdom",,42187,-1,-1,0,15552,0,0,131072,3,1711337,244843,210375,0,0,0,0
+"Complete the Ethereals Lorewalking Campaign.","Lorewalking: Ethereal Wisdom",,42187,-1,-1,0,15552,0,0,131072,3,1711337,0,210375,0,0,0,0
 "Complete the Xal'atath Lorewalking Campaign.","Lorewalking: Blade's Bane",,42188,-1,-1,0,15552,0,5,131072,1,1131285,0,210377,0,0,0,0
 "Complete the Lich King Lorewalking Campaign.","Lorewalking: The Lich King",,42189,-1,-1,0,15552,0,5,131072,2,343637,0,210379,0,0,0,0
 "Purchase enough Titan Discs to unlock all of the skills in the Overcharged Titan Console.","Titan Console Overcharged","Mount: OC91 Chariot",42212,-1,-1,0,15523,0,0,131072,67,2000853,246237,210543,0,0,0,0

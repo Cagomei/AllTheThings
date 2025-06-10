@@ -100,7 +100,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61708, {	-- Drawing Out The Poison
 				["g"] = {
-					i(174043),	-- Phylactery of Arin'gore (QI!)
+					o(339750, {	-- Golden Egg
+						["coord"] = { 58.8, 26.5, MALDRAXXUS },
+						["g"] = { i(174043) },	-- Phylactery of Arin'gore (QI!)
+					}),
 				},
 			}),
 			q(61608, {	-- Enchanting: Unbreakable Crystal

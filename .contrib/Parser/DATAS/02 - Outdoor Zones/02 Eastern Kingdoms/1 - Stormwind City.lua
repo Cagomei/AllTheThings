@@ -243,6 +243,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						}),
 					}),
+					n(1328, {	-- Elly Langston <Barmaid>
+						["coords"] = {
+							-- #if AFTER WRATH
+							{ 76.0, 53.4, STORMWIND_CITY },	-- Pig and Whistle Tavern
+							-- #else
+							{ 73.0, 37.0, STORMWIND_CITY },	-- Pig and Whistle Tavern
+							-- #endif
+						},
+						["description"] = "Elly is walking around in the Tavern.",
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(1179),	-- Ice Cold Milk
+							i(2596),	-- Skin of Dwarven Stout
+						},
+					}),
 					n(5483, {	-- Erika Tate <Cooking Supplies> [TBC+] / Erika Tate <Cooking Supplier>
 						["coords"] = {
 							-- #if AFTER WRATH

@@ -1,5 +1,5 @@
 @echo off
-SET BUILD=11.1.5.61122
+SET BUILD=11.1.5.61265
 
 @REM Download new file versions
 call :download Achievement
@@ -10,6 +10,7 @@ call :download ContentTuning
 call :download Criteria
 call :download CriteriaTree
 call :download GlyphProperties
+call :downloadrenamed Holiday Holidays
 call :download Item
 call :download ItemBonus
 call :download ItemEffect

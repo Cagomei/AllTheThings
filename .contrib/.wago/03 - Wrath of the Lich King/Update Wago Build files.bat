@@ -4,6 +4,7 @@ SET BUILD=3.4.4.60430
 @REM Download new file versions
 call :downloadrenamed AreaTable areatable
 call :download ContentTuning
+call :downloadrenamed Holiday Holidays
 call :download Item
 call :download ItemEffect
 call :download ItemModifiedAppearance

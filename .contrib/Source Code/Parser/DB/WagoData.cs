@@ -370,6 +370,99 @@ namespace ATT.DB
             return AreaKeyedCache<T>.TryGetAssociations(areaID, out associations);
         }
         #endregion
+        #region HolidayNameID-Keyed Collections
+        private static class HolidayNameIDKeyedCache<T> where T : IWagoHolidayNameID, IDBType
+        {
+            /// <summary>
+            /// The cached collection of elements matching the primary key "HolidayNameID".
+            /// </summary>
+            private static Dictionary<long, List<T>> Collection;
+
+            public static void Clear()
+            {
+                Collection = null;
+            }
+
+            public static Dictionary<long, List<T>> GetCollection()
+            {
+                return Collection ?? (Collection = Rebuild());
+            }
+
+            private static Dictionary<long, List<T>> Rebuild()
+            {
+                var collection = new Dictionary<long, List<T>>();
+                foreach (var o in GetAll<T>().Values)
+                {
+                    if (o.HolidayNameID > 0)
+                    {
+                        if (!collection.TryGetValue(o.HolidayNameID, out List<T> associations))
+                        {
+                            collection[o.HolidayNameID] = associations = new List<T>();
+                        }
+                        associations.Add(o);
+                    }
+                }
+                return collection;
+            }
+
+            public static IEnumerable<T> Enumerate(long key)
+            {
+                if (GetCollection().TryGetValue(key, out var associations))
+                {
+                    foreach (var association in associations)
+                    {
+                        yield return association;
+                    }
+                }
+            }
+
+            /// <summary>
+            /// Retrieve a collection of elements matching the key.
+            /// </summary>
+            /// <typeparam name="T">The element type to search for.</typeparam>
+            /// <param name="key">The key.</param>
+            /// <param name="associations">The list of associated elements or null.</param>
+            /// <returns>Whether or not the associations could be found.</returns>
+            public static bool TryGetAssociations(long key, out List<T> associations)
+            {
+                return GetCollection().TryGetValue(key, out associations);
+            }
+        }
+
+        /// <summary>
+        /// Enumerate over a collection of elements matching the HolidayNameID.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="o">The object.</param>
+        /// <returns>An enumerable list.</returns>
+        public static IEnumerable<T> EnumerateForHolidayNameID<T>(this IWagoHolidayNameID o) where T : IWagoHolidayNameID, IDBType
+        {
+            return EnumerateForHolidayNameID<T>(o.HolidayNameID);
+        }
+
+        /// <summary>
+        /// Enumerate over a collection of elements matching the HolidayNameID.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="HolidayNameID">The Holiday Name ID.</param>
+        /// <returns>An enumerable list.</returns>
+        public static IEnumerable<T> EnumerateForHolidayNameID<T>(long HolidayNameID) where T : IWagoHolidayNameID, IDBType
+        {
+            return HolidayNameIDKeyedCache<T>.Enumerate(HolidayNameID);
+        }
+
+        /// <summary>
+        /// Retrieve a collection of elements matching the key.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="HolidayNameID">The Holiday Name ID.</param>
+        /// <param name="associations">The list of associated elements or null.</param>
+        /// <returns>Whether or not the associations could be found.</returns>
+        public static bool TryGetHolidayNameIDAssociations<T>(long HolidayNameID, out List<T> associations) where T : IWagoHolidayNameID, IDBType
+        {
+            return HolidayNameIDKeyedCache<T>.TryGetAssociations(HolidayNameID, out associations);
+        }
+        #endregion
         #region Item-Keyed Collections
         private static class ItemKeyedCache<T> where T : IWagoItemID, IDBType
         {

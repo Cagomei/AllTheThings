@@ -1398,7 +1398,12 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			q(31958, {	-- Grand Master Aki
 				["sourceQuests"] = { 31951 },	-- Grand Master Aki
 				["provider"] = { "n", 66741 },	-- Aki the Chosen
-				["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
+				["coords"] = {
+					{ 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
+					-- #if AFTER 8.3.0
+					{ 84.1, 28.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+					-- #endif
+				},
 				["g"] = {
 					SACK_OF_PET_SUPPLIES
 				},

@@ -523,7 +523,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		}),
 		-- #if AFTER 4.3.0
 		prof(FISHING, {
-			i(35286),	-- Bloated Giant Sunfish
+			i(35286, {	-- Bloated Giant Sunfish
+				["timeline"] = { ADDED_2_4_0 },
+			}),
 			i(127141, {	-- Bloated Thresher
 				["timeline"] = { ADDED_6_2_0 },
 				["groups"] = {
@@ -540,6 +542,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 			i(73953, {	-- Sea Pony (PET!)
 				["timeline"] = { ADDED_4_3_0 },
+			}),
+			i(124670, {	-- Sealed Darkmoon Crate
+				["timeline"] = { ADDED_6_2_0 },
+			}),
+			i(164973, {	-- Severed Azurefin Head
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			i(164972, {	-- Severed Crimsonscale Head
+				["timeline"] = { ADDED_8_1_5 },
 			}),
 		}),
 		n(MINIGAMES_HEADER, {

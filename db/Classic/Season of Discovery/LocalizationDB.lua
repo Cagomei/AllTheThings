@@ -288,7 +288,7 @@ localize(L.HEADER_NAMES, {
 	[-1000198] = "Speak to Brother Romulus",
 	[-1000200] = "Children's Week",
 	[-1000201] = "Darkmoon Faire",
-	[-1000215] = GetSpellInfo(21953),
+	[-1000215] = "Feast of Winter Veil",
 	[-1000217] = "Hallow's End",
 	[-1000218] = "Harvest Festival",
 	[-1000220] = "Love is in the Air",
@@ -535,23 +535,23 @@ localize(L.HEADER_ICONS, {
 	[-1001179] = 237211,
 });
 localize(L.HEADER_EVENTS, {
-	[-1000200] = 201,
-	[-1000201] = 479,
-	[-1000215] = 141,
-	[-1000217] = 324,
-	[-1000218] = 321,
-	[-1000220] = 423,
-	[-1000221] = 327,
-	[-1000223] = 341,
-	[-1000224] = 181,
-	[-1000227] = 301,
+	[-1000200] = 13,
+	[-1000201] = 1,
+	[-1000215] = 14,
+	[-1000217] = 16,
+	[-1000218] = 17,
+	[-1000220] = 9,
+	[-1000221] = 18,
+	[-1000223] = 11,
+	[-1000224] = 15,
+	[-1000227] = 6,
 	[-1000243] = 1181,
 	[-1001035] = 133889,
 	[-1001036] = 133899,
 });
 localize(L.EVENT_REMAPPING, {
-	[374] = 479,
-	[375] = 479,
+	[374] = 1,
+	[375] = 1,
 });
 
 -- Programmatic Event Scheduling
@@ -565,42 +565,42 @@ _.Modules.Events.SetEventInformation(133889, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026})
 });
-_.Modules.Events.SetEventInformation(181, {
+_.Modules.Events.SetEventInformation(15, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=4,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=5,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=5,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=6,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=17,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=18,["weekday"]=7,["year"]=2026})
 });
-_.Modules.Events.SetEventInformation(341, {
+_.Modules.Events.SetEventInformation(11, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=6,["monthDay"]=21,["weekday"]=6,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=6,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=6,["monthDay"]=21,["weekday"]=7,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=7,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=6,["monthDay"]=21,["weekday"]=1,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=1,["year"]=2026})
 });
-_.Modules.Events.SetEventInformation(327, {
+_.Modules.Events.SetEventInformation(18, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=28,["weekday"]=1,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=18,["weekday"]=1,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=28,["weekday"]=3,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=18,["weekday"]=3,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=28,["weekday"]=4,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=18,["weekday"]=4,["year"]=2026})
 });
-_.Modules.Events.SetEventInformation(423, {
+_.Modules.Events.SetEventInformation(9, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=3,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=3,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=5,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=5,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=6,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=6,["year"]=2026})
 });
-_.Modules.Events.SetEventInformation(321, {
+_.Modules.Events.SetEventInformation(17, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=6,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=6,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=7,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=7,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026})
 });
-_.Modules.Events.SetEventInformation(324, {
+_.Modules.Events.SetEventInformation(16, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=6,["year"]=2024},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=6,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=7,["year"]=2025},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=7,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=1,["year"]=2026},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=1,["year"]=2026})
 });
-_.Modules.Events.SetEventInformation(141, {
+_.Modules.Events.SetEventInformation(14, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=2,["year"]=2024},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=5,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=4,["year"]=2026},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=7,["year"]=2027})
 });
-_.Modules.Events.SetEventInformation(479, {
+_.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=2,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=9,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=16,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=23,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=30,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=7,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
@@ -629,7 +629,7 @@ _.Modules.Events.SetEventInformation(479, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=18,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=25,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=1,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=8,["weekday"]=2,["year"]=2026},{["remappedID"]=374})
 });
-_.Modules.Events.SetEventInformation(201, {
+_.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=3,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=4,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=5,["year"]=2026})
@@ -10227,8 +10227,15 @@ localize(L.HEADER_NAMES, {
 	[-1000195] = "Sprich mit Grizzby",
 	[-1000196] = "Sprich mit N'ora",
 	[-1000198] = "Sprich mit Bruder Romulus",
+	[-1000200] = "Kinderwoche",
 	[-1000201] = "Dunkelmond-Jahrmarkt",
+	[-1000215] = "Winterhauchfest",
+	[-1000217] = "Schlotternächte",
+	[-1000218] = "Erntedankfest",
+	[-1000220] = "Liebe liegt in der Luft",
+	[-1000221] = "Mondfest",
 	[-1000223] = "Sonnenwendfest",
+	[-1000224] = "Nobelgartenfest",
 	[-1000227] = "Anglerwettbewerb im Schlingendorntal",
 	[-1000235] = "Die Öffnung des Dunklen Portals",
 	[-1000236] = "Das Szepter der Sandstürme",
@@ -12506,8 +12513,15 @@ localize(L.HEADER_NAMES, {
 	[-1000195] = "Parlez à Grizzby",
 	[-1000196] = "Parlez à N'ora",
 	[-1000198] = "Parlez à Frère Romulus",
+	[-1000200] = "Semaine des enfants",
 	[-1000201] = "Foire de Sombrelune",
-	[-1000223] = "Fête du Feu du solstice d’été",
+	[-1000215] = "Voile d'hiver",
+	[-1000217] = "Sanssaint",
+	[-1000218] = "Fête des moissons",
+	[-1000220] = "De l'amour dans l'air",
+	[-1000221] = "Fête lunaire",
+	[-1000223] = "Fête du Feu du solstice d'été",
+	[-1000224] = "Le Jardin des nobles",
 	[-1000227] = "Concours de pêche de Strangleronce",
 	[-1000234] = "Effort de guerre d’Ahn'Qiraj",
 	[-1000235] = "L'ouverture de la Porte des ténèbres",
@@ -14776,9 +14790,6 @@ localize(L.HEADER_NAMES, {
 	[-1000195] = "Parla con Grizzby",
 	[-1000196] = "Parla con N'ora",
 	[-1000198] = "Parla con Fratello Romulus",
-	[-1000201] = "Fiera di Lunacupa",
-	[-1000223] = "Fuochi di Mezza Estate",
-	[-1000227] = "Gara di Pesca a Rovotorto",
 	[-1000235] = "L'apertura del Portale Oscuro",
 	[-1000236] = "Scettro delle Sabbie Mutevoli",
 	[-1000273] = "La Stagione delle Scoperte",
@@ -16256,8 +16267,15 @@ localize(L.HEADER_NAMES, {
 	[-1000195] = "Fale com o Grizzby",
 	[-1000196] = "Fale com o N'ora",
 	[-1000198] = "Fale com o Irmão Romulus",
+	[-1000200] = "Semana das Crianças",
 	[-1000201] = "Feira de Negraluna",
+	[-1000215] = "Festa do Véu de Inverno",
+	[-1000217] = "Noturnália",
+	[-1000218] = "Festival da Colheita",
+	[-1000220] = "O Amor Está No Ar",
+	[-1000221] = "Festival da Lua",
 	[-1000223] = "Festival do Fogo do Solstício",
+	[-1000224] = "Jardinova",
 	[-1000227] = "Festerê de Pesca da Selva do Espinhaço",
 	[-1000235] = "A abertura do Portal Negro",
 	[-1000236] = "Cetro das Areias Cambiantes",
@@ -18385,9 +18403,15 @@ localize(L.HEADER_NAMES, {
 	[-1000195] = "Поговорите с Grizzby",
 	[-1000196] = "Поговорите с Н'ора",
 	[-1000198] = "Поговорите с Брат Ромул",
+	[-1000200] = "Детская неделя",
 	[-1000201] = "Ярмарка Новолуния",
+	[-1000215] = "Зимний Покров",
+	[-1000217] = "Тыквовин",
 	[-1000218] = "Неделя урожая",
-	[-1000223] = "Огненный Солнцеворот",
+	[-1000220] = "Любовная лихорадка",
+	[-1000221] = "Лунный фестиваль",
+	[-1000223] = "Огненный солнцеворот",
+	[-1000224] = "Сад чудес",
 	[-1000227] = "Рыбомания Тернистой долины",
 	[-1000234] = "Война в Ан'Кираже",
 	[-1000235] = "Открытие Темного портала",
@@ -20713,8 +20737,15 @@ localize(L.HEADER_NAMES, {
 	[-1000195] = "그리즈비와 대화",
 	[-1000196] = "노라와 대화",
 	[-1000198] = "로물루스 형제와 대화하세요",
-	[-1000201] = "다크문 유랑단",
+	[-1000200] = "어린이 주간",
+	[-1000201] = "다크문 축제",
+	[-1000215] = "겨울맞이 축제",
+	[-1000217] = "할로윈 축제",
+	[-1000218] = "추수절",
+	[-1000220] = "온누리에 사랑을",
+	[-1000221] = "달의 축제",
 	[-1000223] = "한여름 불꽃축제",
+	[-1000224] = "귀족의 정원",
 	[-1000227] = "가시덤불 골짜기 낚시왕 선발대회",
 	[-1000235] = "어둠의 문 열기",
 	[-1000236] = "흐르는 모래의 홀",
@@ -22883,8 +22914,15 @@ localize(L.HEADER_NAMES, {
 	[-1000195] = "Habla con el Grizzby",
 	[-1000196] = "Habla con el N'ora",
 	[-1000198] = "Habla con el Hermano Romulus",
+	[-1000200] = "Semana de los Niños",
 	[-1000201] = "Feria de la Luna Negra",
-	[-1000223] = "Festival del Fuego del Solsticio de Verano",
+	[-1000215] = "El festín del Festival de Invierno",
+	[-1000217] = "Halloween",
+	[-1000218] = "Festival de la Cosecha",
+	[-1000220] = "Amor en el aire",
+	[-1000221] = "Festival Lunar",
+	[-1000223] = "Festival de Fuego del Solsticio de Verano",
+	[-1000224] = "Jardín Noble",
 	[-1000227] = "Gran espectáculo de pesca de Tuercespina",
 	[-1000235] = "La apertura del Portal Oscuro",
 	[-1000236] = "El cetro del Mar de Dunas",
@@ -26220,10 +26258,15 @@ localize(L.HEADER_NAMES, {
 	[-1000195] = "与灰熊交谈",
 	[-1000196] = "与奈奥拉谈",
 	[-1000198] = "与罗穆卢斯修士交谈",
+	[-1000200] = "儿童周",
 	[-1000201] = "暗月马戏团",
 	[-1000215] = "冬幕节",
+	[-1000217] = "万圣节",
 	[-1000218] = "收获节",
+	[-1000220] = "情人节",
+	[-1000221] = "春节",
 	[-1000223] = "仲夏火焰节",
+	[-1000224] = "复活节",
 	[-1000227] = "荆棘谷钓鱼大赛",
 	[-1000234] = "安其拉之战捐献",
 	[-1000235] = "开启黑暗之门",
@@ -28345,10 +28388,15 @@ localize(L.HEADER_NAMES, {
 	[-1000165] = "T0.5套裝",
 	[-1000168] = "四騎士",
 	[-1000173] = DUNGEON_FLOOR_DIREMAUL5.." (東)",
+	[-1000200] = "兒童週",
 	[-1000201] = "暗月馬戲團",
 	[-1000215] = "冬幕節",
+	[-1000217] = "萬鬼節",
 	[-1000218] = "收穫節",
+	[-1000220] = "愛就在身邊",
+	[-1000221] = "新年慶典",
 	[-1000223] = "仲夏火焰節慶",
+	[-1000224] = "貴族花園",
 	[-1000227] = "荊棘谷釣魚大賽",
 	[-1000234] = "安其拉之戰捐獻",
 	[-1000236] = "流沙節杖",

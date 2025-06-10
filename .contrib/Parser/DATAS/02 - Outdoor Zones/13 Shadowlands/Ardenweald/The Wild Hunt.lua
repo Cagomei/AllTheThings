@@ -10,6 +10,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					achWithRep(14337, FACTION_THE_WILD_HUNT),	-- The Wild Hunt
 				}),
 				n(EMISSARY_QUESTS, {
+					q(62852, {	-- Paragon of the Wild Hunt
+						["minReputation"] = { FACTION_THE_WILD_HUNT, EXALTED },
+						["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
+						["coord"] = { 48.4, 50.4, ARDENWEALD },
+					}),
 					q(61098, bubbleDownSelf({ ["minReputation"] = { FACTION_THE_WILD_HUNT, EXALTED } }, {	-- Supplies from The Wild Hunt
 						["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
 						["coord"] = { 48.4, 50.4, ARDENWEALD },

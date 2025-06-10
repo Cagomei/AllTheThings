@@ -158,6 +158,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						}),
 					}),
+					n(6735, {	-- Innkeeper Saelienne <Innkeeper>
+						-- #if AFTER CATA
+						["coord"] = { 62.54, 32.8, DARNASSUS },	-- Craftsmen's Terrace
+						-- #else
+						["coord"] = { 67.2, 15.8, DARNASSUS },	-- Craftsmen's Terrace
+						-- #endif
+						["races"] = ALLIANCE_ONLY,
+						["group"] = {
+							i(1179),	-- Ice Cold Milk
+						},
+					}),
 				}),
 				prof(ENCHANTING, {
 					n(4229, {	-- Mythrin'dir <Trade Supplies> [TBC+] / Mythrin'dir <General Trade Supplier>

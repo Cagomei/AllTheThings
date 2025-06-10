@@ -4738,10 +4738,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3384,	-- Southsea Privateer
 					},
 				}),
-				i(5051, {	-- Dig Rat
-					["coord"] = { 48.8, 84.8, THE_BARRENS },
-					["cr"] = 3444,	-- Dig Rat
-				}),
 				i(5020, {	-- Kolkar Booty Key
 					["coords"] = {
 						{ 44.4, 23.6, THE_BARRENS },
@@ -4839,6 +4835,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 3445,	-- Supervisor Lugwizzle
 				})),
 				-- #endif
+				i(5052, {	-- Unconscious Dig Rat
+					["cr"] = 3444,	-- Dig Rat
+				}),
 			}),
 		},
 	}),

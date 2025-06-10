@@ -2686,6 +2686,8 @@ namespace ATT
                             if (CustomHeaders.TryGetValue(key, out object o) && o is IDictionary<string, object> header)
                             {
                                 keys.Add(key);
+
+                                // EventID is stored as HolidayNameID to keep things simple
                                 if (header.TryGetValue("eventID", out object value))
                                 {
                                     long eventID = Convert.ToInt64(value);
@@ -2704,6 +2706,25 @@ namespace ATT
                                     if (header.TryGetValue("timerunningSeasonID", out value))
                                     {
                                         timerunningSeasonIDs[eventID] = Convert.ToInt64(value);
+                                    }
+
+                                    // Remap the HolidayNameID to EventID
+                                    if (WagoData.TryGetHolidayNameIDAssociations<Holiday>(eventID, out var associations))
+                                    {
+                                        foreach (var association in associations)
+                                        {
+                                            eventRemaps[association.ID] = eventID;
+                                        }
+                                    }
+
+                                    // Update the text localization to use Wago data, but only if we're not ignoring wago holiday names
+                                    if (!header.ContainsKey("IgnoreWagoHolidayNames"))
+                                    {
+                                        var localizedHolidayNames = WagoData.GetLocalizedData<HolidayNames>(eventID);
+                                        if (localizedHolidayNames != null && localizedHolidayNames.TryGetValue("Name_lang", out var names))
+                                        {
+                                            header["text"] = names;
+                                        }
                                     }
                                 }
                                 if (header.TryGetValue("icon", out value))
@@ -2826,9 +2847,11 @@ namespace ATT
                     if (eventRemaps.Any())
                     {
                         builder.AppendLine("localize(L.EVENT_REMAPPING, {");
-                        foreach (var pair in eventRemaps)
+                        var remappedKeys = eventRemaps.Keys.ToList();
+                        remappedKeys.Sort();
+                        foreach (var remappedKey in remappedKeys)
                         {
-                            ExportObjectKeyValue(builder, pair.Key, pair.Value).AppendLine();
+                            ExportObjectKeyValue(builder, remappedKey, eventRemaps[remappedKey]).AppendLine();
                         }
                         builder.AppendLine("});").AppendLine();
                     }

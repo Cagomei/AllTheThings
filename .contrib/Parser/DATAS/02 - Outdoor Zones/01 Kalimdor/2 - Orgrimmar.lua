@@ -244,6 +244,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				prof(COOKING, {
+					n(5611, {	-- Barkeep Morag
+						-- #if BEFORE 4.0.3
+						["coord"] = { 54.0, 67.0, ORGRIMMAR },	-- The Broken Tusk
+						-- #else
+						["coord"] = { 55.1, 77.9, ORGRIMMAR },	-- The Broken Tusk
+						-- #endif
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(1179),	-- Ice Cold Milk
+							-- #if BEFORE 4.0.3
+							i(2596),	-- Skin of Dwarven Stout (becomes removed from this vendor with Cata.)
+							-- #endif
+						},
+					}),
 					n(133261, {	-- Feng Su <Cooking Trainer>
 						["coord"] = { 41.0, 79.4, ORGRIMMAR },
 						["timeline"] = { ADDED_7_3_5 },

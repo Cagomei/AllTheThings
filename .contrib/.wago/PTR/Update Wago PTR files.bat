@@ -8,6 +8,8 @@ call :download ContentTuning
 call :download Criteria
 call :download CriteriaTree
 call :download GlyphProperties
+call :download HolidayNames
+call :downloadrenamed Holiday Holidays
 call :download Item
 call :download ItemBonus
 call :download ItemEffect
@@ -30,19 +32,19 @@ call "..\Release\net8.0\CSVCleaner.exe" "%~dp0\SpellEffect.csv" "..\SpellEffect.
 exit /b
 
 :download
-if not exist "%1.%BUILD%.csv" (
+if not exist "%1.csv" (
 	if exist "%1*.csv" (
 		del /Q "%1*.csv"
 	)
-	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%"
+	curl -o "%1.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%"
 )
 exit /b
 
 :downloadrenamed
-if not exist "%1.%BUILD%.csv" (
+if not exist "%1.csv" (
 	if exist "%1*.csv" (
 		del /Q "%1*.csv"
 	)
-	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%"
+	curl -o "%1.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%"
 )
 exit /b

@@ -2614,9 +2614,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
-				i(1080, {	-- Tough Condor Meat
-					["cr"] = 428,	-- Dire Condor
-				}),
 			}),
 		},
 	}),

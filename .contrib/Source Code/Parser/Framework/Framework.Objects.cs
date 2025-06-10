@@ -32,6 +32,11 @@ namespace ATT
             public static Dictionary<string, string> SINGULAR_PLURAL_FIELDS_LONG;
 
             /// <summary>
+            /// A mapping of fields which should not be sorted because their order is utilized
+            /// </summary>
+            public static HashSet<string> NON_SORTED_FIELDS;
+
+            /// <summary>
             /// All of the containers that are in the database.
             /// </summary>
             public static IDictionary<string, List<object>> AllContainers { get; } = new ConcurrentDictionary<string, List<object>>();
@@ -1489,7 +1494,7 @@ end");
                 }
 
                 // Sort the old list to ensure that the order is consistent, but not for difficulties
-                if (field != "difficulties" && field != "zone-text-areas")
+                if (!NON_SORTED_FIELDS.Contains(field))
                     oldList.Sort();
 
                 if (oldList.Count == 0)

@@ -163,6 +163,8 @@ if app.IsRetail then
 	checkboxAutomaticallyOpenMiniList:SetATTTooltip(L.AUTO_MINI_LIST_CHECKBOX_TOOLTIP)
 	checkboxAutomaticallyOpenMiniList:AlignBelow(checkboxAutomaticallyOpenMainList)
 
+	-- TODO: revise with Legion Remix so that Minilist can grab/assign extra filters without needing to be loaded immediately
+	-- in case someone isn't even using it
 	local function AddTimerunningToCurrentInstance()
 		local active = settings:GetTooltipSetting("Filter:MiniList:Timerunning")
 		app:GetWindow("CurrentInstance").Filters = active and { Timerunning = true } or nil
