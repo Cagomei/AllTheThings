@@ -209,10 +209,9 @@ app.AddEventHandler("OnLoad", function()
 		return { o };
 	end,
 	{
-		-- Settings = {
-		-- 	Container = TODO,
-		-- 	Key = TODO,
-		-- }
+		ScopesIgnored = { "LIST" },
+		SettingsIcon = app.asset("Interface_Catalyst"),
+		SettingsTooltip = "Fills the Catalyst |T"..app.asset("Interface_Catalyst")..":0|t result of the current Item if one is possible and determined via ATT.\n\nNOTE: This Filler is not applied to ATT Lists."
 	})
 end)
 

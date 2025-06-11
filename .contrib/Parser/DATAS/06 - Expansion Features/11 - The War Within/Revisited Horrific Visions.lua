@@ -935,7 +935,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						}),
 						n(238145, {	-- Void-Scarred Wyvern Matriarch
 							["description"] = "Clear the Valley of Wisdom to access the elevator up to the Skyway. Defeat waves of Void-Scarred Wyverns until the matriarch spawns.\n\nThe path up to the Skyway will remain blocked without at least 3 masks active.",
-							--["coord"] = { , RE_HORRIFIC_ORGRIMMAR },
+							["coords"] = {
+								{ 48.9, 51.6, RE_HORRIFIC_ORGRIMMAR },	-- Elevator
+								{ 49.8, 57.8, RE_HORRIFIC_ORGRIMMAR },	-- Rare
+							},
 							["crs"] = {
 								238054,	-- Void Scarred Cub
 								238098,	-- Void-Scarred Wyvern
@@ -1156,7 +1159,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(87389),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
 		q(88905),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
 		--87389 & 88905 also pop on 2nd run (without quests in stormwind)
-		--q(88906),	-- ???
+		q(87381, {["isWeekly"]=true}),	-- Pops weekly on first clear, both Stormwind and Orgrimmar
+		q(88906, {["isWeekly"]=true}),	-- Pops weekly on first clear, both Stormwind and Orgrimmar
 		q(87387, {name="Completion"}),	-- All district was cleared (without masks), pop after killing Alleria // or veteran vendor unlock? / champion piece lockout?
 		q(88907, {name="Completion"}),	-- All district was cleared (without masks), pop after killing Alleria // one of it mask sourceQuest
 		q(87382, {name="Completion & 1 Mask"}),	-- All district was cleared  (with Long Night mask), pop after killing Alleria // one of it could be champion vendor unlock? / champion piece lockout?
@@ -1169,6 +1173,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(88911, {name="Completion & 4 Mask"}),	-- All district was cleared  (4 masks), pop after killing Thrall // reward lockout questID?
 		q(87386, {name="Completion & 5 Mask"}),	-- All district was cleared  (5 masks), pop after killing Thrall // reward lockout questID?
 		q(88912, {name="Completion & 5 Mask"}),	-- All district was cleared  (5 masks), pop after killing Thrall // reward lockout questID?
+		--q(88913),	-- Popped in Orgrimmar
+		--q(88914),	-- Popped in Stormwind
 		q(88915),	-- First 8 Mask Vision of Stormwind?
 	}),
 })));

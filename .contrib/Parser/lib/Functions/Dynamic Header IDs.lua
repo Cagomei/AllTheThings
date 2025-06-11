@@ -385,6 +385,8 @@ HeaderAssignments = {
 	["Party Sync"] = -1000028,
 	["Patch 0.x.x"] = -1000113,
 	["Patch 1.x.x"] = -1000114,
+	["Patch 10.x.x"] = -1001204,
+	["Patch 11.x.x"] = -1001205,
 	["Patch 2.x.x"] = -1000115,
 	["Patch 3.x.x"] = -1000116,
 	["Patch 4.x.x"] = -1000117,
@@ -669,4 +671,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001204;
+NextHeaderID = -1001206;

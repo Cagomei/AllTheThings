@@ -916,7 +916,7 @@ app.AddEventHandler("OnLoad", function()
 	if not Fill then return end
 
 	local CreateObject = app.__CreateObject
-	Fill.AddFiller("PURCHASE",
+	Fill.AddFiller("COST",
 	function(group, FillData)
 		-- do not fill purchases on certain items, can skip the skip though based on a level
 		if not ShouldFillPurchases(group, FillData) then return end
@@ -960,9 +960,7 @@ app.AddEventHandler("OnLoad", function()
 		end
 	end,
 	{
-		-- Settings = {
-		-- 	Container = TODO,
-		-- 	Key = TODO,
-		-- }
+		SettingsIcon = app.asset("Currency"),
+		SettingsTooltip = "Fills any Purchases which can be made with a given Cost |T"..app.asset("Currency")..":0|t\n\nNOTE: A 'Purchase' is a loose term in that it essentially means it requires/consumes/uses/depletes/etc. the 'Cost' in order to be obtained.",
 	})
 end)

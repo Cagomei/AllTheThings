@@ -1040,7 +1040,7 @@ L.SETTINGS_MENU = {
 		FILL_DYNAMIC_QUESTS_CHECKBOX = "Fill Dynamic Quests";
 		FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to allow Items/Currencies which are used to purchase collectible Things to be filled with those purchases when under automatically-populated Quests.\n\nFor example, this will cause the [World Quests] window to behave like the minilist rather than the Main list regarding Cost display.\nNote that in most cases, this will drastically increase the apparent content within the window.";
 		FILL_NPC_DATA_CHECKBOX = "Fill NPC Data";
-		FILL_NPC_DATA_CHECKBOX_TOOLTIP = "Enable this option if you want to fill all relevant data for a given NPC (Common Boss Drops, Drops, etc) when shown in a mini list. This option may cause a significant amount of duplication, but the idea is that the NPC will remain visible on the mini list if you need something available from that NPC.\n\nNote: A lot of Dragonflight outdoors content relies on this setting being enabled for accuracy due to how many Rares share common drops.\n\nDefault: Off";
+		FILL_NPC_DATA_CHECKBOX_TOOLTIP = "Enable this option if you want to fill all relevant data for a given NPC (Common Boss Drops, Drops, etc). This option may cause a significant amount of duplication, but the idea is that the NPC will remain visible if you need something available from that NPC.\n\nNote: A lot of Dragonflight outdoors content relies on this setting being enabled for accuracy due to how many Rares share common drops.\n\nDefault: Off";
 		NESTED_QUEST_CHAIN_CHECKBOX = "Show Nested Quest Chains";
 		NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP = "Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.";
 		SORT_BY_PROGRESS_CHECKBOX = "Sort By Progress";
@@ -1074,6 +1074,20 @@ L.SETTINGS_MENU = {
 		RESET_TOOLTIP = "Revert to default settings.";
 		CLASS_BORDER = "Use Class Color For Border";
 		CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
+
+	-- Interface: Fillers Page
+		FILLERS_LABEL = "Fillers";
+		FILLERS_EXPLANATION = "|cffFFFFFFFillers are mechanisms by which extra Data is 'filled' into/beneath other ATT content within various UI elements to show further use or purpose of a given Thing. For example, showing the resulting Purchases of an Item would be provided by a 'Filler'.\nThis tab allows you to modify your preferences of which Fillers will be active throughout ATT.|r",
+		-- Filler Scopes
+		TOOLTIP = "Tooltip",
+		LIST = "List",
+		-- Filler Names
+		UPGRADE = "Upgrade",
+		CATALYST = "Catalyst",
+		SYMLINK = "Sym-Link",
+		COST = "Cost",
+		NPC = "NPC",
+		REAGENT = "Reagent",
 
 	-- Interface: Information Page
 		ACHIEVEMENT_ID = "Achievement ID";

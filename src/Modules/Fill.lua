@@ -53,8 +53,6 @@ app.AddEventHandler("OnLoad", function()
 	ForceFillDB = app.ForceFillDB
 end)
 
--- TODO: splitting Fill functions by Fill Source? (Window vs Tooltip)
-
 -- TODO: TBD helper functions move to modules which need them for their Fillers
 -- Used with recipeID to make distinct itemID combinations, must be 1 order of magnitude greater than the highest recipeID
 local RECIPEMOD_THRESHOLD = 10000000
@@ -111,13 +109,27 @@ local function GetRelativeFieldInSet(group, field, set)
 	end
 end
 
-local Scopes = {"TOOLTIP","WINDOW"}
+local Scopes = {"TOOLTIP","LIST"}
+local FillSettings = {
+	Container = "Fillers",
+	ScopesIgnored = {},
+	-- TODO: move these to Locales
+	Tooltips = {
+		REAGENT = "Fills any Reagent |T"..app.asset("Interface_Reagent")..":0|t with known crafting outputs based on in-game Recipes.",
+	},
+	Icons = {
+		REAGENT = app.asset("Interface_Reagent")
+	},
+	Defaults = {
+		NPC = false
+	},
+}
 local ActiveFillFunctions = {}
 local ScopeFillPriority = {}
 -- TODO: TBD provided by the Modules which define the Fillers
 local FillFunctions = {
 	-- TODO: Move to Reagents module once added
-	CRAFTED = function(group, FillData)
+	REAGENT = function(group, FillData)
 		local itemID = group.itemID;
 		local itemRecipes = app.ReagentsDB[itemID];
 		-- if we're filling a window (level 2) for a Reagent
@@ -285,31 +297,31 @@ do
 for _,scope in ipairs(Scopes) do
 	ScopeFillPriority[scope] = {}
 	ActiveFillFunctions[scope] = {}
+	FillSettings.ScopesIgnored[scope] = {}
 end
 -- TEMP: fill the Priority scopes with any remaining static values
 local tempPriority = {
 	"SYMLINK",
-	"CRAFTED",
+	"REAGENT",
 }
 for scope,priority in pairs(ScopeFillPriority) do
 	for i=1,#tempPriority do
 		priority[#priority + 1] = tempPriority[i]
 	end
 end
--- TODO: OnStartup should determine all the needed settings based on FillFunctions and define a set of required Settings
--- for the Fill settings tab to populate automatically. Note this would need to then trigger the Fill tab to populate those
--- settings since settings are initialized in OnLoad
+app.AddEventHandler("OnStartup", function()
+	FillSettings.Tooltips.NPC = app.L.SETTINGS_MENU.FILL_NPC_DATA_CHECKBOX_TOOLTIP
+	FillSettings.Tooltips.SYMLINK = "Fills content which has alternate & notable availability under additional Sources.\nThis concept is generally utilized to help show content which may be Sourced under a general 'Rewards' (or similar) group in the Main list but can more-clearly be shown under specific Sources (multiple Vendors,etc.) when within the Mini list or Tooltips.\n\nNOTE: Tooltips where a Symlink is available will show this text:\n"..app.Modules.Color.Colorize(app.L.SYM_ROW_INFORMATION, app.Colors.SymLink)
+	FillSettings.Col = ArrayAppend({NAME}, Scopes)
+	local names = {"[]"}
+	for name,_ in pairs(FillFunctions) do
+		names[#names + 1] = name
+	end
+	FillSettings.Row = names
+	api.Settings = FillSettings
+	app.HandleEvent("Fill.DefinedSettings", FillSettings)
+end)
 end
-
--- TODO: this will change when Fillers have their own settings section, also remove the current setting at that time
-local SettingsBasedFillers = {
-	Tooltips = {
-		["NPCData:Nested"] = {"NPC"}
-	}
-	-- TODO: settings will be stored by a new 'Fillers' container, and keyed by 'Scope:Name'
-	-- i.e. Settings:GetValue("Fillers", "Window:NPC")
-	-- ALL fillers will be settings-based
-}
 
 local function RefreshActiveFillFunctions()
 	local scopedFunctions
@@ -322,65 +334,68 @@ local function RefreshActiveFillFunctions()
 		end
 	end
 end
-local function ToggleFiller(name, active)
+local function ToggleFiller(scope, name, active)
 	-- if ever 'false' settings require active fillers, then figure that out
-	-- TEMP: for now Fillers are (de)activated within all Scopes
+	if active then
+		api.ActivateFiller(name, scope)
+	else
+		api.DeactivateFiller(name, scope)
+	end
+end
+local function ToggleFillerBySetting(scope, name)
+	local value = app.Settings:GetValue(FillSettings.Container, scope..":"..name)
+	ToggleFiller(scope, name, value)
+end
+local function SyncFillPriorityFromSettings()
 	for i=1,#Scopes do
-		if active then
-			api.ActivateFiller(name, Scopes[i])
-		else
-			api.DeactivateFiller(name, Scopes[i])
+		for name,_ in pairs(FillFunctions) do
+			ToggleFillerBySetting(Scopes[i], name)
 		end
-	end
-end
-local function ToggleFillersBySetting(container, name)
-	local check = SettingsBasedFillers[container]
-	if not check then return end
-
-	check = check[name]
-	if not check then return end
-
-	local value = app.Settings:GetValue(container, name)
-	for i=1,#check do
-		ToggleFiller(check[i], value)
-	end
-end
-local function ToggleFillersBySettingValue(container, key, value)
-	local check = SettingsBasedFillers[container]
-	if not check then return end
-
-	check = check[key]
-	if not check then return end
-
-	for i=1,#check do
-		ToggleFiller(check[i], value)
 	end
 end
 app.AddEventHandler("OnStartup", function()
 	-- sync the active fillers with any fillers based on Settings
-	for container,keys in pairs(SettingsBasedFillers) do
-		for key,fillers in pairs(keys) do
-			ToggleFillersBySetting(container, key)
-		end
-	end
-	RefreshActiveFillFunctions()
+	-- handled via OnRecalculate_NewSettings event & sequence
 
 	-- add a OnSet handler for settings changes later
 	app.AddEventHandler("Settings.OnSet", function(container, key, value)
-		ToggleFillersBySettingValue(container, key, value)
+		if container ~= FillSettings.Container then return end
+
+		local scope, name = (":"):split(key)
+		ToggleFiller(scope, name, value)
 	end)
 
 	-- add a refresh fillers event
 	app.AddEventHandler("Fill.RefreshFillers", RefreshActiveFillFunctions, true)
+	-- if settings changes are detected during recalculate, then re-sync those settings to the Fill priority
+	app.AddEventHandler("OnRecalculate_NewSettings", SyncFillPriorityFromSettings)
+	-- new fillers added after startup (maybe other addons idk) need to sync from settings
+	app.AddEventHandler("Fill.OnAddFiller", SyncFillPriorityFromSettings)
 	-- add event sequences for filler changes later (this ensures that the refresh event is performed via callback)
-	app.LinkEventSequence("Fill.OnAddFiller", "Fill.RefreshFillers")
 	app.LinkEventSequence("Fill.OnActivateFiller", "Fill.RefreshFillers")
 	app.LinkEventSequence("Fill.OnDeactivateFiller", "Fill.RefreshFillers")
+	-- since these Events fire when loading, we want to make sure they are processed immediately and their respective
+	-- Event Sequence will be called once via CallbackEvent
+	app.DesignateImmediateEvent("Fill.OnActivateFiller")
+	app.DesignateImmediateEvent("Fill.OnDeactivateFiller")
+
+	-- Any filler changes which affect Lists should trigger a Minilist Rebuild
+	-- TODO: perhaps in future other popouts will know how to rebuild themselves...
+	local function CheckRebuildMinilist(scope, name)
+		if scope ~= "LIST" then return end
+
+		app.LocationTrigger(true)
+	end
+	app.AddEventHandler("Fill.OnActivateFiller", CheckRebuildMinilist)
+	app.AddEventHandler("Fill.OnDeactivateFiller", CheckRebuildMinilist)
 end)
 
 -- TODO: how to handle agnostic Filler priorities?
 -- Allows adding a Filler to the set of FillFunctions
--- options.Settings.[Container|Key]
+-- options.Settings.[ScopesIgnored|SettingsTooltip|SettingsIcon]
+-- * ScopesIgnored -> [*scopes*] (used to disable Settings UI checkboxes entirely)
+-- * SettingsTooltip -> str (displayed in Settings UI tooltips)
+-- * SettingsIcon -> str (represents the icon asset appended to the filler name in Settings UI)
 api.AddFiller = function(name, func, options)
 	if not name then error("Fill.AddFiller - Requires a 'name'") end
 	if not func or type(func) ~= "function" then error("Fill.AddFillter - Requires a 'func' provided as a function which accepts a 'group' and 'FillData'") end
@@ -389,34 +404,18 @@ api.AddFiller = function(name, func, options)
 	if FillFunctions[name] then error("Fill.AddFiller - Duplicate Filler name: "..name) end
 
 	FillFunctions[name] = func
-	local priority
-	for i=1,#Scopes do
-		priority = ScopeFillPriority[Scopes[i]]
-		priority[#priority + 1] = name
-	end
 
 	if options then
-		-- linked to a Settings value
-		if options.Settings then
-			local container = options.Settings.Container
-			local key = options.Settings.Key
-			if not container and not key then error("Fill.AddFiller - Requires both options.Settings.Container or options.Settings.Key for options.Settings: "..name) end
-
-			local settingscontainer = SettingsBasedFillers[container]
-			if not settingscontainer then
-				settingscontainer = {}
-				SettingsBasedFillers[container] = settingscontainer
+		if options.ScopesIgnored then
+			for i = 1,#options.ScopesIgnored do
+				FillSettings.ScopesIgnored[options.ScopesIgnored[i]][name] = true
 			end
-
-			local settingskey = settingscontainer[key]
-			if not settingskey then
-				settingskey = {}
-				settingscontainer[key] = settingskey
-			end
-
-			settingskey[#settingskey + 1] = name
-
-			ToggleFiller(name, app.Settings:GetValue(container, key))
+		end
+		if options.SettingsTooltip then
+			FillSettings.Tooltips[name] = options.SettingsTooltip
+		end
+		if options.SettingsIcon then
+			FillSettings.Icons[name] = options.SettingsIcon
 		end
 	end
 
@@ -650,7 +649,7 @@ local FillGroups = function(group)
 		NextLayer = {},
 		-- CurrentLayer = 0,	-- debugging
 		InWindow = groupWindow and true or nil,
-		Fillers = ActiveFillFunctions[groupWindow and "WINDOW" or "TOOLTIP"],
+		Fillers = ActiveFillFunctions[groupWindow and "LIST" or "TOOLTIP"],
 		SkipLevel = app.GetSkipLevel(),
 		Root = group,
 		FillRecipes = group.recipeID or app.ReagentsDB[group.itemID or 0],

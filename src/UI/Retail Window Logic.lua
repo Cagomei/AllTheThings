@@ -1165,7 +1165,6 @@ local function LocationTrigger(forceNewMap)
 end
 app.LocationTrigger = LocationTrigger;
 app.AddEventHandler("OnCurrentMapIDChanged", LocationTrigger);
-app.AddEventHandler("Fill.RefreshFillers", function() LocationTrigger(true) end)
 
 app.ToggleMainList = function()
 	app:GetWindow("Prime"):Toggle();

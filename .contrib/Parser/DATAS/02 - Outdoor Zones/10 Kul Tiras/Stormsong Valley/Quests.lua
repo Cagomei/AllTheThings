@@ -1780,7 +1780,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51222, {	-- What's Yours is Mined
 				["sourceQuests"] = { 51427 },	-- I Like Turtles
-				["provider"] = { "n", 137453 },
+				["qgs"] = {
+					137554,	-- Toki
+					137677,	-- Toki
+				},
 				["coord"] = { 35.7, 31.2, STORMSONG_VALLEY },
 				["g"] = {
 					i(160429),	-- Rope and Hook (QI!)

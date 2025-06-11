@@ -161,7 +161,6 @@ local TooltipSettingsBase = {
 		["SummarizeThings"] = true,
 		["Warn:Removed"] = true,
 		["Currencies"] = true,
-		["NPCData:Nested"] = false,
 		["QuestChain:Nested"] = true,
 		["WorldQuestsList:Currencies"] = true,
 		["Updates:AdHoc"] = true,
@@ -473,7 +472,11 @@ settings.Get = function(self, setting, container)
 	return RawSettings.General[setting]
 end
 settings.GetValue = function(self, container, setting)
-	return RawSettings[container][setting]
+	local settingscontainer = RawSettings[container]
+	if not settingscontainer then
+		return
+	end
+	return settingscontainer[setting]
 end
 settings.GetDefaultFilter = function(self, filterID)
 	return FilterSettingsBase.__index[filterID]
@@ -516,6 +519,17 @@ end
 -- end
 settings.GetRawSettings = function(self, name)
 	return RawSettings[name];
+end
+-- Applies a metatable (to provide Defaults) for a given settings Container if one is not already defined
+settings.ApplySettingsMetatable = function(self, container, meta)
+	local settingscontainer = RawSettings[container]
+	if not settingscontainer then
+		settingscontainer = setmetatable({}, meta)
+		RawSettings[container] = settingscontainer
+	elseif not getmetatable(settingscontainer) then
+		setmetatable(settingscontainer, meta)
+		RawSettings[container] = settingscontainer
+	end
 end
 settings.GetModeString = function(self)
 	local mode = L.MODE
@@ -756,7 +770,12 @@ settings.Set = function(self, setting, value)
 	self:Refresh()
 end
 settings.SetValue = function(self, container, setting, value)
-	RawSettings[container][setting] = value
+	local settingscontainer = RawSettings[container]
+	if not settingscontainer then
+		settingscontainer = {}
+		RawSettings[container] = settingscontainer
+	end
+	settingscontainer[setting] = value
 	app.HandleEvent("Settings.OnSet",container,setting,value)
 	self:Refresh()
 end
@@ -813,14 +832,14 @@ do
 ATTSettingsObjectMixin = {
 	-- Performs SetPoint anchoring against the 'other' frame to align this Checkbox below it. Allows an 'indent' which defines how many steps of indentation to
 	-- apply either positive (right) or negative (left), or specifying another frame against which to LEFT-align
-	AlignBelow = function(self, other, indent)
+	AlignBelow = function(self, other, indent, add)
 		if type(indent) == "number" then
-			self:SetPoint("TOPLEFT", other, "BOTTOMLEFT", indent * 8, 4)
+			self:SetPoint("TOPLEFT", other, "BOTTOMLEFT", indent * 8, add or 4)
 		elseif type(indent) == "table" then
-			self:SetPoint("TOP", other, "BOTTOM", 0, 4)
+			self:SetPoint("TOP", other, "BOTTOM", 0, add or 4)
 			self:SetPoint("LEFT", indent, "LEFT")
 		else
-			self:SetPoint("TOPLEFT", other, "BOTTOMLEFT", 0, 4)
+			self:SetPoint("TOPLEFT", other, "BOTTOMLEFT", 0, add or 4)
 		end
 		return self
 	end,

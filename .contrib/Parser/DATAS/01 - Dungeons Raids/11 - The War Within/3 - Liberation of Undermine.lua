@@ -499,7 +499,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["g"] = sharedData({ 
 							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
-							["sharedDescription"] = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
+							["sharedDescription"] = "Shared Transmog with |cFFFFFFFFNormal|r.",
 						}, {
 							i(238776),	-- Gallagio Raider's Bilgewater Blasthammer
 							i(238697),	-- Gallagio Raider's Bilgewater Boomfist
@@ -524,7 +524,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["g"] = sharedData({ 
 							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
-							["sharedDescription"] = "Shared Transmog with |cFFFFFFFFNormal|r.",
+							["sharedDescription"] = "Shared Transmog with |cFFA330C9Heroic|r.",
 						}, {
 							i(238777),	-- Gallagio Raider's Blackwater Blasthammer
 							i(238698),	-- Gallagio Raider's Blackwater Boomfist
@@ -549,9 +549,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["g"] = sharedData({ 
 							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
-							["sharedDescription"] = "Shared Transmog with |cFFA330C9Heroic|r.",
+							["sharedDescription"] = "Shared Transmog with |cFFED7014Mythic|r.",
 						}, {
-							i(238761),	-- Gallagio Raider's Bootleg Lever
 							i(238778),	-- Gallagio Raider's Darkfuse Blasthammer
 							i(238699),	-- Gallagio Raider's Darkfuse Boomfist
 							i(238719),	-- Gallagio Raider's Darkfuse Chainsaw
@@ -569,14 +568,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 							i(238760),	-- Gallagio Raider's Darkfuse Thing-a-ma-tool
 							i(238691),	-- Gallagio Raider's Darkfuse Torchblade
 							i(238744),	-- Gallagio Raider's Darkfuse Zapdagger
-							i(238774),	-- Gallagio Raider's Knuckle Dusters
 						}),
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["g"] = sharedData({ 
 							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
-							["sharedDescription"] = "Shared Transmog with |cFFED7014Mythic|r.",
+							["sharedDescription"] = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
 						}, {
 							i(238775),	-- Gallagio Raider's Venture Co. Blasthammer
 							i(238696),	-- Gallagio Raider's Venture Co. Boomfist
@@ -595,6 +593,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 							i(238757),	-- Gallagio Raider's Venture Co. Thing-a-ma-tool
 							i(238688),	-- Gallagio Raider's Venture Co. Torchblade
 							i(238741),	-- Gallagio Raider's Venture Co. Zapdagger
+						}),
+					}),
+					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
+						["minReputation"] = { FACTION_GALLAGIO, 11 },
+						["g"] = sharedData({ 
+							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
+						}, {
+							i(238774),	-- Gallagio Raider's Knuckle Dusters
+							i(238761),	-- Gallagio Raider's Bootleg Lever							
 						}),
 					}),
 					n(235623, {	-- Snix Longpocket

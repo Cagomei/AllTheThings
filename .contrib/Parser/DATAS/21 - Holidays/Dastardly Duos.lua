@@ -19,10 +19,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 		["maps"] = { 2447 },	-- Dastardly Duos
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(41995),	-- Boot Hill
-				ach(42002),	-- Bullhorn of Plenty
-				ach(42003),	-- Bullhorn of More Plenty
-				ach(42004),	-- Bullhorn of Most Plenty
+				ach(41995, {	-- Boot Hill
+					["description"] = "Die 30 times within one match solo or collectively as a group THEN complete the fight and loot the prize chest. The arena will will with 15 gravestones to the left and right of the entrance to count your progress.",
+				}),
+				ach(42002, {	-- Bullhorn of Plenty
+					["cost"] = { { "i",  237774, 5 } },	-- 5x Bullhorn of Calling
+				}),
+				ach(42003, {	-- Bullhorn of More Plenty
+					["cost"] = { { "i",  237774, 10 } },	-- 10x Bullhorn of Calling
+				}),
+				ach(42004, {	-- Bullhorn of Most Plenty
+					["cost"] = { { "i",  237774, 15 } },	-- 15x Bullhorn of Calling
+				}),
 				ach(41905),	-- Center of Attention
 				ach(41706, {	-- Dastardly Duos Weekly High Score
 					-- TODO: Does parser know what to do with 21 (Designer Value{`Uses Record ID})?
@@ -59,7 +67,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						{ 68.2, 79.0, STORMWIND_CITY },	-- Stormwind
 					},
 					["g"] = {
-						i(239007),	-- Dastardly Banner (TOY!)
 						i(239440),	-- Dastardly Prize Purse
 						--TODO: if you wanna - you can symlink all bags with rewards
 					},
@@ -70,7 +77,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
 					["g"] = {
 						i(239440),	-- Dastardly Prize Purse
-						i(239018),	-- Winner's Podium (TOY!)
 					},
 				}),
 				q(87551, {	-- Week 3: Spread the Word
@@ -79,7 +85,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
 					["g"] = {
 						i(239440),	-- Dastardly Prize Purse
-						i(239019),	-- Mean-Ball Bed (TOY!)
 					},
 				}),
 				q(87552, {	-- Week 4: They've Heard of You
@@ -97,7 +102,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
 					["g"] = {
 						i(239440),	-- Dastardly Prize Purse
-						i(239020),	-- Tyrannotort's Treat (MOUNT!)
 					},
 				}),
 				q(87554, {	-- Week 6: It's the Finale!
@@ -144,7 +148,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					i(237384),	-- Master Key
 				}),
 				o(524391, {	-- Prize Chest
-					--["coord"] = ??
+					["coord"] = { 51.0, 42.0, 2447 },	-- Dastardly Duos
 					["sym"] = {{"select","itemID",
 						238984,	-- Baroness Silverlaine's Locket (Shadowfang Keep)
 						88343,	-- Bone Golem Boots (Scholomance)
@@ -155,11 +159,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						238940,	-- Defias Brotherhood Vest (Deadmines)
 						238988,	-- Earth Mantle Handwraps (Steamvault)
 						27806,	-- Fathomheart Gauntlets (Steamvault)
+						238932,	-- Gauntlets of the Bold (Steamvault)
 						238991,	-- Gloves of Distorted Time (Culling of Stratholme)
 						238939,	-- Missing Diplomat's Pauldrons (Deadmines)
 						238992,	-- Mobius Band (Culling of Stratholme)
 						238990,	-- Necklace of the Chrono-Lord (Culling of Stratholme)
 						157754,	-- Old Friend's Gloves (Deadmines)
+						238979,	-- Phantom Armor (Shadowfang Keep)
 						27794,	-- Recoiless Rocket Ripper X-54 (Steamvault)
 						238930,	-- Scintillating Coral Band (Steamvault)
 						63467,	-- Shadow of the Past (Deadmines)
@@ -180,7 +186,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						-- Probably all items that drop here too
 						-- The Steamvault (sourced under the dungeon)
 							--i(238929),	-- Cloak of Whispering Shells
-							--i(238932),	-- Gauntlets of the Bold
 
 							-- Hellfire Ramprats (not yet sourced)
 							-- i(238934),	-- Boots of the Darkwalker
@@ -190,7 +195,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 							-- Shadowfang Keeep (sourced under the dungeon)
 							-- i(238976),	-- Blinders of the Follower
 							-- i(238977),	-- Iron Will Girdle
-							-- i(238979),	-- Phantom Armor
 							i(238980),	-- Pendant of the Keep
 
 							-- Shadowfang Keep (not yet sourced)
@@ -219,16 +223,45 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						{ 50.0, 92.4, ORGRIMMAR },
 						{ 67.2, 81.0, STORMWIND_CITY },
 					},
-					["g"] = sharedData({ ["cost"] = {{"c", RESONANCE_CRYSTALS, 500}} }, {
-						--TODO: Don't forget to sort it out
-						i(239507),	-- Dastardly Epaulet, Yellow
-						i(239506),	-- Dastardly Epaulet, Red
-						i(239505),	-- Dastardly Epaulet, Purple
-						i(239504),	-- Dastardly Epaulet, Green
-						i(239503),	-- Dastardly Epaulet, Blue
-						i(239442),	-- Dastardly Epaulet, Black
-						i(238624),	-- Dastardly Pinchzapper
-					}),
+					["g"] = {
+						i(239442, {	-- Black Dastardly Epaulet
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+						}),
+						i(239503, {	-- Blue Dastardly Epaule
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+						}),
+						i(239007, {	-- Dastardly Banner (TOY!)
+							["sourceQuest"] = 86503,	-- Who are the Dastardly Duos?
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 100 }},
+						}),
+						i(238624, {	-- Dastardly Pinchzapper
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+						}),
+						i(239504, {	-- Green Dastardly Epaulet
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+						}),
+						i(239019, {	-- Mean-Ball Bed (TOY!)
+							["sourceQuest"] = 87551,	-- Week 3: Spread the Word
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 100 }},
+						}),
+						i(239505, {	-- Purple Dastardly Epaulet
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+						}),
+						i(239506, {	-- Red Dastardly Epaulet
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+						}),
+						i(239020, {	-- Tyrannotort's Treat (MOUNT!)
+							["sourceQuest"] = 87552,	-- Week 4: They've Heard of You
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 100 }},
+						}),
+						i(239018, {	-- Winner's Podium (TOY!)
+							["sourceQuest"] = 87550,	-- Week 2: We're Really Taking Off
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 100 }},
+						}),
+						i(239507, {	-- Yellow Dastardly Epaulet
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
+						}),
+					},
 				}),
 			}),
 		},
@@ -240,10 +273,10 @@ root(ROOTS.HiddenQuestTriggers, {
 		n(DASTARDLY_DUOS, {
 			-- In order to clear a bit messup and to sort out more clearly on live
 			-- Week 1:
-			--q (87510),	-- fired after first completion Dastardly Duos
+			q(87510),	-- Week 1 Completion
 			q(90775),	-- completed with '86503'
 			-- Week 2:
-			--q (87511),	-- ^ same as above, but week 2
+			q(87511),	-- Week 2 Completion
 			q(87527),	-- there also was crit for other achievements but I wasn't smart enought to log it
 			q(87528),	-- so it is just 'after first completion Dastardly Duos, week 2'
 			-- Week 3:

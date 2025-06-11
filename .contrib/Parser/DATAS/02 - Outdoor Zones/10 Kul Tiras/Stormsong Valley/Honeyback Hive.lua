@@ -300,6 +300,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 						q(57701),	-- same as above
 						q(56107),	-- when nascent bee changed into Juvenile Harvester
 						q(56879),	-- when Juvenile Harvester changed into Honeyback Harvester (max bee friendship)
+						q(56169),	-- On finishing Harvester event
 					}),
 				}),
 			}),

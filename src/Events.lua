@@ -99,6 +99,18 @@ local ImmediateEvents = {
 	RowOnLeave = true,
 	RowOnClick = true,
 }
+-- Allows non-hardcoded assignment of Events which should ignore Runners and simply process immediately when fired
+-- This is helpful when an Event has an Event Sequence defined but also may occur during a Runner, which would lead to the
+-- Event Sequence processing multiple times in succession, whereas when running immediately we assign the Event Sequence
+-- to fire as CallbackEvents instead of being queued on the Runner
+app.DesignateImmediateEvent = function(event)
+	if not event then
+		app.print("DesignateImmediateEvent needs an event",event)
+		return
+	end
+
+	ImmediateEvents[event] = true
+end
 -- Represents Events which should always fire upon completion of a prior Event. These cannot be passed arguments currently
 local EventSequence = {
 	OnLoad = {
@@ -231,7 +243,7 @@ local function QueueSequenceEvents(eventName)
 	local sequenceEvents = EventSequence[eventName]
 	if sequenceEvents then
 		-- DebugQueueSequencedEvents(eventName)
-		if #SequenceEventsStack > 0 or IsRunning() then
+		if not ImmediateEvents[eventName] and (#SequenceEventsStack > 0 or IsRunning()) then
 			-- add sequence events to the SequenceEventsStack if there's a Runner running
 			for i=#sequenceEvents,1,-1 do
 				-- DebugQueuedSequenceEvent(sequenceEvents[i])
