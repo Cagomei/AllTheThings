@@ -1021,25 +1021,25 @@ localize(L.HEADER_EVENTS, {
 	[-1001036] = 133899,
 });
 localize(L.EVENT_REMAPPING, {
-	[372] = 7,
-	[301] = 6,
-	[398] = 21,
-	[404] = 101,
+	[141] = 14,
 	[181] = 15,
-	[341] = 11,
-	[327] = 18,
-	[335] = 9,
-	[423] = 9,
-	[424] = 161,
+	[201] = 13,
+	[301] = 6,
 	[321] = 17,
 	[324] = 16,
-	[141] = 14,
-	[409] = 81,
+	[327] = 18,
+	[335] = 9,
+	[341] = 11,
+	[372] = 7,
 	[374] = 1,
 	[375] = 1,
 	[376] = 1,
+	[398] = 21,
+	[404] = 101,
+	[409] = 81,
+	[423] = 9,
+	[424] = 161,
 	[479] = 1,
-	[201] = 13,
 });
 
 -- Programmatic Event Scheduling
@@ -19018,8 +19018,44 @@ do phases[key].description = value; end
 end
 if simplifiedLocale == "es" then
 localize(L.HEADER_NAMES, {
+	[-1000010] = "Botín común de jefe",
+	[-1000013] = "Objetos comunes entre vendedores",
+	[-1000017] = "Botín",
+	[-1000019] = "Exploración",
+	[-1000021] = "Rutas de vuelo",
+	[-1000023] = "Buscador de grupo",
 	[-1000025] = "Festividades",
+	[-1000032] = "Raro",
+	[-1000038] = "Tesoros",
+	[-1000042] = "Jefes de mundo",
+	[-1000044] = "Botín de zona",
+	[-1000048] = "Dragones de la pesadilla",
+	[-1000055] = "Evento cronometrado",
+	[-1000056] = "Primer cofre",
+	[-1000057] = "Segundo cofre",
+	[-1000058] = "Tercer cofre",
+	[-1000059] = "Cofre final",
+	[-1000069] = "Reliquias",
+	[-1000114] = "Parche 1.x.x",
+	[-1000115] = "Parche 2.x.x",
+	[-1000116] = "Parche 3.x.x",
+	[-1000117] = "Parche 4.x.x",
+	[-1000118] = "Parche 5.x.x",
+	[-1000119] = "Parche 6.x.x",
+	[-1000123] = "Encantamientos de armadura",
+	[-1000125] = "Encantamientos de armas",
+	[-1000127] = select(2,GetAchievementInfo(2091))..": Temporada 1",
+	[-1000128] = select(2,GetAchievementInfo(418))..": Temporada 2",
+	[-1000129] = select(2,GetAchievementInfo(419))..": Temporada 3",
+	[-1000130] = select(2,GetAchievementInfo(420))..": Temporada 4",
+	[-1000131] = select(2,GetAchievementInfo(3336))..": Temporada 5",
 	[-1000132] = "Gladiador Odioso",
+	[-1000133] = select(2,GetAchievementInfo(3436))..": Temporada 6",
+	[-1000134] = select(2,GetAchievementInfo(3758))..": Temporada 7",
+	[-1000135] = select(2,GetAchievementInfo(4599))..": Temporada 8",
+	[-1000140] = "Equipo de Elite",
+	[-1000141] = "Equipo de Gladiador",
+	[-1000142] = "Titulos de honor",
 	[-1000162] = "Apariciones Compartidas",
 	[-1000163] = "Apariencia única",
 	[-1000168] = "Los Cuatro Jinetes",
@@ -19047,8 +19083,10 @@ localize(L.HEADER_NAMES, {
 	[-1000282] = "Fiesta de la cerveza",
 	[-1000373] = "Nuevo personaje",
 	[-1000380] = "Prima",
-	[-1000862] = "Gladiador cataclísmico: Season 11",
+	[-1000860] = select(2,GetAchievementInfo(6002))..": Temporada 9",
+	[-1000862] = "Gladiador cataclísmico: Temporada 11",
 	[-1000870] = "La incursión trol",
+	[-1000904] = "Fuente IDs",
 	[-1001034] = "Vínculos Elementales",
 	[-1001035] = "Pescado de temporada: lubina de verano",
 	[-1001036] = "Pescado de temporada: calamares de invierno",
@@ -19059,9 +19097,17 @@ localize(L.HEADER_NAMES, {
 	[-1001074] = "Protocolo Crepúsculo",
 });
 localize(L.HEADER_DESCRIPTIONS, {
+	[-1000025] = "Es posible que deba estar activo un día festivo específico para que pueda completar las cosas referenciadas en esta sección.",
+	[-1000030] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Depuración.",
+	[-1000033] = "Contiene cosas que son recompensadas o están disponibles en otro contenido dentro de la sección contenedora.\nSe consolidan aquí en un esfuerzo por reducir la duplicación de muchas fuentes posibles.",
+	[-1000097] = "Esta sección te mostrará cosas que puedes comprar en la Tienda del Juego en Retail.",
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
 	[-1000163] = "Este artículo tiene una apariencia única. Debes recolectar este artículo específicamente para ganar la apariencia.",
 	[-1000380] = "Esta lista contiene elementos inalcanzables que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los elementos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los elementos y encuentros que se enumeran a continuación.",
+	[-1000863] = "Estos artículos requieren el rango Legionario/Capitán-Caballero de Campos de Batalla Clásicos/Clasificados o superior para comprarse.",
+});
+localize(L.HEADER_LORE, {
+	[-1000048] = "Uno de estos dragones aparecerá aleatoriamente en las coordenadas asociadas en todo Azeroth.",
 });
 localize(ObjectNames, {
 	[31] = "Estatua de león antigua",
@@ -21025,6 +21071,18 @@ for key,value in pairs({
 	[40] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 1 de Cataclysm Classic.|r",
 })
 do phases[key].description = value; end
+if GetLocale():sub(3,4):lower() == "mx" then
+localize(L.HEADER_NAMES, {
+	[-1000010] = "Botín compartido entre los jefes",
+	[-1000017] = "Botin",
+	[-1000025] = "Fiestas",
+	[-1000044] = "Botín de la zona",
+	[-1000048] = "Dragones de pesadilla",
+});
+localize(L.HEADER_DESCRIPTIONS, {
+	[-1000030] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Debug.",
+});
+end
 end
 if simplifiedLocale == "zh" then
 localize(_.CategoryNames, {

@@ -140,7 +140,7 @@ local function GetCatalyst(data)
 	-- Don't let a baked-in upgrade persist since our upgradeLevel might not allow it
 	catalystResult.up = nil
 	catalystResult._up = nil
-	catalystResult.containsType = "CATALYST"
+	catalystResult.filledType = "CATALYST"
 
 	-- app.PrintDebug("Catalyst Result:",catalystResult.hash,catalystResult.up,app:SearchLink(catalystResult))
 	-- app.PrintTable(catalystResult.bonuses)

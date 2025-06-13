@@ -2137,11 +2137,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								11458,	-- Petrified Treant
 							},
 						}),
-						i(4402, {	-- Small Flame Sac
-							["crs"] = {
-								14398,	-- Eldreth Darter
-							},
-						}),
 						i(18344, {	-- Stonebark Gauntlets
 							["crs"] = {
 								11459,	-- Ironbark Protector

@@ -167,6 +167,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 18.6, 51.9, IRONFORGE },	-- The Stonefire Tavern
 						["races"] = ALLIANCE_ONLY,
 						["group"] = {
+							i(2594),	-- Flagon of Dwarven Honeymead/Mead
+							i(2593),	-- Flask of Stormwind Tawny
 							i(1179),	-- Ice Cold Milk
 							i(2596),	-- Skin of Dwarven Stout
 						},

@@ -794,6 +794,12 @@ root(ROOTS.Zones, {
 							i(43100, {	-- Infused Mushroom (QI!)
 								["provider"] = { "o", 192818 },	-- Infused Mushroom
 							}),
+							n(33026, {	-- Sarah Brady <Alcohol>
+								["coord"] = { 44.15, 47.63, NORTHREND_THE_UNDERBELLY },
+								["groups"] = {
+									i(2593),	-- Flask of Stormwind Tawny
+								},
+							}),
 						}),
 						prof(FISHING, {
 							i(45903),	-- Corroded Jewelry (QI!)

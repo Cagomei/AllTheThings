@@ -97,6 +97,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						["coord"] = { 79.5, 58.5, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							i(2594),	-- Flagon of Dwarven Honeymead/Mead
+							i(2593),	-- Flask of Stormwind Tawny
 							i(2596),	-- Skin of Dwarven Stout
 						},
 					}),

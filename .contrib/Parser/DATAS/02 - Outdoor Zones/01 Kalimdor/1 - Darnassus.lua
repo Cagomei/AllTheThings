@@ -104,7 +104,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["skipFill"] = true,
 			}),
 			-- #endif
-			-- #if AFTER 4.0.1.12984
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(4226, {	-- Ulthir <Alchemy Supplies>
@@ -327,7 +326,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 			}),
-			-- #endif
 			n(QUESTS, {
 				q(7799, {	-- A Donation of Mageweave
 					["qg"] = 14725,	-- Raedon Duskstriker

@@ -2626,6 +2626,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
+				i(5051, {	-- Dig Rat
+					["coord"] = { 49.4, 88.2, SOUTHERN_BARRENS },	-- Bael Modan Excavation
+					["cr"] = 3444,	-- Dig Rat
+					["description"] = "Only drops from Dig Rats in Southern Barrens."
+				}),
 				i(78342, {	-- Plump Dig Rat (RECIPE!)
 					["timeline"] = { ADDED_4_3_0 },
 					["coord"] = { 49.4, 88.2, SOUTHERN_BARRENS },

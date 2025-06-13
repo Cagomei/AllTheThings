@@ -2952,6 +2952,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					{ "n", 91033 },	-- Zeezu (Horde)
 					{ "n", 91024 },	-- Jake the Fox (Alliance)
 				},
+				["coords"] = {
+					{ 40.4, 56.2, FROSTWALL },
+					{ 34.6, 33.0, LUNARFALL },
+				},
 				["isDaily"] = true,
 				["cost"] = { { "i", 110609, 50 } },	-- 50x Raw Beast Hide
 			}),

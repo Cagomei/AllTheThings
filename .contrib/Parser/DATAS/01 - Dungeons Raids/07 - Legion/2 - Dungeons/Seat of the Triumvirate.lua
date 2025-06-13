@@ -41,10 +41,11 @@ root(ROOTS.Instances, { expansion(EXPANSION.LEGION, {
 				q(48864, {	-- The Broken Blacksmith
 					["provider"] = { "n", 123668 },	-- Captain Fareeya <The Crescent Glaive>
 					["sourceQuest"] = 48230,	-- Fragment of the Past
-					["coord"] = { 62.6, 39.4, EREDATH },
-					["g"] = {
-						i(152205),	-- Glowing key Fragment (QI!)
+					["coords"] = {
+						{ 51.5, 69.0, THE_VINDICAAR_EREDATH_UPPER },
+						{ 62.6, 39.4, EREDATH },
 					},
+					["g"] = { i(152205) },	-- Glowing key Fragment (QI!)
 				}),
 				q(48271, {	-- Recovering the Pieces
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>

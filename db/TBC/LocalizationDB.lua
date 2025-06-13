@@ -639,9 +639,9 @@ localize(L.HEADER_EVENTS, {
 	[-1001036] = 133899,
 });
 localize(L.EVENT_REMAPPING, {
-	[376] = 1,
 	[374] = 1,
 	[375] = 1,
+	[376] = 1,
 });
 
 -- Programmatic Event Scheduling
@@ -34486,13 +34486,34 @@ do achievementCriterias[key].name = value; end
 end
 if simplifiedLocale == "es" then
 localize(L.HEADER_NAMES, {
+	[-1000010] = "Botín común de jefe",
+	[-1000013] = "Objetos comunes entre vendedores",
 	[-1000015] = "Instructor de demonios",
+	[-1000019] = "Exploración",
+	[-1000021] = "Rutas de vuelo",
 	[-1000025] = "Festividades",
+	[-1000032] = "Raro",
+	[-1000038] = "Tesoros",
 	[-1000040] = "Maestro armero",
-	[-1000127] = "Gladiador: Season 1",
-	[-1000128] = "Gladiador despiadado: Season 2",
-	[-1000129] = "Gladiador vengativo: Season 3",
+	[-1000042] = "Jefes de mundo",
+	[-1000044] = "Botín de zona",
+	[-1000048] = "Dragones de la pesadilla",
+	[-1000055] = "Evento cronometrado",
+	[-1000056] = "Primer cofre",
+	[-1000057] = "Segundo cofre",
+	[-1000058] = "Tercer cofre",
+	[-1000059] = "Cofre final",
+	[-1000069] = "Reliquias",
+	[-1000114] = "Parche 1.x.x",
+	[-1000115] = "Parche 2.x.x",
+	[-1000123] = "Encantamientos de armadura",
+	[-1000125] = "Encantamientos de armas",
+	[-1000127] = "Gladiador: Temporada 1",
+	[-1000128] = "Gladiador despiadado: Temporada 2",
+	[-1000129] = "Gladiador vengativo: Temporada 3",
 	[-1000130] = "Gladiador brutal: Season 4",
+	[-1000141] = "Equipo de Gladiador",
+	[-1000142] = "Titulos de honor",
 	[-1000162] = "Apariciones Compartidas",
 	[-1000163] = "Apariencia única",
 	[-1000168] = "Los Cuatro Jinetes",
@@ -34512,14 +34533,22 @@ localize(L.HEADER_NAMES, {
 	[-1000282] = "Fiesta de la cerveza",
 	[-1000373] = "Nuevo personaje",
 	[-1000380] = "Prima",
+	[-1000904] = "Fuente IDs",
 	[-1001035] = "Pescado de temporada: lubina de verano",
 	[-1001036] = "Pescado de temporada: calamares de invierno",
 });
 localize(L.HEADER_DESCRIPTIONS, {
+	[-1000025] = "Es posible que deba estar activo un día festivo específico para que pueda completar las cosas referenciadas en esta sección.",
+	[-1000030] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Depuración.",
+	[-1000033] = "Contiene cosas que son recompensadas o están disponibles en otro contenido dentro de la sección contenedora.\nSe consolidan aquí en un esfuerzo por reducir la duplicación de muchas fuentes posibles.",
 	[-1000040] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
+	[-1000097] = "Esta sección te mostrará cosas que puedes comprar en la Tienda del Juego en Retail.",
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
 	[-1000163] = "Este artículo tiene una apariencia única. Debes recolectar este artículo específicamente para ganar la apariencia.",
 	[-1000380] = "Esta lista contiene elementos inalcanzables que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los elementos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los elementos y encuentros que se enumeran a continuación.",
+});
+localize(L.HEADER_LORE, {
+	[-1000048] = "Uno de estos dragones aparecerá aleatoriamente en las coordenadas asociadas en todo Azeroth.",
 });
 localize(ObjectNames, {
 	[31] = "Estatua de león antigua",
@@ -37780,6 +37809,15 @@ for key,value in pairs({
 })
 do achievementCriterias[key].name = value; end
 if GetLocale():sub(3,4):lower() == "mx" then
+localize(L.HEADER_NAMES, {
+	[-1000010] = "Botín compartido entre los jefes",
+	[-1000025] = "Fiestas",
+	[-1000044] = "Botín de la zona",
+	[-1000048] = "Dragones de pesadilla",
+});
+localize(L.HEADER_DESCRIPTIONS, {
+	[-1000030] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Debug.",
+});
 for key,value in pairs({
 	[426] = "Gujas de guerra de Azzinoth",
 	[428] = "Trueno Furioso, espada bendita del Hijo del Viento",

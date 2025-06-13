@@ -3936,7 +3936,7 @@ namespace ATT
             var adaptedTimeline = timeline.GetAdaptedTimeline(CURRENT_RELEASE_VERSION);
 
             // If there are no relevant entries for this item, then it's not implemented yet and doesn't exist in the database
-            if (adaptedTimeline == null)
+            if (adaptedTimeline?.Entries == null)
                 return false;   // Invalid entry
 
             // We don't want things that got deleted to be in the addon.

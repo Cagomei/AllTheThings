@@ -21788,6 +21788,12 @@ localize(L.HEADER_NAMES, {
 	[-1000040] = "Maestro armero",
 	[-1000042] = "Jefes de mundo",
 	[-1000044] = "Botín de zona",
+	[-1000048] = "Dragones de la pesadilla",
+	[-1000069] = "Reliquias",
+	[-1000114] = "Parche 1.x.x",
+	[-1000123] = "Encantamientos de armadura",
+	[-1000125] = "Encantamientos de armas",
+	[-1000142] = "Titulos de honor",
 	[-1000162] = "Apariciones Compartidas",
 	[-1000163] = "Apariencia única",
 	[-1000168] = "Los Cuatro Jinetes",
@@ -21805,6 +21811,7 @@ localize(L.HEADER_NAMES, {
 	[-1000236] = "El cetro del Mar de Dunas",
 	[-1000373] = "Nuevo personaje",
 	[-1000380] = "Prima",
+	[-1000904] = "Fuente IDs",
 	[-1001035] = "Pescado de temporada: lubina de verano",
 	[-1001036] = "Pescado de temporada: calamares de invierno",
 });
@@ -21816,6 +21823,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
 	[-1000163] = "Este artículo tiene una apariencia única. Debes recolectar este artículo específicamente para ganar la apariencia.",
 	[-1000380] = "Esta lista contiene elementos inalcanzables que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los elementos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los elementos y encuentros que se enumeran a continuación.",
+});
+localize(L.HEADER_LORE, {
+	[-1000048] = "Uno de estos dragones aparecerá aleatoriamente en las coordenadas asociadas en todo Azeroth.",
 });
 localize(ObjectNames, {
 	[31] = "Estatua de león antigua",
@@ -23880,6 +23890,7 @@ localize(L.HEADER_NAMES, {
 	[-1000010] = "Botín compartido entre los jefes",
 	[-1000025] = "Fiestas",
 	[-1000044] = "Botín de la zona",
+	[-1000048] = "Dragones de pesadilla",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000030] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Debug.",

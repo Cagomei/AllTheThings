@@ -860,6 +860,7 @@ MobileDB.GameObject = {
 	[290975] = true,	-- Silver Nugget (q:51707 & q:51743)
 	[290996] = true,	-- Temple of Rezan Map (q:51679)
 	[291213] = true,	-- Small Treasure Chest (Drustvar)
+	[291217] = true,	-- Small Treasure Chest (Drustvar)
 	[291222] = true,	-- Small Treasure Chest (Drustvar)
 	[291234] = true,	-- Steaming Fresh Carrion (q:47272)
 	[291235] = true,	-- Steaming Fresh Carrion (q:47272)

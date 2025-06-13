@@ -3137,15 +3137,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				-- #if ANYCLASSIC
-				i(3173, {	-- Bear Meat
-					["coord"] = { 48.6, 31.8, DARKSHORE },
-					["crs"] = {
-						2164,	-- Rabid Thistle Bear
-						2163,	-- Thistle Bear
-						2165,	-- Grizzled Thistle Bear
-					},
-				}),
+				-- #if BEFORE 4.0.3
+				i(3173),	-- Bear Meat
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(211471, {	-- Cliffspring Key
@@ -3239,14 +3232,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2157,	-- Stone Behemoth
 					},
 				}),
-				i(5469, {	-- Strider Meat
-					["crs"] = {
-						2322,	-- Foreststrider
-						2321,	-- Foreststrider Fledgling
-						2323,	-- Giant Foreststrider
-						2172,	-- Strider Clutchmother
-					},
-				}),
+				i(5469),	-- Strider Meat
 				-- #endif
 			}),
 		},

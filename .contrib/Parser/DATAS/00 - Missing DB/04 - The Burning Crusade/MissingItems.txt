@@ -172,7 +172,6 @@ i(22633),	-- l Juju \\ Troll Juju
 i(22634),	-- rlight Ore \\ Underlight Ore
 i(22639),	-- Sora Troll Ear \\ Zeb'Sora Troll Ear
 i(22640),	-- of Kel'gash the Wicked \\ Head of Kel'gash the Wicked
-i(22644),	-- chy Spider Leg \\ Crunchy Spider Leg
 i(22646),	-- Master Spellstone (DEPRECATED) \\ Master Spellstone
 i(22653),	-- Khan's Head \\ Dar'Khan's Head
 i(22674),	-- front Medallion \\ Wavefront Medallion
@@ -1017,8 +1016,6 @@ i(27628),	-- Level 62 Test Gear Green - Plate - Warrior 2
 i(27629),	-- Level 61 Test Gear Green - Plate - Warrior 2
 i(27630),	-- Level 60 Test Gear Green - Plate - Warrior 2
 i(27634),	-- Saga of Terokk \\ The Saga of Terokk
-i(27668),	-- Meat \\ Lynx Meat
-i(27669),	-- Flesh \\ Bat Flesh
 i(27671),	-- ard Meat \\ Buzzard Meat
 i(27674),	-- ger Flesh \\ Ravager Flesh
 i(27676),	-- nge Spores \\ Strange Spores
@@ -1548,16 +1545,12 @@ i(30713),	-- Art of Fel Reaver Maintenance \\ The Art of Fel Reaver Maintenance
 i(30716),	-- -Burning Ash \\ Ever-Burning Ash \\ Ever-burning Ash
 i(30717),	-- Harbinger's Pendant
 i(30718),	-- [UNUSED] Metzen and Carnes' Test Robe of Asskicking
-i(30742),	-- oral Phase Modulator \\ Temporal Phase Modulator
-i(30743),	-- o-Nether Drake Essence \\ Proto-Nether Drake Essence
 i(30760),	-- al Draenic Robe \\ Formal Draenic Robe
 i(30765),	-- y Draenic Breastplate \\ Heavy Draenic Breastplate
 i(30771),	-- y Draenic Bracers \\ Heavy Draenic Bracers
 i(30775),	-- red Bone Shield \\ Layered Bone Shield
 i(30777),	-- r Heavy Belt \\ Aldor Heavy Belt
 i(30781),	-- hari Chain Vest \\ Mag'hari Chain Vest
-i(30782),	-- escent Nether Drake Essence \\ Adolescent Nether Drake Essence
-i(30783),	-- re Nether Drake Essence \\ Mature Nether Drake Essence
 i(30784),	-- Mag'hari Gauntlets \\ Worn Mag'hari Gauntlets
 i(30785),	-- roron's Glaive \\ Morgroron's Glaive
 i(30786),	-- zradon's Glaive \\ Makazradon's Glaive
@@ -1579,7 +1572,6 @@ i(30812),	-- escent Scale \\ Iridescent Scale
 i(30813),	-- nomed Fang \\ Envenomed Fang
 i(30814),	-- mous Molar \\ Enormous Molar
 i(30815),	-- t Scale \\ Giant Scale
-i(30817),	-- le Flour \\ Simple Flour
 i(30818),	-- larized Magneto Sphere \\ Repolarized Magneto Sphere
 i(30819),	-- ire Spleen \\ Felfire Spleen
 i(30820),	-- ous Scorpid Claw \\ Vicious Scorpid Claw
@@ -1655,7 +1647,6 @@ i(31386),	-- f of Parshah \\ Staff of Parshah
 i(31387),	-- ery Mask \\ Mystery Mask
 i(31389),	-- Captured Eye of Grillok
 i(31403),	-- emane's Sleeping Powder \\ Sablemane's Sleeping Powder
-i(31437),	-- cinal Drake Essence \\ Medicinal Drake Essence
 i(31449),	-- illed Stalker Sight \\ Distilled Stalker Sight
 i(31450),	-- lth of the Stalker \\ Stealth of the Stalker
 i(31451),	-- Energy \\ Pure Energy
@@ -1681,7 +1672,6 @@ i(31653),	-- ensed Nether Gas \\ Condensed Nether Gas
 i(31655),	-- Skith Prison Key \\ Veil Skith Prison Key
 i(31656),	-- er Nether Drake Spirit \\ Lesser Nether Drake Spirit
 i(31662),	-- k's Missive \\ Rilak's Missive
-i(31663),	-- it Calling Totems \\ Spirit Calling Totems
 i(31664),	-- hed's Key \\ Zuluhed's Key
 i(31666),	-- ered Steam Tonk Controller \\ Battered Steam Tonk Controller
 i(31667),	-- Knife of a Thousand Lies
@@ -2157,7 +2147,6 @@ i(34259),	-- nic Blood \\ Demonic Blood
 i(34338),	-- Remnants \\ Mana Remnants
 i(34368),	-- ned Crystal Cores \\ Attuned Crystal Cores
 i(34410),	-- yed Holiday Ham \\ Honeyed Holiday Ham
-i(34412),	-- kling Apple Cider \\ Sparkling Apple Cider
 i(34414),	-- tered Sun Banner \\ Shattered Sun Banner
 i(34420),	-- ured Legion Scroll \\ Captured Legion Scroll
 i(34426),	-- er Veil Gift \\ Winter Veil Gift
@@ -2273,7 +2262,6 @@ i(35499),	-- Ninja Grenade [PH]
 i(35501),	-- nal Earthstorm Diamond \\ Eternal Earthstorm Diamond
 i(35503),	-- r Skyfire Diamond \\ Ember Skyfire Diamond
 i(35512),	-- et Full of Snow \\ Pocket Full of Snow
-i(35562),	-- Flank \\ Bear Flank
 i(35568),	-- e of Silvermoon \\ Flame of Silvermoon
 i(35569),	-- e of the Exodar \\ Flame of the Exodar
 i(35674),	-- Test Druid  Weapon

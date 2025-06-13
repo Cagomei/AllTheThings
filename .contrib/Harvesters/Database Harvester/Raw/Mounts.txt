@@ -321,6 +321,13 @@
 473487@@@Sha-Touched Cloud Serpent
 3.4.4.59817
 1217476@@@Flaming Royal Fire Hawk
+3.4.4.60842
+1239204@@@Stormwind Skyseeker
+1239240@@@Orgrimmar Sentinel
+1239372@@@Celestial Steed
+3.4.4.61075
+459486@@@Golden Ashes of Al'ar
+459538@@@Harmonious Greetings Bear
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse

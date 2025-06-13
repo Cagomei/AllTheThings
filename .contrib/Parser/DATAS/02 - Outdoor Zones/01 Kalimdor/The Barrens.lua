@@ -4738,6 +4738,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3384,	-- Southsea Privateer
 					},
 				}),
+				i(5051, {	-- Dig Rat
+					["coord"] = { 48.8, 84.8, THE_BARRENS },	-- Bael Modan Excavation
+					["cr"] = 3444,	-- Dig Rat
+					["description"] = "Only drops from Dig Rats in The Barrens."
+				}),
 				i(5020, {	-- Kolkar Booty Key
 					["coords"] = {
 						{ 44.4, 23.6, THE_BARRENS },

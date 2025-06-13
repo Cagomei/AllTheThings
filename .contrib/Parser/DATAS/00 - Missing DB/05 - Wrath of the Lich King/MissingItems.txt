@@ -1,6 +1,7 @@
 3.4.0.43659
 i(1100),	-- Monster Bag \\ Codex of Holy Smite III
 i(1254),	-- Lesser Firestone (DEPRECATED) \\ Lesser Firestone
+i(1357),	-- ain Sanders' Treasure Map \\ Captain Sanders' Treasure Map \\ Captain Sander's Treasure Map
 i(1358),	-- ue to Sanders' Treasure \\ A Clue to Sanders' Treasure \\ A Clue to Sander's Treasure
 i(1361),	-- her Clue to Sanders' Treasure \\ Another Clue to Sanders' Treasure \\ Another Clue to Sander's Treasure
 i(1362),	-- l Clue to Sanders' Treasure \\ Final Clue to Sanders' Treasure \\ Final Clue to Sander's Treasure
@@ -1651,7 +1652,6 @@ i(40649),	-- LK ARENA TEST WARRIOR SHOULDERS 252
 i(40650),	-- LK ARENA TEST WARRIOR BRACERS 213
 i(40651),	-- LK ARENA TEST WARRIOR BRACERS 252
 i(40652),	-- let Onslaught Trunk Key \\ Scarlet Onslaught Trunk Key
-i(40653),	-- ing Pet Carrier \\ Reeking Pet Carrier
 i(40654),	-- LK ARENA TEST MAGE BP 213
 i(40655),	-- LK ARENA TEST MAGE BP 252
 i(40656),	-- LK ARENA TEST PRIEST BP 213
@@ -2009,7 +2009,6 @@ i(42383),	-- ful Gladiator's Energy Staff \\ Hateful Gladiator's Energy Staff
 i(42389),	-- ful Gladiator's Staff \\ Hateful Gladiator's Staff
 i(42394),	-- Armor Plate \\ Dark Armor Plate
 i(42396),	-- Charred Glyph \\ red Glyph \\ Glyph of Circle of Healing
-i(42398),	-- Charred Glyph \\ red Glyph \\ Glyph of Fade
 i(42401),	-- Charred Glyph \\ red Glyph \\ Glyph of Holy Nova
 i(42403),	-- Charred Glyph \\ red Glyph \\ Glyph of Deep Wells \\ Glyph of Lightwell
 i(42404),	-- Charred Glyph \\ red Glyph \\ Glyph of Mass Dispel
@@ -2160,7 +2159,6 @@ i(42740),	-- red Glyph \\ Charred Glyph \\ Glyph of Fire Blast
 i(42742),	-- d Glyph \\ Faded Glyph \\ Glyph of Frostbolt
 i(42745),	-- Charred Glyph \\ red Glyph \\ Glyph of Splitting Ice \\ Glyph of Ice Lance
 i(42748),	-- Charred Glyph \\ red Glyph \\ Glyph of Rapid Displacement \\ Glyph of Invisibility
-i(42749),	-- Charred Glyph \\ red Glyph \\ Glyph of Mana Gem \\ Glyph of Mage Armor
 i(42751),	-- h of Crittermorph \\ Glyph of Crittermorph \\ Glyph of Molten Armor
 i(42752),	-- Charred Glyph \\ red Glyph \\ Glyph of Polymorph
 i(42753),	-- Charred Glyph \\ red Glyph \\ Glyph of Icy Veins \\ Glyph of Cone of Cold \\ Glyph of Remove Curse
@@ -2779,7 +2777,6 @@ i(44812),	-- ey Shooter \\ Turkey Shooter
 i(44818),	-- egarden Egg \\ Noblegarden Egg
 i(44832),	-- Squirt Gun [PH]
 i(44833),	-- Empty Squirt Gun [PH]
-i(44841),	-- le Fawn's Salt Lick \\ Little Fawn's Salt Lick
 i(44844),	-- ey Caller \\ Turkey Caller
 i(44845),	-- Test Mace of Unending Life
 i(44846),	-- Test Blessed Qiraji War Hammer
@@ -3159,7 +3156,7 @@ i(50130),	-- glebolt's Khorium Bomb \\ Snagglebolt's Khorium Bomb
 i(50131),	-- glebolt's Air Analyzer \\ Snagglebolt's Air Analyzer
 i(50132),	-- TEST RING ONE
 i(50133),	-- TEST RING TWO
-i(50164),	-- Siabi's Barely Bigger Beer \\ Fras Siabi's Barely Bigger Beer
+i(50164),	-- Siabi's Barely Bigger Beer \\ Ezra Grimm's Barely Bigger Beer \\ Fras Siabi's Barely Bigger Beer
 i(50204),	-- of the Drowned Contessa \\ Wand of the Drowned Contessa
 i(50254),	-- ued Quel'Delar \\ Subdued Quel'Delar
 i(50256),	-- Shadow's Edge One-Hander (NEW)
@@ -3675,3 +3672,10 @@ i(235562),	-- Flaming Royal Fire Hawk
 3.4.4.59853
 i(242550),	-- Warglaive of Azzinoth
 i(242551),	-- Warglaive of Azzinoth
+3.4.4.60842
+i(245584),	-- Stormwind Skyseeker
+i(245612),	-- Orgrimmar Sentinel
+i(245613),	-- Celestial Steed
+3.4.4.61075
+i(226805),	-- Golden Ashes of Al'ar
+i(226812),	-- Harmonius Greetings Bear

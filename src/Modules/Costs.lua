@@ -946,6 +946,7 @@ app.AddEventHandler("OnLoad", function()
 				if o.hash ~= groupHash then
 					-- app.PrintDebug("Purchase @",app:SearchLink(o))
 					clone = CreateObject(o);
+					clone.filledType = "COST"
 					groups[#groups + 1] = clone
 				end
 			end

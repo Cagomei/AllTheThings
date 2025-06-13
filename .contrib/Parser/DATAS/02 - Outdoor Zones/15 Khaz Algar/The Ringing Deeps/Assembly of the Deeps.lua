@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["g"] = {
 								i(226273, {	-- Awakened Mechanical Cache (S1)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-									["timeline"] = { REMOVED_11_1_0_SEASONSTART },
+									["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 									["g"] = {
 										i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!)
 										i(224426),	-- Pattern: Ignition Satchel (RECIPE!)

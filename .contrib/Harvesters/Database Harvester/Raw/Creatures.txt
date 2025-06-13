@@ -2027,6 +2027,12 @@
 74405@@@Murkalot
 74413@@@Treasure Goblin
 77137@@@Dread Hatchling
+5.5.0.61000
+247440@@@Chi-Ji
+247447@@@Chi-Ji
+247730@@@Xuen
+247731@@@Niuzao
+247732@@@Yu'lon
 7.3.0.24473
 305@@@White Stallion
 444@@@Lord Piglet
@@ -22751,3 +22757,6 @@
 231759@@@Eitrigg
 231764@@@Faerin Lothar
 236815@@@Karga Bloodfury
+11.1.7.60915
+229945@@@Faerin Lothar
+229951@@@Captain Roderick Brewston

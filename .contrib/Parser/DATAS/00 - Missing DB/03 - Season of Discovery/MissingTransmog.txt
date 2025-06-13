@@ -2075,3 +2075,12 @@ s(291812)/i(243064),	-- Long Staff
 1.15.7.60249
 s(291868)/i(243345),	-- Long Staff
 s(292215)/i(244460),	-- Caladbolg
+1.15.7.60932
+s(292969)/i(246055),	-- Inquisition Grips
+s(292970)/i(246056),	-- Inquisition Armbraces
+s(292971)/i(246057),	-- Inquisition Stompers
+s(292972)/i(246058),	-- Inquisition Plate Pants
+s(292973)/i(246059),	-- Inquisition Cord
+s(292974)/i(246060),	-- Inquisition Cuirass
+s(292975)/i(246061),	-- Inquisition Epaulets
+s(292976)/i(246062),	-- Inquisition Faceguard

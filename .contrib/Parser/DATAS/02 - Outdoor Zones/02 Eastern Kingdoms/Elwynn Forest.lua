@@ -3724,17 +3724,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			})),
 			-- #endif
 			n(ZONE_DROPS, {
-				-- #if ANYCLASSIC
-				i(769, {	-- Chunk of Boar Meat
-					["coord"] = { 41.6, 88.0, ELWYNN_FOREST },
-					["crs"] = {
-						119,	-- Longsnout
-						390,	-- Porcine Entourage
-						330,	-- Princess
-						524,	-- Rockhide Boar
-						113,	-- Stonetusk Boar
-					},
-				}),
+				-- #if BEFORE 4.0.3
+				i(769),	-- Chunk of Boar Meat
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(204906, {	-- Gnoll Blood

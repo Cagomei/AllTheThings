@@ -157,7 +157,6 @@ s(158195)/i(5568),	-- th Pebble \\ Smooth Pebble
 s(158237)/i(5748),	-- aur Longbow \\ Centaur Longbow
 s(158268)/i(5856),	-- Monster - Throwing Axe
 s(158269)/i(5870),	-- Monster - Throwing Spear
-s(158278)/i(5956),	-- ksmith Hammer \\ Blacksmith Hammer
 s(158308)/i(6088),	-- Monster - Torch, Ranged
 s(158313)/i(6096),	-- entice's Shirt \\ Apprentice's Shirt
 s(158314)/i(6097),	-- yte's Shirt \\ Acolyte's Shirt

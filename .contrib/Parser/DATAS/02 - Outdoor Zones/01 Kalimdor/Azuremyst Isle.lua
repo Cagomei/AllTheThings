@@ -1586,6 +1586,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						17201,	-- Moongraze Buck
 						17200,	-- Moongraze Stag
 					},
+					["description"] = "Only drops from stags on Azuremyst Isle.",
 				}),
 				i(23759, {	-- Rune Covered Tablet
 					["coords"] = {

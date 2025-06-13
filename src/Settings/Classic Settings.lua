@@ -479,7 +479,18 @@ settings.GetUnobtainableFilter = function(self, u)
 end
 settings.Set = function(self, setting, value)
 	AllTheThingsSettings.General[setting] = value;
+	app.HandleEvent("Settings.OnSet","General",setting,value)
 	self:Refresh();
+end
+settings.SetValue = function(self, container, setting, value)
+	local settingscontainer = RawSettings[container]
+	if not settingscontainer then
+		settingscontainer = {}
+		RawSettings[container] = settingscontainer
+	end
+	settingscontainer[setting] = value
+	app.HandleEvent("Settings.OnSet",container,setting,value)
+	self:Refresh()
 end
 settings.SetFilter = function(self, filterID, value)
 	AllTheThingsSettingsPerCharacter.Filters[filterID] = value;
@@ -487,11 +498,12 @@ settings.SetFilter = function(self, filterID, value)
 end
 settings.SetTooltipSetting = function(self, setting, value)
 	AllTheThingsSettings.Tooltips[setting] = value;
+	app.HandleEvent("Settings.OnSet","Tooltips",setting,value)
 	app.WipeSearchCache();
 	self:Refresh();
 end
 settings.SetUnobtainableFilter = function(self, u, value)
-	AllTheThingsSettings.Unobtainable[u] = value;
+	self:SetValue("Unobtainable", u, value and true or nil)
 	self:UpdateMode(1);
 end
 settings.SetPersonal = function(self, setting, value)

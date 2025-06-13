@@ -1220,6 +1220,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					
 				})),
 			}),
+			-- #if NOT ANYCLASSIC
 			d(DIFFICULTY.LEGACY_RAID.FINDER, {			-- Raid Finder (Removed with Patch 6.0.2) >> Items marked "Raid Finder" after 6.0 <<
 				-- #if AFTER 6.0.2
 				["description"] = "This was the original Raid Finder difficulty. Previously, loot had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
@@ -1917,6 +1918,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					}),
 				},
 			}),
+			-- #endif
 			d(CURRENT_NORMAL_PLUS_DIFFICULTIES, {		-- Flexible+ (5.4.0+) / Normal+ (6.0.2+)
 				n(ZONE_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 					i(113224),	-- Aeth's Swiftcinder Cloak

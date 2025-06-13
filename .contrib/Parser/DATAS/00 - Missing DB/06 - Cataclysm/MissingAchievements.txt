@@ -5,8 +5,6 @@ ach(4944),	-- Guild Reputation: Friendly \\ Guild Level 10
 ach(4945),	-- Guild Reputation: Honored \\ Guild Level 15
 ach(4946),	-- Guild Reputation: Revered \\ Guild Level 20
 4.3.4.15595
-ach(5266),	-- Three's Company: 2400
-ach(5267),	-- Three's Company: 2700
 ach(5268),	-- In Service of the Alliance
 ach(5269),	-- In Service of the Horde
 ach(5322),	-- In Service of the Alliance
@@ -51,3 +49,5 @@ ach(5823),	-- Veteran of the Alliance II
 ach(5824),	-- Veteran of the Horde II
 4.4.1.59069
 ach(41713),	-- [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden) (copy)
+4.4.2.60895
+ach(42242),	-- [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden) \\ [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden) (copy) (copy)

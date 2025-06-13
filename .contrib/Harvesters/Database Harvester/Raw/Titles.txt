@@ -825,7 +825,8 @@
 627@@@Radiant Officer %s
 628@@@Sacred Templar %s
 631@@@%s the Mad
+11.1.5.61122
+636@@@%s the Triple Threat
 11.1.7.60520
 629@@@%s of Hammerfall
 630@@@%s of Stromgarde
-636@@@%s the Triple Threat

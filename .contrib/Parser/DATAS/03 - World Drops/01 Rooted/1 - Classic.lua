@@ -4597,6 +4597,25 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["description"] = "Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!",
 			-- #endif
 		}),
+		i(4402, {	-- Small Flame Sac
+			-- #if AFTER 4.0.3
+			["crs"] = {
+				14398,	-- Eldreth Darter
+			},
+			["description"] = "Cataclysm messed up with the drop sources for Small Flame Sacs. Supposed to drop from small dragonkin like darters and whelps. The Eldreth Darter in The Capital Gardens in Dire Maul seems to be the most reliable source.",
+			["maps"] = { DIRE_MAUL },
+			-- #else
+			["coords"] = {
+				{ 81.0, 48.0, BADLANDS },
+				{ 45.0, 68.0, DUSTWALLOW_MARSH },
+				{ 46.0, 24.0, FERALAS },
+				{ 36.0, 12.0, STONETALON_MOUNTAINS },
+				{ 15.0, 61.0, SWAMP_OF_SORROWS },
+				{ 62.0, 42.0, WETLANDS },
+			},
+			["description"] = "Drops from small dragonkin like darters and whelps.",
+			-- #endif
+		}),
 		-- From trolls:
 		i(12804, {
 			-- #if BEFORE 4.0.3
@@ -4633,12 +4652,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				TANARIS,
 				THE_HINTERLANDS,
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 40-60.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the listed zones.",
-			-- #else
+			-- #elseif AFTER 4.0.3
 			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 30-60.",
+			-- #else
+			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 40-60.",
 			-- #endif
 			["groups"] = {
 				i(7974),	-- Zesty Clam Meat
@@ -4688,12 +4707,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				GHOSTLANDS,
 				-- #endif
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 10-20.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the listed zones.",
-			-- #else
+			-- #elseif AFTER 4.0.3
 			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 1-20.",
+			-- #else
+			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 10-20.",
 			-- #endif
 			["groups"] = {
 				i(5503),	-- Clam Meat
@@ -4786,19 +4805,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		-- Cooking:
-		i(27669, {	-- Bat Flesh
-			["coords"] = {
-				{ 68.1, 42.5, GHOSTLANDS },	-- Farstrider Enclave, south of.
-				{ 33.8, 64.6, GHOSTLANDS },	-- Deatholme Gate, east of
-				{ 40.3, 71.1, GHOSTLANDS },	-- Deatholme Gate, west of
-			},
-			["crs"] = {
-				16355,	-- Lesser Scourgebat
-				16354,	-- Vampiric Mistbat
-			},
-			["description"] = "Only drops from given bats in Ghostlands.",
-			["timeline"] = { ADDED_2_0_1 },
-		}),
 		i(35562, {	-- Bear Flank
 			["coords"] = {
 				{ 39.0, 45.2, FELWOOD },	-- Shatter Scale Vale, west of
@@ -4810,12 +4816,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				8956,	-- Angerclaw Bear
 				8958,	-- Angerclaw Mauler
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from bears in the level bracket 45-60 like Angerclaw bears in Felwood.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from bears in previously highlevel vanilla zones like Angerclaw bears in Felwood.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from bears in highlevel vanilla zones like Angerclaw bears in Felwood.",
 			-- #else
-			["description"] = "Drops from bears in the old level bracket 45-60 like Angerclaw bears in Felwood.",
+			["description"] = "Drops from bears in the level bracket 45-60 like Angerclaw bears in Felwood.",
 			-- #endif
 			["timeline"] = { ADDED_2_4_0 },
 		}),
@@ -4823,22 +4829,30 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["coords"] = {
 				{ 73.7, 44.8, LOCH_MODAN },	-- Eastside bear valley
 				{ 35.4, 38.5, LOCH_MODAN },	-- Thelsamar, north of
+				-- #if BEFORE 4.0.3
+				{ 48.6, 31.8, DARKSHORE },
+				{ 29.2, 53.0, LOCH_MODAN },
+				-- #endif
 			},
 			["crs"] = {
-				1186,	-- Black Bear
+				1186,	-- Black Bear/Elder Black bear
+				1225,	-- Ol' Sooty
 				-- #if BEFORE 4.0.3
 				1189,	-- Black Bear Patriarch
 				1188,	-- Grizzled Black Bear
+				2165,	-- Grizzled Thistle Bear
+				2164,	-- Rabid Thistle Bear
+				2163,	-- Thistle Bear
 				-- #else
 				44638,	-- Hill grizzly
 				-- #endif
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from bears in the level bracket 10-20 like Black Bears in Loch Modan.",
-			-- #elseif AFTER BFA
-			["description"] = "Drops from crawlers in previously lower level vanilla zones like bears in Loch Modan.",
+			-- #if AFTER BFA
+			["description"] = "Drops from bears in previously lower level vanilla zones like bears in Loch Modan.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from bears in lower level vanilla zones like bears in Loch Modan.",
 			-- #else
-			["description"] = "Drops from crawlers in the old level bracket 10-20 like bears in Loch Modan.",
+			["description"] = "Drops from bears in the level bracket 10-20 like Black Bears in Loch Modan.",
 			-- #endif
 		}),
 		i(3730, {	-- Big Bear Meat
@@ -4852,12 +4866,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				3810,	-- Elder Ashenvale Bear
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from bears in the level bracket 20-30 like bears in Ashenvale.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from bears in previously lower intermediate level vanilla zones like Elder bears in Ashenvale.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from bears in lower intermediate level vanilla zones like Elder bears in Ashenvale.",
 			-- #else
-			["description"] = "Drops from bears in the old level bracket 20-30 like Elder bears in Ashenvale.",
+			["description"] = "Drops from bears in the level bracket 20-30 like bears in Ashenvale.",
 			-- #endif
 		}),
 		i(2677, {	-- Boar Ribs
@@ -4868,12 +4882,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				157,	-- Goretusk
 				454,	-- Young Goretusk
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from boars in the level bracket 10-20 like Goretusks in Westfall.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from boars in previously lower level vanilla zones like Goretusks in Westfall.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from boars in lower level vanilla zones like Goretusks in Westfall.",
 			-- #else
-			["description"] = "Drops from boars in the old level bracket 10-20 like Goretusks in Westfall.",
+			["description"] = "Drops from boars in the level bracket 10-20 like Goretusks in Westfall.",
 			-- #endif
 		}),
 		i(3404, {	-- Buzzard Wing
@@ -4888,28 +4902,62 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				5430,	-- Searing Roc
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from carrion birds in the level bracket 30-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from carrion birds in previously higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from carrion birds in higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
 			-- #else
-			["description"] = "Drops from carrion birds in the old level bracket 30-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			["description"] = "Drops from carrion birds in the level bracket 30-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
 			-- #endif
 		}),
 		i(769, {	-- Chunk of Boar Meat
 			["coords"] = {
+				{ 46.6, 59.8, DUN_MOROGH },
+				{ 53.6, 59.6, DUROTAR },
+				{ 41.6, 88.0, ELWYNN_FOREST },	-- The Maclyre Vineyards
 				{ 55.0, 27.3, WESTFALL },	-- Saldean's Farm
+				{ 54.2, 42.6, WESTFALL },
+				-- #if BEFORE 4.0.3
+				{ 37.0, 34.4, LOCH_MODAN },
+				{ 32.2, 71.0, REDRIDGE_MOUNTAINS },
+				-- #else
+				{ 56.3, 35.8, LOCH_MODAN },
+				-- #endif
 			},
 			["crs"] = {
+				1125,	-- Crag Boar
+				3099,	-- Dire Mottled Boar
+				3100,	-- Elder Mottled Boar
 				157,	-- Goretusk
+				547,	-- Great Goretusk
+				119,	-- Longsnout
+				330,	-- Princess
+				524,	-- Rockhide Boar
+				1689,	-- Scarred Crag Boar
+				113,	-- Stonetusk Boar
 				454,	-- Young Goretusk
+				-- #if BEFORE 4.0.3
+				3225,	-- Corrupted Mottled Boar
+				1127,	-- Elder Crag Boar
+				1192,	-- Elder Mountain Boar
+				1126,	-- Large Crag Boar
+				1191,	-- Mangy Mountain Boar
+				1190,	-- Mountain Boar
+				390,	-- Porcine Entourage
+				-- #else
+				42357,	-- Hulking Goretusk
+				44627,	-- Mudbelly Boar
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				208638,	-- Fyodi
+				-- #endif
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from boars in the level bracket 5-20 like Goretusks in Westfall.",
-			-- #elseif AFTER BFA
-			["description"] = "Drops from boars in previously lower level vanilla zones like Goretusks in Westfall.",
+			-- #if AFTER BFA
+			["description"] = "Drops from boars in previously entry- and low level vanilla zones like Goretusks in Westfall.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from boars in entry- and low level vanilla zones like Goretusks in Westfall.",
 			-- #else
-			["description"] = "Drops from boars in the old level bracket 5-20 like Goretusks in Westfall.",
+			["description"] = "Drops from boars in the level bracket 5-20 like Goretusks in Westfall.",
 			-- #endif
 		}),
 		i(2675, {	-- Crawler Claw
@@ -4920,12 +4968,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				WESTFALL,
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from crawlers in the level bracket 10-20 like crawlers throughout the shoreline in Ashenvale, Darskshore and Westfall.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from crawlers in previously lower level vanilla zones like crawlers throughout the shoreline in Ashenvale and Westfall.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from crawlers in lower level vanilla zones like crawlers throughout the shoreline in Ashenvale and Westfall.",
 			-- #else
-			["description"] = "Drops from crawlers in the old level bracket 10-20 like crawlers throughout the shoreline in Ashenvale and Westfall.",
+			["description"] = "Drops from crawlers in the level bracket 10-20 like crawlers throughout the shoreline in Ashenvale, Darskshore and Westfall.",
 			-- #endif
 		}),
 		i(2674, {	-- Crawler Meat
@@ -4936,12 +4984,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				WESTFALL,
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from crawlers in the level bracket 10-20 like crawlers throughout the shoreline in Ashenvale, Darskshore and Westfall.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from crawlers in previously lower level vanilla zones like crawlers throughout the shoreline in Ashenvale and Westfall.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from crawlers in lower level vanilla zones like crawlers throughout the shoreline in Ashenvale and Westfall.",
 			-- #else
-			["description"] = "Drops from crawlers in the old level bracket 10-20 like crawlers throughout the shoreline in Ashenvale and Westfall.",
+			["description"] = "Drops from crawlers in the level bracket 10-20 like crawlers throughout the shoreline in Ashenvale, Darskshore and Westfall.",
 			-- #endif
 		}),
 		i(2924, {	-- Crocolisk Meat
@@ -4951,12 +4999,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["crs"] = {
 				1693,	-- Loch Crocolisk
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from crocolisks in the level bracket 10-20 like crocolisks in Loch Modan.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from crocolisks in previously lower level vanilla zones like crocolisks in Loch Modan.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from crocolisks in lower level vanilla zones like crocolisks in Loch Modan.",
 			-- #else
-			["description"] = "Drops from crocolisks in the old level bracket 10-20 like crocolisks in Loch Modan.",
+			["description"] = "Drops from crocolisks in the level bracket 10-20 like crocolisks in Loch Modan.",
 			-- #endif
 		}),
 		i(22644, {	-- Crunchy Spider Leg
@@ -4969,25 +5017,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				930,	-- Black Widow Hatchling
 				217,	-- Venom Web Spider
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from spiders in the level bracket 10-35 like spiders in Duskwood.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from spiders in previously lower intermediate level vanilla zones like spiders in Duskwood.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from spiders in lower intermediate level vanilla zones like spiders in Duskwood.",
 			-- #else
-			["description"] = "Drops from spiders in the old level bracket 10-35 like spiders in Duskwood.",
+			["description"] = "Drops from spiders in the level bracket 10-35 like spiders in Duskwood.",
 			-- #endif
 			["timeline"] = { ADDED_2_0_1 },
-		}),
-		i(5051, {	-- Dig Rat
-			["coords"] = {
-				-- #if BEFORE 4.0.3
-				{ 48.8, 84.8, THE_BARRENS },	-- Bael Modan Excavation
-				-- #else
-				{ 49.4, 88.2, SOUTHERN_BARRENS },	-- Bael Modan Excavation
-				-- #endif
-			},
-			["cr"] = 3444,	-- Dig Rat
-			["description"] = "Only drops from Dig Rats in The Barrens."
 		}),
 		i(12207, {	-- Giant Egg
 			["coords"] = {
@@ -5001,12 +5038,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				5430,	-- Searing Roc
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from birds and owlbeasts in the level bracket 40-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from birds and owlbeasts in previously higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from birds and owlbeasts in higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
 			-- #else
-			["description"] = "Drops from birds and owlbeasts in the old level bracket 40-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			["description"] = "Drops from birds and owlbeasts in the level bracket 40-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
 			-- #endif
 		}),
 		i(2251, {	-- Gooey Spider Leg
@@ -5019,12 +5056,37 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				930,	-- Black Widow Hatchling
 				217,	-- Venom Web Spider
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from spiders in the level bracket 15-40 like spiders in Duskwood.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from spiders in previously intermediate level vanilla zones like spiders in Duskwood.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from spiders in the intermediate level vanilla zones like spiders in Duskwood.",
 			-- #else
-			["description"] = "Drops from spiders in the old level bracket 15-40 like spiders in Duskwood.",
+			["description"] = "Drops from spiders in the level bracket 15-40 like spiders in Duskwood.",
+			-- #endif
+		}),
+		i(723, {	-- Goretusk Liver
+			["coords"] = {
+				{ 55.0, 27.3, WESTFALL },	-- Saldean's Farm
+				-- #if BEFORE 4.0.3
+				{ 32.2, 71.0, REDRIDGE_MOUNTAINS },
+				-- #endif
+			},
+			["crs"] = {
+				-- #if BEFORE 4.0.3
+				345,	-- Bellygrub
+				547,	-- Great Goretusk
+				-- #else
+				42357,	-- Hulking Goretusk
+				-- #endif
+				157,	-- Goretusk
+				454,	-- Young Goretusk
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from boars in previously lower level vanilla zones like Goretusks in Westfall.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from boars in lower level vanilla zones like Goretusks in Westfall.",
+			-- #else
+			["description"] = "Drops from boars in the level bracket 10-20 like Goretusks in Westfall.",
 			-- #endif
 		}),
 		i(12204, {	-- Heavy Kodo Meat
@@ -5042,6 +5104,31 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["description"] = "Drops from kodos in Desolace as well as other vanilla zones.",
 			-- #endif
 		}),
+		i(5467, {	-- Kodo Meat
+			["maps"] = {
+				MULGORE,
+				-- #if BEFORE 4.0.3
+				THE_BARRENS,
+				-- #endif
+			},
+			["crs"] = {
+				3236,	-- Barrens Kodo
+				2973,	-- Kodo Bull
+				2972,	-- Kodo Calf
+				2974,	-- Kodo Matriarch
+				3234,	-- Lost Barrens Kodo
+				-- #if BEFORE 4.0.3
+				3235,	-- Greater Barrens Kodo
+				3474,	-- Lakota'mani
+				3237,	-- Wooly Kodo
+				-- #endif
+			},
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from kodos in Mulgore and southern Barrens.",
+			-- #else
+			["description"] = "Most viably obtained from kodos in Mulgore.",
+			-- #endif
+		}),
 		i(1015, {	-- Lean Wolf Flank
 			["coords"] = {
 				{ 64.0, 20.1, DUSKWOOD },	-- The Darkened Bank, east.
@@ -5054,12 +5141,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				43704,	-- Dire Wolf
 				-- #endif
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from wolves in the level bracket 15-30 like Dire wolves in Duskwood.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from wolves in previously lower intermediate level vanilla zones like Dire wolves in Duskwood.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from wolves in lower intermediate level vanilla zones like Dire wolves in Duskwood.",
 			-- #else
-			["description"] = "Drops from wolves in the old level bracket 15-30 like Dire wolves in Duskwood.",
+			["description"] = "Drops from wolves in the level bracket 15-30 like Dire wolves in Duskwood.",
 			-- #endif
 		}),
 		i(3731, {	-- Lion Meat
@@ -5078,12 +5165,47 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				2384,	-- Starving Mountain Lion
 				-- #endif
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from lions in the level bracket 15-35 like lions in Hillsbrad Foothills and Alterac Mountains.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from lions in previously lower intermediate level vanilla zones like lions in Hillsbrad Foothills.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from lions in lower intermediate level vanilla zones like lions in Hillsbrad Foothills.",
 			-- #else
-			["description"] = "Drops from lions in the old level bracket 15-35 like lions in Hillsbrad Foothills.",
+			["description"] = "Drops from lions in the level bracket 15-35 like lions in Hillsbrad Foothills and Alterac Mountains.",
+			-- #endif
+		}),
+		i(27668, {	-- Lynx Meat
+			["maps"] = {
+				EVERSONG_WOODS,
+				GHOSTLANDS,
+			},
+			["crs"] = {
+				15652,	-- Elder Springpaw
+				16348,	-- Ghostclaw Lynx
+				16349,	-- Ghostclaw Ravager
+				15651,	-- Springpaw Stalker
+				16347,	-- Starving Ghostclaw
+			},
+			["description"] = "Only drops from lynxes in Eversong Forest (except Sunstrider Isle) and Ghostlands.",
+			["timeline"] = { ADDED_2_0_1 },
+		}),
+		i(12223, {	-- Meaty Bat Wing
+			["maps"] = {
+				GHOSTLANDS,
+				TIRISFAL_GLADES,
+			},
+			["crs"] = {
+				1553,	-- Greater Duskbat
+				1554,	-- Vampiric Duskbat
+				-- #if AFTER TBC
+				16355,	-- Lesser Scourgebat
+				16353,	-- Mistbat
+				16354,	-- Vampiric Mistbat
+				-- #endif
+			},
+			-- #if AFTER TBC
+			["description"] = "Only drops from bats in Ghostlands and Tirisfal Glades.",
+			-- #else
+			["description"] = "Only drops from bats in Tirisfal Glades.",
 			-- #endif
 		}),
 		i(1468, {	-- Murloc Fin
@@ -5106,12 +5228,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				42110,	-- Bluegill Puddlejumper
 				-- #endif
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from murlocs in the level bracket 15-30 like Bluegill murlocs in Wetlands.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from murlocs in previously lower intermediate level vanilla zones like Bluegill murlocs in Wetlands.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from murlocs in lower intermediate level vanilla zones like Bluegill murlocs in Wetlands.",
 			-- #else
-			["description"] = "Drops from murlocs in the old level bracket 15-30 like Bluegill murlocs in Wetlands.",
+			["description"] = "Drops from murlocs in the level bracket 15-30 like Bluegill murlocs in Wetlands.",
 			-- #endif
 		}),
 		i(12037, {	-- Mystery Meat
@@ -5132,12 +5254,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				1152,	-- Snapjaw Crocolisk
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in the level bracket 30-60 like Crocolisks in Stranglethorn.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in previously higher intermediate to highlevel vanilla zones like Crocolisks in Stranglethorn.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in higher intermediate to highlevel vanilla zones like Crocolisks in Stranglethorn.",
 			-- #else
-			["description"] = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in the old level bracket 30-60 like Crocolisks in Stranglethorn.",
+			["description"] = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in the level bracket 30-60 like Crocolisks in Stranglethorn.",
 			-- #endif
 		}),
 		i(3685, {	-- Raptor Egg
@@ -5154,12 +5276,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				687,	-- Jungle Stalker
 				686,	-- Lashtail Raptor
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from raptors in the level bracket 20-40 like raptors in Stranglethorn Vale.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from raptors in previously intermediate level vanilla zones like raptors in Stranglethorn Vale.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from raptors in intermediate level vanilla zones like raptors in Stranglethorn Vale.",
 			-- #else
-			["description"] = "Drops from raptors in the old level bracket 20-40 like raptors in Stranglethorn Vale.",
+			["description"] = "Drops from raptors in the level bracket 20-40 like raptors in Stranglethorn Vale.",
 			-- #endif
 		}),
 		i(12184, {	-- Raptor Flesh
@@ -5176,12 +5298,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				687,	-- Jungle Stalker
 				686,	-- Lashtail Raptor
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from raptors in the level bracket 30-60 like raptors in Stranglethorn Vale.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from raptors in previously higher intermediate to highlevel vanilla zones like raptors in Stranglethorn Vale.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from raptors in higher intermediate to highlevel vanilla zones like raptors in Stranglethorn Vale.",
 			-- #else
-			["description"] = "Drops from raptors in the old level bracket 30-60 like raptors in Stranglethorn Vale.",
+			["description"] = "Drops from raptors in the level bracket 30-60 like raptors in Stranglethorn Vale.",
 			-- #endif
 		}),
 		i(12203, {	-- Red Wolf Meat
@@ -5193,13 +5315,86 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				8960,	-- Felpaw Scavenger
 				8959,	-- Felpaw Wolf
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from wolves in the level bracket 30-60 like Felpaw wolves in Felwood.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from wolves in previously higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from wolves in higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",
 			-- #else
-			["description"] = "Drops from wolves in the old level bracket 30-60 like Felpaw wolves in Felwood.",
+			["description"] = "Drops from wolves in the level bracket 30-60 like Felpaw wolves in Felwood.",
 			-- #endif
+		}),
+		i(6889, {	-- Small Egg
+			-- #if BEFORE 4.0.3
+			["coord"] = { 44.0, 48.0, DARKSHORE },
+			-- #endif
+			-- #if AFTER TBC
+			["maps"] = {
+				AZUREMYST_ISLE,
+				EVERSONG_WOODS,
+			},
+			-- #endif
+			["crs"] = {
+				-- #if BEFORE 4.0.3
+				10158,	-- Moonkin
+				10157,	-- Moonkin Oracle
+				10160,	-- Raging Moonkin
+				10159,	-- Young Moonkin
+				-- #endif
+				-- #if AFTER TBC
+				17187,	-- Aberrant Owlbeast
+				17448,	-- Chieftain Oomooroo
+				15650,	-- Crazed Dragonhawk
+				17189,	-- Crazed Wildkin
+				17186,	-- Deranged Owlbeast
+				17374,	-- Greater Timberstrider
+				15649,	-- Feral Dragonhawk Hatchling
+				17188,	-- Raging Owlbeast
+				17373,	-- Timberstrider
+				17372,	-- Timberstrider Fledgling
+				-- #endif
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from birds, owlkin and striders in previously entry- and lower level vanilla zones, and can be found all over Azuremyst Isle and Eversong Woods except Ammen Vale and Sunstrider Isle.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from birds, owlkin and striders in entry- and lower level vanilla zones, and can be found all over Azuremyst Isle and Eversong Woods except Ammen Vale and Sunstrider Isle.",
+			-- #else
+			["description"] = "Drops from birds, owlkin and striders in the level bracket 5-20 like Moonkin in Darkshore.",
+			-- #endif
+		}),
+		i(5465, {	-- Small Spider Leg
+			["coord"] = { 35.7, 13.7, SILVERPINE_FOREST },	-- The Skittering Dark
+			["maps"] = { TELDRASSIL },
+			["crs"] = {
+				2001,	-- Giant Webwood Spider
+				12433,	-- Krethis Shadowspinner
+				7319,	-- Lady Sathrah
+				1781,	-- Mist Creeper/Skitterweb Lurker
+				1780,	-- Moss Stalker/Skitterweb Striker
+				1998,	-- Webwood Lurker
+				2000,	-- Webwood Silkspinner
+				1999,	-- Webwood Venomfang
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from spiders in previously entry- and lower level vanilla zones like spiders in Silverpine Forest and Teldrassil.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from spiders in the entry- and lower level vanilla zones like spiders in Silverpine Forest and Teldrassil.",
+			-- #else
+			["description"] = "Drops from spiders in the level bracket 5-20 like spiders in Silverpine Forest and Teldrassil.",
+			-- #endif
+		}),
+		i(67229, {	-- Stag Flank
+			["coords"] = {
+				{ 45.2, 40.8, DARKSHORE },	-- Withering Thicket
+				{ 47.4, 29.5, DARKSHORE },	-- Maw of the Void, west of
+				{ 26.2, 72.8, AZSHARA },	-- Mountainfoot Strip Mine, southeast of
+			},
+			["crs"] = {
+				37786,	-- Brown Stag
+				33311,	-- Darkshore Stag
+				35096,	-- Weakened Mosshoof Stag
+			},
+			["description"] = "Only drops from the given stags. Brown Stags can only be found in phased Gilneas for fresh Worgen characters.",
+			["timeline"] = { ADDED_4_0_3 },	-- Danny Conkey: At earliest, possibly added in a later patch.
 		}),
 		i(5471, {	-- Stag Meat
 			["coords"] = {
@@ -5214,6 +5409,56 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 			["description"] = "Drops from stags in Ashenvale as well as some other vanilla zones.",
 		}),
+		i(5469, {	-- Strider Meat
+			["coords"] = {
+				-- #if AFTER 4.0.3
+				{ 34.6, 44.6, DUROTAR },	-- Southfury riverside
+				{ 69.5, 55.9, NORTHERN_BARRENS },	-- Southfury southern riverside
+				{ 64.8, 41.1, NORTHERN_BARRENS },	-- Southfury northern riverside
+				-- #endif
+			},
+			["crs"] = {
+				-- #if BEFORE 4.0.3
+				2322,	-- Foreststrider
+				2323,	-- Giant Foreststrider
+				-- #else
+				39337,	-- Wayward Plainstrider
+				-- #endif
+				3246,	-- Fleeting Plainstrider
+				2321,	-- Foreststrider Fledgling
+				3244,	-- Greater Plainstrider
+				3245,	-- Ornery Plainstrider
+				2172,	-- Strider Clutchmother
+			},
+			-- #if AFTER 4.0.3
+			["description"] = "The only viable source is striders by River Southfury dividing Durotar and Northern Barrens.",
+			-- #else
+			["description"] = "Drops from striders in the level bracket 10-20 like Foreststriders throughout Darkshore.",
+			["maps"] = { DARKSHORE },
+			-- #endif
+		}),
+		i(2672, {	-- Stringy Wolf Meat
+			["maps"] = {
+				ELWYNN_FOREST,
+				MULGORE,
+			},
+			["crs"] = {
+				3056,	-- Ghost Howl
+				1922,	-- Grey Forest Wolf
+				525,	-- Mangy Wolf
+				2959,	-- Prairie Stalker
+				2958,	-- Prairie Wolf
+				2960,	-- Prairie Wolf Alpha
+				118,	-- Prowler
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from wolves in previously entry- and lower level vanilla zones like wolves in Elwynn Forest and Mulgore.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from wolves in the entry- and lower level vanilla zones like wolves in Elwynn Forest and Mulgore.",
+			-- #else
+			["description"] = "Drops from wolves in the level bracket 5-17 like wolves in Elwynn Forest and Mulgore.",
+			-- #endif
+		}),
 		i(12206, {	-- Tender Crab Meat
 			["coords"] = {
 				{ 81.9, 11.5, SWAMP_OF_SORROWS },	-- Bogpaddle, east of.
@@ -5223,12 +5468,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				1088,	-- Monstrous Crawler
 				922,	-- Silt Crawler
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from crawlers in the level bracket 40-45 like Crawlers in Swamp of Sorrows.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from crawlers in previously higher intermediate level vanilla zones like Crawlers in Swamp of Sorrows.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from crawlers in higher intermediate level vanilla zones like Crawlers in Swamp of Sorrows.",
 			-- #else
-			["description"] = "Drops from crawlers in the old level bracket 40-45 like Crawlers in Swamp of Sorrows.",
+			["description"] = "Drops from crawlers in the level bracket 40-45 like Crawlers in Swamp of Sorrows.",
 			-- #endif
 		}),
 		i(3667, {	-- Tender Crocolisk Meat
@@ -5249,12 +5494,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				1152,	-- Snapjaw Crocolisk
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from crocolisks in the level bracket 20-40 like Crocolisks in Stranglethorn.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from crocolisks in previously intermediate level vanilla zones like Crocolisks in Stranglethorn.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from crocolisks in intermediate level vanilla zones like Crocolisks in Stranglethorn.",
 			-- #else
-			["description"] = "Drops from crocolisks in the old level bracket 20-40 like Crocolisks in Stranglethorn.",
+			["description"] = "Drops from crocolisks in the level bracket 20-40 like Crocolisks in Stranglethorn.",
 			-- #endif
 		}),
 		i(12208, {	-- Tender Wolf Meat
@@ -5266,12 +5511,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				8960,	-- Felpaw Scavenger
 				8959,	-- Felpaw Wolf
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from wolves in the level bracket 40-60 like Felpaw wolves in Felwood.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from wolves in previously higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from wolves in higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",
 			-- #else
-			["description"] = "Drops from wolves in the old level bracket 40-60 like Felpaw wolves in Felwood.",
+			["description"] = "Drops from wolves in the level bracket 40-60 like Felpaw wolves in Felwood.",
 			-- #endif
 		}),
 		i(5470, {	-- Thunder Lizard Tail
@@ -5285,12 +5530,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["crs"] = {
 				3240,	-- Stormsnout
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from lizards in the level bracket 15-30 like Stormsnouts in The Barrens.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from lizards in previously lower intermediate level vanilla zones like Stormsnouts in The Barrens.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from lizards in lower intermediate level vanilla zones like Stormsnouts in The Barrens.",
 			-- #else
-			["description"] = "Drops from lizards in the old level bracket 15-30 like Stormsnouts in The Barrens.",
+			["description"] = "Drops from lizards in the level bracket 15-30 like Stormsnouts in The Barrens.",
 			-- #endif
 		}),
 		i(12202, {	-- Tiger Meat
@@ -5307,27 +5552,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				1085,	-- Elder Stranglethorn Tiger
 				682,	-- Stranglethorn Tiger
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from tigers in the level bracket 30-60 like tigers in Stranglethorn Vale.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from tigers in previously higher intermediate to highlevel vanilla zones like tigers in Stranglethorn Vale.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from tigers in higher intermediate to highlevel vanilla zones like tigers in Stranglethorn Vale.",
 			-- #else
-			["description"] = "Drops from tigers in the old level bracket 30-60 like tigers in Stranglethorn Vale.",
+			["description"] = "Drops from tigers in the level bracket 30-60 like tigers in Stranglethorn Vale.",
 			-- #endif
-		}),
-		i(1080, {	-- Tough Condor Meat
-			["coords"] = {
-				-- #if BEFORE 4.0.3
-				{ 52.0, 40.0, REDRIDGE_MOUNTAINS },	-- Northside
-				{ 55.0, 72.0, REDRIDGE_MOUNTAINS },	-- Southside
-				-- #else
-				{ 22.2, 64.5, REDRIDGE_MOUNTAINS },	-- Three Corners
-				-- #endif
-			},
-			["crs"] = {
-				428,	-- Dire Condor
-			},
-			["description"] = "Only drops from Dire Condors in Redridge Mountains."
 		}),
 		i(3712, {	-- Turtle Meat
 			["coords"] = {
@@ -5337,12 +5568,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["crs"] = {
 				4397,	-- Mudrock Spikeshell
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from turtles in the level bracket 30-60 like Mudrock turtles in Dustwallow Marsh.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from turtles in previously higher intermediate to highlevel vanilla zones like Mudrock turtles in Dustwallow Marsh.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from turtles in higher intermediate to highlevel vanilla zones like Mudrock turtles in Dustwallow Marsh.",
 			-- #else
-			["description"] = "Drops from turtles in the old level bracket 40-60 like Mudrock turtles in Dustwallow Marsh.",
+			["description"] = "Drops from turtles in the level bracket 30-60 like Mudrock turtles in Dustwallow Marsh.",
 			-- #endif
 		}),
 		i(12205, {	-- White Spider Meat
@@ -5359,12 +5590,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				4376,	-- Darkmist Spider
 				4415,	-- Giant Darkfang Spiders
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from spiders in the level bracket 35-60 like spiders in Dustwallow Marsh.",
-			-- #elseif AFTER BFA
+			-- #if AFTER BFA
 			["description"] = "Drops from spiders in previously higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from spiders in higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh.",
 			-- #else
-			["description"] = "Drops from spiders in the old level bracket 35-60 like spiders in Dustwallow Marsh.",
+			["description"] = "Drops from spiders in the level bracket 35-60 like spiders in Dustwallow Marsh.",
 			-- #endif
 		}),
 		-- Engineering:

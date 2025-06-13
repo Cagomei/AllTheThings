@@ -44,7 +44,6 @@ i(42739),	-- Charred Glyph \\ red Glyph \\ Glyph of Combustion \\ Glyph of Fireb
 i(42742),	-- d Glyph \\ Faded Glyph \\ Glyph of Frostbolt
 i(42745),	-- Charred Glyph \\ red Glyph \\ Glyph of Splitting Ice \\ Glyph of Ice Lance
 i(42748),	-- Charred Glyph \\ red Glyph \\ Glyph of Rapid Displacement \\ Glyph of Invisibility
-i(42749),	-- Charred Glyph \\ red Glyph \\ Glyph of Mana Gem \\ Glyph of Mage Armor
 i(42751),	-- h of Crittermorph \\ Glyph of Crittermorph \\ Glyph of Molten Armor
 i(42753),	-- Charred Glyph \\ red Glyph \\ Glyph of Icy Veins \\ Glyph of Cone of Cold \\ Glyph of Remove Curse
 i(42754),	-- Charred Glyph \\ red Glyph \\ Glyph of Spellsteal \\ Glyph of Dragon's Breath \\ Glyph of Water Elemental
@@ -119,7 +118,6 @@ i(49084),	-- h of Thunder Strike \\ Glyph of Thunder Strike \\ Glyph of Command
 i(49944),	-- sra's Talisman \\ Belrysa's Talisman \\ Belysra's Talisman
 i(50045),	-- Charred Glyph \\ red Glyph \\ Glyph of Counterspell \\ Glyph of Mana Shield \\ Glyph of Eternal Water
 i(50077),	-- Charred Glyph \\ red Glyph \\ Glyph of Eternal Resolve \\ Glyph of Lash of Pain \\ Glyph of Quick Decay
-i(50168),	-- Charred Recipe \\ red Recipe \\ Technique: Glyph of Everlasting Affliction \\ Technique: Glyph of Lash of Pain \\ Technique: Glyph of Quick Decay
 i(53889),	-- "Monster - Fist, Zul'Aman (Main)" \\ Monster - Fist, Zul'Aman (Main)
 i(53890),	-- "Monster - Fist, Zul'Aman (Offhand)" \\ Monster - Fist, Zul'Aman (Offhand)
 i(58525),	-- ObsoleteQA Combat Test Agility Relic \\ QA Combat Test Agility Relic
@@ -851,7 +849,7 @@ i(80211),	-- Enchanting Test Sword
 i(80217),	-- Jasmine Incense
 i(80218),	-- Silversage Incense
 i(80220),	-- st Remedy \\ Forest Remedy
-i(80221),	-- Heavy Exotic Leather
+i(80221),	-- Heavy Mist-Touched Leather \\ Heavy Exotic Leather
 i(80222),	-- le Helm of the Thunder King \\ Battle Helm of the Thunder King
 i(80237),	-- Indalamar's New Holy Hand Grenade
 i(80239),	-- Mega Food 4000
@@ -2960,6 +2958,180 @@ i(86614),	-- Monster - Staff_2h_PanDung_C_01 - Purple
 i(86615),	-- Monster - Staff_2h_PanDung_C_01 - Red
 i(86621),	-- Monster - Vrykul - Mace, 1H Spiked (Lightning)
 i(86623),	-- gtron 4000 Gift Package \\ Blingtron 4000 Gift Package
+i(86739),	-- s of the Mogu'shi \\ Beads of the Mogu'shi
+i(86740),	-- emaw Armguards \\ Stonemaw Armguards
+i(86741),	-- er of the Seven Stars \\ Dagger of the Seven Stars
+i(86742),	-- er Clawfeet \\ Jasper Clawfeet
+i(86743),	-- eflesh Leggings \\ Stoneflesh Leggings
+i(86744),	-- enly Jade Greatboots \\ Heavenly Jade Greatboots
+i(86745),	-- een-Fanged Crown \\ Sixteen-Fanged Crown
+i(86746),	-- ebound Cinch \\ Stonebound Cinch
+i(86747),	-- Dust Leggings \\ Jade Dust Leggings
+i(86748),	-- of Three Lanterns \\ Cape of Three Lanterns
+i(86749),	-- fire Worldwalkers \\ Wildfire Worldwalkers
+i(86750),	-- Raider's Girdle \\ Tomb Raider's Girdle
+i(86751),	-- ers of Six Oxen \\ Bracers of Six Oxen
+i(86752),	-- ification Greathelm \\ Nullification Greathelm
+i(86753),	-- k of Peacock Feathers \\ Cloak of Peacock Feathers
+i(86754),	-- et of Seven Curses \\ Amulet of Seven Curses
+i(86755),	-- n of Shadow \\ Chain of Shadow
+i(86756),	-- lates of Sagacious Shadows \\ Legplates of Sagacious Shadows
+i(86757),	-- of Cursed Dreams \\ Hood of Cursed Dreams
+i(86758),	-- rial Ghostbinder's Robes \\ Imperial Ghostbinder's Robes
+i(86759),	-- grasp Choker \\ Soulgrasp Choker
+i(86760),	-- erets of Spirit Splitting \\ Sollerets of Spirit Splitting
+i(86761),	-- ers of Death \\ Fetters of Death
+i(86762),	-- 'kal, Fist of the Spiritbinder \\ Gara'kal, Fist of the Spiritbinder
+i(86763),	-- errealm Shoulderpads \\ Netherrealm Shoulderpads
+i(86764),	-- of the Ancient Spirit \\ Eye of the Ancient Spirit
+i(86765),	-- als of the Severed Soul \\ Sandals of the Severed Soul
+i(86766),	-- ings of Ancient Spirits \\ Bindings of Ancient Spirits
+i(86767),	-- uit of the Frail Soul \\ Circuit of the Frail Soul
+i(86768),	-- lders of the Divided Mind \\ Spaulders of the Divided Mind
+i(86769),	-- ings of Imprisoned Will \\ Leggings of Imprisoned Will
+i(86770),	-- owsummoner Spaulders \\ Shadowsummoner Spaulders
+i(86771),	-- Charioteer Figurine \\ Jade Charioteer Figurine
+i(86772),	-- Bandit Figurine \\ Jade Bandit Figurine
+i(86773),	-- Magistrate Figurine \\ Jade Magistrate Figurine
+i(86774),	-- Courtesan Figurine \\ Jade Courtesan Figurine
+i(86775),	-- Warlord Figurine \\ Jade Warlord Figurine
+i(86776),	-- et of the Hidden Kings \\ Amulet of the Hidden Kings
+i(86777),	-- aming Tiger, Qiang's Unbreakable Polearm \\ Screaming Tiger, Qiang's Unbreakable Polearm
+i(86778),	-- lskin, Qiang's Impervious Shield \\ Steelskin, Qiang's Impervious Shield
+i(86779),	-- stplate of the Kings' Guard \\ Breastplate of the Kings' Guard
+i(86780),	-- lderguards of the Unflanked \\ Shoulderguards of the Unflanked
+i(86781),	-- tai's Pillaging Leggings \\ Subetai's Pillaging Leggings
+i(86782),	-- w Breaking Windcloak \\ Arrow Breaking Windcloak
+i(86783),	-- 's Choker of Coalesced Shadow \\ Zian's Choker of Coalesced Shadow
+i(86784),	-- 's Treads of Insanity \\ Meng's Treads of Insanity
+i(86785),	-- le of Delirious Visions \\ Girdle of Delirious Visions
+i(86786),	-- ers of Dark Thoughts \\ Bracers of Dark Thoughts
+i(86787),	-- ing Shadow Grips \\ Undying Shadow Grips
+i(86788),	-- of Blind Eyes \\ Hood of Blind Eyes
+i(86789),	-- ion, the Fanged Crescent \\ Elegion, the Fanged Crescent
+i(86790),	-- of Dragon's Blood \\ Vial of Dragon's Blood
+i(86791),	-- le of Infinite Stars \\ Bottle of Infinite Stars
+i(86792),	-- t of the Cosmos \\ Light of the Cosmos
+i(86793),	-- -Stealer Waistguard \\ Star-Stealer Waistguard
+i(86794),	-- crusher Gauntlets \\ Starcrusher Gauntlets
+i(86795),	-- tguard of Total Annihilation \\ Chestguard of Total Annihilation
+i(86796),	-- h of the Celestial Spark \\ Torch of the Celestial Spark
+i(86797),	-- ewalker Striders \\ Phasewalker Striders
+i(86798),	-- tal Belt \\ Orbital Belt
+i(86799),	-- shatter \\ Starshatter
+i(86800),	-- lders of Empyreal Focus \\ Shoulders of Empyreal Focus
+i(86801),	-- Kung, Spark of Titans \\ Fang Kung, Spark of Titans
+i(86802),	-- Shen's Final Orders \\ Lei Shen's Final Orders
+i(86803),	-- -xi's Devastating Legplates \\ Jang-xi's Devastating Legplates
+i(86804),	-- n of Opportunistic Strikes \\ Crown of Opportunistic Strikes
+i(86805),	-- xi's Polarizing Seal \\ Qin-xi's Polarizing Seal
+i(86806),	-- n, Scepter of the Sleeping Emperor \\ Tihan, Scepter of the Sleeping Emperor
+i(86807),	-- lders of the Emperor's Rage \\ Spaulders of the Emperor's Rage
+i(86808),	-- etized Leggings \\ Magnetized Leggings
+i(86809),	-- of Focused Energy \\ Hood of Focused Energy
+i(86810),	-- dwaker Cabochon \\ Worldwaker Cabochon
+i(86811),	-- s of the Still Breath \\ Boots of the Still Breath
+i(86812),	-- k's Chrysanthemum Cape \\ Hisek's Chrysanthemum Cape
+i(86813),	-- er's Ruby Signet \\ Vizier's Ruby Signet
+i(86814),	-- ment of Fear Made Flesh \\ Fragment of Fear Made Flesh
+i(86815),	-- nuating Bracers \\ Attenuating Bracers
+i(86816),	-- tplate of the Forbidden Tower \\ Chestplate of the Forbidden Tower
+i(86817),	-- tlets of Undesired Gifts \\ Gauntlets of Undesired Gifts
+i(86818),	-- of Screaming Secrets \\ Mail of Screaming Secrets
+i(86819),	-- es of Grasping Claws \\ Gloves of Grasping Claws
+i(86820),	-- of the Bladed Tempest \\ Ring of the Bladed Tempest
+i(86821),	-- ers of Unseen Strikes \\ Bracers of Unseen Strikes
+i(86822),	-- tplate of Overwhelming Assault \\ Waistplate of Overwhelming Assault
+i(86823),	-- blade Talons \\ Windblade Talons
+i(86824),	-- er of the Unleashed Storm \\ Choker of the Unleashed Storm
+i(86825),	-- s of the Blowing Wind \\ Boots of the Blowing Wind
+i(86826),	-- ers of Tempestuous Fury \\ Bracers of Tempestuous Fury
+i(86827),	-- e of Gathering Clouds \\ Drape of Gathering Clouds
+i(86828),	-- ting Wind Bracers \\ Twisting Wind Bracers
+i(86829),	-- ado-Summoning Censer \\ Tornado-Summoning Censer
+i(86830),	-- of the Shattered Shell \\ Ring of the Shattered Shell
+i(86831),	-- reaker Greatcloak \\ Legbreaker Greatcloak
+i(86832),	-- lon's Hollow Skull \\ Garalon's Hollow Skull
+i(86833),	-- s of the Leviathan \\ Grips of the Leviathan
+i(86834),	-- breaker Gauntlets \\ Bonebreaker Gauntlets
+i(86835),	-- lace of Congealed Weaknesses \\ Necklace of Congealed Weaknesses
+i(86836),	-- als of the Unbidden \\ Sandals of the Unbidden
+i(86837),	-- ps of Panic \\ Grasps of Panic
+i(86838),	-- s of Eighty Lights \\ Robes of Eighty Lights
+i(86839),	-- l's Hood of Intoxicating Vapors \\ Xaril's Hood of Intoxicating Vapors
+i(86840),	-- mwake Mistcloak \\ Stormwake Mistcloak
+i(86841),	-- ing Cicada Bracers \\ Shining Cicada Bracers
+i(86842),	-- nescent Firefly Wristguards \\ Luminescent Firefly Wristguards
+i(86843),	-- th Beetle Wristbands \\ Smooth Beetle Wristbands
+i(86844),	-- ming Moth Cuffs \\ Gleaming Moth Cuffs
+i(86845),	-- lescent Butterfly Wristbands \\ Pearlescent Butterfly Wristbands
+i(86846),	-- id Cricket Bracers \\ Inlaid Cricket Bracers
+i(86847),	-- ed Hornet Bracers \\ Jagged Hornet Bracers
+i(86848),	-- ated Wasp Bracers \\ Serrated Wasp Bracers
+i(86849),	-- ed Locust Bracers \\ Plated Locust Bracers
+i(86850),	-- ing Damselfly Cuffs \\ Darting Damselfly Cuffs
+i(86851),	-- ful Thorned Ring \\ Painful Thorned Ring
+i(86852),	-- ling Treads \\ Impaling Treads
+i(86853),	-- k of Raining Blades \\ Cloak of Raining Blades
+i(86854),	-- culated Legplates \\ Articulated Legplates
+i(86855),	-- slasher Pauldrons \\ Wingslasher Pauldrons
+i(86856),	-- en's Amber-Sealed Beetle \\ Korven's Amber-Sealed Beetle
+i(86857),	-- of Malleable Amber \\ Belt of Malleable Amber
+i(86858),	-- of the Profane \\ Seal of the Profane
+i(86859),	-- ds of Deadly Secretions \\ Treads of Deadly Secretions
+i(86860),	-- lderpads of Misshapen Life \\ Shoulderpads of Misshapen Life
+i(86861),	-- trous Stompers \\ Monstrous Stompers
+i(86862),	-- ok's Amber Scalpel \\ Un'sok's Amber Scalpel
+i(86863),	-- itar of Seven Stars \\ Scimitar of Seven Stars
+i(86864),	-- s of Shek'zeer \\ Claws of Shek'zeer
+i(86865),	-- tak, Imperial Scepter of the Swarm \\ Kri'tak, Imperial Scepter of the Swarm
+i(86866),	-- n of the Doomed Empress \\ Crown of the Doomed Empress
+i(86867),	-- ings of Shadow Infestation \\ Leggings of Shadow Infestation
+i(86868),	-- ers of Defiled Earth \\ Bracers of Defiled Earth
+i(86869),	-- il's Band of the Endless \\ Regail's Band of the Endless
+i(86870),	-- water Greatboots \\ Deepwater Greatboots
+i(86871),	-- kle of Eversparks \\ Shackle of Eversparks
+i(86872),	-- an's Withering Necklace \\ Kaolan's Withering Necklace
+i(86873),	-- rsoul Signet \\ Watersoul Signet
+i(86874),	-- k of Overwhelming Corruption \\ Cloak of Overwhelming Corruption
+i(86875),	-- s of the Corrupted Waters \\ Cuffs of the Corrupted Waters
+i(86876),	-- ue of Expelled Corruption \\ Casque of Expelled Corruption
+i(86877),	-- tning Prisoner's Boots \\ Lightning Prisoner's Boots
+i(86878),	-- i's Uncleansed Sandals \\ Asani's Uncleansed Sandals
+i(86879),	-- Rei, Staff of the Legendary Protector \\ Gao-Rei, Staff of the Legendary Protector
+i(86880),	-- d Shadow Ring \\ Dread Shadow Ring
+i(86881),	-- f of Nightmares \\ Stuff of Nightmares
+i(86882),	-- rought Mail Hauberk \\ Sunwrought Mail Hauberk
+i(86883),	-- reak Drape \\ Daybreak Drape
+i(86884),	-- of Embodied Terror \\ Belt of Embodied Terror
+i(86885),	-- its of the Sun \\ Spirits of the Sun
+i(86886),	-- an, Terror Incarnate \\ Loshan, Terror Incarnate
+i(86887),	-- erets of Instability \\ Sollerets of Instability
+i(86888),	-- als of the Blackest Night \\ Sandals of the Blackest Night
+i(86889),	-- en, the Soul Burner \\ Taoren, the Soul Burner
+i(86890),	-- or in the Mists \\ Terror in the Mists
+i(86891),	-- ass of the Animated Protector \\ Cuirass of the Animated Protector
+i(86892),	-- s of the Unknown Fear \\ Robes of the Unknown Fear
+i(86893),	-- ya, Orb of the Waterspeaker \\ Jin'ya, Orb of the Waterspeaker
+i(86894),	-- mist Vortex \\ Darkmist Vortex
+i(86895),	-- er's Belt of Final Winter \\ Healer's Belt of Final Winter
+i(86896),	-- ker's Belt of Final Winter \\ Invoker's Belt of Final Winter
+i(86897),	-- erer's Belt of Final Winter \\ Sorcerer's Belt of Final Winter
+i(86898),	-- er's Cord of Eternal Autumn \\ Weaver's Cord of Eternal Autumn
+i(86899),	-- ker's Cord of Eternal Autumn \\ Stalker's Cord of Eternal Autumn
+i(86900),	-- er's Chain of Unending Summer \\ Binder's Chain of Unending Summer
+i(86901),	-- er's Chain of Unending Summer \\ Ranger's Chain of Unending Summer
+i(86902),	-- er's Girdle of Endless Spring \\ Mender's Girdle of Endless Spring
+i(86903),	-- ector's Girdle of Endless Spring \\ Protector's Girdle of Endless Spring
+i(86904),	-- oller's Girdle of Endless Spring \\ Patroller's Girdle of Endless Spring
+i(86905),	-- 'ka, Execution of Dominion \\ Shin'ka, Execution of Dominion
+i(86906),	-- ak, Jaws of Terror \\ Kilrak, Jaws of Terror
+i(86907),	-- nce of Terror \\ Essence of Terror
+i(86908),	-- dwoven Leggings of Failure \\ Dreadwoven Leggings of Failure
+i(86909),	-- il's Crackling Dagger \\ Regail's Crackling Dagger
+i(86910),	-- itsever \\ Spiritsever
+i(86911),	-- s of Torn Nightmares \\ Robes of Torn Nightmares
+i(86912),	-- ches of Dying Hope \\ Clutches of Dying Hope
 i(86992),	-- ing Cicada Bracers \\ Shining Cicada Bracers
 i(86993),	-- ing Damselfly Cuffs \\ Darting Damselfly Cuffs
 i(86994),	-- ming Moth Cuffs \\ Gleaming Moth Cuffs
@@ -3130,6 +3302,8 @@ i(87791),	-- s of the Crimson Water Strider \\ Reins of the Crimson Water Stride
 i(87798),	-- k of Papers \\ Stack of Papers
 i(87816),	-- rsblood Tincture \\ Tigersblood Tincture
 i(87821),	-- ulated Tiger's Blood \\ Coagulated Tiger's Blood
+i(87823),	-- lok's Fizzing Chestguard \\ Zor'lok's Fizzing Chestguard
+i(87826),	-- s of Terra Cotta \\ Grips of Terra Cotta
 i(87828),	-- rsblood Pigment \\ Tigersblood Pigment
 i(87832),	-- Art Template Cloth Cloak - Cape_Pandaria_D_03
 i(87833),	-- Art Template Cloth Cloak - Cape_Pandaria_D_03 - Green
@@ -3763,6 +3937,21 @@ i(89226),	-- Monster - Axe_1h_PanDung_C_01 - Purple
 i(89228),	-- Monster - Axe_1h_PanDung_C_01 - Red
 i(89229),	-- Monster - Axe_1h_PanDung_C_01 - Tan
 i(89233),	-- bell Seed \\ Songbell Seed
+i(89264),	-- t of the Shadowy Vanquisher \\ Chest of the Shadowy Vanquisher
+i(89265),	-- t of the Shadowy Conqueror \\ Chest of the Shadowy Conqueror
+i(89266),	-- t of the Shadowy Protector \\ Chest of the Shadowy Protector
+i(89267),	-- ings of the Shadowy Vanquisher \\ Leggings of the Shadowy Vanquisher
+i(89268),	-- ings of the Shadowy Conqueror \\ Leggings of the Shadowy Conqueror
+i(89269),	-- ings of the Shadowy Protector \\ Leggings of the Shadowy Protector
+i(89270),	-- tlets of the Shadowy Vanquisher \\ Gauntlets of the Shadowy Vanquisher
+i(89271),	-- tlets of the Shadowy Conqueror \\ Gauntlets of the Shadowy Conqueror
+i(89272),	-- tlets of the Shadowy Protector \\ Gauntlets of the Shadowy Protector
+i(89273),	-- of the Shadowy Vanquisher \\ Helm of the Shadowy Vanquisher
+i(89274),	-- of the Shadowy Conqueror \\ Helm of the Shadowy Conqueror
+i(89275),	-- of the Shadowy Protector \\ Helm of the Shadowy Protector
+i(89276),	-- lders of the Shadowy Vanquisher \\ Shoulders of the Shadowy Vanquisher
+i(89277),	-- lders of the Shadowy Conqueror \\ Shoulders of the Shadowy Conqueror
+i(89278),	-- lders of the Shadowy Protector \\ Shoulders of the Shadowy Protector
 i(89279),	-- Monster - Axe2H_PandariaTradeskill_C_01 - Blue
 i(89282),	-- Monster - Mace_1h_PandaRaid_D_02 - Blue
 i(89285),	-- Monster - Mace_1h_PandaRaid_D_02 - Gold
@@ -3841,6 +4030,7 @@ i(89417),	-- Art Template Cloth Robe - Cloth_Reputation_C_01 - Yellow
 i(89418),	-- Art Template Cloth Shoulder - Cloth_Reputation_C_01 - Yellow
 i(89419),	-- Art Template Cloth Wrist - Cloth_Reputation_C_01 - Yellow
 i(89422),	-- Applebloom Cider
+i(89426),	-- of Fiery Winds \\ Fan of Fiery Winds
 i(89512),	-- lished Amber Fragment \\ Unpolished Amber Fragment
 i(89513),	-- r Encased Mosquito \\ Amber Encased Mosquito
 i(89514),	-- Monster - Shield_PandaRaid_D_02
@@ -3995,13 +4185,19 @@ i(89791),	-- Monster - Wand_1h_PandaRaid_D_01
 i(89792),	-- Monster - Wand_1h_PandaRaid_D_01 - Purple
 i(89793),	-- Monster - Wand_1h_PandaRaid_D_01 - Red
 i(89794),	-- Monster - Wand_1h_PandaRaid_D_01 - Silver
+i(89804),	-- e of Mogu Riches \\ Cache of Mogu Riches
 i(89805),	-- Monster - Sword_1H_PandariaQuest_B_01
 i(89806),	-- Monster - Sword_1H_PandariaQuest_B_01 - Blue
+i(89807),	-- r Encased Treasure Pouch \\ Amber Encased Treasure Pouch
+i(89808),	-- dends of the Everlasting Spring \\ Dividends of the Everlasting Spring
 i(89811),	-- Monster - Knife_1H_PandariaQuest_B_01
 i(89815),	-- er Plow \\ Master Plow
 i(89847),	-- of Witchberry Seeds \\ Bag of Witchberry Seeds
 i(89848),	-- of Jade Squash Seeds \\ Bag of Jade Squash Seeds
 i(89849),	-- of Striped Melon Seeds \\ Bag of Striped Melon Seeds
+i(89856),	-- r Encased Treasure Pouch \\ Amber Encased Treasure Pouch
+i(89857),	-- dends of the Everlasting Spring \\ Dividends of the Everlasting Spring
+i(89858),	-- e of Mogu Riches \\ Cache of Mogu Riches
 i(89861),	-- Monster - Axe_2h_PandaRaid_D_01 - Blue
 i(89862),	-- Monster - Axe_2h_PandaRaid_D_01 - Green
 i(89863),	-- Monster - Axe_2h_PandaRaid_D_01 - Purple
@@ -4027,6 +4223,41 @@ i(89910),	-- Monster - Polearm_2H_Mantid_01 (1-Handed)
 i(89911),	-- ance Firework \\ Alliance Firework
 i(89912),	-- e Firework \\ Horde Firework
 i(89916),	-- Monster - Staff_2h_PanDung_C_03
+i(89952),	-- omone-Coated Choker \\ Pheromone-Coated Choker
+i(89953),	-- t-Soaked Sandals \\ Scent-Soaked Sandals
+i(89954),	-- elt of Sealed Pods \\ Warbelt of Sealed Pods
+i(89955),	-- d Dancer's Leggings \\ Sword Dancer's Leggings
+i(89956),	-- drons of the Broken Blade \\ Pauldrons of the Broken Blade
+i(89957),	-- of Stilled Winds \\ Hood of Stilled Winds
+i(89958),	-- lon's Graven Carapace \\ Garalon's Graven Carapace
+i(89959),	-- lders of Foaming Fluids \\ Shoulders of Foaming Fluids
+i(89960),	-- ments of Steaming Ichor \\ Vestments of Steaming Ichor
+i(89961),	-- ow Heart Spaulders \\ Shadow Heart Spaulders
+i(89962),	-- of Dark Dreams \\ Hood of Dark Dreams
+i(89963),	-- lates of Regal Reinforcement \\ Legplates of Regal Reinforcement
+i(89964),	-- efang Chestguard \\ Stonefang Chestguard
+i(89965),	-- -Linked Girdle \\ Ruby-Linked Girdle
+i(89966),	-- s of Amethyst \\ Claws of Amethyst
+i(89967),	-- 's Seal of Binding \\ Feng's Seal of Binding
+i(89968),	-- 's Ring of Dreams \\ Feng's Ring of Dreams
+i(89969),	-- ed Soul Bracers \\ Bonded Soul Bracers
+i(89970),	-- ers of Violent Meditation \\ Bracers of Violent Meditation
+i(89971),	-- shard Drape \\ Mindshard Drape
+i(89972),	-- of Bursting Novas \\ Band of Bursting Novas
+i(89973),	-- xyfire Girdle \\ Galaxyfire Girdle
+i(89974),	-- n of Keening Stars \\ Crown of Keening Stars
+i(89975),	-- deye Gaze \\ Dreadeye Gaze
+i(89976),	-- tguard of Eternal Vigilance \\ Chestguard of Eternal Vigilance
+i(89977),	-- eled Grips of Solemnity \\ Enameled Grips of Solemnity
+i(89978),	-- uards of Failing Purification \\ Legguards of Failing Purification
+i(89979),	-- rborne Shoulderguards \\ Waterborne Shoulderguards
+i(89980),	-- tlets of the Shadow's Caress \\ Gauntlets of the Shadow's Caress
+i(89981),	-- ps of Serpentine Might \\ Grasps of Serpentine Might
+i(89982),	-- lderpads of Twisted Fate \\ Shoulderpads of Twisted Fate
+i(89983),	-- -Blackened Leggings \\ Fear-Blackened Leggings
+i(89984),	-- s of Pinioned Eyes \\ Robes of Pinioned Eyes
+i(89985),	-- of Instant Petrification \\ Wrap of Instant Petrification
+i(89986),	-- owgrip Girdle \\ Shadowgrip Girdle
 i(89987),	-- Monster - Staff_2h_PanDung_C_03 - Blue
 i(89988),	-- Monster - Staff_2h_PanDung_C_03 - Red
 i(89989),	-- Monster - Staff_2h_PanDung_C_03 - Yellow
@@ -4210,6 +4441,7 @@ i(90730),	-- Art Template Cloth - CharCreate_Priest_B_01 - Robe
 i(90733),	-- Art Template Cloth - CharCreate_Priest_B_01 - Boot
 i(90736),	-- Art Template Mail Boot - Mail_CharCreate_Shaman_B_01
 i(90737),	-- Art Template Mail Hand - Mail_CharCreate_Shaman_B_01
+i(90739),	-- tik's Stormseizer Gauntlets \\ Kaz'tik's Stormseizer Gauntlets
 i(90819),	-- Warlord's Razor \\ High Warlord's Razor
 i(90847),	-- Art Template Cloth - CharCreate_Priest_B_01 - Shoulder
 i(90848),	-- Art Template Cloth - CharCreate_Mage_B_01 - Shoulder
@@ -5646,6 +5878,7 @@ i(95073),	-- Weapon -  Sword_1H_MantidArch_C_01 - Red
 i(95094),	-- ath's Book of Incantations \\ Rommath's Book of Incantations
 i(95340),	-- a's Weathered Spellbook \\ Jaina's Weathered Spellbook
 i(95342),	-- ful of Stolen Gems \\ Handful of Stolen Gems
+i(95343),	-- sures of the Thunder King \\ Treasures of the Thunder King
 i(95348),	-- nnical Primal Diamond \\ Tyrannical Primal Diamond
 i(95349),	-- ant Weapon - Glorious Tyranny \\ Enchant Weapon - Glorious Tyranny
 i(95351),	-- t Iron Pins \\ Ghost Iron Pins
@@ -5746,8 +5979,245 @@ i(95613),	-- Weapon - Hand_1h_ThunderIsleRaid_D_03 (right hand) - Blue
 i(95614),	-- Weapon - Hand_1h_ThunderIsleRaid_D_03 (right hand) - Brown
 i(95615),	-- Weapon - Hand_1h_ThunderIsleRaid_D_03 (right hand) - Green
 i(95616),	-- Weapon - Hand_1h_ThunderIsleRaid_D_03 (right hand) - Purple
+i(95617),	-- dends of the Everlasting Spring \\ Dividends of the Everlasting Spring
+i(95618),	-- e of Mogu Riches \\ Cache of Mogu Riches
+i(95619),	-- r Encased Treasure Pouch \\ Amber Encased Treasure Pouch
 i(95622),	-- ne Trove \\ Arcane Trove
 i(95623),	-- eaver Bounty \\ Sunreaver Bounty
+i(95624),	-- of the Bloodied God \\ Sign of the Bloodied God
+i(95625),	-- taki's Soul Charm \\ Renataki's Soul Charm
+i(95626),	-- tning-Eye Hood \\ Lightning-Eye Hood
+i(95627),	-- rman's Jingling Leggings \\ Spearman's Jingling Leggings
+i(95628),	-- ic-Shot Shoulderguards \\ Static-Shot Shoulderguards
+i(95629),	-- dbreaker Greatbelt \\ Cloudbreaker Greatbelt
+i(95630),	-- tplate of Violent Detonation \\ Chestplate of Violent Detonation
+i(95631),	-- ers of Constant Implosion \\ Bracers of Constant Implosion
+i(95632),	-- dbreaker's Stormscythe \\ Worldbreaker's Stormscythe
+i(95633),	-- rokh's Soulcrystal \\ Jin'rokh's Soulcrystal
+i(95634),	-- tningweaver Gauntlets \\ Lightningweaver Gauntlets
+i(95635),	-- et's Tormented Leggings \\ Al'set's Tormented Leggings
+i(95636),	-- ure-Split Shoulderwraps \\ Fissure-Split Shoulderwraps
+i(95637),	-- s of Static Bursts \\ Robes of Static Bursts
+i(95638),	-- rokh's Dreamshard \\ Jin'rokh's Dreamshard
+i(95639),	-- e of Booming Nights \\ Drape of Booming Nights
+i(95640),	-- blade of the Breaking Storm \\ Soulblade of the Breaking Storm
+i(95641),	-- idon's Last Gasp \\ Horridon's Last Gasp
+i(95642),	-- nitely Conducting Bracers \\ Infinitely Conducting Bracers
+i(95643),	-- tbinder Greatboots \\ Ghostbinder Greatboots
+i(95644),	-- zed Yojamban Carapace \\ Ionized Yojamban Carapace
+i(95645),	-- ewalker's Sandblasted Drape \\ Wastewalker's Sandblasted Drape
+i(95646),	-- sman of Living Poison \\ Talisman of Living Poison
+i(95647),	-- k's Maelstrom Staff \\ Jalak's Maelstrom Staff
+i(95648),	-- ings of Multiplicative Strikes \\ Bindings of Multiplicative Strikes
+i(95649),	-- lithuz Sandmail \\ Sul'lithuz Sandmail
+i(95650),	-- en Warlord's Bracers \\ Frozen Warlord's Bracers
+i(95651),	-- dlord's Bloodsoaked Legplates \\ Bloodlord's Bloodsoaked Legplates
+i(95652),	-- ture-Proof Greathelm \\ Puncture-Proof Greathelm
+i(95653),	-- -Rimmed Doomcloak \\ Horn-Rimmed Doomcloak
+i(95654),	-- k of Zandalar \\ Spark of Zandalar
+i(95655),	-- ecaster's Burning Crown \\ Flamecaster's Burning Crown
+i(95656),	-- inator's Armwraps \\ Vaccinator's Armwraps
+i(95657),	-- mancer's Spiritbinding Spire \\ Dinomancer's Spiritbinding Spire
+i(95658),	-- idon's Tusk Fragment \\ Horridon's Tusk Fragment
+i(95659),	-- ified Eye of the Basilisk \\ Petrified Eye of the Basilisk
+i(95660),	-- mlord's Totemic Wand \\ Venomlord's Totemic Wand
+i(95661),	-- s of Rampaging Earth \\ Roots of Rampaging Earth
+i(95662),	-- lders of Dinomancy \\ Spaulders of Dinomancy
+i(95663),	-- uards of Scintillating Scales \\ Legguards of Scintillating Scales
+i(95664),	-- lates of the Vanquished Abomination \\ Armplates of the Vanquished Abomination
+i(95665),	-- Juju \\ Bad Juju
+i(95666),	-- -Kura, Kazra'jin's Skullcleaver \\ Kura-Kura, Kazra'jin's Skullcleaver
+i(95667),	-- li's Bloodstained Sandals \\ Mar'li's Bloodstained Sandals
+i(95668),	-- alari Robes of the Final Rite \\ Zandalari Robes of the Final Rite
+i(95669),	-- oolay's Final Choice \\ Wushoolay's Final Choice
+i(95670),	-- -Thoth, Sul's Spiritrending Talons \\ Amun-Thoth, Sul's Spiritrending Talons
+i(95671),	-- s of Treacherous Ground \\ Robes of Treacherous Ground
+i(95672),	-- of Gara'jal \\ Gaze of Gara'jal
+i(95673),	-- Ridden Bracers \\ Loa-Ridden Bracers
+i(95674),	-- loaded Bladebreaker Cuirass \\ Overloaded Bladebreaker Cuirass
+i(95675),	-- t, Malakk's Soulburning Greatsword \\ Zerat, Malakk's Soulburning Greatsword
+i(95676),	-- sman of Angry Spirits \\ Talisman of Angry Spirits
+i(95677),	-- itude of the Zandalari \\ Fortitude of the Zandalari
+i(95678),	-- tered Tortoiseshell Longbow \\ Shattered Tortoiseshell Longbow
+i(95679),	-- fall Ribwraps \\ Rockfall Ribwraps
+i(95680),	-- s of Vampiric Cruelty \\ Grips of Vampiric Cruelty
+i(95681),	-- y-Eye Bracers \\ Beady-Eye Bracers
+i(95682),	-- estompers \\ Quakestompers
+i(95683),	-- lderguards of Centripetal Destruction \\ Shoulderguards of Centripetal Destruction
+i(95684),	-- l-Coated Wristplates \\ Shell-Coated Wristplates
+i(95685),	-- et of the Primal Turtle \\ Amulet of the Primal Turtle
+i(95686),	-- lsplitter Greataxe \\ Shellsplitter Greataxe
+i(95687),	-- breaker Greatcloak \\ Beakbreaker Greatcloak
+i(95688),	-- e Shell Bracers \\ Azure Shell Bracers
+i(95689),	-- egaze Hood \\ Stonegaze Hood
+i(95690),	-- tal-Claw Gloves \\ Crystal-Claw Gloves
+i(95691),	-- mershell Cape \\ Shimmershell Cape
+i(95692),	-- os' Discarded Shell \\ Tortos' Discarded Shell
+i(95693),	-- ire Bat-Hide Bracers \\ Vampire Bat-Hide Bracers
+i(95694),	-- s of Concussive Shocks \\ Robes of Concussive Shocks
+i(95695),	-- lders of Quaking Fear \\ Spaulders of Quaking Fear
+i(95696),	-- eshing Abalone Girdle \\ Refreshing Abalone Girdle
+i(95697),	-- os' Shellseizers \\ Tortos' Shellseizers
+i(95698),	-- era's Poisoned Fang \\ Megaera's Poisoned Fang
+i(95699),	-- ra-Head Brooch \\ Quadra-Head Brooch
+i(95700),	-- onblood Bladeshoulders \\ Poisonblood Bladeshoulders
+i(95701),	-- s of Cinderflesh \\ Grips of Cinderflesh
+i(95702),	-- ed Toothbreaker Girdle \\ Plated Toothbreaker Girdle
+i(95703),	-- Proof Greatplate \\ Rot-Proof Greatplate
+i(95704),	-- escale Seal \\ Spinescale Seal
+i(95705),	-- askull Choker \\ Hydraskull Choker
+i(95706),	-- als of Arcane Fury \\ Sandals of Arcane Fury
+i(95707),	-- ming-Eye Shoulderpads \\ Gleaming-Eye Shoulderpads
+i(95708),	-- tborn Wristwraps \\ Frostborn Wristwraps
+i(95709),	-- era's Shining Eye \\ Megaera's Shining Eye
+i(95710),	-- sh of the Hydra \\ Fetish of the Hydra
+i(95711),	-- th of the Hydra \\ Breath of the Hydra
+i(95712),	-- ribed Bag of Hydra-Spawn \\ Inscribed Bag of Hydra-Spawn
+i(95713),	-- of Smoldering Flesh \\ Hood of Smoldering Flesh
+i(95714),	-- s of the Bifurcated Tongue \\ Links of the Bifurcated Tongue
+i(95715),	-- n of Consuming Magic \\ Chain of Consuming Magic
+i(95716),	-- Scored Treads \\ Ice-Scored Treads
+i(95717),	-- onfeather Greatcloak \\ Pinionfeather Greatcloak
+i(95718),	-- of Cacophonous Cawing \\ Cord of Cacophonous Cawing
+i(95719),	-- of Midnight Down \\ Robe of Midnight Down
+i(95720),	-- gio's Caduceus of Pure Moods \\ Giorgio's Caduceus of Pure Moods
+i(95721),	-- herflight Belt \\ Featherflight Belt
+i(95722),	-- p of the Ruthless Mother \\ Grasp of the Ruthless Mother
+i(95723),	-- n of Potentiated Birth \\ Crown of Potentiated Birth
+i(95724),	-- nrender Chestplate \\ Talonrender Chestplate
+i(95725),	-- Shard Grips \\ Egg-Shard Grips
+i(95726),	-- ed Feather of Ji-Kun \\ Fabled Feather of Ji-Kun
+i(95727),	-- un's Rising Winds \\ Ji-Kun's Rising Winds
+i(95728),	-- mu's Baleful Gaze \\ Durumu's Baleful Gaze
+i(95729),	-- son Bloom Legguards \\ Crimson Bloom Legguards
+i(95730),	-- s of the Disintegrator \\ Links of the Disintegrator
+i(95731),	-- rant Chestguard of Torment \\ Aberrant Chestguard of Torment
+i(95732),	-- tic Spike Bracers \\ Caustic Spike Bracers
+i(95733),	-- lates of the Dark Parasite \\ Legplates of the Dark Parasite
+i(95734),	-- ds of the Blind Eye \\ Treads of the Blind Eye
+i(95735),	-- ry Rippers \\ Artery Rippers
+i(95736),	-- forced Mirror-Sheen Cloak \\ Reinforced Mirror-Sheen Cloak
+i(95737),	-- mu's Severed Tentacle \\ Durumu's Severed Tentacle
+i(95738),	-- drainer's Sordid Grip \\ Lifedrainer's Sordid Grip
+i(95739),	-- ings of Pulsing Blood \\ Leggings of Pulsing Blood
+i(95740),	-- blain Spaulders \\ Chilblain Spaulders
+i(95741),	-- ly Glare Cape \\ Deadly Glare Cape
+i(95742),	-- mu's Captive Eyeball \\ Durumu's Captive Eyeball
+i(95743),	-- al Dagger of the Mind's Eye \\ Ritual Dagger of the Mind's Eye
+i(95744),	-- als of the Starving Eye \\ Sandals of the Starving Eye
+i(95745),	-- -Cover Bracers \\ Vein-Cover Bracers
+i(95746),	-- hatter Gauntlets \\ Iceshatter Gauntlets
+i(95747),	-- lates of Re-Emergence \\ Legplates of Re-Emergence
+i(95748),	-- sman of Bloodlust \\ Talisman of Bloodlust
+i(95749),	-- es of Cushioned Air \\ Gloves of Cushioned Air
+i(95750),	-- ers of Mutagenic Fervor \\ Bracers of Mutagenic Fervor
+i(95751),	-- pse-String Handguards \\ Synapse-String Handguards
+i(95752),	-- ogenic Gauntlets \\ Pathogenic Gauntlets
+i(95753),	-- k Blood Legplates \\ Black Blood Legplates
+i(95754),	-- bolically Boosted Shoulderplates \\ Metabolically Boosted Shoulderplates
+i(95755),	-- a-Scale Bloodcloak \\ Hydra-Scale Bloodcloak
+i(95756),	-- of the Scaled Tyrant \\ Band of the Scaled Tyrant
+i(95757),	-- ordius' Talisman of Rage \\ Primordius' Talisman of Rage
+i(95758),	-- -Spine Bonemace \\ Acid-Spine Bonemace
+i(95759),	-- s of Mutagenic Blood \\ Robes of Mutagenic Blood
+i(95760),	-- x-Breaker Gloves \\ Helix-Breaker Gloves
+i(95761),	-- ings of Ebon Veins \\ Leggings of Ebon Veins
+i(95762),	-- ers of Fragile Bone \\ Bracers of Fragile Bone
+i(95763),	-- en Relic of Zuldazar \\ Stolen Relic of Zuldazar
+i(95764),	-- ings of the Malformed Sapling \\ Leggings of the Malformed Sapling
+i(95765),	-- r-Mind Helm \\ Clear-Mind Helm
+i(95766),	-- mender Bracers \\ Bonemender Bracers
+i(95767),	-- lders of Primordial Growth \\ Spaulders of Primordial Growth
+i(95768),	-- tshield of the Gloaming \\ Greatshield of the Gloaming
+i(95769),	-- -Soaked Gear \\ Gore-Soaked Gear
+i(95770),	-- of the Dark Animus \\ Hand of the Dark Animus
+i(95771),	-- of the Crimson Wake \\ Hood of the Crimson Wake
+i(95772),	-- Ye's Essence of Brilliance \\ Cha-Ye's Essence of Brilliance
+i(95773),	-- tantly Accelerating Cloak \\ Constantly Accelerating Cloak
+i(95774),	-- me of the Sanguine Ritual \\ Athame of the Sanguine Ritual
+i(95775),	-- dbinder Leggings \\ Worldbinder Leggings
+i(95776),	-- a-Ringed Fingers \\ Anima-Ringed Fingers
+i(95777),	-- er-Swapped Legplates \\ Matter-Swapped Legplates
+i(95778),	-- n of the Golden Golem \\ Crown of the Golden Golem
+i(95779),	-- cate Vial of the Sanguinaire \\ Delicate Vial of the Sanguinaire
+i(95780),	-- Qon's Boot Knife \\ Iron Qon's Boot Knife
+i(95781),	-- e of the Quilen \\ Voice of the Quilen
+i(95782),	-- 'zal's Crackling Cord \\ Quet'zal's Crackling Cord
+i(95783),	-- le-Scarred Leggings \\ Saddle-Scarred Leggings
+i(95784),	-- ren's Frozen Footguards \\ Dam'ren's Frozen Footguards
+i(95785),	-- hak's Remembrance \\ Ro'shak's Remembrance
+i(95786),	-- of Arcing Lightning \\ Orb of Arcing Lightning
+i(95787),	-- s of the Storm Cavalry \\ Spurs of the Storm Cavalry
+i(95788),	-- hak's Molten Chain \\ Ro'shak's Molten Chain
+i(95789),	-- -Binder's Fists \\ Rein-Binder's Fists
+i(95790),	-- s Flaming Scimitar \\ Qon's Flaming Scimitar
+i(95791),	-- ai, Bladed Fan of the Consorts \\ Wu-Lai, Bladed Fan of the Empyreans \\ Wu-Lai, Bladed Fan of the Consorts
+i(95792),	-- s of the Moon Lotus \\ Robes of the Moon Lotus
+i(95793),	-- ionfire Choker \\ Passionfire Choker
+i(95794),	-- ld of Twinned Despair \\ Shield of Twinned Despair
+i(95795),	-- -Wo, Spire of the Falling Sun \\ Suen-Wo, Spire of the Falling Sun
+i(95796),	-- ers of the Midnight Comet \\ Bracers of the Midnight Comet
+i(95797),	-- le of Night and Day \\ Girdle of Night and Day
+i(95798),	-- l Force Treads \\ Tidal Force Treads
+i(95799),	-- of the Twins \\ Gaze of the Twins
+i(95800),	-- jade Necklace \\ Moonjade Necklace
+i(95801),	-- ers of the Night \\ Fingers of the Night
+i(95802),	-- of Re-Origination \\ Rune of Re-Origination
+i(95803),	-- -Dun, Breaker of Hope \\ Shan-Dun, Breaker of Hope
+i(95804),	-- on Slasher Chestguard \\ Fusion Slasher Chestguard
+i(95805),	-- uit-Breaker Chain Leggings \\ Conduit-Breaker Chain Leggings
+i(95806),	-- ed Crown of Lei Shen \\ Doomed Crown of Lei Shen
+i(95807),	-- lates of the Lightning Throne \\ Legplates of the Lightning Throne
+i(95808),	-- lates of Whipping Ionization \\ Legplates of Whipping Ionization
+i(95809),	-- , Harbinger of Terror \\ Uroe, Harbinger of Terror
+i(95810),	-- mate Protection of the Emperor \\ Ultimate Protection of the Emperor
+i(95811),	-- Barrier \\ Soul Barrier
+i(95812),	-- raps of Cardinality \\ Legwraps of Cardinality
+i(95813),	-- es of the Maimed Vizier \\ Gloves of the Maimed Vizier
+i(95814),	-- ring Vision of Lei Shen \\ Unerring Vision of Lei Shen
+i(95815),	-- ll, Rod of the Shattered Throne \\ Torall, Rod of the Shattered Throne
+i(95816),	-- Prism of Lei Shen \\ Soul Prism of Lei Shen
+i(95817),	-- tning-Imbued Chalice \\ Lightning-Imbued Chalice
+i(95818),	-- Shen's Orb of Command \\ Lei Shen's Orb of Command
+i(95819),	-- s of Slicing Electricity \\ Grips of Slicing Electricity
+i(95820),	-- ings of the Violent Gale \\ Leggings of the Violent Gale
+i(95821),	-- Shen's Grounded Carapace \\ Lei Shen's Grounded Carapace
+i(95822),	-- t of the Crackling Vanquisher \\ Chest of the Crackling Vanquisher
+i(95823),	-- t of the Crackling Conqueror \\ Chest of the Crackling Conqueror
+i(95824),	-- t of the Crackling Protector \\ Chest of the Crackling Protector
+i(95855),	-- tlets of the Crackling Vanquisher \\ Gauntlets of the Crackling Vanquisher
+i(95856),	-- tlets of the Crackling Conqueror \\ Gauntlets of the Crackling Conqueror
+i(95857),	-- tlets of the Crackling Protector \\ Gauntlets of the Crackling Protector
+i(95858),	-- cation of the Dawn \\ Invocation of the Dawn
+i(95859),	-- coran, the Vehement Chord \\ Miracoran, the Vehement Chord
+i(95860),	-- s Flickering Dagger \\ Fyn's Flickering Dagger
+i(95861),	-- 's Ancient Kegsmasher \\ Zeeg's Ancient Kegsmasher
+i(95862),	-- wood Spiritstaff \\ Darkwood Spiritstaff
+i(95863),	-- Shoulders of Fire \\ Lost Shoulders of Fire
+i(95864),	-- Shoulders of Healing \\ Lost Shoulders of Healing
+i(95865),	-- Shoulders of Fluidity \\ Lost Shoulders of Fluidity
+i(95866),	-- gast's Exsanguinator \\ Nadagast's Exsanguinator
+i(95867),	-- hud, Graceful Hand of the Savior \\ Jerthud, Graceful Hand of the Savior
+i(95868),	-- otten Mantle of the Moon \\ Forgotten Mantle of the Moon
+i(95869),	-- otten Mantle of the Sun \\ Forgotten Mantle of the Sun
+i(95870),	-- doned Spaulders of Arrowflight \\ Abandoned Spaulders of Arrowflight
+i(95871),	-- doned Spaulders of Renewal \\ Abandoned Spaulders of Renewal
+i(95872),	-- nstructed Holy Shoulderplates \\ Reconstructed Holy Shoulderplates
+i(95873),	-- nstructed Furious Shoulderplates \\ Reconstructed Furious Shoulderplates
+i(95874),	-- nstructed Bloody Shoulderplates \\ Reconstructed Bloody Shoulderplates
+i(95875),	-- tsword of Frozen Hells \\ Greatsword of Frozen Hells
+i(95876),	-- harak, the Swordbreaker \\ Do-tharak, the Swordbreaker
+i(95877),	-- is, Horror in the Night \\ Bo-Ris, Horror in the Night
+i(95878),	-- ge of the Doomed \\ Visage of the Doomed
+i(95879),	-- of the Crackling Vanquisher \\ Helm of the Crackling Vanquisher
+i(95880),	-- of the Crackling Conqueror \\ Helm of the Crackling Conqueror
+i(95881),	-- of the Crackling Protector \\ Helm of the Crackling Protector
+i(95887),	-- ings of the Crackling Vanquisher \\ Leggings of the Crackling Vanquisher
+i(95888),	-- ings of the Crackling Conqueror \\ Leggings of the Crackling Conqueror
+i(95889),	-- ings of the Crackling Protector \\ Leggings of the Crackling Protector
+i(95955),	-- lders of the Crackling Vanquisher \\ Shoulders of the Crackling Vanquisher
+i(95956),	-- lders of the Crackling Conqueror \\ Shoulders of the Crackling Conqueror
+i(95957),	-- lders of the Crackling Protector \\ Shoulders of the Crackling Protector
 i(96702),	-- lace of the Terra-Cotta Archer \\ Necklace of the Terra-Cotta Archer
 i(96708),	-- lace of the Terra-Cotta Invoker \\ Necklace of the Terra-Cotta Invoker
 i(96713),	-- lace of the Terra-Cotta Mender \\ Necklace of the Terra-Cotta Mender
@@ -5760,6 +6230,7 @@ i(97093),	-- lace of the Terra-Cotta Vanquisher \\ Necklace of the Terra-Cotta V
 i(97096),	-- lace of the Terra-Cotta Protector \\ Necklace of the Terra-Cotta Protector
 i(97112),	-- Art Template Generic Head - Helm_SunCrown_D_01
 i(97125),	-- Monster - Axe (Terracotta Army Axe Boss)(Shadow Enchanted)
+i(97129),	-- Tia, the Scything Star \\ Tia-Tia, the Scything Star
 i(97136),	-- Weapon - Staff_2H_PandarenMonk_C_01 - Red
 i(97137),	-- Weapon - Staff_2H_PandarenMonk_C_01 - Green
 i(97138),	-- Weapon - Staff_2H_PandarenMonk_C_01 - Yellow
@@ -6061,6 +6532,7 @@ i(97954),	-- lus Supplies \\ Surplus Supplies
 i(97955),	-- lus Supplies \\ Surplus Supplies
 i(97956),	-- lus Supplies \\ Surplus Supplies
 i(97957),	-- lus Supplies \\ Surplus Supplies
+i(97959),	-- ering Blob \\ Quivering Blob
 i(97972),	-- lenge Card: Anthracite \\ Challenge Card: Anthracite
 i(97977),	-- ler's Guild Reward \\ Brawler's Guild Reward
 i(97978),	-- koff Grumplefloot \\ Knockoff Grumplefloot
@@ -7438,6 +7910,7 @@ i(104260),	-- Satchel of Savage Mysteries \\ hel of Savage Mysteries \\ Satchel 
 i(104270),	-- Charred Glyph \\ red Glyph \\ Glyph of the Lean Pack
 i(104271),	-- esced Turmoil \\ Coalesced Turmoil
 i(104274),	-- Charred Glyph \\ red Glyph \\ Glyph of Focused Fire
+i(104275),	-- ted Treasures of the Vale \\ Twisted Treasures of the Vale
 i(104276),	-- Charred Glyph \\ red Glyph \\ Glyph of Enduring Deceit
 i(104277),	-- Potion of Illusion <New>
 i(104278),	-- Glyph of Chameleon
@@ -7461,6 +7934,254 @@ i(104343),	-- en Dragon Noodles \\ Golden Dragon Noodles
 i(104344),	-- y Mushroom Noodles \\ Lucky Mushroom Noodles
 i(104348),	-- less Tea \\ Timeless Tea
 i(104410),	-- Monster - Staff_2H_Mantid_01 (Amber)
+i(104737),	-- pentant Heels \\ Unrepentant Heels
+i(104909),	-- rseus' Crystalline Eye \\ Immerseus' Crystalline Eye
+i(104910),	-- ent of Corrupted Waters \\ Trident of Corrupted Waters
+i(104911),	-- of Blackened Tears \\ Hood of Blackened Tears
+i(104912),	-- le Punishers \\ Puddle Punishers
+i(104913),	-- le-Burst Bracers \\ Bubble-Burst Bracers
+i(104914),	-- tplate of Congealed Corrosion \\ Chestplate of Congealed Corrosion
+i(104915),	-- uption-Rotted Gauntlets \\ Corruption-Rotted Gauntlets
+i(104916),	-- ds of Unchained Hate \\ Treads of Unchained Hate
+i(104917),	-- ers of Sordid Sleep \\ Bracers of Sordid Sleep
+i(104918),	-- drons of Violent Eruption \\ Pauldrons of Violent Eruption
+i(104919),	-- psulated Essence of Immerseus \\ Encapsulated Essence of Immerseus
+i(104920),	-- -Burster Grips \\ Bolt-Burster Grips
+i(104921),	-- r-Dripping Shoulderpads \\ Ichor-Dripping Shoulderpads
+i(104922),	-- of Swirling Senses \\ Hood of Swirling Senses
+i(104923),	-- k of Misguided Power \\ Cloak of Misguided Power
+i(104924),	-- fied Bindings of Immerseus \\ Purified Bindings of Immerseus
+i(104925),	-- of Eternal Sorrow \\ Seal of Eternal Sorrow
+i(104926),	-- Water Sandals \\ Salt Water Sandals
+i(104927),	-- ers of Purified Spirit \\ Bracers of Purified Spirit
+i(104928),	-- -Soaked Gloves \\ Soul-Soaked Gloves
+i(104929),	-- tbelt of Living Waters \\ Greatbelt of Living Waters
+i(104930),	-- rwalker Greatboots \\ Waterwalker Greatboots
+i(104931),	-- h Lotus Crossbow \\ Death Lotus Crossbow
+i(104932),	-- foot's Last Resort \\ Softfoot's Last Resort
+i(104933),	-- etoe's Tormented Treads \\ Stonetoe's Tormented Treads
+i(104934),	-- s of Unending Anguish \\ Grips of Unending Anguish
+i(104935),	-- onbinder Girth \\ Poisonbinder Girth
+i(104936),	-- fallen Shoulderplates \\ Darkfallen Shoulderplates
+i(104937),	-- kstriker Gauntlets \\ Shockstriker Gauntlets
+i(104938),	-- owpath Signet \\ Sorrowpath Signet
+i(104939),	-- mwrap Greatcloak \\ Gloomwrap Greatcloak
+i(104940),	-- 's Unlucky Talisman \\ Rook's Unlucky Talisman
+i(104941),	-- Seared Sandals \\ Sha-Seared Sandals
+i(104942),	-- s of the Tendered Heart \\ Robes of the Tendered Heart
+i(104943),	-- lderpads of Dou Dou Chong \\ Shoulderpads of Dou Dou Chong
+i(104944),	-- bane Bracers \\ Lifebane Bracers
+i(104945),	-- ified Pennyroyal Ring \\ Petrified Pennyroyal Ring
+i(104946),	-- hearted Cricket Cage \\ Purehearted Cricket Cage
+i(104947),	-- lders of the Roiling Inferno \\ Shoulders of the Roiling Inferno
+i(104948),	-- tons of Defilement \\ Sabatons of Defilement
+i(104949),	-- lderguards of Dark Meditations \\ Shoulderguards of Dark Meditations
+i(104950),	-- s of the Fallen Council \\ Grips of the Fallen Council
+i(104951),	-- of Echoing Despair \\ Gaze of Echoing Despair
+i(104952),	-- shen's Shortblade \\ Norushen's Shortblade
+i(104953),	-- ity Ripper Ring \\ Reality Ripper Ring
+i(104954),	-- s of the Blackened Watcher \\ Robes of the Blackened Watcher
+i(104955),	-- es of the Golden Protector \\ Gloves of the Golden Protector
+i(104956),	-- ings of Unabashed Anger \\ Leggings of Unabashed Anger
+i(104957),	-- antine Shoulderguards \\ Quarantine Shoulderguards
+i(104958),	-- ers of Blind Hatred \\ Bracers of Blind Hatred
+i(104959),	-- -Blind Greathelm \\ Rage-Blind Greathelm
+i(104960),	-- e of the Despairing Pit \\ Drape of the Despairing Pit
+i(104961),	-- on-Fire Core \\ Fusion-Fire Core
+i(104962),	-- ng, Longblade of the Titanic Guardian \\ Xifeng, Longblade of the Titanic Guardian
+i(104963),	-- ers of Broken Causation \\ Bracers of Broken Causation
+i(104964),	-- ht Hurlers \\ Blight Hurlers
+i(104965),	-- of the Last Guardian \\ Sash of the Last Guardian
+i(104966),	-- -Rift Shoulders \\ Rime-Rift Shoulders
+i(104967),	-- inted Guardian's Chain \\ Untainted Guardian's Chain
+i(104968),	-- shen's Enigmatic Barrier \\ Norushen's Enigmatic Barrier
+i(104969),	-- s of Broken Reliance \\ Boots of Broken Reliance
+i(104970),	-- ident Grips \\ Confident Grips
+i(104971),	-- ers of Final Serenity \\ Bracers of Final Serenity
+i(104972),	-- ow-Binder's Kilt \\ Shadow-Binder's Kilt
+i(104973),	-- tplates of Broken Doubt \\ Wristplates of Broken Doubt
+i(104974),	-- rance of Consequence \\ Assurance of Consequence
+i(104975),	-- lace of Fading Light \\ Necklace of Fading Light
+i(104976),	-- matic Prison of Pride \\ Prismatic Prison of Pride
+i(104977),	-- of Arrogance \\ Gaze of Arrogance
+i(104978),	-- -Reflecting Mask \\ Self-Reflecting Mask
+i(104979),	-- n of Boastful Words \\ Crown of Boastful Words
+i(104980),	-- ves of Sublime Superiority \\ Greaves of Sublime Superiority
+i(104981),	-- tsword of Pride's Fall \\ Greatsword of Pride's Fall
+i(104982),	-- er of the Final Word \\ Choker of the Final Word
+i(104983),	-- ld of Mockery \\ Shield of Mockery
+i(104984),	-- yn's Discarded Longbow \\ Dagryn's Discarded Longbow
+i(104985),	-- t Serpent Signet \\ Swift Serpent Signet
+i(104987),	-- ra's Venom-Soaked Gauntlets \\ Korgra's Venom-Soaked Gauntlets
+i(104988),	-- oneer's Multipocket Gunbelt \\ Cannoneer's Multipocket Gunbelt
+i(104989),	-- yn's Fuselight Bracers \\ Dagryn's Fuselight Bracers
+i(104990),	-- nok's Shattering Helm \\ Thranok's Shattering Helm
+i(104991),	-- masher Bracers \\ Arcsmasher Bracers
+i(104992),	-- ruk's Rigid Shoulderplates \\ Krugruk's Rigid Shoulderplates
+i(104993),	-- Eye of Galakras \\ Evil Eye of Galakras
+i(104994),	-- krond Control Band \\ Galakrond Control Band
+i(104995),	-- -Inlaid Sandals \\ Bone-Inlaid Sandals
+i(104996),	-- ebane Bracers \\ Scalebane Bracers
+i(104997),	-- eslinger's Fiery Cowl \\ Flameslinger's Fiery Cowl
+i(104998),	-- ancer Boots \\ Skydancer Boots
+i(104999),	-- lderpads of Pulsing Protection \\ Shoulderpads of Pulsing Protection
+i(105000),	-- nguished Ember of Galakras \\ Extinguished Ember of Galakras
+i(105001),	-- ebinder Greatstaff \\ Drakebinder Greatstaff
+i(105002),	-- onmaw Emergency Strap \\ Dragonmaw Emergency Strap
+i(105003),	-- s of Tidal Force \\ Grips of Tidal Force
+i(105004),	-- dering Drakescale Bracers \\ Smoldering Drakescale Bracers
+i(105005),	-- fire Legplates \\ Windfire Legplates
+i(105006),	-- mic Bore \\ Seismic Bore
+i(105007),	-- r Burn Bracers \\ Laser Burn Bracers
+i(105008),	-- cheting Shoulderguards \\ Ricocheting Shoulderguards
+i(105009),	-- layer's Padded Boots \\ Minelayer's Padded Boots
+i(105010),	-- ision Cutters \\ Precision Cutters
+i(105011),	-- lisher's Reinforced Belt \\ Demolisher's Reinforced Belt
+i(105012),	-- -Borer Bracers \\ Wall-Borer Bracers
+i(105013),	-- Coated Gauntlets \\ Tar-Coated Gauntlets
+i(105014),	-- hbreaker's Steaming Chestplate \\ Earthbreaker's Steaming Chestplate
+i(105015),	-- ernaut's Ignition Keys \\ Juggernaut's Ignition Keys
+i(105016),	-- ernaut's Focusing Crystal \\ Juggernaut's Focusing Crystal
+i(105017),	-- of Ominous Trembles \\ Belt of Ominous Trembles
+i(105018),	-- ings of Furious Flame \\ Leggings of Furious Flame
+i(105019),	-- ers of the Broken Fault \\ Bracers of the Broken Fault
+i(105020),	-- hripper Gloves \\ Earthripper Gloves
+i(105021),	-- k Pulse Robes \\ Shock Pulse Robes
+i(105022),	-- r-Slice Signet \\ Laser-Slice Signet
+i(105023),	-- ernaut's Power Core \\ Juggernaut's Power Core
+i(105024),	-- lebreaker Bracers \\ Castlebreaker Bracers
+i(105025),	-- ds of Autonomic Motion \\ Treads of Autonomic Motion
+i(105026),	-- maker Wristguards \\ Cavemaker Wristguards
+i(105027),	-- r Drill Boots \\ Borer Drill Boots
+i(105028),	-- onmist Nightcloak \\ Poisonmist Nightcloak
+i(105029),	-- mm's Talisman \\ Haromm's Talisman
+i(105030),	-- on's Belt of Darkness \\ Damron's Belt of Darkness
+i(105031),	-- 's Vigilant Leggings \\ Riou's Vigilant Leggings
+i(105032),	-- mm's Horrifying Helm \\ Haromm's Horrifying Helm
+i(105033),	-- -Rider Spurs \\ Wolf-Rider Spurs
+i(105034),	-- stplate of Shamanic Mirrors \\ Breastplate of Shamanic Mirrors
+i(105035),	-- n Wall Girdle \\ Ashen Wall Girdle
+i(105036),	-- dclaw Band \\ Bloodclaw Band
+i(105037),	-- mm's Frozen Crescent \\ Haromm's Frozen Crescent
+i(105038),	-- of the Iron Tomb \\ Ring of the Iron Tomb
+i(105039),	-- c Tornado Treads \\ Toxic Tornado Treads
+i(105040),	-- Wolf Hood \\ Iron Wolf Hood
+i(105041),	-- lare Pendant \\ Ashflare Pendant
+i(105042),	-- ris' Toxic Totem \\ Kardris' Toxic Totem
+i(105043),	-- ris' Scepter \\ Kardris' Scepter
+i(105044),	-- fang Mask \\ Darkfang Mask
+i(105045),	-- of the Iron Prison \\ Belt of the Iron Prison
+i(105046),	-- lderguards of Foul Streams \\ Shoulderguards of Foul Streams
+i(105047),	-- kles of Stinking Slime \\ Shackles of Stinking Slime
+i(105048),	-- lderplates of Gushing Geysers \\ Shoulderplates of Gushing Geysers
+i(105049),	-- rim's Gutripper \\ Nazgrim's Gutripper
+i(105050),	-- als of Two Little Bees \\ Sandals of Two Little Bees
+i(105051),	-- rim's Burnished Insignia \\ Nazgrim's Burnished Insignia
+i(105052),	-- eaver Spell Sword \\ Arcweaver Spell Sword
+i(105053),	-- lderguards of the Righteous Stand \\ Shoulderguards of the Righteous Stand
+i(105054),	-- s of the Warrior's Fall \\ Robes of the Warrior's Fall
+i(105055),	-- ger's Pathwalkers \\ Ravager's Pathwalkers
+i(105056),	-- n of Tragic Truth \\ Crown of Tragic Truth
+i(105057),	-- tok, Strength of the Faithful \\ Gar'tok, Strength of the Faithful
+i(105058),	-- ark of the Fallen General \\ Bulwark of the Fallen General
+i(105059),	-- lders of Kor'kron Fealty \\ Spaulders of Kor'kron Fealty
+i(105060),	-- of Restless Energy \\ Ring of Restless Energy
+i(105061),	-- kron Hand Cannon \\ Kor'kron Hand Cannon
+i(105062),	-- erd of Inner Shadows \\ Halberd of Inner Shadows
+i(105063),	-- hk's Lost Shadowrap \\ Lazahk's Lost Shadowrap
+i(105064),	-- tguards of Ruination \\ Wristguards of Ruination
+i(105065),	-- orok's Giant Stompers \\ Malkorok's Giant Stompers
+i(105066),	-- d Rage Bracers \\ Blood Rage Bracers
+i(105067),	-- lates of Willful Doom \\ Legplates of Willful Doom
+i(105068),	-- orok's Tainted Dog Tags \\ Malkorok's Tainted Dog Tags
+i(105069),	-- orok's Skullcleaver \\ Malkorok's Skullcleaver
+i(105070),	-- of Living Corruption \\ Vial of Living Corruption
+i(105071),	-- mic Skullbelt \\ Miasmic Skullbelt
+i(105072),	-- of Perpetual Implosion \\ Hood of Perpetual Implosion
+i(105073),	-- s of Riven Dreams \\ Robes of Riven Dreams
+i(105074),	-- zied Crystal of Rage \\ Frenzied Crystal of Rage
+i(105075),	-- k-Blooded Drape \\ Black-Blooded Drape
+i(105076),	-- of Sullen Fury \\ Seal of Sullen Fury
+i(105077),	-- ge of the Monstrous \\ Visage of the Monstrous
+i(105078),	-- s of Perilous Infusion \\ Boots of Perilous Infusion
+i(105079),	-- ers of Averted Fatality \\ Bracers of Averted Fatality
+i(105080),	-- Blood Chestguard \\ Ebon Blood Chestguard
+i(105081),	-- orguard Chestplate \\ Terrorguard Chestplate
+i(105082),	-- l of Rampage \\ Sigil of Rampage
+i(105083),	-- anted Shao-Tien Saber \\ Enchanted Shao-Tien Saber
+i(105084),	-- aren Roofsprinters \\ Pandaren Roofsprinters
+i(105085),	-- id Carapace Augments \\ Mantid Carapace Augments
+i(105086),	-- wflight Girdle \\ Arrowflight Girdle
+i(105087),	-- ent Archer's Chestguard \\ Ancient Archer's Chestguard
+i(105088),	-- of the Night Watchman \\ Helm of the Night Watchman
+i(105089),	-- rnishable Greatbelt \\ Untarnishable Greatbelt
+i(105090),	-- ous Mogu Greatboots \\ Ominous Mogu Greatboots
+i(105091),	-- of the Forgotten Kings \\ Seal of the Forgotten Kings
+i(105092),	-- ent Mogu Tower Shield \\ Ancient Mogu Tower Shield
+i(105093),	-- l's Ancestral Bracers \\ Avool's Ancestral Bracers
+i(105094),	-- id Vizier's Robes \\ Mantid Vizier's Robes
+i(105095),	-- Necklace of the Mogu Empress \\ Lost Necklace of the Mogu Empress
+i(105096),	-- culately Preserved Wand \\ Immaculately Preserved Wand
+i(105097),	-- xi Grips of Rejuvenation \\ Klaxxi Grips of Rejuvenation
+i(105098),	-- o-Pan Reliquary Kilt \\ Shado-Pan Reliquary Kilt
+i(105099),	-- in-Link Chain Belt \\ Chitin-Link Chain Belt
+i(105100),	-- ers of the Pristine Purifier \\ Bracers of the Pristine Purifier
+i(105101),	-- e Belt of the War-Healer \\ Plate Belt of the War-Healer
+i(105102),	-- Mindbender's Greaves \\ Mogu Mindbender's Greaves
+i(105103),	-- serk's Formidable Shanker \\ Hvitserk's Formidable Shanker
+i(105104),	-- ming Eye of the Devilsaur \\ Gleaming Eye of the Devilsaur
+i(105105),	-- ak's Grips of Scorching Breath \\ Montak's Grips of Scorching Breath
+i(105106),	-- ik's Acid-Soaked Robes \\ Akolik's Acid-Soaked Robes
+i(105107),	-- ering Primordial Globule \\ Festering Primordial Globule
+i(105108),	-- et of the Dinomancers \\ Signet of the Dinomancers
+i(105109),	-- 's Acid-Grooved Tooth \\ Thok's Acid-Grooved Tooth
+i(105110),	-- Blood Chestplate \\ Icy Blood Chestplate
+i(105111),	-- 's Tail Tip \\ Thok's Tail Tip
+i(105112),	-- omart's Jagged Pike \\ Britomart's Jagged Pike
+i(105113),	-- lfang Band \\ Devilfang Band
+i(105114),	-- ing Ebon Detonator \\ Ticking Ebon Detonator
+i(105115),	-- spark Gloves \\ Fusespark Gloves
+i(105116),	-- r of the Megantholithic Apparatus \\ Lever of the Megantholithic Apparatus
+i(105117),	-- orphic Samophlange of Discontinuity \\ Dysmorphic Samophlange of Discontinuity
+i(105118),	-- er's Blackened Wristwatch \\ Bomber's Blackened Wristwatch
+i(105119),	-- ers of Infinite Pipes \\ Bracers of Infinite Pipes
+i(105120),	-- er-Stained Totemic Treads \\ Powder-Stained Totemic Treads
+i(105121),	-- xian Bladebreakers \\ Calixian Bladebreakers
+i(105122),	-- rathian Blood Seal \\ Asgorathian Blood Seal
+i(105123),	-- ecrafter's Forge Hammer \\ Siegecrafter's Forge Hammer
+i(105124),	-- kfuse's Blasting Cord \\ Blackfuse's Blasting Cord
+i(105125),	-- k's Reserve Longbow \\ Hisek's Reserve Longbow
+i(105126),	-- ruk's Band of Ascendancy \\ Kil'ruk's Band of Ascendancy
+i(105127),	-- en's Crimson Crescent \\ Korven's Crimson Crescent
+i(105128),	-- ers of Sonic Projection \\ Bracers of Sonic Projection
+i(105129),	-- kal's Bloody Scalpel \\ Rik'kal's Bloody Scalpel
+i(105130),	-- kuk's Hereditary Seal \\ Iyyokuk's Hereditary Seal
+i(105131),	-- r Parasite Wraps \\ Amber Parasite Wraps
+i(105132),	-- tguard of Toxic Injections \\ Chestguard of Toxic Injections
+i(105133),	-- tlets of Insane Calculations \\ Gauntlets of Insane Calculations
+i(105134),	-- r's Bloodsoaked Talisman \\ Skeer's Bloodsoaked Talisman
+i(105135),	-- ruk's Furious Blade \\ Kil'ruk's Furious Blade
+i(105136),	-- kron Spire of Supremacy \\ Kor'kron Spire of Supremacy
+i(105137),	-- of Black Dreams \\ Cord of Black Dreams
+i(105138),	-- kron Elite Skullmask \\ Kor'kron Elite Skullmask
+i(105139),	-- tguard of Relentless Tyranny \\ Chestguard of Relentless Tyranny
+i(105140),	-- trating Gaze of Y'Shaarj \\ Penetrating Gaze of Y'Shaarj
+i(105141),	-- lderguards of Intended Power \\ Shoulderguards of Intended Power
+i(105142),	-- lates of Unthinking Strife \\ Legplates of Unthinking Strife
+i(105143),	-- lders of the Fallen Warchief \\ Spaulders of the Fallen Warchief
+i(105145),	-- thelm of the Warchief \\ Greathelm of the Warchief
+i(105146),	-- atoh, Desecrated Image of Gorehowl \\ Xal'atoh, Desecrated Image of Gorehowl
+i(105147),	-- e of Hubris \\ Curse of Hubris
+i(105148),	-- of the Broken Pact \\ Belt of the Broken Pact
+i(105149),	-- Ritual Hood \\ Ebon Ritual Hood
+i(105150),	-- k Blood of Y'Shaarj \\ Black Blood of Y'Shaarj
+i(105151),	-- ed Mace of the Old Ones \\ Horned Mace of the Old Ones
+i(105152),	-- lations of Y'Shaarj \\ Revelations of Y'Shaarj
+i(105153),	-- of Karmic Return \\ Seal of Karmic Return
+i(105154),	-- glow Spaulders \\ Hopeglow Spaulders
+i(105155),	-- of Smoking Dreams \\ Cowl of Smoking Dreams
+i(105156),	-- tplate of Fallen Passion \\ Chestplate of Fallen Passion
+i(105157),	-- le of Looming Darkness \\ Mantle of Looming Darkness
 i(105700),	-- Lai Kicker \\ Kun-Lai Kicker
 i(105701),	-- nstone Brew \\ Greenstone Brew
 i(105702),	-- er Brew \\ Boomer Brew
@@ -7472,6 +8193,7 @@ i(105707),	-- Brew \\ Unga Brew
 i(105708),	-- mering Amber-Brew \\ Shimmering Amber-Brew
 i(105711),	-- y Monkey Brew \\ Funky Monkey Brew
 i(105713),	-- ted Treasures of the Vale \\ Twisted Treasures of the Vale
+i(105714),	-- esced Turmoil \\ Coalesced Turmoil
 i(105717),	-- -Wine Mushrooms \\ Rice-Wine Mushrooms
 i(105719),	-- -Curried Whitefish \\ Brew-Curried Whitefish
 i(105720),	-- ied Apple \\ Candied Apple
@@ -7480,6 +8202,9 @@ i(105722),	-- y Brew-Bun \\ Nutty Brew-Bun
 i(105723),	-- ut Pork Chops \\ Peanut Pork Chops
 i(105724),	-- d Cheese Dumplings \\ Fried Cheese Dumplings
 i(105856),	-- es of War \\ Echoes of War
+i(105860),	-- nce of the Cursed Protector \\ Essence of the Cursed Protector
+i(105861),	-- nce of the Cursed Conqueror \\ Essence of the Cursed Conqueror
+i(105862),	-- nce of the Cursed Vanquisher \\ Essence of the Cursed Vanquisher
 i(105953),	-- Monster - Polearm, Epic D 05
 i(106128),	-- Monster - Sword_2H_Mantid_01 - Garrosh Raid - Paragons [DNT]
 i(107499),	-- ed Alterac Brandy \\ Mulled Alterac Brandy
@@ -7492,15 +8217,26 @@ i(237375),	-- Stormstout's Hat
 i(237376),	-- Stormstout's Belt
 i(237377),	-- Stormstout's Pants
 i(237378),	-- Stormstout's Boots
-i(238025),	-- Stormstout's Sha-Warped Tunic
-i(238026),	-- Stormstout's Sha-Warped Boots
-i(238035),	-- Stormstout's Sha-Warped Hat
-i(238038),	-- Stormstout's Sha-Warped Pants
-i(238043),	-- Stormstout's Sha-Warped Belt
-i(238047),	-- Stormstout's Sha-Warped Shoulders
-i(238048),	-- Stormstout's Sha-Warped Gloves
+i(238025),	-- Stormstout's Sha-Touched Tunic \\ Stormstout's Sha-Warped Tunic
+i(238026),	-- Stormstout's Sha-Touched Boots \\ Stormstout's Sha-Warped Boots
+i(238035),	-- Stormstout's Sha-Touched Hat \\ Stormstout's Sha-Warped Hat
+i(238038),	-- Stormstout's Sha-Touched Pants \\ Stormstout's Sha-Warped Pants
+i(238043),	-- Stormstout's Sha-Touched Belt \\ Stormstout's Sha-Warped Belt
+i(238047),	-- Stormstout's Sha-Touched Shoulders \\ Stormstout's Sha-Warped Shoulders
+i(238048),	-- Stormstout's Sha-Touched Gloves \\ Stormstout's Sha-Warped Gloves
 i(244172),	-- Eternal Blossom
 5.5.0.60548
 i(245963),	-- Tome of Four Winds Flight
 5.5.0.60700
 i(246178),	-- Azeroth Survival Kit
+5.5.0.60802
+i(246583),	-- Leafre's Ring of Incredible Haste
+5.5.0.61135
+i(247262),	-- Signet of the August Celestials
+i(247497),	-- Order of the Cloud Serpent Flight Log
+i(247796),	-- Commendation of Service
+i(247800),	-- Recipe: Venerable Potion of Invisibility
+i(247802),	-- Venerable Potion of Invisibility
+5.5.0.61217
+i(50164),	-- Siabi's Barely Bigger Beer \\ Ezra Grimm's Barely Bigger Beer \\ Fras Siabi's Barely Bigger Beer
+i(63272),	-- Overwhelming Cologne \\ Siabi's Smoked Cologne \\ Ezra Grimm's Smoked Cologne \\ Fras Siabi's Smoked Cologne

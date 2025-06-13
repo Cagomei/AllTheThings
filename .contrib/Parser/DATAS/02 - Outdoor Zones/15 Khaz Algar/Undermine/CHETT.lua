@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
 	n(CARTELS_OF_UNDERMINE, {
 		n(CHETT, {
-			q(87296),	-- C.H.E.T.T. List (spellID 1219077)
+			q(87296, { ["isWeekly"] = true }),	-- Free C.H.E.T.T. List acquired (spellID 1219077)
 		}),
 	}),
 })));

@@ -964,7 +964,6 @@ root(ROOTS.Zones, {
 					q(10908, {	-- Speak with Rilak the Redeemed
 						["qg"] = 22272,	-- Kirrik the Awakened
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
-						["altQuests"] = { 10862, },	-- Surrender to the Horde
 						["isBreadcrumb"] = true,
 					}),
 					q(10039, {	-- Speak with Scout Neftis
@@ -1043,7 +1042,6 @@ root(ROOTS.Zones, {
 						["qg"] = 18386,	-- Rokag
 						["coord"] = { 49.0, 44.6, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
-						["altQuests"] = { 10908 },	-- Speak with Rilak the Redeemed
 						["isBreadcrumb"] = true,
 					}),
 					q(10873, {	-- Taken in the Night -- aa

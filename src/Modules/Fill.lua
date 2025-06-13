@@ -196,7 +196,7 @@ local FillFunctions = {
 				search = (search and CreateObject(search)) or app.CreateItem(craftedItemID)
 				-- link the respective crafted item object to the skill required by the crafting recipe
 				search.requireSkill = skillID
-				search.containsType = "REAGENT"
+				search.filledType = "REAGENT"
 				-- app.PrintDebug("craftedItemID",app:RawSearchLink("itemID",craftedItemID),"via skill",app:RawSearchLink("professionID",skillID),skillID)
 				groups[#groups + 1] = search
 			end

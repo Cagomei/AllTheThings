@@ -843,12 +843,9 @@ checkboxSortByProgress:AlignBelow(checkboxNestedQuestChains or checkboxModelPrev
 local checkboxShowRemainingCount = child:CreateCheckBox(L.SHOW_REMAINING_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Show:Remaining"))
-	app.Modules.Color.SetShowRemainingText(self:GetChecked());
 end,
 function(self)
 	settings:SetTooltipSetting("Show:Remaining", self:GetChecked())
-	app.Modules.Color.SetShowRemainingText(self:GetChecked());
-	app.CallbackEvent("OnRenderDirty")
 end)
 checkboxShowRemainingCount:SetATTTooltip(L.SHOW_REMAINING_CHECKBOX_TOOLTIP)
 checkboxShowRemainingCount:AlignBelow(checkboxSortByProgress)
@@ -856,12 +853,9 @@ checkboxShowRemainingCount:AlignBelow(checkboxSortByProgress)
 local checkboxShowPercentageCount = child:CreateCheckBox(L.PERCENTAGES_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Show:Percentage"))
-	app.Modules.Color.SetShowPercentageText(self:GetChecked());
 end,
 function(self)
 	settings:SetTooltipSetting("Show:Percentage", self:GetChecked())
-	app.Modules.Color.SetShowPercentageText(self:GetChecked());
-	app.CallbackEvent("OnRenderDirty")
 end)
 checkboxShowPercentageCount:SetATTTooltip(L.PERCENTAGES_CHECKBOX_TOOLTIP)
 checkboxShowPercentageCount:AlignBelow(checkboxShowRemainingCount)
@@ -897,7 +891,6 @@ sliderPercentagePrecision:SetScript("OnValueChanged", function(self, newValue)
 		return 1
 	end
 	settings:SetTooltipSetting("Precision", newValue)
-	app.CallbackEvent("OnRenderDirty")
 end)
 sliderPercentagePrecision.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Show:Percentage") then

@@ -16796,7 +16796,6 @@ s(1936)/i(4960),	-- h Pellet \\ Flash Pellet
 s(2130)/i(5568),	-- th Pebble \\ Smooth Pebble
 s(2203)/i(5856),	-- Monster - Throwing Axe
 s(2204)/i(5870),	-- Monster - Throwing Spear
-s(2213)/i(5956),	-- ksmith Hammer \\ Blacksmith Hammer
 s(2243)/i(6088),	-- Monster - Torch, Ranged
 s(2281)/i(6182),	-- Dim Torch
 s(2552)/i(6653),	-- h of the Dormant Flame \\ Torch of the Dormant Flame
@@ -25191,6 +25190,7 @@ s(47146)/i(90730),	-- Art Template Cloth - CharCreate_Priest_B_01 - Robe
 s(47147)/i(90733),	-- Art Template Cloth - CharCreate_Priest_B_01 - Boot
 s(47148)/i(90736),	-- Art Template Mail Boot - Mail_CharCreate_Shaman_B_01
 s(47149)/i(90737),	-- Art Template Mail Hand - Mail_CharCreate_Shaman_B_01
+s(47227)/i(90819),	-- Warlord's Razor \\ High Warlord's Razor
 s(47231)/i(90847),	-- Art Template Cloth - CharCreate_Priest_B_01 - Shoulder
 s(47232)/i(90848),	-- Art Template Cloth - CharCreate_Mage_B_01 - Shoulder
 s(47233)/i(90849),	-- Art Template Cloth - CharCreate_Warlock_B_01 - Shoulder
@@ -31134,8 +31134,6 @@ s(74528)/i(130213),	--
 s(74623)/i(130280),	--
 s(74624)/i(130281),	--
 s(75223)/i(130890),	-- Scissorblade \\ sorblade
-s(75535)/i(131254),	-- Huntsman's Chain Cuffs \\ sman's Chain Cuffs
-s(75907)/i(131626),	-- Shrouded Gauntlets \\ uded Gauntlets
 s(75999)/i(131726),	-- Bruiser Scale Pauldrons \\ ser Scale Pauldrons
 s(76006)/i(131749),	--
 s(76008)/i(131759),	--
@@ -33136,184 +33134,21 @@ s(91712)/i(154691),	-- Tidespray Linen Belt \\ Sun-Bleached Linen Belt \\ Cloth 
 s(91713)/i(154692),	-- Tidespray Linen Bracers \\ Sun-Bleached Linen Bracers \\ Cloth Armguards (NEEDS NAME)
 s(91714)/i(154693),	-- Embroidered Deep Sea Gloves \\ Cloth Gauntlets - Max Level (NEEDS NAME)
 s(91715)/i(154694),	-- Embroidered Deep Sea Breeches \\ Cloth Greaves - Max Level (NEEDS NAME)
-s(91836)/i(154872),	-- Marrten's Canvas Mantle \\ Heartsbane Amice \\ PH Cloth Shoulder
-s(91955)/i(155056),	-- 8.0 PH - Unused - 2H Bow \\ 8.0 PH Weapon - Bow
-s(91959)/i(155060),	-- 8.0 PH - Unused - 1H Fist \\ 8.0 PH Weapon - 1H Fist Int
-s(91960)/i(155061),	-- 8.0 PH - Unused - 1H Fist \\ 8.0 PH Weapon - 1H Fist Str
-s(91966)/i(155067),	-- 8.0 PH - Unused - 2H Mace \\ 8.0 PH Weapon - 2H Mace Agi
-s(91968)/i(155069),	-- 8.0 PH - Unused - 2H Mace \\ 8.0 PH Weapon - 2H Mace Int
-s(91977)/i(155078),	-- 8.0 PH - Unused - 1H Sword \\ 8.0 PH Weapon - 1H Sword Int
-s(92018)/i(155125),	-- 8.0 PH - Weapon - 1H Axe
-s(92022)/i(155129),	-- 8.0 PH - Weapon - Bow
-s(92025)/i(155132),	-- 8.0 PH - Weapon - Dagger
-s(92026)/i(155133),	-- 8.0 PH - Weapon - Fist
-s(92028)/i(155135),	-- 8.0 PH - Unused - 1H Fist \\ 8.0 PH - Weapon - 1H Fist \\ PH Acolyte's Spiked Glove \\ Acolyte's Spiked Glove
-s(92030)/i(155137),	-- 8.0 PH - Weapon - 1H Mace
-s(92033)/i(155140),	-- 8.0 PH - Weapon - 2H Mace
-s(92038)/i(155145),	-- 8.0 PH - Weapon - Polearm
-s(92040)/i(155147),	-- 8.0 PH - Weapon - Staff
-s(92042)/i(155149),	-- 8.0 PH - Weapon - 1H Sword
-s(92047)/i(155154),	-- 8.0 PH - Unused - Shield \\ PH Str Shield A \\ Waycrest Squire's Shield
-s(92052)/i(155165),	-- 8.0 PH - Cloak
-s(92088)/i(155201),	-- 8.0 PH Weapon - 2H Axe Str
-s(92089)/i(155202),	-- 8.0 PH Weapon - Bow
-s(92093)/i(155206),	-- 8.0 PH Weapon - 1H Fist Int
-s(92094)/i(155207),	-- 8.0 PH Weapon - 1H Fist Str
-s(92100)/i(155213),	-- 8.0 PH Weapon - 2H Mace Agi
-s(92102)/i(155215),	-- 8.0 PH Weapon - 2H Mace Int
-s(92107)/i(155220),	-- 8.0 PH Weapon - 2H Staff Str
 s(92109)/i(155222),	-- Fungmourne \\ 8.0 PH Weapon - 1H Sword Agi
-s(92119)/i(155238),	-- 8.0 PH Cloak
-s(92155)/i(155274),	-- 8.0 PH Weapon - 2H Axe Str
-s(92156)/i(155275),	-- 8.0 PH Weapon - Bow
-s(92157)/i(155276),	-- 8.0 PH Weapon - Crossbow
-s(92158)/i(155277),	-- 8.0 PH Weapon - 1H Dagger Agi
-s(92160)/i(155279),	-- 8.0 PH Weapon - 1H Fist Int
-s(92161)/i(155280),	-- 8.0 PH Weapon - 1H Fist Str
-s(92162)/i(155281),	-- 8.0 PH Weapon - 1H Fist Agi
-s(92163)/i(155282),	-- 8.0 PH Weapon - Gun
-s(92164)/i(155283),	-- 8.0 PH Weapon - 1H Mace Agi
-s(92166)/i(155285),	-- 8.0 PH Weapon - 1H Mace Int
-s(92167)/i(155286),	-- 8.0 PH Weapon - 2H Mace Agi
-s(92169)/i(155288),	-- 8.0 PH Weapon - 2H Mace Int
-s(92170)/i(155289),	-- 8.0 PH Weapon - 2H Polearm Agi
-s(92171)/i(155290),	-- 8.0 PH Weapon - 2H Polearm Str
-s(92172)/i(155291),	-- 8.0 PH Weapon - 2H Polearm Int
-s(92173)/i(155292),	-- 8.0 PH Weapon - 2H Staff Agi
-s(92174)/i(155293),	-- 8.0 PH Weapon - 2H Staff Str
-s(92175)/i(155294),	-- 8.0 PH Weapon - 2H Staff Int
-s(92176)/i(155295),	-- 8.0 PH Weapon - 1H Sword Agi
-s(92177)/i(155296),	-- 8.0 PH Weapon - 1H Sword Str
-s(92178)/i(155297),	-- 8.0 PH Weapon - 1H Sword Int
-s(92179)/i(155298),	-- 8.0 PH Weapon - 2H Sword Str
-s(92182)/i(155301),	-- 8.0 PH Shield
-s(92206)/i(155331),	-- 8.0 PH - Cloth Robe
-s(92220)/i(155345),	-- 8.0 PH Weapon - 1H Axe Str
-s(92224)/i(155349),	-- 8.0 PH - Weapon - Crossbow
-s(92227)/i(155352),	-- 8.0 PH Weapon - 1H Fist Int
-s(92228)/i(155353),	-- 8.0 PH Weapon - 1H Fist Str
-s(92229)/i(155354),	-- 8.0 PH Weapon - 1H Fist Agi
-s(92230)/i(155355),	-- 8.0 PH Weapon - Gun
-s(92231)/i(155356),	-- 8.0 PH Weapon - 1H Mace Agi
-s(92232)/i(155357),	-- 8.0 PH Weapon - 1H Mace Str
-s(92233)/i(155358),	-- 8.0 PH Weapon - 1H Mace Int
-s(92234)/i(155359),	-- 8.0 PH Weapon - 2H Mace Agi
-s(92235)/i(155360),	-- 8.0 PH Weapon - 2H Mace Str
-s(92236)/i(155361),	-- 8.0 PH Weapon - 2H Mace Int
-s(92238)/i(155363),	-- 8.0 PH Weapon - 2H Polearm STR
-s(92239)/i(155364),	-- 8.0 PH Weapon - 2H Polearm Int
-s(92241)/i(155366),	-- 8.0 PH Weapon - 2H Staff Str
-s(92242)/i(155367),	-- 8.0 PH Weapon - 2H Staff Int
-s(92243)/i(155368),	-- 8.0 PH Weapon - 1H Sword Agi
-s(92245)/i(155370),	-- 8.0 PH Weapon - 1H Sword Int
-s(92246)/i(155371),	-- 8.0 PH Weapon - 2H Sword Str
-s(92247)/i(155372),	-- 8.0 PH - Weapon - Wand
-s(92295)/i(155426),	-- 8.0 PH Weapon - 1H Fist Str
-s(92297)/i(155428),	-- 8.0 PH Weapon - Gun
-s(92304)/i(155435),	-- 8.0 PH Weapon - 2H Polearm Agi
-s(92305)/i(155436),	-- 8.0 PH Weapon - 2H Polearm Str
-s(92306)/i(155437),	-- 8.0 PH Weapon - 2H Polearm Int
-s(92308)/i(155439),	-- 8.0 PH Weapon - 2H Staff Str
-s(92315)/i(155446),	-- 8.0 PH Shield
-s(92316)/i(155447),	-- 8.0 PH Shield
-s(92354)/i(155491),	-- 8.0 PH - Plate Chestplate
-s(92355)/i(155492),	-- 8.0 PH - Mail Vest
-s(92356)/i(155493),	-- 8.0 PH - Leather Vest
-s(92357)/i(155494),	-- 8.0 PH - Plate Warboots
-s(92358)/i(155495),	-- 8.0 PH - Cloth Treads
-s(92359)/i(155496),	-- 8.0 PH - Mail Sabatons
-s(92360)/i(155497),	-- 8.0 PH - Leather Boots
-s(92361)/i(155498),	-- 8.0 PH - Leather Gloves
-s(92362)/i(155499),	-- 8.0 PH - Plate Gauntlets
-s(92363)/i(155500),	-- 8.0 PH - Cloth Gloves
-s(92364)/i(155501),	-- 8.0 PH - Mail Gauntlets
-s(92365)/i(155502),	-- 8.0 PH Plate Helm \\ Nazmani War Crown
-s(92366)/i(155503),	-- 8.0 PH - Cloth Hood
-s(92367)/i(155504),	-- 8.0 PH - Mail Helm
-s(92368)/i(155505),	-- 8.0 PH - Leather Helm
-s(92369)/i(155506),	-- 8.0 PH - Plate Legguards
-s(92370)/i(155507),	-- 8.0 PH - Cloth Leggings
-s(92371)/i(155508),	-- 8.0 PH - Mail Leggings
-s(92372)/i(155509),	-- 8.0 PH - Leather Breeches
-s(92374)/i(155511),	-- 8.0 PH - Leather Spaulders
-s(92375)/i(155512),	-- 8.0 PH - Plate Shoulders
-s(92376)/i(155513),	-- 8.0 PH - Cloth Mantle
-s(92377)/i(155514),	-- 8.0 PH - Mail Monnion
-s(92378)/i(155515),	-- 8.0 PH - Plate Girdle
-s(92379)/i(155516),	-- 8.0 PH - Cloth Cord
-s(92380)/i(155517),	-- 8.0 PH - Mail Belt
-s(92381)/i(155518),	-- 8.0 PH - Leather Belt
-s(92386)/i(155523),	-- 8.0 PH Weapon - 1H Axe Agi
-s(92388)/i(155525),	-- 8.0 PH Weapon - 1H Axe Int
-s(92389)/i(155526),	-- 8.0 PH - Weapon - 2H Axe
-s(92390)/i(155527),	-- 8.0 PH Weapon - Bow
-s(92391)/i(155528),	-- 8.0 PH Weapon - Crossbow
-s(92392)/i(155529),	-- 8.0 PH Weapon - 1H Dagger Agi
-s(92393)/i(155530),	-- 8.0 PH Weapon - 1H Dagger Int
-s(92394)/i(155531),	-- 8.0 PH Weapon - 1H Fist Int
-s(92395)/i(155532),	-- 8.0 PH Weapon - 1H Fist Str
-s(92396)/i(155533),	-- 8.0 PH Weapon - 1H Fist Agi
-s(92397)/i(155534),	-- 8.0 PH - Weapon - Gun
-s(92398)/i(155535),	-- 8.0 PH Weapon - 1H Mace Agi
-s(92399)/i(155536),	-- 8.0 PH Weapon - 1H Mace Str
-s(92400)/i(155537),	-- 8.0 PH Weapon - 1H Mace Int
-s(92401)/i(155538),	-- 8.0 PH Weapon - 2H Mace Agi
-s(92402)/i(155539),	-- 8.0 PH Weapon - 2H Mace Str
-s(92403)/i(155540),	-- 8.0 PH Weapon - 2H Mace Int
-s(92404)/i(155541),	-- 8.0 PH Weapon - 2H Polearm Agi
-s(92405)/i(155542),	-- 8.0 PH Weapon - 2H Polearm Str
-s(92407)/i(155544),	-- 8.0 PH Weapon - 2H Staff Agi
-s(92409)/i(155546),	-- 8.0 PH Weapon - 2H Staff Int
-s(92410)/i(155547),	-- 8.0 PH Weapon - 1H Sword Agi
-s(92411)/i(155548),	-- 8.0 PH - Weapon - 2H Sword
-s(92412)/i(155549),	-- 8.0 PH Weapon - 1H Sword Int
-s(92413)/i(155550),	-- 8.0 PH Weapon - 2H Sword Str
-s(92415)/i(155552),	-- 8.0 PH Shield
-s(92416)/i(155553),	-- 8.0 PH - Shield
-s(92417)/i(155554),	-- 8.0 PH - Offhand
-s(92418)/i(155557),	-- 8.0 PH Cloak
-s(92419)/i(155562),	-- 8.0 PH Cloak
-s(92420)/i(155563),	-- 8.0 PH Cloak
-s(92513)/i(155863),	-- Gilded-Claw Gloves \\ Fang-Fingered Glove
 s(92515)/i(155865),	-- Handwraps of Jagged Incisions \\ 8.0 - PH Dungeon - Cloth HAND \\ Shadesilk Gloves
-s(92517)/i(155867),	-- Coif of Invigorating Tethers \\ Coif of Entwined Fates
 s(92520)/i(155870),	-- Pauldrons of the Ruinous Herald \\ Pauldrons of the Ruinious Herald
 s(92521)/i(155871),	-- Devilsaur Worshiper's Mantle \\ 8.0 - PH Dungeon - Cloth SHOULDER \\ Mantle of the Tyrant Loa
 s(92522)/i(155872),	-- Pauldrons of Fanatical Consumption \\ Pauldrons of Alchemical Transfusion \\ Pauldrons of Hallowed Ossein
 s(92523)/i(155873),	-- Cord of Spiritual Direction \\ 8.0 - PH Dungeon - Cloth WAIST \\ Zealot's Shadow Sash \\ Zealot's Gilded Sash
-s(92524)/i(155874),	-- Belt of Transmufusion \\ Belt of Enforced Continuance
-s(92525)/i(155875),	-- Thrice-Stitched Wristguards
 s(93215)/i(156988),	-- Rusted Longsword
-s(93941)/i(157769),	-- Sword of the Lone Victor
-s(93953)/i(157809),	-- 8.0 PH - Cloth Wristwraps
-s(93954)/i(157810),	-- 8.0 PH - Plate Wristwraps
-s(93955)/i(157811),	-- 8.0 PH - Mail Wristwraps
-s(93956)/i(157812),	-- 8.0 PH - Leather Wristwraps
-s(93960)/i(157818),	-- 8.0 PH - Weapon - Warglaive
-s(94160)/i(158080),	-- 8.0 PH Weapon - 1H Axe Str
-s(94161)/i(158081),	-- 8.0 PH Weapon - 1H Axe Int
-s(94162)/i(158082),	-- 8.0 PH Weapon - 2H Axe Str
-s(94163)/i(158083),	-- 8.0 PH Weapon - Bow
-s(94193)/i(158113),	-- 8.0 PH Weapon - Crossbow
-s(94199)/i(158119),	-- 8.0 PH Weapon - Gun
-s(94222)/i(158194),	-- Helm of the Sands
 8.0.1.25976
 s(94314)/i(158310),	-- Soulspun Carapace \\ 8.0 - PH Dungeon - Plate CHEST
 s(94315)/i(158310),	-- Soulspun Carapace \\ 8.0 - PH Dungeon - Plate CHEST
 s(94318)/i(158312),	-- Girdle of the Everlasting Guardian \\ 8.0 - PH Dungeon - Plate WAIST
 s(94319)/i(158312),	-- Girdle of the Everlasting Guardian \\ 8.0 - PH Dungeon - Plate WAIST
-s(94323)/i(158316),	-- 8.0 - PH Dungeon - Leather HEAD
 s(94327)/i(158322),	-- Aureus Vessel \\ 8.0 - PH Dungeon - Caster OFFHAND
-s(94333)/i(158331),	-- 8.0 PH - Unused - Shield \\ 8.0 PH Shield Int
 s(94334)/i(158333),	-- Fleet Captain's Buffcoat \\ 8.0 - PH Dungeon - Leather CHEST
-s(94335)/i(158334),	-- 8.0 - PH Dungeon - Plate FEET
-s(94336)/i(158335),	-- 8.0 - PH Dungeon - Leather FEET
 s(94337)/i(158336),	-- Venerated Raptorhide Gloves \\ 8.0 - PH Dungeon - Leather HAND
-s(94338)/i(158337),	-- 8.0 - PH Dungeon - Plate HAND
-s(94340)/i(158339),	-- 8.0 - PH Dungeon - Plate HEAD
-s(94341)/i(158340),	-- 8.0 - PH Dungeon - Mail HEAD
-s(94343)/i(158342),	-- 8.0 - PH Dungeon - Leather LEGS
-s(94344)/i(158343),	-- 8.0 - PH Dungeon - Plate SHOULDER
 s(94345)/i(158344),	-- Mantle of Ceremonial Ascension \\ Padded Shellpads \\ 8.0 - PH Dungeon - Cloth SHOULDER
 s(94356)/i(158352),	-- Pummeler Mechanic's Spaulders \\ 8.0 - PH Dungeon - Leather SHOULDER
 s(94357)/i(158352),	-- Pummeler Mechanic's Spaulders \\ 8.0 - PH Dungeon - Leather SHOULDER
@@ -33324,7 +33159,6 @@ s(94363)/i(158355),	-- Loa-Blessed Chestguard \\ 8.0 - PH Dungeon - Mail CHEST
 s(94368)/i(158358),	-- Furnace-Fire Breastplate \\ 8.0 - PH Dungeon - Plate CHEST
 s(94369)/i(158358),	-- Furnace-Fire Breastplate \\ 8.0 - PH Dungeon - Plate CHEST
 s(94378)/i(158365),	-- 8.0 - PH Dungeon - Mail HAND
-s(94387)/i(158372),	-- 8.0 PH - Unused - Shield \\ 8.0 PH Shield Str
 s(94396)/i(158384),	-- Rastari Breastplate \\ Rastari Chestguard \\ 8.0 PH Plate Chestplate
 s(94397)/i(158385),	-- Torcalin Chainmail \\ Torcalin Chestguard \\ 8.0 PH Mail Vest
 s(94398)/i(158386),	-- Jambani Jerkin \\ 8.0 PH Leather Vest
@@ -33349,9 +33183,6 @@ s(94448)/i(158436),	-- Jambani Shoulderpads \\ 8.0 PH Leather Spaulders
 s(94449)/i(158437),	-- Rastari Pauldrons \\ 8.0 PH Plate Shoulders
 s(94450)/i(158438),	-- Zanchuli Mantle \\ 8.0 PH Cloth Mantle
 s(94451)/i(158439),	-- Torcalin Spaulders \\ 8.0 PH Mail Monnion
-s(94567)/i(158596),	-- 8.0 PH - Unused - Shield \\ PH Str Shield B
-s(94605)/i(158637),	-- 8.0 PH - Unused - Polearm \\ 8.0 PH - Weapon - Polearm
-s(94606)/i(158638),	-- 8.0 PH - Unused - 1H Fist \\ 8.0 PH - Weapon - Fist
 s(94663)/i(158710),	-- Gorehorn's Rack \\ Greatstag's Cursed Horn \\ Hook Capped Drumstick \\ 8.0 - PH Dungeon - Agi 1H AXE
 s(94664)/i(158710),	-- Gorehorn's Rack \\ Greatstag's Cursed Horn \\ Hook Capped Drumstick \\ 8.0 - PH Dungeon - Agi 1H AXE
 s(94672)/i(158714),	-- Swarm's Edge \\ 8.0 - PH Dungeon - Agi 1H AXE
@@ -33380,17 +33211,10 @@ s(94752)/i(158996),	-- Ritual Flayer's Spaulders \\ Ritual Flayer's Shoulderpads
 s(94753)/i(158997),	-- Nazmani Warplate Spaulders \\ Nazmani Warplate Pauldrons \\ 8.0 PH Plate Shoulders
 s(94754)/i(158998),	-- Loa Speaker's Epaulets \\ Loa Speaker's Shoulderpads \\ 8.0 PH Cloth Mantle
 s(94755)/i(158999),	-- Death-Pledged Shoulderguards \\ Death-Pledged Spaulders \\ 8.0 PH Mail Monnion
-s(94760)/i(159004),	-- 8.0 PH Cloth Wristwraps
-s(94761)/i(159005),	-- 8.0 PH Plate Wristwraps
-s(94762)/i(159006),	-- 8.0 PH Mail Wristwraps
-s(94763)/i(159007),	-- 8.0 PH Leather Wristwraps
-s(94815)/i(159059),	-- 8.0 PH Mail Leggings
 8.0.1.26032
-s(94863)/i(159113),	-- 8.0 PH 1H Axe
 s(94882)/i(159136),	-- Jeweled Dagger of Subjugation \\ 8.0 - PH Dungeon - Agi - DAGGER
 s(94883)/i(159137),	-- Gilded Serpent's Tooth \\ 8.0 - PH Dungeon - Int - DAGGER
 8.0.1.26095
-s(94944)/i(159209),	-- Eventide Bracers \\ PH Mail Wrist
 s(94959)/i(159225),	-- Silverleaf Sabatons \\ 8.0 - PH Dungeon - Plate FEET
 s(94969)/i(159234),	-- Down-Lined Breeches \\ Downy Cloth Leggings \\ 8.0 - PH Dungeon - Cloth LEGS
 s(94970)/i(159234),	-- Down-Lined Breeches \\ Downy Cloth Leggings \\ 8.0 - PH Dungeon - Cloth LEGS
@@ -33413,16 +33237,12 @@ s(95002)/i(159258),	-- Leggings of Oscillating Polarity \\ 8.0 - PH Dungeon - Cl
 s(95003)/i(159258),	-- Leggings of Oscillating Polarity \\ 8.0 - PH Dungeon - Cloth LEGS
 s(95007)/i(159261),	-- Crown of Fluorescent Flora \\ 8.0 - PH Dungeon - Cloth HEAD
 s(95020)/i(159271),	-- Cap of the Wild Pyromancer \\ 8.0 - PH Dungeon - Cloth HEAD
-s(95025)/i(159276),	-- Vestments of Deteriorating Grace \\ 8.0 - PH Dungeon - Cloth CHEST
 s(95026)/i(159276),	-- Vestments of Deteriorating Grace \\ 8.0 - PH Dungeon - Cloth CHEST
 s(95029)/i(159278),	-- Slippers of Unwavering Faith \\ Powder-Dusted Shoes \\ Powderdusted Shoes \\ Slippers of the Divine Guard \\ 8.0 - PH Dungeon - Cloth FEET
 s(95030)/i(159278),	-- Slippers of Unwavering Faith \\ Powder-Dusted Shoes \\ Powderdusted Shoes \\ Slippers of the Divine Guard \\ 8.0 - PH Dungeon - Cloth FEET
-s(95033)/i(159281),	-- 8.0 - PH Dungeon - Cloth WAIST
-s(95039)/i(159286),	-- 8.0 - PH Dungeon - MC Cloak
 s(95041)/i(159288),	-- Cloak of the Restless Tribes \\ 8.0 - PH Dungeon - MC Cloak
 s(95043)/i(159290),	-- Cloak of the Maritime Guard \\ 8.0 - PH Dungeon - MC Cloak
 s(95044)/i(159291),	-- Shroud of the Ophidian \\ 8.0 - PH Dungeon - MC Cloak
-s(95049)/i(159296),	-- 8.0 - PH Dungeon - Leather HAND
 s(95054)/i(159300),	-- Kula's Butchering Wristwraps \\ 8.0 - PH Dungeon - Leather WRIST
 s(95055)/i(159300),	-- Kula's Butchering Wristwraps \\ 8.0 - PH Dungeon - Leather WRIST
 s(95056)/i(159301),	-- Primal Dinomancer's Belt \\ Raptor Handler's Cord \\ 8.0 - PH Dungeon - Leather WAIST
@@ -33461,8 +33281,6 @@ s(95168)/i(159386),	-- Anchor Chain Girdle \\ Girdle of Anchor Cables \\ 8.0 - P
 s(95169)/i(159387),	-- Marine's Chain Buffcoat \\ 8.0 - PH Dungeon - Mail CHEST
 s(95179)/i(159394),	-- Cincture of Coruscating Energy \\ 8.0 - PH Dungeon - Mail WAIST
 s(95189)/i(159401),	-- Nettlebite Mantle \\ 8.0 - PH Dungeon - Mail SHOULDER
-s(95194)/i(159405),	-- 8.0 - PH Dungeon - Plate HAND
-s(95195)/i(159406),	-- 8.0 - PH Dungeon - Plate HEAD
 s(95199)/i(159409),	-- Embalmer's Steadying Bracers \\ 8.0 - PH Dungeon - Plate WRIST
 s(95200)/i(159409),	-- Embalmer's Steadying Bracers \\ 8.0 - PH Dungeon - Plate WRIST
 s(95203)/i(159411),	-- Legplates of the Maritime Guard \\ Legplates of Pestilent Purification \\ Legplates of Regal Splendor \\ 8.0 - PH Dungeon - Plate LEGS
@@ -33745,7 +33563,6 @@ s(96819)/i(160842),	-- Lastwind Mantle
 s(96820)/i(160843),	-- Scorching Sands Shoulderguards
 s(96821)/i(160844),	-- Resilient Outcast's Shoulderguards
 s(96822)/i(160845),	-- Exiled Veteran's Pauldrons
-s(96927)/i(160981),	-- 8.0 PH Weapon - 1H Warglaive Agi
 8.0.1.26476
 s(97042)/i(160060),	-- Death Bearer's Shroud \\ Drust Commander's Drape
 s(97043)/i(160060),	-- Death Bearer's Shroud \\ Drust Commander's Drape
@@ -33754,8 +33571,6 @@ s(97048)/i(159290),	-- Cloak of the Maritime Guard \\ 8.0 - PH Dungeon - MC Cloa
 s(97049)/i(159967),	-- Raider's Sailcloth
 s(97050)/i(159967),	-- Raider's Sailcloth
 s(97057)/i(159288),	-- Cloak of the Restless Tribes \\ 8.0 - PH Dungeon - MC Cloak
-s(97195)/i(161306),	-- Ashvane Captain's Longsword \\ Ashvane-Captain's Longsword
-s(97196)/i(161307),	-- Ashvane Captain's Scimitar \\ Ashvane-Captain's Scimitar
 8.0.1.26522
 s(97214)/i(161349),	-- Amice of the Rending Abyss \\ 8.0 Raid - World - Boss 1 - Cloth SHOULDER 1 - Alliance
 s(97215)/i(161349),	-- Amice of the Rending Abyss \\ 8.0 Raid - World - Boss 1 - Cloth SHOULDER 1 - Alliance
@@ -33828,7 +33643,6 @@ s(97325)/i(161408),	-- Sandswept Legionnaire's Legplates \\ Galea of the Sandswe
 s(97326)/i(161408),	-- Sandswept Legionnaire's Legplates \\ Galea of the Sandswept Legion \\ 8.0 Raid - World - Boss 3 - Plate HEAD 2 - Horde
 s(97328)/i(161409),	-- Stormcrash Chestguard \\ 8.0 Raid - World - Boss 2 - Plate CHEST 2 - Horde
 s(97329)/i(161409),	-- Stormcrash Chestguard \\ 8.0 Raid - World - Boss 2 - Plate CHEST 2 - Horde
-s(97330)/i(161410),	-- Spaulders of the Devouring Wastes \\ 8.0 Raid - World - Boss 3 - Plate SHOULDER 2 - Horde
 s(97331)/i(161410),	-- Spaulders of the Devouring Wastes \\ 8.0 Raid - World - Boss 3 - Plate SHOULDER 2 - Horde
 s(97332)/i(161410),	-- Spaulders of the Devouring Wastes \\ 8.0 Raid - World - Boss 3 - Plate SHOULDER 2 - Horde
 s(97382)/i(161454),	-- Warcaster's Doom Mantle \\ 8.0 Raid - World - Boss 4 - Cloth SHOULDER 2 - Horde
@@ -33853,10 +33667,8 @@ s(97414)/i(161471),	-- Lion's Roar Pauldrons \\ 8.0 Raid - World - Boss 4 - Plat
 s(97415)/i(161471),	-- Lion's Roar Pauldrons \\ 8.0 Raid - World - Boss 4 - Plate SHOULDER 2 - Alliance
 s(97421)/i(161489),	-- Alpaca Wool Gloves \\ Copy Handwraps of Jagged Incisions
 s(97422)/i(161489),	-- Alpaca Wool Gloves \\ Copy Handwraps of Jagged Incisions
-s(97423)/i(161490),	-- Copy Devilsaur Worshiper's Mantle
 s(97424)/i(161490),	-- Copy Devilsaur Worshiper's Mantle
 s(97425)/i(161490),	-- Copy Devilsaur Worshiper's Mantle
-s(97426)/i(161491),	-- Copy Cap of the Dashing Bilge Rat
 s(97427)/i(161491),	-- Copy Cap of the Dashing Bilge Rat
 s(97428)/i(161491),	-- Copy Cap of the Dashing Bilge Rat
 s(97430)/i(161492),	-- Zo'bal Spirit Gloves \\ Copy Greasy Bacon-Grabbers
@@ -33865,17 +33677,14 @@ s(97433)/i(161493),	-- Swamp Medic's Leggings \\ Copy Brocade Silk Drawers
 s(97434)/i(161493),	-- Swamp Medic's Leggings \\ Copy Brocade Silk Drawers
 s(97436)/i(161494),	-- Sea-Treated Footwraps \\ Copy Gold Filigree Sandals
 s(97437)/i(161494),	-- Sea-Treated Footwraps \\ Copy Gold Filigree Sandals
-s(97438)/i(161495),	-- Copy Secret Spinner's Miter
 s(97439)/i(161495),	-- Copy Secret Spinner's Miter
 s(97440)/i(161495),	-- Copy Secret Spinner's Miter
-s(97441)/i(161496),	-- Copy Padded Shellpads
 s(97442)/i(161496),	-- Copy Padded Shellpads
 s(97443)/i(161496),	-- Copy Padded Shellpads
 s(97445)/i(161497),	-- Cord of the Loa Worshippers \\ Copy Sailcloth Waistband
 s(97446)/i(161497),	-- Cord of the Loa Worshippers \\ Copy Sailcloth Waistband
 s(97448)/i(161498),	-- Wristwraps of the Dutiful Apothecary \\ Copy Wraps of Everliving Fealty
 s(97449)/i(161498),	-- Wristwraps of the Dutiful Apothecary \\ Copy Wraps of Everliving Fealty
-s(97450)/i(161499),	-- Copy Standard Issue Mastermind Robes
 s(97451)/i(161499),	-- Copy Standard Issue Mastermind Robes
 s(97452)/i(161499),	-- Copy Standard Issue Mastermind Robes
 s(97454)/i(161500),	-- Shadraspun Legwraps \\ Copy Rowdy Reveler's Legwraps
@@ -33886,47 +33695,34 @@ s(97460)/i(161502),	-- Sash of the Scaled Devoted \\ Copy Excavator's Safety Bel
 s(97461)/i(161502),	-- Sash of the Scaled Devoted \\ Copy Excavator's Safety Belt
 s(97463)/i(161503),	-- Wristwraps of Scrollbinding \\ Copy Silk Cuffs of the Skycap'n
 s(97464)/i(161503),	-- Wristwraps of Scrollbinding \\ Copy Silk Cuffs of the Skycap'n
-s(97465)/i(161504),	-- Copy Embellished Burial Shroud
 s(97466)/i(161504),	-- Copy Embellished Burial Shroud
 s(97467)/i(161504),	-- Copy Embellished Burial Shroud
-s(97468)/i(161505),	-- Copy Wrap of Gleaming Determination
 s(97469)/i(161505),	-- Copy Wrap of Gleaming Determination
 s(97470)/i(161505),	-- Copy Wrap of Gleaming Determination
 s(97472)/i(161506),	-- Swampstalker Footpads \\ Copy Loyal Vassal's Footpads
 s(97473)/i(161506),	-- Swampstalker Footpads \\ Copy Loyal Vassal's Footpads
 s(97475)/i(161507),	-- Silent Scavenger Leggings \\ Copy Shambling Berserker's Leggings
 s(97476)/i(161507),	-- Silent Scavenger Leggings \\ Copy Shambling Berserker's Leggings
-s(97477)/i(161508),	-- Copy Sea Dog Cover
-s(97479)/i(161510),	-- Copy Mantle of Fastidious Machinations
 s(97480)/i(161510),	-- Copy Mantle of Fastidious Machinations
 s(97481)/i(161510),	-- Copy Mantle of Fastidious Machinations
 s(97484)/i(161512),	-- Silent Stalker Belt \\ Copy Spymaster's Waistcord
 s(97485)/i(161512),	-- Silent Stalker Belt \\ Copy Spymaster's Waistcord
-s(97486)/i(161513),	-- Copy Fleet Captain's Buffcoat
 s(97488)/i(161514),	-- Antiquity Handler's Gloves \\ Copy Venerated Raptorhide Gloves
 s(97489)/i(161514),	-- Antiquity Handler's Gloves \\ Copy Venerated Raptorhide Gloves
-s(97490)/i(161515),	-- Copy Pummeler Mechanic's Spaulders
 s(97491)/i(161515),	-- Copy Pummeler Mechanic's Spaulders
 s(97492)/i(161515),	-- Copy Pummeler Mechanic's Spaulders
 s(97494)/i(161516),	-- Bindings of the Disparate Tribes \\ Copy Servo-Arm Bindings
 s(97495)/i(161516),	-- Bindings of the Disparate Tribes \\ Copy Servo-Arm Bindings
-s(97497)/i(161518),	-- Copy High Altitude Turban
 s(97498)/i(161518),	-- Copy High Altitude Turban
 s(97499)/i(161518),	-- Copy High Altitude Turban
-s(97503)/i(161522),	-- Copy Pauldrons of Alchemical Transfusion
-s(97504)/i(161523),	-- Copy Sweete's Jeweled Headgear
 s(97505)/i(161523),	-- Copy Sweete's Jeweled Headgear
 s(97506)/i(161523),	-- Copy Sweete's Jeweled Headgear
 s(97508)/i(161524),	-- Torcali's Grips of the Bounty \\ Copy Bite-Resistant Chain Gloves
 s(97509)/i(161524),	-- Torcali's Grips of the Bounty \\ Copy Bite-Resistant Chain Gloves
-s(97510)/i(161525),	-- Copy Spike-Stitched Hauberk
-s(97515)/i(161530),	-- Copy Loa-Blessed Chestguard
 s(97517)/i(161531),	-- Akunda's Grounding Boots \\ Copy Shell-Kickers
 s(97518)/i(161531),	-- Akunda's Grounding Boots \\ Copy Shell-Kickers
-s(97520)/i(161533),	-- Copy Deranged Alchemist's Headgear
 s(97522)/i(161534),	-- Legguards of Ai'twen's Resurgence \\ Copy Blacktooth Chainmail Britches
 s(97523)/i(161534),	-- Legguards of Ai'twen's Resurgence \\ Copy Blacktooth Chainmail Britches
-s(97524)/i(161535),	-- Copy Gaping Maw Shoulderguard
 s(97525)/i(161535),	-- Copy Gaping Maw Shoulderguard
 s(97526)/i(161535),	-- Copy Gaping Maw Shoulderguard
 s(97528)/i(161536),	-- Torga Scale Girdle \\ Copy Ornate Filigree Chain
@@ -33935,18 +33731,14 @@ s(97531)/i(161537),	-- Sabatons of the Renewed Warpath \\ Copy Embellished Ritua
 s(97532)/i(161537),	-- Sabatons of the Renewed Warpath \\ Copy Embellished Ritual Sabatons
 s(97534)/i(161538),	-- Gloomplate Gauntlets \\ Copy Power-Assisted Vicegrips
 s(97535)/i(161538),	-- Gloomplate Gauntlets \\ Copy Power-Assisted Vicegrips
-s(97536)/i(161539),	-- Copy Loa-Ruiner's Casque
 s(97537)/i(161539),	-- Copy Loa-Ruiner's Casque
 s(97538)/i(161539),	-- Copy Loa-Ruiner's Casque
-s(97539)/i(161540),	-- Copy Pauldrons of the Ruinous Herald
 s(97540)/i(161540),	-- Copy Pauldrons of the Ruinous Herald
 s(97541)/i(161540),	-- Copy Pauldrons of the Ruinous Herald
-s(97542)/i(161541),	-- Copy Sea-Brawler's Greathelm
 s(97543)/i(161541),	-- Copy Sea-Brawler's Greathelm
 s(97544)/i(161541),	-- Copy Sea-Brawler's Greathelm
 s(97546)/i(161542),	-- Gauntlets of the Scorched Sands \\ Copy Sharktooth-Knuckled Grips
 s(97547)/i(161542),	-- Gauntlets of the Scorched Sands \\ Copy Sharktooth-Knuckled Grips
-s(97548)/i(161543),	-- Copy Soulspun Carapace
 s(97549)/i(161543),	-- Copy Soulspun Carapace
 s(97550)/i(161543),	-- Copy Soulspun Carapace
 s(97552)/i(161544),	-- Vambraces of a Thousand Year Toil \\ Copy Concealed Fencing Plates
@@ -33955,7 +33747,6 @@ s(97555)/i(161545),	-- Girdle of Scavenged Plates \\ Copy Girdle of the Everlast
 s(97556)/i(161545),	-- Girdle of Scavenged Plates \\ Copy Girdle of the Everlasting Guardian
 s(97558)/i(161546),	-- Grand Fleet Legplates \\ Copy Legplates of Beaten Gold
 s(97559)/i(161546),	-- Grand Fleet Legplates \\ Copy Legplates of Beaten Gold
-s(97560)/i(161547),	-- Copy Furnace-Fire Breastplate
 s(97561)/i(161547),	-- Copy Furnace-Fire Breastplate
 s(97562)/i(161547),	-- Copy Furnace-Fire Breastplate
 s(97564)/i(161548),	-- Gonk Adherents Vambraces \\ Copy Stonefury Vambraces
@@ -33966,33 +33757,24 @@ s(97570)/i(161550),	-- Lustful Warbringer's Legplates \\ Copy Sharkwater Waders
 s(97571)/i(161550),	-- Lustful Warbringer's Legplates \\ Copy Sharkwater Waders
 s(97573)/i(161551),	-- Zul'jan Camp Stalkers \\ Copy Silverleaf Sabatons
 s(97574)/i(161551),	-- Zul'jan Camp Stalkers \\ Copy Silverleaf Sabatons
-s(97575)/i(161552),	-- Copy Lockjaw Shoulderplate
 s(97576)/i(161552),	-- Copy Lockjaw Shoulderplate
 s(97577)/i(161552),	-- Copy Lockjaw Shoulderplate
-s(97578)/i(161554),	-- Copy Devilsaur Worshiper's Mantle
 s(97579)/i(161554),	-- Copy Devilsaur Worshiper's Mantle
 s(97580)/i(161554),	-- Copy Devilsaur Worshiper's Mantle
 s(97582)/i(161555),	-- Azerothian Champion's Crown \\ Copy Secret Spinner's Miter
 s(97583)/i(161555),	-- Azerothian Champion's Crown \\ Copy Secret Spinner's Miter
-s(97584)/i(161556),	-- Copy Standard Issue Mastermind Robes
 s(97585)/i(161556),	-- Copy Standard Issue Mastermind Robes
 s(97586)/i(161556),	-- Copy Standard Issue Mastermind Robes
 s(97588)/i(161557),	-- Vest of the Azerothian Champion \\ Copy Wrap of Gleaming Determination
 s(97589)/i(161557),	-- Vest of the Azerothian Champion \\ Copy Wrap of Gleaming Determination
-s(97590)/i(161558),	-- Copy Sea Dog Cover
-s(97591)/i(161559),	-- Copy Mantle of Fastidious Machinations
 s(97592)/i(161559),	-- Copy Mantle of Fastidious Machinations
 s(97593)/i(161559),	-- Copy Mantle of Fastidious Machinations
-s(97595)/i(161561),	-- Copy Sweete's Jeweled Headgear
 s(97596)/i(161561),	-- Copy Sweete's Jeweled Headgear
 s(97597)/i(161561),	-- Copy Sweete's Jeweled Headgear
-s(97598)/i(161562),	-- Copy Spike-Stitched Hauberk
 s(97600)/i(161563),	-- Helm of the Azerothian Champion \\ Copy Loa-Ruiner's Casque
 s(97601)/i(161563),	-- Helm of the Azerothian Champion \\ Copy Loa-Ruiner's Casque
-s(97602)/i(161564),	-- Copy Pauldrons of the Ruinous Herald
 s(97603)/i(161564),	-- Copy Pauldrons of the Ruinous Herald
 s(97604)/i(161564),	-- Copy Pauldrons of the Ruinous Herald
-s(97605)/i(161565),	-- Copy Soulspun Carapace
 s(97606)/i(161565),	-- Copy Soulspun Carapace
 s(97607)/i(161565),	-- Copy Soulspun Carapace
 s(97609)/i(161567),	-- Sailing Master's Sash \\ Copy Sailcloth Waistband
@@ -34041,101 +33823,6 @@ s(97681)/i(161597),	-- Gauntlets of Renewed Resolution \\ Copy Power-Assisted Vi
 s(97682)/i(161597),	-- Gauntlets of Renewed Resolution \\ Copy Power-Assisted Vicegrips
 s(97684)/i(161598),	-- Hexxed-Land Treads \\ Copy Silverleaf Sabatons
 s(97685)/i(161598),	-- Hexxed-Land Treads \\ Copy Silverleaf Sabatons
-s(97753)/i(161670),	-- Dread Combatant's Cloak \\ PH Combatant's Cloak
-s(97851)/i(161776),	-- Dread Combatant's Barrier \\ PH Combatant's Barrier
-s(97852)/i(161777),	-- Dread Combatant's Reprieve \\ PH Combatant's Reprieve
-s(97853)/i(161778),	-- Dread Combatant's Cleaver \\ PH Combatant's Cleaver
-s(97854)/i(161779),	-- Dread Combatant's Longbow \\ PH Combatant's Longbow
-s(97855)/i(161780),	-- Dread Combatant's Spellblade \\ PH Combatant's Spellblade
-s(97856)/i(161781),	-- Dread Combatant's Gavel \\ PH Combatant's Gavel
-s(97857)/i(161782),	-- Dread Combatant's Bonegrinder \\ PH Combatant's Bonegrinder
-s(97858)/i(161783),	-- Dread Combatant's Pike \\ PH Combatant's Pike
-s(97859)/i(161784),	-- Dread Combatant's Staff \\ PH Combatant's Staff
-s(97860)/i(161785),	-- Dread Combatant's Slicer \\ PH Combatant's Slicer
-s(97861)/i(161786),	-- Dread Combatant's Wand \\ PH Combatant's Wand
-s(97862)/i(161787),	-- Dread Combatant's Decapitator \\ PH Combatant's Decapitator
-s(97863)/i(161788),	-- Dread Combatant's Rifle \\ PH Combatant's Rifle
-s(97864)/i(161789),	-- Dread Combatant's Greatsword \\ PH Combatant's Greatsword
-s(97865)/i(161790),	-- Dread Combatant's Warglaive \\ PH Combatant's Warglaive
-s(97866)/i(161791),	-- Dread Combatant's Warglaive \\ PH Combatant's Warglaive
-s(97867)/i(161792),	-- Dread Combatant's Shield Wall \\ PH Combatant's Shield Wall
-s(97868)/i(161793),	-- Dread Combatant's Reprieve \\ PH Combatant's Reprieve
-s(97870)/i(161795),	-- Dread Combatant's Shield Wall \\ PH Combatant's Shield Wall
-s(97871)/i(161796),	-- Dread Combatant's Barrier \\ PH Combatant's Barrier
-s(97872)/i(161797),	-- Dread Combatant's Staff \\ PH Combatant's Staff
-s(97873)/i(161798),	-- Dread Combatant's Pike \\ PH Combatant's Pike
-s(97874)/i(161799),	-- Dread Combatant's Rifle \\ PH Combatant's Rifle
-s(97875)/i(161800),	-- Dread Combatant's Longbow \\ PH Combatant's Longbow
-s(97876)/i(161801),	-- Dread Combatant's Bonegrinder \\ PH Combatant's Bonegrinder
-s(97877)/i(161802),	-- Dread Combatant's Wand \\ PH Combatant's Wand
-s(97878)/i(161803),	-- Dread Combatant's Slicer \\ PH Combatant's Slicer
-s(97879)/i(161804),	-- Dread Combatant's Gavel \\ PH Combatant's Gavel
-s(97880)/i(161805),	-- Dread Combatant's Spellblade \\ PH Combatant's Spellblade
-s(97884)/i(161809),	-- Dread Combatant's Greatcloak \\ PH Combatant's Greatcloak
-s(97886)/i(161815),	-- Dread Combatant's Silk Robe \\ PH Combatant's Silk Robe
-s(97887)/i(161816),	-- Dread Combatant's Plate Chestpiece \\ PH Combatant's Plate Chestpiece
-s(97888)/i(161817),	-- Dread Combatant's Chain Armor \\ PH Combatant's Mail Armor
-s(97889)/i(161818),	-- Dread Combatant's Leather Tunic \\ PH Combatant's Leather Tunic
-s(97890)/i(161819),	-- Dread Combatant's Plate Warboots \\ PH Combatant's Plate Warboots
-s(97891)/i(161820),	-- Dread Combatant's Silk Treads \\ PH Combatant's Silk Treads
-s(97892)/i(161821),	-- Dread Combatant's Chain Sabatons \\ PH Combatant's Mail Sabatons
-s(97893)/i(161822),	-- Dread Combatant's Leather Boots \\ PH Combatant's Leather Boots
-s(97894)/i(161823),	-- Dread Combatant's Leather Gloves \\ PH Combatant's Leather Gloves
-s(97895)/i(161824),	-- Dread Combatant's Plate Gauntlets \\ PH Combatant's Plate Gauntlets
-s(97896)/i(161825),	-- Dread Combatant's Silk Gloves \\ PH Combatant's Silk Gloves
-s(97897)/i(161826),	-- Dread Combatant's Chain Gauntlets \\ PH Combatant's Mail Gauntlets
-s(97898)/i(161827),	-- Dread Combatant's Silk Hood \\ PH Combatant's Silk Hood
-s(97899)/i(161828),	-- Dread Combatant's Chain Helm \\ PH Combatant's Mail Helm
-s(97900)/i(161829),	-- Dread Combatant's Leather Helm \\ PH Combatant's Leather Helm
-s(97901)/i(161830),	-- Dread Combatant's Plate Legguards \\ PH Combatant's Plate Legguards
-s(97902)/i(161831),	-- Dread Combatant's Silk Leggings \\ PH Combatant's Silk Leggings
-s(97903)/i(161832),	-- Dread Combatant's Chain Leggings \\ PH Combatant's Mail Leggings
-s(97904)/i(161833),	-- Dread Combatant's Leather Legguards \\ PH Combatant's Leather Legguards
-s(97905)/i(161834),	-- Dread Combatant's Leather Spaulders \\ PH Combatant's Leather Spaulders
-s(97906)/i(161835),	-- Dread Combatant's Plate Pauldrons \\ PH Combatant's Plate Pauldrons
-s(97907)/i(161836),	-- Dread Combatant's Silk Mantle \\ PH Combatant's Silk Mantle
-s(97908)/i(161837),	-- Dread Combatant's Chain Spaulders \\ PH Combatant's Mail Spaulders
-s(97909)/i(161838),	-- Dread Combatant's Plate Girdle \\ PH Combatant's Plate Girdle
-s(97910)/i(161839),	-- Dread Combatant's Silk Cord \\ PH Combatant's Silk Cord
-s(97911)/i(161840),	-- Dread Combatant's Chain Waistguard \\ PH Combatant's Mail Waistguard
-s(97912)/i(161841),	-- Dread Combatant's Leather Belt \\ PH Combatant's Leather Belt
-s(97913)/i(161842),	-- Dread Combatant's Silk Cuffs \\ PH Combatant's Silk Cuffs
-s(97914)/i(161843),	-- Dread Combatant's Plate Armguards \\ PH Combatant's Plate Armguards
-s(97915)/i(161844),	-- Dread Combatant's Chain Armbands \\ PH Combatant's Mail Armbands
-s(97916)/i(161845),	-- Dread Combatant's Leather Bindings \\ PH Combatant's Leather Bindings
-s(97918)/i(161847),	-- Dread Combatant's Silk Robe \\ PH Combatant's Silk Robe
-s(97919)/i(161848),	-- Dread Combatant's Plate Chestpiece \\ PH Combatant's Plate Chestpiece
-s(97920)/i(161849),	-- Dread Combatant's Chain Armor \\ PH Combatant's Mail Armor
-s(97921)/i(161850),	-- Dread Combatant's Leather Tunic \\ PH Combatant's Leather Tunic
-s(97922)/i(161851),	-- Dread Combatant's Plate Warboots \\ PH Combatant's Plate Warboots
-s(97923)/i(161852),	-- Dread Combatant's Silk Treads \\ PH Combatant's Silk Treads
-s(97924)/i(161853),	-- Dread Combatant's Chain Sabatons \\ PH Combatant's Mail Sabatons
-s(97925)/i(161854),	-- Dread Combatant's Leather Boots \\ PH Combatant's Leather Boots
-s(97926)/i(161855),	-- Dread Combatant's Leather Gloves \\ PH Combatant's Leather Gloves
-s(97927)/i(161856),	-- Dread Combatant's Plate Gauntlets \\ PH Combatant's Plate Gauntlets
-s(97928)/i(161857),	-- Dread Combatant's Silk Gloves \\ PH Combatant's Silk Gloves
-s(97929)/i(161858),	-- Dread Combatant's Chain Gauntlets \\ PH Combatant's Mail Gauntlets
-s(97930)/i(161859),	-- Dread Combatant's Silk Hood \\ PH Combatant's Silk Hood
-s(97931)/i(161860),	-- Dread Combatant's Chain Helm \\ PH Combatant's Mail Helm
-s(97932)/i(161861),	-- Dread Combatant's Leather Helm \\ PH Combatant's Leather Helm
-s(97933)/i(161862),	-- Dread Combatant's Plate Legguards \\ PH Combatant's Plate Legguards
-s(97934)/i(161863),	-- Dread Combatant's Silk Leggings \\ PH Combatant's Silk Leggings
-s(97935)/i(161864),	-- Dread Combatant's Chain Leggings \\ PH Combatant's Mail Leggings
-s(97936)/i(161865),	-- Dread Combatant's Leather Legguards \\ PH Combatant's Leather Legguards
-s(97937)/i(161866),	-- Dread Combatant's Leather Spaulders \\ PH Combatant's Leather Spaulders
-s(97938)/i(161867),	-- Dread Combatant's Plate Pauldrons \\ PH Combatant's Plate Pauldrons
-s(97939)/i(161868),	-- Dread Combatant's Silk Mantle \\ PH Combatant's Silk Mantle
-s(97940)/i(161869),	-- Dread Combatant's Chain Spaulders \\ PH Combatant's Mail Spaulders
-s(97941)/i(161870),	-- Dread Combatant's Plate Girdle \\ PH Combatant's Plate Girdle
-s(97942)/i(161871),	-- Dread Combatant's Chain Waistguard \\ PH Combatant's Mail Waistguard
-s(97943)/i(161872),	-- Dread Combatant's Leather Belt \\ PH Combatant's Leather Belt
-s(97944)/i(161873),	-- Dread Combatant's Silk Cuffs \\ PH Combatant's Silk Cuffs
-s(97945)/i(161874),	-- Dread Combatant's Plate Armguards \\ PH Combatant's Plate Armguards
-s(97946)/i(161875),	-- Dread Combatant's Chain Armbands \\ PH Combatant's Mail Armbands
-s(97947)/i(161876),	-- Dread Combatant's Leather Bindings \\ PH Combatant's Leather Bindings
-s(97948)/i(161877),	-- Dread Combatant's Silk Cord \\ PH Combatant's Silk Cord
-s(97988)/i(161904),	-- Dread Combatant's Drape \\ PH Combatant's Drape
-s(97989)/i(161905),	-- Dread Combatant's Cape \\ PH Combatant's Cape
 s(98041)/i(161946),	-- Hardened Tempest Boots
 s(98042)/i(161947),	-- Hardened Tempest Leggings
 s(98043)/i(161948),	-- Honorable Combatant's Leather Treads
@@ -34155,12 +33842,7 @@ s(98092)/i(161994),	-- Honorable Combatant's Satin Mittens
 s(98094)/i(161995),	-- Honorable Combatant's Satin Pants
 s(98096)/i(161996),	-- Honorable Combatant's Satin Belt
 s(98098)/i(161997),	-- Honorable Combatant's Satin Bracers
-s(98101)/i(162003),	-- Dread Combatant's Pummeler \\ PH Combatant's Pummeler
 s(98107)/i(162010),	-- Valley Truffle
-s(98108)/i(162014),	-- PH Gladiator's Reprieve
-s(98109)/i(162015),	-- PH Gladiator's Reprieve
-s(98112)/i(162018),	-- Dread Combatant's Shanker \\ PH Combatant's Shanker
-s(98113)/i(162019),	-- Dread Combatant's Shanker \\ PH Combatant's Shanker
 s(98116)/i(162033),	-- Dread Gladiator's Plate Warhelm
 s(98117)/i(162034),	-- Dread Gladiator's Silk Vestments \\ PH Gladiator's Silk Vestments
 s(98118)/i(162035),	-- Dread Gladiator's Breastplate \\ PH Gladiator's Breastplate
@@ -34259,9 +33941,6 @@ s(98425)/i(159394),	-- Cincture of Coruscating Energy \\ 8.0 - PH Dungeon - Mail
 s(98429)/i(160213),	-- Sepulchral Construct's Gloves \\ Reluctant Dead Handlers
 s(98431)/i(159291),	-- Shroud of the Ophidian \\ 8.0 - PH Dungeon - MC Cloak
 s(98432)/i(159291),	-- Shroud of the Ophidian \\ 8.0 - PH Dungeon - MC Cloak
-s(98433)/i(154702),	-- RESUE ME (DNT) \\ Embroidered Deep Sea Cloak of Resilience \\ Cloth Cloak - Camoflage (NEEDS NAME)
-s(98435)/i(154699),	-- RESUE ME (DNT) \\ Embroidered Deep Sea Cloak of the Feather \\ Cloth Cloak - Fall Damage Reduction (NEEDS NAME)
-s(98436)/i(161992),	-- RESUE ME (DNT) \\ Embroidered Deep Sea Cloak of Resilience
 s(98443)/i(158333),	-- Fleet Captain's Buffcoat \\ 8.0 - PH Dungeon - Leather CHEST
 s(98444)/i(158333),	-- Fleet Captain's Buffcoat \\ 8.0 - PH Dungeon - Leather CHEST
 s(98445)/i(158354),	-- Crow's Nest Safety Cord \\ 8.0 - PH Dungeon - Leather WAIST
@@ -34294,24 +33973,8 @@ s(98567)/i(162597),	-- Bracers of the Tidesages
 s(98568)/i(162597),	-- Bracers of the Tidesages
 s(98569)/i(159968),	-- Gloves of the Iron Reavers
 8.0.1.26624
-s(98592)/i(162651),	-- Rusted Chains
-s(98595)/i(162654),	-- REUSE ME (DNT)
-s(98597)/i(162659),	-- Worn Mace
-s(98598)/i(162660),	-- Burnished Shield
-s(98599)/i(162661),	-- Battered Skull
-s(98600)/i(162662),	-- Etched Mask
-s(98601)/i(162663),	-- Broken Spearhead
 s(98602)/i(162664),	-- Dented Cuirass
 s(98604)/i(162666),	-- Ripped Satchel
-s(98605)/i(162671),	-- Broken Crossbow
-s(98606)/i(162674),	-- Cracked Helmet
-s(98607)/i(162676),	-- Ragged Furs
-s(98608)/i(162677),	-- Dull Throwing Knives
-s(98609)/i(162678),	-- Crimson Flail
-s(98610)/i(162679),	-- Misfired Pistol
-s(98611)/i(162680),	-- Ruined Collar
-s(98612)/i(162681),	-- Bent Sickle
-s(98613)/i(162682),	-- Tarnished Longsword
 8.0.1.26707
 s(99304)/i(163279),	-- Honorbound Centurion's Warhelm
 s(99305)/i(163279),	-- Honorbound Centurion's Warhelm
@@ -35533,7 +35196,6 @@ s(105369)/i(170113),	-- Deeptide Scroll
 8.2.5.32494
 s(106461)/i(171949),	-- Shadow Arrow
 8.3.0.32044
-s(105099)/i(169387),	-- Myth of Ardoros
 s(106759)/i(172532),	-- Corrupted Gladiator's Leather Boots
 s(106761)/i(172533),	-- Corrupted Gladiator's Leather Gloves
 s(106765)/i(172535),	-- Corrupted Gladiator's Leather Legguards
@@ -35752,17 +35414,6 @@ s(108522)/i(174261),	-- Plate Gloves - PH \\ Plate Gloves
 s(108526)/i(174262),	-- Plate Bracer - PH \\ Plate Bracer
 s(108530)/i(174263),	-- Plate Belt - PH \\ Plate Belt
 s(108538)/i(174265),	-- Plate Boots - PH \\ Plate Boots
-8.3.0.32489
-s(105688)/i(170741),	-- Felsoul Cloak of Destruction
-s(105689)/i(170742),	-- Felsoul Staff
-s(105840)/i(170903),	-- Felsoul Sandals
-s(105841)/i(170904),	-- Felsoul Handwraps
-s(105842)/i(170905),	-- Felsoul Cowl
-s(105843)/i(170906),	-- Felsoul Leggings
-s(105844)/i(170907),	-- Felsoul Robe
-s(105845)/i(170908),	-- Felsoul Shoulderpads
-s(105846)/i(170909),	-- Felsoul Cord
-s(105847)/i(170910),	-- Felsoul Wristwraps
 9.0.1.33978
 s(105925)/i(171191),	-- Owen Test
 s(105926)/i(171192),	-- Owen Test
@@ -37297,51 +36948,39 @@ s(165490)/i(188102),	-- [PH] Copy Vault Guardian's Warglaive
 s(165491)/i(188103),	-- [PH] Copy Vault Attendant's Cape
 s(165492)/i(188104),	-- [PH] Copy Vault Patroller's Slicer
 s(165534)/i(188179),	-- Vest of the First Rogue
-s(165535)/i(188179),	-- Vest of the First Rogue
 s(165536)/i(188179),	-- Vest of the First Rogue
 s(165537)/i(188179),	-- Vest of the First Rogue
 s(165538)/i(188180),	-- Cloak of the First Rogue
-s(165539)/i(188180),	-- Cloak of the First Rogue
 s(165540)/i(188180),	-- Cloak of the First Rogue
 s(165541)/i(188180),	-- Cloak of the First Rogue
 s(165542)/i(188181),	-- Gloves of the First Rogue
-s(165543)/i(188181),	-- Gloves of the First Rogue
 s(165544)/i(188181),	-- Gloves of the First Rogue
 s(165545)/i(188181),	-- Gloves of the First Rogue
 s(165546)/i(188182),	-- Cavalier Hat of the First Rogue
-s(165547)/i(188182),	-- Cavalier Hat of the First Rogue
 s(165548)/i(188182),	-- Cavalier Hat of the First Rogue
 s(165549)/i(188182),	-- Cavalier Hat of the First Rogue
 s(165550)/i(188183),	-- Pants of the First Rogue
-s(165551)/i(188183),	-- Pants of the First Rogue
 s(165552)/i(188183),	-- Pants of the First Rogue
 s(165553)/i(188183),	-- Pants of the First Rogue
 s(165554)/i(188184),	-- Shoulderpads of the First Rogue
-s(165555)/i(188184),	-- Shoulderpads of the First Rogue
 s(165556)/i(188184),	-- Shoulderpads of the First Rogue
 s(165557)/i(188184),	-- Shoulderpads of the First Rogue
 s(165558)/i(188185),	-- Indomitable Vest
-s(165559)/i(188185),	-- Indomitable Vest
 s(165560)/i(188185),	-- Indomitable Vest
 s(165561)/i(188185),	-- Indomitable Vest
 s(165562)/i(188186),	-- Drape of Dominion
-s(165563)/i(188186),	-- Drape of Dominion
 s(165564)/i(188186),	-- Drape of Dominion
 s(165565)/i(188186),	-- Drape of Dominion
 s(165566)/i(188187),	-- Quickfinger Pocketlifters
-s(165567)/i(188187),	-- Quickfinger Pocketlifters
 s(165568)/i(188187),	-- Quickfinger Pocketlifters
 s(165569)/i(188187),	-- Quickfinger Pocketlifters
 s(165570)/i(188188),	-- Worldbinder Tricorne
-s(165571)/i(188188),	-- Worldbinder Tricorne
 s(165572)/i(188188),	-- Worldbinder Tricorne
 s(165573)/i(188188),	-- Worldbinder Tricorne
 s(165574)/i(188189),	-- Shadowwrap Leggings
-s(165575)/i(188189),	-- Shadowwrap Leggings
 s(165576)/i(188189),	-- Shadowwrap Leggings
 s(165577)/i(188189),	-- Shadowwrap Leggings
 s(165578)/i(188190),	-- Shoulderpads of the Primordial
-s(165579)/i(188190),	-- Shoulderpads of the Primordial
 s(165580)/i(188190),	-- Shoulderpads of the Primordial
 s(165581)/i(188190),	-- Shoulderpads of the Primordial
 9.2.0.41360
@@ -37575,6 +37214,14 @@ s(169561)/i(190964),	-- Ornate Chest Key
 s(169562)/i(190965),	-- Bundle of Duck Feathers
 s(169602)/i(191078),	-- Gold Rolling Pin
 s(169691)/i(191647),	-- Tuskarr Fishing Pole
+s(169804)/i(191813),	-- Sandshaped Dracthyr Battlegear Hauberk
+s(169805)/i(191814),	-- Sandshaped Dracthyr Battlegear Grips
+s(169806)/i(191815),	-- Sandshaped Dracthyr Battlegear Helm
+s(169807)/i(191816),	-- Sandshaped Dracthyr Battlegear Leggings
+s(169808)/i(191817),	-- Sandshaped Dracthyr Battlegear Monnion
+s(169809)/i(191818),	-- Sandshaped Dracthyr Battlegear Belt
+s(169810)/i(191819),	-- Sandshaped Dracthyr Battlegear Bracers
+s(169811)/i(191820),	-- Sandshaped Dracthyr Battlegear Cover
 s(180390)/i(191229),	-- Khaz'gorite Leatherworker's Toolset \\ Titanicium Leatherworker's Toolset
 s(180919)/i(194099),	-- Shikaar Hunting Horn \\ Cunning Hunter's Horn
 s(180922)/i(194108),	-- Mighty Hunter's Horn
@@ -37670,6 +37317,7 @@ s(182324)/i(199898),	-- Iskaara Fishing Pole
 s(182327)/i(199932),	-- 10.0 Enchanting - Weapon - Wand 1
 s(182328)/i(199933),	-- 10.0 Enchanting - Weapon - Wand 2
 10.0.0.45570
+s(183081)/i(200968),	-- Sandshaped Winglord's Drape
 s(183122)/i(201046),	-- Dreamwarding Dripbrew \\ [NYI] PH Food - Late Night Lab
 10.0.0.46479
 s(184043)/i(201972),	-- Crimson Gladiator's Splitter
@@ -37815,9 +37463,6 @@ s(222786)/i(212446),	-- Royal Emblem of Nerub-ar \\ 11.0 Raid Template - Generic
 11.0.2.55665
 s(225006)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
 s(225007)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
-11.0.5.56487
-s(227827)/i(230060),	-- Prowler's Camo Cowl
-s(227847)/i(230080),	-- Prowler's Camo Mask
 11.1.0.58221
 s(248966)/i(227541),	-- Miner's Debt Marker
 11.1.0.58999
@@ -37856,8 +37501,6 @@ s(288636)/i(240019),	--
 s(288774)/i(240184),	--
 11.1.5.59651
 s(290177)/i(242318),	-- Wooden Orgrimmar Shield
-11.1.5.60568
-s(287882)/i(239003),	-- Feathered Mantle of the Guardian
 11.1.5.60822
 s(227688)/i(229832),	--
 s(227689)/i(229833),	--
@@ -38223,7 +37866,7 @@ s(291721)/i(242954),	-- Blood Vindicator's Breastplate
 s(291722)/i(242955),	-- Blood Vindicator's Sabatons
 s(291723)/i(242956),	-- Blood Vindicator's Gauntlets
 s(291724)/i(242957),	-- Blood Vindicator's Crown
-s(291725)/i(242958),	--
+s(291725)/i(242958),	-- Blood Vindicator's Legplates
 s(291726)/i(242959),	-- Blood Vindicator's Spaulders
 s(291727)/i(242960),	-- Blood Vindicator's Belt
 s(291728)/i(242961),	-- Blood Vindicator's Bindings
@@ -38443,7 +38086,7 @@ s(292193)/i(244423),	-- Rethfuras, Scorched Scythe of Cinders
 s(292194)/i(244426),	-- Dinomancer's Calming Rod
 s(292195)/i(244427),	-- Blood Witch's Hex Cane
 s(292196)/i(244428),	-- Fang of Sethraliss
-s(292197)/i(244430),	-- Blade of the Prophet
+s(292197)/i(244430),	-- Fang of the Dark Prophets \\ Blade of the Prophet
 s(292198)/i(244431),	-- Tideguard's Blessed Gavel
 s(292199)/i(244432),	-- 7th Legion Commander's Crest
 s(292200)/i(244433),	-- Waycrest Training Buckler
@@ -38458,7 +38101,7 @@ s(292209)/i(244443),	-- Emberwind Blouse
 s(292210)/i(244444),	-- Staghelm Robe
 s(292211)/i(244445),	-- Razdunk's WR0-NC4 5300
 s(292212)/i(244446),	-- Blouse of Searing Radiance
-s(292213)/i(244447),	--
+s(292213)/i(244447),	-- Blood Vindicator's Greaves
 s(292214)/i(244448),	-- Hellfire Blouse
 s(292217)/i(244471),	-- Time-Lost Tempest Caller
 s(292271)/i(244540),	-- Charred Flamewake Sprout
@@ -38489,7 +38132,7 @@ s(292385)/i(244725),	-- Frostwall Defender's Axe
 s(292386)/i(244726),	-- Time-Lost Sight of the Shadowmoon
 s(292387)/i(244727),	-- Warsong Raider's Longbow
 s(292388)/i(244728),	-- Lunarfall Rifle
-s(292389)/i(244729),	-- Wor'gol Howling Shield
+s(292389)/i(244729),	-- Mok'gol Howling Shield \\ Wor'gol Howling Shield
 s(292390)/i(244730),	-- Razorwall of the Foundry
 s(292391)/i(244731),	-- Rangari Climbing Hooks
 s(292392)/i(244732),	-- Lunarfall Scout's Shortsword
@@ -38500,7 +38143,7 @@ s(292436)/i(244784),	-- Beastmaster's Lost Hatchet
 s(292437)/i(244785),	-- Time-Lost Wolfbite, Legacy of Garad \\ Time-Lost Wolfbite
 s(292438)/i(244786),	-- Grom'gar Hunting Spear
 s(292439)/i(244787),	-- Elodor Attuning Beacon
-s(292452)/i(244823),	-- Blackrook Dragonblade
+s(292452)/i(244823),	-- Silver Dragonblade of the Resistance \\ Blackrook Dragonblade
 s(292453)/i(244824),	-- Time-Lost Dreadbow of the Banshee
 s(292454)/i(244827),	-- Valarjar Sparring Buckler
 s(292455)/i(244828),	-- Nightforged Spellblade
@@ -38508,7 +38151,7 @@ s(292456)/i(244830),	-- Krokuun Tunneler's Axe
 s(292457)/i(244833),	-- Stonedark Chieftain's Bartered Tool
 s(292458)/i(244834),	-- Hippogryph Lancer's Magespear
 s(292459)/i(244836),	-- Cane of the Runic Wanderer
-s(292460)/i(244837),	-- Rookforged Dragonblade
+s(292460)/i(244837),	-- Mage-Forged Dragonblade \\ Rookforged Dragonblade
 s(292888)/i(245745),	-- Classic Plum Tabard
 s(292917)/i(245964),	-- Durable Information Securing Container
 s(292918)/i(245965),	-- Durable Information Securing Container
@@ -38518,3 +38161,6 @@ s(292934)/i(245994),	--
 s(292967)/i(246015),	-- Classic Midnight Eye Patch
 s(292968)/i(246016),	-- Classic Snowy Eye Patch
 s(293018)/i(246242),	-- Blood-Wrapped Treasure Bag
+11.1.7.60799
+s(293074)/i(246570),	-- Rethfuras, Scorched Stave of Cinders
+s(293075)/i(246571),	-- Glazfuris, Spire of the Deep Chill

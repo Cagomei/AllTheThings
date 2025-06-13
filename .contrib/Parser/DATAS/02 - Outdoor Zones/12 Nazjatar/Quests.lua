@@ -2443,7 +2443,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 45.7, 83.7, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(168167),	-- Brass Key (QI!)
+				o(325882, {	-- Brass Key
+					["coord"] = { 49.5, 87.2, NAZJATAR },
+					["g"] = { i(168167) },	-- Brass Key (QI!)
+				}),
 			},
 		}),
 		q(56315, {	-- They Made Their Choice (A)

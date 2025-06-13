@@ -2246,16 +2246,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				-- #endif
-				-- #if ANYCLASSIC
-				i(3173, {	-- Bear Meat
-					["coord"] = { 29.2, 53.0, LOCH_MODAN },
-					["crs"] = {
-						1186,	-- Elder Black Bear
-						1189,	-- Black Bear Patriarch
-						1188,	-- Grizzled Black Bear
-						1225,	-- Ol' Sooty
-					},
-				}),
+				-- #if BEFORE 4.0.3
+				i(3173),	-- Bear Meat
 				i(3172, {	-- Boar Intestines
 					["coord"] = { 37.0, 34.4, LOCH_MODAN },
 					["crs"] = {
@@ -2264,6 +2256,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1192,	-- Elder Mountain Boar
 					},
 				}),
+				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208854, {	-- Chewed Spell Notes
 					["coords"] = {
@@ -2276,14 +2269,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1166,	-- Stonesplinter Seer
 				})),
 				-- #endif
-				i(769, {	-- Chunk of Boar Meat
-					["coord"] = { 37.0, 34.4, LOCH_MODAN },
-					["crs"] = {
-						1190,	-- Mountain Boar
-						1191,	-- Mangy Mountain Boar
-						1192,	-- Elder Mountain Boar
-					},
-				}),
+				-- #if BEFORE 4.0.3
+				i(769),	-- Chunk of Boar Meat
 				-- #endif
 				i(2823, {	-- Mo'grosh Can Opener
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },

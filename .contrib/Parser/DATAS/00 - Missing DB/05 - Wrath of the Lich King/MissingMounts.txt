@@ -5,6 +5,23 @@ mount(463045),	-- Lava Drake
 3.4.3.58528
 mount(473478),	-- Sha-Touched Riding Tiger
 mount(473487),	-- Sha-Touched Cloud Serpent
+3.4.4.60842
+mount(1239204),	-- Stormwind Skyseeker
+mount(1239240),	-- Orgrimmar Sentinel
+mount(1239372),	-- Celestial Steed
+3.4.4.61075
+mount(459486),	-- Golden Ashes of Al'ar
+mount(459538),	-- Harmonious Greetings Bear
 
 
-Nothing is Missing in MountDB.lua! Good Work!
+
+
+Missing in MountDB.lua
+
+3.4.4.60842
+mount(1239204),	-- Stormwind Skyseeker
+mount(1239240),	-- Orgrimmar Sentinel
+mount(1239372),	-- Celestial Steed
+3.4.4.61075
+mount(459486),	-- Golden Ashes of Al'ar
+mount(459538),	-- Harmonious Greetings Bear

@@ -4635,21 +4635,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				-- #if ANYCLASSIC
-				i(769, {	-- Chunk of Boar Meat
-					["coord"] = { 46.6, 59.8, DUN_MOROGH },
+				-- #if BEFORE 4.0.3
+				i(769),	-- Chunk of Boar Meat
+				-- #endif
+				i(2886, {	-- Crag Boar Rib
+					["coords"] = {
+						{ 46.6, 59.8, DUN_MOROGH },
+					},
 					["crs"] = {
+						1125,	-- Crag Boar
 						1689,	-- Scarred Crag Boar
+						-- #if BEFORE 4.0.3
 						1127,	-- Elder Crag Boar
 						1126,	-- Large Crag Boar
-						1125,	-- Crag Boar
-						-- #if SEASON_OF_DISCOVERY
-						208638,	-- Fyodi
 						-- #endif
 					},
+					["description"] = "Only drops from Crag Boars in Dun Morogh."
 				}),
-				-- #endif
-				i(2886),	-- Crag Boar Rib
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208192, {	-- Dun Morogh Pig Meat
 					["timeline"] = { REMOVED_2_0_1 },

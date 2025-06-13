@@ -4005,7 +4005,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if ANYCLASSIC
 			n(ZONE_DROPS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(207631, {	-- Adder Pheromone
@@ -4031,14 +4030,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 59.6, 58.2, DUROTAR },
 					["timeline"] = { DELETED_4_0_3 },
 				}),
-				i(769, {	-- Chunk of Boar Meat
-					["coord"] = { 53.6, 59.6, DUROTAR },
-					["crs"] = {
-						3099,	-- Dire Mottled Boar
-						3100,	-- Elder Mottled Boar
-						3225,	-- Corrupted Mottled Boar
-					},
-				}),
+				-- #if BEFORE 4.0.3
+				i(769),	-- Chunk of Boar Meat
+				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(207590, {	-- Durotar Pig Meat
 					["timeline"] = { REMOVED_2_0_1 },
@@ -4150,6 +4144,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3113,	-- Razormane Dustrunner
 					},
 				})),
+				-- #endif
+				i(5466, {	-- Scorpid Stinger
+					["maps"] = { DUROTAR },
+					["crs"] = {
+						3126,	-- Armoured Scorpid
+						3125,	-- Clattering Scorpid
+						-- #if BEFORE 4.0.3
+						3226,	-- Corrupted Scorpid
+						-- #endif
+						5823,	-- Death Flayer
+						3127,	-- Venomtail Scorpid
+					},
+					["description"] = "Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials."
+				}),
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(203752, {	-- Spell Notes: MILEGIN VALF
 					["coords"] = {
 						{ 53.0, 27.6, DUROTAR },
@@ -4173,7 +4182,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 			}),
-			-- #endif
 		},
 	}),
 }));

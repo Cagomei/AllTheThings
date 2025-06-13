@@ -4,6 +4,7 @@ pet(347),	-- Soul of the Aspects
 pet(382),	-- Sun Darter Hatchling \\ Raccoon Kit
 pet(666),	-- Micronax \\ Elayna
 5.5.0.60481
+pet(1243),	-- Living Fluid
 pet(1255),	-- Zeradar \\ Murkimus Tyrannicus
 pet(1259),	-- Widowling
 pet(1320),	-- Lil' Bling

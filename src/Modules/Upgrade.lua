@@ -464,7 +464,7 @@ local function GetUpgrade(t, up)
 		return;
 	end
 
-	itemSource.containsType = "UPGRADE"
+	itemSource.filledType = "UPGRADE"
 
 	-- cache the upgrade within the item itself
 	t._up = itemSource;
@@ -646,6 +646,6 @@ app.AddEventHandler("OnLoad", function()
 	end,
 	{
 		SettingsIcon = app.asset("Interface_Upgrade"),
-		SettingsTooltip = "Fills any Upgrade |T"..app.asset("Interface_Upgrade")..":0|t which is available to the given Item\n\nFor an ATT Window this is typically shown if available for the default state of an Item as Sourced, whereas in Tooltips it is based on the raw Item data when shown."
+		SettingsTooltip = "Fills any Upgrade |T"..app.asset("Interface_Upgrade")..":0|t which is available to the given Item\n\nFor an ATT List this is typically shown if available for the default state of an Item as Sourced, whereas in Tooltips it is based on the raw Item data when shown."
 	})
 end)

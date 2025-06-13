@@ -254,6 +254,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["description"] = "Elly is walking around in the Tavern.",
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							i(2594),	-- Flagon of Dwarven Honeymead/Mead
+							i(2593),	-- Flask of Stormwind Tawny
 							i(1179),	-- Ice Cold Milk
 							i(2596),	-- Skin of Dwarven Stout
 						},
@@ -6545,15 +6547,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if ANYCLASSIC
-				-- Crieve NOTE: I haven't confirmed this on Live, so not gonna pop it in until I can check it.
 				n(12805, {	-- Officer Areyn <Accessories Quartermaster>
-					["coord"] = { 73.8, 53.4, STORMWIND_CITY },
+					["coord"] = {
+						-- #if AFTER CATA
+							76.8, 65.8, STORMWIND_CITY,
+						-- #else
+							73.8, 53.4, STORMWIND_CITY
+						-- #endif
+					},
 					["timeline"] = { REMOVED_3_0_2, ADDED_4_0_1, REMOVED_7_0_3 },
 					["groups"] = {
-						i(18664),	-- A Treatise on Military Ranks
+						i(18664, { ["timeline"] = { REMOVED_2_0_1 } }),	-- A Treatise on Military Ranks
 						i(15196, {	-- Private's Tabard
 							["races"] = ALLIANCE_ONLY,
 						}),
+						-- #if AFTER CATA
+							i(15198),	-- Knight's Colors
+						-- #endif
 						i(18854, {	-- Insignia of the Alliance
 							["classes"] = { WARRIOR },
 						}),
@@ -6578,42 +6588,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18856, {	-- Insignia of the Alliance
 							["classes"] = { HUNTER },
 						}),
-						i(16342),	-- Sergeant's Cape (58)
-						i(18440),	-- Sergeant's Cape (45)
-						i(18441),	-- Sergeant's Cape (30)
-						i(18443),	-- Master Sergeant's Insignia (58)
-						i(18444),	-- Master Sergeant's Insignia (45)
-						i(18442),	-- Master Sergeant's Insignia (30)
-						i(18449, {	-- Sergeant Major's Chain Armguards (45)
-							["classes"] = { HUNTER },
-						}),
-						i(18455, {	-- Sergeant Major's Dragonhide Armsplints (45)
-							["classes"] = { DRUID },
-						}),
-						i(18453, {	-- Sergeant Major's Leather Armsplints (45)
-							["classes"] = { ROGUE },
-						}),
-						i(18447, {	-- Sergeant Major's Plate Wristguards (45)
-							["classes"] = { PALADIN, WARRIOR },
-						}),
-						i(18457, {	-- Sergeant Major's Silk Cuffs (45)
-							["classes"] = { MAGE, PRIEST, WARLOCK },
-						}),
-						i(18448, {	-- Sergeant Major's Chain Armguards (58)
-							["classes"] = { HUNTER },
-						}),
-						i(18454, {	-- Sergeant Major's Dragonhide Armsplints (58)
-							["classes"] = { DRUID },
-						}),
-						i(18452, {	-- Sergeant Major's Leather Armsplints (58)
-							["classes"] = { ROGUE },
-						}),
-						i(18445, {	-- Sergeant Major's Plate Wristguards (58)
-							["classes"] = { PALADIN, WARRIOR },
-						}),
-						i(18456, {	-- Sergeant Major's Silk Cuffs (58)
-							["classes"] = { MAGE, PRIEST, WARLOCK },
-						}),
+						-- #if BEFORE CATA
+							i(16342),	-- Sergeant's Cape (58)
+							i(18440),	-- Sergeant's Cape (45)
+							i(18441),	-- Sergeant's Cape (30)
+							i(18443),	-- Master Sergeant's Insignia (58)
+							i(18444),	-- Master Sergeant's Insignia (45)
+							i(18442),	-- Master Sergeant's Insignia (30)
+							i(18449, {	-- Sergeant Major's Chain Armguards (45)
+								["classes"] = { HUNTER },
+							}),
+							i(18455, {	-- Sergeant Major's Dragonhide Armsplints (45)
+								["classes"] = { DRUID },
+							}),
+							i(18453, {	-- Sergeant Major's Leather Armsplints (45)
+								["classes"] = { ROGUE },
+							}),
+							i(18447, {	-- Sergeant Major's Plate Wristguards (45)
+								["classes"] = { PALADIN, WARRIOR },
+							}),
+							i(18457, {	-- Sergeant Major's Silk Cuffs (45)
+								["classes"] = { MAGE, PRIEST, WARLOCK },
+							}),
+							i(18448, {	-- Sergeant Major's Chain Armguards (58)
+								["classes"] = { HUNTER },
+							}),
+							i(18454, {	-- Sergeant Major's Dragonhide Armsplints (58)
+								["classes"] = { DRUID },
+							}),
+							i(18452, {	-- Sergeant Major's Leather Armsplints (58)
+								["classes"] = { ROGUE },
+							}),
+							i(18445, {	-- Sergeant Major's Plate Wristguards (58)
+								["classes"] = { PALADIN, WARRIOR },
+							}),
+							i(18456, {	-- Sergeant Major's Silk Cuffs (58)
+								["classes"] = { MAGE, PRIEST, WARLOCK },
+							}),
+						-- #endif
+						-- #if AFTER CATA
+							i(18606),	-- Alliance Battle Standard
+						-- #endif
 					},
 				}),
 				-- #endif

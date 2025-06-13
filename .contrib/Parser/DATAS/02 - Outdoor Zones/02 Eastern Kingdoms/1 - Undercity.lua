@@ -86,7 +86,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			-- #if AFTER 4.0.1.12984
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(4610, {	-- Algernon <Alchemy Supplies>
@@ -289,7 +288,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 			}),
-			-- #endif
 			n(QUESTS, {
 				q(4294, {	-- ... and a Batch of Ooze
 					["qg"] = 10136,	-- Chemist Fuely

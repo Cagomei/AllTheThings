@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["groups"] = {
 								i(226263, {	-- Theater Troupe's Trove (S1)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-									["timeline"] = { REMOVED_11_1_0_SEASONSTART },
+									["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 									["g"] = {
 										i(228320),	-- Design: Binding of Binding (RECIPE!)
 										i(228708),	-- Formula: Gleeful Glamour - Earthen (RECIPE!)

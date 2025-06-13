@@ -2281,12 +2281,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if BEFORE CATA
-				i(723, {	-- Goretusk Liver
-					["crs"] = {
-						345,	-- Bellygrub
-						547,	-- Great Goretusk
-					},
-				}),
+				i(723),	-- Goretusk Liver
 				-- #endif
 				i(1213, {	-- Gnoll Kindred Bracers
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2613,6 +2608,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 78.4, 38.2, REDRIDGE_MOUNTAINS },
 						-- #endif
 					},
+				}),
+				i(1080, {	-- Tough Condor Meat
+					["coords"] = {
+						-- #if BEFORE 4.0.3
+						{ 52.0, 40.0, REDRIDGE_MOUNTAINS },	-- Northside
+						{ 55.0, 72.0, REDRIDGE_MOUNTAINS },	-- Southside
+						-- #else
+						{ 22.2, 64.5, REDRIDGE_MOUNTAINS },	-- Three Corners
+						-- #endif
+					},
+					["crs"] = {
+						428,	-- Dire Condor
+					},
+					["description"] = "Only drops from Dire Condors in Redridge Mountains."
 				}),
 			}),
 		},

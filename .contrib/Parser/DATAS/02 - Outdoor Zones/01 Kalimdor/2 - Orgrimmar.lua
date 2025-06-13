@@ -253,8 +253,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(1179),	-- Ice Cold Milk
+							-- Danny Donkey: All these items get removed from this vendor with Cataclysm.
 							-- #if BEFORE 4.0.3
-							i(2596),	-- Skin of Dwarven Stout (becomes removed from this vendor with Cata.)
+							i(2594),	-- Flagon of Dwarven Honeymead/Mead
+							i(2593),	-- Flask of Stormwind Tawny
+							i(2596),	-- Skin of Dwarven Stout
 							-- #endif
 						},
 					}),
@@ -3010,7 +3013,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #else
 				n(12793, {	-- Brave Stonehide <Officer Accessories Quartermaster>
-					["description"] = "Found within the Champion's Hall in Orgrimmar.",
+					-- #if BEFORE TBC
+						["description"] = "Found within the Hall of Legends.",
+					-- #elseif BEFORE CATA
+						["coord"] = { 40.6, 69.5, ORGRIMMAR },
+					-- #else
+						["coord"] = { 37.8, 72.1, ORGRIMMAR },
+					-- #endif
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3665,7 +3674,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #else
 				n(12792, {	-- Lady Palanseer <Armor Quartermaster>
-					["description"] = "Found within the Champion's Hall in Orgrimmar.",
+					["description"] = "Found within the Hall of Legends.",
 					["timeline"] = { REMOVED_3_0_2 },
 					["maps"] = { ORGRIMMAR },
 					["groups"] = {
@@ -4422,10 +4431,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				n(12796, {	-- Raider Bork <War Mount Quartermaster> [WRATH+] / Raider Bork <Mount Quartermaster>
-					-- #if AFTER WRATH
-					["coord"] = { 41.8, 72.6, ORGRIMMAR },
+					-- #if BEFORE WRATH
+						["description"] = "Found within the Hall of Legends.",
 					-- #else
-					["description"] = "Found within the Champion's Hall.",
+						["coord"] = { 41.8, 72.6, ORGRIMMAR },
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = pvp({
@@ -4694,7 +4703,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(14581, {	-- Sergeant Thunderhorn <Weapons Quartermaster>
-					["description"] = "Found within the Champion's Hall in Orgrimmar.",
+					["description"] = "Found within the Hall of Legends.",
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(18831),	-- High Warlord's Battle Axe

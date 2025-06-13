@@ -2468,6 +2468,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 				i(17194),	-- Holiday Spices
 				i(17196),	-- Holiday Spirits
+				i(34412, {	-- Sparkling Apple Cider
+					["timeline"] = { ADDED_2_3_0 },
+				}),
 				i(234407, {	-- Festive Green Holiday Boots
 					["timeline"] = { ADDED_11_0_7 },
 				}),

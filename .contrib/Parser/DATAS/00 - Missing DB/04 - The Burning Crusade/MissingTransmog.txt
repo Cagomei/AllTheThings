@@ -167,7 +167,6 @@ s(120544)/i(5522),	-- Spellstone (DEPRECATED) \\ Spellstone
 s(120586)/i(5568),	-- th Pebble \\ Smooth Pebble
 s(120701)/i(5748),	-- aur Longbow \\ Centaur Longbow
 s(120822)/i(5870),	-- Monster - Throwing Spear
-s(120862)/i(5956),	-- ksmith Hammer \\ Blacksmith Hammer
 s(120939)/i(6088),	-- Monster - Torch, Ranged
 s(120949)/i(6116),	-- entice's Robe \\ Apprentice's Robe
 s(120961)/i(6128),	--

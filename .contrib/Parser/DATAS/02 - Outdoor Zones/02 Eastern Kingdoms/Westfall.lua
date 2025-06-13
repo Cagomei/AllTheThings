@@ -2090,17 +2090,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(68724, {	-- Broken Barn Door
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				-- #if ANYCLASSIC
-				i(769, {	-- Chunk of Boar Meat
-					["coord"] = { 54.2, 42.6, WESTFALL },
-					["maps"] = { REDRIDGE_MOUNTAINS },
-					["crs"] = {
-						157,	-- Goretusk
-						547,	-- Great Goretusk
-						454,	-- Young Goretusk
-					},
-				}),
+				-- #if BEFORE 4.0.3
+				i(769),	-- Chunk of Boar Meat
 				-- #endif
+				i(2673, {	-- Coyote Meat
+					["coord"] = { 49.4, 24.5, WESTFALL },	-- Furlbrow's Pumpkin Farm
+					["crs"] = {
+						834,	-- Coyote
+						833,	-- Coyote Packleader
+					},
+					["description"] = "Only drops from coyotes in Westfall.",
+				}),
 				-- #if AFTER CATA
 				i(1927, {	-- Deadmines Cleaver
 					["cr"] = 594,	-- Defias Henchman
@@ -2232,12 +2232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				-- #if BEFORE CATA
-				i(723, {	-- Goretusk Liver
-					["crs"] = {
-						157,	-- Goretusk
-						454,	-- Young Goretusk
-					},
-				}),
+				i(723),	-- Goretusk Liver
 				i(731, {	-- Goretusk Snout
 					["crs"] = {
 						157,	-- Goretusk

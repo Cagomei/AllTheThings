@@ -115,6 +115,12 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(382586),	-- Opening
 				})),
 			}),
+			expansion(EXPANSION.TWW, {
+				-- 11.0.0
+				expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+					r(423882),	-- Overload Test Deposit
+				})),
+			}),
 		}),
 	}),
 }));
