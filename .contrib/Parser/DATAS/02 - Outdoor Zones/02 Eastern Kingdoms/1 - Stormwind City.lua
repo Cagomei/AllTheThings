@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {
 							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -373,20 +373,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
-							-- #if BEFORE CATA
-							i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-								["isLimited"] = true,
-							}),
-							-- #endif
-							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+						["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, VANILLA_ENCHANTING_SUPPLIES, {
 							i(67312, {	-- Formula: Magic Lamp (RECIPE!)
 								["timeline"] = { ADDED_4_0_3 },
 								["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
 								["races"] = ALLIANCE_ONLY,
 							}),
-							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						}),
 					}),
 					n(1317, {	-- Lucan Cordell <Enchanting Trainer>
@@ -6555,9 +6547,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							73.8, 53.4, STORMWIND_CITY
 						-- #endif
 					},
-					["timeline"] = { REMOVED_3_0_2, ADDED_4_0_1, REMOVED_7_0_3 },
+					["timeline"] = { ADDED_1_4_0, REMOVED_3_0_2, ADDED_4_0_1, REMOVED_7_0_3 },
 					["groups"] = {
-						i(18664, { ["timeline"] = { REMOVED_2_0_1 } }),	-- A Treatise on Military Ranks
+						i(18664, { ["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 } }),	-- A Treatise on Military Ranks
 						i(15196, {	-- Private's Tabard
 							["races"] = ALLIANCE_ONLY,
 						}),

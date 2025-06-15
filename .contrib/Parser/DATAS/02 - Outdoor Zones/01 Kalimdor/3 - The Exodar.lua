@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER 4.3.0
 						["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 						-- #endif
-						["groups"] = appendGroups(VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {
 							i(23591, {	-- Plans: Adamantite Cleaver (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -122,7 +122,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER CATA
 						["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
 						-- #endif
-						["groups"] = EGOMIS_GROUPS,
+						["groups"] = appendGroups(EGOMIS_GROUPS, VANILLA_ENCHANTING_SUPPLIES, {}),
 					}),
 				}),
 				prof(ENGINEERING, {

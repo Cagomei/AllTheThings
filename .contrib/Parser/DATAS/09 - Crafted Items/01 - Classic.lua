@@ -903,8 +903,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(15871),	-- Truesilver Skeleton Key
 			i(206648, {["timeline"] = {ADDED_10_1_5}}),	-- Undeath Metal
 		}),
-		-- Tools:
-		i(5956, {["collectible"] = false}),	-- Blacksmithing Hammer
+		filter(PROFESSION_EQUIPMENT, {
+			i(5956, {["collectible"] = false}),	-- Blacksmithing Hammer
+		}),
 		n(WEAPONS, {
 			i(206493, {["timeline"] = {ADDED_10_1_5}}),	-- Axe of Sundered Bone
 			i(7945),	-- Big Black Mace
@@ -1194,31 +1195,168 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
-			i(11176, {["timeline"] = {REMOVED_7_3_5}}),	-- Dream Dust
-			i(11082, {["timeline"] = {REMOVED_7_3_5}}),	-- Greater Astral Essence
-			i(16203),	-- Greater Eternal Essence
-			i(10939),	-- Greater Magic Essence
-			i(11135, {["timeline"] = {REMOVED_7_3_5}}),	-- Greater Mystic Essence
-			i(11175, {["timeline"] = {REMOVED_7_3_5}}),	-- Greater Nether Essence
-			i(16204),	-- Light Illusion Dust / CLASSIC: Illusion Dust
-			i(14344),	-- Large Brilliant Shard
-			i(11084, {["timeline"] = {REMOVED_7_3_5}}),	-- Large Glimmering Shard
-			i(11139, {["timeline"] = {REMOVED_7_3_5}}),	-- Large Glowing Shard
-			i(11178, {["timeline"] = {REMOVED_7_3_5}}),	-- Large Radiant Shard
-			i(10998, {["timeline"] = {REMOVED_7_3_5}}),	-- Lesser Astral Essence
-			i(16202),	-- Lesser Eternal Essence
-			i(10938),	-- Lesser Magic Essence
-			i(11134, {["timeline"] = {REMOVED_7_3_5}}),	-- Lesser Mystic Essence
-			i(11174, {["timeline"] = {REMOVED_7_3_5}}),	-- Lesser Nether Essence
-			applyclassicphase(PHASE_FIVE, i(20725, {["timeline"] = {REMOVED_7_3_5}})),	-- Nexus Crystal
-			i(156930, {["timeline"] = {ADDED_7_3_5}}),	-- Rich Illusion Dust
-			i(14343),	-- Small Brilliant Shard
-			i(10978, {["timeline"] = {REMOVED_7_3_5}}),	-- Small Glimmering Shard
-			i(11138, {["timeline"] = {REMOVED_7_3_5}}),	-- Small Glowing Shard
-			i(11177, {["timeline"] = {REMOVED_7_3_5}}),	-- Small Radiant Shard
-			i(11083, {["timeline"] = {REMOVED_7_3_5}}),	-- Soul Dust
-			i(10940),	-- Strange Dust
-			i(11137, {["timeline"] = {REMOVED_7_3_5}}),	-- Vision Dust
+			-- Danny Donkey: We need ilvl data from WoD and BfA stat squishes.
+			-- Dust:
+			i(11176, {	-- Dream Dust
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 46-55.",
+				-- #endif
+			}),
+			i(16204, {	-- Legion+:Light Illusion Dust / CLASSIC: Illusion Dust
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all gear within the ilvl bracket 17-29.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 56-65.",
+				-- #endif
+			}),
+			i(156930, {	-- Rich Illusion Dust (treng retail data)
+				["timeline"] = { ADDED_7_3_5 },
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all gear within the ilvl bracket 25-29.",
+				-- #endif
+			}),
+			i(11083, {	-- Soul Dust
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 26-35.",
+				-- #endif
+			}),
+			i(10940, {	-- Strange Dust
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all gear within the ilvl bracket 4-16.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 10-25.",
+				-- #endif
+			}),
+			i(11137, {	-- Vision Dust
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 36-45.",
+				-- #endif
+			}),
+			-- Essences:
+			i(11082, {	-- Greater Astral Essence
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 26-30.",
+				-- #endif
+			}),
+			i(10998, {	-- Lesser Astral Essence
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 21-25.",
+				-- #endif
+			}),
+			i(16203, {	-- Greater Eternal Essence
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all gear within the ilvl bracket 29-35.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 56-65, except shields and off-hand frills.",
+				-- #endif
+			}),
+			i(16202, {	-- Lesser Eternal Essence
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all gear within the ilvl bracket 18-28.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 51-55.",
+				-- #endif
+			}),
+			i(10939, {	-- Greater Magic Essence
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all gear within the ilvl bracket 9-16.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 16-30, except shields and off-hand frills.",
+				-- #endif
+			}),
+			i(10938, {	-- Lesser Magic Essence
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all gear within the ilvl bracket 5-8.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 11-15, except shields and off-hand frills.",
+				-- #endif
+			}),
+			i(11135, {	-- Greater Mystic Essence
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 36-40.",
+				-- #endif
+			}),
+			i(11134, {	-- Lesser Mystic Essence
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 31-35.",
+				-- #endif
+			}),
+			i(11175, {	-- Greater Nether Essence
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 46-50.",
+				-- #endif
+			}),
+			i(11174, {	-- Lesser Nether Essence
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 41-45.",
+				-- #endif
+			}),
+			-- Shards:
+			i(14344, {	-- Large Brilliant Shard
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 28-35.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 56-71.",
+				-- #endif
+			}),
+			i(14343, {	-- Small Brilliant Shard
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 13-28.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 51-55.",
+				-- #endif
+			}),
+			i(11084, {	-- Large Glimmering Shard
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 26-30.",
+				-- #endif
+			}),
+			i(10978, {	-- Small Glimmering Shard
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 20-25.",
+				-- #endif
+			}),
+			i(11139, {	-- Large Glowing Shard
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 36-40.",
+				-- #endif
+			}),
+			i(11138, {	-- Small Glowing Shard
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 31-35.",
+				-- #endif
+			}),
+			applyclassicphase(PHASE_FIVE, i(20725, {	-- Nexus Crystal
+				["timeline"] = {REMOVED_7_3_5},
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting all epic (purple) quality gear within the ilvl bracket 60-83.",
+				-- #endif
+			})),
+			i(11178, {	-- Large Radiant Shard
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 46-50.",
+				-- #endif
+			}),
+			i(11177, {	-- Small Radiant Shard
+				["timeline"] = { REMOVED_7_3_5 },
+				-- #if BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 41-45.",
+				-- #endif
+			}),
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, n(ARMOR_ENCHANTMENTS, sharedDataSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 			i(38844),	-- Enchant Boots - Agility
@@ -1370,11 +1508,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			applyclassicphase(PHASE_FIVE, i(20745)),	-- Minor Mana Oil
 			applyclassicphase(PHASE_FIVE, i(20744)),	-- Minor Wizard Oil
-			i(16207, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Arcanite Rod
-			i(6218),	-- Runed Copper Rod
-			i(11130, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Gold Rod
-			i(6339, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Silver Rod
-			i(11145, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Truesilver Rod
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_THREE, i(220792, {	-- Scroll of Spatial Mending
 				["timeline"] = { ADDED_1_15_2 },
@@ -1385,6 +1518,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(SOD_PHASE_SIX, i(234478, { ["timeline"] = { ADDED_1_15_5 }, })), -- Totem of Thunderous Strikes
 			-- #endif
 			applyclassicphase(PHASE_FIVE, i(20750)),	-- Wizard Oil
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(16207, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Arcanite Rod
+			i(6218),	-- Runed Copper Rod
+			i(11130, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Gold Rod
+			i(6339, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Silver Rod
+			i(11145, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Truesilver Rod
 		}),
 		filter(TRINKET_F, {
 			-- #if SEASON_OF_DISCOVERY
@@ -1989,15 +2129,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			["description"] = "Can be caught in open sea water in Azshara, Cape of Stranglethorn, Dustwallow Marsh and Tanaris.",
 			-- #endif
 		}),
-	--	i(13756),	-- Raw Summer Bass
+		--i(13756),	-- Raw Summer Bass
 		i(13760),	-- Raw Sunscale Salmon
 		i(13889, {	-- Raw Whitescale Salmon
 			-- #if AFTER 4.0.3
 			["description"] = "Can be caught in open inland waters in Blasted Lands, Un'Goro Crater and Winterspring.",
 			-- #endif
 		}),
+		i(5468),	-- Soft Frenzy Flesh
 		i(13422),	-- Stonescale Eel
-	--	i(13755),	-- Winter Squid
+		--i(13755),	-- Winter Squid
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
 				["description"] = "Can be fished from schools.",
@@ -3955,6 +4096,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(2678),	-- Mild Spices
 				i(2692, { ["timeline"] = { REMOVED_3_0_2 }}),	-- Hot Spices
 				i(3713, { ["timeline"] = { REMOVED_3_0_2 }}),	-- Soothing Spices
+			}),
+			-- Enchanting reagents from vendors
+			sharedData({
+				["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
+			},{
+				i(6217),	-- Copper Rod
+				i(4470),	-- Simple Wood
+				i(11291),	-- Star Wood
 			})
 		),
 	}),

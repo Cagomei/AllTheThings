@@ -134,7 +134,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER 4.3.0
 						["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 						-- #endif
-						["groups"] = appendGroups(VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {
 							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -194,16 +194,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
-						["groups"] = {
-							-- #if BEFORE CATA
-							i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-								["isLimited"] = true,
-							}),
-							-- #endif
-							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						},
+						["groups"] = appendGroups(VANILLA_ENCHANTING_SUPPLIES, {}),
 					}),
 				}),
 				prof(ENGINEERING, {

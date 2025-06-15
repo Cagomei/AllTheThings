@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 39.8, 55.6, THUNDER_BLUFF },
 						["sym"] = { {"sub", "common_recipes_vendor", 3356} },	-- Sumi <Blacksmithing Supplies>
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {}),
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {}),
 					}),
 				}),
 				prof(COOKING, {
@@ -137,22 +137,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 44.9, 37.7, THUNDER_BLUFF },
 						["sym"] = { {"sub", "common_recipes_vendor", 3346} },	-- Kithas <Enchanting Supplies>
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							-- #if BEFORE CATA
-							i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-								["isLimited"] = true,
-							}),
-							-- #endif
+						["groups"] = appendGroups(VANILLA_ENCHANTING_SUPPLIES, {
 							i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(6377, {	-- Formula: Enchant Boots - Minor Agility (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						},
+						}),
 					}),
 				}),
 				prof(ENGINEERING, {

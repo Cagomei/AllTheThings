@@ -780,6 +780,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
+			d(DIFFICULTY.LEGACY_RAID.PLAYER20, bubbleDownTimelineEventSelf(REMOVED_1_15_5, {
+			-- #endif
 			e(1537, {	-- Kurinnaxx
 				["creatureID"] = 15348,
 				["groups"] = {
@@ -803,31 +807,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(22219, {	-- Plans: Jagged Obsidian Shield (RECIPE!)
 						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },
 						["isLimited"] = true,
-						-- #if SEASON_OF_DISCOVERY
-						["timeline"] = { REMOVED_1_15_5 },
-						-- #endif
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_SIX, i(234458, {	-- Plans: Jagged Obsidian Shield (RECIPE!)
-						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },
-						["isLimited"] = true,
-						["timeline"] = { ADDED_1_15_5 },
-					})),
-					-- #endif
 					i(22221, {	-- Plans: Obsidian Mail Tunic (RECIPE!)
 						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },
 						["isLimited"] = true,
-						-- #if SEASON_OF_DISCOVERY
-						["timeline"] = { REMOVED_1_15_5 },
-						-- #endif
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_SIX, i(234461, {	-- Plans: Obsidian Mail Tunic (RECIPE!)
-						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },
-						["isLimited"] = true,
-						["timeline"] = { ADDED_1_15_5 },
-					})),
-					-- #endif
 				},
 			}),
 			e(1538, {	-- General Rajaxx
@@ -919,15 +903,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(21477),	-- Ring of Fury
 					i(21473),	-- Eye of Moam
 					i(22220, {	-- Plans: Black Grasp of the Destroyer (RECIPE!)
-					-- #if SEASON_OF_DISCOVERY
-						["timeline"] = { REMOVED_1_15_5 },
-					-- #endif
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_SIX, i(234085, {	--	Plans: Black Grasp of the Destroyer (RECIPE!)
-						["timeline"] = { ADDED_1_15_5 },
-					})),
-					-- #endif
 				},
 			}),
 			e(1542, {	-- Ossirian the Unscarred
@@ -957,6 +933,225 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(21453),	-- Mantle of the Horusath
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			})),
+			applyclassicphase(SOD_PHASE_SIX, d(DIFFICULTY.SOD.PLAYER20, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_5 }, }, {
+				n(ZONE_DROPS, {
+					i(234119),	-- Antenna of Invigoration
+					i(234123),	-- Coif of Elemental Fury
+					i(234120),	-- Helm of the Holy Avenger
+					i(21805),	-- Polished Obsidian Pauldrons	-- double check??
+					i(234121),	-- Silithid Husked Launcher
+					i(234122),	-- The Lost Kris of Zedd
+					i(20873),	-- Alabaster Idol
+					i(20869),	-- Amber Idol
+					i(20866),	-- Azure Idol
+					i(20870),	-- Jasper Idol
+					i(20868),	-- Lambent Idol
+					i(20871),	-- Obsidian Idol
+					i(20867),	-- Onyx Idol
+					i(20872),	-- Vermillion Idol
+					i(20864),	-- Bone Scarab
+					i(20861),	-- Bronze Scarab
+					i(20863),	-- Clay Scarab
+					i(20862),	-- Crystal Scarab
+					i(20859),	-- Gold Scarab
+					i(20865),	-- Ivory Scarab
+					i(20860),	-- Silver Scarab
+					i(20858),	-- Stone Scarab
+					i(20768, {	-- Oozing Bag
+						["cr"] = 15335,	-- Flesh Hunter
+						["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
+					}),
+					i(21761, {	-- Scarab Coffer Key
+						["timeline"] = {
+							ADDED_1_13_0,
+							DELETED_4_2_2
+						},
+					}),
+				}),
+				n(COMMON_BOSS_DROPS, {
+					i(20888, {	-- Qiraji Ceremonial Ring
+						["crs"] = {
+							15369,	-- Ayamiss the Hunter
+							15370,	-- Buru the Gorger
+							15341,	-- General Rajaxx
+							15348,	-- Kurinnaxx
+							15340,	-- Moam
+							15339,	-- Ossirian the Unscarred
+						},
+					}),
+					i(20884, {	-- Qiraji Magisterial Ring
+						["crs"] = {
+							15369,	-- Ayamiss the Hunter
+							15370,	-- Buru the Gorger
+							15341,	-- General Rajaxx
+							15348,	-- Kurinnaxx
+							15340,	-- Moam
+							15339,	-- Ossirian the Unscarred
+						},
+					}),
+					i(20885, {	-- Qiraji Martial Drape
+						["crs"] = {
+							15369,	-- Ayamiss the Hunter
+							15370,	-- Buru the Gorger
+							15341,	-- General Rajaxx
+							15348,	-- Kurinnaxx
+						},
+					}),
+					i(20889, {	-- Qiraji Regal Drape
+						["crs"] = {
+							15369,	-- Ayamiss the Hunter
+							15370,	-- Buru the Gorger
+							15341,	-- General Rajaxx
+							15348,	-- Kurinnaxx
+						},
+					}),
+					i(20890, {	-- Qiraji Ornate Hilt
+						["crs"] = {
+							15369,	-- Ayamiss the Hunter
+							15370,	-- Buru the Gorger
+							15339,	-- Ossirian the Unscarred
+							15340,	-- Moam
+						},
+					}),
+					i(20886, {	-- Qiraji Spiked Hilt
+						["crs"] = {
+							15369,	-- Ayamiss the Hunter
+							15370,	-- Buru the Gorger
+							15339,	-- Ossirian the Unscarred
+							15340,	-- Moam
+						},
+					}),
+				}),	
+				e(1537, {	-- Kurinnaxx
+					["creatureID"] = 15348,
+					["groups"] = {
+						i(22217, {	-- Kurinnaxx's Venom Sac
+							["timeline"] = {
+								ADDED_1_13_0,
+								DELETED_4_2_2
+							},
+						}),
+						i(234061),	-- Qiraji Sacrificial Dagger
+						i(234062),	-- Vestments of the Shifting Sands
+						i(234063),	-- Belt of the Sand Reaver
+						i(234064),	-- Belt of the Inquisition
+						i(234065),	-- Sand Reaver Wristguards
+						i(234066),	-- Toughened Silithid Hide Gloves
+					},
+				}),
+				n(15471, {	-- Lieutenant General Andorov
+					["description"] = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed.",
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_SIX, i(234458, {	-- Plans: Jagged Obsidian Shield (RECIPE!)
+							["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },
+							["isLimited"] = true,
+							["timeline"] = { ADDED_1_15_5 },
+						})),
+						applyclassicphase(SOD_PHASE_SIX, i(234461, {	-- Plans: Obsidian Mail Tunic (RECIPE!)
+							["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },
+							["isLimited"] = true,
+							["timeline"] = { ADDED_1_15_5 },
+						})),
+					},
+				}),
+				e(1538, {	-- General Rajaxx
+					["description"] = "Speak with Lieutenant General Andorov in order to start the encounter. Andorov must survive the fight in order to defeat the encounter.",
+					["creatureID"] = 15341,
+					["groups"] = {
+						n(CAPTAINS, {
+							["qgs"] = {
+								15390,	-- Captain Xurrem
+								15391,	-- Captain Qeez
+								15389,	-- Captain Drenn
+								15392,	-- Captain Tuubid
+								15386,	-- Major Yeggeth
+								15385,	-- Colonel Zarran
+							},
+							["groups"] = {
+								i(234116),	-- Fury of the Forgotten Swarm
+								i(234117),	-- Treads of the Wandering Nomad
+								i(234118),	-- Gavel of Qiraji Authority
+							},
+						}),
+						i(234067),	-- Manslayer of the Qiraji
+						i(234068),	-- Boots of the Vanguard
+						i(234069),	-- Boots of the Qiraji General
+						i(234070),	-- Bracers of Qiraji Command
+						i(234071),	-- Legplates of the Qiraji Command
+						i(234072),	-- Southwind's Grasp
+					},
+				}),
+				e(1540, {	-- Buru the Gorger
+					["creatureID"] = 15370,
+					["groups"] = {
+						i(234089),	-- Buru's Skull Fragment
+						i(234090),	-- Gloves of the Swarm
+						i(234091),	-- Slimy Scaled Gauntlets
+						i(234092),	-- Fetish of Chitinous Spikes
+						i(234093),	-- Quicksand Waders
+						i(234094),	-- Scaled Bracers of the Gorger
+						i(234095),	-- Slime Kickers
+					},
+				}),
+				e(1541, {	-- Ayamiss the Hunter
+					["creatureID"] = 15369,
+					["groups"] = {
+						i(234096),	-- Bow of Taut Sinew
+						i(234097),	-- Stinger of Ayamiss
+						i(234098),	-- Boots of the Desert Protector
+						i(234099),	-- Boots of the Fiery Sands
+						i(234100),	-- Helm of Regrowth
+						i(234101),	-- Ring of the Desert Winds
+						i(234102),	-- Scaled Silithid Gauntlets
+					},
+				}),
+				e(1539, {	-- Moam
+					["creatureID"] = 15340,
+					["groups"] = {
+						i(234073),	-- Dustwind Turban
+						i(234075),	-- Gauntlets of the Immovable
+						i(234076),	-- Talon of Furious Concentration
+						i(234077),	-- Thick Silithid Chestguard
+						i(234078),	-- Chitinous Shoulderguards
+						i(234079),	-- Cloak of the Savior
+						i(234080),	-- Eye of Moam
+						i(234081),	-- Gauntlets of Southwind
+						i(234082),	-- Mantle of Maz'Nadir
+						i(234083),	-- Ring of Fury
+						i(234084),	-- Southwind Helm
+						i(234088),	-- Legplates of the Destroyer
+						i(234087),	-- Obsidian Scaled Leggings										
+						i(22220, {	-- Plans: Black Grasp of the Destroyer (RECIPE!)
+							["timeline"] = { REMOVED_1_15_5 },
+						}),
+						applyclassicphase(SOD_PHASE_SIX, i(234085, {	--	Plans: Black Grasp of the Destroyer (RECIPE!)
+							["timeline"] = { ADDED_1_15_5 },
+						})),
+					},
+				}),
+				e(1542, {	-- Ossirian the Unscarred
+					["creatureID"] = 15339,
+					["groups"] = {
+						i(21220),	-- Head of Ossirian the Unscarred
+						i(234103),	-- Bracers of Brutality
+						i(234113),	-- Sandstorm Cloak
+						i(234111),	-- Runic Stone Shoulders
+						i(234107),	-- Helm of Domination
+						i(234104),	-- Crossbow of Imminent Doom
+						i(234112),	-- Sand Polished Hammer
+						i(234115),	-- Staff of the Ruins
+						i(234110),	-- Ossirian's Binding
+						i(234105),	-- Gauntlets of New Life
+						i(234106),	-- Gloves of Dark Wisdom
+						i(234114),	-- Shackles of the Unscarred
+						i(234108),	-- Leggings of the Black Blizzard
+						i(234109),	-- Mantle of the Horusath
+					},
+				}),
+			}))),
+			-- #endif
 		},
 	}),
 })));

@@ -50,7 +50,12 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_10_2_0 },
 		}),
 		ach(19029, {	-- Lil' Maggz
+			["provider"] = { "i", 208850 },	-- Lil' Maggz
 			["timeline"] = { ADDED_10_1_7, REMOVED_10_1_7 },	-- Removed Oct 31, 2023
+		}),
+		ach(19031, {	-- Fyrn
+			["provider"] = { "i", 208446 },	-- Fyrn
+			["timeline"] = { CREATED_10_2_5, ADDED_11_1_5 },
 		}),
 	}),
 	-- #endif

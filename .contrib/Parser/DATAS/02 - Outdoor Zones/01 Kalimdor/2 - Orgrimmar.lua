@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {
 							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, VANILLA_BLACKSMITHING_SUPPLIES, {
 							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -388,7 +388,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
+						["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, VANILLA_ENCHANTING_SUPPLIES, {
 							i(67308, {	-- Formula: Enchanted Lantern (RECIPE!)
 								["races"] = HORDE_ONLY,
 								["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
@@ -400,14 +400,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(6346, {	-- Formula: Enchant Chest - Lesser Mana (RECIPE!)
 								["isLimited"] = true,
 							}),
-							-- #if BEFORE CATA
-							i(6342, {	-- Formula: Enchant Chest - Minor Mana
-								["isLimited"] = true,
-							}),
-							-- #endif
-							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						}),
 					}),
 				}),

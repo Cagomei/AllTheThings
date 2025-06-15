@@ -4602,7 +4602,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["crs"] = {
 				14398,	-- Eldreth Darter
 			},
-			["description"] = "Cataclysm messed up with the drop sources for Small Flame Sacs. Supposed to drop from small dragonkin like darters and whelps. The Eldreth Darter in The Capital Gardens in Dire Maul seems to be the most reliable source.",
+			["description"] = "Cataclysm messed up with the drop sources for Small Flame Sacs. Supposed to drop from small dragonkin like darters and whelps. Eldreth Darters in The Capital Gardens in Dire Maul seems to be the most reliable source.",
 			["maps"] = { DIRE_MAUL },
 			-- #else
 			["coords"] = {
@@ -5354,9 +5354,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			-- #if AFTER BFA
-			["description"] = "Drops from birds, owlkin and striders in previously entry- and lower level vanilla zones, and can be found all over Azuremyst Isle and Eversong Woods except Ammen Vale and Sunstrider Isle.",
+			["description"] = "Drops from birds, owlkin and striders in previously entry- and lower level vanilla zones, which can be found all over Azuremyst Isle and Eversong Woods except Ammen Vale and Sunstrider Isle.",
 			-- #elseif AFTER 4.0.3
-			["description"] = "Drops from birds, owlkin and striders in entry- and lower level vanilla zones, and can be found all over Azuremyst Isle and Eversong Woods except Ammen Vale and Sunstrider Isle.",
+			["description"] = "Drops from birds, owlkin and striders in entry- and lower level vanilla zones, which can be found all over Azuremyst Isle and Eversong Woods except Ammen Vale and Sunstrider Isle.",
 			-- #else
 			["description"] = "Drops from birds, owlkin and striders in the level bracket 5-20 like Moonkin in Darkshore.",
 			-- #endif

@@ -301,6 +301,12 @@ i(132183);	-- Razor Tooth
 i(123865);	-- Relic of Ursol
 
 -----------------
+-- PATCH 8.0.1 --
+-----------------
+i(158848);	-- Spoiled Feast
+i(158746);	-- Tattered White Flag
+
+-----------------
 -- PATCH 8.2.5 --
 -----------------
 i(172503);	-- Beekeeper Bybee's Photograph
@@ -2398,3 +2404,8 @@ i(236924);	-- Pouch of Weathered Harbinger Crests
 i(236652);	-- Re-Down-Upcycled Salvage
 i(236925);	-- Satchel of Carved Harbinger Crests
 i(237332);	-- Single-Use Grill
+
+------------------
+-- PATCH 11.1.5 --
+------------------
+i(241632);	-- Heroic Waxy Figurine

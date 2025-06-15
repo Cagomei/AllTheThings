@@ -148,7 +148,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {}),
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {}),
 					}),
 				}),
 				prof(COOKING, {
@@ -191,19 +191,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							-- #if BEFORE CATA
-							i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-								["isLimited"] = true,
-							}),
-							-- #endif
+						["groups"] = appendGroups(VANILLA_ENCHANTING_SUPPLIES, {
 							i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						},
+						}),
 					}),
 				}),
 				prof(ENGINEERING, {

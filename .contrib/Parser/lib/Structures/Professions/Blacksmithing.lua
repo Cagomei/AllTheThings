@@ -205,7 +205,7 @@ ARTISAN_BLACKSMITHING
 	{}
 -- #endif
 );
-VANILLA_BLACKSMITHING_VENDOR_REAGENTS = {
+VANILLA_BLACKSMITHING_SUPPLIES = {
 	i(2880),	-- Weak Flux
 	i(3466),	-- Strong Flux
 	i(18567),	-- Elemental Flux

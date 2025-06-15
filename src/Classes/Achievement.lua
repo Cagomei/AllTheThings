@@ -415,6 +415,7 @@ do
 	end
 	local function default_name(t)
 		if t.link then return t.link; end
+		app.DirectGroupRefresh(t, true)
 		local name
 		local achievementID = t.achievementID
 		if achievementID then

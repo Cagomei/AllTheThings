@@ -94,9 +94,17 @@ app.NPCTitlesFromID = NPCTitlesFromID
 local CreateNPC
 do
 	local KEY = "npcID"
+	local cache = app.CreateCache(KEY, "NPC")
+	cache.DefaultFunctions.name = function(t)
+		app.DirectGroupRefresh(t, true)
+		local _t, id = cache.GetCached(t)
+		local name = NPCNameFromID[id]
+		_t.name = name
+		return name
+	end
 	CreateNPC = app.CreateClass("NPC", KEY, {
 		name = function(t)
-			return NPCNameFromID[t[KEY]]
+			return cache.GetCachedField(t, "name")
 		end,
 		title = function(t)
 			return NPCTitlesFromID[t[KEY]]

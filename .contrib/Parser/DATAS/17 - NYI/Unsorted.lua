@@ -635,7 +635,6 @@ root(ROOTS.Unsorted, {
 			i(243245),	-- Gears Grabbed
 			i(243249),	-- Khaz Algar Adventurer Pack \\ Khaz Algar Gift Pack
 			i(241616),	-- The Underpin
-			i(241632),	-- Heroic Waxy Figurine
 			i(241633),	-- Tiny Decorative Rocket
 			i(241635),	-- Patchy Spider-Silk Square
 			i(241636),	-- Storm Glass and Feather Necklace
@@ -2074,7 +2073,6 @@ root(ROOTS.Unsorted, {
 				i(158743),	-- Conductive Antennae \\ PH Flavor - Dire Troll Male - Blood Troll
 				i(158744),	-- Spectral Veil \\ PH Flavor - Rat - Vermin
 				i(158745),	-- Luminous Scale \\ PH Flavor - Siren
-				i(158746),	-- Tattered White Flag \\ PH Flavor - Unused \\ PH Flavor - Crocolisk - Reptile
 				i(158747),	-- Thorny Prickle \\ PH Flavor - Troll - Zandalari
 				i(158748),	-- PH Pet Reward \\ PH Flavor - Faceless
 				i(158749),	-- Intricate Ossicles \\ PH Flavor - Construct - Drust
@@ -2173,7 +2171,6 @@ root(ROOTS.Unsorted, {
 				i(158845),	-- PH Flavor - Unused \\ PH Flavor - Bear
 				i(158846),	-- PH Flavor - Unused \\ PH Flavor - Basilisk
 				i(158847),	-- PH Flavor - Unused \\ PH Flavor - Bog Plant
-				i(158848),	-- Spoiled Feast \\ PH Flavor - Unused \\ PH Flavor - Azerite Elemental
 				i(158849),	-- Sawtooth Jawbone \\ PH Flavor - Scarab - Insect
 				i(158850),	-- Vibrant Plumage \\ PH Flavor - Pig
 				i(158851),	-- Bottled Squall \\ PH Flavor - Mogu

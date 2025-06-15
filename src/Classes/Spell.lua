@@ -124,6 +124,7 @@ local function default_costCollectibles(t)
 	return app.EmptyTable
 end
 local function CacheInfo(t, field)
+	app.DirectGroupRefresh(t, true)
 	local _t, id = cache.GetCached(t);
 	local name, icon = GetSpellName(id), GetSpellIcon(id);
 	_t.name = name;
@@ -141,6 +142,7 @@ local function CacheInfo(t, field)
 	if field then return _t[field]; end
 end
 local function CacheItemInfo(t, field)
+	app.DirectGroupRefresh(t, true)
 	local _t = cache.GetCached(t);
 	local item = _t._refitem
 	if not item then

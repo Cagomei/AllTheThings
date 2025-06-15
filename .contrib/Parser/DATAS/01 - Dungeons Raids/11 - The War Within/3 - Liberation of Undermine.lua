@@ -445,6 +445,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					}, {	-- RENOWN 19 --
 						q(89023),	-- Loyal Customer: GOLDEN LEGENDARY!!!
 					}, {	-- RENOWN 20 --
+						------ Paragon ------
+						q(85471, {	-- Renowned with the Gallagio Loyalty Rewards Club
+							["isRepeatable"] = true,
+							["g"] = { i(232463) },	-- Overflowing Undermine Trove
+						}),
 					},
 				}))),
 				n(TREASURES, {
@@ -497,7 +502,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
-						["g"] = sharedData({ 
+						["g"] = sharedData({
 							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFFFFFFFNormal|r.",
 						}, {
@@ -522,7 +527,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
-						["g"] = sharedData({ 
+						["g"] = sharedData({
 							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFA330C9Heroic|r.",
 						}, {
@@ -544,10 +549,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 							i(238690),	-- Gallagio Raider's Blackwater Torchblade
 							i(238743),	-- Gallagio Raider's Blackwater Zapdagger
 						}),
-					}),	
+					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
-						["g"] = sharedData({ 
+						["g"] = sharedData({
 							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFED7014Mythic|r.",
 						}, {
@@ -572,7 +577,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
-						["g"] = sharedData({ 
+						["g"] = sharedData({
 							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
 						}, {
@@ -597,11 +602,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
-						["g"] = sharedData({ 
+						["g"] = sharedData({
 							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
 						}, {
 							i(238774),	-- Gallagio Raider's Knuckle Dusters
-							i(238761),	-- Gallagio Raider's Bootleg Lever							
+							i(238761),	-- Gallagio Raider's Bootleg Lever
 						}),
 					}),
 					n(235623, {	-- Snix Longpocket

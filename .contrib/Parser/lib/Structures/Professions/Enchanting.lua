@@ -169,6 +169,23 @@ EXPERT_ARTISAN_ENCHANTING
 	{}
 -- #endif
 );
+VANILLA_ENCHANTING_SUPPLIES = {
+	i(6217),	-- Copper Rod
+	-- #if BEFORE CATA
+	i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+		["isLimited"] = true,
+	}),
+	-- #else
+	i(38682),	-- Enchanting Vellum
+	-- #endif
+	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
+	i(10938, { ["isLimited"] = true, }),	-- Lesser Magic Essence
+	i(4470),	-- Simple Wood
+	i(11291),	-- Star Wood
+	i(10940, { ["isLimited"] = true, }),	-- Strange Dust
+};
 TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(28029, {	-- Enchanting (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },

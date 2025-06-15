@@ -1241,14 +1241,15 @@ root(ROOTS.PVP, {
 					i(64851),	-- Bloodthirsty Gladiator's Signet of Accuracy
 					i(64852),	-- Bloodthirsty Gladiator's Signet of Cruelty
 				})),
-				filter(HELD_IN_OFF_HAND, bubbleDown({ ["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
+				filter(THROWN, bubbleDown({ ["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
 					i(64759),	-- Bloodthirsty Gladiator's Hatchet (Throw wep)
+					i(64871),	-- Bloodthirsty Gladiator's War Edge (Throw wep)
+				})),
+				filter(RELICS_F, bubbleDown({ ["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
 					i(64819),	-- Bloodthirsty Gladiator's Relic of Conquest
 					i(64820),	-- Bloodthirsty Gladiator's Relic of Dominance
 					i(64821),	-- Bloodthirsty Gladiator's Relic of Salvation
 					i(64822),	-- Bloodthirsty Gladiator's Relic of Triumph
-					i(64871),	-- Bloodthirsty Gladiator's War Edge (Throw wep)
-
 				})),
 				filter(TRINKET_F, bubbleDown({ ["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
 					i(64687),	-- Bloodthirsty Gladiator's Badge of Conquest
@@ -1975,13 +1976,15 @@ root(ROOTS.PVP, {
 					i(60651),	-- Vicious Gladiator's Signet of Accuracy
 					i(60650),	-- Vicious Gladiator's Signet of Cruelty
 				}),
-				filter(HELD_IN_OFF_HAND, {
+				filter(THROWN, {
 					un(REMOVED_FROM_GAME, i(61348)),	-- Vicious Gladiator's Hatchet (Throw wep)
+					un(REMOVED_FROM_GAME, i(61347)),	-- Vicious Gladiator's War Edge (Throw wep)
+				}),
+				filter(RELICS_F, {
 					un(REMOVED_FROM_GAME, i(61391)),	-- Vicious Gladiator's Relic of Conquest
 					un(REMOVED_FROM_GAME, i(61388)),	-- Vicious Gladiator's Relic of Dominance
 					un(REMOVED_FROM_GAME, i(61389)),	-- Vicious Gladiator's Relic of Salvation
 					un(REMOVED_FROM_GAME, i(61390)),	-- Vicious Gladiator's Relic of Triumph
-					un(REMOVED_FROM_GAME, i(61347)),	-- Vicious Gladiator's War Edge (Throw wep)
 				}),
 				filter(TRINKET_F, {
 					i(61033),	-- Vicious Gladiator's Badge of Conquest
@@ -2172,9 +2175,9 @@ root(ROOTS.PVP, {
 					i(65608),	-- Vicious Gladiator's Warboots of Alacrity
 					i(65607),	-- Vicious Gladiator's Warboots of Cruelty
 				}),
-				filter(HELD_IN_OFF_HAND, {
-					i(67467),	-- Vicious Gladiator's War Edge (Throw wep) wrong label by blizz
-					i(67466),	-- Vicious Gladiator's Hatchet (Throw wep) wrong label by blizz
+				filter(THROWN, {
+					i(67467),	-- Vicious Gladiator's War Edge (Throw wep)
+					i(67466),	-- Vicious Gladiator's Hatchet (Throw wep)
 				}),
 			}))),
 		}),
@@ -2399,7 +2402,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(70653)),	-- Vicious Gladiator's Signet of Accuracy
 					un(REMOVED_FROM_GAME, i(70654)),	-- Vicious Gladiator's Signet of Cruelty
 				}),
-				filter(HELD_IN_OFF_HAND, {
+				filter(RELICS_F, {
 					un(REMOVED_FROM_GAME, i(70628)),	-- Vicious Gladiator's Relic of Conquest
 					un(REMOVED_FROM_GAME, i(70629)),	-- Vicious Gladiator's Relic of Dominance
 					un(REMOVED_FROM_GAME, i(70630)),	-- Vicious Gladiator's Relic of Salvation
@@ -3365,13 +3368,15 @@ root(ROOTS.PVP, {
 					i(70373),	-- Ruthless Gladiator's Signet of Accuracy
 					i(70372),	-- Ruthless Gladiator's Signet of Cruelty
 				}),
-				filter(HELD_IN_OFF_HAND, {
+				filter(THROWN, {
 					un(REMOVED_FROM_GAME, i(70233)),	-- Ruthless Gladiator's Hatchet (Throw wep)
+					un(REMOVED_FROM_GAME, i(70232)),	-- Ruthless Gladiator's War Edge (Throw Wep)
+				}),
+				filter(RELICS_F, {
 					un(REMOVED_FROM_GAME, i(70408)),	-- Ruthless Gladiator's Relic of Conquest
 					un(REMOVED_FROM_GAME, i(70405)),	-- Ruthless Gladiator's Relic of Dominance
 					un(REMOVED_FROM_GAME, i(70406)),	-- Ruthless Gladiator's Relic of Salvation
 					un(REMOVED_FROM_GAME, i(70407)),	-- Ruthless Gladiator's Relic of Triumph
-					un(REMOVED_FROM_GAME, i(70232)),	-- Ruthless Gladiator's War Edge (Throw Wep)
 				}),
 				filter(TRINKET_F, {
 					i(70399),	-- Ruthless Gladiator's Badge of Conquest
@@ -3556,7 +3561,7 @@ root(ROOTS.PVP, {
 					i(70505),	-- Ruthless Gladiator's Warboots of Alacrity
 					i(70504),	-- Ruthless Gladiator's Warboots of Cruelty
 				}),
-				filter(HELD_IN_OFF_HAND, {
+				filter(THROWN, {
 					i(70197),	-- Ruthless Gladiator's Hatchet (Throw wep)
 					i(70198),	-- Ruthless Gladiator's War Edge (Throw Wep)
 				}),
@@ -3743,56 +3748,56 @@ root(ROOTS.PVP, {
 						i(72396),	-- Ruthless Gladiator's Warboots of Cruelty
 						i(72397),	-- Ruthless Gladiator's Warboots of Alacrity
 					}),
-					n(BACK, {
-						un(REMOVED_FROM_GAME, i(72305)),	-- Ruthless Gladiator's Cape of Cruelty
-						un(REMOVED_FROM_GAME, i(72306)),	-- Ruthless Gladiator's Cape of Prowess
-						un(REMOVED_FROM_GAME, i(72451)),	-- Ruthless Gladiator's Cloak of Alacrity
-						un(REMOVED_FROM_GAME, i(72452)),	-- Ruthless Gladiator's Cloak of Prowess
-						un(REMOVED_FROM_GAME, i(72323)),	-- Ruthless Gladiator's Drape of Diffusion
-						un(REMOVED_FROM_GAME, i(72324)),	-- Ruthless Gladiator's Drape of Meditation
-						un(REMOVED_FROM_GAME, i(72322)),	-- Ruthless Gladiator's Drape of Prowess
-					}),
-					filter(FINGER_F, {
-						un(REMOVED_FROM_GAME, i(72330)),	-- Ruthless Gladiator's Band of Accuracy
-						un(REMOVED_FROM_GAME, i(72329)),	-- Ruthless Gladiator's Band of Cruelty
-						un(REMOVED_FROM_GAME, i(72331)),	-- Ruthless Gladiator's Band of Meditation
-						un(REMOVED_FROM_GAME, i(72312)),	-- Ruthless Gladiator's Ring of Accuracy
-						un(REMOVED_FROM_GAME, i(72311)),	-- Ruthless Gladiator's Ring of Cruelty
-						un(REMOVED_FROM_GAME, i(72458)),	-- Ruthless Gladiator's Signet of Accuracy
-						un(REMOVED_FROM_GAME, i(72457)),	-- Ruthless Gladiator's Signet of Cruelty
-					}),
-					filter(NECK_F, {
-						un(REMOVED_FROM_GAME, i(72454)),	-- Ruthless Gladiator's Choker of Accuracy
-						un(REMOVED_FROM_GAME, i(72453)),	-- Ruthless Gladiator's Choker of Proficiency
-						un(REMOVED_FROM_GAME, i(72307)),	-- Ruthless Gladiator's Necklace of Proficiency
-						un(REMOVED_FROM_GAME, i(72308)),	-- Ruthless Gladiator's Necklace of Prowess
-						un(REMOVED_FROM_GAME, i(72325)),	-- Ruthless Gladiator's Pendant of Alacrity
-						un(REMOVED_FROM_GAME, i(72326)),	-- Ruthless Gladiator's Pendant of Diffusion
-						un(REMOVED_FROM_GAME, i(72327)),	-- Ruthless Gladiator's Pendant of Meditation
-					}),
-					filter(HELD_IN_OFF_HAND, {
-						un(REMOVED_FROM_GAME, i(72456)),	-- Ruthless Gladiator's Relic of Conquest
-						un(REMOVED_FROM_GAME, i(72328)),	-- Ruthless Gladiator's Relic of Dominance
-						un(REMOVED_FROM_GAME, i(72358)),	-- Ruthless Gladiator's Relic of Salvation
-						un(REMOVED_FROM_GAME, i(72310)),	-- Ruthless Gladiator's Relic of Triumph
-					}),
-					filter(TRINKET_F, {
-						un(REMOVED_FROM_GAME, i(72304)),	-- Ruthless Gladiator's Badge of Conquest
-						un(REMOVED_FROM_GAME, i(72448)),	-- Ruthless Gladiator's Badge of Dominance
-						un(REMOVED_FROM_GAME, i(72450)),	-- Ruthless Gladiator's Badge of Victory
-						un(REMOVED_FROM_GAME, i(72359)),	-- Ruthless Gladiator's Emblem of Cruelty
-						un(REMOVED_FROM_GAME, i(72361)),	-- Ruthless Gladiator's Emblem of Meditation
-						un(REMOVED_FROM_GAME, i(72360)),	-- Ruthless Gladiator's Emblem of Tenacity
-						un(REMOVED_FROM_GAME, i(72309)),	-- Ruthless Gladiator's Insignia of Conquest
-						un(REMOVED_FROM_GAME, i(72449)),	-- Ruthless Gladiator's Insignia of Dominance
-						un(REMOVED_FROM_GAME, i(72455)),	-- Ruthless Gladiator's Insignia of Victory
-						un(REMOVED_FROM_GAME, i(72411)),	-- Ruthless Gladiator's Medallion of Cruelty (A)
-						un(REMOVED_FROM_GAME, i(72414)),	-- Ruthless Gladiator's Medallion of Meditation (A)
-						un(REMOVED_FROM_GAME, i(72412)),	-- Ruthless Gladiator's Medallion of Tenacity (A)
-						un(REMOVED_FROM_GAME, i(72410)),	-- Ruthless Gladiator's Medallion of Cruelty (H)
-						un(REMOVED_FROM_GAME, i(72415)),	-- Ruthless Gladiator's Medallion of Meditation (H)
-						un(REMOVED_FROM_GAME, i(72413)),	-- Ruthless Gladiator's Medallion of Tenacity (H)
-					}),
+					n(BACK, bubbleDown({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
+						i(72305),	-- Ruthless Gladiator's Cape of Cruelty
+						i(72306),	-- Ruthless Gladiator's Cape of Prowess
+						i(72451),	-- Ruthless Gladiator's Cloak of Alacrity
+						i(72452),	-- Ruthless Gladiator's Cloak of Prowess
+						i(72323),	-- Ruthless Gladiator's Drape of Diffusion
+						i(72324),	-- Ruthless Gladiator's Drape of Meditation
+						i(72322),	-- Ruthless Gladiator's Drape of Prowess
+					})),
+					filter(FINGER_F, bubbleDown({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
+						i(72330),	-- Ruthless Gladiator's Band of Accuracy
+						i(72329),	-- Ruthless Gladiator's Band of Cruelty
+						i(72331),	-- Ruthless Gladiator's Band of Meditation
+						i(72312),	-- Ruthless Gladiator's Ring of Accuracy
+						i(72311),	-- Ruthless Gladiator's Ring of Cruelty
+						i(72458),	-- Ruthless Gladiator's Signet of Accuracy
+						i(72457),	-- Ruthless Gladiator's Signet of Cruelty
+					})),
+					filter(NECK_F, bubbleDown({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
+						i(72454),	-- Ruthless Gladiator's Choker of Accuracy
+						i(72453),	-- Ruthless Gladiator's Choker of Proficiency
+						i(72307),	-- Ruthless Gladiator's Necklace of Proficiency
+						i(72308),	-- Ruthless Gladiator's Necklace of Prowess
+						i(72325),	-- Ruthless Gladiator's Pendant of Alacrity
+						i(72326),	-- Ruthless Gladiator's Pendant of Diffusion
+						i(72327),	-- Ruthless Gladiator's Pendant of Meditation
+					})),
+					filter(RELICS_F, bubbleDown({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
+						i(72456),	-- Ruthless Gladiator's Relic of Conquest
+						i(72328),	-- Ruthless Gladiator's Relic of Dominance
+						i(72358),	-- Ruthless Gladiator's Relic of Salvation
+						i(72310),	-- Ruthless Gladiator's Relic of Triumph
+					})),
+					filter(TRINKET_F, bubbleDown({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
+						i(72304),	-- Ruthless Gladiator's Badge of Conquest
+						i(72448),	-- Ruthless Gladiator's Badge of Dominance
+						i(72450),	-- Ruthless Gladiator's Badge of Victory
+						i(72359),	-- Ruthless Gladiator's Emblem of Cruelty
+						i(72361),	-- Ruthless Gladiator's Emblem of Meditation
+						i(72360),	-- Ruthless Gladiator's Emblem of Tenacity
+						i(72309),	-- Ruthless Gladiator's Insignia of Conquest
+						i(72449),	-- Ruthless Gladiator's Insignia of Dominance
+						i(72455),	-- Ruthless Gladiator's Insignia of Victory
+						i(72411),	-- Ruthless Gladiator's Medallion of Cruelty (A)
+						i(72414),	-- Ruthless Gladiator's Medallion of Meditation (A)
+						i(72412),	-- Ruthless Gladiator's Medallion of Tenacity (A)
+						i(72410),	-- Ruthless Gladiator's Medallion of Cruelty (H)
+						i(72415),	-- Ruthless Gladiator's Medallion of Meditation (H)
+						i(72413),	-- Ruthless Gladiator's Medallion of Tenacity (H)
+					})),
 				},
 			}),
 			n(PVP_GLADIATOR, {
@@ -4458,14 +4463,16 @@ root(ROOTS.PVP, {
 					i(73488),	-- Cataclysmic Gladiator's Signet of Accuracy
 					i(73489),	-- Cataclysmic Gladiator's Signet of Cruelty
 				}),
-				filter(HELD_IN_OFF_HAND, {
-					un(REMOVED_FROM_GAME, i(73471)),	-- Cataclysmic Gladiator's Hatchet (Throw Wep)
-					un(REMOVED_FROM_GAME, i(73490)),	-- Cataclysmic Gladiator's Relic of Conquest
-					un(REMOVED_FROM_GAME, i(73624)),	-- Cataclysmic Gladiator's Relic of Dominance
-					un(REMOVED_FROM_GAME, i(73594)),	-- Cataclysmic Gladiator's Relic of Salvation
-					un(REMOVED_FROM_GAME, i(73642)),	-- Cataclysmic Gladiator's Relic of Triumph
-					un(REMOVED_FROM_GAME, i(73445)),	-- Cataclysmic Gladiator's War Edge (Throw Wep)
-				}),
+				filter(THROWN, bubbleDown({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
+					i(73471),	-- Cataclysmic Gladiator's Hatchet (Throw Wep)
+					i(73445),	-- Cataclysmic Gladiator's War Edge (Throw Wep)
+				})),
+				filter(RELICS_F, bubbleDown({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
+					i(73490),	-- Cataclysmic Gladiator's Relic of Conquest
+					i(73624),	-- Cataclysmic Gladiator's Relic of Dominance
+					i(73594),	-- Cataclysmic Gladiator's Relic of Salvation
+					i(73642),	-- Cataclysmic Gladiator's Relic of Triumph
+				})),
 				filter(TRINKET_F, {
 					i(73648),	-- Cataclysmic Gladiator's Badge of Conquest
 					i(73498),	-- Cataclysmic Gladiator's Badge of Dominance
@@ -4482,12 +4489,12 @@ root(ROOTS.PVP, {
 					i(73538),	-- Cataclysmic Gladiator's Medallion of Cruelty (H)
 					i(73534),	-- Cataclysmic Gladiator's Medallion of Meditation (H)
 					i(73537),	-- Cataclysmic Gladiator's Medallion of Tenacity (H)
-					un(REMOVED_FROM_GAME, i(73579)),	-- Cataclysmic Gladiator's Mark of Cruelty
-					un(REMOVED_FROM_GAME, i(73577)),	-- Cataclysmic Gladiator's Mark of Meditation
-					un(REMOVED_FROM_GAME, i(73578)),	-- Cataclysmic Gladiator's Mark of Tenacity
-					un(REMOVED_FROM_GAME, i(73501)),	-- Cataclysmic Gladiator's Symbol of Cruelty
-					un(REMOVED_FROM_GAME, i(73499)),	-- Cataclysmic Gladiator's Symbol of Meditation
-					un(REMOVED_FROM_GAME, i(73500)),	-- Cataclysmic Gladiator's Symbol of Tenacity
+					un(NEVER_IMPLEMENTED, i(73579)),	-- Cataclysmic Gladiator's Mark of Cruelty
+					un(NEVER_IMPLEMENTED, i(73577)),	-- Cataclysmic Gladiator's Mark of Meditation
+					un(NEVER_IMPLEMENTED, i(73578)),	-- Cataclysmic Gladiator's Mark of Tenacity
+					un(NEVER_IMPLEMENTED, i(73501)),	-- Cataclysmic Gladiator's Symbol of Cruelty
+					un(NEVER_IMPLEMENTED, i(73499)),	-- Cataclysmic Gladiator's Symbol of Meditation
+					un(NEVER_IMPLEMENTED, i(73500)),	-- Cataclysmic Gladiator's Symbol of Tenacity
 				}),
 			}),
 			elitepvp(n(PVP_ELITE, bubbleDownSelf({
@@ -4649,13 +4656,15 @@ root(ROOTS.PVP, {
 					i(73695),	-- Cataclysmic Gladiator's Warboots of Alacrity
 					i(73696),	-- Cataclysmic Gladiator's Warboots of Cruelty
 				}),
-				filter(HELD_IN_OFF_HAND, {
+				filter(THROWN, {
 					i(74783),	-- Cataclysmic Gladiator's Hatchet (Throw Weapon)
+					i(73412),	-- Cataclysmic Gladiator's War Edge (Throw Wep)
+				}),
+				filter(RELICS_F, {
 					i(74783),	-- Cataclysmic Gladiator's Relic of Conquest
 					i(74785),	-- Cataclysmic Gladiator's Relic of Dominance
 					i(74784),	-- Cataclysmic Gladiator's Relic of Salvation
 					i(74786),	-- Cataclysmic Gladiator's Relic of Triumph
-					i(73412),	-- Cataclysmic Gladiator's War Edge (Throw Wep)
 				}),
 			}))),
 		})),

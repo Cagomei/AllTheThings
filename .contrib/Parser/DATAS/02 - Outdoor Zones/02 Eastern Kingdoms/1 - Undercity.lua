@@ -106,7 +106,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = { {"sub", "common_recipes_vendor", 3356 } },	-- Sumi <Blacksmithing Supplies>
 						["coord"] = { 61.4, 30.1, UNDERCITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {}),
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {}),
 					}),
 				}),
 				prof(COOKING, {
@@ -155,16 +155,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = { {"sub", "common_recipes_vendor", 3346 } },	-- Kithas <Enchanting Supplies>
 						["coord"] = { 62.0, 60.8, UNDERCITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							-- #if BEFORE CATA
-							i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-								["isLimited"] = true,
-							}),
-							-- #endif
-							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						},
+						["groups"] = appendGroups(VANILLA_ENCHANTING_SUPPLIES, {}),
 					}),
 				}),
 				prof(ENGINEERING, {

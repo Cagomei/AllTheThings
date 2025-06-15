@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER CATA
 						["sym"] = { { "sub", "common_recipes_vendor", 3356 } },	-- Sumi <Blacksmithing Supplies>
 						-- #endif
-						["groups"] = appendGroups(VANILLA_BLACKSMITHING_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {
 							i(23591, {	-- Plans: Adamantite Cleaver (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER CATA
 						["sym"] = { { "sub", "common_recipes_vendor", 3346 } },	-- Kithas <Enchanting Supplies>
 						-- #endif
-						["groups"] = LYNA_GROUPS,
+						["groups"] = appendGroups(LYNA_GROUPS, VANILLA_ENCHANTING_SUPPLIES, {}),
 					}),
 				}),
 				prof(ENGINEERING, {
