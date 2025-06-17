@@ -74,6 +74,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(26741),	-- REUSE - triggered after completing "The Hunt" (questID 26340)
 		-- #endif
 		q(24644),	-- Troll Introduction Complete
+		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in Darkshore
 	}),
 
 	-------------------
@@ -557,7 +558,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(53565),	-- triggered after completing my first arena win in BFA (possibly season-specific but idk)
 
 		--	TREASURES
-		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in Darkshore
 		q(54872),	-- Opening a Darkshore chest
 		q(54877),	-- Opening a Darkshore chest
 		q(54879),	-- Opening a Darkshore chest

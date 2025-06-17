@@ -31,18 +31,27 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155172,	-- Trapdoor Bee Hunter
+							["g"] = {
+								i(172145),	-- Unremarkable Spider-Fang
+							},
 						}),
 						q(56474, {	-- Hivekiller Stinger
 							["provider"] = { "i", 169655 },	-- Hivekiller Stinger
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155171,	-- The Hivekiller
+							["g"] = {
+								i(172144),	-- Glittering Stinger
+							},
 						}),
 						q(56092, {	-- Hivethief's Jelly Stash
 							["provider"] = { "i", 169657 },	-- Hivethief's Jelly Stash
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155055,	-- Gurg the Hivethief
+							["g"] = {
+								i(172147),	-- Nugget Honey
+							},
 						}),
 						q(56108, {	-- Leaving the Hive
 							["provider"] = { "n", 155745 },	-- Honeyback Harvester
@@ -59,12 +68,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155176,	-- Old Nasha
+							["g"] = {
+								i(172146),	-- Glazed Bear Meat
+							},
 						}),
 						q(56475, {	-- Spiral Yeti Horn
 							["provider"] = { "i", 169654 },	-- Spiral Yeti Horn
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155059,	-- Yorag the Jelly Feaster
+							["g"] = {
+								i(172143),	-- Perforated Spiral Horn
+							},
 						}),
 						q(57670, {	-- Unbeelievable Quality
 							["providers"] = {
@@ -79,6 +94,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155173,	-- Honeyback Usurper
+							["g"] = {
+								i(172142),	-- Pilfered Beeswax
+							},
 						}),
 					}),
 					o(327230, {	-- Jelly Deposit
@@ -197,6 +215,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						},
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
+							i(169152),	-- Empty Beehive
 							i(168822),	-- Thin Jelly
 						},
 					}),
@@ -261,6 +280,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 								i(169141),	-- Butterfly Net
 								i(169395),	-- Summit Zephyr
 							},
+						}),
+						n(155176, {	-- Honeyback Hivemother
+							i(169862, {	-- Alluring Bloom
+								["minReputation"] = { FACTION_HONEYBACK_HIVE, FRIENDLY },	-- Honeyback Hive, Friendly
+								["cost"] = {
+									{ "i", 168822, 5 },	-- Thin Jelly x5
+								},
+							}),
 						}),
 					}),
 				},

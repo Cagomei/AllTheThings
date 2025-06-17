@@ -202,7 +202,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 							i(238980),	-- Pendant of the Keep
 
 							-- Shadowfang Keep (not yet sourced)
-							-- i(238981),	-- Gloves of the Uplifted Cup
+							i(238981),	-- Gloves of the Uplifted Cup
 							i(238982),	-- Baron Silverlaine's Greaves
 							i(238983),	-- Boots of Lingering Sorrow
 

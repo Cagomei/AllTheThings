@@ -3110,7 +3110,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 						i(20755),	-- Formula: Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-						i(22308),	-- Pattern: Enchanted Runecloth Bag (RECIPE!)
+						applyclassicphase(PHASE_FIVE_RECIPES, i(22308)),	-- Pattern: Enchanted Runecloth Bag (RECIPE!)
 					},
 				}),
 				n(15175, {	-- Khur Hornstriker <Reagent Vendor>

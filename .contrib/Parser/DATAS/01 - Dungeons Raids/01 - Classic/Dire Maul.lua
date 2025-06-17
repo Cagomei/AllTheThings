@@ -2088,7 +2088,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								["timeline"] = { ADDED_1_15_3 },
 							})),
 							-- #endif
-							i(18487, {	-- Pattern: Mooncloth Robe
+							i(18487, {	-- Pattern: Mooncloth Robe (RECIPE!)
 								-- #if SEASON_OF_DISCOVERY
 								["timeline"] = { REMOVED_1_15_3 },
 								-- #endif

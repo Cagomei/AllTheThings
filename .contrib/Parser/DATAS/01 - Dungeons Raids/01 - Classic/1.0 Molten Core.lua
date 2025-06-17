@@ -452,8 +452,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(18260),	-- Formula: Enchant Weapon - Healing Power (RECIPE!)
 					i(18259),	-- Formula: Enchant Weapon - Spellpower (RECIPE!)
 					i(18252),	-- Pattern: Core Armor Kit (RECIPE!)
-					i(21371),	-- Pattern: Core Felcloth Bag
-					i(18265),	-- Pattern: Flarecore Wraps
+					i(21371),	-- Pattern: Core Felcloth Bag (RECIPE!)
+					i(18265),	-- Pattern: Flarecore Wraps (RECIPE!)
 					i(18264),	-- Plans: Elemental Sharpening Stone (RECIPE!)
 					i(18257),	-- Recipe: Major Rejuvenation Potion (RECIPE!)
 					i(18290),	-- Schematic: Biznicks 247x128 Accurascope (RECIPE!)

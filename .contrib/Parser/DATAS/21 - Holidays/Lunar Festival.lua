@@ -356,10 +356,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				-- #if BEFORE 3.0.8.9464
 				i(21640),	-- Lunar Festival Fireworks Pack
 				-- #endif
-				i(21722, {	-- Pattern: Festival Dress
+				i(21722, {	-- Pattern: Festival Dress (RECIPE!)
 					["timeline"] = { REMOVED_3_0_8 },
 				}),
-				i(21723, {	-- Pattern: Festival Suit
+				i(21723, {	-- Pattern: Festival Suit (RECIPE!)
 					["timeline"] = { REMOVED_3_0_8 },
 				}),
 			},
@@ -1501,11 +1501,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
-				i(44916, {	-- Pattern: Festival Dress
+				i(44916, {	-- Pattern: Festival Dress (RECIPE!)
 					["timeline"] = { ADDED_3_0_8 },
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 				}),
-				i(44917, {	-- Pattern: Festival Suit
+				i(44917, {	-- Pattern: Festival Suit (RECIPE!)
 					["timeline"] = { ADDED_3_0_8 },
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 				}),

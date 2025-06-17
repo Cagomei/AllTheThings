@@ -2707,7 +2707,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 					},
 				}),
 			}),
@@ -2758,11 +2758,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_11_1_5 },	-- Data Discord 28.04.2025
 				}),
 				-- #endif
-				i(14473, {	-- Pattern: Ghostweave Belt
+				i(14473, {	-- Pattern: Ghostweave Belt (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },	-- Learned from trainer
 					["cr"] = 7864,	-- Lingering Highborne
 				}),
-				i(14477, {	-- Pattern: Ghostweave Gloves
+				i(14477, {	-- Pattern: Ghostweave Gloves (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },	-- Learned from trainer
 					["cr"] = 7864,	-- Lingering Highborne
 				}),

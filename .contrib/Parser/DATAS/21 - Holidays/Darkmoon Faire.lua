@@ -3599,6 +3599,42 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78239)),	-- Replica Wildheart Spaulders
 						darkmoonprizeticket(75, i(78242)),	-- Replica Wildheart Vest
 					}),
+					darkmoonprizeticket(75, iensemble(171984, {	-- Ensemble: Battlegear of Valor
+						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
+						["timeline"] = { ADDED_8_2_5 }, 
+					})),
+					darkmoonprizeticket(75, iensemble(171977, {	-- Ensemble: Beaststalker Armor
+						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
+						["timeline"] = { ADDED_8_2_5 }, 
+					})),
+					darkmoonprizeticket(75, iensemble(171983, {	-- Ensemble: Dreadmist Raiment
+						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
+						["timeline"] = { ADDED_8_2_5 }, 
+					})),
+					darkmoonprizeticket(75, iensemble(171979, {	-- Ensemble: Lightforge Armor
+						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
+						["timeline"] = { ADDED_8_2_5 }, 
+					})),
+					darkmoonprizeticket(75, iensemble(171978, {	-- Ensemble: Magister's Regalia
+						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
+						["timeline"] = { ADDED_8_2_5 }, 
+					})),
+					darkmoonprizeticket(75, iensemble(171981, {	-- Ensemble: Shadowcraft Armor
+						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
+						["timeline"] = { ADDED_8_2_5 }, 
+					})),
+					darkmoonprizeticket(75, iensemble(171982, {	-- Ensemble: The Elements
+						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
+						["timeline"] = { ADDED_8_2_5 }, 
+					})),
+					darkmoonprizeticket(75, iensemble(171980, {	-- Ensemble: Vestments of the Devout
+						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
+						["timeline"] = { ADDED_8_2_5 }, 
+					})),
+					darkmoonprizeticket(75, iensemble(171976, {	-- Ensemble: Wildheart Raiment
+						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
+						["timeline"] = { ADDED_8_2_5 }, 
+					})),
 				},
 			})),
 			n(57983, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Baruma <Replica Armor Prizes>

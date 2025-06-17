@@ -841,12 +841,15 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 153617 },	-- Shandris Feathermoon
 		}),
-		q(57246,{	-- Eel Filet [A]
+		q(57246, {	-- Eel Filet [A]
 			["races"] = ALLIANCE_ONLY,
-			["provider"] = { "i", 170167 },	-- Eel Filet
+			["providers"] = {
+				{ "i", 170167 },	-- Eel Filet
+				{ "n", 149805 },	-- Farseer Ori
+			},
 			["repeatable"] = true,
 		}),
-		q(56971,{	-- Eel Filet [H]
+		q(56971, {	-- Eel Filet [H]
 			["races"] = HORDE_ONLY,
 			["provider"] = { "i", 170167 },	-- Eel Filet
 			["repeatable"] = true,

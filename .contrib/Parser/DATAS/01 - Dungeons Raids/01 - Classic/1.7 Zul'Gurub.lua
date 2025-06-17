@@ -948,9 +948,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						-- #endif
 						i(19772),	-- Pattern: Blood Tiger Breastplate (RECIPE!)
 						i(19773),	-- Pattern: Blood Tiger Shoulders (RECIPE!)
-						i(19766),	-- Pattern: Bloodvine Boots
-						i(19765),	-- Pattern: Bloodvine Leggings
-						i(19764),	-- Pattern: Bloodvine Vest
+						i(19766),	-- Pattern: Bloodvine Boots (RECIPE!)
+						i(19765),	-- Pattern: Bloodvine Leggings (RECIPE!)
+						i(19764),	-- Pattern: Bloodvine Vest (RECIPE!)
 						i(19771),	-- Pattern: Primal Batskin Bracers (RECIPE!)
 						i(19770),	-- Pattern: Primal Batskin Gloves (RECIPE!)
 						i(19769),	-- Pattern: Primal Batskin Jerkin (RECIPE!)

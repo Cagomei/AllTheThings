@@ -511,7 +511,7 @@ local function SetRowData(self, row, data)
 		local text = data.text;
 		if IsRetrieving(text) then
 			text = RETRIEVING_DATA;
-			self.processingLinks = true;
+			-- self.processingLinks = true;
 		end
 		local leftmost, relative, rowPad = row, "LEFT", 8;
 		local x = CalculateRowIndent(data) * rowPad + rowPad;
@@ -713,10 +713,10 @@ local function Refresh(self)
 		-- print("Refresh-UpdateDone",self.Suffix)
 		Callback(self.UpdateDone, self);
 	-- If the rows need to be processed again, do so next update.
-	elseif self.processingLinks then
+	-- elseif self.processingLinks then
 		-- print("Refresh-processingLinks",self.Suffix)
-		Callback(self.Refresh, self);
-		self.processingLinks = nil;
+		-- Callback(self.Refresh, self);
+		-- self.processingLinks = nil;
 	end
 	-- app.PrintDebugPrior("Refreshed:",self.Suffix)
 	if GameTooltip and GameTooltip:IsVisible() then

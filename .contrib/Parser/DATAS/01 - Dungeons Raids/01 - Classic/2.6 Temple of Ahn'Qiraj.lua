@@ -1707,10 +1707,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							i(234237), -- Pattern: Razorbramble Cowl
 							i(234239), -- Pattern: Razorbramble Leathers
 							i(234238), -- Pattern: Razorbramble Shoulderpads
-							i(234244), -- Pattern: Qiraji Silk Scarf
-							i(234249), -- Pattern: Qiraji Silk Cape
-							i(234250), -- Pattern: Qiraji Silk Cloak
-							i(234251), -- Pattern: Qiraji Silk Drape
+							i(234249), -- Pattern: Qiraji Silk Cape (RECIPE!)
+							i(234250), -- Pattern: Qiraji Silk Cloak (RECIPE!)
+							i(234251), -- Pattern: Qiraji Silk Drape (RECIPE!)
+							i(234244), -- Pattern: Qiraji Silk Scarf (RECIPE!)
 							i(234240), -- Pattern: Vampiric Cowl
 							i(234241), -- Pattern: Vampiric Shawl
 							i(234242), -- Pattern: Vampiric Robe
@@ -1724,10 +1724,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							i(234220), -- Plans: Razorspike Headcage
 							i(234221), -- Plans: Razorspike Shoulderplates
 							i(234222), -- Plans: Razorspike Battleplate
-							i(234252), -- Recipe: Flask of Unyielding Sorrow (RECIPE!)
 							i(234253), -- Recipe: Flask of Ancient Knowledge (RECIPE!)
-							i(234255), -- Recipe: Flask of the Old Gods (RECIPE!)
 							i(234256), -- Recipe: Flask of Madness (RECIPE!)
+							i(234255), -- Recipe: Flask of the Old Gods (RECIPE!)
+							i(234252), -- Recipe: Flask of Unyielding Sorrow (RECIPE!)
 							i(234264), -- Schematic: G00 DV-1B3 Generator
 							i(234265), -- Schematic: Tuned Force Reactive Disk
 							i(234435), -- Schematic: Obsidian Shotgun

@@ -3566,9 +3566,9 @@ appendGroups({
 	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-	i(22307),	-- Pattern: Enchanted Mageweave Pouch
+	i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 	-- #if BEFORE CATA
-	i(6342),	-- Formula: Enchant Chest - Minor Mana
+	i(6342),	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
 	-- #endif
 }, FELANNIA_JOHAN_GROUPS);
 

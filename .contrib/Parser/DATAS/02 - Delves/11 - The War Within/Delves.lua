@@ -1742,7 +1742,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["timeline"] = { ADDED_11_1_5 },	-- TODO: REMOVED_11_2_0?
 		}),
 		-- Season 2 - Overload stuff
+		q(90968, {	-- Titanic Rumblings
+			["isBreadcrumb"] = true,
+		}),
 		q(90969, {	-- Titan Consoles
+			["sourceQuests"] = { 90968 },	-- Titanic Rumblings
 			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II (can also be picked up from journal)
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["coord"] = { 48.0, 43.4, DORNOGAL },

@@ -625,6 +625,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 10.0.2
 			expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 } }, {
 				q(72379),	--
+				q(72370),	-- "riding the airship to the dragon isles for the intro quest."
 				q(74047),	--
 				q(74064),	--
 			})),

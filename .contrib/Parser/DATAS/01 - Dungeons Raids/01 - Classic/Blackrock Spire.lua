@@ -1430,8 +1430,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				i(16250, {	-- Formula: Enchant Weapon - Superior Striking (RECIPE!)
 					["cr"] = 9216,	-- Spirestone Warlord
 				}),
-				i(14513, {	-- Pattern: Robe of the Archmage
+				i(14513, {	-- Pattern: Robe of the Archmage (RECIPE!)
 					["cr"] = 9264,	-- Firebrand Pyromancer
+					-- #if TBC
+					-- During TBC this was made exclusively usable by Mages, then that change was reverted with Wrath.
+					["classes"] = { MAGE },
+					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(227906, {	-- Pattern: Masterwork Volcanic Breastplate (RECIPE!)

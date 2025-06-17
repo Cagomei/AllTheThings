@@ -1104,7 +1104,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				["timeline"] = { ADDED_2_3_0 },
 			}),
 			-- #else
-			i(17724),	-- Pattern: Green Holiday Shirt
+			i(17724),	-- Pattern: Green Holiday Shirt (RECIPE!)
 			-- #endif
 			i(17712, {	-- Winter Veil Disguise Kit (TOY!)
 				["description"] = "Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",
@@ -1418,7 +1418,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["groups"] = {
 				i(17725),	-- Formula: Enchant Weapon - Winter's Might (RECIPE!)
 				i(17722),	-- Pattern: Gloves of the Greatfather (RECIPE!)
-				i(17724),	-- Pattern: Green Holiday Shirt
+				i(17724),	-- Pattern: Green Holiday Shirt (RECIPE!)
 				i(17706),	-- Plans: Edge of Winter (RECIPE!)
 				i(17709),	-- Recipe: Elixir of Frost Power (RECIPE!)
 				i(17720),	-- Schematic: Snowmaster 9000 (RECIPE!)
@@ -1462,7 +1462,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					}),
 					-- #endif
 					i(17722),	-- Pattern: Gloves of the Greatfather (RECIPE!)
-					i(17724),	-- Pattern: Green Holiday Shirt
+					i(17724),	-- Pattern: Green Holiday Shirt (RECIPE!)
 					i(17706),	-- Plans: Edge of Winter (RECIPE!)
 					i(17709),	-- Recipe: Elixir of Frost Power (RECIPE!)
 					i(17720),	-- Schematic: Snowmaster 9000 (RECIPE!)

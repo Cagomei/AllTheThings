@@ -1737,7 +1737,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				["description"] = "Drops only with equipped Argent Dawn Commission",
 				["timeline"] = { ADDED_10_1_5 },
 			}),
-			i(14514, {	-- Pattern: Robe of the Void
+			i(14514, {	-- Pattern: Robe of the Void (RECIPE!)
 				-- #if TBC
 				-- During TBC this was made exclusively usable by Warlocks, then that change was reverted with Wrath.
 				["classes"] = { WARLOCK },

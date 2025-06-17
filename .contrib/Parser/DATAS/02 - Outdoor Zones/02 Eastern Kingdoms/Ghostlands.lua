@@ -1444,7 +1444,7 @@ for i,o in ipairs({
 
 -- Add the recipes to Rathis' loot table, these were available long before TBC.
 for i,o in ipairs({
-	i(5771, {	-- Pattern: Red Linen Bag
+	i(5771, {	-- Pattern: Red Linen Bag (RECIPE!)
 		["isLimited"] = true,
 	}),
 }) do table.insert(RATHIS_TOMBER_GROUPS, o); end

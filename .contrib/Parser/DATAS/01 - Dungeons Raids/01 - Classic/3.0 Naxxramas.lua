@@ -1911,22 +1911,22 @@ applyclassicphase(PHASE_SIX,
 										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 										["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
 									}),
-									{
-										["itemID"] = 22685,	-- Pattern: Glacial Cloak
-										["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
-									},
-									{
-										["itemID"] = 22684,	-- Pattern: Glacial Gloves
+									r(28208, {	-- Glacial Cloak (RECIPE!)
+										["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Revered.
+										["requireSkill"] = TAILORING,
+									}),
+									r(28205, {	-- Glacial Gloves (RECIPE!)
 										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22686,	-- Pattern: Glacial Vest
-										["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
-									},
-									{
-										["itemID"] = 22687,	-- Pattern: Glacial Wrists
+										["requireSkill"] = TAILORING,
+									}),
+									r(28207, {	-- Glacial Vest (RECIPE!)
+										["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Revered.
+										["requireSkill"] = TAILORING,
+									}),
+									r(28209, {	-- Glacial Wrists (RECIPE!)
 										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
-									},
+										["requireSkill"] = TAILORING,
+									}),
 									r(28244, {	-- Icebane Bracers (RECIPE!)
 										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 										["requireSkill"] = BLACKSMITHING,

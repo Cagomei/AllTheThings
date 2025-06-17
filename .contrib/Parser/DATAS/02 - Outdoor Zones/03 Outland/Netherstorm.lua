@@ -2024,7 +2024,7 @@ root(ROOTS.Zones, {
 							h(i(77592)),	-- Replica High Warlord's Tome of Mending
 							h(i(77593)),	-- Replica High Warlord's Tome of Destruction
 							h(i(77597)),	-- Replica High Warlord's Shield Wall
-						}))),						
+						}))),
 						-- #endif
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, n(33933, {	-- Big Zokk Torquewrench <Arena Vendor> // Original S8 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
@@ -2827,6 +2827,6 @@ local COMMON_ENCHANTING_RECIPES = {
 	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-	i(22307),	-- Pattern: Enchanted Mageweave Pouch
+	i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 };
 appendGroups(COMMON_ENCHANTING_RECIPES, ASARNAN_MALIJ_GROUPS);

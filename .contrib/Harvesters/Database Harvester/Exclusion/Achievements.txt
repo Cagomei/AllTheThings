@@ -6,6 +6,7 @@
 1680@@@Loremaster of Kalimdor
 1681@@@The Loremaster
 1682@@@The Loremaster
+1784@@@Hail to the Chef
 3.3.5.12340
 3838@@@Dungeon & Raid Emblem
 3839@@@25 Dungeon & Raid Emblems
@@ -18,3 +19,6 @@
 4785@@@Emblematic
 4.0.1.12911
 4983@@@Loremaster of Cataclysm
+4.3.4.15595
+5846@@@A Bunch of Lunch
+5852@@@Gone Fishin'

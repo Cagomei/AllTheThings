@@ -2365,6 +2365,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 83.8, 63.1, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(23776) },	-- Warsong Lumber (QI!)
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, pvp(q(79090, {	-- Repelling Invaders

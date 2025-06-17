@@ -946,23 +946,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 						["races"] = HORDE_ONLY,
 						["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, VANILLA_TAILORING_VENDOR_REAGENTS, {
-							i(6270, {	-- Pattern: Blue Linen Vest
+							i(6270, {	-- Pattern: Blue Linen Vest (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(6274, {	-- Pattern: Blue Overalls
+							i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
 								["isLimited"] = true,
 							}),
 							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_ONE, i(215369)),	-- Pattern: Invoker's Cord
-							applyclassicphase(SOD_PHASE_ONE, i(215370)),	-- Pattern: Invoker's Mantle
+							applyclassicphase(SOD_PHASE_ONE, i(215369)),	-- Pattern: Invoker's Cord (RECIPE!)
+							applyclassicphase(SOD_PHASE_ONE, i(215370)),	-- Pattern: Invoker's Mantle (RECIPE!)
 							-- #endif
-							i(10314, {	-- Pattern: Lavender Mageweave Shirt
+							i(10314, {	-- Pattern: Lavender Mageweave Shirt (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(10317, {	-- Pattern: Pink Mageweave Shirt
+							i(10317, {	-- Pattern: Pink Mageweave Shirt (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(5772, {	-- Pattern: Red Woolen Bag
+							i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 								["isLimited"] = true,
 							}),
 						}),
@@ -977,7 +977,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch
+							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 						},
 					}),
 					n(133239, {	-- Leyweaver Aurielle
@@ -988,19 +988,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
 						},
 						["groups"] = {
-							i(6270, {	-- Pattern: Blue Linen Vest
+							i(6270, {	-- Pattern: Blue Linen Vest (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(6274, {	-- Pattern: Blue Overalls
+							i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(10314, {	-- Pattern: Lavender Mageweave Shirt
+							i(10314, {	-- Pattern: Lavender Mageweave Shirt (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(10317, {	-- Pattern: Pink Mageweave Shirt
+							i(10317, {	-- Pattern: Pink Mageweave Shirt (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(5772, {	-- Pattern: Red Woolen Bag
+							i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -1024,22 +1024,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
 						},
 						["groups"] = {
-							i(6270, {	-- Pattern: Blue Linen Vest
+							i(6270, {	-- Pattern: Blue Linen Vest (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(6274, {	-- Pattern: Blue Overalls
+							i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(10314, {	-- Pattern: Lavender Mageweave Shirt
+							i(10314, {	-- Pattern: Lavender Mageweave Shirt (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(10317, {	-- Pattern: Pink Mageweave Shirt
+							i(10317, {	-- Pattern: Pink Mageweave Shirt (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(5772, {	-- Pattern: Red Woolen Bag
+							i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
+					}),
+					n(3363, {	-- Magar <Tailoring Trainer>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 60.6, 59.0, ORGRIMMAR },
+							-- #else
+							{ 63.6, 50.0, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = CLASSIC_TAILORING,
 					}),
 				}),
 				n(5817, {	-- Shimra <Trade Supplies>
@@ -3421,6 +3432,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(214070, {	-- Jornah <Supply Officer>
+					["coord"] = { 51.6, 64.6, ORGRIMMAR },
+					["groups"] = bubbleDownClassicRep(DUROTAR_SUPPLY_AND_LOGISTICS, {
+						{	-- Neutral
+						},
+						{	-- Friendly
+						},
+						{	-- Honored
+							i(211247),	-- Pattern: Phoenix Bindings (RECIPE!)
+						},
+						{	-- Revered
+						},
+						{	-- Exalted
+						},
+					}),
+				}),
+				-- #endif
 				n(3322, {	-- Kaja <Bow & Rifle Vendor>
 					["coord"] = { 40.8, 49.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,

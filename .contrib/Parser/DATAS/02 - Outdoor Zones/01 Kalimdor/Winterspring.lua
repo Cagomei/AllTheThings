@@ -2305,7 +2305,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
-						i(7091),	-- Pattern: Truefaith Gloves
+						i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
 						-- #endif
 						i(18679, {	-- Frigid Ring
 							["timeline"] = { REMOVED_4_0_3 },
@@ -2467,11 +2467,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(15740, {	-- Pattern: Frostsaber Boots (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(14526),	-- Pattern: Mooncloth
-						i(14468, {	-- Pattern: Runecloth Bag
+						i(14526),	-- Pattern: Mooncloth (RECIPE!)
+						i(14468, {	-- Pattern: Runecloth Bag (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(14481, {	-- Pattern: Runecloth Gloves
+						i(14481, {	-- Pattern: Runecloth Gloves (RECIPE!)
 							["timeline"] = { REMOVED_2_0_1 },	-- Moved to Trainers
 							-- #if BEFORE TBC
 							["isLimited"] = true,
@@ -2706,7 +2706,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				i(14493, {	-- Pattern: Robe of Winter Night
+				i(14493, {	-- Pattern: Robe of Winter Night (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7437,	-- Cobalt Mageweaver
 					-- Wont return, its on timewalking vendor

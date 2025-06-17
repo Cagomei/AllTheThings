@@ -15,7 +15,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			d(DIFFICULTY.SOD.PLAYER20, {
 				["groups"] = {
 					n(11036, {	-- Leonid Barthalomew the Revered <The Argent Dawn>
-						["coords"] = { 
+						["coords"] = {
 							{ 81.6, 57.8, EASTERN_PLAGUELANDS },	-- Leonid Barthalomew the Revered <The Argent Dawn>
 							{ 98.6, 84.0, EASTERN_PLAGUELANDS },	-- Bryon Steelblade, but he sells the exact same items
 						},
@@ -77,7 +77,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								i(239543),	-- Dawnstalker Tunic
 								i(239544),	-- Dawnstalker Wristguards
 							}),
-							cl(MAGE, {	
+							cl(MAGE, {
 								-- DPS
 								i(240052),	-- Fireleaf Bindings
 								i(240053),	-- Fireleaf Belt
@@ -253,8 +253,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 						},
 					}),
+					n(ZONE_DROPS, {
+						i(238301),	-- Pattern: Scarlet Augur's Cuffs (RECIPE!)
+						i(238304),	-- Pattern: Scarlet Augur's Leggings (RECIPE!)
+						i(238302),	-- Pattern: Scarlet Augur's Mitts (RECIPE!)
+						i(238305),	-- Pattern: Scarlet Augur's Soles (RECIPE!)
+						i(238303),	-- Pattern: Scarlet Augur's Strap (RECIPE!)
+					}),
 					n(COMMON_BOSS_DROPS),
-					e(3185, {	-- Balnazzar 
+					e(3185, {	-- Balnazzar
 						["creatureID"] = 240811,
 						["groups"] = {
 							i(239719), -- Consecrated Bindings
@@ -294,7 +301,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(241177), -- Kilt of the Scarlet Arcanist
 							i(239216), -- Lightforged Iron
 							i(241159), -- Monastery Garb
-							i(238300), -- Pattern: Scarlet Augur's Vestaments
+							i(238300), -- Pattern: Scarlet Augur's Vestaments (RECIPE!)
 							i(238308), -- Pattern: Scarlet Infiltrator's Vest
 							i(238316), -- Pattern: Scarlet Huntsman's Chain
 							i(238324), -- Plans: Scarlet Soldier's Chestplate
@@ -337,7 +344,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(239710), -- Consecrated Sandals
 							i(239726), -- Consecrated Boots
 							i(239216), -- Lightforged Iron
-							i(238299), -- Pattern: Scarlet Augur's Mantle
+							i(238299), -- Pattern: Scarlet Augur's Mantle (RECIPE!)
 							i(238307), -- Pattern: Scarlet Infiltrator's Shoulderpads
 							i(238315), -- Pattern: Scarlet Huntsman's Pauldrons
 							i(241165), -- Penitent Wraps
@@ -374,11 +381,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					e(3188, {	-- Reborn Council
-						["crs"] = { 
+						["crs"] = {
 							240810,	-- Doan
 							240795,	-- Herod <The Scarlet Champion>
 							240809,	-- Vishas
-						},	
+						},
 						["groups"] = {
 							i(241015), -- Aegis of the Scarlet Bastion
 							i(241008), -- Condemnation
@@ -440,9 +447,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(241039), -- Infusion of Souls
 							i(240920), -- Leogan
 							i(239216), -- Lightforged Iron
-							i(238298), -- Pattern: Scarlet Augur's Hood
-							i(238299), -- Pattern: Scarlet Augur's Mantle
-							i(238300), -- Pattern: Scarlet Augur's Vestaments
+							i(238298), -- Pattern: Scarlet Augur's Hood (RECIPE!)
+							i(238299), -- Pattern: Scarlet Augur's Mantle (RECIPE!)
+							i(238300), -- Pattern: Scarlet Augur's Vestaments (RECIPE!)
 							i(238306), -- Pattern: Scarlet Infiltrator's Bandana
 							i(238307), -- Pattern: Scarlet Infiltrator's Shoulderpads
 							i(238308), -- Pattern: Scarlet Infiltrator's Vest
@@ -462,7 +469,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(241001), -- Tyr's Fall
 						},
 					}),
-				}),
+				},
 			}),
 		},
 	}))),

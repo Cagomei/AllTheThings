@@ -733,13 +733,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(446188),	-- Fearmonger's Shoulderguards
 						recipe(446226),	-- Flask of Everlasting Nightmares
 						recipe(448085),	-- Flask of Restless Dreams
-						recipe(446193),	-- Fractured Mind Pauldrons
-						recipe(446194),	-- Mantle of Insanity
+						r(446193, {	-- Fractured Mind Pauldrons (RECIPE!)
+							["requireSkill"] = TAILORING,
+						}),
+						r(446194, {	-- Mantle of Insanity (RECIPE!)
+							["requireSkill"] = TAILORING,
+						}),
 						recipe(446192),	-- Membrane of Dark Neurosis
 						recipe(446183),	-- Paranoia Mantle
 						recipe(451706),	-- Screaming Chain Pauldrons
 						recipe(446189),	-- Shoulderpads of Obsession
-						recipe(446195),	-- Shoulderpads of the Deranged
+						r(446195, {	-- Shoulderpads of the Deranged (RECIPE!)
+							["requireSkill"] = TAILORING,
+						}),
 						recipe(446179),	-- Shoulderplates of Dread
 						recipe(446185),	-- Shrieking Spaulders
 						recipe(446236),	-- Void-Powered Invoker's Vambraces
@@ -754,25 +760,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(7940, {	-- Darnall <Tailoring Supplies>
 					["coord"] = { 51.6, 33.2, MOONGLADE },
 					["groups"] = {
-						i(14488, {	-- Pattern: Runecloth Boots
+						i(14488, {	-- Pattern: Runecloth Boots (RECIPE!)
 							["timeline"] = { REMOVED_2_0_1 },	-- Learned from trainer, recipe removed.
-							-- #if BEFORE 2.0.1
 							["isLimited"] = true
-							-- #endif
 						}),
-						i(14472, {	-- Pattern: Runecloth Cloak
+						i(14472, {	-- Pattern: Runecloth Cloak (RECIPE!)
 							["timeline"] = { REMOVED_6_0_2 },	-- Learned from trainer, recipe removed.
 							-- NOTE: Not sure what patch, it's apparently still sold well into MOP. Will check back in future Classic versions.
-							-- #if BEFORE 6.0.1
 							["isLimited"] = true
-							-- #endif
 						}),
-						i(14469, {	-- Pattern: Runecloth Robe
+						i(14469, {	-- Pattern: Runecloth Robe (RECIPE!)
 							["timeline"] = { REMOVED_6_0_2 },	-- Learned from trainer, recipe removed.
 							-- NOTE: Not sure what patch, it's apparently still sold well into MOP. Will check back in future Classic versions.
-							-- #if BEFORE 6.0.1
 							["isLimited"] = true
-							-- #endif
 						}),
 					},
 				}),
@@ -813,13 +813,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16224, {	-- Formula: Enchant Cloak - Superior Defense (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(16243, {	-- Formula: Runed Arcanite Rod
+						i(16243, {	-- Formula: Runed Arcanite Rod (RECIPE!)
 							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(136849, {	-- Nature's Beacon (TOY!)
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(14483, {	-- Pattern: Felcloth Pants
+						i(14483, {	-- Pattern: Felcloth Pants (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(141041, {	-- Technique: Glyph of the Forest Path (RECIPE!)

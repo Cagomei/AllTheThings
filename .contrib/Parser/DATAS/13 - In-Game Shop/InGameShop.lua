@@ -88,7 +88,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_10_2_0 },
 		}),
 		i(238966, {	-- Felborn Cormaera (MOUNT!)
-			["timeline"] = { ADDED_11_1_5, "removed 11.1.7.99999" },
+			["timeline"] = { ADDED_11_1_5, "removed 11.1.7.99999" }, -- Removed July 14, 2025
 		}),
 		mount(457485, {	-- Grizzly Hills Packmaster (MOUNT!)
 			["timeline"] = { ADDED_11_0_2 },
@@ -531,8 +531,8 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_10_2_7 },
 		}),
 		------ Lavaborn Emerald Attire Set ------
-		iensemble(238428, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.99999" } }),	-- Ensemble: Lavaborn Emerald Attire
-		i(238948, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.99999" } }),	-- Fel Inferno Helm
+		iensemble(238428, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.99999" } }),	-- Ensemble: Lavaborn Emerald Attire -- Removed July 14, 2025
+		i(238948, {	["timeline"] = { ADDED_11_1_5, "removed 11.1.7.99999" } }),	-- Fel Inferno Helm -- Removed July 14, 2025
 
 		------ Murloc Shells Set ------
 		i(188135, {	-- Frrgl's Shaking Shell

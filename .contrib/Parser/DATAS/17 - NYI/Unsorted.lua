@@ -525,9 +525,6 @@ root(ROOTS.Unsorted, {
 			n(SPECIAL, {	-- Duos
 				-- Hellfire Ramprats (didnt make it)
 				i(238934),	-- Boots of the Darkwalker
-
-				-- Didnt make it
-				i(238981),	-- Gloves of the Uplifted Cup
 			}),
 			n(SPECIAL, {	-- Mysterious???
 				-- Nothing load atm
@@ -722,12 +719,10 @@ root(ROOTS.Unsorted, {
 				i(232869),	-- Arsenal: Elite Prized Gladiator's Weapons
 			}),
 			i(229809),	-- Weighted Metal Ball
-			i(231899),	-- Trash
 			i(235713),	-- Weird Sand
 			i(236635),	-- Uncut Semi-Smoky Quartz
 			i(236651),	-- Vince's Old Left Shoe
 			i(236921),	-- Triumphant Satchel of Carved Harbinger Crests
-			i(237313),	-- Totally Legit Samophlange
 		})),
 		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 			-- Left Remaining To Darkal --
@@ -2009,12 +2004,10 @@ root(ROOTS.Unsorted, {
 				i(155595),	-- PH Flavor - Unused \\ Vicious Spike
 				i(155596),	-- PH Flavor - Unused \\ Ivory Tusk
 				i(155597),	-- PH Flavor - Unused \\ Dire Horn
-				i(155598),	-- Severed Mandible \\ Barbed Stinger
 				i(155599),	-- PH Flavor - Unused \\ Vibrant Feather
 				i(155600),	-- How to Make Money and Influence Subordinates \\ PH Flavor - Unused \\ Trophy Antlers
 				i(155601),	-- Pointy Leg Segment \\ Vacant Stone
 				i(155602),	-- PH Flavor - Unused \\ Tarnished Pelt
-				i(155603),	-- Flaky Fish Scales \\ Pearly Incisor
 				i(155604),	-- PH Flavor - Unused \\ Diamond Flake
 				i(155605),	-- Huge Femur \\ Bloodgorged Sac
 				i(155606),	-- PH Flavor - Unused \\ Intricate Ossicles
@@ -2026,7 +2019,6 @@ root(ROOTS.Unsorted, {
 				i(155612),	-- PH Flavor - Unused \\ Unblighted Wicker
 				i(155613),	-- PH Flavor - Unused \\ Frothing Vapor
 				i(155614),	-- PH Flavor - Unused \\ Resonant Powder
-				i(155615),	-- Pestilent Muck \\ Glittering Dew
 				i(155616),	-- PH Flavor - Unused \\ Lifeless Clay
 				i(155617),	-- Slime Spore \\ Gill Membrane \\ Corrupt Anima
 				i(155618),	-- Discarded Molting \\ Oily Blubber
@@ -2045,8 +2037,6 @@ root(ROOTS.Unsorted, {
 				i(155632),	-- PH Flavor - Unused \\ Viscous Webbing
 				i(155633),	-- Matted Felt \\ Intact Frog Tongue
 				i(155634),	-- PH Flavor - Unused \\ Sleek Quills
-				i(155635),	-- Sinewy Wing \\ Undamaged Eye Stalk
-				i(155636),	-- Viscous Ink \\ Rich Guano
 				i(155637),	-- PH Flavor - Unused \\ Shattered Bindings
 				i(155638),	-- PH Flavor - Unused \\ Jar of Truffles
 				i(155639),	-- PH Flavor - Unused \\ Giant Frog Leg
@@ -2104,7 +2094,6 @@ root(ROOTS.Unsorted, {
 				i(158775),	-- Thick Hivewax \\ PH Flavor - Unused
 				i(158776),	-- PH Flavor - Unused \\ PH Flavor - Hydra - Reptile
 				i(158777),	-- Glimmering Ember \\ PH Flavor - Gilblin
-				i(158778),	-- Mucose Tendril \\ PH Flavor - Sand Elemental
 				i(158779),	-- Robust Horn \\ PH Flavor - Shark - Fish
 				i(158780),	-- PH Flavor - Unused \\ PH Flavor - Hornet / Wasp - Insect
 				i(158781),	-- Pilfered Curio \\ PH Flavor - Threshadon - Dinosaur
@@ -2180,7 +2169,6 @@ root(ROOTS.Unsorted, {
 				i(158855),	-- Grim Skull Fetish \\ PH Flavor - Furbolg \\ PH Flavor
 				i(158856),	-- Giant Frog Leg \\ PH Flavor - Hag - Drust
 				i(158857),	-- Untainted Wicker \\ PH Flavor - Porcupine
-				i(158859),	-- Jagged Fang \\ PH Flavor - Troll Keeper - Zandalari
 				i(158860),	-- Grindstone Molar \\ PH Flavor - Dreadhound
 				i(158861),	-- Tensile Eye Stalk \\ PH Flavor - Troll Male - Blood Troll
 				i(158862),	-- Ancient Grave Dust \\ PH Flavor - Troll Zombie
@@ -2195,9 +2183,7 @@ root(ROOTS.Unsorted, {
 				i(158872),	-- Unstable Essence \\ Tough Sinew \\ PH Flavor - Troll - Sandfury
 				i(158873),	-- Crystalline Honeymead \\ PH Flavor - Dire Troll Female - Blood Troll
 				i(156624),	-- Blemished Pearl
-				i(158210),	-- Fearsome Claw \\ Improvised Shank - PH Prisoner U
 				i(158727),	-- Decayed Equipment
-				i(158874),	-- Frothing Vapor \\ PH Flavor - Human Spirit
 				i(159756),	-- Depleted Azerite \\ PH Flavor - Raptor Spirit
 				i(161198),	-- Old Sailor's Almanac
 				i(161199),	-- Silver-Plated Tankard
@@ -2907,7 +2893,6 @@ root(ROOTS.Unsorted, {
 			i(166424),	-- PH Horde Warfront Warhammer
 			i(166460),	-- Fresh Ravasaur Bits \\ Viable Remains
 			i(166505),	-- Relinquished Azerite Spaulders \\ Relinquished Azerite Shoulder
-			i(166507),	-- Jani's First Offering
 			i(166508),	-- Relinquished Azerite Spaulders \\ Relinquished Azerite Shoulder
 			i(166509),	-- Relinquished Azerite Spaulders \\ Relinquished Azerite Shoulder
 			i(166510),	-- Relinquished Azerite Helm
@@ -3407,41 +3392,6 @@ root(ROOTS.Unsorted, {
 			i(169977),	-- Crumbling Bark \\ Touch of the Everlasting Empty Item
 			i(169978),	-- Cracked Branch \\ Touch of the Everlasting Empty Item
 			i(169979),	-- Shriveled Roots \\ Touch of the Everlasting Empty Item
-			i(172204),	-- Add Keystone Affix: Beguiling
-		})),
-
-		-- 8.2.5
-		expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 } }, {
-			i(169152),	-- Empty Beehive
-			i(169389),	-- [DNT] Lookout's Key
-			i(169651),	-- The Ways of the Old Gods
-			i(169652),	-- Bolt of Embroidered Cloth
-			i(169858),	-- "Bee Bee" Gun
-			i(169862),	-- Alluring Bloom
-			i(170319),	-- Flower of Thoughtfulness
-			i(170321),	-- Flower of Luck
-			i(170322),	-- Flower of Generosity
-			i(171195),	-- Sugary Soul Shard
-			i(171196),	-- Spellstone Delight
-			i(171199),	-- Ookerdooker Elixir
-			i(171348),	-- Torn Scroll of Unearthly Rituals
-			i(171366),	-- Potion of Temporary Lucidity
-			i(171976),	-- Ensemble: Wildheart Raiment
-			i(171977),	-- Ensemble: Beaststalker Armor
-			i(171978),	-- Ensemble: Magister's Regalia
-			i(171979),	-- Ensemble: Lightforge Armor
-			i(171980),	-- Ensemble: Vestments of the Devout
-			i(171981),	-- Ensemble: Shadowcraft Armor
-			i(171982),	-- Ensemble: The Elements
-			i(171983),	-- Ensemble: Dreadmist Raiment
-			i(171984),	-- Ensemble: Battlegear of Valor
-			i(172017),	-- Sharpened Pin
-			i(172018),	-- Red Anniversary Balloons
-			i(172019),	-- Blue Anniversary Balloons
-			i(172091),	-- Leeroy's Spicy Fried Chicken
-			i(172202),	-- Bee in a Bottle
-			i(172224),	-- Winter Veil Gift
-			i(172225),	-- Gently Shaken Gift
 		})),
 	}),
 });

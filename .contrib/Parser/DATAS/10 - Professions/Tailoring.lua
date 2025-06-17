@@ -106,6 +106,22 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		}),
 	})),
+	expansion(EXPANSION.CLASSIC, applyclassicphase(SOD_PHASE_EIGHT, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_7 } }, {
+		q(90116, {	-- Holy Threads
+			["provider"] = { "n", 240631 },	-- Taylor Stitchings <Tailoring Supplies>
+			["coord"] = { 94.6, 83.6, EASTERN_PLAGUELANDS },
+			["g"] = {
+				i(239149),	-- Pattern: Crusader's Knapsack (RECIPE!)
+			},
+		}),
+		q(90120, {	-- Red is Not Dead
+			["provider"] = { "n", 240631 },	-- Taylor Stitchings <Tailoring Supplies>
+			["coord"] = { 94.6, 83.6, EASTERN_PLAGUELANDS },
+			["g"] = {
+				i(239150),	-- Pattern: Crimson Dawnwoven Bag (RECIPE!)
+			},
+		}),
+	}))),
 	expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 			ach(17499, {	-- Renowned Tailoring Specialist

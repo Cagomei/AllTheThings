@@ -52,10 +52,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 88.6, 73.6, ALTERAC_MOUNTAINS },
 					["groups"] = {
-						recipe(429351),	-- Extraplanar Spidersilk Boots
-						recipe(429348),	-- Shifting Silver Breastplate
-						recipe(429869),	-- Void-Touched Leather Gauntlets
-						recipe(429354),	-- Void-Touched Leather Gloves
+						r(429351, {	-- Extraplanar Spidersilk Boots (RECIPE!)
+							["requireSkill"] = TAILORING,
+						}),
+						r(429348, {	-- Shifting Silver Breastplate (RECIPE!)
+							["requireSkill"] = BLACKSMITHING,
+						}),
+						r(429869, {	-- Void-Touched Leather Gauntlets (RECIPE!)
+							["requireSkill"] = LEATHERWORKING,
+						}),
+						r(429354, {	-- Void-Touched Leather Gloves (RECIPE!)
+							["requireSkill"] = LEATHERWORKING,
+						}),
 						i(211422),	-- Shard of the Void
 					},
 				})),
@@ -947,7 +955,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if BEFORE CATA
-				i(5775, {	-- Pattern: Black Silk Pack
+				i(5775, {	-- Pattern: Black Silk Pack (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 2434,	-- Shadowy Assassin
 				}),

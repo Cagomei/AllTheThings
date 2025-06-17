@@ -777,11 +777,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 			}),
 		})),
 		header(HEADERS.Achievement, 41820, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {	-- Rise of the Red Dawn
+			q(91039, {	-- Faerin's Request
+				["isBreadcrumb"] = true,
+			}),
 			q(84638, {	-- Trouble in the Highlands
-				--["sourceQuests"] = { ?? },	-- 
+				["sourceQuests"] = { 91039 },	-- Faerin's Request
 				["provider"] = { "n", 223875 },	-- Faerin Lothar
 				["coord"] = { 46.0, 49.6, DORNOGAL },
-				--["isBreadcrumb"] = true,	-- TODO: confirm it?
 			}),
 			q(84658, {	-- Finding Family
 				["sourceQuests"] = { 84638 },	-- Trouble in the Highlands

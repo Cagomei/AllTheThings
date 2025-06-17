@@ -1939,7 +1939,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		i(3531),	-- Heavy Wool Bandage
 		i(1251),	-- Linen Bandage
 		i(8544),	-- Mageweave Bandage
-		i(19440),	-- Powerful Anti-Venom
+		applyclassicphase(PHASE_THREE_RECIPES, i(19440)),	-- Powerful Anti-Venom
 		i(14529),	-- Runecloth Bandage
 		i(6450),	-- Silk Bandage
 		i(6453),	-- Strong Anti-Venom
@@ -3542,7 +3542,163 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	}),
 	prof(TAILORING, {
 		n(ARMOR, {
+			i(10030),	-- Admiral's Hat
+			applyclassicphase(PHASE_THREE_RECIPES, i(19056)),	-- Argent Boots
+			applyclassicphase(PHASE_THREE_RECIPES, i(19059)),	-- Argent Shoulders
+			i(7060),	-- Azure Shoulders
+			i(7052),	-- Azure Silk Belt
+			i(7053),	-- Azure Silk Cloak
+			i(4319),	-- Azure Silk Gloves
+			i(7048),	-- Azure Silk Hood
+			i(7046),	-- Azure Silk Pants
+			i(4324),	-- Azure Silk Vest
+			i(2578),	-- Barbaric Linen Vest
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18405, {	-- Belt of the Archmage
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3, ADDED_8_1_5,
+					-- #endif
+				},
+			})),
 			i(206500, {["timeline"] = {ADDED_10_1_5}}),	-- Bindings of the Harvested Soul
+			i(10026),	-- Black Mageweave Boots
+			i(10003),	-- Black Mageweave Gloves
+			i(10024),	-- Black Mageweave Headband
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217247, {["timeline"] = {ADDED_1_15_1}})),	-- Black Mageweave Leggings
+			i(9999, {["timeline"] = {REMOVED_1_15_1}}),	-- Black Mageweave Leggings
+			-- #else
+			i(9999),	-- Black Mageweave Leggings
+			-- #endif
+			i(10001),	-- Black Mageweave Robe
+			i(10027),	-- Black Mageweave Shoulders
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217246, {["timeline"] = {ADDED_1_15_1}})),	-- Black Mageweave Vest
+			i(9998, {["timeline"] = {REMOVED_1_15_1}}),	-- Black Mageweave Vest
+			-- #else
+			i(9998),	-- Black Mageweave Vest
+			-- #endif
+			i(4336),	-- Black Swashbuckler's Shirt
+			i(203796, {["timeline"] = {ADDED_10_0_7}}),	-- Bloodlords Embrace
+			applyclassicphase(PHASE_FOUR, i(19684, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Boots
+			applyclassicphase(PHASE_FOUR, i(19683, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Leggings
+			applyclassicphase(PHASE_FOUR, i(19682, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Vest
+			i(6242),	-- Blue Linen Robe
+			i(2577),	-- Blue Linen Shirt
+			i(6240),	-- Blue Linen Vest
+			i(6263),	-- Blue Overalls
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217253, {["timeline"] = {ADDED_1_15_1}})),	-- Boots of the Enchanter
+			i(4325, {["timeline"] = {REMOVED_1_15_1}}),	-- Boots of the Enchanter
+			-- #else
+			i(4325),	-- Boots of the Enchanter
+			-- #endif
+			i(4332),	-- Bright Yellow Shirt
+			i(14103),	-- Brightcloth Cloak
+			i(14101),	-- Brightcloth Gloves
+			i(14104),	-- Brightcloth Pants
+			i(14100),	-- Brightcloth Robe
+			i(4343),	-- Brown Linen Pants
+			i(6238),	-- Brown Linen Robe
+			i(4344),	-- Brown Linen Shirt
+			i(2568),	-- Brown Linen Vest
+			i(10044),	-- Cindercloth Boots
+			i(14044),	-- Cindercloth Cloak
+			i(14043, {["timeline"] = {REMOVED_4_0_3, ADDED_8_1_5}}),	-- Cindercloth Gloves
+			i(14045),	-- Cindercloth Pants
+			i(10042),	-- Cindercloth Robe
+			i(14042, {["timeline"] = {REMOVED_4_0_3, ADDED_8_1_5}}),	-- Cindercloth Vest
+			i(14134),	-- Cloak of Fire
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18413, {["timeline"] = {REMOVED_4_0_3, ADDED_8_1_5}})),	-- Cloak of Warding
+			i(10048),	-- Colorful Kilt
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217255, {["timeline"] = {ADDED_1_15_1}})),	-- Crimson Silk Belt
+			i(7055, {["timeline"] = {REMOVED_1_15_1}}),	-- Crimson Silk Belt
+			-- #else
+			i(7055),	-- Crimson Silk Belt
+			-- #endif
+			i(7056),	-- Crimson Silk Cloak
+			i(7064),	-- Crimson Silk Gloves
+			i(7062),	-- Crimson Silk Pantaloons
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217245, {["timeline"] = {ADDED_1_15_1}})),	-- Crimson Silk Robe
+			i(7063, {["timeline"] = {REMOVED_1_15_1}}),	-- Crimson Silk Robe
+			-- #else
+			i(7063),	-- Crimson Silk Robe
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217250, {["timeline"] = {ADDED_1_15_1}})),	-- Crimson Silk Shoulders
+			i(7059, {["timeline"] = {REMOVED_1_15_1}}),	-- Crimson Silk Shoulders
+			-- #else
+			i(7059),	-- Crimson Silk Shoulders
+			-- #endif
+			i(7058),	-- Crimson Silk Vest
+			i(4333),	-- Dark Silk Shirt
+			i(4314),	-- Double-stitched Woolen Shoulders
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_SIX, i(234484, {["timeline"] = {ADDED_1_15_5}})),	-- Dreamscale Bracers
+			applyclassicphase(SOD_PHASE_SIX, i(234485, {["timeline"] = {ADDED_1_15_5}})),	-- Dreamscale Mitts
+			-- #endif
+			i(10041),	-- Dreamweave Circlet
+			i(10019),	-- Dreamweave Gloves
+			i(10021),	-- Dreamweave Vest
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217248, {["timeline"] = {ADDED_1_15_1}})),	-- Earthen Silk Belt
+			i(7061, {["timeline"] = {REMOVED_1_15_1}}),	-- Earthen Silk Belt
+			-- #else
+			i(7061),	-- Earthen Silk Belt
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217256, {["timeline"] = {ADDED_1_15_1}})),	-- Earthen Vest
+			i(7051, {["timeline"] = {REMOVED_1_15_1}}),	-- Earthen Vest
+			-- #else
+			i(7051),	-- Earthen Vest
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228476, {["timeline"] = {ADDED_1_15_3}})),	-- Embroidered Belt of the Archmage
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217257, {["timeline"] = {ADDED_1_15_1}})),	-- Enchanter's Cowl
+			i(4322, {["timeline"] = {REMOVED_1_15_1}}),	-- Enchanter's Cowl
+			-- #else
+			i(4322),	-- Enchanter's Cowl
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, i(210795, {	-- Extraplanar Spidersilk Boots
+				["timeline"] = { ADDED_1_15_0 },
+				["requireSkill"] = TAILORING,
+			})),
+			-- #endif
+			i(14108),	-- Felcloth Boots
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18407, {["timeline"] = {REMOVED_4_0_3, ADDED_8_1_5}})),	-- Felcloth Gloves
+			i(14111),	-- Felcloth Hood
+			i(14107),	-- Felcloth Pants
+			i(14106),	-- Felcloth Robe
+			i(14112),	-- Felcloth Shoulders
+			i(151771, {["timeline"] = {ADDED_7_3_5}}),	-- Festival Dress
+			i(21154, {["timeline"] = {REMOVED_7_3_5}}),	-- Festival Dress
+			i(151772, {["timeline"] = {ADDED_7_3_5}}),	-- Festival Suit
+			i(21542, {["timeline"] = {REMOVED_7_3_5}}),	-- Festival Suit
+			i(16979),	-- Flarecore Gloves
+			i(16980),	-- Flarecore Mantle
+			applyclassicphase(PHASE_THREE_RECIPES, i(19165)),	-- Flarecore Leggings
+			applyclassicphase(PHASE_THREE_RECIPES, i(19156)),	-- Flarecore Robe
+			i(18263),	-- Flarecore Wraps
+			i(4334),	-- Formal White Shirt
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, i(220750, {["timeline"] = {ADDED_1_15_2}})),	-- Fractured Mind Pauldrons
+			-- #endif
+			i(13870),	-- Frostweave Gloves
+			i(13871),	-- Frostweave Pants
+			i(13868),	-- Frostweave Robe
+			i(13869),	-- Frostweave Tunic
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22660)),	-- Gaea's Embrace
+			i(14143),	-- Ghostweave Belt
+			i(14142),	-- Ghostweave Gloves
+			i(14144),	-- Ghostweave Pants
+			i(14141),	-- Ghostweave Vest
 			i(206429, {["timeline"] = {ADDED_10_1_5}}),	-- Glacial Chapeau
 			applyclassicphase(PHASE_SIX, i(22658, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Glacial Cloak
 			i(206428, {["timeline"] = {ADDED_10_1_5}}),	-- Glacial Epaulets
@@ -3552,29 +3708,267 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(206430, {["timeline"] = {ADDED_10_1_5}}),	-- Glacial Tether
 			applyclassicphase(PHASE_SIX, i(22652, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Glacial Vest
 			applyclassicphase(PHASE_SIX, i(22655, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Glacial Wrists
-			i(206507, {["timeline"] = {ADDED_10_1_5}}),	-- Necrotic Gown
-			i(206582, {["timeline"] = {ADDED_10_1_5}}),	-- Peculiar Glacial Mantle
-			i(206562, {["timeline"] = {ADDED_10_1_5}}),	-- Shroud of Forbidden Magic
+			i(4318),	-- Gloves of Meditation
+			i(14146),	-- Gloves of Spell Mastery
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(233826, { ["timeline"] = { ADDED_1_15_5 }, })), -- Vampiric Cowl
-			applyclassicphase(SOD_PHASE_SIX, i(233837, { ["timeline"] = { ADDED_1_15_5 }, })), -- Vampiric Robe
-			applyclassicphase(SOD_PHASE_SIX, i(233833, { ["timeline"] = { ADDED_1_15_5 }, })), -- Vampiric Shawl
+			applyclassicphase(SOD_PHASE_TWO, i(215111, {["timeline"] = {ADDED_1_15_1}})),	-- Gneuro-Linked Arcano-Filament Monocle
 			-- #endif
+			i(2585),	-- Gray Woolen Robe
+			i(2587),	-- Gray Woolen Shirt
+			i(6264),	-- Greater Adept's Robe
+			i(17723),	-- Green Holiday Shirt
+			i(4308),	-- Green Linen Bracers
+			i(2579),	-- Green Linen Shirt
+			i(7065),	-- Green Silk Armor
+			i(7057),	-- Green Silken Shoulders
+			i(2582),	-- Green Woolen Vest
+			i(203820, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi Headdress
+			i(203803, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi Tigerhide Cloak
+			i(7047),	-- Hands of Darkness
+			i(4309),	-- Handstitched Linen Britches
+			i(4307),	-- Heavy Linen Gloves
+			i(4311),	-- Heavy Woolen Cloak
+			i(4310),	-- Heavy Woolen Gloves
+			i(4316),	-- Heavy Woolen Pants
+			i(4327),	-- Icy Cloak
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227863, {["timeline"] = {ADDED_1_15_3}})),	-- Incandescent Mooncloth Circlet
+			applyclassicphase(SOD_PHASE_FOUR, i(227864, {["timeline"] = {ADDED_1_15_3}})),	-- Incandescent Mooncloth Leggings
+			applyclassicphase(SOD_PHASE_FOUR, i(227861, {["timeline"] = {ADDED_1_15_3}})),	-- Incandescent Mooncloth Robe
+			applyclassicphase(SOD_PHASE_FOUR, i(227860, {["timeline"] = {ADDED_1_15_3}})),	-- Incandescent Mooncloth Vest
+			-- #endif
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18408, {["timeline"] = {REMOVED_4_0_3, ADDED_8_1_5}})),	-- Inferno Gloves
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, i(215366, {["timeline"] = {ADDED_1_15_0}})),	-- Invoker's Cord
+			applyclassicphase(SOD_PHASE_ONE, i(215365, {["timeline"] = {ADDED_1_15_0}})),	-- Invoker's Mantle
+			-- #endif
+			i(10054),	-- Lavender Mageweave Shirt
+			i(5766),	-- Lesser Wizard's Robe
+			i(7026),	-- Linen Belt
+			i(2569),	-- Linen Boots
+			i(2570),	-- Linen Cloak
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217252, {["timeline"] = {ADDED_1_15_1}})),	-- Long Silken Cloak
+			i(4326, {["timeline"] = {REMOVED_1_15_1}}),	-- Long Silken Cloak
+			-- #else
+			i(4326),	-- Long Silken Cloak
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, i(220749, {["timeline"] = {ADDED_1_15_2}})),	-- Mantle of Insanity
+			-- #endif
+			applyclassicphase(PHASE_THREE_RECIPES, i(19050)),	-- Mantle of the Timbermaw
+			i(15802),	-- Mooncloth Boots
+			i(14140),	-- Mooncloth Circlet
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18409, {["timeline"] = {REMOVED_4_0_3, ADDED_8_1_5}})),	-- Mooncloth Gloves
+			i(14137, {	-- Mooncloth Leggings
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { REMOVED_1_15_3 },
+				-- #endif
+			}),
+			i(18486, {	-- Mooncloth Robe
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { REMOVED_1_15_3 },
+				-- #endif
+			}),
+			i(14139, {	-- Mooncloth Shoulders
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { REMOVED_1_15_3 },
+				-- #endif
+			}),
+			i(14138, {	-- Mooncloth Vest
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { REMOVED_1_15_3 },
+				-- #endif
+			}),
+			i(206507, {["timeline"] = {ADDED_10_1_5}}),	-- Necrotic Gown
+			i(10056),	-- Orange Mageweave Shirt
+			i(10052),	-- Orange Martial Shirt
+			i(5542),	-- Pearl-Clasped Cloak
+			i(206582, {["timeline"] = {ADDED_10_1_5}}),	-- Peculiar Glacial Mantle
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, i(210781, {["timeline"] = {ADDED_1_15_0}})),	-- Phoenix Bindings
+			-- #endif
+			i(4331),	-- Phoenix Gloves
+			i(4317),	-- Phoenix Pants
+			i(10055),	-- Pink Mageweave Shirt
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_SIX, i(233958, {["timeline"] = {ADDED_1_15_5}})), -- Qiraji Silk Cape
+			applyclassicphase(SOD_PHASE_SIX, i(233959, {["timeline"] = {ADDED_1_15_5}})), -- Qiraji Silk Cloak
+			applyclassicphase(SOD_PHASE_SIX, i(233960, {["timeline"] = {ADDED_1_15_5}})), -- Qiraji Silk Drape
+			applyclassicphase(SOD_PHASE_SIX, i(233956, {["timeline"] = {ADDED_1_15_5}})), -- Qiraji Silk Scarf
+			-- #endif
+			i(2572),	-- Red Linen Robe
+			i(2575),	-- Red Linen Shirt
+			i(6239),	-- Red Linen Vest
+			i(10018),	-- Red Mageweave Gloves
+			i(10033),	-- Red Mageweave Headband
+			i(10009),	-- Red Mageweave Pants
+			i(10029),	-- Red Mageweave Shoulders
+			i(10007),	-- Red Mageweave Vest
+			i(6796),	-- Red Swashbuckler's Shirt
+			i(4313),	-- Red Woolen Boots
+			i(2580),	-- Reinforced Linen Cape
+			i(4315),	-- Reinforced Woolen Shoulders
+			i(4335),	-- Rich Purple Silk Shirt
+			i(203800, {["timeline"] = {ADDED_10_0_7}}),	-- Ritualistic Legwarmers
+			i(7054, {	-- Robe of Power
+				["requireSkill"] = TAILORING,
+			}),
+			i(14152, {	-- Robe of the Archmage
+				-- #if BEFORE WRATH
+				["classes"] = { MAGE },
+				-- #endif
+				["requireSkill"] = TAILORING,
+			}),
+			i(14153, {	-- Robe of the Void
+				["timeline"] = { REMOVED_5_0_4, ADDED_10_1_5 },
+				-- #if BEFORE WRATH
+				["classes"] = { WARLOCK },
+				-- #endif
+				["requireSkill"] = TAILORING,
+			}),
+			i(14136, {["timeline"] = {REMOVED_4_0_3,ADDED_8_1_5}}),	-- Robe of Winter Night
+			i(5770, {["timeline"] = {REMOVED_4_0_3,ADDED_8_1_5}}),	-- Robes of Arcana
+			i(13856),	-- Runecloth Belt
+			i(13864),	-- Runecloth Boots
+			i(13860),	-- Runecloth Cloak
+			i(13863),	-- Runecloth Gloves
+			i(13866),	-- Runecloth Headband
+			i(13865),	-- Runecloth Pants
+			i(13858),	-- Runecloth Robe
+			i(13867),	-- Runecloth Shoulders
+			i(13857),	-- Runecloth Tunic
+			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20539)),	-- Runed Stygian Belt
+			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20537)),	-- Runed Stygian Boots
+			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20538)),	-- Runed Stygian Leggings
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_EIGHT, i(238267, {["timeline"] = {ADDED_1_15_7}})),	-- Scarlet Augur's Cuffs
+			applyclassicphase(SOD_PHASE_EIGHT, i(238264, {["timeline"] = {ADDED_1_15_7}})),	-- Scarlet Augur's Hood
+			applyclassicphase(SOD_PHASE_EIGHT, i(238270, {["timeline"] = {ADDED_1_15_7}})),	-- Scarlet Augur's Leggings
+			applyclassicphase(SOD_PHASE_EIGHT, i(238265, {["timeline"] = {ADDED_1_15_7}})),	-- Scarlet Augur's Mantle
+			applyclassicphase(SOD_PHASE_EIGHT, i(238268, {["timeline"] = {ADDED_1_15_7}})),	-- Scarlet Augur's Mitts
+			applyclassicphase(SOD_PHASE_EIGHT, i(238271, {["timeline"] = {ADDED_1_15_7}})),	-- Scarlet Augur's Soles
+			applyclassicphase(SOD_PHASE_EIGHT, i(238269, {["timeline"] = {ADDED_1_15_7}})),	-- Scarlet Augur's Strap
+			applyclassicphase(SOD_PHASE_EIGHT, i(238266, {["timeline"] = {ADDED_1_15_7}})),	-- Scarlet Augur's Vestaments
+			-- #endif
+			i(4323),	-- Shadow Hood
+			i(10031),	-- Shadoweave Boots
+			i(10023),	-- Shadoweave Gloves
+			i(10025, {	-- Shadoweave Mask
+				-- #if AFTER 7.3.0
+				["description"] = "Required for the |cff3399ffLucid Nightmare|r riddle mount.",
+				-- #endif
+				["timeline"] = { REMOVED_4_0_3, ADDED_7_3_0 },
+			}),
+			i(10002),	-- Shadoweave Pants
+			i(10004),	-- Shadoweave Robe
+			i(10028),	-- Shadoweave Shoulders
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, i(220751, {["timeline"] = {ADDED_1_15_2}})),	-- Shoulderpads of the Deranged
+			-- #endif
+			i(206562, {["timeline"] = {ADDED_10_1_5}}),	-- Shroud of Forbidden Magic
+			i(7050),	-- Silk Headband
+			i(10053),	-- Simple Black Dress
+			i(6786),	-- Simple Dress
+			i(10047),	-- Simple Kilt
+			i(10046),	-- Simple Linen Boots
+			i(10045),	-- Simple Linen Pants
+			i(4312),	-- Soft-Soled Linen Boots
+			i(4328),	-- Spider Belt
+			i(4321),	-- Spider Silk Slippers
+			i(4320),	-- Spidersilk Boots
+			i(4329),	-- Star Belt
+			i(6384),	-- Stylish Blue Shirt
+			i(6385),	-- Stylish Green Shirt
+			i(4330),	-- Stylish Red Shirt
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_SIX, i(234315, {["timeline"] = {ADDED_1_15_5}})),	-- Sylvan Crown
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22757, {["timeline"] = {REMOVED_1_15_5}})),	-- Sylvan Crown
+			applyclassicphase(SOD_PHASE_SIX, i(234312, {["timeline"] = {ADDED_1_15_5}})),	-- Sylvan Shoulders
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22758, {["timeline"] = {REMOVED_1_15_5}})),	-- Sylvan Shoulders
+			applyclassicphase(SOD_PHASE_SIX, i(234317, {["timeline"] = {ADDED_1_15_5}})),	-- Sylvan Vest
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22756, {["timeline"] = {REMOVED_1_15_5}})),	-- Sylvan Vest
+			-- #else
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22757)),	-- Sylvan Crown
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22758)),	-- Sylvan Shoulders
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22756)),	-- Sylvan Vest
+			-- #endif
+			i(7049),	-- Truefaith Gloves
+			i(14154, {	-- Truefaith Vestments
+				["classes"] = { PRIEST },
+				["requireSkill"] = TAILORING,
+			}),
+			i(10036),	-- Tuxedo Jacket
+			i(10035),	-- Tuxedo Pants
+			i(10034),	-- Tuxedo Shirt
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_SIX, i(233826, {["timeline"] = {ADDED_1_15_5}})),	-- Vampiric Cowl
+			applyclassicphase(SOD_PHASE_SIX, i(233837, {["timeline"] = {ADDED_1_15_5}})),	-- Vampiric Robe
+			applyclassicphase(SOD_PHASE_SIX, i(233833, {["timeline"] = {ADDED_1_15_5}})),	-- Vampiric Shawl
+			-- #endif
+			i(10008),	-- White Bandit Mask
+			i(6241),	-- White Linen Robe
+			i(2576),	-- White Linen Shirt
+			i(6795),	-- White Swashbuckler's Shirt
+			i(10040),	-- White Wedding Dress
+			i(6787),	-- White Woolen Dress
+			applyclassicphase(PHASE_THREE_RECIPES, i(19047)),	-- Wisdom of the Timbermaw
+			i(14132),	-- Wizardweave Leggings
+			i(14128),	-- Wizardweave Robe
+			i(14130),	-- Wizardweave Turban
+			i(2583),	-- Woolen Boots
+			i(2584),	-- Woolen Cape
 		}),
-		category(230, {	-- Materials
+		filter(BAGS, {
+			i(5765, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}), -- Black Silk Pack
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228994, {["timeline"] = {ADDED_1_15_3}})),	-- Bottomless Bag
+			i(14156, {["timeline"] = {REMOVED_1_15_3}}), -- Bottomless Bag
+			-- #else
+			i(14156), -- Bottomless Bag
+			-- #endif
+			i(21342), -- Core Felcloth Bag
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_EIGHT, i(239148, {["timeline"] = {ADDED_1_15_7}})),	-- Crimson Dawnwoven Bag
+			applyclassicphase(SOD_PHASE_EIGHT, i(239147, {["timeline"] = {ADDED_1_15_7}})),	-- Crusader's Knapsack
+			-- #endif
+			i(22246), -- Enchanted Mageweave Pouch
+			i(21341), -- Felcloth Bag
+			i(5764), -- Green Silk Pack
+			i(4241), -- Green Woolen Bag
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227844, {["timeline"] = {ADDED_1_15_3}})),	-- Leather-Reinforced Runecloth Bag
+			-- #endif
+			i(4238), -- Linen Bag
+			i(10050), -- Mageweave Bag
+			i(14155), -- Mooncloth Bag
+			i(5762), -- Red Linen Bag
+			i(10051), -- Red Mageweave Bag
+			i(5763), -- Red Woolen Bag
+			i(14046), -- Runecloth Bag
+			i(4245), -- Small Silk Pack
+			i(21340), -- Soul Pouch
+			i(4240), -- Woolen Bag
+			applyclassicphase(PHASE_FIVE_RECIPES, i(22249)), -- Big Bag of Enchantment
+			applyclassicphase(PHASE_FIVE, i(22251)), -- Cenarion Herb Bag
+			applyclassicphase(PHASE_FIVE_RECIPES, i(22248)), -- Enchanted Runecloth Bag
+			applyclassicphase(PHASE_FIVE, i(22252)), -- Satchel of Cenarius
+		}),
+		filter(MISC, {
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18258, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}})),	-- Gordok Ogre Suit
+		}),
+		filter(REAGENTS, {
 			i(2996),	-- Bolt of Linen Cloth
 			i(4339),	-- Bolt of Mageweave
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(234009, { ["timeline"] = { ADDED_1_15_5 }, })), -- Bolt of Qiraji Silk
+			applyclassicphase(SOD_PHASE_SIX, i(234009, {["timeline"] = {ADDED_1_15_5}})), -- Bolt of Qiraji Silk
 			-- #endif
 			i(14048),	-- Bolt of Runecloth
 			i(4305),	-- Bolt of Silk Cloth
 			i(2997),	-- Bolt of Woolen Cloth
-			applyclassicphase(PHASE_ONE_DIREMAUL, i(18258)),	-- Gordok Ogre Suit
+			i(206645, {["timeline"] = {ADDED_10_1_5}}),	-- Cursed Cloth
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(213379, {	-- Hyperconductive Arcano-Filament
-				["timeline"] = { ADDED_1_15_1 },
-			})),
+			applyclassicphase(SOD_PHASE_TWO, i(213379, {["timeline"] = {ADDED_1_15_1}})),	-- Hyperconductive Arcano-Filament
 			-- #endif
 			i(14342, {	-- Mooncloth
 				["description"] = "Coordinates are for select Moonwells around the world.",
@@ -3596,450 +3990,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 		}),
-		category(233, {	-- Bags
-			applyclassicphase(PHASE_FIVE_RECIPES, i(22249)),	-- Big Bag of Enchantment
-			i(5765, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Black Silk Pack
-			i(14156),	-- Bottomless Bag
-			applyclassicphase(PHASE_FIVE, i(22251)),	-- Cenarion Herb Bag
-			i(21342),	-- Core Felcloth Bag
-			i(22246),	-- Enchanted Mageweave Pouch
-			applyclassicphase(PHASE_FIVE_RECIPES, i(22248)),	-- Enchanted Runecloth Bag
-			i(21341),	-- Felcloth Bag
-			i(5764),	-- Green Silk Pack
-			i(4241),	-- Green Woolen Bag
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(227844, {	-- Leather-Reinforced Runecloth Bag
-				["timeline"] = { ADDED_1_15_3 },
-			})),
-			-- #endif
-			i(4238),	-- Linen Bag
-			i(10050),	-- Mageweave Bag
-			i(14155),	-- Mooncloth Bag
-			i(5762),	-- Red Linen Bag
-			i(10051),	-- Red Mageweave Bag
-			i(5763),	-- Red Woolen Bag
-			i(14046),	-- Runecloth Bag
-			applyclassicphase(PHASE_FIVE, i(22252)),	-- Satchel of Cenarius
-			i(4245),	-- Small Silk Pack
-			i(21340),	-- Soul Pouch
-			i(4240),	-- Woolen Bag
-		}),
-		category(234, {	-- Hats & Hoods
-			i(10030),	-- Admiral's Hat
-			i(7048),	-- Azure Silk Hood
-			i(10024),	-- Black Mageweave Headband
-			i(10041),	-- Dreamweave Circlet
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217257, {	-- Enchanter's Cowl
-				["timeline"] = { ADDED_1_15_1 },
-			})),
-			-- #endif
-			i(4322, {	-- Enchanter's Cowl
-				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_1 },
-				-- #endif
-			}),
-			i(14111),	-- Felcloth Hood
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(215111, {	-- Gneuro-Linked Arcano-Filament Monocle
-				["timeline"] = { ADDED_1_15_1 },
-			})),
-			-- #endif
-			i(203820, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi Headdress
-			i(14140),	-- Mooncloth Circlet
-			i(10033),	-- Red Mageweave Headband
-			i(13866),	-- Runecloth Headband
-			i(4323),	-- Shadow Hood
-			i(10025, {	-- Shadoweave Mask
-				-- #if AFTER 7.3.0
-				["description"] = "Required for the |cff3399ffLucid Nightmare|r riddle mount.",
-				-- #endif
-				["timeline"] = { REMOVED_4_0_3, ADDED_7_3_0 },
-			}),
-			i(7050),	-- Silk Headband
-			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22757,	{	-- Sylvan Crown
-			-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_5 },
-			-- #endif
-			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(234315, {	--	Sylvan Crown
-				["timeline"] = { ADDED_1_15_5 },
-			})),
-			-- #endif
-			i(10008),	-- White Bandit Mask
-			i(14130),	-- Wizardweave Turban
-		}),
-		category(235, {	-- Shoulders
-			applyclassicphase(PHASE_THREE_RECIPES, i(19059)),	-- Argent Shoulders
-			i(7060),	-- Azure Shoulders
-			i(10027),	-- Black Mageweave Shoulders
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217250, {	-- Crimson Silk Shoulders
-				["timeline"] = { ADDED_1_15_1 },
-			})),
-			i(7059, {	-- Crimson Silk Shoulders
-				["timeline"] = { REMOVED_1_15_1 },
-			}),
-			-- #else
-			i(7059),	-- Crimson Silk Shoulders
-			-- #endif
-			i(4314),	-- Double-stitched Woolen Shoulders
-			i(14112),	-- Felcloth Shoulders
-			i(16980),	-- Flarecore Mantle
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, i(220750, {	-- Fractured Mind Pauldrons
-				["timeline"] = { ADDED_1_15_2 },
-			})),
-			-- #endif
-			i(7057),	-- Green Silken Shoulders
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(215365, {	-- Invoker's Mantle
-				["timeline"] = { ADDED_1_15_0 },
-			})),
-			applyclassicphase(SOD_PHASE_THREE, i(220749, {	-- Mantle of Insanity
-				["timeline"] = { ADDED_1_15_2 },
-			})),
-			-- #endif
-			applyclassicphase(PHASE_THREE_RECIPES, i(19050)),	-- Mantle of the Timbermaw
-			i(14139),	-- Mooncloth Shoulders
-			i(10029),	-- Red Mageweave Shoulders
-			i(4315),	-- Reinforced Woolen Shoulders
-			i(13867),	-- Runecloth Shoulders
-			i(10028),	-- Shadoweave Shoulders
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, i(220751, {	-- Shoulderpads of the Deranged
-				["timeline"] = { ADDED_1_15_2 },
-			})),
-			-- #endif
-			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22758, {	-- Sylvan Shoulders
-			-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_5 },
-			-- #endif
-			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(234312, {	--	Sylvan Shoulders
-				["timeline"] = { ADDED_1_15_5 },
-			})),
-			-- #endif
-		}),
-		category(236, {	-- Robes & Tunics
-			i(4324),	-- Azure Silk Vest
-			i(2578),	-- Barbaric Linen Vest
-			i(10001),	-- Black Mageweave Robe
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217246, {	-- Black Mageweave Vest
-				["timeline"] = { ADDED_1_15_1 },
-			})),
-			i(9998, {	-- Black Mageweave Vest
-				["timeline"] = { REMOVED_1_15_1 },
-			}),
-			-- #else
-			i(9998),	-- Black Mageweave Vest
-			-- #endif
-			applyclassicphase(PHASE_FOUR, i(19682, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Vest
-			i(6242),	-- Blue Linen Robe
-			i(6240),	-- Blue Linen Vest
-			i(6263),	-- Blue Overalls
-			i(14100),	-- Brightcloth Robe
-			i(6238),	-- Brown Linen Robe
-			i(2568),	-- Brown Linen Vest
-			i(10042),	-- Cindercloth Robe
-			i(14042),	-- Cindercloth Vest
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217245, {	-- Crimson Silk Robe
-				["timeline"] = { ADDED_1_15_1 },
-			})),
-			i(7063, {	-- Crimson Silk Robe
-				["timeline"] = { REMOVED_1_15_1 },
-			}),
-			-- #else
-			i(7063),	-- Crimson Silk Robe
-			-- #endif
-			i(7058),	-- Crimson Silk Vest
-			i(10021),	-- Dreamweave Vest
-			i(7051),	-- Earthen Vest
-			i(14106),	-- Felcloth Robe
-			i(21154, {	-- Festival Dress
-				["timeline"] = { REMOVED_7_3_5 },
-			}),
-			i(21542, {	-- Festival Suit
-				["timeline"] = { REMOVED_7_3_5 },
-			}),
-			i(19156),	-- Flarecore Robe
-			i(13868),	-- Frostweave Robe
-			i(13869),	-- Frostweave Tunic
-			i(14141),	-- Ghostweave Vest
-			i(2585),	-- Gray Woolen Robe
-			i(6264),	-- Greater Adept's Robe
-			i(7065),	-- Green Silk Armor
-			i(34087, {	-- Green Winter Clothes
-				["timeline"] = { ADDED_2_3_0, REMOVED_7_3_5 },
-			}),
-			i(2582),	-- Green Woolen Vest
-			i(38277, {	-- Haliscan Jacket
-				["timeline"] = { ADDED_2_4_2 },
-			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(227861, {	-- Incandescent Mooncloth Robe
-				["timeline"] = { ADDED_1_15_3 },
-			})),
-			-- #endif
-			i(5766),	-- Lesser Wizard's Robe
-			i(18486, {	-- Mooncloth Robe
-				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_3 },
-				-- #endif
-			}),
-			i(14138),	-- Mooncloth Vest
-			i(2572),	-- Red Linen Robe
-			i(6239),	-- Red Linen Vest
-			i(10007),	-- Red Mageweave Vest
-			i(34085, {	-- Red Winter Clothes
-				["timeline"] = { ADDED_2_3_0, REMOVED_7_3_5 },
-			}),
-			i(7054, {	-- Robe of Power
-				["requireSkill"] = TAILORING,
-			}),
-			i(14152, {	-- Robe of the Archmage
-				["requireSkill"] = TAILORING,
-			}),
-			i(14153, {	-- Robe of the Void
-				["timeline"] = { REMOVED_5_0_4, ADDED_10_1_5 },
-				-- #if BEFORE WRATH
-				["classes"] = { WARLOCK },
-				-- #endif
-				["requireSkill"] = TAILORING,
-			}),
-			i(14136, {	-- Robe of Winter Night
-				["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
-			}),
-			i(5770, {	-- Robes of Arcana
-				["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
-			}),
-			i(13858),	-- Runecloth Robe
-			i(13857),	-- Runecloth Tunic
-			i(10004),	-- Shadoweave Robe
-			i(10053),	-- Simple Black Dress
-			i(6786),	-- Simple Dress
-			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22756, {	-- Sylvan Vest
-			-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_5 },
-			-- #endif
-			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(234317, {	--	Sylvan Vest
-				["timeline"] = { ADDED_1_15_5 },
-			})),
-			-- #endif
-			i(14154, {	-- Truefaith Vestments
-				["requireSkill"] = TAILORING,
-			}),
-			i(10036),	-- Tuxedo Jacket
-			i(6241),	-- White Linen Robe
-			i(10040),	-- White Wedding Dress
-			i(6787),	-- White Woolen Dress
-			i(14128),	-- Wizardweave Robe
-		}),
-		category(237, {	-- Bracers
-			i(18263),	-- Flarecore Wraps
-			i(4308),	-- Green Linen Bracers
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(210781, {	-- Phoenix Bindings
-				["timeline"] = { ADDED_1_15_0 },
-			})),
-			-- #endif
-		}),
-		category(239, {	-- Gloves
-			i(4319),	-- Azure Silk Gloves
-			i(10003),	-- Black Mageweave Gloves
-			i(14101),	-- Brightcloth Gloves
-			i(14043),	-- Cindercloth Gloves
-			i(7064),	-- Crimson Silk Gloves
-			i(10019),	-- Dreamweave Gloves
-			applyclassicphase(PHASE_ONE_DIREMAUL, i(18407, {	-- Felcloth Gloves
-				["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
-			})),
-			i(16979),	-- Flarecore Gloves
-			i(13870),	-- Frostweave Gloves
-			i(14142),	-- Ghostweave Gloves
-			i(4318),	-- Gloves of Meditation
-			i(14146),	-- Gloves of Spell Mastery
-			i(7047),	-- Hands of Darkness
-			i(4307),	-- Heavy Linen Gloves
-			i(4310),	-- Heavy Woolen Gloves
-			applyclassicphase(PHASE_ONE_DIREMAUL, i(18408, {	-- Inferno Gloves
-				["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
-			})),
-			applyclassicphase(PHASE_ONE_DIREMAUL, i(18409, {	-- Mooncloth Gloves
-				["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
-			})),
-			i(4331),	-- Phoenix Gloves
-			i(10018),	-- Red Mageweave Gloves
-			i(13863),	-- Runecloth Gloves
-			i(10023),	-- Shadoweave Gloves
-			i(7049),	-- Truefaith Gloves
-		}),
-		category(238, {	-- Belts
-			i(7052),	-- Azure Silk Belt
-			applyclassicphase(PHASE_ONE_DIREMAUL, i(18405, {	-- Belt of the Archmage
-				["timeline"] = {
-					-- #if SEASON_OF_DISCOVERY
-					REMOVED_1_15_3,
-					-- #else
-					REMOVED_4_0_3, ADDED_8_1_5,
-					-- #endif
-				},
-			})),
-			i(7055),	-- Crimson Silk Belt
-			i(7061),	-- Earthen Silk Belt
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(228476, {	-- Embroidered Belt of the Archmage
-				["timeline"] = { ADDED_1_15_3 },
-			})),
-			-- #endif
-			i(14143),	-- Ghostweave Belt
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(215366, {	-- Invoker's Cord
-				["timeline"] = { ADDED_1_15_0 },
-			})),
-			-- #endif
-			i(7026),	-- Linen Belt
-			i(13856),	-- Runecloth Belt
-			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20539)),	-- Runed Stygian Belt
-			i(4328),	-- Spider Belt
-			i(4329),	-- Star Belt
-			applyclassicphase(PHASE_THREE_RECIPES, i(19047)),	-- Wisdom of the Timbermaw
-		}),
-		category(240, {	-- Pants
-			i(7046),	-- Azure Silk Pants
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217247, {	-- Black Mageweave Leggings
-				["timeline"] = { ADDED_1_15_1 },
-			})),
-			i(9999, {	-- Black Mageweave Leggings
-				["timeline"] = { REMOVED_1_15_1 },
-			}),
-			-- #else
-			i(9999),	-- Black Mageweave Leggings
-			-- #endif
-			applyclassicphase(PHASE_FOUR, i(19683, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Leggings
-			i(14104),	-- Brightcloth Pants
-			i(4343),	-- Brown Linen Pants
-			i(14045),	-- Cindercloth Pants
-			i(10048),	-- Colorful Kilt
-			i(7062),	-- Crimson Silk Pantaloons
-			i(14107),	-- Felcloth Pants
-			i(19165),	-- Flarecore Leggings
-			i(13871),	-- Frostweave Pants
-			i(14144),	-- Ghostweave Pants
-			i(38278, {	-- Haliscan Pantaloons
-				["timeline"] = { ADDED_2_4_2 },
-			}),
-			i(4309),	-- Handstitched Linen Britches
-			i(4316),	-- Heavy Woolen Pants
-			i(14137),	-- Mooncloth Leggings
-			i(4317),	-- Phoenix Pants
-			i(10009),	-- Red Mageweave Pants
-			i(203800, {["timeline"] = {ADDED_10_0_7}}),	-- Ritualistic Legwarmers
-			i(13865),	-- Runecloth Pants
-			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20538)),	-- Runed Stygian Leggings
-			i(10002),	-- Shadoweave Pants
-			i(10047),	-- Simple Kilt
-			i(10045),	-- Simple Linen Pants
-			i(10035),	-- Tuxedo Pants
-			i(14132),	-- Wizardweave Leggings
-		}),
-		category(241, {	-- Boots
-			applyclassicphase(PHASE_THREE_RECIPES, i(19056)),	-- Argent Boots
-			i(10026),	-- Black Mageweave Boots
-			applyclassicphase(PHASE_FOUR, i(19684, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Boots
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217253, {	-- Boots of the Enchanter
-				["timeline"] = { ADDED_1_15_1 },
-			})),
-			i(4325, {	-- Boots of the Enchanter
-				["timeline"] = { REMOVED_1_15_1 },
-			}),
-			-- #else
-			i(4325),	-- Boots of the Enchanter
-			-- #endif
-			i(10044),	-- Cindercloth Boots
-			i(6836),	-- Dress Shoes
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(210795, {	-- Extraplanar Spidersilk Boots
-				["timeline"] = { ADDED_1_15_0 },
-				["requireSkill"] = TAILORING,
-			})),
-			-- #endif
-			i(14108),	-- Felcloth Boots
-			i(2569),	-- Linen Boots
-			i(15802),	-- Mooncloth Boots
-			i(4313),	-- Red Woolen Boots
-			i(13864),	-- Runecloth Boots
-			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20537)),	-- Runed Stygian Boots
-			i(10031),	-- Shadoweave Boots
-			i(10046),	-- Simple Linen Boots
-			i(4312),	-- Soft-Soled Linen Boots
-			i(4321),	-- Spider Silk Slippers
-			i(4320),	-- Spidersilk Boots
-			i(2583),	-- Woolen Boots
-		}),
-		category(242, {	-- Cloaks
-			i(7053),	-- Azure Silk Cloak
-			i(14103),	-- Brightcloth Cloak
-			i(203796, {["timeline"] = {ADDED_10_0_7}}),	-- Bloodlords Embrace
-			i(14044),	-- Cindercloth Cloak
-			i(14134),	-- Cloak of Fire
-			applyclassicphase(PHASE_ONE_DIREMAUL, i(18413, {	-- Cloak of Warding
-				["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
-			})),
-			i(7056),	-- Crimson Silk Cloak
-			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22660)),	-- Gaea's Embrace
-			i(203803, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi Tigerhide Cloak
-			i(4311),	-- Heavy Woolen Cloak
-			i(4327),	-- Icy Cloak
-			i(2570),	-- Linen Cloak
-			i(4326),	-- Long Silken Cloak
-			i(5542),	-- Pearl-Clasped Cloak
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(233958, { ["timeline"] = { ADDED_1_15_5 }, })), -- Qiraji Silk Cape
-			applyclassicphase(SOD_PHASE_SIX, i(233959, { ["timeline"] = { ADDED_1_15_5 }, })), -- Qiraji Silk Cloak
-			applyclassicphase(SOD_PHASE_SIX, i(233960, { ["timeline"] = { ADDED_1_15_5 }, })), -- Qiraji Silk Drape
-			applyclassicphase(SOD_PHASE_SIX, i(233956, { ["timeline"] = { ADDED_1_15_5 }, })), -- Qiraji Silk Scarf
-			-- #endif
-			i(2580),	-- Reinforced Linen Cape
-			i(13860),	-- Runecloth Cloak
-			i(45626, {["timeline"] = { ADDED_3_1_0 }}),	-- Spidersilk Drape
-			i(2584),	-- Woolen Cape
-		}),
-		category(243, {	-- Shirts
-			i(4336),	-- Black Swashbuckler's Shirt
-			i(2577),	-- Blue Linen Shirt
-			i(4332),	-- Bright Yellow Shirt
-			i(4344),	-- Brown Linen Shirt
-			i(4333),	-- Dark Silk Shirt
-			i(4334),	-- Formal White Shirt
-			i(2587),	-- Gray Woolen Shirt
-			i(17723),	-- Green Holiday Shirt
-			i(2579),	-- Green Linen Shirt
-			i(10054),	-- Lavender Mageweave Shirt
-			i(10056),	-- Orange Mageweave Shirt
-			i(10052),	-- Orange Martial Shirt
-			i(10055),	-- Pink Mageweave Shirt
-			i(2575),	-- Red Linen Shirt
-			i(6796),	-- Red Swashbuckler's Shirt
-			i(4335),	-- Rich Purple Silk Shirt
-			i(6384),	-- Stylish Blue Shirt
-			i(6385),	-- Stylish Green Shirt
-			i(4330),	-- Stylish Red Shirt
-			i(10034),	-- Tuxedo Shirt
-			i(2576),	-- White Linen Shirt
-			i(6795),	-- White Swashbuckler's Shirt
-		}),
-		filter(MISC, {
-			i(206645, {["timeline"] = {ADDED_10_1_5}}),	-- Cursed Cloth
-		}),
+		-- Check When doing TBC/WRATH
+		i(34087, {["timeline"] = {ADDED_2_3_0, REMOVED_7_3_5}}),	-- Green Winter Clothes
+		i(38277, {["timeline"] = {ADDED_2_4_2}}),	-- Haliscan Jacket
+		i(34085, {["timeline"] = {ADDED_2_3_0, REMOVED_7_3_5}}),	-- Red Winter Clothes
+		i(38278, {["timeline"] = {ADDED_2_4_2}}),	-- Haliscan Pantaloons
+		i(6836),	-- Dress Shoes
+		i(45626, {["timeline"] = { ADDED_3_1_0 }}),	-- Spidersilk Drape
 	}),
 	-- Non-crafted reagents from vendors for professions:
 	filter(REAGENTS, {

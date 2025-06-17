@@ -227,16 +227,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["sym"] = { {"sub", "common_recipes_vendor", 3364} },	-- Borya <Tailoring Supplies>
 						["races"] = HORDE_ONLY,
 						["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
-							i(10311, {	-- Pattern: Orange Martial Shirt
+							i(10311, {	-- Pattern: Orange Martial Shirt (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(5771, {	-- Pattern: Red Linen Bag
+							i(5771, {	-- Pattern: Red Linen Bag (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(5772, {	-- Pattern: Red Woolen Bag
+							i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(10325, {	-- Pattern: White Wedding Dress
+							i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
 								["isLimited"] = true,
 							}),
 						}),
@@ -245,7 +245,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 44.9, 37.7, THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch
+							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 						},
 					}),
 				}),

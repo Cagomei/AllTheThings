@@ -198,6 +198,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				prof(FISHING, {
 					o(180662),	-- Schooner Wreckage
 				}),
+				prof(TAILORING, {
+					n(2399, {	-- Daryl Stack <Master Tailor>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 58.0, 47.8, HILLSBRAD_FOOTHILLS },
+							-- #else
+							{ 63.6, 20.8, HILLSBRAD_FOOTHILLS },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						-- #if BEFORE 2.1.0
+						["g"] = ARTISAN_TAILORING,
+						-- #endif
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(28345, {	-- *Gurgle* HELP! *Gurgle*
@@ -3371,10 +3386,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6274, {	-- Pattern: Blue Overalls
+						i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6401, {	-- Pattern: Dark Silk Shirt
+						i(6401, {	-- Pattern: Dark Silk Shirt (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3421,7 +3436,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						-- #if BEFORE 4.0.3
-						i(4355, {	-- Pattern: Icy Cloak
+						i(4355, {	-- Pattern: Icy Cloak (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
@@ -3580,7 +3595,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(7362, {	-- Pattern: Earthen Leather Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5772, {	-- Pattern: Red Woolen Bag
+						i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 							["isLimited"] = true,
 						}),
 						-- #if SEASON_OF_DISCOVERY
@@ -3798,7 +3813,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if AFTER CATA
-				i(5775, {	-- Pattern: Black Silk Pack
+				i(5775, {	-- Pattern: Black Silk Pack (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if AFTER 10.1.7
 					["description"] = "This pattern is very rare. Expect 1000+ of kills before looting it.",
@@ -3817,7 +3832,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if BEFORE CATA
-				i(5772, {	-- Pattern: Red Woolen Bag
+				i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 					["cr"] = 2264,	-- Hillsbrad Tailor
 				}),
 				-- #endif

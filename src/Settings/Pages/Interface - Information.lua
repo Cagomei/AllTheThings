@@ -1075,7 +1075,8 @@ local InformationTypes = {
 			local itemID = reference.itemID
 			-- Currently excluded for Classic versions
 			if not itemID or not app.IsRetail then return end
-			local specs = app.GetFixedItemSpecInfo(itemID);
+
+			local specs = reference.specs or app.GetFixedItemSpecInfo(itemID);
 			-- specs is already filtered/sorted to only current class
 			if specs and #specs > 0 then
 				tinsert(tooltipInfo, { right = app.GetSpecsString(specs, true, true) });

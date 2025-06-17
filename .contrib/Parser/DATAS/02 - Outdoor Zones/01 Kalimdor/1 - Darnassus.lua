@@ -289,17 +289,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
 						},
 						["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
-							i(6272, {	-- Pattern: Blue Linen Robe
+							i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(6275, {	-- Pattern: Greater Adept's Robe
+							i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
 								["isLimited"] = true,
 							}),
 							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_ONE, i(215369)),	-- Pattern: Invoker's Cord
-							applyclassicphase(SOD_PHASE_ONE, i(215370)),	-- Pattern: Invoker's Mantle
+							applyclassicphase(SOD_PHASE_ONE, i(215369)),	-- Pattern: Invoker's Cord (RECIPE!)
+							applyclassicphase(SOD_PHASE_ONE, i(215370)),	-- Pattern: Invoker's Mantle (RECIPE!)
 							-- #endif
-							i(10311, {	-- Pattern: Orange Martial Shirt
+							i(10311, {	-- Pattern: Orange Martial Shirt (RECIPE!)
 								["isLimited"] = true,
 							}),
 						}),
@@ -312,7 +312,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch
+							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 						},
 					}),
 				}),

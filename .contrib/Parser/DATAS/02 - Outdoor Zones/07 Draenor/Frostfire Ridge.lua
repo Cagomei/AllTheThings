@@ -348,6 +348,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 33526,	-- These Colors Don't Run
 						["coord"] = { 43.5, 23.2, 526 },
 						["races"] = HORDE_ONLY,
+						["g"] = {
+							o(225681, {	-- Barrel of Frostwolf Oil
+								i(107361),	-- Frostwolf Oil (QI!)
+							}),
+						},
 					}),
 					q(35341, {	-- Defection of Gronnstalker Rokash
 						["provider"] = { "n", 79229 },	-- Gronnstalker Rokash
@@ -420,6 +425,17 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.9, 65.0, FROSTFIRE_RIDGE },
 						["sourceQuest"] = 33826,	-- Where's My Wolf?!
 						["races"] = HORDE_ONLY,
+						["g"] = {
+							o(230262, {	-- Blackrock Blasting Powder
+								["coords"] = {
+									{ 60.8, 73.0, FROSTFIRE_RIDGE },
+									{ 62.4, 75.2, FROSTFIRE_RIDGE },
+									{ 63.1, 75.7, FROSTFIRE_RIDGE },
+									{ 64.2, 73.4, FROSTFIRE_RIDGE },
+								},
+								["g"] = { i(104039) },	-- Blackrock Blasting Powder (QI!)
+							}),
+						},
 					}),
 					q(34230, {	-- Eye Need That
 						["provider"] = { "n", 72874 },	-- Archmage Khadgar
@@ -1124,10 +1140,7 @@ root(ROOTS.Zones, {
 					}),
 					q(32796, {	-- To the Garrison
 						["provider"] = { "n", 70941 },	-- Ga'nar
-						["coords"] = {
-							{ 51.3, 64.3, 532 },	-- Grulloc's Grotto
-							{ 52.6, 66.9, 532 },	-- Grulloc's Grotto
-						},
+						["coord"] = { 49.7, 51.5, 532 },	-- Grulloc's Grotto
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 32795,	-- The Eldest
 					}),

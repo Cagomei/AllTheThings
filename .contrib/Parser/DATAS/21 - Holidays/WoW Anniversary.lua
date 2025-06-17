@@ -2246,6 +2246,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}),
 				},
 			}),
+			n(158192, {	-- Leeroy Jenkins
+				i(232378),	-- Jenkins' No Nonsense Fried Chicken
+				i(172091),	-- Leeroy's Spicy Fried Chicken
+			}),
+			n(158067, {	-- Persnip Goodup <Balloon Vendor>
+				["coord"] = { 53.2, 55.6, CAVERNS_OF_TIME },
+				["groups"] = {
+					i(172019),	-- Blue Anniversary Balloons
+					i(172018),	-- Red Anniversary Balloons
+					i(172017),	-- Sharpened Pin
+				},
+			}),
+			n(157756, {	-- Waiter <Food & Drink>
+				["coord"] = { 53.8, 39.0, CAVERNS_OF_TIME },
+				["groups"] = {
+					i(171199),	-- Ookerdooker Elixir
+					i(171196),	-- Spellstone Delight
+					i(171195),	-- Sugary Soul Shard
+				},
+			}),
 		}),
 	})),
 	n(WOW_ANNIVERSARY_SIXTEEN, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } },{

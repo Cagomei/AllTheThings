@@ -272,6 +272,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 							["g"] = {
 								i(170483),	-- Torn Journal Page #16 (QI!)
+								i(171348),	-- Torn Scroll of Unearthly Rituals
 							},
 						}),
 						q(55407, {	-- Calming the Spine
@@ -484,8 +485,10 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								ADDED_9_2_0,	-- Reported available again 2022-03-21
 							},
 							["g"] = {
+								i(169652),	-- Bolt of Embroidered Cloth
 								i(170490),	-- Torn Journal Page #58 (QI!)
 								i(170491),	-- Burnt Journal Page
+								i(169651),	-- The Ways of the Old Gods
 							},
 						}),
 						q(58634, {	-- Opening the Gateway

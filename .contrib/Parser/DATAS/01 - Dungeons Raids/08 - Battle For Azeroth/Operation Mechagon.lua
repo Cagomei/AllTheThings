@@ -391,7 +391,7 @@ if CombineSeasonalLoot then
 						i(168982),	-- Regal Mekanospurs
 						i(168988),	-- Royal Attendant's Trouser
 					}
-				)))
+				))),
 			}),
 		})),
 		-- Item Appearance changes during the Season
@@ -406,6 +406,16 @@ if CombineSeasonalLoot then
 				-- during the Season, Blizz changed the Item/Appearance association such that Mythic Mod is no longer accurate to the previous Mythic Appearance
 				modID = 14,
 			}),
+		}),
+		-- Apparently the old versions of these helms ARE available during the season... but only from the Great Vault (confirmed)
+		header(HEADERS.Object, 446366, {	-- The Great Vault
+			["sharedDescription"] = "Only available from the Great Vault during the Season. It is expected (though not confirmed) that the original Source will be available again after the start of the next Season.",
+			["g"] = {
+				i(169003),	-- Apogee Inventor's Goggles
+				i(169006),	-- Inventor's Ingenious Trifocals
+				i(169005),	-- Mekgineer's Mindbending Headgear
+				i(169004),	-- Psychogenic Prognosticator's Lenses
+			},
 		}),
 	}
 else

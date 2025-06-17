@@ -2377,7 +2377,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{58.8, 37.2, BURNING_STEPPES},
 					},
 				}),
-				i(14490, {	-- Pattern: Cindercloth Pants
+				i(14490, {	-- Pattern: Cindercloth Pants (RECIPE!)
 					["cr"] = 7037,	-- Thaurissan Firewalker (RECIPE!)
 					["coords"] = {
 						{43.8, 39.4, BURNING_STEPPES},

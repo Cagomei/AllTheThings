@@ -168,6 +168,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					o(207724),	-- Shipwreck Debris
 					o(180685),	-- Waterlogged Wreckage
 				}),
+				prof(TAILORING, {
+					n(11052, {	-- Timothy Worthington <Master Tailor>
+						["coord"] = { 66.2, 51.6, DUSTWALLOW_MARSH },
+						["races"] = ALLIANCE_ONLY,
+						-- #if BEFORE 2.1.0
+						["g"] = ARTISAN_TAILORING,
+						-- #endif
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(1258, {	-- ... and Bugs

@@ -723,8 +723,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		}),
 		filter(CLOTH, {
 			i(146666),	-- Celumbra, the Night's Dichotomy
-			i(151771),	-- Festival Dress
-			i(151772),	-- Festival Suit
 			i(151792),	-- Green Winter Clothes
 			i(127002),	-- Imbued Silkweave Bracers
 			i(127001),	-- Imbued Silkweave Cinch

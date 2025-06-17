@@ -1956,7 +1956,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.2, 40.6, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6272, {	-- Pattern: Blue Linen Robe
+						i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5786, {	-- Pattern: Murloc Scale Belt (RECIPE!)
@@ -1965,7 +1965,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5787, {	-- Pattern: Murloc Scale Breastplate (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5771, {	-- Pattern: Red Linen Bag
+						i(5771, {	-- Pattern: Red Linen Bag (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
@@ -2006,7 +2006,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 					},
 				}),
 				n(5757, {	-- Lilly <Enchanting Supplies>
@@ -2028,7 +2028,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 					},
 				}),
 				n(9553, {	-- Nadia Vernon <Bowyer>
@@ -2138,7 +2138,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if BEFORE CATA
-				i(5771, {	-- Pattern: Red Linen Bag
+				i(5771, {	-- Pattern: Red Linen Bag (RECIPE!)
 					["crs"] = {
 						3531,	-- Moonrage Tailor
 						3530,	-- Pyrewood Tailor

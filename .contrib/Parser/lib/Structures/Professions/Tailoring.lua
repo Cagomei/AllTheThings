@@ -1,6 +1,215 @@
 ---------------
 -- TAILORING --
 ---------------
+APPRENTICE_JOURNEYMAN_EXPERT_TAILORING = {
+	r(3908, {	-- Tailoring (Apprentice)
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 5,
+		-- #endif
+		["rank"] = 1,
+	}),
+	r(3909, {	-- Tailoring (Journeyman)
+		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 10,
+		-- #endif
+		["rank"] = 2,
+	}),
+	r(3910, {	-- Tailoring (Expert)
+		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		-- #if SEASON_OF_DISCOVERY
+		["OnUpdate"] = [[function(t)
+			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 26 or 20;
+		end]],
+		-- #else
+		["lvl"] = 20,
+		-- #endif
+		-- #endif
+		["rank"] = 3,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264616, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Tailoring
+	r(330222, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [CLASSIC]
+	r(330223, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [CLASSIC]
+	r(330224, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [CLASSIC]
+	r(330225, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [CLASSIC]
+	r(330226, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [CLASSIC]
+	n(ARMOR, {
+		r(8766),	-- Azure Silk Belt
+		r(8760),	-- Azure Silk Hood
+		r(8758),	-- Azure Silk Pants
+		r(3859),	-- Azure Silk Vest
+		r(2395),	-- Barbaric Linen Vest
+		r(12053),	-- Black Mageweave Gloves
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_TWO, r(439088, {["timeline"] = {ADDED_1_15_1}})),	-- Black Mageweave Leggings
+		r(12049, {["timeline"] = {REMOVED_1_15_1}}),	-- Black Mageweave Leggings
+		-- #else
+		r(12049),	-- Black Mageweave Leggings
+		-- #endif
+		r(12050),	-- Black Mageweave Robe
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_TWO, r(439086, {["timeline"] = {ADDED_1_15_1}})),	-- Black Mageweave Vest
+		r(12048, {["timeline"] = {REMOVED_1_15_1}}),	-- Black Mageweave Vest
+		-- #else
+		r(12048),	-- Black Mageweave Vest
+		-- #endif
+		r(2394),	-- Blue Linen Shirt
+		r(18420, {["timeline"] = {ADDED_2_1_0}}),	-- Brightcloth Cloak
+		r(18415, {["timeline"] = {ADDED_2_1_0}}),	-- Brightcloth Gloves
+		r(18414, {["timeline"] = {ADDED_2_1_0}}),	-- Brightcloth Robe
+		r(3914),	-- Brown Linen Pants
+		r(7623),	-- Brown Linen Robe
+		r(3915),	-- Brown Linen Shirt
+		r(2385),	-- Brown Linen Vest
+		r(12069),	-- Cindercloth Robe
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_TWO, r(439098, {["timeline"] = {ADDED_1_15_1}})),	-- Crimson Silk Belt
+		r(8772, {["timeline"] = {REMOVED_1_15_1}}),	-- Crimson Silk Belt
+		-- #else
+		r(8772),	-- Crimson Silk Belt
+		-- #endif
+		r(8804),	-- Crimson Silk Gloves
+		r(8799),	-- Crimson Silk Pantaloons
+		r(8791),	-- Crimson Silk Vest
+		r(3848),	-- Double-stitched Woolen Shoulders
+		r(12067),	-- Dreamweave Gloves
+		r(12070),	-- Dreamweave Vest
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_TWO, r(439100, {["timeline"] = {ADDED_1_15_1}})),	-- Earthen Vest
+		r(8764, {["timeline"] = {REMOVED_1_15_1}}),	-- Earthen Vest
+		-- #else
+		r(8764),	-- Earthen Vest
+		-- #endif
+		r(18437, {["timeline"] = {ADDED_2_1_0}}),	-- Felcloth Boots
+		r(18442, {["timeline"] = {ADDED_2_1_0}}),	-- Felcloth Hood
+		r(18451, {["timeline"] = {ADDED_2_1_0}}),	-- Felcloth Robe
+		r(18453, {["timeline"] = {ADDED_2_1_0}}),	-- Felcloth Shoulders
+		r(3871),	-- Formal White Shirt
+		r(18411, {["timeline"] = {ADDED_2_1_0}}),	-- Frostweave Gloves
+		r(18424, {["timeline"] = {ADDED_2_1_0}}),	-- Frostweave Pants
+		r(18403, {["timeline"] = {ADDED_2_1_0}}),	-- Frostweave Tunic
+		r(18410, {["timeline"] = {ADDED_2_1_0}}),	-- Ghostweave Belt
+		r(18413, {["timeline"] = {ADDED_2_1_0}}),	-- Ghostweave Gloves
+		r(18441, {["timeline"] = {ADDED_2_1_0}}),	-- Ghostweave Pants
+		r(18416, {["timeline"] = {ADDED_2_1_0}}),	-- Ghostweave Vest
+		r(3852),	-- Gloves of Meditation
+		r(2406),	-- Gray Woolen Shirt
+		r(3841),	-- Green Linen Bracers
+		r(2396),	-- Green Linen Shirt
+		r(8774),	-- Green Silken Shoulders
+		r(2399),	-- Green Woolen Vest
+		r(3842),	-- Handstitched Linen Britches
+		r(3840),	-- Heavy Linen Gloves
+		r(3843),	-- Heavy Woolen Gloves
+		r(3850),	-- Heavy Woolen Pants
+		r(6690),	-- Lesser Wizard's Robe
+		r(8776),	-- Linen Belt
+		r(2386),	-- Linen Boots
+		r(2387),	-- Linen Cloak
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_TWO, r(439094, {["timeline"] = {ADDED_1_15_1}})),	-- Long Silken Cloak
+		r(3861, {["timeline"] = {REMOVED_1_15_1}}),	-- Long Silken Cloak
+		-- #else
+		r(3861),	-- Long Silken Cloak
+		-- #endif
+		r(12061),	-- Orange Mageweave Shirt
+		r(6521),	-- Pearl-clasped Cloak
+		r(2392),	-- Red Linen Shirt
+		r(8489),	-- Red Swashbuckler's Shirt
+		r(2397),	-- Reinforced Linen Cape
+		r(8770),	-- Robe of Power
+		r(18423, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Boots
+		r(18409, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Cloak
+		r(18417, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Gloves
+		r(18444, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Headband
+		r(18438, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Pants
+		r(18406, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Robe
+		r(18449, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Shoulders
+		r(18407, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Tunic
+		r(8762),	-- Silk Headband
+		r(8465),	-- Simple Dress
+		r(12046),	-- Simple Kilt
+		r(12045),	-- Simple Linen Boots
+		r(12044),	-- Simple Linen Pants
+		r(3845),	-- Soft-soled Linen Boots
+		r(3855),	-- Spidersilk Boots
+		r(3866),	-- Stylish Red Shirt
+		r(7624),	-- White Linen Robe
+		r(2393),	-- White Linen Shirt
+		r(8483),	-- White Swashbuckler's Shirt
+		r(8467),	-- White Woolen Dress
+		r(18421, {["timeline"] = {ADDED_2_1_0}}),	-- Wizardweave Leggings
+		r(18446, {["timeline"] = {ADDED_2_1_0}}),	-- Wizardweave Robe
+		r(18450, {["timeline"] = {ADDED_2_1_0}}),	-- Wizardweave Turban
+		r(2401),	-- Woolen Boots
+		r(2402),	-- Woolen Cape
+	}),
+	filter(BAGS, {
+		r(3755),	-- Linen Bag
+		r(12065),	-- Mageweave Bag
+		r(3813),	-- Small Silk Pack
+		r(3757),	-- Woolen Bag
+	}),
+	filter(REAGENTS, {
+		r(2963),	-- Bolt of Linen Cloth
+		r(3865),	-- Bolt of Mageweave
+		r(3839),	-- Bolt of Silk Cloth
+		r(2964),	-- Bolt of Woolen Cloth
+	}),
+};
+ARTISAN_TAILORING = {
+	r(12180, {	-- Tailoring (Artisan)
+		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		-- #if SEASON_OF_DISCOVERY
+		["OnUpdate"] = [[function(t)
+			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 41 or 35;
+		end]],
+		-- #else
+		["lvl"] = 35,
+		-- #endif
+		-- #endif
+		["rank"] = 4,
+	}),
+	n(ARMOR, {
+		r(12073),	-- Black Mageweave Boots
+		r(12072),	-- Black Mageweave Headband
+		r(12074),	-- Black Mageweave Shoulders
+		r(12088),	-- Cindercloth Boots
+		r(12092),	-- Dreamweave Circlet
+		r(18402),	-- Runecloth Belt
+		r(12077),	-- Simple Black Dress
+	}),
+	filter(BAGS, {
+		r(12079),	-- Red Mageweave Bag
+	}),
+	filter(REAGENTS, {
+		r(18401),	-- Bolt of Runecloth
+	}),
+};
+SHADOWEAVE_TAILORING = {
+	r(12082),	-- Shadoweave Boots
+	r(12071),	-- Shadoweave Gloves
+	r(12052),	-- Shadoweave Pants
+	r(12055),	-- Shadoweave Robe
+	r(12076),	-- Shadoweave Shoulders
+}
+CLASSIC_TAILORING = appendGroups(APPRENTICE_JOURNEYMAN_EXPERT_TAILORING,
+-- #if AFTER 2.1.0
+ARTISAN_TAILORING
+-- #else
+	{}
+-- #endif
+);
 VANILLA_TAILORING_VENDOR_REAGENTS = {
 	i(2325),	-- Black Dye
 	i(2324),	-- Bleach

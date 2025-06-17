@@ -2713,7 +2713,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 52.6, 55.6, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6270, {	-- Pattern: Blue Linen Vest
+						i(6270, {	-- Pattern: Blue Linen Vest (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

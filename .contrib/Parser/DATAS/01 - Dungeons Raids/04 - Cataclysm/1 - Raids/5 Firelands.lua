@@ -160,6 +160,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					q(29194, {	-- Through a Glass, Darkly
 						["qg"] = 52835,	-- Tarecgosa
 						["sourceQuest"] = 29193,	-- On a Wing and a Prayer
+						["coord"] = { 34.5, 25.3, BOREAN_TUNDRA },
 						["maps"] = { 370 },		-- The Nexus (Scenario Map)
 					}),
 					q(29225, {	-- Actionable Intelligence

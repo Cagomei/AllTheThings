@@ -248,6 +248,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				prof(TAILORING, {
+					n(4578, {	-- Josephine Lister <Master Shadoweave Tailor>
+						["coord"] = { 87.0, 20.8, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = SHADOWEAVE_TAILORING,
+					}),
 					n(4577, {	-- Millie Gregorian <Tailoring Supplies>
 						["sym"] = { {"sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
 						["coord"] = { 70.6, 30.1, UNDERCITY },

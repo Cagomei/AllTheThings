@@ -987,6 +987,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(65337, {	-- Emerald Orb
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(12906),	-- Purified Moonwell Water (QI!)
 					},
 				}),
 				q(5165, {	-- Dousing the Flames of Protection
@@ -1587,6 +1589,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28116,	-- Crying Violet
 					["coord"] = { 36.3, 58.2, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						i(12907),	-- Corrupt Moonwell Water (QI!)
+						i(12922),	-- Empty Canteen (QI!)
+					},
 				}),
 				q(28228, {	-- Rejoining the Forest
 					["qg"] = 48044,	-- Flourishing Protector

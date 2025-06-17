@@ -5001,10 +5001,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 						{	-- Honored
 							applyclassicphase(PHASE_THREE_ENCHANTS, i(19446)),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
-							i(19216),	-- Pattern: Argent Boots
+							applyclassicphase(PHASE_THREE_RECIPES, i(19216)),	-- Pattern: Argent Boots (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19328)),	-- Pattern: Dawn Treaders (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
-							i(19442),	-- Recipe: Powerful Anti-Venom (RECIPE!)
+							applyclassicphase(PHASE_THREE_RECIPES, i(19442)),	-- Recipe: Powerful Anti-Venom (RECIPE!)
 							i(13482),	-- Recipe: Transmute Air to Fire (RECIPE!)
 							i(22014, {	-- Hallowed Brazier
 								["timeline"] = { REMOVED_4_0_3 },
@@ -5131,7 +5131,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							applyclassicphase(PHASE_THREE_ENCHANTS, i(19447)),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
-							i(19217),	-- Pattern: Argent Shoulders
+							applyclassicphase(PHASE_THREE_RECIPES, i(19217)),	-- Pattern: Argent Shoulders (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19329)),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
 							-- #if SEASON_OF_DISCOVERY
 							-- CRIEVE NOTE: With SOD phase 4, they put this recipe directly on the vendor. Interesting.

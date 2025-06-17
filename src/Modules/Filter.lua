@@ -147,7 +147,7 @@ function(item)
 		return true;
 	end
 
-	local specs = app.GetFixedItemSpecInfo(item.itemID);
+	local specs = item.specs
 	return specs and #specs > 0;
 end);
 

@@ -13,7 +13,7 @@ local ipairs, pairs, rawset, rawget, tinsert, math_floor, select, tonumber, tost
 	= ipairs, pairs, rawset, rawget, tinsert, math.floor, select, tonumber, tostring, tremove
 local GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
 	= GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
-
+local ItemEventListener = ItemEventListener
 
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
@@ -259,15 +259,13 @@ local CLASS = "Item"
 local KEY = "itemID"
 local cache = app.CreateCache("modItemID");
 -- Consolidated function to cache available Item information
-local function RawSetItemInfoFromLink(t, rawlink)
+local function RawSetItemInfoFromLink(t, rawlink, attemptRefresh)
+	if attemptRefresh then app.DirectGroupRefresh(t, true) end
 	local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(rawlink);
 	-- app.PrintDebug("RawSetLink:=",rawlink,"->",link)
+	local _t, id = cache.GetCached(t)
 	if link then
-		--[[ -- Debug Prints
-		local _t, id = cache.GetCached(t);
-		print("rawset item info",id,link,name,quality,b)
-		--]]
-		local _t = cache.GetCached(t)
+		-- app.PrintDebug("rawset item info",id,link,name,quality,b)
 		_t.name = name;
 		_t.link = link;
 		_t.title = nil
@@ -281,34 +279,40 @@ local function RawSetItemInfoFromLink(t, rawlink)
 		end
 		return link;
 	end
-	local canretry = t.CanRetry
-	if not canretry then
-		-- somehow another process is activating the CanRetry on this item via another means, so if that's the case ignore the retry
-		-- local nextcanretry = t.CanRetry
-		-- app.PrintDebug("__RawSetItemInfoFromLink.check",t.hash,t.__RawSetItemInfoFromLink,canretry,nextcanretry,GetItemInfoInstant(rawlink))
-		-- check CanRetry again, this will restart the retry timer for this Item now that the actual get item info has been hit
-		if not t.__RawSetItemInfoFromLink then
-			-- this causes situtations where the raw set link is the first attempt and thus will do 2 retries before giving up
-			-- typically only /att list situations... but would be nice to fix properly
-			t.__RawSetItemInfoFromLink = true
-			-- app.PrintDebug("__RawSetItemInfoFromLink.set.stale",t.hash)
+	if not _t.__RawSetItemInfoFromLink then
+		_t.__RawSetItemInfoFromLink = true
+		-- app.PrintDebug("__RawSetItemInfoFromLink.set.fresh",t.hash,t.__RawSetItemInfoFromLink,canretry)
+		-- app.PrintDebug("Item Callback", id)
+		ItemEventListener:AddCallback(math_floor(id), function()
+			-- app.PrintDebug("Item Loaded", id)
+			RawSetItemInfoFromLink(t, rawlink, true)
+		end)
+		return
+	end
+	if _t.NoServerData or not t.CanRetry then
+		if _t.name then
 			return
 		end
-		local _t, id = cache.GetCached(t)
 		local itemName = t.baselink or L.ITEM_NAMES[id] or (t.sourceID and L.SOURCE_NAMES and L.SOURCE_NAMES[t.sourceID])
 			or "Item #" .. tostring(id) .. "*";
 		_t.title = L.FAILED_ITEM_INFO;
 		_t.link = nil;
 		_t.sourceID = nil;
 		-- save the "name" field in the source group to prevent further requests to the cache
-		t.name = itemName;
-		-- app.PrintDebug("NoItemInfo",t.hash)
+		if _t.NoServerData then
+			_t.name = itemName;
+			-- app.PrintDebug("NoItemInfo",t.hash)
+		end
 		return
-	-- elseif canretry ~= true then
-	-- 	t.__RawSetItemInfoFromLink = true
-	-- 	app.PrintDebug("__RawSetItemInfoFromLink.set.fresh",t.hash)
 	end
 end
+app.AddEventRegistration("ITEM_DATA_LOAD_RESULT", function(itemID, success)
+	if not success then
+		local _t = cache.GetCachedByID(itemID)
+		-- app.PrintDebug("NoServerData", itemID)
+		_t.NoServerData = true
+	end
+end)
 local function default_link(t)
 	local itemLink = t.rawlink
 	-- item already has a pre-determined itemLink so use that
@@ -341,14 +345,7 @@ local function default_link(t)
 		-- save this link so it doesn't need to be built again
 		t.rawlink = itemLink;
 		return RawSetItemInfoFromLink(t, itemLink);
-	-- elseif t.sourceID then
-		-- local sourceID = t.sourceID;
-		-- This is supposed to be an Item but instead is a raw Source... likely doesn't exist
-		-- local link = "|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r";
-		-- This is weird...
 	end
-	-- i don't know why this was returning Unknown... bad! default funcs should only return nil or a real value
-	-- return UNKNOWN;
 end
 local function default_icon(t)
 	return t.itemID and GetItemIcon(t.itemID) or 134400;

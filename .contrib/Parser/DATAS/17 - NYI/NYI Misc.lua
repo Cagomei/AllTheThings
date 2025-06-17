@@ -388,6 +388,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(168171),	-- [PH] Objective Reward
 			i(172381),	-- [PH] Objective Reward
 			i(168244),	-- [PH] Treasure Reward
+			i(172204),	-- Add Keystone Affix: Beguiling
 			i(170145),	-- Cache of Palace Treasures
 			i(164774),	-- Decrypted Message Module
 			i(169081),	-- Holographic Combat Entity Data
@@ -396,11 +397,13 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 8.2.5
 		expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_5 } }, {
+			i(169389),	-- [DNT] Lookout's Key
 			i(170488),	-- [DNT] Torn Journal Page #7
 			i(170484),	-- [DNT] Torn Journal Page #14
 			i(170487),	-- [DNT] Torn Journal Page #23
 			i(171372),	-- Alterac Valley Mark of Honor
 			i(169295),	-- Dormant Vision Stone
+			i(171366),	-- Potion of Temporary Lucidity
 			i(171949),	-- Shadow Arrow
 			i(173535),	-- Service Record
 		})),

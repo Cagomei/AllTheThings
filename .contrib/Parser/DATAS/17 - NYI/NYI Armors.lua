@@ -343,6 +343,12 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(60728),	-- Keeshan's Burlap Vest
 				i(65746),	-- Leggings of Valorous Defense
 				i(47102),	-- Manaweave Robe
+				i(60631, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Cord of Dominance
+				i(60632, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Cord of Dominance
+				i(60629, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Cuffs of Dominance
+				i(60614, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Cuffs of Dominance
+				i(60627, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Treads of Dominance
+				i(60633, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Treads of Dominance
 			}),
 			expansion(EXPANSION.CATA, patch(3,0), {
 				i(78532),	-- Clockwinder's Immaculate Gloves
@@ -411,6 +417,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(62702),	-- Art Template Leather Legs - Leather_Cataclysm_B_01 - Brown
 				i(62703),	-- Art Template Leather Shoulder - Leather_Cataclysm_B_01 - Brown
 				i(62704),	-- Art Template Leather Wrist - Leather_Cataclysm_B_01 - Brown
+				i(60592, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Belt of Triumph
+				i(60595, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Belt of Triumph
+				i(60600, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Belt of Triumph
+				i(60596, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Boots of Triumph
+				i(60599, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Boots of Triumph
 			}),
 			expansion(EXPANSION.CATA, patch(2,0), {
 				i(71569),	-- Flamebinder Bracers
@@ -451,7 +462,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		filter(MAIL, {
 			expansion(EXPANSION.CATA, patch(0,3), {
 				i(63002),	-- Bat Claw Boots
-				--
 				i(54551),	-- Defiant Bracers
 				i(59789),	-- Sea-Snack Footguards
 				i(65744),	-- Nimble Command Shoulderguards
@@ -472,6 +482,21 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(54778),	-- Burnished Boots (Again)
 				i(54781),	-- Thorbia's Gauntlets
 				i(54783),	-- Silvered Bronze Shoulders
+				i(60537, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Sabatons of Dominance
+				i(60570, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Sabatons of Salvation
+				i(60552, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Sabatons of Triumph
+				i(60562, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Sabatons of Triumph
+				i(60563, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Sabatons of Triumph
+				i(60566, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Waistguard of Salvation
+				i(60571, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Waistguard of Salvation
+				i(60551, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Waistguard of Triumph
+				i(60558, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Waistguard of Triumph
+				i(60561, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Waistguard of Triumph
+				i(60538, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Wristguards of Dominance
+				i(60568, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Wristguards of Salvation
+				i(60553, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Wristguards of Triumph
+				i(60556, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Wristguards of Triumph
+				i(60560, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Wristguards of Triumph
 			}),
 			expansion(EXPANSION.CATA, patch(2,0), {
 				i(71570),	-- Bracers of Forked Lightning
@@ -497,9 +522,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(78536),	-- Zeherah's Dragonskull Crown
 				i(78619),	-- Zeherah's Dragonskull Crown
 			}),
-			n(P4xx, {
-				i(68844),	-- Unknown
-			}),
 		}),
 		filter(PLATE, {
 			expansion(EXPANSION.CATA, patch(0,3), {
@@ -513,6 +535,21 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(59772),	-- Bracers of Burbling Freedom (Yes, Same name)
 				i(65743),	-- Helm of Vicious Direction
 				i(54789),	-- Art Template Plate Belt - Plate_Common_C_01 - Rust
+				i(60507, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Bracers of Salvation
+				i(60515, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Bracers of Salvation
+				i(60510, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Bracers of Triumph
+				i(60524, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Bracers of Triumph
+				i(60529, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Bracers of Triumph
+				i(60517, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Girdle of Salvation
+				i(60518, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Girdle of Salvation
+				i(60514, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Girdle of Triumph
+				i(60526, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Girdle of Triumph
+				i(60527, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Girdle of Triumph
+				i(60506, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Greaves of Salvation
+				i(60519, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Greaves of Salvation
+				i(60522, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Greaves of Triumph
+				i(60525, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Greaves of Triumph
+				i(60528, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Greaves of Triumph
 			}),
 			expansion(EXPANSION.CATA, patch(2,0), {
 				i(71583),	-- Bracers of Imperious Truths
@@ -548,7 +585,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(78614),	-- Visage of Petrification
 			}),
 			n(P4xx, {
-				i(47091),	-- Unfaltering Armguards (4.0)
+				i(68844),	-- Art Template Plate Hand - Plate_PVPDeathKnight_C_02 - Blue
 				i(63054),	-- Fallback Armor - Plate Waist
 				i(63055),	-- Fallback Armor - Plate Feet
 				i(63056),	-- Fallback Armor - Plate Chest
@@ -557,6 +594,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(63059),	-- Fallback Armor - Plate Legs
 				i(63060),	-- Fallback Armor - Plate Shoulder
 				i(63061),	-- Fallback Armor - Plate Wrist
+				i(47091),	-- Unfaltering Armguards (4.0)
 			}),
 		}),
 		filter(SHIRTS, {
@@ -601,10 +639,31 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			expansion(EXPANSION.CATA, patch(0,3), {
 				i(54547),	-- Cracked Jewelry Box
 				i(65015),	-- DONTUSEFury of Angerforge
+				i(61035, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Badge of Dominance
+				i(61034, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Badge of Victory
+				i(61030, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Emblem of Proficiency
+				i(69781, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Mark of Cruelty
+				i(69783, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Mark of Meditation
+				i(69782, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Mark of Tenacity
+				i(60795, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Medallion of Accuracy (A)
+				i(60796, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Medallion of Alacrity (A)
+				i(60798, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Medallion of Command (A)
+				i(60797, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Medallion of Prowess (A)
+				i(69784, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Symbol of Cruelty
+				i(69786, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Symbol of Meditation
+				i(69785, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Symbol of Tenacity
+				i(69785, { ["timeline"] = CREATED_4_0_3 }),	-- Vicious Gladiator's Symbol of Tenacity
+			}),
+			expansion(EXPANSION.CATA, patch(2,0), {
+				i(70411, { ["timeline"] = CREATED_4_2_0 }),	-- Ruthless Gladiator's Mark of Meditation
+				i(70410, { ["timeline"] = CREATED_4_2_0 }),	-- Ruthless Gladiator's Mark of Tenacity
+				i(70412, { ["timeline"] = CREATED_4_2_0 }),	-- Ruthless Gladiator's Symbol of Cruelty
+				i(70414, { ["timeline"] = CREATED_4_2_0 }),	-- Ruthless Gladiator's Symbol of Meditation
+				i(70413, { ["timeline"] = CREATED_4_2_0 }),	-- Ruthless Gladiator's Symbol of Tenacity
 			}),
 		}),
 		-- #if BEFORE MOP
-		filter(MISC, {
+		filter(RELICS_F, {
 			-- These were created for Dragon Soul, but the Normal Mode relics themselves were added to the Valor vendor instead, meaning the LFR and Heroic versions were never available to players
 			i(78629, {	-- Gutripper Shard (LFR)
 				["timeline"] = { CREATED_4_3_0, REMOVED_5_0_4 },
@@ -4185,8 +4244,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			n(SPECIAL, {	-- Duos
 				-- Hellfire Ramprats
 				i(238934),	-- Boots of the Darkwalker
-				-- Shadowfang Keeep
-				i(238981),	-- Gloves of the Uplifted Cup
 			}),
 		})),
 	}),

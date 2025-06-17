@@ -2299,7 +2299,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 25.6, 25.8, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7114, {	-- Pattern: Azure Silk Gloves
+						i(7114, {	-- Pattern: Azure Silk Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(7613, {	-- Pattern: Green Leather Armor (RECIPE!)

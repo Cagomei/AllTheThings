@@ -447,7 +447,10 @@ root(ROOTS.Zones, {
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
 							},{
-								q(32641),	-- Champions of the Thunder King (H)
+								q(32641, {	-- Champions of the Thunder King (H)
+									["qg"] = 70160,	-- Taran Zhu
+									["coord"] = { 51.4, 46.1, ISLE_OF_THUNDER },
+								}),
 							})),
 							-- Daily
 							n(QUESTS, sharedData({

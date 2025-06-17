@@ -359,7 +359,11 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_7_0_3 }
 							}),
 							i(52937),	-- Chip's Cloak
-							i(52969),	-- Heartache Dagger
+							-- #if ANYCLASSIC
+							i(52969),	-- Heartache Dagger (this ID is used in Classic [we'll probably find out sometime])
+							-- #else
+							i(52965),	-- Heartache Dagger
+							-- #endif
 						},
 					}),
 					q(25200, {	-- Shredder Shutdown

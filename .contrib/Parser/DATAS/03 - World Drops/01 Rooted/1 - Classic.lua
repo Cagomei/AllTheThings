@@ -3808,102 +3808,108 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			}),
 		}),
 		prof(TAILORING, {
-			i(7085),	-- Pattern: Azure Shoulders
+			i(7085),	-- Pattern: Azure Shoulders (RECIPE!)
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217254)),	-- Pattern: Boots of the Enchanter
-			i(4352, {	-- Pattern: Boots of the Enchanter
+			applyclassicphase(SOD_PHASE_TWO, i(217254)),	-- Pattern: Boots of the Enchanter (RECIPE!)
+			i(4352, {	-- Pattern: Boots of the Enchanter (RECIPE!)
 				["timeline"] = { REMOVED_1_15_1 },
 			}),
 			-- #else
-			i(4352),	-- Pattern: Boots of the Enchanter
+			i(4352),	-- Pattern: Boots of the Enchanter (RECIPE!)
 			-- #endif
-			i(14510),	-- Pattern: Bottomless Bag
-			i(14484, {	-- Pattern: Brightcloth Cloak
+			i(14510),	-- Pattern: Bottomless Bag (RECIPE!)
+			i(14484, {	-- Pattern: Brightcloth Cloak (RECIPE!)
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
-			i(14479, {	-- Pattern: Brightcloth Gloves
+			i(14479, {	-- Pattern: Brightcloth Gloves (RECIPE!)
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
-			i(14494),	-- Pattern: Brightcloth Pants
-			i(14478, {	-- Pattern: Brightcloth Robe
+			i(14494),	-- Pattern: Brightcloth Pants (RECIPE!)
+			i(14478, {	-- Pattern: Brightcloth Robe (RECIPE!)
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
-			i(10316),	-- Pattern: Colorful Kilt
+			i(10316),	-- Pattern: Colorful Kilt (RECIPE!)
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217251)),	-- Pattern: Crimson Silk Shoulders
-			i(7084, {	-- Pattern: Crimson Silk Shoulders
-				["timeline"] = { REMOVED_1_15_1 },
-			}),
+			applyclassicphase(SOD_PHASE_TWO, i(217251, {["timeline"] = {ADDED_1_15_1}})),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
+			i(7084, {["timeline"] = {REMOVED_1_15_1}}),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
 			-- #else
-			i(7084),	-- Pattern: Crimson Silk Shoulders
+			i(7084),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
 			-- #endif
-			i(7086),	-- Pattern: Earthen Silk Belt
-			i(14492, {	-- Pattern: Felcloth Boots
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217249, {["timeline"] = {ADDED_1_15_1}})),	-- Pattern: Earthen Silk Belt (RECIPE!)
+			i(7086, {["timeline"] = {REMOVED_1_15_1}}),	-- Pattern: Earthen Silk Belt (RECIPE!)
+			-- #else
+			i(7086),	-- Pattern: Earthen Silk Belt (RECIPE!)
+			-- #endif
+			i(14492, {	-- Pattern: Felcloth Boots (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(14496, {	-- Pattern: Felcloth Hood
+			i(14496, {	-- Pattern: Felcloth Hood (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(14506, {	-- Pattern: Felcloth Robe
+			i(14506, {	-- Pattern: Felcloth Robe (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(14508, {	-- Pattern: Felcloth Shoulders
+			i(14508, {	-- Pattern: Felcloth Shoulders (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(14474, {	-- Pattern: Frostweave Gloves
+			i(14474, {	-- Pattern: Frostweave Gloves (RECIPE!)
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
-			i(14489, {	-- Pattern: Frostweave Pants
+			i(14489, {	-- Pattern: Frostweave Pants (RECIPE!)
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
-			i(14467),	-- Pattern: Frostweave Robe
-			i(14466, {	-- Pattern: Frostweave Tunic
+			i(14467),	-- Pattern: Frostweave Robe (RECIPE!)
+			i(14466, {	-- Pattern: Frostweave Tunic (RECIPE!)
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
-			i(14511),	-- Pattern: Gloves of Spell Mastery
-			i(2601),	-- Pattern: Gray Woolen Robe
-			i(7090),	-- Pattern: Green Silk Armor
-			i(5774),	-- Pattern: Green Silk Pack
-			i(4292),	-- Pattern: Green Woolen Bag
-			i(7092),	-- Pattern: Hands of Darkness
-			i(4346),	-- Pattern: Heavy Woolen Cloak
-			i(14499),	-- Pattern: Mooncloth Bag
-			i(14509),	-- Pattern: Mooncloth Circlet
-			i(14497),	-- Pattern: Mooncloth Leggings
-			i(14507),	-- Pattern: Mooncloth Shoulders
-			i(14501),	-- Pattern: Mooncloth Vest
-			i(4348),	-- Pattern: Phoenix Gloves
-			i(4349),	-- Pattern: Phoenix Pants
-			i(2598),	-- Pattern: Red Linen Robe
-			i(6271),	-- Pattern: Red Linen Vest
-			i(10312),	-- Pattern: Red Mageweave Gloves
-			i(10320),	-- Pattern: Red Mageweave Headband
-			i(10302),	-- Pattern: Red Mageweave Pants
-			i(10315),	-- Pattern: Red Mageweave Shoulders
-			i(10300),	-- Pattern: Red Mageweave Vest
-			i(4345),	-- Pattern: Red Woolen Boots
-			i(4347),	-- Pattern: Reinforced Woolen Shoulders
-			i(4354),	-- Pattern: Rich Purple Silk Shirt
-			i(14498, {	-- Pattern: Runecloth Headband
+			i(14511),	-- Pattern: Gloves of Spell Mastery (RECIPE!)
+			i(2601),	-- Pattern: Gray Woolen Robe (RECIPE!)
+			i(7090),	-- Pattern: Green Silk Armor (RECIPE!)
+			i(5774),	-- Pattern: Green Silk Pack (RECIPE!)
+			i(4292),	-- Pattern: Green Woolen Bag (RECIPE!)
+			i(7092),	-- Pattern: Hands of Darkness (RECIPE!)
+			i(4346),	-- Pattern: Heavy Woolen Cloak (RECIPE!)
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228318, {["timeline"] = {ADDED_1_15_3}})),	-- Pattern: Incandescent Mooncloth Leggings (RECIPE!)
+			-- #endif
+			i(14499),	-- Pattern: Mooncloth Bag (RECIPE!)
+			i(14509),	-- Pattern: Mooncloth Circlet (RECIPE!)
+			i(14497),	-- Pattern: Mooncloth Leggings (RECIPE!)
+			i(14507),	-- Pattern: Mooncloth Shoulders (RECIPE!)
+			i(14501),	-- Pattern: Mooncloth Vest (RECIPE!)
+			i(4348),	-- Pattern: Phoenix Gloves (RECIPE!)
+			i(4349),	-- Pattern: Phoenix Pants (RECIPE!)
+			i(2598),	-- Pattern: Red Linen Robe (RECIPE!)
+			i(6271),	-- Pattern: Red Linen Vest (RECIPE!)
+			i(10312),	-- Pattern: Red Mageweave Gloves (RECIPE!)
+			i(10320),	-- Pattern: Red Mageweave Headband (RECIPE!)
+			i(10302),	-- Pattern: Red Mageweave Pants (RECIPE!)
+			i(10315),	-- Pattern: Red Mageweave Shoulders (RECIPE!)
+			i(10300),	-- Pattern: Red Mageweave Vest (RECIPE!)
+			i(4345),	-- Pattern: Red Woolen Boots (RECIPE!)
+			i(4347),	-- Pattern: Reinforced Woolen Shoulders (RECIPE!)
+			i(4354),	-- Pattern: Rich Purple Silk Shirt (RECIPE!)
+			i(14498, {	-- Pattern: Runecloth Headband (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(14491, {	-- Pattern: Runecloth Pants
+			i(14491, {	-- Pattern: Runecloth Pants (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(14504, {	-- Pattern: Runecloth Shoulders
+			i(14504, {	-- Pattern: Runecloth Shoulders (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(14470, {	-- Pattern: Runecloth Tunic
+			i(14470, {	-- Pattern: Runecloth Tunic (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(4351),	-- Pattern: Shadow Hood
-			i(4353),	-- Pattern: Spider Belt
-			i(4350),	-- Pattern: Spider Silk Slippers
-			i(4356),	-- Pattern: Star Belt
-			i(6390),	-- Pattern: Stylish Blue Shirt
-			i(6391),	-- Pattern: Stylish Green Shirt
-			i(7091),	-- Pattern: Truefaith Gloves
-			i(10301),	-- Pattern: White Bandit Mask
+			i(4351),	-- Pattern: Shadow Hood (RECIPE!)
+			i(4353),	-- Pattern: Spider Belt (RECIPE!)
+			i(4350),	-- Pattern: Spider Silk Slippers (RECIPE!)
+			i(4356),	-- Pattern: Star Belt (RECIPE!)
+			i(6390),	-- Pattern: Stylish Blue Shirt (RECIPE!)
+			i(6391),	-- Pattern: Stylish Green Shirt (RECIPE!)
+			i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
+			i(10301),	-- Pattern: White Bandit Mask (RECIPE!)
 		}),
 		-- #if BEFORE 4.0.1
 		cl(DRUID, {
@@ -5600,5 +5606,15 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		-- Engineering:
 		i(7191),	-- Fused Wiring
+		-- Cloth (Leave more details to Danny)
+		i(14256),	-- Felcloth
+		i(14227),	-- Ironweb Spider Silk
+		i(10285),	-- Shadow Silk
+		i(4337),	-- Thick Spider's Silk
+		i(2589),	-- Linen Cloth
+		i(2592),	-- Wool Cloth
+		i(4306),	-- Silk Cloth
+		i(4338),	-- Mageweave Cloth
+		i(14047),	-- Runecloth
 	}),
 }));
