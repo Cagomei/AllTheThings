@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
-						["groups"] = appendGroups(VANILLA_ENCHANTING_SUPPLIES, {}),
+						["groups"] = VANILLA_ENCHANTING_SUPPLIES,
 					}),
 				}),
 				prof(ENGINEERING, {
@@ -204,10 +204,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_4_0_3 },
-						["groups"] = {
-							i(4400),	-- Heavy Stock
-							i(4399),	-- Wooden Stock
-						},
+						["groups"] =VANILLA_ENGINEERING_SUPPLIES,
 					}),
 				}),
 				prof(FISHING, {
@@ -230,6 +227,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(67410),	-- Very Unlucky Rock
 							i(67388),	-- String of Alligator Teeth
 						},
+					}),
+					n(4222, {	-- Voloren <Fishing Supplies>
+						-- #if AFTER CATA
+						["coord"] = { 48.44, 61.2, DARNASSUS },
+						-- #else
+						["coord"] = { 46.9, 56.9, DARNASSUS },
+						-- #endif
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = FISHING_SUPPLIES,
 					}),
 				}),
 				prof(JEWELCRAFTING, {

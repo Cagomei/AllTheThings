@@ -7242,6 +7242,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 			e(2036, {	-- Vol'kaal
 				["crs"] = { 122965 },	-- Vol'kaal
 				["g"] = {
+					i(158375),	-- Drape of the Loyal Vassal
 				},
 			}),
 			e(2083, {	-- Rezan
@@ -7252,7 +7253,12 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 			e(2030, {	-- Yazma
 				["crs"] = { 122968 },	-- Yazma
 				["g"] = {
+					i(239073),	-- Coif of the Court Spider
+					i(239072),	-- Loa Betrayer's Vestments
+					i(239070),	-- Mantle of Fastidious Machinations
+					i(239071),	-- Secret Spinner's Miter
 					i(239069),	-- Soulspun Casque
+					i(239068),	-- Spymaster's Wrap
 				},
 			}),
 		}),
@@ -7287,6 +7293,14 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 			e(2095,	{	-- Harlan Sweete
 				["crs"] = { 126983 },	-- Harlan Sweete
 				["g"] = {
+					i(239058),	-- Gaping Maw Shoulderguard
+					i(239057),	-- Gold-Tasseled Epaulets
+					i(239055),	-- Irontide Captain's Hat
+					i(239059),	-- Lockjaw Shoulderplate
+					i(239056),	-- Ruffled Poet Blouse
+					i(239052),	-- Sea-Brawler's Greathelm
+					i(239053),	-- Smartly Plumed Cap
+					i(239054),	-- Sweete's Jeweled Headgear
 				},
 			}),
 		}),
@@ -7294,6 +7308,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 			e(2165, {	-- The Golden Serpent
 				["crs"] = { 135322 },	-- The Golden Serpent
 				["g"] = {
+					i(159313),	-- Breechees of the Sacred Hall
+					i(159617),	-- Lustrous Golden Plumage
 				},
 			}),
 			e(2171, {	-- Mchimba the Embalmer
@@ -7308,11 +7324,19 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					135472,	-- Zanazal the Wise
 				},
 				["g"] = {
+					i(159300),	-- Kula's Butchering Wristwraps
 				},
 			}),
 			e(2172, {	-- Dazar, The First King
 				["crs"] = { 136160 },	-- King Dazar <The First>
 				["g"] = {
+					i(239047),	-- Headdress of the First Empire
+					i(239050),	-- Helm of the Raptor King
+					i(239046),	-- Loa-Blessed Chestguard
+					i(239045),	-- Mantle of Ceremonial Ascension
+					i(239051),	-- Pauldrons of the Great Unifier
+					i(239049),	-- Spaulders of Prime Emperor
+					i(239048),	-- Vest of Reverent Adoration
 				},
 			}),
 		}),
@@ -7323,6 +7347,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					134828,	-- Aqualing
 				},
 				["g"] = {
+					i(159420),	-- Stormsurger's Sabatons
 				},
 			}),
 			e(2154, {	-- Tidesage Council
@@ -7331,6 +7356,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					134058,	-- Galecaller Faye
 				},
 				["g"] = {
+					i(159295),	-- Footpads of the Serene Wake
+					i(159419),	-- Ironhull's Reinforced Legplates
+					i(158371),	-- Seabreeze
 				},
 			}),
 			e(2155, {	-- Lord Stormsong
@@ -7338,6 +7366,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					134060,	-- Lord Stormsong
 				},
 				["g"] = {
+					i(159308),	-- Bracers of the Sacred Fleet
+					i(159421),	-- Gauntlets of Total Subservience
+					i(159242),	-- Leggings of the Drowned Lord
+					i(159289),	-- Void-Drenched Cape
 				},
 			}),
 			e(2156, {	-- Vol'zith the Whisperer
@@ -7345,6 +7377,13 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					134069,	-- Vol'zith the Whisperer
 				},
 				["g"] = {
+					i(239040),	-- Cowl of Fluid Machinations
+					i(239043),	-- Chestguard of the Deep Denizen
+					i(239042),	-- Hauberk of Sunken Despair
+					i(239044),	-- Helm of Abyssal Malevolence
+					i(239038),	-- Mantle of Void-Touched Waters
+					i(239039),	-- Stormlurker's Cowl
+					i(239041),	-- Tentacle-Laced Spaulders
 				},
 			}),
 		}),
@@ -7355,6 +7394,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					133944,	-- Aspix
 				},
 				["g"] = {
+					i(159263),	-- Bindings of the Slithering Current
 				},
 			}),
 			e(2143, {	-- Merektha
@@ -7362,6 +7402,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					133384,	-- Merektha
 				},
 				["g"] = {
+					i(159375),	-- Legguards of the Awakening Brood
 				},
 			}),
 			e(2144, {	-- Galvazzt
@@ -7374,6 +7415,13 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 			e(2145, {	-- Avatar of Sethraliss
 				["crs"] = { 133392 },	-- Avatar of Sethraliss
 				["g"] = {
+					i(239031),	-- Brood Cleanser's Amice
+					i(239037),	-- C'thraxxi Binders Pauldrons
+					i(239034),	-- Corrupted Hexxer's Vestments
+					i(239036),	-- Desert Guardian's Breastplate
+					i(239033),	-- Hood of the Slithering Loa
+					i(239032),	-- Robes of the Reborn Serpent
+					i(239035),	-- Sethraliss' Fanged Helm
 				},
 			}),
 		}),
@@ -7385,6 +7433,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					131824,	-- Sister Malady
 				},
 				["g"] = {
+					i(159133),	-- Jagged Iris Sica
 				},
 			}),
 			e(2126, {	-- Soulbound Goliath
@@ -7392,6 +7441,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					131667,	-- Soulbound Goliath
 				},
 				["g"] = {
+					i(159282),	-- Drust-Thatched Wristwraps
 				},
 			}),
 			e(2127, {	-- Raal the Gluttonous
@@ -7401,6 +7451,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					136541,	-- Bile Oozing
 				},
 				["g"] = {
+					i(159452),	-- Fatty Hooves of Gory Comfort
 				},
 			}),
 			e(2128, {	-- Lord and Lady Waycrest
@@ -7409,13 +7460,20 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					131545,	-- Lady Waycrest
 				},
 				["g"] = {
+					i(159457),	-- Risen Lord's Oversized Gauntlets
 				},
 			}),
 			e(2129, {	-- Gorak Tul
 				["crs"] = { 131864 },	-- Gorak Tul
 				["g"] = {
 					i(239023),	-- Amice of the Returned
+					i(239029),	-- Breastplate of the Vengeful
+					i(239027),	-- Deathslaver's Hauberk
+					i(239026),	-- Gorak Tul's Mantle
 					i(239030),	-- Pauldrons of the Horned Horror
+					i(239025),	-- Raiment of the Blighted Tribe
+					i(239024),	-- Soulfuel Headdress
+					i(239028),	-- Soulscarred Headgear
 				},
 			}),
 		}),

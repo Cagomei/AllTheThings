@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 39.8, 55.6, THUNDER_BLUFF },
 						["sym"] = { {"sub", "common_recipes_vendor", 3356} },	-- Sumi <Blacksmithing Supplies>
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {}),
+						["groups"] = VANILLA_BLACKSMITHING_SUPPLIES,
 					}),
 				}),
 				prof(COOKING, {
@@ -152,16 +152,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 36.22, 60.21, THUNDER_BLUFF },
 						["timeline"] = { ADDED_4_1_0 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(4400),	-- Heavy Stock
+						["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
 							i(18647, {	-- Schematic: Red Firework (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(4399),	-- Wooden Stock
-						},
+						}),
 					}),
 				}),
 				prof(FISHING, {
@@ -190,6 +188,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 28.61, 24.61, THUNDER_BLUFF },
 						["timeline"] = { ADDED_6_1_0 },
 						["races"] = HORDE_ONLY,
+					}),
+					n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
+						["coord"] = { 55.8, 47.0, THUNDER_BLUFF },
+						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(FISHING_SUPPLIES, SHINY_BAUBLE, {}),
 					}),
 				}),
 				prof(JEWELCRAFTING, {

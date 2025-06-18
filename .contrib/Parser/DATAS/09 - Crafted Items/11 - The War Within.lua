@@ -1673,6 +1673,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(234246),	-- Glyph of the Admiral's Pistol Shot
 			i(234245),	-- Glyph of the Ashvane Pistol Shot
 			i(234247),	-- Glyph of the Gilded Pistol Shot
+			i(243051, {["timeline"]={ADDED_11_1_7},}),	-- Glyph of the Strix
 			i(234248),	-- Glyph of the Twilight Pistol Shot
 		}),
 		filter(MISC, {

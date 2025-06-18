@@ -170,7 +170,10 @@ root(ROOTS.ExpansionFeatures, {
 				["coord"] = { 20.0, 35.8, DRUSTVAR },
 				["g"] = {
 					i(164976),	-- Skeleton Key (QI!)
-					i(164763),	-- Trident of Deep Ocean (QI!)
+					o(307066, {	-- Ocean Chest
+						["coord"] = { 74.9, 78.9, TIRAGARDE_SOUND },
+						["g"] = { i(164763) },	-- Trident of Deep Ocean (QI!)
+					}),
 				},
 			}),
 			q(53762, {	-- The Tempest Crown

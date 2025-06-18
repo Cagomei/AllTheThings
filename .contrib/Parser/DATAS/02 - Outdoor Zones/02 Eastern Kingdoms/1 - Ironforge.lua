@@ -148,7 +148,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {}),
+						["groups"] = VANILLA_BLACKSMITHING_SUPPLIES,
 					}),
 				}),
 				prof(COOKING, {
@@ -202,8 +202,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5175, {	-- Gearcutter Cogspinner <Engineering Supplies>
 						["coord"] = { 67.8, 43.0, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(4400),	-- Heavy Stock
+						["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
 							i(18649, {	-- Schematic: Blue Firework (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -226,8 +225,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["isLimited"] = true,
 								-- #endif
 							}),
-							i(4399),	-- Wooden Stock
-						},
+						}),
 					}),
 				}),
 				prof(FISHING, {
@@ -278,6 +276,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["collectible"] = false,  -- remove when Blizzard fix fish collection
 						-- #endif
 						["timeline"] = { ADDED_2_3_0 },
+					}),
+					n(5162, {	-- Tansy Puddlefizz <Fishing Supplies>
+						["coord"] = { 48.18, 6.51, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = FISHING_SUPPLIES,
 					}),
 				}),
 				prof(JEWELCRAFTING, {

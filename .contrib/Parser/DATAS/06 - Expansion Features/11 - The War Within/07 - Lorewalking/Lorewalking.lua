@@ -38,11 +38,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							{ 54.5, 57.2, ORGRIMMAR },
 							{ 64.2, 16.1, STORMWIND_CITY },
 						},
+						["isRepeatable"] = true,
 						-- Alex: when I picked up this quest - it flag 40706 & 42074 as completed
 						["g"] = {
-							o(247690, {	-- missing object name
+							o(247690, {	-- Xal'atath
+								["coord"] = { 58.8, 76.6, 20 }, -- Keeper's Rest
 								-- Alex: this is also looted during q:40710
-								i(229361),	-- Xal'atath, Blade of the Black Empire (QI!)
+								["g"] = { i(229361) },	-- Xal'atath, Blade of the Black Empire (QI!)
 							}),
 						},
 					}),
@@ -50,6 +52,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["sourceQuests"] = { 84371 },	-- Lorewalking: The Blade and the High Priest
 						["provider"] = { "n", 231891 },	-- Lorewalker Cho
 						["coord"] = { 61.5, 71.0, 20 },	-- Keeper's Rest
+						["isRepeatable"] = true,
 					}),
 					q(84782, {	-- Lorewalking: The Blade's Past
 						["sourceQuests"] = { 84779 },	-- Lorewalking: The Blade's Gambit
@@ -59,16 +62,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							{ 54.5, 57.2, ORGRIMMAR },
 							{ 64.2, 16.1, STORMWIND_CITY },
 						},
+						["isRepeatable"] = true,
 					}),
 					q(85871, {	-- Lorewalking: The Blade's Forces
 						["sourceQuests"] = { 84782 },	-- Lorewalking: The Blade's Past
 						["provider"] = { "n", 230321 },	-- Xithixxin
 						["coord"] = { 52.5, 73.1, 2381 },	-- Ny'alotha, the Waking City
+						["maps"] = {
+							2382,	-- Ny'alotha
+							2383,	-- Twilight Landing
+							2384,	-- Maw of Gor'ma
+						},
+						["isRepeatable"] = true,
 					}),
 					q(84784, {	-- Lorewalking: The Blade's Nemeses
 						["sourceQuests"] = { 84782 },	-- Lorewalking: The Blade's Past
 						["provider"] = { "n", 230321 },	-- Xithixxin
 						["coord"] = { 52.5, 73.1, 2381 },	-- Ny'alotha, the Waking City
+						["maps"] = {
+							2382,	-- Ny'alotha
+							2383,	-- Twilight Landing
+							2384,	-- Maw of Gor'ma
+						},
+						["isRepeatable"] = true,
 					}),
 					q(84789, {	-- Lorewalking: The Blade's Downfall
 						["sourceQuests"] = {
@@ -77,6 +93,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						},
 						["provider"] = { "n", 230321 },	-- Xithixxin
 						["coord"] = { 52.5, 73.1, 2381 },	-- Ny'alotha, the Waking City
+						["maps"] = { 2379 },	-- Annex of Prophecy
 						["g"] = {
 							i(244888),	-- Echo of the Xal'atath, Blade of the Black Empire (TOY!)
 							i(244846),	-- Lorewalker's Notes: Xal'atath, Blade of the Black Empire (lore)
@@ -92,16 +109,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							{ 54.5, 57.2, ORGRIMMAR },
 							{ 64.2, 16.1, STORMWIND_CITY },
 						},
+						["isRepeatable"] = true,
 					}),
 					q(85029, {	-- Lorewalking: Locus-Walker
 						["sourceQuests"] = { 85027 },	-- Lorewalking: The Protectorate
 						["provider"] = { "n", 231702 },	-- Lorewalker Cho
 						["coord"] = { 60.1, 31.7, NETHERSTORM },
+						["isRepeatable"] = true,
 					}),
 					q(85028, {	-- Lorewalking: The Brokers
 						["sourceQuests"] = { 85029 },	-- Lorewalking: Locus-Walker
 						["provider"] = { "n", 231702 },	-- Lorewalker Cho
 						["coord"] = { 28.4, 47.2, EREDATH },
+						["isRepeatable"] = true,
 					}),
 					q(85035, {	-- Locus-Walker, Telogrus Ranger
 						["sourceQuests"] = { 85028 },	-- Lorewalking: The Brokers
@@ -111,9 +131,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							{ 54.5, 57.2, ORGRIMMAR },
 							{ 64.2, 16.1, STORMWIND_CITY },
 						},
-						["g"] = {
-							i(231831),	-- Ve'nari's Parcel (QI!)
-						},
+						["isRepeatable"] = true,
+						["g"] = { i(231831) },	-- Ve'nari's Parcel (QI!)
 					}),
 					q(85036, {	-- Veni Vidi Ve'nari
 						["sourceQuests"] = { 85035 },	-- Locus-Walker, Telogrus Ranger
@@ -134,14 +153,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							{ 54.5, 57.2, ORGRIMMAR },
 							{ 64.2, 16.1, STORMWIND_CITY },
 						},
+						["isRepeatable"] = true,
 					}),
 					q(85862, {	-- A Prince's Duty
-						--["sourceQuests"] = { 85884 },	-- Lorewalking: The Prince Who Would Be King // It is up during this quest, so, tehchically - no source?
+						["sourceQuests"] = { 85884 },	-- Lorewalking: The Prince Who Would Be King
 						["provider"] = { "n", 233752 },	-- Uther Lightbringer
 						["coord"] = { 34.1, 84.1, 2418 },	-- Scarlet Halls
+						["isRepeatable"] = true,
 					}),
 					q(85885, {	-- Lorewalking: No King Rules Forever
-						["sourceQuests"] = { 85884 },	-- Lorewalking: The Prince Who Would Be King // 85878 required to complete to turn in quest
+						["sourceQuests"] = { 85884 },	-- Lorewalking: The Prince Who Would Be King
 						["provider"] = { "n", 236114 },	-- Lorewalker Cho
 						["coords"] = {
 							{ 49.5, 31.6, DORNOGAL },
@@ -154,14 +175,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						},
 					}),
 					q(85875, {	-- Ascent of the Lich King
-						--["sourceQuests"] = { 85885 },	-- Lorewalking: No King Rules Forever // It is up during this quest, so, tehchically - no source?
+						["sourceQuests"] = { 85885 },	-- Lorewalking: No King Rules Forever
 						--["provider"] = { "n", ?? },	-- auto accepted during 85885
 						["coord"] = { 51.4, 79.4, ICECROWN },
+						["isRepeatable"] = true,
 					}),
 					q(85878, {	-- O' Thanagor
 						["sourceQuests"] = { 85875 },	-- Ascent of the Lich King
 						--["provider"] = { "n", ?? },	-- auto accepted during 85885, but after 85875
 						--["coord"] = { X, Y, ICECROWN_CITADEL },
+						["isRepeatable"] = true,
 					}),
 				}),
 			}),

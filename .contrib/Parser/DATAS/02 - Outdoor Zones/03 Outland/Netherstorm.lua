@@ -1348,6 +1348,8 @@ root(ROOTS.Zones, {
 							i(30010),	-- Fleshling Simulation Staff
 							i(30009),	-- The Burning Crusader
 							i(30013),	-- Twin-Bladed Ripper
+							--
+							i(29618),	-- Protectorate Disruptor (QI!)
 						},
 					}),
 					q(10315, {	-- Neutralizing the Nethermancers
@@ -1433,6 +1435,8 @@ root(ROOTS.Zones, {
 								["provider"] = { "i", 29459 },	-- Ethereum Relay Data
 								["cr"] = 20619,	-- Ethereum Relay
 							}),
+							--
+							i(29482),	-- Ethereum Essence (QI!)
 						},
 					}),
 					q(10300, {	-- Rebuilding the Staff

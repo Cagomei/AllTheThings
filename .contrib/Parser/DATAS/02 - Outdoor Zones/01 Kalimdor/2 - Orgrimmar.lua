@@ -424,9 +424,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
 							i(39684, { ["timeline"] = { ADDED_3_0_2 }}),	-- Hair Trigger
-							i(4400),	-- Heavy Stock
 							i(18647, {	-- Schematic: Red Firework (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -447,8 +446,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["isLimited"] = true,
 							}),
 							i(40533, { ["timeline"] = { ADDED_3_0_2 }}),	-- Walnut Stock
-							i(4399),	-- Wooden Stock
-						},
+						}),
 					}),
 					n(133127, {	-- Thaluriel <Engineering Supplies>
 						["coord"] = { 36.8, 84.6, ORGRIMMAR },
@@ -556,6 +554,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["collectible"] = false,  -- remove when Blizzard fix fish collection
 						-- #endif
 						["timeline"] = { ADDED_2_3_0 },
+					}),
+					n(3333, {	-- Shankys <Fishing Supplies>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 70.0, 29.4, ORGRIMMAR },
+							-- #else
+							{ 66.6, 41.6, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = FISHING_SUPPLIES,
 					}),
 				}),
 				prof(HERBALISM, {
@@ -4797,28 +4806,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},	-- Subroutines are automatically finalized
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
-					},
-				}),
-				n(3333, {	-- Shankys <Fishing Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 70.0, 29.4, ORGRIMMAR },
-						-- #else
-						{ 66.6, 41.6, ORGRIMMAR },
-						-- #endif
-					},
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(6256, {	-- Fishing Pole
-							-- #if AFTER 10.0.0
-							["collectible"] = false,
-							-- #endif
-						}),
-						i(6365, {	-- Strong Fishing Pole
-							-- #if AFTER 10.0.0
-							["collectible"] = false,
-							-- #endif
-						}),
 					},
 				}),
 				n(3361, {	-- Shoma <Weapon Vendor>

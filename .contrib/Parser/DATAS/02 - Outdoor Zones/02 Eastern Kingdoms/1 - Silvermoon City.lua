@@ -117,8 +117,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					n(16782, {	-- Yatheon <Engineering Supplies>
 						["coord"] = { 75.8, 40.6, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(4400),	-- Heavy Stock
+						["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
 							i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -132,8 +131,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							i(23811, {	-- Schematic: White Smoke Flare (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(4399),	-- Wooden Stock
-						},
+						}),
+					}),
+				}),
+				prof(FISHING, {
+					n(18347, {	-- Olirea <Fishing Supplies>
+						["coord"] = { 77.04, 68.2, SILVERMOON_CITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = FISHING_SUPPLIES,
 					}),
 				}),
 				prof(INSCRIPTION, {

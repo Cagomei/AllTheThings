@@ -109,19 +109,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					}),
 				}),
-				prof(FISHING, {
-					-- #if AFTER CATA
-					o(180751),	-- Floating Wreckage
-					-- #endif
-					o(180712, {	-- Stonescale Eel Swarm
-						["maps"] ={
-							SWAMP_OF_SORROWS,
-							TANARIS,
-							BLASTED_LANDS,
-							THOUSAND_NEEDLES,
-						},
-					}),
-				}),
 				-- #if BEFORE CATA
 				prof(SKINNING, {
 					i(7392, {	-- Green Whelp Scale

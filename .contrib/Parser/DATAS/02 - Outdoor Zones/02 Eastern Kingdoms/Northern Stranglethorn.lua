@@ -118,9 +118,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(PROFESSIONS, {
-				prof(FISHING, {
-					o(180901),	-- Bloodsail Wreckage
-				}),
 				prof(LEATHERWORKING, {
 					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
 						["coord"] = { 45.2, 58.6, NORTHERN_STRANGLETHORN },

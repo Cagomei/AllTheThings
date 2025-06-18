@@ -2929,9 +2929,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["g"] = ALL_GOBLIN_ENGINEERING,
 					}),
 				}),
-				prof(FISHING, {
-					o(180751),	-- Floating Wreckage
-				}),
 			}),
 			n(QUESTS, {
 				q(2750, {	-- A Bad Egg

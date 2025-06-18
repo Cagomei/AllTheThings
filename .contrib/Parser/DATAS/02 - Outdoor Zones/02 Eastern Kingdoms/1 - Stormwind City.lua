@@ -409,12 +409,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
 							i(39684, { ["timeline"] = { ADDED_3_0_2 }}),	-- Hair Trigger
-							i(4400),	-- Heavy Stock
 							i(40533, { ["timeline"] = { ADDED_3_0_2 }}),	-- Walnut Stock
-							i(4399),	-- Wooden Stock
-						},
+						}),
 					}),
 					n(1304, {	-- Darian Singh <Fireworks Vendor>
 						["coords"] = {
@@ -533,6 +531,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["timeline"] = { ADDED_4_0_1 },
 							}),
 						},
+					}),
+					n(5494, {	-- Catherine Leland <Fishing Supplier>
+						["coords"] = {
+							-- #if AFTER WRATH
+							{ 55.0, 69.6, STORMWIND_CITY },
+							-- #else
+							{ 45.8, 58.5, STORMWIND_CITY },
+							-- #endif
+						},
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = appendGroups(FISHING_SUPPLIES, SHINY_BAUBLE, {}),
 					}),
 				}),
 				prof(HERBALISM, {
@@ -5440,28 +5449,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_10_0_5 }
 						}),
 						-- #endif
-					},
-				}),
-				n(5494, {	-- Catherine Leland <Fishing Supplier>
-					["coords"] = {
-						-- #if AFTER WRATH
-						{ 55.0, 69.6, STORMWIND_CITY },
-						-- #else
-						{ 45.8, 58.5, STORMWIND_CITY },
-						-- #endif
-					},
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(6256, {	-- Fishing Pole
-							-- #if AFTER 10.0.0
-							["collectible"] = false,
-							-- #endif
-						}),
-						i(6365, {	-- Strong Fishing Pole
-							-- #if AFTER 10.0.0
-							["collectible"] = false,
-							-- #endif
-						}),
 					},
 				}),
 				n(1307, {	-- Charys Yserian <Arcane Trinkets Vendor>

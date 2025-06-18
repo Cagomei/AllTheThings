@@ -167,6 +167,11 @@ EXPERT_ARTISAN_ENGINEERING
 	{}
 -- #endif
 );
+VANILLA_ENGINEERING_SUPPLIES = {
+	i(5956),	-- Blacksmith Hammer
+	i(4400),	-- Heavy Stock
+	i(4399),	-- Wooden Stock
+};
 TBC_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(30350, {	-- Engineering (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },

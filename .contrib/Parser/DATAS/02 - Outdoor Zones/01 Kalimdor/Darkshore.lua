@@ -136,50 +136,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(12238),	-- Darkshore Grouper
-					o(180682, {	-- Oily Blackmouth School
-						["maps"]= {
-							DARKSHORE,
-							AZSHARA,
-							SWAMP_OF_SORROWS,
-							WETLANDS,
-							TANARIS,
-							BLASTED_LANDS,
-							WESTFALL,
-							DUSTWALLOW_MARSH,
-							FERALAS,
-							HILLSBRAD_FOOTHILLS,
-							DESOLACE,
-							NORTHERN_BARRENS,
-							THE_HINTERLANDS,
-							ASHENVALE,
-							THOUSAND_NEEDLES,
-							ARATHI_HIGHLANDS,
-							SILVERPINE_FOREST,
-							SOUTHERN_BARRENS,
-						},
-					}),
-					o(180712, {	-- Firefin Snapper School
-						["maps"] = {
-							DARKSHORE,
-							AZSHARA,
-							SWAMP_OF_SORROWS,
-							WETLANDS,
-							TANARIS,
-							BLASTED_LANDS,
-							WESTFALL,
-							DUSTWALLOW_MARSH,
-							FERALAS,
-							HILLSBRAD_FOOTHILLS,
-							DESOLACE,
-							NORTHERN_BARRENS,
-							THE_HINTERLANDS,
-							ASHENVALE,
-							THOUSAND_NEEDLES,
-							ARATHI_HIGHLANDS,
-							SILVERPINE_FOREST,
-							SOUTHERN_BARRENS,
-						},
-					})
 				}),
 			}),
 			n(QUESTS, {

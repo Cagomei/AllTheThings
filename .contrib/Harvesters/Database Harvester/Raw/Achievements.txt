@@ -5117,6 +5117,26 @@
 42775@@@Challenger: Season 11
 42776@@@Cataclysmic Gladiator
 42777@@@Gladiator: Season 11
+5.5.0.61411
+60892@@@Celestial: Temple of the Jade Serpent
+60893@@@Celestial: Stormstout Brewery
+60894@@@Celestial: Mogu'shan Palace
+60895@@@Celestial: Shado-Pan Monastery
+60896@@@Celestial: Gate of the Setting Sun
+60897@@@Celestial: Scarlet Halls
+60898@@@Celestial: Scarlet Monastery
+60899@@@Celestial: Scholomance
+60900@@@Celestial: Siege of Niuzao Temple
+60901@@@Pandaria Celestial Hero
+5.5.0.61496
+6678@@@Realm First! Sha of Fear (25 player)
+6679@@@Realm First! Grand Empress Shek'zeer (25 player)
+6680@@@Realm First! Will of the Emperor (25 player)
+8257@@@Realm First! Ra-den (25 player)
+60907@@@Realm First! Will of the Emperor (10 player)
+60908@@@Realm First! Grand Empress Shek'zeer (10 player)
+60909@@@Realm First! Sha of Fear (10 player)
+60910@@@Realm First! Ra-den (10 player)
 6.0.1.18179
 8394@@@The Frostwind Slayer
 8463@@@Mythic: Immerseus

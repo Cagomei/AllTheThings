@@ -40,7 +40,7 @@ i(139398);	-- Pant Loaf
 i(151492);	-- Bronze Drake
 -- Legion Mission Table Items
 i(139845);	-- Band of Primordial Strength
-i(152442);	-- Impervious Shadoweave Hood \\ rvious Shadowweave Hood \\ rvious Hood
+i(152442);	-- Impervious Shadoweave Hood
 -- BFA Vendor
 i(162588);	-- Weathered Scrollcase
 -- BFA Trash drops available during quest
@@ -303,17 +303,43 @@ i(123865);	-- Relic of Ursol
 -----------------
 -- PATCH 8.0.1 --
 -----------------
+i(158862);	-- Ancient Grave Dust
+i(162675);	-- Ashvane Ledger
+i(158863);	-- Chitinous Exoskeleton
+i(155608);	-- Defiled Bone
+i(159756);	-- Depleted Azerite
+i(162978);	-- Blood Magic Ritual Dish
 i(158210);	-- Fearsome Claw
 i(155603);	-- Flaky Fish Scales
 i(158874);	-- Frothing Vapor
+i(158865);	-- Ghastly Ooze
+i(158856);	-- Giant Frog Leg
+i(158868);	-- Golden Ornament
+i(158855);	-- Grim Skull Fetish
+i(158860);	-- Grindstone Molar
+i(155631);	-- Inert Stone
+i(157844);	-- Iridescent Speck
 i(158859);	-- Jagged Fang
+i(162673);	-- Knotted Bowline
+i(159140);	-- Lifeless Clay
+i(161201);	-- Mermaid's Looking Glass
 i(158778);	-- Mucose Tendril
+i(158831);	-- Parched Honeycomb
 i(155615);	-- Pestilent Muck
+i(155601);	-- Pointy Leg Segment
+i(157842);	-- Rusty Gear
+i(162630);	-- Sandy Ornate Relic
 i(155598);	-- Severed Mandible
+i(155629);	-- Shaggy Mane
+i(163845);	-- Silver Statue Base
 i(155635);	-- Sinewy Wing
+i(158771);	-- Spirit Ichor
 i(158848);	-- Spoiled Feast
+i(155610);	-- Stinging Nettle
 i(158746);	-- Tattered White Flag
+i(161200);	-- Teardrop Pearl
 i(155636);	-- Viscous Ink
+i(158773);	-- Wriggling Goop
 
 -----------------
 -- PATCH 8.2.5 --
@@ -362,11 +388,11 @@ i(169957);	-- Faceless Mask of the Daredevil
 i(172946);	-- Faceless Mask of the Long Night
 i(170062);	-- Faceless Mask of the Pained
 i(167999);	-- Fancy Letter
-i(174782);	-- Fear and Flesh \\ Compendium of Ny'alotha, Vol. II
+i(174782);	-- Fear and Flesh
 i(174819);	-- Fractured Aqiri Idol
 i(174826);	-- Frail Ceremonial Spear
 i(173913);	-- Imbued Malformed Scale
-i(174513);	-- Inert Geode \\ Innert Geode
+i(174513);	-- Inert Geode
 i(174494);	-- Ivory Sigilstone
 i(168160);	-- Jeweled Scarab Figurine
 i(174823);	-- Miniature Plates of Uldum Replica
@@ -378,19 +404,19 @@ i(174913);	-- Prophetic Eye
 i(107799);	-- Racing Regs
 i(173906);	-- Ruptured Power Cell
 i(174360);	-- Shadowy Gem
-i(171176);	-- Shred of Insanity \\ Shred of Nightmare
+i(171176);	-- Shred of Insanity
 i(173911);	-- Snapped Acid-Spine
 i(173907);	-- Soul-Infused Cranium
 i(174515);	-- Star Powder
 i(174509);	-- Tarnished Mark
-i(174777);	-- The Curse of Stone \\ Compendium of Ny'alotha, Vol. I
-i(174784);	-- The Final Truth \\ Compendium of Ny'alotha, Vol. III
-i(174063);	-- Titan Core \\ Corrupted Flesh Samples
-i(174064);	-- Titan Core \\ Corrupted Flesh Samples
-i(174065);	-- Titan Core \\ Corrupted Flesh Samples
-i(174783);	-- Torn Page of "Fear and Flesh" \\ Torn Page of Compendium, Vol. II
-i(171353);	-- Torn Page of "The Curse of Stone" \\ Torn Page of Compendium, Vol. I \\ Journal of Ny'alotha
-i(174785);	-- Torn Page of "The Final Truth" \\ Torn Page of Compendium, Vol. III
+i(174777);	-- The Curse of Stone
+i(174784);	-- The Final Truth
+i(174063);	-- Titan Core
+i(174064);	-- Titan Core
+i(174065);	-- Titan Core
+i(174783);	-- Torn Page of "Fear and Flesh"
+i(171353);	-- Torn Page of "The Curse of Stone"
+i(174785);	-- Torn Page of "The Final Truth"
 i(174822);	-- Torn Rune-Embroidered Pouch
 i(174983);	-- Void Sliver
 i(164992);	-- Volatile Potion
@@ -398,58 +424,58 @@ i(164992);	-- Volatile Potion
 -----------------
 -- PATCH 8.3.7 --
 -----------------
-i(177955);	-- Spoiled Contaminant \\ TR: Deadly Momentum - 15 Corruption \\ Preserved Contaminant: Deadly Momentum
-i(177965);	-- Spoiled Contaminant \\ TR: Deadly Momentum - 20 Corruption \\ Preserved Contaminant: Deadly Momentum
-i(177966);	-- Spoiled Contaminant \\ TR: Deadly Momentum - 35 Corruption \\ Preserved Contaminant: Deadly Momentum
-i(177967);	-- Spoiled Contaminant \\ TR: Echoing Void III - 60 Corruption \\ Preserved Contaminant: Echoing Void
-i(177968);	-- Spoiled Contaminant \\ TR: Echoing Void II - 35 Corruption \\ Preserved Contaminant: Echoing Void
-i(177969);	-- Spoiled Contaminant \\ TR: Echoing Void I - 25 Corruption \\ Preserved Contaminant: Echoing Void
-i(177970);	-- Spoiled Contaminant \\ TR: Avoidant I - 8 Corruption \\ Preserved Contaminant: Avoidant
-i(177971);	-- Spoiled Contaminant \\ TR: Avoidant II - 12 Corruption \\ Preserved Contaminant: Avoidant
-i(177972);	-- Spoiled Contaminant \\ TR: Avoidant III - 16 Corruption \\ Preserved Contaminant: Avoidant
-i(177973);	-- Spoiled Contaminant \\ TR: Expedient I - 10 Corruption \\ Preserved Contaminant: Expedient
-i(177974);	-- Spoiled Contaminant \\ TR: Expedient II - 15 Corruption \\ Preserved Contaminant: Expedient
-i(177975);	-- Spoiled Contaminant \\ TR: Expedient III - 20 Corruption \\ Preserved Contaminant: Expedient
-i(177976);	-- Spoiled Contaminant \\ TR: Glimpse of Clarity - 15 Corruption \\ Preserved Contaminant: Glimpse of Clarity
-i(177977);	-- Spoiled Contaminant \\ TR: Gushing Wound - 15 Corruption \\ Preserved Contaminant: Gushing Wound
-i(177978);	-- Spoiled Contaminant \\ TR: Honed Mind I - 15 Corruption \\ Preserved Contaminant: Honed Mind
-i(177979);	-- Spoiled Contaminant \\ TR: Honed Mind II - 20 Corruption \\ Preserved Contaminant: Honed Mind
-i(177980);	-- Spoiled Contaminant \\ TR: Honed Mind III - 35 Corruption \\ Preserved Contaminant: Honed Mind
-i(177981);	-- Spoiled Contaminant \\ TR: Ineffable Truth I - 12 Corruption \\ Preserved Contaminant: Ineffable Truth
-i(177982);	-- Spoiled Contaminant \\ TR: Ineffable Truth II - 30 Corruption \\ Preserved Contaminant: Ineffable Truth
-i(177983);	-- Spoiled Contaminant \\ TR: Infinite Stars I - 20 Corruption \\ Preserved Contaminant: Infinite Stars
-i(177984);	-- Spoiled Contaminant \\ TR: Infinite Stars II - 50 Corruption \\ Preserved Contaminant: Infinite Stars
-i(177985);	-- Spoiled Contaminant \\ TR: Infinite Stars III - 75 Corruption \\ Preserved Contaminant: Infinite Stars
-i(177986);	-- Spoiled Contaminant \\ TR: Masterful I - 10 Corruption \\ Preserved Contaminant: Masterful
-i(177987);	-- Spoiled Contaminant \\ TR: Masterful II - 15 Corruption \\ Preserved Contaminant: Masterful
-i(177988);	-- Spoiled Contaminant \\ TR: Masterful III - 20 Corruption \\ Preserved Contaminant: Masterful
-i(177989);	-- Spoiled Contaminant \\ TR: Racing Pulse I - 15 Corruption \\ Preserved Contaminant: Racing Pulse
-i(177990);	-- Spoiled Contaminant \\ TR: Racing Pulse II - 20 Corruption \\ Preserved Contaminant: Racing Pulse
-i(177991);	-- Spoiled Contaminant \\ TR: Racing Pulse III - 35 Corruption \\ Preserved Contaminant: Racing Pulse
-i(177992);	-- Spoiled Contaminant \\ TR: Severe I - 10 Corruption \\ Preserved Contaminant: Severe
-i(177993);	-- Spoiled Contaminant \\ TR: Severe II - 15 Corruption \\ Preserved Contaminant: Severe
-i(177994);	-- Spoiled Contaminant \\ TR: Severe III - 20 Corruption \\ Preserved Contaminant: Severe
-i(177995);	-- Spoiled Contaminant \\ TR: Siphoner I - 17 Corruption \\ Preserved Contaminant: Siphoner
-i(177996);	-- Spoiled Contaminant \\ TR: Siphoner II - 28 Corruption \\ Preserved Contaminant: Siphoner
-i(177997);	-- Spoiled Contaminant \\ TR: Siphoner III - 45 Corruption \\ Preserved Contaminant: Siphoner
-i(177998);	-- Spoiled Contaminant \\ TR: Strikethrough I - 10 Corruption \\ Preserved Contaminant: Strikethrough
-i(177999);	-- Spoiled Contaminant \\ TR: Strikethrough II - 15 Corruption \\ Preserved Contaminant: Strikethrough
-i(178000);	-- Spoiled Contaminant \\ TR: Strikethrough III - 20 Corruption \\ Preserved Contaminant: Strikethrough
-i(178001);	-- Spoiled Contaminant \\ TR: Surging Vitality I - 15 Corruption \\ Preserved Contaminant: Surging Vitality
-i(178002);	-- Spoiled Contaminant \\ TR: Surging Vitality II - 20 Corruption \\ Preserved Contaminant: Surging Vitality
-i(178003);	-- Spoiled Contaminant \\ TR: Surging Vitality III - 35 Corruption \\ Preserved Contaminant: Surging Vitality
-i(178004);	-- Spoiled Contaminant \\ TR: Twilight Devastation I - 25 Corruption \\ Preserved Contaminant: Twilight Devastation
-i(178005);	-- Spoiled Contaminant \\ TR: Twilight Devastation II - 50 Corruption \\ Preserved Contaminant: Twilight Devastation
-i(178006);	-- Spoiled Contaminant \\ TR: Twilight Devastation II - 75 Corruption \\ Preserved Contaminant: Twilight Devastation
-i(178007);	-- Spoiled Contaminant \\ TR: Twisted Appendage I - 10 Corruption \\ Preserved Contaminant: Twisted Appendage
-i(178008);	-- Spoiled Contaminant \\ TR: Twisted Appendage II - 35 Corruption \\ Preserved Contaminant: Twisted Appendage
-i(178009);	-- Spoiled Contaminant \\ TR: Twisted Appendage III - 66 Corruption \\ Preserved Contaminant: Twisted Appendage
-i(178010);	-- Spoiled Contaminant \\ TR: Versatile I - 10 Corruption \\ Preserved Contaminant: Versatile
-i(178011);	-- Spoiled Contaminant \\ TR: Versatile II - 15 Corruption \\ Preserved Contaminant: Versatile
-i(178012);	-- Spoiled Contaminant \\ TR: Versatile III - 20 Corruption \\ Preserved Contaminant: Versatile
-i(178013);	-- Spoiled Contaminant \\ TR: Void Ritual I - 15 Corruption \\ Preserved Contaminant: Void Ritual
-i(178014);	-- Spoiled Contaminant \\ TR: Void Ritual II - 35 Corruption \\ Preserved Contaminant: Void Ritual
-i(178015);	-- Spoiled Contaminant \\ TR: Void Ritual III - 66 Corruption \\ Preserved Contaminant: Void Ritual
+i(177955);	-- Spoiled Contaminant
+i(177965);	-- Spoiled Contaminant
+i(177966);	-- Spoiled Contaminant
+i(177967);	-- Spoiled Contaminant
+i(177968);	-- Spoiled Contaminant
+i(177969);	-- Spoiled Contaminant
+i(177970);	-- Spoiled Contaminant
+i(177971);	-- Spoiled Contaminant
+i(177972);	-- Spoiled Contaminant
+i(177973);	-- Spoiled Contaminant
+i(177974);	-- Spoiled Contaminant
+i(177975);	-- Spoiled Contaminant
+i(177976);	-- Spoiled Contaminant
+i(177977);	-- Spoiled Contaminant
+i(177978);	-- Spoiled Contaminant
+i(177979);	-- Spoiled Contaminant
+i(177980);	-- Spoiled Contaminant
+i(177981);	-- Spoiled Contaminant
+i(177982);	-- Spoiled Contaminant
+i(177983);	-- Spoiled Contaminant
+i(177984);	-- Spoiled Contaminant
+i(177985);	-- Spoiled Contaminant
+i(177986);	-- Spoiled Contaminant
+i(177987);	-- Spoiled Contaminant
+i(177988);	-- Spoiled Contaminant
+i(177989);	-- Spoiled Contaminant
+i(177990);	-- Spoiled Contaminant
+i(177991);	-- Spoiled Contaminant
+i(177992);	-- Spoiled Contaminant
+i(177993);	-- Spoiled Contaminant
+i(177994);	-- Spoiled Contaminant
+i(177995);	-- Spoiled Contaminant
+i(177996);	-- Spoiled Contaminant
+i(177997);	-- Spoiled Contaminant
+i(177998);	-- Spoiled Contaminant
+i(177999);	-- Spoiled Contaminant
+i(178000);	-- Spoiled Contaminant
+i(178001);	-- Spoiled Contaminant
+i(178002);	-- Spoiled Contaminant
+i(178003);	-- Spoiled Contaminant
+i(178004);	-- Spoiled Contaminant
+i(178005);	-- Spoiled Contaminant
+i(178006);	-- Spoiled Contaminant
+i(178007);	-- Spoiled Contaminant
+i(178008);	-- Spoiled Contaminant
+i(178009);	-- Spoiled Contaminant
+i(178010);	-- Spoiled Contaminant
+i(178011);	-- Spoiled Contaminant
+i(178012);	-- Spoiled Contaminant
+i(178013);	-- Spoiled Contaminant
+i(178014);	-- Spoiled Contaminant
+i(178015);	-- Spoiled Contaminant
 
 -----------------
 -- PATCH 9.0.1 --

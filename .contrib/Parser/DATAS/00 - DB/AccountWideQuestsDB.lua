@@ -1894,6 +1894,9 @@ ExportDB.AccountWideQuestsDB = {
 	[90598] = true,	-- Arsenal: Children's Orgrimmar Guard Weapon Set
 	[90719] = true,	-- Borrowing Corruption
 	[90731] = true,	-- Enhancing Corruption
+	[90969] = true,	-- Titan Consoles
+	[90970] = true,	-- Titan Disc-Count
+	[90971] = true,	-- Overcharged Console
 	[91038] = true,	-- Hellhunters Wanted
 	-- #ENDIF
 }

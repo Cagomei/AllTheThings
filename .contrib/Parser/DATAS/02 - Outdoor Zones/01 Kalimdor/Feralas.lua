@@ -207,18 +207,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				prof(FISHING, {
-					-- #if ANYCLASSIC
 					i(16967, {	-- Feralas Ahi
-						["coord"] = { 62.0, 52.0, FERALAS },
-						["description"] = "Best fished at 62.0 52.0",
+						["coords"] = {
+							-- #if BEFORE 4.0.3
+							{ 62.0, 52.0, FERALAS },
+							-- #else
+							{ 62.9, 51.5, FERALAS },
+							-- #endif
+						},
+						["description"] = "Best fished at the given coords.",
 					}),
-					-- #endif
-					-- #if BEFORE CATA
-					o(180751),	-- Floating Wreckage
-					-- #endif
-					-- #if AFTER CATA
-					o(180685),	-- Waterlogged Wreckage
-					-- #endif
 				}),
 				prof(LEATHERWORKING, {
 					n(7870, {	-- Caryssia Moonhunter <Tribal Leatherworking Trainer>

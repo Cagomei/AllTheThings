@@ -511,6 +511,11 @@
 1224645@@@Meeksi Rufflemane
 1224646@@@Meeksi Wanderpaw
 1224647@@@Meeksi Brewrobber
+5.5.0.61411
+1247591@@@Celestial Riding Crane
+1247596@@@Celestial Riding Serpent
+1247597@@@Celestial Riding Ox
+1247598@@@Celestial Riding Tiger
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild

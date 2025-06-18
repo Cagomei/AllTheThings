@@ -294,12 +294,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["g"] = ALL_GNOMISH_ENGINEERING,
 					}),
 				}),
-				prof(FISHING, {
-					-- #if BEFORE CATA
-					o(180685),	-- Waterlogged Wreckage
-					-- #endif
-					o(180901),	-- Bloodsail Wreckage
-				}),
 				prof(LEATHERWORKING, {
 					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
 						["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },

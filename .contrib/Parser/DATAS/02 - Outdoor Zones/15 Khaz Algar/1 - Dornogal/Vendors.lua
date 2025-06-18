@@ -369,6 +369,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(223066, {	-- Technique: Algari Missive of Resourcefulness (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
+					i(243052, {	-- Technique: Glyph of the Strix (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["timeline"] = { ADDED_11_1_7 },
+					}),
 					-- Profession Books
 					i(227420, {	-- Exceptional Alchemist's Research (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 300}},

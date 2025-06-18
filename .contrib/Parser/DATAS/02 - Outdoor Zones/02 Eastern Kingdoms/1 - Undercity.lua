@@ -106,7 +106,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = { {"sub", "common_recipes_vendor", 3356 } },	-- Sumi <Blacksmithing Supplies>
 						["coord"] = { 61.4, 30.1, UNDERCITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {}),
+						["groups"] = VANILLA_BLACKSMITHING_SUPPLIES,
 					}),
 				}),
 				prof(COOKING, {
@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = { {"sub", "common_recipes_vendor", 3346 } },	-- Kithas <Enchanting Supplies>
 						["coord"] = { 62.0, 60.8, UNDERCITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_ENCHANTING_SUPPLIES, {}),
+						["groups"] = VANILLA_ENCHANTING_SUPPLIES,
 					}),
 				}),
 				prof(ENGINEERING, {
@@ -164,10 +164,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ 75.5, 74.3, UNDERCITY },
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(4400),	-- Heavy Stock
-							i(4399),	-- Wooden Stock
-						},
+						["groups"] = VANILLA_ENGINEERING_SUPPLIES,
 					}),
 				}),
 				prof(FISHING, {
@@ -202,6 +199,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["timeline"] = { ADDED_4_0_1 },
 							}),
 						},
+					}),
+					n(4574, {	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
+						["coord"] = { 81.0, 30.8, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = FISHING_SUPPLIES,
 					}),
 				}),
 				prof(JEWELCRAFTING, {

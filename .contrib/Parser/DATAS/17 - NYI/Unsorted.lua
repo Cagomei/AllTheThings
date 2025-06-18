@@ -11,52 +11,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(TIMEWALKING_HEADER, {
 				i(238740),	-- Distilled Knowledge of Timeways
-				-- New BFA Gear (Might be in dungeons? No azerite versions)
-				i(239024),	-- Soulfuel Headdress
-				i(239025),	-- Raiment of the Blighted Tribe
-				i(239026),	-- Gorak Tul's Mantle
-				i(239027),	-- Deathslaver's Hauberk
-				i(239028),	-- Soulscarred Headgear
-				i(239029),	-- Breastplate of the Vengeful
-				i(239031),	-- Brood Cleanser's Amice
-				i(239032),	-- Robes of the Reborn Serpent
-				i(239033),	-- Hood of the Slithering Loa
-				i(239034),	-- Corrupted Hexxer's Vestments
-				i(239035),	-- Sethraliss' Fanged Helm
-				i(239036),	-- Desert Guardian's Breastplate
-				i(239037),	-- C'thraxxi Binders Pauldrons
-				i(239038),	-- Mantle of Void-Touched Waters
-				i(239039),	-- Stormlurker's Cowl
-				i(239040),	-- Cowl of Fluid Machinations
-				i(239041),	-- Tentacle-Laced Spaulders
-				i(239042),	-- Hauberk of Sunken Despair
-				i(239043),	-- Chestguard of the Deep Denizen
-				i(239044),	-- Helm of Abyssal Malevolence
-				i(239045),	-- Mantle of Ceremonial Ascension
-				i(239046),	-- Loa-Blessed Chestguard
-				i(239047),	-- Headdress of the First Empire
-				i(239048),	-- Vest of Reverent Adoration
-				i(239049),	-- Spaulders of Prime Emperor
-				i(239050),	-- Helm of the Raptor King
-				i(239051),	-- Pauldrons of the Great Unifier
-				i(239052),	-- Sea-Brawler's Greathelm
-				i(239053),	-- Smartly Plumed Cap
-				i(239054),	-- Sweete's Jeweled Headgear
-				i(239055),	-- Irontide Captain's Hat
-				i(239056),	-- Ruffled Poet Blouse
-				i(239057),	-- Gold-Tasseled Epaulets
-				i(239058),	-- Gaping Maw Shoulderguard
-				i(239059),	-- Lockjaw Shoulderplate
-				i(239068),	-- Spymaster's Wrap
-				i(239070),	-- Mantle of Fastidious Machinations
-				i(239071),	-- Secret Spinner's Miter
-				i(239072),	-- Loa Betrayer's Vestments
-				i(239073),	-- Coif of the Court Spider
-			}),
-			n(PROFESSIONS, {
-				-- Ins
-				i(243051),	-- Glyph of the Strix
-				i(243052),	-- Technique: Glyph of the Strix
 			}),
 			filter(MISC, {
 				-- Delves
@@ -1614,9 +1568,7 @@ root(ROOTS.Unsorted, {
 				i(157777),	-- Report from Zuldazar
 				i(157792),	-- Gilded Riverbeast Tusk
 				i(157798),	-- Bilewing "Honey"
-				i(157842),	-- Rusty Gear \\ Tangled Bough
 				i(157843),	-- PH Flavor - Unused \\ Verdant Breath
-				i(157844),	-- Iridescent Speck \\ Glimmering Ember
 				i(157862),	-- Skycaller Gem Matrix
 				i(158072),	-- Azerite-Dusted Blade
 				i(158137),	-- 8.0 PH Reputation - Nazmir
@@ -1681,7 +1633,6 @@ root(ROOTS.Unsorted, {
 				i(162600),	-- Matching Tusk Rings
 				i(162601),	-- Timeworn Pressed Flower
 				i(162611),	-- Carefully Stashed Cache
-				i(162630),	-- Sandy Ornate Relic
 				i(162631),	-- Souvenir Tiki Tumbler
 				i(162632),	-- Lavish Sethrallis Figurine
 				i(162633),	-- Petrified Jungle Orchid
@@ -1691,7 +1642,6 @@ root(ROOTS.Unsorted, {
 				i(162773),	-- REUSE ME
 				i(162974),	-- Gently Shaken Gift
 				i(162976),	-- Exile's Abandoned Memoirs
-				i(162978),	-- Blood Magic Ritual Dish
 				i(162979),	-- Gral-Adorned Astrolabe \\ Gral Adorned Astrolabe
 				i(162980),	-- Spindle of Golden Sailthread
 				i(162981),	-- A Steamy Romance Novel: Stormy Seas
@@ -1857,15 +1807,12 @@ root(ROOTS.Unsorted, {
 				i(155597),	-- PH Flavor - Unused \\ Dire Horn
 				i(155599),	-- PH Flavor - Unused \\ Vibrant Feather
 				i(155600),	-- How to Make Money and Influence Subordinates \\ PH Flavor - Unused \\ Trophy Antlers
-				i(155601),	-- Pointy Leg Segment \\ Vacant Stone
 				i(155602),	-- PH Flavor - Unused \\ Tarnished Pelt
 				i(155604),	-- PH Flavor - Unused \\ Diamond Flake
 				i(155605),	-- Huge Femur \\ Bloodgorged Sac
 				i(155606),	-- PH Flavor - Unused \\ Intricate Ossicles
 				i(155607),	-- D.E.H.T.A. Membership Card \\ PH Flavor - Unused \\ Runic Bone
-				i(155608),	-- Defiled Bone \\ Piked Spider Leg
 				i(155609),	-- Springy Eyeball \\ Sawtooth Jawbone
-				i(155610),	-- Stinging Nettle \\ Hooked Talon
 				i(155611),	-- PH Flavor - Unused \\ Lustruous Black Feather
 				i(155612),	-- PH Flavor - Unused \\ Unblighted Wicker
 				i(155613),	-- PH Flavor - Unused \\ Frothing Vapor
@@ -1882,9 +1829,7 @@ root(ROOTS.Unsorted, {
 				i(155626),	-- PH Flavor - Unused \\ Hardy Hoof
 				i(155627),	-- PH Flavor - Unused \\ Forked Mandibles
 				i(155628),	-- PH Flavor - Unused \\ Cracked Mask
-				i(155629),	-- Shaggy Mane \\ Bitter Wind
 				i(155630),	-- PH Flavor - Unused \\ Trueflight Fletching
-				i(155631),	-- Inert Stone \\ Grindstone Molar
 				i(155632),	-- PH Flavor - Unused \\ Viscous Webbing
 				i(155633),	-- Matted Felt \\ Intact Frog Tongue
 				i(155634),	-- PH Flavor - Unused \\ Sleek Quills
@@ -1938,9 +1883,7 @@ root(ROOTS.Unsorted, {
 				i(158768),	-- PH Flavor - Unused \\ PH Flavor - Carrion Bird - Bird
 				i(158769),	-- Monkey's Paw \\ PH Flavor - Turtle
 				i(158770),	-- Gelatinous Roe \\ PH Flavor - Gold Elemental
-				i(158771),	-- Spirit Ichor \\ PH Flavor
 				i(158772),	-- PH Flavor - Unused \\ PH Flavor - Slime / Spore
-				i(158773),	-- Wriggling Goop \\ PH Flavor - Sethrak
 				i(158774),	-- PH Flavor - Unused \\ PH Flavor - Kraken
 				i(158775),	-- Thick Hivewax \\ PH Flavor - Unused
 				i(158776),	-- PH Flavor - Unused \\ PH Flavor - Hydra - Reptile
@@ -1995,7 +1938,6 @@ root(ROOTS.Unsorted, {
 				i(158828),	-- Cracked Gladiator's Medallion \\ PH Flavor - Unused \\ PH Flavor - Grub / Maggot / Worm - Insect
 				i(158829),	-- PH Flavor - Unused \\ PH Flavor - Cockroach - Insect
 				i(158830),	-- Jade Sigilstone \\ PH Flavor - Wolf
-				i(158831),	-- Parched Honeycomb \\ PH Flavor - Ice Elemental
 				i(158832),	-- Bushy Tail \\ PH Flavor - Kul Tiran
 				i(158833),	-- PH Flavor - Unused \\ PH Flavor - Tiki Mask - Blood Troll
 				i(158834),	-- Winch Coil \\ PH Flavor - Tortollan
@@ -2017,17 +1959,10 @@ root(ROOTS.Unsorted, {
 				i(158852),	-- PH Flavor - Unused \\ PH Flavor - Fox
 				i(158853),	-- Bony Skullplate \\ PH Flavor - Naga Brute
 				i(158854),	-- PH Flavor - Unused \\ PH Flavor - Goat
-				i(158855),	-- Grim Skull Fetish \\ PH Flavor - Furbolg \\ PH Flavor
-				i(158856),	-- Giant Frog Leg \\ PH Flavor - Hag - Drust
 				i(158857),	-- Untainted Wicker \\ PH Flavor - Porcupine
-				i(158860),	-- Grindstone Molar \\ PH Flavor - Dreadhound
 				i(158861),	-- Tensile Eye Stalk \\ PH Flavor - Troll Male - Blood Troll
-				i(158862),	-- Ancient Grave Dust \\ PH Flavor - Troll Zombie
-				i(158863),	-- Chitinous Exoskeleton \\ PH Flavor - Troll Lich
 				i(158864),	-- Viscous Webbing \\ PH Flavor - Trogg
-				i(158865),	-- Ghastly Ooze \\ PH Flavor - Human Skeleton
 				i(158867),	-- Needlepoint Bill \\ PH Flavor - Ranishu
-				i(158868),	-- Golden Ornament \\ PH Flavor - Drust Skeleton - Drust
 				i(158869),	-- Stone Tusk \\ PH Flavor - Venture Co
 				i(158870),	-- Wooly Hair \\ PH Flavor - Undead Devilsaur
 				i(158871),	-- Autographed Painting of Anduin \\ PH Flavor - Unused \\ PH Flavor - Troll Skeleton
@@ -2035,11 +1970,8 @@ root(ROOTS.Unsorted, {
 				i(158873),	-- Crystalline Honeymead \\ PH Flavor - Dire Troll Female - Blood Troll
 				i(156624),	-- Blemished Pearl
 				i(158727),	-- Decayed Equipment
-				i(159756),	-- Depleted Azerite \\ PH Flavor - Raptor Spirit
 				i(161198),	-- Old Sailor's Almanac
 				i(161199),	-- Silver-Plated Tankard
-				i(161200),	-- Teardrop Pearl
-				i(161201),	-- Mermaid's Looking Glass
 				i(161202),	-- Polished Brass Sextant
 				i(161203),	-- Shanty Sheet Music
 				i(161204),	-- Oily Glass Eyeball \\ Glass Eyeball
@@ -2057,7 +1989,6 @@ root(ROOTS.Unsorted, {
 				i(158797),	-- Jar of Truffles
 				i(158858),	-- Adder's Fork
 				i(158866),	-- Oily Blubber
-				i(163845),	-- Silver Statue Base
 				i(163846),	-- Silver Monkey Head
 				i(163847),	-- Silver Monkey Torso
 				i(163848),	-- Overused Voodoo Doll
@@ -2092,7 +2023,6 @@ root(ROOTS.Unsorted, {
 				i(163919),	-- String of Broken Tusks
 				i(163920),	-- Bracelet of Teeth
 				i(163921),	-- Tiny Wicker Effigy
-				i(159140),	-- Lifeless Clay
 				i(163842),	-- Inert Hearthstone
 				i(163843),	-- Shredded Horde Emblem
 				i(163844),	-- Shredded Alliance Emblem
@@ -2106,8 +2036,6 @@ root(ROOTS.Unsorted, {
 				i(162666),	-- Ripped Satchel
 				i(162667),	-- Farraki Funeral Urn
 				i(162672),	-- Witch Doctor's Juju Beads
-				i(162673),	-- Knotted Bowline
-				i(162675),	-- Ashvane Ledger
 				i(162683),	-- Archaic Dinomancy Carvings
 				i(162684),	-- Etched Dock Cleat
 				i(162685),	-- Overflowing Loa Tribute

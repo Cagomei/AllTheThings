@@ -628,6 +628,11 @@ app.CreateClass = function(className, classKey, fields, ...)
 		end
 	end
 
+	-- Allow the base Class to ImportFrom another Class
+	if fields.ImportFrom then
+		ImportClassFunctions(fields, fields.ImportFrom, unpack(fields.ImportFields))
+	end
+
 	-- If this object supports collectibleAsCost, that means it needs a way to fallback to a version of itself without any cost evaluations should it detect that it doesn't use it anywhere.
 	GenerateSimpleMetaClass(fields, className)
 

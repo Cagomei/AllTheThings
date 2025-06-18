@@ -138,29 +138,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 			}),
-			n(PROFESSIONS, {
-				prof(FISHING, {
-					-- #if AFTER CATA
-					o(180685),	-- Waterlogged Wreckage
-					-- #endif
-					o(180684, {	-- Greater Sagefish School
-						["maps"] = {
-							WESTERN_PLAGUELANDS,
-							EASTERN_PLAGUELANDS,
-							UNGORO_CRATER,
-							FERALAS,
-							THE_HINTERLANDS,
-							DUSTWALLOW_MARSH,
-							BLASTED_LANDS,
-							DESOLACE,
-							ARATHI_HIGHLANDS,
-							MOONGLADE,
-							STONETALON_MOUNTAINS,
-							THOUSAND_NEEDLES
-						},
-					})
-				}),
-			}),
 			n(QUESTS, {
 				q(5066, {	-- A Call to Arms: The Plaguelands! [Stormwind City]
 					["qg"] = 2198,	-- Crier Goodman

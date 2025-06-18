@@ -129,8 +129,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					n(16657, {	-- Feera <Engineering Supplies>
 						["coord"] = { 53.6, 90.8, THE_EXODAR },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(4400),	-- Heavy Stock
+						["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
 							i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -144,8 +143,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							i(23811, {	-- Schematic: White Smoke Flare (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(4399),	-- Wooden Stock
-						},
+						}),
+					}),
+				}),
+				prof(FISHING, {
+					n(20121, {	-- Dekin <Fishing Supplies>
+						["coord"] = { 29.5, 20.1, THE_EXODAR },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = FISHING_SUPPLIES,
 					}),
 				}),
 				prof(INSCRIPTION, {

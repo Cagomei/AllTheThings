@@ -1738,9 +1738,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_SIX, i(233987, { ["timeline"] = { ADDED_1_15_5 }, })), -- Arcane Mega Bomb
 			-- #endif
-			i(6219, {	-- Arclight Spanner
-				["collectible"] = false,
-			}),
 			i(4380),	-- Big Bronze Bomb
 			i(4394),	-- Big Iron Bomb
 			i(9312),	-- Blue Firework
@@ -1777,7 +1774,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(9313),	-- Green Firework
 			i(21574),	-- Green Rocket Cluster
 			i(18634),	-- Gyrofreeze Ice Reflector
-			i(10498),	-- Gyromatic Micro-Adjustor
 			i(4378),	-- Heavy Dynamite
 			i(10562),	-- Hi-Explosive Bomb
 			i(10512, {["timeline"] = {REMOVED_4_0_1}}),	-- Hi-Impact Mithril Slugs
@@ -1843,6 +1839,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(15997, {["timeline"] = {REMOVED_4_0_1}}),	-- Thorium Shells
 			i(18639),	-- Ultra-Flash Shadow Reflector
 			i(16009),	-- Voice Amplification Modulator
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(6219, {	-- Arclight Spanner
+				["collectible"] = false,
+			}),
+			i(10498),	-- Gyromatic Micro-Adjustor
 		}),
 		filter(REAGENTS, {
 			i(4382),	-- Bronze Framework
@@ -1947,204 +1949,849 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	}),
 	-- #endif
 	prof(FISHING, {
-		filter(ONE_HANDED_MACES, {
-			i(6360, {	-- Steelscale Crushfish
-				-- #if AFTER CATA
-				["description"] = "Can be caught in Ashenvale, Darkmoon Island, Hillsbrad Foothills, Northern Stranglethorn, and Wetlands in open water.",
+		["description"] = "If you struggle to catch an open water fish in a given zone, try a different spot or a different body of water. There might be local variations of which fish you can reliably catch from a given spot.",
+		["groups"] = {
+			filter(ONE_HANDED_MACES, {
+				i(6360, {	-- Steelscale Crushfish
+					["description"] = "Can be caught in open water in the given zones.",
+					["maps"] = {
+						ASHENVALE,
+						HILLSBRAD_FOOTHILLS,
+						WETLANDS,
+						-- #if AFTER CATA
+						DARKMOON_ISLAND,
+						NORTHERN_STRANGLETHORN,
+						-- #endif
+					},
+				}),
+			}),
+			filter(FINGER_F, {
+				i(8350, {	-- The 1 Ring
+					["description"] = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
+				}),
+			}),
+			filter(HELD_IN_OFF_HAND, bubbleDownSelf({ ["collectible"] = false, }, {
+				i(6292),	-- 10 Pound Mud Snapper
+				i(6294),	-- 12 Pound Mud Snapper
+				i(6295),	-- 15 Pound Mud Snapper
+				i(13901),	-- 15 Pound Salmon
+				i(6309),	-- 17 Pound Catfish
+				i(13902),	-- 18 Pound Salmon
+				i(6310),	-- 19 Pound Catfish
+				i(6311),	-- 22 Pound Catfish
+				i(13903),	-- 22 Pound Salmon
+				i(13904),	-- 25 Pound Salmon
+				i(6363),	-- 26 Pound Catfish
+				i(13905),	-- 29 Pound Salmon
+				i(6364),	-- 32 Pound Catfish
+				i(13906),	-- 32 Pound Salmon
+				i(13885),	-- 34 Pound Redgill
+				i(13886),	-- 37 Pound Redgill
+				i(13882),	-- 42 Pound Redgill
+				i(13883),	-- 45 Pound Redgill
+				i(13884),	-- 49 Pound Redgill
+				i(13887),	-- 52 Pound Redgill
+				i(13914),	-- 70 Pound Mightfish
+				i(13915),	-- 85 Pound Mightfish
+				i(13916),	-- 92 Pound Mightfish
+				i(13917),	-- 103 Pound Mightfish
+			})),
+			filter(MISC, {
+				-- Equippables:
+				i(13907),	-- 7 Pound Lobster
+				i(13908),	-- 9 Pound Lobster
+				i(13909),	-- 12 Pound Lobster
+				i(13910),	-- 15 Pound Lobster
+				i(13911),	-- 19 Pound Lobster
+				i(13912),	-- 21 Pound Lobster
+				i(13913),	-- 22 Pound Lobster
+				i(13876),	-- 40 Pound Grouper
+				i(13877),	-- 47 Pound Grouper
+				i(13878),	-- 53 Pound Grouper
+				i(13879),	-- 59 Pound Grouper
+				i(13880),	-- 68 Pound Grouper
+				-- Bloated fish:
+				i(6646),	-- Bloated Albacore
+				i(6647),	-- Bloated Catfish
+				i(21163),	-- Bloated Firefin
+				i(6644),	-- Bloated Mackerel
+				i(21243),	-- Bloated Mightfish
+				i(6645),	-- Bloated Mud Snapper
+				i(21162),	-- Bloated Oily Blackmouth
+				i(13881, {	-- Bloated Redgill
+					i(7551),	-- Entwined Opaline Talisman
+					i(7549),	-- Fairy's Embrace
+				}),
+				i(21164, {	-- Bloated Rockscale Cod
+					i(7909),	-- Aquamarine
+					i(3864),	-- Citrine
+					i(1529),	-- Jade
+					i(1705),	-- Lesser Moonstone
+				}),
+				i(13891),	-- Bloated Salmon
+				i(6643),	-- Bloated Smallfish
+				i(8366),	-- Bloated Trout
+				-- Containers:
+				i(6351),	-- Dented Crate
+				i(13874),	-- Heavy Crate
+				i(21150, {	-- Iron Bound Trunk
+					["maps"] = {
+						ARATHI_HIGHLANDS,
+						ASHENVALE,
+						AZSHARA,
+						BLASTED_LANDS,
+						DARKSHORE,
+						DESOLACE,
+						DUSTWALLOW_MARSH,
+						FERALAS,
+						HILLSBRAD_FOOTHILLS,
+						SILVERPINE_FOREST,
+						SWAMP_OF_SORROWS,
+						TANARIS,
+						-- #if BEFORE 4.0.3
+						ALTERAC_MOUNTAINS,
+						STRANGLETHORN_VALE,
+						THE_BARRENS,
+						-- #else
+						EASTERN_PLAGUELANDS,
+						FERALAS,
+						MOONGLADE,
+						NORTHERN_BARRENS,
+						NORTHERN_STRANGLETHORN,
+						SOUTHERN_BARRENS,
+						STONETALON_MOUNTAINS,
+						THE_CAPE_OF_STRANGLETHORN,
+						THOUSAND_NEEDLES,
+						UNGORO_CRATER,
+						WESTERN_PLAGUELANDS,
+						-- #endif
+						THE_HINTERLANDS,
+						WESTFALL,
+						WETLANDS,
+					},
+					["providers"] = {
+						{ "o", 180901 },	-- Bloodsail Wreckage
+						{ "o", 180683 },	-- Firefin Snapper School
+						{ "o", 180683 },	-- Greater Sagefish School
+						{ "o", 180682 },	-- Oily Blackmouth School
+						{ "o", 180685 },	-- Waterlogged Wreckage
+						-- #if AFTER 5.1.0
+						{ "o", 216761 },	-- Mixed Ocean School
+						-- #endif
+					},
+					["groups"] = {
+						i(4339),	-- Bolt of Mageweave
+						i(4305),	-- Bolt of Silk Cloth
+						i(1710),	-- Greater Healing Potion
+						i(4234),	-- Heavy Leather
+						i(3827),	-- Mana Potion
+						i(4304),	-- Thick Leather
+					},
+				}),
+				i(6307),	-- Message in a Bottle
+				i(21228, {	-- Mitril Bound Trunk
+					["maps"] = {
+						BLASTED_LANDS,
+						EASTERN_PLAGUELANDS,
+						SWAMP_OF_SORROWS,
+						TANARIS,
+						-- #if AFTER 4.0.3
+						THOUSAND_NEEDLES,
+						-- #endif
+					},
+					["providers"] = {
+						{ "o", 180751 },	-- Floating Wreckage
+						{ "o", 180712 },	-- Stonescale Eel Swarm
+					},
+					["groups"] = {
+						i(4339),	-- Bolt of Mageweave
+						i(14048),	-- Bolt of Runecloth
+						i(6149),	-- Greater Mana Potion
+						i(8170),	-- Rugged Leather
+						i(3928),	-- Superior Healing Potion
+						i(4304),	-- Thick Leather
+					},
+				}),
+				i(13918),	-- Reinforced Locked Chest
+				i(6357),	-- Sealed Crate
+				i(20708, {	-- Tightly Sealed Trunk
+					["maps"] = {
+						DARKSHORE,
+						DUSKWOOD,
+						REDRIDGE_MOUNTAINS,
+						SILVERPINE_FOREST,
+						WESTFALL,
+						-- #if BEFORE 4.0.3
+						THE_BARRENS,
+						-- #else
+						AZSHARA,
+						NORTHERN_BARRENS,
+						-- #endif
+					},
+					["providers"] = {
+						{ "o", 180655 },	-- Floating Debris
+						{ "o", 180658 },	-- School of Deviate Fish
+					},
+					["groups"] = {
+						i(2996),	-- Bolt of Linen Cloth
+						i(2997),	-- Bolt of Woolen Cloth
+						i(858),	-- Lesser Healing Potion
+						i(2318),	-- Light Leather
+						i(2319),	-- Medium Leather
+						i(2455),	-- Minor Mana Potion
+					},
+				}),
+				i(6352),	-- Waterlogged Crate
+				i(21113, {	-- Watertight Trunk
+					["maps"] = {
+						ASHENVALE,
+						HILLSBRAD_FOOTHILLS,
+						STONETALON_MOUNTAINS,
+						WETLANDS,
+					},
+					["providers"] = {
+						-- #if AFTER 5.1.0
+						{ "o", 216764 },	-- Sagefish School
+						-- #endif
+						{ "o", 180662 },	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
+					},
+					["groups"] = {
+						i(4305),	-- Bolt of Silk Cloth
+						i(2997),	-- Bolt of Woolen Cloth
+						i(929),	-- Healing Potion
+						i(4234),	-- Heavy Leather
+						i(2319),	-- Medium Leather
+						i(3385),	-- Lesser Mana Potion
+					},
+				}),
+				-- Consumables:
+				i(21151, {	-- Rumsey Rum Black Label
+					["providers"] = {
+						{ "o", 180901 },	-- Bloodsail Wreckage
+						{ "o", 180683 },	-- Firefin Snapper School
+						{ "o", 180655 },	-- Floating Debris
+						{ "o", 180751 },	-- Floating Wreckage
+						{ "o", 180683 },	-- Greater Sagefish School
+						{ "o", 180682 },	-- Oily Blackmouth School
+						{ "o", 180658 },	-- School of Deviate Fish
+						{ "o", 180662 },	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
+						{ "o", 180712 },	-- Stonescale Eel Swarm
+						{ "o", 180685 },	-- Waterlogged Wreckage
+						-- #if AFTER 5.1.0
+						{ "o", 216761 },	-- Mixed Ocean School
+						{ "o", 216764 },	-- Sagefish School
+						-- #else
+						{ "o", 180663 },	-- Sagefish School
+						{ "o", 180656 },	-- Sagefish School
+						-- #endif
+					},
+				}),
+				i(20709, {	-- Rumsey Rum Light
+					["maps"] = {
+						DARKSHORE,
+						DUSKWOOD,
+						REDRIDGE_MOUNTAINS,
+						SILVERPINE_FOREST,
+						WESTFALL,
+						-- #if BEFORE 4.0.3
+						THE_BARRENS,
+						-- #else
+						AZSHARA,
+						NORTHERN_BARRENS,
+						-- #endif
+					},
+					["providers"] = {
+						{ "o", 180655 },	-- Floating Debris
+					},
+				}),
+			}),
+			filter(PROFESSION_EQUIPMENT, {
+				i(6366, {	-- Darkwood Fishing Pole
+					["description"] = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Northern Stranglethorn, Redridge Mountains and Wetlands.",
+					["maps"] = {
+						ASHENVALE,
+						ARATHI_HIGHLANDS,
+						HILLSBRAD_FOOTHILLS,
+						NORTHERN_STRANGLETHORN,
+						REDRIDGE_MOUNTAINS,
+						WETLANDS,
+					},
+					-- #if AFTER 10.0.0
+					["collectible"] = false,
+					-- #endif
+				}),
+				i(6256, {	-- Fishing Pole
+					-- #if AFTER 10.0.0
+					["collectible"] = false,
+					-- #endif
+				}),
+				i(6365, {	-- Strong Fishing Pole
+					-- #if AFTER 10.0.0
+					["collectible"] = false,
+					-- #endif
+					["isLimited"] = true,
+				}),
+			}),
+			filter(RECIPES, {
+				i(34109, {	-- Weather-Beaten Journal (RECIPE!)
+					["description"] = "Can be fished from schools.",
+					["timeline"] = { ADDED_2_3_0 },
+				}),
+			}),
+			-- Danny Donkey: The post Cata data for fish and school locations is accurate for viability in retail and might deviate from Cata+ classic. Pre Cata data is also not validated in-game.
+			-- Fish:
+			i(13888, {	-- Darkclaw Lobster
+				["description"] = "Can be caught on the seaside.",
 				["maps"] = {
-					ASHENVALE,
-					DARKMOON_ISLAND,
-					HILLSBRAD_FOOTHILLS,
-					NORTHERN_STRANGLETHORN,
-					WETLANDS,
+					-- #if AFTER 4.0.3
+					BLASTED_LANDS,
+					SWAMP_OF_SORROWS,
+					-- #else
+					AZSHARA,
+					-- #endif
 				},
-				-- #else
-				["description"] = "Can be caught in Ashenvale, Hillsbrad Foothills, and the Wetlands in open water.",
-				["maps"] = {
-					ASHENVALE,
-					HILLSBRAD_FOOTHILLS,
-					WETLANDS,
+			}),
+			i(6522, {	-- Deviate Fish
+				["_allowObjectProvider"] = true,
+				["coords"] = {
+					-- #if AFTER 4.0.3
+					{ 56.0, 80.6, NORTHERN_BARRENS },	-- The Stagnant Oasis
+					{ 39.9, 74.9, NORTHERN_BARRENS },	-- Lushwater Oasis
+					{ 37.3, 45.9, NORTHERN_BARRENS },	-- The Forgotten Oasis
+					-- #else
+					{ 56.0, 43.0, THE_BARRENS },	-- The Stagnant Oasis
+					{ 46.0, 38.0, THE_BARRENS },	-- Lushwater Oasis
+					{ 45.0, 22.0, THE_BARRENS },	-- The Forgotten Oasis
+					-- #endif
 				},
-				-- #endif
+				["provider"] = { "o", 180658 },	-- School of Deviate Fish
 			}),
-		}),
-		filter(FINGER_F, {
-			i(8350, {	-- The 1 Ring
-				["description"] = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
-			}),
-		}),
-		filter(HELD_IN_OFF_HAND, bubbleDownSelf({ ["collectible"] = false, }, {
-			i(6292),	-- 10 Pound Mud Snapper
-			i(6294),	-- 12 Pound Mud Snapper
-			i(6295),	-- 15 Pound Mud Snapper
-			i(13901),	-- 15 Pound Salmon
-			i(6309),	-- 17 Pound Catfish
-			i(13902),	-- 18 Pound Salmon
-			i(6310),	-- 19 Pound Catfish
-			i(6311),	-- 22 Pound Catfish
-			i(13903),	-- 22 Pound Salmon
-			i(13904),	-- 25 Pound Salmon
-			i(6363),	-- 26 Pound Catfish
-			i(13905),	-- 29 Pound Salmon
-			i(6364),	-- 32 Pound Catfish
-			i(13906),	-- 32 Pound Salmon
-			i(13885),	-- 34 Pound Redgill
-			i(13886),	-- 37 Pound Redgill
-			i(13882),	-- 42 Pound Redgill
-			i(13883),	-- 45 Pound Redgill
-			i(13884),	-- 49 Pound Redgill
-			i(13887),	-- 52 Pound Redgill
-			i(13914),	-- 70 Pound Mightfish
-			i(13915),	-- 85 Pound Mightfish
-			i(13916),	-- 92 Pound Mightfish
-			i(13917),	-- 103 Pound Mightfish
-		})),
-		filter(MISC, {
-			i(13907),	-- 7 Pound Lobster
-			i(13908),	-- 9 Pound Lobster
-			i(13909),	-- 12 Pound Lobster
-			i(13910),	-- 15 Pound Lobster
-			i(13911),	-- 19 Pound Lobster
-			i(13912),	-- 21 Pound Lobster
-			i(13913),	-- 22 Pound Lobster
-			i(13876),	-- 40 Pound Grouper
-			i(13877),	-- 47 Pound Grouper
-			i(13878),	-- 53 Pound Grouper
-			i(13879),	-- 59 Pound Grouper
-			i(13880),	-- 68 Pound Grouper
-			i(6646),	-- Bloated Albacore
-			i(6647),	-- Bloated Catfish
-			i(21163),	-- Bloated Firefin
-			i(6644),	-- Bloated Mackerel
-			i(21243),	-- Bloated Mightfish
-			i(6645),	-- Bloated Mud Snapper
-			i(21162),	-- Bloated Oily Blackmouth
-			i(13881, {	-- Bloated Redgill
-				i(7551),	-- Entwined Opaline Talisman
-				i(7549),	-- Fairy's Embrace
-			}),
-			i(21164),	-- Bloated Rockscale Cod
-			i(13891),	-- Bloated Salmon
-			i(6643),	-- Bloated Smallfish
-			i(8366),	-- Bloated Trout
-			i(6351),	-- Dented Crate
-			i(13874),	-- Heavy Crate
-			i(6357),	-- Sealed Crate
-			i(6352),	-- Waterlogged Crate
-		}),
-		filter(PROFESSION_EQUIPMENT, {
-			i(6366, {	-- Darkwood Fishing Pole
-				["description"] = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Northern Stranglethorn, Redridge Mountains and Wetlands.",
+			i(6359, {	-- Firefin Snapper
+				["description"] = "Schools can be found on the seaside.",
 				["maps"] = {
-					ASHENVALE,
 					ARATHI_HIGHLANDS,
+					ASHENVALE,
+					AZSHARA,
+					BLASTED_LANDS,
+					DARKSHORE,
+					DESOLACE,
+					DUSTWALLOW_MARSH,
+					FERALAS,
 					HILLSBRAD_FOOTHILLS,
+					SILVERPINE_FOREST,
+					SWAMP_OF_SORROWS,
+					TANARIS,
+					-- #if BEFORE 4.0.3
+					STRANGLETHORN_VALE,
+					THE_BARRENS,
+					-- #else
+					NORTHERN_BARRENS,
 					NORTHERN_STRANGLETHORN,
+					SOUTHERN_BARRENS,
+					THE_CAPE_OF_STRANGLETHORN,
+					THOUSAND_NEEDLES,
+					-- #endif
+					THE_HINTERLANDS,
+					WESTFALL,
+					WETLANDS,
+				},
+				["providers"] = {
+					{ "o", 180683 },	-- Firefin Snapper School
+					-- #if AFTER 5.1.0
+					{ "o", 216761 },	-- Mixed Ocean School
+					-- #endif
+				},
+			}),
+			i(13893, {	-- Large Raw Mightfish
+				["description"] = "Can be caught on the seaside.",
+				["maps"] = {
+					-- #if AFTER 4.0.3
+					BLASTED_LANDS,
+					SWAMP_OF_SORROWS,
+					-- #else
+					AZSHARA,
+					-- #endif
+				},
+			}),
+			i(13757, {	-- Lightening Eel
+				["coord"] = { 60.6, 71.7, SILITHUS },
+				["description"] = "Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",
+				["maps"] = {
+					-- #if BEFORE 4.0.3
+					BURNING_STEPPES,
+					EASTERN_PLAGUELANDS,
+					-- #endif
+					DEADWIND_PASS,
+					WINTERSPRING,
+				},
+			}),
+			i(6358, {	-- Oily Blackmouth
+				["description"] = "Schools can be found on the seaside.",
+				["maps"] = {
+					ARATHI_HIGHLANDS,
+					ASHENVALE,
+					AZSHARA,
+					BLASTED_LANDS,
+					DARKSHORE,
+					DESOLACE,
+					DUSTWALLOW_MARSH,
+					FERALAS,
+					HILLSBRAD_FOOTHILLS,
+					SILVERPINE_FOREST,
+					SWAMP_OF_SORROWS,
+					TANARIS,
+					-- #if BEFORE 4.0.3
+					STRANGLETHORN_VALE,
+					THE_BARRENS,
+					-- #else
+					NORTHERN_BARRENS,
+					NORTHERN_STRANGLETHORN,
+					SOUTHERN_BARRENS,
+					THE_CAPE_OF_STRANGLETHORN,
+					THOUSAND_NEEDLES,
+					-- #endif
+					THE_HINTERLANDS,
+					WESTFALL,
+					WETLANDS,
+				},
+				["providers"] = {
+					{ "o", 180682 },	-- Oily Blackmouth School
+					-- #if AFTER 5.1.0
+					{ "o", 216761 },	-- Mixed Ocean School
+					-- #endif
+				},
+			}),
+			i(6291, {	-- Raw Brilliant Smallfish
+				["description"] = "Can be caught in inland waters and waterways.",
+				["maps"] = {
+					DUN_MOROGH,
+					ELWYNN_FOREST,
+					MULGORE,
+					TIRISFAL_GLADES,
+				},
+			}),
+			i(6308, {	-- Raw Bristle Whisker Catfish
+				["description"] = "Can be caught in inland waters and waterways.",
+				["maps"] = {
+					ASHENVALE,
+					DUSKWOOD,
+					REDRIDGE_MOUNTAINS,
+					STONETALON_MOUNTAINS,
+				},
+			}),
+			i(13754, {	-- Raw Glossy Mightfish
+				["description"] = "Can be caught on the seaside.",
+				["maps"] = {
+					TANARIS,
+					-- #if BEFORE 4.0.3
+					AZSHARA,
+					FERALAS,
+					THE_HINTERLANDS,
+					-- #endif
+				},
+			}),
+			i(21153, {	-- Raw Greater Sagefish
+				["description"] = "Schools can be found in inland waters and waterways.",
+				["maps"] = {
+					-- #if BEFORE 4.0.3
+					ALTERAC_MOUNTAINS,
+					STRANGLETHORN_VALE,
+					-- #else
+					ARATHI_HIGHLANDS,
+					BLASTED_LANDS,
+					DESOLACE,
+					DUSTWALLOW_MARSH,
+					EASTERN_PLAGUELANDS,
+					FERALAS,
+					MOONGLADE,
+					STONETALON_MOUNTAINS,
+					THE_HINTERLANDS,
+					UNGORO_CRATER,
+					WESTERN_PLAGUELANDS,
+					-- #endif
+				},
+				["provider"] = { "o", 180683 },	-- Greater Sagefish School
+			}),
+			i(6317, {	-- Raw Loch Frenzy
+				["description"] = "Can be caught in The Loch.",
+				["maps"] = { LOCH_MODAN },
+			}),
+			i(6289, {	-- Raw Longjaw Mud Snapper
+				["description"] = "Can be caught in inland waters and waterways.",
+				["maps"] = {
+					DARNASSUS,
+					-- #if AFTER 4.0.3
+					DUN_MOROGH,
+					IRONFORGE,
+					-- #endif
+					ORGRIMMAR,
+					STORMWIND_CITY,
+					THUNDER_BLUFF,
+				},
+			}),
+			i(8365, {	-- Raw Mithril Head Trout
+				["description"] = "Can be caught in inland waters and waterways.",
+				["maps"] = {
+					-- #if BEFORE 4.0.3
+					ARATHI_HIGHLANDS,
+					THOUSAND_NEEDLES,
+					-- #else
+					DESOLACE,
+					DUSTWALLOW_MARSH,
+					EASTERN_PLAGUELANDS,
+					FERALAS,
+					MOONGLADE,
+					WESTERN_PLAGUELANDS,
+					-- #endif
+				},
+			}),
+			i(13759, {	-- Raw Nightfin Snapper
+				["description"] = "Can be caught in inland waters and waterways during night time: 18:00/6pm to 12:00/12pm server time.",
+				["maps"] = {
+					-- #if BEFORE 4.0.3
+					DEADWIND_PASS,
+					MOONGLADE,
+					WESTERN_PLAGUELANDS,
+					WINTERSPRING,
+					-- #else
+					BLASTED_LANDS,
+					-- #endif
+					EASTERN_PLAGUELANDS,
+					FELWOOD,
+					FERALAS,
+					UNGORO_CRATER,
+				},
+			}),
+			i(6361, {	-- Raw Rainbow Fin Albacore
+				["description"] = "Can be caught on the seaside.",
+				["maps"] = {
+					-- #if BEFORE 4.0.3
+					ASHENVALE,
+					HILLSBRAD_FOOTHILLS,
+					SILVERPINE_FOREST,
+					THE_BARRENS,
+					WESTFALL,
+					WETLANDS,
+					-- #else
+					RUINS_OF_GILNEAS,
+					-- #endif
+					-- #if AFTER TBC
+					BLOODMYST_ISLE,
+					GHOSTLANDS,
+					-- #endif
+					DARKSHORE,
+				},
+			}),
+			i(13758, {	-- Raw Redgill
+				["description"] = "Can be caught in inland waters and waterways.",
+				["maps"] = {
+					FELWOOD,
+					MOONGLADE,
+					-- #if BEFORE 4.0.3
+					UNGORO_CRATER,
+					WESTERN_PLAGUELANDS,
+					-- #endif
+				},
+			}),
+			i(6362, {	-- Raw Rockscale Cod
+				["description"] = "Can be caught on the seaside.",
+				["maps"] = {
+					-- #if BEFORE 4.0.3
+					DUSTWALLOW_MARSH,
+					SWAMP_OF_SORROWS,
+					-- #else
+					DESOLACE,
+					-- #endif
+				},
+			}),
+			i(21071, {	-- Raw Sagefish
+				["coords"] = {
+					-- #if BEFORE 4.0.3
+					{ 50.0, 40.0, STONETALON_MOUNTAINS },	-- Mirkfallon Lake
+					-- #endif
+				},
+				["description"] = "Schools can be found in inland waters and waterways.",
+				["maps"] = {
+					ASHENVALE,
+					HILLSBRAD_FOOTHILLS,
+					LOCH_MODAN,
+					SILVERPINE_FOREST,
+					-- #if AFTER 4.0.3
+					DUSKWOOD,
+					REDRIDGE_MOUNTAINS,
+					WETLANDS,
+					-- #endif
+				},
+				["providers"] = {
+					-- #if AFTER 5.1.0
+					{ "o", 216764 },	-- Sagefish School
+					-- #else
+					{ "o", 180663 },	-- Sagefish School
+					{ "o", 180656 },	-- Sagefish School
+					-- #endif
+				},
+			}),
+			i(6303, {	-- Raw Slitherskin Mackerel
+				["description"] = "Can be caught on the seaside.",
+				["maps"] = {
+					DUROTAR,
+					TELDRASSIL,
+					-- #if AFTER TBC
+					AZUREMYST_ISLE,
+					-- #endif
+				},
+			}),
+			i(4603, {	-- Raw Spotted Yellowtail
+				["description"] = "Can be caught on the seaside.",
+				["maps"] = {
+					TANARIS,
+					-- #if BEFORE 4.0.3
+					SWAMP_OF_SORROWS,
+					THE_HINTERLANDS,
+					-- #else
+					BADLANDS,
+					-- #endif
+				},
+			}),
+			--i(13756),	-- Raw Summer Bass: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
+			i(13760, {	-- Raw Sunscale Salmon
+				["description"] = "Can be caught in inland waters and waterways during day time: 06:00/6am to 21:00/9pm server time.",
+				["coord"] = { 60.6, 71.7, SILITHUS },
+			}),
+			i(13889, {	-- Raw Whitescale Salmon
+				["description"] = "Can be caught in inland waters and waterways.",
+				["maps"] = {
+					-- #if BEFORE TBC
+					DEADWIND_PASS,
+					-- #endif
+					-- #if BEFORE 4.0.3
+					EASTERN_PLAGUELANDS,
+					-- #else
+					BLASTED_LANDS,
+					UNGORO_CRATER,
+					-- #endif
+					SILITHUS,
+					WINTERSPRING,
+				},
+			}),
+			i(13422, {	-- Stonescale Eel
+				["description"] = "Schools can be found on the seaside.",
+				["maps"] = {
+					TANARIS,
+					-- #if BEFORE 4.0.3
+					AZSHARA,
+					FERALAS,
+					THE_HINTERLANDS,
+					STRANGLETHORN_VALE,
+					-- #else
+					BLASTED_LANDS,
+					SWAMP_OF_SORROWS,
+					-- #endif
+				},
+				["provider"] = { "o", 180712 },	-- Stonescale Eel Swarm
+			}),
+			--i(13755),	-- Winter Squid: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
+			-- Fish schools:
+			o(180684, {	-- Firefin Snapper School
+				["description"] = "Can be found on the seaside.",
+				["maps"] = {
+					ARATHI_HIGHLANDS,
+					ASHENVALE,
+					AZSHARA,
+					BLASTED_LANDS,
+					DARKSHORE,
+					DESOLACE,
+					DUSTWALLOW_MARSH,
+					FERALAS,
+					HILLSBRAD_FOOTHILLS,
+					SILVERPINE_FOREST,
+					SWAMP_OF_SORROWS,
+					TANARIS,
+					-- #if BEFORE 4.0.3
+					THE_BARRENS,
+					-- #else
+					NORTHERN_BARRENS,
+					SOUTHERN_BARRENS,
+					THOUSAND_NEEDLES,
+					-- #endif
+					THE_HINTERLANDS,
+					WESTFALL,
+					WETLANDS,
+				},
+				["nomerge"] = true,
+			}),
+			-- These Firefin Snapper school IDs needs to be confirmed in game.
+			o(180657),	-- Firefin Snapper School 2
+			o(180683),	-- Firefin Snapper School 3
+			o(180752),	-- Firefin Snapper School 4
+			o(180902),	-- Firefin Snapper School 5
+			o(180683, {	-- Greater Sagefish School
+				["description"] = "Can be found in inland waters and waterways.",
+				["maps"] = {
+					-- #if BEFORE 4.0.3
+					ALTERAC_MOUNTAINS,
+					STRANGLETHORN_VALE,
+					-- #else
+					ARATHI_HIGHLANDS,
+					BLASTED_LANDS,
+					DESOLACE,
+					DUSTWALLOW_MARSH,
+					EASTERN_PLAGUELANDS,
+					FERALAS,
+					MOONGLADE,
+					STONETALON_MOUNTAINS,
+					THE_HINTERLANDS,
+					UNGORO_CRATER,
+					WESTERN_PLAGUELANDS,
+					-- #endif
+				},
+			}),
+			o(216761, {	-- Mixed Ocean School
+				["maps"] = {
+					NORTHERN_STRANGLETHORN,
+					THE_CAPE_OF_STRANGLETHORN,
+				},
+				["timeline"] = { ADDED_5_1_0 },
+			}),
+			o(180682, {	-- Oily Blackmouth School
+				["description"] = "Can be found on the seaside.",
+				["maps"] = {
+					ARATHI_HIGHLANDS,
+					ASHENVALE,
+					AZSHARA,
+					BLASTED_LANDS,
+					DARKSHORE,
+					DESOLACE,
+					DUSTWALLOW_MARSH,
+					FERALAS,
+					HILLSBRAD_FOOTHILLS,
+					SILVERPINE_FOREST,
+					SWAMP_OF_SORROWS,
+					TANARIS,
+					-- #if BEFORE 4.0.3
+					THE_BARRENS,
+					-- #else
+					NORTHERN_BARRENS,
+					SOUTHERN_BARRENS,
+					THOUSAND_NEEDLES,
+					-- #endif
+					THE_HINTERLANDS,
+					WESTFALL,
+					WETLANDS,
+				},
+			}),
+			-- The following pre-5.1.0 Sagefish school IDs needs to be confirmed in game.
+			o(180656, {	-- Sagefish School
+				["timeline"] = { REMOVED_5_1_0 },
+			}),
+			o(180663, {	-- Sagefish School
+				["timeline"] = { REMOVED_5_1_0 },
+			}),
+			o(216764, {	-- Sagefish School
+				["description"] = "Can be found in inland waters and waterways.",
+				["maps"] = {
+					ASHENVALE,
+					HILLSBRAD_FOOTHILLS,
+					LOCH_MODAN,
+					SILVERPINE_FOREST,
+					DUSKWOOD,
 					REDRIDGE_MOUNTAINS,
 					WETLANDS,
 				},
-				-- #if AFTER 10.0.0
-				["collectible"] = false,
-				-- #endif
+				["nomerge"] = true,
+				["timeline"] = { ADDED_5_1_0 },
 			}),
-		}),
-		i(13888, {	-- Darkclaw Lobster
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in open sea water in Swamp of Sorrows and Blasted Lands.",
-			-- #endif
-		}),
-		i(6522),	-- Deviate Fish
-		i(6359),	-- Firefin Snapper
-		i(13893),	-- Large Raw Mightfish
-		i(6358),	-- Oily Blackmouth
-		i(6291, {	-- Raw Brilliant Smallfish
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in open inland waters in all low level zones around Azeroth.",
-			-- #endif
-		}),
-		i(6308, {	-- Raw Bristle Whisker Catfish
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in open inland waters in all intermediate level zones around Azeroth.",
-			-- #endif
-		}),
-		i(13754, {	-- Raw Glossy Mightfish
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in open sea water in Tanaris.",
-			-- #endif
-		}),
-		i(21153, {	-- Raw Greater Sagefish
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in open inland waters in all high level vanilla zones around Azeroth.",
-			-- #endif
-		}),
-		i(6317, {	-- Raw Loch Frenzy
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in The Loch in Loch Modan.",
-			-- #endif
-		}),
-		i(6289, {	-- Raw Longjaw Mud Snapper
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in open inland waters in all low level zones around Azeroth.",
-			-- #endif
-		}),
-		i(8365, {	-- Raw Mithril Head Trout
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in open inland waters in Desolace, Dustwallow Marsh, Eastern Plaguelands, Feralas, Moonglade, and Western Plaguelands.",
-			-- #endif
-		}),
-		i(13759, {	-- Raw Nightfin Snapper
-			-- #if AFTER 9.0.1
-			["description"] = "Can be caught in open inland waters in Blasted Lands, Eastern Plaguelands, Feralas, and Moonglade.",
-			-- #elseif AFTER 4.0.3
-			["description"] = "Can be caught in open inland waters in Blasted Lands, Eastern Plaguelands, Feralas, and Moonglade. Can only be caught during night time: 18:00/6pm to 12:00/12pm server time.",
-			-- #endif
-		}),
-		i(6361, {	-- Raw Rainbow Fin Albacore
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in open sea water in all low to intermediate level zones around Azeroth, except starting zones.",
-			-- #endif
-		}),
-		i(13758, {	-- Raw Redgill
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in open inland waters in all high level vanilla zones around Azeroth.",
-			-- #endif
-		}),
-		i(6362, {	-- Raw Rockscale Cod
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in open inland waters in all intermediate level zones around Azeroth.",
-			-- #endif
-		}),
-		i(21071, {	-- Raw Sagefish
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in open inland waters in all low to intermediate level zones around Azeroth, except starting zones.",
-			-- #endif
-		}),
-		i(6303, {	-- Raw Slitherskin Mackerel
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in any open waters in Azshara, Azuremyst Isle, Darkshore, Eversong Woods and Westfall.",
-			-- #endif
-		}),
-		i(4603, {	-- Raw Spotted Yellowtail
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in open sea water in Azshara, Cape of Stranglethorn, Dustwallow Marsh and Tanaris.",
-			-- #endif
-		}),
-		--i(13756),	-- Raw Summer Bass
-		i(13760),	-- Raw Sunscale Salmon
-		i(13889, {	-- Raw Whitescale Salmon
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in open inland waters in Blasted Lands, Un'Goro Crater and Winterspring.",
-			-- #endif
-		}),
-		i(5468),	-- Soft Frenzy Flesh
-		i(13422),	-- Stonescale Eel
-		--i(13755),	-- Winter Squid
-		filter(RECIPES, {
-			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "Can be fished from schools.",
-				["timeline"] = { ADDED_2_3_0 },
+			o(180658, {	-- School of Deviate Fish
+				["coords"] = {
+					-- #if AFTER 4.0.3
+					{ 56.0, 80.6, NORTHERN_BARRENS },	-- The Stagnant Oasis
+					{ 39.9, 74.9, NORTHERN_BARRENS },	-- Lushwater Oasis
+					{ 37.3, 45.9, NORTHERN_BARRENS },	-- The Forgotten Oasis
+					-- #else
+					{ 56.0, 43.0, THE_BARRENS },	-- The Stagnant Oasis
+					{ 46.0, 38.0, THE_BARRENS },	-- Lushwater Oasis
+					{ 45.0, 22.0, THE_BARRENS },	-- The Forgotten Oasis
+					-- #endif
+				},
 			}),
-		}),
+			o(180712, {	-- Stonescale Eel Swarm
+				["description"] = "Can be found on the seaside.",
+				["maps"] = {
+					TANARIS,
+					-- #if BEFORE 4.0.3
+					AZSHARA,
+					FERALAS,
+					THE_HINTERLANDS,
+					STRANGLETHORN_VALE,
+					-- #else
+					BLASTED_LANDS,
+					SWAMP_OF_SORROWS,
+					-- #endif
+				},
+			}),
+			-- Wreckages:
+			o(180901, {	-- Bloodsail Wreckage
+				["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+				["maps"] = {
+					-- #if AFTER 4.0.3
+					NORTHERN_STRANGLETHORN,
+					THE_CAPE_OF_STRANGLETHORN,
+					-- #else
+					STRANGLETHORN_VALE,
+					-- #endif
+				},
+			}),
+			o(180655, {	-- Floating Debris
+				["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+				["maps"] = {
+					DARKSHORE,
+					DUSKWOOD,
+					REDRIDGE_MOUNTAINS,
+					SILVERPINE_FOREST,
+					WESTFALL,
+					-- #if BEFORE 4.0.3
+					THE_BARRENS,
+					-- #else
+					AZSHARA,
+					NORTHERN_BARRENS,
+					-- #endif
+				},
+				["nomerge"] = true,
+			}),
+			o(180751, {	-- Floating Wreckage
+				["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+				["maps"] = {
+					BLASTED_LANDS,
+					EASTERN_PLAGUELANDS,
+					SWAMP_OF_SORROWS,
+					TANARIS,
+					-- #if AFTER 4.0.3
+					THOUSAND_NEEDLES,
+					-- #endif
+				},
+			}),
+			o(180662, {	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
+				["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+				["maps"] = {
+					ASHENVALE,
+					HILLSBRAD_FOOTHILLS,
+					STONETALON_MOUNTAINS,
+					WETLANDS,
+				},
+			}),
+			o(180685, {	-- Waterlogged Wreckage / Pre WotLK: Floating Wreckage
+				["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+				["maps"] = {
+					TANARIS,
+					-- #if BEFORE 4.0.3
+					STRANGLETHORN_VALE,
+					-- #else
+					FERALAS,
+					WESTERN_PLAGUELANDS,
+					-- #endif
+				},
+			}),
+		},
 	}),
 	prof(HERBALISM, {
 		i(11020, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Evergreen Pouch
@@ -4061,6 +4708,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(6217),	-- Copper Rod
 				i(4470),	-- Simple Wood
 				i(11291),	-- Star Wood
+			}),
+			-- Engineering reagents from vendors
+			sharedData({
+				["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
+			},{
+				i(4400),	-- Heavy Stock
+				i(4399),	-- Wooden Stock
 			})
 		),
 	}),
