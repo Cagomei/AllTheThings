@@ -792,21 +792,32 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				["g"] = {
 					o(474102, {	-- Ellie
 						["coord"] = { 14.2, 41.9, 2372 },	-- Arathi Highlands
-						["g"] = {
-							i(230000),	-- Ellie (QI!)
-						},
+						["g"] = { i(230000) },	-- Ellie (QI!)
 					}),
 				},
 			}),
 			q(84639, {	-- Torches and Tar
 				["sourceQuests"] = { 84638 },	-- Trouble in the Highlands
 				["provider"] = { "n", 230174 },	-- Walker Gresham
-				["coord"] = { 20.5, 39.3, 2372 },
+				["coord"] = { 20.5, 39.3, 2372 },	-- Arathi Highlands
 				["g"] = {
-					i(229094),	-- Barrel of Tar (QI!)
+					o(474113, {	-- Barrel of Tar
+						["coords"] = {
+							{ 15.0, 42.7, 2372 },	-- Arathi Highlands
+							{ 17.0, 40.4, 2372 },	-- Arathi Highlands
+							{ 17.4, 41.1, 2372 },	-- Arathi Highlands
+						},
+						["g"] = { i(229094) },	-- Barrel of Tar (QI!)
+					}),
+					o(503465, {	-- Barrels of Tar
+						["coords"] = {
+							{ 14.7, 41.0, 2372 },	-- Arathi Highlands
+							{ 16.2, 39.9, 2372 },	-- Arathi Highlands
+							{ 16.6, 42.2, 2372 },	-- Arathi Highlands
+						},
+						["g"] = { i(229094) },	-- Barrel of Tar (QI!)
+					}),
 					i(229095),	-- Stolen Torches (QI!)
-					o(474113),	-- Barrel of Tar
-					o(503465),	-- Barrels of Tar
 				},
 			}),
 			q(84640, {	-- Emblematic of Things to Come
@@ -871,11 +882,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				["sourceQuests"] = { 84656 },	-- Onward to Hammerfall
 				["provider"] = { "n", 230145 },	-- Eitrigg
 				["coord"] = { 69.7, 39.2, 2372 },
-				["g"] = {
-					o(475190, {	-- Supply Crate
-						["coord"] = { 69.0, 35.2, 2372 },
-					}),
-				},
 			}),
 			q(84707, {	-- To See a Troll
 				["sourceQuests"] = { 84704 },	-- A Different Point of View
@@ -1040,8 +1046,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				["provider"] = { "n", 231837 },	-- Faering Lothar
 				["coord"] = { 19.4, 59.1, 2372 },
 				["g"] = {
-					i(239135),	-- Hammerfall Tabard (COSMETIC!)
-					i(239136),	-- Stromgarde Tabard (COSMETIC!)
+					h(i(239135)),	-- Hammerfall Tabard (COSMETIC!)
+					a(i(239136)),	-- Stromgarde Tabard (COSMETIC!)
 				},
 			}),
 			q(85529, {	-- Past Glory
@@ -1050,9 +1056,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				["coord"] = { 21.6, 65.0, 2372 },
 				["g"] = {
 					i(239137),	-- Lamplighter's Pauldrons (COSMETIC!)
-					-- TODO: Myrh worth a look at here, just in case
-					ach(41820),	-- Rise of the Red Dawn
-					title(629),	-- %s of Hammerfall
+					ach(41818),	-- Rise of the Red Dawn (A)
+					ach(41820),	-- Rise of the Red Dawn (H)
 				},
 			}),
 			--- Stay awhile and listen ---

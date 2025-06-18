@@ -405,7 +405,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				--]]
 			}),
 			n(167881, {	-- Ta'lan the Antiquary <Cartel Ta>
-				["coord"] = { 51.3, 43.0, 1672 },
+				["coord"] = { 51.3, 43.0, 1672 },	-- Broker's Den
 				["g"] = {
 					i(180971, {	-- Aquamarine Cartel Chit
 						["description"] = "Take this to Acquirer Ta'gosh in Oribos |cffffffff(61.7, 72.3)|r.",

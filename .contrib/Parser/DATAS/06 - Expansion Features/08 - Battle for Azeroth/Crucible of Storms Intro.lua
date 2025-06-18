@@ -25,18 +25,21 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(54113, {	-- Every Little Death Helps [A, Non-Priest]
 				["sourceQuests"] = { 54144 },	-- Orders from Azshara
+				["provider"] = { "o", 311218 },	-- Xal'atath, Blade of the Black Empire
 				["coord"] = { 34.2, 31.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = exclude(PRIEST, ALL_CLASSES),
 			}),
 			q(54117, {	-- Every Little Death Helps [H, Non-Priest]
 				["sourceQuests"] = { 54174 },	-- Orders from Azshara
+				["provider"] = { "o", 311218 },	-- Xal'atath, Blade of the Black Empire
 				["coord"] = { 78.0, 36.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["classes"] = exclude(PRIEST, ALL_CLASSES),
 			}),
 			q(54114, {	-- Every Little Death Helps [A, Priest]
 				["sourceQuests"] = { 54265 },	-- Orders from Azshara
+				["provider"] = { "o", 311885 },	-- Xal'atath, Blade of the Black Empire
 				["classes"] = { PRIEST },
 				["races"] = ALLIANCE_ONLY,
 				["coords"] = {
@@ -46,6 +49,7 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(54118, {	-- Every Little Death Helps [H, Priest]
 				["sourceQuests"] = { 54433 },	-- Orders from Azshara
+				["provider"] = { "o", 311885 },	-- Xal'atath, Blade of the Black Empire
 				["classes"] = { PRIEST },
 				["races"] = HORDE_ONLY,
 				["coords"] = {
@@ -181,7 +185,10 @@ root(ROOTS.ExpansionFeatures, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 53762 },	-- The Tempest Crown
 				["provider"] = { "n", 146384 },	-- Xal'atath
-				["coord"] = { 53.0, 13.6, VOLDUN },
+				["coords"] = {
+					{ 51.9, 13.7, VOLDUN },
+					{ 53.0, 13.6, VOLDUN },
+				},
 				["maps"] = { 1363 },	-- Crucible of Storms (Scenario Map)
 			}),
 			q(53763, {	-- Twist the Knife
@@ -196,6 +203,7 @@ root(ROOTS.ExpansionFeatures, {
 					54113,	-- Every Little Death Helps [A, Non-Priest]
 					54117,	-- Every Little Death Helps [H, Non-Priest]
 				},
+				["provider"] = { "o", 311218 },	-- Xal'atath, Blade of the Black Empire
 				["classes"] = exclude(PRIEST, ALL_CLASSES),
 				["coords"] = {
 					{ 78.0, 36.7, ZULDAZAR },
@@ -207,6 +215,7 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(54058, {	-- Unintended Consequences [Priest]
 				["sourceQuests"] = { 54114 },	-- Every Little Death Helps [Priest]
+				["provider"] = { "o", 311885 },	-- Xal'atath, Blade of the Black Empire
 				["classes"] = { PRIEST },
 				["coords"] = {
 					{ 78.0, 36.7, ZULDAZAR },

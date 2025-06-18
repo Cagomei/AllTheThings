@@ -601,7 +601,6 @@ _.Modules.Events.SetEventInformation(14, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=4,["year"]=2026},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=7,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=2,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=9,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=16,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=23,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=30,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=7,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=14,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=21,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
@@ -627,7 +626,8 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=20,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=27,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=4,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=11,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=18,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=25,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=1,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=8,["weekday"]=2,["year"]=2026},{["remappedID"]=374})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=1,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=8,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=15,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=22,["weekday"]=2,["year"]=2026},{["remappedID"]=375})
 });
 _.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=3,["year"]=2024}),
@@ -22919,8 +22919,9 @@ localize(L.HEADER_NAMES, {
 	[-1000123] = "Encantamientos de armadura",
 	[-1000125] = "Encantamientos de armas",
 	[-1000142] = "Titulos de honor",
-	[-1000162] = "Apariciones Compartidas",
+	[-1000162] = "Apariencias compartidas",
 	[-1000163] = "Apariencia única",
+	[-1000165] = "Conjuntos de nivel 0.5",
 	[-1000168] = "Los Cuatro Jinetes",
 	[-1000191] = "Derrota a un Teniente",
 	[-1000192] = "Gana la Batalla",
@@ -22940,6 +22941,8 @@ localize(L.HEADER_NAMES, {
 	[-1000227] = "Gran espectáculo de pesca de Tuercespina",
 	[-1000235] = "La apertura del Portal Oscuro",
 	[-1000236] = "El cetro del Mar de Dunas",
+	[-1000244] = "Edición de coleccionista",
+	[-1000245] = "Edición Heroica",
 	[-1000273] = "Temporada de Descubrimiento",
 	[-1000274] = "Comprensión",
 	[-1000275] = "Nivel 1",
@@ -22949,9 +22952,9 @@ localize(L.HEADER_NAMES, {
 	[-1000279] = "Suministros asaltados",
 	[-1000373] = "Nuevo personaje",
 	[-1000376] = "Pelea Corpulenta",
-	[-1000377] = "Polimorfo Salvaje",
+	[-1000377] = "Polimorfia Salvaje",
 	[-1000378] = "Corredores de Almas",
-	[-1000380] = "Prima",
+	[-1000380] = "Recompensa",
 	[-1000904] = "Fuente IDs",
 	[-1000969] = "Incursiones de la Pesadilla",
 	[-1000970] = "Nivel 3",
@@ -22968,17 +22971,19 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000030] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Depuración.",
 	[-1000033] = "Contiene cosas que son recompensadas o están disponibles en otro contenido dentro de la sección contenedora.\nSe consolidan aquí en un esfuerzo por reducir la duplicación de muchas fuentes posibles.",
 	[-1000040] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
-	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
-	[-1000163] = "Este artículo tiene una apariencia única. Debes recolectar este artículo específicamente para ganar la apariencia.",
+	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como coleccionado.",
+	[-1000163] = "Este objeto tiene una apariencia única. Debes obtener este objeto específicamente para ganar la apariencia.",
+	[-1000265] = "Los siguientes conjuntos de objetos se implementaron como recompensas de mejoras de personaje para los receptores del Pergamino de la Resurrección.\n\nPosteriormente, se añadieron a los vendedores del Monte Hyjal y Vash'jir una vez que se retiró el Servicio del Pergamino de la Resurrección.",
 	[-1000273] = "Esta temporada trae un límite de nivel inicial de 25 y un nuevo final de nivel 25, que incluye una incursión de 10 jugadores en Blackfathom Deeps con nuevas mecánicas, jefes nuevos y reinventados para desafiar las tácticas y estrategias de los jugadores, y nuevas recompensas.",
 	[-1000278] = "El grabado es un nuevo sistema anunciado recientemente para Season of Discovery. ¡Permite que cada clase adapte su experiencia de juego desbloqueando nuevas habilidades únicas!",
 	[-1000279] = "Los objetos de misión de Suministros Waylaid caen de mobs de nivel 6 y, sobre todo, en Azeroth. Estas misiones requieren la entrega de suministros Waylaid a un representante de la organización a cambio de algo de plata, experiencia y reputación. Por supuesto, faltan elementos en el envío de suministros y puedes complementarlos para obtener mayores recompensas de reputación.",
 	[-1000376] = "Sólo la persona que dé el golpe final al borracho obtendrá crédito, independientemente de quién haya tocado el objetivo primero. No hay crédito grupal por esto.",
-	[-1000377] = "Lanza Polymorph sobre criaturas afectadas por Wild Polymorph para convertirlas nuevamente en aprendices. Cada uno te dará una nota. Recoge 6 notas para aprender la runa.",
-	[-1000380] = "Esta lista contiene elementos inalcanzables que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los elementos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los elementos y encuentros que se enumeran a continuación.",
+	[-1000377] = "Lanza Polimorfia sobre criaturas afectadas por Polimorfia Salvaje para convertirlas nuevamente en aprendices. Cada uno te dará una nota. Recoge 6 notas para aprender la runa.",
+	[-1000380] = "Esta lista contiene objetos no obtenibles que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los objetos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los objetos y encuentros que se enumeran a continuación.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "Uno de estos dragones aparecerá aleatoriamente en las coordenadas asociadas en todo Azeroth.",
+	[-1000165] = "Los conjuntos de clase del Conjunto de Mazmorra nivel 2, comúnmente conocidos como Tier 0.5, se obtienen al completar una larga cadena de misiones para mejorar el primer conjunto disponible como botín en las mazmorras del final del juego y convertirlo en versiones más poderosas. En el WoW actual, estos conjuntos son codiciados por los coleccionistas, ya que la cadena de misiones se eliminó por completo del juego con Cataclysm. ¡En WoW Classic, deberías completar esta cadena de misiones con todos tus personajes antes de esa fecha!",
 });
 localize(ObjectNames, {
 	[31] = "Estatua de león antigua",
@@ -23756,20 +23761,52 @@ localize(ObjectNames, {
 	[100000001] = "Antorcha apagada",
 });
 for key,value in pairs({
+	[1] = "Nunca implementado [NYI]",
+	[2] = "Eliminado del juego",
 	[3] = "Saldo de Battle.net",
+	[4] = "PvP Elite/Gladiador",
+	[5] = "No aprendible",
+	[11] = "Fase 1",
+	[1605] = "Temporada del descubrimiento",
+	[1606] = "Fase 2",
+	[1607] = "Fase 3",
+	[1608] = "Fase 4",
+	[1609] = "Fase 5",
+	[1610] = "Fase 6",
+	[1611] = "Fase 7",
+	[1612] = "Fase 8",
 })
 do phases[key].name = value; end
 for key,value in pairs({
-	[11] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 1 de WoW Classic.|r",
-	[1606] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 2 de Season of Discovery.|r",
-	[1607] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 3 de Season of Discovery.|r",
-	[1608] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 4 de Season of Discovery.|r",
-	[1609] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 5 de Season of Discovery.|r",
-	[1610] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 6 de Season of Discovery.|r",
-	[1611] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 7 de Season of Discovery.|r",
-	[1612] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 8 de Season of Discovery.|r",
+	[1] = "|cFFFF0000Esto nunca estuvo disponible para los jugadores|r",
+	[2] = "|cFFFF0000Esto ha sido eliminado del juego.|r",
+	[3] = "|cFFAAFFAAEsta cosa está bloqueada detrás de un muro de pago que requiere saldo de Battle.net o dinero real.|r",
+	[4] = "|cFFFFAAAAEsto ya no se puede comprar ni desbloquear como transfiguración a menos que tengas el título PvP requerido, la calificación PvP requerida o estés en el porcentaje superior de esa temporada.|r",
+	[5] = "|cFFFFAAAAEsto no se puede recolectar, aprender ni usar para transfiguración de forma permanente.|r",
+	[11] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 1 de WoW Classic.|r",
+	[1605] = "|cFFAAFFAAEsto no estuvo disponible hasta la Fase 1 de la Temporada del Descubrimiento.|r",
+	[1606] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 2 de Season of Discovery.|r",
+	[1607] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 3 de Season of Discovery.|r",
+	[1608] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 4 de Season of Discovery.|r",
+	[1609] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 5 de Season of Discovery.|r",
+	[1610] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 6 de Season of Discovery.|r",
+	[1611] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 7 de Season of Discovery.|r",
+	[1612] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 8 de Season of Discovery.|r",
 })
 do phases[key].description = value; end
+for key,value in pairs({
+	[3] = "|cFFFFAAAAFomentar el uso de dinero real en cualquier versión del juego está ampliamente mal visto. Participa en este contenido bajo tu propia responsabilidad.|r",
+	[11] = "|cFFFFAAAAIncluidos Núcleo de magma y La guarida de Onyxia.|r",
+	[1605] = "|cFFFFAAAAIncluía la banda Cavernas de Brazanegra, el JvJ del mundo de Vallefresno y tenía un límite de nivel de 25.|r",
+	[1606] = "|cFFFFAAAAIncluía la banda Gnomeregan, el JvJ del mundo de Vega de tuercespina, y aumento el limite de nivel a 40.|r",
+	[1607] = "|cFFFFAAAAIncluía la banda Templo sumergido y aumento el limite de nivel a 50.|r",
+	[1608] = "|cFFFFAAAAIncluía Núcleo de magma, La guarida de Onyxia, Barranco del Demonio, Acantilados Tormentosos, Escara Impía, y aumento el limite de nivel a 60.|r",
+	[1609] = "|cFFFFAAAAIncluía Guarida de Alanegra, Zul'Gurub, y la nueva banda Vega de Cristal.|r",
+	[1610] = "|cFFFFAAAAIncluía Ahn'Qiraj, y la nueva banda Arboleda de la Pesadilla|r",
+	[1611] = "|cFFFFAAAAIncluía Naxxramas, y la nueva mazmorra Las Criptas de Karazhan|r",
+	[1612] = "|cFFFFAAAAIncluía Classic+?|r",
+})
+do phases[key].lore = value; end
 for key,value in pairs({
 	[6] = "Nivel 10",
 	[7] = "Nivel 20",
@@ -25153,6 +25190,24 @@ localize(L.HEADER_NAMES, {
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000030] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Debug.",
 });
+for key,value in pairs({
+	[2] = "Removido del juego",
+	[1605] = "Temporada de descubrimiento",
+})
+do phases[key].name = value; end
+for key,value in pairs({
+	[2] = "|cFFFF0000Esto ha sido removido del juego.|r",
+	[1605] = "|cFFAAFFAAEsto no estuvo disponible hasta la Fase 1 de la Temporada de Descubrimiento.|r",
+})
+do phases[key].description = value; end
+for key,value in pairs({
+	[1606] = "|cFFFFAAAAIncluía la banda Gnomeregan, el JvJ del mundo de Vega de Tuercespina, y aumento el limite de nivel a 40.|r",
+	[1608] = "|cFFFFAAAAIncluía Núcleo de magma, La guarida de Onyxia, Barranco del Demonio, Acantilados de la Tormenta, Escara Impía, y aumento el limite de nivel a 60.|r",
+	[1609] = "|cFFFFAAAAIncluía Guarida de Alanegra, Zul'Gurub, y la nueva banda La Vega de Cristal.|r",
+	[1610] = "|cFFFFAAAAIncluía Ahn'Qiraj, y la nueva banda Arboleda de la Pesadillas|r",
+	[1611] = "|cFFFFAAAAIncluía Naxxramas, y el nuevo calabozo Las Criptas de Karazhan|r",
+})
+do phases[key].lore = value; end
 for key,value in pairs({
 	[428] = "Trueno Furioso, espada bendita del Hijo del Viento",
 	[685] = "Guarida de Alanegra",

@@ -11,17 +11,13 @@ root(ROOTS.Unsorted, {
 			}),
 			n(TIMEWALKING_HEADER, {
 				i(238740),	-- Distilled Knowledge of Timeways
-				i(238790),	-- Remnant of Azeroth
-				i(238791),	-- Remnant of Azeroth
 				-- New BFA Gear (Might be in dungeons? No azerite versions)
-				i(239023),	-- Amice of the Returned
 				i(239024),	-- Soulfuel Headdress
 				i(239025),	-- Raiment of the Blighted Tribe
 				i(239026),	-- Gorak Tul's Mantle
 				i(239027),	-- Deathslaver's Hauberk
 				i(239028),	-- Soulscarred Headgear
 				i(239029),	-- Breastplate of the Vengeful
-				i(239030),	-- Pauldrons of the Horned Horror
 				i(239031),	-- Brood Cleanser's Amice
 				i(239032),	-- Robes of the Reborn Serpent
 				i(239033),	-- Hood of the Slithering Loa
@@ -52,7 +48,6 @@ root(ROOTS.Unsorted, {
 				i(239058),	-- Gaping Maw Shoulderguard
 				i(239059),	-- Lockjaw Shoulderplate
 				i(239068),	-- Spymaster's Wrap
-				i(239069),	-- Soulspun Casque
 				i(239070),	-- Mantle of Fastidious Machinations
 				i(239071),	-- Secret Spinner's Miter
 				i(239072),	-- Loa Betrayer's Vestments
@@ -66,8 +61,6 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				-- Delves
 				i(242743),	-- Durable Information Securing Container [Trinket]
-				-- Lorewalking
-				i(242386),	-- Lorewalker's Crate of Memorabilia
 				-- Misc
 				i(244848),	-- Severed Threads Commendation
 			}),
@@ -353,154 +346,12 @@ root(ROOTS.Unsorted, {
 				i(243596),	-- Wailing Banshee's Charger
 			}),
 
-			i(242892),	-- Executioner's Bladed Helm
-			i(242893),	-- Executioner's Bladed Pauldrons
-			i(242894),	-- Executioner's Bladed Breastplate
-			i(242895),	-- Executioner's Bladed Waistband
-			i(242896),	-- Executioner's Bladed Gauntlets
-			i(242897),	-- Executioner's Bladed Bracelets
-			i(242898),	-- Executioner's Bladed Legplates
-			i(242899),	-- Executioner's Bladed Sabatons
-			i(242900),	-- Executioner's Bladed Cloak
-			i(242901),	-- Cloak of Torment
-			i(242902),	-- Harness of Torment
-			i(242903),	-- Sandals of Torment
-			i(242904),	-- Gloves of Torment
-			i(242905),	-- Skullcap of Torment
-			i(242906),	-- Leggings of Torment
-			i(242907),	-- Shoulderblades of Torment
-			i(242908),	-- Bracers of Torment
-			i(242909),	-- Cord of Torment
-			i(242910),	-- Staghelm Cloak
-			i(242911),	-- Staghelm Chestguard
-			i(242912),	-- Staghelm Boots
-			i(242913),	-- Staghelm Handguards
-			i(242914),	-- Staghelm Cover
-			i(242915),	-- Staghelm Legguards
-			i(242916),	-- Staghelm Pauldrons
-			i(242917),	-- Staghelm Belt
-			i(242918),	-- Staghelm Bracers
-			i(242920),	-- Life-Binder's Cloak
-			i(242921),	-- Life-Binder's Breastplate
-			i(242922),	-- Life-Binder's Talons
-			i(242923),	-- Life-Binder's Claws
-			i(242924),	-- Life-Binder's Crown
-			i(242925),	-- Life-Binder's Legplates
-			i(242926),	-- Life-Binder's Pauldrons
-			i(242927),	-- Life-Binder's Girdle
-			i(242928),	-- Life-Binder's Vambraces
-			i(242929),	-- Timestalker's Cloak
-			i(242930),	-- Timestalker's Breastplate
-			i(242931),	-- Timestalker's Greaves
-			i(242932),	-- Timestalker's Gauntlets
-			i(242933),	-- Timestalker's Helm
-			i(242934),	-- Timestalker's Legguards
-			i(242935),	-- Timestalker's Spaulders
-			i(242936),	-- Timestalker's Belt
-			i(242937),	-- Timestalker's Bracers
-			i(242938),	-- Emberwind Boots
-			i(242939),	-- Emberwind Gloves
-			i(242940),	-- Emberwind Crown
-			i(242941),	-- Emberwind Pants
-			i(242942),	-- Emberwind Robes
-			i(242943),	-- Emberwind Mantle
-			i(242944),	-- Emberwind Belt
-			i(242945),	-- Emberwind Bindings
-			i(242946),	-- Emberwind Cloak
-			i(242953),	-- Blood Vindicator's Cloak
-			i(242954),	-- Blood Vindicator's Breastplate
-			i(242955),	-- Blood Vindicator's Sabatons
-			i(242956),	-- Blood Vindicator's Gauntlets
-			i(242957),	-- Blood Vindicator's Crown
-			i(242959),	-- Blood Vindicator's Spaulders
-			i(242960),	-- Blood Vindicator's Belt
-			i(242961),	-- Blood Vindicator's Bindings
-			i(242962),	-- Shadowslayer Cloak
-			i(242963),	-- Shadowslayer Chestpiece \\ Shadowslayer Chestpieces
-			i(242964),	-- Shadowslayer Boots
-			i(242965),	-- Shadowslayer Gloves
-			i(242966),	-- Shadowslayer Hood
-			i(242967),	-- Shadowslayer Pants
-			i(242968),	-- Shadowslayer Spaulders
-			i(242969),	-- Shadowslayer Belt
-			i(242970),	-- Shadowslayer Bracers
-			i(242971),	-- Hellfire Boots
-			i(242972),	-- Hellfire Robes
-			i(242973),	-- Hellfire Spaulders
-			i(242974),	-- Hellfire Gloves
-			i(242975),	-- Hellfire Skullcap
-			i(242976),	-- Hellfire Leggings
-			i(242977),	-- Hellfire Belt
-			i(242978),	-- Hellfire Bracers
-			i(242979),	-- Hellfire Cloak
-			i(242990),	-- Grimforged Girdle
-			i(242991),	-- Grimforged Vambraces
-			i(242992),	-- Grimforged Cloak
-			i(242993),	-- Grimforged Breastplate
-			i(242994),	-- Grimforged Sabatons
-			i(242995),	-- Grimforged Gloves
-			i(242996),	-- Grimforged Helm
-			i(242997),	-- Grimforged Leggings
-			i(242998),	-- Grimforged Pauldrons
-			i(244053),	-- Ashvane Smuggler's Kilt
-			i(244054),	-- Ashvane Smuggler's Longcoat
-			i(244055),	-- Ashvane Smuggler's Coat
-			i(244058),	-- Ashvane Smuggler's Pants
-			i(244059),	-- Ashvane Smuggler's Waistband
-			i(244170),	-- Ashvane Smuggler's Waistwrap
-			i(244299),	-- Golden Fleet Tunic
-			i(244301),	-- Golden Fleet Mantle
-			i(244302),	-- Golden Fleet Waistcord
-			i(244303),	-- Golden Fleet Trousers
-			i(244304),	-- Golden Fleet Sea-Kilt
-			i(244305),	-- Golden Fleet Cuff
-			i(244307),	-- Bloodsail Smuggler's Kilt
-			i(244308),	-- Bloodsail Smuggler's Longcoat
-			i(244309),	-- Bloodsail Smuggler's Jacket
-			i(244310),	-- Bloodsail Smuggler's Pants
-			i(244312),	-- Bloodsail Smuggler's Waistband
-			i(244328),	-- Zocalo Merchant's Tunic
-			i(244329),	-- Zocalo Merchant's Mantle
-			i(244330),	-- Zocalo Merchant's Waistcord
-			i(244331),	-- Zocalo Merchant's Trousers
-			i(244332),	-- Zocalo Merchant's Trade-Kilt
-			i(244333),	-- Zocalo Merchant's Cuff
-			i(244371),	-- Boots of Searing Radiance
-			i(244372),	-- Handguards of Searing Radiance
-			i(244373),	-- Halo of Searing Radiance
-			i(244374),	-- Leggings of Searing Radiance
-			i(244375),	-- Robes of Searing Radiance
-			i(244376),	-- Pauldrons of Searing Radiance
-			i(244377),	-- Belt of Searing Radiance
-			i(244378),	-- Bindings of Searing Radiance
-			i(244379),	-- Cloak of Searing Radiance
-			i(244392),	-- Flamelash Cloak
-			i(244393),	-- Flamelash Breastplate
-			i(244394),	-- Flamelash Greaves
-			i(244395),	-- Flamelash Gauntlets
-			i(244396),	-- Flamelash Helmet
-			i(244397),	-- Flamelash Kilt
-			i(244398),	-- Flamelash Legplates
-			i(244399),	-- Flamelash Epaulets
-			i(244400),	-- Flamelash Belt
-			i(244401),	-- Flamelash Bracers
-			i(244412),	-- Death-Touched Cloak
-			i(244413),	-- Death-Touched Vest
-			i(244414),	-- Death-Touched Talons
-			i(244415),	-- Death-Touched Grips
-			i(244416),	-- Death-Touched Helm
-			i(244417),	-- Death-Touched Pants
-			i(244418),	-- Death-Touched Spaulders
-			i(244419),	-- Death-Touched Cord
-			i(244420),	-- Death-Touched Bindings
 			i(246015),	-- Classic Midnight Eye Patch
 			i(246016),	-- Classic Snowy Eye Patch
 			i(246114),	-- Catalyst Elixir
 			i(246127),	-- Healthy Elixir
 			i(246570),	-- Rethfuras, Scorched Stave of Cinders
 			i(246571),	-- Glazfuris, Spire of the Deep Chill
-			i(242958),	-- Blood Vindicator's Legplates
-			i(244447),	-- Blood Vindicator's Greaves
 			i(246730),	-- Landro's Loot Box
 			i(246757),	-- Miniature Roulette Wheel
 			i(246758),	-- Miniature Roulette Wheel
@@ -2661,7 +2512,6 @@ root(ROOTS.Unsorted, {
 				i(158906),	-- Shimmerfin Flesh
 				i(158907),	-- Moonstone Pendant
 				i(158908),	-- Moonstone Weapon
-				i(158918),	-- Bilgewater Patented Flamethrower
 				i(158925),	-- Moonwell Essence
 				i(158933),	-- Depleted Soul Shard
 				i(158934),	-- Empowered Soul Shard
@@ -3031,7 +2881,6 @@ root(ROOTS.Unsorted, {
 
 		-- 8.2.0
 		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
-			i(165668),	-- Azsharan Medallion
 			i(166666),	-- Twisted Kodo Runt Bone
 			i(166845),	-- Glinting Amethyst
 			i(166885),	-- Mark of Azshara

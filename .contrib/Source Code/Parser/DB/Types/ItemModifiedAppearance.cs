@@ -6,7 +6,7 @@ namespace ATT.DB.Types
     /// https://wago.tools/db2/ItemModifiedAppearance
     /// </summary>
     [DataModule]
-    public class ItemModifiedAppearance : IDBType, IWagoItemID
+    public class ItemModifiedAppearance : IDBType, IWagoItemID, IWagoItemModifiedAppearanceID
     {
         [ExportableData("sourceID")]
         public long ID { get; set; }
@@ -17,6 +17,7 @@ namespace ATT.DB.Types
         public long OrderIndex { get; set; }
         public long TransmogSourceTypeEnum { get; set; }
         public long Flags { get; set; }
+        public long ItemModifiedAppearanceID => ID;
 
         private TransmogSourceTypeFlags _flags => (TransmogSourceTypeFlags)Flags;
 

@@ -4561,7 +4561,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 			-- #else
 			["coord"] = { 50.0, 70.0, ARATHI_HIGHLANDS },
-			["cr"] =  2561,	-- Highland Fleshstalker
+			["cr"] = 2561,	-- Highland Fleshstalker
 			["description"] = "Cataclysm messed up with the drop sources for Large Fangs. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
 			-- #endif
 		}),
@@ -4605,9 +4605,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(4402, {	-- Small Flame Sac
 			-- #if AFTER 4.0.3
-			["crs"] = {
-				14398,	-- Eldreth Darter
-			},
+			["cr"] = 14398,	-- Eldreth Darter
 			["description"] = "Cataclysm messed up with the drop sources for Small Flame Sacs. Supposed to drop from small dragonkin like darters and whelps. Eldreth Darters in The Capital Gardens in Dire Maul seems to be the most reliable source.",
 			["maps"] = { DIRE_MAUL },
 			-- #else
@@ -4759,7 +4757,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 86.0, 54.0, DUSKWOOD },	-- By spider cave east of Darkshire
 				{ 77.0, 60.0, DUSKWOOD },	-- Windmill crossroad
 			},
-			["crs"] = { 930 },	-- Black Widow Hatchling
+			["cr"] = 930,	-- Black Widow Hatchling
 			-- #endif
 		}),
 		i(1475, {	-- Small Venom Sac
@@ -4999,12 +4997,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 		}),
 		i(2924, {	-- Crocolisk Meat
-			["coords"] = {
-				{ 54.3, 57.8, LOCH_MODAN },	-- The Loch (southern isle)
-			},
-			["crs"] = {
-				1693,	-- Loch Crocolisk
-			},
+			["coord"] = { 54.3, 57.8, LOCH_MODAN },	-- The Loch (southern isle)
+			["cr"] = 1693,	-- Loch Crocolisk
 			-- #if AFTER BFA
 			["description"] = "Drops from crocolisks in previously lower level vanilla zones like crocolisks in Loch Modan.",
 			-- #elseif AFTER 4.0.3
@@ -5533,9 +5527,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 43.7, 55.3, SOUTHERN_BARRENS },	-- Taurajo, south of.
 				-- #endif
 			},
-			["crs"] = {
-				3240,	-- Stormsnout
-			},
+			["cr"] = 3240,	-- Stormsnout
 			-- #if AFTER BFA
 			["description"] = "Drops from lizards in previously lower intermediate level vanilla zones like Stormsnouts in The Barrens.",
 			-- #elseif AFTER 4.0.3
@@ -5571,9 +5563,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 62.5, 33.8, DUSTWALLOW_MARSH },	-- Southern Dreadmurk Shore
 				{ 61.5, 8.3, DUSTWALLOW_MARSH },	-- Outer Dreadmurk Shore (between murloc isles)
 			},
-			["crs"] = {
-				4397,	-- Mudrock Spikeshell
-			},
+			["cr"] = 4397,	-- Mudrock Spikeshell
 			-- #if AFTER BFA
 			["description"] = "Drops from turtles in previously higher intermediate to highlevel vanilla zones like Mudrock turtles in Dustwallow Marsh.",
 			-- #elseif AFTER 4.0.3

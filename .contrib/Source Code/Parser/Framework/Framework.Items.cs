@@ -1157,6 +1157,17 @@ namespace ATT
                 if (data.ContainsKey("itemID") || (!data.TryGetValue("sourceID", out long sourceID))) return;
 
                 decimal itemID = 0;
+                if (WagoData.TryGetItemModifiedAppearanceAssociations(sourceID, out List<ItemModifiedAppearance> itemModifiedAppearances))
+                {
+                    itemID = itemModifiedAppearances.First().ItemID;
+
+                    if (itemModifiedAppearances.Count == 1)
+                    {
+                        ApplyItemID(itemID, data);
+                        return;
+                    }
+                }
+
                 foreach (KeyValuePair<decimal, long> matchedItemID in SOURCES.GetAllKvps(s => s == sourceID))
                 {
                     // minimum itemID is typically the cleanest match

@@ -1564,16 +1564,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 48110, 48109 },	-- In Case of Ambush & The Woods Have Eyes
 			}),
 			q(50897, {	-- Turn the Heat Around
-				["providers"] = {
-					{"n",135541},	-- Bilgewater Incinerator
-					{"i",158918},	-- Bilgewater Patented Flamethrower
-				},
+				["provider"] = { "i", 158918 },	-- Bilgewater Patented Flamethrower (QS!)
+				["cr"] = 135541,	-- Bilgewater Incinerator
+				["coord"] = { 38.5, 35.5, DRUSTVAR },	-- General area where QS! can be looted
 				["races"] = ALLIANCE_ONLY,
-				["sourceQuests"] = { 50911 },	-- One Man Against the Horde
 				["g"] = {
 					i(158928),	-- Bilgewater Patented Flamethrower (QI!)
 				},
-				-- May have earlier sourceQuest or no prerequisite; needs confirmation.
 				-- Not required for "Drust Do It."
 			}),
 			q(48944, {	-- Unlocking History

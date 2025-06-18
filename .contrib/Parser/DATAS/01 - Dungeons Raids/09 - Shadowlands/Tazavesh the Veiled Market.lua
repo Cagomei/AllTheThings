@@ -63,12 +63,12 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				q(63977, {	-- Insider Trading
 					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
 					["provider"] = { "n", 178908 },	-- Al'dalil
-					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+					["coord"] = { 57.1, 31.1, 1672 },	-- Broker's Den
 				}),
 				q(63979, {	-- Things Best Kept Dark
 					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
 					["provider"] = { "n", 178908 },	-- Al'dalil
-					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+					["coord"] = { 57.1, 31.1, 1672 },	-- Broker's Den
 					["g"] = {
 						i(186182),	-- Cartel So Shipping Manifest (QI!)
 					},
@@ -79,7 +79,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						63979,	-- Things Best Kept Dark
 					},
 					["provider"] = { "n", 178908 },	-- Al'dalil
-					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+					["coord"] = { 57.1, 31.1, 1672 },	-- Broker's Den
 				}),
 				q(63982, {	-- Above My Station
 					["sourceQuests"] = { 63980 },	-- Seeking Smugglers

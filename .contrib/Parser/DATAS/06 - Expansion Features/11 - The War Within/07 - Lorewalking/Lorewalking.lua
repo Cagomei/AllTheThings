@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 LOREWALKING = createHeader({
 	readable = "Lorewalking",
-	icon = [[~_.asset("Feature_Lorewalking")]],
+	icon = [[~_.asset("Feature_Lorewalking")]], -- TODO Not a real asset file
 	text = {
 		en = "Lorewalking",
 	},
@@ -11,7 +11,8 @@ LOREWALKING = createHeader({
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 	n(LOREWALKING, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
-		["groups"] = {
+		["cr"] = 230246,	-- Lorewalker Cho
+		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(42188),	-- Lorewalking: Blade's Bane
 				ach(42187),	-- Lorewalking: Ethereal Wisdom
@@ -19,7 +20,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 			}),
 			n(REWARDS, {
 				i(242386,{	-- Lorewalker's Crate of Memorabilia
-					--TODO: party sync loot
+					["sym"] = {{"select","itemID",171305},{"pop"}},	-- Salvaged Cache of Goods [Party Sync Loot]
 				}),
 			}),
 			n(QUESTS, {
@@ -32,7 +33,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					q(84371, {	-- Lorewalking: The Blade and the High Priest
 						--["sourceQuests"] = { 90705 },	-- Lorewalking
 						["provider"] = { "n", 232441 },	-- Lorewalker Cho
-						["coord"] = { 49.5, 31.6, DORNOGAL },
+						["coords"] = {
+							{ 49.5, 31.6, DORNOGAL },
+							{ 54.5, 57.2, ORGRIMMAR },
+							{ 64.2, 16.1, STORMWIND_CITY },
+						},
 						-- Alex: when I picked up this quest - it flag 40706 & 42074 as completed
 						["g"] = {
 							o(247690, {	-- missing object name
@@ -49,7 +54,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					q(84782, {	-- Lorewalking: The Blade's Past
 						["sourceQuests"] = { 84779 },	-- Lorewalking: The Blade's Gambit
 						["provider"] = { "n", 231891 },	-- Lorewalker Cho
-						["coord"] = { 49.5, 31.6, DORNOGAL },
+						["coords"] = {
+							{ 49.5, 31.6, DORNOGAL },
+							{ 54.5, 57.2, ORGRIMMAR },
+							{ 64.2, 16.1, STORMWIND_CITY },
+						},
 					}),
 					q(85871, {	-- Lorewalking: The Blade's Forces
 						["sourceQuests"] = { 84782 },	-- Lorewalking: The Blade's Past
@@ -78,7 +87,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					q(85027, {	-- Lorewalking: The Protectorate
 						--["sourceQuests"] = { 90705 },	-- Lorewalking
 						["provider"] = { "n", 232441 },	-- Lorewalker Cho
-						["coord"] = { 49.5, 31.6, DORNOGAL },
+						["coords"] = {
+							{ 49.5, 31.6, DORNOGAL },
+							{ 54.5, 57.2, ORGRIMMAR },
+							{ 64.2, 16.1, STORMWIND_CITY },
+						},
 					}),
 					q(85029, {	-- Lorewalking: Locus-Walker
 						["sourceQuests"] = { 85027 },	-- Lorewalking: The Protectorate
@@ -93,7 +106,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					q(85035, {	-- Locus-Walker, Telogrus Ranger
 						["sourceQuests"] = { 85028 },	-- Lorewalking: The Brokers
 						["provider"] = { "n", 234111 },	-- Om'rajula
-						["coord"] = { 49.3, 31.1, DORNOGAL },
+						["coords"] = {
+							{ 49.5, 31.6, DORNOGAL },
+							{ 54.5, 57.2, ORGRIMMAR },
+							{ 64.2, 16.1, STORMWIND_CITY },
+						},
 						["g"] = {
 							i(231831),	-- Ve'nari's Parcel (QI!)
 						},
@@ -112,7 +129,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					q(85884, {	-- Lorewalking: The Prince Who Would Be King
 						--["sourceQuests"] = { 90705 },	-- Lorewalking
 						["provider"] = { "n", 230246 },	-- Lorewalker Cho
-						["coord"] = { 49.5, 31.6, DORNOGAL },
+						["coords"] = {
+							{ 49.5, 31.6, DORNOGAL },
+							{ 54.5, 57.2, ORGRIMMAR },
+							{ 64.2, 16.1, STORMWIND_CITY },
+						},
 					}),
 					q(85862, {	-- A Prince's Duty
 						--["sourceQuests"] = { 85884 },	-- Lorewalking: The Prince Who Would Be King // It is up during this quest, so, tehchically - no source?
@@ -122,7 +143,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					q(85885, {	-- Lorewalking: No King Rules Forever
 						["sourceQuests"] = { 85884 },	-- Lorewalking: The Prince Who Would Be King // 85878 required to complete to turn in quest
 						["provider"] = { "n", 236114 },	-- Lorewalker Cho
-						["coord"] = { 49.6, 31.6, DORNOGAL },
+						["coords"] = {
+							{ 49.5, 31.6, DORNOGAL },
+							{ 54.5, 57.2, ORGRIMMAR },
+							{ 64.2, 16.1, STORMWIND_CITY },
+						},
 						["g"] = {
 							i(245631),	-- Royal Visage (TOY!)
 							i(244858),	-- Lorewalker's Notes: The Lich King (lore)
