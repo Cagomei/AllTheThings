@@ -230,7 +230,6 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
 		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
-
 	i(116439, {	-- Blazing Cindercrawler (PET!)
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { ADDED_6_0_2 },
@@ -247,10 +246,6 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { ADDED_6_0_2 },
 	}),
-	i(206038, {	-- Flamin' Ring of Flashiness (TOY!)
-		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
-		["timeline"] = { ADDED_10_1_0 },
-	}),
 	i(166746, {	-- Fire Eater's Hearthstone (TOY!)
 		["cost"] = { { "i", 23247, 300 } },	-- Burning Blossom
 		["timeline"] = { ADDED_8_1_5 },
@@ -258,6 +253,22 @@ local MERCHANT_GROUPS = {
 	i(188701, {	-- Fire Festival Batons (TOY!)
 		["cost"] = { { "i", 23247, 50 } },	-- Burning Blossom
 		["timeline"] = { ADDED_9_2_0 },
+	}),
+	i(206038, {	-- Flamin' Ring of Flashiness (TOY!)
+		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
+		["timeline"] = { ADDED_10_1_0 },
+	}),
+	i(242742, {	-- Grand Belt of the Fire Festival (COSMETIC!)
+		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["timeline"] = { ADDED_11_1_7 },
+	}),
+	i(242740, {	-- Grand Helm of the Fire Festival (COSMETIC!)
+		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["timeline"] = { ADDED_11_1_7 },
+	}),
+	i(242741, {	-- Grand Mantle of the Fire Festival (COSMETIC!)
+		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["timeline"] = { ADDED_11_1_7 },
 	}),
 	i(74278, {	-- Helm of the Fire Festival
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
@@ -370,8 +381,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			i(117394, {	-- Satchel of Chilled Goods [Epic Quality]
 				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
-					i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
+					i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (MM!)
+						["timeline"] = { ADDED_10_2_7 },
+					}),
+					i(244356, {	-- Crown of the Frost Lord (COSMETIC!)
+						["timeline"] = { ADDED_11_1_7 },
 					}),
 					i(117373, {	-- Frostscythe of Lord Ahune
 						["timeline"] = { ADDED_6_0_2 },
@@ -379,11 +393,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					i(53641, {	-- Frigid Frostling (PET!)
 						["timeline"] = { ADDED_3_3_3 },
 					}),
-					i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (MM!)
-						["timeline"] = { ADDED_10_2_7 },
+					i(244422, {	-- Glazfuris, Scythe of the Deep Chill (COSMETIC!)
+						["timeline"] = { ADDED_11_1_7 },
 					}),
-					hqt(83134, {	-- Increased Cliffside Wylderdrake: Midsummer Fire Festival Armor Droprate (Daily Accountwide)
-						["name"] = "Increased Cliffside Wylderdrake: Midsummer Fire Festival Armor Droprate (Daily Accountwide)",
+					i(246571, {	-- Glazfuris, Spire of the Deep Chill (COSMETIC!)
+						["timeline"] = { ADDED_11_1_7 },
+					}),
+					i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
+					i(244423, {	-- Rethfuras, Scorched Scythe of Cinders (COSMETIC!)
+						["timeline"] = { ADDED_11_1_7 },
+					}),
+					i(246570, {	-- Rethfuras, Scorched Stave of Cinders (COSMETIC!)
+						["timeline"] = { ADDED_11_1_7 },
+					}),
+					hqt(83134, {	-- Increased Midsummer Fire Festival Special Loot Droprate (Daily Accountwide)
+						["name"] = "Increased Midsummer Fire Festival Special Loot Droprate (Daily Accountwide)",
 						["timeline"] = { ADDED_10_2_7 },
 						["isDaily"] = true,
 					}),

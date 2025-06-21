@@ -14,6 +14,7 @@ app.report = function(...)
 	app.print(app.Version..": "..app.L.PLEASE_REPORT_MESSAGE);
 end
 app.PrintMemoryUsage = function(...)
+	collectgarbage()
 	UpdateAddOnMemoryUsage();
 	app.print(... or "Memory", GetAddOnMemoryUsage(appName));
 end

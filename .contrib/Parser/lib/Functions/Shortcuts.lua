@@ -574,7 +574,7 @@ lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
 		end
 	end
 	local lvl;
-	-- #if AFTER SHADOWLANDS
+	-- #if AFTER SL
 	lvl = shadowlandsLvl;
 	-- #elseif AFTER CATA
 	lvl = cataLvl;

@@ -902,7 +902,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		-- #endif
 		i(21525, {	-- Green Winter Hat
 			["maps"] = {
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				-- Castle Nathria
 				1735,	-- The Grand Walk
 				1744,	-- The Purloined Stores
@@ -952,7 +952,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 			},
 			["crs"] = {
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				166969,	-- Baroness Frieda
 				-- #endif
 				-- #if AFTER WOD
@@ -986,7 +986,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 		i(21524, {	-- Red Winter Hat
 			["maps"] = {
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				-- Castle Nathria
 				1735,	-- The Grand Walk
 				1744,	-- The Purloined Stores
@@ -1037,7 +1037,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 			},
 			["crs"] = {
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				166969,	-- Baroness Frieda
 				167406,	-- Sire Denathrius
 				164255,	-- Globgrog
@@ -2331,7 +2331,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(149503, {	-- Stolen Gift
 					["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
 					["timeline"] = { ADDED_7_2_5 },
-					-- #if AFTER SHADOWLANDS
+					-- #if AFTER SL
 					["lvl"] = { 30, 59 },
 					-- #elseif AFTER BFA
 					["lvl"] = { 30, 109 },

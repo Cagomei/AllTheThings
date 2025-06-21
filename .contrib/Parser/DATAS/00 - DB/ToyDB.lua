@@ -1468,3 +1468,14 @@ i(246227);	-- Lightning-Blessed Spire
 i(235016);	-- Redeployment Module
 i(245631);	-- Royal Visage
 i(245942);	-- Sea-Blessed Shrine
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+
+--- UNSORTED ---
+i(245946);	-- Brewer's Balloon
+i(242323);	-- Chowdar's Favorite Ribbon
+i(246565);	-- Cosmic Hearthstone
+i(243056);	-- Delver's Mana-Bound Ethergate
+i(245970);	-- P.O.S.T. Master's Express Hearthstone

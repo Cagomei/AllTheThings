@@ -225,7 +225,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 						43926,	-- Legion: The Legion Returns
 					},
 					["sourceQuestNumRequired"] = 1,
-					-- #if AFTER SHADOWLANDS
+					-- #if AFTER SL
 					["description"] = "This is available to players choosing the Legion Timeline during Chromie Time.",
 					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3, ADDED_9_0_1 },
 					-- TODO: confirm if this can somehow be picked up via Party Sync

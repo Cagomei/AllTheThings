@@ -73,7 +73,9 @@ root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ ["timeline"] = { ADDED_8_2_5 
 				i(173595),	-- Trailseeker Greaves
 				i(173597),	-- Trailseeker Helm
 				i(173598),	-- Trailseeker Legguards
-				i(173599),	-- Trailseeker Spaulders
+				i(173599, {	-- Trailseeker Spaulders
+					["collectible"] = false,	-- Nothing works to collect it. June 20th 2025 -- Goldenshacal
+				}),
 				i(173594),	-- Trailseeker Vest
 			}),
 			cl(MAGE, {

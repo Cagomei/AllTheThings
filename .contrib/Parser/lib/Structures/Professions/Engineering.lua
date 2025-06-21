@@ -813,7 +813,7 @@ NAZJATAR_ENGINEERING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timelin
 		r(294787),	-- Notorious Combatant's Stormsteel Destroyer [Rank 1]
 	}),
 }));
-SL_ENGINEERING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_ENGINEERING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(310542),	-- Shadowlands Engineering
 	n(ARMOR, {
 		r(310507),	-- Articulated Ectoplasmic Specs

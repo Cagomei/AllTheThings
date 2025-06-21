@@ -362,13 +362,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 37087 },	-- Jona Ironstock
 								{ "i", 85174 },	-- Elegant Rune (PQI!)
 							},
-							["coords"] = {
-								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
-								-- #else
-								{ 35.8, 66.2, DUN_MOROGH },
-								-- #endif
-							},
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { MONK },
@@ -1397,7 +1391,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 						i(2787, {	-- Trogg Dagger
 							["crs"] = {
-								-- #if AFTER 4.0.3
+								-- #if AFTER CATA
 								37073,	-- Rockjaw Goon
 								37105,	-- Rockjaw Scavenger
 								-- #else
@@ -1436,7 +1430,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				},
 			}),
-			-- #if AFTER 4.0.3
+			-- #if AFTER CATA
 			m(NEW_TINKERTOWN, {
 				["lore"] = "New Tinkertown is a small town built just outside of Gnomeregan. It is here surviving gnomes teleport to after having escaped their radiated city.",
 				["icon"] = 236445,
@@ -2145,7 +2139,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								26423,	-- Meet the High Tinker (Rogue)
 								26424,	-- Meet the High Tinker (Warlock)
 								26425,	-- Meet the High Tinker (Warrior)
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								31137,	-- Meet the High Tinker (Monk)
 								-- #endif
 								-- #if AFTER 7.0.3
@@ -2273,13 +2267,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31135, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
-							["coords"] = {
-								-- #if AFTER MOP
-								{ 39.5, 38.4, NEW_TINKERTOWN },
-								-- #else
-								{ 26.9, 40.3, DUN_MOROGH },
-								-- #endif
-							},
+							["coord"] = { 39.5, 38.4, NEW_TINKERTOWN },
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MONK },
@@ -2446,7 +2434,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(136),	-- The Grizzled Den
 				exploration(804),	-- The Tundrid Hills
 			}),
-			-- #if AFTER 4.0.3.13277
+			-- #if AFTER CATA
 			n(FLIGHT_PATHS, {
 				fp(620, {	-- Gol'Bolar Quarry, Dun Morogh
 					["cr"] = 43702,	-- Dominic Galebeard <Gryphon Master>
@@ -3476,7 +3464,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				-- #endif
-				-- #if AFTER 4.0.3
+				-- #if AFTER CATA
 				q(6391, {	-- Ride to Ironforge
 					["providers"] = {
 						{ "n", 43701 },	-- Brolan Galebeard

@@ -226,13 +226,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(31139, {	-- Beating Them Back!
 							["qg"] = 197,	-- Marshal McBride
-							["coords"] = {
-								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
-								-- #else
-								{ 48.0, 42.0, ELWYNN_FOREST },
-								-- #endif
-							},
+							["coord"] = { 33.5, 53.1, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { HUMAN, KULTIRAN },
 							["classes"] = { DEATHKNIGHT, DRUID, MONK },
@@ -254,7 +248,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuests"] = {
 								28819,	-- The Rear is Clear (human paladin)
 								28822,	-- The Rear is Clear (human warlock)
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								31145,	-- The Rear is Clear (human monk)
 								-- #endif
 								28821,	-- The Rear is Clear (human rogue)
@@ -358,18 +352,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n",   197 },	-- Marshal McBride
 								{ "i", 85160 },	-- Calligraphed Letter (PQI!)
 							},
-							["coords"] = {
-								-- #if AFTER MOP
-								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
-								-- #else
-								{ 48.0, 42.0, ELWYNN_FOREST },
-								-- #endif
-							},
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
 						}),
-						q(26913, {	-- Charging into Battle
+						q(26913, {	-- Charging into Battle (Human)
 							["qg"] = 911,	-- Llane Beshere <Warrior Trainer>
 							["sourceQuest"] = 3100,	-- Simple Letter
 							["coords"] = {
@@ -407,8 +395,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PALADIN },
 							["races"] = { HUMAN },
 						}),
-						-- #if AFTER 5.0.4
-						q(26914, {	-- Corruption [MOP] / Immolation [CATA]
+						-- #if AFTER MOP
+						q(26914, {	-- Corruption [MoP+] / Immolation [Cata] (Human)
 							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
 							["sourceQuest"] = 3105,	-- Tainted Letter
 							["coords"] = {
@@ -519,7 +507,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuests"] = {
 								28819,	-- The Rear is Clear (human paladin)
 								28822,	-- The Rear is Clear (human warlock)
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								31145,	-- The Rear is Clear (human monk)
 								-- #endif
 								28821,	-- The Rear is Clear (human rogue)
@@ -869,17 +857,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 						}),
-						-- #if BEFORE 5.0.4
-						q(26919, {	-- Healing the Wounded [CATA] / Learning the Word [MOP]
+						-- #if BEFORE MOP
+						q(26919, {	-- Healing the Wounded [Cata] / Learning the Word [MoP+] (Human)
 							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
 							["sourceQuest"] = 3103,	-- Hallowed Letter
-							["coords"] = {
-								-- #if AFTER MOP
-								{ 39.2, 44.0, NORTHSHIRE_VALLEY },
-								-- #else
-								{ 49.8, 39.4, ELWYNN_FOREST },
-								-- #endif
-							},
+							["coord"] = { 49.8, 39.4, ELWYNN_FOREST },
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
@@ -889,7 +871,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
-						q(26914, {	-- Immolation [CATA] / Corruption [MOP]
+						q(26914, {	-- Immolation [Cata] / Corruption [MoP+] (Human)
 							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
 							["sourceQuest"] = 3105,	-- Tainted Letter
 							["coords"] = {
@@ -1052,15 +1034,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31143, {	-- Join the Battle!
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 31140,	-- Lions for Lambs
-							["coords"] = {
-								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
-								-- #else
-								{ 48.0, 42.0, ELWYNN_FOREST },
-								-- #endif
-							},
+							["coord"] = { 33.5, 53.1, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_5_0_4 },
-							["races"] = { KULTIRAN, HUMAN },
+							["races"] = { HUMAN, KULTIRAN },
 							["classes"] = { DRUID, MONK },
 						}),
 						q(7, {	-- Kobold Camp Cleanup
@@ -1074,17 +1050,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
-						-- #if AFTER 5.0.4
-						q(26919, {	-- Learning the Word [MOP] / Healing the Wounded [CATA]
+						-- #if AFTER MOP
+						q(26919, {	-- Learning the Word [MoP+] / Healing the Wounded [Cata] (Human)
 							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
 							["sourceQuest"] = 3103,	-- Hallowed Letter
-							["coords"] = {
-								-- #if AFTER MOP
-								{ 39.2, 44.0, NORTHSHIRE_VALLEY },
-								-- #else
-								{ 49.8, 39.4, ELWYNN_FOREST },
-								-- #endif
-							},
+							["coord"] = { 39.2, 44.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
@@ -1243,13 +1213,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31140, {	-- Lions for Lambs
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 31139,	-- Beating Them Back!
-							["coords"] = {
-								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
-								-- #else
-								{ 48.0, 42.0, ELWYNN_FOREST },
-								-- #endif
-							},
+							["coord"] = { 33.5, 53.1, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { HUMAN, KULTIRAN },
 							["classes"] = { DEATHKNIGHT, DRUID, MONK },
@@ -1259,7 +1223,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
 								i(57387, {	-- Spymaster's Legs
-									["timeline"] = { ADDED_4_0_3 },
+									["timeline"] = { ADDED_5_0_4 },
 								}),
 							},
 						}),
@@ -1309,7 +1273,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
-						q(26916, {	-- Mastering the Arcane
+						q(26916, {	-- Mastering the Arcane (Human)
 							["qg"] = 198,	-- Khelden Bremen <Mage Trainer>
 							["sourceQuest"] = 3104,	-- Glyphic Letter
 							["coords"] = {
@@ -1323,7 +1287,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
 							["groups"] = {
-								objective(1, {	-- Practice Frost Nova
+								objective(1, {	-- Practice Casting Arcane Missiles [Cata] / Practice Frost Nova [MoP+]
 									["provider"] = { "n", 44548 },	-- Training Dummy
 								}),
 							},
@@ -1409,10 +1373,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 745 },	-- Marshal McBride's Documents (PQI!)
 							},
 							["sourceQuests"] = {
-								-- #if BEFORE CATA
-								21,	-- Skirmish at Echo Ridge
-								-- #else
+								-- #if AFTER CATA
 								26390,	-- Ending the Invasion
+								-- #else
+								21,		-- Skirmish at Echo Ridge
 								-- #endif
 							},
 							["coords"] = {
@@ -1602,7 +1566,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 						}),
-						q(26915, {	-- The Deepest Cut
+						q(26915, {	-- The Deepest Cut (Human)
 							["qg"] = 915,	-- Jorik Kerridan <Rogue Trainer>
 							["sourceQuest"] = 3102,	-- Encrypted Letter
 							["coords"] = {
@@ -1661,7 +1625,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						})),
 						-- #endif
-						q(26918, {	-- The Power of the Light
+						q(26918, {	-- The Power of the Light (Human)
 							["qg"] = 925,	-- Brother Sammuel <Paladin Trainer>
 							["sourceQuest"] = 3101,	-- Consecrated Letter
 							["coords"] = {
@@ -1675,7 +1639,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PALADIN },
 							["races"] = { HUMAN },
 							["groups"] = {
-								objective(1, {	-- Practice Seal of Command
+								objective(1, {	-- Practice using Judgement [Cata] / Practice Seal of Command [MoP+]
 									["provider"] = { "n", 44548 },	-- Training Dummy
 								}),
 							},
@@ -1711,13 +1675,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31145, {	-- The Rear is Clear
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 31144,	-- They Sent Assassins
-							["coords"] = {
-								-- #if AFTER MOP
-								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
-								-- #else
-								{ 48.8, 38.4, ELWYNN_FOREST },
-								-- #endif
-							},
+							["coord"] = { 35.7, 39.8, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { HUMAN, KULTIRAN },
 							["classes"] = { DRUID, MONK },
@@ -1846,15 +1804,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31144, {	-- They Sent Assassins
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 31143,	-- Join the Battle!
-							["coords"] = {
-								-- #if AFTER MOP
-								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
-								-- #else
-								{ 48.8, 38.4, ELWYNN_FOREST },
-								-- #endif
-							},
+							["coord"] = { 35.7, 39.8, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_5_0_4 },
-							["races"] = { KULTIRAN, HUMAN },
+							["races"] = { HUMAN, KULTIRAN },
 							["classes"] = { DRUID, MONK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
@@ -2458,7 +2410,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 41.7, 64.6, ELWYNN_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
-					["races"] = { KULTIRAN, HUMAN },
+					["races"] = { HUMAN, KULTIRAN },
 				}),
 				q(1667, {	-- Dead-tooth Jack
 					["qg"] = 294,	-- Marshal Haggard
@@ -2516,7 +2468,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
 					["lvl"] = 10,
-					-- #if BEFORE 3.0.2
+					-- #if BEFORE WRATH
 					["groups"] = {
 						{
 							["recipeID"] = 13908,	-- Desperate Prayer (Rank 1)
@@ -2890,7 +2842,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
-					-- #if BEFORE 3.0.2
+					-- #if BEFORE WRATH
 					["groups"] = {
 						{
 							["recipeID"] = 10797,	-- Starshards (Rank 1)
@@ -3724,7 +3676,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			})),
 			-- #endif
 			n(ZONE_DROPS, {
-				-- #if BEFORE 4.0.3
+				-- #if BEFORE CATA
 				i(769),	-- Chunk of Boar Meat
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY

@@ -728,6 +728,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
+			["groups"] = {
+				i(164772),	-- Kul Tiran Orphan Whistle
+			},
 		}),
 		q(10942, {	-- Children's Week [Horde - Blood Elf - START]
 			["qg"] = 22819,	-- Orphan Matron Mercy

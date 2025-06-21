@@ -344,7 +344,7 @@ COMMON_CATACLYSM_TAILORING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedDat
 	}),
 	-- #endif
 }));
-SL_TAILORING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_TAILORING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(310949),	-- Shadowlands Tailoring
 	r(343634, {	-- Shadowlands Cloth Scavenging
 		["collectible"] = false,

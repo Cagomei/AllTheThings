@@ -1155,7 +1155,7 @@ NAZJATAR_LEATHERWORKING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["time
 		r(294826),	-- Notorious Combatant's Bow [Rank 1]
 	}),
 }));
-SL_LEATHERWORKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_LEATHERWORKING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309038),	-- Shadowlands Leatherworking
 	n(ARMOR, {
 		r(309213, {	-- Boneshatter Armguards [Rank 1]

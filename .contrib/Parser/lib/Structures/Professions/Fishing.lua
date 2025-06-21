@@ -132,7 +132,7 @@ LEGION_FISHING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] =
 	applyclassicphase(BFA_PHASE_ONE, r(271990, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 }));
-SL_FISHING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_FISHING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(310675),	-- Shadowlands Fishing
 	r(271990),	-- Fishing Journal
 	r(7738),	-- Fishing Poles

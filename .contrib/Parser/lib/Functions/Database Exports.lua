@@ -209,7 +209,7 @@ for i,mapID in ipairs({
 	1014,	-- Kul Tiras
 	1504,	-- Nazjatar
 	-- #endif
-	-- #if AFTER SHADOWLANDS
+	-- #if AFTER SL
 	1647,	-- The Shadowlands
 	1409,	-- Exile's Reach
 	2046,	-- Zereth Mortis

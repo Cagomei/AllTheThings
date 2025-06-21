@@ -601,7 +601,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			-- #endif
 			["timeline"] = { ADDED_2_0_1 },
 			["isDaily"] = true,
-			-- #if AFTER SHADOWLANDS
+			-- #if AFTER SL
 			["lvl"] = 20,
 			-- #elseif AFTER WRATH
 			["lvl"] = 75,
@@ -1680,7 +1680,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
-					-- #if AFTER SHADOWLANDS
+					-- #if AFTER SL
 					["lvl"] = 20,
 					-- #elseif AFTER WRATH
 					["lvl"] = 75,
@@ -1694,7 +1694,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
-					-- #if AFTER SHADOWLANDS
+					-- #if AFTER SL
 					["lvl"] = 20,
 					-- #elseif AFTER WRATH
 					["lvl"] = 75,

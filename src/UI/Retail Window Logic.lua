@@ -31,6 +31,7 @@ local GetRelativeValue = app.GetRelativeValue
 local SearchForField, SearchForObject = app.SearchForField, app.SearchForObject
 local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
 local GetUnobtainableTexture = app.GetUnobtainableTexture
+local wipearray = app.wipearray
 
 app.Windows = {};
 
@@ -371,40 +372,42 @@ local function GetTrackableIcon(data, iconOnly, forSaved)
 		end
 	end
 end
+local __Text = {}
 local function GetProgressTextForRow(data)
 	-- build the row text from left to right with possible info
-	local text = {}
 	-- Reagent (show reagent icon)
+	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
+	wipearray(__Text)
 	local icon = GetReagentIcon(data, true);
 	if icon then
-		text[#text + 1] = icon
+		__Text[#__Text + 1] = icon
 	end
 	-- Cost (show cost icon)
 	icon = GetCostIconForRow(data, true);
 	if icon then
-		text[#text + 1] = icon
+		__Text[#__Text + 1] = icon
 	end
 	-- Upgrade (show upgrade icon)
 	icon = GetUpgradeIconForRow(data, true);
 	if icon then
-		text[#text + 1] = icon
+		__Text[#__Text + 1] = icon
 	end
 	-- Progress Achievement
 	local statistic = data.statistic
 	if statistic then
-		text[#text + 1] = "["..statistic.."]"
+		__Text[#__Text + 1] = "["..statistic.."]"
 	end
 	-- Collectible
 	local stateIcon = GetCollectibleIcon(data, true)
 	if stateIcon then
-		text[#text + 1] = stateIcon
+		__Text[#__Text + 1] = stateIcon
 	end
 	-- Container
 	local total = data.total;
 	local isContainer = total and (total > 1 or (total > 0 and not data.collectible));
 	if isContainer then
 		local textContainer = GetProgressColorText(data.progress or 0, total)
-		text[#text + 1] = textContainer
+		__Text[#__Text + 1] = textContainer
 	end
 	-- Non-collectible/total Container (only contains visible, non-collectibles...)
 	local g = data.g;
@@ -415,50 +418,51 @@ local function GetProgressTextForRow(data)
 		else
 			headerText = "+++";
 		end
-		text[#text + 1] = headerText
+		__Text[#__Text + 1] = headerText
 	end
 
 	-- Trackable (Only if no other text available)
-	if #text == 0 then
+	if #__Text == 0 then
 		stateIcon = GetTrackableIcon(data, true)
 		if stateIcon then
-			text[#text + 1] = stateIcon
+			__Text[#__Text + 1] = stateIcon
 		end
 	end
 
-	return app.TableConcat(text, nil, "", " ");
+	return app.TableConcat(__Text, nil, "", " ");
 end
 app.GetProgressTextForRow = GetProgressTextForRow;
 
 local function GetProgressTextForTooltip(data)
 	-- build the row text from left to right with possible info
-	local text = {}
+	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
+	wipearray(__Text)
 	local iconOnly = app.Settings:GetTooltipSetting("ShowIconOnly");
 	-- Reagent (show reagent icon)
 	local icon = GetReagentIcon(data, iconOnly);
 	if icon then
-		text[#text + 1] = icon
+		__Text[#__Text + 1] = icon
 	end
 	-- Cost (show cost icon)
 	icon = GetCostIconForTooltip(data, iconOnly);
 	if icon then
-		text[#text + 1] = icon
+		__Text[#__Text + 1] = icon
 	end
 	-- Upgrade (show upgrade icon)
 	icon = GetUpgradeIconForTooltip(data, iconOnly);
 	if icon then
-		text[#text + 1] = icon
+		__Text[#__Text + 1] = icon
 	end
 	-- Collectible
 	local stateIcon = GetCollectibleIcon(data, iconOnly)
 	if stateIcon then
-		text[#text + 1] = stateIcon
+		__Text[#__Text + 1] = stateIcon
 	end
 	-- Saved (only certain data types)
 	if data.npcID then
 		stateIcon = GetTrackableIcon(data, iconOnly, true)
 		if stateIcon then
-			text[#text + 1] = stateIcon
+			__Text[#__Text + 1] = stateIcon
 		end
 	end
 	-- Container
@@ -467,43 +471,47 @@ local function GetProgressTextForTooltip(data)
 	if isContainer then
 		local textContainer = GetProgressColorText(data.progress or 0, total)
 		if textContainer then
-			text[#text + 1] = textContainer
+			__Text[#__Text + 1] = textContainer
 		end
 	end
 
 	-- Trackable (Only if no other text available)
-	if #text == 0 then
+	if #__Text == 0 then
 		stateIcon = GetTrackableIcon(data, iconOnly)
 		if stateIcon then
-			text[#text + 1] = stateIcon
+			__Text[#__Text + 1] = stateIcon
 		end
 	end
 
-	return app.TableConcat(text, nil, "", " ");
+	return app.TableConcat(__Text, nil, "", " ");
 end
 app.GetProgressTextForTooltip = GetProgressTextForTooltip
 
+local __Summary = {}
 local function BuildDataSummary(data)
-	local summary = {}
+	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
+	wipearray(__Summary)
 	local requireSkill = data.requireSkill
 	if requireSkill then
 		local profIcon = GetTradeSkillTexture(requireSkill)
 		if profIcon then
-			summary[#summary + 1] = "|T"..profIcon..":0|t "
+			__Summary[#__Summary + 1] = "|T"
+			__Summary[#__Summary + 1] = profIcon
+			__Summary[#__Summary + 1] = ":0|t "
 		end
 	end
 	-- TODO: races
 	local specs = data.specs;
 	if specs and #specs > 0 then
-		summary[#summary + 1] = GetSpecsString(specs, false, false)
+		__Summary[#__Summary + 1] = GetSpecsString(specs, false, false)
 	else
 		local classes = data.c
 		if classes and #classes > 0 then
-			summary[#summary + 1] = GetClassesString(classes, false, false)
+			__Summary[#__Summary + 1] = GetClassesString(classes, false, false)
 		end
 	end
-	summary[#summary + 1] = GetProgressTextForRow(data) or "---"
-	return app.TableConcat(summary, nil, "", "")
+	__Summary[#__Summary + 1] = GetProgressTextForRow(data) or "---"
+	return app.TableConcat(__Summary, nil, "", "")
 end
 local function SetRowData(self, row, data)
 	ClearRowData(row);

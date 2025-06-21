@@ -290,7 +290,6 @@ r(257135),	-- Battle Flag: Phalanx Defense
 r(257137),	-- Battle Flag: Rallying Swiftness
 r(257138),	-- Battle Flag: Rallying Swiftness
 r(257141),	-- Pet - Hot Air Balloon (DNT)
-r(264616),	-- Tailoring
 r(264618),	-- Outland Tailoring
 r(264620),	-- Northrend Tailoring
 r(264622),	-- Cataclysm Tailoring
@@ -352,11 +351,6 @@ r(304577),	-- Uncanny Combatant's Satin Belt
 r(304580),	-- Uncanny Combatant's Satin Bracers
 r(307175),	-- Void Focus
 9.0.1.34199
-r(330222),	-- Relic of the Past I
-r(330223),	-- Relic of the Past II
-r(330224),	-- Relic of the Past III
-r(330225),	-- Relic of the Past IV
-r(330226),	-- Relic of the Past V
 r(330227),	-- Relic of the Past I
 r(330228),	-- Relic of the Past II
 r(330229),	-- Relic of the Past III
@@ -392,11 +386,17 @@ r(330258),	-- Relic of the Past II
 r(330259),	-- Relic of the Past III
 r(330260),	-- Relic of the Past IV
 r(330261),	-- Relic of the Past V
+11.2.0.61476
+r(1228338),	-- Pure Energizing Fiber
+r(1228342),	-- Pure Precise Fiber
+r(1228343),	-- Pure Dexterous Fiber
+r(1228344),	-- Pure Chronomatic Fiber
 
 
 
 
 Missing in Tailoring
+
 3.0.1.8874
 r(56017),	-- Deathchill Cloak
 r(56048),	-- Duskweave Boots
@@ -427,3 +427,8 @@ r(202853),	-- Silkweave Bandage
 r(202854),	-- Silkweave Splint
 r(267201),	-- Tidespray Linen Bandage \\ Sun-Bleached Linen Bandage
 r(267202),	-- Deep Sea Bandage
+11.2.0.61476
+r(1228338),	-- Pure Energizing Fiber
+r(1228342),	-- Pure Precise Fiber
+r(1228343),	-- Pure Dexterous Fiber
+r(1228344),	-- Pure Chronomatic Fiber

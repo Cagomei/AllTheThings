@@ -1229,7 +1229,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO = createClassicPhase({
 	text = {
 		en = "Sanctum",
 		es = "Santuario",
-		mx = "Santuario",		
+		mx = "Santuario",
 	},
 	description = {
 		en = "This was not available until the Sanctum on the Isle of Quel'Danas was completed.",
@@ -1859,9 +1859,9 @@ CurrentClassicExpansion = {
 		-- #endif
 	},
 };
-SHADOWLANDS_PHASE_ONE = 90;
-SHADOWLANDS_PHASE_TWO = 91;
-SHADOWLANDS_PHASE_THREE = 92;
+SL_PHASE_ONE = 90;
+SL_PHASE_TWO = 91;
+SL_PHASE_THREE = 92;
 
 
 

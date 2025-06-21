@@ -27,7 +27,7 @@ root(ROOTS.BlackMarket, {
 			["coord"] = { 71.37, 17.93, LEGION_THE_UNDERBELLY },
 		}),
 		-- #ENDIF
-		-- #IF BEFORE SHADOWLANDS
+		-- #if BEFORE SL
 		n(142062, {	-- Madam Gosu [Boralus - Alliance]
 			["coord"] = { 56.71, 46.32, BORALUS },
 		}),

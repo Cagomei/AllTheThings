@@ -2680,7 +2680,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				-- #IF AFTER SHADOWLANDS
+				-- #if AFTER SL
 				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>
 					["coord"] = { 29.4, 66.1, AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },

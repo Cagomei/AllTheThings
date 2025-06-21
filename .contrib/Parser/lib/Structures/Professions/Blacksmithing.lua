@@ -1082,7 +1082,7 @@ NAZJATAR_BLACKSMITHING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timel
 		r(294772),	-- Notorious Combatant's Spellblade [Rank 1]
 	}),
 }));
-SL_BLACKSMITHING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_BLACKSMITHING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309827),	-- Shadowlands Blacksmithing
 	n(ARMOR, {
 		r(307670),	-- Ceremonious Armguards

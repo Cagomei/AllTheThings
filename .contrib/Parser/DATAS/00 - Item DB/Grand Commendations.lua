@@ -446,3 +446,4 @@ h(i(238820, FACTION_THE_UNSHACKLED));		-- Commendation of the Unshackled [300 Re
 h(i(238817, FACTION_VOLDUNAI));				-- Commendation of the Voldunai [300 Rep]
 a(i(238809, FACTION_WAVEBLADE_ANKOAN));		-- Commendation of the Waveblade Ankoan [300 Rep]
 h(i(238818, FACTION_ZANDALARI_EMPIRE));		-- Commendation of the Zandalari Empire [300 Rep]
+i(244848, FACTION_THE_SEVERED_THREADS);		-- Severed Threads Commendation [100 rep with choice of three subreps.] Not technically correct to apply metafaction but is close while only one rep may be attached.

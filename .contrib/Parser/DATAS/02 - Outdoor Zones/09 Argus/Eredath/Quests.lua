@@ -59,7 +59,10 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["provider"] = { "n", 121597 },	-- Locus-Walker
 				["coord"] = { 32.0, 37.4, EREDATH },
 				["g"] = {
-					i(151088),	-- Heart of Nhal'athoth (QI!)
+					o(273833, {	-- Heart of Nhal'athoth
+						["coord"] = { 26.6, 45.0, EREDATH },
+						["g"] = { i(151088) },	-- Heart of Nhal'athoth (QI!)
+					}),
 				},
 			}),
 			q(48654, {	-- Beneath Oronaar

@@ -62,7 +62,7 @@ end
 app.CreateIllusion = app.CreateClass(CLASSNAME, KEY, illusionFields,
 "WithItem", {
 	ImportFrom = "Item",
-	ImportFields = { "name", "link", "icon", "tsm", "costCollectibles" },
+	ImportFields = app.IsRetail and { "name", "link", "icon", "tsm", "costCollectibles" } or { "name", "link", "icon", "tsm" },
 	text = function(t)
 		-- triggering the Item's Link logic will ensure it is refreshed properly from server
 		if not t.link then return end

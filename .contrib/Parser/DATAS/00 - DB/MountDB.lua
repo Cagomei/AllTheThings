@@ -1452,8 +1452,6 @@ i(186179, 348769);	-- Vicious War Gorm [H]
 i(186000, 352441);	-- Wild Hunt Legsplitter
 i(186495, 353858);	-- Winter Wilderling
 --- NYI ---
-i(186639, 353264);	-- Pilfered Gearglider
-i(186640, 353265);	-- Silver Gearglide
 i(186491, 353860);	-- Spring Wilderling
 i(187412, 0);		-- Shardhide Ka-Sha
 
@@ -2078,3 +2076,44 @@ i(243591, 1235803);	-- Grandmaster's Royal Board
 i(243592, 1235806);	-- Grandmaster's Smokey Board
 i(245936, 1240003);	-- Unarmored Deathtusk Felboar
 i(243596, 1235819);	-- Wailing Banshee's Charger
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+i(248248, 1246781);	-- Azure Void Flyer
+i(247822, 1245517);	-- Scarlet Void Flyer
+--- UNSORTED ---
+i(0, 1233547);	-- Acidic Void Creeper
+i(247792, 1245358);	-- Akil'darah Windscarred
+i(0, 472157);	-- Astral Gladiator's Fel Bat
+i(242733, 1233559);	-- Blue Barry
+i(248761, 1247662);	-- Brewfest Barrel Bomber
+i(246919, 1244259);	-- Cinder-seared Elekk
+i(242734, 1233561);	-- Curious Slateback
+i(247794, 1245361);	-- Darkfeather Eclipse
+i(238051, 1224048);	-- Delver's Mana-Skimmer
+i(242717, 1233518);	-- Lavender K'arroc
+i(246921, 1244261);	-- Legion Forged Elekk
+i(247793, 1245359);	-- Ohn'ahran Windborne
+i(247795, 1245370);	-- Ornery Breezestrider
+i(246067, 1240632);	-- Pearlescent Krolusk
+i(242713, 1221132);	-- Resplendent K'arroc
+i(0, 1242272);	-- Royal Voidwing
+i(0, 1233546);	-- Ruby Void Creeper
+i(246160, 1241076);	-- Sthaarbs's Last Lunch
+i(0, 1223191);	-- Terror of the Night
+i(0, 1223187);	-- Terror of the Wastes
+i(247722, 1245202);	-- The Headless Horseman's Burning Charger
+i(247720, 1245197);	-- The Headless Horseman's Chilling Charger
+i(247723, 1245205);	-- The Headless Horseman's Ghostly Charger
+i(247721, 1245198);	-- The Headless Horseman's Ghoulish Charger
+i(246917, 1244247);	-- Thunder-ridged Elekk
+i(246159, 1241070);	-- Translocated Gorger
+i(0, 1233511);	-- Umbral K'arroc
+i(243061, 1234573);	-- Unbound Star-Eater
+i(186640, 353265);	-- Vandal's Gearglider
+i(0, 1234820);	-- Vicious Void Creeper [A]
+i(0, 1234821);	-- Vicious Void Creeper [H]
+i(246920, 1244260);	-- Void-Razed Elekk
+i(247791, 1245357);	-- Windmaster's Battlesworn
+i(186639, 353264);	-- Xy Trustee's Gearglider

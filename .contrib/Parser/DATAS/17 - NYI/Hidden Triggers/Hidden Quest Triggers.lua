@@ -66,6 +66,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(29380),	-- FLAG - Teleport to Firelands
 		q(29381),	-- FLAG - Teleport to Hyjal
 		q(29395),	-- FLAG - Teleport to Uldum
+		q(25016),	-- FLAG - Training Complete - Triggered when doing one of lvl 3 class quests in Deathknell
 		q(29286),	-- Druid Tree, Stage 2 Tracking
 		q(29291),	-- triggered with Peaked Interest 29287
 		q(29292),	-- triggered with Peaked Interest 29287
@@ -360,12 +361,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(47332),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49766),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49767),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
-		-- 58013 triggered randomly during a Black Empire assault in uldum
-		-- also triggered when looting the "Grimoire of the Other Side" as horde during "Spirits' belongings"
-		-- also triggers when repairing the mirror by Charred Ramparts for the Venthyr mirror repair dailies...
-		-- 58013 ALSO triggered after my first time killing Honey Smasher, but that also popped for me while doing the Alliance war campaign "This Ain't Mine."  so wtf lol
-		-- also triggered while killing mobs for Dog Bone's Bone in Maldraxxus (05/11/22)
-		-- 58013 triggered while killing first pack of the mobs in Freehold (02/01/25)
 		q(51722),	-- triggers when completing "Uniting Kul Tiras" (Alliance WQ unlock).  Completing one triggers all 4 WQ unlock quests (main/alt quests for both Alliance and Horde)
 		q(51973),	-- looting chest with resources after Lost Caravan event in Battle for Stormgarde
 		q(54526),	-- triggered along with 54636 when looting Gorilla Bot Loot during Vol'dun invasion

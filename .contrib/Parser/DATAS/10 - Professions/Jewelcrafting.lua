@@ -6243,7 +6243,7 @@ itemrecipe("Design: Stalwart Monarch Topaz", 41779, 53992, 53992, REMOVED_WITH_C
 
 -- #endif
 
--- #if AFTER SHADOWLANDS
+-- #if AFTER SL
 
 -- #endif
 

@@ -3803,10 +3803,18 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(41856),	-- Faceless Mask of the Pained
 			ach(41884),	-- Faceless Mask of Vengeance
 			ach(41885),	-- Faceless Mask of Multitudes
-			ach(41930),	-- Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)
-			ach(41938),	-- Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)
-			ach(41946),	-- Greater Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)
-			ach(41947),	-- Greater Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)
+			ach(41930, {	-- Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)
+				["timeline"] = { REMOVED_11_2_0 },
+			}),
+			ach(41938, {	-- Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)
+				["timeline"] = { REMOVED_11_2_0 },
+			}),
+			ach(41946, {	-- Greater Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)
+				["timeline"] = { REMOVED_11_2_0 },
+			}),
+			ach(41947, {	-- Greater Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)
+				["timeline"] = { REMOVED_11_2_0 },
+			}),
 			ach(41967),	-- Gift of the Titans Unlocked <Hidden>
 			-- 11.1.5.59651
 			ach(41986),	-- Highest Score
@@ -3847,6 +3855,85 @@ root(ROOTS.HiddenAchievementTriggers, {
 
 			-- 11.1.7.60672
 			ach(42240),	-- Anu'relos, Flame's Guidance <Tracking Achievement>
+		})),
+
+		-- 11.2.0
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
+			-- 11.2.0.61476
+			ach(41633),	-- Plexus Sentinel (Raid Finder Manaforge Omega)
+			ach(41634),	-- Plexus Sentinel (Normal Manaforge Omega)
+			ach(41635),	-- Plexus Sentinel (Heroic Manaforge Omega)
+			ach(41636),	-- Plexus Sentinel (Mythic Manaforge Omega)
+			ach(41637),	-- Loom'ithar (Raid Finder Manaforge Omega)
+			ach(41638),	-- Loom'ithar (Normal Manaforge Omega)
+			ach(41639),	-- Loom'ithar (Heroic Manaforge Omega)
+			ach(41640),	-- Loom'ithar (Mythic Manaforge Omega)
+			ach(41641),	-- Soulbinder Naazindhri (Raid Finder Manaforge Omega)
+			ach(41642),	-- Soulbinder Naazindhri (Normal Manaforge Omega)
+			ach(41643),	-- Soulbinder Naazindhri (Heroic Manaforge Omega)
+			ach(41644),	-- Soulbinder Naazindhri (Mythic Manaforge Omega)
+			ach(41645),	-- Forgeweaver Araz (Raid Finder Manaforge Omega)
+			ach(41646),	-- Forgeweaver Araz (Normal Manaforge Omega)
+			ach(41647),	-- Forgeweaver Araz (Heroic Manaforge Omega)
+			ach(41648),	-- Forgeweaver Araz (Mythic Manaforge Omega)
+			ach(41649),	-- The Soul Hunters (Raid Finder Manaforge Omega)
+			ach(41650),	-- The Soul Hunters (Normal Manaforge Omega)
+			ach(41651),	-- The Soul Hunters (Heroic Manaforge Omega)
+			ach(41652),	-- The Soul Hunters (Mythic Manaforge Omega)
+			ach(41653),	-- Fractillus (Raid Finder Manaforge Omega)
+			ach(41654),	-- Fractillus (Normal Manaforge Omega)
+			ach(41655),	-- Fractillus (Heroic Manaforge Omega)
+			ach(41656),	-- Fractillus (Mythic Manaforge Omega)
+			ach(41657),	-- Nexus-King Salhadaar (Raid Finder Manaforge Omega)
+			ach(41658),	-- Nexus-King Salhadaar (Normal Manaforge Omega)
+			ach(41659),	-- Nexus-King Salhadaar (Heroic Manaforge Omega)
+			ach(41660),	-- Nexus-King Salhadaar (Mythic Manaforge Omega)
+			ach(41661),	-- Dimensius, the All-Devouring (Raid Finder Manaforge Omega)
+			ach(41662),	-- Dimensius, the All-Devouring (Normal Manaforge Omega)
+			ach(41663),	-- Dimensius, the All-Devouring (Heroic Manaforge Omega)
+			ach(41664),	-- Dimensius, the All-Devouring (Mythic Manaforge Omega)
+			ach(41758),	-- Player has collected 1 Ethereal Strand
+			ach(41759),	-- Player has collected 2 Ethereal Strand
+			ach(41760),	-- Player has collected 3 Ethereal Strand
+			ach(41761),	-- Player has collected 4 Ethereal Strand
+			ach(41762),	-- Player has collected 5 Ethereal Strand
+			ach(41763),	-- Player has collected 6 Ethereal Strand
+			ach(41764),	-- Player has collected 7 Ethereal Strand
+			ach(41765),	-- Player has collected 8 Ethereal Strand
+			ach(41766),	-- Player has collected 9 Ethereal Strand
+			ach(41767),	-- Player has collected 10 Ethereal Strand
+			ach(41768),	-- Player has collected 11 Ethereal Strand
+			ach(41769),	-- Player has collected 12 Ethereal Strand
+			ach(41770),	-- Player has collected 13 Ethereal Strand
+			ach(41771),	-- Player has collected 14 Ethereal Strand
+			ach(41772),	-- Player has collected 15 Ethereal Strand
+			ach(41773),	-- Player has collected 16 Ethereal Strand
+			ach(41774),	-- Player has collected 17 Ethereal Strand
+			ach(41775),	-- Player has collected 18 Ethereal Strand
+			ach(41792),	-- <DNT> Completed EcoFriendly Quest Once
+			ach(41984),	-- Dastardly Duos Highest Score
+			ach(42123),	-- Vicious Saddle (42)
+			ach(42124),	-- Vicious Saddle (42)
+			ach(42195),	-- [HIDDEN] Renown 15 with Manaforge Vandals / Teach Raid Teleport Spell
+			ach(42700),	-- Archival Assault clears
+			ach(42783),	-- Soul-Scribe (Normal Eco-Dome Al'dani)
+			ach(42784),	-- Soul-Scribe (Heroic Eco-Dome Al'dani)
+			ach(42785),	-- Soul-Scribe (Mythic Eco-Dome Al'dani)
+			ach(60915),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 2 [DNT]
+			ach(60916),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 3 [DNT]
+			ach(60917),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 4 [DNT]
+			ach(60918),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 5 [DNT]
+			ach(60919),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 6 [DNT]
+			ach(60920),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 7 [DNT]
+			ach(60921),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 8 [DNT]
+			ach(60925),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 9 [DNT]
+			ach(60926),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 10 [DNT]
+			ach(60927),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 11 [DNT]
+			ach(60928),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 12 [DNT]
+			ach(60929),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 13 [DNT]
+			ach(60930),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 14 [DNT]
+			ach(60931),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 15 [DNT]
+			ach(60932),	-- Voidrazor Sanctuary clears
 		})),
 	}),
 });

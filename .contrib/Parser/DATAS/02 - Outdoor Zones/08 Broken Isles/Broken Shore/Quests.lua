@@ -503,14 +503,15 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["provider"] = { "i", 147356 },	-- Broken Sentinax Beacon
 			}),
 			q(54120, {	-- To Orgrimmar
-				["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
+				["qgs"] = {
+					145965,	-- Spirit of Vol'jin
+					145981, -- Restless Spirit
+				},
 				["lvl"] = 50,
 				["coord"] = { 62.3, 30.4, BROKEN_SHORE },
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = { 53778 },	-- Where He Fell
-				["g"] = {
-					i(165371),	-- The Glaive of Vol'jin (QI!)
-				},
+				["g"] = { i(165371) },	-- The Glaive of Vol'jin (QI!)
 			}),
 			q(46509, {	-- Tomb Raidering
 				["sourceQuests"] = { 46501 },	-- Grave Robbin'

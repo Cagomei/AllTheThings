@@ -12667,3 +12667,14 @@
 7930@@@Greater Twisted Appendage
 7931@@@Lesser Void Ritual
 7933@@@Greater Void Ritual
+11.2.0.61476
+7641@@@Arcane
+7897@@@Energizing Fiber
+7898@@@Pure Energizing Fiber
+7899@@@Pure Precise Fiber
+7900@@@Precise Fiber
+7901@@@Chronomatic Fiber
+7902@@@Pure Chronomatic Fiber
+7903@@@Pure Dexterous Fiber
+7904@@@Dexterous Fiber
+8058@@@11.2 - FX - Arcane - Enchants

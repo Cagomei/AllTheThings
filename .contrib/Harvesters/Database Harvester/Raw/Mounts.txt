@@ -2175,3 +2175,40 @@
 1235819@@@Wailing Banshee's Charger
 1241263@@@OC91 Chariot
 1241429@@@Inarius' Charger
+11.2.0.61476
+353264@@@Xy Trustee's Gearglider
+353265@@@Vandal's Gearglider
+472157@@@Astral Gladiator's Fel Bat
+1221132@@@Resplendent K'arroc
+1223187@@@Terror of the Wastes
+1223191@@@Terror of the Night
+1224048@@@Delver's Mana-Skimmer
+1233511@@@Umbral K'arroc
+1233518@@@Lavender K'arroc
+1233546@@@Ruby Void Creeper
+1233547@@@Acidic Void Creeper
+1233559@@@Blue Barry
+1233561@@@Curious Slateback
+1234573@@@Unbound Star-Eater
+1234820@@@Vicious Void Creeper
+1234821@@@Vicious Void Creeper
+1240632@@@Pearlescent Krolusk
+1241070@@@Translocated Gorger
+1241076@@@Sthaarbs's Last Lunch
+1242272@@@Royal Voidwing
+1244247@@@Thunder-ridged Elekk
+1244259@@@Cinder-seared Elekk
+1244260@@@Void-Razed Elekk
+1244261@@@Legion Forged Elekk
+1245197@@@The Headless Horseman's Chilling Charger
+1245198@@@The Headless Horseman's Ghoulish Charger
+1245202@@@The Headless Horseman's Burning Charger
+1245205@@@The Headless Horseman's Ghostly Charger
+1245357@@@Windmaster's Battlesworn
+1245358@@@Akil'darah Windscarred
+1245359@@@Ohn'ahran Windborne
+1245361@@@Darkfeather Eclipse
+1245370@@@Ornery Breezestrider
+1245517@@@Scarlet Void Flyer
+1246781@@@Azure Void Flyer
+1247662@@@Brewfest Barrel Bomber

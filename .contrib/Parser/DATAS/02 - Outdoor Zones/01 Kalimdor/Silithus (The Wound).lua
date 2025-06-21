@@ -121,9 +121,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 							["g"] = {
 								i(169292),	-- Charged Scale of the Blue Aspect (QI!)
-								i(168614, {	-- Charged Scale of the Blue Aspect
-									["u"] = REMOVED_FROM_GAME,
-								}),
+								i(168614), 	-- Charged Scale of the Blue Aspect
 							},
 						}),
 						q(54938, {	-- A Brother's Help
@@ -232,7 +230,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						q(55739, {	-- Back to the Chamber (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian
 							["coords"] = {
-								-- #if BEFORE SHADOWLANDS
+								-- #if BEFORE SL
 								{ 51.0, 88.8, DAZARALOR },
 								-- #else
 								{ 50.4, 41.7, DAZARALOR },
@@ -626,7 +624,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						q(55522, {	-- Return to the Heart (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian <Messenger of the Speaker>
 							["coords"] = {
-								-- #if BEFORE SHADOWLANDS
+								-- #if BEFORE SL
 								{ 51.0, 88.8, DAZARALOR },
 								-- #else
 								{ 50.4, 41.7, DAZARALOR },
@@ -817,9 +815,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["DisablePartySync"] = true,
 						}),
 						q(56260, {	-- Unlocking the Power (H)
-							["provider"] = { "n", 154464 },	-- Earthen Guardian
+							["provider"] = { "n", 154465 },	-- Earthen Guardian
 							["coords"] = {
-								-- #if BEFORE SHADOWLANDS
+								-- #if BEFORE SL
 								{ 51.0, 88.8, DAZARALOR },
 								-- #else
 								{ 50.4, 41.7, DAZARALOR },

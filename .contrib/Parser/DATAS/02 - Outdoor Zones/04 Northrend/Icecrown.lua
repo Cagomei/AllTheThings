@@ -2369,7 +2369,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					-- #if AFTER SHADOWLANDS
+					-- #if AFTER SL
 					i(50379),	-- Battered Hilt (Alliance) - These are dropping zone-wide during Shadowlands Prepatch Event; remains to be seen whether they will permanently drop from here.
 					i(50380),	-- Battered Hilt (Horde)
 					-- #endif

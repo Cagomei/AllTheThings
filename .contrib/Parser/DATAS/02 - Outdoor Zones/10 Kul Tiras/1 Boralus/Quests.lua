@@ -579,7 +579,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					o_repeated({
 						i(161438),	-- Large Azerite Grenade (QI!)
 						o(296252),	-- Box of Lare Azerite Grenades
-						o(293134),	-- Lare Azerite Grenade
+						o(293134),	-- Large Azerite Grenade
 					}),
 				},
 			}),
@@ -756,7 +756,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(49223, {	-- The Long Con
 				["sourceQuests"] = { 49523 },	-- A Bad Deal
-				["provider"] = { "n", 129940 },	-- Roko <Wandering Merchant>
+				["provider"] = { "n", 129940 },	-- Roko <Wandering Merchant> (mobileNPC)
 				["coord"] = { 70.3, 8.4, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 			}),

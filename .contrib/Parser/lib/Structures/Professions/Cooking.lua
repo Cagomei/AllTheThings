@@ -259,7 +259,7 @@ NAZJATAR_COOKING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] 
 	r(297078),	-- Mech-Dowel's "Big Mech" [Rank 1]
 	r(297079),	-- Mech-Dowel's "Big Mech" [Rank 2]
 }));
-SL_COOKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_COOKING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309830),	-- Shadowlands Cooking
 	r(818),		-- Cooking Fire
 	r(308415),	-- Banana Beef Pudding

@@ -168,6 +168,80 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				["collectible"] = false,
 			}),
 		})),
+		header(HEADERS.Achievement, SEASON_3_TWW, bubbleDownSelf({
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_PH_PREPATCH }
+		},{
+			ach(42169),	-- The War Within Keystone Explorer: Season Three
+			ach(42170),	-- The War Within Keystone Conqueror: Season Three
+			ach(41973, {	-- The War Within Keystone Master: Season Three
+				i(248248),	-- Azure Void Flyer (MOUNT!)
+			}),
+			ach(42171),	-- The War Within Keystone Hero: Season Three
+			ach(42172, {	-- The War Within Keystone Legend: Season Three
+				i(247822),	-- Scarlet Void Flyer (MOUNT!)
+			}),
+			ach(42174),	-- [PH] Hero: The War Within Season Three
+			ach(42173, {	-- Keystone Hero: Eco-Dome Al'dani
+				--TODO Max Level Unlock: Teleport to Eco-Dome Al'dani
+			}),
+			ach(42149, {	-- The War Within Season 3: Resilient Keystone 12
+				["collectible"] = false,
+			}),
+			ach(42150, {	-- The War Within Season 3: Resilient Keystone 13
+				["collectible"] = false,
+			}),
+			ach(42151, {	-- The War Within Season 3: Resilient Keystone 14
+				["collectible"] = false,
+			}),
+			ach(42152, {	-- The War Within Season 3: Resilient Keystone 15
+				["collectible"] = false,
+			}),
+			ach(42153, {	-- The War Within Season 3: Resilient Keystone 16
+				["collectible"] = false,
+			}),
+			ach(42154, {	-- The War Within Season 3: Resilient Keystone 17
+				["collectible"] = false,
+			}),
+			ach(42155, {	-- The War Within Season 3: Resilient Keystone 18
+				["collectible"] = false,
+			}),
+			ach(42156, {	-- The War Within Season 3: Resilient Keystone 19
+				["collectible"] = false,
+			}),
+			ach(42157, {	-- The War Within Season 3: Resilient Keystone 20
+				["collectible"] = false,
+			}),
+			ach(42158, {	-- The War Within Season 3: Resilient Keystone 21
+				["collectible"] = false,
+			}),
+			ach(42159, {	-- The War Within Season 3: Resilient Keystone 22
+				["collectible"] = false,
+			}),
+			ach(42160, {	-- The War Within Season 3: Resilient Keystone 23
+				["collectible"] = false,
+			}),
+			ach(42161, {	-- The War Within Season 3: Resilient Keystone 24
+				["collectible"] = false,
+			}),
+			ach(42162, {	-- The War Within Season 3: Resilient Keystone 25
+				["collectible"] = false,
+			}),
+			ach(42802, {	-- The War Within Season 3: Resilient Keystone 26
+				["collectible"] = false,
+			}),
+			ach(42803, {	-- The War Within Season 3: Resilient Keystone 27
+				["collectible"] = false,
+			}),
+			ach(42804, {	-- The War Within Season 3: Resilient Keystone 28
+				["collectible"] = false,
+			}),
+			ach(42805, {	-- The War Within Season 3: Resilient Keystone 29
+				["collectible"] = false,
+			}),
+			ach(42806, {	-- The War Within Season 3: Resilient Keystone 30
+				["collectible"] = false,
+			}),
+		})),
 		n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 			i(234425, {	-- Forgotten Folio
 				["description"] = "Drops from the last boss of Mythic+ Dungeons. It contains various dungeon dropped profession recipes.",

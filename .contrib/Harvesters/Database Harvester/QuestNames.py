@@ -102,20 +102,20 @@ def get_available_expansions(patch: str) -> dict[str, str]:
             "Retail": "",
         }
         print("WoD-DF :", patch)
-    elif version.parse(patch) < version.parse("11.1.5.99999"):
+    elif version.parse(patch) < version.parse("11.1.7.99999"):
         expansion_dict = {
             "Retail": "",
             "PTR": "ptr",
             "PTR2": "ptr-2",
             #"BETA": "beta",
         }
-        print("11.0.0-11.1.5 :", patch)
-    elif version.parse(patch) < version.parse("11.1.7.99999"):
+        print("11.0.0-11.1.7 :", patch)
+    elif version.parse(patch) < version.parse("11.2.0.99999"):
         expansion_dict = {
-            "PTR": "ptr",
-            #"PTR2": "ptr-2",
+            #"PTR": "ptr",
+            "PTR2": "ptr-2",
         }
-        print("11.1.7 :", patch)
+        print("11.2.0 :", patch)
     return expansion_dict
 
 def get_quest_names(flavor: str) -> None:

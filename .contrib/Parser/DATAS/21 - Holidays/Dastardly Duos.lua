@@ -284,7 +284,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(87527),	-- there also was crit for other achievements but I wasn't smart enought to log it
 			q(87528),	-- so it is just 'after first completion Dastardly Duos, week 2'
 			-- Week 3:
-			-- q(87512),	-- ^ all poped after first run with week 3 quest
+			q(87512),	-- Week 3 Completion
 			-- q(87513),	--
 			q(87529),	--
 			q(87530),	--

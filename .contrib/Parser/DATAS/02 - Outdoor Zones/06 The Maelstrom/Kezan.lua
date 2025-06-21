@@ -49,6 +49,13 @@ root(ROOTS.Zones, {
 						["qg"] = 35222,	-- Trady Prince Gallywix
 						["sourceQuest"] = 14116,	-- The Uninvited Guest
 					}),
+					q(14008, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Goblin)
+						["qg"] = 34689,	-- Fizz Lighter <Mage Trainer>
+						["coord"] = { 59.6, 73.8, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["races"] = { GOBLIN },
+						["classes"] = { MAGE },
+					}),
 					q(14070, {	-- Do it Yourself
 						["coord"] = { 56.4, 76.9, KEZAN },
 						["qg"] = 34668,	-- Sassy Hardwrench

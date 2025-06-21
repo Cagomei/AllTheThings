@@ -1280,8 +1280,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 78.3, 28.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(162456),	-- Ritual of Safe Passage (QI!)
-					i(162462),	-- Staff of Storms (QI!)
+					i(162462),	-- Staff of Storms (PQI!)
+					o(293699, {	-- Scroll of Safe Passage
+						i(162456),	-- Ritual of Safe Passage (QI!)
+					}),
 				},
 			}),
 			q(50825, {	-- Shrine of the Storm: Whispers Below

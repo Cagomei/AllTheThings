@@ -53,14 +53,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 20, 8),
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164942,	-- Evelyn Thorn
 						-- #else
 						461,	-- Demisette Cloyce
 						-- #endif
 					},
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 79.5, 69.9, STORMWIND_CITY },
 						-- #else
 						{ 39.4, 84.8, STORMWIND_CITY },
@@ -103,14 +103,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(27337, {	-- A Fitting Weapon [Alliance]
 					["sourceQuest"] = 27225,	-- A Summons from Ander Germaine
 					["qgs"] = {
-						-- #if BEFORE SHADOWLANDS
+						-- #if BEFORE SL
 						914,	-- Ander Germaine
 						-- #else
 						164939,	-- Signilda Hardforge <Warrior Trainer>
 						-- #endif
 					},
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 80.3, 70.4, STORMWIND_CITY },
 						-- #else
 						{ 79.4, 69.0, STORMWIND_CITY },
@@ -136,7 +136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27365, {	-- A Fitting Weapon [Horde]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168596,	-- Gormok Ogrefist
 						-- #else
 						3353,	-- Grezz Ragefist
@@ -144,7 +144,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27281,	-- Grezz Ragefist [CATA] / Gormok Ogrefist [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 73.6, 45.6, ORGRIMMAR },
 						-- #else
 						{ 73.8, 45.6, ORGRIMMAR },
@@ -189,14 +189,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27395, {	-- A Marksman's Weapon
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168551,	-- Tamanji <Hunter Trainer>
 						-- #else
 						3352,	-- Ormak Grimshot
 						-- #endif
 					},
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 73.8, 43.8, ORGRIMMAR },
 						-- #else
 						{ 63.8, 32.8, ORGRIMMAR },
@@ -220,7 +220,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65466),	-- Bow of the Great Hunter
 					},
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(27272, {	-- A Message From Evelyn Thorn [SL+] / Demisette Sends Word [CATA]
 					["qg"] = 5173,	-- Alexander Calder
 					["coord"] = { 50.2, 6.8, IRONFORGE },
@@ -233,7 +233,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				q(27351, {	-- A Royal Reward
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164946,	-- Veruca Darkstream <Rogue Trainer>
 						-- #else
 						51998,	-- Arthur Huwe
@@ -242,7 +242,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27267,	-- Make Contact with SI:7
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 78.6, 70.6, STORMWIND_CITY },	-- Veruca Darkstream <Rogue Trainer>
 						-- #else
 						{ 79.6, 61.2, STORMWIND_CITY },	-- Arthur Huwe
@@ -268,7 +268,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27441, {	-- A Seer's Staff [Goblin]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168621,	-- Martin Goodchilde <Priest Trainer>
 						-- #else
 						45347,	-- Brother Silverhallow
@@ -276,7 +276,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 28164,	-- Seek Brother Silverhallow [CATA] / Journey to Orgrimmar [Goblin] [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 72.6, 46.6, ORGRIMMAR },
 						-- #else
 						{ 37.8, 87.4, ORGRIMMAR },
@@ -301,7 +301,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27435, {	-- A Seer's Staff [Tauren]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168621,	-- Martin Goodchilde <Priest Trainer>
 						-- #else
 						44735,	-- Seer Liwatha
@@ -309,7 +309,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27331,	-- The Seer's Call [CATA] / Journey to Orgrimmar [Tauren] [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 72.6, 46.6, ORGRIMMAR },
 						-- #else
 						{ 45.4, 53.4, ORGRIMMAR },
@@ -332,7 +332,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65484),	-- Staff of the Earthmother
 					},
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(27436, {	-- A Seer's Staff [Troll] [SL+] / The Shadow-Walker's Task [CATA]
 					["qg"] = 168621,	-- Martin Goodchilde <Priest Trainer>
 					["sourceQuest"] = 27332,	-- Seek the Shadow-Walker [CATA] / Journey to Orgrimmar [Undead] [SL+]
@@ -396,7 +396,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27344, {	-- A Well-Earned Reward
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164960,	-- Dalgrun Steelpine <Hunter Trainer>
 						-- #else
 						44247,	-- Wulf Hansreim
@@ -404,7 +404,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27266,	-- Wulf Calls [CATA] / Dalgrun Calls [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 79.2, 71.2, STORMWIND_CITY },
 						-- #else
 						{ 79.0, 71.0, STORMWIND_CITY },
@@ -493,7 +493,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27396, {	-- Blade of the Shattered Hand
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168598,	-- Thega Graveblade <Rogue Trainer>
 						-- #else
 						47233,	-- Gordul
@@ -501,7 +501,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27279,	-- The Shattered Hand
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 75.4, 47.4, ORGRIMMAR },
 						-- #else
 						{ 32.9, 65.8, ORGRIMMAR },
@@ -526,7 +526,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27353, {	-- Blessings of the Elements
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164945,	-- Mulric Boldrock
 						-- #else
 						20407,	-- Farseer Umbrua
@@ -534,7 +534,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27270,	-- An Audience with the Farseer [CATA] / An Audience with Mulric [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 78.2, 70.9, STORMWIND_CITY },
 						-- #else
 						{ 64.6, 33.0, STORMWIND_CITY },
@@ -558,7 +558,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65489),	-- Spell Axe of the Farseer
 					},
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(27266, {	-- Dalgrun Calls [SL+] / Wulf Calls [CATA]
 					["qgs"] = {
 						4138,	-- Jeen'ra Nightrunner
@@ -577,7 +577,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(8, 20, 8),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(27334, {	-- Dark Cleric Cecille [CATA] / Journey to Orgrimmar [SL+]
 					["qgs"] = {
 						16658,	-- Aldrae <Priest Trainer>
@@ -610,7 +610,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(27272, {	-- Demisette Sends Word [CATA] / A Message From Evelyn Thorn [SL+]
 					["qg"] = 5173,	-- Alexander Calder
 					["coord"] = { 50.2, 6.8, IRONFORGE },
@@ -624,7 +624,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if BEFORE MOP
 				q(27397, {	-- Dreamseeker's Task [CATA] / Terga's Task [MOP] / Hretar's Task [SL+]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168628,	-- Hretar Riverspeaker <Shaman Trainer>
 						-- #elseif AFTER MOP
 						72939,	-- Terga Earthbreaker
@@ -634,7 +634,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27280,	-- The Dreamseeker Calls [CATA] / The Earthbreaker Calls [MOP] / The Riverspeaker Calls [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 73.6, 43.4, ORGRIMMAR },
 						-- #elseif AFTER MOP
 						{ 39.0, 47.6, ORGRIMMAR },
@@ -661,7 +661,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(27265, {	-- Ezul'aan Calls [SL+] / Lord Grayson Shadowbreaker [CATA]
 					["qgs"] = {
 						16761,	-- Baatun
@@ -703,7 +703,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27361, {	-- Favored of the Light
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164949,	-- Patrice Lancaster
 						-- #else
 						376,	-- High Priestess Laurena
@@ -711,7 +711,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27268,	-- Make Haste to the Cathedral [CATA] / Patrice Lancaster Sends Word [All] [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 79.0, 69.8, STORMWIND_CITY },
 						-- #else
 						{ 49.6, 44.8, STORMWIND_CITY },
@@ -746,7 +746,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(27304, {	-- Follow the Sun [CATA] / Meet with Avaros Dawnglaive [Tauren] [SL+]
 					["qgs"] = {
 						43795,	-- Aponi Brightmane
@@ -763,7 +763,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(27437, {	-- Forsaken Faith [SL+] / The Dark Cleric's Bidding [CATA]
 					["qg"] = 168621,	-- Martin Goodchilde <Priest Trainer>
 					["sourceQuest"] = 27334,	-- Dark Cleric Cecille [CATA] / Journey to Orgrimmar [SL+]
@@ -852,7 +852,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(27281, {	-- Gormok Ogrefist [SL+] / Grezz Ragefist [CATA]
 					["qgs"] = {
 						43009,	-- Alsudar the Bastion <Warrior Trainer>
@@ -871,7 +871,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(27281, {	-- Grezz Ragefist [CATA] / Gormok Ogrefist [SL+]
 					["qgs"] = {
 						43009,	-- Alsudar the Bastion <Warrior Trainer>
@@ -907,10 +907,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(27397, {	-- Hretar's Task [SL+] / Dreamseeker's Task [CATA] / Terga's Task [MOP]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168628,	-- Hretar Riverspeaker <Shaman Trainer>
 						-- #elseif AFTER MOP
 						72939,	-- Terga Earthbreaker
@@ -920,7 +920,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27280,	-- The Dreamseeker Calls [CATA] / The Earthbreaker Calls [MOP] / The Riverspeaker Calls [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 73.6, 43.4, ORGRIMMAR },
 						-- #elseif AFTER MOP
 						{ 39.0, 47.6, ORGRIMMAR },
@@ -966,7 +966,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(20, 20, 8),
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28164, {	-- Journey to Orgrimmar [Goblin] [SL+] / Seek Brother Silverhallow [CATA]
 					["qgs"] = {
 						16658,	-- Aldrae <Priest Trainer>
@@ -1079,7 +1079,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(8, 20, 8),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(27265, {	-- Lord Grayson Shadowbreaker [CATA] / Ezul'aan Calls [SL+]
 					["qgs"] = {
 						16761,	-- Baatun
@@ -1113,7 +1113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(20, 20, 8),
 				}),
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(27268, {	-- Make Haste to the Cathedral [CATA] / Patrice Lancaster Sends Word [SL+]
 					["qgs"] = {
 						16756,	-- Caedmos
@@ -1134,7 +1134,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				q(27354, {	-- Mastering the Arcane [Alliance]
 					["qgs"] = {
-						-- #if BEFORE SHADOWLANDS
+						-- #if BEFORE SL
 						331,	-- Maginor Dumas
 						-- #else
 						164955,	-- Frazzle Frostfingers
@@ -1142,7 +1142,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27271,	-- Journey to the Wizard's Sanctum
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 80.0, 69.6, STORMWIND_CITY },
 						-- #else
 						{ 49.2, 87.6, STORMWIND_CITY },
@@ -1167,7 +1167,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27400, {	-- Mastering the Arcane [Horde]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168626,	-- Feenix Arcshine
 						-- #else
 						47246,	-- Ureda
@@ -1175,7 +1175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27277,	-- An Audience with Ureda [CATA] / An Audience with Feenix Arcshine [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 74.6, 43.5, ORGRIMMAR },	-- Feenix Arcshine
 						-- #else
 						{ 48.4, 62.6, ORGRIMMAR },	-- Ureda
@@ -1198,7 +1198,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65468),	-- Staff of the Arcane Path
 					},
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(27304, {	-- Meet with Avaros Dawnglaive [Tauren] [SL+] / Follow the Sun [CATA]
 					["qgs"] = {
 						43795,	-- Aponi Brightmane
@@ -1227,7 +1227,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(27268, {	-- Patrice Lancaster Sends Word [All] [SL+] / Make Haste to the Cathedral [CATA]
 					["qgs"] = {
 						16756,	-- Caedmos
@@ -1278,7 +1278,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28164, {	-- Seek Brother Silverhallow [CATA] / Journey to Orgrimmar [Goblin] [SL+]
 					["qgs"] = {
 						16658,	-- Aldrae <Priest Trainer>
@@ -1316,7 +1316,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(20, 20, 8),
 				}),
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(27332, {	-- Seek the Shadow-Walker [CATA] / Journey to Orgrimmar [Undead] [SL+]
 					["qgs"] = {
 						16658,	-- Aldrae <Priest Trainer>
@@ -1350,7 +1350,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27439, {	-- Staff of the Light [Blood Elf]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168621,	-- Martin Goodchilde <Priest Trainer>
 						-- #else
 						45337,	-- Tyelis
@@ -1358,7 +1358,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27335,	-- Journey to Orgrimmar [Blood Elf]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 72.6, 46.6, ORGRIMMAR },
 						-- #else
 						{ 49.0, 71.0, ORGRIMMAR },
@@ -1403,7 +1403,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(27278, {	-- Tamanji's Call [SL+] / Grimshot's Call [CATA]
 					["qgs"] = {
 						16674,	-- Zandine <Hunter Trainer>
@@ -1423,10 +1423,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				-- #endif
 				-- #if AFTER MOP
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(27397, {	-- Terga's Task [MOP] / Dreamseeker's Task [CATA] / Hretar's Task [SL+]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168628,	-- Hretar Riverspeaker <Shaman Trainer>
 						-- #elseif AFTER MOP
 						72939,	-- Terga Earthbreaker
@@ -1436,7 +1436,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27280,	-- The Dreamseeker Calls [CATA] / The Earthbreaker Calls [MOP] / The Riverspeaker Calls [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 73.6, 43.4, ORGRIMMAR },
 						-- #elseif AFTER MOP
 						{ 39.0, 47.6, ORGRIMMAR },
@@ -1466,7 +1466,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				q(27434, {	-- The Adept's Path
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168597,	-- Avaros Dawnglaive <Paladin Trainer>
 						-- #else
 						23128,	-- Master Pyreanor
@@ -1474,7 +1474,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27298,	-- Seek Out Master Pyreanor
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 73.0, 47.2, ORGRIMMAR },
 						-- #else
 						{ 49.2, 71.2, ORGRIMMAR },
@@ -1521,7 +1521,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(27274, {	-- The Chief Surgeon [CATA] / Patrice Lancaster Sends Word [Gnome] [SL+]
 					["qg"] = 11406,	-- High Priest Rohan
 					["coord"] = { 25.0, 8.2, IRONFORGE },
@@ -1576,7 +1576,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65464),	-- Staff of the Verdant Circle
 					},
 				}),
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(27437, {	-- The Dark Cleric's Bidding [CATA] / Forsaken Faith [SL+]
 					["qg"] = 45339,	-- Dark Cleric Cecille
 					["sourceQuest"] = 27334,	-- Dark Cleric Cecille [CATA] / Journey to Orgrimmar [SL+]
@@ -1638,7 +1638,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				q(27343, {	-- The Hand of the Light
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164952,	-- Ezul'aan <Paladin Trainer>
 						-- #else
 						928,	-- Lord Grayson Shadowbreaker
@@ -1646,7 +1646,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27265,	-- Lord Grayson Shadowbreaker [CATA] / Ezul'aan Calls [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 79.2, 69.6, STORMWIND_CITY },
 						-- #else
 						{ 52.6, 45.0, STORMWIND_CITY },
@@ -1697,7 +1697,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(27280, {	-- The Riverspeaker Calls [SL+] / The Dreamseeker Calls [CATA] / The Earthbreaker Calls [MOP]
 					["qgs"] = {
 						16661,	-- Gez'li
@@ -1716,7 +1716,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(27331, {	-- The Seer's Call [CATA] / Journey to Orgrimmar [Tauren] [SL+]
 					["qgs"] = {
 						16658,	-- Aldrae <Priest Trainer>
@@ -1801,7 +1801,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27402, {	-- Token of Power
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168623,	-- Kazak Darkscream <Warlock Trainer>
 						-- #elseif AFTER WOD
 						88705,	-- Kranosh
@@ -1811,7 +1811,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 27282,	-- Zevrost's Behest [CATA] / Kranosh's Behest [WOD] / Kazak's Behest [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 74.6, 47.2, ORGRIMMAR },
 						-- #elseif AFTER WOD
 						{ 76.8, 37.4, ORGRIMMAR },
@@ -1836,7 +1836,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65497),	-- Staff of the Left Hand Path
 					},
 				}),
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(27266, {	-- Wulf Calls [CATA] / Dalgrun Calls [SL+]
 					["qgs"] = {
 						4138,	-- Jeen'ra Nightrunner

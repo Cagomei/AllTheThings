@@ -9339,7 +9339,7 @@ profession(LEATHERWORKING, {
 			},
 		},
 	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(EXPANSION.SL, {
+	applyclassicphase(SL_PHASE_ONE, expansion(EXPANSION.SL, {
 		applytraining({
 			["name"] = "Quest Recipes",
 			["categoryID"] = 1531,

@@ -1135,7 +1135,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(54759, {	-- When Spirits Whisper
 				["provider"] = { "n", 149088 },	-- Spiritwalker Isahi
 				["coord"] = { 39.1, 79.0, ORGRIMMAR },
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				["sourceQuest"] = 55779,	-- Stay of Execution (after the Baine Rescue Scenario)
 				-- #endif
 			}),

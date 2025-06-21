@@ -1961,7 +1961,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(12987),	-- Darkweave Breeches
 						i(2194),	-- Diamond Hammer
 						i(1717),	-- Double Link Tunic
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						i(2098),	-- Double-Barreled Shotgun
 						-- #endif
 						i(12999),	-- Drakewing Bands

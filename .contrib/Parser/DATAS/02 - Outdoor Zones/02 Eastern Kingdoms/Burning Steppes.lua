@@ -512,7 +512,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] =
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						-- this quest was level locked for characters above level 56 before Shadowlands level squish
 						lvlsquish(56, 56, 20),
 						-- #else
@@ -527,7 +527,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] =
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						-- this quest was level locked for characters above level 56 before Shadowlands level squish
 						lvlsquish(56, 56, 20),
 						-- #else

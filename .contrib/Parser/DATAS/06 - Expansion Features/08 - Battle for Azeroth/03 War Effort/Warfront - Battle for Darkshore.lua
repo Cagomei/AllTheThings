@@ -727,7 +727,7 @@ root(ROOTS.ExpansionFeatures,
 							131752,	-- War Table (Horde)
 						},
 						["lvl"] = {
-							-- #if AFTER SHADOWLANDS
+							-- #if AFTER SL
 							50,
 							-- #else
 							120,

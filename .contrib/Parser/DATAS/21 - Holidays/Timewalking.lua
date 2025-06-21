@@ -4,6 +4,19 @@
 -- #if BEFORE 6.2.3.20601
 if true then return end
 -- #endif
+
+-- All Timewalking EventIDs
+ExportDB._Compressed.TW_EventIDs = true
+ExportDB.TW_EventIDs = {
+	EVENTS.TIMEWALKING_CLASSIC_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_OUTLAND_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_CATACLYSM_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_MISTS_OF_PANDARIA_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_WARLORDS_OF_DRAENOR_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_LEGION_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_BATTLE_FOR_AZEROTH_DUNGEON_EVENT,
+}
 -- Helper function to build a CRS list for the Timereaver Mount.
 -- Since this data is all in the same file, we no longer have to do this as part of a post-processor.
 local TIMEWALKING_DUNGEON_CREATURE_IDS = {};
@@ -6977,7 +6990,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				["provider"] = { "n", 239840 },	-- Churbro
 				["coords"] = {
 					{ 70.8, 17.3, BORALUS },	-- Alliance
-					{ 46.1, 94.9, ZULDAZAR },	-- Horde
+					{ 46.1, 94.9, DAZARALOR },	-- Horde
 				},
 				["weekly"] = true,
 				["lockCriteria"] = { 1, "lvl", 80 },
@@ -7237,11 +7250,14 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 			e(2082, {	-- Priestess Alun'za
 				["crs"] = { 122967 },	-- Priestess Alun'za
 				["g"] = {
+					i(158347),	-- Cincture of Glittering Gold
+					i(155861),	-- Embellished Ritual Sabatons
 				},
 			}),
 			e(2036, {	-- Vol'kaal
 				["crs"] = { 122965 },	-- Vol'kaal
 				["g"] = {
+					i(159632),	-- Adulation Enforcer
 					i(158375),	-- Drape of the Loyal Vassal
 				},
 			}),
@@ -7288,6 +7304,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					126969,	-- Trothak <The Shark Puncher>
 				},
 				["g"] = {
+					i(158356),	-- Shell-Kickers
 				},
 			}),
 			e(2095,	{	-- Harlan Sweete
@@ -7309,12 +7326,14 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				["crs"] = { 135322 },	-- The Golden Serpent
 				["g"] = {
 					i(159313),	-- Breechees of the Sacred Hall
+					i(159304),	-- Goldfeather Boots
 					i(159617),	-- Lustrous Golden Plumage
 				},
 			}),
 			e(2171, {	-- Mchimba the Embalmer
 				["crs"] = { 134993 },	-- Mchimba the Embalmer
 				["g"] = {
+					i(159667),	-- Vessel of Last Rites
 				},
 			}),
 			e(2170, {	-- The Council of Tribes
@@ -7324,12 +7343,15 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					135472,	-- Zanazal the Wise
 				},
 				["g"] = {
+					i(160216),	-- Crackling Jade Kilij
+					i(159418),	-- Girdle of Pestilent Purification
 					i(159300),	-- Kula's Butchering Wristwraps
 				},
 			}),
 			e(2172, {	-- Dazar, The First King
 				["crs"] = { 136160 },	-- King Dazar <The First>
 				["g"] = {
+					i(159644),	-- Geti'ikku, Cut of Death
 					i(239047),	-- Headdress of the First Empire
 					i(239050),	-- Helm of the Raptor King
 					i(239046),	-- Loa-Blessed Chestguard
@@ -7403,6 +7425,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				},
 				["g"] = {
 					i(159375),	-- Legguards of the Awakening Brood
+					i(159327),	-- Sand-Shined Snakeskin Sandals
 				},
 			}),
 			e(2144, {	-- Galvazzt
@@ -7410,6 +7433,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					133389,	-- Galvazzt
 				},
 				["g"] = {
+					i(158366),	-- Charged Sandstone Band
 				},
 			}),
 			e(2145, {	-- Avatar of Sethraliss
@@ -7419,6 +7443,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					i(239037),	-- C'thraxxi Binders Pauldrons
 					i(239034),	-- Corrupted Hexxer's Vestments
 					i(239036),	-- Desert Guardian's Breastplate
+					i(159337),	-- Grips of Electrified Defense
 					i(239033),	-- Hood of the Slithering Loa
 					i(239032),	-- Robes of the Reborn Serpent
 					i(239035),	-- Sethraliss' Fanged Helm
@@ -7434,6 +7459,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				},
 				["g"] = {
 					i(159133),	-- Jagged Iris Sica
+					i(159272),	-- Twisted Sisters Handwraps
 				},
 			}),
 			e(2126, {	-- Soulbound Goliath
@@ -7442,6 +7468,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				},
 				["g"] = {
 					i(159282),	-- Drust-Thatched Wristwraps
+					i(162548),	-- Thornwoven Band
 				},
 			}),
 			e(2127, {	-- Raal the Gluttonous
@@ -7451,7 +7478,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					136541,	-- Bile Oozing
 				},
 				["g"] = {
+					i(159285),	-- Bloodstained Sous Chef Pants
 					i(159452),	-- Fatty Hooves of Gory Comfort
+					i(159294),	-- Raal's Bib
 				},
 			}),
 			e(2128, {	-- Lord and Lady Waycrest
@@ -7460,6 +7489,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					131545,	-- Lady Waycrest
 				},
 				["g"] = {
+					i(159262),	-- Belt of Undying Devotion
+					i(159347),	-- Moss-Covered Wingtip Shoes
 					i(159457),	-- Risen Lord's Oversized Gauntlets
 				},
 			}),
@@ -7510,7 +7541,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 			q(85877),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways II (spellID 471544)
 			q(86295, { ["timeline"] = { ADDED_11_1_5 } }),	-- Disturbance Detected: Black Temple
-			--q(???, { ["timeline"] = { ADDED_11_1_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways III (spellID ???)
+			q(89211, { ["timeline"] = { ADDED_11_1_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways III (spellID 1229050)
 		})),
 	})),
 });

@@ -906,7 +906,10 @@ root(ROOTS.Zones, {
 					q(12478, {	-- Frostmourne Cavern
 						["coord"] = { 79.1, 47.1, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 27314,	-- Zelig the Visionary
+						["providers"] = {
+							{ "n", 27314 },	-- Zelig the Visionary
+							{ "i", 37933 },	-- Zelig's Scrying Orb (PQI!)
+						},
 						["sourceQuest"] = 12475,	-- What Secrets Men Hide
 						["groups"] = {
 							i(38532),	-- Belt of Vengeful Purification
@@ -2367,7 +2370,10 @@ root(ROOTS.Zones, {
 					q(12291, {	-- The Forgotten Tale
 						["coord"] = { 87.1, 57.4, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 27347,	-- Orik Trueheart
+						["providers"] = {
+							{ "n", 27347 },	-- Orik Trueheart
+							{ "i", 37570 },	-- Murkweed Elixir (PQI!)
+						},
 						["sourceQuest"] = 12290,	-- The Murkweek Elixir
 					}),
 					q(12221, {	-- The Forsaken Blight
@@ -2645,7 +2651,10 @@ root(ROOTS.Zones, {
 					q(12301, {	-- The Truth Shall Set Us Free
 						["coord"] = { 87.1, 57.4, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 27347,	-- Orik Trueheart
+						["providers"] = {
+							{ "n", 27347 },	-- Orik Trueheart
+							{ "i", 37577 },	-- Orik's Crystalline Orb (PQI!)
+						},
 						["sourceQuest"] = 12291,	-- The Forgotten Tale
 					}),
 					q(12283, {	-- The Truth Will Out

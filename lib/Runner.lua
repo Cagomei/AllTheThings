@@ -8,8 +8,8 @@ local _, app = ...;
 -- Capability to add to and run a sequence of Functions with a specific allotment being processed individually each frame
 
 -- Global locals
-local wipe, math_max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall, C_Timer_After,GetTimePreciseSec =
-	  wipe, math.max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall, C_Timer.After,GetTimePreciseSec
+local math_max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall, C_Timer_After,GetTimePreciseSec =
+	  math.max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall, C_Timer.After,GetTimePreciseSec
 local c_create, c_yield, c_resume, c_status
 	= coroutine.create, coroutine.yield, coroutine.resume, coroutine.status;
 
@@ -19,6 +19,10 @@ local function PrintError(err, source, co)
 		local instanceTrace = debugstack(co);
 		print(instanceTrace)
 	end
+end
+
+local function wipearray(t)
+	for i=1,#t do t[i] = nil end
 end
 
 local Stack = {};
@@ -196,9 +200,9 @@ local function CreateRunner(name)
 		-- when done with all functions in the queue, reset the indexes and clear the queues of data
 		QueueIndex = 1
 		RunIndex = Pushed and 0 or 1	-- reset while running will resume and continue at index 1
-		wipe(FunctionQueue)
-		wipe(ParameterBucketQueue)
-		wipe(ParameterSingleQueue)
+		wipearray(FunctionQueue)
+		wipearray(ParameterBucketQueue)
+		wipearray(ParameterSingleQueue)
 	end
 	local function Stats()
 		app.print(name,Pushed and "RUNNING" or "STOPPED","Qi",QueueIndex,"Ri",RunIndex,"@",Config.PerFrame)

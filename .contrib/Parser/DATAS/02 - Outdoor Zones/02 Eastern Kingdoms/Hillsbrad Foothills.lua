@@ -274,7 +274,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28206, {	-- A Lost Lad [Shadowlands+] / Little Girl Lost
 					["qg"] = 47781,	-- Warden Stillwater
 					["sourceQuests"] = {
@@ -1896,7 +1896,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28206, {	-- Little Girl Lost / A Lost Lad [Shadowlands+]
 					["qg"] = 47781,	-- Warden Stillwater
 					["sourceQuests"] = {

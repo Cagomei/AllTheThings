@@ -76,7 +76,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 		}),
 		filter(MISC, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
-			i(237014),	-- Severed Threads Commendation
+			i(237014),	-- Severed Threads Commendation [1500 Rep]
+			i(244848, { ["timeline"] = { ADDED_11_1_7 } }),	-- Severed Threads Commendation [100 Rep]
 		})),
 		n(WEAPONS, {
 			i(224702),	-- Ancient Forged Blade

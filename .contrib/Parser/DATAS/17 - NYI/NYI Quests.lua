@@ -3345,7 +3345,9 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 					i(152629),	-- Crate of Non-Tainted Meat Products (QI!)
 				},
 			}),
-			q(48653, {
+			q(48653, {	-- A Bejeweled Prison
+				["provider"] = { "i", 152655 },	-- Restored Eye of Obsidian (QS!)
+				["cost"] = {{ "i", 152656, 5 },},	-- Eye of Obsidian Fragment
 				["description"] = "Area: |cFFf09f26Nazmir|r",
 				["lvl"] = 20,
 				["races"] = HORDE_ONLY,

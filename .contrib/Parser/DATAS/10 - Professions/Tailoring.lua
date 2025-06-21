@@ -1049,7 +1049,7 @@ profession(TAILORING, {
 	})),
 	-- #endif
 	expansion(EXPANSION.CLASSIC, {
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER SL
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1504,
@@ -2296,7 +2296,7 @@ profession(TAILORING, {
 		-- #endif
 	}),
 	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, {
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER SL
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1505,
@@ -2777,7 +2777,7 @@ profession(TAILORING, {
 		-- #endif
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, {
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER SL
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1506,
@@ -3321,7 +3321,7 @@ profession(TAILORING, {
 		-- #endif
 	})),
 	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER SL
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1507,
@@ -3997,7 +3997,7 @@ profession(TAILORING, {
 		-- #endif
 	})),
 	applyclassicphase(MOP_PHASE_LANDFALL, expansion(EXPANSION.MOP, {
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER SL
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1508,
@@ -4709,7 +4709,7 @@ profession(TAILORING, {
 	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, {
 		n(DROPS, {
 		}),
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER SL
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1509,
@@ -4922,7 +4922,7 @@ profession(TAILORING, {
 		-- #endif
 	})),
 	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, {
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER SL
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1510,
@@ -6252,7 +6252,7 @@ profession(TAILORING, {
 			},
 		}),
 	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(EXPANSION.SL, {
+	applyclassicphase(SL_PHASE_ONE, expansion(EXPANSION.SL, {
 		applytraining({
 			-- All Quest Recipes marked unobtainable(training) because they are only learned temporarily
 			-- for world quests then disappear from the spellbook after the quest is completed.
@@ -7127,7 +7127,7 @@ neverimplemented(i(162428));	-- Pattern: Embroidered Deep Sea Gloves (Rank 3)
 neverimplemented(i(162430));	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
 -- #endif
 
--- #if AFTER SHADOWLANDS
+-- #if AFTER SL
 
 -- #endif
 -- #endif

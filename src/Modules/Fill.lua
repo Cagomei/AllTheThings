@@ -31,12 +31,13 @@ if app.IsClassic then return end
 
 
 
-local wipe,pairs,ipairs,rawget,math_floor,unpack
-	= wipe,pairs,ipairs,rawget,math.floor,unpack
+local pairs,rawget,math_floor,unpack
+	= pairs,rawget,math.floor,unpack
 
 -- App locals
 local SearchForObject, SearchForField, GetRelativeValue, ArrayAppend, AssignChildren
 	= app.SearchForObject, app.SearchForField, app.GetRelativeValue, app.ArrayAppend, app.AssignChildren
+local wipearray = app.wipearray
 
 -- Fill API Implementation
 -- Access via AllTheThings.Modules.Fill
@@ -86,13 +87,14 @@ local function DetermineRecipeOutputGroups(group, FillData)
 	end
 end
 local function GetAllNestedGroupsByFunc(results, groups, func)
-	local g
-	for _,o in ipairs(groups) do
+	local g,o
+	for i=1,#groups do
+		o = groups[i]
 		if func(o) then results[#results + 1] = o end
 		g = o.g
 		if g then
-			for _,t in ipairs(g) do
-				GetAllNestedGroupsByFunc(results, t, func)
+			for i=1,#g do
+				GetAllNestedGroupsByFunc(results, g[i], func)
 			end
 		end
 	end
@@ -219,8 +221,8 @@ local FillFunctions = {
 				-- flag all nested symlinked content so that any NPC groups do not nest NPC data
 				local results = {}
 				GetAllNestedGroupsByFunc(results, groups, GetNpcIDForDrops)
-				for _,o in ipairs(results) do
-					o.NestNPCDataSkip = true
+				for i=1,#results do
+					results[i].NestNPCDataSkip = true
 				end
 			end
 			-- app.PrintDebug("DSG",groups and #groups);
@@ -245,8 +247,9 @@ local FillFunctions = {
 		if difficultyID then
 			-- app.PrintDebug("FillNPC.Diff",difficultyID)
 			-- can only fill npc groups for the npc which match the difficultyID
-			local headerID, groups, npcDiff;
-			for _,npcGroup in ipairs(npcGroups) do
+			local headerID, groups, npcDiff, npcGroup
+			for i=1,#npcGroups do
+				npcGroup = npcGroups[i]
 				if npcGroup.hash ~= group.hash then
 					headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
 					-- app.PrintDebug("DropCheck",app:SearchLink(npcGroup),"=>",headerID)
@@ -269,8 +272,9 @@ local FillFunctions = {
 			return groups;
 		else
 			-- app.PrintDebug("FillNPC")
-			local headerID, groups;
-			for _,npcGroup in ipairs(npcGroups) do
+			local headerID,groups,npcGroup
+			for i=1,#npcGroups do
+				npcGroup = npcGroups[i]
 				if npcGroup.hash ~= group.hash then
 					headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
 					-- app.PrintDebug("DropCheck",app:SearchLink(npcGroup),"=>",headerID)
@@ -294,10 +298,10 @@ local FillFunctions = {
 
 do
 -- Scope the Filler tables
-for _,scope in ipairs(Scopes) do
-	ScopeFillPriority[scope] = {}
-	ActiveFillFunctions[scope] = {}
-	FillSettings.ScopesIgnored[scope] = {}
+for i=1,#Scopes do
+	ScopeFillPriority[Scopes[i]] = {}
+	ActiveFillFunctions[Scopes[i]] = {}
+	FillSettings.ScopesIgnored[Scopes[i]] = {}
 end
 -- TEMP: fill the Priority scopes with any remaining static values
 local tempPriority = {
@@ -327,7 +331,7 @@ local function RefreshActiveFillFunctions()
 	local scopedFunctions
 	for scope,priority in pairs(ScopeFillPriority) do
 		scopedFunctions = ActiveFillFunctions[scope]
-		wipe(scopedFunctions)
+		wipearray(scopedFunctions)
 		for i=1,#priority do
 			scopedFunctions[#scopedFunctions + 1] = FillFunctions[priority[i]]
 			-- app.PrintDebug("ActiveFiller",scope,i,scopedFunctions[i])
@@ -608,17 +612,17 @@ local function FillGroupsLayeredAsync(group, FillData)
 end
 local function RunGroupsLayeredAsync(FillData)
 	local g = FillData.NextLayer;
-	if #g > 0 then
+	if g and #g > 0 then
 		-- if FillData.CurrentLayer then
 		-- 	app.PrintDebug("FillLayered",FillData.CurrentLayer,#g)
 		-- 	FillData.CurrentLayer = FillData.CurrentLayer + 1
 		-- end
 		local Run = FillData.Runner.Run;
 		-- Then nest anything further
-		for _,o in ipairs(g) do
-			Run(FillGroupsLayeredAsync, o, FillData)
+		for i=1,#g do
+			Run(FillGroupsLayeredAsync, g[i], FillData)
 		end
-		wipe(FillData.NextLayer)
+		wipearray(FillData.NextLayer)
 		-- Re-run the layer runner since there's been more filling scheduled
 		Run(RunGroupsLayeredAsync, FillData)
 	end
@@ -649,6 +653,9 @@ local FillGroups = function(group)
 		NextLayer = {},
 		-- CurrentLayer = 0,	-- debugging
 		InWindow = groupWindow and true or nil,
+		-- TODO: Fillers can provide context requirements for themselves to be utilized for a given
+		-- fill operation.
+		-- i.e. provided the Root/Window/Instance/Combat -- the Filler may return that it should not be included
 		Fillers = ActiveFillFunctions[groupWindow and "LIST" or "TOOLTIP"],
 		SkipLevel = app.GetSkipLevel(),
 		Root = group,
@@ -695,8 +702,8 @@ local FillGroups = function(group)
 		local FillLayer = {group}
 		local NextLayer = {}
 		while #FillLayer > 0 do
-			for _,fillGroup in ipairs(FillLayer) do
-				app.ArrayAppend(NextLayer, FillGroupsLayered(fillGroup, FillData))
+			for i=1,#FillLayer do
+				app.ArrayAppend(NextLayer, FillGroupsLayered(FillLayer[i], FillData))
 			end
 			FillLayer = NextLayer
 			NextLayer = {}

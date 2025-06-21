@@ -2201,7 +2201,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(27271, {	-- Frazzle's Request [SL+] / Journey to the Wizard's Sanctum
 					["qgs"] = {
 						16749,	-- Edirah
@@ -2665,7 +2665,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = { PANDAREN_NEUTRAL },
 				}),
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(27271, {	-- Journey to the Wizard's Sanctum / Frazzle's Request [SL+]
 					["qgs"] = {
 						16749,	-- Edirah

@@ -830,8 +830,6 @@ local SubroutineCache = {
 		local select, pop, is = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.is;
 		select(finalized, searchResults, o, "select", "npcID", npcID);	-- Main Vendor
 		pop(finalized, searchResults);	-- Remove Main Vendor and push his children into the processing queue.
-		-- TODO: don't think we will need this anymore with 'select' fixes to only pull actual Thing being selected
-		-- is(finalized, searchResults, o, "is", "itemID");	-- Only Items
 	end,
 	-- TW Instance
 	["tw_instance"] = function(finalized, searchResults, o, cmd, instanceID)
@@ -840,8 +838,7 @@ local SubroutineCache = {
 		push(finalized, searchResults, o, "push", "headerID", app.HeaderConstants.COMMON_BOSS_DROPS);	-- Push into 'Common Boss Drops' header
 		finalize(finalized, searchResults);	-- capture current results
 		select(finalized, searchResults, o, "select", "instanceID", instanceID);	-- select this instance
-		-- TODO: collect into an exportDB table to future-proof new TW eventIDs
-		whereany(finalized, searchResults, o, "whereany", "e", 1271, 1508, 559, 562, 587, 643, 1056, 1263 );	-- Select any TIMEWALKING eventID
+		whereany(finalized, searchResults, o, "whereany", "e", unpack(app.TW_EventIDs or app.EmptyTable) );	-- Select any TIMEWALKING eventID
 		if #searchResults > 0 then o.e = searchResults[1].e; end
 		pop(finalized, searchResults);	-- pop the instance header
 	end,

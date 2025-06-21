@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["classes"] = { SHAMAN },
 							["races"] = { DRAENEI },
 							["lvl"] = 4,
-							-- #if BEFORE 4.0.3
+							-- #if BEFORE CATA
 							["groups"] = {
 								recipe(8071),	-- Stoneskin Totem
 								i(5175, {	-- Earth Totem
@@ -146,16 +146,16 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							},
 							-- #endif
 						}),
-						q(26968, {	-- Frost Nova
-							["qg"] = 16500,	-- Valaatu
+						q(26968, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Draenei)
+							["qg"] = 16500,	-- Valaatu <Mage Trainer>
 							-- #if AFTER MOP
 							["coord"] = { 51.0, 43.0, AMMEN_VALE },
 							-- #else
 							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-							["classes"] = { MAGE },
 							["races"] = { DRAENEI },
+							["classes"] = { MAGE },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9294, {	-- Healing the Lake
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								}),
 							},
 						}),
-						q(26970, {	-- Learning the Word
+						q(26970, {	-- Aiding the Injured [Cata] / Learning the Word [MoP+]
 							["qg"] = 16502,	-- Zalduun
 							-- #if AFTER MOP
 							["coord"] = { 52.1, 42.4, AMMEN_VALE },

@@ -451,7 +451,7 @@ NAZJATAR_ALCHEMY = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] 
 		r(298995),	-- Abyssal Alchemist Stone
 	}),
 }));
-SL_ALCHEMY = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_ALCHEMY = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309822),	-- Shadowlands Alchemy
 	filter(CONSUMABLES, {
 		r(359870, {["timeline"] = {ADDED_9_2_0}}),	-- Cosmic Healing Potion

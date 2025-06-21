@@ -3,13 +3,13 @@ local _, app = ...;
 local L = app.L
 
 -- Global locals
-local ipairs, pairs, rawset, type, wipe, setmetatable, rawget, math_floor,tremove
-	= ipairs, pairs, rawset, type, wipe, setmetatable, rawget, math.floor,tremove
+local ipairs, pairs, rawset, type, setmetatable, rawget, math_floor,tremove
+	= ipairs, pairs, rawset, type, setmetatable, rawget, math.floor,tremove
 local C_Map_GetAreaInfo, C_Map_GetMapInfo = C_Map.GetAreaInfo, C_Map.GetMapInfo;
 
 -- App locals
-local contains, classIndex, raceIndex, factionID, ArrayAppend =
-	app.contains, app.ClassIndex, app.RaceIndex, app.FactionID, app.ArrayAppend
+local wipearray, ArrayAppend =
+	app.wipearray, app.ArrayAppend
 
 -- Module locals
 local AllCaches, AllGamePatches, postscripts, runners, QuestTriggers = {}, {}, {}, {}, {};
@@ -707,9 +707,10 @@ if app.IsRetail then
 	fieldConverters.heirloomID = fieldConverters.itemID;
 	postscripts[#postscripts + 1] = function()
 		if #cacheGroupForModItemID == 0 then return end
-		local modItemID
+		local modItemID,group
 		-- app.PrintDebug("caching for modItemID",#cacheGroupForModItemID)
-		for _,group in ipairs(cacheGroupForModItemID) do
+		for i=1,#cacheGroupForModItemID do
+			group = cacheGroupForModItemID[i]
 			modItemID = group.modItemID
 			if modItemID then
 				CacheField(group, "modItemID", modItemID)
@@ -718,7 +719,7 @@ if app.IsRetail then
 				end
 			end
 		end
-		wipe(cacheGroupForModItemID)
+		wipearray(cacheGroupForModItemID)
 		-- app.PrintDebug("caching for modItemID done")
 	end
 
@@ -759,13 +760,13 @@ end
 CacheFields = function(group, skipMapCaching)
 	allowMapCaching = not skipMapCaching
 	_CacheFields(group);
-	for i,runner in ipairs(runners) do
-		runner();
+	for i=1,#runners do
+		runners[i]()
 	end
-	for i,postscript in ipairs(postscripts) do
-		postscript();
+	for i=1,#postscripts do
+		postscripts[i]();
 	end
-	wipe(runners);
+	wipearray(runners);
 	return group;
 end
 

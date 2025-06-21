@@ -1474,7 +1474,7 @@ root(ROOTS.Zones, {
 				12593,	-- Loremaster of Kul Tiras (A)
 				13294,	-- Loremaster of Zandalar (H)
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				14280,	-- Loremaster of Shadowlands
 				-- #endif
 			}},

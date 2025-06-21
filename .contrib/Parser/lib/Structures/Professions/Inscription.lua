@@ -257,7 +257,7 @@ NAZJATAR_INSCRIPTION = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timelin
 		r(294790),	-- Notorious Combatant's Etched Vessel [Rank 1]
 	}),
 }));
-SL_INSCRIPTION = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_INSCRIPTION = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309805),	-- Shadowlands Inscription
 	r(382982, {["timeline"] = {ADDED_10_0_0}}),	-- Shadowlands Milling
 	r(311413),	-- Mass Mill Deathblossom

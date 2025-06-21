@@ -1026,7 +1026,7 @@ root(ROOTS.Zones, {
 					q(11705, {	-- Foolish Endeavors
 						["qgs"] = {
 							25729,	-- Shadowstalker Getry
-							-- #if AFTER SHADOWLANDS
+							-- #if AFTER SL
 							176304,	-- Shadowstalker Getry
 							-- #endif
 						},

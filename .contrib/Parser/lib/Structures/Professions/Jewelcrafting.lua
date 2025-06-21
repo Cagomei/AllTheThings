@@ -608,7 +608,7 @@ NAZJATAR_JEWELCRAFTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timel
 		r(294793),	-- Notorious Combatant's Intuitive Staff
 	}),
 }));
-SL_JEWELCRAFTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_JEWELCRAFTING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(311967),	-- Shadowlands Jewelcrafting
 	r(325248),	-- Shadowlands Prospecting \\ Prospecting
 	r(311953),	-- Mass Prospect Elethium

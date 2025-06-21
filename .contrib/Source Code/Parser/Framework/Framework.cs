@@ -69,7 +69,7 @@ namespace ATT
             { "TRANSMOG", 69 }, // Transmog came out sometime after WOD.
             { "LEGION", 70 },   // LEGION_PHASE_ONE
             { "BFA", 80 },      // BFA_PHASE_ONE
-            { "SHADOWLANDS", 90 },      // SHADOWLANDS_PHASE_ONE
+            { "SL", 90 },      // SL_PHASE_ONE
             { "DF", 100 },      // DF_PHASE_ONE
             { "TWW", 110 },     // TWW_PHASE_ONE
             { "MID", 120 },     // MID_PHASE_ONE
@@ -93,7 +93,7 @@ namespace ATT
             { "TRANSMOG", 69 }, // Transmog came out sometime after WOD.
             { "LEGION", 79 },   // LEGION_PHASE_SIX?
             { "BFA", 89 },      // BFA_PHASE_SIX?
-            { "SHADOWLANDS", 99 },      // SHADOWLANDS_PHASE_SIX?
+            { "SL", 99 },      // SL_PHASE_SIX?
             { "DF", 99 },      // DF_PHASE_SIX?
             { "TWW", 99 },      // TWW_PHASE_SIX?
             { "MID", 99 },      // MID_PHASE_SIX?
@@ -1887,13 +1887,13 @@ namespace ATT
 #if TLT
             return "TLT/";
 #elif MID
-            return "Midnight/";
+            return "MID/";
 #elif TWW
             return "TWW/";
 #elif DF
-            return "Dragonflight/";
-#elif SHADOWLANDS
-            return "Shadowlands/";
+            return "DF/";
+#elif SL
+            return "SL/";
 #elif BFA
             return "BFA/";
 #elif LEGION

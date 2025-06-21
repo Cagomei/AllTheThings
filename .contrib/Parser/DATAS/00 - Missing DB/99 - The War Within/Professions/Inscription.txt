@@ -647,6 +647,10 @@ r(382994),	-- Classic Milling
 r(1213516),	--
 11.1.7.60520
 r(1234336),	-- Glyph of the Strix
+11.2.0.61476
+r(1236170),	-- Contract: The K'aresh Trust
+r(1236908),	-- Vantus Rune: Manaforge Omega
+r(1243994),	-- Inspired Writer's Quill
 
 
 
@@ -665,3 +669,7 @@ r(148277),	--
 r(1213516),	--
 11.1.7.60520
 r(1234336),	-- Glyph of the Strix
+11.2.0.61476
+r(1236170),	-- Contract: The K'aresh Trust
+r(1236908),	-- Vantus Rune: Manaforge Omega
+r(1243994),	-- Inspired Writer's Quill
