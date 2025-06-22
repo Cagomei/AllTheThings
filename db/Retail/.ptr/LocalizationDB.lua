@@ -1666,9 +1666,6 @@ _.Modules.Events.SetEventInformation(133889, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026})
 });
-_.Modules.Events.SetEventInformation(450, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=22,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=20,["weekday"]=3,["year"]=2025})
-});
 _.Modules.Events.SetEventInformation(1525555, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=30,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=30,["weekday"]=1,["year"]=2025})
 });
@@ -9686,9 +9683,12 @@ local ObjectNames = {
 	[466497] = "Encrypted Chest",
 	[466512] = "Crystallized Celebration Crate",
 	[466808] = "Chest of Acquisitions",
+	[466810] = "Void Cleft",
 	[466943] = "Sentry Statue",
 	[466960] = "Treasure of the Wardens",
 	[466975] = "Enigma Machine",
+	[466978] = "Om'Bera's Clipboard",
+	[466983] = "Curved Dagger",
 	[467060] = "Ball of Yarn",
 	[467064] = "Quest Journal",
 	[467075] = "Darkmoon Fortune Card",
@@ -9705,6 +9705,7 @@ local ObjectNames = {
 	[467342] = "Darkmoon Fortune Card",
 	[467351] = "Darkmoon Fortune Card",
 	[467403] = "Darkmoon Fortune Card",
+	[467435] = "Zaranit Bud",
 	[467447] = "G.E.T.A. Needs You!",
 	[467468] = "Muff's Auto-Locker",
 	[467489] = "Ghostly Celebration Crate",
@@ -9738,6 +9739,7 @@ local ObjectNames = {
 	[475116] = "Ordinary Pebble",
 	[475284] = "Earthen Prototype",
 	[475286] = "Overcharged Battery",
+	[475872] = "Rippling Wellspring",
 	[475987] = "Pile 'o' Scrap",
 	[475990] = "Junk Pile",
 	[476066] = "Abandoned Toolbox",
@@ -9794,11 +9796,15 @@ local ObjectNames = {
 	[499028] = "Corrupted Chest",
 	[499029] = "Corrupted Chest",
 	[499031] = "Corrupted Chest",
+	[499082] = "Abandoned Lockbox",
 	[499086] = "Lightly-Dented Luggage",
 	[499090] = "Fireworks Hat",
+	[499093] = "Forlorn Wind Chime",
+	[499097] = "Sand-Worn Coffer",
 	[499119] = "Lonely Tub",
 	[499127] = "Runemarked Coffer",
 	[499207] = "Suspicious Book",
+	[499334] = "Flickering Lantern",
 	[499466] = "Tattered Kul Tiran Journal",
 	[499551] = "Blacksteel Cannonballs",
 	[499605] = "Rocket Drill Safety Manual",
@@ -9806,6 +9812,7 @@ local ObjectNames = {
 	[499862] = "Runed Storm Cache",
 	[499863] = "Runed Storm Cache",
 	[499928] = "Darkfuse Research Notes",
+	[499949] = "Stolen Research Crate",
 	[499954] = "Corrupted Chest",
 	[499956] = "Corrupted Chest",
 	[499957] = "Corrupted Chest",
@@ -9838,7 +9845,16 @@ local ObjectNames = {
 	[500758] = "Uncovered Strongbox",
 	[500759] = "Uncovered Strongbox",
 	[500813] = "Rod of analysis",
+	[502375] = "Sand Pile",
+	[502376] = "Sand Pile",
+	[502377] = "Sand Pile",
+	[502437] = "Wastelander Stash",
+	[502452] = "Tumbled Package",
+	[502471] = "Rashaal's Vase",
+	[502485] = "Shattered Crystals",
 	[502525] = "Barrier Projector",
+	[502547] = "Skeletal Tail Bones",
+	[502603] = "Crudely Stitched Sack",
 	[502893] = "First Half of Noggenfogger's Journal",
 	[502902] = "Second Half of Noggenfogger's Journal",
 	[502903] = "Gallywix's Notes",
@@ -9863,6 +9879,7 @@ local ObjectNames = {
 	[503871] = "Nemesis Strongbox",
 	[504093] = "Web Bomb",
 	[504096] = "Crumpled Schematics",
+	[504172] = "Ixthar's Favorite Crystal",
 	[504195] = "Web Bomb",
 	[504338] = "Rooftop Teleporter",
 	[504669] = "Mouthwash Bottle",
@@ -16779,6 +16796,7 @@ local ObjectModels = {
 	[475116] = 1068320,
 	[475284] = 5205857,
 	[475286] = 2736566,
+	[475872] = 353152,
 	[476815] = 936413,
 	[477098] = 942843,
 	[477139] = 196982,
@@ -16846,6 +16864,9 @@ local ObjectModels = {
 	[500689] = 219372,
 	[500690] = 446671,
 	[500754] = 5788112,
+	[502375] = 5486311,
+	[502376] = 5486311,
+	[502377] = 5486311,
 	[502471] = 3996881,
 	[502547] = 1664097,
 	[502603] = 977078,
@@ -16927,9 +16948,9 @@ local ObjectModels = {
 }; _.ObjectModels = ObjectModels;
 
 -- Consolidated Object Data
-local ALLIANCE_BONFIRES = { 187559,187947,187948,187949,187950,187951,187952,187953,187954,187955,187956,187957,187958,187959,187960,187961,187962,187963,187964,187965,187966,187967,187968,187969,187970,187971,187972,187973,187974,187975,194033,194034,194037,194039,194042,194043,194046,194048,207983,207986,207989,207990,207991,207992,208090,208094,217852,259870,259926,316795,316796,316801 };
+local ALLIANCE_BONFIRES = { 187564,187914,187916,187917,187919,187920,187921,187922,187923,187924,187925,187926,187927,187928,187929,187930,187931,187932,187933,187934,187935,187936,187937,187938,187939,187940,187941,187942,187943,187944,187945,187946,194032,194035,194036,194038,194040,194044,194045,194049,207982,207984,207985,207987,207988,207993,208089,208093,217851,259871,259927,316788,316791,316793 };
 local CANDY_BUCKETS = { 189303,190034,190035,190036,190037,190038,190039,190040,190041,190042,190043,190044,190045,190046,190047,190048,190049,190050,190051,190052,190053,190054,190055,190056,190057,190058,190059,190060,190061,190062,190063,190064,190065,190066,190067,190068,190069,190070,190071,190072,190073,190074,190075,190076,190077,190078,190079,190080,190081,190082,190083,190084,190085,190086,190087,190088,190089,190090,190091,190096,190097,190098,190099,190100,190101,190102,190103,190104,190105,190106,190107,190108,190109,190110,190111,190112,190113,190114,190115,190116,191878,191879,191880,191881,191882,191883,192018,194056,194057,194058,194059,194060,194061,194062,194063,194064,194065,194066,194067,194068,194069,194070,194071,194072,194073,194074,194075,194076,194077,194078,194079,194080,194081,194084,194119,208115,208116,208117,208118,208119,208120,208121,208122,208123,208124,208125,208126,208127,208128,208129,208130,208131,208132,208133,208134,208135,208136,208137,208138,208139,208140,208141,208142,208143,208144,208145,208146,208147,208148,208149,208150,208151,208152,208153,208154,208155,208156,208157,208158,208159,208160,208161,208162,208163,208164,208165,208166,208167,208168,208169,208170,208171,208172,208173,208174,208175,208176,208177,208178,208179,208180,208181,208183,215873,215874,215875,215876,215877,215879,215880,215881,215884,215886,215889,215891,215892,215894,215895,215897,215898,215899,215900,215902,215903,215904,215905,215906,215907,215908,215914,215915,243912,251670,251671,251672,316754,316755,401714,401723,401724,401725,401726,401727,401728,401729,401730,401731,401732,401733,401734,401735,401736,401737,401738,401739,401740,401741,401742,401743,401744,401745,401746,401747,401748,401749,401750,401751,401752,401753,401754,401755,401756,401757,407048,464911,464913,464914,464915,464916,464917,464918,464919,464920,464921,464922,464923,464924,464925,464926,464927,464928,464929 };
-local HORDE_BONFIRES = { 187564,187914,187916,187917,187919,187920,187921,187922,187923,187924,187925,187926,187927,187928,187929,187930,187931,187932,187933,187934,187935,187936,187937,187938,187939,187940,187941,187942,187943,187944,187945,187946,194032,194035,194036,194038,194040,194044,194045,194049,207982,207984,207985,207987,207988,207993,208089,208093,217851,259871,259927,316788,316791,316793 };
+local HORDE_BONFIRES = { 187559,187947,187948,187949,187950,187951,187952,187953,187954,187955,187956,187957,187958,187959,187960,187961,187962,187963,187964,187965,187966,187967,187968,187969,187970,187971,187972,187973,187974,187975,194033,194034,194037,194039,194042,194043,194046,194048,207983,207986,207989,207990,207991,207992,208090,208094,217852,259870,259926,316795,316796,316801 };
 for i,objectID in ipairs(ALLIANCE_BONFIRES) do
 	ObjectNames[objectID] = "Alliance Bonfire";
 	ObjectIcons[objectID] = 135777;
@@ -20519,6 +20540,7 @@ L.QUEST_NAMES = {
 	[86300] = "Looted Violet Goblin Shredder",
 	[86302] = "Looted Mutt",
 	[86303] = "Looted Personal-Use Sapper",
+	[86815] = "Stay awhile and listen: Xal'atath",
 	[86818] = "Stay awhile and listen: Archamge Aethas Sunreaver",
 	[86819] = "Stay awhile and listen: Archmage Khadgar",
 	[87351] = "Stay awhile and listen: Monte Gazlowe",
@@ -20555,6 +20577,7 @@ L.QUEST_NAMES = {
 	[90530] = "Valley of Wisdom & Mask",
 	[90572] = "Stay awhile and listen: Locus-Walker",
 	[90600] = "Stay awhile and listen: Xal'atath",
+	[90614] = "Stay awhile and listen: Locus-Walker",
 	[90672] = "Xarran the Binder weekly reputation obtained.",
 	[90673] = "Sha'ryth the Cursed weekly reputation obtained.",
 	[90675] = "Korgorath the Ravager weekly reputation obtained.",

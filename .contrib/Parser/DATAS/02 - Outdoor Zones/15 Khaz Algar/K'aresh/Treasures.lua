@@ -17,6 +17,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				q(91058, {	-- Bladed Rifle Of Unfettered Momentum
 				}),
 				o(502603, {	-- Crudely Stitched Sack
+					["questID"] = 86323,
 				}),
 				q(90514, {	-- Efrats Forgotten Bulwark
 				}),
@@ -91,8 +92,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				q(91057, {	-- Phaseblade Of The Void Marches
 				}),
 				o(502471, {	-- Rashaal's Vase
+					["questID"] = 86306,
 				}),
 				o(499097, {	-- Sand-Worn Coffer
+					["coord"] = { 54.5, 24.5, KARESH },
+					["questID"] = 85840,
+					["g"] = {
+						i(246297),	-- Desperate Defender's Bladed Staff (COSMETIC!)
+					},
 				}),
 				q(90527, {	-- Shadowguard Crusher
 				}),
@@ -104,7 +111,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				o(502547, {	-- Skeletal Tail Bones
 					-- TODO: Bugged. Can't be looted. 22.06.2025. -Exo
 					["coord"] = { 77.8, 27.9, KARESH },
-					--["questID"] = ,
+					["questID"] = 86322,
 				}),
 				q(90512, {	-- Spear Of Fallen Memories
 				}),
@@ -118,7 +125,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						{ 68.8, 47.9, KARESH },	-- Cave Entrance
 						{ 70.2, 47.7, KARESH },	-- Treasure
 					},
-					--["questID"] = ,
+					["questID"] = 86304,
 				}),
 				q(91055, {	-- Warglaive Of The Audacious Hunter
 				}),
@@ -132,23 +139,29 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				}),
 			}),
 			header(HEADERS.Achievement, 60890, {	-- Secrets of the K'areshi
+				q(91640),	-- A Dog-Eared Book
 				o(558109, {	-- Ba'key's Aromatic Broker Cookies Recipes
 					-- TODO: Bugged. does not trigger a HQT. 22.06.2025. -Exo
 					["coord"] = { 46.3, 18.6, TAZAVESH },
-					--["questID"] = XXXXX,
+					["questID"] = 91645,
 				}),
+				q(91687),	-- Checklist of Minor Pleasures
 				o(558115, {	-- Coins: An Oath We Exchange
 					["coord"] = { 41.7, 39.7, TAZAVESH },
 					["questID"] = 91648,
 				}),
+				q(91646),	-- From Vengeance to Void
 				o(558372, {	-- Geologist Field Journal
 					["coord"] = { 48.9, 57.2, KARESH },
 					["questID"] = 91686,
 				}),
+				q(91649),	-- I Have Become Void!
+				q(91643),	-- Multiversal Energy Dynamics and the Murmurration Paradox
 				o(558105, {	-- Mysterious Notebook
 					["coord"] = { 58.5, 91.5, TAZAVESH },
 					["questID"] = 91642,
 				}),
+				q(91647),	-- The Facts of K'aresh
 			}),
 		}),
 	}),

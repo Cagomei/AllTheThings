@@ -4402,6 +4402,9 @@ i(245574, 4852);	-- Lil' Daz'ti
 ------------------
 -- PATCH 11.2.0 --
 ------------------
+--- ITEM ---
+i(245272, 4846);	-- Heka'Tarnos, Bringer of Discord
+i(245214, 4838);	-- Palek'ti, the Mouth of Nothingness
 --- NPC ---
 --- UNSORTED ---
 i(0, 4824);	-- Baby Karesh Fox - Orange
@@ -4412,7 +4415,6 @@ i(244907, 4827);	-- Dread Horrorling
 i(246339, 4854);	-- Duskytooth Fel Snooter
 i(0, 4842);	-- Duskthief
 i(245252, 4840);	-- Graceful Cosmic Ray Pup
-i(0, 4846);	-- Heka'Tarnos, Bringer of Discord
 i(244909, 4828);	-- Impartial Watcher
 i(245253, 4844);	-- Inquisitive Cosmic Ray Pup
 i(243158, 4813);	-- Ixthal the Observling
@@ -4421,7 +4423,6 @@ i(0, 4832);	-- Looker Gaz'kreth Jr.
 i(245269, 4845);	-- Mr. Long-Legs
 i(246342, 4855);	-- Mustyfur Fel Snooter
 i(0, 4830);	-- Observer, Baby (Green) - no icon
-i(0, 4838);	-- Palek'ti, the Mouth of Nothingness
 i(244910, 4829);	-- Penumbral Terror
 i(246337, 4853);	-- Rustyroot Fel Snooter
 i(245256, 4843);	-- Sao'rhon

@@ -5130,7 +5130,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(45546, {	-- Vizna Bangwrench <Engineering Supplies>
 					["coord"] = { 36.6, 86.8, ORGRIMMAR },
-					["timeline"] = { ADDED_4_0_1 },
+					["timeline"] = { ADDED_4_0_1, REMOVED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(18647, {	-- Schematic: Red Firework (RECIPE!)

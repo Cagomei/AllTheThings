@@ -1101,24 +1101,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = FESTIVAL_LOREMASTER_ID,
 			["coords"] = FESTIVAL_LOREMASTER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
-			["cost"] = {
-				{ "i", 35725, 1 },	-- Summer Incense (Provided)
-			},
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				i(23247),	-- Burning Blossom
+				i(35725),	-- Summer Incense (QI!)
 			},
 		}),
 		q(11966, {	-- Incense for the Festival Scorchlings (H)
 			["qg"] = FESTIVAL_TALESPINNER_ID,
 			["coords"] = FESTIVAL_TALESPINNER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
-			["cost"] = {
-				{ "i", 35725, 1 },	-- Summer Incense (Provided)
-			},
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				i(23247),	-- Burning Blossom
+				i(35725),	-- Summer Incense (QI!)
 			},
 		}),
 		q(29092, {	-- Inform the Elder (A)

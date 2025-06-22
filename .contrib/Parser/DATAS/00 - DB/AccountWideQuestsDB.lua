@@ -1575,6 +1575,7 @@ ExportDB.AccountWideQuestsDB = {
 	[82809] = true,
 	[83024] = true,	-- The Stormrider's Bond
 	[83025] = true,	-- A Sacred Connection
+	[83134] = true,	-- Increased Midsummer Fire Festival Special Loot Droprate (Daily Accountwide)
 	[83156] = true,
 	[83180] = true,
 	[83193] = true,

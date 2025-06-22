@@ -95,7 +95,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["coord"] = { 52.5, 73.1, 2381 },	-- Ny'alotha, the Waking City
 						["maps"] = { 2379 },	-- Annex of Prophecy
 						["g"] = {
-							i(244888),	-- Echo of the Xal'atath, Blade of the Black Empire (TOY!)
+							i(244888),	-- Echo of Xal'atath, Blade of the Black Empire (TOY!)
 							i(244846),	-- Lorewalker's Notes: Xal'atath, Blade of the Black Empire (lore)
 						},
 					}),

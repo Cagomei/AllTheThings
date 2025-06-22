@@ -69,6 +69,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			n(232182, {	-- Prototype Mk-V
 				["coord"] = { 45.8, 24.2, KARESH },
 				["questID"] = 90590,
+				["g"] = {
+					i(239478),	-- Reshii Brute's Greatbelt
+				},
 			}),
 			n(241920, {	-- Purple Peat
 				["coord"] = { 42.5, 57.5, KARESH },

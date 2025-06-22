@@ -1462,7 +1462,7 @@ i(239018);	-- Winner's Podium
 ------------------
 -- PATCH 11.1.7 --
 ------------------
-i(244888);	-- Echo of the Xal'atath, Blade of the Black Empire
+i(244888);	-- Echo of Xal'atath, Blade of the Black Empire
 i(245567);	-- K'aresh Memory Crystal
 i(246227);	-- Lightning-Blessed Spire
 i(235016);	-- Redeployment Module
@@ -1472,10 +1472,9 @@ i(245942);	-- Sea-Blessed Shrine
 ------------------
 -- PATCH 11.2.0 --
 ------------------
+i(242323);	-- Chowdar's Favorite Ribbon
 i(246565);	-- Cosmic Hearthstone
+i(245970);	-- P.O.S.T. Master's Express Hearthstone
 --- UNSORTED ---
 i(245946);	-- Brewer's Balloon
-i(242323);	-- Chowdar's Favorite Ribbon
-
 i(243056);	-- Delver's Mana-Bound Ethergate
-i(245970);	-- P.O.S.T. Master's Express Hearthstone

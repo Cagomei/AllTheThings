@@ -2,11 +2,6 @@ WINDS_OF_MYSTERIOUS_FORTUNE_HEADER = createHeader({
 	readable = "Winds of Mysterious Fortune",
 	icon = 6439633,
 	eventID = EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE,
-	eventSchedule = {
-		0, -- July 15th, 2025 to August 12th, 2025
-		2025, 7, 15,	-- 7/15/2025
-		2025, 8, 12,	-- 8/12/2025
-	},
 	text = {
 		en = "Winds of Mysterious Fortune",
 		es = "Vientos de fortuna misteriosa",

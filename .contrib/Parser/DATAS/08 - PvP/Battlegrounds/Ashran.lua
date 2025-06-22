@@ -4,6 +4,7 @@
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(1478, {	-- Ashran
 		["description"] = "Ashran is a 40v40 epic battleground found in eastern Draenor.",
+		["icon"] = 1031537,
 		["timeline"] = { ADDED_6_0_2 },
 		["maps"] = { 588, 589 },	-- Ashran & Ashran Mine
 		["lvl"] = { 25 },
@@ -441,6 +442,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 44.2, 74.2, 1478 },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["g"] = { i(114124) },	-- Phantom Potion
 				}),
 				q(36935, {	-- Phantom Potion (H)
 					["repeatable"] = true,
@@ -448,6 +450,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 45.6, 28.6, 1478 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["g"] = { i(114124) },	-- Phantom Potion
 				}),
 				q(39096, {	-- Slay Them All! (A)
 					["repeatable"] = true,
@@ -535,6 +538,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 44.2, 74.2, 1478 },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["g"] = { i(116925) },	-- Vintage Free Action Potion
 				}),
 				q(36742, {	-- Vintage Free Action Potion (H)
 					["repeatable"] = true,
@@ -542,6 +546,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 45.6, 28.6, 1478 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["g"] = { i(116925) },	-- Vintage Free Action Potion
 				}),
 				q(36119, {	-- Welcome to Ashran (A)
 					["races"] = ALLIANCE_ONLY,
@@ -817,10 +822,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			filter(MISC, {
 				i(115345),	-- Alliance Supply Chest Key
 				i(115346),	-- Horde Supply Chest Key
-				i(114124),	-- Phantom Potion
 				i(114982),	-- Song Flower
 				i(111842),	-- Star Root Tuber
-				i(116925),	-- Vintage Free Action Potion
 			}),
 			n(VENDORS, {
 				n(80882, {	-- Tomas Riogain <Stormshield Quartermaster>
@@ -2092,6 +2095,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				i(116410),	-- Scroll of Speed
 				i(114844),	-- Scroll of Touch of Fatality [Monk]
 				i(114846),	-- Sigil of Death Grip [Death Knight]
+				i(116140),	-- Stormshield Prison Key
 				i(114847),	-- Tablet of Ghost Wolf [Shaman]
 				i(112005),	-- The Jailer's Libram [Paladin]
 				i(114845),	-- Tome of Blink [Mage]
@@ -2100,6 +2104,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				i(118335),	-- Universal Language Repository [Part 3 of 3]
 				i(117016),	-- Wand of Arcane Imprisonment
 				i(117013),	-- Wand of Lightning Shield
+				i(116141),	-- Warspear Prison Key
 			}),
 			i(118093),	-- Dented Ashmaul Strongbox A
 			i(118094),	-- Dented Ashmaul Strongbox H

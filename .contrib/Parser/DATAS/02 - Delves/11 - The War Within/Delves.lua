@@ -1075,9 +1075,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["provider"] = { "o", 413590 },	-- Bountiful Coffer
 			["g"] = {
 				i(220520, {["timeline"]={ REMOVED_11_1_0}}),	-- Radiant Echo
-				i(235897, {["timeline"]={ ADDED_11_1_0_SEASONSTART}}),	-- Radiant Echo
+				i(235897, {["timeline"]={ ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART}}),	-- Radiant Echo
+				i(246771, {["timeline"]={ ADDED_11_2_0_SEASONSTART}}),	-- Radiant Echo
 				i(228958, {["timeline"]={ REMOVED_11_1_0}}),	-- Radiant Echo (QS!)
-				i(235896, {["timeline"]={ ADDED_11_1_0_SEASONSTART}}),	-- Radiant Echo (QS!)
+				i(235896, {["timeline"]={ ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART}}),	-- Radiant Echo (QS!)
+				i(246772, {["timeline"]={ ADDED_11_2_0_SEASONSTART}}),	-- Radiant Echo (QS!)
 				n(ARMOR, {
 					filter(BACK_F, {
 						n(DELVES_TWW_S1, bubbleDown({ ["timeline"] = { REMOVED_11_1_0_SEASONSTART } }, {

@@ -106,6 +106,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		}),
 	})),
+	-- #if SEASON_OF_DISCOVERY
 	expansion(EXPANSION.CLASSIC, applyclassicphase(SOD_PHASE_EIGHT, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_7 } }, {
 		q(90116, {	-- Holy Threads
 			["provider"] = { "n", 240631 },	-- Taylor Stitchings <Tailoring Supplies>
@@ -122,6 +123,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			},
 		}),
 	}))),
+	-- #endif
 	expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 			ach(17499, {	-- Renowned Tailoring Specialist

@@ -1,4 +1,4 @@
-root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_OF_MYSTERIOUS_FORTUNE_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_OF_MYSTERIOUS_FORTUNE_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5, REMOVED_11_1_5, ADDED_11_1_7 } }, {
 	["maps"] = {
 		DRAGON_ISLES,
 		EMERALD_DREAM,

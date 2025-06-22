@@ -21,6 +21,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			visit_exploration(15781,{coord={58.5,75.4,KARESH}}),	-- Tazavesh, the Veiled Market
 			visit_exploration(15804,{coord={52.8,25.0,KARESH}}),	-- Tempest Tract
 			visit_exploration(15790,{coord={47.9,60.8,KARESH}}),	-- The Atrium
+			visit_exploration(15792),	-- The Oasis
 			visit_exploration(15796,{coord={62.8,48.7,KARESH}}),	-- The Tempest Fields
 			visit_exploration(16081,{coord={72.1,13.0,KARESH}}),	-- Vanquisher's Wake
 		}),

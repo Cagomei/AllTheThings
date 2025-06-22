@@ -32,7 +32,6 @@ ach(41979),	-- Bounty Seeker
 ach(41980),	-- Vigilante
 ach(42022),	-- A Trusted Partner
 ach(42118),	-- Of Mice and Manaforges
-ach(42131),	-- Tour of Duty: K'aresh
 ach(42190),	-- Let Me Solo Her: Nexus-Princess Ky'veza
 ach(42191),	-- Safer Deposit
 ach(42193),	-- My Stab-Happy Nemesis
@@ -57,9 +56,6 @@ ach(42731),	-- Become a Hero. Become a Phasediver!
 ach(42736),	-- Ixthar's Legacy
 ach(42737),	-- Capstoned
 ach(42738),	-- We've All Got Swords!
-ach(42739),	-- Sojourner of K'aresh
-ach(42740),	-- Explore K'aresh
-ach(42741),	-- Treasures of K'aresh
 ach(42742),	-- Power of the Reshii
 ach(42761),	-- Remnants of a Shattered World
 ach(42771),	-- Archival Assault Stories
@@ -70,4 +66,3 @@ ach(42781),	-- Heroic: Eco-Dome Al'dani
 ach(42782),	-- Mythic: Eco-Dome Al'dani
 ach(42799),	-- Let Her Solo Me
 ach(60889),	-- Unraveled and Persevering
-ach(60890),	-- Secrets of the K'areshi
