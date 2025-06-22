@@ -1,10 +1,5 @@
 11.2.0.61476
-title(614),	-- %s, Famed Slayer of Dimensius
-title(615),	-- Void Vanquisher %s
-title(632),	-- Astral Warlord %s
-title(633),	-- Astral Gladiator %s
-title(634),	-- Astral Legend %s
-title(635),	-- Astral Marshal %s
+
 title(637),	-- %s the Unbound Hero
 title(638),	-- %s the Delver Within
 title(639),	-- Contract Killer %s

@@ -2082,6 +2082,7 @@ i(243596, 1235819);	-- Wailing Banshee's Charger
 ------------------
 i(248248, 1246781);	-- Azure Void Flyer
 i(247822, 1245517);	-- Scarlet Void Flyer
+i(243061, 1234573);	-- Unbound Star-Eater
 --- UNSORTED ---
 i(0, 1233547);	-- Acidic Void Creeper
 i(247792, 1245358);	-- Akil'darah Windscarred
@@ -2110,7 +2111,6 @@ i(247721, 1245198);	-- The Headless Horseman's Ghoulish Charger
 i(246917, 1244247);	-- Thunder-ridged Elekk
 i(246159, 1241070);	-- Translocated Gorger
 i(0, 1233511);	-- Umbral K'arroc
-i(243061, 1234573);	-- Unbound Star-Eater
 i(186640, 353265);	-- Vandal's Gearglider
 i(0, 1234820);	-- Vicious Void Creeper [A]
 i(0, 1234821);	-- Vicious Void Creeper [H]

@@ -177,12 +177,15 @@ root(ROOTS.Zones, {
 				}),
 				q(41555, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41556, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41261, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41278, {	-- Slippery Stormrays
 					["requireSkill"] = FISHING,

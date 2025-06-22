@@ -71,11 +71,11 @@ function abonfire(questID, t)
 	t.races = ALLIANCE_ONLY;
 	t.isYearly = true;
 	if t.provider and t.provider[1] == "o" then
-		ObjectDB[t.provider[2]] = ALLIANCE_BONFIRE_OBJECT_DATA;
+		ObjectDB[t.provider[2]] = HORDE_BONFIRE_OBJECT_DATA;
 	elseif t.providers then
 		for i,provider in ipairs(t.providers) do
 			if provider and provider[1] == "o" then
-				ObjectDB[provider[2]] = ALLIANCE_BONFIRE_OBJECT_DATA;
+				ObjectDB[provider[2]] = HORDE_BONFIRE_OBJECT_DATA;
 			end
 		end
 	end
@@ -86,11 +86,11 @@ function hbonfire(questID, t)
 	t.races = HORDE_ONLY;
 	t.isYearly = true;
 	if t.provider and t.provider[1] == "o" then
-		ObjectDB[t.provider[2]] = HORDE_BONFIRE_OBJECT_DATA;
+		ObjectDB[t.provider[2]] = ALLIANCE_BONFIRE_OBJECT_DATA;
 	elseif t.providers then
 		for i,provider in ipairs(t.providers) do
 			if provider and provider[1] == "o" then
-				ObjectDB[provider[2]] = HORDE_BONFIRE_OBJECT_DATA;
+				ObjectDB[provider[2]] = ALLIANCE_BONFIRE_OBJECT_DATA;
 			end
 		end
 	end
@@ -259,7 +259,7 @@ local MERCHANT_GROUPS = {
 		["timeline"] = { ADDED_10_1_0 },
 	}),
 	i(242742, {	-- Grand Belt of the Fire Festival (COSMETIC!)
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
 		["timeline"] = { ADDED_11_1_7 },
 	}),
 	i(242740, {	-- Grand Helm of the Fire Festival (COSMETIC!)
@@ -421,8 +421,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					i(95426, {	-- Frostscythe of Lord Ahune [Level 90]
 						["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					}),
+
+					-- WOUTER NOTE: Blizzard added 403 ilvl items specific to Cata Classic, probably because Midsummer happened a 2nd time in late Dragon Soul
+					-- #if ANYCLASSIC
+					i(248747, {	-- Frostscythe of Lord Ahune [Level 85 - ilvl 403]
+						["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
+					}),
+					-- #endif
+
 					i(69771, {	-- Frostscythe of Lord Ahune [Level 85]
-						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+						["timeline"] = {
+							ADDED_4_0_1,
+							-- #if ANYCLASSIC
+							REMOVED_4_4_2,
+							-- #else
+							REMOVED_5_0_4,
+							-- #endif
+						},
 					}),
 					i(54806, {	-- Frostscythe of Lord Ahune [Level 80]
 						["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
@@ -481,21 +496,75 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
 
+			-- WOUTER NOTE: Blizzard added 403 ilvl items specific to Cata Classic, probably because Midsummer happened a 2nd time in late Dragon Soul
+			-- #if ANYCLASSIC
+			i(248751, {	-- Cloak of the Frigid Winds [Level 85]
+				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
+			}),
+			i(248752, {	-- Icebound Cloak [Level 85]
+				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
+			}),
+			i(248750, {	-- Shroud of Winter's Chill [Level 85]
+				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
+			}),
+			i(248749, {	-- The Frost Lord's Battle Shroud [Level 85]
+				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
+			}),
+			i(248748, {	-- The Frost Lord's War Cloak [Level 85]
+				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
+			}),
+			-- #endif
+
 			-- Cataclysm Rewards
 			i(69769, {	-- Cloak of the Frigid Winds [Level 85]
-				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["timeline"] = {
+					ADDED_4_0_1,
+					-- #if ANYCLASSIC
+					REMOVED_4_4_2,
+					-- #else
+					REMOVED_5_0_4,
+					-- #endif
+				},
 			}),
 			i(69770, {	-- Icebound Cloak [Level 85]
-				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["timeline"] = {
+					ADDED_4_0_1,
+					-- #if ANYCLASSIC
+					REMOVED_4_4_2,
+					-- #else
+					REMOVED_5_0_4,
+					-- #endif
+				},
 			}),
 			i(69768, {	-- Shroud of Winter's Chill [Level 85]
-				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["timeline"] = {
+					ADDED_4_0_1,
+					-- #if ANYCLASSIC
+					REMOVED_4_4_2,
+					-- #else
+					REMOVED_5_0_4,
+					-- #endif
+				},
 			}),
 			i(69767, {	-- The Frost Lord's Battle Shroud [Level 85]
-				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["timeline"] = {
+					ADDED_4_0_1,
+					-- #if ANYCLASSIC
+					REMOVED_4_4_2,
+					-- #else
+					REMOVED_5_0_4,
+					-- #endif
+				},
 			}),
 			i(69766, {	-- The Frost Lord's War Cloak [Level 85]
-				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["timeline"] = {
+					ADDED_4_0_1,
+					-- #if ANYCLASSIC
+					REMOVED_4_4_2,
+					-- #else
+					REMOVED_5_0_4,
+					-- #endif
+				},
 			}),
 
 			i(54805, {	-- Cloak of the Frigid Winds [Level 80]
@@ -668,6 +737,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["timeline"] = { ADDED_10_1_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
+			ach(41631, {	-- Flame Warden of Khaz Algar (A)
+				["timeline"] = { ADDED_11_1_7 },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
 		})),
 		n(FACTION_HEADER_HORDE, bubbleDown({ ["races"] = HORDE_ONLY }, {
 			ach(1039, {	-- The Flame Keeper (Horde)
@@ -788,6 +861,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			}),
 			ach(13340, {	-- Flame Keeper of Zandalar (H)
 				["timeline"] = { ADDED_8_1_5 },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
+			ach(41632, {	-- Flame Keeper of Khaz Algar (A)
+				["timeline"] = { ADDED_11_1_7 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 		})),
@@ -1148,12 +1225,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		},
 		q(11882, {	-- Playing with Fire (A)
-			["qg"] = 25962,	-- Fire Eater (A)
+			["qgs"] = {
+				25962,	-- Fire Eater (A)
+				-- #if AFTER 11.1.7
+				240483,	-- Flame Eater
+				-- #endif
+			},
+			-- #if AFTER 11.1.7
+			["coord"] = { 47.2, 53.6, DORNOGAL },
+			-- #endif
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(11915, {	-- Playing with Fire (H)
-			["qg"] = 25994,	-- Fire Eater (H)
+			["qgs"] = {
+				25994,	-- Fire Eater (H)
+				-- #if AFTER 11.1.7
+				240483,	-- Flame Eater
+				-- #endif
+			},
+			-- #if AFTER 11.1.7
+			["coord"] = { 47.2, 53.6, DORNOGAL },
+			-- #endif
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 		}),
@@ -1491,6 +1584,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				19172,	-- Gnome Commoner
 				19173,	-- Night Elf Commoner
 				20102,	-- Goblin Commoner
+				-- #if AFTER 11.1.7
+				220307,	-- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
+				-- #endif
 			},
 			["maps"] = {
 				STORMWIND_CITY,
@@ -1518,6 +1615,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				-- #if AFTER MOP
 				ISLE_OF_THUNDER,
 				-- #endif
+				-- #if AFTER TWW
+				DORNOGAL
+				-- #endif
 			},
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
@@ -1534,6 +1634,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				19177,	-- Troll Commoner
 				19178,	-- Forsaken Commoner
 				20102,	-- Goblin Commoner
+				-- #if AFTER 11.1.7
+				220307,	-- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
+				-- #endif
 			},
 			["maps"] = {
 				ORGRIMMAR,
@@ -1558,6 +1662,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				-- #endif
 				-- #if AFTER MOP
 				ISLE_OF_THUNDER,
+				-- #endif
+				-- #if AFTER TWW
+				DORNOGAL
 				-- #endif
 			},
 			["timeline"] = { ADDED_2_4_0 },
@@ -1598,7 +1705,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11731, {	-- Torch Tossing (A)
 			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
-			["timeline"] = { ADDED_2_4_0 },
+			["timeline"] = { ADDED_2_4_0, REMOVED_10_2_7 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				objective(1, {	-- Hit 8 braziers.
@@ -1610,7 +1717,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11922, {	-- Torch Tossing (H)
 			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
-			["timeline"] = { ADDED_2_4_0 },
+			["timeline"] = { ADDED_2_4_0, REMOVED_10_2_7 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				objective(1, {	-- Hit 8 braziers.
@@ -1618,6 +1725,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				i(23247),	-- Burning Blossom
 			},
+		}),
+		q(82087, {	-- Torch Tossing (A)
+			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
+			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_10_2_7 },
+			["groups"] = { i(23247) },	-- Burning Blossom
+		}),
+		q(82105, {	-- Torch Tossing (H)
+			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
+			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_10_2_7 },
+			["groups"] = { i(23247) },	-- Burning Blossom
 		}),
 		q(11886, {	-- Unusual Activity
 			["qg"] = EARTHEN_RING_ELDER_ID,
@@ -3162,24 +3283,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["timeline"] = { ADDED_10_1_0 },
 				}),
 				honortheflame(87356, {	-- Honor the Flame - Azj-Kahet
-					--["qg"] = ?,	-- ?
-					--["coord"] = { ?, ?, AZJ_KAHET },
-					["timeline"] = { ADDED_11_1_5 },
+					["qg"] = 238339,	-- Azj-Kahet Flame Guardian
+					["coord"] = { 55.54, 43.43, AZJ_KAHET },
+					["timeline"] = { ADDED_11_1_7 },
 				}),
 				honortheflame(87355, {	-- Honor the Flame - Hallowfall
-					--["qg"] = ?,	-- ?
-					--["coord"] = { ?, ?, HALLOWFALL },
-					["timeline"] = { ADDED_11_1_5 },
+					["qg"] = 238338,	-- Hallowfall Guardian
+					["coord"] = { 42.45, 51.59, HALLOWFALL },
+					["timeline"] = { ADDED_11_1_7 },
 				}),
 				honortheflame(87342, {	-- Honor the Flame - Isle of Dorn
-					--["qg"] = ?,	-- ?
-					--["coord"] = { ?, ?, ISLE_OF_DORN },
-					["timeline"] = { ADDED_11_1_5 },
+					["qg"] = 238236,	-- Isle of Dorn Flame Guardian
+					["coord"] = { 48.52, 51.66, DORNOGAL },
+					["timeline"] = { ADDED_11_1_7 },
 				}),
 				honortheflame(87357, {	-- Honor the Flame - The Ringing Deeps
-					--["qg"] = ?,	-- ?
-					--["coord"] = { ?, ?, THE_RINGING_DEEPS },
-					["timeline"] = { ADDED_11_1_5 },
+					["qg"] = 238340,	-- The Ringing Deeps Guardian
+					["coord"] = { 43.65, 32.59, THE_RINGING_DEEPS },
+					["timeline"] = { ADDED_11_1_7 },
 				}),
 			},
 		}),

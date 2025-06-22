@@ -614,8 +614,8 @@ root(ROOTS.Zones, {
 					},
 				}),
 				q(42722, {  -- Friends in Cages
-					["coord"] = { 48.2, 83.2, SURAMAR },
-					["provider"] = { "n", 107997 },	-- Silgryn
+					["coord"] = { 44.2, 73.0, SURAMAR },
+					["provider"] = { "n", 108063 },	-- Korine
 					["sourceQuest"] = 40745,	-- Shift Change
 					["g"] = {
 						i(130209),	-- Never Ending Toy Chest (TOY!)

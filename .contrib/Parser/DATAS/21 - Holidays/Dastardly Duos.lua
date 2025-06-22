@@ -54,12 +54,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 				ach(41922),	-- Undefeatable
 				ach(41810),	-- Winner's Podium
 			}),
-			n(MAILBOX, {
+			n(ADVENTURE_GUIDE, {
 				i(234449),	-- Dastardly Invitation (QS!/QI!)
 			}),
 			n(QUESTS, {
 				q(86491, {	-- Dastardly Duos! It's on!
-					--["sourceQuests"] = { XX },	-- TODO: mailed or via adventure journal
 					["provider"] = { "i", 234449 },	-- Dastardly Invitation
 				}),
 				q(86503, {	-- Who are the Dastardly Duos?
@@ -214,6 +213,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						i(240204),	-- Podium Upgrade: Survival Run
 						i(240205),	-- Podium Upgrade: Time in Spotlights
 						i(240206),	-- Podium Upgrade: Yards Traveled
+						i(240199),	-- Podium Upgrade: Scrappiest
+						i(240200),	-- Podium Upgrade: Longest Survival Run
+						i(240201),	-- Podium Upgrade: Longest Time in Spotlights
+						i(240202),	-- Podium Upgrade: Most Yards Traveled
 					},
 				}),
 			}),

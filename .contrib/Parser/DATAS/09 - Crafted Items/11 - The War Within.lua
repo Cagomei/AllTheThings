@@ -1463,6 +1463,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(219196),	-- Empowered Mulch
 			i(219195),	-- Imbued Mulch
 			i(214597),	-- Irradiated Verdant Seed
+			i(240194, {["timeline"] = {ADDED_11_2_0}}),	-- K'areshi Lotus
 			i(213613),	-- Leyline Residue
 			i(210799),	-- Luredrop+
 			i(210800),	-- Luredrop++
@@ -1475,6 +1476,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210802),	-- Orbinid+
 			i(210803),	-- Orbinid++
 			i(210804),	-- Orbinid+++
+			i(239690, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom+
+			i(239691, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom++
+			i(239692, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom+++
 			i(214595),	-- Sporefused Verdant Seed
 			i(214561),	-- Verdant Seed
 			i(213612),	-- Viridescent Spores
@@ -2350,6 +2354,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210936),	-- Ironclaw Ore+
 			i(210937),	-- Ironclaw Ore++
 			i(210938),	-- Ironclaw Ore+++
+			i(238201, {["timeline"]={ADDED_11_2_0}}),	-- K'areshi Ore+
+			i(238212, {["timeline"]={ADDED_11_2_0}}),	-- K'areshi Ore++
+			i(238213, {["timeline"]={ADDED_11_2_0}}),	-- K'areshi Ore+++
 			i(224838),	-- Null Sliver
 			i(210939),	-- Null Stone
 			i(224583),	-- Slab of Slate

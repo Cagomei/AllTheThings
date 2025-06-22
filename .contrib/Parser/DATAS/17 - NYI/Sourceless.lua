@@ -541,7 +541,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(54974),	--
 				q(56065),	--
 				q(56127),	--
-				q(56607),	--
+				q(56607),	-- Killed Sandcastle?
 				q(56618),	-- killed Tidelord Aquatus (153898)?
 				q(56667),	--
 				q(56742),	--

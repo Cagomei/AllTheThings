@@ -992,7 +992,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Mug of Ol' Barkerstout
 							["providers"] = {
 								{ "o", 202567 },	-- Keg of Ol' Barkerstout
-								{ "o",  52491 },	-- Mug of Ol' Barkerstout
+								{ "i",  52491 },	-- Mug of Ol' Barkerstout
 							},
 							["coords"] = {
 								{ 50.5, 85.9, SOUTHERN_BARRENS },

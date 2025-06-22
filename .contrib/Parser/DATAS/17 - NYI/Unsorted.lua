@@ -7,8 +7,6 @@ root(ROOTS.Unsorted, {
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
 			i(186639),	-- Xy Trustee's Gearglider
 			i(186640),	-- Vandal's Gearglider
-			i(229058),	-- Supply Crates Manifest
-			i(229060),	-- Curved Dagger
 			i(229166),	-- Void Stuffs
 			i(229363),	-- Zaranit Bud
 			i(229398),	-- Sabeel's Tuning Key
@@ -29,7 +27,6 @@ root(ROOTS.Unsorted, {
 			i(229905),	-- Satchel of Seeds
 			i(229959),	-- Void-Infused Shard
 			i(229969),	-- Flickering Essence
-			i(229994),	-- Void Cleft Essence
 			i(230032),	-- Overflowing K'aresh Trust Trove
 			i(230053),	-- Honey Globule
 			i(230210),	-- Tranquilizing Dart
@@ -578,19 +575,16 @@ root(ROOTS.Unsorted, {
 			i(232870),	-- Arsenal: Astral Aspirant's Weapons
 			i(232871),	-- Arsenal: Astral Gladiator's Weapons
 			i(232872),	-- Arsenal: Elite Astral Gladiator's Weapons
-			i(232876),	-- Stolen Research Crate
 			i(232908),	-- Astral Gladiator's Tabard
 			i(232992),	-- Large Bug Bits
 			i(233005),	-- Om'taha's Toolkit[DNT]
 			i(233009),	-- Firebud Pollen
 			i(233012),	-- Flamethrower
-			i(233018),	-- Essence Collector
 			i(233028),	-- Flamethrower
 			i(233192),	-- Shadowguard Weapon
 			i(233193),	-- Shadowguard Weapon
 			i(233194),	-- Shadowguard Weapon
 			i(233195),	-- Pheromone Disperser
-			i(233199),	-- Saturated Entropic Core
 			i(233287),	-- Barrel of Swirling Energy
 			i(233333),	-- Forgecaster Wraps
 			i(233487),	-- Pheromone Disperser
@@ -604,7 +598,6 @@ root(ROOTS.Unsorted, {
 			i(234815),	-- Plague Sample
 			i(234944),	-- Rancor Essence
 			i(235051),	-- Harvested Energy
-			i(235366),	-- Stolen Barrier Projector
 			i(235370),	-- Crate of Food
 			i(235384),	-- Anima Vacuum
 			i(235408),	-- Slateback Fur
@@ -671,54 +664,7 @@ root(ROOTS.Unsorted, {
 			i(237353),	-- Om'sto's Veilshards
 			i(237354),	-- A Bag of Veilshards
 			i(237356),	-- Vermin Attuned Optic-Visualizer
-			i(237522),	-- Colossal Lifetether
-			i(237523),	-- Arcanotech Wrist-Matrix
-			i(237524),	-- Laced Lair-Steppers
-			i(237525),	-- Irradiated Impurity Filter
-			i(237526),	-- Breached Containment Guards
-			i(237527),	-- Frock of Spirit's Reunion
-			i(237528),	-- Manaforged Displacement Chassis
-			i(237529),	-- Harvested Attendant's Uniform
-			i(237530),	-- Shrapnel-Fused Legguards
-			i(237531),	-- Elite Shadowguard Legwraps
-			i(237532),	-- Beacons of False Righteousness
-			i(237533),	-- Atomic Phasebelt
-			i(237534),	-- Singed Sievecuffs
-			i(237535),	-- Artoshion's Abyssal Stare
-			i(237536),	-- Bite of the Astral Wastes
-			i(237537),	-- Claws of Failed Resistance
-			i(237538),	-- Forgeweaver's Journal Holster
-			i(237539),	-- Deathspindle Talons
-			i(237540),	-- Winged Gamma Handlers
-			i(237541),	-- Darksorrow's Corrupted Carapace
-			i(237542),	-- Stellar Navigation Slacks
-			i(237543),	-- Chambersieve Waistcoat
-			i(237544),	-- Royal Voidscale Gauntlets
-			i(237545),	-- Discarded Nutrient Shackles
-			i(237546),	-- Bindings of Lost Essence
-			i(237547),	-- Mounted Manacannons
-			i(237548),	-- Twilight Tyrant's Veil
-			i(237549),	-- Bloodwrath's Gnarled Claws
-			i(237550),	-- Fresh Ethereal Fetters
-			i(237551),	-- Sterilized Expulsion Boots
 			i(237552),	-- Deathbound Shoulderpads
-			i(237553),	-- Laboratory Test Slippers
-			i(237554),	-- Clasp of Furious Freedom
-			i(237555),	-- Pactbound Vambraces
-			i(237556),	-- Sandals of Scarred Servitude
-			i(237557),	-- Reaper's Dreadbelt
-			i(237558),	-- Conjoined Glass Bracers
-			i(237559),	-- Singularity Cincture
-			i(237560),	-- Greaves of Shattered Space
-			i(237561),	-- Yoke of Enveloping Hatred
-			i(237562),	-- Time-Compressed Wristguards
-			i(237563),	-- Ultradense Fission Girdle
-			i(237564),	-- Darkrider Sabatons
-			i(237565),	-- Kinetic Dunerunners
-			i(237567),	-- Logic Gate: Alpha
-			i(237568),	-- Chrysalis of Sundered Souls
-			i(237569),	-- Duskblaze's Desperation
-			i(237570),	-- Logic Gate: Omega
 			i(237572),	-- Smooth Stone
 			i(237581),	-- Dreadful Voidglass Contaminant
 			i(237582),	-- Mystic Voidglass Contaminant
@@ -860,64 +806,19 @@ root(ROOTS.Unsorted, {
 			i(237719),	-- Augur's Ephemeral Mitts
 			i(237720),	-- Augur's Ephemeral Slippers
 			i(237721),	-- Augur's Ephemeral Habiliments
-			i(237723),	-- Ward of the Weaving-Beast
-			i(237724),	-- Iris of the Dark Beyond
-			i(237725),	-- Supermassive Starcrusher
-			i(237726),	-- Marvel of Technomancy
-			i(237727),	-- Collapsing Phaseblades
-			i(237728),	-- Voidglass Kris
-			i(237729),	-- Prodigious Gene Splicer
-			i(237730),	-- Voidglass Spire
-			i(237731),	-- Ergospheric Cudgel
-			i(237732),	-- Piercing Strandbow
-			i(237733),	-- Lacerated Current Caster
-			i(237734),	-- Oath-Breaker's Recompense
-			i(237735),	-- Voidglass Sovereign's Blade
-			i(237736),	-- Overclocked Plexhammer
-			i(237737),	-- Photon Sabre Prime
-			i(237738),	-- Unbound Training Claws
-			i(237739),	-- Obliteration Beamglaive
-			i(237740),	-- Vengeful Netherspike
-			i(237741),	-- Event Horizon
-			i(237742),	-- Fractillus' Last Breath
 			i(237757),	-- Marsh Moss
-			i(237813),	-- Factory-Issue Plexhammer
-			i(237858),	-- Encroaching Void Vestment
 			i(237859),	-- Silent Huntsman's Sandals
 			i(237860),	-- Wastelander's Worn Handwraps
-			i(237861),	-- Cowl of the Lost Trust
-			i(237862),	-- Oathsworn Defender's Leggings
-			i(237863),	-- Eco-Stabilizer's Cord
 			i(237864),	-- Cuffs of the Riftsealer
 			i(237865),	-- Silent Huntsman's Waders
 			i(237866),	-- Wastelander's Worn Gloves
-			i(237867),	-- Oathsworn Defender's Breeches
-			i(237868),	-- Eco-Stabilizer's Sash
 			i(237869),	-- Bindings of the Riftsealer
-			i(237870),	-- Encroaching Void Chainmail
 			i(237871),	-- Silent Huntsman's Striders
 			i(237872),	-- Wastelander's Worn Grips
-			i(237873),	-- Coif of the Lost Trust
-			i(237874),	-- Oathsworn Defender's Greaves
-			i(237875),	-- Tazavesh Guardian's Shoulderguards
-			i(237876),	-- Eco-Stabilizer's Cinch
 			i(237877),	-- Bracers of the Riftsealer
-			i(237878),	-- Helm of the Lost Trust
-			i(237879),	-- Encroaching Void Breastplate
 			i(237880),	-- Silent Huntsman's Sabatons
 			i(237881),	-- Wastelander's Worn Gauntlets
-			i(237882),	-- Oathsworn Defender's Legguards
-			i(237883),	-- Tazavesh Guardian's Mantle
-			i(237884),	-- Eco-Stabilizer's Girdle
 			i(237885),	-- Armplates of the Riftsealer
-			i(237886),	-- Encroaching Void Vest
-			i(237887),	-- Tazavesh Guardian's Epaulets
-			i(237888),	-- Tazavesh Guardian's Shoulderpads
-			i(237890),	-- Band of the Unseen Hand
-			i(237891),	-- Menagerie's Lost Relic
-			i(237892),	-- Hood of the Lost Trust
-			i(237893),	-- Ring of Lingering Shadows
-			i(237894),	-- Pendant of Arcane Havoc
 			i(237898),	-- Hemet's Waterin' Can
 			i(237934),	-- Locket of the Final Purge
 			i(237935),	-- Void-Reckoning Necklace
@@ -998,48 +899,22 @@ root(ROOTS.Unsorted, {
 			i(238045),	-- Pure Chronomatic Fiber
 			i(238046),	-- Pure Energizing Fiber
 			i(238051),	-- Delver's Mana-Skimmer
-			i(238054),	-- Entropic-Shadow Saber
-			i(238055),	-- Entropic-Shadow Dagger
-			i(238056),	-- Entropic-Shadow Staff
-			i(238058),	-- Entropic-Shadow Handaxe
-			i(238059),	-- Entropic-Shadow Gavel
-			i(238060),	-- Entropic-Shadow Greatsword
-			i(238061),	-- Entropic-Shadow Javelin
-			i(238062),	-- Entropic-Shadow Sharpshooter
-			i(238066),	-- Entropic-Shadow Sword
 			i(238177),	-- Delver's Mana-Skimmer Schematic: Emitter
 			i(238178),	-- Delver's Mana-Skimmer Schematic: Canister
 			i(238179),	-- Delver's Mana-Skimmer Schematic: Quad Glider
 			i(238180),	-- Delver's Mana-Skimmer Schematic: Void Paint
 			i(238181),	-- Delver's Mana-Skimmer Schematic: Energy Thrusters
 			i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive
-			i(238184),	-- Stave of Unyielding Will
-			i(238185),	-- Wand of Unyielding Will
-			i(238186),	-- Cudgel of Unyielding Will
-			i(238187),	-- Mace of Unyielding Will
-			i(238188),	-- Greatsword of Unyielding Will
-			i(238189),	-- Dagger of Unyielding Will
-			i(238190),	-- Shield of Unyielding Will
-			i(238191),	-- Relic of Unyielding Will
-			i(238192),	-- Entropic-Shadow Warglaive
-			i(238193),	-- Blade of Unyielding Will
-			i(238194),	-- Blaster of Unyielding Will
-			i(238201),	-- K'areshi Ore
-			i(238212),	-- K'areshi Ore
-			i(238213),	-- K'areshi Ore
 			i(238216),	-- Hemet's Soothin' Flute
 			i(238242),	-- K'arroc Egg
 			i(238254),	-- Nuts and Bolts
-			i(238262),	-- Entropic-Shadow Mace
 			i(238296),	-- Phase Disruptor
-			i(238386),	-- Void-Touched Fragment
 			i(238390),	-- Soulbreaker's Sigil
 			i(238526),	-- Restored Coffer Key
 			i(238527),	-- Restored Coffer Key
 			i(238663),	-- Crystallized Anima
 			i(238664),	-- Crystallized Anima
 			i(238665),	-- Crystallized Anima
-			i(238800),	-- Soggy Bone Splinters
 			i(238801),	-- Mite-Kissed Silver Tooth
 			i(238808),	-- Celeste-Touched Fin
 			i(238810),	-- Mana-Blessed Fin
@@ -1054,7 +929,6 @@ root(ROOTS.Unsorted, {
 			i(238868),	-- Flickering Primeval Element
 			i(238870),	-- Pearly Incisor
 			i(238871),	-- Luminous Brushtail
-			i(238875),	-- Twisted Sediment
 			i(238876),	-- Malicious Mandible
 			i(238877),	-- Hollow Mandible
 			i(238878),	-- Shadow-Touched Fang
@@ -1096,7 +970,6 @@ root(ROOTS.Unsorted, {
 			i(239448),	-- Reshii Magi's Vestments
 			i(239449),	-- Reshii Magi's Slippers
 			i(239450),	-- Reshii Magi's Gloves
-			i(239451),	-- Reshii Magi's Crown
 			i(239452),	-- Reshii Magi's Leggings
 			i(239453),	-- Reshii Magi's Spines
 			i(239454),	-- Reshii Magi's Cord
@@ -1149,15 +1022,11 @@ root(ROOTS.Unsorted, {
 			i(239580),	-- Nether Overlay Matrix
 			i(239594),	-- Crimson Valorstone
 			i(239607),	-- Charged Cyrstal
-			i(239690),	-- Phantom Bloom
-			i(239691),	-- Phantom Bloom
-			i(239692),	-- Phantom Bloom
 			i(240168),	-- Reshii Magi's Seal
 			i(240169),	-- Reshii Magi's Amulet
 			i(240171),	-- Observer's Soul Fetters
 			i(240172),	-- Depleted K'areshi Battery
 			i(240175),	-- Crystallized Ethereal Voidsplinter
-			i(240194),	-- K'areshi Lotus
 			i(240207),	-- Golden Valorstone
 			i(240208),	-- Void-Touched Valorstone
 			i(240209),	-- Golden Valorstone
@@ -1198,22 +1067,6 @@ root(ROOTS.Unsorted, {
 			i(242323),	-- Chowdar's Favorite Ribbon
 			i(242371),	-- Untethered Xy'bucha
 			i(242380),	-- Black Blood Blower
-			i(242391),	-- Soulbinder's Embrace
-			i(242392),	-- Diamantine Voidcore
-			i(242393),	-- Loom'ithar's Living Silk
-			i(242394),	-- Eradicating Arcanocore
-			i(242395),	-- Astral Antenna
-			i(242396),	-- Unyielding Netherprism
-			i(242397),	-- Sigil of the Cosmic Hunt
-			i(242398),	-- Naazindhri's Mystic Lash
-			i(242399),	-- Screams of a Forgotten Sky
-			i(242400),	-- Nexus-King's Command
-			i(242401),	-- Brand of Ceaseless Ire
-			i(242402),	-- Araz's Ritual Forge
-			i(242403),	-- Perfidious Projector
-			i(242404),	-- All-Devouring Nucleus
-			i(242405),	-- Band of the Shattered Soul
-			i(242406),	-- Salhadaar's Folly
 			i(242464),	-- Swarmite's Frenzied Pedicel
 			i(242468),	-- Al'dani Attendant's Gauze
 			i(242470),	-- Mandibular Bonewhacker
@@ -1236,7 +1089,6 @@ root(ROOTS.Unsorted, {
 			i(242494),	-- Lily of the Eternal Weave
 			i(242495),	-- Incorporeal Warpclaw
 			i(242497),	-- Azhiccaran Parapodia
-			i(242529),	-- Shadowtrade Imports
 			i(242535),	-- Missing Imports
 			i(242547),	-- Cracked Keystone
 			i(242636),	-- Astral Legend's Pennant
@@ -1276,9 +1128,6 @@ root(ROOTS.Unsorted, {
 			i(243046),	-- Band of Boundless Hunger
 			i(243048),	-- Technomancer's Service Sandals
 			i(243056),	-- Delver's Mana-Bound Ethergate
-			i(243061),	-- Unbound Star-Eater
-			i(243144),	-- Reshi Crystal Fragments
-			i(243145),	-- Well-Preserved Wrappings
 			i(243147),	-- Ethereal Defense Pylon
 			i(243152),	-- NEW ITem
 			i(243153),	-- Korgorath's Talon
@@ -1293,13 +1142,8 @@ root(ROOTS.Unsorted, {
 			i(243291),	-- Bag of Brewfest Merchandise
 			i(243292),	-- Bag of Brewfest Merchandise
 			i(243293),	-- Bag of Brewfest Merchandise
-			i(243305),	-- Interloper's Silken Striders
-			i(243306),	-- Interloper's Reinforced Sandals
-			i(243307),	-- Interloper's Plated Sabatons
-			i(243308),	-- Interloper's Chain Boots
 			i(243344),	-- Chef's Hat
 			i(243347),	-- Keg of Curiosities
-			i(243365),	-- Maw of the Void
 			i(243479),	-- Bag of Brewfest Ingredients
 			i(243496),	-- Wastelander's Gilded Band
 			i(243497),	-- Wastelander's Gilded Signet
@@ -1411,7 +1255,6 @@ root(ROOTS.Unsorted, {
 			i(244357),	-- Time-Worn Memento
 			i(244358),	-- "Prophecies of the Void"
 			i(244359),	-- Ethereal Pylon Conduit
-			i(244360),	-- K'aresh Nightbloom
 			i(244361),	-- Void-Carved Amethyst
 			i(244421),	-- Set Keystone Map: Eco-Dome Al'dani
 			i(244467),	-- Veridian Thorntail
@@ -1642,7 +1485,7 @@ root(ROOTS.Unsorted, {
 			i(246451),	-- Shadefur Brewthief
 			i(246492),	-- Soulgorged Augment Rune
 			i(246504),	-- Inscrutable Ore
-			i(246565),	-- Cosmic Hearthstone
+
 			i(246582),	-- Inscrutable Flora
 			i(246584),	-- A Steamy Romance Novel: Devouring Love
 			i(246589),	-- Half-Digested Journal
@@ -1746,21 +1589,9 @@ root(ROOTS.Unsorted, {
 			i(246997),	-- Felreaver's Legion Wand
 			i(246998),	-- Felreaver's Hellfire Wand
 			i(246999),	-- Felreaver's Arcane Wand
-			i(247685),	-- Slightly Used Containment Device
-			i(247686),	-- Crystallized Nightshade
-			i(247687),	-- Overly-Preserved K'areshi Preserves
-			i(247688),	-- K'arroc Feather Quill
 			i(247689),	-- K'areshi Copper Ingot
 			i(247690),	-- Void-Tainted Lotus
 			i(247691),	-- Slateback Hide
-			i(247692),	-- K'areshi Grain Fluff
-			i(247693),	-- Fermented Warpstalker Niblets
-			i(247694),	-- Snifted Void Essence
-			i(247695),	-- Sparkling Mana Supplement
-			i(247696),	-- Pungent Smelling Salts
-			i(247698),	-- Deep-Fired Devourer Legs
-			i(247699),	-- Coagulated "Milk" Protein
-			i(247700),	-- Genuine K'areshi Honey
 			i(247703),	-- Reshii Hood
 			i(247704),	-- Reshii Mantle
 			i(247705),	-- The Horseman's Chilling Blade
@@ -1796,7 +1627,6 @@ root(ROOTS.Unsorted, {
 			i(247871),	-- Memory of Sylvanas
 			i(247872),	-- Memory of Theotar
 			i(247873),	-- Memory of Thrall
-			i(247882),	-- Phase Regulator
 			i(247897),	-- The Horseman's Chilling Helm
 			i(247898),	-- The Horseman's Chilling Mantle
 			i(247899),	-- The Horseman's Chilling Breastplate
@@ -1840,7 +1670,6 @@ root(ROOTS.Unsorted, {
 			i(248127),	-- Delver's Cosmetic Surprise Bag
 			i(248129),	-- Brann's Repossessed Gear
 			i(248142),	-- Delver's Bounty
-			i(248199),	-- The Brothers' Final Gift
 			i(248200),	-- The Brothers' Not-So-Final Present
 			i(248242),	-- Algari Token of Merit
 			i(248291),	-- Bronzbeard's Ceremonial Crown
@@ -2363,10 +2192,6 @@ root(ROOTS.Unsorted, {
 			i(237509),	-- Bottle of Invisibility
 			i(237510),	-- Goblet
 			i(237511),	-- Vial of Healing
-			i(240199),	-- Podium Upgrade: Scrappiest
-			i(240200),	-- Podium Upgrade: Longest Survival Run
-			i(240201),	-- Podium Upgrade: Longest Time in Spotlights
-			i(240202),	-- Podium Upgrade: Most Yards Traveled
 			i(243245),	-- Gears Grabbed
 			i(243249),	-- Khaz Algar Adventurer Pack \\ Khaz Algar Gift Pack
 			i(241616),	-- The Underpin
@@ -3567,12 +3392,10 @@ root(ROOTS.Unsorted, {
 				i(162611),	-- Carefully Stashed Cache
 				i(162631),	-- Souvenir Tiki Tumbler
 				i(162632),	-- Lavish Sethrallis Figurine
-				i(162634),	-- Ancient Nazmani Coins
 				i(162644),	-- Winter Veil Gift
 				i(162689),	-- Scroll of Town Portal
 				i(162773),	-- REUSE ME
 				i(162974),	-- Gently Shaken Gift
-				i(162980),	-- Spindle of Golden Sailthread
 				i(162981),	-- A Steamy Romance Novel: Stormy Seas
 				i(162982),	-- A Steamy Romance Novel: Stormy Seas
 				i(163017),	-- Pitch-Soaked Torch
@@ -3616,7 +3439,6 @@ root(ROOTS.Unsorted, {
 				i(163172),	-- Green Glowing Puffer
 				i(163321),	-- Jason's Rusty Blade
 				i(163322),	-- Ian's Empty Bottle
-				i(163323),	-- Julie's Cracked Dish
 				i(163324),	-- Brian's Broken Compass
 				i(163325),	-- Ofer's Bound Journal
 				i(163326),	-- Skye's Pet Rock
@@ -3639,8 +3461,6 @@ root(ROOTS.Unsorted, {
 				i(163546),	-- Scroll of the Forked Tongue
 				i(163580),	-- Delicate Cathedral of Light Replica
 				i(163581),	-- Fragile Model of Stormwind Keep
-				i(163587),	-- Discarded Zandalari Brooch
-				i(163590),	-- Careworn Loa Statuette
 				i(163591),	-- Golden Fleet Sea Charts
 				i(163592),	-- Ceremonial Nose Ring \\ Acolyte's Ceremonial Nose Ring
 				i(163593),	-- Map of Zandalar Trade Winds
@@ -3789,7 +3609,6 @@ root(ROOTS.Unsorted, {
 				i(158793),	-- PH Flavor - Unused \\ PH Flavor - Frog
 				i(158794),	-- Ivory Tusk \\ PH Flavor - Yeti
 				i(158795),	-- Glittering Chill \\ PH Flavor - Ghost
-				i(158796),	-- Venomous Tentacle \\ PH Flavor - Pirahna - Fish
 				i(158798),	-- PH Flavor - Unused \\ PH Flavor - Abyssal Eel - Fish
 				i(158799),	-- PH Flavor - Unused \\ PH Flavor - Wicker Beast - Drust
 				i(158800),	-- PH Flavor - Unused \\ PH Flavor - Camel
@@ -3799,10 +3618,8 @@ root(ROOTS.Unsorted, {
 				i(158804),	-- Castor Gland \\ PH Flavor - Horde
 				i(158805),	-- Soft Turtle Shell \\ PH Flavor - Beast  - Raven - Bird
 				i(158807),	-- PH Flavor - Unused \\ PH Flavor - Doe / Gazelle
-				i(158808),	-- Thick Tendon \\ PH Flavor - Troll Female - Blood Troll
 				i(158809),	-- PH Flavor - Unused \\ PH Flavor - Flesh Beast
 				i(158810),	-- Humming Dew \\ PH Flavor - Earth Elemental
-				i(158811),	-- Ashen Coal \\ PH Flavor - Troll Spirit
 				i(158812),	-- Glowfly Abdomen \\ PH Flavor - Ettin
 				i(158813),	-- Sausage Casing \\ PH Flavor - Lightning Elemental
 				i(158814),	-- Bulging Coin Purse \\ PH Flavor - Unused \\ PH Flavor - Swamp Plant
@@ -3841,7 +3658,6 @@ root(ROOTS.Unsorted, {
 				i(158853),	-- Bony Skullplate \\ PH Flavor - Naga Brute
 				i(158854),	-- PH Flavor - Unused \\ PH Flavor - Goat
 				i(158857),	-- Untainted Wicker \\ PH Flavor - Porcupine
-				i(158861),	-- Tensile Eye Stalk \\ PH Flavor - Troll Male - Blood Troll
 				i(158864),	-- Viscous Webbing \\ PH Flavor - Trogg
 				i(158867),	-- Needlepoint Bill \\ PH Flavor - Ranishu
 				i(158869),	-- Stone Tusk \\ PH Flavor - Venture Co
@@ -3868,12 +3684,10 @@ root(ROOTS.Unsorted, {
 				i(158797),	-- Jar of Truffles
 				i(158858),	-- Adder's Fork
 				i(158866),	-- Oily Blubber
-				i(163846),	-- Silver Monkey Head
 				i(163847),	-- Silver Monkey Torso
 				i(163848),	-- Overused Voodoo Doll
 				i(163849),	-- Bad Troll Love Poem
 				i(163850),	-- Bloody Gamekeeper's Arm
-				i(163851),	-- Venerated Golden Censer
 				i(163854),	-- Weighty Bag of Sand
 				i(163855),	-- Duplicate Pilgrimage Scroll
 				i(163896),	-- Salty Pocket Lint
@@ -3902,7 +3716,6 @@ root(ROOTS.Unsorted, {
 				i(163919),	-- String of Broken Tusks
 				i(163920),	-- Bracelet of Teeth
 				i(163921),	-- Tiny Wicker Effigy
-				i(163842),	-- Inert Hearthstone
 				i(163843),	-- Shredded Horde Emblem
 				i(163844),	-- Shredded Alliance Emblem
 				i(160551),	-- Partially Digested Mystery Meat
@@ -3915,7 +3728,6 @@ root(ROOTS.Unsorted, {
 				i(162666),	-- Ripped Satchel
 				i(162667),	-- Farraki Funeral Urn
 				i(162683),	-- Archaic Dinomancy Carvings
-				i(162684),	-- Etched Dock Cleat
 				i(162685),	-- Overflowing Loa Tribute
 			}),
 			filter(MISC, {	-- War Effort
@@ -4936,12 +4748,7 @@ root(ROOTS.Unsorted, {
 			i(170060),	-- Encrypted Message
 			i(170064),	-- Highmountain Totem
 			i(170078),	-- Gleaming Ashmaul Strongbox
-			i(170086),	-- Coral-Flecked Chalice
-			i(170087),	-- Chromatic "Vinegar"
-			i(170096),	-- Sodden Highborne Painting
-			i(170097),	-- Discarded Quel'dorei Tome
 			i(170098),	-- Rusted Girandole Earring
-			i(170099),	-- Corroded Elegant Key
 			i(170100),	-- Hungry Herald's Tentacle Taco
 			i(170113),	-- Deeptide Scroll
 			i(170202),	-- Shwayderbrau

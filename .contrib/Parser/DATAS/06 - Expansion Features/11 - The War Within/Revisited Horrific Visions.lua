@@ -1007,6 +1007,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 								i(232920, {	-- Faceless Mask of the Pained (QI!/QS!)
 									["description"] = "Granted by completing Old Town, with at least one mask active.",
 								}),
+								i(174932),	-- Illusion: Void Edge (ILLUSION!)
 								i(240183),	-- Twisted Skull-Scythe Handlebars
 								i(239105, {	-- Unusual Gems
 									["description"] = "Can only drop if you have at least 1 mask active.",

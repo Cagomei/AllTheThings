@@ -167,12 +167,15 @@ root(ROOTS.Zones, {
 				q(42090),	-- Skittering Subjects
 				q(41558, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41557, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41262, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41539, {	-- Sparkling Starlight Roses
 					["requireSkill"] = HERBALISM,

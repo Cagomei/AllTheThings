@@ -181,8 +181,28 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				i(247822),	-- Scarlet Void Flyer (MOUNT!)
 			}),
 			ach(42174),	-- [PH] Hero: The War Within Season Three
+			ach(20586, {	-- Keystone Hero: Ara-Kara, City of Echoes
+				spell(445417),	-- Path of the Ruined City
+			}),
 			ach(42173, {	-- Keystone Hero: Eco-Dome Al'dani
-				--TODO Max Level Unlock: Teleport to Eco-Dome Al'dani
+				spell(1237215),	-- Path of the Eco-Dome
+			}),
+			ach(15048, {	-- Keystone Hero: Halls of Atonement
+				spell(354465),	-- Path of the Sinful Soul
+			}),
+			ach(41348, {	-- Keystone Hero: Operation: Floodgate
+				spell(1216786),	-- Path of the Circuit Breaker
+			}),
+			ach(20581, {	-- Keystone Hero: Priory of the Sacred Flame
+				spell(445444),	-- Path of the Light's Reverence
+			}),
+			ach(15500, {	-- Keystone Hero: Tazavesh, the Veiled Market
+				spell(367416),	-- Path of the Streetwise Merchant
+				crit(53264),	-- Tazavesh: Streets of Wonder
+				crit(53266),	-- Tazavesh: So'leah's Gambit
+			}),
+			ach(20585, {	-- Keystone Hero: The Dawnbreaker
+				spell(445414),	-- Path of the Arathi Flagship
 			}),
 			ach(42149, {	-- The War Within Season 3: Resilient Keystone 12
 				["collectible"] = false,

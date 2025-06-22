@@ -109,7 +109,6 @@ i(13508);	-- Eye of Arachnida
 i(129210);	-- Fel Crystal Fragments
 i(127768);	-- Fel Petal
 i(37431);	-- Fetch Ball
-i(116984);	-- Frost Wyrm Egg
 i(44618);	-- Glass of Aged Dalaran Red
 i(18269);	-- Gordok Green Grog
 i(153188);	-- Greater Blessed Bandage
@@ -133,7 +132,6 @@ i(138883);	-- Meryl's Conjured Refreshment
 i(169944);	-- Miniscule Fez
 i(19298);	-- Minor Darkmoon Prize
 i(19425);	-- Mysterious Lockbox
-i(118425);	-- Nesingwary's Lost Horn
 i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
@@ -141,15 +139,11 @@ i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
 i(43352);	-- Pet Grooming Kit
 i(33448);	-- Runic Mana Potion
 i(165699);	-- Scarlet Herring Lure
-i(118426);	-- Scroll of Invoke Yu'Lon, the Jade Serpent
-i(116411);	-- Scroll of Protection
-i(116410);	-- Scroll of Speed
 i(141016);	-- Scroll of Town Portal: Faronaar
 i(141015);	-- Scroll of Town Portal: Kal'delar
 i(141013);	-- Scroll of Town Portal: Shala'nir
 i(119449);	-- Shadowberry
 i(141655);	-- Shimmering Ancient Mana Cluster
-i(114846);	-- Sigil of Death Grip
 i(118905);	-- Sinister Spores
 i(169856);	-- Spark-1351
 i(168271);	-- Stolen Ramkahen Banner
@@ -158,8 +152,6 @@ i(15723);	-- Tea with Sugar
 i(169860);	-- Tiny Dapper Hat
 i(168003);	-- Unstable Manapearl
 i(13514);	-- Wail of the Banshee
-i(117016);	-- Wand of Arcane Imprisonment
-i(117013);	-- Wand of Lightning Shield
 i(85266);	-- Winter Blossom Tree
 i(128851);	-- Roasted juicycrunch carrots
 -- "Mount Equipment"
@@ -191,9 +183,6 @@ i(139400);	-- [Ancient Magic and How to Wield It Without Destroying the World]
 i(139401);	-- [The Fate of Aegwynn]
 i(139402);	-- [The Fel Tome of Vorgalus Dor]
 i(139671);	-- [Deathglare Iris]
-i(135511);	-- Thick Slab of Bacon. You get it for a split second after completing a bacon wq
--- Recipes (Not actual recipes)
-i(168326);	-- Eye of Theras
 -- Mount
 i(33183);	-- Old Magic Broom
 i(33189);	-- Rickety Magic Broom
@@ -311,12 +300,16 @@ i(155842);	-- "Preserved" Foodstuffs
 i(153566);	-- "Shiny" Rock
 i(153567);	-- "Smooth" Rock
 i(158862);	-- Ancient Grave Dust
+i(162634);	-- Ancient Nazmani Coins
+i(158808);	-- Thick Tendon
+i(158811);	-- Ashen Coal
 i(162675);	-- Ashvane Ledger
 i(162978);	-- Blood Magic Ritual Dish
 i(158759);	-- Bloodgorged Sac
 i(158750);	-- Bonebreaker Beak
 i(155843);	-- Brittle Ceremonial Necklace
 i(155649);	-- Broken Zandalari Spear
+i(163590);	-- Careworn Loa Statuette
 i(158790);	-- Charnel Ash
 i(158863);	-- Chitinous Exoskeleton
 i(158743);	-- Conductive Antennae
@@ -327,7 +320,9 @@ i(155608);	-- Defiled Bone
 i(159756);	-- Depleted Azerite
 i(158792);	-- Digestive Acid
 i(155618);	-- Discarded Molting
+i(163587);	-- Discarded Zandalari Brooch
 i(158757);	-- Disquiet Earth
+i(162684);	-- Etched Dock Cleat
 i(162976);	-- Exile's Abandoned Memoirs
 i(158210);	-- Fearsome Claw
 i(158760);	-- Fin Ray
@@ -345,10 +340,12 @@ i(158765);	-- Hardshell Mollusk
 i(158806);	-- Hooked Talon
 i(155600);	-- How to Make Money and Influence Subordinates
 i(155605);	-- Huge Femur
+i(163842);	-- Inert Hearthstone
 i(155631);	-- Inert Stone
 i(158749);	-- Intricate Ossicles
 i(157844);	-- Iridescent Speck
 i(158859);	-- Jagged Fang
+i(163323);	-- Julie's Cracked Dish
 i(155593);	-- Keeled Breastbone
 i(162673);	-- Knotted Bowline
 i(159140);	-- Lifeless Clay
@@ -372,23 +369,28 @@ i(155598);	-- Severed Mandible
 i(155629);	-- Shaggy Mane
 i(152099);	-- Shriveled Onion
 i(158783);	-- Silken White Feather
+i(163846);	-- Silver Monkey Head
 i(163845);	-- Silver Statue Base
 i(155635);	-- Sinewy Wing
 i(155620);	-- Singed Sprig of Teldrassil
 i(158788);	-- Sleek Quill
 i(155617);	-- Slime Spore
 i(158744);	-- Spectral Veil
+i(162980);	-- Spindle of Golden Sailthread
 i(158771);	-- Spirit Ichor
 i(158848);	-- Spoiled Feast
 i(155609);	-- Springy Eyeball
 i(155610);	-- Stinging Nettle
 i(158746);	-- Tattered White Flag
 i(161200);	-- Teardrop Pearl
+i(158861);	-- Tensile Eye Stalk
 i(158839);	-- Thick Crab Claw
 i(158775);	-- Thick Hivewax
 i(158747);	-- Thorny Prickle
 i(158754);	-- Trueflight Fletching
 i(155844);	-- Unreliable Lodestone
+i(163851);	-- Venerated Golden Censer
+i(158796);	-- Venomous Tentacle
 i(155636);	-- Viscous Ink
 i(158789);	-- Webbed Frill
 i(158834);	-- Winch Coil
@@ -401,13 +403,18 @@ i(158773);	-- Wriggling Goop
 -----------------
 i(169130);	-- Bent Cogwheel
 i(169128);	-- Chilled Heating Block
+i(170087);	-- Chromatic "Vinegar"
 i(169139);	-- Clogged Webbing Fabricator
+i(170086);	-- Coral-Flecked Chalice
+i(170099);	-- Corroded Elegant Key
 i(169132);	-- Cracked Gyroscope
 i(169124);	-- Decorational Whirlycog
+i(170097);	-- Discarded Quel'dorei Tome
 i(169149);	-- Dulled Micro-Serrated Incisor
 i(169138);	-- Fractured Personality Module
 i(169123);	-- Functional Fiddleswitch
 i(169129);	-- Lovingly Worn Wrench
+i(170096);	-- Sodden Highborne Painting
 i(169145);	-- Rusted Precision Gripper
 i(169135);	-- Warped Shock Absorber
 
@@ -2443,6 +2450,7 @@ i(241632);	-- Heroic Waxy Figurine
 -- PATCH 11.2.0 --
 ------------------
 i(238874);	-- Congealed Mana
+i(247686);	-- Crystallized Nightshade
 i(238883);	-- Dimly Glowing Scrap
 i(238838);	-- Enlarged Nerve
 i(238886);	-- Faintly Glowing Vellum
@@ -2450,14 +2458,20 @@ i(238833);	-- Flowing Ridge Spikes
 i(238872);	-- Fragmented Fin
 i(238799);	-- Harrowed Ichor
 i(238813);	-- Irridescent Eye
+i(247688);	-- K'arroc Feather Quill
+i(244360);	-- K'aresh Nightbloom
 i(238812);	-- Long Fibrous Tongue
 i(238869);	-- Matted Pelt
 i(238855);	-- Netherclaw
+i(247687);	-- Overly-Preserved K'areshi Preserves
 i(238873);	-- Serrated Scale Shard
 i(238832);	-- Sinuous Wing Membrane
+i(247685);	-- Slightly Used Containment Device
+i(238800);	-- Soggy Bone Splinters
 i(238836);	-- Spindly Flesh
 i(238847);	-- Torn Maw Fragment
 i(238887);	-- Torn Voidscript Page
+i(238875);	-- Twisted Sediment
 i(238867);	-- Unstable Void Essence
 i(238814);	-- Vibrantly Colored Crest
 i(238866);	-- Void Dust

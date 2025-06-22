@@ -5,14 +5,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 	n(SEASON_ASTRAL, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 			ach(41048),	-- [11.2 PVP] Weapons of Conquest
-			ach(42042, {
+			ach(42042, {	-- Astral Combatant
 				["races"] = ALLIANCE_ONLY,
 				["collectible"] = false,
-			}),	-- Astral Combatant
-			ach(42043, {
+			}),	
+			ach(42043, {	-- Astral Combatant
 				["races"] = HORDE_ONLY,
 				["collectible"] = false,
-			}),	-- Astral Combatant
+			}),	
+			ach(42036, {	-- Astral Gladiator: The War Within Season 3
+				title(633),	-- Astral Gladiator <Name>
+			}),
+			ach(42039),	-- Astral Gladiator's Fel Bat
 			ach(41028),	-- Combatant I: The War Within Season 3
 			ach(41029),	-- Combatant II: The War Within Season 3
 			ach(41030),	-- Challenger I: The War Within Season 3
@@ -23,10 +27,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			ach(41024),	-- Rival I: The War Within Season 3
 			ach(41025),	-- Rival II: The War Within Season 3
 			-- RBG
-			ach(42036),	-- Astral Gladiator: The War Within Season 3
-			ach(42039),	-- Astral Gladiator's Fel Bat
-			ach(42035),	-- Astral Marshal: The War Within Season 3
-			ach(42034),	-- Astral Warlord: The War Within Season 3
+			ach(42035, {	-- Astral Marshal: The War Within Season 3
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					title(635),	-- Astral Marshal <Name>
+				},
+			}),
+			ach(42034, {	-- Astral Warlord: The War Within Season 3
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					title(632),	-- Astral Warlord <Name>
+				},
+			}),
 			ach(42038, {	-- Hero of the Alliance: Astral
 				["races"]= ALLIANCE_ONLY,
 			}),
@@ -37,7 +49,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			-- Solo
 			ach(42023),	-- Legend: The War Within Season 3
 			ach(42044),	-- Battle Mender: The War Within Season 3
-			ach(42033),	-- Astral Legend: The War Within Season 3
+			ach(42033, {	-- Astral Legend: The War Within Season 3
+				title(634),	-- Astral Legend <Name>
+			}),
 			-- Fashion
 			ach(42800),	-- Astral Attire
 		})),

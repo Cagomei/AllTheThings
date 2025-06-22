@@ -5,6 +5,7 @@ HeaderAssignments = {
 	["A Shieldmaiden's Creed"] = -1000325,
 	["Abomination Factory"] = -1001136,
 	["Achievements"] = -1000004,
+	["Adventure Guide"] = -1001208,
 	["Adventures"] = -1000085,
 	["Airship"] = -1001018,
 	["Alcaz Island"] = -1001071,
@@ -673,4 +674,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001208;
+NextHeaderID = -1001209;
