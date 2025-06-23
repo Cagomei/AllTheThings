@@ -444,6 +444,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(154884),	-- Swamp Fish 'n Chips
 		i(169280, {["timeline"] = {ADDED_8_2_0}}),	-- Unagi Skewer
 		i(166343, {["timeline"] = {ADDED_8_1_0}}),	-- Wild Berry Bread
+		filter(REAGENTS, {
+			i(154898),	-- Meaty Haunch
+			i(154897),	-- Stringy Loins
+			i(154899),	-- Thick Paleo Steak
+		}),
 	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
@@ -1377,6 +1382,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		filter(BAGS, {
 			i(154695),	-- Deep Sea Bag
 			i(154696),	-- Embroidered Deep Sea Bag
+		}),
+		filter(REAGENTS, {
+			i(152577),	-- Deep Sea Satin
+			i(152576),	-- Tidespray Linen
 		}),
 		n(CHEST, {
 			i(161977),	-- Tidespray Linen Robe [Alliance]

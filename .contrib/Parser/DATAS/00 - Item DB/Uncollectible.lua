@@ -324,6 +324,7 @@ i(158792);	-- Digestive Acid
 i(155618);	-- Discarded Molting
 i(163587);	-- Discarded Zandalari Brooch
 i(158757);	-- Disquiet Earth
+i(168787);	-- Empty Birdcage
 i(162684);	-- Etched Dock Cleat
 i(162976);	-- Exile's Abandoned Memoirs
 i(158210);	-- Fearsome Claw
@@ -346,6 +347,7 @@ i(163842);	-- Inert Hearthstone
 i(155631);	-- Inert Stone
 i(158749);	-- Intricate Ossicles
 i(157844);	-- Iridescent Speck
+i(158830);	-- Jade Sigilstone
 i(158859);	-- Jagged Fang
 i(163323);	-- Julie's Cracked Dish
 i(155593);	-- Keeled Breastbone
@@ -369,6 +371,7 @@ i(158756);	-- Rotary Gasket
 i(158758);	-- Royal Jelly
 i(157842);	-- Rusty Gear
 i(162630);	-- Sandy Ornate Relic
+i(158849);	-- Sawtooth Jawbone
 i(158752);	-- Severed Foot
 i(155598);	-- Severed Mandible
 i(155629);	-- Shaggy Mane
@@ -2468,9 +2471,11 @@ i(238813);	-- Irridescent Eye
 i(247688);	-- K'arroc Feather Quill
 i(244360);	-- K'aresh Nightbloom
 i(238812);	-- Long Fibrous Tongue
+i(238871);	-- Luminous Brushtail
 i(238884);	-- Machine Remnant
 i(238869);	-- Matted Pelt
 i(238855);	-- Netherclaw
+i(238880);	-- Oily Blubber
 i(247687);	-- Overly-Preserved K'areshi Preserves
 i(238873);	-- Serrated Scale Shard
 i(238878);	-- Shadow-Touched Fang
@@ -2478,6 +2483,7 @@ i(238832);	-- Sinuous Wing Membrane
 i(247685);	-- Slightly Used Containment Device
 i(238800);	-- Soggy Bone Splinters
 i(238836);	-- Spindly Flesh
+i(244357);	-- Time-Worn Memento
 i(238847);	-- Torn Maw Fragment
 i(238887);	-- Torn Voidscript Page
 i(238875);	-- Twisted Sediment
@@ -2486,3 +2492,4 @@ i(238814);	-- Vibrantly Colored Crest
 i(238866);	-- Void Dust
 i(238848);	-- Void Tendril
 i(238841);	-- Void-Seeping Eyeball
+i(244355);	-- Voidstorm Obsidian

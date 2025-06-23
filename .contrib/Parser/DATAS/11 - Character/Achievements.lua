@@ -197,7 +197,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	})),
 	applyclassicphase(PHASE_THREE_DMF_CARDS, ach(2336, {	-- Insane in the Membrane
 		-- #if ANYCLASSIC
-		["description"] = 
+		["description"] =
 			-- #if AFTER CATA
 			"Insane in the Membrane is a Feat of Strength that rewards the title <The Insane>. This feat requires you to become honored with the Bloodsail Buccaneers and exalted with the Steamwheedle Cartel (Booty Bay, Everlook, Gadgetzan, Ratchet), Ravenholdt, and the Darkmoon Faire. After Cataclysm it does not require that all of these reputation levels be reached at the same time, however, prior to that you must have them all at the same time. Raising reputation with these factions is typically very difficult, time-consuming, and costly.",
 			-- #else
@@ -564,6 +564,9 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	}),
 	ach(6872, {		-- Realm First! Zen Master Tailor
 		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(42191, {	-- Safer Deposit
+		["timeline"] = { ADDED_11_2_0 },
 	}),
 	ach(522, {		-- Somebody Likes Me
 		["_noautomation"] = true,

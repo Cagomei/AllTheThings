@@ -767,9 +767,6 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			i(52496),	-- Design: Jeweler's Amber Monocle
 			i(52494),	-- Design: Jeweler's Ruby Monocle
 			i(52495),	-- Design: Jeweler's Sapphire Monocle
-			i(52497, {	-- Design: Jeweler's Sapphire Monocle
-				["u"] = REMOVED_FROM_GAME,
-			}),
 			i(52377),	-- Design: Keen Hessonite
 			i(52386),	-- Design: Lightning Jasper
 			i(52379),	-- Design: Nimble Jasper

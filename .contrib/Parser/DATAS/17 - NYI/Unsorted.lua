@@ -98,10 +98,7 @@ root(ROOTS.Unsorted, {
 				i(239474),	-- Reshii Brute's Handguards
 				i(239475),	-- Reshii Brute's Helmet
 				i(239476),	-- Reshii Brute's Greaves
-				i(239477),	-- Reshii Brute's Epaulettes
 				i(239479),	-- Reshii Brute's Vambraces
-				i(240168),	-- Reshii Magi's Seal
-				i(240169),	-- Reshii Magi's Amulet
 				i(240171),	-- Observer's Soul Fetters
 				i(240172),	-- Depleted K'areshi Battery
 				i(240213),	-- Veiling Mana Shroud
@@ -179,7 +176,6 @@ root(ROOTS.Unsorted, {
 				i(244486),	-- Worn Shadowguard Blade's Soles
 				i(244487),	-- Worn Shadowguard Blade's Grips
 				i(244488),	-- Worn Shadowguard Blade's Hood
-				i(244489),	-- Worn Shadowguard Blade's Breeches
 				i(244490),	-- Worn Shadowguard Blade's Shoulderpads
 				i(244491),	-- Worn Shadowguard Blade's Belt
 				i(244492),	-- Worn Shadowguard Blade's Bracers
@@ -196,7 +192,6 @@ root(ROOTS.Unsorted, {
 				i(244503),	-- Worn Shadowguard Captain's Handguards
 				i(244504),	-- Worn Shadowguard Captain's Helmet
 				i(244505),	-- Worn Shadowguard Captain's Greaves
-				i(244506),	-- Worn Shadowguard Captain's Epaulettes
 				i(244507),	-- Worn Shadowguard Captain's Greatbelt
 				i(244508),	-- Worn Shadowguard Captain's Vambraces
 				i(244509),	-- Worn Shadowguard Cleaver
@@ -248,10 +243,6 @@ root(ROOTS.Unsorted, {
 				i(245730),	-- Waders of the Endless Hunger
 				i(245731),	-- Striders of the Endless Hunger
 				i(245732),	-- Sabatons of the Endless Hunger
-				i(245733),	-- Unstable Sample Straps
-				i(245734),	-- Unstable Sample Bindings
-				i(245735),	-- Unstable Sample Bracers
-				i(245736),	-- Unstable Sample Armplates
 				i(245737),	-- Ritualbreaker's Band
 				i(245738),	-- Seal of the Shattered Dome
 
@@ -302,7 +293,6 @@ root(ROOTS.Unsorted, {
 				i(241239),	-- Epaulets of Arcing Power
 				i(241240),	-- Type II Bomber Jacket
 				-- Artifact
-				i(235499),	-- Reshii Wraps
 				i(247703),	-- Reshii Hood
 				i(247704),	-- Reshii Mantle
 			}),
@@ -819,7 +809,6 @@ root(ROOTS.Unsorted, {
 				i(232323),	-- Watering Jug
 				i(234389),	-- Shadowguard Translocator (Weird reuse??! /Braghe)
 				i(236632),	-- Pouch of Voidbane Gems
-				i(236641),	-- Watering Jug
 				i(238801),	-- Mite-Kissed Silver Tooth
 				i(238808),	-- Celeste-Touched Fin
 				i(238810),	-- Mana-Blessed Fin
@@ -832,10 +821,8 @@ root(ROOTS.Unsorted, {
 				i(238865),	-- Void-Warped Hoof
 				i(238868),	-- Flickering Primeval Element
 				i(238870),	-- Pearly Incisor
-				i(238871),	-- Luminous Brushtail
 				i(238876),	-- Malicious Mandible
 				i(238879),	-- Cracked Void Carapace
-				i(238880),	-- Oily Blubber
 				i(238881),	-- Barbed Predator Tusk
 				i(238882),	-- Cursed Eyeball Cluster
 				i(238885),	-- Unstable Power Source
@@ -857,8 +844,6 @@ root(ROOTS.Unsorted, {
 				i(243580),	-- Etheric Pylon
 				i(244141),	-- Barley Soup
 				i(244142),	-- Brew Keg
-				i(244355),	-- Voidstorm Obsidian
-				i(244357),	-- Time-Worn Memento
 				i(244358),	-- "Prophecies of the Void"
 				i(244359),	-- Ethereal Pylon Conduit
 				i(244361),	-- Void-Carved Amethyst
@@ -868,7 +853,6 @@ root(ROOTS.Unsorted, {
 				i(245884),	-- Energy Pyramid
 				i(246053),	-- Waygate Piece
 				i(246063),	-- Void-Polished Warpstalker Stone
-				i(246240),	-- Devoured Energy-Pod
 				i(246492),	-- Soulgorged Augment Rune
 				i(246837),	-- Mysterious Notebook
 				i(246839),	-- Multiversal Energy Dynamics and the Murmuration Paradox
@@ -911,7 +895,6 @@ root(ROOTS.Unsorted, {
 				i(238527),	-- Restored Coffer Key
 				i(244193),	-- L00T RAID-R Mini
 				i(244792),	-- Etheric Brannmorpher
-				i(245653),	-- Coffer Key Shard
 				i(245885),	-- Lil Wheel of Cheese
 				i(247835),	-- Memory of Illidan
 				i(247864),	-- Memory of Arthas
@@ -1049,10 +1032,6 @@ root(ROOTS.Unsorted, {
 				i(231774),	-- Nascent Weathered Ethereal Crest
 				i(231775),	-- Nascent Gilded Ethereal Crest
 				i(231776),	-- Nascent Runed Ethereal Crest
-				i(238037),	-- Energizing Fiber
-				i(238039),	-- Chronomatic Fiber
-				i(238040),	-- Precise Fiber
-				i(238041),	-- Dexterous Fiber
 				i(238042),	-- Pure Dexterous Fiber
 				i(238044),	-- Pure Precise Fiber
 				i(238045),	-- Pure Chronomatic Fiber
@@ -1526,7 +1505,6 @@ root(ROOTS.Unsorted, {
 				i(230719),	-- Astral Warmonger's Dagger
 				i(230720),	-- Astral Warmonger's Dirk
 				i(230722),	-- Astral Equipment Chest
-				i(230724),	-- Astral Jeweler's Setting
 				i(230814),	-- [11.2 PVP] Gladiator's Axe <TEMPLATE>
 				i(230815),	-- [11.2 PVP] Gladiator's Dagger <TEMPLATE>
 				i(230816),	-- [11.2 PVP] Gladiator's Gun <TEMPLATE>
@@ -1626,7 +1604,6 @@ root(ROOTS.Unsorted, {
 				i(229406),	-- Codex of The Exchange
 				i(229420),	-- Anima Orb
 				i(229423),	-- Echo Surveyor
-				i(229424),	-- Anima Vacuum
 				i(229892),	-- Void Glass Sample
 				i(229898),	-- Capture Device
 				i(229900),	-- Softly Swirling Mote
@@ -1634,16 +1611,9 @@ root(ROOTS.Unsorted, {
 				i(229905),	-- Satchel of Seeds
 				i(229959),	-- Void-Infused Shard
 				i(229969),	-- Flickering Essence
-				i(230053),	-- Honey Globule
-				i(230210),	-- Tranquilizing Dart
 				i(230284),	-- Artisan's Consortium Pamphlet
-				i(230729),	-- Appropriated Azerothian Camera
 				i(230730),	-- Nether Tuner
-				i(230732),	-- Honey
-				i(230809),	-- K'aresh Flora Cutting
-				i(230907),	-- Honeycomb
 				i(231094),	-- Unused - Tranquilizing Dart [DNT]
-				i(231163),	-- Appropriated Azerothian Camera
 				i(231790),	-- Small Stone Tablet
 				i(231801),	-- Well-Worn Coin
 				i(231804),	-- Game Piece
@@ -1710,7 +1680,6 @@ root(ROOTS.Unsorted, {
 				i(236406),	-- Appropriated S.E.L.F.I.E. Camera
 				i(236407),	-- Voidbane Gem
 				i(236411),	-- Mana Matrix
-				i(236416),	-- Oasis Animal Leavings
 				i(236679),	-- Essence Scanner
 				i(236688),	-- Umbral Facade
 				i(236753),	-- Xy'vox Refuge Dampener
@@ -1849,7 +1818,6 @@ root(ROOTS.Unsorted, {
 				i(238254),	-- Nuts and Bolts
 				i(238296),	-- Phase Disruptor
 				i(238663),	-- Crystallized Anima
-				i(238664),	-- Crystallized Anima
 				i(238665),	-- Crystallized Anima
 				i(238903),	-- Appropriated Azerothian Camera
 				i(238904),	-- Anima Vacuum
@@ -1883,7 +1851,6 @@ root(ROOTS.Unsorted, {
 				i(239564),	-- Arcane Runed Sigil
 				i(239566),	-- Arcane Runed Signet
 				i(239607),	-- Charged Cyrstal
-				i(241352),	-- Hydrobite
 				i(241353),	-- Hydrobite
 				i(242535),	-- Missing Imports
 				i(242547),	-- Cracked Keystone
@@ -3774,7 +3741,6 @@ root(ROOTS.Unsorted, {
 				i(158826),	-- Hardy Hoof \\ PH Flavor - Honey Elemental \\ PH Flavor
 				i(158827),	-- PH Flavor - Unused \\ PH Flavor - Fish - Generic
 				i(158829),	-- PH Flavor - Unused \\ PH Flavor - Cockroach - Insect
-				i(158830),	-- Jade Sigilstone \\ PH Flavor - Wolf
 				i(158832),	-- Bushy Tail \\ PH Flavor - Kul Tiran
 				i(158833),	-- PH Flavor - Unused \\ PH Flavor - Tiki Mask - Blood Troll
 				i(158835),	-- PH Flavor - Unused \\ PH Flavor - Krolusk
@@ -3787,7 +3753,6 @@ root(ROOTS.Unsorted, {
 				i(158845),	-- PH Flavor - Unused \\ PH Flavor - Bear
 				i(158846),	-- PH Flavor - Unused \\ PH Flavor - Basilisk
 				i(158847),	-- PH Flavor - Unused \\ PH Flavor - Bog Plant
-				i(158849),	-- Sawtooth Jawbone \\ PH Flavor - Scarab - Insect
 				i(158850),	-- Vibrant Plumage \\ PH Flavor - Pig
 				i(158851),	-- Bottled Squall \\ PH Flavor - Mogu
 				i(158852),	-- PH Flavor - Unused \\ PH Flavor - Fox
@@ -3888,8 +3853,6 @@ root(ROOTS.Unsorted, {
 			n(PROFESSIONS, {
 				i(152541),	-- Coarse Leather \\ Leather - Common (NEEDS NAME)
 				i(152542),	-- Hardened Tempest Hide \\ Leather - Rare (NEEDS NAME)
-				i(152576),	-- Tidespray Linen \\ Sun-Bleached Linen \\ Cloth - Common (NEEDS NAME)
-				i(152577),	-- Deep Sea Satin \\ Cloth - Rare (NEEDS NAME)
 				i(152578),	-- Sack of Herbs
 				i(152580),	-- Pile of Cloth
 				i(152581),	-- Bag of Jewels
@@ -3939,9 +3902,6 @@ root(ROOTS.Unsorted, {
 				i(154702),	-- RESUE ME (DNT) \\ Embroidered Deep Sea Cloak of Resilience \\ Cloth Cloak - Camoflage (NEEDS NAME)
 				i(154709),	-- RE-USE \\ Needle (NEEDS NAME)(DNT) \\ Needle (NEEDS NAME)
 				i(154722),	-- Tempest Hide \\ Leather - Uncommon (NEEDS NAME)
-				i(154897),	-- Stringy Loins \\ Meat 02 - Amphibian (NEEDS NAME)
-				i(154898),	-- Meaty Haunch \\ Meat 03 - Dinosaur (NEEDS NAME)
-				i(154899),	-- Thick Paleo Steak \\ Meat 04 - Other (NEEDS NAME)
 				i(156632),	-- Silas' Stone of Transportation \\ Silus' Stone of Transportation
 				i(156633),	-- Silas' Potion of Prosperity \\ Silas' Potion of Luck \\ Silus' Potion of Luck
 				i(156634),	-- Silas' Vial of Continuous Curing \\ Silas' Phial of Perpetual Potential \\ Silus' Phial of Perpetual Potential
@@ -4695,7 +4655,6 @@ root(ROOTS.Unsorted, {
 			i(168662),	-- Maroon Pigment
 			i(168755),	-- Unpublished Research
 			i(168786),	-- Rotten Food
-			i(168787),	-- Empty Birdcage
 			i(168788),	-- Toy Soldier Weapons
 			i(168789),	-- Perpetual Motion Device
 			i(168790),	-- Sack of Fish Bones

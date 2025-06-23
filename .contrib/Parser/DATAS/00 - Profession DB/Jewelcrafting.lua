@@ -486,6 +486,95 @@ i(49112, 68253);	-- Design: Nightmare Tear
 -----------------
 -- PATCH 4.0.3 --
 -----------------
+i(52362, 73335);	-- Design: Bold Inferno Ruby
+i(52380, 73336);	-- Design: Delicate Inferno Ruby
+i(52381, 73396);	-- Design: Bold Chimera's Eye
+i(52384, 73337);	-- Design: Flashing Inferno Ruby
+i(52387, 73338);	-- Design: Brilliant Inferno Ruby
+i(52389, 73339);	-- Design: Precise Inferno Ruby
+i(52390, 73340);	-- Design: Solid Ocean Sapphire
+i(52391, 73341);	-- Design: Sparkling Ocean Sapphire
+i(52392, 73343);	-- Design: Stormy Ocean Sapphire
+i(52393, 73344);	-- Design: Rigid Ocean Sapphire
+i(52394, 73345);	-- Design: Subtle Amberjewel
+i(52395, 73346);	-- Design: Smooth Amberjewel
+i(52396, 73347);	-- Design: Mystic Amberjewel
+i(52397, 73348);	-- Design: Quick Amberjewel
+i(52398, 73349);	-- Design: Fractured Amberjewel
+i(52399, 73350);	-- Design: Sovereign Demonseye
+i(52400, 73351);	-- Design: Shifting Demonseye
+i(52401, 73352);	-- Design: Defender's Demonseye
+i(52402, 73353);	-- Design: Timeless Demonseye
+i(52403, 73354);	-- Design: Guardian's Demonseye
+i(52404, 73355);	-- Design: Purified Demonseye
+i(52405, 73356);	-- Design: Etched Demonseye
+i(52406, 73357);	-- Design: Glinting Demonseye
+i(52407, 73358);	-- Design: Retaliating Demonseye
+i(52408, 73359);	-- Design: Veiled Demonseye
+i(52409, 73360);	-- Design: Accurate Demonseye
+i(52410, 73361);	-- Design: Polished Ember Topaz
+i(52411, 73362);	-- Design: Resolute Ember Topaz
+i(52412, 73364);	-- Design: Inscribed Ember Topaz
+i(52413, 73365);	-- Design: Deadly Ember Topaz
+i(52414, 73366);	-- Design: Potent Ember Topaz
+i(52415, 73367);	-- Design: Fierce Ember Topaz
+i(52416, 73368);	-- Design: Deft Ember Topaz
+i(52417, 73369);	-- Design: Reckless Ember Topaz
+i(52418, 73370);	-- Design: Skillful Ember Topaz
+i(52419, 73371);	-- Design: Adept Ember Topaz
+i(52420, 73372);	-- Design: Fine Ember Topaz
+i(52421, 73373);	-- Design: Artful Ember Topaz
+i(52422, 73374);	-- Design: Keen Ember Topaz
+i(52423, 73375);	-- Design: Regal Dream Emerald
+i(52424, 73376);	-- Design: Nimble Dream Emerald
+i(52425, 73377);	-- Design: Jagged Dream Emerald
+i(52426, 73378);	-- Design: Piercing Dream Emerald
+i(52427, 73379);	-- Design: Steady Dream Emerald
+i(52428, 73380);	-- Design: Forceful Dream Emerald
+i(52429, 73381);	-- Design: Lightning Dream Emerald
+i(52430, 73382);	-- Design: Puissant Dream Emerald
+i(52431, 73383);	-- Design: Zen Dream Emerald
+i(52432, 73384);	-- Design: Sensei's Dream Emerald
+i(52433, 73464);	-- Design: Fleet Shadowspirit Diamond
+i(52434, 73465);	-- Design: Chaotic Shadowspirit Diamond
+i(52435, 73466);	-- Design: Bracing Shadowspirit Diamond
+i(52436, 73467);	-- Design: Eternal Shadowspirit Diamond
+i(52437, 73468);	-- Design: Austere Shadowspirit Diamond
+i(52438, 73469);	-- Design: Effulgent Shadowspirit Diamond
+i(52439, 73470);	-- Design: Ember Shadowspirit Diamond
+i(52440, 73471);	-- Design: Revitalizing Shadowspirit Diamond
+i(52441, 73472);	-- Design: Destructive Shadowspirit Diamond
+i(52442, 73473);	-- Design: Powerful Shadowspirit Diamond
+i(52443, 73474);	-- Design: Enigmatic Shadowspirit Diamond
+i(52444, 73475);	-- Design: Impassive Shadowspirit Diamond
+i(52445, 73476);	-- Design: Forlorn Shadowspirit Diamond
+i(52447, 73397);	-- Design: Delicate Chimera's Eye
+i(52448, 73398);	-- Design: Flashing Chimera's Eye
+i(52449, 73399);	-- Design: Brilliant Chimera's Eye
+i(52450, 73400);	-- Design: Precise Chimera's Eye
+i(52451, 73401);	-- Design: Solid Chimera's Eye
+i(52452, 73402);	-- Design: Sparkling Chimera's Eye
+i(52453, 73403);	-- Design: Stormy Chimera's Eye
+i(52454, 73404);	-- Design: Rigid Chimera's Eye
+i(52455, 73405);	-- Design: Subtle Chimera's Eye
+i(52456, 73406);	-- Design: Smooth Chimera's Eye
+i(52457, 73407);	-- Design: Mystic Chimera's Eye
+i(52458, 73408);	-- Design: Quick Chimera's Eye
+i(52459, 73409);	-- Design: Fractured Chimera's Eye
+i(52460, 73520);	-- Design: Elementium Destroyer's Ring
+i(52461, 73498);	-- Design: Band of Blades
+i(52462, 73502);	-- Design: Ring of Warring Elements
+i(52463, 73503);	-- Design: Elementium Moebius Band
+i(52464, 73521);	-- Design: Brazen Elementium Medallion
+i(52465, 73504);	-- Design: Entwined Elementium Choker
+i(52466, 73505);	-- Design: Eye of Many Deaths
+i(52467, 73506);	-- Design: Elementium Guardian
+i(68359, 95754);	-- Design: Willful Ember Topaz
+i(68360, 95755);	-- Design: Lucent Ember Topaz
+i(68361, 95756);	-- Design: Resplendent Ember Topaz
+i(68742, 96226);	-- Design: Vivid Dream Emerald
+i(69853, 98921);	-- Design: Punisher's Band
+
 i(52363, 73224);	-- Design: Flashing Carnelian (Guessed via Filter Recipe with SpellID)
 i(52364, 73229);	-- Design: Stormy Zephyrite (Guessed via Filter Recipe with SpellID)
 i(52365, 73231);	-- Design: Subtle Alicite (Guessed via Filter Recipe with SpellID)

@@ -374,6 +374,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 		ach(40945, {	-- Gilded of the Undermine
 			["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 		}),
+		ach(41886, {	-- Weathered of the Ethereal
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+		}),
+		ach(41887, {	-- Carved of the Ethereal
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+		}),
+		ach(41888, {	-- Runed of the Ethereal
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+		}),
+		ach(41892, {	-- Gilded of the Ethereal
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+		}),
 		ach(40591, {	-- Khaz Algar Diplomat
             -- Unfun fact: Blizzard isn't currently showing these criteria ingame, and manually adding them doesn't properly fetch their names, I'm just gonna leave them here for reference for when they fix this. It can be either automated, or written out in full.
             -- Unfun fact the second: They never fixed the achievement, they just remade it.
@@ -410,6 +422,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			crit(70052),	-- Defeated Gallywix on Heroic or Mythic difficulty
 			i(236877),	-- Crystallized Essence of Kaja'mite
 		})),
+		ach(41937, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 }, }, {	-- The War Within Season 3: Voidborne Victor
+		})),
+		ach(42325),	-- Void Wear Prohibited (automated)
 		ach(40723, {	-- Web-Wrapped in the Finest Silks (automated)
 			i(226224, {	-- Luminous Nerubian Catalyst Stone (CI!)
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {

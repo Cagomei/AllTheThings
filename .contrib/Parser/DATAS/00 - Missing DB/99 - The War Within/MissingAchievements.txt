@@ -1,5 +1,4 @@
 11.2.0.61476
-ach(41212),	-- A Round on the House in Khaz Algar
 ach(41597),	-- Glory of the Omega Raider
 ach(41598),	-- Manaforge Omega
 ach(41599),	-- Heroic: Manaforge Omega
@@ -15,49 +14,15 @@ ach(41618),	-- Swing and a Miss
 ach(41619),	-- Defying Gravity
 ach(41620),	-- Manaforge Omega Guild Run
 ach(41621),	-- Heroic: Manaforge Omega Guild Run
-ach(41778),	-- Brokers Don't Care How You Win
-ach(41808),	-- Otherworldly Ecologist
-ach(41809),	-- Ecological Variety
-ach(41811),	-- Ecological Stability
-ach(41812),	-- Expertly Done
-ach(41815),	-- Ecological Succession
-ach(41886),	-- Weathered of the Ethereal
-ach(41887),	-- Carved of the Ethereal
-ach(41888),	-- Runed of the Ethereal
-ach(41892),	-- Gilded of the Ethereal
-ach(41937),	-- The War Within Season 3: Voidborne Victor
-ach(41970),	-- The Knife's Edge
-ach(41978),	-- Moonlighter
-ach(41979),	-- Bounty Seeker
-ach(41980),	-- Vigilante
 ach(42022),	-- A Trusted Partner
 ach(42118),	-- Of Mice and Manaforges
 ach(42190),	-- Let Me Solo Her: Nexus-Princess Ky'veza
-ach(42191),	-- Safer Deposit
 ach(42193),	-- My Stab-Happy Nemesis
 ach(42194),	-- Pruning the Princess
 ach(42316),	-- Fractals? For Spring? Groundbreaking.
-ach(42325),	-- Void Wear Prohibited
 ach(42677),	-- This Machine Flies?! Don't Care I Got It!
 ach(42678),	-- So That's Where My Manaflux Capacitor Was!
 ach(42679),	-- Archival Assault Discoveries
-ach(42712),	-- Skyriding Glyphs: Tazavesh, the Veiled Market
-ach(42713),	-- Skyriding Glyph: Serrated Peaks
-ach(42714),	-- Skyriding Glyphs: The Oasis
-ach(42715),	-- Skyriding Glyphs: Fracture of Laacuna
-ach(42716),	-- Skydiving Glyphs: Shadow Point
-ach(42717),	-- Skyriding Glyphs: Castigaar
-ach(42718),	-- Skyriding Glyphs: Eco-Dome: Primus
-ach(42719),	-- Skydiving Glyphs: North Sufaad
-ach(42727),	-- K'aresh Glyph Hunter
-ach(42729),	-- Dangerous Prowlers of K'aresh
-ach(42730),	-- Jump, Jump, and Away!
-ach(42731),	-- Become a Hero. Become a Phasediver!
-ach(42736),	-- Ixthar's Legacy
-ach(42737),	-- Capstoned
-ach(42738),	-- We've All Got Swords!
-ach(42742),	-- Power of the Reshii
-ach(42761),	-- Remnants of a Shattered World
 ach(42771),	-- Archival Assault Stories
 ach(42778),	-- A Flicker in the Dark
 ach(42779),	-- A Flash in the Void
@@ -65,4 +30,3 @@ ach(42780),	-- Eco-Dome Al'dani
 ach(42781),	-- Heroic: Eco-Dome Al'dani
 ach(42782),	-- Mythic: Eco-Dome Al'dani
 ach(42799),	-- Let Her Solo Me
-ach(60889),	-- Unraveled and Persevering

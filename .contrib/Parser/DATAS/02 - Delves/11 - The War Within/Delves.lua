@@ -2007,7 +2007,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		o(507768, {	-- Jettisoned Pile of Goblin-Bucks
 			["description"] = "Left behind by Underpin when he is defeated in a delve.",
-			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+			["cr"] = 236942,	-- The Underpin
 			["g"] = {
 				i(235813),	-- Machine Gob's Iron Grin
 				--i(233071), -- Delver's Bounty

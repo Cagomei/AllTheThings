@@ -327,6 +327,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["_quests"] = { 77095 },
 				}),
 			})),
+			ach(41212, {	-- A Round on the House in Khaz Algar (automated)
+				["timeline"] = { ADDED_11_2_0 }
+			}),
 			ach(1684, {	-- Brewmaster (A)
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {{"meta_achievement",
