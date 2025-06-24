@@ -34,14 +34,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				i(35217),	-- Pattern: Embrace of the Phoenix (RECIPE!)
 				i(35213),	-- Pattern: Fletcher's Gloves of the Phoenix (RECIPE!)
 				i(35214),	-- Pattern: Gloves of Immortal Dusk (RECIPE!)
-				i(35205),	-- Pattern: Hands of Eternal Light
+				i(35205),	-- Pattern: Hands of Eternal Light (RECIPE!)
 				i(35216),	-- Pattern: Leather Chestguard of the Sun (RECIPE!)
 				i(35212),	-- Pattern: Leather Gauntlets of the Sun (RECIPE!)
-				i(35207),	-- Pattern: Robe of Eternal Light
+				i(35207),	-- Pattern: Robe of Eternal Light (RECIPE!)
 				i(35219),	-- Pattern: Sun-Drenched Scale Chestguard (RECIPE!)
 				i(35215),	-- Pattern: Sun-Drenched Scale Gloves (RECIPE!)
-				i(35204),	-- Pattern: Sunfire Handwraps
-				i(35206),	-- Pattern: Sunfire Robe
+				i(35204),	-- Pattern: Sunfire Handwraps (RECIPE!)
+				i(35206),	-- Pattern: Sunfire Robe (RECIPE!)
 				i(35209),	-- Plans: Hard Khorium Battlefists (RECIPE!)
 				i(35211),	-- Plans: Hard Khorium Battleplate (RECIPE!)
 				i(35210),	-- Plans: Sunblessed Breastplate (RECIPE!)

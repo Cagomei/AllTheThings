@@ -140,6 +140,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							}),
 						}),
 						filter(REAGENTS, {
+							i(230286, {	-- Astral Aspirant's Heraldry
+								["cost"] = {{"c", HONOR, 175}},
+								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+							}),
+							i(230285, {	-- Astral Combatant's Heraldry
+								["cost"] = {{"c", HONOR, 350}},
+								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+							}),
+							i(230287, {	-- Astral Gladiator's Heraldry
+								["cost"] = {{"c", CONQUEST, 175}},
+								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+							}),
 							i(210232, {	-- Forged Aspirant's Heraldry
 								["cost"] = {{"c", HONOR, 175}},
 								["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },

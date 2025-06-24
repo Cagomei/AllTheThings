@@ -8,11 +8,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			ach(42042, {	-- Astral Combatant
 				["races"] = ALLIANCE_ONLY,
 				["collectible"] = false,
-			}),	
+			}),
 			ach(42043, {	-- Astral Combatant
 				["races"] = HORDE_ONLY,
 				["collectible"] = false,
-			}),	
+			}),
 			ach(42036, {	-- Astral Gladiator: The War Within Season 3
 				title(633),	-- Astral Gladiator <Name>
 			}),
@@ -141,126 +141,129 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				},
 			}),
 		})),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 } }, {
+		--]]
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },
 				["g"] = {
 					filter(BACK_F, {
-						honor(525, i(229504)),	-- Prized Aspirant's Cape
-						honor(525, i(229503)),	-- Prized Aspirant's Cloak
-						honor(525, i(229502)),	-- Prized Aspirant's Drape
-						honor(525, i(229505)),	-- Prized Aspirant's Greatcloak
+						honor(525, i(230365)),	-- Astral Aspirant's Cape
+						honor(525, i(230364)),	-- Astral Aspirant's Cloak
+						honor(525, i(230363)),	-- Astral Aspirant's Drape
+						honor(525, i(230366)),	-- Astral Aspirant's Greatcloak
 					}),
 					filter(CLOTH, {
-						honor(700, i(229484)),	-- Prized Aspirant's Silk Belt
-						honor(525, i(229487)),	-- Prized Aspirant's Silk Bindings
-						honor(700, i(229452)),	-- Prized Aspirant's Silk Cord
-						honor(875, i(229472)),	-- Prized Aspirant's Silk Cover
-						honor(700, i(229465)),	-- Prized Aspirant's Silk Footwraps
-						honor(700, i(229438)),	-- Prized Aspirant's Silk Gloves
-						honor(700, i(229470)),	-- Prized Aspirant's Silk Handwraps
-						honor(875, i(229440)),	-- Prized Aspirant's Silk Hood
-						honor(875, i(229444)),	-- Prized Aspirant's Silk Leggings
-						honor(875, i(229476)),	-- Prized Aspirant's Silk Legwraps
-						honor(700, i(229449)),	-- Prized Aspirant's Silk Mantle
-						honor(875, i(229428)),	-- Prized Aspirant's Silk Robe
-						honor(700, i(229481)),	-- Prized Aspirant's Silk Shawl
-						honor(875, i(229460)),	-- Prized Aspirant's Silk Shirt
-						honor(700, i(229433)),	-- Prized Aspirant's Silk Treads
-						honor(525, i(229455)),	-- Prized Aspirant's Silk Wristwraps
+						honor(700, i(230345)),	-- Astral Aspirant's Silk Belt
+						honor(525, i(230348)),	-- Astral Aspirant's Silk Bindings
+						honor(700, i(230313)),	-- Astral Aspirant's Silk Cord
+						honor(875, i(230333)),	-- Astral Aspirant's Silk Cover
+						honor(700, i(230326)),	-- Astral Aspirant's Silk Footwraps
+						honor(700, i(230299)),	-- Astral Aspirant's Silk Gloves
+						honor(700, i(230331)),	-- Astral Aspirant's Silk Handwraps
+						honor(875, i(230301)),	-- Astral Aspirant's Silk Hood
+						honor(875, i(230305)),	-- Astral Aspirant's Silk Leggings
+						honor(875, i(230337)),	-- Astral Aspirant's Silk Legwraps
+						honor(700, i(230310)),	-- Astral Aspirant's Silk Mantle
+						honor(875, i(230289)),	-- Astral Aspirant's Silk Robe
+						honor(700, i(230342)),	-- Astral Aspirant's Silk Shawl
+						honor(875, i(230321)),	-- Astral Aspirant's Silk Shirt
+						honor(700, i(230294)),	-- Astral Aspirant's Silk Treads
+						honor(525, i(230316)),	-- Astral Aspirant's Silk Wristwraps
 					}),
 					filter(FINGER_F, {
-						honor(525, i(229497)),	-- Prized Aspirant's Band
-						honor(525, i(229496)),	-- Prized Aspirant's Ring i(
-						honor(525, i(229498)),	-- Prized Aspirant's Signet
+						honor(525, i(230358)),	-- Astral Aspirant's Band
+						honor(525, i(230357)),	-- Astral Aspirant's Ring
+						honor(525, i(230359)),	-- Astral Aspirant's Signet
 					}),
 					filter(LEATHER, {
-						honor(525, i(229490)),	-- Prized Aspirant's Leather Armguards
-						honor(700, i(229454)),	-- Prized Aspirant's Leather Belt
-						honor(700, i(229435)),	-- Prized Aspirant's Leather Boots
-						honor(875, i(229446)),	-- Prized Aspirant's Leather Breeches
-						honor(700, i(229486)),	-- Prized Aspirant's Leather Cord
-						honor(700, i(229467)),	-- Prized Aspirant's Leather Footpads
-						honor(700, i(229436)),	-- Prized Aspirant's Leather Gloves
-						honor(700, i(229468)),	-- Prized Aspirant's Leather Grips
-						honor(875, i(229442)),	-- Prized Aspirant's Leather Helm
-						honor(875, i(229478)),	-- Prized Aspirant's Leather Leggings
-						honor(700, i(229479)),	-- Prized Aspirant's Leather Mantle
-						honor(875, i(229474)),	-- Prized Aspirant's Leather Mask
-						honor(700, i(229447)),	-- Prized Aspirant's Leather Spaulders
-						honor(875, i(229463)),	-- Prized Aspirant's Leather Tunic
-						honor(875, i(229431)),	-- Prized Aspirant's Leather Vest
-						honor(525, i(229458)),	-- Prized Aspirant's Leather Wristwraps
+						honor(525, i(230351)),	-- Astral Aspirant's Leather Armguards
+						honor(700, i(230315)),	-- Astral Aspirant's Leather Belt
+						honor(700, i(230296)),	-- Astral Aspirant's Leather Boots
+						honor(875, i(230307)),	-- Astral Aspirant's Leather Breeches
+						honor(700, i(230347)),	-- Astral Aspirant's Leather Cord
+						honor(700, i(230328)),	-- Astral Aspirant's Leather Footpads
+						honor(700, i(230297)),	-- Astral Aspirant's Leather Gloves
+						honor(700, i(230329)),	-- Astral Aspirant's Leather Grips
+						honor(875, i(230303)),	-- Astral Aspirant's Leather Helm
+						honor(875, i(230339)),	-- Astral Aspirant's Leather Leggings
+						honor(700, i(230340)),	-- Astral Aspirant's Leather Mantle
+						honor(875, i(230335)),	-- Astral Aspirant's Leather Mask
+						honor(700, i(230308)),	-- Astral Aspirant's Leather Spaulders
+						honor(875, i(230324)),	-- Astral Aspirant's Leather Tunic
+						honor(875, i(230292)),	-- Astral Aspirant's Leather Vest
+						honor(525, i(230319)),	-- Astral Aspirant's Leather Wristwraps
 					}),
 					filter(MAIL, {
-						honor(875, i(229462)),	-- Prized Aspirant's Armored Tunic
-						honor(875, i(229430)),	-- Prized Aspirant's Armored Vest
-						honor(700, i(229453)),	-- Prized Aspirant's Chain Belt
-						honor(525, i(229489)),	-- Prized Aspirant's Chain Bracer
-						honor(700, i(229485)),	-- Prized Aspirant's Chain Clasp
-						honor(700, i(229439)),	-- Prized Aspirant's Chain Gauntlets
-						honor(700, i(229471)),	-- Prized Aspirant's Chain Handguards
-						honor(875, i(229473)),	-- Prized Aspirant's Chain Headguard
-						honor(875, i(229441)),	-- Prized Aspirant's Chain Helm
-						honor(875, i(229445)),	-- Prized Aspirant's Chain Leggings
-						honor(700, i(229434)),	-- Prized Aspirant's Chain Sabatons
-						honor(700, i(229482)),	-- Prized Aspirant's Chain Shoulderguards
-						honor(700, i(229450)),	-- Prized Aspirant's Chain Spaulders
-						honor(700, i(229466)),	-- Prized Aspirant's Chain Stompers
-						honor(875, i(229477)),	-- Prized Aspirant's Chain Wargreaves
-						honor(525, i(229457)),	-- Prized Aspirant's Chain Wristwraps
+						honor(875, i(230323)),	-- Astral Aspirant's Armored Tunic
+						honor(875, i(230291)),	-- Astral Aspirant's Armored Vest
+						honor(700, i(230314)),	-- Astral Aspirant's Chain Belt
+						honor(525, i(230350)),	-- Astral Aspirant's Chain Bracer
+						honor(700, i(230346)),	-- Astral Aspirant's Chain Clasp
+						honor(700, i(230300)),	-- Astral Aspirant's Chain Gauntlets
+						honor(700, i(230332)),	-- Astral Aspirant's Chain Handguards
+						honor(875, i(230334)),	-- Astral Aspirant's Chain Headguard
+						honor(875, i(230302)),	-- Astral Aspirant's Chain Helm
+						honor(875, i(230306)),	-- Astral Aspirant's Chain Leggings
+						honor(700, i(230295)),	-- Astral Aspirant's Chain Sabatons
+						honor(700, i(230343)),	-- Astral Aspirant's Chain Shoulderguards
+						honor(700, i(230311)),	-- Astral Aspirant's Chain Spaulders
+						honor(700, i(230327)),	-- Astral Aspirant's Chain Stompers
+						honor(875, i(230338)),	-- Astral Aspirant's Chain Wargreaves
+						honor(525, i(230318)),	-- Astral Aspirant's Chain Wristwraps
 					}),
 					filter(NECK_F, {
-						honor(525, i(229500)),	-- Prized Aspirant's Choker
-						honor(525, i(229499)),	-- Prized Aspirant's Necklace
-						honor(525, i(229501)),	-- Prized Aspirant's Pendant
+						honor(525, i(230361)),	-- Astral Aspirant's Choker
+						honor(525, i(230360)),	-- Astral Aspirant's Necklace
+						honor(525, i(230362)),	-- Astral Aspirant's Pendant
 					}),
 					filter(PLATE, {
-						honor(875, i(229429)),	-- Prized Aspirant's Chestplate
-						honor(525, i(229488)),	-- Prized Aspirant's Plate Armguards
-						honor(875, i(229461)),	-- Prized Aspirant's Plate Armor
-						honor(525, i(229456)),	-- Prized Aspirant's Plate Cuffs
-						honor(700, i(229437)),	-- Prized Aspirant's Plate Gauntlets
-						honor(700, i(229451)),	-- Prized Aspirant's Plate Girdle
-						honor(700, i(229483)),	-- Prized Aspirant's Plate Greatbelt
-						honor(700, i(229469)),	-- Prized Aspirant's Plate Handguards
-						honor(875, i(229459)),	-- Prized Aspirant's Plate Headguard
-						honor(875, i(229427)),	-- Prized Aspirant's Plate Helm
-						honor(875, i(229443)),	-- Prized Aspirant's Plate Legguards
-						honor(700, i(229480)),	-- Prized Aspirant's Plate Pauldrons
-						honor(700, i(229448)),	-- Prized Aspirant's Plate Shoulders
-						honor(700, i(229464)),	-- Prized Aspirant's Plate Stompers
-						honor(700, i(229432)),	-- Prized Aspirant's Plate Warboots
-						honor(875, i(229475)),	-- Prized Aspirant's Plate Wargreaves
+						honor(875, i(230290)),	-- Astral Aspirant's Chestplate
+						honor(525, i(230349)),	-- Astral Aspirant's Plate Armguards
+						honor(875, i(230322)),	-- Astral Aspirant's Plate Armor
+						honor(525, i(230317)),	-- Astral Aspirant's Plate Cuffs
+						honor(700, i(230298)),	-- Astral Aspirant's Plate Gauntlets
+						honor(700, i(230312)),	-- Astral Aspirant's Plate Girdle
+						honor(700, i(230344)),	-- Astral Aspirant's Plate Greatbelt
+						honor(700, i(230330)),	-- Astral Aspirant's Plate Handguards
+						honor(875, i(230320)),	-- Astral Aspirant's Plate Headguard
+						honor(875, i(230288)),	-- Astral Aspirant's Plate Helm
+						honor(875, i(230304)),	-- Astral Aspirant's Plate Legguards
+						honor(700, i(230341)),	-- Astral Aspirant's Plate Pauldrons
+						honor(700, i(230309)),	-- Astral Aspirant's Plate Shoulders
+						honor(700, i(230325)),	-- Astral Aspirant's Plate Stompers
+						honor(700, i(230293)),	-- Astral Aspirant's Plate Warboots
+						honor(875, i(230336)),	-- Astral Aspirant's Plate Wargreaves
 					}),
 					filter(TRINKET_F, {
-						honor(700, i(229491)),	-- Prized Aspirant's Badge of Ferocity
-						honor(700, i(229494)),	-- Prized Aspirant's Emblem
-						honor(700, i(229493)),	-- Prized Aspirant's Insignia of Alacrity
-						honor(525, i(229492)),	-- Prized Aspirant's Medallion
-						honor(525, i(229495)),	-- Prized Aspirant's Sigil of Adaptation
+						honor(700, i(230352)),	-- Astral Aspirant's Badge of Ferocity
+						honor(700, i(230355)),	-- Astral Aspirant's Emblem
+						honor(700, i(230354)),	-- Astral Aspirant's Insignia of Alacrity
+						honor(525, i(230353)),	-- Astral Aspirant's Medallion
+						honor(525, i(230356)),	-- Astral Aspirant's Sigil of Adaptation
 					}),
 					n(WEAPONS, {
-						honor(875, i(229506)),	-- Prized Aspirant's Battleaxe
-						honor(1225, i(229521)),	-- Prized Aspirant's Blastoff Rod
-						honor(875, i(229520)),	-- Prized Aspirant's Chopper
-						honor(875, i(229507)),	-- Prized Aspirant's Dagger
-						honor(1225, i(229519)),	-- Prized Aspirant's Drill
-						honor(1750, i(229511)),	-- Prized Aspirant's Greatsword
-						honor(1750, i(229517)),	-- Prized Aspirant's Halberd
-						honor(875, i(229508)),	-- Prized Aspirant's Hammer
-						honor(875, i(229518)),	-- Prized Aspirant's Mace
-						honor(525, i(229512)),	-- Prized Aspirant's Molotov
-						honor(1750, i(229509)),	-- Prized Aspirant's Polearm
-						honor(1750, i(229516)),	-- Prized Aspirant's Rifle
-						honor(875, i(229513)),	-- Prized Aspirant's Rocketglaive
-						honor(1225, i(229514)),	-- Prized Aspirant's Scepter
-						honor(525, i(229515)),	-- Prized Aspirant's Shield
-						honor(1750, i(229510)),	-- Prized Aspirant's Staff
+						honor(875, i(230367)),	-- Astral Aspirant's Battleaxe
+						honor(525, i(230373)),	-- Astral Aspirant's Censer
+						honor(875, i(230381)),	-- Astral Aspirant's Chopper
+						honor(875, i(230368)),	-- Astral Aspirant's Dagger
+						honor(1750, i(230372)),	-- Astral Aspirant's Greatsword
+						honor(1750, i(230378)),	-- Astral Aspirant's Halberd
+						honor(875, i(229508)),	-- Astral Aspirant's Hammer
+						honor(1225, i(230380)),	-- Astral Aspirant's Knife
+						honor(875, i(230369)),	-- Astral Aspirant's Mace
+						honor(875, i(230379)),	-- Astral Aspirant's Morningstar
+						honor(1750, i(230370)),	-- Astral Aspirant's Polearm
+						honor(1750, i(230377)),	-- Astral Aspirant's Rifle
+						honor(1225, i(230375)),	-- Astral Aspirant's Scepter
+						honor(525, i(230376)),	-- Astral Aspirant's Shield
+						honor(1750, i(230371)),	-- Astral Aspirant's Staff
+						honor(1225, i(230382)),	-- Astral Aspirant's Wand
+						honor(875, i(230374)),	-- Astral Aspirant's Warglaive
 					}),
 				},
 			})
 		})),
+		--[[
 		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 } }, {
 			n(219222, {	-- Lalandi <Conquest Quartermaster>
 				["coord"] = { 55.1, 76.2, DORNOGAL },

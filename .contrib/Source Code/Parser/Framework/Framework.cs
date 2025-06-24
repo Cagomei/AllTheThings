@@ -2709,7 +2709,9 @@ namespace ATT
                                     }
 
                                     // Remap the HolidayNameID to EventID
-                                    if (WagoData.TryGetHolidayNameIDAssociations<Holiday>(eventID, out var associations))
+                                    // Ignore 161 (Kalu'ak Fishing Derby)
+                                    // https://wago.tools/db2/Holidays?filter%5BHolidayNameID%5D=exact%3A161&page=1
+                                    if (eventID != 161 && WagoData.TryGetHolidayNameIDAssociations<Holiday>(eventID, out var associations))
                                     {
                                         foreach (var association in associations)
                                         {

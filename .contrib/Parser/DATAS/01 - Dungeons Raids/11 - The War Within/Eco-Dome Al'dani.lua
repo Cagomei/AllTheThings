@@ -1,83 +1,74 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
---[[
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
-	inst(1298, {	-- Operation: Floodgate
-		["coord"] = { 42.2, 39.6, THE_RINGING_DEEPS },
+root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
+	inst(1303, {	-- Eco-Dome Al'dani
+		["coord"] = { 43.8, 4.1, KARESH },
 		["maps"] = {
-			2387,	-- The Waterworks
-			2388,	-- The G.R.I.D
+			2449,	-- Eco-Dome Al'dani
 		},
 		["g"] = {
 			n(QUESTS, {
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
-				e(2648, {	-- Big M.O.M.M.A.
-					["crs"] = { 226398 },	-- Big M.O.M.M.A.
+				e(3107, {	-- Azhiccar
+					["crs"] = { 234893 },	-- Azhiccar
 					["g"] = {
-						i(232542),	-- Darkfuse Medichopper
-						i(234500),	-- Mechanized Junkpads
-						i(234497),	-- Nonconductive Kill-o-Socks
-						i(234503),	-- Skystreak's Hidden Missiles
-						i(234491),	-- Sonic Ka-BOOM!-erang
+						i(242468),	-- Al'dani Attendant's Gauze
+						i(242497),	-- Azhiccaran Parapodia
+						i(242472),	-- Consumed Wastelander's Epaulets
+						i(242475),	-- Eco-Dome Access Bands
+						i(242470),	-- Mandibular Bonewhacker
+						i(242473),	-- Spittle-Stained Trousers
+						i(242464),	-- Swarmite's Frenzied Pedicel
 					},
 				}),
-				e(2649, {	-- Demolition Duo
+				e(3108, {	-- Taah'bat and A'wazj
 					["crs"] = {
-						226402,	-- Bront
-						226403,	-- Keeza Quickfuse
+						234933,	-- Taah'bat <The Relentless>
+						241375,	-- A'wazj
 					},
 					["g"] = {
-						i(234502),	-- Bront's Singed Blastcoat
-						i(232541),	-- Improvised Seaforium Pacemaker
-						i(234492),	-- Keeza's 'B.' B.B.B.F.G
-						i(234505),	-- Venture Contractor's Floodlight
-						i(234498),	-- Waterworks Filtration Mask
-					},
-				}),
-				e(2650, {	-- Swampface
-					["crs"] = { 226396 },	-- Swampface
-					["g"] = {
-						i(236768),	-- Craboom (PET!)
-						i(234499),	-- Disturbed Kelp Wraps
-						i(234494),	-- Gallytech Turbo-Tiller
-						i(234506),	-- Muckdiver's Wading Plate
-						i(234495),	-- Razorchoke Slacks
-						i(232543),	-- Ringing Ritual Mud
+						i(242479),	-- Girdle of Absolute Faith
+						i(242483),	-- Greaves of the Wild Pair
+						i(242495),	-- Incorporeal Warpclaw
+						i(242482),	-- Reinforced Stalkerhide Vest
+						i(242481),	-- Spellstrike Warplance
+						i(242476),	-- Taahbat's Desert Carbine
+						i(242477),	-- Wastland Devotee's Wrappings
 					},
 				}),
-				e(2651, {	-- Geezle Gigazap
-					["crs"] = { 236950 },	-- Geezle Gigazap
+				e(3109, {	-- Soul-Scribe
+					["crs"] = { 247283 },	-- Soul-Scribe
 					["g"] = {
-						ach(41339),	-- Operation: Floodgate
-						i(234490),	-- Circuit Breaker
-						i(234507),	-- Electrician's Siphoning Filter
-						i(234493),	-- Geezle's Coercive Volt-ohmmeter
-						i(232545),	-- Gigazap's Zap-Cap
-						i(234504),	-- Jumpstarter's Scaffold-Scrapers
-						i(234501),	-- Portable Power Generator
-						i(234496),	-- Saboteur's Rubber Jacket
+						ach(42780),	-- Eco-Dome Al'dani
+						i(242490),	-- Ancient Oracle's Caress
+						i(242487),	-- Fatebound Crusader
+						i(242494),	-- Lily of the Eternal Weave
+						i(242486),	-- Mantle of Wounded Fate
+						i(242484),	-- Soul-Scribe's Tabiqa Dagger
+						i(242493),	-- Starlit Safeguard
+						i(242488),	-- Tunic of Sworn Revenge
+						i(242491),	-- Whispers of K'aresh
 					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
-				e(2651, {	-- Geezle Gigazap
-					["crs"] = { 236950 },	-- Geezle Gigazap
+				e(3109, {	-- Soul-Scribe
+					["crs"] = { 247283 },	-- Soul-Scribe
 					["g"] = {
-						ach(41340),	-- Heroic: Operation: Floodgate
+						ach(42781),	-- Heroic: Eco-Dome Al'dani
 					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				e(2651, {	-- Geezle Gigazap
-					["crs"] = { 236950 },	-- Geezle Gigazap
+				e(3109, {	-- Soul-Scribe
+					["crs"] = { 247283 },	-- Soul-Scribe
 					["g"] = {
-						ach(41341),	-- Mythic: Operation: Floodgate
+						ach(42782),	-- Mythic: Eco-Dome Al'dani
 					},
 				}),
 			}),
 		},
 	})
 })));
---]]

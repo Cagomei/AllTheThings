@@ -1455,6 +1455,32 @@ root(ROOTS.Zones, {
 							["groups"] = WRATH_MINING,
 						}),
 					}),
+					prof(TAILORING, {
+						n(28699, {	-- Charles Worth <Tailoring Trainer>
+						-- #if AFTER 6.2.2
+						["description"] = "You can now learn these recipes even if the achievements have been completed on a different character.  If your tailor isn't your main, rejoice!  Just speak to Charles Worth and tell him you're ready to learn the patterns.",
+						-- #endif
+						["coord"] = { 36.3, 33.4, NORTHREND_DALARAN },
+						["requireSkill"] = TAILORING,
+						["groups"] = appendGroups(WRATH_TAILORING, {
+							r(56017, {	-- Deathchill Cloak
+								["sourceAchievements"] = {
+									41,		-- Loremaster of Northrend (A)
+									-- #if BEFORE 5.0.4
+									1360,	-- Loremaster of Northrend (H)
+									-- #endif
+								},
+								["description"] = "In order to learn this recipe, you must have the Loremaster of Northrend achievement completed.",
+								["requireSkill"] = TAILORING,
+							}),
+							r(56016, {	-- Wispcloak
+								["sourceAchievement"] = 1288,	-- Northrend Dungeonmaster
+								["description"] = "In order to learn this recipe, you must have the Northrend Dungeonmaster achievement completed.",
+								["requireSkill"] = TAILORING,
+							}),
+						}),
+					}),
+					}),
 				}),
 				n(QUESTS, {
 					applyclassicphase(WRATH_PHASE_THREE, q(14409, {	-- A Cautious Return
@@ -2779,7 +2805,7 @@ root(ROOTS.Zones, {
 								i(41718),	-- Design: Brilliant Scarlet Ruby [CATA+] / Design: Runed Scarlet Ruby [WRATH]
 								i(44183),	-- Fireproven Gauntlets
 								i(44181),	-- Ghostflicker Waistband
-								i(42188),	-- Pattern: Sapphire Spellthread
+								i(42188),	-- Pattern: Sapphire Spellthread (RECIPE!)
 								i(44180),	-- Robes of Crackling Flame
 							},
 						}),
@@ -2964,30 +2990,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(44648),	-- Purple Turban
 							i(44647),	-- Violet Hat
-						},
-					}),
-					n(28699, {	-- Charles Worth <Tailoring Trainer>
-						-- #if AFTER 6.2.2
-						["description"] = "You can now learn these recipes even if the achievements have been completed on a different character.  If your tailor isn't your main, rejoice!  Just speak to Charles Worth and tell him you're ready to learn the patterns.",
-						-- #endif
-						["coord"] = { 36.3, 33.4, NORTHREND_DALARAN },
-						["requireSkill"] = TAILORING,
-						["groups"] = {
-							recipe(56017, {	-- Deathchill Cloak
-								["sourceAchievements"] = {
-									41,		-- Loremaster of Northrend (A)
-									-- #if BEFORE 5.0.4
-									1360,	-- Loremaster of Northrend (H)
-									-- #endif
-								},
-								["description"] = "In order to learn this recipe, you must have the Loremaster of Northrend achievement completed.",
-								["requireSkill"] = TAILORING,
-							}),
-							recipe(56016, {	-- Wispcloak
-								["sourceAchievement"] = 1288,	-- Northrend Dungeonmaster
-								["description"] = "In order to learn this recipe, you must have the Northrend Dungeonmaster achievement completed.",
-								["requireSkill"] = TAILORING,
-							}),
 						},
 					}),
 					n(32337, {	-- Christi Stockton <Wine Vendor>
@@ -3238,6 +3240,7 @@ root(ROOTS.Zones, {
 							})),
 							i(54798, {	-- Pattern: Frosty Flying Carpet
 								["cost"] = { { "i", 43102, 6 }, },	-- 6x Frozen Orb
+								["timeline"] = { ADDED_3_3_3 },
 							}),
 							applyclassicphase(WRATH_PHASE_TWO, i(45087, {	-- Runed Orb
 								["cost"] = { { "i", 43102, 4 }, },	-- 4x Frozen Orb

@@ -24,6 +24,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			visit_exploration(15792),	-- The Oasis
 			visit_exploration(15796,{coord={62.8,48.7,KARESH}}),	-- The Tempest Fields
 			visit_exploration(16081,{coord={72.1,13.0,KARESH}}),	-- Vanquisher's Wake
+			visit_exploration(16505,{coord={56.9,24.0,KARESH}}),	-- Voidscar Cavern
 		}),
 	}),
 })));

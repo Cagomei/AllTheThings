@@ -45,15 +45,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(30280),	-- Pattern: Belt of Blasting
+				i(30280),	-- Pattern: Belt of Blasting (RECIPE!)
 				i(30302),	-- Pattern: Belt of Deep Shadow (RECIPE!)
 				i(30301),	-- Pattern: Belt of Natural Power (RECIPE!)
 				i(30303),	-- Pattern: Belt of the Black Eagle (RECIPE!)
-				i(30281),	-- Pattern: Belt of the Long Road
-				i(30282),	-- Pattern: Boots of Blasting
+				i(30281),	-- Pattern: Belt of the Long Road (RECIPE!)
+				i(30282),	-- Pattern: Boots of Blasting (RECIPE!)
 				i(30305),	-- Pattern: Boots of Natural Grace (RECIPE!)
 				i(30307),	-- Pattern: Boots of the Crimson Hawk (RECIPE!)
-				i(30283),	-- Pattern: Boots of the Long Road
+				i(30283),	-- Pattern: Boots of the Long Road (RECIPE!)
 				i(30306),	-- Pattern: Boots of Utter Darkness (RECIPE!)
 				i(30308),	-- Pattern: Hurricane Boots (RECIPE!)
 				i(30304),	-- Pattern: Monsoon Belt (RECIPE!)

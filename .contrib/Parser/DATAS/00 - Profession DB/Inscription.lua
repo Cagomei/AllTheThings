@@ -1691,3 +1691,8 @@ i(234230, 1213512);	-- Glyph of the Twilight Pistol Shot
 ------------------
 i(232535, 471132);	-- Contract: The Cartels of Undermine
 i(233022, 472951);	-- Vantus Rune: Undermine
+
+------------------
+-- PATCH 11.1.7 --
+------------------
+i(243052, 1234336);	-- Technique: Glyph of the Strix

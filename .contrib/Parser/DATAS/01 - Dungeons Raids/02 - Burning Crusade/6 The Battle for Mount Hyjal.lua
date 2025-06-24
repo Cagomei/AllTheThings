@@ -960,9 +960,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 			n(ZONE_DROPS, {
 				i(32748),	-- Pattern: Bindings of Lightning Reflexes (RECIPE!)
 				i(32751),	-- Pattern: Living Earth Shoulders (RECIPE!)
-				i(32755),	-- Pattern: Mantle of Nimble Thought
+				i(32755),	-- Pattern: Mantle of Nimble Thought (RECIPE!)
 				i(32745),	-- Pattern: Shoulderpads of Renewed Life (RECIPE!)
-				i(32752),	-- Pattern: Swiftheal Wraps
+				i(32752),	-- Pattern: Swiftheal Wraps (RECIPE!)
 				i(32746),	-- Pattern: Swiftstrike Bracers (RECIPE!)
 				i(32736),	-- Plans: Swiftsteel Bracers (RECIPE!)
 				i(32739),	-- Plans: Dawnsteel Shoulders (RECIPE!)

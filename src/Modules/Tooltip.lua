@@ -775,6 +775,21 @@ local function AttachTooltipSearchResults(tooltip, method, ...)
 	-- app.PrintDebug("ATT_AttachComplete",tooltip.ATT_AttachComplete,working,group.working)
 end
 
+local AttachTypicalSearchResults
+do
+	local DefaultSearchOptions = { AppendSearchParams = { "field", true }}
+	AttachTypicalSearchResults = app.IsRetail and
+	-- In Retail, we want to put the Thing being searched into the tooltip. Whether other content should be included
+	-- is based on Fillers and other logic based on that Thing and is not always included based on caching
+	function(self, field, id)
+		AttachTooltipSearchResults(self, SearchForObject, field, tonumber(id), DefaultSearchOptions)
+	end
+or
+	function(self, field, id)
+		AttachTooltipSearchResults(self, SearchForField, field, tonumber(id))
+	end
+end
+
 -- Battle Pet Tooltips
 local function AttachBattlePetTooltip(tooltip, data, quantity, detail)
 	if not data or data.att or not data.speciesID then return end
@@ -912,7 +927,7 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 
 			local encounterID = owner.encounterID;
 			if encounterID and not owner.itemID then
-				AttachTooltipSearchResults(self, SearchForField, "encounterID", tonumber(encounterID));
+				AttachTypicalSearchResults(self, "encounterID", encounterID)
 				return true;
 			end
 		end
@@ -1007,14 +1022,14 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 				if server_id and zone_uid and app.Settings:GetTooltipSetting("Layer") then
 					self:AddDoubleLine(L.LAYER, app.Modules.Color.Colorize((ServerUID ~= server_id and (server_id .. "-") or "") .. zone_uid, app.Colors.White));
 				end
-				AttachTooltipSearchResults(self, SearchForField, "creatureID", tonumber(npc_id));
+				AttachTypicalSearchResults(self, "npcID", npc_id)
 			end
 			return true;
 		end
 
 		-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
 		if self.AllTheThingsProcessing and spellID then
-			AttachTooltipSearchResults(self, SearchForField, "spellID", spellID);
+			AttachTypicalSearchResults(self, "spellID", spellID)
 			return true;
 		end
 
@@ -1071,7 +1086,7 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 			end
 			if knownSearchField and ttId then
 				-- app.PrintDebug("TT Search",knownSearchField,ttId)
-				AttachTooltipSearchResults(self, SearchForField, knownSearchField, tonumber(ttId));
+				AttachTypicalSearchResults(self, knownSearchField, ttId)
 				if knownSearchField == "currencyID" and self.ATT_AttachComplete == false then
 					app.CallbackHandlers.DelayedCallback(RerenderCurrency, 0.05, self, ttId);
 				end

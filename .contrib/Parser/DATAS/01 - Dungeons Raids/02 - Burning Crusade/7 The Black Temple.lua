@@ -169,12 +169,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(32754),	-- Pattern: Bracers of Nimble Thought
+				i(32754),	-- Pattern: Bracers of Nimble Thought (RECIPE!)
 				i(32744),	-- Pattern: Bracers of Renewed Life (RECIPE!)
 				i(32750),	-- Pattern: Living Earth Bindings (RECIPE!)
 				i(32749),	-- Pattern: Shoulders of Lightning Reflexes (RECIPE!)
 				i(32747),	-- Pattern: Swiftstrike Shoulders (RECIPE!)
-				i(32753),	-- Pattern: Swiftheal Mantle
+				i(32753),	-- Pattern: Swiftheal Mantle (RECIPE!)
 				i(32738),	-- Plans: Dawnsteel Bracers (RECIPE!)
 				i(32737),	-- Plans: Swiftsteel Shoulders (RECIPE!)
 				-- #if BEFORE WRATH

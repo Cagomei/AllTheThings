@@ -444,11 +444,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(154884),	-- Swamp Fish 'n Chips
 		i(169280, {["timeline"] = {ADDED_8_2_0}}),	-- Unagi Skewer
 		i(166343, {["timeline"] = {ADDED_8_1_0}}),	-- Wild Berry Bread
-		filter(REAGENTS, {
-			i(154898),	-- Meaty Haunch
-			i(154897),	-- Stringy Loins
-			i(154899),	-- Thick Paleo Steak
-		}),
 	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
@@ -743,6 +738,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(152544),	-- Slimy Mackerel
 		i(152548),	-- Tiragarde Perch
 		i(168302, {["timeline"] = {ADDED_8_2_0}}),	-- Viper Fish
+		spell(273293, {	-- Aromatic Fish Oil
+			i(160711),	-- Aromatic Fish Oil
+		}),
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
 				["description"] = "Can be fished from schools.",
@@ -909,6 +907,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			spell(305982, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unbound Leviathan's Eye Loop
 				i(171083),	-- Design: Awakened Leviathan's Eye Loop (RECIPE!)
 			})),
+		}),
+		header(HEADERS.Spell, 382973, {	-- Kul Tiras and Zandalar Prospecting
+			i(153700),	-- Golden Beryl
+			i(153701),	-- Rubellite
+			i(153702),	-- Kubiline
+			i(153703),	-- Solstone
+			i(153704),	-- Viridium
+			i(153705),	-- Kyanite
+			i(153706),	-- Kraken's Eye
+			i(154120),	-- Owlseye
+			i(154121),	-- Scarlet Diamond
+			i(154122),	-- Tidal Amethyst
+			i(154123),	-- Amberblaze
+			i(154124),	-- Laribole
+			i(154125),	-- Royal Quartz
 		}),
 		filter(FINGER_F, {
 			i(153686),	-- Amberblaze Loop
@@ -1382,10 +1395,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		filter(BAGS, {
 			i(154695),	-- Deep Sea Bag
 			i(154696),	-- Embroidered Deep Sea Bag
-		}),
-		filter(REAGENTS, {
-			i(152577),	-- Deep Sea Satin
-			i(152576),	-- Tidespray Linen
 		}),
 		n(CHEST, {
 			i(161977),	-- Tidespray Linen Robe [Alliance]

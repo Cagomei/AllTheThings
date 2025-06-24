@@ -936,7 +936,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			group = subgroup;
 
 			local regroup = {};
-			if app.MODE_DEBUG then
+			if app.MODE_DEBUG or true then
 				for i,j in ipairs(group) do
 					tinsert(regroup, j);
 				end

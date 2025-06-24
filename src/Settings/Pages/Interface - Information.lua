@@ -1177,10 +1177,9 @@ settings.RefreshActiveInformationTypes = function()
 	local last
 	local totalTypes = #SortedInformationTypesByName;
 	local perRow, offset, scale = 24, 250, 0.8;
-	if totalTypes > 75 then
-		offset = 225;
-		scale = 0.7;
-		perRow = 28;
+	if totalTypes > 72 then
+		scale = 0.75;
+		perRow = 26;
 	end
 	local split1 = perRow
 	local split2 = perRow * 2;

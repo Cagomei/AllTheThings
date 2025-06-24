@@ -1,32 +1,12 @@
 11.2.0.61476
-ach(41597),	-- Glory of the Omega Raider
-ach(41598),	-- Manaforge Omega
-ach(41599),	-- Heroic: Manaforge Omega
-ach(41601),	-- Might of the Shadowguard
-ach(41602),	-- Monsters of the Sands
-ach(41603),	-- Heart of Darkness
-ach(41613),	-- Time to Vote! Cute or Scary?
-ach(41614),	-- Mother of All Tantrums
-ach(41615),	-- Cheat Meal
-ach(41616),	-- I See... Absolutely Nothing
-ach(41617),	-- Breaking the Fourth Wall
-ach(41618),	-- Swing and a Miss
-ach(41619),	-- Defying Gravity
-ach(41620),	-- Manaforge Omega Guild Run
-ach(41621),	-- Heroic: Manaforge Omega Guild Run
 ach(42022),	-- A Trusted Partner
-ach(42118),	-- Of Mice and Manaforges
 ach(42190),	-- Let Me Solo Her: Nexus-Princess Ky'veza
 ach(42193),	-- My Stab-Happy Nemesis
 ach(42194),	-- Pruning the Princess
-ach(42316),	-- Fractals? For Spring? Groundbreaking.
 ach(42677),	-- This Machine Flies?! Don't Care I Got It!
 ach(42678),	-- So That's Where My Manaflux Capacitor Was!
 ach(42679),	-- Archival Assault Discoveries
 ach(42771),	-- Archival Assault Stories
 ach(42778),	-- A Flicker in the Dark
 ach(42779),	-- A Flash in the Void
-ach(42780),	-- Eco-Dome Al'dani
-ach(42781),	-- Heroic: Eco-Dome Al'dani
-ach(42782),	-- Mythic: Eco-Dome Al'dani
 ach(42799),	-- Let Her Solo Me

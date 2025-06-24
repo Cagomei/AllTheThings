@@ -19,6 +19,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH 
 					["races"] = ALLIANCE_ONLY,
 					["g"] = appendGroups(BFA_BLACKSMITHING, {
 						r(264448),	-- Kul Tiran Blacksmithing
+						i(160298),	-- Durable Flux
 					}),
 				}),
 			}),
@@ -54,6 +55,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH 
 					["races"] = ALLIANCE_ONLY,
 					["g"] = appendGroups(BFA_ENGINEERING, {
 						r(264492),	-- Kul Tiran Engineering
+						i(160502),	-- Chemical Blasting Cap
 					}),
 				}),
 			}),

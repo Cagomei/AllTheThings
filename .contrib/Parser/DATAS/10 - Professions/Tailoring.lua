@@ -157,6 +157,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 							{ "i", 31525, 1 },	-- Vial of Primal Reagents
 						},
 					}),
+					r(26798),	-- Mooncloth Tailoring
 					i(31522, {	-- Primal Mooncloth Supplies
 						i(31524),	-- Square of Imbued Netherweave
 						i(31525),	-- Vial of Primal Reagents
@@ -180,6 +181,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 						["provider"] = { "i", 31736 },	-- Crystal of Deep Shadows
 						["coord"] = { 58.0, 71.0, SHADOWMOON_VALLEY },
 					}),
+					r(26801),	-- Shadoweave Tailoring
 				},
 			}),
 			q(10832, {	-- Becoming a Spellfire Tailor
@@ -201,6 +203,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 							{ "i", 31742, 1 },	-- Nether-wraith Beacon
 						},
 					}),
+					r(26797),	-- Spellfire Tailoring
 				},
 			}),
 		})),

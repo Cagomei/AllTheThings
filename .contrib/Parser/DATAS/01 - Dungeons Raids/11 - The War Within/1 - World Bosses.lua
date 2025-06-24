@@ -7,6 +7,7 @@ local AOH = 2635
 local KORDAC = 2637
 local SHURRAI = 2636
 local GOBFATHER = 2683
+local RESHANOR = 2762;
 
 ------ EncounterToCRS ------
 local EncounterToCRS = {
@@ -24,6 +25,9 @@ local EncounterToCRS = {
 	},
 	[GOBFATHER] = {
 		231821,	-- The Gobfather <Demodome Champion>
+	},
+	[RESHANOR] = {
+		238319,	-- Reshanor <The Untethered>
 	},
 }
 
@@ -52,6 +56,17 @@ local EncounterToLoot = {
 		i(232731),	-- Steadfast Contender's Breastplate
 		i(232726),	-- Well-Trodden Mechanic's Shoes
 	},
+	[RESHANOR] = {
+		i(243046),	-- Band of Boundless Hunger
+		i(243045),	-- Bygone Wastelander's Girdle
+		i(243040),	-- Crystalblight Legguards
+		i(243039),	-- Devoured Magi's Cinch
+		i(243044),	-- Feasting Fiend's Barbute
+		i(243038),	-- Gaze of the Untethered Doom
+		i(243043),	-- Shadowguard's Rift Wrap
+		i(243041),	-- Umbral Stalker's Footpads
+		i(243042),	-- Void-Bound Hauberk
+	},
 }
 
 ------ EncounterCoords ------
@@ -61,6 +76,7 @@ local EncounterCoords = {
 	[KORDAC] = { 48.8, 61.9, ISLE_OF_DORN },
 	[SHURRAI] = { 45.6, 18.4, HALLOWFALL },
 	[GOBFATHER] = { 58.9, 11.2, UNDERMINE },
+	--[RESHANOR] = { X, Y, KARESH },
 }
 
 ------ Boss Functions ------
@@ -119,6 +135,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			BossWorldQuest(GOBFATHER, 85088, {	-- The Main Event (WQ)
 				["timeline"] = { ADDED_11_1_0_SEASONSTART }
 			}),
+			--[[
+			Boss(RESHANOR, {
+				["questID"] = ,
+				["timeline"] = { ADDED_11_2_0_SEASONSTART },
+			}),
+			BossWorldQuest(RESHANOR, 85088, {	-- The Main Event (WQ)
+				["timeline"] = { ADDED_11_2_0_SEASONSTART }
+			}),
+			--]]
 		}),
 	}),
 })));

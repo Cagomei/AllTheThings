@@ -1,81 +1,81 @@
 MANAFORGE_OMEGA_TIER = {
 	DEATHKNIGHT = {
-		i(229255),	-- Cauldron Champion's Greatboots
-		i(229248),	-- Cauldron Champion's Spined Cloak
-		i(229250),	-- Cauldron Champion's Title Belt
-		i(229249),	-- Cauldron Champion's Wraps
+		i(237625),	-- Hollow Sentinel's Greatbelt
+		i(237630),	-- Hollow Sentinel's Greatboots
+		i(237624),	-- Hollow Sentinel's Stonecuffs
+		i(237623),	-- Hollow Sentinel's Wingdrape
 	};
 	DEMONHUNTER = {
-		i(229312),	-- Fel-Dealer's Cuffs
-		i(229311),	-- Fel-Dealer's Fur Shawl
-		i(229318),	-- Fel-Dealer's Smugglers
-		i(229313),	-- Fel-Dealer's Waistwrap
+		i(237686),	-- Charhound's Vicious Felcover
+		i(237693),	-- Charhound's Vicious Flametabi
+		i(237688),	-- Charhound's Vicious Huntbelt
+		i(237687),	-- Charhound's Vicious Restraints
 	};
 	DRUID = {
-		i(229309),	-- Breeches of Reclaiming Blight
-		i(229303),	-- Knots of Reclaiming Blight
-		i(229302),	-- Leaves of Reclaiming Blight
-		i(229304),	-- Wickerbelt of Reclaiming Blight
+		i(237678),	-- Bands of the Mother Eagle
+		i(237679),	-- Dreamsash of the Mother Eagle
+		i(237684),	-- Feathered Boots of the Mother Eagle
+		i(237677),	-- Plumage of the Mother Eagle
 	};
 	EVOKER = {
-		i(229282),	-- Opulent Treasurescale's Boots
-		i(229277),	-- Opulent Treasurescale's Radiant Chain
-		i(229275),	-- Opulent Treasurescale's Scalecloak
-		i(229276),	-- Opulent Treasurescale's Vambraces
+		i(237652),	-- Spellweaver's Immaculate Crystal Cord
+		i(237651),	-- Spellweaver's Immaculate Cuffs
+		i(237650),	-- Spellweaver's Immaculate Runecloak
+		i(237657),	-- Spellweaver's Immaculate Talons
 	};
 	HUNTER = {
-		i(229268),	-- Tireless Collector's First Kill
-		i(229267),	-- Tireless Collector's Manacles
-		i(229273),	-- Tireless Collector's Spiked Cleats
-		i(229266),	-- Tireless Collector's Veilmesh
+		i(237643),	-- Midnight Herald's Clasp
+		i(237648),	-- Midnight Herald's Jackboots
+		i(237641),	-- Midnight Herald's Shroud
+		i(237642),	-- Midnight Herald's Wristguards
 	};
 	MAGE = {
-		i(229338),	-- Aspectral Emissary's Chosen Drape
-		i(229339),	-- Aspectral Emissary's Gembands
-		i(229340),	-- Aspectral Emissary's Cummerbund
-		i(229345),	-- Aspectral Emissary's Slippers
+		i(237714),	-- Augur's Ephemeral Bindings
+		i(237713),	-- Augur's Ephemeral Brilliance
+		i(237715),	-- Augur's Ephemeral Quillsash
+		i(237720),	-- Augur's Ephemeral Slippers
 	};
 	MONK = {
-		i(229300),	-- Ageless Serpent's Ankleweights
-		i(229294),	-- Ageless Serpent's Cuffs
-		i(229293),	-- Ageless Serpent's Flowing Grace
-		i(229295),	-- Ageless Serpent's Rope Belt
+		i(237668),	-- Breeze of Fallen Storms
+		i(237669),	-- Demigaunts of Fallen Storms
+		i(237675),	-- Footpads of Fallen Storms
+		i(237670),	-- Thunderbund of Fallen Storms
 	};
 	PALADIN = {
-		i(229240),	-- Aureate Sentry's Clasps
-		i(229246),	-- Aureate Sentry's Greaves
-		i(229239),	-- Aureate Sentry's Gilded Cloak
-		i(229241),	-- Aureate Sentry's Greatbelt
+		i(237614),	-- Gilded Cloak of the Lucent Battalion
+		i(237616),	-- Seal of the Lucent Battalion
+		i(237621),	-- Stompers of the Lucent Battalion
+		i(237615),	-- Vambraces of the Lucent Battalion
 	};
 	PRIEST = {
-		i(229336),	-- Confessor's Unshakable Boots
-		i(229330),	-- Confessor's Unshakable Faulds
-		i(229329),	-- Confessor's Unshakable Lightcover
-		i(229331),	-- Confessor's Unshakable Ornament
+		i(237705),	-- Dying Star's Bangles
+		i(237704),	-- Dying Star's Memory
+		i(237711),	-- Dying Star's Soles
+		i(237706),	-- Dying Star's Waistlight
 	};
 	ROGUE = {
-		i(229291),	-- Spectral Gambler's Cavaliers
-		i(229286),	-- Spectral Gambler's Pocket Ace
-		i(229285),	-- Spectral Gambler's Shackles
-		i(229284),	-- Spectral Gambler's Shawl
+		i(237660),	-- Armbands of the Sudden Eclipse
+		i(237666),	-- Bladed Boots of the Sudden Eclipse
+		i(237659),	-- Cape of the Sudden Eclipse
+		i(237661),	-- Strap of the Sudden Eclipse
 	};
 	SHAMAN = {
-		i(229258),	-- Gale Sovereign's Bracers
-		i(229257),	-- Gale Sovereign's Breeze
-		i(229259),	-- Gale Sovereign's Ritual Belt
-		i(229264),	-- Gale Sovereign's Stormboots
+		i(237639),	-- Boots of Channeled Fury
+		i(237633),	-- Bracers of Channeled Fury
+		i(237634),	-- Fauld of Channeled Fury
+		i(237632),	-- Shawl of Channeled Fury
 	};
 	WARLOCK = {
-		i(229320),	-- Spliced Fiendtrader's Shady Cover
-		i(229321),	-- Spliced Fiendtrader's Skinbands
-		i(229322),	-- Spliced Fiendtrader's Sash
-		i(229327),	-- Spliced Fiendtrader's Soles
+		i(237695),	-- Inquisitor's All-Seeing Madness
+		i(237696),	-- Inquisitor's Bracelets of Madness
+		i(237697),	-- Inquisitor's Tome of Madness
+		i(237702),	-- Inquisitor's Treads of Madness
 	},
 	WARRIOR = {
-		i(229230),	-- Enforcer's Backalley Allegiance
-		i(229231),	-- Enforcer's Backalley Bindings
-		i(229232),	-- Enforcer's Backalley Girdle
-		i(229237),	-- Enforcer's Backalley Stompers
+		i(237605),	-- Living Weapon's Cape
+		i(237607),	-- Living Weapon's Chain
+		i(237606),	-- Living Weapon's Manacles
+		i(237612),	-- Living Weapon's Sabatons
 	},
 	SYM_TIER = function(ClassID, DiffID) return {{"sub","instance_tier",1302,DiffID,ClassID}} end
 }

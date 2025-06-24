@@ -3141,7 +3141,9 @@ root(ROOTS.Zones, {
 								i(44055),	-- Whale-Skin Vest
 								i(44058),	-- Whalebone Carapace
 							}, {	-- Revered
-								i(45774),	-- Pattern: Emerald Bag
+								i(45774, {	-- Pattern: Emerald Bag (RECIPE!)
+									["timeline"] = { ADDED_3_1_0 },
+								}),
 								i(44509),	-- Pattern: Trapper's Traveling Pack (RECIPE!)
 								i(44052),	-- Totemic Purification Rod
 								i(44051),	-- Traditional Flensing Knife

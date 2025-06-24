@@ -723,7 +723,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		}),
 		filter(CLOTH, {
 			i(146666),	-- Celumbra, the Night's Dichotomy
-			i(151792),	-- Green Winter Clothes
 			i(127002),	-- Imbued Silkweave Bracers
 			i(127001),	-- Imbued Silkweave Cinch
 			i(127000),	-- Imbued Silkweave Epaulets
@@ -733,7 +732,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(126995),	-- Imbued Silkweave Robe
 			i(126996),	-- Imbued Silkweave Slippers
 			i(151571),	-- Lightweave Breeches
-			i(151790),	-- Red Winter Clothes
 			i(126994),	-- Silkweave Bracers
 			i(126993),	-- Silkweave Cinch
 			i(126992),	-- Silkweave Epaulets

@@ -48,12 +48,12 @@ BAINE_BLOODHOOF_CRITERIA_UID = 12661;
 
 -- WoWHead doesn't list specific colors on all of the vendors, but if you visit on the opposite faction, they sell both. It's based on the character's faction. Putting this in here in case its different and we need two separate distinctions.
 local HOLIDAY_VENDOR_GROUPS_GREEN = {
-	i(34261, {	-- Pattern: Green Winter Clothes
+	i(34261, {	-- Pattern: Green Winter Clothes (RECIPE!)
 		["timeline"] = { ADDED_2_3_0 },
 	}),
 }
 local HOLIDAY_VENDOR_GROUPS_RED = {
-	i(34319, {	-- Pattern: Red Winter Clothes
+	i(34319, {	-- Pattern: Red Winter Clothes (RECIPE!)
 		["timeline"] = { ADDED_2_3_0 },
 	}),
 };
@@ -1081,7 +1081,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		-- #endif
 		["groups"] = {
 			-- #if AFTER TBC
-			i(34261, {	-- Pattern: Green Winter Clothes
+			i(34261, {	-- Pattern: Green Winter Clothes (RECIPE!)
 				-- #if AFTER TBC
 				["description"] = "Horde Tailors receive this pattern in the mail, but Alliance Tailors can learn it from the Neutral holiday vendor in Shattrath.",
 				-- #else
@@ -1089,7 +1089,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 				["timeline"] = { ADDED_2_3_0 },
 			}),
-			i(34319, {	-- Pattern: Red Winter Clothes
+			i(34319, {	-- Pattern: Red Winter Clothes (RECIPE!)
 				-- #if AFTER TBC
 				["description"] = "Alliance Tailors receive this pattern in the mail, but Horde Tailors can learn it from the Neutral holiday vendor in Shattrath.",
 				-- #else

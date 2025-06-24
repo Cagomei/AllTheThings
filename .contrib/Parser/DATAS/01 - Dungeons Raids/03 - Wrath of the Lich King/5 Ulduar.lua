@@ -1433,13 +1433,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45096),	-- Pattern: Blue Belt of Chaos (RECIPE!)
 							i(45095),	-- Pattern: Boots of Living Scale (RECIPE!)
 							i(45101),	-- Pattern: Boots of Wintry Endurance (RECIPE!)
-							i(45104),	-- Pattern: Cord of the White Dawn
+							i(45104),	-- Pattern: Cord of the White Dawn (RECIPE!)
 							i(45098),	-- Pattern: Death-Warmed Belt (RECIPE!)
 							i(45099),	-- Pattern: Footpads of Silence (RECIPE!)
 							i(45097),	-- Pattern: Lightning Grounded Boots (RECIPE!)
-							i(45102),	-- Pattern: Sash of Ancient Power
-							i(45105),	-- Pattern: Savior's Slippers
-							i(45103),	-- Pattern: Spellslinger's Slippers
+							i(45102),	-- Pattern: Sash of Ancient Power (RECIPE!)
+							i(45105),	-- Pattern: Savior's Slippers (RECIPE!)
+							i(45103),	-- Pattern: Spellslinger's Slippers (RECIPE!)
 							i(45089),	-- Plans: Battlelord's Plate Boots (RECIPE!)
 							i(45088),	-- Plans: Belt of the Titans (RECIPE!)
 							i(45092),	-- Plans: Indestructible Plate Girdle (RECIPE!)
@@ -2214,13 +2214,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(45096),	-- Pattern: Blue Belt of Chaos (RECIPE!)
 						i(45095),	-- Pattern: Boots of Living Scale (RECIPE!)
 						i(45101),	-- Pattern: Boots of Wintry Endurance (RECIPE!)
-						i(45104),	-- Pattern: Cord of the White Dawn
+						i(45104),	-- Pattern: Cord of the White Dawn (RECIPE!)
 						i(45098),	-- Pattern: Death-Warmed Belt (RECIPE!)
 						i(45099),	-- Pattern: Footpads of Silence (RECIPE!)
 						i(45097),	-- Pattern: Lightning Grounded Boots (RECIPE!)
-						i(45102),	-- Pattern: Sash of Ancient Power
-						i(45105),	-- Pattern: Savior's Slippers
-						i(45103),	-- Pattern: Spellslinger's Slippers
+						i(45102),	-- Pattern: Sash of Ancient Power (RECIPE!)
+						i(45105),	-- Pattern: Savior's Slippers (RECIPE!)
+						i(45103),	-- Pattern: Spellslinger's Slippers (RECIPE!)
 						i(45089),	-- Plans: Battlelord's Plate Boots (RECIPE!)
 						i(45088),	-- Plans: Belt of the Titans (RECIPE!)
 						i(45092),	-- Plans: Indestructible Plate Girdle (RECIPE!)

@@ -900,6 +900,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(155420),	-- Xombo's Prized Greataxe
 					i(161308, { ["races"] = ALLIANCE_ONLY }),	-- Ashvane Captain's Quickblade
 					i(161297, { ["races"] = ALLIANCE_ONLY }),	-- Hacksaw Skinning Knife
+					--
+					i(158879),	-- Bloodstained Message
+					i(160525),	-- Tongo's Head (QI!)
 				},
 			}),
 			q(50980, {	-- My Hungry Neighbor

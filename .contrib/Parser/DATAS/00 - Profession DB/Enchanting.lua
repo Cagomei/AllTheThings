@@ -177,7 +177,9 @@ i(11204, 13846);	-- Greater Versatility / CLASSIC: Greater Spirit [Bracers]
 i(19447, 23802);	-- Healing Power [Bracers]
 i(20730, 25079);	-- Healing Power [Golves]
 i(18260, 22750);	-- Healing Power [Weapon]
+-- #IF BEFORE 4.3
 i(11151, 13617);	-- Herbalism [REMOVED:4.3.0, See new version]
+-- #ENDIF
 i(16223, 20029);	-- Icy Chill
 i(11206, 13882);	-- Lesser Agility [Cloak] [REMOVED:4.0.3, See new version]
 i(11164, 13653);	-- Lesser Beastslayer

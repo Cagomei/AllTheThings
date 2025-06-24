@@ -2,13 +2,33 @@ local i = GetRecipeHelperForProfession(JEWELCRAFTING);
 
 -- Everything in the file currently is representative of live Retail data, so let's avoid contaminating
 -- Classic pre-CATA where the Great JC Recipe Replacement took place
--- #IF BEFORE CATA
+-- #if BEFORE CATA
 if true then return end
--- #ENDIF
+-- #endif
+
+-- #if ANYCLASSIC
+-----------------
+-- PATCH 4.0.3 --
+-----------------
+--- TRAINER ---
+i(0,1216321);	-- Bloodthirsty Amberjewel Pendant
+i(0,1216323);	-- Bloodthirsty Sapphire Ring
+i(0,1216328);	-- Bloodthirsty Amberjewel Band
+i(0,1216329);	-- Bloodthirsty Ruby Signet
+i(0,1216330);	-- Bloodthirsty Sapphire Necklace
+i(0,1216331);	-- Bloodthirsty Ruby Choker
+-- #endif
 
 -----------------
 -- PATCH 2.0.1 --
 -----------------
+--- TRAINER ---
+i(0, 25229);	-- Jewelcrafting (Apprentice)
+i(0, 25230);	-- Jewelcrafting (Journeyman)
+i(0, 28894);	-- Jewelcrafting (Expert)
+i(0, 28895);	-- Jewelcrafting (Artisan)
+i(0, 28895);	-- Jewelcrafting (Master)
+--- ITEM ---
 i(20854, 25339);	-- Design: Amulet of the Moon (Guessed via Filter Recipe with SpellID)
 i(20855, 25323);	-- Design: Wicked Moonstone Ring (Guessed via Filter Recipe with SpellID)
 i(20856, 25320);	-- Design: Heavy Golden Necklace of Battle (Guessed via Filter Recipe with SpellID)
@@ -151,9 +171,9 @@ i(32291, 39720);	-- Design: Smooth Lionseye (Guessed via Filter Recipe with Spel
 i(32292, 39721);	-- Design: Rigid Empyrean Sapphire (Guessed via Filter Recipe with SpellID)
 i(32293, 39720);	-- Design: Smooth Lionseye (Guessed via Filter Recipe with SpellID)
 i(32295, 39724);	-- Design: Mystic Lionseye (Guessed via Filter Recipe with SpellID)
--- #IF BEFORE MOP
+-- #if BEFORE MOP
 i(32296, 39721);	-- Design: Rigid Empyrean Sapphire (Guessed via Filter Recipe with SpellID)
--- #ENDIF
+-- #endif
 i(32297, 39727);	-- Design: Sovereign Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
 i(32298, 39728);	-- Design: Shifting Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
 i(32299, 39728);	-- Design: Shifting Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
@@ -270,6 +290,9 @@ i(37504, 39741);	-- Design: Purified Shadowsong Amethyst (Guessed via Duplicate 
 -----------------
 -- PATCH 3.0.2 --
 -----------------
+--- TRAINER ---
+i(0, 51311);	-- Jewelcrafting (Grand Master)
+--- ITEM ---
 i(41559, 53857);	-- Design: Mystic Sun Crystal (Guessed via Filter Recipe with SpellID)
 i(41560, 53943);	-- Design: Stormy Chalcedony (Guessed via Filter Recipe with SpellID)
 i(41561, 53885);	-- Design: Reckless Huge Citrine (Guessed via Filter Recipe with SpellID)
@@ -484,8 +507,56 @@ i(47023, 66584);	-- Design: Deft Ametrine
 i(49112, 68253);	-- Design: Nightmare Tear
 
 -----------------
+-- PATCH 4.0.1 --
+-----------------
+--- NYI ---
+i(0,73233);	-- Mystic Alicite
+i(0,73259);	-- Resolute Hessonite
+
+-----------------
 -- PATCH 4.0.3 --
 -----------------
+--- TRAINER ---
+i(0,73318)	-- Jewelcrafting (Illustrious Grand Master)
+i(0,73222);	-- Bold Carnelian
+i(0,73223);	-- Delicate Carnelian
+i(0,73225);	-- Brilliant Carnelian
+i(0,73226);	-- Precise Carnelian
+i(0,73227);	-- Solid Zephyrite
+i(0,73228);	-- Sparkling Zephyrite
+i(0,73230);	-- Rigid Zephyrite
+i(0,73232);	-- Smooth Alicite
+i(0,73234);	-- Quick Alicite
+i(0,73239);	-- Fractured Alicite
+i(0,73240);	-- Sovereign Nightstone
+i(0,73241);	-- Shifting Nightstone
+i(0,73243);	-- Timeless Nightstone
+i(0,73246);	-- Etched Nightstone
+i(0,73247);	-- Glinting Nightstone
+i(0,73249);	-- Veiled Nightstone
+i(0,73250);	-- Accurate Nightstone
+i(0,73265);	-- Deft Hessonite
+i(0,73267);	-- Skillful Hessonite
+i(0,73268);	-- Adept Hessonite
+i(0,73270);	-- Artful Hessonite
+i(0,73274);	-- Jagged Jasper
+i(0,73279);	-- Puissant Jasper
+i(0,73281);	-- Sensey's Jasper
+i(0,73478);	-- Fire Prism
+i(0,73494);	-- Jasper Ring
+i(0,73495);	-- Hessonite Band
+i(0,73496);	-- Alicite Pendant
+i(0,73497);	-- Nightstone Choker
+i(0,73620);	-- Carnelian Spikes
+i(0,73621);	-- The Perforator
+i(0,73622);	-- Stardust
+i(0,99539);	-- Vicious Sapphire Ring
+i(0,99540);	-- Vicious Amberjewel Band
+i(0,99541);	-- Vicious Ruby Signet
+i(0,99542);	-- Vicious Sapphire Necklace
+i(0,99543);	-- Vicious Amberjewel Pendant
+i(0,99544);	-- Vicious Ruby Choker
+--- ITEM ---
 i(52362, 73335);	-- Design: Bold Inferno Ruby
 i(52380, 73336);	-- Design: Delicate Inferno Ruby
 i(52381, 73396);	-- Design: Bold Chimera's Eye

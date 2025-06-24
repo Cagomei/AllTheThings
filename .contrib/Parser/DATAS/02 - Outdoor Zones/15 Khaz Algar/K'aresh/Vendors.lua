@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 	m(KARESH, {
 		n(VENDORS, {
 			n(235079, {	-- Ba'orr
-				["coord"] = { 41.1, 25.1, TAZAVESH },
+				["coord"] = { 41.1, 25.1, KARESH_TAZAVESH },
 				["g"] = {
 					i(247699),	-- Coagulated "Milk" Protein
 					i(247698),	-- Deep-Fired Devourer Legs

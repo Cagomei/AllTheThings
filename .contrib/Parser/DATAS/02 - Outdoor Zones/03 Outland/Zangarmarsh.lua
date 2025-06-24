@@ -2110,7 +2110,7 @@ root(ROOTS.Zones, {
 								i(29150, {	-- Hardened Stone Shard
 									["cost"] = { { "i", 24245, 45 }, },	-- 45x Glowcap
 								}),
-								i(38229, {	-- Pattern: Mycah's Botanical Bag
+								i(38229, {	-- Pattern: Mycah's Botanical Bag (RECIPE!)
 									["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
 								}),
 								i(22916, {	-- Recipe: Transmute Primal Earth to Water (RECIPE!)

@@ -472,7 +472,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 							}, {	-- RENOWN 6 --
 							}, {	-- RENOWN 7 --
 							}, {	-- RENOWN 8 --
-								i(229945),			-- Thunderdrum Misfire (MOUNT!)
+								i(229945),		-- Thunderdrum Misfire (MOUNT!)
 							}, {	-- RENOWN 9 --
 							}, {	-- RENOWN 10 --
 							}, {	-- RENOWN 11 --
@@ -486,8 +486,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 							}, {	-- RENOWN 18 --
 							}, {	-- RENOWN 19 --
 							}, {	-- RENOWN 20 --
-								i(229940),			-- Flarendo the Furious (MOUNT!)
-								title(602),			-- High Roller <Name>
+								i(229940),		-- Flarendo the Furious (MOUNT!)
+								title(602),		-- High Roller <Name>
+								spell(1226482),	-- Path of the Full House
 							},
 						}),
 					}),

@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				["cr"] = 234721,	-- Sellyna
 			}),
 			fp(3029, {	-- Tazavesh, K'aresh
-				["coord"] = { 34.7, 10.1, TAZAVESH },
+				["coord"] = { 34.7, 10.1, KARESH_TAZAVESH },
 				["cr"] = 234692,	-- Om'Thenal
 			}),
 			fp(3031, {	-- The Oasis, K'aresh

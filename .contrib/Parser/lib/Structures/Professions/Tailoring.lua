@@ -140,6 +140,7 @@ APPRENTICE_JOURNEYMAN_EXPERT_TAILORING = {
 		r(12044),	-- Simple Linen Pants
 		r(3845),	-- Soft-soled Linen Boots
 		r(3855),	-- Spidersilk Boots
+		applyclassicphase(WRATH_PHASE_ONE, r(63742, {["timeline"] = {ADDED_3_1_0}})),	-- Spidersilk Drape
 		r(3866),	-- Stylish Red Shirt
 		r(7624),	-- White Linen Robe
 		r(2393),	-- White Linen Shirt
@@ -227,6 +228,135 @@ VANILLA_TAILORING_VENDOR_REAGENTS = {
 	i(8343),	-- Heavy Silken Thread
 	i(14341),	-- Rune Thread
 };
+TBC_TAILORING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
+	r(26790, {	-- Tailoring (Master)
+		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 50,
+		-- #endif
+		["rank"] = 5,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264618, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Outland Tailoring
+	r(330227, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [The Burning Cruse]
+	r(330228, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [The Burning Cruse]
+	r(330229, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [The Burning Cruse]
+	r(330230, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [The Burning Cruse]
+	r(330231, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [The Burning Cruse]
+	n(ARMOR, {
+		r(26765),	-- Netherweave Belt
+		r(26772),	-- Netherweave Boots
+		r(26764),	-- Netherweave Bracers
+		r(26770),	-- Netherweave Gloves
+		r(26771),	-- Netherweave Pants
+	}),
+	filter(BAGS, {
+		r(26746),	-- Netherweave Bag
+	}),
+	filter(MISC, {
+		r(31460),	-- Netherweave Net
+	}),
+	filter(REAGENTS, {
+		r(26745),	-- Bolt of Netherweave
+	}),
+}));
+WRATH_TAILORING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
+	r(51309, {	-- Tailoring (Grand Master)
+		["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 65,
+		-- #endif
+		["rank"] = 6,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264620, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Tailoring
+	r(330232, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Wrath of the Lich King]
+	r(330233, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Wrath of the Lich King]
+	r(330234, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Wrath of the Lich King]
+	r(330235, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Wrath of the Lich King]
+	r(330236, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Wrath of the Lich King]
+	n(ARMOR, {
+		r(56023),	-- Aurora Slippers
+		r(55925),	-- Black Duskweave Leggings
+		r(55941),	-- Black Duskweave Robe
+		r(55943),	-- Black Duskweave Wristwraps
+		r(64730, {["timeline"] = {ADDED_3_1_0}}),	-- Cloak of Crimson Snow
+		r(56015),	-- Cloak of Frozen Spirits
+		r(56014),	-- Cloak of the Moon
+		r(56020),	-- Deep Frozen Cord
+		r(55914),	-- Duskweave Belt
+		r(55924),	-- Duskweave Boots
+		r(55919),	-- Duskweave Cowl
+		r(55922),	-- Duskweave Gloves
+		r(55901),	-- Duskweave Leggings
+		r(55921),	-- Duskweave Robe
+		r(55923),	-- Duskweave Shoulders
+		r(55920),	-- Duskweave Wristwraps
+		r(56027),	-- Ebonweave Gloves
+		r(56026),	-- Ebonweave Robe
+		r(64729, {["timeline"] = {ADDED_3_1_0}}),	-- Frostguard Drape
+		r(56021),	-- Frostmoon Pants
+		r(59582),	-- Frostsavage Belt
+		r(59585),	-- Frostsavage Boots
+		r(59583),	-- Frostsavage Bracers
+		r(59589),	-- Frostsavage Cowl
+		r(59586),	-- Frostsavage Gloves
+		r(59588),	-- Frostsavage Leggings
+		r(59587),	-- Frostsavage Robe
+		r(59584),	-- Frostsavage Shoulders
+		r(55908),	-- Frostwoven Belt
+		r(55906),	-- Frostwoven Boots
+		r(55907),	-- Frostwoven Cowl
+		r(55904),	-- Frostwoven Gloves
+		r(56030),	-- Frostwoven Leggings
+		r(55903),	-- Frostwoven Robe
+		r(55902),	-- Frostwoven Shoulders
+		r(56031),	-- Frostwoven Wristwraps
+		r(60993),	-- Glacial Robe
+		r(60994),	-- Glacial Slippers
+		r(60990),	-- Glacial Waistband
+		r(56000),	-- Green Workman's Shirt
+		r(56018),	-- Hat of Wintry Doom
+		r(56022),	-- Light Blessed Mittens
+		r(56025),	-- Moonshroud Gloves
+		r(56024),	-- Moonshroud Robe
+		r(55911),	-- Mystic Frostwoven Robe
+		r(55910),	-- Mystic Frostwoven Shoulders
+		r(55913),	-- Mystic Frostwoven Wristwraps
+		r(56019),	-- Silky Iceshard Boots
+		r(56029),	-- Spellweave Gloves
+		r(56028),	-- Spellweave Robe
+		r(55995),	-- Yellow Lumberjack Shirt
+	}),
+	n(ARMOR_ENCHANTMENTS, {
+		r(56010),	-- Azure Spellthread
+		r(55769),	-- Darkglow Embroidery [Rank 1] [REMOVED: 6.0.2]
+		r(55642),	-- Lightweave Embroidery [Rank 1] [REMOVED 6.0.2]
+		r(56034),	-- Master's Spellthread [Rank 1] [REMOVED 6.0.2]
+		r(56039),	-- Sanctified Spellthread [Rank 1] [REMOVED 6.0.2]
+		r(56008),	-- Shining Spellthread
+		r(55777),	-- Swordguard Embroidery [Rank 1] [REMOVED 6.0.2]
+	}),
+	filter(BAGS, {
+		r(56007),	-- Frostweave Bag
+	}),
+	filter(MISC, {
+		r(55898),	-- Frostweave Net
+	}),
+	filter(MOUNTS, {
+		r(60969),	-- Flying Carpet
+		r(60971),	-- Magnificent Flying Carpet
+	}),
+	filter(REAGENTS, {
+		r(55899),	-- Bolt of Frostweave
+		r(55900),	-- Bolt of Imbued Frostweave
+		r(56002),	-- Ebonweave
+		r(56001),	-- Moonshroud
+		r(56003),	-- Spellweave
+	}),
+}));
 COMMON_CATACLYSM_TAILORING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	i(54601, {	-- Pattern: Belt of the Depths
 		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth

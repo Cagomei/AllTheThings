@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				o(503823, {	-- Mailroom Distribution
 					["description"] = "Grab the Mail Overflow from the Mailbox in front of the Mailroom.",
 					["sourceQuests"] = { 84967 },	-- The Shadowguard Shattered
-					["coord"] = { 48.1, 64.1, TAZAVESH },
+					["coord"] = { 48.1, 64.1, KARESH_TAZAVESH },
 					["questID"] = 86467,
 					["g"] = {
 						i(245970),	-- P.O.S.T. Master's Express Hearthstone (TOY!)
@@ -145,12 +145,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				q(91640),	-- A Dog-Eared Book
 				o(558109, {	-- Ba'key's Aromatic Broker Cookies Recipes
 					-- TODO: Bugged. does not trigger a HQT. 22.06.2025. -Exo
-					["coord"] = { 46.3, 18.6, TAZAVESH },
+					["coord"] = { 46.3, 18.6, KARESH_TAZAVESH },
 					["questID"] = 91645,
 				}),
 				q(91687),	-- Checklist of Minor Pleasures
 				o(558115, {	-- Coins: An Oath We Exchange
-					["coord"] = { 41.7, 39.7, TAZAVESH },
+					["coord"] = { 41.7, 39.7, KARESH_TAZAVESH },
 					["questID"] = 91648,
 				}),
 				q(91646),	-- From Vengeance to Void
@@ -161,14 +161,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				q(91649),	-- I Have Become Void!
 				q(91643),	-- Multiversal Energy Dynamics and the Murmurration Paradox
 				o(558105, {	-- Mysterious Notebook
-					["coord"] = { 58.5, 91.5, TAZAVESH },
+					["coord"] = { 58.5, 91.5, KARESH_TAZAVESH },
 					["questID"] = 91642,
 				}),
 				q(91647),	-- The Facts of K'aresh
 			}),
 			o(516444, {	-- Ethereal Pocket-Storage
 				["description"] = "Spawns at random locations throughout Tazavesh.",
-				["maps"] = { TAZAVESH },
+				["minReputation"] = { FACTION_THE_KARESH_TRUST, 4 },	-- The K'aresh Trust Renown 4
+				["maps"] = { KARESH_TAZAVESH, KARESH },
 				-- No quest attached to them.
 				["g"] = {	-- Has a chance to drop following
 					-- 'World Drop' gray equipment and other junk

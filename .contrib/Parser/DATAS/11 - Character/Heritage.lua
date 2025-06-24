@@ -1300,10 +1300,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					77903,	-- De Power of Death
 				},
 				["provider"] = { "n", 213638 },	-- Rokhan
-				["coord"] = { 56.9, 56.4, NORTHERN_STRANGLETHORN },
-				["g"] = {
-					i(211133),	-- Jani's Blessing (QI!)
-				},
+				["coord"] = { 58.5, 65.5, ECHO_ISLES },
+				["g"] = { i(211133) },	-- Jani's Blessing (QI!)
 			}),
 			q(77906, {	-- De Darkspear Loa
 				["sourceQuests"] = { 77905 },	-- Avatar of Mueh'zala

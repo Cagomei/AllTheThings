@@ -367,6 +367,17 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = TBC_MINING,
 					}),
+					prof(TAILORING, {
+						["crs"] = {
+							18772,	-- Hama <Tailoring Trainer> (A)
+							18749,	-- Dalinna <Tailoring Trainer> (H)
+						},
+						["coords"] = {
+							{ 54.6, 63.6, HELLFIRE_PENINSULA },
+							{ 56.6, 37.2, HELLFIRE_PENINSULA },
+						},
+						["g"] = TBC_TAILORING,
+					}),
 				}),
 				n(QUESTS, {
 					q(10864, {	-- A Burden of Souls

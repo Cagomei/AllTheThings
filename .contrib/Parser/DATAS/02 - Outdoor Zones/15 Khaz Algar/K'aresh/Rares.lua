@@ -6,9 +6,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 		n(RARES, {
 			n(232098, {	-- "Chowdar" <Escaped Auction Parcel #8675308>
 				["coords"] = {	-- Runs between the coordinates
-					{ 81.9, 75.6, TAZAVESH },
-					{ 76.5, 76.8, TAZAVESH },
-					{ 72.8, 84.2, TAZAVESH },
+					{ 81.9, 75.6, KARESH_TAZAVESH },
+					{ 76.5, 76.8, KARESH_TAZAVESH },
+					{ 72.8, 84.2, KARESH_TAZAVESH },
 				},
 				["questID"] = 90587,
 				["g"] = {
@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				--["questID"] = ,
 			}),
 			n(238540, {	-- Grubber
-				["coord"] = { 71.1, 57.2, TAZAVESH },
+				["coord"] = { 71.1, 57.2, KARESH_TAZAVESH },
 				["questID"] = 90698,
 			}),
 			n(245998, {	-- Heka'tamos <the Elemental Disjunction>

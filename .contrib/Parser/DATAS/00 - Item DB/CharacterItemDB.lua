@@ -879,6 +879,7 @@ ihqt(235608, 86878);				-- Nightfall Sanctum Campsite
 is(0, 467553);						-- Path of the Azerite Refinery [A]
 is(0, 467555);						-- Path of the Azerite Refinery [H]
 is(0, 1216786);						-- Path of the Circuit Breaker
+is(0, 1226482);						-- Path of the Full House
 ihqt(235262, 86753);				-- Steamwheedle's Trove (Honored)
 ihqt(234743, 86754);				-- Steamwheedle's Trove (Revered)
 ihqt(235263, 86596);				-- Steamwheedle's Trove (Exalted)
@@ -903,6 +904,32 @@ ihqt(235265, 86599);				-- Venture Co.'s Trove (Exalted)
 iq(242623, 90710);					-- Enchanted Warbound Purifying Kit
 ihqt(242919, 90780);				-- Cracked Keystone
 iq(242622, 90709);					-- Warbound Purifying Kit
+
+------------------
+-- PATCH 11.1.7 --
+------------------
+iq(244905, 90953);					-- Miniature Titan Disc: Charged Crystal
+iq(244903, 90951);					-- Miniature Titan Disc: Charged Touch
+iq(244899, 90947);					-- Miniature Titan Disc: Critical Chain
+iq(244902, 90950);					-- Miniature Titan Disc: Electric Current
+iq(244900, 90948);					-- Miniature Titan Disc: Spark Burst
+iq(244901, 90949);					-- Miniature Titan Disc: Statically Charged
+iq(240200, 90460);					-- Podium Upgrade: Longest Survival Run
+iq(240201, 90461);					-- Podium Upgrade: Longest Time in Spotlights
+iq(240202, 90462);					-- Podium Upgrade: Most Yards Traveled
+iq(240199, 90459);					-- Podium Upgrade: Scrappiest
+iq(240203, 90463);					-- Podium Upgrade: Scrappy
+iq(240204, 90464);					-- Podium Upgrade: Survival Run
+iq(240205, 90465);					-- Podium Upgrade: Time in Spotlights
+iq(240206, 90466);					-- Podium Upgrade: Yards Traveled
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+is(0, 1239155);						-- Path of the All-Devouring
+is(0, 1237215);						-- Path of the Eco-Dome
+
+
 
 ------------
 -- UNUSED --

@@ -4291,6 +4291,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(10041),	-- Dreamweave Circlet
 			i(10019),	-- Dreamweave Gloves
 			i(10021),	-- Dreamweave Vest
+			applyclassicphase(TBC_PHASE_THREE, i(6836, {["timeline"] = {ADDED_2_4_2}})),	-- Dress Shoes
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(217248, {["timeline"] = {ADDED_1_15_1}})),	-- Earthen Silk Belt
 			i(7061, {["timeline"] = {REMOVED_1_15_1}}),	-- Earthen Silk Belt
@@ -4368,9 +4369,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(2579),	-- Green Linen Shirt
 			i(7065),	-- Green Silk Armor
 			i(7057),	-- Green Silken Shoulders
+			i(151792, {["timeline"] = {ADDED_7_3_5}}),	-- Green Winter Clothes
+			applyclassicphase(TBC_PHASE_ONE, i(34087, {["timeline"] = {ADDED_2_3_0, REMOVED_7_3_5}})),	-- Green Winter Clothes
 			i(2582),	-- Green Woolen Vest
 			i(203820, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi Headdress
 			i(203803, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi Tigerhide Cloak
+			applyclassicphase(TBC_PHASE_THREE, i(38277, {["timeline"] = {ADDED_2_4_2}})),	-- Haliscan Jacket
+			applyclassicphase(TBC_PHASE_THREE, i(38278, {["timeline"] = {ADDED_2_4_2}})),	-- Haliscan Pantaloons
 			i(7047),	-- Hands of Darkness
 			i(4309),	-- Handstitched Linen Britches
 			i(4307),	-- Heavy Linen Gloves
@@ -4453,6 +4458,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(10029),	-- Red Mageweave Shoulders
 			i(10007),	-- Red Mageweave Vest
 			i(6796),	-- Red Swashbuckler's Shirt
+			i(151790, {["timeline"] = {ADDED_7_3_5}}),	-- Red Winter Clothes
+			applyclassicphase(TBC_PHASE_THREE, i(34085, {["timeline"] = {ADDED_2_3_0, REMOVED_7_3_5}})),	-- Red Winter Clothes
 			i(4313),	-- Red Woolen Boots
 			i(2580),	-- Reinforced Linen Cape
 			i(4315),	-- Reinforced Woolen Shoulders
@@ -4524,6 +4531,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(4328),	-- Spider Belt
 			i(4321),	-- Spider Silk Slippers
 			i(4320),	-- Spidersilk Boots
+			applyclassicphase(WRATH_PHASE_ONE, i(45626, {["timeline"] = { ADDED_3_1_0 }})),	-- Spidersilk Drape
 			i(4329),	-- Star Belt
 			i(6384),	-- Stylish Blue Shirt
 			i(6385),	-- Stylish Green Shirt
@@ -4637,13 +4645,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 		}),
-		-- Check When doing TBC/WRATH
-		i(34087, {["timeline"] = {ADDED_2_3_0, REMOVED_7_3_5}}),	-- Green Winter Clothes
-		i(38277, {["timeline"] = {ADDED_2_4_2}}),	-- Haliscan Jacket
-		i(34085, {["timeline"] = {ADDED_2_3_0, REMOVED_7_3_5}}),	-- Red Winter Clothes
-		i(38278, {["timeline"] = {ADDED_2_4_2}}),	-- Haliscan Pantaloons
-		i(6836),	-- Dress Shoes
-		i(45626, {["timeline"] = { ADDED_3_1_0 }}),	-- Spidersilk Drape
 	}),
 	-- Non-crafted reagents from vendors for professions:
 	filter(REAGENTS, {

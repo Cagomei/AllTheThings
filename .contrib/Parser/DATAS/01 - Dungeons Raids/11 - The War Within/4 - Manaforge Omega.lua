@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
---- Need Zone Drop, Tier Sets, Achievements, AOTC Mount //Braghe
+--- Need Zone Drop, AOTC Mount //Braghe
 ------ Encounter Constants ------
 local PLEXUS = 2684;
 local LOOMITHAR = 2686;
@@ -49,29 +49,30 @@ local EncounterToLoot = {
 		i(237551),	-- Sterilized Expulsion Boots
 	};
 	[LOOMITHAR] = {
-		i(228803, {	-- Dreadful Bloody Gallybux
-			i(229254),	-- Cauldron Champion's Fistguards
-			i(229317),	-- Fel-Dealer's Underhandlers
-			i(229326),	-- Spliced Fiendtrader's Demonic Grasp
+		i(237593, {	-- Dreadful Silken Offering
+			i(237627),	-- Hollow Sentinel's Stonekilt
+			i(237690),	-- Charhound's Vicious Hidecoat
+			i(237699),	-- Inquisitor's Leggings of Madness
 		}),
-		i(228804, {	-- Mystic Bloody Gallybux
-			i(229344),	-- Aspectral Emissary's Hardened Grasp
-			i(229308),	-- Grips of Reclaiming Blight
-			i(229272),	-- Tireless Collector's Gauntlets
+		i(237594, {	-- Mystic Silken Offering
+			i(237681),	-- Breeches of the Mother Eagle
+			i(237645),	-- Midnight Herald's Petticoat
+			i(237717),	-- Augur's Ephemeral Trousers
 		}),
-		i(228805, {	-- Venerated Bloody Gallybux
-			i(229245),	-- Aureate Sentry's Gauntlets
-			i(229335),	-- Confessor's Unshakable Mitts
-			i(229263),	-- Gale Sovereign's Grasps
+		i(237595, {	-- Venerated Silken Offering
+			i(237618),	-- Cuisses of the Lucent Battalion
+			i(237708),	-- Dying Star's Leggings
+			i(237636),	-- Tassets of Channeled Fury
 		}),
-		i(228806, {	-- Zenith Bloody Gallybux
-			i(229299),	-- Ageless Serpent's Handguards
-			i(229236),	-- Enforcer's Backalley Crushers
-			i(229281),	-- Opulent Treasurescale's Gold-Counters
-			i(229290),	-- Spectral Gambler's Gloves
+		i(237596, {	-- Zenith Silken Offering
+			i(237654),	-- Spellweaver's Immaculate Runeslacks
+			i(237672),	-- Legwraps of Fallen Storms
+			i(237663),	-- Pants of the Sudden Eclipse
+			i(237609),	-- Living Weapon's Legguards
 		}),
 		i(242395),	-- Astral Antenna
 		i(237522),	-- Colossal Lifetether
+		i(237552),	-- Deathbound Shoulderpads
 		i(237545),	-- Discarded Nutrient Shackles
 		i(237524),	-- Laced Lair-Steppers
 		i(242393),	-- Loom'ithar's Living Silk
@@ -80,26 +81,26 @@ local EncounterToLoot = {
 		i(237723),	-- Ward of the Weaving-Beast
 	};
 	[NAAZINDHRI] = {
-		i(228815, {	-- Dreadful Polished Gallybux
-			i(229251),	-- Cauldron Champion's Screamplate
-			i(229314),	-- Fel-Dealer's Recycled Reavers
-			i(229323),	-- Spliced Fiendtrader's Loyal Servants
+		i(237585, {	-- Dreadful Binding Agent
+			i(237629),	-- Hollow Sentinel's Gauntlets
+			i(237692),	-- Charhound's Vicious Felclaws
+			i(237701),	-- Inquisitor's Clutches of Madness
 		}),
-		i(228816, {	-- Mystic Polished Gallybux
-			i(229341),	-- Aspectral Emissary's Arcane Vents
-			i(229305),	-- Jaws of Reclaiming Blight
-			i(229269),	-- Tireless Collector's Hunted Heads
+		i(237586, {	-- Mystic Binding Agent
+			i(237683),	-- Wings of the Mother Eagle
+			i(237647),	-- Midnight Herald's Gloves
+			i(237719),	-- Augur's Ephemeral Mitts
 		}),
-		i(228817, {	-- Venerated Polished Gallybux
-			i(229242),	-- Aureate Sentry's Roaring Will
-			i(229332),	-- Confessor's Unshakable Radiance
-			i(229260),	-- Gale Sovereign's Zephyrs
+		i(237587, {	-- Venerated Binding Agent
+			i(237620),	-- Protectors of the Lucent Battalion
+			i(237710),	-- Dying Star's Caress
+			i(237638),	-- Claws of Channeled Fury
 		}),
-		i(228818, {	-- Zenith Polished Gallybux
-			i(229296),	-- Ageless Serpent's Shoulderpads
-			i(229233),	-- Enforcer's Backalley Shoulderplates
-			i(229278),	-- Opulent Treasurescale's Gleaming Mantle
-			i(229287),	-- Spectral Gambler's Bladed Mantle
+		i(237588, {	-- Zenith Binding Agent
+			i(237656),	-- Spellweaver's Immaculate Scaleguards
+			i(237674),	-- Grasp of Fallen Storms
+			i(237665),	-- Deathgrips of the Sudden Eclipse
+			i(237611),	-- Living Weapon's Crushers
 		}),
 		i(237546),	-- Bindings of Lost Essence
 		i(237568),	-- Chrysalis of Sundered Souls
@@ -112,26 +113,26 @@ local EncounterToLoot = {
 		i(237730),	-- Voidglass Spire
 	};
 	[ARAZ] = {
-		i(228811, {	-- Dreadful Rusty Gallybux
-			i(229252),	-- Cauldron Champion's Tattered Cuisses
-			i(229315),	-- Fel-Dealer's Fur Kilt
-			i(229324),	-- Spliced Fiendtrader's Skin Tights
+		i(237589, {	-- Dreadful Foreboding Beaker
+			i(237628),	-- Hollow Sentinel's Stonemask
+			i(237691),	-- Charhound's Vicious Scalp
+			i(237700),	-- Inquisitor's Portal to Madness
 		}),
-		i(228812, {	-- Mystic Rusty Gallybux
-			i(229342),	-- Aspectral Emissary's Trousers
-			i(229306),	-- Moccasins of Reclaiming Blight
-			i(229270),	-- Tireless Collector's Armored Breeches
+		i(237590, {	-- Mystic Foreboding Beaker
+			i(237682),	-- Skymane of the Mother Eagle
+			i(237646),	-- Midnight Herald's Cowl
+			i(237718),	-- Augur's Ephemeral Wide-Brim
 		}),
-		i(228813, {	-- Venerated Rusty Gallybux
-			i(229243),	-- Aureate Sentry's Legguards
-			i(229333),	-- Confessor's Unshakable Leggings
-			i(229261),	-- Gale Sovereign's Pantaloons
+		i(237591, {	-- Venerated Foreboding Beaker
+			i(237619),	-- Lightmane of the Lucent Battalion
+			i(237709),	-- Dying Star's Veil
+			i(237637),	-- Aspect of Channeled Fury
 		}),
-		i(228814, {	-- Zenith Rusty Gallybux
-			i(229297),	-- Ageless Serpent's Leggings
-			i(229234),	-- Enforcer's Backalley Chausses
-			i(229279),	-- Opulent Treasurescale's Petticoat
-			i(229288),	-- Spectral Gambler's Pantaloons
+		i(237592, {	-- Zenith Foreboding Beaker
+			i(237655),	-- Spellweaver's Immaculate Focus
+			i(237673),	-- Half-Mask of Fallen Storms
+			i(237664),	-- Hood of the Sudden Eclipse
+			i(237610),	-- Living Weapon's Faceshield
 		}),
 		i(242402),	-- Araz's Ritual Forge
 		i(237526),	-- Breached Containment Guards
@@ -144,26 +145,26 @@ local EncounterToLoot = {
 		i(237737),	-- Photon Sabre Prime
 	};
 	[HUNTERS] = {
-		i(228799, {	-- Dreadful Greased Gallybux
-			i(229256),	-- Cauldron Champion's Ribcage
-			i(229319),	-- Fel-Dealer's Soul Engine
-			i(229328),	-- Spliced Fiendtrader's Surgical Gown
+		i(237597, {	-- Dreadful Yearning Cursemark
+			i(237626),	-- Hollow Senintel's Perches
+			i(237689),	-- Charhound's Vicious Hornguards
+			i(237698),	-- Inquisitor's Gaze of Madness
 		}),
-		i(228800, {	-- Mystic Greased Gallybux
-			i(229346),	-- Aspectral Emissary's Primal Robes
-			i(229310),	-- Robes of Reclaiming Blight
-			i(229274),	-- Tireless Collector's Battlegear
+		i(237598, {	-- Mystic Yearning Cursemark
+			i(237680),	-- Ritual Pauldrons of the Mother Eagle
+			i(237644),	-- Midnight Herald's Shadowguards
+			i(237716),	-- Augur's Ephemeral Orbs of Power
 		}),
-		i(228801, {	-- Venerated Greased Gallybux
-			i(229247),	-- Aureate Sentry's Encasement
-			i(229337),	-- Confessor's Unshakable Vestment
-			i(229265),	-- Gale Sovereign's Clouded Hauberk
+		i(237599, {	-- Venerated Yearning Cursemark
+			i(237617),	-- Chargers of the Lucent Battalion
+			i(237707),	-- Dying Star's Pyrelights
+			i(237635),	-- Fangs of Channeled Fury
 		}),
-		i(228802, {	-- Zenith Greased Gallybux
-			i(229301),	-- Ageless Serpent's Inked Coils
-			i(229238),	-- Enforcer's Backalley Vestplate
-			i(229283),	-- Opulent Treasurescale's Tunic
-			i(229292),	-- Spectral Gambler's Vest
+		i(237600, {	-- Zenith Yearning Cursemark
+			i(237653),	-- Spellweaver's Immaculate Pauldrons
+			i(237671),	-- Glyphs of Fallen Storms
+			i(237662),	-- Smokemantle of the Sudden Eclipse
+			i(237608),	-- Living Weapon's Ramparts
 		}),
 		i(237549),	-- Bloodwrath's Gnarled Claws
 		i(242401),	-- Brand of Ceaseless Ire
@@ -180,26 +181,26 @@ local EncounterToLoot = {
 		i(237561),	-- Yoke of Enveloping Hatred
 	};
 	[FRACTILLUS] = {
-		i(228807, {	-- Dreadful Gilded Gallybux
-			i(229253),	-- Cauldron Champion's Crown
-			i(229316),	-- Fel-Dealer's Visor
-			i(229325),	-- Spliced Fiendtrader's Transcendence
+		i(237581, {	-- Dreadful Voidglass Contaminant
+			i(237631),	-- Hollow Sentinel's Breastplate
+			i(237694),	-- Charhound's Vicious Bindings
+			i(237703),	-- Inquisitor's Robes of Madness
 		}),
-		i(228808, {	-- Mystic Gilded Gallybux
-			i(229343),	-- Aspectral Emissary's Crystalline Cowl
-			i(229307),	-- Branches of Reclaiming Blight
-			i(229271),	-- Tireless Collector's Chained Cowl
+		i(237582, {	-- Mystic Voidglass Contaminant
+			i(237685),	-- Vest of the Mother Eagle
+			i(237649),	-- Midnight Herald's Hauberk
+			i(237721),	-- Augur's Ephemeral Habiliments
 		}),
-		i(228809, {	-- Venerated Gilded Gallybux
-			i(229244),	-- Aureate Sentry's Pledge
-			i(229334),	-- Confessor's Unshakable Halo
-			i(229262),	-- Gale Sovereign's Charged Hood
+		i(237583, {	-- Venerated Voidglass Contaminant
+			i(237622),	-- Cuirass of the Lucent Battalion
+			i(237712),	-- Dying Star's Cassock
+			i(237640),	-- Furs of Channeled Fury
 		}),
-		i(228810, {	-- Zenith Gilded Gallybux
-			i(229298),	-- Ageless Serpent's Mane
-			i(229235),	-- Enforcer's Backalley Faceshield
-			i(229280),	-- Opulent Treasurescale's Crowned Jewel
-			i(229289),	-- Spectral Gambler's Damned Visage
+		i(237584, {	-- Zenith Voidglass Contaminant
+			i(237658),	-- Spellweaver's Immaculate Crestward
+			i(237676),	-- Gi of Fallen Storms
+			i(237667),	-- Tactical Vest of the Sudden Eclipse
+			i(237613),	-- Living Weapon's Bulwark
 		}),
 		i(237536),	-- Bite of the Astral Wastes
 		i(237558),	-- Conjoined Glass Bracers
@@ -272,94 +273,103 @@ InstanceHelper.UpgradeMapping = {
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {
 	inst(1302, {	-- Manaforge Omega
 		["isRaid"] = true,
-		--["coord"] = { 42.0, 50.2, KARESH },
-		--["maps"] = {
-		--},
+		["coord"] = { 41.9, 21.5, KARESH },
+		["maps"] = {
+			2460,	-- The Forge Core
+			2461,	-- The Unbound Vault
+			2462,	-- Cultivation Chambers
+			2463,	-- Technomancers' Terrace
+			2464,	-- Central Operations
+			2465,	-- Wastes of Karesh
+			2466,	-- The Shadow Docks
+			2467,	-- Seat of the Devourer
+			2468,	-- Remnants of Conquest
+			2469,	-- Remnants of Entropy
+			2470,	-- Devourer's Heart
+			2471,	-- The Dark Heart
+		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				--[[
 				ach(41601, {	-- Might of the Shadowguard
-					crit(71696, {	-- Vexie and the Geargrinders
-						["_encounter"] = { VEXIE, DIFFICULTY.RAID.MULTI.ALL },
+					crit(103298, {	-- Plexus Sentinel
+						["_encounter"] = { PLEXUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(71697, {	-- Cauldron of Carnage
-						["_encounter"] = { CARNAGE, DIFFICULTY.RAID.MULTI.ALL },
+					crit(103299, {	-- Loom'ithar
+						["_encounter"] = { LOOMITHAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(71698, {	-- Rik Reverb <Official Gallywix Hype Man>
-						["_encounter"] = { RIK, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-				}),
-				ach(41226, {	-- Maniacle Machinist
-					crit(71699, {	-- Stix Bunkjunker
-						["_encounter"] = { STIX, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(71700, {	-- Sprocketmonger Lockenstock
-						["_encounter"] = { LOCKENSTOCK, DIFFICULTY.RAID.MULTI.ALL },
+					crit(103300, {	-- Soulbinder Naazindhri
+						["_encounter"] = { NAAZINDHRI, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
-				ach(41227, {	-- Beating the Odds
-					crit(71701, {	-- One-Armed Bandit
-						["_encounter"] = { BANDIT, DIFFICULTY.RAID.MULTI.ALL },
+				ach(41602, {	-- Monsters of the Sands
+					crit(103301, {	-- Forgeweaver Araz
+						["_encounter"] = { ARAZ, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(71702, {	-- Mug'Zee, Heads of Security
-						["_encounter"] = { MUGZEE, DIFFICULTY.RAID.MULTI.ALL },
+					crit(103302, {	-- The Soul Hunters
+						["_encounter"] = { HUNTERS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-				}),
-				ach(41228, {	-- Fall of the Chrome King
-					crit(71703, {	-- Chrome King Gallywix
-						["_encounter"] = { GALLYWIX, DIFFICULTY.RAID.MULTI.ALL },
+					crit(103303, {	-- Fractillus
+						["_encounter"] = { FRACTILLUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
-				ach(41222, {	-- Liberation of Undermine
-					crit(71696, {	-- Vexie and the Geargrinders
-						["_encounter"] = { VEXIE, DIFFICULTY.RAID.MULTI.ALL },
+				ach(41603, {	-- Heart of Darkness
+					crit(103304, {	-- Nexus-King Salhadaar
+						["_encounter"] = { SALHADAAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(71697, {	-- Cauldron of Carnage
-						["_encounter"] = { CARNAGE, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(71698, {	-- Rik Reverb <Official Gallywix Hype Man>
-						["_encounter"] = { RIK, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(71699, {	-- Stix Bunkjunker
-						["_encounter"] = { STIX, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(71700, {	-- Sprocketmonger Lockenstock
-						["_encounter"] = { LOCKENSTOCK, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(71701, {	-- One-Armed Bandit
-						["_encounter"] = { BANDIT, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(71702, {	-- Mug'Zee, Heads of Security
-						["_encounter"] = { MUGZEE, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(71703, {	-- Chrome King Gallywix
-						["_encounter"] = { GALLYWIX, DIFFICULTY.RAID.MULTI.ALL },
+					crit(103305, {	-- 	Dimensius, the All-Devouring
+						["_encounter"] = { DIMENSIUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
-				ach(41223, {	-- Heroic: Liberation of Undermine
-					crit(71704, {	-- Vexie and the Geargrinders
-						["_encounter"] = { VEXIE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+				ach(41598, {	-- Manaforge Omega
+					crit(103298, {	-- Plexus Sentinel
+						["_encounter"] = { PLEXUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(71705, {	-- Cauldron of Carnage
-						["_encounter"] = { CARNAGE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					crit(103299, {	-- Loom'ithar
+						["_encounter"] = { LOOMITHAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(71706, {	-- Rik Reverb <Official Gallywix Hype Man>
-						["_encounter"] = { RIK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					crit(103300, {	-- 	Soulbinder Naazindhri
+						["_encounter"] = { NAAZINDHRI, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(71707, {	-- Stix Bunkjunker
-						["_encounter"] = { STIX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					crit(103301, {	-- Forgeweaver Araz
+						["_encounter"] = { ARAZ, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(71708, {	-- Sprocketmonger Lockenstock
-						["_encounter"] = { LOCKENSTOCK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					crit(103302, {	-- The Soul Hunters
+						["_encounter"] = { HUNTERS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(71709, {	-- One-Armed Bandit
-						["_encounter"] = { BANDIT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					crit(103303, {	-- 	Fractillus
+						["_encounter"] = { FRACTILLUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(71710, {	-- Mug'Zee, Heads of Security
-						["_encounter"] = { MUGZEE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					crit(103304, {	-- Nexus-King Salhadaar
+						["_encounter"] = { SALHADAAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(71711, {	-- Chrome King Gallywix
-						["_encounter"] = { GALLYWIX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					crit(103305, {	-- Dimensius, the All-Devouring
+						["_encounter"] = { DIMENSIUS, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
+				ach(41599, {	-- Heroic: Manaforge Omega
+					crit(103289, {	-- Plexus Sentinel
+						["_encounter"] = { PLEXUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					}),
+					crit(103290, {	-- Loom'ithar
+						["_encounter"] = { LOOMITHAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					}),
+					crit(103291, {	-- Soulbinder Naazindhri
+						["_encounter"] = { NAAZINDHRI, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					}),
+					crit(103292, {	-- Forgeweaver Araz
+						["_encounter"] = { ARAZ, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					}),
+					crit(103293, {	-- The Soul Hunters
+						["_encounter"] = { HUNTERS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					}),
+					crit(103294, {	-- Fractillus
+						["_encounter"] = { FRACTILLUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					}),
+					crit(103295, {	-- Nexus-King Salhadaar
+						["_encounter"] = { SALHADAAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+					}),
+					crit(103296, {	-- Dimensius, the All-Devouring
+						["_encounter"] = { DIMENSIUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				}),
 				ach(41600, {	-- Mythic: Manaforge Omega
@@ -375,26 +385,27 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						41611,	-- Mythic: Dimensius, the All-Devouring
 					}},
 				}),
-				ach(41286, {	-- Glory of the Liberation of Undermine Raider
+				ach(41597, {	-- Glory of the Omega Raider
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
-						41208,	-- Hold My Gear!
-						41554,	-- The Splash Zone
-						41338,	-- Just /Dance
-						41596,	-- Garbage In, Garbage Out
-						41711,	-- Conveyor Slayer
-						41119,	-- One Rank Higher
-						41337,	-- Sleep with the Fishes
-						41347,	-- Scheming on a Thing
+						ach(42118),	-- Of Mice and Manaforges
+						ach(41613),	-- Time to Vote! Cute or Scary?
+						ach(41614),	-- Mother of All Tantrums
+						ach(41615),	-- Cheat Meal
+						ach(41616),	-- I See... Absolutely Nothing
+						ach(41617),	-- Breaking the Fourth Wall
+						ach(41618),	-- Swing and a Miss
+						ach(41619),	-- Defying Gravity
 					}},
+					--[[
 					["g"] = {
-						i(231173),		-- Junkmaestro's Magnetomech (MOUNT!)
+
 					},
+					--]]
 				}),
-				ach(41525),	-- Can You Please Spell "Gobanna?"
-				ach(41289),	-- Liberation of Undermine Guild Run
-				ach(41290),	-- Heroic: Liberation of Undermine Guild Run
-				--]]
+				ach(42316),	-- Fractals? For Spring? Groundbreaking.
+				ach(41620),	-- Manaforge Omega Guild Run
+				ach(41621),	-- Heroic: Manaforge Omega Guild Run
 			}),
 			header(HEADERS.Faction, FACTION_MANAFORGE_VANDALS, {
 				faction(FACTION_MANAFORGE_VANDALS),
@@ -417,6 +428,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					}, {	-- RENOWN 13 --
 					}, {	-- RENOWN 14 --
 					}, {	-- RENOWN 15 --
+						spell(1239155),	-- Path of the All-Devouring
 					},
 				}))),
 				--]]
@@ -463,7 +475,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
-				--[[
 				ZoneDrops({
 				}),
 				CommonBossDrops({
@@ -471,71 +482,51 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 					}),
 				}),
-				header(HEADERS.LFGDungeon, 2780, {	-- Shock and Awesome
-					Boss(CARNAGE),
-					Boss(RIK),
+				header(HEADERS.LFGDungeon, 2799, {	-- Might of the Shadowguard
+					Boss(PLEXUS),
+					Boss(LOOMITHAR),
+					Boss(NAAZINDHRI),
 				}),
-				header(HEADERS.LFGDungeon, 2781, {	-- Maniacle Machinist
-					Boss(STIX),
-					Boss(LOCKENSTOCK, {
-						i(228844, {up=IGNORED_VALUE, ["ItemAppearanceModifierID"] = 0}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
-					}),
+				header(HEADERS.LFGDungeon, 2800, {	-- Monsters of the Sands
+					Boss(ARAZ),
+					Boss(HUNTERS),
+					Boss(FRACTILLUS),
 				}),
-				header(HEADERS.LFGDungeon, 2782, {	-- Two Heads Are Better
-					Boss(VEXIE),
-					Boss(BANDIT),
-					Boss(MUGZEE),
-				}),
-				header(HEADERS.LFGDungeon, 2783, {	-- The Chrome King
-					Boss(GALLYWIX, {
-						i(228819, {	-- Excessively Bejeweled Curio
-							--["crs"] = 227003,	-- Kir'xal (Vendor)
-							["sym"] = {{"sub","instance_tier",1296,DIFFICULTY.RAID.LFR}},
+				header(HEADERS.LFGDungeon, 2801, {	-- Heart of Darkness
+					Boss(SALHADAAR),
+					Boss(DIMENSIUS, {
+						i(237602, {	-- Excessively Bejeweled Curio
+							["sym"] = {{"sub","instance_tier",1302,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 						}),
 					}),
 				}),
-				--]]
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
-				--[[
-				BossOnly(VEXIE, {
-					ach(41208),	-- Hold My Gear!
+				BossOnly(PLEXUS, {
+					ach(42118),	-- Of Mice and Manaforges
 				}),
-				BossOnly(CARNAGE, {
-					ach(41694),	-- Flarendo's Biggest Fan
-					ach(41554),	-- The Splash Zone
-					ach(41695),	-- Torq's Biggest Fan
+				BossOnly(LOOMITHAR, {
+					ach(41613),	-- Time to Vote! Cute or Scary?
 				}),
-				BossOnly(RIK, {
-					ach(41338),	-- Just /Dance
+				BossOnly(NAAZINDHRI, {
+					ach(41614),	-- Mother of All Tantrums
 				}),
-				BossOnly(STIX, {
-					ach(41596, {	-- Garbage In, Garbage Out
-						title(613),	-- Junkmaestro <Name>
-					}),
+				BossOnly(ARAZ, {
+					ach(41615),	-- Cheat Meal
 				}),
-				BossOnly(LOCKENSTOCK, {
-					ach(41711),	-- Conveyor Slayer
+				BossOnly(HUNTERS, {
+					ach(41616),	-- I See... Absolutely Nothing
 				}),
-				BossOnly(BANDIT, {
-					ach(41119),	-- One Rank Higher
-					ach(41120),	-- Two Ranks Higher
-					ach(41121),	-- Three Ranks Higher
-					ach(41122, {	-- Best In Class
-						title(618),	-- <Name>, the Reel Deal
-					}),
+				BossOnly(FRACTILLUS, {
+					ach(41617),	-- Breaking the Fourth Wall
 				}),
-				BossOnly(MUGZEE, {
-					ach(41211, {	-- A Good Day to Dye Hard
-						i(236769),	-- Gallagio Pipeline Rerouter (TOY!)
-					}),
-					ach(41337),	-- Sleep with the Fishes
+				BossOnly(SALHADAAR, {
+					ach(41618),	-- Swing and a Miss
 				}),
-				BossOnly(GALLYWIX, {
-					ach(41347),	-- Scheming on a Thing
+				BossOnly(DIMENSIUS, {
+					ach(41619),	-- Defying Gravity
 				}),
-				--]]
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
@@ -647,9 +638,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 		},
 	}),
 })));
-
+--[[
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
-	inst(1296, {	-- Liberation of Undermine
+	inst(1302, {	-- Manaforge Omega
 		n(FACTIONS, {
 			header(HEADERS.Faction, FACTION_GALLAGIO, {
 				n(QUESTS, {
@@ -721,3 +712,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		})),
 	}),
 })));
+--]]

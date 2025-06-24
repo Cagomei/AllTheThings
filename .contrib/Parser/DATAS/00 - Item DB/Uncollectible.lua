@@ -292,7 +292,6 @@ i(123865);	-- Relic of Ursol
 -----------------
 -- PATCH 8.0.1 --
 -----------------
-i(152698);	-- Grimestone Stew
 i(153568);	-- "Fly" Rock
 i(153569);	-- "Hard" Rock
 i(153570);	-- "Magic" Rock
@@ -304,6 +303,7 @@ i(162634);	-- Ancient Nazmani Coins
 i(158808);	-- Thick Tendon
 i(158811);	-- Ashen Coal
 i(162675);	-- Ashvane Ledger
+i(162681);	-- Bent Sickle
 i(162978);	-- Blood Magic Ritual Dish
 i(158759);	-- Bloodgorged Sac
 i(158750);	-- Bonebreaker Beak
@@ -329,15 +329,18 @@ i(162684);	-- Etched Dock Cleat
 i(162976);	-- Exile's Abandoned Memoirs
 i(158210);	-- Fearsome Claw
 i(158760);	-- Fin Ray
+i(158801);	-- Finely Serrated Tooth
 i(155603);	-- Flaky Fish Scales
 i(158874);	-- Frothing Vapor
 i(158770);	-- Gelatinous Roe
 i(158865);	-- Ghastly Ooze
 i(158856);	-- Giant Frog Leg
 i(158777);	-- Glimmering Ember
+i(163078);	-- Glittering Earring
 i(158868);	-- Golden Ornament
 i(162979);	-- Gral-Adorned Astrolabe
 i(158855);	-- Grim Skull Fetish
+i(152698);	-- Grimestone Stew
 i(158860);	-- Grindstone Molar
 i(158765);	-- Hardshell Mollusk
 i(158806);	-- Hooked Talon
@@ -355,10 +358,12 @@ i(162673);	-- Knotted Bowline
 i(162632);	-- Lavish Sethrallis Figurine
 i(159140);	-- Lifeless Clay
 i(158745);	-- Luminous Scale
+i(158823);	-- Malfunctioning Rocket Boots
 i(163593);	-- Map of Zandalar Trade Winds
 i(158751);	-- Matted Pelt
 i(161201);	-- Mermaid's Looking Glass
 i(158778);	-- Mucose Tendril
+i(158866);	-- Oily Blubber
 i(158831);	-- Parched Honeycomb
 i(158740);	-- Pearly Incisor
 i(155615);	-- Pestilent Muck
@@ -369,7 +374,9 @@ i(158840);	-- Prehensile Tongue
 i(158779);	-- Robust Horn
 i(158756);	-- Rotary Gasket
 i(158758);	-- Royal Jelly
+i(163030);	-- Rusted Mining Pick
 i(157842);	-- Rusty Gear
+i(161053);	-- Salty Dog Crackers
 i(162630);	-- Sandy Ornate Relic
 i(158849);	-- Sawtooth Jawbone
 i(158752);	-- Severed Foot
@@ -407,6 +414,11 @@ i(158870);	-- Wooly Hair
 i(158773);	-- Wriggling Goop
 
 -----------------
+-- PATCH 8.1.0 --
+-----------------
+i(166288);	-- Waterlogged Junk
+
+-----------------
 -- PATCH 8.2.0 --
 -----------------
 i(169130);	-- Bent Cogwheel
@@ -420,6 +432,7 @@ i(169132);	-- Cracked Gyroscope
 i(169124);	-- Decorational Whirlycog
 i(170097);	-- Discarded Quel'dorei Tome
 i(169149);	-- Dulled Micro-Serrated Incisor
+i(170005);	-- Fractured Pearl
 i(169138);	-- Fractured Personality Module
 i(169123);	-- Functional Fiddleswitch
 i(169129);	-- Lovingly Worn Wrench
@@ -2449,6 +2462,7 @@ i(237332);	-- Single-Use Grill
 i(234616);	-- Supreme Mangoro Madness
 i(237313);	-- Totally Legit Samophlange
 i(231899);	-- Trash
+i(229809);	-- Weighted Metal Ball
 
 ------------------
 -- PATCH 11.1.5 --
@@ -2458,6 +2472,7 @@ i(241632);	-- Heroic Waxy Figurine
 ------------------
 -- PATCH 11.2.0 --
 ------------------
+i(244358);	-- "Prophecies of the Void"
 i(238874);	-- Congealed Mana
 i(247686);	-- Crystallized Nightshade
 i(238883);	-- Dimly Glowing Scrap
@@ -2491,5 +2506,6 @@ i(238867);	-- Unstable Void Essence
 i(238814);	-- Vibrantly Colored Crest
 i(238866);	-- Void Dust
 i(238848);	-- Void Tendril
+i(244361);	-- Void-Carved Amethyst
 i(238841);	-- Void-Seeping Eyeball
 i(244355);	-- Voidstorm Obsidian
