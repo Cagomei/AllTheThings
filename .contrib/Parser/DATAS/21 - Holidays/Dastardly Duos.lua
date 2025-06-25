@@ -292,7 +292,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(87529),	--
 			q(87530),	--
 			-- Week 4:
-			--q(),	-- didn't fire anything this week?
+			q(85713),	-- Week 4 Completion
 			-- Week 5:
 			-- q(87514),	-- ^ fired after first completion Dastardly Duos, week 5 (with quest)
 			-- q(87515),	--

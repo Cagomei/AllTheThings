@@ -1478,3 +1478,6 @@ i(245970);	-- P.O.S.T. Master's Express Hearthstone
 --- UNSORTED ---
 i(245946);	-- Brewer's Balloon
 i(243056);	-- Delver's Mana-Bound Ethergate
+i(244792);	-- Etheric Brannmorpher
+i(244470);	-- Etheric Victory
+i(249713);	--

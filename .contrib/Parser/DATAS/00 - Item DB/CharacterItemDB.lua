@@ -926,6 +926,7 @@ iq(240206, 90466);					-- Podium Upgrade: Yards Traveled
 ------------------
 -- PATCH 11.2.0 --
 ------------------
+--ihqt(246737, ???);					-- K'areshi Voidstone
 is(0, 1239155);						-- Path of the All-Devouring
 is(0, 1237215);						-- Path of the Eco-Dome
 

@@ -23,6 +23,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					q(90631),	-- Weathered Crests
 				}, {	-- RENOWN 5 --
 				}, {	-- RENOWN 6 --
+					q(90632),	-- Valorstones
 				}, {	-- RENOWN 7 --
 				}, {	-- RENOWN 8 --
 				}, {	-- RENOWN 9 --

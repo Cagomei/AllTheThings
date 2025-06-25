@@ -569,7 +569,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(178112),	-- Death Venom Stinger
 			i(180811),	-- Deathfang's Favorite Skull
 			i(183122),	-- Death's Cloak
-			i(183695),	-- Decaying Dark Naaru Shard
 			i(180308),	-- Determined Stone Visage
 			i(181753),	-- Droman Aliothe Elated PH Reward
 			i(181755),	-- Droman Aliothe Happy PH Reward

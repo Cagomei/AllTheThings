@@ -33,9 +33,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				},
 			}),
 			n(232128, {	-- Ixthar the Unblinking
-				["description"] = "You need to Phasedive in order to see Ixthar.",
+				["description"] = "You need to Phasedive in order to see the Rare Creature.",
 				["coord"] = { 64.0, 43.6, KARESH },
 				["questID"] = 90596,
+				["g"] = {
+					i(240213),	-- Veiling Mana Shroud
+				},
 			}),
 			n(232077, {	-- Korgorath the Ravager
 				["coord"] = { 64.7, 43.6, KARESH },
@@ -52,15 +55,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				},
 			}),
 			n(231981, {	-- Maw of the Sands
-				--["coord"] = { x, y, KARESH },
-				--["questID"] = ,
+				["description"] = "You need to Phasedive in order to see the Rare Creature.",
+				["coord"] = { 54.5, 54.5, KARESH },
+				["questID"] = 90594,
+				["g"] = {
+					i(240214),	-- Miniature Reshii Sandgarden
+				},
 			}),
 			n(232108, {	-- Morgil the Netherspawn
-				--["coord"] = { x, y, KARESH },
-				--["questID"] = ,
+				["description"] = "You need to Phasedive in order to see the Rare Creature.",
+				["coord"] = { 56.1, 52.7, KARESH },
+				["questID"] = 90588,
+				["g"] = {
+					i(244915),	-- Jimmy (PET!)
+					i(239450),	-- Reshii Magi's Gloves
+				},
 			}),
 			n(232127, {	-- Orith the Dreadful
-				["description"] = "You need to Phasedive in order to see Orith.",
+				["description"] = "You need to Phasedive in order to see the Rare Creature.",
 				["coord"] = { 58.9, 20.8, KARESH },
 				["questID"] = 90595,
 			}),
@@ -73,6 +85,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				["questID"] = 90590,
 				["g"] = {
 					i(239478),	-- Reshii Brute's Greatbelt
+					i(239464),	-- Reshii Skirmisher's Brigandine
 				},
 			}),
 			n(241920, {	-- Purple Peat
@@ -91,12 +104,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				},
 			}),
 			n(232129, {	-- Shadowhowl
-				--["coord"] = { x, y, KARESH },
-				--["questID"] = ,
+				["description"] = "You need to Phasedive in order to see the Rare Creature.",
+				["coord"] = { 54.1, 49.1, KARESH },
+				["questID"] = 90583,
 			}),
 			n(232193, {	-- Stalker of the Wastes
-				--["coord"] = { x, y, KARESH },
-				--["questID"] = ,
+				["description"] = "You need to Phasedive in order to see the Rare Creature.",
+				["coord"] = { 76.7, 42.0, KARESH },
+				["questID"] = 90592,
+				["g"] = {
+					--- Junk item worth 50g. Only source of it for now.
+					i(246063),	-- Void-Polished Warpstalker Stone
+				},
 			}),
 			n(234845, {	-- Sthaarbs <the Mindroiler>
 				--["coord"] = { x, y, KARESH },
@@ -143,6 +162,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(91421, {	-- Weekly reputation: Malek'ta
 					["name"] = "Malek'ta weekly reputation obtained.",
 				}),
+				q(90683, {	-- Weekly reputation: Maw of the Sands
+					["name"] = "Maw of the Sands weekly reputation obtained.",
+				}),
+				q(90677, {	-- Weekly reputation: Morgil the Netherspawn
+					["name"] = "Morgil the Netherspawn weekly reputation obtained.",
+				}),
 				q(90684, {	-- Weekly reputation: Orith the Dreadful
 					["name"] = "Orith the Dreadful weekly reputation obtained.",
 				}),
@@ -154,6 +179,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				}),
 				q(90673, {	-- Weekly reputation: Sha'ryth the Cursed
 					["name"] = "Sha'ryth the Cursed weekly reputation obtained.",
+				}),
+				q(90681, {	-- Weekly reputation: Stalker of the Wastes
+					["name"] = "Stalker of the Wastes weekly reputation obtained.",
 				}),
 				q(90678, {	-- Weekly reputation: The Nightreaver
 					["name"] = "The Nightreaver weekly reputation obtained.",

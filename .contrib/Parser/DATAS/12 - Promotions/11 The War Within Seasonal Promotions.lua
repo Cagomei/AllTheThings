@@ -214,7 +214,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(95341, {	-- Armored Bloodwing (MOUNT!)
 				["description"] = "Requires an NVIDIA 10+ Series Graphics Card or streaming through GeForce NOW (free tier is enough).\nLogin to the NVIDIA app, GeForce Experience or GeForce NOW then play a GeForce LAN Mission for 50 continuous minutes starting January 4th at 4:30 p.m. PST lasting until an unknown date.",
-				["timeline"] = { ADDED_11_0_7, "removed 11.1.0.99999" },
+				["timeline"] = { ADDED_11_0_7, REMOVED_11_1_5 },
 			}),
 			i(233207, {	-- The Coward's Azure Target (COSMETIC!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 14th, 10:00 a.m. & February 4th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
@@ -273,6 +273,10 @@ root(ROOTS.Promotions, {
 			mount(1236262, {	-- Shaohao's Sage Serpent
 				["description"] = "Finish the Pandaren Wandering Isle starting zone in |cFFfe040fMoP Classic|r until you arrive in Orgrimmar/Stormwind to receive this mount in Retail.\n\nPromotion starts on July 1st until July 30th.",
 				["timeline"] = { ADDED_11_1_7, "removed 11.1.7.99999" },	-- Removed July 30th, 2025
+			}),
+			i(232302, {	-- Prized Banner of the Algari (TOY!)
+				["description"] = "Break the Meta: TWW Season 2\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season 2's off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFraider.io/events/break-the-meta-the-war-within-season-2/register|r and complete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +10|r or higher during the Competition Period, and the Tempered Banner of the Algari will be automatically added to your collection in-game after the conclusion of the event.\n\nThe Event starts on June 24thth for US, June 25thth for EU & June 26th for CN/KR/TW & lasts for 1 week.",
+				["timeline"] = { ADDED_11_1_7 },
 			}),
 		--	i(500001, {    -- The PVE/PVP Banner temporary item -- TEMPLATE
 		--		["sourceID"] = 500001,

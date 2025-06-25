@@ -446,10 +446,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						},
 						["provider"] = { "n", 230739 },	-- Soul-Scribe
 						["coord"] = { 75.8, 34.3, KARESH },
-						["g"] = {
-							-- TODO: This will most likely be moved to Zone Rewards
-							currency(3278),	-- Ethereal Strands
-						},
 					}),
 				}),
 				header(HEADERS.AchCriteria, 41970.04, {	-- Chapter 4: Shadows En Garde
@@ -810,6 +806,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					--
 					q(85259, {	-- Waggle Dance
 						-- Note: Drawing circles is so obnoxious... Definitelly going to be either a daily or a WQ	-Exo 22.06.2025.
+						-- Note2: I GOD DAMN KNEW IT! Daily "Shake your Bee-hind" -Exo 24.06.2025.
 						["sourceQuests"] = { 85258 },	-- Oh Honey Honey
 						["provider"] = { "n", 230736 },	-- Om'talad
 						["coord"] = { 75.8, 34.2, KARESH },
@@ -862,7 +859,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["isDaily"] = true,
 						["g"] = { i(231508), },	-- Stolen Food Shipment (QI!)
 					}),
-					q(89194),	--
+					q(89194, {	-- Shake your Bee-hind
+						["sourceQuests"] = { 85262 },	-- The Royal Procession
+						["provider"] = { "n", 232385 },	-- Botanist Alaenra
+						["coord"] = { 75.8, 33.9, KARESH },
+						["isDaily"] = true,
+					}),
 					q(89195),	--
 					q(89210),	--
 				}),
@@ -1124,6 +1126,55 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					}),
 				}),
 				header(HEADERS.AchCriteria, 42739.05, {	-- Chasing Echoes
+					q(85006, {	-- Those We Have Lost
+						["sourceQuests"] = { 84967 },	-- The Shadowguard Shattered
+						["provider"] = { "n", 231314 },	-- Om'dalan
+						["coord"] = { 51.9, 64.8, KARESH },
+						["g"] = { i(229969), },	-- Flickering Essence (QI!)
+					}),
+					q(85007, {	-- Extended Reach
+						["sourceQuests"] = { 84967 },	-- The Shadowguard Shattered
+						["provider"] = { "n", 231314 },	-- Om'dalan
+						["coord"] = { 51.9, 64.8, KARESH },
+						["g"] = {
+							o(504074, {	-- Nether Reader
+								["coords"] = {
+									{ 49.9, 64.8, KARESH },
+									{ 52.0, 63.2, KARESH },
+									{ 52.2, 69.5, KARESH },
+								}
+							}),
+						},
+					}),
+					q(85008, {	-- Machinations of Memory
+						["sourceQuests"] = {
+							85006,	-- Those We Have Lost
+							85007,	-- Extended Reach
+						},
+						["provider"] = { "n", 231314 },	-- Om'dalan
+						["coord"] = { 51.0, 68.3, KARESH },
+						["g"] = {
+							o(469871, {	-- Console Battery
+								["coords"] = {
+									{ 50.5, 68.9, KARESH },
+									{ 50.7, 68.4, KARESH },
+									{ 50.8, 69.2, KARESH },
+									{ 51.0, 68.8, KARESH },
+								}
+							}),
+						},
+					}),
+					q(85009, {	-- Those We Have Yet to Save
+						["sourceQuests"] = { 84967 },	-- The Shadowguard Shattered
+						["provider"] = { "n", 231314 },	-- Om'dalan
+						["coord"] = { 51.0, 68.3, KARESH },
+						["g"] = {
+							i(230730),	-- Nether Tuner (PQI!)
+							--
+							i(245705),	-- Amulet of Final Charge
+							i(245706),	-- Echo Pendant of K'aresh
+						},
+					}),
 				}),
 				header(HEADERS.AchCriteria, 42739.06, {	-- Avoiding the Void
 					q(84972, {	-- Chipping the Void
@@ -1305,7 +1356,67 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				q(84992),	-- Slatebacks
 			}),
 			header(HEADERS.Achievement, 41980, {	-- Vigiliante
-				q(90122),	--
+				-- WORK IN PROGRESS!!! PTR went down mid-questing
+				q(87344, {	-- A Key Threat
+					["sourceQuests"] = { 84967 },	-- The Shadowguard Shattered
+					["provider"] = { "n", 238255 },	-- Constable Zo'ardaz
+					["coord"] = { 48.6, 57.8, KARESH_TAZAVESH },
+				}),
+				header(HEADERS.Quest, 87345, {	-- Warrant: Xy'vox the Twisted
+					q(87345, {	-- Warrant: Xy'vox the Twisted
+						["description"] = "This quest can be obtained only during 'A Key Threat'.",
+						["provider"] = { "n", 238271 },	-- Warrant: Xy'Vox the Twisted
+						["coord"] = { 48.5, 58.4, KARESH_TAZAVESH },
+						["cost"] = {
+							{ "i", 236783, 1 },	-- Ethereal Seal (QI!)
+							{ "i", 236762, 1 },	-- Tazavesh Facade (QI!)
+							{ "i", 236858, 1 },	-- Zo'kita Fruit (QI!)
+						},
+						["g"] = { i(236753), },	-- Xy'vox Refuge Dampener (QS!)
+					}),
+					q(87376, {	-- Ethereal Seal
+						["description"] = "This quest is available during 'Warrant: Xy'vox the Twisted'.",
+						["provider"] = { "n", 238486 },	-- Citizen Om'sto
+						["coord"] = { 46.6, 50.3, KARESH_TAZAVESH },
+						["repeatable"] = true,
+						["g"] = {
+							i(236781, {	-- Discarded Shadow Writ (QI!)
+								["providers"] = {
+									{ "o", 516994 },	-- Tazavesh Trash
+									{ "o", 517000 },	-- Tazavesh Trash
+								},
+							}),
+							--
+							i(236783),	-- Ethereal Seal (QI!) (Reward, required for the Warrant)
+						},
+					}),
+					q(87363, {	-- Tazavesh Facade
+						["description"] = "This quest is available during 'Warrant: Xy'vox the Twisted'.",
+						["provider"] = { "n", 238387 },	-- Deputy Zo'mi
+						["coord"] = { 46.9, 57.5, KARESH_TAZAVESH },
+						["repeatable"] = true,
+						["g"] = {
+							i(236766),	-- Essence Scanner (PQI!)
+							--
+							i(236762),	-- Tazavesh Facade (QI!) (Reward, required for the Warrant)
+						},
+					}),
+					q(87380, {	-- Zo'kita Fruit
+						["description"] = "This quest is available during 'Warrant: Xy'vox the Twisted'.",
+						["provider"] = { "n", 238474 },	-- Zo'kita
+						["coord"] = { 52.4, 57.8, KARESH_TAZAVESH },
+						["repeatable"] = true,
+						["g"] = {
+							i(236859),	-- Untethered Hide (QI!)
+							--
+							i(236858),	-- Zo'kita Fruit (QI!) (Reward, required for the Warrant)
+						},
+					}),
+					q(90122, {	-- Eliminate Xy'vox the Twisted
+						["provider"] = { "i", 236753 },	-- Xy'vox Refuge Dampener (QS!)
+						["repeatable"] = true,
+					}),
+				}),
 				q(90123),	--
 				q(90124),	--
 				q(90125),	--
@@ -1346,28 +1457,29 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				["isWeekly"] = true,
 			}),
 			-- Unsorted
-			q(86359),	--
+			q(84765),	--
+			q(85018),	--
+			q(85022),	--
+			q(85055),	--
+			q(85394),	--
+			q(85434),	--
 			q(86191),	--
-			q(86492),	--
+			q(86193),	--
 			q(86195),	--
-			q(86392),	--
-			q(87294),	--
-			q(86607),	--
+			q(86201),	--
 			q(86359),	--
+			q(86392),	--
+			q(86492),	--
+			q(86607),	--
+			q(87294),	--
 			q(87415),	--
 			q(88672),	--
 			q(90954),	--
-			q(84765),	--
-			q(85434),	--
 			q(91044),	--
 			q(91454),	--
-			q(85009),	--
-			q(85018),	--
-			q(85022),	--
-			q(85394),	--
-			q(85055),	--
-			q(86201),	--
-			q(86193),	--
+			n(REWARDS, {
+				currency(3278),	-- Ethereal Strands
+			}),
 		}),
 	}),
 })));
@@ -1382,7 +1494,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(91812),	-- Triggered after unlocking Renown 2 of The K'aresh Trust right after completing 'The Tabiqa' (84910)
 				-- ??
 				--q(90812),	-- pop randomly at start/intro quest chain (spellID - 1234922 / Warrant)
-
+				q(90807),	-- Triggered at the completion of 'Warrant: Xy'vox the Twisted' (87345)
+				-- Devourer Attacks
 				q(91289),	-- Triggered at the completion of 'Devourer Attack: The Atrium' (86464)
 				q(91290),	-- Triggered at the completion of 'Devourer Attack: Tazavesh' (86465)
 				q(91311),	-- Triggered at the completion of 'Devourer Attack: The Atrium' (86464)

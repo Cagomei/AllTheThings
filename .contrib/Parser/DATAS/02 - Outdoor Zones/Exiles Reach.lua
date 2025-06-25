@@ -776,6 +776,16 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 						i(175235),	-- Expeditionary Plate Armguards
 					},
 				}),
+				q(85678, {	-- Repair Yourself [A]
+					["coord"] = { 52.2, 55.2, EXILES_REACH },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_11_1_7 },
+				}),
+				q(85679, {	-- Repair Yourself [H]
+					["coord"] = { 52.4, 55.6, EXILES_REACH },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_11_1_7 },
+				}),
 				q(56344, {	-- To Darkmaul Citadel [A]
 					["sourceQuests"] = {
 						55882,	-- Message to Base [A]
@@ -784,6 +794,9 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 						60168,	-- The Art of Taming [A] [Hunter]
 						59354,	-- The Best Way to Use Sheep [A] [Mage]
 						59349,	-- One Last Spar [A] [Monk]
+						-- #if AFTER 11.1.7
+						85678,	-- Repair Yourself
+						-- #endif
 					},
 					["provider"] = { "n", 156807 },	-- Captain Garrick
 					["coord"] = { 52.1, 55.3, EXILES_REACH },
@@ -797,6 +810,9 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 						60162,	-- The Art of Taming [H] [Hunter]
 						59955,	-- The Best Way to Use Sheep [H] [Mage]
 						59957,	-- One Last Spar [H] [Monk]
+						-- #if AFTER 11.1.7
+						85679,	-- Repair Yourself
+						-- #endif
 					},
 					["coord"] = { 52.1, 55.3, EXILES_REACH },
 					["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe

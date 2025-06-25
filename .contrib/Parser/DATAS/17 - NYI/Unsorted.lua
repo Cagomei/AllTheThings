@@ -72,7 +72,6 @@ root(ROOTS.Unsorted, {
 				-- Zone Rewards?
 				i(239448),	-- Reshii Magi's Vestments
 				i(239449),	-- Reshii Magi's Slippers
-				i(239450),	-- Reshii Magi's Gloves
 				i(239452),	-- Reshii Magi's Leggings
 				i(239453),	-- Reshii Magi's Spines
 				i(239454),	-- Reshii Magi's Cord
@@ -85,7 +84,6 @@ root(ROOTS.Unsorted, {
 				i(239461),	-- Reshii Scout's Shoulderpads
 				i(239462),	-- Reshii Scout's Belt
 				i(239463),	-- Reshii Scout's Bracers
-				i(239464),	-- Reshii Skirmisher's Brigandine
 				i(239465),	-- Reshii Skirmisher's Boots
 				i(239466),	-- Reshii Skirmisher's Gauntlets
 				i(239467),	-- Reshii Skirmisher's Cowl
@@ -101,8 +99,6 @@ root(ROOTS.Unsorted, {
 				i(239479),	-- Reshii Brute's Vambraces
 				i(240171),	-- Observer's Soul Fetters
 				i(240172),	-- Depleted K'areshi Battery
-				i(240213),	-- Veiling Mana Shroud
-				i(240214),	-- Miniature Reshii Sandgarden
 
 				-- Zone Rewards/Quest?
 				i(243496),	-- Wastelander's Gilded Band
@@ -215,8 +211,6 @@ root(ROOTS.Unsorted, {
 				i(244527),	-- Worn Shadowguard Warglaive
 
 				-- Quest Rewards/Rares?
-				i(245705),	-- Amulet of Final Charge
-				i(245706),	-- Echo Pendant of K'aresh
 				i(245707),	-- Shoulderpads of the Exiled Vow
 				i(245708),	-- Epaulets of the Exiled Vow
 				i(245709),	-- Shoulderguards of the Exiled Vow
@@ -291,7 +285,6 @@ root(ROOTS.Unsorted, {
 				i(246451),	-- Shadefur Brewthief
 				i(246694),	-- Zo'ya
 				i(246723),	-- Unfazed Diver
-				i(243158),	-- Ixthal the Observling
 			}),
 			filter(COSMETIC, {
 				-- Brewfest?
@@ -316,7 +309,6 @@ root(ROOTS.Unsorted, {
 				i(243006),	-- Petrified Branch of Janaa
 				i(243008),	-- Shadowguard Crusher
 				i(243009),	-- Sufaadi Skiff Lantern
-				i(243153),	-- Korgorath's Talon
 				-- Greys if you already looted cosmetic?
 				i(243014),	-- Light-Dimmed Cleaver
 				i(243015),	-- Spear of Forgotten Memories
@@ -337,10 +329,8 @@ root(ROOTS.Unsorted, {
 				i(245693),	-- K'areshi Ribbon Stash
 				i(246293),	-- Buckler of the Last Stand
 				i(246294),	-- Shattered Buckler of the Last Stand
-				i(246295),	-- Tazavesh Lookout's Mace
 				i(246296),	-- Off-Balance Mace of the Tazavesh Lookout
 				i(246298),	-- Cracked Staff of the Desperate Defender
-				i(246299),	-- Blade of Lost Hope
 				i(246301),	-- Pitted Blade of Lost Hope
 
 
@@ -577,21 +567,6 @@ root(ROOTS.Unsorted, {
 			}),
 			header(HEADERS.LFGDungeon, 2805, {	-- Manaforge Omega
 				-- Cosmetic/Raid?
-				i(245510),	-- Loombeast Silk
-				i(248969),	-- Ensemble: Hollow Sentinel's Wingdrapes
-				i(248971),	-- Ensemble: Vicious Charhound's Felcovers
-				i(248972),	-- Ensemble: Plumes of the Mother Eagle
-				i(248973),	-- Ensemble: Spellweaver's Immaculate Runecloaks
-				i(248976),	-- Ensemble: Midnight Herald's Shrouds
-				i(248977),	-- Ensemble: Augur's Ephemeral Brilliance
-				i(248978),	-- Ensemble: Breeze of Fallen Storms
-				i(248979),	-- Ensemble: Gilded Cloaks of the Lucent Battalion
-				i(248980),	-- Ensemble: Memories of a Dying Star
-				i(248981),	-- Ensemble: Capes of the Sudden Eclipse
-				i(248982),	-- Ensemble: Shawls of Channeled Fury
-				i(248983),	-- Ensemble: Inquisitor's All-Seeing Madness
-				i(248984),	-- Ensemble: Living Weapon's Capes
-
 				i(243048),	-- Technomancer's Service Sandals
 				--[[
 				n(CLASSES, {
@@ -762,12 +737,10 @@ root(ROOTS.Unsorted, {
 				i(238849),	-- Ominous Unblinking Eye
 				i(238851),	-- Fractured Dragon Scale
 				i(238853),	-- Netherbound Heart
-				i(238854),	-- Sleek Beak
 				i(238856),	-- Nightpiercer Feather
 				i(238865),	-- Void-Warped Hoof
 				i(238868),	-- Flickering Primeval Element
 				i(238870),	-- Pearly Incisor
-				i(238876),	-- Malicious Mandible
 				i(238879),	-- Cracked Void Carapace
 				i(238881),	-- Barbed Predator Tusk
 				i(238882),	-- Cursed Eyeball Cluster
@@ -781,8 +754,6 @@ root(ROOTS.Unsorted, {
 				i(242380),	-- Black Blood Blower
 				i(243147),	-- Ethereal Defense Pylon
 				i(243152),	-- NEW ITem
-				i(243160),	-- Tazavesh Shipping Manifest
-				i(243161),	-- Long-Pressed Flowers
 				i(243219),	-- Phased Ethereal Bow
 				i(243235),	-- Adventurer's Footlocker
 				i(243246),	-- Funny Candle
@@ -795,7 +766,6 @@ root(ROOTS.Unsorted, {
 				i(245747),	-- Energy Urn
 				i(245884),	-- Energy Pyramid
 				i(246053),	-- Waygate Piece
-				i(246063),	-- Void-Polished Warpstalker Stone
 				i(246492),	-- Soulgorged Augment Rune
 				i(246837),	-- Mysterious Notebook
 				i(246839),	-- Multiversal Energy Dynamics and the Murmuration Paradox
@@ -914,7 +884,6 @@ root(ROOTS.Unsorted, {
 				i(248410),	-- Technomancer's Gift
 				-- Misc/ach?
 				i(246727),	-- Ethereal Essence Sliver
-				i(246737),	-- K'areshi Voidstone
 				-- Devs having fun?
 				i(244854),	-- Purloined Artifact
 				i(244855),	-- Martin Fury
@@ -1438,9 +1407,7 @@ root(ROOTS.Unsorted, {
 				i(229406),	-- Codex of The Exchange
 				i(229420),	-- Anima Orb
 				i(229898),	-- Capture Device
-				i(229969),	-- Flickering Essence
 				i(230284),	-- Artisan's Consortium Pamphlet
-				i(230730),	-- Nether Tuner
 				i(231094),	-- Unused - Tranquilizing Dart [DNT]
 				i(231790),	-- Small Stone Tablet
 				i(231801),	-- Well-Worn Coin
@@ -1506,13 +1473,6 @@ root(ROOTS.Unsorted, {
 				i(236407),	-- Voidbane Gem
 				i(236679),	-- Essence Scanner
 				i(236688),	-- Umbral Facade
-				i(236753),	-- Xy'vox Refuge Dampener
-				i(236762),	-- Tazavesh Facade
-				i(236766),	-- Essence Scanner
-				i(236781),	-- Discarded Shadow Writ
-				i(236783),	-- Ethereal Seal
-				i(236858),	-- Zo'kita Fruit
-				i(236859),	-- Untethered Hide
 				i(236937),	-- Energy Encapsulation
 				i(236957),	-- Hollowbane Portal Key
 				i(236962),	-- Basket of Zo'kita Fruit
@@ -1563,7 +1523,6 @@ root(ROOTS.Unsorted, {
 				i(233005),	-- Om'taha's Toolkit[DNT]
 				i(233009),	-- Firebud Pollen
 				i(233012),	-- Flamethrower
-				i(233028),	-- Flamethrower
 				i(233195),	-- Pheromone Disperser
 				i(233287),	-- Barrel of Swirling Energy
 				i(233333),	-- Forgecaster Wraps
@@ -1602,13 +1561,6 @@ root(ROOTS.Unsorted, {
 				i(236416),	-- Oasis Animal Leavings
 				i(236679),	-- Essence Scanner
 				i(236688),	-- Umbral Facade
-				i(236753),	-- Xy'vox Refuge Dampener
-				i(236762),	-- Tazavesh Facade
-				i(236766),	-- Essence Scanner
-				i(236781),	-- Discarded Shadow Writ
-				i(236783),	-- Ethereal Seal
-				i(236858),	-- Zo'kita Fruit
-				i(236859),	-- Untethered Hide
 				i(236937),	-- Energy Encapsulation
 				i(236957),	-- Hollowbane Portal Key
 				i(236962),	-- Basket of Zo'kita Fruit
@@ -3365,7 +3317,6 @@ root(ROOTS.Unsorted, {
 				i(163373),	-- Rachel's Flute \\ Rachel's Tambourine
 				i(163374),	-- Josh's Fang Necklace \\ Josh's Lucky Ferret's Foot
 				i(163375),	-- Portrait of Commander Martens
-				i(163376),	-- Kurt's Ornate Key
 				i(163516),	-- Blue Glowing Puffer
 				i(163517),	-- Red Glowing Puffer
 				i(163518),	-- Purple Glowing Puffer

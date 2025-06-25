@@ -424,7 +424,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 		})),
 		ach(41937, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 }, }, {	-- The War Within Season 3: Voidborne Victor
 		})),
-		ach(42325),	-- Void Wear Prohibited (automated)
+		ach(42325, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 }, }, {	-- Void Wear Prohibited (automated)
+			i(246737, {	-- K'areshi Voidstone (CI!)
+
+			}),
+		})),
 		ach(40723, {	-- Web-Wrapped in the Finest Silks (automated)
 			i(226224, {	-- Luminous Nerubian Catalyst Stone (CI!)
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {

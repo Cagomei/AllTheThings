@@ -76,6 +76,7 @@ local EncounterToLoot = {
 		i(237545),	-- Discarded Nutrient Shackles
 		i(237524),	-- Laced Lair-Steppers
 		i(242393),	-- Loom'ithar's Living Silk
+		i(245510),	-- Loombeast Silk
 		i(237732),	-- Piercing Strandbow
 		i(237729),	-- Prodigious Gene Splicer
 		i(237723),	-- Ward of the Weaving-Beast
@@ -409,11 +410,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 			header(HEADERS.Faction, FACTION_MANAFORGE_VANDALS, {
 				faction(FACTION_MANAFORGE_VANDALS),
-				--[[
 				n(QUESTS, sharedData({
-					-- ["qg"] =
+					["provider"] = { "n", 245344 },	-- Zo'turu <Renown Quartermaster>
+					["coord"] = { 42.1, 23.1, KARESH },
 				},bubbleDownRep(FACTION_MANAFORGE_VANDALS, {
 					{		-- RENOWN 1 --
+						q(92031), -- Meet the Vandals
 					}, {	-- RENOWN 2 --
 					}, {	-- RENOWN 3 --
 					}, {	-- RENOWN 4 --
@@ -431,7 +433,37 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						spell(1239155),	-- Path of the All-Devouring
 					},
 				}))),
-				--]]
+				n(VENDORS, {
+				-- NOTE: There are 3 vendors outside the Raid Entrance. Items they sell are not renown locked.
+				n(245349, {	-- Zo'ropo <Eccentric Engineer>
+					["coord"] = { 42.2, 23.0, KARESH },
+					-- Sells 73 (COSMETIC!) items (None of them are in Unsorted)
+					-- All of them cost 1x i246727 [Ethereal Essence Sliver] each
+					-- My guess is, this currency/token drops inside the Manaforge
+				}),
+				n(245348, {	-- Ba'choso <Curious Curator>
+					["coord"] = { 42.1, 23.2, KARESH },
+					["g"] = {	-- All items cost 1x i245510 [Loombeast Silk] each. TODO: Someone set shared data ["cost"] if possible, please?
+						i(248969),	-- Ensemble: Hollow Sentinel's Wingdrapes
+						i(248971),	-- Ensemble: Vicious Charhound's Felcovers
+						i(248972),	-- Ensemble: Plumes of the Mother Eagle
+						i(248973),	-- Ensemble: Spellweaver's Immaculate Runecloaks
+						i(248976),	-- Ensemble: Midnight Herald's Shrouds
+						i(248977),	-- Ensemble: Augur's Ephemeral Brilliance
+						i(248978),	-- Ensemble: Breeze of Fallen Storms
+						i(248979),	-- Ensemble: Gilded Cloaks of the Lucent Battalion
+						i(248980),	-- Ensemble: Memories of a Dying Star
+						i(248981),	-- Ensemble: Capes of the Sudden Eclipse
+						i(248982),	-- Ensemble: Shawls of Channeled Fury
+						i(248983),	-- Ensemble: Inquisitor's All-Seeing Madness
+						i(248984),	-- Ensemble: Living Weapon's Capes
+					},
+				}),
+				n(248304, {	-- Acquirer Ba'theom <Exotic Armor>
+					["coord"] = { 42.1, 23.4, KARESH },
+					-- Sells Tier set tokens in exchange for Hungering Void Curios
+				}),
+			}),
 			}),
 			o(456208, {	-- The Catalyst
 				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
