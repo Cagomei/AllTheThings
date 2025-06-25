@@ -399,10 +399,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(69976),	-- Pattern: Boots of the Black Flame
-				i(69966),	-- Pattern: Don Tayo's Inferno Mittens
-				i(69975),	-- Pattern: Endless Dream  Walkers
-				i(69965),	-- Pattern: Grips of Altered Reality
+				i(69976),	-- Pattern: Boots of the Black Flame (RECIPE!)
+				i(69966),	-- Pattern: Don Tayo's Inferno Mittens (RECIPE!)
+				i(69975),	-- Pattern: Endless Dream Walkers (RECIPE!)
+				i(69965),	-- Pattern: Grips of Altered Reality (RECIPE!)
 				i(69962),	-- Pattern: Clutches of Evil (RECIPE!)
 				i(69960),	-- Pattern: Dragonfire Gloves (RECIPE!)
 				i(69971),	-- Pattern: Earthen Scale Sabatons (RECIPE!)

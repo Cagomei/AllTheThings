@@ -1547,30 +1547,72 @@ Fire and Water - Damage against Elementals increased by 15%.
 		},
 	}),
 	prof(TAILORING, {
-		filter(BAGS, {
-			i(54443),	-- Embersilk Bag
-			i(54446),	-- Hyjal Expedition Bag
-			i(54444),	-- Illusionary Bag
-			moltenfront(i(70138)),	-- Luxurious Silk Gem Bag
-			i(54445),	-- Otherworldly Bag
-		}),
-		filter(CONSUMABLES, {
-			i(54447),	-- Enchanted Spellthread
-			i(54449),	-- Ghostly Spellthread
-		}),
-		n(CHEST, {
+		n(ARMOR, {
+			i(54504),	-- Belt of the Depths
 			i(54441),	-- Black Embersilk Gown
-			bloodthirsty(i(70060)),	-- Bloodthirsty Embersilk Robe
-			bloodthirsty(i(70058)),	-- Bloodthirsty Fireweave Robe
-			i(54475),	-- Deathsilk Robe
-			bloodied(i(54495)),	-- Emberfire Robe
-			bloodied(i(54494)),	-- Fireweave Robe
-			i(54486),	-- Spiritmend Robe
-			dragonsoul(i(75093)),	-- Vicious Embersilk Robe
-			dragonsoul(i(75088)),	-- Vicious Fireweave Robe
-		}),
-		n(BACK, {
+			bloodthirsty(i(70062)),	-- Bloodthirsty Embersilk Belt
+			bloodthirsty(i(70061)),	-- Bloodthirsty Embersilk Boots
+			bloodthirsty(i(70063)),	-- Bloodthirsty Embersilk Bracers
 			bloodthirsty(i(70070)),	-- Bloodthirsty Embersilk Cape
+			bloodthirsty(i(70067)),	-- Bloodthirsty Embersilk Cowl
+			bloodthirsty(i(70065)),	-- Bloodthirsty Embersilk Gloves
+			bloodthirsty(i(70066)),	-- Bloodthirsty Embersilk Pants
+			bloodthirsty(i(70060)),	-- Bloodthirsty Embersilk Robe
+			bloodthirsty(i(70064)),	-- Bloodthirsty Embersilk Shoulders
+			bloodthirsty(i(70052)),	-- Bloodthirsty Fireweave Belt
+			bloodthirsty(i(70053)),	-- Bloodthirsty Fireweave Boots
+			bloodthirsty(i(70054)),	-- Bloodthirsty Fireweave Bracers
+			bloodthirsty(i(70055)),	-- Bloodthirsty Fireweave Cowl
+			bloodthirsty(i(70056)),	-- Bloodthirsty Fireweave Gloves
+			bloodthirsty(i(70057)),	-- Bloodthirsty Fireweave Pants
+			bloodthirsty(i(70058)),	-- Bloodthirsty Fireweave Robe
+			bloodthirsty(i(70059)),	-- Bloodthirsty Fireweave Shoulders
+			firelands(i(69954)),	-- Boots of the Black Flame
+			dragonsoul(i(71989)),	-- Bracers of Unconquered Power
+			i(54505),	-- Breeches of Mended Nightmares
+			i(54471),	-- Deathsilk Belt
+			i(54477),	-- Deathsilk Boots
+			i(54473),	-- Deathsilk Bracers
+			i(54476),	-- Deathsilk Cowl
+			i(54478),	-- Deathsilk Gloves
+			i(54472),	-- Deathsilk Leggings
+			i(54475),	-- Deathsilk Robe
+			i(54474),	-- Deathsilk Shoulders
+			firelands(i(69945)),	-- Don Tayo's Inferno Mittens
+			i(54503),	-- Dreamless Belt
+			dragonsoul(i(71990)),	-- Dreamwraps of the Light
+			bloodied(i(54500)),	-- Emberfire Belt
+			bloodied(i(54499)),	-- Emberfire Boots
+			bloodied(i(54501)),	-- Emberfire Bracers
+			bloodied(i(54496)),	-- Emberfire Cowl
+			bloodied(i(54497)),	-- Emberfire Gloves
+			bloodied(i(54498)),	-- Emberfire Pants
+			bloodied(i(54495)),	-- Emberfire Robe
+			bloodied(i(54502)),	-- Emberfire Shoulders
+			firelands(i(69953)),	-- Endless Dream Walkers
+			bloodied(i(54489)),	-- Fireweave Belt
+			bloodied(i(54490)),	-- Fireweave Boots
+			bloodied(i(54488)),	-- Fireweave Bracers
+			bloodied(i(54493)),	-- Fireweave Cowl
+			bloodied(i(54492)),	-- Fireweave Gloves
+			bloodied(i(54491)),	-- Fireweave Pants
+			bloodied(i(54494)),	-- Fireweave Robe
+			bloodied(i(54487)),	-- Fireweave Shoulders
+			i(54506),	-- Flame-Ascended Pantaloons
+			firelands(i(69944)),	-- Grips of Altered Reality
+			i(54451),	-- High Society Top Hat
+			dragonsoul(i(71980)),	-- Lavaquake Legwraps
+			i(54481),	-- Spiritmend Belt
+			i(54482),	-- Spiritmend Boots
+			i(54480),	-- Spiritmend Bracers
+			i(54485),	-- Spiritmend Cowl
+			i(54484),	-- Spiritmend Gloves
+			i(54483),	-- Spiritmend Leggings
+			i(54486),	-- Spiritmend Robe
+			i(54479),	-- Spiritmend Shoulders
+			dragonsoul(i(75096)),	-- Vicious Embersilk Belt
+			dragonsoul(i(75095)),	-- Vicious Embersilk Boots
+			dragonsoul(i(75098)),	-- Vicious Embersilk Bracers
 			-- #if ANYCLASSIC
 			-- Blizzard did a dumb when they implemented Cata Classic, making Dragon Soul PVP cloaks available at launch
 			-- and adding a new, higher ilvl, cloak which never got added to the game
@@ -1579,89 +1621,40 @@ Fire and Water - Damage against Elementals increased by 15%.
 			-- #else
 			dragonsoul(i(75065)),	-- Vicious Embersilk Cape
 			-- #endif
-		}),
-		n(FEET, {
-			firelands(i(69954)),	-- Boots of the Black Flame
-			bloodthirsty(i(70061)),	-- Bloodthirsty Embersilk Boots
-			bloodthirsty(i(70053)),	-- Bloodthirsty Fireweave Boots
-			i(54477),	-- Deathsilk Boots
-			bloodied(i(54499)),	-- Emberfire Boots
-			firelands(i(69953)),	-- Endless Dream Walkers
-			bloodied(i(54490)),	-- Fireweave Boots
-			i(54482),	-- Spiritmend Boots
-			dragonsoul(i(75095)),	-- Vicious Embersilk Boots
-			dragonsoul(i(75087)),	-- Vicious Fireweave Boots
-		}),
-		n(HANDS, {
-			bloodthirsty(i(70065)),	-- Bloodthirsty Embersilk Gloves
-			bloodthirsty(i(70056)),	-- Bloodthirsty Fireweave Gloves
-			i(54478),	-- Deathsilk Gloves
-			firelands(i(69945)),	-- Don Tayo's Inferno Mittens
-			bloodied(i(54497)),	-- Emberfire Gloves
-			bloodied(i(54492)),	-- Fireweave Gloves
-			firelands(i(69944)),	-- Grips of Altered Reality
-			i(54484),	-- Spiritmend Gloves
-			dragonsoul(i(75070)),	-- Vicious Embersilk Gloves
-			dragonsoul(i(75063)),	-- Vicious Fireweave Gloves
-		}),
-		n(HEAD, {
-			bloodthirsty(i(70067)),	-- Bloodthirsty Embersilk Cowl
-			bloodthirsty(i(70055)),	-- Bloodthirsty Fireweave Cowl
-			i(54476),	-- Deathsilk Cowl
-			bloodied(i(54496)),	-- Emberfire Cowl
-			bloodied(i(54493)),	-- Fireweave Cowl
-			i(54451),	-- High Society Top Hat
-			i(54485),	-- Spiritmend Cowl
 			dragonsoul(i(75073)),	-- Vicious Embersilk Cowl
-			dragonsoul(i(75062)),	-- Vicious Fireweave Cowl
-		}),
-		n(LEGS, {
-			bloodthirsty(i(70066)),	-- Bloodthirsty Embersilk Pants
-			bloodthirsty(i(70057)),	-- Bloodthirsty Fireweave Pants
-			i(54505),	-- Breeches of Mended Nightmares
-			i(54472),	-- Deathsilk Leggings
-			bloodied(i(54498)),	-- Emberfire Pants
-			bloodied(i(54491)),	-- Fireweave Pants
-			i(54506),	-- Flame-Ascended Pantaloons
-			dragonsoul(i(71980)),	-- Lavaquake Legwraps
-			i(54483),	-- Spiritmend Leggings
+			dragonsoul(i(75070)),	-- Vicious Embersilk Gloves
 			dragonsoul(i(75072)),	-- Vicious Embersilk Pants
+			dragonsoul(i(75093)),	-- Vicious Embersilk Robe
+			dragonsoul(i(75064)),	-- Vicious Embersilk Shoulders
+			dragonsoul(i(75086)),	-- Vicious Fireweave Belt
+			dragonsoul(i(75087)),	-- Vicious Fireweave Boots
+			dragonsoul(i(75089)),	-- Vicious Fireweave Bracers
+			dragonsoul(i(75062)),	-- Vicious Fireweave Cowl
+			dragonsoul(i(75063)),	-- Vicious Fireweave Gloves
 			dragonsoul(i(75082)),	-- Vicious Fireweave Pants
+			dragonsoul(i(75088)),	-- Vicious Fireweave Robe
+			dragonsoul(i(75091)),	-- Vicious Fireweave Shoulders
 			dragonsoul(i(71981)),	-- World Mender's Pants
 		}),
-		n(SHOULDER, {
-			bloodthirsty(i(70064)),	-- Bloodthirsty Embersilk Shoulders
-			bloodthirsty(i(70059)),	-- Bloodthirsty Fireweave Shoulders
-			i(54474),	-- Deathsilk Shoulders
-			bloodied(i(54502)),	-- Emberfire Shoulders
-			bloodied(i(54487)),	-- Fireweave Shoulders
-			i(54479),	-- Spiritmend Shoulders
-			dragonsoul(i(75064)),	-- Vicious Embersilk Shoulders
-			dragonsoul(i(75091)),	-- Vicious Fireweave Shoulders
+		n(ARMOR_ENCHANTMENTS, {
+			i(54447),	-- Enchanted Spellthread
+			i(54449),	-- Ghostly Spellthread
+			i(54448),	-- Powerful Enchanted Spellthread
+			i(54450),	-- Powerful Ghostly Spellthread
 		}),
-		n(WAIST, {
-			i(54504),	-- Belt of the Depths
-			bloodthirsty(i(70062)),	-- Bloodthirsty Embersilk Belt
-			bloodthirsty(i(70052)),	-- Bloodthirsty Fireweave Belt
-			i(54471),	-- Deathsilk Belt
-			i(54503),	-- Dreamless Belt
-			bloodied(i(54500)),	-- Emberfire Belt
-			bloodied(i(54489)),	-- Fireweave Belt
-			i(54481),	-- Spiritmend Belt
-			dragonsoul(i(75096)),	-- Vicious Embersilk Belt
-			dragonsoul(i(75086)),	-- Vicious Fireweave Belt
+		filter(BAGS, {
+			i(54443),	-- Embersilk Bag
+			i(54446),	-- Hyjal Expedition Bag
+			i(54444),	-- Illusionary Bag
+			moltenfront(i(70138)),	-- Luxurious Silk Gem Bag
+			i(54445),	-- Otherworldly Bag
 		}),
-		n(WRIST, {
-			bloodthirsty(i(70063)),	-- Bloodthirsty Embersilk Bracers
-			bloodthirsty(i(70054)),	-- Bloodthirsty Fireweave Bracers
-			dragonsoul(i(71989)),	-- Bracers of Unconquered Power
-			i(54473),	-- Deathsilk Bracers
-			dragonsoul(i(71990)),	-- Dreamwraps of the Light
-			bloodied(i(54501)),	-- Emberfire Bracers
-			bloodied(i(54488)),	-- Fireweave Bracers
-			i(54480),	-- Spiritmend Bracers
-			dragonsoul(i(75098)),	-- Vicious Embersilk Bracers
-			dragonsoul(i(75089)),	-- Vicious Fireweave Bracers
+		filter(MISC, {
+			i(54442),	-- Embersilk Net
+		}),
+		filter(REAGENTS, {
+			i(53643),	-- Bolt of Embersilk Cloth
+			i(54440),	-- Dreamcloth
 		}),
 	}),
 }))));

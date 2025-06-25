@@ -646,11 +646,15 @@ i(49956, 70553);	-- Sandals of Consecration
 --- ITEM ---
 i(54798, 75597);	-- Frosty Flying Carpet
 
---------------------
---- PATCH 4.0.3a ---
---------------------
+-------------------
+--- PATCH 4.0.3 ---
+-------------------
+-- CRIEVE NOTE: In Cata Classic, these got renamed to Bloodthirsty instead of Vicious.
+-- Braghe NOTE: In Retail 4.0.3: No Prefix, 4.2.0: Bloodthirsty, 4.3.0: Vicious New Items IDs same spellID
 --- TRAINER ---
+i(0, 75156);	-- Tailoring (Illustrious Grand Master) [REMOVED 8.0.1]
 i(0, 74964);	-- Bolt of Embersilk Cloth
+i(0, 75175);	-- Darkglow Embroidery [Rank 2] [REMOVED 6.0.2]
 i(0, 75248);	-- Deathsilk Belt
 i(0, 75252);	-- Deathsilk Boots
 i(0, 75249);	-- Deathsilk Bracers
@@ -670,9 +674,10 @@ i(0, 75247);	-- Embersilk Net
 i(0, 75250);	-- Enchanted Spellthread
 i(0, 75255);	-- Ghostly Spellthread
 i(0, 75268);	-- Hyjal Expedition Bag
-i(0, 75154);	-- Master's Spellthread [Rank 2]  [REMOVED 6.0.2]
+i(0, 75172);	-- Lightweave Embroidery [Rank 2] [REMOVED 6.0.2]
+i(0, 75154);	-- Master's Spellthread [Rank 2] [REMOVED 6.0.2]
 i(0, 75265);	-- Otherworldly Bag
-i(0, 75155);	-- Sanctified Spellthread [Rank 2]  [REMOVED 6.0.2]
+i(0, 75155);	-- Sanctified Spellthread [Rank 2] [REMOVED 6.0.2]
 i(0, 75258);	-- Spiritmend Belt
 i(0, 75261);	-- Spiritmend Boots
 i(0, 75259);	-- Spiritmend Bracers
@@ -681,7 +686,17 @@ i(0, 75262);	-- Spiritmend Gloves
 i(0, 75263);	-- Spiritmend Leggings
 i(0, 75267);	-- Spiritmend Robe
 i(0, 75260);	-- Spiritmend Shoulders
-i(0, 75156);	-- Tailoring (Illustrious Grand Master) [REMOVED 8.0.1]
+i(0, 75178);	-- Swordguard Embroidery [Rank 2] [REMOVED 6.0.2]
+i(0, 75293);	-- Vicious Embersilk Belt
+i(0, 75297);	-- Vicious Embersilk Boots
+i(0, 75270);	-- Vicious Embersilk Bracers
+i(0, 75295);	-- Vicious Embersilk Gloves
+i(0, 75291);	-- Vicious Embersilk Shoulders
+i(0, 75269);	-- Vicious Fireweave Belt
+i(0, 75294);	-- Vicious Fireweave Boots
+i(0, 75290);	-- Vicious Fireweave Bracers
+i(0, 75296);	-- Vicious Fireweave Gloves
+i(0, 75292);	-- Vicious Fireweave Shoulders
 --- ITEM ---
 i(54601, 75298);	-- Belt of the Depths
 i(68199, 75288);	-- Black Embersilk Gown
@@ -692,16 +707,20 @@ i(67541, 75289);	-- High Society Top Hat
 i(54605, 75308);	-- Illusionary Bag
 i(54599, 75309);	-- Powerful Enchanted Spellthread
 i(54600, 75310);	-- Powerful Ghostly Spellthread
+i(54593, 75306);	-- Vicious Embersilk Cowl
+i(54594, 75307);	-- Vicious Embersilk Pants
+i(54595, 75305);	-- Vicious Embersilk Robe
+i(54596, 75304);	-- Vicious Fireweave Cowl
+i(54597, 75302);	-- Vicious Fireweave Pants
+i(54598, 75303);	-- Vicious Fireweave Robe
 --- NYI ---
 i(0, 75183);	-- Unravel Embersilk Cloth
 i(0, 75143);	--
-i(0, 75172);	-- Lightweave Embroidery [Rank 2] [REMOVED 6.0.2]
-i(0, 75175);	-- Darkglow Embroidery [Rank 2] [REMOVED 6.0.2]
-i(0, 75178);	-- Swordguard Embroidery [Rank 2] [REMOVED 6.0.2]
 
 -------------------
 --- PATCH 4.2.0 ---
 -------------------
+i(0, 99537);	-- Vicious Embersilk Cape
 --- ITEM ---
 i(69976, 99460);	-- Boots of the Black Flame
 i(69966, 99449);	-- Don Tayo's Inferno Mittens
@@ -712,34 +731,14 @@ i(70176, 100585);	-- Luxurious Silk Gem Bag
 -------------------
 --- PATCH 4.3.0 ---
 -------------------
---- TRAINER ---
--- CRIEVE NOTE: In Cata Classic, these got renamed to Bloodthirsty instead of Vicious.
-i(0, 75293);	-- Vicious Embersilk Belt
-i(0, 75297);	-- Vicious Embersilk Boots
-i(0, 75270);	-- Vicious Embersilk Bracers
-i(0, 99537);	-- Vicious Embersilk Cape
-i(0, 75295);	-- Vicious Embersilk Gloves
-i(0, 75291);	-- Vicious Embersilk Shoulders
-i(0, 75269);	-- Vicious Fireweave Belt
-i(0, 75294);	-- Vicious Fireweave Boots
-i(0, 75290);	-- Vicious Fireweave Bracers
-i(0, 75296);	-- Vicious Fireweave Gloves
-i(0, 75292);	-- Vicious Fireweave Shoulders
 --- ITEM ---
 i(72004, 101923);	-- Bracers of Unconquered Power
 i(72003, 101922);	-- Dreamwraps of the Light
 i(72002, 101921);	-- Lavaquake Legwraps
--- CRIEVE NOTE: In Cata Classic, these got renamed to Bloodthirsty instead of Vicious.
-i(54593, 75306);	-- Vicious Embersilk Cowl
-i(54594, 75307);	-- Vicious Embersilk Pants
-i(54595, 75305);	-- Vicious Embersilk Robe
-i(54596, 75304);	-- Vicious Fireweave Cowl
-i(54597, 75302);	-- Vicious Fireweave Pants
-i(54598, 75303);	-- Vicious Fireweave Robe
 i(72000, 101920);	-- World Mender's Pants
 --- NYI ---
 i(0, 75287);	--
-i(0, 102171);	--
+i(72102, 102171);	-- Black Silk Vest
 
 -- #if ANYCLASSIC
 -----------------
@@ -747,20 +746,10 @@ i(0, 102171);	--
 -----------------
 --- TRAINER ---
 i(0, 1216338);	-- Bloodthirsty Embersilk Cape
+
 -----------------
 -- PATCH 4.4.2 --
 -----------------
---- NYI ---
-i(0, 1224213);	-- Emberfire Belt
-i(0, 1224217);	-- Emberfire Boots
-i(0, 1224209);	-- Emberfire Bracers
-i(0, 1224215);	-- Emberfire Gloves
-i(0, 1224211);	-- Emberfire Shoulders
-i(0, 1224208);	-- Fireweave Belt
-i(0, 1224214);	-- Fireweave Boots
-i(0, 1224210);	-- Fireweave Bracers
-i(0, 1224216);	-- Fireweave Gloves
-i(0, 1224212);	-- Fireweave Shoulders
 --- TRAINER ---
 i(0, 1224154);	-- Vicious Embersilk Belt
 i(0, 1224155);	-- Vicious Embersilk Boots
@@ -785,6 +774,17 @@ i(238070, 1224160);	-- Pattern: Vicious Embersilk Robe
 i(238071, 1224165);	-- Pattern: Vicious Fireweave Cowl
 i(238072, 1224167);	-- Pattern: Vicious Fireweave Pants
 i(238073, 1224168);	-- Pattern: Vicious Fireweave Robe
+--- NYI ---
+i(0, 1224213);	-- Emberfire Belt
+i(0, 1224217);	-- Emberfire Boots
+i(0, 1224209);	-- Emberfire Bracers
+i(0, 1224215);	-- Emberfire Gloves
+i(0, 1224211);	-- Emberfire Shoulders
+i(0, 1224208);	-- Fireweave Belt
+i(0, 1224214);	-- Fireweave Boots
+i(0, 1224210);	-- Fireweave Bracers
+i(0, 1224216);	-- Fireweave Gloves
+i(0, 1224212);	-- Fireweave Shoulders
 -- #endif
 
 -------------------

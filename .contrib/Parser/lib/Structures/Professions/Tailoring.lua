@@ -1,6 +1,8 @@
 ---------------
 -- TAILORING --
 ---------------
+local BOLT_OF_EMBERSILK = 53643;
+local DREAMCLOTH = 54440;
 APPRENTICE_JOURNEYMAN_EXPERT_TAILORING = {
 	r(3908, {	-- Tailoring (Apprentice)
 		-- #if NOT ANYCLASSIC
@@ -332,12 +334,12 @@ WRATH_TAILORING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] =
 	}),
 	n(ARMOR_ENCHANTMENTS, {
 		r(56010),	-- Azure Spellthread
-		r(55769),	-- Darkglow Embroidery [Rank 1] [REMOVED: 6.0.2]
-		r(55642),	-- Lightweave Embroidery [Rank 1] [REMOVED 6.0.2]
-		r(56034),	-- Master's Spellthread [Rank 1] [REMOVED 6.0.2]
-		r(56039),	-- Sanctified Spellthread [Rank 1] [REMOVED 6.0.2]
+		r(55769, {["timeline"] = {ADDED_3_0_3,REMOVED_6_0_2}}),	-- Darkglow Embroidery [Rank 1]
+		r(55642, {["timeline"] = {ADDED_3_0_3,REMOVED_6_0_2}}),	-- Lightweave Embroidery [Rank 1]
+		r(56034, {["timeline"] = {ADDED_3_0_3,REMOVED_6_0_2}}),	-- Master's Spellthread [Rank 1]
+		r(56039, {["timeline"] = {ADDED_3_0_3,REMOVED_6_0_2}}),	-- Sanctified Spellthread [Rank 1]
 		r(56008),	-- Shining Spellthread
-		r(55777),	-- Swordguard Embroidery [Rank 1] [REMOVED 6.0.2]
+		r(55777, {["timeline"] = {ADDED_3_0_3,REMOVED_6_0_2}}),	-- Swordguard Embroidery [Rank 1]
 	}),
 	filter(BAGS, {
 		r(56007),	-- Frostweave Bag
@@ -357,120 +359,218 @@ WRATH_TAILORING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(56003),	-- Spellweave
 	}),
 }));
+CATA_TAILORING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	r(75156, {	-- Tailoring (Illustrious)
+		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+		["rank"] = 7,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264622, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Cataclysm Tailoring
+	r(330237, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Cataclysm]
+	r(330238, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Cataclysm]
+	r(330239, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Cataclysm]
+	r(330240, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Cataclysm]
+	r(330241, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Cataclysm]
+	n(ARMOR, {
+		-- #if ANYCLASSIC
+		r(75293),	-- Vicious Embersilk Belt
+		r(75297),	-- Vicious Embersilk Boots
+		r(75270),	-- Vicious Embersilk Bracers
+		applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216338, {["timeline"] = {ADDED_4_4_1}})),	-- Bloodthirsty Embersilk Cape
+		r(75295),	-- Vicious Embersilk Gloves
+		r(75291),	-- Vicious Embersilk Shoulders
+		r(75269),	-- Vicious Fireweave Belt
+		r(75294),	-- Vicious Fireweave Boots
+		r(75290),	-- Vicious Fireweave Bracers
+		r(75296),	-- Vicious Fireweave Gloves
+		r(75292),	-- Vicious Fireweave Shoulders
+		-- #endif
+		r(75248),	-- Deathsilk Belt
+		r(75252),	-- Deathsilk Boots
+		r(75249),	-- Deathsilk Bracers
+		r(75256),	-- Deathsilk Cowl
+		r(75253),	-- Deathsilk Gloves
+		r(75254),	-- Deathsilk Leggings
+		r(75257),	-- Deathsilk Robe
+		r(75251),	-- Deathsilk Shoulders
+		r(75258),	-- Spiritmend Belt
+		r(75261),	-- Spiritmend Boots
+		r(75259),	-- Spiritmend Bracers
+		r(75266),	-- Spiritmend Cowl
+		r(75262),	-- Spiritmend Gloves
+		r(75263),	-- Spiritmend Leggings
+		r(75267),	-- Spiritmend Robe
+		r(75260),	-- Spiritmend Shoulders
+		-- #if ANYCLASSIC
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224154, {["timeline"] = {ADDED_4_4_3}})),	-- Vicious Embersilk Belt
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224155, {["timeline"] = {ADDED_4_4_3}})),	-- Vicious Embersilk Boots
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224156, {["timeline"] = {ADDED_4_4_3}})),	-- Vicious Embersilk Bracers
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(99537, {["timeline"] = {ADDED_4_4_3}})),	-- Vicious Embersilk Cape
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224158, {["timeline"] = {ADDED_4_4_3}})),	-- Vicious Embersilk Gloves
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224161, {["timeline"] = {ADDED_4_4_3}})),	-- Vicious Embersilk Shoulders
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224162, {["timeline"] = {ADDED_4_4_3}})),	-- Vicious Fireweave Belt
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224163, {["timeline"] = {ADDED_4_4_3}})),	-- Vicious Fireweave Boots
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224164, {["timeline"] = {ADDED_4_4_3}})),	-- Vicious Fireweave Bracers
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224166, {["timeline"] = {ADDED_4_4_3}})),	-- Vicious Fireweave Gloves
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224169, {["timeline"] = {ADDED_4_4_3}})),	-- Vicious Fireweave Shoulders
+		-- #else
+		r(75293),	-- Vicious Embersilk Belt
+		r(75297),	-- Vicious Embersilk Boots
+		r(75270),	-- Vicious Embersilk Bracers
+		r(99537, {["timeline"] = {ADDED_4_2_0}}),	-- Vicious Embersilk Cape
+		r(75295),	-- Vicious Embersilk Gloves
+		r(75291),	-- Vicious Embersilk Shoulders
+		r(75269),	-- Vicious Fireweave Belt
+		r(75294),	-- Vicious Fireweave Boots
+		r(75290),	-- Vicious Fireweave Bracers
+		r(75296),	-- Vicious Fireweave Gloves
+		r(75292),	-- Vicious Fireweave Shoulders
+		-- #endif
+
+	}),
+	n(ARMOR_ENCHANTMENTS, {
+		r(75175, {["timeline"] = {ADDED_4_0_3_LAUNCH,REMOVED_6_0_2}}),	-- Darkglow Embroidery [Rank 2]
+		r(75250),	-- Enchanted Spellthread
+		r(75255),	-- Ghostly Spellthread
+		r(75172, {["timeline"] = {ADDED_4_0_3_LAUNCH,REMOVED_6_0_2}}),	-- Lightweave Embroidery [Rank 2]
+		r(75154, {["timeline"] = {ADDED_4_0_3_LAUNCH,REMOVED_6_0_2}}),	-- Master's Spellthread [Rank 2]
+		r(75155, {["timeline"] = {ADDED_4_0_3_LAUNCH,REMOVED_6_0_2}}),	-- Sanctified Spellthread [Rank 2]
+		r(75178, {["timeline"] = {ADDED_4_0_3_LAUNCH,REMOVED_6_0_2}}),	-- Swordguard Embroidery [Rank 2]
+	}),
+	filter(BAGS, {
+		r(75264),	-- Embersilk Bag
+		r(75268),	-- Hyjal Expedition Bag
+		r(75265),	-- Otherworldly Bag
+	}),
+	filter(MISC, {
+		r(75247),	-- Embersilk Net
+	}),
+	filter(REAGENTS, {
+		r(74964),	-- Bolt of Embersilk Cloth
+		r(75146),	-- Dream of Azshara
+		r(75142),	-- Dream of Deepholm
+		r(94743),	-- Dream of Destruction
+		r(75144),	-- Dream of Hyjal
+		r(75145),	-- Dream of Ragnaros
+		r(75141),	-- Dream of Skywall
+	}),
+}));
 COMMON_CATACLYSM_TAILORING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
-	i(54601, {	-- Pattern: Belt of the Depths
-		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+	i(54601, {	-- Pattern: Belt of the Depths (RECIPE!)
+		["cost"] = {{"i", DREAMCLOTH, 1}},
 	}),
-	i(68199, {	-- Pattern: Black Embersilk Gown
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(68199, {	-- Pattern: Black Embersilk Gown (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	-- #if ANYCLASSIC
-	i(54593, {	-- Pattern: Bloodthirsty Embersilk Cowl
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(54593, {	-- Pattern: Bloodthirsty Embersilk Cowl (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
-	i(54594, {	-- Pattern: Bloodthirsty Embersilk Pants
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(54594, {	-- Pattern: Bloodthirsty Embersilk Pants (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
-	i(54595, {	-- Pattern: Bloodthirsty Embersilk Robe
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(54595, {	-- Pattern: Bloodthirsty Embersilk Robe (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
-	i(54596, {	-- Pattern: Bloodthirsty Fireweave Cowl
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(54596, {	-- Pattern: Bloodthirsty Fireweave (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
-	i(54597, {	-- Pattern: Bloodthirsty Fireweave Pants
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(54597, {	-- Pattern: Bloodthirsty Fireweave Pants (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
-	i(54598, {	-- Pattern: Bloodthirsty Fireweave Robe
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(54598, {	-- Pattern: Bloodthirsty Fireweave Robe (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	-- #endif
-	i(54603, {	-- Pattern: Breeches of Mended Nightmares
-		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+	i(54603, {	-- Pattern: Breeches of Mended Nightmares (RECIPE!)
+		["cost"] = {{"i", DREAMCLOTH, 1}},
 	}),
-	i(54602, {	-- Pattern: Dreamless Belt
-		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+	i(54602, {	-- Pattern: Dreamless Belt (RECIPE!)
+		["cost"] = {{"i", DREAMCLOTH, 1}},
 	}),
 	-- #if ANYCLASSIC
-	i(238123, {	-- Pattern: Embersilk Cowl
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(238123, {	-- Pattern: Embersilk Cowl (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 		["timeline"] = { ADDED_4_4_2 },
 	}),
-	i(238124, {	-- Pattern: Embersilk Pants
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(238124, {	-- Pattern: Embersilk Pants (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 		["timeline"] = { ADDED_4_4_2 },
 	}),
-	i(238125, {	-- Pattern: Embersilk Robe
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(238125, {	-- Pattern: Embersilk Robe (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 		["timeline"] = { ADDED_4_4_2 },
 	}),
-	i(238126, {	-- Pattern: Fireweave Cowl
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(238126, {	-- Pattern: Fireweave Cowl (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 		["timeline"] = { ADDED_4_4_2 },
 	}),
-	i(238127, {	-- Pattern: Fireweave Pants
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(238127, {	-- Pattern: Fireweave Pants (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 		["timeline"] = { ADDED_4_4_2 },
 	}),
-	i(238128, {	-- Pattern: Fireweave Robe
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(238128, {	-- Pattern: Fireweave Robe (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 		["timeline"] = { ADDED_4_4_2 },
 	}),
 	-- #endif
-	i(54604, {	-- Pattern: Flame-Ascended Pantaloons
-		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+	i(54604, {	-- Pattern: Flame-Ascended Pantaloons (RECIPE!)
+		["cost"] = {{"i", DREAMCLOTH, 1}},
 	}),
-	i(54605, {	-- Pattern: Illusionary Bag
-		["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
+	i(54605, {	-- Pattern: Illusionary Bag (RECIPE!)
+		["cost"] = {{"i", DREAMCLOTH, 1}},
 	}),
-	i(54600, {	-- Pattern: Powerful Ghostly Spellthread
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(54599, {	-- Pattern: Powerful Enchanted Spellthread (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
-	i(54599, {	-- Pattern: Powerful Enchanted Spellthread
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(54600, {	-- Pattern: Powerful Ghostly Spellthread (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	-- #if ANYCLASSIC
-	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238068, {	-- Pattern: Vicious Embersilk Cowl
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238068, {	-- Pattern: Vicious Embersilk Cowl (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 		["timeline"] = { ADDED_4_4_2 },
 	})),
-	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238069, {	-- Pattern: Vicious Embersilk Pants
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238069, {	-- Pattern: Vicious Embersilk (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 		["timeline"] = { ADDED_4_4_2 },
 	})),
-	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238070, {	-- Pattern: Vicious Embersilk Robe
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238070, {	-- Pattern: Vicious Embersilk Robe (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 		["timeline"] = { ADDED_4_4_2 },
 	})),
-	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238071, {	-- Pattern: Vicious Fireweave Cowl
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238071, {	-- Pattern: Vicious Fireweave Cowl (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 		["timeline"] = { ADDED_4_4_2 },
 	})),
-	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238072, {	-- Pattern: Vicious Fireweave Pants
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238072, {	-- Pattern: Vicious Fireweave Pants (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 		["timeline"] = { ADDED_4_4_2 },
 	})),
-	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238073, {	-- Pattern: Vicious Fireweave Robe
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238073, {	-- Pattern: Vicious Fireweave Robe (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 		["timeline"] = { ADDED_4_4_2 },
 	})),
 	-- #else
-	i(54593, {	-- Pattern: Vicious Embersilk Cowl
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(54593, {	-- Pattern: Vicious Embersilk Cowl (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
-	i(54594, {	-- Pattern: Vicious Embersilk Pants
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(54594, {	-- Pattern: Vicious Embersilk Pants (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
-	i(54595, {	-- Pattern: Vicious Embersilk Robe
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(54595, {	-- Pattern: Vicious Embersilk Robe (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
-	i(54596, {	-- Pattern: Vicious Fireweave Cowl
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(54596, {	-- Pattern: Vicious Fireweave Cowl (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
-	i(54597, {	-- Pattern: Vicious Fireweave Pants
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(54597, {	-- Pattern: Vicious Fireweave Pants (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
-	i(54598, {	-- Pattern: Vicious Fireweave Robe
-		["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
+	i(54598, {	-- Pattern: Vicious Fireweave Robe (RECIPE!)
+		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	-- #endif
 }));

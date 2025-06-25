@@ -954,7 +954,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = CLASSIC_TAILORING,
+						["groups"] = appendGroups(CLASSIC_TAILORING,
+							-- #if AFTER CATA
+							CATA_TAILORING
+							-- #else
+							{}
+							-- #endif
+						),
 					}),
 					n(9584, {	-- Jalane Ayrole <Master Shadoweave Tailor>
 						["coords"] = {

@@ -1739,7 +1739,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						i(70113),	-- Moon Blessed Band
 						i(70142),	-- Moonwell Chalice
 						i(70143),	-- Moonwell Phial
-						i(70176),	-- Pattern: Luxurious Silk Gem Bag
+						i(70176),	-- Pattern: Luxurious Silk Gem Bag (RECIPE!)
 						i(70174),	-- Pattern: Royal Scribe's Satchel (RECIPE!)
 						i(70175),	-- Pattern: Triple-Reinforced Mining Bag (RECIPE!)
 						-- #if BEFORE MOP

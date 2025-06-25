@@ -1059,7 +1059,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = CLASSIC_TAILORING,
+						["groups"] = appendGroups(CLASSIC_TAILORING,
+							-- #if AFTER CATA
+							CATA_TAILORING
+							-- #else
+							{}
+							-- #endif
+						),
 					}),
 				}),
 				n(5817, {	-- Shimra <Trade Supplies>

@@ -785,7 +785,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			i(52388),	-- Design: Zen Jasper
 		}),
 		prof(TAILORING, {
-			i(67541),	-- Pattern: High Society Top Hat (drops from rare elites)
+			i(67541),	-- Pattern: High Society Top Hat (RECIPE!) (drops from rare elites)
 		}),
 	}),
 	filter(REAGENTS, {
