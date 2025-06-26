@@ -1905,940 +1905,246 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					["groups"] = {
 						cl(DRUID, {
 							-- DPS (AGILITY)
-							i(233709, {    -- Genesis Cowl
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233713, {    -- Genesis Spaulders
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233709),	-- Genesis Cowl
+							i(233713),	-- Genesis Spaulders),
 							-- DPS (Intellect)
-							i(233717, {    -- Genesis Mantle
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233718, {    -- Genesis Headdress
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233717),	-- Genesis Mantle),
+							i(233718),	-- Genesis Headdress),
 							-- Healer
-							i(233722, {    -- Genesis Pauldrons
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233723, {    -- Genesis Mask
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233722),	-- Genesis Pauldrons),
+							i(233723),	-- Genesis Mask),
 							-- Tank
-							i(233412, {    -- Genesis Helm
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233413, {    -- Genesis Shoulderpads
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233412),	-- Genesis Helm),
+							i(233413),	-- Genesis Shoulderpads),
 						}),
 						cl(HUNTER, {
 							-- Melee
-							i(233666, {    -- Striker's Visor
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233668, {    -- Striker's Spaulders
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233666),	-- Striker's Visor),
+							i(233668),	-- Striker's Spaulders),
 							-- Ranged
-							i(233409, {    -- Striker's Pauldrons
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233410, {    -- Striker's Diadem
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233409),	-- Striker's Pauldrons),
+							i(233410),	-- Striker's Diadem),
 						}),
 						cl(MAGE, {
 							-- DPS
-							i(233403, {    -- Enigma Shoulderpads
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233404, {    -- Enigma Circlet
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233403),	-- Enigma Shoulderpads),
+							i(233404),	-- Enigma Circlet),
 							-- Healer
-							i(233676, {    -- Enigma Diadem
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233677, {    -- Enigma Mantle
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233676),	-- Enigma Diadem),
+							i(233677),	-- Enigma Mantle),
 						}),
 						cl(PALADIN, {
 							-- DPS
-							i(233398, {    -- Avengers Crown
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233401, {    -- Avengers Pauldrons
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233398),	-- Avengers Crown),
+							i(233401),	-- Avengers Pauldrons),
 							-- Healer
-							i(233684, {    -- Avengers Mantle
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233687, {    -- Avengers Helm
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233684),	-- Avengers Mantle),
+							i(233687),	-- Avengers Helm),
 							-- Tank
-							i(233689, {    -- Avengers Spaulders
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233692, {    -- Avengers Great Helm
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233689),	-- Avengers Spaulders),
+							i(233692),	-- Avengers Great Helm),
 						}),
 						cl(PRIEST, {
 							-- DPS
-							i(233393, {    -- Tiara of the Oracle
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233394, {    -- Mantle of the Oracle
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233393),	-- Tiara of the Oracle),
+							i(233394),	-- Mantle of the Oracle),
 							-- Healer
-							i(233681, {    -- Shoulderpads of the Oracle
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233682, {    -- Crown of the Oracle
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233681),	-- Shoulderpads of the Oracle),
+							i(233682),	-- Crown of the Oracle),
 						}),
 						cl(ROGUE, {
 							-- DPS
-							i(233387, {    -- Deathdealer's Spaulders
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233388, {    -- Deathdealer's Helm
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233387),	-- Deathdealer's Spaulders),
+							i(233388),	-- Deathdealer's Helm),
 							-- Tank
-							i(233661, {    -- Deathdealer's Visor
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233663, {    -- Deathdealer's Pauldrons
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233661),	-- Deathdealer's Visor),
+							i(233663),	-- Deathdealer's Pauldrons),
 						}),
 						cl(SHAMAN, {
-							i(233700, {    -- Stormcaller's Crown
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233702, {    -- Stormcaller's Mantle
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233700),	-- Stormcaller's Crown),
+							i(233702),	-- Stormcaller's Mantle),
 							-- DPS (Intellect)
-							i(233705, {    -- Stormcaller's Headdress
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233707, {    -- Stormcaller's Epaulets
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233705),	-- Stormcaller's Headdress),
+							i(233707),	-- Stormcaller's Epaulets),
 							-- Healer
-							i(233383, {    -- Stormcaller's Pauldrons
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233385, {    -- Stormcaller's Diadem
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233383),	-- Stormcaller's Pauldrons),
+							i(233385),	-- Stormcaller's Diadem),
 							-- Tank
-							i(233695, {    -- Stormcaller's Faceguard
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233697, {    -- Stormcaller's Spaulders
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233695),	-- Stormcaller's Faceguard),
+							i(233697),	-- Stormcaller's Spaulders),
 						}),
 						cl(WARLOCK, {
 							-- DPS
-							i(233379, {    -- Doomcaller's Mantle
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233381, {    -- Doomcaller's Circlet
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233379),	-- Doomcaller's Mantle),
+							i(233381),	-- Doomcaller's Circlet),
 							-- Tank
-							i(233669, {    -- Doomcaller's Headguard
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233671, {    -- Doomcaller's Shoulderpads
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233669),	-- Doomcaller's Headguard),
+							i(233671),	-- Doomcaller's Shoulderpads),
 						}),
 						cl(WARRIOR, {
 							-- DPS
-							i(233653, {    -- Conqueror's Helm
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233658, {    -- Conqueror's Pauldrons
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233653),	-- Conqueror's Helm),
+							i(233658),	-- Conqueror's Pauldrons),
 							-- Tank
-							i(233375, {    -- Conqueror's Crown
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
-							i(233376, {    -- Conqueror's Spaulders
-								["cost"] = {
-									{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233375),	-- Conqueror's Crown),
+							i(233376),	-- Conqueror's Spaulders),
 						}),
 					},
 				}),
 				n(15503, {	-- Kandrostrasz (LEGS AND BOOTS)
 					["groups"] = {
 						cl(DRUID, {
-							i(233710, {    -- Genesis Leather Pants
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233712, {    -- Genesis Stompers
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233710),	-- Genesis Leather Pants
+							i(233712),	-- Genesis Stompers
 							-- DPS (Intellect)
-							i(233714, {    -- Genesis Leggings
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233716, {    -- Genesis Treads
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233714),	-- Genesis Leggings
+							i(233716),	-- Genesis Treads
 							-- Healer
-							i(233719, {    -- Genesis Breeches
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233721, {    -- Genesis Greaves
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233719),	-- Genesis Breeches
+							i(233721),	-- Genesis Greaves
 							-- Tank
-							i(233414, {    -- Genesis Boots
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233416, {    -- Genesis Trousers
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233414),	-- Genesis Boots
+							i(233416),	-- Genesis Trousers
 						}),
 						cl(HUNTER, {
 							-- Melee
-							i(233665, {    -- Striker's Treads
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233667, {    -- Striker's Chain Legplates
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233665),	-- Striker's Treads
+							i(233667),	-- Striker's Chain Legplates
 							-- Ranged
-							i(233407, {    -- Striker's Footguards
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233408, {    -- Striker's Leggings
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233407),	-- Striker's Footguards
+							i(233408),	-- Striker's Leggings
 						}),
 						cl(MAGE, {
 							-- DPS
-							i(233405, {    -- Enigma Boots
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233406, {    -- Enigma Leggings
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233405),	-- Enigma Boots
+							i(233406),	-- Enigma Leggings
 							-- Healer
-							i(233674, {    -- Enigma Pants
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233675, {    -- Enigma Slippers
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233674),	-- Enigma Pants
+							i(233675),	-- Enigma Slippers
 						}),
 						cl(PALADIN, {
 							-- DPS
-							i(233399, {    -- Avengers' Greaves
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233400, {    -- Avengers' Legguards
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233399),	-- Avengers' Greaves
+							i(233400),	-- Avengers' Legguards
 							-- Healer
-							i(233685, {    -- Avengers' Plate Pants
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233686, {    -- Avengers' Treads
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233685),	-- Avengers' Plate Pants
+							i(233686),	-- Avengers' Treads
 							-- Tank
-							i(233690, {    -- Avengers' Tassets
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233691, {    -- Avengers' Sabatons
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233690),	-- Avengers' Tassets
+							i(233691),	-- Avengers' Sabatons
 						}),
 						cl(PRIEST, {
 							-- DPS
-							i(233392, {    -- Footwraps of the Oracle
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233396, {    -- Trousers of the Oracle
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233392),	-- Footwraps of the Oracle
+							i(233396),	-- Trousers of the Oracle
 							-- Healer
-							i(233679, {    -- Leggings of the Oracle
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233683, {    -- Slippers of the Oracle
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233679),	-- Leggings of the Oracle
+							i(233683),	-- Slippers of the Oracle
 						}),
 						cl(ROGUE, {
 							-- DPS
-							i(233390, {    -- Deathdealer's Leggings
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233391, {    -- Deathdealer's Boots
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233390),	-- Deathdealer's Leggings
+							i(233391),	-- Deathdealer's Boots
 							-- Tank
-							i(233660, {    -- Deathdealer's Treads
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233662, {    -- Deathdealer's Pants
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233660),	-- Deathdealer's Treads
+							i(233662),	-- Deathdealer's Pants
 						}),
 						cl(SHAMAN, {
 							-- DPS (Agility)
-							i(233701, {    -- Stormcaller's Treads
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233703, {    -- Stormcaller's Chain Leggings
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233701),	-- Stormcaller's Treads
+							i(233703),	-- Stormcaller's Chain Leggings
 							-- DPS (Intellect)
-							i(233706, {    -- Stormcaller's Greaves
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233708, {    -- Stormcaller's Mail Leggings
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-
+							i(233706),	-- Stormcaller's Greaves
+							i(233708),	-- Stormcaller's Mail Leggings
 							-- Healer
-							i(233382, {    -- Stormcaller's Leggings
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 	--
-									-- { "i", 231797, 1 },	-- 	--
-									-- { "i", 231797, 1 },	-- 	--
-								},
-							}),
-							i(233384, {    -- Stormcaller's Footguards
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 	--
-									-- { "i", 231797, 1 },	-- 	--
-									-- { "i", 231797, 1 },	-- 	--
-								},
-							}),
-
+							i(233382),	-- Stormcaller's Leggings
+							i(233384),	-- Stormcaller's Footguards
 							-- Tank
-							i(233698, {    -- Stormcaller's Legplates
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233701, {    -- Stormcaller's Treads
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233698),	-- Stormcaller's Legplates
+							i(233701),	-- Stormcaller's Treads
 						}),
 						cl(WARLOCK, {
 							-- DPS
-							i(233377, {    -- Doomcaller's Footwraps
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 	--
-									-- { "i", 231797, 1 },	-- 	--
-									-- { "i", 231797, 1 },	-- 	--
-								},
-							}),
-							i(233378, {    -- Doomcaller's Trousers
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 	--
-									-- { "i", 231797, 1 },	-- 	--
-									-- { "i", 231797, 1 },	-- 	--
-								},
-							}),
-
+							i(233377),	-- Doomcaller's Footwraps
+							i(233378),	-- Doomcaller's Trousers
 							-- Tank
-							i(233377, {    -- Doomcaller's Footwraps
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233378, {    -- Doomcaller's Trousers
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
+							i(233377),	-- Doomcaller's Footwraps
+							i(233378),	-- Doomcaller's Trousers
 						}),
 						cl(WARRIOR, {
 							-- DPS
-							i(233652, {    -- Conqueror's Sabatons
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-							i(233654, {    -- Conqueror's Tassets
-								["cost"] = {
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-									-- { "i", 231797, 1 },	--
-								},
-							}),
-
+							i(233652),	-- Conqueror's Sabatons
+							i(233654),	-- Conqueror's Tassets
 							-- Tank
-							i(233372, {    -- Conqueror's Greaves
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 	--
-									-- { "i", 231797, 1 },	-- 	--
-									-- { "i", 231797, 1 },	-- 	--
-								},
-							}),
-							i(233374, {    -- Conqueror's Legguards
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 	--
-									-- { "i", 231797, 1 },	-- 	--
-									-- { "i", 231797, 1 },	-- 	--
-								},
-							}),
+							i(233372),	-- Conqueror's Greaves
+							i(233374),	-- Conqueror's Legguards
 						}),
 					},
 				}),
 				n(15504, {	-- Vethsera <Brood of Ysera> (CHEST)
 					["groups"] = {
 						cl(DRUID, {
-							i(233711, {    -- Genesis Armor
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233711),	-- Genesis Armor
 							-- DPS (Intellect)
-							i(233715, {    -- Genesis Leathers
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233715),	-- Genesis Leathers
 							-- Healer
-							i(233415, {    -- Genesis Vest
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233415),	-- Genesis Vest
 							-- Tank
-							i(233720, {    -- Genesis Chestguard
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233720),	-- Genesis Chestguard
 						}),
 						cl(HUNTER, {
 							-- Melee
-							i(233664, {    -- Striker's Ringmail
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233664),	-- Striker's Ringmail
 							-- Ranged
-							i(233411, {    -- Striker's Hauberk
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233411),	-- Striker's Hauberk
 						}),
 						cl(MAGE, {
 							-- DPS
-							i(233402, {    -- Enigma Robes
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233402),	-- Enigma Robes
 							-- Healer
-							i(233678, {    -- Enigma Garb
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233678),	-- Enigma Garb
 						}),
 						cl(PALADIN, {
 							-- DPS
-							i(233397, {    -- Avengers Breastplate
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233397),	-- Avengers Breastplate
 							-- Healer
-							i(233688, {    -- Avengers Cuirass
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233688),	-- Avengers Cuirass
 							-- Tank
-							i(233693, {    -- Avengers Chestguard
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233693),	-- Avengers Chestguard
 						}),
 						cl(PRIEST, {
 							-- DPS
-							i(233395, {    -- Vestments of the Oracle
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233395),	-- Vestments of the Oracle
 							-- Healer
-							i(233680, {    -- Robes of the Oracle
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233680),	-- Robes of the Oracle
 						}),
 						cl(ROGUE, {
 							-- DPS
-							i(233389, {    -- Deathdealer's Vest
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233389),	-- Deathdealer's Vest
 							-- Tank
-							i(233659, {    -- Deathdealer's Chestguard
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233659),	-- Deathdealer's Chestguard
 						}),
 						cl(SHAMAN, {
 							-- DPS (Agility)
-							i(233699, {    -- Stormcaller's Breastplate
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233699),	-- Stormcaller's Breastplate
 							-- DPS (Intellect)
-							i(233704, {    -- Stormcaller's Embrace
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233704),	-- Stormcaller's Embrace
 							-- Healer
-							i(233386, {    -- Stormcaller's Hauberk
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233386),	-- Stormcaller's Hauberk
 							-- Tank
-							i(233694, {    -- Stormcaller's Chestguard
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233694),	-- Stormcaller's Chestguard
 						}),
 						cl(WARLOCK, {
 							-- DPS
-							i(233380, {    -- Doomcaller's Robes
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233380),	-- Doomcaller's Robes
 							-- Tank
-							i(233670, {    -- Doomcaller's Garb
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233670),	-- Doomcaller's Garb
 						}),
 						cl(WARRIOR, {
 							-- DPS
-							i(233651, {    -- Conqueror's Cuirass
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233651),	-- Conqueror's Cuirass
 							-- Tank
-							i(233373, {    -- Conqueror's Breastplate
-								["cost"] = {
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-									--{ "i", 231797, 1 }, --
-								},
-							}),
+							i(233373),	-- Conqueror's Breastplate
 						}),
 					},
 				}),

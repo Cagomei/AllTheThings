@@ -210,9 +210,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					i(16967, {	-- Feralas Ahi
 						["coords"] = {
 							-- #if BEFORE 4.0.3
-							{ 62.0, 52.0, FERALAS },
+							{ 62.0, 52.0, FERALAS },	-- Verdantis River
 							-- #else
-							{ 62.9, 51.5, FERALAS },
+							{ 62.9, 51.5, FERALAS },	-- Verdantis River
 							-- #endif
 						},
 						["description"] = "Best fished at the given coords.",

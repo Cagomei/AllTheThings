@@ -68,6 +68,9 @@ local ALL_REGULAR_DELVES = {
 	EXCAVATION_SITE_9,
 	SIDESTREET_SLUICE,
 	-- #endif
+	-- #if AFTER 11.1.0
+	ARCHIVAL_ASSAULT,
+	-- #endif
 };
 local ALL_THE_DELVES = {
 	EARTHCRAWL_MINES,
@@ -87,6 +90,10 @@ local ALL_THE_DELVES = {
 	DEMOLITION_DOME,
 	EXCAVATION_SITE_9,
 	SIDESTREET_SLUICE,
+	-- #endif
+	-- #if AFTER 11.1.0
+	ARCHIVAL_ASSAULT,
+	DELVE_ETHEREAL_KYVEZA,
 	-- #endif
 };
 local mapped = function(t)
@@ -227,9 +234,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		})),
 	}),
-	n(DELVES_TWW_S3, {
+	n(DELVES_TWW_S3, {	-- Includes Voidrazor Sanctuary
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 			ach(42801),	-- Journey's End (Season 3)
+			ach(42799),	-- Let Her Solo Me
 			ach(42196),	-- War Within Delves: Tier 4 (Season 3)
 			ach(42197),	-- War Within Delves: Tier 5 (Season 3)
 			ach(42198),	-- War Within Delves: Tier 6 (Season 3)
@@ -240,6 +248,18 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			ach(42203),	-- War Within Delves: Tier 11 (Season 3)
 		})),
 		-- TWW Season 3 Boss
+		m(DELVE_ETHEREAL_KYVEZA, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {
+			["icon"] = [[~_.asset("Delves_Shadow")]],
+			--["maps"] = { X },
+			--["coord"] = { X, Y, Z },
+			["g"] = {
+				n(ACHIEVEMENTS, {
+					ach(42190),	-- Let Me Solo Her: Nexus-Princess Ky'veza
+					ach(42193),	-- My Stab-Happy Nemesis
+					ach(42194),	-- Pruning the Princess
+				}),
+			},
+		})),
 	}),
 	n(ACHIEVEMENTS, {
 		ach(40817, {	-- A Delver's Bounty
@@ -724,11 +744,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		ach(40455, {	-- Buddy System
 			["maps"] = ALL_THE_DELVES,
 		}),
-		ach(42212, {	-- Titan Console Overcharged
-			["maps"] = OVERCHARGED_DELVES,
-			["timeline"] = { ADDED_11_1_7 },
-			["g"] = { i(246237) },	-- OC91 Chariot (MOUNT!)
-		}),
 		ach(40882, {	-- Copious Coffers
 			["maps"] = ALL_REGULAR_DELVES,
 			["g"] = {
@@ -922,6 +937,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		ach(40819, {	-- Ready to Turn
 			["maps"] = ALL_REGULAR_DELVES,
 		}),
+		ach(42678, {	-- So That's Where My Manaflux Capacitor Was!
+			["timeline"] = { ADDED_11_2_0_SEASONSTART },
+		}),
 		ach(40453, {	-- Spider Senses
 			["maps"] = NERUBIAN_DELVES,
 		}),
@@ -938,6 +956,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					["timeline"] = { ADDED_11_1_0 },
 				}),
 			},
+		}),
+		ach(42677, {	-- This Machine Flies?! Don't Care I Got It!
+			["timeline"] = { ADDED_11_2_0_SEASONSTART },
+		}),
+		ach(42212, {	-- Titan Console Overcharged
+			["maps"] = OVERCHARGED_DELVES,
+			["timeline"] = { ADDED_11_1_7 },
+			["g"] = { i(246237) },	-- OC91 Chariot (MOUNT!)
 		}),
 		ach(40100, {	-- Undying Caver
 			["maps"] = ALL_REGULAR_DELVES,
@@ -2631,6 +2657,27 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	mapped(n(ZONE_DROPS, {
 		i(225692),	-- Glowglow Cap (sturdy chest)
 		i(236668),	-- C.H.E.T.T. Card
+	})),
+	m(ARCHIVAL_ASSAULT, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
+		["icon"] = [[~_.asset("Delves_Shadow")]],
+		--["coord"] = { X, Y, Z },
+		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(42679),	-- Archival Assault Discoveries
+				ach(42771, {	-- Archival Assault Stories
+					crit(106401),	-- Relic Retrieval
+					crit(106402),	-- Shadowed Wings
+					crit(106403),	-- Smash and Jab
+					crit(106404),	-- Waygate Wiles
+				}),
+			}),
+			n(TREASURES, {
+				-- TODO: Add treasure data
+				q(83692),
+				q(90839),
+				q(83673),
+			}),
+		},
 	})),
 	m(EARTHCRAWL_MINES, {
 		["icon"] = [[~_.asset("Delves_Nerubian")]],

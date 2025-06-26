@@ -34,16 +34,7 @@
 -- #IMPORT: 06 - Expansion Features\\05 - Mists of Pandaria\\
 
 -- World Events
--- #IMPORT: 07 - Events\\Brawler's Guild\\
--- #IMPORT: 07 - Events\\Elemental Unrest\\
--- #IMPORT: 07 - Events\\Operation Gnomeregan\\
--- #IMPORT: 07 - Events\\Plunderstorm\\
--- #IMPORT: 07 - Events\\The Ahn'Qiraj War Effort\\
--- #IMPORT: 07 - Events\\The Opening of the Dark Portal\\
--- #IMPORT: 07 - Events\\The Scepter of the Shifting Sands\\
--- #IMPORT: 07 - Events\\The Scourge Invasion\\
--- #IMPORT: 07 - Events\\The Silithyst Must Flow\\
--- #IMPORT: 07 - Events\\Zalazane's Fall\\
+-- #IMPORT: 07 - Events\\
 
 -- Craftables
 -- #IMPORT: 09 - Crafted Items\\01 - Classic.lua

@@ -373,31 +373,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						["_encounter"] = { DIMENSIUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				}),
-				ach(41600, {	-- Mythic: Manaforge Omega
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						41604,	-- Mythic: Plexus Sentinel
-						41605,	-- Mythic: Loom'ithar
-						41606,	-- Mythic: Soulbinder Naazindhri
-						41607,	-- Mythic: Forgeweaver Araz
-						41608,	-- Mythic: The Soul Hunters
-						41609,	-- Mythic: Fractillus
-						41610,	-- Mythic: Nexus-King Salhadaar
-						41611,	-- Mythic: Dimensius, the All-Devouring
-					}},
-				}),
-				ach(41597, {	-- Glory of the Omega Raider
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						ach(42118),	-- Of Mice and Manaforges
-						ach(41613),	-- Time to Vote! Cute or Scary?
-						ach(41614),	-- Mother of All Tantrums
-						ach(41615),	-- Cheat Meal
-						ach(41616),	-- I See... Absolutely Nothing
-						ach(41617),	-- Breaking the Fourth Wall
-						ach(41618),	-- Swing and a Miss
-						ach(41619),	-- Defying Gravity
-					}},
+				ach(41600),	-- Mythic: Manaforge Omega (automated)
+				ach(41597, {	-- Glory of the Omega Raider (automated)
 					--[[
 					["g"] = {
 

@@ -113,7 +113,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 55.8, 24.5, DARNASSUS },
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_ALCHEMY_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_ALCHEMY_VIALS, {
 							i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						["sym"] = {{"sub", "common_recipes_vendor", 49701}},	-- Jon Casper <Sous Chef>
 						-- #endif
-						["groups"] = appendGroups(VANILLA_COOKING_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						}),
@@ -229,13 +229,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 					n(4222, {	-- Voloren <Fishing Supplies>
-						-- #if AFTER CATA
-						["coord"] = { 48.44, 61.2, DARNASSUS },
-						-- #else
-						["coord"] = { 46.9, 56.9, DARNASSUS },
-						-- #endif
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 48.44, 61.2, DARNASSUS },
+							-- #else
+							{ 46.9, 56.9, DARNASSUS },
+							-- #endif
+						},
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = FISHING_SUPPLIES,
+					}),
+				}),
+				prof(HERBALISM, {
+					n(4216, {	-- Chardryn <Herbalism Supplies>
+						["coord"] = { 49.55, 69.44, DARNASSUS },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = HERB_POUCH,
 					}),
 				}),
 				prof(JEWELCRAFTING, {

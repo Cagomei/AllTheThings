@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_ALCHEMY_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_ALCHEMY_VIALS, {
 							i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -166,6 +166,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["isLimited"] = true,
 							}),
 						}),
+					}),
+					n(5817, {	-- Shimra <Trade Supplies>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 54.0, 81.87, ORGRIMMAR },
+							-- #else
+							{ 47.8, 80.5, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = VANILLA_ALCHEMY_VIALS,
 					}),
 					n(3347, {	-- Yelmak <Alchemy Trainer>
 						["coord"] = { 55.6, 46.6, ORGRIMMAR },
@@ -265,7 +276,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 41.0, 79.4, ORGRIMMAR },
 						["timeline"] = { ADDED_7_3_5 },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_COOKING_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						}),
@@ -336,7 +347,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 56.6, 61.2, ORGRIMMAR },
 						["timeline"] = { ADDED_4_0_1 },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_COOKING_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						}),
@@ -350,7 +361,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_COOKING_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						}),
@@ -585,6 +596,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						),
 					}),
+					-- #if AFTER CATA
+					n(46742, {	-- Brunda <Herbalism Supplies>
+						["coord"] = { 54.6, 50.6, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_4_0_1 },
+						["groups"] = HERB_POUCH,
+					}),
+					-- #else
+					n(3405, {	-- Zeal'aya <Herbalism Supplies>
+						["coord"] = { 55.0, 39.6, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = HERB_POUCH,
+					}),
+					-- #endif
 				}),
 				prof(INSCRIPTION, {
 					n(30706, {	-- Jo'mah <Inscription Trainer>
@@ -1067,17 +1092,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						),
 					}),
-				}),
-				n(5817, {	-- Shimra <Trade Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 54.0, 81.87, ORGRIMMAR },
-						-- #else
-						{ 47.8, 80.5, ORGRIMMAR },
-						-- #endif
-					},
-					["races"] = HORDE_ONLY,
-					["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
 				}),
 			}),
 			n(QUESTS, {

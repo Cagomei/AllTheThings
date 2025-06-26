@@ -1995,6 +1995,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(VENDORS, {
+				n(16367, {	-- Botanist Tyniarrel <Herbalism Trainer & Supplies>
+					["coord"] = { 37.4, 71.96, EVERSONG_WOODS },
+					["races"] = HORDE_ONLY,
+					["groups"] = HERB_POUCH,
+				}),
 				n(18951, {	-- Erilia <Enchanting Vendor>
 					["coord"] = { 56.2, 54.6, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,

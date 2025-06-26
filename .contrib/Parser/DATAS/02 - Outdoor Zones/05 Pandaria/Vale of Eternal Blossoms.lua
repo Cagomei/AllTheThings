@@ -519,8 +519,6 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							33229,	-- A Flash of Bronze...	(Alliance)
 							33230,	-- A Flash of Bronze...	(Horde)
-							37188,	-- A Flash of Bronze...	(NYI)
-							37194,	-- A Flash of Bronze...	(NYI)
 						},
 					}),
 					q(33232, {	-- Journey to the Timeless Isle
@@ -530,8 +528,6 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							33229,	-- A Flash of Bronze...	(Alliance)
 							33230,	-- A Flash of Bronze...	(Horde)
-							37188,	-- A Flash of Bronze...	(NYI)
-							37194,	-- A Flash of Bronze...	(NYI)
 						},
 						["groups"] = {
 							i(104110),	-- Curious Bronze Timepiece (QI!)
@@ -1800,19 +1796,19 @@ root(ROOTS.Zones, {
 							}, {	-- Honored
 								i(86235),	-- Pattern: Angerhide Leg Armor (RECIPE!)
 								i(86237),	-- Pattern: Chestguard of Earthen Harmony (RECIPE!)
-								i(86371),	-- Pattern: Gloves of Creation
+								i(86371),	-- Pattern: Gloves of Creation (RECIPE!)
 								i(86273),	-- Pattern: Gloves of Earthen Harmony (RECIPE!)
-								i(86376),	-- Pattern: Greater Cerulean Spellthread
-								i(86375),	-- Pattern: Greater Pearlescent Spellthread
+								i(86376),	-- Pattern: Greater Cerulean Spellthread (RECIPE!)
+								i(86375),	-- Pattern: Greater Pearlescent Spellthread (RECIPE!)
 								i(86274),	-- Pattern: Greyshadow Chestguard (RECIPE!)
 								i(86275),	-- Pattern: Greyshadow Gloves (RECIPE!)
 								i(86276),	-- Pattern: Ironscale Leg Armor (RECIPE!)
 								i(86277),	-- Pattern: Lifekeeper's Gloves (RECIPE!)
 								i(86278),	-- Pattern: Lifekeeper's Robe (RECIPE!)
-								i(86370),	-- Pattern: Robes of Creation
+								i(86370),	-- Pattern: Robes of Creation (RECIPE!)
 								i(86295),	-- Pattern: Shadowleather Leg Armor (RECIPE!)
-								i(86369),	-- Pattern: Spelltwister's Gloves
-								i(86368),	-- Pattern: Spelltwister's Grand Robe
+								i(86369),	-- Pattern: Spelltwister's Gloves (RECIPE!)
+								i(86368),	-- Pattern: Spelltwister's Grand Robe (RECIPE!)
 								i(86308),	-- Pattern: Wildblood Gloves (RECIPE!)
 								i(86309),	-- Pattern: Wildblood Vest (RECIPE!)
 							}, {	-- Revered
@@ -2019,7 +2015,7 @@ root(ROOTS.Zones, {
 								i(93224),	-- Grand Commendation of the August Celestials
 							}, {	-- Exalted
 								i(89799),	-- August Celestials Tabard
-								i(86377),	-- Pattern: Royal Satchel
+								i(86377),	-- Pattern: Royal Satchel (RECIPE!)
 								i(89304, {	-- Reins of the Thundering August Cloud Serpent (MOUNT!)
 									["cost"] = 100000000,	-- 10,000g
 								}),
@@ -2081,7 +2077,7 @@ root(ROOTS.Zones, {
 								i(93224),	-- Grand Commendation of the August Celestials
 							}, {	-- Exalted
 								i(89799),	-- August Celestials Tabard
-								i(86377),	-- Pattern: Royal Satchel
+								i(86377),	-- Pattern: Royal Satchel (RECIPE!)
 								i(89304, {	-- Reins of the Thundering August Cloud Serpent (MOUNT!)
 									["cost"] = 100000000,	-- 10,000g
 								}),

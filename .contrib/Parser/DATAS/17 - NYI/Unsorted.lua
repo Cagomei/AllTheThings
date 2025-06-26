@@ -3294,7 +3294,6 @@ root(ROOTS.Unsorted, {
 				i(163088),	-- Perfectly Ordinary Broomstick
 				i(163089),	-- Long-Stemmed Pipe
 				i(163090),	-- Cured Billow-Weed
-				i(163091),	-- Jeweled Spyglass
 				i(163092),	-- Embroidered Falconry Hood
 				i(163093),	-- Witch's Ritual Chalk
 				i(163095),	-- Golden Troll Berserker \\ Finely Crafted Tin Soldier
@@ -3519,7 +3518,6 @@ root(ROOTS.Unsorted, {
 				i(158867),	-- Needlepoint Bill \\ PH Flavor - Ranishu
 				i(158869),	-- Stone Tusk \\ PH Flavor - Venture Co
 				i(158871),	-- Autographed Painting of Anduin \\ PH Flavor - Unused \\ PH Flavor - Troll Skeleton
-				i(158872),	-- Unstable Essence \\ Tough Sinew \\ PH Flavor - Troll - Sandfury
 				i(158873),	-- Crystalline Honeymead \\ PH Flavor - Dire Troll Female - Blood Troll
 				i(156624),	-- Blemished Pearl
 				i(158727),	-- Decayed Equipment
@@ -3680,7 +3678,6 @@ root(ROOTS.Unsorted, {
 				i(162516),	-- Rasboralus
 				i(162517),	-- U'taka
 				i(163203),	-- Hypersensitive Azeritometer Sensor
-				i(163569),	-- Insulated Wiring
 				i(163783),	-- Mount Mugamba Spring Water \\ Mount Mugaba Spring Water
 				i(163784),	-- Seafoam Coconut Water
 				i(163785),	-- Canteen of Rivermarsh Rainwater
@@ -4363,7 +4360,6 @@ root(ROOTS.Unsorted, {
 			i(168245),	-- Forgotten Memento
 			i(168255),	-- Bundle of Corroded Parts
 			i(168258),	-- Bundle of Recyclable Parts
-			i(168262),	-- Sentry Fish
 			i(168263),	-- Mundane Recycling Requisition
 			i(168356),	-- PH - Nazjatar - Mail HEAD 3
 			i(168392),	-- Skate Sushi \\ Jinyu Sushi
@@ -4413,7 +4409,6 @@ root(ROOTS.Unsorted, {
 			i(169122),	-- Gibraltian Monkey Wrench
 			i(169125),	-- Sonic Drive Screw
 			i(169126),	-- Supercharged Graphics Cog
-			i(169127),	-- Tastefully Scented Grease
 			i(169143),	-- Seized Sparksaw
 			i(169146),	-- Brittle Thrust Booster
 			i(169190),	-- Blueprint: Mega-Sized Spare Parts \\ Blueprint: TK45
@@ -4542,12 +4537,10 @@ root(ROOTS.Unsorted, {
 			i(170015),	-- Inert Rock
 			i(170016),	-- Dark Craggy Rock
 			i(170017),	-- Cracked Titan Disc
-			i(170021),	-- Inert Slivers
 			i(170025),	-- Burst Seed Pod
 			i(170026),	-- Seed Husks
 			i(170027),	-- Withering Seed
 			i(170028),	-- Fading Seed Bud
-			i(170029),	-- Cracked Tablet
 			i(170030),	-- Burned Codex
 			i(170031),	-- Moldy Tome
 			i(170032),	-- Crumbling Vellum

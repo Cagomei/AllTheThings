@@ -4621,7 +4621,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 		}),
 		-- From trolls:
-		i(12804, {
+		i(12804, {	-- Powerful Mojo
 			-- #if BEFORE 4.0.3
 			["coord"] = { 72.0, 15.0, EASTERN_PLAGUELANDS },	-- Zul'mashar
 			-- #endif
@@ -4630,6 +4630,17 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				LOWER_BLACKROCK_SPIRE,
 				ZULGURUB,
 			},
+		}),
+		i(8153, {	-- Wildvine
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from trolls ranging from level 40 to 50.",
+			["maps"] = {
+				STRANGLETHORN_VALE,
+				THE_HINTERLANDS,
+			},
+			-- #else
+			["description"] = "Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source.",
+			-- #endif
 		}),
 		-- Black Diamonds:
 		i(11754, {["maps"] = { BLACKROCK_DEPTHS }, }),	-- Black Diamond

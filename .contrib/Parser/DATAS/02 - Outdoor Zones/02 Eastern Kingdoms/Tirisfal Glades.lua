@@ -2908,6 +2908,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				n(3548, {	-- Selina Weston <Alchemy & Herbalism Supplies>
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 59.64, 52.25, TIRISFAL_GLADES },
+						-- #else
+						{ 61.8, 50.0, TIRISFAL_GLADES },
+						-- #endif
+					},
+					["races"] = HORDE_ONLY,
+					["groups"] = appendGroups(HERB_POUCH, VANILLA_ALCHEMY_VIALS, VANILLA_HERBS_1, VANILLA_HERBS_2, {}),
+				}),
 				n(12943, {	-- Werg Thickblade <Leatherworking Supplies>
 					["coords"] = {
 						-- #if AFTER CATA

@@ -56,6 +56,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH 
 					["g"] = appendGroups(BFA_ENGINEERING, {
 						r(264492),	-- Kul Tiran Engineering
 						i(160502),	-- Chemical Blasting Cap
+						i(163569),	-- Insulated Wiring
 					}),
 				}),
 			}),

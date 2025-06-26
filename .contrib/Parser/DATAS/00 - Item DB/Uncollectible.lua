@@ -347,11 +347,13 @@ i(158806);	-- Hooked Talon
 i(155600);	-- How to Make Money and Influence Subordinates
 i(155605);	-- Huge Femur
 i(163842);	-- Inert Hearthstone
+i(170021);	-- Inert Slivers
 i(155631);	-- Inert Stone
 i(158749);	-- Intricate Ossicles
 i(157844);	-- Iridescent Speck
 i(158830);	-- Jade Sigilstone
 i(158859);	-- Jagged Fang
+i(163091);	-- Jeweled Spyglass
 i(163323);	-- Julie's Cracked Dish
 i(155593);	-- Keeled Breastbone
 i(162673);	-- Knotted Bowline
@@ -397,6 +399,7 @@ i(158771);	-- Spirit Ichor
 i(158848);	-- Spoiled Feast
 i(155609);	-- Springy Eyeball
 i(155610);	-- Stinging Nettle
+i(169127);	-- Tastefully Scented Grease
 i(158746);	-- Tattered White Flag
 i(161200);	-- Teardrop Pearl
 i(158861);	-- Tensile Eye Stalk
@@ -405,6 +408,7 @@ i(158775);	-- Thick Hivewax
 i(158747);	-- Thorny Prickle
 i(158754);	-- Trueflight Fletching
 i(155844);	-- Unreliable Lodestone
+i(158872);	-- Unstable Essence
 i(163851);	-- Venerated Golden Censer
 i(158796);	-- Venomous Tentacle
 i(155636);	-- Viscous Ink
@@ -430,6 +434,7 @@ i(170086);	-- Coral-Flecked Chalice
 i(170099);	-- Corroded Elegant Key
 i(169997);	-- Cracked Aegis
 i(169132);	-- Cracked Gyroscope
+i(170029);	-- Cracked Tablet
 i(169124);	-- Decorational Whirlycog
 i(170097);	-- Discarded Quel'dorei Tome
 i(169149);	-- Dulled Micro-Serrated Incisor

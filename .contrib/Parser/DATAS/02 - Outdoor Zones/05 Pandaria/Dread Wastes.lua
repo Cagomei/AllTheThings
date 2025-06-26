@@ -270,6 +270,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 45.3, 16.4, DREAD_WASTES },
 						["provider"] = { "n", 155582 },	-- Taoshi
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 56616,	-- Old Faces, New Problems
 						["groups"] = {
 							objective(1, {	-- 0/5 Corrupted Amber Destroyed
@@ -303,6 +304,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 45.3, 16.4, DREAD_WASTES },
 						["provider"] = { "n", 155582 },	-- Taoshi
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuests"] = {
 							56577,	-- Crippling the Hive
 							56575,	-- Once More Into Kor'vess
@@ -503,6 +505,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 44.8, 19.1, DREAD_WASTES },
 						["provider"] = { "n", 155562 },	-- Shado-Pan Master (Taoshi follower)
+						["timeline"] = { ADDED_8_3_0 },
 						["description"] = "Must be on or have completed |cFFFFD700Once More Into Kor'vess|r to get this quest.",
 						["sourceQuest"] = 56574,	-- Reflections in Amber
 					}),
@@ -796,6 +799,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 53.2, 39.5, DREAD_WASTES },
 						["provider"] = { "n", 155707 },	-- Taoshi
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 56617,	-- A Unified Swarm
 					}),
 					heroscall(q(49561, {	-- Hero's Call: Dread Wastes!
@@ -988,6 +992,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 45.3, 16.4, DREAD_WASTES },
 						["provider"] = { "n", 155582 },	-- Taoshi
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuests"] = {
 							56580,	-- Amber Secrets
 							56578,	-- Rotten at the Roots
@@ -1147,6 +1152,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 43.1, 13.0, DREAD_WASTES },	-- can really be picked up anywhere
 						["provider"] = { "n", 155562 },	-- Shadow-Pan Master (Taoshi follower)
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuests"] = {
 							56577,	-- Crippling the Hive
 							56575,	-- Once More Into Kor'vess

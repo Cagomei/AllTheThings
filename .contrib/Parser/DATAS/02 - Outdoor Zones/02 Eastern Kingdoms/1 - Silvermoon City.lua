@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					n(16641, {	-- Melaris <Alchemy Supplies>
 						["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_ALCHEMY_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_ALCHEMY_VIALS, VANILLA_HERBS_1, VANILLA_HERBS_2, VANILLA_HERBS_3, {
 							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -51,10 +51,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							}),
 						}),
 					}),
+					n(16613, {	-- Parnis <Tradesman>
+						["coord"] = { 64.9, 64.7, SILVERMOON_CITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = VANILLA_ALCHEMY_VIALS,
+					}),
 					n(16612, {	-- Velanni <Alchemy Supplies & Reagents>
 						["coord"] = { 68.95, 66.8, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
+						["groups"] = VANILLA_ALCHEMY_VIALS,
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -91,7 +96,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					n(16677, {	-- Quelis <Cooking Supplies>
 						["coord"] = { 69.6, 71.2, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(QUELIS_GROUPS, VANILLA_COOKING_VENDOR_REAGENTS, {}),
+						["groups"] = appendGroups(QUELIS_GROUPS, VANILLA_COOKING_SUPPLIES, {}),
 					}),
 					n(16442, {	-- Vinemaster Suntouched <Wine & Spirits Merchant>
 						["coord"] = { 79.5, 58.5, SILVERMOON_CITY },
@@ -212,11 +217,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							i(21897),	-- Pattern: Netherweave Tunic (RECIPE!)
 						}),
 					}),
-				}),
-				n(16613, {	-- Parnis <Tradesman>
-					["coord"] = { 64.9, 64.7, SILVERMOON_CITY },
-					["races"] = HORDE_ONLY,
-					["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
 				}),
 			}),
 			n(QUESTS, {

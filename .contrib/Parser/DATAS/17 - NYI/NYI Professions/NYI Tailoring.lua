@@ -567,7 +567,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 				i(114867),	-- Pattern: Miniature Flying Carpet - NYI
 				r(168851),	-- Miniature Flying Carpet
-				i(114872),	-- Pattern: Greater Hexweave Essence
+
 				r(169669),	-- Pattern: Hexweave Cloth
 				i(118098),	-- Pattern: Murloc Chew Toy
 				r(173415),	-- Murloc Chew Toy

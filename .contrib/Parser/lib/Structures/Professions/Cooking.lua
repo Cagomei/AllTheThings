@@ -62,7 +62,7 @@ CLASSIC_COOKING = {
 	r(3399, {["timeline"] = {ADDED_4_0_3}}),	-- Tasty Lion Steak
 	r(93741, {["timeline"] = {ADDED_4_0_3}}),	-- Venison Jerky
 };
-VANILLA_COOKING_VENDOR_REAGENTS = {
+VANILLA_COOKING_SUPPLIES = {
 	i(159),	-- Refreshing Spring Water
 	i(30817),	-- Simple Flour
 	i(2678),	-- Mild Spices

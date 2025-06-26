@@ -778,15 +778,20 @@ end
 local AttachTypicalSearchResults
 do
 	local DefaultSearchOptions = { AppendSearchParams = { "field", true }}
-	-- TODO: still need this for NPCs... will have to adjust how NPC-linked data is Filled so we can consistently
-	-- perform our logic
 	local NPCSearchOptions = { AppendSearchParams = { "none", true }}
+	local SearchOptionByField = setmetatable({
+		-- TODO: still need this for provider-types which don't translate into Cost...
+		-- will have to adjust how NPC-linked data is Filled so we can consistently
+		-- perform our logic in the future
+		npcID = NPCSearchOptions,
+		objectID = NPCSearchOptions,
+	}, { __index = function() return DefaultSearchOptions end})
+
 	AttachTypicalSearchResults = app.IsRetail and
 	-- In Retail, we want to put the Thing being searched into the tooltip. Whether other content should be included
 	-- is based on Fillers and other logic based on that Thing and is not always included based on caching
 	function(self, field, id)
-		AttachTooltipSearchResults(self, SearchForObject, field, tonumber(id),
-			field == "npcID" and NPCSearchOptions or DefaultSearchOptions)
+		AttachTooltipSearchResults(self, SearchForObject, field, tonumber(id), SearchOptionByField[field])
 	end
 or
 	function(self, field, id)

@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(4610, {	-- Algernon <Alchemy Supplies>
 						["coord"] = { 51.8, 74.6, UNDERCITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_ALCHEMY_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_ALCHEMY_VIALS, {
 							i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(4555, {	-- Eleanor Rusk <General Goods>
 						["coord"] = { 69.2, 48.9, UNDERCITY },	-- Trade Quarter
 						["races"] = HORDE_ONLY,
-						["group"] = {
+						["groups"] = {
 							i(1179),	-- Ice Cold Milk
 						},
 					}),
@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = {{"sub", "common_recipes_vendor", 49737}},	-- Shazdar <Sous Chef>
 						-- #endif
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_COOKING_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
 							i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 							i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
@@ -204,6 +204,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 81.0, 30.8, UNDERCITY },
 						["races"] = HORDE_ONLY,
 						["groups"] = FISHING_SUPPLIES,
+					}),
+				}),
+				prof(HERBALISM, {
+					n(4574, {	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+						["coord"] = { 54.73, 48.9, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = HERB_POUCH,
 					}),
 				}),
 				prof(JEWELCRAFTING, {

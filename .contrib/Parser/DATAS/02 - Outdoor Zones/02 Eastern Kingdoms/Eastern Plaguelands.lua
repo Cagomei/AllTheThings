@@ -964,13 +964,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },
 				}),
 			}),
-			-- #if AFTER CATA
-			n(PROFESSIONS, {
-				prof(FISHING, {
-					o(180751),	-- Floating Wreckage
-				}),
-			}),
-			-- #endif
 			n(QUESTS, {
 				q(27463, {	-- A Boyhood Dream
 					["qg"] = 45431,	-- Gidwin Goldbraids

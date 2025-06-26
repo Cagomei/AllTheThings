@@ -190,11 +190,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 57.2, 45.8, DESOLACE },
 				}),
 			}),
-			n(PROFESSIONS, {
-				prof(FISHING, {
-					o(180685),	-- Waterlogged Wreckage
-				}),
-			}),
 			n(QUESTS, {
 				q(14284, {	-- A Revenant's Vengeance
 					["qg"] = 35902,	-- Lord Hydronis
@@ -2678,8 +2673,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				o(176582, {	-- Shellfish Trap
+					-- #if AFTER CATA
 					["sourceQuest"] = 14334,	-- Blubbergut
-					["description"] = "You can interract with Shellfish Traps only during the quest |cFFE50D12Fish in a Bucket|r (5421).\n\nIf you want to obtain the |cFFFFFFFFBig Iron Fishing Pole|r, |cFFFFFFFFDO NOT|r turn in the quest until you do.",
+					-- #endif
+					["description"] = "You can interact with Shellfish Traps only during the quest |cFFE50D12Fish in a Bucket|r (5421).\n\nIf you want to obtain the |cFFFFFFFFBig Iron Fishing Pole|r, |cFFFFFFFFDO NOT|r turn in the quest until you do.",
 					["coords"] = {
 						{ 20.3, 71.3, DESOLACE },
 						{ 23.4, 77.1, DESOLACE },

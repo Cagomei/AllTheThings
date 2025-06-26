@@ -275,7 +275,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_1_7, "removed 11.1.7.99999" },	-- Removed July 30th, 2025
 			}),
 			i(232302, {	-- Prized Banner of the Algari (TOY!)
-				["description"] = "Break the Meta: TWW Season 2\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season 2's off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFraider.io/events/break-the-meta-the-war-within-season-2/register|r and complete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +10|r or higher during the Competition Period, and the Tempered Banner of the Algari will be automatically added to your collection in-game after the conclusion of the event.\n\nThe Event starts on June 24thth for US, June 25thth for EU & June 26th for CN/KR/TW & lasts for 1 week.",
+				["description"] = "Break the Meta: TWW Season 2\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season 2's off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFraider.io/events/break-the-meta-the-war-within-season-2/register|r and complete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +10|r or higher during the Competition Period, and the Tempered Banner of the Algari will be automatically added to your collection in-game after the conclusion of the event.\n\nThe Event starts on June 24th for US, June 25th for EU & June 26th for CN/KR/TW & lasts for 1 week.",
 				["timeline"] = { ADDED_11_1_7 },
 			}),
 		--	i(500001, {    -- The PVE/PVP Banner temporary item -- TEMPLATE

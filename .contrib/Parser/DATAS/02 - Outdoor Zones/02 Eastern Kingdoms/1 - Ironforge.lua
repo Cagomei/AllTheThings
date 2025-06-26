@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5178, {	-- Soolie Berryfizz <Alchemy Supplies>
 						["coord"] = { 66.6, 54.6, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_ALCHEMY_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_ALCHEMY_VIALS, {
 							i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER CATA
 						["sym"] = {{"sub", "common_recipes_vendor", 49701}},	-- Jon Casper <Sous Chef>
 						-- #endif
-						["groups"] = appendGroups(VANILLA_COOKING_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						}),
@@ -166,7 +166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5112, {	-- Gwenna Firebrew <Barmaid>
 						["coord"] = { 18.6, 51.9, IRONFORGE },	-- The Stonefire Tavern
 						["races"] = ALLIANCE_ONLY,
-						["group"] = {
+						["groups"] = {
 							i(2594),	-- Flagon of Dwarven Honeymead/Mead
 							i(2593),	-- Flask of Stormwind Tawny
 							i(1179),	-- Ice Cold Milk
@@ -281,6 +281,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 48.18, 6.51, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = FISHING_SUPPLIES,
+					}),
+				}),
+				prof(HERBALISM, {
+					n(5138, {	-- Gwina Stonebranch <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+						["coord"] = { 55.08, 59.51, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = HERB_POUCH,
 					}),
 				}),
 				prof(JEWELCRAFTING, {

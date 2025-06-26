@@ -132,7 +132,7 @@ local CUTTING_EDGE_ONUPDATE = [[function(t)
 	end
 end]];
 -- #endif
-root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	applyclassicphase(MOP_PHASE_LANDFALL, inst(320, {	-- Terrace of Endless Spring
 		["coord"] = { 48.4, 61.4, THE_VEILED_STAIR },
 		["maps"] = { 456 },	-- Terrace of Endless Spring
@@ -175,7 +175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86673)),		-- Helmet of Resounding Rings
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86669)),	-- Pauldrons of Resounding Rings
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86666)),		-- Faceguard of Resounding Rings
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86664)),	-- Shoulderguards of Resounding Rings
@@ -184,11 +184,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86681)),		-- White Tiger Helmet
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(86679)),	-- White Tiger Pauldrons
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86686)),		-- White Tiger Headguard
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(86684)),	-- White Tiger Mantle
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86661)),		-- White Tiger Faceguard
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(86659)),	-- White Tiger Shoulderguards
@@ -197,7 +197,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(86676)),			-- Helmet of the Lost Catacomb
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(86674)),	-- Pauldrons of the Lost Catacomb
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(86656)),			-- Faceguard of the Lost Catacomb
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(86654)),	-- Shoulderguards of the Lost Catacomb
@@ -214,7 +214,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86705)),		-- Guardian Serpent Hood
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(86708)),	-- Guardian Serpent Shoulderguards
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86702)),		-- Guardian Serpent Cowl
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(86699)),	-- Guardian Serpent Mantle
@@ -223,11 +223,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS (Enhance)
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86626)),		-- Firebird's Helmet
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86624)),	-- Firebird's Spaulders
-							
+
 							-- DPS (Elemental)
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86631)),		-- Firebird's Headpiece
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86633)),	-- Firebird's Shoulderwraps
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86691)),		-- Firebird's Faceguard
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86689)),	-- Firebird's Mantle
@@ -240,11 +240,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86736)),		-- Red Crane Headpiece
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86738)),	-- Red Crane Spaulders
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86730)),		-- Red Crane Helm
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86733)),	-- Red Crane Mantle
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86726)),		-- Red Crane Crown
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86724)),	-- Red Crane Shoulderguards
@@ -257,15 +257,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS (Boomkin)
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(86647)),			-- Eternal Blossom Cover
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(86644)),	-- Eternal Blossom Shoulderwraps
-							
+
 							-- DPS (Feral)
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(86651)),			-- Eternal Blossom Headpiece
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(86649)),	-- Eternal Blossom Spaulders
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(86697)),			-- Eternal Blossom Helm
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(86694)),	-- Eternal Blossom Mantle
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(86721)),			-- Eternal Blossom Headguard
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(86723)),	-- Eternal Blossom Shoulderguards
@@ -280,7 +280,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85333)),		-- Helmet of Resounding Rings
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85329)),	-- Pauldrons of Resounding Rings
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85326)),		-- Faceguard of Resounding Rings
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85324)),	-- Shoulderguards of Resounding Rings
@@ -289,11 +289,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85341)),		-- White Tiger Helmet
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(85339)),	-- White Tiger Pauldrons
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85346)),		-- White Tiger Headguard
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(85344)),	-- White Tiger Mantle
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85321)),		-- White Tiger Faceguard
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(85319)),	-- White Tiger Shoulderguards
@@ -302,7 +302,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(85336)),			-- Helmet of the Lost Catacomb
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(85334)),	-- Pauldrons of the Lost Catacomb
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(85316)),			-- Faceguard of the Lost Catacomb
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(85314)),	-- Shoulderguards of the Lost Catacomb
@@ -319,7 +319,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85365)),		-- Guardian Serpent Hood
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(85368)),	-- Guardian Serpent Shoulderguards
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85362)),		-- Guardian Serpent Cowl
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(85359)),	-- Guardian Serpent Mantle
@@ -328,11 +328,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS (Enhance)
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85286)),		-- Firebird's Helmet
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85284)),	-- Firebird's Spaulders
-							
+
 							-- DPS (Elemental)
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85291)),		-- Firebird's Headpiece
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85293)),	-- Firebird's Shoulderwraps
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85351)),		-- Firebird's Faceguard
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85349)),	-- Firebird's Mantle
@@ -345,11 +345,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85396)),		-- Red Crane Headpiece
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85398)),	-- Red Crane Spaulders
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85390)),		-- Red Crane Helm
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85393)),	-- Red Crane Mantle
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85386)),		-- Red Crane Crown
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85384)),	-- Red Crane Shoulderguards
@@ -362,15 +362,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS (Boomkin)
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(85307)),			-- Eternal Blossom Cover
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(85304)),	-- Eternal Blossom Shoulderwraps
-							
+
 							-- DPS (Feral)
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(85311)),			-- Eternal Blossom Headpiece
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(85309)),	-- Eternal Blossom Spaulders
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(85357)),			-- Eternal Blossom Helm
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(85354)),	-- Eternal Blossom Mantle
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(85381)),			-- Eternal Blossom Headguard
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(85383)),	-- Eternal Blossom Shoulderguards
@@ -385,7 +385,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87192)),		-- Helmet of Resounding Rings
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87196)),	-- Pauldrons of Resounding Rings
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87199)),		-- Faceguard of Resounding Rings
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87201)),	-- Shoulderguards of Resounding Rings
@@ -394,11 +394,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87101)),		-- White Tiger Helmet
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(87108)),	-- White Tiger Pauldrons
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87106)),		-- White Tiger Headguard
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(87113)),	-- White Tiger Mantle
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87111)),		-- White Tiger Faceguard
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(87103)),	-- White Tiger Shoulderguards
@@ -407,7 +407,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(86915)),			-- Helmet of the Lost Catacomb
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(86917)),	-- Pauldrons of the Lost Catacomb
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(86920)),			-- Faceguard of the Lost Catacomb
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(86922)),	-- Shoulderguards of the Lost Catacomb
@@ -424,7 +424,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87120)),		-- Guardian Serpent Hood
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(87123)),	-- Guardian Serpent Shoulderguards
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87115)),		-- Guardian Serpent Cowl
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(87118)),	-- Guardian Serpent Mantle
@@ -433,11 +433,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS (Enhance)
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87136)),		-- Firebird's Helmet
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87138)),	-- Firebird's Spaulders
-							
+
 							-- DPS (Elemental)
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87141)),		-- Firebird's Headpiece
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87143)),	-- Firebird's Shoulderwraps
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87131)),		-- Firebird's Faceguard
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87133)),	-- Firebird's Mantle
@@ -450,11 +450,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87086)),		-- Red Crane Headpiece
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87088)),	-- Red Crane Spaulders
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87090)),		-- Red Crane Helm
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87093)),	-- Red Crane Mantle
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87096)),		-- Red Crane Crown
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87098)),	-- Red Crane Shoulderguards
@@ -467,15 +467,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- DPS (Boomkin)
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(86934)),			-- Eternal Blossom Cover
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(86937)),	-- Eternal Blossom Shoulderwraps
-							
+
 							-- DPS (Feral)
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(86925)),			-- Eternal Blossom Headpiece
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(86927)),	-- Eternal Blossom Spaulders
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(86929)),			-- Eternal Blossom Helm
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(86932)),	-- Eternal Blossom Mantle
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(86940)),			-- Eternal Blossom Headguard
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(86942)),	-- Eternal Blossom Shoulderguards
@@ -498,7 +498,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86672)),		-- Battleplate of Resounding Rings
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(86671)),	-- Gauntlets of Resounding Rings
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86670)),		-- Legplates of Resounding Rings
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86666)),		-- Faceguard of Resounding Rings
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86664)),	-- Shoulderguards of Resounding Rings
@@ -513,14 +513,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86683)),		-- White Tiger Battleplate
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(86682)),	-- White Tiger Gauntlets
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86680)),		-- White Tiger Legplates
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86686)),		-- White Tiger Headguard
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(86684)),	-- White Tiger Mantle
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86688)),		-- White Tiger Breastplate
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(86687)),	-- White Tiger Gloves
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86685)),		-- White Tiger Greaves
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86661)),		-- White Tiger Faceguard
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(86659)),	-- White Tiger Shoulderguards
@@ -535,7 +535,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86678)),		-- Breastplate of the Lost Catacomb
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(86677)),	-- Gauntlets of the Lost Catacomb
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(86675)),			-- Greaves of the Lost Catacomb
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(86656)),			-- Faceguard of the Lost Catacomb
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(86654)),	-- Shoulderguards of the Lost Catacomb
@@ -564,7 +564,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(86707)),		-- Guardian Serpent Raiment
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(86704)),	-- Guardian Serpent Gloves
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(86706)),		-- Guardian Serpent Leggings
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(86702)),		-- Guardian Serpent Cowl
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(86699)),	-- Guardian Serpent Mantle
@@ -579,14 +579,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86628)),		-- Firebird's Cuirass
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(86627)),	-- Firebird's Grips
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86625)),		-- Firebird's Legguards
-							
+
 							-- DPS (Elemental)
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86631)),		-- Firebird's Headpiece
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86633)),	-- Firebird's Shoulderwraps
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86629)),		-- Firebird's Hauberk
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(86630)),	-- Firebird's Gloves
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86632)),		-- Firebird's Kilt
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86691)),		-- Firebird's Faceguard
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86689)),	-- Firebird's Mantle
@@ -608,14 +608,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86734)),		-- Red Crane Tunic
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(86735)),	-- Red Crane Grips
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86737)),		-- Red Crane Leggings
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86730)),		-- Red Crane Helm
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86733)),	-- Red Crane Mantle
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(86732)),		-- Red Crane Vest
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(86729)),	-- Red Crane Handwraps
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(86731)),		-- Red Crane Legwraps
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(86726)),		-- Red Crane Crown
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(86724)),	-- Red Crane Shoulderguards
@@ -637,21 +637,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86645)),		-- Eternal Blossom Vestment
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(86648)),	-- Eternal Blossom Gloves
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(86646)),			-- Eternal Blossom Leggings
-							
+
 							-- DPS (Feral)
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(86651)),			-- Eternal Blossom Headpiece
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(86649)),	-- Eternal Blossom Spaulders
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86653)),		-- Eternal Blossom Raiment
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(86652)),	-- Eternal Blossom Grips
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(86650)),			-- Eternal Blossom Legguards
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(86697)),			-- Eternal Blossom Helm
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(86694)),	-- Eternal Blossom Mantle
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(86695)),		-- Eternal Blossom Robes
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(86698)),	-- Eternal Blossom Handwraps
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(86696)),			-- Eternal Blossom Legwraps
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(86721)),			-- Eternal Blossom Headguard
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(86723)),	-- Eternal Blossom Shoulderguards
@@ -676,7 +676,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85332)),		-- Battleplate of Resounding Rings
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(85331)),	-- Gauntlets of Resounding Rings
 							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85330)),		-- Legplates of Resounding Rings
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85326)),		-- Faceguard of Resounding Rings
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85324)),	-- Shoulderguards of Resounding Rings
@@ -691,14 +691,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85343)),		-- White Tiger Battleplate
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(85342)),	-- White Tiger Gauntlets
 							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85340)),		-- White Tiger Legplates
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85346)),		-- White Tiger Headguard
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(85344)),	-- White Tiger Mantle
 							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85348)),		-- White Tiger Breastplate
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(85347)),	-- White Tiger Gloves
 							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85345)),		-- White Tiger Greaves
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85321)),		-- White Tiger Faceguard
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(85319)),	-- White Tiger Shoulderguards
@@ -713,7 +713,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85338)),		-- Breastplate of the Lost Catacomb
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(85337)),	-- Gauntlets of the Lost Catacomb
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(85335)),			-- Greaves of the Lost Catacomb
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(85316)),			-- Faceguard of the Lost Catacomb
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(85314)),	-- Shoulderguards of the Lost Catacomb
@@ -742,7 +742,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(85367)),		-- Guardian Serpent Raiment
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(85364)),	-- Guardian Serpent Gloves
 							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(85366)),		-- Guardian Serpent Leggings
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(85362)),		-- Guardian Serpent Cowl
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(85359)),	-- Guardian Serpent Mantle
@@ -757,14 +757,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85288)),		-- Firebird's Cuirass
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(85287)),	-- Firebird's Grips
 							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85285)),		-- Firebird's Legguards
-							
+
 							-- DPS (Elemental)
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85291)),		-- Firebird's Headpiece
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85293)),	-- Firebird's Shoulderwraps
 							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85289)),		-- Firebird's Hauberk
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(85290)),	-- Firebird's Gloves
 							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85292)),		-- Firebird's Kilt
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85351)),		-- Firebird's Faceguard
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85349)),	-- Firebird's Mantle
@@ -786,14 +786,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85394)),		-- Red Crane Tunic
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(85395)),	-- Red Crane Grips
 							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85397)),		-- Red Crane Leggings
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85390)),		-- Red Crane Helm
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85393)),	-- Red Crane Mantle
 							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(85392)),		-- Red Crane Vest
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(85389)),	-- Red Crane Handwraps
 							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(85391)),		-- Red Crane Legwraps
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(85386)),		-- Red Crane Crown
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(85384)),	-- Red Crane Shoulderguards
@@ -815,21 +815,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85305)),		-- Eternal Blossom Vestment
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(85308)),	-- Eternal Blossom Gloves
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(85306)),			-- Eternal Blossom Leggings
-							
+
 							-- DPS (Feral)
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(85311)),			-- Eternal Blossom Headpiece
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(85309)),	-- Eternal Blossom Spaulders
 							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85313)),		-- Eternal Blossom Raiment
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(85312)),	-- Eternal Blossom Grips
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(85310)),			-- Eternal Blossom Legguards
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(85357)),			-- Eternal Blossom Helm
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(85354)),	-- Eternal Blossom Mantle
 							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(85355)),		-- Eternal Blossom Robes
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(85358)),	-- Eternal Blossom Handwraps
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(85356)),			-- Eternal Blossom Legwraps
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(85381)),			-- Eternal Blossom Headguard
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(85383)),	-- Eternal Blossom Shoulderguards
@@ -854,7 +854,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87193)),		-- Battleplate of Resounding Rings
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(87194)),	-- Gauntlets of Resounding Rings
 							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87195)),		-- Legplates of Resounding Rings
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87199)),		-- Faceguard of Resounding Rings
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87201)),	-- Shoulderguards of Resounding Rings
@@ -869,14 +869,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87099)),		-- White Tiger Battleplate
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(87105)),	-- White Tiger Gauntlets
 							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87107)),		-- White Tiger Legplates
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87106)),		-- White Tiger Headguard
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(87113)),	-- White Tiger Mantle
 							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87104)),		-- White Tiger Breastplate
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(87110)),	-- White Tiger Gloves
 							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87112)),		-- White Tiger Greaves
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87111)),		-- White Tiger Faceguard
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(87103)),	-- White Tiger Shoulderguards
@@ -891,7 +891,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86913)),		-- Breastplate of the Lost Catacomb
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(86914)),	-- Gauntlets of the Lost Catacomb
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(86916)),			-- Greaves of the Lost Catacomb
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(86920)),			-- Faceguard of the Lost Catacomb
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(86922)),	-- Shoulderguards of the Lost Catacomb
@@ -920,7 +920,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(87122)),		-- Guardian Serpent Raiment
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(87119)),	-- Guardian Serpent Gloves
 							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(87121)),		-- Guardian Serpent Leggings
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(87115)),		-- Guardian Serpent Cowl
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(87118)),	-- Guardian Serpent Mantle
@@ -935,14 +935,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87134)),		-- Firebird's Cuirass
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(87135)),	-- Firebird's Grips
 							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87137)),		-- Firebird's Legguards
-							
+
 							-- DPS (Elemental)
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87141)),		-- Firebird's Headpiece
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87143)),	-- Firebird's Shoulderwraps
 							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87139)),		-- Firebird's Hauberk
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(87140)),	-- Firebird's Gloves
 							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87142)),		-- Firebird's Kilt
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87131)),		-- Firebird's Faceguard
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87133)),	-- Firebird's Mantle
@@ -964,14 +964,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87084)),		-- Red Crane Tunic
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(87085)),	-- Red Crane Grips
 							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87087)),		-- Red Crane Leggings
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87090)),		-- Red Crane Helm
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87093)),	-- Red Crane Mantle
 							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(87092)),		-- Red Crane Vest
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(87089)),	-- Red Crane Handwraps
 							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(87091)),		-- Red Crane Legwraps
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(87096)),		-- Red Crane Crown
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(87098)),	-- Red Crane Shoulderguards
@@ -993,21 +993,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86936)),		-- Eternal Blossom Vestment
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(86933)),	-- Eternal Blossom Gloves
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(86935)),			-- Eternal Blossom Leggings
-							
+
 							-- DPS (Feral)
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(86925)),			-- Eternal Blossom Headpiece
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(86927)),	-- Eternal Blossom Spaulders
 							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86923)),		-- Eternal Blossom Raiment
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(86924)),	-- Eternal Blossom Grips
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(86926)),			-- Eternal Blossom Legguards
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(86929)),			-- Eternal Blossom Helm
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(86932)),	-- Eternal Blossom Mantle
 							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(86931)),		-- Eternal Blossom Robes
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(86928)),	-- Eternal Blossom Handwraps
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(86930)),			-- Eternal Blossom Legwraps
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(86940)),			-- Eternal Blossom Headguard
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(86942)),	-- Eternal Blossom Shoulderguards

@@ -3479,7 +3479,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["groups"] = appendGroups(VANILLA_HERBS_2, VANILLA_HERBS_3, {
 						-- #if BEFORE CATA
 						i(4777, {	-- Ironwood Maul
 							["isLimited"] = true,
@@ -3505,7 +3505,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						-- #endif
-					},
+					}),
 				}),
 				n(465, {	-- Barkeep Dobbins <Bartender>
 					["coord"] = { 43.8, 65.8, ELWYNN_FOREST },

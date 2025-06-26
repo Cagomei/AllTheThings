@@ -90,9 +90,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(46054),	-- Journeyman Fishing - Fishing for Dummies
 				})),
 			}),
-			expansion(EXPANSION.WOD, {
-				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+			expansion(EXPANSION.MOP, {
+				-- 5.0.4
+				expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 					r(131474),	-- Fishing
 					r(131476),	-- Fishing
 					r(131490),	-- Fishing

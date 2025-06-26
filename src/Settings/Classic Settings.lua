@@ -503,7 +503,7 @@ settings.SetTooltipSetting = function(self, setting, value)
 	self:Refresh();
 end
 settings.SetUnobtainableFilter = function(self, u, value)
-	self:SetValue("Unobtainable", u, value and true or nil)
+	self:SetValue("Unobtainable", u, value)
 	self:UpdateMode(1);
 end
 settings.SetPersonal = function(self, setting, value)

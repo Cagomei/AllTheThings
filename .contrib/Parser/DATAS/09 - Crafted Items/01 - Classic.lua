@@ -18,7 +18,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(6452, {["timeline"] = {ADDED_8_0_1}}),	-- Anti-Venom
 			i(9155),	-- Arcane Elixir
 			i(10592),	-- Catseye Elixir
-			i(4596, {["timeline"] = {REMOVED_4_0_3}}),	-- Discolored Healing Potion
+			i(4596, {["timeline"] = { REMOVED_4_0_3 }}),	-- Discolored Healing Potion
 			i(12190),	-- Dreamless Sleep Potion
 			i(8949),	-- Elixir of Agility
 			-- #if SEASON_OF_DISCOVERY
@@ -105,7 +105,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(858),		-- Lesser Healing Potion
 			i(3823),	-- Lesser Invisibility Potion
 			i(3385),	-- Lesser Mana Potion
-			i(4623, {["timeline"] = {REMOVED_4_0_3}}),	-- Lesser Stoneshield Potion
+			i(4623, {["timeline"] = { REMOVED_4_0_3 }}),	-- Lesser Stoneshield Potion
 			i(3387),	-- Limited Invulnerability Potion
 			applyclassicphase(PHASE_FOUR, i(20008)),	-- Living Action Potion
 			applyclassicphase(PHASE_FOUR, i(20007, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Mageblood Elixir[2.1.0+] / Mageblood Potion
@@ -134,7 +134,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(19440, {["timeline"] = {ADDED_8_0_1}}),	-- Powerful Anti-Venom
 			i(13462),	-- Purification Potion
 			i(5631),	-- Rage Potion
-			i(9030, {["timeline"] = {REMOVED_4_0_3}}),	-- Restorative Potion
+			i(9030, {["timeline"] = { REMOVED_4_0_3 }}),	-- Restorative Potion
 			i(6048),	-- Shadow Protection Potion
 			i(6453, {["timeline"] = {ADDED_8_0_1}}),	-- Strong Anti-Venom
 			i(3388),	-- Strong Troll's Blood Elixir[Wrath+] / Strong Troll's Blood Potion
@@ -364,10 +364,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
 				}),
-				i(12628, {["timeline"] = {REMOVED_4_0_3}}),	-- Demon Forged Breastplate
-				applyclassicphase(PHASE_THREE_RECIPES, i(12618, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Breastplate
-				applyclassicphase(PHASE_THREE_RECIPES, i(12620, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Helm
-				applyclassicphase(PHASE_THREE_RECIPES, i(12619, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Leggings
+				i(12628, {["timeline"] = { REMOVED_4_0_3 }}),	-- Demon Forged Breastplate
+				applyclassicphase(PHASE_THREE_RECIPES, i(12618, {["timeline"] = { REMOVED_4_0_3 }})),	-- Enchanted Thorium Breastplate
+				applyclassicphase(PHASE_THREE_RECIPES, i(12620, {["timeline"] = { REMOVED_4_0_3 }})),	-- Enchanted Thorium Helm
+				applyclassicphase(PHASE_THREE_RECIPES, i(12619, {["timeline"] = { REMOVED_4_0_3 }})),	-- Enchanted Thorium Leggings
 				i(12631, {	-- Fiery Plate Gauntlets
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
@@ -421,8 +421,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #endif
 				applyclassicphase(PHASE_FIVE, i(22385)),	-- Titanic Leggings
-				i(7939, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Breastplate
-				i(7938, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Gauntlets
+				i(7939, {["timeline"] = { REMOVED_4_0_3 }}),	-- Truesilver Breastplate
+				i(7938, {["timeline"] = { REMOVED_4_0_3 }}),	-- Truesilver Gauntlets
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(227872, {	-- Warcrest of the Great Chief
 					["timeline"] = { ADDED_1_15_3 },
@@ -552,8 +552,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(SOD_PHASE_SIX, i(234428, { ["timeline"] = { ADDED_1_15_5 }, })), -- Obsidian Heartseeker
 						-- #endif
 						i(7961, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Phantom Blade
-						i(7954, {["timeline"] = {REMOVED_4_0_3}}),	-- The Shatterer
-						i(7960, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Champion
+						i(7954, {["timeline"] = { REMOVED_4_0_3 }}),	-- The Shatterer
+						i(7960, {["timeline"] = { REMOVED_4_0_3 }}),	-- Truesilver Champion
 					},
 				}),
 			},
@@ -664,7 +664,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #else
 			i(3837),	-- Golden Scale Coif
 			i(3845),	-- Golden Scale Cuirass
-			i(9366, {["timeline"] = {REMOVED_4_0_3}}),	-- Golden Scale Gauntlets
+			i(9366, {["timeline"] = { REMOVED_4_0_3 }}),	-- Golden Scale Gauntlets
 			i(3843),	-- Golden Scale Leggings
 			i(3841),	-- Golden Scale Shoulders
 			-- #endif
@@ -716,13 +716,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_SIX, i(234460, { ["timeline"] = { ADDED_1_15_5 }, })), -- Obsidian Mail Tunic
 			-- #endif
-			i(7929, {["timeline"] = {REMOVED_4_0_3}}),	-- Orcish War Leggings
-			i(7936, {["timeline"] = {REMOVED_4_0_3}}),	-- Ornate Mithril Boots
-			i(7935, {["timeline"] = {REMOVED_4_0_3}}),	-- Ornate Mithril Breastplate
-			i(7927, {["timeline"] = {REMOVED_4_0_3}}),	-- Ornate Mithril Gloves
-			i(7937, {["timeline"] = {REMOVED_4_0_3}}),	-- Ornate Mithril Helm
-			i(7926, {["timeline"] = {REMOVED_4_0_3}}),	-- Ornate Mithril Pants
-			i(7928, {["timeline"] = {REMOVED_4_0_3}}),	-- Ornate Mithril Shoulder
+			i(7929, {["timeline"] = { REMOVED_4_0_3 }}),	-- Orcish War Leggings
+			i(7936, {["timeline"] = { REMOVED_4_0_3 }}),	-- Ornate Mithril Boots
+			i(7935, {["timeline"] = { REMOVED_4_0_3 }}),	-- Ornate Mithril Breastplate
+			i(7927, {["timeline"] = { REMOVED_4_0_3 }}),	-- Ornate Mithril Gloves
+			i(7937, {["timeline"] = { REMOVED_4_0_3 }}),	-- Ornate Mithril Helm
+			i(7926, {["timeline"] = { REMOVED_4_0_3 }}),	-- Ornate Mithril Pants
+			i(7928, {["timeline"] = { REMOVED_4_0_3 }}),	-- Ornate Mithril Shoulder
 			i(2868),	-- Patterned Bronze Bracers
 			i(206498, {["timeline"] = {ADDED_10_1_5}}),	-- Plated Construct's Ribcage
 			i(3846),	-- Polished Steel Boots
@@ -786,10 +786,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				["requireSkill"] = BLACKSMITHING,
 			}),
-			i(12628, {["timeline"] = {REMOVED_4_0_3}}),	-- Demon Forged Breastplate
-			applyclassicphase(PHASE_THREE_RECIPES, i(12618, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Breastplate
-			applyclassicphase(PHASE_THREE_RECIPES, i(12620, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Helm
-			applyclassicphase(PHASE_THREE_RECIPES, i(12619, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Leggings
+			i(12628, {["timeline"] = { REMOVED_4_0_3 }}),	-- Demon Forged Breastplate
+			applyclassicphase(PHASE_THREE_RECIPES, i(12618, {["timeline"] = { REMOVED_4_0_3 }})),	-- Enchanted Thorium Breastplate
+			applyclassicphase(PHASE_THREE_RECIPES, i(12620, {["timeline"] = { REMOVED_4_0_3 }})),	-- Enchanted Thorium Helm
+			applyclassicphase(PHASE_THREE_RECIPES, i(12619, {["timeline"] = { REMOVED_4_0_3 }})),	-- Enchanted Thorium Leggings
 			i(12631, {	-- Fiery Plate Gauntlets
 				["timeline"] = {
 					-- #if SEASON_OF_DISCOVERY
@@ -849,8 +849,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			})),
 			-- #endif
 			applyclassicphase(PHASE_FIVE, i(22385)),	-- Titanic Leggings
-			i(7939, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Breastplate
-			i(7938, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Gauntlets
+			i(7939, {["timeline"] = { REMOVED_4_0_3 }}),	-- Truesilver Breastplate
+			i(7938, {["timeline"] = { REMOVED_4_0_3 }}),	-- Truesilver Gauntlets
 			i(12633),	-- Whitesoul Helm
 			i(12624),	-- Wildthorn Mail
 			-- #endif
@@ -1047,7 +1047,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			})),
 			-- #endif
 			applyclassicphase(PHASE_THREE_RECIPES, i(19170)),	-- Ebon Hand
-			i(12776, {["timeline"] = {REMOVED_4_0_3}}),	-- Enchanted Battlehammer
+			i(12776, {["timeline"] = { REMOVED_4_0_3 }}),	-- Enchanted Battlehammer
 			i(12797),	-- Frostguard
 			i(12796),	-- Hammer of the Titans
 			i(12783, {	-- Heartseeker
@@ -1084,7 +1084,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	prof(COOKING, {
 		i(13935),	-- Baked Salmon
 		i(4457),	-- Barbecued Buzzard Wing
-		applyclassicphase(TBC_PHASE_ONE, i(27636, {["timeline"] = {ADDED_2_0_5}})),	-- Bat Bites
+		applyclassicphase(TBC_PHASE_ONE, i(27636, {["timeline"] = { ADDED_2_0_5 }})),	-- Bat Bites
 		i(2888),	-- Beer Basted Boar Ribs
 		i(3726, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Big Bear Steak
 		i(3220),	-- Blood Sausage
@@ -1108,11 +1108,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		i(5479),	-- Crispy Lizard Tail
 		i(3664),	-- Crocolisk Gumbo
 		i(3662),	-- Crocolisk Steak
-		applyclassicphase(TBC_PHASE_ONE, i(22645, {["timeline"] = {ADDED_2_0_5}})),	-- Crunchy Spider Surprise
+		applyclassicphase(TBC_PHASE_ONE, i(22645, {["timeline"] = { ADDED_2_0_5 }})),	-- Crunchy Spider Surprise
 		i(3665),	-- Curiously Tasty Omelet
 		applyclassicphase(TBC_PHASE_ONE, i(33924, {["timeline"] = {ADDED_2_3_0}})),	-- Delicious Chocolate Cake
 		i(5478),	-- Dig Rat Stew
-		applyclassicphase(PHASE_FIVE, i(21023, {["timeline"] = {REMOVED_4_0_3}})),	-- Dirge's Kickin' Chimaerok Chops
+		applyclassicphase(PHASE_FIVE, i(21023, {["timeline"] = { REMOVED_4_0_3 }})),	-- Dirge's Kickin' Chimaerok Chops
 		i(12217),	-- Dragonbreath Chili
 		i(2687),	-- Dry Pork Ribs
 		-- #if BEFORE 5.4.1
@@ -1147,7 +1147,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		i(13933),	-- Lobster Stew
 		i(6316),	-- Loch Frenzy Delight
 		i(4592),	-- Longjaw Mud Snapper
-		applyclassicphase(TBC_PHASE_ONE, i(27635, {["timeline"] = {ADDED_2_0_5}})),	-- Lynx Steak
+		applyclassicphase(TBC_PHASE_ONE, i(27635, {["timeline"] = { ADDED_2_0_5 }})),	-- Lynx Steak
 		i(13934),	-- Mightfish Steak
 		i(8364),	-- Mithril Head Trout
 		i(12218),	-- Monster Omelet
@@ -1161,7 +1161,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		i(12210),	-- Roast Raptor
 		i(2681),	-- Roasted Boar Meat
 		i(5474),	-- Roasted Kodo Meat
-		applyclassicphase(TBC_PHASE_ONE, i(24105, {["timeline"] = {ADDED_2_0_5}})),	-- Roasted Moongraze Tenderloin
+		applyclassicphase(TBC_PHASE_ONE, i(24105, {["timeline"] = { ADDED_2_0_5 }})),	-- Roasted Moongraze Tenderloin
 		i(4594),	-- Rockscale Cod
 		applyclassicphase(PHASE_ONE_DIREMAUL, i(18254)),	-- Runn Tum Tuber Surprise
 		i(21217),	-- Sagefish Delight
@@ -1174,7 +1174,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20452)),	-- Smoked Desert Dumplings
 		i(21072),	-- Smoked Sagefish
 		i(3729),	-- Soothing Turtle Bisque
-		applyclassicphase(TBC_PHASE_ONE, i(30816, {["timeline"] = {ADDED_2_0_5}})),	-- Spice Bread
+		applyclassicphase(TBC_PHASE_ONE, i(30816, {["timeline"] = { ADDED_2_0_5 }})),	-- Spice Bread
 		applyclassicphase(WRATH_PHASE_ONE, i(44837, {["timeline"] = {ADDED_3_2_2}})),	-- Spice Bread Stuffing [Pilgrim's Bounty]
 		i(12216),	-- Spiced Chili Crab
 		i(2680),	-- Spiced Wolf Meat
@@ -1470,8 +1470,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { ADDED_1_15_0 },
 			})),
 			-- #endif
-			applyclassicphase(PHASE_FIVE, i(20748, {["timeline"] = {REMOVED_4_0_3}})),	-- Brilliant Mana Oil / 10.0.7: Expired Mana Oil
-			applyclassicphase(PHASE_FIVE, i(20749, {["timeline"] = {REMOVED_4_0_3}})),	-- Brilliant Wizard Oil / 10.0.7: Expired Wizard Oil
+			applyclassicphase(PHASE_FIVE, i(20748, {["timeline"] = { REMOVED_4_0_3 }})),	-- Brilliant Mana Oil / 10.0.7: Expired Mana Oil
+			applyclassicphase(PHASE_FIVE, i(20749, {["timeline"] = { REMOVED_4_0_3 }})),	-- Brilliant Wizard Oil / 10.0.7: Expired Wizard Oil
 			applyclassicphase(PHASE_FIVE, i(203862, {["timeline"] = {ADDED_10_0_7}})),	-- Brilliant Mana Oil
 			applyclassicphase(PHASE_FIVE, i(203865, {["timeline"] = {ADDED_10_0_7}})),	-- Brilliant Wizard Oil
 			-- #if SEASON_OF_DISCOVERY
@@ -2103,14 +2103,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						{ "o", 180751 },	-- Floating Wreckage
 						{ "o", 180712 },	-- Stonescale Eel Swarm
 					},
-					["groups"] = {
+					--[[["groups"] = {
 						i(4339),	-- Bolt of Mageweave
 						i(14048),	-- Bolt of Runecloth
 						i(6149),	-- Greater Mana Potion
 						i(8170),	-- Rugged Leather
 						i(3928),	-- Superior Healing Potion
 						i(4304),	-- Thick Leather
-					},
+					},]]
 				}),
 				i(13918),	-- Reinforced Locked Chest
 				i(6357),	-- Sealed Crate
@@ -2132,14 +2132,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						{ "o", 180655 },	-- Floating Debris
 						{ "o", 180658 },	-- School of Deviate Fish
 					},
-					["groups"] = {
+					--[[["groups"] = {
 						i(2996),	-- Bolt of Linen Cloth
 						i(2997),	-- Bolt of Woolen Cloth
 						i(858),	-- Lesser Healing Potion
 						i(2318),	-- Light Leather
 						i(2319),	-- Medium Leather
 						i(2455),	-- Minor Mana Potion
-					},
+					},]]
 				}),
 				i(6352),	-- Waterlogged Crate
 				i(21113, {	-- Watertight Trunk
@@ -2155,14 +2155,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 						{ "o", 180662 },	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
 					},
-					["groups"] = {
+					--[[["groups"] = {
 						i(4305),	-- Bolt of Silk Cloth
 						i(2997),	-- Bolt of Woolen Cloth
 						i(929),	-- Healing Potion
 						i(4234),	-- Heavy Leather
 						i(2319),	-- Medium Leather
 						i(3385),	-- Lesser Mana Potion
-					},
+					},]]
 				}),
 				-- Consumables:
 				i(21151, {	-- Rumsey Rum Black Label
@@ -2410,7 +2410,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					WESTERN_PLAGUELANDS,
 					-- #endif
 				},
-				["provider"] = { "o", 180683 },	-- Greater Sagefish School
+				["provider"] = { "o", 180684 },	-- Greater Sagefish School
 			}),
 			i(6317, {	-- Raw Loch Frenzy
 				["description"] = "Can be caught in The Loch.",
@@ -2625,7 +2625,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			o(180683),	-- Firefin Snapper School 3
 			o(180752),	-- Firefin Snapper School 4
 			o(180902),	-- Firefin Snapper School 5
-			o(180683, {	-- Greater Sagefish School
+			o(180684, {	-- Greater Sagefish School
 				["description"] = "Can be found in inland waters and waterways.",
 				["maps"] = {
 					-- #if BEFORE 4.0.3
@@ -2786,6 +2786,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE 4.0.3
 					STRANGLETHORN_VALE,
 					-- #else
+					DESOLACE,
+					DUSTWALLOW_MARSH,
 					FERALAS,
 					WESTERN_PLAGUELANDS,
 					-- #endif
@@ -2794,83 +2796,1455 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		},
 	}),
 	prof(HERBALISM, {
-		i(11020, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Evergreen Pouch
-			["cost"] = {
-				{ "i", 11018, 2 },	-- Un'Goro Soil
-				{ "i", 11022, 1 },	-- Packet of Tharlendris Seeds
-			},
-			["groups"] = {
-				i(11024, {	-- Evergreen Herb Casing
-					i(11040),	-- Morrowgrain
+		["description"] = "It is beneficial to gather all herbs in the area even if you only need specific herbs because the node spawns are often connected.",
+		["groups"] = {
+			spell(2366, {	-- Herb Gathering
+				-- Herbs:
+				i(8836, {	-- Arthas' Tears
+					["providers"] = {
+						{ "o", 142141 },	-- Arthas' Tears (Scourge)
+						{ "o", 176642 },	-- Arthas' Tears (Felwood)
+					},
+					["timeline"] = { REMOVED_4_0_3 }
 				}),
-			},
-		})),
-		spell(2366, {	-- Herb Gathering
-			i(8836, {["timeline"] = {REMOVED_4_0_3}}),	-- Arthas' Tears
-			i(13468),	-- Black Lotus
-			i(8839),	-- Blindweed
-			i(108336, {["timeline"] = {ADDED_6_0_2}}),	-- Blindweed Stem
-			i(22710, {["timeline"] = {ADDED_2_0_5}}),	-- Bloodthistle
-			applyclassicphase(PHASE_FOUR, i(19726, {["timeline"] = {REMOVED_4_0_3}})),	-- Bloodvine
-			i(2450),	-- Briarthorn
-			i(108320, {["timeline"] = {ADDED_6_0_2}}),	-- Briarthorn Bramble
-			i(2453),	-- Bruiseweed
-			i(108322, {["timeline"] = {ADDED_6_0_2}}),	-- Bruiseweed Stem
-			i(3819),	-- Dragon's Teeth [CATA+] / Wintersbite
-			i(108329, {["timeline"] = {ADDED_6_0_2}}),	-- Dragon's Teeth Stem
-			i(13463),	-- Dreamfoil
-			i(108339, {["timeline"] = {ADDED_6_0_2}}),	-- Dreamfoil Blade
-			i(2449),	-- Earthroot
-			i(108319, {["timeline"] = {ADDED_6_0_2}}),	-- Earthroot Stem
-			i(3818),	-- Fadeleaf
-			i(108328, {["timeline"] = {ADDED_6_0_2}}),	-- Fadeleaf Petal
-			i(4625),	-- Firebloom
-			i(108332, {["timeline"] = {ADDED_6_0_2}}),	-- Firebloom Petal
-			i(8845),	-- Ghost Mushroom
-			i(108337, {["timeline"] = {ADDED_6_0_2}}),	-- Ghost Mushroom Cap
-			i(13464),	-- Golden Sansam
-			i(108340, {["timeline"] = {ADDED_6_0_2}}),	-- Golden Sansam Leaf
-			i(3821),	-- Goldthorn
-			i(108331, {["timeline"] = {ADDED_6_0_2}}),	-- Goldthorn Bramble
-			i(3369),	-- Grave Moss
-			i(108327, {["timeline"] = {ADDED_6_0_2}}),	-- Grave Moss Leaf
-			i(8846),	-- Gromsblood
-			i(108338, {["timeline"] = {ADDED_6_0_2}}),	-- Gromsblood Leaf
-			i(13467),	-- Icecap
-			i(108343, {["timeline"] = {ADDED_6_0_2}}),	-- Icecap Petal
-			i(3358),	-- Khadgar's Whisker
-			i(108326, {["timeline"] = {ADDED_6_0_2}}),	-- Khadgar's Whisker Stem
-			i(3356),	-- Kingsblood
-			i(108324, {["timeline"] = {ADDED_6_0_2}}),	-- Kingsblood Petal
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(234012)),	-- Hive Thistle
+				i(13468, {	-- Black Lotus
+					["maps"] = {
+						SILITHUS,
+						-- #if BEFORE WRATH
+						BURNING_STEPPES,
+						EASTERN_PLAGUELANDS,
+						WINTERSPRING,
+						-- #elseif WRATH
+						BURNING_STEPPES,
+						WINTERSPRING,
+						-- #elseif MOP
+						BURNING_STEPPES,
+						EASTERN_PLAGUELANDS,
+						WINTERSPRING,
+						-- #endif
+						-- #if AFTER WRATH
+						BLASTED_LANDS,
+						-- #endif
+					},
+					["providers"] = {
+						{ "o", 176589 },	-- Black Lotus
+						{ "o", 253069 },	-- Blacker Lotus
+					},
+				}),
+				i(8839, {	-- Blindweed
+					["_allowObjectProvider"] = true,
+					-- #if AFTER CATA
+					["coords"] = {
+						{ 75.3, 46.2, FERALAS },	-- Wildwind Lake
+						{ 72.1, 52.85, FERALAS },	-- Lower Wilds
+						{ 64.9, 58.1, FERALAS },	-- Darkmist Ruins
+						{ 62.9, 51.5, FERALAS },	-- Verdantis River
+						{ 49.35, 23.2, FERALAS },	-- The Twin Colossals
+						{ 46.65, 18.9, FERALAS },	-- The Twin Colossals
+						{ 48.05, 13.3, FERALAS },	-- Southwestern Jademir Lake
+						{ 52.8, 13.9, FERALAS },	-- Southeastern Jademir Lake
+						{ 53.5, 7.5, FERALAS },	-- Northeastern Jademir Lake
+						{ 49.2, 5.9, FERALAS },	-- Northwestern Jademir Lake
+					},
+					-- #else
+					["maps"] = { SWAMP_OF_SORROWS },
+					-- #endif
+					["provider"] = { "o", 142143 },	-- Blindweed
+				}),
+				i(108336, {	-- Blindweed Stem
+					["provider"] = { "o", 142143 },	-- Blindweed
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(8839),	-- Blindweed
+					},
+				}),
+				i(22710, {	-- Bloodthistle
+					["maps"] = { EVERSONG_WOODS },
+					["provider"] = { "o", 181166 },	-- Bloodthistle
+					["races"] = BLOODELF,
+					["timeline"] = { ADDED_2_0_5 },
+				}),
+				applyclassicphase(PHASE_FOUR, i(19726, {	-- Bloodvine
+					["maps"] = { ZULGURUB },
+					["providers"] = {
+						{ "o", 180168 },	-- Dreamfoil (Zul'Gurub)
+						{ "o", 180167 },	-- Golden Sansam (Zul'Gurub)
+						{ "o", 180166 },	-- Mountain Silversage (Zul'Gurub)
+						{ "o", 180165 },	-- Purple Lotus (Zul'Gurub)
+						{ "o", 180164 },	-- Sungrass (Zul'Gurub)
+					},
+					["timeline"] = { REMOVED_4_0_3 },
+				})),
+				i(2450, {	-- Briarthorn
+					["maps"] = {
+						DARKSHORE,
+						DUSKWOOD,
+						HILLSBRAD_FOOTHILLS,
+						STONETALON_MOUNTAINS,
+						WETLANDS,
+						-- #if AFTER CATA
+						AZSHARA,
+						NORTHERN_BARRENS,
+						-- #else
+						ASHENVALE,
+						REDRIDGE_MOUNTAINS,
+						SILVERPINE_FOREST,
+						THE_BARRENS,
+						-- #endif
+					},
+					["providers"] = {
+						{ "o", 1621 },	-- Briarthorn
+						-- #if ANYCLASSIc
+						{ "o", 3729 },	-- Briarthorn (The Barrens)
+						-- #endif
+						-- #if AFTER CATA
+						{ "o", 206085 },	-- Frozen Herb (Hillsbrad Foothills)
+						-- #endif
+					},
+				}),
+				i(108320, {	-- Briarthorn Bramble
+					["providers"] = {
+						{ "o", 1621 },	-- Briarthorn
+						-- #if ANYCLASSIc
+						{ "o", 3729 },	-- Briarthorn (The Barrens)
+						-- #endif
+						-- #if AFTER CATA
+						{ "o", 206085 },	-- Frozen Herb (Hillsbrad Foothills)
+						-- #endif
+					},
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(2450),	-- Briarthorn
+					},
+				}),
+				i(2453, {	-- Bruiseweed
+					["maps"] = {
+						ASHENVALE,
+						DUSKWOOD,
+						HILLSBRAD_FOOTHILLS,
+						STONETALON_MOUNTAINS,
+						-- #if AFTER CATA
+						NORTHERN_STRANGLETHORN,
+						-- #else
+						REDRIDGE_MOUNTAINS,
+						THOUSAND_NEEDLES,
+						WETLANDS,
+						-- #endif
+					},
+					["providers"] = {
+						{ "o", 1622 },	-- Bruiseweed
+						-- #if ANYCLASSIc
+						{ "o", 3730 },	-- Bruiseweed (The Barrens/Stonetalon Mountains)
+						-- #endif
+						-- #if AFTER CATA
+						{ "o", 206085 },	-- Frozen Herb (Hillsbrad Foothills)
+						-- #endif
+					},
+				}),
+				i(108322, {	-- Bruiseweed Stem
+					["providers"] = {
+						{ "o", 1622 },	-- Bruiseweed
+						-- #if ANYCLASSIc
+						{ "o", 3730 },	-- Bruiseweed (The Barrens/Stonetalon Mountains)
+						-- #endif
+						-- #if AFTER CATA
+						{ "o", 206085 },	-- Frozen Herb (Hillsbrad Foothills)
+						-- #endif
+					},
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(2453),	-- Bruiseweed
+					},
+				}),
+				i(3819, {	-- Dragon's Teeth [CATA+] / Wintersbite
+					["_allowObjectProvider"] = true,
+					-- #if AFTER CATA
+					["coord"] = { 33.5,52.7, BADLANDS },	-- Scar of the Worldbreaker
+					-- #else
+					["maps"] = {
+						{ ALTERAC_MOUNTAINS },
+					},
+					-- #endif
+					["provider"] = { "o", 2044 },	-- Dragon's Teeth [CATA+] / Wintersbite
+				}),
+				i(108329, {	-- Dragon's Teeth Stem
+					["provider"] = { "o", 2044 },	-- Dragon's Teeth
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(3819),	-- Dragon's Teeth
+					},
+				}),
+				i(13463, {	-- Dreamfoil
+					["maps"] = {
+						BURNING_STEPPES,
+						FELWOOD,
+						SILITHUS,
+						-- #if AFTER CATA
+						BLASTED_LANDS,
+						-- #else
+						AZSHARA,
+						EASTERN_PLAGUELANDS,
+						UNGORO_CRATER,
+						WESTERN_PLAGUELANDS,
+						ZULGURUB,
+						-- #endif
+					},
+					["providers"] = {
+						{ "o", 176584 },	-- Dreamfoil
+						-- #if BEFORE CATA
+						{ "o", 176693 },	-- Dreamfoil (Felwood)
+						{ "o", 180168 },	-- Dreamfoil (Zul'Gurub)
+						-- #endif
+					},
+				}),
+				i(108339, {	-- Dreamfoil Blade
+					["provider"] = { "o", 176584 },	-- Dreamfoil
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(13463),	-- Dreamfoil
+					},
+				}),
+				i(2449, {	-- Earthroot
+					["maps"] = {
+						DUN_MOROGH,
+						DUROTAR,
+						ELWYNN_FOREST,
+						MULGORE,
+						SILVERPINE_FOREST,
+						TELDRASSIL,
+						TIRISFAL_GLADES,
+						WESTFALL,
+						-- #if BEFORE CATA
+						DARKSHORE,
+						REDRIDGE_MOUNTAINS,
+						THE_BARRENS,
+						-- #endif
+					},
+					["providers"] = {
+						{ "o", 1619 },	-- Earthroot
+						-- #if ANYCLASSIC
+						{ "o", 3726 },	-- Earthroot (The Barrens)
+						-- #endif
+					},
+				}),
+				i(108319, {	-- Earthroot Stem
+					["providers"] = {
+						{ "o", 1619 },	-- Earthroot
+						-- #if ANYCLASSIC
+						{ "o", 3726 },	-- Earthroot (The Barrens)
+						-- #endif
+					},
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(2449),	-- Earthroot
+					},
+				}),
+				i(3818, {	-- Fadeleaf
+					["maps"] = {
+						-- #if AFTER CATA
+						FERALAS,
+						THE_CAPE_OF_STRANGLETHORN,
+						WESTERN_PLAGUELANDS,
+						-- #else
+						ALTERAC_MOUNTAINS,
+						ARATHI_HIGHLANDS,
+						DUSTWALLOW_MARSH,
+						STRANGLETHORN_VALE,
+						-- #endif
+					},
+					["provider"] = { "o", 2042 },	-- Fadeleaf
+				}),
+				i(108328, {	-- Fadeleaf Petal
+					["provider"] = { "o", 2042 },	-- Fadeleaf
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(3818),	-- Fadeleaf
+					},
+				}),
+				i(4625, {	-- Firebloom
+					["maps"] = {
+						BADLANDS,
+						SEARING_GORGE,
+						TANARIS,
+						-- #if AFTER CATA
+						BURNING_STEPPES,
+						-- #else
+						BLASTED_LANDS,
+						-- #endif
+					},
+					["provider"] = { "o", 2866 },	-- Firebloom
+				}),
+				i(108332, {	-- Firebloom Petal
+					["provider"] = { "o", 2866 },	-- Firebloom
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(4625),	-- Firebloom
+					},
+				}),
+				i(8845, {	-- Ghost Mushroom
+					["_allowObjectProvider"] = true,
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 64.3, 16.3, UNGORO_CRATER },	-- Fungal Rock
+						-- #else
+						{ 58.0, 41.2, THE_HINTERLANDS },
+						{ 55.8, 68.1, THE_HINTERLANDS },
+						{ 57.0, 81.0, THE_HINTERLANDS },
+						-- #endif
+						-- #if AFTER TBC
+						{ 74.4, 92.2, ZANGARMARSH },	-- Funggor Cavern
+						{ 17.25, 9.2, ZANGARMARSH },	-- Ango'rosh Stronghold cave
+						-- #endif
+					},
+					["provider"] = { "o", 142144 },	-- Ghost Mushroom
+				}),
+				i(108337, {	-- Ghost Mushroom Cap
+					["provider"] = { "o", 142144 },	-- Ghost Mushroom
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(8845),	-- Ghost Mushroom
+					},
+				}),
+				i(13464, {	-- Golden Sansam
+					["maps"] = {
+						FELWOOD,
+						SILITHUS,
+						UNGORO_CRATER,
+						-- #if AFTER CATA
+						BADLANDS,
+						SWAMP_OF_SORROWS,
+						-- #else
+						AZSHARA,
+						BURNING_STEPPES,
+						EASTERN_PLAGUELANDS,
+						FERALAS,
+						THE_HINTERLANDS,
+						ZULGURUB,
+						-- #endif
+					},
+					["providers"] = {
+						{ "o", 176583 },	-- Golden Sansam
+						-- #if BEFORE CATA
+						{ "o", 176638 },	-- Golden Sansam (Felwood)
+						{ "o", 180167 },	-- Golden Sansam (Zul'Gurub)
+						-- #endif
+					},
+				}),
+				i(108340, {	-- Golden Sansam Leaf
+					["provider"] = { "o", 176583 },	-- Golden Sansam
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(13464),	-- Golden Sansam
+					},
+				}),
+				i(3821, {	-- Goldthorn
+					["maps"] = {
+						ARATHI_HIGHLANDS,
+						DUSTWALLOW_MARSH,
+						FERALAS,
+						THE_HINTERLANDS,
+						-- #if AFTER CATA
+						SOUTHERN_BARRENS,
+						THE_CAPE_OF_STRANGLETHORN,
+						-- #else
+						ALTERAC_MOUNTAINS,
+						STRANGLETHORN_VALE,
+						SWAMP_OF_SORROWS,
+						-- #endif
+					},
+					["provider"] = { "o", 2046 },	-- Goldthorn
+				}),
+				i(108331, {	-- Goldthorn Bramble
+					["provider"] = { "o", 2046 },	-- Goldthorn
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(3821),	-- Goldthorn
+					},
+				}),
+				i(3369, {	-- Grave Moss
+					["_allowObjectProvider"] = true,
+					["coords"] = {
+						{ 20.0, 40.0, DUSKWOOD },	-- Raven Hill Cemetery
+						-- #if BEFORE CATA
+						{ 50.0, 58.0, DESOLACE },
+						{ 80.0, 71.0, DUSKWOOD },
+						-- #endif
+					},
+					["provider"] = { "o", 1628 },	-- Grave Moss
+				}),
+				i(108327, {	-- Grave Moss Leaf
+					["provider"] = { "o", 1628 },	-- Grave Moss
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(3369),	-- Grave Moss
+					},
+				}),
+				i(8846, {	-- Gromsblood
+					["_allowObjectProvider"] = true,
+					["coords"] = {
+						{ 84.1, 71.65, ASHENVALE },	-- Felfire Hill
+						{ 53.5, 46.5, BLASTED_LANDS },
+						{ 50.0, 80.0, DESOLACE },
+					},
+					["maps"] = { FELWOOD },
+					["providers"] = {
+						{ "o", 142145 },	-- Gromsblood
+						-- #if BEFORE CATA
+						{ "o", 176637 },	-- Gromsblood
+						-- #endif
+					},
+				}),
+				i(108338, {	-- Gromsblood Leaf
+					["provider"] = { "o", 142145 },	-- Gromsblood
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(8846),	-- Gromsblood
+					},
+				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_SIX, i(234012, {	-- Hive Thistle
+					["providers"] = {
+						{ "o", 176589 },	-- Black Lotus
+						{ "o", 176584 },	-- Dreamfoil
+						{ "o", 176583 },	-- Golden Sansam
+						{ "o", 176586 },	-- Mountain Silversage
+						{ "o", 142142 },	-- Sungrass
+					},
+				})),
+				-- #endif
+				i(13467, {	-- Icecap
+					["maps"] = { WINTERSPRING },
+					["provider"] = { "o", 176588 },	-- Icecap
+				}),
+				i(108343, {	-- Icecap Petal
+					["provider"] = { "o", 176588 },	-- Icecap
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(13467),	-- Icecap
+					},
+				}),
+				i(3358, {	-- Khadgar's Whisker
+					["maps"] = {
+						ARATHI_HIGHLANDS,
+						DUSTWALLOW_MARSH,
+						FERALAS,
+						-- #if AFTER CATA
+						EASTERN_PLAGUELANDS,
+						SOUTHERN_BARRENS,
+						THE_CAPE_OF_STRANGLETHORN,
+						THE_HINTERLANDS,
+						WESTERN_PLAGUELANDS,
+						-- #else
+						ALTERAC_MOUNTAINS,
+						AZSHARA,
+						BADLANDS,
+						STRANGLETHORN_VALE,
+						SWAMP_OF_SORROWS,
+						-- #endif
+					},
+					["provider"] = { "o", 2043 },	-- Khadgar's Whisker
+				}),
+				i(108326, {	-- Khadgar's Whisker Stem
+					["provider"] = { "o", 2043 },	-- Khadgar's Whisker
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(3358),	-- Khadgar's Whisker
+					},
+				}),
+				i(3356, {	-- Kingsblood
+					["maps"] = {
+						ARATHI_HIGHLANDS,
+						DUSKWOOD,
+						WETLANDS,
+						-- #if AFTER CATA
+						FERALAS,
+						NORTHERN_STRANGLETHORN,
+						SOUTHERN_BARRENS,
+						THE_HINTERLANDS,
+						WESTERN_PLAGUELANDS,
+						-- #else
+						ALTERAC_MOUNTAINS,
+						ASHENVALE,
+						BADLANDS,
+						DESOLACE,
+						DUSTWALLOW_MARSH,
+						HILLSBRAD_FOOTHILLS,
+						STONETALON_MOUNTAINS,
+						STRANGLETHORN_VALE,
+						SWAMP_OF_SORROWS,
+						THOUSAND_NEEDLES,
+						-- #endif
+					},
+					["provider"] = { "o", 1624 },	-- Kingsblood
+				}),
+				i(108324, {	-- Kingsblood Petal
+					["provider"] = { "o", 1624 },	-- Kingsblood
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(3356),	-- Kingsblood
+					},
+				}),
+				i(3357, {	-- Liferoot
+					["maps"] = {
+						ARATHI_HIGHLANDS,
+						DUSTWALLOW_MARSH,
+						THE_HINTERLANDS,
+						WETLANDS,
+						-- #if AFTER CATA
+						EASTERN_PLAGUELANDS,
+						NORTHERN_STRANGLETHORN,
+						SOUTHERN_BARRENS,
+						-- #else
+						ALTERAC_MOUNTAINS,
+						DESOLACE,
+						FERALAS,
+						HILLSBRAD_FOOTHILLS,
+						STRANGLETHORN_VALE,
+						SWAMP_OF_SORROWS,
+						WESTERN_PLAGUELANDS,
+						-- #endif
+					},
+					["provider"] = { "o", 2041 },	-- Liferoot
+				}),
+				i(108325, {	-- Liferoot Stem
+					["provider"] = { "o", 2041 },	-- Liferoot
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(3357),	-- Liferoot
+					},
+				}),
+				i(785, {	-- Mageroyal
+					["maps"] = {
+						DARKSHORE,
+						LOCH_MODAN,
+						SILVERPINE_FOREST,
+						TELDRASSIL,
+						WESTFALL,
+						WETLANDS,
+						-- #if AFTER CATA
+						AZSHARA,
+						HILLSBRAD_FOOTHILLS,
+						NORTHERN_BARRENS,
+						-- #else
+						ASHENVALE,
+						REDRIDGE_MOUNTAINS,
+						-- #endif
+					},
+					["providers"] = {
+						{ "o", 1620 },	-- Mageroyal
+						-- #if ANYCKASSIC
+						{ "o", 3727 },	-- Mageroyal (The Barrens)
+						-- #endif
+						-- #if AFTER CATA
+						{ "o", 206085 },	-- Frozen Herb (Hillsbrad Foothills)
+						-- #endif
+					},
+				}),
+				i(108318, {	-- Mageroyal Petal
+					["providers"] = {
+						{ "o", 1620 },	-- Mageroyal
+						-- #if ANYCKASSIC
+						{ "o", 3727 },	-- Mageroyal (The Barrens)
+						-- #endif
+						-- #if AFTER CATA
+						{ "o", 206085 },	-- Frozen Herb (Hillsbrad Foothills)
+						-- #endif
+					},
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(785),		-- Mageroyal
+					},
+				}),
+				i(13465, {	-- Mountain Silversage
+					["maps"] = {
+						-- #if AFTER CATA
+						BLASTED_LANDS,
+						-- #else
+						AZSHARA,
+						BURNING_STEPPES,
+						EASTERN_PLAGUELANDS,
+						ZULGURUB,
+						-- #endif
+						FELWOOD,
+						SILITHUS,
+						UNGORO_CRATER,
+						WINTERSPRING,
+					},
+					["providers"] = {
+						{ "o", 176586 },	-- Mountain Silversage
+						-- #if BEFORE CATA
+						{ "o", 176640 },	-- Mountain Silversage (Felwood)
+						{ "o", 180166 },	-- Mountain Silversage (Zul'Gurub)
+						-- #endif
+					},
+				}),
+				i(108341, {	-- Mountain Silversage Stalk
+					["provider"] = { "o", 176586 },	-- Mountain Silversage
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(13465),	-- Mountain Silversage
+					},
+				}),
+				i(2447, {	-- Peacebloom
+					["maps"] = {
+						DARKSHORE,
+						DUN_MOROGH,
+						DUROTAR,
+						ELWYNN_FOREST,
+						LOCH_MODAN,
+						MULGORE,
+						-- #if BEFORE CATA
+						SILVERPINE_FOREST,
+						-- #endif
+						TELDRASSIL,
+						TIRISFAL_GLADES,
+						WESTFALL,
+					},
+					["providers"] = {
+						{ "o", 1618 },	-- Peacebloom
+						-- #if ANYCKASSIC
+						{ "o", 3724 },	-- Peacebloom (The Barrens)
+						-- #endif
+					},
+				}),
+				i(8831, {	-- Purple Lotus
+					["_allowObjectProvider"] = true,
+					-- #if AFTER CATA
+					["coords"] = {
+						{ 49.35, 30.85, FELWOOD },	-- Irontree Woods ruins
+						{ 42.2, 36.1, FELWOOD },	-- Shatter Scale Vale northern ruins
+						{ 39.45, 45.1, FELWOOD },	-- Shatter Scale Vale southern ruins
+						{ 38.6, 67.5, FELWOOD },	-- Ruins of Constellas
+						{ 56.95, 85.55, FELWOOD },	-- Morlos'Aran
+					},
+					-- #else
+					["maps"] = {
+						AZSHARA,
+						FERALAS,
+						STRANGLETHORN_VALE,
+						TANARIS,
+						THE_HINTERLANDS,
+						ZULGURUB,
+					},
+					-- #endif
+					["providers"] = {
+						{ "o", 142140 },	-- Purple Lotus
+						-- #if BEFORE CATA
+						{ "o", 180165 },	-- Purple Lotus (Zul'Gurub)
+						-- #endif
+					},
+				}),
+				i(108333, {	-- Purple Lotus Petal
+					["provider"] = { "o", 142140 },	-- Purple Lotus
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(8831),	-- Purple Lotus
+					},
+				}),
+				i(765, {	-- Silverleaf
+					["maps"] = {
+						DARKSHORE,
+						DUN_MOROGH,
+						DUROTAR,
+						ELWYNN_FOREST,
+						LOCH_MODAN,
+						MULGORE,
+						SILVERPINE_FOREST,
+						TELDRASSIL,
+						TIRISFAL_GLADES,
+						WESTFALL,
+					},
+					["providers"] = {
+						{ "o", 1617 },	-- Silverleaf
+						-- #if ANYCKASSIC
+						{ "o", 3725 },	-- Silverleaf (The Barrens)
+						-- #endif
+					},
+				}),
+				i(13466, {	-- Sorrowmoss [CATA+] / Plaguebloom
+					["maps"] = {
+						-- #if AFTER CATA
+						SWAMP_OF_SORROWS,
+						-- #else
+						EASTERN_PLAGUELANDS,
+						FELWOOD,
+						WESTERN_PLAGUELANDS,
+						-- #endif
+					},
+					["providers"] = {
+						{ "o", 176587 },	-- Sorrowmoss [CATA+] / Plaguebloom
+						-- #if BEFORE CATA
+						{ "o", 176641 },	-- Plaguebloom (Felwood)
+						-- #endif
+					},
+				}),
+				i(108342, {	-- Sorrowmoss Leaf
+					["provider"] = { "o", 176587 },	-- Sorrowmoss
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(13466),	-- Sorrowmoss
+					},
+				}),
+				i(3820, {	-- Stranglekelp
+					["maps"] = {
+						ASHENVALE,
+						DARKSHORE,
+						DUSTWALLOW_MARSH,
+						HILLSBRAD_FOOTHILLS,
+						SILVERPINE_FOREST,
+						SWAMP_OF_SORROWS,
+						THE_HINTERLANDS,
+						WESTFALL,
+						WETLANDS,
+						-- #if AFTER CATA
+						NORTHERN_STRANGLETHORN,
+						THE_CAPE_OF_STRANGLETHORN,
+						THOUSAND_NEEDLES,
+						-- #else
+						AZSHARA,
+						DESOLACE,
+						STRANGLETHORN_VALE,
+						THE_BARRENS,
+						-- #endif
+					},
+					["provider"] = { "o", 2045 },	-- Stranglekelp
+				}),
+				i(108330, {	-- Stranglekelp Blade
+					["provider"] = { "o", 2045 },	-- Stranglekelp
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(3820),	-- Stranglekelp
+					},
+				}),
+				i(8838, {	-- Sungrass
+					["maps"] = {
+						-- #if AFTER CATA
+						BADLANDS,
+						BURNING_STEPPES,
+						SEARING_GORGE,
+						SILITHUS,
+						TANARIS,
+						THOUSAND_NEEDLES,
+						-- #else
+						AZSHARA,
+						BLASTED_LANDS,
+						FERALAS,
+						THE_HINTERLANDS,
+						UNGORO_CRATER,
+						WESTERN_PLAGUELANDS,
+						-- #endif
+						EASTERN_PLAGUELANDS,
+					},
+					["providers"] = {
+						{ "o", 142142 },	-- Sungrass
+						-- #if BEFORE CATA
+						{ "o", 176636 },	-- Sungrass (Felwood)
+						{ "o", 180164 },	-- Sungrass (Zul'Gurub)
+						-- #endif
+					},
+				}),
+				i(108335, {	-- Sungrass Stalk
+					["provider"] = { "o", 142142 },	-- Sungrass
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(8838),	-- Sungrass
+					},
+				}),
+				i(2452, {	-- Swiftthistle
+						["maps"] = {
+							DARKSHORE,
+							DUSKWOOD,
+							HILLSBRAD_FOOTHILLS,
+							LOCH_MODAN,
+							SILVERPINE_FOREST,
+							STONETALON_MOUNTAINS,
+							TELDRASSIL,
+							WESTFALL,
+							WETLANDS,
+							-- #if AFTER CATA
+							AZSHARA,
+							NORTHERN_BARRENS,
+							-- #else
+							ASHENVALE,
+							REDRIDGE_MOUNTAINS,
+							THE_BARRENS,
+							-- #endif
+						},
+					["providers"] = {
+						{ "o", 1621 },	-- Briarthorn
+						{ "o", 1620 },	-- Mageroyal
+						-- #if ANYCLASSIc
+						{ "o", 3729 },	-- Briarthorn (The Barrens)
+						{ "o", 3727 },	-- Mageroyal (The Barrens)
+						-- #endif
+					},
+				}),
+				i(108321, {	-- Swiftthistle Leaf
+					["providers"] = {
+						{ "o", 1621 },	-- Briarthorn
+						{ "o", 1620 },	-- Mageroyal
+						-- #if ANYCLASSIc
+						{ "o", 3729 },	-- Briarthorn (The Barrens)
+						{ "o", 3727 },	-- Mageroyal (The Barrens)
+						-- #endif
+					},
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(2452),	-- Swiftthistle
+					},
+				}),
+				i(3355, {	-- Wild Steelbloom
+					["maps"] = {
+						-- #if AFTER CATA
+						ASHENVALE,
+						DESOLACE,
+						NORTHERN_STRANGLETHORN,
+						-- #else
+						STRANGLETHORN_VALE,
+						THOUSAND_NEEDLES,
+						-- #endif
+						ARATHI_HIGHLANDS,
+						STONETALON_MOUNTAINS,
+						WETLANDS,
+					},
+					["provider"] = { "o", 1623 },	-- Wild Steelbloom
+				}),
+				i(108323, {	-- Wild Steelbloom Petal
+					["provider"] = { "o", 1623 },	-- Wild Steelbloom
+					["timeline"] = { ADDED_6_0_2 },
+					["groups"] = {
+						i(3355),	-- Wild Steelbloom
+					},
+				}),
+				i(8153, {	-- Wildvine
+					["provider"] = { "o", 142140 },	-- Purple Lotus
+				}),
+				--___________________________________________
+				--
+				-- Nodes:
+				o(142141, {	-- Arthas' Tears (Scourge)
+					["maps"] = {
+						EASTERN_PLAGUELANDS,
+						RAZORFEN_DOWNS,
+						STRATHOLME,
+						WESTERN_PLAGUELANDS,
+					},
+					["timeline"] = { REMOVED_4_0_3 }
+				}),
+				o(176642, {	-- Arthas' Tears (Felwood)
+					["maps"] = { FELWOOD },
+					["timeline"] = { REMOVED_4_0_3 }
+				}),
+				o(176589, {	-- Black Lotus
+					-- #if NOT ANYCLASSIC
+					["description"] = "Black Lotus is a rare spawn, and can spawn in place of other herbs.",
+					-- #else
+					["description"] = "Black Lotus is a rare spawn, and can spawn in place of other herbs. Please let us know in the ATT discord if the listed zones does not reflect the current spawn locations.",
+					-- #endif
+					["maps"] = {
+						SILITHUS,
+						-- #if BEFORE WRATH
+						BURNING_STEPPES,
+						EASTERN_PLAGUELANDS,
+						WINTERSPRING,
+						-- #elseif WRATH
+						BURNING_STEPPES,
+						WINTERSPRING,
+						-- #elseif MOP
+						BURNING_STEPPES,
+						EASTERN_PLAGUELANDS,
+						WINTERSPRING,
+						-- #endif
+						-- #if AFTER WRATH
+						BLASTED_LANDS,
+						-- #endif
+					},
+				}),
+				o(253069, {	-- Blacker Lotus
+					["coord"] = { 74.8, 54.5, EASTERN_PLAGUELANDS },	-- Light's Hope Chapel
+					["description"] = "Blacker Lotus is a special node at the given coords which can take days to respawn. This location also have a group of un-gatherable Black Lotuses.",
+					["timeline"] = { ADDED_7_0_3 },
+				}),
+				o(142143, {	-- Blindweed
+					-- #if AFTER CATA
+					["coords"] = {
+						{ 75.3, 46.2, FERALAS },	-- Wildwind Lake
+						{ 72.1, 52.85, FERALAS },	-- Lower Wilds
+						{ 64.9, 58.1, FERALAS },	-- Darkmist Ruins
+						{ 62.9, 51.5, FERALAS },	-- Verdantis River
+						{ 49.35, 23.2, FERALAS },	-- The Twin Colossals
+						{ 46.65, 18.9, FERALAS },	-- The Twin Colossals
+						{ 48.05, 13.3, FERALAS },	-- Southwestern Jademir Lake
+						{ 52.8, 13.9, FERALAS },	-- Southeastern Jademir Lake
+						{ 53.5, 7.5, FERALAS },	-- Northeastern Jademir Lake
+						{ 49.2, 5.9, FERALAS },	-- Northwestern Jademir Lake
+					},
+					-- #else
+					["maps"] = { SWAMP_OF_SORROWS },
+					-- #endif
+					["description"] = "Can be found near wet terrain and/or waterways, somehow Blizzard managed to make this very inconsistent in some zones.",
+				}),
+				o(181166, {	-- Bloodthistle
+					["maps"] = { EVERSONG_WOODS },
+					["timeline"] = { ADDED_2_0_5 },
+					-- #if ANYCLASSIC
+					["description"] = "This node can be gathered by any herbalist, but is expected to become restricted to Blood-Elf only in a future expansion. Please let us know in the ATT Discord if this already have happened in given iterations of Classic.",
+					-- #else
+					["races"] = BLOODELF,
+					-- #endif
+				}),
+				o(1621, {	-- Briarthorn
+					["maps"] = {
+						DARKSHORE,
+						DUSKWOOD,
+						HILLSBRAD_FOOTHILLS,
+						STONETALON_MOUNTAINS,
+						WETLANDS,
+						-- #if AFTER CATA
+						AZSHARA,
+						NORTHERN_BARRENS,
+						-- #else
+						ASHENVALE,
+						REDRIDGE_MOUNTAINS,
+						SILVERPINE_FOREST,
+						-- #endif
+					},
+					["description"] = "Usually found near trees.",
+				}),
+				-- #if ANYCLASSIC
+				o(3729, {	-- Briarthorn (The Barrens)
+					-- Note: This node get replaced by o(1621) at an unknown point between MOP and TWW.
+					["maps"] = {
+						-- #if AFTER CATA
+						NORTHERN_BARRENS,
+						-- #else
+						THE_BARRENS
+						-- #endif
+					},
+				}),
+				-- #endif
+				o(1622, {	-- Bruiseweed
+					["maps"] = {
+						ASHENVALE,
+						DUSKWOOD,
+						HILLSBRAD_FOOTHILLS,
+						STONETALON_MOUNTAINS,
+						-- #if AFTER CATA
+						NORTHERN_STRANGLETHORN,
+						-- #else
+						REDRIDGE_MOUNTAINS,
+						THOUSAND_NEEDLES,
+						WETLANDS,
+						-- #endif
+					},
+					["description"] = "Usually found near hillsides, buildings and structures.",
+				}),
+				-- #if ANYCLASSIC
+				o(3730, {	-- Bruiseweed (The Barrens/Stonetalon Mountains)
+					-- Note: This node get replaced by o(1622) at an unknown point between MOP and TWW.
+					["maps"] = {
+						-- #if AFTER CATA
+						NORTHERN_BARRENS,
+						STONETALON_MOUNTAINS,
+						-- #else
+						THE_BARRENS
+						-- #endif
+					},
+				}),
+				-- #endif
+				o(2044, {	-- Dragon's Teeth [CATA+] / Wintersbite
+					-- #if AFTER CATA
+					["coord"] = { 33.5,52.7, BADLANDS },	-- Scar of the Worldbreaker
+					-- #else
+					["maps"] = {
+						{ ALTERAC_MOUNTAINS },
+					},
+					-- #endif
+				}),
+				o(176584, {	-- Dreamfoil
+					["maps"] = {
+						BURNING_STEPPES,
+						SILITHUS,
+						-- #if AFTER CATA
+						BLASTED_LANDS,
+						FELWOOD,
+						-- #else
+						AZSHARA,
+						EASTERN_PLAGUELANDS,
+						UNGORO_CRATER,
+						WESTERN_PLAGUELANDS,
+						-- #endif
+					},
+					["description"] = "Can usually be found on flat open spaces.",
+				}),
+				o(176693, {	-- Dreamfoil (Felwood)
+					["maps"] = { FELWOOD },
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
+				o(180168, {	-- Dreamfoil (Zul'Gurub)
+					["maps"] = { ZULGURUB },
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
+				o(1619, {	-- Earthroot
+					["maps"] = {
+						DUN_MOROGH,
+						DUROTAR,
+						ELWYNN_FOREST,
+						MULGORE,
+						SILVERPINE_FOREST,
+						TELDRASSIL,
+						TIRISFAL_GLADES,
+						WESTFALL,
+						-- #if BEFORE CATA
+						DARKSHORE,
+						REDRIDGE_MOUNTAINS,
+						-- #endif
+					},
+					["description"] = "Can be found on uneven terrain and mountain sides.",
+				}),
+				-- #if ANYCLASSIC
+				o(3726, {	-- Earthroot (The Barrens)
+					-- Note: This node get replaced by o(1619) at an unknown point between MOP and TWW.
+					-- #if AFTER CATA
+					["coords"] = {
+						{ 65.8, 13.5, NORTHERN_BARRENS },
+						{ 67.0, 23.2, NORTHERN_BARRENS },
+						{ 66.7, 52.5, NORTHERN_BARRENS },
+					},
+					-- #else
+					["maps"] = {
+						{ THE_BARRENS },
+					},
+					-- #endif
+				}),
+				-- #endif
+				o(2042, {	-- Fadeleaf
+					["maps"] = {
+						-- #if AFTER CATA
+						FERALAS,
+						THE_CAPE_OF_STRANGLETHORN,
+						WESTERN_PLAGUELANDS,
+						-- #else
+						ALTERAC_MOUNTAINS,
+						ARATHI_HIGHLANDS,
+						DUSTWALLOW_MARSH,
+						STRANGLETHORN_VALE,
+						-- #endif
+					},
+					["description"] = "Can be found in fertile terrain and fields.",
+				}),
+				o(2866, {	-- Firebloom
+					["maps"] = {
+						BADLANDS,
+						SEARING_GORGE,
+						TANARIS,
+						-- #if AFTER CATA
+						BURNING_STEPPES,
+						-- #else
+						BLASTED_LANDS,
+						-- #endif
+					},
+					["description"] = "Can be found on hot deserts.",
+				}),
+				o(206085, {	-- Frozen Herb (Hillsbrad Foothills)
+					["coord"] = { 47.0, 26.0, HILLSBRAD_FOOTHILLS },	-- Alterac Mountains
+					["description"] = "Found all over Alterac Mountains",
+					["timeline"] = { ADDED_4_0_3 },
+				}),
+				o(142144, {	-- Ghost Mushroom
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 64.3, 16.3, UNGORO_CRATER },	-- Fungal Rock
+						-- #else
+						{ 58.0, 41.2, THE_HINTERLANDS },
+						{ 55.8, 68.1, THE_HINTERLANDS },
+						{ 57.0, 81.0, THE_HINTERLANDS },
+						-- #endif
+						-- #if AFTER TBC
+						{ 74.4, 92.2, ZANGARMARSH },	-- Funggor Cavern
+						{ 17.25, 9.2, ZANGARMARSH },	-- Ango'rosh Stronghold cave
+						-- #endif
+					},
+					["description"] = "Can be found inside caves.",
+				}),
+				o(176583, {	-- Golden Sansam
+					["maps"] = {
+						SILITHUS,
+						UNGORO_CRATER,
+						-- #if AFTER CATA
+						BADLANDS,
+						FELWOOD,
+						SWAMP_OF_SORROWS,
+						-- #else
+						AZSHARA,
+						BURNING_STEPPES,
+						EASTERN_PLAGUELANDS,
+						FERALAS,
+						THE_HINTERLANDS,
+						-- #endif
+					},
+					["description"] = "Can be found by trees and other natural structures.",
+				}),
+				o(176638, {	-- Golden Sansam (Felwood)
+					["maps"] = { FELWOOD },
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
+				o(180167, {	-- Golden Sansam (Zul'Gurub)
+					["maps"] = { ZULGURUB },
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
+				o(2046, {	-- Goldthorn
+					["maps"] = {
+						ARATHI_HIGHLANDS,
+						DUSTWALLOW_MARSH,
+						FERALAS,
+						THE_HINTERLANDS,
+						-- #if AFTER CATA
+						SOUTHERN_BARRENS,
+						THE_CAPE_OF_STRANGLETHORN,
+						-- #else
+						ALTERAC_MOUNTAINS,
+						STRANGLETHORN_VALE,
+						SWAMP_OF_SORROWS,
+						-- #endif
+					},
+					["description"] = "Can be found on uneven terrain and mountain sides.",
+				}),
+				o(1628, {	-- Grave Moss
+					["coords"] = {
+						{ 20.0, 40.0, DUSKWOOD },	-- Raven Hill Cemetery
+						-- #if BEFORE CATA
+						{ 50.0, 58.0, DESOLACE },
+						{ 80.0, 71.0, DUSKWOOD },
+						-- #endif
+					},
+					["description"] = "Can be found on graves.",
+				}),
+				o(142145, {	-- Gromsblood
+					["coords"] = {
+						{ 84.1, 71.65, ASHENVALE },	-- Felfire Hill
+						{ 53.5, 46.5, BLASTED_LANDS },
+						{ 50.0, 80.0, DESOLACE },
+					},
+					-- #if AFTER CATA
+					["maps"] = { FELWOOD },
+					-- #endif
+					["description"] = "Found in locations corrupted by the Burning Legion.",
+				}),
+				o(176637, {	-- Gromsblood (Felwood)
+					["maps"] = { FELWOOD },
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
+				o(176588, {	-- Icecap
+					["maps"] = { WINTERSPRING },
+				}),
+				o(2043, {	-- Khadgar's Whisker
+					["maps"] = {
+						ARATHI_HIGHLANDS,
+						DUSTWALLOW_MARSH,
+						FERALAS,
+						-- #if AFTER CATA
+						EASTERN_PLAGUELANDS,
+						SOUTHERN_BARRENS,
+						THE_CAPE_OF_STRANGLETHORN,
+						THE_HINTERLANDS,
+						WESTERN_PLAGUELANDS,
+						-- #else
+						ALTERAC_MOUNTAINS,
+						AZSHARA,
+						BADLANDS,
+						STRANGLETHORN_VALE,
+						SWAMP_OF_SORROWS,
+						-- #endif
+					},
+					["description"] = "Can be found near trees.",
+				}),
+				o(1624, {	-- Kingsblood
+					["maps"] = {
+						ARATHI_HIGHLANDS,
+						DUSKWOOD,
+						WETLANDS,
+						-- #if AFTER CATA
+						FERALAS,
+						NORTHERN_STRANGLETHORN,
+						SOUTHERN_BARRENS,
+						THE_HINTERLANDS,
+						WESTERN_PLAGUELANDS,
+						-- #else
+						ALTERAC_MOUNTAINS,
+						ASHENVALE,
+						BADLANDS,
+						DESOLACE,
+						DUSTWALLOW_MARSH,
+						HILLSBRAD_FOOTHILLS,
+						STONETALON_MOUNTAINS,
+						STRANGLETHORN_VALE,
+						SWAMP_OF_SORROWS,
+						THOUSAND_NEEDLES,
+						-- #endif
+					},
+					["description"] = "Can be found in the woods.",
+				}),
+				o(2041, {	-- Liferoot
+					["maps"] = {
+						ARATHI_HIGHLANDS,
+						DUSTWALLOW_MARSH,
+						THE_HINTERLANDS,
+						WETLANDS,
+						-- #if AFTER CATA
+						EASTERN_PLAGUELANDS,
+						NORTHERN_STRANGLETHORN,
+						SOUTHERN_BARRENS,
+						-- #else
+						ALTERAC_MOUNTAINS,
+						DESOLACE,
+						FERALAS,
+						HILLSBRAD_FOOTHILLS,
+						STRANGLETHORN_VALE,
+						SWAMP_OF_SORROWS,
+						WESTERN_PLAGUELANDS,
+						-- #endif
+					},
+					["description"] = "Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",
+				}),
+				o(1620, {	-- Mageroyal
+					["maps"] = {
+						DARKSHORE,
+						LOCH_MODAN,
+						SILVERPINE_FOREST,
+						TELDRASSIL,
+						WESTFALL,
+						WETLANDS,
+						-- #if AFTER CATA
+						AZSHARA,
+						HILLSBRAD_FOOTHILLS,
+						NORTHERN_BARRENS,
+						-- #else
+						ASHENVALE,
+						REDRIDGE_MOUNTAINS,
+						-- #endif
+					},
+				}),
+				-- #if ANYCLASSIC
+				o(3727, {	-- Mageroyal (The Barrens)
+					-- Note: This node get replaced by o(1620) at an unknown point between MOP and TWW.
+					["maps"] = {
+						-- #if AFTER CATA
+						NORTHERN_BARRENS,
+						-- #else
+						THE_BARRENS
+						-- #endif
+					},
+				}),
+				-- #endif
+				o(176586, {	-- Mountain Silversage
+					["maps"] = {
+						-- #if AFTER CATA
+						BLASTED_LANDS,
+						-- #else
+						AZSHARA,
+						BURNING_STEPPES,
+						EASTERN_PLAGUELANDS,
+						-- #endif
+						SILITHUS,
+						UNGORO_CRATER,
+						WINTERSPRING,
+					},
+					["description"] = "Can be found on uneven terrain and mountain sides.",
+				}),
+				o(176640, {	-- Mountain Silversage (Felwood)
+					["maps"] = { FELWOOD },
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
+				o(180166, {	-- Mountain Silversage (Zul'Gurub)
+					["maps"] = { ZULGURUB },
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
+				o(1618, {	-- Peacebloom
+					["maps"] = {
+						DARKSHORE,
+						DUN_MOROGH,
+						DUROTAR,
+						ELWYNN_FOREST,
+						LOCH_MODAN,
+						MULGORE,
+						-- #if BEFORE CATA
+						SILVERPINE_FOREST,
+						-- #endif
+						TELDRASSIL,
+						TIRISFAL_GLADES,
+						WESTFALL,
+					},
+				}),
+				-- #if ANYCLASSIC
+				o(3724, {	-- Peacebloom (The Barrens)
+					-- Note: This node get replaced by o(1618) at an unknown point between MOP and TWW.
+					["maps"] = {
+						-- #if AFTER CATA
+						NORTHERN_BARRENS,
+						-- #else
+						THE_BARRENS
+						-- #endif
+					},
+				}),
+				-- #endif
+				o(142140, {	-- Purple Lotus
+					-- #if AFTER CATA
+					["coords"] = {
+						{ 49.35, 30.85, FELWOOD },	-- Irontree Woods ruins
+						{ 42.2, 36.1, FELWOOD },	-- Shatter Scale Vale northern ruins
+						{ 39.45, 45.1, FELWOOD },	-- Shatter Scale Vale southern ruins
+						{ 38.6, 67.5, FELWOOD },	-- Ruins of Constellas
+						{ 56.95, 85.55, FELWOOD },	-- Morlos'Aran
+					},
+					-- #else
+					["maps"] = {
+						AZSHARA,
+						FERALAS,
+						STRANGLETHORN_VALE,
+						TANARIS,
+						THE_HINTERLANDS,
+					},
+					-- #endif
+					["description"] = "Can be found in elven ruins.",
+				}),
+				o(180165, {	-- Purple Lotus (Zul'Gurub)
+					["maps"] = { ZULGURUB },
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
+				o(1617, {	-- Silverleaf
+					["maps"] = {
+						DARKSHORE,
+						DUN_MOROGH,
+						DUROTAR,
+						ELWYNN_FOREST,
+						LOCH_MODAN,
+						MULGORE,
+						SILVERPINE_FOREST,
+						TELDRASSIL,
+						TIRISFAL_GLADES,
+						WESTFALL,
+					},
+				}),
+				-- #if ANYCLASSIC
+				o(3725, {	-- Silverleaf (The Barrens)
+					-- Note: This node get replaced by o(1617) at an unknown point between MOP and TWW.
+					["maps"] = {
+						-- #if AFTER CATA
+						NORTHERN_BARRENS,
+						-- #else
+						THE_BARRENS
+						-- #endif
+					},
+				}),
+				-- #endif
+				o(176587, {	-- Sorrowmoss [CATA+] / Plaguebloom
+					["maps"] = {
+						-- #if AFTER CATA
+						SWAMP_OF_SORROWS,
+						-- #else
+						EASTERN_PLAGUELANDS,
+						WESTERN_PLAGUELANDS,
+						-- #endif
+					},
+				}),
+				o(176641, {	-- Plaguebloom (Felwood)
+					["maps"] = { FELWOOD },
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
+				o(2045, {	-- Stranglekelp
+					["maps"] = {
+						ASHENVALE,
+						DARKSHORE,
+						DUSTWALLOW_MARSH,
+						HILLSBRAD_FOOTHILLS,
+						SILVERPINE_FOREST,
+						SWAMP_OF_SORROWS,
+						THE_HINTERLANDS,
+						WESTFALL,
+						WETLANDS,
+						-- #if AFTER CATA
+						NORTHERN_STRANGLETHORN,
+						THE_CAPE_OF_STRANGLETHORN,
+						THOUSAND_NEEDLES,
+						-- #else
+						AZSHARA,
+						DESOLACE,
+						STRANGLETHORN_VALE,
+						THE_BARRENS,
+						-- #endif
+					},
+					["description"] = "Can usually be found in the sea, but also sometimes in bodies of inland waters and waterways.",
+				}),
+				o(142142, {	-- Sungrass
+					["maps"] = {
+						-- #if AFTER CATA
+						BADLANDS,
+						BURNING_STEPPES,
+						SEARING_GORGE,
+						SILITHUS,
+						TANARIS,
+						THOUSAND_NEEDLES,
+						-- #else
+						AZSHARA,
+						BLASTED_LANDS,
+						FERALAS,
+						THE_HINTERLANDS,
+						UNGORO_CRATER,
+						WESTERN_PLAGUELANDS,
+						-- #endif
+						EASTERN_PLAGUELANDS,
+					},
+				}),
+				o(176636, {	-- Sungrass (Felwood)
+					["maps"] = { FELWOOD },
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
+				o(180164, {	-- Sungrass (Zul'Gurub)
+					["maps"] = { ZULGURUB },
+					["timeline"] = { REMOVED_4_0_3 },
+				}),
+				o(1623, {	-- Wild Steelbloom
+					["maps"] = {
+						-- #if AFTER CATA
+						ASHENVALE,
+						DESOLACE,
+						NORTHERN_STRANGLETHORN,
+						-- #else
+						STRANGLETHORN_VALE,
+						THOUSAND_NEEDLES,
+						-- #endif
+						ARATHI_HIGHLANDS,
+						STONETALON_MOUNTAINS,
+						WETLANDS,
+					},
+					["description"] = "Can be found on uneven terrain and mountain sides.",
+				}),
+			}),
+			n(MISC, {
+				i(11020, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Evergreen Pouch
+					["cost"] = {
+						{ "i", 11018, 2 },	-- Un'Goro Soil
+						{ "i", 11022, 1 },	-- Packet of Tharlendris Seeds
+					},
+					["groups"] = {
+						i(11024, {	-- Evergreen Herb Casing
+							i(11040),	-- Morrowgrain
+						}),
+					},
+				})),
+				i(22250, {["description"] = "Only select Herbalism Suppliers sells this pouch."}),	-- Herb Pouch
+			}),
+			-- #if AFTR MOP
+			n(PROFESSION_EQUIPMENT, {
+				i(85663, {
+					-- Danny Donkey: For some Blizzard reason Herbalism Suppliers does not sell this equipment.
+					["description"] = "Can only be bought from Trade suppliers.",
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+			}),
 			-- #endif
-			i(3357),	-- Liferoot
-			i(108325, {["timeline"] = {ADDED_6_0_2}}),	-- Liferoot Stem
-			i(785),		-- Mageroyal
-			i(108318, {["timeline"] = {ADDED_6_0_2}}),	-- Mageroyal Petal
-			i(13465),	-- Mountain Silversage
-			i(108341, {["timeline"] = {ADDED_6_0_2}}),	-- Mountain Silversage Stalk
-			i(2447),	-- Peacebloom
-			i(8831),	-- Purple Lotus
-			i(108333, {["timeline"] = {ADDED_6_0_2}}),	-- Purple Lotus Petal
-			i(765),		-- Silverleaf
-			i(13466),	-- Sorrowmoss [CATA+] / Plaguebloom
-			i(108342, {["timeline"] = {ADDED_6_0_2}}),	-- Sorrowmoss Leaf
-			i(3820),	-- Stranglekelp
-			i(108330, {["timeline"] = {ADDED_6_0_2}}),	-- Stranglekelp Blade
-			i(8838),	-- Sungrass
-			i(108335, {["timeline"] = {ADDED_6_0_2}}),	-- Sungrass Stalk
-			i(2452),	-- Swiftthistle
-			i(108321, {["timeline"] = {ADDED_6_0_2}}),	-- Swiftthistle Leaf
-			i(3355),	-- Wild Steelbloom
-			i(108323, {["timeline"] = {ADDED_6_0_2}}),	-- Wild Steelbloom Petal
-			i(8153),	-- Wildvine
-			-- Not Herb --
-			i(7067),	-- Elemental Earth
-			i(7068),	-- Elemental Fire
-			i(7070),	-- Elemental Water
-		}),
+		},
 	}),
 	-- #if AFTER WRATH
 	prof(INSCRIPTION, {
@@ -3446,7 +4820,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				i(15064),	-- Warbear Harness
 				i(15065),	-- Warbear Woolies
-				i(8345, {["timeline"] = {REMOVED_4_0_3}}),	-- Wolfshead Helm
+				i(8345, {["timeline"] = { REMOVED_4_0_3 }}),	-- Wolfshead Helm
 			},
 		}),
 		-- #endif
@@ -3463,7 +4837,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(7276),	-- Handstitched Leather Cloak
 				i(3719),	-- Hillman's Cloak
 				i(15138),	-- Onyxia Scale Cloak
-				i(8215, {["timeline"] = {REMOVED_4_0_3}}),	-- Wild Leather Cloak
+				i(8215, {["timeline"] = { REMOVED_4_0_3 }}),	-- Wild Leather Cloak
 
 				-- #if AFTER TBC
 				-- #if SEASON_OF_DISCOVERY
@@ -3688,11 +5062,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15083),	-- Wicked Leather Gauntlets
 				i(15086),	-- Wicked Leather Headband
 				i(15087),	-- Wicked Leather Pants
-				i(8213, {["timeline"] = {REMOVED_4_0_3}}),	-- Wild Leather Boots
-				i(8214, {["timeline"] = {REMOVED_4_0_3}}),	-- Wild Leather Helmet
-				i(8212, {["timeline"] = {REMOVED_4_0_3}}),	-- Wild Leather Leggings
-				i(8210, {["timeline"] = {REMOVED_4_0_3}}),	-- Wild Leather Shoulders
-				i(8211, {["timeline"] = {REMOVED_4_0_3}}),	-- Wild Leather Vest
+				i(8213, {["timeline"] = { REMOVED_4_0_3 }}),	-- Wild Leather Boots
+				i(8214, {["timeline"] = { REMOVED_4_0_3 }}),	-- Wild Leather Helmet
+				i(8212, {["timeline"] = { REMOVED_4_0_3 }}),	-- Wild Leather Leggings
+				i(8210, {["timeline"] = { REMOVED_4_0_3 }}),	-- Wild Leather Shoulders
+				i(8211, {["timeline"] = { REMOVED_4_0_3 }}),	-- Wild Leather Vest
 
 				-- #if AFTER TBC
 				-- Tribal
@@ -3713,7 +5087,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15067),	-- Ironfeather Shoulders
 				i(15064),	-- Warbear Harness
 				i(15065),	-- Warbear Woolies
-				i(8345, {["timeline"] = {REMOVED_4_0_3}}),	-- Wolfshead Helm
+				i(8345, {["timeline"] = { REMOVED_4_0_3 }}),	-- Wolfshead Helm
 				-- Ele
 				i(8346),	-- Gauntlets of the Sea
 				i(8348),	-- Helm of Fire
@@ -3759,8 +5133,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 
 				-- #if AFTER CATA
-				applyclassicphase(TBC_PHASE_ONE, i(29964, {["requireSkill"] = LEATHERWORKING, ["timeline"] = {ADDED_2_0_5}})),	-- Blackstorm Leggings
-				applyclassicphase(TBC_PHASE_ONE, i(29970, {["requireSkill"] = LEATHERWORKING, ["timeline"] = {ADDED_2_0_5}})),	-- Wildfeather Leggings
+				applyclassicphase(TBC_PHASE_ONE, i(29964, {["requireSkill"] = LEATHERWORKING, ["timeline"] = { ADDED_2_0_5 }})),	-- Blackstorm Leggings
+				applyclassicphase(TBC_PHASE_ONE, i(29970, {["requireSkill"] = LEATHERWORKING, ["timeline"] = { ADDED_2_0_5 }})),	-- Wildfeather Leggings
 				-- #endif
 
 				-- #if SEASON_OF_DISCOVERY
@@ -3911,14 +5285,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 				})),
-				i(8347, {["timeline"] = {REMOVED_4_0_3}}),	-- Dragonscale Gauntlets
+				i(8347, {["timeline"] = { REMOVED_4_0_3 }}),	-- Dragonscale Gauntlets
 				i(15045, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Green Dragonscale Breastplate
 				i(20296),	-- Green Dragonscale Gauntlets
 				i(15046, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Green Dragonscale Leggings
 				i(15047, {["timeline"] = {REMOVED_6_0_2}}),	-- Red Dragonscale Breastplate
 				-- #endif
 				-- #if AFTER CATA
-				applyclassicphase(TBC_PHASE_ONE, i(29971, {["requireSkill"] = LEATHERWORKING, ["timeline"] = {ADDED_2_0_5}})),	-- Dragonstrike Leggings
+				applyclassicphase(TBC_PHASE_ONE, i(29971, {["requireSkill"] = LEATHERWORKING, ["timeline"] = { ADDED_2_0_5 }})),	-- Dragonstrike Leggings
 				-- #endif
 
 				-- #if SEASON_OF_DISCOVERY
@@ -3985,24 +5359,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(11370),	-- Dark Iron Ore
 			i(12365),	-- Dense Stone
 			i(2776),	-- Gold Ore
-			i(108296, {["timeline"] = {ADDED_6_0_2}}),	-- Gold Ore Nugget
+			i(108296, {["timeline"] = { ADDED_6_0_2 }}),	-- Gold Ore Nugget
 			i(2838),	-- Heavy Stone
 			i(2772),	-- Iron Ore
-			i(108297, {["timeline"] = {ADDED_6_0_2}}),	-- Iron Ore Nugget
+			i(108297, {["timeline"] = { ADDED_6_0_2 }}),	-- Iron Ore Nugget
 			applyclassicphase(PHASE_FIVE, i(22203)),	-- Large Obsidian Shard
 			i(3858),	-- Mithril Ore
-			i(108300, {["timeline"] = {ADDED_6_0_2}}),	-- Mithril Ore Nugget
+			i(108300, {["timeline"] = { ADDED_6_0_2 }}),	-- Mithril Ore Nugget
 			i(2835),	-- Rough Stone
 			i(2775),	-- Silver Ore
-			i(108294, {["timeline"] = {ADDED_6_0_2}}),	-- Silver Ore Nugget
+			i(108294, {["timeline"] = { ADDED_6_0_2 }}),	-- Silver Ore Nugget
 			applyclassicphase(PHASE_FIVE, i(22202)),	-- Small Obsidian Shard
 			i(7912),	-- Solid Stone
 			i(10620),	-- Thorium Ore
-			i(108298, {["timeline"] = {ADDED_6_0_2}}),	-- Thorium Ore Nugget
+			i(108298, {["timeline"] = { ADDED_6_0_2 }}),	-- Thorium Ore Nugget
 			i(2771),	-- Tin Ore
-			i(108295, {["timeline"] = {ADDED_6_0_2}}),	-- Tin Ore Nugget
+			i(108295, {["timeline"] = { ADDED_6_0_2 }}),	-- Tin Ore Nugget
 			i(7911),	-- Truesilver Ore
-			i(108299, {["timeline"] = {ADDED_6_0_2}}),	-- Truesilver Ore Nugget
+			i(108299, {["timeline"] = { ADDED_6_0_2 }}),	-- Truesilver Ore Nugget
 			-- Not Ore --
 			i(7909),	-- Aquamarine
 			i(12363),	-- Arcane Crystal
@@ -4022,7 +5396,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(774),		-- Malachite
 			i(1206),	-- Moss Agate
 			i(1210),	-- Shadowgem
-			applyclassicphase(PHASE_FOUR, i(19774, {["timeline"] = {REMOVED_4_0_3}})),	-- Souldarite
+			applyclassicphase(PHASE_FOUR, i(19774, {["timeline"] = { REMOVED_4_0_3 }})),	-- Souldarite
 			i(7910),	-- Star Ruby
 			i(818),		-- Tigerseye
 		}),

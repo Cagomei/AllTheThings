@@ -86,12 +86,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(3010, {	-- Mani Winterhoof <Alchemy Supplies>
 						["coord"] = { 47.4, 33.73, THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
-						["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
+						["groups"] = VANILLA_ALCHEMY_VIALS,
 					}),
 					n(3014, {	-- Nida Winterhoof <Herbalism Supplies>
 						["coord"] = { 49.6, 39.6, THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
-						["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
+						["groups"] = VANILLA_ALCHEMY_VIALS,
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["sym"] = {{"sub", "common_recipes_vendor", 49737} },	-- Shazdar <Sous Chef>
 						-- #endif
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_COOKING_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
 							i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 							i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)

@@ -673,19 +673,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 84523 },	-- Ameeka
 						["coord"] = { 58.2, 26.6, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(115357, {	-- Draenor Tailoring
-								["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
-								["g"] = {
-									recipe(168835),	-- Hexweave Cloth
-									recipe(176058),	-- Secrets of Draenor Tailoring
-									recipe(168852),	-- Sumptuous Cowl
-									recipe(168854),	-- Sumptuous Leggings
-									recipe(168853),	-- Sumptuous Robes
-								},
-							}),
+						["g"] = appendGroups(DRAENOR_TAILORING, {
 							i(111816),	-- Tailoring Emporium, Level 1
-						},
+						}),
 					}),
 					q(33813, {	-- In Need of a Hero
 						["sourceQuests"] = { 33070 },	-- Think of the Children! (must have picked up)

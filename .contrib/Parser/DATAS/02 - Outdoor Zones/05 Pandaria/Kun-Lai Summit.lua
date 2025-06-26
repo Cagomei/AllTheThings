@@ -871,6 +871,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 60.0, 75.6, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 156391 },	-- Li Li Stormstout
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 57068,	-- Kite Surveillance
 					}),
 					q(30593, {	-- Deanimate the Reanimated (A)
@@ -1150,6 +1151,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 55.5, 91.1, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 156938 },	-- Li Li Stormstout
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 57074,	-- Our Backs to the Gate
 					}),
 					q(30942, {	-- Make A Fighter Out of Me
@@ -1205,6 +1207,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 60.0, 75.6, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 156391 },	-- Li Li Stormstout
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 57068,	-- Kite Surveillance
 					}),
 					q(31456, {	-- Muskpaw Ranch (A)
@@ -1250,6 +1253,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 59.9, 75.5, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 156390 },	-- Chen Stormstout
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 57068,	-- Kite Surveillance
 					}),
 					q(30600, {	-- No Pack Left Behind
@@ -1297,6 +1301,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 59.9, 75.5, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 156390 },	-- Chen Stormstout
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuests"] = {
 							57069,	-- Cut Off the Heads
 							57070,	-- Mogu Massacre
@@ -1435,6 +1440,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 55.4, 91.1, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 156937 },	-- Chen Stormstout
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 57075,	-- Liquid Courage
 					}),
 					q(30946, {	-- Revelations
@@ -2099,6 +2105,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 58.5, 83.9, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 157180 },	-- Abandoned Stormstout Kegs
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 57071,	-- No Brew Left Behind
 					}),
 					q(30587, {	-- Yakity Yak

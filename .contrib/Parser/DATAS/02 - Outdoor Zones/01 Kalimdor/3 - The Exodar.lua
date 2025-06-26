@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					n(16705, {	-- Altaa <Alchemy Supplies>
 						["coord"] = { 28.1, 61.9, THE_EXODAR },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_ALCHEMY_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(VANILLA_ALCHEMY_VIALS, VANILLA_HERBS_1, VANILLA_HERBS_2, VANILLA_HERBS_3, {
 							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -75,7 +75,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					n(16706, {	-- Musal <Alchemy Supplies & Reagents>
 						["coord"] = { 44.77, 63.2, THE_EXODAR },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
+						["groups"] = VANILLA_ALCHEMY_VIALS,
+					}),
+					n(16768, {	-- Nurguni <Tradesman>
+						["coord"] = { 57.0, 50.05, THE_EXODAR },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = VANILLA_ALCHEMY_VIALS,
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -112,7 +117,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					n(16718, {	-- Phea <Cooking Supplies>
 						["coord"] = { 54.4, 26.3, THE_EXODAR },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(PHEA_GROUPS, VANILLA_COOKING_VENDOR_REAGENTS, {}),
+						["groups"] = appendGroups(PHEA_GROUPS, VANILLA_COOKING_SUPPLIES, {}),
 					}),
 				}),
 				prof(ENCHANTING, {
@@ -224,11 +229,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							i(21897),	-- Pattern: Netherweave Tunic (RECIPE!)
 						}),
 					}),
-				}),
-				n(16768, {	-- Nurguni <Tradesman>
-					["coord"] = { 57.0, 50.05, THE_EXODAR },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = VANILLA_ALCHEMY_VENDOR_REAGENTS,
 				}),
 			}),
 			n(QUESTS, {

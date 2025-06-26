@@ -1,37 +1,48 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+-- CRIEVE NOTE: For MOP Classic, figure out what level you have to be below to queue for Theramore's Fall.
+-- Also determine if it gets removed prior to the expansion being over. (MOP_PHASE_LANDFALL or something?)
+local OnUpdateForTheramoresFall = [[function(t)
+if 
+-- #if BEFORE WOD
+ not _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_SIEGE_OF_ORGRIMMAR .. [[) or 
+-- #endif
+	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then
+-- #if BEFORE WOD
+	t.u = ]] .. MOP_PHASE_ONE .. [[;
+	t.description = "This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!";
+-- #else
+	t.u = nil;
+-- #endif
+else
+	t.u = ]] .. REMOVED_FROM_GAME .. [[;
+end
+end]];
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
-	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, {
-		["timeline"] = { ADDED_5_0_4 },
-		["OnUpdate"] = [[function(t)
-			if _.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then
-				t.u = nil;
-				t.rwp = 50004;
-			else
-				t.u = ]] .. REMOVED_FROM_GAME .. [[;
-				t.rwp = nil;
-			end
-		end]],
+	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_1_0 },
+		-- #if BEFORE WOD
+		["OnUpdate"] = OnUpdateForTheramoresFall,
+		-- #endif
+	}, {
+		["lvl"] = lvlsquish(85, 85, 32),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(7467, {	-- Theramore's Fall (A)
-					["timeline"] = { ADDED_5_0_4, REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(7468, {	-- Theramore's Fall (H)
-					["timeline"] = { ADDED_5_0_4, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
 			n(SCENARIO_COMPLETION, {
-				-- #if BEFORE 5.0.4
+				-- #if BEFORE 6.0.2
 				i(89205, {	-- Mini Mana Bomb Toy (TOY!)
-					["timeline"] = { ADDED_5_0_4, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
-				i(90041, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_0_4 } }, {	-- Spoils of Theramore
+				i(90041, {	-- Spoils of Theramore
 					["description"] = "This was a reward for completing the Theramore's Fall scenario during the Mists of Pandaria pre-patch.",
 					["groups"] = {
 						-- #if BEFORE 6.0.2
@@ -64,14 +75,14 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 						i(90035),	-- Sailor's Scimitar
 						i(90036),	-- Blood Guard's Shield
 					},
-				})),
-				-- #if BEFORE 5.0.4
+				}),
+				-- #if BEFORE 6.0.2
 				i(89196, {	-- Theramore Tabard
-					["timeline"] = { ADDED_5_0_4, REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #endif
 			}),
+			-- #if AFTER 6.0.2
 			n(VENDORS, {
 				n(63546, {	-- Zidormi
 					["description"] = "Sells the following items if you completed the level 85 version of the Theramore's Fall Scenario on your current character during the Pre-Launch of MOP.",
@@ -79,44 +90,17 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					["timeline"] = { ADDED_5_0_4 },
 					["groups"] = {
 						i(89196, {	-- Theramore Tabard
-							-- #if BEFORE 10.2.7
-							-- #if AFTER TWW
-							["OnUpdate"] = [[function(t)
-								if not t.e then
-									if _.CurrentCharacter.Achievements[7467] then
-										t.u = nil;
-										t.rwp = 50004;
-									else
-										t.u = ]] .. REMOVED_FROM_GAME .. [[;
-										t.rwp = nil;
-									end
-								end
-							end]],
-							-- #endif
-							-- #endif
+							["OnUpdate"] = OnUpdateForTheramoresFall,
 							["races"] = ALLIANCE_ONLY,
 						}),
 						i(89205, {	-- Mini Mana Bomb Toy (TOY!)
-							-- #if BEFORE 10.2.7
-							-- #if AFTER TWW
-							["OnUpdate"] = [[function(t)
-								if not t.e then
-									if _.CurrentCharacter.Achievements[7468] then
-										t.u = nil;
-										t.rwp = 50004;
-									else
-										t.u = ]] .. REMOVED_FROM_GAME .. [[;
-										t.rwp = nil;
-									end
-								end
-							end]],
-							-- #endif
-							-- #endif
+							["OnUpdate"] = OnUpdateForTheramoresFall,
 							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),
 			}),
+			-- #endif
 		},
-	})),
+	}))),
 }));

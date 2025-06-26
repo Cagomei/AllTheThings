@@ -110,52 +110,52 @@ root(ROOTS.Zones, m(PANDARIA, {
 					["requireSkill"] = TAILORING,
 					["coord"] = { 31.5, 53.6, 391 },
 					["g"] = {
-						i(86361, {	-- Pattern: Contender's Satin Amice
+						i(86361, {	-- Pattern: Contender's Satin Amice (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86367, {	-- Pattern: Contender's Satin Belt
+						i(86367, {	-- Pattern: Contender's Satin Belt (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86360, {	-- Pattern: Contender's Satin Cowl
+						i(86360, {	-- Pattern: Contender's Satin Cowl (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86365, {	-- Pattern: Contender's Satin Cuffs
+						i(86365, {	-- Pattern: Contender's Satin Cuffs (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86366, {	-- Pattern: Contender's Satin Footwraps
+						i(86366, {	-- Pattern: Contender's Satin Footwraps (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86363, {	-- Pattern: Contender's Satin Handwraps
+						i(86363, {	-- Pattern: Contender's Satin Handwraps (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86364, {	-- Pattern: Contender's Satin Pants
+						i(86364, {	-- Pattern: Contender's Satin Pants (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86362, {	-- Pattern: Contender's Satin Raiment
+						i(86362, {	-- Pattern: Contender's Satin Raiment (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86353, {	-- Pattern: Contender's Silk Amice
+						i(86353, {	-- Pattern: Contender's Silk Amice (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86359, {	-- Pattern: Contender's Silk Belt
+						i(86359, {	-- Pattern: Contender's Silk Belt (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86352, {	-- Pattern: Contender's Silk Cowl
+						i(86352, {	-- Pattern: Contender's Silk Cowl (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86357, {	-- Pattern: Contender's Silk Cuffs
+						i(86357, {	-- Pattern: Contender's Silk Cuffs (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86358, {	-- Pattern: Contender's Silk Footwraps
+						i(86358, {	-- Pattern: Contender's Silk Footwraps (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86355, {	-- Pattern: Contender's Silk Handwraps
+						i(86355, {	-- Pattern: Contender's Silk Handwraps (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86356, {	-- Pattern: Contender's Silk Pants
+						i(86356, {	-- Pattern: Contender's Silk Pants (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
-						i(86354, {	-- Pattern: Contender's Silk Raiment
+						i(86354, {	-- Pattern: Contender's Silk Raiment (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
 					},

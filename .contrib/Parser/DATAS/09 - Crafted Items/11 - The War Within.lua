@@ -1628,6 +1628,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(86453, 1213583); -- Glyph of the Admiral's Pistol Shot
 			FirstCraft(86451, 1213561); -- Glyph of the Ashvane Pistol Shot
 			FirstCraft(86454, 1213582); -- Glyph of the Gilded Pistol Shot
+			---FirstCraft(XXXXX, 1234336, ADDED_11_1_7);	-- Glyph of the Strix
 			FirstCraft(86455, 1213581); -- Glyph of the Twilight Pistol Shot
 			-- Inks
 			FirstCraft(80730, 444222);	-- Apricate Ink
@@ -1677,7 +1678,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(234246),	-- Glyph of the Admiral's Pistol Shot
 			i(234245),	-- Glyph of the Ashvane Pistol Shot
 			i(234247),	-- Glyph of the Gilded Pistol Shot
-			i(243051, {["timeline"]={ADDED_11_1_7},}),	-- Glyph of the Strix
+			i(243051, {["timeline"] = {ADDED_11_1_7}}),	-- Glyph of the Strix
 			i(234248),	-- Glyph of the Twilight Pistol Shot
 		}),
 		filter(MISC, {

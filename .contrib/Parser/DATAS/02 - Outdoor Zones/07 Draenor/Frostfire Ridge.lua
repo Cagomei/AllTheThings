@@ -392,19 +392,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 84689 },	-- Trega
 						["coord"] = { 20.4, 60.6, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(115357, {	-- Draenor Tailoring
-								["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
-								["g"] = {
-									recipe(168835),	-- Hexweave Cloth
-									recipe(176058),	-- Secrets of Draenor Tailoring
-									recipe(168852),	-- Sumptuous Cowl
-									recipe(168854),	-- Sumptuous Leggings
-									recipe(168853),	-- Sumptuous Robes
-								},
-							}),
+						["g"] = appendGroups(DRAENOR_TAILORING, {
 							i(111816),	-- Tailoring Emporium, Level 1
-						},
+						}),
 					}),
 					q(34292, {	-- Eliminate the Shadow Council
 						["provider"] = { "n", 72836 },	-- Cordana Felsong
