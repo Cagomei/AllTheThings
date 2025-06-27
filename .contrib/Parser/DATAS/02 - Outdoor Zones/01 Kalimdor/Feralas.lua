@@ -822,7 +822,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26402, {	-- General Shandris Feathermoon
 					["qg"] = 40032,	-- Telaron Windflight
 					["sourceQuest"] = 25398,	-- Sealing the Dream
-					["description"] = "If you picked up or done any quest at Feathermoon Stronghold, this quest stops being available",
+					-- TODO: ideally figure out proper lockCriteria instead of description
+					["description"] = "If you completed or currently have active any quest at Feathermoon Stronghold, this quest stops being available",
 					["coord"] = { 50.7, 17.2, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

@@ -13,12 +13,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			crit(61200, {	-- Place a Gnoll Tent
 				["provider"] = { "i", 193476 },	-- Place a Gnoll Tent
 			}),
-			crit(61203, {	-- Cured Rugged Hide
-				["provider"] = { "i", 15407 },	-- Cured Rugged Hide
-			}),
-			crit(61204, {	-- Stitch a Magnificent Hide Pack
-				["provider"] = { "i", 95536 },	-- Stitch a Magnificent Hide Pack
-			}),
+			crit(61203),	-- Cured Rugged Hide (automated)
+			crit(61204),	-- Stitch a Magnificent Hide Pack (automated)
 			crit(61207, {	-- Eat Dirge's Kickin' Chimaerok Chops
 				["provider"] = { "i", 21023 },	-- Eat Dirge's Kickin' Chimaerok Chops
 			}),

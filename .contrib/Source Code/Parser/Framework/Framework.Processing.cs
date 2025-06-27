@@ -2820,7 +2820,7 @@ namespace ATT
                         {
                             Objects.Merge(data, "_species", existingModifierTree.Asset);
                         }
-                        else if(WagoData.TryGetValue(existingModifierTree.Asset, out BattlePetSpecies battlePetSpecies))
+                        else if (WagoData.TryGetValue(existingModifierTree.Asset, out BattlePetSpecies battlePetSpecies))
                         {
                             Objects.Merge(data, "_npcs", battlePetSpecies.CreatureID);
                         }
@@ -3536,12 +3536,16 @@ namespace ATT
                         {
                             // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
                             Items.MarkItemAsReferenced(pID);
-                            if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue) && objectData.ObjectType == "questID")
+                            // Classic likes providers to be Items still due to the logic implementation
+                            if (!Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
                             {
-                                // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
-                                Objects.Merge(data, "qis", pID);
-                                providersList.RemoveAt(i);
-                                i--;
+                                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue) && objectData.ObjectType == "questID")
+                                {
+                                    // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
+                                    Objects.Merge(data, "qis", pID);
+                                    providersList.RemoveAt(i);
+                                    i--;
+                                }
                             }
                         }
                         // These Item providers are referenced as an actual quest starter and SHOULD be sourced elsewhere in ATT for how they are obtained
@@ -3970,7 +3974,7 @@ namespace ATT
             {
                 switch (entry.Change)
                 {
-                    case ChangeType.ADDED  :
+                    case ChangeType.ADDED:
                         addedPatch = entry.Version;
                         break;
                     case ChangeType.DELETED:

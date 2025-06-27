@@ -884,7 +884,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(50128),	-- Bucket of Burning Pitch (QI!)
 						i(50162),	-- Crawgol's Silithid Field Guide (QI!)
 					},
 				}),
@@ -1796,7 +1795,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24654, {	-- Silithissues
-					["qg"] = 37910,	-- Crawgol
+					["providers"] = {
+						{ "n", 37910 },	-- Crawgol
+						{ "i", 50128 },	-- Bucket of Burning Pitch (QI!) not prov
+					},
 					["coord"] = { 41.6, 69.4, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1850,7 +1852,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24534, {	-- Speaking Their Language
-					["qg"] = 11857,	-- Makaba Flathoof
+					["providers"] = {
+						{ "n", 11857 },	-- Makaba Flathoof
+						{ "i", 49782 },	-- Horn of Challenge (QI!) not prov
+					},
 					["sourceQuest"] = 24529,	-- Bad to Worse
 					["coord"] = { 44.2, 33.6, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1871,8 +1876,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131374, {	-- Bristleback Challenge Treads
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						--
-						i(49782),	-- Horn of Challenge (QI!)
 					},
 				}),
 				q(889, {	-- Spirit of the Wind
