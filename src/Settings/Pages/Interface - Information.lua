@@ -507,6 +507,19 @@ local InformationTypes = {
 			end
 		end,
 	}),
+	CreateInformationType("qis", { text = L.QUEST_ITEMS, priority = 2.06, ShouldDisplayInExternalTooltips = false,
+		Process = function(t, reference, tooltipInfo)
+			local qis = reference.qis
+			if qis then
+				for i=1,#qis do
+					tinsert(tooltipInfo, {
+						left = (i == 1 and L.QUEST_ITEMS),
+						right = ConversionMethods.itemNameAndIcon(qis[i], reference),
+					})
+				end
+			end
+		end,
+	}),
 	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
 			local coords = reference.coords;

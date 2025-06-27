@@ -589,6 +589,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						),
 					}),
 				}),
+				-- #if AFTER WRATH
 				prof(INSCRIPTION, {
 					n(30713, {	-- Catarina Stanford <Inscription Trainer>
 						["coords"] = {
@@ -606,7 +607,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 						}),
 					}),
+					n(30730, {	-- Stanly McCormick <Inscription Supplies>
+						["coord"] = { 49.6, 74.6, STORMWIND_CITY },
+						["timeline"] = { ADDED_3_0_2 },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = INSCRIPTION_SUPPLIES,
+					}),
 				}),
+				-- #endif
 				prof(JEWELCRAFTING, {
 					n(32379, {	-- Captain O'Neal <Jewelcrafting Quartermaster>
 						["coord"] = { 75.0, 66.7, STORMWIND_CITY },
@@ -7106,9 +7114,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(79740),	-- Plain Wooden Staff
 						i(1515),	-- Rough Wooden Staff
-						i(39489, {	-- Scribe's Satchel
-							["isLimited"] = true,
-						}),
 					},
 				}),
 				n(43768, {	-- Tannec Stonebeak <Gryphon Keeper>

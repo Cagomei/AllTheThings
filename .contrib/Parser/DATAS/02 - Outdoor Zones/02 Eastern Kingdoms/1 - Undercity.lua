@@ -213,6 +213,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["groups"] = HERB_POUCH,
 					}),
 				}),
+				-- #if AFTER WRATH
+				prof(INSCRIPTION, {
+					n(30729, {	-- Ickabod Pimlen <Inscription Supplies>
+						["coord"] = { 61.83, 57.53, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_3_0_2 },
+						["groups"] = INSCRIPTION_SUPPLIES,
+					}),
+				}),
+				-- #endif
 				prof(JEWELCRAFTING, {
 					n(4561, {	-- Daniel Bartlett <Trade Supplies> [TBC+] / Daniel Bartlett <General Trade Supplier>
 						["coord"] = { 64.0, 37.4, UNDERCITY },

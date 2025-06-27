@@ -159,10 +159,19 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					}),
 				}),
 				prof(INSCRIPTION, {
+				}),
+				-- #if AFTER WRATH
+				prof(INSCRIPTION, {
+					n(30732, {	-- Sessoh <Inscription Supplies>
+						["coord"] = { 39.6, 38.7, THE_EXODAR },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { ADDED_3_0_2 },
+						["groups"] = INSCRIPTION_SUPPLIES,
+					}),
 					n(30716, {	-- Thoth <Inscription Trainer>
 						["coord"] = { 40.5, 39.8, THE_EXODAR },
-						["timeline"] = { ADDED_3_0_2 },
 						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { ADDED_3_0_2 },
 						["groups"] = {
 							i(137789, {	-- Technique: Songs of the Legion (RECIPE!)
 								["timeline"] = { ADDED_7_0_3 },
@@ -170,6 +179,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						},
 					}),
 				}),
+				-- #endif
 				prof(JEWELCRAFTING, {
 					n(17512, {	-- Arred <Jewelcrafting Supplies>
 						["coord"] = { 45.5, 25.3, THE_EXODAR },

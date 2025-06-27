@@ -435,11 +435,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 65.0, 47.0, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(5917) },	-- Spy's Report (QI!)
 				}),
 				q(1220, {	-- Captain Vimes
 					["providers"] = {
 						{ "n", 4947 },	-- Theramore Lieutenant
-						{ "i", 5917 },	-- Spy's Report
+						{ "i", 5917 },	-- Spy's Report (QI!) not QS
 					},
 					["sourceQuest"] = 1219,	-- The Orc Report
 					["coords"] = {
@@ -655,6 +656,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(33051),	-- Grimtotem Battle Plan (QI!)
+						i(33050),	-- Grimtotem Note (QI!)
+					},
 				}),
 				q(11144, {	-- Confirming the Suspicion
 					["qg"] = 23568,	-- Captain Darill
@@ -1982,6 +1987,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.9, 57.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(33072) },	-- Tabetha's Torch (QI!)
 				}),
 				q(11150, {	-- Raze Direhorn Post! [A]
 					["qg"] = 6546,	-- Tabetha
@@ -2014,6 +2020,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(33072) },	-- Tabetha's Torch (QI!)
 				}),
 				q(11205, {	-- Raze Direhorn Post! [H]
 					["qg"] = 6546,	-- Tabetha
@@ -2871,6 +2878,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(33051),	-- Grimtotem Battle Plan (QI!)
+						i(33050),	-- Grimtotem Note (QI!)
+					},
 				}),
 				q(11201, {	-- The Grimtotem Plot
 					["qg"] = 4926,	-- Krog
@@ -2957,11 +2968,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.4, 25.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(5917) },	-- Spy's Report (QI!)
 				}),
 				q(1238, {	-- The Lost Report
 					["providers"] = {
 						{ "o", 20985 },	-- Loose Dirt
-						{ "i", 5917 },	-- Spy's Report
+						{ "i", 5917 },	-- Spy's Report (QI!) not QS
 					},
 					["coord"] = { 55.4, 26, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3026,11 +3038,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.4, 25.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(5917) },	-- Spy's Report (QI!)
 				}),
 				q(1219, {	-- The Orc Report
 					["providers"] = {
 						{ "o", 20985 },	-- Loose Dirt
-						{ "i", 5917 },	-- Spy's Report
+						{ "i", 5917 },	-- Spy's Report (QI!) not QS
 					},
 					["coord"] = { 55.4, 26, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },

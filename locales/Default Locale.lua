@@ -64,6 +64,7 @@ local L = setmetatable({
 	OBJECT_TYPE = "Object Type";
 	OBJECTIVES = "Objectives";
 	QUEST_GIVERS = "Quest Givers";
+	QUEST_ITEMS = "Quest Items";
 	RUNEFORGE_POWER_ID = "Runeforge Power ID";
 
 	-- Instructional Text

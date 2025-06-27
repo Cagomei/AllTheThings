@@ -469,6 +469,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			["description"] = "Rewarded for completing a random mop dungeon during leveling or completing a random mop timewalking dungeon.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			-- #endif
 			["g"] = {
+				i(113757),	-- Band of Directed Fury
 				i(113788),	-- Blossoming Belt*
 				i(113764),	-- Blossoming Cap*
 				i(113766),	-- Blossoming Gloves*

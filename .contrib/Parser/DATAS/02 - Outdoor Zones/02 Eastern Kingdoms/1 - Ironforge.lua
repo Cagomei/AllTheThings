@@ -290,6 +290,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["groups"] = HERB_POUCH,
 					}),
 				}),
+				-- #if AFTER WRATH
+				prof(INSCRIPTION, {
+					n(30733, {	-- Thargen Heavyquilll <Inscription Supplies>
+						["coord"] = { 60.55, 43.65, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { ADDED_3_0_2 },
+						["groups"] = INSCRIPTION_SUPPLIES,
+					}),
+				}),
+				-- #endif
 				prof(JEWELCRAFTING, {
 					n(5163, {	-- Burbik Gearspanner <Trade Supplies>
 						["coord"] = { 46.6, 27.2, IRONFORGE },

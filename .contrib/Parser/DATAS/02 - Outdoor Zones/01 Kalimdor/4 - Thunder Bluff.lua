@@ -195,6 +195,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["groups"] = appendGroups(FISHING_SUPPLIES, SHINY_BAUBLE, {}),
 					}),
 				}),
+				-- #if AFTER WRATH
+				prof(INSCRIPTION, {
+					n(30724, {	-- Mertle Murkpen <Inscription Supplies>
+						["coord"] = { 28.63, 20.26, THUNDER_BLUFF },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_3_0_2 },
+						["groups"] = INSCRIPTION_SUPPLIES,
+					}),
+				}),
+				-- #endif
 				prof(JEWELCRAFTING, {
 					n(52658, {	-- Paku Cloudchaser <Jewelcrafting Supplies>
 						["coord"] = { 34.75, 53.45, THUNDER_BLUFF },

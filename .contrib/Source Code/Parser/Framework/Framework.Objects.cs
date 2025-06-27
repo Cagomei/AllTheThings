@@ -1794,6 +1794,7 @@ end");
                     case "_sourceIDs":
                     case "_species":
                     case "_extraSpells":
+                    case "qis":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;

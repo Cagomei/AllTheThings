@@ -2061,32 +2061,33 @@ i(238901, 1226532);	-- Winter Harvesthog
 -- PATCH 11.1.7 --
 ------------------
 i(238739, 1226144);	-- Chrono Corsair
+i(243594, 1235817);	-- Forsaken's Grotesque Charger
 i(246264, 1241429);	-- Inarius' Charger
 i(245694, 1237703);	-- Ivory Savagemane
 i(245695, 1237631);	-- Moonlit Nightsaber
 i(246237, 1241263);	-- OC91 Chariot
 i(0, 1236262);	-- Shaohao's Sage Serpent
+i(245936, 1240003);	-- Unarmored Deathtusk Felboar
+i(243596, 1235819);	-- Wailing Banshee's Charger
 --- UNSORTED ---
 i(243593, 1234859);	-- Banshee's Chilling Charger
 i(243597, 1235820);	-- Banshee's Sickening Charger
-i(243594, 1235817);	-- Forsaken's Grotesque Charger
 i(243590, 1235763);	-- Grandmaster's Deep Board
 i(243572, 1235756);	-- Grandmaster's Prophetic Board
 i(243591, 1235803);	-- Grandmaster's Royal Board
 i(243592, 1235806);	-- Grandmaster's Smokey Board
-i(245936, 1240003);	-- Unarmored Deathtusk Felboar
-i(243596, 1235819);	-- Wailing Banshee's Charger
 
 ------------------
 -- PATCH 11.2.0 --
 ------------------
+i(242730, 1233547);	-- Acidic Void Creeper
 i(248248, 1246781);	-- Azure Void Flyer
+i(242717, 1233518);	-- Lavender K'arroc
 i(242729, 1233546);	-- Ruby Void Creeper
 i(247822, 1245517);	-- Scarlet Void Flyer
 i(237484, 1223187);	-- Terror of the Wastes
 i(243061, 1234573);	-- Unbound Star-Eater
 --- UNSORTED ---
-i(242730, 1233547);	-- Acidic Void Creeper
 i(247791, 1245357);	-- Adorned Northeron Gryphon
 i(0, 472157);	-- Astral Gladiator's Fel Bat
 i(242733, 1233559);	-- Blue Barry
@@ -2097,7 +2098,6 @@ i(242734, 1233561);	-- Curious Slateback
 i(238051, 1224048);	-- Delver's Mana-Skimmer
 i(247794, 1245361);	-- Emberwing Sky Guide
 i(247792, 1245358);	-- High Shaman's Aerie Gryphon
-i(242717, 1233518);	-- Lavender K'arroc
 i(246921, 1244261);	-- Legion Forged Elekk
 i(247795, 1245370);	-- Ornery Breezestrider
 i(246067, 1240632);	-- Pearlescent Krolusk

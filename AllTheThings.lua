@@ -1353,27 +1353,7 @@ app.AddEventHandler("OnLoad", function()
 	})
 end)
 
-local GetRawField = app.GetRawField
-local SourceSearcher = setmetatable({
-	itemID = function(field, id)
-		local results = SearchForObject("itemID", id, "field", true)
-		if results then return results end
-		local baseItemID = GetItemIDAndModID(id)
-		results = SearchForObject("itemID", baseItemID, "field", true)
-		return results
-	end,
-	currencyID = function(field, id)
-		local results = SearchForObject(field, id, "field", true)
-		return results
-	end
-},{
-	__index = function(t, field)
-		return GetRawField
-	end
-})
--- Some key-based Searches should simply use a different field
-SourceSearcher.mountmodID = SourceSearcher.itemID
-SourceSearcher.heirloomID = SourceSearcher.itemID
+local SourceSearcher = app.SourceSearcher
 
 local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	-- Create a list of sources
@@ -1392,10 +1372,11 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	local sourcesToShow
 	-- paramB is the modItemID for itemID searches, so we may have to fallback to the base itemID if nothing sourced for the modItemID
 	-- TODO: Rings from raid showing all difficulties, need fallback matching for items... modItemID, modID, itemID
-	local allReferences = SourceSearcher[paramA](paramA,paramB) or app.EmptyTable
-	-- app.PrintDebug("Sources count",#allReferences,paramA,paramB,GetItemIDAndModID(paramB))
-	for _,j in ipairs(allReferences) do
-		parent = j.parent;
+	-- using a second return, directSources, to indicate the SourceSearcher has returned the Sources rather than the Things
+	local allReferences, directSources = SourceSearcher[paramA](paramA,paramB)
+	-- app.PrintDebug(directSources and "Source count" or "Search count",#allReferences,paramA,paramB,GetItemIDAndModID(paramB))
+	for _,j in ipairs(allReferences or app.EmptyTable) do
+		parent = directSources and j or j.parent
 		-- app.PrintDebug("source:",app:SearchLink(j),parent and parent.parent,showCompleted or not app.IsComplete(j))
 		if parent and parent.parent
 			and (showCompleted or not app.IsComplete(j))

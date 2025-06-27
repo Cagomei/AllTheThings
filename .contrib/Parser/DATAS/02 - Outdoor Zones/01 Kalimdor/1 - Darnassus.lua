@@ -247,6 +247,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["groups"] = HERB_POUCH,
 					}),
 				}),
+				-- #if AFTER WRATH
+				prof(INSCRIPTION, {
+					n(30731, {	-- Illianna Moonscribe <Inscription Supplies>
+						["coord"] = { 56.7, 31.8, DARNASSUS },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { ADDED_3_0_2 },
+						["groups"] = INSCRIPTION_SUPPLIES,
+					}),
+				}),
+				-- #endif
 				prof(JEWELCRAFTING, {
 					n(4229, {	-- Mythrin'dir <Trade Supplies> [TBC+] / Mythrin'dir <General Trade Supplier>
 						-- #if AFTER CATA

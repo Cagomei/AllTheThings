@@ -925,6 +925,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					["achievementID"] = 11217,
 					["modelScale"] = 2.25,
 				}),
+				n(TREASURES, {
+					o_repeated({	-- Spirit Berries
+						["coord"] = { 45.6, 63.7, THE_DREAMGROVE },
+						["g"] = {
+							o(253157),	-- Spirit Berries
+							o(253183),	-- Spirit Berries
+							i(140347),	-- Spirit Berries
+							i(140351),	-- Sunfruit
+						},
+					}),
+				}),
 				n(VENDORS, {
 					n(112323, {	-- Amurra Thistledew <Proprietor>
 						["coord"] = { 40.0, 24.8, THE_DREAMGROVE },

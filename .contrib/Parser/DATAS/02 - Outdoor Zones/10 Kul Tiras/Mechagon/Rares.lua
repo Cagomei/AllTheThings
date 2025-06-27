@@ -423,6 +423,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 				["g"] = {
 					i(167846),	-- Blueprint: Mechano-Treat
+					i(168435),	-- Remote Circuit Bypasser
 					i(170467),	-- Whirring Chainblade
 				},
 			}),

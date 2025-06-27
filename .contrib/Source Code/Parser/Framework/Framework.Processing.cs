@@ -3531,11 +3531,20 @@ namespace ATT
                 switch (pType)
                 {
                     case "i":
-                        if (hasQuestGivers || Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
+                        // These Item providers are ONLY referenced as a way to hook tooltips on that Item to show the root data
+                        if (hasQuestGivers || i > 0)
                         {
                             // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
                             Items.MarkItemAsReferenced(pID);
+                            if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue) && objectData.ObjectType == "questID")
+                            {
+                                // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
+                                Objects.Merge(data, "qis", pID);
+                                providersList.RemoveAt(i);
+                                i--;
+                            }
                         }
+                        // These Item providers are referenced as an actual quest starter and SHOULD be sourced elsewhere in ATT for how they are obtained
                         else
                         {
                             var item = Items.GetNull(pID);
@@ -4051,13 +4060,13 @@ namespace ATT
                     string pType = provider[0] as string;
                     switch (pType)
                     {
-                        // Items can simply be Sourced under the parent
+                        // Items can simply be referenced to the parent
                         case "i":
                             if (!TryGetSOURCED("itemID", pID, out _))
                             {
                                 Items.MarkItemAsReferenced(pID);
-                                providerData = new Dictionary<string, object> { { "itemID", pID } };
-                                Objects.Merge(parentData, "g", providerData);
+                                // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
+                                Objects.Merge(parentData, "qis", pID);
                             }
                             break;
                         // Objects can be Sourced under the parent with attached coords if any

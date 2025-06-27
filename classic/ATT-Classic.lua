@@ -1448,6 +1448,9 @@ local function SearchForLink(link)
 	local cache;
 	if id then
 		cache = SearchForField(kind, id);
+		if #cache == 0 and kind == "itemID" then
+			cache = app.SearchForObject("qItemID", id, "none", true)
+		end
 		if #cache == 0 then
 			local obj = CloneClassInstance({
 				key = kind, [kind] = id,
@@ -1644,7 +1647,7 @@ function app:GetDataCache()
 				expanded = false
 			}));
 		end
-		
+
 		-- Pet Battles
 		if app.Categories.PetBattles then
 			tinsert(g, app.CreateNPC(app.HeaderConstants.PET_BATTLE, {

@@ -293,20 +293,10 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(206285),	-- Vagabond's Grassy Cape
 				i(206296),	-- Vagabond's Grassy Hood
 
-				------ Vagabond's Plum Threads ------
-				iensemble(206323),	-- Ensemble: Vagabond's Plum Threads
-				i(206279),	-- Vagabond's Plum Cape
-				i(206290),	-- Vagabond's Plum Hood
-
 				------ Wanderer's Grassy Trappings ------
 				iensemble(206340),	-- Ensemble: Wanderer's Grassy Trappings
 				i(206318),	-- Wanderer's Grassy Cloak
 				i(206307),	-- Wanderer's Grassy Scarf
-
-				------ Wanderer's Plum Trappings ------
-				iensemble(206334),	-- Ensemble: Wanderer's Plum Trappings
-				i(206312),	-- Wanderer's Plum Cloak
-				i(206301),	-- Wanderer's Plum Scarf
 			}),
 			n(WEAPONS, {
 				i(190561),	-- Crystalblade of Shifting Magic
@@ -319,7 +309,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(ARMOR, {
 				i(210856),	-- Trader's Faded Sarong
 				i(210851),	-- Trader's Grassy Sarong
-				i(210859),	-- Trader's Plum Sarong
 			}),
 			n(WEAPONS, {
 				i(190875),	-- Chilled Touch of the Condemned
@@ -339,7 +328,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190847),	-- Deathmantle Assassin's Barb
 				i(190090),	-- Dessicated Bouquet
 				i(212625),	-- Dueler's Grassy Shoulder Cape
-				i(212618),	-- Dueler's Plum Shoulder Cape
 				i(190893),	-- Jeweled Valkyrion Cape
 				i(190688),	-- Silvered Helm of Righteousness
 				i(212705),	-- Spring Reveler's Cornsilk Attire
@@ -378,11 +366,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190902),	-- Will of the Titanforged
 				i(190889),	-- Woodsman's Hatchet
 			}),
-		})),
-
-		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
-			i(213155),	-- Dark Ranger General's Quiver
 		})),
 
 		-- 10.2.6

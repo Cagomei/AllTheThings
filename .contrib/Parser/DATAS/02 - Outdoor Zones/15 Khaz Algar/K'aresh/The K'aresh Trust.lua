@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				}),
 			}),
 			n(QUESTS, sharedData({
-				["provider"] = { "n", 355252 },	-- Om'sirik <Renown Quartermaster>
+				["provider"] = { "n", 235252 },	-- Om'sirik <Renown Quartermaster>
 				["coord"] = { 40.6, 29.2, KARESH_TAZAVESH },
 			}, bubbleDownRep(FACTION_THE_KARESH_TRUST, {
 				{		-- RENOWN 1 --
@@ -28,6 +28,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				}, {	-- RENOWN 8 --
 				}, {	-- RENOWN 9 --
 				}, {	-- RENOWN 10 --
+					i(245968),	-- Tabard of the Trust
 				}, {	-- RENOWN 11 --
 				}, {	-- RENOWN 12 --
 				}, {	-- RENOWN 13 --
@@ -47,7 +48,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				},
 			}))),
 			n(VENDORS, {
-				n(355252, {	-- Om'sirik <Renown Quartermaster>
+				n(235252, {	-- Om'sirik <Renown Quartermaster>
 					["coord"] = { 40.6, 29.2, KARESH_TAZAVESH },
 					["g"] = bubbleDownRep(FACTION_THE_KARESH_TRUST, {
 						{		-- RENOWN 1 --

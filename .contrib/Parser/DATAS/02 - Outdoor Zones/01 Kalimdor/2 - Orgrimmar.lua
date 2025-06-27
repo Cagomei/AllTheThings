@@ -611,24 +611,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					-- #endif
 				}),
+				-- #if AFTER WRATH
 				prof(INSCRIPTION, {
 					n(30706, {	-- Jo'mah <Inscription Trainer>
 						["coord"] = { 35.6, 69.2, ORGRIMMAR },
-						["timeline"] = { ADDED_3_0_2 },
 						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_3_0_2 },
 						["groups"] = CLASSIC_INSCRIPTION,
+					}),
+					n(46718, {	-- Moraka <Inscription Supplies>
+						["coord"] = { 55.3, 56.0, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_4_0_1 },
+						["groups"] = INSCRIPTION_SUPPLIES,
 					}),
 					n(46716, {	-- Nerog <Inscription Trainer>
 						["coord"] = { 55.2, 55.8, ORGRIMMAR },
-						["timeline"] = { ADDED_4_0_1 },
 						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_4_0_1 },
 						["groups"] = {
 							i(140565, {	-- Technique: Songs of the Horde
 								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
+					n(30723, {	-- Xantili <Inscription Supplies>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 35.85, 69.5, ORGRIMMAR },
+							-- #else
+							{ 56.0, 46.2, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_3_0_2 },
+						["groups"] = INSCRIPTION_SUPPLIES,
+					}),
 				}),
+				-- #endif
 				prof(JEWELCRAFTING, {
 					n(3367, {	-- Felika <Trade Supplies>
 						["description"] = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
@@ -4229,7 +4249,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(46718, {	-- Moraka
-					["coord"] = { 55.8, 55.6, ORGRIMMAR },
+					["coord"] = { 55.3, 56.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						79740,	-- Plain Wooden Staff
@@ -5180,7 +5200,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(30723, {	-- Xantili
-					["coord"] = { 36.2, 69.8, ORGRIMMAR },
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 35.85, 69.5, ORGRIMMAR },
+						-- #else
+						{ 56.0, 46.2, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(79740),	-- Plain Wooden Staff

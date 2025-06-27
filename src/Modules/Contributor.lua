@@ -132,6 +132,7 @@ local MapPrecisionOverrides = {
 	[1702] = 2,	-- The Roots
 	[1912] = 10,	-- The Runecarver's Oubliette
 	[2328] = 3,	-- The Proscenium
+	[2477] = 4,	-- Voidscar Cavern, K'aresh
 }
 
 local function Check_coords(objRef, id, maxCoordDistance)
@@ -1288,6 +1289,7 @@ MobileDB.GameObject = {
 	[478744] = true,	-- Mislaid Curiosity (delve object)
 	[478679] = true,	-- Salvage Part
 	[479594] = true,	-- Depleted Hotrod Battery
+	[483713] = true,	-- Watering Jug  (wq:85460)
 	[487825] = true,	-- Ruffled Pages (q:85589)
 	[494499] = true,	-- Seafarer's Cache
 	[495091] = true,	-- Improvised Explosive

@@ -1906,88 +1906,88 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						cl(DRUID, {
 							-- DPS (AGILITY)
 							i(233709),	-- Genesis Cowl
-							i(233713),	-- Genesis Spaulders),
+							i(233713),	-- Genesis Spaulders
 							-- DPS (Intellect)
-							i(233717),	-- Genesis Mantle),
-							i(233718),	-- Genesis Headdress),
+							i(233717),	-- Genesis Mantle
+							i(233718),	-- Genesis Headdress
 							-- Healer
-							i(233722),	-- Genesis Pauldrons),
-							i(233723),	-- Genesis Mask),
+							i(233722),	-- Genesis Pauldrons
+							i(233723),	-- Genesis Mask
 							-- Tank
-							i(233412),	-- Genesis Helm),
-							i(233413),	-- Genesis Shoulderpads),
+							i(233412),	-- Genesis Helm
+							i(233413),	-- Genesis Shoulderpads
 						}),
 						cl(HUNTER, {
 							-- Melee
-							i(233666),	-- Striker's Visor),
-							i(233668),	-- Striker's Spaulders),
+							i(233666),	-- Striker's Visor
+							i(233668),	-- Striker's Spaulders
 							-- Ranged
-							i(233409),	-- Striker's Pauldrons),
-							i(233410),	-- Striker's Diadem),
+							i(233409),	-- Striker's Pauldrons
+							i(233410),	-- Striker's Diadem
 						}),
 						cl(MAGE, {
 							-- DPS
-							i(233403),	-- Enigma Shoulderpads),
-							i(233404),	-- Enigma Circlet),
+							i(233403),	-- Enigma Shoulderpads
+							i(233404),	-- Enigma Circlet
 							-- Healer
-							i(233676),	-- Enigma Diadem),
-							i(233677),	-- Enigma Mantle),
+							i(233676),	-- Enigma Diadem
+							i(233677),	-- Enigma Mantle
 						}),
 						cl(PALADIN, {
 							-- DPS
-							i(233398),	-- Avengers Crown),
-							i(233401),	-- Avengers Pauldrons),
+							i(233398),	-- Avengers Crown
+							i(233401),	-- Avengers Pauldrons
 							-- Healer
-							i(233684),	-- Avengers Mantle),
-							i(233687),	-- Avengers Helm),
+							i(233684),	-- Avengers Mantle
+							i(233687),	-- Avengers Helm
 							-- Tank
-							i(233689),	-- Avengers Spaulders),
-							i(233692),	-- Avengers Great Helm),
+							i(233689),	-- Avengers Spaulders
+							i(233692),	-- Avengers Great Helm
 						}),
 						cl(PRIEST, {
 							-- DPS
-							i(233393),	-- Tiara of the Oracle),
-							i(233394),	-- Mantle of the Oracle),
+							i(233393),	-- Tiara of the Oracle
+							i(233394),	-- Mantle of the Oracle
 							-- Healer
-							i(233681),	-- Shoulderpads of the Oracle),
-							i(233682),	-- Crown of the Oracle),
+							i(233681),	-- Shoulderpads of the Oracle
+							i(233682),	-- Crown of the Oracle
 						}),
 						cl(ROGUE, {
 							-- DPS
-							i(233387),	-- Deathdealer's Spaulders),
-							i(233388),	-- Deathdealer's Helm),
+							i(233387),	-- Deathdealer's Spaulders
+							i(233388),	-- Deathdealer's Helm
 							-- Tank
-							i(233661),	-- Deathdealer's Visor),
-							i(233663),	-- Deathdealer's Pauldrons),
+							i(233661),	-- Deathdealer's Visor
+							i(233663),	-- Deathdealer's Pauldrons
 						}),
 						cl(SHAMAN, {
-							i(233700),	-- Stormcaller's Crown),
-							i(233702),	-- Stormcaller's Mantle),
+							i(233700),	-- Stormcaller's Crown
+							i(233702),	-- Stormcaller's Mantle
 							-- DPS (Intellect)
-							i(233705),	-- Stormcaller's Headdress),
-							i(233707),	-- Stormcaller's Epaulets),
+							i(233705),	-- Stormcaller's Headdress
+							i(233707),	-- Stormcaller's Epaulets
 							-- Healer
-							i(233383),	-- Stormcaller's Pauldrons),
-							i(233385),	-- Stormcaller's Diadem),
+							i(233383),	-- Stormcaller's Pauldrons
+							i(233385),	-- Stormcaller's Diadem
 							-- Tank
-							i(233695),	-- Stormcaller's Faceguard),
-							i(233697),	-- Stormcaller's Spaulders),
+							i(233695),	-- Stormcaller's Faceguard
+							i(233697),	-- Stormcaller's Spaulders
 						}),
 						cl(WARLOCK, {
 							-- DPS
-							i(233379),	-- Doomcaller's Mantle),
-							i(233381),	-- Doomcaller's Circlet),
+							i(233379),	-- Doomcaller's Mantle
+							i(233381),	-- Doomcaller's Circlet
 							-- Tank
-							i(233669),	-- Doomcaller's Headguard),
-							i(233671),	-- Doomcaller's Shoulderpads),
+							i(233669),	-- Doomcaller's Headguard
+							i(233671),	-- Doomcaller's Shoulderpads
 						}),
 						cl(WARRIOR, {
 							-- DPS
-							i(233653),	-- Conqueror's Helm),
-							i(233658),	-- Conqueror's Pauldrons),
+							i(233653),	-- Conqueror's Helm
+							i(233658),	-- Conqueror's Pauldrons
 							-- Tank
-							i(233375),	-- Conqueror's Crown),
-							i(233376),	-- Conqueror's Spaulders),
+							i(233375),	-- Conqueror's Crown
+							i(233376),	-- Conqueror's Spaulders
 						}),
 					},
 				}),

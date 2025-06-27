@@ -80,7 +80,6 @@ root(ROOTS.Unsorted, {
 				i(239457),	-- Reshii Scout's Soles
 				i(239458),	-- Reshii Scout's Grips
 				i(239459),	-- Reshii Scout's Hood
-				i(239460),	-- Reshii Scout's Breeches
 				i(239461),	-- Reshii Scout's Shoulderpads
 				i(239462),	-- Reshii Scout's Belt
 				i(239463),	-- Reshii Scout's Bracers
@@ -176,7 +175,6 @@ root(ROOTS.Unsorted, {
 				i(244491),	-- Worn Shadowguard Blade's Belt
 				i(244492),	-- Worn Shadowguard Blade's Bracers
 				i(244493),	-- Worn Shadowguard Striker's Brigandine
-				i(244494),	-- Worn Shadowguard Striker's Boots
 				i(244495),	-- Worn Shadowguard Striker's Gauntlets
 				i(244496),	-- Worn Shadowguard Striker's Cowl
 				i(244497),	-- Worn Shadowguard Striker's Legguards
@@ -267,7 +265,6 @@ root(ROOTS.Unsorted, {
 				i(244470),	-- Etheric Victory
 				i(244907),	-- Dread Horrorling
 				i(244909),	-- Impartial Watcher
-				i(244910),	-- Penumbral Terror
 				i(244914),	-- Xanthous Siphonmite
 				i(244916),	-- Cyan Siphonmite
 				i(245212),	-- Vitriolic Inchshifter
@@ -333,40 +330,6 @@ root(ROOTS.Unsorted, {
 				i(246298),	-- Cracked Staff of the Desperate Defender
 				i(246301),	-- Pitted Blade of Lost Hope
 
-
-				-- Vendor Cosmetic?
-				i(244267),	-- Untethered Seer's Vestments
-				i(244268),	-- Untethered Seer's Slippers
-				i(244269),	-- Untethered Seer's Gloves
-				i(244270),	-- Untethered Seer's Crown
-				i(244271),	-- Untethered Seer's Leggings
-				i(244272),	-- Untethered Seer's Spines
-				i(244273),	-- Untethered Seer's Cord
-				i(244274),	-- Untethered Seer's Bands
-				i(244275),	-- Untethered Blade's Jerkin
-				i(244276),	-- Untethered Blade's Soles
-				i(244277),	-- Untethered Blade's Grips
-				i(244278),	-- Untethered Blade's Hood
-				i(244279),	-- Untethered Blade's Breeches
-				i(244280),	-- Untethered Blade's Shoulderpads
-				i(244281),	-- Untethered Blade's Belt
-				i(244282),	-- Untethered Blade's Bracers
-				i(244283),	-- Untethered Striker's Brigandine
-				i(244284),	-- Untethered Striker's Boots
-				i(244285),	-- Untethered Striker's Gauntlets
-				i(244286),	-- Untethered Striker's Cowl
-				i(244287),	-- Untethered Striker's Legguards
-				i(244288),	-- Untethered Striker's Pauldrons
-				i(244289),	-- Untethered Striker's Sash
-				i(244290),	-- Untethered Striker's Armguards
-				i(244291),	-- Untethered Captain's Breastplate
-				i(244292),	-- Untethered Captain's Sollerets
-				i(244293),	-- Untethered Captain's Handguards
-				i(244294),	-- Untethered Captain's Helmet
-				i(244295),	-- Untethered Captain' s Greaves
-				i(244296),	-- Untethered Captain's Epaulettes
-				i(244297),	-- Untethered Captain's Greatbelt
-				i(244298),	-- Untethered Captain's Vambraces
 				-- Undermine??
 				i(237944),	-- Ensemble: Junkreaver's Plates
 				i(237945),	-- Ensemble: Blastborne Loadout
@@ -374,8 +337,6 @@ root(ROOTS.Unsorted, {
 				i(237953),	-- Ensemble: Noxious Injector Apparatus
 				i(237954),	-- Arsenal: Undermine Weaponry
 				-- Reputation Cosmetic
-				i(245968),	-- Tabard of the Trust
-
 				i(248780),	-- Consortium Brute's Cape
 				i(248781),	-- Consortium Skirmisher's Cloak
 				i(248782),	-- Consortium Scout's Serape
@@ -389,7 +350,6 @@ root(ROOTS.Unsorted, {
 				i(248791),	-- Wastelander Skirmisher's Cloak
 				i(248792),	-- Wastelander Magi's Shawl
 				i(248793),	-- Wastelander Brute's Cape
-				i(248916),	-- Untethered Seer's Capelet
 				i(248917),	-- Untethered Blade's Mantle
 				i(248918),	-- Untethered Striker's Shroud
 				i(248919),	-- Untethered Captain's Capote
@@ -581,7 +541,7 @@ root(ROOTS.Unsorted, {
 					-- Feet
 					-- Chest
 					cl(DEATHKNIGHT, {
-						i(237623),	-- Hollow Sentinel's Wingdrape
+						i(237623),	-- Hollow Sentinel's Wingdrape (Contained inside an Ensemble sold by Ba'choso)
 						i(237624),	-- Hollow Sentinel's Stonecuffs
 						i(237625),	-- Hollow Sentinel's Greatbelt
 						i(237626),	-- Hollow Senintel's Perches
@@ -592,7 +552,7 @@ root(ROOTS.Unsorted, {
 						i(237631),	-- Hollow Sentinel's Breastplate
 					}),
 					cl(DEMONHUNTER, {
-						i(237686),	-- Charhound's Vicious Felcover
+						i(237686),	-- Charhound's Vicious Felcover (Contained inside an Ensemble sold by Ba'choso)
 						i(237687),	-- Charhound's Vicious Restraints
 						i(237688),	-- Charhound's Vicious Huntbelt
 						i(237689),	-- Charhound's Vicious Hornguards
@@ -603,7 +563,7 @@ root(ROOTS.Unsorted, {
 						i(237694),	-- Charhound's Vicious Bindings
 					}),
 					cl(DRUID, {
-						i(237677),	-- Plumage of the Mother Eagle
+						i(237677),	-- Plumage of the Mother Eagle (Contained inside an Ensemble sold by Ba'choso)
 						i(237678),	-- Bands of the Mother Eagle
 						i(237679),	-- Dreamsash of the Mother Eagle
 						i(237680),	-- Ritual Pauldrons of the Mother Eagle
@@ -614,7 +574,7 @@ root(ROOTS.Unsorted, {
 						i(237685),	-- Vest of the Mother Eagle
 					}),
 					cl(EVOKER, {
-						i(237650),	-- Spellweaver's Immaculate Runecloak
+						i(237650),	-- Spellweaver's Immaculate Runecloak (Contained inside an Ensemble sold by Ba'choso)
 						i(237651),	-- Spellweaver's Immaculate Cuffs
 						i(237652),	-- Spellweaver's Immaculate Crystal Cord
 						i(237653),	-- Spellweaver's Immaculate Pauldrons
@@ -625,7 +585,7 @@ root(ROOTS.Unsorted, {
 						i(237658),	-- Spellweaver's Immaculate Crestward
 					}),
 					cl(HUNTER, {
-						i(237641),	-- Midnight Herald's Shroud
+						i(237641),	-- Midnight Herald's Shroud (Contained inside an Ensemble sold by Ba'choso)
 						i(237642),	-- Midnight Herald's Wristguards
 						i(237643),	-- Midnight Herald's Clasp
 						i(237644),	-- Midnight Herald's Shadowguards
@@ -636,7 +596,7 @@ root(ROOTS.Unsorted, {
 						i(237649),	-- Midnight Herald's Hauberk
 					}),
 					cl(MAGE, {
-						i(237713),	-- Augur's Ephemeral Brilliance
+						i(237713),	-- Augur's Ephemeral Brilliance (Contained inside an Ensemble sold by Ba'choso)
 						i(237714),	-- Augur's Ephemeral Bindings
 						i(237715),	-- Augur's Ephemeral Quillsash
 						i(237716),	-- Augur's Ephemeral Orbs of Power
@@ -647,7 +607,7 @@ root(ROOTS.Unsorted, {
 						i(237721),	-- Augur's Ephemeral Habiliments
 					}),
 					cl(MONK, {
-						i(237668),	-- Breeze of Fallen Storms
+						i(237668),	-- Breeze of Fallen Storms (Contained inside an Ensemble sold by Ba'choso)
 						i(237669),	-- Demigaunts of Fallen Storms
 						i(237670),	-- Thunderbund of Fallen Storms
 						i(237671),	-- Glyphs of Fallen Storms
@@ -658,7 +618,7 @@ root(ROOTS.Unsorted, {
 						i(237676),	-- Gi of Fallen Storms
 					}),
 					cl(PALADIN, {
-						i(237614),	-- Gilded Cloak of the Lucent Battalion
+						i(237614),	-- Gilded Cloak of the Lucent Battalion (Contained inside an Ensemble sold by Ba'choso)
 						i(237615),	-- Vambraces of the Lucent Battalion
 						i(237616),	-- Seal of the Lucent Battalion
 						i(237617),	-- Chargers of the Lucent Battalion
@@ -669,7 +629,7 @@ root(ROOTS.Unsorted, {
 						i(237622),	-- Cuirass of the Lucent Battalion
 					}),
 					cl(PRIEST, {
-						i(237704),	-- Dying Star's Memory
+						i(237704),	-- Dying Star's Memory (Contained inside an Ensemble sold by Ba'choso)
 						i(237705),	-- Dying Star's Bangles
 						i(237706),	-- Dying Star's Waistlight
 						i(237707),	-- Dying Star's Pyrelights
@@ -680,7 +640,7 @@ root(ROOTS.Unsorted, {
 						i(237712),	-- Dying Star's Cassock
 					}),
 					cl(ROGUE, {
-						i(237659),	-- Cape of the Sudden Eclipse
+						i(237659),	-- Cape of the Sudden Eclipse (Contained inside an Ensemble sold by Ba'choso)
 						i(237660),	-- Armbands of the Sudden Eclipse
 						i(237661),	-- Strap of the Sudden Eclipse
 						i(237662),	-- Smokemantle of the Sudden Eclipse
@@ -691,7 +651,7 @@ root(ROOTS.Unsorted, {
 						i(237667),	-- Tactical Vest of the Sudden Eclipse
 					}),
 					cl(SHAMAN, {
-						i(237632),	-- Shawl of Channeled Fury
+						i(237632),	-- Shawl of Channeled Fury (Contained inside an Ensemble sold by Ba'choso)
 						i(237633),	-- Bracers of Channeled Fury
 						i(237634),	-- Fauld of Channeled Fury
 						i(237635),	-- Fangs of Channeled Fury
@@ -702,7 +662,7 @@ root(ROOTS.Unsorted, {
 						i(237640),	-- Furs of Channeled Fury
 					}),
 					cl(WARLOCK, {
-						i(237695),	-- Inquisitor's All-Seeing Madness
+						i(237695),	-- Inquisitor's All-Seeing Madness (Contained inside an Ensemble sold by Ba'choso)
 						i(237696),	-- Inquisitor's Bracelets of Madness
 						i(237697),	-- Inquisitor's Tome of Madness
 						i(237698),	-- Inquisitor's Gaze of Madness
@@ -713,7 +673,7 @@ root(ROOTS.Unsorted, {
 						i(237703),	-- Inquisitor's Robes of Madness
 					}),
 					cl(WARRIOR, {
-						i(237605),	-- Living Weapon's Cape
+						i(237605),	-- Living Weapon's Cape (Contained inside an Ensemble sold by Ba'choso)
 						i(237606),	-- Living Weapon's Manacles
 						i(237607),	-- Living Weapon's Chain
 						i(237608),	-- Living Weapon's Ramparts
@@ -727,13 +687,11 @@ root(ROOTS.Unsorted, {
 				--]]
 			}),
 			filter(MISC, {
-				i(232323),	-- Watering Jug
 				i(234389),	-- Shadowguard Translocator (Weird reuse??! /Braghe)
 				i(236632),	-- Pouch of Voidbane Gems
 				i(238801),	-- Mite-Kissed Silver Tooth
 				i(238808),	-- Celeste-Touched Fin
 				i(238810),	-- Mana-Blessed Fin
-				i(238834),	-- Burnished Void Claw
 				i(238849),	-- Ominous Unblinking Eye
 				i(238851),	-- Fractured Dragon Scale
 				i(238853),	-- Netherbound Heart
@@ -743,7 +701,6 @@ root(ROOTS.Unsorted, {
 				i(238870),	-- Pearly Incisor
 				i(238879),	-- Cracked Void Carapace
 				i(238881),	-- Barbed Predator Tusk
-				i(238882),	-- Cursed Eyeball Cluster
 				i(238885),	-- Unstable Power Source
 				i(238888),	-- Essence of Ephemeral Knowledge
 				i(238889),	-- Eldritch Signal Antenna
@@ -795,8 +752,6 @@ root(ROOTS.Unsorted, {
 				i(247820),	-- Cache of K'areshi Treasures
 				i(247821),	-- Cache of K'areshi Treasures
 				i(244300),	-- Phase-Sealed Box
-				i(244335),	-- K'aresh Box of Valorstones
-				i(244336),	-- K'aresh Box of Resonance Crystals
 				i(244354),	-- Ethereal Equipment Chest
 				i(244842),	-- Fabled Veteran's Cache
 				i(244865),	-- Pinnacle Cache
@@ -898,7 +853,6 @@ root(ROOTS.Unsorted, {
 				i(186639),	-- Xy Trustee's Gearglider
 				i(186640),	-- Vandal's Gearglider
 				i(242713),	-- Resplendent K'arroc
-				i(242717),	-- Lavender K'arroc
 				i(242733),	-- Blue Barry
 				i(242734),	-- Curious Slateback
 				i(246067),	-- Pearlescent Krolusk
@@ -1426,7 +1380,6 @@ root(ROOTS.Unsorted, {
 				i(232574),	-- Missing Shipment
 				i(232578),	-- Wastelander Artifact
 				i(232601),	-- Entropic Egg
-				i(232609),	-- Overflowing Anima Core
 				i(232612),	-- Laacunite Shard
 				i(232625),	-- Wastelander Artifact
 				i(232626),	-- Wastelander Artifact
@@ -1518,10 +1471,8 @@ root(ROOTS.Unsorted, {
 				i(232627),	-- Wastelander Artifact
 				i(232628),	-- Wastelander Artifact
 				i(232630),	-- Xy Imports Ledger
-				i(232644),	-- Broker Disguise Pin
 				i(232992),	-- Large Bug Bits
 				i(233005),	-- Om'taha's Toolkit[DNT]
-				i(233009),	-- Firebud Pollen
 				i(233012),	-- Flamethrower
 				i(233195),	-- Pheromone Disperser
 				i(233287),	-- Barrel of Swirling Energy
@@ -1573,8 +1524,6 @@ root(ROOTS.Unsorted, {
 				i(237019),	-- Corrupted Sap
 				i(237022),	-- Discarded Items
 				i(237030),	-- Condenser Disc
-				i(237038),	-- Shahata's Supplies
-				i(237127),	-- Damaged Echo Surveyor
 				i(237136),	-- Wastes Scanner
 				i(237266),	-- Stolen Veilshard
 				i(237352),	-- A Dozen Veilshards
@@ -1687,12 +1636,8 @@ root(ROOTS.Unsorted, {
 				i(242346),	-- Ensemble: Rainy Day Attire
 				i(242347),	-- Ensemble: Waterproof Attire
 				i(242348),	-- Chilling Forsaken Mace
-				i(242349),	-- Grotesque Forsaken Mace
-				i(242350),	-- Putrid Forsaken Mace
 				i(242351),	-- Sickly Forsaken Mace
 				i(242352),	-- Chilling Forsaken Warglaives
-				i(242353),	-- Grotesque Forsaken Warglaives
-				i(242354),	-- Putrid Forsaken Warglaives
 				i(242355),	-- Sickly Forsaken Warglaives
 				i(242357),	-- Grandmaster's Fire Grip Stave
 				i(242358),	-- Grandmaster's Blue Stave
@@ -1703,16 +1648,10 @@ root(ROOTS.Unsorted, {
 				i(242374),	-- Grandmaster's Royal Bulwark
 				i(242375),	-- Grandmaster's White Bulwark
 				i(242376),	-- Chilling Forsaken Longbow
-				i(242377),	-- Grotesque Forsaken Longbow
-				i(242378),	-- Putrid Forsaken Longbow
 				i(242379),	-- Sickly Forsaken Longbow
 				i(242381),	-- Chilling Forsaken Quiver
-				i(242382),	-- Grotesque Forsaken Quiver
-				i(242383),	-- Putrid Forsaken Quiver
 				i(242384),	-- Sickly Forsaken Quiver
 				i(242385),	-- Chilling Forsaken Wand
-				i(242387),	-- Grotesque Forsaken Wand
-				i(242388),	-- Putrid Forsaken Wand
 				i(242389),	-- Sickly Forsaken Wand
 				i(242407),	-- Midnight Sweatpants
 				i(242408),	-- Azure Sweatshirt
@@ -1722,11 +1661,9 @@ root(ROOTS.Unsorted, {
 				i(242412),	-- Deep Sweatshirt
 				i(242413),	-- Camo Sweatshirt
 				i(242414),	-- Brick Sweatshirt
-				i(242415),	-- Lively Sweatshirt
 				i(242416),	-- Faded Sweatshirt
 				i(242417),	-- Carrot Sweatshirt
 				i(242418),	-- Rosy Sweatshirt
-				i(242419),	-- Plum Sweatshirt
 				i(242420),	-- Crimson Sweatshirt
 				i(242421),	-- Violet Sweatshirt
 				i(242422),	-- Aquatic Sweatshirt
@@ -1739,11 +1676,9 @@ root(ROOTS.Unsorted, {
 				i(242441),	-- Deep Sweatpants
 				i(242442),	-- Camo Sweatpants
 				i(242443),	-- Brick Sweatpants
-				i(242444),	-- Lively Sweatpants
 				i(242445),	-- Faded Sweatpants
 				i(242446),	-- Carrot Sweatpants
 				i(242447),	-- Rosy Sweatpants
-				i(242448),	-- Plum Sweatpants
 				i(242449),	-- Crimson Sweatpants
 				i(242450),	-- Violet Sweatpants
 				i(242451),	-- Aquatic Sweatpants
@@ -1758,19 +1693,15 @@ root(ROOTS.Unsorted, {
 				i(242460),	-- Ensemble: Deep Sweatsuit
 				i(242461),	-- Ensemble: Camo Sweatsuit
 				i(242462),	-- Ensemble: Brick Sweatsuit
-				i(242466),	-- Ensemble: Lively Sweatsuit
 				i(242467),	-- Ensemble: Faded Sweatsuit
 				i(242469),	-- Ensemble: Carrot Sweatsuit
 				i(242471),	-- Ensemble: Rosy Sweatsuit
-				i(242474),	-- Ensemble: Plum Sweatsuit
 				i(242478),	-- Ensemble: Crimson Sweatsuit
 				i(242480),	-- Ensemble: Violet Sweatsuit
 				i(242485),	-- Ensemble: Aquatic Sweatsuit
 				i(242489),	-- Ensemble: Snowy Sweatsuit
 				i(242492),	-- Ensemble: Sunny Sweatsuit
 				i(242521),	-- Chiling Forsaken Cauldron
-				i(242522),	-- Grotesque Forsaken Cauldron
-				i(242523),	-- Putrid Forsaken Cauldron
 				i(242524),	-- Sickening Forsaken Cauldron
 				i(242525),	-- Grandmaster's Fire Grip Axe
 				i(242526),	-- Grandmaster's Blue Axe
@@ -1781,12 +1712,8 @@ root(ROOTS.Unsorted, {
 				i(242541),	-- Grandmaster's Royal Mace
 				i(242542),	-- Grandmaster's White Mace
 				i(242627),	-- Chilling Forsaken Blade
-				i(242628),	-- Grotesque Forsaken Blade
-				i(242629),	-- Putrid Forsaken Blade
 				i(242630),	-- Sickly Forsaken Blade
 				i(242631),	-- Chilling Forsaken Great Blade
-				i(242632),	-- Grotesque Forsaken Great Blade
-				i(242633),	-- Putrid Forsaken Great Blade
 				i(242634),	-- Sickly Forsaken Great Blade
 
 				-- Feels like Dastarly Dou??? Cosmetics or Trading Post
@@ -1829,44 +1756,33 @@ root(ROOTS.Unsorted, {
 
 				-- Cosmetic Trading Post?? or Greedy Emissary?
 				i(244180),	-- Banshee's Chilling Veil
-				i(244181),	-- Banshee's Grotesque Veil
 				i(244182),	-- Banshee's Putrid Veil
 				i(244183),	-- Banshee's Sickly Veil
 				i(244184),	-- Chilling Epaulets of the Banshee
-				i(244185),	-- Grotesque Epaulets of the Banshee
 				i(244186),	-- Putrid Epaulets of the Banshee
 				i(244187),	-- Sickly Epaulets of the Banshee
 				i(244188),	-- Chilling Leggings of the Banshee
-				i(244189),	-- Grotesque Leggings of the Banshee
 				i(244190),	-- Putrid Leggings of the Banshee
 				i(244191),	-- Sickly Leggings of the Banshee
 				i(244198),	-- Banshee's Chilling Grip
-				i(244199),	-- Banshee's Grotesque Grip
 				i(244200),	-- Banshee's Putrid Grip
 				i(244201),	-- Banshee's Sickly Grip
 				i(244202),	-- Banshee's Chilling Vestment
-				i(244203),	-- Banshee's Grotesque Vestment
 				i(244204),	-- Banshee's Putrid Vestment
 				i(244205),	-- Banshee's Sickly Vestment
 				i(244206),	-- Banshee's Chilling Chestplate
-				i(244207),	-- Banshee's Grotesque Chestplate
 				i(244208),	-- Banshee's Putrid Chestplate
 				i(244209),	-- Banshee's Sickly Chestplate
 				i(244210),	-- Chilling Shroud of the Banshee
-				i(244211),	-- Grotesque Shroud of the Banshee
 				i(244212),	-- Putrid Shroud of the Banshee
 				i(244213),	-- Sickly Shroud of the Banshee
 				i(244215),	-- Chilling Banshee Boots
-				i(244216),	-- Grotesque Banshee Boots
 				i(244217),	-- Putrid Banshee Boots
 				i(244218),	-- Sickly Banshee Boots
 				i(244219),	-- Chilling Banshee Cinch
-				i(244220),	-- Grotesque Banshee Cinch
 				i(244221),	-- Putrid Banshee Cinch
 				i(244222),	-- Sickly Banshee Cinch
 				i(244223),	-- Ensemble: Banshee's Chilling Collection
-				i(244225),	-- Ensemble: Banshee's Grotesque Collection
-				i(244226),	-- Ensemble: Banshee's Putrid Collection
 				i(244227),	-- Ensemble: Banshee's Sickly Collection
 				i(244540),	-- Charred Flamewake Sprout
 				i(244541),	-- Zin-Azshari Court Scepter
@@ -1916,7 +1832,6 @@ root(ROOTS.Unsorted, {
 				i(244834),	-- Hippogryph Lancer's Magespear
 				i(244836),	-- Cane of the Runic Wanderer
 				i(244837),	-- Rookforged Dragonblade
-				i(245745),	-- Classic Plum Tabard
 			}),
 			n(CLASSES, {
 				-- T2 Greedy Emissary Alternative Chest/Offset Pieces?
@@ -1932,9 +1847,6 @@ root(ROOTS.Unsorted, {
 				i(243592),	-- Grandmaster's Smokey Board
 				i(243593),	-- Banshee's Chilling Charger
 				i(243597),	-- Banshee's Sickening Charger
-				i(243594),	-- Forsaken' Grotesque Charger
-				i(245936),	-- Unarmored Deathtusk Felboar
-				i(243596),	-- Wailing Banshee's Charger
 			}),
 
 			i(246015),	-- Classic Midnight Eye Patch
@@ -4494,7 +4406,6 @@ root(ROOTS.Unsorted, {
 			i(169883),	-- Animate Grease
 			i(169895),	-- Azeroth Mini: Beastbot
 			i(169896),	-- Azeroth Mini: Pascal-K1N6
-			i(169763),	-- Mardivas's Magnificent Desalinating Pouch \\ Mardivas' Magnificent Desalinating Pouch \\ Magnificent Desalinating Pouch
 			i(169941),	-- Ceremonial Ankoan Scabbard
 			i(169946),	-- Saltwater Taffy
 			i(169947),	-- Candied Zin-Azshari Sea Grapes
@@ -4521,7 +4432,6 @@ root(ROOTS.Unsorted, {
 			i(169987),	-- Inert Dragonscale
 			i(169988),	-- Inert Mineral Dust
 			i(169992),	-- Cracked Iris Lens
-			i(169998),	-- Weathered Bulwark
 			i(169999),	-- Crumbling Barrier
 			i(170000),	-- Battered Bastion
 			i(170001),	-- Seized Engine
@@ -4541,7 +4451,6 @@ root(ROOTS.Unsorted, {
 			i(170026),	-- Seed Husks
 			i(170027),	-- Withering Seed
 			i(170028),	-- Fading Seed Bud
-			i(170030),	-- Burned Codex
 			i(170031),	-- Moldy Tome
 			i(170032),	-- Crumbling Vellum
 			i(170033),	-- Decharged Battery
@@ -4584,7 +4493,6 @@ root(ROOTS.Unsorted, {
 			i(170272),	-- War-Torn Memento
 			i(170379),	-- Sunwarmed Sand
 			i(170512),	-- Lesser Benthic Arcanocrystal
-			i(168435),	-- Remote Circuit Bypasser
 			i(168632),	-- Slipstream Generator
 			i(168633),	-- Supplemental Oxygenation Device
 			i(168648),	-- Emergency Anti-Gravity Device

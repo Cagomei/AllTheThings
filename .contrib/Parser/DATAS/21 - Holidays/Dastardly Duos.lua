@@ -96,6 +96,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
 					["g"] = {
 						i(239440),	-- Dastardly Prize Purse
+						spell(1227074),	-- Winner's Podium: Average Item Level
 						--spell(1227073),	-- Winner's Podium, High Score
 					},
 				}),
@@ -113,7 +114,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
 					["g"] = {
 						i(239440),	-- Dastardly Prize Purse
-						spell(1227074),	-- Winner's Podium: Average Item Level
 					},
 				}),
 				-- unsorted due to ptr things, sourceQuest is speculated

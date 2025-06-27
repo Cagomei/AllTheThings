@@ -2058,6 +2058,29 @@ app.AddEventRegistration("QUEST_TURNED_IN", function(questID)
 end)
 app.AddEventHandler("OnRefreshCollections", RefreshAllQuestInfo);
 
+-- popout handler for Quest Items group
+local function AddQuestItems(group)
+	local qis = group.qis
+	if not qis then return end
+
+	local g = {}
+	for i=1,#qis do
+		g[#g + 1] = app.CreateItem(qis[i])
+	end
+
+	-- Show Quest Items
+	local questItems = app.CreateRawText(L.QUEST_ITEMS, {
+		icon = 133736,
+		OnUpdate = app.AlwaysShowUpdate,
+		OnClick = app.UI.OnClick.IgnoreRightClick,
+		skipFull = true,
+		skipContains = true,
+		SortPriority = -2.95,
+		g = g,
+	})
+	app.NestObject(group, questItems);
+end
+app.AddEventHandler("OnNewPopoutGroup", AddQuestItems)
 
 
 

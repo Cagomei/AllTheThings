@@ -14,6 +14,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				["g"] = {
 					i(242323),	-- Chowdar's Favorite Ribbon (TOY!)
 					i(239477),	-- Reshii Brute's Epaulettes
+					i(239460),	-- Reshii Scout's Breeches
 				},
 			}),
 			n(241956, {	-- Arcana-Monger So'zer

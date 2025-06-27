@@ -201,6 +201,22 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		-- #endif
 	}),
 }));
+INSCRIPTION_SUPPLIES = bubbleDown({ ["sharedDescription"] = "Can be bought from Inscription Suppliers, as well as some Trade vendors around the world." }, {
+	i(10648, {	-- Common Parchment
+		["timeline"] = { REMOVED_5_0_4 },
+	}),
+	i(39501, {	-- Heavy Parchment
+		["timeline"] = { REMOVED_5_0_4 },
+	}),
+	i(39354),	-- Light Parchment
+	i(39502, {	-- Resilient Parchment
+		["timeline"] = { REMOVED_5_0_4 },
+	}),
+	i(39489, {	-- Scribe's Satchel
+		["isLimited"] = true,
+	}),
+	i(39505),	-- Virtuoso Inking Set
+});
 BFA_INSCRIPTION = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	r(382984, {["timeline"] = {ADDED_10_0_0}}),	-- Kul Tiras and Zandalar Milling
 	r(256219),	-- Mass Mill Akunda's Bite

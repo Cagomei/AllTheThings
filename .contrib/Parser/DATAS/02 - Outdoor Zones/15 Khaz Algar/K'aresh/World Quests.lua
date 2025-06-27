@@ -6,6 +6,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 		n(WORLD_QUESTS, {
 			q(85460, {	-- Ecological Succession
 				["coord"] = { 74.1, 32.6, ISLE_OF_DORN },
+				["g"] = {
+					o(483713, {	-- Watering Jug
+						i(232323),	-- Watering Jug (QI!)
+					}),
+				},
 			}),
 			pvp(q(89241, {	-- Up and Up
 				["coord"] = { 72.6, 12.4, KARESH },

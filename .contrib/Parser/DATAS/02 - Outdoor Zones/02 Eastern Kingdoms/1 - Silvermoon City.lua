@@ -146,7 +146,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						["groups"] = FISHING_SUPPLIES,
 					}),
 				}),
+				-- #if AFTER WRATH
 				prof(INSCRIPTION, {
+					n(30727, {	-- Lelorian <Inscription Supplies>
+						["coord"] = { 69.8, 23.2, SILVERMOON_CITY },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_3_0_2 },
+						["groups"] = INSCRIPTION_SUPPLIES,
+					}),
 					n(30710, {	-- Zantasia <Inscription Trainer>
 						["coord"] = { 69.6, 23.6, SILVERMOON_CITY },
 						["timeline"] = { ADDED_3_0_2 },
@@ -158,6 +165,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						},
 					}),
 				}),
+				-- #endif
 				prof(JEWELCRAFTING, {
 					n(16624, {	-- Gelanthis <Jewelcrafting Supplies>
 						["coord"] = { 90.8, 73.6, SILVERMOON_CITY },
