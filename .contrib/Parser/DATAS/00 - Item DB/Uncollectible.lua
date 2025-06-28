@@ -436,6 +436,7 @@ i(170099);	-- Corroded Elegant Key
 i(169997);	-- Cracked Aegis
 i(169132);	-- Cracked Gyroscope
 i(170029);	-- Cracked Tablet
+i(169999);	-- Crumbling Barrier
 i(169124);	-- Decorational Whirlycog
 i(170097);	-- Discarded Quel'dorei Tome
 i(169149);	-- Dulled Micro-Serrated Incisor
@@ -443,6 +444,7 @@ i(170005);	-- Fractured Pearl
 i(169138);	-- Fractured Personality Module
 i(169123);	-- Functional Fiddleswitch
 i(169129);	-- Lovingly Worn Wrench
+i(170031);	-- Moldy Tome
 i(170096);	-- Sodden Highborne Painting
 i(169145);	-- Rusted Precision Gripper
 i(169135);	-- Warped Shock Absorber
@@ -2477,6 +2479,7 @@ i(229809);	-- Weighted Metal Ball
 -- PATCH 11.1.5 --
 ------------------
 i(241632);	-- Heroic Waxy Figurine
+i(241616);	-- The Underpin
 
 ------------------
 -- PATCH 11.2.0 --

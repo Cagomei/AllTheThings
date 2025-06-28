@@ -264,7 +264,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			})
 		})),
 		--[[
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 			n(219222, {	-- Lalandi <Conquest Quartermaster>
 				["coord"] = { 55.1, 76.2, DORNOGAL },
 				["ItemAppearanceModifierID"] = 159,
@@ -594,7 +594,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				},
 			}),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 }, ["bonusID"] = 7532 }, {
+		]]--
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 }, ["bonusID"] = 7532 }, {
+			--[[
 			n(CLASSES, {
 				cl(DEATHKNIGHT, {
 					i(229731),	-- Prized Gladiator's Cloak
@@ -740,32 +742,32 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					i(229769),	-- Prized Gladiator's Plate Wristguards
 				}),
 			}),
+			]]--
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
 				["coord"] = { 59.8, 69.3, DORNOGAL },
 				["g"] = {
-					honor(100, i(231637, {	-- Prized Gladiator's Tabard
-						["sourceAchievements"] = { 41019 },	-- Elite: The War Within Season 2
+					honor(100, i(232908, {	-- Astral Gladiator's Tabard
+						["sourceAchievements"] = { 41027 },	-- Elite: The War Within Season 3
 					})),
-					moh(5, i(230784)),	-- Prized Gladiator's Army Knife
-					moh(10, i(230776)),	-- Prized Gladiator's Blaster
-					moh(5, i(230774)),	-- Prized Gladiator's Bludgeon
-					moh(10, i(230788)),	-- Prized Gladiator's Bow
-					moh(5, i(230785)),	-- Prized Gladiator's Conduit
-					moh(10, i(230782)),	-- Prized Gladiator's Dagger
-					moh(5, i(230787)),	-- Prized Gladiator's Detonator
-					moh(10, i(230778)),	-- Prized Gladiator's Drill
-					moh(5, i(230783)),	-- Prized Gladiator's Flail
-					moh(5, i(230786)),	-- Prized Gladiator's Gasket
-					moh(10, i(230789)),	-- Prized Gladiator's Greatsaw
-					moh(5, i(230775)),	-- Prized Gladiator's Pincer
-					moh(10, i(230790)),	-- Prized Gladiator's Pulverizer
-					moh(10, i(230781)),	-- Prized Gladiator's Pylon
-					moh(10, i(230779)),	-- Prized Gladiator's Staff
-					moh(10, i(230780)),	-- Prized Gladiator's Torchblade
-					moh(5, i(230777)),	-- Prized Gladiator's Warglaive
+					--moh(5, i(230784)),	-- Prized Gladiator's Army Knife
+					--moh(10, i(230776)),	-- Prized Gladiator's Blaster
+					--moh(5, i(230774)),	-- Prized Gladiator's Bludgeon
+					--moh(10, i(230788)),	-- Prized Gladiator's Bow
+					--moh(5, i(230785)),	-- Prized Gladiator's Conduit
+					--moh(10, i(230782)),	-- Prized Gladiator's Dagger
+					--moh(5, i(230787)),	-- Prized Gladiator's Detonator
+					--moh(10, i(230778)),	-- Prized Gladiator's Drill
+					--moh(5, i(230783)),	-- Prized Gladiator's Flail
+					--moh(5, i(230786)),	-- Prized Gladiator's Gasket
+					--moh(10, i(230789)),	-- Prized Gladiator's Greatsaw
+					--moh(5, i(230775)),	-- Prized Gladiator's Pincer
+					--moh(10, i(230790)),	-- Prized Gladiator's Pulverizer
+					--moh(10, i(230781)),	-- Prized Gladiator's Pylon
+					--moh(10, i(230779)),	-- Prized Gladiator's Staff
+					--moh(10, i(230780)),	-- Prized Gladiator's Torchblade
+					--moh(5, i(230777)),	-- Prized Gladiator's Warglaive
 				},
 			}),
 		})),
-		]]--
 	}),
 }))));

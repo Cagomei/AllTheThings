@@ -4,6 +4,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
 	inst(1303, {	-- Eco-Dome Al'dani
 		["coord"] = { 43.8, 4.1, KARESH },
+		["lore"] = "The eco-domes represent the best hope of restoring life to K'aresh. Eco-Dome Al'dani was built on the bones of one of the most sacred sites on K'aresh. A Wastelander invasion has ripped open the dome, exposing it to destruction. Ve'nari has called for help to keep all those resources from being wasted, and K'aresh's greatest hope from being destroyed.",
 		["maps"] = {
 			2449,	-- Eco-Dome Al'dani
 		},
@@ -26,7 +27,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				e(3108, {	-- Taah'bat and A'wazj
 					["crs"] = {
 						234933,	-- Taah'bat <The Relentless>
-						241375,	-- A'wazj
+						237514,	-- A'wazj
 					},
 					["g"] = {
 						i(242479),	-- Girdle of Absolute Faith
@@ -39,7 +40,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					},
 				}),
 				e(3109, {	-- Soul-Scribe
-					["crs"] = { 247283 },	-- Soul-Scribe
+					["crs"] = { 234935 },	-- Soul-Scribe
 					["g"] = {
 						ach(42780),	-- Eco-Dome Al'dani
 						i(242490),	-- Ancient Oracle's Caress

@@ -2433,6 +2433,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = SKINNING,
 		},{
+			FirstSkin(91127, 232098, ADDED_11_2_0),	-- Skinning "Chowdar"
 			FirstSkin(83410, 216031),	-- Skinning Abyssal Devourer
 			FirstSkin(83411, 214151),	-- Skinning Ahg'zagall
 			FirstSkin(81450, 219264),	-- Skinning Bloodmaw
@@ -2450,29 +2451,39 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(87592, 230935, ADDED_11_1_0),	-- Skinning Grease
 			FirstSkin(87593, 230936, ADDED_11_1_0),	-- Skinning Grime
 			FirstSkin(87590, 231017, ADDED_11_1_0),	-- Skinning Grimewick
+			FirstSkin(91132, 238540, ADDED_11_2_0),	-- Skinning Grubber
 			FirstSkin(83402, 221668),	-- Skinning Horror of the Shallows
 			FirstSkin(83413, 221327),	-- Skinning Kaheti Silk Hauler
 			FirstSkin(81455, 220275),	-- Skinning King Splash
+			FirstSkin(91126, 232077, ADDED_11_2_0),	-- Skinning Korgorath the Ravager
 			FirstSkin(83409, 220285),	-- Skinning Lurker of the Deeps
 			FirstSkin(83400, 221534),	-- Skinning Lytfang the Lost
 			FirstSkin(83416, 216044),	-- Skinning Maddened Siegebomber
+			FirstSkin(91272, 245997, ADDED_11_2_0),	-- Skinning Malek'ta
 			FirstSkin(83406, 220890),	-- Skinning Matriarch Charfuria
+			FirstSkin(91134, 231981, ADDED_11_2_0),	-- Skinning Maw of the Sands
+			FirstSkin(91128, 232108, ADDED_11_2_0),	-- Skinning Morgil the Netherspawn
 			FirstSkin(81458, 218452),	-- Skinning Murkshade
 			FirstSkin(87589, 230995, ADDED_11_1_0),	-- Skinning Nitro
+			FirstSkin(91135, 232127, ADDED_11_2_0),	-- Skinning Orith the Dreadful
 			FirstSkin(81452, 219267),	-- Skinning Plaguehart
 			FirstSkin(83403, 221786),	-- Skinning Pride of Beledar
 			FirstSkin(87591, 230934, ADDED_11_1_0),	-- Skinning Ratspit
 			FirstSkin(85547, 207826),	-- Skinning Ravageant
 			FirstSkin(87594, 230931, ADDED_11_1_0),	-- Skinning Scrapbeak
 			FirstSkin(87596, 233471, ADDED_11_1_0),	-- Skinning Scrapchewer
+			FirstSkin(91125, 232129, ADDED_11_2_0),	-- Skinning Shadowhowl
 			FirstSkin(85550, 219278),	-- Skinning Shallowshell the Clacker
+			FirstSkin(91133, 232006, ADDED_11_2_0),	-- Skinning Sha'ryth the Cursed
 			FirstSkin(84259, 228439),	-- Skinning Slatefang
 			FirstSkin(83405, 221217),	-- Skinning Spore-infused Shalewing
 			FirstSkin(85551, 221690),	-- Skinning Strength of Beledar
 			FirstSkin(83407, 221126),	-- Skinning Tephratennae
 			FirstSkin(81456, 220271),	-- Skinning Terror of the Forge
+			FirstSkin(91129, 232111, ADDED_11_2_0),	-- Skinning The Nightreaver
 			FirstSkin(83401, 221648),	-- Skinning The Perchfather
 			FirstSkin(81453, 219271),	-- Skinning Twice-Stinger the Wretched
+			FirstSkin(91131, 232195, ADDED_11_2_0),	-- Skinning Urmag
 			FirstSkin(83415, 216037),	-- Skinning Vilewing
 			FirstSkin(87595, 233472, ADDED_11_1_0),	-- Skinning Volstrike the Charged
 			FirstSkin(81449, 219263),	-- Skinning Warphorn

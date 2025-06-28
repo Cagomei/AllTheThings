@@ -2065,7 +2065,7 @@ local function AddQuestItems(group)
 
 	local g = {}
 	for i=1,#qis do
-		g[#g + 1] = app.CreateItem(qis[i])
+		g[#g + 1] = app.CreateItem(qis[i], {OnSetVisibility=app.AlwaysShowUpdate})
 	end
 
 	-- Show Quest Items

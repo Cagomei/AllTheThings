@@ -4355,6 +4355,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.8, 57.4, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(52047) },	-- Sandscraper's Scarab (QI!)
 				}),
 				q(25091, {	-- Sandsorrow Watch
 					["qg"] = 39178,	-- Driz Plunkbow
@@ -5083,6 +5084,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(51547) },	-- Burning Rum (QI!)
 				}),
 				q(24928, {	-- To The Ground! (H)
 					["qg"] = 38703,	-- Megs Dreadshredder
@@ -5090,6 +5092,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 71.8, 45.4, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(51547) },	-- Burning Rum (QI!)
 				}),
 				q(1560, {	-- Tooga's Quest
 					["qg"] = 5955,	-- Tooga
@@ -5122,6 +5125,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.5, 52.6, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(52038) },	-- Refurbished Ogre Suit (QI!)
 				}),
 				q(2875, {	-- WANTED: Andre Firebeard
 					["providers"] = {

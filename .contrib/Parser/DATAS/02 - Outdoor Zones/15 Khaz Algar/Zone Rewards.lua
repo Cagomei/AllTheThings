@@ -2,9 +2,16 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
-	i(228963, {	-- Unfamiliar Emblem (QS!)
-		["timeline"] = { ADDED_11_1_7 },
-		["maps"] = { 2372 },	-- Arathi Highlands
+	n(ZONE_DROPS, {
+		i(228963, {	-- Unfamiliar Emblem (QS!)
+			["timeline"] = { ADDED_11_1_7 },
+			["maps"] = { 2372 },	-- Arathi Highlands
+			["crs"] = {
+				230199,	-- Defias Bandit
+				230021,	-- Defias Lookout
+				230020,	-- Defias Ringleader
+			},
+		}),
 	}),
 	n(ZONE_REWARDS, {
 		n(ARMOR, {

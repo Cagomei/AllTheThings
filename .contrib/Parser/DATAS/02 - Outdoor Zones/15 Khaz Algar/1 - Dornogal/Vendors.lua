@@ -667,6 +667,38 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					-- Season 3
+					-- Trade DOWN
+					i(240928, {	-- Pouch of Weathered Ethereal Crests
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
+						--["cost"] = {{"c", CARVED_UNDERMINE_CREST, 15}},
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+					}),
+					i(240927, {	--  Satchel of Carved Ethereal Crests
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
+						--["cost"] = {{"c", RUNED_UNDERMINE_CREST, 15}},
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+					}),
+					i(240926, {	--  Pack of Runed Ethereal Crests
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
+						--["cost"] = {{"c", GILDED_UNDERMINE_CREST, 15}},
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+					}),
+					-- Trade UP
+					--i(231153, {	-- Triumphant Satchel of Carved Undermine Crests
+					--	["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
+					--	["cost"] = {{ "c", WEATHERED_UNDERMINE_CREST, 45 }},
+					--	["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+					--}),
+					--i(231154, {	-- Celebratory Pack of Runed Undermine Crests
+					--	["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Heroic Crest",
+					--	["cost"] = {{ "c", CARVED_UNDERMINE_CREST, 45 }},
+					--	["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+					--}),
+					--i(231264, {	-- Glorious Cluster of Gilded Undermine Crests
+					--	["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Heroic Crest\nReceive: Mythic Crest",
+					--	["cost"] = {{ "c", RUNED_UNDERMINE_CREST, 45 }},
+					--	["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+					--}),
 				},
 			}),
 		}),

@@ -1134,7 +1134,7 @@ root(ROOTS.Zones, {
 					}),
 					prof(TAILORING, {
 						n(57405, {	-- Silkmaster Tsai <"The Tailor of Pandaria">
-							["coord"] = { 62.6, 59.6, VALE_OF_ETERNAL_BLOSSOMS },
+							["coord"] = { 62.6, 59.6, VALLEY_OF_THE_FOUR_WINDS },
 							["g"] = MOP_TAILORING,
 						}),
 					}),

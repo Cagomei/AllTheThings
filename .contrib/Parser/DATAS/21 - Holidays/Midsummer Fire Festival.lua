@@ -382,8 +382,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(117373, {	-- Frostscythe of Lord Ahune
-							["timeline"] = { ADDED_6_0_2 },
-						}),
+						["timeline"] = { ADDED_6_0_2 },
+					}),
 					i(53641, {	-- Frigid Frostling (PET!)
 						["timeline"] = { ADDED_3_3_3 },
 					}),
@@ -2685,7 +2685,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(13486, {	-- Honor the Flame — Sholazar Basin
 					["qg"] = 32802,	-- Sholazar Basin Flame Warden
-					["coord"] = { 47.0, 66.0, SHOLAZAR_BASIN },
+					["coord"] = { 48.1, 66.4, SHOLAZAR_BASIN },
 					["timeline"] = { ADDED_3_0_2 },
 				}),
 				honortheflame(11831, {	-- Honor the Flame — Silithus

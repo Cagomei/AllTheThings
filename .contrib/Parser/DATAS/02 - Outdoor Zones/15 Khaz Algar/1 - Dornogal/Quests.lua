@@ -4,6 +4,32 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(DORNOGAL, {
 		n(QUESTS, {
+			------ Crests ------
+			--- TODO: sort out in next push
+			q(86363, {	-- The Better Part of Valorstones
+				--["sourceQuests"] = { XX },	-- ??
+				["provider"] = { "n", 219226 },	-- Vaskarn
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+				["coord"] = { 52.1, 42.2, DORNOGAL },
+			}),
+			q(86364, {	-- Crests from the Ether
+				["sourceQuests"] = { 86363 },	-- The Better Part of Valorstones
+				["provider"] = { "n", 219226 },	-- Vaskarn
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["g"] = {
+					i(236953),	-- Crimson Valorstone
+				},
+			}),
+			q(86365, {	-- Crest Transmutation
+				["sourceQuests"] = { 86363 },	-- The Better Part of Valorstones
+				["provider"] = { "n", 219226 },	-- Vaskarn
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["g"] = {
+					i(236953),	-- Crimson Valorstone
+				},
+			}),
 			------ Miscellaneous ------
 			q(86401, {	-- Crests Transmutation
 				["sourceQuests"] = { 86399 },	-- Don't Undermine the Crests
@@ -226,6 +252,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(85588),	-- provided ring + enchant (spellID 469629)
 				-- 86401 (Crests Transmutation)
 				q(86400, {["timeline"] = {ADDED_11_1_0}}),	-- provided 15x Carved Undermine Crest
+				-- 86365 (Crests Transmutation)
+				q(91744, {["timeline"] = {ADDED_11_2_0}}),	-- provided 15x Carved Ethereal Crest
 			}),
 		}),
 	}),

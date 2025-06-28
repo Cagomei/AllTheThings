@@ -722,17 +722,17 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 	}),
 })));
 --[[
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {
 	inst(1302, {	-- Manaforge Omega
 		n(FACTIONS, {
-			header(HEADERS.Faction, FACTION_GALLAGIO, {
+			header(HEADERS.Faction, FACTION_MANAFORGE_VANDALS, {
 				n(QUESTS, {
-					q(86468),	-- Triggered with Members Only (89016)
-					q(89017),	-- Triggered with Members Only (89016)
+					q(92032),	-- Triggered with Meet the Vandals (92031)
+					q(92033),	-- Triggered with Meet the Vandals (92031)
 				}),
 			}),
 		}),
-		inst(1296, bubbleDown({	-- Liberation of Undermine
+		inst(1302, bubbleDown({	-- Manaforge Omega
 			["isWeekly"] = true,
 		},{
 			-- LFR

@@ -104,8 +104,9 @@ local GeneralSettingsBase = {
 local FilterSettingsBase = {
 	__index = app.Presets[app.Class] or app.Presets.ALL,
 };
+local TransmogPresets = app.PresetTransmogs or app.Presets;
 local TransmogFilterSettingsBase = {
-	__index = app.PresetTransmogs[app.Class] or app.PresetTransmogs.ALL,
+	__index = TransmogPresets[app.Class] or TransmogPresets.ALL,
 };
 local TooltipSettingsBase = {
 	__index = {

@@ -1939,11 +1939,18 @@ local SpecificSources = {
 local KeepSourced = {
 	criteriaID = true
 }
+local SourceSearcher = app.SourceSearcher
 local function GetThingSources(field, value)
 	if field == "achievementID" then
 		return SearchForField(field, value)
 	end
-	return app.SearchForLink(field..":"..value)
+	if field == "itemID" then
+		-- allow extra return val (indicates directSources)
+		return SourceSearcher.itemID(field, value)
+	end
+	-- ignore extra return vals
+	local results = app.SearchForLink(field..":"..value)
+	return results
 end
 
 -- Builds a 'Source' group from the parent of the group (or other listings of this group) and lists it under the group itself for
@@ -1966,8 +1973,12 @@ local function BuildSourceParent(group)
 
 	-- pull all listings of this 'Thing'
 	local keyValue = group[groupKey];
-	local things = specificSource and { group } or GetThingSources(groupKey, keyValue)
-	-- app.PrintDebug("BuildSourceParent",group.hash,thingCheck,specificSource,keyValue,#things)
+	local isDirectSources
+	local things = specificSource and { group }
+	if not things then
+		things, isDirectSources = GetThingSources(groupKey, keyValue)
+	end
+	-- app.PrintDebug("BuildSourceParent",group.hash,thingCheck,specificSource,keyValue,#things,isDirectSources)
 	-- if app.Debugging then
 	-- 	local sourceGroup = {
 	-- 		["text"] = "DEBUG THINGS",
@@ -1985,7 +1996,9 @@ local function BuildSourceParent(group)
 		local parentKey, parent;
 		-- collect all possible parent groups for all instances of this Thing
 		for _,thing in ipairs(things) do
-			if isAchievement or GroupMatchesParams(thing, groupKey, keyValue) then
+			if isDirectSources then
+				parents[#parents + 1] = CreateObject(thing)
+			elseif isAchievement or GroupMatchesParams(thing, groupKey, keyValue) then
 				---@class ATTTempParentObject
 				---@field key string
 				---@field hash string

@@ -137,6 +137,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					i(239451),	-- Reshii Magi's Crown
 				},
 			}),
+			n(238384, {	-- Xy'vox the Twisted
+				["coord"] = { 31.2, 57.8, KARESH },
+				["questID"] = 90694,
+				-- rep 90695?
+			}),
 		}),
 	}),
 })));
@@ -177,6 +182,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				}),
 				q(90680, {	-- Weekly reputation: Revenant of the Wasteland
 					["name"] = "Revenant of the Wasteland weekly reputation obtained.",
+				}),
+				q(90674, {	-- Weekly reputation: Shadowhowl
+					["name"] = "Sha'ryth the Cursed weekly reputation obtained.",
 				}),
 				q(90673, {	-- Weekly reputation: Sha'ryth the Cursed
 					["name"] = "Sha'ryth the Cursed weekly reputation obtained.",
