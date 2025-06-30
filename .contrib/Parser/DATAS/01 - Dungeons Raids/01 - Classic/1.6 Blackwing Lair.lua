@@ -562,15 +562,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					10162,	-- Lord Victor Nefarius
 				},
 				["groups"] = {
-					ach(685, {	-- Blackwing Lair
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							7781,	-- The Lord of Blackrock
-							7783,	-- The Lord of Blackrock
-							8730,	-- Nefarius's Corruption
-						},
-						-- #endif
-					}),
+					ach(685),	-- Blackwing Lair
 					ach(5057, {	-- Blackwing Lair Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),

@@ -257,6 +257,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				-- #endif
+				-- #if AFTER TBC
 				prof(JEWELCRAFTING, {
 					n(4229, {	-- Mythrin'dir <Trade Supplies> [TBC+] / Mythrin'dir <General Trade Supplier>
 						-- #if AFTER CATA
@@ -277,10 +278,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["timeline"] = { ADDED_4_1_0 },
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = {
-							{"sub", "common_recipes_vendor", 50482},	-- Marith Lazuria <Jewelcrafting Supplies>
+							{ "sub", "common_recipes_vendor", 50480 },	-- Isabel Jones <Jewelcrafting Supplies>
+							{ "select","itemID",
+							52188,	-- Jeweler's Setting
+							20815,	-- Jeweler's Toolset/-Kit
+							-- #if BEFORE MOP
+							20824,	-- Simple Grinder
+							-- #endif
+							},
 						},
 					}),
 				}),
+				-- #endif
 				prof(LEATHERWORKING, {
 					n(4225, {	-- Saenorion <Leatherworking Supplies>
 						-- #if AFTER CATA

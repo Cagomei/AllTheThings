@@ -649,6 +649,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				-- #endif
+				-- #if AFTER TBC
 				prof(JEWELCRAFTING, {
 					n(3367, {	-- Felika <Trade Supplies>
 						["description"] = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
@@ -935,6 +936,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 				}),
+				-- #endif
 				prof(LEATHERWORKING, {
 					n(3365, {	-- Karolek <Leatherworking Trainer>
 						["coords"] = {

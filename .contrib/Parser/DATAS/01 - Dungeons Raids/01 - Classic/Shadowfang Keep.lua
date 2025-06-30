@@ -2125,7 +2125,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if BEFORE 4.0.3
 						ach(631, {	-- Shadowfang Keep
 							-- #if BEFORE WRATH
-							["sourceQuest"] = 1014,	-- Arugal Must Die
 							["races"] = HORDE_ONLY,
 							-- #endif
 						}),

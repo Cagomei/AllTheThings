@@ -770,11 +770,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(463, {	-- Shade of Erankikus
 				["creatureID"] = 5709,
 				["groups"] = {
-					ach(641, {	-- Sunken Temple
-						-- #if BEFORE WRATH
-						["sourceQuest"] = 3373,	-- The Essence of Eranikus
-						-- #endif
-					}),
+					ach(641),	-- Sunken Temple
 					ach(5050, {	-- Sunken Temple Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),

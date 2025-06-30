@@ -668,10 +668,6 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					-- #if BEFORE 4.0.3
 					ach(628, {	-- Deadmines
 						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							166,	-- The Defias Brotherhood (7/7)
-							373,	-- The Unsent Letter
-						},
 						["races"] = ALLIANCE_ONLY,
 						-- #endif
 					}),

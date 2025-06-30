@@ -1089,6 +1089,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			i(235617, { ["timeline"] = { ADDED_11_1_0 } }),	-- Lucky Goblin's Strapped Rockets
 			i(235615, { ["timeline"] = { ADDED_11_1_0 } }),	-- Rusty Gobjets
 			i(212164),	-- Shallow Nautic Helm
+			i(225067),	-- Shadowlit Haversack
 		}),
 		filter(MISC, {
 			i(244465, {	-- Titan Disc Fragments
@@ -2705,7 +2706,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					filter(COSMETIC, {
 						i(212172),	-- Ajul'Nerub Raptorial Spine
 						i(211801),	-- Poisonous Shroom Cap
-						i(225067),	-- Shadowlit Haversack
 						i(212167),	-- Taken Candle
 						i(225066),	-- Trailblazer's Haversack
 					}),
@@ -3065,7 +3065,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			n(DELVE_COMPLETION, {
 				n(TREASURES, {
 					filter(COSMETIC, {
-						i(225067),	-- Shadowlit Haversack
 						i(225065),	-- Torchbearer's Haversack
 						i(225066),	-- Trailblazer's Haversack
 					}),
@@ -3353,7 +3352,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					filter(COSMETIC, {
 						i(212166),	-- Coral Nautic Helm
 						i(212165),	-- Deep Nautic Helm
-						i(225067),	-- Shadowlit Haversack
 					}),
 				}),
 			}),

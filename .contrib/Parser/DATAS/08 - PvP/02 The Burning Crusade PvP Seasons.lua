@@ -57,7 +57,16 @@ end]];
 root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { ADDED_2_0_1 } }, pvp(expansion(EXPANSION.TBC, {
 	n(PVP_HONOR, {
 		-- Players have said that the Alliance versions were available through Cata.
-		n(FACTION_HEADER_ALLIANCE, bubbleDownFiltered({ ["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 } }, FILTERFUNC_itemID, {
+		n(FACTION_HEADER_ALLIANCE, bubbleDownFiltered({
+			["timeline"] = {
+				-- Wouter NOTE: these were never removed in Classic and are still available on vendors at the PvP area in capital cities
+				-- #if ANYCLASSIC
+				ADDED_2_0_1
+				-- #else
+				ADDED_2_0_1, REMOVED_5_0_4
+				-- #endif
+			}
+		}, FILTERFUNC_itemID, {
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				n(WEAPONS, {
@@ -206,7 +215,16 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 				}),
 			},
 		})),
-		n(FACTION_HEADER_HORDE, bubbleDownFiltered({ ["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 } }, FILTERFUNC_itemID, {
+		n(FACTION_HEADER_HORDE, bubbleDownFiltered({
+			["timeline"] = {
+				-- Wouter NOTE: these were never removed in Classic and are still available on vendors at the PvP area in capital cities
+				-- #if ANYCLASSIC
+				ADDED_2_0_1
+				-- #else
+				ADDED_2_0_1, REMOVED_3_0_2
+				-- #endif
+			}
+		}, FILTERFUNC_itemID, {
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				n(WEAPONS, {
@@ -1190,7 +1208,14 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4, ADDED_6_0_2 },
+							["timeline"] = {
+								-- Wouter NOTE: These aren't in Cata Classic, marking these as CREATED with the Classic patch according to Wowhead - gotta revisit this in WoD Classic :^)
+								-- #if ANYCLASSIC
+								CREATED_2_5_1, ADDED_6_0_2
+								-- #else
+								ADDED_4_0_1, REMOVED_5_0_4, ADDED_6_0_2
+								-- #endif
+							},
 							["races"] = HORDE_ONLY,
 						}),
 						i(32993, {	-- General's Ringmail Sabatons

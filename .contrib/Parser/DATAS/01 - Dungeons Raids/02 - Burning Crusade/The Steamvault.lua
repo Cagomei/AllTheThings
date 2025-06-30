@@ -185,14 +185,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(575, {	-- Warlord Kalithresh
 					["creatureID"] = 17798,
 					["groups"] = {
-						ach(656, {	-- The Steamvault
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								9763,	-- The Warlord's Hideout
-								10885,	-- Trial of the Naaru: Strength
-							},
-							-- #endif
-						}),
+						ach(656),	-- The Steamvault
 						-- #if AFTER 7.3.5
 						i(29351),	-- Wrathtide Longbow
 						-- #endif
@@ -310,11 +303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(575, {	-- Warlord Kalithresh
 						["creatureID"] = 17798,
 						["groups"] = {
-							ach(677, {	-- Heroic: The Steamvault
-								-- #if BEFORE WRATH
-								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
-								-- #endif
-							}),
+							ach(677),	-- Heroic: The Steamvault
 							ach(5077, {	-- Heroic: The Steamvault Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

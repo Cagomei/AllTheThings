@@ -1,13 +1,6 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
---[[ Unsure if this is Needed /Braghe
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_LEGION_REMIX_END } }, {
-	m(PANDARIA, {
-		["icon"] = 630786,
-		["g"] = {
-
-		},
-	}),
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0, REMOVED_LEGION_REMIX_END } }, {
+	
 }))));
---]]

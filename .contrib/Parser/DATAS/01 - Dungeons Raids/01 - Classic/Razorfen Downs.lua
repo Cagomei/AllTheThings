@@ -465,14 +465,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(7358, {	-- Amnennar the Coldbringer
 				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
-					ach(636, {	-- Razorfen Downs
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							3636,	-- Bring the Light
-							3341,	-- Bring the End
-						},
-						-- #endif
-					}),
+					ach(636),	-- Razorfen Downs
 					ach(5045, {	-- Razorfen Downs Guild Run
 						["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					}),

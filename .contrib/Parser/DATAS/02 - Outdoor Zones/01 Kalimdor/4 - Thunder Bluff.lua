@@ -205,25 +205,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				-- #endif
+				-- #if AFTER TBC
 				prof(JEWELCRAFTING, {
 					n(52658, {	-- Paku Cloudchaser <Jewelcrafting Supplies>
 						["coord"] = { 34.75, 53.45, THUNDER_BLUFF },
-						["sym"] = { {"sub", "common_recipes_vendor", 50482}},	-- Marith Lazuria <Jewelcrafting Supplies>
 						["timeline"] = { ADDED_4_1_0 },
 						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{ "sub", "common_recipes_vendor", 50482 },	-- Marith Lazuria <Jewelcrafting Supplies>
+							{ "select","itemID",
+							52188,	-- Jeweler's Setting
+							20815,	-- Jeweler's Toolset/-Kit
+							-- #if BEFORE MOP
+							20824,	-- Simple Grinder
+							-- #endif
+							},
+						},
 					}),
 					n(8363, {	-- Shadi Mistrunner <Trade Supplies>
 						["coord"] = { 40.6, 64.0, THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							-- #if AFTER TBC
 							i(21948, {	-- Design: Opal Necklace of Impact
 								["isLimited"] = true,
+								["timeline"] = { ADDED_2_0_1 },
 							}),
-							-- #endif
 						},
 					}),
 				}),
+				-- #endif
 				prof(LEATHERWORKING, {
 					n(3008, {	-- Mak <Leatherworking Supplies>
 						["coord"] = { 42.08, 43.46, THUNDER_BLUFF },

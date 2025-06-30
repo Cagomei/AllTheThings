@@ -1561,11 +1561,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			e(1551, {	-- C'Thun
 				["creatureID"] = 15727,
 				["groups"] = {
-					ach(687, {	-- Temple of Ahn'Qiraj
-						-- #if BEFORE WRATH
-						["sourceQuest"] = 8801,	-- C'Thun's Legacy
-						-- #endif
-					}),
+					ach(687),	-- Temple of Ahn'Qiraj
 					ach(5058, {	-- Temple of Ahn'Qiraj Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),

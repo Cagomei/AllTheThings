@@ -38,9 +38,6 @@ i(30744);	-- Draenic Leather Pack
 i(138293);	-- Explorer's Pack
 i(139398);	-- Pant Loaf
 i(151492);	-- Bronze Drake
--- Legion Mission Table Items
-i(139845);	-- Band of Primordial Strength
-i(152442);	-- Impervious Shadoweave Hood
 -- BFA Vendor
 i(162588);	-- Weathered Scrollcase
 -- BFA Trash drops available during quest
@@ -385,6 +382,7 @@ i(158849);	-- Sawtooth Jawbone
 i(158752);	-- Severed Foot
 i(155598);	-- Severed Mandible
 i(155629);	-- Shaggy Mane
+i(163844);	-- Shredded Alliance Emblem
 i(152099);	-- Shriveled Onion
 i(158783);	-- Silken White Feather
 i(163846);	-- Silver Monkey Head
@@ -399,6 +397,7 @@ i(158771);	-- Spirit Ichor
 i(158848);	-- Spoiled Feast
 i(155609);	-- Springy Eyeball
 i(155610);	-- Stinging Nettle
+i(158869);	-- Stone Tusk
 i(169127);	-- Tastefully Scented Grease
 i(158746);	-- Tattered White Flag
 i(161200);	-- Teardrop Pearl
@@ -412,6 +411,7 @@ i(158872);	-- Unstable Essence
 i(163851);	-- Venerated Golden Censer
 i(158796);	-- Venomous Tentacle
 i(155636);	-- Viscous Ink
+i(158864);	-- Viscous Webbing
 i(158789);	-- Webbed Frill
 i(158834);	-- Winch Coil
 i(162672);	-- Witch Doctor's Juju Beads

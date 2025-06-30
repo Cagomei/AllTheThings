@@ -3513,14 +3513,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				e(387, {	-- Emperor Dagran Thaurissan
 					["creatureID"] = 9019,
 					["groups"] = {
-						ach(642, {	-- Blackrock Depths
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								4362,	-- The Fate of the Kingdom
-								4003,	-- The Royal Rescue
-							},
-							-- #endif
-						}),
+						ach(642),	-- Blackrock Depths
 						ach(5051, {	-- Blackrock Depths Guild Run
 							["timeline"] = { ADDED_4_0_3 },
 						}),

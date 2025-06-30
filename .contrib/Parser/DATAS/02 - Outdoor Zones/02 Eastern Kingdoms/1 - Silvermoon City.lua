@@ -173,7 +173,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER CATA
 						["sym"] = { { "sub", "common_recipes_vendor", 50482 } },	-- Marith Lazuria <Jewelcrafting Supplies>
 						-- #endif
-						["groups"] = {
+						["groups"] = appendGroups(JEWELCRAFTING_SUPPLIES, {
 							i(20854, {	-- Design: Amulet of the Moon (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -186,7 +186,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							i(20975, {	-- Design: The Jade Eye (RECIPE!)
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 				}),
 				prof(LEATHERWORKING, {
@@ -733,6 +733,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						2522,    -- Crescent Axe
 						2530,    -- Francisca
 						2531,    -- Great Axe
+					}},
+				}),
+				n(16624, {	-- Gelanthis <Jewelcrafting Supplies>
+					["coord"] = { 90.8, 73.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {{"select","itemID",
+						7341,	-- Cubic Zirconia Ring
+						7340,	-- Flawless Diamond Solitaire
+						7339,	-- Miniscule Diamond Ring
+						7338,	-- Mood Ring
+						7342,	-- Silver Piffeny Band
+						7337,	-- The Rock
 					}},
 				}),
 				n(16625, {	-- Keeli

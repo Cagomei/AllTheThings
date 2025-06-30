@@ -185,9 +185,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						["coord"] = { 45.5, 25.3, THE_EXODAR },
 						["races"] = ALLIANCE_ONLY,
 						-- #if AFTER CATA
-						["sym"] = { { "sub", "common_recipes_vendor", 50482 } },	-- Marith Lazuria <Jewelcrafting Supplies>
+						["sym"] = { { "sub", "common_recipes_vendor", 50480 } },	-- Isabel Jones <Jewelcrafting Supplies>
 						-- #endif
-						["groups"] = {
+						["groups"] = appendGroups(JEWELCRAFTING_SUPPLIES, {
 							i(20854, {	-- Design: Amulet of the Moon
 								["isLimited"] = true,
 							}),
@@ -200,7 +200,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							i(20975, {	-- Design: The Jade Eye
 								["isLimited"] = true,
 							}),
-						},
+						}),
 					}),
 				}),
 				prof(LEATHERWORKING, {
@@ -472,6 +472,18 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(VENDORS, {
+				n(17512, {	-- Arred <Jewelcrafting Supplies>
+					["coord"] = { 45.5, 25.3, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select","itemID",
+						7341,	-- Cubic Zirconia Ring
+						7340,	-- Flawless Diamond Solitaire
+						7339,	-- Miniscule Diamond Ring
+						7338,	-- Mood Ring
+						7342,	-- Silver Piffeny Band
+						7337,	-- The Rock
+					}},
+				}),
 				n(16715, {	-- Avelii
 					["coord"] = { 48.6, 90.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,

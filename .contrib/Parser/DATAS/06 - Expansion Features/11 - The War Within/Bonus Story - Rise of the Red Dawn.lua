@@ -2,7 +2,7 @@
 --       	   EF       M O D U L E   		     --
 ---------------------------------------------------
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_1_7 } }, {
-	n(QUESTS, {		
+	n(QUESTS, {
 		header(HEADERS.Achievement, 41820, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {	-- Rise of the Red Dawn
 			q(91039, {	-- Faerin's Request
 				["isBreadcrumb"] = true,
@@ -79,6 +79,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["provider"] = { "n", 229940 },	-- Colonel Veronice Nials
 				["coord"] = { 17.5, 59.5, 2372 },
 			}),
+			hqt(91524, {	-- Stay awhile and listen: Captaion Roderick Brewston
+				["name"] = "Stay awhile and listen: Captaion Roderick Brewston",
+				["sourceQuests"] = { 84649 },	-- Marran Trollbane
+				["provider"] = { "n", 229951 },	-- Captaion Roderick Brewston
+				["coord"] = { 17.4, 59.5, 2372 },
+				["lockCriteria"] = { 1, "questID", 84650 },	-- Finding Refuge at Refuge Pointe
+			}),
 			q(84650, {	-- Finding Refuge at Refuge Pointe
 				["sourceQuests"] = { 84649 },	-- Marran Trollbane
 				["provider"] = { "n", 229940 },	-- Colonel Veronice Nials
@@ -97,6 +104,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["provider"] = { "n", 236815 },	-- Karge Bloodfury
 				["coord"] = { 40.9, 53.5, 2372 },
 			}),
+			hqt(91532, {	-- Stay awhile and listen: Faerin Lothar
+				["name"] = "Stay awhile and listen: Faerin Lothar",
+				["sourceQuests"] = {
+					84651,	-- A Familiar Face
+					84652,	-- Supply Run
+				},
+				["provider"] = { "n", 230815 },	-- Faerin Lothar
+				["coord"] = { 40.8, 53.5, 2372 },
+				["lockCriteria"] = { 1, "questID", 84656 },	-- Onward to Hammerfall (assumed)
+			}),
 			q(84656, {	-- Onward to Hammerfall
 				["sourceQuests"] = {
 					84651,	-- A Familiar Face
@@ -109,6 +126,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["sourceQuests"] = { 84656 },	-- Onward to Hammerfall
 				["provider"] = { "n", 230145 },	-- Eitrigg
 				["coord"] = { 69.7, 39.2, 2372 },
+			}),
+			hqt(91534, {	-- Stay awhile and listen: Eitrigg
+				["name"] = "Stay awhile and listen: Eitrigg",
+				["sourceQuests"] = { 84704 },	-- A Different Point of View (TODO: but probably only during 84704?)
+				["provider"] = { "n", 231759 },	-- Eitrigg
+				["coord"] = { 69.6, 32.8, 2372 },
+				["lockCriteria"] = { 1, "questID", 84707 },	-- To See a Troll (assumed)
 			}),
 			q(84707, {	-- To See a Troll
 				["sourceQuests"] = { 84704 },	-- A Different Point of View
@@ -286,25 +310,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					a(ach(41818)),	-- Rise of the Red Dawn (A)
 					h(ach(41820)),	-- Rise of the Red Dawn (H)
 				},
-			}),
-			--- Stay awhile and listen ---
-			hqt(91524, {	-- Stay awhile and listen: Captaion Roderick Brewston
-				["name"] = "Stay awhile and listen: Captaion Roderick Brewston",
-				["sourceQuests"] = { 84649 },	-- Marran Trollbane
-				["provider"] = { "n", 229951 },	-- Captaion Roderick Brewston
-				["coord"] = { 17.4, 59.5, 2372 },
-			}),
-			hqt(91532, {	-- Stay awhile and listen: Faerin Lothar
-				["name"] = "Stay awhile and listen: Faerin Lothar",
-				["sourceQuests"] = { 84650 },	-- Finding Refuge at Refuge Pointe
-				["provider"] = { "n", 230815 },	-- Faerin Lothar
-				["coord"] = { 40.8, 53.5, 2372 },
-			}),
-			hqt(91534, {	-- Stay awhile and listen: Eitrigg
-				["name"] = "Stay awhile and listen: Eitrigg",
-				["sourceQuests"] = { 84656 },	-- Onward to Hammerfall (TODO: but probably only during 84704?)
-				["provider"] = { "n", 231759 },	-- Eitrigg
-				["coord"] = { 69.6, 32.8, 2372 },
 			}),
 		})),
 	}),

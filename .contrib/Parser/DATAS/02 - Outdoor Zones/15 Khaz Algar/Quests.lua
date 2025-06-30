@@ -707,7 +707,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["coord"] = { 61.5, 42.8, ISLE_OF_DORN },
 				}),
 				q(83641, {	-- Trapped Between Life and Death
-					["sourceQuests"] = { 83553 },	-- Maybe You Shouldn't Touch That
+					["sourceQuests"] = {
+						83553,	-- Maybe You Shouldn't Touch That
+						83555,	-- Mysterious Necklace
+					},
 					["provider"] = { "n", 227208 },	-- Kalecgos
 					--["coord"] = { ??, ??, ISLE_OF_DORN },
 				}),

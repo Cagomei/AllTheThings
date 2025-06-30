@@ -12,16 +12,16 @@ local RESHANOR = 2762;
 ------ EncounterToCRS ------
 local EncounterToCRS = {
 	[ORTA] = {
-		221067,	-- Orta, the Broken Mountain
+		221067,	-- Orta <The Broken Mountain>
 	},
 	[AOH] = {
 		220999,	-- Aggregation of Horrors
 	},
 	[KORDAC] = {
-		221084,	-- Kordac, the Dormant Protector
+		221084,	-- Kordac <Dormant Protector>
 	 },
 	[SHURRAI] = {
-		221224,	-- Shurrai
+		221224,	-- Shurrai <Atrocity of the Undersea>
 	},
 	[GOBFATHER] = {
 		231821,	-- The Gobfather <Demodome Champion>
@@ -76,7 +76,7 @@ local EncounterCoords = {
 	[KORDAC] = { 48.8, 61.9, ISLE_OF_DORN },
 	[SHURRAI] = { 45.6, 18.4, HALLOWFALL },
 	[GOBFATHER] = { 58.9, 11.2, UNDERMINE },
-	--[RESHANOR] = { X, Y, KARESH },
+	[RESHANOR] = { 71.8, 48.7, KARESH },
 }
 
 ------ Boss Functions ------
@@ -112,7 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					i(225734),	-- Sturdy Chitinous Striders
 				},
 			}),
-			Boss(ORTA, {	-- Orta, the Broken Mountain
+			Boss(ORTA, {	-- Orta <The Broken Mountain>
 				["questID"] = 83468,
 			}),
 			BossWorldQuest(ORTA, 81624),	-- Orta, the Broken Mountain (WQ)
@@ -120,30 +120,28 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				["questID"] = 83466,
 			}),
 			BossWorldQuest(AOH, 82653),	-- Aggregation of Horrors (WQ)
-			Boss(KORDAC, {	-- Kordac, the Dormant Protector
+			Boss(KORDAC, {	-- Kordac <Dormant Protector>
 				--["questID"] = xx,
 			}),
 			BossWorldQuest(KORDAC, 81630),	-- Activation Protocol (WQ)
-			Boss(SHURRAI, {	-- Shurrai, Atrocity of the Undersea
+			Boss(SHURRAI, {	-- Shurrai <Atrocity of the Undersea>
 				["questID"] = 83467,
 			}),
 			BossWorldQuest(SHURRAI, 81653),	-- Shurrai, Atrocity of the Undersea (WQ)
-			Boss(GOBFATHER, {	-- The Gobfather
+			Boss(GOBFATHER, {	-- The Gobfather <Demodome Champion>
 				["questID"] = 85089,
 				["timeline"] = { ADDED_11_1_0_SEASONSTART }
 			}),
 			BossWorldQuest(GOBFATHER, 85088, {	-- The Main Event (WQ)
 				["timeline"] = { ADDED_11_1_0_SEASONSTART }
 			}),
-			--[[
-			Boss(RESHANOR, {
-				["questID"] = ,
+			Boss(RESHANOR, {	-- Reshanor <The Untethered>
+				--["questID"] = xx,
 				["timeline"] = { ADDED_11_2_0_SEASONSTART },
 			}),
-			BossWorldQuest(RESHANOR, 85088, {	-- The Main Event (WQ)
+			BossWorldQuest(RESHANOR, 87354, {	-- Reshanor, the Untethered (WQ)
 				["timeline"] = { ADDED_11_2_0_SEASONSTART }
 			}),
-			--]]
 		}),
 	}),
 })));

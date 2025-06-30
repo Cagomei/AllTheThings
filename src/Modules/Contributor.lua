@@ -1200,6 +1200,7 @@ MobileDB.GameObject = {
 	[417136] = true,	-- Intriguing Scrap (q:79205)
 	[417137] = true,	-- Intriguing Scrap (q:79205)
 	[417138] = true,	-- Intriguing Scrap (q:79205)
+	[417311] = true,	-- Climbing Rope (q:82699)
 	[419657] = true,	-- Abandoned Tools
 	[419696] = true,	-- Waxy Lump
 	[420090] = true,	-- Massive Remnant

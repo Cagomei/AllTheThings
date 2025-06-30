@@ -4390,23 +4390,17 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(12808, {	-- Essence of Undeath
-			["coords"] = {
-				-- #if AFTER 4.0.3
-				{ 53.0, 42.0, WINTERSPRING },	-- Lake Kel'Theril
-				-- #endif
-			},
+			-- #if AFTER 4.0.3
+			["coord"] = { 53.0, 42.0, WINTERSPRING },	-- Lake Kel'Theril
 			["crs"] = {
-				-- #if AFTER 4.0.3
-				7524,	-- Anghuished Highborne
+				7524,	-- Anguished Highborne
 				7523,	-- Suffering Highborne
 				48665,	-- Wretched Spectre
 				48664,	-- Wretched Spirit
-				-- #endif
 			},
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from Undead creatures in the given instances.",
-			-- #else
 			["description"] = "Drops from Undead creatures in the given zones.",
+			-- #else
+			["description"] = "Drops from Undead creatures in the given instances.",
 			-- #endif
 			["maps"] = {
 				-- #if BEFORE WRATH

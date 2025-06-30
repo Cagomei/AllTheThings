@@ -49,27 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(646, {	-- Stratholme
-					-- #if BEFORE WRATH
-					["sourceQuest"] = 5263,	-- Above and Beyond
-					-- #endif
-					["groups"] = {
-						crit(550, {	-- Balnazzar
-							["_npcs"] = { 10813 },
-						}),
-						-- #if AFTER MOP
-						-- This was not readded into the achievement criteria list until 6.0.3... Double check in MOP.
-						crit(18471, {	-- Lord Aurius Rivendare
-							["_npcs"] = { 45412 },
-						}),
-						-- #elseif BEFORE 4.0.3
-						-- Prior to Cataclysm, Baron Rivendare was the last boss in UD side.
-						crit(18471, {	-- Baron Rivendare
-							["_npcs"] = { 10440 },
-						}),
-						-- #endif
-					},
-				}),
+				ach(646),	-- Stratholme
 				ach(5055, {	-- Stratholme Guild Run
 					["timeline"] = { ADDED_4_0_3 },
 				}),

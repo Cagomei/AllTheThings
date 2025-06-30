@@ -23,7 +23,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			}),
 		})),
 		-- #if BEFORE 5.0.4
-		ach(645, { ["timeline"] = { ADDED_3_0_2 } }),	-- Scholomance (automated)
+		ach(645),	-- Scholomance (automated)
 		-- #endif
 		ach(5054, {	-- Scholomance Guild Run
 			["timeline"] = { ADDED_4_0_3 },

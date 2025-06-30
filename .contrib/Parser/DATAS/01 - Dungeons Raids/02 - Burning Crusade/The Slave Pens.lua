@@ -206,9 +206,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(572, {	-- Quagmirran
 					["creatureID"] = 17942,
 					["groups"] = {
-						ach(649, {	-- The Slave Pens
-							["timeline"] = { ADDED_3_0_2 },
-						}),
+						ach(649),	-- The Slave Pens
 						-- #if AFTER 7.3.5
 						i(27741),	-- Bleeding Hollow Warhammer
 						i(27673),	-- Phosphorescent Blade
@@ -331,9 +329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(572, {	-- Quagmirran
 						["creatureID"] = 17942,
 						["groups"] = {
-							ach(669, {	-- Heroic: The Slave Pens
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(669),	-- Heroic: The Slave Pens
 							ach(5069, {	-- Heroic: The Slave Pens Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

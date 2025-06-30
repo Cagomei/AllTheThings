@@ -615,6 +615,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				-- #endif
+				-- #if AFTER TBC
 				prof(JEWELCRAFTING, {
 					n(32379, {	-- Captain O'Neal <Jewelcrafting Quartermaster>
 						["coord"] = { 75.0, 66.7, STORMWIND_CITY },
@@ -885,14 +886,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(50480, {	-- Isabel Jones <Jewelcrafting Design Vendor>
 						["coord"] = { 63.8, 61.3, STORMWIND_CITY },
 						["timeline"] = { ADDED_4_0_3 },
-						["sym"] = {{ "sub", "common_recipes_vendor", 50482 }},	-- Marith Lazuria <Jewelcrafting Supplies>
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 					}),
 					n(44583, {	-- Terrance Denman <Jewelcrafting Supplies>
 						["coord"] = { 63.1, 61.5, STORMWIND_CITY },
 						["timeline"] = { ADDED_4_0_1 },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
+						["sym"] = {
+							{ "sub", "common_recipes_vendor", 50480 },	-- Isabel Jones <Jewelcrafting Supplies>
+							{ "select","itemID",
+							52188,	-- Jeweler's Setting
+							20815,	-- Jeweler's Toolset/-Kit
+							-- #if BEFORE MOP
+							20824,	-- Simple Grinder
+							-- #endif
+							},
+						},
 					}),
 					n(44582, {	-- Theresa Denman <Jewelcrafting Trainer>
 						["coord"] = { 63.6, 61.6, STORMWIND_CITY },
@@ -905,6 +915,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 				}),
+				-- #endif
 				prof(LEATHERWORKING, {
 					n(5565, {	-- Jillian Tanner <Leatherworking Supplies>
 						["coord"] = { 71.7, 62.8, STORMWIND_CITY },

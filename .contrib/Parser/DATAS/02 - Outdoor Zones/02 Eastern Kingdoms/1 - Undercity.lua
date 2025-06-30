@@ -223,6 +223,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				-- #endif
+				-- #if AFTER TBC
 				prof(JEWELCRAFTING, {
 					n(4561, {	-- Daniel Bartlett <Trade Supplies> [TBC+] / Daniel Bartlett <General Trade Supplier>
 						["coord"] = { 64.0, 37.4, UNDERCITY },
@@ -245,12 +246,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 					n(52588, {	-- Sara Lanner <Jewelcrafting Supplies>
-						["sym"] = { {"sub", "common_recipes_vendor", 50482 } },	-- Marith Lazuria <Jewelcrafting Supplies>
 						["coord"] = { 56.2, 36.6, UNDERCITY },
 						["timeline"] = { ADDED_4_1_0 },
 						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{ "sub", "common_recipes_vendor", 50482 },	-- Marith Lazuria <Jewelcrafting Supplies>
+							{ "select","itemID",
+							52188,	-- Jeweler's Setting
+							20815,	-- Jeweler's Toolset/-Kit
+							-- #if BEFORE MOP
+							20824,	-- Simple Grinder
+							-- #endif
+							},
+						},
 					}),
 				}),
+				-- #endif
 				prof(LEATHERWORKING, {
 					n(4589, {	-- Joseph Moore <Leatherworking Supplies>
 						["sym"] = { {"sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>

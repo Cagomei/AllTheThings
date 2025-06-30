@@ -1111,6 +1111,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					i(147569, { ["timeline"] = { ADDED_7_2_0 } }),	-- Arcane Trap
 					i(152928, { ["timeline"] = { ADDED_7_3_0 } }),	-- Archaic Seerstone
 					i(139802),	-- Auspicious Fetish
+					i(139845),	-- Band of Primordial Strength
 					i(139873),	-- Bottled Sanity
 					i(140582),	-- Bottomless Flask
 					i(139827),	-- Brooch of Endless Dreams
@@ -1132,6 +1133,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					i(139804),	-- Glacial Fang
 					i(139419),	-- Golden Banana
 					i(147554, { ["timeline"] = { ADDED_7_2_0 } }),	-- Harpy Feather
+					i(152442, { ["timeline"] = { ADDED_7_3_0 } }),	-- Impervious Shadoweave Hood
 					i(147350, { ["timeline"] = { ADDED_7_2_0 } }),	-- Invincible Armor Set
 					i(151842, { ["timeline"] = { ADDED_7_3_0 } }),	-- Krokul Armor Set
 					i(152438, { ["timeline"] = { ADDED_7_3_0 } }),	-- Krokul Sledgehammer
@@ -1172,6 +1174,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					i(152935, { ["timeline"] = { ADDED_7_3_0 } }),	-- Wakener's Bauble
 					i(147559, { ["timeline"] = { ADDED_7_2_0 } }),	-- Ward of Infinite Fury
 					i(139816),	-- Well-Worn Stone
+					i(139849),	-- Windrunner's Gift
 					i(152446, { ["timeline"] = { ADDED_7_3_0 } }),	-- Writ of Holy Orders
 					i(151844, { ["timeline"] = { ADDED_7_3_0 } }),	-- Xenedar Armor Set
 					i(152931, { ["timeline"] = { ADDED_7_3_0 } }),	-- Xenic Tincture

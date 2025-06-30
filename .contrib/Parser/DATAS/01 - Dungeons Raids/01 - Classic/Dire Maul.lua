@@ -151,26 +151,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
-				ach(644, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {	-- King of Dire Maul
+				ach(644, {	-- King of Dire Maul
 					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
-					["groups"] = {
-						crit(545, {	-- Alzzin the Wildshaper
-							["_npcs"] = { 11492 },	-- Alzzin the Wildshaper
-						}),
-						crit(546, {	-- Immol'thar
-							["_npcs"] = { 11496 },	-- Immol'thar
-						}),
-						-- #if ANYCLASSIC
-						crit(547, {	-- King Gordok
-							["_npcs"] = { 11501 },	-- King Gordok
-						}),
-						-- #else
-						crit(18535, {	-- King Gordok
-							["_npcs"] = { 11501 },	-- King Gordok
-						}),
-						-- #endif
-					},
-				})),
+				}),
 				ach(5053, {	-- King of Dire Maul Guild Run
 					["timeline"] = { ADDED_4_0_3 },
 				}),

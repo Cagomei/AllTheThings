@@ -1501,11 +1501,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				i(22637),	-- Primal Hakkari Idol
 			}),
 			n(14834, {	-- Hakkar the Soulflayer
-				ach(688, {	-- Zul'Gurub
-					-- #if BEFORE WRATH
-					["sourceQuest"] = 8183,	-- The Heart of Hakkar
-					-- #endif
-				}),
+				ach(688),	-- Zul'Gurub
 				i(19802),	-- Heart of Hakkar
 				i(19862),	-- Aegis of the Blood God
 				i(19852),	-- Ancient Hakkari Manslayer

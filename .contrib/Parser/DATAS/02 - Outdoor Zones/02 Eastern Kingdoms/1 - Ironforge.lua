@@ -300,28 +300,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				-- #endif
+				-- #if AFTER TBC
 				prof(JEWELCRAFTING, {
 					n(5163, {	-- Burbik Gearspanner <Trade Supplies>
 						["coord"] = { 46.6, 27.2, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							-- #if AFTER TBC
 							i(21948, {	-- Design: Opal Necklace of Impact (RECIPE!)
 								["isLimited"] = true,
+								["timeline"] = { ADDED_2_0_1 },
 							}),
 							i(20975, {	-- Design: The Jade Eye (RECIPE!)
 								["isLimited"] = true,
+								["timeline"] = { ADDED_2_0_1 },
 							}),
-							-- #endif
 						},
 					}),
 					n(52584, {	-- Laida Gembold <Jewelcrafting Supplies>
 						["coord"] = { 50.6, 27.0, IRONFORGE },
 						["timeline"] = { ADDED_4_1_0 },
 						["races"] = ALLIANCE_ONLY,
-						["sym"] = { {"sub", "common_recipes_vendor", 50482} },	-- Marith Lazuria <Jewelcrafting Supplies>
+						["sym"] = {
+							{ "sub", "common_recipes_vendor", 50480 },	-- Isabel Jones <Jewelcrafting Supplies>
+							{ "select","itemID",
+							52188,	-- Jeweler's Setting
+							20815,	-- Jeweler's Toolset/-Kit
+							-- #if BEFORE MOP
+							20824,	-- Simple Grinder
+							-- #endif
+							},
+						},
 					}),
 				}),
+				-- #endif
 				prof(LEATHERWORKING, {
 					n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
 						["coord"] = { 40.2, 33.4, IRONFORGE },

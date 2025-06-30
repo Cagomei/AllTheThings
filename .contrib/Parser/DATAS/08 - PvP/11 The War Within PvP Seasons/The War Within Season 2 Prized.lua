@@ -782,7 +782,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					moh(10, i(230790)),	-- Prized Gladiator's Pulverizer
 					moh(10, i(230781)),	-- Prized Gladiator's Pylon
 					moh(10, i(230779)),	-- Prized Gladiator's Staff
-					moh(10, i(230780)),	-- Prized Gladiator's Torchblade
+					moh(5, i(244552, {	-- Prized Gladiator's Torchblade
+						["timeline"] = { ADDED_11_1_7 }
+					})),
+					moh(10, i(230780)),	-- Prized Gladiator's Torchsword
 					moh(5, i(230777)),	-- Prized Gladiator's Warglaive
 				},
 			}),

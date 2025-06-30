@@ -258,14 +258,34 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29775 },	-- The Spirit and Body of Shen-zin Su
 						["coord"] = { 51.5, 48.5, STARTER_WANDERING_ISLE },
 					}),
-					un(REMOVED_FROM_GAME, q(29404)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30039)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30040)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30041)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30042)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30043)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30044)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30045)),	-- Much to Learn
+					q(30039, {	-- Much to Learn (Monk)
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+						["classes"] = { MONK },
+					}),
+					q(30040, {	-- Much to Learn (Mage)
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+						["classes"] = { MAGE },
+					}),
+					q(30041, {	-- Much to Learn (Hunter)
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+						["classes"] = { HUNTER },
+					}),
+					q(30042, {	-- Much to Learn (Priest)
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+						["classes"] = { PRIEST },
+					}),
+					q(30043, {	-- Much to Learn (Rogue)
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+						["classes"] = { ROGUE },
+					}),
+					q(30044, {	-- Much to Learn (Shaman)
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+						["classes"] = { SHAMAN },
+					}),
+					q(30045, {	-- Much to Learn (Warrior)
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+						["classes"] = { WARRIOR },
+					}),
 					q(29800, {	-- New Allies
 						["provider"] = { "n", 57739 },	-- Ji Firepaw
 						["sourceQuests"] = { 29799 },	-- The Healing of Shen-zin Su
@@ -836,6 +856,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 	m(PANDARIA, {
 		m(STARTER_WANDERING_ISLE, {
 			n(QUESTS, {
+				q(29404),	-- Much to Learn [NYI] - completed with quest 30039, 30040, 30041, 30042, 30043, 30044, 30045.
 				q(30454),	-- Pandaren Alliance Tracking Quest - triggers after choosing Alliance faction
 				q(30455),	-- Pandaren Horde Tracking Quest - triggers after choosing Horde faction
 			}),

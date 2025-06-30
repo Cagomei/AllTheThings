@@ -432,7 +432,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE 5.0.4
 					ach(629, {	-- Ragefire Chasm
 						-- #if BEFORE WRATH
-						["sourceQuest"] = 5761,	-- Slaying the Beast
 						["races"] = HORDE_ONLY,
 						-- #endif
 					}),

@@ -405,11 +405,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(481, {	-- Mutanus the Devourer
 				["creatureID"] = 3654,
 				["groups"] = {
-					ach(630, {	-- Wailing Caverns
-						-- #if BEFORE WRATH
-						["sourceQuest"] = 6981,	-- The Glowing Shard
-						-- #endif
-					}),
+					ach(630),	-- Wailing Caverns
 					ach(5039, {	-- Wailing Caverns Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),

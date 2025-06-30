@@ -2627,6 +2627,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(11305),	-- Dense Shortbow
 					},
 				}),
+				n(49887, {	-- Gappy Silvertooth <Bling Merchant>
+					["coord"] = { 57.53, 48.7, AZSHARA },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_4_0_3 },
+					["sym"] = {{"select","itemID",
+						7341,	-- Cubic Zirconia Ring
+						7340,	-- Flawless Diamond Solitaire
+						7339,	-- Miniscule Diamond Ring
+						7338,	-- Mood Ring
+						7342,	-- Silver Piffeny Band
+						7337,	-- The Rock
+					}},
+				}),
 				n(8678, {	-- Jubie Gadgetspring <Engineering Supplier>
 					["coord"] = { 45.2, 90.8, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },

@@ -2137,16 +2137,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			e(396, {	-- Overlord Wyrmthalak
 				["creatureID"] = 9568,	-- Overlord Wyrmthalak
 				["groups"] = {
-					ach(643, {	-- Lower Blackrock Spire
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							5089,	-- General Drakkisath's Command
-							5081,	-- Maxwell's Mission
-							4742,	-- Seal of Ascension
-							4903,	-- Warlord's Command
-						},
-						-- #endif
-					}),
+					ach(643),	-- Lower Blackrock Spire
 					ach(5052, {	-- Lower Blackrock Spire Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),
@@ -3019,13 +3010,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["groups"] = {
 						ach(1307, {	-- Upper Blackrock Spire
 							["timeline"] = { REMOVED_6_0_2 },
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								6602,	-- Blood of the Black Dragon Champion
-								6502,	-- Drakefire Amulet
-								5102,	-- General Drakkisath's Demise
-							},
-							-- #endif
 						}),
 						i(16663, {	-- Blood of the Black Dragon Champion
 							["timeline"] = { REMOVED_4_0_3 },

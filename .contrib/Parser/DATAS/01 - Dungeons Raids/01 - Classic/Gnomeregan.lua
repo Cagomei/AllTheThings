@@ -939,14 +939,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(422, {	-- Mekgineer Thermaplugg
 				["creatureID"] = 7800,
 				["groups"] = {
-					ach(634, {	-- Gnomeregan
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							2929,	-- The Grand Betrayal
-							2841,	-- Rig Wars
-						},
-						-- #endif
-					}),
+					ach(634),	-- Gnomeregan
 					ach(5044, {	-- Gnomeregan Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),

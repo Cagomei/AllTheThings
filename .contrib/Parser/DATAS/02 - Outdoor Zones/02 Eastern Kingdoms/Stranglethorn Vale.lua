@@ -3217,6 +3217,63 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}))),
 				-- #endif
+				n(2849, {	-- Qixdi Goodstitch <Cloth Armor & Accessories>
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 42.7, 74.2, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.2, 77.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
+					["sym"] = {{"select","itemID",
+						2435,	-- Embroidered Armor
+						3587,	-- Embroidered Belt
+						2438,	-- Embroidered Boots
+						3588,	-- Embroidered Bracers
+						2440,	-- Embroidered Gloves
+						3892,	-- Embroidered Hat
+						2437,	-- Embroidered Pants
+						2160,	-- Padded Armor
+						3591,	-- Padded Belt
+						2156,	-- Padded Boots
+						3592,	-- Padded Bracers
+						2158,	-- Padded Gloves
+						2159,	-- Padded Pants
+						3593,	-- Russet Belt
+						2432,	-- Russet Boots
+						3594,	-- Russet Bracers
+						2434,	-- Russet Gloves
+						3889,	-- Russet Hat
+						2431,	-- Russet Pants
+						2429,	-- Russet Vest
+						3597,	-- Thick Cloth Belt
+						3598,	-- Thick Cloth Bracers
+						203,	-- Thick Cloth Gloves
+						201,	-- Thick Cloth Pants
+						202,	-- Thick Cloth Shoes
+						200,	-- Thick Cloth Vest
+					}},
+					["groups"] = sharedData({
+						["collectible"] = false,
+						["providers"] = {
+							{ "n", 2849},	-- Qixdi Goodstitch <Cloth Armor & Accessories>
+							-- #if AFTER TBC
+							{ "n", 17512},	-- Arred <Jewelcrafting Supplies>
+							{ "n", 16624},	-- Gelanthis <Jewelcrafting Supplies>
+							-- #endif
+							-- #if AFTER CATA
+							{ "n", 49887}, 	-- Gappy Silvertooth <Bling Merchant>
+							-- #endif
+						},
+					}, {
+						i(7341),	-- Cubic Zirconia Ring
+						i(7340),	-- Flawless Diamond Solitaire
+						i(7339),	-- Miniscule Diamond Ring
+						i(7338),	-- Mood Ring
+						i(7342),	-- Silver Piffeny Band
+						i(7337),	-- The Rock
+					}),
+				}),
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
