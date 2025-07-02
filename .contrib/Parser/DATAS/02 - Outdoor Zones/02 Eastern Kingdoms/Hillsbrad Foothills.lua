@@ -1854,8 +1854,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49687,	-- Brazie the Botanist
 					["sourceQuest"] = 28747,	-- Someone Setup the Pumpkin Bomb
 					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
+					-- #if BEFORE 6.0.2
+					["description"] = [[WARNING: If you want the achievements, you'll need to follow this step-by-step guide: (Credit: Toasts-Atiesh)
+
+1. Track bloom and doom progress using /script AddTrackedAchievement(5365)
+2. Make this a macro
+  /script SelectGossipAvailableQuest(1)
+  /script SelectGossipActiveQuest(1)
+  /script CompleteQuest()
+  /script SelectGossipOption(1)
+  /script AcceptQuest()
+  /click StaticPopup1Button1
+3. Start Quest and then click leave vehicle immediately. (Quest should fail)
+4. Click abandon quest (DO NOT CONFIRM YET!) and then speak to the quest giver.
+5. Use the macro while the abandon quest popup is still open while the npc's Accept Quest dialog is displayed.
+Game should start with a 0/7 wave counter below and u have no plant quest in log.
+Click orbs till zombies spawn 6-8. Then plant NOTHING. (Part of the achievement is to not plant certain types.)
+3 zombies walk to end trigger lawn mower and die. You should now be +1 on your FoS tracker.
+Now a Dk ghoul spawns randomly if it lands in a lane with lawnmower wait and u will get another +1 to FoS tracker.
+Click Leave vehicle and repeat steps 3-8"]],
+					-- #endif
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
+						ach(5365, {	-- Bloom and Doom
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4, DELETED_6_0_2 },
+						}),
+						ach(5364, {	-- Don't Want No Zombies on My Lawn
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4, DELETED_6_0_2 },
+						}),
 						i(65689, {	-- Brazie's Plant Light
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2491,7 +2517,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49687,	-- Brazie the Botanist
 					["sourceQuest"] = 28748,	-- Lawn of the Dead
 					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { ADDED_4_0_1 },
+					["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3, ADDED_5_0_4 },
 					["isDaily"] = true,
 				}),
 				q(28355, {	-- Terrible Little Creatures

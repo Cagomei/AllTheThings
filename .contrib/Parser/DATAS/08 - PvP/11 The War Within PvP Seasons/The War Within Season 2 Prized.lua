@@ -614,6 +614,158 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					}),
 				},
 			}),
+			o(456208, {	-- The Catalyst
+				["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
+				["coord"] = { 50.0, 54.2, DORNOGAL },
+				["modelScale"] = 4,
+				["catalystID"] = 10,	-- ItemBonus.Value_0 TWW:S2
+				["g"] = bubbleDown({ ["modID"] = 14 }, {
+					cl(DEATHKNIGHT, {
+						i(229248),	-- Cauldron Champion's Spined Cloak
+						i(229249),	-- Cauldron Champion's Wraps
+						i(229250),	-- Cauldron Champion's Title Belt
+						i(229251),	-- Cauldron Champion's Screamplate
+						i(229252),	-- Cauldron Champion's Tattered Cuisses
+						i(229253),	-- Cauldron Champion's Crown
+						i(229254),	-- Cauldron Champion's Fistguards
+						i(229255),	-- Cauldron Champion's Greatboots
+						i(229256),	-- Cauldron Champion's Ribcage
+					}),
+					cl(DEMONHUNTER, {
+						i(229311),	-- Fel-Dealer's Fur Shawl
+						i(229312),	-- Fel-Dealer's Cuffs
+						i(229313),	-- Fel-Dealer's Waistwrap
+						i(229314),	-- Fel-Dealer's Recycled Reavers
+						i(229315),	-- Fel-Dealer's Fur Kilt
+						i(229316),	-- Fel-Dealer's Visor
+						i(229317),	-- Fel-Dealer's Underhandlers
+						i(229318),	-- Fel-Dealer's Smugglers
+						i(229319),	-- Fel-Dealer's Soul Engine
+					}),
+					cl(DRUID, {
+						i(229302),	-- Leaves of Reclaiming Blight
+						i(229303),	-- Knots of Reclaiming Blight
+						i(229304),	-- Wickerbelt of Reclaiming Blight
+						i(229305),	-- Jaws of Reclaiming Blight
+						i(229306),	-- Moccasins of Reclaiming Blight
+						i(229307),	-- Branches of Reclaiming Blight
+						i(229308),	-- Grips of Reclaiming Blight
+						i(229309),	-- Breeches of Reclaiming Blight
+						i(229310),	-- Robes of Reclaiming Blight
+					}),
+					cl(EVOKER, {
+						i(229275),	-- Opulent Treasurescale's Scalecloak
+						i(229276),	-- Opulent Treasurescale's Vambraces
+						i(229277),	-- Opulent Treasurescale's Radiant Chain
+						i(229278),	-- Opulent Treasurescale's Gleaming Mantle
+						i(229279),	-- Opulent Treasurescale's Petticoat
+						i(229280),	-- Opulent Treasurescale's Crowned Jewel
+						i(229281),	-- Opulent Treasurescale's Gold-Counters
+						i(229282),	-- Opulent Treasurescale's Boots
+						i(229283),	-- Opulent Treasurescale's Tunic
+					}),
+					cl(HUNTER, {
+						i(229266),	-- Tireless Collector's Veilmesh
+						i(229267),	-- Tireless Collector's Manacles
+						i(229268),	-- Tireless Collector's First Kill
+						i(229269),	-- Tireless Collector's Hunted Heads
+						i(229270),	-- Tireless Collector's Armored Breeches
+						i(229271),	-- Tireless Collector's Chained Cowl
+						i(229272),	-- Tireless Collector's Gauntlets
+						i(229273),	-- Tireless Collector's Spiked Cleats
+						i(229274),	-- Tireless Collector's Battlegear
+					}),
+					cl(MAGE, {
+						i(229338),	-- Aspectral Emissary's Chosen Drape
+						i(229339),	-- Aspectral Emissary's Gembands
+						i(229340),	-- Aspectral Emissary's Cummerbund
+						i(229341),	-- Aspectral Emissary's Arcane Vents
+						i(229342),	-- Aspectral Emissary's Trousers
+						i(229343),	-- Aspectral Emissary's Crystalline Cowl
+						i(229344),	-- Aspectral Emissary's Hardened Grasp
+						i(229345),	-- Aspectral Emissary's Slippers
+						i(229346),	-- Aspectral Emissary's Primal Robes
+					}),
+					cl(MONK, {
+						i(229293),	-- Ageless Serpent's Flowing Grace
+						i(229294),	-- Ageless Serpent's Cuffs
+						i(229295),	-- Ageless Serpent's Rope Belt
+						i(229296),	-- Ageless Serpent's Shoulderpads
+						i(229297),	-- Ageless Serpent's Leggings
+						i(229298),	-- Ageless Serpent's Mane
+						i(229299),	-- Ageless Serpent's Handguards
+						i(229300),	-- Ageless Serpent's Ankleweights
+						i(229301),	-- Ageless Serpent's Inked Coils
+					}),
+					cl(PALADIN, {
+						i(229239),	-- Aureate Sentry's Gilded Cloak
+						i(229240),	-- Aureate Sentry's Clasps
+						i(229241),	-- Aureate Sentry's Greatbelt
+						i(229242),	-- Aureate Sentry's Roaring Will
+						i(229243),	-- Aureate Sentry's Legguards
+						i(229244),	-- Aureate Sentry's Pledge
+						i(229245),	-- Aureate Sentry's Gauntlets
+						i(229246),	-- Aureate Sentry's Greaves
+						i(229247),	-- Aureate Sentry's Encasement
+					}),
+					cl(PRIEST, {
+						i(229329),	-- Confessor's Unshakable Lightcover
+						i(229330),	-- Confessor's Unshakable Faulds
+						i(229331),	-- Confessor's Unshakable Ornament
+						i(229332),	-- Confessor's Unshakable Radiance
+						i(229333),	-- Confessor's Unshakable Leggings
+						i(229334),	-- Confessor's Unshakable Halo
+						i(229335),	-- Confessor's Unshakable Mitts
+						i(229336),	-- Confessor's Unshakable Boots
+						i(229337),	-- Confessor's Unshakable Vestment
+					}),
+					cl(ROGUE, {
+						i(229284),	-- Spectral Gambler's Shawl
+						i(229285),	-- Spectral Gambler's Shackles
+						i(229286),	-- Spectral Gambler's Pocket Ace
+						i(229287),	-- Spectral Gambler's Bladed Mantle
+						i(229288),	-- Spectral Gambler's Pantaloons
+						i(229289),	-- Spectral Gambler's Damned Visage
+						i(229290),	-- Spectral Gambler's Gloves
+						i(229291),	-- Spectral Gambler's Cavaliers
+						i(229292),	-- Spectral Gambler's Vest
+					}),
+					cl(SHAMAN, {
+						i(229257),	-- Gale Sovereign's Breeze
+						i(229258),	-- Gale Sovereign's Bracers
+						i(229259),	-- Gale Sovereign's Ritual Belt
+						i(229260),	-- Gale Sovereign's Zephyrs
+						i(229261),	-- Gale Sovereign's Pantaloons
+						i(229262),	-- Gale Sovereign's Charged Hood
+						i(229263),	-- Gale Sovereign's Grasps
+						i(229264),	-- Gale Sovereign's Stormboots
+						i(229265),	-- Gale Sovereign's Clouded Hauberk
+					}),
+					cl(WARLOCK, {
+						i(229320),	-- Spliced Fiendtrader's Shady Cover
+						i(229321),	-- Spliced Fiendtrader's Skinbands
+						i(229322),	-- Spliced Fiendtrader's Sash
+						i(229323),	-- Spliced Fiendtrader's Loyal Servants
+						i(229324),	-- Spliced Fiendtrader's Skin Tights
+						i(229325),	-- Spliced Fiendtrader's Transcendence
+						i(229326),	-- Spliced Fiendtrader's Demonic Grasp
+						i(229327),	-- Spliced Fiendtrader's Soles
+						i(229328),	-- Spliced Fiendtrader's Surgical Gown
+					}),
+					cl(WARRIOR, {
+						i(229230),	-- Enforcer's Backalley Allegiance
+						i(229231),	-- Enforcer's Backalley Bindings
+						i(229232),	-- Enforcer's Backalley Girdle
+						i(229233),	-- Enforcer's Backalley Shoulderplates
+						i(229234),	-- Enforcer's Backalley Chausses
+						i(229235),	-- Enforcer's Backalley Faceshield
+						i(229236),	-- Enforcer's Backalley Crushers
+						i(229237),	-- Enforcer's Backalley Stompers
+						i(229238),	-- Enforcer's Backalley Vestplate
+					}),
+					-- Elite catalyst gear is not obtainable this season
+				}),
+			}),
 		})),
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 }, ["bonusID"] = 7532 }, {
 			n(CLASSES, {

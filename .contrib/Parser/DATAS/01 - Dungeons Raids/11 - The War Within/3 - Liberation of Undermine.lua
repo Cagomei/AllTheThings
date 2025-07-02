@@ -398,6 +398,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				ach(41290),	-- Heroic: Liberation of Undermine Guild Run
 			}),
 			header(HEADERS.Faction, FACTION_GALLAGIO, {	-- Gallagio Loyalty Rewards Club
+				n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } },{
+					ach(60939),	-- Bringing Down the House
+				})),
 				faction(FACTION_GALLAGIO),
 				n(QUESTS, sharedData({
 					["qg"] = 235617,	-- Paula Piranha <Renown Quartermaster>

@@ -438,6 +438,7 @@ root(ROOTS.Zones, {
 					q(31682, {	-- By the Sea, Nevermore
 						["coord"] = { 48.1, 49.6, DREAD_WASTES },
 						["provider"] = { "n", 65975 },	-- Zer'ik
+						["timeline"] = { ADDED_5_0_4, REMOVED_10_2_7 },
 						["altQuests"] = { 31089 },	-- By the Sea, Nevermore
 						["description"] = "This version is only available if Kor'ik has been killed & you did not complete the other version yet. If you did the alt version of this quest, there is no chance you will ever complete this quest on your current character.",
 						["DisablePartySync"] = true,
@@ -450,7 +451,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.1, 49.6, DREAD_WASTES },
 						["provider"] = { "n", 65365 },	-- Kor'ik
 						["altQuests"] = { 31682 },	-- By the Sea, Nevermore
-						["description"] = "This version is available if Kor'ik has not been killed yet.",
+						-- ["description"] = "This version is available if Kor'ik has not been killed yet.",
 						["sourceQuests"] = {
 							31090,	-- Better With Age
 							31088,	-- Crime and Punishment

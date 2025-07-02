@@ -322,9 +322,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		-- 4.x.x
 		n(P4xx, {
 			ach(5133),	-- Active Duty
-			ach(5365),	-- Bloom and Doom
 			ach(4783),	-- Cataclysm Dungeon Explorer
-			ach(5364),	-- Don't Want No Zombies on My Lawn
 			ach(4876),	-- Eastern Kingdoms Dungeon Explorer
 			ach(4867),	-- Explore Tol Barad NYI
 			ach(4953),	-- Guild Gladiator

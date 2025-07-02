@@ -980,6 +980,16 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		ach(40514, {	-- War Within Delves: Tier 3
 			["maps"] = ALL_REGULAR_DELVES,
 		}),
+		ach(60933, {	-- With Flying Colors (H)
+			["timeline"] = { ADDED_11_2_0 },
+			["maps"] = ALL_REGULAR_DELVES,
+			["races"] = HORDE_ONLY,
+		}),
+		ach(60934, {	-- With Flying Colors (A)
+			["timeline"] = { ADDED_11_2_0 },
+			["maps"] = ALL_REGULAR_DELVES,
+			["races"] = ALLIANCE_ONLY,
+		}),
 		ach(40436, {	-- You're Getting a Delve!
 			["maps"] = ALL_REGULAR_DELVES,
 		}),
@@ -1886,7 +1896,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["sourceQuests"] = { 91009 },	-- Durable Information Storage Container
 			["providers"] = {
 				{ "n", 245191 },	-- Dagran Thaurissan II
-				{ "o", 235490 },	-- Overcharged Titan Console
+				{ "n", 235490 },	-- Overcharged Titan Console
 			},
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["coord"] = { 48.0, 43.4, DORNOGAL },

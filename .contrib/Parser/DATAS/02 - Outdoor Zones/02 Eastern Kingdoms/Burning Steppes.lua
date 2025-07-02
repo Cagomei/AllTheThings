@@ -1670,19 +1670,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/3 Obsidian Piston
 							["provider"] = { "i", 63333 },	-- Obsidian Piston
-							["cr"] = 7039,	-- War Reaver
 						}),
 						objective(2, {	-- 0/1 Flux Exhaust Sieve
 							["provider"] = { "i", 63336 },	-- Flux Exhaust Sieve
-							["cr"] = 7039,	-- War Reaver
 						}),
 						objective(3, {	-- 0/1 Thorium Gearshaft
 							["provider"] = { "i", 63335 },	-- Thorium Gearshaft
-							["cr"] = 7039,	-- War Reaver
 						}),
 						objective(4, {	-- 0/1 Stone Power Core
 							["provider"] = { "i", 63334 },	-- Stone Power Core
-							["cr"] = 7039,	-- War Reaver
 						}),
 					},
 				}),
@@ -2477,6 +2473,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(13476, {	-- Recipe: Mighty Rage Potion (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 					["cr"] = 7027,	-- Blackrock Slayer
+				}),
+				o(206971, {	-- War Reaver Parts
+					["description"] = "Kill War Reavers for these objects to spawn. Loot the parts you need from the objects on the ground.",
+					["coord"] = { 47.4, 37.8, BURNING_STEPPES },
+					["timeline"] = { ADDED_4_0_1 },
+					["cr"] = 7039,	-- War Reaver
+					["groups"] = {
+						i(63333),	-- Obsidian Piston
+						i(63336),	-- Flux Exhaust Sieve
+						i(63335),	-- Thorium Gearshaft
+						i(63334),	-- Stone Power Core
+					},
 				}),
 			}),
 		},

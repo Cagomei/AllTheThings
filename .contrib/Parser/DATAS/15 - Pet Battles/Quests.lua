@@ -350,10 +350,16 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["sourceQuests"] = { 31589 },	-- On The Mend
 		}),
 		q(31592, {	-- On The Mend (Audrey)
-			["provider"] = { "n", 63596 },	-- Audrey Burnhep
-			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+			["qg"] = 63596,	-- Audrey Burnhep
 			["sourceQuest"] = 31591,	-- Learning the Ropes
+			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
+			["groups"] = {
+				objective(1, {	-- Battle Pets Healed
+					["provider"] = { "n", 11069 },	-- Jenova Stoneshield <Stable Master>
+					["coord"] = { 67.0, 37.6, STORMWIND_CITY },
+				}),
+			},
 		}),
 		q(31549, {	-- On The Mend (Grady)
 			["provider"] = { "n", 63075 },	-- Grady Bannson

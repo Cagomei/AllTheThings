@@ -3234,7 +3234,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(JUNE, bubbleDownSelf({ ["timeline"] = { "added 11.1.5.61122", "removed 11.1.7.99999" } }, {	-- TODO: Timeline out correctly
+		n(JUNE, bubbleDownSelf({ ["timeline"] = { "added 11.1.5.61122", "removed 11.1.7.61609" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(238967),	-- Molten Cormaera (MOUNT!)
 			}),
@@ -3331,16 +3331,22 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 11.1.7.61491", "removed 11.1.7.99999" } }, {	-- TODO: Timeline in/out correctly
+		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 11.1.7.61609", "removed 11.1.7.99999" } }, {	-- TODO: Timeline /out correctly
 			n(FILLED_TRAVELERS_LOG, {
 				i(242522, {	-- Forsaken's Grotesque Cauldron
+					-- #if BEFORE 11.2.0
 					["description"] = "Rewarded when reaching 600 points in the Travelers Log."
+					-- #endif
 				}),
 				iensemble(244225, {	-- Ensemble: Forsaken's Grotesque Collection
+					-- #if BEFORE 11.2.0
 					["description"] = "Rewarded when reaching 1000 points in the Travelers Log."
+					-- #endif
 				}),
 				i(243594, {	-- Forsaken's Grotesque Charger (MOUNT!)
+					-- #if BEFORE 11.2.0
 					["description"] = "Rewarded when reaching 1400 points in the Travelers Log."
+					-- #endif
 				}),
 			}),
 			filter(MOUNTS, {

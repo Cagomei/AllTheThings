@@ -386,6 +386,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				ach(41621),	-- Heroic: Manaforge Omega Guild Run
 			}),
 			header(HEADERS.Faction, FACTION_MANAFORGE_VANDALS, {
+				n(ACHIEVEMENTS, {
+					ach(60940),	-- Vandals! In! Space!
+				}),
 				faction(FACTION_MANAFORGE_VANDALS),
 				n(QUESTS, sharedData({
 					["provider"] = { "n", 245344 },	-- Zo'turu <Renown Quartermaster>

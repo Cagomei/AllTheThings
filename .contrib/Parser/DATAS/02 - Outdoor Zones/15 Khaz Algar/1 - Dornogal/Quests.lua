@@ -4,6 +4,37 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(DORNOGAL, {
 		n(QUESTS, {
+			------ Catalyst Related ------
+			q(82296, {	-- The Power of Creation
+				["provider"] = { "n", 223533 },	-- Custodian Khubon
+				["coord"] = { 49.8, 54.3, DORNOGAL },
+			}),
+			q(82651, {	-- Omens Unified
+				--["sourceQuests"] = { 82296 },	-- The Power of Creation //not required?
+				["provider"] = { "n", 223533 },	-- Custodian Khubon
+				["coord"] = { 49.8, 54.1, DORNOGAL },
+				["timeline"] = { REMOVED_11_1_0_SEASONSTART },
+				["g"] = {
+					i(211297),	-- Fractured Spark of Omens
+				},
+			}),
+			q(86369, {	-- A Sparkling Fortune
+				["provider"] = { "n", 223533 },	-- Custodian Khubon
+				["coord"] = { 49.8, 54.1, DORNOGAL },
+				["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+				["g"] = {
+					i(230905),	-- Fractured Spark of Fortunes
+				},
+			}),
+			q(90660, {	-- A Golden Circumstance
+				["sourceQuest"] = 86369,	-- A Sparkling Fortune
+				["provider"] = { "n", 223533 },	-- Custodian Khubon
+				["coord"] = { 49.8, 54.1, DORNOGAL },
+				["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+				["g"] = {
+					i(230905),	-- Fractured Spark of Fortunes
+				},
+			}),
 			------ Crests ------
 			--- TODO: sort out in next push
 			q(86363, {	-- The Better Part of Valorstones

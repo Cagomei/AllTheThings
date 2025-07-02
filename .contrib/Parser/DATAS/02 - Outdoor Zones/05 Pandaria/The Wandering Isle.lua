@@ -605,36 +605,62 @@ root(ROOTS.Zones, {
 					}),
 					q(30034, {	-- The Lesson of the Iron Bough (Hunter)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
+						-- #IF BEFORE LEGION
+						["sourceQuest"] = 30041,	-- Much to Learn (Hunter)
+						-- #ENDIF
 						["classes"] = { HUNTER },
 						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
 					}),
 					q(30038, {	-- The Lesson of the Iron Bough (Warrior)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
+						-- #IF BEFORE LEGION
+						["sourceQuest"] = 30045,	-- Much to Learn (Warrior)
+						-- #ENDIF
 						["classes"] = { WARRIOR },
 						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
 					}),
 					q(30033, {	-- The Lesson of the Iron Bough (Mage, Warlock)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
-						["classes"] = { MAGE, WARLOCK },
+						-- #IF BEFORE LEGION
+						["sourceQuest"] = 30040,	-- Much to Learn (Mage)
+						-- #ENDIF
+						["classes"] = {
+							MAGE,
+							-- #IF AFTER DF
+							WARLOCK
+							-- #ENDIF
+						},
 						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
 					}),
 					q(30035, {	-- The Lesson of the Iron Bough (Priest)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
+						-- #IF BEFORE LEGION
+						["sourceQuest"] = 30042,	-- Much to Learn (Priest)
+						-- #ENDIF
 						["classes"] = { PRIEST },
 						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
 					}),
 					q(30027, {	-- The Lesson of the Iron Bough (Monk)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
+						-- #IF BEFORE LEGION
+						["sourceQuest"] = 30039,	-- Much to Learn (Monk)
+						-- #ENDIF
 						["classes"] = { MONK },
 						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
 					}),
 					q(30036, {	-- The Lesson of the Iron Bough (Rogue)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
+						-- #IF BEFORE LEGION
+						["sourceQuest"] = 30043,	-- Much to Learn (Rogue)
+						-- #ENDIF
 						["classes"] = { ROGUE },
 						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
 					}),
 					q(30037, {	-- The Lesson of the Iron Bough (Shaman)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
+						-- #IF BEFORE LEGION
+						["sourceQuest"] = 30044,	-- Much to Learn (Shaman)
+						-- #ENDIF
 						["classes"] = { SHAMAN },
 						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
 					}),

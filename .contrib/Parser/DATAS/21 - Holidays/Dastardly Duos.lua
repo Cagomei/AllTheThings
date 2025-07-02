@@ -294,7 +294,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- Week 4:
 			q(85713),	-- Week 4 Completion
 			-- Week 5:
-			-- q(87514),	-- ^ fired after first completion Dastardly Duos, week 5 (with quest)
+			q(87514),	-- Week 5 Completion
 			-- q(87515),	--
 			q(87531),	--
 			q(87532),	--

@@ -3934,6 +3934,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(60930),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 14 [DNT]
 			ach(60931),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 15 [DNT]
 			ach(60932),	-- Voidrazor Sanctuary clears
+
+			-- 11.2.0.61624
+			ach(60941),	-- <Hidden> 11.2 Raid Renown - Activated All Dead Drops
 		})),
 	}),
 });
