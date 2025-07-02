@@ -114,14 +114,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5178, {	-- Soolie Berryfizz <Alchemy Supplies>
 						["coord"] = { 66.6, 54.6, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_ALCHEMY_VIALS, {
+						["sym"] = {
+							{ "select","itemID",
+							3371,	-- Empty-/Crystal Vial
+							-- #if BEFORE CATA
+							3372,	-- Leaded Vial
+							8925,	-- Crystal Vial
+							18256,	-- Imbued Vial
+							-- #endif
+							},
+						},
+						["groups"] = {
 							i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
-						}),
+						},
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -148,7 +158,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = VANILLA_BLACKSMITHING_SUPPLIES,
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {
+							i(5956),	-- Blacksmith Hammer
+						}),
 					}),
 				}),
 				prof(COOKING, {
@@ -191,7 +203,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_ENCHANTING_SUPPLIES, {
+						["groups"] = appendGroups(ENCHANTING_SUPPLIES, VANILLA_ENCHANTING_SUPPLIES, {
 							i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -203,6 +215,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 67.8, 43.0, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
+							i(5956),	-- Blacksmith Hammer
 							i(18649, {	-- Schematic: Blue Firework (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -280,14 +293,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5162, {	-- Tansy Puddlefizz <Fishing Supplies>
 						["coord"] = { 48.18, 6.51, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = FISHING_SUPPLIES,
+						["sym"] = {{ "sub", "common_vendor", 4222 }},	-- Voloren <Fishing Supplies>
 					}),
 				}),
 				prof(HERBALISM, {
 					n(5138, {	-- Gwina Stonebranch <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
 						["coord"] = { 55.08, 59.51, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = HERB_POUCH,
+						["sym"] = {{ "sub", "common_vendor", 4216 }},	-- Chardryn <Herbalism Supplies>
 					}),
 				}),
 				-- #if AFTER WRATH
@@ -296,7 +309,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 60.55, 43.65, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_3_0_2 },
-						["groups"] = INSCRIPTION_SUPPLIES,
+						["sym"] = {{ "sub", "common_vendor", 30730 }},	-- Stanly McCormick <Inscription Supplies>
 					}),
 				}),
 				-- #endif
@@ -337,14 +350,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
 						["coord"] = { 40.2, 33.4, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
-						-- #if AFTER CATA
-						["sym"] = { {"sub", "common_recipes_vendor", 3366} },	-- Tamar <Leatherworking Supplies>
-						-- #endif
-						["groups"] = appendGroups(VANILLA_LEATHERWORKING_VENDOR_REAGENTS, {
+						["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
+						["groups"] = {
 							i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
 								["isLimited"] = true,
 							}),
-						}),
+						},
+					}),
+				}),
+				prof(MINING, {
+					n(4256, {	-- Golnir Bouldertoe <Mining Supplies>
+						["coord"] = { 51.5, 26.3, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(2901),	-- Mining Pick
+							-- #if AFTER CATA
+							i(30746, {	-- Mining Sack
+								["providers"] = {
+									{ "n", 5514 },	-- Brooke Stonebraid <Mining Supplies>
+									{ "n", 4256 },	-- Golnir Bouldertoe <Mining Supplies>
+									{ "n", 3358 },	-- Gorina <Mining Supplies>
+									{ "n", 3002 },	-- Kurm Stonehoof <Mining Supplies>
+									{ "n", 16751 },	-- Merran <Mining Supplies>
+									{ "n", 52643 },	-- Rissa Halding <Mining Supplies>
+									{ "n", 4599 },	-- Sarah Killan <Mining Supplies>
+									{ "n", 16664 },	-- Zelan <Mining Supplies>
+								},
+								["timeline"] = { ADDED_2_0_1 },
+							}),
+							-- #endif
+						},
 					}),
 				}),
 				prof(TAILORING, {
@@ -1134,7 +1169,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5144,	-- Bink <Mage Trainer>
 					["sourceQuest"] = 1879,	-- Speak with Bink
 					["altQuests"] = { 1861 },	-- Mirror Lake
-					["coord"] = { 27, 8.2, IRONFORGE },
+					["coord"] = { 27.3, 8.3, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUN_MOROGH },
 					["classes"] = { MAGE },
@@ -1146,7 +1181,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   7226 },	-- Mage-tastic Gizmonitor
 								{ "o", 102984 },	-- Bink's Toolbox
 							},
-							["coord"] = { 27.7, 36.5, DUN_MOROGH },
+							["coord"] = { 27.7, 36.4, DUN_MOROGH },
 						}),
 						i(7507, {	-- Arcane Orb
 							["timeline"] = { REMOVED_4_0_3 },

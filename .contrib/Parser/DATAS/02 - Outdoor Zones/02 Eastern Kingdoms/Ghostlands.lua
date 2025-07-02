@@ -1182,6 +1182,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- 0/6 Underlight Ore
 							["provider"] = { "i", 22634 },	-- Underlight Ore
+							-- Danny Donkey: Copper Vein (o:181248) and Tin Vein (o:181249) is also a provider of Underlight Ore.
 							["crs"] = {
 								16334,	-- Blackpaw Gnoll
 								16335,	-- Blackpaw Scavenger

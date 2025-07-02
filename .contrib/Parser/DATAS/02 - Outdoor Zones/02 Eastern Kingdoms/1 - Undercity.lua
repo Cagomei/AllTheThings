@@ -91,22 +91,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(4610, {	-- Algernon <Alchemy Supplies>
 						["coord"] = { 51.8, 74.6, UNDERCITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_ALCHEMY_VIALS, {
+						["sym"] = {{ "sub", "common_vendor", 3010 }},	-- Mani Winterhoof <Alchemy Supplies>
+						["groups"] = {
 							i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(13477, {	-- Recipe: Superior Mana Potion (RECIPE!)
 								["timeline"] = { REMOVED_2_0_1 },	-- Now taught by trainer, recipe removed from the game.
 							}),
-						}),
+						},
 					}),
 				}),
 				prof(BLACKSMITHING, {
 					n(4597, {	-- Samuel Van Brunt <Blacksmithing Supplies>
-						["sym"] = { {"sub", "common_recipes_vendor", 3356 } },	-- Sumi <Blacksmithing Supplies>
+						["sym"] = {{"sub", "common_recipes_vendor", 46359}},	-- Punra <Blacksmithing Supplies>
 						["coord"] = { 61.4, 30.1, UNDERCITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = VANILLA_BLACKSMITHING_SUPPLIES,
+						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {
+							i(5956),	-- Blacksmith Hammer
+						}),
 					}),
 				}),
 				prof(COOKING, {
@@ -129,16 +132,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					n(4553, {	-- Ronald Burch <Cooking Supplies> [TBC+] / Ronald Burch <Cooking Supplier>
 						["coord"] = { 62.3, 43.1, UNDERCITY },
-						-- #if AFTER CATA
-						["sym"] = {{"sub", "common_recipes_vendor", 49737}},	-- Shazdar <Sous Chef>
-						-- #endif
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
+						["sym"] = {
+							-- #if AFTER CATA
+							{"sub", "common_recipes_vendor", 49737},	-- Shazdar <Sous Chef>
+							-- #endif
+							{ "select","itemID",
+								159,	-- Refreshing Spring Water
+								-- #if AFTER TBC
+								30817,	-- Simple Flour
+								-- #endif
+								2678,	-- Mild Spices
+								-- #if BEFORE WRATH
+								2692,	-- Hot Spices
+								3713,	-- Soothing Spices
+								-- #endif
+							},
+						},
+						["groups"] = {
 							i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 							i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						}),
+						},
 					}),
 				}),
 				prof(ENCHANTING, {
@@ -155,7 +171,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sym"] = { {"sub", "common_recipes_vendor", 3346 } },	-- Kithas <Enchanting Supplies>
 						["coord"] = { 62.0, 60.8, UNDERCITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = VANILLA_ENCHANTING_SUPPLIES,
+						["groups"] = appendGroups(ENCHANTING_SUPPLIES, VANILLA_ENCHANTING_SUPPLIES, {}),
 					}),
 				}),
 				prof(ENGINEERING, {
@@ -164,7 +180,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ 75.5, 74.3, UNDERCITY },
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = VANILLA_ENGINEERING_SUPPLIES,
+						["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
+							i(5956),	-- Blacksmith Hammer
+						}),
 					}),
 				}),
 				prof(FISHING, {
@@ -203,14 +221,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(4574, {	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
 						["coord"] = { 81.0, 30.8, UNDERCITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = FISHING_SUPPLIES,
+						["sym"] = {{ "sub", "common_vendor", 3333 }},	-- Shankys <Fishing Supplies>
 					}),
 				}),
 				prof(HERBALISM, {
-					n(4574, {	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+					n(4615, {	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
 						["coord"] = { 54.73, 48.9, UNDERCITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = HERB_POUCH,
+						["groups"] = {
+							i(22250, {	-- Herb Pouch
+								["description"] = "Only select Herbalism Suppliers sells this pouch.",
+								["providers"] = {
+									{ "n", 4216},	-- Chardryn <Herbalism Supplies>
+									{ "n", 5503},	-- Eldraeith <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+									{ "n", 5138},	-- Gwina Stonebranch <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+									{ "n", 4615},	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+									{ "n", 3548},	-- Selina Weston <Alchemy & Herbalism Supplies>
+									-- #if AFTER TBC
+									{ "n", 16367},	-- Botanist Tyniarrel <Herbalism Trainer & Supplies>
+									-- #endif
+									-- #if AFTER CATA
+									{ "n", 46742},	-- Brunda <Herbalism Supplies>
+									-- #else
+									{ "n", 3405},	-- Zeal'aya <Herbalism Supplies>
+									-- #endif
+								},
+							}),
+						},
 					}),
 				}),
 				-- #if AFTER WRATH
@@ -264,17 +301,41 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				prof(LEATHERWORKING, {
 					n(4589, {	-- Joseph Moore <Leatherworking Supplies>
-						["sym"] = { {"sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
 						["coord"] = { 70.1, 58.4, UNDERCITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_LEATHERWORKING_VENDOR_REAGENTS, {
+						["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
+						["groups"] = {
 							i(18949, {	-- Pattern: Barbaric Bracers (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 								["isLimited"] = true,
 							}),
-						}),
+						},
+					}),
+				}),
+				prof(MINING, {
+					n(4599, {	-- Sarah Killan <Mining Supplies>
+						["coord"] = { 56.6, 37.3, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(2901),	-- Mining Pick
+							-- #if AFTER CATA
+							i(30746, {	-- Mining Sack
+								["providers"] = {
+									{ "n", 5514 },	-- Brooke Stonebraid <Mining Supplies>
+									{ "n", 4256 },	-- Golnir Bouldertoe <Mining Supplies>
+									{ "n", 3358 },	-- Gorina <Mining Supplies>
+									{ "n", 3002 },	-- Kurm Stonehoof <Mining Supplies>
+									{ "n", 16751 },	-- Merran <Mining Supplies>
+									{ "n", 52643 },	-- Rissa Halding <Mining Supplies>
+									{ "n", 4599 },	-- Sarah Killan <Mining Supplies>
+									{ "n", 16664 },	-- Zelan <Mining Supplies>
+								},
+								["timeline"] = { ADDED_2_0_1 },
+							}),
+							-- #endif
+						},
 					}),
 				}),
 				prof(TAILORING, {

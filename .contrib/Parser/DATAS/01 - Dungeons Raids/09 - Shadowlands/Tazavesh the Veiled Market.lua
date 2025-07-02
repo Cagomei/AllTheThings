@@ -132,6 +132,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					n(180130, {	-- Antique Vendor
 						i(34828),	-- Antique Silver Cufflinks
 						i(187179),	-- Glow Sticks
+						i(161208),	-- Pirate's Snuff Box
 					}),
 					n(180750, {	-- Au'manal <Master Forger>
 						["description"] = "Requires |cFFFFFFFFFraudulent Credentials|r to be equipped to be able to trade for the new neck.",
@@ -141,10 +142,21 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							}),
 						},
 					}),
-					n(177239, {	-- Collector of Worth <Banker>
-						i(34828),	-- Antique Silver Cufflinks
-						i(187179),	-- Glow Sticks
+					n(180571, {	-- Beeyuh
+						i(162573),	-- Amani Mule
+						i(162574),	-- Mojo'ito
+						i(163132),	-- Bijou on the Beach
+						i(163136),	-- Grotto Punch
+						i(162551),	-- Jani Juice
+						i(162552),	-- Zul's Gin
+						i(162575),	-- Bwonzombie
+						i(162572),	-- Trolwhip
 					}),
+					-- This NPC is just a bank... ?
+					-- n(177239, {	-- Collector of Worth <Banker>
+					-- 	i(34828),	-- Antique Silver Cufflinks
+					-- 	i(187179),	-- Glow Sticks
+					-- }),
 					n(180114, {	-- Fruit Vendor
 						i(187171),	-- Organic Melon
 					}),

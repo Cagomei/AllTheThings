@@ -914,7 +914,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if a then paramA = a; end
 		if b then paramB = b; end
 		-- Move all post processing here?
-		if paramA == "creatureID" or paramA == "encounterID" or paramA == "objectID" then
+		if paramA == "creatureID" or paramA == "npcID" or paramA == "encounterID" or paramA == "objectID" then
 			local subgroup = {};
 			for _,j in ipairs(group) do
 				if not j.ShouldExcludeFromTooltip then

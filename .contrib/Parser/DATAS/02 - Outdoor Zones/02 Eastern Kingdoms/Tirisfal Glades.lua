@@ -2917,7 +2917,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(HERB_POUCH, VANILLA_ALCHEMY_VIALS, VANILLA_HERBS_1, VANILLA_HERBS_2, {}),
+					["sym"] = {
+						{ "sub", "common_vendor", 3010 },	-- Mani Winterhoof <Alchemy Supplies>
+						{ "sub", "common_vendor", 4615 },	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+					},
+					["groups"] = sharedData({
+						["isLimited"] = true,
+					},{
+						i(2453),	-- Bruiseweed
+						i(2449),	-- Earthroot
+						i(785),	-- Mageroyal
+						i(2447),	-- Peacebloom
+						i(765),	-- Silverleaf
+					}),
 				}),
 				n(12943, {	-- Werg Thickblade <Leatherworking Supplies>
 					["coords"] = {

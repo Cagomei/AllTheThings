@@ -1808,12 +1808,6 @@ root(ROOTS.Unsorted, {
 				i(244836),	-- Cane of the Runic Wanderer
 				i(244837),	-- Rookforged Dragonblade
 			}),
-			n(CLASSES, {
-				-- T2 Greedy Emissary Alternative Chest/Offset Pieces?
-				i(244444),	-- Staghelm Robe
-				i(244446),	-- Blouse of Searing Radiance
-				i(244448),	-- Hellfire Blouse
-			}),
 			filter(MOUNTS, {
 				i(243590),	-- Grandmaster's Deep Board
 				i(243572),	-- Grandmaster's Prophetic Board
@@ -2937,8 +2931,6 @@ root(ROOTS.Unsorted, {
 				i(162546),	-- Boiled Mire Whelk
 				i(162547),	-- Raw Nazmani Mineral Water
 				i(162550),	-- Brutoburger
-				i(162551),	-- Jani Juice
-				i(162552),	-- Zul's Gin
 				i(162554),	-- Rootway Papaya
 				i(162555),	-- Zocalo Cheddar
 				i(162556),	-- Zeb'ahari Kiwi \\ Zeb'Ahri Kiwi
@@ -2955,10 +2947,6 @@ root(ROOTS.Unsorted, {
 				i(162568),	-- Desert Dry Rub P'terrorwings
 				i(162569),	-- Sun-Parched Waterskin
 				i(162570),	-- Pricklevine Juice
-				i(162572),	-- Trolwhip
-				i(162573),	-- Amani Mule
-				i(162574),	-- Mojo'ito
-				i(162575),	-- Bwonzombie
 				i(162582),	-- Jungle Heat P'terrorwings
 				i(162583),	-- Swamp Spice P'terrorwings
 				i(163049),	-- Dark Bean Hash
@@ -2991,11 +2979,9 @@ root(ROOTS.Unsorted, {
 				i(163116),	-- Riversprout Samosa
 				i(163117),	-- Zandalari Kingsteak
 				i(163118),	-- Brutosaur Tikka
-				i(163132),	-- Bijou on the Beach
 				i(163133),	-- Jungle Sunfruit
 				i(163134),	-- No Morel Truffle
 				i(163135),	-- Battersnoosh's Toadstool
-				i(163136),	-- Grotto Punch
 				i(163137),	-- Oyster Shot
 				i(163138),	-- Snorkle Dropper
 				i(163140),	-- Viscous Ooze
@@ -3404,7 +3390,6 @@ root(ROOTS.Unsorted, {
 				i(161204),	-- Oily Glass Eyeball \\ Glass Eyeball
 				i(161205),	-- Wooden Horse Carving
 				i(161207),	-- Admiral's Black Rum \\ Admiral's Spiced Black Rum
-				i(161208),	-- Pirate's Snuff Box
 				i(161209),	-- Coven Dream Catcher
 				i(161210),	-- Homemade Child's Doll
 				i(161211),	-- Ship-in-a-Bottle

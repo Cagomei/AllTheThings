@@ -2469,6 +2469,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
+							-- Danny Donkey: o(181582),	-- Kaliri Nest should be linked to this quest as a provider of Kaliri Feather.
 							objective(1, {	-- 0/8 Kaliri Feather
 								["provider"] = { "i", 23588 },	-- Kaliri Feather
 								["crs"] = {
@@ -3170,9 +3171,12 @@ root(ROOTS.Zones, {
 							i(30747, {	-- Gem Pouch
 								["isLimited"] = true,
 							}),
+							-- Danny Donkey: Although this vendor will keep offer a limited supply of Mining Sack after Cata, we will have more practical vendors offering unlimited supply of this bag.
+							-- #if BEFORE CATA
 							i(30746, {	-- Mining Sack
 								["isLimited"] = true,
 							}),
+							-- #endif
 							i(30745, {	-- Heavy Toolbox
 								["isLimited"] = true,
 							}),

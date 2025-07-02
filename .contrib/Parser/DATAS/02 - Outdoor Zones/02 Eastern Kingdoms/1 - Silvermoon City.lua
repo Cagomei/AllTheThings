@@ -42,34 +42,48 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					n(16641, {	-- Melaris <Alchemy Supplies>
 						["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_ALCHEMY_VIALS, VANILLA_HERBS_1, VANILLA_HERBS_2, VANILLA_HERBS_3, {
-							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
-								["isLimited"] = true,
-							}),
+						["sym"] = {{ "sub", "common_vendor", 3010 }},	-- Mani Winterhoof <Alchemy Supplies>
+						["groups"] = sharedData({["isLimited"] = true}, {
+							i(2453),	-- Bruiseweed
+							i(2449),	-- Earthroot
+							i(3356),	-- Kingsblood
+							i(3357),	-- Liferoot
+							i(785),	-- Mageroyal
+							i(2447),	-- Peacebloom
+							i(765),	-- Silverleaf
+							i(3355),	-- Wild Steelbloom
+							i(22900),	-- Recipe: Elixir of Camouflage (RECIPE!)
+							i(23574),	-- Recipe: Transmute Primal Might (RECIPE!)
 						}),
 					}),
 					n(16613, {	-- Parnis <Tradesman>
 						["coord"] = { 64.9, 64.7, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = VANILLA_ALCHEMY_VIALS,
+						["sym"] = {{ "sub", "common_vendor", 3010 }},	-- Mani Winterhoof <Alchemy Supplies>
 					}),
 					n(16612, {	-- Velanni <Alchemy Supplies & Reagents>
 						["coord"] = { 68.95, 66.8, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = VANILLA_ALCHEMY_VIALS,
+						["sym"] = {{ "sub", "common_vendor", 3010 }},	-- Mani Winterhoof <Alchemy Supplies>
 					}),
 				}),
 				prof(BLACKSMITHING, {
 					n(16670, {	-- Eriden <Blacksmithing Supplies>
 						["coord"] = { 80.6, 37.0, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						-- #if AFTER CATA
-						["sym"] = { { "sub", "common_recipes_vendor", 3356 } },	-- Sumi <Blacksmithing Supplies>
-						-- #endif
-						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {
+						["sym"] = {
+							-- #if AFTER CATA
+							{"sub", "common_recipes_vendor", 46359},	-- Punra <Blacksmithing Supplies>
+							-- #endif
+							{ "select","itemID",
+								2880,	-- Weak Flux
+								3466,	-- Strong Flux
+								18567,	-- Elemental Flux
+								3857,	-- Coal
+								5956,	-- Blacksmith Hammer
+							},
+						},
+						["groups"] = {
 							i(23591, {	-- Plans: Adamantite Cleaver (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -82,7 +96,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							i(23593, {	-- Plans: Adamantite Rapier (RECIPE!)
 								["isLimited"] = true,
 							}),
-						}),
+						},
 					}),
 				}),
 				prof(COOKING, {
@@ -96,7 +110,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					n(16677, {	-- Quelis <Cooking Supplies>
 						["coord"] = { 69.6, 71.2, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(QUELIS_GROUPS, VANILLA_COOKING_SUPPLIES, {}),
+						["sym"] = {
+							{ "select","itemID",
+								159,	-- Refreshing Spring Water
+								30817,	-- Simple Flour
+								2678,	-- Mild Spices
+								-- #if BEFORE WRATH
+								2692,	-- Hot Spices
+								3713,	-- Soothing Spices
+								-- #endif
+							},
+						},
+						["groups"] = appendGroups(QUELIS_GROUPS, {}),
 					}),
 					n(16442, {	-- Vinemaster Suntouched <Wine & Spirits Merchant>
 						["coord"] = { 79.5, 58.5, SILVERMOON_CITY },
@@ -112,17 +137,41 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					n(16635, {	-- Lyna <Enchanting Supplies>
 						["coord"] = { 70.0, 24.6, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						-- #if AFTER CATA
-						["sym"] = { { "sub", "common_recipes_vendor", 3346 } },	-- Kithas <Enchanting Supplies>
-						-- #endif
-						["groups"] = appendGroups(LYNA_GROUPS, VANILLA_ENCHANTING_SUPPLIES, {}),
+						["sym"] = {
+							-- #if AFTER CATA
+							{"sub", "common_recipes_vendor", 3346},	-- Kithas <Enchanting Supplies>
+							-- #endif
+							{ "select","itemID",
+								6217,	-- Copper Rod
+								4470,	-- Simple Wood
+								11291,	-- Star Wood
+								10938,	-- Lesser Magic Essence
+								10940,	-- Strange Dust
+								20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+								20752,	-- Formula: Minor Mana Oil (RECIPE!)
+								20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+								-- #if BEFORE CATA
+								6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+								-- #else
+								38682,	-- Enchanting Vellum
+								-- #endif
+							},
+						},
+						["groups"] = appendGroups(LYNA_GROUPS, {}),
 					}),
 				}),
 				prof(ENGINEERING, {
 					n(16782, {	-- Yatheon <Engineering Supplies>
 						["coord"] = { 75.8, 40.6, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
+						["sym"] = {
+							{ "select","itemID",
+								5956,	-- Blacksmith Hammer
+								4400,	-- Heavy Stock
+								4399,	-- Wooden Stock
+							},
+						},
+						["groups"] = {
 							i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -136,14 +185,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							i(23811, {	-- Schematic: White Smoke Flare (RECIPE!)
 								["isLimited"] = true,
 							}),
-						}),
+						},
 					}),
 				}),
 				prof(FISHING, {
 					n(18347, {	-- Olirea <Fishing Supplies>
 						["coord"] = { 77.04, 68.2, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						["groups"] = FISHING_SUPPLIES,
+						["sym"] = {{ "sub", "common_vendor", 3333 }},	-- Shankys <Fishing Supplies>
 					}),
 				}),
 				-- #if AFTER WRATH
@@ -152,7 +201,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						["coord"] = { 69.8, 23.2, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_3_0_2 },
-						["groups"] = INSCRIPTION_SUPPLIES,
+						["sym"] = {{ "sub", "common_vendor", 30729 }},	-- Ickabod Pimlen <Inscription Supplies>
 					}),
 					n(30710, {	-- Zantasia <Inscription Trainer>
 						["coord"] = { 69.6, 23.6, SILVERMOON_CITY },
@@ -193,10 +242,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					n(16689, {	-- Zaralda <Leatherworking Supplies>
 						["coord"] = { 84.6, 78.8, SILVERMOON_CITY },
 						["races"] = HORDE_ONLY,
-						-- #if AFTER CATA
-						["sym"] = { { "sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
-						-- #endif
-						["groups"] = appendGroups(VANILLA_LEATHERWORKING_VENDOR_REAGENTS, {
+						["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
+						["groups"] = {
 							i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -206,7 +253,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								["isLimited"] = true,
 								["f"] = RECIPES,
 							}),
-						}),
+						},
+					}),
+				}),
+				prof(MINING, {
+					n(16664, {	-- Zelan <Mining Supplies>
+						["coord"] = { 78.45, 42.55, SILVERMOON_CITY },
+						["races"] = HORDE_ONLY,
+						["sym"] = {{ "sub", "common_vendor", 4599 }},	-- Sarah Killan <Mining Supplies>
 					}),
 				}),
 				prof(TAILORING, {

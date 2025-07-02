@@ -91,15 +91,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(3014, {	-- Nida Winterhoof <Herbalism Supplies>
 						["coord"] = { 49.6, 39.6, THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
-						["groups"] = VANILLA_ALCHEMY_VIALS,
+						["sym"] = {{ "sub", "common_vendor", 3010 }},	-- Mani Winterhoof <Alchemy Supplies>
 					}),
 				}),
 				prof(BLACKSMITHING, {
 					n(2999, {	-- Taur Stonehoof <Blacksmithing Supplies>
 						["coord"] = { 39.8, 55.6, THUNDER_BLUFF },
-						["sym"] = { {"sub", "common_recipes_vendor", 3356} },	-- Sumi <Blacksmithing Supplies>
 						["races"] = HORDE_ONLY,
-						["groups"] = VANILLA_BLACKSMITHING_SUPPLIES,
+						["sym"] = {
+							-- #if AFTER CATA
+							{"sub", "common_recipes_vendor", 46359},	-- Punra <Blacksmithing Supplies>
+							-- #endif
+							{ "select","itemID",
+								2880,	-- Weak Flux
+								3466,	-- Strong Flux
+								18567,	-- Elemental Flux
+								3857,	-- Coal
+								5956,	-- Blacksmith Hammer
+							},
+						},
 					}),
 				}),
 				prof(COOKING, {
@@ -112,16 +122,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					n(3027, {	-- Naal Mistrunner <Cooking Supplies>
 						["coord"] = { 51.0, 52.5, THUNDER_BLUFF },
-						-- #if AFTER CATA
-						["sym"] = {{"sub", "common_recipes_vendor", 49737} },	-- Shazdar <Sous Chef>
-						-- #endif
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
+						["sym"] = {
+							-- #if AFTER CATA
+							{"sub", "common_recipes_vendor", 49737},	-- Shazdar <Sous Chef>
+							-- #endif
+							{ "select","itemID",
+								159,	-- Refreshing Spring Water
+								-- #if AFTER TBC
+								30817,	-- Simple Flour
+								-- #endif
+								2678,	-- Mild Spices
+								-- #if BEFORE WRATH
+								2692,	-- Hot Spices
+								3713,	-- Soothing Spices
+								-- #endif
+							},
+						},
+						["groups"] = {
 							i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 							i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						}),
+						},
 					}),
 					n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
 						["coord"] = { 55.8, 47.0, THUNDER_BLUFF },
@@ -135,16 +158,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				prof(ENCHANTING, {
 					n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
 						["coord"] = { 44.9, 37.7, THUNDER_BLUFF },
-						["sym"] = { {"sub", "common_recipes_vendor", 3346} },	-- Kithas <Enchanting Supplies>
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_ENCHANTING_SUPPLIES, {
+						["sym"] = {
+							-- #if AFTER CATA
+							{"sub", "common_recipes_vendor", 3346},	-- Kithas <Enchanting Supplies>
+							-- #endif
+							{ "select","itemID",
+								6217,	-- Copper Rod
+								4470,	-- Simple Wood
+								11291,	-- Star Wood
+								10938,	-- Lesser Magic Essence
+								10940,	-- Strange Dust
+								20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+								20752,	-- Formula: Minor Mana Oil (RECIPE!)
+								20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+								-- #if BEFORE CATA
+								6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+								-- #else
+								38682,	-- Enchanting Vellum
+								-- #endif
+							},
+						},
+						["groups"] = {
 							i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(6377, {	-- Formula: Enchant Boots - Minor Agility (RECIPE!)
 								["isLimited"] = true,
 							}),
-						}),
+						},
 					}),
 				}),
 				prof(ENGINEERING, {
@@ -152,14 +194,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 36.22, 60.21, THUNDER_BLUFF },
 						["timeline"] = { ADDED_4_1_0 },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
+						["sym"] = {
+							{ "select","itemID",
+								5956,	-- Blacksmith Hammer
+								4400,	-- Heavy Stock
+								4399,	-- Wooden Stock
+							},
+						},
+						["groups"] = {
 							i(18647, {	-- Schematic: Red Firework (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
 								["isLimited"] = true,
 							}),
-						}),
+						},
 					}),
 				}),
 				prof(FISHING, {
@@ -192,7 +241,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
 						["coord"] = { 55.8, 47.0, THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(FISHING_SUPPLIES, SHINY_BAUBLE, {}),
+						["sym"] = {{ "sub", "common_vendor", 3333 }},	-- Shankys <Fishing Supplies>
+						["groups"] = SHINY_BAUBLE,
 					}),
 				}),
 				-- #if AFTER WRATH
@@ -201,7 +251,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 28.63, 20.26, THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_3_0_2 },
-						["groups"] = INSCRIPTION_SUPPLIES,
+						["sym"] = {{ "sub", "common_vendor", 30729 }},	-- Ickabod Pimlen <Inscription Supplies>
 					}),
 				}),
 				-- #endif
@@ -235,19 +285,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				prof(LEATHERWORKING, {
-					n(3008, {	-- Mak <Leatherworking Supplies>
+					n(3008, {	-- Mak <Leatherworking Supplies> [CATA+] / <Journeyman Leatherworker>
 						["coord"] = { 42.08, 43.46, THUNDER_BLUFF },
-						["sym"] = { {"sub", "common_recipes_vendor", 3366} },	-- Tamar <Leatherworking Supplies>
 						["races"] = HORDE_ONLY,
 						-- #if AFTER CATA
-						["groups"] = appendGroups(VANILLA_LEATHERWORKING_VENDOR_REAGENTS, {}),
+						["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
 						-- #endif
+					}),
+				}),
+				prof(MINING, {
+					n(3002, {	-- Kurm Stonehoof <Mining Supplies>
+						["coord"] = { 34.35, 56.58, THUNDER_BLUFF },
+						["races"] = HORDE_ONLY,
+						["sym"] = {{ "sub", "common_vendor", 4599 }},	-- Sarah Killan <Mining Supplies>
 					}),
 				}),
 				prof(TAILORING, {
 					n(3005, {	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
 						["coord"] = { 43.8, 45.1, THUNDER_BLUFF },
-						["sym"] = { {"sub", "common_recipes_vendor", 3364} },	-- Borya <Tailoring Supplies>
+						["sym"] = {
+							{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
+							-- #if BEFORE CATA
+							{ "select","itemID", 4289},	-- Salt
+							-- #endif
+						},
 						["races"] = HORDE_ONLY,
 						["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
 							i(10311, {	-- Pattern: Orange Martial Shirt (RECIPE!)
@@ -1369,17 +1430,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				-- #if AFTER CATA
-				n(3002, {	-- Kurm Stonehoof <Mining Supplies>
-					["coord"] = { 34.35, 56.58, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(30746, {	-- Mining Sack
-							["timeline"] = { ADDED_2_0_1 },
-						}),
-					},
-				}),
-				-- #endif
 				n(8362, {	-- Kuruk <General Goods>
 					["coord"] = { 38.9, 64.7, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -1413,6 +1463,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(8364, {	-- Pakwa <Bag Vendor>
 					["coord"] = { 39.31, 64.28, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
+					-- #if AFTER CATA
+					["sym"] = {{"select","itemID", 30746}},	-- Mining Sack
+					-- #endif
 					["groups"] = {
 						i(4498),	-- Brown Leather Satchel
 						-- #if AFTER CATA
@@ -1424,9 +1477,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(30745),	-- Heavy Toolbox
 						-- #endif
 						i(4499),	-- Huge Brown Sack
-						-- #if AFTER CATA
-						i(30746),	-- Mining Sack
-						-- #endif
 						i(4496),	-- Small Brown Pouch
 						-- #if AFTER CATA
 						--i(60335),	-- Thick Hide Pack	// blacklisted as its a common vendor good since cata

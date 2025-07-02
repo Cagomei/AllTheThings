@@ -41,7 +41,7 @@ CLASSIC_FISHING = {
 	applyclassicphase(BFA_PHASE_ONE, r(271990, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 };
-FISHING_SUPPLIES = bubbleDown({ ["sharedDescription"] = "Can be bought from Fishing Suppliers, as well as some Trade vendors around the world." }, {
+FISHING_SUPPLIES = sharedData({ ["description"] = "Can be bought from Fishing Suppliers, as well as some Trade vendors around the world." }, {
 	i(6533, {["isLimited"] = true, }),	-- Aquadynamic Fish Attractor
 	i(6532),	-- Bright Baubles
 	i(6256),	-- Fishing Pole

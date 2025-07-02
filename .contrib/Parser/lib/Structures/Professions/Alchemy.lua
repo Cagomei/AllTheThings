@@ -117,25 +117,32 @@ EXPERT_ARTISAN_ALCHEMY
 	{}
 -- #endif
 );
-VANILLA_ALCHEMY_VIALS = {
+VANILLA_ALCHEMY_VIALS = sharedData({	-- Empty-/Leaded-/Crystal-/Imbued Vial for Vanilla/TBC
+	["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
+	["providers"] = {
+		{ "n", 4610},	-- Algernon <Alchemy Supplies>
+		{ "n", 1257},	-- Keldric Boucher <Alchemy Supplies & Reagents>/<Arcane Goods Vendor>
+		{ "n", 3348},	-- Kor'geld <Alchemy Supplies>
+		{ "n", 3010},	-- Mani Winterhoof <Alchemy Supplies>
+		{ "n", 1313},	-- Maria Lumere <Alchemy Supplies>
+		{ "n", 3014},	-- Nida Winterhoof <Herbalism Supplies>
+		{ "n", 5817},	-- Shimra <Trade Supplies>
+		{ "n", 5178},	-- Soolie Berryfizz <Alchemy Supplies>
+		{ "n", 4226},	-- Ulthir <Alchemy Supplies>
+		-- #if AFTER TBC
+		{ "n", 16705},	-- Altaa <Alchemy Supplies>
+		{ "n", 16641},	-- Melaris <Alchemy Supplies>
+		{ "n", 16706},	-- Musal <Alchemy Supplies & Reagents>
+		{ "n", 16705},	-- Altaa <Alchemy Supplies>
+		{ "n", 16768},	-- Nurguni <Tradesman>
+		{ "n", 16612},	-- Velanni <Alchemy Supplies & Reagents>
+		-- #endif
+	},
+}, {
 	i(3371),	-- Empty Vial [Vanilla - WotLK] / Crystal Vial [Cata -> ]
-	i(3372),	-- Leaded Vial, turns into Cracked Vial with Cataclysm.
-	i(8925),	-- Crystal Vial, turns into Tainted Vial with Cataclysm.
-	i(18256),	-- Imbued Vial, turns into Melted Vial with Cataclysm.
-};
-VANILLA_HERBS_1 = bubbleDown({["isLimited"] = true, }, {
-	i(2447),	-- Peacebloom
-	i(765),	-- Silverleaf
-});
-VANILLA_HERBS_2 = bubbleDown({["isLimited"] = true }, {
-	i(2453),	-- Bruiseweed
-	i(2449),	-- Earthroot
-	i(785),	-- Mageroyal
-});
-VANILLA_HERBS_3 = bubbleDown({["isLimited"] = true }, {
-	i(3356),	-- Kingsblood
-	i(3357),	-- Liferoot
-	i(3355),	-- Wild Steelbloom
+	i(3372, { ["timeline"] = { REMOVED_4_0_1 }}),	-- Leaded Vial, turns into Cracked Vial with Cataclysm.
+	i(8925, { ["timeline"] = { REMOVED_4_0_1 }}),	-- Crystal Vial, turns into Tainted Vial with Cataclysm.
+	i(18256, { ["timeline"] = { REMOVED_4_0_1 }}),	-- Imbued Vial, turns into Melted Vial with Cataclysm.
 });
 TBC_ALCHEMY = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(28596, {	-- ALchemy (Master)

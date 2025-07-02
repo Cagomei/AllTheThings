@@ -4697,11 +4697,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(5075, {	-- Blood Shard
-					["crs"] = {
-						3261,	-- Bristleback Thornweaver
-						3263,	-- Bristleback Geomancer
-						3260,	-- Bristleback Water Seeker
-						3258,	-- Bristleback Hunter
+					["providers"] = {
+						{ "n", 3261 },	-- Bristleback Thornweaver
+						{ "n", 3263 },	-- Bristleback Geomancer
+						{ "n", 3260 },	-- Bristleback Water Seeker
+						{ "n", 3258 },	-- Bristleback Hunter
+						-- #if ANYCLASSIC
+						{ "o", 3763 },	-- Copper Vein (The Barrens - Blood Shard)
+						{ "o", 3764 },	-- Tin Vein (The Barrens - Blood Shard)
+						-- #endif
 					},
 				}),
 				i(5092, {	-- Charred Razormane Wand

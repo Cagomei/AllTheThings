@@ -2456,9 +2456,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2798, {	-- Rethban Ore
 					-- #if AFTER CATA
-					["description"] = "Quest, for which this Ore was an objective, has been made obsolete at the release of Cataclysm expansion.\nAs it has no use, it is safe to be destroyed or sold to a vendor.",
+					["description"] = "Rethban Ore's only purpose was to be an objective to a quest that got removed with Cataclysm. Thus it is useless and safe to discard.",
 					-- #endif
-					["cr"] = 580,	-- Redridge Drudger
+					["providers"] = {
+						{ "n", 580 },	-- Redridge Drudger
+						-- #if BEFORE CATA
+						{ "o", 2055 },	-- Copper Vein (Redridge Mountains - Rethban Caverns)
+						-- #endif
+						-- #if ANYCLASSIC
+						{ "o", 2054 },	-- Tin Vein (Redridge Mountains - Rethban Caverns)
+						-- #endif
+					},
 				}),
 				i(1462, {	-- Ring of the Shadow
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },

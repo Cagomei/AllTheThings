@@ -142,7 +142,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_HERBS_2, VANILLA_HERBS_3, {}),
+						["sym"] = {
+							{ "select","itemID",
+								2453,	-- Bruiseweed
+								2449,	-- Earthroot
+								3356,	-- Kingsblood
+								3357,	-- Liferoot
+								785,	-- Mageroyal
+								3355,	-- Wild Steelbloom
+							},
+						},
 					}),
 					n(1257, {	-- Keldric Boucher <Alchemy Supplies & Reagents>/<Arcane Goods Vendor>
 						["coords"] = {
@@ -153,7 +162,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = VANILLA_ALCHEMY_VIALS,
+						["sym"] = {
+							{ "select","itemID",
+							3371,	-- Empty-/Crystal Vial
+							-- #if BEFORE CATA
+							3372,	-- Leaded Vial
+							8925,	-- Crystal Vial
+							18256,	-- Imbued Vial
+							-- #endif
+							},
+						},
 					}),
 					n(5499, {	-- Lilyssia Nightbreeze <Alchemy Trainer>
 						["coords"] = {
@@ -181,10 +199,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_ALCHEMY_VIALS, VANILLA_HERBS_1, VANILLA_HERBS_2, VANILLA_HERBS_3, {
-							i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
-								["isLimited"] = true,
-							}),
+						["sym"] = {
+							{ "select","itemID",
+							3371,	-- Empty-/Crystal Vial
+							-- #if BEFORE CATA
+							3372,	-- Leaded Vial
+							8925,	-- Crystal Vial
+							18256,	-- Imbued Vial
+							-- #endif
+							},
+						},
+						["groups"] = sharedData({
+							["isLimited"] = true,
+						}, {
+							i(2453),	-- Bruiseweed
+							i(2449),	-- Earthroot
+							i(3356),	-- Kingsblood
+							i(3357),	-- Liferoot
+							i(785),	-- Mageroyal
+							i(2447),	-- Peacebloom
+							i(765),	-- Silverleaf
+							i(3355),	-- Wild Steelbloom
+							i(9301),	-- Recipe: Elixir of Shadow Power (RECIPE!)
 						}),
 					}),
 				}),
@@ -203,15 +239,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ 56.3, 17.2, STORMWIND_CITY },
 							-- #endif
 						},
-						-- #if AFTER 4.3.0
-						["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
-						-- #endif
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {
+						["sym"] = {
+							-- #if AFTER 4.3.0
+							{ "sub", "common_recipes_vendor", 55684 },	-- Jordan Smith <Blacksmithing Trainer & Supplies>
+							-- #endif
+							{ "select","itemID",
+								2880,	-- Weak Flux
+								3466,	-- Strong Flux
+								18567,	-- Elemental Flux
+								3857,	-- Coal
+								5956,	-- Blacksmith Hammer
+							},
+						},
+						["groups"] = {
 							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 								["isLimited"] = true,
 							}),
-						}),
+						},
 					}),
 					n(5511, {	-- Therum Deepforge <Expert Blacksmith>
 						["coords"] = {
@@ -251,10 +296,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 51.4, 18.0, STORMWIND_CITY },
 						["timeline"] = { ADDED_7_3_5 },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
+						["sym"] = {
+							{ "select","itemID",
+								159,	-- Refreshing Spring Water
+								30817,	-- Simple Flour
+								2678,	-- Mild Spices
+							},
+						},
+						["groups"] = {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						}),
+						},
 					}),
 					n(1328, {	-- Elly Langston <Barmaid>
 						["coords"] = {
@@ -282,10 +334,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
+						["sym"] = {
+							{ "select","itemID",
+								159,	-- Refreshing Spring Water
+								-- #if AFTER TBC
+								30817,	-- Simple Flour
+								-- #endif
+								2678,	-- Mild Spices
+								-- #if BEFORE WRATH
+								2692,	-- Hot Spices
+								3713,	-- Soothing Spices
+								-- #endif
+							},
+						},
+						["groups"] = {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						}),
+						},
 					}),
 					n(49701, {	-- Jon Casper <Sous Chef>
 						["coords"] = {
@@ -386,7 +451,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, VANILLA_ENCHANTING_SUPPLIES, {
+						["sym"] = {
+							{ "select","itemID",
+								6217,	-- Copper Rod
+								4470,	-- Simple Wood
+								11291,	-- Star Wood
+								10938,	-- Lesser Magic Essence
+								10940,	-- Strange Dust
+								20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+								20752,	-- Formula: Minor Mana Oil (RECIPE!)
+								20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+								-- #if BEFORE CATA
+								6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+								-- #else
+								38682,	-- Enchanting Vellum
+								-- #endif
+							},
+						},
+						["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
 							i(67312, {	-- Formula: Magic Lamp (RECIPE!)
 								["timeline"] = { ADDED_4_0_3 },
 								["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
@@ -422,10 +504,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
-							i(39684, { ["timeline"] = { ADDED_3_0_2 }}),	-- Hair Trigger
-							i(40533, { ["timeline"] = { ADDED_3_0_2 }}),	-- Walnut Stock
-						}),
+						["sym"] = {
+							{ "select","itemID",
+								5956,	-- Blacksmith Hammer
+								4400,	-- Heavy Stock
+								4399,	-- Wooden Stock
+								-- #if AFTER CATA
+								39684,	-- Hair Trigger
+								40533,	-- Walnut Stock
+								-- #endif
+							},
+						},
 					}),
 					n(1304, {	-- Darian Singh <Fireworks Vendor>
 						["coords"] = {
@@ -554,7 +643,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(FISHING_SUPPLIES, SHINY_BAUBLE, {}),
+						["sym"] = {{ "sub", "common_vendor", 4222 }},	-- Voloren <Fishing Supplies>
+						["groups"] = SHINY_BAUBLE,
 					}),
 				}),
 				prof(HERBALISM, {
@@ -567,7 +657,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						},
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = HERB_POUCH,
+						["sym"] = {{ "sub", "common_vendor", 4216 }},	-- Chardryn <Herbalism Supplies>
 					}),
 					n(5566, {	-- Tannysa <Herbalism Trainer>
 						["coords"] = {
@@ -920,7 +1010,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5565, {	-- Jillian Tanner <Leatherworking Supplies>
 						["coord"] = { 71.7, 62.8, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, VANILLA_LEATHERWORKING_VENDOR_REAGENTS, {}),
+						["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, SALT, VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, {}),
 					}),
 					n(5564, {	-- Simon Tanner <Expert Leatherworker>
 						["coords"] = {
@@ -935,6 +1025,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				prof(MINING, {
+					n(5514, {	-- Brooke Stonebraid <Mining Supplies>
+						["coords"] = {
+							-- #if AFTER WRATH
+							{ 59.15, 37.5, STORMWIND_CITY },
+							-- #else
+							{ 51.6, 16.8, STORMWIND_CITY },
+							-- #endif
+						},
+						["races"] = ALLIANCE_ONLY,
+						["sym"] = {{ "sub", "common_vendor", 4256 }},	-- Golnir Bouldertoe <Mining Supplies>
+					}),
 					n(5513, {	-- Gelman Stonehand <Mining Trainer>
 						["coords"] = {
 							-- #if AFTER WRATH

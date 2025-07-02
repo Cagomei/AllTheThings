@@ -2566,6 +2566,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 44.13, 56.95, DUN_MOROGH },
 						}),
+						objective(2, {
+							["cr"] = 1243,	-- Hegnar Rumbleshot <Gunsmith>
+							["coord"] = { 40.7, 65.1, DUN_MOROGH },
+						}),
 					},
 				}),
 				q(417, {	-- A Pilot's Revenge
@@ -2651,7 +2655,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 60496 },	-- Tender Boar Ribs (QI!)
 							["cr"] = 1125,	-- Crag Boar
 						}),
+						-- #else
+						objective(1, {	-- 0/6 Crag Boar Rib
+							["provider"] = { "i", 2886 },	-- Tender Boar Ribs
+							["crs"] = {
+								1125,	-- Crag Boar
+								1126,	-- Large Crag Boar
+								1127,	-- Elder Crag Boar
+								1689,	-- Scarred Crag Boar
+								-- #if SEASON_OF_DISCOVERY
+								208638,	-- Fyodi
+								-- #endif
+							},
+						}),
 						-- #endif
+						objective(2, {	-- 0/1 Rhapsody Malt
+							["provider"] = { "i", 2894 },	-- Rhapsody Malt
+							["cr"] = 1247,	-- Crag Boar
+						}),
 						i(2888),	-- Beer Basted Boar Ribs
 						i(2889),	-- Recipe: Beer Basted Boar Ribs (RECIPE!)
 					},
@@ -3534,6 +3555,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
 					["groups"] = {
+						objective(1, {	-- 0/4 Chunk of Boar Meat
+							["provider"] = { "i", 769 },	-- Chunk of Boar Meat
+							["crs"] = {
+								1125,	-- Crag Boar
+								1126,	-- Large Crag Boar
+								1127,	-- Elder Crag Boar
+								1689,	-- Scarred Crag Boar
+								-- #if SEASON_OF_DISCOVERY
+								208638,	-- Fyodi
+								-- #endif
+							},
+						}),
 						objective(2, {	-- 0/2 Thick Bear Fur
 							["provider"] = { "i", 6952 },	-- Thick Bear Fur (QI!)
 							["crs"] = {
@@ -3677,7 +3710,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE CATA
 				q(313, {	-- The Grizzled Den / Forced to Watch from Afar [CATA+]
 					["qg"] = 1377,	-- Pilot Stonegear
-					["coord"] = { 49.6, 48.4, DUN_MOROGH },
+					["coord"] = { 49.6, 48.6, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
 					["groups"] = {

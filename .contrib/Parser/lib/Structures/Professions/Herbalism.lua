@@ -58,9 +58,6 @@ CLASSIC_HERBALISM = {
 	r(193290, {["timeline"] = {ADDED_7_0_3}}),	-- Herbalism Journal
 	applyclassicphase(BFA_PHASE_ONE, r(265819, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering
 };
-HERB_POUCH = {
-	i(22250),	-- Herb Pouch
-};
 TBC_HERBALISM = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(28695, {	-- Herb Gathering (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },

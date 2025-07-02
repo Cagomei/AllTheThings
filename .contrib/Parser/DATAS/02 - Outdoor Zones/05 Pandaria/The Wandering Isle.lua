@@ -19,11 +19,12 @@ root(ROOTS.Zones, {
 					q(31450, {	-- A New Fate
 						["provider"] = { "n", 56013 },	-- Spirit of Master Shang Xi
 						["sourceQuests"] = { 29800 },	-- New Allies
-						["coord"] = { 51.5, 48.3, STARTER_WANDERING_ISLE },
+						["coord"] = { 51.4, 48.3, STARTER_WANDERING_ISLE },
 					}),
 					q(29679, {	-- A New Friend
+						["provider"] = { "n", 54975 },	-- Aysa Cloudsinger
 						["sourceQuests"] = { 29678 },	-- Shu, the Spirit of Water
-						["coord"] = { 65.6, 42.6, STARTER_WANDERING_ISLE },
+						["coord"] = { 79.8, 39.3, STARTER_WANDERING_ISLE },
 						["g"] = {
 							i(131908, {	-- Gauntlets of Splashing Water
 								["timeline"] = { ADDED_7_0_3 },
@@ -40,12 +41,12 @@ root(ROOTS.Zones, {
 							29794,	-- None Left Behind
 							29797,	-- Medical Supplies
 						},
-						["coord"] = { 42.2, 86.5, STARTER_WANDERING_ISLE },
+						["coord"] = { 42.3, 86.4, STARTER_WANDERING_ISLE },
 					}),
 					q(29410, {	-- Aysa of the Tushui
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
 						["sourceQuests"] = { 29409 },	-- The Disciple's Challenge
-						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
+						["coord"] = { 56.7, 18.2, STARTER_WANDERING_ISLE },
 					}),
 					q(29784, {	-- Balanced Perspective
 						["provider"] = { "n", 65558 },	-- Huojin Monk
@@ -54,7 +55,6 @@ root(ROOTS.Zones, {
 							29780,	-- Do No Evil
 							29781,	-- MOnkey Advisory Warning
 						},
-						["coord"] = { 21.2, 34.2, STARTER_WANDERING_ISLE },
 					}),
 					q(29786, {	-- Battle for the Skies
 						["provider"] = { "n", 55595 },	-- Aysa Cloudsinger
@@ -69,12 +69,19 @@ root(ROOTS.Zones, {
 					}),
 					q(29785, {	-- Dafeng, the Spirit of Air
 						["provider"] = { "n", 55595 },	-- Aysa Cloudsinger
-						["sourceQuests"] = { 29784 },	-- Balanced Perspective
-						["coord"] = { 33.0, 35.6, STARTER_WANDERING_ISLE },
+						["sourceQuests"] = {
+							29782,	-- Stronger Than Bone
+							29784,	-- Balanced Perspective
+						},
+						["coord"] = { 32.9, 35.6, STARTER_WANDERING_ISLE },
 					}),
 					q(29780, {	-- Do No Evil
 						["provider"] = { "n", 55583 },	-- Ji Firepaw
-						["sourceQuests"] = { 29778 },	-- Rewritten Wisdoms
+						["sourceQuests"] = {
+							29777,	-- Tools of the Enemy
+							29778,	-- Rewritten Wisdoms
+							29783,	-- Stronger Than Stone
+						},
 						["coord"] = { 31.0, 36.7, STARTER_WANDERING_ISLE },
 						["g"] = {
 							i(74592),	-- Dagger of the Hozen
@@ -85,7 +92,7 @@ root(ROOTS.Zones, {
 					q(29793, {	-- Evil from the Seas
 						["provider"] = { "n", 55942 },	-- Ji Firepaw
 						["sourceQuests"] = { 30589 },	-- Wrecking the Wreck
-						["coord"] = { 36.3, 72.4, STARTER_WANDERING_ISLE },
+						["coord"] = { 36.4, 72.5, STARTER_WANDERING_ISLE },
 						["g"] = {
 							i(74607),	-- Boots of Courage
 							i(74608),	-- Legguards of the Brave
@@ -98,7 +105,7 @@ root(ROOTS.Zones, {
 					q(29523, {	-- Fanning the Flames
 						["provider"] = { "n", 54568 },	-- Ji Firepaw
 						["sourceQuests"] = { 29417 },	-- The Way of the Huojin
-						["coord"] = { 50.3, 21.5, STARTER_WANDERING_ISLE },
+						["coord"] = { 50.2, 21.3, STARTER_WANDERING_ISLE },
 						["g"] = {
 							i(131906, {	-- Initiate's Boots
 								["timeline"] = { ADDED_7_0_3 },
@@ -115,6 +122,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 54975 },	-- Aysa Cloudsinger
 						["sourceQuests"] = {
 							29661,	-- The Lesson of Dry Fur
+							29662,	-- Stronger Than Reeds
 							29663,	-- The Lesson of the Balanced Rock
 						},
 						["coord"] = { 65.6, 42.6, STARTER_WANDERING_ISLE },
@@ -123,7 +131,7 @@ root(ROOTS.Zones, {
 					q(29665, {	-- From Bad to Worse
 						["provider"] = { "n", 55940 },	-- Jojo Ironbrow
 						["sourceQuests"] = { 29796 },	-- Urgent News
-						["coord"] = { 42.2, 86.5, STARTER_WANDERING_ISLE },
+						["coord"] = { 42.3, 86.4, STARTER_WANDERING_ISLE },
 					}),
 					q(30590, {	-- Handle With Care
 						["provider"] = { "n", 60055 },	-- Makael Bay
@@ -162,18 +170,18 @@ root(ROOTS.Zones, {
 					q(29424, {	-- Items of Utmost Importance
 						["provider"] = { "n", 54943 },	-- Merchant Lorvo
 						["sourceQuests"] = { 29410 },	-- Aysa of the Ushui
-						["coord"] = { 55.1, 32.6, STARTER_WANDERING_ISLE },
+						["coord"] = { 55.1, 32.8, STARTER_WANDERING_ISLE },
 						["g"] = { i(72071) },	-- Stolen Training Supplies (QI!)
 					}),
 					q(29522, {	-- Ji of the Huojin
 						["provider"] = { "n", 54608 },	-- Master Shang Xi
 						["sourceQuests"] = { 29414 },	-- The Way of the Tushui
-						["coord"] = { 57.5, 34.8, STARTER_WANDERING_ISLE },
+						["coord"] = { 57.5, 34.7, STARTER_WANDERING_ISLE },
 					}),
 					q(29418, {	-- Kindling the Fire
 						["provider"] = { "n", 54568 },	-- Ji Firepaw
 						["sourceQuests"] = { 29417 },	-- The Way of the Huojin
-						["coord"] = { 50.3, 21.5, STARTER_WANDERING_ISLE },
+						["coord"] = { 50.2, 21.3, STARTER_WANDERING_ISLE },
 						["g"] = {
 							o_repeated({	-- -- Loose Dogwood Root
 								o(209326),	-- Loose Dogwood Root
@@ -210,7 +218,10 @@ root(ROOTS.Zones, {
 					}),
 					q(29768, {	-- Missing Mallet
 						["provider"] = { "n", 55477 },	-- Ji Firepaw
-						["sourceQuests"] = { 29769 },	-- Rascals
+						["sourceQuests"] = {
+							29769,	-- Rascals
+							29770,	-- Still Good!
+						},
 						["coord"] = { 68.9, 65.0, STARTER_WANDERING_ISLE },
 						["g"] = {
 							i(74585),	-- Dancing Boots
@@ -228,7 +239,11 @@ root(ROOTS.Zones, {
 					}),
 					q(29781, {	-- Monkey Advisory Warning
 						["provider"] = { "n", 55583 },	-- Ji Firepaw
-						["sourceQuests"] = { 29778 },	-- Rewritten Wisdoms
+						["sourceQuests"] = {
+							29777,	-- Tools of the Enemy
+							29778,	-- Rewritten Wisdoms
+							29783,	-- Stronger Than Stone
+						},
 						["coord"] = { 31.0, 36.7, STARTER_WANDERING_ISLE },
 						["g"] = {
 							o(209669, {	-- Stolen Fireworks
@@ -256,7 +271,7 @@ root(ROOTS.Zones, {
 					q(29776, {	-- Morning Breeze Village
 						["provider"] = { "n", 54786 },	-- Master Shang Xi
 						["sourceQuests"] = { 29775 },	-- The Spirit and Body of Shen-zin Su
-						["coord"] = { 51.5, 48.5, STARTER_WANDERING_ISLE },
+						["coord"] = { 51.6, 48.3, STARTER_WANDERING_ISLE },
 					}),
 					q(30039, {	-- Much to Learn (Monk)
 						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
@@ -289,7 +304,7 @@ root(ROOTS.Zones, {
 					q(29800, {	-- New Allies
 						["provider"] = { "n", 57739 },	-- Ji Firepaw
 						["sourceQuests"] = { 29799 },	-- The Healing of Shen-zin Su
-						["coord"] = { 38.8, 86.4, STARTER_WANDERING_ISLE },
+						["coord"] = { 38.8, 86.3, STARTER_WANDERING_ISLE },
 					}),
 					q(29794, {	-- None Left Behind
 						["provider"] = { "n", 55944 },	-- Delora Lionheart
@@ -306,7 +321,10 @@ root(ROOTS.Zones, {
 					}),
 					q(29774, {	-- Not In the Face!
 						["provider"] = { "n", 55477 },	-- Ji Firepaw
-						["sourceQuests"] = { 29772 },	-- Raucous Rousing
+						["sourceQuests"] = {
+							29771,	-- Stronger Than Wood
+							29772,	-- Raucous Rousing
+						},
 						["coord"] = { 68.9, 65.0, STARTER_WANDERING_ISLE },
 					}),
 					q(29421, {	-- Only the Worthy Shall Pass
@@ -353,7 +371,7 @@ root(ROOTS.Zones, {
 					q(29778, {	-- Rewritten Wisdoms
 						["provider"] = { "n", 55583 },	-- Ji Firepaw
 						["sourceQuests"] = { 29776 },	-- Morning Breeze Village
-						["coord"] = { 31.0, 36.8, STARTER_WANDERING_ISLE },
+						["coord"] = { 31.0, 36.7, STARTER_WANDERING_ISLE },
 						["g"] = {
 							i(74595),	-- Gloves of Verity
 							i(74594),	-- Gloves of Wisdom
@@ -374,7 +392,7 @@ root(ROOTS.Zones, {
 							29666,	-- The Sting of Learning
 							29677,	-- The Sun Pearl
 						},
-						["coord"] = { 78.5, 42.9, STARTER_WANDERING_ISLE },
+						["coord"] = { 70.6, 38.7, STARTER_WANDERING_ISLE },
 						["g"] = { i(73791) },	-- Sun Pearl (QI!)
 					}),
 					q(29789, {	-- Small, But Significant
@@ -460,7 +478,7 @@ root(ROOTS.Zones, {
 					q(29795, {	-- Stocking Stalks
 						["provider"] = { "n", 60042 },	-- Korga Strongmane
 						["sourceQuests"] = { 29792 },	-- Bidden to Greatness
-						["coord"] = { 50.1, 76.6, STARTER_WANDERING_ISLE },
+						["coord"] = { 50.2, 76.6, STARTER_WANDERING_ISLE },
 						["g"] = {
 							o_repeated({	-- Broken Bamboo Stalk
 								o(211394),	-- Broken Bamboo Stalk
@@ -476,7 +494,7 @@ root(ROOTS.Zones, {
 					q(29782, {	-- Stronger Than Bone
 						["sourceQuests"] = { 29778 },	-- Rewritten Wisdoms
 						["provider"] = { "o", 209673 },	-- Jade Tiger Pillar
-						["coord"] = { 26.5, 33.8, STARTER_WANDERING_ISLE },
+						["coord"] = { 26.4, 33.7, STARTER_WANDERING_ISLE },
 						["g"] = {
 							i(76174),	-- Jade Tiger Pillar (QI!)
 							i(157020, {	-- Humble Cudgel
@@ -490,7 +508,7 @@ root(ROOTS.Zones, {
 					}),
 					q(29662, {	-- Stronger Than Reeds
 						["provider"] = { "n", 55021 },	-- Jojo Ironbrow
-						["coord"] = { 51.4, 46.4, STARTER_WANDERING_ISLE },
+						["coord"] = { 63.5, 41.9, STARTER_WANDERING_ISLE },
 						["g"] = {
 							o(209507, {	-- Hard Tearwood Reed
 								i(73178),	-- Hard Tearwood Reed (QI!)
@@ -509,8 +527,11 @@ root(ROOTS.Zones, {
 					}),
 					q(29771, {	-- Stronger Than Wood
 						["provider"] = { "n", 55478 },	-- Jojo Ironbrow
-						["sourceQuests"] = { 29769 },	-- Rascals
-						["coord"] = { 69.1, 66.7, STARTER_WANDERING_ISLE },
+						["sourceQuests"] = {
+							29769,	-- Rascals
+							29770,	-- Still Good!
+						},
+						["coord"] = { 69.2, 66.7, STARTER_WANDERING_ISLE },
 						["g"] = {
 							o(209646, {	-- Discarded Wood Plank
 								["coords"] = {
@@ -538,12 +559,17 @@ root(ROOTS.Zones, {
 					}),
 					q(29779, {	-- The Direct Solution
 						["provider"] = { "n", 55583 },	-- Ji Firepaw
-						["sourceQuests"] = { 29778 },	-- Rewritten Wisdoms
+						["sourceQuests"] = {
+							29777,	-- Tools of the Enemy
+							29778,	-- Rewritten Wisdoms
+							29783,	-- Stronger Than Stone
+						},
 						["coord"] = { 31.0, 36.7, STARTER_WANDERING_ISLE },
 					}),
 					q(29409, {	-- The Disciple's Challenge
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
 						["sourceQuests"] = { 29408 },	-- The Lesson of the Burning Scroll
+						["coord"] = { 59.7, 19.1, STARTER_WANDERING_ISLE },
 						["g"] = {
 							i(73222),	-- Initiate's Gauntlets
 							i(73220),	-- Initiate's Gloves
@@ -556,7 +582,7 @@ root(ROOTS.Zones, {
 					q(29799, {	-- The Healing of Shen-zin Su
 						["provider"] = { "n", 56418 },	-- Ji Firepaw
 						["sourceQuests"] = { 30767 },	-- Risking it All
-						["coord"] = { 39.2, 86.2, STARTER_WANDERING_ISLE },
+						["coord"] = { 39.3, 86.2, STARTER_WANDERING_ISLE },
 						["g"] = {
 							i(74601),	-- Ceremonial Leggings
 							i(74600),	-- Healer's Wristwraps
@@ -582,7 +608,7 @@ root(ROOTS.Zones, {
 					q(29524, {	-- The Lesson of Stifled Pride
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
 						["sourceQuests"] = { 29406 },	-- The Lesson of the Sandy Fist
-						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
+						["coord"] = { 56.7, 18.2, STARTER_WANDERING_ISLE },
 						["g"] = {
 							i(73218),	-- Initiate's Belt
 							i(131902, {	-- Initiate's Braided Belt
@@ -600,7 +626,7 @@ root(ROOTS.Zones, {
 					q(29408, {	-- The Lesson of the Burning Scroll
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
 						["sourceQuests"] = { 29524 },	-- The Lesson of Stifled Pride
-						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
+						["coord"] = { 59.7, 19.1, STARTER_WANDERING_ISLE },
 						["g"] = { i(80212) },	-- The Master's Flame (QI!)
 					}),
 					q(30034, {	-- The Lesson of the Iron Bough (Hunter)
@@ -609,7 +635,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 30041,	-- Much to Learn (Hunter)
 						-- #ENDIF
 						["classes"] = { HUNTER },
-						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
+						["coord"] = { 56.7, 18.2, STARTER_WANDERING_ISLE },
 					}),
 					q(30038, {	-- The Lesson of the Iron Bough (Warrior)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
@@ -617,7 +643,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 30045,	-- Much to Learn (Warrior)
 						-- #ENDIF
 						["classes"] = { WARRIOR },
-						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
+						["coord"] = { 56.7, 18.2, STARTER_WANDERING_ISLE },
 					}),
 					q(30033, {	-- The Lesson of the Iron Bough (Mage, Warlock)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
@@ -630,7 +656,7 @@ root(ROOTS.Zones, {
 							WARLOCK
 							-- #ENDIF
 						},
-						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
+						["coord"] = { 56.7, 18.2, STARTER_WANDERING_ISLE },
 					}),
 					q(30035, {	-- The Lesson of the Iron Bough (Priest)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
@@ -638,7 +664,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 30042,	-- Much to Learn (Priest)
 						-- #ENDIF
 						["classes"] = { PRIEST },
-						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
+						["coord"] = { 56.7, 18.2, STARTER_WANDERING_ISLE },
 					}),
 					q(30027, {	-- The Lesson of the Iron Bough (Monk)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
@@ -646,7 +672,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 30039,	-- Much to Learn (Monk)
 						-- #ENDIF
 						["classes"] = { MONK },
-						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
+						["coord"] = { 56.7, 18.2, STARTER_WANDERING_ISLE },
 					}),
 					q(30036, {	-- The Lesson of the Iron Bough (Rogue)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
@@ -654,7 +680,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 30043,	-- Much to Learn (Rogue)
 						-- #ENDIF
 						["classes"] = { ROGUE },
-						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
+						["coord"] = { 56.7, 18.2, STARTER_WANDERING_ISLE },
 					}),
 					q(30037, {	-- The Lesson of the Iron Bough (Shaman)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
@@ -662,7 +688,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 30044,	-- Much to Learn (Shaman)
 						-- #ENDIF
 						["classes"] = { SHAMAN },
-						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
+						["coord"] = { 56.7, 18.2, STARTER_WANDERING_ISLE },
 					}),
 					q(29406, {	-- The Lesson of the Sandy Fist
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
@@ -675,7 +701,7 @@ root(ROOTS.Zones, {
 							30037,	-- The Lesson of the Iron Bough (Shaman)
 							30038,	-- The Lesson of the Iron Bough (Warrior)
 						},
-						["coord"] = { 66.0, 22.8, STARTER_WANDERING_ISLE },
+						["coord"] = { 56.7, 18.2, STARTER_WANDERING_ISLE },
 						["g"] = {
 							i(73216),	-- Initiate's Armguards
 							i(73215),	-- Initiate's Bracers
@@ -688,7 +714,7 @@ root(ROOTS.Zones, {
 					q(29419, {	-- The Missing Driver
 						["provider"] = { "n", 54943 },	-- Merchant Lorvo
 						["sourceQuests"] = { 29410 },	-- Aysa of the Ushui
-						["coord"] = { 55.1, 32.6, STARTER_WANDERING_ISLE },
+						["coord"] = { 55.1, 32.8, STARTER_WANDERING_ISLE },
 						["g"] = { i(73223) },	-- Cloak of the Compassionate
 					}),
 					q(29423, {	-- The Passion of Shen-zin Su
@@ -761,7 +787,7 @@ root(ROOTS.Zones, {
 					q(29417, {	-- The Way of the Huojin
 						["provider"] = { "n", 54568 },	-- Ji Firepaw
 						["sourceQuests"] = { 29522 },	-- Ji of the Huojin
-						["coord"] = { 50.3, 21.5, STARTER_WANDERING_ISLE },
+						["coord"] = { 50.2, 21.3, STARTER_WANDERING_ISLE },
 						["g"] = {
 							i(73228),	-- Initiate's Britches
 							i(131905, {	-- Initiate's Greaves
@@ -774,7 +800,7 @@ root(ROOTS.Zones, {
 					q(29414, {	-- The Way of the Tushui
 						["provider"] = { "n", 54567 },	-- Aysa Cloudsinger
 						["sourceQuests"] = { 29419, 29424 },	-- The Missing Driver, Items of Utmost Importance
-						["coord"] = { 55, 32.3, STARTER_WANDERING_ISLE },
+						["coord"] = { 55.1, 32.6, STARTER_WANDERING_ISLE },
 						["g"] = {
 							i(73226),	-- Initiate's Breastplate
 							i(131904, {	-- Initiate's Chestpiece
@@ -801,7 +827,7 @@ root(ROOTS.Zones, {
 							29793,	-- Evil from the Seas
 							30590,	-- Handle With Care
 						},
-						["coord"] = { 36.3, 72.4, STARTER_WANDERING_ISLE },
+						["coord"] = { 36.4, 72.5, STARTER_WANDERING_ISLE },
 					}),
 					q(29787, {	-- Worthy of Passing
 						["provider"] = { "n", 55586 },	-- Master Shang Xi
@@ -814,7 +840,7 @@ root(ROOTS.Zones, {
 							29795,	-- Stocking Stalks
 							30591,	-- Preying on the Predators
 						},
-						["coord"] = { 50.1, 76.6, STARTER_WANDERING_ISLE },
+						["coord"] = { 50.2, 76.6, STARTER_WANDERING_ISLE },
 					}),
 				}),
 				n(TREASURES, {

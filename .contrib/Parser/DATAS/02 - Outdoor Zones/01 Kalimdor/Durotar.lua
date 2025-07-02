@@ -1110,6 +1110,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						}),
+						q(25145, {	-- Immolate
+							["qg"] = 3156,	-- Nartok <Warlock Trainer>
+							["sourceQuest"]	= 3090,	-- Tainted Parchment
+							["coords"] = {
+								-- #if AFTER MOP
+								-- TODO: Confirm the position after MoP.
+								{ 45.8, 63.5, VALLEY_OF_TRIALS },
+								-- #else
+								{ 42.4, 68.0, DUROTAR },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["lvl"]	= 3,
+							["races"] = { ORC },
+							["classes"] = { WARLOCK },
+						}),
 						q(25132, {	-- Burning Blade Medallion
 							["qg"] = 3145,	-- Zureetha Fargaze
 							["sourceQuests"] = {
@@ -1250,6 +1266,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/6 Mottled Boar
+									["provider"] = { "n", 3098 },	-- Mottled Boar
+									["coord"] = { 43.6, 64.8, DUROTAR },
+								}),
 								i(53378, {	-- Mottled Bracers
 									["timeline"] = { ADDED_4_0_3 },
 								}),
@@ -1362,11 +1382,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 43.0, 62.4, VALLEY_OF_TRIALS },
 								-- #else
-								{ 42.8, 67.2, DUROTAR },
+								{ 42.7, 67.2, DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
+							["groups"] = {
+								objective(1, {
+									["providers"] = {
+										{ "i", 11583 },		-- Cactus Apple
+										{ "o", 171938 },	-- Cactus Apple
+									},
+								}),
+							},
 						}),
 						q(4402, {	-- Galgar's Cactus Apple Surprise
 							["qg"] = 9796,	-- Galgar
@@ -1511,6 +1539,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/7 Northwatch Scout
+									["provider"] = { "n", 39317 },	-- Northwatch Scout
+								}),
 								i(53373, {	-- Hearth Defender Bracers
 									["timeline"] = { ADDED_4_0_3 },
 								}),
@@ -1544,6 +1575,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 							["races"] = HORDE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/4 Peons Awoken
+									["provider"] = { "n", 10556 }	-- Lazy Peon
+								}),
+							},
 						}),
 						q(5441, {	-- Lazy Peons
 							["qg"] = 11378,	-- Foreman Thazz'ril
@@ -1749,6 +1785,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/8 Scorpid Worker Tail
+									["provider"] = { "i", 4862 },	-- Scorpid Worker Tail (QI!)
+									["cr"] = 3124, -- Scorpid Worker
+								}),
 								i(53394, {	-- Venom-Imbued Robes
 									["timeline"] = { ADDED_4_0_3 },
 								}),
@@ -1803,12 +1843,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 						-- #endif
 						q(3090, {	-- Tainted Parchment
+							["qg"] = 3143,	-- Gornek
 							["providers"] = {
 								{ "n", 3143 },	-- Gornek
 								{ "i", 9579 },	-- Tainted Parchment
 							},
 							["sourceQuest"] = 788,	-- Cutting Teeth
-							-- #if BEFORE MOP
+							-- #if AFTER CATA
+							["coord"] = { 43.2, 68.2, DUROTAR },
+							-- #else
 							["coord"] = { 42, 68.4, DUROTAR },
 							-- #endif
 							["timeline"] = { REMOVED_7_0_3 },
@@ -1877,6 +1920,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/8 Vile Familiar
+									["provider"] = { "n", 3101 },	-- Vile Familiar
+								}),
 								i(53396, {	-- Vile Jersey
 									["timeline"] = { ADDED_4_0_3 },
 								}),
@@ -1978,7 +2024,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 45.2, 68.4, VALLEY_OF_TRIALS },
 								-- #else
-								{ 43.2, 68.8, DUROTAR },
+								{ 43.3, 68.8, DUROTAR },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },

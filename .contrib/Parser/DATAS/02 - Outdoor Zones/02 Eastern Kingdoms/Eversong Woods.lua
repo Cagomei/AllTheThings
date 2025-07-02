@@ -887,37 +887,37 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					}),
 					n(ZONE_DROPS, {
-						i(20483, {	-- Tainted Arcane Sliver
-							["cr"] = 15298,	-- Tainted Arcane Wraith
-						}),
+						["sym"] = {
+							{ "select","itemID",
+								21002,	-- Unkempt Belt
+								21003,	-- Unkempt Bracers
+								21004,	-- Unkempt Cloak
+								21005,	-- Unkempt Gloves
+								21006,	-- Unkempt Pants
+								21007,	-- Unkempt Robe
+								21008,	-- Unkempt Shoes
+								21009,	-- Scraggy Leather Belt
+								21010,	-- Scraggy Leather Boots
+								21011,	-- Scraggy Leather Bracers
+								21012,	-- Scraggy Leather Gloves
+								21013,	-- Scraggy Leather Pants
+								21014,	-- Scraggy Leather Vest
+								21015,	-- Shoddy Chain Belt
+								21020,	-- Shoddy Chain Boots
+								21019,	-- Shoddy Chain Bracers
+								21018,	-- Shoddy Chain Gloves
+								21017,	-- Shoddy Chain Pants
+								21016,	-- Shoddy Chain Vest
+								21021,	-- Battered Shield
+								21022,	-- Weather Beaten Buckler
+							},
+						},
+						["groups"] = {
+							i(20483, {	-- Tainted Arcane Sliver
+								["cr"] = 15298,	-- Tainted Arcane Wraith
+							}),
+						},
 					}),
-					n(ZONE_DROPS, sharedData({
-						-- #if AFTER 9.0.3
-						["sharedDescription"] = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
-						-- #endif
-					}, {
-						i(21002),	-- Unkempt Belt
-						i(21003),	-- Unkempt Bracers
-						i(21004),	-- Unkempt Cloak
-						i(21005),	-- Unkempt Gloves
-						i(21006),	-- Unkempt Pants
-						i(21007),	-- Unkempt Robe
-						i(21008),	-- Unkempt Shoes
-						i(21009),	-- Scraggy Leather Belt
-						i(21010),	-- Scraggy Leather Boots
-						i(21011),	-- Scraggy Leather Bracers
-						i(21012),	-- Scraggy Leather Gloves
-						i(21013),	-- Scraggy Leather Pants
-						i(21014),	-- Scraggy Leather Vest
-						i(21015),	-- Shoddy Chain Belt
-						i(21020),	-- Shoddy Chain Boots
-						i(21019),	-- Shoddy Chain Bracers
-						i(21018),	-- Shoddy Chain Gloves
-						i(21017),	-- Shoddy Chain Pants
-						i(21016),	-- Shoddy Chain Vest
-						i(21021),	-- Battered Shield
-						i(21022),	-- Weather Beaten Buckler
-					})),
 				},
 			}),
 			n(ACHIEVEMENTS, {
@@ -1998,7 +1998,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16367, {	-- Botanist Tyniarrel <Herbalism Trainer & Supplies>
 					["coord"] = { 37.4, 71.96, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
-					["groups"] = HERB_POUCH,
+					["sym"] = {{ "sub", "common_vendor", 4615 }},	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
 				}),
 				n(18951, {	-- Erilia <Enchanting Vendor>
 					["coord"] = { 56.2, 54.6, EVERSONG_WOODS },
@@ -2125,8 +2125,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			n(ZONE_DROPS, sharedData({
 				-- #if AFTER 9.0.3
-				["sharedDescription"] = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
+				["description"] = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
 				-- #endif
+				["maps"] = {
+					EVERSONG_WOODS,
+					SUNSTRIDER_ISLE,
+				},
 			}, {
 				i(21002),	-- Unkempt Belt
 				i(21003),	-- Unkempt Bracers

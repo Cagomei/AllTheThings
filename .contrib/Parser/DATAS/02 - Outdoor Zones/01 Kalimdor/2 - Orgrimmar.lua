@@ -158,14 +158,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_ALCHEMY_VIALS, {
+						["sym"] = {{ "sub", "common_vendor", 3010 }},	-- Mani Winterhoof <Alchemy Supplies>
+						["groups"] = {
 							i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
 								["isLimited"] = true,
 							}),
 							i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
-						}),
+						},
 					}),
 					n(5817, {	-- Shimra <Trade Supplies>
 						["coords"] = {
@@ -176,7 +177,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = VANILLA_ALCHEMY_VIALS,
+						["sym"] = {{ "sub", "common_vendor", 3010 }},	-- Mani Winterhoof <Alchemy Supplies>
 					}),
 					n(3347, {	-- Yelmak <Alchemy Trainer>
 						["coord"] = { 55.6, 46.6, ORGRIMMAR },
@@ -204,11 +205,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(46359, {	-- Punra <Blacksmithing Supplies>
 						["coord"] = { 45.0, 77.6, ORGRIMMAR },
 						["timeline"] = { ADDED_4_0_1 },
-						["sym"] = {
-							{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
-						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {
+						["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
 							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -234,11 +232,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, VANILLA_BLACKSMITHING_SUPPLIES, {
+						["sym"] = {
+							-- #if AFTER CATA
+							{"sub", "common_recipes_vendor", 46359},	-- Punra <Blacksmithing Supplies>
+							-- #endif
+							{ "select","itemID",
+								2880,	-- Weak Flux
+								3466,	-- Strong Flux
+								18567,	-- Elemental Flux
+								3857,	-- Coal
+								5956,	-- Blacksmith Hammer
+							},
+						},
+						["groups"] = {
 							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 								["isLimited"] = true,
 							}),
-						}),
+						},
 					}),
 					n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>
 						["coord"] = { 36.2, 83.2, ORGRIMMAR },
@@ -276,10 +286,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 41.0, 79.4, ORGRIMMAR },
 						["timeline"] = { ADDED_7_3_5 },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
+						["sym"] = {
+							{ "select","itemID",
+								159,	-- Refreshing Spring Water
+								30817,	-- Simple Flour
+								2678,	-- Mild Spices
+							},
+						},
+						["groups"] = {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						}),
+						},
 					}),
 					n(45551, {	-- Karizi Porkpatty <Cooking Supplies>
 						["coord"] = { 39.0, 85.6, ORGRIMMAR },
@@ -347,10 +364,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 56.6, 61.2, ORGRIMMAR },
 						["timeline"] = { ADDED_4_0_1 },
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
+						["sym"] = {
+							{ "select","itemID",
+								159,	-- Refreshing Spring Water
+								30817,	-- Simple Flour
+								2678,	-- Mild Spices
+							},
+						},
+						["groups"] = {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						}),
+						},
 					}),
 					n(3400, {	-- Xen'to <Cooking Supplies>
 						["coords"] = {
@@ -399,7 +423,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, VANILLA_ENCHANTING_SUPPLIES, {
+						["sym"] = {
+							{ "select","itemID",
+								6217,	-- Copper Rod
+								4470,	-- Simple Wood
+								11291,	-- Star Wood
+								10938,	-- Lesser Magic Essence
+								10940,	-- Strange Dust
+								20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+								20752,	-- Formula: Minor Mana Oil (RECIPE!)
+								20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+								-- #if BEFORE CATA
+								6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+								-- #else
+								38682,	-- Enchanting Vellum
+								-- #endif
+							},
+						},
+						["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
 							i(67308, {	-- Formula: Enchanted Lantern (RECIPE!)
 								["races"] = HORDE_ONLY,
 								["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
@@ -435,7 +476,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
+						["sym"] = {
+							{ "select","itemID",
+								5956,	-- Blacksmith Hammer
+								4400,	-- Heavy Stock
+								4399,	-- Wooden Stock
+								-- #if AFTER CATA
+								39684,	-- Hair Trigger
+								40533,	-- Walnut Stock
+								-- #endif
+							},
+						},
+						["groups"] = {
 							i(39684, { ["timeline"] = { ADDED_3_0_2 }}),	-- Hair Trigger
 							i(18647, {	-- Schematic: Red Firework (RECIPE!)
 								["isLimited"] = true,
@@ -457,7 +509,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["isLimited"] = true,
 							}),
 							i(40533, { ["timeline"] = { ADDED_3_0_2 }}),	-- Walnut Stock
-						}),
+						},
 					}),
 					n(133127, {	-- Thaluriel <Engineering Supplies>
 						["coord"] = { 36.8, 84.6, ORGRIMMAR },
@@ -601,13 +653,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 54.6, 50.6, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_4_0_1 },
-						["groups"] = HERB_POUCH,
+						["sym"] = {{ "sub", "common_vendor", 4615 }},	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
 					}),
 					-- #else
 					n(3405, {	-- Zeal'aya <Herbalism Supplies>
 						["coord"] = { 55.0, 39.6, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = HERB_POUCH,
+						["sym"] = {{ "sub", "common_vendor", 4615 }},	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
 					}),
 					-- #endif
 				}),
@@ -623,7 +675,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 55.3, 56.0, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_4_0_1 },
-						["groups"] = INSCRIPTION_SUPPLIES,
+						["sym"] = {{ "sub", "common_vendor", 30729 }},	-- Ickabod Pimlen <Inscription Supplies>
 					}),
 					n(46716, {	-- Nerog <Inscription Trainer>
 						["coord"] = { 55.2, 55.8, ORGRIMMAR },
@@ -645,7 +697,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_3_0_2 },
-						["groups"] = INSCRIPTION_SUPPLIES,
+						["sym"] = {{ "sub", "common_vendor", 30729 }},	-- Ickabod Pimlen <Inscription Supplies>
 					}),
 				}),
 				-- #endif
@@ -958,7 +1010,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						},
 						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, VANILLA_LEATHERWORKING_VENDOR_REAGENTS, {
+						["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, SALT, VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, {
 							i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -966,6 +1018,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				prof(MINING, {
+					n(3358, {	-- Gorina <Mining Supplies>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 72.67, 35.78, ORGRIMMAR },
+							-- #else
+							{ 73.2, 26.6, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["sym"] = {{ "sub", "common_vendor", 4599 }},	-- Sarah Killan <Mining Supplies>
+					}),
 					n(3357, {	-- Makaru <Mining Trainer>
 						["coords"] = {
 							-- #if AFTER CATA

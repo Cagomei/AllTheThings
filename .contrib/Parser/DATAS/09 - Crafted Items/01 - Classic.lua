@@ -88,7 +88,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(5633),	-- Great Rage Potion
 			i(13454),	-- Greater Arcane Elixir
 			i(13461, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Greater Arcane Protection Potion
-			applyclassicphase(PHASE_FOUR, i(20002, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Greater Dreamless Sleep Potion
+			applyclassicphase(PHASE_FOUR, i(20002, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Greater Dreamless Sleep Potion
 			i(13457),	-- Greater Fire Protection Potion
 			i(13456, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Greater Frost Protection Potion
 			i(1710),	-- Greater Healing Potion
@@ -108,7 +108,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(4623, {["timeline"] = { REMOVED_4_0_3 }}),	-- Lesser Stoneshield Potion
 			i(3387),	-- Limited Invulnerability Potion
 			applyclassicphase(PHASE_FOUR, i(20008)),	-- Living Action Potion
-			applyclassicphase(PHASE_FOUR, i(20007, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Mageblood Elixir[2.1.0+] / Mageblood Potion
+			applyclassicphase(PHASE_FOUR, i(20007, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Mageblood Elixir[2.1.0+] / Mageblood Potion
 			i(9036, {["timeline"] = {REMOVED_5_0_4}}),	-- Magic Resistance Potion
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_EIGHT, i(241650, {["timeline"] = {ADDED_1_15_7}})), -- Major Discolored Healing Potion
@@ -582,9 +582,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_SIX, i(234086, { ["timeline"] = { ADDED_1_15_5 }, })), -- Black Grasp of the Destroyer
 			-- #endif
-			applyclassicphase(PHASE_FOUR, i(19690, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodsoul Breastplate
-			applyclassicphase(PHASE_FOUR, i(19692, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodsoul Gauntlets
-			applyclassicphase(PHASE_FOUR, i(19691, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodsoul Shoulders
+			applyclassicphase(PHASE_FOUR, i(19690, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Bloodsoul Breastplate
+			applyclassicphase(PHASE_FOUR, i(19692, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Bloodsoul Gauntlets
+			applyclassicphase(PHASE_FOUR, i(19691, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Bloodsoul Shoulders
 			i(206495, {["timeline"] = { ADDED_10_1_5 }}),	-- Bracers of Vengeance
 			i(206787, {["timeline"] = { ADDED_10_1_5 }}),	-- Bucket Kickers
 			i(2853),	-- Copper Bracers
@@ -598,9 +598,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_FOUR, i(20550)),	-- Darkrune Breastplate
 			applyclassicphase(PHASE_FOUR, i(20549)),	-- Darkrune Gauntlets
 			applyclassicphase(PHASE_FOUR, i(20551)),	-- Darkrune Helm
-			applyclassicphase(PHASE_FOUR, i(19693, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Darksoul Breastplate
-			applyclassicphase(PHASE_FOUR, i(19694, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Darksoul Leggings
-			applyclassicphase(PHASE_FOUR, i(19695, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Darksoul Shoulders
+			applyclassicphase(PHASE_FOUR, i(19693, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Darksoul Breastplate
+			applyclassicphase(PHASE_FOUR, i(19694, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Darksoul Leggings
+			applyclassicphase(PHASE_FOUR, i(19695, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Darksoul Shoulders
 			i(12625, {	-- Dawnbringer Shoulders
 				["timeline"] = {
 					-- #if SEASON_OF_DISCOVERY
@@ -685,10 +685,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_FIVE, i(22197)),	-- Heavy Obsidian Belt
 			applyclassicphase(PHASE_THREE_RECIPES, i(19043)),	-- Heavy Timbermaw Belt
 			applyclassicphase(PHASE_THREE_RECIPES, i(19048)),	-- Heavy Timbermaw Boots
-			applyclassicphase(PHASE_SIX, i(22671, {["timeline"] = {REMOVED_3_0_2, ADDED_10_1_5}})),	-- Icebane Bracers
-			applyclassicphase(PHASE_SIX, i(22669, {["timeline"] = {REMOVED_3_0_2, ADDED_10_1_5}})),	-- Icebane Breastplate
+			applyclassicphase(PHASE_SIX, i(22671, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icebane Bracers
+			applyclassicphase(PHASE_SIX, i(22669, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icebane Breastplate
 			i(206444, {["timeline"] = { ADDED_10_1_5 }}),	-- Icebane Coif
-			applyclassicphase(PHASE_SIX, i(22670, {["timeline"] = {REMOVED_3_0_2, ADDED_10_1_5}})),	-- Icebane Gauntlets
+			applyclassicphase(PHASE_SIX, i(22670, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icebane Gauntlets
 			i(206442, {["timeline"] = { ADDED_10_1_5 }}),	-- Icebane Leggings
 			i(206443, {["timeline"] = { ADDED_10_1_5 }}),	-- Icebane Mantle
 			i(206446, {["timeline"] = { ADDED_10_1_5 }}),	-- Icebane Trudgers
@@ -903,8 +903,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(15871),	-- Truesilver Skeleton Key
 			i(206648, {["timeline"] = { ADDED_10_1_5 }}),	-- Undeath Metal
 		}),
-		filter(PROFESSION_EQUIPMENT, {
-			i(5956, {["collectible"] = false}),	-- Blacksmithing Hammer
+		filter(PROFESSION_EQUIPMENT, {	-- Blacksmithing Hammer
+			i(5956, {
+				["collectible"] = false,
+				["description"] = "Can be bought from Blacksmithing- and Engineering Suppliers, as well as some Trade vendors around the world",
+			}),
 		}),
 		n(WEAPONS, {
 			i(206493, {["timeline"] = { ADDED_10_1_5 }}),	-- Axe of Sundered Bone
@@ -1688,8 +1691,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		n(ARMOR, {
-			applyclassicphase(PHASE_FOUR, i(19999, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Goggles
-			applyclassicphase(PHASE_FOUR, i(19998, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Lens
+			applyclassicphase(PHASE_FOUR, i(19999, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Bloodvine Goggles
+			applyclassicphase(PHASE_FOUR, i(19998, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Bloodvine Lens
 			i(10499),	-- Bright-Eye Goggles
 			i(10501),	-- Catseye Ultra Goggles
 			i(4393),	-- Craftsman's Monocle
@@ -1746,9 +1749,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(21570),	-- Cluster Launcher
 			i(4365),	-- Coarse Dynamite
 			i(4391),	-- Compact Harvest Reaper Kit
-			i(8068, {["timeline"] = {REMOVED_4_0_1}}),	-- Crafted Heavy Shot
-			i(8067, {["timeline"] = {REMOVED_4_0_1}}),	-- Crafted Light Shot
-			i(8069, {["timeline"] = {REMOVED_4_0_1}}),	-- Crafted Solid Shot
+			i(8068, {["timeline"] = { REMOVED_4_0_1 }}),	-- Crafted Heavy Shot
+			i(8067, {["timeline"] = { REMOVED_4_0_1 }}),	-- Crafted Light Shot
+			i(8069, {["timeline"] = { REMOVED_4_0_1 }}),	-- Crafted Solid Shot
 			i(16005),	-- Dark Iron Bomb
 			i(18641),	-- Dense Dynamite
 			i(4388),	-- Discombobulator Ray
@@ -1776,13 +1779,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(18634),	-- Gyrofreeze Ice Reflector
 			i(4378),	-- Heavy Dynamite
 			i(10562),	-- Hi-Explosive Bomb
-			i(10512, {["timeline"] = {REMOVED_4_0_1}}),	-- Hi-Impact Mithril Slugs
+			i(10512, {["timeline"] = { REMOVED_4_0_1 }}),	-- Hi-Impact Mithril Slugs
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(215127, {	-- High-Yield Radiation Bomb
 				["timeline"] = { ADDED_1_15_1 },
 			})),
 			-- #endif
-			i(18638, {["timeline"] = {REMOVED_6_0_2}}),	-- Hyper-Radiant Flame Reflector
+			i(18638, {["timeline"] = { REMOVED_6_0_2 }}),	-- Hyper-Radiant Flame Reflector
 			i(4386, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Ice Deflector
 			i(4390),	-- Iron Grenade
 			i(21589),	-- Large Blue Rocket
@@ -1812,7 +1815,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(21576),	-- Red Rocket Cluster
 			i(4360),	-- Rough Copper Bomb
 			i(4358),	-- Rough Dynamite
-			i(15846, {["timeline"] = {REMOVED_6_0_2}}),	-- Salt Shaker
+			i(15846, {["timeline"] = { REMOVED_6_0_2 }}),	-- Salt Shaker
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_ONE, i(210147, {	-- Shredder Autosalvage Unit
 				["timeline"] = { ADDED_1_15_0 },
@@ -1830,13 +1833,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { ADDED_1_15_1 },
 			})),
 			-- #endif
-			applyclassicphase(TBC_PHASE_ONE, i(22728, {["timeline"] = { CREATED_1_10_0, ADDED_2_0_1}})),	-- Steam Tonk Controller
+			applyclassicphase(TBC_PHASE_ONE, i(22728, {["timeline"] = { CREATED_1_10_0, ADDED_2_0_1 }})),	-- Steam Tonk Controller
 			i(4366),	-- Target Dummy
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_SIX, i(233985, { ["timeline"] = { ADDED_1_15_5 }, })), -- The Fumigator
 			-- #endif
 			i(15993),	-- Thorium Grenade
-			i(15997, {["timeline"] = {REMOVED_4_0_1}}),	-- Thorium Shells
+			i(15997, {["timeline"] = { REMOVED_4_0_1 }}),	-- Thorium Shells
 			i(18639),	-- Ultra-Flash Shadow Reflector
 			i(16009),	-- Voice Amplification Modulator
 		}),
@@ -4227,7 +4230,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				i(22250, {["description"] = "Only select Herbalism Suppliers sells this pouch."}),	-- Herb Pouch
 			}),
 			-- #if AFTER MOP
 			n(PROFESSION_EQUIPMENT, {
@@ -4719,8 +4721,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			}),
 			i(3864, {	-- Citrine
 				["providers"] = {
-					{ "i", 2772 },				-- Iron Ore
-					{ "i", 3858 },				-- Mithril Ore
+					{ "i", 2772 },	-- Iron Ore
+					{ "i", 3858 },	-- Mithril Ore
 				},
 			}),
 			i(12364, {	-- Huge Emerald
@@ -4734,8 +4736,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			}),
 			i(1705, {	-- Lesser Moonstone
 				["providers"] = {
-					{ "i", 2772 },				-- Iron Ore
-					{ "i", 2771 },				-- Tin Ore
+					{ "i", 2772 },	-- Iron Ore
+					{ "i", 2771 },	-- Tin Ore
 				},
 			}),
 			i(774, {	-- Malachite
@@ -4959,7 +4961,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
 			["groups"] = {
 				i(15073),	-- Chimeric Boots
-				i(15074, {["timeline"] = {REMOVED_4_0_3, ADDED_11_1_5}}),	-- Chimeric Gloves
+				i(15074, {["timeline"] = { REMOVED_4_0_3, ADDED_11_1_5 }}),	-- Chimeric Gloves
 				i(15072),	-- Chimeric Leggings
 				i(15075),	-- Chimeric Vest
 				applyclassicphase(PHASE_THREE_RECIPES, i(19162)),	-- Corehound Belt
@@ -4968,9 +4970,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15062),	-- Devilsaur Leggings
 				i(8349),	-- Feathered Breastplate
 				i(15071),	-- Frostsaber Boots
-				i(15070, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_7}}),	-- Frostsaber Gloves
-				i(15069, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_7}}),	-- Frostsaber Leggings
-				i(15068, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_7}}),	-- Frostsaber Tunic
+				i(15070, {["timeline"] = { REMOVED_6_0_2, ADDED_10_1_7 }}),	-- Frostsaber Gloves
+				i(15069, {["timeline"] = { REMOVED_6_0_2, ADDED_10_1_7 }}),	-- Frostsaber Leggings
+				i(15068, {["timeline"] = { REMOVED_6_0_2, ADDED_10_1_7 }}),	-- Frostsaber Tunic
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18510, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 }})),	-- Hide of the Wild
 				i(15066, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Ironfeather Breastplate
 				i(15067),	-- Ironfeather Shoulders
@@ -5056,8 +5058,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				i(8200),	-- Big Voodoo Robe
 				i(20575),	-- Black Whelp Tunic
-				applyclassicphase(PHASE_FOUR, i(19688, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Blood Tiger Breastplate
-				applyclassicphase(PHASE_FOUR, i(19689, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Blood Tiger Shoulders
+				applyclassicphase(PHASE_FOUR, i(19688, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Blood Tiger Breastplate
+				applyclassicphase(PHASE_FOUR, i(19689, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Blood Tiger Shoulders
 				applyclassicphase(PHASE_FIVE_CATCH_UP, i(22761)),	-- Bramblewood Belt
 				applyclassicphase(PHASE_FIVE_CATCH_UP, i(22760)),	-- Bramblewood Boots
 				applyclassicphase(PHASE_FIVE_CATCH_UP, i(22759)),	-- Bramblewood Helm
@@ -5169,16 +5171,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				i(7358),	-- Pilferer's Gloves
 				i(206435, {["timeline"] = { ADDED_10_1_5 }}),	-- Polar Belt
-				applyclassicphase(PHASE_SIX, i(22663, {["timeline"] = {REMOVED_3_0_2, ADDED_10_1_5}})),	-- Polar Bracers
+				applyclassicphase(PHASE_SIX, i(22663, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Polar Bracers
 				i(206436, {["timeline"] = { ADDED_10_1_5 }}),	-- Polar Footwarmers
-				applyclassicphase(PHASE_SIX, i(22662, {["timeline"] = {REMOVED_3_0_2, ADDED_10_1_5}})),	-- Polar Gloves
+				applyclassicphase(PHASE_SIX, i(22662, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Polar Gloves
 				i(206434, {["timeline"] = { ADDED_10_1_5 }}),	-- Polar Helm
 				i(206432, {["timeline"] = { ADDED_10_1_5 }}),	-- Polar Leggings
 				i(206433, {["timeline"] = { ADDED_10_1_5 }}),	-- Polar Spaulders
-				applyclassicphase(PHASE_SIX, i(22661, {["timeline"] = {REMOVED_3_0_2, ADDED_10_1_5}})),	-- Polar Tunic
-				applyclassicphase(PHASE_FOUR, i(19687, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Primal Batskin Bracers
-				applyclassicphase(PHASE_FOUR, i(19686, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Primal Batskin Gloves
-				applyclassicphase(PHASE_FOUR, i(19685, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Primal Batskin Jerkin
+				applyclassicphase(PHASE_SIX, i(22661, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Polar Tunic
+				applyclassicphase(PHASE_FOUR, i(19687, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Primal Batskin Bracers
+				applyclassicphase(PHASE_FOUR, i(19686, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Primal Batskin Gloves
+				applyclassicphase(PHASE_FOUR, i(19685, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Primal Batskin Jerkin
 				i(4456, {	-- Raptor Hide Belt
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -5232,7 +5234,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #if AFTER TBC
 				-- Tribal
 				i(15073),	-- Chimeric Boots
-				i(15074, {["timeline"] = {REMOVED_4_0_3, ADDED_11_1_5}}),	-- Chimeric Gloves
+				i(15074, {["timeline"] = { REMOVED_4_0_3, ADDED_11_1_5 }}),	-- Chimeric Gloves
 				i(15072),	-- Chimeric Leggings
 				i(15075),	-- Chimeric Vest
 				applyclassicphase(PHASE_THREE_RECIPES, i(19162)),	-- Corehound Belt
@@ -5241,9 +5243,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15062),	-- Devilsaur Leggings
 				i(8349),	-- Feathered Breastplate
 				i(15071),	-- Frostsaber Boots
-				i(15070, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_7}}),	-- Frostsaber Gloves
-				i(15069, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_7}}),	-- Frostsaber Leggings
-				i(15068, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_7}}),	-- Frostsaber Tunic
+				i(15070, {["timeline"] = { REMOVED_6_0_2, ADDED_10_1_7 }}),	-- Frostsaber Gloves
+				i(15069, {["timeline"] = { REMOVED_6_0_2, ADDED_10_1_7 }}),	-- Frostsaber Leggings
+				i(15068, {["timeline"] = { REMOVED_6_0_2, ADDED_10_1_7 }}),	-- Frostsaber Tunic
 				i(15066, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Ironfeather Breastplate
 				i(15067),	-- Ironfeather Shoulders
 				i(15064),	-- Warbear Harness
@@ -5310,56 +5312,56 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			}),
 			filter(MAIL, {
-				i(132547, {["timeline"] = {ADDED_7_0_3}}),	-- Blue Chain Leggings
+				i(132547, {["timeline"] = { ADDED_7_0_3 }}),	-- Blue Chain Leggings
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, i(220743, {	-- Cacophonous Chain Shoulderguards
 					["timeline"] = { ADDED_1_15_2 },
 				})),
 				-- #endif
-				i(132495, {["timeline"] = {ADDED_7_0_3}}),	-- Chain Belt
-				i(132494, {["timeline"] = {ADDED_7_0_3}}),	-- Chain Boots
-				i(132496, {["timeline"] = {ADDED_7_0_3}}),	-- Chain Bracers
-				i(132499, {["timeline"] = {ADDED_7_0_3}}),	-- Chain Gauntlets
-				i(132493, {["timeline"] = {ADDED_7_0_3}}),	-- Chain Hauberk
-				i(132497, {["timeline"] = {ADDED_7_0_3}}),	-- Chain Leggings
-				i(132498, {["timeline"] = {ADDED_7_0_3}}),	-- Chain Pauldrons
+				i(132495, {["timeline"] = { ADDED_7_0_3 }}),	-- Chain Belt
+				i(132494, {["timeline"] = { ADDED_7_0_3 }}),	-- Chain Boots
+				i(132496, {["timeline"] = { ADDED_7_0_3 }}),	-- Chain Bracers
+				i(132499, {["timeline"] = { ADDED_7_0_3 }}),	-- Chain Gauntlets
+				i(132493, {["timeline"] = { ADDED_7_0_3 }}),	-- Chain Hauberk
+				i(132497, {["timeline"] = { ADDED_7_0_3 }}),	-- Chain Leggings
+				i(132498, {["timeline"] = { ADDED_7_0_3 }}),	-- Chain Pauldrons
 				i(203966, {["timeline"] = { ADDED_10_0_7 }}),	-- Cord of Shriveled Heads
-				i(132545, {["timeline"] = {ADDED_7_0_3}}),	-- Crackling Scale Breastplate
-				i(132546, {["timeline"] = {ADDED_7_0_3}}),	-- Element Grips
+				i(132545, {["timeline"] = { ADDED_7_0_3 }}),	-- Crackling Scale Breastplate
+				i(132546, {["timeline"] = { ADDED_7_0_3 }}),	-- Element Grips
 				i(7348),	-- Fletcher's Gloves
 				i(203819, {["timeline"] = { ADDED_10_0_7 }}),	-- Gloves of the Tormentor
-				i(132522, {["timeline"] = {ADDED_7_0_3}}),	-- Heavy Scale Belt
-				i(132521, {["timeline"] = {ADDED_7_0_3}}),	-- Heavy Scale Boots
-				i(132533, {["timeline"] = {ADDED_7_0_3}}),	-- Heavy Scale Gauntlets
-				i(132536, {["timeline"] = {ADDED_7_0_3}}),	-- Heavy Scale Hood
-				i(132532, {["timeline"] = {ADDED_7_0_3}}),	-- Heavy Scale Pants
-				i(132535, {["timeline"] = {ADDED_7_0_3}}),	-- Heavy Scale Pauldrons
-				i(132520, {["timeline"] = {ADDED_7_0_3}}),	-- Heavy Scale Shirt
-				i(132534, {["timeline"] = {ADDED_7_0_3}}),	-- Heavy Scale Wraps
+				i(132522, {["timeline"] = { ADDED_7_0_3 }}),	-- Heavy Scale Belt
+				i(132521, {["timeline"] = { ADDED_7_0_3 }}),	-- Heavy Scale Boots
+				i(132533, {["timeline"] = { ADDED_7_0_3 }}),	-- Heavy Scale Gauntlets
+				i(132536, {["timeline"] = { ADDED_7_0_3 }}),	-- Heavy Scale Hood
+				i(132532, {["timeline"] = { ADDED_7_0_3 }}),	-- Heavy Scale Pants
+				i(132535, {["timeline"] = { ADDED_7_0_3 }}),	-- Heavy Scale Pauldrons
+				i(132520, {["timeline"] = { ADDED_7_0_3 }}),	-- Heavy Scale Shirt
+				i(132534, {["timeline"] = { ADDED_7_0_3 }}),	-- Heavy Scale Wraps
 				i(15082),	-- Heavy Scorpid Belt
 				i(15077),	-- Heavy Scorpid Bracers
-				i(15078, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_5}}),	-- Heavy Scorpid Gauntlets
-				i(15079, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_5}}),	-- Heavy Scorpid Leggings
+				i(15078, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 }}),	-- Heavy Scorpid Gauntlets
+				i(15079, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 }}),	-- Heavy Scorpid Leggings
 				i(15080),	-- Heavy Scorpid Helm
-				i(15081, {["timeline"] = {REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5}}),	-- Heavy Scorpid Shoulders
-				i(15076, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_5}}),	-- Heavy Scorpid Vest
+				i(15081, {["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 }}),	-- Heavy Scorpid Shoulders
+				i(15076, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 }}),	-- Heavy Scorpid Vest
 				i(206482, {["timeline"] = { ADDED_10_1_5 }}),	-- Helm of Lingering Power
-				applyclassicphase(PHASE_SIX, i(22665, {["timeline"] = {REMOVED_3_0_2, ADDED_10_1_5}})),	-- Icy Scale Bracers
-				applyclassicphase(PHASE_SIX, i(22664, {["timeline"] = {REMOVED_3_0_2, ADDED_10_1_5}})),	-- Icy Scale Breastplate
+				applyclassicphase(PHASE_SIX, i(22665, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icy Scale Bracers
+				applyclassicphase(PHASE_SIX, i(22664, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icy Scale Breastplate
 				i(206439, {["timeline"] = { ADDED_10_1_5 }}),	-- Icy Scale Crown
-				applyclassicphase(PHASE_SIX, i(22666, {["timeline"] = {REMOVED_3_0_2, ADDED_10_1_5}})),	-- Icy Scale Gauntlets
+				applyclassicphase(PHASE_SIX, i(22666, {["timeline"] = { REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icy Scale Gauntlets
 				i(206437, {["timeline"] = { ADDED_10_1_5 }}),	-- Icy Scale Leggings
 				i(206438, {["timeline"] = { ADDED_10_1_5 }}),	-- Icy Scale Shoulderpads
 				i(206441, {["timeline"] = { ADDED_10_1_5 }}),	-- Icy Scale Stompers
 				i(206440, {["timeline"] = { ADDED_10_1_5 }}),	-- Icy Scale Waistwrap
 				i(203814, {["timeline"] = { ADDED_10_0_7 }}),	-- Junglefury Gauntlets
 				i(203816, {["timeline"] = { ADDED_10_0_7 }}),	-- Junglefury Leggings
-				i(132489, {["timeline"] = {ADDED_7_0_3}}),	-- Light Scale Belt
-				i(132488, {["timeline"] = {ADDED_7_0_3}}),	-- Light Scale Boots
-				i(132491, {["timeline"] = {ADDED_7_0_3}}),	-- Light Scale Bracers
-				i(132490, {["timeline"] = {ADDED_7_0_3}}),	-- Light Scale Gloves
-				i(132487, {["timeline"] = {ADDED_7_0_3}}),	-- Light Scale Jerkin
-				i(132492, {["timeline"] = {ADDED_7_0_3}}),	-- Light Scale Pants
+				i(132489, {["timeline"] = { ADDED_7_0_3 }}),	-- Light Scale Belt
+				i(132488, {["timeline"] = { ADDED_7_0_3 }}),	-- Light Scale Boots
+				i(132491, {["timeline"] = { ADDED_7_0_3 }}),	-- Light Scale Bracers
+				i(132490, {["timeline"] = { ADDED_7_0_3 }}),	-- Light Scale Gloves
+				i(132487, {["timeline"] = { ADDED_7_0_3 }}),	-- Light Scale Jerkin
+				i(132492, {["timeline"] = { ADDED_7_0_3 }}),	-- Light Scale Pants
 				applyclassicphase(PHASE_FOUR, i(20476)),	-- Sandstalker Bracers
 				applyclassicphase(PHASE_FOUR, i(20478)),	-- Sandstalker Breastplate
 				applyclassicphase(PHASE_FOUR, i(20477)),	-- Sandstalker Gauntlets
@@ -5368,21 +5370,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { ADDED_1_15_2 },
 				})),
 				-- #endif
-				i(132548, {["timeline"] = {ADDED_7_0_3}}),	-- Shamanic Treads
+				i(132548, {["timeline"] = { ADDED_7_0_3 }}),	-- Shamanic Treads
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, i(220742, {	-- Shrieking Spaulders
 					["timeline"] = { ADDED_1_15_2 },
 				})),
 				-- #endif
 				i(206483, {["timeline"] = { ADDED_10_1_5 }}),	-- Skyfury Headdress
-				i(132544, {["timeline"] = {ADDED_7_0_3}}),	-- Spritescale Boots
-				i(132542, {["timeline"] = {ADDED_7_0_3}}),	-- Spritescale Britches
-				i(132539, {["timeline"] = {ADDED_7_0_3}}),	-- Spritescale Cinch
-				i(132537, {["timeline"] = {ADDED_7_0_3}}),	-- Spritescale Circlet
-				i(132543, {["timeline"] = {ADDED_7_0_3}}),	-- Spritescale Epaulets
-				i(132540, {["timeline"] = {ADDED_7_0_3}}),	-- Spritescale Gloves
-				i(132538, {["timeline"] = {ADDED_7_0_3}}),	-- Spritescale Jerkin
-				i(132541, {["timeline"] = {ADDED_7_0_3}}),	-- Spritescale Wraps
+				i(132544, {["timeline"] = { ADDED_7_0_3 }}),	-- Spritescale Boots
+				i(132542, {["timeline"] = { ADDED_7_0_3 }}),	-- Spritescale Britches
+				i(132539, {["timeline"] = { ADDED_7_0_3 }}),	-- Spritescale Cinch
+				i(132537, {["timeline"] = { ADDED_7_0_3 }}),	-- Spritescale Circlet
+				i(132543, {["timeline"] = { ADDED_7_0_3 }}),	-- Spritescale Epaulets
+				i(132540, {["timeline"] = { ADDED_7_0_3 }}),	-- Spritescale Gloves
+				i(132538, {["timeline"] = { ADDED_7_0_3 }}),	-- Spritescale Jerkin
+				i(132541, {["timeline"] = { ADDED_7_0_3 }}),	-- Spritescale Wraps
 				applyclassicphase(PHASE_FOUR, i(20481)),	-- Spitfire Bracers
 				applyclassicphase(PHASE_FOUR, i(20479)),	-- Spitfire Breastplate
 				applyclassicphase(PHASE_FOUR, i(20480)),	-- Spitfire Gauntlets
@@ -5433,7 +5435,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15050),	-- Black Dragonscale Breastplate
 				i(15052),	-- Black Dragonscale Leggings
 				i(15051),	-- Black Dragonscale Shoulders
-				i(15048, {["timeline"] = {REMOVED_4_0_3, ADDED_11_1_5}}),	-- Blue Dragonscale Breastplate
+				i(15048, {["timeline"] = { REMOVED_4_0_3, ADDED_11_1_5 }}),	-- Blue Dragonscale Breastplate
 				i(20295),	-- Blue Dragonscale Leggings
 				i(15049, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Blue Dragonscale Shoulders
 				applyclassicphase(PHASE_THREE_RECIPES, i(19157)),	-- Chromatic Gauntlets
@@ -5450,7 +5452,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15045, {["timeline"] = { REMOVED_4_0_3, ADDED_4_3_0 }}),	-- Green Dragonscale Breastplate
 				i(20296),	-- Green Dragonscale Gauntlets
 				i(15046, {["timeline"] = { REMOVED_4_0_3, ADDED_4_3_0 }}),	-- Green Dragonscale Leggings
-				i(15047, {["timeline"] = {REMOVED_6_0_2}}),	-- Red Dragonscale Breastplate
+				i(15047, {["timeline"] = { REMOVED_6_0_2 }}),	-- Red Dragonscale Breastplate
 				-- #endif
 				-- #if AFTER CATA
 				applyclassicphase(TBC_PHASE_ONE, i(29971, {["requireSkill"] = LEATHERWORKING, ["timeline"] = { ADDED_2_0_5 }})),	-- Dragonstrike Leggings
@@ -5482,24 +5484,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18258, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 }})),	-- Gordok Ogre Suit
 			i(4265),	-- Heavy Armor Kit
 			i(4234),	-- Heavy Leather
-			i(7372, {["timeline"] = {REMOVED_4_0_1}}),	-- Heavy Leather Ammo Pouch
+			i(7372, {["timeline"] = { REMOVED_4_0_1 }}),	-- Heavy Leather Ammo Pouch
 			i(18662),	-- Heavy Leather Ball
-			i(7371, {["timeline"] = {REMOVED_4_0_1}}),	-- Heavy Quiver
+			i(7371, {["timeline"] = { REMOVED_4_0_1 }}),	-- Heavy Quiver
 			i(5081),	-- Kodo Hide Bag
 			i(206646, {["timeline"] = { ADDED_10_1_5 }}),	-- Languished Leather
 			i(2304),	-- Light Armor Kit
 			i(2318),	-- Light Leather
-			i(7278, {["timeline"] = {REMOVED_4_0_1}}),	-- Light Leather Quiver
+			i(7278, {["timeline"] = { REMOVED_4_0_1 }}),	-- Light Leather Quiver
 			i(2313),	-- Medium Armor Kit
 			i(2319),	-- Medium Leather
-			i(8217, {["timeline"] = {REMOVED_4_0_1}}),	-- Quickdraw Quiver
+			i(8217, {["timeline"] = { REMOVED_4_0_1 }}),	-- Quickdraw Quiver
 			i(15564),	-- Rugged Armor Kit
 			i(8170),	-- Rugged Leather
 			i(206647, {["timeline"] = { ADDED_10_1_5 }}),	-- Scourged Scales
-			i(7279, {["timeline"] = {REMOVED_4_0_1}}),	-- Small Leather Ammo Pouch
+			i(7279, {["timeline"] = { REMOVED_4_0_1 }}),	-- Small Leather Ammo Pouch
 			i(8173),	-- Thick Armor Kit
 			i(4304),	-- Thick Leather
-			i(8218, {["timeline"] = {REMOVED_4_0_1}}),	-- Thick Leather Ammo Pouch
+			i(8218, {["timeline"] = { REMOVED_4_0_1 }}),	-- Thick Leather Ammo Pouch
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(213369, {	-- Faintly Glowing Leather
 				["timeline"] = { ADDED_1_15_1 },
@@ -5515,51 +5517,1223 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	}),
 	prof(MINING, {
 		spell(2575, {	-- Mining
-			i(2836),	-- Coarse Stone
-			i(2770),	-- Copper Ore
-			i(11370),	-- Dark Iron Ore
-			i(12365),	-- Dense Stone
-			i(2776),	-- Gold Ore
-			i(108296, {["timeline"] = { ADDED_6_0_2 }}),	-- Gold Ore Nugget
-			i(2838),	-- Heavy Stone
-			i(2772),	-- Iron Ore
-			i(108297, {["timeline"] = { ADDED_6_0_2 }}),	-- Iron Ore Nugget
-			applyclassicphase(PHASE_FIVE, i(22203)),	-- Large Obsidian Shard
-			i(3858),	-- Mithril Ore
-			i(108300, {["timeline"] = { ADDED_6_0_2 }}),	-- Mithril Ore Nugget
-			i(2835),	-- Rough Stone
-			i(2775),	-- Silver Ore
-			i(108294, {["timeline"] = { ADDED_6_0_2 }}),	-- Silver Ore Nugget
-			applyclassicphase(PHASE_FIVE, i(22202)),	-- Small Obsidian Shard
-			i(7912),	-- Solid Stone
-			i(10620),	-- Thorium Ore
-			i(108298, {["timeline"] = { ADDED_6_0_2 }}),	-- Thorium Ore Nugget
-			i(2771),	-- Tin Ore
-			i(108295, {["timeline"] = { ADDED_6_0_2 }}),	-- Tin Ore Nugget
-			i(7911),	-- Truesilver Ore
-			i(108299, {["timeline"] = { ADDED_6_0_2 }}),	-- Truesilver Ore Nugget
-			-- Not Ore --
-			i(7909),	-- Aquamarine
-			i(12363),	-- Arcane Crystal
-			i(12800),	-- Azerothian Diamond
-			i(9262),	-- Black Vitriol
-			i(11382),	-- Blood of the Mountain
-			i(12361),	-- Blue Sapphire
-			i(3864),	-- Citrine
-			i(8150),	-- Deeprock Salt
-			i(7067),	-- Elemental Earth
-			i(7068),	-- Elemental Fire
-			applyclassicphase(PHASE_FIVE, i(7076)),	-- Essence of Earth
-			i(12364),	-- Huge Emerald
-			i(1529),	-- Jade
-			i(12799),	-- Large Opal
-			i(1705),	-- Lesser Moonstone
-			i(774),		-- Malachite
-			i(1206),	-- Moss Agate
-			i(1210),	-- Shadowgem
-			applyclassicphase(PHASE_FOUR, i(19774, {["timeline"] = { REMOVED_4_0_3 }})),	-- Souldarite
-			i(7910),	-- Star Ruby
-			i(818),		-- Tigerseye
+			["description"] = "Mining veins are usually found on uneven terrain and mountainsides as well as inside caves. It is beneficial to mine all veins in the area even if you only need specific ore because the node spawns are often connected.",
+			["groups"] = appendAllGroups(
+				{
+					-- Nodes:
+					-- Copper
+					o(1731, {	-- Copper Vein
+						["maps"] = {
+							DARKSHORE,
+							DUN_MOROGH,
+							DUROTAR,
+							ELWYNN_FOREST,
+							LOCH_MODAN,
+							MULGORE,
+							SILVERPINE_FOREST,
+							TIRISFAL_GLADES,
+							WESTFALL,
+							-- #if AFTER CATA
+							AZSHARA,
+							NORTHERN_BARRENS,
+							-- #else
+							THE_BARRENS,
+							-- #endif
+							-- #if AFTER TBC
+							AZUREMYST_ISLE,
+							BLOODMYST_ISLE,
+							EVERSONG_WOODS,
+							-- #endif
+						},
+					}),
+					o(2055, {	-- Copper Vein (Redridge Mountains - Rethban Ore)
+						["coord"] = { 20.7, 27.0, REDRIDGE_MOUNTAINS },	-- Rethban Caverns
+						["timeline"] = { REMOVED_4_0_3 },
+					}),
+					-- #if ANYCLASSIC
+					o(103713, {	-- Copper Vein (The Barrens - Horde only)
+						-- Note: This node get removed at an unknown point between MOP and TWW.
+						-- #if BEFORE CATA
+						["coord"] = { 47.9, 87.2, THE_BARRENS },	-- Bael Modan Excavation
+						-- #endif
+						["races"] = HORDE_ONLY,
+					}),
+					o(3763, {	-- Copper Vein (The Barrens - Blood Shard)
+						-- Note: This node get replaced by o(1731) at an unknown point between MOP and TWW.
+						["maps"] = {
+							-- #if AFTER CATA
+							NORTHERN_BARRENS,
+							-- #else
+							THE_BARRENS,
+							-- #endif
+						},
+					}),
+					-- #endif
+					o(181248, {	-- Copper Vein (Ghostlands - Underlight Ore)
+						["coord"] = { 30.0, 50.0, GHOSTLANDS },
+						["timeline"] = { ADDED_2_0_1 },
+					}),
+					-- Dark Iron Ore
+					o(165658, {	-- Dark Iron Deposit
+						["maps"] = {
+							BLACKROCK_DEPTHS,
+							MOLTEN_CORE,
+							-- #if BEFORE CATA
+							BURNING_STEPPES,
+							SEARING_GORGE,
+							-- #endif
+						},
+					}),
+					--____________________________________________
+					-- Gold
+					o(1734, {	-- Gold Vein
+						["maps"] = {
+							ARATHI_HIGHLANDS,
+							BADLANDS,
+							BURNING_STEPPES,	
+							DESOLACE,
+							FERALAS,
+							SEARING_GORGE,
+							TANARIS,
+							-- #if AFTER CATA
+							EASTERN_PLAGUELANDS,
+							FERALAS,
+							SOUTHERN_BARRENS,
+							THE_CAPE_OF_STRANGLETHORN,
+							THE_HINTERLANDS,
+							WESTERN_PLAGUELANDS,
+							-- #else
+							ALTERAC_MOUNTAINS,
+							AZSHARA,
+							FELWOOD,
+							STRANGLETHORN_VALE,
+							THOUSAND_NEEDLES,
+							-- #endif
+						},
+						-- #if AFTER CATA
+						["coord"] = { 44.1, 37.2, THOUSAND_NEEDLES },	-- Splithoof Hold cave
+						-- #endif
+					}),
+					-- #if ANYCLASSIC
+					o(150080, {	-- Gold Vein (Blasted Lands - Horde only)
+						-- Note: This node get removed at an unknown point between MOP and TWW.
+						["coord"] = { 50.4, 10.3, BLASTED_LANDS },	-- Nethergarde Mine
+						["races"] = HORDE_ONLY,
+					}),
+					o(181109, {	-- Gold Vein (Felwood)
+						-- Note: This node get replaced by o(1734) at an unknown point between MOP and TWW.
+						["maps"] = { FELWOOD },
+					}),
+					-- #endif
+					o(73941, {	-- Ooze Covered Gold Vein
+						["coords"] = {
+							{ 76.8, 61.5, FERALAS },	-- The Writhing Deep - west
+							{ 73.5, 63.5, FERALAS },	-- The Writhing Deep - east
+							{ 66.1, 86.2, THOUSAND_NEEDLES },	-- Sunken Dig Site.
+						},
+					}),
+					--____________________________________________
+					-- Iron
+					o(1735, {	-- Iron Deposit
+						["maps"] = {
+							ARATHI_HIGHLANDS,
+							BADLANDS,	
+							DESOLACE,
+							-- #if AFTER CATA
+							EASTERN_PLAGUELANDS,
+							FERALAS,
+							SOUTHERN_BARRENS,
+							THE_CAPE_OF_STRANGLETHORN,
+							THE_HINTERLANDS,
+							WESTERN_PLAGUELANDS,
+							-- #else
+							ALTERAC_MOUNTAINS,
+							STRANGLETHORN_VALE,
+							THOUSAND_NEEDLES,
+							-- #endif
+						},
+					}),
+					--____________________________________________
+					-- Mithril
+					o(2040, {	-- Mithril Deposit
+						["maps"] = {
+							BADLANDS,
+							BURNING_STEPPES,
+							FERALAS,
+							SEARING_GORGE,
+							TANARIS,
+							-- #if AFTER CATA
+							EASTERN_PLAGUELANDS,
+							THOUSAND_NEEDLES,
+							-- #else
+							AZSHARA,
+							-- #endif
+							-- #if NOT ANYCLASSIC
+							FELWOOD,
+							-- #endif
+						},
+					}),
+					-- #if ANYCLASSIC
+					o(150079, {	-- Mithril Deposit (Blasted Lands - Horde only)
+						-- Note: This node get removed at an unknown point between MOP and TWW.
+						["coord"] = { 50.4, 10.3, BLASTED_LANDS },	-- Nethergarde Mine
+						["races"] = HORDE_ONLY,
+					}),
+					o(176645, {	-- Mithril Deposit (Felwood)
+						-- Note: This node get replaced by o(2040) at an unknown point between MOP and TWW.
+						["maps"] = { FELWOOD },
+					}),
+					-- #endif
+					o(123310, {	-- Ooze Covered Mithril Deposit
+						["coords"] = {
+							{ 76.8, 61.5, FERALAS },	-- The Writhing Deep - west
+							{ 73.5, 63.5, FERALAS },	-- The Writhing Deep - east
+							{ 66.1, 86.2, THOUSAND_NEEDLES },	-- Sunken Dig Site.
+						},
+					}),
+					--____________________________________________
+					-- Obsidian Chunk
+					o(181069, {	-- Large Obsidian Chunk
+						["maps"] = {
+							RUINS_OF_AHNQIRAJ,
+							TEMPLE_OF_AHNQIRAJ,
+							-- #if BEFORE CATA
+							SILITHUS,
+							-- #endif
+						},
+					}),
+					o(181068, {	-- Small Obsidian Chunk
+						["maps"] = {
+							RUINS_OF_AHNQIRAJ,
+							TEMPLE_OF_AHNQIRAJ,
+							-- #if BEFORE CATA
+							SILITHUS,
+							-- #endif
+						},
+					}),
+					--____________________________________________
+					-- Silver
+					o(73940, {	-- Ooze Covered Silver Vein
+						["coord"] = { 66.1, 86.2, THOUSAND_NEEDLES },	-- Sunken Dig Site.
+					}),
+					o(1733, {	-- Silver Vein
+						["maps"] = {
+							ARATHI_HIGHLANDS,
+							ASHENVALE,
+							BADLANDS,
+							DESOLACE,
+							DUSKWOOD,
+							HILLSBRAD_FOOTHILLS,
+							STONETALON_MOUNTAINS,
+							WETLANDS,
+							-- #if BEFORE CATA
+							ALTERAC_MOUNTAINS,
+							REDRIDGE_MOUNTAINS,
+							STRANGLETHORN_VALE,
+							THOUSAND_NEEDLES,
+							-- #else
+							EASTERN_PLAGUELANDS,
+							FERALAS,
+							NORTHERN_STRANGLETHORN,
+							SOUTHERN_BARRENS,
+							THE_CAPE_OF_STRANGLETHORN,
+							THE_HINTERLANDS,
+							WESTERN_PLAGUELANDS,
+							-- #endif
+						},
+					}),
+					-- #if ANYCLASSIC
+					o(105569, {	-- Siler Vein (The Barrens/Hillsbrad Foothills - Horde only)
+						-- Note: This node get removed at an unknown point between MOP and TWW.
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 33.5, 72.0, HILLSBRAD_FOOTHILLS },	-- Azureload Mine
+							-- #else
+							{ 27.5, 57.5, HILLSBRAD_FOOTHILLS },	-- Azureload Mine
+							{ 47.9, 87.2, THE_BARRENS },	-- Bael Modan Excavation
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+					}),
+					-- #endif
+					--____________________________________________
+					-- Thorium
+					o(180215, {	-- Hakkari Thorium Vein
+						["maps"] = { ZULGURUB },
+						["timeline"] = { REMOVED_4_0_1 },
+					}),
+					o(177388, {	-- Ooze Covered Rich Thorium Vein
+						["maps"] = { SILITHUS },
+					}),
+					o(123848, {	-- Ooze Covered Thorium Vein
+						["coord"] = { 50.0, 81.2, UNGORO_CRATER },	-- The Slithering Scar
+					}),
+					o(175404, {	-- Rich Thorium Vein
+						["maps"] = {
+							UNGORO_CRATER,
+							WINTERSPRING,
+							-- #if AFTER CATA
+							BLASTED_LANDS,
+							SILITHUS,
+							SWAMP_OF_SORROWS,
+							-- #else
+							AZSHARA,
+							BURNING_STEPPES,
+							EASTERN_PLAGUELANDS,
+							-- #endif
+						},
+					}),
+					o(324, {	-- Small Thorium Vein
+						["maps"] = {
+							SILITHUS,
+							UNGORO_CRATER,
+							WINTERSPRING,
+							-- #if AFTER CATA
+							BLASTED_LANDS,
+							SWAMP_OF_SORROWS,
+							-- #else
+							AZSHARA,
+							BURNING_STEPPES,
+							EASTERN_PLAGUELANDS,
+							WESTERN_PLAGUELANDS,
+							-- #endif
+						},
+					}),
+					-- #if ANYCLASSIC
+					o(150082, {	-- Small Thorium Vein (Blasted Lands - Horde only)
+						-- Note: This node get replaced by o(324) at an unknown point between MOP and TWW.
+						["maps"] = { BLASTED_LANDS },
+						["races"] = HORDE_ONLY,
+					}),
+					o(1731, {	-- Small Thorium Vein (Felwood)
+						-- Note: This node get removed at an unknown point between MOP and TWW.
+						["maps"] = { FELWOOD },
+					}),
+					-- #endif
+					--____________________________________________
+					-- Tin
+					o(1732, {	-- Tin Vein
+						["maps"] = {
+							ASHENVALE,
+							HILLSBRAD_FOOTHILLS,
+							STONETALON_MOUNTAINS,
+							-- #if BEFORE CATA
+							REDRIDGE_MOUNTAINS,
+							THOUSAND_NEEDLES,
+							-- #else
+							NORTHERN_STRANGLETHORN,
+							-- #endif
+							WETLANDS,
+						},
+					}),
+					-- #if ANYCLASSIC
+					o(103711, {	-- Tin Vein (The Barrens/Hillsbrad Foothills - Horde only)
+						-- Note: This node get removed at an unknown point between MOP and TWW.
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 33.5, 72.0, HILLSBRAD_FOOTHILLS },	-- Azureload Mine
+							-- #else
+							{ 27.5, 57.5, HILLSBRAD_FOOTHILLS },	-- Azureload Mine
+							{ 47.9, 87.2, THE_BARRENS },	-- Bael Modan Excavation
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+					}),
+					o(2054, {	-- Tin Vein (Redridge Mountains - Rethban Ore)
+						-- Note: This node get replaced by o(1732) at an unknown point between MOP and TWW.
+						["coord"] = { 20.7, 27.0, REDRIDGE_MOUNTAINS },	-- Rethban Caverns
+					}),
+					o(3764, {	-- Tin Vein (The Barrens - Blood Shard)
+						-- Note: This node get replaced by o(1732) at an unknown point between MOP and TWW.
+						["maps"] = {
+							-- #if AFTER CATA
+							NORTHERN_BARRENS,
+							-- #else
+							THE_BARRENS,
+							-- #endif
+						},
+					}),
+					-- #endif
+					o(181249, {	-- Tin Vein (Ghostlands - Underlight Ore)
+						["coord"] = { 30.0, 50.0, GHOSTLANDS },
+						["timeline"] = { ADDED_2_0_1 },
+					}),
+					--____________________________________________
+					-- Truesilver
+					o(123309, {	-- Ooze Covered Truesilver Deposit
+						["coords"] = {
+							-- #if BEFORE CATA
+							{ 76.8, 61.5, FERALAS },	-- The Writhing Deep - west
+							{ 73.5, 63.5, FERALAS },	-- The Writhing Deep - east
+							-- #endif
+							{ 50.0, 81.2, UNGORO_CRATER },	-- The Slithering Scar
+						},
+						["maps"] = { SILITHUS },
+					}),
+					o(2047, {	-- Truesilver Deposit
+						["maps"] = {
+							BADLANDS,
+							BURNING_STEPPES,
+							EASTERN_PLAGUELANDS,
+							FERALAS,
+							SEARING_GORGE,
+							TANARIS,
+							UNGORO_CRATER,
+							WINTERSPRING,
+							-- #if AFTER CATA
+							BLASTED_LANDS,
+							FELWOOD,
+							SILITHUS,
+							SWAMP_OF_SORROWS,
+							THOUSAND_NEEDLES,
+							-- #else
+							AZSHARA,
+							-- #endif
+						},
+					}),
+					-- #if ANYCLASSIC
+					o(150081, {	-- Truesilver Deposit (Blasted Lands - Horde only)
+						-- Note: This node get removed at an unknown point between MOP and TWW.
+						["coord"] = { 50.4, 10.3, BLASTED_LANDS },	-- Nethergarde Mine
+						["races"] = HORDE_ONLY,
+					}),
+					o(181108, {	-- Truesilver Deposit (Felwood)
+						-- Note: This node get replaced by o(2047) at an unknown point between MOP and TWW.
+						["maps"] = { FELWOOD },
+					}),
+					-- #endif
+					--____________________________________________
+					-- Ores
+					i(2770, {	-- Copper Ore
+						["maps"] = {
+							DARKSHORE,
+							DUN_MOROGH,
+							DUROTAR,
+							ELWYNN_FOREST,
+							LOCH_MODAN,
+							MULGORE,
+							SILVERPINE_FOREST,
+							TIRISFAL_GLADES,
+							WESTFALL,
+							-- #if AFTER CATA
+							AZSHARA,
+							NORTHERN_BARRENS,
+							-- #else
+							THE_BARRENS,
+							-- #endif
+							-- #if AFTER TBC
+							AZUREMYST_ISLE,
+							BLOODMYST_ISLE,
+							EVERSONG_WOODS,
+							GHOSTLANDS,
+							-- #endif
+						},
+						["provider"] = { "o", 1731 },	-- Copper Vein
+					}),
+					i(11370, {	-- Dark Iron Ore
+						["maps"] = {
+							BLACKROCK_DEPTHS,
+							MOLTEN_CORE,
+							-- #if BEFORE CATA
+							BURNING_STEPPES,
+							SEARING_GORGE,
+							-- #endif
+						},
+						["provider"] = { "o", 165658 },	-- Dark Iron Deposit
+					}),
+					i(2776, {	-- Gold Ore
+						["description"] = "Gold Veins is a rare spawn in place of Iron Deposits and Mithril Deposits.",
+						["maps"] = {
+							ARATHI_HIGHLANDS,
+							BADLANDS,
+							BURNING_STEPPES,	
+							DESOLACE,
+							FELWOOD,
+							FERALAS,
+							SEARING_GORGE,
+							TANARIS,
+							THOUSAND_NEEDLES,
+							-- #if AFTER CATA
+							EASTERN_PLAGUELANDS,
+							FERALAS,
+							SOUTHERN_BARRENS,
+							THE_CAPE_OF_STRANGLETHORN,
+							THE_HINTERLANDS,
+							WESTERN_PLAGUELANDS,
+							-- #else
+							ALTERAC_MOUNTAINS,
+							AZSHARA,
+							STRANGLETHORN_VALE,
+							-- #endif
+						},
+						["providers"] = {
+							{ "o", 1734 },	-- Gold Vein
+							{ "o", 73941 },	-- Ooze Covered Gold Vein
+						},
+					}),
+					i(108296, {	-- Gold Ore Nugget
+						["providers"] = {
+							{ "o", 1734 },	-- Gold Vein
+							{ "o", 73941 },	-- Ooze Covered Gold Vein
+						},
+						["timeline"] = { ADDED_6_0_2 },
+						["groups"] = {
+							i(2776),	-- Gold Ore
+						},
+					}),
+					i(2772, {	-- Iron Ore
+						["maps"] = {
+							ARATHI_HIGHLANDS,
+							BADLANDS,	
+							DESOLACE,
+							-- #if AFTER CATA
+							EASTERN_PLAGUELANDS,
+							FERALAS,
+							SOUTHERN_BARRENS,
+							THE_CAPE_OF_STRANGLETHORN,
+							THE_HINTERLANDS,
+							WESTERN_PLAGUELANDS,
+							-- #else
+							ALTERAC_MOUNTAINS,
+							STRANGLETHORN_VALE,
+							THOUSAND_NEEDLES,
+							-- #endif
+						},
+						["provider"] = { "o", 1735 },	-- Iron Deposit
+					}),
+					i(108297, {	-- Iron Ore Nugget
+						["provider"] = { "o", 1735 },	-- Iron Deposit
+						["timeline"] = { ADDED_6_0_2 },
+						["groups"] = {
+							i(2772),	-- Iron Ore
+						},
+					}),
+					applyclassicphase(PHASE_FIVE, i(22203, {	-- Large Obsidian Shard
+						["maps"] = {
+							RUINS_OF_AHNQIRAJ,
+							TEMPLE_OF_AHNQIRAJ,
+							-- #if BEFORE CATA
+							SILITHUS,
+							-- #endif
+						},
+						["providers"] = {
+							{ "o", 181069 },	-- Large Obsidian Chunk
+							{ "o", 181068 },	-- Small Obsidian Chunk
+						},
+					})),
+					i(3858, {	-- Mithril Ore
+						["maps"] = {
+							BADLANDS,
+							BURNING_STEPPES,
+							FELWOOD,
+							FERALAS,
+							SEARING_GORGE,
+							TANARIS,
+							-- #if AFTER CATA
+							EASTERN_PLAGUELANDS,
+							THOUSAND_NEEDLES,
+							-- #else
+							AZSHARA,
+							-- #endif
+						},
+						["provider"] = { "o", 2040 },	-- Mithril Deposit
+					}),
+					i(108300, {	-- Mithril Ore Nugget
+						["provider"] = { "o", 2040 },	-- Mithril Deposit
+						["timeline"] = { ADDED_6_0_2 },
+						["groups"] = {
+							i(3858),	-- Mithril Ore
+						},
+					}),
+					i(2775, {	-- Silver Ore
+						["description"] = "Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",
+						["maps"] = {
+							ARATHI_HIGHLANDS,
+							ASHENVALE,
+							BADLANDS,
+							DESOLACE,
+							DUSKWOOD,
+							HILLSBRAD_FOOTHILLS,
+							STONETALON_MOUNTAINS,
+							WETLANDS,
+							-- #if BEFORE CATA
+							ALTERAC_MOUNTAINS,
+							REDRIDGE_MOUNTAINS,
+							STRANGLETHORN_VALE,
+							THOUSAND_NEEDLES,
+							-- #else
+							EASTERN_PLAGUELANDS,
+							FERALAS,
+							NORTHERN_STRANGLETHORN,
+							SOUTHERN_BARRENS,
+							THE_CAPE_OF_STRANGLETHORN,
+							THE_HINTERLANDS,
+							WESTERN_PLAGUELANDS,
+							-- #endif
+						},
+						["providers"] = {
+							{ "o", 73940 },	-- Ooze Covered Silver Vein
+							{ "o", 1733 },	-- Silver Vein
+						},
+					}),
+					i(108294, {	-- Silver Ore Nugget
+						["providers"] = {
+							{ "o", 73940 },	-- Ooze Covered Silver Vein
+							{ "o", 1733 },	-- Silver Vein
+						},
+						["timeline"] = { ADDED_6_0_2 },
+						["groups"] = {
+							i(2775),	-- Silver Ore
+						},
+					}),
+					applyclassicphase(PHASE_FIVE, i(22202, {	-- Small Obsidian Shard
+						["maps"] = {
+							RUINS_OF_AHNQIRAJ,
+							TEMPLE_OF_AHNQIRAJ,
+							-- #if BEFORE CATA
+							SILITHUS,
+							-- #endif
+						},
+						["providers"] = {
+							{ "o", 181069 },	-- Large Obsidian Chunk
+							{ "o", 181068 },	-- Small Obsidian Chunk
+						},
+					})),
+					i(10620, {	-- Thorium Ore
+						["maps"] = {
+							UNGORO_CRATER,
+							WINTERSPRING,
+							-- #if AFTER CATA
+							BLASTED_LANDS,
+							SILITHUS,
+							SWAMP_OF_SORROWS,
+							-- #else
+							AZSHARA,
+							BURNING_STEPPES,
+							EASTERN_PLAGUELANDS,
+							FELWOOD,
+							ZULGURUB,
+							-- #endif
+						},
+						["providers"] = {
+							-- #if BEFORE CATA
+							{ "o", 180215 },	-- Hakkari Thorium Vein
+							-- #endif
+							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
+							{ "o", 123848 },	-- Ooze Covered Thorium Vein
+							{ "o", 175404 },	-- Rich Thorium Vein
+							{ "o", 324 },	-- Small Thorium Vein
+						},
+					}),
+					i(108298, {	-- Thorium Ore Nugget
+						["providers"] = {
+							-- #if BEFORE CATA
+							{ "o", 180215 },	-- Hakkari Thorium Vein
+							-- #endif
+							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
+							{ "o", 123848 },	-- Ooze Covered Thorium Vein
+							{ "o", 175404 },	-- Rich Thorium Vein
+							{ "o", 324 },	-- Small Thorium Vein
+						},
+						["timeline"] = { ADDED_6_0_2 },
+						["groups"] = {
+							i(10620),	-- Thorium Ore
+						},
+					}),
+					i(2771, {	-- Tin Ore
+						["maps"] = {
+							ASHENVALE,
+							HILLSBRAD_FOOTHILLS,
+							STONETALON_MOUNTAINS,
+							-- #if BEFORE CATA
+							REDRIDGE_MOUNTAINS,
+							THOUSAND_NEEDLES,
+							-- #else
+							NORTHERN_STRANGLETHORN,
+							-- #endif
+							WETLANDS,
+						},
+						["provider"] = { "o", 1732 },	-- Tin Vein
+					}),
+					i(108295, {	-- Tin Ore Nugget
+						["provider"] = { "o", 1732 },	-- Tin Vein
+						["timeline"] = { ADDED_6_0_2 },
+						["groups"] = {
+							i(2771),	-- Tin Ore
+						},
+					}),
+					i(7911, {	-- Truesilver Ore
+						["description"] = "Truesilver Deposits is a rare spawn in place of Mithril Deposits and Thorium Veins.",
+						["maps"] = {
+							BADLANDS,
+							BURNING_STEPPES,
+							EASTERN_PLAGUELANDS,
+							FELWOOD,
+							FERALAS,
+							SEARING_GORGE,
+							TANARIS,
+							UNGORO_CRATER,
+							WINTERSPRING,
+							-- #if AFTER CATA
+							BLASTED_LANDS,
+							SILITHUS,
+							SWAMP_OF_SORROWS,
+							THOUSAND_NEEDLES,
+							-- #else
+							AZSHARA,
+							-- #endif
+						},
+						["providers"] = {
+							{ "o", 123309 },	-- Ooze Covered Truesilver Deposit
+							{ "o", 2047 },	-- Truesilver Deposit
+						},
+					}),
+					i(108299, {	-- Truesilver Ore Nugget
+						["providers"] = {
+							{ "o", 123309 },	-- Ooze Covered Truesilver Deposit
+							{ "o", 2047 },	-- Truesilver Deposit
+						},
+						["timeline"] = { ADDED_6_0_2 },
+						["groups"] = {
+							i(7911),	-- Truesilver Ore
+						},
+					}),
+					--____________________________________________
+					-- Stones:
+					i(2836, {	-- Coarse Stone
+						["maps"] = {
+							ASHENVALE,
+							DUSKWOOD,
+							HILLSBRAD_FOOTHILLS,
+							STONETALON_MOUNTAINS,
+							-- #if BEFORE CATA
+							REDRIDGE_MOUNTAINS,
+							THOUSAND_NEEDLES,
+							-- #else
+							NORTHERN_STRANGLETHORN,
+							-- #endif
+							WETLANDS,
+						},
+						["provider"] = { "o", 1732 },	-- Tin Vein
+					}),
+					i(12365, {	-- Dense Stone
+						["maps"] = {
+							UNGORO_CRATER,
+							WINTERSPRING,
+							-- #if AFTER CATA
+							BLASTED_LANDS,
+							SILITHUS,
+							SWAMP_OF_SORROWS,
+							-- #else
+							AZSHARA,
+							BURNING_STEPPES,
+							EASTERN_PLAGUELANDS,
+							FELWOOD,
+							ZULGURUB,
+							-- #endif
+						},
+						["providers"] = {
+							-- #if BEFORE CATA
+							{ "o", 180215 },	-- Hakkari Thorium Vein
+							-- #endif
+							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
+							{ "o", 123848 },	-- Ooze Covered Thorium Vein
+							{ "o", 175404 },	-- Rich Thorium Vein
+							{ "o", 324 },	-- Small Thorium Vein
+						},
+					}),
+					i(2838, {	-- Heavy Stone
+						["maps"] = {
+							ARATHI_HIGHLANDS,
+							BADLANDS,	
+							DESOLACE,
+							-- #if AFTER CATA
+							EASTERN_PLAGUELANDS,
+							FERALAS,
+							SOUTHERN_BARRENS,
+							THE_CAPE_OF_STRANGLETHORN,
+							THE_HINTERLANDS,
+							WESTERN_PLAGUELANDS,
+							-- #else
+							ALTERAC_MOUNTAINS,
+							STRANGLETHORN_VALE,
+							THOUSAND_NEEDLES,
+							-- #endif
+						},
+						["provider"] = { "o", 1735 },	-- Iron Deposit
+					}),
+					i(2835, {	-- Rough Stone
+						["maps"] = {
+							DARKSHORE,
+							DUN_MOROGH,
+							DUROTAR,
+							ELWYNN_FOREST,
+							LOCH_MODAN,
+							MULGORE,
+							SILVERPINE_FOREST,
+							TIRISFAL_GLADES,
+							WESTFALL,
+							-- #if AFTER CATA
+							AZSHARA,
+							NORTHERN_BARRENS,
+							-- #else
+							THE_BARRENS,
+							-- #endif
+							-- #if AFTER TBC
+							AZUREMYST_ISLE,
+							BLOODMYST_ISLE,
+							EVERSONG_WOODS,
+							GHOSTLANDS,
+							-- #endif
+						},
+						["provider"] = { "o", 1731 },	-- Copper Vein
+					}),
+					i(7912, {	-- Solid Stone
+						["maps"] = {
+							UNGORO_CRATER,
+							WINTERSPRING,
+							-- #if AFTER CATA
+							BLASTED_LANDS,
+							SILITHUS,
+							SWAMP_OF_SORROWS,
+							-- #else
+							AZSHARA,
+							BURNING_STEPPES,
+							EASTERN_PLAGUELANDS,
+							FELWOOD,
+							ZULGURUB,
+							-- #endif
+						},
+						["provider"] = { "o", 2040 },	-- Mithril Deposit
+					}),
+					--____________________________________________
+					--
+					-- Not Ore --
+					-- Elements with unviably low droprate:
+					-- i(7067),	-- Elemental Earth
+					-- i(7068),	-- Elemental Fire
+					-- applyclassicphase(PHASE_FIVE, i(7076)),	-- Essence of Earth
+					-- Misc:
+					i(12363, {	-- Arcane Crystal
+						-- #if AFTER TBC
+						["description"] = "Arcane Crystal is most reliably obtainable from mining veins, although the droprate is low. |CFFFF0000You cannot get it from prospecting.|r",
+						-- #else
+						["description"] = "Arcane Crystal is most reliably obtainable from mining veins, although the droprate is low.",
+						-- #endif
+						["maps"] = {
+							UNGORO_CRATER,
+							WINTERSPRING,
+							-- #if AFTER CATA
+							BLASTED_LANDS,
+							SILITHUS,
+							SWAMP_OF_SORROWS,
+							-- #else
+							AZSHARA,
+							BURNING_STEPPES,
+							EASTERN_PLAGUELANDS,
+							FELWOOD,
+							ZULGURUB,
+							-- #endif
+						},
+						["providers"] = {
+							-- #if BEFORE CATA
+							{ "o", 180215 },	-- Hakkari Thorium Vein
+							-- #else
+							{ "o", 324 },	-- Small Thorium Vein
+							-- #endif
+							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
+							{ "o", 123848 },	-- Ooze Covered Thorium Vein
+							{ "o", 175404 },	-- Rich Thorium Vein
+						},
+					}),
+					i(9262, {	-- Black Vitriol
+						["description"] = "This gem is most reliably obtained from mining veins, although the droprate is 1%.",
+						["providers"] = {
+							{ "o", 2040 },	-- Mithril Deposit
+							{ "o", 324 },	-- Small Thorium Vein
+						},
+					}),
+					i(11382, {	-- Blood of the Mountain
+						["maps"] = {
+							BLACKROCK_DEPTHS,
+							MOLTEN_CORE,
+							-- #if BEFORE CATA
+							BURNING_STEPPES,
+							SEARING_GORGE,
+							-- #endif
+						},
+						["provider"] = { "o", 165658 },	-- Dark Iron Deposit
+					}),
+					i(8150, {	-- Deeprock Salt
+						["description"] = "Can drop from any highlevel earth elemental and construct creatures, and miners can get additional yield from mining the corpse.",
+						["maps"] = {
+							BLACKROCK_DEPTHS,
+							MARAUDON,
+							ULDAMAN,
+						},
+					}),
+					applyclassicphase(PHASE_FOUR, i(19774, {	-- Souldarite
+						["provider"] = { "o", 180215 },	-- Hakkari Thorium Vein
+						["timeline"] = { REMOVED_4_0_3 }
+					})),
+				},
+				--____________________________________________
+				-- Gems (obtainable from prospecting):
+				-- Note: The gems are linked to respective ores with provider for prospecting in JEWELCRAFTING > Prospecting.
+				sharedData({
+					-- #if AFTER TBC
+					["description"] = "This gem is most reliably obtained from prospecting ores with Jewelcrafting. You can also obtain it from mining veins, although the droprate is 1%.",
+					-- #else
+					["description"] = "This gem is most reliably obtained from mining veins, although the droprate is 1%.",
+					-- #endif
+				}, {
+					i(7909, {	-- Aquamarine
+						["maps"] = {
+							BADLANDS,
+							BURNING_STEPPES,
+							FELWOOD,
+							FERALAS,
+							SEARING_GORGE,
+							TANARIS,
+							-- #if AFTER CATA
+							EASTERN_PLAGUELANDS,
+							THOUSAND_NEEDLES,
+							-- #else
+							AZSHARA,
+							-- #endif
+						},
+						-- #if BEFORE TBC
+						["providers"] = {
+							{ "o", 2040 },	-- Mithril Deposit
+							{ "o", 2047 },	-- Truesilver Deposit
+						},
+						-- #endif
+					}),
+					i(12800, {	-- Azerothian Diamond
+						["maps"] = {
+							UNGORO_CRATER,
+							WINTERSPRING,
+							-- #if AFTER CATA
+							BLASTED_LANDS,
+							SILITHUS,
+							SWAMP_OF_SORROWS,
+							-- #else
+							AZSHARA,
+							BURNING_STEPPES,
+							EASTERN_PLAGUELANDS,
+							FELWOOD,
+							ZULGURUB,
+							-- #endif
+						},
+						-- #if BEFORE TBC
+						["providers"] = {
+							{ "o", 180215 },	-- Hakkari Thorium Vein
+							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
+							{ "o", 123848 },	-- Ooze Covered Thorium Vein
+							{ "o", 175404 },	-- Rich Thorium Vein
+							{ "o", 324 },	-- Small Thorium Vein
+						},
+						-- #endif
+					}),
+					i(12361, {	-- Blue Sapphire
+						["maps"] = {
+							UNGORO_CRATER,
+							WINTERSPRING,
+							-- #if AFTER CATA
+							BLASTED_LANDS,
+							SILITHUS,
+							SWAMP_OF_SORROWS,
+							-- #else
+							AZSHARA,
+							BURNING_STEPPES,
+							EASTERN_PLAGUELANDS,
+							FELWOOD,
+							ZULGURUB,
+							-- #endif
+						},
+						-- #if BEFORE TBC
+						["providers"] = {
+							{ "o", 180215 },	-- Hakkari Thorium Vein
+							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
+							{ "o", 123848 },	-- Ooze Covered Thorium Vein
+							{ "o", 175404 },	-- Rich Thorium Vein
+							{ "o", 324 },	-- Small Thorium Vein
+						},
+						-- #endif
+					}),
+					i(3864, {	-- Citrine
+						["maps"] = {
+							ARATHI_HIGHLANDS,
+							BADLANDS,
+							BURNING_STEPPES,
+							DESOLACE,
+							FELWOOD,
+							FERALAS,
+							SEARING_GORGE,
+							TANARIS,
+							THOUSAND_NEEDLES,
+							-- #if AFTER CATA
+							EASTERN_PLAGUELANDS,
+							SOUTHERN_BARRENS,
+							THE_CAPE_OF_STRANGLETHORN,
+							THE_HINTERLANDS,
+							WESTERN_PLAGUELANDS,
+							-- #else
+							ALTERAC_MOUNTAINS,
+							AZSHARA,
+							STRANGLETHORN_VALE,
+							-- #endif
+						},
+						-- #if BEFORE TBC
+						["providers"] = {
+							{ "o", 1735 },	-- Iron Deposit
+							{ "o", 2040 },	-- Mithril Deposit
+							{ "o", 1734 },	-- Gold Vein
+							{ "o", 2047 },	-- Truesilver Deposit
+						},
+						-- #endif
+					}),
+					i(12364, {	-- Huge Emerald
+						["maps"] = {
+							UNGORO_CRATER,
+							WINTERSPRING,
+							-- #if AFTER CATA
+							BLASTED_LANDS,
+							SILITHUS,
+							SWAMP_OF_SORROWS,
+							-- #else
+							AZSHARA,
+							BURNING_STEPPES,
+							EASTERN_PLAGUELANDS,
+							FELWOOD,
+							ZULGURUB,
+							-- #endif
+						},
+						-- #if BEFORE TBC
+						["providers"] = {
+							{ "o", 180215 },	-- Hakkari Thorium Vein
+							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
+							{ "o", 123848 },	-- Ooze Covered Thorium Vein
+							{ "o", 175404 },	-- Rich Thorium Vein
+							{ "o", 324 },	-- Small Thorium Vein
+						},
+						-- #endif
+					}),
+					i(1529, {	-- Jade
+						["maps"] = {
+							ARATHI_HIGHLANDS,
+							BADLANDS,	
+							DESOLACE,
+							-- #if AFTER CATA
+							EASTERN_PLAGUELANDS,
+							FERALAS,
+							SOUTHERN_BARRENS,
+							THE_CAPE_OF_STRANGLETHORN,
+							THE_HINTERLANDS,
+							WESTERN_PLAGUELANDS,
+							-- #else
+							ALTERAC_MOUNTAINS,
+							STRANGLETHORN_VALE,
+							THOUSAND_NEEDLES,
+							-- #endif
+						},
+						-- #if BEFORE TBC
+						["providers"] = {
+							{ "o", 1735 },	-- Iron Deposit
+							{ "o", 1734 },	-- Gold Vein
+						},
+						-- #endif
+					}),
+					i(12799, {	-- Large Opal
+						["maps"] = {
+							UNGORO_CRATER,
+							WINTERSPRING,
+							-- #if AFTER CATA
+							BLASTED_LANDS,
+							SILITHUS,
+							SWAMP_OF_SORROWS,
+							-- #else
+							AZSHARA,
+							BURNING_STEPPES,
+							EASTERN_PLAGUELANDS,
+							FELWOOD,
+							ZULGURUB,
+							-- #endif
+						},
+						-- #if BEFORE TBC
+						["providers"] = {
+							{ "o", 180215 },	-- Hakkari Thorium Vein
+							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
+							{ "o", 123848 },	-- Ooze Covered Thorium Vein
+							{ "o", 175404 },	-- Rich Thorium Vein
+							{ "o", 324 },	-- Small Thorium Vein
+						},
+						-- #endif
+					}),
+					i(1705, {	-- Lesser Moonstone
+						["maps"] = {
+							ARATHI_HIGHLANDS,
+							ASHENVALE,
+							BADLANDS,	
+							DESOLACE,
+							DUSKWOOD,
+							HILLSBRAD_FOOTHILLS,
+							STONETALON_MOUNTAINS,
+							WETLANDS,
+							-- #if AFTER CATA
+							EASTERN_PLAGUELANDS,
+							FERALAS,
+							NORTHERN_STRANGLETHORN,
+							SOUTHERN_BARRENS,
+							THE_CAPE_OF_STRANGLETHORN,
+							THE_HINTERLANDS,
+							WESTERN_PLAGUELANDS,
+							-- #else
+							ALTERAC_MOUNTAINS,
+							REDRIDGE_MOUNTAINS,
+							STRANGLETHORN_VALE,
+							THOUSAND_NEEDLES,
+							-- #endif
+						},
+						-- #if BEFORE TBC
+						["providers"] = {
+							{ "o", 1732 },	-- Tin Vein
+							{ "o", 1735 },	-- Iron Deposit
+							{ "o", 1733 },	-- Silver Vein
+							{ "o", 1734 },	-- Gold Vein
+						},
+						-- #endif
+					}),
+					i(774, {	-- Malachite
+						["maps"] = {
+							DARKSHORE,
+							DUN_MOROGH,
+							DUROTAR,
+							ELWYNN_FOREST,
+							LOCH_MODAN,
+							MULGORE,
+							SILVERPINE_FOREST,
+							TIRISFAL_GLADES,
+							WESTFALL,
+							THE_BARRENS,
+						},
+						-- #if BEFORE TBC
+						["provider"] = { "o", 1731 },	-- Copper Vein
+						-- #endif
+					}),
+					i(1206, {	-- Moss Agate
+						["maps"] = {
+							ASHENVALE,
+							DUSKWOOD,
+							HILLSBRAD_FOOTHILLS,
+							STONETALON_MOUNTAINS,
+							-- #if BEFORE CATA
+							REDRIDGE_MOUNTAINS,
+							THOUSAND_NEEDLES,
+							-- #else
+							NORTHERN_STRANGLETHORN,
+							-- #endif
+							WETLANDS,
+						},
+						-- #if BEFORE TBC
+						["providers"] = {
+							{ "o", 1732 },	-- Tin Vein
+							{ "o", 1733 },	-- Silver Vein
+						},
+						-- #endif
+					}),
+					i(1210, {	-- Shadowgem
+						["maps"] = {
+							-- #if BEFORE TBC
+							DARKSHORE,
+							DUN_MOROGH,
+							DUROTAR,
+							ELWYNN_FOREST,
+							LOCH_MODAN,
+							MULGORE,
+							SILVERPINE_FOREST,
+							TIRISFAL_GLADES,
+							WESTFALL,
+							THE_BARRENS,
+							-- #endif
+							ASHENVALE,
+							DUSKWOOD,
+							HILLSBRAD_FOOTHILLS,
+							STONETALON_MOUNTAINS,
+							-- #if BEFORE CATA
+							REDRIDGE_MOUNTAINS,
+							THOUSAND_NEEDLES,
+							-- #else
+							NORTHERN_STRANGLETHORN,
+							-- #endif
+							WETLANDS,
+						},
+						-- #if BEFORE TBC
+						["providers"] = {
+							{ "o", 1731 },	-- Copper Vein
+							{ "o", 1732 },	-- Tin Vein
+							{ "o", 1733 },	-- Silver Vein
+						},
+						-- #endif
+					}),
+					i(7910, {	-- Star Ruby
+						["maps"] = {
+							BADLANDS,
+							BURNING_STEPPES,
+							FELWOOD,
+							FERALAS,
+							SEARING_GORGE,
+							TANARIS,
+							-- #if AFTER CATA
+							EASTERN_PLAGUELANDS,
+							THOUSAND_NEEDLES,
+							-- #else
+							AZSHARA,
+							-- #endif
+							-- #if BEFORE TBC
+							UNGORO_CRATER,
+							WINTERSPRING,
+							EASTERN_PLAGUELANDS,
+							ZULGURUB,
+							-- #endif
+						},
+						-- #if BEFORE TBC
+						["providers"] = {
+							{ "o", 2040 },	-- Mithril Deposit
+							{ "o", 180215 },	-- Hakkari Thorium Vein
+							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
+							{ "o", 123848 },	-- Ooze Covered Thorium Vein
+							{ "o", 175404 },	-- Rich Thorium Vein
+							{ "o", 324 },	-- Small Thorium Vein
+							{ "o", 2047 },	-- Truesilver Deposit
+						},
+						-- #endif
+					}),
+					i(818, {	-- Tigerseye
+						["maps"] = {
+							DARKSHORE,
+							DUN_MOROGH,
+							DUROTAR,
+							ELWYNN_FOREST,
+							LOCH_MODAN,
+							MULGORE,
+							SILVERPINE_FOREST,
+							TIRISFAL_GLADES,
+							WESTFALL,
+							THE_BARRENS,
+						},
+						-- #if BEFORE TBC
+						["provider"] = { "o", 1731 },	-- Copper Vein
+						-- #endif
+					}),
+				})
+			),
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(2901, {	-- Mining Pick
+				["collectible"] = false,
+				["description"] = "Can be bought from Mining Suppliers, as well as some Trade vendors around the world",
+			}),
 		}),
 		spell(2656, {	-- Smelting
 			i(2841, {    -- Bronze Bar
@@ -5697,8 +6871,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			i(11512),	-- Patch of Tainted Skin
 			i(6471),	-- Perfect Deviate Scale
-			applyclassicphase(PHASE_FOUR, i(19767, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Primal Bat Leather
-			applyclassicphase(PHASE_FOUR, i(19768, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Primal Tiger Leather
+			applyclassicphase(PHASE_FOUR, i(19767, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Primal Bat Leather
+			applyclassicphase(PHASE_FOUR, i(19768, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Primal Tiger Leather
 			i(12731, {	-- Pristine Hide of the Beast
 				["timeline"] = { REMOVED_6_0_2 },
 			}),
@@ -5764,9 +6938,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			i(4336),	-- Black Swashbuckler's Shirt
 			i(203796, {["timeline"] = { ADDED_10_0_7 }}),	-- Bloodlords Embrace
-			applyclassicphase(PHASE_FOUR, i(19684, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Boots
-			applyclassicphase(PHASE_FOUR, i(19683, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Leggings
-			applyclassicphase(PHASE_FOUR, i(19682, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Vest
+			applyclassicphase(PHASE_FOUR, i(19684, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Bloodvine Boots
+			applyclassicphase(PHASE_FOUR, i(19683, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Bloodvine Leggings
+			applyclassicphase(PHASE_FOUR, i(19682, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Bloodvine Vest
 			i(6242),	-- Blue Linen Robe
 			i(2577),	-- Blue Linen Shirt
 			i(6240),	-- Blue Linen Vest
@@ -6192,66 +7366,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				["description"] = "Can be bought from Leatherworking and Tailoring Suppliers, as well as some Trade vendors around the old world.",
 			},{
 				-- Dyes:
-				i(2325),	-- Black Dye
-				i(6260),	-- Blue Dye
-				i(2605),	-- Green Dye
-				i(4340),	-- Grey Dye
 				i(6261),	-- Orange Dye
 				i(10290),	-- Pink Dye
-				i(4342),	-- Purple Dye
-				i(2604),	-- Red Dye
 				i(4341),	-- Yellow Dye
-				-- Threads:
-				i(2320),	-- Coarse Thread
-				i(2321),	-- Fine Thread
-				i(4291),	-- Silken Thread
-				i(8343),	-- Heavy Silken Thread
-				i(14341),	-- Rune Thread
-				-- Patterns:
-			}),
-			-- Alchemy vials from vendors
-			sharedData({	-- Empty-/Leaded-/Crystal-/Imbued Vial
-				["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
-			},{
-				i(3371),	-- Empty Vial [Vanilla - WotLK] / Crystal Vial [Cata -> ]
-				i(3372, { ["timeline"] = { REMOVED_4_0_1 }}),	-- Leaded Vial, turns into Cracked Vial with Cataclysm.
-				i(8925, { ["timeline"] = { REMOVED_4_0_1 }}),	-- Crystal Vial, turns into Tainted Vial with Cataclysm.
-				i(18256, { ["timeline"] = { REMOVED_4_0_1 }}),	-- Imbued Vial, turns into Melted Vial with Cataclysm.
-			}),
-			-- Blacksmithing reagents from vendors
-			sharedData({
-				["description"] = "Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world.",
-			},{
-				i(2880),	-- Weak Flux
-				i(3466),	-- Strong Flux
-				i(18567),	-- Elemental Flux
-				i(3857),	-- Coal
-			}),
-			-- Cooking reagents from vendors
-			sharedData({
-				["description"] = "Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",
-			},{
-				i(159),	-- Refreshing Spring Water
-				i(30817, { ["timeline"] = { ADDED_2_0_1 }}),	-- Simple Flour
-				i(2678),	-- Mild Spices
-				i(2692, { ["timeline"] = { REMOVED_3_0_2 }}),	-- Hot Spices
-				i(3713, { ["timeline"] = { REMOVED_3_0_2 }}),	-- Soothing Spices
-			}),
-			-- Enchanting reagents from vendors
-			sharedData({
-				["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
-			},{
-				i(6217),	-- Copper Rod
-				i(4470),	-- Simple Wood
-				i(11291),	-- Star Wood
-			}),
-			-- Engineering reagents from vendors
-			sharedData({
-				["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
-			},{
-				i(4400),	-- Heavy Stock
-				i(4399),	-- Wooden Stock
 			})
+			-- Alchemy vials from vendors
+			-- Blacksmithing reagents from vendors
+			-- Cooking reagents from vendors
+			-- Enchanting reagents from vendors
+			-- Engineering reagents from vendors
 		),
 	}),
 }));

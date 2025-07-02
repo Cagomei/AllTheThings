@@ -3479,7 +3479,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(VANILLA_HERBS_2, VANILLA_HERBS_3, {
+					["sym"] = {
+						{ "select","itemID",
+							2453,	-- Bruiseweed
+							2449,	-- Earthroot
+							3356,	-- Kingsblood
+							3357,	-- Liferoot
+							785,	-- Mageroyal
+							3355,	-- Wild Steelbloom
+						},
+					},
+					["groups"] = {
 						-- #if BEFORE CATA
 						i(4777, {	-- Ironwood Maul
 							["isLimited"] = true,
@@ -3505,7 +3515,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						-- #endif
-					}),
+					},
 				}),
 				n(465, {	-- Barkeep Dobbins <Bartender>
 					["coord"] = { 43.8, 65.8, ELWYNN_FOREST },

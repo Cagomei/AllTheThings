@@ -2,6 +2,7 @@
 -- JEWELCRAFTING --
 -------------------
 JEWELCRAFTING_SUPPLIES = sharedData({
+	["description"] = "Can be bought from Jewelcrafting Suppliers, as well as some Trade vendors around the world.",
 	["providers"] = {
 		{ "n", 17512},	-- Arred <Jewelcrafting Supplies>
 		{ "n", 16624},	-- Gelanthis <Jewelcrafting Supplies>
