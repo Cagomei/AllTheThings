@@ -563,6 +563,7 @@ HeaderAssignments = {
 	["The War Within"] = -1000250,
 	["The War Within Seasonal Promotions"] = -1001001,
 	["The Wicked Grotto"] = -1000178,
+	["Theramore's Fall"] = -1001209,
 	["Third Chest"] = -1000058,
 	["Thousand Boat Bash"] = -1000229,
 	["Thunderforged"] = -1000108,
@@ -674,4 +675,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001209;
+NextHeaderID = -1001210;

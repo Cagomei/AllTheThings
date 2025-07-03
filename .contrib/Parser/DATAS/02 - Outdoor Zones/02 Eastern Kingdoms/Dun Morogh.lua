@@ -436,14 +436,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { DWARF },
 							["classes"] = { HUNTER },
 						}),
+						q(24530, {	-- Oh, A Hunter's Life For Me
+							["qg"] = 895,	-- Thorgas Grimson <Hunter Trainer>
+							["sourceQuest"] = 3108,	-- Etched Rune
+							["coord"] = { 36.2, 65.9, DUN_MOROGH },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { DWARF },
+							["classes"] = { HUNTER },
+						}),
 						q(24532, {	-- Evisceratin' the Enemy
-							["qg"] = 916,	-- Solm Hargin
+							["qg"] = 916,	-- Solm Hargrin <Rogue Trainer>
 							["sourceQuest"] = 3109,	-- Encrypted Rune
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 59.5, 20.4, COLDRIDGE_VALLEY },
 								-- #else
-								{ 28.3, 67.5, DUN_MOROGH },
+								{ 35.4, 65.9, DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -714,7 +722,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 67.1, 41.3, COLDRIDGE_VALLEY },
 								-- #else
-								{ 29.8, 71.6, DUN_MOROGH },
+								{ 36.9, 70.0, DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -934,6 +942,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { DWARF },
 							["classes"] = { WARRIOR },
 						}),
+						q(24531, {	-- Getting Battle-Ready
+							["qg"] = 912,	-- Thran Khorman <Warrior Trainer>
+							["sourceQuest"] = 3106,	-- Simple Rune
+							["coord"] = { 35.8, 65.6, DUN_MOROGH },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { DWARF },
+							["classes"] = { WARRIOR },
+						}),
+						q(24494, {	-- Empowered Rune
+							["providers"] = {
+								{ "n", 37087 },	-- Jona Ironstock
+								{ "i", 49758 },	-- Empowered Rune (PQI!)
+							},
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								-- #elseif AFTER CATA
+								{ 35.8, 66.2, DUN_MOROGH },
+								-- #else
+								{ 29.8, 71.2, DUN_MOROGH },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { DWARF },
+							["classes"] = { SHAMAN },
+						}),
+						q(24527, {	-- Your Path Begins Here
+							["qg"] = 37115,	-- Teo Hammerstorm <Shaman Trainer>
+							["sourceQuest"] = 24494,	-- Empowered Rune
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								-- #else
+								{ 35.8, 64.6, DUN_MOROGH },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { DWARF },
+							["classes"] = { SHAMAN },
+						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77667, {	-- Spell Research
 							["providers"] = {
@@ -1093,7 +1142,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 61.8, 24.4, COLDRIDGE_VALLEY },
 								-- #else
-								{ 28.8, 68.3, DUN_MOROGH },
+								{ 35.8, 66.7, DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -1283,7 +1332,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.7, 14.6, COLDRIDGE_VALLEY },
 								-- #else
-								{ 28.6, 66.4, DUN_MOROGH },
+								{ 35.6, 64.8, DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },

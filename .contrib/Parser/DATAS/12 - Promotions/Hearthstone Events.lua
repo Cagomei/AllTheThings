@@ -50,7 +50,13 @@ HEARTHSTONE_10TH_ANNIVERSARY = createHeader({
 });
 root(ROOTS.Promotions, {
 	n(HEARTHSTONE, bubbleDown({ ["u"] = REAL_MONEY }, {
-		["timeline"] = { ADDED_5_3_0 },
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_3_0,
+			-- #else
+			ADDED_5_3_0,
+			-- #endif
+		},
 		["groups"] = {
 			ach(8345),	-- Hearthstoned
 			i(98618),	-- Hearthsteed (MOUNT!)

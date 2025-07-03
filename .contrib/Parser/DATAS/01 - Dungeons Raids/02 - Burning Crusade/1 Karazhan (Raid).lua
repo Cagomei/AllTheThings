@@ -680,7 +680,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			e(1552, {	-- Servant's Quarters
 				["description"] = "One of the following rares will spawn after clearing 90% of the mobs in the Servant's Quarters. An emote will appear in the General Chat when one of the spawns. This is not a boss encounter, thus you can leave the raid, reset the instance and repeat the process as many times as you want as long as no bosses are killed.",
-				-- #if BEFORE MOP
+				-- #if BEFORE WOD
 				["npcID"] = RARES,
 				-- #endif
 				["groups"] = {

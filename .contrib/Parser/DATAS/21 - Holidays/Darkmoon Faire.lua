@@ -117,15 +117,19 @@ local TIER_FIVE_MAX_REPUTATION = { 909, FRIENDLY + 2001 };	-- Darkmoon Faire, mu
 local DECK_MAX_REPUTATION = { 909, EXALTED };	-- Darkmoon Faire, must be less than Exalted 999/1000.
 local DARKMOON_GAME_PRIZE = i(93724, {	-- Darkmoon Game Prize [Cataclysm Version]
 	["timeline"] = { ADDED_5_2_0 },
+	["pb"] = IGNORED_VALUE,
 });
 local DARKMOON_GAME_TOKEN = i(71083, {	-- Darkmoon Game Token [Cataclysm Version]
 	["timeline"] = { ADDED_4_3_0 },
+	["pb"] = IGNORED_VALUE,
 });
 local DARKMOON_PRIZE_TICKET = currency(515, {	-- Darkmoon Prize Ticket [Cataclysm Version]
 	["timeline"] = { ADDED_4_3_0 },
+	["pb"] = IGNORED_VALUE,
 });
 local TATTERED_DARKMOON_PRIZE_TICKET = i(19182, {	-- Tattered Darkmoon Faire Prize Ticket
 	["timeline"] = { REMOVED_4_3_0 },
+	["pb"] = IGNORED_VALUE,
 });
 
 -- This is what every online guide ever says, but they're incorrect.
@@ -3601,39 +3605,39 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					darkmoonprizeticket(75, iensemble(171984, {	-- Ensemble: Battlegear of Valor
 						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
-						["timeline"] = { ADDED_8_2_5 }, 
+						["timeline"] = { ADDED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171977, {	-- Ensemble: Beaststalker Armor
 						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
-						["timeline"] = { ADDED_8_2_5 }, 
+						["timeline"] = { ADDED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171983, {	-- Ensemble: Dreadmist Raiment
 						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
-						["timeline"] = { ADDED_8_2_5 }, 
+						["timeline"] = { ADDED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171979, {	-- Ensemble: Lightforge Armor
 						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
-						["timeline"] = { ADDED_8_2_5 }, 
+						["timeline"] = { ADDED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171978, {	-- Ensemble: Magister's Regalia
 						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
-						["timeline"] = { ADDED_8_2_5 }, 
+						["timeline"] = { ADDED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171981, {	-- Ensemble: Shadowcraft Armor
 						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
-						["timeline"] = { ADDED_8_2_5 }, 
+						["timeline"] = { ADDED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171982, {	-- Ensemble: The Elements
 						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
-						["timeline"] = { ADDED_8_2_5 }, 
+						["timeline"] = { ADDED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171980, {	-- Ensemble: Vestments of the Devout
 						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
-						["timeline"] = { ADDED_8_2_5 }, 
+						["timeline"] = { ADDED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171976, {	-- Ensemble: Wildheart Raiment
 						["description"] = "Only appears for those who have done either the original T0.5 questline, or after you buy all replica pieces",
-						["timeline"] = { ADDED_8_2_5 }, 
+						["timeline"] = { ADDED_8_2_5 },
 					})),
 				},
 			})),
@@ -3851,12 +3855,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					darkmoonprizeticket(130, i(42992, {	-- Discerning Eye of the Beast
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(110, i(93902, {	-- Flamescarred Draconian Deflector
+					darkmoonprizeticket(110, i(93902, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {	-- Flamescarred Draconian Deflector
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
-					})),
-					darkmoonprizeticket(110, i(93904, {	-- Musty Tome of the Lost
+					}))),
+					darkmoonprizeticket(110, i(93904, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {	-- Musty Tome of the Lost
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
-					})),
+					}))),
 					darkmoonprizeticket(110, i(42951, {	-- Mystical Pauldrons of Elements
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
@@ -3899,9 +3903,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					darkmoonprizeticket(110, i(48716, {	-- Venerable Mass of McGowan
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(110, i(93903, {	-- Weathered Observer's Shield
+					darkmoonprizeticket(110, i(93903, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {	-- Weathered Observer's Shield
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
-					})),
+					}))),
 
 					-- New Heirlooms
 					darkmoonprizeticket(50, i(122350, {	-- Balanced Heartseeker
@@ -4106,9 +4110,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					darkmoonprizeticket(75, i(78341, {	-- Darkmoon Hammer
 						["timeline"] = { ADDED_4_3_0 },
 					})),
-					darkmoonprizeticket(50, i(97994, {	-- Darkmoon Seesaw (TOY!)
+					darkmoonprizeticket(50, i(97994, applyclassicphase(MOP_PHASE_ESCALATION, {	-- Darkmoon Seesaw (TOY!)
 						["timeline"] = { ADDED_5_3_0 },
-					})),
+					}))),
 					darkmoonprizeticket(1, i(19291)),	-- Darkmoon Storage Box
 					darkmoonprizeticket(10, i(93730, {	-- Darkmoon Top Hat
 						["timeline"] = { ADDED_5_2_0, REMOVED_8_2_5 },

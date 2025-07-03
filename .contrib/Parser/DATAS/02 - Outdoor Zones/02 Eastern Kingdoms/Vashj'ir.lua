@@ -3126,9 +3126,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									i(62358),	-- Leggings of Clutching Roots
 									i(62366, {	-- Arcanum of the Earthen Ring
 										["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+										["timeline"] = { REMOVED_5_0_4 },
 										["filterID"] = CONSUMABLES,
 									}),
 									i(68764, {	-- Arcanum of the Earthen Ring
+										["timeline"] = { REMOVED_5_0_4 },
 										["filterID"] = CONSUMABLES,
 									}),
 								},

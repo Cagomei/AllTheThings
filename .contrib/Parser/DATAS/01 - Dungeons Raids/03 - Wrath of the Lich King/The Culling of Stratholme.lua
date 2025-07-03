@@ -91,7 +91,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 			n(QUESTS, {
 				q(13151, {	-- A Royal Escort
-					["qg"] = 26527,	-- Chromie
+					["qg"] = 27915,	-- Chromie
 					["sourceQuest"] = 13149,	-- Dispelling Illusions
 					["lvl"] = lvlsquish(78, 78, 25),
 					["groups"] = {

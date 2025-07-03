@@ -1222,16 +1222,30 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 			if #entries > 0 then
 				local currentMapID = app.CurrentMapID;
-				local realmName, left, right = GetRealmName();
+				local realmName, left, right, entry = GetRealmName();
 				tinsert(tooltipInfo, { left = "Contains:" });
 				if #entries < 25 then
 					for i,item in ipairs(entries) do
-						left = item.group.text or RETRIEVING_DATA;
+						entry = item.group;
+						left = entry.text or RETRIEVING_DATA;
 						if not group.working and IsRetrieving(left) then group.working = true; end
-						local mapID = app.GetBestMapForGroup(item.group, currentMapID);
+						local mapID = app.GetBestMapForGroup(entry, currentMapID);
 						if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
-						if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-						tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
+						if entry.icon then item.prefix = item.prefix .. "|T" .. entry.icon .. ":0|t "; end
+						
+						-- If this entry has specialization requirements, let's attempt to show the specialization icons.
+						right = item.right;
+						local specs = entry.specs;
+						if specs and #specs > 0 then
+							right = app.GetSpecsString(specs, false, false) .. right;
+						else
+							local c = entry.c;
+							if c and #c > 0 then
+								right = app.GetClassesString(c, false, false) .. right;
+							end
+						end
+						
+						tinsert(tooltipInfo, { left = item.prefix .. left, right = right });
 					end
 				else
 					for i=1,math.min(25, #entries) do
@@ -1629,14 +1643,6 @@ function app:GetDataCache()
 		if app.Categories.InGameShop then
 			tinsert(g, app.CreateNPC(app.HeaderConstants.IN_GAME_SHOP, {
 				g = app.Categories.InGameShop,
-				expanded = false
-			}));
-		end
-
-		-- Pet Battles
-		if app.Categories.PetBattles then
-			tinsert(g, app.CreateNPC(app.HeaderConstants.PET_BATTLE, {
-				g = app.Categories.PetBattles,
 				expanded = false
 			}));
 		end

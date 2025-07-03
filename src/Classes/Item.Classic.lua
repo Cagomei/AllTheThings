@@ -179,6 +179,11 @@ local itemFields = {
 			return app.FilterConstants.QUEST_ITEMS;
 		end
 	end,
+	["specs"] = function(t)
+		local specs = app.GetFixedItemSpecInfo(t.itemID) or {};
+		t.specs = specs;
+		return specs;
+	end,
 	["tsm"] = function(t)
 		return ("i:%d"):format(t.itemID);
 	end,

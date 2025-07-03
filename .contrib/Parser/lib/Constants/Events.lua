@@ -40,6 +40,7 @@ EVENTS = {
 	REMIX_MOP = 437,
 	DASTARDLY_DUOS = 451,
 	WINDS_OF_MYSTERIOUS_FORTUNE = 450,
+	A_GREEDY_EMISSARY = 422,
 
 	-- Dragonriding Cups
 	-- Note: These need to all be referenced in src\Modules\Events.lua

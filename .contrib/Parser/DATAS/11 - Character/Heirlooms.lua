@@ -246,7 +246,9 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 		i(122353),	-- Dignified Headmaster's Charge
 		i(140773),	-- Eagletalon Spear
 		un(REMOVED_FROM_GAME, i(93849)),	-- Elder Staff of Jordan
-		un(REMOVED_FROM_GAME, i(93902)),	-- Flamescarred Draconian Deflector
+		i(93902, {	-- Flamescarred Draconian Deflector
+			["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		}),
 		i(122391),	-- Flamescarred Draconian Deflector
 		un(REMOVED_FROM_GAME, i(93845)),	-- Gore-Steeped Skullforge Reaver
 		un(REMOVED_FROM_GAME, i(44095)),	-- Grand Staff of Jordan
@@ -307,7 +309,9 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 		i(104402, {	-- Hellscream's Warmace
 			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2, ADDED_10_2_7, REMOVED_MOP_REMIX_END },
 		}),
-		un(REMOVED_FROM_GAME, i(93904)),	-- Musty Tome of the Lost
+		i(93904, {	-- Musty Tome of the Lost
+			["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		}),
 		i(122390),	-- Musty Tome of the Lost
 		un(REMOVED_FROM_GAME, i(93856)),	-- Noble Dal'Rend's Sacred Charge
 		un(REMOVED_FROM_GAME, i(93853)),	-- Pious Aurastone Hammer
@@ -333,7 +337,9 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 		i(122385),	-- Venerable Mass of McGowan
 		un(REMOVED_FROM_GAME, i(93857)),	-- Vengeful Heartseeker
 		un(REMOVED_FROM_GAME, i(93855)),	-- War-Torn Ancient Bone Bow
-		un(REMOVED_FROM_GAME, i(93903)),	-- Weathered Observer's Shield
+		i(93903, {	-- Weathered Observer's Shield
+			["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		}),
 		i(122392),	-- Weathered Observer's Shield
 	}),
 }));

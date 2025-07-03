@@ -539,11 +539,26 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		}),
 	})),
 	-- #endif
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_2_2 } }, {
+	expansion(EXPANSION.WOD, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_4_7,
+			-- #else
+			ADDED_5_4_7,
+			-- #endif
+			REMOVED_6_2_2,
+		}
+	}, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",
 		["groups"] = {
-			ach(8917),	-- Collector's Edition: Dread Hatchling
-			ach(8916),	-- Collector's Edition: Dread Raven
+			-- #if BEFORE 10.1.0
+			ach(8917, {	-- Collector's Edition: Dread Hatchling
+				["provider"] = { "i", 109014 },	-- Dread Hatchling
+			}),
+			ach(8916, {	-- Collector's Edition: Dread Raven
+				["provider"] = { "i", 109013 },	-- Dread Raven
+			}),
+			-- #endif
 			i(109014),	-- Dread Hatchling (PET!)
 			i(109013),	-- Dread Raven (MOUNT!)
 		},
@@ -862,16 +877,39 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	})),
 
 	-- Other Blizzard Games
-	n(DIABLO_III, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_4_7 } }, {
+	n(DIABLO_III, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_0_4,
+			-- #else
+			ADDED_5_0_4,
+			REMOVED_5_4_7,
+			-- #endif
+		},
+	}, {
 		["description"] = "These rewards are available to anyone who purchases Diablo 3 Collection.",
 		["groups"] = {
 			ach(7412),	-- Collector's Edition: Fetish Shaman
 			i(76062, {	-- Fetish Shaman (PET!)
-				["timeline"] = { CREATED_4_3_0, ADDED_5_0_4 },
+				["timeline"] = {
+					CREATED_4_3_0,
+					-- #if NOT ANYCLASSIC
+					ADDED_5_0_4,
+					REMOVED_5_4_7,
+					-- #endif
+				},
 			}),
 		},
 	})),
-	n(DIABLO_III_REAPER_OF_SOULS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_2 } }, {
+	n(DIABLO_III_REAPER_OF_SOULS, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_4_2,
+			-- #else
+			ADDED_5_4_2,
+			-- #endif
+		},
+	}, {
 		["description"] = "These rewards are available to anyone who purchases Diablo 3: Reaper of Souls Collection.",
 		["groups"] = {
 			ach(8795),	-- Collector's Edition: Treasure Goblin
@@ -892,14 +930,30 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			i(134047),	-- Baby Winston (PET!)
 		},
 	})),
-	n(STARCRAFT_II_WINGS_OF_LIBERTY, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_5 } }, {
+	n(STARCRAFT_II_WINGS_OF_LIBERTY, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_3_3_5,
+			-- #else
+			ADDED_3_3_5,
+			-- #endif
+		},
+	}, {
 		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Wings of Liberty Collection.",
 		["groups"] = {
 			ach(4824),	-- Collector's Edition: Mini Thor
 			i(56806),	-- Mini Thor (PET!)
 		},
 	})),
-	n(STARCRAFT_II_HEART_OF_THE_SWARM, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	n(STARCRAFT_II_HEART_OF_THE_SWARM, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_0_4,
+			-- #else
+			ADDED_5_0_4,
+			-- #endif
+		},
+	}, {
 		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Heart of the Swarm Collection.",
 		["groups"] = {
 			ach(7842),	-- Collector's Edition: Baneling

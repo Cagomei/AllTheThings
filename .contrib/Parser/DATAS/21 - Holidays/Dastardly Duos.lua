@@ -131,17 +131,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						}),
 					},
 				}),
-				-- TODO: Sort this section out, it's just here to make the parser happy
-				q(90504), --
-				q(90503), --
-				q(90502), --
-				q(90501), --
-				q(90500), --
-				q(90499), --
-				q(90498), --
-				q(90497), --
-				q(90496), --
-				q(90495), --
 			}),
 			n(REWARDS, {
 				filter(MISC, {
@@ -288,18 +277,28 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(87528),	-- so it is just 'after first completion Dastardly Duos, week 2'
 			-- Week 3:
 			q(87512),	-- Week 3 Completion
-			-- q(87513),	--
 			q(87529),	--
 			q(87530),	--
 			-- Week 4:
-			q(85713),	-- Week 4 Completion
+			q(87513),	-- Week 4 Completion
 			-- Week 5:
 			q(87514),	-- Week 5 Completion
-			-- q(87515),	--
 			q(87531),	--
 			q(87532),	--
 			-- Week 6:
-			--q(),	-- no hqt this week
+			-- q(87515),	--
+
+			-- Seemingly no longer in use, but left for reference
+			q(90504), --
+			q(90503), --
+			q(90502), --
+			q(90501), --
+			q(90500), --
+			q(90499), --
+			q(90498), --
+			q(90497), --
+			q(90496), --
+			q(90495), --
 		}),
 	})),
 });

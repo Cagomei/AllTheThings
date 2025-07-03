@@ -1612,9 +1612,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(62440),	-- Red Rock Band
 							i(62369, {	-- Arcanum of the Ramkahen
 								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(68766, {	-- Arcanum of the Ramkahen
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 						},

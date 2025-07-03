@@ -2175,9 +2175,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(62382),	-- Waywatcher's Boots
 							i(62367, {	-- Arcanum of Hyjal
 								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(68765, {	-- Arcanum of Hyjal
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(138803, {	-- Illusion: Mending (ILLUSION!)

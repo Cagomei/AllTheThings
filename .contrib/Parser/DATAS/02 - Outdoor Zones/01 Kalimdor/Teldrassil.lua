@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 45.6, 74.5, SHADOWGLEN },
 								{ 46.3, 73.5, SHADOWGLEN },
 								-- #else
-								{ 58.6, 44.2, TELDRASSIL },
+								{ 58.0, 39.2, TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(26946, {	-- A Rogue's Advantage (Night Elf)
 							["qg"] = 3594,	-- Frahun Shadewhisper <Rogue Trainer>
 							["sourceQuest"] = 3118,	-- Encrypted Sigil
-							["coord"] = { 58.8, 34, TELDRASSIL },
+							["coord"] = { 58.9, 33.9, TELDRASSIL },
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { ROGUE },
@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(26947, {	-- A Woodman's Training (Night Elf)
 							["qg"] = 3596,	-- Ayanna Everstride <Hunter Trainer>
 							["sourceQuest"] = 3117,	-- Etched Sigil
-							["coord"] = { 58.66, 40.45, TELDRASSIL },
+							["coord"] = { 58.9, 35.7, TELDRASSIL },
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { HUNTER },
@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(26940, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Night Elf)
 							["qg"] = 43006, -- Rhyanda <Mage Trainer>
 							["sourceQuest"] = 26841,	-- Forbidden Sigil
-							["coord"] = { 58.4, 35.6, TELDRASSIL },
+							["coord"] = { 58.4, 35.5, TELDRASSIL },
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { MAGE },
@@ -225,9 +225,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 2077 },	-- Melithar Staghelm
-								-- #else
-								{ "n", 2079 },	-- Conservator Ilthalaine
 								-- #endif
+								{ "n", 2079 },	-- Conservator Ilthalaine
 								{ "i", 9551 },	-- Encrypted Sigil
 							},
 							["sourceQuests"] = {
@@ -254,9 +253,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 2077 },	-- Melithar Staghelm
-								-- #else
-								{ "n", 2079 },	-- Conservator Ilthalaine
 								-- #endif
+								{ "n", 2079 },	-- Conservator Ilthalaine
 								{ "i", 9567 },	-- Etched Sigil
 							},
 							["sourceQuests"] = {
@@ -288,7 +286,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 45.6, 74.5, SHADOWGLEN },
 								{ 46.3, 73.5, SHADOWGLEN },
 								-- #else
-								{ 58.6, 44.2, TELDRASSIL },
+								{ 58.0, 39.2, TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -312,6 +310,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(26841, {	-- Forbidden Sigil
 							["providers"] = {
 								{ "n", 2077 },	-- Melithar Staghelm
+								{ "n", 2079 },	-- Conservator Ilthalaine
 								{ "i", 60400 },	-- Forbidden Sigil
 							},
 							["coords"] = {
@@ -329,9 +328,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 2077 },	-- Melithar Staghelm
-								-- #else
-								{ "n", 2079 },	-- Conservator Ilthalaine
 								-- #endif
+								{ "n", 2079 },	-- Conservator Ilthalaine
 								{ "i", 9557 },	-- Hallowed Sigil
 							},
 							["sourceQuests"] = {
@@ -434,7 +432,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(26945, {	-- Learning New Techniques (Night Elf)
 							["qg"] = 3593,	-- Alyissia <Warrior Trainer>
 							["sourceQuest"] = 3116,	-- Simple Sigil
-							["coord"] = { 58.8, 33.8, TELDRASSIL },
+							["coord"] = { 58.8, 33.7, TELDRASSIL },
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { WARRIOR },
@@ -446,7 +444,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER MOP
 								{ 47.6, 59.6, SHADOWGLEN },
 								-- #else
-								{ 59.2, 40.4, TELDRASSIL },
+								{ 58.4, 35.5, TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
@@ -605,9 +603,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 2077 },	-- Melithar Staghelm
-								-- #else
-								{ "n", 2079 },	-- Conservator Ilthalaine
 								-- #endif
+								{ "n", 2079 },	-- Conservator Ilthalaine
 								{ "i", 9545 },	-- Simple Sigil
 							},
 							["sourceQuests"] = {
@@ -697,7 +694,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 45.6, 74.5, SHADOWGLEN },
 								{ 46.3, 73.5, SHADOWGLEN },
 								-- #else
-								{ 58.6, 44.2, TELDRASSIL },
+								{ 58.0, 39.2, TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -788,9 +785,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 2077 },	-- Melithar Staghelm
-								-- #else
-								{ "n", 2079 },	-- Conservator Ilthalaine
 								-- #endif
+								{ "n", 2079 },	-- Conservator Ilthalaine
 								{ "i", 9580 },	-- Verdant Sigil
 							},
 							["sourceQuests"] = {

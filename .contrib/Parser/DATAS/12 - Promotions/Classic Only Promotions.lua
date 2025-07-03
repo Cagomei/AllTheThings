@@ -297,6 +297,10 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 				["description"] = "Obtained if you set up a 6 Month WoW Subscription after 10th January 2024.",
 				["u"] = REMOVED_FROM_GAME,
 			}),
+			i(231312, {	-- Timbered Air Snakelet
+				["description"] = "Obtained if you set up a 6/12 Month WoW Subscription after 1th July 2025.",
+				["timeline"] = { ADDED_5_5_0 },
+			}),
 			mount(49290, {	-- Magic Rooster (TW Only)[2023 10th October until 8th January 2024]
 				["description"] = "Obtained if you set up a 3 Month WoW Subscription between 10th October 2022 until 8th January 2024.",
 				["u"] = REMOVED_FROM_GAME,

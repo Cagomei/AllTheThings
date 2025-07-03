@@ -10,7 +10,7 @@ SCENARIOS = createHeader({
 		en = [[~SCENARIOS]],
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_1_0 } }, {
 	applyclassicphase(MOP_PHASE_LANDFALL, n(SCENARIOS, {
 		["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 		["g"] = {
@@ -18,51 +18,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				ach(6943),	-- Queuing Spree
 				a(ach(6874, {	-- Scenaturday (A)
 					title(206),	-- <Name> the Scenaturdist
-					crit(21499, {	-- A Brewing Storm
-						["maps"] = { 447 },
-					}),
-					crit(21500, {	-- Greenstone Village
-						["maps"] = { 448 },
-					}),
-					crit(21501, {	-- Unga Ingoo
-						["maps"] = { 450 },
-					}),
-					crit(21502, {	-- Brewmoon Festival
-						["maps"] = { 452 },
-					}),
-					crit(21503, {	-- Crypt of Forgotten Kings
-						["maps"] = { 481 },
-					}),
-					crit(21504, {	-- Arena of Annihilation
-						["maps"] = { 480 },
-					}),
-					crit(21023, {	-- Theramore's Fall
-						["maps"] = { 483 },
-					}),
 				})),
 				h(ach(7509, {	-- Scenaturday (H)
 					title(206),	-- <Name> the Scenaturdist
-					crit(21499, {	-- A Brewing Storm
-						["maps"] = { 447 },
-					}),
-					crit(21500, {	-- Greenstone Village
-						["maps"] = { 448 },
-					}),
-					crit(21501, {	-- Unga Ingoo
-						["maps"] = { 450 },
-					}),
-					crit(21502, {	-- Brewmoon Festival
-						["maps"] = { 452 },
-					}),
-					crit(21503, {	-- Crypt of Forgotten Kings
-						["maps"] = { 481 },
-					}),
-					crit(21504, {	-- Arena of Annihilation
-						["maps"] = { 480 },
-					}),
-					crit(21506, {	-- Theramore's Fall
-						["maps"] = { 483 },
-					}),
 				})),
 			}),
 			-- Scenario Maps
@@ -77,6 +35,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						ach(8310),	-- Heroic: A Brewing Storm
 						ach(7261),	-- The Perfect Pour
 						ach(7258),	-- Party of Six
+						crit(21499, {	-- A Brewing Storm
+							["achievementID"] = 6874,	-- Scenaturday (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						crit(21499, {	-- A Brewing Storm
+							["achievementID"] = 7509,	-- Scenaturday (H)
+							["races"] = HORDE_ONLY,
+						}),
 					}),
 				},
 			}),
@@ -98,6 +64,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						crit(19342),	-- Kill Cloudbender Kobo
 						crit(20432),	-- Kill Maki Waterblade
 						crit(20433),	-- Kill Satay Byu
+					}),
+					crit(21504, {	-- Arena of Annihilation
+						["achievementID"] = 6874,	-- Scenaturday (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					crit(21504, {	-- Arena of Annihilation
+						["achievementID"] = 7509,	-- Scenaturday (H)
+						["races"] = HORDE_ONLY,
 					}),
 				}),
 			}),
@@ -149,6 +123,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						},
 					}),
 					ach(6930),	-- Yaungolian Barbecue
+					crit(21502, {	-- Brewmoon Festival
+						["achievementID"] = 6874,	-- Scenaturday (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					crit(21502, {	-- Brewmoon Festival
+						["achievementID"] = 7509,	-- Scenaturday (H)
+						["races"] = HORDE_ONLY,
+					}),
 				}),
 			}),
 			m(523, {	-- Blood in the Snow
@@ -176,6 +158,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						ach(8368),	-- Fight Anger with Anger
 						ach(8311),	-- Heroic: Crypt of Forgotten Kings
 						ach(7275),	-- It's a Trap!
+						crit(21503, {	-- Crypt of Forgotten Kings
+							["achievementID"] = 6874,	-- Scenaturday (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						crit(21503, {	-- Crypt of Forgotten Kings
+							["achievementID"] = 7509,	-- Scenaturday (H)
+							["races"] = HORDE_ONLY,
+						}),
 					}),
 				},
 			}),
@@ -237,6 +227,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					ach(7265),	-- Greenstone Village
 					ach(7267),	-- Perfect Delivery
 					ach(7266),	-- Save it for Later
+					crit(21500, {	-- Greenstone Village
+						["achievementID"] = 6874,	-- Scenaturday (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					crit(21500, {	-- Greenstone Village
+						["achievementID"] = 7509,	-- Scenaturday (H)
+						["races"] = HORDE_ONLY,
+					}),
 				}),
 			}),
 			m(522, {	-- The Secrets of Ragefire
@@ -251,15 +249,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					}),
 				},
 			}),
-			m(483, {	-- Theramore's Fall
-				n(ACHIEVEMENTS, {
-					a(ach(7526)),	-- Kite Flight (A)
-					h(ach(7529)),	-- Kite Fight (H)
-					a(ach(7527)),	-- No Tank You (A)
-					h(ach(7530)),	-- No Tank You (H)
-					a(ach(7523)),	-- Theramore's Fall (A)
-					h(ach(7524)),	-- Theramore's Fall (H)
-				}),
+			n(THERAMORES_FALL, {
+				["maps"] = { 483 },	-- Theramore's Fall
+				["groups"] = {
+					n(ACHIEVEMENTS, bubbleDown({ ["lvl"] = lvlsquish(90, 90, 35), }, {
+						a(ach(7526)),	-- Kite Flight (A)
+						h(ach(7529)),	-- Kite Fight (H)
+						a(ach(7527)),	-- No Tank You (A)
+						h(ach(7530)),	-- No Tank You (H)
+						a(ach(7523)),	-- Theramore's Fall (A)
+						h(ach(7524)),	-- Theramore's Fall (H)
+						crit(21023, {	-- Theramore's Fall
+							["achievementID"] = 6874,	-- Scenaturday (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						crit(21506, {	-- Theramore's Fall
+							["achievementID"] = 7509,	-- Scenaturday (H)
+							["races"] = HORDE_ONLY,
+						}),
+					})),
+				},
 			}),
 			m(450, {	-- Unga Ingoo
 				n(ACHIEVEMENTS, {
@@ -268,6 +277,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					ach(7231),	-- Spill No Evil
 					ach(7232),	-- The Keg Runner
 					ach(7249),	-- Unga Ingoo
+					crit(21501, {	-- Unga Ingoo
+						["achievementID"] = 6874,	-- Scenaturday (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					crit(21501, {	-- Unga Ingoo
+						["achievementID"] = 7509,	-- Scenaturday (H)
+						["races"] = HORDE_ONLY,
+					}),
 				}),
 				n(TREASURES, {
 					o(212278),	-- Protected Unga Keg

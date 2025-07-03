@@ -1058,6 +1058,7 @@ i(0, 4532);			-- Pinchy the Plunderer (WOTLK)
 i(220620, 446105);	-- Skeletal Wind Serpent (SOD) [Sunken Temple]
 -- #endif
 i(224002, 4585);	-- Swoopy (Cata)
+i(231312, 4685);	-- Timbered Air Snakelet (MOP)
 -- #endif
 
 -----------------

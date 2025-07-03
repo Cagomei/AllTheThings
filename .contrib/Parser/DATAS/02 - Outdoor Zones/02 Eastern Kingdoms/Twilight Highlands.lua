@@ -3279,9 +3279,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(62427),	-- Band of Singing Grass
 							i(62422, {	-- Arcanum of the Wildhammer
 								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(68767, {	-- Arcanum of the Wildhammer
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 						},
@@ -3315,9 +3317,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(62418),	-- Boots of Sullen Rock
 							i(62368, {	-- Arcanum of the Dragonmaw
 								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(68763, {	-- Arcanum of the Dragonmaw
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 						},

@@ -2077,11 +2077,14 @@ root(ROOTS.Zones, {
 						-- #endif
 						["timeline"] = { ADDED_2_4_2, REMOVED_3_0_2 },
 					}),
+					-- #if ANYCLASSIC
+					-- mapped from PvP
 					n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set
 						["timeline"] = { ADDED_7_0_3 },
 					}),
+					-- #endif
 					n(19536, {	-- Dealer Jadyan <Exotic Weapons>
 						["coord"] = { 44.0, 36.6, NETHERSTORM },
 						["groups"] = {
@@ -2278,11 +2281,14 @@ root(ROOTS.Zones, {
 						-- #endif
 						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 					})),
+					-- #if ANYCLASSIC
+					-- mapped from PvP
 					n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Merciless Gladiator's Set
 						["timeline"] = { ADDED_7_0_3 },
 					}),
+					-- #endif
 					n(21493, {	-- Kablamm Farflinger <Transportation Engineer>
 						["requireSkill"] = GOBLIN_ENGINEERING,
 						["description"] = "Goblin Engineers can speak to Kablamm to learn the recipe.",
@@ -2341,6 +2347,8 @@ root(ROOTS.Zones, {
 							},
 						}),
 					}),
+					-- #if ANYCLASSIC
+					-- mapped from PvP
 					n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator> [Legion+] / Kezzik the Striker <Gladiator, Merciless, & Vengeful Gear>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {
@@ -2359,6 +2367,7 @@ root(ROOTS.Zones, {
 						},
 						["timeline"] = { ADDED_4_3_0 },
 					}),
+					-- #endif
 					applyclassicphase(WRATH_PHASE_FOUR, n(33940, {	-- Kezzik the Striker <Veteran Arena Vendor> [WRATH] Original WOTLK S8 VENDOR
 						["coord"] = { 33.1, 64.3, NETHERSTORM },
 						-- #if BEFORE 4.0.3.13277
@@ -2387,11 +2396,14 @@ root(ROOTS.Zones, {
 						-- #endif
 						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 					})),
+					-- #if ANYCLASSIC
+					-- mapped from PvP
 					n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },{"merge"},{"pop"}},	-- Vengeful Gladiator Set
 						["timeline"] = { ADDED_7_0_3 },
 					}),
+					-- #endif
 					n(23396, {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate> / Krixel Pinchwhistle <Arena Vendor> [TBC]
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						-- #if BEFORE WRATH

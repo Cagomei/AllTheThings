@@ -195,7 +195,11 @@ for i,mapID in ipairs({
 	-- #endif
 	-- #endif
 	-- #if AFTER MOP
-	1923,	-- Pandaria
+		-- #if ANYCLASSIC
+		PANDARIA,
+		-- #else
+		1923,	-- Pandaria
+		-- #endif
 	-- #endif
 	-- #if AFTER WOD
 	1922,	-- Draenor

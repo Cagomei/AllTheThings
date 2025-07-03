@@ -339,6 +339,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 			q(57168),	-- triggered when completing #55889, "Champion Kyx'zhul the Deepspeaker," in nazjatar
 			q(57170),	-- triggered when completing #55888, "Champion Qalina, Spear of Ice," in nazjatar
 			q(57169),	-- triggered when completing WQ to kill Alzana, Arrow of Thunder (not WQ ID)
+			q(56709),	-- Triggered when entering area for 55664, A Blow to Morale
 			q(56913),	-- Triggers after completing the Glowing Arcane Trunk minigame in Broken Fin Hollow (24.8, 35.2)
 			q(55987),	-- Triggers after completing the Glowing Arcane Trunk minigame in Chitterspine Caverns (43.8, 16.5)
 			q(56343),	-- Triggers after completing the Glowing Arcane Trunk minigame in Mardivas's Hideaway (37.9, 6.5)

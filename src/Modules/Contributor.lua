@@ -692,6 +692,7 @@ MobileDB.GameObject = {
 	[209283] = true,	-- Discarded Weapon (q:29510)
 	[209284] = true,	-- Darkblossom (q:29514)
 	[209287] = true,	-- Bit of Glass, (q:29516)
+	[209318] = true,	-- Fragment of Jaina's Staff (End Time)
 	[209326] = true,	-- Loose Dogwood Root (q:29418)
 	[209327] = true,	-- Loose Dogwood Root (q:29418)
 	[209366] = true,	-- Portal Energy Focus (Well of Eternity)

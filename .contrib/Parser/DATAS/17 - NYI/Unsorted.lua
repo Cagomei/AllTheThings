@@ -3337,7 +3337,6 @@ root(ROOTS.Unsorted, {
 				i(158787),	-- PH Flavor - Unused \\ PH Flavor - Air Elemental
 				i(158791),	-- PH Flavor - Unused \\ PH Flavor - Crawg - Blood Troll
 				i(158793),	-- PH Flavor - Unused \\ PH Flavor - Frog
-				i(158794),	-- Ivory Tusk \\ PH Flavor - Yeti
 				i(158795),	-- Glittering Chill \\ PH Flavor - Ghost
 				i(158798),	-- PH Flavor - Unused \\ PH Flavor - Abyssal Eel - Fish
 				i(158799),	-- PH Flavor - Unused \\ PH Flavor - Wicker Beast - Drust
@@ -3355,7 +3354,6 @@ root(ROOTS.Unsorted, {
 				i(158815),	-- Stonebreaker Scale \\ PH Flavor - Raptor - Dinosaur
 				i(158816),	-- PH Flavor - Unused \\ PH Flavor - Dog
 				i(158817),	-- Razorpetal \\ PH Flavor - Snake - Reptile
-				i(158818),	-- Canine Tongue \\ PH Flavor - House Stormsong
 				i(158819),	-- Rat Tail \\ PH Flavor - Spider - Insect
 				i(158822),	-- Lustrous Black Feather \\ PH Flavor - Wind Serpent
 				i(158824),	-- PH Flavor - Unused \\ PH Flavor - Firefly - Insect
@@ -4051,12 +4049,6 @@ root(ROOTS.Unsorted, {
 			i(166742),	-- Blue-Ribbon Pandaren Chili
 			i(166771),	-- Jury-Rigged Hand Cannon
 			i(166792),	-- Taste of Victory
-			i(166796),	-- Sunset Amber
-			i(166797),	-- Star Topaz
-			i(166798),	-- Crackling Tourmaline
-			i(166799),	-- Emerald of Vigor
-			i(166800),	-- Diamond of Sustenance
-			i(166801),	-- Sapphire of Brilliance
 			i(166852),	-- Akil'zon's Mithril Bust
 			i(166853),	-- Gilded Egg of Pa'ku
 			i(166854),	-- Jade Sethraliss Effigy
@@ -4077,7 +4069,6 @@ root(ROOTS.Unsorted, {
 			i(166872),	-- Sterling Truesilver Flatware
 			i(166873),	-- Amethyst Parrot
 			i(166874),	-- Azerothian Diamond Brooch
-			i(166875),	-- Silver Filigreed Devilsaur Tooth
 			i(166876),	-- Scrimshaw Ivory Direhorn
 			i(166896),	-- Heritage of the Sin'dorei
 		})),
@@ -4414,7 +4405,6 @@ root(ROOTS.Unsorted, {
 			i(170060),	-- Encrypted Message
 			i(170064),	-- Highmountain Totem
 			i(170078),	-- Gleaming Ashmaul Strongbox
-			i(170098),	-- Rusted Girandole Earring
 			i(170100),	-- Hungry Herald's Tentacle Taco
 			i(170113),	-- Deeptide Scroll
 			i(170202),	-- Shwayderbrau
