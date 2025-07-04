@@ -339,6 +339,23 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.4, 28.2, THE_STORM_PEAKS },
 					}),
 				}),
+				petbattles({
+					n(115307, {	-- Algalon the Observer <Celestial Pet Tamer>
+						["coord"] = { 41.5, 24.4, THE_STORM_PEAKS },
+						["description"] = "Algalon's pets are level 25 of legendary quality and exceptionally powerful of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
+						["timeline"] = { ADDED_7_1_0 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(44767, {	-- A Celestial Invitation
+								["provider"] = { "i", 142210 },	-- Celestial Invitation
+								["timeline"] = { ADDED_7_1_0 },
+								["groups"] = {
+									i(142100),	-- Stardust (PET!)
+								},
+							}),
+						},
+					}),
+				}),
 				n(QUESTS, {
 					-- The Sons of Hodir
 					q(13559, {	-- Hodir's Tribute

@@ -646,10 +646,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					39987,	-- Tuskarr Fishing Spear
 				}},
 			}),
-			n(143138, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
-				["coord"] = { 55.0, 86.8, DAZARALOR },
-				["sym"] = {{ "fill" }},	--
-			}),
 			n(122695, {	-- Seshuli <Jewelcrafting Trainer>
 				["coord"] = { 47.0, 37.8, DAZARALOR },
 				["races"] = HORDE_ONLY,

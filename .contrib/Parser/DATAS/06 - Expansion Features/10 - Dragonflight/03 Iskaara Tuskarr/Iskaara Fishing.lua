@@ -542,9 +542,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						{ 57.2, 65.4, THALDRASZUS },
 					},
 					["groups"] = {
-						i(198438, {	-- Draconic Recipe in a Bottle
-							["sym"] = {{ "fill" }},	-- simply fill this item
-						}),
+						i(198438),	-- Draconic Recipe in a Bottle
 					},
 				}),
 				n(191951, {	-- Massive Thresher <Lunker>
@@ -554,9 +552,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						{ 13.6, 48.6, THE_AZURE_SPAN },
 					},
 					["groups"] = {
-						i(198438, {	-- Draconic Recipe in a Bottle
-							["sym"] = {{ "fill" }},	-- simply fill this item
-						}),
+						i(198438),	-- Draconic Recipe in a Bottle
 					},
 				}),
 			})),
@@ -564,9 +560,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				["groups"] = {
 					i(199338),	-- Copper Coin of the Isles
-					i(198438, {	-- Draconic Recipe in a Bottle
-						["sym"] = {{ "fill" }},	-- simply fill this item
-					}),
+					i(198438),	-- Draconic Recipe in a Bottle
 					i(199340),	-- Gold Coin of the Isles
 					i(199339),	-- Silver Coin of the Isles
 				},

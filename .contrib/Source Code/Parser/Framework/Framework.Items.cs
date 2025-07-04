@@ -472,6 +472,7 @@ namespace ATT
                     case "subclass":
                     case "q":
                     case "learnedAt":
+                    case "petBattleLvl":
                         item[field] = Convert.ToInt64(value);
                         break;
 
@@ -872,6 +873,7 @@ namespace ATT
                     case "learnedAt":
                     case "ilvl":
                     case "lvl":
+                    case "petBattleLvl":
                     case "q":
                     case "c":
                     case "e":

@@ -25,49 +25,44 @@ HALLOWS_END_HEADER = createHeader({
 });
 local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(122338, {	-- Ancient Heirloom Armor Casing
-		["timeline"] = { ADDED_6_1_0 },
 		["cost"] = { { "i", 33226, 250 } },	-- 250x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_6_1_0 },
 	}),
 	i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-		["timeline"] = { ADDED_8_1_5 },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_8_1_5 },
 	}),
 	i(187997, {	-- Eternal Heirloom Armor Casing
-		["timeline"] = { ADDED_9_1_5 },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_9_1_5 },
 	}),
 	i(122340, {	-- Timeworn Heirloom Armor Casing
-		["timeline"] = { ADDED_6_1_0 },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_6_1_0 },
 	}),
 	i(151614, {	-- Weathered Heirloom Armor Casing
-		["timeline"] = { ADDED_7_2_5 },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_7_2_5 },
 	}),
 	-- #if BEFORE 7.0.1
 	i(116811, {	-- "Lil' Starlet" Costume
-		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(116810, {	-- "Mad Alchemist" Costume
-		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(37585, {	-- Chewy Fel Taffy
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
 	i(116801, {	-- Cursed Birman (PET!)
-		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(70908, {	-- Feline Familiar (PET!)
-		["timeline"] = { ADDED_4_2_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_4_2_0 },
 	}),
 	i(37583, {	-- G.N.E.R.D.S.
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -76,8 +71,8 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(70722, {	-- Little Wickerman (TOY!)
-		["timeline"] = { ADDED_4_2_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_4_2_0 },
 	}),
 	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
@@ -93,36 +88,36 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
 	i(116804, {	-- Widget the Departed (PET!)
-		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	-- #else
 	i(208735, {	-- Bucket of Morbid Treats
-		["timeline"] = { ADDED_10_1_7 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 2x Tricky Treat
+		["timeline"] = { ADDED_10_1_7 },
 	}),
 	i(37585, {	-- Chewy Fel Taffy
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
 	iensemble(230173, {	-- Ensemble: Prowler's Faded Headgear
-		["timeline"] = { ADDED_11_0_5 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_11_0_5 },
 	}),
 	i(128643, {	-- Exquisite Costume Set: "Deathwing"
-		["timeline"] = { ADDED_6_2_2 },
 		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
+		["timeline"] = { ADDED_6_2_2 },
 	}),
 	i(138990, {	-- Exquisite Costume Set: "Grommash"
-		["timeline"] = { ADDED_7_0_3 },
 		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
+		["timeline"] = { ADDED_7_0_3 },
 	}),
 	i(116828, {	-- Exquisite Costume Set: "The Lich King"
-		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(151268, {	-- Exquisite Costume Set: "Xavius"
-		["timeline"] = { ADDED_7_3_0 },
 		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
+		["timeline"] = { ADDED_7_3_0 },
 	}),
 	i(37583, {	-- G.N.E.R.D.S.
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -131,40 +126,40 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(163045, {	-- Headless Horseman's Hearthstone (TOY!)
-		["timeline"] = { ADDED_8_0_1 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_8_0_1 },
 	}),
 	i(151271, {	-- Horse Head Costume (TOY!)
-		["timeline"] = { ADDED_7_3_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_7_3_0 },
 	}),
 	i(151270, {	-- Horse Tail Costume (TOY!)
-		["timeline"] = { ADDED_7_3_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_7_3_0 },
 	}),
 	i(70722, {	-- Little Wickerman (TOY!)
-		["timeline"] = { ADDED_4_2_0 },
 		-- #if BEFORE 11.0.5
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 		-- #else
 		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
 		-- #endif
+		["timeline"] = { ADDED_4_2_0 },
 	}),
 	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 		["collectible"] = false,
 	}),
 	i(226427, {	-- Patched Harvester's Claw
-		["timeline"] = { ADDED_11_0_5 },
 		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["timeline"] = { ADDED_11_0_5 },
 	}),
 	i(226453, {	-- Patched Harvest Golem's Post
-		["timeline"] = { ADDED_11_0_5 },
 		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["timeline"] = { ADDED_11_0_5 },
 	}),
 	i(230042, {	-- Prowler's Faded Shoulder Cape
-		["timeline"] = { ADDED_11_0_5 },
 		["cost"] = { { "i", 33226, 50 }, },	-- 50x Tricky Treat
+		["timeline"] = { ADDED_11_0_5 },
 	}),
 	i(37582, {	-- Pyroblast Cinnamon Ball
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat

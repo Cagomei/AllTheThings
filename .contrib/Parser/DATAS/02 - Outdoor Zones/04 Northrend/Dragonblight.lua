@@ -305,6 +305,16 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66638, {	-- Okrut Dragonwaste <Master Pet Tamer>
 						["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
+						["description"] = "Okrut's pets are level 25 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anubisath Idol (Crush/Deflection) and Alpine Hare (Flurry/Dodge/Burrow).",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31933, {	-- Okrut Dragonwaste
+								["sourceAchievement"] = 6605,	-- Taming Northrend
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
 					}),
 				}),
 				header(HEADERS.Spell, 921, {	-- Pickpocketing

@@ -125,6 +125,19 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66557, {	-- Bloodknight Antari <Grand Master Pet Tamer>
 						["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
+						["description"] = "Antari's pets are level 24 of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Crystal Spider (Strike/Brittle Webbing/Leech Life) and Sporeling Sprout (Jab/Leech Seed/Crouch).",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 24,
+						["groups"] = {
+							q(31926, {	-- Grand Master Antari
+								["sourceAchievement"] = 6604,	-- Taming Outland
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(89125),	-- Sack of Pet Supplies
+								},
+							}),
+						},
 					}),
 				}),
 				n(PROFESSIONS, {

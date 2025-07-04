@@ -150,8 +150,6 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 		})),
 		-- TWW Version
 		n(205722, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0, } }, {	-- Demon Portal
-			-- Double CheckID
-			-- July 1st to August 1st 2025
 			--["coords"] = {
 			--	{ 68.3, 40.8, ORGRIMMAR },
 			--	{ 50.6, 85.6, STORMWIND_CITY },

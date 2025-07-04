@@ -296,7 +296,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				header(HEADERS.Object, 142487, {	-- The Sparklematic 5200
 					n(REWARDS, {
-						i(9363, {	-- Sparklematic-Wrapped Box
+						container(9363, {	-- Sparklematic-Wrapped Box
 							["description"] = "Kill hostile creatures for [Grime-Encrusted Object], clean them at the Sparklematic 5200 to receive this box.",
 							["groups"] = {
 								i(122207, {	-- Music Roll: Tinkertown
@@ -338,7 +338,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["sourceQuest"] = 2951,	-- The Sparklematic 5200!
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["groups"] = {
-							i(9363, {["sym"] = {{"fill"}}}),	-- Sparklematic-Wrapped Box
+							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 					q(4605, {	-- The Sparklematic 5200!
@@ -352,7 +352,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["sourceQuest"] = 4601,	-- The Sparklematic 5200!
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["groups"] = {
-							i(9363, {["sym"] = {{"fill"}}}),	-- Sparklematic-Wrapped Box
+							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 					q(4606, {	-- The Sparklematic 5200!
@@ -366,7 +366,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["sourceQuest"] = 4602,	-- The Sparklematic 5200!
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["groups"] = {
-							i(9363, {["sym"] = {{"fill"}}}),	-- Sparklematic-Wrapped Box
+							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 					q(2953, {	-- More Sparklematic Action
@@ -375,7 +375,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["repeatable"] = true,
 						["groups"] = {
-							i(9363, {["sym"] = {{"fill"}}}),	-- Sparklematic-Wrapped Box
+							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 					q(4603, {	-- More Sparklematic Action
@@ -390,7 +390,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["repeatable"] = true,
 						["groups"] = {
-							i(9363, {["sym"] = {{"fill"}}}),	-- Sparklematic-Wrapped Box
+							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 					q(4604, {	-- More Sparklematic Action
@@ -405,7 +405,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["repeatable"] = true,
 						["groups"] = {
-							i(9363, {["sym"] = {{"fill"}}}),	-- Sparklematic-Wrapped Box
+							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 				}),

@@ -82,135 +82,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(PROFESSIONS, {
-				prof(ALCHEMY, {
-					n(3010, {	-- Mani Winterhoof <Alchemy Supplies>
-						["coord"] = { 47.4, 33.73, THUNDER_BLUFF },
-						["races"] = HORDE_ONLY,
-						["groups"] = VANILLA_ALCHEMY_VIALS,
-					}),
-					n(3014, {	-- Nida Winterhoof <Herbalism Supplies>
-						["coord"] = { 49.6, 39.6, THUNDER_BLUFF },
-						["races"] = HORDE_ONLY,
-						["sym"] = {{ "sub", "common_vendor", 3010 }},	-- Mani Winterhoof <Alchemy Supplies>
-					}),
-				}),
-				prof(BLACKSMITHING, {
-					n(2999, {	-- Taur Stonehoof <Blacksmithing Supplies>
-						["coord"] = { 39.8, 55.6, THUNDER_BLUFF },
-						["races"] = HORDE_ONLY,
-						["sym"] = {
-							-- #if AFTER CATA
-							{"sub", "common_recipes_vendor", 46359},	-- Punra <Blacksmithing Supplies>
-							-- #endif
-							{ "select","itemID",
-								2880,	-- Weak Flux
-								3466,	-- Strong Flux
-								18567,	-- Elemental Flux
-								3857,	-- Coal
-								5956,	-- Blacksmith Hammer
-							},
-						},
-					}),
-				}),
-				prof(COOKING, {
-					n(8362, {	-- Kuruk <General Goods>
-						["coord"] = { 39.0, 64.4, THUNDER_BLUFF },	-- Wayfarer's Rest
-						["races"] = HORDE_ONLY,
-						["group"] = {
-							i(1179),	-- Ice Cold Milk
-						},
-					}),
-					n(3027, {	-- Naal Mistrunner <Cooking Supplies>
-						["coord"] = { 51.0, 52.5, THUNDER_BLUFF },
-						["races"] = HORDE_ONLY,
-						["sym"] = {
-							-- #if AFTER CATA
-							{"sub", "common_recipes_vendor", 49737},	-- Shazdar <Sous Chef>
-							-- #endif
-							{ "select","itemID",
-								159,	-- Refreshing Spring Water
-								-- #if AFTER TBC
-								30817,	-- Simple Flour
-								-- #endif
-								2678,	-- Mild Spices
-								-- #if BEFORE WRATH
-								2692,	-- Hot Spices
-								3713,	-- Soothing Spices
-								-- #endif
-							},
-						},
-						["groups"] = {
-							i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-							i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
-							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						},
-					}),
-					n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
-						["coord"] = { 55.8, 47.0, THUNDER_BLUFF },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
-							i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-						},
-					}),
-				}),
-				prof(ENCHANTING, {
-					n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
-						["coord"] = { 44.9, 37.7, THUNDER_BLUFF },
-						["races"] = HORDE_ONLY,
-						["sym"] = {
-							-- #if AFTER CATA
-							{"sub", "common_recipes_vendor", 3346},	-- Kithas <Enchanting Supplies>
-							-- #endif
-							{ "select","itemID",
-								6217,	-- Copper Rod
-								4470,	-- Simple Wood
-								11291,	-- Star Wood
-								10938,	-- Lesser Magic Essence
-								10940,	-- Strange Dust
-								20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-								20752,	-- Formula: Minor Mana Oil (RECIPE!)
-								20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-								-- #if BEFORE CATA
-								6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-								-- #else
-								38682,	-- Enchanting Vellum
-								-- #endif
-							},
-						},
-						["groups"] = {
-							i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(6377, {	-- Formula: Enchant Boots - Minor Agility (RECIPE!)
-								["isLimited"] = true,
-							}),
-						},
-					}),
-				}),
-				prof(ENGINEERING, {
-					n(52655, {	-- Palehoof's Big Bag of Parts <Engineering Supplies>
-						["coord"] = { 36.22, 60.21, THUNDER_BLUFF },
-						["timeline"] = { ADDED_4_1_0 },
-						["races"] = HORDE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-								5956,	-- Blacksmith Hammer
-								4400,	-- Heavy Stock
-								4399,	-- Wooden Stock
-							},
-						},
-						["groups"] = {
-							i(18647, {	-- Schematic: Red Firework (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-								["isLimited"] = true,
-							}),
-						},
-					}),
-				}),
 				prof(FISHING, {
 					i(67414, {	-- Bag of Shiny Things
 						["provider"] = { "n", 3028 },	-- Kah Mistrunner
@@ -238,93 +109,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["timeline"] = { ADDED_6_1_0 },
 						["races"] = HORDE_ONLY,
 					}),
-					n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
-						["coord"] = { 55.8, 47.0, THUNDER_BLUFF },
-						["races"] = HORDE_ONLY,
-						["sym"] = {{ "sub", "common_vendor", 3333 }},	-- Shankys <Fishing Supplies>
-						["groups"] = SHINY_BAUBLE,
-					}),
 				}),
 				-- #if AFTER WRATH
 				prof(INSCRIPTION, {
-					n(30724, {	-- Mertle Murkpen <Inscription Supplies>
-						["coord"] = { 28.63, 20.26, THUNDER_BLUFF },
-						["races"] = HORDE_ONLY,
-						["timeline"] = { ADDED_3_0_2 },
-						["sym"] = {{ "sub", "common_vendor", 30729 }},	-- Ickabod Pimlen <Inscription Supplies>
-					}),
 				}),
 				-- #endif
 				-- #if AFTER TBC
 				prof(JEWELCRAFTING, {
-					n(52658, {	-- Paku Cloudchaser <Jewelcrafting Supplies>
-						["coord"] = { 34.75, 53.45, THUNDER_BLUFF },
-						["timeline"] = { ADDED_4_1_0 },
-						["races"] = HORDE_ONLY,
-						["sym"] = {
-							{ "sub", "common_recipes_vendor", 50482 },	-- Marith Lazuria <Jewelcrafting Supplies>
-							{ "select","itemID",
-							52188,	-- Jeweler's Setting
-							20815,	-- Jeweler's Toolset/-Kit
-							-- #if BEFORE MOP
-							20824,	-- Simple Grinder
-							-- #endif
-							},
-						},
-					}),
-					n(8363, {	-- Shadi Mistrunner <Trade Supplies>
-						["coord"] = { 40.6, 64.0, THUNDER_BLUFF },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(21948, {	-- Design: Opal Necklace of Impact
-								["isLimited"] = true,
-								["timeline"] = { ADDED_2_0_1 },
-							}),
-						},
-					}),
 				}),
 				-- #endif
 				prof(LEATHERWORKING, {
-					n(3008, {	-- Mak <Leatherworking Supplies> [CATA+] / <Journeyman Leatherworker>
-						["coord"] = { 42.08, 43.46, THUNDER_BLUFF },
-						["races"] = HORDE_ONLY,
-						-- #if AFTER CATA
-						["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
-						-- #endif
-					}),
 				}),
 				prof(MINING, {
-					n(3002, {	-- Kurm Stonehoof <Mining Supplies>
-						["coord"] = { 34.35, 56.58, THUNDER_BLUFF },
-						["races"] = HORDE_ONLY,
-						["sym"] = {{ "sub", "common_vendor", 4599 }},	-- Sarah Killan <Mining Supplies>
-					}),
 				}),
 				prof(TAILORING, {
-					n(3005, {	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
-						["coord"] = { 43.8, 45.1, THUNDER_BLUFF },
-						["sym"] = {
-							{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
-							-- #if BEFORE CATA
-							{ "select","itemID", 4289},	-- Salt
-							-- #endif
-						},
-						["races"] = HORDE_ONLY,
-						["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
-							i(10311, {	-- Pattern: Orange Martial Shirt (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(5771, {	-- Pattern: Red Linen Bag (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
-								["isLimited"] = true,
-							}),
-						}),
-					}),
 					n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
 						["coord"] = { 44.9, 37.7, THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
@@ -1430,15 +1228,127 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				n(3002, {	-- Kurm Stonehoof <Mining Supplies>
+					["coord"] = { 34.35, 56.58, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4599 }},	-- Sarah Killan <Mining Supplies>
+				}),
 				n(8362, {	-- Kuruk <General Goods>
-					["coord"] = { 38.9, 64.7, THUNDER_BLUFF },
+					["coord"] = { 39.0, 64.4, THUNDER_BLUFF },	-- Wayfarer's Rest
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4498),	-- Brown Leather Satchel
 						i(4497),	-- Heavy Brown Bag
 						i(4499),	-- Huge Brown Sack
+						i(1179),	-- Ice Cold Milk
 						i(4496),	-- Small Brown Pouch
 					},
+				}),
+				n(3005, {	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
+					["coord"] = { 43.8, 45.1, THUNDER_BLUFF },
+					["sym"] = {
+						-- #if AFTER CATA
+						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
+						-- #else
+						{"sub", "common_vendor", 5565}	-- Jillian Tanner <Leatherworking Supplies>
+						-- #endif
+					},
+					["races"] = HORDE_ONLY,
+					["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
+						i(10311, {	-- Pattern: Orange Martial Shirt (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(5771, {	-- Pattern: Red Linen Bag (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
+							["isLimited"] = true,
+						}),
+					}),
+				}),
+				-- #if AFTER CATA
+				n(3008, {	-- Mak <Leatherworking Supplies> [CATA+] / <Journeyman Leatherworker>
+					["coord"] = { 42.08, 43.46, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
+				}),
+				-- #endif
+				n(3010, {	-- Mani Winterhoof <Alchemy Supplies>
+					["coord"] = { 47.4, 33.73, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["groups"] = VANILLA_ALCHEMY_VIALS,
+				}),
+				n(30724, {	-- Mertle Murkpen <Inscription Supplies>
+					["coord"] = { 28.63, 20.26, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_3_0_2 },
+					["sym"] = {{ "sub", "common_vendor", 30729 }},	-- Ickabod Pimlen <Inscription Supplies>
+				}),
+				n(3027, {	-- Naal Mistrunner <Cooking Supplies>
+					["coord"] = { 51.0, 52.5, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						-- #if AFTER CATA
+						{"sub", "common_recipes_vendor", 49737},	-- Shazdar <Sous Chef>
+						-- #endif
+						{ "select","itemID",
+							159,	-- Refreshing Spring Water
+							-- #if AFTER TBC
+							30817,	-- Simple Flour
+							-- #endif
+							2678,	-- Mild Spices
+							-- #if BEFORE WRATH
+							2692,	-- Hot Spices
+							3713,	-- Soothing Spices
+							-- #endif
+						},
+					},
+					["groups"] = {
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
+				}),
+				n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
+					["coord"] = { 44.9, 37.7, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						-- #if AFTER CATA
+						{"sub", "common_recipes_vendor", 3346},	-- Kithas <Enchanting Supplies>
+						-- #endif
+						{ "select","itemID",
+							6217,	-- Copper Rod
+							4470,	-- Simple Wood
+							11291,	-- Star Wood
+							10938,	-- Lesser Magic Essence
+							10940,	-- Strange Dust
+							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+							20752,	-- Formula: Minor Mana Oil (RECIPE!)
+							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+							-- #if BEFORE CATA
+							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+							-- #else
+							38682,	-- Enchanting Vellum
+							-- #endif
+						},
+					},
+					["groups"] = {
+						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(6377, {	-- Formula: Enchant Boots - Minor Agility (RECIPE!)
+							["isLimited"] = true,
+						}),
+					},
+				}),
+				n(3014, {	-- Nida Winterhoof <Herbalism Supplies>
+					["coord"] = { 49.6, 39.6, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 3010 }},	-- Mani Winterhoof <Alchemy Supplies>
 				}),
 				n(8398, {	-- Ohanko <Two Handed Weapon Merchant>
 					["coord"] = { 53.6, 56.8, THUNDER_BLUFF },
@@ -1459,6 +1369,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						52532,	-- Worn Wood Chopper
 						2529,	-- Zweihander
 					}},
+				}),
+				n(52658, {	-- Paku Cloudchaser <Jewelcrafting Supplies>
+					["coord"] = { 34.75, 53.45, THUNDER_BLUFF },
+					["timeline"] = { ADDED_4_1_0 },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{ "sub", "common_recipes_vendor", 50482 },	-- Marith Lazuria <Jewelcrafting Supplies>
+						{ "select","itemID",
+						52188,	-- Jeweler's Setting
+						20815,	-- Jeweler's Toolset/-Kit
+						-- #if BEFORE MOP
+						20824,	-- Simple Grinder
+						-- #endif
+						},
+					},
 				}),
 				n(8364, {	-- Pakwa <Bag Vendor>
 					["coord"] = { 39.31, 64.28, THUNDER_BLUFF },
@@ -1481,6 +1406,45 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if AFTER CATA
 						--i(60335),	-- Thick Hide Pack	// blacklisted as its a common vendor good since cata
 						-- #endif
+					},
+				}),
+				n(52655, {	-- Palehoof's Big Bag of Parts <Engineering Supplies>
+					["coord"] = { 36.22, 60.21, THUNDER_BLUFF },
+					["timeline"] = { ADDED_4_1_0 },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+							5956,	-- Blacksmith Hammer
+							4400,	-- Heavy Stock
+							4399,	-- Wooden Stock
+						},
+					},
+					["groups"] = {
+						i(18647, {	-- Schematic: Red Firework (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
+							["isLimited"] = true,
+						}),
+					},
+				}),
+				n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
+					["coord"] = { 55.8, 47.0, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 3333 }},	-- Shankys <Fishing Supplies>
+					["groups"] = appendGroups(SHINY_BAUBLE, {
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+					}),
+				}),
+				n(8363, {	-- Shadi Mistrunner <Trade Supplies>
+					["coord"] = { 40.6, 64.0, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(21948, {	-- Design: Opal Necklace of Impact
+							["isLimited"] = true,
+							["timeline"] = { ADDED_2_0_1 },
+						}),
 					},
 				}),
 				n(3022, {	-- Sunn Ragetotem <Staff Merchant>
@@ -1560,6 +1524,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(4498),	-- Brown Leather Satchel
 						i(4497),	-- Heavy Brown Bag
 						i(4496),	-- Small Brown Pouch
+					},
+				}),
+				n(2999, {	-- Taur Stonehoof <Blacksmithing Supplies>
+					["coord"] = { 39.8, 55.6, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						-- #if AFTER CATA
+						{"sub", "common_recipes_vendor", 46359},	-- Punra <Blacksmithing Supplies>
+						-- #endif
+						{ "select","itemID",
+							2880,	-- Weak Flux
+							3466,	-- Strong Flux
+							18567,	-- Elemental Flux
+							3857,	-- Coal
+							5956,	-- Blacksmith Hammer
+						},
 					},
 				}),
 				n(5189, {	-- Thrumn <Tabard Vendor>

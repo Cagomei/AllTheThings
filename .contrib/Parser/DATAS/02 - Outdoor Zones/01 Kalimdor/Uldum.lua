@@ -204,6 +204,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66824, {	-- Obalis <Grand Master Pet Tamer>
 					["coord"] = { 56.6, 41.8, ULDUM },
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 25,
+					["groups"] = {
+						q(31971, {	-- Grand Master Obalis
+							["sourceAchievement"] = 7525,	-- Taming Cataclysm
+							["timeline"] = { ADDED_5_0_4 },
+							["isDaily"] = true,
+							["groups"] = {
+								i(89125),	-- Sack of Pet Supplies
+							},
+						}),
+					},
 				}),
 			}),
 			n(QUESTS, {

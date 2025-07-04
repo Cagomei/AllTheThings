@@ -652,7 +652,6 @@ _.HeaderConstants = {
 	DAY_OF_THE_DEAD_HEADER = -1000207,
 	DISCOVERY = -1000016,
 	DROPS = -1000017,
-	EXPANSION_PRELAUNCH = -1001098,
 	EXPLORATION = -1000019,
 	FACTIONS = -1000020,
 	FEAST_OF_WINTER_VEIL_HEADER = -1000215,
@@ -670,7 +669,7 @@ _.HeaderConstants = {
 	LUNAR_FESTIVAL_HEADER = -1000221,
 	MIDSUMMER_FIRE_FESTIVAL_HEADER = -1000223,
 	NOBLEGARDEN_HEADER = -1000224,
-	PET_BATTLE = -1000029,
+	PET_BATTLES = -1000029,
 	PILGRIMS_BOUNTY_HEADER = -1000225,
 	PIRATES_DAY_HEADER = -1000226,
 	PROFESSIONS = -1000030,
@@ -897,7 +896,6 @@ localize(L.HEADER_NAMES, {
 	[-1001075] = "Obsidian Fragment Exchange",
 	[-1001078] = "MoP Classic Sha-Infused Heroic Pack",
 	[-1001097] = C_Map.GetAreaInfo(6081),
-	[-1001098] = "Expansion Pre-Launch",
 	[-1001160] = select(2,GetAchievementInfo(8214))..": Season 12",
 	[-1001161] = select(2,GetAchievementInfo(8791))..": Season 13",
 	[-1001162] = "Honor Gear Tyrannical Season",
@@ -913,9 +911,11 @@ localize(L.HEADER_NAMES, {
 	[-1001198] = "Archaeology: Mantid",
 	[-1001199] = "Archaeology: Mogu",
 	[-1001201] = "Archaeology: Pandaren",
+	[-1001209] = select(2,GetAchievementInfo(7467)),
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
+	[-1000029] = "This section contains Pet Battle related quests and tamers.",
 	[-1000030] = "This section will only show your current character's professions outside of Account and Debug Mode.",
 	[-1000033] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",
 	[-1000097] = "This section will show you things that you could buy in the In-Game Shop in Retail.",
@@ -966,6 +966,7 @@ localize(L.HEADER_LORE, {
 	[-1000197] = "The Timbermaw Furbolgs inhabit two areas: Azshara and Felwood. They are presumed to be the only furbolg tribe to escape demonic corruption, though this may not be true due to the existence of Krolg, an uncorrupted furbolg of unknown tribe, and the Stillpine tribe on Azuremyst Isle in Burning Crusade. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.\n\nAdventurers who seek out Timbermaw Hold in northern Felwood and prove themselves as friends of the Timbermaw will learn that the furbolgs value their friends above all else. Though they possess no fine jewels or any worldly riches, the Timbermaw's shamanistic tradition is still strong. They know much about the art of crafting armors from animal hides, and they are more than happy to share their healing/resurrection knowledge with friends of their tribe. Besides, any reputation above Unfriendly will also grant you untroubled access to Moonglade and Winterspring through their tunnels.",
 	[-1000308] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
 	[-1000870] = "Empowered by the Zandalari's offer the Gurubashi launched on all-out attack to claim Stranglethorn Vale for themselves. In Northern Stranglethorn Bambala, Fort Livingston, Nesingwary's Expedition, Grom'gol Base Camp, and the Rebel Camp came under attack by serpents sent by High Priest Venoxis. High Priestess Kilnara sent panthers to attack the Rebel Camp and Grom'gol while the panther Mauti attacked the hunters at Nesingwary's Expedition. Both Grom'gol and the Rebel Camp later came under attack by Gurubashi trolls led by Bloodlord Mandokir. After heroes of the Horde and Alliance beat back the Gurubashi attack, they were sent to the Cape of Stranglethorn which faced its own troubles.",
+	[-1001209] = "The Attack on Theramore Isle was a battle that took place not long before the events of World of Warcraft: Mists of Pandaria. The battle took place between the Alliance defenders of the Isle and the Horde assailants, led by the instigator of the attack, Garrosh Hellscream. The battle took place for over a day, ultimately culminating in the bombing and subsequent annihilation of Theramore Isle and the majority of its defenders. The events are described in detail in the novel Jaina Proudmoore: Tides of War and can be experienced in-game in the scenario Theramore's Fall.",
 });
 localize(L.HEADER_ICONS, {
 	[-1000004] = _.asset("category_achievements"),
@@ -1166,7 +1167,6 @@ localize(L.HEADER_ICONS, {
 	[-1001075] = 135241,
 	[-1001078] = _.asset("expansion_mop"),
 	[-1001097] = 606547,
-	[-1001098] = 134289,
 	[-1001160] = 838515,
 	[-1001161] = 838515,
 	[-1001162] = 838515,
@@ -1182,6 +1182,7 @@ localize(L.HEADER_ICONS, {
 	[-1001198] = 441139,
 	[-1001199] = 441139,
 	[-1001201] = 441139,
+	[-1001209] = 135764,
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 13,
@@ -8574,6 +8575,14 @@ local phases = {
 		buildVersion = 50501,
 		state = 2,
 	},
+	[53] = {
+		name = "Escalation",
+		description = "|cFFAAFFAAThis was not available until Escalation of Mists of Pandaria Classic.|r",
+		lore = "|cFFFFAAAAIncluded Heroic Scenarios, Battlefield: Barrens Scenario, Deepwind Gorge, and the Tiger's Peak arena.|r",
+		minimumBuildVersion = 50500,
+		buildVersion = 50502,
+		state = 2,
+	},
 	[54] = {
 		name = "Siege of Orgrimmar",
 		description = "|cFFAAFFAAThis was not available until Siege of Orgrimmar of Mists of Pandaria Classic.|r",
@@ -11087,6 +11096,7 @@ for key,value in pairs({
 	[50] = "|cFFAAFFAADies war erst Phase 1 von Mists of Pandaria Classic verfügbar.|r",
 	[51] = "|cFFAAFFAADies war erst Landfall von Mists of Pandaria Classic verfügbar.|r",
 	[52] = "|cFFAAFFAADies war erst Rise of the Thunder King von Mists of Pandaria Classic verfügbar.|r",
+	[53] = "|cFFAAFFAADies war erst Escalation von Mists of Pandaria Classic verfügbar.|r",
 	[54] = "|cFFAAFFAADies war erst Siege of Orgrimmar von Mists of Pandaria Classic verfügbar.|r",
 })
 do phases[key].description = value; end
@@ -11168,7 +11178,6 @@ localize(L.HEADER_NAMES, {
 	[-1001053] = "Protocole de défense Gamma",
 	[-1001054] = "Protocole Inferno",
 	[-1001074] = "Protocole Crépuscule",
-	[-1001098] = "Pré-Lancement de l’Extension",
 	[-1001160] = select(2,GetAchievementInfo(8214))..": Saison 12",
 	[-1001161] = select(2,GetAchievementInfo(8791))..": Saison 13",
 	[-1001162] = "Équipement Honneur Saison Tyrannique",
@@ -13629,6 +13638,7 @@ for key,value in pairs({
 	[50] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du Mists of Pandaria Classic.|r",
 	[51] = "|cFFAAFFAACeci n'était pas disponible avant le Landfall du Mists of Pandaria Classic.|r",
 	[52] = "|cFFAAFFAACeci n'était pas disponible avant le Rise of the Thunder King du Mists of Pandaria Classic.|r",
+	[53] = "|cFFAAFFAACeci n'était pas disponible avant le Escalation du Mists of Pandaria Classic.|r",
 	[54] = "|cFFAAFFAACeci n'était pas disponible avant le Siege of Orgrimmar du Mists of Pandaria Classic.|r",
 })
 do phases[key].description = value; end
@@ -15689,6 +15699,7 @@ for key,value in pairs({
 	[50] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di Mists of Pandaria Classic.|r",
 	[51] = "|cFFAAFFAAQuesto non era disponibile fino al Landfall di Mists of Pandaria Classic.|r",
 	[52] = "|cFFAAFFAAQuesto non era disponibile fino al Rise of the Thunder King di Mists of Pandaria Classic.|r",
+	[53] = "|cFFAAFFAAQuesto non era disponibile fino al Escalation di Mists of Pandaria Classic.|r",
 	[54] = "|cFFAAFFAAQuesto non era disponibile fino al Siege of Orgrimmar di Mists of Pandaria Classic.|r",
 })
 do phases[key].description = value; end
@@ -18085,6 +18096,7 @@ for key,value in pairs({
 	[50] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de Mists of Pandaria Classic.|r",
 	[51] = "|cFFAAFFAAIsto não estava disponível até Landfall de Mists of Pandaria Classic.|r",
 	[52] = "|cFFAAFFAAIsto não estava disponível até Rise of the Thunder King de Mists of Pandaria Classic.|r",
+	[53] = "|cFFAAFFAAIsto não estava disponível até Escalation de Mists of Pandaria Classic.|r",
 	[54] = "|cFFAAFFAAIsto não estava disponível até Siege of Orgrimmar de Mists of Pandaria Classic.|r",
 })
 do phases[key].description = value; end
@@ -18179,7 +18191,6 @@ localize(L.HEADER_NAMES, {
 	[-1001053] = "Защитный протокол \"Гамма\"",
 	[-1001054] = "Протокол \"Пекло\"",
 	[-1001074] = "Протокол \"Сумерки\"",
-	[-1001098] = "Препатч",
 	[-1001160] = select(2,GetAchievementInfo(8214))..": Сезон 12",
 	[-1001161] = select(2,GetAchievementInfo(8791))..": Сезон 13",
 	[-1001162] = "Доспехи Деспотичного гладиатора за очки чести",
@@ -20667,6 +20678,7 @@ for key,value in pairs({
 	[50] = "|cFFAAFFAAЭто было недоступно до Phase 1 из Mists of Pandaria Classic.|r",
 	[51] = "|cFFAAFFAAЭто было недоступно до Landfall из Mists of Pandaria Classic.|r",
 	[52] = "|cFFAAFFAAЭто было недоступно до Rise of the Thunder King из Mists of Pandaria Classic.|r",
+	[53] = "|cFFAAFFAAЭто было недоступно до Escalation из Mists of Pandaria Classic.|r",
 	[54] = "|cFFAAFFAAЭто было недоступно до Siege of Orgrimmar из Mists of Pandaria Classic.|r",
 })
 do phases[key].description = value; end
@@ -23309,6 +23321,7 @@ for key,value in pairs({
 	[50] = "|cFFAAFFAAPhase 1(Mists of Pandaria Classic)까지 사용할 수 없습니다.|r",
 	[51] = "|cFFAAFFAALandfall(Mists of Pandaria Classic)까지 사용할 수 없습니다.|r",
 	[52] = "|cFFAAFFAARise of the Thunder King(Mists of Pandaria Classic)까지 사용할 수 없습니다.|r",
+	[53] = "|cFFAAFFAAEscalation(Mists of Pandaria Classic)까지 사용할 수 없습니다.|r",
 	[54] = "|cFFAAFFAASiege of Orgrimmar(Mists of Pandaria Classic)까지 사용할 수 없습니다.|r",
 })
 do phases[key].description = value; end
@@ -23412,7 +23425,6 @@ localize(L.HEADER_NAMES, {
 	[-1001054] = "Protocolo Inferno",
 	[-1001074] = "Protocolo Crepúsculo",
 	[-1001078] = "Pack Heroic imbuido de sha",
-	[-1001098] = "Evento de pre-parche",
 	[-1001160] = select(2,GetAchievementInfo(8214))..": Temporada 12",
 	[-1001161] = select(2,GetAchievementInfo(8791))..": Temporada 13",
 	[-1001162] = "Equipo de honor de la temporada tiránica",
@@ -25896,6 +25908,7 @@ for key,value in pairs({
 	[50] = "Fase 1",
 	[51] = "Desembarco",
 	[52] = "El Rey del Trueno",
+	[53] = "Intensificación del Conflicto",
 	[54] = "Asedio de Orgrimmar",
 })
 do phases[key].name = value; end
@@ -25950,6 +25963,7 @@ for key,value in pairs({
 	[50] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 1 de Mists of Pandaria Classic.|r",
 	[51] = "|cFFAAFFAAEsto no estuvo disponible hasta Desembarco de Mists of Pandaria Classic.|r",
 	[52] = "|cFFAAFFAAEsto no estuvo disponible hasta El Rey del Trueno de Mists of Pandaria Classic.|r",
+	[53] = "|cFFAAFFAAEsto no estuvo disponible hasta Intensificación del Conflicto de Mists of Pandaria Classic.|r",
 	[54] = "|cFFAAFFAAEsto no estuvo disponible hasta Asedio de Orgrimmar de Mists of Pandaria Classic.|r",
 })
 do phases[key].description = value; end
@@ -25999,6 +26013,7 @@ for key,value in pairs({
 	[50] = "|cFFFFAAAAIncluido la gesta de la Caída de Theramore de nivel 85 y el sistema de talentos actualizado.|r",
 	[51] = "|cFFFFAAAAIncluye las Bóvedas Mogu'shan, El Corazón del Miedo y la Veranda de la primavera eterna.|r",
 	[52] = "|cFFFFAAAAIncluía el Trono del Trueno, la Isla de los Gigantes y la Isla del Trueno.|r",
+	[53] = "|cFFFFAAAAIncluia gestas heroicas, Campo de batalla: Gesta Los Baldíos, Cañón del Céfiro y la arena La cima del Tigre.|r",
 	[54] = "|cFFFFAAAAIncluía Asedio de Orgrimmar y la Isla intemporal.|r",
 })
 do phases[key].lore = value; end
@@ -26013,7 +26028,6 @@ localize(L.HEADER_NAMES, {
 	[-1000248] = "Paquete heroico Rasganorte WotLK Classic",
 	[-1000249] = "Paquete heroico abrasador de Cataclysm Classic",
 	[-1001078] = "Paquete heroico infundido por los sha",
-	[-1001098] = "Evento de pre-expansion",
 	[-1001180] = "Festival del errante",
 	[-1001186] = "Vendedor de modo heroico",
 });
@@ -26146,7 +26160,6 @@ localize(L.HEADER_NAMES, {
 	[-1001053] = "防御协议伽马",
 	[-1001054] = "地狱火协议",
 	[-1001074] = "暮光协议",
-	[-1001098] = "资料片前夕",
 	[-1001160] = select(2,GetAchievementInfo(8214)).."：第12赛季",
 	[-1001161] = select(2,GetAchievementInfo(8791)).."：第13赛季",
 	[-1001162] = "荣誉装备暴虐赛季",
@@ -28305,6 +28318,7 @@ for key,value in pairs({
 	[50] = "|cFFAAFFAA该功能直到 Phase 1 的 Mists of Pandaria Classic 才可用。|r",
 	[51] = "|cFFAAFFAA该功能直到 Landfall 的 Mists of Pandaria Classic 才可用。|r",
 	[52] = "|cFFAAFFAA该功能直到 Rise of the Thunder King 的 Mists of Pandaria Classic 才可用。|r",
+	[53] = "|cFFAAFFAA该功能直到 Escalation 的 Mists of Pandaria Classic 才可用。|r",
 	[54] = "|cFFAAFFAA该功能直到 Siege of Orgrimmar 的 Mists of Pandaria Classic 才可用。|r",
 })
 do phases[key].description = value; end
@@ -28411,7 +28425,6 @@ localize(L.HEADER_NAMES, {
 	[-1001054] = "煉獄防禦系統",
 	[-1001074] = "暮光防禦系統",
 	[-1001078] = "潘達利亞之謎：經典版 - 煞之灌注英雄版組合包",
-	[-1001098] = "資料片前夕",
 	[-1001160] = select(2,GetAchievementInfo(8214)).."：第12賽季",
 	[-1001161] = select(2,GetAchievementInfo(8791)).."：第13賽季",
 	[-1001162] = "榮譽裝備暴虐賽季",
@@ -28563,6 +28576,7 @@ for key,value in pairs({
 	[50] = "|cFFAAFFAA該功能直到 第1階段 的 Mists of Pandaria Classic 才可用。|r",
 	[51] = "|cFFAAFFAA該功能直到 Landfall 的 Mists of Pandaria Classic 才可用。|r",
 	[52] = "|cFFAAFFAA該功能直到 Rise of the Thunder King 的 Mists of Pandaria Classic 才可用。|r",
+	[53] = "|cFFAAFFAA該功能直到 Escalation 的 Mists of Pandaria Classic 才可用。|r",
 	[54] = "|cFFAAFFAA該功能直到 Siege of Orgrimmar 的 Mists of Pandaria Classic 才可用。|r",
 })
 do phases[key].description = value; end

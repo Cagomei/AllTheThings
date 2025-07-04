@@ -182,8 +182,46 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			petbattles({
+				n(115286, {	-- Crysa <Flying Pet Tamer>
+					["coord"] = { 63.6, 35.8, NORTHERN_BARRENS },
+					--["description"] = "",	-- @DannyDonkey, do your thing here
+					["timeline"] = { ADDED_7_1_0 },
+					["petBattleLvl"] = 25,
+					["groups"] = {
+						q(45083, {	-- Crysa's Flyers
+							-- CRIEVE NOTE: Not sure if there's a source achievement or quest required to do first.
+							["timeline"] = { ADDED_7_1_0 },
+							["isDaily"] = true,
+							["groups"] = {
+								i(142447, {	-- Torn Sack of Pet Supplies
+									["timeline"] = { ADDED_7_1_0 },
+									["groups"] = {
+										i(142448, {	-- Albino Buzzard (PET!)
+											["timeline"] = { ADDED_7_1_0 },
+										}),
+										i(89587, {	-- Porcupette (PET!)
+											["timeline"] = { ADDED_7_1_0 },
+										}),
+									},
+								}),
+							},
+						}),
+					},
+				}),
 				n(66135, {	-- Dagra the Fierce <Master Pet Tamer>
 					["coord"] = { 58.6, 53.0, NORTHERN_BARRENS },
+					["description"] = "This pet tamer is Horde only.\n\nDagra's pets are level 3 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - see above.",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+					["petBattleLvl"] = 3,
+					["groups"] = {
+						q(31819, {	-- Dagra the Fierce
+							["sourceAchievement"] = 6602,	-- Taming Kalimdor
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			n(PROFESSIONS, {

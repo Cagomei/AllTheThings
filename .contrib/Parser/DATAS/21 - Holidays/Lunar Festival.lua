@@ -1477,37 +1477,32 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["groups"] = {
 				i(122338, {	-- Ancient Heirloom Armor Casing
-					["timeline"] = { ADDED_6_1_0 },
 					["cost"] = { { "i", 21100, 40 } },	-- 40x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-					["timeline"] = { ADDED_8_1_5 },
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_8_1_5 },
 				}),
 				i(187997, {	-- Eternal Heirloom Armor Casing
-					["timeline"] = { ADDED_9_1_5 },
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_9_1_5 },
 				}),
 				i(122340, {	-- Timeworn Heirloom Armor Casing
-					["timeline"] = { ADDED_6_1_0 },
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(151614, {	-- Weathered Heirloom Armor Casing
-					["timeline"] = { ADDED_7_2_5 },
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_7_2_5 },
 				}),
 				i(44916, {	-- Pattern: Festival Dress (RECIPE!)
-					["timeline"] = { ADDED_3_0_8 },
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["timeline"] = { ADDED_3_0_8 },
 				}),
 				i(44917, {	-- Pattern: Festival Suit (RECIPE!)
-					["timeline"] = { ADDED_3_0_8 },
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["timeline"] = { ADDED_3_0_8 },
 				}),
 				i(21740, {	-- Small Rocket Recipes
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry

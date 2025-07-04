@@ -371,9 +371,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
 							["groups"] = {
+								-- #if BEFORE MOP
 								objective(1, {	-- Practice Charge
 									["provider"] = { "n", 44548 },	-- Training Dummy
 								}),
+								-- #else
+								objective(2, {	-- 0/1 Practice Charge
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+								-- #endif
 							},
 						}),
 						q(3101, {	-- Consecrated Letter
@@ -404,7 +410,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 							["groups"] = {
-								objective(2, {	-- Practice Corruption
+								objective(2, {	-- 0/5 Practice Corruption
 									["provider"] = { "n", 44548 },	-- Training Dummy
 								}),
 							},
@@ -1047,7 +1053,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 							["groups"] = {
-								objective(1, {	-- Practice Shadow Word: Pain
+								objective(2, {	-- 0/5 Practice Shadow Word: Pain
 									["provider"] = { "n", 44548 },	-- Training Dummy
 								}),
 							},
@@ -1275,9 +1281,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
 							["groups"] = {
-								objective(1, {	-- Practice Casting Arcane Missiles [Cata] / Practice Frost Nova [MoP+]
+								-- #if BEFORE MOP
+								objective(1, {	-- Practice Casting Arcane Missiles [Cata]
 									["provider"] = { "n", 44548 },	-- Training Dummy
 								}),
+								-- #else
+								objective(2, {	-- 0/2 Practice Frost Nova [MoP+]
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+								-- #endif
 							},
 						}),
 						-- #if SEASON_OF_DISCOVERY
@@ -1568,9 +1580,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
 							["groups"] = {
-								objective(1, {	-- Practice Eviscerate
+								-- #if BEFORE MOP
+								objective(1, {	-- 0/3 Practice Eviscerate
 									["provider"] = { "n", 44548 },	-- Training Dummy
 								}),
+								-- #else
+								objective(2, {	-- 0/3 Practice Eviscerate
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+								-- #endif
 							},
 						}),
 						q(26917, {	-- The Hunter's Path
@@ -1587,7 +1605,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 							["groups"] = {
-								objective(1, {	-- Practice Steady Shot
+								objective(1, {	-- 0/5 Practice Steady Shot
 									["provider"] = { "n", 44548 },	-- Training Dummy
 								}),
 							},
@@ -1627,9 +1645,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PALADIN },
 							["races"] = { HUMAN },
 							["groups"] = {
-								objective(1, {	-- Practice using Judgement [Cata] / Practice Seal of Command [MoP+]
+								-- #if BEFORE MOP
+								objective(1, {	-- Practice using Judgement [Cata]
 									["provider"] = { "n", 44548 },	-- Training Dummy
 								}),
+								-- #else
+								objective(2, {	-- 0/1 Use Seal of Command and Hit a Training Dummy [MoP+]
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+								-- #endif
 							},
 						}),
 						q(28819, {	-- The Rear is Clear
@@ -2181,8 +2205,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			petbattles({
-				n(64330, {	--  Julia Stevens <Aspiring Pet Tamer>
+				n(64330, {	-- Julia Stevens <Aspiring Pet Tamer>
 					["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
+					["description"] = "This pet tamer is Alliance only.\n\nJulia's pets are level 2 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["petBattleLvl"] = 2,
+					["groups"] = {
+						q(31693, {	-- Julia Stevens
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY

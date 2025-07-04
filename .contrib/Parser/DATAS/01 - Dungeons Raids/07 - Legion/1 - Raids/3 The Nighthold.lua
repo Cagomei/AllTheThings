@@ -390,6 +390,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
 					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
 					i(138828),	-- Illusion: Chronos (ILLUSION!)
+					i(142559),	-- Mysterious Cube
 				})),
 				cr(104288, e(1731, {	-- Trilliax
 					ach(10742),	-- Gluten Free

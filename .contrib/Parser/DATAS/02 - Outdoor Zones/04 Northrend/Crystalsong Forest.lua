@@ -52,6 +52,16 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66636, {	-- Nearly Headless Jacob <Master Pet Tamer>
 						["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
+						["description"] = "Jacob's pets are level 25 of the following consecutive pet classes:\n1. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n2. Undead - see above.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Biletoad (Tongue Lash/Cleansing Rain/Swarm of Flies) and Huge Toad (Tongue Lash/Healing Wave/Swarm of Flies).",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31932, {	-- Nearly Headless Jacob
+								["sourceAchievement"] = 6605,	-- Taming Northrend
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
 					}),
 				}),
 				n(SPECIAL, {

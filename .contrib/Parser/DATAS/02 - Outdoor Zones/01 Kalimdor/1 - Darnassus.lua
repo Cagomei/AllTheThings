@@ -104,155 +104,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["skipFill"] = true,
 			}),
 			-- #endif
+			-- #if AFTER CATA
 			n(PROFESSIONS, {
-				prof(ALCHEMY, {
-					n(4226, {	-- Ulthir <Alchemy Supplies>
-						-- #if AFTER CATA
-						["coord"] = { 54.6, 39.6, DARNASSUS },
-						-- #else
-						["coord"] = { 55.8, 24.5, DARNASSUS },
-						-- #endif
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(VANILLA_ALCHEMY_VIALS, {
-							i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(5643, {	-- Recipe: Great Rage Potion (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(13477, {	-- Recipe: Superior Mana Potion (RECIPE!)
-								["timeline"] = { REMOVED_2_0_1 },	-- Moved to Trainers
-							}),
-						}),
-					}),
-				}),
-				prof(BLACKSMITHING, {
-					n(52641, {	-- Layna Karner <Blacksmithing Supplies>
-						["coord"] = { 56.6, 52.6, DARNASSUS },
-						["timeline"] = { ADDED_4_1_0 },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							-- #if AFTER 4.3.0
-							{ "sub", "common_recipes_vendor", 55684 },	-- Jordan Smith <Blacksmithing Trainer & Supplies>
-							-- #endif
-							{ "select","itemID",
-								2880,	-- Weak Flux
-								3466,	-- Strong Flux
-								18567,	-- Elemental Flux
-								3857,	-- Coal
-								5956,	-- Blacksmith Hammer
-							},
-						},
-						["groups"] = {
-							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
-								["isLimited"] = true,
-							}),
-						},
-					}),
-				}),
-				prof(COOKING, {
-					n(4223, {	-- Fyldan <Cooking Supplies> [TBC+] / Fyldan <Cooking Supplier>
-						-- #if AFTER CATA
-						["coord"] = { 49.6, 36.6, DARNASSUS },
-						-- #else
-						["coord"] = { 48.5, 21.6, DARNASSUS },
-						-- #endif
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							-- #if AFTER CATA
-							{"sub", "common_recipes_vendor", 49701},	-- Jon Casper <Sous Chef>
-							-- #endif
-							{ "select","itemID",
-								159,	-- Refreshing Spring Water
-								-- #if AFTER TBC
-								30817,	-- Simple Flour
-								-- #endif
-								2678,	-- Mild Spices
-								-- #if BEFORE WRATH
-								2692,	-- Hot Spices
-								3713,	-- Soothing Spices
-								-- #endif
-							},
-						},
-						["groups"] = {
-							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						},
-					}),
-					n(6735, {	-- Innkeeper Saelienne <Innkeeper>
-						-- #if AFTER CATA
-						["coord"] = { 62.54, 32.8, DARNASSUS },	-- Craftsmen's Terrace
-						-- #else
-						["coord"] = { 67.2, 15.8, DARNASSUS },	-- Craftsmen's Terrace
-						-- #endif
-						["races"] = ALLIANCE_ONLY,
-						["group"] = {
-							i(1179),	-- Ice Cold Milk
-						},
-					}),
-				}),
-				prof(ENCHANTING, {
-					n(4229, {	-- Mythrin'dir <Trade Supplies> [TBC+] / Mythrin'dir <General Trade Supplier>
-						-- #if AFTER CATA
-						["coord"] = { 58.2, 35.0, DARNASSUS },
-						-- #else
-						["coord"] = { 61.0, 17.7, DARNASSUS },
-						-- #endif
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(11223, {	-- Formula: Enchant Bracer - Dodge (RECIPE!) / Formula: Enchant Bracer - Deflection
-								["isLimited"] = true,
-							}),
-							i(16217, {	-- Formula: Enchant Shield - Greater Stamina (RECIPE!)
-								["isLimited"] = true,
-							}),
-						},
-					}),
-					n(4228, {	-- Vaean <Enchanting Supplies>
-						-- #if AFTER CATA
-						["coord"] = { 56.5, 32.2, DARNASSUS },
-						-- #else
-						["coord"] = { 58.6, 14.7, DARNASSUS },
-						-- #endif
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							-- #if AFTER CATA
-							{"sub", "common_recipes_vendor", 1318},	-- Jessara Cordell <Enchanting Supplies>
-							-- #endif
-							{ "select","itemID",
-								6217,	-- Copper Rod
-								4470,	-- Simple Wood
-								11291,	-- Star Wood
-								10938,	-- Lesser Magic Essence
-								10940,	-- Strange Dust
-								20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-								20752,	-- Formula: Minor Mana Oil (RECIPE!)
-								20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-								-- #if BEFORE CATA
-								6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-								-- #else
-								38682,	-- Enchanting Vellum
-								-- #endif
-							},
-						},
-					}),
-				}),
-				prof(ENGINEERING, {
-					n(52637, {	-- Hugo Letner <Engineering Supplies>
-						["coords"] = {
-							{ 50.0, 32.8, DARNASSUS },
-						},
-						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_4_0_3 },
-						["sym"] = {
-							{ "select","itemID",
-								5956,	-- Blacksmith Hammer
-								4400,	-- Heavy Stock
-								4399,	-- Wooden Stock
-							},
-						},
-					}),
-				}),
 				prof(FISHING, {
 					i(67414, {	-- Bag of Shiny Things
 						["provider"] = { "n", 4156 },	-- Astaia
@@ -274,154 +127,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(67388),	-- String of Alligator Teeth
 						},
 					}),
-					n(4222, {	-- Voloren <Fishing Supplies>
-						["coords"] = {
-							-- #if AFTER CATA
-							{ 48.44, 61.2, DARNASSUS },
-							-- #else
-							{ 46.9, 56.9, DARNASSUS },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = FISHING_SUPPLIES,
-					}),
-				}),
-				prof(HERBALISM, {
-					n(4216, {	-- Chardryn <Herbalism Supplies>
-						["coord"] = { 49.55, 69.44, DARNASSUS },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(22250, {	-- Herb Pouch
-								["description"] = "Only select Herbalism Suppliers sells this pouch.",
-								["providers"] = {
-									{ "n", 4216},	-- Chardryn <Herbalism Supplies>
-									{ "n", 5503},	-- Eldraeith <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
-									{ "n", 5138},	-- Gwina Stonebranch <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
-									{ "n", 4615},	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
-									{ "n", 3548},	-- Selina Weston <Alchemy & Herbalism Supplies>
-									-- #if AFTER TBC
-									{ "n", 16367},	-- Botanist Tyniarrel <Herbalism Trainer & Supplies>
-									-- #endif
-									-- #if AFTER CATA
-									{ "n", 46742},	-- Brunda <Herbalism Supplies>
-									-- #else
-									{ "n", 3405},	-- Zeal'aya <Herbalism Supplies>
-									-- #endif
-								},
-							}),
-						},
-					}),
-				}),
-				-- #if AFTER WRATH
-				prof(INSCRIPTION, {
-					n(30731, {	-- Illianna Moonscribe <Inscription Supplies>
-						["coord"] = { 56.7, 31.8, DARNASSUS },
-						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_3_0_2 },
-						["sym"] = {{ "sub", "common_vendor", 30730 }},	-- Stanly McCormick <Inscription Supplies>
-					}),
-				}),
-				-- #endif
-				-- #if AFTER TBC
-				prof(JEWELCRAFTING, {
-					n(4229, {	-- Mythrin'dir <Trade Supplies> [TBC+] / Mythrin'dir <General Trade Supplier>
-						-- #if AFTER CATA
-						["coord"] = { 58.2, 35.0, DARNASSUS },
-						-- #else
-						["coord"] = { 61.0, 17.7, DARNASSUS },
-						-- #endif
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(20854, {	-- Design: Amulet of the Moon
-								["isLimited"] = true,
-								["timeline"] = { ADDED_2_0_1 },
-							}),
-						},
-					}),
-					n(52644, {	-- Tarien Silverdew <Jewelcrafting Supplies>
-						["coord"] = { 54.6, 29.8, DARNASSUS },
-						["timeline"] = { ADDED_4_1_0 },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "sub", "common_recipes_vendor", 50480 },	-- Isabel Jones <Jewelcrafting Supplies>
-							{ "select","itemID",
-							52188,	-- Jeweler's Setting
-							20815,	-- Jeweler's Toolset/-Kit
-							-- #if BEFORE MOP
-							20824,	-- Simple Grinder
-							-- #endif
-							},
-						},
-					}),
-				}),
-				-- #endif
-				prof(LEATHERWORKING, {
-					n(4225, {	-- Saenorion <Leatherworking Supplies>
-						-- #if AFTER CATA
-						["coord"] = { 60.0, 37.2, DARNASSUS },
-						-- #else
-						["coord"] = { 63.7, 22.3, DARNASSUS },
-						-- #endif
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
-						["groups"] = {
-							i(18949, {	-- Pattern: Barbaric Bracers (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
-								["isLimited"] = true,
-							}),
-						},
-					}),
-				}),
-				prof(MINING, {
-					n(52643, {	-- Rissa Halding <Mining Supplies>
-						["coord"] = { 50.25, 32.6, DARNASSUS },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {{ "sub", "common_vendor", 4256 }},	-- Golnir Bouldertoe <Mining Supplies>
-						["timeline"] = { ADDED_4_0_1 },
-					}),
-				}),
-				prof(TAILORING, {
-					n(4168, {	-- Elynna <Tailoring Supplies>
-						-- #if AFTER CATA
-						["coord"] = { 60.4, 36.8, DARNASSUS },
-						-- #else
-						["coord"] = { 64.6, 21.6, DARNASSUS },
-						-- #endif
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
-						},
-						["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
-							i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
-								["isLimited"] = true,
-							}),
-							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_ONE, i(215369)),	-- Pattern: Invoker's Cord (RECIPE!)
-							applyclassicphase(SOD_PHASE_ONE, i(215370)),	-- Pattern: Invoker's Mantle (RECIPE!)
-							-- #endif
-							i(10311, {	-- Pattern: Orange Martial Shirt (RECIPE!)
-								["isLimited"] = true,
-							}),
-						}),
-					}),
-					n(4228, {	-- Vaean <Enchanting Supplies>
-						-- #if AFTER CATA
-						["coord"] = { 56.5, 32.2, DARNASSUS },
-						-- #else
-						["coord"] = { 58.6, 14.7, DARNASSUS },
-						-- #endif
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-						},
-					}),
 				}),
 			}),
+			-- #endif
 			n(QUESTS, {
 				q(7799, {	-- A Donation of Mageweave
 					["qg"] = 14725,	-- Raedon Duskstriker
@@ -1563,6 +1271,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(17184),	-- Small Shield
 					},
 				}),
+				n(4216, {	-- Chardryn <Herbalism Supplies>
+					["coord"] = { 49.55, 69.44, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(22250, {	-- Herb Pouch
+							["description"] = "Only select Herbalism Suppliers sells this pouch.",
+							["providers"] = {
+								{ "n", 4216},	-- Chardryn <Herbalism Supplies>
+								{ "n", 5503},	-- Eldraeith <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+								{ "n", 5138},	-- Gwina Stonebranch <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+								{ "n", 4615},	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+								{ "n", 3548},	-- Selina Weston <Alchemy & Herbalism Supplies>
+								-- #if AFTER TBC
+								{ "n", 16367},	-- Botanist Tyniarrel <Herbalism Trainer & Supplies>
+								-- #endif
+								-- #if AFTER CATA
+								{ "n", 46742},	-- Brunda <Herbalism Supplies>
+								-- #else
+								{ "n", 3405},	-- Zeal'aya <Herbalism Supplies>
+								-- #endif
+							},
+						}),
+					},
+				}),
 				n(4164, {	-- Cylania
 					["coord"] = { 56.8, 53.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
@@ -1669,6 +1401,60 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2529,    -- Zweihander
 					}},
 				}),
+				n(4168, {	-- Elynna <Tailoring Supplies>
+					-- #if AFTER CATA
+					["coord"] = { 60.4, 36.8, DARNASSUS },
+					-- #else
+					["coord"] = { 64.6, 21.6, DARNASSUS },
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
+					},
+					["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
+						i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
+							["isLimited"] = true,
+						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(215369)),	-- Pattern: Invoker's Cord (RECIPE!)
+						applyclassicphase(SOD_PHASE_ONE, i(215370)),	-- Pattern: Invoker's Mantle (RECIPE!)
+						-- #endif
+						i(10311, {	-- Pattern: Orange Martial Shirt (RECIPE!)
+							["isLimited"] = true,
+						}),
+					}),
+				}),
+				n(4223, {	-- Fyldan <Cooking Supplies> [TBC+] / Fyldan <Cooking Supplier>
+					-- #if AFTER CATA
+					["coord"] = { 49.6, 36.6, DARNASSUS },
+					-- #else
+					["coord"] = { 48.5, 21.6, DARNASSUS },
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						-- #if AFTER CATA
+						{"sub", "common_recipes_vendor", 49701},	-- Jon Casper <Sous Chef>
+						-- #endif
+						{ "select","itemID",
+							159,	-- Refreshing Spring Water
+							-- #if AFTER TBC
+							30817,	-- Simple Flour
+							-- #endif
+							2678,	-- Mild Spices
+							-- #if BEFORE WRATH
+							2692,	-- Hot Spices
+							3713,	-- Soothing Spices
+							-- #endif
+						},
+					},
+					["groups"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
+				}),
 				n(4232, {	-- Glorandiir <Axe Merchant>
 					-- #if AFTER CATA
 					["coord"] = { 60.2, 62.6, DARNASSUS },
@@ -1693,6 +1479,37 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(12249, {	-- Merciless Axe
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(52637, {	-- Hugo Letner <Engineering Supplies>
+					["coords"] = {
+						{ 50.0, 32.8, DARNASSUS },
+					},
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_4_0_3 },
+					["sym"] = {
+						{ "select","itemID",
+							5956,	-- Blacksmith Hammer
+							4400,	-- Heavy Stock
+							4399,	-- Wooden Stock
+						},
+					},
+				}),
+				n(30731, {	-- Illianna Moonscribe <Inscription Supplies>
+					["coord"] = { 56.7, 31.8, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_3_0_2 },
+					["sym"] = {{ "sub", "common_vendor", 30730 }},	-- Stanly McCormick <Inscription Supplies>
+				}),
+				n(6735, {	-- Innkeeper Saelienne <Innkeeper>
+					-- #if AFTER CATA
+					["coord"] = { 62.54, 32.8, DARNASSUS },	-- Craftsmen's Terrace
+					-- #else
+					["coord"] = { 67.2, 15.8, DARNASSUS },	-- Craftsmen's Terrace
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["group"] = {
+						i(1179),	-- Ice Cold Milk
 					},
 				}),
 				n(4231, {	-- Kieran <Weapon Merchant>
@@ -1760,6 +1577,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(11308, {	-- Sylvan Shortbow
+							["isLimited"] = true,
+						}),
+					},
+				}),
+				n(52641, {	-- Layna Karner <Blacksmithing Supplies>
+					["coord"] = { 56.6, 52.6, DARNASSUS },
+					["timeline"] = { ADDED_4_1_0 },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						-- #if AFTER 4.3.0
+						{ "sub", "common_recipes_vendor", 55684 },	-- Jordan Smith <Blacksmithing Trainer & Supplies>
+						-- #endif
+						{ "select","itemID",
+							2880,	-- Weak Flux
+							3466,	-- Strong Flux
+							18567,	-- Elemental Flux
+							3857,	-- Coal
+							5956,	-- Blacksmith Hammer
+						},
+					},
+					["groups"] = {
+						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1947,6 +1786,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2026,    -- Rock Hammer
 					}},
 				}),
+				n(4229, {	-- Mythrin'dir <Trade Supplies> [TBC+] / Mythrin'dir <General Trade Supplier>
+					-- #if AFTER CATA
+					["coord"] = { 58.2, 35.0, DARNASSUS },
+					-- #else
+					["coord"] = { 61.0, 17.7, DARNASSUS },
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(20854, {	-- Design: Amulet of the Moon
+							["isLimited"] = true,
+							["timeline"] = { ADDED_2_0_1 },
+						}),
+						i(11223, {	-- Formula: Enchant Bracer - Dodge (RECIPE!) / Formula: Enchant Bracer - Deflection
+							["isLimited"] = true,
+						}),
+						i(16217, {	-- Formula: Enchant Shield - Greater Stamina (RECIPE!)
+							["isLimited"] = true,
+						}),
+					},
+				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(209948, {	-- Relaeron <Caretaker>
 					["description"] = "Use the musk and tame a Deer and then bring it to Relaeron.",
@@ -1965,6 +1824,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				-- #endif
+				n(52643, {	-- Rissa Halding <Mining Supplies>
+					["coord"] = { 50.25, 32.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4256 }},	-- Golnir Bouldertoe <Mining Supplies>
+					["timeline"] = { ADDED_4_0_1 },
+				}),
+				n(4225, {	-- Saenorion <Leatherworking Supplies>
+					-- #if AFTER CATA
+					["coord"] = { 60.0, 37.2, DARNASSUS },
+					-- #else
+					["coord"] = { 63.7, 22.3, DARNASSUS },
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
+					["groups"] = {
+						i(18949, {	-- Pattern: Barbaric Bracers (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(7005),	-- Skinning Knife
+					},
+				}),
 				n(5191, {	-- Shalumon <Tabard Vendor>
 					-- #if AFTER CATA
 					["coord"] = { 64.6, 37.8, DARNASSUS },
@@ -1986,6 +1869,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(8501),	-- Hawk Owl (PET!)
 					},
 				}),
+				n(52644, {	-- Tarien Silverdew <Jewelcrafting Supplies>
+					["coord"] = { 54.6, 29.8, DARNASSUS },
+					["timeline"] = { ADDED_4_1_0 },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "sub", "common_recipes_vendor", 50480 },	-- Isabel Jones <Jewelcrafting Supplies>
+						{ "select","itemID",
+						52188,	-- Jeweler's Setting
+						20815,	-- Jeweler's Toolset/-Kit
+						-- #if BEFORE MOP
+						20824,	-- Simple Grinder
+						-- #endif
+						},
+					},
+				}),
 				n(4235, {	-- Turian <Thrown Weapons Merchant>
 					-- #if AFTER CATA
 					["coord"] = { 59.6, 67.4, DARNASSUS },
@@ -1997,6 +1895,56 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(12247, {	-- Broad Bladed Knife
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(4226, {	-- Ulthir <Alchemy Supplies>
+					-- #if AFTER CATA
+					["coord"] = { 54.6, 39.6, DARNASSUS },
+					-- #else
+					["coord"] = { 55.8, 24.5, DARNASSUS },
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = appendGroups(VANILLA_ALCHEMY_VIALS, {
+						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(5643, {	-- Recipe: Great Rage Potion (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(13477, {	-- Recipe: Superior Mana Potion (RECIPE!)
+							["timeline"] = { REMOVED_2_0_1 },	-- Moved to Trainers
+						}),
+					}),
+				}),
+				n(4228, {	-- Vaean <Enchanting Supplies>
+					-- #if AFTER CATA
+					["coord"] = { 56.5, 32.2, DARNASSUS },
+					-- #else
+					["coord"] = { 58.6, 14.7, DARNASSUS },
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						-- #if AFTER CATA
+						{"sub", "common_recipes_vendor", 1318},	-- Jessara Cordell <Enchanting Supplies>
+						-- #endif
+						{ "select","itemID",
+							6217,	-- Copper Rod
+							4470,	-- Simple Wood
+							11291,	-- Star Wood
+							10938,	-- Lesser Magic Essence
+							10940,	-- Strange Dust
+							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+							20752,	-- Formula: Minor Mana Oil (RECIPE!)
+							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+							-- #if BEFORE CATA
+							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+							-- #else
+							38682,	-- Enchanting Vellum
+							-- #endif
+						},
+					},
+					["groups"] = {
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 					},
 				}),
 				n(4175, {	-- Vinasia <Cloth Armor Merchant>
@@ -2057,6 +2005,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2120),	-- Thin Cloth Pants
 						i(2117),	-- Thin Cloth Shoes
 					},
+				}),
+				n(4222, {	-- Voloren <Fishing Supplies>
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.44, 61.2, DARNASSUS },
+						-- #else
+						{ 46.9, 56.9, DARNASSUS },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = FISHING_SUPPLIES,
 				}),
 			}),
 		},

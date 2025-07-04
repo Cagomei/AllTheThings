@@ -238,7 +238,6 @@ local CommonNonTransmogFilterTypes = {
 	BATTLE_PETS,			-- [Not Available in Settings]
 	TOYS,					-- [Not Available in Settings]
 	ILLUSIONS,				-- [Not Available in Settings]
-	ACHIEVEMENTS,			-- [Not Available in Settings]
 	HOLIDAY_ITEMS,			-- [Not Available in Settings]
 	MOUNT_EQUIPMENT,		-- [Not Available in Settings]
 	RECIPES,				-- [Not Available in Settings]

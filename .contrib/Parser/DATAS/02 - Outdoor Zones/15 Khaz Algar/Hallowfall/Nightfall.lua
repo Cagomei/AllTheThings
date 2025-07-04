@@ -39,9 +39,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["coord"] = { 28.3, 56.1, HALLOWFALL },
 						["isWeekly"] = true,
 						["g"] = {
-							i(239546, {	-- Confiscated Cultist's Bag
-								["sym"] = {{"fill"}},
-							}),
+							i(239546),	-- Confiscated Cultist's Bag
 						},
 				}, {
 					q(88945),	-- Radiant Incursion: Rak-Zakaz
@@ -51,9 +49,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							o(529289, {	-- Spore Sample
 								i(240215),	-- Fungal Sample (QI!)
 							}),
-							i(239546, {	-- Confiscated Cultist's Bag
-								["sym"] = {{"fill"}},
-							}),
+							i(239546),	-- Confiscated Cultist's Bag
 						},
 					}),
 					q(87475),	-- Sureki Incursion: Hold the Wall
@@ -295,7 +291,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				n(REWARDS, {
 					-- Special Single List Item:
-					i(239546, {	-- Confiscated Cultist's Bag
+					container(239546, {	-- Confiscated Cultist's Bag
 						["description"] = "Rewarded by completing Radiant Incursion or Sureki Incursion Dailies.",
 						["g"] = {
 							i(239563),	-- Shadowbound Leash (MOUNT!)

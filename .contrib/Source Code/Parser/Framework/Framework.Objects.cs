@@ -1243,6 +1243,7 @@ end");
                         case "sym":
                         case "f":
                         case "learnedAt":
+                        case "petBattleLvl":
                         case "filterForRWP":
                             itemData[pair.Key] = pair.Value;
                             break;
@@ -1340,6 +1341,7 @@ end");
                         case "sr":
                         case "factionID":
                         case "requireSkill":
+                        case "petBattleLvl":
                         case "followerID":
                         case "isRaid":
                         case "mapID":
@@ -1732,6 +1734,7 @@ end");
                     case "rank":
                     case "gender":
                     case "ilvl":
+                    case "petBattleLvl":
                     case "q":
                     case "e":
                     case "r":

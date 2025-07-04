@@ -929,7 +929,7 @@ local function RowOnEnter(self)
 				if #sas > 0 then
 					local bestMatch = nil;
 					for j,sa in ipairs(sas) do
-						if sa.achievementID == sourceAchievementID then
+						if sa.achievementID == sourceAchievementID and sa.key == "achievementID" then
 							if isDebugMode or (app.RecursiveCharacterRequirementsFilter(sa) and not sa.collected) then
 								bestMatch = sa;
 							end

@@ -1550,7 +1550,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(FISHING, {
-		i(198438, {	-- Draconic Recipe in a Bottle
+		container(198438, {	-- Draconic Recipe in a Bottle
 			["sym"] = {{"select","itemID",
 				-- Available from the Bottle but has another Source
 				194298,	-- Pattern: Forlorn Funeral Pall (RECIPE!)

@@ -124,6 +124,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(65648, {	-- Old MacDonald <Master Pet Tamer>
 					["coord"] = { 60.8, 18.6, WESTFALL },
+					["description"] = "This pet tamer is Alliance only.\n\nMacDonald's pets are level 3 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["petBattleLvl"] = 3,
+					["groups"] = {
+						q(31780, {	-- Old MacDonald
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY

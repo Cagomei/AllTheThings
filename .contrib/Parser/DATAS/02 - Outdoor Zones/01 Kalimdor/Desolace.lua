@@ -188,6 +188,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66372, {	-- Merda Stronghoof <Master Pet Tamer>
 					["coord"] = { 57.2, 45.8, DESOLACE },
+					["description"] = "This pet tamer is Horde only.\n\nMerda's pets are level 9 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+					["petBattleLvl"] = 9,
+					["groups"] = {
+						q(31872, {	-- Merda Stronghoof
+							["sourceAchievement"] = 6602,	-- Taming Kalimdor
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			n(QUESTS, {

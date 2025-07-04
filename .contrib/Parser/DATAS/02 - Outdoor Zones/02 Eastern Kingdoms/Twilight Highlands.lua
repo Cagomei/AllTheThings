@@ -333,6 +333,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(66822, {	-- Goz Banefury <Master Pet Tamer>
 					["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 25,
+					["groups"] = {
+						q(31974, {	-- Goz Banefury
+							["sourceAchievement"] = 7525,	-- Taming Cataclysm
+							["timeline"] = { ADDED_5_0_4 },
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			-- #if ANYCLASSIC

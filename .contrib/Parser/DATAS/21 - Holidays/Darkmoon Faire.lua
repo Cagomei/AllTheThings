@@ -732,6 +732,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			},
 		}),
 		-- #endif
+		petbattles({
+			n(67370, {	-- Jeremy Feasel <Master Pet Tamer>
+				["coord"] = { 47.0, 62.75, DARKMOON_ISLAND },
+				["description"] = "Jeremy's pets are level 25 of epic quality and exceptionally powerful of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Mechanical - use Elemental (powerful and tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+				["timeline"] = { ADDED_5_0_4 },
+				["petBattleLvl"] = 25,
+			}),
+			n(85519, {	-- Cristoph VonFeasel <Grand Master Pet Tamer>
+				["coord"] = { 47.3, 62.0, DARKMOON_ISLAND },
+				["description"] = "Cristoph's pets are level 25 of legendary quality and exceptionally powerful of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Beast - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+				["timeline"] = { ADDED_5_0_4 },
+				["petBattleLvl"] = 25,
+			}),
+		}),
 		n(QUESTS, {
 			q(7930, {	-- 5 Tickets - Darkmoon Flower
 				["qg"] = 14828,	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
@@ -3810,11 +3824,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["timeline"] = { ADDED_4_3_0 },
 				["groups"] = {
 					darkmoonprizeticket(100, i(122338, {	-- Ancient Heirloom Armor Casing
-						["sym"] = { { "fill" } },	-- simply fill this item
 						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(120, i(122339, {	-- Ancient Heirloom Scabbard
-						["sym"] = { { "fill" } },	-- simply fill this item
 						["timeline"] = { ADDED_6_1_0 },
 					})),
 

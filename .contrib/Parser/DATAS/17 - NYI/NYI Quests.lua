@@ -8680,5 +8680,19 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(83447),
 			q(86651),	-- [DNT] Test (causes Bolt of Silk Cloth to be Sourced when not under NYI)
 		})),
+
+		-- 11.1.5
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+			q(90504), -- Dastardly Duos Weekly Wins
+			q(90503), -- Dastardly Duos Weekly Wins
+			q(90502), -- Dastardly Duos Weekly Wins
+			q(90501), -- Dastardly Duos Weekly Wins
+			q(90500), -- Dastardly Duos Weekly Wins
+			q(90499), -- Dastardly Duos Weekly Wins
+			q(90498), -- Dastardly Duos Weekly Wins
+			q(90497), -- Dastardly Duos Weekly Wins
+			q(90496), -- Dastardly Duos Weekly Wins
+			q(90495), -- Dastardly Duos Weekly Wins
+		})),
 	}),
 }));

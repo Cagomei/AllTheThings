@@ -498,9 +498,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				q(38274, {	-- The Eye of Kilrogg
 					["provider"] = { "n", 91324 },	-- Braknoth
 					["g"] = {
-						i(124553, {	-- Baleful Gauntlets
-							["sym"] = { { "fill" } },
-						}),
+						i(124553),	-- Baleful Gauntlets
 					},
 				}),
 
@@ -542,9 +540,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["coord"] = { 16.1, 44.3, TANAAN_JUNGLE },
 					["sourceQuest"] = 38213,	-- Get a Clue
 					["g"] = {
-						i(124557, {	-- Baleful Girdle
-							["sym"] = { { "fill" } },
-						}),
+						i(124557),	-- Baleful Girdle
 					},
 				}),
 
@@ -615,9 +611,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["sourceQuest"] = 38462,	-- Breaching the Barrier
 					["g"] = {
 						i(128225),	-- Empowered Apexis Fragment
-						i(124551, {	-- Baleful Tunic
-							["sym"] = { { "fill" } },
-						}),
+						i(124551),	-- Baleful Tunic
 					},
 				}),
 				q(38463, {	-- The Cipher of Damnation (H)
@@ -626,9 +620,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["sourceQuest"] = 38462,	-- Breaching the Barrier
 					["g"] = {
 						i(128225),	-- Empowered Apexis Fragment
-						i(124551, {	-- Baleful Tunic
-							["sym"] = { { "fill" } },
-						}),
+						i(124551),	-- Baleful Tunic
 					},
 				}),
 
@@ -1076,7 +1068,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				}),
 			}),
 			n(SPECIAL, {
-				i(123975, {	-- Greater Bounty Spoils
+				container(123975, {	-- Greater Bounty Spoils
 					["description"] = "This satchel is an award from some of the weekly garrison raid quests that can be picked up from High Overlord Saurfang and Muradin Bronzebeard.",
 					["g"] = {
 						i(114111, {	-- Formidable Armament
@@ -1243,9 +1235,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["crs"] = { 91196 },	-- Muradin Bronzebeard
 					["races"] = ALLIANCE_ONLY,
 					["g"] = bubbleDownFiltered({ ["coord"] = { 34.1, 32.6, LUNARFALL }, ["races"] = ALLIANCE_ONLY, ["qgs"] = { 91196, 89763 }},FILTERFUNC_questID,{
-						i(123975, {	-- Greater Bounty Spoils
-							["sym"] = { { "fill" } },	-- simply fill this item
-						}),
+						i(123975),	-- Greater Bounty Spoils
 						q(39255, {	-- Amphitheater of the Eternal
 							["isWeekly"] = true,
 							["u"] = REMOVED_FROM_GAME,
@@ -1405,9 +1395,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["crs"] = { 91195 },	-- High Overlord Saurfang
 					["races"] = HORDE_ONLY,
 					["g"] = bubbleDownFiltered({ ["coord"] = { 40.2, 56.7, FROSTWALL }, ["races"] = HORDE_ONLY, ["qgs"] = { 91195, 89753 }},FILTERFUNC_questID,{
-						i(123975, {	-- Greater Bounty Spoils
-							["sym"] = { { "fill" } },	-- simply fill this item
-						}),
+						i(123975),	-- Greater Bounty Spoils
 						q(39227, {	-- Amphitheater of the Eternal
 							["isWeekly"] = true,
 							["u"] = REMOVED_FROM_GAME,

@@ -962,6 +962,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(66512, {	-- Deiza Plaguehorn <Master Pet Tamer>
 					["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },
+					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDeiza's pets are level 14 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Undead - use Critter (powerful) or Aquatic (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 14,
+					["groups"] = {
+						q(31911, {	-- Deiza Plaguehorn
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			n(QUESTS, {

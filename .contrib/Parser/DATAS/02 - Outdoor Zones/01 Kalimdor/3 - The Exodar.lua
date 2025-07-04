@@ -58,272 +58,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				["skipFill"] = true,
 			}),
 			-- #endif
-			n(PROFESSIONS, {
-				prof(ALCHEMY, {
-					n(16705, {	-- Altaa <Alchemy Supplies>
-						["coord"] = { 28.1, 61.9, THE_EXODAR },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-							3371,	-- Empty-/Crystal Vial
-							-- #if BEFORE CATA
-							3372,	-- Leaded Vial
-							8925,	-- Crystal Vial
-							18256,	-- Imbued Vial
-							-- #endif
-							2453,	-- Bruiseweed
-							2449,	-- Earthroot
-							3356,	-- Kingsblood
-							785,	-- Mageroyal
-							3357,	-- Liferoot
-							2447,	-- Peacebloom
-							765,	-- Silverleaf
-							3355,	-- Wild Steelbloom
-							},
-						},
-						["groups"] =  {
-							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
-								["isLimited"] = true,
-							}),
-						},
-					}),
-					n(16706, {	-- Musal <Alchemy Supplies & Reagents>
-						["coord"] = { 44.77, 63.2, THE_EXODAR },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-							3371,	-- Empty-/Crystal Vial
-							-- #if BEFORE CATA
-							3372,	-- Leaded Vial
-							8925,	-- Crystal Vial
-							18256,	-- Imbued Vial
-							-- #endif
-							},
-						},
-					}),
-					n(16768, {	-- Nurguni <Tradesman>
-						["coord"] = { 57.0, 50.05, THE_EXODAR },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-							3371,	-- Empty-/Crystal Vial
-							-- #if BEFORE CATA
-							3372,	-- Leaded Vial
-							8925,	-- Crystal Vial
-							18256,	-- Imbued Vial
-							-- #endif
-							},
-						},
-					}),
-				}),
-				prof(BLACKSMITHING, {
-					n(16713, {	-- Arras <Blacksmithing Supplies>
-						["coord"] = { 61.3, 89.3, THE_EXODAR },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							-- #if AFTER 4.3.0
-							{ "sub", "common_recipes_vendor", 55684 },	-- Jordan Smith <Blacksmithing Trainer & Supplies>
-							-- #endif
-							{ "select","itemID",
-								2880,	-- Weak Flux
-								3466,	-- Strong Flux
-								18567,	-- Elemental Flux
-								3857,	-- Coal
-								5956,	-- Blacksmith Hammer
-							},
-						},
-						["groups"] = {
-							i(23591, {	-- Plans: Adamantite Cleaver (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(23592, {	-- Plans: Adamantite Dagger (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(23590, {	-- Plans: Adamantite Maul (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(23593, {	-- Plans: Adamantite Rapier (RECIPE!)
-								["isLimited"] = true,
-							}),
-						},
-					}),
-				}),
-				prof(COOKING, {
-					n(16739, {	-- Caregiver Breel <Innkeeper>
-						["coord"] = { 59.5, 18.76, THE_EXODAR },	-- The Exobar
-						["races"] = ALLIANCE_ONLY,
-						["group"] = {
-							i(1179),	-- Ice Cold Milk
-						},
-					}),
-					n(16718, {	-- Phea <Cooking Supplies>
-						["coord"] = { 54.4, 26.3, THE_EXODAR },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-								159,	-- Refreshing Spring Water
-								30817,	-- Simple Flour
-								2678,	-- Mild Spices
-								-- #if BEFORE WRATH
-								2692,	-- Hot Spices
-								3713,	-- Soothing Spices
-								-- #endif
-							},
-						},
-						["groups"] = appendGroups(PHEA_GROUPS, {}),
-					}),
-				}),
-				prof(ENCHANTING, {
-					n(16722, {	-- Egomis <Enchanting Supplies>
-						["coord"] = { 39.9, 40.2, THE_EXODAR },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							-- #if AFTER CATA
-							{"sub", "common_recipes_vendor", 1318},	-- Jessara Cordell <Enchanting Supplies>
-							-- #endif
-							{ "select","itemID",
-								6217,	-- Copper Rod
-								4470,	-- Simple Wood
-								11291,	-- Star Wood
-								10938,	-- Lesser Magic Essence
-								10940,	-- Strange Dust
-								20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-								20752,	-- Formula: Minor Mana Oil (RECIPE!)
-								20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-								-- #if BEFORE CATA
-								6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-								-- #else
-								38682,	-- Enchanting Vellum
-								-- #endif
-							},
-						},
-						["groups"] = appendGroups(EGOMIS_GROUPS, {}),
-					}),
-				}),
-				prof(ENGINEERING, {
-					n(16657, {	-- Feera <Engineering Supplies>
-						["coord"] = { 53.6, 90.8, THE_EXODAR },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-								5956,	-- Blacksmith Hammer
-								4400,	-- Heavy Stock
-								4399,	-- Wooden Stock
-							},
-						},
-						["groups"] = {
-							i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
-								["isLimited"] = true,
-							}),
-							applyclassicphase(TBC_PHASE_TWO, i(23815, {	-- Schematic: Adamantite Shell Machine (RECIPE!)
-								["isLimited"] = true,
-								["timeline"] = { REMOVED_4_0_1 },
-							})),
-							i(23816, {	-- Schematic: Fel Iron Toolbox (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(23811, {	-- Schematic: White Smoke Flare (RECIPE!)
-								["isLimited"] = true,
-							}),
-						},
-					}),
-				}),
-				prof(FISHING, {
-					n(20121, {	-- Dekin <Fishing Supplies>
-						["coord"] = { 29.5, 20.1, THE_EXODAR },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {{ "sub", "common_vendor", 4222 }},	-- Voloren <Fishing Supplies>
-					}),
-				}),
-				-- #if AFTER WRATH
-				prof(INSCRIPTION, {
-					n(30732, {	-- Sessoh <Inscription Supplies>
-						["coord"] = { 39.6, 38.7, THE_EXODAR },
-						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_3_0_2 },
-						["sym"] = {{ "sub", "common_vendor", 30730 }},	-- Stanly McCormick <Inscription Supplies>
-					}),
-					n(30716, {	-- Thoth <Inscription Trainer>
-						["coord"] = { 40.5, 39.8, THE_EXODAR },
-						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_3_0_2 },
-						["groups"] = {
-							i(137789, {	-- Technique: Songs of the Legion (RECIPE!)
-								["timeline"] = { ADDED_7_0_3 },
-							}),
-						},
-					}),
-				}),
-				-- #endif
-				prof(JEWELCRAFTING, {
-					n(17512, {	-- Arred <Jewelcrafting Supplies>
-						["coord"] = { 45.5, 25.3, THE_EXODAR },
-						["races"] = ALLIANCE_ONLY,
-						-- #if AFTER CATA
-						["sym"] = { { "sub", "common_recipes_vendor", 50480 } },	-- Isabel Jones <Jewelcrafting Supplies>
-						-- #endif
-						["groups"] = appendGroups(JEWELCRAFTING_SUPPLIES, {
-							i(20854, {	-- Design: Amulet of the Moon
-								["isLimited"] = true,
-							}),
-							i(20856, {	-- Design: Heavy Golden Necklace of Battle
-								["isLimited"] = true,
-							}),
-							i(21948, {	-- Design: Opal Necklace of Impact
-								["isLimited"] = true,
-							}),
-							i(20975, {	-- Design: The Jade Eye
-								["isLimited"] = true,
-							}),
-						}),
-					}),
-				}),
-				prof(LEATHERWORKING, {
-					n(16748, {	-- Haferet <Leatherworking Supplies>
-						["coord"] = { 66.6, 73.7, THE_EXODAR },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
-						["groups"] = {
-							i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(25720, {	-- Pattern: Heavy Knothide Leather
-								["timeline"] = { REMOVED_3_2_0},
-								["requireSkill"] = LEATHERWORKING,
-								["isLimited"] = true,
-								["f"] = RECIPES,
-							}),
-						},
-					}),
-				}),
-				prof(MINING, {
-					n(16751, {	-- Merran <Mining Supplies>
-						["coord"] = { 59.9, 88.6, THE_EXODAR },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {{ "sub", "common_vendor", 4256 }},	-- Golnir Bouldertoe <Mining Supplies>
-					}),
-				}),
-				prof(TAILORING, {
-					n(16767, {	-- Neii <Tailoring Supplies>
-						["coord"] = { 64.7, 68.5, THE_EXODAR },
-						["races"] = ALLIANCE_ONLY,
-						-- #if AFTER CATA
-						["sym"] = { { "sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
-						-- #endif
-						["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
-							i(21892),	-- Pattern: Bolt of Imbued Netherweave (RECIPE!)
-							i(21894, {	-- Pattern: Bolt of Soulcloth (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(21896),	-- Pattern: Netherweave Robe (RECIPE!)
-							i(21897),	-- Pattern: Netherweave Tunic (RECIPE!)
-						}),
-					}),
-				}),
-			}),
 			n(QUESTS, {
 				q(10356, {	-- A Donation of Mageweave
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
@@ -555,17 +289,94 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(VENDORS, {
+				n(16705, {	-- Altaa <Alchemy Supplies>
+					["coord"] = { 28.1, 61.9, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+						3371,	-- Empty-/Crystal Vial
+						-- #if BEFORE CATA
+						3372,	-- Leaded Vial
+						8925,	-- Crystal Vial
+						18256,	-- Imbued Vial
+						-- #endif
+						2453,	-- Bruiseweed
+						2449,	-- Earthroot
+						3356,	-- Kingsblood
+						785,	-- Mageroyal
+						3357,	-- Liferoot
+						2447,	-- Peacebloom
+						765,	-- Silverleaf
+						3355,	-- Wild Steelbloom
+						},
+					},
+					["groups"] =  {
+						i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
+							["isLimited"] = true,
+						}),
+					},
+				}),
+				n(16713, {	-- Arras <Blacksmithing Supplies>
+					["coord"] = { 61.3, 89.3, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						-- #if AFTER 4.3.0
+						{ "sub", "common_recipes_vendor", 55684 },	-- Jordan Smith <Blacksmithing Trainer & Supplies>
+						-- #endif
+						{ "select","itemID",
+							2880,	-- Weak Flux
+							3466,	-- Strong Flux
+							18567,	-- Elemental Flux
+							3857,	-- Coal
+							5956,	-- Blacksmith Hammer
+						},
+					},
+					["groups"] = {
+						i(23591, {	-- Plans: Adamantite Cleaver (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(23592, {	-- Plans: Adamantite Dagger (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(23590, {	-- Plans: Adamantite Maul (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(23593, {	-- Plans: Adamantite Rapier (RECIPE!)
+							["isLimited"] = true,
+						}),
+					},
+				}),
 				n(17512, {	-- Arred <Jewelcrafting Supplies>
 					["coord"] = { 45.5, 25.3, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select","itemID",
-						7341,	-- Cubic Zirconia Ring
-						7340,	-- Flawless Diamond Solitaire
-						7339,	-- Miniscule Diamond Ring
-						7338,	-- Mood Ring
-						7342,	-- Silver Piffeny Band
-						7337,	-- The Rock
-					}},
+					["sym"] = {
+						{ "sub", "common_recipes_vendor", 50480 },	-- Isabel Jones <Jewelcrafting Supplies>
+						{"select","itemID",
+							7341,	-- Cubic Zirconia Ring
+							7340,	-- Flawless Diamond Solitaire
+							7339,	-- Miniscule Diamond Ring
+							7338,	-- Mood Ring
+							7342,	-- Silver Piffeny Band
+							7337,	-- The Rock
+						},
+					},
+					["groups"] = appendGroups(JEWELCRAFTING_SUPPLIES, {
+						i(20854, {	-- Design: Amulet of the Moon
+							["isLimited"] = true,
+						}),
+						i(20856, {	-- Design: Heavy Golden Necklace of Battle
+							["isLimited"] = true,
+						}),
+						i(21948, {	-- Design: Opal Necklace of Impact
+							["isLimited"] = true,
+						}),
+						i(20975, {	-- Design: The Jade Eye
+							["isLimited"] = true,
+						}),
+					}),
 				}),
 				n(16715, {	-- Avelii
 					["coord"] = { 48.6, 90.2, THE_EXODAR },
@@ -581,6 +392,18 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						3026,    -- Reinforced Bow
 						2504,    -- Worn Shortbow
 					}},
+				}),
+				n(16739, {	-- Caregiver Breel <Innkeeper>
+					["coord"] = { 59.5, 18.76, THE_EXODAR },	-- The Exobar
+					["races"] = ALLIANCE_ONLY,
+					["group"] = {
+						i(1179),	-- Ice Cold Milk
+					},
+				}),
+				n(20121, {	-- Dekin <Fishing Supplies>
+					["coord"] = { 29.5, 20.1, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4222 }},	-- Voloren <Fishing Supplies>
 				}),
 				n(16765, {	-- Ellomin
 					["coord"] = { 73.4, 84.6, THE_EXODAR },
@@ -602,6 +425,57 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						2533,    -- War Maul
 						2535,    -- War Staff
 					}},
+				}),
+				n(16722, {	-- Egomis <Enchanting Supplies>
+					["coord"] = { 39.9, 40.2, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						-- #if AFTER CATA
+						{"sub", "common_recipes_vendor", 1318},	-- Jessara Cordell <Enchanting Supplies>
+						-- #endif
+						{ "select","itemID",
+							6217,	-- Copper Rod
+							4470,	-- Simple Wood
+							11291,	-- Star Wood
+							10938,	-- Lesser Magic Essence
+							10940,	-- Strange Dust
+							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+							20752,	-- Formula: Minor Mana Oil (RECIPE!)
+							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+							-- #if BEFORE CATA
+							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+							-- #else
+							38682,	-- Enchanting Vellum
+							-- #endif
+						},
+					},
+					["groups"] = appendGroups(EGOMIS_GROUPS, {}),
+				}),
+				n(16657, {	-- Feera <Engineering Supplies>
+					["coord"] = { 53.6, 90.8, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+							5956,	-- Blacksmith Hammer
+							4400,	-- Heavy Stock
+							4399,	-- Wooden Stock
+						},
+					},
+					["groups"] = {
+						i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
+							["isLimited"] = true,
+						}),
+						applyclassicphase(TBC_PHASE_TWO, i(23815, {	-- Schematic: Adamantite Shell Machine (RECIPE!)
+							["isLimited"] = true,
+							["timeline"] = { REMOVED_4_0_1 },
+						})),
+						i(23816, {	-- Schematic: Fel Iron Toolbox (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(23811, {	-- Schematic: White Smoke Flare (RECIPE!)
+							["isLimited"] = true,
+						}),
+					},
 				}),
 				n(20121, {	-- Fingin
 					["coord"] = { 52.2, 84.6, THE_EXODAR },
@@ -677,6 +551,22 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						8093,    -- Platemail Leggings
 					}},
 				}),
+				n(16748, {	-- Haferet <Leatherworking Supplies>
+					["coord"] = { 66.6, 73.7, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
+					["groups"] = {
+						i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(25720, {	-- Pattern: Heavy Knothide Leather
+							["timeline"] = { REMOVED_3_2_0},
+							["requireSkill"] = LEATHERWORKING,
+							["isLimited"] = true,
+							["f"] = RECIPES,
+						}),
+					},
+				}),
 				n(16766, {	-- Issca <Tabard Vendor>
 					["coord"] = { 53.8, 67.2, THE_EXODAR },
 					["sym"] = { { "sub", "common_vendor", 5193 } },	-- Rebecca Laughlin <Tabard Designer>
@@ -732,6 +622,25 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						845,    -- Tanned Leather Pants
 					}},
 				}),
+				n(16751, {	-- Merran <Mining Supplies>
+					["coord"] = { 59.9, 88.6, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4256 }},	-- Golnir Bouldertoe <Mining Supplies>
+				}),
+				n(16706, {	-- Musal <Alchemy Supplies & Reagents>
+					["coord"] = { 44.77, 63.2, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+						3371,	-- Empty-/Crystal Vial
+						-- #if BEFORE CATA
+						3372,	-- Leaded Vial
+						8925,	-- Crystal Vial
+						18256,	-- Imbued Vial
+						-- #endif
+						},
+					},
+				}),
 				n(16735, {	-- Muhaa
 					["coord"] = { 45.8, 89.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
@@ -741,6 +650,35 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						2509,    -- Ornate Blunderbuss
 						2511,    -- Hunter's Boomstick
 					}},
+				}),
+				n(16767, {	-- Neii <Tailoring Supplies>
+					["coord"] = { 64.7, 68.5, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER CATA
+					["sym"] = { { "sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
+					-- #endif
+					["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
+						i(21892),	-- Pattern: Bolt of Imbued Netherweave (RECIPE!)
+						i(21894, {	-- Pattern: Bolt of Soulcloth (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(21896),	-- Pattern: Netherweave Robe (RECIPE!)
+						i(21897),	-- Pattern: Netherweave Tunic (RECIPE!)
+					}),
+				}),
+				n(16768, {	-- Nurguni <Tradesman>
+					["coord"] = { 57.0, 50.05, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+						3371,	-- Empty-/Crystal Vial
+						-- #if BEFORE CATA
+						3372,	-- Leaded Vial
+						8925,	-- Crystal Vial
+						18256,	-- Imbued Vial
+						-- #endif
+						},
+					},
 				}),
 				n(16632, {	-- Oss
 					["coord"] = { 46.8, 60.4, THE_EXODAR },
@@ -756,6 +694,28 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						5208,    -- Smoldering Wand
 					}},
 				}),
+				n(16718, {	-- Phea <Cooking Supplies>
+					["coord"] = { 54.4, 26.3, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+							159,	-- Refreshing Spring Water
+							30817,	-- Simple Flour
+							2678,	-- Mild Spices
+							-- #if BEFORE WRATH
+							2692,	-- Hot Spices
+							3713,	-- Soothing Spices
+							-- #endif
+						},
+					},
+					["groups"] = appendGroups(PHEA_GROUPS, {}),
+				}),
+				n(30732, {	-- Sessoh <Inscription Supplies>
+					["coord"] = { 39.6, 38.7, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_3_0_2 },
+					["sym"] = {{ "sub", "common_vendor", 30730 }},	-- Stanly McCormick <Inscription Supplies>
+				}),
 				n(21019, {	-- Sixx <Moth Keeper>
 					["coord"] = { 30.1, 33.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
@@ -763,6 +723,16 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(29901),	-- Blue Moth (PET!)
 						i(29904),	-- White Moth (PET!)
 						i(29903),	-- Yellow Moth (PET!)
+					},
+				}),
+				n(30716, {	-- Thoth <Inscription Trainer>
+					["coord"] = { 40.5, 39.8, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_3_0_2 },
+					["groups"] = {
+						i(137789, {	-- Technique: Songs of the Legion (RECIPE!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 					},
 				}),
 				n(17584, {	-- Torallius the Pack Handler <Elekk Breeder>

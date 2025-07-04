@@ -287,18 +287,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(87532),	--
 			-- Week 6:
 			-- q(87515),	--
-
-			-- Seemingly no longer in use, but left for reference
-			q(90504), --
-			q(90503), --
-			q(90502), --
-			q(90501), --
-			q(90500), --
-			q(90499), --
-			q(90498), --
-			q(90497), --
-			q(90496), --
-			q(90495), --
 		}),
 	})),
 });

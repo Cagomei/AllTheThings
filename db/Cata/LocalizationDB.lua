@@ -561,7 +561,7 @@ _.HeaderConstants = {
 	LUNAR_FESTIVAL_HEADER = -1000221,
 	MIDSUMMER_FIRE_FESTIVAL_HEADER = -1000223,
 	NOBLEGARDEN_HEADER = -1000224,
-	PET_BATTLE = -1000029,
+	PET_BATTLES = -1000029,
 	PILGRIMS_BOUNTY_HEADER = -1000225,
 	PIRATES_DAY_HEADER = -1000226,
 	PROFESSIONS = -1000030,
@@ -771,6 +771,7 @@ localize(L.HEADER_NAMES, {
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
+	[-1000029] = "This section contains Pet Battle related quests and tamers.",
 	[-1000030] = "This section will only show your current character's professions outside of Account and Debug Mode.",
 	[-1000033] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",
 	[-1000097] = "This section will show you things that you could buy in the In-Game Shop in Retail.",

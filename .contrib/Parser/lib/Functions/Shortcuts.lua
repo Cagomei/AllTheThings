@@ -1154,6 +1154,20 @@ iexact = function(itemID, modID, bonusID, t)			-- Create an exact ITEM Object (s
 	end
 	return i;
 end
+container = function(id, t)								-- This function helps build an item container for a "sack" or "bag" or some other type of reward structure.
+	local bag = header(HEADERS.Item, id, t);
+	local providers = bag.providers;
+	if not providers then
+		providers = {};
+		bag.providers = providers;
+	end
+	providers[#providers + 1] = { "i", id };
+	if bag.provider then
+		providers[#providers + 1] = bag.provider;
+		bag.provider = nil;
+	end
+	return bag;
+end
 
 ---@param id number
 ---@param t? table
@@ -1513,12 +1527,12 @@ battlepets = function(timeline, t)						-- Creates a BATTLE_PETS header with pet
 	end
 	return petbattle(filter(BATTLE_PETS, bubbleDownSelf({ ["timeline"] = timeline }, t)));
 end
-petbattles = function(timeline, t)						-- Creates a PET_BATTLE header with pet battle filter on it. Use this with Outdoor Zones.
+petbattles = function(timeline, t)						-- Creates a PET_BATTLES header with pet battle filter on it. Use this with Outdoor Zones.
 	if not t then
 		t = timeline;
 		timeline = { ADDED_5_0_4 };
 	end
-	return petbattle(n(PET_BATTLE, bubbleDownSelf({ ["timeline"] = timeline }, t)));
+	return petbattle(n(PET_BATTLES, bubbleDownSelf({ ["timeline"] = timeline }, t)));
 end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)

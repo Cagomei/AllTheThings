@@ -210,7 +210,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 24496,	-- Arcane Rune
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 61.2, 14.8, COLDRIDGE_VALLEY },
+								{ 61.3, 14.5, COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.7, 64.8, DUN_MOROGH },
 								-- #endif
@@ -218,6 +218,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { MAGE },
+							["groups"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/2 Practice Frost Nova [MoP+]
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+								-- #endif
+							},
 						}),
 						q(1599, {	-- Beginnings
 							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
@@ -439,10 +447,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(24530, {	-- Oh, A Hunter's Life For Me
 							["qg"] = 895,	-- Thorgas Grimson <Hunter Trainer>
 							["sourceQuest"] = 3108,	-- Etched Rune
-							["coord"] = { 36.2, 65.9, DUN_MOROGH },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 63.7, 20.1, COLDRIDGE_VALLEY},
+								-- #else
+								{ 36.2, 65.9, DUN_MOROGH },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { HUNTER },
+							["g"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/5 Practice Steady Shot 
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+								-- #endif
+							},
 						}),
 						q(24532, {	-- Evisceratin' the Enemy
 							["qg"] = 916,	-- Solm Hargrin <Rogue Trainer>
@@ -458,9 +480,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { DWARF },
 							["classes"] = { ROGUE },
 							["groups"] = {
+								-- #if BEFORE MOP
 								objective(1, {	-- 0/3 Practice Eviscerate
 									["provider"] = { "n", 44389 },	-- Training Dummy
 								}),
+								-- #else
+								objective(2, {	-- 0/3 Practice Eviscerate
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+								-- #endif
 							},
 						}),
 						q(24474, {	-- First Things First: We're Gonna Need Some Beer
@@ -945,10 +973,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(24531, {	-- Getting Battle-Ready
 							["qg"] = 912,	-- Thran Khorman <Warrior Trainer>
 							["sourceQuest"] = 3106,	-- Simple Rune
-							["coord"] = { 35.8, 65.6, DUN_MOROGH },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 61.9, 19.0, COLDRIDGE_VALLEY },
+								-- #else
+								{ 35.8, 65.6, DUN_MOROGH },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { WARRIOR },
+							["g"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/1 Practice Charge
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+								-- #endif
+							},
 						}),
 						q(24494, {	-- Empowered Rune
 							["providers"] = {
@@ -974,7 +1016,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 24494,	-- Empowered Rune
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								{ 61.8, 13.6, COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.8, 64.6, DUN_MOROGH },
 								-- #endif
@@ -982,6 +1024,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { SHAMAN },
+							["groups"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/2 Practice Primal Strike 
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+								-- #endif
+							},
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77667, {	-- Spell Research
@@ -1077,10 +1127,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26904, {	-- Harnessing the Flames
 							["qg"] = 43455,				-- Saripal Smolderbrew <Warlock Trainer>
 							["sourceQuest"] = 3115,		-- Tainted Memorandum
-							["coord"] = { 35.7, 65.3, DUN_MOROGH },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 61.2, 17.5, COLDRIDGE_VALLEY},
+								-- #else
+								{ 35.7, 65.3, DUN_MOROGH },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { WARLOCK },
+							["groups"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/5 Practice casting Corruption [MoP+]
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+								-- #endif
+							},
 						}),
 						q(183, {	-- The Boar Hunter
 							["qg"] = 714,	-- Talin Keeneye
@@ -1140,7 +1204,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 3107,	-- Consecrated Rune
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 61.8, 24.4, COLDRIDGE_VALLEY },
+								{ 61.9, 24.6, COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.8, 66.7, DUN_MOROGH },
 								-- #endif
@@ -1149,9 +1213,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { DWARF },
 							["classes"] = { PALADIN },
 							["groups"] = {
-								objective(2, {	-- Use Seal of Command and Hit a Training Dummy
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/1 Use Seal of Command and Hit a Training Dummy [MoP+]
 									["provider"] = { "n", 44389 },	-- Training Dummy
 								}),
+								-- #endif
 							},
 						}),
 						-- #if BEFORE CATA
@@ -1339,9 +1406,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { DWARF },
 							["classes"] = { PRIEST },
 							["groups"] = {
+								-- #if BEFORE MOP
 								objective(1, {	-- 0/5 Practice Shadow Word: Pain
 									["provider"] = { "n", 44389 },	-- Training Dummy
 								}),
+								-- #else
+								objective(2, {	-- 0/5 Practice Shadow Word: Pain
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+								-- #endif
 							},
 						}),
 					}),
@@ -1517,6 +1590,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					petbattles({
 						n(124617, {	-- Environeer Bert <Leprous Pet Tamer>
 							["coord"] = { 42.9, 74.3, NEW_TINKERTOWN_LOWER },
+							["description"] = "This tamer's pets scale with the level of your pets. (They will be the same level as your highest pet in your party!) Meaning the easiest strategy is actually to bring 3 level 1 Elemental pets with an Elemental attack, spam, and win.",
+							["timeline"] = { ADDED_7_3_0 },
+							["groups"] = {
+								q(47895, {	-- Bert's Bots
+									-- CRIEVE NOTE: Not sure if there's a source achievement or quest required to do first.
+									["timeline"] = { ADDED_7_3_0 },
+									["isDaily"] = true,
+									["groups"] = {
+										i(151638, {	-- Leprous Sack of Pet Supplies
+											["timeline"] = { ADDED_7_3_0 },
+											["groups"] = {
+												i(151645, {	-- Dibbler (PET!)
+													["timeline"] = { ADDED_7_3_0 },
+												}),
+											},
+										}),
+									},
+								}),
+							},
 						}),
 					}),
 					n(QUESTS, {

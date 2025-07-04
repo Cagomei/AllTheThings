@@ -577,6 +577,17 @@ local InformationTypes = {
 			end
 		end,
 	}),
+	CreateInformationType("petBattleLvl", { text = LEVEL .. " (" .. L.PET_BATTLES .. ")", priority = 2.01, ShouldDisplayInExternalTooltips = false,
+		Process = function(t, reference, tooltipInfo)
+			local petBattleLvl = reference.petBattleLvl;
+			if petBattleLvl then
+				tinsert(tooltipInfo, {
+					left = LEVEL .. " (" .. L.PET_BATTLES .. ")",
+					right = tostring(petBattleLvl),
+				});
+			end
+		end,
+	}),
 
 	-- Quest Fields
 	CreateInformationType("qgs", { text = L.QUEST_GIVERS, priority = 2.05, ShouldDisplayInExternalTooltips = false,

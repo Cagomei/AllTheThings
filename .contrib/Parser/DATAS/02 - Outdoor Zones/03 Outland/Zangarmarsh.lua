@@ -195,6 +195,16 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66551, {	-- Ras'an <Master Pet Tamer>
 						["coord"] = { 17.2, 50.6, ZANGARMARSH },
+						["description"] = "Ras'an's pets are level 21 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Ageless Bronze Drake and Blighted Squirrel.",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 21,
+						["groups"] = {
+							q(31923, {	-- Ras'an
+								["sourceAchievement"] = 6604,	-- Taming Outland
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
 					}),
 				}),
 				n(PROFESSIONS, {
@@ -486,7 +496,10 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 9765,	-- Preparing for War
 						["maxReputation"] = { FACTION_CENARION_EXPEDITION, EXALTED },	-- Cenarion Expedition, Exalted.
 						["timeline"] = { REMOVED_4_3_0 },
+						-- #if BEFORE 4.3.0
+						-- This way it doesnt display as currency once the quest got removed
 						["cost"] = { { "i", 24368, 1 } },	-- Coilfang Armaments
+						-- #endif
 						["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(67, 67, 20),

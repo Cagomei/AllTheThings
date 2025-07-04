@@ -383,9 +383,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-							["sym"] = {{"fill"}},
-						}),
+						i(135546),	-- Fel-Touched Crate of Battlefield Goods
 					},
 				}),
 				q(38923, {	-- Ashran Dominance (H)
@@ -393,9 +391,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-							["sym"] = {{"fill"}},
-						}),
+						i(135546),	-- Fel-Touched Crate of Battlefield Goods
 					},
 				}),
 				q(37483, {	-- Captian's Whistle (A)
@@ -457,9 +453,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-							["sym"] = {{"fill"}},
-						}),
+						i(135546),	-- Fel-Touched Crate of Battlefield Goods
 					},
 				}),
 				q(39090, {	-- Slay Them All! (H)
@@ -467,9 +461,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-							["sym"] = {{"fill"}},
-						}),
+						i(135546),	-- Fel-Touched Crate of Battlefield Goods
 					},
 				}),
 				q(36133, {	-- Uncovering the Artifact Fragments (A)

@@ -3937,6 +3937,36 @@ root(ROOTS.HiddenAchievementTriggers, {
 
 			-- 11.2.0.61624
 			ach(60941),	-- <Hidden> 11.2 Raid Renown - Activated All Dead Drops
+
+			-- 11.2.0.61787
+			ach(60978),	-- Gilded Ethereal Crests earned
+			ach(60975),	-- Weathered Ethereal Crests earned
+			ach(60976),	-- Carved Ethereal Crests earned
+			ach(60977),	-- Runed Ethereal Crests earned
+			ach(60993),	-- <DNT> Plexus Sentinel defeated on Heroic
+			ach(60994),	-- <DNT> Loom'ithar defeated on Heroic
+			ach(60995),	-- <DNT> Soulbinder Naazindhri defeated on Heroic
+			ach(60996),	-- <DNT> Forgeweaver Araz defeated on Heroic
+			ach(60997),	-- <DNT> The Soul Hunters defeated on Heroic
+			ach(60998),	-- <DNT> Fractillus defeated on Heroic
+			ach(60999),	-- <DNT> Nexus-King Salhadaar defeated on Heroic
+			ach(61000),	-- <DNT> Dimensius, the All-Devouring defeated on Heroic
+			ach(61001),	-- <DNT> Plexus Sentinel defeated on Normal
+			ach(61002),	-- <DNT> Loom'ithar defeated on Normal
+			ach(61003),	-- <DNT> Soulbinder Naazindhri defeated on Normal
+			ach(61004),	-- <DNT> Forgeweaver Araz defeated on Normal
+			ach(61005),	-- <DNT> The Soul Hunters defeated on Normal
+			ach(61006),	-- <DNT> Fractillus defeated on Normal
+			ach(61007),	-- <DNT> Nexus-King Salhadaar defeated on Normal
+			ach(61008),	-- <DNT> Dimensius, the All-Devouring defeated on Normal
+			ach(61009),	-- <DNT> Plexus Sentinel defeated on Raid Finder
+			ach(61010),	-- <DNT> Loom'ithar defeated on Raid Finder
+			ach(61011),	-- <DNT> Soulbinder Naazindhri defeated on Raid Finder
+			ach(61012),	-- <DNT> Forgeweaver Araz defeated on Raid Finder
+			ach(61013),	-- <DNT> The Soul Hunters defeated on Raid Finder
+			ach(61014),	-- <DNT> Fractillus defeated on Raid Finder
+			ach(61015),	-- <DNT> Nexus-King Salhadaar defeated on Raid Finder
+			ach(61016),	-- <DNT> Dimensius, the All-Devouring defeated on Raid Finder
 		})),
 	}),
 });

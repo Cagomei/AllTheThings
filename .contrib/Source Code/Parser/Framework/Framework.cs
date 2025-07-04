@@ -1208,6 +1208,11 @@ namespace ATT
                         return "lvl";
                     }
 
+                case "petBattleLvl":
+                    {
+                        return "petBattleLvl";
+                    }
+
                 case "rank":
                 case "azeriteRank":
                     {

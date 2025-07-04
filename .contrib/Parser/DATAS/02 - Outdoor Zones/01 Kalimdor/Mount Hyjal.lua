@@ -2072,6 +2072,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66819, {	-- Brok <Master Pet Tamer>
 					["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 25,
+					["groups"] = {
+						q(31972, {	-- Brok
+							["sourceAchievement"] = 7525,	-- Taming Cataclysm
+							["timeline"] = { ADDED_5_0_4 },
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			n(RARES, {

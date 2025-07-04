@@ -2225,27 +2225,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(300),
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(167732, {	-- Battle-Hardened Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(500),
 							["timeline"] = { ADDED_8_1_5 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(187998, {	-- Eternal Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(500),
 							["timeline"] = { ADDED_9_1_5 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(500),
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
 							["timeline"] = { ADDED_7_2_5 },
 							["cost"] = BREWFEST_TOKEN_COST(500),
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(37571, {	-- "Brew of the Month" Club Membership Form (current)
 							["timeline"] = { CREATED_2_2_2, ADDED_3_0_2 },	-- NOTE: Not used in 2007
@@ -2415,27 +2410,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(300),
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(167732, {	-- Battle-Hardened Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(500),
 							["timeline"] = { ADDED_8_1_5 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(187998, {	-- Eternal Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(500),
 							["timeline"] = { ADDED_9_1_5 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(500),
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
 							["timeline"] = { ADDED_7_2_5 },
 							["cost"] = BREWFEST_TOKEN_COST(500),
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(37599, {	-- "Brew of the Month" Club Membership Form (current)
 							["timeline"] = { CREATED_2_2_2, ADDED_3_0_2 },	-- NOTE: Not used in 2007

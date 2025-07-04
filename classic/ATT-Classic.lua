@@ -361,20 +361,6 @@ ResolveSymbolicLink = function(o)
 					response = app:BuildSearchResponse(app.Categories.ExpansionFeatures, "requireSkill", requireSkill);
 					if response then tinsert(searchResults, {text=EXPANSION_FILTER_TEXT,icon = app.asset("Category_ExpansionFeatures"),g=response}); end
 				end
-			elseif cmd == "fill" then
-				-- Instruction to fill with identical content cached elsewhere for this group
-				local cache = SearchForField(o.key, o[o.key]);
-				if #cache > 0 then
-					o.symbolizing = true;
-					for k,result in ipairs(cache) do
-						if not result.symbolizing and result ~= o then
-							tinsert(searchResults, result);
-						end
-					end
-					o.symbolizing = nil;
-				else
-					print("Failed to select ", sym[2], sym[3]);
-				end
 			elseif cmd == "pop" then
 				-- Instruction to "pop" all of the group values up one level.
 				local orig = searchResults;

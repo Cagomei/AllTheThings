@@ -296,8 +296,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					VALE_OF_ETERNAL_BLOSSOMS,
 				},
 				["g"] = {
-					i(98133, {	-- Greater Cache of Treasures
+					container(98133, {	-- Greater Cache of Treasures
 						["description"] = "Rewarded for completing |cFFFFD700The King and the Council|r and |cFFFFD700The Warchief and the Darkness|r quests.\nSee Rewards Tab description for a detailed farming guide.",
+						["providers"] = {
+							{ "i", 92813 },	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133]
+							{ "i", 89613 },	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133]
+						},
 						["g"] = {
 							n(BACK, {
 								i(92881),	-- Bladesnap Drape
@@ -594,7 +598,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 							}),
 						},
 					}),
-					i(98546, {	-- Bulging Heroic Cache of Treasures
+					container(98546, {	-- Bulging Heroic Cache of Treasures
 						["description"] = "Rewarded for completing |cFFFFD700Heroic Deeds|r quest.\nMouseover the Rewards Tab located ATT > Expansion Features > MoP > Scenarios > Rewards for a detailed farming guide.",
 						["g"] = {
 							n(BACK, {
@@ -760,9 +764,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["maps"] = { 523 },	-- Dun Morogh (Blood in the Snow scenario)
 						["g"] = {
-							i(98133, {	-- Greater Cache of Treasures
-								["sym"] = { {"fill"} },
-							}),
+							i(98133),	-- Greater Cache of Treasures
 						},
 					}),
 					q(32807, {	-- The Warchief and the Darkness
@@ -771,9 +773,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["maps"] = { 520, 521 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
 						["g"] = {
-							i(98133, {	-- Greater Cache of Treasures
-								["sym"] = { {"fill"} },
-							}),
+							i(98133),	-- Greater Cache of Treasures
 						},
 					}),
 					q(32901, {	-- Heroic Deeds
@@ -781,9 +781,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						["coord"] = { 46.6, 56.5, 392 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(98546, {  -- Bulging Heroic Cache of Treasures
-								["sym"] = { {"fill"} },
-							}),
+							i(98546),  -- Bulging Heroic Cache of Treasures
 						},
 					}),
 					q(32900, {	-- Heroic Deeds
@@ -791,9 +789,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						["coord"] = { 47.23, 49.71, 393 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(98546, {  -- Bulging Heroic Cache of Treasures
-								["sym"] = { {"fill"} },
-							}),
+							i(98546),  -- Bulging Heroic Cache of Treasures
 						},
 					}),
 				},

@@ -247,13 +247,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["g"] = {
 					i(169173),	-- Blueprint: Anti-Gravity Pack
 					i(169382),	-- Lost Robogrip (PET!)
-					i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
-						i(169843),	-- Azeroth Mini: Cork Stuttguard
-						i(169842),	-- Azeroth Mini: Roadtrogg
-						i(169840),	-- Azeroth Mini: Gazlowe
-						i(169795),	-- Azeroth Mini: Bondo Bigblock
-						i(169849),	-- Azeroth Mini: Naeno Megacrash
-					}),
+					i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 				},
 			}),
 			n(151124, {	-- Mechagonian Nullifier
@@ -434,6 +428,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["g"] = {
 					i(168749),	-- Performant Effective Logic Board
 				},
+			}),
+		}),
+		n(REWARDS, {
+			container(169848, {	-- Azeroth Mini Pack: Bondo's Yard
+				i(169843),	-- Azeroth Mini: Cork Stuttguard
+				i(169842),	-- Azeroth Mini: Roadtrogg
+				i(169840),	-- Azeroth Mini: Gazlowe
+				i(169795),	-- Azeroth Mini: Bondo Bigblock
+				i(169849),	-- Azeroth Mini: Naeno Megacrash
 			}),
 		}),
 	}),

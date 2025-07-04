@@ -223,6 +223,16 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66552, {	-- Narrok <Master Pet Tamer>
 						["coord"] = { 61.0, 49.4, NAGRAND },
+						["description"] = "Narrok's pets are level 22 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anubisath Idol (Demolish/Sandstorm/Deflection) and Turkey (Peck/Squawk/Food Coma).",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 22,
+						["groups"] = {
+							q(31924, {	-- Narrok
+								["sourceAchievement"] = 6604,	-- Taming Outland
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
 					}),
 				}),
 				n(QUESTS, {

@@ -177,6 +177,7 @@ local TooltipSettingsBase = {
 		["playerCoord"] = true,
 		["requireEvent"] = true,
 		["requireSkill"] = true,
+		["petBattleLvl"] = true,
 		["providers"] = true,
 		["nextEvent"] = true,
 		["spellName"] = true,

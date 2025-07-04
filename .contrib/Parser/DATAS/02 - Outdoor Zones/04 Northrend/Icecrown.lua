@@ -206,8 +206,21 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				petbattles({
-					n(66675, {	-- Major Payne
+					n(66675, {	-- Major Payne <Grand Master Pet Tamer>
 						["coord"] = { 77.4, 19.6, ICECROWN },
+						["description"] = "Major Payne's pets are level 25 of epic quality and exceptionally powerful of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Mechanical - use Elemental (powerful and tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Cogblade Raptor (Batter/Overtune/Exposed Wounds) and Flayer Youngling (Blitz/Focus/Kick).",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31935, {	-- Grand Master Payne
+								["sourceAchievement"] = 6605,	-- Taming Northrend
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(89125),	-- Sack of Pet Supplies
+								},
+							}),
+						},
 					}),
 				}),
 				n(QUESTS, {

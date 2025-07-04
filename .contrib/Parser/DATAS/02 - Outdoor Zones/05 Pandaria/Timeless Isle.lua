@@ -46,7 +46,7 @@ root(ROOTS.Zones, {
 							petbattle(ach(8518)),	-- Master of the Master
 							ach(8410),	-- The Celestial Tournament
 						}),
-						n(PET_BATTLE, {
+						petbattles({
 							n(71933, {	-- Blingtron 4000
 								["coord"] = { 34.8, 59.6, 571 },
 							}),

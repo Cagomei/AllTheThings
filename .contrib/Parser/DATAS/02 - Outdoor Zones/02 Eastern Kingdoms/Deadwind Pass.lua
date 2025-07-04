@@ -44,6 +44,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(66522, {	-- Lydia Accoste <Grand Master Pet Tamer>
 					["coord"] = { 40.2, 76.6, DEADWIND_PASS },
+					["description"] = "Lydia's pets are level 19 of the following consecutive pet classes:\n1. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n2. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Alpine Chipmunk and Alpine Hare.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 19,
+					["groups"] = {
+						q(31916, {	-- Grand Master Lydia Accoste
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["isDaily"] = true,
+							["groups"] = {
+								i(89125),	-- Sack of Pet Supplies
+							},
+						}),
+					},
 				}),
 			}),
 			-- #if AFTER 7.0.3.21796

@@ -568,21 +568,18 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				ADDED_5_3_0,
 				REMOVED_9_0_1,	-- no longer available to queue random scenarios post 9.0 squish
 			},
-			["sym"] = {{"fill"}},
 		}),
 		i(92813, {	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133)
 			["timeline"] = {
 				ADDED_5_1_0,
 				REMOVED_5_3_0,
 			},
-			["sym"] = {{"select","itemID",98133},{"pop"}},
 		}),
 		i(89613, {	-- Cache of Treasures [Looks like this was deprecated in favor of #92813)
 			["timeline"] = {
 				ADDED_5_0_4,
 				REMOVED_5_1_0,
 			},
-			["sym"] = {{"select","itemID",98133},{"pop"}},
 		}),
 		i(98134, {	-- Heroic Cache of Treasures
 			["timeline"] = {

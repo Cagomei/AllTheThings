@@ -2573,19 +2573,9 @@ root(ROOTS.Zones, {
 					})),
 				}),
 				n(REWARDS, {
-					i(46007, {	-- Bag of Fishing Treasures
+					container(46007, {	-- Bag of Fishing Treasures
 						["provider"] = { "n", 28742 },	-- Marcia Chase
 						["description"] = "Fishing Daily Quest Reward",
-						["sourceQuests"] = {
-							-- #if BEFORE CATA
-							24806,	-- Better Luck Next Time
-							-- #endif
-							13833,	-- Blood Is Thicker
-							13834,	-- Dangerously Delicious
-							13836,	-- Disarmed!
-							13832,	-- Jewel Of The Sewers
-							13830,	-- The Ghostfish
-						},
 						["requireSkill"] = FISHING,
 						["groups"] = {
 							applyclassicphase(WRATH_PHASE_TWO, i(45862)),	-- Bold Stormjewel
@@ -2631,20 +2621,8 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					i(44113, {	-- Small Spice Bag
+					container(44113, {	-- Small Spice Bag
 						["description"] = "Cooking Daily Quest Reward",
-						["sourceQuests"] = {
-							13103,	-- Cheese for Glowergold [A]
-							13115,	-- Cheese for Glowergold [H]
-							13113,	-- Convention at the Legerdemain [A]
-							13101,	-- Convention at the Legerdemain [H]
-							13100,	-- Infused Mushroom Meatloaf [A]
-							13112,	-- Infused Mushroom Meatloaf [H]
-							13107,	-- Mustard Dogs! [A]
-							13116,	-- Mustard Dogs! [H]
-							13102,	-- Sewer Stew [A]
-							13114,	-- Sewer Stew [H]
-						},
 						["requireSkill"] = COOKING,
 						["groups"] = {
 							currency(81),	-- Epicurean's Award

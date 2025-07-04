@@ -129,50 +129,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["skipFill"] = true,
 			}),
 			-- #endif
+			petbattles({
+				n(63596, {	-- Audrey Burnheap <Battle Pet Tamer>
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["description"] = 
+						-- #if BEFORE 9.0.3
+						"Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nNew quest might not be given until daily reset.",
+						-- #else
+						"Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until daily reset.",
+						-- #endif
+					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
-					n(1302, {	-- Bernard Gump <Florist>
-						["coords"] = {
-							-- #if AFTER CATA
-							{ 69.2, 71.8, STORMWIND_CITY },
-							-- #elseif AFTER WRATH
-							{ 69.6, 71.4, STORMWIND_CITY },
-							-- #else
-							{ 64.2, 61.0, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-								2453,	-- Bruiseweed
-								2449,	-- Earthroot
-								3356,	-- Kingsblood
-								3357,	-- Liferoot
-								785,	-- Mageroyal
-								3355,	-- Wild Steelbloom
-							},
-						},
-					}),
-					n(1257, {	-- Keldric Boucher <Alchemy Supplies & Reagents>/<Arcane Goods Vendor>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 62.8, 75.0, STORMWIND_CITY },
-							-- #else
-							{ 55.6, 65.8, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-							3371,	-- Empty-/Crystal Vial
-							-- #if BEFORE CATA
-							3372,	-- Leaded Vial
-							8925,	-- Crystal Vial
-							18256,	-- Imbued Vial
-							-- #endif
-							},
-						},
-					}),
 					n(5499, {	-- Lilyssia Nightbreeze <Alchemy Trainer>
 						["coords"] = {
 							-- #if AFTER WRATH
@@ -190,74 +161,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						),
 					}),
-					n(1313, {	-- Maria Lumere <Alchemy Supplies>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 55.6, 85.6, STORMWIND_CITY },
-							-- #else
-							{ 46.6, 78.8, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-							3371,	-- Empty-/Crystal Vial
-							-- #if BEFORE CATA
-							3372,	-- Leaded Vial
-							8925,	-- Crystal Vial
-							18256,	-- Imbued Vial
-							-- #endif
-							},
-						},
-						["groups"] = sharedData({
-							["isLimited"] = true,
-						}, {
-							i(2453),	-- Bruiseweed
-							i(2449),	-- Earthroot
-							i(3356),	-- Kingsblood
-							i(3357),	-- Liferoot
-							i(785),	-- Mageroyal
-							i(2447),	-- Peacebloom
-							i(765),	-- Silverleaf
-							i(3355),	-- Wild Steelbloom
-							i(9301),	-- Recipe: Elixir of Shadow Power (RECIPE!)
-						}),
-					}),
 				}),
 				prof(BLACKSMITHING, {
-					n(55684, {	-- Jordan Smith <Blacksmithing Trainer & Supplies>
-						["coord"] = { 64.8, 48.2, STORMWIND_CITY },
-						["timeline"] = { ADDED_4_3_0 },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {}),
-					}),
-					n(5512, {	-- Kaita Deepforge <Blacksmithing Supplies>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 63.2, 37.6, STORMWIND_CITY },
-							-- #else
-							{ 56.3, 17.2, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							-- #if AFTER 4.3.0
-							{ "sub", "common_recipes_vendor", 55684 },	-- Jordan Smith <Blacksmithing Trainer & Supplies>
-							-- #endif
-							{ "select","itemID",
-								2880,	-- Weak Flux
-								3466,	-- Strong Flux
-								18567,	-- Elemental Flux
-								3857,	-- Coal
-								5956,	-- Blacksmith Hammer
-							},
-						},
-						["groups"] = {
-							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
-								["isLimited"] = true,
-							}),
-						},
-					}),
 					n(5511, {	-- Therum Deepforge <Expert Blacksmith>
 						["coords"] = {
 							-- #if AFTER WRATH
@@ -277,150 +182,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				prof(COOKING, {
-					n(5494, {	-- Catherine Leland <Fishing Supplier>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 55.0, 69.6, STORMWIND_CITY },
-							-- #else
-							{ 45.8, 58.5, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
-							i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-							i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-						},
-					}),
-					n(133411, {	-- Dalia Skyblossom <Cooking Trainer>
-						["coord"] = { 51.4, 18.0, STORMWIND_CITY },
-						["timeline"] = { ADDED_7_3_5 },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-								159,	-- Refreshing Spring Water
-								30817,	-- Simple Flour
-								2678,	-- Mild Spices
-							},
-						},
-						["groups"] = {
-							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						},
-					}),
-					n(1328, {	-- Elly Langston <Barmaid>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 76.0, 53.4, STORMWIND_CITY },	-- Pig and Whistle Tavern
-							-- #else
-							{ 73.0, 37.0, STORMWIND_CITY },	-- Pig and Whistle Tavern
-							-- #endif
-						},
-						["description"] = "Elly is walking around in the Tavern.",
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(2594),	-- Flagon of Dwarven Honeymead/Mead
-							i(2593),	-- Flask of Stormwind Tawny
-							i(1179),	-- Ice Cold Milk
-							i(2596),	-- Skin of Dwarven Stout
-						},
-					}),
-					n(5483, {	-- Erika Tate <Cooking Supplies> [TBC+] / Erika Tate <Cooking Supplier>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 77.6, 53.2, STORMWIND_CITY },
-							-- #else
-							{ 76.0, 36.8, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-								159,	-- Refreshing Spring Water
-								-- #if AFTER TBC
-								30817,	-- Simple Flour
-								-- #endif
-								2678,	-- Mild Spices
-								-- #if BEFORE WRATH
-								2692,	-- Hot Spices
-								3713,	-- Soothing Spices
-								-- #endif
-							},
-						},
-						["groups"] = {
-							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-						},
-					}),
-					n(49701, {	-- Jon Casper <Sous Chef>
-						["coords"] = {
-							-- #if AFTER 9.2.5
-							{ 50.5, 73.9, STORMWIND_CITY },
-							-- #else
-							{ 50.6, 71.6, STORMWIND_CITY },
-							-- #endif
-						},
-						["timeline"] = { ADDED_4_0_3 },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish (RECIPE!)
-							chefsaward(3, i(65427)),	-- Recipe: Basilisk Liverdog (RECIPE!)
-							chefsaward(3, i(65429)),	-- Recipe: Beer-Basted Crocolisk (RECIPE!)
-							chefsaward(3, i(65424)),	-- Recipe: Blackbelly Sushi (RECIPE!)
-							chefsaward(3, i(65411)),	-- Recipe: Broiled Mountain Trout (RECIPE!)
-							chefsaward(3, i(65431)),	-- Recipe: Chocolate Cookie (RECIPE!)
-							chefsaward(3, i(65430)),	-- Recipe: Crocolisk Au Gratin (RECIPE!)
-							chefsaward(3, i(65422)),	-- Recipe: Delicious Sagefish Tail (RECIPE!)
-							chefsaward(3, i(65408)),	-- Recipe: Feathered Lure (RECIPE!)
-							chefsaward(3, i(65423)),	-- Recipe: Fish Fry (RECIPE!)
-							chefsaward(5, i(65432)),	-- Recipe: Fortune Cookie (RECIPE!)
-							chefsaward(3, i(65428)),	-- Recipe: Grilled Dragon (RECIPE!)
-							chefsaward(3, i(65418)),	-- Recipe: Hearty Seafood Soup (RECIPE!)
-							chefsaward(3, i(65415)),	-- Recipe: Highland Spirits (RECIPE!)
-							chefsaward(3, i(65407)),	-- Recipe: Lavascale Fillet (RECIPE!)
-							chefsaward(3, i(65409)),	-- Recipe: Lavascale Minestrone (RECIPE!)
-							chefsaward(3, i(65412)),	-- Recipe: Lightly Fried Lurker (RECIPE!)
-							chefsaward(3, i(65416)),	-- Recipe: Lurker Lunch (RECIPE!)
-							chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish (RECIPE!)
-							chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy (RECIPE!)
-							chefsaward(3, i(65410)),	-- Recipe: Salted Eye (RECIPE!)
-							chefsaward(3, i(68688, {	-- Recipe: Scalding Murglesnout (RECIPE!)
-								["timeline"] = { ADDED_4_0_6 },
-							})),
-							chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab (RECIPE!)
-							chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head (RECIPE!)
-							chefsaward(3, i(65425)),	-- Recipe: Skewered Eel (RECIPE!)
-							chefsaward(5, i(65433)),	-- Recipe: South Island Iced Tea (RECIPE!)
-							chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso (RECIPE!)
-							chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle (RECIPE!)
-							chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo (RECIPE!)
-						},
-					}),
-					n(340, {	-- Kendor Kabonka <Master of Cooking Recipes>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 76.4, 53.0, STORMWIND_CITY },
-							-- #else
-							{ 74.6, 36.8, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(2889),	-- Recipe: Beer Basted Boar Ribs (RECIPE!)
-							i(3679),	-- Recipe: Blood Sausage (RECIPE!)
-							i(2698),	-- Recipe: Cooked Crab Claw (RECIPE!)
-							i(3681),	-- Recipe: Crocolisk Gumbo (RECIPE!)
-							i(3678),	-- Recipe: Crocolisk Steak (RECIPE!)
-							i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
-							i(3683),	-- Recipe: Gooey Spider Cake (RECIPE!)
-							i(2697),	-- Recipe: Goretusk Liver Pie (RECIPE!)
-							i(3680),	-- Recipe: Murloc Fin Soup (RECIPE!)
-							i(2699),	-- Recipe: Redridge Goulash (RECIPE!)
-							i(2701),	-- Recipe: Seasoned Wolf Kabob (RECIPE!)
-							i(2700),	-- Recipe: Succulent Pork Ribs (RECIPE!)
-							i(728),		-- Recipe: Westfall Stew (RECIPE!)
-						},
-					}),
 					n(5482, bubbleDownSelf({ ["timeline"] = { ADDED_1_11_1 }, }, {	-- Stephen Ryback <Cooking Trainer>
 						["coords"] = {
 							-- #if AFTER LEGION
@@ -442,40 +203,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 				}),
 				prof(ENCHANTING, {
-					n(1318, {	-- Jessara Cordell <Enchanting Supplies>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 53.0, 74.2, STORMWIND_CITY },
-							-- #else
-							{ 43.0, 64.2, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-								6217,	-- Copper Rod
-								4470,	-- Simple Wood
-								11291,	-- Star Wood
-								10938,	-- Lesser Magic Essence
-								10940,	-- Strange Dust
-								20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-								20752,	-- Formula: Minor Mana Oil (RECIPE!)
-								20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-								-- #if BEFORE CATA
-								6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-								-- #else
-								38682,	-- Enchanting Vellum
-								-- #endif
-							},
-						},
-						["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
-							i(67312, {	-- Formula: Magic Lamp (RECIPE!)
-								["timeline"] = { ADDED_4_0_3 },
-								["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
-								["races"] = ALLIANCE_ONLY,
-							}),
-						}),
-					}),
 					n(1317, {	-- Lucan Cordell <Enchanting Trainer>
 						["coords"] = {
 							-- #if AFTER WRATH
@@ -495,42 +222,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				prof(ENGINEERING, {
-					n(5519, {	-- Billibub Cogspinner <Engineering Supplies>
-						["coords"] = {
-							-- #if AFTER 3.0.2
-							{ 63.07, 31.97, STORMWIND_CITY },
-							-- #else
-							{ 55.0, 7.0, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-								5956,	-- Blacksmith Hammer
-								4400,	-- Heavy Stock
-								4399,	-- Wooden Stock
-								-- #if AFTER CATA
-								39684,	-- Hair Trigger
-								40533,	-- Walnut Stock
-								-- #endif
-							},
-						},
-					}),
-					n(1304, {	-- Darian Singh <Fireworks Vendor>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 42.6, 76.8, STORMWIND_CITY },
-							-- #else
-							{ 29.6, 67.8, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(18649, {	-- Schematic: Blue Firework (RECIPE!)
-								["isLimited"] = true,
-							}),
-						},
-					}),
 					n(5518, {	-- Lilliam Sparkspindle <Engineering Trainer>
 						["coords"] = {
 							-- #if AFTER LEGION
@@ -634,31 +325,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 						},
 					}),
-					n(5494, {	-- Catherine Leland <Fishing Supplier>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 55.0, 69.6, STORMWIND_CITY },
-							-- #else
-							{ 45.8, 58.5, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {{ "sub", "common_vendor", 4222 }},	-- Voloren <Fishing Supplies>
-						["groups"] = SHINY_BAUBLE,
-					}),
 				}),
 				prof(HERBALISM, {
-					n(5503, {	-- Eldraeith <Herbalism Supplies> [TBC+] / Eldraeith <Herbalism Supplier>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 55.6, 85.6, STORMWIND_CITY },
-							-- #else
-							{ 46.6, 78.8, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {{ "sub", "common_vendor", 4216 }},	-- Chardryn <Herbalism Supplies>
-					}),
 					n(5566, {	-- Tannysa <Herbalism Trainer>
 						["coords"] = {
 							-- #if AFTER LEGION
@@ -697,303 +365,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 						}),
 					}),
-					n(30730, {	-- Stanly McCormick <Inscription Supplies>
-						["coord"] = { 49.6, 74.6, STORMWIND_CITY },
-						["timeline"] = { ADDED_3_0_2 },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = INSCRIPTION_SUPPLIES,
-					}),
 				}),
 				-- #endif
-				-- #if AFTER TBC
+				-- #if AFTER CATA
 				prof(JEWELCRAFTING, {
-					n(32379, {	-- Captain O'Neal <Jewelcrafting Quartermaster>
-						["coord"] = { 75.0, 66.7, STORMWIND_CITY },
-						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = pvp({
-							-- #if BEFORE 4.0.3
-							-- Moves to Tiffany in Dalaran
-							i(41563),	-- Design: Durable Huge Citrine [WRATH] / Design: Willful Huge Citrine [CATA+] (RECIPE!)
-							-- #endif
-							i(41564, {	-- Design: Empowered Huge Citrine [WRATH] / Design: Lucent Huge Citrine [CATA+] (RECIPE!)
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							-- #if BEFORE 4.0.3
-							-- These move to Tiffany in Dalaran
-							i(41565),	-- Design: Lucent Huge Citrine (RECIPE!)
-							i(41575),	-- Design: Mysterious Shadow Crystal (RECIPE!)
-							i(41559),	-- Design: Mystic Sun Crystal (RECIPE!)
-							-- #endif
-							i(41573, {	-- Design: Opaque Dark Jade [WRATH] / Design: Turbid Dark Jade [CATA+] (RECIPE!)
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							-- #if BEFORE 4.0.3
-							-- These move to Tiffany in Dalaran
-							i(41566),	-- Design: Resplendent Huge Citrine (RECIPE!)
-							i(41569),	-- Design: Shattered Dark Jade (RECIPE!)
-							i(41572),	-- Design: Steady Dark Jade (RECIPE!)
-							i(41560),	-- Design: Stormy Chalcedony (RECIPE!)
-							i(41570),	-- Design: Radiant Dark Jade [CATA+] / Design: Tense Dark Jade [WRATH] (RECIPE!)
-							i(41571),	-- Design: Turbid Dark Jade (RECIPE!)
-							-- #endif
-						}),
-					}),
-					n(1286, {	-- Edna Mullby <Trade Supplies> [TBC+] / Edna Mullby <Trade Supplier>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 64.6, 71.6, STORMWIND_CITY },
-							-- #else
-							{ 58.2, 60.5, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(20856, {	-- Design: Heavy Golden Necklace of Battle (RECIPE!)
-								["isLimited"] = true,
-								["timeline"] = { ADDED_2_0_1 },
-							}),
-						},
-					}),
-					applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(56925, {	-- Farrah Facet <Epic Gem Recipes>
-						["coord"] = { 63.8, 61.6, STORMWIND_CITY },
-						["timeline"] = { ADDED_4_3_0 },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							currency(361, {	-- Illustrious Jewelcrafter's Token
-								["cost"] = { { "i", 204356, 10 }, },	-- 10x Illustrious Gemdust
-								["timeline"] = { ADDED_10_0_7 },
-							}),
-							i(71928, {	-- Design: Accurate Shadow Spinel
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71917, {	-- Design: Adept Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71919, {	-- Design: Artful Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71893, {	-- Design: Balanced Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71943, {	-- Design: Bold Queen's Garnet
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71941, {	-- Design: Brilliant Queen's Garnet
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71912, {	-- Design: Champion's Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71906, {	-- Design: Crafty Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71905, {	-- Design: Deadly Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71937, {	-- Design: Defender's Shadow Spinel
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71913, {	-- Design: Deft Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71939, {	-- Design: Delicate Queen's Garnet
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71898, {	-- Design: Energized Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71931, {	-- Design: Etched Shadow Spinel
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71916, {	-- Design: Fierce Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71920, {	-- Design: Fine Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71942, {	-- Design: Flashing Queen's Garnet
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71901, {	-- Design: Forceful Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71947, {	-- Design: Fractured Lightstone
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71927, {	-- Design: Glinting Shadow Spinel
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71935, {	-- Design: Guardian's Shadow Spinel
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71891, {	-- Design: Infused Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71908, {	-- Design: Inscribed Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71899, {	-- Design: Jagged Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71918, {	-- Design: Keen Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71889, {	-- Design: Lightning Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71922, {	-- Design: Lucent Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71887, {	-- Design: Misty Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71932, {	-- Design: Mysterious Shadow Spinel
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71948, {	-- Design: Mystic Lightstone
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71902, {	-- Design: Nimble Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71888, {	-- Design: Piercing Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71909, {	-- Design: Polished Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71907, {	-- Design: Potent Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71940, {	-- Design: Precise Queen's Garnet
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71903, {	-- Design: Puissant Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71933, {	-- Design: Purified Shadow Spinel
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71946, {	-- Design: Quick Lightstone
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71896, {	-- Design: Radiant Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71915, {	-- Design: Reckless Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71900, {	-- Design: Regal Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71910, {	-- Design: Resolute Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71926, {	-- Design: Resplendent Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71930, {	-- Design: Retaliating Shadow Spinel
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71821, {	-- Design: Rigid Deepholm Iolite
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71890, {	-- Design: Sensei's Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71897, {	-- Design: Shattered Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71934, {	-- Design: Shifting Shadow Spinel
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71921, {	-- Design: Skillful Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71944, {	-- Design: Smooth Lightstone
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71886, {	-- Design: Solid Deepholm Iolite
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71938, {	-- Design: Sovereign Shadow Spinel
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71885, {	-- Design: Sparkling Deepholm Iolite
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71925, {	-- Design: Splendid Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71911, {	-- Design: Stalwart Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71904, {	-- Design: Steady Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71884, {	-- Design: Stormy Deepholm Iolite
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71945, {	-- Design: Subtle Lightstone
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71923, {	-- Design: Tenuous Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71936, {	-- Design: Timeless Shadow Spinel
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71895, {	-- Design: Turbid Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71929, {	-- Design: Veiled Shadow Spinel
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71894, {	-- Design: Vivid Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71914, {	-- Design: Wicked Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71924, {	-- Design: Willful Lava Coral
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71892, {	-- Design: Zen Elven Peridot
-								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-							}),
-							i(71949, {	-- Tome of Burning Jewels
-								["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-								["filterID"] = CONSUMABLES,
-								["sym"] = {
-									{"select","creatureID",56925},{"pop"},	-- this NPC
-									{"not","itemID",71949},				-- not this item
-									{"isnt","currencyID"},	-- no currencies
-								},
-							}),
-						},
-					})),
-					n(50480, {	-- Isabel Jones <Jewelcrafting Design Vendor>
-						["coord"] = { 63.8, 61.3, STORMWIND_CITY },
-						["timeline"] = { ADDED_4_0_3 },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
-					}),
-					n(44583, {	-- Terrance Denman <Jewelcrafting Supplies>
-						["coord"] = { 63.1, 61.5, STORMWIND_CITY },
-						["timeline"] = { ADDED_4_0_1 },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "sub", "common_recipes_vendor", 50480 },	-- Isabel Jones <Jewelcrafting Supplies>
-							{ "select","itemID",
-							52188,	-- Jeweler's Setting
-							20815,	-- Jeweler's Toolset/-Kit
-							-- #if BEFORE MOP
-							20824,	-- Simple Grinder
-							-- #endif
-							},
-						},
-					}),
 					n(44582, {	-- Theresa Denman <Jewelcrafting Trainer>
 						["coord"] = { 63.6, 61.6, STORMWIND_CITY },
 						["timeline"] = { ADDED_4_0_1 },
@@ -1007,11 +382,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				prof(LEATHERWORKING, {
-					n(5565, {	-- Jillian Tanner <Leatherworking Supplies>
-						["coord"] = { 71.7, 62.8, STORMWIND_CITY },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, SALT, VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, {}),
-					}),
 					n(5564, {	-- Simon Tanner <Expert Leatherworker>
 						["coords"] = {
 							-- #if AFTER WRATH
@@ -1025,17 +395,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				prof(MINING, {
-					n(5514, {	-- Brooke Stonebraid <Mining Supplies>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 59.15, 37.5, STORMWIND_CITY },
-							-- #else
-							{ 51.6, 16.8, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {{ "sub", "common_vendor", 4256 }},	-- Golnir Bouldertoe <Mining Supplies>
-					}),
 					n(5513, {	-- Gelman Stonehand <Mining Trainer>
 						["coords"] = {
 							-- #if AFTER WRATH
@@ -1071,24 +430,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				prof(TAILORING, {
-					n(1347, {	-- Alexandra Bolero <Tailoring Supplies>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 53.2, 81.6, STORMWIND_CITY },
-							-- #else
-							{ 43.4, 74.0, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, VANILLA_TAILORING_VENDOR_REAGENTS, {
-							i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
-								["isLimited"] = true,
-							}),
-						}),
-					}),
 					n(1346, {	-- Georgio Bolero <Tailoring Trainer>
 						["coords"] = {
 							-- #if AFTER CATA
@@ -1116,19 +457,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = SHADOWEAVE_TAILORING,
-					}),
-					n(1318, {	-- Jessara Cordell <Enchanting Supplies>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 53.0, 74.2, STORMWIND_CITY },
-							-- #else
-							{ 43.0, 64.2, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-						},
 					}),
 				}),
 			}),
@@ -5131,6 +4459,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				-- #endif
+				n(1347, {	-- Alexandra Bolero <Tailoring Supplies>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 53.2, 81.6, STORMWIND_CITY },
+						-- #else
+						{ 43.4, 74.0, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, VANILLA_TAILORING_VENDOR_REAGENTS, {
+						i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
+							["isLimited"] = true,
+						}),
+					}),
+				}),
 				n(1315, {	-- Allan Hafgan <Staves Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -5304,6 +4650,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+							2453,	-- Bruiseweed
+							2449,	-- Earthroot
+							3356,	-- Kingsblood
+							3357,	-- Liferoot
+							785,	-- Mageroyal
+							3355,	-- Wild Steelbloom
+						},
+					},
 					["groups"] = {
 						i(3422),	-- Beautiful Wildflowers
 						i(3420),	-- Black Rose
@@ -5312,6 +4668,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3419),	-- Red Rose
 						i(3421),	-- Simple Wildflowers
 					},
+				}),
+				n(5519, {	-- Billibub Cogspinner <Engineering Supplies>
+					["coords"] = {
+						-- #if AFTER 3.0.2
+						{ 63.07, 31.97, STORMWIND_CITY },
+						-- #else
+						{ 55.0, 7.0, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+							5956,	-- Blacksmith Hammer
+							4400,	-- Heavy Stock
+							4399,	-- Wooden Stock
+							-- #if AFTER CATA
+							39684,	-- Hair Trigger
+							40533,	-- Walnut Stock
+							-- #endif
+						},
+					},
+				}),
+				n(5514, {	-- Brooke Stonebraid <Mining Supplies>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 59.15, 37.5, STORMWIND_CITY },
+						-- #else
+						{ 51.6, 16.8, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4256 }},	-- Golnir Bouldertoe <Mining Supplies>
 				}),
 				n(1319, {	-- Bryan Cross <Shield Merchant>
 					["coords"] = {
@@ -5495,6 +4883,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				}),
+				n(32379, {	-- Captain O'Neal <Jewelcrafting Quartermaster>
+					["coord"] = { 75.0, 66.7, STORMWIND_CITY },
+					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = pvp({
+						-- #if BEFORE 4.0.3
+						-- Moves to Tiffany in Dalaran
+						i(41563),	-- Design: Durable Huge Citrine [WRATH] / Design: Willful Huge Citrine [CATA+] (RECIPE!)
+						-- #endif
+						i(41564, {	-- Design: Empowered Huge Citrine [WRATH] / Design: Lucent Huge Citrine [CATA+] (RECIPE!)
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
+						-- #if BEFORE 4.0.3
+						-- These move to Tiffany in Dalaran
+						i(41565),	-- Design: Lucent Huge Citrine (RECIPE!)
+						i(41575),	-- Design: Mysterious Shadow Crystal (RECIPE!)
+						i(41559),	-- Design: Mystic Sun Crystal (RECIPE!)
+						-- #endif
+						i(41573, {	-- Design: Opaque Dark Jade [WRATH] / Design: Turbid Dark Jade [CATA+] (RECIPE!)
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
+						-- #if BEFORE 4.0.3
+						-- These move to Tiffany in Dalaran
+						i(41566),	-- Design: Resplendent Huge Citrine (RECIPE!)
+						i(41569),	-- Design: Shattered Dark Jade (RECIPE!)
+						i(41572),	-- Design: Steady Dark Jade (RECIPE!)
+						i(41560),	-- Design: Stormy Chalcedony (RECIPE!)
+						i(41570),	-- Design: Radiant Dark Jade [CATA+] / Design: Tense Dark Jade [WRATH] (RECIPE!)
+						i(41571),	-- Design: Turbid Dark Jade (RECIPE!)
+						-- #endif
+					}),
+				}),
 				n(1291, {	-- Carla Granger <Cloth Armor Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -5601,6 +5021,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
+				n(5494, {	-- Catherine Leland <Fishing Supplier>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 55.0, 69.6, STORMWIND_CITY },
+						-- #else
+						{ 45.8, 58.5, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4222 }},	-- Voloren <Fishing Supplies>
+					["groups"] = appendGroups(SHINY_BAUBLE, {
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+					}),
+				}),
 				n(1307, {	-- Charys Yserian <Arcane Trinkets Vendor>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -5680,6 +5116,37 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
 							["timeline"] = { ADDED_4_1_0 },
 						})),
+					},
+				}),
+				n(133411, {	-- Dalia Skyblossom <Cooking Trainer>
+					["coord"] = { 51.4, 18.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_7_3_5 },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+							159,	-- Refreshing Spring Water
+							30817,	-- Simple Flour
+							2678,	-- Mild Spices
+						},
+					},
+					["groups"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
+				}),
+				n(1304, {	-- Darian Singh <Fireworks Vendor>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 42.6, 76.8, STORMWIND_CITY },
+						-- #else
+						{ 29.6, 67.8, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(18649, {	-- Schematic: Blue Firework (RECIPE!)
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(50669, {	-- Dawn Radue <Bag Merchant>
@@ -5778,6 +5245,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- Used to just sell trade goods for Cataclysm (Embersilk, Shards, Ore, etc)
 					-- #endif
 				}),
+				n(1286, {	-- Edna Mullby <Trade Supplies> [TBC+] / Edna Mullby <Trade Supplier>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 64.6, 71.6, STORMWIND_CITY },
+						-- #else
+						{ 58.2, 60.5, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(20856, {	-- Design: Heavy Golden Necklace of Battle (RECIPE!)
+							["isLimited"] = true,
+							["timeline"] = { ADDED_2_0_1 },
+						}),
+					},
+				}),
 				-- #if SEASON_OF_DISCOVERY
 				n(213077, {	-- Elaine Compton <Supply Officer>
 					["coord"] = { 54.8, 62.0, STORMWIND_CITY },
@@ -5796,6 +5279,61 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				-- #endif
+				n(5503, {	-- Eldraeith <Herbalism Supplies> [TBC+] / Eldraeith <Herbalism Supplier>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 55.6, 85.6, STORMWIND_CITY },
+						-- #else
+						{ 46.6, 78.8, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4216 }},	-- Chardryn <Herbalism Supplies>
+				}),
+				n(1328, {	-- Elly Langston <Barmaid>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 76.0, 53.4, STORMWIND_CITY },	-- Pig and Whistle Tavern
+						-- #else
+						{ 73.0, 37.0, STORMWIND_CITY },	-- Pig and Whistle Tavern
+						-- #endif
+					},
+					["description"] = "Elly is walking around in the Tavern.",
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2594),	-- Flagon of Dwarven Honeymead/Mead
+						i(2593),	-- Flask of Stormwind Tawny
+						i(1179),	-- Ice Cold Milk
+						i(2596),	-- Skin of Dwarven Stout
+					},
+				}),
+				n(5483, {	-- Erika Tate <Cooking Supplies> [TBC+] / Erika Tate <Cooking Supplier>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 77.6, 53.2, STORMWIND_CITY },
+						-- #else
+						{ 76.0, 36.8, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+							159,	-- Refreshing Spring Water
+							-- #if AFTER TBC
+							30817,	-- Simple Flour
+							-- #endif
+							2678,	-- Mild Spices
+							-- #if BEFORE WRATH
+							2692,	-- Hot Spices
+							3713,	-- Soothing Spices
+							-- #endif
+						},
+					},
+					["groups"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
+				}),
 				n(164942, {	-- Evelyn Thorn <Warlock Trainer>
 					["coord"] = { 79.4, 69.8, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
@@ -5817,6 +5355,224 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Sells gear related to Cataclysm raid tier 13 (Dragon Soul).",
 					-- #endif
 				}),
+				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(56925, {	-- Farrah Facet <Epic Gem Recipes>
+					["coord"] = { 63.8, 61.6, STORMWIND_CITY },
+					["timeline"] = { ADDED_4_3_0 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						currency(361, {	-- Illustrious Jewelcrafter's Token
+							["cost"] = { { "i", 204356, 10 }, },	-- 10x Illustrious Gemdust
+							["timeline"] = { ADDED_10_0_7 },
+						}),
+						i(71928, {	-- Design: Accurate Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71917, {	-- Design: Adept Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71919, {	-- Design: Artful Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71893, {	-- Design: Balanced Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71943, {	-- Design: Bold Queen's Garnet
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71941, {	-- Design: Brilliant Queen's Garnet
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71912, {	-- Design: Champion's Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71906, {	-- Design: Crafty Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71905, {	-- Design: Deadly Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71937, {	-- Design: Defender's Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71913, {	-- Design: Deft Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71939, {	-- Design: Delicate Queen's Garnet
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71898, {	-- Design: Energized Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71931, {	-- Design: Etched Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71916, {	-- Design: Fierce Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71920, {	-- Design: Fine Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71942, {	-- Design: Flashing Queen's Garnet
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71901, {	-- Design: Forceful Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71947, {	-- Design: Fractured Lightstone
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71927, {	-- Design: Glinting Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71935, {	-- Design: Guardian's Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71891, {	-- Design: Infused Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71908, {	-- Design: Inscribed Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71899, {	-- Design: Jagged Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71918, {	-- Design: Keen Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71889, {	-- Design: Lightning Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71922, {	-- Design: Lucent Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71887, {	-- Design: Misty Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71932, {	-- Design: Mysterious Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71948, {	-- Design: Mystic Lightstone
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71902, {	-- Design: Nimble Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71888, {	-- Design: Piercing Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71909, {	-- Design: Polished Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71907, {	-- Design: Potent Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71940, {	-- Design: Precise Queen's Garnet
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71903, {	-- Design: Puissant Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71933, {	-- Design: Purified Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71946, {	-- Design: Quick Lightstone
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71896, {	-- Design: Radiant Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71915, {	-- Design: Reckless Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71900, {	-- Design: Regal Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71910, {	-- Design: Resolute Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71926, {	-- Design: Resplendent Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71930, {	-- Design: Retaliating Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71821, {	-- Design: Rigid Deepholm Iolite
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71890, {	-- Design: Sensei's Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71897, {	-- Design: Shattered Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71934, {	-- Design: Shifting Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71921, {	-- Design: Skillful Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71944, {	-- Design: Smooth Lightstone
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71886, {	-- Design: Solid Deepholm Iolite
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71938, {	-- Design: Sovereign Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71885, {	-- Design: Sparkling Deepholm Iolite
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71925, {	-- Design: Splendid Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71911, {	-- Design: Stalwart Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71904, {	-- Design: Steady Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71884, {	-- Design: Stormy Deepholm Iolite
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71945, {	-- Design: Subtle Lightstone
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71923, {	-- Design: Tenuous Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71936, {	-- Design: Timeless Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71895, {	-- Design: Turbid Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71929, {	-- Design: Veiled Shadow Spinel
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71894, {	-- Design: Vivid Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71914, {	-- Design: Wicked Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71924, {	-- Design: Willful Lava Coral
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71892, {	-- Design: Zen Elven Peridot
+							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+						}),
+						i(71949, {	-- Tome of Burning Jewels
+							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+							["filterID"] = CONSUMABLES,
+							["sym"] = {
+								{"select","creatureID",56925},{"pop"},	-- this NPC
+								{"not","itemID",71949},				-- not this item
+								{"isnt","currencyID"},	-- no currencies
+							},
+						}),
+					},
+				})),
 				n(1303, {	-- Felicia Gump <Herbalism Supplier>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -6032,6 +5788,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"pop"},										-- Discard Header and aquire their children
 					},
 				}),
+				n(50480, {	-- Isabel Jones <Jewelcrafting Design Vendor>
+					["coord"] = { 63.8, 61.3, STORMWIND_CITY },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
+				}),
 				n(1325, {	-- Jasper Fel <Shady Dealer>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -6048,6 +5810,124 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						4565,	-- Simple Dagger
 					}},
 					-- #endif
+				}),
+				n(1318, {	-- Jessara Cordell <Enchanting Supplies>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 53.0, 74.2, STORMWIND_CITY },
+						-- #else
+						{ 43.0, 64.2, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+							6217,	-- Copper Rod
+							4470,	-- Simple Wood
+							11291,	-- Star Wood
+							10938,	-- Lesser Magic Essence
+							10940,	-- Strange Dust
+							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+							20752,	-- Formula: Minor Mana Oil (RECIPE!)
+							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+							-- #if BEFORE CATA
+							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+							-- #else
+							38682,	-- Enchanting Vellum
+							-- #endif
+						},
+					},
+					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
+						i(67312, {	-- Formula: Magic Lamp (RECIPE!)
+							["timeline"] = { ADDED_4_0_3 },
+							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+					}),
+				}),
+				n(5565, {	-- Jillian Tanner <Leatherworking Supplies>
+					["coord"] = { 71.7, 62.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{ "select","itemID", 7005 }},	-- Skinning Knife
+					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, SALT, VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, {}),
+				}),
+				n(49701, {	-- Jon Casper <Sous Chef>
+					["coords"] = {
+						-- #if AFTER 9.2.5
+						{ 50.5, 73.9, STORMWIND_CITY },
+						-- #else
+						{ 50.6, 71.6, STORMWIND_CITY },
+						-- #endif
+					},
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish (RECIPE!)
+						chefsaward(3, i(65427)),	-- Recipe: Basilisk Liverdog (RECIPE!)
+						chefsaward(3, i(65429)),	-- Recipe: Beer-Basted Crocolisk (RECIPE!)
+						chefsaward(3, i(65424)),	-- Recipe: Blackbelly Sushi (RECIPE!)
+						chefsaward(3, i(65411)),	-- Recipe: Broiled Mountain Trout (RECIPE!)
+						chefsaward(3, i(65431)),	-- Recipe: Chocolate Cookie (RECIPE!)
+						chefsaward(3, i(65430)),	-- Recipe: Crocolisk Au Gratin (RECIPE!)
+						chefsaward(3, i(65422)),	-- Recipe: Delicious Sagefish Tail (RECIPE!)
+						chefsaward(3, i(65408)),	-- Recipe: Feathered Lure (RECIPE!)
+						chefsaward(3, i(65423)),	-- Recipe: Fish Fry (RECIPE!)
+						chefsaward(5, i(65432)),	-- Recipe: Fortune Cookie (RECIPE!)
+						chefsaward(3, i(65428)),	-- Recipe: Grilled Dragon (RECIPE!)
+						chefsaward(3, i(65418)),	-- Recipe: Hearty Seafood Soup (RECIPE!)
+						chefsaward(3, i(65415)),	-- Recipe: Highland Spirits (RECIPE!)
+						chefsaward(3, i(65407)),	-- Recipe: Lavascale Fillet (RECIPE!)
+						chefsaward(3, i(65409)),	-- Recipe: Lavascale Minestrone (RECIPE!)
+						chefsaward(3, i(65412)),	-- Recipe: Lightly Fried Lurker (RECIPE!)
+						chefsaward(3, i(65416)),	-- Recipe: Lurker Lunch (RECIPE!)
+						chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish (RECIPE!)
+						chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy (RECIPE!)
+						chefsaward(3, i(65410)),	-- Recipe: Salted Eye (RECIPE!)
+						chefsaward(3, i(68688, {	-- Recipe: Scalding Murglesnout (RECIPE!)
+							["timeline"] = { ADDED_4_0_6 },
+						})),
+						chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab (RECIPE!)
+						chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head (RECIPE!)
+						chefsaward(3, i(65425)),	-- Recipe: Skewered Eel (RECIPE!)
+						chefsaward(5, i(65433)),	-- Recipe: South Island Iced Tea (RECIPE!)
+						chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso (RECIPE!)
+						chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle (RECIPE!)
+						chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo (RECIPE!)
+					},
+				}),
+				n(55684, {	-- Jordan Smith <Blacksmithing Trainer & Supplies>
+					["coord"] = { 64.8, 48.2, STORMWIND_CITY },
+					["timeline"] = { ADDED_4_3_0 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {}),
+				}),
+				n(5512, {	-- Kaita Deepforge <Blacksmithing Supplies>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 63.2, 37.6, STORMWIND_CITY },
+						-- #else
+						{ 56.3, 17.2, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						-- #if AFTER 4.3.0
+						{ "sub", "common_recipes_vendor", 55684 },	-- Jordan Smith <Blacksmithing Trainer & Supplies>
+						-- #endif
+						{ "select","itemID",
+							2880,	-- Weak Flux
+							3466,	-- Strong Flux
+							18567,	-- Elemental Flux
+							3857,	-- Coal
+							5956,	-- Blacksmith Hammer
+						},
+					},
+					["groups"] = {
+						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
+							["isLimited"] = true,
+						}),
+					},
 				}),
 				n(43694, {	-- Katie Stokx <Horse Breeder>
 					["coord"] = { 77.0, 67.8, STORMWIND_CITY },
@@ -6087,6 +5967,51 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(2522),	-- Crescent Axe
 						i(2530),	-- Francisca
+					},
+				}),
+				n(1257, {	-- Keldric Boucher <Alchemy Supplies & Reagents>/<Arcane Goods Vendor>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 62.8, 75.0, STORMWIND_CITY },
+						-- #else
+						{ 55.6, 65.8, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+						3371,	-- Empty-/Crystal Vial
+						-- #if BEFORE CATA
+						3372,	-- Leaded Vial
+						8925,	-- Crystal Vial
+						18256,	-- Imbued Vial
+						-- #endif
+						},
+					},
+				}),
+				n(340, {	-- Kendor Kabonka <Master of Cooking Recipes>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 76.4, 53.0, STORMWIND_CITY },
+						-- #else
+						{ 74.6, 36.8, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2889),	-- Recipe: Beer Basted Boar Ribs (RECIPE!)
+						i(3679),	-- Recipe: Blood Sausage (RECIPE!)
+						i(2698),	-- Recipe: Cooked Crab Claw (RECIPE!)
+						i(3681),	-- Recipe: Crocolisk Gumbo (RECIPE!)
+						i(3678),	-- Recipe: Crocolisk Steak (RECIPE!)
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
+						i(3683),	-- Recipe: Gooey Spider Cake (RECIPE!)
+						i(2697),	-- Recipe: Goretusk Liver Pie (RECIPE!)
+						i(3680),	-- Recipe: Murloc Fin Soup (RECIPE!)
+						i(2699),	-- Recipe: Redridge Goulash (RECIPE!)
+						i(2701),	-- Recipe: Seasoned Wolf Kabob (RECIPE!)
+						i(2700),	-- Recipe: Succulent Pork Ribs (RECIPE!)
+						i(728),		-- Recipe: Westfall Stew (RECIPE!)
 					},
 				}),
 				applyclassicphase(WRATH_PHASE_FOUR, n(34084, {	-- Knight-Lieutenant Moonstrike <Northrend Armor Quartermaster> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear
@@ -6438,11 +6363,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						moh(12, i(122338, {	-- Ancient Heirloom Armor Casing
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = {{ "fill" }},	-- simply fill this item
 						})),
 						moh(14, i(122339, {	-- Ancient Heirloom Scabbard
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = {{ "fill" }},	-- simply fill this item
 						})),
 						moh(10, i(122369, {	-- Battleworn Thrash Blade
 							["timeline"] = { ADDED_6_1_0 },
@@ -6621,6 +6544,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_10_1_7 }
 						}),
 					},
+				}),
+				n(1313, {	-- Maria Lumere <Alchemy Supplies>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 55.6, 85.6, STORMWIND_CITY },
+						-- #else
+						{ 46.6, 78.8, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+						3371,	-- Empty-/Crystal Vial
+						-- #if BEFORE CATA
+						3372,	-- Leaded Vial
+						8925,	-- Crystal Vial
+						18256,	-- Imbued Vial
+						-- #endif
+						},
+					},
+					["groups"] = sharedData({
+						["isLimited"] = true,
+					}, {
+						i(2453),	-- Bruiseweed
+						i(2449),	-- Earthroot
+						i(3356),	-- Kingsblood
+						i(3357),	-- Liferoot
+						i(785),	-- Mageroyal
+						i(2447),	-- Peacebloom
+						i(765),	-- Silverleaf
+						i(3355),	-- Wild Steelbloom
+						i(9301),	-- Recipe: Elixir of Shadow Power (RECIPE!)
+					}),
 				}),
 				n(12781, {	-- Master Sergeant Biggins <Accessories Quartermaster> [WRATH+] / Master Sergeant Biggins <Officer Accessories Quartermaster>
 					-- #if BEFORE TBC
@@ -7231,10 +7187,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.6, 74.6, STORMWIND_CITY },
 					["timeline"] = { ADDED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["groups"] = appendGroups(INSCRIPTION_SUPPLIES, {
 						i(79740),	-- Plain Wooden Staff
 						i(1515),	-- Rough Wooden Staff
-					},
+					}),
 				}),
 				n(43768, {	-- Tannec Stonebeak <Gryphon Keeper>
 					["coord"] = { 71.4, 72.0, STORMWIND_CITY },
@@ -7248,6 +7204,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(25528),	-- Swift Green Gryphon (MOUNT!)
 						i(25529),	-- Swift Purple Gryphon (MOUNT!)
 						i(25527),	-- Swift Red Gryphon (MOUNT!)
+					},
+				}),
+				n(44583, {	-- Terrance Denman <Jewelcrafting Supplies>
+					["coord"] = { 63.1, 61.5, STORMWIND_CITY },
+					["timeline"] = { ADDED_4_0_1 },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "sub", "common_recipes_vendor", 50480 },	-- Isabel Jones <Jewelcrafting Supplies>
+						{ "select","itemID",
+						52188,	-- Jeweler's Setting
+						20815,	-- Jeweler's Toolset/-Kit
+						-- #if BEFORE MOP
+						20824,	-- Simple Grinder
+						-- #endif
+						},
 					},
 				}),
 				n(1350, {	-- Theresa Moulaine <Robe Vendor>

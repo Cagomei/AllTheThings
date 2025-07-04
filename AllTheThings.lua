@@ -2659,7 +2659,7 @@ function app:GetDataCache()
 
 	-- Pet Battles
 	if app.Categories.PetBattles then
-		db = app.CreateNPC(app.HeaderConstants.PET_BATTLE);
+		db = app.CreateNPC(app.HeaderConstants.PET_BATTLES);
 		db.g = app.Categories.PetBattles;
 		tinsert(g, db);
 	end
@@ -3567,6 +3567,37 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		local results, groups, nested, header, headerKeys, difficultyID, nextParent, headerID, isInInstance
 		local rootGroups, mapGroups = {}, {};
 
+		local function TryExpandCurrentDifficulty()
+
+			if not app.Settings:GetTooltipSetting("Expand:Difficulty") then return end
+
+			local difficultyID = app.GetCurrentDifficultyID()
+			if difficultyID == 0 or not header.g then return end
+
+			local expanded
+			for _,row in ipairs(header.g) do
+				if row.difficultyID or row.difficulties then
+					if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+						if not row.expanded then
+							ExpandGroupsRecursively(row, true, true);
+							expanded = true;
+						end
+					elseif row.expanded then
+						ExpandGroupsRecursively(row, false, true);
+					end
+				-- Zone Drops/Common Boss Drops should also be expanded within instances
+				-- elseif row.headerID == app.HeaderConstants.ZONE_DROPS or row.headerID == app.HeaderConstants.COMMON_BOSS_DROPS then
+				-- 	if not row.expanded then ExpandGroupsRecursively(row, true); expanded = true; end
+				end
+			end
+			-- No difficulty found to expand, so just expand everything in the list once it is built
+			if not expanded then
+				self.ExpandInfo = { Expand = true };
+				expanded = true;
+			end
+			return expanded
+		end
+
 		self.MapCache = setmetatable({}, { __mode = "kv" })
 		local function TrySwapFromCache()
 			-- window to keep cached maps/not re-build & update them
@@ -3589,6 +3620,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			-- app.PrintDebug("Loaded cached Map",mapID)
 			header._lastshown = GetTimePreciseSec()
 			self:SetData(header)
+			TryExpandCurrentDifficulty()
 			self.CurrentMaps = header._maps
 			-- app.PrintTable(self.CurrentMaps)
 			-- Reset the Fill if needed
@@ -3768,33 +3800,8 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 				app.FillGroups(header);
 				app.SetSkipLevel(0);
 
-				local expanded;
 				-- if enabled, minimize rows based on difficulty
-				local difficultyID = app.GetCurrentDifficultyID();
-				if app.Settings:GetTooltipSetting("Expand:Difficulty") then
-					if difficultyID and difficultyID > 0 and header.g then
-						for _,row in ipairs(header.g) do
-							if row.difficultyID or row.difficulties then
-								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-									if not row.expanded then
-										ExpandGroupsRecursively(row, true, true);
-										expanded = true;
-									end
-								elseif row.expanded then
-									ExpandGroupsRecursively(row, false, true);
-								end
-							-- Zone Drops/Common Boss Drops should also be expanded within instances
-							-- elseif row.headerID == app.HeaderConstants.ZONE_DROPS or row.headerID == app.HeaderConstants.COMMON_BOSS_DROPS then
-							-- 	if not row.expanded then ExpandGroupsRecursively(row, true); expanded = true; end
-							end
-						end
-						-- No difficulty found to expand, so just expand everything in the list once it is built
-						if not expanded then
-							self.ExpandInfo = { Expand = true };
-							expanded = true;
-						end
-					end
-				end
+				local expanded = TryExpandCurrentDifficulty()
 
 				self:BuildData();
 

@@ -4361,11 +4361,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["groups"] = {
 						champ(55, i(122338, {	-- Ancient Heirloom Armor Casing
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						})),
 						champ(65, i(122339, {	-- Ancient Heirloom Scabbard
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						})),
 						champ(100, i(47179, {	-- Argent Charger (MOUNT!)
 							["classes"] = { PALADIN },

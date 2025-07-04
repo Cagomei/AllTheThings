@@ -2,6 +2,11 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(ACHIEVEMENTS, {
+	petbattles({
+		ach(8348, {	-- The Longest Day
+			["timeline"] = { ADDED_5_3_0 },
+		}),
+	}),
 	-- #if BEFORE 4.0.1
 	ach(4784, {	-- Emblematic [A]
 		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },

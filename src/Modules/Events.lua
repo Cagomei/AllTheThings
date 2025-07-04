@@ -107,7 +107,7 @@ local function CreateSchedule(startTime, endTime, t)
 	};
 end
 local SessionEventCache;
-local CacheVersion = 20250624;
+local CacheVersion = 20250703;
 local function GetEventCache()
 	-- app.PrintDebug("GetEventCache")
 	local now = CreateTimeStamp(C_DateAndTime_GetCurrentCalendarTime());

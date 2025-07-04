@@ -1700,7 +1700,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(REWARDS, {
-					i(35348, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
+					container(35348, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
 						["description"] = "This bag is exclusive to the daily quest 'Crocolisk in the City'.",
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
@@ -1718,7 +1718,7 @@ root(ROOTS.Zones, {
 							i(34109),	-- Weather-Beaten Journal (RECIPE!)
 						},
 					})),
-					i(34863, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
+					container(34863, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
 						["description"] = "Shared reward bag for all the non-Croc dailies.",
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)

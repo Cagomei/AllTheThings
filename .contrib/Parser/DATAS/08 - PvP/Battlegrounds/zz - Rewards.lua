@@ -277,7 +277,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				i(134777),	-- Seasoned Accolade*
 			},
 		})),
-		i(135546, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Fel-Touched Crate of Battlefield Goods 100-109 before 9.0 / Ashran
+		container(135546, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Fel-Touched Crate of Battlefield Goods 100-109 before 9.0 / Ashran
 			["description"] = "Rewarded for winning a random battleground in the level 100-109 range before 9.0, or Ashran quests.",
 			["groups"] = {
 				i(135578),	-- Battle Touched Banner

@@ -276,6 +276,16 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66550, {	-- Nicki Tinytech <Master Pet Tamer>
 						["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
+						["description"] = "Nicki's pets are level 20 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 20,
+						["groups"] = {
+							q(31922, {	-- Nicki Tinytech
+								["sourceAchievement"] = 6604,	-- Taming Outland
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
 					}),
 				}),
 				n(PROFESSIONS, {

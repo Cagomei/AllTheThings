@@ -177,6 +177,15 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66815, {	-- Bordin Steadyfist <Master Pet Tamer>
 						["coord"] = { 49.8, 57.0, DEEPHOLM },
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31973, {	-- Bordin Steadyfist
+								["sourceAchievement"] = 7525,	-- Taming Cataclysm
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
 					}),
 				}),
 				-- #if ANYCLASSIC
