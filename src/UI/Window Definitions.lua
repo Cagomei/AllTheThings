@@ -74,7 +74,7 @@ local function GetUnobtainableTexture(group)
 		if phase then
 			if not phase.buildVersion and group.itemID then
 				local b = group.b or 0;
-				if b == 2 or b == 0 then	-- BoE or Unbound
+				if u ~= 1 and (b == 2 or b == 0) then	-- BoE or Unbound on non-NYI
 					return L.UNOBTAINABLE_ITEM_TEXTURES[2];
 				end
 			end
