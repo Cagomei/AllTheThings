@@ -3574,7 +3574,8 @@ crit(112326,{achID=62242,id=1})}}),
 ach(62234,{requireSkill=202,g={
 crit(112327,{achID=62242,id=2})}}),
 ach(62242,{requireSkill=202,g={
-title(744,{requireSkill=202})}})}}),
+title(744,{requireSkill=202})}}),
+ach(60888,{questID=91820,requireSkill=202})}}),
 h(-45,{requireSkill=202,g={
 q(93692,{coords={{43.5,54.1,2393}},isWeekly=1,lvl=78,qgs={241452},requireSkill=202,sourceQuests={93727},g={
 i(263456,{b=1,isWeekly=1,requireSkill=202,spellID=1270533})}})}}),

@@ -591,7 +591,8 @@ ach(15558)}}),
 x(11.0107,{awp=110107,g={
 ach(42028)}}),
 x(11.0207,{awp=110207,g={
-ach(51753)}})}),
+ach(51753),
+ach(61516)}})}),
 x(12,{awp=120000,g={
 x(12.0000001,{
 ach(42575),
@@ -8381,7 +8382,6 @@ p(4824,{displayID=124240}),
 p(4837,{displayID=128503})}}),
 x(11.0205,{awp=110205,g={
 p(4899,{displayID=137218,itemID=252199,spellID=1254212}),
-p(4897,{displayID=137213,itemID=252194,spellID=1254207}),
 p(4898,{displayID=137215,itemID=252195,spellID=1254208}),
 p(4895,{displayID=137193,itemID=252137,spellID=1254162}),
 p(4896,{displayID=137201,itemID=252193,spellID=1254201})}})})}),
