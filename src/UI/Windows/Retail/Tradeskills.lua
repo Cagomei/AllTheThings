@@ -198,7 +198,7 @@ app:CreateWindow("Tradeskills", {
 			local Runner = self:GetRunner()
 			Runner.SetPerFrame(100);
 			local Run = Runner.Run;
-			for spellID,data in pairs(app.SearchForFieldContainer("spellID")) do
+			for spellID,data in pairs(app.GetFieldContainer("spellID")) do
 				Run(CacheRecipeSchematic, spellID);
 			end
 			Runner.OnEnd(function()
@@ -512,7 +512,7 @@ app:CreateWindow("Tradeskills", {
 
 			-- Check to see if ATT has information about this profession.
 			local tradeSkillID = app.GetTradeSkillLine()
-			if not tradeSkillID or #app.SearchForField("professionID", tradeSkillID) < 1 then
+			if not tradeSkillID then
 				self:SetVisible(false)
 				return false
 			end

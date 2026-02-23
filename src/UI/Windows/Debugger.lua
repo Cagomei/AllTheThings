@@ -125,6 +125,36 @@ local function CalculateIndent(indent)
 	end
 	return str;
 end
+local function ConvertCoordsForGroup(group)
+	if group.g then
+		for i,o in ipairs(group.g) do
+			ConvertCoordsForGroup(o);
+		end
+	end
+	local coords = group.coords;
+	if coords then
+		-- Check to see if it has the old format.
+		if #coords > 0 then
+			-- Yup, it sure is. let's update that.
+			local newCoords = {};
+			for i,coord in ipairs(coords) do
+				local coordsForMap = newCoords[coord[3]];
+				if not coordsForMap then
+					coordsForMap = {};
+					newCoords[coord[3]] = coordsForMap;
+				end
+				tinsert(coordsForMap, { coord[1], coord[2] });
+			end
+			group.coords = newCoords;
+			--[[
+			print("OLD COORDS:");
+			DevTools_Dump(coords);
+			print("NEW COORDS:");
+			DevTools_Dump(newCoords);
+			]]--
+		end
+	end
+end
 local function GetMoneyString(amount)
 	if amount > 0 then
 		local formatted
@@ -168,8 +198,6 @@ local function ExportKeyValue(key, value)
 			str = str .. "\t{ \"" .. o[1] .. "\", " .. o[2] .. " },\t-- " .. (app.GetNameFromProvider(o[1], o[2]) or UNKNOWN) .. "\n";
 		end
 		str = str .. "},";
-	elseif key == "provider" then
-		str = str .. "{ \"" .. value[1] .. "\", " .. value[2] .. " },\t-- " .. (app.GetNameFromProvider(value[1], value[2]) or UNKNOWN);
 	elseif key == "crs" or key == "qgs" then
 		str = str .. "{\n";
 		for i,id in ipairs(value) do
@@ -178,12 +206,14 @@ local function ExportKeyValue(key, value)
 		str = str .. "},";
 	elseif key == "coords" then
 		str = str .. "{\n";
-		for i,o in ipairs(value) do
-			str = str .. "\t{ " .. o[1] .. ", " .. o[2] .. ", " .. o[3] .. " },\n";
+		for mapID,coordsForMap in pairs(value) do
+			str = str .. "\t[" .. mapID .. "] = {\n";
+			for i,o in ipairs(coordsForMap) do
+				str = str .. "\t\t{ " .. o[1] .. ", " .. o[2] .. " },\n";
+			end
+			str = str .. "\t},\n";
 		end
 		str = str .. "},";
-	elseif key == "coord" then
-		str = str .. "{ " .. value[1] .. ", " .. value[2] .. ", " .. value[3] .. " },";
 	elseif key == "cost" then
 		if type(value) == "number" then
 			-- This is simply a gold value
@@ -412,7 +442,7 @@ app:CreateWindow("Debugger", {
 			local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 			if pos then
 				local px, py = pos:GetXY();
-				info.coords = { { px * 100, py * 100, mapID } };
+				info.coords = { [mapID] = { { px * 100, py * 100 } } };
 			end
 			repeat
 				mapInfo = C_Map_GetMapInfo(mapID);
@@ -427,6 +457,7 @@ app:CreateWindow("Debugger", {
 	OnLoad = function(self, settings)
 		self.rawData = app.LocalizeGlobal("AllTheThingsDebugData", true);
 		self.data.g = CloneClassInstance(self.rawData);
+		ConvertCoordsForGroup(self.data);
 		for i=#self.data.options,1,-1 do
 			tinsert(self.data.g, 1, self.data.options[i]);
 		end
@@ -561,6 +592,7 @@ app:CreateWindow("Debugger", {
 								if not err and func then
 									local data,success = func();
 									if data and success then
+										ConvertCoordsForGroup(data);
 										MergeObject(self.data.g, CloneObject(data));
 										MergeObject(self.rawData, data);
 										self:Update(true);

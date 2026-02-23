@@ -1,6 +1,7 @@
 using ATT.DB;
 using ATT.DB.Types;
 using ATT.FieldTypes;
+using NLua;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -296,7 +297,7 @@ namespace ATT
                     return _inhertingFields;
                 }
 
-                string[] fields = Config["InheritingFields"] ?? Array.Empty<string>();
+                string[] fields = Config["InheritingFields"];
                 _inhertingFields = new HashSet<string>(fields);
                 return _inhertingFields;
             }
@@ -315,7 +316,7 @@ namespace ATT
                     return _preprocessorTags;
                 }
 
-                string[] tags = Config["PreProcessorTags"] ?? Array.Empty<string>();
+                string[] tags = Config["PreProcessorTags"];
                 _preprocessorTags = new HashSet<string>(tags);
                 return _preprocessorTags;
             }
@@ -374,6 +375,16 @@ namespace ATT
         {
             LocalizationStrings = localizationStrings;
             Trace.WriteLine($"Found {localizationStrings.Count} Localization Strings...");
+        }
+
+        /// <summary>
+        /// Assign the root category headers to the Framework's internal reference.
+        /// </summary>
+        /// <param name="rootCategoryHeaders">The root Category Headers.</param>
+        public static void AssignRootCategoryHeaders(Dictionary<string, object> rootCategoryHeaders)
+        {
+            RootCategoryHeaders = rootCategoryHeaders;
+            Trace.WriteLine($"Found {rootCategoryHeaders.Count} Root Category Headers...");
         }
 
         /// <summary>
@@ -677,8 +688,6 @@ namespace ATT
         /// </summary>
         internal static Dictionary<long, long> ItemAppearanceModifierIDs_ModID { get; private set; } = new Dictionary<long, long>();
 
-        //
-
         /// <summary>
         /// The LocalizationStrings table from main.lua that is used to generate localization strings.
         /// </summary>
@@ -698,6 +707,11 @@ namespace ATT
         /// This contains all of the explicitly assigned phaseIDs to readable
         /// </summary>
         internal static Dictionary<string, long> PhaseIDsByKey { get; } = new Dictionary<string, long>();
+
+        /// <summary>
+        /// All of the Root Category Headers that have been loaded into the database.
+        /// </summary>
+        internal static Dictionary<string, object> RootCategoryHeaders { get; set; } = new Dictionary<string, object>();
 
         /// <summary>
         /// Contains two Keys for sets of field names relating to a 'trackable' nature within ATT
@@ -2022,6 +2036,14 @@ namespace ATT
             var outputFolder = Directory.CreateDirectory($"{addonRootFolder}/db/{dbRootFolder}");
             if (outputFolder.Exists)
             {
+                // Mark references to the Custom Headers in Root Categories
+                foreach(var containerKeyValue in Objects.AllContainers)
+                {
+                    if (containerKeyValue.Value.Count > 0 && Framework.RootCategoryHeaders.TryGetValue(containerKeyValue.Key, out var obj))
+                    {
+                        if (obj is Dictionary<string, object> rootCategoryHeader) Validate_headerID(rootCategoryHeader);
+                    }
+                }
 
                 // DEBUGGING: Output Parsed Data
                 if (DebugMode)
@@ -4157,7 +4179,6 @@ setmetatable(_.HeaderConstants, {
                 IncludeRawNewlines = true;
 
                 CurrentParseStage = ParseStage.ExportAutoSources;
-                Objects.ExportAutoItemSources(Config["root-data"] ?? "./DATAS");
 
                 // Attempt to find some dirty objects and write them to a dynamic file.
                 ObjectHarvester.ExportDirtyObjectsToFilePath($"./DATAS/00 - DB/Dynamic/DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua");

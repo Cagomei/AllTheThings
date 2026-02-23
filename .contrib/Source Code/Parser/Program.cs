@@ -290,19 +290,40 @@ namespace ATT
                 string databaseRootFolder = Framework.Config["root-data"] ?? "./DATAS";
 
                 Framework.CurrentParseStage = ParseStage.RawJsonMerge;
+                
                 do
                 {
                     Errored = false;
-                    // Load all of the RAW JSON Data into the database.
-                    var files = Directory.EnumerateFiles(databaseRootFolder, "*.json", SearchOption.AllDirectories).ToList();
-                    files.Sort(StringComparer.InvariantCulture);
-                    foreach (var f in files) ParseJSONFile(f);
 
-                    if (Errored)
+                    // Load all of the RAW JSON Data into the database.
+                    var directories = Framework.Config["json-directories"];
+                    if (directories != null)
                     {
-                        Trace.WriteLine("Please fix the formatting of the above Invalid JSON file(s)");
-                        Trace.WriteLine("Press Enter once you have resolved the issue.");
-                        Framework.WaitForUser();
+                        var filenames = new List<string>();
+                        foreach (var jsonDirectory in (string[])directories)
+                        {
+                            if (!string.IsNullOrWhiteSpace(jsonDirectory))
+                            {
+                                Trace.WriteLine($"Loading JSON files from {jsonDirectory}.");
+                                filenames.AddRange(Directory.GetFiles(jsonDirectory, "*.json", SearchOption.AllDirectories));
+                            }
+                        }
+                        filenames.Sort(StringComparer.InvariantCulture);
+                        if (Debugger.IsAttached)
+                        {
+                            foreach (var filename in filenames) ParseJSONFile(filename);
+                        }
+                        else
+                        {
+                            foreach (var filename in filenames) ParseJSONFile(filename);
+                        }
+
+                        if (Errored)
+                        {
+                            Trace.WriteLine("Please fix the formatting of the above Invalid JSON file(s)");
+                            Trace.WriteLine("Press Enter once you have resolved the issue.");
+                            Framework.WaitForUser();
+                        }
                     }
                 }
                 while (Errored && !Framework.Automated);
@@ -313,27 +334,28 @@ namespace ATT
                 {
                     Errored = false;
 
-                    // Load all of the RAW JSON Data into the database.
+                    // Load all of the Wago Data into the database.
                     var directories = Framework.Config["wago-directories"];
                     if (directories != null)
                     {
-                        var filenames = new List<string>();
+                        var shouldLoadDirectly = Debugger.IsAttached || Framework.PreProcessorTags.Contains("ANYCLASSIC");
                         foreach (var wagoDirectory in (string[])directories)
                         {
                             if (!string.IsNullOrWhiteSpace(wagoDirectory))
                             {
+                                // CRIEVE NOTE: I need the directories themselves to run in a specific order.
                                 Trace.WriteLine($"Loading Wago DB CSV files from {wagoDirectory}.");
-                                filenames.AddRange(Directory.GetFiles(wagoDirectory, "*.csv", SearchOption.AllDirectories));
+                                var filenames = Directory.GetFiles(wagoDirectory, "*.csv", SearchOption.AllDirectories).ToList();
+                                filenames.Sort(StringComparer.InvariantCulture);
+                                if (shouldLoadDirectly)
+                                {
+                                    foreach (var filename in filenames) WagoData.LoadFromCSV(filename);
+                                }
+                                else
+                                {
+                                    filenames.AsParallel().ForAll(WagoData.LoadFromCSV);
+                                }
                             }
-                        }
-                        filenames.Sort(StringComparer.InvariantCulture);
-                        if (Debugger.IsAttached)
-                        {
-                            foreach (var filename in filenames) WagoData.LoadFromCSV(filename);
-                        }
-                        else
-                        {
-                            filenames.AsParallel().ForAll(WagoData.LoadFromCSV);
                         }
 
                         if (Errored)
@@ -525,6 +547,13 @@ namespace ATT
                     if (phases != null)
                     {
                         Framework.AssignPhases(Framework.ParseAsDictionary<long>(phases));
+                    }
+
+                    // Try to grab the contents of the global variable "RootCategoryHeaders".
+                    var rootCategoryHeaders = lua.GetTable("RootCategoryHeaders");
+                    if (rootCategoryHeaders != null)
+                    {
+                        Framework.AssignRootCategoryHeaders(Framework.ParseAsDictionary<string>(rootCategoryHeaders));
                     }
 
                     Framework.Objects.SKILL_ID_CONVERSION_TABLE =

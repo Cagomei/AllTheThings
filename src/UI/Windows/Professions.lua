@@ -44,7 +44,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 					local g = data.g;
 					if #g < 1 then
 						local results = {};
-						app:BuildFlatSearchFilteredResponse(app:GetDataCache().g, ProfessionFilter, results);
+						app:BuildFlatSearchFilteredResponse(app:GetDatabaseRoot().g, ProfessionFilter, results);
 						if #results > 0 then
 							-- Find all associated spellIDs
 							local associatedSpellIDs = {};
@@ -66,23 +66,20 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 									specializations[spellID] = specialization;
 								end
 							end
-
-							local expansions, events = {}, {};
-							for expansionID,_ in pairs(app.SearchForFieldContainer("expansionID")) do
-								expansionID = floor(expansionID);
-								if not expansions[expansionID] then
+							
+							local expansions = setmetatable({}, {
+								__index = function(t, expansionID)
 									local expansion = app.CreateExpansion(expansionID);
-									expansions[expansionID] = expansion;
+									t[expansionID] = expansion;
 									expansion.SortType = "name";
 									expansion.parent = data;
 									expansion.g = {};
-								end
-							end
-
-
-
+									return expansion;
+								end,
+							});
+							local events = {};
 							local recipes = {};
-							for spellID,sources in pairs(app.SearchForFieldContainer("spellID")) do
+							for spellID,sources in pairs(app.GetFieldContainer("spellID")) do
 								if associatedSpellIDs[spellID] and not recipes[spellID] then
 									local count = #sources;
 									if count > 0 then

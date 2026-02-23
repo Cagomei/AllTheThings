@@ -115,7 +115,7 @@ app:CreateWindow("Tradeskills", {
 			end
 
 			-- Cache Learned Spells
-			local skillCache = app.SearchForFieldContainer("spellID");
+			local skillCache = app.GetFieldContainer("spellID");
 			if skillCache then
 				-- Cache learned recipes and reagents
 				local reagentCache = AllTheThingsAD.Reagents;
@@ -317,7 +317,7 @@ app:CreateWindow("Tradeskills", {
 									recipesList.icon = 134939;
 									tinsert(cache.g, 1, recipesList);
 								end
-								local response = app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", requireSkill);
+								local response = app:BuildSearchResponse(app:GetDatabaseRoot().g, "requireSkill", requireSkill);
 								if response then app.ArrayAppend(cache.g, response); end
 							end
 							tinsert(g, cache);

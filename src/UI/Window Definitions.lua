@@ -959,6 +959,17 @@ local function StartMovingOrSizing(self)
 end
 
 -- Shared Panel Functions
+local function GenerateSourcePathForTSM(group, l)
+	local parent = group.sourceParent or group.parent;
+	if parent then
+		if l < 1 or not group.text then
+			return GenerateSourcePathForTSM(parent, l + 1);
+		else
+			return GenerateSourcePathForTSM(parent, l + 1) .. "`" .. group.text;
+		end
+	end
+	return L.TITLE
+end
 local function RowOnClick(self, button)
 	local reference = self.ref;
 	if reference then
@@ -1010,7 +1021,7 @@ local function RowOnClick(self, button)
 							local dict, path, itemString, group = {}, nil, nil, nil;
 							for i=1,#missingItems do
 								group = missingItems[i]
-								path = app.GenerateSourcePathForTSM(group, 0);
+								path = GenerateSourcePathForTSM(group, 0);
 								if path then
 									itemString = dict[path];
 									if itemString then
@@ -1052,7 +1063,7 @@ local function RowOnClick(self, button)
 							for i=1,#missingItems do
 								group = missingItems[i]
 								search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID);
-								if search then itemList[search] = app.GenerateSourcePathForTSM(group, 0); end
+								if search then itemList[search] = GenerateSourcePathForTSM(group, 0); end
 							end
 							app:ShowPopupDialog(L.TSM_WARNING_1 .. L.TITLE .. L.TSM_WARNING_2,
 							function()
@@ -2931,6 +2942,35 @@ end
 function app:CreateWindow(suffix, definition)
 	app.WindowDefinitions[suffix] = definition;
 	if definition then
+		-- Dynamic Categories are neat, but currently only a Classic Feature (for now?)
+		if definition.IsDynamicCategory and app.IsClassic and not definition.DynamicCategoryHeader then
+			app.AddEventHandler("OnBuildDataCache", function(categories)
+				categories["Dynamic" .. suffix] = app.CreateDynamicCategory(suffix, {
+					SortPriority = 100,
+					sourceIgnored = 1
+				});
+			end);
+			definition.DefaultRefresh = function(self, ...)
+				UpdateVisibleRowData(self, ...);
+				if self.RegisteredRefreshCallbacks then
+					local TLUG = self.data.TLUG;
+					if TLUG ~= self.__lastTLUG then
+						self.__lastTLUG = TLUG;
+						for i=1,#self.RegisteredRefreshCallbacks do
+							self.RegisteredRefreshCallbacks[i](TLUG);
+						end
+					end
+				end
+			end
+			definition.RegisterRefreshCallback = function(self, callback)
+				if not self.RegisteredRefreshCallbacks then
+					self.RegisteredRefreshCallbacks = { callback };
+				else
+					self.RegisteredRefreshCallbacks[#self.RegisteredRefreshCallbacks + 1] = callback;
+				end
+			end
+		end
+		
 		if definition.Preload then
 			-- This window still needs to be loaded right away
 			return app:GetWindow(suffix);
@@ -3035,7 +3075,7 @@ function app:CreateMiniListFromSource(key, id, sourcePath)
 	-- If we provided the original source path, then we can find the exact element to popout.
 	if sourcePath then
 		local hashes = { (">"):split(sourcePath) };
-		local ref = app.SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
+		local ref = app.SearchForSourcePath(app:GetDatabaseRoot().g, hashes, 2, #hashes);
 		if ref then
 			app:CreateMiniListForGroup(ref);
 			return;
@@ -3067,7 +3107,7 @@ function app:CreateMiniListFromSource(key, id, sourcePath)
 
 		-- Search for the field/value pair everywhere in the DB.
 		local t = {};
-		app:BuildFlatSearchResponse(app:GetDataCache().g, key, id, t);
+		app:BuildFlatSearchResponse(app:GetDatabaseRoot().g, key, id, t);
 		if t and #t > 0 then
 			local ref = #t == 1 and t[1] or app.CloneClassInstance({ hash = key .. id, key = key, [key] = id, g = t });
 			if ref then
@@ -3357,7 +3397,7 @@ local function BuildCategorizedSearchFunctionForClassTypes(key, fallbackText, ..
 			local g = data.g;
 			if #g < 1 then
 				local results = {};
-				app:BuildFlatSearchFilteredResponse(app:GetDataCache().g, SearchForClassTypes, results);
+				app:BuildFlatSearchFilteredResponse(app:GetDatabaseRoot().g, SearchForClassTypes, results);
 				local headers, resultsByKey = {}, {};
 				for i,result in pairs(results) do
 					local id = result[key];
@@ -3423,7 +3463,7 @@ local function BuildFlatSearchFunctionForClassTypes(key, fallbackText, ...)
 			local g = data.g;
 			if #g < 1 then
 				local results = {};
-				app:BuildFlatSearchFilteredResponse(app:GetDataCache().g, SearchForClassTypes, results);
+				app:BuildFlatSearchFilteredResponse(app:GetDatabaseRoot().g, SearchForClassTypes, results);
 				local headers, resultsByKey = {}, {};
 				for i,result in pairs(results) do
 					local id = result[key];

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 
 namespace ATT
 {
@@ -430,64 +431,25 @@ namespace ATT
         {
             // Export the Category
             var builder = new Exporter(name);
-            builder.Append("categories.").Append(name).Append("={");
-            foreach (var group in category)
+            builder.Append("categories.").Append(name).Append("=");
+            bool isPrimaryRootCategory = false;
+            if (Framework.RootCategoryHeaders.TryGetValue(name, out var headerObj)
+                && headerObj is Dictionary<string, object> header && header != null)
             {
-                ExportCompressedLua(builder, group);
-                builder.Append(",");
+                header["g"] = category;
+                ExportCompressedLua(builder, header);
+                isPrimaryRootCategory = true;
             }
-            builder.Remove(builder.Length - 1, 1).AppendLine("};").AppendLine("end);");
+            else ExportCompressedLua(builder, category);
+            builder.AppendLine(";").AppendLine("end);");
             builder.Insert(0, "--STRUCTURE_REPLACEMENTS" + Environment.NewLine);
             ExportLocalVariablesForLua(builder);
             builder.Insert(0, new StringBuilder()
                 .AppendLine("---@diagnostic disable: deprecated")
                 .AppendLine("local appName, _ = ...;")
-                .AppendLine("_.AddEventHandler(\"OnGetDataCache\", function(categories)"));
-            AddTableNewLines = ConfigUseExportNewlines;
-            return builder;
-        }
-
-        /// <summary>
-        /// Export the categories to a new string builder instance.
-        /// </summary>
-        /// <param name="categories"></param>
-        /// <returns></returns>
-        public static Exporter ExportCompressedLuaCategories(IDictionary<string, List<object>> categories)
-        {
-            // Export all of the Categories
-            var builder = new Exporter();
-            builder.AppendLine("_.Categories={");
-            foreach (var pair in categories)
-            {
-                if (pair.Value.Count > 0)
-                {
-                    builder.Append(pair.Key).AppendLine("={");
-                    foreach (var group in pair.Value)
-                    {
-                        ExportCompressedLua(builder, group);
-                        builder.Append(",");
-                    }
-                    builder.Remove(builder.Length - 1, 1).AppendLine("};");
-                }
-            }
-            builder.AppendLine("};");
-
-            // Simplify the structure of the string and then export to the builder.
-            if (!Framework.PreProcessorTags.Contains("NOSIMPLIFY"))
-            {
-                var simplifyConfig = Framework.Config["SimplifyStructures"];
-                if (simplifyConfig.Defined)
-                {
-                    int[] simplify = simplifyConfig;
-                    SimplifyStructureForLua(builder, simplify[0], simplify[1]);
-                }
-                else
-                {
-                    SimplifyStructureForLua(builder);
-                }
-            }
-            ExportLocalVariablesForLua(builder);
-            ExportCategoriesHeaderForLua(builder);
+                .Append("_.AddEventHandler(\"")
+                .Append(isPrimaryRootCategory ? "OnBuildDataCache" : "OnBuildHiddenDataCache")
+                .AppendLine("\", function(categories)"));
             AddTableNewLines = ConfigUseExportNewlines;
             return builder;
         }

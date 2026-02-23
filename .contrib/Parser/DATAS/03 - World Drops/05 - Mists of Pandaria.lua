@@ -715,6 +715,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	filter(MISC, {
+		currency(738),	-- Lesser Charm of Good Fortune
 		i(89112),	-- Mote of Harmony
 		i(74849, {	-- Pink Turnip
 			["description"] = "Pink Turnip drops off any Yaungol in Pandaria. Located mostly in Kun-Lai Summit and Townlong Steppes.",
@@ -722,6 +723,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = 
 		i(76061),	-- Spirit of Harmony
 		i(74844, {	-- Red Blossom Leek
 			["description"] = "Drops from Jinyu, Sprites or Zandalari. Located in almost every zone.",
+		}),
+		currency(395, {	-- Justice Points
+			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+		}),
+		currency(396, {	-- Valor Points
+			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 		}),
 	}),
 })));

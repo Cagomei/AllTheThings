@@ -1,4 +1,5 @@
-﻿using ATT.DB.Types;
+﻿using ATT.DB;
+using ATT.DB.Types;
 using ATT.FieldTypes;
 using System;
 using System.Collections;
@@ -1139,6 +1140,7 @@ namespace ATT
             {
                 var AllContainerClones = new SortedDictionary<string, List<object>>(AllContainers, StringComparer.InvariantCulture);
                 var builder = new StringBuilder("<Ui xmlns=\"http://www.blizzard.com/wow/ui/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.blizzard.com/wow/ui/..\\FrameXML\\UI.xsd\">");
+                builder.AppendLine().Append("\t<Script file=\"LocalizationDB.lua\"/>");
                 var categoryFolder = Path.Combine(directory, "Categories");
                 if (Directory.Exists(categoryFolder)) Directory.Delete(categoryFolder, true);
                 Directory.CreateDirectory(categoryFolder);
@@ -1152,9 +1154,18 @@ namespace ATT
                     }
                 }
 
-                // Now write the Categories xml document.
+                // Load all of the Wago Data into the database.
+                string[] extraDatabaseFiles = Config["extra-database-files"];
+                foreach (var filename in extraDatabaseFiles)
+                {
+                    builder.AppendLine().Append("\t<")
+                        .Append(filename.EndsWith(".xml") ? "Include" : "Script")
+                        .Append(" file=\"").Append(filename).Append("\"/>");
+                }
+
+                // Now write the Database xml document.
                 builder.AppendLine().AppendLine("</Ui>");
-                WriteIfDifferent(Path.Combine(directory, "Categories.xml"), builder.ToString());
+                WriteIfDifferent(Path.Combine(directory, "Database.xml"), builder.ToString());
 
                 // Build all categories
                 ConcurrentDictionary<string, Exporter> categoryBuilders = new ConcurrentDictionary<string, Exporter>();
@@ -1257,33 +1268,6 @@ for k,t in pairs(keys) do
 end");
 
                     string content = locale.ToString();
-                    if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
-                    WriteIfDifferent(filename, content);
-                }
-            }
-
-            public static void ExportAutoItemSources(string directory)
-            {
-                var sourcesDir = Path.Combine(directory, "00 - Item DB", "Source IDs");
-                if (Directory.Exists(sourcesDir))
-                {
-                    var filename = Path.Combine(sourcesDir, "__auto-sources.lua");
-                    foreach (string sourceFile in Directory.EnumerateFiles(sourcesDir, "*.lua"))
-                    {
-                        if (sourceFile != filename)
-                        {
-                            File.Delete(sourceFile);
-                        }
-                    }
-
-                    StringBuilder data = new StringBuilder(10000);
-                    data.AppendLine("--   WARNING: This file is dynamically generated   --");
-                    data.Append("root(\"Items.SOURCES\",");
-                    AddTableNewLines = true;
-                    data.AppendLine(ExportCompressedLua(Items.AllItemSourceIDs).ToString());
-                    data.Append(");");
-
-                    string content = data.ToString();
                     if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
                     WriteIfDifferent(filename, content);
                 }

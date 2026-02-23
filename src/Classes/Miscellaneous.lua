@@ -7,9 +7,10 @@ local pairs, ipairs = pairs, ipairs;
 
 -- App locals
 local AssignChildren, GetRelativeValue = app.AssignChildren, app.GetRelativeValue
-local NestObjects, CreateObject, NestObject, SearchForFieldContainer, SearchForObject
+local NestObjects, CreateObject, NestObject, SearchForObject
 
-local DynamicDataCache = app.CreateDataCache("dynamic", true);
+local DynamicDataCache = app.CreateDataCache("dynamic");
+DynamicDataCache.skipMapCaching = true;
 local Runner = app.CreateRunner("dynamic");
 Runner.SetPerFrameDefault(1)
 
@@ -21,7 +22,6 @@ app.AddEventHandler("OnLoad", function()
 	NestObject = app.NestObject
 	NestObjects = app.NestObjects
 	CreateObject = app.__CreateObject
-	SearchForFieldContainer = app.SearchForFieldContainer
 	SearchForObject = app.SearchForObject;
 end)
 
@@ -99,7 +99,7 @@ end
 local DynamicCategory_Simple = function(self)
 	local dynamicCache = app.GetRawFieldContainer(self.dynamic);
 	if dynamicCache then
-		local rootATT = app:GetDataCache();
+		local rootATT = app:GetDatabaseRoot();
 		local top, thing;
 		local topHeaders, dynamicValue, clearSubgroups, searchcriteria = CreateTopHeaderCache(), self.dynamic_value, not self.dynamic_withsubgroups, self.dynamic_searchcriteria
 		-- not going to bother making this complex
@@ -200,7 +200,7 @@ local function NestDynamicValueCategories(group)
 	local cat, search
 	local field = group.dynamicValueID
 	local dynamicvalue_field = group.dynamic_valueField
-	local cache = SearchForFieldContainer(field);
+	local cache = app.SearchForFieldContainer(field);
 	-- app.PrintDebug("FDVC:",field,dynamicvalue_field)
 	for id,_ in pairs(cache) do
 		search = SearchForObject(field, id, "key", true)
@@ -392,6 +392,7 @@ for _,field in ipairs({
 	"isYearly",
 	"repeatable",
 	"requireSkill",
+	"SortPriority",
 	"sym",
 }) do
 	CreateVisualHeader__class[field] = Empty
