@@ -254,6 +254,9 @@ app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteria
 	["rank"] = function(t) return t.data.rank; end,
 	["collected"] = function(t)
 		if t.data.collectible then
+			if t.data.collected then
+				return 1;
+			end
 			if app.Settings.AccountWide.Achievements then
 				-- Check to see if the criteria was completed.
 				local achievementID = t.achievementID;
@@ -261,7 +264,6 @@ app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteria
 					return 2;
 				end
 			end
-			return t.data.collected and 1;
 		end
 	end,
 	["saved"] = function(t)
@@ -513,6 +515,9 @@ app.CreateAchievement = app.CreateClass("Achievement", "achievementID", fields,
 	["parentCategoryID"] = function(t) return t.data.category or -1; end,
 	["collected"] = function(t)
 		if t.data.collectible then
+			if t.data.collected then
+				return 1;
+			end
 			if app.Settings.AccountWide.Achievements then
 				-- Check to see if the criteria was completed.
 				local achievementID = t.achievementID;
@@ -520,7 +525,6 @@ app.CreateAchievement = app.CreateClass("Achievement", "achievementID", fields,
 					return 2;
 				end
 			end
-			return t.data.collected and 1;
 		end
 	end,
 	["saved"] = function(t)
