@@ -109,7 +109,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["timeline"] = { ADDED_7_1_5, REMOVED_8_0_1 },
 			}),
 			ach(7945, {		-- Haters Gonna Hate (Season 2)
-				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3, ADDED_11_2_7 },
 			}),
 			applyclassicphase(MOP_PHASE_ESCALATION, ach(8335, {		-- Having a Brawl (Season 1) (Alliance)
 				["races"] = ALLIANCE_ONLY,
