@@ -684,6 +684,60 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(3632, {	-- Gnome Engineering [A]
+					["altQuests"] = {
+						3526,	-- Goblin Engineering
+						3629,	-- Goblin Engineering
+						3630,	-- Gnome Engineering
+						-- 3632,	-- Gnome Engineering
+						3633,	-- Goblin Engineering
+						3634,	-- Gnome Engineering
+						3635,	-- Gnome Engineering
+						3637,	-- Gnome Engineering
+						4181,	-- Goblin Engineering
+						-- #if AFTER CATA
+						29475,	-- Goblin Engineering
+						29477,	-- Gnomish Engineering
+						-- #endif
+					},
+					["providers"] = {
+						{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
+						{ "i", 10789 },	-- Manual of Engineering Disciplines
+					},
+					["coord"] = { 68.8, 45.2, IRONFORGE },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
+					["lvl"] = 30,
+				}),
+				q(4181, {	-- Goblin Engineering [A]
+					["altQuests"] = {
+						3526,	-- Goblin Engineering
+						3629,	-- Goblin Engineering
+						3630,	-- Gnome Engineering
+						3632,	-- Gnome Engineering
+						3633,	-- Goblin Engineering
+						3634,	-- Gnome Engineering
+						3635,	-- Gnome Engineering
+						3637,	-- Gnome Engineering
+						-- 4181,	-- Goblin Engineering
+						-- #if AFTER CATA
+						29475,	-- Goblin Engineering
+						29477,	-- Gnomish Engineering
+						-- #endif
+					},
+					["providers"] = {
+						{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
+						{ "i", 10789 },	-- Manual of Engineering Disciplines
+					},
+					["coord"] = { 68.8, 45.2, IRONFORGE },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
+					["lvl"] = 30,
+				}),
 				q(1682, {	-- Grey Iron Weapons
 					["sourceQuest"] = 1681,	-- Ironband's Compound
 					["qg"] = 6031,	-- Tormus Deepforge
@@ -922,6 +976,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(9514, {	-- Arcane Staff
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
+					},
+				}),
+				q(3647, {	-- Membership Card Renewal [A]
+					["sourceQuest"] = 3641,	-- Show Your Work
+					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
+					["coord"] = { 69.8, 50.2, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "g", 20000 } },	-- 2g
+					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
+					["repeatable"] = true,
+					["lvl"] = 30,
+					["groups"] = {
+						i(10790),	-- Gnome Engineer Membership Card
 					},
 				}),
 				q(38345, {	-- Numismatics

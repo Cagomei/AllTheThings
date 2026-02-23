@@ -2180,6 +2180,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				q(3644, {	-- Membership Card Renewal
+					["sourceQuest"] = 3639,	-- Show Your Work
+					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
+					["coord"] = { 54.4, 27.2, TANARIS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "g", 20000 } },	-- 2g
+					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
+					["repeatable"] = true,
+					["lvl"] = 30,
+					["groups"] = {
+						i(10791),	-- Goblin Engineer Membership Card
+					},
+				}),
 				q(25121, {	-- Momentum (A)
 					["sourceQuest"] = 25050,	-- Rocket Rescue (A)
 					["qg"] = 38535,	-- Kelsey Steelspark

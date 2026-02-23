@@ -1184,6 +1184,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(3645, {	-- Membership Card Renewal [H]
+					["sourceQuest"] = 3643,	-- Show Your Work
+					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
+					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "g", 20000 } },	-- 2g
+					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
+					["repeatable"] = true,
+					["lvl"] = 30,
+					["groups"] = {
+						i(10790),	-- Gnome Engineer Membership Card
+					},
+				}),
 				q(594, {	-- Message in a Bottle (1/2)
 					["providers"] = {
 						{ "i", 4098 },	-- Carefully Folded Note

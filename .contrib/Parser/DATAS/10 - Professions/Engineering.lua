@@ -68,134 +68,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["sourceQuestNumRequired"] = 1,
 			}),
 		})),
-		n(QUESTS, sharedData({
-			["learnedAt"] = 200,
-		}, {
-			q(3634, {	-- Gnome Engineering [A]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					-- 3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 62.6, 36.2, THE_BARRENS },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 30,
-			}),
-			q(3630, {	-- Gnome Engineering [A]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					-- 3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 55.0, 8.6, STORMWIND_CITY },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 30,
-			}),
-			q(3632, {	-- Gnome Engineering [A]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					-- 3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 68.8, 45.2, IRONFORGE },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 30,
-			}),
-			q(3637, {	-- Gnome Engineering [H]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					-- 3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 62.6, 36.2, THE_BARRENS },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 30,
-			}),
-			q(3635, {	-- Gnome Engineering [H]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					-- 3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 4586 },	-- Graham Van Talen <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 75.6, 74.6, UNDERCITY },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 30,
-			}),
+		n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {
 			q(29477, {	-- Gnomish Engineering
 				["altQuests"] = {
 					3526,	-- Goblin Engineering
@@ -232,107 +105,9 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					{ "i", 4392, 2 },	-- Advanced Target Dummy
 					{ "i", 4407, 1 },	-- Accurate Scope
 				},
+				["requireSkill"] = ENGINEERING,
+				["learnedAt"] = 200,
 				["repeatable"] = true,
-			}),
-			q(3629, {	-- Goblin Engineering [A]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					-- 3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 55.0, 8.6, STORMWIND_CITY },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 30,
-			}),
-			q(4181, {	-- Goblin Engineering [A]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					-- 4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 68.8, 45.2, IRONFORGE },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 30,
-			}),
-			q(3633, {	-- Goblin Engineering [H]
-				["altQuests"] = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					-- 3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 62.6, 36.2, THE_BARRENS },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 30,
-			}),
-			q(3526, {	-- Goblin Engineering [H]
-				["altQuests"] = {
-					-- 3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-					-- #if AFTER CATA
-					29475,	-- Goblin Engineering
-					29477,	-- Gnomish Engineering
-					-- #endif
-				},
-				["providers"] = {
-					{ "n", 4586 },	-- Graham Van Talen <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
-				["coord"] = { 75.6, 74.6, UNDERCITY },
-				["timeline"] = { REMOVED_4_0_3 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 30,
 			}),
 			q(29475, {	-- Goblin Engineering
 				["altQuests"] = {
@@ -366,62 +141,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					{ "i", 10507, 20 },	-- Solid Dynamite
 					{ "i", 4384, 5 },	-- Explosive Sheep
 				},
+				["requireSkill"] = ENGINEERING,
+				["learnedAt"] = 200,
 				["repeatable"] = true,
 			}),
 		})),
-		-- #if NOT ANYCLASSIC
-		n(QUESTS, sharedData({
-			["cost"] = { { "g", 20000 } },	-- 2g
-			["lvl"] = 30,
-			["repeatable"] = true,
-			["timeline"] = { REMOVED_4_0_3 },
-		}, {
-			q(3647, {	-- Membership Card Renewal [A]
-				["sourceQuest"] = 3641,	-- Show Your Work
-				["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
-				["coord"] = { 69.8, 50.2, IRONFORGE },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(10790, {	-- Gnome Engineer Membership Card
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-				},
-			}),
-			q(3645, {	-- Membership Card Renewal [H]
-				["sourceQuest"] = 3643,	-- Show Your Work
-				["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
-				["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(10790, {	-- Gnome Engineer Membership Card
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-				},
-			}),
-			q(3644, {	-- Membership Card Renewal
-				["sourceQuest"] = 3639,	-- Show Your Work
-				["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
-				["coord"] = { 54.4, 27.2, TANARIS },
-				["groups"] = {
-					i(10791, {	-- Goblin Engineer Membership Card
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-				},
-			}),
-			q(3646, {	-- Membership Card Renewal
-				["sourceQuest"] = 3639,	-- Show Your Work
-				["qg"] = 8738,	-- Vazario Linkgrease <Goblin Engineering Trainer>
-				["coord"] = { 62.6, 36.2, THE_BARRENS },
-				["groups"] = {
-					i(10791, {	-- Goblin Engineer Membership Card
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-				},
-			}),
-		})),
-		n(REWARDS, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {
+		n(REWARDS, {
 			i(11423, {	-- Gnome Engineer's Renewal Gift
 				["description"] = "If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
+				["provider"] = { "i", 10790 },	-- Gnome Engineer Membership Card
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					i(10603),	-- Schematic: Catseye Ultra Goggles (RECIPE!)
 					i(11827),	-- Schematic: Lil' Smoky (RECIPE!)
@@ -430,14 +159,15 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 			i(11422, {	-- Goblin Engineer's Renewal Gift
 				["description"] = "If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
+				["provider"] = { "i", 10791 },	-- Goblin Engineer Membership Card
+				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
 					i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
 					i(11828),	-- Schematic: Pet Bombling (RECIPE!)
 				},
 			}),
-		})),
-		-- #endif
+		}),
 	}),
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		ach(18908, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Bio-Optic Killshades (automated)
