@@ -1,9 +1,10 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,cl,flt,h,i,p,q,s,title,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateTitle,_.CreateExpansion;
 local a={{1,2,6},{1},{10},{11},{12},{13},{2},{3,7,13},{3},{4,10,11,12},{4},{5,8,9},{5},{6},{7},{8},{9}};
-categories.GroupFinder={
+categories.GroupFinder=
+h(-733,{SortPriority=50,g={
 h(-12,{
 ach(4476,{rank=10}),
 ach(4477,{rank=50,g={
@@ -523,8 +524,8 @@ q(83023,{lvl=80,repeatable=1,g={
 i(224573,{b=1,g={
 i(224572,{f=55,lvl=80,spellID=453250})}})}})}}),
 x(12,{awp=120000,g={
-i(259086,{
-i(259085,{f=55,spellID=1264426})})}}),
+i(259086,{b=1,g={
+i(259085,{f=55,lvl=90,spellID=1264426})}})}}),
 h(-42,{awp=80205,description="Rewarded from Quest while in Party Sync",g={
 i(171305,{b=1,g={
 cl(6,{
@@ -702,5 +703,5 @@ i(173668,{b=1,f=52}),
 i(173669,{b=1,f=52})}),
 flt(53,{
 i(173667,{b=1,f=53}),
-i(173666,{b=1,f=53})})}})}})};
+i(173666,{b=1,f=53})})}})}})}});
 end);

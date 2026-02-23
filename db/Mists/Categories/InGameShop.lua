@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,crit,flt,h,i,mnt,p,s,toy=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateItemSource,_.CreateToy;
-categories.InGameShop={
+categories.InGameShop=
+h(-213,{SortPriority=85,g={
 h(-12,{awp=80300,u=3,g={
 ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2})}}),
@@ -63,5 +64,5 @@ toy(184871,{b=1,q=3,u=3}),
 toy(198647,{b=1,q=4,u=3}),
 toy(33219,{b=1,q=3,u=3}),
 toy(32542,{b=1,q=3,u=3}),
-toy(38233,{b=1,q=3,u=3})}})};
+toy(38233,{b=1,q=3,u=3})}})}});
 end);

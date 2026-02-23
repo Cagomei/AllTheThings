@@ -146,7 +146,6 @@ L.CHANNEL_DIALOG = DIALOG_VOLUME;
 L.CHANNEL_MASTER = MASTER;
 L.CHANNEL_MUSIC = MUSIC_VOLUME;
 L.CHANNEL_SFX = FX_VOLUME;
-L.CHARACTERS = CHARACTER;
 L.CHARACTERUNLOCKS_CHECKBOX = "Character Unlocks";
 L.CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Enable this option to track Character Unlocks. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.";
 L.CHAT_COMMANDS_LABEL = "Chat Commands";
@@ -744,8 +743,6 @@ L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which
 L.SKIP_CUTSCENES_CHECKBOX = "Automatically Skip Cutscenes";
 L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.";
 L.SOCIAL_PROGRESS = "Social Progress";
-L.SOFT_RESERVES = "Soft Reserves";
-L.SOFT_RESERVES_DESCRIPTION = "The soft reservation list submitted by your raid group. This is managed through the Master Looter, should they have ATT installed. If not, this feature will not function.\n\nML: Members of your raid without ATT installed can whisper you '!sr <itemlink>' or '!sr <itemID>' to Soft Reserve an item.";
 L.SORT_BY_PROGRESS_CHECKBOX = "Sort By Progress";
 L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation (" .. SHIFT_KEY_TEXT .. " Right Click) to sort by the total progress of each group (instead of by Name)";
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Conduits";
@@ -845,7 +842,6 @@ L.TOYS_CHECKBOX_TOOLTIP = "Enable this option to track Toys.\n\nMost of these to
 L.TRACK_ACC_WIDE = "|c" .. _.DefaultColors.Account .. "Track Account-Wide|r";
 L.TRACKING_PROGRESS = "Tracking Progress";
 L.TRADEABLE = "Tradeable";
-L.TRADING_POST = "Trading Post";
 L.TSM_WARNING_1 = "Running this command can potentially destroy your existing TSM settings by reassigning items to the ";
 L.TSM_WARNING_2 = " preset.\n\nWe recommend that you use a different profile when using this feature.\n\nDo you want to proceed anyways?";
 L.TSM4_ERROR = "TSM4 is not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!";
@@ -1008,6 +1004,7 @@ _.HeaderConstants = {
 	ACHIEVEMENTS = -12,
 	ARTIFACTS = -214,
 	BREWFEST_HEADER = -557,
+	CHARACTER = -731,
 	CHEST = -90,
 	CHILDRENS_WEEK_HEADER = -559,
 	COMMON_BOSS_DROPS = -19,
@@ -1017,6 +1014,9 @@ _.HeaderConstants = {
 	DAY_OF_THE_DEAD_HEADER = -566,
 	DISCOVERY = -26,
 	DROPS = -27,
+	DUNGEON_FINDER = -733,
+	DUNGEONS_AND_RAIDS = -75,
+	EXPANSION_FEATURES = -735,
 	EXPANSION_PRELAUNCH = -103,
 	EXPLORATION = -30,
 	FACTIONS = -31,
@@ -1035,10 +1035,12 @@ _.HeaderConstants = {
 	LUNAR_FESTIVAL_HEADER = -580,
 	MIDSUMMER_FIRE_FESTIVAL_HEADER = -582,
 	NOBLEGARDEN_HEADER = -583,
+	OUTDOOR_ZONES = -732,
 	PET_BATTLES = -43,
 	PILGRIMS_BOUNTY_HEADER = -584,
 	PIRATES_DAY_HEADER = -585,
 	PROFESSIONS = -44,
+	PROMOTIONS = -736,
 	PVP = -303,
 	PVP_GLADIATOR = -296,
 	QUESTS = -45,
@@ -1055,8 +1057,10 @@ _.HeaderConstants = {
 	UPGRADE = -57,
 	VENDORS = -58,
 	WEAPONS = -101,
+	WHELP_DAYCARE = -398,
 	WORLD_BOSSES = -61,
 	WORLD_DROPS = -698,
+	WORLD_EVENTS = -734,
 	ZONE_DROPS = -63,
 };
 _.HeaderData = {
@@ -1098,6 +1102,7 @@ localize(L.HEADER_NAMES, {
 	[-72] = "Defense Protocol Beta",
 	[-73] = "Defense Protocol Gamma",
 	[-74] = "Dragons of Nightmare",
+	[-75] = GROUP_FINDER,
 	[-78] = DUNGEON_FLOOR_NAXXRAMAS2,
 	[-79] = DUNGEON_FLOOR_NAXXRAMAS1,
 	[-80] = DUNGEON_FLOOR_NAXXRAMAS3,
@@ -1186,12 +1191,13 @@ localize(L.HEADER_NAMES, {
 	[-370] = C_Map.GetAreaInfo(4892),
 	[-371] = C_Map.GetAreaInfo(7932),
 	[-388] = C_Map.GetAreaInfo(1769),
+	[-398] = "Little Scales Daycare",
 	[-413] = select(1,GetCategoryInfo(14941)),
 	[-476] = "Plunderstorm",
 	[-481] = "The Ahn'Qiraj War Effort",
 	[-482] = "The Opening of the Dark Portal",
 	[-483] = "The Scepter of the Shifting Sands",
-	[-484] = "The Scourge Invasion",
+	[-484] = "Scourge Invasion",
 	[-520] = "BlizzCon",
 	[-521] = "Collector's Edition",
 	[-522] = "Heroic Edition",
@@ -1232,6 +1238,13 @@ localize(L.HEADER_NAMES, {
 	[-694] = "TBC Classic Anniversary Edition - Outland Upgrade",
 	[-698] = TRANSMOG_SOURCE_4,
 	[-721] = TRACKER_FILTER_REMOTE_ZONES,
+	[-723] = "Elemental Invasions",
+	[-731] = CHARACTER,
+	[-732] = BUG_CATEGORY2,
+	[-733] = DUNGEONS_BUTTON,
+	[-734] = BATTLE_PET_SOURCE_7,
+	[-735] = EXPANSION_FILTER_TEXT,
+	[-736] = BATTLE_PET_SOURCE_8,
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1266,6 +1279,9 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-660] = "Engage Sartharion with at least 2 of the 3 drakes alive and then defeat Sartharion.",
 	[-661] = "Engage Sartharion with all 3 drakes alive and then defeat Sartharion.",
 	[-721] = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.",
+	[-723] = "Reports of elemental incursions in different parts of Kalimdor are increasing. Every few days, a new wave of elementals blasts its way into the regions of Silithus, Un'Goro Crater, Azshara, and Winterspring - ostensibly, for the sole reason of seeing just how far into these territories they can penetrate before being beaten back by the forces of the Horde or the Alliance. Investigate these regions and aid your allies in countering these mysterious invasions.",
+	[-735] = "This section is for systems introduced during an expansion that involve several zones.\nIf an expansion feature is exclusive to a single zone, then it can be found within that zone in ATT, otherwise for the sake of reducing database duplication and bloat, it can be found below.",
+	[-736] = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1309,6 +1325,7 @@ localize(L.HEADER_ICONS, {
 	[-72] = 236516,
 	[-73] = 236521,
 	[-74] = 134157,
+	[-75] = _.asset("category_d&r"),
 	[-78] = 135442,
 	[-79] = 236271,
 	[-80] = 135771,
@@ -1397,6 +1414,7 @@ localize(L.HEADER_ICONS, {
 	[-370] = 341981,
 	[-371] = 343638,
 	[-388] = 236696,
+	[-398] = 3846202,
 	[-413] = 236689,
 	[-476] = 133168,
 	[-481] = 132594,
@@ -1443,6 +1461,13 @@ localize(L.HEADER_ICONS, {
 	[-694] = _.asset("expansion_tbc"),
 	[-698] = _.asset("category_worlddrops"),
 	[-721] = 237382,
+	[-723] = 538566,
+	[-731] = _.asset("category_itemsets"),
+	[-732] = _.asset("category_zones"),
+	[-733] = _.asset("category_groupfinder"),
+	[-734] = _.asset("category_event"),
+	[-735] = _.asset("category_expansionfeatures"),
+	[-736] = _.asset("category_promo"),
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -5927,6 +5952,7 @@ L.QUEST_NAMES = {
 	[5711] = "<NYI> The Lost Ways",
 	[5712] = "<NYI> The Lost Ways",
 	[6003] = "<nyi> <txt> Green With Envy",
+	[6131] = "Timbermaw Ally (old version, deprecated)",
 	[6165] = "<NYI> <TXT> Archmage Timolain's Remains",
 	[6201] = "<UNUSED> The Legacy of the Ashbringer",
 	[6202] = "<UNUSED> Good and Evil",
@@ -6581,7 +6607,6 @@ L.TOP_ROW_TO_UNLOCK = "|cffcf0000" .. ALT_KEY_TEXT .. " Klick um das Fenster fre
 L.TOY_DESC = "Klick diesen Knopf um ein zufälliges Spielzeug auszuwählen, das Euch noch fehlt.";
 L.TRACKING_PROGRESS = "Fortschrittsverfolgung";
 L.TRADEABLE = "Handelbar";
-L.TRADING_POST = "Handelsposten";
 L.TSM_WARNING_1 = "Diesen Befehl auszuführen kann möglicherweise Ihre bestehenden TSM Einstellungen zerstören, indem es sich in die ";
 L.TSM_WARNING_2 = " Voreinstellung zurücksetzt.\n\nWir empfehlen das Sie ein anderes Profil für diese Funktion benutzen.\n\nMöchten Sie trotzdem fortfahren?";
 L.TSM4_ERROR = "TSM4 is noch nicht kompatibel mit ATT. Wenn Sie wissen wie mann Presets kreiert so wie wir es mit TSM3 gemacht haben, bitte nehmem Sie Kontakt auf mit Crieve durch Discord.";
@@ -8373,7 +8398,6 @@ L.TOP_ROW_TO_UNLOCK = "|cffcf0000" .. ALT_KEY_TEXT .. " + clic pour débloquer c
 L.TOY_DESC = "Cliquez sur ce bouton pour sélectionner un jouet aléatoire basé sur ce qu’il vous manque.";
 L.TRACKING_PROGRESS = "Suivi des progrès";
 L.TRADEABLE = "Échangeable";
-L.TRADING_POST = "Comptoir";
 L.UNCHECK_ALL_BUTTON_TOOLTIP = "Cliquez sur ce bouton pour désactiver toutes les options en même temps.";
 L.UNOBTAINABLE_LABEL = "Contenu inaccessible";
 L.UNOBTAINABLES_PAGE = "Inaccessibles";
@@ -9926,7 +9950,6 @@ L.REQUIRES = "Richiede";
 L.RUNEFORGELEGENDARIES_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Abilità dell'Incisione Runica";
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Condotti";
 L.TITLES_CHECKBOX = "Titoli";
-L.TRADING_POST = "Emporio";
 localize(_.CategoryNames, {
 	[3] = "Mazzo di Tarocchi",
 	[104] = "Tinta",
@@ -11025,7 +11048,6 @@ L.TITLE_UNIQUE_APPEARANCE = "Única ";
 L.TITLES_CHECKBOX = "Títulos";
 L.TOM_TOM_NOT_FOUND = "Você precisa ter TomTom instalado para exibir as coordenadas.";
 L.TRACKING_PROGRESS = "Rastreando Progresso";
-L.TRADING_POST = "Posto Comercial";
 L.VISIT_FLIGHT_MASTER = "Visite o Mestre de Voo para registrar.";
 L.WRONG_FACTION = "Você precisa ser de outra facção para visualizar isso.";
 localize(_.CategoryNames, {
@@ -13015,7 +13037,6 @@ L.TOY_DESC = "Нажмите эту кнопку для выбора случа�
 L.TOYS_CHECKBOX_TOOLTIP = "Включите для отслеживания игрушек.\n\nБольшинство из них имеют забавные эффекты. Другие же, как игрушечные Камни возвращения, могут быть использованы вместо обычного Камня возвращения и сохранить Вам место в сумке! Они также имеют интересные эффекты ... Здорово!";
 L.TRACK_ACC_WIDE = "|c" .. _.DefaultColors.Account .. "Отслеживать на весь аккаунт|r";
 L.TRACKING_PROGRESS = "Отслеживание выполнения";
-L.TRADING_POST = "Торговая лавка";
 L.TSM_WARNING_1 = "Использование данной команды может сломать Ваши существующие настройки TSM при перераспределении предметов к ";
 L.TSM_WARNING_2 = " группе.\n\nМы рекомендуем, чтобы Вы использовали другой профиль для данной функции.\n\nХотите продолжить в любом случае?";
 L.TSM4_ERROR = "TSM4 пока что не совместим с ATT. Если Вы знаете, как создавать Группы, как мы делали это в TSM3, пожалуйста, свяжитесь с Crieve в Дискорде!";
@@ -13115,6 +13136,7 @@ localize(L.HEADER_NAMES, {
 	[-368] = "Штурм цитадели",
 	[-369] = "Чумодельня",
 	[-371] = "Залы Ледокрылых",
+	[-398] = "Драконьи ясли",
 	[-481] = "Война в Ан'Кираже",
 	[-482] = "Открытие Темного портала",
 	[-483] = "Скипетр Зыбучих песков",
@@ -14620,7 +14642,6 @@ L.REQUIRES = "필요 전문화";
 L.RUNEFORGELEGENDARIES_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 룬조각 능력";
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 도관";
 L.TITLES_CHECKBOX = "칭호";
-L.TRADING_POST = "교역소";
 localize(_.CategoryNames, {
 	[1] = "투사체",
 	[3] = "카드 묶음",
@@ -16655,8 +16676,6 @@ L.SKIP_AUTO_REFRESH_TOOLTIP = "Por defecto (desactivado), cualquier cambio de Aj
 L.SKIP_CUTSCENES_CHECKBOX = "Saltar automáticamente cinemáticas";
 L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres que ATT salte todas las cinemáticas automáticamente por ti.";
 L.SOCIAL_PROGRESS = "Progreso social";
-L.SOFT_RESERVES = "Reserva anticipada";
-L.SOFT_RESERVES_DESCRIPTION = "La lista de reserva anticipada enviada por tu grupo de banda. Esta se gestiona a través del Maestro Saqueador, si tiene instalado ATT. De lo contrario, esta función no funcionará.\n\nML: Los miembros de tu banda sin ATT instalado pueden susurrar \"!sr <itemlink>\" o \"!sr <itemID>\" para reservar un objeto.";
 L.SORT_BY_PROGRESS_CHECKBOX = "Ordenar por pogreso";
 L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Activa esta opción si quieres la operación de 'Ordenar' (" .. SHIFT_KEY_TEXT .. " + clic derecho) para ordenar sobre el total de progreso de cada grupo (en vez de por nombre)";
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Conductos";
@@ -16741,7 +16760,6 @@ L.TOYS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar juguetes.\n\nLa mayo
 L.TRACK_ACC_WIDE = "|c" .. _.DefaultColors.Account .. "Rastrear para toda la cuenta|r";
 L.TRACKING_PROGRESS = "Rastreando progreso";
 L.TRADEABLE = "Comerciable";
-L.TRADING_POST = "Puesto Comercial";
 L.TSM_WARNING_1 = "Ejecutar este comando puede destruir potencialmente su configuración TSM existente al reasignar elementos a la ";
 L.TSM_WARNING_2 = " preestablecido.\n\nLe recomendamos que utilice un perfil diferente al usar esta función.\n\n¿Desea continuar de todos modos?";
 L.TSM4_ERROR = "TSM4 aún no es compatible con ATT. Si sabes cómo crear presets como en TSM3, ¡Susurrale a Crieve en Discord!";
@@ -16885,6 +16903,7 @@ localize(L.HEADER_NAMES, {
 	[-371] = "Las Cámaras de Alaescarcha",
 	[-482] = "La apertura del Portal Oscuro",
 	[-483] = "El cetro del Mar de Dunas",
+	[-484] = "Invasión de la plaga",
 	[-521] = "Edición de coleccionista",
 	[-522] = "Edición Heroica",
 	[-523] = "Edición Épica",
@@ -16913,6 +16932,7 @@ localize(L.HEADER_NAMES, {
 	[-659] = "Ayuda Crepuscular",
 	[-660] = "Dúo Crepuscular",
 	[-661] = "Dimensión Desconocida",
+	[-723] = "Incursiones elementales",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es posible que deba estar activo un día festivo específico para que pueda completar las cosas referenciadas en esta sección.",
@@ -16927,6 +16947,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-550] = "Este es un evento basado en Campos de batalla que coincide con el inicio de los Juegos Olímpicos de Verano. La única vez que se celebró fue en 2008 para coincidir con los Juegos Olímpicos de Pekín, y aunque parecía haber intención de repetirlo, nunca regresó.",
 	[-592] = "Es el aniversario de World of Warcraft! Desde el equipo de desarrollo de WoW, te damos las gracias por disfrutar del mundo de Azeroth y más allá junto a nosotros.",
 	[-721] = "Contiene contenido que está disponible en la Zona actual, pero que se obtiene directamente de otra Zona.",
+	[-723] = "Aumentan los informes de incursiones elementales en diferentes partes de Kalimdor. Cada pocos días, una nueva oleada de elementales se abre paso a la fuerza en las regiones de Silithus, el Cráter de Un'Goro, Azshara y Cuna del Invierno, aparentemente con el único propósito de ver hasta dónde pueden penetrar en estos territorios antes de ser repelidos por las fuerzas de la Horda o la Alianza. Investiga estas regiones y ayuda a tus aliados a contrarrestar estas misteriosas invasiones.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "Uno de estos dragones aparecerá aleatoriamente en las coordenadas asociadas en todo Azeroth.",
@@ -18668,7 +18689,6 @@ L.TOP_ROW_TO_UNLOCK = "|cffcf0000" .. ALT_KEY_TEXT .. " + click para desbloquear
 L.TOY_DESC = "Haz click en este botón para seleccionar un juguete aleatorio basado en lo que te falta.";
 L.TOY_ID = "ID del Juguete";
 L.TOYS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar juguetes.\n\nLa mayoría de juguetes hacen algo divertido. Otros, como los juguetes de Piedra de Hogar, pueden usarse en vez de tu Piedra de Hogar y ahorrarte un hueco en tus bolsas! También tienen efectos interesantes ... Genial!";
-L.TRADING_POST = "Puesto de venta";
 L.TWITCH_BUTTON_TOOLTIP = "Haz click en este botón para copiar el enlace a mi canal de Twitch.\n\n¡Puedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda!";
 L.UNCHECK_ALL_BUTTON_TOOLTIP = "Haz click en este botón para desactivar todas las opciones a la vez.";
 L.UNOBTAINABLE_LABEL = "Contenido no obtenible";
@@ -18698,11 +18718,13 @@ localize(L.HEADER_NAMES, {
 	[-367] = "Defensores de Atal'ai",
 	[-525] = "Paquete heroico Rasganorte WotLK Classic",
 	[-526] = "Paquete heroico abrasador de Cataclysm Classic",
+	[-723] = "Invasiones elementales",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-44] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Debug.",
 	[-59] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
 	[-592] = "¡Es el aniversario de World of Warcraft! Desde el equipo de desarrollo de WoW, te damos las gracias por disfrutar del mundo de Azeroth y más allá junto a nosotros.",
+	[-723] = "Aumentan los informes de invasiones elementales en diferentes partes de Kalimdor. Cada pocos días, una nueva oleada de elementales se abre paso a la fuerza en las regiones de Silithus, el Cráter de Un'Goro, Azshara y Cuna del Invierno, aparentemente con el único propósito de ver hasta dónde pueden penetrar en estos territorios antes de ser repelidos por las fuerzas de la Horda o la Alianza. Investiga estas regiones y ayuda a tus aliados a contrarrestar estas misteriosas invasiones.",
 });
 for key,value in pairs({
 	[2] = "Removido del juego",
@@ -19388,8 +19410,6 @@ L.SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选)，任何可能影响�
 L.SKIP_CUTSCENES_CHECKBOX = "自动跳过场景动画";
 L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "如果想让 ATT 代表你自动跳过所有场景动画请启用此选项。";
 L.SOCIAL_PROGRESS = "社交进度";
-L.SOFT_RESERVES = "软保留";
-L.SOFT_RESERVES_DESCRIPTION = "这是由团队提交的软保留物品列表。该功能需由队长通过 ATT 插件管理。若队长未安装 ATT，则此功能无法生效。\n\n队长：未安装 ATT 的队员可私聊你“!sr <物品链接>”或“!sr <物品 ID>”来软保留某件物品。";
 L.SORT_BY_PROGRESS_CHECKBOX = "按进度排序";
 L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作（" .. SHIFT_KEY_TEXT .. "右键）按每个组的总进度排序（而不是按名称）请启用此选项";
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 导灵器";
@@ -19475,7 +19495,6 @@ L.TOYS_CHECKBOX_TOOLTIP = "启用此选项可追踪玩具。\n\n这些玩具中�
 L.TRACK_ACC_WIDE = "|c" .. _.DefaultColors.Account .. "追踪 账号通用|r";
 L.TRACKING_PROGRESS = "追踪进度";
 L.TRADEABLE = "可交易";
-L.TRADING_POST = "商栈";
 L.TSM_WARNING_1 = "运行此命令可能会通过将物品重新分配到 ";
 L.TSM_WARNING_2 = " 预设。\n\n我们建议你在使用此功能时使用不同的配置文件。\n\n你还想继续吗?";
 L.TSM4_ERROR = "TSM4 尚未与 ATT 兼容。如果你知道如何像我们以前在 TSM3 中那样创建预设，请在 Discord 上告诉我！";
@@ -19585,6 +19604,7 @@ localize(L.HEADER_NAMES, {
 	[-368] = "进攻堡垒",
 	[-369] = "天灾工厂",
 	[-371] = "霜翼大厅",
+	[-398] = "幼鳞日托所",
 	[-476] = "霸业风暴",
 	[-481] = "安其拉之战捐献",
 	[-482] = "开启黑暗之门",
@@ -21428,7 +21448,6 @@ L.SKIP_AUTO_REFRESH_TOOLTIP = "預設情況下(未勾選)，任何可能影響�
 L.SKIP_CUTSCENES_CHECKBOX = "自動跳過過場動畫";
 L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "如果想讓 ATT 代替你自動跳過所有過場動畫請啟用此選項。";
 L.SOCIAL_PROGRESS = "社交進度";
-L.SOFT_RESERVES = "軟保留";
 L.SORT_BY_PROGRESS_CHECKBOX = "按進度排序";
 L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作（" .. SHIFT_KEY_TEXT .. "右鍵）按每個組的總進度排序（而不是按名稱）請啟用此選項";
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 導靈器";
@@ -21502,7 +21521,6 @@ L.TOY_DESC = "點擊此按鈕可依據缺少的內容選擇隨機玩具。";
 L.TOYS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤玩具。\n\n這些玩具中的大多數玩具都有趣。其他的，如爐石玩具，可以用來代替你的初始爐石，並可以為你節省一個背包！他們也有有趣的效果…很好！";
 L.TRACK_ACC_WIDE = "|c" .. _.DefaultColors.Account .. "追蹤 帳號共通|r";
 L.TRACKING_PROGRESS = "追蹤進度";
-L.TRADING_POST = "貿易站";
 L.TSM_WARNING_1 = "執行此命令可能會通過將物品重新分配到 ";
 L.TSM_WARNING_2 = " 預設。\n\n我們建議你在使用此功能時使用不同的設定檔。\n\n你還想繼續嗎?";
 L.TSM4_ERROR = "TSM4 尚未與 ATT 相容。如果你知道如何像我們以前在 TSM3 中那樣創建預設，請在 Discord 上告訴我！";

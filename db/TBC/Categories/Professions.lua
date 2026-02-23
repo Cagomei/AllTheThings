@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,cat,flt,h,i,prof,q,qo,r,x=_.CreateAchievement,_.CreateCategory,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateExpansion;
-categories.Professions={
+categories.Professions=
+h(-44,{SortPriority=25,g={
 h(-12,{
 x(1,{
 ach(732),
@@ -14,15 +15,21 @@ prof(171,{
 x(1,{requireSkill=171,g={
 h(-45,{requireSkill=171})}}),
 x(2,{awp=20005,requireSkill=171,g={
-q(10906,{altQuests={10905,10907},coords={{52.2,36.4,1944},{53.8,65.8,1944}},isBreadcrumb=1,lvl=68,nextQuests={10902},qgs={16588,18802},requireSkill=171,rwp=40300}),
-q(10902,{altQuests={10897,10899},coords={{45.8,20.4,1955}},cost={{"i",22831,5},{"i",28104,5},{"i",22834,5},{"i",31753,10}},description="Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",lvl=68,maps={273},qgs={19052},requireSkill=171,rwp=40300,sourceQuests={10906},g={
+q(10906,{altQuests={10905,10907},coords={
+[1944]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,lvl=68,nextQuests={10902},qgs={16588,18802},requireSkill=171,rwp=40300}),
+q(10902,{altQuests={10897,10899},coords={
+[1955]={{45.8,20.4}}},cost={{"i",22831,5},{"i",28104,5},{"i",22834,5},{"i",31753,10}},description="Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",lvl=68,maps={273},qgs={19052},requireSkill=171,rwp=40300,sourceQuests={10906},g={
 r(28677,{requireSkill=28677})}}),
-q(10905,{altQuests={10906,10907},coords={{52.2,36.4,1944},{53.8,65.8,1944}},isBreadcrumb=1,lvl=68,nextQuests={10897},qgs={16588,18802},requireSkill=171,rwp=40300}),
-q(10897,{altQuests={10899,10902},coords={{44.1,36.6,1946}},cost={{"i",22836,5},{"i",22832,5},{"i",22829,5}},description="Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",lvl=68,maps={266},qgs={17909},requireSkill=171,rwp=40300,sourceQuests={10905},g={
+q(10905,{altQuests={10906,10907},coords={
+[1944]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,lvl=68,nextQuests={10897},qgs={16588,18802},requireSkill=171,rwp=40300}),
+q(10897,{altQuests={10899,10902},coords={
+[1946]={{44.1,36.6}}},cost={{"i",22836,5},{"i",22832,5},{"i",22829,5}},description="Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",lvl=68,maps={266},qgs={17909},requireSkill=171,rwp=40300,sourceQuests={10905},g={
 qo(1,{crs={17975},providers={{"i",31744}},requireSkill=171}),
 r(28675,{requireSkill=28675})}}),
-q(10907,{altQuests={10905,10906},coords={{52.2,36.4,1944},{53.8,65.8,1944}},isBreadcrumb=1,lvl=68,nextQuests={10899},qgs={16588,18802},requireSkill=171,rwp=40300}),
-q(10899,{altQuests={10897,10902},coords={{44.1,36.6,1953}},cost={{"i",23571,4}},description="Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",lvl=68,qgs={22427},requireSkill=171,rwp=40300,sourceQuests={10907},g={
+q(10907,{altQuests={10905,10906},coords={
+[1944]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,lvl=68,nextQuests={10899},qgs={16588,18802},requireSkill=171,rwp=40300}),
+q(10899,{altQuests={10897,10902},coords={
+[1953]={{44.1,36.6}}},cost={{"i",23571,4}},description="Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",lvl=68,qgs={22427},requireSkill=171,rwp=40300,sourceQuests={10907},g={
 r(28672,{requireSkill=28672})}})}})}),
 prof(261,{c={3},description="Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",lvl=10,rwp=30002,g={
 r(24493,{lvl=20,rank=1}),
@@ -211,10 +218,14 @@ r(36128,{learnedAt=260,requireSkill=9787,u=17}),
 r(36126,{learnedAt=260,requireSkill=9787,u=17})}})}}),
 x(1,{requireSkill=164,g={
 h(-45,{requireSkill=164,g={
-q(5283,{altQuests={5284,5301,5302},coords={{50.2,42.6,1455}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={5164},r=2,requireSkill=164,rwp=40003}),
-q(5301,{altQuests={5283,5284,5302},coords={{79.8,23.8,1454}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={11177},r=1,requireSkill=164,rwp=40003}),
-q(5284,{altQuests={5283,5301,5302},coords={{49.8,45,1455}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11146},r=2,requireSkill=164,rwp=40003}),
-q(5302,{altQuests={5283,5284,5301},coords={{79.6,23.6,1454}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11178},r=1,requireSkill=164,rwp=40003})}})}})}),
+q(5283,{altQuests={5284,5301,5302},coords={
+[1455]={{50.2,42.6}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={5164},r=2,requireSkill=164,rwp=40003}),
+q(5301,{altQuests={5283,5284,5302},coords={
+[1454]={{79.8,23.8}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={11177},r=1,requireSkill=164,rwp=40003}),
+q(5284,{altQuests={5283,5301,5302},coords={
+[1455]={{49.8,45}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11146},r=2,requireSkill=164,rwp=40003}),
+q(5302,{altQuests={5283,5284,5301},coords={
+[1454]={{79.6,23.6}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11178},r=1,requireSkill=164,rwp=40003})}})}})}),
 prof(185,{
 h(-12,{requireSkill=185}),
 x(1,{requireSkill=185,g={
@@ -250,9 +261,11 @@ r(30574,{awp=20001,learnedAt=375,requireSkill=20219,u=17})}),
 cat(183,{
 r(12895,{learnedAt=205,requireSkill=20219})}),
 h(-45,{
-q(3645,{coords={{28.2,76.2,1434}},cost=20000,lvl=30,qgs={7406},r=1,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3643},g={
+q(3645,{coords={
+[1434]={{28.2,76.2}}},cost=20000,lvl=30,qgs={7406},r=1,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3643},g={
 i(10790,{b=1,q=1})}}),
-q(3647,{coords={{69.8,50.2,1455}},cost=20000,lvl=30,qgs={7944},r=2,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3641},g={
+q(3647,{coords={
+[1455]={{69.8,50.2}}},cost=20000,lvl=30,qgs={7944},r=2,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3641},g={
 i(10790,{b=1,q=1})}})}),
 h(-47,{
 i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",q=1,rwp=40003,g={
@@ -284,9 +297,11 @@ r(12758,{learnedAt=245,requireSkill=20222})}),
 cat(183,{
 r(12715,{learnedAt=205,requireSkill=20222})}),
 h(-45,{
-q(3644,{coords={{54.4,27.2,1446}},cost=20000,description="Requires 200 Engineering to start this quest.",lvl=30,qgs={8126},repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3639},g={
+q(3644,{coords={
+[1446]={{54.4,27.2}}},cost=20000,description="Requires 200 Engineering to start this quest.",lvl=30,qgs={8126},repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3639},g={
 i(10791,{b=1,q=1})}}),
-q(3646,{coords={{62.6,36.2,1413}},cost=20000,description="Requires 200 Engineering to start this quest.",lvl=30,qgs={8738},repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3639},g={
+q(3646,{coords={
+[1413]={{62.6,36.2}}},cost=20000,description="Requires 200 Engineering to start this quest.",lvl=30,qgs={8738},repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3639},g={
 i(10791,{b=1,q=1})}})}),
 h(-47,{
 i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",q=1,rwp=40003,g={
@@ -295,15 +310,24 @@ r(3972,{itemID=4417,learnedAt=200,q=2,requireSkill=202}),
 r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=20222})}})})}}),
 x(1,{requireSkill=202,g={
 h(-45,{requireSkill=202,g={
-q(3634,{altQuests={3526,3629,3630,3632,3633,3635,3637,4181},coords={{62.6,36.2,1413}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=2,requireSkill=202,rwp=40003}),
-q(3630,{altQuests={3526,3629,3632,3633,3634,3635,3637,4181},coords={{55,8.6,1453}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5518},r=2,requireSkill=202,rwp=40003}),
-q(3632,{altQuests={3526,3629,3630,3633,3634,3635,3637,4181},coords={{68.8,45.2,1455}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5174},r=2,requireSkill=202,rwp=40003}),
-q(3637,{altQuests={3526,3629,3630,3632,3633,3634,3635,4181},coords={{62.6,36.2,1413}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=1,requireSkill=202,rwp=40003}),
-q(3635,{altQuests={3526,3629,3630,3632,3633,3634,3637,4181},coords={{75.6,74.6,1458}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={4586},r=1,requireSkill=202,rwp=40003}),
-q(3629,{altQuests={3526,3630,3632,3633,3634,3635,3637,4181},coords={{55,8.6,1453}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5518},r=2,requireSkill=202,rwp=40003}),
-q(4181,{altQuests={3526,3629,3630,3632,3633,3634,3635,3637},coords={{68.8,45.2,1455}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5174},r=2,requireSkill=202,rwp=40003}),
-q(3633,{altQuests={3526,3629,3630,3632,3634,3635,3637,4181},coords={{62.6,36.2,1413}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=1,requireSkill=202,rwp=40003}),
-q(3526,{altQuests={3629,3630,3632,3633,3634,3635,3637,4181},coords={{75.6,74.6,1458}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={4586},r=1,requireSkill=202,rwp=40003})}})}})}),
+q(3634,{altQuests={3526,3629,3630,3632,3633,3635,3637,4181},coords={
+[1413]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=2,requireSkill=202,rwp=40003}),
+q(3630,{altQuests={3526,3629,3632,3633,3634,3635,3637,4181},coords={
+[1453]={{55,8.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5518},r=2,requireSkill=202,rwp=40003}),
+q(3632,{altQuests={3526,3629,3630,3633,3634,3635,3637,4181},coords={
+[1455]={{68.8,45.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5174},r=2,requireSkill=202,rwp=40003}),
+q(3637,{altQuests={3526,3629,3630,3632,3633,3634,3635,4181},coords={
+[1413]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=1,requireSkill=202,rwp=40003}),
+q(3635,{altQuests={3526,3629,3630,3632,3633,3634,3637,4181},coords={
+[1458]={{75.6,74.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={4586},r=1,requireSkill=202,rwp=40003}),
+q(3629,{altQuests={3526,3630,3632,3633,3634,3635,3637,4181},coords={
+[1453]={{55,8.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5518},r=2,requireSkill=202,rwp=40003}),
+q(4181,{altQuests={3526,3629,3630,3632,3633,3634,3635,3637},coords={
+[1455]={{68.8,45.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5174},r=2,requireSkill=202,rwp=40003}),
+q(3633,{altQuests={3526,3629,3630,3632,3634,3635,3637,4181},coords={
+[1413]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=1,requireSkill=202,rwp=40003}),
+q(3526,{altQuests={3629,3630,3632,3633,3634,3635,3637,4181},coords={
+[1458]={{75.6,74.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={4586},r=1,requireSkill=202,rwp=40003})}})}})}),
 prof(129,{rwp=80001,g={
 x(1,{requireSkill=129,g={
 ach(131,{requireSkill=129}),
@@ -641,12 +665,18 @@ r(35587,{learnedAt=375,requireSkill=10660,u=17})}),
 cat(936,{
 r(36075,{learnedAt=260,requireSkill=10660,u=17})})}}),
 h(-45,{lvl=40,requireSkill=165,rwp=40003,g={
-q(5141,{altQuests={5143,5144},coords={{37.4,65.4,1447}},cost={{"i",8165,10},{"i",8204,2},{"i",8203,2}},learnedAt=225,lvl=40,qgs={7866},r=2,requireSkill=165}),
-q(5145,{altQuests={5146,5148},coords={{62.6,57.4,1418}},cost={{"i",8165,10},{"i",8204,2},{"i",8203,2}},learnedAt=225,lvl=40,qgs={7867},r=1,requireSkill=165}),
-q(5144,{altQuests={5141,5143},coords={{63.6,76,1427}},cost={{"i",7077,2},{"i",7079,2},{"i",7075,2},{"i",7081,2}},learnedAt=225,lvl=40,qgs={7868},r=2,requireSkill=165}),
-q(5146,{altQuests={5145,5148},coords={{28.2,45,1417}},cost={{"i",7077,2},{"i",7079,2},{"i",7075,2},{"i",7081,2}},learnedAt=225,lvl=40,qgs={7869},r=1,requireSkill=165}),
-q(5143,{altQuests={5141,5144},coords={{89.4,46.5,1444}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7870},r=2,requireSkill=165,sourceQuests={2853}}),
-q(5148,{altQuests={5145,5146},coords={{36.6,34.2,1434}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7871},r=1,requireSkill=165,sourceQuests={2860}})}})}}),
+q(5141,{altQuests={5143,5144},coords={
+[1447]={{37.4,65.4}}},cost={{"i",8165,10},{"i",8204,2},{"i",8203,2}},learnedAt=225,lvl=40,qgs={7866},r=2,requireSkill=165}),
+q(5145,{altQuests={5146,5148},coords={
+[1418]={{62.6,57.4}}},cost={{"i",8165,10},{"i",8204,2},{"i",8203,2}},learnedAt=225,lvl=40,qgs={7867},r=1,requireSkill=165}),
+q(5144,{altQuests={5141,5143},coords={
+[1427]={{63.6,76}}},cost={{"i",7077,2},{"i",7079,2},{"i",7075,2},{"i",7081,2}},learnedAt=225,lvl=40,qgs={7868},r=2,requireSkill=165}),
+q(5146,{altQuests={5145,5148},coords={
+[1417]={{28.2,45}}},cost={{"i",7077,2},{"i",7079,2},{"i",7075,2},{"i",7081,2}},learnedAt=225,lvl=40,qgs={7869},r=1,requireSkill=165}),
+q(5143,{altQuests={5141,5144},coords={
+[1444]={{89.4,46.5}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7870},r=2,requireSkill=165,sourceQuests={2853}}),
+q(5148,{altQuests={5145,5146},coords={
+[1434]={{36.6,34.2}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7871},r=1,requireSkill=165,sourceQuests={2860}})}})}}),
 x(2,{requireSkill=165})}),
 prof(633,{description="Lockpicking needs to be leveled up by practicing on lockboxes found in the world and junkboxes looted by using your pickpocket ability on appropriately leveled mobs.",OnUpdate=function(t)t.DontEnforceSkillRequirements=true;end,g={
 r(1804,{c={4},providers={{"i",5060}}}),
@@ -684,16 +714,21 @@ prof(393),
 prof(197,{awp=20005,g={
 x(2,{requireSkill=197,u=17,g={
 h(-45,{requireSkill=197,rwp=40003,u=17,g={
-q(10831,{altQuests={10832,10833},coords={{66.5,69.3,1955}},description="Upon finishing this quest, you will become a Mooncloth Tailor.",lvl=60,maps={1946},qgs={22208},requireSkill=197,u=17,g={
-qo(1,{coords={{80,65,1946}},cost={{"i",31525,1},{"i",31524,1}},providers={{"i",31530}},requireSkill=197,u=17}),
+q(10831,{altQuests={10832,10833},coords={
+[1955]={{66.5,69.3}}},description="Upon finishing this quest, you will become a Mooncloth Tailor.",lvl=60,maps={1946},qgs={22208},requireSkill=197,u=17,g={
+qo(1,{coords={
+[1946]={{80,65}}},cost={{"i",31525,1},{"i",31524,1}},providers={{"i",31530}},requireSkill=197,u=17}),
 r(26798,{requireSkill=197,u=17}),
 i(31522,{q=1,requireSkill=197,u=17,g={
 i(31524,{q=1,requireSkill=197,u=17}),
 i(31525,{q=1,requireSkill=197,u=17})}})}}),
-q(10833,{altQuests={10831,10832},coords={{66.6,68.2,1955}},description="Upon finishing this quest, you will become a Shadoweave Tailor.",lvl=60,maps={1948},qgs={22212},requireSkill=197,u=17,g={
-qo(1,{coords={{58,71,1948}},providers={{"i",31736}},requireSkill=197,u=17}),
+q(10833,{altQuests={10831,10832},coords={
+[1955]={{66.6,68.2}}},description="Upon finishing this quest, you will become a Shadoweave Tailor.",lvl=60,maps={1948},qgs={22212},requireSkill=197,u=17,g={
+qo(1,{coords={
+[1948]={{58,71}}},providers={{"i",31736}},requireSkill=197,u=17}),
 r(26801,{requireSkill=197,u=17})}}),
-q(10832,{altQuests={10831,10833},coords={{66.6,68.4,1955}},description="Upon finishing this quest, you will become a Spellfire Tailor.",lvl=60,maps={1953},qgs={22213},requireSkill=197,u=17,g={
+q(10832,{altQuests={10831,10833},coords={
+[1955]={{66.6,68.4}}},description="Upon finishing this quest, you will become a Spellfire Tailor.",lvl=60,maps={1953},qgs={22213},requireSkill=197,u=17,g={
 qo(1,{cost={{"i",31742,1}},crs={22408},providers={{"i",31741}},requireSkill=197,u=17}),
-r(26797,{requireSkill=197,u=17})}})}})}})}})};
+r(26797,{requireSkill=197,u=17})}})}})}})}})}});
 end);

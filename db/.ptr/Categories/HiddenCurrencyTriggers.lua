@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local cu,x=_.CreateCurrencyClass,_.CreateExpansion;
 categories.HiddenCurrencyTriggers={
 x(11,{

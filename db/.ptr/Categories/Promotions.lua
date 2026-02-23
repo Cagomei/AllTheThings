@@ -1,11 +1,12 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,cl,cq,crit,cu,de,en,flt,h,i,ill,mnt,n,o,p,q,s,settings,title,toy,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateIllusion,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
-local a={{"i",116788},{"o",384744},{1},{10},{11},{12},{13},{19.1,82,2023},{2},{201230},{222277},{225347},{3},{35.3,38.2,2339},{38.3,94.9,2112},{4},{49.2,58.3,2025},{5},{56.4,19.3,2022},{6},{68795,72366},{7.4,47.5,2024},{7},{79184},{8},{9}};
-categories.Promotions={
+local a={{"i",116788},{"o",384744},{1},{10},{11},{12},{13},{19.1,82},{2},{201230},{222277},{225347},{3},{35.3,38.2},{38.3,94.9},{4},{49.2,58.3},{5},{56.4,19.3},{6},{61.6,31.1},{68795,72366},{7.4,47.5},{7},{79184},{8},{9}};
+categories.Promotions=
+h(-736,{SortPriority=90,g={
 h(-514,{awp=90005,g={
-mnt(348162,{description="Granted to players by logging in on character of at least level 20.",itemID=258430,u=2}),
+mnt(348162,{b=1,description="Granted to players by logging in on character of at least level 20.",itemID=258430,lvl=10,u=2}),
 toy(187834,{b=1,description="The Great Push: SL Season 2\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Tormented Banner of the Opportune to use in-game!\nSign-ups close 29 Nov 2021 and The Proving Grounds are on 3-5 Dec (US).",u=2}),
 toy(187957,{awp=90200,b=1,description="Mythic Dungeon International: SL Season 3\n\nThe Mythic Dungeon International (MDI) returns with its global competitions for its 6th year, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Encrypted Banner of the Opportune to use in-game!\nSign-ups close 28 March 2022 and The Proving Grounds are on 30 March - 5 April (US).",rwp=90200,u=2}),
 s(50108,95474,{awp=90205,description="Obtained through Prime Gaming from June 29th 2022 till July 26th 2022.",f=2,rwp=90207,u=2}),
@@ -14,10 +15,10 @@ title(459,{u=2})}}),
 s(51433,97213,{awp=90205,f=2,u=2}),
 toy(187958,{awp=90207,b=1,description="Break the Meta: SL Season 4\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 4 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFRaider.io/break-the-meta-2022|r and complete 2 or more eligible timed keystones at level 15 or higher during BTM S4, and the Shrouded Banner of the Opportune will be automatically added to your collection in-game within 30 days of the conclusion of the event.\n\nThe Event starts on October 4th for US, October 5th for EU & October 6th for KR/TW & lasts for the entire reset of your region.\n\nThis was previously available through The Great Push: SL Season 4.",rwp=100000,u=2}),
 s(50109,95475,{awp=90207,description="Obtained through Prime Gaming from August 24th 2022 till September 20th 2022.",f=2,rwp=90207,u=2}),
-mnt(386452,{awp=90207,description="In order to unlock the Frostbrood Proto-Wyrm you have finish the Death Knight starting zone in |cFFfe040fWotLK Classic|r. The very first Death Knight you make is completely free of restrictions, so even if you've never played Classic before, you can create a Death Knight starting at level 55.",itemID=258476,rwp=100002,u=2})}}),
+mnt(386452,{awp=90207,b=1,description="In order to unlock the Frostbrood Proto-Wyrm you have finish the Death Knight starting zone in |cFFfe040fWotLK Classic|r. The very first Death Knight you make is completely free of restrictions, so even if you've never played Classic before, you can create a Death Knight starting at level 55.",itemID=258476,lvl=10,rwp=100002,u=2})}}),
 h(-515,{awp=100000,g={
-mnt(315132,{description="Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",itemID=258423,u=2}),
-mnt(381529,{description="Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",itemID=258477,u=2}),
+mnt(315132,{b=1,description="Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",itemID=258423,lvl=10,u=2}),
+mnt(381529,{b=1,description="Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",itemID=258477,lvl=10,u=2}),
 p(169,{awp=100002,b=1,itemID=34493,npcID=25110,rwp=100002,spellID=45127,u=2}),
 mnt(113120,{awp=100002,itemID=79771,lvl=10,rwp=100002,u=2}),
 p(3248,{awp=100002,b=1,description="Obtained by gifting an eligible creator's channel two Twitch subscriptions between November 28th, 03:00 p.m. & December 12th, 11:59 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=190583,npcID=183638,rwp=100002,spellID=367696,u=2}),
@@ -37,7 +38,7 @@ s(169111,190904,{f=2}),
 s(169112,190905,{f=2}),
 s(169113,190906,{f=2}),
 s(169114,190907,{f=2})}}),
-mnt(419567,{awp=100107,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=258425,rwp=110002,u=2}),
+mnt(419567,{awp=100107,b=1,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=258425,lvl=10,rwp=110002,u=2}),
 mnt(400976,{awp=100107,b=1,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=203727,lvl=10,rwp=110002,u=2}),
 p(2623,{awp=100200,description="Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between November 7th, 10:00 a.m. & November 14th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=258414,npcID=151788,rwp=100200,spellID=294231,u=2}),
 mnt(102488,{awp=100200,itemID=72575,lvl=10,rwp=100200,u=2}),
@@ -47,7 +48,7 @@ toy(67097,{awp=100205,b=1,rwp=100205,u=2}),
 p(4437,{awp=100206,description="Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between March 22, 10:00 a.m. & April 5, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=258483,npcID=218060,rwp=100206,spellID=439994,u=2}),
 p(348,{awp=100207,b=1,itemID=79744,npcID=59020,rwp=100207,spellID=112994,u=2}),
 toy(218128,{awp=100206,b=1,description="The Great Push returns in Dragonflight Season 4\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Smoldering Banner of the Aspects to use in-game!\nSign-ups close 15 Jun 2024 and The Proving Grounds are on 19-24 June (US).",rwp=100207,u=2}),
-mnt(443660,{awp=100206,b=1,description="Obtained if you set up a 6-Month WoW Subscription.",itemID=219450,lvl=45,rwp=110200,u=2})}}),
+mnt(443660,{awp=100206,b=1,description="Obtained if you set up a 6-Month WoW Subscription.",itemID=219450,lvl=10,rwp=110200,u=2})}}),
 h(-516,{awp=110000,g={
 h(-518,{awp=110007,rwp=110105,u=2,g={
 mnt(367620,{description="Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=190539,lvl=10,u=2}),
@@ -60,8 +61,8 @@ mnt(453255,{description="Acquired alongside the purchase of a 80$ Artistan Keyca
 h(-691,{awp=110205,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1255159,{itemID=252679,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1255179,{itemID=252681,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(449142,{itemID=223471,lvl=45,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(449132,{itemID=223459,lvl=45,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(449142,{itemID=223471,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(449132,{itemID=223459,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 p(329,{b=1,itemID=71726,npcID=54438,spellID=101606,u=3,g={
 crit(34643,{achID=6185,awp=40300,id=3,u=2})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 p(333,{b=1,itemID=72134,npcID=54730,spellID=102317,u=3}))}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -86,18 +87,18 @@ s(224995,228909,{awp=110005,description="Available to redeem for 300 points at D
 s(224994,228908,{awp=110005,description="Available to redeem for 300 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",f=9,rwp=110007,u=2}),
 p(4618,{awp=110005,b=1,description="Available to redeem for 400 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",itemID=228793,npcID=229901,rwp=110007,spellID=463251,u=2}),
 p(4617,{awp=110005,b=1,description="Available to redeem for 400 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",itemID=228790,npcID=229890,rwp=110007,spellID=463242,u=2}),
-mnt(428067,{awp=110005,b=1,description="Available to redeem for 600 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",itemID=211087,lvl=45,rwp=110007,u=2}),
+mnt(428067,{awp=110005,b=1,description="Available to redeem for 600 points at DoritosDewRockstar.com before Jan 31, 2025. Points can be earned from entering codes found in specially marked Mountain Dew, Doritos and Rockstar Energy Drink products.",itemID=211087,lvl=10,rwp=110007,u=2}),
 p(297,{awp=110005,b=1,itemID=68385,npcID=51600,rwp=110007,spellID=95787,u=2}),
 p(4629,{awp=110005,description="Available with the purchase of an Ice Murloc Funko Pop from the Blizzard Gear Store to a US/UK mailing address. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=229366,npcID=198987,spellID=464798,u=3}),
-mnt(449132,{awp=110005,description="Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/YouTube Account has to be connected with your Battle.net Account.",itemID=223459,lvl=45,u=2}),
-mnt(449142,{awp=110005,description="Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/YouTube Account has to be connected with your Battle.net Account.",itemID=223471,lvl=45,u=2}),
+mnt(449132,{awp=110005,description="Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/YouTube Account has to be connected with your Battle.net Account.",itemID=223459,lvl=10,u=2}),
+mnt(449142,{awp=110005,description="Obtained through watching the official Warcraft 30th Anniversary Direct on Tiktok for 3 Minutes or Twitch/YouTube for 20 minutes between November 13th, 10:00 a.m. & December 11th, 10:00 a.m. PST.\n\nTikTok has a bar along the bottom of the screen that indicates that Game Rewards are live and that you’re earning progress. Once you watched enough on Tiktok, you will receive a code that can be claimed on Battle.Net or on the Battle.Net App.\n\nOn Twitch you have to claim your Reward under Drops & Rewards after watching for 20 minutes.\n\nOn YouTube your account has to say 'connected' and will automatically sent out the rewards after 20 minutes.\n\nYour Twitch/YouTube Account has to be connected with your Battle.net Account.",itemID=223471,lvl=10,u=2}),
 p(4630,{awp=110005,description="Available with the purchase of a Murloc Thrall plushie from the Blizzard Gear Store. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=229368,npcID=230834,spellID=464808,u=3}),
 mnt(139595,{awp=110007,b=1,itemID=95341,lvl=10,rwp=110105,u=2}),
 s(230822,233207,{awp=110007,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 14th, 10:00 a.m. & February 4th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=3,rwp=110007,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1216542,{awp=110007,b=1,description="Rewarded from the Treasure Workshop.",itemID=235344,lvl=10,rwp=110100,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(235378,{awp=110007,b=1,rwp=110100,spellID=1216746,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(459784,{itemID=227362,lvl=27,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(42777,{itemID=49284,lvl=17,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(459784,{itemID=227362,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(42777,{itemID=49284,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(42776,{itemID=49283,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(46199,{itemID=49286,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(46197,{itemID=49285,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -117,22 +118,22 @@ p(4410,{awp=110105,b=1,description="Obtained through watching Twitch Streamers w
 mnt(1236262,{awp=110107,description="Finish the Pandaren Wandering Isle starting zone in |cFFfe040fMoP Classic|r until you arrive in Orgrimmar/Stormwind to receive this mount in Retail.\n\nPromotion starts on July 1st until July 30th.",rwp=110107,u=2}),
 s(284494,235987,{awp=110107,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between July 14th, 10:00 a.m. & August 11th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=3,rwp=110200,u=2}),
 p(4858,{awp=110200,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 5th, 10:00 a.m. & September 16th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=246451,npcID=246983,rwp=110200,spellID=1242265,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-mnt(1243589,{awp=110200,description="Rewarded from the Season 3 Shop Bundle.",itemID=246732,rwp=110205,u=2})),
-toy(232307,{awp=110200,description="Arena World Championship: TWW Season 3\n\nSign up on Raider.io for any of the 3 Cups, available until October 22nd 2025, and play in at least two game series (best of 5)\n\nWinning not required, for more details & requirements check out: Raider.io/tournaments",rwp=110205,u=2}),
-toy(232303,{awp=110205,description="Break the Meta: TWW Season 3\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +8|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on Nov 18th for US, Nov 19th for EU & Nov 20th for CN/KR/TW & lasts for 1 week.\nFor more details & requirements check out: Raider.io/events/break-the-meta-the-war-within-season-3/",u=2}),
+mnt(1243589,{awp=110200,b=1,description="Rewarded from the Season 3 Shop Bundle.",itemID=246732,lvl=10,rwp=110205,u=2})),
+toy(232307,{awp=110200,b=1,description="Arena World Championship: TWW Season 3\n\nSign up on Raider.io for any of the 3 Cups, available until October 22nd 2025, and play in at least two game series (best of 5)\n\nWinning not required, for more details & requirements check out: Raider.io/tournaments",rwp=110205,u=2}),
+toy(232303,{awp=110205,b=1,description="Break the Meta: TWW Season 3\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +8|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on Nov 18th for US, Nov 19th for EU & Nov 20th for CN/KR/TW & lasts for 1 week.\nFor more details & requirements check out: Raider.io/events/break-the-meta-the-war-within-season-3/",u=2}),
 p(4856,{awp=110200,description="Included for free with any purchase over $75 from the World of Warcraft Collection on the Blizzard Gear Store. Available from September 8-30, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=246343,npcID=246663,rwp=110200,spellID=1241763,u=2}),
-p(4907,{awp=110200,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 1st, 10:00 a.m. & October 29th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=257515,npcID=254356,rwp=110205,spellID=1261676,u=2}),
-mnt(1245604,{awp=110205,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=247848,u=3}),
-mnt(1234971,{awp=110205,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=243194,u=3}),
+p(4907,{awp=110200,b=1,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 1st, 10:00 a.m. & October 29th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=257515,npcID=254356,rwp=110205,spellID=1261676,u=2}),
+mnt(1245604,{awp=110205,b=1,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=247848,lvl=10,u=3}),
+mnt(1234971,{awp=110205,b=1,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=243194,lvl=10,u=3}),
 en(242480,{awp=110205,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between November 11th, 10:00 a.m. & December 2nd, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",questID=90654,rwp=110207,spellID=1232446,tmogSetID=4538,u=2,g={
 s(290242,242421,{f=2}),
 s(290265,242450,{f=2})}}),
-p(4908,{awp=110205,description="Included for free with any purchase from the World of Warcraft Lil' Ashlee Collection on the Blizzard Gear Store. Available from November 21st through December 8th, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=257518,npcID=254359,rwp=110207,spellID=1261687,u=2}),
+p(4908,{awp=110205,b=1,description="Included for free with any purchase from the World of Warcraft Lil' Ashlee Collection on the Blizzard Gear Store. Available from November 21st through December 8th, 2025. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=257518,npcID=254359,rwp=110207,spellID=1261687,u=2}),
 s(266784,235343,{awp=110207,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between December 2nd, 10:00 a.m. & December 30th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",f=2,rwp=110207,u=2}),
-mnt(1247422,{awp=110207,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=248681,u=3})}}),
+mnt(1247422,{awp=110207,description="Obtained if you set up a 12-Month WoW Subscription.",itemID=248681,lvl=10,u=3})}}),
 h(-669,{awp=120000,g={
 de(15151,{description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between January 20th, 10:00 a.m. & February 17th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263301,rwp=120001,spellID=1270369}),
-i(264241,{description="Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",rwp=120001}),
+i(264241,{description="Available to players in the UK and EU from a QR code scan of applicable Pringles cans or from the UK/EU Pringles website. \nThe battle.net code can be redeemed in any region but the website is region locked.\n\nVisit pringles.eu/0pzaiz ON A MOBILE DEVICE to sign up; players outside of EU can use a VPN to do this.\nThe promotion runs between January 20th through May 5th, 2026.",rwp=120007}),
 h(-708,{rwp=120000,u=2,g={
 mnt(367620,{itemID=190539,lvl=10,u=2}),
 mnt(153489,{b=1,itemID=107951,lvl=10,u=2}),
@@ -146,15 +147,15 @@ toy(256141)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)
 i(253244)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(253257)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(253296)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(269743)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(269743,{b=1})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(258840)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(253402)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 en(257547)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(258136))}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(269743,{description="Drops from either the '3rd Price' after buying a lottery ticket from the Spring Festival promotional event or bought with Points after receiving the '2nd Prize'.",rwp=120100,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+i(269743,{b=1,description="Drops from either the '3rd Price' after buying a lottery ticket from the Spring Festival promotional event or bought with Points after receiving the '2nd Prize'.",rwp=120100,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(251542)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 toy(258135)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
-i(269009)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+mnt(1284640,{itemID=269009})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(1258574,{itemID=254736})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(255973)),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 i(46779,{b=1,f=55,spellID=65745})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
@@ -162,7 +163,7 @@ mnt(42776,{itemID=49283,lvl=10})),(function(t)if GetCVar("portal")~="CN" then	t.
 mnt(46199,{itemID=49286,lvl=10})),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(46197,{itemID=49285,lvl=10}))}}))}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
-mnt(51412,{itemID=49282,lvl=17,rwp=100007,u=2}),
+mnt(51412,{itemID=49282,lvl=10,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),
 s(21629,45037,{awp=100100,b=1,f=10,rwp=100100,spellID=63604,u=2}),
 mnt(101573,{awp=100100,itemID=71718,lvl=10,rwp=100105,u=2}),
@@ -224,11 +225,11 @@ p(2777,{awp=80205,itemID=258418,npcID=157715,r=1,spellID=307654,u=2,g={
 crit(46934,{achID=14027,id=4,u=2})}}),
 p(2778,{awp=80205,itemID=258419,npcID=157716,r=2,spellID=307655,u=2,g={
 crit(46933,{achID=14027,id=3,u=2})}}),
-mnt(341821,{awp=90002,itemID=258428,rwp=90200,u=2}),
+mnt(341821,{awp=90002,b=1,itemID=258428,lvl=10,rwp=90200,u=2}),
 p(3053,{awp=90002,itemID=258429,npcID=175203,rwp=90200,spellID=344755,u=2,g={
 crit(51529,{achID=14904,id=2,u=2})}}),
 ach(14904,{awp=90002,rwp=90200,u=2}),
-mnt(358072,{awp=100107,description="Received after buying the Blizzcon 2023 Collection: Legendary Pack.",itemID=258427,rwp=100205,u=2}),
+mnt(358072,{awp=100107,b=1,description="Received after buying the Blizzcon 2023 Collection: Legendary Pack.",itemID=258427,lvl=10,rwp=100205,u=2}),
 toy(210042,{awp=100107,b=1,description="Received after buying the Blizzcon 2023 Collection: Epic Pack.",rwp=100205,u=2}),
 p(3579,{awp=100107,description="Received after buying the Blizzcon 2023 Collection: Epic Pack.",itemID=258482,npcID=205467,rwp=100205,spellID=411448,u=2}),
 ach(18250,{awp=100107,providers={{"n",205467}},rwp=100205,u=2})}),
@@ -242,7 +243,7 @@ q(5841,{maps={27},providers={{"i",14647}},races={3,7},u=2}),
 q(5805,{maps={37},providers={{"i",14646}},races=a[3],u=2}),
 q(5842,{maps={57},providers={{"i",14648}},races=a[16],u=2}),
 q(5843,{maps=a[3],providers={{"i",14649}},races={2,8},u=2}),
-q(5844,{maps=a[23],providers={{"i",14650}},races=a[20],u=2}),
+q(5844,{maps=a[24],providers={{"i",14650}},races=a[20],u=2}),
 q(5847,{maps={18},providers={{"i",14651}},races=a[18],u=2})}}),
 h(-47,{description="Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",rwp=20001,sourceQuests={5805,5841,5842,5843,5844,5847,8547,9278,12781},u=2,g={
 ach(662,{awp=30002,providers={{"i",13584}},u=3}),
@@ -260,11 +261,11 @@ p(131,{awp=20001,itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
 crit(34633,{achID=665,awp=30002,id=3,u=2})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1;end	return t;end)(
 p(111,{awp=20001,description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2}))}}),
 h(-524,{awp=110207,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",u=3,g={
-mnt(346136,{itemID=248090,u=3})}}),
+mnt(346136,{b=1,itemID=248090,lvl=10,u=3})}}),
 h(-694,{awp=110205,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",u=3,g={
-mnt(1256677,{itemID=253573,u=3}),
-toy(254666,{u=3}),
-toy(263489,{u=3}),
+mnt(1256677,{b=1,itemID=253573,lvl=10,u=3}),
+toy(254666,{b=1,u=3}),
+toy(263489,{b=1,u=3}),
 p(4903,{itemID=253699,npcID=252859,spellID=1257069,u=3}),
 mnt(1255246,{itemID=252950,u=3})}}),
 x(3,{awp=20403,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
@@ -273,7 +274,7 @@ p(188,{itemID=39286,npcID=28883,rwp=30305,spellID=52615,u=2,g={
 crit(34634,{achID=683,id=3,u=2})}})}}),
 h(-525,{awp=90205,rwp=100107,u=2,g={
 h(-523,{description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",u=2,g={
-mnt(370770,{itemID=258475,u=2})}})}}),
+mnt(370770,{b=1,itemID=258475,lvl=10,u=2})}})}}),
 x(4,{awp=40001,description="These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(5377,{providers={{"i",62540}},rwp=40302,u=2}),
 p(268,{itemID=62540,npcID=46896,rwp=40302,spellID=87344,u=2,g={
@@ -337,14 +338,14 @@ s(106493,172081,{f=2,rwp=90205,u=2}),
 s(106494,172082,{f=2,rwp=90205,u=2}),
 s(106495,172083,{f=2,rwp=90205,u=2})}})}})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Shadowlands Epic Edition.",rwp=90205,u=2,g={
-i(248091,{f=101,spellID=308067,u=2}),
+i(248091,{b=1,f=101,spellID=308067,u=2}),
 toy(172179,{b=1,u=2}),
 ill(6162,{b=1,itemID=172177,questID=57596,u=2})}})}}),
 x(10,{awp=90205,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",rwp=100107,u=2,g={
 p(3177,{description="This is a pre-order bonus only available before the launch of Dragonflight.",itemID=258432,npcID=181575,rwp=100002,spellID=359855,u=2}),
 p(3175,{npcID=181535,u=2}),
-mnt(359843,{itemID=248089,u=2}),
+mnt(359843,{b=1,itemID=248089,lvl=10,u=2}),
 ach(17314,{providers={{"s",359843}},u=2}),
 ach(17305,{awp=100005,rwp=100200,u=2})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Dragonflight Epic Edition.",rwp=100107,u=2,g={
@@ -358,7 +359,7 @@ s(165614,188260,{f=3})}}),
 s(180744,193610,{f=2,u=2})}})}}),
 x(11,{awp=100107,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased The War Within Heroic Edition.",rwp=110200,u=2,g={
-mnt(417888,{itemID=258479,u=2}),
+mnt(417888,{b=1,itemID=258479,lvl=10,u=2}),
 ach(19027,{providers={{"s",417888}},u=2}),
 en(209336,{questID=78048,spellID=422666,tmogSetID=3128,u=2,g={
 s(190676,209320,{f=2}),
@@ -377,8 +378,10 @@ ach(18929,{sr=1,u=2}),
 ach(18931,{sr=1,u=2,g={
 title(520,{sr=1,u=2})}})}}),
 h(-45,{sr=1,u=2,g={
-q(77813,{coords={{45.4,55.2,2112}},DisablePartySync=1,isBreadcrumb=1,lvl=10,nextQuests={77815},qgs={197478},sr=1,u=2}),
-q(77815,{coords={{75.2,55,2022}},lvl=10,qgs={193359},sourceQuests={77813},sr=1,u=2,g={
+q(77813,{coords={
+[2112]={{45.4,55.2}}},DisablePartySync=1,isBreadcrumb=1,lvl=10,nextQuests={77815},qgs={197478},sr=1,u=2}),
+q(77815,{coords={
+[2022]={{75.2,55}}},lvl=10,qgs={193359},sourceQuests={77813},sr=1,u=2,g={
 en(209417,{questID=78049,spellID=422722,sr=1,tmogSetID=3129,u=2,g={
 s(190677,209321,{f=2}),
 s(190680,209328,{f=2}),
@@ -389,7 +392,8 @@ s(190686,209334,{f=2}),
 s(190687,209335,{f=2}),
 s(191197,210020,{f=2}),
 s(191198,210021,{f=2})}})}}),
-q(81993,{awp=110000,coords={a[15]},lvl=10,qgs=a[11],sr=1,u=3,g={
+q(81993,{awp=110000,coords={
+[2112]={a[15]}},lvl=10,qgs=a[11],sr=1,u=3,g={
 i(220737,{sr=1,u=3}),
 s(218742,220710,{f=2,sr=1,u=3}),
 s(218741,220709,{f=2,sr=1,u=3}),
@@ -419,8 +423,10 @@ s(218754,220722,{f=2,sr=1,u=3}),
 s(218755,220723,{f=2,sr=1,u=3}),
 s(218758,220726,{f=2,sr=1,u=3})}}),
 q(84908,{awp=110000,DisablePartySync=1,lc={1,"questID",83024},lvl=70,sr=1,u=3}),
-q(83024,{awp=110000,coords={a[14]},lvl=70,qgs=a[12],sr=1,sym={{"select","questID",81993},{"pop"}},u=3}),
-q(81994,{awp=110000,coords={a[15]},lvl=10,qgs=a[11],sourceQuests={81993,83024},sr=1,u=3,g={
+q(83024,{awp=110000,coords={
+[2339]={a[14]}},lvl=70,qgs=a[12],sr=1,sym={{"select","questID",81993},{"pop"}},u=3}),
+q(81994,{awp=110000,coords={
+[2112]={a[15]}},lvl=10,qgs=a[11],sourceQuests={81993,83024},sr=1,u=3,g={
 s(218740,220708,{f=2,sr=1,u=3}),
 s(218738,220706,{f=2,sr=1,u=3}),
 s(218737,220705,{f=2,sr=1,u=3}),
@@ -436,43 +442,50 @@ s(218761,220729,{f=2,sr=1,u=3}),
 s(218760,220728,{f=2,sr=1,u=3}),
 s(218762,220730,{f=2,sr=1,u=3}),
 s(218759,220727,{f=2,sr=1,u=3})}}),
-q(83025,{awp=110000,coords={a[14]},lvl=70,qgs=a[12],sr=1,sym={{"select","questID",81994},{"pop"}},u=3}),
-q(77793,{collectible=false,coords={{38.6,60.6,2133}},isDaily=1,lvl=10,qgs={202524},repeatable=1,sourceQuests=a[21],sqreq=1,sr=1,u=2,g={
+q(83025,{awp=110000,coords={
+[2339]={a[14]}},lvl=70,qgs=a[12],sr=1,sym={{"select","questID",81994},{"pop"}},u=3}),
+q(77793,{collectible=false,coords={
+[2133]={{38.6,60.6}}},isDaily=1,lvl=10,qgs={202524},repeatable=1,sourceQuests=a[22],sqreq=1,sr=1,u=2,g={
 ach(18925,{sr=1,u=2,g={
 crit(61861,{achID=18928,id=6,u=2})}}),
 ach(18926,{sr=1,u=2,g={
 crit(61867,{achID=18929,id=6,u=2})}}),
 ach(18927,{sr=1,u=2,g={
 crit(61873,{achID=18931,id=6,u=2})}})}}),
-q(77785,{collectible=false,coords={{86.3,35.8,2023}},isDaily=1,lvl=10,qgs={191121},repeatable=1,sourceQuests=a[21],sqreq=1,sr=1,u=2,g={
+q(77785,{collectible=false,coords={
+[2023]={{86.3,35.8}}},isDaily=1,lvl=10,qgs={191121},repeatable=1,sourceQuests=a[22],sqreq=1,sr=1,u=2,g={
 ach(18913,{sr=1,u=2,g={
 crit(61857,{achID=18928,id=2,u=2})}}),
 ach(18914,{sr=1,u=2,g={
 crit(61863,{achID=18929,id=2,u=2})}}),
 ach(18915,{sr=1,u=2,g={
 crit(61869,{achID=18931,id=2,u=2})}})}}),
-q(77777,{collectible=false,coords={{63.3,70.9,2022}},isDaily=1,lvl=10,qgs={190123},repeatable=1,sourceQuests=a[21],sqreq=1,sr=1,u=2,g={
+q(77777,{collectible=false,coords={
+[2022]={{63.3,70.9}}},isDaily=1,lvl=10,qgs={190123},repeatable=1,sourceQuests=a[22],sqreq=1,sr=1,u=2,g={
 ach(18910,{sr=1,u=2,g={
 crit(61856,{achID=18928,id=1,u=2})}}),
 ach(18911,{sr=1,u=2,g={
 crit(61862,{achID=18929,id=1,u=2})}}),
 ach(18912,{sr=1,u=2,g={
 crit(61868,{achID=18931,id=1,u=2})}})}}),
-q(77787,{collectible=false,coords={{76.3,65.7,2151}},isDaily=1,lvl=10,qgs={200183},repeatable=1,sourceQuests=a[21],sqreq=1,sr=1,u=2,g={
+q(77787,{collectible=false,coords={
+[2151]={{76.3,65.7}}},isDaily=1,lvl=10,qgs={200183},repeatable=1,sourceQuests=a[22],sqreq=1,sr=1,u=2,g={
 ach(18922,{sr=1,u=2,g={
 crit(61860,{achID=18928,id=5,u=2})}}),
 ach(18923,{sr=1,u=2,g={
 crit(61866,{achID=18929,id=5,u=2})}}),
 ach(18924,{sr=1,u=2,g={
 crit(61872,{achID=18931,id=5,u=2})}})}}),
-q(77784,{collectible=false,coords={{57.2,66.9,2025}},isDaily=1,lvl=10,qgs={193651},repeatable=1,sourceQuests=a[21],sqreq=1,sr=1,u=2,g={
+q(77784,{collectible=false,coords={
+[2025]={{57.2,66.9}}},isDaily=1,lvl=10,qgs={193651},repeatable=1,sourceQuests=a[22],sqreq=1,sr=1,u=2,g={
 ach(18919,{sr=1,u=2,g={
 crit(61859,{achID=18928,id=4,u=2})}}),
 ach(18920,{sr=1,u=2,g={
 crit(61865,{achID=18929,id=4,u=2})}}),
 ach(18921,{sr=1,u=2,g={
 crit(61871,{achID=18931,id=4,u=2})}})}}),
-q(77786,{collectible=false,coords={{71.3,24.7,2024}},isDaily=1,lvl=10,qgs={192115},repeatable=1,sourceQuests=a[21],sqreq=1,sr=1,u=2,g={
+q(77786,{collectible=false,coords={
+[2024]={{71.3,24.7}}},isDaily=1,lvl=10,qgs={192115},repeatable=1,sourceQuests=a[22],sqreq=1,sr=1,u=2,g={
 ach(18916,{sr=1,u=2,g={
 crit(61858,{achID=18928,id=3,u=2})}}),
 ach(18917,{sr=1,u=2,g={
@@ -502,7 +515,7 @@ s(295506,248384,{f=2}),
 s(295507,248385,{f=2}),
 s(295508,248386,{f=2}),
 s(295509,248387,{f=2})}}),
-mnt(1234305,{itemID=243020,lvl=30,u=3})}}),
+mnt(1234305,{itemID=243020,lvl=10,u=3})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Midnight Epic Edition.",u=3,g={
 ach(61402,{providers={{"s",1239138}},u=3}),
 p(4812,{itemID=243063,npcID=244146,spellID=1234591,u=3}),
@@ -515,8 +528,8 @@ de(1458,{awp=110207,itemID=244668,spellID=1237798,u=3}),
 de(2231,{awp=110207,itemID=246414,spellID=1242068,u=3}),
 de(1894,{awp=110207,itemID=245939,spellID=1240036,u=3}),
 de(4843,{awp=110207,itemID=248809,spellID=1247795,u=3}),
-mnt(1239138,{itemID=245610,lvl=30,u=3}),
-mnt(1234303,{itemID=243019,lvl=30,u=3}),
+mnt(1239138,{itemID=245610,lvl=10,u=3}),
+mnt(1234303,{itemID=243019,lvl=10,u=3}),
 en(248974,{questID=91953,spellID=1248235,tmogSetID=5164,u=3,g={
 s(295490,248368,{f=3}),
 s(295491,248369,{f=2}),
@@ -602,7 +615,10 @@ toy(143543,{b=1,u=2})}})}}),
 h(-540,{awp=110107,e=422,rwp=110200,u=2,g={
 h(-12,{e=422,u=2,g={
 ach(18258,{e=422,providers={{"i",206018},{"n",205637}},u=2})}}),
-n(205722,{coords={{44.1,19.3,1},{33.8,35.3,84},{54.6,54.8,2248}},description="Every 60 Minutes a Portal spawns in Dornogal, Stormwind and Orgrimmar, causing a Treasure Goblin to appear after 5 minutes.\n\nCan also spawn in Undermine after defeating a rare.",e=422,maps={2346},u=2,g={
+n(205722,{coords={
+[1]={{44.1,19.3}},
+[84]={{33.8,35.3}},
+[2248]={{54.6,54.8}}},description="Every 60 Minutes a Portal spawns in Dornogal, Stormwind and Orgrimmar, causing a Treasure Goblin to appear after 5 minutes.\n\nCan also spawn in Undermine after defeating a rare.",e=422,maps={2346},u=2,g={
 n(205490,{e=422,u=2,g={
 p(3580,{b=1,e=422,itemID=206018,npcID=205637,spellID=411791,u=2}),
 i(206039,{b=1,e=422,u=2,g={
@@ -675,9 +691,11 @@ i(245595,{e=422,u=2}),
 i(245598,{e=422,u=2}),
 i(245594,{e=422,u=2})}})}})}}),
 h(-45,{e=422,u=2,g={
-q(91038,{coords={{49.1,27.1,2339},{50,63.1,2339},{60.5,74.9,2339}},e=422,providers={{"o",547529}},u=2})}}),
+q(91038,{coords={
+[2339]={{49.1,27.1},{50,63.1},{60.5,74.9}}},e=422,providers={{"o",547529}},u=2})}}),
 h(-58,{e=422,u=2,g={
-n(245378,{coords={{52.9,68,2339}},e=422,u=2,g={
+n(245378,{coords={
+[2339]={{52.9,68}}},e=422,u=2,g={
 en(244794,{cost={{"c",3309,40}},e=422,spellID=1237961,tmogSetID=4566,u=2,g={
 s(291675,242901,{c=a[6],e=422,f=3}),
 s(291676,242902,{c=a[6],e=422,f=5}),
@@ -710,16 +728,16 @@ s(292189,244418,{c=a[4],e=422,f=5}),
 s(292190,244419,{c=a[4],e=422,f=5}),
 s(292191,244420,{c=a[4],e=422,f=5})}}),
 en(244798,{cost={{"c",3309,40}},e=422,spellID=1237957,tmogSetID=4570,u=2,g={
-s(291711,242938,{c=a[25],e=422,f=4}),
-s(291712,242939,{c=a[25],e=422,f=4}),
-s(291713,242940,{c=a[25],e=422,f=4}),
-s(291714,242941,{c=a[25],e=422,f=4}),
-s(291715,242942,{c=a[25],e=422,f=4}),
-s(291716,242943,{c=a[25],e=422,f=4}),
-s(291717,242944,{c=a[25],e=422,f=4}),
-s(291718,242945,{c=a[25],e=422,f=4}),
-s(291719,242946,{c=a[25],e=422,f=3}),
-s(292209,244443,{c=a[25],e=422,f=4})}}),
+s(291711,242938,{c=a[26],e=422,f=4}),
+s(291712,242939,{c=a[26],e=422,f=4}),
+s(291713,242940,{c=a[26],e=422,f=4}),
+s(291714,242941,{c=a[26],e=422,f=4}),
+s(291715,242942,{c=a[26],e=422,f=4}),
+s(291716,242943,{c=a[26],e=422,f=4}),
+s(291717,242944,{c=a[26],e=422,f=4}),
+s(291718,242945,{c=a[26],e=422,f=4}),
+s(291719,242946,{c=a[26],e=422,f=3}),
+s(292209,244443,{c=a[26],e=422,f=4})}}),
 en(244805,{cost={{"c",3309,40}},e=422,spellID=1237966,tmogSetID=4564,u=2,g={
 s(291666,242892,{c=a[3],e=422,f=7}),
 s(291667,242893,{c=a[3],e=422,f=7}),
@@ -731,16 +749,16 @@ s(291672,242898,{c=a[3],e=422,f=7}),
 s(291673,242899,{c=a[3],e=422,f=7}),
 s(291674,242900,{c=a[3],e=422,f=3})}}),
 en(244803,{cost={{"c",3309,40}},e=422,spellID=1237968,tmogSetID=4569,u=2,g={
-s(292164,244392,{c=a[23],e=422,f=3}),
-s(292165,244393,{c=a[23],e=422,f=6}),
-s(292166,244394,{c=a[23],e=422,f=6}),
-s(292167,244395,{c=a[23],e=422,f=6}),
-s(292168,244396,{c=a[23],e=422,f=6}),
-s(292169,244397,{c=a[23],e=422,f=6}),
-s(292170,244398,{c=a[23],e=422,f=6}),
-s(292171,244399,{c=a[23],e=422,f=6}),
-s(292172,244400,{c=a[23],e=422,f=6}),
-s(292173,244401,{c=a[23],e=422,f=6})}}),
+s(292164,244392,{c=a[24],e=422,f=3}),
+s(292165,244393,{c=a[24],e=422,f=6}),
+s(292166,244394,{c=a[24],e=422,f=6}),
+s(292167,244395,{c=a[24],e=422,f=6}),
+s(292168,244396,{c=a[24],e=422,f=6}),
+s(292169,244397,{c=a[24],e=422,f=6}),
+s(292170,244398,{c=a[24],e=422,f=6}),
+s(292171,244399,{c=a[24],e=422,f=6}),
+s(292172,244400,{c=a[24],e=422,f=6}),
+s(292173,244401,{c=a[24],e=422,f=6})}}),
 en(244793,{cost={{"c",3309,40}},e=422,spellID=1237962,tmogSetID=4567,u=2,g={
 s(291756,242990,{c=a[20],e=422,f=7}),
 s(291757,242991,{b=1,c=a[20],e=422,f=7}),
@@ -752,16 +770,16 @@ s(291762,242996,{c=a[20],e=422,f=7}),
 s(291763,242997,{c=a[20],e=422,f=7}),
 s(291764,242998,{c=a[20],e=422,f=7})}}),
 en(244804,{cost={{"c",3309,40}},e=422,spellID=1237967,tmogSetID=4573,u=2,g={
-s(291738,242971,{c=a[26],e=422,f=4}),
-s(291739,242972,{c=a[26],e=422,f=4}),
-s(291740,242973,{c=a[26],e=422,f=4}),
-s(291741,242974,{c=a[26],e=422,f=4}),
-s(291742,242975,{c=a[26],e=422,f=4}),
-s(291743,242976,{c=a[26],e=422,f=4}),
-s(291744,242977,{c=a[26],e=422,f=4}),
-s(291745,242978,{c=a[26],e=422,f=4}),
-s(291746,242979,{c=a[26],e=422,f=3}),
-s(292214,244448,{c=a[26],e=422,f=4})}}),
+s(291738,242971,{c=a[27],e=422,f=4}),
+s(291739,242972,{c=a[27],e=422,f=4}),
+s(291740,242973,{c=a[27],e=422,f=4}),
+s(291741,242974,{c=a[27],e=422,f=4}),
+s(291742,242975,{c=a[27],e=422,f=4}),
+s(291743,242976,{c=a[27],e=422,f=4}),
+s(291744,242977,{c=a[27],e=422,f=4}),
+s(291745,242978,{c=a[27],e=422,f=4}),
+s(291746,242979,{c=a[27],e=422,f=3}),
+s(292214,244448,{c=a[27],e=422,f=4})}}),
 en(244796,{cost={{"c",3309,40}},e=422,spellID=1237959,tmogSetID=4562,u=2,g={
 s(291693,242920,{c=a[7],e=422,f=3}),
 s(291694,242921,{c=a[7],e=422,f=6}),
@@ -836,7 +854,7 @@ h(-542,{awp=50300,u=3,g={
 ach(8345,{providers={{"s",142073}},u=3}),
 mnt(142073,{b=1,itemID=98618,lvl=10,u=3})}}),
 h(-543,{awp=90100,u=3,g={
-mnt(356488,{itemID=258431,u=3}),
+mnt(356488,{b=1,itemID=258431,lvl=10,u=3}),
 ach(15323,{u=3})}}),
 h(-544,{awp=100205,maps={1,84,2112},g={
 h(-12,{
@@ -850,16 +868,22 @@ i(212154,{rwp=100206,u=2})}),
 h(-45,{
 q(79184,{providers={{"i",212154}},rwp=100206,u=2,g={
 i(212157,{b=1,u=2})}}),
-q(79178,{coords={{61.6,31.1,2112}},qgs={215409},rwp=100206,sourceQuests=a[24],u=2,g={
+q(79178,{coords={
+[2112]={a[21]}},qgs={215409},rwp=100206,sourceQuests=a[25],u=2,g={
 i(211965,{b=1,spellID=431019,u=2}),
 i(212979,{f=55,u=2})}}),
-q(79693,{coords={{61.6,31.1,84}},r=2,rwp=100206,sourceQuests=a[24],u=2,g={
+q(79693,{coords={
+[84]={a[21]}},r=2,rwp=100206,sourceQuests=a[25],u=2,g={
 i(211965,{b=1,spellID=431019,u=2}),
 i(212979,{f=55,u=2})}}),
-q(79694,{coords={{61.6,31.1,85}},r=1,rwp=100206,sourceQuests=a[24],u=2,g={
+q(79694,{coords={
+[85]={a[21]}},r=1,rwp=100206,sourceQuests=a[25],u=2,g={
 i(211965,{b=1,spellID=431019,u=2}),
 i(212979,{f=55,u=2})}})}),
-n(215146,{coords={{53.1,16.17,1},{33.99,20.52,84},{62.24,66.97,2112}},providers={{"n",214985}},rwp=100206,u=2,g={
+n(215146,{coords={
+[1]={{53.1,16.17}},
+[84]={{33.99,20.52}},
+[2112]={{62.24,66.97}}},providers={{"n",214985}},rwp=100206,u=2,g={
 i(212335,{b=1,f=113,lvl=10,u=2}),
 toy(212337,{b=1,u=2}),
 mnt(431992,{b=1,itemID=212522,lvl=10,u=2}),
@@ -913,7 +937,8 @@ cq(79385,{itemID=212872,spellID=433202,u=2,g={
 crit(65346,{achID=19724,id=21})}})}})}}),
 mnt(278966,{b=1,description="Granted to Players who logged in to Hearthstone between March 11th 2024 and May 14th 2024.",itemID=163186,lvl=10,u=2}),
 h(-58,{
-n(215385,{coords={{60.6,59.3,2112}},rwp=100206,u=2,g={
+n(215385,{coords={
+[2112]={{60.6,59.3}}},rwp=100206,u=2,g={
 i(211965,{b=1,spellID=431019,u=2})}})})}}),
 h(-545,{awp=60002,g={
 ach(10657,{awp=70003,description="Cross-Game Reward: Lady Liadrin Paladin Hero in Hearthstone."}),
@@ -953,10 +978,10 @@ p(192,{awp=30202,b=1,description="This was awarded to players when they linked t
 ach(9496,{awp=60002,u=2,g={
 crit(25887,{achID=9496,providers={a[1]},u=2}),
 crit(27433,{achID=9496,id=2,providers={a[1]},u=2})}}),
-mnt(171845,{awp=60002,b=1,description="Azeroth Choppers promotional mount. You had to have logged in on a Horde character between the 24th of July and the 30th of September 2014 in order for your account to receive this mount.",itemID=116788,lvl=17,u=2})}),
+mnt(171845,{awp=60002,b=1,description="Azeroth Choppers promotional mount. You had to have logged in on a Horde character between the 24th of July and the 30th of September 2014 in order for your account to receive this mount.",itemID=116788,lvl=10,u=2})}),
 h(-548,{
 ach(1436,{awp=30002,providers={{"i",37719}},u=2}),
-mnt(49322,{awp=20403,b=1,itemID=37719,lvl=17,u=2}),
+mnt(49322,{awp=20403,b=1,itemID=37719,lvl=10,u=2}),
 ach(4832,{awp=40001,providers={{"i",54860}},u=2}),
 mnt(75973,{awp=30303,b=1,itemID=54860,lvl=10,u=2}),
 ach(8213,{awp=50004,providers={{"i",83086}},u=2}),
@@ -964,7 +989,7 @@ mnt(121820,{awp=50004,b=1,itemID=83086,lvl=10,u=2}),
 ach(8794,{awp=50402,providers={{"i",106246}},u=2}),
 mnt(149801,{awp=50402,b=1,itemID=106246,lvl=10,u=2}),
 ach(9925,{awp=60002,providers={{"i",118515}},u=2}),
-mnt(171847,{awp=60002,b=1,itemID=118515,lvl=17,u=2}),
+mnt(171847,{awp=60002,b=1,itemID=118515,lvl=10,u=2}),
 ach(3636,{awp=40003,description="Chinese & Taiwan Only",u=2}),
 p(231,{awp=40003,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=46894,npcID=34930,spellID=66520,u=2}),
 p(247,{awp=40003,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=49664,npcID=36910,spellID=69539,u=2}),
@@ -1094,22 +1119,22 @@ i(73149,{b=1,c=a[13],f=52,lvl=30,u=2}),
 i(73147,{b=1,c=a[13],f=53,lvl=30,spellID=102743,u=2}),
 i(73150,{b=1,c=a[13],f=53,lvl=30,spellID=102776,u=2})}}),
 cl(8,{u=2,g={
-s(37464,73006,{b=1,c=a[25],f=28,lvl=30,u=2}),
-s(37558,73325,{b=1,c=a[25],f=27,lvl=30,u=2}),
-s(37199,72624,{b=1,c=a[25],f=4,lvl=30,u=2}),
-s(37201,72626,{b=1,c=a[25],f=4,lvl=30,u=2}),
-i(73105,{b=1,c=a[25],f=51,lvl=30,u=2}),
-s(37556,73323,{b=1,c=a[25],f=3,lvl=30,u=2}),
-s(37196,72621,{b=1,c=a[25],f=4,lvl=30,u=2}),
-s(37203,72628,{b=1,c=a[25],f=4,lvl=30,u=2}),
-s(37198,72623,{b=1,c=a[25],f=4,lvl=30,u=2}),
-s(37202,72627,{b=1,c=a[25],f=4,lvl=30,u=2}),
-s(37200,72625,{b=1,c=a[25],f=4,lvl=30,u=2}),
-s(37197,72622,{b=1,c=a[25],f=4,lvl=30,u=2}),
-i(73103,{b=1,c=a[25],f=52,lvl=30,u=2}),
-i(73102,{b=1,c=a[25],f=52,lvl=30,u=2}),
-i(73104,{b=1,c=a[25],f=53,lvl=30,spellID=102779,u=2}),
-i(73101,{b=1,c=a[25],f=53,lvl=30,spellID=102745,u=2})}}),
+s(37464,73006,{b=1,c=a[26],f=28,lvl=30,u=2}),
+s(37558,73325,{b=1,c=a[26],f=27,lvl=30,u=2}),
+s(37199,72624,{b=1,c=a[26],f=4,lvl=30,u=2}),
+s(37201,72626,{b=1,c=a[26],f=4,lvl=30,u=2}),
+i(73105,{b=1,c=a[26],f=51,lvl=30,u=2}),
+s(37556,73323,{b=1,c=a[26],f=3,lvl=30,u=2}),
+s(37196,72621,{b=1,c=a[26],f=4,lvl=30,u=2}),
+s(37203,72628,{b=1,c=a[26],f=4,lvl=30,u=2}),
+s(37198,72623,{b=1,c=a[26],f=4,lvl=30,u=2}),
+s(37202,72627,{b=1,c=a[26],f=4,lvl=30,u=2}),
+s(37200,72625,{b=1,c=a[26],f=4,lvl=30,u=2}),
+s(37197,72622,{b=1,c=a[26],f=4,lvl=30,u=2}),
+i(73103,{b=1,c=a[26],f=52,lvl=30,u=2}),
+i(73102,{b=1,c=a[26],f=52,lvl=30,u=2}),
+i(73104,{b=1,c=a[26],f=53,lvl=30,spellID=102779,u=2}),
+i(73101,{b=1,c=a[26],f=53,lvl=30,spellID=102745,u=2})}}),
 cl(10,{awp=50004,g={
 s(45912,88648,{b=1,c=a[4],f=28,lvl=30}),
 s(45901,88622,{b=1,c=a[4],f=28,lvl=30}),
@@ -1246,70 +1271,70 @@ i(73123,{b=1,c=a[16],f=52,lvl=30,u=2}),
 i(73124,{b=1,c=a[16],f=53,lvl=30,spellID=102743,u=2}),
 i(73121,{b=1,c=a[16],f=53,lvl=30,spellID=102776,u=2})}}),
 cl(7,{u=2,g={
-s(37463,73005,{b=1,c=a[23],f=8,lvl=30,u=2}),
-s(37461,73003,{b=1,c=a[23],f=23,lvl=30,u=2}),
-s(37456,72998,{b=1,c=a[23],f=23,lvl=30,u=2}),
-s(37460,73002,{b=1,c=a[23],f=23,lvl=30,u=2}),
-s(37462,73004,{b=1,c=a[23],f=8,lvl=30,u=2}),
-s(37365,72892,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37373,72905,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37273,72701,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37367,72894,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37275,72703,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37375,72907,{b=1,c=a[23],f=6,lvl=30,u=2}),
-i(73131,{b=1,c=a[23],f=51,lvl=30,u=2}),
-i(73136,{b=1,c=a[23],f=51,lvl=30,u=2}),
-i(73141,{b=1,c=a[23],f=51,lvl=30,u=2}),
-s(37546,73313,{b=1,c=a[23],f=3,lvl=30,u=2}),
-s(37544,73311,{b=1,c=a[23],f=3,lvl=30,u=2}),
-s(37545,73312,{b=1,c=a[23],f=3,lvl=30,u=2}),
-s(37270,72698,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37362,72889,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37370,72902,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37369,72896,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37277,72705,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37377,72909,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37272,72700,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37364,72891,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37372,72904,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37368,72895,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37376,72908,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37276,72704,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37374,72906,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37274,72702,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37366,72893,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37363,72890,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37271,72699,{b=1,c=a[23],f=6,lvl=30,u=2}),
-s(37371,72903,{b=1,c=a[23],f=6,lvl=30,u=2}),
-i(73139,{b=1,c=a[23],f=52,lvl=30,u=2}),
-i(73133,{b=1,c=a[23],f=52,lvl=30,u=2}),
-i(73144,{b=1,c=a[23],f=52,lvl=30,u=2}),
-i(73138,{b=1,c=a[23],f=52,lvl=30,u=2}),
-i(73134,{b=1,c=a[23],f=52,lvl=30,u=2}),
-i(73143,{b=1,c=a[23],f=52,lvl=30,u=2}),
-i(73137,{b=1,c=a[23],f=53,lvl=30,spellID=102779,u=2}),
-i(73132,{b=1,c=a[23],f=53,lvl=30,spellID=102743,u=2}),
-i(73142,{b=1,c=a[23],f=53,lvl=30,spellID=102780,u=2}),
-i(73140,{b=1,c=a[23],f=53,lvl=30,spellID=102745,u=2}),
-i(73135,{b=1,c=a[23],f=53,lvl=30,spellID=102776,u=2}),
-i(73145,{b=1,c=a[23],f=53,lvl=30,spellID=102777,u=2})}}),
+s(37463,73005,{b=1,c=a[24],f=8,lvl=30,u=2}),
+s(37461,73003,{b=1,c=a[24],f=23,lvl=30,u=2}),
+s(37456,72998,{b=1,c=a[24],f=23,lvl=30,u=2}),
+s(37460,73002,{b=1,c=a[24],f=23,lvl=30,u=2}),
+s(37462,73004,{b=1,c=a[24],f=8,lvl=30,u=2}),
+s(37365,72892,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37373,72905,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37273,72701,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37367,72894,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37275,72703,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37375,72907,{b=1,c=a[24],f=6,lvl=30,u=2}),
+i(73131,{b=1,c=a[24],f=51,lvl=30,u=2}),
+i(73136,{b=1,c=a[24],f=51,lvl=30,u=2}),
+i(73141,{b=1,c=a[24],f=51,lvl=30,u=2}),
+s(37546,73313,{b=1,c=a[24],f=3,lvl=30,u=2}),
+s(37544,73311,{b=1,c=a[24],f=3,lvl=30,u=2}),
+s(37545,73312,{b=1,c=a[24],f=3,lvl=30,u=2}),
+s(37270,72698,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37362,72889,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37370,72902,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37369,72896,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37277,72705,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37377,72909,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37272,72700,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37364,72891,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37372,72904,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37368,72895,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37376,72908,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37276,72704,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37374,72906,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37274,72702,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37366,72893,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37363,72890,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37271,72699,{b=1,c=a[24],f=6,lvl=30,u=2}),
+s(37371,72903,{b=1,c=a[24],f=6,lvl=30,u=2}),
+i(73139,{b=1,c=a[24],f=52,lvl=30,u=2}),
+i(73133,{b=1,c=a[24],f=52,lvl=30,u=2}),
+i(73144,{b=1,c=a[24],f=52,lvl=30,u=2}),
+i(73138,{b=1,c=a[24],f=52,lvl=30,u=2}),
+i(73134,{b=1,c=a[24],f=52,lvl=30,u=2}),
+i(73143,{b=1,c=a[24],f=52,lvl=30,u=2}),
+i(73137,{b=1,c=a[24],f=53,lvl=30,spellID=102779,u=2}),
+i(73132,{b=1,c=a[24],f=53,lvl=30,spellID=102743,u=2}),
+i(73142,{b=1,c=a[24],f=53,lvl=30,spellID=102780,u=2}),
+i(73140,{b=1,c=a[24],f=53,lvl=30,spellID=102745,u=2}),
+i(73135,{b=1,c=a[24],f=53,lvl=30,spellID=102776,u=2}),
+i(73145,{b=1,c=a[24],f=53,lvl=30,spellID=102777,u=2})}}),
 cl(9,{u=2,g={
-s(37465,73007,{b=1,c=a[26],f=28,lvl=30,u=2}),
-s(37559,73326,{b=1,c=a[26],f=27,lvl=30,u=2}),
-s(37215,72640,{b=1,c=a[26],f=4,lvl=30,u=2}),
-s(37218,72643,{b=1,c=a[26],f=4,lvl=30,u=2}),
-i(73110,{b=1,c=a[26],f=51,lvl=30,u=2}),
-s(37557,73324,{b=1,c=a[26],f=3,lvl=30,u=2}),
-s(37217,72642,{b=1,c=a[26],f=4,lvl=30,u=2}),
-s(37220,72645,{b=1,c=a[26],f=4,lvl=30,u=2}),
-s(37214,72639,{b=1,c=a[26],f=4,lvl=30,u=2}),
-s(37219,72644,{b=1,c=a[26],f=4,lvl=30,u=2}),
-s(37216,72641,{b=1,c=a[26],f=4,lvl=30,u=2}),
-s(37213,72638,{b=1,c=a[26],f=4,lvl=30,u=2}),
-i(73108,{b=1,c=a[26],f=52,lvl=30,u=2}),
-i(73107,{b=1,c=a[26],f=52,lvl=30,u=2}),
-i(73109,{b=1,c=a[26],f=53,lvl=30,spellID=102779,u=2}),
-i(73106,{b=1,c=a[26],f=53,lvl=30,spellID=102745,u=2})}}),
+s(37465,73007,{b=1,c=a[27],f=28,lvl=30,u=2}),
+s(37559,73326,{b=1,c=a[27],f=27,lvl=30,u=2}),
+s(37215,72640,{b=1,c=a[27],f=4,lvl=30,u=2}),
+s(37218,72643,{b=1,c=a[27],f=4,lvl=30,u=2}),
+i(73110,{b=1,c=a[27],f=51,lvl=30,u=2}),
+s(37557,73324,{b=1,c=a[27],f=3,lvl=30,u=2}),
+s(37217,72642,{b=1,c=a[27],f=4,lvl=30,u=2}),
+s(37220,72645,{b=1,c=a[27],f=4,lvl=30,u=2}),
+s(37214,72639,{b=1,c=a[27],f=4,lvl=30,u=2}),
+s(37219,72644,{b=1,c=a[27],f=4,lvl=30,u=2}),
+s(37216,72641,{b=1,c=a[27],f=4,lvl=30,u=2}),
+s(37213,72638,{b=1,c=a[27],f=4,lvl=30,u=2}),
+i(73108,{b=1,c=a[27],f=52,lvl=30,u=2}),
+i(73107,{b=1,c=a[27],f=52,lvl=30,u=2}),
+i(73109,{b=1,c=a[27],f=53,lvl=30,spellID=102779,u=2}),
+i(73106,{b=1,c=a[27],f=53,lvl=30,spellID=102745,u=2})}}),
 cl(1,{u=2,g={
 s(37444,72982,{b=1,c=a[3],f=8,lvl=30,u=2}),
 s(37450,72992,{b=1,c=a[3],f=26,lvl=30,u=2}),
@@ -1391,26 +1416,26 @@ flt(50,{u=10,g={
 i(49288,{awp=30200,b=1,f=55,r=1,spellID=68769,u=10}),
 i(49289,{awp=30200,b=1,f=55,r=2,spellID=68768,u=10})}}),
 flt(100,{u=10,g={
-mnt(96503,{awp=40100,itemID=68825,lvl=25,u=10}),
-mnt(51412,{awp=20402,b=1,itemID=38576,lvl=17,rwp=30200,u=2}),
-mnt(51412,{awp=30200,itemID=49282,lvl=17,u=10}),
+mnt(96503,{awp=40100,itemID=68825,lvl=10,u=10}),
+mnt(51412,{awp=20402,b=1,itemID=38576,lvl=10,rwp=30200,u=2}),
+mnt(51412,{awp=30200,itemID=49282,lvl=10,u=10}),
 mnt(74856,{awp=30303,itemID=54069,lvl=10,rwp=40300,u=2}),
 mnt(74856,{awp=40300,b=1,itemID=74269,lvl=10,u=10}),
 mnt(102514,{awp=40300,itemID=72582,lvl=10,u=10}),
 mnt(113120,{awp=40302,itemID=79771,lvl=10,u=10}),
 mnt(136505,{awp=50200,itemID=93671,lvl=10,u=10}),
-mnt(65917,{awp=30200,b=1,itemID=46778,lvl=17,rwp=30200,u=2}),
-mnt(65917,{awp=30200,itemID=49290,lvl=17,u=10}),
-mnt(93623,{awp=40003,itemID=68008,lvl=25,u=10}),
+mnt(65917,{awp=30200,b=1,itemID=46778,lvl=10,rwp=30200,u=2}),
+mnt(65917,{awp=30200,itemID=49290,lvl=10,u=10}),
+mnt(93623,{awp=40003,itemID=68008,lvl=10,u=10}),
 mnt(42776,{awp=20103,b=1,itemID=33224,lvl=10,rwp=30200,u=2}),
 mnt(42776,{awp=30200,itemID=49283,lvl=10,u=10}),
-mnt(42777,{awp=20103,b=1,itemID=33225,lvl=17,rwp=30200,u=2}),
-mnt(42777,{awp=30200,itemID=49284,lvl=17,u=10}),
+mnt(42777,{awp=20103,b=1,itemID=33225,lvl=10,rwp=30200,u=2}),
+mnt(42777,{awp=30200,itemID=49284,lvl=10,u=10}),
 mnt(30174,{b=1,itemID=23720,u=10}),
 mnt(97581,{awp=40100,itemID=69228,lvl=10,u=10}),
 mnt(101573,{awp=40300,itemID=71718,lvl=10,u=10}),
 mnt(102488,{awp=40300,itemID=72575,lvl=10,u=10}),
-mnt(74918,{awp=30305,itemID=54068,lvl=17,u=10}),
+mnt(74918,{awp=30305,itemID=54068,lvl=10,u=10}),
 mnt(46197,{awp=20400,b=1,itemID=35225,lvl=10,rwp=30200,u=2}),
 mnt(46197,{awp=30200,itemID=49285,lvl=10,u=10}),
 mnt(46199,{awp=20400,b=1,itemID=35226,lvl=10,rwp=30200,u=2}),
@@ -1502,7 +1527,8 @@ h(-45,{
 q(73183,{providers={{"i",204731}},rwp=100200,u=2}),
 q(75625,{providers={{"i",205189}},r=2,rwp=100200,u=2}),
 q(75626,{providers={{"i",205190}},r=1,rwp=100200,u=2}),
-q(75221,{coords={{48,46.4,2112}},cost={{"i",202162,1}},qgs=a[10],repeatable=1,g={
+q(75221,{coords={
+[2112]={{48,46.4}}},cost={{"i",202162,1}},qgs=a[10],repeatable=1,g={
 i(202163,{spellID=398642,g={
 toy(201931,{b=1}),
 toy(202261,{b=1}),
@@ -1511,7 +1537,8 @@ toy(202856,{b=1}),
 toy(202859,{b=1}),
 toy(202862,{b=1}),
 toy(202865,{b=1})}})}}),
-q(75709,{coords={{28.6,41.6,84}},cost={{"i",202162,1}},qgs=a[10],r=2,repeatable=1,g={
+q(75709,{coords={
+[84]={{28.6,41.6}}},cost={{"i",202162,1}},qgs=a[10],r=2,repeatable=1,g={
 i(202163,{spellID=398642,g={
 toy(201931,{b=1}),
 toy(202261,{b=1}),
@@ -1520,7 +1547,8 @@ toy(202856,{b=1}),
 toy(202859,{b=1}),
 toy(202862,{b=1}),
 toy(202865,{b=1})}})}}),
-q(75711,{coords={{50.8,82.2,85}},cost={{"i",202162,1}},qgs=a[10],r=1,repeatable=1,g={
+q(75711,{coords={
+[85]={{50.8,82.2}}},cost={{"i",202162,1}},qgs=a[10],r=1,repeatable=1,g={
 i(202163,{spellID=398642,g={
 toy(201931,{b=1}),
 toy(202261,{b=1}),
@@ -1564,27 +1592,48 @@ crit(57994,{achID=17361,id=7})}})}),
 h(-56,{
 o(385958,{type="AsGenericObjectContainer",g={
 i(202162,{b=1}),
-o(385958,{coords={{45.7,47.2,2112}},questID=73180,type="AsSubGenericObject"}),
-o(387696,{coords={{31.1,37.4,84}},questID=74844,type="AsSubGenericObject"}),
-o(387697,{coords={{54.4,77.5,85}},questID=74845,type="AsSubGenericObject"}),
-o(385961,{coords={a[19]},questID=73182,type="AsSubGenericObject"}),
-o(386138,{coords={a[8]},questID=73928,type="AsSubGenericObject"}),
-o(386139,{coords={a[22]},questID=73936,type="AsSubGenericObject"}),
-o(387695,{coords={a[17]},questID=74843,type="AsSubGenericObject"})}}),
+o(385958,{coords={
+[2112]={{45.7,47.2}}},questID=73180,type="AsSubGenericObject"}),
+o(387696,{coords={
+[84]={{31.1,37.4}}},questID=74844,type="AsSubGenericObject"}),
+o(387697,{coords={
+[85]={{54.4,77.5}}},questID=74845,type="AsSubGenericObject"}),
+o(385961,{coords={
+[2022]={a[19]}},questID=73182,type="AsSubGenericObject"}),
+o(386138,{coords={
+[2023]={a[8]}},questID=73928,type="AsSubGenericObject"}),
+o(386139,{coords={
+[2024]={a[23]}},questID=73936,type="AsSubGenericObject"}),
+o(387695,{coords={
+[2025]={a[17]}},questID=74843,type="AsSubGenericObject"})}}),
 o(386140,{type="AsGenericObjectContainer",g={
 i(202395,{spellID=405852}),
-o(386140,{coords={{75.3,86.1,84}},questID=73952,type="AsSubGenericObject"}),
-o(386157,{coords={{38.7,45.9,84}},questID=74286,type="AsSubGenericObject"}),
-o(387718,{coords={{54,75.3,85}},questID=74848,type="AsSubGenericObject"}),
-o(386158,{coords={{56,12,1}},questID=74287,type="AsSubGenericObject"}),
-o(387719,{coords={{46.1,46.7,2112}},questID=74849,type="AsSubGenericObject"}),
-o(405585,{coords={a[19]},questID=75039,type="AsSubGenericObject"}),
-o(387720,{coords={{63,78.5,2022}},questID=74850,type="AsSubGenericObject"}),
-o(387721,{coords={{34.6,63.7,2022}},questID=74851,type="AsSubGenericObject"}),
-o(392031,{coords={{81.8,77.9,2023}},questID=75036,type="AsSubGenericObject"}),
-o(405586,{coords={a[8]},questID=75040,type="AsSubGenericObject"}),
-o(405587,{coords={a[22]},questID=75041,type="AsSubGenericObject"}),
-o(392032,{coords={{57.4,37.7,2024}},questID=75037,type="AsSubGenericObject"}),
-o(405584,{coords={a[17]},questID=75038,type="AsSubGenericObject"}),
-o(387722,{coords={{57,66.7,2025}},questID=74852,type="AsSubGenericObject"})}})})}})};
+o(386140,{coords={
+[84]={{75.3,86.1}}},questID=73952,type="AsSubGenericObject"}),
+o(386157,{coords={
+[84]={{38.7,45.9}}},questID=74286,type="AsSubGenericObject"}),
+o(387718,{coords={
+[85]={{54,75.3}}},questID=74848,type="AsSubGenericObject"}),
+o(386158,{coords={
+[1]={{56,12}}},questID=74287,type="AsSubGenericObject"}),
+o(387719,{coords={
+[2112]={{46.1,46.7}}},questID=74849,type="AsSubGenericObject"}),
+o(405585,{coords={
+[2022]={a[19]}},questID=75039,type="AsSubGenericObject"}),
+o(387720,{coords={
+[2022]={{63,78.5}}},questID=74850,type="AsSubGenericObject"}),
+o(387721,{coords={
+[2022]={{34.6,63.7}}},questID=74851,type="AsSubGenericObject"}),
+o(392031,{coords={
+[2023]={{81.8,77.9}}},questID=75036,type="AsSubGenericObject"}),
+o(405586,{coords={
+[2023]={a[8]}},questID=75040,type="AsSubGenericObject"}),
+o(405587,{coords={
+[2024]={a[23]}},questID=75041,type="AsSubGenericObject"}),
+o(392032,{coords={
+[2024]={{57.4,37.7}}},questID=75037,type="AsSubGenericObject"}),
+o(405584,{coords={
+[2025]={a[17]}},questID=75038,type="AsSubGenericObject"}),
+o(387722,{coords={
+[2025]={{57,66.7}}},questID=74852,type="AsSubGenericObject"})}})})}})}});
 end);

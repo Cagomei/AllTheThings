@@ -1,82 +1,11 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cat,crit,cu,faction,flt,h,heir,i,p,prof,q,qo,r,s,sp,title,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateExpansion;
-categories.Professions={
-h(-12,{
-x(1,{
-ach(732),
-ach(731),
-ach(116)}),
-x(2,{awp=20001,g={
-ach(733,{u=17})}}),
-x(3,{
-ach(734,{awp=30003}),
-ach(732,{awp=30000}),
-ach(731,{awp=30000}),
-ach(116,{awp=30000}),
-ach(730,{awp=30003,rwp=80001,g={
-crit(5592,{achID=730,id=2,learnedAt=450,requireSkill=129}),
-crit(5696,{achID=730,id=1,learnedAt=450,requireSkill=356}),
-crit(5701,{achID=730,id=3,learnedAt=450,requireSkill=185})}}),
-ach(735,{awp=30003})}),
-x(4,{awp=40003,g={
-ach(4924),
-ach(4914),
-ach(4915,{rwp=80001,g={
-crit(5696,{achID=4915,id=1,learnedAt=525,requireSkill=356}),
-crit(5592,{achID=4915,id=2,learnedAt=525,requireSkill=129}),
-crit(5701,{achID=4915,id=3,learnedAt=525,requireSkill=185}),
-crit(13812,{achID=4915,id=4,learnedAt=525,requireSkill=794})}})}}),
-x(5,{awp=50004,g={
-ach(7379,{
-crit(5565,{achID=7379,id=1,learnedAt=600,requireSkill=171}),
-crit(5566,{achID=7379,id=2,learnedAt=600,requireSkill=164}),
-crit(5567,{achID=7379,id=3,learnedAt=600,requireSkill=333}),
-crit(5722,{achID=7379,id=4,learnedAt=600,requireSkill=202}),
-crit(5569,{achID=7379,id=5,learnedAt=600,requireSkill=182}),
-crit(5716,{achID=7379,id=6,learnedAt=600,requireSkill=773}),
-crit(5571,{achID=7379,id=7,learnedAt=600,requireSkill=755}),
-crit(5718,{achID=7379,id=8,learnedAt=600,requireSkill=165}),
-crit(5573,{achID=7379,id=9,learnedAt=600,requireSkill=186}),
-crit(5720,{achID=7379,id=10,learnedAt=600,requireSkill=393}),
-crit(5575,{achID=7379,id=11,learnedAt=600,requireSkill=197})}),
-ach(7378,{sym={{"partial_achievement",7379}}}),
-ach(6830,{sym={{"partial_achievement",7379}}}),
-ach(6835,{sym={{"partial_achievement",7379}}}),
-ach(6836,{rwp=80001,g={
-crit(5696,{achID=6836,id=1,learnedAt=600,requireSkill=356}),
-crit(5592,{achID=6836,id=2,learnedAt=600,requireSkill=129}),
-crit(5701,{achID=6836,id=3,learnedAt=600,requireSkill=185}),
-crit(13812,{achID=6836,id=4,learnedAt=600,requireSkill=794})}})}})}),
-prof(171,{
-x(1,{awp=40300,requireSkill=171,sharedDescription="Requires 300 Classic Alchemy.",g={
-h(-45,{requireSkill=171,g={
-q(29481,{coords={{55.6,85.8,84},{55.6,45.8,85},{66.6,55,87},{46.8,33.6,88},{54,38.6,89},{47.6,72.8,998}},qgs={3009,3347,4160,4611,5177,5499},repeatable=1,requireSkill=171,g={
-r(28677,{requireSkill=28677})}}),
-q(29067,{coords={{55.6,85.8,84},{55.6,45.8,85},{66.6,55,87},{46.8,33.6,88},{54,38.6,89},{47.6,72.8,998}},qgs={3009,3347,4160,4611,5177,5499},repeatable=1,requireSkill=171,g={
-r(28675,{requireSkill=28675})}}),
-q(29482,{coords={{55.6,85.8,84},{55.6,45.8,85},{66.6,55,87},{46.8,33.6,88},{54,38.6,89},{47.6,72.8,998}},qgs={3009,3347,4160,4611,5177,5499},repeatable=1,requireSkill=171,g={
-r(28672,{requireSkill=28672})}})}})}}),
-x(2,{awp=20005,requireSkill=171,g={
-q(10906,{altQuests={10905,10907},coords={{52.2,36.4,100},{53.8,65.8,100}},isBreadcrumb=1,lvl=68,nextQuests={10902},qgs={16588,18802},requireSkill=171,rwp=40300,u=2}),
-q(10902,{altQuests={10897,10899},coords={{45.8,20.4,111}},cost={{"i",22831,5},{"i",28104,5},{"i",22834,5},{"i",31753,10}},description="Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",lvl=68,maps={273},qgs={19052},requireSkill=171,rwp=40300,sourceQuests={10906},u=2,g={
-r(28677,{requireSkill=28677})}}),
-q(10905,{altQuests={10906,10907},coords={{52.2,36.4,100},{53.8,65.8,100}},isBreadcrumb=1,lvl=68,nextQuests={10897},qgs={16588,18802},requireSkill=171,rwp=40300,u=2}),
-q(10897,{altQuests={10899,10902},coords={{44.1,36.6,102}},cost={{"i",22836,5},{"i",22832,5},{"i",22829,5}},description="Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",lvl=68,maps={266},qgs={17909},requireSkill=171,rwp=40300,sourceQuests={10905},u=2,g={
-qo(1,{crs={17975},providers={{"i",31744}},requireSkill=171}),
-r(28675,{requireSkill=28675})}}),
-q(10907,{altQuests={10905,10906},coords={{52.2,36.4,100},{53.8,65.8,100}},isBreadcrumb=1,lvl=68,nextQuests={10899},qgs={16588,18802},requireSkill=171,rwp=40300,u=2}),
-q(10899,{altQuests={10897,10902},coords={{44.1,36.6,109}},cost={{"i",23571,4}},description="Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",lvl=68,qgs={22427},requireSkill=171,rwp=40300,sourceQuests={10907},u=2,g={
-r(28672,{requireSkill=28672})}})}}),
-x(3,{awp=30200,requireSkill=171,g={
-q(14151,{coords={{42.4,32,125}},qgs={28703},repeatable=1,requireSkill=171,u=32,g={
-r(66659,{learnedAt=440,requireSkill=171,u=32})}})}}),
-x(5,{awp=50004,requireSkill=171,g={
-q(30597,{cost={{"i",72238,3}},maps={424},providers={{"i",80240}},requireSkill=171,rwp=50200,u=2,g={
-i(80240,{b=1,lvl=85,q=3,requireSkill=171,u=2}),
-i(75274,{b=1,f=53,lvl=85,q=3,requireSkill=171,u=2})}})}})}),
+categories.Professions=
+h(-44,{SortPriority=25,g={
 prof(794,{awp=40003,g={
+x(7,{requireSkill=794}),
 x(4,{requireSkill=794,g={
 h(-12,{requireSkill=794,g={
 ach(4857,{requireSkill=794}),
@@ -144,7 +73,8 @@ crit(15055,{achID=5191,id=4,providers={{"i",64356}},requireSkill=794}),
 crit(15056,{achID=5191,id=5,providers={{"i",64379}},requireSkill=794}),
 crit(15057,{achID=5191,id=6,providers={{"i",64381}},requireSkill=794}),
 crit(15099,{achID=5191,id=7,providers={{"i",64648}},requireSkill=794})}})}}),
-h(-58,{awp=50004,coords={{83.6,31,390}},crs={64922},requireSkill=794,g={
+h(-58,{awp=50004,coords={
+[390]={{83.6,31}}},crs={64922},requireSkill=794,g={
 i(87534,{b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
 cu(398,{requireSkill=794})}}),
 i(87533,{b=1,cost={{"i",87399,1}},q=1,requireSkill=794,g={
@@ -316,8 +246,105 @@ crit(21975,{achID=7612,id=13,requireSkill=794})}}),
 q(31798,{providers={{"i",89179}},requireSkill=794,g={
 crit(21976,{achID=7612,id=14,requireSkill=794})}})}})}})}}),
 x(6,{requireSkill=794}),
-x(7,{requireSkill=794}),
 x(8,{requireSkill=794})}}),
+h(-12,{
+x(1,{
+ach(732),
+ach(731),
+ach(116)}),
+x(2,{awp=20001,g={
+ach(733,{u=17})}}),
+x(3,{
+ach(734,{awp=30003}),
+ach(732,{awp=30000}),
+ach(731,{awp=30000}),
+ach(116,{awp=30000}),
+ach(730,{awp=30003,rwp=80001,g={
+crit(5592,{achID=730,id=2,learnedAt=450,requireSkill=129}),
+crit(5696,{achID=730,id=1,learnedAt=450,requireSkill=356}),
+crit(5701,{achID=730,id=3,learnedAt=450,requireSkill=185})}}),
+ach(735,{awp=30003})}),
+x(4,{awp=40003,g={
+ach(4924),
+ach(4914),
+ach(4915,{rwp=80001,g={
+crit(5696,{achID=4915,id=1,learnedAt=525,requireSkill=356}),
+crit(5592,{achID=4915,id=2,learnedAt=525,requireSkill=129}),
+crit(5701,{achID=4915,id=3,learnedAt=525,requireSkill=185}),
+crit(13812,{achID=4915,id=4,learnedAt=525,requireSkill=794})}})}}),
+x(5,{awp=50004,g={
+ach(7379,{
+crit(5565,{achID=7379,id=1,learnedAt=600,requireSkill=171}),
+crit(5566,{achID=7379,id=2,learnedAt=600,requireSkill=164}),
+crit(5567,{achID=7379,id=3,learnedAt=600,requireSkill=333}),
+crit(5722,{achID=7379,id=4,learnedAt=600,requireSkill=202}),
+crit(5569,{achID=7379,id=5,learnedAt=600,requireSkill=182}),
+crit(5716,{achID=7379,id=6,learnedAt=600,requireSkill=773}),
+crit(5571,{achID=7379,id=7,learnedAt=600,requireSkill=755}),
+crit(5718,{achID=7379,id=8,learnedAt=600,requireSkill=165}),
+crit(5573,{achID=7379,id=9,learnedAt=600,requireSkill=186}),
+crit(5720,{achID=7379,id=10,learnedAt=600,requireSkill=393}),
+crit(5575,{achID=7379,id=11,learnedAt=600,requireSkill=197})}),
+ach(7378,{sym={{"partial_achievement",7379}}}),
+ach(6830,{sym={{"partial_achievement",7379}}}),
+ach(6835,{sym={{"partial_achievement",7379}}}),
+ach(6836,{rwp=80001,g={
+crit(5696,{achID=6836,id=1,learnedAt=600,requireSkill=356}),
+crit(5592,{achID=6836,id=2,learnedAt=600,requireSkill=129}),
+crit(5701,{achID=6836,id=3,learnedAt=600,requireSkill=185}),
+crit(13812,{achID=6836,id=4,learnedAt=600,requireSkill=794})}})}})}),
+prof(171,{
+x(1,{awp=40300,requireSkill=171,sharedDescription="Requires 300 Classic Alchemy.",g={
+h(-45,{requireSkill=171,g={
+q(29481,{coords={
+[84]={{55.6,85.8}},
+[85]={{55.6,45.8}},
+[87]={{66.6,55}},
+[88]={{46.8,33.6}},
+[89]={{54,38.6}},
+[998]={{47.6,72.8}}},qgs={3009,3347,4160,4611,5177,5499},repeatable=1,requireSkill=171,g={
+r(28677,{requireSkill=28677})}}),
+q(29067,{coords={
+[84]={{55.6,85.8}},
+[85]={{55.6,45.8}},
+[87]={{66.6,55}},
+[88]={{46.8,33.6}},
+[89]={{54,38.6}},
+[998]={{47.6,72.8}}},qgs={3009,3347,4160,4611,5177,5499},repeatable=1,requireSkill=171,g={
+r(28675,{requireSkill=28675})}}),
+q(29482,{coords={
+[84]={{55.6,85.8}},
+[85]={{55.6,45.8}},
+[87]={{66.6,55}},
+[88]={{46.8,33.6}},
+[89]={{54,38.6}},
+[998]={{47.6,72.8}}},qgs={3009,3347,4160,4611,5177,5499},repeatable=1,requireSkill=171,g={
+r(28672,{requireSkill=28672})}})}})}}),
+x(2,{awp=20005,requireSkill=171,g={
+q(10906,{altQuests={10905,10907},coords={
+[100]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,lvl=68,nextQuests={10902},qgs={16588,18802},requireSkill=171,rwp=40300,u=2}),
+q(10902,{altQuests={10897,10899},coords={
+[111]={{45.8,20.4}}},cost={{"i",22831,5},{"i",28104,5},{"i",22834,5},{"i",31753,10}},description="Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",lvl=68,maps={273},qgs={19052},requireSkill=171,rwp=40300,sourceQuests={10906},u=2,g={
+r(28677,{requireSkill=28677})}}),
+q(10905,{altQuests={10906,10907},coords={
+[100]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,lvl=68,nextQuests={10897},qgs={16588,18802},requireSkill=171,rwp=40300,u=2}),
+q(10897,{altQuests={10899,10902},coords={
+[102]={{44.1,36.6}}},cost={{"i",22836,5},{"i",22832,5},{"i",22829,5}},description="Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",lvl=68,maps={266},qgs={17909},requireSkill=171,rwp=40300,sourceQuests={10905},u=2,g={
+qo(1,{crs={17975},providers={{"i",31744}},requireSkill=171}),
+r(28675,{requireSkill=28675})}}),
+q(10907,{altQuests={10905,10906},coords={
+[100]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,lvl=68,nextQuests={10899},qgs={16588,18802},requireSkill=171,rwp=40300,u=2}),
+q(10899,{altQuests={10897,10902},coords={
+[109]={{44.1,36.6}}},cost={{"i",23571,4}},description="Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",lvl=68,qgs={22427},requireSkill=171,rwp=40300,sourceQuests={10907},u=2,g={
+r(28672,{requireSkill=28672})}})}}),
+x(3,{awp=30200,requireSkill=171,g={
+q(14151,{coords={
+[125]={{42.4,32}}},qgs={28703},repeatable=1,requireSkill=171,u=32,g={
+r(66659,{learnedAt=440,requireSkill=171,u=32})}})}}),
+x(5,{awp=50004,requireSkill=171,g={
+q(30597,{cost={{"i",72238,3}},maps={424},providers={{"i",80240}},requireSkill=171,rwp=50200,u=2,g={
+i(80240,{b=1,lvl=85,q=3,requireSkill=171,u=2}),
+i(75274,{b=1,f=53,lvl=85,q=3,requireSkill=171,u=2})}})}})}),
 prof(164,{
 prof(9788,{description="These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",rwp=40001,sourceQuests={5283,5301},u=2,g={
 cat(220,{u=2,g={
@@ -370,10 +397,14 @@ r(36128,{learnedAt=260,requireSkill=9787,u=2}),
 r(36126,{learnedAt=260,requireSkill=9787,u=2})}})}}),
 x(1,{requireSkill=164,g={
 h(-45,{requireSkill=164,g={
-q(5283,{altQuests={5284,5301,5302},coords={{50.2,42.6,87}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={5164},r=2,requireSkill=164,rwp=40003,u=2}),
-q(5301,{altQuests={5283,5284,5302},coords={{79.8,23.8,85}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={11177},r=1,requireSkill=164,rwp=40003,u=2}),
-q(5284,{altQuests={5283,5301,5302},coords={{49.8,45,87}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11146},r=2,requireSkill=164,rwp=40003,u=2}),
-q(5302,{altQuests={5283,5284,5301},coords={{79.6,23.6,85}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11178},r=1,requireSkill=164,rwp=40003,u=2})}})}}),
+q(5283,{altQuests={5284,5301,5302},coords={
+[87]={{50.2,42.6}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={5164},r=2,requireSkill=164,rwp=40003,u=2}),
+q(5301,{altQuests={5283,5284,5302},coords={
+[85]={{79.8,23.8}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={11177},r=1,requireSkill=164,rwp=40003,u=2}),
+q(5284,{altQuests={5283,5301,5302},coords={
+[87]={{49.8,45}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11146},r=2,requireSkill=164,rwp=40003,u=2}),
+q(5302,{altQuests={5283,5284,5301},coords={
+[85]={{79.6,23.6}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11178},r=1,requireSkill=164,rwp=40003,u=2})}})}}),
 x(5,{requireSkill=164})}),
 prof(185,{
 h(-12,{requireSkill=185,g={
@@ -655,38 +686,61 @@ qo(1,{providers={{"i",85583}},requireSkill=185,u=50})}}),
 q(31336,{isDaily=1,maxReputation={1357,6},minReputation={1357,5},qgs={64337},requireSkill=185,u=50,g={
 qo(1,{providers={{"i",74851}},requireSkill=185,u=50})}})}})}}),
 h(-45,{requireSkill=185,u=50,g={
-q(31281,{coords={{53.6,51.2,376}},cost={{"i",86057,5}},qgs={64231},requireSkill=185,u=50}),
-q(31302,{coords={{53.6,51.2,376}},cost={{"i",86069,5}},qgs={64231},requireSkill=185,sourceQuests={31281},u=50}),
-q(31479,{coords={{53.6,51.2,376}},cost={{"i",74845,1}},qgs={64231},requireSkill=185,sourceQuests={31302},u=50,g={
+q(31281,{coords={
+[376]={{53.6,51.2}}},cost={{"i",86057,5}},qgs={64231},requireSkill=185,u=50}),
+q(31302,{coords={
+[376]={{53.6,51.2}}},cost={{"i",86069,5}},qgs={64231},requireSkill=185,sourceQuests={31281},u=50}),
+q(31479,{coords={
+[376]={{53.6,51.2}}},cost={{"i",74845,1}},qgs={64231},requireSkill=185,sourceQuests={31302},u=50,g={
 r(125589,{requireSkill=185,u=50})}}),
-q(31480,{coords={{53.2,52.2,376}},cost={{"i",75026,1}},qgs={58717},requireSkill=185,sourceQuests={31479},u=50}),
-q(31311,{coords={{53.6,51.2,376}},cost={{"i",74833,5}},qgs={64231},requireSkill=185,sourceQuests={31302},u=50,g={
+q(31480,{coords={
+[376]={{53.2,52.2}}},cost={{"i",75026,1}},qgs={58717},requireSkill=185,sourceQuests={31479},u=50}),
+q(31311,{coords={
+[376]={{53.6,51.2}}},cost={{"i",74833,5}},qgs={64231},requireSkill=185,sourceQuests={31302},u=50,g={
 r(124694,{requireSkill=185,u=50})}}),
-q(31467,{coords={{53,51.3,376}},cost={{"i",74642,5}},qgs={58712},requireSkill=185,sourceQuests={31311},u=50}),
-q(31478,{coords={{53.6,51.2,376}},cost={{"i",74839,5}},qgs={64231},requireSkill=185,sourceQuests={31302},u=50,g={
+q(31467,{coords={
+[376]={{53,51.3}}},cost={{"i",74642,5}},qgs={58712},requireSkill=185,sourceQuests={31311},u=50}),
+q(31478,{coords={
+[376]={{53.6,51.2}}},cost={{"i",74839,5}},qgs={64231},requireSkill=185,sourceQuests={31302},u=50,g={
 r(125588,{requireSkill=185,u=50})}}),
-q(31477,{coords={{53.4,51.6,376}},cost={{"i",74654,5}},qgs={58716},requireSkill=185,sourceQuests={31478},u=50}),
-q(31472,{coords={{53.6,51.2,376}},cost={{"i",74856,5}},qgs={64231},requireSkill=185,sourceQuests={31302},u=50,g={
+q(31477,{coords={
+[376]={{53.4,51.6}}},cost={{"i",74654,5}},qgs={58716},requireSkill=185,sourceQuests={31478},u=50}),
+q(31472,{coords={
+[376]={{53.6,51.2}}},cost={{"i",74856,5}},qgs={64231},requireSkill=185,sourceQuests={31302},u=50,g={
 r(125586,{requireSkill=185,u=50})}}),
-q(31474,{coords={{52.5,51.6,376}},cost={{"i",74644,5}},qgs={58714},requireSkill=185,sourceQuests={31472},u=50}),
-q(31475,{coords={{53.6,51.2,376}},cost={{"i",74857,5}},qgs={64231},requireSkill=185,sourceQuests={31302},u=50,g={
+q(31474,{coords={
+[376]={{52.5,51.6}}},cost={{"i",74644,5}},qgs={58714},requireSkill=185,sourceQuests={31472},u=50}),
+q(31475,{coords={
+[376]={{53.6,51.2}}},cost={{"i",74857,5}},qgs={64231},requireSkill=185,sourceQuests={31302},u=50,g={
 r(125587,{requireSkill=185,u=50})}}),
-q(31476,{coords={{52.5,51.7,376}},cost={{"i",74651,5}},qgs={58715},requireSkill=185,sourceQuests={31475},u=50}),
-q(31470,{coords={{53.6,51.2,376}},cost={{"i",74841,5}},qgs={64231},requireSkill=185,sourceQuests={31302},u=50,g={
+q(31476,{coords={
+[376]={{52.5,51.7}}},cost={{"i",74651,5}},qgs={58715},requireSkill=185,sourceQuests={31475},u=50}),
+q(31470,{coords={
+[376]={{53.6,51.2}}},cost={{"i",74841,5}},qgs={64231},requireSkill=185,sourceQuests={31302},u=50,g={
 r(125584,{requireSkill=185,u=50})}}),
-q(31471,{coords={{52.7,52,376}},cost={{"i",74643,5}},qgs={58713},requireSkill=185,sourceQuests={31470},u=50}),
-q(31536,{coords={{53.5,51.2,376}},cost={{"i",87658,1}},qgs={64395},requireSkill=185,sourceQuests={31467,31471,31474,31476,31477,31480},u=50}),
+q(31471,{coords={
+[376]={{52.7,52}}},cost={{"i",74643,5}},qgs={58713},requireSkill=185,sourceQuests={31470},u=50}),
+q(31536,{coords={
+[376]={{53.5,51.2}}},cost={{"i",87658,1}},qgs={64395},requireSkill=185,sourceQuests={31467,31471,31474,31476,31477,31480},u=50}),
 ah(145062,{awp=50400,requireSkill=185,type="s",u=54,g={
-q(33018,{coords={{52.1,46.5,554}},providers={{"o",221376}},requireSkill=185,sourceQuests={31467,31471,31474,31476,31477,31480},u=54}),
-q(33020,{coords={{41.2,73.4,554}},maps={429,430},qgs={72426},requireSkill=185,sourceQuests={33018},u=54}),
-q(33107,{coords={{68.8,58.4,429}},maps={430},modelScale=2,providers={{"o",221413}},requireSkill=185,sourceQuests={33020},u=54}),
-q(33021,{coords={{53.6,51.2,376}},qgs={64231},requireSkill=185,sourceQuests={33107},u=54}),
-q(33022,{coords={{53.6,51.2,376}},qgs={64231},requireSkill=185,sourceQuests={33021},u=54,g={
+q(33018,{coords={
+[554]={{52.1,46.5}}},providers={{"o",221376}},requireSkill=185,sourceQuests={31467,31471,31474,31476,31477,31480},u=54}),
+q(33020,{coords={
+[554]={{41.2,73.4}}},maps={429,430},qgs={72426},requireSkill=185,sourceQuests={33018},u=54}),
+q(33107,{coords={
+[429]={{68.8,58.4}}},maps={430},modelScale=2,providers={{"o",221413}},requireSkill=185,sourceQuests={33020},u=54}),
+q(33021,{coords={
+[376]={{53.6,51.2}}},qgs={64231},requireSkill=185,sourceQuests={33107},u=54}),
+q(33022,{coords={
+[376]={{53.6,51.2}}},qgs={64231},requireSkill=185,sourceQuests={33021},u=54,g={
 r(145038,{learnedAt=600,requireSkill=185,u=54})}}),
-q(33024,{coords={{53.6,51.2,376}},cost={{"i",101661,1}},maps={439,440,441,442},qgs={64231},requireSkill=185,sourceQuests={33022},u=54,g={
+q(33024,{coords={
+[376]={{53.6,51.2}}},cost={{"i",101661,1}},maps={439,440,441,442},qgs={64231},requireSkill=185,sourceQuests={33022},u=54,g={
 r(145061,{learnedAt=600,requireSkill=185,u=54})}}),
-q(33026,{coords={{53.6,51.2,376}},cost={{"i",101661,1}},qgs={64231},requireSkill=185,sourceQuests={33024},u=54}),
-q(33027,{coords={{53.6,51.2,376}},qgs={64231},requireSkill=185,sourceQuests={33026},u=54,g={
+q(33026,{coords={
+[376]={{53.6,51.2}}},cost={{"i",101661,1}},qgs={64231},requireSkill=185,sourceQuests={33024},u=54}),
+q(33027,{coords={
+[376]={{53.6,51.2}}},qgs={64231},requireSkill=185,sourceQuests={33026},u=54,g={
 r(145062,{learnedAt=600,requireSkill=185,u=54})}})}})}})}})}),
 prof(333,{
 h(-12,{requireSkill=333})}),
@@ -719,9 +773,11 @@ r(127139,{learnedAt=600,requireSkill=20219})}}),
 cat(183,{
 r(12895,{learnedAt=205,requireSkill=20219})}),
 h(-45,{
-q(3645,{coords={{28.2,76.2,224}},cost=20000,lvl=30,qgs={7406},r=1,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3643},u=2,g={
+q(3645,{coords={
+[224]={{28.2,76.2}}},cost=20000,lvl=30,qgs={7406},r=1,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3643},u=2,g={
 i(10790,{b=1,u=2})}}),
-q(3647,{coords={{69.8,50.2,87}},cost=20000,lvl=30,qgs={7944},r=2,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3641},u=2,g={
+q(3647,{coords={
+[87]={{69.8,50.2}}},cost=20000,lvl=30,qgs={7944},r=2,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3641},u=2,g={
 i(10790,{b=1,u=2})}})}),
 h(-47,{
 i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",q=1,rwp=40003,u=2,g={
@@ -757,9 +813,11 @@ r(127138,{learnedAt=600,requireSkill=20222})}}),
 cat(183,{
 r(12715,{learnedAt=205,requireSkill=20222})}),
 h(-45,{
-q(3644,{coords={{54.4,27.2,71}},cost=20000,description="Requires 200 Engineering to start this quest.",lvl=30,qgs={8126},repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3639},u=2,g={
+q(3644,{coords={
+[71]={{54.4,27.2}}},cost=20000,description="Requires 200 Engineering to start this quest.",lvl=30,qgs={8126},repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3639},u=2,g={
 i(10791,{b=1,u=2})}}),
-q(3646,{coords={{62.6,36.2,10}},cost=20000,description="Requires 200 Engineering to start this quest.",lvl=30,qgs={8738},repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3639},u=2,g={
+q(3646,{coords={
+[10]={{62.6,36.2}}},cost=20000,description="Requires 200 Engineering to start this quest.",lvl=30,qgs={8738},repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3639},u=2,g={
 i(10791,{b=1,u=2})}})}),
 h(-47,{
 i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",q=1,rwp=40003,u=2,g={
@@ -768,17 +826,34 @@ r(3972,{itemID=4417,learnedAt=200,q=2,requireSkill=202,u=2}),
 r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=202,u=2})}})})}}),
 x(1,{requireSkill=202,g={
 h(-45,{requireSkill=202,g={
-q(3634,{altQuests={3526,3629,3630,3632,3633,3635,3637,4181,29475,29477},coords={{62.6,36.2,10}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=2,requireSkill=202,rwp=40003,u=2}),
-q(3630,{altQuests={3526,3629,3632,3633,3634,3635,3637,4181,29475,29477},coords={{55,8.6,84}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5518},r=2,requireSkill=202,rwp=40003,u=2}),
-q(3632,{altQuests={3526,3629,3630,3633,3634,3635,3637,4181,29475,29477},coords={{68.8,45.2,87}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5174},r=2,requireSkill=202,rwp=40003,u=2}),
-q(3637,{altQuests={3526,3629,3630,3632,3633,3634,3635,4181,29475,29477},coords={{62.6,36.2,10}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=1,requireSkill=202,rwp=40003,u=2}),
-q(3635,{altQuests={3526,3629,3630,3632,3633,3634,3637,4181,29475,29477},coords={{75.6,74.6,998}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={4586},r=1,requireSkill=202,rwp=40003,u=2}),
-q(29477,{altQuests={3526,3629,3630,3632,3633,3634,3635,3637,4181,29475},awp=40300,coords={{62.8,32,84},{56.8,56.4,85},{68.8,45.2,87},{36.8,59.6,88}},cost={{"i",4407,1},{"i",4392,2},{"i",10559,6}},learnedAt=200,qgs={5174,5518,11017,52651},repeatable=1,requireSkill=202}),
-q(3629,{altQuests={3526,3630,3632,3633,3634,3635,3637,4181,29475,29477},coords={{55,8.6,84}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5518},r=2,requireSkill=202,rwp=40003,u=2}),
-q(4181,{altQuests={3526,3629,3630,3632,3633,3634,3635,3637,29475,29477},coords={{68.8,45.2,87}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5174},r=2,requireSkill=202,rwp=40003,u=2}),
-q(3633,{altQuests={3526,3629,3630,3632,3634,3635,3637,4181,29475,29477},coords={{62.6,36.2,10}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=1,requireSkill=202,rwp=40003,u=2}),
-q(3526,{altQuests={3629,3630,3632,3633,3634,3635,3637,4181,29475,29477},coords={{75.6,74.6,998}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={4586},r=1,requireSkill=202,rwp=40003,u=2}),
-q(29475,{altQuests={3526,3629,3630,3632,3633,3634,3635,3637,4181,29477},awp=40300,coords={{62.8,32,84},{56.8,56.4,85},{68.8,45.2,87},{36.8,59.6,88}},cost={{"i",4384,5},{"i",10507,20},{"i",4394,20}},learnedAt=200,qgs={5174,5518,11017,52651},repeatable=1,requireSkill=202})}})}}),
+q(3634,{altQuests={3526,3629,3630,3632,3633,3635,3637,4181,29475,29477},coords={
+[10]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=2,requireSkill=202,rwp=40003,u=2}),
+q(3630,{altQuests={3526,3629,3632,3633,3634,3635,3637,4181,29475,29477},coords={
+[84]={{55,8.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5518},r=2,requireSkill=202,rwp=40003,u=2}),
+q(3632,{altQuests={3526,3629,3630,3633,3634,3635,3637,4181,29475,29477},coords={
+[87]={{68.8,45.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5174},r=2,requireSkill=202,rwp=40003,u=2}),
+q(3637,{altQuests={3526,3629,3630,3632,3633,3634,3635,4181,29475,29477},coords={
+[10]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=1,requireSkill=202,rwp=40003,u=2}),
+q(3635,{altQuests={3526,3629,3630,3632,3633,3634,3637,4181,29475,29477},coords={
+[998]={{75.6,74.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={4586},r=1,requireSkill=202,rwp=40003,u=2}),
+q(29477,{altQuests={3526,3629,3630,3632,3633,3634,3635,3637,4181,29475},awp=40300,coords={
+[84]={{62.8,32}},
+[85]={{56.8,56.4}},
+[87]={{68.8,45.2}},
+[88]={{36.8,59.6}}},cost={{"i",4407,1},{"i",4392,2},{"i",10559,6}},learnedAt=200,qgs={5174,5518,11017,52651},repeatable=1,requireSkill=202}),
+q(3629,{altQuests={3526,3630,3632,3633,3634,3635,3637,4181,29475,29477},coords={
+[84]={{55,8.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5518},r=2,requireSkill=202,rwp=40003,u=2}),
+q(4181,{altQuests={3526,3629,3630,3632,3633,3634,3635,3637,29475,29477},coords={
+[87]={{68.8,45.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5174},r=2,requireSkill=202,rwp=40003,u=2}),
+q(3633,{altQuests={3526,3629,3630,3632,3634,3635,3637,4181,29475,29477},coords={
+[10]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=1,requireSkill=202,rwp=40003,u=2}),
+q(3526,{altQuests={3629,3630,3632,3633,3634,3635,3637,4181,29475,29477},coords={
+[998]={{75.6,74.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={4586},r=1,requireSkill=202,rwp=40003,u=2}),
+q(29475,{altQuests={3526,3629,3630,3632,3633,3634,3635,3637,4181,29477},awp=40300,coords={
+[84]={{62.8,32}},
+[85]={{56.8,56.4}},
+[87]={{68.8,45.2}},
+[88]={{36.8,59.6}}},cost={{"i",4384,5},{"i",10507,20},{"i",4394,20}},learnedAt=200,qgs={5174,5518,11017,52651},repeatable=1,requireSkill=202})}})}}),
 x(4,{requireSkill=202}),
 x(5,{requireSkill=202})}),
 prof(129,{rwp=80001,g={
@@ -2761,12 +2836,18 @@ r(35588,{learnedAt=375,requireSkill=10660,u=2})}}),
 cat(935,{u=2,g={
 r(35587,{learnedAt=375,requireSkill=165,u=2})}})}}),
 h(-45,{lvl=40,requireSkill=165,rwp=40003,u=2,g={
-q(5141,{altQuests={5143,5144},coords={{37.4,65.4,76}},cost={{"i",8165,10},{"i",8204,2},{"i",8203,2}},learnedAt=225,lvl=40,qgs={7866},r=2,requireSkill=165,u=2}),
-q(5145,{altQuests={5146,5148},coords={{62.6,57.4,15}},cost={{"i",8165,10},{"i",8204,2},{"i",8203,2}},learnedAt=225,lvl=40,qgs={7867},r=1,requireSkill=165,u=2}),
-q(5144,{altQuests={5141,5143},coords={{63.6,76,32}},cost={{"i",7077,2},{"i",7079,2},{"i",7075,2},{"i",7081,2}},learnedAt=225,lvl=40,qgs={7868},r=2,requireSkill=165,u=2}),
-q(5146,{altQuests={5145,5148},coords={{28.2,45,14}},cost={{"i",7077,2},{"i",7079,2},{"i",7075,2},{"i",7081,2}},learnedAt=225,lvl=40,qgs={7869},r=1,requireSkill=165,u=2}),
-q(5143,{altQuests={5141,5144},coords={{89.4,46.5,69}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7870},r=2,requireSkill=165,sourceQuests={2853},u=2}),
-q(5148,{altQuests={5145,5146},coords={{36.6,34.2,224}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7871},r=1,requireSkill=165,sourceQuests={2860},u=2})}})}}),
+q(5141,{altQuests={5143,5144},coords={
+[76]={{37.4,65.4}}},cost={{"i",8165,10},{"i",8204,2},{"i",8203,2}},learnedAt=225,lvl=40,qgs={7866},r=2,requireSkill=165,u=2}),
+q(5145,{altQuests={5146,5148},coords={
+[15]={{62.6,57.4}}},cost={{"i",8165,10},{"i",8204,2},{"i",8203,2}},learnedAt=225,lvl=40,qgs={7867},r=1,requireSkill=165,u=2}),
+q(5144,{altQuests={5141,5143},coords={
+[32]={{63.6,76}}},cost={{"i",7077,2},{"i",7079,2},{"i",7075,2},{"i",7081,2}},learnedAt=225,lvl=40,qgs={7868},r=2,requireSkill=165,u=2}),
+q(5146,{altQuests={5145,5148},coords={
+[14]={{28.2,45}}},cost={{"i",7077,2},{"i",7079,2},{"i",7075,2},{"i",7081,2}},learnedAt=225,lvl=40,qgs={7869},r=1,requireSkill=165,u=2}),
+q(5143,{altQuests={5141,5144},coords={
+[69]={{89.4,46.5}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7870},r=2,requireSkill=165,sourceQuests={2853},u=2}),
+q(5148,{altQuests={5145,5146},coords={
+[224]={{36.6,34.2}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7871},r=1,requireSkill=165,sourceQuests={2860},u=2})}})}}),
 x(2,{requireSkill=165})}),
 prof(633,{description="Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",OnUpdate=function(t)t.DontEnforceSkillRequirements=true;end,g={
 r(1804,{c={4}}),
@@ -2797,19 +2878,24 @@ prof(393),
 prof(197,{
 x(2,{awp=20005,requireSkill=197,u=17,g={
 h(-45,{requireSkill=197,rwp=40003,u=2,g={
-q(10831,{altQuests={10832,10833},coords={{66.5,69.3,111}},description="Upon finishing this quest, you will become a Mooncloth Tailor.",lvl=60,maps={102},qgs={22208},requireSkill=197,u=2,g={
-qo(1,{coords={{80,65,102}},cost={{"i",31525,1},{"i",31524,1}},providers={{"i",31530}},requireSkill=197,u=2}),
+q(10831,{altQuests={10832,10833},coords={
+[111]={{66.5,69.3}}},description="Upon finishing this quest, you will become a Mooncloth Tailor.",lvl=60,maps={102},qgs={22208},requireSkill=197,u=2,g={
+qo(1,{coords={
+[102]={{80,65}}},cost={{"i",31525,1},{"i",31524,1}},providers={{"i",31530}},requireSkill=197,u=2}),
 r(26798,{requireSkill=197,u=2}),
 i(31522,{q=1,requireSkill=197,u=2,g={
 i(31524,{q=1,requireSkill=197,u=2}),
 i(31525,{q=1,requireSkill=197,u=2})}})}}),
-q(10833,{altQuests={10831,10832},coords={{66.6,68.2,111}},description="Upon finishing this quest, you will become a Shadoweave Tailor.",lvl=60,maps={104},qgs={22212},requireSkill=197,u=2,g={
-qo(1,{coords={{58,71,104}},providers={{"i",31736}},requireSkill=197,u=2}),
+q(10833,{altQuests={10831,10832},coords={
+[111]={{66.6,68.2}}},description="Upon finishing this quest, you will become a Shadoweave Tailor.",lvl=60,maps={104},qgs={22212},requireSkill=197,u=2,g={
+qo(1,{coords={
+[104]={{58,71}}},providers={{"i",31736}},requireSkill=197,u=2}),
 r(26801,{requireSkill=197,u=2})}}),
-q(10832,{altQuests={10831,10833},coords={{66.6,68.4,111}},description="Upon finishing this quest, you will become a Spellfire Tailor.",lvl=60,maps={109},qgs={22213},requireSkill=197,u=2,g={
+q(10832,{altQuests={10831,10833},coords={
+[111]={{66.6,68.4}}},description="Upon finishing this quest, you will become a Spellfire Tailor.",lvl=60,maps={109},qgs={22213},requireSkill=197,u=2,g={
 qo(1,{cost={{"i",31742,1}},crs={22408},providers={{"i",31741}},requireSkill=197,u=2}),
 r(26797,{requireSkill=197,u=2})}})}})}}),
 x(3,{requireSkill=197}),
 x(4,{awp=40003,requireSkill=197,g={
-h(-12,{requireSkill=197})}})})};
+h(-12,{requireSkill=197})}})})}});
 end);

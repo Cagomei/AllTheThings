@@ -146,7 +146,6 @@ L.CHANNEL_DIALOG = DIALOG_VOLUME;
 L.CHANNEL_MASTER = MASTER;
 L.CHANNEL_MUSIC = MUSIC_VOLUME;
 L.CHANNEL_SFX = FX_VOLUME;
-L.CHARACTERS = CHARACTER;
 L.CHARACTERUNLOCKS_CHECKBOX = "Character Unlocks";
 L.CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Enable this option to track Character Unlocks. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.";
 L.CHAT_COMMANDS_LABEL = "Chat Commands";
@@ -843,7 +842,6 @@ L.TOYS_CHECKBOX_TOOLTIP = "Enable this option to track Toys.\n\nMost of these to
 L.TRACK_ACC_WIDE = "|c" .. _.DefaultColors.Account .. "Track Account-Wide|r";
 L.TRACKING_PROGRESS = "Tracking Progress";
 L.TRADEABLE = "Tradeable";
-L.TRADING_POST = "Trading Post";
 L.TSM_WARNING_1 = "Running this command can potentially destroy your existing TSM settings by reassigning items to the ";
 L.TSM_WARNING_2 = " preset.\n\nWe recommend that you use a different profile when using this feature.\n\nDo you want to proceed anyways?";
 L.TSM4_ERROR = "TSM4 is not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!";
@@ -963,6 +961,7 @@ _.HeaderConstants = {
 	BUILDINGS = -115,
 	CALL_OF_THE_SCARAB_HEADER = -558,
 	CHALLENGE_APPEARANCE = -134,
+	CHARACTER = -731,
 	CHEST = -90,
 	CHETT = -410,
 	CHILDRENS_WEEK_HEADER = -559,
@@ -980,10 +979,13 @@ _.HeaderConstants = {
 	DISCOVERY = -26,
 	DRAGONRIDING_CUP_HEADER = -567,
 	DROPS = -27,
+	DUNGEON_FINDER = -733,
 	DUNGEONS = -76,
+	DUNGEONS_AND_RAIDS = -75,
 	EASTERN_KINGDOMS_CUP_HEADER = -569,
 	EMISSARY_QUESTS = -28,
 	EVENT_COMPLETION = -29,
+	EXPANSION_FEATURES = -735,
 	EXPANSION_PRELAUNCH = -103,
 	EXPLORATION = -30,
 	FACTIONS = -31,
@@ -1017,6 +1019,7 @@ _.HeaderConstants = {
 	MOUNT_MODS = -41,
 	NOBLEGARDEN_HEADER = -583,
 	NORTHREND_CUP_HEADER = -571,
+	OUTDOOR_ZONES = -732,
 	OUTLAND_CUP_HEADER = -572,
 	PET_BATTLES = -43,
 	PILGRIMS_BOUNTY_HEADER = -584,
@@ -1024,6 +1027,7 @@ _.HeaderConstants = {
 	PRESTIGE = -302,
 	PRESTIGE_REWARDS = -137,
 	PROFESSIONS = -44,
+	PROMOTIONS = -736,
 	PVP = -303,
 	PVP_COMBATANT = -294,
 	PVP_GLADIATOR = -296,
@@ -1047,6 +1051,7 @@ _.HeaderConstants = {
 	THE_GREAT_GNOMEREGAN_RUN_HEADER = -589,
 	THOUSAND_BOAT_BASH_HEADER = -590,
 	TIER_14_RAIDS = -478,
+	TRADING_POST_CATEGORY = -230,
 	TREASURES = -56,
 	TRIAL_OF_STYLE_HEADER = -38,
 	UI_BOUNTY_WINDOW = -343,
@@ -1063,6 +1068,7 @@ _.HeaderConstants = {
 	WORK_ORDERS = -131,
 	WORLD_BOSSES = -61,
 	WORLD_DROPS = -698,
+	WORLD_EVENTS = -734,
 	WORLD_QUESTS = -62,
 	ZONE_DROPS = -63,
 	ZONE_REWARDS = -64,
@@ -1137,6 +1143,7 @@ localize(L.HEADER_NAMES, {
 	[-68] = PLAYER_DIFFICULTY_MYTHIC_PLUS,
 	[-70] = "Timewalking Dungeon Event",
 	[-74] = "Dragons of Nightmare",
+	[-75] = GROUP_FINDER,
 	[-76] = DUNGEONS,
 	[-77] = RAIDS,
 	[-78] = DUNGEON_FLOOR_NAXXRAMAS2,
@@ -1259,6 +1266,7 @@ localize(L.HEADER_NAMES, {
 	[-227] = ITEM_QUALITY2_DESC,
 	[-228] = "Warforged",
 	[-229] = "Source IDs",
+	[-230] = TRANSMOG_SOURCE_7,
 	[-232] = "Patch 1.x.x",
 	[-235] = "Patch 2.x.x",
 	[-236] = "Patch 3.x.x",
@@ -1621,6 +1629,7 @@ localize(L.HEADER_NAMES, {
 	[-607] = select(2,GetAchievementInfo(15218)),
 	[-608] = select(2,GetAchievementInfo(18702)),
 	[-609] = select(2,GetAchievementInfo(41220)),
+	[-610] = "Crieve's Never Implemented List",
 	[-649] = "Wave 6 Boss",
 	[-650] = "Wave 12 Boss",
 	[-651] = "Final Wave Boss",
@@ -1668,6 +1677,13 @@ localize(L.HEADER_NAMES, {
 	[-722] = "Diablo II: Resurrected - Reign of Warlock",
 	[-723] = "Elemental Invasions",
 	[-729] = "Abundance",
+	[-730] = "Abyss Anglers",
+	[-731] = CHARACTER,
+	[-732] = BUG_CATEGORY2,
+	[-733] = DUNGEONS_BUTTON,
+	[-734] = BATTLE_PET_SOURCE_7,
+	[-735] = GetCategoryInfo(15301),
+	[-736] = BATTLE_PET_SOURCE_8,
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -1765,6 +1781,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-565] = "Hello, fight fans. The world's meanest villains are teamed up and back for revenge! Meet in Stormwind, Orgrimmar or Dornogal to fight against villainous bosses from Azeroth's past.",
 	[-591] = "The festival is held only on Sunday night from 9 PM to 11 PM (PST(US)/CEST(EU)/AEST(OCE). During the festival, floating lanterns appear on the surface of the water and Pandaren NPCs wander onto the beach to set up bonfires and shoot off fireworks. Shortly after, the Wanderer's Festival Hatchlings appear.",
 	[-592] = "This is a yearly recurring event that occurs between the beginning of November and the end of the year.",
+	[-610] = "If the following are sorted somewhere, please delete them from this list. Thanks.",
 	[-652] = "The Zandalari Incursions into the main land of Pandaria began with the release of the Isle of Thunder. Warbringers can be found all around the continent with varying degrees of challenging solo mechanics and available mounts! Farm these with friends.",
 	[-654] = "The following goods can be harvested by planting seeds in Tilled Soil at Sunsong Ranch. You will earn Tillers reputation for harvesting crops and a chance to obtain replacement seeds from the crop.\n\nFUN FACT: Priests may cast Levitate on their crops, making them float.",
 	[-659] = "Engage Sartharion with at least 1 of the 3 drakes alive and then defeat Sartharion.",
@@ -1781,6 +1798,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-721] = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.",
 	[-722] = "Granted to owners of Diablo II: Resurrected - Reign of Warlock.",
 	[-723] = "Reports of elemental incursions in different parts of Kalimdor are increasing. Every few days, a new wave of elementals blasts its way into the regions of Silithus, Un'Goro Crater, Azshara, and Winterspring - ostensibly, for the sole reason of seeing just how far into these territories they can penetrate before being beaten back by the forces of the Horde or the Alliance. Investigate these regions and aid your allies in countering these mysterious invasions.",
+	[-735] = "This section is for systems introduced during an expansion that involve several zones.\nIf an expansion feature is exclusive to a single zone, then it can be found within that zone in ATT, otherwise for the sake of reducing database duplication and bloat, it can be found below.",
+	[-736] = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1857,6 +1876,7 @@ localize(L.HEADER_ICONS, {
 	[-68] = 525134,
 	[-70] = _.asset("difficulty_timewalking"),
 	[-74] = 134157,
+	[-75] = _.asset("category_d&r"),
 	[-76] = _.asset("category_d&r"),
 	[-77] = _.asset("category_d&r"),
 	[-78] = 135442,
@@ -1969,6 +1989,7 @@ localize(L.HEADER_ICONS, {
 	[-227] = 135024,
 	[-228] = 450907,
 	[-229] = 134400,
+	[-230] = _.asset("category_tradingpost"),
 	[-232] = _.asset("expansion_classic"),
 	[-235] = _.asset("expansion_tbc"),
 	[-236] = _.asset("expansion_wotlk"),
@@ -2324,6 +2345,7 @@ localize(L.HEADER_ICONS, {
 	[-607] = 133783,
 	[-608] = 133783,
 	[-609] = 133783,
+	[-610] = 132738,
 	[-649] = 135442,
 	[-650] = 236271,
 	[-651] = 135771,
@@ -2367,6 +2389,13 @@ localize(L.HEADER_ICONS, {
 	[-722] = 1529348,
 	[-723] = 538566,
 	[-729] = 237556,
+	[-730] = 2027958,
+	[-731] = _.asset("category_itemsets"),
+	[-732] = _.asset("category_zones"),
+	[-733] = _.asset("category_groupfinder"),
+	[-734] = _.asset("category_event"),
+	[-735] = _.asset("category_expansionfeatures"),
+	[-736] = _.asset("category_promo"),
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -2578,7 +2607,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=15,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=2,["monthDay"]=15,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=22,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=2,["monthDay"]=22,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=3,["monthDay"]=1,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=3,["monthDay"]=1,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=3,["monthDay"]=8,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=3,["monthDay"]=8,["weekday"]=1,["year"]=2026}),
@@ -2630,7 +2658,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=24,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=24,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=1,["monthDay"]=31,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=1,["monthDay"]=31,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=7,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=2,["monthDay"]=7,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=14,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=2,["monthDay"]=14,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=14,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=2,["monthDay"]=14,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=2,["monthDay"]=21,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=2,["monthDay"]=21,["weekday"]=1,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -21235,6 +21264,7 @@ L.QUEST_NAMES = {
 	[5711] = "<NYI> The Lost Ways",
 	[5712] = "<NYI> The Lost Ways",
 	[6003] = "<nyi> <txt> Green With Envy",
+	[6131] = "Timbermaw Ally (old version, deprecated)",
 	[6165] = "<NYI> <TXT> Archmage Timolain's Remains",
 	[6201] = "<UNUSED> The Legacy of the Ashbringer",
 	[6202] = "<UNUSED> Good and Evil",
@@ -24677,6 +24707,7 @@ L.QUEST_NAMES = {
 	[92627] = "An Arrested Development",
 	[92651] = "Deathless Attempt Finished",
 	[93399] = "We are all frustrated, Danath.",
+	[93466] = "Increased Spring Butterfly Droprate (Daily Accountwide)",
 	[93916] = "Sealing Orb unlocked.",
 	[93917] = "Sealing Orb unlocked.",
 	[93918] = "Sealing Orb unlocked.",
@@ -25218,7 +25249,6 @@ L.TOP_ROW_TO_UNLOCK = "|cffcf0000" .. ALT_KEY_TEXT .. " Klick um das Fenster fre
 L.TOY_DESC = "Klick diesen Knopf um ein zufälliges Spielzeug auszuwählen, das Euch noch fehlt.";
 L.TRACKING_PROGRESS = "Fortschrittsverfolgung";
 L.TRADEABLE = "Handelbar";
-L.TRADING_POST = "Handelsposten";
 L.TSM_WARNING_1 = "Diesen Befehl auszuführen kann möglicherweise Ihre bestehenden TSM Einstellungen zerstören, indem es sich in die ";
 L.TSM_WARNING_2 = " Voreinstellung zurücksetzt.\n\nWir empfehlen das Sie ein anderes Profil für diese Funktion benutzen.\n\nMöchten Sie trotzdem fortfahren?";
 L.TSM4_ERROR = "TSM4 is noch nicht kompatibel mit ATT. Wenn Sie wissen wie mann Presets kreiert so wie wir es mit TSM3 gemacht haben, bitte nehmem Sie Kontakt auf mit Crieve durch Discord.";
@@ -32460,7 +32490,6 @@ L.TOP_ROW_TO_UNLOCK = "|cffcf0000" .. ALT_KEY_TEXT .. " + clic pour débloquer c
 L.TOY_DESC = "Cliquez sur ce bouton pour sélectionner un jouet aléatoire basé sur ce qu’il vous manque.";
 L.TRACKING_PROGRESS = "Suivi des progrès";
 L.TRADEABLE = "Échangeable";
-L.TRADING_POST = "Comptoir";
 L.UNCHECK_ALL_BUTTON_TOOLTIP = "Cliquez sur ce bouton pour désactiver toutes les options en même temps.";
 L.UNOBTAINABLE_LABEL = "Contenu inaccessible";
 L.UNOBTAINABLES_PAGE = "Inaccessibles";
@@ -39454,7 +39483,6 @@ L.REQUIRES = "Richiede";
 L.RUNEFORGELEGENDARIES_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Abilità dell'Incisione Runica";
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Condotti";
 L.TITLES_CHECKBOX = "Titoli";
-L.TRADING_POST = "Emporio";
 localize(_.CategoryNames, {
 	[3] = "Mazzo di Tarocchi",
 	[104] = "Tinta",
@@ -45703,7 +45731,6 @@ L.TITLE_UNIQUE_APPEARANCE = "Única ";
 L.TITLES_CHECKBOX = "Títulos";
 L.TOM_TOM_NOT_FOUND = "Você precisa ter TomTom instalado para exibir as coordenadas.";
 L.TRACKING_PROGRESS = "Rastreando Progresso";
-L.TRADING_POST = "Posto Comercial";
 L.VISIT_FLIGHT_MASTER = "Visite o Mestre de Voo para registrar.";
 L.WRONG_FACTION = "Você precisa ser de outra facção para visualizar isso.";
 localize(_.CategoryNames, {
@@ -52981,7 +53008,6 @@ L.TOY_DESC = "Нажмите эту кнопку для выбора случа�
 L.TOYS_CHECKBOX_TOOLTIP = "Включите для отслеживания игрушек.\n\nБольшинство из них имеют забавные эффекты. Другие же, как игрушечные Камни возвращения, могут быть использованы вместо обычного Камня возвращения и сохранить Вам место в сумке! Они также имеют интересные эффекты ... Здорово!";
 L.TRACK_ACC_WIDE = "|c" .. _.DefaultColors.Account .. "Отслеживать на весь аккаунт|r";
 L.TRACKING_PROGRESS = "Отслеживание выполнения";
-L.TRADING_POST = "Торговая лавка";
 L.TSM_WARNING_1 = "Использование данной команды может сломать Ваши существующие настройки TSM при перераспределении предметов к ";
 L.TSM_WARNING_2 = " группе.\n\nМы рекомендуем, чтобы Вы использовали другой профиль для данной функции.\n\nХотите продолжить в любом случае?";
 L.TSM4_ERROR = "TSM4 пока что не совместим с ATT. Если Вы знаете, как создавать Группы, как мы делали это в TSM3, пожалуйста, свяжитесь с Crieve в Дискорде!";
@@ -60141,7 +60167,6 @@ L.REQUIRES = "필요 전문화";
 L.RUNEFORGELEGENDARIES_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 룬조각 능력";
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 도관";
 L.TITLES_CHECKBOX = "칭호";
-L.TRADING_POST = "교역소";
 localize(_.CategoryNames, {
 	[3] = "카드 묶음",
 	[104] = "잉크",
@@ -67021,7 +67046,6 @@ L.TOYS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar juguetes.\n\nLa mayo
 L.TRACK_ACC_WIDE = "|c" .. _.DefaultColors.Account .. "Rastrear para toda la cuenta|r";
 L.TRACKING_PROGRESS = "Rastreando progreso";
 L.TRADEABLE = "Comerciable";
-L.TRADING_POST = "Puesto Comercial";
 L.TSM_WARNING_1 = "Ejecutar este comando puede destruir potencialmente su configuración TSM existente al reasignar elementos a la ";
 L.TSM_WARNING_2 = " preestablecido.\n\nLe recomendamos que utilice un perfil diferente al usar esta función.\n\n¿Desea continuar de todos modos?";
 L.TSM4_ERROR = "TSM4 aún no es compatible con ATT. Si sabes cómo crear presets como en TSM3, ¡Susurrale a Crieve en Discord!";
@@ -74232,7 +74256,6 @@ L.TOP_ROW_TO_UNLOCK = "|cffcf0000" .. ALT_KEY_TEXT .. " + click para desbloquear
 L.TOY_DESC = "Haz click en este botón para seleccionar un juguete aleatorio basado en lo que te falta.";
 L.TOY_ID = "ID del Juguete";
 L.TOYS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar juguetes.\n\nLa mayoría de juguetes hacen algo divertido. Otros, como los juguetes de Piedra de Hogar, pueden usarse en vez de tu Piedra de Hogar y ahorrarte un hueco en tus bolsas! También tienen efectos interesantes ... Genial!";
-L.TRADING_POST = "Puesto de venta";
 L.TWITCH_BUTTON_TOOLTIP = "Haz click en este botón para copiar el enlace a mi canal de Twitch.\n\n¡Puedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda!";
 L.UNCHECK_ALL_BUTTON_TOOLTIP = "Haz click en este botón para desactivar todas las opciones a la vez.";
 L.UNOBTAINABLE_LABEL = "Contenido no obtenible";
@@ -75330,7 +75353,6 @@ L.TOYS_CHECKBOX_TOOLTIP = "启用此选项可追踪玩具。\n\n这些玩具中�
 L.TRACK_ACC_WIDE = "|c" .. _.DefaultColors.Account .. "追踪 账号通用|r";
 L.TRACKING_PROGRESS = "追踪进度";
 L.TRADEABLE = "可交易";
-L.TRADING_POST = "商栈";
 L.TSM_WARNING_1 = "运行此命令可能会通过将物品重新分配到 ";
 L.TSM_WARNING_2 = " 预设。\n\n我们建议你在使用此功能时使用不同的配置文件。\n\n你还想继续吗?";
 L.TSM4_ERROR = "TSM4 尚未与 ATT 兼容。如果你知道如何像我们以前在 TSM3 中那样创建预设，请在 Discord 上告诉我！";
@@ -82299,7 +82321,6 @@ L.TOY_DESC = "點擊此按鈕可依據缺少的內容選擇隨機玩具。";
 L.TOYS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤玩具。\n\n這些玩具中的大多數玩具都有趣。其他的，如爐石玩具，可以用來代替你的初始爐石，並可以為你節省一個背包！他們也有有趣的效果…很好！";
 L.TRACK_ACC_WIDE = "|c" .. _.DefaultColors.Account .. "追蹤 帳號共通|r";
 L.TRACKING_PROGRESS = "追蹤進度";
-L.TRADING_POST = "貿易站";
 L.TSM_WARNING_1 = "執行此命令可能會通過將物品重新分配到 ";
 L.TSM_WARNING_2 = " 預設。\n\n我們建議你在使用此功能時使用不同的設定檔。\n\n你還想繼續嗎?";
 L.TSM4_ERROR = "TSM4 尚未與 ATT 相容。如果你知道如何像我們以前在 TSM3 中那樣創建預設，請在 Discord 上告訴我！";

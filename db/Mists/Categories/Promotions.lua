@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,crit,flt,h,i,mnt,p,q,s,settings,toy,x=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.Settings,_.CreateToy,_.CreateExpansion;
-categories.Promotions={
+categories.Promotions=
+h(-736,{SortPriority=90,g={
 h(-520,{
 ach(411,{awp=30002,providers={{"i",20371}},u=2}),
 p(107,{awp=11101,b=1,itemID=20371,npcID=15186,q=3,spellID=24696,u=2}),
@@ -19,21 +20,28 @@ p(329,{awp=40200,b=1,itemID=71726,npcID=54438,q=3,spellID=101606,u=2}),
 ach(8793,{awp=50402,providers={{"i",106244}},u=2}),
 p(1364,{awp=50402,b=1,itemID=106244,npcID=74405,q=3,spellID=149792,u=2})}),
 x(2,{u=3,g={
-q(63768,{altQuests={63767},coords={{42.6,71.6,210}},crs={5111,6735,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
+q(63768,{altQuests={63767},coords={
+[210]={{42.6,71.6}}},crs={5111,6735,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
 toy(32542,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 5th May 2021 until 5th Nov 2022.",q=3,u=3})}}),
-q(65285,{altQuests={65284},coords={{42.6,71.6,210}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
+q(65285,{altQuests={65284},coords={
+[210]={{42.6,71.6}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
 toy(33219,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022.",q=3,u=3})}}),
-q(65562,{altQuests={65561},coords={{42.6,71.6,210}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
+q(65562,{altQuests={65561},coords={
+[210]={{42.6,71.6}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
 s(134092,23705,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022 or a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",f=9,q=4,u=3})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(42777,{b=1,description="Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",itemID=33225,lvl=40,q=4,u=2}))}}),
 x(3,{u=3,g={
-q(72523,{altQuests={72522},coords={{42.6,71.6,210}},crs={5111,6740,6746,6929,19232,28687,29532,31557,32413},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
+q(72523,{altQuests={72522},coords={
+[210]={{42.6,71.6}}},crs={5111,6740,6746,6929,19232,28687,29532,31557,32413},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
 mnt(394209,{b=1,description="Obtained if you set up a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",itemID=201699,lvl=20,q=4,u=3})}}),
-q(74941,{altQuests={74940},coords={{42.6,71.6,210}},crs={5111,6740,6746,6929,19232,28687,29532,31557,32413},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
+q(74941,{altQuests={74940},coords={
+[210]={{42.6,71.6}}},crs={5111,6740,6746,6929,19232,28687,29532,31557,32413},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
 p(4233,{b=1,itemID=187794,npcID=181485,q=3,spellID=359755,u=3})}}),
-q(75492,{altQuests={75491},coords={{42.6,71.6,210}},crs={5111,6740,6746,6929,19232,28687,29532,31557,32413},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
+q(75492,{altQuests={75491},coords={
+[210]={{42.6,71.6}}},crs={5111,6740,6746,6929,19232,28687,29532,31557,32413},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
 p(4236,{b=1,itemID=204982,npcID=200900,q=3,spellID=407786,u=3})}}),
-q(70863,{altQuests={70862},coords={{42.6,71.6,210}},crs={5111,6740,6746,6929,19232,28687,29532,31557,32413},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
+q(70863,{altQuests={70862},coords={
+[210]={{42.6,71.6}}},crs={5111,6740,6746,6929,19232,28687,29532,31557,32413},maps={84,85,87,88,103,110,111,998},qgs={17249},u=2,g={
 p(4235,{b=1,itemID=200060,npcID=196534,q=3,spellID=388541,u=3})}}),
 mnt(416158,{b=1,description="Obtained if you set up a 12 Month WoW Subscription after 27th October 2023.",itemID=207097,lvl=20,q=4,u=2}),
 p(4273,{b=1,description="Obtained if you set up a 6 Month WoW Subscription after 10th January 2024.",itemID=209877,npcID=211012,q=3,spellID=423843,u=2}),
@@ -92,7 +100,8 @@ p(131,{awp=20001,b=1,itemID=25535,npcID=18381,q=3,rwp=30002,spellID=32298,u=2}),
 p(111,{awp=20001,b=1,description="This was only available in the EU.",itemID=30360,npcID=15358,q=3,rwp=30002,spellID=24988,u=2}))}}),
 h(-524,{awp=20501,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=30400,u=2,g={
 h(-45,{u=2,g={
-q(63450,{altQuests={63448},coords={{28,75.8,224}},crs={5111,6740,6741,6746,6929,16618,16739,17630},maps={84,85,87,88,103,110,998},qgs={17249},u=2,g={
+q(63450,{altQuests={63448},coords={
+[224]={{28,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,17630},maps={84,85,87,88,103,110,998},qgs={17249},u=2,g={
 mnt(348459,{b=1,itemID=184865,lvl=20,q=4,u=2}),
 toy(184871,{b=1,q=3,u=2}),
 toy(38233,{b=1,q=3,u=2})}})}})}}),
@@ -306,5 +315,5 @@ toy(32566,{awp=20100,b=1,q=3,u=2}),
 toy(71628,{awp=40300,q=3,u=2}),
 toy(72161,{awp=40300,b=1,q=3,u=2}),
 toy(38578,{awp=20501,b=1,model=200314,modelScale=2,q=3,u=2}),
-toy(69215,{awp=40100,b=1,q=3,u=2})}})}})};
+toy(69215,{awp=40100,b=1,q=3,u=2})}})}})}});
 end);

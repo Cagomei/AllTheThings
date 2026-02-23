@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
-local ah,cat,cl,flt,h,i,o,prof,q,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
-categories.WorldDrops={
+_.AddEventHandler("OnBuildDataCache", function(categories)
+local ah,cat,cl,cu,flt,h,i,o,prof,q,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
+categories.WorldDrops=
+h(-698,{SortPriority=15,g={
 x(1,{
 flt(3,{
 s(123297,9938,{f=3,lvl=43,q=2}),
@@ -3283,7 +3284,7 @@ r(13522,{itemID=11098,learnedAt=135,requireSkill=333,rwp=50004,u=2}),
 r(20025,{itemID=16253,learnedAt=300,q=2,requireSkill=333}),
 r(7443,{itemID=6342,learnedAt=20,q=2,requireSkill=333}),
 r(13419,{itemID=11039,learnedAt=110,q=2,requireSkill=333}),
-r(13947,{itemID=11226,learnedAt=250,q=2,requireSkill=333}),
+r(13947,{crs={10162,11583},itemID=11226,learnedAt=250,q=2,requireSkill=333}),
 r(13689,{itemID=11168,learnedAt=195,q=2,requireSkill=333}),
 r(13464,{itemID=11081,learnedAt=115,q=2,requireSkill=333}),
 r(13817,{itemID=11202,learnedAt=210,q=2,requireSkill=333}),
@@ -3362,7 +3363,7 @@ r(19083,{itemID=15757,learnedAt=290,q=2,requireSkill=165,rwp=50004,u=2})}),
 prof(197,{
 r(8795,{itemID=7085,learnedAt=190,q=2,requireSkill=197}),
 r(3860,{itemID=4352,learnedAt=175,q=2,requireSkill=197}),
-r(18455,{itemID=14510,learnedAt=300,q=3,requireSkill=197}),
+r(18455,{crs={10162,11583},itemID=14510,learnedAt=300,q=3,requireSkill=197}),
 r(18420,{itemID=14484,learnedAt=275,q=2,requireSkill=197,rwp=40003,u=2}),
 r(18415,{itemID=14479,learnedAt=270,q=2,requireSkill=197,rwp=40003,u=2}),
 r(18439,{itemID=14494,learnedAt=290,q=2,requireSkill=197}),
@@ -3427,10 +3428,14 @@ i(22393,{c={5},collectible=false,f=200,lvl=60,rank=1,spellID=27683,u=15})}),
 cl(9,{
 i(22891,{c={9},collectible=false,f=200,lvl=60,rank=4,spellID=28610,u=16})})}),
 flt(56,{
-i(35562,{awp=20400,coords={{39,45.2,77},{43.5,63,77},{46.1,83,77},{54.1,86.7,77}},crs={8956,8958},description="Drops from bears in highlevel vanilla zones like Angerclaw bears in Felwood.",q=1}),
-i(3173,{coords={{35.4,38.5,48},{73.7,44.8,48}},crs={1186,1225,44638},description="Drops from bears in lower level vanilla zones like bears in Loch Modan.",q=1}),
-i(3730,{coords={{39.5,63.6,63},{67.5,62.2,63}},crs={3810},description="Drops from bears in lower intermediate level vanilla zones like Elder bears in Ashenvale.",q=1}),
-i(7973,{coords={{66,70,17}},description="Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 30-60.",maps={26,51,64,71},q=1,g={
+i(35562,{awp=20400,coords={
+[77]={{39,45.2},{43.5,63},{46.1,83},{54.1,86.7}}},crs={8956,8958},description="Drops from bears in highlevel vanilla zones like Angerclaw bears in Felwood.",q=1}),
+i(3173,{coords={
+[48]={{35.4,38.5},{73.7,44.8}}},crs={1186,1225,44638},description="Drops from bears in lower level vanilla zones like bears in Loch Modan.",q=1}),
+i(3730,{coords={
+[63]={{39.5,63.6},{67.5,62.2}}},crs={3810},description="Drops from bears in lower intermediate level vanilla zones like Elder bears in Ashenvale.",q=1}),
+i(7973,{coords={
+[17]={{66,70}}},description="Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 30-60.",maps={26,51,64,71},q=1,g={
 i(7971,{q=2}),
 i(13926,{q=2}),
 i(5500,{q=2}),
@@ -3438,66 +3443,155 @@ i(5498,{q=2}),
 i(7974,{q=1})}}),
 i(11754,{maps={242},q=2}),
 i(17962,{b=1,q=2}),
-i(2677,{coords={{55,27.3,52}},crs={157,454},description="Drops from boars in lower level vanilla zones like Goretusks in Westfall.",q=1}),
-i(7081,{coords={{46.4,52.1,14},{44.7,43,66},{44.9,44.8,71},{27.9,25.5,81},{37.7,17.4,81}},crs={2762,8667,11576,11577,11578,11744,11745},description="Silithus is the best place to farm these in terms of mob density and drop rate.",q=1}),
-i(3404,{coords={{36.5,61.2,71},{47.1,42,71}},crs={5429,5430},description="Drops from carrion birds in higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",q=1}),
-i(769,{coords={{53.6,59.6,1},{46.6,59.8,27},{41.6,88,37},{56.3,35.8,48},{54.2,42.6,52},{55,27.3,52}},crs={113,119,157,330,454,524,547,1125,1689,3099,3100,42357,44627},description="Drops from boars in entry- and low level vanilla zones like Goretusks in Westfall.",q=1}),
-i(7075,{coords={{32.5,53.8,15},{18.2,44,36},{62.3,46.8,36},{31.4,14,81},{59.6,59.3,83}},crs={92,7031,7032,11746,11747,48960},maps={232},q=1}),
+i(2677,{coords={
+[52]={{55,27.3}}},crs={157,454},description="Drops from boars in lower level vanilla zones like Goretusks in Westfall.",q=1}),
+i(7081,{coords={
+[14]={{46.4,52.1}},
+[66]={{44.7,43}},
+[71]={{44.9,44.8}},
+[81]={{27.9,25.5},{37.7,17.4}}},crs={2762,8667,11576,11577,11578,11744,11745},description="Silithus is the best place to farm these in terms of mob density and drop rate.",q=1}),
+i(3404,{coords={
+[71]={{36.5,61.2},{47.1,42}}},crs={5429,5430},description="Drops from carrion birds in higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",q=1}),
+i(769,{coords={
+[1]={{53.6,59.6}},
+[27]={{46.6,59.8}},
+[37]={{41.6,88}},
+[48]={{56.3,35.8}},
+[52]={{54.2,42.6},{55,27.3}}},crs={113,119,157,330,454,524,547,1125,1689,3099,3100,42357,44627},description="Drops from boars in entry- and low level vanilla zones like Goretusks in Westfall.",q=1}),
+i(7075,{coords={
+[15]={{32.5,53.8}},
+[36]={{18.2,44},{62.3,46.8}},
+[81]={{31.4,14}},
+[83]={{59.6,59.3}}},crs={92,7031,7032,11746,11747,48960},maps={232},q=1}),
 i(2675,{description="Drops from crawlers in lower level vanilla zones like crawlers throughout the shoreline in Ashenvale and Westfall.",maps={52,63},q=1}),
 i(2674,{description="Drops from crawlers in lower level vanilla zones like crawlers throughout the shoreline in Ashenvale and Westfall.",maps={52,63},q=1}),
-i(2924,{coords={{54.3,57.8,48}},crs={1693},description="Drops from crocolisks in lower level vanilla zones like crocolisks in Loch Modan.",q=1}),
-i(22644,{awp=20001,coords={{64,20.1,47},{77,60,47},{86,54,47}},crs={217,930},description="Drops from spiders in lower intermediate level vanilla zones like spiders in Duskwood.",q=1}),
-i(20520,{coords={{55.1,62.2,23},{62.4,76,23}},crs={8548,8551},q=2}),
-i(7069,{coords={{46.4,52.1,14},{44.7,43,66},{44.9,44.8,71},{27.9,25.5,81},{37.7,17.4,81}},crs={2762,8667,11576,11577,11578,11744,11745},q=1}),
-i(7067,{coords={{29.9,59.7,14},{32.5,53.8,15},{18.2,44,36},{62.3,46.8,36},{66.4,60.6,65},{72.1,78.4,65},{31.4,14,81},{59.6,59.3,83},{47.6,81,199}},crs={92,2592,7031,7032,11746,11747,37553,41993,48960},maps={232},q=1}),
-i(7068,{coords={{18.8,30.7,14},{42,40,77},{51.7,50.7,78}},crs={2760,5850,5852,6520,6521,9879},maps={32,232,242},q=1}),
-i(7070,{coords={{61.6,30.4,14},{46.5,44,23},{56.4,74,23},{66.3,29.6,23},{18.3,60.2,51},{49.1,70.2,63},{38.5,35.4,69},{46.9,55.9,69},{30.5,53.2,78},{33,50.5,83},{60,85.1,83}},crs={2761,3917,5461,5462,8519,8520,8521,8522,38254,46953,48767,50250},q=1}),
-i(7082,{coords={{27.9,25.5,81},{37.7,17.4,81}},crs={11744,11745,17158,17159,17160,22310},description="If there is competition about spawns in Silithus, Nagrand is the second best option where air elementals can be found almost everywhere.",maps={107},q=2}),
-i(7076,{coords={{18.2,44,36},{62.3,46.8,36},{31.4,14,81},{59.6,59.3,83}},crs={7031,7032,11746,11747,48960},maps={232},providers={{"o",181068},{"o",181069}},q=2}),
-i(7078,{coords={{51.7,50.7,78}},crs={6520,6521},maps={232,242},q=2}),
-i(12808,{coords={{53,42,83}},crs={7523,7524,48664,48665},description="Drops from Undead creatures in the given zones.",maps={23,234,317},q=2}),
-i(7080,{coords={{46.5,44,23},{56.4,74,23},{66.3,29.6,23},{18.3,60.2,51},{30.5,53.2,78},{33,50.5,83},{60,85.1,83}},crs={8519,8520,8521,8522,38254,46953,48767,50250},q=2}),
-i(14256,{coords={{33.4,46.8,17},{37.7,67.85,17},{45.9,46.8,17},{17.7,37.7,77},{42,40,77},{52,70.15,83},{52.3,75.7,83},{52.75,64.65,83}},crs={6011,7136,41253,41470,41471,46950,50315,50318,50321},description="Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",maps={239},q=1}),
+i(2924,{coords={
+[48]={{54.3,57.8}}},crs={1693},description="Drops from crocolisks in lower level vanilla zones like crocolisks in Loch Modan.",q=1}),
+i(22644,{awp=20001,coords={
+[47]={{64,20.1},{77,60},{86,54}}},crs={217,930},description="Drops from spiders in lower intermediate level vanilla zones like spiders in Duskwood.",q=1}),
+i(20520,{coords={
+[23]={{55.1,62.2},{62.4,76}}},crs={8548,8551},q=2}),
+i(7069,{coords={
+[14]={{46.4,52.1}},
+[66]={{44.7,43}},
+[71]={{44.9,44.8}},
+[81]={{27.9,25.5},{37.7,17.4}}},crs={2762,8667,11576,11577,11578,11744,11745},q=1}),
+i(7067,{coords={
+[14]={{29.9,59.7}},
+[15]={{32.5,53.8}},
+[36]={{18.2,44},{62.3,46.8}},
+[65]={{66.4,60.6},{72.1,78.4}},
+[81]={{31.4,14}},
+[83]={{59.6,59.3}},
+[199]={{47.6,81}}},crs={92,2592,7031,7032,11746,11747,37553,41993,48960},maps={232},q=1}),
+i(7068,{coords={
+[14]={{18.8,30.7}},
+[77]={{42,40}},
+[78]={{51.7,50.7}}},crs={2760,5850,5852,6520,6521,9879},maps={32,232,242},q=1}),
+i(7070,{coords={
+[14]={{61.6,30.4}},
+[23]={{46.5,44},{56.4,74},{66.3,29.6}},
+[51]={{18.3,60.2}},
+[63]={{49.1,70.2}},
+[69]={{38.5,35.4},{46.9,55.9}},
+[78]={{30.5,53.2}},
+[83]={{33,50.5},{60,85.1}}},crs={2761,3917,5461,5462,8519,8520,8521,8522,38254,46953,48767,50250},q=1}),
+i(7082,{coords={
+[81]={{27.9,25.5},{37.7,17.4}}},crs={11744,11745,17158,17159,17160,22310},description="If there is competition about spawns in Silithus, Nagrand is the second best option where air elementals can be found almost everywhere.",maps={107},q=2}),
+i(7076,{coords={
+[36]={{18.2,44},{62.3,46.8}},
+[81]={{31.4,14}},
+[83]={{59.6,59.3}}},crs={7031,7032,11746,11747,48960},maps={232},providers={{"o",181068},{"o",181069}},q=2}),
+i(7078,{coords={
+[78]={{51.7,50.7}}},crs={6520,6521},maps={232,242},q=2}),
+i(12808,{coords={
+[83]={{53,42}}},crs={7523,7524,48664,48665},description="Drops from Undead creatures in the given zones.",maps={23,234,317},q=2}),
+i(7080,{coords={
+[23]={{46.5,44},{56.4,74},{66.3,29.6}},
+[51]={{18.3,60.2}},
+[78]={{30.5,53.2}},
+[83]={{33,50.5},{60,85.1}}},crs={8519,8520,8521,8522,38254,46953,48767,50250},q=2}),
+i(14256,{coords={
+[17]={{33.4,46.8},{37.7,67.85},{45.9,46.8}},
+[77]={{17.7,37.7},{42,40}},
+[83]={{52,70.15},{52.3,75.7},{52.75,64.65}}},crs={6011,7136,41253,41470,41471,46950,50315,50318,50321},description="Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",maps={239},q=1}),
 i(7191,{q=1}),
-i(12207,{coords={{36.5,61.2,71},{47.1,42,71}},crs={5429,5430},description="Drops from birds and owlbeasts in higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",q=1}),
-i(7079,{coords={{46.5,44,23},{56.4,74,23},{66.3,29.6,23},{18.3,60.2,51},{38.5,35.4,69},{46.9,55.9,69},{30.5,53.2,78},{33,50.5,83},{60,85.1,83}},crs={5461,5462,8519,8520,8521,8522,38254,46953,48767,50250},q=1}),
-i(2251,{coords={{64,20.1,47},{77,60,47},{86,54,47}},crs={217,930},description="Drops from spiders in the intermediate level vanilla zones like spiders in Duskwood.",q=1}),
-i(723,{coords={{55,27.3,52}},crs={157,454,42357},description="Drops from boars in lower level vanilla zones like Goretusks in Westfall.",q=1}),
+i(12207,{coords={
+[71]={{36.5,61.2},{47.1,42}}},crs={5429,5430},description="Drops from birds and owlbeasts in higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",q=1}),
+i(7079,{coords={
+[23]={{46.5,44},{56.4,74},{66.3,29.6}},
+[51]={{18.3,60.2}},
+[69]={{38.5,35.4},{46.9,55.9}},
+[78]={{30.5,53.2}},
+[83]={{33,50.5},{60,85.1}}},crs={5461,5462,8519,8520,8521,8522,38254,46953,48767,50250},q=1}),
+i(2251,{coords={
+[47]={{64,20.1},{77,60},{86,54}}},crs={217,930},description="Drops from spiders in the intermediate level vanilla zones like spiders in Duskwood.",q=1}),
+i(723,{coords={
+[52]={{55,27.3}}},crs={157,454,42357},description="Drops from boars in lower level vanilla zones like Goretusks in Westfall.",q=1}),
 i(17964,{q=2}),
 i(17963,{q=2}),
-i(7077,{coords={{42,40,77},{51.7,50.7,78}},crs={5850,5852,6520,6521,9879},maps={32,232,242},q=1}),
-i(10286,{coords={{33.7,78.2,17},{37.5,56.2,17},{40.3,69.5,17},{44.8,81,17},{51.5,25,77},{55.3,21.6,78},{69.5,36.7,78},{50.3,48.9,83}},crs={6509,6510,6511,6512,6517,6518,6519,6527,7100,7139,7149,45118,45119,45125,48952,49217},maps={234,280},q=1}),
-i(12204,{coords={{52,59,66}},crs={4700,4701,4702},description="Drops from kodos in Desolace as well as other vanilla zones.",q=1}),
+i(7077,{coords={
+[77]={{42,40}},
+[78]={{51.7,50.7}}},crs={5850,5852,6520,6521,9879},maps={32,232,242},q=1}),
+i(10286,{coords={
+[17]={{33.7,78.2},{37.5,56.2},{40.3,69.5},{44.8,81}},
+[77]={{51.5,25}},
+[78]={{55.3,21.6},{69.5,36.7}},
+[83]={{50.3,48.9}}},crs={6509,6510,6511,6512,6517,6518,6519,6527,7100,7139,7149,45118,45119,45125,48952,49217},maps={234,280},q=1}),
+i(12204,{coords={
+[66]={{52,59}}},crs={4700,4701,4702},description="Drops from kodos in Desolace as well as other vanilla zones.",q=1}),
 i(19441,{description="Cataclysm messed up with the drop sources for Huge Venom Sac, and the only reliable sources are scorpids and spiders in Ruins of Ahn'Qiraj and Naxxramas.",maps={162,247},q=1}),
 i(7972,{description="Open world sources have been heavily nerfed, and this reagent will only reliably drop from Undead creatures in the given instances.",maps={236,317},q=1}),
 i(14227,{crs={10374,10375,10376,10596},description="Drops from spiders in Lower Blackrock Spire.",maps={251},q=1}),
-i(8168,{coords={{55,35,17},{55,44,17},{58,20,17},{60,27,17},{60,38,17}},crs={5982,8299},rwp=40003,u=2}),
+i(8168,{coords={
+[17]={{55,35},{55,44},{58,20},{60,27},{60,38}}},crs={5982,8299},rwp=40003,u=2}),
 i(5467,{crs={2972,2973,2974,3234,3236},description="Most viably obtained from kodos in Mulgore.",maps={7},q=1}),
-i(5637,{coords={{50,70,14}},crs={2561},description="Cataclysm messed up with the drop sources for Large Fangs. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",q=1}),
-i(1288,{coords={{77,60,47},{86,54,47}},crs={930},q=1}),
-i(1015,{coords={{64,20.1,47}},crs={43704},description="Drops from wolves in lower intermediate level vanilla zones like Dire wolves in Duskwood.",q=1}),
+i(5637,{coords={
+[14]={{50,70}}},crs={2561},description="Cataclysm messed up with the drop sources for Large Fangs. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",q=1}),
+i(1288,{coords={
+[47]={{77,60},{86,54}}},crs={930},q=1}),
+i(1015,{coords={
+[47]={{64,20.1}}},crs={43704},description="Drops from wolves in lower intermediate level vanilla zones like Dire wolves in Duskwood.",q=1}),
 i(17056,{description="Can drop from all birds, harpies, owlkin and striders on Kalimdor, Eastern Kingdoms, Outland and Northrend.",q=1}),
 i(2589,{description="Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={1,7,18,21,27,37,48,52,213},q=1}),
-i(3731,{coords={{44.5,57.5,25},{49,56.3,25}},crs={2385},description="Drops from lions in lower intermediate level vanilla zones like lions in Hillsbrad Foothills.",q=1}),
-i(12803,{coords={{33.7,78.2,17},{37.5,56.2,17},{40.3,69.5,17},{44.8,81,17},{51.5,25,77},{55.3,21.6,78},{69.5,36.7,78},{50.3,48.9,83}},crs={6509,6510,6511,6512,6517,6518,6519,6527,7100,7139,7149,45118,45119,45125,48952,49217},maps={234},q=2}),
-i(4589,{coords={{84,34,25},{56,62.8,69},{20,57,76}},crs={2347,2473,2474,2651,2657,2658,2659,5300,6375},description="Alliance players can disregard The Hinterlands due to most mob sources being friendly.",maps={26},rwp=40003,u=2}),
-i(5116,{coords={{79,77,64},{32.4,66,65}},description="Drops from birds and harpies in the given zones.",maps={14,15,66},rwp=40003,u=2}),
+i(3731,{coords={
+[25]={{44.5,57.5},{49,56.3}}},crs={2385},description="Drops from lions in lower intermediate level vanilla zones like lions in Hillsbrad Foothills.",q=1}),
+i(12803,{coords={
+[17]={{33.7,78.2},{37.5,56.2},{40.3,69.5},{44.8,81}},
+[77]={{51.5,25}},
+[78]={{55.3,21.6},{69.5,36.7}},
+[83]={{50.3,48.9}}},crs={6509,6510,6511,6512,6517,6518,6519,6527,7100,7139,7149,45118,45119,45125,48952,49217},maps={234},q=2}),
+i(4589,{coords={
+[25]={{84,34}},
+[69]={{56,62.8}},
+[76]={{20,57}}},crs={2347,2473,2474,2651,2657,2658,2659,5300,6375},description="Alliance players can disregard The Hinterlands due to most mob sources being friendly.",maps={26},rwp=40003,u=2}),
+i(5116,{coords={
+[64]={{79,77}},
+[65]={{32.4,66}}},description="Drops from birds and harpies in the given zones.",maps={14,15,66},rwp=40003,u=2}),
 i(27668,{awp=20001,crs={15651,15652,16347,16348,16349},description="Only drops from lynxes in Eversong Forest (except Sunstrider Isle) and Ghostlands.",maps={94,95},q=1}),
 i(4338,{description="Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={15,32,36,71,77,219,235},q=1}),
 i(12223,{crs={1553,1554,16353,16354,16355},description="Only drops from bats in Ghostlands and Tirisfal Glades.",maps={18,95},q=1}),
-i(1468,{coords={{15.1,39.3,56}},crs={41425,41426,42110,42111},description="Drops from murlocs in lower intermediate level vanilla zones like Bluegill murlocs in Wetlands.",q=1}),
-i(12037,{coords={{43.3,19.7,50},{50.9,40.6,50}},crs={1150,1152,2635},description="Drops from a diverse selection of creatures ranging from hyenas to scorpids in higher intermediate to highlevel vanilla zones like Crocolisks in Stranglethorn.",q=1}),
-i(7072,{coords={{29,11,66}},crs={4719},description="Cataclysm messed up with the drop sources for Naga Scale. Slitherblade Sea Witches seems to be the most reliable source. Consider farming this on a character that are more capable to farm in water.",q=1}),
+i(1468,{coords={
+[56]={{15.1,39.3}}},crs={41425,41426,42110,42111},description="Drops from murlocs in lower intermediate level vanilla zones like Bluegill murlocs in Wetlands.",q=1}),
+i(12037,{coords={
+[50]={{43.3,19.7},{50.9,40.6}}},crs={1150,1152,2635},description="Drops from a diverse selection of creatures ranging from hyenas to scorpids in higher intermediate to highlevel vanilla zones like Crocolisks in Stranglethorn.",q=1}),
+i(7072,{coords={
+[66]={{29,11}}},crs={4719},description="Cataclysm messed up with the drop sources for Naga Scale. Slitherblade Sea Witches seems to be the most reliable source. Consider farming this on a character that are more capable to farm in water.",q=1}),
 i(12804,{description="Can drop from trolls.",maps={250,337},q=1}),
 i(18335,{description="Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",q=3}),
-i(3685,{coords={{39,42.9,50},{53.5,48,50}},crs={686,687},description="Drops from raptors in intermediate level vanilla zones like raptors in Stranglethorn Vale.",q=1}),
-i(12184,{coords={{39,42.9,50},{53.5,48,50}},crs={686,687},description="Drops from raptors in higher intermediate to highlevel vanilla zones like raptors in Stranglethorn Vale.",q=1}),
-i(4461,{coords={{50,70,14}},crs={2561},description="Cataclysm messed up with the drop sources for Raptor Hides. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",q=1}),
+i(3685,{coords={
+[50]={{39,42.9},{53.5,48}}},crs={686,687},description="Drops from raptors in intermediate level vanilla zones like raptors in Stranglethorn Vale.",q=1}),
+i(12184,{coords={
+[50]={{39,42.9},{53.5,48}}},crs={686,687},description="Drops from raptors in higher intermediate to highlevel vanilla zones like raptors in Stranglethorn Vale.",q=1}),
+i(4461,{coords={
+[14]={{50,70}}},crs={2561},description="Cataclysm messed up with the drop sources for Raptor Hides. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",q=1}),
 i(17969,{q=2}),
-i(12203,{coords={{45.2,69,77},{54.1,86.7,77}},crs={8959,8960},description="Drops from wolves in higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",q=1}),
+i(12203,{coords={
+[77]={{45.2,69},{54.1,86.7}}},crs={8959,8960},description="Drops from wolves in higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",q=1}),
 i(14047,{description="Runecloth drops commonly from any humanoid and undead creatures within the given zones.",maps={-353,17,51,81,83,242,317},q=1}),
 i(10285,{crs={1822,1824,5856,5857},description="Drops from spiders in higher level vanilla zones.",q=1}),
-i(5635,{coords={{27,60,95},{50,60,95},{70,38,95}},crs={16347,16348,16349},description="Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!",q=1}),
+i(5635,{coords={
+[95]={{27,60},{50,60},{70,38}}},crs={16347,16348,16349},description="Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!",q=1}),
 i(4306,{description="Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={14,26,66,69,230,235,280,301},q=1}),
 i(5784,{description="Drops from murlocs Blackfathom Deeps.",maps={221},q=1}),
 i(5523,{description="Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 1-20.",maps={1,10,18,21,37,48,49,52,62,63,76,95,97,106},q=1,g={
@@ -3505,28 +3599,44 @@ i(5503,{q=1}),
 i(5498,{q=2})}}),
 i(6889,{crs={15649,15650,17186,17187,17188,17189,17372,17373,17374,17448},description="Drops from birds, owlkin and striders in entry- and lower level vanilla zones, which can be found all over Azuremyst Isle and Eversong Woods except Ammen Vale and Sunstrider Isle.",maps={94,97},q=1}),
 i(4402,{crs={14398},description="Cataclysm messed up with the drop sources for Small Flame Sacs. Supposed to drop from small dragonkin like darters and whelps. Eldreth Darters in The Capital Gardens in Dire Maul seems to be the most reliable source.",maps={234},q=1}),
-i(5465,{coords={{35.7,13.7,21}},crs={1780,1781,1998,1999,2000,2001,7319,12433},description="Drops from spiders in the entry- and lower level vanilla zones like spiders in Silverpine Forest and Teldrassil.",maps={57},q=1}),
-i(1475,{coords={{18.8,35.8,106}},crs={17522,17523,17683},description="Cataclysm messed up with the drop sources for Small Venom Sac, and unfortunately for Horde players the only reliable farming spot is on Bloodmyst Isle.",q=1}),
+i(5465,{coords={
+[21]={{35.7,13.7}}},crs={1780,1781,1998,1999,2000,2001,7319,12433},description="Drops from spiders in the entry- and lower level vanilla zones like spiders in Silverpine Forest and Teldrassil.",maps={57},q=1}),
+i(1475,{coords={
+[106]={{18.8,35.8}}},crs={17522,17523,17683},description="Cataclysm messed up with the drop sources for Small Venom Sac, and unfortunately for Horde players the only reliable farming spot is on Bloodmyst Isle.",q=1}),
 i(5468,{crs={2173,6033},description="Drops from frenzies found in bodies of water.",maps={21},q=1}),
 i(3182,{crs={3819,3820,3821},description="Drops from spiders in lower intermediate level vanilla zones, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",maps={63},q=1}),
-i(67229,{awp=40003,coords={{45.2,40.8,62},{47.4,29.5,62},{26.2,72.8,76}},crs={33311,35096,37786},description="Only drops from the given stags. Brown Stags can only be found in phased Gilneas for fresh Worgen characters.",q=1}),
-i(5471,{coords={{19.7,29.9,63},{39.5,63.6,63},{69.9,62.7,63}},crs={3816,3817,3818},description="Drops from stags in Ashenvale as well as some other vanilla zones.",q=1}),
-i(5469,{coords={{34.6,44.6,1},{64.8,41.1,10},{69.5,55.9,10}},crs={2172,2321,3244,3245,3246,39337},description="The only viable source is striders by River Southfury dividing Durotar and Northern Barrens.",q=1}),
+i(67229,{awp=40003,coords={
+[62]={{45.2,40.8},{47.4,29.5}},
+[76]={{26.2,72.8}}},crs={33311,35096,37786},description="Only drops from the given stags. Brown Stags can only be found in phased Gilneas for fresh Worgen characters.",q=1}),
+i(5471,{coords={
+[63]={{19.7,29.9},{39.5,63.6},{69.9,62.7}}},crs={3816,3817,3818},description="Drops from stags in Ashenvale as well as some other vanilla zones.",q=1}),
+i(5469,{coords={
+[1]={{34.6,44.6}},
+[10]={{64.8,41.1},{69.5,55.9}}},crs={2172,2321,3244,3245,3246,39337},description="The only viable source is striders by River Southfury dividing Durotar and Northern Barrens.",q=1}),
 i(2672,{crs={118,525,1922,2958,2959,2960,3056},description="Drops from wolves in the entry- and lower level vanilla zones like wolves in Elwynn Forest and Mulgore.",maps={7,37},q=1}),
-i(12206,{coords={{81.9,11.5,51},{88.6,22.9,51}},crs={922,1088},description="Drops from crawlers in higher intermediate level vanilla zones like Crawlers in Swamp of Sorrows.",q=1}),
-i(3667,{coords={{43.3,19.7,50},{50.9,40.6,50}},crs={1150,1152,2635},description="Drops from crocolisks in intermediate level vanilla zones like Crocolisks in Stranglethorn.",q=1}),
-i(12208,{coords={{45.2,69,77},{54.1,86.7,77}},crs={8959,8960},description="Drops from wolves in higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",q=1}),
+i(12206,{coords={
+[51]={{81.9,11.5},{88.6,22.9}}},crs={922,1088},description="Drops from crawlers in higher intermediate level vanilla zones like Crawlers in Swamp of Sorrows.",q=1}),
+i(3667,{coords={
+[50]={{43.3,19.7},{50.9,40.6}}},crs={1150,1152,2635},description="Drops from crocolisks in intermediate level vanilla zones like Crocolisks in Stranglethorn.",q=1}),
+i(12208,{coords={
+[77]={{45.2,69},{54.1,86.7}}},crs={8959,8960},description="Drops from wolves in higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",q=1}),
 i(5785,{crs={40811,40911,41017,41566,41729,41746,46474},maps={201,203,204,205},q=1}),
 i(4337,{crs={1822,1824,4376,4378,4379,4412,4414,4415},description="Drops from spiders in the level bracket 32-60.",maps={22,70},q=1}),
 i(5524,{description="Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 20-30.",maps={25,50,56,62,63,221},q=1,g={
 i(5500,{q=2}),
 i(5498,{q=2}),
 i(5504,{q=1})}}),
-i(5470,{coords={{43.7,55.3,199}},crs={3240},description="Drops from lizards in lower intermediate level vanilla zones like Stormsnouts in The Barrens.",q=1}),
-i(12202,{coords={{38.3,32.2,50},{59.5,29,50}},crs={682,1085},description="Drops from tigers in higher intermediate to highlevel vanilla zones like tigers in Stranglethorn Vale.",q=1}),
-i(3712,{coords={{61.5,8.3,70},{62.5,33.8,70}},crs={4397},description="Drops from turtles in higher intermediate to highlevel vanilla zones like Mudrock turtles in Dustwallow Marsh.",q=1}),
-i(9260,{coords={{77,90,10},{69.4,53.5,71},{74,47,71}},crs={3382,3383,3384,7855,7858,40632,40635,40636,44168},f=55,q=1}),
-i(12205,{coords={{34.1,22.5,70},{55.2,54.8,70}},crs={4376,4378,4379,4415},description="Drops from spiders in higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh.",q=1}),
+i(5470,{coords={
+[199]={{43.7,55.3}}},crs={3240},description="Drops from lizards in lower intermediate level vanilla zones like Stormsnouts in The Barrens.",q=1}),
+i(12202,{coords={
+[50]={{38.3,32.2},{59.5,29}}},crs={682,1085},description="Drops from tigers in higher intermediate to highlevel vanilla zones like tigers in Stranglethorn Vale.",q=1}),
+i(3712,{coords={
+[70]={{61.5,8.3},{62.5,33.8}}},crs={4397},description="Drops from turtles in higher intermediate to highlevel vanilla zones like Mudrock turtles in Dustwallow Marsh.",q=1}),
+i(9260,{coords={
+[10]={{77,90}},
+[71]={{69.4,53.5},{74,47}}},crs={3382,3383,3384,7855,7858,40632,40635,40636,44168},f=55,q=1}),
+i(12205,{coords={
+[70]={{34.1,22.5},{55.2,54.8}}},crs={4376,4378,4379,4415},description="Drops from spiders in higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh.",q=1}),
 i(17965,{q=2}),
 o(2744),
 o(19017,{description="Can be found in the sea.",g={
@@ -4482,15 +4592,32 @@ i(25046,{f=52,lvl=59,q=2,u=17}),
 i(25047,{f=52,lvl=60,q=2,u=17}),
 i(31326,{f=52,lvl=70,q=4,u=17})}}),
 flt(50,{u=17,g={
-i(29739,{coords={{47.2,65.7,104},{25.3,70.4,109},{50.5,83.1,109},{55.9,79.2,109},{42.7,37.4,122}},maps={266,267},q=2,u=17}),
+i(29739,{coords={
+[104]={{47.2,65.7}},
+[109]={{25.3,70.4},{50.5,83.1},{55.9,79.2}},
+[122]={{42.7,37.4}}},maps={266,267},q=2,u=17}),
 i(22146,{c={11},f=200,lvl=70,u=17}),
 i(29549,{c={5},f=200,lvl=70,u=17}),
 i(31837,{c={5},f=200,lvl=70,u=17}),
-i(29740,{coords={{40.2,38.2,104},{63.4,65.7,105},{73.7,40.9,105},{10.7,40.5,107},{40.8,72.5,109},{41.3,21,109}},maps={260,269},q=2,u=17}),
-i(29426,{coords={{71.2,37.4,108}},q=1,u=17}),
-i(29425,{coords={{70.8,79.9,107},{31.4,52.7,108},{40.2,58.6,108}},q=1,u=17}),
-i(30809,{coords={{40.2,38.2,104},{63.4,65.7,105},{73.7,40.9,105},{10.7,40.5,107},{40.8,72.5,109},{41.3,21,109}},maps={260,269},q=1,u=17}),
-i(30810,{coords={{47.2,65.7,104},{25.3,70.4,109},{50.5,83.1,109},{55.9,79.2,109},{42.7,37.4,122}},maps={266,267},q=1,u=17}),
+i(29740,{coords={
+[104]={{40.2,38.2}},
+[105]={{63.4,65.7},{73.7,40.9}},
+[107]={{10.7,40.5}},
+[109]={{40.8,72.5},{41.3,21}}},maps={260,269},q=2,u=17}),
+i(29426,{coords={
+[108]={{71.2,37.4}}},q=1,u=17}),
+i(29425,{coords={
+[107]={{70.8,79.9}},
+[108]={{31.4,52.7},{40.2,58.6}}},q=1,u=17}),
+i(30809,{coords={
+[104]={{40.2,38.2}},
+[105]={{63.4,65.7},{73.7,40.9}},
+[107]={{10.7,40.5}},
+[109]={{40.8,72.5},{41.3,21}}},maps={260,269},q=1,u=17}),
+i(30810,{coords={
+[104]={{47.2,65.7}},
+[109]={{25.3,70.4},{50.5,83.1},{55.9,79.2}},
+[122]={{42.7,37.4}}},maps={266,267},q=1,u=17}),
 i(22153,{c={8},f=200,lvl=70,u=17}),
 i(31501,{c={8},f=200,lvl=70,u=17}),
 i(29550,{c={8},f=200,lvl=70,u=17})}}),
@@ -4528,37 +4655,89 @@ i(31909,{q=3,u=19}),
 i(31918,{q=3,u=19}),
 i(31900,{q=3,u=19})}}),
 flt(56,{u=17,g={
-i(27671,{coords={{20.6,52.5,100},{25,45.5,100},{29.4,54.8,100},{31.5,35.7,100},{61.6,67.7,100},{34,54.8,108},{42.8,52.2,108},{45.7,62.5,108}},crs={16972,16973,18470},q=1,u=17}),
-i(27677,{coords={{8.3,52.7,102},{14.9,28.9,102},{24.7,19.1,102},{34.7,18,102},{78.1,30,102},{88.1,33.6,102},{40.2,18.4,105},{64.5,33,105},{72.4,20.2,105},{39.3,9.7,108},{44.6,34.3,108},{62.4,49,108},{68.7,30.5,108}},crs={18461,18463,19706,19729,19730,20279,20280,20283,20924,20925,20987,21816,21854},q=1,u=17}),
+i(27671,{coords={
+[100]={{20.6,52.5},{25,45.5},{29.4,54.8},{31.5,35.7},{61.6,67.7}},
+[108]={{34,54.8},{42.8,52.2},{45.7,62.5}}},crs={16972,16973,18470},q=1,u=17}),
+i(27677,{coords={
+[102]={{8.3,52.7},{14.9,28.9},{24.7,19.1},{34.7,18},{78.1,30},{88.1,33.6}},
+[105]={{40.2,18.4},{64.5,33},{72.4,20.2}},
+[108]={{39.3,9.7},{44.6,34.3},{62.4,49},{68.7,30.5}}},crs={18461,18463,19706,19729,19730,20279,20280,20283,20924,20925,20987,21816,21854},q=1,u=17}),
 i(27678,{crs={17132,17133,18205,19183},description="Clefthoofs can be found all over Nagrand.",maps={107},q=1,u=17}),
 i(32428,{awp=20100,description="Can drop from most creatures within the given raids.",maps={329,340},q=3,u=17}),
-i(24476,{coords={{46.2,29.1,104},{53.1,25.5,104}},description="Drops commonly from humanoid- and beast water creatures like naga, dredgers and trashers.",maps={102},q=1,u=17,g={
+i(24476,{coords={
+[104]={{46.2,29.1},{53.1,25.5}}},description="Drops commonly from humanoid- and beast water creatures like naga, dredgers and trashers.",maps={102},q=1,u=17,g={
 i(24477,{q=1,u=17}),
 i(24478,{q=2,u=17}),
 i(24479,{awp=20100,q=2,u=17})}}),
-i(22572,{coords={{57.2,73.2,104},{61.6,65.9,104},{65.25,22.5,104},{66.1,30,104},{71.8,30,104},{70.4,21.2,107}},crs={17158,17159,17160,21060,22310,24222},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",q=1,u=17}),
-i(22573,{coords={{46.5,46,104},{31.5,80.4,107},{54.4,20.2,107},{62,80,107},{65.5,23.7,107},{67.1,38,107}},crs={17156,17157,18062,21060,22313},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",181555},{"o",181556},{"o",181557},{"o",181569}},q=1,u=17}),
-i(22574,{coords={{62.7,19.5,100},{46.5,46,104},{29.2,81.3,105},{72.4,20.2,105},{67.3,21.2,107}},crs={20514,21061,22298,22311,22323},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",181555},{"o",181557}},q=1,u=17}),
+i(22572,{coords={
+[104]={{57.2,73.2},{61.6,65.9},{65.25,22.5},{66.1,30},{71.8,30}},
+[107]={{70.4,21.2}}},crs={17158,17159,17160,21060,22310,24222},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",q=1,u=17}),
+i(22573,{coords={
+[104]={{46.5,46}},
+[107]={{31.5,80.4},{54.4,20.2},{62,80},{65.5,23.7},{67.1,38}}},crs={17156,17157,18062,21060,22313},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",181555},{"o",181556},{"o",181557},{"o",181569}},q=1,u=17}),
+i(22574,{coords={
+[100]={{62.7,19.5}},
+[104]={{46.5,46}},
+[105]={{29.2,81.3},{72.4,20.2}},
+[107]={{67.3,21.2}}},crs={20514,21061,22298,22311,22323},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",181555},{"o",181557}},q=1,u=17}),
 i(22575,{crs={17723,17725,17734,17770,17871},description="The given maps and sources applies for how to obtain this element's motes.",maps={262},providers={{"o",181270},{"o",181271},{"o",181275},{"o",181277},{"o",181278},{"o",181280},{"o",181281}},q=1,u=17}),
-i(22576,{coords={{69,67.3,104},{70,85,104},{29.5,67,105},{32.1,55,105},{51.5,16.1,105},{61,11,105},{67.5,11.7,105},{22.1,78.2,109},{25.5,62.2,109},{30,51.5,109},{33.4,29.4,109},{35.2,78.2,109},{56,88,109}},crs={17408,18865,18866,18867,18879,18880,20516,22181,22244,24972},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",181279}},q=1,u=17}),
-i(22577,{coords={{44.8,83.2,100},{78,71.6,100},{36,71,107},{62.3,40.4,109}},crs={16974,16975,17014,17407,17981,18869,18870,19527},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",q=1,u=17}),
-i(22578,{coords={{57.9,63.7,102},{58.2,54.1,102},{48.6,25.7,104},{33.9,50,107},{40.5,44.9,107},{58.6,29.2,107},{62.1,16.1,107},{39.3,9.7,108},{65.4,75,108}},crs={17153,17154,17155,17378,18750,20196,20290,21059,21728,22309},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",182951}},q=1,u=17}),
+i(22576,{coords={
+[104]={{69,67.3},{70,85}},
+[105]={{29.5,67},{32.1,55},{51.5,16.1},{61,11},{67.5,11.7}},
+[109]={{22.1,78.2},{25.5,62.2},{30,51.5},{33.4,29.4},{35.2,78.2},{56,88}}},crs={17408,18865,18866,18867,18879,18880,20516,22181,22244,24972},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",181279}},q=1,u=17}),
+i(22577,{coords={
+[100]={{44.8,83.2},{78,71.6}},
+[107]={{36,71}},
+[109]={{62.3,40.4}}},crs={16974,16975,17014,17407,17981,18869,18870,19527},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",q=1,u=17}),
+i(22578,{coords={
+[102]={{57.9,63.7},{58.2,54.1}},
+[104]={{48.6,25.7}},
+[107]={{33.9,50},{40.5,44.9},{58.6,29.2},{62.1,16.1}},
+[108]={{39.3,9.7},{65.4,75}}},crs={17153,17154,17155,17378,18750,20196,20290,21059,21728,22309},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",182951}},q=1,u=17}),
 i(30183,{description="Can drop from most creatures within the given raids.",maps={332,334},q=4,u=17}),
 i(21877,{description="Netherweave Cloth is a very common drop from TBC humanoid and undead creatures.",q=1,u=17}),
-i(21881,{coords={{44.6,34.3,108},{52.3,78.5,108},{54.8,59.8,108}},crs={15170,15171,18466,18467},description="Netherweb Spider Silk is a common drop from TBC spiders, most viably farmed in Karazhan and Terokkar Forest.",maps={350},q=1,u=17}),
-i(22451,{coords={{57.2,73.2,104},{61.6,65.9,104},{65.25,22.5,104},{66.1,30,104},{71.8,30,104},{70.4,21.2,107}},crs={17158,17159,17160,21060,22310,24222},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",q=2,u=17}),
-i(22452,{coords={{46.5,46,104},{31.5,80.4,107},{54.4,20.2,107},{62,80,107},{65.5,23.7,107},{67.1,38,107}},crs={17156,17157,18062,21060,22313},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",181555},{"o",181556},{"o",181557},{"o",181569}},q=2,u=17}),
-i(21884,{coords={{62.7,19.5,100},{46.5,46,104},{29.2,81.3,105},{72.4,20.2,105},{67.3,21.2,107}},crs={20514,21061,22298,22311,22323},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",181555},{"o",181557}},q=2,u=17}),
+i(21881,{coords={
+[108]={{44.6,34.3},{52.3,78.5},{54.8,59.8}}},crs={15170,15171,18466,18467},description="Netherweb Spider Silk is a common drop from TBC spiders, most viably farmed in Karazhan and Terokkar Forest.",maps={350},q=1,u=17}),
+i(22451,{coords={
+[104]={{57.2,73.2},{61.6,65.9},{65.25,22.5},{66.1,30},{71.8,30}},
+[107]={{70.4,21.2}}},crs={17158,17159,17160,21060,22310,24222},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",q=2,u=17}),
+i(22452,{coords={
+[104]={{46.5,46}},
+[107]={{31.5,80.4},{54.4,20.2},{62,80},{65.5,23.7},{67.1,38}}},crs={17156,17157,18062,21060,22313},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",181555},{"o",181556},{"o",181557},{"o",181569}},q=2,u=17}),
+i(21884,{coords={
+[100]={{62.7,19.5}},
+[104]={{46.5,46}},
+[105]={{29.2,81.3},{72.4,20.2}},
+[107]={{67.3,21.2}}},crs={20514,21061,22298,22311,22323},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",181555},{"o",181557}},q=2,u=17}),
 i(21886,{crs={17723,17725,17734,17770,17871},description="The given maps and sources applies for how to obtain this element's motes.",maps={262},providers={{"o",181270},{"o",181271},{"o",181275},{"o",181277},{"o",181278},{"o",181280},{"o",181281}},q=2,u=17}),
-i(22457,{coords={{69,67.3,104},{70,85,104},{29.5,67,105},{32.1,55,105},{51.5,16.1,105},{61,11,105},{67.5,11.7,105},{22.1,78.2,109},{25.5,62.2,109},{30,51.5,109},{33.4,29.4,109},{35.2,78.2,109},{56,88,109}},crs={17408,18865,18866,18867,18879,18880,20516,22181,22244,24972},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",181279}},q=2,u=17}),
+i(22457,{coords={
+[104]={{69,67.3},{70,85}},
+[105]={{29.5,67},{32.1,55},{51.5,16.1},{61,11},{67.5,11.7}},
+[109]={{22.1,78.2},{25.5,62.2},{30,51.5},{33.4,29.4},{35.2,78.2},{56,88}}},crs={17408,18865,18866,18867,18879,18880,20516,22181,22244,24972},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",181279}},q=2,u=17}),
 i(23572,{description="Guaranteed drop from the last boss in any Heroic TBC dungeon.",q=3,u=17}),
-i(22456,{coords={{44.8,83.2,100},{78,71.6,100},{36,71,107},{62.3,40.4,109}},crs={16974,16975,17014,17407,17981,18869,18870,19527},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",q=2,u=17}),
-i(21885,{coords={{57.9,63.7,102},{58.2,54.1,102},{48.6,25.7,104},{33.9,50,107},{40.5,44.9,107},{58.6,29.2,107},{62.1,16.1,107},{39.3,9.7,108},{65.4,75,108}},crs={17153,17154,17155,17378,18750,20196,20290,21059,21728,22309},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",182951}},q=2,u=17}),
-i(31670,{coords={{44.9,54.8,105},{66,22.6,105},{66.6,57,105},{71.5,30.1,105},{45.2,11.3,109}},crs={20634,20728,20729,21124,22051,22052},q=1,u=17}),
-i(27674,{coords={{8.7,50.8,100},{22.9,67.2,100},{38.5,88.3,100},{58.9,69.3,105}},crs={16932,16933,16934,19189,19349,22123},q=1,u=17}),
-i(31671,{coords={{66,52.6,105},{68.5,70.55,105},{71.5,30.1,105},{56.4,60,109},{66.3,61.8,109}},crs={20673,20749,21123},q=1,u=17}),
-i(27682,{coords={{41.8,35.8,109}},crs={17130,17131,18964,20610,20777},description="Talbuks can be found all over Nagrand.",maps={107},q=1,u=17}),
-i(27681,{coords={{20.6,73.5,108},{60.3,38.7,108},{65.9,85,108},{56.4,60,109},{66.3,61.8,109}},crs={18464,18465,18884,23219},q=1,u=17})}}),
+i(22456,{coords={
+[100]={{44.8,83.2},{78,71.6}},
+[107]={{36,71}},
+[109]={{62.3,40.4}}},crs={16974,16975,17014,17407,17981,18869,18870,19527},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",q=2,u=17}),
+i(21885,{coords={
+[102]={{57.9,63.7},{58.2,54.1}},
+[104]={{48.6,25.7}},
+[107]={{33.9,50},{40.5,44.9},{58.6,29.2},{62.1,16.1}},
+[108]={{39.3,9.7},{65.4,75}}},crs={17153,17154,17155,17378,18750,20196,20290,21059,21728,22309},description="The given maps, coordinates and sources applies for how to obtain this element's motes.",providers={{"o",182951}},q=2,u=17}),
+i(31670,{coords={
+[105]={{44.9,54.8},{66,22.6},{66.6,57},{71.5,30.1}},
+[109]={{45.2,11.3}}},crs={20634,20728,20729,21124,22051,22052},q=1,u=17}),
+i(27674,{coords={
+[100]={{8.7,50.8},{22.9,67.2},{38.5,88.3}},
+[105]={{58.9,69.3}}},crs={16932,16933,16934,19189,19349,22123},q=1,u=17}),
+i(31671,{coords={
+[105]={{66,52.6},{68.5,70.55},{71.5,30.1}},
+[109]={{56.4,60},{66.3,61.8}}},crs={20673,20749,21123},q=1,u=17}),
+i(27682,{coords={
+[109]={{41.8,35.8}}},crs={17130,17131,18964,20610,20777},description="Talbuks can be found all over Nagrand.",maps={107},q=1,u=17}),
+i(27681,{coords={
+[108]={{20.6,73.5},{60.3,38.7},{65.9,85}},
+[109]={{56.4,60},{66.3,61.8}}},crs={18464,18465,18884,23219},q=1,u=17})}}),
 flt(200,{u=17,g={
 prof(171,{u=17,g={
 r(28565,{itemID=22914,learnedAt=350,q=2,requireSkill=171,u=17}),
@@ -5667,36 +5846,118 @@ s(175246,44309,{f=4,lvl=80,q=4,u=30}),
 s(171629,37761,{f=4,lvl=78,q=3,u=30}),
 s(171641,37773,{f=6,lvl=71,q=3,u=30})}}),
 flt(56,{u=30,g={
-i(44700,{coords={{40.2,19.2,114},{60.9,50.6,114},{66.6,40.7,114},{72.2,44.5,114},{79,41.8,114},{79.6,31.9,114},{21.3,28.8,117},{8.2,40.5,118},{32.8,74.9,119},{44.5,36.6,119}},crs={23644,23645,25215,25216,25217,25685,25686,25687,25699,28109,28110,28111,28112,29392},description="Is a rare drop from water creatures like murlocs and whales, and have a high chance of containing pearls. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",q=1,u=30,g={
+i(44700,{coords={
+[114]={{40.2,19.2},{60.9,50.6},{66.6,40.7},{72.2,44.5},{79,41.8},{79.6,31.9}},
+[117]={{21.3,28.8}},
+[118]={{8.2,40.5}},
+[119]={{32.8,74.9},{44.5,36.6}}},crs={23644,23645,25215,25216,25217,25685,25686,25687,25699,28109,28110,28111,28112,29392},description="Is a rare drop from water creatures like murlocs and whales, and have a high chance of containing pearls. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",q=1,u=30,g={
 i(36783,{q=2,u=30}),
 i(36784,{q=3,u=30}),
 i(36782,{q=1,u=30})}}),
 i(43013,{description="Can drop from any Northrend beasts.",q=1,u=30}),
-i(34736,{coords={{55.6,31.9,114},{82.2,31.3,114},{65.5,38.1,115},{52,42.3,119},{34.7,84.9,120},{58,62,120},{64.5,45.25,120}},crs={24613,24614,25452,25743,26271,26272,26273,28379,28380,28381,29402,30260,30448},q=1,u=30}),
-i(37700,{coords={{44.9,8.6,114},{73,31.8,114},{75,54.6,116},{27.6,33.4,119},{28.5,47.3,120},{67,44.9,120},{73.9,58.6,121},{51.1,77.3,123}},crs={24601,24879,25415,26407,28784,28858,29624,30184,30848,30875},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",q=1,u=30}),
-i(37701,{coords={{64.2,23.3,116},{70,59.2,120},{15.5,77.6,121},{58.5,45.6,121},{56.6,41.7,123}},crs={26284,28597,29436,30160,30849,30876},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189978},{"o",189979},{"o",189980},{"o",189981}},q=1,u=30}),
-i(37702,{coords={{48.7,14.4,114},{62.5,41.5,120},{75.5,63.2,120},{84,71.5,123}},crs={25417,30387,30450,30847,30873,32522,32544},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",q=1,u=30}),
-i(37704,{coords={{54,17.6,117},{44.3,69.9,119},{48.9,54,119},{44,59.3,121},{9.5,61.6,123}},crs={23874,28323,29036,30845,34300},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189973},{"o",190169},{"o",190170},{"o",190171},{"o",190172},{"o",191019},{"o",191303}},q=1,u=30}),
-i(37703,{coords={{74.6,23.2,115},{18,56,123}},crs={27382,30842,30872},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189980},{"o",189981}},q=1,u=30}),
-i(37705,{coords={{46.3,13.4,114},{9.6,56.8,115},{40.1,67.7,115},{53.1,20,115},{67.3,53.4,115},{65.3,69.1,116},{61.3,23,117},{27.6,33.4,119},{41.7,62.2,120},{42,78,121},{54,50.3,121},{49.6,54.6,123}},crs={16570,21223,23919,24228,24879,25419,25715,26283,26316,28411,28862,29844,30846,30877,32544},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189978},{"o",189979}},q=1,u=30}),
-i(36781,{coords={{40.2,19.2,114},{60.9,50.6,114},{66.6,40.7,114},{72.2,44.5,114},{79,41.8,114},{79.6,31.9,114},{21.3,28.8,117},{8.2,40.5,118},{32.8,74.9,119},{44.5,36.6,119}},crs={23644,23645,25215,25216,25217,25685,25686,25687,25699,28109,28110,28111,28112,29392},description="Is a common drop from water creatures like murlocs and whales. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",q=1,u=30,g={
+i(34736,{coords={
+[114]={{55.6,31.9},{82.2,31.3}},
+[115]={{65.5,38.1}},
+[119]={{52,42.3}},
+[120]={{34.7,84.9},{58,62},{64.5,45.25}}},crs={24613,24614,25452,25743,26271,26272,26273,28379,28380,28381,29402,30260,30448},q=1,u=30}),
+i(37700,{coords={
+[114]={{44.9,8.6},{73,31.8}},
+[116]={{75,54.6}},
+[119]={{27.6,33.4}},
+[120]={{28.5,47.3},{67,44.9}},
+[121]={{73.9,58.6}},
+[123]={{51.1,77.3}}},crs={24601,24879,25415,26407,28784,28858,29624,30184,30848,30875},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",q=1,u=30}),
+i(37701,{coords={
+[116]={{64.2,23.3}},
+[120]={{70,59.2}},
+[121]={{15.5,77.6},{58.5,45.6}},
+[123]={{56.6,41.7}}},crs={26284,28597,29436,30160,30849,30876},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189978},{"o",189979},{"o",189980},{"o",189981}},q=1,u=30}),
+i(37702,{coords={
+[114]={{48.7,14.4}},
+[120]={{62.5,41.5},{75.5,63.2}},
+[123]={{84,71.5}}},crs={25417,30387,30450,30847,30873,32522,32544},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",q=1,u=30}),
+i(37704,{coords={
+[117]={{54,17.6}},
+[119]={{44.3,69.9},{48.9,54}},
+[121]={{44,59.3}},
+[123]={{9.5,61.6}}},crs={23874,28323,29036,30845,34300},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189973},{"o",190169},{"o",190170},{"o",190171},{"o",190172},{"o",191019},{"o",191303}},q=1,u=30}),
+i(37703,{coords={
+[115]={{74.6,23.2}},
+[123]={{18,56}}},crs={27382,30842,30872},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189980},{"o",189981}},q=1,u=30}),
+i(37705,{coords={
+[114]={{46.3,13.4}},
+[115]={{9.6,56.8},{40.1,67.7},{53.1,20},{67.3,53.4}},
+[116]={{65.3,69.1}},
+[117]={{61.3,23}},
+[119]={{27.6,33.4}},
+[120]={{41.7,62.2}},
+[121]={{42,78},{54,50.3}},
+[123]={{49.6,54.6}}},crs={16570,21223,23919,24228,24879,25419,25715,26283,26316,28411,28862,29844,30846,30877,32544},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189978},{"o",189979}},q=1,u=30}),
+i(36781,{coords={
+[114]={{40.2,19.2},{60.9,50.6},{66.6,40.7},{72.2,44.5},{79,41.8},{79.6,31.9}},
+[117]={{21.3,28.8}},
+[118]={{8.2,40.5}},
+[119]={{32.8,74.9},{44.5,36.6}}},crs={23644,23645,25215,25216,25217,25685,25686,25687,25699,28109,28110,28111,28112,29392},description="Is a common drop from water creatures like murlocs and whales. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",q=1,u=30,g={
 i(36783,{q=2,u=30}),
 i(36784,{q=3,u=30}),
 i(36782,{q=1,u=30})}}),
-i(35623,{coords={{44.9,8.6,114},{73,31.8,114},{75,54.6,116},{27.6,33.4,119},{28.5,47.3,120},{67,44.9,120},{73.9,58.6,121},{51.1,77.3,123}},crs={24601,24879,25415,26407,28784,28858,29624,30184,30848,30875},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",q=2,u=30}),
-i(35624,{coords={{64.2,23.3,116},{70,59.2,120},{15.5,77.6,121},{58.5,45.6,121},{56.6,41.7,123}},crs={26284,28597,29436,30160,30849,30876},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189978},{"o",189979},{"o",189980},{"o",189981}},q=2,u=30}),
-i(36860,{coords={{48.7,14.4,114},{62.5,41.5,120},{75.5,63.2,120},{84,71.5,123}},crs={25417,30387,30450,30847,30873,32522,32544},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",q=2,u=30}),
-i(35625,{coords={{54,17.6,117},{44.3,69.9,119},{48.9,54,119},{44,59.3,121},{9.5,61.6,123}},crs={23874,28323,29036,30845,34300},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189973},{"o",190169},{"o",190170},{"o",190171},{"o",190172},{"o",191019},{"o",191303}},q=2,u=30}),
-i(35627,{coords={{74.6,23.2,115},{18,56,123}},crs={27382,30842,30872},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189980},{"o",189981}},q=2,u=30}),
-i(35622,{coords={{46.3,13.4,114},{9.6,56.8,115},{40.1,67.7,115},{53.1,20,115},{67.3,53.4,115},{65.3,69.1,116},{61.3,23,117},{27.6,33.4,119},{41.7,62.2,120},{42,78,121},{54,50.3,121},{49.6,54.6,123}},crs={16570,21223,23919,24228,24879,25419,25715,26283,26316,28411,28862,29844,30846,30877,32544},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189978},{"o",189979}},q=2,u=30}),
+i(35623,{coords={
+[114]={{44.9,8.6},{73,31.8}},
+[116]={{75,54.6}},
+[119]={{27.6,33.4}},
+[120]={{28.5,47.3},{67,44.9}},
+[121]={{73.9,58.6}},
+[123]={{51.1,77.3}}},crs={24601,24879,25415,26407,28784,28858,29624,30184,30848,30875},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",q=2,u=30}),
+i(35624,{coords={
+[116]={{64.2,23.3}},
+[120]={{70,59.2}},
+[121]={{15.5,77.6},{58.5,45.6}},
+[123]={{56.6,41.7}}},crs={26284,28597,29436,30160,30849,30876},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189978},{"o",189979},{"o",189980},{"o",189981}},q=2,u=30}),
+i(36860,{coords={
+[114]={{48.7,14.4}},
+[120]={{62.5,41.5},{75.5,63.2}},
+[123]={{84,71.5}}},crs={25417,30387,30450,30847,30873,32522,32544},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",q=2,u=30}),
+i(35625,{coords={
+[117]={{54,17.6}},
+[119]={{44.3,69.9},{48.9,54}},
+[121]={{44,59.3}},
+[123]={{9.5,61.6}}},crs={23874,28323,29036,30845,34300},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189973},{"o",190169},{"o",190170},{"o",190171},{"o",190172},{"o",191019},{"o",191303}},q=2,u=30}),
+i(35627,{coords={
+[115]={{74.6,23.2}},
+[123]={{18,56}}},crs={27382,30842,30872},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189980},{"o",189981}},q=2,u=30}),
+i(35622,{coords={
+[114]={{46.3,13.4}},
+[115]={{9.6,56.8},{40.1,67.7},{53.1,20},{67.3,53.4}},
+[116]={{65.3,69.1}},
+[117]={{61.3,23}},
+[119]={{27.6,33.4}},
+[120]={{41.7,62.2}},
+[121]={{42,78},{54,50.3}},
+[123]={{49.6,54.6}}},crs={16570,21223,23919,24228,24879,25419,25715,26283,26316,28411,28862,29844,30846,30877,32544},description="Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",providers={{"o",189978},{"o",189979}},q=2,u=30}),
 i(33470,{description="Frostweave Cloth is a very common drop from WotLK humanoid and undead creatures.",q=1,u=30}),
 i(43102,{description="Has a chance to drop from the last boss of any Heroic WotLK dungeon.",q=3,u=30}),
-i(42253,{coords={{40.4,78,120},{37,56.2,121},{47.6,83.1,121}},crs={15974,15975,15976,28221,28342,29411,29412,29461},maps={162},q=1,u=30}),
-i(43501,{coords={{59,26.3,114},{82.9,36.4,114},{37.9,60.6,116},{58.3,28.1,119},{17.1,58.5,121}},crs={25748,25817,26174,26369,26483,27244,28004,29044,29453},maps={115},q=1,u=30}),
-i(43012,{coords={{44.7,42.4,114},{46.2,72.7,114},{26.7,51.7,119},{43.4,58.6,120},{65,43,120}},crs={25487,25488,25489,28009,29469,30445,30447},q=1,u=30}),
+i(42253,{coords={
+[120]={{40.4,78}},
+[121]={{37,56.2},{47.6,83.1}}},crs={15974,15975,15976,28221,28342,29411,29412,29461},maps={162},q=1,u=30}),
+i(43501,{coords={
+[114]={{59,26.3},{82.9,36.4}},
+[116]={{37.9,60.6}},
+[119]={{58.3,28.1}},
+[121]={{17.1,58.5}}},crs={25748,25817,26174,26369,26483,27244,28004,29044,29453},maps={115},q=1,u=30}),
+i(43012,{coords={
+[114]={{44.7,42.4},{46.2,72.7}},
+[119]={{26.7,51.7}},
+[120]={{43.4,58.6},{65,43}}},crs={25487,25488,25489,28009,29469,30445,30447},q=1,u=30}),
 i(43009,{crs={23690,23691,24681,24791,29479,29486,29487},maps={117},q=1,u=30}),
-i(43011,{coords={{39.5,71.8,114},{48.7,47.8,114},{24.6,50.3,116},{28.6,6.3,116},{73.3,32.9,116},{32.9,3.55,117},{74.8,33.4,117},{47.1,54.9,120}},crs={24026,24128,24517,25675,26592,27408,30164},q=1,u=30}),
-i(43010,{coords={{82.2,31.3,114},{51.3,23.9,115},{57.3,12.3,115},{27.6,46.7,120},{47.1,54.9,120},{55.9,64.2,120}},crs={25454,26293,26358,26359,26467,29390,30148,30291,30422},q=1,u=30})}})}}),
+i(43011,{coords={
+[114]={{39.5,71.8},{48.7,47.8}},
+[116]={{24.6,50.3},{28.6,6.3},{73.3,32.9}},
+[117]={{32.9,3.55},{74.8,33.4}},
+[120]={{47.1,54.9}}},crs={24026,24128,24517,25675,26592,27408,30164},q=1,u=30}),
+i(43010,{coords={
+[114]={{82.2,31.3}},
+[115]={{51.3,23.9},{57.3,12.3}},
+[120]={{27.6,46.7},{47.1,54.9},{55.9,64.2}}},crs={25454,26293,26358,26359,26467,29390,30148,30291,30422},q=1,u=30})}})}}),
 x(4,{awp=40003,u=40,g={
 flt(3,{u=40,g={
 s(203775,55315,{f=3,lvl=84,q=2,u=40}),
@@ -6403,20 +6664,44 @@ i(52340,{description="Is a rare drop from humanoid water creatures like gilblins
 i(62791,{providers={{"i",65513}},q=1,u=40}),
 i(52338,{u=40}),
 i(52339,{u=40})}}),
-i(62783,{coords={{41.8,20.8,207},{56,86.1,207}},crs={43181,43981},providers={{"i",65513}},q=1,u=40}),
+i(62783,{coords={
+[207]={{41.8,20.8},{56,86.1}}},crs={43181,43981},providers={{"i",65513}},q=1,u=40}),
 i(52078,{description="Guaranteed drop from the last boss in any Heroic Cataclysm dungeon.",q=3,u=40}),
-i(62784,{coords={{41.3,47,244},{47.7,29.4,249},{56.6,22,249},{57,49.2,249},{64,78.9,249}},crs={45321,46317,51675},providers={{"i",65513}},q=1,u=40}),
-i(62785,{coords={{43,43.4,198},{54,50.1,241},{65.5,29.5,241},{44.1,70.2,249},{68,62.8,249}},crs={42657,42658,42659,42660,46158,46162,47202},providers={{"i",65513}},q=1,u=40}),
-i(62782,{coords={{40.9,12.6,207},{56,86.1,207},{29.1,32,241},{63.2,77.5,241}},crs={42522,43971,45748,46141,47796,47797},providers={{"i",65513}},q=1,u=40}),
-i(62781,{coords={{54.8,49.9,201},{51.6,72.1,204},{54.2,62.3,204},{54.7,47.3,204},{55.5,83.7,205}},crs={40223,40802,42108},providers={{"i",65513}},q=1,u=40}),
-i(62779,{coords={{44.5,57,204}},crs={39418,39918,40276,40685,40798,40889,41609,41922},maps={201,205},providers={{"i",65513}},q=1,u=40}),
-i(62780,{coords={{57.2,37.6,201}},crs={39948},providers={{"i",65513}},q=1,u=40}),
-i(62778,{coords={{53.5,31.5,241},{55.1,70.9,241},{65.5,29.5,241}},crs={46153,46970},description="Can drop from all Cataclysm red meat animals.",providers={{"i",65513}},q=1,u=40}),
-i(52328,{coords={{27.9,39.9,198},{38.6,82.7,241},{40.2,47.6,241},{39.4,42.5,249}},crs={39844,45755,46328,47728,51672},maps={325},providers={{"i",67494},{"i",67495},{"i",67539},{"i",69817}},q=1,u=40}),
-i(52327,{coords={{64.9,54.1,198},{65.8,22.7,198},{58.2,29.8,241},{27,40,338}},crs={40229,41565,47226,52107,52414},description="Access to some of the listed mobs and locations in Mount Hyjal requires quest progression through the zone.",providers={{"i",67495},{"i",67539}},q=1,u=40}),
-i(52325,{coords={{11.6,39.5,198},{20.1,59.1,198},{26,41.1,198},{35.5,55.4,198},{44.1,85.7,198},{46.6,28.2,198},{51.9,77.4,198},{58.4,82.4,198},{39.2,77.9,241},{40.5,17.1,241},{42.4,23.5,241},{50,70,338}},crs={38876,40464,40709,40841,45258,46327,48016,52219,52300,52503,52794,52816},description="Fishing is the most efficient way to get these. Access to some of the listed mobs and locations in Mount Hyjal requires quest progression through the zone.",providers={{"i",67495},{"i",67539},{"o",207734}},q=1,u=40}),
+i(62784,{coords={
+[244]={{41.3,47}},
+[249]={{47.7,29.4},{56.6,22},{57,49.2},{64,78.9}}},crs={45321,46317,51675},providers={{"i",65513}},q=1,u=40}),
+i(62785,{coords={
+[198]={{43,43.4}},
+[241]={{54,50.1},{65.5,29.5}},
+[249]={{44.1,70.2},{68,62.8}}},crs={42657,42658,42659,42660,46158,46162,47202},providers={{"i",65513}},q=1,u=40}),
+i(62782,{coords={
+[207]={{40.9,12.6},{56,86.1}},
+[241]={{29.1,32},{63.2,77.5}}},crs={42522,43971,45748,46141,47796,47797},providers={{"i",65513}},q=1,u=40}),
+i(62781,{coords={
+[201]={{54.8,49.9}},
+[204]={{51.6,72.1},{54.2,62.3},{54.7,47.3}},
+[205]={{55.5,83.7}}},crs={40223,40802,42108},providers={{"i",65513}},q=1,u=40}),
+i(62779,{coords={
+[204]={{44.5,57}}},crs={39418,39918,40276,40685,40798,40889,41609,41922},maps={201,205},providers={{"i",65513}},q=1,u=40}),
+i(62780,{coords={
+[201]={{57.2,37.6}}},crs={39948},providers={{"i",65513}},q=1,u=40}),
+i(62778,{coords={
+[241]={{53.5,31.5},{55.1,70.9},{65.5,29.5}}},crs={46153,46970},description="Can drop from all Cataclysm red meat animals.",providers={{"i",65513}},q=1,u=40}),
+i(52328,{coords={
+[198]={{27.9,39.9}},
+[241]={{38.6,82.7},{40.2,47.6}},
+[249]={{39.4,42.5}}},crs={39844,45755,46328,47728,51672},maps={325},providers={{"i",67494},{"i",67495},{"i",67539},{"i",69817}},q=1,u=40}),
+i(52327,{coords={
+[198]={{64.9,54.1},{65.8,22.7}},
+[241]={{58.2,29.8}},
+[338]={{27,40}}},crs={40229,41565,47226,52107,52414},description="Access to some of the listed mobs and locations in Mount Hyjal requires quest progression through the zone.",providers={{"i",67495},{"i",67539}},q=1,u=40}),
+i(52325,{coords={
+[198]={{11.6,39.5},{20.1,59.1},{26,41.1},{35.5,55.4},{44.1,85.7},{46.6,28.2},{51.9,77.4},{58.4,82.4}},
+[241]={{39.2,77.9},{40.5,17.1},{42.4,23.5}},
+[338]={{50,70}}},crs={38876,40464,40709,40841,45258,46327,48016,52219,52300,52503,52794,52816},description="Fishing is the most efficient way to get these. Access to some of the listed mobs and locations in Mount Hyjal requires quest progression through the zone.",providers={{"i",67495},{"i",67539},{"o",207734}},q=1,u=40}),
 i(52329,{providers={{"i",67495},{"i",67539},{"i",69817},{"o",202747},{"o",202748},{"o",202749},{"o",202750},{"o",202751},{"o",202752}},q=1,u=40}),
-i(52326,{coords={{33,63.8,241},{68.1,48.8,241}},crs={44011,46329},description="Protip: Do not forget Potion of Treasure Finding when farming the mobs.",providers={{"i",67495},{"i",67539},{"o",207724}},q=1,u=40})}})}}),
+i(52326,{coords={
+[241]={{33,63.8},{68.1,48.8}}},crs={44011,46329},description="Protip: Do not forget Potion of Treasure Finding when farming the mobs.",providers={{"i",67495},{"i",67539},{"o",207724}},q=1,u=40})}})}}),
 x(5,{awp=50004,g={
 h(-51,{
 s(268897,82139,{f=4,lvl=86,q=2}),
@@ -7031,10 +7316,13 @@ i(100863,{awp=50400,b=1,f=50,q=3,requireSkill=197,u=54,g={
 r(146925,{learnedAt=600,requireSkill=197,u=54}),
 r(143011,{learnedAt=600,requireSkill=197,u=54})}})})}),
 flt(50,{
+cu(738),
 i(89112,{b=1,q=1}),
 i(74849,{description="Pink Turnip drops off any Yaungol in Pandaria. Located mostly in Kun-Lai Summit and Townlong Steppes.",q=1}),
 i(74844,{description="Drops from Jinyu, Sprites or Zandalari. Located in almost every zone.",q=1}),
-i(76061,{b=1,q=3})})}}),
+i(76061,{b=1,q=3}),
+cu(395,{awp=40003,rwp=60002}),
+cu(396,{awp=40003,rwp=60002})})}}),
 ah(1810,{description="These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",type="s",g={
 i(16882,{q=1,sym={{"select","itemID",11968,4999,11984,11994,12054,6375,5002,11969,6454,12006,7360,5972,2601,7092,7364,7363,4350,6390,3611,6044,3608,5578,10424,2882,12007,3396,12008,11967}},g={
 s(119604,4446,{f=20,lvl=21,q=3}),
@@ -7074,7 +7362,8 @@ ah(921,{description="A Rogue can use their Pick Pocket skill to steal the follow
 x(1,{
 i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",q=1})}),
 x(3,{
-i(37674,{coords={{47.8,49.4,115}},crs={27539},description="If only they would have read this."}),
+i(37674,{coords={
+[115]={{47.8,49.4}}},crs={27539},description="If only they would have read this."}),
 flt(55,{
 i(40202,{f=55,lvl=75,q=1})}),
 flt(102,{awp=30002,g={
@@ -7082,5 +7371,5 @@ toy(36863,{description="Can be pickpocketed from Northrend humanoids.",q=1}),
 toy(36862,{description="Can be pickpocketed from Northrend humanoids.",q=1})}})}),
 x(4,{awp=40001,g={
 flt(102,{
-toy(63269,{description="Can be pickpocketed from Cataclysm humanoids.",q=1})})}})}})};
+toy(63269,{description="Can be pickpocketed from Cataclysm humanoids.",q=1})})}})}})}});
 end);

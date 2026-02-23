@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ah,h,inst,m,q,x=_.CreateHeader,_.CreateCustomHeader,_.CreateInstance,_.CreateMap,_.CreateQuest,_.CreateExpansion;
 categories.HiddenQuestTriggers={
 x(1,{
@@ -37,13 +37,13 @@ m(1946,{
 h(-45,{
 q(9734,{type="hqt"}),
 q(9733,{type="hqt"})})})}}),
-h(-582,{awp=20400,e=11,g={
-h(-45,{e=11,g={
-q(11976,{e=11,type="hqt"})}})}}),
 q(8329,{type="hqt"}),
 q(11518,{type="hqt"}),
 q(11522,{type="hqt"}),
-q(12494,{type="hqt"})}),
+q(12494,{type="hqt"}),
+h(-582,{awp=20400,e=11,g={
+h(-45,{e=11,g={
+q(11976,{e=11,type="hqt"})}})}})}),
 x(3,{
 inst(758,{awp=30300,isRaid=1,savedInstanceID=631,g={
 q(24808,{repeatable=1,type="hqt"}),
@@ -77,10 +77,6 @@ q(13700,{type="hqt"}),
 q(13701,{type="hqt"}),
 q(13686,{type="hqt"}),
 q(13687,{type="hqt"})})})}})}}),
-h(-559,{awp=30103,e=13,g={
-h(-45,{e=13,g={
-q(13959,{e=13,type="hqt"}),
-q(13960,{e=13,type="hqt"})}})}}),
 h(-34,{awp=30300,g={
 q(24887,{type="hqt"}),
 q(24895,{type="hqt"})}}),
@@ -90,7 +86,11 @@ q(14438,{type="hqt"}),
 q(14439,{type="hqt"}),
 q(14185,{type="hqt"}),
 q(14186,{type="hqt"}),
-q(14187,{type="hqt"})}),
+q(14187,{type="hqt"}),
+h(-559,{awp=30103,e=13,g={
+h(-45,{e=13,g={
+q(13959,{e=13,type="hqt"}),
+q(13960,{e=13,type="hqt"})}})}})}),
 h(-521,{u=3}),
 h(-55,{
 q(909,{type="hqt"}),

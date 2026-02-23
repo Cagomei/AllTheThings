@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local flt,prof,r,s=_.CreateFilter,_.CreateProfession,_.CreateRecipe,_.CreateItemSource;
 categories.Unsorted={
 flt(4,{

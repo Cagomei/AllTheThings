@@ -1,17 +1,21 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,flt,h,i,mnt,p,q,s,settings,toy,x=_.CreateAchievement,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.Settings,_.CreateToy,_.CreateExpansion;
-categories.Promotions={
+categories.Promotions=
+h(-736,{SortPriority=90,g={
 h(-520,{
 p(107,{awp=11101,b=1,itemID=20371,petTypeID=1,q=3,spellID=24696,u=2}),
 toy(33079,{awp=20103,b=1,q=3,u=2})}),
 x(2,{u=3,g={
-q(63768,{altQuests={63767},coords={{28.2,75.8,1434}},crs={5111,6735,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
+q(63768,{altQuests={63767},coords={
+[1434]={{28.2,75.8}}},crs={5111,6735,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
 toy(32542,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 5th May 2021 until 5th Nov 2022.",q=3,u=3})}}),
-q(65285,{altQuests={65284},coords={{28.2,75.8,1434}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
+q(65285,{altQuests={65284},coords={
+[1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
 toy(33219,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022.",q=3,u=3})}}),
-q(65562,{altQuests={65561},coords={{28.2,75.8,1434}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
+q(65562,{altQuests={65561},coords={
+[1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
 s(134092,23705,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022 or a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",f=9,q=4,u=3})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
 mnt(42777,{b=1,description="Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",itemID=33225,lvl=60,q=4,u=2}))}}),
 h(-521,{u=3,g={
@@ -34,7 +38,8 @@ p(131,{b=1,itemID=25535,petTypeID=2,q=3,rwp=30002,spellID=32298,u=3}),(function(
 p(111,{b=1,description="This was only available in the EU.",itemID=30360,petTypeID=1,q=3,rwp=30002,spellID=24988,u=3}))}}),
 h(-524,{awp=20501,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=30400,u=3,g={
 h(-45,{u=3,g={
-q(63450,{altQuests={63448},coords={{28,75.8,1434}},crs={5111,6740,6741,6746,6929,16618,16739,17630},maps={1453,1454,1455,1456,1458,1947,1954},qgs={17249},u=3,g={
+q(63450,{altQuests={63448},coords={
+[1434]={{28,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,17630},maps={1453,1454,1455,1456,1458,1947,1954},qgs={17249},u=3,g={
 mnt(348459,{itemID=184865,lvl=30,u=3}),
 toy(184871,{u=3}),
 toy(38233,{b=1,q=3,u=3})}})}})}}),
@@ -108,5 +113,5 @@ toy(32542,{awp=20100,b=1,q=3,u=2}),
 toy(34499,{awp=20300,b=1,q=3,u=2}),
 i(23714,{awp=20203,b=1,f=53,q=4,u=2}),
 toy(32566,{awp=20100,b=1,q=3,u=2}),
-toy(38578,{awp=20501,b=1,model=200314,modelScale=2,q=3,u=2})}})}})};
+toy(38578,{awp=20501,b=1,model=200314,modelScale=2,q=3,u=2})}})}})}});
 end);

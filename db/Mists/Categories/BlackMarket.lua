@@ -1,10 +1,10 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildDataCache", function(categories)
 local crit,flt,gs,h,i,mnt,n,p,r,s,toy=_.CreateAchievementCriteria,_.CreateFilter,_.CreateGearSet,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateRecipe,_.CreateItemSource,_.CreateToy;
-categories.BlackMarket={
-h(-554,{awp=50004,maps={433},u=3,g={
-h(-88,{u=3,g={
+categories.BlackMarket=
+h(-554,{SortPriority=80,g={
+h(-88,{awp=50004,u=3,g={
 s(272086,86993,{description="Only available on the BMAH for a limited time!",f=4,lvl=90,q=4,rwp=60002,u=3}),
 s(272087,86994,{description="Only available on the BMAH for a limited time!",f=4,lvl=90,q=4,rwp=60002,u=3}),
 s(272092,86999,{description="Only available on the BMAH for a limited time!",f=7,lvl=90,q=4,rwp=60002,u=3}),
@@ -15,7 +15,7 @@ s(272093,87000,{description="Only available on the BMAH for a limited time!",f=7
 s(272094,87001,{description="Only available on the BMAH for a limited time!",f=7,lvl=90,q=4,rwp=60002,u=3}),
 s(272085,86992,{description="Only available on the BMAH for a limited time!",f=4,lvl=90,q=4,rwp=60002,u=3}),
 s(272088,86995,{description="Only available on the BMAH for a limited time!",f=5,lvl=90,q=4,rwp=60002,u=3})}}),
-flt(101,{u=3,g={
+flt(101,{awp=50004,u=3,g={
 p(212,{itemID=44984,npcID=33205,q=3,spellID=62562,u=3}),
 p(57,{itemID=34535,npcID=7547,q=1,spellID=10696,u=3}),
 p(156,{b=1,itemID=32588,npcID=23234,q=3,spellID=40549,u=3}),
@@ -60,7 +60,7 @@ p(58,{itemID=8499,npcID=7544,q=1,spellID=10697,u=3}),
 p(167,{b=1,itemID=69991,npcID=25062,q=3,spellID=45082,u=3}),
 p(206,{itemID=44971,npcID=33197,q=3,spellID=62510,u=3}),
 p(241,{b=1,itemID=49287,npcID=36482,q=4,spellID=68767,u=3})}}),
-flt(100,{u=3,g={
+flt(100,{awp=50004,u=3,g={
 mnt(40192,{b=1,itemID=32458,lvl=70,q=4,u=3}),
 mnt(59567,{b=1,itemID=43952,lvl=70,q=4,u=3}),
 mnt(107842,{b=1,itemID=77067,lvl=85,q=4,u=3}),
@@ -86,10 +86,10 @@ mnt(88746,{b=1,itemID=63043,lvl=70,q=4,u=3}),
 mnt(54753,{b=1,itemID=43962,lvl=40,q=4,u=3}),
 mnt(74918,{itemID=54068,lvl=40,q=4,u=3}),
 mnt(46199,{itemID=49286,lvl=20,q=4,u=3})}}),
-flt(104,{u=3,g={
+flt(104,{awp=50004,u=3,g={
 i(50379,{lvl=80,q=4,r=2,u=3}),
 i(50380,{lvl=80,q=4,r=1,u=3})}}),
-flt(200,{u=3,g={
+flt(200,{awp=50004,u=3,g={
 r(124638,{itemID=86238,learnedAt=600,q=4,requireSkill=165,u=3}),
 r(124643,{itemID=86272,learnedAt=600,q=4,requireSkill=165,u=3}),
 r(125559,{itemID=86380,learnedAt=600,q=4,requireSkill=197,u=3}),
@@ -108,9 +108,9 @@ r(126851,{itemID=87409,learnedAt=600,q=4,requireSkill=164,u=3}),
 r(126855,{itemID=87413,learnedAt=600,q=4,requireSkill=164,u=3}),
 r(126852,{itemID=87410,learnedAt=600,q=4,requireSkill=164,u=3}),
 r(126850,{itemID=87408,learnedAt=600,q=4,requireSkill=164,u=3})}}),
-flt(10,{u=3,g={
+flt(10,{awp=50004,u=3,g={
 s(175463,45037,{b=1,f=10,filterForRWP=2,q=4,u=3})}}),
-flt(9,{u=3,g={
+flt(9,{awp=50004,u=3,g={
 s(145472,38312,{b=1,f=9,q=4,u=3}),
 s(134092,23705,{b=1,f=9,q=4,u=3}),
 s(134096,23709,{b=1,f=9,q=4,u=3}),
@@ -119,7 +119,7 @@ s(145469,38309,{b=1,f=9,q=4,u=3}),
 s(145470,38310,{b=1,f=9,q=4,u=3}),
 s(201599,38314,{b=1,f=9,q=4,u=3}),
 s(145471,38311,{b=1,f=9,q=4,u=3})}}),
-h(-225,{u=3,g={
+h(-225,{awp=50004,u=3,g={
 gs(355,{u=3,g={
 s(201215,22514,{b=1,f=4,lvl=60,q=4,u=3}),
 s(132914,22515,{b=1,f=4,lvl=60,q=4,u=3}),
@@ -201,7 +201,7 @@ s(132820,22421,{b=1,f=7,lvl=60,q=4,u=3}),
 s(132821,22422,{b=1,f=7,lvl=60,q=4,u=3}),
 s(132816,22417,{b=1,f=7,lvl=60,q=4,u=3}),
 s(132819,22420,{b=1,f=7,lvl=60,q=4,u=3})}})}}),
-flt(102,{u=3,g={
+flt(102,{awp=50004,u=3,g={
 toy(33223,{b=1,q=3,u=3}),
 toy(45063,{b=1,q=3,u=3}),
 toy(33219,{b=1,q=3,u=3}),
@@ -211,7 +211,7 @@ toy(46780,{b=1,q=3,u=3}),
 toy(34499,{b=1,q=3,u=3}),
 toy(32566,{b=1,q=3,u=3}),
 toy(38578,{b=1,q=3,u=3})}}),
-h(-101,{u=3,g={
+h(-101,{awp=50004,u=3,g={
 s(172714,39769,{b=1,f=22,lvl=70,q=4,u=3}),
 s(274090,90176,{b=1,f=31,lvl=90,q=4,u=3}),
 s(175458,44924,{b=1,f=22,lvl=85,q=4,u=3})}}),
@@ -219,6 +219,7 @@ i(93194,{awp=50100,b=1,lvl=90,q=3,r=2,rwp=60002,u=51}),
 i(93227,{awp=50100,b=1,lvl=90,q=3,r=1,rwp=60002,u=51}),
 i(102137,{awp=50400,b=1,q=4,rwp=60002,skipFill=1,sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58},{"not","itemID",102137,97565}},u=3}),
 i(97565,{awp=50300,b=1,q=4,rwp=50400,u=2}),
-h(-58,{u=3,g={
-n(62943,{coords={{63.8,75.8,433}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=3})}})}})};
+h(-58,{awp=50004,u=3,g={
+n(62943,{coords={
+[433]={{63.8,75.8}}},sym={{"select","headerID",-554},{"pop"},{"exclude","headerID",-58}},u=3})}})}});
 end);

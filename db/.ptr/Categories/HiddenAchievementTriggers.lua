@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ach,crit,x=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateExpansion;
 categories.HiddenAchievementTriggers={
 x(3,{awp=30000,g={
@@ -3662,6 +3662,7 @@ ach(41294),
 ach(41295),
 ach(61444),
 ach(61445),
+ach(61456),
 ach(61511),
 ach(61512),
 ach(61513),
@@ -3701,11 +3702,23 @@ ach(61787),
 ach(61788),
 ach(61789),
 ach(61790),
-ach(61791)}),
+ach(61791),
+ach(62145),
+ach(62146),
+ach(62147),
+ach(62148),
+ach(62149),
+ach(62150),
+ach(62151),
+ach(62152),
+ach(62230),
+ach(62415)}),
 x(12.0000001,{
 ach(62292),
 ach(62293),
 ach(62294),
 ach(62295),
-ach(62296)})}})};
+ach(62296),
+ach(62496),
+ach(62489)})}})};
 end);

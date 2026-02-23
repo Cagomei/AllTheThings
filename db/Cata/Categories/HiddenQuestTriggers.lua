@@ -1,6 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ah,h,inst,m,q,x=_.CreateHeader,_.CreateCustomHeader,_.CreateInstance,_.CreateMap,_.CreateQuest,_.CreateExpansion;
 categories.HiddenQuestTriggers={
 x(1,{
@@ -34,12 +34,12 @@ m(1946,{
 h(-45,{
 q(9734,{type="hqt"}),
 q(9733,{type="hqt"})})})}}),
-h(-582,{awp=20400,e=11,g={
-h(-45,{e=11,g={
-q(11976,{e=11,type="hqt"})}})}}),
 q(11518,{type="hqt"}),
 q(11522,{type="hqt"}),
-q(12494,{type="hqt"})}),
+q(12494,{type="hqt"}),
+h(-582,{awp=20400,e=11,g={
+h(-45,{e=11,g={
+q(11976,{e=11,type="hqt"})}})}})}),
 x(3,{
 inst(758,{awp=30300,isRaid=1,savedInstanceID=631,g={
 q(24808,{repeatable=1,type="hqt"}),
@@ -73,10 +73,6 @@ q(13700,{type="hqt"}),
 q(13701,{type="hqt"}),
 q(13686,{type="hqt"}),
 q(13687,{type="hqt"})})})}})}}),
-h(-559,{awp=30103,e=13,g={
-h(-45,{e=13,g={
-q(13959,{e=13,type="hqt"}),
-q(13960,{e=13,type="hqt"})}})}}),
 h(-34,{awp=30300,g={
 q(24887,{type="hqt"}),
 q(24895,{type="hqt"})}}),
@@ -84,7 +80,11 @@ q(12845,{type="hqt"}),
 q(12452,{type="hqt"}),
 q(14185,{type="hqt"}),
 q(14186,{type="hqt"}),
-q(14187,{type="hqt"})}),
+q(14187,{type="hqt"}),
+h(-559,{awp=30103,e=13,g={
+h(-45,{e=13,g={
+q(13959,{e=13,type="hqt"}),
+q(13960,{e=13,type="hqt"})}})}})}),
 x(4,{
 inst(78,{awp=40200,isRaid=1,savedInstanceID=720,g={
 ah(71086,{type="i",g={
@@ -148,11 +148,6 @@ q(26902,{type="hqt"}),
 q(28846,{type="hqt"}),
 q(25226,{type="hqt"}),
 q(25245,{type="hqt"})})}})}}),
-h(-45,{awp=40302,g={
-q(30561,{type="hqt"})}}),
-h(-582,{awp=40003,e=11,g={
-h(-45,{e=11,g={
-q(28761,{e=11,type="hqt"})}})}}),
 m(206,{awp=40003,g={
 q(82808,{type="hqt"})}}),
 q(26151,{type="hqt"}),
@@ -174,7 +169,12 @@ q(29292,{type="hqt"}),
 q(26565,{type="hqt"}),
 q(26741,{type="hqt"}),
 q(24644,{type="hqt"}),
-q(13541,{type="hqt"})}),
+q(13541,{type="hqt"}),
+h(-45,{awp=40302,g={
+q(30561,{type="hqt"})}}),
+h(-582,{awp=40003,e=11,g={
+h(-45,{e=11,g={
+q(28761,{e=11,type="hqt"})}})}})}),
 h(-521,{u=3}),
 h(-55,{
 q(909,{type="hqt"}),

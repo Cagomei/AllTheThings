@@ -1,9 +1,10 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cat,cq,crit,cs,de,flt,h,i,ill,mm,mnt,n,o,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDecor,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateIllusion,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
-local a={{"i",10620},{"i",13463},{"i",13464},{"i",13465},{"i",13466},{"i",13467},{"i",22785},{"i",22786},{"i",22787},{"i",22789},{"i",22790},{"i",22792},{"i",22793},{"i",23424},{"i",23425},{"i",2450},{"i",2452},{"i",2453},{"i",2770},{"i",2771},{"i",2772},{"i",3355},{"i",3356},{"i",3357},{"i",3358},{"i",3369},{"i",36901},{"i",36903},{"i",36904},{"i",36905},{"i",36906},{"i",36907},{"i",36909},{"i",36910},{"i",36912},{"i",37921},{"i",3818},{"i",3819},{"i",3820},{"i",3821},{"i",3858},{"i",39970},{"i",44946},{"i",4625},{"i",67539},{"i",69823},{"i",785},{"i",8831},{"i",8836},{"i",8838},{"i",8839},{"i",8845},{"i",8846},{"n",1328},{"n",16442},{"n",48861},{"n",49519},{"n",49688},{"n",49703},{"n",50248},{"o",123309},{"o",123848},{"o",142140},{"o",142142},{"o",142143},{"o",142144},{"o",142145},{"o",1619},{"o",1620},{"o",1621},{"o",1622},{"o",1623},{"o",1624},{"o",1628},{"o",165658},{"o",1731},{"o",1732},{"o",1733},{"o",1734},{"o",1735},{"o",175404},{"o",176583},{"o",176584},{"o",176586},{"o",176587},{"o",176588},{"o",177388},{"o",180655},{"o",180658},{"o",180662},{"o",180682},{"o",180683},{"o",180685},{"o",180712},{"o",180751},{"o",180901},{"o",181068},{"o",181069},{"o",181270},{"o",181271},{"o",181275},{"o",181277},{"o",181278},{"o",181279},{"o",181280},{"o",181281},{"o",181555},{"o",181556},{"o",181557},{"o",181569},{"o",181570},{"o",182951},{"o",182952},{"o",182953},{"o",182954},{"o",182956},{"o",182957},{"o",182958},{"o",182959},{"o",189973},{"o",189978},{"o",189979},{"o",189980},{"o",189981},{"o",190169},{"o",190170},{"o",190171},{"o",190172},{"o",191019},{"o",191133},{"o",191303},{"o",192046},{"o",192048},{"o",192049},{"o",192050},{"o",192051},{"o",192052},{"o",192053},{"o",192054},{"o",192057},{"o",192059},{"o",202736},{"o",202737},{"o",202738},{"o",202739},{"o",202740},{"o",202741},{"o",202747},{"o",202748},{"o",202749},{"o",202750},{"o",202751},{"o",202752},{"o",202776},{"o",202777},{"o",202778},{"o",202779},{"o",202780},{"o",2040},{"o",2041},{"o",2042},{"o",2043},{"o",2044},{"o",2045},{"o",2046},{"o",2047},{"o",206085},{"o",208311},{"o",216761},{"o",216764},{"o",2866},{"o",324},{"o",375234},{"o",375235},{"o",375238},{"o",375239},{"o",375240},{"o",375242},{"o",375243},{"o",375244},{"o",375245},{"o",375246},{"o",381196},{"o",381197},{"o",381198},{"o",381199},{"o",381200},{"o",381201},{"o",381202},{"o",381203},{"o",381204},{"o",381205},{"o",381210},{"o",381211},{"o",381212},{"o",381213},{"o",381214},{"o",381515},{"o",381516},{"o",381517},{"o",381518},{"o",381519},{"o",390137},{"o",390138},{"o",390139},{"o",390140},{"o",390141},{"o",390142},{"o",398759},{"o",398760},{"o",398761},{"o",398762},{"o",398764},{"o",398765},{"o",398766},{"o",398767},{"o",73940},{"o",73941},{"s",13262},{1,11},{1,2,6},{1,3,4,7,11,22,25,29,30,32,34,37,52,85},{1,7,10,18,21,27,37,48,52,62,76,94,95,97,106},{1,7,10,18,21,27,37,48,52,62},{1,7,18,21,27,37,48,52,57,62},{1,7,18,21,27,37,52,57},{1,7,18,27,37,48,52,57,62},{1},{10,11},{10,14,17,21,25,26,50,51,52,56,62,63,64,66,69,70,71,76,199,210},{10,14,17,21,25,26,51,52,56,62,63,64,66,69,70,71,76,199},{10,21,25,48,52,56,57,62,76},{10,21,47,49,52,62,76},{10,21,48,52,62,76},{10,25,47,56,62,65,76},{10.77,74.71,76},{10},{100,102,104,105,107,108,109},{102,104,105,107,108,109,122},{102,107,108},{102,108},{102,262,263,265},{102},{104,105,107,108,109,122,256,258,260,262,263,265,272},{104,105,107,108,109},{104},{107},{108},{109},{11},{114,115,116,117,121},{114,115,116,117},{114,116,117,119},{114},{115,118,119,120,123},{116,117,119},{116},{117},{118,119,120,123},{118,120},{119},{12},{122},{123},{125,126},{127},{13.13,26.23,95},{14,15,22,23,25,26,47,50,56,63,65,66,69,199,210},{14,15,22,23,26,32,36,64,66,69,71,77,199,210},{14,15,22,23,26,66,69,199,210},{14,17,22,23,26,65,66,69,70,78,80},{14,22,23,26,69,70,199,210},{14,22,26,47,50,56,69,199},{14,23,26,50,56,70,199},{14,26,69,70,199,210},{14,50,56,63,65,66},{14,65},{14.9,28.9,102},{14020},{15,17,23,32,36,51,64,69,71,77,78,81,83},{15,23,32,36,64,69,71,77},{15,23,32,36,64,71,81},{15,32,36,71},{15,51,77,78,81},{15,64,77,78,83},{1525,1533,1536,1565},{17,23,51,64,71},{17,36,77,81},{17,51,71},{17,51,78,81,83},{17,51},{17,78,81,83},{17,81},{17},{198,201,204,205,207},{198,201},{198,207,241,244,245,249},{2,5,6,8,9,10,26,27,28,31,35,36,70,84},{2,5,7,10,11,13},{2,5,7,8,9,10,11},{2},{201,205,241,245},{2022,2023,2024,2025,2133},{2022,2023,2024,2025},{2023},{2024},{207},{21,25,26,50,51,52,56,62,63,64,70,210},{21,25,47,48,49,56,63},{2133,2151},{2133},{22,26,70,71},{22,69,210},{22.7,65.4,204},{22.9,67.2,100},{220},{2200},{232,242},{24.7,19.1,102},{241,244,245,249},{241},{245,249},{247,320},{249},{25,47,50,56,63,65},{25,47,50,63,65},{25,50,56,63,65},{25,56,63,65},{256,258,260,262,263,265,272},{27.2,34.8,207},{28.1,61.9,103},{287},{29.1,33,198},{29.2,81.3,105},{29.5,67,105},{3,4,7,10,11},{3,7,13},{3},{30,50,95},{31.1,67.6,114},{32.1,55,105},{33.2,66.7,121},{33.5,52.7,15},{33.5,66.6,114},{337},{34.7,18,102},{34.8,40.4,105},{36.5,32.5,104},{37.3,45.9,10},{38.3,64.1,205},{38.5,88.3,100},{38.6,67.5,77},{39.3,9.7,108},{39.45,45.1,77},{39.8,49.2,244},{39.9,74.9,10},{4,10,11},{4},{40.1,67.7,115},{40.2,18.4,105},{41,36.2,204},{41,79.1,241},{41.2,29.8,198},{42.2,36.1,77},{42},{43.1,80.27,89},{43.4,55.8,104},{44.6,34.3,108},{45.02,23.54,108},{46.6,40.7,108},{46.65,18.9,69},{47.4,33.73,88},{48.05,13.3,69},{48.05,18.54,89},{48.8,48.4,115},{49.06,33.58,47},{49.2,5.9,69},{49.35,23.2,69},{49.35,30.85,77},{49.7,32.2,249},{5,8,9},{5},{50,210},{50,81.2,78},{50.1,69.7,115},{50.21,38.36,249},{50.4,35.4,205},{51.6,45,114},{51.8,74.6,90},{51},{52.4,77,198},{52.6,17.3,198},{52.8,13.9,69},{53.5,7.5,69},{55.6,85.6,84},{55.8,24.5,89},{56,80.6,10},{56.2,22.6,249},{56.2,34.2,85},{56.4,60,109},{56.6,48.9,249},{56.95,85.55,77},{57.11,37.52,56},{59.6,59.85,108},{6},{60.6,71.7,81},{60.8,25.9,198},{61,11,105},{62,77.9,249},{62.4,49,108},{62.7,19.5,100},{62.9,51.5,69},{63.5,72.5,115},{63.8,64.3,125},{63.9,68.3,105},{64.5,33,105},{64.9,58.1,69},{66,78.3,108},{66.1,86.2,64},{66.3,61.8,109},{66.6,54.6,87},{67,19.2,110},{67.5,11.7,105},{68.3,69.9,207},{68.5,44.4,109},{68.7,30.5,108},{69.4,68.1,207},{69.6,68.9,198},{7},{70.6,33.7,114},{71.8,63.1,207},{71},{72.1,52.85,69},{72.4,20.2,105},{73.5,63.5,69},{75.3,46.2,69},{76.27,52.64,241},{76.6,49.4,241},{76.8,41.9,207},{76.8,61.5,69},{77},{78.1,30,102},{78.6,76.2,241},{79.37,78.53,241},{8.3,52.7,102},{8.7,50.8,100},{8},{81},{82.9,90.3,117},{83},{88.1,33.6,102},{89.9,38.5,115},{9},{91,28.6,115},{92,69,115},{92.8,58.2,115},{92.9,48.2,115},{94}};
-categories.Craftables={
+local a={{"i",10620},{"i",13463},{"i",13464},{"i",13465},{"i",13466},{"i",13467},{"i",22785},{"i",22786},{"i",22787},{"i",22789},{"i",22790},{"i",22792},{"i",22793},{"i",23424},{"i",23425},{"i",2450},{"i",2452},{"i",2453},{"i",2770},{"i",2771},{"i",2772},{"i",3355},{"i",3356},{"i",3357},{"i",3358},{"i",3369},{"i",36901},{"i",36903},{"i",36904},{"i",36905},{"i",36906},{"i",36907},{"i",36909},{"i",36910},{"i",36912},{"i",37921},{"i",3818},{"i",3819},{"i",3820},{"i",3821},{"i",3858},{"i",39970},{"i",44943},{"i",4625},{"i",67539},{"i",69823},{"i",785},{"i",8831},{"i",8836},{"i",8838},{"i",8839},{"i",8845},{"i",8846},{"n",1328},{"n",16442},{"n",48861},{"n",49519},{"n",49688},{"n",49703},{"n",50248},{"o",123309},{"o",123848},{"o",142140},{"o",142142},{"o",142143},{"o",142144},{"o",142145},{"o",1619},{"o",1620},{"o",1621},{"o",1622},{"o",1623},{"o",1624},{"o",1628},{"o",165658},{"o",1731},{"o",1732},{"o",1733},{"o",1734},{"o",1735},{"o",175404},{"o",176583},{"o",176584},{"o",176586},{"o",176587},{"o",176588},{"o",177388},{"o",180655},{"o",180658},{"o",180662},{"o",180682},{"o",180683},{"o",180685},{"o",180712},{"o",180751},{"o",180901},{"o",181068},{"o",181069},{"o",181270},{"o",181271},{"o",181275},{"o",181277},{"o",181278},{"o",181279},{"o",181280},{"o",181281},{"o",181555},{"o",181556},{"o",181557},{"o",181569},{"o",181570},{"o",182951},{"o",182952},{"o",182953},{"o",182954},{"o",182956},{"o",182957},{"o",182958},{"o",182959},{"o",189973},{"o",189978},{"o",189979},{"o",189980},{"o",189981},{"o",190169},{"o",190170},{"o",190171},{"o",190172},{"o",191019},{"o",191133},{"o",191303},{"o",192046},{"o",192048},{"o",192049},{"o",192050},{"o",192051},{"o",192052},{"o",192053},{"o",192054},{"o",192057},{"o",192059},{"o",202736},{"o",202737},{"o",202738},{"o",202739},{"o",202740},{"o",202741},{"o",202747},{"o",202748},{"o",202749},{"o",202750},{"o",202751},{"o",202752},{"o",202776},{"o",202777},{"o",202778},{"o",202779},{"o",202780},{"o",2040},{"o",2041},{"o",2042},{"o",2043},{"o",2044},{"o",2045},{"o",2046},{"o",2047},{"o",206085},{"o",208311},{"o",216761},{"o",216764},{"o",2866},{"o",324},{"o",375234},{"o",375235},{"o",375238},{"o",375239},{"o",375240},{"o",375242},{"o",375243},{"o",375244},{"o",375245},{"o",375246},{"o",381196},{"o",381197},{"o",381198},{"o",381199},{"o",381200},{"o",381201},{"o",381202},{"o",381203},{"o",381204},{"o",381205},{"o",381210},{"o",381211},{"o",381212},{"o",381213},{"o",381214},{"o",381515},{"o",381516},{"o",381517},{"o",381518},{"o",381519},{"o",390137},{"o",390138},{"o",390139},{"o",390140},{"o",390141},{"o",390142},{"o",398759},{"o",398760},{"o",398761},{"o",398762},{"o",398764},{"o",398765},{"o",398766},{"o",398767},{"o",73940},{"o",73941},{"s",13262},{1,11},{1,2,6},{1,3,4,7,11,22,25,29,30,32,34,37,52,85},{1,7,10,18,21,27,37,48,52,62,76,94,95,97,106},{1,7,10,18,21,27,37,48,52,62},{1,7,18,21,27,37,48,52,57,62},{1,7,18,21,27,37,52,57},{1,7,18,27,37,48,52,57,62},{1},{10,11},{10,14,17,21,25,26,50,51,52,56,62,63,64,66,69,70,71,76,199,210},{10,14,17,21,25,26,51,52,56,62,63,64,66,69,70,71,76,199},{10,21,25,48,52,56,57,62,76},{10,21,47,49,52,62,76},{10,21,48,52,62,76},{10,25,47,56,62,65,76},{10.77,74.71},{10},{100,102,104,105,107,108,109},{102,104,105,107,108,109,122},{102,107,108},{102,108},{102,262,263,265},{102},{104,105,107,108,109,122,256,258,260,262,263,265,272},{104,105,107,108,109},{104},{107},{108},{109},{11},{114,115,116,117,121},{114,115,116,117},{114,116,117,119},{114},{115,118,119,120,123},{116,117,119},{116},{117},{118,119,120,123},{118,120},{119},{12},{122},{123},{125,126},{127},{13.13,26.23},{14,15,22,23,25,26,47,50,56,63,65,66,69,199,210},{14,15,22,23,26,32,36,64,66,69,71,77,199,210},{14,15,22,23,26,66,69,199,210},{14,17,22,23,26,65,66,69,70,78,80},{14,22,23,26,69,70,199,210},{14,22,26,47,50,56,69,199},{14,23,26,50,56,70,199},{14,26,69,70,199,210},{14,50,56,63,65,66},{14,65},{14.9,28.9},{14020},{15,17,23,32,36,51,64,69,71,77,78,81,83},{15,23,32,36,64,69,71,77},{15,23,32,36,64,71,81},{15,32,36,71},{15,51,77,78,81},{15,64,77,78,83},{1525,1533,1536,1565},{17,23,51,64,71},{17,36,77,81},{17,51,71},{17,51,78,81,83},{17,51},{17,78,81,83},{17,81},{17},{198,201,204,205,207},{198,201},{198,207,241,244,245,249},{2,5,6,8,9,10,26,27,28,31,35,36,70,84},{2,5,7,10,11,13},{2,5,7,8,9,10,11},{2},{201,205,241,245},{2022,2023,2024,2025,2133},{2022,2023,2024,2025},{2023},{2024},{207},{21,25,26,50,51,52,56,62,63,64,70,210},{21,25,47,48,49,56,63},{2133,2151},{2133},{22,26,70,71},{22,69,210},{22.7,65.4},{22.9,67.2},{220},{2200},{232,242},{24.7,19.1},{241,244,245,249},{241},{245,249},{247,320},{249},{25,47,50,56,63,65},{25,47,50,63,65},{25,50,56,63,65},{25,56,63,65},{256,258,260,262,263,265,272},{27.2,34.8},{28.1,61.9},{287},{29.1,33},{29.2,81.3},{29.5,67},{3,4,7,10,11},{3,7,13},{3},{30,50},{31.1,67.6},{32.1,55},{33.2,66.7},{33.5,52.7},{33.5,66.6},{337},{34.7,18},{34.8,40.4},{36.5,32.5},{37.3,45.9},{38.3,64.1},{38.5,88.3},{38.6,67.5},{39.3,9.7},{39.45,45.1},{39.8,49.2},{39.9,74.9},{4,10,11},{4},{40.1,67.7},{40.2,18.4},{41,36.2},{41,79.1},{41.2,29.8},{42.2,36.1},{42},{43.1,80.27},{43.4,55.8},{44.6,34.3},{45.02,23.54},{46.6,40.7},{46.65,18.9},{47.4,33.73},{48.05,13.3},{48.05,18.54},{48.8,48.4},{49.06,33.58},{49.2,5.9},{49.35,23.2},{49.35,30.85},{49.7,32.2},{5,8,9},{5},{50,210},{50,81.2},{50.1,69.7},{50.21,38.36},{50.4,35.4},{51.6,45},{51.8,74.6},{51},{52.4,77},{52.6,17.3},{52.8,13.9},{53.5,7.5},{55.6,85.6},{55.8,24.5},{56,80.6},{56.2,22.6},{56.2,34.2},{56.4,60},{56.6,48.9},{56.95,85.55},{57.11,37.52},{59.6,59.85},{6},{60.6,71.7},{60.8,25.9},{61,11},{62,77.9},{62.4,49},{62.7,19.5},{62.9,51.5},{63.5,72.5},{63.8,64.3},{63.9,68.3},{64.5,33},{64.9,58.1},{66,78.3},{66.1,86.2},{66.3,61.8},{66.6,54.6},{67,19.2},{67.5,11.7},{68.3,69.9},{68.5,44.4},{68.7,30.5},{69.4,68.1},{69.6,68.9},{7},{70.6,33.7},{71.8,63.1},{71},{72.1,52.85},{72.4,20.2},{73.5,63.5},{75.3,46.2},{76.27,52.64},{76.6,49.4},{76.8,41.9},{76.8,61.5},{77},{78.1,30},{78.6,76.2},{79.37,78.53},{8.3,52.7},{8.7,50.8},{8},{81},{82.9,90.3},{83},{88.1,33.6},{89.9,38.5},{9},{91,28.6},{92,69},{92.8,58.2},{92.9,48.2},{94}};
+categories.Craftables=
+h(-23,{DontEnforceSkillRequirements=1,SortPriority=20,g={
 x(1,{
 i(180055,{awp=90001}),
 i(180057,{awp=90001}),
@@ -53,9 +54,38 @@ i(245586,{b=2})}})}}),
 prof(171,{
 h(-22,{
 i(3371,{description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world."}),
-i(3372,{coords={a[395],a[399],a[421],a[372],a[396],a[389],a[331],a[422]},description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",rwp=40001,u=2}),
-i(8925,{coords={a[395],a[399],a[421],a[372],a[396],a[389],a[331],a[422]},description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",rwp=40001,u=2}),
-i(18256,{coords={a[395],a[399],a[421],a[372],a[396],a[389],{52.2,36.4,100},{53.8,65.8,100},a[331],a[422],{45.8,20.8,111},{41.34,34.61,114},{57.7,72.32,114},{58.4,62.75,117},{79.5,30.47,117},{41.54,33.32,125}},description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",rwp=40001,u=2})}),
+i(3372,{coords={
+[84]={a[395]},
+[85]={a[399]},
+[87]={a[421]},
+[88]={a[372]},
+[89]={a[396]},
+[90]={a[389]},
+[103]={a[331]},
+[110]={a[422]}},description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",rwp=40001,u=2}),
+i(8925,{coords={
+[84]={a[395]},
+[85]={a[399]},
+[87]={a[421]},
+[88]={a[372]},
+[89]={a[396]},
+[90]={a[389]},
+[103]={a[331]},
+[110]={a[422]}},description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",rwp=40001,u=2}),
+i(18256,{coords={
+[84]={a[395]},
+[85]={a[399]},
+[87]={a[421]},
+[88]={a[372]},
+[89]={a[396]},
+[90]={a[389]},
+[100]={{52.2,36.4},{53.8,65.8}},
+[103]={a[331]},
+[110]={a[422]},
+[111]={{45.8,20.8}},
+[114]={{41.34,34.61},{57.7,72.32}},
+[117]={{58.4,62.75},{79.5,30.47}},
+[125]={{41.54,33.32}}},description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",rwp=40001,u=2})}),
 flt(55,{
 i(6452,{awp=80001,f=55,spellID=7932}),
 i(9155,{f=55,lvl=16,spellID=11390}),
@@ -1186,10 +1216,12 @@ s(2362,6366,{collectible=false,description="Can be caught in Ashenvale, Arathi H
 flt(200,{awp=20300,g={
 r(43308,{b=1,description="Can be fished from schools.",itemID=34109,requireSkill=356})}}),
 i(13888,{description="Can be caught on the seaside.",lvl=20,maps_disp=a[291],spellID=1129}),
-i(6522,{coords={a[349],a[356],a[397]},f=55,providers={a[89]},spellID=8063}),
+i(6522,{coords={
+[10]={a[349],a[356],a[397]}},f=55,providers={a[89]},spellID=8063}),
 i(6359,{description="Schools can be found on the seaside.",maps_disp=a[230],providers={a[92],a[169]}}),
 i(13893,{description="Can be caught on the seaside.",f=55,lvl=20,maps_disp=a[291],spellID=1129}),
-i(13757,{coords={a[406]},description="Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",maps_disp={42,83}}),
+i(13757,{coords={
+[81]={a[406]}},description="Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",maps_disp={42,83}}),
 i(6358,{description="Schools can be found on the seaside.",maps_disp=a[230],providers={a[91],a[169]}}),
 i(6291,{description="Can be caught in inland waters and waterways.",maps_disp={7,18,27,37},spellID=7737}),
 i(6308,{description="Can be caught in inland waters and waterways.",lvl=7,maps_disp={47,49,63,65},spellID=434}),
@@ -1205,7 +1237,8 @@ i(6362,{description="Can be caught on the seaside.",lvl=11,maps_disp={66},spellI
 i(21071,{description="Schools can be found in inland waters and waterways.",lvl=5,maps_disp=a[309],providers={a[170]},spellID=25692}),
 i(6303,{description="Can be caught on the seaside.",maps_disp={1,57,97},spellID=7737}),
 i(4603,{description="Can be caught on the seaside.",lvl=15,maps_disp={15,71},spellID=1127}),
-i(13760,{coords={a[406]},description="Can be caught in inland waters and waterways during day time: 06:00/6am to 21:00/9pm server time.",lvl=15,spellID=1127}),
+i(13760,{coords={
+[81]={a[406]}},description="Can be caught in inland waters and waterways during day time: 06:00/6am to 21:00/9pm server time.",lvl=15,spellID=1127}),
 i(13889,{description="Can be caught in inland waters and waterways.",lvl=20,maps_disp=a[292],spellID=1129}),
 i(13422,{description="Schools can be found on the seaside.",maps_disp=a[289],providers={a[94]}}),
 o(180683,{description="Can be found on the seaside.",maps=a[231]}),
@@ -1218,7 +1251,8 @@ o(180682,{description="Can be found on the seaside.",maps_disp=a[231]}),
 o(180656,{rwp=50100,u=2}),
 o(180663,{rwp=50100,u=2}),
 o(216764,{awp=50100,description="Can be found in inland waters and waterways.",maps=a[309]}),
-o(180658,{coords={a[349],a[356],a[397]}}),
+o(180658,{coords={
+[10]={a[349],a[356],a[397]}}}),
 o(180712,{description="Can be found on the seaside.",maps=a[289]}),
 o(180901,{awp=30002,description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps=a[383],g={
 crit(3873,{achID=1257,id=3,maps=a[383],providers={a[96]},requireSkill=356})}}),
@@ -1233,7 +1267,8 @@ prof(182,{description="It is beneficial to gather all herbs in the area even if 
 ah(2366,{type="s",g={
 i(8836,{providers={{"o",142141},{"o",176642}},rwp=40003,u=2}),
 i(13468,{maps_disp=a[293],providers={{"o",176589},{"o",253069}}}),
-i(8839,{coords={a[371],a[373],a[377],a[378],a[393],a[394],a[412],a[417],a[433],a[436]},providers={a[65]}}),
+i(8839,{coords={
+[69]={a[371],a[373],a[377],a[378],a[393],a[394],a[412],a[417],a[433],a[436]}},providers={a[65]}}),
 i(108336,{awp=60002,providers={a[65]},spellID=153842,g={
 i(8839)}}),
 i(22710,{awp=20005,maps_disp=a[458],providers={{"o",181166}},races=a[237],spellID=28273}),
@@ -1244,7 +1279,8 @@ i(2450)}}),
 i(2453,{maps_disp=a[326],providers={a[71],a[167]}}),
 i(108322,{awp=60002,providers={a[71],a[167]},spellID=153844,g={
 i(2453)}}),
-i(3819,{coords={a[343]},providers={a[163]}}),
+i(3819,{coords={
+[15]={a[343]}},providers={a[163]}}),
 i(108329,{awp=60002,providers={a[163]},spellID=153847,g={
 i(3819)}}),
 i(13463,{maps_disp=a[288],providers={a[83]}}),
@@ -1293,7 +1329,8 @@ i(13465,{maps_disp={17,77,78,81,83},providers={a[84]}}),
 i(108341,{awp=60002,providers={a[84]},spellID=153870,g={
 i(13465)}}),
 i(2447,{maps_disp=a[227],providers={{"o",1618}}}),
-i(8831,{coords={a[352],a[354],a[364],a[379],a[402]},providers={a[63]}}),
+i(8831,{coords={
+[77]={a[352],a[354],a[364],a[379],a[402]}},providers={a[63]}}),
 i(108333,{awp=60002,providers={a[63]},spellID=153873,g={
 i(8831)}}),
 i(765,{maps_disp=a[225],providers={{"o",1617}}}),
@@ -1316,26 +1353,36 @@ i(8153,{providers={a[63]}}),
 o(142141,{maps={22,23,300,317},rwp=40003,u=2}),
 o(176642,{maps=a[441],rwp=40003,u=2}),
 o(176589,{description="Black Lotus is a rare spawn, and can spawn in place of other herbs.",maps=a[293]}),
-o(253069,{awp=70003,coords={{74.8,54.5,23}},description="Blacker Lotus is a special node at the given coords which can take days to respawn. This location also have a group of un-gatherable Black Lotuses."}),
-o(142143,{coords={a[371],a[373],a[377],a[378],a[393],a[394],a[412],a[417],a[433],a[436]},description="Can be found near wet terrain and/or waterways, somehow Blizzard managed to make this very inconsistent in some zones."}),
+o(253069,{awp=70003,coords={
+[23]={{74.8,54.5}}},description="Blacker Lotus is a special node at the given coords which can take days to respawn. This location also have a group of un-gatherable Black Lotuses."}),
+o(142143,{coords={
+[69]={a[371],a[373],a[377],a[378],a[393],a[394],a[412],a[417],a[433],a[436]}},description="Can be found near wet terrain and/or waterways, somehow Blizzard managed to make this very inconsistent in some zones."}),
 o(181166,{awp=20005,maps=a[458],races=a[237]}),
 o(1621,{description="Usually found near trees.",maps=a[235]}),
 o(1622,{description="Usually found near hillsides, buildings and structures.",maps=a[326]}),
-o(2044,{coords={a[343]}}),
+o(2044,{coords={
+[15]={a[343]}}}),
 o(176584,{description="Can usually be found on flat open spaces.",maps=a[288]}),
 o(176693,{maps=a[441],rwp=40003,u=2}),
 o(180168,{maps=a[345],rwp=40003,u=2}),
 o(1619,{description="Can be found on uneven terrain and mountain sides.",maps=a[226]}),
 o(2042,{description="Can be found in fertile terrain and fields.",maps=a[313]}),
 o(2866,{description="Can be found on hot deserts.",maps=a[283]}),
-o(206085,{awp=40003,coords={{47,26,25}},description="Found all over Alterac Mountains"}),
-o(142144,{coords={{64.3,16.3,78},{17.25,9.2,102},{74.4,92.2,102}},description="Can be found inside caves."}),
+o(206085,{awp=40003,coords={
+[25]={{47,26}}},description="Found all over Alterac Mountains"}),
+o(142144,{coords={
+[78]={{64.3,16.3}},
+[102]={{17.25,9.2},{74.4,92.2}}},description="Can be found inside caves."}),
 o(176583,{description="Can be found by trees and other natural structures.",maps=a[284]}),
 o(176638,{maps=a[441],rwp=40003,u=2}),
 o(180167,{maps=a[345],rwp=40003,u=2}),
 o(2046,{description="Can be found on uneven terrain and mountain sides.",maps=a[275]}),
-o(1628,{coords={{20,40,47}},description="Can be found on graves."}),
-o(142145,{coords={{53.5,46.5,17},{84.1,71.65,63},{50,80,66}},description="Found in locations corrupted by the Burning Legion.",maps=a[441]}),
+o(1628,{coords={
+[47]={{20,40}}},description="Can be found on graves."}),
+o(142145,{coords={
+[17]={{53.5,46.5}},
+[63]={{84.1,71.65}},
+[66]={{50,80}}},description="Found in locations corrupted by the Burning Legion.",maps=a[441]}),
 o(176637,{maps=a[441],rwp=40003,u=2}),
 o(176588,{maps=a[450]}),
 o(2043,{description="Can be found near trees.",maps=a[272]}),
@@ -1346,7 +1393,8 @@ o(176586,{description="Can be found on uneven terrain and mountain sides.",maps=
 o(176640,{maps=a[441],rwp=40003,u=2}),
 o(180166,{maps=a[345],rwp=40003,u=2}),
 o(1618,{maps=a[227]}),
-o(142140,{coords={a[352],a[354],a[364],a[379],a[402]},description="Can be found in elven ruins."}),
+o(142140,{coords={
+[77]={a[352],a[354],a[364],a[379],a[402]}},description="Can be found in elven ruins."}),
 o(180165,{maps=a[345],rwp=40003,u=2}),
 o(1617,{maps=a[225]}),
 o(176587,{maps=a[390]}),
@@ -1973,25 +2021,35 @@ s(188015,206491,{awp=100105,f=33,lvl=25})})}),
 prof(186,{description="Mining veins are usually found on uneven terrain and mountainsides as well as inside caves. It is beneficial to mine all veins in the area even if you only need specific ore because the node spawns are often connected.",g={
 sp(2575,{
 o(1731,{maps={1,7,10,18,21,27,37,48,52,62,76,94,97,106}}),
-o(181248,{awp=20001,coords={a[339]}}),
+o(181248,{awp=20001,coords={
+[95]={a[339]}}}),
 o(165658,{maps=a[318]}),
-o(1734,{coords={{44.1,37.2,64}},maps={14,15,22,23,26,32,36,66,69,71,199,210}}),
-o(73941,{coords={a[419],a[435],a[440]}}),
+o(1734,{coords={
+[64]={{44.1,37.2}}},maps={14,15,22,23,26,32,36,66,69,71,199,210}}),
+o(73941,{coords={
+[64]={a[419]},
+[69]={a[435],a[440]}}}),
 o(1735,{maps=a[270]}),
 o(2040,{maps=a[281]}),
-o(123310,{coords={a[419],a[435],a[440]}}),
+o(123310,{coords={
+[64]={a[419]},
+[69]={a[435],a[440]}}}),
 o(181069,{maps=a[323]}),
 o(181068,{maps=a[323]}),
-o(73940,{coords={a[419]}}),
+o(73940,{coords={
+[64]={a[419]}}}),
 o(1733,{maps=a[268]}),
 o(180215,{maps=a[345],rwp=40001,u=2}),
 o(177388,{maps=a[448]}),
-o(123848,{coords={a[384]}}),
+o(123848,{coords={
+[78]={a[384]}}}),
 o(175404,{maps=a[290]}),
 o(324,{maps=a[290]}),
 o(1732,{maps=a[327]}),
-o(181249,{awp=20001,coords={a[339]}}),
-o(123309,{coords={a[384]},maps=a[448]}),
+o(181249,{awp=20001,coords={
+[95]={a[339]}}}),
+o(123309,{coords={
+[78]={a[384]}},maps=a[448]}),
 o(2047,{maps=a[280]}),
 i(2770,{maps_disp=a[223],providers={a[76]}}),
 i(11370,{maps_disp=a[318],providers={a[75]}}),
@@ -2100,7 +2158,8 @@ i(15417),
 i(15422),
 i(19767,{awp=100007}),
 i(19768,{awp=100007}),
-i(15419,{coords={{55.1,37.8,83},{58.1,89.4,83}},crs={7443,7446,42336},description="Can be skinned from bears in previously highlevel vanilla zones like shardtooths in Winterspring."}),
+i(15419,{coords={
+[83]={{55.1,37.8},{58.1,89.4}}},crs={7443,7446,42336},description="Can be skinned from bears in previously highlevel vanilla zones like shardtooths in Winterspring."}),
 i(12731),
 i(7428,{crs={684,768,1713},description="Panthers can be found in central Stranglethorn Vale and eastern Swamp of Sorrows.",maps_disp={51,224},rwp=30100,u=2}),
 i(8368,{description="Can be skinned from all wolfs in the level bracket 40-60 though the droprate is 3-5 %.",maps_disp={36},rwp=30100,u=2}),
@@ -2407,7 +2466,13 @@ i(14048),
 i(4305),
 i(2997),
 i(206645,{awp=100105,b=1,f=55,spellID=414097}),
-i(14342,{coords={a[376],a[403],a[236],a[366],a[374],a[267],a[369]},description="Coordinates are for select Moonwells around the world."})})})}),
+i(14342,{coords={
+[47]={a[376]},
+[56]={a[403]},
+[76]={a[236]},
+[89]={a[366],a[374]},
+[95]={a[267]},
+[108]={a[369]}},description="Coordinates are for select Moonwells around the world."})})})}),
 x(2,{
 i(180055,{awp=90001}),
 i(180057,{awp=90001}),
@@ -2904,13 +2969,15 @@ i(27422,{maps_disp={42,102,107,108}}),
 i(34865,{awp=20400,maps_disp=a[248]}),
 i(35313,{awp=20400,b=1,maps_disp=a[243],g={
 i(34866,{awp=20005})}}),
-i(35286,{awp=20400,maps_disp=a[263]}),
+i(35286,{awp=20400,maps_disp=a[263],g={
+i(35287,{awp=20005,f=55,lvl=23,spellID=2023})}}),
 i(33823,{awp=20300,maps_disp=a[365]}),
 i(33824,{awp=20300,maps_disp=a[365]}),
 i(27513,{maps_disp=a[240],providers={a[112],a[113],a[114],a[115],a[116],a[117],a[118],a[119]}}),
 i(27516,{maps_disp=a[240],providers={a[112],a[113],a[114],a[115],a[116],a[117],a[118],a[119]}}),
 i(27435,{maps_disp=a[247],providers={a[118]}}),
-i(27439,{coords={a[370],a[404],a[418]},providers={a[117]}}),
+i(27439,{coords={
+[108]={a[370],a[404],a[418]}},providers={a[117]}}),
 i(35285,{awp=20400,lvl=27,maps_disp=a[263],spellID=35270}),
 i(27438,{maps_disp=a[248],providers={a[115],a[116],a[117]}}),
 i(27442,{maps_disp=a[240],providers={a[112],a[113],a[114],a[115],a[116],a[117],a[118],a[119]}}),
@@ -2919,7 +2986,8 @@ i(27515,{maps_disp=a[240],providers={a[112],a[113],a[114],a[115],a[116],a[117],a
 i(27437,{maps_disp=a[247],providers={a[119]}}),
 i(27511,{maps_disp=a[240],providers={a[112],a[113],a[114],a[115],a[116],a[117],a[118],a[119]}}),
 i(34867,{awp=20400,maps_disp={100,104}}),
-i(27388,{b=1,coords={a[370],a[404],a[418]},description="Fished up from Highland Mixed Schools. You have 3 wishes per Mr. Pinchy, each wish granting one of the following effects:\n\n1) Mr. Pinchy's Blessing (Flask)\n2) Summon Furious Mr. Pinchy (Enemy)\n3) Magical Crawdad Box (Rare Pet)\n4) Mr. Pinchy's Gift (Potions)\n5) Benevolent Mr. Pinchy (Guardian)",f=55,lvl=23,providers={a[117]},spellID=33060,g={
+i(27388,{b=1,coords={
+[108]={a[370],a[404],a[418]}},description="Fished up from Highland Mixed Schools. You have 3 wishes per Mr. Pinchy, each wish granting one of the following effects:\n\n1) Mr. Pinchy's Blessing (Flask)\n2) Summon Furious Mr. Pinchy (Enemy)\n3) Magical Crawdad Box (Rare Pet)\n4) Mr. Pinchy's Gift (Potions)\n5) Benevolent Mr. Pinchy (Guardian)",f=55,lvl=23,providers={a[117]},spellID=33060,g={
 p(132,{b=1,itemID=27445,npcID=18839,spellID=33050}),
 i(27446,{description="Contains an assortment of potions.",g={
 i(8350,{f=52,lvl=5})}})}}),
@@ -2930,7 +2998,8 @@ o(182959,{maps=a[247],g={
 crit(3624,{achID=1225,awp=30002,id=3})}}),
 o(182954,{maps=a[241],g={
 crit(3623,{achID=1225,awp=30002,id=2})}}),
-o(182957,{coords={a[370],a[404],a[418]},g={
+o(182957,{coords={
+[108]={a[370],a[404],a[418]}},g={
 crit(3627,{achID=1225,awp=30002,id=6})}}),
 o(182958,{maps=a[247],g={
 crit(3625,{achID=1225,awp=30002,id=4})}}),
@@ -2965,13 +3034,18 @@ i(22791,{maps_disp=a[249],providers={a[104]}}),
 i(108349,{awp=60002,providers={a[104]},spellID=153871,g={
 i(22791,{awp=20005})}}),
 i(22797,{lvl=25,providers={a[105]},rwp=30300,spellID=28726,u=2}),
-i(22792,{coords={a[411],a[334],a[347],a[415]},description="Although it can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",maps_disp=a[246],providers={a[105]}}),
+i(22792,{coords={
+[100]={a[411]},
+[105]={a[334],a[347],a[415]}},description="Although it can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",maps_disp=a[246],providers={a[105]}}),
 i(108350,{awp=60002,providers={a[105]},spellID=153872,g={
 i(22792,{awp=20005})}}),
 i(22787,{maps_disp=a[243],providers={a[101]}}),
 i(108346,{awp=60002,providers={a[101]},spellID=153874,g={
 i(22787,{awp=20005})}}),
-i(22789,{coords={a[411],a[348],a[367],a[334]},description="Found near the base of trees.",maps_disp=a[248],providers={a[102]}}),
+i(22789,{coords={
+[100]={a[411]},
+[104]={a[348],a[367]},
+[105]={a[334]}},description="Found near the base of trees.",maps_disp=a[248],providers={a[102]}}),
 i(108347,{awp=60002,providers={a[102]},spellID=153881,g={
 i(22789,{awp=20005})}}),
 i(24401,{maps_disp=a[243]}),
@@ -2981,10 +3055,15 @@ o(181270,{maps=a[238]}),
 o(181276,{maps=a[242]}),
 o(181281,{maps=a[263]}),
 o(181279,{maps=a[249]}),
-o(181280,{coords={a[411],a[334],a[347],a[415]},description="Although this can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",maps=a[246]}),
+o(181280,{coords={
+[100]={a[411]},
+[105]={a[334],a[347],a[415]}},description="Although this can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",maps=a[246]}),
 o(181275,{maps=a[242]}),
 o(183385,{maps={262}}),
-o(181277,{coords={a[411],a[348],a[367],a[334]},description="Found near the base of trees.",maps=a[248]})}})}}),
+o(181277,{coords={
+[100]={a[411]},
+[104]={a[348],a[367]},
+[105]={a[334]}},description="Found near the base of trees.",maps=a[248]})}})}}),
 prof(773,{awp=20005,g={
 ah(51005,{type="s",g={
 i(43108,{providers={a[7],a[8],a[9],a[10],a[11],a[12],a[13]}}),
@@ -3457,17 +3536,40 @@ i(22054,{c=a[358],f=55,lvl=27,u=2}),
 i(21927,{c=a[358],f=55,lvl=27,u=2}),
 i(22055,{c=a[358],f=55,lvl=26,u=2})}}),
 prof(393,{awp=20005,description="The following items can be gathered by skinning creatures on Outland. Note that Knothide Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",g={
-i(29539,{coords={{45.5,13,104},{45.8,28.6,104},{53.05,25.55,104},{65.25,22.5,104},{66.1,30,104},{71.8,30,104},{11.4,39.3,107},{19.4,34.6,107}},crs={19784,23020,23026}}),
-i(25699,{coords={a[446],a[315],a[351],a[445],a[278],a[319],a[346],a[442],a[451],{63,7.8,104},{73,85.4,104},a[335],a[341],a[360],a[408],a[416],a[423],a[434],a[353],a[368],a[410],a[426],a[425]},crs={16932,16933,16934,18461,18463,19189,19349,19350,19706,19729,19730,20279,20280,20283,20924,20925,20987,21816,21854,22180,23169,23264,23326},description="Can be efficiently farmed in Blade's Edge Mountains and Zangarmarsh using a route from the southwestern end of Zangarmarsh following the western edge northwards and later eastwards to Blade's Edge Mountains. Then fly up to and follow the Vortex Summit, down again to Grishnath, and east up again following the Crystal Spine, over to Skald, and down to Veil Ruuan.\n\nCan also be found on basilisks all over Terokkar Forest, most of them dropping Dampscale Basilisk Eye.\n\nSkinning most mobs can also give Fel Scales"}),
-i(25707,{coords={{20.3,55.8,100},{49.5,31.3,100},{49.5,71.5,100},{63.1,70.7,100},{72.1,57,100},{72.8,42.4,100},a[347],a[408],a[423],{20.6,73.5,108},{60.3,38.7,108},{65.9,85,108},{40.8,72.5,109},a[400],a[420]},crs={16176,16177,16178,16863,16880,16950,18464,18465,18884,19852,20557,22255,23219}}),
-i(25700,{coords={a[446],a[315],a[351],a[445],a[278],a[319],a[346],a[442],a[451],a[335],a[341],a[360],a[408],a[416],a[423],a[434],a[353],a[368],a[410],a[426],a[425]},crs={16932,16933,16934,18461,18463,19189,19349,19350,19706,19729,19730,20279,20280,20283,20924,20925,20987,21816,21854,22180},description="Can be efficiently farmed in Blade's Edge Mountains and Zangarmarsh using a route from the southwestern end of Zangarmarsh following the western edge northwards and later eastwards to Blade's Edge Mountains. Then fly up to and follow the Vortex Summit, down again to Grishnath, and east up again following the Crystal Spine, over to Skald, and down to Veil Ruuan.\n\nCan also be found on basilisks all over Terokkar Forest, most of them dropping Dampscale Basilisk Eye.\n\nSkinning all mobs can also give Crystal-Infused Leather."}),
+i(29539,{coords={
+[104]={{45.5,13},{45.8,28.6},{53.05,25.55},{65.25,22.5},{66.1,30},{71.8,30}},
+[107]={{11.4,39.3},{19.4,34.6}}},crs={19784,23020,23026}}),
+i(25699,{coords={
+[100]={a[446],a[315],a[351]},
+[102]={a[445],a[278],a[319],a[346],a[442],a[451]},
+[104]={{63,7.8},{73,85.4}},
+[105]={a[335],a[341],a[360],a[408],a[416],a[423],a[434]},
+[108]={a[353],a[368],a[410],a[426]},
+[109]={a[425]}},crs={16932,16933,16934,18461,18463,19189,19349,19350,19706,19729,19730,20279,20280,20283,20924,20925,20987,21816,21854,22180,23169,23264,23326},description="Can be efficiently farmed in Blade's Edge Mountains and Zangarmarsh using a route from the southwestern end of Zangarmarsh following the western edge northwards and later eastwards to Blade's Edge Mountains. Then fly up to and follow the Vortex Summit, down again to Grishnath, and east up again following the Crystal Spine, over to Skald, and down to Veil Ruuan.\n\nCan also be found on basilisks all over Terokkar Forest, most of them dropping Dampscale Basilisk Eye.\n\nSkinning most mobs can also give Fel Scales"}),
+i(25707,{coords={
+[100]={{20.3,55.8},{49.5,31.3},{49.5,71.5},{63.1,70.7},{72.1,57},{72.8,42.4}},
+[105]={a[347],a[408],a[423]},
+[108]={{20.6,73.5},{60.3,38.7},{65.9,85}},
+[109]={{40.8,72.5},a[400],a[420]}},crs={16176,16177,16178,16863,16880,16950,18464,18465,18884,19852,20557,22255,23219}}),
+i(25700,{coords={
+[100]={a[446],a[315],a[351]},
+[102]={a[445],a[278],a[319],a[346],a[442],a[451]},
+[105]={a[335],a[341],a[360],a[408],a[416],a[423],a[434]},
+[108]={a[353],a[368],a[410],a[426]},
+[109]={a[425]}},crs={16932,16933,16934,18461,18463,19189,19349,19350,19706,19729,19730,20279,20280,20283,20924,20925,20987,21816,21854,22180},description="Can be efficiently farmed in Blade's Edge Mountains and Zangarmarsh using a route from the southwestern end of Zangarmarsh following the western edge northwards and later eastwards to Blade's Edge Mountains. Then fly up to and follow the Vortex Summit, down again to Grishnath, and east up again following the Crystal Spine, over to Skald, and down to Veil Ruuan.\n\nCan also be found on basilisks all over Terokkar Forest, most of them dropping Dampscale Basilisk Eye.\n\nSkinning all mobs can also give Crystal-Infused Leather."}),
 i(21887,{description="Can be skinned from any skinnable TBC mobs."}),
 i(25649,{requireSkill=393,spellID=163205,g={
 i(21887)}}),
-i(29548,{coords={{68.35,61,104},{62.3,77,105},{72.5,38.4,109}},crs={18877,20332,21004,21722},description="Is skinned from Netherwing drakes in Outland. Characters who have started the Netherwing questline can only kill Netherwing drakes in Blade's Edge Nountains and Netherstorm, and then it requires the player to toggle 'At War' with the Netherwing in the reputation panel. Killing Netherwing drakes does not lower the reputation with the faction."}),
+i(29548,{coords={
+[104]={{68.35,61}},
+[105]={{62.3,77}},
+[109]={{72.5,38.4}}},crs={18877,20332,21004,21722},description="Is skinned from Netherwing drakes in Outland. Characters who have started the Netherwing questline can only kill Netherwing drakes in Blade's Edge Nountains and Netherstorm, and then it requires the player to toggle 'At War' with the Netherwing in the reputation panel. Killing Netherwing drakes does not lower the reputation with the faction."}),
 i(35229),
 i(25708,{crs={17132,17133,18205,19183},description="Clefthoofs can be found all over Nagrand.",maps_disp=a[247]}),
-i(29547,{coords={{47,64.5,104},{66,52.6,105},{68.5,70.55,105},{71.5,30.1,105},a[400],a[420]},crs={20502,20673,20749,21123}})}}),
+i(29547,{coords={
+[104]={{47,64.5}},
+[105]={{66,52.6},{68.5,70.55},{71.5,30.1}},
+[109]={a[400],a[420]}},crs={20502,20673,20749,21123}})}}),
 prof(197,{awp=20005,g={
 h(-88,{
 s(8645,21867,{f=4,lvl=27}),
@@ -3559,8 +3661,15 @@ flt(56,{
 i(21842),
 i(21840),
 i(21844),
-i(21845,{coords={a[376],a[403],a[236],a[366],a[374],a[267],a[369]},description="Coordinates are for select Moonwells around the world."}),
-i(24272,{coords={{58.3,70.9,104}}}),
+i(21845,{coords={
+[47]={a[376]},
+[56]={a[403]},
+[76]={a[236]},
+[89]={a[366],a[374]},
+[95]={a[267]},
+[108]={a[369]}},description="Coordinates are for select Moonwells around the world."}),
+i(24272,{coords={
+[104]={{58.3,70.9}}}}),
 i(24271,{maps_disp=a[249]})})}})}),
 x(3,{
 i(180055,{awp=90001}),
@@ -4046,19 +4155,28 @@ i(41167,{f=55,lvl=27,spellID=55135}),
 i(41146,{f=55,lvl=27,spellID=55076})}),
 i(23821,{f=55,requireSkill=202,spellID=30645,g={
 n(24879,{description="Too few and far between to be reliably farmed on it's own.",maps={115,118,120},requireSkill=202}),
-n(32522,{coords={{38.4,32.3,115},{45.65,24.6,119},{84,71.5,123}},description="Too few and far between to be reliably farmed on it's own.",requireSkill=202}),
-n(32544,{coords={{66,27,114}},description="Too few and far between to be reliably farmed on it's own.",maps=a[261],requireSkill=202})}})}}),
+n(32522,{coords={
+[115]={{38.4,32.3}},
+[119]={{45.65,24.6}},
+[123]={{84,71.5}}},description="Too few and far between to be reliably farmed on it's own.",requireSkill=202}),
+n(32544,{coords={
+[114]={{66,27}}},description="Too few and far between to be reliably farmed on it's own.",maps=a[261],requireSkill=202})}})}}),
 prof(356,{awp=30003,g={
 i(41812,{maps_disp=a[261]}),
 i(45905,{description="Kill an animal and then swim in a body of water to create a pool to fish from.",providers={{"o",194479}}}),
 i(41808,{maps_disp={114,115,116,117,118,119,120,121,123,127}}),
 i(41805,{description="Schools can be found on the seaside.",maps_disp=a[254],providers={a[136]}}),
-i(41800,{coords={a[340],a[344],a[385],a[449]},description="The schools have shared spawn with Moonglow Cuttlefish Schools. Borean Tundra have most schools.",providers={a[138]}}),
-i(41807,{coords={a[359],a[452],a[454],a[455],a[456],a[457]},providers={a[133]}}),
+i(41800,{coords={
+[114]={a[340],a[344]},
+[115]={a[385]},
+[117]={a[449]}},description="The schools have shared spawn with Moonglow Cuttlefish Schools. Borean Tundra have most schools.",providers={a[138]}}),
+i(41807,{coords={
+[115]={a[359],a[452],a[454],a[455],a[456],a[457]}},providers={a[133]}}),
 s(21571,44703,{collectible=false,description="Keep this in your bank until the appearance can be learned again, otherwise you'll need to obtain it again. Fair warning!",f=20,lvl=29,maps_disp=a[258],providers={a[134]}}),
 s(21518,44505,{description="Can be caught in schools or open water in Northrend.",f=20,lvl=29,providers={a[132],a[133],a[134],a[135],a[136],a[137],a[138],a[139],a[140],a[141]}}),
 i(41810,{description="Schools can be found in inland waters.",maps_disp=a[258],providers={a[134]}}),
-i(43646,{coords={{52.9,65.9,125}},description="Can be caught in the fountain.",lvl=27,spellID=35270}),
+i(43646,{coords={
+[125]={{52.9,65.9}}},description="Can be caught in the fountain.",lvl=27,spellID=35270}),
 i(45909,{maps_disp=a[264],spellID=64202,g={
 i(36782),
 i(36783),
@@ -4067,8 +4185,12 @@ i(41809,{description="Schools can be found in inland waters.",maps_disp=a[257],p
 i(41814,{maps_disp=a[266],providers={a[141]}}),
 i(41802,{description="Schools can be found on the seaside.",maps_disp=a[252],providers={a[137]}}),
 i(43572,{description="Can be caught in any waters on both WotLK and Legion Dalaran.",lvl=27,maps_disp=a[265],spellID=58886}),
-i(41801,{coords={a[340],a[344],a[385],a[449]},description="The schools have shared spawn with Deep Sea Monsterbelly Schools. Borean Tundra have most schools.",providers={a[139]}}),
-i(41806,{coords={a[388]},providers={a[132]}}),
+i(41801,{coords={
+[114]={a[340],a[344]},
+[115]={a[385]},
+[117]={a[449]}},description="The schools have shared spawn with Deep Sea Monsterbelly Schools. Borean Tundra have most schools.",providers={a[139]}}),
+i(41806,{coords={
+[114]={a[388]}},providers={a[132]}}),
 i(41813,{maps_disp=a[261],providers={a[140]}}),
 i(45902,{description="Eat this before it despawns!",maps_disp=a[261],spellID=64366}),
 i(40199,{maps_disp={114,115,116,117,119,127},providers={a[132],a[133],a[134],a[135],a[136],a[137],a[138],a[139],a[140],a[141]}}),
@@ -4079,14 +4201,20 @@ i(33470)}}),
 i(41803,{description="Can be caught on the seaside around Northrend.",maps_disp={114,115,116,117,118,119,120,121}}),
 mnt(64731,{b=1,itemID=46109}),
 i(43571,{description="Can be caught in any waters on both WotLK and Legion Dalaran.",lvl=27,maps_disp=a[265],spellID=43180}),
-i(43647,{coords={a[414]},description="Can be caught outside Violet Hold on both WotLK and Legion Dalaran.",lvl=27,spellID=43180}),
-i(43652,{coords={a[414]},description="Can be caught outside Violet Hold on both WotLK and Legion Dalaran.",lvl=27,spellID=59227}),
+i(43647,{coords={
+[125]={a[414]}},description="Can be caught outside Violet Hold on both WotLK and Legion Dalaran.",lvl=27,spellID=43180}),
+i(43652,{coords={
+[125]={a[414]}},description="Can be caught outside Violet Hold on both WotLK and Legion Dalaran.",lvl=27,spellID=59227}),
 i(45904,{maps_disp=a[264]}),
 o(192051,{description="Can be found on the seaside.",maps=a[254],g={
 crit(5278,{achID=1517,id=2})}}),
-o(192053,{coords={a[340],a[344],a[385],a[449]},description="Have shared spawn with Moonglow Cuttlefish Schools. Borean Tundra have most schools.",g={
+o(192053,{coords={
+[114]={a[340],a[344]},
+[115]={a[385]},
+[117]={a[449]}},description="Have shared spawn with Moonglow Cuttlefish Schools. Borean Tundra have most schools.",g={
 crit(5279,{achID=1517,id=3})}}),
-o(192048,{coords={a[359],a[452],a[454],a[455],a[456],a[457]},g={
+o(192048,{coords={
+[115]={a[359],a[452],a[454],a[455],a[456],a[457]}},g={
 crit(5280,{achID=1517,id=4})}}),
 o(192049,{description="Can be found in inland waters.",maps=a[258],g={
 crit(5281,{achID=1517,id=5})}}),
@@ -4096,9 +4224,13 @@ o(192059,{maps=a[266],g={
 crit(5283,{achID=1517,id=7})}}),
 o(192052,{description="Schools can be found on the seaside.",maps=a[252],g={
 crit(5284,{achID=1517,id=8})}}),
-o(192054,{coords={a[340],a[344],a[385],a[449]},description="Have shared spawn with Deep Sea Monsterbelly Schools. Borean Tundra have most schools.",g={
+o(192054,{coords={
+[114]={a[340],a[344]},
+[115]={a[385]},
+[117]={a[449]}},description="Have shared spawn with Deep Sea Monsterbelly Schools. Borean Tundra have most schools.",g={
 crit(5285,{achID=1517,id=9})}}),
-o(192046,{coords={a[388]},g={
+o(192046,{coords={
+[114]={a[388]}},g={
 crit(5286,{achID=1517,id=10})}}),
 o(192057,{maps=a[261],g={
 crit(5287,{achID=1517,id=11})}}),
@@ -4113,11 +4245,13 @@ i(36903,{awp=30003})}}),
 i(37921,{description="Is obtained from gathering other herbs.",maps_disp={114,115,116,117,119,121},providers={a[120],a[125],a[126]}}),
 i(108358,{awp=60002,spellID=153846,g={
 i(37921,{awp=30003})}}),
-i(39970,{coords={a[430]},providers={a[131]}}),
+i(39970,{coords={
+[114]={a[430]}},providers={a[131]}}),
 i(108359,{awp=60002,providers={a[131]},spellID=153853,g={
 i(39970,{awp=30003})}}),
 i(36908,{description="Can uncommonly be looted when gathering WotLK herbs.",providers={a[120],a[125],a[126],a[127],a[128],a[129],a[131]}}),
-i(36901,{coords={a[375],a[413]},description="Found on grassy terrain.",maps_disp=a[253],providers={a[120]}}),
+i(36901,{coords={
+[115]={a[375],a[413]}},description="Found on grassy terrain.",maps_disp=a[253],providers={a[120]}}),
 i(108352,{awp=60002,providers={a[120]},spellID=153856,g={
 i(36901,{awp=30003})}}),
 i(36906,{maps_disp=a[260],providers={a[128]}}),
@@ -4126,19 +4260,25 @@ i(36906,{awp=30003})}}),
 i(36905,{maps_disp=a[260],providers={a[127]}}),
 i(108355,{awp=60002,providers={a[127]},spellID=153866,g={
 i(36905,{awp=30003})}}),
-i(36907,{coords={a[342]},description="Found around the lower tiers of Zul'Drak.",providers={a[126]}}),
+i(36907,{coords={
+[121]={a[342]}},description="Found around the lower tiers of Zul'Drak.",providers={a[126]}}),
 i(108357,{awp=60002,providers={a[126]},spellID=153880,g={
 i(36907,{awp=30003})}}),
-i(36904,{coords={a[388]},description="Found around inland waters and waterways.",maps_disp=a[256],providers={a[125]}}),
+i(36904,{coords={
+[114]={a[388]}},description="Found around inland waters and waterways.",maps_disp=a[256],providers={a[125]}}),
 i(108354,{awp=60002,providers={a[125]},spellID=153882,g={
 i(36904,{awp=30003})}}),
 o(191019,{maps=a[261]}),
-o(191303,{coords={a[430]}}),
-o(189973,{coords={a[375],a[413]},description="Found on grassy terrain.",maps=a[253]}),
+o(191303,{coords={
+[114]={a[430]}}}),
+o(189973,{coords={
+[115]={a[375],a[413]}},description="Found on grassy terrain.",maps=a[253]}),
 o(190172,{maps=a[260]}),
 o(190171,{maps=a[260]}),
-o(190170,{coords={a[342]},description="Found around the lower tiers of Zul'Drak."}),
-o(190169,{coords={a[388]},description="Found around inland waters and waterways.",maps=a[256]})})}}),
+o(190170,{coords={
+[121]={a[342]}},description="Found around the lower tiers of Zul'Drak."}),
+o(190169,{coords={
+[114]={a[388]}},description="Found around inland waters and waterways.",maps=a[256]})})}}),
 prof(773,{awp=30003,g={
 ah(51005,{type="s",g={
 i(39343,{providers={a[27],a[28],a[29],a[30],a[31],a[32],a[36],a[42]}}),
@@ -4813,9 +4953,19 @@ i(44128,{description="Arctic Fur is a rare skinned drop from any skinnable creat
 i(33568,{description="Can be skinned from any skinnable WotLK mobs."}),
 i(33567,{requireSkill=393,spellID=59926,g={
 i(33568)}}),
-i(38557,{coords={{23.9,29.9,114},{19.4,61.1,115},{46.5,26.7,119},{28.5,62.6,127}},crs={25713,28378,31402,31403,32572},maps_disp={155,200}}),
-i(38561,{coords={{82.2,31.3,114},{51.3,23.9,115},{57.3,12.3,115},{27.6,46.7,120},{47.1,54.9,120},{55.9,64.2,120}},crs={25454,26293,26358,26359,26467,29390,30148,30291,30422}}),
-i(38558,{coords={{41.1,58.2,114},{54.9,70.4,114},{67.4,32,114},{17.1,49.5,115},{26.2,49.5,115},{53.4,76,118},{79.1,67.2,118}},crs={24562,24563,24566,25294,25582,25619,25622,26402,26413,26445,26605,26606,30204,30205,30333,30541,30543,31037,31039,31747,31780},maps_disp={132,157}})}}),
+i(38557,{coords={
+[114]={{23.9,29.9}},
+[115]={{19.4,61.1}},
+[119]={{46.5,26.7}},
+[127]={{28.5,62.6}}},crs={25713,28378,31402,31403,32572},maps_disp={155,200}}),
+i(38561,{coords={
+[114]={{82.2,31.3}},
+[115]={{51.3,23.9},{57.3,12.3}},
+[120]={{27.6,46.7},{47.1,54.9},{55.9,64.2}}},crs={25454,26293,26358,26359,26467,29390,30148,30291,30422}}),
+i(38558,{coords={
+[114]={{41.1,58.2},{54.9,70.4},{67.4,32}},
+[115]={{17.1,49.5},{26.2,49.5}},
+[118]={{53.4,76},{79.1,67.2}}},crs={24562,24563,24566,25294,25582,25619,25622,26402,26413,26445,26605,26606,30204,30205,30333,30541,30543,31037,31039,31747,31780},maps_disp={132,157}})}}),
 prof(197,{awp=30003,g={
 h(-88,{
 s(20374,42096,{f=4,lvl=30}),
@@ -5138,8 +5288,12 @@ s(35722,70163,{awp=40200,f=25,lvl=32}),
 s(35724,70165,{awp=40200,f=29,lvl=32})})}}),
 prof(185,{awp=40003,g={
 h(-22,{
-i(58265,{coords={a[437],a[444],a[386]},description="Coordinates are for select vendors.",f=55,lvl=32,providers={a[56],a[57],a[58]},spellID=80169}),
-i(58278,{coords={a[437],a[444],a[386]},description="Coordinates are for select vendors.",f=55,lvl=27,providers={a[56],a[57],a[58]},spellID=45548})}),
+i(58265,{coords={
+[241]={a[437],a[444]},
+[249]={a[386]}},description="Coordinates are for select vendors.",f=55,lvl=32,providers={a[56],a[57],a[58]},spellID=80169}),
+i(58278,{coords={
+[241]={a[437],a[444]},
+[249]={a[386]}},description="Coordinates are for select vendors.",f=55,lvl=27,providers={a[56],a[57],a[58]},spellID=45548})}),
 i(62661,{f=55,lvl=30,spellID=87597}),
 i(62665,{f=55,lvl=30,spellID=87599}),
 i(62670,{f=55,lvl=30,spellID=87584}),
@@ -5305,28 +5459,36 @@ i(59594,{f=55,lvl=30,spellID=81932}),
 i(59595,{f=55,lvl=30,spellID=81933}),
 i(59596,{f=55,lvl=30,spellID=81934})})}}),
 prof(356,{awp=40003,g={
-i(53065,{coords={a[330],a[424],a[427],a[431],a[439]},description="Schools can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh.",providers={a[156]}}),
+i(53065,{coords={
+[207]={a[330],a[424],a[427],a[431],a[439]}},description="Schools can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh.",providers={a[156]}}),
 i(53071,{description="Can be caught on the seaside, though might be more uncommon than other saltwater fish.",maps_disp=a[302],providers={a[46]}}),
 i(53066,{description="Schools can be found in inland waterways.",maps_disp=a[324],providers={a[157]}}),
 i(53072,{description="Schools can be found on the seaside.",maps_disp=a[302],providers={a[46],a[168]}}),
 i(53070,{description="Schools can be found on the seaside.",maps_disp=a[322],providers={a[46],a[158]}}),
 i(53064,{description="Schools can be found in inland waterways.",maps_disp=a[321],providers={a[155]}}),
 i(53068,{description="Can be caught in inland waterways.",maps_disp={207,249},providers={a[46]}}),
-i(53063,{coords={a[333],a[363],a[392],a[407],a[428]},providers={a[154]}}),
+i(53063,{coords={
+[198]={a[333],a[363],a[392],a[407],a[428]}},providers={a[154]}}),
 i(53069,{description="Can be caught on the seaside.",maps_disp=a[302]}),
 mnt(64731,{b=1,itemID=46109}),
 i(53062,{description="Can be caught in inland waterways.",maps_disp={198,207,241,249}}),
-s(34674,68050,{collectible=false,coords={a[391],a[362]},description="Can be caught by fishing in lava using a special lure.",f=23,lvl=32,providers={{"i",68049}}}),
+s(34674,68050,{collectible=false,coords={
+[198]={a[391]},
+[241]={a[362]}},description="Can be caught by fishing in lava using a special lure.",f=23,lvl=32,providers={{"i",68049}}}),
 i(53067,{description="Can be caught in inland waterways.",maps_disp={198,241}}),
 cs(28271,{c=a[447],itemID=22739,lvl=25,maps_disp={198,207,241,245,249},providers={a[154],a[155],a[156],a[157],a[158],{"o",207724},a[168]}}),
-o(202778,{coords={a[330],a[424],a[427],a[431],a[439]},description="Can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh."}),
+o(202778,{coords={
+[207]={a[330],a[424],a[427],a[431],a[439]}},description="Can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh."}),
 o(202781,{description="Please let us in the ATT-discord know if this school appears in any iterations of the game.",maps=a[321],rwp=40300,u=2}),
 o(202779,{description="Can be found in inland waterways.",maps=a[324]}),
 o(208311,{awp=40300,description="Can be found on the seaside.",maps=a[321]}),
 o(202780,{description="Can be found on the seaside.",maps=a[322]}),
 o(202777,{description="Can be found in inland waterways.",maps=a[321]}),
-o(202776,{coords={a[333],a[363],a[392],a[407],a[428]}}),
-o(207734,{coords={a[391],a[362]}}),
+o(202776,{coords={
+[198]={a[333],a[363],a[392],a[407],a[428]}}}),
+o(207734,{coords={
+[198]={a[391]},
+[241]={a[362]}}}),
 o(207724,{maps={245},g={
 i(67597)}}),
 flt(200,{
@@ -5343,28 +5505,41 @@ i(52986,{maps_disp=a[307],providers={a[151]}}),
 i(108363,{awp=60002,providers={a[151]},spellID=153861,g={
 i(52986,{awp=40003})}}),
 i(63122,{f=55,providers={a[148],a[149],a[150],a[151],a[152],a[153]},requireSkill=182,spellID=88728}),
-i(52984,{coords={a[314],a[361],a[350],a[387]},description="Can be found near the base of vegetation and structures.",maps_disp=a[296],providers={a[149]}}),
+i(52984,{coords={
+[204]={a[314],a[361]},
+[205]={a[350],a[387]}},description="Can be found near the base of vegetation and structures.",maps_disp=a[296],providers={a[149]}}),
 i(108361,{awp=60002,providers={a[149]},spellID=153876,g={
 i(52984,{awp=40003})}}),
 i(52987,{maps_disp=a[321],providers={{"i",69817},a[152]}}),
 i(108364,{awp=60002,providers={a[152]},spellID=153883,g={
 i(52987,{awp=40003})}}),
-i(52988,{coords={a[355],a[380],a[398],a[401],a[409]},providers={a[153]}}),
+i(52988,{coords={
+[244]={a[355]},
+[249]={a[380],a[398],a[401],a[409]}},providers={a[153]}}),
 i(108365,{awp=60002,providers={a[153]},spellID=153884,g={
 i(52988,{awp=40003})}}),
 o(202749,{description="Can be found near and in waters.",maps={198,201,204,205,245}}),
 o(202747,{description="Mount Hyjal is the better place to look for these.",maps=a[297]}),
 o(202750,{maps=a[307]}),
-o(202748,{coords={a[314],a[361],a[350],a[387]},description="Can be found near the base of vegetation and structures.",maps=a[296]}),
+o(202748,{coords={
+[204]={a[314],a[361]},
+[205]={a[350],a[387]}},description="Can be found near the base of vegetation and structures.",maps=a[296]}),
 o(202751,{maps=a[321]}),
-o(202752,{coords={a[355],a[380],a[398],a[401],a[409]}})})}}),
+o(202752,{coords={
+[244]={a[355]},
+[249]={a[380],a[398],a[401],a[409]}}})})}}),
 prof(773,{awp=40003,g={
 h(-22,{
-i(67348,{coords={a[438],a[443]},providers={a[59],a[60]}}),
-i(62323,{coords={a[438],a[443]},providers={a[59],a[60]}}),
-i(67319,{coords={a[438],a[443]},providers={a[59],a[60]}}),
-i(68047,{coords={a[438],a[443]},providers={a[59],a[60]}}),
-i(67335,{coords={a[438],a[443]},providers={a[59],a[60]}})}),
+i(67348,{coords={
+[241]={a[438],a[443]}},providers={a[59],a[60]}}),
+i(62323,{coords={
+[241]={a[438],a[443]}},providers={a[59],a[60]}}),
+i(67319,{coords={
+[241]={a[438],a[443]}},providers={a[59],a[60]}}),
+i(68047,{coords={
+[241]={a[438],a[443]}},providers={a[59],a[60]}}),
+i(67335,{coords={
+[241]={a[438],a[443]}},providers={a[59],a[60]}})}),
 ah(51005,{type="s",g={
 i(61979,{providers={a[148],a[149],a[150],a[151],a[152],a[153]}}),
 i(61980,{providers={a[148],a[149],a[150],a[151],a[152],a[153]}})}}),
@@ -14116,7 +14291,8 @@ q(71962,{an="s:389420",providers={{"s",389420}},requireSkill=186,type="hqt",g={
 crit(61376,{achID=18819,awp=100107,id=7,maps=a[303],providers={a[177]},requireSkill=186})}}),
 q(77828,{an="s:421247",awp=100200,providers={{"s",421247}},requireSkill=186,type="hqt"}),
 q(75140,{an="s:405121",awp=100100,providers={{"s",405121}},requireSkill=186,type="hqt",g={
-crit(61378,{achID=18819,awp=100107,coords={{29.7,41.4,2133},{29.9,42.2,2133},{30.6,50.4,2133},{30.8,41.3,2133},{31.2,44.5,2133},{31.9,42.3,2133},{32.5,43.1,2133},{32.7,44,2133},{33.1,45.1,2133},{33.6,41.8,2133},{33.7,44.4,2133},{34.3,54,2133},{34.7,49,2133},{35.3,43.4,2133},{35.3,51.8,2133},{36,42.2,2133},{49.5,40.4,2133}},id=9,providers={a[204]},requireSkill=186})}}),
+crit(61378,{achID=18819,awp=100107,coords={
+[2133]={{29.7,41.4},{29.9,42.2},{30.6,50.4},{30.8,41.3},{31.2,44.5},{31.9,42.3},{32.5,43.1},{32.7,44},{33.1,45.1},{33.6,41.8},{33.7,44.4},{34.3,54},{34.7,49},{35.3,43.4},{35.3,51.8},{36,42.2},{49.5,40.4}}},id=9,providers={a[204]},requireSkill=186})}}),
 q(71954,{an="s:384690",providers={{"s",384690}},requireSkill=186,type="hqt",g={
 crit(61372,{achID=18819,awp=100107,id=3,maps=a[303],providers={a[174]},requireSkill=186})}}),
 q(71960,{an="s:389409",providers={{"s",389409}},requireSkill=186,type="hqt",g={
@@ -14996,7 +15172,7 @@ flt(57,{
 s(219649,222494,{b=1,f=57,lvl=68,requireSkill=164,spellID=455782}),
 i(222495,{b=1,f=57,lvl=68,requireSkill=164,spellID=455724}),
 s(219647,222492,{b=1,f=57,lvl=68,requireSkill=165,spellID=455754}),
-s(219648,222493,{b=1,collectible=false,f=57,lvl=68,requireSkill=165,spellID=455780}),
+i(222493,{b=1,collectible=false,f=57,lvl=68,requireSkill=165,spellID=455780}),
 i(222491,{b=1,f=57,lvl=68,requireSkill=197,spellID=455711}),
 s(219576,222489,{b=1,f=57,lvl=68,requireSkill=186,spellID=455723}),
 s(219575,222488,{b=1,f=57,lvl=68,requireSkill=182,spellID=455698}),
@@ -18450,5 +18626,5 @@ i(239703),
 i(239201),
 i(239202),
 i(240164),
-i(240165)})})}})};
+i(240165)})})}})}});
 end);

@@ -1,8 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
-local ach,cl,crit,faction,flt,h,i,mnt,s,title,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateItemSource,_.CreateTitle,_.CreateExpansion;
-categories.Character={
+_.AddEventHandler("OnBuildDataCache", function(categories)
+local ach,cl,crit,faction,flt,h,i,mnt,p,s,title,x=_.CreateAchievement,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateItemSource,_.CreateTitle,_.CreateExpansion;
+categories.Character=
+h(-731,{SortPriority=40,g={
 h(-12,{
 ach(4784,{awp=30303,r=2,rwp=40001}),
 ach(4785,{awp=30303,r=1,rwp=40001}),
@@ -1100,5 +1101,14 @@ h(-101,{
 s(133744,23346,{awp=20001,f=26,q=1,rwp=90001}),
 s(117900,2361,{f=24,q=1,rwp=90001}),
 s(116885,37,{awp=40001,f=21,q=1,rwp=30002,u=2})}),
-i(6948,{b=1,q=1})})};
+i(6948,{b=1,q=1})}),
+h(-43,{pb=1,g={
+h(-12,{pb=1,g={
+ach(2516,{pb=1,u=30,g={
+p(203,{b=1,itemID=44841,pb=1,petTypeID=5,q=3,spellID=61991,u=30})}}),
+ach(1250,{pb=1,u=17,g={
+p(160,{b=1,itemID=40653,pb=1,petTypeID=5,q=3,spellID=40990,u=17})}}),
+ach(1248,{pb=1}),
+ach(15,{pb=1}),
+ach(1017,{pb=1})}})}})}});
 end);

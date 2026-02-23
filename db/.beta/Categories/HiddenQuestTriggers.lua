@@ -1,8 +1,8 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...;
-_.AddEventHandler("OnGetDataCache", function(categories)
+_.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ah,cl,cu,faction,gb,h,inst,m,n,o,prof,q,x=_.CreateHeader,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFaction,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateInstance,_.CreateMap,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateExpansion;
-local a={{"n",192298},{"SL_COV_KYR"},{"SL_COV_NEC"},{"SL_COV_NFA"},{"SL_COV_VEN"},{1},{10},{1009},{11},{115,898,899,900,901,902},{1173,1174,1176,1177},{12},{1499,1500,1524,1528},{2},{228950},{2375},{3,4,5,6},{3},{4},{419,420,421},{46,81.5,2022},{5},{544,545,546,547,548,549},{6},{629},{66213},{66846},{676},{69900,69901},{7},{8},{9}};
+local a={{"n",192298},{"SL_COV_KYR"},{"SL_COV_NEC"},{"SL_COV_NFA"},{"SL_COV_VEN"},{1},{10},{1009},{11},{115,898,899,900,901,902},{1173,1174,1176,1177},{12},{1499,1500,1524,1528},{2},{228950},{2375},{3,4,5,6},{3},{4},{419,420,421},{46,81.5},{5},{544,545,546,547,548,549},{6},{629},{66213},{66846},{676},{69900,69901},{7},{8},{9}};
 categories.HiddenQuestTriggers={
 x(1,{
 m(13,{awp=11101,g={
@@ -5334,7 +5334,8 @@ q(80450,{type="hqt"}),
 q(80198,{type="hqt"}),
 q(80019,{type="hqt"}),
 q(80021,{type="hqt"}),
-q(80020,{coords={{29.7,27.1,971}},providers={{"n",126773}},sourceQuests={79010},type="hqt"})}}),
+q(80020,{coords={
+[971]={{29.7,27.1}}},providers={{"n",126773}},sourceQuests={79010},type="hqt"})}}),
 m(2023,{awp=100002,petBattleLvl=3,lvl=20,g={
 h(-12,{
 q(72610,{awp=100007,type="hqt"})}),
@@ -5599,13 +5600,20 @@ q(70773,{type="hqt"}),
 q(70778,{type="hqt"}),
 q(72804,{type="hqt"}),
 q(70218,{type="hqt"}),
-q(72178,{altQuests={72174,72176,72177,72179},coords={a[21]},providers={a[1]},repeatable=1,sourceQuests=a[29],type="hqt"}),
-q(72174,{altQuests={72176,72177,72178,72179},coords={a[21]},providers={a[1]},repeatable=1,sourceQuests=a[29],type="hqt"}),
-q(72179,{altQuests={72174,72176,72177,72178},coords={a[21]},providers={a[1]},repeatable=1,sourceQuests=a[29],type="hqt"}),
-q(72177,{altQuests={72174,72176,72178,72179},coords={a[21]},providers={a[1]},repeatable=1,sourceQuests=a[29],type="hqt"}),
-q(72176,{altQuests={72174,72177,72178,72179},coords={a[21]},providers={a[1]},repeatable=1,sourceQuests=a[29],type="hqt"}),
-q(72089,{coords={{57.7,66.9,2022}},providers={{"n",193287}},type="hqt"}),
-o(404260,{awp=100105,coords={{67.1,56.8,2022}},questID=76451,type="hqt"})}),
+q(72178,{altQuests={72174,72176,72177,72179},coords={
+[2022]={a[21]}},providers={a[1]},repeatable=1,sourceQuests=a[29],type="hqt"}),
+q(72174,{altQuests={72176,72177,72178,72179},coords={
+[2022]={a[21]}},providers={a[1]},repeatable=1,sourceQuests=a[29],type="hqt"}),
+q(72179,{altQuests={72174,72176,72177,72178},coords={
+[2022]={a[21]}},providers={a[1]},repeatable=1,sourceQuests=a[29],type="hqt"}),
+q(72177,{altQuests={72174,72176,72178,72179},coords={
+[2022]={a[21]}},providers={a[1]},repeatable=1,sourceQuests=a[29],type="hqt"}),
+q(72176,{altQuests={72174,72177,72178,72179},coords={
+[2022]={a[21]}},providers={a[1]},repeatable=1,sourceQuests=a[29],type="hqt"}),
+q(72089,{coords={
+[2022]={{57.7,66.9}}},providers={{"n",193287}},type="hqt"}),
+o(404260,{awp=100105,coords={
+[2022]={{67.1,56.8}}},questID=76451,type="hqt"})}),
 h(-46,{
 q(74000,{type="hqt"}),
 q(74033,{type="hqt"}),
@@ -6381,7 +6389,8 @@ q(65440,{type="hqt"}),
 q(85588,{type="hqt"}),
 q(86400,{awp=110100,type="hqt"}),
 q(91744,{awp=110200,type="hqt"}),
-q(93399,{awp=110207,coords={{46.3,49.6,2339}},lc={1,"questID",84638},providers={{"n",234562}},repeatable=1,type="hqt"})}),
+q(93399,{awp=110207,coords={
+[2339]={{46.3,49.6}}},lc={1,"questID",84638},providers={{"n",234562}},repeatable=1,type="hqt"})}),
 h(-56,{
 q(82255,{type="hqt"})})}),
 m(2255,{maps={2213,2216,2256},petBattleLvl=25,lvl=78,g={
@@ -6613,7 +6622,8 @@ q(81925,{repeatable=1,type="hqt"}),
 q(81926,{repeatable=1,type="hqt"}),
 q(82991,{type="hqt"}),
 q(82116,{repeatable=1,type="hqt"}),
-q(84585,{an="o:457120",coords={{46.8,47.6,2214}},type="hqt"})}),
+q(84585,{an="o:457120",coords={
+[2214]={{46.8,47.6}}},type="hqt"})}),
 h(-46,{
 q(84046,{type="hqt"}),
 q(84044,{type="hqt"}),
@@ -7189,9 +7199,9 @@ q(93067,{type="hqt"}),
 q(94419,{awp=120000,rwp=120100,type="hqt"})})}),
 m(2395,{
 h(-45,{
+q(94815,{type="hqt"}),
 q(95435,{type="hqt"}),
-q(92848,{type="hqt"}),
-q(93793,{type="hqt"})}),
+q(92848,{type="hqt"})}),
 h(-46,{
 q(94690,{type="hqt"}),
 q(94692,{type="hqt"}),
@@ -7206,7 +7216,9 @@ q(94693,{type="hqt"}),
 q(94695,{type="hqt"}),
 q(94684,{type="hqt"}),
 q(94689,{type="hqt"}),
-q(94681,{type="hqt"})})}),
+q(94681,{type="hqt"})}),
+h(-56,{
+q(86645,{type="hqt"})})}),
 m(2413,{maps={2576},g={
 h(-45,{
 q(92712,{type="hqt"}),
@@ -7222,6 +7234,7 @@ q(91511,{an="i:264262",type="hqt"}),
 q(91512,{an="i:262906",type="hqt"}),
 q(91456,{an="i:263196",type="hqt"}),
 q(93790,{type="hqt"}),
+q(94390,{type="hqt"}),
 q(94391,{type="hqt"})}),
 h(-46,{
 q(94725,{type="hqt"}),
@@ -7246,12 +7259,14 @@ q(95535,{type="hqt"}),
 q(83817,{type="hqt"})})}}),
 m(-671,{}),
 h(-45,{
+q(95008,{lvl=80,type="hqt"}),
 q(89196,{repeatable=1,type="hqt"}),
 q(89247,{repeatable=1,type="hqt"}),
 q(95247,{awp=120000,type="hqt"})}),
 m(2405,{maps={2526,2527},g={
 h(-45,{
 q(92633,{repeatable=1,type="hqt"}),
+q(93515,{type="hqt"}),
 q(94795,{type="hqt"}),
 q(94743,{type="hqt"})}),
 h(-46,{
@@ -7271,11 +7286,12 @@ q(94729,{type="hqt"}),
 q(94730,{type="hqt"})}),
 h(-681,{
 h(-45,{
-q(90962,{type="hqt"}),
+q(90962,{repeatable=1,type="hqt"}),
 q(90943,{lvl=90,type="hqt"}),
 q(91938,{type="hqt"}),
 q(91464,{isDaily=1,lvl=90,type="hqt"}),
-q(91465,{lvl=90,type="hqt"})})}),
+q(91465,{lvl=90,type="hqt"}),
+q(93793,{type="hqt"})})}),
 h(-56,{
 q(94005,{type="hqt"}),
 q(93569,{type="hqt"}),
@@ -7305,10 +7321,14 @@ q(94706,{type="hqt"}),
 q(94697,{type="hqt"}),
 q(94704,{type="hqt"})}),
 h(-56,{
-q(93918,{coords={{24,75.7,2437}},type="hqt"}),
-q(93917,{coords={{24,78.9,2437}},type="hqt"}),
-q(93916,{coords={{26.1,80.7,2437}},type="hqt"}),
-q(93919,{coords={{26.1,74,2437}},type="hqt"})})}})}),
+q(93918,{coords={
+[2437]={{24,75.7}}},type="hqt"}),
+q(93917,{coords={
+[2437]={{24,78.9}}},type="hqt"}),
+q(93916,{coords={
+[2437]={{26.1,80.7}}},type="hqt"}),
+q(93919,{coords={
+[2437]={{26.1,74}}},type="hqt"})})}})}),
 h(-103,{
 h(-45,{
 q(95669,{isDaily=1,type="hqt"})}),
