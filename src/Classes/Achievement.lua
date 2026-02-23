@@ -263,7 +263,6 @@ do
 		-- Account Cache
 		app.SetBatchAccountCached(CACHE, acct, 1)
 		app.SetBatchAccountCached(CACHE, shared, 3)	-- Dual-Faction achievements, completed for Account, but not any specific character
-		app.SetBatchAccountCached(CACHE, none)
 		-- app.PrintDebugPrior("OnRefreshCollections.Achievement")
 	end);
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
