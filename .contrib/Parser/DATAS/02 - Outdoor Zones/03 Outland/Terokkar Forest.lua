@@ -1722,6 +1722,16 @@ root(ROOTS.Zones, {
 							30759,	-- Mag'hari Light Recurve
 						}},
 					}),
+					n(20986, {	-- Dealer Tariq
+						["coord"] = { 39.4, 70.0, TEROKKAR_FOREST },
+						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
+						["groups"] = {
+							i(29393),	-- Diamond Berries
+							i(29395),	-- Ethermead
+							i(29394),	-- Lyribread
+							i(29454),	-- Silverwine
+						},
+					}),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, n(23367, {	-- Grella <Skyguard Quartermaster>
 						["coord"] = { 64.3, 66.2, TEROKKAR_FOREST },
 						["groups"] = bubbleDownClassicRep(FACTION_SHATARI_SKYGUARD, {
