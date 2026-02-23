@@ -313,12 +313,19 @@ app:CreateWindow("Tradeskills", {
 								if dynamicSuffix then
 									local recipesList = app.CreateDynamicCategory(dynamicSuffix);
 									recipesList.IgnoreBuildRequests = true;
-									recipesList.text = "All Recipes";
+									recipesList.sourceIgnored = true;
+									recipesList.name = "All Recipes";
 									recipesList.icon = 134939;
 									tinsert(cache.g, 1, recipesList);
 								end
 								local response = app:BuildSearchResponse(app:GetDatabaseRoot().g, "requireSkill", requireSkill);
-								if response then app.ArrayAppend(cache.g, response); end
+								if response then
+									for i=1,#response do
+										local o = response[i];
+										app:RemoveIgnoredBuildRequests(o);
+										cache.g[#cache.g + 1] = o;
+									end
+								end
 							end
 							tinsert(g, cache);
 						end

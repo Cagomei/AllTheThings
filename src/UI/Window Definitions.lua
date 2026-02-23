@@ -2111,6 +2111,21 @@ function app:BuildSearchResponseForField(groups, field)
 		return group[field];
 	end);
 end
+local function RemoveIgnoredBuildRequests(data)
+	if data.IgnoreBuildRequests then
+		return true;
+	end
+	if data.g then
+		for i=#data.g,1,-1 do
+			if RemoveIgnoredBuildRequests(data.g[i]) then
+				tremove(data.g, i);
+			end
+		end
+	end
+end
+function app:RemoveIgnoredBuildRequests(data)
+	RemoveIgnoredBuildRequests(data);
+end
 local function OnCloseButtonPressed(self)
 	self:GetParent():Hide();
 end
@@ -2970,13 +2985,37 @@ function app:CreateWindow(suffix, definition)
 	app.WindowDefinitions[suffix] = definition;
 	if definition then
 		-- Dynamic Categories are neat, but currently only a Classic Feature (for now?)
-		if definition.IsDynamicCategory and app.IsClassic and not definition.DynamicCategoryHeader then
-			app.AddEventHandler("OnBuildDataCache", function(categories)
-				categories["Dynamic" .. suffix] = app.CreateDynamicCategory(suffix, {
-					SortPriority = 100,
-					sourceIgnored = 1
-				});
-			end);
+		if definition.IsDynamicCategory and app.IsClassic then
+			if definition.DynamicCategoryHeader then
+				app.AddEventHandler("OnDataCached", function(categories)
+					local category = categories.Professions;
+					if category then
+						for i,group in ipairs(category.g) do
+							if group.requireSkill == definition.DynamicProfessionID then
+								local recipesList = app.CreateDynamicCategory(suffix);
+								recipesList.IgnoreBuildRequests = true;
+								recipesList.sourceIgnored = true;
+								recipesList.name = "All Recipes";
+								recipesList.icon = 134939;
+								recipesList.parent = group;
+								local g = group.g;
+								if not g then
+									g = {};
+									group.g = g;
+								end
+								tinsert(g, 1, recipesList);
+							end
+						end
+					end
+				end);
+			else
+				app.AddEventHandler("OnBuildDataCache", function(categories)
+					categories["Dynamic" .. suffix] = app.CreateDynamicCategory(suffix, {
+						SortPriority = 100,
+						sourceIgnored = 1
+					});
+				end);
+			end
 		end
 		
 		if definition.Preload then
