@@ -618,8 +618,10 @@ local CreateAchievementDataType = app.CreateClass("AchievementDataType", "__achU
 			elseif not t.requireAny then
 				local progress,total = 0,0;
 				for i,data in ipairs(criteriaData) do
-					progress = progress + (data.progress or 0);
-					total = total + (data.total or 1);
+					if data.collectible then
+						progress = progress + (data.progress or 0);
+						total = total + (data.total or 1);
+					end
 				end
 				return tostring(progress) .. " / " .. tostring(total);
 			end
