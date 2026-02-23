@@ -289,7 +289,7 @@ app:CreateWindow("Tradeskills", {
 					self.previousCraftSkillID = craftSkillID;
 					self.previousTradeSkillID = tradeSkillID;
 					local g = {};
-					for i,group in ipairs(ProfessionsCategory) do
+					for i,group in ipairs(ProfessionsCategory.g) do
 						if group.spellID == craftSkillID or group.spellID == tradeSkillID then
 							local cache = self.cache[group.spellID];
 							if not cache then

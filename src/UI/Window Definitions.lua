@@ -2232,6 +2232,25 @@ local function ApplyAlphaForWindow(self)
 		self:SetAlpha(self.__ALPHA);
 	end
 end
+local function RefreshAndCallback(self, ...)
+	UpdateVisibleRowData(self, ...);
+	if self.RegisteredRefreshCallbacks then
+		local TLUG = self.data.TLUG;
+		if TLUG ~= self.__lastTLUG then
+			self.__lastTLUG = TLUG;
+			for i=1,#self.RegisteredRefreshCallbacks do
+				self.RegisteredRefreshCallbacks[i](TLUG);
+			end
+		end
+	end
+end
+local function RegisterRefreshCallback(self, callback)
+	if not self.RegisteredRefreshCallbacks then
+		self.RegisteredRefreshCallbacks = { callback };
+	else
+		self.RegisteredRefreshCallbacks[#self.RegisteredRefreshCallbacks + 1] = callback;
+	end
+end
 local FieldDefaults = {
 	AddEventHandler = function(self, event, handler, keepGlobal)
 		-- allows a window to keep track of any specific custom handler functions it creates
@@ -2334,7 +2353,6 @@ local FieldDefaults = {
 		app.AssignChildren(self.data);
 	end,
 	DefaultUpdate = UpdateWindow,
-	DefaultRefresh = UpdateVisibleRowData,
 	DefaultRedraw = function(self)
 		-- app.PrintDebug(app.Modules.Color.Colorize("Redraw:", app.DefaultColors.TooltipLore),self.Suffix,
 		-- 	self.rowData and #self.rowData,
@@ -2377,7 +2395,16 @@ local FieldDefaults = {
 			self.__ALPHA = value
 			self:SetScript("OnUpdate", ApplyAlphaForWindow);
 		end
-	end
+	end,
+	
+	-- Refresh Callbacks
+	DefaultRefresh = UpdateVisibleRowData,
+	RegisterRefreshCallback = function(self, ...)
+		-- Once a window registers for refresh callbacks, then we inject the functionality to replace the Default Refresh.
+		self.DefaultRefresh = RefreshAndCallback;
+		self.RegisterRefreshCallback = RegisterRefreshCallback;
+		self:RegisterRefreshCallback(...);
+	end,
 };
 local DefaultEventHandlers = {
 	["Settings.OnSet"] = function(self,container,setting,value)
@@ -2950,25 +2977,6 @@ function app:CreateWindow(suffix, definition)
 					sourceIgnored = 1
 				});
 			end);
-			definition.DefaultRefresh = function(self, ...)
-				UpdateVisibleRowData(self, ...);
-				if self.RegisteredRefreshCallbacks then
-					local TLUG = self.data.TLUG;
-					if TLUG ~= self.__lastTLUG then
-						self.__lastTLUG = TLUG;
-						for i=1,#self.RegisteredRefreshCallbacks do
-							self.RegisteredRefreshCallbacks[i](TLUG);
-						end
-					end
-				end
-			end
-			definition.RegisterRefreshCallback = function(self, callback)
-				if not self.RegisteredRefreshCallbacks then
-					self.RegisteredRefreshCallbacks = { callback };
-				else
-					self.RegisteredRefreshCallbacks[#self.RegisteredRefreshCallbacks + 1] = callback;
-				end
-			end
 		end
 		
 		if definition.Preload then
