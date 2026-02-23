@@ -5998,7 +5998,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 65.4, 22.6, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 8561,	-- Mossflayer Shadowhunter
 				}),
 			}),

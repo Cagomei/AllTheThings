@@ -12613,7 +12613,7 @@ r(17555,{crs={9449,9450,9451,9452},itemID=13479,learnedAt=270,q=2,requireSkill=1
 r(17578,{awp=100107,coords={
 [1423]={{41,50.2},{67.8,39.8},{83.6,44}}},crs={8546,8550},itemID=13499,learnedAt=290,q=2,requireSkill=171,rwp=40003}),
 i(12811,{crs={12339},description="Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",q=2}),
-r(19833,{awp=100107,coords={
+r(19833,{awp=11101,coords={
 [1423]={{65.4,22.6},{68.8,20.6},{72.8,15.2}}},crs={8561},description="Can kill Mossflayer Scout and Mossflayer Cannibal to get Shadowhunters.",itemID=16056,learnedAt=300,q=2,requireSkill=202,rwp=40003})})}}),
 m(1429,{icon=236761,lore="Elwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center. The mines are infested by kobolds and the farmlands have been taken over by the Defias.",g={
 m(425,{icon=236447,lore="Northshire was the pride of Stormwind's vineyards until recently when Defias bandits drove off the farmers and occupied the farm and fields. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.",["zone-text-areas"]={9,59,24,34},g={
