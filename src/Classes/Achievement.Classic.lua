@@ -278,6 +278,9 @@ app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteria
 	["OnTooltip"] = function(t)
 		return OnTooltipForAchievementCriteriaData;
 	end,
+	["statistic"] = function(t)
+		return t.data.statistic;
+	end,
 }, function(t)
 	local data = AchievementCriteriaData[t.criteriaID];
 	if data then
@@ -530,6 +533,9 @@ app.CreateAchievement = app.CreateClass("Achievement", "achievementID", fields,
 	end,
 	["OnTooltip"] = function(t)
 		return OnTooltipForAchievement;
+	end,
+	["statistic"] = function(t)
+		return t.data.statistic;
 	end,
 }, function(t)
 	local data = AchievementData[t.achievementID];

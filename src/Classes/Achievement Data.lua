@@ -607,6 +607,24 @@ local CreateAchievementDataType = app.CreateClass("AchievementDataType", "__achU
 	["OnTooltip"] = function(t)
 		return OnTooltipForAchievementData;
 	end,
+	["statistic"] = function(t)
+		local criteriaData = t.criteriaData;
+		if criteriaData then
+			if #criteriaData == 1 then
+				local criteria = criteriaData[1];
+				if criteria.total > 1 then
+					return tostring(criteria.progress) .. " / " .. tostring(criteria.total);
+				end
+			elseif not t.requireAny then
+				local progress,total = 0,0;
+				for i,data in ipairs(criteriaData) do
+					progress = progress + (data.progress or 0);
+					total = total + (data.total or 1);
+				end
+				return tostring(progress) .. " / " .. tostring(total);
+			end
+		end
+	end,
 });
 for id,achievement in pairs(AchievementData) do
 	AchievementData[id] = CreateAchievementDataType(id, achievement);
