@@ -482,6 +482,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 47.2, 38.4, STORMWIND_CITY },	-- Orphan Matron Nightingale
 				-- #endif
 			},
+			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
@@ -515,6 +516,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 70.8, 25.6, ORGRIMMAR },	-- Orphan Matron Battlewail
 				-- #endif
 			},
+			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
 			-- #if AFTER CATA
 			["maps"] = {
 				86,	-- Orgrimmar: The Drag
@@ -724,6 +726,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 47.4, 38.6, STORMWIND_CITY },	-- Orphan Matron Nightingale
 				-- #endif
 			},
+			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
@@ -768,6 +771,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 70.8, 25.6, ORGRIMMAR },	-- Orphan Matron Battlewail
 				-- #endif
 			},
+			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
 			-- #if AFTER CATA
 			["maps"] = {
 				86,	-- Orgrimmar: The Drag

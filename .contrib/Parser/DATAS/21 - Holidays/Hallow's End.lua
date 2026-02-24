@@ -3532,6 +3532,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 47.6, 35.4, STORMWIND_CITY },
 				-- #endif
 			},
+			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -3614,6 +3615,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 71.2, 22.8, ORGRIMMAR },
 				-- #endif
 			},
+			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),

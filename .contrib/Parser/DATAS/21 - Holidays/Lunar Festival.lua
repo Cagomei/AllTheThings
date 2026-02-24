@@ -121,6 +121,39 @@ ELDERS_OF_THE_HORDE = createHeader({
 });
 
 local COIN_OF_ANCESTRY = 21100;
+local YEARLY_REPUTATION = {
+	["aqd"] = {
+		["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
+	},
+	["hqd"] = {
+		["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
+	},
+	["isYearly"] = true,
+};
+local eldersHeader = function(achievementID, timeline, t)
+	return header(HEADERS.Achievement, achievementID, {
+		["timeline"] = type(timeline) == "table" and timeline or { timeline },
+		["groups"] = bubbleDown(YEARLY_REPUTATION, t),
+	});
+end
+local preWrathEldersHeader = function(headerID, achievementID, timeline, t)
+	return 
+		-- #if BEFORE WRATH
+		n
+		-- #else
+		header
+		-- #endif
+		(
+		-- #if BEFORE WRATH
+		headerID,
+		-- #else
+		HEADERS.Achievement, achievementID,
+		-- #endif
+		{
+			["timeline"] = type(timeline) == "table" and timeline or { timeline },
+			["groups"] = bubbleDown(YEARLY_REPUTATION, t),
+		});
+end
 
 root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, {
 	-- #if AFTER WRATH
@@ -742,10 +775,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
-		header(HEADERS.Achievement, 41130, bubbleDownSelf({	-- Elders of Khaz Algar
-			["timeline"] = { ADDED_11_0_7 },
-			["isYearly"] = true,
-		}, {
+		eldersHeader(41130, ADDED_11_0_7, {	-- Elders of Khaz Algar
 			q(85929, {	-- Archivist Rubbleglint on The Isle of Dorn
 				["qg"] = 233971,	-- Archivist Rubbleglint
 				["coord"] = { 40.91, 87.35, ISLE_OF_DORN },
@@ -778,11 +808,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 233978,	-- Elder Ikk'xataz
 				["coord"] = { 46.82, 57.21, AZJ_KAHET },
 			}),
-		})),
-		header(HEADERS.Achievement, 17321, bubbleDownSelf({	-- Elders of the Dragon Isles
-			["timeline"] = { ADDED_10_0_5 },
-			["isYearly"] = true,
-		}, {
+		}),
+		eldersHeader(17321, ADDED_10_0_5, {	-- Elders of the Dragon Isles
 			q(73716, {	-- Aylaag Elder
 				["qg"] = 201129,	-- Aylaag Elder
 				["coord"] = { 44.3, 63.7, THE_WAKING_SHORES },
@@ -815,11 +842,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 200747,	-- Shikaar Elder
 				["coord"] = { 83.8, 48.0, OHNAHRAN_PLAINS },
 			}),
-		})),
-		header(HEADERS.Achievement, 6006, bubbleDownSelf({	-- Elders of Cataclysm
-			["timeline"] = { ADDED_4_3_0 },
-			["isYearly"] = true,
-		}, {
+		}),
+		eldersHeader(6006, ADDED_4_3_0, {	-- Elders of Cataclysm
 			q(29736, {	-- Darkfeather the Elder
 				["qg"] = 55218,	-- Elder Darkfeather
 				["coord"] = { 51.8, 33.0, TWILIGHT_HIGHLANDS },
@@ -856,11 +880,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 55224,	-- Elder Windsong
 				["coord"] = { 26.7, 62.0, MOUNT_HYJAL },
 			}),
-		})),
-		header(HEADERS.Achievement, 1396, bubbleDownSelf({	-- Elders of Northrend
-			["timeline"] = { ADDED_3_0_8 },
-			["isYearly"] = true,
-		}, {
+		}),
+		eldersHeader(1396, ADDED_3_0_8, {	-- Elders of Northrend
 			q(13033, {	-- Arp the Elder
 				["qg"] = 30364,	-- Elder Arp
 				["coord"] = { 57.3, 43.7, BOREAN_TUNDRA },
@@ -934,16 +955,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 30372,	-- Elder Whurain
 				["coord"] = { 64.2, 47.0, GRIZZLY_HILLS },
 			}),
-		})),
-		-- #if BEFORE WRATH
-		n(ELDERS_OF_THE_ALLIANCE, bubbleDownSelf({	-- Elders of the Alliance
-			["isYearly"] = true,
-		}, {
-		-- #else
-		header(HEADERS.Achievement, 915, bubbleDownSelf({	-- Elders of the Alliance
-			["isYearly"] = true,
-		}, {
-		-- #endif
+		}),
+		preWrathEldersHeader(ELDERS_OF_THE_ALLIANCE, 915, ADDED_1_12_1, {	-- Elders of the Alliance
 			q(8718, {	-- Bladeswift the Elder
 				-- #if AFTER BFA
 				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Darnassus. The Elder is on the left side of the Cenarion Enclave.",
@@ -984,20 +997,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #endif
 				},
 			}),
-		-- #if BEFORE WRATH
-		})),
-		-- #else
-		})),
-		-- #endif
-		-- #if BEFORE WRATH
-		n(ELDERS_OF_THE_HORDE, bubbleDownSelf({	-- Elders of the Horde
-			["isYearly"] = true,
-		}, {
-		-- #else
-		header(HEADERS.Achievement, 914, bubbleDownSelf({	-- Elders of the Horde
-			["isYearly"] = true,
-		}, {
-		-- #endif
+		}),
+		preWrathEldersHeader(ELDERS_OF_THE_HORDE, 914, ADDED_1_12_1, {	-- Elders of the Horde
 			q(8648, {	-- Darkcore the Elder
 				-- #if AFTER BFA
 				["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron. If Zidormi does not offer any dialogue options, travel towards Western Plaguelands and see if you get phased into pre-BfA Tirisfal.\n\nThe Elder is just inside the front door of the city. Alliance players can fly through the broken roof in front of the room. There are no guards in this area.",
@@ -1037,20 +1038,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				},
 				["qg"] = 15580,	-- Elder Ezra Wheathoof [Wrath+] / Elder Proudhorn [Classic]
 			}),
-		-- #if BEFORE WRATH
-		})),
-		-- #else
-		})),
-		-- #endif
-		-- #if BEFORE WRATH
-		n(ELDERS_OF_EASTERN_KINGDOMS, bubbleDownSelf({	-- Elders of Eastern Kingdoms
-			["isYearly"] = true,
-		}, {
-		-- #else
-		header(HEADERS.Achievement, 912, bubbleDownSelf({	-- Elders of Eastern Kingdoms
-			["isYearly"] = true,
-		}, {
-		-- #endif
+		}),
+		preWrathEldersHeader(ELDERS_OF_EASTERN_KINGDOMS, 912, ADDED_1_12_1, {	-- Elders of Eastern Kingdoms
 			q(8647, {	-- Bellowrage the Elder
 				-- #if AFTER WOD
 				["description"] = "In order to view this Elder, visit Zidormi at 48.1, 7.3 to see Blasted Lands before the invasion.",
@@ -1212,20 +1201,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #endif
 				},
 			}),
-		-- #if BEFORE WRATH
-		})),
-		-- #else
-		})),
-		-- #endif
-		-- #if BEFORE WRATH
-		n(ELDERS_OF_KALIMDOR, bubbleDownSelf({	-- Elders of Kalimdor
-			["isYearly"] = true,
-		}, {
-		-- #else
-		header(HEADERS.Achievement, 911, bubbleDownSelf({	-- Elders of Eastern Kingdoms
-			["isYearly"] = true,
-		}, {
-		-- #endif
+		}),
+		preWrathEldersHeader(ELDERS_OF_KALIMDOR, 911, ADDED_1_12_1, {	-- Elders of Kalimdor
 			q(8715, {	-- Bladeleaf the Elder
 				-- #if AFTER BFA
 				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Teldrassil. The Elder is on the left side of the Cenarion Enclave.",
@@ -1430,20 +1407,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #endif
 				},
 			}),
-		-- #if BEFORE WRATH
-		})),
-		-- #else
-		})),
-		-- #endif
-		-- #if BEFORE WRATH
-		n(ELDERS_OF_THE_DUNGEONS, bubbleDownSelf({	-- Elders of the Dungeons
-			["isYearly"] = true,
-		}, {
-		-- #else
-		header(HEADERS.Achievement, 910, bubbleDownSelf({	-- Elders of the Dungeons
-			["isYearly"] = true,
-		}, {
-		-- #endif
+		}),
+		preWrathEldersHeader(ELDERS_OF_THE_DUNGEONS, 910, ADDED_1_12_1, {	-- Elders of the Dungeons
 			q(13067, {	-- Chogan'gada the Elder
 				["description"] = "After defeating Skadi, the Elder is underneath the staircase before you enter the Ruined Court.",
 				["qg"] = 30538,	-- Elder Chogan'gada
@@ -1579,11 +1544,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["timeline"] = { ADDED_3_0_8 },
 				["maps"] = { HALLS_OF_STONE },
 			}),
-		-- #if BEFORE WRATH
-		})),
-		-- #else
-		})),
-		-- #endif
+		}),
 	}),
 	n(REWARDS, {
 		i(COIN_OF_ANCESTRY),

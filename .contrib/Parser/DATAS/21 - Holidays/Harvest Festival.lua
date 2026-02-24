@@ -47,6 +47,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 				{ 52.6, 36.0, DUN_MOROGH },
 				-- #endif
 			},
+			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 			["maps"] = { WESTERN_PLAGUELANDS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -68,6 +69,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 				{ 46.0, 13.6, DUROTAR },
 				-- #endif
 			},
+			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
 			["maps"] = { ASHENVALE },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
