@@ -274,15 +274,13 @@ do
 		local completed, _, _, _, _, _, _, _, _, me = select(4, GetAchievementInfo(id))
 		if completed then
 			if CollectionCache.AccountWideAchievements[id] then
-				app.SetAccountCached(CACHE, id, 1)
+				app.SetThingCollected(KEY, id, true, true)
 			elseif me then
-				app.SetCached(CACHE, id, 1)
-				app.SetAccountCached(CACHE, id, 2)
+				app.SetThingCollected(KEY, id, false, true)
 			else
-				app.SetAccountCached(CACHE, id, 3)
+				app.SetThingCollected(KEY, id, 3, true)
 			end
 		end
-		app.UpdateRawID(KEY, id);
 	end);
 	app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 

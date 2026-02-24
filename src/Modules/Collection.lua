@@ -329,13 +329,19 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 			if not oldstate then
 				DoCollection(t, true)
 			end
-			if not accountWide then SetCached(cacheKey, id, 1) end
-			accountCache[id] = 1
+			if not accountWide then
+				SetCached(cacheKey, id, 1)
+				accountCache[id] = 2
+			else
+				-- Achievements need to sometimes cache as 3 due to inconsistent Blizz API responses
+				accountCache[id] = tonumber(accountWide) or 1
+			end
 			return 1
 		end
 		if oldstate then
 			-- basically have to recalculate account data to know if this thing is still technically collected
 			-- via another character data, so clear it anyway
+			-- TODO: add a single key/val Account Recalculation method?
 			if accountCache[id] then
 				DoCollection(t, false)
 				accountCache[id] = nil
