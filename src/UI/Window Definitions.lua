@@ -851,9 +851,8 @@ local function UpdateVisibleRowData(self)
 				-- app.PrintDebug("Index",foundAt)
 				-- Actually do the scroll if it was determined above
 				-- Estimate the expected scroll position based on row heights in the current window
-				local possibleRows = math.floor((containerHeight - firstRowHeight) / rows[2]:GetHeight()) + 1
-				-- app.PrintDebug("Possible Rows:",possibleRows)
-				local scrollIndex = math.max(1, math.min(foundAt - (possibleRows / 2), totalRowCount - possibleRows))
+				-- app.PrintDebug("Possible Rows:",maxRows)
+				local scrollIndex = math.max(1, math.min(foundAt - (maxRows / 2), totalRowCount - maxRows))
 				local currentScroll = self.ScrollBar.CurrentIndex
 				-- app.PrintDebug("Scrolling to:",scrollIndex,"from",currentScroll)
 				if currentScroll ~= scrollIndex then
