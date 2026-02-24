@@ -520,7 +520,7 @@ app:CreateWindow("Tradeskills", {
 			if self.TSMCraftingVisible == nil then
 				self:SetTSMCraftingVisible(false)
 			end
-			if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
+			if app.Settings:GetTooltipSetting("Auto:ProfessionList") and app.IsClassic then
 				self:SetVisible(true)
 			end
 			self:RefreshRecipes(true)

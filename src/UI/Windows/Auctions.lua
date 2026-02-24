@@ -247,7 +247,7 @@ app:CreateWindow("Auctions", {
 					end
 				end
 				self:SetWidth(width);
-				if app.Settings:GetTooltipSetting("Auto:AuctionList") then
+				if app.Settings:GetTooltipSetting("Auto:AuctionList") and app.IsClassic then
 					self:Show();
 				end
 
