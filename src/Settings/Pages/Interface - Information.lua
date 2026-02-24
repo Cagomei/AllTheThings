@@ -772,7 +772,10 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	CreateInformationType("maps", { text = L.MAPS, priority = 2.6,
+	CreateInformationType("maps", {
+		text = L.MAPS,
+		priority = 2.6,
+		ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
 			local maps = reference.maps or reference.maps_disp
 			if not maps or #maps == 0 then
