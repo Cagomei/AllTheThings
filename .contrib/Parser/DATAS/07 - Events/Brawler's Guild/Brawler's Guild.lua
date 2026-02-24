@@ -2125,7 +2125,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 							}),
 							n(68257, {	-- Goredome
 								i(144378, {	-- Gorestained Brawler's Purse
-									i(144371),	-- Gorstained Tunic
+									i(144371),	-- Gorestained Tunic
 								}),
 							}),
 							n(70678, {	-- Grandpa Grumplefloot

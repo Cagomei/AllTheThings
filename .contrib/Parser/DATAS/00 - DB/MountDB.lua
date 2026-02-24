@@ -2307,35 +2307,35 @@ i(262909, 1269556);	-- Hypo-Speed X6000
 -- PATCH 12.0.1 --
 ------------------
 i(257219, 1261357);	-- Amani Blessed Bear
+i(257152, 1261316);	-- Amani Sharptalon
+i(250782, 1251433);	-- Amani Sunfeather
 i(250889, 1251630);	-- Amani Windcaller
+i(257223, 1261360);	-- Ancestral War Bear
+i(257197, 1261348);	-- Blessed Amani Burrower
 i(252011, 1253924);	-- Brilliant Petalwing
+i(257156, 1261323);	-- Cerulean Hawkstrider
 i(252014, 1253929);	-- Cerulean Sporeglider
+i(257147, 1261302);	-- Cobalt Dragonhawk
 i(257145, 1261298);	-- Crimson Dragonhawk
 i(257154, 1261322);	-- Crimson Silvermoon Hawkstrider
 i(262502, 1268926);	-- Elven Arcane Guardian
 i(246734, 1243593);	-- Fierce Grimlynx
 i(257142, 1261291);	-- Fiery Dragonhawk
 i(269009, 1284640);	-- Golden Ashened Cataclysm (CN ONLY)
+i(257444, 1261576);	-- Hexed Vilefeather Eagle
 i(257446, 1261583);	-- Insatiable Shredclaw
 i(257191, 1261336);	-- Preyseeker's Hubris
 i(257193, 1261338);	-- Preyseeker's Nightmare
 i(257192, 1261337);	-- Preyseeker's Wrath
+i(246735, 1243597);	-- Rootstalker Grimlynx
+i(252017, 1253938);	-- Ruddy Sporeglider
 i(262500, 1268924);	-- Silvermoon's Arcane Defender
 i(235658, 1218013);	-- Spring Butterfly
 i(257144, 1261296);	-- Umbral Dragonhawk
-i(263580, 1270675);	-- Vivid Chloroceros
-i(257223, 1261360);	-- Ancestral War Bear
-i(257156, 1261323);	-- Cerulean Hawkstrider
-i(257147, 1261302);	-- Cobalt Dragonhawk
-i(250782, 1251433);	-- Amani Sunfeather
-i(257197, 1261348);	-- Blessed Amani Burrower
-i(257152, 1261316);	-- Amani Sharptalon
-i(257200, 1261351);	-- Witherbark Pango
-i(257444, 1261576);	-- Hexed Vilefeather Eagle
-i(252017, 1253938);	-- Ruddy Sporeglider
 i(256423, 1260354);	-- Untainted Grove Crawler
-i(246735, 1243597);	-- Rootstalker Grimlynx
 i(252012, 1253927);	-- Vibrant Petalwing
+i(263580, 1270675);	-- Vivid Chloroceros
+i(257200, 1261351);	-- Witherbark Pango
 --- UNSORTED ---
 i(257157, 1261325);	-- [DNT] 12.0 Black Hawkstrider
 i(0, 1252141);	-- [DNT] Jellyfish

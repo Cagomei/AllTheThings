@@ -1490,6 +1490,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 			q(78981, {	-- Love is in the Air (H)
 				["qgs"] = {
+					19169,	-- Blood Elf Commoner
 					215196,	-- Aurora Vabsley
 					-- #if AFTER TWW
 					220307,	-- Holiday Enthusiast

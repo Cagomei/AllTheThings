@@ -1627,7 +1627,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				}),
 				q(76430, {	-- Beingning Impositions (H)
 					["provider"] = { "n", 207051 },	-- Assistant Phineas
-					-- ["coord"] = { X, Y, ORGRIMMAR },
+					["coord"] = { 42.5, 51.8, ORGRIMMAR },
 					["timeline"] = { ADDED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },

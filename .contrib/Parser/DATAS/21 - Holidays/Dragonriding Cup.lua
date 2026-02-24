@@ -2157,12 +2157,18 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 				}),
 				q(78047, {	-- The Outland Cup Circuit
 					["sourceQuests"] = { 78040, 79127, 79128 },	-- The Outland Cup Begins
-					["provider"] = { "n", 206737 },	-- Lord Andestrasz
-					["coord"] = { 26.9, 47.4, VALDRAKKEN },
-					["repeatable"] = true,
-					["groups"] = {
-						currency(RIDERS_OF_AZEROTH_BADGE),
+					["qgs"] = {
+						206737,	-- Lord Andestrasz <Dragonriding Emissary>
+						214111,	-- Lord Andestrasz <Dragonriding Emissary> [A]
+						214112,	-- Lord Andestrasz <Dragonriding Emissary> [H]
 					},
+					["coords"] = {
+						{ 26.9, 47.4, VALDRAKKEN },
+						{ 52.2, 59.8, ORGRIMMAR },
+						{ 60.0, 66.6, STORMWIND_CITY },
+					},
+					["repeatable"] = true,
+					["groups"] = { currency(RIDERS_OF_AZEROTH_BADGE) },
 				}),
 				dragonridingrace(77264, {	-- Auchindoun Coaster
 					["provider"] = { "n", 208596 },	-- Bronze Timekeeper

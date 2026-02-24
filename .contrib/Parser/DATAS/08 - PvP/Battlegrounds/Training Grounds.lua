@@ -260,3 +260,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		},
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	n(TRAINING_GROUNDS, {
+		n(QUESTS, {
+			q(94788, {	-- First Daily Training Grounds Win
+				["isDaily"] = true,
+				['timeline'] = { ADDED_12_0_0 },
+			}),
+		}),
+	}),
+}));

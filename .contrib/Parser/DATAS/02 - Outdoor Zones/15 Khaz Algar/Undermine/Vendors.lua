@@ -155,6 +155,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(243321, {	-- Cartel Head's Schmancy Desk (DECOR!)
 						["cost"] = { { "c", RESONANCE_CRYSTALS, 800 } },
 					}),
+					i(267265, {	-- Counterfeit Dark Heart of Galakrond (DECOR!)
+						["cost"] = { { "c", RESONANCE_CRYSTALS, 15000 } },
+					}),
 					i(245306, {	-- Cozy Four-Pipe Bed (DECOR!)
 						["cost"] = { { "c", RESONANCE_CRYSTALS, 900 } },
 					}),

@@ -32,10 +32,6 @@ root(ROOTS.Unsorted, {
 				i(265653),	-- Elegant Storage Table
 				i(265654),	-- Elegant Elven Washbasin
 				i(266130),	-- Gilded Silvermoon Gazebo
-
-
-
-				i(258268),	-- Waxmaster's Candle Rack
 				i(264343),	-- Cosmic Void Gravitational Orb
 				i(264483),	-- Cosmic Void Campfire
 				i(250793),	-- Lush Garden Trellis
@@ -907,8 +903,6 @@ root(ROOTS.Unsorted, {
 
 
 
-				-- HUNTER
-
 				-- Abyss
 				i(265767),	-- Loaknit-Woven Catch Satchel
 				i(265768),	-- Amazardhide Catch Case
@@ -922,7 +916,6 @@ root(ROOTS.Unsorted, {
 				i(250320),	-- Lightgraft
 
 				i(251903),	-- Potatoad Egg
-
 
 				i(263198),	-- Valdekar's Special
 				i(253629),	-- Personal Key to the Arcantina
@@ -939,8 +932,6 @@ root(ROOTS.Unsorted, {
 				i(256424),	-- Echo of Aln'sharan
 				i(257157),	-- [DNT] 12.0 Black Hawkstrider
 				i(260231),	-- [DNT] 12.0 White Hawkstrider
-
-
 				i(260893),	-- Arboreal Pseudoshell \\ [PH] Green Garden Snail
 				i(260894),	-- Cabbage Pseudoshell \\ [PH] Pink Garden Snail
 				i(260895),	-- Lavender Pseudoshell \\ [PH] Purple Garden Snail
@@ -962,8 +953,6 @@ root(ROOTS.Unsorted, {
 				i(263452),	-- Comfy Silvermoon Flying Quilt
 				i(257143),	-- Peridot Dragonhawk
 				i(260233),	-- Emerald Hawkstrider
-
-
 				i(257085),	-- Augmented Stormray
 
 
@@ -1690,7 +1679,6 @@ root(ROOTS.Unsorted, {
 				i(264252),	-- Zul'Aman Forest Hammock
 				i(264500),	-- Devouring Host Ritual Engine (DECOR!)
 				-- Promo?
-				i(267265),	-- Counterfeit Dark Heart of Galakrond
 				i(255643),	-- Silvermoon Barrel
 				i(264717),	-- Amani Warding Hex
 				i(263383),	-- Corked Bottle of Liquid Mystery
