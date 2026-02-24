@@ -694,7 +694,6 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(2614),	-- The Siegehold
 			faction(2635),	-- The Skeins
 			faction(2647),	-- The Vizier (Paragon)
-			faction(2569),	-- The War Within
 			faction(2648),	-- The Weaver (Paragon)
 			faction(2602),	-- Umbral Bazaar
 			faction(2579),	-- zzOldDelves: Season 1
@@ -754,7 +753,6 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(2717), -- Farstriders (Paragon)
 			faction(2726), -- Hara'ti (Paragon)
 			faction(2715), -- Magisters (Paragon)
-			faction(2698), -- Midnight
 			faction(2729), -- PLAYER, Haranir Alliance
 			faction(2728), -- PLAYER, Haranir Horde
 			faction(2781), -- Revantusk Tribe

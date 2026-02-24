@@ -4553,13 +4553,12 @@ i(267838, 5003);	-- Sunwing Hatchling
 i(250140, 4880);	-- Swamp Biter
 i(251001, 4890);	-- Vibrant Manaling
 i(250138, 4877);	-- Violet Chick
+i(239101, 4795);	-- Voidcrawler
 i(222967, 4475);	-- Webbers
 i(264303, 4972);	-- Willie
-
 i(255151, 4906);	-- Scruffbeak
 i(265609, 4985);	-- Princess Bloodshed
 --- UNSORTED ---
-
 i(0, 4905);			-- [DNT] Baby Amazard (Red)
 i(264892, 4981);	-- [PH] Black Baby Hawkstrider
 i(265035, 4984);	-- [PH] Purple Siphoid
@@ -4591,7 +4590,6 @@ i(258903, 4927);	-- Percival
 i(260730, 4948);	-- Perturbed Sporebat
 i(262763, 4964);	-- Plump Mandrake
 i(260922, 4950);	-- Preyseeker's Immature Behemoth
-
 i(264366, 4975);	-- Razeshi C.
 i(262343, 4960);	-- Saka'saka
 i(262769, 4966);	-- Screechy Mandrake
