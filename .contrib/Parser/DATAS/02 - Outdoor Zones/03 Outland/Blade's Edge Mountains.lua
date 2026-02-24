@@ -1544,7 +1544,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(30540, {	-- Tally's Waiver (Unsigned) (PQI!)
 								i(30539),	-- Tally's Waiver (Signed) (QI!)
-							},
+							}),
 						},
 					}),
 					q(10557, {	-- Test Flight: The Zephyrium Capacitorium
