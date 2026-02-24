@@ -343,7 +343,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
 						["groups"] = {
-							i(83130),	-- Shan'ze Tablet (QI!)
+							o_repeated({
+								i(83130),	-- Shan'ze Tablet (QI!)
+								o(212318),	-- Shan'ze Tablet
+								o(212319),	-- Shan'ze Tablet
+							}),
 						},
 					}),
 					q(31199, {	-- Destroy the Siege Weapons!
