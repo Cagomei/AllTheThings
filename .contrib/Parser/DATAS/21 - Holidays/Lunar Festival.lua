@@ -1048,8 +1048,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 54.2, 49.4, BLASTED_LANDS },
-					-- #else
+					-- #elseif AFTER TBC
 					{ 57.9, 54.9, BLASTED_LANDS },
+					-- #else
+					{ 58.8, 51.6, BLASTED_LANDS },
 					-- #endif
 				},
 			}),
