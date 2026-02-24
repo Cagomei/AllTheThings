@@ -1285,7 +1285,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3645, {	-- Membership Card Renewal [H]
 					["sourceQuest"] = 3643,	-- Show Your Work
 					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
-					["coord"] = { 43, 72, STRANGLETHORN_VALE },
+					["coord"] = { 43.0, 72.0, STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "g", 20000 } },	-- 2g
@@ -1722,7 +1722,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 3642,	-- The Pledge of Secrecy
 					["altQuests"] = { 3639, 3641 },	-- The Pledge of Secrecy
 					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
-					["coord"] = { 43, 72, STRANGLETHORN_VALE },
+					["coord"] = { 43.0, 72.0, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["cost"] = {
 						{ "i", 4392, 2 },	-- Advanced Target Dummy

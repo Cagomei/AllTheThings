@@ -1589,15 +1589,24 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- Manni Saved
-								["provider"] = { "n", 19763 },	-- Manni
+								["providers"] = {
+									{ "n",  19763 },	-- Manni
+									{ "o", 183936 },	-- Manni's Cage
+								},
 								["coord"] = { 45.1, 41.1, HELLFIRE_PENINSULA },
 							}),
 							objective(2, {	-- Moh Saved
-								["provider"] = { "n", 19764 },	-- Moh
+								["providers"] = {
+									{ "n",  19764 },	-- Moh
+									{ "o", 183940 },	-- Moh's Cage
+								},
 								["coord"] = { 46.4, 45.2, HELLFIRE_PENINSULA },
 							}),
 							objective(3, {	-- Jakk Saved
-								["provider"] = { "n", 19766 },	-- Jakk
+								["providers"] = {
+									{ "n",  19766 },	-- Jakk
+									{ "o", 183941 },	-- Jakk's Cage
+								},
 								["coord"] = { 47.5, 46.6, HELLFIRE_PENINSULA },
 							}),
 							i(30858),	-- Peon Sleep Potion

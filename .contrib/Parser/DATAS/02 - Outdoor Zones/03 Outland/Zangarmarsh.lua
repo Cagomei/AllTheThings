@@ -561,8 +561,13 @@ root(ROOTS.Zones, {
 					q(9731, {	-- Drain Schematics
 						["description"] = "Must have accepted or completed |cFFFFD700Balance Must Be Preserved|r to start this quest.",
 						["sourceQuest"] = 9718,	-- Balance Must Be Preserved
-						["provider"] = { "i", 24330 },	-- Drain Schematics
-						["cr"] = 18340,	-- Steam Pump Overseer
+						["provider"] = { "i", 24330 },	-- Drain Schematics (QS!)
+						["coords"] = {	-- Areas where QS! can drop
+							{ 25.5, 42.9, ZANGARMARSH },
+							{ 62.1, 40.7, ZANGARMARSH },
+							{ 63.2, 64.2, ZANGARMARSH },
+							{ 70.5, 80.5, ZANGARMARSH },
+						},
 						["lvl"] = lvlsquish(59, 59, 10),
 						["groups"] = {
 							i(27734),	-- Expedition Caster's Band
@@ -2202,6 +2207,9 @@ root(ROOTS.Zones, {
 						["description"] = "Teaches you how to summon the pet Firefly. This is an extremely rare drop.",
 						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = { 20197 },	-- Bogflare Needler
+					}),
+					i(24330, {	-- Drain Schematics (QS!)
+						["cr"] = 18340,	-- Steam Pump Overseer
 					}),
 					i(24449, {	-- Fertile Spore
 						["crs"] = {
