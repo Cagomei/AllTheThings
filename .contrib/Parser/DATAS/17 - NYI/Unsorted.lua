@@ -121,7 +121,7 @@ root(ROOTS.Unsorted, {
 				i(270444),	-- Wildbloom Haranir Carver
 			}),
 			filter(MOUNTS, {
-				-- Pet/Mount?
+				-- Pet/Mount? Might have to do with that netherdrake...
 				i(268730),	-- Nether-Warped Egg \\ Void-Touched Egg
 			}),
 			n(PROFESSIONS, {
@@ -846,7 +846,7 @@ root(ROOTS.Unsorted, {
 				i(262999),	-- Luma
 				i(264654),	-- Emberwing Hatchling
 				i(264892),	-- Nova \\ [PH] Black Baby Hawkstrider
-				i(265035),	-- Medusa \\ [PH] Purple Siphoid
+
 
 				i(264366),	-- Razeshi C.
 				i(260341),	-- Star the Lucky Dragon
@@ -920,53 +920,32 @@ root(ROOTS.Unsorted, {
 				i(263198),	-- Valdekar's Special
 				i(253629),	-- Personal Key to the Arcantina
 				i(263975),	-- Feeling Fielder Mk. 7
-				i(264517),	-- Galactic Flag of Victory
+
 
 
 			}),
 			filter(MOUNTS, {
-				-- Both Mounts?
-				i(250921),	-- Amani Blessed Bear
-
-				i(253587),	-- Scale of Aln'sharan
-				i(256424),	-- Echo of Aln'sharan
-				i(257157),	-- [DNT] 12.0 Black Hawkstrider
-				i(260231),	-- [DNT] 12.0 White Hawkstrider
-				i(260893),	-- Arboreal Pseudoshell \\ [PH] Green Garden Snail
-				i(260894),	-- Cabbage Pseudoshell \\ [PH] Pink Garden Snail
-				i(260895),	-- Lavender Pseudoshell \\ [PH] Purple Garden Snail
-				i(260896),	-- Accented Pseudoshell \\ [PH] Red Garden Snail
-				i(260916),	-- Nether-Warped Drake
-				i(262496),	-- Delver's Arcane Golem
-				-- Misc Mount/Pet?
-				i(262510),	-- Hawkstrider Egg
-
-				i(262705),	-- Vicious Snapvine
-				i(262706),	-- Ferocious Snapvine
-				i(262707),	-- Blooded Snapvine
-				i(262708),	-- Savage Snapvine
-				i(262914),	-- Spectral Hawkstrider
-				i(263222),	-- Arcanovoid Construct
-				i(263449),	-- Fluffy Comfy Flying Quilt \\ Fluffy Comfy Flying Carpet
-				i(263450),	-- Gruffy Comfy Flying Quilt \\ Gruffy Comfy Flying Carpet
-				i(263451),	-- Comfy Bel'ameth Flying Quilt
-				i(263452),	-- Comfy Silvermoon Flying Quilt
-				i(257143),	-- Peridot Dragonhawk
-				i(260233),	-- Emerald Hawkstrider
-				i(257085),	-- Augmented Stormray
-
-
-
-
-
-				i(260635),	-- Sanguine Harrower
-				i(257447),	-- Prowling Shredclaw
-				i(257448),	-- Frenzied Shredclaw
-				i(257176),	-- Duskbrute Harrower
-				i(262438),	-- Fantastical Goblin Waveshredder
-				i(262661),	-- Ghastropod
-				i(262909),	-- Hypo-Speed X6000
-				i(264273),	-- Fel Spirehawk
+				i(260896),	-- Accented Pseudoshell [Trading Post]
+				i(260893),	-- Arboreal Pseudoshell [Trading Post]
+				i(262707),	-- Blooded Snapvine [Trading Post]
+				i(260894),	-- Cabbage Pseudoshell [Trading Post]
+				i(263451),	-- Comfy Bel'ameth Flying Quilt [Trading Post]
+				i(263452),	-- Comfy Silvermoon Flying Quilt [Trading Post]
+				mount(1261334),	-- Contained Stormarion Defender [Stomarion Event?]
+				i(262496),	-- Delver's Arcane Golem [Delves?]
+				i(260233),	-- Emerald Hawkstrider [Questline?]
+				i(262438),	-- Fantastical Goblin Waveshredder [Promotions?]
+				i(264273),	-- Fel Spirehawk [Promotions?]
+				i(262706),	-- Ferocious Snapvine [Trading Post]
+				i(263449),	-- Fluffy Comfy Flying Quilt [Trading Post]
+				i(262661),	-- Ghastropod [Promotions?]
+				i(263450),	-- Gruffy Comfy Flying Quilt [Trading Post]
+				i(262909),	-- Hypo-Speed X6000 [Promotions?]
+				i(260895),	-- Lavender Pseudoshell [Trading Post]
+				i(257143),	-- Peridot Dragonhawk [Questline?]
+				i(262708),	-- Savage Snapvine [Trading Post]
+				i(262705),	-- Vicious Snapvine [Trading Post]
+				mount(1270673),	-- Vivacious Chlorocoers [Harandar Treasures?]
 			}),
 			n(PVP, {
 				i(255269),	-- Galactic Aspirant's Chain Sabatons
@@ -1635,9 +1614,6 @@ root(ROOTS.Unsorted, {
 				i(264268),	-- Rutaani Birdbath
 				i(264269),	-- Rutaani Bird Perch
 				i(264270),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Ritual_Tome_Bloodknight01_Open.m2 \\ [DNT] [AUTOGEN] Decor 15505 Item
-				i(264253),	-- Galactic Void-Scarred Barricade
-				i(264345),	-- Galactic Commander's Orb
-				i(247785),	-- Galactic Void-Scarred Banner
 				i(265387),	-- Cuddly Tomato Grrgle
 				i(265388),	-- Cuddly Lemon Grrgle
 				i(265389),	-- Cuddly Cotton Candy Grrgle

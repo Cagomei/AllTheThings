@@ -31,7 +31,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(62290, {	-- Harandar: The Highest Peaks
 				i(265792),	-- Fungarian Vine Fence (DECOR!)
 			}),
-			ach(61706),	-- Herald of the Goddess
 			ach(61264, {	-- Leaf None Behind
 				i(264266),	-- Lightbloom Moss Mound (DECOR!)
 			}),

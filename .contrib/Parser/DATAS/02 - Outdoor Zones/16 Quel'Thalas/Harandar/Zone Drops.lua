@@ -5,6 +5,7 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.HARANDAR, {
 		n(ZONE_DROPS, {
+			i(255826),	-- Mysterious Skyshards
 			filter(REAGENTS, {
 				i(265800),	-- Earthy Garnish
 			}),

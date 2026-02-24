@@ -84,6 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(DEGENTRIUS, {
 					ach(61214),	-- Mythic: Magisters' Terrace
 					ach(61615),	-- Mythic: Magisters' Terrace Guild Run
+					i(260231),	-- Lucent Hawkstrider (MOUNT!)
 				}),
 			}),
 		},

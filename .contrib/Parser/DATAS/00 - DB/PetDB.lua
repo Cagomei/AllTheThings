@@ -4558,10 +4558,11 @@ i(222967, 4475);	-- Webbers
 i(264303, 4972);	-- Willie
 i(255151, 4906);	-- Scruffbeak
 i(265609, 4985);	-- Princess Bloodshed
+i(265035, 4984);	-- Medusa
 --- UNSORTED ---
 i(0, 4905);			-- [DNT] Baby Amazard (Red)
 i(264892, 4981);	-- [PH] Black Baby Hawkstrider
-i(265035, 4984);	-- [PH] Purple Siphoid
+
 i(260705, 4947);	-- Assistant Botanist Leafy
 i(0, 4945);			-- Aud'rei III
 i(253404, 4902);	-- Auspicious Pixiu

@@ -1,16 +1,32 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-local function bo(questID, isDaily)
-    return { ["questID"] = questID, ["isDaily"] = isDaily };
-end
-
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.VOIDSTORM, {
-	--	n(RARES, sharedData({ ["isDaily"] = true }, {
-	--	})),
-		n(RARES, {
+		n(RARES, sharedData({ ["isDaily"] = true }, {
+			n(COMMON_BOSS_DROPS, sharedData({
+				["crs"] = {
+					256924,	-- Aeonelle Blackstar
+					256923,	-- Bane of the Vilebloods
+					256770,	-- Bilemaw the Gluttonous
+					245182,	-- Eruundi
+					256821,	-- Far'thana the Mad
+					257231,	-- Gar'chak Skullcleave
+					257199,	-- Hardin Steellock
+					256925,	-- Lotus Darkblossom
+					245044,	-- Nightbrood
+					256926,	-- Queen o' War
+					257027,	-- Rakshur the Bonegrinder
+					256808,	-- Ravengerus
+					256922,	-- Screammaxa the Matriarch
+					244272,	-- Sundereth the Caller
+					238498,	-- Territorial Voidscythe
+					241443,	-- Tremora
+				},
+			}, {
+				i(257085),	-- Augmented Stormray (MOUNT!)
+				i(260635),	-- Sanguine Harrower (MOUNT!)
+			})),
 			n(256924, {	-- Aeonelle Blackstar
 				["coord"] = { 39.2, 64.0, MAP.MIDNIGHT.VOIDSTORM },
 				["questID"] = 93944,
@@ -196,7 +212,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(264556),	-- Voidforged Cinch
 				},
 			}),
-		}),
+		})),
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {

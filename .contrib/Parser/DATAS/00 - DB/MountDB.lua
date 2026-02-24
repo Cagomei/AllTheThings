@@ -1802,6 +1802,7 @@ i(210145, 424611);	-- [PH] YellowBlack-Furred Bakar
 -- #if BEFORE 11.0.5
 i(211075, 428013);	-- Deathbringer's Shadowcycle
 -- #endif
+i(211086, 428065);	-- Jeweled Jade Scarab
 i(210140, 0);		-- [PH] Black-Furred Bakar
 
 ------------------
@@ -2287,21 +2288,38 @@ i(258488, 1263369);	-- Skypaw Glimmerfur
 -- PATCH 12.0.0 --
 ------------------
 i(265656, 1276650);	-- Anu'shalla, Shadow's Guidance
-i(262620, 1257058);	-- Calamitous Carrion
 i(260580, 1266579);	-- Cloudborn Razorwing
-i(262621, 1257081);	-- Convalescent Carrion
-i(260228, 1262840);	-- Galactic Gladiator's Goredrake
 i(246736, 1243598);	-- Ivory Grimlynx
 i(246594, 1243003);	-- Light-Forged Mechsuit
 i(224148, 451487);	-- Retrained Skyrazor
 i(254736, 1258574);	-- Stormgilded Celestial (CN ONLY)
-i(257504, 1261648);	-- Vicious Snaplizard [A]
-i(257502, 1261629);	-- Vicious Snaplizard [H]
 --- UNSORTED ---
+i(260896, 1267004);	-- Accented Pseudoshell
+i(260893, 1266993);	-- Arboreal Pseudoshell
+i(262707, 1269279);	-- Blooded Snapvine
+i(260894, 1266997);	-- Cabbage Pseudoshell
+i(263451, 1270522);	-- Comfy Bel'ameth Flying Quilt
+i(263452, 1270523);	-- Comfy Silvermoon Flying Quilt
+i(262496, 1268919);	-- Delver's Arcane Golem
+i(260233, 1265785);	-- Emerald Hawkstrider
 i(262438, 1268809);	-- Fantastical Goblin Waveshredder
 i(264273, 1271549);	-- Fel Spirehawk
+i(262706, 1269277);	-- Ferocious Snapvine
+i(263449, 1270520);	-- Fluffy Comfy Flying Quilt
 i(262661, 1269181);	-- Ghastropod
+i(263450, 1270521);	-- Gruffy Comfy Flying Quilt
 i(262909, 1269556);	-- Hypo-Speed X6000
+i(260895, 1267002);	-- Lavender Pseudoshell
+i(257143, 1261293);	-- Peridot Dragonhawk
+i(257240, 1261391);	-- Relinquished Scarlet Charger
+i(262708, 1269280);	-- Savage Snapvine
+i(262705, 1269273);	-- Vicious Snapvine
+--- NYI ---
+i(0, 1252141);		-- [DNT] Jellyfish
+i(0, 1238827);		-- Swift Spectral Dragonhawk
+i(250921, 1251665);	-- Amani Blessed Bear
+i(257157, 1261325);	-- [DNT] 12.0 Black Hawkstrider
+i(253587, 0);		-- Scale of Aln'sharan
 
 ------------------
 -- PATCH 12.0.1 --
@@ -2311,71 +2329,51 @@ i(257152, 1261316);	-- Amani Sharptalon
 i(250782, 1251433);	-- Amani Sunfeather
 i(250889, 1251630);	-- Amani Windcaller
 i(257223, 1261360);	-- Ancestral War Bear
-i(257197, 1261348);	-- Blessed Amani Burrower
-i(252011, 1253924);	-- Brilliant Petalwing
-i(257156, 1261323);	-- Cerulean Hawkstrider
-i(252014, 1253929);	-- Cerulean Sporeglider
-i(257147, 1261302);	-- Cobalt Dragonhawk
-i(257145, 1261298);	-- Crimson Dragonhawk
-i(257154, 1261322);	-- Crimson Silvermoon Hawkstrider
-i(262502, 1268926);	-- Elven Arcane Guardian
-i(246734, 1243593);	-- Fierce Grimlynx
-i(257142, 1261291);	-- Fiery Dragonhawk
-i(269009, 1284640);	-- Golden Ashened Cataclysm (CN ONLY)
-i(257444, 1261576);	-- Hexed Vilefeather Eagle
-i(257446, 1261583);	-- Insatiable Shredclaw
-i(257191, 1261336);	-- Preyseeker's Hubris
-i(257193, 1261338);	-- Preyseeker's Nightmare
-i(257192, 1261337);	-- Preyseeker's Wrath
-i(246735, 1243597);	-- Rootstalker Grimlynx
-i(252017, 1253938);	-- Ruddy Sporeglider
-i(262500, 1268924);	-- Silvermoon's Arcane Defender
-i(235658, 1218013);	-- Spring Butterfly
-i(257144, 1261296);	-- Umbral Dragonhawk
-i(256423, 1260354);	-- Untainted Grove Crawler
-i(252012, 1253927);	-- Vibrant Petalwing
-i(263580, 1270675);	-- Vivid Chloroceros
-i(257200, 1261351);	-- Witherbark Pango
---- UNSORTED ---
-i(257157, 1261325);	-- [DNT] 12.0 Black Hawkstrider
-i(0, 1252141);	-- [DNT] Jellyfish
-i(222988, 447173);	-- [PH] Firefly2Mount (Green)
-i(260896, 1267004);	-- Accented Pseudoshell
-i(260893, 1266993);	-- Arboreal Pseudoshell
 i(263222, 1268949);	-- Arcanovoid Construct
 i(246590, 1242904);	-- Ashes of Belo'ren
 i(257085, 1261155);	-- Augmented Stormray
-i(262707, 1269279);	-- Blooded Snapvine
-i(260894, 1266997);	-- Cabbage Pseudoshell
-i(263451, 1270522);	-- Comfy Bel'ameth Flying Quilt
-i(263452, 1270523);	-- Comfy Silvermoon Flying Quilt
-i(0, 1261334);	-- Contained Stormarion Defender
-i(262496, 1268919);	-- Delver's Arcane Golem
+i(257197, 1261348);	-- Blessed Amani Burrower
+i(252011, 1253924);	-- Brilliant Petalwing
+i(262620, 1257058);	-- Calamitous Carrion
+i(257156, 1261323);	-- Cerulean Hawkstrider
+i(252014, 1253929);	-- Cerulean Sporeglider
+i(257147, 1261302);	-- Cobalt Dragonhawk
+i(262621, 1257081);	-- Convalescent Carrion
+i(257145, 1261298);	-- Crimson Dragonhawk
+i(257154, 1261322);	-- Crimson Silvermoon Hawkstrider
 i(257176, 1261332);	-- Duskbrute Harrower
 i(256424, 1260356);	-- Echo of Aln'sharan
-i(262706, 1269277);	-- Ferocious Snapvine
-i(263449, 1270520);	-- Fluffy Comfy Flying Quilt
+i(222988, 447173);	-- Elder Glowmite
+i(262502, 1268926);	-- Elven Arcane Guardian
+i(246734, 1243593);	-- Fierce Grimlynx
+i(257142, 1261291);	-- Fiery Dragonhawk
 i(257448, 1261585);	-- Frenzied Shredclaw
-i(0, 1261349);	-- Giganto Manis
-i(263450, 1270521);	-- Gruffy Comfy Flying Quilt
-i(211086, 428065);	-- Jeweled Jade Scarab
-i(0, 1266703);	-- Lab-grown Stormray
-i(260895, 1267002);	-- Lavender Pseudoshell
+i(260228, 1262840);	-- Galactic Gladiator's Goredrake
+i(257199, 1261349);	-- Giganto Manis
+i(269009, 1284640);	-- Golden Ashened Cataclysm (CN ONLY)
+i(257444, 1261576);	-- Hexed Vilefeather Eagle
+i(257446, 1261583);	-- Insatiable Shredclaw
+i(260697, 1266703);	-- Lab-grown Stormray
 i(260231, 1265784);	-- Lucent Hawkstrider
-i(260916, 3363);	-- Nether-Warped Drake
+i(257191, 1261336);	-- Preyseeker's Hubris
+i(257193, 1261338);	-- Preyseeker's Nightmare
+i(257192, 1261337);	-- Preyseeker's Wrath
 i(257447, 1261584);	-- Prowling Shredclaw
-i(0, 1261579);	-- Ravenous Shredclaw
-i(0, 1261391);	-- Relinquished Scarlet Charger
-
-
+i(257445, 1261579);	-- Ravenous Shredclaw
+i(246735, 1243597);	-- Rootstalker Grimlynx
+i(252017, 1253938);	-- Ruddy Sporeglider
 i(260635, 1266700);	-- Sanguine Harrower
-i(262708, 1269280);	-- Savage Snapvine
-i(0, 1263635);	-- Spectral Hawkstrider
-i(0, 1238827);	-- Swift Spectral Dragonhawk
+i(262500, 1268924);	-- Silvermoon's Arcane Defender
+i(262914, 1263635);	-- Spectral Hawkstrider
+i(235658, 1218013);	-- Spring Butterfly
 i(260887, 1266980);	-- Tenebrous Harrower
+i(257144, 1261296);	-- Umbral Dragonhawk
+i(256423, 1260354);	-- Untainted Grove Crawler
+i(252012, 1253927);	-- Vibrant Petalwing
+i(257504, 1261648);	-- Vicious Snaplizard [A]
+i(257502, 1261629);	-- Vicious Snaplizard [H]
+i(263580, 1270675);	-- Vivid Chloroceros
+i(260696, 1266702);	-- Voidbound Stormray
+i(257200, 1261351);	-- Witherbark Pango
 
-i(262705, 1269273);	-- Vicious Snapvine
-i(0, 1270673);	-- Vivacious Chloroceros
-
-i(0, 1266702);	-- Voidbound Stormray
-
+i(260916, 3363);	-- Nether-Warped Drake / Nether-Swept Drake?? Might not be accurate and using old SpellID...

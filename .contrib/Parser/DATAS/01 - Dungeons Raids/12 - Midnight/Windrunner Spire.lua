@@ -84,6 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(HEART, {	-- The Restless Heart
 					ach(41291),	-- Mythic: Windrunner Spire
 					ach(61621),	-- Mythic: Windrunner Spire Guild Run
+					i(262914),	-- Spectral Hawkstrider (MOUNT!)
 					i(256653),	-- Pattern: Ranger-General's Grips (RECIPE!)
 					i(258125),	-- Pattern: Sunfire Sash (RECIPE!)
 				}),

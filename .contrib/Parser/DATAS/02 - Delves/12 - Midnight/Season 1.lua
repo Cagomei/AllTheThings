@@ -51,7 +51,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 	n(DELVES_MID_S1, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
 			ach(61808),	-- Fabled Let Me Solo Him: Nullaeus
-			ach(61799),	-- Let Me Solo Him: Nullaeus
+			ach(61799, {	-- Let Me Solo Him: Nullaeus
+				i(263222),	-- Arcanovoid Construct (MOUNT!)
+			}),
 			ach(61798),	-- Lighting the Dark
 			mapped(ach(61800)),	-- Midnight Delves: Tier 4 (Season 1)
 			mapped(ach(61801)),	-- Midnight Delves: Tier 5 (Season 1)

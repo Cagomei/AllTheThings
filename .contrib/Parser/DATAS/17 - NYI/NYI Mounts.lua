@@ -867,9 +867,11 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(223154, {	-- [PH] Firebee Mount (White Skin, White Saddle) (MOUNT!)
 				["displayID"] = 119264,
 			}),
+			-- #IF BEFORE MID
 			i(222988, {	-- [PH] Firefly2Mount (Green) (MOUNT!)
 				["displayID"] = 119387,
 			}),
+			-- #endif
 			i(222991, {	-- [PH] Firefly2Mount (Purple) (MOUNT!)
 				["displayID"] = 119388,
 			}),
@@ -1066,6 +1068,29 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(250762, {	-- Felfueled Memento of the Abyss
 				-- ["displayID"] = ,
 			}),
+		})),
+	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			mount(1252141, {	-- [DNT] Jellyfish (MOUNT!)
+				["displayID"] = 136514,
+			}),
+			mount(1238827, {	-- Swift Spectral Dragonhawk (MOUNT!)
+				["displayID"] = 131506,
+			}),
+			-- With MountID attached
+			i(257157, {	-- [DNT] 12.0 Black Hawkstrider (MOUNT!)
+				["displayID"] = 131413,
+			}),
+			i(250921, {	-- Amani Blessed Bear (MOUNT!)
+				["displayID"] = 120151,
+			}),
+			-- Without MountID attached
+			i(253587, {	-- Scale of Aln'sharan (MOUNT!)
+				["displayID"] = 137945,
+			}),
+
 		})),
 	}),
 }));

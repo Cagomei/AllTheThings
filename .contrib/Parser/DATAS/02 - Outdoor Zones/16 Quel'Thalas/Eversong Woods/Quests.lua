@@ -1074,7 +1074,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 241553 },	-- Vaelith Sunplume
 						["coord"] = { 56.8, 35.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
-							i(244339),	-- Hawkstrider Egg (PET!)
+							i(262510, {	-- Hawkstrider Egg
+								i(244339),	-- Hawkstrider Egg (PET!)
+							}),
 						},
 					}),
 					---Runestone Rumbles
