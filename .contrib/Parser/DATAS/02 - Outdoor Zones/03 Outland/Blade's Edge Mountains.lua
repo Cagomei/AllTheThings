@@ -712,6 +712,17 @@ root(ROOTS.Zones, {
 						["coord"] = { 37.4, 64.6, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
+						["groups"] = {
+							objective(1, {	-- 0/5 Bladespire Ogres drunk
+								["providers"] = {
+									{ "i", 30353 },	-- Bloodmaul Brutebane Keg (PQI!)
+									{ "n", 19995 },	-- Bladespire Brute
+									{ "n", 21296 },	-- Bladespire Champion
+									{ "n", 20334 },	-- Bladespire Cook
+									{ "n", 19998 },	-- Bladespire Shaman
+								},
+							}),
+						},
 					}),
 					q(10800, {	-- Goodnight, Gronn
 						["sourceQuest"] = 10799,	-- Into the Churning Gulch
@@ -1154,7 +1165,10 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(67, 67, 20),
 					}),
 					q(11040, {	-- Parts for the Rocket-Chief
-						["qg"] = 21112,	-- Bossi Pentapiston
+						["providers"] = {
+							{ "n", 21112 },	-- Bossi Pentapiston
+							{ "i", 32623 },	-- Bossi's Spare Parts (PQI!)
+						},
 						["coord"] = { 60.8, 69.1, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -1176,6 +1190,15 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
+						["groups"] = {
+							objective(1, {	-- 0/5 Electromentals collected
+								["providers"] = {
+									{ "i",  30656 },	-- Protovoltaic Magneto Collector (PQI!)
+									{ "o", 184906 },	-- Power Converter
+									{ "n",  21729 },	-- Electromental / Encased Electromental
+								},
+							}),
+						},
 					}),
 					q(10518, {	-- Planting the Banner
 						["sourceQuest"] = 10517,	-- Gorr'Dim, Your Time Has Come...
@@ -1186,6 +1209,12 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Bladespire Clan Banner
 								["provider"] = { "i", 30416 },	-- Bladespire Clan Banner
+								["coords"] = {
+									{ 38.8, 58.0, BLADES_EDGE_MOUNTAINS },
+									{ 40.4, 57.4, BLADES_EDGE_MOUNTAINS },
+									{ 41.2, 47.0, BLADES_EDGE_MOUNTAINS },
+									{ 48.0, 50.8, BLADES_EDGE_MOUNTAINS },
+								},
 								["cr"] = 21296,	-- Bladespire Champion
 							}),
 							objective(2, {	-- 0/1 Helm of Gurn Grubnosh
@@ -1512,6 +1541,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.3, 68.4, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 62, 20),
+						["groups"] = {
+							i(30540, {	-- Tally's Waiver (Unsigned) (PQI!)
+								i(30539),	-- Tally's Waiver (Signed) (QI!)
+							},
+						},
 					}),
 					q(10557, {	-- Test Flight: The Zephyrium Capacitorium
 						["qg"] = 21460,	-- Tally Zapnabber

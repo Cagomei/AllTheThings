@@ -1336,9 +1336,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(61, 61, 10),
 					}),
 					q(9911,	{	-- The Count of the Marshes
-						["provider"] = { "i", 25459 },	-- "Count" Ungula's Mandible
+						["provider"] = { "i", 25459 },	-- "Count" Ungula's Mandible (QS!)
 						["coord"] = { 32.8, 59.5, ZANGARMARSH },
-						["cr"] = 18285,	-- "Count" Ungula
 						["lvl"] = lvlsquish(62, 62, 10),
 					}),
 					q(9782, {	-- The Dead Mire
@@ -2194,6 +2193,9 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
+					i(25459, {	-- "Count" Ungula's Mandible (QS!)
+						["cr"] = 18285,	-- "Count" Ungula
+					}),
 					i(24291, {	-- Bog Lord Tendril
 						["crs"] = {
 							18125,	-- Starving Fungal Giant
@@ -2206,7 +2208,7 @@ root(ROOTS.Zones, {
 					i(29960, {	-- Captured Firefly (item) / Firefly (PET!)
 						["description"] = "Teaches you how to summon the pet Firefly. This is an extremely rare drop.",
 						["timeline"] = { ADDED_2_1_0 },
-						["crs"] = { 20197 },	-- Bogflare Needler
+						["cr"] = 20197,	-- Bogflare Needler
 					}),
 					i(24330, {	-- Drain Schematics (QS!)
 						["cr"] = 18340,	-- Steam Pump Overseer

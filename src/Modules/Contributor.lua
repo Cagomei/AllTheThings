@@ -761,6 +761,7 @@ MobileDB.GameObject = {
 	[184912] = true,	-- The Shattered Halls
 	[184568] = true,	-- Lady Vashj Bridge Console
 	[184793] = true,	-- Primitive Chest
+	[184906] = true,	-- Power Converter (q:10584)
 	[184980] = true,	-- Felhound Poo (q:10629)
 	[186430] = true,	-- Zungam's Ball and Chain (Zul'Aman)
 	[186591] = true,	-- Spotted Hippogryph Down (q:11269, 11271)
