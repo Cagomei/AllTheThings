@@ -262,6 +262,12 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(208878),	-- Adventurer's Footlocker //Given to alts who used the TWW prepurchase boost
 			})),
 		}),
+		expansion(EXPANSION.TWW, {
+			-- 11.0.2
+			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+				i(228580),	-- Brute Force Idol
+			})),
+		}),
 	}),
 	n(MOUNT_MODS, {
 		expansion(EXPANSION.DF, {
@@ -648,10 +654,41 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 		}),
 		expansion(EXPANSION.TWW, {
+			-- 11.0.0
+			expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+				q(81696),	-- Report to the Trading Post (D)
+			})),
+
 			-- 11.0.2
 			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 				q(84255),	-- Received item 'The Warband Map to Everywhere All At Once' (itemID 212174) - Not for me, it has to be something else - Darkal
-				i(228580),	-- Brute Force Idol
+			})),
+
+			-- 11.0.5
+			expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+				q(84611),	--
+			})),
+
+			-- 11.1.5
+			expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+				q(90899),	--
+			})),
+
+			-- 11.1.7
+			expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
+				q(87560),	--
+				q(91029),	--
+			})),
+
+			-- 11.2.0
+			expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+				q(92487),	--
+				q(92813),	--
+			})),
+
+			-- 11.2.7
+			expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+				q(84833),	--
 			})),
 		}),
 	}),
