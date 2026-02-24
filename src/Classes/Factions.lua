@@ -418,6 +418,7 @@ local function ScanForNewCollectedFactions()
 				-- factions can dynamically be during the 'UPDATE_FACTION' event (thanks Blizzard not telling us which Faction got rep...)
 				if faction.standing >= faction.maxstanding then
 					-- Character Cache
+					-- TODO: collect as accountWide if this Faction is account-wide
 					app.SetThingCollected(KEY, id, false, true)
 				end
 			else PrintMissingFaction(id)

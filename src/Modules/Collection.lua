@@ -243,37 +243,6 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		end
 	end
 	-- TODO: replace uses with SetThingCollected
-	local function SetAccountCollected(t, field, id, collected, settingKey)
-		-- app.PrintDebug("SC:A",app:SearchLink(t),t and t.collectible,field,id,collected)
-		local oldstate = IsAccountCached(field, id)
-		if collected then
-			if not oldstate then
-				-- if it's a known collectible thing not collected under current settings, then collect it
-				if t then
-					DoCollection(t, true)
-				else
-					-- if t exists, then AddToCollection does some handling of collection stuff...
-					app.HandleEvent("OnThingCollected", settingKey or field)
-				end
-			end
-			accountWideData[field][id] = 1
-			return 1
-		end
-		if oldstate then
-			-- basically have to recalculate account data to know if this thing is still technically collected
-			-- via another character data, so clear it anyway
-			if accountWideData[field][id] then
-				DoCollection(t, false)
-				accountWideData[field][id] = nil
-				-- if t exists, then DoCollection does some handling of collection stuff...
-				if not t then
-					app.HandleEvent("OnThingRemoved", settingKey or field)
-				end
-			end
-		end
-		return accountWideData[field][id] and 2 or nil
-	end
-	-- TODO: replace uses with SetThingCollected
 	local function SetCollected(t, field, id, collected, settingKey)
 		-- app.PrintDebug("SC",app:SearchLink(t),field,id,collected)
 		local oldstate = IsCached(field, id)
@@ -351,7 +320,6 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		return accountCache[id] and 2 or nil
 	end
 	app.SetThingCollected = SetThingCollected
-	app.SetAccountCollected = SetAccountCollected;
 	app.SetCached = SetCached
 	app.SetAccountCached = SetAccountCached
 	app.SetAccountCachedByCheck = SetAccountCachedByCheck
