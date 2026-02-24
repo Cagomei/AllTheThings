@@ -1494,26 +1494,26 @@ end
 -- Quest Lib
 local QuestWithReputationCostCollectibles = setmetatable({}, {
 	__index = function(t, quest)
-		if NotInGame(quest) then
-			-- app.PrintDebug("ignore costcollectibles for unavailable quest", quest.questID)
-			t[quest.questID] = app.EmptyTable
-			return
-		end
 		local costCollectibles
-		-- TODO: adjust when givesReputation exists
-		local maxReputation = quest.maxReputation
-		if maxReputation then
-			local faction = app.CreateFaction(maxReputation[1]);
-			if faction:CompareReputation(maxReputation[2]) or not faction.collectible then
-				costCollectibles = app.EmptyTable;
-			else
-				faction.r = quest.r;
-				costCollectibles = { faction }
-			end
+		if NotInGame(quest) or quest.saved then
+			-- app.PrintDebug("ignore costcollectibles for unavailable quest", quest.questID)
+			costCollectibles = false
 		else
-			costCollectibles = app.EmptyTable;
+			-- TODO: adjust when givesReputation exists
+			local maxReputation = quest.maxReputation
+			if maxReputation then
+				local faction = app.CreateFaction(maxReputation[1]);
+				if faction:CompareReputation(maxReputation[2]) or not faction.collectible then
+					costCollectibles = false;
+				else
+					faction.r = quest.r;
+					costCollectibles = { faction }
+				end
+			else
+				costCollectibles = false;
+			end
 		end
-		t[quest.questID] = costCollectibles
+		t[quest] = costCollectibles
 		return costCollectibles
 	end,
 });
