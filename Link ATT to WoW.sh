@@ -45,7 +45,7 @@ link_beta_files() {
     if [[ ! -d "$1" ]]; then
         mkdir -p "$1/db/Standard"
         rsync -a --link-dest="$PWD/db/.beta/Categories/" "$PWD/db/.beta/Categories/" "$1/db/Standard/Categories"
-        rsync -a "$PWD/db/.beta/Categories.xml" "$1/db/Standard/Categories.xml"
+        rsync -a "$PWD/db/.beta/Database.xml" "$1/db/Standard/Database.xml"
         rsync -a "$PWD/db/.beta/LocalizationDB.lua" "$1/db/Standard/LocalizationDB.lua"
         rsync -a "$PWD/db/.beta/ReferenceDB.lua" "$1/db/Standard/ReferenceDB.lua"
 
@@ -75,7 +75,7 @@ link_ptr_files() {
     if [[ ! -d "$1" ]]; then
         mkdir -p "$1/db/Standard"
         rsync -a --link-dest="$PWD/db/.ptr/Categories/" "$PWD/db/.ptr/Categories/" "$1/db/Standard/Categories"
-        rsync -a "$PWD/db/.ptr/Categories.xml" "$1/db/Standard/Categories.xml"
+        rsync -a "$PWD/db/.ptr/Database.xml" "$1/db/Standard/Database.xml"
         rsync -a "$PWD/db/.ptr/LocalizationDB.lua" "$1/db/Standard/LocalizationDB.lua"
         rsync -a "$PWD/db/.ptr/ReferenceDB.lua" "$1/db/Standard/ReferenceDB.lua"
 
