@@ -394,8 +394,6 @@ q(29820),	-- Into the Nexus	 CATA:Into the Nexus	 MOP:Into the Nexus
 q(29853),	-- Champion of the King
 q(30119),	-- Well of Eternity RP Tracker
 q(30173),	-- War Pigs!	 CATA:War Pigs!	 MOP:War Pigs!
-5.0.3.15890
-q(31371),	-- Tracking Event: Player Has Completed One Anglers Daily
 7.3.0.24473
 q(8971),	-- REUSE
 q(37042),	--
@@ -1013,84 +1011,6 @@ q(48457),	-- Tracking Quest
 q(48796),	--
 q(48798),	--
 q(48937),	-- Create Netherwalker's Portal Generator
-10.1.5.49719
-q(76582),	--
-q(76583),	--
-q(76584),	--
-q(76585),	--
-10.2.7.54171
-q(75889),	--
-q(75933),	--
-q(75934),	--
-q(76022),	--
-q(76023),	--
-q(76068),	--
-q(76069),	--
-q(76115),	--
-q(76119),	--
-q(76148),	--
-q(76149),	--
-q(76150),	--
-q(76151),	--
-q(76152),	--
-q(76153),	--
-q(76154),	--
-q(79436),	--
-q(79454),	--
-q(79488),	--
-q(79516),	--
-q(79549),	--
-q(80319),	--
-q(80379),	--
-q(80381),	--
-q(80390),	--
-q(80445),	--
-q(81469),	-- charlie's test quest
-q(81585),	--
-q(81665),	--
-q(81957),	--
-q(81958),	--
-q(82136),	--
-q(82353),	--
-q(82415),	--
-10.2.7.54295
-q(82834),	--
-10.2.7.54366
-q(82971),	-- Queue Bonus
-q(82972),	-- Queue Bonus
-q(82973),	-- Queue Bonus
-q(82974),	-- Queue Bonus
-q(82975),	-- Queue Bonus
-q(82976),	-- Queue Bonus
-q(82977),	-- Queue Bonus
-q(82978),	-- Queue Bonus
-q(82979),	-- Tracking Quest
-q(82980),	-- Queue Bonus
-q(82999),	--
-q(83000),	--
-q(83001),	--
-q(83002),	--
-q(83003),	--
-q(83006),	--
-q(83007),	--
-q(83008),	--
-q(83009),	--
-q(83010),	--
-q(83011),	--
-q(83014),	--
-q(83015),	--
-q(83016),	--
-q(83017),	--
-q(83018),	--
-q(83019),	--
-q(83020),	--
-q(83071),	-- Queue Bonus
-q(83072),	-- Queue Bonus
-q(83073),	-- Queue Bonus
-q(83074),	-- Queue Bonus
-q(83075),	-- Tracking Quest
-q(83076),	-- Tracking Quest
-q(83077),	-- Tracking Quest
 12.0.0.63534
 q(85916),	-- BETA:Midnight
 q(85917),	-- BETA:Midnight

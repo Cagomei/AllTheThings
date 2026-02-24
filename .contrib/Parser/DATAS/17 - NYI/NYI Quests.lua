@@ -8607,8 +8607,79 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 
 		-- 10.2.7
 		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+			q(81469),	-- charlie's test quest
+			q(82971),	-- Queue Bonus
+			q(82972),	-- Queue Bonus
+			q(82973),	-- Queue Bonus
+			q(82974),	-- Queue Bonus
+			q(82975),	-- Queue Bonus
+			q(82976),	-- Queue Bonus
+			q(82977),	-- Queue Bonus
+			q(82978),	-- Queue Bonus
+			q(82980),	-- Queue Bonus
+			q(83071),	-- Queue Bonus
+			q(83072),	-- Queue Bonus
+			q(83073),	-- Queue Bonus
+			q(83074),	-- Queue Bonus
 			q(77907),	-- Shadow Spear
+			q(82979),	-- Tracking Quest
+			q(83075),	-- Tracking Quest
+			q(83076),	-- Tracking Quest
+			q(83077),	-- Tracking Quest
 			q(77904),	-- Treasures, Not Trash
+			q(75889),	--
+			q(75933),	--
+			q(75934),	--
+			q(76022),	--
+			q(76023),	--
+			q(76068),	--
+			q(76069),	--
+			q(76115),	--
+			q(76119),	--
+			q(76148),	--
+			q(76149),	--
+			q(76150),	--
+			q(76151),	--
+			q(76152),	--
+			q(76153),	--
+			q(76154),	--
+			q(79436),	--
+			q(79454),	--
+			q(79488),	--
+			q(79516),	--
+			q(79549),	--
+			q(80319),	--
+			q(80379),	--
+			q(80381),	--
+			q(80390),	--
+			q(80445),	--
+			q(81585),	--
+			q(81665),	--
+			q(81957),	--
+			q(81958),	--
+			q(82136),	--
+			q(82353),	--
+			q(82415),	--
+			q(82834),	--
+			q(82999),	--
+			q(83000),	--
+			q(83001),	--
+			q(83002),	--
+			q(83003),	--
+			q(83006),	--
+			q(83007),	--
+			q(83008),	--
+			q(83009),	--
+			q(83010),	--
+			q(83011),	--
+			q(83014),	--
+			q(83015),	--
+			q(83016),	--
+			q(83017),	--
+			q(83018),	--
+			q(83019),	--
+			q(83020),	--
+
 			-- Unburied Aspirant's Cloak Rack (Item 223639)
 			q(82343),	-- Ensemble: Unburied Aspirant's Cloak Rack
 			q(82409),	-- Ensemble: Unburied Aspirant's Cloak Rack
