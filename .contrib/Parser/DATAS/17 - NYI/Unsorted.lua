@@ -1955,11 +1955,6 @@ root(ROOTS.Unsorted, {
 				i(260415),	-- Silver Chainkini
 				i(260416),	-- Gold Chainkini
 				i(260936),	-- Basic Brown Quiver
-				i(263500),	-- Skymaster's Blood Mantle
-				i(263501),	-- Skymaster's Blood Cloak
-				i(263502),	-- Skymaster's Blood Tabard
-				i(263503),	-- Skymaster's Blood Circlet
-				i(263504),	-- Skymaster's Blood Pauldrons
 			}),
 			n(DECOR, {
 				i(263021),	-- Brumewood Hollow Grassy Patch

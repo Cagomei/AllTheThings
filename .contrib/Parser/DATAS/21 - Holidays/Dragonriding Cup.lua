@@ -2565,6 +2565,26 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						i(211882, {	-- Outlandish Drake Racer's Shoulderpads
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
+						i(263503, {	-- Skymaster's Blood Circlet
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263501, {	-- Skymaster's Blood Cloak
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263500, {	-- Skymaster's Blood Mantle
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263504, {	-- Skymaster's Blood Pauldrons
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
+						i(263502, {	-- Skymaster's Blood Tabard
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+							["timeline"] = { ADDED_12_0_1 },
+						}),
 					},
 				})),
 			}),
@@ -3335,6 +3355,26 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					}),
 					i(211882, {	-- Outlandish Drake Racer's Shoulderpads
 						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+					}),
+					i(263503, {	-- Skymaster's Blood Circlet
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						["timeline"] = { ADDED_12_0_1 },
+					}),
+					i(263501, {	-- Skymaster's Blood Cloak
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						["timeline"] = { ADDED_12_0_1 },
+					}),
+					i(263500, {	-- Skymaster's Blood Mantle
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						["timeline"] = { ADDED_12_0_1 },
+					}),
+					i(263504, {	-- Skymaster's Blood Pauldrons
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						["timeline"] = { ADDED_12_0_1 },
+					}),
+					i(263502, {	-- Skymaster's Blood Tabard
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						["timeline"] = { ADDED_12_0_1 },
 					}),
 				},
 			}),
