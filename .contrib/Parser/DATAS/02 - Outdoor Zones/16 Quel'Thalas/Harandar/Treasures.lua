@@ -289,6 +289,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 94550,
 				}),
 			}),--]]
+			o(589205, {	-- A Lost Hunting Knife
+				["coord"] = { 45.1, 54.0, MAP.MIDNIGHT.HARANDAR },
+				["groups"] = {
+					i(257024),	-- A Lost Hunting Knife
+				},
+			}),
+			o(590801, {	-- A Rolled Up Pillow
+				["coord"] = { 51.4, 56.0, MAP.MIDNIGHT.HARANDAR },
+				["groups"] = {
+					i(257054),	-- A Rolled Up Pillow
+				},
+			}),
+			o(588966, {	-- A Tattered Ball
+				["coord"] = { 51.1, 50.5, MAP.MIDNIGHT.HARANDAR },
+				["groups"] = {
+					i(256882),	-- A Tattered Ball
+				},
+			}),
 			o(572998, {	-- Burning Branch of the World Tree
 				["coord"] = { 47.1, 50.2, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92426,
@@ -301,6 +319,36 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92424,
 				["groups"] = {
 					i(258963),	-- Shroom Jumper's Parachute (TOY!)
+				},
+			}),
+			o(616052, {	-- Flame-Hardened Sap of Teldrassil
+				["description"] = "Scattered underwater across the river",
+				["coord"] = { 40.6, 28.0, MAP.MIDNIGHT.HARANDAR },
+				["groups"] = {
+					i(260531),	-- Crystalized Resin Fragment
+				},
+			}),
+			o(590801, {	-- Gift of the Cycle
+				["description"] = "Gather three items the child, the huntress and the elder spriti are missing.",
+				["coord"] = { 47.3, 50.5, 2576 },	-- The Den
+				["questID"] = 93144,
+				["groups"] = {
+					i(259084),	-- Gift of the Cycle (TOY!)
+					n(254030, {	-- Child-like Spirit
+						["coord"] = { 51.4, 47.5, MAP.MIDNIGHT.HARANDAR },
+						["provider"] = { "i", 256882 },	-- A Tattered Ball
+						["questID"] = 93130,
+					}),
+					n(254104, {	-- Huntress Spirit
+						["coord"] = { 47.2, 53.2, MAP.MIDNIGHT.HARANDAR },
+						["provider"] = { "i", 257024 },	-- A Lost Hunting Knife
+						["questID"] = 93145,
+					}),
+					n(254116, {	-- Elder Spirit
+						["coord"] = { 51.2, 58.6, MAP.MIDNIGHT.HARANDAR },
+						["provider"] = { "i", 257054 },	-- A Rolled Up Pillow
+						["questID"] = 93146,
+					}),
 				},
 			}),
 			o(613392, {	-- Impenatrably Sealed Groud
@@ -334,8 +382,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			o(614483, {	-- Peculiar Cauldron
 				["coord"] = { 40.6, 28.0, MAP.MIDNIGHT.HARANDAR },
-				--["questID"] = XXXX,
-				["cost"] = { { "i", 238511, 150 } },	-- 150x Crystalized Resin Fragment
+				["questID"] = 93587,
+				["cost"] = {{ "i", 260531, 150 }},	-- 150x Crystalized Resin Fragment
+				["groups"] = {
+					i(252017),	-- Ruddy Sporeglider (MOUNT!)
+				},
 			}),
 			o(573095, {	-- Reliquary's Lost Paintbrush
 				["coord"] = { 62.9, 51.2, MAP.MIDNIGHT.HARANDAR },
@@ -350,6 +401,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92427,
 				["groups"] = {
 					i(263289),	-- Sporelord's Authority (COSMETIC!)
+				},
+			}),
+			o(615963, {	-- Sporespawned Cache
+				["description"] = "Interact with Fungal Mallet in Fungara Village then hit the gong",
+				["coords"] = {
+					{ 41.3, 67.9, MAP.MIDNIGHT.HARANDAR },
+					{ 46.7, 67.8, MAP.MIDNIGHT.HARANDAR },
+				},
+				["groups"] = {
+					i(256423),	-- Untainted Grove Crawler (MOUNT!)
 				},
 			}),
 			--Lore?
@@ -383,22 +444,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			o(574126, {	-- Leaf-wrapped Package
 				["description"] = "Spawns randomly throughout the zone.",
 			}),
-			-- Unknown
-			o(588966, {	-- A Tattered Ball
-				-- Exo: Didn't trigger any quest. Maybe related to something else? Maybe like those Lost and Found Mementos in Hallowfall?
-				["coord"] = { 51.1, 50.5, MAP.MIDNIGHT.HARANDAR },
-				["groups"] = { i(256882) },	-- A Tattered Ball
-			}),
 		}),
 	}),
 }));
 
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
--- 	m(MAP.MIDNIGHT.QUELTHALAS, {
--- 		m(MAP.MIDNIGHT.HARANDAR, {
--- 			n(TREASURES, {
-
--- 			}),
--- 		}),
--- 	}),
--- }));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.HARANDAR, {
+			n(TREASURES, {
+				q(93652),	-- Hit the Gong for Sporespawned Cache
+			}),
+		}),
+	}),
+}));

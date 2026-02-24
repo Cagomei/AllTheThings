@@ -2332,6 +2332,10 @@ i(257197, 1261348);	-- Blessed Amani Burrower
 i(257152, 1261316);	-- Amani Sharptalon
 i(257200, 1261351);	-- Witherbark Pango
 i(257444, 1261576);	-- Hexed Vilefeather Eagle
+i(252017, 1253938);	-- Ruddy Sporeglider
+i(256423, 1260354);	-- Untainted Grove Crawler
+i(246735, 1243597);	-- Rootstalker Grimlynx
+i(252012, 1253927);	-- Vibrant Petalwing
 --- UNSORTED ---
 i(257157, 1261325);	-- [DNT] 12.0 Black Hawkstrider
 i(0, 1252141);	-- [DNT] Jellyfish
@@ -2362,16 +2366,16 @@ i(260916, 3363);	-- Nether-Warped Drake
 i(257447, 1261584);	-- Prowling Shredclaw
 i(0, 1261579);	-- Ravenous Shredclaw
 i(0, 1261391);	-- Relinquished Scarlet Charger
-i(246735, 1243597);	-- Rootstalker Grimlynx
-i(252017, 1253938);	-- Ruddy Sporeglider
+
+
 i(260635, 1266700);	-- Sanguine Harrower
 i(262708, 1269280);	-- Savage Snapvine
 i(0, 1263635);	-- Spectral Hawkstrider
 i(0, 1238827);	-- Swift Spectral Dragonhawk
 i(260887, 1266980);	-- Tenebrous Harrower
-i(256423, 1260354);	-- Untainted Grove Crawler
+
 i(262705, 1269273);	-- Vicious Snapvine
 i(0, 1270673);	-- Vivacious Chloroceros
-i(252012, 1253927);	-- Vibrant Petalwing
+
 i(0, 1266702);	-- Voidbound Stormray
 

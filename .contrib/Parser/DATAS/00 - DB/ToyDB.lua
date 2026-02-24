@@ -1564,12 +1564,13 @@ i(257736);	-- Lightcalled Hearthstone
 i(251633);	-- Bursting Bounty Bundle
 i(266370);	-- Dundun's Abundant Travel Method
 i(264672);	-- Cosmic Ritual Stone
+i(259084);	-- Gift of the Cycle
 --- UNSORTED ---
 i(243146);	-- [DNT] Ren'dorei Struggle
 i(263244);	-- Enigmatic Fountain
 i(263975);	-- Feeling Fielder Mk. 7
 i(264517);	-- Galactic Flag of Victory
-i(259084);	-- Gift of the Cycle
+
 i(263871);	-- Holy Pet Leash
 i(253629);	-- Personal Key to the Arcantina
 i(268728);	-- Saptor Salve

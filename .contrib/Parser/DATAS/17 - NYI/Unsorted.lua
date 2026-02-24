@@ -908,7 +908,7 @@ root(ROOTS.Unsorted, {
 
 
 				-- HUNTER
-				i(264895),	-- Trials of the Florafaun Hunter
+
 				-- Abyss
 				i(265767),	-- Loaknit-Woven Catch Satchel
 				i(265768),	-- Amazardhide Catch Case
@@ -923,7 +923,7 @@ root(ROOTS.Unsorted, {
 
 				i(251903),	-- Potatoad Egg
 
-				i(259084),	-- Gift of the Cycle
+
 				i(263198),	-- Valdekar's Special
 				i(253629),	-- Personal Key to the Arcantina
 				i(263975),	-- Feeling Fielder Mk. 7
@@ -939,8 +939,8 @@ root(ROOTS.Unsorted, {
 				i(256424),	-- Echo of Aln'sharan
 				i(257157),	-- [DNT] 12.0 Black Hawkstrider
 				i(260231),	-- [DNT] 12.0 White Hawkstrider
-				i(252017),	-- Ruddy Sporeglider
-				i(256423),	-- Untainted Grove Crawler
+
+
 				i(260893),	-- Arboreal Pseudoshell \\ [PH] Green Garden Snail
 				i(260894),	-- Cabbage Pseudoshell \\ [PH] Pink Garden Snail
 				i(260895),	-- Lavender Pseudoshell \\ [PH] Purple Garden Snail
@@ -962,8 +962,8 @@ root(ROOTS.Unsorted, {
 				i(263452),	-- Comfy Silvermoon Flying Quilt
 				i(257143),	-- Peridot Dragonhawk
 				i(260233),	-- Emerald Hawkstrider
-				i(246735),	-- Rootstalker Grimlynx
-				i(252012),	-- Vibrant Petalwing
+
+
 				i(257085),	-- Augmented Stormray
 
 

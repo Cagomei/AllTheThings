@@ -1,16 +1,32 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-local function bo(questID, isDaily)
-    return { ["questID"] = questID, ["isDaily"] = isDaily };
-end
-
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.HARANDAR, {
-	--	n(RARES, sharedData({ ["isDaily"] = true }, {
-	--	})),
-		n(RARES, {
+		n(RARES, sharedData({ ["isDaily"] = true }, {
+			n(COMMON_BOSS_DROPS, sharedData({
+				["crs"] = {
+					250347,	-- Ahl'ua'huhi
+					250358,	-- Annulus the Worldshaker
+					249844,	-- Chironex
+					249997,	-- Chlorokyll
+					250231,	-- Dracaena
+					249849,	-- Ha'kalawe
+					250226,	-- Mindrot
+					250317,	-- Oro'ohna
+					250321,	-- Pterrock
+					249962,	-- Queen Lashtongue
+					248741,	-- Rhazul
+					250180,	-- Serrasa
+					250086,	-- Stumpy
+					249902,	-- Tallcap the Truthspreader
+					250246,	-- Treetop
+				},
+			}, {
+				i(246735),	-- Rootstalker Grimlynx (MOUNT!)
+				i(252012),	-- Vibrant Petalwing (MOUNT!)
+				i(264895),	-- Trials of the Florafaun Hunter (CI!)
+			})),
 			n(250347, {	-- Ahl'ua'huhi
 				["coord"] = { 39.6, 60.8, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92193,
@@ -127,7 +143,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(264633),	-- Treetop Battlestave
 				},
 			}),
-		}),
+		})),
 	}),
 }));
 

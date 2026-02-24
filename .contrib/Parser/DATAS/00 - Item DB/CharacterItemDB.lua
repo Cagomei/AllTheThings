@@ -1012,6 +1012,8 @@ ihqt(250443, 92174);				-- Echo of Abundance: Herbalism
 ihqt(250444, 92187);				-- Echo of Abundance: Mining
 ihqt(250360, 92188);				-- Echo of Abundance: Skinning
 
+iq(264895, 87421, HUNTER);			-- Trials of the Florafaun Hunter
+
 ------------
 -- UNUSED --
 ------------
