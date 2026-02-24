@@ -61,6 +61,7 @@ L.AH_SEARCH_NO_ITEMS_FOUND = "No cached items found in search. Expand the group 
 L.ALIVE = "Alive";
 L.ALL_BUTTON = ALL;
 L.ALL_BUTTON_TOOLTIP = "Click this button to enable all options at once.";
+L.ALL_RECIPES = "All Recipes";
 L.ALL_THE_APPEARANCES_DESC = "All appearances that you need are displayed here.";
 L.ALL_THE_BATTLEPETS_DESC = "All pets that you have not collected yet are displayed here.";
 L.ALL_THE_ILLUSIONS_DESC = "Illusions, toys, and other items that can be used to earn collectible items are displayed here.";

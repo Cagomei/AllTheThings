@@ -314,7 +314,7 @@ app:CreateWindow("Tradeskills", {
 									local recipesList = app.CreateDynamicCategory(dynamicSuffix);
 									recipesList.IgnoreBuildRequests = true;
 									recipesList.sourceIgnored = true;
-									recipesList.name = "All Recipes";
+									recipesList.name = L.ALL_RECIPES;
 									recipesList.icon = 134939;
 									tinsert(cache.g, 1, recipesList);
 								end

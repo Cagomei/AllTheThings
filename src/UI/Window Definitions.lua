@@ -2995,7 +2995,7 @@ function app:CreateWindow(suffix, definition)
 								local recipesList = app.CreateDynamicCategory(suffix);
 								recipesList.IgnoreBuildRequests = true;
 								recipesList.sourceIgnored = true;
-								recipesList.name = "All Recipes";
+								recipesList.name = L.ALL_RECIPES;
 								recipesList.icon = 134939;
 								recipesList.parent = group;
 								local g = group.g;
