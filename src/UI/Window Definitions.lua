@@ -804,7 +804,7 @@ local function SetRowData(self, row, data)
 	end
 end
 local function UpdateVisibleRowData(self)
-	-- app.PrintDebug(app.Modules.Color.Colorize("UpdateVisibleRowData:", app.Colors.TooltipDescription),self.Suffix)
+	-- app.PrintDebug(app.Modules.Color.Colorize("Refresh:", app.Colors.TooltipDescription),self.Suffix)
 	-- If there is no raw data, then return immediately.
 	local rowData = self.rowData;
 	if not rowData then return; end
@@ -824,21 +824,13 @@ local function UpdateVisibleRowData(self)
 	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
 		local container = self.Container;
-		local containerHeight = container:GetHeight()
 		local rows = container.rows;
-		local row = rows[1];
-		local firstRowHeight = row:GetHeight()
-
-		-- Ensure that the first row doesn't move out of position.
-		SetRowData(self, row, rowData[1]);
-
-		-- Fill the remaining rows up to the (visible) row count.
-		row = rows[2]
-		local current, rowHeight
-			= math.max(1, math.min(self.ScrollBar.CurrentIndex, totalRowCount)) + 1, row:GetHeight();
-		local maxRows = math.floor((containerHeight - firstRowHeight) / rowHeight) + 1
+		local firstRowHeight = rows[1]:GetHeight()
+		local rowHeight = rows[2]:GetHeight()
+		local maxRows = math.floor((container:GetHeight() - firstRowHeight) / rowHeight) + 1
 		local rowCount = math.min(maxRows, #rowData)
 		self:SetMinMaxValues(rowCount, totalRowCount)
+		self.rowCount = rowCount
 
 		-- Should this window attempt to scroll to specific data?
 		if self.ScrollInfo then
@@ -871,20 +863,21 @@ local function UpdateVisibleRowData(self)
 			end
 		end
 
-		local minIndent
-		for i=2,rowCount do
-			row = rows[i];
-			SetRowData(self, row, rowData[current]);
-			local indent = row.indent;
-			if indent and (not minIndent or minIndent > indent) then
-				minIndent = indent;
-			end
-			current = current + 1;
-		end
+		-- Redraw the data into the rows
+		self:Redraw()
 
-		-- Apply the Min Indent adjustment if there are any rows to indent
+		-- Apply the Indent adjustment if there are any rows to indent
 		if rowCount > 1 then
+			local minIndent = rows[2].indent
+			for i=3,rowCount do
+				local indent = rows[i].indent
+				if indent and minIndent > indent then
+					minIndent = indent
+				end
+			end
+
 			local shift = math.floor(rowHeight / 2 + 0.1)
+			local row
 			-- TODO: testing moving this switch to a cached function assigned via settings OnSet event
 			if AdjustRowIndents then
 				local adjustBy = minIndent - 2
@@ -2373,31 +2366,28 @@ local FieldDefaults = {
 		-- 	self.rowData and #self.rowData,
 		-- 	self:IsShown() and "VISIBLE" or "HIDDEN")
 		-- If there is no raw data or we aren't visible, then ignore this action.
-		if not self:IsShown() or not self.rowData then return end
+		local rowData = self.rowData;
+		if not rowData then return; end
+		if not self:IsShown() then return end
 
-		-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
-		local totalRowCount = #self.rowData;
-		if totalRowCount > 0 then
-			-- Ensure that the first row doesn't move out of position.
-			local container = self.Container;
-			local row = container.rows[1];
-			if not row then return; end
-			SetRowData(self, row, row.ref);
+		local totalRowCount = #rowData
+		local container = self.Container;
+		local rows = container.rows;
 
-			-- Fill the remaining rows up to the (visible) row count.
-			local containerHeight, totalHeight = container:GetHeight(), row:GetHeight();
-			for i=2,totalRowCount do
-				row = container.rows[i];
-				if row then
-					SetRowData(self, row, row.ref);
-					totalHeight = totalHeight + row:GetHeight();
-					if totalHeight > containerHeight then
-						break;
-					end
-				else
-					break;
-				end
-			end
+		-- Ensure that the first row doesn't move out of position.
+		SetRowData(self, rows[1], rowData[1]);
+
+		-- Fill the remaining rows up to the (visible) row count.
+		local current = math.max(1, math.min(self.ScrollBar.CurrentIndex, totalRowCount)) + 1
+		local rowCount = self.rowCount
+		if not rowCount then
+			app.PrintDebug("Redraw without Refresh!", self.Suffix)
+			rowCount = 1
+		end
+
+		for i=2,rowCount do
+			SetRowData(self, rows[i], rowData[current]);
+			current = current + 1;
 		end
 	end,
 	OnInactiveAlphaChanged = function(self, value)
@@ -2411,7 +2401,7 @@ local FieldDefaults = {
 			self:SetScript("OnUpdate", ApplyAlphaForWindow);
 		end
 	end,
-	
+
 	-- Refresh Callbacks
 	DefaultRefresh = UpdateVisibleRowData,
 	RegisterRefreshCallback = function(self, ...)
@@ -3017,7 +3007,7 @@ function app:CreateWindow(suffix, definition)
 				end);
 			end
 		end
-		
+
 		if definition.Preload then
 			-- This window still needs to be loaded right away
 			return app:GetWindow(suffix);
