@@ -462,7 +462,6 @@ local CompletedQuests = setmetatable({}, {
 		-- Way too much overhead to assume this should be done every time a key is changed
 		if not BatchRefresh then
 			CacheQuestByScope(questID, state)
-			app.UpdateRawID("questID", questID)
 		end
 	end
 });
@@ -1557,9 +1556,10 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		-- linktests[#linktests + 1] = "|cffffff00|Hquest:"..t.questID..":"..(app._subid or 0).."|h["..t.questID.."]|h|r" -- cannot send message
 		return "quest:"..t.questID
 	end,
-	RefreshCollectionOnly = true,
 	collectible = CollectibleAsQuest,
-	collected = IsQuestFlaggedCompletedForObject,
+	collected = function(t)
+		return app.TypicalCharacterCollected(CACHE, t.questID)
+	end,
 	altcollected = function(t)
 		local altQuests = t.altQuests;
 		if altQuests then

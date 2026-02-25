@@ -124,6 +124,7 @@ end
 
 local function HandleCollectionChange(t, isadd)
 	-- Report new things to your collection!
+	-- app.PrintDebug("HCC",app:SearchLink(t),isadd and "Collected" or "Removed")
 	-- to test: comment out text/name/link from BattlePet class, then cage & relearn a battle pet
 	if IsRetrieving(t.text) and t.CanRetry then
 		-- app.PrintDebug("HCC:RETRY",app:SearchLink(t))
@@ -141,6 +142,7 @@ local function HandleCollectionChange(t, isadd)
 	end
 end
 local function DoCollection(group, isadd)
+	-- app.PrintDebug("DoCollection",app:SearchLink(group),isadd and "Collected" or "Removed",group and group.collectible,group and group.collected)
 	if not group then return; end
 	-- Only if it's something collectible...
 	-- TODO: Settings option to allow reporting even when not considered collectible
@@ -291,9 +293,9 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 			app.PrintDebug("STC:NoCACHE",app:SearchLink(t), key, id, accountWide, collected)
 			return
 		end
-		-- app.PrintDebug("STC",app:SearchLink(t),key, id, accountWide, collected, cacheKey)
 		local oldstate = (accountWide and IsAccountCached or IsCached)(cacheKey, id)
 		local accountCache = accountWideData[cacheKey]
+		-- app.PrintDebug("STC",app:SearchLink(t),key, id, accountWide, oldstate, "->", collected, cacheKey)
 		if collected then
 			if not oldstate then
 				DoCollection(t, true)
