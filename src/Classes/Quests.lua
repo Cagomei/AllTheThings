@@ -1518,6 +1518,7 @@ local QuestWithReputationCostCollectibles = setmetatable({}, {
 	end,
 });
 local createQuest = app.CreateClass("Quest", "questID", {
+	CACHE = function() return CACHE end,
 	AsyncRefreshFunc = function()
 		return QuestAsyncRefreshFunc
 	end,
