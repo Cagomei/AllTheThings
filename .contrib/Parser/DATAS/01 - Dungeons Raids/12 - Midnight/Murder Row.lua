@@ -43,7 +43,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(251127),	-- Nibbling Armbands
 				}),
 				BossOnly(ZAEN, {
-					ach(62388),	-- Illicit Rain: Five Stars
+					ach(62388, {	-- Illicit Rain: Five Stars
+						i(263975),	-- Feeling Fielder Mk. 7 (TOY!)
+					}),
 					i(251128),	-- Bladesorrow
 					i(251130),	-- Breeches of Deft Deals
 					i(251129),	-- Counterfeit Clutches

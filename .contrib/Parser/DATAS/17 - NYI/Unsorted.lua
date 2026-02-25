@@ -90,9 +90,6 @@ root(ROOTS.Unsorted, {
 			n(SPECIAL, {
 				i(268274),	-- Blinky's Collar
 			}),
-			filter(TOYS, {
-				i(268728),	-- Saptor Salve
-			}),
 			n(WEAPONS, {
 				i(268921),	-- Staff of the Great Dark
 				i(269972),	-- Arathi Miner's Pickaxe
@@ -913,37 +910,28 @@ root(ROOTS.Unsorted, {
 				i(265779),	-- Heavy Harpoon Cannon
 			}),
 			filter(TOYS, {
-				i(250320),	-- Lightgraft
-
-				i(251903),	-- Potatoad Egg
-
-				i(263198),	-- Valdekar's Special
-				i(253629),	-- Personal Key to the Arcantina
-				i(263975),	-- Feeling Fielder Mk. 7
-
-
-
+				i(251903),	-- Potatoad Egg (TOY!)
 			}),
 			filter(MOUNTS, {
-				i(260896),	-- Accented Pseudoshell [Trading Post]
-				i(260893),	-- Arboreal Pseudoshell [Trading Post]
-				i(262707),	-- Blooded Snapvine [Trading Post]
-				i(260894),	-- Cabbage Pseudoshell [Trading Post]
-				mount(1261334),	-- Contained Stormarion Defender [Stomarion Event?]
-				i(262496),	-- Delver's Arcane Golem [Delves?]
-				i(260233),	-- Emerald Hawkstrider [Questline?]
-				i(262438),	-- Fantastical Goblin Waveshredder [Promotions?]
-				i(264273),	-- Fel Spirehawk [Promotions?]
-				i(262706),	-- Ferocious Snapvine [Trading Post]
-				i(263449),	-- Fluffy Comfy Flying Quilt [Trading Post]
-				i(262661),	-- Ghastropod [Promotions?]
-				i(263450),	-- Gruffy Comfy Flying Quilt [Trading Post]
-				i(262909),	-- Hypo-Speed X6000 [Promotions?]
-				i(260895),	-- Lavender Pseudoshell [Trading Post]
-				i(257143),	-- Peridot Dragonhawk [Questline?]
-				i(262708),	-- Savage Snapvine [Trading Post]
-				i(262705),	-- Vicious Snapvine [Trading Post]
-				mount(1270673),	-- Vivacious Chlorocoers [Harandar Treasures?]
+				i(260896),	-- Accented Pseudoshell (MOUNT!) [Trading Post]
+				i(260893),	-- Arboreal Pseudoshell (MOUNT!) [Trading Post]
+				i(262707),	-- Blooded Snapvine (MOUNT!) [Trading Post]
+				i(260894),	-- Cabbage Pseudoshell (MOUNT!) [Trading Post]
+				mount(1261334),	-- Contained Stormarion Defender (MOUNT!) [Stomarion Event?]
+				i(262496),	-- Delver's Arcane Golem (MOUNT!) [Delves?]
+				i(260233),	-- Emerald Hawkstrider (MOUNT!) [Questline?]
+				i(262438),	-- Fantastical Goblin Waveshredder (MOUNT!) [Promotions?]
+				i(264273),	-- Fel Spirehawk (MOUNT!) [Promotions?]
+				i(262706),	-- Ferocious Snapvine (MOUNT!) [Trading Post]
+				i(263449),	-- Fluffy Comfy Flying Quilt (MOUNT!) [Trading Post]
+				i(262661),	-- Ghastropod (MOUNT!) [Promotions?]
+				i(263450),	-- Gruffy Comfy Flying Quilt (MOUNT!) [Trading Post]
+				i(262909),	-- Hypo-Speed X6000 (MOUNT!) [Promotions?]
+				i(260895),	-- Lavender Pseudoshell (MOUNT!) [Trading Post]
+				i(257143),	-- Peridot Dragonhawk (MOUNT!) [Questline?]
+				i(262708),	-- Savage Snapvine (MOUNT!) [Trading Post]
+				i(262705),	-- Vicious Snapvine (MOUNT!) [Trading Post]
+				mount(1270673),	-- Vivacious Chlorocoers (MOUNT!) [Harandar Treasures?]
 			}),
 			n(PVP, {
 				i(255269),	-- Galactic Aspirant's Chain Sabatons

@@ -901,6 +901,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 245748 },	-- Kaliel Solaar
 						["coord"] = { 48.8, 76.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(263198),	-- Valdekar's Special (TOY!)
+						},
 					}),
 					---
 					q(87399, {	-- Facing the Sun

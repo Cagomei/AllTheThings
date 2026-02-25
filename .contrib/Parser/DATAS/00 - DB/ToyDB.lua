@@ -1521,16 +1521,23 @@ i(263489);	-- Naaru's Enfold
 i(242520);	-- Festival Hot Air Balloon
 i(243304);	-- Jubilant Snowman Costume
 i(245580);	-- Rolling Snowball
+i(256881);	-- Steward's Bauble
+i(256893);	-- Wretched Dredger's Brand
 
 ------------------
 -- PATCH 12.0.0 --
 ------------------
---- UNSORTED ---
 i(258136);	-- Azure Thunder Coil Pillar
 i(256141);	-- Fortune's Waving Cat
 i(258135);	-- Gilded Coil Spire
 i(258840);	-- Gilded Fountain
+i(251491);	-- Magical Pet Clicker
+i(249468);	-- Twilight's Blade Top Secret Strategy Training Guide
+--- UNSORTED ---
+i(251903);	-- Potatoad Egg
+--- NYI ---
 i(258129);	-- Jade Monument
+i(250320);	-- Lightgraft
 
 ------------------
 -- PATCH 12.0.1 --
@@ -1538,45 +1545,35 @@ i(258129);	-- Jade Monument
 i(250974);	-- Akil'zon's Updraft
 i(262431);	-- Bouncy Mushroom
 i(264805);	-- Brann-O-Vision 3000
+i(251633);	-- Bursting Bounty Bundle
 i(267291);	-- Coffer Key Glue
 i(265100);	-- Corewarden's Hearthstone
+i(264672);	-- Cosmic Ritual Stone
 i(264413);	-- Dominating Victory
+i(266370);	-- Dundun's Abundant Travel Method
+i(263244);	-- Enigmatic Fountain
+i(263975);	-- Feeling Fielder Mk. 7
+i(264517);	-- Galactic Flag of Victory
+i(259084);	-- Gift of the Cycle
 i(252265);	-- Hexed Potatoad Mucus
+i(263871);	-- Holy Pet Leash
 i(267139);	-- Hungry Black Hole
 i(264695);	-- Interdimensional Parcel Signal
 -- #if AFTER 12.0.1
 i(64457);	-- Last Relic of Argus
 -- #endif
+i(257736);	-- Lightcalled Hearthstone
 i(267456);	-- Lil' Scoots' Pillow
-i(251491);	-- Magical Pet Clicker
 i(264414);	-- Midnight Delver's Flare Gun
 i(268717);	-- Pango Plating
+i(253629);	-- Personal Key to the Arcantina
 i(268695);	-- Pin-o-Matic Camera
 i(263933);	-- Preyseeker's Hearthstone
+i(243146);	-- Ren'dorei Struggle
 i(250319);	-- Researcher's Shadowgraft
 i(264666);	-- Rod of Exanguishation
-i(259240);	-- Sin'dorei Wine
-i(256881);	-- Steward's Bauble
-i(249468);	-- Twilight's Blade Top Secret Strategy Training Guide
-i(256552);	-- Verdant Rutaani Seed
-i(256893);	-- Wretched Dredger's Brand
-i(257736);	-- Lightcalled Hearthstone
-i(251633);	-- Bursting Bounty Bundle
-i(266370);	-- Dundun's Abundant Travel Method
-i(264672);	-- Cosmic Ritual Stone
-i(259084);	-- Gift of the Cycle
-i(264517);	-- Galactic Flag of Victory
---- UNSORTED ---
-i(243146);	-- [DNT] Ren'dorei Struggle
-i(263244);	-- Enigmatic Fountain
-i(263975);	-- Feeling Fielder Mk. 7
-
-
-i(263871);	-- Holy Pet Leash
-i(253629);	-- Personal Key to the Arcantina
 i(268728);	-- Saptor Salve
 i(258963);	-- Shroom Jumper's Parachute
-i(268695);	-- Test Sharing Camera
+i(259240);	-- Sin'dorei Wine
 i(263198);	-- Valdekar's Special
-i(251903);	-- Potatoad Egg
-i(250320);	-- Lightgraft
+i(256552);	-- Verdant Rutaani Seed

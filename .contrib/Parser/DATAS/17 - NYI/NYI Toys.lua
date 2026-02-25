@@ -166,4 +166,11 @@ root(ROOTS.NeverImplemented, filter(TOYS, {
 			i(242534),	-- Azure Sea Skiff (TOY!)
 		})),
 	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			i(258129),	-- Jade Monument (TOY!)
+			i(250320),	-- Lightgraft (TOY!)
+		})),
+	}),
 }));

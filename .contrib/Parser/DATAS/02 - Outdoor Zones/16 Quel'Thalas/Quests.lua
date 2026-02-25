@@ -305,6 +305,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["coord"] = { 45.8, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["maps"] = { ARCANTINA },
 					["groups"] = {
+						i(253629),	-- Personal Key to the Arcantina (TOY!)
 						i(248131),	-- Key to the Arcantina (QI!) (but you keep it after quest as tp into zone?)
 						i(254838),	-- A Round of Drinks (QI!)
 					},

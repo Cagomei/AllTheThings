@@ -79,6 +79,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(ZIEKKET, {
 					ach(61649),	-- Mythic: The Blinding Vale
 					ach(61619),	-- Mythic: The Blinding Vale Guild Run
+					i(268728),	-- Saptor Salve (TOY!)
 				}),
 			}),
 		},
