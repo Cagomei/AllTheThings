@@ -294,7 +294,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["coord"] = { 51.7, 45.1, MOONGLADE },
 					-- ["description"] = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DIRE_MAUL, SILITHUS },
+					["maps"] = { SILITHUS },
 					["lvl"] = 56,
 					["groups"] = {
 						objective(1, {	-- 0/1 Reliquary of Purity
@@ -311,7 +311,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["qg"] = 11801,	-- Rabine Saturna
 					["coord"] = { 51.7, 45.1, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DIRE_MAUL },
 					["lvl"] = 56,
 					["groups"] = {
 						objective(1, {	-- 0/1 Sealed Reliquary of Purity
