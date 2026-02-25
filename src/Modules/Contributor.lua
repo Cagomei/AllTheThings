@@ -44,8 +44,8 @@ local function GetReportPlayerLocation()
 		return UNKNOWN..", "..UNKNOWN..", "..tostring(mapID or UNKNOWN).." \""..(app.GetMapName(mapID) or "??").."\" "..diffVal
 	end
 	-- floor coords to nearest tenth
-	if px then px = round(px, 1) end
-	if py then py = round(py, 1) end
+	if px then px = ("%.1f"):format(round(px, 1)) end
+	if py then py = ("%.1f"):format(round(py, 1)) end
 	return tostring(px or UNKNOWN)..", "..tostring(py or UNKNOWN)..", "..tostring(mapID or UNKNOWN).." \""..(app.GetMapName(mapID) or "??").."\" "..diffVal
 end
 
