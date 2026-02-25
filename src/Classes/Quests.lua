@@ -1923,6 +1923,7 @@ app.AddEventRegistration("QUEST_TURNED_IN", function(questID)
 		end
 	end
 	RefreshQuestInfo(questID);
+	wipe(QuestWithReputationCostCollectibles);
 end)
 
 -- popout handler for Quest Items group

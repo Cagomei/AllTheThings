@@ -208,85 +208,16 @@ ach(121,{requireSkill=185})}})}),
 prof(333,{
 h(-12,{requireSkill=333})}),
 prof(202,{
-prof(20219,{description="These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level a second Engineer and complete the opposing specialization.",sourceQuests={3641,3643},g={
-cat(188,{
-r(23096,{learnedAt=265,requireSkill=20219}),
-r(12906,{learnedAt=230,requireSkill=20219}),
-r(12759,{learnedAt=240,requireSkill=20219}),
-r(12903,{learnedAt=215,requireSkill=20219}),
-r(12907,{learnedAt=235,requireSkill=20219}),
-r(12902,{learnedAt=210,requireSkill=20219}),
-r(12905,{learnedAt=225,requireSkill=20219}),
-r(12899,{learnedAt=205,requireSkill=20219}),
-r(15633,{description="While this recipe does not have a requirement for Gnomish Engineering, you cannot learn this recipe without Gnomish Engineering and switching to Gnomish from Goblin is not possible in Classic.",learnedAt=205,requireSkill=20219}),
-r(23489,{learnedAt=285,requireSkill=20219}),
-r(23129,{learnedAt=260,requireSkill=20219})}),
-cat(185,{
-r(12897,{learnedAt=210,requireSkill=20219})}),
-cat(183,{
-r(12895,{learnedAt=205,requireSkill=20219})}),
-h(-45,{
-q(3645,{coords={
-[1434]={{28.2,76.2}}},cost=20000,lvl=30,qgs={7406},r=1,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3643},g={
-i(10790,{b=1,q=1})}}),
-q(3647,{coords={
-[1455]={{69.8,50.2}}},cost=20000,lvl=30,qgs={7944},r=2,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3641},g={
-i(10790,{b=1,q=1})}})}),
-h(-47,{
-i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",q=1,rwp=40003,g={
+x(1,{requireSkill=202,g={
+h(-47,{requireSkill=202,g={
+i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},q=1,requireSkill=202,rwp=40003,g={
 r(12607,{itemID=10603,learnedAt=220,q=2,requireSkill=202}),
 r(15633,{b=1,itemID=11827,learnedAt=205,q=2,requireSkill=20219}),
-r(12616,{itemID=10606,learnedAt=225,q=2,requireSkill=202})}})})}}),
-prof(20222,{description="These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level a second Engineer and complete the opposing specialization.",sourceQuests={3639},g={
-cat(188,{
-r(23486,{learnedAt=285,requireSkill=20222}),
-r(23078,{learnedAt=265,requireSkill=20222}),
-r(15628,{description="While this recipe does not have a requirement for Goblin Engineering, you cannot learn this recipe without Goblin Engineering and switching to Goblin from Gnomish is not possible in Classic.",learnedAt=205,requireSkill=20222})}),
-cat(184,{
-r(12755,{learnedAt=230,requireSkill=20222}),
-r(12908,{learnedAt=240,requireSkill=20222}),
-r(12716,{learnedAt=225,requireSkill=20222}),
-r(12760,{learnedAt=205,requireSkill=20222}),
-r(12754,{learnedAt=235,requireSkill=20222}),
-r(13240,{learnedAt=205,requireSkill=20222,rwp=40001})}),
-cat(185,{
-r(12718,{learnedAt=205,requireSkill=20222}),
-r(12717,{learnedAt=205,requireSkill=20222}),
-r(12758,{learnedAt=245,requireSkill=20222})}),
-cat(183,{
-r(12715,{learnedAt=205,requireSkill=20222})}),
-h(-45,{
-q(3644,{coords={
-[1446]={{54.4,27.2}}},cost=20000,description="Requires 200 Engineering to start this quest.",lvl=30,qgs={8126},repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3639},g={
-i(10791,{b=1,q=1})}}),
-q(3646,{coords={
-[1413]={{62.6,36.2}}},cost=20000,description="Requires 200 Engineering to start this quest.",lvl=30,qgs={8738},repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3639},g={
-i(10791,{b=1,q=1})}})}),
-h(-47,{
-i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",q=1,rwp=40003,g={
+r(12616,{itemID=10606,learnedAt=225,q=2,requireSkill=202})}}),
+i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10791}},q=1,requireSkill=202,rwp=40003,g={
 r(3968,{itemID=4416,learnedAt=195,q=2,requireSkill=202}),
 r(3972,{itemID=4417,learnedAt=200,q=2,requireSkill=202}),
-r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=20222})}})})}}),
-x(1,{requireSkill=202,g={
-h(-45,{requireSkill=202,g={
-q(3634,{altQuests={3526,3629,3630,3632,3633,3635,3637,4181},coords={
-[1413]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=2,requireSkill=202,rwp=40003}),
-q(3630,{altQuests={3526,3629,3632,3633,3634,3635,3637,4181},coords={
-[1453]={{55,8.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5518},r=2,requireSkill=202,rwp=40003}),
-q(3632,{altQuests={3526,3629,3630,3633,3634,3635,3637,4181},coords={
-[1455]={{68.8,45.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5174},r=2,requireSkill=202,rwp=40003}),
-q(3637,{altQuests={3526,3629,3630,3632,3633,3634,3635,4181},coords={
-[1413]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=1,requireSkill=202,rwp=40003}),
-q(3635,{altQuests={3526,3629,3630,3632,3633,3634,3637,4181},coords={
-[1458]={{75.6,74.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={4586},r=1,requireSkill=202,rwp=40003}),
-q(3629,{altQuests={3526,3630,3632,3633,3634,3635,3637,4181},coords={
-[1453]={{55,8.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5518},r=2,requireSkill=202,rwp=40003}),
-q(4181,{altQuests={3526,3629,3630,3632,3633,3634,3635,3637},coords={
-[1455]={{68.8,45.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5174},r=2,requireSkill=202,rwp=40003}),
-q(3633,{altQuests={3526,3629,3630,3632,3634,3635,3637,4181},coords={
-[1413]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=1,requireSkill=202,rwp=40003}),
-q(3526,{altQuests={3629,3630,3632,3633,3634,3635,3637,4181},coords={
-[1458]={{75.6,74.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={4586},r=1,requireSkill=202,rwp=40003})}})}})}),
+r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=20222})}})}})}})}),
 prof(129,{rwp=80001,g={
 x(1,{requireSkill=129,g={
 ach(131,{requireSkill=129}),

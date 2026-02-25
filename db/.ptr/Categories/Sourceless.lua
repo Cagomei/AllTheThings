@@ -181,10 +181,13 @@ s(97121,161227,{f=7}),
 s(97125,161231,{f=7}),
 s(97129,161235,{f=7}),
 s(97145,161254,{b=1,f=7,r=1})})})}})}}),
-flt(50,{awp=100107,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
-x(10,{
+flt(50,{sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
+x(10,{awp=100107,g={
 x(10.0107,{
-i(208878,{b=1,f=55})})})}}),
+i(208878,{b=1,f=55})})}}),
+x(11,{awp=110002,g={
+x(11.0002,{
+i(228580,{b=1,spellID=456550})})}})}}),
 h(-41,{sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
 x(10,{awp=100200,g={
 x(10.02,{
@@ -293,8 +296,6 @@ x(7.01,{awp=70100,g={
 q(45184),
 q(45183),
 q(45181)}}),
-x(7.02,{awp=70200,g={
-q(47215)}}),
 x(7.03,{awp=70300,g={
 q(49163)}}),
 x(7.0302,{awp=70302,g={
@@ -411,12 +412,29 @@ q(77758),
 q(78253),
 q(78737)}}),
 x(10.0205,{awp=100205,g={
+q(76582,{qis={207046}}),
+q(76583,{qis={207049}}),
+q(76584,{qis={207048}}),
+q(76585,{qis={207047}}),
 q(78976),
 q(79353)}}),
 x(10.0206,{awp=100206,g={
 q(79988)}})}),
-x(11,{awp=110002,g={
-x(11.0002,{
-q(84255),
-i(228580,{b=1,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",spellID=456550})})}})})};
+x(11,{
+x(11.0000001,{awp=110000,g={
+q(81696)}}),
+x(11.0002,{awp=110002,g={
+q(84255)}}),
+x(11.0005,{awp=110005,g={
+q(84611)}}),
+x(11.0105,{awp=110105,g={
+q(90899)}}),
+x(11.0107,{awp=110107,g={
+q(87560),
+q(91029)}}),
+x(11.02,{awp=110200,g={
+q(92487),
+q(92813)}}),
+x(11.0207,{awp=110207,g={
+q(84833)}})})})};
 end);

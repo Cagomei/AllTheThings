@@ -6622,10 +6622,6 @@ q(26,{c={11},coords={
 [1457]={{35.2,8}}},lvl=16,qgs={4217},r=2,rwp=40003}),
 q(27,{c={11},coords={
 [1456]={{76.4,27.6}}},lvl=16,qgs={3033},r=1,rwp=40003}),
-q(5527,{coords={
-[1450]={{51.7,45.1}}},lvl=56,maps={234,1451},qgs={11801},rwp=40003,g={
-qo(1,{coords={
-[1451]={{63.2,55.4}}},providers={{"i",22201},{"o",179565}}})}}),
 q(5061,{c={11},coords={
 [1450]={{56.2,30.4}}},lvl=16,qgs={11802},r=2,rwp=40003,sourceQuests={272},g={
 r(1066),
@@ -6692,11 +6688,6 @@ q(1123,{coords={
 [1456]={{78.4,28.4}}},lvl=54,qgs={5769},r=1,rwp=40003,sourceQuests={1000,1004,1018}}),
 q(10978,{c={11},coords={
 [1450]={{72.5,63.3}}},lvl=70,maps={1946},providers={{"i",32074}},qgs={22837},rwp=40001,sourceQuests={10965},u=18}),
-q(5526,{coords={
-[1450]={{51.7,45.1}}},lvl=56,maps={234},qgs={11801},rwp=40003,sourceQuests={5527},g={
-qo(1,{cost={{"i",18501,1},{"i",18539,1}},providers={{"i",18540}}}),
-s(129480,18535,{b=1,f=8,q=3}),
-s(129481,18536,{b=1,f=1,q=3})}}),
 q(1015,{altQuests={1019,1047},coords={
 [1453]={{54.8,62.6}}},lvl=54,qgs={2198},r=2,rwp=40003}),
 q(1019,{altQuests={1015,1047},coords={
@@ -8167,6 +8158,9 @@ q(113,{coords={
 [1446]={{50.9,27}}},lvl=39,providers={{"i",8594}},qgs={5594},rwp=40003,sourceQuests={110}}),
 q(3914,{coords={
 [1446]={{53.9,29}}},lvl=47,maps={1449},providers={{"i",11162},{"o",148504}},rwp=40003,sourceQuests={3913}}),
+q(3644,{coords={
+[1446]={{54.4,27.2}}},cost=20000,learnedAt=200,lvl=30,qgs={8126},repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3639},g={
+i(10791,{b=1})}}),
 q(1691,{coords={
 [1446]={{52.5,28.5}}},lvl=40,qgs={7407},rwp=40003,sourceQuests={1690},g={
 qo(1,{providers={{"n",5615}}}),
@@ -9002,6 +8996,12 @@ qo(3,{coords={
 q(6128,{c={11},coords={
 [1413]={{52.2,31.8}}},cost={{"i",2449,5}},lvl=14,qgs={3448},r=1,rwp=40003,sourceQuests={6127},g={
 qo(2,{crs={3234,3236},providers={{"i",15852}}})}}),
+q(3634,{altQuests={3526,3629,3630,3632,3633,3635,3637,4181},coords={
+[1413]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=2,requireSkill=202,rwp=40003}),
+q(3637,{altQuests={3526,3629,3630,3632,3633,3634,3635,4181},coords={
+[1413]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=1,requireSkill=202,rwp=40003}),
+q(3633,{altQuests={3526,3629,3630,3632,3634,3635,3637,4181},coords={
+[1413]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=1,requireSkill=202,rwp=40003}),
 q(875,{coords={
 [1413]={{51.62,30.9}}},lvl=12,qgs={3449},r=1,sourceQuests={867},g={
 qo(1,{crs={3278},providers={{"i",5065}}})}}),
@@ -9077,6 +9077,9 @@ q(874,{coords={
 [1413]={{44.86,59.13}}},lvl=9,qgs={3387},r=1,rwp=40003,sourceQuests={913}}),
 q(6365,{coords={
 [1413]={{52.62,29.84}}},lvl=10,providers={{"i",16306}},qgs={3489},races={2,8}}),
+q(3646,{coords={
+[1413]={{62.6,36.2}}},cost=20000,learnedAt=200,lvl=30,qgs={8738},repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3639},g={
+i(10791,{b=1})}}),
 q(9267,{coords={
 [1413]={{61.22,37.86}}},cost={{"i",3371,4},{"i",2589,40}},lc={1,"factionID",470.4},lvl=10,qgs={16418},repeatable=1}),
 q(896,{coords={
@@ -10638,6 +10641,10 @@ q(2039,{coords={
 q(1618,{coords={
 [1455]={{48.6,43}}},cost={{"i",6214,4},{"i",2857,4}},learnedAt=60,maps={1433},qgs={6031},r=2,requireSkill=164,g={
 r(8367,{description="This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",itemID=6735,learnedAt=100,q=2,requireSkill=164})}}),
+q(3632,{altQuests={3526,3629,3630,3633,3634,3635,3637,4181},coords={
+[1455]={{68.8,45.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5174},r=2,requireSkill=202,rwp=40003}),
+q(4181,{altQuests={3526,3629,3630,3632,3633,3634,3635,3637},coords={
+[1455]={{68.8,45.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5174},r=2,requireSkill=202,rwp=40003}),
 q(1682,{c={1},coords={
 [1455]={{49,42.6}}},lvl=10,qgs={6031},r=2,rwp=40003,sourceQuests={1681},g={
 s(121670,6978,{b=1,c={1},f=21,q=2}),
@@ -10675,6 +10682,9 @@ qo(1,{coords={
 [1426]={{27.7,36.4}}},providers={{"i",7226},{"o",102984}}}),
 s(121999,7507,{b=1,c={8},f=1,q=2}),
 s(122942,9514,{b=1,c={8},f=28,q=2})}}),
+q(3647,{coords={
+[1455]={{69.8,50.2}}},cost=20000,learnedAt=200,lvl=30,qgs={7944},r=2,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3641},g={
+i(10790,{b=1})}}),
 q(3448,{coords={
 [1455]={{77.2,11.8}}},lvl=45,qgs={2916},r=2,rwp=40003}),
 q(14111,{awp=30300,c={7},coords={
@@ -12094,6 +12104,10 @@ q(1921,{c={8},coords={
 [1453]={{49.5,85.8}}},cost={{"i",2589,10}},lvl=15,maps={1432},qgs={5497},races={1,7},rwp=40003,sourceQuests={1920},g={
 qo(2,{coords={
 [1432]={{35,27}}},providers={{"i",7249},{"o",271}}})}}),
+q(3630,{altQuests={3526,3629,3632,3633,3634,3635,3637,4181},coords={
+[1453]={{55,8.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5518},r=2,requireSkill=202,rwp=40003}),
+q(3629,{altQuests={3526,3630,3632,3633,3634,3635,3637,4181},coords={
+[1453]={{55,8.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5518},r=2,requireSkill=202,rwp=40003}),
 q(1700,{c={1},coords={
 [1453]={{64.6,37.2}}},isBreadcrumb=1,lvl=20,nextQuests={1705},providers={{"i",6926}},qgs={5413},r=2,rwp=40003,sourceQuests={1701}}),
 q(1706,{c={1},coords={
@@ -12857,6 +12871,10 @@ qo(1,{coords={
 q(1961,{c={8},coords={
 [1458]={{85,10.2}}},cost={{"i",2589,10}},lvl=15,maps={1421},qgs={4568},r=1,rwp=40003,sourceQuests={1960},g={
 qo(2,{crs={1867,1888,1889,1912,1913,1914,1915,3577,3578},providers={{"i",7293}}})}}),
+q(3635,{altQuests={3526,3629,3630,3632,3633,3634,3637,4181},coords={
+[1458]={{75.6,74.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={4586},r=1,requireSkill=202,rwp=40003}),
+q(3526,{altQuests={3629,3630,3632,3633,3634,3635,3637,4181},coords={
+[1458]={{75.6,74.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={4586},r=1,requireSkill=202,rwp=40003}),
 q(1478,{altQuests={1506},c={9},coords={
 [1420]={{61.6,52.6}}},lvl=10,qgs={5724},races={2,5},rwp=40003}),
 q(65593,{altQuests={65610},c={9},coords={
@@ -13743,7 +13761,7 @@ r(13698,{crs={2556,2557,2558,2606},itemID=11166,learnedAt=200,q=2,requireSkill=3
 s(118668,3341,{awp=100107,coords={
 [1417]={{26.2,46.2},{27.4,46.8}}},crs={2562,2564},f=6,lvl=27,q=2,rwp=40003}),
 s(118106,2623,{awp=100107,coords={
-[1417]={{29.8,59.4}}},crs={2780,2781,2782},description="This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",f=4,lvl=36,q=2,rwp=40003}),
+[1417]={{22.8,61.4}}},crs={2780,2781,2782},description="This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",f=4,lvl=36,q=2,rwp=40003}),
 i(1993,{crs={2567,2570},f=52,lvl=31,q=2}),
 s(117239,1297,{awp=70305,crs={2553,2577},f=4,lvl=26,q=2,rwp=40003}),
 s(120134,5040,{collectible=false,coords={
@@ -15962,7 +15980,7 @@ r(17555,{crs={9449,9450,9451,9452},itemID=13479,learnedAt=270,q=2,requireSkill=1
 r(17578,{awp=100107,coords={
 [1423]={{41,50.2},{67.8,39.8},{83.6,44}}},crs={8546,8550},itemID=13499,learnedAt=290,q=2,requireSkill=171,rwp=40003}),
 i(12811,{crs={12339},description="Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",q=2}),
-r(19833,{awp=100107,coords={
+r(19833,{awp=11101,coords={
 [1423]={{65.4,22.6},{68.8,20.6},{72.8,15.2}}},crs={8561},description="Can kill Mossflayer Scout and Mossflayer Cannibal to get Shadowhunters.",itemID=16056,learnedAt=300,q=2,requireSkill=202,rwp=40003})})}}),
 m(1429,{icon=236761,lore="Elwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center. The mines are infested by kobolds and the farmlands have been taken over by the Defias.",g={
 m(425,{icon=236447,lore="Northshire was the pride of Stormwind's vineyards until recently when Defias bandits drove off the farmers and occupied the farm and fields. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.",["zone-text-areas"]={9,59,24,34},g={
@@ -19702,6 +19720,9 @@ q(206,{coords={
 [1434]={{37.8,3.6}}},lvl=30,qgs={739},r=2,rwp=40003,sourceQuests={202,205},g={
 qo(1,{crs={818},providers={{"i",3616}}}),
 s(119391,4125,{b=1,f=1,q=2})}}),
+q(3645,{coords={
+[1434]={{28.2,76.2}}},cost=20000,learnedAt=200,lvl=30,qgs={7406},r=1,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3643},g={
+i(10790,{b=1})}}),
 q(594,{lvl=45,providers={{"i",4098},{"o",2560}},rwp=40003}),
 q(630,{coords={
 [1434]={{38.4,80.6}}},lvl=42,qgs={2634},rwp=40003,sourceQuests={594},g={
@@ -23871,7 +23892,8 @@ s(141788,31442,{b=1,f=4,q=2,u=17}),
 s(141789,31443,{b=1,f=5,q=2,u=17}),
 s(141790,31444,{b=1,f=6,q=2,u=17})}}),
 q(10512,{coords={
-[1949]={{37.4,64.6}}},lvl=65,qgs={21151},r=2,sourceQuests={10511},u=17}),
+[1949]={{37.4,64.6}}},lvl=65,qgs={21151},r=2,sourceQuests={10511},u=17,g={
+qo(1,{providers={{"i",30353},{"n",19995},{"n",19998},{"n",20334},{"n",21296}},u=17})}}),
 q(10800,{coords={
 [1949]={{53.2,41}}},lvl=65,qgs={22103},r=2,sourceQuests={10799},u=17,g={
 qo(1,{providers={{"i",31349},{"o",185152}},u=17})}}),
@@ -23984,14 +24006,16 @@ q(11030,{coords={
 q(11036,{coords={
 [1949]={{53.2,54.4}}},isBreadcrumb=1,lvl=67,nextQuests={10186},qgs={19471},r=1,u=17}),
 q(11040,{coords={
-[1949]={{60.8,69.1}}},isBreadcrumb=1,lvl=67,nextQuests={10186},qgs={21112},r=2,u=17}),
+[1949]={{60.8,69.1}}},isBreadcrumb=1,lvl=67,nextQuests={10186},providers={{"i",32623}},qgs={21112},r=2,u=17}),
 q(10798,{coords={
 [1949]={{62,38}}},lvl=65,qgs={22149},r=2,sourceQuests={10797},u=17}),
 q(10584,{coords={
-[1949]={{60.5,69}}},lvl=65,qgs={21691},r=2,sourceQuests={10580,10581},u=17}),
+[1949]={{60.5,69}}},lvl=65,qgs={21691},r=2,sourceQuests={10580,10581},u=17,g={
+qo(1,{providers={{"i",30656},{"n",21729},{"o",184906}},u=17})}}),
 q(10518,{coords={
 [1949]={{44,51.8}}},lvl=65,qgs={21277},r=2,sourceQuests={10517},u=17,g={
-qo(1,{crs={21296},providers={{"i",30416}},u=17}),
+qo(1,{coords={
+[1949]={{38.8,58},{40.4,57.4},{41.2,47},{48,50.8}}},crs={21296},providers={{"i",30416}},u=17}),
 qo(2,{crs={20116},providers={{"i",30417}},u=17}),
 s(141781,31435,{b=1,f=6,q=2,u=17}),
 s(141780,31434,{b=1,f=5,q=2,u=17}),
@@ -24103,7 +24127,9 @@ q(10711,{coords={
 q(10712,{coords={
 [1949]={{60.3,68.4}}},lvl=62,qgs={21460},r=2,sourceQuests={10675,10711},u=17}),
 q(10710,{coords={
-[1949]={{60.3,68.4}}},lvl=62,qgs={21460},r=2,sourceQuests={10557},u=17}),
+[1949]={{60.3,68.4}}},lvl=62,qgs={21460},r=2,sourceQuests={10557},u=17,g={
+i(30540,{f=55,q=1,u=17,g={
+i(30539,{q=1,u=17})}})}}),
 q(10557,{coords={
 [1949]={{60.3,68.4}}},lvl=62,qgs={21460},r=2,u=17}),
 q(10504,{coords={
@@ -25347,11 +25373,11 @@ s(139455,29109,{b=1,f=28,q=2,u=17})}}),
 q(10238,{coords={
 [1944]={{51.3,30.5}}},lvl=58,qgs={16915},sourceQuests={10236},u=17,g={
 qo(1,{coords={
-[1944]={{45.1,41.1}}},providers={{"n",19763}},u=17}),
+[1944]={{45.1,41.1}}},providers={{"n",19763},{"o",183936}},u=17}),
 qo(2,{coords={
-[1944]={{46.4,45.2}}},providers={{"n",19764}},u=17}),
+[1944]={{46.4,45.2}}},providers={{"n",19764},{"o",183940}},u=17}),
 qo(3,{coords={
-[1944]={{47.5,46.6}}},providers={{"n",19766}},u=17}),
+[1944]={{47.5,46.6}}},providers={{"n",19766},{"o",183941}},u=17}),
 i(30858,{b=1,f=55,q=1,u=17})}}),
 q(10086,{coords={
 [1944]={{55.1,38.7}}},lvl=58,qgs={21283},r=1,u=17,g={
@@ -29107,6 +29133,12 @@ r(43308,{b=1,itemID=34109,learnedAt=100,q=1,requireSkill=356,u=17})}})}}),
 h(-58,{u=17,g={
 n(18962,{coords={
 [1952]={{49.2,45.4}}},r=1,sym={{"select","itemID",30758,30757,30759}},u=17}),
+n(20986,{coords={
+[1952]={{39.4,70}}},minReputation={933,0},u=17,g={
+i(29393,{f=55,lvl=55,q=1,u=17}),
+i(29395,{f=55,lvl=65,q=1,u=17}),
+i(29394,{f=55,lvl=65,q=1,u=17}),
+i(29454,{f=55,lvl=60,q=1,u=17})}}),
 n(23367,{coords={
 [1952]={{64.3,66.2}}},u=1802,g={
 i(32722,{f=55,lvl=65,minReputation={1031,3000},q=1,u=1802}),
@@ -29374,7 +29406,8 @@ q(9790,{coords={
 qo(1,{crs={18132,18133,18283,20197,20198},providers={{"i",24372}},u=17})}}),
 q(9716,{coords={
 [1946]={{78.4,62}}},lvl=61,qgs={17841},sourceQuests={9912},u=17}),
-q(9731,{crs={18340},description="Must have accepted or completed |cFFFFD700Balance Must Be Preserved|r to start this quest.",lvl=59,providers={{"i",24330}},sourceQuests={9718},u=17,g={
+q(9731,{coords={
+[1946]={{25.5,42.9},{62.1,40.7},{63.2,64.2},{70.5,80.5}}},description="Must have accepted or completed |cFFFFD700Balance Must Be Preserved|r to start this quest.",lvl=59,providers={{"i",24330}},sourceQuests={9718},u=17,g={
 i(27734,{b=1,f=52,q=2,u=17}),
 i(27735,{b=1,f=51,q=2,u=17}),
 i(27733,{b=1,f=52,q=2,u=17}),
@@ -29621,7 +29654,7 @@ qo(2,{coords={
 q(9912,{coords={
 [1944]={{16,52.1}}},isBreadcrumb=1,lvl=61,nextQuests={9716},qgs={16885},u=17}),
 q(9911,{coords={
-[1946]={{32.8,59.5}}},crs={18285},lvl=62,providers={{"i",25459}},u=17}),
+[1946]={{32.8,59.5}}},lvl=62,providers={{"i",25459}},u=17}),
 q(9782,{coords={
 [1946]={{68.2,50}}},lvl=60,qgs={18004},r=2,u=17,g={
 qo(1,{coords={
@@ -29901,8 +29934,10 @@ r(26776,{isLimited=1,itemID=21899,learnedAt=350,q=1,requireSkill=197,u=17}),
 r(26775,{isLimited=1,itemID=21898,learnedAt=340,q=1,requireSkill=197,u=17}),
 r(33291,{itemID=27695,learnedAt=300,q=1,requireSkill=185,u=17})}})}}),
 h(-63,{u=17,g={
+i(25459,{b=1,crs={18285},lvl=62,q=1,u=17}),
 i(24291,{crs={18124,18125,18127,19402,19519},q=1,u=17}),
 p(146,{awp=20100,crs={20197},description="Teaches you how to summon the pet Firefly. This is an extremely rare drop.",itemID=29960,petTypeID=3,q=1,spellID=36034,u=17}),
+i(24330,{b=1,crs={18340},f=55,lvl=59,q=1,u=17}),
 i(24449,{crs={18128,18129,18134,18135,18280,18281},q=1,u=17}),
 i(24401,{description="Lauranna Thar'well in Cenarion Refugee will accept these and increase your reputation with Cenarion Expedition. The repeatable quest is only available until you become Honoured with the faction.",q=1,u=17})}})}})}}),
 m(113,{awp=30002,icon=236812,lore="Northrend is the northern, icy continent of the world of Azeroth, and the source of the evil Scourge. It is also the home of Icecrown Citadel, the seat of the malevolent Lich King.",u=30,["zone-text-continent"]=1,g={
@@ -39693,7 +39728,11 @@ s(174584,42880,{b=1,f=7,q=2,races={1,2,3,4,5,6,7,8,10,11},u=30})}}),
 q(13037,{coords={
 [120]={{65.7,51.4}}},qgs={30381},r=1,sourceQuests={13034},u=30}),
 q(12915,{coords={
-[120]={{33.4,58}}},maxReputation={1119,42000},qgs={29445},sourceQuests={13064},u=30}),
+[120]={{33.4,58}}},maxReputation={1119,42000},qgs={29445},sourceQuests={13064},u=30,g={
+o(191814,{type="AsGenericObjectContainer",u=30,g={
+i(41506,{q=1,u=30}),
+o(191814,{type="AsSubGenericObject",u=30}),
+o(191815,{type="AsSubGenericObject",u=30})}})}}),
 q(12905,{coords={
 [120]={{42.8,68.8}}},qgs={29481},sourceQuests={12841},u=30}),
 q(12864,{coords={
@@ -39905,7 +39944,10 @@ s(174588,42884,{b=1,f=7,q=2,u=30}),
 s(174599,42896,{b=1,f=6,q=2,u=30}),
 s(174578,42874,{b=1,f=5,q=2,u=30})}}),
 q(13050,{coords={
-[120]={{33.4,58}}},qgs={29445},sourceQuests={13009},u=30}),
+[120]={{33.4,58}}},qgs={29445},sourceQuests={13009},u=30,g={
+o(192536,{coords={
+[120]={{43.7,67.3},{45.4,66.8},{45.5,67.1},{52.4,73.3},{52.4,75.5},{53.5,74.9}}},u=30,g={
+i(42784,{q=1,u=30})}})}}),
 q(12862,{coords={
 [120]={{40.9,85.3}}},qgs={29428},r=2,sourceQuests={12822,12824},u=30}),
 q(13060,{coords={

@@ -690,7 +690,7 @@ crit(58036,{achID=1832,id=515,providers={{"i",195457}}}),
 crit(58037,{achID=1832,id=516,providers={{"i",195462}}}),
 crit(58038,{achID=1832,id=517,providers={{"i",196540}}}),
 crit(58039,{achID=1832,id=518,providers={{"i",195463}}}),
-crit(58040,{achID=1832,id=519,providers={{"i",194686}}}),
+crit(58040,{achID=1832,id=519}),
 crit(58041,{achID=1832,id=520,providers={{"i",197852}}}),
 crit(58042,{achID=1832,id=521,providers={{"i",197851}}}),
 crit(58043,{achID=1832,id=522,providers={{"i",194694}}}),
@@ -699,17 +699,17 @@ crit(58045,{achID=1832,id=524,providers={{"i",194688}}}),
 crit(58046,{achID=1832,id=525,providers={{"i",200099}}}),
 crit(58047,{achID=1832,id=526,providers={{"i",197855}}}),
 crit(58048,{achID=1832,id=527,providers={{"i",197850}}}),
-crit(58049,{achID=1832,id=528,providers={{"i",195458}}}),
+crit(58049,{achID=1832,id=528}),
 crit(58050,{achID=1832,id=529,providers={{"i",201469}}}),
 crit(55934,{achID=1832,id=530,providers={{"i",201047}}}),
 crit(58051,{achID=1832,id=531,providers={{"i",196582}}}),
-crit(58052,{achID=1832,id=532,providers={{"i",194682}}}),
+crit(58052,{achID=1832,id=532}),
 crit(58053,{achID=1832,id=533,providers={{"i",201413}}}),
 crit(58054,{achID=1832,id=534,providers={{"i",201419}}}),
 crit(58055,{achID=1832,id=535,providers={{"i",201820}}}),
 crit(58056,{achID=1832,id=536,providers={{"i",198356}}}),
 crit(58057,{achID=1832,id=537,providers={{"i",194681}}}),
-crit(58058,{achID=1832,id=538,providers={{"i",195465}}}),
+crit(58058,{achID=1832,id=538}),
 crit(58059,{achID=1832,id=539,providers={{"i",195466}}}),
 crit(58060,{achID=1832,id=540,providers={{"i",197847}}}),
 crit(58061,{achID=1832,id=541,providers={{"i",197848}}}),
@@ -5968,9 +5968,9 @@ i(154114,{b=1,c=a[63],f=52,lvl=45}),
 i(154116,{b=1,c=a[63],f=53,lvl=45}),
 i(154117,{b=1,c=a[63],f=53,lvl=45})})})}})}})}),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
-faction(469,{collectible=false,r=2}),
+faction(469,{icon=374217,r=2}),
+faction(67,{icon=374221,r=1}),
 faction(891,{collectible=false,r=2}),
-faction(67,{collectible=false,r=1}),
 faction(892,{collectible=false,r=1}),
 faction(1118,{awp=30002,collectible=false}),
 faction(980,{awp=20001,collectible=false}),
@@ -5981,7 +5981,9 @@ faction(1444,{awp=60002,collectible=false}),
 faction(1834,{awp=70003,collectible=false}),
 faction(2104,{awp=80001,collectible=false}),
 faction(2414,{awp=90001,collectible=false}),
-faction(2506,{awp=100000,collectible=false})}}),
+faction(2506,{awp=100000,collectible=false}),
+faction(2569,{awp=110002,collectible=false}),
+faction(2698,{awp=120000,collectible=false})}}),
 h(-509,{awp=100105,description="These items are obtained by Characters with a level range of 10-60 who have not logged in for more than 60 days. This feature will appear on the login screen if the character is eligible.",rwp=110207,u=2,g={
 cl(6,{u=2,g={
 i(205877,{b=1,f=55,u=2,g={
@@ -7153,7 +7155,7 @@ s(104347,168289,{f=2,races=a[300]}),
 i(168862,{b=1,races=a[300],spellID=253937})}})}}),
 ra(9,{awp=80300,description="To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Goblin|r.",races=a[336],g={
 q(57043,{coords={
-[85]={{39.5,80.2}}},lvl=50,qgs={156358},races=a[336]}),
+[85]={{38,80.2},{39.5,80.2}}},lvl=50,qgs={133523,156358},races=a[336]}),
 q(57045,{coords={
 [210]={a[190]}},lvl=50,qgs=a[128],races=a[336],sourceQuests={57043},g={
 i(170538,{races=a[336]})}}),
@@ -7804,7 +7806,7 @@ s(107802,173970,{f=2,races=a[193]}),
 s(107801,173969,{f=2,races=a[193]})}})}}),
 ra(22,{awp=80300,description="To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Worgen|r.",races=a[160],g={
 q(54976,{coords={
-[84]={a[254]}},lvl=50,qgs={150200},races=a[160]}),
+[84]={{52.1,13.4},a[254]}},lvl=50,qgs={126332,150200},races=a[160]}),
 q(54977,{coords={
 [84]={{82.3,27.8}}},lvl=50,qgs={151784},races=a[160],sourceQuests={54976}}),
 q(54980,{coords={
@@ -7874,7 +7876,9 @@ q(63483,{coords={
 [95]={{48.6,32.1}}},lvl=60,minReputation=a[342],qgs={176829},races=a[64],sourceQuests=a[289]}),
 q(63484,{coords={
 [95]={a[221]}},lvl=60,minReputation=a[342],qgs=a[139],races=a[64],sourceQuests={63482,63483},g={
-i(184895,{minReputation=a[342],races=a[64]})}}),
+o(366592,{coords={
+[95]={{48.6,32.5}}},minReputation=a[342],races=a[64],g={
+i(184895,{minReputation=a[342],races=a[64]})}})}}),
 q(63485,{coords={
 [95]={a[221]}},lvl=60,minReputation=a[342],qgs=a[139],races=a[64],sourceQuests=a[290]}),
 q(63486,{coords={
@@ -7885,7 +7889,7 @@ q(63519,{coords={
 [1536]={a[216]}},lvl=60,minReputation=a[342],qgs={176915},races=a[64],sourceQuests={63486}}),
 q(63487,{coords={
 [1533]={a[211]},
-[1536]={a[216]}},lvl=60,minReputation=a[342],qgs={176914},races=a[64],sourceQuests={63519,63522}}),
+[1536]={a[216]}},lvl=60,minReputation=a[342],qgs={176914,176930},races=a[64],sourceQuests={63519,63522}}),
 q(63488,{coords={
 [95]={a[221]}},lvl=60,minReputation=a[342],qgs=a[139],races=a[64],sourceQuests={63487}}),
 q(63489,{coords={
@@ -7895,7 +7899,7 @@ q(65653,{c=a[60],coords={
 [95]={{34.2,77.4}}},lvl=60,minReputation=a[342],qgs=a[140],races=a[64],sourceQuests=a[291],g={
 mnt(370620,{b=1,itemID=191566,minReputation=a[342],races=a[64]})}}),
 q(63490,{c=a[152],coords={
-[110]={{34,77.4}}},lvl=60,minReputation=a[342],qgs=a[140],races=a[64],sourceQuests=a[291],g={
+[95]={{34,77.4}}},lvl=60,minReputation=a[342],qgs=a[140],races=a[64],sourceQuests=a[291],g={
 mnt(370620,{b=1,itemID=191566,minReputation=a[342],races=a[64]}),
 en(191565,{b=1,c=a[152],minReputation=a[342],questID=66280,races=a[64],spellID=370686,tmogSetID=2481,g={
 s(169661,191553,{b=1,f=7}),
@@ -8462,7 +8466,8 @@ q(65425,{c=a[336],coords={
 q(65424,{c=a[336],coords={
 [85]={{74.6,47.4}}},description="Start this quest via your own Sayaad(Succubus/Incubus Pet).",qgs=a[142],r=1,rwp=100105,u=2}),
 q(76427,{awp=100105,c=a[336],isBreadcrumb=1,lvl=30,providers={{"i",208227}},r=1}),
-q(76430,{awp=100105,c=a[336],lvl=30,qgs={207051},r=1}),
+q(76430,{awp=100105,c=a[336],coords={
+[85]={{42.5,51.8}}},lvl=30,qgs={207051},r=1}),
 q(76410,{awp=100105,c=a[336],isBreadcrumb=1,lvl=30,nextQuests={75538},providers={{"i",208226}},r=2}),
 q(75538,{awp=100105,c=a[336],coords={
 [84]={{43.6,79.3}}},lvl=30,qgs={204198},r=2,sourceQuests={76410}}),

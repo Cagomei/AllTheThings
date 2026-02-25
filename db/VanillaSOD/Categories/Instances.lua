@@ -7902,7 +7902,7 @@ s(224300,228109,{b=1,f=6,lvl=57,q=3,u=1608}),
 i(228113,{b=1,f=53,lvl=57,q=3,u=1608}),
 i(228126,{b=1,c={5},f=55,q=2,u=1608,g={
 r(402857,{u=1608})}})}})}}),
-inst(230,{awp=10200,lore="Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",lvl=44,mapID=234,maps={240},savedInstanceID=429,u=1608,["zone-text-areas"]={2557,3217},g={
+inst(230,{awp=10200,lore="Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",lvl=44,mapID=234,maps={240},savedInstanceID=429,u=1608,["zone-text-areas"]={2557,2577,3217},g={
 h(-12,{u=1608,g={
 ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1608}),
 ach(644,{maps={235,236,237,238,239},u=1608})}}),
@@ -7919,6 +7919,15 @@ q(7492,{coords={
 [1454]={{46.6,64.6}},
 [1456]={{41.4,54.2}},
 [1458]={{69.2,49.2}}},isBreadcrumb=1,lvl=54,maps={1444},nextQuests={7489},qgs={10879,10880,10881},r=1,rwp=40003,u=1608}),
+q(5527,{coords={
+[1450]={{51.7,45.1}}},lvl=56,maps={1451},qgs={11801},rwp=40003,u=1608,g={
+qo(1,{coords={
+[1451]={{63.2,55.4}}},providers={{"i",22201},{"o",179565}},u=1608})}}),
+q(5526,{coords={
+[1450]={{51.7,45.1}}},lvl=56,qgs={11801},rwp=40003,sourceQuests={5527},u=1608,g={
+qo(1,{awp=10200,cost={{"i",18501,1},{"i",18539,1}},providers={{"i",18540}},u=1608}),
+s(163602,18535,{b=1,f=8,q=3,u=1608}),
+s(163603,18536,{b=1,f=1,q=3,u=1608})}}),
 q(84550,{awp=11503,c={1},lvl=54,maps={236,237,238},providers={{"i",228692},{"n",14383}},u=1608,g={
 i(228465,{b=1,c={1},f=53,q=3,u=1608})}}),
 q(7499,{c={1},lvl=54,maps={236,237,238},providers={{"i",18357},{"n",14383}},rwp=11503,u=2,g={
@@ -10358,7 +10367,7 @@ n(1716,{rwp=40001,g={
 ach(633,{r=2}),
 i(2926,{q=1})}})}}),
 inst(237,{coords={
-[1435]={{69.2,54.8}}},isLockoutShared=1,isRaid=1,lore="Over a thousand years ago, the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, attempted to bring back an ancient blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire buckled in upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows. There they erected a great temple to Hakkar - where they could prepare for his arrival into the physical world. The great dragon Aspect, Ysera, learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's drowned ruins are guarded by the green dragons who prevent anyone from getting in or out. However, it is believed that some of the fanatical Atal'ai may have survived Ysera's wrath - and recommitted themselves to the dark service of Hakkar.",lvl=45,mapID=220,savedInstanceID=109,u=1607,["zone-text-areaID"]=1417,g={
+[1435]={{69.2,54.8}}},isLockoutShared=1,isRaid=1,lore="Over a thousand years ago, the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, attempted to bring back an ancient blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire buckled in upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows. There they erected a great temple to Hakkar - where they could prepare for his arrival into the physical world. The great dragon Aspect, Ysera, learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's drowned ruins are guarded by the green dragons who prevent anyone from getting in or out. However, it is believed that some of the fanatical Atal'ai may have survived Ysera's wrath - and recommitted themselves to the dark service of Hakkar.",lvl=45,mapID=220,savedInstanceID=109,u=1607,["zone-text-areas"]={1417,1477},g={
 d(1,{rwp=11501,u=2,g={
 h(-45,{u=2,g={
 q(9053,{c={11},coords={

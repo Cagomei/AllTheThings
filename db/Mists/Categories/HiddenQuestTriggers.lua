@@ -473,6 +473,9 @@ q(32893,{type="hqt"}),
 q(32894,{type="hqt"}),
 q(31616,{type="hqt"}),
 q(31617,{type="hqt"})}}),
+ah(1302,{awp=50004,type="fa",g={
+h(-45,{
+q(31371,{type="hqt"})})}}),
 ah(1341,{awp=50004,type="fa",g={
 h(-45,{
 q(30719,{type="hqt"}),

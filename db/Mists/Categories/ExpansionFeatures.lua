@@ -4540,7 +4540,8 @@ q(32352,{coords={
 [392]={{68.3,44.9}}},qgs={68287},r=1,sourceQuests={32351},u=51,g={
 crit(22449,{achID=7929,id=6,r=1,u=51})}}),
 q(32413,{coords={
-[502]={{50.4,48.4}}},description="To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",isBreadcrumb=1,maps={501},nextQuests={32398},qgs={68586},r=1,sourceQuests={32412},u=51}),
+[501]={{50.5,48.3}},
+[502]={{50.4,48.4}}},description="To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",isBreadcrumb=1,nextQuests={32398},qgs={68586},r=1,sourceQuests={32412},u=51}),
 q(32406,{coords={
 [502]={{64,47.9}}},qgs={68586},r=1,sourceQuests={32405},u=51}),
 q(32127,{coords={
@@ -4576,7 +4577,7 @@ crit(22454,{achID=7929,id=12,r=1,u=51})}}),
 q(32236,{coords={
 [418]={{22.2,60.3}}},isDaily=1,qgs={67554},r=1,sourceQuests={32108},u=51}),
 q(32242,{coords={
-[392]={{32.1,84.9}}},qgs={67840},r=1,sourceQuests={32256},u=51}),
+[392]={{32.7,83.5}}},qgs={67840},r=1,sourceQuests={32256},u=51}),
 q(32378,{coords={
 [379]={{53.8,49.1}}},qgs={68370},r=1,sourceQuests={32376},u=51}),
 q(32251,{coords={
@@ -4587,7 +4588,8 @@ i(92510,{q=1,r=1,u=51}),
 crit(22440,{achID=7929,id=3,r=1,u=51})}}),
 q(32123,{coords={
 [418]={{9.23,53.1}}},isDaily=1,qgs={67618},r=1,sourceQuests={32108},u=51}),
-q(32108,{qgs={68072},r=1,sourceQuests={32250},u=51,g={
+q(32108,{coords={
+[418]={{10.9,53}}},qgs={68072},r=1,sourceQuests={32250},u=51,g={
 crit(22438,{achID=7929,id=1,r=1,u=51})}}),
 q(32351,{coords={
 [418]={{10.4,53.7}}},minReputation={1375,19750},qgs={67939},r=1,sourceQuests={32384},u=51}),
@@ -7954,7 +7956,8 @@ o(210565,{coords={
 [371]={{54.6,54.3},{55.8,28.4},{65.3,32.3}},
 [376]={{31.5,31.9},{33.1,58.1},{43.6,39.5},{48.5,49.7},{50.3,31.4}},
 [379]={{68.9,48.6}},
-[418]={{31.8,69.3}}},description="Can be found all around Pandaria.",maps={388,390,422},u=50,g={
+[418]={{31.8,69.3}},
+[422]={{66.3,70.9}}},description="Can be found all around Pandaria.",maps={388,390},u=50,g={
 i(79265,{b=1,q=3,u=50}),
 i(79266,{b=1,q=3,u=50}),
 i(79267,{b=1,q=3,u=50}),

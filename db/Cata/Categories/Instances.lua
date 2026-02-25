@@ -4073,7 +4073,7 @@ s(132668,22269,{b=1,f=3,lvl=55,q=3,u=15}),
 s(125469,13142,{b=1,f=7,lvl=55,q=3}),
 i(13098,{b=1,f=52,lvl=55,q=3}),
 i(22268,{b=1,f=53,lvl=55,q=3,u=15})})}})}}),
-inst(230,{awp=10200,lore="Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",lvl=44,maps={234,240},savedInstanceID=429,u=1101,["zone-text-areas"]={2557,3217,4992},g={
+inst(230,{awp=10200,lore="Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",lvl=44,maps={234,240},savedInstanceID=429,u=1101,["zone-text-areas"]={2557,2577,3217,4992},g={
 h(-12,{u=1101,g={
 ach(5788,{maps={236,237,238},minReputation={809,42000},rwp=40003,u=2}),
 ach(644,{maps={235,236,237,238,239},u=1101,g={
@@ -4099,6 +4099,15 @@ q(7492,{coords={
 [1454]={{46.6,64.6}},
 [1456]={{41.4,54.2}},
 [1458]={{69.2,49.2}}},isBreadcrumb=1,lvl=54,maps={1444},nextQuests={7489},qgs={10879,10880,10881},r=1,rwp=40003,u=2}),
+q(5527,{coords={
+[1450]={{51.7,45.1}}},lvl=56,maps={1451},qgs={11801},rwp=40003,u=2,g={
+qo(1,{coords={
+[1451]={{63.2,55.4}}},providers={{"i",22201},{"o",179565}},u=1101})}}),
+q(5526,{coords={
+[1450]={{51.7,45.1}}},lvl=56,qgs={11801},rwp=40003,sourceQuests={5527},u=2,g={
+qo(1,{awp=10200,cost={{"i",18501,1},{"i",18539,1}},providers={{"i",18540}},u=1101}),
+s(129480,18535,{b=1,f=8,q=3,u=2}),
+s(129481,18536,{b=1,f=1,q=3,u=2})}}),
 q(7499,{c={1},lvl=54,maps={236,237,238},providers={{"i",18357},{"n",14383}},rwp=40003,u=2,g={
 i(18466,{b=1,c={1},f=53,q=3,u=2})}}),
 q(7631,{c={9},coords={
@@ -13999,8 +14008,8 @@ s(177037,47902,{b=1,f=7,lvl=80,q=4,r=1,u=32}),
 s(202100,47836,{b=1,f=7,lvl=80,q=4,r=2,u=32}),
 s(176987,47830,{b=1,f=7,lvl=80,q=4,r=2,u=32}),
 s(177043,47908,{b=1,f=7,lvl=80,q=4,r=1,u=32}),
-crit(13308,{achID=3917,id=1,u=32}),
-crit(13350,{achID=3916,id=1,u=32})}})}}),
+crit(13350,{achID=3916,id=1,u=32}),
+crit(13308,{achID=3917,id=1,u=32})}})}}),
 d(5,{u=32,g={
 e(1618,{crs={34796,34797,34799,35144},u=32,g={
 ach(3936,{u=32}),
@@ -14152,8 +14161,8 @@ s(202121,47976,{b=1,f=7,lvl=80,q=4,r=2,u=32}),
 s(177157,48047,{b=1,f=7,lvl=80,q=4,r=1,u=32}),
 s(177092,47970,{b=1,f=7,lvl=80,q=4,r=2,u=32}),
 s(177163,48053,{b=1,f=7,lvl=80,q=4,r=1,u=32}),
-crit(12245,{achID=3918,id=1,u=32}),
-crit(13350,{achID=3916,id=1,u=32})}}),
+crit(13350,{achID=3916,id=1,u=32}),
+crit(12245,{achID=3918,id=1,u=32})}}),
 o(195665,{description="This chest appears after the defeat of Anub'arak in successful Tribute runs in the Trial of the Crusader.",rwp=40003,u=2,g={
 ach(4080,{u=2,g={
 title(136,{u=2})}}),
@@ -14364,8 +14373,8 @@ i(47327,{b=1,f=52,lvl=80,q=4,r=1,u=32}),
 i(47149,{f=52,lvl=80,q=4,r=2,u=32}),
 i(47316,{b=1,f=53,lvl=80,q=4,r=1,u=32}),
 i(47182,{b=1,f=53,lvl=80,q=4,r=2,u=32}),
-crit(13346,{achID=3916,id=1,u=32}),
-crit(13350,{achID=3916,id=1,u=32})}})}}),
+crit(13350,{achID=3916,id=1,u=32}),
+crit(13346,{achID=3916,id=1,u=32})}})}}),
 d(6,{u=32,g={
 h(-19,{u=32,g={
 i(47242,{b=1,q=4,u=32})}}),
@@ -14545,8 +14554,8 @@ i(47489,{b=1,f=52,lvl=80,q=4,r=1,u=32}),
 i(47157,{b=1,f=52,lvl=80,q=4,r=2,u=32}),
 i(47477,{b=1,f=53,lvl=80,q=4,r=1,u=32}),
 i(47188,{b=1,f=53,lvl=80,q=4,r=2,u=32}),
-crit(12247,{achID=3812,id=1,u=32}),
-crit(13350,{achID=3916,id=1,u=32})}}),
+crit(13350,{achID=3916,id=1,u=32}),
+crit(12247,{achID=3812,id=1,u=32})}}),
 o(195665,{description="This chest appears after the defeat of Anub'arak in successful Tribute runs in the Trial of the Crusader.",rwp=40003,u=2,g={
 i(47557,{b=1,c={2,5,9},lvl=80,q=4,u=2}),
 i(47558,{b=1,c={1,3,7},lvl=80,q=4,u=2}),

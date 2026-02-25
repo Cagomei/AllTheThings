@@ -2773,7 +2773,8 @@ q(32352,{coords={
 [392]={{68.3,44.9}}},lvl=15,qgs=a[3131],r=1,sourceQuests={32351},g={
 crit(22449,{achID=7929,id=6,r=1})}}),
 q(32413,{coords={
-[502]={{50.4,48.4}}},description="To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",isBreadcrumb=1,lvl=15,maps={501},nextQuests=a[1383],qgs=a[3137],r=1,sourceQuests={32412}}),
+[501]={{50.5,48.3}},
+[502]={{50.4,48.4}}},description="To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",isBreadcrumb=1,lvl=15,nextQuests=a[1383],qgs=a[3137],r=1,sourceQuests={32412}}),
 q(32406,{coords={
 [502]={{64,47.9}}},lvl=15,qgs=a[3137],r=1,sourceQuests={32405}}),
 q(32127,{coords={
@@ -2810,7 +2811,7 @@ crit(65830,{achID=19891,awp=100207,e=437,id=1,rwp=110002,u=2})}}),
 q(32236,{coords={
 [418]={a[1029]}},isDaily=1,lvl=15,qgs=a[3102],r=1,sourceQuests=a[1367]}),
 q(32242,{coords={
-[392]={{32.1,84.9}}},lvl=15,qgs={67840},r=1,sourceQuests={32256}}),
+[392]={{32.7,83.5}}},lvl=15,qgs={67840},r=1,sourceQuests={32256}}),
 q(32378,{coords={
 [379]={a[2430]}},lvl=15,qgs=a[3132],r=1,sourceQuests=a[1380]}),
 q(32251,{coords={
@@ -2821,7 +2822,8 @@ i(92510,{r=1,spellID=134026}),
 crit(22440,{achID=7929,id=3,r=1})}}),
 q(32123,{coords={
 [418]={{9.23,53.1}}},isDaily=1,lvl=15,qgs={67618},r=1,sourceQuests=a[1367]}),
-q(32108,{lvl=15,qgs={68072},r=1,sourceQuests={32250},g={
+q(32108,{coords={
+[418]={{10.9,53}}},lvl=15,qgs={68072},r=1,sourceQuests={32250},g={
 crit(22438,{achID=7929,id=1,r=1})}}),
 q(32351,{coords={
 [418]={a[194]}},lvl=15,minReputation={1375,19750},qgs=a[3114],r=1,sourceQuests={32384}}),
@@ -5855,7 +5857,8 @@ o(210565,{coords={
 [371]={{54.6,54.3},{55.8,28.4},{65.3,32.3}},
 [376]={{31.5,31.9},{33.1,58.1},{43.6,39.5},{48.5,49.7},{50.3,31.4}},
 [379]={{68.9,48.6}},
-[418]={{31.8,69.3}}},description="Can be found all around Pandaria.",maps={388,390,422},g={
+[418]={{31.8,69.3}},
+[422]={{66.3,70.9}}},description="Can be found all around Pandaria.",maps={388,390},g={
 i(79265,{b=1}),
 i(79266,{b=1}),
 i(79267,{b=1}),
@@ -8966,7 +8969,8 @@ i(124608,{b=1,f=51,lvl=40})}})}})}}),
 h(-45,{maps=a[2722],g={
 h(-422,{
 q(36160,{coords={
-[582]={a[1258]}},lvl=40,qgs=a[3331],r=2}),
+[582]={a[1258]}},lvl=40,qgs=a[3331],r=2,g={
+i(114779)}}),
 q(36261,{coords={
 [590]={a[2431]}},lvl=40,qgs=a[3363],r=1}),
 q(36161,{coords={
@@ -9894,7 +9898,7 @@ s(60437,111535,{b=1,f=21,r=1}),
 s(60440,111538,{b=1,f=33,r=1}),
 s(60443,111541,{b=1,f=29,r=1}),
 s(60444,111542,{b=1,f=23,r=1})}}),
-q(39195,{isBreadcrumb=1,lvl=40,qgs=a[3331],r=2,requireSkill=755,sourceQuests={38445}}),
+q(39195,{isBreadcrumb=1,lc={1,"questID",36160},lvl=40,qgs=a[3331],r=2,requireSkill=755,sourceQuests={38445}}),
 q(39175,{isBreadcrumb=1,lvl=40,qgs=a[3347],r=1,requireSkill=755}),
 q(33461,{coords={
 [539]={{39.8,29.4}},
@@ -9935,7 +9939,8 @@ q(37992,{coords={
 [590]={a[1683]}},isDaily=1,lvl=40,providers={a[139]},r=1,sourceQuests=a[1602],g={
 crit(27603,{achID=9836,id=4,r=1})}}),
 q(36589,{lvl=10,providers={{"i",116438}},r=1,requireSkill=202}),
-q(38296,{cost={{"i",109129,10},{"i",109127,10},{"i",109128,10},{"i",109126,10},{"i",109125,10}},isDaily=1,lvl=10,qgs={91031,91404},g={
+q(38296,{coords={
+[582]={{34.5,33}}},cost={{"i",109129,10},{"i",109127,10},{"i",109128,10},{"i",109126,10},{"i",109125,10}},isDaily=1,lvl=10,qgs={91031,91404},g={
 i(120945,{b=1})}}),
 q(36953,{isBreadcrumb=1,lvl=20,nextQuests={34566},providers={a[133],a[134],a[138]},r=1}),
 q(34681,{coords={
@@ -18190,7 +18195,14 @@ gt(377,{c=a[1298],g={
 q(44212,{c=a[1298],coords={
 [739]={{43.4,48.2}}},lvl=45,qgs={110816},sourceQuests=a[1869]})}}),
 gt(375,{c=a[1298],g={
-i(140216,{b=1,c=a[1298],lvl=10,spellID=218513})}})}}),
+o(252993,{c=a[1298],coords={
+[630]={{24.5,43.1}},
+[634]={{45.9,35.8}},
+[641]={{44.3,15.1}},
+[650]={{56.7,67.8}},
+[680]={{41.3,82.8}},
+[739]={{39.7,29.2}}},g={
+i(140216,{b=1,c=a[1298],lvl=10,spellID=218513})}})}})}}),
 h(-58,{c=a[1298],g={
 n(103693,{c=a[1298],coords={
 [739]={{44.6,48.8}}},sym={{"select","itemID",143727}},g={

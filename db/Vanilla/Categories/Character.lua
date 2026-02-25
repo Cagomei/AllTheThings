@@ -27,9 +27,9 @@ ach(2142),
 ach(2141)})}),
 h(-17),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
-faction(469,{collectible=false,r=2}),
+faction(469,{icon=374217,r=2}),
+faction(67,{icon=374221,r=1}),
 faction(891,{collectible=false,r=2}),
-faction(67,{collectible=false,r=1}),
 faction(892,{collectible=false,r=1})}}),
 h(-11,{
 h(-12,{
