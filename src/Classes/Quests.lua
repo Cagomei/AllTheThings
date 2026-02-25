@@ -417,11 +417,11 @@ if app.AccountWideQuestsDB and next(app.AccountWideQuestsDB) ~= nil then
 	CacheQuestByScope = function(questID, flag)
 		flag = flag and 1 or nil
 		if AccountWide[questID] then
-			app.SetAccountCached(CACHE, questID, flag)
+			app.SetThingCollected("questID",questID,true,flag)
 			-- account quests are wiped from character cache
 			app.SetCached(CACHE, questID)
 		else
-			app.SetCached(CACHE, questID, flag)
+			app.SetThingCollected("questID",questID,false,flag)
 		end
 	end
 else
@@ -431,7 +431,7 @@ else
 	end
 	CacheQuestByScope = function(questID, flag)
 		flag = flag and 1 or nil
-		app.SetCached(CACHE, questID, flag)
+		app.SetThingCollected("questID",questID,false,flag)
 	end
 end
 local BatchRefresh
