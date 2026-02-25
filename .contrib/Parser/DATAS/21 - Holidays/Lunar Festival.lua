@@ -137,7 +137,7 @@ local eldersHeader = function(achievementID, timeline, t)
 	});
 end
 local preWrathEldersHeader = function(headerID, achievementID, timeline, t)
-	return 
+	return
 		-- #if BEFORE WRATH
 		n
 		-- #else
@@ -1006,6 +1006,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15564,	-- Elder Darkcore
 				["coords"] = {
 					-- #if AFTER CATA
+					{ 45.0, 38.7, EASTERN_KINGDOMS },
 					{ 66.5, 38.0, UNDERCITY },
 					-- #else
 					{ 66.6, 38.2, UNDERCITY },
@@ -1310,6 +1311,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 38.4, 52.8, FELWOOD },
+					{ 47.8, 29.4, KALIMDOR },
 					-- #else
 					{ 37.7, 53.0, FELWOOD },
 					-- #endif

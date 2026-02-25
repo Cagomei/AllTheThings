@@ -2142,15 +2142,35 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					["repeatable"] = true,
 				}),
 				q(79127, {	-- The Outland Cup Begins
-					["provider"] = { "n", 214031 },	-- Racing Enthusiast
-					["coord"] = {61.8, 75.1, STORMWIND_CITY },
+					["qgs"] = {
+						214031,	-- Racing Enthusiast
+						-- #if AFTER TWW
+						220307,	-- Holiday Enthusiast
+						-- #endif
+					},
+					["coords"] = {
+						{ 61.8, 75.1, STORMWIND_CITY },
+						-- #if AFTER TWW
+						{ 46.0, 55.1, DORNOGAL },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 				}),
 				q(79128, {	-- The Outland Cup Begins
-					["provider"] = { "n", 213769 },	-- Racing Enthusiast
-					["coord"] = { 52.8, 79.5, ORGRIMMAR },
+					["qgs"] = {
+						213769,	-- Racing Enthusiast
+						-- #if AFTER TWW
+						220307,	-- Holiday Enthusiast
+						-- #endif
+					},
+					["coords"] = {
+						{ 52.8, 79.5, ORGRIMMAR },
+						-- #if AFTER TWW
+						{ 46.0, 55.1, DORNOGAL },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,

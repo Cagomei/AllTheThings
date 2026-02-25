@@ -33,6 +33,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				q(36160, {	-- Garrison Campaign: Every Rose Has Its Thorn
 					["qg"] = 77209,	-- Baros Alexston
 					["coord"] = { 29.2, 33.1, LUNARFALL },	-- garrison lvl 3
+					["groups"] = { i(114779) },	-- Azerothian Rose (QI!)
 				}),
 				q(36261, {	-- Garrison Campaign: Missing Grunt
 					["qg"] = 79740,	-- Warmaster Zog
@@ -2366,6 +2367,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["requireSkill"] = JEWELCRAFTING,
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
+				["lockCriteria"] = { 1, "questID", 36160 },	-- Garrison Campaign: Every Rose Has Its Thorn
 			}),
 			q(39175, {	-- Gems of the Apexis
 				["qg"] = 78466,	-- Gazlowe
@@ -2508,6 +2510,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					91031,	-- Nicholas Mitrik (Horde)
 					91404,	-- Samantha Scarlet (Alliance)
 				},
+				["coord"] = { 34.5, 33.0, LUNARFALL },
 				["cost"] = {
 					{ "i", 109125, 10 },	-- 10x Fireweed
 					{ "i", 109126, 10 },	-- 10x Gorgrond Flytrap

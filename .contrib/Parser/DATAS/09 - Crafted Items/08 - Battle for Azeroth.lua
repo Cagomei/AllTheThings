@@ -1000,6 +1000,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(153705),	-- Kyanite
 			i(154124),	-- Laribole
 			i(168190, { ["timeline"] = { ADDED_8_2_0 } }),	-- Lava Lazuli
+			i(168635, { ["timeline"] = { ADDED_8_2_0 } }),	-- Leviathan's Eye
 			i(154120),	-- Owlseye
 			i(154125),	-- Royal Quartz
 			i(153701),	-- Rubellite

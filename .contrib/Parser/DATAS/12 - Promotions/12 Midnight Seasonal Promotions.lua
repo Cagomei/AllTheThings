@@ -119,11 +119,11 @@ root(ROOTS.Promotions, {
 				},
 			})),
 			i(264396, {	-- Naturally Elegant Doormat (DECOR!)
-				["description"] = "\nVisit |cFFFFD700zillow.com/warcraft|r\n\nFind the Doormat on the page\n\nClick on 'Claim Loot!' authorize the Account connection.",
+				["description"] = "Visit |cFFFFD700zillow.com/warcraft|r\n\nFind the Doormat on the page\n\nClick on 'Claim Loot!' authorize the Account connection.",
 				["timeline"] = { "added 12.0.1.65899", "removed 12.1.0.99999" },	-- TODO: Timeline out. Available through September 30, 2026.
 			}),
 			ach(62400, {	-- Craft Your World
-				["description"] = "\nOpen Options\n\nGo to Gameplay -> Social\n\nCheck Connect to Pinterest\n\nSign in through the in-game browser and authorize the connection.",
+				["description"] = "Open Options\n\nGo to Gameplay -> Social\n\nCheck Connect to Pinterest\n\nSign in through the in-game browser and authorize the connection.",
 				["timeline"] = { "added 12.0.1.66017" },
 				["groups"] = { i(268695) },	-- Pin-o-Matic Camera (TOY!)
 			}),

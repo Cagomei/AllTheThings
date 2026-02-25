@@ -1972,7 +1972,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(29507, {	-- Fun for the Little Ones
-				["qg"] = 14847,	-- Professor Thaddeus Paleo <Darkmoon Cards>
+				["qgs"] = {
+					14847,	-- Professor Thaddeus Paleo <Darkmoon Cards>
+					30481,	-- Darkmoon Fortune Teller
+				},
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				["maxReputation"] = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
 				["timeline"] = { ADDED_4_3_0 },

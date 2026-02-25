@@ -685,9 +685,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						["description"] = "To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",
 						["sourceQuest"] = 32412,	-- One Last Grasp
 						["qg"] = 68586,	-- Grand Magister Rommath
-						["coord"] = { 50.4, 48.4, 502 },
+						["coords"] = {
+							{ 50.4, 48.4, 502 },	-- Dalaran (Scenario)
+							{ 50.5, 48.3, 501 },	-- Dalaran (Scenario)
+						},
 						["timeline"] = { ADDED_5_1_0 },
-						["maps"] = { 501 },	-- Dalaran (Scenario)
 						["isBreadcrumb"] = true,
 					}),
 					q(32406, {	-- A Tactical Assault
@@ -786,7 +788,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					q(32242, {	-- Buried Secrets
 						["sourceQuests"] = { 32256 },	-- Rise Of An Empire
 						["qg"] = 67840,	-- Garrosh Hellscream
-						["coord"] = { 32.1, 84.9, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+						["coord"] = { 32.7, 83.5, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					}),
 					q(32378, {	-- Clearing a Path
 						["sourceQuests"] = { 32376 },	-- To the Valley!
@@ -816,6 +818,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					q(32108, {	-- Domination Point
 						["sourceQuests"] = { 32250 },	-- The Might of the Warchief
 						["qg"] = 68072,	-- Kor'kron Bodyguard
+						["coord"] = { 10.9, 53.0, KRASARANG_WILDS },
 					}),
 					q(32351, {	-- Echoes of Thunder
 						["sourceQuests"] = { 32384 },	-- Trapping the Leader

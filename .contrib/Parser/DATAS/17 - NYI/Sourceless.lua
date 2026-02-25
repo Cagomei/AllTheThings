@@ -448,11 +448,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(45181),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Battleground - Tracking Quest
 			})),
 
-			-- 7.2.0
-			expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
-				q(47215),	-- Tracking Quest
-			})),
-
 			-- 7.3.0
 			expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
 				q(49163),	--

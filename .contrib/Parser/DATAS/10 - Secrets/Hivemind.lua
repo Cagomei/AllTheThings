@@ -43,6 +43,25 @@ root(ROOTS.Secrets, {
 								["model"] = 1661948,
 								["questID"] = 40404,
 								["coord"] = { 47.4, 75.0, DEADWIND_PASS },	-- Karazhan
+								["maps"] = {
+									KARAZHAN,	-- Servant's Quarters
+									351,	-- Upper Livery Stables
+									352,	-- The Banquet Hall
+									353,	-- The Guest Chambers
+									354,	-- Opera Hall Balcony
+									355,	-- Master's Terrace
+									356,	-- Lower Broken Stair
+									357,	-- Upper Broken Stair
+									358,	-- The Menagerie
+									359,	-- Guardian's Library
+									360,	-- The Repository
+									361,	-- Upper Library
+									362,	-- The Celestial Watch
+									363,	-- Gamesman's Hall
+									364,	-- Medivh's Chambers
+									365,	-- The Power Station
+									366,	-- Netherspace
+								},
 								["sourceQuest"] = 40314,	-- Leter 2: Prepfoot Compound, Highmountain
 								["description"] = "|cFFFFFFFFLetter 3:|r Go to |cFFFFD700Karazhan (Old)|r in |cFFFFD700Deadwind Pass|r. The third letter is located in |cFFFFD700Medivh's Chambers|r, located after the Chess Event, in the staircase leading to Prince Malchezaar. The letter is on the chair Medivh used to write his scrolls and spells, literally the seat of the guardian. Click it. The letter reads...\n\n|cFFFFFFFFI sat Dumbfounded, watching As the most Subtle Rat reached for the cheese a third time in under an hour.|r\n"
 							}),

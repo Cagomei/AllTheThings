@@ -275,6 +275,7 @@ i(158792);	-- Digestive Acid
 i(155618);	-- Discarded Molting
 i(163587);	-- Discarded Zandalari Brooch
 i(158757);	-- Disquiet Earth
+i(163855);	-- Duplicate Pilgrimage Scroll
 i(163052);	-- Dry Goat Strips
 i(162565);	-- Dustmane Jerky
 i(168787);	-- Empty Birdcage
@@ -402,6 +403,7 @@ i(163901);	-- Waterproof Flintbox
 i(158789);	-- Webbed Frill
 i(158834);	-- Winch Coil
 i(162672);	-- Witch Doctor's Juju Beads
+i(161205);	-- Wooden Horse Carving
 i(158870);	-- Wooly Hair
 i(158773);	-- Wriggling Goop
 i(163521);	-- Yellow Glowing Puffer
@@ -465,6 +467,7 @@ i(170005);	-- Fractured Pearl
 i(169138);	-- Fractured Personality Module
 i(169962);	-- Frayed Fetish
 i(169123);	-- Functional Fiddleswitch
+i(169122);	-- Gibraltian Monkey Wrench
 i(170013);	-- Inanimate Rock
 i(169988);	-- Inert Mineral Dust
 i(168792);	-- Kobold's Candle
@@ -829,7 +832,6 @@ i(180343);	-- Everburning Censer
 i(184393);	-- Everburning Mange
 i(179026);	-- Evernight Porridge
 i(184286);	-- Extinguished Soul Anima
-i(183718);	-- Extra Gooey Gorm Gunk
 i(180330);	-- Fading Denathrius Pennant
 i(173870);	-- Fading Glimmerdust
 i(178123);	-- Fading Lightspawn Ember

@@ -2473,6 +2473,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				o(210565, {	-- Dark Soil
 					["description"] = "Can be found all around Pandaria.",
 					["coords"] = {
+						{ 66.3, 70.9, DREAD_WASTES },
 						{ 68.9, 48.6, KUN_LAI_SUMMIT },
 						{ 31.8, 69.3, KRASARANG_WILDS },
 						{ 65.3, 32.3, THE_JADE_FOREST },
@@ -2485,7 +2486,6 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						{ 31.5, 31.9, VALLEY_OF_THE_FOUR_WINDS },
 					},
 					["maps"] = {
-						DREAD_WASTES,
 						TOWNLONG_STEPPES,
 						VALE_OF_ETERNAL_BLOSSOMS,
 					},

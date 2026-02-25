@@ -2662,7 +2662,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #else
 						"This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 						-- #endif
-					["coord"] = { 29.8, 59.4, ARATHI_HIGHLANDS },
+					["coord"] = { 22.8, 61.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						2782,	-- Caretaker Alaric

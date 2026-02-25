@@ -170,6 +170,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114314),	-- Shadow-Gorged Chestguard			(NYI)
 			ig(3984),	-- Strapped Armor					(NYI)
 
+			ig(63468),	-- Defias Brotherhood Vest			(Removed)
 			ig(134729),	-- Frosthide Tunic					(Removed)
 			ig(10781),	-- Hakkari Breastplate				(Removed)
 			ig(134759),	-- Masked Tunic						(Removed)

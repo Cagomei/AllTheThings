@@ -1009,7 +1009,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						}),
 					}),
 					gt(375, {	-- Eagle Ally
-						i(140216),	-- Eagle Feather
+						o(252993, {	-- Eagle Feather
+							["coords"] = {
+								{ 24.5, 43.1, AZSUNA },
+								{ 39.7, 29.2, TRUESHOT_LODGE },
+								{ 41.3, 82.8, SURAMAR },
+								{ 44.3, 15.1, VALSHARAH },
+								{ 45.9, 35.8, STORMHEIM },
+								{ 56.7, 67.8, HIGHMOUNTAIN },
+							},
+							["groups"] = { i(140216) },	-- Eagle Feather
+						}),
 					}),
 				}),
 				n(VENDORS, {

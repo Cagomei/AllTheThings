@@ -1749,6 +1749,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25411,	-- A New Master
 					["altQuests"] = { 25443 },	-- The Name Never Spoken
 					["qg"] = 40093,	-- Subjugated Inferno Lord
+					["coord"] = { 11.7, 41.6, MOUNT_HYJAL },
 					["groups"] = {
 						objective(1, {	-- 0/1 Northern Firestone Examined
 							["provider"] = { "o", 202765 },	-- Northern Firestone

@@ -4503,7 +4503,6 @@ i(253699, 4903);	-- Starshard Whelpling
 i(239699, 4801);	-- Tidbit
 --- NYI ---
 i(252199, 4899);	-- Festive Eve
-i(252194, 4897);	-- Fishmonger May
 i(252195, 4898);	-- Fishstick Keith
 i(252137, 4895);	-- Lil' Chompers
 i(252193, 4896);	-- Slippery Saul
@@ -4562,7 +4561,6 @@ i(265035, 4984);	-- Medusa
 --- UNSORTED ---
 i(0, 4905);			-- [DNT] Baby Amazard (Red)
 i(264892, 4981);	-- [PH] Black Baby Hawkstrider
-
 i(260705, 4947);	-- Assistant Botanist Leafy
 i(0, 4945);			-- Aud'rei III
 i(253404, 4902);	-- Auspicious Pixiu
@@ -4602,3 +4600,9 @@ i(264434, 4976);	-- Voldy
 i(221495, 4497);	-- Waddles
 i(251003, 4891);	-- Wrathful Wyrm
 i(262394, 4954);	-- Ziorg'pharon
+
+------------------
+-- PATCH 12.0.1 --
+------------------
+i(252194, 4897);	-- Fishmonger May
+--- UNSORTED ---

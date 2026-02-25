@@ -2518,7 +2518,9 @@ root(ROOTS.Zones, {
 						["modelScale"] = 2,
 						["coord"] = { 39.2, 41.7, TALADOR },
 						["groups"] = {
-							i(112623),	-- Pack of Fishing Supplies
+							i(112623, {	-- Pack of Fishing Supplies
+								i(97981),	-- Impeccably Sharp Tooth (QS!)
+							}),
 						},
 					}),
 					o(230643, {	-- Teroclaw Nest

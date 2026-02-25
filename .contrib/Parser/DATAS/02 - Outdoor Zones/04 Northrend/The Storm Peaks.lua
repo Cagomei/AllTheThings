@@ -986,6 +986,13 @@ root(ROOTS.Zones, {
 						["qg"] = 29445,	-- Thorim
 						["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
 						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- Sons of Hodir, Exalted
+						["groups"] = {
+							o_repeated({	-- Granite Boulder
+								i(41506),	-- Granite Boulder (QI!)
+								o(191814),	-- Granite Boulder
+								o(191815),	-- Granite Boulder
+							}),
+						},
 					}),
 					q(12905, {	-- Mildred the Cruel
 						["sourceQuest"] = 12841,	-- The Crone's Bargain
@@ -1535,6 +1542,19 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 13009,	-- A New Beginning
 						["qg"] = 29445,	-- Thorim
 						["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
+						["groups"] = {
+							o(192536, {	-- Small Proto-Drake Egg
+								["coords"] = {
+									{ 43.7, 67.3, THE_STORM_PEAKS },
+									{ 45.4, 66.8, THE_STORM_PEAKS },
+									{ 45.5, 67.1, THE_STORM_PEAKS },
+									{ 52.4, 73.3, THE_STORM_PEAKS },
+									{ 52.4, 75.5, THE_STORM_PEAKS },
+									{ 53.5, 74.9, THE_STORM_PEAKS },
+								},
+								["groups"] = { i(42784) },	-- Small Proto-Drake Egg (QI!)
+							}),
+						},
 					}),
 					warchiefscommand(q(49536, {	-- Warchief's Command: Storm Peaks!
 						["timeline"] = { ADDED_7_3_5 },

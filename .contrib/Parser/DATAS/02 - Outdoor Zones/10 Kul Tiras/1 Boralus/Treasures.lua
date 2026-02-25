@@ -62,6 +62,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["questID"] = 53408,	-- Shanty of the Lively Men [Criteria]
 				["groups"] = { i(163714) },	-- Forbidden Sea Shanty of the Lively Men
 			}),
+			o(284469, {	-- Small Treasure Chest
+				["coord"] = { 70.3, 85.2, BORALUS },
+			}),
 		}),
 	}),
 })));

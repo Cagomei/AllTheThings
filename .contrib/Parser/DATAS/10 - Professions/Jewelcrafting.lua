@@ -520,16 +520,16 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_0 },
 				["groups"] = {
-					i(208927),	-- Sandsparkle Pearl (QI!)
+					o(408070, {	-- Sandsparkle Clam
+						i(208927),	-- Sandsparkle Pearl (QI!)
+					}),
 				},
 			}),
 			q(77912, {	-- Unmodern Jewelry
 				["provider"] = { "n", 210162 },	-- Magnolia Oaken
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_0 },
-				["groups"] = {
-					i(208928),	-- Zaqali Adornments (QI!)
-				},
+				["groups"] = { i(208928) },	-- Zaqali Adornments (QI!)
 			}),
 		})),
 		filter(RECIPES, {

@@ -483,16 +483,20 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			-- #endif
 		}, {
 			q(57043, {	-- Old Friends, New Opportunities
-				["provider"] = { "n", 156358 },	-- Izzy
-				["coord"] = { 39.5, 80.2, ORGRIMMAR },
+				["qgs"] = {
+					156358,	-- Izzy
+					133523,	-- Ji Firepaw
+				},
+				["coords"] = {
+					{ 38.0, 80.2, ORGRIMMAR },
+					{ 39.5, 80.2, ORGRIMMAR },
+				},
 			}),
 			q(57045, {	-- A Special Delivery
 				["sourceQuest"] = 57043,	-- Old Friends, New Opportunities
 				["provider"] = { "n", 156396 },	-- Sassy Hardwrench
 				["coord"] = { 34.6, 28.5, THE_CAPE_OF_STRANGLETHORN },
-				["groups"] = {
-					i(170538),	-- Mysterious Package (QI!)
-				},
+				["groups"] = { i(170538) },	-- Mysterious Package (QI!)
 			}),
 			q(57047, {	-- A Simple Experiment
 				["sourceQuest"] = 57045,	-- A Special Delivery
@@ -1723,8 +1727,14 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			-- #endif
 		}, {
 			q(54976, {	-- The Shadow of Gilneas
-				["provider"] = { "n", 150200 },	-- Courier Claridge
-				["coord"] = { 54.6, 18.4, STORMWIND_CITY },
+				["qgs"] = {
+					150200,	-- Courier Claridge
+					126332,	-- Aysa Cloudsinger
+				},
+				["coords"] = {
+					{ 52.1, 13.4, STORMWIND_CITY },
+					{ 54.6, 18.4, STORMWIND_CITY },
+				},
 			}),
 			q(54977, {	-- Into Duskwood
 				["sourceQuests"] = { 54976 },	-- The Shadow of Gilneas

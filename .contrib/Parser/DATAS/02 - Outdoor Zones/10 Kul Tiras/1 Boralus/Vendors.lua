@@ -199,6 +199,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 				["coord"] = { 75.5, 12.6, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
+					i(160059),	-- Amber Tanning Oil
 					i(168028, {	-- Pattern: Mallet of Thunderous Skins (RECIPE!)
 						["sourceQuests"] = { 55235 },	-- Instruments of Destruction
 						["timeline"] = { ADDED_8_1_5 },

@@ -3144,7 +3144,6 @@ root(ROOTS.Unsorted, {
 				i(158854),	-- PH Flavor - Unused \\ PH Flavor - Goat
 				i(158727),	-- Decayed Equipment
 				i(161202),	-- Polished Brass Sextant
-				i(161205),	-- Wooden Horse Carving
 				i(161209),	-- Coven Dream Catcher
 				i(161210),	-- Homemade Child's Doll
 				i(161212),	-- Wavespeaker's Star Chart
@@ -3155,7 +3154,6 @@ root(ROOTS.Unsorted, {
 				i(163849),	-- Bad Troll Love Poem
 				i(163850),	-- Bloody Gamekeeper's Arm
 				i(163854),	-- Weighty Bag of Sand
-				i(163855),	-- Duplicate Pilgrimage Scroll
 				i(163896),	-- Salty Pocket Lint
 				i(163897),	-- Personal Spice Stash
 				i(163898),	-- Tiny Loa Effigy
@@ -3218,7 +3216,6 @@ root(ROOTS.Unsorted, {
 				i(156634),	-- Silas' Vial of Continuous Curing \\ Silas' Phial of Perpetual Potential \\ Silus' Phial of Perpetual Potential
 				i(158292),	-- PH Cooking Reward \\ Mostly Intact Shell - PH Turtle Rare
 				i(158383),	-- Tidespray Pet Bandage \\ Sun-Bleached Pet Bandage
-				i(160059),	-- Amber Tanning Oil
 				i(160399),	-- Wild Flour
 				i(160400),	-- Foosaka
 				i(160705),	-- Major's Frothy Coffee
@@ -3879,7 +3876,6 @@ root(ROOTS.Unsorted, {
 			i(168595),	-- REUSE ME [MTMM] \\ Scoundrel's Vigor
 			i(168597),	-- REUSE ME [MTMM] \\ Vanguard's Bulwark
 			i(168630),	-- Chitterspine Meat
-			i(168635),	-- Leviathan's Eye
 			i(168655),	-- Greater Mystical Flask
 			i(168662),	-- Maroon Pigment
 			i(168755),	-- Unpublished Research
@@ -3899,7 +3895,6 @@ root(ROOTS.Unsorted, {
 			i(169118),	-- Hydro-Stasis Plant Matter
 			i(169119),	-- Enhanced Water
 			i(169120),	-- Enhancement-Free Water
-			i(169122),	-- Gibraltian Monkey Wrench
 			i(169190),	-- Blueprint: Mega-Sized Spare Parts \\ Blueprint: TK45
 			i(169193),	-- Nazjatar Ring A
 			i(169291),	-- Petrified Ebony Scale
