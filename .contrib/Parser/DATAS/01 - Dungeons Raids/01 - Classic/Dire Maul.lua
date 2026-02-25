@@ -6,7 +6,7 @@ WARPWOOD_QUARTER = createHeader({
 	readable = "Warpwood Quarter",
 	icon = 236292,
 	text = {
-		en = [[~DUNGEON_FLOOR_DIREMAUL5..app.L.EAST]]
+		en = [[~DUNGEON_FLOOR_DIREMAUL5.." (" .. L.EAST ..")"]]
 	},
 	description = {
 		en = "This part of the instance can be accessed from the eastern-most portal. (right side)",
@@ -26,7 +26,7 @@ GORDOK_COMMONS = createHeader({
 	readable = "Gordok Commons",
 	icon = 236695,
 	text = {
-		en = [[~DUNGEON_FLOOR_DIREMAUL5..app.L.NORTH]]
+		en = [[~DUNGEON_FLOOR_DIREMAUL5.." (" .. L.NORTH ..")"]]
 	},
 	description = {
 		en = "This part of the instance can be accessed from the northern-most portal.",
@@ -46,7 +46,7 @@ CAPITAL_GARDENS = createHeader({
 	readable = "Capital Gardens",
 	icon = 134162,
 	text = {
-		en = [[~DUNGEON_FLOOR_DIREMAUL5..app.L.WEST]]
+		en = [[~DUNGEON_FLOOR_DIREMAUL5.." (" .. L.WEST ..")"]]
 	},
 	description = {
 		en = "This part of the instance can be accessed from the western-most portal. (left side)",

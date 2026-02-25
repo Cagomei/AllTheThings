@@ -1,6 +1,7 @@
-NORTH = createHeader({
+createLocalizationString({
 	readable = "North",
-	icon = 450907,
+	constant = "NORTH",
+	export = true,
 	text = {
 		en = "North",
 		-- TODO: de = "",
@@ -13,5 +14,12 @@ NORTH = createHeader({
 		ru = "Север",
 		cn = "北部",
 		-- tw = "北部",
+	},
+});
+NORTH = createHeader({
+	readable = "North",
+	icon = 450907,
+	text = {
+		en = [[~L.NORTH]],
 	},
 });
