@@ -1809,7 +1809,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(80, i(260394)),	-- Thalassian Recruit's Bow
 			}),
 		})),
-		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 12.0.0.65655", "removed 12.0.1.99999" } }, {	-- TODO: Timeline in/out correctly
+		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 12.0.0.65655", "removed 12.0.1.99999" } }, {	-- TODO: Timeline out correctly
 			n(FILLED_TRAVELERS_LOG, {
 				i(233237),	-- Lively Pack of Lunar Explosives
 			}),
@@ -2127,6 +2127,51 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 						}),
 					},
 				}),
+			}),
+		})),
+		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 12.0.0.65655", "removed 12.0.1.99999" } }, {	-- TODO: Timeline in/out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				i(263451),	-- Comfy Bel'ameth Flying Quilt (MOUNT!)
+			}),
+			filter(MOUNTS, {
+				traderstender(550, i(263452)),	-- Comfy Silvermoon Flying Quilt (MOUNT!)
+				traderstender(700, i(235650)),	-- Pearlescent Butterfly (MOUNT!)
+				traderstender(700, i(235657)),	-- Ruby Butterfly (MOUNT!)
+				traderstender(325, i(235646)),	-- Shimmermist Free Runner (MOUNT!
+			}),
+			filter(COSMETIC, {
+				traderstender(80, i(266122)),	-- Archer's Night Sabre
+				traderstender(80, i(266124)),	-- Archer's Shadow Talon
+				traderstender(115, i(260743)),	-- Big Navy "Whirlwind" Axe
+				traderstender(250, i(235655)),	-- Blood Monarch's Longbow
+				traderstender(250, i(235272)),	-- Blood Monarch's Mace
+				traderstender(300, i(235401)),	-- Blood Monarch's Polearm
+				traderstender(250, i(235291)),	-- Blood Monarch's Sword
+				traderstender(200, i(235295)),	-- Blood Monarch's Wand
+				traderstender(370, iensemble(258725)),	-- Ensemble: Elaborate Lavender Mageweave
+				traderstender(100, iensemble(258727)),	-- Ensemble: Elaborate Ruby Mageweave
+				traderstender(370, iensemble(235228)),	-- Ensemble: Ornaments of the Blood Monarch
+				traderstender(100, iensemble(258018)),	-- Ensemble: Sorcerer's Violet Garb
+				traderstender(80, i(266097)),	-- Huntress' Moonblade
+				traderstender(80, i(266096)),	-- Huntress' Moonglaive
+				traderstender(100, i(260732)),	-- Glimr's Lil' Fish Stick
+				traderstender(100, i(260762)),	-- Lil' Blue Popper
+				traderstender(100, i(258406)),	-- Lil' Navy "Whirlwind" Axe
+				traderstender(100, i(260756)),	-- Lil' Purple Claw
+				traderstender(40, i(266095)),	-- Obsidian Scale Treads
+				traderstender(80, i(266125)),	-- Priestess' Starblade
+				traderstender(80, i(266968)),	-- Priestess' Starpoint
+				traderstender(80, i(260382)),	-- Sentinel's Night Bow
+				traderstender(100, i(266080)),	-- Sentinel's Night Quiver
+				traderstender(80, i(266120)),	-- Sisterhood's Crescent
+				traderstender(80, i(266121)),	-- Sisterhood's Glaive
+				traderstender(100, i(266123)),	-- Sisterhood's Moonlance
+				traderstender(100, i(251992)),	-- Shadestalker's Hunting Quiver
+				traderstender(30, i(262851)),	-- Violet Dunecloth Belt
+				traderstender(35, i(262833)),	-- Violet Dunecloth Skirt
+				traderstender(35, i(262869)),	-- Violet Dunecloth Vest
+				traderstender(50, i(252749)),	-- Violet Winter Toque
+				traderstender(225, i(234602)),	-- Wings of the Blood Monarch
 			}),
 		})),
 	}),

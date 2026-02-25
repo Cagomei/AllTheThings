@@ -929,8 +929,6 @@ root(ROOTS.Unsorted, {
 				i(260893),	-- Arboreal Pseudoshell [Trading Post]
 				i(262707),	-- Blooded Snapvine [Trading Post]
 				i(260894),	-- Cabbage Pseudoshell [Trading Post]
-				i(263451),	-- Comfy Bel'ameth Flying Quilt [Trading Post]
-				i(263452),	-- Comfy Silvermoon Flying Quilt [Trading Post]
 				mount(1261334),	-- Contained Stormarion Defender [Stomarion Event?]
 				i(262496),	-- Delver's Arcane Golem [Delves?]
 				i(260233),	-- Emerald Hawkstrider [Questline?]
@@ -1338,60 +1336,34 @@ root(ROOTS.Unsorted, {
 				i(258045),	-- Dawnblade's Glaives
 				i(258404),	-- Lil' Blue Whirlwind
 				i(258405),	-- Lil' Black Whirlwind
-				i(258406),	-- Lil' Navy "Whirlwind" Axe
 				i(258407),	-- Lil' Green Whirlwind
 				i(258408),	-- Lil' Red Whirlwind
 				i(258680),	-- Elaborate Golden Mageweave Headband
-				i(258681),	-- Elaborate Ruby Mageweave Headband
-				i(258682),	-- Elaborate Lavender Mageweave Headband
 				i(258683),	-- Elaborate Charcoal Mageweave Headband
 				i(258684),	-- Elaborate Golden Mageweave Vestments
-				i(258685),	-- Elaborate Ruby Mageweave Vestments
-				i(258686),	-- Elaborate Lavender Mageweave Vestments
 				i(258687),	-- Elaborate Charcoal Mageweave Vestments
 				i(258688),	-- Elaborate Golden Mageweave Vest
-				i(258689),	-- Elaborate Ruby Mageweave Vest
-				i(258690),	-- Elaborate Lavender Mageweave Vest
 				i(258691),	-- Elaborate Charcoal Mageweave Vest
 				i(258692),	-- Elaborate Golden Mageweave Chestwrap
-				i(258693),	-- Elaborate Ruby Mageweave Chestwrap
-				i(258694),	-- Elaborate Lavender Mageweave Chestwrap
 				i(258695),	-- Elaborate Charcoal Mageweave Chestwrap
 				i(258696),	-- Elaborate Golden Mageweave Chestpiece
-				i(258697),	-- Elaborate Ruby Mageweave Chestpiece
-				i(258698),	-- Elaborate Lavender Mageweave Chestpiece
 				i(258699),	-- Elaborate Charcoal Mageweave Chestpiece
 				i(258700),	-- Elaborate Charcoal Mageweave Boots
-				i(258701),	-- Elaborate Lavender Mageweave Boots
-				i(258702),	-- Elaborate Ruby Mageweave Boots
 				i(258703),	-- Elaborate Golden Mageweave Boots
 				i(258704),	-- Elaborate Charcoal Mageweave Gloves
-				i(258705),	-- Elaborate Lavender Mageweave Gloves
-				i(258706),	-- Elaborate Ruby Mageweave Gloves
 				i(258707),	-- Elaborate Golden Mageweave Gloves
 				i(258708),	-- Elaborate Charcoal Mageweave Pants
-				i(258709),	-- Elaborate Lavender Mageweave Pants
-				i(258710),	-- Elaborate Ruby Mageweave Pants
 				i(258711),	-- Elaborate Golden Mageweave Pants
 				i(258712),	-- Elaborate Charcoal Mageweave Leggings
-				i(258713),	-- Elaborate Lavender Mageweave Leggings
-				i(258714),	-- Elaborate Ruby Mageweave Leggings
 				i(258715),	-- Elaborate Golden Mageweave Leggings
 				i(258716),	-- Elaborate Charcoal Mageweave Shoulders
-				i(258717),	-- Elaborate Lavender Mageweave Shoulders
-				i(258718),	-- Elaborate Ruby Mageweave Shoulders
 				i(258719),	-- Elaborate Golden Mageweave Shoulders
 				i(258720),	-- Elaborate Charcoal Mageweave Belt
-				i(258721),	-- Elaborate Lavender Mageweave Belt
-				i(258722),	-- Elaborate Ruby Mageweave Belt
 				i(258723),	-- Elaborate Golden Mageweave Belt
 				i(258724),	-- Ensemble: Elaborate Charcoal Mageweave
-				i(258725),	-- Ensemble: Elaborate Lavender Mageweave
-				i(258727),	-- Ensemble: Elaborate Ruby Mageweave
 				i(258728),	-- Ensemble: Elaborate Golden Mageweave
 				i(260729),	-- Murky's Lil' Fish Stick
 				i(260731),	-- Snugglefin's Lil' Fish Stick
-				i(260732),	-- Glimr's Lil' Fish Stick
 				i(260733),	-- Murgle's Lil' Fish Stick
 				i(260736),	-- Forest Dweller's Mossy Staff
 				i(260737),	-- Forest Dweller's Dawn Staff
@@ -1399,14 +1371,11 @@ root(ROOTS.Unsorted, {
 				i(260739),	-- Forest Dweller's Night Staff
 				i(260741),	-- Big Lil' Blue Whirlwind
 				i(260742),	-- Big Lil' Black Whirlwind
-				i(260743),	-- Big Navy "Whirlwind" Axe
 				i(260744),	-- Big Lil' Green Whirlwind
 				i(260745),	-- Big Lil' Red Whirlwind
 				i(260754),	-- Lil' Blue Claw
 				i(260755),	-- Lil' Green Claw
-				i(260756),	-- Lil' Purple Claw
 				i(260757),	-- Lil' Red Claw
-				i(260762),	-- Lil' Blue Popper
 				i(260763),	-- Lil' Tan Popper
 				i(260764),	-- Lil' Green Popper
 				i(260765),	-- Lil' Red Popper
@@ -1445,7 +1414,6 @@ root(ROOTS.Unsorted, {
 				i(262830),	-- Rosy Dunecloth Skirt
 				i(262831),	-- Plum Dunecloth Skirt
 				i(262832),	-- Crimson Dunecloth Skirt
-				i(262833),	-- Violet Dunecloth Skirt
 				i(262834),	-- Aquatic Dunecloth Skirt
 				i(262835),	-- Snowy Dunecloth Skirt
 				i(262836),	-- Sunny Dunecloth Skirt
@@ -1463,7 +1431,6 @@ root(ROOTS.Unsorted, {
 				i(262848),	-- Rosy Dunecloth Belt
 				i(262849),	-- Plum Dunecloth Belt
 				i(262850),	-- Crimson Dunecloth Belt
-				i(262851),	-- Violet Dunecloth Belt
 				i(262852),	-- Aquatic Dunecloth Belt
 				i(262853),	-- Snowy Dunecloth Belt
 				i(262854),	-- Sunny Dunecloth Belt
@@ -1481,7 +1448,6 @@ root(ROOTS.Unsorted, {
 				i(262866),	-- Carrot Dunecloth Vest
 				i(262867),	-- Plum Dunecloth Vest
 				i(262868),	-- Crimson Dunecloth Vest
-				i(262869),	-- Violet Dunecloth Vest
 				i(262870),	-- Aquatic Dunecloth Vest
 				i(262871),	-- Snowy Dunecloth Vest
 				i(262872),	-- Sunny Dunecloth Vest
@@ -1518,7 +1484,6 @@ root(ROOTS.Unsorted, {
 				i(266077),	-- Basic Black Quiver
 				i(266078),	-- Basic Blue Quiver
 				i(266079),	-- Basic Bronze Quiver
-				i(266080),	-- Sentinel's Night Quiver
 				i(266081),	-- Basic Dark Blue Quiver
 				i(266082),	-- Basic Dark Red Quiver
 				i(266083),	-- Basic Frost Quiver
@@ -1531,15 +1496,6 @@ root(ROOTS.Unsorted, {
 				i(266090),	-- Basic Purple Quiver
 				i(266091),	-- Basic Rugged Quiver
 				i(266092),	-- Basic Sea Green Quiver
-				i(266095),	-- Obsidian Scale Treads
-				i(266096),	-- Huntress' Moonglaive
-				i(266097),	-- Huntress' Moonblade
-				i(266120),	-- Sisterhood's Crescent
-				i(266121),	-- Sisterhood's Glaive
-				i(266122),	-- Archer's Night Sabre
-				i(266123),	-- Sisterhood's Moonlance
-				i(266124),	-- Archer's Shadow Talon
-				i(266125),	-- Priestess' Starblade
 				i(266160),	-- Trapper's Green Slippers
 				i(266384),	-- Sanctum Magister's Post
 				i(266386),	-- Sanctum Acolyte's Post
@@ -1550,7 +1506,6 @@ root(ROOTS.Unsorted, {
 				i(266901),	-- Depthdiver's Cloak
 				i(266902),	-- Depthdiver's Tabard
 				i(266903),	-- Depthdiver's Shoulderpads
-				i(266968),	-- Priestess' Starpoint
 				i(266969),	-- Ensemble: Depthdiver Vestments
 				i(266971),	-- [PH] Hara'ti Cloak - Yellow
 				i(266972),	-- [PH] Hara'ti Shoulders - Yellow
@@ -1561,7 +1516,6 @@ root(ROOTS.Unsorted, {
 				i(266977),	-- [PH] Hara'ti Set - Blue
 				i(266978),	-- [PH] Hara'ti Set - Yellow
 				i(267004),	-- Twinblade of the Devourer
-				i(260382),	-- Sentinel's Night Bow
 				i(260386),	-- Farstrider's Forest Bow
 				i(262585),	-- Pristine Lunch Bag
 				i(262587),	-- Brown Lunch Bag
@@ -1809,7 +1763,6 @@ root(ROOTS.Unsorted, {
 				i(257770),	-- Sorcerer's Carrot Cowl
 				i(257772),	-- Sorcerer's Plum Cowl
 				i(257773),	-- Sorcerer's Crimson Cowl
-				i(257774),	-- Sorcerer's Violet Cowl
 				i(257775),	-- Sorcerer's Aquatic Cowl
 				i(257776),	-- Sorcerer's Snowy Cowl
 				i(257778),	-- Sorcerer's Sunny Cowl
@@ -1825,7 +1778,6 @@ root(ROOTS.Unsorted, {
 				i(257789),	-- Sorcerer's Carrot Cape
 				i(257791),	-- Sorcerer's Plum Cape
 				i(257792),	-- Sorcerer's Crimson Cape
-				i(257793),	-- Sorcerer's Violet Cape
 				i(257794),	-- Sorcerer's Aquatic Cape
 				i(257795),	-- Sorcerer's Snowy Cape
 				i(257796),	-- Sorcerer's Sunny Cape
@@ -1841,7 +1793,6 @@ root(ROOTS.Unsorted, {
 				i(257994),	-- Ensemble: Sorcerer's Carrot Garb \\ Ensemble: Sorcerer's Carrot Raiment
 				i(258003),	-- Ensemble: Sorcerer's Plum Garb \\ Ensemble: Sorcerer's Plum Raiment
 				i(258017),	-- Ensemble: Sorcerer's Crimson Garb \\ Ensemble: Sorcerer's Crimson Raiment
-				i(258018),	-- Ensemble: Sorcerer's Violet Garb \\ Ensemble: Sorcerer's Violet Raiment
 				i(258019),	-- Ensemble: Sorcerer's Aquatic Garb \\ Ensemble: Sorcerer's Aquatic Raiment
 				i(258020),	-- Ensemble: Sorcerer's Snowy Garb \\ Ensemble: Sorcerer's Snowy Raiment
 				i(258021),	-- Ensemble: Sorcerer's Sunny Garb \\ Ensemble: Sorcerer's Sunny Raiment

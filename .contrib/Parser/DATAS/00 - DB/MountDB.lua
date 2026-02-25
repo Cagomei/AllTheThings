@@ -2298,8 +2298,6 @@ i(260896, 1267004);	-- Accented Pseudoshell
 i(260893, 1266993);	-- Arboreal Pseudoshell
 i(262707, 1269279);	-- Blooded Snapvine
 i(260894, 1266997);	-- Cabbage Pseudoshell
-i(263451, 1270522);	-- Comfy Bel'ameth Flying Quilt
-i(263452, 1270523);	-- Comfy Silvermoon Flying Quilt
 i(262496, 1268919);	-- Delver's Arcane Golem
 i(260233, 1265785);	-- Emerald Hawkstrider
 i(262438, 1268809);	-- Fantastical Goblin Waveshredder
@@ -2338,6 +2336,8 @@ i(262620, 1257058);	-- Calamitous Carrion
 i(257156, 1261323);	-- Cerulean Hawkstrider
 i(252014, 1253929);	-- Cerulean Sporeglider
 i(257147, 1261302);	-- Cobalt Dragonhawk
+i(263451, 1270522);	-- Comfy Bel'ameth Flying Quilt
+i(263452, 1270523);	-- Comfy Silvermoon Flying Quilt
 i(262621, 1257081);	-- Convalescent Carrion
 i(257145, 1261298);	-- Crimson Dragonhawk
 i(257154, 1261322);	-- Crimson Silvermoon Hawkstrider
