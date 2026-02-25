@@ -65,6 +65,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(LOTHRAXION, {
 					ach(61647),	-- Mythic: Nexus-Point Xenas
 					ach(61618),	-- Mythic: Nexus-Point Xenas Guild Run
+					i(262774),	-- Gortham (PET!)
 				}),
 			}),
 		},

@@ -813,42 +813,17 @@ root(ROOTS.Unsorted, {
 				i(264433),	-- Voidformed Impaler
 			}),
 			filter(BATTLE_PETS, {
-				i(239101),	-- Voidcrawler
-				i(240840),	-- Niblet
-				i(242251),	-- [NYI] Magical Broom Pet
-				i(250135),	-- Akil Fledgling
-				i(250141),	-- Purple Swamp Leech
-				i(251002),	-- Nether Familiar
-				i(251003),	-- Wrathful Wyrm
-				i(251004),	-- Striped Snakebiter
-				i(258122),	-- Emerald Hatchling \\ [DNT] [PH] 12.0 Green Baby Hawkstrider
-				i(258739),	-- Chillcrawler
-				i(259337),	-- Munchy \\ Vermillion Grovecrawler
-				i(260306),	-- Distorted Memory
-				i(260585),	-- Linda the Lucky
-				i(260922),	-- Immature Behemoth \\ Preyseeker's Immature Behemoth
-				i(262342),	-- Spormilian
-				i(262343),	-- Treja'saka \\ Saka'saka
-				i(262391),	-- Ominous Domanus \\ Ominous Dominus
-				i(262392),	-- Nibblesworth
-				i(262394),	-- Ziorg'pharon
-				i(262395),	-- Hexed Bunny
-				i(262396),	-- Lost Star
-				i(260942),	-- Bubbly Snapling
-				i(262762),	-- Grumpy Mandrake
-				i(262763),	-- Plump Mandrake
-				i(262768),	-- Chirpy Mandrake
-				i(262769),	-- Screechy Mandrake
-				i(262774),	-- Gortham
-				i(262999),	-- Luma
-				i(264654),	-- Emberwing Hatchling
-				i(264892),	-- Nova \\ [PH] Black Baby Hawkstrider
-
-
-				i(264366),	-- Razeshi C.
-				i(260341),	-- Star the Lucky Dragon
-				i(260360),	-- Gummi the Glow Wyrm
-				i(262881),	-- Lil' Staropod
+				i(258739),	-- Chillcrawler (PET!)
+				i(262768),	-- Chirpy Mandrake (PET!) [Trading Post]
+				i(260306),	-- Distorted Memory (PET!) [Quest?]
+				i(262762),	-- Grumpy Mandrake (PET!) [Trading Post]
+				i(260360),	-- Gummi the Glow Wyrm (PET!) [Promotion]
+				i(262881),	-- Lil' Staropod (PET!) [Promotion]
+				i(260585),	-- Linda the Lucky (PET!) [Quest?]
+				i(262763),	-- Plump Mandrake (PET!) [Trading Post]
+				i(264366),	-- Razeshi C. (PET!) [Promotion]
+				i(262769),	-- Screechy Mandrake (PET!) [Trading Post]
+				i(260341),	-- Star the Lucky Dragon (PET!) [In-Game Shop]
 			}),
 			n(SPECIAL, {
 				-- Abundance

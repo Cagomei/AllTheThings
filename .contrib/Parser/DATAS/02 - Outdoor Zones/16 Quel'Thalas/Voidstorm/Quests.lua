@@ -1096,6 +1096,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91380 },	-- Belly of the Beast
 						["provider"] = { "n", 246727 },	-- Ravenia
 						["coord"] = { 52.1, 67.4, MAP.MIDNIGHT.VOIDSTORM },
+						["groups"] = {
+							i(260922),	-- Fidoficus (PET!)
+						},
 					}),
 				}),
 			}),

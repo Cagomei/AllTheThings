@@ -20,11 +20,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 26.8, 67.9, MAP.MIDNIGHT.VOIDSTORM },
 					["questID"] = 91719,
 					["isWeekly"] = true,	-- TODO: Blizzard bug, it unflagged in next event but it's not spawn chest).
-					["groups"] = {
-						i(256761),	-- Formula: Enchant Shoulders - Voidtouched (RECIPE!)
-						i(258134),	-- Pattern: Voidstrider Saddlebag (RECIPE!)
-						i(267396),	-- Technique: Restful Bronze Bench (RECIPE!)
-					},
 				}),
 			}),
 			n(QUESTS, {
@@ -75,7 +70,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(260940, {	-- Victorious Stormarion Pinnacle Cache
 					i(265030),	-- Kai (PET!)
 					i(262608),	-- Void Elf Stool (DECOR!)
-					i(258499),	-- Technique: Restful Bronze Bench (RECIPE!)
+					i(256761),	-- Formula: Enchant Shoulders - Voidtouched (RECIPE!)
+					i(258134),	-- Pattern: Voidstrider Saddlebag (RECIPE!)
+					i(267396),	-- Technique: Restful Bronze Bench (RECIPE!)
 				}),
 			}),
 		}),

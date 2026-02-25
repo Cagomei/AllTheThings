@@ -171,6 +171,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #endif
 		-- i(229368),	-- Gill'el (PET!)	-- Under TWW Promos
+		cnONLY(i(252650, {	-- Heartglow Listener (PET!)
+			["timeline"] = { ADDED_11_2_7 },
+		})),
 		-- #if ANYCLASSIC
 		i(200060, {	-- Hoplet
 			["timeline"] = { ADDED_5_5_0 },

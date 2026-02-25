@@ -713,6 +713,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 88979 },	-- Caught Red Handed
 						["provider"] = { "n", 242688 },	-- Luma
 						["coord"] = { 39.9, 39.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(262999),	-- Luma (PET!)
+						},
 					}),
 					---
 					q(87392, {	-- Cargo Conspiracy
@@ -1078,7 +1081,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 56.8, 35.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
 							i(262510, {	-- Hawkstrider Egg
-								i(244339),	-- Hawkstrider Egg (PET!)
+								i(244339),	-- Hawkstrider Hatchling (PET!)
 							}),
 						},
 					}),

@@ -625,6 +625,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							89559,	-- Reasonless Worship
 						},
 						["provider"] = { "n", 247425 },	-- Chana (mobileNPC)
+						["groups"] = {
+							i(264654),	-- Emberwing Hatchling (PET!)
+						},
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61452.05, {	-- [TODO: missing name, some quest in criteria wrapper could be not from it]

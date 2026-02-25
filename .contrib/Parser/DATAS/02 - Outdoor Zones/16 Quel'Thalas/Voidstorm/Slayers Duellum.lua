@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = {
 							i(267299, {	-- Slayer's Duellum Trove
 								i(257176),	-- Duskbrute Harrower (MOUNT!)
+								i(264892),	-- Nova (PET!)
 							}),
 						},
 					}),

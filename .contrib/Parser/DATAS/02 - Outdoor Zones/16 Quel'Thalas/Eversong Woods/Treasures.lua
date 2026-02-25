@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 48.7, 75.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 91358,
 				["groups"] = {
-					i(246314),	-- Burbling Blob of Paint (PET!)
+					i(246314),	-- Dali (PET!)
 				},
 			}),
 			o(613267, {	-- Farstrider's Lost Quiver

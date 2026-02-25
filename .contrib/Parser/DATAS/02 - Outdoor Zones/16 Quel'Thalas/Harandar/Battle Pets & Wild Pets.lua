@@ -1,32 +1,34 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.HARANDAR, {
 		filter(BATTLE_PETS, {
-			["groups"] = {
-				pet(4882, {	-- Azure Sporebat
-					["coords"] = {
-					},
-				}),
-				pet(4876, {	-- Mud Potadpole
-					["coords"] = {
-					},
-				}),
-				pet(4875, {	-- Rootling Nester
-					["coords"] = {
-					},
-				}),
-				pet(4886, {	-- Silkcrawler
-					["coords"] = {
-					},
-				}),
-				pet(4497, {	-- Waddles
-					["coords"] = {
-					},
-				}),
-			},
+			i(250142, {	-- Azure Sporebat (PET!)
+				["crs"] = { 249822 },	-- Azure Sporebat
+				["coords"] = {
+				},
+			}),
+			i(250137, {	-- Mud Potadpole (PET!)
+				["crs"] = { 249816 },	-- Mud Potadpole
+				["coords"] = {
+				},
+			}),
+			i(250136, {	-- Rootling Nester (PET!)
+				["crs"] = { 249815 },	-- Rootling Nester
+				["coords"] = {
+				},
+			}),
+			i(250147, {	-- Silkcrawler (PET!)
+				["crs"] = { 249827 },	-- Silkcrawler
+				["coords"] = {
+				},
+			}),
+			i(221495, {	-- Waddles (PET!)
+				["crs"] = { 222077 },	-- Waddles
+				["coords"] = {
+				},
+			}),
 		}),
 	}),
 }));

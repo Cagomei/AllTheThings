@@ -4510,6 +4510,7 @@ i(252193, 4896);	-- Slippery Saul
 ------------------
 -- PATCH 11.2.7 --
 ------------------
+i(252650, 4894);	-- Heartglow Listener
 i(254876, 4911);	-- P.O.S.T. Assistant
 i(248073, 4862);	-- Smoldering Valor
 i(245544, 4851);	-- Tiny Snow Buddy
@@ -4517,92 +4518,94 @@ i(245544, 4851);	-- Tiny Snow Buddy
 ------------------
 -- PATCH 12.0.0 --
 ------------------
-i(250135, 4874);	-- Akil Fledgling
-i(193068, 3277);	-- Amber Treeflitter
-i(250142, 4882);	-- Azure Sporebat
-i(250148, 4879);	-- Blistercreepling
-i(260942, 4951);	-- Bubbly Snapling
+i(253404, 4902);	-- Auspicious Pixiu
 i(205017, 3519);	-- Byrn
-i(246314, 4974);	-- Dali
-i(238793, 4790);	-- Devouring Runt
-i(250143, 4883);	-- Dragonhawk Mosswing
-i(259224, 4928);	-- Dragonhawk Munchkin
-i(250139, 4878);	-- Ebon Snapling
 i(246628, 4508);	-- Emerald Sporbit
-i(264909, 4982);	-- Flicker
-i(250146, 4885);	-- Gloom Toad
-i(265030, 4983);	-- Kai
-i(262393, 4955);	-- Kreepah'zoyd
-i(259991, 4930);	-- Lil' Preyseeker
 i(258737, 4913);	-- Moon Darter
 i(221492, 4459);	-- Moss Skipper
-i(250137, 4876);	-- Mud Potadpole
-i(250863, 4888);	-- Naloki
-i(266076, 4881);	-- Nether Siphoner
-i(250145, 4884);	-- Pangolil
 i(244911, 4830);	-- Rhay'Dahr
-i(251005, 4892);	-- Riftblade Familiar
-i(250136, 4875);	-- Rootling Nester
 i(232856, 4633);	-- Scruff
-i(250147, 4886);	-- Silkcrawler
-i(258660, 4912);	-- Silvermoon Broom
-i(269028, 5012);	-- Sootpaw
-i(262390, 4953);	-- Sporbie
-i(267838, 5003);	-- Sunwing Hatchling
-i(250140, 4880);	-- Swamp Biter
-i(251001, 4890);	-- Vibrant Manaling
-i(250138, 4877);	-- Violet Chick
-i(239101, 4795);	-- Voidcrawler
 i(222967, 4475);	-- Webbers
-i(264303, 4972);	-- Willie
-i(255151, 4906);	-- Scruffbeak
-i(265609, 4985);	-- Princess Bloodshed
-i(265035, 4984);	-- Medusa
 --- UNSORTED ---
-i(0, 4905);			-- [DNT] Baby Amazard (Red)
-i(264892, 4981);	-- [PH] Black Baby Hawkstrider
-i(260705, 4947);	-- Assistant Botanist Leafy
-i(0, 4945);			-- Aud'rei III
-i(253404, 4902);	-- Auspicious Pixiu
-i(263492, 4952);	-- Blitzcreek
 i(258739, 4914);	-- Chillcrawler
 i(262768, 4965);	-- Chirpy Mandrake
 i(260306, 4942);	-- Distorted Memory
-i(258189, 4910);	-- Do, child of Fi'lo
-i(0, 4887);			-- Dundun
-i(264654, 4977);	-- Emberwing Hatchling
-i(262774, 4967);	-- Gortham
 i(262762, 4963);	-- Grumpy Mandrake
 i(260360, 4944);	-- Gummi the Glow Wyrm
-i(244339, 4816);	-- Hawkstrider Hatchling
-i(252650, 4894);	-- Heartglow Listener
-i(262395, 4959);	-- Hexed Bunny
 i(262881, 4968);	-- Lil' Staropod
 i(260585, 4946);	-- Linda the Lucky
-i(262396, 4957);	-- Lost Star
-i(262999, 4971);	-- Luma
-i(251002, 4889);	-- Nether Familia
-i(262392, 4961);	-- Nibblesworth
-i(240840, 4803);	-- Niblet
-i(262391, 4958);	-- Ominous Dominus
-i(258903, 4927);	-- Percival
-i(260730, 4948);	-- Perturbed Sporebat
 i(262763, 4964);	-- Plump Mandrake
-i(260922, 4950);	-- Preyseeker's Immature Behemoth
 i(264366, 4975);	-- Razeshi C.
-i(262343, 4960);	-- Saka'saka
 i(262769, 4966);	-- Screechy Mandrake
-i(262342, 4956);	-- Spormilian
-i(0, 4943);			-- Star the Lucky Dragon
-i(251004, 3364);	-- Striped Snakebiter
-i(259337, 4929);	-- Vermillion Grovecrawler
-i(264434, 4976);	-- Voldy
-i(221495, 4497);	-- Waddles
-i(251003, 4891);	-- Wrathful Wyrm
-i(262394, 4954);	-- Ziorg'pharon
+i(260341, 4943);	-- Star the Lucky Dragon
+--- NYI ---
+i(0, 4905);			-- [DNT] Baby Amazard (Red)
+i(0, 4945);			-- Aud'rei III
+i(0, 4887);			-- Dundun
+i(242251, 0);		-- [NYI] Magical Broom Pet
+i(258122, 0);		-- Emerald Hatchling
+i(250141, 0);		-- Purple Swamp Leech
 
 ------------------
 -- PATCH 12.0.1 --
 ------------------
+i(250135, 4874);	-- Akil Fledgling
+i(193068, 3277);	-- Amber Treeflitter
+i(260705, 4947);	-- Assistant Botanist Leafy
+i(250142, 4882);	-- Azure Sporebat
+i(250148, 4879);	-- Blistercreepling
+i(263492, 4952);	-- Blitzcreek
+i(260942, 4951);	-- Bubbly Snapling
+i(246314, 4974);	-- Dali
+i(238793, 4790);	-- Devouring Runt
+i(258189, 4910);	-- Do, child of Filo
+i(250143, 4883);	-- Dragonhawk Mosswing
+i(259224, 4928);	-- Dragonhawk Munchkin
+i(250139, 4878);	-- Ebon Snapling
+i(264654, 4977);	-- Emberwing Hatchling
+i(260922, 4950);	-- Fidoficus
 i(252194, 4897);	-- Fishmonger May
---- UNSORTED ---
+i(264909, 4982);	-- Flicker
+i(250146, 4885);	-- Gloom Toad
+i(262774, 4967);	-- Gortham
+i(244339, 4816);	-- Hawkstrider Hatchling
+i(262395, 4959);	-- Hexed Bunny
+i(265030, 4983);	-- Kai
+i(262393, 4955);	-- Kreepah'zoyd
+i(259991, 4930);	-- Lil' Preyseeker
+i(262396, 4957);	-- Lost Star
+i(262999, 4971);	-- Luma
+i(265035, 4984);	-- Medusa
+i(250137, 4876);	-- Mud Potadpole
+i(259337, 4929);	-- Munchy
+i(250863, 4888);	-- Naloki
+i(251002, 4889);	-- Nether Familia
+i(266076, 4881);	-- Nether Siphoner
+i(262392, 4961);	-- Nibblesworth
+i(240840, 4803);	-- Niblet
+i(264892, 4981);	-- Nova
+i(262391, 4958);	-- Ominous Domanus
+i(250145, 4884);	-- Pangolil
+i(258903, 4927);	-- Percival
+i(260730, 4948);	-- Perturbed Sporebat
+i(265609, 4985);	-- Princess Bloodshed
+i(251005, 4892);	-- Riftblade Familiar
+i(250136, 4875);	-- Rootling Nester
+i(255151, 4906);	-- Scruffbeak
+i(250147, 4886);	-- Silkcrawler
+i(258660, 4912);	-- Silvermoon Broom
+i(269028, 5012);	-- Sootpaw
+i(262390, 4953);	-- Sporbie
+i(262342, 4956);	-- Spormilian
+i(251004, 3364);	-- Striped Snakebiter
+i(267838, 5003);	-- Sunwing Hatchling
+i(250140, 4880);	-- Swamp Biter
+i(262343, 4960);	-- Treja'saka
+i(251001, 4890);	-- Vibrant Manaling
+i(250138, 4877);	-- Violet Chick
+i(239101, 4795);	-- Voidcrawler
+i(264434, 4976);	-- Voldy
+i(221495, 4497);	-- Waddles
+i(264303, 4972);	-- Willie
+i(251003, 4891);	-- Wrathful Wyrm
+i(262394, 4954);	-- Ziorg'pharon

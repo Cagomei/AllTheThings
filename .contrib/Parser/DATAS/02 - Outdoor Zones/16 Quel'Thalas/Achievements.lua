@@ -28,13 +28,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					61581,	-- Zul'Aman Glyph Hunter
 				}},
 				["groups"] = {
-					i(257145),	-- Crimson Dragonhawk (MOUNT)
+					i(257145),	-- Crimson Dragonhawk (MOUNT!)
 				}
 			})),
 			ach(62104),	-- Midnight Lore Hunter
 			ach(61839),	-- Midnight Pathfinder
 			ach(61091, {	-- Midnight Safari
-				i(258189),	-- Do, child of Filo
+				i(258189),	-- Do, child of Filo (PET!)
 			}),
 			ach(62057),	-- Midnight: The Highest Peaks
 			ach(61910),	-- Mrglgrgl of Grglmrgl

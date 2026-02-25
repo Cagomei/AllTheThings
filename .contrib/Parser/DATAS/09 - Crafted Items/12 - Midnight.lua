@@ -646,7 +646,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(FISHING, {
-		i(267395),	-- Technique: Homely Wall Shelves (RECIPE!)
 		n(DISCOVERY, {
 			r(1225274),	-- Blood Hunter
 			r(1225266),	-- Bloomtail Minnow
@@ -666,6 +665,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r(1225280),	-- Twisted Tetra
 			r(1225279),	-- Warping Wise
 			r(1225282),	-- Wyrmfish
+		}),
+		filter(BATTLE_PETS, {
+			i(260942),	-- Bubbly Snapling (PET!)
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = FISHING,
@@ -689,6 +691,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(88616, 1225279),	-- Warping Wise
 			FirstCraft(88608, 1225282),	-- Wyrmfish
 		})),
+		filter(RECIPES, {
+			i(267395),	-- Technique: Homely Wall Shelves (RECIPE!)
+		}),
 		i(243343),	-- Angler's Anomaly
 		i(238494),	-- Another's Treasure
 		i(238371),	-- Arcane Wyrmfish

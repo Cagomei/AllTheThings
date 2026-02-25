@@ -99,6 +99,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		}),
 	}),
 	mapped(n(DELVE_COMPLETION, {
+		filter(BATTLE_PETS, {
+			i(262395),	-- Hexed Bunny (PET!)
+			i(262396),	-- Lost Star (PET!)
+			i(262392),	-- Nibblesworth (PET!)
+			i(262343),	-- Treja'saka (PET!)
+			i(262342),	-- Spormilian (PET!)
+			i(262394),	-- Ziorg'pharon (PET!)
+		}),
 		filter(CONSUMABLES, {
 		}),
 		filter(MISC, {
@@ -759,6 +767,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			n(TREASURES, {
 			}),
 			n(REWARDS, {
+				filter(BATTLE_PETS, {
+					i(262391),	-- Ominous Domanus (PET!)
+				}),
 				n(DECOR, {
 				}),
 				filter(MISC, {

@@ -1241,9 +1241,11 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(193620, {	-- Time-Lost Slyvern (PET!)
 				["displayID"] = 106661,
 			}),
+			-- #if BEFORE 12.0.1
 			i(193068, {	-- Time-Lost Treeflitter (PET!)
 				["displayID"] = 106606,
 			}),
+			-- #endif
 			-- Without SpeciesID Attached
 			i(191126, {	-- Obsidian Whelpling (PET!)
 				["displayID"] = 107454,
@@ -1478,9 +1480,11 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(221759, {	-- Sceaduthax (PET!)
 				["displayID"] = 114510,
 			}),
+			-- #if BEFORE 12.0.1
 			i(221495, {	-- Waddles (PET!)
 				["displayID"] = 114829,
 			}),
+			-- #endif
 			-- Without SpeciesID Attached
 			i(221493, {	-- Admiral (PET!)
 				["displayID"] = 114830,
@@ -1638,6 +1642,32 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			}),
 			i(252193, {	-- Slippery Saul
 				["displayID"] = 137201,
+			}),
+		})),
+	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			-- Only SpeciesID
+			pet(4945, {	-- Aud'rei III (PET!)
+				["displayID"] = 138311,
+			}),
+			pet(4905, {	-- [DNT] Baby Amazard (Red) (PET!)
+				["displayID"] = 136724,
+			}),
+			pet(4887, {	-- Dundun (PET!)
+				["displayID"] = 128490,
+			}),
+
+			-- Without SpeciesID Attached
+			i(242251, {	-- [NYI] Magical Broom Pet (PET!)
+				--["displayID"] = ,
+			}),
+			i(258122, {	-- Emerald Hatchling (PET!)
+				["displayID"] = 128293,
+			}),
+			i(250141, {	-- Purple Swamp Leech (PET!)
+				["displayID"] = 128277,
 			}),
 		})),
 	}),

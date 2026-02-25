@@ -178,6 +178,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									["cost"] = { { "c", VOIDLIGHT_MARL, 4000 } },
 								}),
 							}, {	-- RENOWN 14 --
+								i(259337, {	-- Munchy (PET!)
+									["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
+								}),
 							}, {	-- RENOWN 15 --
 							}, {	-- RENOWN 16 --
 								i(246734, {	-- Fierce Grimlynx (MOUNT!)
