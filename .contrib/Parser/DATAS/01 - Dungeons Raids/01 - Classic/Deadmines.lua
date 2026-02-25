@@ -126,7 +126,10 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(214, {	-- Red Silk Bandanas
-				["sourceQuest"] = 153,	-- Red Leather Bandanas
+				["sourceQuests"] = {
+					153,	-- Red Leather Bandanas
+					155,	-- The Defias Brotherhood
+				},
 				["qg"] = 820,	-- Scout Riell <The People's Militia>
 				["coord"] = { 56.7, 47.4, WESTFALL },
 				["timeline"] = { REMOVED_4_0_3 },
