@@ -427,9 +427,6 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						{ 27.1, 47.1, VALDRAKKEN },
 					},
 					["repeatable"] = true,
-					["groups"] = {
-						currency(RIDERS_OF_AZEROTH_BADGE),
-					},
 				}),
 				dragonridingrace(76469, {	-- Blasted Lands Bolt
 					["provider"] = { "n", 207357 },	-- Bronze Timekeeper
@@ -1174,9 +1171,6 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						-- #endif
 					},
 					["repeatable"] = true,
-					["groups"] = {
-						currency(RIDERS_OF_AZEROTH_BADGE),
-					},
 				}),
 				dragonridingrace(75472, {	-- Ahn'Qiraj Circuit
 					["provider"] = { "n", 204092 },	-- Bronze Timekeeper
@@ -2188,7 +2182,6 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						{ 60.0, 66.6, STORMWIND_CITY },
 					},
 					["repeatable"] = true,
-					["groups"] = { currency(RIDERS_OF_AZEROTH_BADGE) },
 				}),
 				dragonridingrace(77264, {	-- Auchindoun Coaster
 					["provider"] = { "n", 208596 },	-- Bronze Timekeeper
@@ -2825,9 +2818,6 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					["provider"] = { "n", 206737 },	-- Lord Andestrasz
 					["coord"] = { 26.9, 47.4, VALDRAKKEN },
 					["repeatable"] = true,
-					["groups"] = {
-						currency(RIDERS_OF_AZEROTH_BADGE),
-					},
 				}),
 				dragonridingrace(78334, {	-- Blackriver Burble
 					["provider"] = { "n", 211940 },	-- Bronze Timekeeper
