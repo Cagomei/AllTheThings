@@ -7,7 +7,7 @@ local CatalystableItem = setmetatable({}, { __index = function(t,key)
 end})
 local function i_PrimalistToken1007(itemID, t)
 	local token = i(itemID, t)
-	token.timeline = { ADDED_10_0_7, REMOVED_12_0_0 }
+	token.timeline = { ADDED_10_0_7 }
 	return token
 end
 local function i_PrimalistToken1200(itemID, t)
