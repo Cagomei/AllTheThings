@@ -351,6 +351,7 @@ local TooltipSettingsBase = {
 		["Channel"] = "Master",
 		["Cost"] = true,
 		["Screenshot"] = false,
+		["DateFormat"] = "%Y-%m-%d %H:%M:%S",
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
 		["Enabled:Mod"] = "None",

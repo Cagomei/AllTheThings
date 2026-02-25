@@ -834,7 +834,7 @@ local function TryShowUnitTooltipInfo(self, guid)
 				local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
 				if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
 				if showAliveTime then self:AddDoubleLine(L.ALIVE, app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
-				if showSpawnTime then self:AddDoubleLine(L.SPAWNED, app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
+				if showSpawnTime then self:AddDoubleLine(L.SPAWNED, app.Modules.Color.Colorize(date(app.Settings:GetTooltipSetting("DateFormat"), spawnTime), app.Colors.White)); end
 			end
 		end
 		if server_id and zone_uid and app.Settings:GetTooltipSetting("Layer") then
