@@ -255,18 +255,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(136, {	-- Captain Sander's Hidden Treasure (1/4)
 					["provider"] = { "i", 1357 },	-- Captain Sander's Treasure Map (QS!)
 					["timeline"] = { REMOVED_4_0_3 },
-					["crs"] = {
-						126,	-- Murloc Coastrunner
-						458,	-- Murloc Hunter
-						456,	-- Murloc Minor Oracle
-						513,	-- Murloc Netter
-						517,	-- Murloc Oracle
-						515,	-- Murloc Raider
-						127,	-- Murloc Tidehunter
-						171,	-- Murloc Warrior
-						391,	-- Old Murk-Eye
-						519,	-- Slark
-					},
 					["lvl"] = 10,
 				}),
 				q(138, {	-- Captain Sander's Hidden Treasure (2/4)
@@ -2118,6 +2106,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(68724, {	-- Broken Barn Door
 					["timeline"] = { ADDED_4_0_3 },
+				}),
+				i(1357, {	-- Captain Sander's Treasure Map (QS!)
+					["timeline"] = { REMOVED_4_0_3 },
+					["crs"] = {
+						126,	-- Murloc Coastrunner
+						458,	-- Murloc Hunter
+						456,	-- Murloc Minor Oracle
+						513,	-- Murloc Netter
+						517,	-- Murloc Oracle
+						515,	-- Murloc Raider
+						127,	-- Murloc Tidehunter
+						171,	-- Murloc Warrior
+						391,	-- Old Murk-Eye
+						519,	-- Slark
+					},
+					["lvl"] = 10,
 				}),
 				-- #if BEFORE 4.0.3
 				i(769),	-- Chunk of Boar Meat
