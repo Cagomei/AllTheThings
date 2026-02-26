@@ -1811,7 +1811,6 @@ root(ROOTS.Unsorted, {
 				i(260379),	-- Black Wooden Shortbow
 				i(260380),	-- Blue Wooden Shortbow
 				i(260381),	-- Bronze Wooden Shortbow
-				i(260382),	-- Dark Wooden Shortbow
 				i(260383),	-- Dark Blue Wooden Shortbow
 				i(260384),	-- Dark Red Wooden Shortbow
 				i(260385),	-- Frost Wooden Shortbow

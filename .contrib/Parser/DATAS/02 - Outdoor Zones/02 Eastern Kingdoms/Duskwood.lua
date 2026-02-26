@@ -2823,7 +2823,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						-- #if AFTER 10.1.7
-						 48,	-- Skeletal Warrior
+						48,	-- Skeletal Warrior
 						-- #else
 						1110,	-- Skeletal Raider
 						-- #endif

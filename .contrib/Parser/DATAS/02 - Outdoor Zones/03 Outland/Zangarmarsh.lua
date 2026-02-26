@@ -196,7 +196,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				header(HEADERS.Spell, 1810,	 {	-- Lockpicking
+				header(HEADERS.Spell, 1810,	{	-- Lockpicking
 					o(184740),	-- Wicker Chest
 				}),
 				petbattles({
