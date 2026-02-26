@@ -179,7 +179,6 @@ local function AddContainsData(group, tooltipInfo)
 		local left, right;
 		tinsert(tooltipInfo, { left = L.CONTAINS });
 		local item, entry;
-		local RecursiveParentField = app.GetRelativeValue
 		for i=1,#entries do
 			item = entries[i];
 			entry = item.group;
@@ -237,8 +236,8 @@ local function AddContainsData(group, tooltipInfo)
 				-- Add the Zone name
 				local field, id;
 				for _,v in ipairs(TooltipSourceFields) do
-					id = RecursiveParentField(entry, v, true);
-					-- print("check",v,id)
+					id = GetRelativeValue(entry, v, true);
+					-- app.PrintDebug("check",v,id)
 					if id then
 						field = v;
 						break;
