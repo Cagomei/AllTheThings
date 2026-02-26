@@ -919,6 +919,9 @@ do	-- Simple Key Cache
 fieldConverters.catalystID = function(group, value)	-- Referenced in Modules/Catalyst
 	CacheField(group, "catalystID", value);
 end
+fieldConverters.professionID = function(group, value)	-- Used in Tooltips > Summarize Things (AddContainsData)
+	CacheField(group, "professionID", value);
+end
 fieldConverters.up = function(group, up)			-- Referenced in Modules/Upgrade
 	CacheField(group, "up", up);
 end
