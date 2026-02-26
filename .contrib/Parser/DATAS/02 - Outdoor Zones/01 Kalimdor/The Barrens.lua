@@ -91,20 +91,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					applyclassicphase(SOD_PHASE_ONE, i(208768, {	-- Buccaneer's Matchbox
-						["coord"] = { 63.6, 49.2, THE_BARRENS },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							3384,	-- Southsea Privateer
-							3383,	-- Southsea Cutthroat
-							3381,	-- Southsea Brigand
-							3382,	-- Southsea Cannoneer
-						},
-					})),
-				},
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(208768, {	-- Buccaneer's Matchbox
+					["coord"] = { 63.6, 49.2, THE_BARRENS },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						3384,	-- Southsea Privateer
+						3383,	-- Southsea Cutthroat
+						3381,	-- Southsea Brigand
+						3382,	-- Southsea Cannoneer
+					},
+				})),
 			}),
 			-- #endif
 			n(QUESTS, {

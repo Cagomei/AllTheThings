@@ -121,19 +121,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					applyclassicphase(SOD_PHASE_ONE, i(210250, {	-- Engraved Gold Ring
-						["coord"] = { 23.3, 72.8, DUSKWOOD },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							215,	-- Defias Night Runner
-							909,	-- Defias Night Blade
-						},
-					})),
-				},
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(210250, {	-- Engraved Gold Ring
+					["coord"] = { 23.3, 72.8, DUSKWOOD },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						215,	-- Defias Night Runner
+						909,	-- Defias Night Blade
+					},
+				})),
 			}),
 			-- #endif
 			n(QUESTS, {

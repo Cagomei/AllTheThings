@@ -2227,73 +2227,70 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			header(HEADERS.Spell, 921, {	-- Pickpocketing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					applyclassicphase(SOD_PHASE_ONE, i(207110, {	-- Durotar Treasure Map
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["cost"] = {
-							{ "i", 207106, 1 },	-- Bottom-Left Map Piece
-							{ "i", 207107, 1 },	-- Bottom-Right Map Piece
-							{ "i", 207108, 1 },	-- Top-Left Map Piece
-							{ "i", 207109, 1 },	-- Top-Right Map Piece
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(207106, {	-- Bottom-Left Map Piece
-						["coord"] = { 67.2, 85.6, DUROTAR },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							3206,	-- Voodoo Troll
-							3207,	-- Hexed Troll
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(207107, {	-- Bottom-Right Map Piece
-						["coord"] = { 43.0, 39.8, DUROTAR },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							3111,	-- Razormane Quilboar
-							3114,	-- Razormane Battleguard
-							3113,	-- Razormane Dustrunner
-							3112,	-- Razormane Scout
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(207098, {	-- Note from Ba'so
-						["coord"] = { 53.0, 27.6, DUROTAR },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							3196,	-- Burning Blade Neophyte
-							3195,	-- Burning Blade Thug
-							3199,	-- Burning Blade Cultist
-							3197,	-- Burning Blade Fanatic
-							3198,	-- Burning Blade Apprentice
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(207108, {	-- Top-Left Map Piece
-						["coord"] = { 53.0, 27.6, DUROTAR },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							3196,	-- Burning Blade Neophyte
-							3195,	-- Burning Blade Thug
-							3199,	-- Burning Blade Cultist
-							3197,	-- Burning Blade Fanatic
-							3198,	-- Burning Blade Apprentice
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(207109, {	-- Top-Right Map Piece
-						["coord"] = { 58.8, 55.4, DUROTAR },
-						["timeline"] = { REMOVED_2_0_1 },
-						["classes"] = { ROGUE },
-						["crs"] = {
-							3129,	-- Kul Tiras Marine
-							3128,	-- Kul Tiras Sailor
-						},
-					})),
-				},
+			pickpocketing({
+				applyclassicphase(SOD_PHASE_ONE, i(207110, {	-- Durotar Treasure Map
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["cost"] = {
+						{ "i", 207106, 1 },	-- Bottom-Left Map Piece
+						{ "i", 207107, 1 },	-- Bottom-Right Map Piece
+						{ "i", 207108, 1 },	-- Top-Left Map Piece
+						{ "i", 207109, 1 },	-- Top-Right Map Piece
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(207106, {	-- Bottom-Left Map Piece
+					["coord"] = { 67.2, 85.6, DUROTAR },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						3206,	-- Voodoo Troll
+						3207,	-- Hexed Troll
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(207107, {	-- Bottom-Right Map Piece
+					["coord"] = { 43.0, 39.8, DUROTAR },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						3111,	-- Razormane Quilboar
+						3114,	-- Razormane Battleguard
+						3113,	-- Razormane Dustrunner
+						3112,	-- Razormane Scout
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(207098, {	-- Note from Ba'so
+					["coord"] = { 53.0, 27.6, DUROTAR },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						3196,	-- Burning Blade Neophyte
+						3195,	-- Burning Blade Thug
+						3199,	-- Burning Blade Cultist
+						3197,	-- Burning Blade Fanatic
+						3198,	-- Burning Blade Apprentice
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(207108, {	-- Top-Left Map Piece
+					["coord"] = { 53.0, 27.6, DUROTAR },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						3196,	-- Burning Blade Neophyte
+						3195,	-- Burning Blade Thug
+						3199,	-- Burning Blade Cultist
+						3197,	-- Burning Blade Fanatic
+						3198,	-- Burning Blade Apprentice
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(207109, {	-- Top-Right Map Piece
+					["coord"] = { 58.8, 55.4, DUROTAR },
+					["timeline"] = { REMOVED_2_0_1 },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						3129,	-- Kul Tiras Marine
+						3128,	-- Kul Tiras Sailor
+					},
+				})),
 			}),
 			-- #endif
 			n(QUESTS, {
