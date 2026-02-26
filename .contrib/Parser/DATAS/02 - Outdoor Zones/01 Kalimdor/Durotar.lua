@@ -3555,13 +3555,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(830, {	-- The Admiral's Orders (1/2)
-					["providers"] = {
-						{ "i", 4881 },	-- Aged Envelope
-						{ "o", 3239 },	-- Benedict's Chest
-					},
-					["coord"] = { 59.3, 57.7, DUROTAR },
+					["provider"] = { "i", 4881 },	-- Aged Envelope
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 4882, 1 } },	-- Benedict's Key
 					["races"] = HORDE_ONLY,
 				}),
 				q(831, {	-- The Admiral's Orders (2/2)
@@ -4109,8 +4104,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
-			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
 					["coord"] = { 48.0, 79.6, DUROTAR },
@@ -4142,6 +4137,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				-- #endif
+				o(3239, {	-- Benedict's Chest
+					["coord"] = { 59.3, 57.7, DUROTAR },
+					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 4882, 1 } },	-- Benedict's Key
+					["groups"] = {
+						i(4881),	-- Aged Envelope
+					},
+				}),
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(206386, {	-- Galvanic Icon
 					-- ["provider"] = { "o",  },	-- TODO: I don't have the objectID for this. It's called "Galvanic Icon" just like the item.
 					["description"] = "These are random spawn totems on the ground; listen for the lightning cast sound to help you pinpoint the location.",
@@ -4182,8 +4187,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(400095),	-- Engrave Chest - Quick Draw
 					},
 				})),
+				-- #endif
 			}),
-			-- #endif
 			n(VENDORS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208036, {	-- Ba'so

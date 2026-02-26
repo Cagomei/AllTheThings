@@ -97,6 +97,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			lockpicking({
+				o(123214, {	-- Duskwood Chest
+					["coord"] = { 70.5, 74.0, WESTFALL },
+					["timeline"] = { REMOVED_4_0_3 },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 70,
+					["groups"] = {
+						i(7908),	-- Klaven Mortwake's Journal (QI!)
+					},
+				}),
+			}),
 			petbattles({
 				n(65648, {	-- Old MacDonald <Master Pet Tamer>
 					["coord"] = { 60.8, 18.6, WESTFALL },
@@ -793,8 +804,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Klaven Mortwake's Journal
 							["provider"] = { "i", 7908 },	-- Klaven Mortwake's Journal (QI!)
-							["coord"] = { 71.0, 74.6, WESTFALL },
-							["cr"] = 7053,	-- Klaven Mortwake
 						}),
 						objective(2, {	-- 0/1 Defias Tower Key
 							["provider"] = { "i", 7923 },	-- Defias Tower Key (QI!)

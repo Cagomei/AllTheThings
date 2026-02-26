@@ -90,6 +90,49 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Drops from fishing in the Sludge Fen.",
 				}),
 			}),
+			-- #if BEFORE CATA
+			lockpicking({
+				o(3714, {	-- Alliance Strongbox
+					["coord"] = { 49.6, 83.6, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 1,
+				}),
+				o(123330, {	-- Buccaneer's Strongbox
+					["coord"] = { 65, 45.4, THE_BARRENS },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 1,
+				}),
+				o(129127, {	-- Gallywix's Lockbox
+					["coord"] = { 54.7, 5.6, THE_BARRENS },
+					["cost"] = { { "i", 8072, 1 } },	-- Silixiz's Tower Key
+					["timeline"] = { REMOVED_4_0_3 },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 70,
+					["groups"] = {
+						i(8073),	-- Cache of Zanzil's Altered Mixture (QI!)
+					},
+				}),
+				o(123462, {	-- The Jewel of the Southsea
+					["coord"] = { 65.0, 45.4, THE_BARRENS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 25,
+					["groups"] = {
+						i(7968, {	-- Southsea Treasure
+							["description"] = "When you open the chest, Polly will spawn and attack you. Use the E.C.A.C. to kill him and loot the treasure.",
+							["cost"] = {{ "i", 7970, 1 }},	-- E.C.A.C.
+							["cr"] = 7168,	-- Polly
+						}),
+					},
+				}),
+				o(105176, {	-- Venture Co. Strongbox
+					["coord"] = { 61.8, 3.9, THE_BARRENS },
+					["requireSkill"] = LOCKPICKING,
+					["learnedAt"] = 1,
+				}),
+			}),
+			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			pickpocketing({
 				applyclassicphase(SOD_PHASE_ONE, i(208768, {	-- Buccaneer's Matchbox
@@ -1957,11 +2000,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 7287,	-- Foreman Silixiz
 						}),
 						objective(6, {	-- 0/1 Cache of Zanzil's Altered Mixture
-							["providers"] = {
-								{ "i",   8073 },	-- Cache of Zanzil's Altered Mixture
-								{ "o", 129127 },	-- Gallywix's Lockbox
-							},
-							["cost"] = { { "i", 8072, 1 } },	-- Silixiz's Tower Key
+							["provider"] = { "i", 8073 },	-- Cache of Zanzil's Altered Mixture
 						}),
 						i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { REMOVED_1_3_0 },
@@ -2124,13 +2163,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 16,
 					["groups"] = {
 						objective(1, {	-- 0/1 Southsea Treasure
-							["providers"] = {
-								{ "i",   7968 },	-- Southsea Treasure
-								{ "o", 123462 },	-- The Jewel of the Southsea
-							},
-							["coord"] = { 64.8, 45.4, THE_BARRENS },
-							["cr"] = 7168,	-- Polly
+							["provider"] = { "i", 7968 },	-- Southsea Treasure
 						}),
+						i(7970),	-- E.C.A.C.
 						i(7676),	-- Thistle Tea
 					},
 				}),
