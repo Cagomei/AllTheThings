@@ -1892,7 +1892,8 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
 						-- #if BEFORE 11.2.7
 						["groups"] = {
-							-- Wouter NOTE: if you're confused like me, fighting bosses with Bag of Chipped Dice still allowed you to fight Season 2 bosses and earn the achievement + shirt
+							-- Wouter NOTE: during Seasons 3 + 4, you could use Bag of Chipped Dice to activate random brawl mode to fight Season 2 bosses and earn their achievement + shirt
+							--		Source: checked a vast amount of Wowhead comments on these shirts
 							ach(9177, {	-- Deck Your Collection [Season 2]
 								["races"] = HORDE_ONLY,
 								["groups"] = {
@@ -2070,7 +2071,8 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
 						-- #if BEFORE 11.2.7
 						["groups"] = {
-							-- Wouter NOTE: if you're confused like me, fighting bosses with Bag of Chipped Dice still allowed you to fight Season 2 bosses and earn the achievement + shirt
+							-- Wouter NOTE: during Seasons 3 + 4, you could use Bag of Chipped Dice to activate random brawl mode to fight Season 2 bosses and earn their achievement + shirt
+							--		Source: checked a vast amount of Wowhead comments on these shirts
 							ach(9176, {	-- Deck Your Collection [Season 2]
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = {
