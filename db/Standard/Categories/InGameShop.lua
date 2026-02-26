@@ -33,7 +33,8 @@ p(3253,{awp=100105,itemID=190608,npcID=185611,spellID=367778,u=3}),
 p(2780,{awp=90005,npcID=158142,u=3}),
 p(1386,{awp=100100,itemID=109014,npcID=77137,spellID=155748,u=3,g={
 crit(24600,{achID=8917,id=3,u=3})}}),
-p(4264,{awp=110105,b=1,itemID=208446,npcID=209163,spellID=419467,u=3}),
+p(4264,{awp=110105,b=1,itemID=208446,npcID=209163,spellID=419467,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1;end	return t;end)(
+p(4894,{awp=110207,itemID=252650,npcID=251511,spellID=1254822,u=3})),
 p(297,{awp=40003,b=1,itemID=68385,npcID=51600,spellID=95787,u=3}),
 p(3249,{awp=90205,b=1,itemID=190586,npcID=185586,spellID=367702,u=3}),
 p(671,{awp=80300,itemID=85871,npcID=63832,spellID=124660,u=3,g={
