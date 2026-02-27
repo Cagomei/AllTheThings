@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 45.9, 55.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
 							i(248041),	-- Belt of Herbicide
-							i(248041),	-- Girdle of Herbicide
+							i(248038),	-- Girdle of Herbicide
 							i(248039),	-- Sash of Herbicide
 							i(248040),	-- Waistguard of Herbicide
 						},
