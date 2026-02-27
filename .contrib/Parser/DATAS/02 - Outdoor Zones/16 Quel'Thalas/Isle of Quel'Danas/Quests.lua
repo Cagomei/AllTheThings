@@ -92,7 +92,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(91274, {	-- Severing the Void
 					["sourceQuests"] = { 86807 },	-- The Gate
-					["provider"] = { "n", 236964 },	-- Arator
+					["providers"] = {
+						{ "n", 236964 },	-- Arator
+						{ "n", 237222 },	-- Light's Vanguard (Arator)
+					},
 					["coord"] = { 49.7, 21.4, 2565 },	-- Parhelion Plaza, Isle of Quel'Danas (Intro)
 				}),
 				q(86834, {	-- Voidborn Banishing
@@ -197,6 +200,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(248042),	-- Reluctant Diplomat's Cuffs
 					i(248043),	-- Reluctant Diplomat's Vambraces
 					i(248045),	-- Reluctant Diplomat's Wraps
+					i(263231),	-- Silvermoon Curio Shelves (DECOR!)
 					i(250352),	-- Worn Supply Bag
 				},
 			}),
@@ -230,7 +234,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				-- During questing
 				q(92714),	-- Flag Midnight Promotional (spellID 1257590), after turning in 'Paved in Ash' (86735)
 				--q(95535),	-- Triggered after turning in 'Paved in Ash' (86735) / Alex TODO: possible whatever rng was happening on build and not related here, remove this if it is for it. Double up in Prey.lua
-				q(83817),	-- Triggered after turning in 'Silvermoon Negotiations' (86733)
+				q(93817),	-- Triggered after turning in 'Silvermoon Negotiations' (86733)
 			}),
 		}),
 	}),

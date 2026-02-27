@@ -24,6 +24,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 58.8, 35.2, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },
 				["questID"] = 92623,
 			}),
+			o(577799, {	-- Artisan's Cache
+				["description"] = "The only way to loot this treasure is if you jump from the balcony above and loot it before Squallfins kill you.\nYou WILL die in the process.",
+				["coord"] = { 63.8, 34.5, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },
+				["questID"] = 92624,
+			}),
 			o(577800, {	-- Artisan's Cache
 				["coord"] = { 38.5, 22.9, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },
 				["questID"] = 92625,

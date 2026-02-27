@@ -4218,8 +4218,6 @@ q(93924),
 q(93930,{description="Area: |cFFf09f26Silvermoon City|r"}),
 q(93931,{description="Area: |cFFf09f26Zul'Aman|r"}),
 q(93932,{description="Area: |cFFf09f26Harandar|r"}),
-q(93969,{description="Area: |cFFf09f26Silvermoon City|r",g={
-i(263871)}}),
 q(93997,{description="Area: |cFFf09f26Voidstorm|r",r=1}),
 q(93999,{description="Area: |cFFf09f26Voidstorm|r",r=2}),
 q(94010),

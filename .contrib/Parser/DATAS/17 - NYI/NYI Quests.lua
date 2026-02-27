@@ -9981,4 +9981,10 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(95281),	--
 		})),
 	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			q(93969),	-- BETA:Call Shot
+		})),
+	}),
 }));
