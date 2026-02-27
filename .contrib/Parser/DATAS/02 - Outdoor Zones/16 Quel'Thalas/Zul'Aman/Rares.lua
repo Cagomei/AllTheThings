@@ -33,6 +33,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 45.2, 41.7, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 91073,
 				["groups"] = {
+					i(264643),	-- Ash'an's Spare Cleaver
 					i(264593),	-- Warcloak of the Butcher
 				},
 			}),
@@ -49,6 +50,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 89572,
 				["groups"] = {
 					i(264529),	-- Cover of the Furbolg Elder
+					i(251784),	-- Sylvan Wakrapuku
 					i(264547),	-- Worn Furbolg Bindings
 				},
 			}),
@@ -153,6 +155,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264564),	-- Crab Wrangling Harness
 					i(264586),	-- Crustacean Carapace Chestguard
+					i(251784),	-- Sylvan Wakrapuku
 				},
 			}),
 		})),

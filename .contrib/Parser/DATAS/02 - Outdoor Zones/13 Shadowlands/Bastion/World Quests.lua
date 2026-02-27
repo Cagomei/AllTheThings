@@ -228,7 +228,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["groups"] = {
 					i(182457),	-- Mirror Fragment (QI!)
 					i(182458),	-- Mirror of Ancient Teachings (QI!)
-					i(182477),	-- Sacred Text (QI!)
+					o(357469, {	-- Sacred Text
+						["coord"] = { 67.8, 43.3, BASTION },
+						["groups"] = { i(182477) },	-- Sacred Text (QI!)
+					}),
 				},
 			}),
 			q(61468, {	-- Skinning: Plush Copperfur Pelts

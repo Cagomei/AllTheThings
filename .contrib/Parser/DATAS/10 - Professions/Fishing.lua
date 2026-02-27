@@ -887,8 +887,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			ach(42797, {	-- Fishing at Midnight
 				["cost"] = {{ "i", 254875, 2 }},	-- 2xMuck-Covered Writings
 				["timeline"] = { ADDED_12_0_X_LAUNCH },
-				["groups"] = {
-				},
+				["groups"] = { i(264002) },	-- Midnight Fisher's Shop Sign (DECOR!)
 			}),
 		}),
 	})),

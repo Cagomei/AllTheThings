@@ -356,7 +356,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			n(QUESTS, {
 				q(93409, {	-- Delver's Call: Atal'Aman
 					["provider"] = { "n", 254726 },	-- Fallen Amani Scout
-					["coord"] = { 24.9, 43.3, ATAL_AMAN },
+					["coords"] = {
+						{ 24.9, 43.3, ATAL_AMAN },
+						{ 39.8, 38.4, MAP.MIDNIGHT.ZULAMAN },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -799,7 +802,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					["provider"] = { "o", 612242 },	-- Twilight Crypts
 					["coords"] = {
 						{ 47.2, 39.6, TWILIGHT_CRYPTS },
-						{ 43.1, 69.2, MAP.MIDNIGHT.ZULAMAN },
+						{ 43.7, 67.3, MAP.MIDNIGHT.ZULAMAN },
 					},
 				}),
 				q(94909, {	-- Blessings of Pestilence (TODO: unsure if it exist only here)

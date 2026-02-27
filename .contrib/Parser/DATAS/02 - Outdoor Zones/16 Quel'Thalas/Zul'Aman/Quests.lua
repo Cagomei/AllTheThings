@@ -37,6 +37,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 90749 },	-- Our Mutual Enemy
 						["provider"] = { "n", 236468 },	-- Zul'Jarra
 						["coord"] = { 5.7, 47.8, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+						["groups"] = { i(264334) },	-- Amani War Drum (DECOR!)
 					}),
 					q(86717, {	-- Show Us Your Worth
 						["sourceQuests"] = {
@@ -173,6 +174,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86653 },	-- The Path of the Amani
 						["provider"] = { "n", 236143 },	-- Lady Liadrin
 						["coord"] = { 51.6, 70.7, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = { i(264255) },	-- Amani Trophy Frame (DECOR!)
 					}),
 					q(89334, {	-- Ahead of the Issue
 						["sourceQuests"] = { 86653 },	-- The Path of the Amani
@@ -245,6 +247,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86657 },	-- Shadebasin Watch
 						["provider"] = { "n", 244438 },	-- Zul'jarra
 						["coord"] = { 44.1, 34.5, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = { i(253469) },	-- Ritual-Cursed Sarcophagus (DECOR!)
 					}),
 					q(86658, {	-- The Crypt in the Mist
 						["sourceQuests"] = { 86657 },	-- Shadebasin Watch
@@ -294,6 +297,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86808 },	-- The Riddled Speaker
 						["provider"] = { "n", 236162 },	-- Zul'jarra
 						["coord"] = { 55.0, 18.3, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = { i(264715) },	-- Zul'Aman Flame Cradle (DECOR!)
 					}),
 					------ Stay awhile and listen ------
 					--hqt(??, {	-- Stay awhile and listen: Lady Liadrin
@@ -337,6 +341,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86666 },	-- In the Shadow of Rebirth
 						["provider"] = { "n", 240186 },	-- Zul'jarra
 						["coord"] = { 43.8, 68.3, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = {
+							i(264481),	-- Earthhide Amani Tapestry (DECOR!)
+							i(264480),	-- Greenvine Amani Tapestry (DECOR!)
+							i(264479),	-- Skyweave Amani Tapestry (DECOR!)
+						},
 					}),
 					q(86682, {	-- Waking de Bear
 						["sourceQuests"] = { 86681 },	-- A Taste of Vengeance
@@ -597,7 +606,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 					q(89506, {	-- Strong Ties
 						["sourceQuests"] = { 89503 },	-- Somber Siblings
-						["provider"] = { "n", 247425 },	-- Chana (mobileNPC)
+						["qgs"] = {
+							247425,	-- Chana (mobileNPC)
+							256867, -- Grieving Amani
+						},
 						["groups"] = {
 							i(239480),	-- Resilient Sinew (QI!)
 						},
@@ -631,9 +643,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 				}),
-				header(HEADERS.AchCriteria, 61452.05, {	-- [TODO: missing name, some quest in criteria wrapper could be not from it]
+				header(HEADERS.AchCriteria, 61452.05, {	-- Unlikely Friends
+					q(93667, {	-- Camp Stonewash
+						["qg"] = 255852,	-- Scout Zel'kanra
+						["coord"] = { 44.2, 33.6, MAP.MIDNIGHT.ZULAMAN },
+					}),
 					q(90481, {	-- I Have a Permit
-						--["sourceQuests"] = { XXX },	-- ???
+						["sourceQuests"] = { 93667 },	-- Camp Stonewash
 						["provider"] = { "n", 242383 },	-- Seeker Crikkash
 						["coord"] = { 46.3, 26.1, MAP.MIDNIGHT.ZULAMAN },
 					}),
@@ -805,8 +821,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 245669 },	-- Jehnira
 						["coord"] = { 53.1, 62.8, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
-							o(548731, {	--
-								i(245588),	-- Food Provisions (QI!)
+							o(548731, {	-- Stolen Provisions
+								["coord"] = { 50.2, 66.6, MAP.MIDNIGHT.ZULAMAN },
+								["groups"] = { i(245588) },	-- Food Provisions (QI!)
 							}),
 						},
 					}),
@@ -823,6 +840,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 245669 },	-- Jehnira
 						["coord"] = { 53.1, 62.8, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = { i(264470) },	-- Ash-Tied Offering
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61452.09, {	-- Loa of Murlocs

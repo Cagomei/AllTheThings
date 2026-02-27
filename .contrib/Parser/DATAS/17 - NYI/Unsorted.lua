@@ -1197,7 +1197,6 @@ root(ROOTS.Unsorted, {
 				i(264467),	-- Tuskcarver's Shield
 				i(264468),	-- Cloak of the Revantusk Rite
 				i(264469),	-- Ashbound Tribute Cloak
-				i(264470),	-- Ash-Tied Offering
 				-- Quest Rewards?
 				i(264662),	-- Robe of the Knife Priestess
 				i(264663),	-- Spiritdrain Vest of the Witherbark
@@ -1465,7 +1464,6 @@ root(ROOTS.Unsorted, {
 				i(263039),	-- Harandar Flowering Lamp
 				i(263194),	-- Harandar Glowvine Sconce \\ Harandar Glow-vine Sconce
 				i(263195),	-- Harandar Glowvine Lamppost \\ Harandar Glow-vine Lamppost
-				i(264002),	-- Midnight Fisher's Shop Sign
 				i(264243),	-- Firm Haranir Pillow
 				i(264245),	-- Warm Haranir Blanket
 				i(264267),	-- Rutaani Birdfeeder
@@ -1545,7 +1543,6 @@ root(ROOTS.Unsorted, {
 				i(264625),	-- Gale Force Focus
 				i(264634),	-- Spire of Flowing Void
 				i(264641),	-- Sharpened Skullcleaver
-				i(264643),	-- Ash'an's Spare Cleaver
 			}),
 		})),
 	}),

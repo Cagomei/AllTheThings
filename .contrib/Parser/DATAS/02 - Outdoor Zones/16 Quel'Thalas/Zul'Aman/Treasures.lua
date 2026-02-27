@@ -150,16 +150,34 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			--Repeatable
 			o(555462, {	-- Forgotten Amani Cache
+				["coords"] = {
+					{ 33.2, 28.6, MAP.MIDNIGHT.ZULAMAN },
+					{ 36.9, 23.1, MAP.MIDNIGHT.ZULAMAN },
+					{ 42.0, 53.9, MAP.MIDNIGHT.ZULAMAN },
+					{ 42.5, 67.0, MAP.MIDNIGHT.ZULAMAN },
+					{ 48.2, 40.4, MAP.MIDNIGHT.ZULAMAN },
+					{ 48.5, 81.3, MAP.MIDNIGHT.ZULAMAN },
+				},
 				["groups"] = {
 					i(259112),	-- Dark Gold Dye
 				},
 			}),
 			o(583965, {	-- Maisara Vilevessel
 				["groups"] = {
+					{ 47.8, 46.1, MAP.MIDNIGHT.ZULAMAN },
+					{ 48.0, 48.6, MAP.MIDNIGHT.ZULAMAN },
+				},
+				["groups"] = {
 					--share Forgotten Amani Cache
 				},
 			}),
 			o(583971, {	-- Stonewash Supplies
+				["coords"] = {
+					{ 43.7, 26.0, MAP.MIDNIGHT.ZULAMAN },
+					{ 49.6, 48.2, MAP.MIDNIGHT.ZULAMAN },
+					{ 49.7, 33.1, MAP.MIDNIGHT.ZULAMAN },
+					{ 54.8, 34.4, MAP.MIDNIGHT.ZULAMAN },
+				},
 				["groups"] = {
 					--share Forgotten Amani Cache
 				},
