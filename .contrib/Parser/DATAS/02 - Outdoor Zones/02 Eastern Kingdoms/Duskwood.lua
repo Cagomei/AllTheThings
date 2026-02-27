@@ -251,10 +251,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(325, {	-- Armed and Ready
 					["sourceQuest"] = 322,	-- Blessed Arm
-					["providers"] = {
-						{ "n", 1416 },	-- Grimand Elmore
-						{ "i", 7297 },	-- Morbent's Bane
-					},
+					["qg"] = 1416,	-- Grimand Elmore
 					["coord"] = { 51.8, 12.1, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
