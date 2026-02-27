@@ -675,6 +675,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91284 },	-- A Path Not Yet Chosen
 						["provider"] = { "n", 246557 },	-- Kyltus Bloodburn
 						["coord"] = { 42.6, 14.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(263349),	-- Magister's Shawl
+							i(263351),	-- Trainee's Cape
+							i(263352),	-- Cowl of the Farstriders
+							i(263353),	-- Blood Knight's Cover
+						},
 					}),
 					---
 					q(88977, {	-- Reenact the Crime
