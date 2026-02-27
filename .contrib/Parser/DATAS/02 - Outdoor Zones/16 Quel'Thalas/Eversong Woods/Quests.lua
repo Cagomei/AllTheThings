@@ -799,6 +799,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = {
 							i(263485),	-- Eversong Battleaxe
 							i(263484),	-- Eversong Blade
+							i(263447),	-- Eversong Chopper
 							i(263486),	-- Eversong Hacker
 							i(263481),	-- Eversong Protector
 							i(263480),	-- Eversong Rod
