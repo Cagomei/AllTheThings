@@ -26,6 +26,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 55.5, 28.7, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },
 				["questID"] = 95011,
 				["groups"] = {
+					i(267271),	-- Nethersteel Deflectors
 					i(267267),	-- Ransacker's Netherhide Mask
 				},
 			}),
