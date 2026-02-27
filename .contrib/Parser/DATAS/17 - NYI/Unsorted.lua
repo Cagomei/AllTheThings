@@ -3079,7 +3079,6 @@ root(ROOTS.Unsorted, {
 				i(162369),	-- Recipe: Contract: Voldunai
 				i(162386),	-- Design: Honorable Combatant's Staff of Intuition
 				i(162387),	-- Design: Honorable Combatant's Staff of Intuition
-				i(163203),	-- Hypersensitive Azeritometer Sensor
 				i(163783),	-- Mount Mugamba Spring Water \\ Mount Mugaba Spring Water
 				i(163784),	-- Seafoam Coconut Water
 				i(163785),	-- Canteen of Rivermarsh Rainwater

@@ -2291,6 +2291,7 @@ i(265656, 1276650);	-- Anu'shalla, Shadow's Guidance
 i(260580, 1266579);	-- Cloudborn Razorwing
 i(246736, 1243598);	-- Ivory Grimlynx
 i(246594, 1243003);	-- Light-Forged Mechsuit
+i(257240, 1261391);	-- Relinquished Scarlet Charger
 i(224148, 451487);	-- Retrained Skyrazor
 i(254736, 1258574);	-- Stormgilded Celestial (CN ONLY)
 --- UNSORTED ---
@@ -2309,7 +2310,6 @@ i(263450, 1270521);	-- Gruffy Comfy Flying Quilt
 i(262909, 1269556);	-- Hypo-Speed X6000
 i(260895, 1267002);	-- Lavender Pseudoshell
 i(257143, 1261293);	-- Peridot Dragonhawk
-i(257240, 1261391);	-- Relinquished Scarlet Charger
 i(262708, 1269280);	-- Savage Snapvine
 i(262705, 1269273);	-- Vicious Snapvine
 --- NYI ---

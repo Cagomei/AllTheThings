@@ -137,6 +137,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						i(251774, {	-- Crate of Holy Relics
 							i(251775),	-- Empty Crate of Relics
 						}),
+						i(257240);	-- Relinquished Scarlet Charger (MOUNT!)
 					},
 				}),
 				q(86845, {	-- Follow the Light

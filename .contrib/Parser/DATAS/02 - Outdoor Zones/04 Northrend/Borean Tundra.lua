@@ -1260,6 +1260,12 @@ root(ROOTS.Zones, {
 						["qg"] = 25477,	-- Crafty Wobblesprocket
 						["coord"] = { 58.1, 18.3, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							o(187697, {	-- Crafty's Tools
+								["coord"] = { 64.5, 23.1, BOREAN_TUNDRA },
+								["groups"] = { i(34802) },	-- Crafty's Tools (QI!)
+							})
+						},
 					}),
 					q(11637, {	-- Kaganishu
 						["sourceQuest"] = 11635,	-- Farseer Grimwalker's Spirit

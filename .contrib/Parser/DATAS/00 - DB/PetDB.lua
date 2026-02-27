@@ -4579,7 +4579,7 @@ i(265035, 4984);	-- Medusa
 i(250137, 4876);	-- Mud Potadpole
 i(259337, 4929);	-- Munchy
 i(250863, 4888);	-- Naloki
-i(251002, 4889);	-- Nether Familia
+i(251002, 4889);	-- Nether Familiar
 i(266076, 4881);	-- Nether Siphoner
 i(262392, 4961);	-- Nibblesworth
 i(240840, 4803);	-- Niblet
