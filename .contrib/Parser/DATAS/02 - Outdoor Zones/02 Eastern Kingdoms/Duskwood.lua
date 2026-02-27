@@ -522,6 +522,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
+						objective(1, {	-- 0/15 Pygmy Venom Web Spider slain
+							["provider"] = { "n", 539 },	-- Pygmy Venom Web Spider
+							["coords"] = {
+								{ 90.8, 16.0, DUSKWOOD },
+								{ 52.0, 12.4, DUSKWOOD },
+								{ 27.8, 29.2, DUSKWOOD },
+								{ 13.0, 28.4, DUSKWOOD },
+								{  9.4, 39.8, DUSKWOOD },
+								{ 13.0, 70.6, DUSKWOOD },
+							},
+						}),
 						i(3559, {	-- Night Watch Gauntlets
 							["timeline"] = { REMOVED_4_0_3 },
 						}),

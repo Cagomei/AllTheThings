@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["learnedAt"] = 1,
 				}),
 				o(123330, {	-- Buccaneer's Strongbox
-					["coord"] = { 65, 45.4, THE_BARRENS },
+					["coord"] = { 65.0, 45.4, THE_BARRENS },
 					["requireSkill"] = LOCKPICKING,
 					["learnedAt"] = 1,
 				}),
