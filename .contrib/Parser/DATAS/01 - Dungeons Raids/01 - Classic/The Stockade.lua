@@ -9,6 +9,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 717,	-- The Stockade
+		["zone-text-names"] = {
+			"Stormwind Stockade",	-- enUS
+		},
 		-- #endif
 		["mapID"] = THE_STOCKADE,
 		["coords"] = {
