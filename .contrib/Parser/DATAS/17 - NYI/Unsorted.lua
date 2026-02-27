@@ -11,6 +11,10 @@ root(ROOTS.Unsorted, {
 				i(264472),	-- Loa Impostor's Clawguards
 				i(264473),	-- Loa Impostor's Tidegrips
 				i(264474),	-- Loa Impostor's Brinefists
+				i(248036),	-- Twilight Tamer's Mantle
+				i(248035),	-- Twilight Tamer's Pauldrons
+				i(248034),	-- Twilight Tamer's Shoulderpads
+				i(248037),	-- Twilight Tamer's Spaulders
 
 				-- Pre-patch trinket?
 				i(268534),	-- Sanctum's Decree
@@ -83,7 +87,6 @@ root(ROOTS.Unsorted, {
 				i(249775),	-- Bright Berry
 				i(249779),	-- Discordant Tune
 				i(253210),	-- Soothsayer's Signet
-				i(253211),	-- Smuggler's Signet
 				i(268551),	-- Scroll of Reflection
 				i(248723),	-- Stolen Documents
 			}),
@@ -259,7 +262,6 @@ root(ROOTS.Unsorted, {
 					i(244789),	-- [PH] Test Fishing Rod B
 				}),
 				prof(FISHING, {
-					i(238373),	-- Ominous Octopus
 					i(238374),	-- Tender Lumifin
 
 					i(238490),	-- Ambiguous Rock
@@ -436,7 +438,6 @@ root(ROOTS.Unsorted, {
 				i(266213),	-- Incense Materials
 				i(260603),	-- Frail and Flexible Wing
 				i(260667),	-- Tainted Organs
-				i(260668),	-- Cloudy Purple Gem
 				i(260674),	-- Fine Arcane Dust
 				i(260679),	-- Fleshless Bone
 				i(260680),	-- Nesting Materials
@@ -615,8 +616,6 @@ root(ROOTS.Unsorted, {
 				i(250117),	-- Cache of Quel'Thalas Treasures
 				--Arcantina
 				i(250872),	-- Scarred Spear
-				--Delve?
-				i(257379),	-- Player Experience
 				-- Boon?
 				i(260910),	-- Boon of Vitality
 			}),
@@ -944,8 +943,6 @@ root(ROOTS.Unsorted, {
 			n(ARMOR, {
 				i(243195),	-- Bonnie BYK TEST
 				i(249142),	-- TEMPLATE 12.0 Raid - Ranged DPS - Trinket
-				-- Quest Armor
-				i(248038),	-- Girdle of Herbicide
 				-- Armor/wep Delve
 				i(249566),	-- [PH] 12.0 Delves - Level-Up - Accessory - Cloth CLOAK - HC
 				i(249567),	-- [PH] 12.0 Delves - Level-Up - Accessory - FINGER - HC
@@ -1133,35 +1130,11 @@ root(ROOTS.Unsorted, {
 				i(263280),	-- Tidewrought Coif \\ [PH] Local Story - Mail HEAD
 				i(263281),	-- Tidewrought Greathelm \\ [PH] Local Story - Plate HEAD
 				-- Quest Armor??
-				i(263324),	-- Tytalor's Discarded Chain
-				i(263325),	-- Tytalor's Least Favorite Necklace
-				i(263326),	-- Mirveda's Sunhat
-				i(263327),	-- Spore-Laden Covering
-				i(263328),	-- Sanctum Keeper's Hood
-				i(263331),	-- Lignified Helmet
-				i(263334),	-- Goldenmist Noble's Robes
-				i(263343),	-- Snapdragon Tunic
-				i(263344),	-- Eversong Farstrider's Ring Mail
-				i(263345),	-- Goldenmist Defender's Chestplate
-				i(263349),	-- Magister's Shawl
-				i(263351),	-- Trainee's Cape
-				i(263352),	-- Cowl of the Farstriders
-				i(263353),	-- Blood Knight's Cover
-				i(263358),	-- Row Rat's Chausses
-				i(263359),	-- Row Rat's Links
-				i(263362),	-- Row Rat's Trousers
-				i(263364),	-- Row Rat's Leggings
 				i(263374),	-- Archivist's Epaulets
 				i(263375),	-- Cultist's Shoulderpads
 				i(263376),	-- Flaresong's Shoulderguards
 				i(263378),	-- Dawnheart Pauldrons
 				-- Quest Reward
-				i(263416),	-- Librarian's Woven Shoes
-				i(263419),	-- Farstrider Recruit's Footwear
-				i(263427),	-- Eversong Naturalist's Boots
-				i(263429),	-- Eversong Hoofcovers
-				i(263437),	-- Gidwin's Tarnished Ring
-				i(263438),	-- Tarenar's Dusty Loop
 				i(263447),	-- Eversong Chopper
 				i(263448),	-- Eversong Bow
 				-- Quest Rewards?
@@ -1173,14 +1146,7 @@ root(ROOTS.Unsorted, {
 				i(263477),	-- Eversong Sword
 				i(263478),	-- Eversong Gavel
 				i(263479),	-- Eversong Halberd
-				i(263480),	-- Eversong Rod
-				i(263481),	-- Eversong Protector
-				i(263482),	-- Eversong Stabber
 				i(263483),	-- Eversong Hatchet
-				i(263484),	-- Eversong Blade
-				i(263485),	-- Eversong Battleaxe
-				i(263486),	-- Eversong Hacker
-				i(263487),	-- Eversong Training Staff
 				-- Quest Rewards?
 				i(257235),	-- Voidbreaker's Cleaver
 				i(257236),	-- Voidbreaker's Runeaxe
@@ -1242,8 +1208,6 @@ root(ROOTS.Unsorted, {
 				i(266430),	-- Silvermoon Sunguard
 				i(266431),	-- Silvermoon Sunveil
 				i(266432),	-- Silvermoon Suncrest
-				-- Quest Armor
-				i(267271),	-- Nethersteel Deflectors
 				-- Armor
 				i(267387),	-- Test Item [DNT] - While you are poisoned
 				i(267388),	-- Test Item [DNT] - Apply Poison - Label
@@ -1537,7 +1501,6 @@ root(ROOTS.Unsorted, {
 				i(250868),	-- Crimson Crystal Column
 				i(250869),	-- Crimson Crystal Core
 				i(250870),	-- Crimson Crystal Fragment
-				i(257418),	-- Ornate Sin'dorei Sconce
 				i(258535),	-- Simple Bone-Tied Charm
 				i(258536),	-- Windmark Tribal Charm
 				i(258537),	-- Amani Dreamer's Charm
@@ -1577,7 +1540,6 @@ root(ROOTS.Unsorted, {
 				i(264557),	-- Borerplate Pauldrons
 				i(264581),	-- Bloombark Spaulders
 				i(264582),	-- Diamondback-Scale Legguards
-				i(264586),	-- Crustacean Carapace Chestguard
 				i(264604),	-- Sludgy Verdant Signet
 				i(264605),	-- Choker of Unyielding Winds
 				i(264625),	-- Gale Force Focus

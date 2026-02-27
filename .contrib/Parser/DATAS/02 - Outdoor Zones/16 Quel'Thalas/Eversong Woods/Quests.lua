@@ -30,6 +30,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86737 },	-- Fair Breeze, Light Bloom
 						["provider"] = { "n", 236739 },	-- Magistrix Landra Dawnstrider
 						["coord"] = { 46.7, 45.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(264248),	-- Sin'dorei Storage Jar (DECOR!)
+						},
 					}),
 					q(86738, {	-- Sharpmaw
 						["sourceQuests"] = { 86737 },	-- Fair Breeze, Light Bloom
@@ -55,6 +58,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(248018),	-- Lightstalker's Greaves
 							i(248054),	-- Lightstalker's Slippers
 							i(248056),	-- Lightstalker's Treads
+							i(245992),	-- Ornate Silvermoon Candelabra (DECOR!)
 						},
 					}),
 					q(86743, {	-- Trimming the Lightbloom
@@ -143,6 +147,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 236087 },	-- Magister Umbric
 						["coord"] = { 47.7, 69.8, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
+							i(244783),	-- Majestic Lightwood Table (DECOR!)
 						},
 					}),
 					q(86622, {	-- Chance Meeting
@@ -169,6 +174,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86626 },	-- The Ransacked Lab
 						["provider"] = { "n", 236686 },	-- Arator
 						["coord"] = { 47.7, 69.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(253485),	-- Sin'dorei Honor Stone (DECOR!)
+							i(253488),	-- Diamond Honor Stone (DECOR!)
+						},
 					}),
 					q(90509, {	-- The Traitors of Tranquillien
 						["sourceQuests"] = { 86626 },	-- The Ransacked Lab
@@ -249,10 +258,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 44.7, 85.2, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
 							i(253153),	-- Stolen Knowledge (QI!)
-							i(248036),	-- Twilight Tamer's Mantle
-							i(248035),	-- Twilight Tamer's Pauldrons
-							i(248034),	-- Twilight Tamer's Shoulderpads
-							i(248037),	-- Twilight Tamer's Spaulders
 						},
 					}),
 				}),
@@ -388,6 +393,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 237433 },	-- Lor'themar Theron
 						["coord"] = { 60.6, 81.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
+							i(244538),	-- Silvermoon Sundial (DECOR!)
 							--spell(1251016),	-- Silvermoon Wartable (not really NYI but seems to be lead only in 1 quest chain atm)
 						},
 					}),
@@ -509,6 +515,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 89206 },	-- Break and Enter
 						["provider"] = { "n", 241403 },	-- Jaeth
 						["coord"] = { 54.3, 33.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+						["groups"] = {
+							i(263358),	-- Row Rat's Chausses
+							i(263359),	-- Row Rat's Links
+							i(263362),	-- Row Rat's Trousers
+							i(263364),	-- Row Rat's Leggings
+						},
 					}),
 					q(89208, {	-- What We're Owed
 						["sourceQuests"] = { 89207 },	-- Rats Can Bite
@@ -560,6 +572,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = {
 							i(244407),	-- Cracked Wyrm Core (QI!)
 							i(253212),	-- Rogue's Signet (QI!)
+							i(253211),	-- Smuggler's Signet (QI!)
 							o(539728, {	--
 								i(245566),	-- Fel Splinter (TODO: into uncollectible?)
 								i(244528),	-- Shipping Manifest (QI!)
@@ -616,6 +629,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 238748 },	-- Gidwin Goldbraids
 						["coord"] = { 33.3, 90.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+						["groups"] = {
+							i(263437),	-- Gidwin's Tarnished Ring
+							i(263438),	-- Tarenar's Dusty Loop
+						},
 					}),
 					---
 					q(86997, {	-- Spellbook Scuffle
@@ -637,6 +654,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86998 },	-- Training Arc
 						["provider"] = { "n", 237905 },	-- Tytalor Goldenblade
 						["coord"] = { 38.5, 18.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(263324),	-- Tytalor's Discarded Chain
+							i(263325),	-- Tytalor's Least Favorite Necklace
+						},
 					}),
 					---
 					q(91284, {	-- A Path Not Yet Chosen
@@ -676,10 +697,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 246557 },	-- Kyltus Bloodburn
 						["coord"] = { 42.6, 14.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
+							i(263353),	-- Blood Knight's Cover
+							i(263352),	-- Cowl of the Farstriders
 							i(263349),	-- Magister's Shawl
 							i(263351),	-- Trainee's Cape
-							i(263352),	-- Cowl of the Farstriders
-							i(263353),	-- Blood Knight's Cover
 						},
 					}),
 					---
@@ -775,6 +796,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 239368 },	-- Lyssara Duskmourne
 						["coord"] = { 35.8, 43.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(263485),	-- Eversong Battleaxe
+							i(263484),	-- Eversong Blade
+							i(263486),	-- Eversong Hacker
+							i(263481),	-- Eversong Protector
+							i(263480),	-- Eversong Rod
+							i(263482),	-- Eversong Stabber
+							i(263487),	-- Eversong Training Staff
+						},
 					}),
 					---
 					q(91493, {	-- Not What I Ordered
@@ -828,6 +858,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = {
 							i(247753),	-- Empowered Wand (QI!)
 							i(250317),	-- Pile of Ash (TODO: into uncollectible?)
+							--
+							i(263344),	-- Eversong Farstrider's Ring Mail
+							i(263345),	-- Goldenmist Defender's Chestplate
+							i(263334),	-- Goldenmist Noble's Robes
+							i(263343),	-- Snapdragon Tunic
 						},
 					}),
 					---
@@ -871,6 +906,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 92024 },	-- House Call
 						["provider"] = { "n", 253058 },	-- Well-Loved Tome
 						["coord"] = { 37.4, 72.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(257418),	-- Ornate Sin'dorei Sconce (DECOR!)
+						},
 					}),
 					---
 					q(91271, {	-- A Fish!
@@ -942,6 +980,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 50.5, 78.1, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
 							i(246441),	-- Humming Core (QI!)
+							--
+							i(263331),	-- Lignified Helmet
+							i(263326),	-- Mirveda's Sunhat
+							i(263328),	-- Sanctum Keeper's Hood
+							i(263327),	-- Spore-Laden Covering
 						},
 					}),
 					---
@@ -1052,6 +1095,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 247593 },	-- Captain Dawnrunner
 						["coord"] = { 59.4, 68.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(263429),	-- Eversong Hoofcovers
+							i(263427),	-- Eversong Naturalist's Boots
+							i(263419),	-- Farstrider Recruit's Footwear
+							i(263416),	-- Librarian's Woven Shoes
+						},
 					}),
 					---
 					q(89383, {	-- One Adventurous Hatchling

@@ -120,7 +120,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			i(257382),	-- Companion Experience (Delve reward UI)
 			i(263488),	-- Companion Experience (Delver's Call reward)
 			i(257386),	-- Heavy Trunk (Delve reward UI)
-			--i(257379),	-- Player Experience (Epic) // alpha item
+			i(257379),	-- Player Experience (Epic)
 			i(265714),	-- Trovehunter's Bounty
 			-- Items and different things
 			i(262586),	-- Primeval Arcane Remnant (QI!/QS!)

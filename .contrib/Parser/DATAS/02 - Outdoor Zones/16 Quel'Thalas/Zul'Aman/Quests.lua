@@ -95,6 +95,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 22.5, 79.9, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 						["groups"] = {
 							i(237501),	-- Lightwood Weapon (QI!)
+							i(264257),	-- Zul'Aman Armament Rest (DECOR!)
 						},
 					}),
 					q(86715, {	-- Rituals Cut Short

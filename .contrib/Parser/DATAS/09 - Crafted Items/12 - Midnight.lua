@@ -711,6 +711,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(238376),	-- Lucky Loa
 		i(238366),	-- Lynxfish
 		i(238380),	-- Null Voidfish
+		i(238373),	-- Ominous Octopus
 		i(238372),	-- Restored Songfish
 		i(238367),	-- Root Crab
 		i(238378),	-- Shimmersiren

@@ -152,6 +152,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 89581,
 				["groups"] = {
 					i(264564),	-- Crab Wrangling Harness
+					i(264586),	-- Crustacean Carapace Chestguard
 				},
 			}),
 		})),

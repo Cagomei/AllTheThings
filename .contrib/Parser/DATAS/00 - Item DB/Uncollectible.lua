@@ -2620,6 +2620,7 @@ i(266002);	-- Broken Trap Mechanism
 i(260652);	-- Broken Wildfire Claw
 i(244041);	-- Budding Seed
 i(260692);	-- Chunk of Mystery Meat
+i(260668);	-- Cloudy Purple Gem
 i(260619);	-- Colorful Leaves
 i(260669);	-- Colorless Pebbles
 i(265097);	-- Conjured Cinnamon Roll
