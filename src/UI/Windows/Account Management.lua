@@ -3,8 +3,8 @@ local _, app = ...;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals
-local ipairs, pairs, tonumber, time, type, tinsert, tremove, math_floor, tsort =
-	  ipairs, pairs, tonumber, time, type, tinsert, tremove, math.floor, table.sort;
+local ipairs, pairs, tonumber, time, type, tinsert, tremove, math_floor, wipe, tsort =
+	  ipairs, pairs, tonumber, time, type, tinsert, tremove, math.floor, wipe, table.sort;
 local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo, RequestTimePlayed =
 	  BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo, RequestTimePlayed;
 
@@ -431,13 +431,8 @@ local whiteListedFields = {
 }
 -- Used for data which can be directly-cached as Account-learned or Character-learned
 local function PartialSyncCharacterData(data, key)
+	wipe(data);
 	local characterData
-	-- wipe account data saved based on character data
-	for id,completion in pairs(data) do
-		if completion == 2 then
-			data[id] = nil
-		end
-	end
 	for guid,character in pairs(CharacterData) do
 		characterData = character[key];
 		if characterData then
