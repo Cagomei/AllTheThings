@@ -2648,6 +2648,7 @@ MobileDB.GameObject = {
 	[554966] = true,	-- Legacy Stone (q:90960)
 	[555181] = true,	-- Etched Scroll
 	[555364] = true,	-- Dragonpine Lumber
+	[553947] = true,	-- Weapon Rack (Arcantina)
 	[555431] = true,	-- Scroll of Replenishment
 	[555545] = true,	-- Darkpine Lumber
 	[555609] = true,	-- Cartel Ba Dead Drop
@@ -2741,14 +2742,18 @@ MobileDB.GameObject = {
 	[582157] = true,	-- Spiritpaw Satche
 	[584445] = true,	-- Ironwood Lumber
 	[584475] = true,	-- Ironwood Lumber
+	[584519] = true,	-- Heavy Trunk
+	[584540] = true,	-- Chest of Proven Valor" [Den of Nalorakk]
 	[584615] = true,	-- Ironwood Lumber
 	[584694] = true,	-- Ironwood Lumber
+	[584752] = true,	-- Mislaid Curiosity
 	[586651] = true,	-- Ashwood Lumber
 	[587913] = true,	-- Shabby Stockpile
 	[612274] = true,	-- Portal to K'aresh (q:85002)
 	[616916] = true,	-- Eye of the Void
 	[616917] = true,	-- Cosmic Void
 	[616918] = true,	-- Void Rift
+	[618844] = true,	-- Mislaid Curiosity
 	[627049] = true,	-- Hearthlight Armillary
 }
 

@@ -31,6 +31,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			n(232295, {	-- Almyr Sunhart
 				["coord"] = { 70.6, 38.6, SIREN_ISLE },
 				["groups"] = {
+					i(216708);	-- Holy Candle
 					i(234287),	-- Radiant Focus
 					i(234527),	-- Sacredite's Ledger
 					i(234466),	-- Tattered Arathi Prayer Scroll

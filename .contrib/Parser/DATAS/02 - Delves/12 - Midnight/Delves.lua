@@ -751,6 +751,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			}),
 			n(REWARDS, {
 				n(DECOR, {
+					i(264329),	-- Amani Dining Table (DECOR!)
+					i(267009),	-- Amani Training Dummy (DECOR!)
+					i(251967),	-- Fungarian Banner (DECOR!)
 				}),
 				filter(COSMETIC, {
 					i(262983),	-- Archival Magnimace (COSMETIC!)

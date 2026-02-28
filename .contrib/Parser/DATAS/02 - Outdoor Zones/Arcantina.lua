@@ -167,11 +167,11 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LA
 				["questID"] = 92349,
 			}),
 			o(571554, {	-- Giant Growth Potion
-				["coord"] = { 29.1, 39.5, ARCANTINA },
+				["coord"] = { 30.6, 43.8, ARCANTINA },
 				["questID"] = 92350,
 			}),
 			o(571555, {	-- Giant Growth Potion
-				["coord"] = { 18.4, 44.1, ARCANTINA },
+				["coord"] = { 20.0, 44.2, ARCANTINA },
 				["questID"] = 92351,
 			}),
 			o(571493, {	-- Inky Black Potion
@@ -179,12 +179,18 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LA
 				["questID"] = 92352,
 			}),
 			o(571556, {	-- Inky Black Potion
-				["coord"] = { 39.7, 81.3, ARCANTINA },
+				["coord"] = { 42.1, 77.4, ARCANTINA },
 				["questID"] = 92353,
 			}),
 			o(571557, {	-- Inky Black Potion
 				["coord"] = { 37.1, 54.9, ARCANTINA },
 				["questID"] = 92354,
+			}),
+			o(627841, {	-- Inky Black Potion
+				["coord"] = { 60.5, 59.6, ARCANTINA },
+			}),
+			o(614789, {	-- Inky Black Potion
+				["coord"] = { 59.8, 60.1, ARCANTINA },
 			}),
 			o(571496, {	-- Pygmy Oil
 				["coord"] = { 61.8, 51.1, ARCANTINA },
@@ -224,11 +230,47 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LA
 			}),
 		})),
 		n(VENDORS, {
+			n(229333, {	-- Ari
+				--["coord"] = { 42.0, 50.1, ARCANTINA },
+				["groups"] = {
+					i(234526),	-- Archivist's Codex
+					i(267650),	-- Blood Knight Training Manual
+					i(267628),	-- Historian's Tome
+					i(234527),	-- Sacredite's Ledger
+					i(267652),	-- Silver Hand Squire's Libram
+				},
+			}),
 			n(250495, {	-- Bartender Bob
 				["coord"] = { 62.4, 66.9, ARCANTINA },
 				["groups"] = {
+					i(267624),	-- Bamboo Tray
+					i(268110),	-- Cheese Tray
+					i(267627),	-- Decorative Tavern Cheese
 					i(2460),	-- Elixir of Tongues
+					i(268025),	-- Heavy Stein
+					i(267615),	-- Imperial Mug
+					i(268115),	-- Overbaked Donut
+					i(268053),	-- Rugged Cup
+					i(267618),	-- Rusty Receptacle
+					i(267486),	-- Simple Cup
+					i(267619),	-- Sipping Glass
+					i(267617),	-- Sophisticated Goblet
+					i(267626),	-- Stale Tavern Bread
+					i(267379),	-- Tavern Mug
 					i(251039),	-- Toasting Brew
+				},
+			}),
+			n(259849, {	-- Janky <Candle Merchant>
+				--["coord"] = { 42.0, 50.1, ARCANTINA },
+				["groups"] = {
+					i(268112),	-- Argunite Beacon
+					i(268111),	-- Arkonite Beacon
+					i(268085),	-- Hand Torch
+					i(216708);	-- Holy Candle
+					i(267625),	-- Lit Candle
+					i(267623),	-- Simple Torch
+					i(268068),	-- Sturdy Torch
+					i(268116),	-- Twin-Flame Holder
 				},
 			}),
 			n(252873, {	-- Morta Gage <Decor Specialist>

@@ -423,6 +423,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86692 },	-- Blade Shattered
 						["provider"] = { "n", 240037 },	-- Zul'jarra
 						["coord"] = { 21.4, 77.4, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = { i(255648) },	-- Zul'Aman Ancestral Fountain (DECOR!)
 					}),
 					q(91062, {	-- Broken Bridges
 						["sourceQuests"] = { 86693 },	-- De Legend of Hash'ey
@@ -445,6 +446,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["sourceQuests"] = { 91062 },	-- Broken Bridges
 				["provider"] = { "n", 241308 },	-- Lady Liadrin
 				["coord"] = { 50.8, 54.5, MAP.MIDNIGHT.ZULAMAN },
+				["groups"] = { i(256928) },	-- Banner of the Amani Tribe (DECOR!)
 			}),
 			q(91967, {	-- You Know This Evil?
 				["sourceQuests"] = { 91087 },	-- Reports Returned

@@ -62,20 +62,25 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["provider"] = { "n", 237594 },	-- Lord Maxwell Tyrosus
 					["coord"] = { 73.9, 53.5, EASTERN_PLAGUELANDS },
 					["groups"] = {
-						--o(??, {	-- Vindicator Maraad's Meditation Crystal
-							i(237513),	-- Vindicator Maraad's Meditation Crystal (QI!)
-						--}),
+						o(523388, {	-- Vindicator Maraad's Meditation Crystal
+							["coord"] = { 70.3, 42.1, LIGHTS_HOPE_CHAPEL },
+							["groups"] = { i(237513) },	-- Krohm Dawnhammer's Smithing Hammer (QI!)
+						}),
 						o(523389, {	-- Krohm Dawnhammer's Smithing Hammer
-							i(237547),	-- Krohm Dawnhammer's Smithing Hammer (QI!)
+							["coord"] = { 76.6, 31.5, LIGHTS_HOPE_CHAPEL },
+							["groups"] = { i(237574) },	-- Krohm Dawnhammer's Smithing Hammer (QI!)
 						}),
 						o(508705, {	-- Lena Stormpike's Stein
-							i(237518),	-- Lena Stormpike's Stein (QI!)
+							["coord"] = { 60.9, 27.5, LIGHTS_HOPE_CHAPEL },
+							["groups"] = { i(237518) },	-- Lena Stormpike's Stein (QI!)
 						}),
 						o(523391, {	-- Uther's Healing Kit
-							i(237519),	-- Uther's Healing Kit (QI!)
+							["coord"] = { 71.3, 13.8, LIGHTS_HOPE_CHAPEL },
+							["groups"] = { i(237519) },	-- Uther's Healing Kit (QI!)
 						}),
 						o(523390, {	-- Mara Fordragon's Prayer Book
-							i(237573),	-- Mara Fordragon's Prayer Book (QI!)
+							["coord"] = { 78.5, 22.9, LIGHTS_HOPE_CHAPEL },
+							["groups"] = { i(237573) },	-- Mara Fordragon's Prayer Book (QI!)
 						}),
 					},
 				}),
@@ -148,12 +153,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				q(86846, {	-- Resupplying our Suppliers
 					["sourceQuests"] = { 86845 },	-- Follow the Light
 					["provider"] = { "n", 245186 },	-- Sunwalker Dezco
-					["coord"] = { 68.9, 37.7, 2372 },	-- Arathi Highlands
+					["coord"] = { 68.9, 37.7, ARATHI_HIGHLANDS },
 				}),
 				q(91000, {	-- A Humble Servant
 					["sourceQuests"] = { 86845 },	-- Follow the Light
 					["provider"] = { "n", 245186 },	-- Sunwalker Dezco
-					["coord"] = { 68.9, 37.7, 2372 },	-- Arathi Highlands
+					["coord"] = { 68.9, 37.7, ARATHI_HIGHLANDS },
 					["groups"] = {
 						i(251818),	-- Humble Servant's Briefs
 						i(251819),	-- Humble Servant's Leggings
@@ -176,13 +181,45 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						86846,	-- Resupplying our Suppliers
 					},
 					["provider"] = { "n", 247299 },	-- Sunwalker Dezco
-					["coord"] = { 69.3, 34.4, 2372 },	-- Arathi Highlands
+					["coord"] = { 69.3, 34.4, ARATHI_HIGHLANDS },	-- Arathi Highlands
 					["groups"] = {
-						o(525492, {
-							i(238515),	-- Forgotten Skullcleaver (QI!)
+						o(525492, {	-- Forgotten Skullcleaver
+							["coords"] = {
+								{ 64.0, 37.0, ARATHI_HIGHLANDS },
+								{ 64.1, 39.2, ARATHI_HIGHLANDS },
+								{ 64.4, 42.7, ARATHI_HIGHLANDS },
+								{ 64.7, 34.8, ARATHI_HIGHLANDS },
+								{ 65.9, 33.9, ARATHI_HIGHLANDS },
+								{ 65.9, 36.8, ARATHI_HIGHLANDS },
+								{ 66.0, 40.4, ARATHI_HIGHLANDS },
+								{ 66.2, 45.2, ARATHI_HIGHLANDS },
+								{ 66.6, 47.7, ARATHI_HIGHLANDS },
+								{ 66.7, 39.3, ARATHI_HIGHLANDS },
+								{ 68.0, 40.2, ARATHI_HIGHLANDS },
+								{ 68.9, 42.0, ARATHI_HIGHLANDS },
+								{ 70.0, 44.4, ARATHI_HIGHLANDS },
+								{ 70.8, 41.2, ARATHI_HIGHLANDS },
+							},
+							["groups"] = { i(238515) },	-- Forgotten Skullcleaver (QI!)
 						}),
-						o(525493, {
-							i(238516),	-- Fallen Longsword (QI!)
+						o(525493, {	-- Fallen Longsword
+							["coord"] = {
+								{ 64.4, 36.0, ARATHI_HIGHLANDS },
+								{ 64.4, 40.7, ARATHI_HIGHLANDS },
+								{ 65.3, 39.5, ARATHI_HIGHLANDS },
+								{ 65.6, 34.0, ARATHI_HIGHLANDS },
+								{ 65.6, 41.6, ARATHI_HIGHLANDS },
+								{ 65.7, 37.9, ARATHI_HIGHLANDS },
+								{ 65.8, 40.9, ARATHI_HIGHLANDS },
+								{ 66.1, 35.4, ARATHI_HIGHLANDS },
+								{ 66.8, 42.6, ARATHI_HIGHLANDS },
+								{ 68.0, 46.2, ARATHI_HIGHLANDS },
+								{ 68.7, 40.3, ARATHI_HIGHLANDS },
+								{ 69.3, 45.4, ARATHI_HIGHLANDS },
+								{ 70.0, 40.9, ARATHI_HIGHLANDS },
+								{ 70.9, 43.0, ARATHI_HIGHLANDS },
+							},
+							["groups"] = { i(238516) },	-- Forgotten Longsword (QI!)
 						}),
 					},
 				}),
@@ -191,7 +228,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				q(86822, {	-- Separate Ways
 					["sourceQuests"] = { 89338 },	-- Gathering Plowshares
 					["provider"] = { "n", 240747 },	-- Alonsus Faol
-					["coord"] = { 68.6, 32.0, 2372 },	-- Arathi Highlands
+					["coord"] = { 68.6, 32.0, ARATHI_HIGHLANDS },	-- Arathi Highlands
 				}),
 				q(86823, {	-- The Dark Horde
 					["sourceQuests"] = { 86822 },	-- Separate Ways
@@ -316,8 +353,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 		--Alex TODO: atm, I'm not sure where to put this.
 		q(91787, {	-- The Journey Ends
 			["sourceQuests"] = { 86903 },	-- The Arcantina
-			["provider"] = { "n", 253988 },	-- Arator
-			["coord"] = { 51.9, 60.8, ARCANTINA },
+			["provider"] = { "n", 237502 },	-- Arator
+			["coord"] = { 51.3, 61.7, ARCANTINA },
 		}),
 		q(91854, {	-- Deepening Shadows
 			["sourceQuests"] = { 91787 },	-- The Journey Ends

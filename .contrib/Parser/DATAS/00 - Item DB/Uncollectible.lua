@@ -2194,7 +2194,6 @@ i(220441);	-- Hardened Pearl
 i(228721);	-- Hearty Feast
 i(222693);	-- Hearty Food
 i(222740);	-- Hearty Meals
-i(216708);	-- Holy Candle
 i(227306);	-- Holy Mackerel
 i(227298);	-- Humble Pie
 i(220246);	-- Humming Power Core
@@ -2692,6 +2691,7 @@ i(260255);	-- Managi Roll
 i(260693);	-- Mossy Lump of Dirt
 i(260275);	-- Mukleech Curry
 i(264991);	-- Murder Roe
+i(238495);	-- One Angler's Trash
 i(238480);	-- Opened Lockbox
 i(260671);	-- Oversized Gland
 i(260268);	-- Pango and Mash

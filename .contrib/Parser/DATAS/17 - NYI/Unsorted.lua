@@ -55,13 +55,6 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				i(257024),	-- A Lost Hunting Knife
 				i(257054),	-- A Rolled-Up Pillow
-
-				i(268111),	-- Arkonite Beacon
-				i(268112),	-- Argunite Beacon
-				i(268115),	-- Overbaked Donut
-				i(268116),	-- Twin-Flame Holder
-
-
 				-- Midnight Preseason
 				i(268485),	-- Victorious Stormarion Pinnacle Cache
 				i(268487),	-- Avid Learner's Supply Pack
@@ -266,7 +259,6 @@ root(ROOTS.Unsorted, {
 
 					i(238490),	-- Ambiguous Rock
 					i(238491),	-- Whispering Rock
-					i(238495),	-- One Angler's Trash \\ One Man's Trash
 					i(238498),	-- [PH] Trophy Coin
 
 					-- Fishing
@@ -446,29 +438,10 @@ root(ROOTS.Unsorted, {
 				i(260695),	-- Rancid Aquatic Remains
 				i(262432),	-- Weathered Lockbox
 				i(262559),	-- Spare Key
-				i(267379),	-- Tavern Mug
-				i(267486),	-- Simple Cup
 				i(267487),	-- Ignited Torch
-				i(267615),	-- Imperial Mug
-				i(267617),	-- Sophisticated Goblet
-				i(267618),	-- Rusty Receptacle
-				i(267619),	-- Sipping Glass
 				i(267620),	-- Simple Stein
 				i(267621),	-- Traditional Stein
 				i(267622),	-- Rugged Torch
-				i(267623),	-- Simple Torch
-				i(267624),	-- Bamboo Tray
-				i(267625),	-- Lit Candle
-				i(267626),	-- Stale Tavern Bread
-				i(267627),	-- Decorative Tavern Cheese
-				i(267628),	-- Historian's Tome
-				i(267650),	-- Blood Knight Training Manual
-				i(267652),	-- Silver Hand Squire's Libram
-				i(268025),	-- Heavy Stein
-				i(268053),	-- Rugged Cup
-				i(268068),	-- Sturdy Torch
-				i(268085),	-- Hand Torch
-				i(268110),	-- Cheese Tray
 				-- Sargle?
 				i(236359),	-- Sargle's Fortune #1
 				i(236365),	-- Sargle's Fortune #2

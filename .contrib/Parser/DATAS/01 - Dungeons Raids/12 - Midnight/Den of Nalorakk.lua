@@ -23,6 +23,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 	inst(1311, {	-- Den of Nalorakk
 		["coord"] = { 30.0, 84.5, MAP.MIDNIGHT.ZULAMAN },
 		["maps"] = {
+			2564,	--
 			2514,	-- Dreamer's Passage
 			2513,	-- The Heart of Rage
 		},

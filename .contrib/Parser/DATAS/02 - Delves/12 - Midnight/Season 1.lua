@@ -259,10 +259,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			--	["groups"] = {
 			--	},
 			--}),
-			--o(584519, {	-- Heavy Trunk
-			--	["groups"] = {
-			--	},
-			--}),
+			o(584519, {	-- Heavy Trunk
+				["groups"] = {
+				},
+			}),
 			--o(584512),	-- Nemesis Strongbox (Poor)
 			o(584511),	-- Nemesis Strongbox (Uncommon)
 			o(584509),	-- Nemesis Strongbox (Rare)

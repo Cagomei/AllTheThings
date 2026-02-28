@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				title(740, {	-- Loa-Speaker <Name>
 					["minReputation"] = { FACTION_AMANI_TRIBE, 20 },	-- Amani Tribe, Renown 20
 				}),
-				--[[n(QUESTS, sharedData({
+				n(QUESTS, sharedData({
 					["provider"] = { "n", 240279 },	-- Magovu <Renown Quartermaster>
 					["coord"] = { 45.9, 65.9, MAP.MIDNIGHT.ZULAMAN },
 				}, bubbleDownRep(FACTION_AMANI_TRIBE, {
@@ -25,6 +25,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 3 --
 					}, {	-- RENOWN 4 --
 					}, {	-- RENOWN 5 --
+						q(92386),	-- A Handful of Voidlight Marl
 					}, {	-- RENOWN 6 --
 					}, {	-- RENOWN 7 --
 					}, {	-- RENOWN 8 --
@@ -42,7 +43,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 20 --
 						------ Paragon ------
 					},
-				}))),--]]
+				}))),
 				n(VENDORS, {
 					n(240279, {	-- Magovu <Renown Quartermaster>
 						["coord"] = { 45.9, 65.9, MAP.MIDNIGHT.ZULAMAN },

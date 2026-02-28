@@ -100,7 +100,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(86901, {	-- The Rift and the Den
 						["sourceQuests"] = { 86900 },	-- To Har'athir
 						["provider"] = { "n", 237483 },	-- Orweyna
-						--["coord"] = { x, y, MAP.MIDNIGHT.HARANDAR },
+						["coord"] = { 70.0, 51.6, MAP.MIDNIGHT.HARANDAR },
 					}),
 					q(86929, {	-- The Council Assembles
 						["sourceQuests"] = { 86901 },	-- The Rift and the Den
@@ -116,15 +116,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(86907, {	-- The Den of Echoes
 						["sourceQuests"] = { 86929 },	-- The Council Assembles
 						["provider"] = { "n", 237332 },	-- Hagar
-						["coord"] = { 50.8, 53.4, MAP.MIDNIGHT.HARANDAR },
+						["coord"] = { 44.0, 54.5, 2576 },	-- The Den
 					}),
 					q(86911, {	-- Echoes and Memories
 						["sourceQuests"] = { 86907 },	-- The Den of Echoes
 						["provider"] = { "n", 237567 },	-- Hagar
 						["coord"] = { 38.8, 46.9, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
-							o(527117, {	--
-								i(239014),	-- Iceberries (QI!)
+							o(527117, {	-- Iceberry Bush
+								["coords"] = {
+									{ 35.8, 46.6, MAP.MIDNIGHT.HARANDAR },
+									{ 36.0, 45.4, MAP.MIDNIGHT.HARANDAR },
+									{ 36.9, 47.0, MAP.MIDNIGHT.HARANDAR },
+									{ 36.9, 48.1, MAP.MIDNIGHT.HARANDAR },
+									{ 37.5, 46.4, MAP.MIDNIGHT.HARANDAR },
+								},
+								["groups"] = { i(239014) },	-- Iceberries (QI!)
 							}),
 						},
 					}),
@@ -274,7 +281,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(86864, {	-- Watch The Den
 						["sourceQuests"] = { 86930 },	-- To Sow the Seed
 						["provider"] = { "n", 237860 },	-- Orweyna
-						["coord"] = { 50.8, 53.2, MAP.MIDNIGHT.HARANDAR },
+						["coords"] = {
+							{ 44.3, 52.4, 2576 },	-- The Den
+							{ 50.8, 53.2, MAP.MIDNIGHT.HARANDAR },
+						},
 						["groups"] = {
 							--This quest unlock (almost) all side quests in zone
 						},
@@ -344,8 +354,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 237284 },	-- Amarakk
 						["coord"] = { 61.1, 57.3, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
-							o(508709, {
-								i(238651),	-- Alngrown Fungus (QI!)
+							o(508709, {	-- Aln Mushroom
+								["coords"] = {
+									{ 63.8, 61.4, MAP.MIDNIGHT.HARANDAR },
+									{ 64.2, 62.3, MAP.MIDNIGHT.HARANDAR },
+									{ 64.4, 59.9, MAP.MIDNIGHT.HARANDAR },
+									{ 65.0, 63.1, MAP.MIDNIGHT.HARANDAR },
+									{ 65.3, 61.9, MAP.MIDNIGHT.HARANDAR },
+									{ 65.4, 60.4, MAP.MIDNIGHT.HARANDAR },
+									{ 66.0, 60.9, MAP.MIDNIGHT.HARANDAR },
+								},
+								["groups"] = { i(238651) },	-- Alngrown Fungus (QI!)
 							}),
 						},
 					}),
@@ -369,6 +388,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86862 },	-- The Greater They Aln
 						["provider"] = { "n", 237234 },	-- Orweyna
 						["coord"] = { 63.1, 56.8, MAP.MIDNIGHT.HARANDAR },
+					}),
+					------ Stay awhile and listen ------
+					hqt(94991, {	-- Stay awhile and listen:
+						--["name"] = "Stay awhile and listen: ",
+						["description"] = "Dialogue becomes available during 'In Search of the Problem' (86865).",
+						["sourceQuests"] = { 86865 },	-- In Search of the Problem
+						--["provider"] = { "n",  },	--
+						["coord"] = { 63.2, 56.8, MAP.MIDNIGHT.HARANDAR },
 					}),
 					q(86866, {	-- Can we Heal This?
 						["sourceQuests"] = { 86865 },	-- In Search of the Problem
@@ -401,8 +428,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 237356 },	-- Orweyna
 						["coord"] = { 30.6, 77.2, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
-							o(508411, {	--
-								i(238792),	-- Haranir Artifacts (QI!)
+							o(508411, {	-- Haranir Heirloom
+								["coords"] = {
+									{ 28.3, 82.9, MAP.MIDNIGHT.HARANDAR },
+									{ 28.6, 75.2, MAP.MIDNIGHT.HARANDAR },
+									{ 29.7, 74.0, MAP.MIDNIGHT.HARANDAR },
+									{ 29.9, 81.0, MAP.MIDNIGHT.HARANDAR },
+									{ 30.5, 73.9, MAP.MIDNIGHT.HARANDAR },
+									{ 31.5, 81.8, MAP.MIDNIGHT.HARANDAR },
+									{ 33.0, 79.3, MAP.MIDNIGHT.HARANDAR },
+									{ 33.7, 83.9, MAP.MIDNIGHT.HARANDAR },
+								},
+								["groups"] = { i(238792) },	-- Haranir Artifacts (QI!)
 							}),
 						},
 					}),
@@ -435,7 +472,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(86883, {	-- The Frenzied March
 						["sourceQuests"] = { 86890 },	-- Tell the People What You Have Seen
 						["provider"] = { "n", 241742 },	-- Orweyna
-						["coord"] = { 53.2, 55.5, MAP.MIDNIGHT.HARANDAR },
+						["coords"] = {
+							{ 53.2, 55.5, MAP.MIDNIGHT.HARANDAR },
+							{ 63.3, 70.6, 2576 },	-- The Den
+						},
 					}),
 					q(86884, {	-- Cull and Burn
 						["sourceQuests"] = { 86883 },	-- The Frenzied March
@@ -662,7 +702,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			--Delves
 			q(93416, {	-- Delver's Call: The Gulf of Memory
 				["provider"] = { "o", 612259 },	-- The Gulf of Memory
-				["coord"] = { 52.9, 51.7, MAP.MIDNIGHT.HARANDAR },
+				["coords"] = {
+					{ 51.4, 16.7, THE_GULF_OF_MEMORY },
+					{ 52.9, 51.7, MAP.MIDNIGHT.HARANDAR },
+				},
 			}),
 			--Quest that lead to Luminous Dust vendor
 			q(92448, {	-- Where Dust Dances
@@ -809,8 +852,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["provider"] = { "n", 242358 },	-- Kuri
 				["coord"] = { 67.8, 27.5, MAP.MIDNIGHT.HARANDAR },
 				["groups"] = {
-					o(529370, {	--
-						i(240484),	-- Stray Skyshards (QI!)
+					o(529370, {	-- Stray Skyshards
+						["coord"] = { 69.6, 29.7, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(240484) },	-- Stray Skyshards (QI!)
 					}),
 				},
 			}),
@@ -1230,7 +1274,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(93745, {	-- Har'athir, Village of Memory
 				["sourceQuests"] = { 86864 },	-- Watch The Den
 				["provider"] = { "n", 256245 },	-- Orna
-				["coord"] = { 54.2, 53.3, MAP.MIDNIGHT.HARANDAR },
+				["coords"] = {
+					{ 54.2, 53.3, MAP.MIDNIGHT.HARANDAR },
+					{ 71.1, 53.9, 2576 },	-- The Den
+				},
 			}),
 			q(93775, {	-- Har'mara, Village of Balance
 				["sourceQuests"] = { 86864 },	-- Watch The Den
@@ -1254,7 +1301,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			q(91970),	-- WANTED: Gelatonius
 			q(92012, {	-- WANTED: Gorebarb's Pincers
-				["groups"] = { i(249406) },	-- Gorebarb's Pincers (QI!) 
+				["groups"] = { i(249406) },	-- Gorebarb's Pincers (QI!)
 			}),
 			q(91980, {	-- WANTED: Hellebora's Thorn
 				["groups"] = { i(249402) },	-- Hellebora's Thorn (QI!)
