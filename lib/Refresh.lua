@@ -102,12 +102,16 @@ end)
 end
 
 -- ref. 1 represents account-wide completion, so all old data needs to be wiped initially to allow proper re-caching
-OneTimeFixFunctions.PreATT5_0_14AWQuests = function(accountWideData)
-	if not accountWideData.Quests then return end
+OneTimeFixFunctions.PreATT5_0_14AWQuests = function(currentCharacter, accountWideData)
+	local quests = accountWideData.Quests
+	if not quests then return end
 
-	for questID,completion in pairs(accountWideData.Quests) do
+	if not accountWideData.PriorQuests then accountWideData.PriorQuests = {} end
+	local priorQuests = accountWideData.PriorQuests
+	for questID,completion in pairs(quests) do
 		if completion == 1 then
-			accountWideData.Quests[questID] = nil
+			quests[questID] = nil
+			priorQuests[questID] = 1
 		end
 	end
 
