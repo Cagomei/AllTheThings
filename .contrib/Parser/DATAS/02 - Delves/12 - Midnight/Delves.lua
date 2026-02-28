@@ -630,9 +630,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				o(618272, {	-- Sturdy Chest
 					["coord"] = { 39.8, 26.6, THE_GULF_OF_MEMORY },
 					["questID"] = 94016,
-					["groups"] = {
-						i(264805),	-- Brann-O-Vision 3000 (TOY!)
-					},
+					["groups"] = { i(264805) },	-- Brann-O-Vision 3000 (TOY!)
 				}),
 			}),
 			n(REWARDS, {

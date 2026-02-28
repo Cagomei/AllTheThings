@@ -690,6 +690,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(88607, 1225272),	-- Shimmer Spinefish
 			FirstCraft(88602, 1225245),	-- Sin'dorei Swarmer
 			FirstCraft(88621, 1225278),	-- Sunwell Fish
+			FirstCraft(88611, 1225281),	-- Tender Lumifin
 			FirstCraft(88605, 1225280),	-- Twisted Tetra
 			FirstCraft(88616, 1225279),	-- Warping Wise
 			FirstCraft(88608, 1225282),	-- Wyrmfish

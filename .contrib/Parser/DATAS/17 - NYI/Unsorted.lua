@@ -86,8 +86,6 @@ root(ROOTS.Unsorted, {
 				i(269978),	-- Earthen Traveler's Breaker
 				i(269979),	-- Grateful Goblin's Glaive
 				i(269980),	-- Tuskcarver's Warglaive
-				i(269981),	-- Paintmaker's Edge
-				i(269982),	-- Spore-Touched Glaive
 				i(269985),	-- Azure Guardian's Sword
 				i(269986),	-- Dreamer's Spellblade
 				i(269987),	-- Vault Guard's Axe
@@ -375,7 +373,6 @@ root(ROOTS.Unsorted, {
 				i(258280),	-- [DNT] Huge Pouch of Supplies
 				i(258480),	-- Pargoth's Pandemonic Pyxis
 				i(258901),	-- Waterlogged Reliquary Paintbrush
-				i(260531),	-- Crystalized Resin Fragment
 				i(260918),	-- Zealot's Surge
 				i(262584),	-- Bottomless Bag of Amulets of the Ascendant Void \\ Bottomless Bag of Voidsong Chains
 				i(262724),	-- Currency Wallet
@@ -405,9 +402,6 @@ root(ROOTS.Unsorted, {
 				i(265062),	-- Nullflare Residue
 				i(265802),	-- Tome of Town Portal
 				i(265817),	-- Forgotten Songwriter's Quill
-				i(265818),	-- Ruia's Musings, Part 1
-				i(265819),	-- Ruia's Musings, Part 2
-				i(265820),	-- Ruia's Musings, Part 3
 				i(265824),	-- The Rootwarden's Notes
 				i(265832),	-- Incomplete Booklet of Sonnets
 				i(265833),	-- Page 1 of a Book of Sonnets
@@ -1039,7 +1033,6 @@ root(ROOTS.Unsorted, {
 				i(260458),	-- Helthra's Fetish
 				i(260459),	-- Gaahl's Gorget
 				i(260475),	-- Ka'shuk Trainee's Cudgel
-				i(260525),	-- Paintmaker's Mace
 				-- Armor
 				i(260849),	-- [DNT] Trinket 1
 				i(260850),	-- [DNT] Trinket 2
@@ -1071,7 +1064,6 @@ root(ROOTS.Unsorted, {
 				i(263376),	-- Flaresong's Shoulderguards
 				i(263378),	-- Dawnheart Pauldrons
 				-- Quest Reward
-				i(263447),	-- Eversong Chopper
 				i(263448),	-- Eversong Bow
 				-- Quest Rewards?
 				i(263470),	-- Eversong Staff
@@ -1477,8 +1469,6 @@ root(ROOTS.Unsorted, {
 			n(RARES, {
 				i(264548),	-- Sash of Cosmic Tranquility
 				i(264557),	-- Borerplate Pauldrons
-				i(264581),	-- Bloombark Spaulders
-				i(264604),	-- Sludgy Verdant Signet
 				i(264605),	-- Choker of Unyielding Winds
 				i(264625),	-- Gale Force Focus
 				i(264634),	-- Spire of Flowing Void

@@ -56,6 +56,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92161,
 				["groups"] = {
 					i(264626),	-- Scepter of Radiant Conversion
+					i(264604),	-- Sludgy Verdant Signet
 					i(264968),	-- Telluric Leyblossom
 				},
 			}),
@@ -122,7 +123,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264639),	-- Razorfang Hacker
 					i(264568),	-- Serrated Scale Gauntlets
-					--i(252957),	-- Tangle of Vibrant Vines (TODO: idk if you really want that much source for it, since already midnight zone reward?)
 				},
 			}),
 			n(250086, {	-- Stumpy
@@ -145,6 +145,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 36.7, 75.2, MAP.MIDNIGHT.HARANDAR },
 				["questID"] = 92183,
 				["groups"] = {
+					i(264581),	-- Bloombark Spaulders
 					i(264633),	-- Treetop Battlestave
 				},
 			}),

@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(254319, {	-- Root-Woven Door (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
 					}),
-					i(254878, {	-- Root-Woven Window
+					i(254878, {	-- Root-Woven Window (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
 					}),
 					i(246415, {	-- Ruddy Haranir Pigment Bowl (DECOR!)

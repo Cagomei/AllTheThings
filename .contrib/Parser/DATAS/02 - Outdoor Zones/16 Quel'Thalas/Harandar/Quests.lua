@@ -133,6 +133,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								},
 								["groups"] = { i(239014) },	-- Iceberries (QI!)
 							}),
+							--
+							i(246415), 	-- Ruddy Haranir Pigment Bowl (DECOR!)
 						},
 					}),
 					------ Stay awhile and listen ------
@@ -172,8 +174,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 243884 },	-- Zur'ashar Kassameh
 						["coord"] = { 33.9, 44.8, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
-							o(572806, {	--
-								i(251512),	-- Fragment of Revelation (QI!)
+							o(572806, {	-- Fragment of Revelation
+								["coord"] = { 50.8, 64.2, THE_GULF_OF_MEMORY },
+								["groups"] = { i(251512) },	-- Fragment of Revelation (QI!)
 							}),
 						},
 					}),
@@ -189,21 +192,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = {
 							i(238024),	-- Watering Can (QI!)
 							--
-							i(256174),	--
-							i(256175),	--
-							i(256177),	-- Spore-Touched Staff
-							i(256180),	--
-							i(256184),	-- Spore-Touched Saber
-							i(256186),	--
+							i(256175),	-- Spore-Touched Baton
 							i(256188),	-- Spore-Touched Bludgeon
-							i(256190),	--
-							i(256231),	--
+							i(256174),	-- Spore-Touched Buckler
+							i(256190),	-- Spore-Touched Dagger
+							i(256231),	-- Spore-Touched Falchion
+							i(269982),	-- Spore-Touched Glaive
+							i(256186),	-- Spore-Touched Mace
+							i(256184),	-- Spore-Touched Saber
+							i(256180),	-- Spore-Touched Shortbow
+							i(256177),	-- Spore-Touched Staff
 						},
 					}),
 					q(86956, {	-- The Traveling Flowers
 						["sourceQuests"] = { 86913 },	-- A Hut in Har'mara
 						["provider"] = { "n", 237787 },	-- Halduron Brightwing
 						["coord"] = { 34.9, 25.1, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(262614) },	-- Harandar Runestone (DECOR!)
 					}),
 					q(86910, {	-- Koozat's Trample
 						["sourceQuests"] = {
@@ -217,6 +222,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86910 },	-- Koozat's Trample
 						["provider"] = { "n", 240533 },	-- Orweyna
 						["coord"] = { 35.7, 25.3, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(245535) },	-- Sturdy Haranir Handcart (DECOR!)
 					}),
 					q(86942, {	-- Culling the Spread
 						["sourceQuests"] = { 86910 },	-- Koozat's Trample
@@ -294,6 +300,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 241045 },	-- Ku'paal
 						["coord"] = { 54.3, 55.7, MAP.MIDNIGHT.HARANDAR },
 					}),
+					------ Stay awhile and listen ------
+					hqt(94908, {	-- Stay awhile and listen: Orweyna
+						["name"] = "Stay awhile and listen: Orweyna",
+						["description"] = "Dialogue becomes available during 'The Hunter Awaits' (86836).",
+						["sourceQuests"] = { 86864 },	-- Watch The Den
+						["provider"] = { "n", 237786 },	-- Orweyna
+						["coord"] = { 54.3, 55.8, MAP.MIDNIGHT.HARANDAR },
+					}),
+					--
 					q(86855, {	-- Consequences of Our Duty
 						["sourceQuests"] = { 86836 },	-- The Hunter Awaits
 						["provider"] = { "n", 237236 },	-- Amarakk
@@ -309,6 +324,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 237236 },	-- Amarakk
 						["coord"] = { 62.0, 54.6, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
+							i(266259),	-- Altar of the Shul'ka (DECOR!)
 							i(238417),	-- Diminished Alndust (QI!)
 						},
 					}),
@@ -324,6 +340,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86856 },	-- Dampening the Call
 						["provider"] = { "n", 241070 },	-- Orweyna
 						["coord"] = { 61.9, 54.5, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(246407) },	-- Stoppered Spring Water Gourd (DECOR!)
 					}),
 					q(86858, {	-- The Madness Roots Deep
 						["sourceQuests"] = { 86857 },	-- Descent into the Rift
@@ -340,6 +357,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86858 },	-- The Madness Roots Deep
 						["provider"] = { "n", 237284 },	-- Amarakk
 						["coord"] = { 61.1, 57.3, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(252045) },	-- Fungal Pergola (DECOR!)
 					}),
 					q(86860, {	-- Before They Grow
 						["sourceQuests"] = { 86858 },	-- The Madness Roots Deep
@@ -377,11 +395,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 237284 },	-- Amarakk
 						["coord"] = { 63.1, 56.8, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
-							i(252957),	-- Tangle of Vibrant Vines
-							i(252956),	-- Aln-Bound Essence
-							o(527509, {	--
-								i(238738),	-- Greater Alndust (QI!)
+							o(527509, {	-- Greater Alndust
+								["coord"] = { 65.0, 57.4, MAP.MIDNIGHT.HARANDAR },
+								["groups"] = { i(238738) },	-- Greater Alndust (QI!)
 							}),
+							--
+							i(252956),	-- Aln-Bound Essence
+							i(252957),	-- Tangle of Vibrant Vines
+							i(259477),	-- Thriving Essence Sprig
 						},
 					}),
 					q(86865, {	-- In Search of the Problem
@@ -390,21 +411,54 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 63.1, 56.8, MAP.MIDNIGHT.HARANDAR },
 					}),
 					------ Stay awhile and listen ------
-					hqt(94991, {	-- Stay awhile and listen:
-						--["name"] = "Stay awhile and listen: ",
+					hqt(94991, {	-- Stay awhile and listen: Orweyna
+						["name"] = "Stay awhile and listen: Orweyna ",
 						["description"] = "Dialogue becomes available during 'In Search of the Problem' (86865).",
 						["sourceQuests"] = { 86865 },	-- In Search of the Problem
-						--["provider"] = { "n",  },	--
+						["provider"] = { "n", 237234 },	-- Orweyna
 						["coord"] = { 63.2, 56.8, MAP.MIDNIGHT.HARANDAR },
 					}),
+					--
 					q(86866, {	-- Can we Heal This?
 						["sourceQuests"] = { 86865 },	-- In Search of the Problem
-						["provider"] = { "n", 237235 },	-- Orweyna
+						["provider"] = { "n", 237325 },	-- Orweyna
+						["coord"] = { 31.4, 64.9, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(254319) },	-- Root-Woven Door (DECOR!)
+					}),
+					q(94677, {	-- The Missing Rootwarden
+						["sourceQuests"] = { 86865 },	-- In Search of the Problem
+						["provider"] = { "n", 237325 },	-- Orweyna
+						["coord"] = { 31.4, 64.9, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							o(620318, {	-- Ruia's Storage
+								["coord"] = { 31.0, 64.8, MAP.MIDNIGHT.HARANDAR },
+								["groups"] = { i(265818) },	-- Ruia's Musings, Part 1 (QI!)
+							}),
+							o(620497, {	-- Ruia's Musings
+								["coord"] = { 32.9, 65.0, MAP.MIDNIGHT.HARANDAR },
+								["groups"] = { i(265819) },	-- Ruia's Musings, Part 2 (QI!)
+							}),
+							o(620498, {	-- Ruia's Musings
+								["coord"] = { 30.5, 67.5, MAP.MIDNIGHT.HARANDAR },
+								["groups"] = { i(265820) },	-- Ruia's Musings, Part 3 (QI!)
+							})
+						},
+					}),
+					------ Stay awhile and listen ------
+					hqt(94951, {	-- Stay awhile and listen: Hannan
+						["name"] = "Stay awhile and listen: Hannan",
+						["description"] = "Dialogue becomes available during 'Can we Heal This?' (86866).",
+						["sourceQuests"] = { 86865 },	-- In Search of the Problem
+						["provider"] = { "n", 241629 },	-- Hannan
 						["coord"] = { 31.4, 64.9, MAP.MIDNIGHT.HARANDAR },
 					}),
+					--
 					q(86882, {	-- Alndust in Right Hands
-						["sourceQuests"] = { 86866 },	-- Can we Heal This?
-						["provider"] = { "n", 237236 },	-- Orweyna
+						["sourceQuests"] = {
+							86866,	-- Can we Heal This?
+							94677,	-- The Missing Rootwarden
+						},
+						["provider"] = { "n", 237356 },	-- Orweyna
 						["coord"] = { 32.0, 61.4, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = {
 							i(256213),	-- Alndust-Touched Gloves
@@ -417,6 +471,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86866 },	-- Can we Heal This?
 						["provider"] = { "n", 237356 },	-- Orweyna
 						["coord"] = { 33.2, 76.0, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(253467) },	-- Rutaani Sporepod (DECOR!)
 					}),
 					q(86881, {	-- At the Root
 						["sourceQuests"] = { 86867 },	-- Into the Lightbloom
@@ -499,6 +554,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 237465 },	-- Halduron Brightwing
 						["coord"] = { 62.3, 59.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = { i(254878) },	-- Root-Woven Window (DECOR!)
 					}),
 					q(86887, {	-- Expeditious Retreat
 						["sourceQuests"] = {
@@ -531,6 +587,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86892 },	-- Survive
 						["provider"] = { "n", 241130 },	-- Halduron Broghtwing
 						["coord"] = { 58.7, 57.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = { i(247234) },	-- Rustic Harandar Planter (DECOR!)
 					}),
 					q(86897, {	-- Quelling the Frenzy
 						["sourceQuests"] = {
@@ -541,7 +598,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 60.8, 56.8, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
 							i(259896),	-- Bark of the Guardian Tree
-							i(259477),	-- Thriving Essence Sprig
+							i(252957),	-- Tangle of Vibrant Vines
 						},
 					}),
 					q(86898, {	-- Rise of the Haranir
@@ -681,6 +738,82 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
 				}),
 			}),
+			header(HEADERS.Achievement, 61739, {	-- Sojourner of Harandar	//Just grouping quests, order not final
+				--header(HEADERS.AchCriteria, 61739.01, {	-- Bloomtown / Spot Light?
+					q(92732, {	-- Light Disturbance
+						--["sourceQuests"] = { xx },	-- ??
+						["coord"] = { 31.4, 64.9, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(92736, {	-- Light Stroll
+						["sourceQuests"] = { 92732 },	-- Light Disturbance
+						["coord"] = { 40.6, 63.0, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(92737, {	-- Light Carnage
+						["sourceQuests"] = { 92736 },	-- Light Stroll
+						["coord"] = { 41.7, 67.8, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(92738, {	-- Potatoad Tots
+						["sourceQuests"] = { 92736 },	-- Light Stroll
+						["coord"] = { 41.7, 67.8, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(92739, {	-- O.K. Bloomer
+						["sourceQuests"] = {
+							92737,	-- Light Carnage
+							92738,	-- Potatoad Tots
+						},
+						--["coord"] = { 41.7, 67.8, MAP.MIDNIGHT.HARANDAR },
+					}),
+				--}),
+				--header(HEADERS.AchCriteria, 61739.01, {	-- The Silence at Fungara Village?
+					q(91375, {	-- The Silence at Fungara Village
+						["sourceQuest"] = 86864,	-- Watch The Den
+						["coord"] = { 33.3, 66.7, MAP.MIDNIGHT.HARANDAR },
+						["isBreadcrumb"] = true,	-- I Think
+					}),
+						---14	(build 63854 - this quest chain lock out quest in other zone, could be fixed in future build or map bug)
+					q(91377, {	-- Spawn of the Dead
+						["sourceQuest"] = 91375,	-- The Silence at Fungara Village
+						["provider"] = { "n", 246777 },	-- Ghikal
+						["coord"] = { 43.9, 71.7, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(91376, {	-- Little Monsters
+						["sourceQuest"] = 91375,	-- The Silence at Fungara Village
+						["provider"] = { "n", 246777 },	-- Ghikal
+						["coord"] = { 43.9, 71.7, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(247243) },	-- Strange Mycelium (QI!)
+					}),
+					q(91379, {	-- Decayed Land
+						["sourceQuests"] = {
+							91376,	-- Little Monsters
+							91377,	-- Spawn of the Dead
+						},
+						["provider"] = { "n", 246777 },	-- Ghikal
+						["coord"] = { 44.1, 66.4, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(91378, {	-- You Are Legend
+						["sourceQuests"] = {
+							91376,	-- Little Monsters
+							91377,	-- Spawn of the Dead
+						},
+						["provider"] = { "n", 246777 },	-- Ghikal
+						["coord"] = { 44.1, 66.4, MAP.MIDNIGHT.HARANDAR },
+					}),
+					q(91381, {	-- Reticent Evil
+						["sourceQuests"] = {
+							91379,	-- Decayed Land
+							91378,	-- You Are Legend
+						},
+						["provider"] = { "n", 246777 },	-- Ghikal
+						["coord"] = { 44.1, 66.4, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = {
+							i(260440),	-- Blooming Spore Vestments
+							i(260447),	-- Fungus-Infested Brigandine
+							i(260444),	-- Ghikal's Spare Tunic
+							i(260446),	-- Spore-Covered Breastplate
+						},
+					}),
+				--}),
+			}),
 			--After campaign
 			q(93651, {	-- The Blinding Vale
 				["sourceQuests"] = { 86898 },	-- Rise of the Haranir
@@ -714,8 +847,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			--Side quests
 			---1
+			q(90615, {	-- Be Grudge You
+				["sourceQuest"] = 86864,	-- Watch The Den
+				["qg"] = 254903,	-- Motta
+				["coord"] = { 70.3, 52.9, MAP.MIDNIGHT.HARANDAR },
+				["isBreadcrumb"] = true,	-- I Think
+			}),
 			q(90616, {	-- You Strong?
-				["sourceQuests"] = { 86864 },	-- Watch The Den
+				["sourceQuest"] = 90615,	-- Be Grudge You
 				["provider"] = { "n", 243226 },	-- Boletus
 				["coord"] = { 71.8, 64.0, MAP.MIDNIGHT.HARANDAR },
 			}),
@@ -742,6 +881,36 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--TODO: bugged, Brakko uninteractable
 				},
 			}),
+			q(90620, {	-- To the Ring
+				["sourceQuest"] = 91270,	-- The Most Important Thing
+				["qg"] = 243226,	-- Boletus <Fight Promoter>
+				["coord"] = { 71.8, 64.0, MAP.MIDNIGHT.HARANDAR },
+			}),
+			q(90621, {	-- Tiny Heroes' Journeys
+				["sourceQuest"] = 90620,	-- To the Ring
+				["qg"] = 243226,	-- Boletus <Fight Promoter>
+				["coord"] = { 71.8, 64.0, MAP.MIDNIGHT.HARANDAR },
+			}),
+			q(92616, {	-- Mushrooming Courage
+				["sourceQuest"] = 90620,	-- To the Ring
+				["qg"] = 247245,	-- Brakko
+				["coord"] = { 71.8, 64.0, MAP.MIDNIGHT.HARANDAR },
+			}),
+			q(92617, {	-- Mushrooming Resilience
+				["sourceQuest"] = 90620,	-- To the Ring
+				["qg"] = 251723,	-- Ziny
+				["coord"] = { 71.8, 64.0, MAP.MIDNIGHT.HARANDAR },
+			}),
+			q(92618, {	-- Mushrooming Confidence
+				["sourceQuest"] = 90620,	-- To the Ring
+				["qg"] = 251715,	-- Tuktuk
+				["coord"] = { 71.8, 64.0, MAP.MIDNIGHT.HARANDAR },
+			}),
+			q(90622, {	-- Not-Yet Defeated Champions
+				["sourceQuest"] = 90621,	-- Tiny Heroes' Journeys
+				["qg"] = 243226,	-- Boletus <Fight Promoter>
+				["coord"] = { 71.8, 64.0, MAP.MIDNIGHT.HARANDAR },
+			}),
 			---2
 			q(92882, {	-- A Hunter's Plight
 				["sourceQuests"] = { 86864 },	-- Watch The Den
@@ -756,8 +925,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(255259),	-- Chloroceros Bone (QI!)
 					i(255258),	-- Grovecrawler Fang (QI!)
 					i(255260),	-- Lasher Vine (QI!)
-					o(584525, {	--
-						i(255261),	-- Sporeglider's Tail Spore (QI!)
+					o(584525, {	-- Sporeglider's Tail Spore
+						["coords"] = {
+							{ 69.4, 43.1, MAP.MIDNIGHT.HARANDAR },
+							{ 69.6, 44.5, MAP.MIDNIGHT.HARANDAR },
+							{ 69.9, 41.8, MAP.MIDNIGHT.HARANDAR },
+							{ 70.2, 43.8, MAP.MIDNIGHT.HARANDAR },
+							{ 71.0, 41.1, MAP.MIDNIGHT.HARANDAR },
+							{ 71.2, 42.7, MAP.MIDNIGHT.HARANDAR },
+							{ 71.5, 41.7, MAP.MIDNIGHT.HARANDAR },
+							{ 71.9, 39.6, MAP.MIDNIGHT.HARANDAR },
+						},
+						["groups"] = { i(255261) },	-- Sporeglider's Tail Spore (QI!)
 					}),
 				},
 			}),
@@ -803,22 +982,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["sourceQuests"] = { 92695 },	-- The Stroke of Storms
 				["provider"] = { "n", 252872 },	-- Orn'shan
 				["coord"] = { 72.4, 55.7, MAP.MIDNIGHT.HARANDAR },
-				["groups"] = {
-					i(258571),	-- Mushroom Pigment (QI!)
-				},
+				["groups"] = { i(258571) },	-- Mushroom Pigment (QI!)
 			}),
 			q(92697, {	-- Hues of Tomorrow
 				["sourceQuests"] = { 92696 },	-- Colors Reborn Anew
 				["provider"] = { "n", 252872 },	-- Orn'shan
 				["coord"] = { 72.4, 55.7, MAP.MIDNIGHT.HARANDAR },
 				["groups"] = {
-					i(260523),	--
-					i(260524),	-- Paintmaker's Stirrer
+					i(269981),	-- Paintmaker's Edge
+					i(260528),	-- Paintmaker's Estoc
+					i(260523),	-- Paintmaker's Kris
+					i(260525),	-- Paintmaker's Mace
+					i(260530),	-- Paintmaker's Palette
 					i(260526),	-- Paintmaker's Rapier
+					i(260529),	-- Paintmaker's Scraper
+					i(260524),	-- Paintmaker's Stirrer
 					i(260527),	-- Paintmaker's Walking Stick
-					i(260528),	--
-					i(260529),	--
-					i(260530),	--
 				},
 			}),
 			---4
@@ -1226,51 +1405,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--PH
 				},
 			}),]]--
-			---14	(build 63854 - this quest chain lock out quest in other zone, could be fixed in future build or map bug)
-			q(91377, {	-- Spawn of the Dead
-				["sourceQuests"] = { 86864 },	-- Watch The Den
-				["provider"] = { "n", 246777 },	-- Ghikal
-				["coord"] = { 43.9, 71.7, MAP.MIDNIGHT.HARANDAR },
-			}),
-			q(91376, {	-- Little Monsters
-				["sourceQuests"] = { 86864 },	-- Watch The Den
-				["provider"] = { "n", 246777 },	-- Ghikal
-				["coord"] = { 43.9, 71.7, MAP.MIDNIGHT.HARANDAR },
-				["groups"] = {
-					i(247243),	-- Strange Mycelium (QI!)
-				},
-			}),
-			q(91379, {	-- Decayed Land
-				["sourceQuests"] = {
-					91376,	-- Little Monsters
-					91377,	-- Spawn of the Dead
-				},
-				["provider"] = { "n", 246777 },	-- Ghikal
-				["coord"] = { 44.1, 66.4, MAP.MIDNIGHT.HARANDAR },
-			}),
-			q(91378, {	-- You Are Legend
-				["sourceQuests"] = {
-					91376,	-- Little Monsters
-					91377,	-- Spawn of the Dead
-				},
-				["provider"] = { "n", 246777 },	-- Ghikal
-				["coord"] = { 44.1, 66.4, MAP.MIDNIGHT.HARANDAR },
-			}),
-			q(91381, {	-- Reticent Evil
-				["sourceQuests"] = {
-					91379,	-- Decayed Land
-					91378,	-- You Are Legend
-				},
-				["provider"] = { "n", 246777 },	-- Ghikal
-				["coord"] = { 44.1, 66.4, MAP.MIDNIGHT.HARANDAR },
-				["groups"] = {
-					i(260440),	-- Blooming Spore Vestments
-					i(260447),	-- Fungus-Infested Brigandine
-					i(260444),	-- Ghikal's Spare Tunic
-					i(260446),	-- Spore-Covered Breastplate
-				},
-			}),
 			--Leading to villages, could be breadcrumb but they are not?
+			q(93776, {	-- Har'alnor, Village of Twilight
+				["sourceQuests"] = { 86864 },	-- Watch The Den
+				["qg"] = 241655,	-- Hannan
+				["coord"] = { 30.5, 77.2, MAP.MIDNIGHT.HARANDAR },
+			}),
 			q(93745, {	-- Har'athir, Village of Memory
 				["sourceQuests"] = { 86864 },	-- Watch The Den
 				["provider"] = { "n", 256245 },	-- Orna
@@ -1288,6 +1428,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["sourceQuests"] = { 86864 },	-- Watch The Den
 				["provider"] = { "n", 256313 },	-- Kaleo
 				["coord"] = { 51.0, 50.9, MAP.MIDNIGHT.HARANDAR },
+			}),
+			-- Idk where to put yet
+			q(93932, {	-- Legendary Prosperity
+				["qg"] = 240407,	-- Naynar <Renown Quartermaster>
+				["coord"] = { 51.0, 50.8, MAP.MIDNIGHT.HARANDAR },
 			}),
 		}),
 		n(QUESTS, sharedData({
@@ -1339,6 +1484,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(91512, name(HEADERS.Item,262906)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Russula's Outreach'
 				q(91456, name(HEADERS.Item,263196)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Aln'hara's Bloom'
 				--
+				q(94046),	-- Fly directly up into the glowing skybox
 			}),
 		}),
 	}),

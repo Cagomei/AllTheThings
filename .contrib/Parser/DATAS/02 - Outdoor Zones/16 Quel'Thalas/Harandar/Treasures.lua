@@ -46,7 +46,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 92203,
 				}),
 				o(571141, {	-- Glowing Moth
-					["coord"] = { 52.9, 50.7, MAP.MIDNIGHT.HARANDAR },
+					["coords"] = {
+						{ 52.9, 50.7, MAP.MIDNIGHT.HARANDAR },
+						{ 61.2, 32.8, 2576 },	-- The Den
+					},
 					["questID"] = 92214,
 				}),
 				o(571156, {	-- Glowing Moth
@@ -176,6 +179,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(571165, {	-- Glowing Moth (missing vignette on map, possible required more than r2?)
 					["coord"] = { 71.7, 58.8, MAP.MIDNIGHT.HARANDAR },
 					["questID"] = 92221,
+				}),
+				o(571149, {	-- Glowing Moth
+					["coord"] = { 62.4, 37.1, MAP.MIDNIGHT.HARANDAR },
+					["questID"] = 92226,
+				}),
+				o(571132, {	-- Glowing Moth
+					["coord"] = { 60.0, 43.0, MAP.MIDNIGHT.HARANDAR },
+					["questID"] = 92305,
 				}),
 				--Higher renown (6?)
 				o(571128, {	-- Glowing Moth
@@ -321,9 +332,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			o(616052, {	-- Flame-Hardened Sap of Teldrassil
 				["description"] = "Scattered underwater across the river",
 				["coord"] = { 40.6, 28.0, MAP.MIDNIGHT.HARANDAR },
-				["groups"] = {
-					i(260531),	-- Crystalized Resin Fragment
-				},
+				["groups"] = { i(260531) },	-- Crystalized Resin Fragment
 			}),
 			o(590801, {	-- Gift of the Cycle
 				["description"] = "Gather three items the child, the huntress and the elder spriti are missing.",
