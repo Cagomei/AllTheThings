@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				q(86903, {	-- The Arcantina (TODO: should this be considered as sourceQuest for Arcantina?)
 					["sourceQuests"] = { 86833 },	-- A Bulwark Remade
 					["provider"] = { "n", 253125 },	-- Kurdran Wildhammer
-					["coord"] = { 440.6, 66.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["coord"] = { 44.6, 66.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["maps"] = { ARCANTINA },
 					["groups"] = {
 						i(253629),	-- Personal Key to the Arcantina (TOY!)
