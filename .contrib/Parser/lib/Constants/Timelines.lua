@@ -668,26 +668,35 @@ CREATED_12_0_1 = "created 12.0.1.65818";				-- Midnight 12.0.1/Pre-Patch phase 2
 ADDED_12_0_1 = "added 12.0.1.65818";					-- Midnight 12.0.1/Pre-Patch phase 2 launch on February 10th, 2026
 REMOVED_12_0_1 = "removed 12.0.1.65818";				-- Midnight 12.0.1/Pre-Patch phase 2 launch on February 10th, 2026
 
--- Temporary using X before we know the correct number.
--- We want to show everything in pre-patch already, so leave it all as 12.0.0 for now.
 CREATED_12_0_1_LAUNCH = "created 12.0.1.66102";			-- Midnight 12.0.1 Early Access Launch on February 26th, 2026
 ADDED_12_0_1_LAUNCH = "added 12.0.1.66102";				-- Midnight 12.0.1 Early Access Launch on February 26th, 2026
 REMOVED_12_0_1_LAUNCH = "removed 12.0.1.66102";			-- Midnight 12.0.1 Early Access Launch on February 26th, 2026
+-- Temporary using X before we know the correct number.
+-- We want to show everything already, so leave it all as 12.0.1 for now.
 CREATED_12_0_X_SEASONSTART = "created 12.0.1";			-- Midnight 12.0.x Season 1 launch on March 17th, 2026
 ADDED_12_0_X_SEASONSTART = "added 12.0.1";				-- Midnight 12.0.x Season 1 launch on March 17th, 2026
 REMOVED_12_0_X_SEASONSTART = "removed 12.0.1.99999";	-- Midnight 12.0.x Season 1 launch on March 17th, 2026
 
 
-CREATED_12_0_5 = "created 12.0.5";						-- Midnight 12.0.5
-ADDED_12_0_5 = "added 12.0.5";							-- Midnight 12.0.5
-REMOVED_12_0_5 = "removed 12.0.5";						-- Midnight 12.0.5
-CREATED_12_1_0 = "created 12.1.0";						-- Midnight 12.1.0
-ADDED_12_1_0 = "added 12.1.0";							-- Midnight 12.1.0
-REMOVED_12_1_0 = "removed 12.1.0";						-- Midnight 12.1.0
+CREATED_12_0_5 = "created 12.0.5";						-- Midnight 12.0.5 launch in spring 2026
+ADDED_12_0_5 = "added 12.0.5";							-- Midnight 12.0.5 launch in spring 2026
+REMOVED_12_0_5 = "removed 12.0.5";						-- Midnight 12.0.5 launch in spring 2026
+CREATED_12_0_7 = "created 12.0.7";						-- Midnight 12.0.7 launch in spring 2026
+ADDED_12_0_7 = "added 12.0.7";							-- Midnight 12.0.7 launch in spring 2026
+REMOVED_12_0_7 = "removed 12.0.7";						-- Midnight 12.0.7 launch in spring 2026
+CREATED_12_1_0 = "created 12.1.0";						-- Midnight 12.1.0 launch in summer 2026
+ADDED_12_1_0 = "added 12.1.0";							-- Midnight 12.1.0 launch in summer 2026
+REMOVED_12_1_0 = "removed 12.1.0";						-- Midnight 12.1.0 launch in summer 2026
+CREATED_12_1_5 = "created 12.1.5";						-- Midnight 12.1.5 launch in autumn 2026
+ADDED_12_1_5 = "added 12.1.5";							-- Midnight 12.1.5 launch in autumn 2026
+REMOVED_12_1_5 = "removed 12.1.5";						-- Midnight 12.1.5 launch in autumn 2026
+CREATED_12_1_7 = "created 12.1.7";						-- Midnight 12.1.7 launch in autumn 2026
+ADDED_12_1_7 = "added 12.1.7";							-- Midnight 12.1.7 launch in autumn 2026
+REMOVED_12_1_7 = "removed 12.1.7";						-- Midnight 12.1.7 launch in autumn 2026
 
 --------------------
 -- THE LAST TITAN --
 --------------------
-CREATED_13_0_0 = "created 13.0.0";						-- The Last Titan 13.0.0
-ADDED_13_0_0 = "added 13.0.0";							-- The Last Titan 13.0.0
-REMOVED_13_0_0 = "removed 13.0.0";						-- The Last Titan 13.0.0
+CREATED_13_0_0 = "created 13.0.0";						-- The Last Titan 13.0.0 launch in 2027
+ADDED_13_0_0 = "added 13.0.0";							-- The Last Titan 13.0.0 launch in 2027
+REMOVED_13_0_0 = "removed 13.0.0";						-- The Last Titan 13.0.0 launch in 2027
