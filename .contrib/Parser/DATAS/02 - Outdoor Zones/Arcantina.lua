@@ -179,7 +179,7 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LA
 				["questID"] = 92352,
 			}),
 			o(571556, {	-- Inky Black Potion
-				["coord"] = { 42.1, 77.4, ARCANTINA },
+				["coord"] = { 40.4, 78.5, ARCANTINA },
 				["questID"] = 92353,
 			}),
 			o(571557, {	-- Inky Black Potion
@@ -193,19 +193,22 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LA
 				["coord"] = { 59.8, 60.1, ARCANTINA },
 			}),
 			o(571496, {	-- Pygmy Oil
-				["coord"] = { 61.8, 51.1, ARCANTINA },
+				["coord"] = { 59.4, 51.8, ARCANTINA },
 				["questID"] = 92355,
 			}),
 			o(571558, {	-- Pygmy Oil
-				["coord"] = { 34.3, 13.5, ARCANTINA },
+				["coord"] = { 33.1, 18.1, ARCANTINA },
 				["questID"] = 92356,
 			}),
 			o(571559, {	-- Pygmy Oil
 				["coord"] = { 74.7, 61.9, ARCANTINA },
 				["questID"] = 92357,
 			}),
+			o(553966, {	-- Pygmy Oil
+				["coord"] = { 33.7, 15.2, ARCANTINA },
+			}),
 			o(571497, {	-- Reflecting Prism
-				["coord"] = { 54.5, 44.6, ARCANTINA },
+				["coord"] = { 55.6, 46.4, ARCANTINA },
 				["questID"] = 92358,
 			}),
 			o(571560, {	-- Reflecting Prism
@@ -225,8 +228,11 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LA
 				["questID"] = 92362,
 			}),
 			o(571563, {	-- Savory Deviate Delight
-				["coord"] = { 67.9, 52.2, ARCANTINA },
+				["coord"] = { 69.9, 52.6, ARCANTINA },
 				["questID"] = 92363,
+			}),
+			o(614803, {	-- Savory Deviate Delight
+				["coord"] = { 34.0, 28.3, ARCANTINA },
 			}),
 		})),
 		n(VENDORS, {

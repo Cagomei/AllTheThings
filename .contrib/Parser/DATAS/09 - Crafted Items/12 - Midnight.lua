@@ -683,6 +683,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(88613, 1225284),	-- Lucky Loa
 			FirstCraft(88603, 1225270),	-- Lynxfish
 			FirstCraft(88617, 1225268),	-- Null Voidfish
+			FirstCraft(88610, 1225273),	-- Ominous Octopu
 			FirstCraft(88609, 1225277),	-- Restored Songfish
 			FirstCraft(88604, 1225269),	-- Root Crab
 			FirstCraft(88615, 1225271),	-- Shimmersiren

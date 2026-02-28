@@ -113,18 +113,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = {
 							o(528310, {	-- Mysterious Corpse
 								["coord"] = { 49.2, 58.8, MAP.MIDNIGHT.EVERSONG_WOODS },
-								["g"] = { i(239496) },	-- Despoiled Notes (QI!)
+								["groups"] = { i(239496) },	-- Despoiled Notes (QI!)
 							}),
 						},
 					}),
-					------ Stay awhile and listen ------
-					hqt(91078, {	-- Stay awhile and listen: Orweyna
-						["name"] = "Stay awhile and listen: Orweyna",
-						["description"] = "Dialogue becomes available during 'The Wayward Magister' (86621).",
-						["sourceQuests"] = { 86745 },	-- Silvermoon Must Know
-						["provider"] = { "n", 236903 },	-- Orweyna
-						["coord"] = { 47.4, 55.3, MAP.MIDNIGHT.EVERSONG_WOODS },
-					}),
+					------ Stay awhile and listen ------ Not Ingame?
+					--hqt(91078, {	-- Stay awhile and listen: Orweyna
+					--	["name"] = "Stay awhile and listen: Orweyna",
+					--	["description"] = "Dialogue becomes available during 'The Wayward Magister' (86621).",
+					--	["sourceQuests"] = { 86745 },	-- Silvermoon Must Know
+					--	["provider"] = { "n", 236903 },	-- Orweyna
+					--	["coord"] = { 47.4, 55.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+					--}),
 					q(86623, {	-- Appeal to the Void
 						["sourceQuests"] = { 86621 },	-- The Wayward Magister
 						["provider"] = { "n", 236087 },	-- Magister Umbric
@@ -296,7 +296,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 59.1, 51.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
 							o(525307, {	-- Shipment Crate
-								i(244469),	-- Lightbloom Axe (QI!)
+								["coord"] = { 60.6, 52.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+								["groups"] = { i(244469) },	-- Lightbloom Axe (QI!)
 							}),
 						},
 					}),
@@ -351,6 +352,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(86646, {	-- An Impasse
 						["sourceQuests"] = { 86644 },	-- Gods Before Us
 						["provider"] = { "n", 240662 },	-- Arator (mobileNPC)
+						["coord"] = { 17.1, 36.5, 2579 },	-- Wartha'nan Crypts
 						["groups"] = {
 							i(248080),	-- Enchanted Crypt Fetish
 							i(250470),	-- Enchanted Crypt Bow
@@ -943,23 +945,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = {
 							o(539775, {	-- Mislaid Bag
 								["coord"] = { 50.6, 58.1, MAP.MIDNIGHT.SILVERMOON_CITY },
-								["g"] = { i(243240) },	-- Drained Wyrm Core (QI!)
+								["groups"] = { i(243240) },	-- Drained Wyrm Core (QI!)
 							}),
 							o(539772, {	-- "Empty" Wine Bottle"
 								["coord"] = { 52.1, 56.1, MAP.MIDNIGHT.SILVERMOON_CITY },
-								["g"] = { i(243237) },	-- Bottled Fel Dust (QI!)
+								["groups"] = { i(243237) },	-- Bottled Fel Dust (QI!)
 							}),
 							o(539770, {	-- Strewn Rags
 								["coord"] = { 54.8, 61.3, MAP.MIDNIGHT.SILVERMOON_CITY },
-								["g"] = { i(243236) },	-- Stained Worker's Shirt (QI!)
+								["groups"] = { i(243236) },	-- Stained Worker's Shirt (QI!)
 							}),
 							o(539773, {	-- Concealed Crate
 								["coord"] = { 51.9, 60.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-								["g"] = { i(243238) },	-- Blackened Metal Fragment (QI!)
+								["groups"] = { i(243238) },	-- Blackened Metal Fragment (QI!)
 							}),
 							o(539774, {	-- Inconspicuous Ledger
 								["coord"] = { 51.0, 56.3, MAP.MIDNIGHT.SILVERMOON_CITY },
-								["g"] = { i(243239) },	-- Handwritten List (QI!)
+								["groups"] = { i(243239) },	-- Handwritten List (QI!)
 							}),
 						},
 					}),
@@ -976,7 +978,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(253211),	-- Smuggler's Signet (QI!)
 							o(539728, {	-- Crate of Fel Artifacts
 								["coord"] = { 57.9, 52.1, MAP.MIDNIGHT.SILVERMOON_CITY },
-								["g"] = {
+								["groups"] = {
 									i(245566),	-- Fel Splinter
 									i(244528),	-- Shipping Manifest (QI!)
 								},
@@ -997,7 +999,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 32.2, 26.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 					}),
 					---
-					q(90822, {	-- Windrunner Spire: Haunting Melodies (TODO: dungeon quest)
+					q(93850, {	-- Windrunner Spire: Haunting Melodies (TODO: dungeon quest)
 						["provider"] = { "n", 256875 },	-- Restless Spirit
 						["coord"] = { 35.5, 79.1, MAP.MIDNIGHT.EVERSONG_WOODS },
 					}),
@@ -1037,7 +1039,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(91494, {	-- One Elf's Trash, Another Elf's Treasure
 						["sourceQuests"] = { 91493 },	-- Not What I Ordered
 						["provider"] = { "n", 250298 },	-- Numia Golden
-						["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["coord"] = { 39.0, 61.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
 							i(247593),	-- Borrowed Wand (QI!)
 						},
@@ -1079,9 +1081,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 249337 },	-- Talandra Dawnsprite
 						["coord"] = { 37.5, 72.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
-							o(568332, {
-								["coord"] = { 38.9, 76.4, MAP.MIDNIGHT.EVERSONG_WOODS },
-								["g"] = { i(249471) },	-- Pristine Graveblossom (QI!)
+							o(568332, {	-- Blooming Graveblossom
+								["coords"] = {
+									{ 37.9, 76.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+									{ 38.1, 77.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+									{ 38.3, 72.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+									{ 38.5, 74.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+									{ 38.9, 76.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+									{ 39.1, 77.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+									{ 39.4, 72.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+									{ 39.5, 74.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+									{ 39.5, 76.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+									{ 40.0, 74.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+									{ 40.4, 73.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+								},
+								["groups"] = { i(249471) },	-- Pristine Graveblossom (QI!)
 							}),
 						},
 					}),
@@ -1207,8 +1221,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 241553 },	-- Vaelith Sunplume
 						["coord"] = { 56.8, 35.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
-							o(547829, {	--
-								i(245531),	-- Golden Sunleaf (QI!)
+							o(547829, {	-- Golden Sunleaf
+								["coord"] = { 53.4, 35.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+								["groups"] = { i(245531) },	-- Golden Sunleaf (QI!)
 							}),
 						},
 					}),
@@ -1232,8 +1247,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 250791 },	-- Terel Bloodfate
 						["coord"] = { 50.1, 34.2, MAP.MIDNIGHT.EVERSONG_WOODS },
 					}),
-					q(92397, {	-- And Then They Came
-						--["sourceQuests"] = { xx },	-- xx
+					q(92398, {	-- And Then They Came
+						["sourceQuests"] = { 92396 },	-- Calling in the Cavalry
+						["provider"] = { "n", 250798 },	-- Alesil Dawnblood
+						["coord"] = { 61.7, 62.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+					}),
+					q(92397, {	-- Dawnstar Defense
+						["sourceQuests"] = { 92398 },	-- And Then They Came
 						["provider"] = { "n", 250798 },	-- Alesil Dawnblood
 						["coord"] = { 61.7, 62.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 					}),
@@ -1242,10 +1262,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		}),
 	}),
 }));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.EVERSONG_WOODS, {
 			n(QUESTS, {
+				q(93818),	-- After turning in The Line Must be Drawn Here (86710)
 			}),
 		}),
 	}),

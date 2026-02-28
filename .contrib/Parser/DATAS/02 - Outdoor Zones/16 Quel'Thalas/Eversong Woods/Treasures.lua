@@ -7,13 +7,27 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(259369),	-- Design: Resplendent Highborne Statue (RECIPE!)
 			i(258131),	-- Pattern: Luxurious Silvermoon Lounge Cushion (RECIPE!)
 			header(HEADERS.Achievement, 62185, {	-- Ever Painting
-				o(621762),	-- Anar'alah Belore
-				o(621700),	-- Babble and Brook
-				o(621711),	-- Elrendar's Song
-				o(621732),	-- Light Consuming
-				o(621734),	-- Lost Lamppost
-				o(621709),	-- Memories of Ghosts
-				o(621707),	-- Sway of Red and Gold
+				o(621762, {	-- Anar'alah Belore
+					["coord"] = { 50.8, 41.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+				o(621700, {	-- Babble and Brook
+					["coord"] = { 46.1, 64.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+				o(621711, {	-- Elrendar's Song
+					["coord"] = { 42.6, 62.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+				o(621732, {	-- Light Consuming
+					["coord"] = { 55.1, 59.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+				o(621734, {	-- Lost Lamppost
+					["coord"] = { 41.8, 56.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+				o(621709, {	-- Memories of Ghosts
+					["coord"] = { 39.0, 78.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+				o(621707, {	-- Sway of Red and Gold
+					["coord"] = { 54.0, 75.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
 			}),
 			header(HEADERS.Achievement, 61960, {	-- Treasures of Eversong Woods
 				o(613242, {	-- Antique Nobleman's Signet Ring
@@ -33,7 +47,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				o(617432, {	-- Forgotten Ink and Quill
 					["coord"] = { 43.3, 69.5, MAP.MIDNIGHT.EVERSONG_WOODS },
-					--["questID"] = 94747,	-- I did not get his //Braghe (ShadowBrooks did though??)
+					["questID"] = 94747,
 					["questID"] = 93893,
 					["groups"] = { i(262616) },	-- Lively Songwriter's Quill (DECOR!)
 				}),

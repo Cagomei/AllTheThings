@@ -53,8 +53,6 @@ root(ROOTS.Unsorted, {
 				i(259354),	-- Brown Paper Sack
 			}),
 			filter(MISC, {
-				i(257024),	-- A Lost Hunting Knife
-				i(257054),	-- A Rolled-Up Pillow
 				-- Midnight Preseason
 				i(268485),	-- Victorious Stormarion Pinnacle Cache
 				i(268487),	-- Avid Learner's Supply Pack
@@ -397,7 +395,6 @@ root(ROOTS.Unsorted, {
 				i(264391),	-- Sanctified Touch
 				i(264587),	-- Ani's Trinket Bag
 				i(264990),	-- Fairbreeze Franciacorta
-				i(265041),	-- Singed Ritual Parchment
 				i(265043),	-- Dented Voidblade Pommel
 				i(265045),	-- Sealed Blood Vial
 				i(265046),	-- Warped Summoning Sigil
@@ -408,7 +405,6 @@ root(ROOTS.Unsorted, {
 				i(265051),	-- Carved Root Totem
 				i(265052),	-- Crumbly Stone Shard
 				i(265053),	-- Gnarled Bark Shard
-				i(265054),	-- Cracked Tribal Mask
 				i(265055),	-- Torn Dimensional Wrap
 				i(265056),	-- Flickering Energy Coil
 				i(265057),	-- Hollow Binding Strand
@@ -430,7 +426,6 @@ root(ROOTS.Unsorted, {
 				i(266213),	-- Incense Materials
 				i(260603),	-- Frail and Flexible Wing
 				i(260674),	-- Fine Arcane Dust
-				i(260679),	-- Fleshless Bone
 				i(260680),	-- Nesting Materials
 				i(260682),	-- Rusty Tusk Ring
 				i(260690),	-- Gloomy Root

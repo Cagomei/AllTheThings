@@ -15,12 +15,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(86710, {	-- The Line Must be Drawn Here
 						["sourceQuests"] = { 86708 },	-- The Gates of Zul'Aman
 						["provider"] = { "n", 236436 },	-- Lady Liadrin
-						["coord"] = { 60.1, 81.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+						["coord"] = { 60.1, 81.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 					}),
 					q(90749, {	-- Our Mutual Enemy
 						["sourceQuests"] = { 86710 },	-- The Line Must be Drawn Here
 						["provider"] = { "n", 236436 },	-- Lady Liadrin
-						["coord"] = { 60.1, 81.5, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+						["coord"] = { 60.1, 81.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 					}),
 					q(86868, {	-- Goodwill Tour
 						["sourceQuests"] = { 90749 },	-- Our Mutual Enemy
@@ -442,16 +442,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 50.8, 54.5, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = { i(256928) },	-- Banner of the Amani Tribe (DECOR!)
 					}),
+					q(91967, {	-- You Know This Evil?
+						["sourceQuests"] = { 91087 },	-- Reports Returned
+						["provider"] = { "n", 235787 },	-- Lor'themar Theron
+						["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					}),
 				}),
 			}),
-			--Alex TODO: seems like next zone related?
-			q(91967, {	-- You Know This Evil?
-				["sourceQuests"] = { 91087 },	-- Reports Returned
-				["provider"] = { "n", 235787 },	-- Lor'themar Theron
-				["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
-				--Alex TODO: further progress locked due to vanishing quest npcs
-			}),
-			--
 			n(BONUS_OBJECTIVES, {
 				q(91040, {	-- Vexatious Vilebranch
 					["coord"] = { 36.7, 34.9, MAP.MIDNIGHT.ZULAMAN },

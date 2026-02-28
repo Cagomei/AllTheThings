@@ -31,6 +31,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264621),	-- Bad Zed's Worst Channeler
 					i(251788),	-- Gift of Light
+					i(265027),	-- Lucky Lynx Locket
 					i(264536),	-- Zedling Summoning Collar
 				},
 			}),
@@ -133,6 +134,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["questID"] = 92409,
 				["groups"] = {
 					i(264546),	-- Bat Fur Boots
+					i(265027),	-- Lucky Lynx Locket
 					i(264537),	-- Winged Terror Gloves
 				},
 			}),

@@ -102,12 +102,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				q(86843, {	-- Light Miswielded
 					["sourceQuests"] = { 86842 },	-- Cleanse the Halls
 					["provider"] = { "n", 237602 },	-- Alonsus Faol
-					["coord"] = { 47.4, 90.7, 2438 },	-- Scarlet Halls
+					["coord"] = { 47.4, 89.6, 2438 },	-- Scarlet Halls
 				}),
 				q(86844, {	-- Light Repurposed
 					["sourceQuests"] = { 86842 },	-- Cleanse the Halls
 					["provider"] = { "n", 237602 },	-- Alonsus Faol
-					["coord"] = { 47.4, 90.7, 2438 },	-- Scarlet Halls
+					["coord"] = { 47.4, 89.6, 2438 },	-- Scarlet Halls
 					["groups"] = {
 						i(237761),	-- Aelyse's Gleaming Falchion (QI!)
 						i(237576),	-- Benthar's Scarlet Spire (QI!)
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						86844,	-- Light Repurposed
 					},
 					["provider"] = { "n", 237602 },	-- Alonsus Faol
-					["coord"] = { 41.4, 28.8, 2438 },	-- Scarlet Halls
+					["coord"] = { 47.6, 90.0, 2438 },	-- Scarlet Halls
 				}),
 				q(86902, {	-- Relinquishing Relics
 					["sourceQuests"] = { 92136 },	-- Relic Delivery
@@ -394,11 +394,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						91823,	-- Lines Cut, Tongues Silenced
 						91824,	-- The Thieves' Trail
 					},
-					["provider"] = { "n", 248874 },	-- Valeera Sanguinar
+					["provider"] = { "n", 248750 },	-- Valeera Sanguinar
 					["coord"] = { 61.9, 68.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["groups"] = {
-						o(566101, {	--
-							i(248720),	-- Stolen Documents (QI!)
+						o(566101, {	-- Unlocked Strongbox
+							["coord"] = { 61.9, 68.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+							["groups"] = { i(248720) },	-- Stolen Documents (QI!)
 						}),
 					},
 				}),

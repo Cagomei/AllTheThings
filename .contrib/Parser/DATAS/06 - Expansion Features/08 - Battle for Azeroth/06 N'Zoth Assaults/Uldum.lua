@@ -1706,7 +1706,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					}),
 					o(341808, {	-- Gersahl Shrub
 						["description"] = "Can be located along the river banks in present / N'Zoth assault timeline.",
-						["g"] = { i(174858) },	-- Gersahl Greens
+						["groups"] = { i(174858) },	-- Gersahl Greens
 					}),
 				}),
 			}),

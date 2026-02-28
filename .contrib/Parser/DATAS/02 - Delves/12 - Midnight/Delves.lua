@@ -717,7 +717,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					["provider"] = { "o", 611933 },	-- The Shadow Enclave
 					["coords"] = {
 						{ 29.2, 73.6, THE_SHADOW_ENCLAVE },
-						{ 50.8, 40.0, MAP.MIDNIGHT.EVERSONG_WOODS },	-- alpha data / outdoor
+						{ 50.8, 40.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 					},
 				}),
 				filter(MISC, {

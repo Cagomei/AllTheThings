@@ -1360,7 +1360,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					i(238547),	-- Silvermoon Blacksmith's Hammer
 				},
 			}),
-			o(525960, {	-- Silvermoon Smithing Kit
+			o(525960, {	-- Silvermoon Smithing Kit //TODO or 627583???
 				["coord"] = { 48.3, 75.8, MAP.MIDNIGHT.EVERSONG_WOODS },
 				["questID"] = 89178,
 				["groups"] = {

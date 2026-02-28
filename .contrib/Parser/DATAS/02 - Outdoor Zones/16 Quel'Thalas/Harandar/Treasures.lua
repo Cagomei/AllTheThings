@@ -292,10 +292,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(257024),	-- A Lost Hunting Knife
 				},
 			}),
-			o(590801, {	-- A Rolled Up Pillow
+			o(590801, {	-- A Rolled-Up Pillow
 				["coord"] = { 51.4, 56.0, MAP.MIDNIGHT.HARANDAR },
 				["groups"] = {
-					i(257054),	-- A Rolled Up Pillow
+					i(257054),	-- A Rolled-Up Pillow
 				},
 			}),
 			o(588966, {	-- A Tattered Ball
@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 					n(254116, {	-- Elder Spirit
 						["coord"] = { 51.2, 58.6, MAP.MIDNIGHT.HARANDAR },
-						["provider"] = { "i", 257054 },	-- A Rolled Up Pillow
+						["provider"] = { "i", 257054 },	-- A Rolled-Up Pillow
 						["questID"] = 93146,
 					}),
 				},
