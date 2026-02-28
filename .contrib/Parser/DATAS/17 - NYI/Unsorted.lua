@@ -49,7 +49,6 @@ root(ROOTS.Unsorted, {
 				i(258294),	-- Lush Garden Gnome-Like Statue
 				i(258567),	-- Lush Garden Fungal Chair
 				i(258888),	-- Lush Garden Fungal Fountain
-				i(246857),	-- "Shu'halo Perspective" Painting
 				i(259354),	-- Brown Paper Sack
 			}),
 			filter(MISC, {
@@ -436,23 +435,8 @@ root(ROOTS.Unsorted, {
 				i(267620),	-- Simple Stein
 				i(267621),	-- Traditional Stein
 				i(267622),	-- Rugged Torch
-				-- Sargle?
-				i(236359),	-- Sargle's Fortune #1
-				i(236365),	-- Sargle's Fortune #2
-				i(236366),	-- Sargle's Fortune #3
-				i(236367),	-- Sargle's Fortune #4
-				i(236368),	-- Sargle's Fortune #5
-				i(236369),	-- Sargle's Fortune #6
-				i(236370),	-- Sargle's Fortune #7
-				i(236371),	-- Sargle's Fortune #8
-				i(236372),	-- Sargle's Fortune #9
-				i(236373),	-- Sargle's Fortune #10
-				i(236377),	-- Sargle's Fortune #11
-				i(236381),	-- Sargle's Fortune #12
-				i(236387),	-- Sargle's Fortune #13
 
 				-- Misc murder row
-				i(237766),	-- Felwyrm Egg
 				i(260311),	-- Empty Felwyrm Core
 
 				-- Alcohol

@@ -804,7 +804,7 @@ q(35364,{lvl=30,type="hqt"}),
 q(35366,{lvl=35,type="hqt"})}}),
 inst(185,{awp=60002,savedInstanceID=939,g={
 q(35435,{lvl=30,type="hqt"})}}),
-inst(77,{awp=60002,isRaid=false,savedInstanceID=568,g={
+inst(77,{awp=60002,isRaid=1,savedInstanceID=568,g={
 q(35443,{lvl=35,type="hqt"})}}),
 inst(76,{awp=60002,isRaid=false,savedInstanceID=859,g={
 q(35411,{lvl=35,type="hqt"}),
@@ -7188,7 +7188,7 @@ q(84598,{an="cu:3100",type="hqt"}),
 q(85833,{an="cu:3100",type="hqt"}),
 q(84608,{an="cu:3100",type="hqt"})})}),
 x(12,{
-h(-204,{awp=120000,g={
+h(-204,{awp=120001,g={
 h(-381,{
 q(91188,{isDaily=1,type="hqt"}),
 q(91186,{isDaily=1,type="hqt"}),
@@ -7205,9 +7205,10 @@ h(-45,{
 q(93067,{type="hqt"}),
 q(93275,{type="hqt"}),
 q(93789,{type="hqt"}),
-q(94419,{awp=120000,rwp=120100,type="hqt"})})}),
+q(94419,{awp=120001,rwp=120100,type="hqt"})})}),
 m(2395,{lvl=80,g={
 h(-45,{
+q(93818,{type="hqt"}),
 q(94815,{type="hqt"}),
 q(95435,{type="hqt"}),
 q(92848,{type="hqt"})}),

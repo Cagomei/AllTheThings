@@ -2552,7 +2552,7 @@ crit(6756,{achID=1563,id=9})}}),
 ach(1797,{awp=30002,rank=75,requireSkill=185}),
 ach(1796,{awp=30002,rank=50,requireSkill=185}),
 ach(1795,{awp=30002,rank=25,requireSkill=185}),
-ach(1998,{awp=30002,cost={{"c",81,1},{"c",402,1}},providers={{"i",57142},{"i",57757}},rank=1,requireSkill=185}),
+ach(1998,{awp=30002,cost={{"c",81,1},{"c",402,1}},providers={{"i",43016},{"i",57142},{"i",57757}},rank=1,requireSkill=185}),
 ach(1999,{awp=30002,cost={{"c",81,10},{"c",402,10}},rank=10,requireSkill=185}),
 ach(2000,{awp=30002,cost={{"c",81,25},{"c",402,25}},rank=25,requireSkill=185}),
 ach(2001,{awp=30002,cost={{"c",81,50},{"c",402,50}},rank=50,requireSkill=185}),
@@ -3522,7 +3522,7 @@ o(525951,{coords={
 [2405]={{35.5,58.8}}},questID=89102,requireSkill=333,g={
 i(238550,{b=1,requireSkill=333,spellID=1225667})}}),
 o(525946,{coords={
-[2395]={{63.5,32.6}}},questID=83865,requireSkill=333,g={
+[2395]={{63.5,32.6}}},questID=89107,requireSkill=333,g={
 i(238555,{b=1,requireSkill=333,spellID=1225667})}})}}),
 h(-246,{requireSkill=333,g={
 i(263464,{b=1,isWeekly=1,requireSkill=333,spellID=1270532,g={

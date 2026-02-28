@@ -38745,11 +38745,11 @@ r(382333,{awp=100002,cost={{"i",137642,3}},itemID=199238,pvp=1,requireSkill=202,
 r(382334,{awp=100002,cost={{"i",137642,3}},itemID=199239,pvp=1,requireSkill=202,skillID=2827}),
 r(386667,{awp=100002,cost={{"i",137642,3}},itemID=199299,pvp=1,requireSkill=202,skillID=2827})}})}})}}),
 x(11,{pvp=1,g={
-h(-305,{awp=120000,pvp=1,rwp=120000,u=2,g={
-h(-12,{pvp=1,u=2,g={
-ach(40795,{awp=110002,pvp=1,u=2,g={
+h(-305,{awp=120001,pvp=1,g={
+h(-12,{pvp=1,g={
+ach(40795,{awp=110002,pvp=1,rwp=120000,u=2,g={
 toy(227539,{b=1,lvl=80,pvp=1,u=2})}}),
-ach(40792,{awp=110002,pvp=1,u=2,g={
+ach(40792,{awp=110002,pvp=1,rwp=120000,u=2,g={
 toy(227538,{b=1,lvl=80,pvp=1,u=2})}}),
 ach(61200,{pvp=1,g={
 s(300663,255969,{b=1,f=3,lvl=90,pvp=1})}}),
@@ -43787,7 +43787,7 @@ s(295481,248359,{awp=110200,bonusID=7532,cost={{"i",137642,5}},f=25,lvl=80,pvp=1
 s(295467,248345,{awp=110200,bonusID=7532,cost={{"i",137642,5}},f=35,lvl=80,pvp=1,rwp=120001,u=2})}})}}),
 h(-47,{pvp=1,g={
 i(230284,{b=1,description="Rewarded within the first few wins in queued PvP Content.",pvp=1,rwp=120001,u=2})}})}})}}),
-x(12,{awp=120000,pvp=1,g={
+x(12,{awp=120001,pvp=1,g={
 h(-666,{pvp=1,g={
 h(-12,{pvp=1,rwp=120100,g={
 ach(61443,{pvp=1,g={

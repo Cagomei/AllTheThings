@@ -24728,7 +24728,6 @@ L.QUEST_NAMES = {
 	[90884] = "Stay awhile and listen: Orweyna",
 	[91060] = "Stay awhile and listen: Loa Speaker Kinduru",
 	[91064] = "Stay awhile and listen: Alleria Windrunnner",
-	[91078] = "Stay awhile and listen: Orweyna",
 	[91286] = "Devoured Energy-Pod Devourer Attack: The Oasis",
 	[91287] = "Devoured Energy-Pod Devourer Attack: Eco-dome Primus",
 	[91289] = "Devoured Energy-Pod Devourer Attack: The Atrium",

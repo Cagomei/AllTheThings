@@ -2759,6 +2759,7 @@ MobileDB.GameObject = {
 	[577999] = true,	-- Ironwood Lumber
 	[578023] = true,	-- Ironwood Lumber
 	[578160] = true,	-- Ashwood Lumber
+	[578273] = true,	-- Delivery Crate (q:92396)
 	[578925] = true,	-- Ironwood Lumber
 	[578955] = true,	-- Flickering Spoils
 	[578956] = true,	-- Shadowed Flickering Spoils

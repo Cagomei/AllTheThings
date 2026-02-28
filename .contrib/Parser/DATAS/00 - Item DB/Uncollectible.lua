@@ -2603,6 +2603,7 @@ i(243216);	-- Snapped Antennae
 ------------------
 i(238482);	-- A Whole Lot of Nothing
 i(260654);	-- Abrasive Sand
+i(253623);	-- Abstract Painting
 i(260276);	-- Akil'stew
 i(260636);	-- Algae Covered Stone
 i(255688);	-- Anchor of the Abyss
@@ -2738,6 +2739,7 @@ i(260291);	-- Stargazer Pudding
 i(260267);	-- Steamed Hexx'alor Lobster
 i(260659);	-- Stellar Vortex Residue
 i(260620);	-- Stone Droppings
+i(253622);	-- Strangely Pleasant Painting
 i(262786);	-- Suntouched Special Reserve
 i(264983);	-- Sunwell Shot
 i(260667);	-- Tainted Organs

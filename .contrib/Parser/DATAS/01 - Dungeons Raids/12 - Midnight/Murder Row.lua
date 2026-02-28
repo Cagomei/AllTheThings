@@ -33,6 +33,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			2435,	-- The Illicit Rain
 		},
 		["groups"] = {
+			n(QUESTS, {
+				q(90822, {	-- Murder Row: One Fel Swoop
+					["sourceQuests"] = { 90821 },	-- Murder Row: Harbored Secrets
+					["provider"] = { "n", 245297 },	-- Belath Dawnblade
+					["coord"] = { 32.2, 26.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(KYSTIA, {
 					i(251125),	-- Felsoaked Soles
@@ -76,15 +83,61 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(251140),	-- Vilefiend's Guise
 				}),
 				filter(MISC, {
-					i(236381),	-- Sargle's Fortune #12
-					-- Vednor consumable buff, one per player. Not sure if worth sourcing per npc
-					i(237765),	-- Hearthstop Blade
-					i(237763),	-- Felstone
-					i(235644),	-- Concealed Pistol
-					i(236332),	-- Suntouched Special Reserve
-					i(237764),	-- Exquisite Painting
-					i(253622),	-- Strangely Pleasant Painting (TODO: incase it will be decor in future builds, but trash atm)
-					i(253623),	-- Abstract Painting (TODO: incase it will be decor in future builds, but trash atm)
+					currency(3250, {	-- Faceted Crystaline Fel
+						["description"] = "Can be found scattered throughout the Murder Row Dungeon.\nUsed for buying buffs from highlighted vendors.\nOnly 1 per player, per run can be obtained.",
+					}),
+				}),
+				n(VENDORS, {
+					n(236861, {	-- Cravitz Lorent <Shady Art Dealer>
+						i(246857, {	-- "Shu'halo Perspective" Painting (DECOR!)
+							["cost"] = 99999999999,	-- 9,999,999g
+						}),
+						i(237764, {	-- Exquisite Painting
+							["cost"] = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+						}),
+					}),
+					n(236076, {	-- Darlia <Poison Supplies>
+						i(237765, {	-- Hearthstop Blade
+							["cost"] = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+						}),
+					}),
+					n(236078, {	-- Feranin <Exotic Goods>
+						i(237766, {	-- Felwyrm Egg
+							["cost"] = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+						}),
+					}),
+					n(236080, {	-- Sleyin <Weapon Merchant>
+						i(235644, {	-- Concealed Pistol
+							["cost"] = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+						}),
+					}),
+					n(236872, {	-- Vanaris <Gem Vendor>
+						i(237763, {	-- Felstone
+							["cost"] = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+						}),
+					}),
+					n(236079, {	-- Vinemaster Suntouched <Wine & Spirits Vendor>
+						i(236332, {	-- Suntouched Special Reserve
+							["cost"] = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+						}),
+					}),
+				}),
+				n(SPECIAL, {
+					n(236866, {	-- Soothsayer Sargle
+						i(236359),	-- Sargle's Fortune #1
+						i(236365),	-- Sargle's Fortune #2
+						i(236366),	-- Sargle's Fortune #3
+						i(236367),	-- Sargle's Fortune #4
+						i(236368),	-- Sargle's Fortune #5
+						i(236369),	-- Sargle's Fortune #6
+						i(236370),	-- Sargle's Fortune #7
+						i(236371),	-- Sargle's Fortune #8
+						i(236372),	-- Sargle's Fortune #9
+						i(236373),	-- Sargle's Fortune #10
+						i(236377),	-- Sargle's Fortune #11
+						i(236381),	-- Sargle's Fortune #12
+						i(236387),	-- Sargle's Fortune #13
+					}),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({

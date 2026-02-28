@@ -704,6 +704,10 @@ root(ROOTS.BlackMarket, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLA
 		n(100986, {	-- Madam Goya [Underbelly]
 			["coord"] = { 71.37, 17.93, LEGION_THE_UNDERBELLY },
 		}),
+		-- #elseif BEFORE TLT
+		n(243247, {	-- Madam Goya [Silvermoon City]
+			["coord"] = { 81.9, 48.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+		}),
 		-- #endif
 		-- #if AFTER WOD
 		n(94829, {	-- Zhang Yeoh [Garrison]
