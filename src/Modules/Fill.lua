@@ -102,8 +102,8 @@ local FillSettings = {
 	Icons = {
 		REAGENT = app.asset("Interface_Reagent")
 	},
-	Defaults = {
-		NPC = false
+	SettingsDefaults = {
+		["LIST:REAGENT"] = false,
 	},
 }
 local ActiveFillFunctions = {}
@@ -315,6 +315,11 @@ api.AddFiller = function(name, func, options)
 		end
 		if options.SettingsIcon then
 			FillSettings.Icons[name] = options.SettingsIcon
+		end
+		if options.SettingsDefaults then
+			for k, v in pairs(options.SettingsDefaults) do
+				FillSettings.SettingsDefaults[k] = v
+			end
 		end
 	end
 
