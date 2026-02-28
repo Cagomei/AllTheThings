@@ -22,7 +22,7 @@ local FanfareFunctions = setmetatable({
 
 local TooSpammyThings = {
 	Exploration = true,
-	Quests = true,
+	Quest = true,
 }
 
 -- TODO: maybe consolidate to collecting an actual 'Thing' when possible
