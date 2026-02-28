@@ -291,9 +291,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		})),
 	})),
 	n(ACHIEVEMENTS, {
-		ach(40817, {	-- A Delver's Bounty
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-		}),
 		ach(41115, {	-- Algari Delver
 			["timeline"] = { ADDED_11_1_0 },
 			["maps"] = ALL_REGULAR_DELVES_TWW,
@@ -777,19 +774,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		ach(40455, {	-- Buddy System
 			["maps"] = ALL_THE_DELVES_TWW,
 		}),
-		ach(40882, {	-- Copious Coffers
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-			["groups"] = {
-				title(575),	-- <Name> the Bountiful
-				i(237358, {	-- Silver Coffer Key
-					["timeline"] = { ADDED_11_1_0 },
-				}),
-			},
-		}),
-		ach(41097, {	-- Curiosity Never Killed the Looter
-			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-		}),
 		ach(40437, {	-- Delver of the Depths (automated)
 			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
@@ -862,20 +846,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		ach(40732, {	-- Heavy-Handed
 			["maps"] = ALL_THE_DELVES_TWW,
 		}),
-		ach(40098, {	-- Immortal Spelunker
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-			["groups"] = {
-				title(549),	-- Immortal Spelunker <Name>
-			},
-		}),
-		ach(40763, {	-- I'm not a Thief, I'm a Treasure Hunter
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-		}),
 		ach(40459),		-- I've Got a Flying Machine!
 		ach(40789),		-- I've Got More Flying Machine?! (automated)
-		ach(40788, {	-- I Got the Keys
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-		}),
 		ach(40452, {	-- Just Keep Swimming
 			["maps"] = KOBYSS_DELVES_TWW,
 		}),
@@ -927,27 +899,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				i(235016),	-- Redeployment Module (TOY!)
 			},
 		}),
-		ach(40863, {	-- Perplexing Puzzle
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-		}),
-		ach(40864, {	-- Plentiful Perplexing Puzzles
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-			["crs"] = {
-				225401,	-- Wrapped Spool
-			},
-		}),
-		ach(41105, {	-- Prodigious Plentiful Perplexing Puzzles
-			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-			["crs"] = {
-				225401,	-- Wrapped Spool
-			},
-		}),
 		ach(40820, {	-- Raisin' Brann
 			["maps"] = ALL_THE_DELVES_TWW,
-		}),
-		ach(40819, {	-- Ready to Turn
-			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(42678, {	-- So That's Where My Manaflux Capacitor Was!
 			["timeline"] = { ADDED_11_2_0_SEASONSTART },
@@ -960,14 +913,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		}),
 		ach(40458, {	-- Stranger Delves
 			["maps"] = ALL_REGULAR_DELVES_TWW,
-		}),
-		ach(40885, {	-- The Key to Madness
-			["maps"] = ALL_REGULAR_DELVES_TWW,
-			["groups"] = {
-				i(237355, {	-- Golden Coffer Key
-					["timeline"] = { ADDED_11_1_0 },
-				}),
-			},
 		}),
 		ach(42677, {	-- This Machine Flies?! Don't Care I Got It!
 			["timeline"] = { ADDED_11_2_0_SEASONSTART },
@@ -1013,9 +958,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				i(235698),	-- Delver's Dirigible Schematic: Horde Decal (MM!)
 				i(235695),	-- Delver's Dirigible Schematic: Red Paint (MM!)
 			},
-		}),
-		ach(40436, {	-- You're Getting a Delve!
-			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 	}),
 	mapped(n(DELVE_COMPLETION, {
