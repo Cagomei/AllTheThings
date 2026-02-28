@@ -180,7 +180,7 @@ app:CreateWindow("Auctions", {
 	IgnoreQuestUpdates = true,
 	Preload = true,
 	OnInit = function(self, handlers)
-		function ProcessAuctions()
+		local function ProcessAuctions()
 			pcall(self.UnregisterEvent, self, "AUCTION_ITEM_LIST_UPDATE");
 			pcall(self.UnregisterEvent, self, "REPLICATE_ITEM_LIST_UPDATE");
 			local beginTime = debugprofilestop();
@@ -265,7 +265,7 @@ app:CreateWindow("Auctions", {
 
 					app.AuctionHouseTab = CreateFrame("Frame", nil, AuctionHouseFrameTabSideBar, "AllTheThings_Tab")
 					app.AuctionHouseTab:SetPoint("TOPLEFT", AuctionHouseFrameTabSideBar, "TOPRIGHT", -2, -52)
-					AuctionHouseFrameTabSideBar.Tabs[1] = app.AuctionHouseTab
+					AuctionHouseFrameTabSideBar.Tabs[#AuctionHouseFrameTabSideBar.Tabs + 1] = app.AuctionHouseTab
 
 					local function toggleAHTab()
 						local newState = not self:IsShown()
@@ -396,12 +396,7 @@ app:CreateWindow("Auctions", {
 					end,
 					OnUpdate = function(data)
 						-- Determine if anything is cached in the Auction Data.
-						local any = false;
-						for itemID,price in pairs(auctionData) do
-							any = true;
-							break;
-						end
-						data.visible = any;
+						data.visible = next(auctionData) ~= nil
 						return true;
 					end,
 				}),
@@ -477,7 +472,7 @@ app:CreateWindow("Auctions", {
 					visible = true,
 					SortPriority = 1.5,
 					OnClick = function(row, button)
-						app:ShowPopupDialogWithEditBox("Please enter a new maximum price", tostring(MaximumPrice * 0.0001), function(cmd)
+						app:ShowPopupDialogWithEditBox("Please enter a new maximum price\n(all / cap / warband) are also accepted values", tostring(MaximumPrice * 0.0001), function(cmd)
 							ParseCommand(self, cmd);
 						end);
 						return true;
@@ -582,12 +577,7 @@ app:CreateWindow("Auctions", {
 					end
 
 					-- Determine if anything is cached in the Auction Data.
-					local any = false;
-					for itemID,price in pairs(auctionData) do
-						any = true;
-						break;
-					end
-					if any then
+					if next(auctionData) then
 						-- Search the ATT Database for information related to the auction links (items, species, etc)
 						local searchResultsByKey, searchResult, searchResults, key, keys, value, data = {}, nil, nil, nil, nil, nil, nil;
 						for itemID,price in pairs(auctionData) do
@@ -623,10 +613,15 @@ app:CreateWindow("Auctions", {
 									if data.key == "npcID" then app.CreateItem(data.itemID, data); end
 									keys[value] = data;
 									data.OnClick = OnClickForAuctionItem;
-									if price and price > 0 then
-										data.price = price;
-										data.cost = price;
-										data.summaryText = SummaryForAuctionItem(data);
+									if price then
+										-- somehow users are getting non-numbers stored in auction data... maybe old versions?
+										if type(price) == "number" and price > 0 then
+											data.price = price;
+											data.cost = price;
+											data.summaryText = SummaryForAuctionItem(data);
+										else
+											auctionData[itemID] = nil
+										end
 									end
 								end
 							end
@@ -676,6 +671,7 @@ app:CreateWindow("Auctions", {
 								tinsert(g, subdata);
 							end
 							for i,j in pairs(searchResults) do
+								-- TODO: gross. make a new object type that handles this logic automatically
 								if j.price and j.price <= MaximumPrice then
 									tinsert(subdata.g, j);
 								end
