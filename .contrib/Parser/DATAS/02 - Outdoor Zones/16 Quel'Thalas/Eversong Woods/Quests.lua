@@ -545,20 +545,25 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 245418 },	-- Belath Dawnblade
 						["coord"] = { 51.7, 64.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 						["groups"] = {
-							o(539775, {	--
-								i(243240),	-- Drained Wyrm Core (QI!)
+							o(539775, {	-- Mislaid Bag
+								["coord"] = { 50.6, 58.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+								["g"] = { i(243240) },	-- Drained Wyrm Core (QI!)
 							}),
-							o(539772, {	--
-								i(243237),	-- Bottled Fel Dust (QI!)
+							o(539772, {	-- "Empty" Wine Bottle"
+								["coord"] = { 52.1, 56.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+								["g"] = { i(243237) },	-- Bottled Fel Dust (QI!)
 							}),
-							o(539770, {	--
-								i(243236),	-- Stained Worker's Shirt (QI!)
+							o(539770, {	-- Strewn Rags
+								["coord"] = { 54.8, 61.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+								["g"] = { i(243236) },	-- Stained Worker's Shirt (QI!)
 							}),
-							o(539773, {	--
-								i(243238),	-- Blackened Metal Fragment (QI!)
+							o(539773, {	-- Concealed Crate
+								["coord"] = { 51.9, 60.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+								["g"] = { i(243238) },	-- Blackened Metal Fragment (QI!)
 							}),
-							o(539774, {	--
-								i(243239),	-- Handwritten List (QI!)
+							o(539774, {	-- Inconspicuous Ledger
+								["coord"] = { 51.0, 56.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+								["g"] = { i(243239) },	-- Handwritten List (QI!)
 							}),
 						},
 					}),

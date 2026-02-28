@@ -218,6 +218,7 @@ local MapPrecisionOverrides = {
 	[1912] = 10,	-- The Runecarver's Oubliette
 	[2328] = 3,	-- The Proscenium
 	[2477] = 4,	-- Voidscar Cavern, K'aresh
+	[2565] = 3,	-- Parhelion Plaza, Isle of Quel'Danas (Intro)
 }
 
 local function Check_coords(objRef, maxCoordDistance)
