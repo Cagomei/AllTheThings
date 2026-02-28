@@ -1646,14 +1646,14 @@ q(48016,{awp=70300,coords={
 [830]={a[448]}},cost={{"i",127842,1},{"i",151568,5},{"i",151565,75}},lvl=45,qgs=a[160],requireSkill=171,g={
 i(164380,{requireSkill=171,spellID=281423}),
 i(164379,{requireSkill=171}),
-r(247694,{b=1,itemID=151706,lvl=10,requireSkill=171,skillID=2479})}}),
+r(247694,{b=1,itemID=151706,lvl=10,requireSkill=171})}}),
 q(48002,{awp=70300,coords={
 [830]={a[448]}},lvl=45,qgs=a[160],requireSkill=171,sourceQuests=a[387],g={
-r(247619,{b=1,itemID=151657,lvl=10,requireSkill=171,skillID=2479}),
+r(247619,{b=1,itemID=151657,lvl=10,requireSkill=171}),
 i(151845,{requireSkill=171})}}),
 q(48013,{awp=70300,coords={
 [830]={a[448]}},lvl=45,qgs=a[160],requireSkill=171,sourceQuests=a[387],g={
-r(247688,{b=1,itemID=151703,lvl=10,requireSkill=171,skillID=2479})}})}}),
+r(247688,{b=1,itemID=151703,lvl=10,requireSkill=171})}})}}),
 x(8,{requireSkill=171,g={
 h(-12,{awp=100107,requireSkill=171,g={
 ach(18770,{providers={{"i",156631}},requireSkill=171})}}),
@@ -2079,7 +2079,7 @@ r(184220,{requireSkill=164,u=5}),
 r(184217,{requireSkill=164,u=5}),
 r(184219,{requireSkill=164,u=5}),
 r(184218,{requireSkill=164,u=5}),
-r(182967,{b=1,itemID=123933,lvl=10,requireSkill=164,skillID=2454})}}),
+r(182967,{b=1,itemID=123933,lvl=10,requireSkill=164})}}),
 q(38519,{awp=70003,coords={
 [650]={a[439]}},lvl=10,qgs={92245},requireSkill=164,sourceQuests={39699},g={
 r(182967,{learnedAt=40,requireSkill=164,skillID=2454})}}),
@@ -2101,7 +2101,7 @@ q(39702,{awp=70003,coords={
 [627]={a[373]}},isBreadcrumb=1,lvl=10,nextQuests=a[301],qgs=a[520],requireSkill=164,sourceQuests={38523}}),
 q(39680,{awp=70003,coords={
 [641]={a[314]}},lvl=10,qgs=a[543],requireSkill=164,sourceQuests=a[303],g={
-r(182963,{b=1,itemID=123929,lvl=10,requireSkill=164,skillID=2454})}}),
+r(182963,{b=1,itemID=123929,lvl=10,requireSkill=164})}}),
 q(39726,{awp=70003,coords={
 [641]={a[314]}},lvl=10,qgs=a[543],requireSkill=164,sourceQuests=a[303]}),
 q(39729,{awp=70003,coords={
@@ -2164,28 +2164,28 @@ q(38533,{awp=70003,coords={
 r(182944,{learnedAt=60,requireSkill=164,skillID=2454})}}),
 q(38534,{awp=70003,coords={
 [650]={a[437]}},cost={{"i",123917,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[523],requireSkill=164,sourceQuests=a[284],g={
-r(182974,{b=1,itemID=123940,lvl=10,requireSkill=164,skillID=2454})}}),
+r(182974,{b=1,itemID=123940,lvl=10,requireSkill=164})}}),
 q(38538,{awp=70003,coords={
 [650]={a[437]}},cost={{"i",123911,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[523],requireSkill=164,sourceQuests=a[284],g={
-r(182980,{b=1,itemID=123946,lvl=10,requireSkill=164,skillID=2454})}}),
+r(182980,{b=1,itemID=123946,lvl=10,requireSkill=164})}}),
 q(38542,{awp=70003,coords={
 [650]={a[437]}},cost={{"i",123910,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[523],requireSkill=164,sourceQuests=a[284],g={
-r(182981,{b=1,itemID=123947,lvl=10,requireSkill=164,skillID=2454})}}),
+r(182981,{b=1,itemID=123947,lvl=10,requireSkill=164})}}),
 q(38539,{awp=70003,coords={
 [650]={a[437]}},cost={{"i",123912,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[523],requireSkill=164,sourceQuests=a[284],g={
-r(182979,{b=1,itemID=123945,lvl=10,requireSkill=164,skillID=2454})}}),
+r(182979,{b=1,itemID=123945,lvl=10,requireSkill=164})}}),
 q(38541,{awp=70003,coords={
 [650]={a[437]}},cost={{"i",123914,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[523],requireSkill=164,sourceQuests=a[284],g={
-r(182977,{b=1,itemID=123943,lvl=10,requireSkill=164,skillID=2454})}}),
+r(182977,{b=1,itemID=123943,lvl=10,requireSkill=164})}}),
 q(38540,{awp=70003,coords={
 [650]={a[437]}},cost={{"i",123913,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[523],requireSkill=164,sourceQuests=a[284],g={
-r(182978,{b=1,itemID=123944,lvl=10,requireSkill=164,skillID=2454})}}),
+r(182978,{b=1,itemID=123944,lvl=10,requireSkill=164})}}),
 q(38537,{awp=70003,coords={
 [650]={a[437]}},cost={{"i",123915,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[523],requireSkill=164,sourceQuests=a[284],g={
-r(182976,{b=1,itemID=123942,lvl=10,requireSkill=164,skillID=2454})}}),
+r(182976,{b=1,itemID=123942,lvl=10,requireSkill=164})}}),
 q(38536,{awp=70003,coords={
 [650]={a[437]}},cost={{"i",123916,1}},description="Create one Rank 1 of this item.",lvl=45,qgs=a[523],requireSkill=164,sourceQuests=a[284],g={
-r(182975,{b=1,itemID=123941,lvl=10,requireSkill=164,skillID=2454})}}),
+r(182975,{b=1,itemID=123941,lvl=10,requireSkill=164})}}),
 q(46696,{awp=70200,coords={
 [646]={a[348]}},lvl=45,qgs=a[152],repeatable=1,requireSkill=164,sourceQuests=a[386],g={
 i(147197,{requireSkill=164})}}),
@@ -2966,13 +2966,13 @@ q(40990,{coords={
 q(40991,{lvl=10,qgs=a[140],requireSkill=185,sourceQuests={40990},g={
 ach(10591,{requireSkill=185})}}),
 q(44581,{lvl=10,qgs=a[140],requireSkill=185,g={
-r(201512,{b=1,itemID=133826,lvl=10,requireSkill=185,skillID=2542}),
+r(201512,{b=1,itemID=133826,lvl=10,requireSkill=185}),
 i(133575,{f=55,lvl=40,spellID=192002})}}),
 q(40989,{description="If you cooked with Nomi while questing in Pandaria, you will receive this quest instead of 'Too Many Chefs'.",lvl=10,qgs=a[145],requireSkill=185,g={
-r(201512,{b=1,itemID=133826,lvl=10,requireSkill=185,skillID=2542}),
+r(201512,{b=1,itemID=133826,lvl=10,requireSkill=185}),
 i(133575,{f=55,lvl=40,spellID=192002})}}),
 q(40988,{description="If you did not cook with Nomi while questing in Pandaria, you will receive this quest instead of 'The Prodigal Sous Chef'.",lvl=10,qgs=a[145],requireSkill=185,g={
-r(201512,{b=1,itemID=133826,lvl=10,requireSkill=185,skillID=2542}),
+r(201512,{b=1,itemID=133826,lvl=10,requireSkill=185}),
 i(133575,{f=55,lvl=40,spellID=192002})}})}})}}),
 x(8,{awp=80001,requireSkill=185,g={
 h(-12,{requireSkill=185,g={
@@ -3626,13 +3626,13 @@ q(29475,{altQuests={3526,3629,3630,3632,3633,3634,3635,3637,4181,29477},coords={
 [88]={a[264]}},cost={{"i",4384,5},{"i",10507,20},{"i",4394,20}},learnedAt=200,lvl=20,qgs=a[417],repeatable=1,requireSkill=202})}}),
 h(-47,{requireSkill=202,g={
 i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},requireSkill=202,rwp=40003,u=2,g={
-r(12607,{itemID=10603,requireSkill=202,skillID=2506,u=2}),
-r(15633,{b=1,itemID=11827,requireSkill=202,skillID=2506,u=2}),
-r(12616,{itemID=10606,requireSkill=202,skillID=2506,u=2})}}),
+r(12607,{itemID=10603,requireSkill=202,u=2}),
+r(15633,{b=1,itemID=11827,requireSkill=202,u=2}),
+r(12616,{itemID=10606,requireSkill=202,u=2})}}),
 i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10791}},requireSkill=202,rwp=40003,u=2,g={
-r(3968,{itemID=4416,requireSkill=202,skillID=2506,u=2}),
-r(3972,{itemID=4417,requireSkill=202,skillID=2506,u=2}),
-r(15628,{b=1,itemID=11828,requireSkill=202,skillID=2506,u=2})}})}})}}),
+r(3968,{itemID=4416,requireSkill=202,u=2}),
+r(3972,{itemID=4417,requireSkill=202,u=2}),
+r(15628,{b=1,itemID=11828,requireSkill=202,u=2})}})}})}}),
 x(4,{awp=100107,requireSkill=202,g={
 ach(18908,{requireSkill=202,g={
 en(209063,{b=1,questID=78031,requireSkill=202,spellID=422556,tmogSetID=3124,g={
@@ -3780,16 +3780,16 @@ q(40878,{coords={
 r(198985,{learnedAt=20,requireSkill=202,skillID=2500})}}),
 q(40882,{coords={
 [627]={a[274]}},lvl=45,maps=a[508],qgs=a[534],requireSkill=202,sourceQuests={40877},g={
-r(198970,{b=1,itemID=133673,lvl=10,requireSkill=202,skillID=2500,sourceQuests=a[346]}),
-r(198971,{b=1,itemID=133674,lvl=10,requireSkill=202,skillID=2500,sourceQuests=a[346]}),
-r(198969,{b=1,itemID=133672,lvl=10,requireSkill=202,skillID=2500,sourceQuests=a[346]}),
-r(198968,{b=1,itemID=133671,lvl=10,requireSkill=202,skillID=2500,sourceQuests=a[346]})}}),
+r(198970,{b=1,itemID=133673,lvl=10,requireSkill=202,sourceQuests=a[346]}),
+r(198971,{b=1,itemID=133674,lvl=10,requireSkill=202,sourceQuests=a[346]}),
+r(198969,{b=1,itemID=133672,lvl=10,requireSkill=202,sourceQuests=a[346]}),
+r(198968,{b=1,itemID=133671,lvl=10,requireSkill=202,sourceQuests=a[346]})}}),
 q(40880,{coords={
 [627]={a[274]}},lvl=45,qgs=a[528],requireSkill=202,sourceQuests={40877,40878},g={
 r(198980,{learnedAt=80,requireSkill=202,skillID=2500})}}),
 q(40881,{coords={
 [71]={{69.5,68.4}}},lvl=45,providers={{"o",246438}},requireSkill=202,sourceQuests={40880},g={
-r(198989,{b=1,itemID=141849,lvl=10,requireSkill=202,skillID=2500,sourceQuests=a[345]})}}),
+r(198989,{b=1,itemID=141849,lvl=10,requireSkill=202,sourceQuests=a[345]})}}),
 q(40879,{coords={
 [627]={a[274]}},lvl=45,qgs=a[528],requireSkill=202,sourceQuests=a[345],g={
 r(198990,{learnedAt=20,requireSkill=202,skillID=2500})}}),
@@ -5328,7 +5328,7 @@ r(209664,{requireSkill=773,skillID=2508})}}),
 q(40064,{description="There is a chance of getting this quest when milling Foxflower.",lvl=10,providers={{"i",136915}},requireSkill=773,g={
 r(209660,{requireSkill=773,skillID=2508})}}),
 q(43929,{awp=70100,description="Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",lvl=45,qgs=a[519],requireSkill=773,g={
-r(192907,{b=1,itemID=137783,lvl=10,requireSkill=773,skillID=2508})}})}})}}),
+r(192907,{b=1,itemID=137783,lvl=10,requireSkill=773})}})}})}}),
 x(8,{requireSkill=773,g={
 h(-12,{awp=100107,requireSkill=773,g={
 ach(18772,{providers={{"i",153670}},requireSkill=773})}}),
@@ -5376,7 +5376,7 @@ q(49882,{awp=80105,coords={
 [862]={{32.6,86}}},lvl=10,qgs={131397},requireSkill=773,sourceQuests={49881},g={
 r(256301,{learnedAt=150,requireSkill=773,skillID=2507})}})}}),
 h(-55,{awp=80001,requireSkill=773,g={
-r(309443,{awp=80205,description="A Mage scribe with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",itemID=172450,requireSkill=773,skillID=2507})}})}}),
+r(309443,{awp=80205,description="A Mage scribe with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",itemID=172450,requireSkill=773})}})}}),
 x(10,{requireSkill=773,g={
 h(-45,{awp=100002,requireSkill=773,g={
 q(70361,{coords={
@@ -5893,7 +5893,7 @@ o(380822,{coords={
 i(201017,{b=1,requireSkill=755,spellID=384373})}}),
 o(384318,{coords={
 [2025]={{58.5,36.7}}},questID=72356,requireSkill=755,g={
-r(374525,{b=1,itemID=194654,requireSkill=755,skillID=2829})}}),
+r(374525,{b=1,itemID=194654,requireSkill=755})}}),
 o(380577,{coords={
 [2023]={{25.2,34.8}}},questID=70282,requireSkill=755,g={
 i(198670,{b=1,requireSkill=755,spellID=384373})}}),
@@ -6314,7 +6314,7 @@ i(130879,{requireSkill=165})}}),
 q(40215,{coords={
 [627]={a[256]}},lvl=45,qgs=a[530],requireSkill=165,sourceQuests={40214},g={
 r(194780,{learnedAt=100,requireSkill=165,skillID=2526}),
-r(194780,{b=1,itemID=141850,lvl=10,requireSkill=165,skillID=2526})}}),
+r(194780,{b=1,itemID=141850,lvl=10,requireSkill=165})}}),
 q(46684,{awp=70200,coords={
 [646]={a[348]}},lvl=45,qgs=a[152],repeatable=1,requireSkill=165,sourceQuests=a[386]}),
 q(46688,{awp=70200,coords={
@@ -6366,8 +6366,8 @@ i(146713,{b=1,requireSkill=165})}}),
 q(48078,{awp=70300,coords={
 [831]={{39.6,73.6}}},cost={{"i",151567,12},{"i",151566,12}},lvl=45,qgs={125349},requireSkill=165,sourceQuests=a[396],g={
 i(151880,{requireSkill=165,spellID=248914}),
-r(247800,{b=1,itemID=151740,lvl=10,requireSkill=165,skillID=2526}),
-r(247803,{b=1,itemID=151743,lvl=10,requireSkill=165,skillID=2526}),
+r(247800,{b=1,itemID=151740,lvl=10,requireSkill=165}),
+r(247803,{b=1,itemID=151743,lvl=10,requireSkill=165}),
 i(151879,{requireSkill=165})}})}})}}),
 x(8,{requireSkill=165,g={
 h(-12,{awp=100107,requireSkill=165,g={
@@ -7689,7 +7689,7 @@ q(38975,{awp=70003,coords={
 r(185933,{learnedAt=60,requireSkill=197,skillID=2534})}}),
 q(44741,{awp=70100,coords={
 [680]={a[317]}},lvl=45,qgs=a[540],requireSkill=197,g={
-r(229041,{b=1,itemID=142076,lvl=10,requireSkill=197,skillID=2534})}}),
+r(229041,{b=1,itemID=142076,lvl=10,requireSkill=197})}}),
 q(46678,{awp=70200,coords={
 [646]={a[348]}},lvl=45,qgs=a[152],repeatable=1,requireSkill=197,sourceQuests=a[386],g={
 i(147281,{requireSkill=197})}}),
@@ -7770,17 +7770,17 @@ ah(164733,{awp=80105,coords={
 [895]={{40,24},{85,77}},
 [896]={{23,43},{33,23},{36,72},{46,38},{63,35}},
 [1355]={{26.8,36.6},{29.4,45.2},{36.6,27.8},{37.4,68},{37.8,19.6},{42,47},{43.8,86.4},{43.8,86.6},{44.4,16.4},{47.4,75.8},{50.4,31.2},{59.2,15},{62.4,57.2},{64.6,46.8},{69.8,24.4},{77.4,25.4},{77.6,25.4},{79,51.8}}},description="This Trader has a ~20% chance to spawn from closing a Time Rift via the Synchronous Thread (Battle for Azeroth Tailor Only item).\nBest Zone to farm Time Rifts is Nazjatar.",providers={{"i",164733},{"n",151903}},requireSkill=197,type="i",g={
-r(8786,{awp=80001,b=1,cost={{"i",158378,50}},itemID=167889,requireSkill=197,skillID=2540}),
-r(22866,{awp=80001,b=1,cost={{"i",158378,150}},itemID=167881,requireSkill=197,skillID=2540}),
-r(18412,{awp=80001,b=1,cost={{"i",158378,75}},itemID=167887,requireSkill=197,skillID=2540}),
-r(18408,{awp=80001,b=1,cost={{"i",158378,75}},itemID=167886,requireSkill=197,skillID=2540}),
-r(22870,{awp=80001,b=1,cost={{"i",158378,75}},itemID=167882,requireSkill=197,skillID=2540}),
-r(22867,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167883,requireSkill=197,skillID=2540}),
-r(3862,{awp=80001,b=1,cost={{"i",158378,50}},itemID=167890,requireSkill=197,skillID=2540}),
-r(22868,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167884,requireSkill=197,skillID=2540}),
-r(22869,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167885,requireSkill=197,skillID=2540}),
-r(18436,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167888,requireSkill=197,skillID=2540}),
-r(6692,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167880,requireSkill=197,skillID=2540})}})}}),
+r(8786,{awp=80001,b=1,cost={{"i",158378,50}},itemID=167889,requireSkill=197}),
+r(22866,{awp=80001,b=1,cost={{"i",158378,150}},itemID=167881,requireSkill=197}),
+r(18412,{awp=80001,b=1,cost={{"i",158378,75}},itemID=167887,requireSkill=197}),
+r(18408,{awp=80001,b=1,cost={{"i",158378,75}},itemID=167886,requireSkill=197}),
+r(22870,{awp=80001,b=1,cost={{"i",158378,75}},itemID=167882,requireSkill=197}),
+r(22867,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167883,requireSkill=197}),
+r(3862,{awp=80001,b=1,cost={{"i",158378,50}},itemID=167890,requireSkill=197}),
+r(22868,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167884,requireSkill=197}),
+r(22869,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167885,requireSkill=197}),
+r(18436,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167888,requireSkill=197}),
+r(6692,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167880,requireSkill=197})}})}}),
 x(10,{requireSkill=197,g={
 h(-12,{awp=100107,requireSkill=197,g={
 ach(18902,{providers={{"s",376530}},requireSkill=197,g={

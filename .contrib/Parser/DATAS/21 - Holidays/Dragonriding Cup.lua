@@ -2140,12 +2140,14 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						214031,	-- Racing Enthusiast
 						-- #if AFTER TWW
 						220307,	-- Holiday Enthusiast
+						220870,	-- Holiday Enthusiast
 						-- #endif
 					},
 					["coords"] = {
 						{ 61.8, 75.1, STORMWIND_CITY },
 						-- #if AFTER TWW
 						{ 46.0, 55.1, DORNOGAL },
+						{ 55.5, 61.0, DORNOGAL },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,

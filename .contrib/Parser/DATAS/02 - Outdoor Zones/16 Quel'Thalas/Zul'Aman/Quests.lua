@@ -55,8 +55,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 236558 },	-- Zul'jan
 						["coord"] = { 46.3, 48.4, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 						["groups"] = {
-							o(539207, {	--
-								i(237768),	-- Hash'ey Staff (QI!)
+							o(539207, {	-- Hastily Packed Belongings
+								["coord"] = { 16.8, 20.4, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+								["groups"] = { i(237768) },	-- Hash'ey Staff (QI!)
 							}),
 						},
 					}),
@@ -512,17 +513,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 				}),
-				header(HEADERS.AchCriteria, 61452.02, {	-- [PH] Logging Camp
-					q(88986, {	-- Blind The Bandits
+				header(HEADERS.AchCriteria, 61452.02, {	-- Sawdust to Sawdust
+					q(88985, {	-- Recuperating Returns
 						--["sourceQuests"] = { XXX },	-- ??
+						["qg"] = 241082,	-- Torundo the Grizzled <War Advisor>
+						["coord"] = { 45.6, 65.6, MAP.MIDNIGHT.ZULAMAN },
+						["isBreadcrumb"] = true,	-- I think
+					}),
+					q(88986, {	-- Blind The Bandits
+						["sourceQuests"] = { 88985 },	-- Recuperating Returns
 						["provider"] = { "n", 240521 },	-- Woodcrafter Azai
 						["coord"] = { 28.4, 27.3, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = {
-							i(238962),	-- Lightwood Splinters (QI!)
-						},
+						["groups"] = { i(238962) },	-- Lightwood Splinters (QI!)
 					}),
 					q(88987, {	-- Salvaged Sabotage
-						--["sourceQuests"] = { XXX },	-- ??
+						["sourceQuests"] = { 88985 },	-- Recuperating Returns
 						["provider"] = { "n", 240521 },	-- Woodcrafter Azai
 						["coord"] = { 28.4, 27.3, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
@@ -539,8 +544,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 241219 },	-- Woodcrafter Azai
 						["coord"] = { 28.4, 27.5, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
-							o(527670, {	--
-								i(239138),	-- Lightwood Chunk (QI!)
+							o(527670, {	-- Lightwood Pile
+								["coord"] = { 28.6, 27.5, MAP.MIDNIGHT.ZULAMAN },
+								["groups"] = { i(239138) },	-- Lightwood Chunk (QI!)
 							}),
 						},
 					}),
@@ -549,9 +555,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 241219 },	-- Woodcrafter Azai
 						["coord"] = { 28.4, 27.5, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
-							o(531204, {	--
-								i(241612),	-- Lightwood Javelin (QI!)
+							o(531204, {	-- Completed Javelin
+								["coord"] = { 28.5, 27.5, MAP.MIDNIGHT.ZULAMAN },
+								["groups"] = { i(241612) },	-- Lightwood Javelin (QI!)
 							}),
+							--
+							i(264459),	-- Lightwood Sunsword
 						},
 					}),
 				}),
@@ -807,13 +816,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61452.08, {	-- Vengeance for Tolbani
-					q(91069, {	-- Vengeance for Tolbani
+					q(94867, {	-- Lost in Atal'Abasi
 						--["sourceQuests"] = { XXX },	-- ???
+						["qg"] = 258950,	-- Vakala
+						["coord"] = { 45.1, 68.3, MAP.MIDNIGHT.ZULAMAN },
+						["isBreadcrumb"] = true,	-- I think
+					}),
+					q(91069, {	-- Vengeance for Tolbani
+						["sourceQuests"] = { 94867 },	-- Lost in Atal'Abasi
 						["provider"] = { "n", 245669 },	-- Jehnira
 						["coord"] = { 53.1, 62.8, MAP.MIDNIGHT.ZULAMAN },
 					}),
 					q(91070, {	-- Reclaim The Goods
-						--["sourceQuests"] = { XXX },	-- ???
+						["sourceQuests"] = { 94867 },	-- Lost in Atal'Abasi
 						["provider"] = { "n", 245669 },	-- Jehnira
 						["coord"] = { 53.1, 62.8, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
@@ -824,7 +839,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 					q(91071, {	-- The Menace of Atal'Abasi
-						--["sourceQuests"] = { XXX },	-- ???
+						["sourceQuests"] = { 94867 },	-- Lost in Atal'Abasi
 						["provider"] = { "n", 245669 },	-- Jehnira
 						["coord"] = { 53.1, 62.8, MAP.MIDNIGHT.ZULAMAN },
 					}),
@@ -840,6 +855,56 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61452.09, {	-- Loa of Murlocs
+					q(92163, {	-- The Loa of Murlocs
+						["qg"] = 257092,	-- Old Teo'zan
+						["coord"] = { 45.0, 65.0, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(92164, {	-- Murloc Madness
+						["sourceQuests"] = { 92163 },	-- The Loa of Murlocs
+						["qg"] = 250196,	-- King Mrgl-Mrgl <"Loa of Murlocs">
+						["coord"] = { 52.8, 60.2, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(92165, {	-- Fish Are Food, Not Friends
+						["sourceQuests"] = { 92164 },	-- Murloc Madness
+						["qg"] = 250196,	-- King Mrgl-Mrgl <"Loa of Murlocs">
+						["coord"] = { 52.8, 60.2, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = {
+							o(617375, {	-- Murloc-Skewered Lynxfish
+								["coords"] = {
+									{ 48.6, 58.5, MAP.MIDNIGHT.ZULAMAN },
+									{ 48.7, 59.5, MAP.MIDNIGHT.ZULAMAN },
+									{ 48.8, 56.5, MAP.MIDNIGHT.ZULAMAN },
+									{ 49.0, 56.4, MAP.MIDNIGHT.ZULAMAN },
+									{ 49.3, 60.6, MAP.MIDNIGHT.ZULAMAN },
+									{ 49.9, 59.4, MAP.MIDNIGHT.ZULAMAN },
+									{ 49.9, 61.2, MAP.MIDNIGHT.ZULAMAN },
+									{ 50.4, 58.3, MAP.MIDNIGHT.ZULAMAN },
+									{ 51.9, 59.9, MAP.MIDNIGHT.ZULAMAN },
+									{ 52.0, 60.8, MAP.MIDNIGHT.ZULAMAN },
+									{ 52.4, 61.5, MAP.MIDNIGHT.ZULAMAN },
+								},
+								["groups"] = { i(263202) },	-- Murloc-Skewered Lynxfish (QI!)
+							}),
+						},
+					}),
+					q(92166, {	-- Following Suit
+						["sourceQuests"] = { 92165 },	-- Fish Are Food, Not Friends
+						["qg"] = 250196,	-- King Mrgl-Mrgl <"Loa of Murlocs">
+						["coord"] = { 52.8, 60.2, MAP.MIDNIGHT.ZULAMAN },
+					}),
+					q(92167, {	-- There Can Be Only One
+						["sourceQuests"] = { 92166 },	-- Following Suit
+						["qg"] = 250197,	-- Assistant Grgl-Grgl <"Priestess" of the "Loa of Murlocs">
+						["coord"] = { 52.8, 60.2, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = {
+							i(263446),	-- Spare Murloc Suit (QI!)
+							--
+							i(264474),	-- Loa Impostor's Brinefists
+							i(264472),	-- Loa Impostor's Clawguards
+							i(264471),	-- Loa Impostor's Gloves
+							i(264473),	-- Loa Impostor's Tidegrips
+						},
+					}),
 				}),
 				header(HEADERS.AchCriteria, 61452.10, {	-- No Fear
 					q(92450, {	-- Growing Up is Hard
@@ -938,8 +1003,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 254719 },	-- Kanza
 						["coord"] = { 52.3, 32.2, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
-							o(619616, {
-								i(265341),	-- Thorncap (QI!)
+							o(619616, {	-- Thorncap
+								["coords"] = {
+									{ 51.4, 30.4, MAP.MIDNIGHT.ZULAMAN },
+									{ 52.7, 29.8, MAP.MIDNIGHT.ZULAMAN },
+									{ 53.0, 30.6, MAP.MIDNIGHT.ZULAMAN },
+								},
+								["groups"] = { i(265341) },	-- Thorncap (QI!)
 							}),
 						},
 					}),
@@ -978,7 +1048,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 					q(91404, {	-- A Most Vile Venom
 						["sourceQuests"] = { 91563 },	-- Halazzi's Hunt
-						["provider"] = { "n", 246999 },	-- Loa Speaker Tobui
+						["provider"] = { "n", 250068 },	-- Loa Speaker Tobui
 						["coord"] = { 32.3, 31.6, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
 							o(584793, {	--
@@ -988,7 +1058,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 					q(91403, {	-- Probable Paralytic
 						["sourceQuests"] = { 91407 },	-- The Eye of the Loa (TODO: this quest was up when you come at this place to turn in 91563, it could be up by itself here, need more testing)
-						["provider"] = { "n", 246999 },	-- Loa Speaker Tobui
+						["provider"] = { "n", 250068 },	-- Loa Speaker Tobui
 						["coord"] = { 32.3, 31.6, MAP.MIDNIGHT.ZULAMAN },
 					}),
 					q(91405, {	-- Validating the Venom
@@ -996,7 +1066,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							91403,	-- Probable Paralytic
 							91404,	-- A Most Vile Venom
 						},
-						["provider"] = { "n", 246999 },	-- Loa Speaker Tobui
+						["provider"] = { "n", 250068 },	-- Loa Speaker Tobui
 						["coord"] = { 32.3, 31.6, MAP.MIDNIGHT.ZULAMAN },
 					}),
 					q(91408, {	-- Seeking Shadra
@@ -1007,26 +1077,31 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(91630, {	-- Stolen Sight
 						["sourceQuests"] = { 91408 },	-- Seeking Shadra
 						["provider"] = { "n", 247254 },	-- Mixer Jamanga
-						["coord"] = { 39.1, 22.3, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = {
-							i(246744),	-- Eye of Shadra (QI!)
+						["coords"] = {
+							{ 39.1, 22.3, MAP.MIDNIGHT.ZULAMAN },
+							{ 60.3, 57.6, 2583 },	-- Wit'Kalar Crypt
 						},
+						["groups"] = { i(246744) },	-- Eye of Shadra (QI!)
 					}),
 					q(91409, {	-- Dreaming of Spiders
 						["sourceQuests"] = { 91630 },	-- Stolen Sight
 						["provider"] = { "n", 247254 },	-- Mixer Jamanga
-						["coord"] = { 39.1, 22.3, MAP.MIDNIGHT.ZULAMAN },
-					}),
-					q(91411, {	-- Deep in Maisara
-						["sourceQuests"] = { 91409 },	-- Dreaming of Spiders
-						["provider"] = { "n", 247251 },	-- Nija Torntusk
-						["coord"] = { 38.8, 22.7, MAP.MIDNIGHT.ZULAMAN },
-						["groups"] = {
-							i(246586),	-- Shell of Shadra (QI!)
+						["coords"] = {
+							{ 39.1, 22.3, MAP.MIDNIGHT.ZULAMAN },
+							{ 60.3, 57.6, 2583 },	-- Wit'Kalar Crypt
 						},
 					}),
+					q(91411, {	-- Maisara Caverns: Deep in Maisara
+						["sourceQuests"] = { 91409 },	-- Dreaming of Spiders
+						["provider"] = { "n", 247251 },	-- Nija Torntusk
+						["coords"] = {
+							{ 38.8, 22.7, MAP.MIDNIGHT.ZULAMAN },
+							{ 46.4, 71.9, 2583 },	-- Wit'Kalar Crypt
+						},
+						["groups"] = { i(246586) },	-- Shell of Shadra (QI!)
+					}),
 					q(91412, {	-- Return of the Venom Queen
-						["sourceQuests"] = { 91411 },	-- Deep in Maisara
+						["sourceQuests"] = { 91411 },	-- Maisara Caverns: Deep in Maisara
 						["provider"] = { "n", 247254 },	-- Mixer Jamanga
 						["coord"] = { 38.7, 22.7, MAP.MIDNIGHT.ZULAMAN },
 					}),
@@ -1059,12 +1134,35 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 					q(93051, {	-- The Final Exam
 						--["sourceQuests"] = { XXX },	-- ???
-						["provider"] = { "n", 254136 },	-- Ri'kari
-						["coord"] = { 44.0, 65.7, MAP.MIDNIGHT.ZULAMAN },
+						["provider"] = { "n", 255406 },	-- Recruit Dar'rak
+						["coord"] = { 43.1, 67.1, MAP.MIDNIGHT.ZULAMAN },
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61452.15, {	-- Something Vile This Way Comes
-
+					q(91833, {	-- Dirty Deeps
+						--["sourceQuests"] = { XXX },	-- ???
+						["groups"] = { i(248814) },	-- Witherbark Supplies (QI!)
+					}),
+					q(91835, {	-- Send Dem Home
+						["sourceQuests"] = { 91833 },	-- Dirty Deeps
+					}),
+					q(91836, {	-- Respect de Totem
+						--["sourceQuests"] = { XXX },	-- ???
+						["groups"] = { i(254430) },	-- Totem Remnant (QI!)
+					}),
+					q(91838, {	-- De Vile Diminished
+						--["sourceQuests"] = { XXX },	-- ???
+					}),
+					q(91840, {	-- One Will Not Rise
+						--["sourceQuests"] = { XXX },	-- ???
+						["groups"] = {
+							i(254778),	-- Altered Totem (QI!)
+							i(250190),	-- Knife Priestess Hezzia's Head (QI!)
+						},
+					}),
+					q(91839, {	-- Sacrifice Denied
+						--["sourceQuests"] = { XXX },	-- ???
+					}),
 				}),
 				header(HEADERS.AchCriteria, 61452.16, {	-- River-Walkers of the Prowl
 					q(93257, {	-- Revantusk at Risk

@@ -117,6 +117,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 46.4, 43.5, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 91072,
 				["groups"] = {
+					i(264582),	-- Diamondback-Scale Legguards
 					i(264525),	-- Wrapped Antenna Cuffs
 				},
 			}),
@@ -205,9 +206,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(94697, {	-- Weekly reputation: The Snapping Scourge
 					["name"] = "The Snapping Scourge weekly reputation obtained.",
 				}),
-				--q(94704, {	-- Weekly reputation: Tiny Vermin	-- TODO: Blizzard bug -- could also share questID with Waverly too
-				--	["name"] = "Tiny Vermin weekly reputation obtained.",
-				--}),
+				q(94704, {	-- Weekly reputation: Tiny Vermin
+					["name"] = "Tiny Vermin weekly reputation obtained.",
+				}),
 				q(94705, {	-- Weekly reputation: Voidtouched Crustacean
 					["name"] = "Voidtouched Crustacean weekly reputation obtained.",
 				}),

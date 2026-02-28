@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				title(667, {	-- <Name>, Life of the Party
 					["minReputation"] = { FACTION_SILVERMOON_COURT, 20 },	-- Silvermoon Court, Renown 20
 				}),
-				--[[n(QUESTS, sharedData({
+				n(QUESTS, sharedData({
 					["provider"] = { "n", 240838 },	-- Caeris Fairdawn <Renown Quartermaster>
 					["coord"] = { 43.5, 47.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 				}, bubbleDownRep(FACTION_SILVERMOON_COURT, {
@@ -26,6 +26,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 4 --
 					}, {	-- RENOWN 5 --
 					}, {	-- RENOWN 6 --
+						q(93200),	-- A Handful of Voidlight Marl
 					}, {	-- RENOWN 7 --
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --
@@ -42,7 +43,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 20 --
 						------ Paragon ------
 					},
-				}))),--]]
+				}))),
 				n(VENDORS, {
 					n(240838, {	-- Caeris Fairdawn <Renown Quartermaster>
 						["coord"] = { 43.5, 47.4, MAP.MIDNIGHT.EVERSONG_WOODS },

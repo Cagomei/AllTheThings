@@ -716,6 +716,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				199261,	-- Holiday Enthusiast
 				-- #if AFTER TWW
 				220307,	-- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
 				-- #endif
 			},
 			["timeline"] = { ADDED_10_0_5 },

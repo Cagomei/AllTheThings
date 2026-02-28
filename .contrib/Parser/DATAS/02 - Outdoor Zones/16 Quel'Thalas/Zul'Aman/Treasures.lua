@@ -49,6 +49,20 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(254749),	-- Phial of Burrow Balm
 				},
 			}),
+			o(587912, {	-- Giant Grab Bag
+				["coords"] = {
+					{ 26.0, 35.9, MAP.MIDNIGHT.ZULAMAN },
+					{ 26.4, 38.4, MAP.MIDNIGHT.ZULAMAN },
+					{ 27.6, 37.7, MAP.MIDNIGHT.ZULAMAN },
+					{ 27.6, 39.1, MAP.MIDNIGHT.ZULAMAN },
+					{ 29.5, 36.6, MAP.MIDNIGHT.ZULAMAN },
+					{ 51.3, 76.6, MAP.MIDNIGHT.ZULAMAN },
+					{ 51.5, 71.6, MAP.MIDNIGHT.ZULAMAN },
+					{ 51.6, 75.1, MAP.MIDNIGHT.ZULAMAN },
+					{ 52.3, 69.9, MAP.MIDNIGHT.ZULAMAN },
+					{ 56.2, 74.9, MAP.MIDNIGHT.ZULAMAN },
+				},
+			}),
 			o(613727, {	-- Honored Warrior's Cache
 				["coord"] = { 46.8, 81.9, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 93560,
@@ -160,14 +174,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			--Repeatable
 			o(555462, {	-- Forgotten Amani Cache
-				["coords"] = {
-					{ 33.2, 28.6, MAP.MIDNIGHT.ZULAMAN },
-					{ 36.9, 23.1, MAP.MIDNIGHT.ZULAMAN },
-					{ 42.0, 53.9, MAP.MIDNIGHT.ZULAMAN },
-					{ 42.5, 67.0, MAP.MIDNIGHT.ZULAMAN },
-					{ 48.2, 40.4, MAP.MIDNIGHT.ZULAMAN },
-					{ 48.5, 81.3, MAP.MIDNIGHT.ZULAMAN },
-				},
 				["groups"] = {
 					i(259112),	-- Dark Gold Dye
 				},
@@ -193,6 +199,26 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			o(582179, {	-- Twilight Ordinance
+				["coords"] = {
+					{ 20.9, 62.5, MAP.MIDNIGHT.ZULAMAN },
+					{ 21.6, 69.1, MAP.MIDNIGHT.ZULAMAN },
+					{ 21.6, 77.6, MAP.MIDNIGHT.ZULAMAN },
+					{ 23.2, 61.6, MAP.MIDNIGHT.ZULAMAN },
+					{ 23.4, 60.3, MAP.MIDNIGHT.ZULAMAN },
+					{ 23.9, 71.5, MAP.MIDNIGHT.ZULAMAN },
+					{ 24.1, 78.8, MAP.MIDNIGHT.ZULAMAN },
+					{ 24.2, 83.0, MAP.MIDNIGHT.ZULAMAN },
+					{ 24.7, 64.2, MAP.MIDNIGHT.ZULAMAN },
+					{ 25.0, 63.3, MAP.MIDNIGHT.ZULAMAN },
+					{ 25.5, 64.2, MAP.MIDNIGHT.ZULAMAN },
+					{ 26.0, 74.1, MAP.MIDNIGHT.ZULAMAN },
+					{ 26.0, 80.7, MAP.MIDNIGHT.ZULAMAN },
+					{ 26.1, 61.6, MAP.MIDNIGHT.ZULAMAN },
+					{ 26.3, 71.4, MAP.MIDNIGHT.ZULAMAN },
+					{ 27.4, 26.8, MAP.MIDNIGHT.ZULAMAN },
+					{ 28.1, 75.1, MAP.MIDNIGHT.ZULAMAN },
+					{ 28.6, 76.6, MAP.MIDNIGHT.ZULAMAN },
+				},
 				["groups"] = {
 					--share Forgotten Amani Cache
 				},

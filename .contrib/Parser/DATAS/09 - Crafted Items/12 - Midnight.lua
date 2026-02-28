@@ -1356,8 +1356,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = SKINNING,
 		},{
+			FirstCraft(95459, 256770),	-- Skinning Bilemaw the Gluttonous
 			FirstCraft(88545, 245688),	-- Skinning Gloomclaw
 			FirstCraft(93634, 242032),	-- Skinning Oophaga
+			FirstCraft(95515, 256922),	-- Skinning Screammaxa the Matriarch
+			FirstCraft(93639, 238498),	-- Skinning Territorial Voidscythe
+			FirstCraft(95471, 242035),	-- Skinning The Devouring Invader
 		})),
 	}),
 	prof(TAILORING, {

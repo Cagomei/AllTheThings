@@ -7,10 +7,6 @@ root(ROOTS.Unsorted, {
 		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
 			n(ARMOR, {
 				-- Armor Quest
-				i(264471),	-- Loa Impostor's Gloves
-				i(264472),	-- Loa Impostor's Clawguards
-				i(264473),	-- Loa Impostor's Tidegrips
-				i(264474),	-- Loa Impostor's Brinefists
 				i(248036),	-- Twilight Tamer's Mantle
 				i(248035),	-- Twilight Tamer's Pauldrons
 				i(248034),	-- Twilight Tamer's Shoulderpads
@@ -73,7 +69,6 @@ root(ROOTS.Unsorted, {
 			filter(QUEST_ITEMS, {
 				i(246129),	-- Outsider's Gear
 				i(246152),	-- Saptor Frill
-				i(248814),	-- Witherbark Supplies
 				i(249775),	-- Bright Berry
 				i(249779),	-- Discordant Tune
 				i(253210),	-- Soothsayer's Signet
@@ -661,7 +656,6 @@ root(ROOTS.Unsorted, {
 				i(249691),	-- Holy Sunfire
 				i(249724),	-- Sunfruit Wedge
 				i(249732),	-- Vintner's Golden
-				i(250190),	-- Knife Priestess Hezzia's Head
 				i(250705),	-- Naga Missive PH NAME
 				i(251899),	-- Anasterian's Book of Law
 				i(251904),	-- Crown of the High King
@@ -670,10 +664,8 @@ root(ROOTS.Unsorted, {
 				i(253519),	-- Pathogenic Essence
 				i(254368),	-- Soul Essence
 				i(254381),	-- Troll Torch
-				i(254430),	-- Totem Remnant
 				i(254665),	-- Void "Ink"
 				i(254671),	-- Talon of the Towering Ultradon
-				i(254778),	-- Altered Totem
 				i(255161),	-- Callum's Belongings
 				i(257081),	-- Bloodied Spear Tip
 				i(257727),	-- Condensed Void Reserves
@@ -686,7 +678,6 @@ root(ROOTS.Unsorted, {
 				i(260363),	-- Ancient Rubble \\ Ancient Predecean Rubble
 				i(260368),	-- Dirt
 				i(260948),	-- Enigmatic Voidclarion \\ Enigmatic Voidcaller
-				i(263202),	-- Murloc-Skewered Lynxfish
 				i(263446),	-- Spare Murloc Suit
 				i(263471),	-- Fire Thing
 				i(264009),	-- S.O.S in a Bottle
@@ -1131,7 +1122,6 @@ root(ROOTS.Unsorted, {
 				i(264456),	-- Lightwood Carved Longbow
 				i(264457),	-- Lightwood Splitter Spear
 				i(264458),	-- Lightwood Channeling Staff
-				i(264459),	-- Lightwood Sunsword
 				i(264460),	-- Tuskcarver's Fang Knife
 				i(264461),	-- Tuskcarver's Ritual Maul
 				i(264462),	-- Tuskcarver's Bone Hammer
@@ -1488,7 +1478,6 @@ root(ROOTS.Unsorted, {
 				i(264548),	-- Sash of Cosmic Tranquility
 				i(264557),	-- Borerplate Pauldrons
 				i(264581),	-- Bloombark Spaulders
-				i(264582),	-- Diamondback-Scale Legguards
 				i(264604),	-- Sludgy Verdant Signet
 				i(264605),	-- Choker of Unyielding Winds
 				i(264625),	-- Gale Force Focus

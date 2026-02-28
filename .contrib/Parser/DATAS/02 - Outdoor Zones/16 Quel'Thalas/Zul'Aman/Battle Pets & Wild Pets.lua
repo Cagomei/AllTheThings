@@ -7,11 +7,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(250135, {	-- Akil Fledgling (PET!)
 				["crs"] = { 249812 },	-- Akil Fledgling
 				["coords"] = {
-				};
+				},
 			}),
 			i(250143, {	-- Dragonhawk Mosswing (PET!)
 				["crs"] = { 249824 },	-- Dragonhawk Mosswing
 				["coords"] = {
+					{ 54.2, 22.4, MAP.MIDNIGHT.ZULAMAN },
 				},
 			}),
 			i(250139, {	-- Ebon Snapling (PET!)
