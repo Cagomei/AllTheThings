@@ -333,7 +333,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(86644, {	-- Gods Before Us
 						["sourceQuests"] = { 86643 },	-- Following the Root
 						["provider"] = { "n", 236610 },	-- Arator
-						["coord"] = { 54.8, 65.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["coord"] = { 44.3, 30.5, 2579 }, -- Wartha'nan Crypts
 						["groups"] = {
 							i(244144),	-- Bloodvein Clot (QI!)
 							i(244143),	-- Bonecarapace Fangs (QI!)
@@ -350,20 +350,20 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--}),
 					q(86646, {	-- An Impasse
 						["sourceQuests"] = { 86644 },	-- Gods Before Us
-						["provider"] = { "n", 240062 },	-- Arator (mobileNPC)
+						["provider"] = { "n", 240662 },	-- Arator (mobileNPC)
 						["groups"] = {
-							i(248080),	--
-							i(250470),	--
+							i(248080),	-- Enchanted Crypt Fetish
+							i(250470),	-- Enchanted Crypt Bow
 							i(250471),	-- Enchanted Crypt Battlestaff
 							i(250472),	-- Enchanted Crypt Stave
-							i(250473),	--
-							i(250474),	--
+							i(250473),	-- Enchanted Crypt Claymore
+							i(250474),	-- Enchanted Crypt Greatsword
 							i(250475),	-- Enchanted Crypt Sword
-							i(250476),	--
-							i(250477),	--
+							i(250476),	-- Enchanted Crypt Falchion
+							i(250477),	-- Enchanted Crypt Hacker
 							i(250478),	-- Enchanted Crypt Hatchet
 							i(250479),	-- Enchanted Crypt Cleaver
-							i(250480),	-- Enchanted Crypt Fetish
+							i(250480),	-- Enchanted Crypt Shiv
 						},
 					}),
 					q(86647, {	-- Beat of Blood
