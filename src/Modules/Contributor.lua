@@ -2782,6 +2782,7 @@ MobileDB.GameObject = {
 	[587913] = true,	-- Shabby Stockpile
 	[612274] = true,	-- Portal to K'aresh (q:85002)
 	[613268] = true,	-- Burning Torch
+	[616055] = true,	-- Forgotten Cache
 	[616916] = true,	-- Eye of the Void
 	[616917] = true,	-- Cosmic Void
 	[616918] = true,	-- Void Rift

@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 26.5, 61.4, MAP.MIDNIGHT.HARANDAR },
 			})),
 			skyriding(ach(61545, {	-- Skyriding Glyphs: Roots of Teldrassil
-				--["coord"] = { X, Y, MAP.MIDNIGHT.HARANDAR },
+				["coord"] = { 34.5, 23.6, MAP.MIDNIGHT.HARANDAR },
 			})),
 			skyriding(ach(61544, {	-- Skyriding Glyphs: The Cradle
 				["coord"] = { 47.1, 53.1, MAP.MIDNIGHT.HARANDAR },

@@ -132,7 +132,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						86844,	-- Light Repurposed
 					},
 					["provider"] = { "n", 237602 },	-- Alonsus Faol
-					["coord"] = { 47.6, 90.0, 2438 },	-- Scarlet Halls
+					["coords"] = {
+						{ 40.4, 29.5, 2438 },	-- Scarlet Halls
+						{ 47.6, 90.0, 2438 },	-- Scarlet Halls
+					},
 				}),
 				q(86902, {	-- Relinquishing Relics
 					["sourceQuests"] = { 92136 },	-- Relic Delivery
@@ -181,7 +184,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						86846,	-- Resupplying our Suppliers
 					},
 					["provider"] = { "n", 247299 },	-- Sunwalker Dezco
-					["coord"] = { 69.3, 34.4, ARATHI_HIGHLANDS },	-- Arathi Highlands
+					["coord"] = { 68.5, 32.2, ARATHI_HIGHLANDS },	-- Arathi Highlands
 					["groups"] = {
 						o(525492, {	-- Forgotten Skullcleaver
 							["coords"] = {
@@ -340,7 +343,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				q(86903, {	-- The Arcantina (TODO: should this be considered as sourceQuest for Arcantina?)
 					["sourceQuests"] = { 86833 },	-- A Bulwark Remade
 					["provider"] = { "n", 253125 },	-- Kurdran Wildhammer
-					["coord"] = { 45.8, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["coord"] = { 440.6, 66.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["maps"] = { ARCANTINA },
 					["groups"] = {
 						i(253629),	-- Personal Key to the Arcantina (TOY!)
