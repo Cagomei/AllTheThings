@@ -964,7 +964,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(94388, {	-- Second Time's a Choice
 						["sourceQuests"] = { 86735 },	-- Paved in Ash
 						["provider"] = { "n", 257426 },	-- Instructor Antheol
-						["coord"] = { 44.5, 56.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["coords"] = { 44.5, 45.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["isBreadcrumb"] = true,
 					}),
 					q(88977, {	-- Reenact the Crime

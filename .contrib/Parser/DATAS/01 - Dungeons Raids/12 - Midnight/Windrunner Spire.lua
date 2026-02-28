@@ -31,7 +31,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			2492,	-- The Promenade
 			2493,	-- Veressa's Repose - Upper
 			2494,	-- Veressa's Repose - Lower
-			--xx,	-- Sylvanas's Quarters - Upper
+			2496,	-- Sylvanas's Quarters - Upper
 			2497,	-- Sylvanas's Quarters - Lower
 			2498,	-- Windrunner Vault
 			2499,	-- The Pinnacle

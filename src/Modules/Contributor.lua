@@ -219,6 +219,7 @@ local MapPrecisionOverrides = {
 	[2328] = 3,	-- The Proscenium
 	[2477] = 4,	-- Voidscar Cavern, K'aresh
 	[2565] = 3,	-- Parhelion Plaza, Isle of Quel'Danas (Intro)
+	[2579] = 2,	-- Wartha'nan Crypts
 }
 
 local function Check_coords(objRef, maxCoordDistance)
@@ -2771,6 +2772,7 @@ MobileDB.GameObject = {
 	[584268] = true,	-- Dropped Tome (q:86739)
 	[584445] = true,	-- Ironwood Lumber
 	[584475] = true,	-- Ironwood Lumber
+	[584517] = true,	-- Heavy Trunk
 	[584519] = true,	-- Heavy Trunk
 	[584540] = true,	-- Chest of Proven Valor [Den of Nalorakk]
 	[584615] = true,	-- Ironwood Lumber

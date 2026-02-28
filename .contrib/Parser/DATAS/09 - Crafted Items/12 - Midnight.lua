@@ -695,6 +695,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(88608, 1225282),	-- Wyrmfish
 		})),
 		filter(RECIPES, {
+			i(244791),	-- Recipe: Amani Angler's Ward
+			i(244816),	-- Recipe: Lucky Loa Lure
 			i(267395),	-- Technique: Homely Wall Shelves (RECIPE!)
 		}),
 		i(243343),	-- Angler's Anomaly
@@ -709,6 +711,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(238375),	-- Fungalskin Pike
 		i(238382),	-- Gore Guppy
 		i(238381),	-- Hollow Grouper
+		i(263938),	-- Idol of Peril (QS!)
 		i(238376),	-- Lucky Loa
 		i(238366),	-- Lynxfish
 		i(238380),	-- Null Voidfish
@@ -1349,8 +1352,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(237363),	-- Umbral Tin Ore++
 		i(265530),	-- Plans: Ornamental Silvermoon Hanger (RECIPE!)
 	}),
-	--[[prof(SKINNING, {
-	}),--]]
+	prof(SKINNING, {
+		n(FIRST_CRAFTS_HEADER, sharedData({
+			["requireSkill"] = SKINNING,
+		},{
+			FirstCraft(88545, 245688),	-- Skinning Gloomclaw
+			FirstCraft(93634, 242032),	-- Skinning Oophaga
+		})),
+	}),
 	prof(TAILORING, {
 		n(ARMOR, {
 			i(239656),	-- Adherent's Silken Shroud

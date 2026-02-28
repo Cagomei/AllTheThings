@@ -174,6 +174,9 @@ root(ROOTS.Zones, m(ARCANTINA, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LA
 				["coord"] = { 20.0, 44.2, ARCANTINA },
 				["questID"] = 92351,
 			}),
+			o(614767, {	-- Giant Growth Potion
+				["coord"] = { 46.7, 61.5, ARCANTINA },
+			}),
 			o(571493, {	-- Inky Black Potion
 				["coord"] = { 60.9, 58.2, ARCANTINA },
 				["questID"] = 92352,

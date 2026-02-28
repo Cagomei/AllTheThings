@@ -269,9 +269,7 @@ root(ROOTS.Unsorted, {
 					i(243248),	-- Anomaly Filament
 
 					-- Fishing
-					i(244791),	-- Recipe: Amani Angler's Ward
 					i(244815),	-- Recipe: Ominous Octopus Lure
-					i(244816),	-- Recipe: Lucky Loa Lure
 					i(244817),	-- Recipe: Blood Hunter Lure
 					i(244818),	-- Recipe: Rootland Crab Lure
 				}),
@@ -351,7 +349,6 @@ root(ROOTS.Unsorted, {
 					i(238631),	-- Voidstorm Leather Sample
 					i(238632),	-- Amani Tanning Oil
 					i(238633),	-- Sin'dorei Tanning Oil
-					i(238634),	-- Amani Skinning Knife
 					i(238635),	-- Thalassian Skinning Knife
 				}),
 			}),
@@ -425,7 +422,6 @@ root(ROOTS.Unsorted, {
 				i(266213),	-- Incense Materials
 				i(260603),	-- Frail and Flexible Wing
 				i(260674),	-- Fine Arcane Dust
-				i(260680),	-- Nesting Materials
 				i(260682),	-- Rusty Tusk Ring
 				i(260690),	-- Gloomy Root
 				i(260695),	-- Rancid Aquatic Remains
@@ -693,7 +689,6 @@ root(ROOTS.Unsorted, {
 				i(263202),	-- Murloc-Skewered Lynxfish
 				i(263446),	-- Spare Murloc Suit
 				i(263471),	-- Fire Thing
-				i(263938),	-- Idol of Peril \\ [PH] Shark Loa Blessing
 				i(264009),	-- S.O.S in a Bottle
 				i(264166),	-- Void Artifact Shard
 				i(264188),	-- Golden Vidious Card
@@ -726,7 +721,6 @@ root(ROOTS.Unsorted, {
 				i(251935),	-- Lightgrasp Worldroot \\ Light's Righteous Arm
 				i(251936),	-- Nullified Quarterstaff
 				i(253388),	-- Tyrannus's Runeblade
-				i(260188),	-- Savage Briaredge
 				i(260189),	-- Rootkeeper's Dancing Needle
 				i(260190),	-- Heavy Bramblebolter
 				i(260191),	-- Hand of the Rootkeeper

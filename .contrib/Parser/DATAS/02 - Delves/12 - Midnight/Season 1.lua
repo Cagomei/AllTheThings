@@ -255,10 +255,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			--	["groups"] = {
 			--	},
 			--}),
-			--o(584517, {	-- Heavy Trunk
-			--	["groups"] = {
-			--	},
-			--}),
+			o(584517, {	-- Heavy Trunk
+				["groups"] = {
+				},
+			}),
 			o(584519, {	-- Heavy Trunk
 				["groups"] = {
 				},

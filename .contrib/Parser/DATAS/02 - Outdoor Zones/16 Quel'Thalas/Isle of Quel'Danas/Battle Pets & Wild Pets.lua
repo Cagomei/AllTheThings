@@ -13,6 +13,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(251003, {	-- Wrathful Wyrm (PET!)
 				["crs"] = { 250573 },	-- Wrathful Wyrm
 				["coords"] = {
+					{ 42.7, 30.7, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 				},
 			}),
 		}),

@@ -9,6 +9,7 @@ ABYSS_ANGLERS = createHeader({
 		en = "Abyss Anglers",
 	},
 });
+
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.ZULAMAN, {
 		n(ABYSS_ANGLERS, {

@@ -24,6 +24,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(257444),	-- Hexed Vilefeather Eagle (MOUNT!)
 				},
 			}),
+			o(525891, {	-- Amani Skinning Knife
+				["coord"] = { 33.1, 79.0, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 89172,
+				["groups"] = { i(238634) },	-- Amani Skinning Knife
+			}),
+			o(525893, {	-- Amani Tanning Oil
+				["coord"] = { 40.4, 36.0, MAP.MIDNIGHT.ZULAMAN },
+				["questID"] = 89170,
+				["groups"] = { i(238632) },	-- Amani Tanning Oil
+			}),
 			o(539049, {	-- Bait and Tackle
 				["coord"] = { 20.8, 66.5, MAP.MIDNIGHT.ZULAMAN },
 				["questID"] = 90795,

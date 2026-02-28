@@ -454,7 +454,6 @@ i(169997);	-- Cracked Aegis
 i(169132);	-- Cracked Gyroscope
 i(169992);	-- Cracked Iris Lens
 i(170029);	-- Cracked Tablet
-i(265054);	-- Cracked Tribal Mask
 i(169999);	-- Crumbling Barrier
 i(169961);	-- Crumbling Mineral Formation
 i(170014);	-- Crumbling Rock
@@ -464,7 +463,6 @@ i(170054);	-- Decrypted Message 001-316
 i(169976);	-- Disintegrating Leaf
 i(170097);	-- Discarded Quel'dorei Tome
 i(169149);	-- Dulled Micro-Serrated Incisor
-i(260679);	-- Fleshless Bone
 i(170005);	-- Fractured Pearl
 i(169138);	-- Fractured Personality Module
 i(169962);	-- Frayed Fetish
@@ -486,7 +484,6 @@ i(169145);	-- Rusted Precision Gripper
 i(170001);	-- Seized Engine
 i(169143);	-- Seized Sparksaw
 i(168791);	-- Shiny Rocks
-i(265041);	-- Singed Ritual Parchment
 i(169125);	-- Sonic Drive Screw
 i(170096);	-- Sodden Highborne Painting
 i(169126);	-- Supercharged Graphics Cog
@@ -2631,6 +2628,7 @@ i(265099);	-- Conjured Coffee
 i(265098);	-- Conjured Croissant
 i(265096);	-- Conjured Souffle
 i(263516);	-- Cosmic Ritual Bowl
+i(265054);	-- Cracked Tribal Mask
 i(260272);	-- Crisp Bluff Bock
 i(260640);	-- Crooked Bird Talons
 i(260658);	-- Crystal Rock Shard
@@ -2656,6 +2654,7 @@ i(260672);	-- Fetid Eye
 i(260689);	-- Fine Bioluminescent Powder
 i(260683);	-- Fine Magenta Sand
 i(260638);	-- Fine Void Residue
+i(260679);	-- Fleshless Bone
 i(260642);	-- Fossilized Wildlife
 i(260694);	-- Foul Kelp
 i(260639);	-- Fractured Bone
@@ -2695,6 +2694,7 @@ i(260255);	-- Managi Roll
 i(260693);	-- Mossy Lump of Dirt
 i(260275);	-- Mukleech Curry
 i(264991);	-- Murder Roe
+i(260680);	-- Nesting Materials
 i(238495);	-- One Angler's Trash
 i(238480);	-- Opened Lockbox
 i(260671);	-- Oversized Gland
@@ -2731,6 +2731,7 @@ i(263519);	-- Snake Oil
 i(238492);	-- Silent Rock
 i(247673);	-- Silvermoon Sin'gria
 i(260263);	-- Silvermoon Soiree Spread
+i(265041);	-- Singed Ritual Parchment
 i(260665);	-- Sizable Tusk
 i(260616);	-- Soft Marine Fungi
 i(246376);	-- Solaarian Sintalia

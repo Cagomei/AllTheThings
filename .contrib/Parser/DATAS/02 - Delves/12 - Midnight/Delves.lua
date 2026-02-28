@@ -163,10 +163,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			filter(TRINKET_F, {
 			}),
 		}),
-		--n(DECOR, {
-		--	-- TODO: based on pure specilation due to lack of data. Probably all delves decor are shared and can be looted from any delves.
-		--}),
+		n(DECOR, {
+			i(264329),	-- Amani Dining Table (DECOR!)
+			i(264330),	-- Amani Hanging Brazier (DECOR!)
+			i(267009),	-- Amani Training Dummy (DECOR!)
+			i(264258),	-- Blossoming Forge (DECOR!)
+			i(264342),	-- Cosmic Void Cache (DECOR!)
+			i(251967),	-- Fungarian Banner (DECOR!)
+			i(263042),	-- Rootlight Lamppost (DECOR!)
+			i(263233),	-- Sin'dorei Spinning Library (DECOR!)
+		}),
 		n(WEAPONS, {
+			i(260188),	-- Savage Briaredge
 		}),
 	})),
 	n(FACTIONS, {
@@ -369,11 +377,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				--}),
 				o(618270, {	-- Sturdy Chest
 					["coord"] = { 48.3, 50.5, ATAL_AMAN },
-					--["questID"] = XXXXXX,
-					["groups"] = {
-						i(252265),	-- Hexed Potatoad Mucus (TOY!)
-					},
+					["questID"] = 94014,
+					["groups"] = { i(252265) },	-- Hexed Potatoad Mucus (TOY!)
 				}),
+				--o(XXXXXX, {	-- Sturdy Chest
+				--	["coord"] = { 51.8, 64.0, ATAL_AMAN },
+				--	["questID"] = 94038,
+				--}),
 			}),
 			n(REWARDS, {
 				filter(BATTLE_PETS, {
@@ -381,13 +391,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 				filter(COSMETIC, {
 					i(264855),	-- Vilebranch Deathseer (COSMETIC!)
-				}),
-				n(DECOR, {
-					i(267009),	-- Amani Training Dummy (DECOR!)
-					i(264342),	-- Cosmic Void Cache (DECOR!)
-					i(264258),	-- Blossoming Forge (DECOR!)
-					i(251967),	-- Fungarian Banner (DECOR!)
-					i(263042),	-- Rootlight Lamppost (DECOR!)
 				}),
 				filter(MISC, {
 					i(262965),	-- Delver's Delight (TODO: should be questID)
@@ -424,6 +427,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					["coord"] = { 81.3, 32.0, COLLEGIATE_CALAMITY },	-- TODO: could be off
 					["questID"] = 94029,
 				}),
+				o(618286, {	-- Sturdy Chest
+					["coord"] = { 29.3, 54.7, COLLEGIATE_CALAMITY },
+					["questID"] = 94030,
+				}),
 			}),
 			n(REWARDS, {
 				filter(BATTLE_PETS, {
@@ -431,13 +438,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 				filter(COSMETIC, {
 					i(264857),	-- Twilight Fanatic's Cowl (COSMETIC!)
-				}),
-				n(DECOR, {
-					i(264329),	-- Amani Dining Table (DECOR!)
-					i(264330),	-- Amani Hanging Brazier (DECOR!)
-					i(267009),	-- Amani Training Dummy (DECOR!)
-					i(264258),	-- Blossoming Forge (DECOR!)
-					i(263042),	-- Rootlight Lamppost (DECOR!)
 				}),
 				filter(MISC, {
 				}),
@@ -470,8 +470,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 			}),
 			n(REWARDS, {
-				n(DECOR, {
-				}),
 				filter(MISC, {
 				}),
 			}),
@@ -520,10 +518,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 			}),
 			n(REWARDS, {
-				n(DECOR, {
-					i(264330),	-- Amani Hanging Brazier (DECOR!)
-					i(251967),	-- Fungarian Banner (DECOR!)
-				}),
 				filter(COSMETIC, {
 					i(264848),	-- Sunlit Vinepouch (COSMETIC!)
 					i(264854),	-- Vilebranch Soulseer (COSMETIC!)
@@ -569,11 +563,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				---}),
 			}),
 			n(REWARDS, {
-				n(DECOR, {
-					i(264329),	-- Amani Dining Table (DECOR!)
-					i(264330),	-- Amani Hanging Brazier (DECOR!)
-					i(267009),	-- Amani Training Dummy (DECOR!)
-				}),
 				filter(COSMETIC, {
 					i(264851),	-- Voidtouched Twilight Spaulder (COSMETIC!)
 				}),
@@ -607,8 +596,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 			}),
 			n(REWARDS, {
-				n(DECOR, {
-				}),
 				filter(MISC, {
 				}),
 			}),
@@ -649,10 +636,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 			}),
 			n(REWARDS, {
-				n(DECOR, {
-					i(264342),	-- Cosmic Void Cache (DECOR!)
-					i(263233),	-- Sin'dorei Spinning Library (DECOR!)
-				}),
 				filter(COSMETIC, {
 					i(262970),	-- Ominous Tome (COSMETIC!)
 				}),
@@ -694,9 +677,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 			}),
 			n(REWARDS, {
-				n(DECOR, {
-					i(264342),	-- Cosmic Void Cache (DECOR!)
-				}),
 				filter(MISC, {
 				}),
 			}),
@@ -750,11 +730,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 			}),
 			n(REWARDS, {
-				n(DECOR, {
-					i(264329),	-- Amani Dining Table (DECOR!)
-					i(267009),	-- Amani Training Dummy (DECOR!)
-					i(251967),	-- Fungarian Banner (DECOR!)
-				}),
 				filter(COSMETIC, {
 					i(262983),	-- Archival Magnimace (COSMETIC!)
 				}),
@@ -781,8 +756,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 			n(REWARDS, {
 				filter(BATTLE_PETS, {
 					i(262391),	-- Ominous Domanus (PET!)
-				}),
-				n(DECOR, {
 				}),
 				filter(MISC, {
 				}),
@@ -827,8 +800,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 				}),
 			}),
 			n(REWARDS, {
-				n(DECOR, {
-				}),
 				filter(COSMETIC, {
 					i(262992),	-- Myth Maker's Brush (COSMETIC!)
 				}),
