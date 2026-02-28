@@ -17,12 +17,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(243106),	-- Gemmed Eversong Lantern (DECOR!)
 					i(263211),	-- Gilded Eversong Cup (DECOR!)
 					i(251912),	-- Goldenmist Grapes (DECOR!)
-					i(246458),	-- Grand Aethercharged Crystal (DECOR!)
 					i(244783, {	-- Majestic Lightwood Table (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
 					}),
 					i(245992),	-- Ornate Silvermoon Candelabra (DECOR!)
-					i(264660),	-- Ren'dorei Spired Tent (DECOR!)
 					i(263231, {	-- Silvermoon Curio Shelves (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
 					}),
@@ -31,15 +29,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(244538),	-- Silvermoon Sundial (DECOR!)
 					i(253485),	-- Sin'dorei Honor Stone (DECOR!)
 					i(264248),	-- Sin'dorei Storage Jar (DECOR!)
-					i(251914),	-- Sumptuous Berry Pie (DECOR!)
-					i(262610),	-- Swirling Ritual Pedestal (DECOR!)
-					-- Two more "locked" items with no ID or name with a cost of 2500 (on Beta)
-					--i(XXXXXX, {	-- XX
-					--	["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
-					--}),
-					--i(XXXXXX, {	-- XX
-					--	["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
-					--}),
 				}),
 			}),
 		}),

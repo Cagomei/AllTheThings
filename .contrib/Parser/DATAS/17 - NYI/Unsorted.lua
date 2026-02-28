@@ -429,7 +429,6 @@ root(ROOTS.Unsorted, {
 				i(266102),	-- Ambiguous Rock
 				i(266213),	-- Incense Materials
 				i(260603),	-- Frail and Flexible Wing
-				i(260667),	-- Tainted Organs
 				i(260674),	-- Fine Arcane Dust
 				i(260679),	-- Fleshless Bone
 				i(260680),	-- Nesting Materials
@@ -1399,6 +1398,12 @@ root(ROOTS.Unsorted, {
 				i(262660),	-- Egg Farmer's Backpack
 			}),
 			n(DECOR, {
+				-- On a Sathren Azuredawn vendor during Beta, not there on live. Maybe moved to some other vendor?
+				i(246458),	-- Grand Aethercharged Crystal
+				i(264660),	-- Ren'dorei Spired Tent (DECOR!)
+				i(251914),	-- Sumptuous Berry Pie (DECOR!)
+				i(262610),	-- Swirling Ritual Pedestal (DECOR!)
+				--
 				i(260727),	-- Alliance Doormat
 				i(260728),	-- Horde Doormat
 				i(263239),	-- Cuddly Tan Grrgle \\ Cuddly  Tan Grrgle

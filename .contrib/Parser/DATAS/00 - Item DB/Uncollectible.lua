@@ -2737,6 +2737,7 @@ i(260659);	-- Stellar Vortex Residue
 i(260620);	-- Stone Droppings
 i(262786);	-- Suntouched Special Reserve
 i(264983);	-- Sunwell Shot
+i(260667);	-- Tainted Organs
 i(265042);	-- Tarnished Shadow Torque
 i(260648);	-- Tattered Clothes
 i(260273);	-- Tea of Mists and Rain

@@ -289,7 +289,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 		n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_SEASONSTART, REMOVED_12_1_0 } }, {
 			n(242398, {	-- Naleidea Rivergleam
 				["coord"] = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
+				["groups"] = sharedData({
+					["timeline"] = { ADDED_12_0_X_SEASONSTART },
+				}, {
 					i(253342, {	-- Beacon of Hope
 						["cost"] = { { "c", UNDERCOIN, 5000 } },
 						--["questID"] = ???,
@@ -303,11 +305,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 					i(263191, {	-- Restored Coffer Key
 						["cost"] = { { "c", UNDERCOIN, 2000 } },
 					}),
-				},
+				}),
 			}),
 			n(242399, {	-- Telemancer Astrandis
 				["coord"] = { 52.5, 78.9, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
+				["groups"] = sharedData({
+					["timeline"] = { ADDED_12_0_X_SEASONSTART },
+				}, {
 					n(DECOR, {
 						i(264175, {	-- Amani Strongbox (DECOR!)
 							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
@@ -366,7 +370,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 							-- Renown 7
 						}),
 					}),
-				},
+				}),
 			}),
 		})),
 	}),
