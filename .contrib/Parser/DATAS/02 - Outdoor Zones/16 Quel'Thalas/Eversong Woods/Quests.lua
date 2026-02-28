@@ -563,13 +563,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 					}),
 					header(HEADERS.AchCriteria, 61957.07, {	-- Far Striding
-						q(91342, {	-- If You Want It Done Right
+						q(94371, {	-- A Ranger's Dream
 							["sourceQuests"] = { 86735 },	-- Paved in Ash
+							["qg"] = 257384,	-- Despondent Magistrix
+							["coord"] = { 45.2, 45.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+							["isBreadcrumb"] = true,	-- I think
+						}),
+						q(91342, {	-- If You Want It Done Right
+							["sourceQuests"] = { 94371 },	-- A Ranger's Dream
 							["provider"] = { "n", 246806 },	-- Arcanist Taemin
 							["coord"] = { 57.4, 39.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 						}),
 						q(91452, {	-- Range of Knowledge
-							["sourceQuests"] = { 86735 },	-- Paved in Ash
+							["sourceQuests"] = { 94371 },	-- A Ranger's Dream
 							["provider"] = { "n", 246806 },	-- Arcanist Taemin
 							["coord"] = { 57.4, 39.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 							["groups"] = {

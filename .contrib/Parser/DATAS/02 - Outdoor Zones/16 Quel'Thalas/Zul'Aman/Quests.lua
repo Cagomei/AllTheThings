@@ -277,9 +277,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 236155 },	-- Zul'jarra
 						["coord"] = { 32.4, 31.6, MAP.MIDNIGHT.ZULAMAN },
 						["groups"] = {
-							--Alex TODO: check if Blizzard removed this as dupe reward from it
-							i(248576),	-- Prowlers Cloth
-							i(248575),	-- Prowlers Shawl
 							--spell(1239217),	-- Blessing: Halazzi's Guile
 						},
 					}),
@@ -439,15 +436,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 51.3, 54.4, MAP.MIDNIGHT.ZULAMAN },
 					}),
 					--
+					q(91087, {	-- Reports Returned
+						["sourceQuests"] = { 91062 },	-- Broken Bridges
+						["provider"] = { "n", 241308 },	-- Lady Liadrin
+						["coord"] = { 50.8, 54.5, MAP.MIDNIGHT.ZULAMAN },
+						["groups"] = { i(256928) },	-- Banner of the Amani Tribe (DECOR!)
+					}),
 				}),
 			}),
 			--Alex TODO: seems like next zone related?
-			q(91087, {	-- Reports Returned
-				["sourceQuests"] = { 91062 },	-- Broken Bridges
-				["provider"] = { "n", 241308 },	-- Lady Liadrin
-				["coord"] = { 50.8, 54.5, MAP.MIDNIGHT.ZULAMAN },
-				["groups"] = { i(256928) },	-- Banner of the Amani Tribe (DECOR!)
-			}),
 			q(91967, {	-- You Know This Evil?
 				["sourceQuests"] = { 91087 },	-- Reports Returned
 				["provider"] = { "n", 235787 },	-- Lor'themar Theron

@@ -2658,6 +2658,7 @@ MobileDB.GameObject = {
 	[551833] = true,	-- Dragonpine Lumber
 	[553616] = true,	-- Arden Lumber
 	[553646] = true,	-- Arden Lumber
+	[536903] = true,	-- Dropped Tome (q:86740)
 	[553804] = true,	-- Arden Lumber
 	[554661] = true,	-- Arden Lumber
 	[554679] = true,	-- Legacy Stone of True Self (q:90960)

@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(242033, {	-- Tiny Vermin
 				["coord"] = { 47.7, 34.4, MAP.MIDNIGHT.ZULAMAN },
-				--["questID"] = 89580,	-- TODO: Blizzard bug - share questID with Waverly rare
+				["questID"] = 89580,
 				["groups"] = {
 					i(264597),	-- Leechtooth Band
 					i(264648),	-- Verminscale Gavel
