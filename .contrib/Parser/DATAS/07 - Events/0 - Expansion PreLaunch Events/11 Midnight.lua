@@ -6,7 +6,7 @@ local TWILIGHTS_BLADE_INSIGNIA = 3319;
 
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 	expansion(EXPANSION.MID, {
-		["forcetimeline"] = { ADDED_12_0_0, REMOVED_12_0_1_LAUNCH },
+		["forcetimeline"] = { ADDED_12_0_0, "removed 12.0.1.99999" },	-- TODO: timeline out on full launch March 2nd
 	}),
 	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
