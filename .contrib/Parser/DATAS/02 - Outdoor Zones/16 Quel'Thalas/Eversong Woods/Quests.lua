@@ -112,7 +112,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 47.3, 55.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
 							o(528310, {	-- Mysterious Corpse
-								i(239496),	-- Despoiled Notes (QI!)
+								["coord"] = { 49.2, 58.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+								["g"] = { i(239496) },	-- Despoiled Notes (QI!)
 							}),
 						},
 					}),
@@ -990,8 +991,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 32.2, 26.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 					}),
 					---
+					q(90822, {	-- Windrunner Spire: Haunting Melodies (TODO: dungeon quest)
+						["provider"] = { "n", 256875 },	-- Restless Spirit
+						["coord"] = { 35.5, 79.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+					}),
+					---
+					q(94370, {	-- Slithering Closer
+						["provider"] = { "n", 257393 },	-- Fern Shadestar
+						["coord"] = { 37.3, 73.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["isBreadcrumb"] = true,	-- Not sure but lets get some reported errors?
+					}),
 					q(91493, {	-- Not What I Ordered
-						--["sourceQuests"] = { xx },	-- xx
+						["sourceQuests"] = { 94370 },	-- Slithering Closer
 						["provider"] = { "n", 247503 },	-- Hathvelion Sungaze
 						["coord"] = { 39.0, 61.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
@@ -1063,7 +1074,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 37.5, 72.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
 							o(568332, {
-								i(249471),	-- Pristine Graveblossom (QI!)
+								["coord"] = { 38.9, 76.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+								["g"] = { i(249471) },	-- Pristine Graveblossom (QI!)
 							}),
 						},
 					}),
