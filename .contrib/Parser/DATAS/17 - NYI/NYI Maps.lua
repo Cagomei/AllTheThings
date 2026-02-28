@@ -386,6 +386,8 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 
 		-- 11.1.0
 		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
+			-- 2 (Taxi and Adventure)
+			m(2374),	-- Undermine
 			-- 3 (Minimap)
 			m(2431),	-- Minimap_RingingDeeps_Coreway
 		})),
@@ -396,7 +398,6 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 			m(2453),	-- Archival Assault
 			-- 2 (Taxi and Adventure)
 			m(2398),	-- K'aresh
-			m(2374),	-- Undermine
 		})),
 
 		-- 11.2.7
