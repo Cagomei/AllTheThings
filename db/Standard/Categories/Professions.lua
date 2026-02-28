@@ -2552,7 +2552,7 @@ crit(6756,{achID=1563,id=9})}}),
 ach(1797,{awp=30002,rank=75,requireSkill=185}),
 ach(1796,{awp=30002,rank=50,requireSkill=185}),
 ach(1795,{awp=30002,rank=25,requireSkill=185}),
-ach(1998,{awp=30002,cost={{"c",81,1},{"c",402,1}},providers={{"i",43016},{"i",57142},{"i",57757}},rank=1,requireSkill=185}),
+ach(1998,{awp=30002,cost={{"c",81,1},{"c",402,1}},providers={{"i",57142},{"i",57757}},rank=1,requireSkill=185}),
 ach(1999,{awp=30002,cost={{"c",81,10},{"c",402,10}},rank=10,requireSkill=185}),
 ach(2000,{awp=30002,cost={{"c",81,25},{"c",402,25}},rank=25,requireSkill=185}),
 ach(2001,{awp=30002,cost={{"c",81,50},{"c",402,50}},rank=50,requireSkill=185}),
@@ -4578,7 +4578,8 @@ cu(3055,{requireSkill=356})}}),
 i(225768,{f=55,requireSkill=356,spellID=456068})}})}}),
 x(12,{awp=120001,requireSkill=356,g={
 h(-12,{requireSkill=356,g={
-ach(42797,{cost={{"i",254875,2}},requireSkill=356})}})}})}),
+ach(42797,{cost={{"i",254875,2}},requireSkill=356,g={
+de(15407,{itemID=264002,requireSkill=356,spellID=1271033})}})}})}})}),
 prof(182,{
 h(-26,{awp=30002,requireSkill=182,rwp=60002,u=2,g={
 r(81708,{awp=40003,rank=1,requireSkill=182,u=2}),
@@ -6693,10 +6694,10 @@ h(-246,{requireSkill=165,g={
 i(263459,{b=1,isWeekly=1,requireSkill=165,spellID=1270537,g={
 cu(3157,{requireSkill=165})}}),
 q(95134,{description="Requires a crafting order from Inscription.",isWeekly=1,providers={{"i",245758}},requireSkill=165,g={
-cu(3157,{requireSkill=165})}})}})}})}),(function(t2) (function(t)t.DontEnforceSkillRequirements=true;end)(t2); return t2; end)(
-prof(633,{c=a[313],description="Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",g={
+cu(3157,{requireSkill=165})}})}})}})}),
+prof(633,{c=a[313],description="Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",DontEnforceSkillRequirements=1,g={
 r(1804,{c=a[313],requireSkill=921}),
-r(921,{c=a[313],requireSkill=921})}})),
+r(921,{c=a[313],requireSkill=921})}}),
 prof(186,{
 h(-26,{requireSkill=186,g={
 r(53120,{awp=30002,rank=1,requireSkill=186,rwp=60002,u=2}),

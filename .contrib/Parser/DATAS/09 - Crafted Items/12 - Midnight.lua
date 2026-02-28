@@ -1455,5 +1455,59 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(240164),	-- Sunfire Silk Lining+
 			i(240165),	-- Sunfire Silk Lining++
 		}),
+		n(FIRST_CRAFTS_HEADER, sharedData({
+			["requireSkill"] = TAILORING,
+		},{
+			-- FirstCraft(0, 1228979);		-- Arcanoweave Reagent Rucksack
+			-- FirstCraft(0, 1265674);		-- Artisan Tailor's Moxie
+			-- FirstCraft(0, 1280545);		-- Blood-Tempered Cape
+			-- FirstCraft(0, 1228968);		-- Bright Linen Alchemy Apron
+			FirstCraft(90018, 1228941);		-- Bright Linen Bandage
+			FirstCraft(90016, 1228939);		-- Bright Linen Bolt
+			-- FirstCraft(0, 1228970);		-- Bright Linen Enchanting Hat
+			FirstCraft(90048, 1228971);		-- Bright Linen Fishing Hat
+			-- FirstCraft(0, 1228972);		-- Bright Linen Herbalism Hat
+			-- FirstCraft(0, 1228978);		-- Bright Linen Reagent Satchel
+			-- FirstCraft(0, 1228976);		-- Bright Linen Spellthread
+			FirstCraft(90050, 1228973);		-- Bright Linen Tailoring Robe
+			FirstCraft(90046, 1228969);		-- Chef's Bright Linen Cooking Chapeau
+			-- FirstCraft(0, 1265682);		-- Concentration
+			-- FirstCraft(0, 1228953);		-- Courtly Belt
+			-- FirstCraft(0, 1228958);		-- Courtly Cloak
+			-- FirstCraft(0, 1228952);		-- Courtly Gloves
+			-- FirstCraft(0, 1228951);		-- Courtly Helm
+			-- FirstCraft(0, 1228956);		-- Courtly Pants
+			-- FirstCraft(0, 1228955);		-- Courtly Robes
+			-- FirstCraft(0, 1228959);		-- Courtly Shoulders
+			-- FirstCraft(0, 1228957);		-- Courtly Slippers
+			-- FirstCraft(0, 1228954);		-- Courtly Wrists
+			-- FirstCraft(0, 1280544);		-- Farstrider's Embroidered Cover
+			-- FirstCraft(0, 1228977);		-- Imbued Bright Linen Backpack
+			FirstCraft(90017, 1228940);		-- Imbued Bright Linen Bolt
+			-- FirstCraft(0, 1280543);		-- Scout's Cape
+			-- FirstCraft(0, 1280542);		-- Silvermoon Agent's Drape
+			-- FirstCraft(0, 1280541);		-- Smuggler's Cloak
+			-- FirstCraft(0, 1265666);		-- Sparks
+			-- FirstCraft(0, 1280546);		-- Spellbreaker's Shroud
+			-- FirstCraft(0, 1228980);		-- Sunfire Silk Backpack
+			--- SPECIALIZATION ---
+			-- FirstCraft(0, 1228950);		-- Adherent's Silken Shroud
+			-- FirstCraft(0, 1227926);		-- Arcanoweave Bolt
+			-- FirstCraft(0, 1228984);		-- Arcanoweave Bracers
+			-- FirstCraft(0, 1228985);		-- Arcanoweave Cloak
+			-- FirstCraft(0, 1228986);		-- Arcanoweave Treads
+			-- FirstCraft(0, 1228945);		-- Martyr's Bindings
+			-- FirstCraft(0, 1228942);		-- Martyr's Crown
+			-- FirstCraft(0, 1228943);		-- Martyr's Gloves
+			-- FirstCraft(0, 1228947);		-- Martyr's Leggings
+			-- FirstCraft(0, 1228949);		-- Martyr's Mantle
+			-- FirstCraft(0, 1228948);		-- Martyr's Slippers
+			-- FirstCraft(0, 1228946);		-- Martyr's Vestments
+			-- FirstCraft(0, 1228944);		-- Martyr's Waistwrap
+			-- FirstCraft(0, 1228981);		-- Sunfire Bracers
+			-- FirstCraft(0, 1228982);		-- Sunfire Cloak
+			-- FirstCraft(0, 1228060);		-- Sunfire Silk Bolt
+			-- FirstCraft(0, 1228983);		-- Sunfire Treads
+		})),
 	}),
 })));
