@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				o(617432, {	-- Forgotten Ink and Quill
 					["coord"] = { 43.3, 69.5, MAP.MIDNIGHT.EVERSONG_WOODS },
-					--["questID"] = 94747,	-- I did not get his //Braghe
+					--["questID"] = 94747,	-- I did not get his //Braghe (ShadowBrooks did though??)
 					["questID"] = 93893,
 					["groups"] = { i(262616) },	-- Lively Songwriter's Quill (DECOR!)
 				}),
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["groups"] = { i(258768) },	-- Battered Safebox Key
 						}),
 						o(613272, {	-- Tarnished Safebox Key
-							["coord"] = { 38.5, 73.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+							["coord"] = { 40.3, 75.8, MAP.MIDNIGHT.EVERSONG_WOODS },
 							["groups"] = { i(258770) },	-- Tarnished Safebox Key
 						}),
 						o(613271, {	-- Worn Safebox Key

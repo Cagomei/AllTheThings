@@ -967,9 +967,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(244407),	-- Cracked Wyrm Core (QI!)
 							i(253212),	-- Rogue's Signet (QI!)
 							i(253211),	-- Smuggler's Signet (QI!)
-							o(539728, {	--
-								i(245566),	-- Fel Splinter (TODO: into uncollectible?)
-								i(244528),	-- Shipping Manifest (QI!)
+							o(539728, {	-- Crate of Fel Artifacts
+								["coord"] = { 57.9, 52.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+								["g"] = {
+									i(245566),	-- Fel Splinter
+									i(244528),	-- Shipping Manifest (QI!)
+								},
 							}),
 						},
 					}),
