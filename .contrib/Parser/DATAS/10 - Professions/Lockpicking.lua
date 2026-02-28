@@ -44,7 +44,7 @@ root(ROOTS.Professions, lockpicking({
 	-- TODO: Maybe add a thing in the tooltip for suggestions on where to level next?
 	-- #endif
 	-- This makes it ignore the profession requirement.
-	["OnInit"] = [[function(t) t.DontEnforceSkillRequirements = true; end]],
+	["DontEnforceSkillRequirements"] = true,
 	-- #if BEFORE CATA
 	["OnUpdate"] = [[_.OnUpdateDB.ForLockpicking]],
 	["OnTooltip"] = [[_.OnTooltipDB.ForLockpicking]],

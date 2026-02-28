@@ -193,8 +193,7 @@ namespace ATT
                 var onInitBody = SimplifyLuaBody(OnInitRef);
                 if (!onInitBody.Contains("return") && onInitBody.Contains("function("))
                 {
-                    Console.WriteLine("Missing a return within an OnInit function body.");
-                    Console.WriteLine(OnInitRef.ToString());
+                    Framework.LogWarn("Missing a return within an OnInit function body.", data);
                     onInitBody = $"function(t2) ({onInitBody})(t2); return t2; end";
                 }
                 builder.Append('(').Append(onInitBody).Append(")(");
