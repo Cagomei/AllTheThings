@@ -1655,7 +1655,7 @@ TWW_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(435326),	-- Marbled Stone
 	}),
 });
-MID_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+MID_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(471011),	-- Midnight Jewelcrafting
 	r(1231127),	-- Midnight Prospecting
 	r(471045),	-- Recraft Equipment

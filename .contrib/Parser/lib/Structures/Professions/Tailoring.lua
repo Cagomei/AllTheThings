@@ -1083,7 +1083,7 @@ TWW_TAILORING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(446929),	-- Weavercloth Bolt
 	}),
 });
-MID_TAILORING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+MID_TAILORING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(471015),	-- Midnight Tailoring
 	r(1265674),	-- Artisan Tailor's Moxie
 	r(1265682),	-- Concentration

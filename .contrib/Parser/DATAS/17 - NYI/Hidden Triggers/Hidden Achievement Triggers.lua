@@ -4124,7 +4124,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 12.0.1
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_X_LAUNCH } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1_LAUNCH } }, {
 			-- 12.0.1.64889
 			ach(62292),	-- Adventurer Dawncrests earned
 			ach(62293),	-- Veteran Dawncrests earned

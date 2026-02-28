@@ -1306,7 +1306,7 @@ TWW_BLACKSMITHING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(450253),	-- Ironclaw Sword
 	}),
 });
-MID_BLACKSMITHING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+MID_BLACKSMITHING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(471004),	-- Midnight Blacksmithing
 	r(1265668),	-- Artisan Blacksmith's Moxie
 	r(1265676),	-- Concentration

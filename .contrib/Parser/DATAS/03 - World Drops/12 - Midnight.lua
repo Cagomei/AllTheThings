@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(ARMOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
 		filter(BACK_F, {
 			i(266224),	-- Brittle Cape

@@ -882,11 +882,11 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(225768),	-- Crusty Darkmoon Card
 		}),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42797, {	-- Fishing at Midnight
 				["cost"] = {{ "i", 254875, 2 }},	-- 2xMuck-Covered Writings
-				["timeline"] = { ADDED_12_0_X_LAUNCH },
+				["timeline"] = { ADDED_12_0_1_LAUNCH },
 				["groups"] = { i(264002) },	-- Midnight Fisher's Shop Sign (DECOR!)
 			}),
 		}),

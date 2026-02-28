@@ -64,7 +64,7 @@ local mapped = function(t)
 	end
 	return t
 end
-root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
 		ach(61722),	-- Curio Enthusiast: Midnight
 		ach(61723),	-- Curio Fanatic: Midnight
@@ -250,7 +250,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, applyDataSelf({ ["timeline"] = { ADD
 	mapped(n(TREASURES, {
 		o(584752, {	-- Mislaid Curiosity
 			["description"] = "Contains Chunk of Companion Experience tokens.",
-			["timeline"] = { ADDED_12_0_X_LAUNCH },
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
 			["groups"] = {
 				-- Let's figure out if there will be some pre-seasonal IDs for experience
 				i(254756),	-- Chunk of Companion Experience (Uncommon)

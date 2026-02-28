@@ -295,17 +295,17 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, {
 	}),
 	expansion(EXPANSION.MID, {
 		ach(61438, {	-- Thalassian Profession Master		-- 1 Primary Professions at Max
-			["timeline"] = { ADDED_12_0_X_LAUNCH },
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
 		}),
 		ach(61439, {	-- Thalassian Artisan				-- 2 Primary Professions at Max
-			["timeline"] = { ADDED_12_0_X_LAUNCH },
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
 		}),
 		ach(61440, {	-- Thalassian Polymath				-- 5 Primary Professions at Max
-			["timeline"] = { ADDED_12_0_X_LAUNCH },
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
 			["groups"] = { i(FINERY_FUNDS) },
 		}),
 		ach(61441, {	-- Working WAY Past Midnight		-- ALL Primary Professions at Max
-			["timeline"] = { ADDED_12_0_X_LAUNCH },
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
 		}),
 	}),
 }));

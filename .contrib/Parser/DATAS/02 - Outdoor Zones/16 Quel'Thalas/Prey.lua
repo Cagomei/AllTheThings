@@ -10,7 +10,7 @@ PREY = createHeader({
 	},
 });
 
-root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	-- TODO: Move this all to Expansion Features instead?
 	n(PREY, {
 		n(ACHIEVEMENTS, {

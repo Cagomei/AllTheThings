@@ -2129,7 +2129,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				}),
 			}),
 		})),
-		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 12.0.0.65655", "removed 12.0.1.99999" } }, {	-- TODO: Timeline in/out correctly
+		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 12.0.1.66192", "removed 12.0.1.99999" } }, {	-- TODO: Timeline in/out correctly
 			n(FILLED_TRAVELERS_LOG, {
 				i(263451),	-- Comfy Bel'ameth Flying Quilt (MOUNT!)
 			}),

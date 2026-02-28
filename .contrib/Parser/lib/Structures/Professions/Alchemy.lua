@@ -606,7 +606,7 @@ TWW_ALCHEMY = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(462122),	-- Petal Powder
 	}),
 });
-MID_ALCHEMY = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+MID_ALCHEMY = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(471003),	-- Midnight Alchemy
 	r(1265667),	-- Artisan Alchemist's Moxie
 	r(1265675),	-- Concentration

@@ -93,7 +93,7 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, {
 				i(225671),	-- Stack of Pentagold Reviews
 				i(225672),	-- Unraveled Instructions
 			})),
-			expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+			expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 				i(246447),	-- Apprentice's Scribbles
 				i(246450),	-- Artisan's Consortium Gold Star
 				i(246585),	-- Artisan's Consortium Payout

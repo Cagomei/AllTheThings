@@ -95,13 +95,13 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						194181,	-- Vexamus
 					},
 					["groups"] = {
-						i(258529, {["timeline"] = { ADDED_12_0_X_LAUNCH }}),	-- Arcaneclaw Spear
+						i(258529, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Arcaneclaw Spear
 					},
 				}),
 				e(2495, {	-- Crawth
 					["crs"] = { 191736 },	-- Crawth
 					["groups"] = {
-						i(258531, {["timeline"] = { ADDED_12_0_X_LAUNCH }}),	-- Crawth's Scaleguard
+						i(258531, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Crawth's Scaleguard
 					},
 				}),
 				e(2514, {	-- Echo of Doragosa

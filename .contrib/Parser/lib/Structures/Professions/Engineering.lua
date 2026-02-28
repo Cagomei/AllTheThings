@@ -1017,7 +1017,7 @@ TWW_ENGINEERING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(447379),	-- 4UT0-41M3R
 	}),
 });
-MID_ENGINEERING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+MID_ENGINEERING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(471007),	-- Midnight Engineering
 	r(1265670),	-- Artisan Engineer's Moxie
 	r(1265678),	-- Concentration

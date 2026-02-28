@@ -491,7 +491,7 @@ TWW_INSCRIPTION = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(444196),	-- Inquisitor's Torch
 	}),
 });
-MID_INSCRIPTION = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+MID_INSCRIPTION = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(471010),	-- Midnight Inscription
 	r(1269575),	-- Midnight Milling
 	r(1265673),	-- Artisan Scribe's Moxie

@@ -32,6 +32,6 @@ root(ROOTS.Character, {
 		faction(2414, {["timeline"] = {ADDED_9_0_1 }}),		-- Shadowlands
 		faction(2506, {["timeline"] = {ADDED_10_0_0 }}),	-- Dragonflight
 		faction(2569, {["timeline"] = {ADDED_11_0_2 }}),	-- The War Within
-		faction(2698, {["timeline"] = {ADDED_12_0_X_LAUNCH }}),	-- Midnight
+		faction(2698, {["timeline"] = {ADDED_12_0_1_LAUNCH }}),	-- Midnight
 	})),
 });

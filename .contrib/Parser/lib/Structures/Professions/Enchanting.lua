@@ -854,7 +854,7 @@ TWW_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(445317),	-- Stormrider's Fury
 	}),
 });
-MID_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+MID_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(471006),	-- Midnight Enchanting
 	r(1280952, {["collectible"] = false}),	-- Disenchant
 	r(1265669),	-- Artisan Enchanter's Moxie
@@ -904,7 +904,7 @@ MID_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
 		r(1236080),	-- Enchant Weapon - Worldsoul Aegis
 	}),
 });
-MID_JENNARA_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+MID_JENNARA_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(1236461),	-- Gleeful Glamour - Blood Elf
 	r(1236463),	-- Gleeful Glamour - Dark Iron Dwarf
 	r(1236465),	-- Gleeful Glamour - Draenei

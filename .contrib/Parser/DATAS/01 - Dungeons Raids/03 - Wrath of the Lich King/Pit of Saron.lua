@@ -270,7 +270,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(267007, {["timeline"] = { ADDED_12_0_0 }}),	-- Eye of Acherus (DECOR!)
-							i(252421, {["timeline"] = { ADDED_12_0_X_LAUNCH }}),	-- Rotting Globule
+							i(252421, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Rotting Globule
 							i(50273),	-- Engraved Gargoyle Femur
 							i(50267),	-- Tyrannical Beheader
 							i(50268),	-- Rimefang's Claw

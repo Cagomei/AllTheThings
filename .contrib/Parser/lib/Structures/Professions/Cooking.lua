@@ -402,7 +402,7 @@ TWW_COOKING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(445084),	-- Unseasoned Field Steak
 	r(445094),	-- Zesty Nibblers
 });
-MID_COOKING = bubbleDown({ ["timeline"] = { ADDED_12_0_X_LAUNCH } }, {
+MID_COOKING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(471005),	-- Midnight Cooking
 	r(818),		-- Cooking Fire
 	r(1226183),	-- Arcano Cutlets
