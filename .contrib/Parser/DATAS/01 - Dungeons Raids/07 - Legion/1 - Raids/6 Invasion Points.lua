@@ -109,6 +109,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				["questID"] = 49169,
 				["modelScale"] = 0.65,
 				["isRaid"] = true,
+				["isWeekly"] = true,
 				["maps"] = {
 					929,	-- Greater Invasion Point: Matron Folnuna
 					KROKUUN,
@@ -146,6 +147,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				["questID"] = 49167,
 				["modelScale"] = 0.95,
 				["isRaid"] = true,
+				["isWeekly"] = true,
 				["maps"] = {
 					928,	-- Greater Invasion Point: Mistress Alluradel
 					KROKUUN,
@@ -180,6 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				["questID"] = 49166,
 				["modelScale"] = 0.85,
 				["isRaid"] = true,
+				["isWeekly"] = true,
 				["maps"] = {
 					930,	-- Greater Invasion Point: Inquisitor Meto
 					KROKUUN,
@@ -214,6 +217,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				["questID"] = 49170,
 				["modelScale"] = 0.50,
 				["isRaid"] = true,
+				["isWeekly"] = true,
 				["maps"] = {
 					932,	-- Greater Invasion Point: Occularus
 					KROKUUN,
@@ -246,6 +250,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				["questID"] = 49171,
 				["modelScale"] = 0.75,
 				["isRaid"] = true,
+				["isWeekly"] = true,
 				["maps"] = {
 					931,	-- Greater Invasion Point: Sotanathor
 					KROKUUN,
@@ -280,6 +285,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				["questID"] = 49168,
 				["modelScale"] = 1.15,
 				["isRaid"] = true,
+				["isWeekly"] = true,
 				["maps"] = {
 					927,	-- Greater Invasion Point: Pit Lord Vilemus
 					KROKUUN,
