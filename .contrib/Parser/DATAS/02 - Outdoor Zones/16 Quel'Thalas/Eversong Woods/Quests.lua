@@ -101,8 +101,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86744 },	-- Seeking Truth
 						["provider"] = { "n", 236716 },	-- Arator
 						["coord"] = { 47.3, 55.4, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = {
-						},
 					}),
 				}),
 				header(HEADERS.AchCriteria, 41802.02, {	-- Shadowfall
@@ -112,12 +110,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 47.3, 55.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 						["groups"] = {
 							o(528310, {	-- Mysterious Corpse
-								["coord"] = { 49.2, 58.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+								["coord"] = { 49.2, 58.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 								["groups"] = { i(239496) },	-- Despoiled Notes (QI!)
 							}),
 						},
 					}),
-					------ Stay awhile and listen ------ Not Ingame?
+					------ Stay awhile and listen ------
+					-- Exo Note: "Stay awhile" content is still present, it just does not trigger the HQT
 					--hqt(91078, {	-- Stay awhile and listen: Orweyna
 					--	["name"] = "Stay awhile and listen: Orweyna",
 					--	["description"] = "Dialogue becomes available during 'The Wayward Magister' (86621).",
@@ -129,16 +128,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86621 },	-- The Wayward Magister
 						["provider"] = { "n", 236087 },	-- Magister Umbric
 						["coord"] = { 47.7, 69.8, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = {
-							i(251883),	-- Umbric's Channeling Focus
-						},
+						["groups"] = { i(251883) },	-- Umbric's Channeling Focus
 					}),
 					q(86624, {	-- Rational Explanation
 						["sourceQuests"] = { 86621 },	-- The Wayward Magister
 						["provider"] = { "n", 236100 },	-- Arator
 						["coord"] = { 47.7, 69.7, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = {
-						},
 					}),
 					q(90907, {	-- The First to Know
 						["sourceQuests"] = {
@@ -468,6 +463,49 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = { i(244547) },	-- Folded Receipt (QI!)
 					}),
 				}),
+				header(HEADERS.AchCriteria, 61957.03, {	-- Sunbath, Take Me Away
+					q(91271, {	-- A Fish!
+						--Required fishing to complete it, but not to accept it.
+						["sourceQuests"] = { 86745 },	--	Silvermoon Must Know
+						["provider"] = { "n", 245745 },	-- Valdekar Solaar
+						["coord"] = { 48.8, 76.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(246379),	-- Absolutely Adequate Fish (QI!)
+							i(246382),	-- Fabulous Fish (QI!)
+							i(246380),	-- Fairly Fine Fish (QI!)
+							i(246381),	-- Pretty Plump Fish (QI!)
+						},
+					}),
+					q(91328, {	-- Secret Ingredients
+						["sourceQuests"] = { 91271 },	-- A Fish!
+						["provider"] = { "n", 245745 },	-- Valdekar Solaar
+						["coord"] = { 48.8, 76.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							o_repeated({
+								i(246364),	-- Belanise Blossom (QI!)
+								o(555383),	-- Belanise Cluster
+								o(626980),	-- Belanise Cluster
+							}),
+							o(555381, {	-- Sinara Vine
+								i(246363),	-- Sinara Berry (QI!)
+							}),
+						},
+					}),
+					q(91090, {	-- Pesky Pests
+						["sourceQuests"] = { 91271 },	-- A Fish!
+						["provider"] = { "n", 245748 },	-- Kaliel Solaar
+						["coord"] = { 48.8, 76.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+					}),
+					q(91137, {	-- Lost In Light
+						["sourceQuests"] = {
+							91328,	-- Secret Ingredients
+							91090,	-- Pesky Pests
+						},
+						["provider"] = { "n", 245748 },	-- Kaliel Solaar
+						["coord"] = { 48.8, 76.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = { i(263198) },	-- Valdekar's Special (TOY!)
+					}),
+				}),
 				header(HEADERS.AchCriteria, 61957.04, {	-- Port Detective
 					q(87392, {	-- Cargo Conspiracy
 						["sourceQuests"] = { 86735 },	-- Paved in Ash
@@ -786,6 +824,40 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = { i(258127) },	-- Pattern: Silvermoon Curtains (RECIPE!)
 					}),
 				}),
+				header(HEADERS.AchCriteria, 61957.09, {	-- Blinding Sun
+					q(87399, {	-- Facing the Sun
+						["sourceQuests"] = { 86745 },	--	Silvermoon Must Know
+						["provider"] = { "n", 238083 },	-- Farstrider Sedina
+						["coord"] = { 50.5, 78.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+					}),
+					q(87400, {	-- Scattered in Sunbeams
+						["sourceQuests"] = { 87399 },	-- Facing the Sun
+						["provider"] = { "n", 238083 },	-- Farstrider Sedina
+						["coord"] = { 50.5, 78.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+					}),
+					q(87401, {	-- Gardener Mishap
+						["sourceQuests"] = { 87399 },	-- Facing the Sun
+						["provider"] = { "n", 238084 },	-- Harris Lightsbreath
+						["coord"] = { 50.5, 78.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = { i(238677) },	-- Humming Core (QI!)
+					}),
+					q(87402, {	-- The Light Provides
+						["sourceQuests"] = {
+							87401,	-- Gardener Mishap
+							87400,	-- Scattered in Sunbeams
+						},
+						["provider"] = { "n", 238084 },	-- Harris Lightsbreath
+						["coord"] = { 50.5, 78.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(246441),	-- Humming Core (PQI!)
+							--
+							i(263331),	-- Lignified Helmet
+							i(263326),	-- Mirveda's Sunhat
+							i(263328),	-- Sanctum Keeper's Hood
+							i(263327),	-- Spore-Laden Covering
+						},
+					}),
+				}),
 				header(HEADERS.AchCriteria, 61957.10, {	-- Runestone Rumbles
 					q(92396, {	-- Calling in the Cavalry
 						["sourceQuests"] = { 86735 },	-- Paved in Ash
@@ -1008,11 +1080,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				---
-				q(93850, {	-- Windrunner Spire: Haunting Melodies (TODO: dungeon quest)
-					["provider"] = { "n", 256875 },	-- Restless Spirit
-					["coord"] = { 35.5, 79.1, MAP.MIDNIGHT.EVERSONG_WOODS },
-				}),
-				---
 				q(94370, {	-- Slithering Closer
 					["provider"] = { "n", 257393 },	-- Fern Shadestar
 					["coord"] = { 37.3, 73.9, MAP.MIDNIGHT.EVERSONG_WOODS },
@@ -1132,83 +1199,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 37.4, 72.1, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["groups"] = {
 						i(257418),	-- Ornate Sin'dorei Sconce (DECOR!)
-					},
-				}),
-				---
-				q(91271, {	-- A Fish!
-					--Required fishing to complete it, but not to accept it.
-					--["sourceQuests"] = { xx },	-- xx
-					["provider"] = { "n", 245745 },	-- Valdekar Solaar
-					["coord"] = { 48.8, 76.7, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["groups"] = {
-						i(246379),	-- Absolutely Adequate Fish (QI!)
-						i(246382),	-- Fabulous Fish (QI!)
-						i(246380),	-- Fairly Fine Fish (QI!)
-						i(246381),	-- Pretty Plump Fish (QI!)
-					},
-				}),
-				q(91328, {	-- Secret Ingredients
-					["sourceQuests"] = { 91271 },	-- A Fish!
-					["provider"] = { "n", 245745 },	-- Valdekar Solaar
-					["coord"] = { 48.8, 76.7, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["groups"] = {
-						o(555383, {
-							i(246364),	-- Belanise Blossom (QI!)
-						}),
-						o(555381, {
-							i(246363),	-- Sinara Berry (QI!)
-						}),
-					},
-				}),
-				q(91090, {	-- Pesky Pests
-					["sourceQuests"] = { 91271 },	-- A Fish!
-					["provider"] = { "n", 245748 },	-- Kaliel Solaar
-					["coord"] = { 48.8, 76.7, MAP.MIDNIGHT.EVERSONG_WOODS },
-				}),
-				q(91137, {	-- Lost In Light
-					["sourceQuests"] = {
-						91328,	-- Secret Ingredients
-						91090,	-- Pesky Pests
-					},
-					["provider"] = { "n", 245748 },	-- Kaliel Solaar
-					["coord"] = { 48.8, 76.7, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["groups"] = {
-						i(263198),	-- Valdekar's Special (TOY!)
-					},
-				}),
-				---
-				q(87399, {	-- Facing the Sun
-					--["sourceQuests"] = { xx },	-- xx
-					["provider"] = { "n", 238083 },	-- Farstrider Sedina
-					["coord"] = { 50.5, 78.2, MAP.MIDNIGHT.EVERSONG_WOODS },
-				}),
-				q(87400, {	-- Scattered in Sunbeams
-					["sourceQuests"] = { 87399 },	-- Facing the Sun
-					["provider"] = { "n", 238083 },	-- Farstrider Sedina
-					["coord"] = { 50.5, 78.2, MAP.MIDNIGHT.EVERSONG_WOODS },
-				}),
-				q(87401, {	-- Gardener Mishap
-					["sourceQuests"] = { 87399 },	-- Facing the Sun
-					["provider"] = { "n", 238084 },	-- Harris Lightsbreath
-					["coord"] = { 50.5, 78.1, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["groups"] = {
-						i(238677),	-- Humming Core (QI!)
-					},
-				}),
-				q(87402, {	-- The Light Provides
-					["sourceQuests"] = {
-						87401,	-- Gardener Mishap
-						87400,	-- Scattered in Sunbeams
-					},
-					["provider"] = { "n", 238084 },	-- Harris Lightsbreath
-					["coord"] = { 50.5, 78.1, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["groups"] = {
-						i(246441),	-- Humming Core (QI!)
-						--
-						i(263331),	-- Lignified Helmet
-						i(263326),	-- Mirveda's Sunhat
-						i(263328),	-- Sanctum Keeper's Hood
-						i(263327),	-- Spore-Laden Covering
 					},
 				}),
 				---

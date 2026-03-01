@@ -248,7 +248,6 @@ root(ROOTS.Unsorted, {
 					i(238374),	-- Tender Lumifin
 
 					i(238490),	-- Ambiguous Rock
-					i(238491),	-- Whispering Rock
 					i(238498),	-- [PH] Trophy Coin
 
 					-- Fishing

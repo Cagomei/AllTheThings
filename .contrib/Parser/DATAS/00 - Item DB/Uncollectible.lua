@@ -2762,4 +2762,5 @@ i(260691);	-- Void-Tainted Pelt
 i(260297);	-- Voidfarer's Respite
 i(260294);	-- Voidwyrm Absinthe
 i(260645);	-- Water Filled Organ
+i(238491);	-- Whispering Rock
 i(264982);	-- Wine Not

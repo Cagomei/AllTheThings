@@ -37,6 +37,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			2499,	-- The Pinnacle
 		},
 		["groups"] = {
+			n(QUESTS, {
+				q(93850, {	-- Windrunner Spire: Haunting Melodies
+					["sourceQuests"] = { 86745 },	--	Silvermoon Must Know
+					["provider"] = { "n", 256875 },	-- Restless Spirit
+					["coord"] = { 35.5, 79.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
+			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(EMBERDAWN, {
 					i(251079),	-- Amberfrond Bracers
