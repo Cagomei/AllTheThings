@@ -773,6 +773,7 @@ root(ROOTS.Zones, {
 						header(HEADERS.Item, 94221, {	-- Shan'ze Ritual Stone [looted]
 							["description"] = "Whether this will be lootable from Rares.",
 							["questID"] = 32610,
+							["isDaily"] = true,
 						}),
 					})),
 					n(70000, {	-- Al'tabim the All-Seeing
