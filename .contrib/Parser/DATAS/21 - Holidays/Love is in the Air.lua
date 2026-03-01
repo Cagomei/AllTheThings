@@ -1369,6 +1369,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
+				-- #IF AFTER 10.2.5
+				-- this quest, while removed at this point, becomes linked to a yearly quest bit which causes it to unflag
+				["isYearly"] = true,
+				-- #ENDIF
 			}),
 			q(24805, {	-- Uncommon Scents (H)
 				["qg"] = 38295,	-- Junior Detective
@@ -1380,6 +1384,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
+				-- #IF AFTER 10.2.5
+				-- this quest, while removed at this point, becomes linked to a yearly quest bit which causes it to unflag
+				["isYearly"] = true,
+				-- #ENDIF
 			}),
 			q(14488, {	-- You've Been Served
 				["qg"] = 38208,	-- Investigator Fezzen Brasstacks
