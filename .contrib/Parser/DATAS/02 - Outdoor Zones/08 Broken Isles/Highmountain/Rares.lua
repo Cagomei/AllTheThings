@@ -7,28 +7,9 @@ root(ROOTS.Zones, {
 		m(HIGHMOUNTAIN, {
 			n(RARES, sharedData({
 				-- #IF AFTER 11.2.5
-				-- #IF BEFORE 12.0.0
-				["isDaily"] = true, -- Daily during Legion Remix 2025
-				-- #endif
+				["isDaily"] = true, -- Daily during Legion Remix 2025, and thereafter
 				-- #endif
 			}, {
-				n(SPECIAL, sharedData({["sharedDescription"] = "Can be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit."},{
-					n(109150, {	-- Malefica
-						["questID"] = 42862,
-						["crs"] = { 109155 },	-- Malefica
-						["coord"] = { 32.8, 66.6, HIGHMOUNTAIN },
-					}),
-					n(109059, {	-- Dareer
-						["questID"] = 42826,
-						["coord"] = { 39.8, 52.4, HIGHMOUNTAIN },
-						["crs"] = { 109062 },	-- Dareer
-					}),
-					n(109159, {	-- Holk the Wanderer
-						["questID"] = 42863,
-						["coord"] = { 39.6, 58.2, 750 },
-						["crs"] = { 109161 },	-- Holk the Wanderer
-					}),
-				})),
 				n(createHeader({	-- Amateur Hunters
 					readable = "Amateur Hunters",
 					icon = 626000,
@@ -79,6 +60,7 @@ root(ROOTS.Zones, {
 				n(104481, {	-- Ala'washte
 					["questID"] = 45514,
 					["coord"] = { 28.4, 53.8, HIGHMOUNTAIN },
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				n(97215, {	-- Beastmaster Pao'lek
 					["questID"] = 39784,	-- Beastmaster Pao'lek

@@ -13,6 +13,13 @@ root(ROOTS.Zones, {
 					["description"] = "Finding 5 Ephemeral Crystals, scattered across Azsuna, will award this mount, but find them quickly - after someone clicks on 5 crystals, the event will end, and you'll have to wait at least 8 hours (possibly up to 24) for the event to reappear. Remember to play cautiously while you're hunting, because if you die you'll have to restart.",
 				}),
 			}),
+			n(SPECIAL, sharedData({["sharedDescription"] = "Can be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit."},{
+				n(109028, {	-- Horkus
+					["questID"] = 42825,
+					["coord"] = { 56.2, 59.6, AZSUNA },
+					["crs"] = { 109029 },	-- Horkus
+				}),
+			})),
 		}),
 	}),
 });

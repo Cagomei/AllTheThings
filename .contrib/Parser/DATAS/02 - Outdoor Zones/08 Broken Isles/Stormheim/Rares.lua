@@ -7,24 +7,9 @@ root(ROOTS.Zones, {
 		m(STORMHEIM, {
 			n(RARES, sharedData({
 				-- #IF AFTER 11.2.5
-				-- #IF BEFORE 12.0.0
-				["isDaily"] = true, -- Daily during Legion Remix 2025
-				-- #endif
+				["isDaily"] = true, -- Daily during Legion Remix 2025,and persisting thereafter
 				-- #endif
 			}, {
-				n(SPECIAL, sharedData({["sharedDescription"] = "Can be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit."},{
-					n(109083, {	-- Houndmaster Payne
-						["questID"] = 42858,
-						["coord"] = { 72.0, 59.8, STORMHEIM },
-						["crs"] = { 109089 },	-- Houndmaster Payne
-						["description"] = "Patrols inside of Greywatch. Horde players can still interact with him, but be aware the rest of the camp will be hostile. Shares completion with |cffffff00Batmaster Claud|r. \n\nCan be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit.",
-					}),
-					n(109133, {	-- Batmaster Claud
-						["questID"] = 42858,
-						["coord"] = { 54.6, 71.6, STORMHEIM },
-						["description"] = "Patrols inside of Dreadwake's Landing. Alliance players can still interact with him, but be aware the rest of the camp will be hostile. Shares completion with |cffffff00Houndmaster Payne|r. \n\nCan be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit.",
-					}),
-				})),
 				n(91874, {	-- Bladesquall
 					["questID"] = 38431,
 					["coord"] = { 46.0, 77.7, STORMHEIM },
@@ -51,6 +36,7 @@ root(ROOTS.Zones, {
 					["questID"] = 39048,
 					["coord"] = { 58.2, 75.5, STORMHEIM },
 					["races"] = HORDE_ONLY,
+					["isDaily"] = IGNORED_VALUE,
 					["groups"] = {
 						i(129144),	-- Boomer's Utility Belt
 					},
@@ -199,6 +185,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 35.4, 18.4, STORMHEIM },
 					["crs"] = { 92343 },	-- Captain Tomas
 					["races"] = HORDE_ONLY,
+					["isDaily"] = IGNORED_VALUE,
 					["groups"] = {
 						i(129040),	-- Clacker's Clanking Clam Diggers
 					},

@@ -5,11 +5,9 @@
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
-			n(RARES, sharedData({ 
+			n(RARES, sharedData({
 				-- #IF AFTER 11.2.5
-				-- #IF BEFORE 12.0.0
-				["isDaily"] = true, -- Daily during Legion Remix 2025
-				-- #endif
+				["isDaily"] = true, -- Daily during Legion Remix 2025, and persisting thereafter
 				-- #endif
 			}, {
 				n(111649, {	-- Ambassador D'vwinn
@@ -223,6 +221,7 @@ root(ROOTS.Zones, {
 				n(113425, {	-- Rovendros
 					["questID"] = 43795,
 					["coord"] = { 54.7, 46.1, SURAMAR },
+					["isDaily"] = IGNORED_VALUE,
 					["description"] = "Found inside |cFFFFD700Teloth'aran|r trapped in a web. Free him and he'll join you in Shal'Aran!",
 				}),
 				n(103841, {	-- Shadowquill

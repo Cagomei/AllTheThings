@@ -10,9 +10,7 @@ root(ROOTS.Zones, {
 					n(92040, {	-- Fenri
 						["questID"] = 38461,
 						-- #if AFTER 11.2.7
-						-- #if BEFORE 12.0.0
-						["isDaily"] = true,	-- Maybe only daily during remix?
-						-- #endif
+						["isDaily"] = true,
 						-- #endif
 						["coord"] = { 84.6, 49.2, HELHEIM },
 						["groups"] = {
@@ -26,9 +24,7 @@ root(ROOTS.Zones, {
 						["description"] = "The coordinates provided will take you to a small, door-sized cave entrance. It's hidden in some mist and, depending on your camera angle, can be difficult to see.",
 						["questID"] = 46949,
 						-- #if AFTER 11.2.7
-						-- #if BEFORE 12.0.0
-						["isDaily"] = true,	-- Maybe only daily during remix?
-						-- #endif
+						["isDaily"] = true,
 						-- #endif
 						["coord"] = { 32.9, 43.2, HELHEIM },
 						["sym"] = {{"select","itemID",144437}},	-- Lost Legend of the Valarjar (highest drop chance NPC)
@@ -36,9 +32,7 @@ root(ROOTS.Zones, {
 					n(97630, {	-- Soulthirster
 						["questID"] = 39870,
 						-- #if AFTER 11.2.7
-						-- #if BEFORE 12.0.0
-						["isDaily"] = true,	-- Maybe only daily during remix?
-						-- #endif
+						["isDaily"] = true,
 						-- #endif
 						["coord"] = { 29.0, 61.6, HELHEIM },
 						["groups"] = {
