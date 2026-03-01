@@ -1703,6 +1703,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
 			["timeline"] = { ADDED_2_4_0, REMOVED_10_2_7 },
 			["races"] = ALLIANCE_ONLY,
+			-- #IF AFTER 10.2.7
+			-- this quest, while removed at this point, becomes linked to a yearly quest bit which causes it to unflag
+			["isYearly"] = true,
+			-- #ENDIF
 			["groups"] = {
 				objective(1, {	-- Hit 8 braziers.
 					["provider"] = { "i", 34862 },	-- Practice Torches
@@ -1715,6 +1719,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
 			["timeline"] = { ADDED_2_4_0, REMOVED_10_2_7 },
 			["races"] = HORDE_ONLY,
+			-- #IF AFTER 10.2.7
+			-- this quest, while removed at this point, becomes linked to a yearly quest bit which causes it to unflag
+			["isYearly"] = true,
+			-- #ENDIF
 			["groups"] = {
 				objective(1, {	-- Hit 8 braziers.
 					["provider"] = { "i", 34862 },	-- Practice Torches
@@ -1727,6 +1735,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
 			["timeline"] = { ADDED_10_2_7 },
 			["races"] = ALLIANCE_ONLY,
+			["isYearly"] = true,
 			["groups"] = { i(23247) },	-- Burning Blossom
 		}),
 		q(82105, {	-- Torch Tossing (H)
@@ -1734,6 +1743,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
 			["timeline"] = { ADDED_10_2_7 },
 			["races"] = HORDE_ONLY,
+			["isYearly"] = true,
 			["groups"] = { i(23247) },	-- Burning Blossom
 		}),
 		q(11886, {	-- Unusual Activity
