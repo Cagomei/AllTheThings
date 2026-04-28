@@ -43,7 +43,9 @@ end
 api.IsRetrieving = IsRetrieving;
 -- Returns whether the provided string is empty or equals RETRIEVING_DATA which indicates the data is not yet loaded in the Client (not used for Items or in general)
 api.IsRetrievingData = function(text)
-	return (not text or RetrievingTexts[text])
+	return (not text
+		or issecretvalue(text)
+		or RetrievingTexts[text])
 		-- make sure regardless of conditional return we return a true here for consistency
 		and true;
 end
