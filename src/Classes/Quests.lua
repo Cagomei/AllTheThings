@@ -1492,8 +1492,8 @@ end
 local QuestWithReputationCostCollectibles = setmetatable({}, {
 	__index = function(t, quest)
 		local costCollectibles
-		if NotInGame(quest) then
-			-- app.PrintDebug("ignore costcollectibles for unavailable quest", quest.questID)
+		if NotInGame(quest) or not app.IsQuestAvailable(quest) then
+			-- app.PrintDebug("ignore costcollectibles for unavailable quest", quest.questID,NotInGame(quest),app.IsQuestAvailable(quest))
 			costCollectibles = false
 		else
 			-- TODO: adjust when givesReputation exists
