@@ -232,5 +232,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(94563, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
 		q(94567, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
 		-- Mythic
+		q(94562, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
+		-- q(94566, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
 	})),
 }));
