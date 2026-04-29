@@ -357,7 +357,6 @@ root(ROOTS.Unsorted, {
 			i(272114),	-- Discarded Excavation Tool
 			i(272118),	-- Inert Arcane Explosive
 			i(272119),	-- Residue-Covered Tool
-			i(272287),	-- Nap Mat
 			i(272339),	-- Umbral Champion's Illustrious Banner
 			i(272391),	-- Pattern: Rope Lynx Harness
 			i(272392),	-- Broken Lynx Leash

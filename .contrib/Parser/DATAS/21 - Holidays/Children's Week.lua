@@ -164,6 +164,7 @@ local WELL_LOVED_FIGURINE_VENDOR_GROUP = {
 	i(23002),	-- Speedy (PET!)
 	i(23015),	-- Whiskers the Rat (PET!)
 	i(32617),	-- Willy (PET!)
+	i(272287),	-- Nap Mat (TOY!)
 };
 
 root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, {
