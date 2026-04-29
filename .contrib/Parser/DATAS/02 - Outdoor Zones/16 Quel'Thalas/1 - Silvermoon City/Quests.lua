@@ -153,6 +153,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(93889),	-- Midnight: Saltheril's Soiree
 			q(93892),	-- Midnight: Stormarion Assault
 			q(93766),	-- Midnight: World Quests
+			q(95842),	-- Midnight: Void Assaults
 		})),
 	}),
 }));
