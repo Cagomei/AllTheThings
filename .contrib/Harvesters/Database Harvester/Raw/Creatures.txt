@@ -24266,6 +24266,8 @@
 260381@@@Scouting Table
 12.0.1.66384
 264213@@@Abysslick
+12.0.1.66431
+264499@@@Archmage Lan'dalock
 12.0.5.66330
 61317@@@Long-Tailed Mole
 252608@@@Domanaar Ritualist

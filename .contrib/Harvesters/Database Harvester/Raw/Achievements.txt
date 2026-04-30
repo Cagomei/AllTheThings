@@ -17872,6 +17872,16 @@
 62603@@@[DNT] <Hidden> Mythic+ Rating > 0 (The War Within, any season) (copy)
 62612@@@[DNT] Midnight Epic Edition Decor
 62620@@@Allied Race: Haranir (copy)
+12.0.1.66431
+62653@@@[DNT] Midnight Alchemy Knowledge Fix
+62654@@@[DNT] Midnight Blacksmithing Knowledge Fix
+62655@@@[DNT] Midnight Enchanting Knowledge Fix
+62656@@@[DNT] Midnight Herbalism Knowledge Fix
+62657@@@[DNT] Midnight Inscription Knowledge Fix
+62658@@@[DNT] Midnight Leatherworking Knowledge Fix
+62659@@@[DNT] Midnight Mining Knowledge Fix
+62660@@@[DNT] Midnight Skinning Knowledge Fix
+62688@@@[DNT] Midnight Engineering Knowledge Fix
 12.0.5.66330
 40899@@@Allied Races: Earthen (Hidden Character Achievement)
 61792@@@T-A-G that spells "Gotcha!"
