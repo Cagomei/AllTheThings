@@ -558,6 +558,11 @@
 1257516@@@Lana'thel's Sanguine Cascade
 1285724@@@Stormgilded Celestial
 1285725@@@Thunderhoof Celestial
+5.5.3.66509
+1257673@@@Snowfall Groveglider
+1257674@@@Embertuft Groveglider
+1257676@@@Petalbranch Groveglider
+1257677@@@Shadowbough Groveglider
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild
