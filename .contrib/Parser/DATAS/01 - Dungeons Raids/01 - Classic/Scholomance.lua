@@ -745,6 +745,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 	}),
 	n(ZONE_DROPS, {
+		i(20520),	-- Dark Rune
 		i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit / CLASSIC: Formula: Enchant 2H Weapon - Major Versatility (RECIPE!)
 			["cr"] = 10469,	-- Scholomance Adept
 		}),
