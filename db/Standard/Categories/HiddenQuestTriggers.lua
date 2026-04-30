@@ -7362,7 +7362,8 @@ inst(1308,{awp=120001,isRaid=1,g={
 hqt(94561,{an="n:250802",isWeekly=1}),
 hqt(94565,{an="n:250803",isWeekly=1}),
 hqt(94563,{an="n:250802",isWeekly=1}),
-hqt(94567,{an="n:250803",isWeekly=1})}}),
+hqt(94567,{an="n:250803",isWeekly=1}),
+hqt(94562,{an="n:250802",isWeekly=1})}}),
 inst(1314,{awp=120001,isRaid=1,g={
 hqt(95541)}}),
 inst(1307,{awp=120001,isRaid=1,g={

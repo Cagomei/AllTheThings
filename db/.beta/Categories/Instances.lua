@@ -62974,7 +62974,7 @@ gach(61609),
 gach(61610)}),
 d(109,{difficulties={17,14,15,16},g={
 h(-45,{
-q(93924,{lvl=90,qgs={90092}})}),
+q(93924,{lvl=90,qgs={260421}})}),
 e(2739,{npcID=249637,g={
 r(1230488,{itemID=256715,requireSkill=755,skillID=2914}),
 de(15467,{itemID=264187,spellID=1271354}),
@@ -64711,6 +64711,10 @@ gach(61621),
 mnt(1263635,{b=1,itemID=262914,lvl=10})}})})}}),
 h(-19,{awp=120001,g={
 i(258839,{b=1,description="Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes."})}}),
+h(-58,{
+n(197711,{coords={
+[2393]={{42.1,58.8}}},g={
+flt(100)}})}),
 h(-21,{
 r(1230473,{crs={231636,231865,237415,241546,246404,247676,248015,248605},itemID=256714,requireSkill=755,skillID=2914}),
 r(1230470,{crs={231636,231865,237415,241546,246404,247676,248015,248605},itemID=256704,requireSkill=755,skillID=2914}),
