@@ -125,7 +125,16 @@ local function CacheFilterFunctions()
 	SetThingVisibility = DefaultThingVisibility and SetDefaultVisibility or BaseSetThingVisibility
 	-- Add Loot Visibility if in Settings
 	if app.Settings.Collectibles.Loot then
-		ThingVisibilityChecks[#ThingVisibilityChecks + 1] = Visibility_LootMode
+		local found = false
+		for i=#ThingVisibilityChecks,1,-1 do
+			if ThingVisibilityChecks[i] == Visibility_LootMode then
+				found = true
+				break
+			end
+		end
+		if not found then
+			ThingVisibilityChecks[#ThingVisibilityChecks + 1] = Visibility_LootMode
+		end
 	else
 		for i=#ThingVisibilityChecks,1,-1 do
 			if ThingVisibilityChecks[i] == Visibility_LootMode then
