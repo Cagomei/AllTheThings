@@ -3430,3 +3430,5 @@
 22388@@@Void Inkwell
 12.0.5.66529
 15293@@@Small Sturdy Wooden Trellis
+12.0.5.66591
+18614@@@Ornate Elven Stove

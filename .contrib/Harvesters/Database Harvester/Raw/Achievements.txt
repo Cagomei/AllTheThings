@@ -17980,3 +17980,18 @@
 62622@@@Ritual Renown
 12.0.5.66529
 62452@@@Ritual Sites 320: Ritual Items and Their Uses in Quel'Thalas
+12.0.5.66591
+62759@@@Abyss Anglers: History Below
+62760@@@Abyss Anglers: Angler Physics
+62761@@@Abyss Anglers: One with the Depths
+62762@@@Abyss Anglers: Top of the Class
+62763@@@Abyss Anglers: Vintage Collector
+62772@@@Abyss Anglers: Now That's Anglin'
+62773@@@Abyss Anglers: Jeju's New Rival
+62774@@@Abyss Anglers: Not Done Yet
+62775@@@Abyss Anglers: Delicate Diver
+62776@@@Abyss Anglers: All Blue Angler
+62777@@@Abyss Anglers: Pearls to the Abyss
+62778@@@Abyss Anglers: Luck of the Loa
+62829@@@Abyss Anglers: Don't Know What You Expected
+62832@@@Abyss Anglers: Reservation for One
