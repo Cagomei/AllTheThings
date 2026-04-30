@@ -18,21 +18,6 @@ ach(62587),	-- [DNT] Research Sites: Collection - Eagle Mount - Tracking
 ach(62599),	-- [DNT] Research Sites: Collection - Hawkstrider Pet - Tracking
 ach(62602),	-- [DNT] Research Sites: Collection - Lynx Pet - Tracking
 ach(62605),	-- [DNT] Research Sites: Collection - Snapdragon Pet - Tracking
-12.0.5.66591
-ach(62759),	-- Abyss Anglers: History Below
-ach(62760),	-- Abyss Anglers: Angler Physics
-ach(62761),	-- Abyss Anglers: One with the Depths
-ach(62762),	-- Abyss Anglers: Top of the Class
-ach(62763),	-- Abyss Anglers: Vintage Collector
-ach(62772),	-- Abyss Anglers: Now That's Anglin'
-ach(62773),	-- Abyss Anglers: Jeju's New Rival
-ach(62774),	-- Abyss Anglers: Not Done Yet
-ach(62775),	-- Abyss Anglers: Delicate Diver
-ach(62776),	-- Abyss Anglers: All Blue Angler
-ach(62777),	-- Abyss Anglers: Pearls to the Abyss
-ach(62778),	-- Abyss Anglers: Luck of the Loa
-ach(62829),	-- Abyss Anglers: Don't Know What You Expected
-ach(62832),	-- Abyss Anglers: Reservation for One
 12.0.5.66741
 ach(62811),	-- [PH] JZB Test Achievement 01
 ach(62812),	-- [PH] JZB Test Achievement 02
