@@ -17978,3 +17978,5 @@
 62605@@@[DNT] Research Sites: Collection - Snapdragon Pet - Tracking
 62621@@@Challenging Sites
 62622@@@Ritual Renown
+12.0.5.66529
+62452@@@Ritual Sites 320: Ritual Items and Their Uses in Quel'Thalas
