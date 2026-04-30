@@ -368,6 +368,12 @@
 110051@@@Heart of the Aspects
 1266345@@@Cerulean Phase-Hunter
 1266866@@@Reins of the Starshard Netherdrake
+3.80.1.67155
+457485@@@Grizzly Hills Packmaster
+1266982@@@The Sire's Palanquin
+1267077@@@Scarlet Lady
+1284679@@@Sha-Warped Riding Wolf
+1285897@@@Sha-Warped Owl
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
@@ -2042,7 +2048,6 @@
 453785@@@Earthen Ordinant's Ramolith
 11.0.0.55939
 454682@@@Startouched Furline
-457485@@@Grizzly Hills Packmaster
 459784@@@Golden Ashes of Al'ar
 11.0.0.55960
 464443@@@Harmonious Salutations Bear

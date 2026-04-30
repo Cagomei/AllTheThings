@@ -251,6 +251,9 @@
 71488@@@Blossoming Ancient
 173842@@@Char
 264419@@@[PH] Lucky Dragon Recolor
+3.80.1.67155
+263232@@@The Sire's Ghastly Screecher
+263923@@@Sha-Warped Beaky
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot

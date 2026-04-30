@@ -2901,6 +2901,40 @@
 62095@@@Onyxia's Lair Reforged
 62197@@@Titanic Embers acquired
 62198@@@Titanic Fragments acquired
+3.80.1.67155
+63160@@@[DNT] Player has learned - Sha-Warped Beaky
+63190@@@Realm First! Heart of Ruin
+63193@@@Realm First! Titanic Crusader
+63194@@@Realm First! Dawnbringer
+63199@@@Realm First! Apex Predator
+63200@@@Realm First! Starbreaker
+63203@@@Realm First! Keeper of Secrets
+63204@@@Realm First! Earthsplitter
+63205@@@Realm First! Lord of the Pit
+63206@@@Realm First! Wyrm Slayer
+63207@@@Realm First! The Unscarred
+63208@@@Realm First! Eye of Madness
+63210@@@Realm First! Usurper
+63211@@@Realm First! Twilight Slayer
+63212@@@Realm First! Shadow of the Betrayer
+63213@@@Realm First! Ancient Defender
+63215@@@Realm First! Lord of Ashes
+63216@@@Ahead of the Curve: Hakkar
+63217@@@Ahead of the Curve: Anub'arak
+63218@@@Ahead of the Curve: Zul'jin
+63219@@@Ahead of the Curve: Kil'jaeden
+63220@@@Ahead of the Curve: Yogg-Saron
+63221@@@Ahead of the Curve: Prince Malchezaar
+63222@@@Ahead of the Curve: Gruul the Dragonkiller
+63223@@@Ahead of the Curve: Magtheridon
+63224@@@Ahead of the Curve: Onyxia
+63225@@@Ahead of the Curve: Nefarian
+63226@@@Ahead of the Curve: Ossirian the Unscarred
+63227@@@Ahead of the Curve: C'Thun
+63228@@@Ahead of the Curve: The Lich King
+63229@@@Ahead of the Curve: Halion
+63230@@@Ahead of the Curve: Illidan Stormrage
+63231@@@Ahead of the Curve: Archimonde
 4.0.1.12911
 736@@@Explore Mulgore NYI
 750@@@Explore Northern Barrens
