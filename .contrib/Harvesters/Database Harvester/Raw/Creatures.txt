@@ -24273,6 +24273,31 @@
 264469@@@Kapara
 264857@@@Obscurion Obliterator
 264858@@@Abyssal Caller
+12.0.1.66838
+239798@@@Vereesa Windrunner
+239844@@@Blood Elf Spellbreaker
+239849@@@Twilight Void Swarmer
+239854@@@Twilight Shadowblade
+239856@@@Twilight Duskwarden
+239857@@@Twilight Voidcaller
+239863@@@Shadowguard Engineer
+239915@@@Nightborne Arcanist
+239948@@@Silver Covenant Ranger
+239949@@@Night Elf Sentinel
+239950@@@Night Elf Archer
+239953@@@Devouring Colossus
+239956@@@Devouring Voidripper
+239959@@@Devouring Maw
+239960@@@Devouring Darkcaster
+239967@@@Domanaar Shadowlord
+239970@@@Imperator Nocturnius
+239976@@@Void Elf Riftwalker
+240288@@@Devouring Remnant
+240513@@@Twilight Nether-Rider
+240514@@@Devouring Skystinger
+242981@@@Twilight Living Shadow
+244647@@@Shandris Feathermoon
+248342@@@Nightborne Telemancer
 12.0.5.66330
 61317@@@Long-Tailed Mole
 252608@@@Domanaar Ritualist

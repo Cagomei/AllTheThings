@@ -2508,6 +2508,8 @@
 1251762@@@Cindertuft Groveglider
 1251764@@@Gloombough Groveglider
 1251765@@@Blossombranch Groveglider
+12.0.1.66838
+1265785@@@Emerald Hawkstrider
 12.0.5.66330
 3363@@@Nether-Swept Drake
 1261362@@@Witherbark Warbear Mother
