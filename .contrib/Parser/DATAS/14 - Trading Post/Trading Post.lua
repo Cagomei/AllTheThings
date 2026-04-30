@@ -2213,5 +2213,49 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(100, i(251987)),	-- Wildstalker's Hunting Quiver
 			}),
 		})),
+		n(MAY, bubbleDownSelf({ ["timeline"] = { "added 12.0.5.66709", "removed 12.0.7.99999" } }, {	-- TODO: Add Correct Timeline/Timeline out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				iensemble(230172),	-- Ensemble: Prowler's Lively Headgear
+			}),
+			filter(MOUNTS, {
+				traderstender(325, i(210141)),	-- Brown-Furred Spiky Bakar (MOUNT!)
+				traderstender(500, i(268364)),	-- Gilneas Loyalist's Rouncey (MOUNT!)
+				traderstender(500, i(268363)),	-- Pyrewood Rebel's Rouncey (MOUNT!)
+			}),
+			filter(BATTLE_PETS, {
+				traderstender(250, i(224576)),	-- Lil' Flameo (PET!)
+				traderstender(250, i(228758)),	-- Parrlok (PET!)
+			}),
+			filter(COSMETIC, {
+				traderstender(80, i(260389)),	-- Ren'dorei Aspirant's Bow
+				traderstender(110, i(237344)),	-- Renaissance Katana
+				traderstender(120, i(237342)),	-- Renaissance Sai
+				traderstender(120, i(237343)),	-- Nunchuck of the Renaissance
+				traderstender(120, i(238217)),	-- Offhand Renaissance Nunchuck
+				traderstender(125, i(268494)),	-- Gilneas Loyalist Bonecracker
+				traderstender(125, i(268492)),	-- Pyrewood Rebel Bonecracker
+				traderstender(125, i(268498)),	-- Gilneas Loyalist Knuckleblades
+				traderstender(125, i(268496)),	-- Pyrewood Rebel Knuckleblades
+				traderstender(130, i(238252)),	-- Large Renaissance Katana
+				traderstender(150, i(268514)),	-- Gilneas Loyalist Boltshot
+				traderstender(150, i(268512)),	-- Pyrewood Rebel Boltshot
+				traderstender(30, i(262846)),	-- Faded Dunecloth Belt
+				traderstender(35, i(262828)),	-- Faded Dunecloth Skirt
+				traderstender(35, i(262864)),	-- Faded Dunecloth Vest
+				traderstender(50, i(252744)),	-- Faded Winter Toque
+				traderstender(50, i(268830)),	-- Stylish Flowered Brown Cap
+				traderstender(50, i(268831)),	-- Stylish Black Cap
+				traderstender(50, i(268832)),	-- Stylish Brown Top Hat
+				traderstender(50, i(270289)),	-- Crown of Faded Springflowers
+				traderstender(100, i(210856)),	-- Trader's Faded Sarong
+				traderstender(100, i(266087)),	-- Ren'dorei Aspirant's Quiver
+				traderstender(100, i(268806)),	-- Scarred Tabard of Gilneas
+				traderstender(100, iensemble(257989)),	-- Ensemble: Sorcerer's Faded Garb
+				traderstender(440, iensemble(237225)),	-- Ensemble: Attire of the Gilneas Fox
+				traderstender(440, iensemble(237222)),	-- Ensemble: Attire of the Woodland Raccoon
+				traderstender(440, iensemble(237224)),	-- Ensemble: Attire of the Swift Fox
+				traderstender(475, iensemble(268431)),	-- Ensemble: Gilneas Loyalist Streetwear
+			}),
+		})),
 	}),
 }));
