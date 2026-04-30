@@ -222,6 +222,7 @@ end
 local BlockedDisplayID = {
 	[11686] = 0,	-- empty blue thing
 	[16925] = 0,	-- nothing
+	[16946] = 0,	-- nothing
 	[21072] = 0,	-- empty blue thing
 	[23767] = 0,	-- empty blue thing
 	[24719] = 0,	-- nothing
