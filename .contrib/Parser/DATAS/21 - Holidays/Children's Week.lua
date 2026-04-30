@@ -158,13 +158,13 @@ local WELL_LOVED_FIGURINE_VENDOR_GROUP = {
 	i(69648),	-- Legs (PET!)
 	i(167008),	-- Mr. Crabs (PET!)
 	i(23007),	-- Mr. Wiggles (PET!)
+	i(272287),	-- Nap Mat (TOY!)
 	i(32622),	-- Peanut (PET!)
 	i(167009),	-- Scaley (PET!)
 	i(66073),	-- Scooter the Snail (PET!)
 	i(23002),	-- Speedy (PET!)
 	i(23015),	-- Whiskers the Rat (PET!)
 	i(32617),	-- Willy (PET!)
-	i(272287),	-- Nap Mat (TOY!)
 };
 
 root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, {

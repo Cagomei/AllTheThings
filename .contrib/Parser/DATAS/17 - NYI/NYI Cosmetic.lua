@@ -316,7 +316,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		-- 10.2.0
 		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			n(ARMOR, {
-				i(210856),	-- Trader's Faded Sarong
 				i(210851),	-- Trader's Grassy Sarong
 			}),
 			n(WEAPONS, {
@@ -1051,7 +1050,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(252741),	-- Camo Winter Toque
 				i(252714),	-- Cloudy Winter Toque
 				i(252715),	-- Deep Winter Toque
-				i(252744),	-- Faded Winter Toque
 				i(249719),	-- Fine Food Fanatic Backpack
 				i(235903),	-- Gold Lightforged Chestguard
 				i(249717),	-- Golden Food Fanatic Backpack
