@@ -52,15 +52,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 			}),
+            n(QUESTS, {
+                q(96746, {  -- Sporefall: Rotmire
+                    ["qg"] = 266165,    -- Sporomir
+                    ["coord"] = { 36.5, 68.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+                    ["groups"] = {
+                        i(269258),	-- Void-Twisted Sporbit
+                    },
+                }),
+            }),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(QUESTS, {
 				}),
 				BossOnly(ROTMIRE, {
 					ach(63237),	-- Rotmire
 					ach(63242),	-- Rotmire Guild Run
+                    i(247235),	-- Luminous Rotshroom (DECOR!)
                     i(264313),	-- Madcap Redcap (TOY!)
                     i(264367),	-- Mycomancer's Hearthspore (TOY!)
-                    i(247235),	-- Luminous Rotshroom (DECOR!)
 					i(268280),	-- Sporelord's Shroom Cap (COSMETIC!)
 				}),
 			}),

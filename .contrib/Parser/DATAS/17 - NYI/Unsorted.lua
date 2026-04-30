@@ -137,7 +137,7 @@ root(ROOTS.Unsorted, {
 			i(268557),	-- Kinduwu
 			i(269240),	-- Luminous Sporeglider
 			i(269245),	-- Delicious Sporesnack
-			i(269258),	-- Void-Twisted Sporbit
+			
 			i(269316),	-- Bartender Bob's "No Weapons Allowed" Rack
 			i(269604),	-- Auspicious Picnic Basket
 			i(269605),	-- Auspicious Meal Case
