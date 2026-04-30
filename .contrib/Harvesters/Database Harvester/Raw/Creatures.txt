@@ -24268,6 +24268,11 @@
 264213@@@Abysslick
 12.0.1.66431
 264499@@@Archmage Lan'dalock
+12.0.1.66527
+256698@@@Roofus
+264469@@@Kapara
+264857@@@Obscurion Obliterator
+264858@@@Abyssal Caller
 12.0.5.66330
 61317@@@Long-Tailed Mole
 252608@@@Domanaar Ritualist

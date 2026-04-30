@@ -3074,6 +3074,15 @@
 12.0.1.66263
 16691@@@Farstriders' Pride Statue
 17294@@@Farstriders' Glory Statue
+12.0.1.66527
+12244@@@Paw Pal Water Dish
+12245@@@Paw Pal Bed and Blanket
+12246@@@Paw Pal Bed
+12264@@@Paw Pal Dog House Frame
+12265@@@Paw Pal Dog House Elwynn Roof
+15547@@@Paw Pal Dog House Durotar Roof
+15548@@@Paw Pal Dog House Eversong Roof
+15549@@@Paw Pal Dog House Shadowglen Roof
 12.0.5.66330
 9630@@@Open Sturdy Wooden Crate
 12169@@@Reinforced Wooden Barrel
