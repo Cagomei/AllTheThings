@@ -2072,22 +2072,70 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			i(249219),	-- 12.0 Delves - Season 1 - Curio - Combat 1
+			i(249223),	-- 12.0 Delves - Season 1 - Curio - Combat 5
+			i(249227),	-- 12.0 Delves - Season 1 - Curio - Utility 4
+			i(249228),	-- 12.0 Delves - Season 1 - Curio - Utility 5
+			i(257347),	-- [DNT] [PH] 12.0 Armor Box
+			i(258279),	-- [DNT] Big Pouch of Supplies
+			i(258280),	-- [DNT] Huge Pouch of Supplies
+			i(258270),	-- [DNT] Small Pouch of Supplies
+			i(256142),	-- [DNT] TEMPLATE - 12.0 Max Level Campaign - Gear Box
+			i(258269),	-- [DNT] Tiny Pouch of Supplies
+			i(235637),	-- [NYI] Lockpick Power
+			i(238729),	-- [OLD] Abundant Token
+			i(244424),	-- [OLD] Unalloyed Abundance
+			i(247787),	-- [PH] Perception Finishing Reagent
+			i(246236),	-- Aid Crate
+			i(254554),	-- Amani Hex Stick
+			i(262637),	-- Anguish-Infused Rune
+			i(262638),	-- Anguish-Permeated Rune
+			i(262636),	-- Anguish-Scribed Rune
+			i(237505),	-- Artisan's Moxie
+			i(243609),	-- Blood Knights Reputation
+			i(243612),	-- Blood Knights Reputation
+			i(247860),	-- Bomb Spores
+			i(264668),	-- Boon of Speed
+			i(267236),	-- Boon of Speed
+			i(267242),	-- Boon of Speed
+			i(267235),	-- Boon of Vitality
+			i(267243),	-- Boon of Vitality
+			i(260910),	-- Boon of Vitality
+			i(262584),	-- Bottomless Bag of Amulets of the Ascendant Void
+			i(242250),	-- Brimming Arcana
 			i(265611),	-- Broken Picnic Basket
+			i(251286),	-- Bundle of Petrified Roots
+			i(265790),	-- Cache of Dawncrests
+			i(262635),	-- Cache of Delver's Spoils
+			i(263400),	-- Cache of Delver's Spoils
+			i(237516),	-- Cerulean Ore
 			i(242719),	-- Chest of Playtest Equipment
+			i(237517),	-- Citrine Ore
+			i(252609),	-- Coffer Key Shard
+			i(245585),	-- Combat Engagement Launcher
+			i(267573),	-- Cracked Medal of Conquest
 			i(251774),	-- Crate of Holy Relics
+			i(237515),	-- Crimson Ore
+			i(262724),	-- Currency Wallet
+			i(254256),	-- Delver's Bounty
+			i(254257),	-- Delver's Bounty
+			i(254258),	-- Delver's Bounty
+			i(254259),	-- Delver's Bounty
+			i(254260),	-- Delver's Bounty
+			i(254261),	-- Delver's Bounty
+			i(254262),	-- Delver's Bounty
+			i(254263),	-- Delver's Bounty
+			i(254266),	-- Delver's Bounty
 			i(251775),	-- Empty Crate of Relics
-			i(265626),	-- Shattered Teapot
-			i(255828),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Alchemy
-			i(255829),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Blacksmithing
-			i(255830),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Enchanting
-			i(255831),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Engineering
-			i(255832),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Herbalism
-			i(255833),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Inscription
-			i(255834),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Jewelcrafting
-			i(255835),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Leatherworking
-			i(255836),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Mining
-			i(255837),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Skinning
-			i(255838),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Tailoring
+			i(264988),	-- Endgame Essentials
+			i(238215),	-- Essence of Prey
+			i(243610),	-- Farstriders Reputation
+			i(243613),	-- Farstriders Reputation
+			i(265817),	-- Forgotten Songwriter's Quill
+			i(260603),	-- Frail and Flexible Wing
+			i(256553),	-- Galactic Equipment Chest
+			i(251287),	-- Generous Bundle of Petrified Roots
+			i(256342),	-- Griftah's Fool-Proof Embellishing Powder
 			i(255686),	-- Huge Bag of Midnight Alchemy Goods
 			i(255703),	-- Huge Bag of Midnight Blacksmithing Goods
 			i(255690),	-- Huge Bag of Midnight Enchanting Goods
@@ -2101,6 +2149,76 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(255687),	-- Huge Bag of Midnight Optional Goods
 			i(255682),	-- Huge Bag of Midnight Skinss
 			i(255691),	-- Huge Bag of Midnight Tailoring Goods
+			i(267487),	-- Ignited Torch
+			i(253706),	-- Junk Mail
+			i(252648),	-- Key Shard Cluster
+			i(245257),	-- Magical Marble
+			i(243608),	-- Magisters Reputation
+			i(243614),	-- Magisters Reputation
+			i(258480),	-- Pargoth's Pandemonic Pyxis
+			i(262994),	-- Phial of Ritual Fluid
+			i(246345),	-- Polearm
+			i(254984),	-- Potent Assassin's Subtle Tea
+			i(262626),	-- Preyseeker's Box of Anguish
+			i(262627),	-- Preyseeker's Box of Coffer Key Shards
+			i(262629),	-- Preyseeker's Box of Veteran Dawncrests
+			i(262630),	-- Preyseeker's Box of Voidlight Marl
+			i(262631),	-- Preyseeker's Cache of Anguish
+			i(262633),	-- Preyseeker's Cache of Champion Dawncrests
+			i(262632),	-- Preyseeker's Cache of Coffer Key Shards
+			i(262634),	-- Preyseeker's Cache of Voidlight Marl
+			i(262623),	-- Preyseeker's Satchel of Adventurer Dawncrests
+			i(262624),	-- Preyseeker's Satchel of Anguish
+			i(262622),	-- Preyseeker's Satchel of Coffer Key Shards
+			i(262596),	-- Preyseeker's Satchel of Voidlight Marl
+			i(256136),	-- Professor Instructaur's Brain Pertaining to Midnight
+			i(239611),	-- Pure Loanite
+			i(254275),	-- Radiant Echo
+			i(254276),	-- Radiant Echo
+			i(263974),	-- Relaxing Tisane
+			i(246496),	-- Remnant of Anguish
+			i(253226),	-- Restored Coffer Key
+			i(254268),	-- Restored Coffer Key
+			i(254269),	-- Restored Coffer Key
+			i(254270),	-- Restored Coffer Key
+			i(254271),	-- Restored Coffer Key
+			i(254272),	-- Restored Coffer Key
+			i(254273),	-- Restored Coffer Key
+			i(254274),	-- Restored Coffer Key
+			i(267622),	-- Rugged Torch
+			i(260682),	-- Rusty Tusk Ring
+			i(264391),	-- Sanctified Touch
+			i(262349),	-- Satchel of Compensation
+			i(253012),	-- Set Keystone Map: Magisters' Terrace
+			i(252951),	-- Set Keystone Map: Maisara Caverns
+			i(253010),	-- Set Keystone Map: Nexus-Point Xenas
+			i(253009),	-- Set Keystone Map: Pit of Saron
+			i(252658),	-- Set Keystone Map: Windrunner Spire
+			i(243611),	-- Shades of the Row Reputation
+			i(243615),	-- Shades of the Row Reputation
+			i(265626),	-- Shattered Teapot
+			i(267620),	-- Simple Stein
+			i(267177),	-- Slayer's Duellum Commendation
+			i(255828),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Alchemy
+			i(255829),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Blacksmithing
+			i(255830),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Enchanting
+			i(255831),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Engineering
+			i(255832),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Herbalism
+			i(255833),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Inscription
+			i(255834),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Jewelcrafting
+			i(255835),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Leatherworking
+			i(255836),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Mining
+			i(255837),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Skinning
+			i(255838),	-- Sr. Professor Instructaur's Top Secret Guide to Midnight Tailoring
+			i(263468),	-- Stormarion Spoils
+			i(265824),	-- The Rootwarden's Notes
+			i(265802),	-- Tome of Town Portal
+			i(267621),	-- Traditional Stein
+			i(252608),	-- Unalloyed Abundance
+			i(237514),	-- Viridian Ore
+			i(264972),	-- Voidstorm Victuals
+			i(258901),	-- Waterlogged Reliquary Paintbrush
+			i(260918),	-- Zealot's Surge
 		})),
 	}),
 }));

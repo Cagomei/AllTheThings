@@ -6,18 +6,87 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 	expansion(EXPANSION.TWW, {
 		-- 11.2.7
 		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
-			i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset
-			i(247743),	-- [DNT] Hanging Paper Lanterns - do not use - duplicate
-			i(247739),	-- Kun-Lai Lacquered Rickshaw
-			i(241625),	-- Open Elven Wood Crate
-			i(246026),	-- Orgrimmar Beam Platform
-			i(246028),	-- Orgrimmar Large Platform
-			i(246027),	-- Orgrimmar Round Platform
-			i(246035),	-- Stormwind Angled Platform
-			i(246031),	-- Stormwind Beam Platform
-			i(246033),	-- Stormwind Large Platform
-			i(246032),	-- Stormwind Round Platform
-			i(246034),	-- Stormwind Small Platform
+			i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset (DECOR!)
+			i(247743),	-- [DNT] Hanging Paper Lanterns - do not use - duplicate (DECOR!)
+			i(247739),	-- Kun-Lai Lacquered Rickshaw (DECOR!)
+			i(241625),	-- Open Elven Wood Crate (DECOR!)
+			i(246026),	-- Orgrimmar Beam Platform (DECOR!)
+			i(246028),	-- Orgrimmar Large Platform (DECOR!)
+			i(246027),	-- Orgrimmar Round Platform (DECOR!)
+			i(246035),	-- Stormwind Angled Platform (DECOR!)
+			i(246031),	-- Stormwind Beam Platform (DECOR!)
+			i(246033),	-- Stormwind Large Platform (DECOR!)
+			i(246032),	-- Stormwind Round Platform (DECOR!)
+			i(246034),	-- Stormwind Small Platform (DECOR!)
+		})),
+	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			i(264270),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Ritual_Tome_Bloodknight01_Open.m2 (DECOR!)
+			i(259217),	-- Ambient Aethercharged Crystal (DECOR!)
+			i(250868),	-- Crimson Crystal Column (DECOR!)
+			i(250869),	-- Crimson Crystal Core (DECOR!)
+			i(250870),	-- Crimson Crystal Fragment (DECOR!)
+			i(265544),	-- Cuddly Basil Grrgle (DECOR!)
+			i(263303),	-- Cuddly Blue Grrgle (DECOR!)
+			i(265397),	-- Cuddly Bright Grrgle (DECOR!)
+			i(264681),	-- Cuddly Brown Grrgle (DECOR!)
+			i(263297),	-- Cuddly Cerulean Grrgle (DECOR!)
+			i(265395),	-- Cuddly Charcoal Grrgle (DECOR!)
+			i(264690),	-- Cuddly Clover Grrgle (DECOR!)
+			i(265551),	-- Cuddly Cobalt Grrgle (DECOR!)
+			i(265389),	-- Cuddly Cotton Candy Grrgle (DECOR!)
+			i(265548),	-- Cuddly Emerald Grrgle (DECOR!)
+			i(265546),	-- Cuddly Fel Grrgle (DECOR!)
+			i(264682),	-- Cuddly Flaxen Grrgle (DECOR!)
+			i(263294),	-- Cuddly Gold-Colored Grrgle (DECOR!)
+			i(264684),	-- Cuddly Gumball Grrgle (DECOR!)
+			i(265398),	-- Cuddly Juniper Grrgle (DECOR!)
+			i(263292),	-- Cuddly Lavender Grrgle (DECOR!)
+			i(265388),	-- Cuddly Lemon Grrgle (DECOR!)
+			i(263295),	-- Cuddly Lime Grrgle (DECOR!)
+			i(265391),	-- Cuddly Magenta Grrgle (DECOR!)
+			i(265393),	-- Cuddly Mauve Grrgle (DECOR!)
+			i(265549),	-- Cuddly Metallic Grrgle (DECOR!)
+			i(265390),	-- Cuddly Mint Grrgle (DECOR!)
+			i(265553),	-- Cuddly Ochre Grrgle (DECOR!)
+			i(264686),	-- Cuddly Olive Grrgle (DECOR!)
+			i(265396),	-- Cuddly Onyx Grrgle (DECOR!)
+			i(263296),	-- Cuddly Orange Grrgle (DECOR!)
+			i(264691),	-- Cuddly Peach Grrgle (DECOR!)
+			i(263293),	-- Cuddly Pink Grrgle (DECOR!)
+			i(264687),	-- Cuddly Plum Grrgle (DECOR!)
+			i(263300),	-- Cuddly Purple Grrgle (DECOR!)
+			i(263302),	-- Cuddly Red Grrgle (DECOR!)
+			i(263242),	-- Cuddly Saffron Grrgle (DECOR!)
+			i(263243),	-- Cuddly Sage Grrgle (DECOR!)
+			i(264683),	-- Cuddly Sanguine Grrgle (DECOR!)
+			i(264689),	-- Cuddly Sapphire Grrgle (DECOR!)
+			i(264680),	-- Cuddly Sea Green Grrgle (DECOR!)
+			i(263241),	-- Cuddly Seafoam Grrgle (DECOR!)
+			i(265547),	-- Cuddly Spectral Grrgle (DECOR!)
+			i(265392),	-- Cuddly Sunset Grrgle (DECOR!)
+			i(263239),	-- Cuddly Tan Grrgle (DECOR!)
+			i(264688),	-- Cuddly Tangerine Grrgle (DECOR!)
+			i(265552),	-- Cuddly Teal Grrgle (DECOR!)
+			i(265387),	-- Cuddly Tomato Grrgle (DECOR!)
+			i(265550),	-- Cuddly Verdant Grrgle (DECOR!)
+			i(264685),	-- Cuddly Violet Grrgle (DECOR!)
+			i(264500),	-- Devouring Host Ritual Engine (DECOR!)
+			i(266064),	-- Elegant Cushioned Chaise (DECOR!)
+			i(253292),	-- Lunar Celebrant's Bamboo Canister (DECOR!)
+			i(253291),	-- Lunar Celebrant's Compact (DECOR!)
+			i(253254),	-- Lunar Celebrant's Cradle (DECOR!)
+			i(253290),	-- Lunar Celebrant's Ornate Vanity (DECOR!)
+			i(253256),	-- Lunar Celebrant's Pillow Roll (DECOR!)
+			i(253293),	-- Lunar Celebrant's Tea Tray (DECOR!)
+			i(253294),	-- Lunar Celebrant's Teacup (DECOR!)
+			i(253295),	-- Lunar Celebrant's Teapot (DECOR!)
+			i(253297),	-- Lunar Celebrant's Vase with Maple Branch (DECOR!)
+			i(253255),	-- Lunar Celebrant's Wide Pillow Roll (DECOR!)
+			i(255643),	-- Silvermoon Barrel (DECOR!)
+			i(264384),	-- Zapmaster Viewer 3000 (DECOR!)
 		})),
 	}),
 }));

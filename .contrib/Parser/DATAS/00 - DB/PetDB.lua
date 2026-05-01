@@ -4526,16 +4526,15 @@ i(221492, 4459);	-- Moss Skipper
 i(244911, 4830);	-- Rhay'Dahr
 i(232856, 4633);	-- Scruff
 i(222967, 4475);	-- Webbers
---- UNSORTED ---
-i(258739, 4914);	-- Chillcrawler
-i(262768, 4965);	-- Chirpy Mandrake
-i(262763, 4964);	-- Plump Mandrake
-i(262769, 4966);	-- Screechy Mandrake
-i(260341, 4943);	-- Star the Lucky Dragon
 --- NYI ---
 i(0, 4905);			-- [DNT] Baby Amazard (Red)
 i(0, 4945);			-- Aud'rei III
 i(0, 4887);			-- Dundun
+i(258739, 4914);	-- Chillcrawler
+i(262763, 4964);	-- Plump Mandrake
+i(262769, 4966);	-- Screechy Mandrake
+i(262768, 4965);	-- Sleepy Mandrake
+i(260341, 4943);	-- Star the Lucky Dragon
 i(242251, 0);		-- [NYI] Magical Broom Pet
 i(250141, 0);		-- Purple Swamp Leech
 

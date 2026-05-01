@@ -2297,8 +2297,12 @@ i(246594, 1243003);	-- Light-Forged Mechsuit
 i(257240, 1261391);	-- Relinquished Scarlet Charger
 i(224148, 451487);	-- Retrained Skyrazor
 i(254736, 1258574);	-- Stormgilded Celestial (CN ONLY)
---- UNSORTED ---
+--- NYI ---
+i(0, 1252141);		-- [DNT] Jellyfish
+i(0, 1238827);		-- Swift Spectral Dragonhawk
+i(257157, 1261325);	-- [DNT] 12.0 Black Hawkstrider
 i(260896, 1267004);	-- Accented Pseudoshell
+i(250921, 1251665);	-- Amani Blessed Bear
 i(262707, 1269279);	-- Blooded Snapvine
 i(260894, 1266997);	-- Cabbage Pseudoshell
 i(262496, 1268919);	-- Delver's Arcane Golem
@@ -2310,11 +2314,6 @@ i(263450, 1270521);	-- Gruffy Comfy Flying Quilt
 i(262909, 1269556);	-- Hypo-Speed X6000
 i(260895, 1267002);	-- Lavender Pseudoshell
 i(262708, 1269280);	-- Savage Snapvine
---- NYI ---
-i(0, 1252141);		-- [DNT] Jellyfish
-i(0, 1238827);		-- Swift Spectral Dragonhawk
-i(250921, 1251665);	-- Amani Blessed Bear
-i(257157, 1261325);	-- [DNT] 12.0 Black Hawkstrider
 i(253587, 0);		-- Scale of Aln'sharan
 
 ------------------

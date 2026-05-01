@@ -1057,7 +1057,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(251672),	-- Used Wearable Pot Lid
 			}),
 			n(SETS, {
-
 				------ Void-Touched Winter Set ------
 				i(249763),	-- Ensemble: Void-Touched Winter Collection
 				q(92098),	-- Ensemble: Void-Touched Winter Collection
@@ -1180,6 +1179,151 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			n(ARMOR, {
+				i(266976),	-- [PH] Hara'ti Cloak - Blue
+				i(266971),	-- [PH] Hara'ti Cloak - Yellow
+				i(266977),	-- [PH] Hara'ti Set - Blue
+				i(266978),	-- [PH] Hara'ti Set - Yellow
+				i(266975),	-- [PH] Hara'ti Shoulders - Blue
+				i(266972),	-- [PH] Hara'ti Shoulders - Yellow
+				i(266974),	-- [PH] Hara'ti Tabard - Blue
+				i(266973),	-- [PH] Hara'ti Tabard - Yellow
+				i(262852),	-- Aquatic Dunecloth Belt
+				i(262834),	-- Aquatic Dunecloth Skirt
+				i(262870),	-- Aquatic Dunecloth Vest
+				i(262838),	-- Azure Dunecloth Belt
+				i(262820),	-- Azure Dunecloth Skirt
+				i(262856),	-- Azure Dunecloth Vest
+				i(266077),	-- Basic Black Quiver
+				i(266078),	-- Basic Blue Quiver
+				i(266079),	-- Basic Bronze Quiver
+				i(266081),	-- Basic Dark Blue Quiver
+				i(266082),	-- Basic Dark Red Quiver
+				i(266083),	-- Basic Frost Quiver
+				i(266085),	-- Basic Ice Quiver
+				i(266088),	-- Basic Light Brown Quiver
+				i(266086),	-- Basic Light Quiver
+				i(266089),	-- Basic Pale Quiver
+				i(266090),	-- Basic Purple Quiver
+				i(266091),	-- Basic Rugged Quiver
+				i(266092),	-- Basic Sea Green Quiver
+				i(262844),	-- Brick Dunecloth Belt
+				i(262826),	-- Brick Dunecloth Skirt
+				i(262862),	-- Brick Dunecloth Vest
+				i(262587),	-- Brown Lunch Bag
+				i(248933),	-- Burden of War
+				i(262843),	-- Camo Dunecloth Belt
+				i(262825),	-- Camo Dunecloth Skirt
+				i(262861),	-- Camo Dunecloth Vest
+				i(262847),	-- Carrot Dunecloth Belt
+				i(262829),	-- Carrot Dunecloth Skirt
+				i(262866),	-- Carrot Dunecloth Vest
+				i(262841),	-- Cloudy Dunecloth Belt
+				i(262823),	-- Cloudy Dunecloth Skirt
+				i(262858),	-- Cloudy Dunecloth Vest
+				i(262850),	-- Crimson Dunecloth Belt
+				i(262832),	-- Crimson Dunecloth Skirt
+				i(262868),	-- Crimson Dunecloth Vest
+				i(262842),	-- Deep Dunecloth Belt
+				i(262824),	-- Deep Dunecloth Skirt
+				i(262860),	-- Deep Dunecloth Vest
+				i(263575),	-- Ensemble: Elder Moss Outfit
+				i(263574),	-- Ensemble: Osseoclad's Wear
+				i(263576),	-- Ensemble: Rampant Thorn Armor
+				i(258032),	-- Ensemble: Skilled Preyseeker's Attire
+				i(263520),	-- Ensemble: Sprawling's Garb
+				i(262840),	-- Grassy Dunecloth Belt
+				i(262822),	-- Grassy Dunecloth Skirt
+				i(262859),	-- Grassy Dunecloth Vest
+				i(262837),	-- Midnight Dunecloth Belt
+				i(262819),	-- Midnight Dunecloth Skirt
+				i(262855),	-- Midnight Dunecloth Vest
+				i(262849),	-- Plum Dunecloth Belt
+				i(262831),	-- Plum Dunecloth Skirt
+				i(262867),	-- Plum Dunecloth Vest
+				i(262585),	-- Pristine Lunch Bag
+				i(262848),	-- Rosy Dunecloth Belt
+				i(262830),	-- Rosy Dunecloth Skirt
+				i(262865),	-- Rosy Dunecloth Vest
+				i(262588),	-- Sack Lunch
+				i(262853),	-- Snowy Dunecloth Belt
+				i(262835),	-- Snowy Dunecloth Skirt
+				i(262871),	-- Snowy Dunecloth Vest
+				i(262854),	-- Sunny Dunecloth Belt
+				i(262836),	-- Sunny Dunecloth Skirt
+				i(262872),	-- Sunny Dunecloth Vest
+				i(258031),	-- Vaunted Preyseeker's Knapsack
+				i(258029),	-- Vaunted Preyseeker's Plumed Helm
+				i(258027),	-- Vaunted Preyseeker's Shoulder-Spikes
+			}),
+			n(WEAPONS, {
+				i(262734),	-- [DNT] Mace of the Great Dark
+				i(262748),	-- [PH] Pink Rake
+				i(262749),	-- [PH] Purple Rake
+				i(262750),	-- [PH] Red Rake
+				i(260742),	-- Big Lil' Black Whirlwind
+				i(260741),	-- Big Lil' Blue Whirlwind
+				i(260744),	-- Big Lil' Green Whirlwind
+				i(260745),	-- Big Lil' Red Whirlwind
+				i(264969),	-- Extinction Voulge
+				i(260737),	-- Forest Dweller's Dawn Staff
+				i(260736),	-- Forest Dweller's Mossy Staff
+				i(260739),	-- Forest Dweller's Night Staff
+				i(246726),	-- Greatsword of Returning Light
+				i(258405),	-- Lil' Black Whirlwind
+				i(260754),	-- Lil' Blue Claw
+				i(258404),	-- Lil' Blue Whirlwind
+				i(260755),	-- Lil' Green Claw
+				i(260764),	-- Lil' Green Popper
+				i(258407),	-- Lil' Green Whirlwind
+				i(260757),	-- Lil' Red Claw
+				i(260765),	-- Lil' Red Popper
+				i(258408),	-- Lil' Red Whirlwind
+				i(260763),	-- Lil' Tan Popper
+				i(253389),	-- Manaforge Raider's Umbral Ward (MAIN HAND SLOT)
+				i(260733),	-- Murgle's Lil' Fish Stick
+				i(260729),	-- Murky's Lil' Fish Stick
+				i(262758),	-- Pepe's Mobile Home
+				i(262759),	-- Pepe's Portable Home
+				i(262760),	-- Pepe's Traveling Home
+				i(262717),	-- Simple Rooting Trowl
+				i(262716),	-- Simple Rosy Trowl
+				i(262718),	-- Simple Withering Trowl
+				i(260731),	-- Snugglefin's Lil' Fish Stick
+				i(263009),	-- Valeera's Wicked Knife
+			}),
+			n(SETS, {
+				------ Elaborate Charcoal Set ------
+				i(258724),	-- Ensemble: Elaborate Charcoal Mageweave
+				i(258720),	-- Elaborate Charcoal Mageweave Belt
+				i(258700),	-- Elaborate Charcoal Mageweave Boots
+				i(258699),	-- Elaborate Charcoal Mageweave Chestpiece
+				i(258695),	-- Elaborate Charcoal Mageweave Chestwrap
+				i(258704),	-- Elaborate Charcoal Mageweave Gloves
+				i(258683),	-- Elaborate Charcoal Mageweave Headband
+				i(258712),	-- Elaborate Charcoal Mageweave Leggings
+				i(258708),	-- Elaborate Charcoal Mageweave Pants
+				i(258716),	-- Elaborate Charcoal Mageweave Shoulders
+				i(258691),	-- Elaborate Charcoal Mageweave Vest
+				i(258687),	-- Elaborate Charcoal Mageweave Vestments
+
+				------ Elaborate Golden Set ------
+				i(258728),	-- Ensemble: Elaborate Golden Mageweave
+				i(258723),	-- Elaborate Golden Mageweave Belt
+				i(258703),	-- Elaborate Golden Mageweave Boots
+				i(258696),	-- Elaborate Golden Mageweave Chestpiece
+				i(258692),	-- Elaborate Golden Mageweave Chestwrap
+				i(258707),	-- Elaborate Golden Mageweave Gloves
+				i(258680),	-- Elaborate Golden Mageweave Headband
+				i(258715),	-- Elaborate Golden Mageweave Leggings
+				i(258711),	-- Elaborate Golden Mageweave Pants
+				i(258719),	-- Elaborate Golden Mageweave Shoulders
+				i(258688),	-- Elaborate Golden Mageweave Vest
+				i(258684),	-- Elaborate Golden Mageweave Vestments
+
+				------ Rootlands Weaponry ------
+				i(263577),	-- Arsenal: Rootlands Weaponry
+			}),
 			filter(TABARDS, {
 				i(242635),	-- Twilight's Blade - Armor - Tabard
 			}),

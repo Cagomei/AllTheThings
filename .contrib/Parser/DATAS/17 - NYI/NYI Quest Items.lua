@@ -783,4 +783,70 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(232630),	-- Xy Imports Ledger
 		})),
 	}),
+	expansion(EXPANSION.MID, {
+		-- 12.0.0
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			i(239226),	-- [DNT]zzOldVoid Resonator
+			i(246443),	-- Amani Hatchet
+			i(244462),	-- Amani Orders
+			i(237142),	-- Arcane Viewfinder
+			i(248608),	-- Blackrock Bulletin Message
+			i(248610),	-- Blackrock Bulletin Message
+			i(248611),	-- Blackrock Bulletin Message
+			i(248612),	-- Blackrock Bulletin Message
+			i(248715),	-- Bones of de Fallen
+			i(248208),	-- Bound Journal
+			i(255161),	-- Callum's Belongings
+			i(258329),	-- Carrion Essence
+			i(238256),	-- Cattail
+			i(235651),	-- Conveniently-Shaped Claw
+			i(258572),	-- Crystal Essence
+			i(260368),	-- Dirt
+			i(248083),	-- Dusty Quartz Amulet
+			i(265710),	-- Elementary Voidcore
+			i(237772),	-- Everburning Coal
+			i(246729),	-- Fang of Shadra
+			i(249414),	-- Feelings Journal
+			i(248087),	-- Fernroot Choker
+			i(263471),	-- Fire Thing
+			i(238923),	-- Fragmented Coal
+			i(244425),	-- Gibby's Marbles
+			i(238502),	-- Gleaming Seedpod
+			i(238476),	-- Irritating Spores
+			i(246374),	-- Juvenile Blood
+			i(248085),	-- Leafworn Amber Ring
+			i(246054),	-- Light Altered Eye
+			i(243588),	-- Limonite Ochre
+			i(239195),	-- Lothar's Crumpled Shield
+			i(250705),	-- Naga Missive PH NAME
+			i(238359),	-- Nalorakk's Totem
+			i(253519),	-- Pathogenic Essence
+			i(237575),	-- PH_Dezco's Hammer
+			i(258573),	-- Plant Dye
+			i(246087),	-- Precious Key
+			i(238864),	-- Proclamation of Light
+			i(235656),	-- Relic of Domination
+			i(239199),	-- Revitalizing Draught
+			i(265655),	-- Ritual Components
+			i(252192),	-- Rune Key
+			i(264009),	-- S.O.S in a Bottle
+			i(248756),	-- Shadra's Gift
+			i(238891),	-- Shard of Naaru
+			i(248082),	-- Shiny Object
+			i(254368),	-- Soul Essence
+			i(239498),	-- Strange Sigil
+			i(248931),	-- Tarnished Vilebranch Coin
+			i(254381),	-- Troll Torch
+			i(244459),	-- Twilight Skirmisher's Chest Key
+			i(240838),	-- Twilight's Blade Missive
+			i(249401),	-- Vial of Gelatinous Ooze
+			i(254665),	-- Void "Ink"
+			i(241155),	-- Void Condenser
+			i(245346),	-- Void Sample
+			i(245347),	-- Void Sample
+			i(245348),	-- Void Sample
+			i(264357),	-- Void-Ridden Crab Meat
+			i(245276),	-- Zal'vithra Pigment
+		})),
+	}),
 }));

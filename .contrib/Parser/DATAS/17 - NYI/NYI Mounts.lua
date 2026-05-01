@@ -1081,8 +1081,44 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(257157, {	-- [DNT] 12.0 Black Hawkstrider (MOUNT!)
 				["displayID"] = 131413,
 			}),
+			i(260896, {	-- Accented Pseudoshell (MOUNT!)
+				["displayID"] = 139487,
+			}),
 			i(250921, {	-- Amani Blessed Bear (MOUNT!)
 				["displayID"] = 120151,
+			}),
+			i(262707, {	-- Blooded Snapvine (MOUNT!)
+				["displayID"] = 139692,
+			}),
+			i(260894, {	-- Cabbage Pseudoshell (MOUNT!)
+				["displayID"] = 139485,
+			}),
+			i(262496, {	-- Delver's Arcane Golem (MOUNT!)
+				["displayID"] = 138593,
+			}),
+			i(264273, {	-- Fel Spirehawk (MOUNT!)
+				["displayID"] = 140095,
+			}),
+			i(262706, {	-- Ferocious Snapvine (MOUNT!)
+				["displayID"] = 139691,
+			}),
+			i(263449, {	-- Fluffy Comfy Flying Quilt (MOUNT!)
+				["displayID"] = 139896,
+			}),
+			i(262661, {	-- Ghastropod (MOUNT!)
+				["displayID"] = 139670,
+			}),
+			i(263450, {	-- Gruffy Comfy Flying Quilt (MOUNT!)
+				["displayID"] = 139897,
+			}),
+			i(262909, {	-- Hypo-Speed X6000 (MOUNT!)
+				["displayID"] = 139761,
+			}),
+			i(260895, {	-- Lavender Pseudoshell (MOUNT!)
+				["displayID"] = 139486,
+			}),
+			i(262708, {	-- Savage Snapvine (MOUNT!)
+				["displayID"] = 139693,
 			}),
 			-- Without MountID attached
 			i(253587, {	-- Scale of Aln'sharan (MOUNT!)
