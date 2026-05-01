@@ -8372,7 +8372,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 
 -- Only instances still in rotation should be in this list.
 -- This will prevent instances that don't have Timewalking currently from showing in the mini list.
-AddInstancesToRotation(EXPANSION.SL, {
+AddInstancesToRotation(EXPANSION.DF, {
 	-- Dungeons
 	1201,	-- Algeth'ar Academy
 	1196,	-- Brackenhide Hollow
