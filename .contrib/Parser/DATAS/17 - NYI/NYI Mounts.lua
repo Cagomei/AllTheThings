@@ -710,6 +710,9 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(198821, {	-- Divine Kiss of Ohn'ahra (MOUNT!)
 				["displayID"] = 110505,
 			}),
+			i(192778, {	-- Liquid Hot Magma Slug
+				["displayID"] = 108836,
+			}),
 			i(198823, {	-- [PH] Brown Wind Eagle (MOUNT!)
 				["displayID"] = 108742,
 			}),
@@ -727,9 +730,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			}),
 			i(192781, {	-- PH Lava Slug Blue (MOUNT!)
 				["displayID"] = 108841,
-			}),
-			i(192778, {	-- PH Lava Slug Orange (MOUNT!)
-				["displayID"] = 108836,
 			}),
 			i(192780, {	-- PH Lava Slug Orange [Item: [PH] Lava Snail Orange] (MOUNT!)
 				["displayID"] = 108836,
@@ -787,15 +787,16 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(210145, {	-- [PH] YellowBlack-Furred Bakar (MOUNT!)
 				["displayID"] = 111731,
 			}),
+			-- #if BEFORE 12.0.7
+			i(210140, {	-- Black-Furred Bakar (MOUNT!)
+				["displayID"] = 111718,
+			}),
+			-- #endif
 			i(211075, {	-- Deathbringer's Shadowcycle (MOUNT!)
 				["displayID"] = 114788,
 			}),
 			i(211086, {	-- Jeweled Jade Scarab (MOUNT!)
 				["displayID"] = 114744,
-			}),
-			-- Without MountID Attached
-			i(210140, {	-- [PH] Black-Furred Bakar (MOUNT!)
-				-- ["displayID"] = ,
 			}),
 		})),
 

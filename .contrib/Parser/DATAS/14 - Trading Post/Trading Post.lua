@@ -1579,8 +1579,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(20, i(233152)),	-- Banded Midnight War Wraps
 				traderstender(20, i(233184)),	-- Banded Snowy War Slippers
 				traderstender(20, i(233167)),	-- Banded Snowy War Wraps
-				traderstender(50, i(246015)),	-- Classic Midnight Eye Patch
-				traderstender(50, i(246016)),	-- Classic Snowy Eye Patch
+				traderstender(50, i(246015)),	-- Classic Midnight Eyepatch
+				traderstender(50, i(246016)),	-- Classic Snowy Eyepatch
 				traderstender(75, i(212627)),	-- Dueler's Azure Shoulder Cape
 				traderstender(75, i(212617)),	-- Dueler's Crimson Shoulder Cape
 				traderstender(550, iensemble(243258)),	-- Ensemble: Grandmaster's Prophetic Attire

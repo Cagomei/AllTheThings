@@ -742,8 +742,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
 			n(ARMOR, {
 				i(239003),	-- Feathered Mantle of the Guardian
-				i(235986),	-- Evil King's Half Shell
 				i(238949),	-- Inferno Helm
+				i(235986),	-- Pointy Half Shell
 			}),
 			n(SETS, {
 				------ Lavaborn Citrine Set ------
@@ -1070,18 +1070,18 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			}),
 			n(SETS, {
 
-				------ The Kirin Tor Winter Set ------
-				i(249763),	-- Ensemble: The Kirin Tor Winter Collection
-				q(92098),	-- Ensemble: The Kirin Tor Winter Collection
-				i(249758),	-- Kirin Tor Winter Belt
-				i(249760),	-- Kirin Tor Winter Boots
-				i(249762),	-- Kirin Tor Winter Cloak
-				i(249761),	-- Kirin Tor Winter Gloves
-				i(249755),	-- Kirin Tor Winter Hood
-				i(249759),	-- Kirin Tor Winter Leggings
-				i(249756),	-- Kirin Tor Winter Pauldrons
-				i(249864),	-- Kirin Tor Winter Spaulders
-				i(249757),	-- Kirin Tor Winter Tunic
+				------ Void-Touched Winter Set ------
+				i(249763),	-- Ensemble: Void-Touched Winter Collection
+				q(92098),	-- Ensemble: Void-Touched Winter Collection
+				i(249758),	-- Void-Touched Winter Belt
+				i(249760),	-- Void-Touched Winter Boots
+				i(249762),	-- Void-Touched Winter Cloak
+				i(249761),	-- Void-Touched Winter Gloves
+				i(249755),	-- Void-Touched Winter Hood
+				i(249759),	-- Void-Touched Winter Leggings
+				i(249756),	-- Void-Touched Winter Pauldrons
+				i(249864),	-- Void-Touched Winter Spaulders
+				i(249757),	-- Void-Touched Winter Tunic
 
 				------ The Seafarer's Winter Set ------
 				i(249745),	-- Ensemble: The Seafarer's Winter Collection

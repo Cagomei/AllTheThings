@@ -1609,13 +1609,13 @@ i(0, 385771);		-- PH Yellow Slyvern
 i(194722, 377849);	-- Carrier Yeti
 i(198821, 359408);	-- Divine Kiss of Ohn'ahra
 i(192804, 374263);	-- Restless Hornstrider
+i(192778, 350220);	-- Liquid Hot Magma Slug
 i(198823, 385253);	-- [PH] Brown Wind Eagle
 i(192787, 351403);	-- [PH] Mammoth V2 Dark
 i(192771, 352927);	-- [PH] Water Salamander Blue
 i(192773, 374093);	-- [PH] Water Salamander Orange
 i(192748, 373913);	-- PH Moose Bull Brown
 i(192781, 374140);	-- PH Lava Slug Blue
-i(192778, 350220);	-- PH Lava Slug Orange
 i(192780, 350220);	-- PH Lava Slug Orange [Item: [PH] Lava Snail Orange]
 i(192782, 374142);	-- PH Lava Slug Yellow
 i(192802, 374258);	-- PH Primal Tallstrider Black
@@ -1806,8 +1806,9 @@ i(210145, 424611);	-- [PH] YellowBlack-Furred Bakar
 i(211075, 428013);	-- Deathbringer's Shadowcycle
 -- #endif
 i(211086, 428065);	-- Jeweled Jade Scarab
-i(210140, 0);		-- [PH] Black-Furred Bakar
-
+-- #if BEFORE 12.0.7
+i(210140, 404018);	-- Black-Furred Bakar
+-- #endif
 ------------------
 -- PATCH 10.2.5 --
 ------------------
@@ -2417,3 +2418,11 @@ i(270058, 1287359);	-- Void-Corrupted Lynx
 i(0, 1261362);	-- Witherbark Warbear Mother
 --- NYI ---
 
+
+
+
+
+
+
+i(210140, 404018);	-- Black-Furred Bakar
+i(258884, 1264184);	-- Spawn of Vyranoth

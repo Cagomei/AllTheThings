@@ -754,7 +754,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(245340),	-- Evercore Greaseplates
 			i(244753),	-- Evercore Reconnaissance
 			i(244752),	-- Evercore Shade
-			i(245338),	-- Evercore Stichwraps
+			i(245338),	-- Evercore Stitchwraps
 			i(245337),	-- Evercore Swiftfeet
 			i(245339),	-- Evercore Turbochains
 			i(244754),	-- Evercore Vision Guard

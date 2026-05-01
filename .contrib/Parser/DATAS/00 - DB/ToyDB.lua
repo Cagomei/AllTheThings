@@ -1595,3 +1595,6 @@ i(272339);	-- Umbral Champion's Illustrious Banner
 ------------------
 i(264313);	-- Madcap Redcap
 i(264367);	-- Mycomancer's Hearthspore
+i(259335);	-- Photo Finisher
+i(259899);	-- Ashen Horn of the Fallen Keeper
+i(260170);	-- Oathstone Fragment
