@@ -42322,16 +42322,6 @@ s(303209,263959,{f=1})}})}})})}}),
 h(-742,{awp=120005,maps={2395,2437},g={
 m(2585,{coords={
 [2437]={{29.6,77.9}}},icon=7578705,g={
-p(5019,{coords={
-[2585]={{55.8,49.6}}},cost={{"i",242639,1}},itemID=269836,npcID=261684,providers={{"n",263355}},spellID=1286634}),
-mnt(1266285,{coords={
-[2585]={{55.8,38.8}}},cost={{"i",242639,5}},description="Summon 'Chubs' at the Meat Piles. Defeat Angry Amani Warbears and then use 5x Practically Pork.",itemID=260421}),
-mnt(1286606,{coords={
-[2585]={{50.6,47.3},{51.5,47.8}}},cost={{"i",271999,1}},itemID=269828,providers={{"n",263527}}}),
-p(5017,{itemID=269829,npcID=261676,spellID=1286610}),
-o(649209,{coords={
-[2585]={{51.5,47.9}}},g={
-i(271999)}}),
 h(-12,{
 ach(62537),
 ach(62536),
@@ -42339,7 +42329,20 @@ ach(62521),
 ach(62524),
 ach(62525),
 ach(62523),
-ach(62534)})}}),
+ach(62534)}),
+flt(101,{
+p(5019,{coords={
+[2585]={{55.8,49.6}}},cost={{"i",242639,1}},itemID=269836,npcID=261684,providers={{"n",263355}},spellID=1286634}),
+p(5017,{itemID=269829,npcID=261676,spellID=1286610})}),
+flt(100,{
+mnt(1286606,{coords={
+[2585]={{50.6,47.3},{51.5,47.8}}},cost={{"i",271999,1}},itemID=269828,providers={{"n",263527}}}),
+mnt(1261362,{coords={
+[2585]={{55.8,38.8}}},cost={{"i",242639,5}},description="Summon 'Chubs' at the Meat Piles. Defeat Angry Amani Warbears and then use 5x Practically Pork.",itemID=257225})}),
+h(-56,{
+o(649209,{coords={
+[2585]={{51.5,47.9}}},g={
+i(271999)}})})}}),
 m(2594,{coords={
 [2395]={{37.6,65.3}}},crs={260103},icon=3012072,g={
 h(-12,{

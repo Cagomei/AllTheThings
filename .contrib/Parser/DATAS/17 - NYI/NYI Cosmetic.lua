@@ -759,18 +759,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(238441),	-- Lavaborn Citrine Pants
 				i(238448),	-- Lavaborn Citrine Treads
 
-				------ Woodland Gilneas Fox Set ------
-				i(237225),	-- Ensemble: Woodland Attire of the Gilneas Fox
-				q(87526),	-- Ensemble: Woodland Attire of the Gilneas Fox
-				i(237220),	-- Woodland Belt of the Gilneas Fox
-				i(237198),	-- Woodland Boots of the Gilneas Fox
-				i(237229),	-- Woodland Cloak of the Gilneas Fox
-				i(237208),	-- Woodland Cowl of the Gilneas Fox
-				i(237203),	-- Woodland Gloves of the Gilneas Fox
-				i(237216),	-- Woodland Mantle of the Gilneas Fox
-				i(237212),	-- Woodland Pants of the Gilneas Fox
-				i(237193),	-- Woodland Vestments of the Gilneas Fox
-
 				------ Woodland Grey Wolf Set ------
 				i(237223),	-- Ensemble: Woodland Attire of the Grey Wolf
 				q(87524),	-- Ensemble: Woodland Attire of the Grey Wolf
