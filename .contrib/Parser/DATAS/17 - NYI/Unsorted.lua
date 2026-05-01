@@ -12,7 +12,7 @@ root(ROOTS.Unsorted, {
 			i(245338),	-- Evercore Stitchwraps
 			i(246015),	-- Classic Midnight Eyepatch
 			i(246016),	-- Classic Snowy Eyepatch
-			
+
 			i(248961),	-- Large Amani Tiki Mask
 			i(249755),	-- Void-Touched Winter Hood
 			i(249756),	-- Void-Touched Winter Pauldrons
@@ -121,8 +121,8 @@ root(ROOTS.Unsorted, {
 			i(262918),	-- Lost Iridescent Flightstone
 			i(263262),	-- Shadowflame Vest
 			i(263263),	-- Shadowflame Kilt
-			
-			
+
+
 			i(264721),	-- Auspicious Curio Display
 			i(264722),	-- Auspicious Inkmaster's Desk
 			i(264723),	-- Auspicious Tree of Fortune
@@ -133,11 +133,11 @@ root(ROOTS.Unsorted, {
 			i(267075),	-- Ornate Elven Stove
 			i(267372),	-- Banner of Five Dawns
 
-			
+
 			i(268557),	-- Kinduwu
 			i(269240),	-- Luminous Sporeglider
 			i(269245),	-- Delicious Sporesnack
-			
+
 			i(269316),	-- Bartender Bob's "No Weapons Allowed" Rack
 			i(269604),	-- Auspicious Picnic Basket
 			i(269605),	-- Auspicious Meal Case
@@ -717,13 +717,6 @@ root(ROOTS.Unsorted, {
 			i(268436),	-- Emberstone Loyalist Boots
 			i(268437),	-- Emberstone Loyalist Bracer
 			i(268438),	-- Ensemble: Emberstone Loyalist Streetware
-			i(268439),	-- Pyrewood Rebel Bowler
-			i(268440),	-- Pyrewood Rebel Coat
-			i(268441),	-- Pyrewood Rebel Belt
-			i(268442),	-- Pyrewood Rebel Pants
-			i(268443),	-- Pyrewood Rebel Boots
-			i(268444),	-- Pyrewood Rebel Bracer
-			i(268445),	-- Ensemble: Pyrewood Rebel Streetwear
 			i(268446),	-- Ambermill Rebel Bowler
 			i(268447),	-- Ambermill Rebel Coat
 			i(268448),	-- Ambermill Rebel Belt
@@ -795,7 +788,6 @@ root(ROOTS.Unsorted, {
 			i(268742),	-- Sunbringer's Painted Tunic
 			i(268743),	-- Ensemble: Sunbringer's Painted Battle Garb
 			i(268744),	-- Ambermill Rebel Leggings
-			i(268745),	-- Pyrewood Rebel Leggings
 			i(268746),	-- Emberstone Loyalist Leggings
 			i(268781),	-- Dawnchaser's Painted Hauberk
 			i(268782),	-- Dawnchaser's Painted Wrap

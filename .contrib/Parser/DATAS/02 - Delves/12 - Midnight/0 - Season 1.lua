@@ -134,8 +134,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				i(264670),	-- Blessing of Zeal
 				i(260913),	-- Crimson Blessing
 				i(260924),	-- Sentinel's Blessing
-				i(262389),	-- Veiled Blessing // alpha
+				i(262389),	-- Veiled Blessing
 			})),
+			n(FACTIONS, {
+				faction(2742),	-- Delves: Season 1
+			}),
 			n(QUESTS, {
 				q(93519, {	-- Midnight Delves! (it pop on login but after cancel it	-- didn't re-pop)
 					["description"] = "Pops on login",
