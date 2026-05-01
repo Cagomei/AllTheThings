@@ -2174,7 +2174,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(225, i(234602)),	-- Wings of the Blood Monarch
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 12.0.1.66709", "removed 12.0.5.99999" } }, {	-- TODO: Timeline out correctly
+		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 12.0.1.66709", "removed 12.0.5.67314" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(235593),	-- Ensemble: Forest Dweller's Butterfly Attire
 			}),
@@ -2213,9 +2213,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(100, i(251987)),	-- Wildstalker's Hunting Quiver
 			}),
 		})),
-		n(MAY, bubbleDownSelf({ ["timeline"] = { "added 12.0.5.66709", "removed 12.0.7.99999" } }, {	-- TODO: Add Correct Timeline/Timeline out correctly
+		n(MAY, bubbleDownSelf({ ["timeline"] = { "added 12.0.5.67314", "removed 12.0.7.99999" } }, {	-- TODO: Add Correct Timeline out correctly
 			n(FILLED_TRAVELERS_LOG, {
-				iensemble(230172),	-- Ensemble: Prowler's Lively Headgear
+				iensemble(268445),	-- Ensemble: Pyrewood Rebel Streetwear
 			}),
 			filter(MOUNTS, {
 				traderstender(325, i(210141)),	-- Brown-Furred Spiky Bakar (MOUNT!)
