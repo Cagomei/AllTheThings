@@ -146,29 +146,28 @@ root(ROOTS.Holidays,
 				n(256084, {	-- Gamesmaster Fleurian <Illusionary Coin Trader>
 					["coord"] = { 31.6, 76.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
-						-- Event Abilities, Warbound, Maybe CI?
-						i(262746, {	-- "Clockwork Sentinel" Kit
+						i(262746, {	-- "Clockwork Sentinel" Kit (CI!)
 							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
 						}),
-						i(262741, {	-- "Dispelling Leap" Kit
+						i(262741, {	-- "Dispelling Leap" Kit (CI!)
 							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
 						}),
-						i(262755, {	-- "Eccentro-Magic Pulse" Enhancement
+						i(262755, {	-- "Eccentro-Magic Pulse" Enhancement (CI!)
 							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
 						}),
-						i(262756, {	-- "Make Decoy" Enhancement
+						i(262756, {	-- "Make Decoy" Enhancement (CI!)
 							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
 						}),
-						i(262743, {	-- "Nullification Field" Kit
+						i(262743, {	-- "Nullification Field" Kit (CI!)
 							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
 						}),
-						i(262744, {	-- "Riftwalk" Kit
+						i(262744, {	-- "Riftwalk" Kit (CI!)
 							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
 						}),
-						i(262745, {	-- "Stealth" Kit
+						i(262745, {	-- "Stealth" Kit (CI!)
 							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
 						}),
-						i(262742, {	-- "Swift" Kit
+						i(262742, {	-- "Swift" Kit (CI!)
 							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
 						}),
 						-- Rewards

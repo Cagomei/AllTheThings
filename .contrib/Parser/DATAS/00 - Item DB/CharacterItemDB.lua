@@ -1020,6 +1020,18 @@ ihqt(250922, 92371);				-- Whisper of the Loa: Leatherworking
 ihqt(250924, 92372);				-- Whisper of the Loa: Mining
 ihqt(250923, 92373);				-- Whisper of the Loa: Skinning
 
+------------------
+-- PATCH 12.0.5 --
+------------------
+iq(262746, 93808);					-- "Clockwork Sentinel" Kit
+iq(262741, 93804);					-- "Dispelling Leap" Kit
+iq(262755, 93839);					-- "Eccentro-Magic Pulse" Enhancement
+iq(262756, 93838);					-- "Make Decoy" Enhancement
+iq(262743, 93806);					-- "Nullification Field" Kit
+iq(262744, 93807);					-- "Riftwalk" Kit
+iq(262745, 93809);					-- "Stealth" Kit
+iq(262742, 93805);					-- "Swift" Kit
+
 ------------
 -- UNUSED --
 ------------
