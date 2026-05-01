@@ -10,6 +10,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			ach(61083),	-- Highly Decorated
 			ach(61082),	-- Old Soldiers
 			ach(61081, {	-- Share a Drink
+				["description"] = "NOTE: You currently also get credit for YOUR character's Race when sharing a drink!",
 				["cost"] = { { "i", 251039, 26 } },	-- 26x Toasting Brew
 			}),
 		}),
