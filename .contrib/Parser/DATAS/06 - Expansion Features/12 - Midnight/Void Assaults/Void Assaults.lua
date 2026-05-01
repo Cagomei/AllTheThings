@@ -105,7 +105,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				ach(62507),	-- Void Smasher: Eversong
 				ach(62510),	-- Void Smasher: Zul'Aman
 			}),
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_12_0_7 } }, {
 				ach(62873),	-- A Trip Around the Stars
 				ach(62874),	-- A Trip Through the Stars
 				ach(62899),	-- Absolute Power
@@ -1158,7 +1158,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 										{ "c", VOIDLIGHT_MARL, 500 },
 									},
 								}, {
-									
+
 								}),
 								filter(CLOAKS, {
 								}),

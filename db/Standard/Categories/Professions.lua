@@ -5457,7 +5457,6 @@ r(59484,{learnedAt=200,requireSkill=773,skillID=2514}),
 r(59475,{learnedAt=150,requireSkill=773,skillID=2514}),
 r(64053,{requireSkill=773,skillID=2512})}}),
 cat(114,{requireSkill=773,g={
-r(59387,{learnedAt=205,requireSkill=773,skillID=2514}),
 r(52739,{learnedAt=75,requireSkill=773,skillID=2514})}}),
 cat(108,{requireSkill=773,g={
 r(165461,{awp=60002,learnedAt=300,requireSkill=773,skillID=2514}),

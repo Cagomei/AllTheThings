@@ -17162,8 +17162,8 @@ r(311407,{requireSkill=773}),
 r(311687,{requireSkill=773}),
 r(311690,{requireSkill=773}),
 i(183865,{b=1,f=200,requireSkill=773})})}}),
-x(10,{
-x(10.0000001,{awp=100000,g={
+x(10,{awp=100000,g={
+x(10.0000001,{
 r(382583,{learnedAt=25,requireSkill=773,skillID=2828}),
 r(391783,{requireSkill=773}),
 r(388458,{requireSkill=773}),
@@ -17229,9 +17229,7 @@ i(198951,{b=1,f=200,requireSkill=773}),
 i(198916,{f=200,requireSkill=773}),
 i(198936,{f=200,requireSkill=773}),
 i(198956,{f=200,requireSkill=773}),
-i(198786,{f=200,requireSkill=773})}}),
-x(10.0207,{awp=100207,g={
-i(224270,{b=1,f=200,requireSkill=773})}})}),
+i(198786,{f=200,requireSkill=773})})}}),
 x(11,{
 x(11.0000001,{awp=110000,g={
 r(445068,{requireSkill=773}),
