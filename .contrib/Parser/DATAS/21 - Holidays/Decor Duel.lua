@@ -175,40 +175,40 @@ root(ROOTS.Holidays,
 							["cost"] = { { "c", ILLUSIONARY_COIN, 200 } },
 						}),
 						i(272321, {	-- Arcane Ranger's Spellbow (COSMETIC!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 100 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
 						}),
 						i(268455, {	-- Enchanted Hourglass (TOY!)
 							["cost"] = { { "c", ILLUSIONARY_COIN, 200 } },
 						}),
 						i(272337, {	-- Mage Guard's Spellblade (COSMETIC!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 100 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
 						}),
 						i(272338, {	-- Mage Guard's Spellsteel (COSMETIC!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 100 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
 						}),
 						i(268481, {	-- Magister's Spell Bee Comb (MOUNT!)
 							["cost"] = { { "c", ILLUSIONARY_COIN, 500 } },
 						}),
 						i(272320, {	-- Nullbeacon Rift Channeler (COSMETIC!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 100 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
 						}),
 						i(272336, {	-- Nullbeacon Rift Smasher (COSMETIC!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 100 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
 						}),
 						i(272316, {	-- Spellbreaker's Bladelance (COSMETIC!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 100 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
 						}),
 						i(272961, {	-- Spellbreaker's Bladestaff (COSMETIC!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 100 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
 						}),
 						i(272317, {	-- Spellbreaker's Phoenixglaive (COSMETIC!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 100 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
 						}),
 						i(272318, {	-- Spellbreaker's Phoenixblade (COSMETIC!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 100 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
 						}),
 						i(272960, {	-- Spellbreaker's Shieldwall (COSMETIC!)
-							["cost"] = { { "c", ILLUSIONARY_COIN, 100 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
 						}),
 						i(239018, {	-- Winner's Podium (TOY!)
 							["cost"] = { { "c", ILLUSIONARY_COIN, 200 } },
