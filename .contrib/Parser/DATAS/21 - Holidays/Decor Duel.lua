@@ -106,40 +106,40 @@ root(ROOTS.Holidays,
 					["coord"] = { 31.6, 76.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
 						i(272445, {	-- Decorative Dornogal Opal (DECOR!)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 50 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
 						}),
 						i(272442, {	-- Empty Wooden Toolbox (DECOR!)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 50 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
 						}),
 						i(272446, {	-- Large Decorative Dornogal Opal (DECOR!)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 200 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
 						}),
 						i(269636, {	-- Sin'dorei Cookpot Lid (DECOR!)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 50 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 15 } },
 						}),
 						i(269613, {	-- Sin'dorei Covered Cookpot (DECOR!)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 100 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 30 } },
 						}),
 						i(269641, {	-- Sin'dorei Display Case (DECOR!)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 100 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 50 } },
 						}),
 						i(271162, {	-- Sin'dorei Garden Swing (DECOR!)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 200 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 120 } },
 						}),
 						i(269614, {	-- Sin'dorei Open Cookpot (DECOR!)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 50 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 15 } },
 						}),
 						i(268457, {	-- Sin'dorei Tiffin-Style Lamp (DECOR!)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 100 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 50 } },
 						}),
 						i(272444, {	-- Small Decorative Dornogal Opal (DECOR!)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 100 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
 						}),
 						i(272441, {	-- Small Lumber Pile (DECOR!)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 50 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
 						}),
 						i(272443, {	-- Suramar Arcfruit Bowl (DECOR!)
-							["cost"] = { { "c", VOIDLIGHT_MARL, 50 } },
+							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
 						}),
 					},
 				}),
