@@ -11,7 +11,9 @@ i(0, 59487);	-- Arcane Tarot
 i(0, 59490);	-- Book of Stars
 i(0, 59478);	-- Book of Survival
 i(0, 57709);	-- Celestial Ink
+-- #if BEFORE 10.2.7
 i(0, 59387);	-- Certificate of Ownership
+-- #endif
 i(0, 59502);	-- Darkmoon Card
 i(0, 57706);	-- Dawnstar Ink
 i(0, 52739);	-- Enchanting Vellum / WRATH: Armor Vellum
@@ -1583,6 +1585,12 @@ i(0, 422337);	-- Lydiara's Binding Rune
 i(211611, 430092);	-- Draconic Combatant's Emblem
 i(211610, 430091);	-- Draconic Combatant's Insignia of Alacrity
 i(211609, 430090);	-- Draconic Combatant's Medallion
+
+------------------
+-- PATCH 10.2.7 --
+------------------
+--- ITEM ---
+i(224270, 59387);	-- Certificate of Ownership
 
 ------------------
 -- PATCH 11.0.0 --

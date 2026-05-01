@@ -1119,6 +1119,9 @@ root(ROOTS.Zones, {
 					["sym"] = {
 						{"sub", "common_vendor", 32216},	-- Mei Francis <Exotic Mounts> (Dalaran Northrend)
 					},
+					["groups"] = {
+						i(224270, {["timeline"] = { ADDED_10_2_7 }}),	-- Certificate of Ownership (RECIPE!)
+					},
 				}),
 				n(96987, {	-- Norvin Alderman <Cloaks>
 					["coord"] = { 36.9, 55.8, LEGION_DALARAN },
