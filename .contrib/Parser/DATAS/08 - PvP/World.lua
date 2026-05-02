@@ -341,11 +341,11 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			n(TREASURES, {
 				-- These objects are shared across BFA/DF/TWW/MID... so contains is based on current zone...
 				o(433369, {	-- War Supply Chest [H]
-					["sym"] = {{"select","itemID",224556},{"pop"}},	-- Glorious Contender's Strongbox (was this only when current content?)
+					["sym"] = {{"select","itemID",224556},{"pop"}},	-- Glorious Contender's Strongbox
 					["groups"] = { currency(HONOR) },
 				}),
 				o(433370, {	-- War Supply Chest [A]
-					["sym"] = {{"select","itemID",224556},{"pop"}},	-- Glorious Contender's Strongbox (was this only when current content?)
+					["sym"] = {{"select","itemID",224556},{"pop"}},	-- Glorious Contender's Strongbox
 					["groups"] = { currency(HONOR) },
 				}),
 				o(441108, {	-- Unbound Spoils
@@ -358,8 +358,8 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					},
 					["crs"] = { 233446 },	-- Generic Bunny [Pre-Spawn Vignette]
 					["groups"] = {
-						currency(BLOODY_TOKENS),
-						currency(HONOR),
+						currency(BLOODY_TOKENS, {skipFill=true}),
+						currency(HONOR, {skipFill=true}),
 					},
 				}),
 			}),
